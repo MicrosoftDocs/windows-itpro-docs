@@ -4,7 +4,7 @@ description: Learn more about the AppLocker CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -76,7 +76,7 @@ The following list shows the AppLocker configuration service provider nodes:
 <!-- Device-ApplicationLaunchRestrictions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-OmaUri-Begin -->
@@ -106,7 +106,7 @@ Defines restrictions for applications.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-ApplicationLaunchRestrictions-DFProperties-End -->
 
@@ -122,7 +122,7 @@ Defines restrictions for applications.
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-OmaUri-Begin -->
@@ -133,7 +133,7 @@ Defines restrictions for applications.
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it is to determine what their purpose is, and to not conflict with other identifiers that they define. Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.
+Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it's to determine what their purpose is, and to not conflict with other identifiers that they define. Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Description-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Editable-Begin -->
@@ -145,7 +145,7 @@ Grouping nodes are dynamic nodes, and there may be any number of them for a give
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DFProperties-End -->
@@ -162,7 +162,7 @@ Grouping nodes are dynamic nodes, and there may be any number of them for a give
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-OmaUri-Begin -->
@@ -184,7 +184,7 @@ Grouping nodes are dynamic nodes, and there may be any number of them for a give
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-DFProperties-End -->
 
@@ -200,7 +200,7 @@ Grouping nodes are dynamic nodes, and there may be any number of them for a give
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-OmaUri-Begin -->
@@ -225,7 +225,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | b64 |
+| Format | `b64` |
 | Access Type | Add, Delete, Get, Replace |
 | Reboot Behavior | Automatic |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-DFProperties-End -->
@@ -242,7 +242,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-OmaUri-Begin -->
@@ -265,7 +265,7 @@ Defines restrictions for processing DLL files.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-DFProperties-End -->
 
@@ -281,7 +281,7 @@ Defines restrictions for processing DLL files.
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-OmaUri-Begin -->
@@ -292,7 +292,7 @@ Defines restrictions for processing DLL files.
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Description-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Editable-Begin -->
@@ -304,7 +304,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-DFProperties-End -->
 
@@ -320,7 +320,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-OmaUri-Begin -->
@@ -342,7 +342,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-DFProperties-End -->
 
@@ -358,7 +358,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-OmaUri-Begin -->
@@ -381,7 +381,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Reboot Behavior | Automatic |
 | Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
@@ -399,7 +399,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-OmaUri-Begin -->
@@ -422,7 +422,7 @@ Defines restrictions for launching executable applications.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-DFProperties-End -->
 
@@ -438,7 +438,7 @@ Defines restrictions for launching executable applications.
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-OmaUri-Begin -->
@@ -449,7 +449,7 @@ Defines restrictions for launching executable applications.
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Description-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Editable-Begin -->
@@ -461,7 +461,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-DFProperties-End -->
 
@@ -477,7 +477,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-OmaUri-Begin -->
@@ -499,7 +499,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-DFProperties-End -->
 
@@ -515,7 +515,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-OmaUri-Begin -->
@@ -538,7 +538,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Reboot Behavior | Automatic |
 | Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
@@ -556,7 +556,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-OmaUri-Begin -->
@@ -579,7 +579,7 @@ Defines restrictions for executing Windows Installer files.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-DFProperties-End -->
 
@@ -595,7 +595,7 @@ Defines restrictions for executing Windows Installer files.
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-OmaUri-Begin -->
@@ -606,7 +606,7 @@ Defines restrictions for executing Windows Installer files.
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Description-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Editable-Begin -->
@@ -618,7 +618,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-DFProperties-End -->
 
@@ -634,7 +634,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-OmaUri-Begin -->
@@ -657,7 +657,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Reboot Behavior | Automatic |
 | Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
@@ -675,7 +675,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-OmaUri-Begin -->
@@ -698,7 +698,7 @@ Defines restrictions for running scripts.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-DFProperties-End -->
 
@@ -714,7 +714,7 @@ Defines restrictions for running scripts.
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-OmaUri-Begin -->
@@ -725,7 +725,7 @@ Defines restrictions for running scripts.
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Description-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Editable-Begin -->
@@ -737,7 +737,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-DFProperties-End -->
 
@@ -753,7 +753,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-OmaUri-Begin -->
@@ -776,7 +776,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Reboot Behavior | Automatic |
 | Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
@@ -794,7 +794,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-OmaUri-Begin -->
@@ -817,7 +817,7 @@ Defines restrictions for running apps from the Microsoft Store.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-DFProperties-End -->
 
@@ -833,7 +833,7 @@ Defines restrictions for running apps from the Microsoft Store.
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-OmaUri-Begin -->
@@ -844,7 +844,7 @@ Defines restrictions for running apps from the Microsoft Store.
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Description-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Editable-Begin -->
@@ -856,7 +856,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-DFProperties-End -->
 
@@ -872,7 +872,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-OmaUri-Begin -->
@@ -895,7 +895,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Reboot Behavior | Automatic |
 | Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
@@ -913,7 +913,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-EnterpriseDataProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EnterpriseDataProtection-Applicability-End -->
 
 <!-- Device-EnterpriseDataProtection-OmaUri-Begin -->
@@ -956,7 +956,7 @@ Additional information:
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-EnterpriseDataProtection-DFProperties-End -->
 
@@ -972,7 +972,7 @@ Additional information:
 <!-- Device-EnterpriseDataProtection-{Grouping}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EnterpriseDataProtection-{Grouping}-Applicability-End -->
 
 <!-- Device-EnterpriseDataProtection-{Grouping}-OmaUri-Begin -->
@@ -983,7 +983,7 @@ Additional information:
 
 <!-- Device-EnterpriseDataProtection-{Grouping}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it is to determine what their purpose is, and to not conflict with other identifiers that they define. Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.
+Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it's to determine what their purpose is, and to not conflict with other identifiers that they define. Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.
 <!-- Device-EnterpriseDataProtection-{Grouping}-Description-End -->
 
 <!-- Device-EnterpriseDataProtection-{Grouping}-Editable-Begin -->
@@ -995,7 +995,7 @@ Grouping nodes are dynamic nodes, and there may be any number of them for a give
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- Device-EnterpriseDataProtection-{Grouping}-DFProperties-End -->
@@ -1012,7 +1012,7 @@ Grouping nodes are dynamic nodes, and there may be any number of them for a give
 <!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Applicability-End -->
 
 <!-- Device-EnterpriseDataProtection-{Grouping}-EXE-OmaUri-Begin -->
@@ -1035,7 +1035,7 @@ Defines restrictions for launching executable applications.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-EnterpriseDataProtection-{Grouping}-EXE-DFProperties-End -->
 
@@ -1051,7 +1051,7 @@ Defines restrictions for launching executable applications.
 <!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-Applicability-End -->
 
 <!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-OmaUri-Begin -->
@@ -1074,7 +1074,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Reboot Behavior | Automatic |
 | Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
@@ -1092,7 +1092,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Applicability-End -->
 
 <!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-OmaUri-Begin -->
@@ -1115,7 +1115,7 @@ Defines restrictions for running apps from the Microsoft Store.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-DFProperties-End -->
 
@@ -1131,7 +1131,7 @@ Defines restrictions for running apps from the Microsoft Store.
 <!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-Applicability-End -->
 
 <!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-OmaUri-Begin -->
@@ -1154,7 +1154,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Reboot Behavior | Automatic |
 | Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
@@ -1172,7 +1172,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-FamilySafety-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FamilySafety-Applicability-End -->
 
 <!-- Device-FamilySafety-OmaUri-Begin -->
@@ -1194,7 +1194,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-FamilySafety-DFProperties-End -->
 
@@ -1210,7 +1210,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-FamilySafety-{Grouping}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FamilySafety-{Grouping}-Applicability-End -->
 
 <!-- Device-FamilySafety-{Grouping}-OmaUri-Begin -->
@@ -1232,7 +1232,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- Device-FamilySafety-{Grouping}-DFProperties-End -->
@@ -1249,7 +1249,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-FamilySafety-{Grouping}-EXE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FamilySafety-{Grouping}-EXE-Applicability-End -->
 
 <!-- Device-FamilySafety-{Grouping}-EXE-OmaUri-Begin -->
@@ -1271,7 +1271,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-FamilySafety-{Grouping}-EXE-DFProperties-End -->
 
@@ -1287,7 +1287,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Applicability-End -->
 
 <!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-OmaUri-Begin -->
@@ -1298,7 +1298,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 <!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Description-End -->
 
 <!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Editable-Begin -->
@@ -1310,7 +1310,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-DFProperties-End -->
 
@@ -1326,7 +1326,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-FamilySafety-{Grouping}-EXE-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FamilySafety-{Grouping}-EXE-Policy-Applicability-End -->
 
 <!-- Device-FamilySafety-{Grouping}-EXE-Policy-OmaUri-Begin -->
@@ -1349,7 +1349,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Reboot Behavior | Automatic |
 | Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
@@ -1367,7 +1367,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-FamilySafety-{Grouping}-StoreApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FamilySafety-{Grouping}-StoreApps-Applicability-End -->
 
 <!-- Device-FamilySafety-{Grouping}-StoreApps-OmaUri-Begin -->
@@ -1389,7 +1389,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-FamilySafety-{Grouping}-StoreApps-DFProperties-End -->
 
@@ -1405,7 +1405,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Applicability-End -->
 
 <!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-OmaUri-Begin -->
@@ -1416,7 +1416,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 <!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Description-End -->
 
 <!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Editable-Begin -->
@@ -1428,7 +1428,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-DFProperties-End -->
 
@@ -1444,7 +1444,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-Applicability-End -->
 
 <!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-OmaUri-Begin -->
@@ -1467,7 +1467,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Reboot Behavior | Automatic |
 | Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
@@ -1485,7 +1485,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-LaunchControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LaunchControl-Applicability-End -->
 
 <!-- Device-LaunchControl-OmaUri-Begin -->
@@ -1507,7 +1507,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-LaunchControl-DFProperties-End -->
 
@@ -1523,7 +1523,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-LaunchControl-{Grouping}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LaunchControl-{Grouping}-Applicability-End -->
 
 <!-- Device-LaunchControl-{Grouping}-OmaUri-Begin -->
@@ -1545,7 +1545,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- Device-LaunchControl-{Grouping}-DFProperties-End -->
@@ -1562,7 +1562,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-LaunchControl-{Grouping}-EXE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LaunchControl-{Grouping}-EXE-Applicability-End -->
 
 <!-- Device-LaunchControl-{Grouping}-EXE-OmaUri-Begin -->
@@ -1584,7 +1584,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-LaunchControl-{Grouping}-EXE-DFProperties-End -->
 
@@ -1600,7 +1600,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Applicability-End -->
 
 <!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-OmaUri-Begin -->
@@ -1611,7 +1611,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 <!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Description-End -->
 
 <!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Editable-Begin -->
@@ -1623,7 +1623,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-DFProperties-End -->
 
@@ -1639,7 +1639,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-LaunchControl-{Grouping}-EXE-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LaunchControl-{Grouping}-EXE-Policy-Applicability-End -->
 
 <!-- Device-LaunchControl-{Grouping}-EXE-Policy-OmaUri-Begin -->
@@ -1662,7 +1662,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 | Reboot Behavior | Automatic |
 | Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
@@ -1680,7 +1680,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-LaunchControl-{Grouping}-StoreApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LaunchControl-{Grouping}-StoreApps-Applicability-End -->
 
 <!-- Device-LaunchControl-{Grouping}-StoreApps-OmaUri-Begin -->
@@ -1702,7 +1702,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-LaunchControl-{Grouping}-StoreApps-DFProperties-End -->
 
@@ -1718,7 +1718,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Applicability-End -->
 
 <!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-OmaUri-Begin -->
@@ -1729,7 +1729,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 <!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Description-End -->
 
 <!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Editable-Begin -->
@@ -1741,7 +1741,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-DFProperties-End -->
 
@@ -1757,7 +1757,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-Applicability-End -->
 
 <!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-OmaUri-Begin -->
@@ -1780,7 +1780,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 | Reboot Behavior | Automatic |
 | Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |

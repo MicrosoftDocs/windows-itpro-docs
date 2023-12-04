@@ -4,7 +4,7 @@ description: Learn more about the ADMX_EventLog Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_EventLog-Begin -->
 # Policy CSP - ADMX_EventLog
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_EventLog-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- Channel_Log_AutoBackup_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_Log_AutoBackup_1-Applicability-End -->
 
 <!-- Channel_Log_AutoBackup_1-OmaUri-Begin -->
@@ -44,11 +41,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting controls Event Log behavior when the log file reaches its maximum size and takes effect only if the "Retain old events" policy setting is enabled.
 
-- If you enable this policy setting and the "Retain old events" policy setting is enabled, the Event Log file is automatically closed and renamed when it is full. A new file is then started.
+- If you enable this policy setting and the "Retain old events" policy setting is enabled, the Event Log file is automatically closed and renamed when it's full. A new file is then started.
 
 - If you disable this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and old events are retained.
 
-- If you do not configure this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and the old events are retained.
+- If you don't configure this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and the old events are retained.
 <!-- Channel_Log_AutoBackup_1-Description-End -->
 
 <!-- Channel_Log_AutoBackup_1-Editable-Begin -->
@@ -60,13 +57,12 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_Log_AutoBackup_1-DFProperties-End -->
 
 <!-- Channel_Log_AutoBackup_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -93,7 +89,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Channel_Log_AutoBackup_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_Log_AutoBackup_2-Applicability-End -->
 
 <!-- Channel_Log_AutoBackup_2-OmaUri-Begin -->
@@ -106,11 +102,11 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Description-Source-ADMX -->
 This policy setting controls Event Log behavior when the log file reaches its maximum size and takes effect only if the "Retain old events" policy setting is enabled.
 
-- If you enable this policy setting and the "Retain old events" policy setting is enabled, the Event Log file is automatically closed and renamed when it is full. A new file is then started.
+- If you enable this policy setting and the "Retain old events" policy setting is enabled, the Event Log file is automatically closed and renamed when it's full. A new file is then started.
 
 - If you disable this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and old events are retained.
 
-- If you do not configure this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and the old events are retained.
+- If you don't configure this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and the old events are retained.
 <!-- Channel_Log_AutoBackup_2-Description-End -->
 
 <!-- Channel_Log_AutoBackup_2-Editable-Begin -->
@@ -122,13 +118,12 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_Log_AutoBackup_2-DFProperties-End -->
 
 <!-- Channel_Log_AutoBackup_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -155,7 +150,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Channel_Log_AutoBackup_3-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_Log_AutoBackup_3-Applicability-End -->
 
 <!-- Channel_Log_AutoBackup_3-OmaUri-Begin -->
@@ -168,11 +163,11 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Description-Source-ADMX -->
 This policy setting controls Event Log behavior when the log file reaches its maximum size and takes effect only if the "Retain old events" policy setting is enabled.
 
-- If you enable this policy setting and the "Retain old events" policy setting is enabled, the Event Log file is automatically closed and renamed when it is full. A new file is then started.
+- If you enable this policy setting and the "Retain old events" policy setting is enabled, the Event Log file is automatically closed and renamed when it's full. A new file is then started.
 
 - If you disable this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and old events are retained.
 
-- If you do not configure this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and the old events are retained.
+- If you don't configure this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and the old events are retained.
 <!-- Channel_Log_AutoBackup_3-Description-End -->
 
 <!-- Channel_Log_AutoBackup_3-Editable-Begin -->
@@ -184,13 +179,12 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_Log_AutoBackup_3-DFProperties-End -->
 
 <!-- Channel_Log_AutoBackup_3-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -217,7 +211,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Channel_Log_AutoBackup_4-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_Log_AutoBackup_4-Applicability-End -->
 
 <!-- Channel_Log_AutoBackup_4-OmaUri-Begin -->
@@ -230,11 +224,11 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Description-Source-ADMX -->
 This policy setting controls Event Log behavior when the log file reaches its maximum size and takes effect only if the "Retain old events" policy setting is enabled.
 
-- If you enable this policy setting and the "Retain old events" policy setting is enabled, the Event Log file is automatically closed and renamed when it is full. A new file is then started.
+- If you enable this policy setting and the "Retain old events" policy setting is enabled, the Event Log file is automatically closed and renamed when it's full. A new file is then started.
 
 - If you disable this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and old events are retained.
 
-- If you do not configure this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and the old events are retained.
+- If you don't configure this policy setting and the "Retain old events" policy setting is enabled, new events are discarded and the old events are retained.
 <!-- Channel_Log_AutoBackup_4-Description-End -->
 
 <!-- Channel_Log_AutoBackup_4-Editable-Begin -->
@@ -246,13 +240,12 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_Log_AutoBackup_4-DFProperties-End -->
 
 <!-- Channel_Log_AutoBackup_4-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -279,7 +272,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Channel_Log_FileLogAccess_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_Log_FileLogAccess_1-Applicability-End -->
 
 <!-- Channel_Log_FileLogAccess_1-OmaUri-Begin -->
@@ -294,7 +287,7 @@ This policy setting specifies the security descriptor to use for the log using t
 
 - If you enable this policy setting, only those users matching the security descriptor can access the log.
 
-- If you disable or do not configure this policy setting, all authenticated users and system services can write, read, or clear this log.
+- If you disable or don't configure this policy setting, all authenticated users and system services can write, read, or clear this log.
 
 > [!NOTE]
 > If you enable this policy setting, some tools and APIs may ignore it. The same change should be made to the "Configure log access (legacy)" policy setting to enforce this change across all tools and APIs.
@@ -309,13 +302,12 @@ This policy setting specifies the security descriptor to use for the log using t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_Log_FileLogAccess_1-DFProperties-End -->
 
 <!-- Channel_Log_FileLogAccess_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -341,7 +333,7 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Channel_Log_FileLogAccess_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_Log_FileLogAccess_2-Applicability-End -->
 
 <!-- Channel_Log_FileLogAccess_2-OmaUri-Begin -->
@@ -352,11 +344,11 @@ This policy setting specifies the security descriptor to use for the log using t
 
 <!-- Channel_Log_FileLogAccess_2-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting specifies the security descriptor to use for the log using the Security Descriptor Definition Language (SDDL) string. You cannot configure write permissions for this log. You must set both "configure log access" policy settings for this log in order to affect the both modern and legacy tools.
+This policy setting specifies the security descriptor to use for the log using the Security Descriptor Definition Language (SDDL) string. You can't configure write permissions for this log. You must set both "configure log access" policy settings for this log in order to affect the both modern and legacy tools.
 
 - If you enable this policy setting, only those users whose security descriptor matches the configured specified value can access the log.
 
-- If you disable or do not configure this policy setting, only system software and administrators can read or clear this log.
+- If you disable or don't configure this policy setting, only system software and administrators can read or clear this log.
 
 > [!NOTE]
 > If you enable this policy setting, some tools and APIs may ignore it. The same change should be made to the "Configure log access (legacy)" policy setting to enforce this change across all tools and APIs.
@@ -371,13 +363,12 @@ This policy setting specifies the security descriptor to use for the log using t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_Log_FileLogAccess_2-DFProperties-End -->
 
 <!-- Channel_Log_FileLogAccess_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -403,7 +394,7 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Channel_Log_FileLogAccess_3-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_Log_FileLogAccess_3-Applicability-End -->
 
 <!-- Channel_Log_FileLogAccess_3-OmaUri-Begin -->
@@ -418,7 +409,7 @@ This policy setting specifies the security descriptor to use for the log using t
 
 - If you enable this policy setting, only those users matching the security descriptor can access the log.
 
-- If you disable or do not configure this policy setting, all authenticated users and system services can write, read, or clear this log.
+- If you disable or don't configure this policy setting, all authenticated users and system services can write, read, or clear this log.
 
 > [!NOTE]
 > If you enable this policy setting, some tools and APIs may ignore it. The same change should be made to the "Configure log access (legacy)" policy setting to enforce this change across all tools and APIs.
@@ -433,13 +424,12 @@ This policy setting specifies the security descriptor to use for the log using t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_Log_FileLogAccess_3-DFProperties-End -->
 
 <!-- Channel_Log_FileLogAccess_3-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -465,7 +455,7 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Channel_Log_FileLogAccess_4-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_Log_FileLogAccess_4-Applicability-End -->
 
 <!-- Channel_Log_FileLogAccess_4-OmaUri-Begin -->
@@ -480,7 +470,7 @@ This policy setting specifies the security descriptor to use for the log using t
 
 - If you enable this policy setting, only users whose security descriptor matches the configured value can access the log.
 
-- If you disable or do not configure this policy setting, only system software and administrators can write or clear this log, and any authenticated user can read events from it.
+- If you disable or don't configure this policy setting, only system software and administrators can write or clear this log, and any authenticated user can read events from it.
 
 > [!NOTE]
 > If you enable this policy setting, some tools and APIs may ignore it. The same change should be made to the "Configure log access (legacy)" policy setting to enforce this change across all tools and APIs.
@@ -495,13 +485,12 @@ This policy setting specifies the security descriptor to use for the log using t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_Log_FileLogAccess_4-DFProperties-End -->
 
 <!-- Channel_Log_FileLogAccess_4-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -527,7 +516,7 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Channel_Log_FileLogAccess_5-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_Log_FileLogAccess_5-Applicability-End -->
 
 <!-- Channel_Log_FileLogAccess_5-OmaUri-Begin -->
@@ -544,7 +533,7 @@ This policy setting specifies the security descriptor to use for the log using t
 
 - If you disable this policy setting, all authenticated users and system services can write, read, or clear this log.
 
-- If you do not configure this policy setting, the previous policy setting configuration remains in effect.
+- If you don't configure this policy setting, the previous policy setting configuration remains in effect.
 <!-- Channel_Log_FileLogAccess_5-Description-End -->
 
 <!-- Channel_Log_FileLogAccess_5-Editable-Begin -->
@@ -556,13 +545,12 @@ This policy setting specifies the security descriptor to use for the log using t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_Log_FileLogAccess_5-DFProperties-End -->
 
 <!-- Channel_Log_FileLogAccess_5-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -588,7 +576,7 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Channel_Log_FileLogAccess_6-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_Log_FileLogAccess_6-Applicability-End -->
 
 <!-- Channel_Log_FileLogAccess_6-OmaUri-Begin -->
@@ -599,13 +587,13 @@ This policy setting specifies the security descriptor to use for the log using t
 
 <!-- Channel_Log_FileLogAccess_6-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting specifies the security descriptor to use for the log using the Security Descriptor Definition Language (SDDL) string. You cannot configure write permissions for this log.
+This policy setting specifies the security descriptor to use for the log using the Security Descriptor Definition Language (SDDL) string. You can't configure write permissions for this log.
 
 - If you enable this policy setting, only those users whose security descriptor matches the configured specified value can access the log.
 
 - If you disable this policy setting, only system software and administrators can read or clear this log.
 
-- If you do not configure this policy setting, the previous policy setting configuration remains in effect.
+- If you don't configure this policy setting, the previous policy setting configuration remains in effect.
 <!-- Channel_Log_FileLogAccess_6-Description-End -->
 
 <!-- Channel_Log_FileLogAccess_6-Editable-Begin -->
@@ -617,13 +605,12 @@ This policy setting specifies the security descriptor to use for the log using t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_Log_FileLogAccess_6-DFProperties-End -->
 
 <!-- Channel_Log_FileLogAccess_6-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -649,7 +636,7 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Channel_Log_FileLogAccess_7-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_Log_FileLogAccess_7-Applicability-End -->
 
 <!-- Channel_Log_FileLogAccess_7-OmaUri-Begin -->
@@ -666,7 +653,7 @@ This policy setting specifies the security descriptor to use for the log using t
 
 - If you disable this policy setting, all authenticated users and system services can write, read, or clear this log.
 
-- If you do not configure this policy setting, the previous policy setting configuration remains in effect.
+- If you don't configure this policy setting, the previous policy setting configuration remains in effect.
 <!-- Channel_Log_FileLogAccess_7-Description-End -->
 
 <!-- Channel_Log_FileLogAccess_7-Editable-Begin -->
@@ -678,13 +665,12 @@ This policy setting specifies the security descriptor to use for the log using t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_Log_FileLogAccess_7-DFProperties-End -->
 
 <!-- Channel_Log_FileLogAccess_7-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -710,7 +696,7 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Channel_Log_FileLogAccess_8-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_Log_FileLogAccess_8-Applicability-End -->
 
 <!-- Channel_Log_FileLogAccess_8-OmaUri-Begin -->
@@ -727,7 +713,7 @@ This policy setting specifies the security descriptor to use for the log using t
 
 - If you disable this policy setting, only system software and administrators can write or clear this log, and any authenticated user can read events from it.
 
-- If you do not configure this policy setting, the previous policy setting configuration remains in effect.
+- If you don't configure this policy setting, the previous policy setting configuration remains in effect.
 <!-- Channel_Log_FileLogAccess_8-Description-End -->
 
 <!-- Channel_Log_FileLogAccess_8-Editable-Begin -->
@@ -739,13 +725,12 @@ This policy setting specifies the security descriptor to use for the log using t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_Log_FileLogAccess_8-DFProperties-End -->
 
 <!-- Channel_Log_FileLogAccess_8-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -771,7 +756,7 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Channel_Log_Retention_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_Log_Retention_2-Applicability-End -->
 
 <!-- Channel_Log_Retention_2-OmaUri-Begin -->
@@ -784,9 +769,9 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Description-Source-ADMX -->
 This policy setting controls Event Log behavior when the log file reaches its maximum size.
 
-- If you enable this policy setting and a log file reaches its maximum size, new events are not written to the log and are lost.
+- If you enable this policy setting and a log file reaches its maximum size, new events aren't written to the log and are lost.
 
-- If you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
+- If you disable or don't configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
 
 > [!NOTE]
 > Old events may or may not be retained according to the "Backup log automatically when full" policy setting.
@@ -801,13 +786,12 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_Log_Retention_2-DFProperties-End -->
 
 <!-- Channel_Log_Retention_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -834,7 +818,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Channel_Log_Retention_3-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_Log_Retention_3-Applicability-End -->
 
 <!-- Channel_Log_Retention_3-OmaUri-Begin -->
@@ -847,9 +831,9 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Description-Source-ADMX -->
 This policy setting controls Event Log behavior when the log file reaches its maximum size.
 
-- If you enable this policy setting and a log file reaches its maximum size, new events are not written to the log and are lost.
+- If you enable this policy setting and a log file reaches its maximum size, new events aren't written to the log and are lost.
 
-- If you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
+- If you disable or don't configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
 
 > [!NOTE]
 > Old events may or may not be retained according to the "Backup log automatically when full" policy setting.
@@ -864,13 +848,12 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_Log_Retention_3-DFProperties-End -->
 
 <!-- Channel_Log_Retention_3-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -897,7 +880,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Channel_Log_Retention_4-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_Log_Retention_4-Applicability-End -->
 
 <!-- Channel_Log_Retention_4-OmaUri-Begin -->
@@ -910,9 +893,9 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Description-Source-ADMX -->
 This policy setting controls Event Log behavior when the log file reaches its maximum size.
 
-- If you enable this policy setting and a log file reaches its maximum size, new events are not written to the log and are lost.
+- If you enable this policy setting and a log file reaches its maximum size, new events aren't written to the log and are lost.
 
-- If you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
+- If you disable or don't configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
 
 > [!NOTE]
 > Old events may or may not be retained according to the "Backup log automatically when full" policy setting.
@@ -927,13 +910,12 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_Log_Retention_4-DFProperties-End -->
 
 <!-- Channel_Log_Retention_4-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -960,7 +942,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Channel_LogEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_LogEnabled-Applicability-End -->
 
 <!-- Channel_LogEnabled-OmaUri-Begin -->
@@ -973,9 +955,9 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Description-Source-ADMX -->
 This policy setting turns on logging.
 
-If you enable or do not configure this policy setting, then events can be written to this log.
+- If you enable or don't configure this policy setting, then events can be written to this log.
 
-If the policy setting is disabled, then no new events can be logged. Events can always be read from the log, regardless of this policy setting.
+- If the policy setting is disabled, then no new events can be logged. Events can always be read from the log, regardless of this policy setting.
 <!-- Channel_LogEnabled-Description-End -->
 
 <!-- Channel_LogEnabled-Editable-Begin -->
@@ -987,13 +969,12 @@ If the policy setting is disabled, then no new events can be logged. Events can 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_LogEnabled-DFProperties-End -->
 
 <!-- Channel_LogEnabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1020,7 +1001,7 @@ If the policy setting is disabled, then no new events can be logged. Events can 
 <!-- Channel_LogFilePath_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_LogFilePath_1-Applicability-End -->
 
 <!-- Channel_LogFilePath_1-OmaUri-Begin -->
@@ -1035,7 +1016,7 @@ This policy setting controls the location of the log file. The location of the f
 
 - If you enable this policy setting, the Event Log uses the path specified in this policy setting.
 
-- If you disable or do not configure this policy setting, the Event Log uses the folder %SYSTEMROOT%\System32\winevt\Logs.
+- If you disable or don't configure this policy setting, the Event Log uses the folder %SYSTEMROOT%\System32\winevt\Logs.
 <!-- Channel_LogFilePath_1-Description-End -->
 
 <!-- Channel_LogFilePath_1-Editable-Begin -->
@@ -1047,13 +1028,12 @@ This policy setting controls the location of the log file. The location of the f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_LogFilePath_1-DFProperties-End -->
 
 <!-- Channel_LogFilePath_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1079,7 +1059,7 @@ This policy setting controls the location of the log file. The location of the f
 <!-- Channel_LogFilePath_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_LogFilePath_2-Applicability-End -->
 
 <!-- Channel_LogFilePath_2-OmaUri-Begin -->
@@ -1094,7 +1074,7 @@ This policy setting controls the location of the log file. The location of the f
 
 - If you enable this policy setting, the Event Log uses the path specified in this policy setting.
 
-- If you disable or do not configure this policy setting, the Event Log uses the folder %SYSTEMROOT%\System32\winevt\Logs.
+- If you disable or don't configure this policy setting, the Event Log uses the folder %SYSTEMROOT%\System32\winevt\Logs.
 <!-- Channel_LogFilePath_2-Description-End -->
 
 <!-- Channel_LogFilePath_2-Editable-Begin -->
@@ -1106,13 +1086,12 @@ This policy setting controls the location of the log file. The location of the f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_LogFilePath_2-DFProperties-End -->
 
 <!-- Channel_LogFilePath_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1138,7 +1117,7 @@ This policy setting controls the location of the log file. The location of the f
 <!-- Channel_LogFilePath_3-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_LogFilePath_3-Applicability-End -->
 
 <!-- Channel_LogFilePath_3-OmaUri-Begin -->
@@ -1153,7 +1132,7 @@ This policy setting controls the location of the log file. The location of the f
 
 - If you enable this policy setting, the Event Log uses the path specified in this policy setting.
 
-- If you disable or do not configure this policy setting, the Event Log uses the folder %SYSTEMROOT%\System32\winevt\Logs.
+- If you disable or don't configure this policy setting, the Event Log uses the folder %SYSTEMROOT%\System32\winevt\Logs.
 <!-- Channel_LogFilePath_3-Description-End -->
 
 <!-- Channel_LogFilePath_3-Editable-Begin -->
@@ -1165,13 +1144,12 @@ This policy setting controls the location of the log file. The location of the f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_LogFilePath_3-DFProperties-End -->
 
 <!-- Channel_LogFilePath_3-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1197,7 +1175,7 @@ This policy setting controls the location of the log file. The location of the f
 <!-- Channel_LogFilePath_4-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_LogFilePath_4-Applicability-End -->
 
 <!-- Channel_LogFilePath_4-OmaUri-Begin -->
@@ -1212,7 +1190,7 @@ This policy setting controls the location of the log file. The location of the f
 
 - If you enable this policy setting, the Event Log uses the path specified in this policy setting.
 
-- If you disable or do not configure this policy setting, the Event Log uses the folder %SYSTEMROOT%\System32\winevt\Logs.
+- If you disable or don't configure this policy setting, the Event Log uses the folder %SYSTEMROOT%\System32\winevt\Logs.
 <!-- Channel_LogFilePath_4-Description-End -->
 
 <!-- Channel_LogFilePath_4-Editable-Begin -->
@@ -1224,13 +1202,12 @@ This policy setting controls the location of the log file. The location of the f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_LogFilePath_4-DFProperties-End -->
 
 <!-- Channel_LogFilePath_4-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1256,7 +1233,7 @@ This policy setting controls the location of the log file. The location of the f
 <!-- Channel_LogMaxSize_3-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Channel_LogMaxSize_3-Applicability-End -->
 
 <!-- Channel_LogMaxSize_3-OmaUri-Begin -->
@@ -1271,7 +1248,7 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 
 - If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes), in kilobyte increments.
 
-- If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 1 megabyte.
+- If you disable or don't configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 1 megabyte.
 <!-- Channel_LogMaxSize_3-Description-End -->
 
 <!-- Channel_LogMaxSize_3-Editable-Begin -->
@@ -1283,13 +1260,12 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Channel_LogMaxSize_3-DFProperties-End -->
 
 <!-- Channel_LogMaxSize_3-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

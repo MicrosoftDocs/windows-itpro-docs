@@ -4,7 +4,7 @@ description: Learn more about the AttachmentManager Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- AttachmentManager-Begin -->
 # Policy CSP - AttachmentManager
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- AttachmentManager-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- DoNotPreserveZoneInformation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DoNotPreserveZoneInformation-Applicability-End -->
 
 <!-- DoNotPreserveZoneInformation-OmaUri-Begin -->
@@ -42,13 +39,13 @@ ms.topic: reference
 
 <!-- DoNotPreserveZoneInformation-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether Windows marks file attachments with information about their zone of origin (such as restricted, Internet, intranet, local). This requires NTFS in order to function correctly, and will fail without notice on FAT32. By not preserving the zone information, Windows cannot make proper risk assessments.
+This policy setting allows you to manage whether Windows marks file attachments with information about their zone of origin (such as restricted, Internet, intranet, local). This requires NTFS in order to function correctly, and will fail without notice on FAT32. By not preserving the zone information, Windows can't make proper risk assessments.
 
-- If you enable this policy setting, Windows does not mark file attachments with their zone information.
+- If you enable this policy setting, Windows doesn't mark file attachments with their zone information.
 
 - If you disable this policy setting, Windows marks file attachments with their zone information.
 
-- If you do not configure this policy setting, Windows marks file attachments with their zone information.
+- If you don't configure this policy setting, Windows marks file attachments with their zone information.
 <!-- DoNotPreserveZoneInformation-Description-End -->
 
 <!-- DoNotPreserveZoneInformation-Editable-Begin -->
@@ -60,13 +57,12 @@ This policy setting allows you to manage whether Windows marks file attachments 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DoNotPreserveZoneInformation-DFProperties-End -->
 
 <!-- DoNotPreserveZoneInformation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -93,7 +89,7 @@ This policy setting allows you to manage whether Windows marks file attachments 
 <!-- HideZoneInfoMechanism-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideZoneInfoMechanism-Applicability-End -->
 
 <!-- HideZoneInfoMechanism-OmaUri-Begin -->
@@ -110,7 +106,7 @@ This policy setting allows you to manage whether users can manually remove the z
 
 - If you disable this policy setting, Windows shows the check box and Unblock button.
 
-- If you do not configure this policy setting, Windows hides the check box and Unblock button.
+- If you don't configure this policy setting, Windows hides the check box and Unblock button.
 <!-- HideZoneInfoMechanism-Description-End -->
 
 <!-- HideZoneInfoMechanism-Editable-Begin -->
@@ -122,13 +118,12 @@ This policy setting allows you to manage whether users can manually remove the z
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- HideZoneInfoMechanism-DFProperties-End -->
 
 <!-- HideZoneInfoMechanism-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -155,7 +150,7 @@ This policy setting allows you to manage whether users can manually remove the z
 <!-- NotifyAntivirusPrograms-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- NotifyAntivirusPrograms-Applicability-End -->
 
 <!-- NotifyAntivirusPrograms-OmaUri-Begin -->
@@ -170,9 +165,9 @@ This policy setting allows you to manage the behavior for notifying registered a
 
 - If you enable this policy setting, Windows tells the registered antivirus program to scan the file when a user opens a file attachment. If the antivirus program fails, the attachment is blocked from being opened.
 
-- If you disable this policy setting, Windows does not call the registered antivirus programs when file attachments are opened.
+- If you disable this policy setting, Windows doesn't call the registered antivirus programs when file attachments are opened.
 
-- If you do not configure this policy setting, Windows does not call the registered antivirus programs when file attachments are opened.
+- If you don't configure this policy setting, Windows doesn't call the registered antivirus programs when file attachments are opened.
 <!-- NotifyAntivirusPrograms-Description-End -->
 
 <!-- NotifyAntivirusPrograms-Editable-Begin -->
@@ -184,13 +179,12 @@ This policy setting allows you to manage the behavior for notifying registered a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NotifyAntivirusPrograms-DFProperties-End -->
 
 <!-- NotifyAntivirusPrograms-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

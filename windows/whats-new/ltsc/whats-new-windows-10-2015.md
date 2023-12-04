@@ -8,15 +8,14 @@ author: mestew
 ms.localizationpriority: low
 ms.topic: article
 ms.technology: itpro-fundamentals
-ms.date: 12/31/2017
+ms.date: 02/26/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2015</a>
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2015
 
-**Applies to**
--   Windows 10 Enterprise LTSC 2015
-
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](overview.md).
 
 ## Deployment
 
@@ -289,4 +288,4 @@ The new chromium-based Microsoft Edge isn't included in the LTSC release of Wind
 
 ## See Also
 
-[Windows 10 Enterprise LTSC](index.md): A description of the LTSC servicing channel with links to information about each release.
+[Windows 10 Enterprise LTSC](overview.md): A description of the LTSC servicing channel with links to information about each release.

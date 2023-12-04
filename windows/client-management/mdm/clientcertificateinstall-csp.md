@@ -4,7 +4,7 @@ description: Learn more about the ClientCertificateInstall CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 10/24/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -111,7 +111,7 @@ The following list shows the ClientCertificateInstall configuration service prov
 <!-- Device-PFXCertInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-Applicability-End -->
 
 <!-- Device-PFXCertInstall-OmaUri-Begin -->
@@ -134,7 +134,7 @@ Required for PFX certificate installation. The parent node grouping the PFX cert
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-PFXCertInstall-DFProperties-End -->
 
@@ -150,7 +150,7 @@ Required for PFX certificate installation. The parent node grouping the PFX cert
 <!-- Device-PFXCertInstall-{UniqueID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-OmaUri-Begin -->
@@ -162,8 +162,10 @@ Required for PFX certificate installation. The parent node grouping the PFX cert
 <!-- Device-PFXCertInstall-{UniqueID}-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required for PFX certificate installation. A unique ID to differentiate different certificate install requests.
+
 Format is node.
-Calling Delete on the this node, should delete the certificates and the keys that were installed by the corresponding PFX blob.
+
+Calling Delete on this node, should delete the certificates and the keys that were installed by the corresponding PFX blob.
 <!-- Device-PFXCertInstall-{UniqueID}-Description-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-Editable-Begin -->
@@ -175,7 +177,7 @@ Calling Delete on the this node, should delete the certificates and the keys tha
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Atomic Required | True |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
@@ -193,7 +195,7 @@ Calling Delete on the this node, should delete the certificates and the keys tha
 <!-- Device-PFXCertInstall-{UniqueID}-ContainerName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-ContainerName-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-ContainerName-OmaUri-Begin -->
@@ -205,7 +207,8 @@ Calling Delete on the this node, should delete the certificates and the keys tha
 <!-- Device-PFXCertInstall-{UniqueID}-ContainerName-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional.
-Specifies the NGC container name (if NGC KSP is chosen for above node). If this node is not specified when NGC KSP is chosen, enrollment will fail.
+
+Specifies the NGC container name (if NGC KSP is chosen for above node). If this node isn't specified when NGC KSP is chosen, enrollment will fail.
 <!-- Device-PFXCertInstall-{UniqueID}-ContainerName-Description-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-ContainerName-Editable-Begin -->
@@ -217,7 +220,7 @@ Specifies the NGC container name (if NGC KSP is chosen for above node). If this 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get, Replace |
 <!-- Device-PFXCertInstall-{UniqueID}-ContainerName-DFProperties-End -->
 
@@ -233,7 +236,7 @@ Specifies the NGC container name (if NGC KSP is chosen for above node). If this 
 <!-- Device-PFXCertInstall-{UniqueID}-KeyLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-KeyLocation-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-KeyLocation-OmaUri-Begin -->
@@ -256,7 +259,7 @@ Required for PFX certificate installation. Indicates the KeyStorage provider to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Get, Replace |
 <!-- Device-PFXCertInstall-{UniqueID}-KeyLocation-DFProperties-End -->
 
@@ -283,7 +286,7 @@ Required for PFX certificate installation. Indicates the KeyStorage provider to 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertBlob-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertBlob-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertBlob-OmaUri-Begin -->
@@ -295,11 +298,14 @@ Required for PFX certificate installation. Indicates the KeyStorage provider to 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertBlob-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required.
-[CRYPT_DATA_BLOB](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)) structure that contains a PFX packet with the exported and encrypted certificates and keys. Add on this node will trigger the addition to the PFX certificate. This requires that all the other nodes under UniqueID that are parameters for PFX installation (Container Name, KeyLocation, CertPassword, fKeyExportable) are present before this is called. This will also set the Status node to the current Status of the operation.
-If Add is called on this node and a blob already exists, it will fail. If Replace is called on this node, the certificates will be overwritten.
-If Add is called on this node for a new PFX, the certificate will be added. If Replace is called on this node when it does not exist, this will fail.
-In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate
 
+[CRYPT_DATA_BLOB](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)) structure that contains a PFX packet with the exported and encrypted certificates and keys. Add on this node will trigger the addition to the PFX certificate. This requires that all the other nodes under UniqueID that are parameters for PFX installation (Container Name, KeyLocation, CertPassword, fKeyExportable) are present before this is called. This will also set the Status node to the current Status of the operation.
+
+If Add is called on this node and a blob already exists, it will fail. If Replace is called on this node, the certificates will be overwritten.
+
+If Add is called on this node for a new PFX, the certificate will be added. If Replace is called on this node when it doesn't exist, this will fail.
+
+In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertBlob-Description-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertBlob-Editable-Begin -->
@@ -311,7 +317,7 @@ In other words, using Replace or Add will result in the effect of either overwri
 
 | Property name | Property value |
 |:--|:--|
-| Format | bin |
+| Format | `bin` |
 | Access Type | Add, Get, Replace |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertBlob-DFProperties-End -->
 
@@ -327,7 +333,7 @@ In other words, using Replace or Add will result in the effect of either overwri
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPassword-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPassword-OmaUri-Begin -->
@@ -350,7 +356,7 @@ Password that protects the PFX blob. This is required if the PFX is password pro
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get, Replace |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPassword-DFProperties-End -->
 
@@ -366,7 +372,7 @@ Password that protects the PFX blob. This is required if the PFX is password pro
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-OmaUri-Begin -->
@@ -378,7 +384,8 @@ Password that protects the PFX blob. This is required if the PFX is password pro
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional.
-When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the store name where the certificate for decrypting the PFXCertPassword is stored.
+
+When a value of "2" is contained in PFXCertPasswordEncryptionType, specify the store name where the certificate for decrypting the PFXCertPassword is stored.
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Description-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Editable-Begin -->
@@ -390,7 +397,7 @@ When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get, Replace |
 | Dependency [EncryptionTypeDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/PFXCertPasswordEncryptionType` <br> Dependency Allowed Value: `[2]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-DFProperties-End -->
@@ -407,7 +414,7 @@ When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-OmaUri-Begin -->
@@ -419,8 +426,9 @@ When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Used to specify if the PFX certificate password is encrypted with a certificate.
+
 If the value is
-0 - Password is not encrypted
+0 - Password isn't encrypted
 1- Password is encrypted using the MDM certificate by the MDM server
 2 - Password is encrypted by a Custom Certificate by the MDM server. When this value is used here, also specify the custom store name in the PFXCertPasswordEncryptionStore node.
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-Description-End -->
@@ -434,7 +442,7 @@ If the value is
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-DFProperties-End -->
@@ -444,7 +452,7 @@ If the value is
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Password is not encrypted. |
+| 0 (Default) | Password isn't encrypted. |
 | 1 | Password is encrypted with the MDM certificate. |
 | 2 | Password is encrypted with custom certificate. |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-AllowedValues-End -->
@@ -461,7 +469,7 @@ If the value is
 <!-- Device-PFXCertInstall-{UniqueID}-PFXKeyExportable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXKeyExportable-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXKeyExportable-OmaUri-Begin -->
@@ -488,7 +496,7 @@ The PFX isn't exportable when it's installed to TPM.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Get, Replace |
 | Default Value  | true |
 | Dependency [KeyLocationDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/KeyLocation` <br> Dependency Allowed Value: `[3]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -515,7 +523,7 @@ The PFX isn't exportable when it's installed to TPM.
 <!-- Device-PFXCertInstall-{UniqueID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-Status-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-Status-OmaUri-Begin -->
@@ -538,7 +546,7 @@ Returns the error code of the PFX installation from the GetLastError command cal
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-PFXCertInstall-{UniqueID}-Status-DFProperties-End -->
 
@@ -554,7 +562,7 @@ Returns the error code of the PFX installation from the GetLastError command cal
 <!-- Device-PFXCertInstall-{UniqueID}-Thumbprint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-PFXCertInstall-{UniqueID}-Thumbprint-Applicability-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-Thumbprint-OmaUri-Begin -->
@@ -577,7 +585,7 @@ Returns the thumbprint of the PFX certificate installed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-PFXCertInstall-{UniqueID}-Thumbprint-DFProperties-End -->
 
@@ -593,7 +601,7 @@ Returns the thumbprint of the PFX certificate installed.
 <!-- Device-SCEP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-Applicability-End -->
 
 <!-- Device-SCEP-OmaUri-Begin -->
@@ -616,7 +624,7 @@ Node for SCEP. An alert is sent after the SCEP certificate is installed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-SCEP-DFProperties-End -->
 
@@ -632,7 +640,7 @@ Node for SCEP. An alert is sent after the SCEP certificate is installed.
 <!-- Device-SCEP-{UniqueID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-OmaUri-Begin -->
@@ -644,7 +652,8 @@ Node for SCEP. An alert is sent after the SCEP certificate is installed.
 <!-- Device-SCEP-{UniqueID}-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required for SCEP certificate installation. A unique ID to differentiate different certificate install requests.
-Calling Delete on the this node, should delete the corresponding SCEP certificate.
+
+Calling Delete on this node, should delete the corresponding SCEP certificate.
 <!-- Device-SCEP-{UniqueID}-Description-End -->
 
 <!-- Device-SCEP-{UniqueID}-Editable-Begin -->
@@ -656,7 +665,7 @@ Calling Delete on the this node, should delete the corresponding SCEP certificat
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Atomic Required | True |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
@@ -674,7 +683,7 @@ Calling Delete on the this node, should delete the corresponding SCEP certificat
 <!-- Device-SCEP-{UniqueID}-CertThumbprint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-CertThumbprint-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-CertThumbprint-OmaUri-Begin -->
@@ -685,7 +694,7 @@ Calling Delete on the this node, should delete the corresponding SCEP certificat
 
 <!-- Device-SCEP-{UniqueID}-CertThumbprint-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Specify the current cert's thumbprint if certificate enrollment succeeds. It is a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value.
+Optional. Specify the current cert's thumbprint if certificate enrollment succeeds. It's a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value.
 <!-- Device-SCEP-{UniqueID}-CertThumbprint-Description-End -->
 
 <!-- Device-SCEP-{UniqueID}-CertThumbprint-Editable-Begin -->
@@ -699,7 +708,7 @@ Optional. Specify the current cert's thumbprint if certificate enrollment succee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-SCEP-{UniqueID}-CertThumbprint-DFProperties-End -->
 
@@ -715,7 +724,7 @@ Optional. Specify the current cert's thumbprint if certificate enrollment succee
 <!-- Device-SCEP-{UniqueID}-ErrorCode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-ErrorCode-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-ErrorCode-OmaUri-Begin -->
@@ -738,7 +747,7 @@ Optional. The integer value that indicates the HRESULT of the last enrollment er
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-SCEP-{UniqueID}-ErrorCode-DFProperties-End -->
 
@@ -754,7 +763,7 @@ Optional. The integer value that indicates the HRESULT of the last enrollment er
 <!-- Device-SCEP-{UniqueID}-Install-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-OmaUri-Begin -->
@@ -765,7 +774,7 @@ Optional. The integer value that indicates the HRESULT of the last enrollment er
 
 <!-- Device-SCEP-{UniqueID}-Install-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required for SCEP certificate enrollment. Parent node to group SCEP cert install related request. NOTE: though the children nodes under Install support Replace commands, once the Exec command is sent to the device, the device will take the values which are set when the Exec command is accepted. The server should not expect the node value change after Exec command is accepted will impact the current undergoing enrollment. The server should check the Status node value and make sure the device is not at unknown stage before changing children node values.
+Required for SCEP certificate enrollment. Parent node to group SCEP cert install related request. NOTE: though the children nodes under Install support Replace commands, once the Exec command is sent to the device, the device will take the values which are set when the Exec command is accepted. The server shouldn't expect the node value change after Exec command is accepted will impact the current undergoing enrollment. The server should check the Status node value and make sure the device isn't at unknown stage before changing children node values.
 <!-- Device-SCEP-{UniqueID}-Install-Description-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-Editable-Begin -->
@@ -777,7 +786,7 @@ Required for SCEP certificate enrollment. Parent node to group SCEP cert install
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SCEP-{UniqueID}-Install-DFProperties-End -->
 
@@ -793,7 +802,7 @@ Required for SCEP certificate enrollment. Parent node to group SCEP cert install
 <!-- Device-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-AADKeyIdentifierList-OmaUri-Begin -->
@@ -804,7 +813,7 @@ Required for SCEP certificate enrollment. Parent node to group SCEP cert install
 
 <!-- Device-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Specify the AAD Key Identifier List as a semicolon separated values. On Enroll, the values in this list are validated against the AAD Key present on the device. If no match is found, enrollment will fail.
+Optional. Specify the Microsoft Entra ID Key Identifier List as a semicolon separated values. On Enroll, the values in this list are validated against the Microsoft Entra ID Key present on the device. If no match is found, enrollment will fail.
 <!-- Device-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Description-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Editable-Begin -->
@@ -816,7 +825,7 @@ Optional. Specify the AAD Key Identifier List as a semicolon separated values. O
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SCEP-{UniqueID}-Install-AADKeyIdentifierList-DFProperties-End -->
 
@@ -832,7 +841,7 @@ Optional. Specify the AAD Key Identifier List as a semicolon separated values. O
 <!-- Device-SCEP-{UniqueID}-Install-CAThumbprint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-CAThumbprint-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-CAThumbprint-OmaUri-Begin -->
@@ -843,7 +852,7 @@ Optional. Specify the AAD Key Identifier List as a semicolon separated values. O
 
 <!-- Device-SCEP-{UniqueID}-Install-CAThumbprint-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required. Specify root CA thumbprint. It is a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value. When client authenticates SCEP server, it checks CA cert from SCEP server whether match with this cert. If no match is found, authentication will fail.
+Required. Specify root CA thumbprint. It's a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value. When client authenticates SCEP server, it checks CA cert from SCEP server whether match with this cert. If no match is found, authentication will fail.
 <!-- Device-SCEP-{UniqueID}-Install-CAThumbprint-Description-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-CAThumbprint-Editable-Begin -->
@@ -855,7 +864,7 @@ Required. Specify root CA thumbprint. It is a 20-byte value of the SHA1 certific
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SCEP-{UniqueID}-Install-CAThumbprint-DFProperties-End -->
 
@@ -871,7 +880,7 @@ Required. Specify root CA thumbprint. It is a 20-byte value of the SHA1 certific
 <!-- Device-SCEP-{UniqueID}-Install-Challenge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-Challenge-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-Challenge-OmaUri-Begin -->
@@ -894,7 +903,7 @@ Required for SCEP certificate enrollment. B64 encoded SCEP enrollment challenge.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SCEP-{UniqueID}-Install-Challenge-DFProperties-End -->
 
@@ -910,7 +919,7 @@ Required for SCEP certificate enrollment. B64 encoded SCEP enrollment challenge.
 <!-- Device-SCEP-{UniqueID}-Install-ContainerName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-ContainerName-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-ContainerName-OmaUri-Begin -->
@@ -922,7 +931,8 @@ Required for SCEP certificate enrollment. B64 encoded SCEP enrollment challenge.
 <!-- Device-SCEP-{UniqueID}-Install-ContainerName-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional.
-Specifies the NGC container name (if NGC KSP is chosen for above node). If this node is not specified when NGC KSP is chosen, enrollment will fail.
+
+Specifies the NGC container name (if NGC KSP is chosen for above node). If this node isn't specified when NGC KSP is chosen, enrollment will fail.
 <!-- Device-SCEP-{UniqueID}-Install-ContainerName-Description-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-ContainerName-Editable-Begin -->
@@ -934,7 +944,7 @@ Specifies the NGC container name (if NGC KSP is chosen for above node). If this 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SCEP-{UniqueID}-Install-ContainerName-DFProperties-End -->
 
@@ -950,7 +960,7 @@ Specifies the NGC container name (if NGC KSP is chosen for above node). If this 
 <!-- Device-SCEP-{UniqueID}-Install-CustomTextToShowInPrompt-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-CustomTextToShowInPrompt-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-CustomTextToShowInPrompt-OmaUri-Begin -->
@@ -973,7 +983,7 @@ Optional. Specifies the custom text to show on the NGC PIN prompt during certifi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SCEP-{UniqueID}-Install-CustomTextToShowInPrompt-DFProperties-End -->
 
@@ -989,7 +999,7 @@ Optional. Specifies the custom text to show on the NGC PIN prompt during certifi
 <!-- Device-SCEP-{UniqueID}-Install-EKUMapping-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-EKUMapping-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-EKUMapping-OmaUri-Begin -->
@@ -1012,7 +1022,7 @@ Required. Specify extended key usages. Subjected to SCEP server configuration. T
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SCEP-{UniqueID}-Install-EKUMapping-DFProperties-End -->
 
@@ -1028,7 +1038,7 @@ Required. Specify extended key usages. Subjected to SCEP server configuration. T
 <!-- Device-SCEP-{UniqueID}-Install-Enroll-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-Enroll-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-Enroll-OmaUri-Begin -->
@@ -1039,7 +1049,7 @@ Required. Specify extended key usages. Subjected to SCEP server configuration. T
 
 <!-- Device-SCEP-{UniqueID}-Install-Enroll-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required. Trigger the device to start the cert enrollment. The device will not notify MDM server after cert enrollment is done. The MDM server could later query the device to find out whether new cert is added.
+Required. Trigger the device to start the cert enrollment. The device won't notify MDM server after cert enrollment is done. The MDM server could later query the device to find out whether new cert is added.
 <!-- Device-SCEP-{UniqueID}-Install-Enroll-Description-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-Enroll-Editable-Begin -->
@@ -1051,7 +1061,7 @@ Required. Trigger the device to start the cert enrollment. The device will not n
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Exec |
 <!-- Device-SCEP-{UniqueID}-Install-Enroll-DFProperties-End -->
 
@@ -1067,7 +1077,7 @@ Required. Trigger the device to start the cert enrollment. The device will not n
 <!-- Device-SCEP-{UniqueID}-Install-HashAlgorithm-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-HashAlgorithm-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-HashAlgorithm-OmaUri-Begin -->
@@ -1092,7 +1102,7 @@ For NGC, only SHA256 is supported as the supported algorithm.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SCEP-{UniqueID}-Install-HashAlgorithm-DFProperties-End -->
 
@@ -1108,7 +1118,7 @@ For NGC, only SHA256 is supported as the supported algorithm.
 <!-- Device-SCEP-{UniqueID}-Install-KeyLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-KeyLength-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-KeyLength-OmaUri-Begin -->
@@ -1120,6 +1130,7 @@ For NGC, only SHA256 is supported as the supported algorithm.
 <!-- Device-SCEP-{UniqueID}-Install-KeyLength-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required for enrollment. Specify private key length (RSA).
+
 Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 <!-- Device-SCEP-{UniqueID}-Install-KeyLength-Description-End -->
 
@@ -1134,7 +1145,7 @@ Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SCEP-{UniqueID}-Install-KeyLength-DFProperties-End -->
 
@@ -1160,7 +1171,7 @@ Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 <!-- Device-SCEP-{UniqueID}-Install-KeyProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-KeyProtection-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-KeyProtection-OmaUri-Begin -->
@@ -1171,7 +1182,8 @@ Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 
 <!-- Device-SCEP-{UniqueID}-Install-KeyProtection-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Specify where to keep the private key. **Note** that even it is protected by TPM, it is not guarded with TPM PIN.
+Optional. Specify where to keep the private key. Note that even it's protected by TPM, it isn't guarded with TPM PIN.
+
 SCEP enrolled cert doesn't support TPM PIN protection.
 <!-- Device-SCEP-{UniqueID}-Install-KeyProtection-Description-End -->
 
@@ -1184,7 +1196,7 @@ SCEP enrolled cert doesn't support TPM PIN protection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 3 |
 <!-- Device-SCEP-{UniqueID}-Install-KeyProtection-DFProperties-End -->
@@ -1212,7 +1224,7 @@ SCEP enrolled cert doesn't support TPM PIN protection.
 <!-- Device-SCEP-{UniqueID}-Install-KeyUsage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-KeyUsage-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-KeyUsage-OmaUri-Begin -->
@@ -1235,7 +1247,7 @@ Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SCEP-{UniqueID}-Install-KeyUsage-DFProperties-End -->
 
@@ -1251,7 +1263,7 @@ Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for
 <!-- Device-SCEP-{UniqueID}-Install-RetryCount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-RetryCount-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-RetryCount-OmaUri-Begin -->
@@ -1262,7 +1274,8 @@ Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for
 
 <!-- Device-SCEP-{UniqueID}-Install-RetryCount-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Special to SCEP. Specify device retry times when the SCEP sever sends pending status. Format is int. Default value is 3. Max value: the value cannot be larger than 30. If it is larger than 30, the device will use 30.
+Optional. Special to SCEP. Specify device retry times when the SCEP server sends pending status. Format is int. Default value is 3. Max value: the value can't be larger than 30. If it's larger than 30, the device will use 30.
+
 The min value is 0 which means no retry.
 <!-- Device-SCEP-{UniqueID}-Install-RetryCount-Description-End -->
 
@@ -1275,7 +1288,7 @@ The min value is 0 which means no retry.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-30]` |
 | Default Value  | 3 |
@@ -1293,7 +1306,7 @@ The min value is 0 which means no retry.
 <!-- Device-SCEP-{UniqueID}-Install-RetryDelay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-RetryDelay-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-RetryDelay-OmaUri-Begin -->
@@ -1319,7 +1332,7 @@ The min value is 1.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 5 |
@@ -1337,7 +1350,7 @@ The min value is 1.
 <!-- Device-SCEP-{UniqueID}-Install-ServerURL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-ServerURL-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-ServerURL-OmaUri-Begin -->
@@ -1360,7 +1373,7 @@ Required for SCEP certificate enrollment. Specify the cert enrollment server. Th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SCEP-{UniqueID}-Install-ServerURL-DFProperties-End -->
 
@@ -1376,7 +1389,7 @@ Required for SCEP certificate enrollment. Specify the cert enrollment server. Th
 <!-- Device-SCEP-{UniqueID}-Install-SubjectAlternativeNames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-SubjectAlternativeNames-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-SubjectAlternativeNames-OmaUri-Begin -->
@@ -1399,7 +1412,7 @@ Optional. Specify subject alternative name. Multiple alternative names could be 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SCEP-{UniqueID}-Install-SubjectAlternativeNames-DFProperties-End -->
 
@@ -1415,7 +1428,7 @@ Optional. Specify subject alternative name. Multiple alternative names could be 
 <!-- Device-SCEP-{UniqueID}-Install-SubjectName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-SubjectName-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-SubjectName-OmaUri-Begin -->
@@ -1439,7 +1452,7 @@ For more information, see [CertNameToStrA function](/windows/win32/api/wincrypt/
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SCEP-{UniqueID}-Install-SubjectName-DFProperties-End -->
 
@@ -1455,7 +1468,7 @@ For more information, see [CertNameToStrA function](/windows/win32/api/wincrypt/
 <!-- Device-SCEP-{UniqueID}-Install-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-TemplateName-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-TemplateName-OmaUri-Begin -->
@@ -1466,7 +1479,7 @@ For more information, see [CertNameToStrA function](/windows/win32/api/wincrypt/
 
 <!-- Device-SCEP-{UniqueID}-Install-TemplateName-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. OID of certificate template name. **Note** that this name is typically ignored by the SCEP server, therefore the MDM server typically doesn't need to provide it.
+Optional. OID of certificate template name. Note that this name is typically ignored by the SCEP server, therefore the MDM server typically doesn't need to provide it.
 <!-- Device-SCEP-{UniqueID}-Install-TemplateName-Description-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-TemplateName-Editable-Begin -->
@@ -1478,7 +1491,7 @@ Optional. OID of certificate template name. **Note** that this name is typically
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SCEP-{UniqueID}-Install-TemplateName-DFProperties-End -->
 
@@ -1494,7 +1507,7 @@ Optional. OID of certificate template name. **Note** that this name is typically
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriod-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriod-OmaUri-Begin -->
@@ -1506,7 +1519,8 @@ Optional. OID of certificate template name. **Note** that this name is typically
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriod-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Specify the units for valid period. Valid values are: Days(Default), Months, Years.
-MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) the SCEP server as part of certificate enrollment request. It is the server's decision on how to use this valid period to create the certificate.
+
+MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) the SCEP server as part of certificate enrollment request. It's the server's decision on how to use this valid period to create the certificate.
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriod-Description-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriod-Editable-Begin -->
@@ -1518,7 +1532,7 @@ MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | Days |
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriod-DFProperties-End -->
@@ -1545,7 +1559,7 @@ MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriodUnits-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriodUnits-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriodUnits-OmaUri-Begin -->
@@ -1556,10 +1570,10 @@ MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio
 
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriodUnits-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Specify desired number of units used in validity period. Subjected to SCEP server configuration. Default is 0. The units are defined in ValidPeriod node. **Note** the valid period specified by MDM will overwrite the valid period specified in cert template. For example, if ValidPeriod is days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
+Optional. Specify desired number of units used in validity period. Subjected to SCEP server configuration. Default is 0. The units are defined in ValidPeriod node. Note the valid period specified by MDM will overwrite the valid period specified in cert template. For example, if ValidPeriod is days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
 
 > [!NOTE]
-> The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) the SCEP server as part of certificate enrollment request. It is the server's decision on how to use this valid period to create the certificate.
+> The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) the SCEP server as part of certificate enrollment request. It's the server's decision on how to use this valid period to create the certificate.
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriodUnits-Description-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriodUnits-Editable-Begin -->
@@ -1571,7 +1585,7 @@ Optional. Specify desired number of units used in validity period. Subjected to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriodUnits-DFProperties-End -->
@@ -1588,7 +1602,7 @@ Optional. Specify desired number of units used in validity period. Subjected to 
 <!-- Device-SCEP-{UniqueID}-RespondentServerUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-RespondentServerUrl-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-RespondentServerUrl-OmaUri-Begin -->
@@ -1611,7 +1625,7 @@ Required. Returns the URL of the SCEP server that responded to the enrollment re
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-SCEP-{UniqueID}-RespondentServerUrl-DFProperties-End -->
 
@@ -1627,7 +1641,7 @@ Required. Returns the URL of the SCEP server that responded to the enrollment re
 <!-- Device-SCEP-{UniqueID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SCEP-{UniqueID}-Status-Applicability-End -->
 
 <!-- Device-SCEP-{UniqueID}-Status-OmaUri-Begin -->
@@ -1639,7 +1653,9 @@ Required. Returns the URL of the SCEP server that responded to the enrollment re
 <!-- Device-SCEP-{UniqueID}-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required. Specify the latest status for the certificate due to enroll request.
+
 Valid values are:
+
 1 - finished successfully
 2 - pending (the device hasn't finished the action but has received the SCEP server pending response)
 32 - unknown
@@ -1655,7 +1671,7 @@ Valid values are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-SCEP-{UniqueID}-Status-DFProperties-End -->
 
@@ -1671,7 +1687,7 @@ Valid values are:
 <!-- User-PFXCertInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-Applicability-End -->
 
 <!-- User-PFXCertInstall-OmaUri-Begin -->
@@ -1694,7 +1710,7 @@ Required for PFX certificate installation. The parent node grouping the PFX cert
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-PFXCertInstall-DFProperties-End -->
 
@@ -1710,7 +1726,7 @@ Required for PFX certificate installation. The parent node grouping the PFX cert
 <!-- User-PFXCertInstall-{UniqueID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-OmaUri-Begin -->
@@ -1722,8 +1738,10 @@ Required for PFX certificate installation. The parent node grouping the PFX cert
 <!-- User-PFXCertInstall-{UniqueID}-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required for PFX certificate installation. A unique ID to differentiate different certificate install requests.
+
 Format is node.
-Calling Delete on the this node, should delete the certificates and the keys that were installed by the corresponding PFX blob.
+
+Calling Delete on this node, should delete the certificates and the keys that were installed by the corresponding PFX blob.
 <!-- User-PFXCertInstall-{UniqueID}-Description-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-Editable-Begin -->
@@ -1735,7 +1753,7 @@ Calling Delete on the this node, should delete the certificates and the keys tha
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Atomic Required | True |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
@@ -1753,7 +1771,7 @@ Calling Delete on the this node, should delete the certificates and the keys tha
 <!-- User-PFXCertInstall-{UniqueID}-ContainerName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-ContainerName-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-ContainerName-OmaUri-Begin -->
@@ -1765,7 +1783,8 @@ Calling Delete on the this node, should delete the certificates and the keys tha
 <!-- User-PFXCertInstall-{UniqueID}-ContainerName-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional.
-Specifies the NGC container name (if NGC KSP is chosen for above node). If this node is not specified when NGC KSP is chosen, enrollment will fail.
+
+Specifies the NGC container name (if NGC KSP is chosen for above node). If this node isn't specified when NGC KSP is chosen, enrollment will fail.
 <!-- User-PFXCertInstall-{UniqueID}-ContainerName-Description-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-ContainerName-Editable-Begin -->
@@ -1777,7 +1796,7 @@ Specifies the NGC container name (if NGC KSP is chosen for above node). If this 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get, Replace |
 <!-- User-PFXCertInstall-{UniqueID}-ContainerName-DFProperties-End -->
 
@@ -1793,7 +1812,7 @@ Specifies the NGC container name (if NGC KSP is chosen for above node). If this 
 <!-- User-PFXCertInstall-{UniqueID}-KeyLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-KeyLocation-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-KeyLocation-OmaUri-Begin -->
@@ -1816,7 +1835,7 @@ Required for PFX certificate installation. Indicates the KeyStorage provider to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Get, Replace |
 <!-- User-PFXCertInstall-{UniqueID}-KeyLocation-DFProperties-End -->
 
@@ -1843,7 +1862,7 @@ Required for PFX certificate installation. Indicates the KeyStorage provider to 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertBlob-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertBlob-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertBlob-OmaUri-Begin -->
@@ -1855,11 +1874,14 @@ Required for PFX certificate installation. Indicates the KeyStorage provider to 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertBlob-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required.
-[CRYPT_DATA_BLOB](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)) structure that contains a PFX packet with the exported and encrypted certificates and keys. Add on this node will trigger the addition to the PFX certificate. This requires that all the other nodes under UniqueID that are parameters for PFX installation (Container Name, KeyLocation, CertPassword, fKeyExportable) are present before this is called. This will also set the Status node to the current Status of the operation.
-If Add is called on this node and a blob already exists, it will fail. If Replace is called on this node, the certificates will be overwritten.
-If Add is called on this node for a new PFX, the certificate will be added. If Replace is called on this node when it does not exist, this will fail.
-In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate
 
+[CRYPT_DATA_BLOB](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)) structure that contains a PFX packet with the exported and encrypted certificates and keys. Add on this node will trigger the addition to the PFX certificate. This requires that all the other nodes under UniqueID that are parameters for PFX installation (Container Name, KeyLocation, CertPassword, fKeyExportable) are present before this is called. This will also set the Status node to the current Status of the operation.
+
+If Add is called on this node and a blob already exists, it will fail. If Replace is called on this node, the certificates will be overwritten.
+
+If Add is called on this node for a new PFX, the certificate will be added. If Replace is called on this node when it doesn't exist, this will fail.
+
+In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertBlob-Description-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertBlob-Editable-Begin -->
@@ -1871,7 +1893,7 @@ In other words, using Replace or Add will result in the effect of either overwri
 
 | Property name | Property value |
 |:--|:--|
-| Format | bin |
+| Format | `bin` |
 | Access Type | Add, Get, Replace |
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertBlob-DFProperties-End -->
 
@@ -1887,7 +1909,7 @@ In other words, using Replace or Add will result in the effect of either overwri
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPassword-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPassword-OmaUri-Begin -->
@@ -1910,7 +1932,7 @@ Password that protects the PFX blob. This is required if the PFX is password pro
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get, Replace |
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPassword-DFProperties-End -->
 
@@ -1926,7 +1948,7 @@ Password that protects the PFX blob. This is required if the PFX is password pro
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-OmaUri-Begin -->
@@ -1938,7 +1960,8 @@ Password that protects the PFX blob. This is required if the PFX is password pro
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional.
-When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the store name where the certificate for decrypting the PFXCertPassword is stored.
+
+When a value of "2" is contained in PFXCertPasswordEncryptionType, specify the store name where the certificate for decrypting the PFXCertPassword is stored.
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Description-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Editable-Begin -->
@@ -1950,7 +1973,7 @@ When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get, Replace |
 | Dependency [EncryptionTypeDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/PFXCertPasswordEncryptionType` <br> Dependency Allowed Value: `[2]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-DFProperties-End -->
@@ -1967,7 +1990,7 @@ When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-OmaUri-Begin -->
@@ -1979,8 +2002,9 @@ When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Used to specify if the PFX certificate password is encrypted with a certificate.
+
 If the value is
-0 - Password is not encrypted
+0 - Password isn't encrypted
 1- Password is encrypted using the MDM certificate by the MDM server
 2 - Password is encrypted by a Custom Certificate by the MDM server. When this value is used here, also specify the custom store name in the PFXCertPasswordEncryptionStore node.
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-Description-End -->
@@ -1994,7 +2018,7 @@ If the value is
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Get, Replace |
 | Default Value  | 0 |
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-DFProperties-End -->
@@ -2004,7 +2028,7 @@ If the value is
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Password is not encrypted. |
+| 0 (Default) | Password isn't encrypted. |
 | 1 | Password is encrypted with the MDM certificate. |
 | 2 | Password is encrypted with custom certificate. |
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-AllowedValues-End -->
@@ -2021,7 +2045,7 @@ If the value is
 <!-- User-PFXCertInstall-{UniqueID}-PFXKeyExportable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-PFXKeyExportable-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-PFXKeyExportable-OmaUri-Begin -->
@@ -2046,7 +2070,7 @@ Optional. Used to specify if the private key installed is exportable (can be exp
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Get, Replace |
 | Default Value  | true |
 | Dependency [KeyLocationDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/KeyLocation` <br> Dependency Allowed Value: `[3]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -2073,7 +2097,7 @@ Optional. Used to specify if the private key installed is exportable (can be exp
 <!-- User-PFXCertInstall-{UniqueID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-Status-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-Status-OmaUri-Begin -->
@@ -2096,7 +2120,7 @@ Returns the error code of the PFX installation from the GetLastError command cal
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-PFXCertInstall-{UniqueID}-Status-DFProperties-End -->
 
@@ -2112,7 +2136,7 @@ Returns the error code of the PFX installation from the GetLastError command cal
 <!-- User-PFXCertInstall-{UniqueID}-Thumbprint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-PFXCertInstall-{UniqueID}-Thumbprint-Applicability-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-Thumbprint-OmaUri-Begin -->
@@ -2135,7 +2159,7 @@ Returns the thumbprint of the PFX certificate installed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-PFXCertInstall-{UniqueID}-Thumbprint-DFProperties-End -->
 
@@ -2151,7 +2175,7 @@ Returns the thumbprint of the PFX certificate installed.
 <!-- User-SCEP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-Applicability-End -->
 
 <!-- User-SCEP-OmaUri-Begin -->
@@ -2174,7 +2198,7 @@ Node for SCEP. An alert is sent after the SCEP certificate is installed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-SCEP-DFProperties-End -->
 
@@ -2190,7 +2214,7 @@ Node for SCEP. An alert is sent after the SCEP certificate is installed.
 <!-- User-SCEP-{UniqueID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-OmaUri-Begin -->
@@ -2202,7 +2226,8 @@ Node for SCEP. An alert is sent after the SCEP certificate is installed.
 <!-- User-SCEP-{UniqueID}-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required for SCEP certificate installation. A unique ID to differentiate different certificate install requests.
-Calling Delete on the this node, should delete the corresponding SCEP certificate.
+
+Calling Delete on this node, should delete the corresponding SCEP certificate.
 <!-- User-SCEP-{UniqueID}-Description-End -->
 
 <!-- User-SCEP-{UniqueID}-Editable-Begin -->
@@ -2214,7 +2239,7 @@ Calling Delete on the this node, should delete the corresponding SCEP certificat
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Atomic Required | True |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
@@ -2232,7 +2257,7 @@ Calling Delete on the this node, should delete the corresponding SCEP certificat
 <!-- User-SCEP-{UniqueID}-CertThumbprint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-CertThumbprint-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-CertThumbprint-OmaUri-Begin -->
@@ -2243,7 +2268,7 @@ Calling Delete on the this node, should delete the corresponding SCEP certificat
 
 <!-- User-SCEP-{UniqueID}-CertThumbprint-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Specify the current cert's thumbprint if certificate enrollment succeeds. It is a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value.
+Optional. Specify the current cert's thumbprint if certificate enrollment succeeds. It's a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value.
 <!-- User-SCEP-{UniqueID}-CertThumbprint-Description-End -->
 
 <!-- User-SCEP-{UniqueID}-CertThumbprint-Editable-Begin -->
@@ -2257,7 +2282,7 @@ Optional. Specify the current cert's thumbprint if certificate enrollment succee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-SCEP-{UniqueID}-CertThumbprint-DFProperties-End -->
 
@@ -2273,7 +2298,7 @@ Optional. Specify the current cert's thumbprint if certificate enrollment succee
 <!-- User-SCEP-{UniqueID}-ErrorCode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-ErrorCode-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-ErrorCode-OmaUri-Begin -->
@@ -2296,7 +2321,7 @@ Optional. The integer value that indicates the HRESULT of the last enrollment er
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-SCEP-{UniqueID}-ErrorCode-DFProperties-End -->
 
@@ -2312,7 +2337,7 @@ Optional. The integer value that indicates the HRESULT of the last enrollment er
 <!-- User-SCEP-{UniqueID}-Install-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-OmaUri-Begin -->
@@ -2323,7 +2348,7 @@ Optional. The integer value that indicates the HRESULT of the last enrollment er
 
 <!-- User-SCEP-{UniqueID}-Install-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required for SCEP certificate enrollment. Parent node to group SCEP cert install related request. NOTE: though the children nodes under Install support Replace commands, once the Exec command is sent to the device, the device will take the values which are set when the Exec command is accepted. The server should not expect the node value change after Exec command is accepted will impact the current undergoing enrollment. The server should check the Status node value and make sure the device is not at unknown stage before changing children node values.
+Required for SCEP certificate enrollment. Parent node to group SCEP cert install related request. NOTE: though the children nodes under Install support Replace commands, once the Exec command is sent to the device, the device will take the values which are set when the Exec command is accepted. The server shouldn't expect the node value change after Exec command is accepted will impact the current undergoing enrollment. The server should check the Status node value and make sure the device isn't at unknown stage before changing children node values.
 <!-- User-SCEP-{UniqueID}-Install-Description-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-Editable-Begin -->
@@ -2335,7 +2360,7 @@ Required for SCEP certificate enrollment. Parent node to group SCEP cert install
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-SCEP-{UniqueID}-Install-DFProperties-End -->
 
@@ -2351,7 +2376,7 @@ Required for SCEP certificate enrollment. Parent node to group SCEP cert install
 <!-- User-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-AADKeyIdentifierList-OmaUri-Begin -->
@@ -2362,7 +2387,7 @@ Required for SCEP certificate enrollment. Parent node to group SCEP cert install
 
 <!-- User-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Specify the AAD Key Identifier List as a semicolon separated values. On Enroll, the values in this list are validated against the AAD Key present on the device. If no match is found, enrollment will fail.
+Optional. Specify the Microsoft Entra ID Key Identifier List as a semicolon separated values. On Enroll, the values in this list are validated against the Microsoft Entra ID Key present on the device. If no match is found, enrollment will fail.
 <!-- User-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Description-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Editable-Begin -->
@@ -2374,7 +2399,7 @@ Optional. Specify the AAD Key Identifier List as a semicolon separated values. O
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-SCEP-{UniqueID}-Install-AADKeyIdentifierList-DFProperties-End -->
 
@@ -2390,7 +2415,7 @@ Optional. Specify the AAD Key Identifier List as a semicolon separated values. O
 <!-- User-SCEP-{UniqueID}-Install-CAThumbprint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-CAThumbprint-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-CAThumbprint-OmaUri-Begin -->
@@ -2401,7 +2426,7 @@ Optional. Specify the AAD Key Identifier List as a semicolon separated values. O
 
 <!-- User-SCEP-{UniqueID}-Install-CAThumbprint-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required. Specify root CA thumbprint. It is a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value. When client authenticates SCEP server, it checks CA cert from SCEP server whether match with this cert. If no match is found, authentication will fail.
+Required. Specify root CA thumbprint. It's a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value. When client authenticates SCEP server, it checks CA cert from SCEP server whether match with this cert. If no match is found, authentication will fail.
 <!-- User-SCEP-{UniqueID}-Install-CAThumbprint-Description-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-CAThumbprint-Editable-Begin -->
@@ -2413,7 +2438,7 @@ Required. Specify root CA thumbprint. It is a 20-byte value of the SHA1 certific
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-SCEP-{UniqueID}-Install-CAThumbprint-DFProperties-End -->
 
@@ -2429,7 +2454,7 @@ Required. Specify root CA thumbprint. It is a 20-byte value of the SHA1 certific
 <!-- User-SCEP-{UniqueID}-Install-Challenge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-Challenge-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-Challenge-OmaUri-Begin -->
@@ -2452,7 +2477,7 @@ Required for SCEP certificate enrollment. B64 encoded SCEP enrollment challenge.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-SCEP-{UniqueID}-Install-Challenge-DFProperties-End -->
 
@@ -2468,7 +2493,7 @@ Required for SCEP certificate enrollment. B64 encoded SCEP enrollment challenge.
 <!-- User-SCEP-{UniqueID}-Install-ContainerName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-ContainerName-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-ContainerName-OmaUri-Begin -->
@@ -2480,7 +2505,8 @@ Required for SCEP certificate enrollment. B64 encoded SCEP enrollment challenge.
 <!-- User-SCEP-{UniqueID}-Install-ContainerName-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional.
-Specifies the NGC container name (if NGC KSP is chosen for above node). If this node is not specified when NGC KSP is chosen, enrollment will fail.
+
+Specifies the NGC container name (if NGC KSP is chosen for above node). If this node isn't specified when NGC KSP is chosen, enrollment will fail.
 <!-- User-SCEP-{UniqueID}-Install-ContainerName-Description-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-ContainerName-Editable-Begin -->
@@ -2492,7 +2518,7 @@ Specifies the NGC container name (if NGC KSP is chosen for above node). If this 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-SCEP-{UniqueID}-Install-ContainerName-DFProperties-End -->
 
@@ -2508,7 +2534,7 @@ Specifies the NGC container name (if NGC KSP is chosen for above node). If this 
 <!-- User-SCEP-{UniqueID}-Install-CustomTextToShowInPrompt-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-CustomTextToShowInPrompt-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-CustomTextToShowInPrompt-OmaUri-Begin -->
@@ -2531,7 +2557,7 @@ Optional. Specifies the custom text to show on the NGC PIN prompt during certifi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-SCEP-{UniqueID}-Install-CustomTextToShowInPrompt-DFProperties-End -->
 
@@ -2547,7 +2573,7 @@ Optional. Specifies the custom text to show on the NGC PIN prompt during certifi
 <!-- User-SCEP-{UniqueID}-Install-EKUMapping-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-EKUMapping-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-EKUMapping-OmaUri-Begin -->
@@ -2570,7 +2596,7 @@ Required. Specify extended key usages. Subjected to SCEP server configuration. T
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-SCEP-{UniqueID}-Install-EKUMapping-DFProperties-End -->
 
@@ -2586,7 +2612,7 @@ Required. Specify extended key usages. Subjected to SCEP server configuration. T
 <!-- User-SCEP-{UniqueID}-Install-Enroll-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-Enroll-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-Enroll-OmaUri-Begin -->
@@ -2597,7 +2623,7 @@ Required. Specify extended key usages. Subjected to SCEP server configuration. T
 
 <!-- User-SCEP-{UniqueID}-Install-Enroll-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required. Trigger the device to start the cert enrollment. The device will not notify MDM server after cert enrollment is done. The MDM server could later query the device to find out whether new cert is added.
+Required. Trigger the device to start the cert enrollment. The device won't notify MDM server after cert enrollment is done. The MDM server could later query the device to find out whether new cert is added.
 <!-- User-SCEP-{UniqueID}-Install-Enroll-Description-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-Enroll-Editable-Begin -->
@@ -2609,7 +2635,7 @@ Required. Trigger the device to start the cert enrollment. The device will not n
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Exec |
 <!-- User-SCEP-{UniqueID}-Install-Enroll-DFProperties-End -->
 
@@ -2625,7 +2651,7 @@ Required. Trigger the device to start the cert enrollment. The device will not n
 <!-- User-SCEP-{UniqueID}-Install-HashAlgorithm-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-HashAlgorithm-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-HashAlgorithm-OmaUri-Begin -->
@@ -2650,7 +2676,7 @@ For NGC, only SHA256 is supported as the supported algorithm.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-SCEP-{UniqueID}-Install-HashAlgorithm-DFProperties-End -->
 
@@ -2666,7 +2692,7 @@ For NGC, only SHA256 is supported as the supported algorithm.
 <!-- User-SCEP-{UniqueID}-Install-KeyLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-KeyLength-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-KeyLength-OmaUri-Begin -->
@@ -2678,6 +2704,7 @@ For NGC, only SHA256 is supported as the supported algorithm.
 <!-- User-SCEP-{UniqueID}-Install-KeyLength-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required for enrollment. Specify private key length (RSA).
+
 Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 <!-- User-SCEP-{UniqueID}-Install-KeyLength-Description-End -->
 
@@ -2692,7 +2719,7 @@ Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-SCEP-{UniqueID}-Install-KeyLength-DFProperties-End -->
 
@@ -2718,7 +2745,7 @@ Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 <!-- User-SCEP-{UniqueID}-Install-KeyProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-KeyProtection-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-KeyProtection-OmaUri-Begin -->
@@ -2729,7 +2756,8 @@ Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 
 <!-- User-SCEP-{UniqueID}-Install-KeyProtection-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Specify where to keep the private key. **Note** that even it is protected by TPM, it is not guarded with TPM PIN.
+Optional. Specify where to keep the private key. Note that even it's protected by TPM, it isn't guarded with TPM PIN.
+
 SCEP enrolled cert doesn't support TPM PIN protection.
 <!-- User-SCEP-{UniqueID}-Install-KeyProtection-Description-End -->
 
@@ -2742,7 +2770,7 @@ SCEP enrolled cert doesn't support TPM PIN protection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 3 |
 <!-- User-SCEP-{UniqueID}-Install-KeyProtection-DFProperties-End -->
@@ -2770,7 +2798,7 @@ SCEP enrolled cert doesn't support TPM PIN protection.
 <!-- User-SCEP-{UniqueID}-Install-KeyUsage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-KeyUsage-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-KeyUsage-OmaUri-Begin -->
@@ -2793,7 +2821,7 @@ Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-SCEP-{UniqueID}-Install-KeyUsage-DFProperties-End -->
 
@@ -2809,7 +2837,7 @@ Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for
 <!-- User-SCEP-{UniqueID}-Install-RetryCount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-RetryCount-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-RetryCount-OmaUri-Begin -->
@@ -2820,7 +2848,8 @@ Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for
 
 <!-- User-SCEP-{UniqueID}-Install-RetryCount-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Special to SCEP. Specify device retry times when the SCEP sever sends pending status. Format is int. Default value is 3. Max value: the value cannot be larger than 30. If it is larger than 30, the device will use 30.
+Optional. Special to SCEP. Specify device retry times when the SCEP server sends pending status. Format is int. Default value is 3. Max value: the value can't be larger than 30. If it's larger than 30, the device will use 30.
+
 The min value is 0 which means no retry.
 <!-- User-SCEP-{UniqueID}-Install-RetryCount-Description-End -->
 
@@ -2833,7 +2862,7 @@ The min value is 0 which means no retry.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-30]` |
 | Default Value  | 3 |
@@ -2851,7 +2880,7 @@ The min value is 0 which means no retry.
 <!-- User-SCEP-{UniqueID}-Install-RetryDelay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-RetryDelay-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-RetryDelay-OmaUri-Begin -->
@@ -2877,7 +2906,7 @@ The min value is 1.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 5 |
@@ -2895,7 +2924,7 @@ The min value is 1.
 <!-- User-SCEP-{UniqueID}-Install-ServerURL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-ServerURL-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-ServerURL-OmaUri-Begin -->
@@ -2918,7 +2947,7 @@ Required for SCEP certificate enrollment. Specify the cert enrollment server. Th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-SCEP-{UniqueID}-Install-ServerURL-DFProperties-End -->
 
@@ -2934,7 +2963,7 @@ Required for SCEP certificate enrollment. Specify the cert enrollment server. Th
 <!-- User-SCEP-{UniqueID}-Install-SubjectAlternativeNames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-SubjectAlternativeNames-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-SubjectAlternativeNames-OmaUri-Begin -->
@@ -2957,7 +2986,7 @@ Optional. Specify subject alternative name. Multiple alternative names could be 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-SCEP-{UniqueID}-Install-SubjectAlternativeNames-DFProperties-End -->
 
@@ -2973,7 +3002,7 @@ Optional. Specify subject alternative name. Multiple alternative names could be 
 <!-- User-SCEP-{UniqueID}-Install-SubjectName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-SubjectName-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-SubjectName-OmaUri-Begin -->
@@ -2997,7 +3026,7 @@ For more information, see [CertNameToStrA function](/windows/win32/api/wincrypt/
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-SCEP-{UniqueID}-Install-SubjectName-DFProperties-End -->
 
@@ -3013,7 +3042,7 @@ For more information, see [CertNameToStrA function](/windows/win32/api/wincrypt/
 <!-- User-SCEP-{UniqueID}-Install-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-TemplateName-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-TemplateName-OmaUri-Begin -->
@@ -3024,7 +3053,7 @@ For more information, see [CertNameToStrA function](/windows/win32/api/wincrypt/
 
 <!-- User-SCEP-{UniqueID}-Install-TemplateName-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. OID of certificate template name. **Note** that this name is typically ignored by the SCEP server, therefore the MDM server typically doesn't need to provide it.
+Optional. OID of certificate template name. Note that this name is typically ignored by the SCEP server, therefore the MDM server typically doesn't need to provide it.
 <!-- User-SCEP-{UniqueID}-Install-TemplateName-Description-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-TemplateName-Editable-Begin -->
@@ -3036,7 +3065,7 @@ Optional. OID of certificate template name. **Note** that this name is typically
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-SCEP-{UniqueID}-Install-TemplateName-DFProperties-End -->
 
@@ -3052,7 +3081,7 @@ Optional. OID of certificate template name. **Note** that this name is typically
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriod-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriod-OmaUri-Begin -->
@@ -3064,7 +3093,8 @@ Optional. OID of certificate template name. **Note** that this name is typically
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriod-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Specify the units for valid period. Valid values are: Days(Default), Months, Years.
-MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) the SCEP server as part of certificate enrollment request. It is the server's decision on how to use this valid period to create the certificate.
+
+MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) the SCEP server as part of certificate enrollment request. It's the server's decision on how to use this valid period to create the certificate.
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriod-Description-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriod-Editable-Begin -->
@@ -3076,7 +3106,7 @@ MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | Days |
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriod-DFProperties-End -->
@@ -3103,7 +3133,7 @@ MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriodUnits-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriodUnits-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriodUnits-OmaUri-Begin -->
@@ -3114,10 +3144,10 @@ MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio
 
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriodUnits-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Specify desired number of units used in validity period. Subjected to SCEP server configuration. Default is 0. The units are defined in ValidPeriod node. **Note** the valid period specified by MDM will overwrite the valid period specified in cert template. For example, if ValidPeriod is days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
+Optional. Specify desired number of units used in validity period. Subjected to SCEP server configuration. Default is 0. The units are defined in ValidPeriod node. Note the valid period specified by MDM will overwrite the valid period specified in cert template. For example, if ValidPeriod is days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
 
 > [!NOTE]
-> The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) the SCEP server as part of certificate enrollment request. It is the server's decision on how to use this valid period to create the certificate.
+> The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) the SCEP server as part of certificate enrollment request. It's the server's decision on how to use this valid period to create the certificate.
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriodUnits-Description-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriodUnits-Editable-Begin -->
@@ -3129,7 +3159,7 @@ Optional. Specify desired number of units used in validity period. Subjected to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriodUnits-DFProperties-End -->
@@ -3146,7 +3176,7 @@ Optional. Specify desired number of units used in validity period. Subjected to 
 <!-- User-SCEP-{UniqueID}-RespondentServerUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-RespondentServerUrl-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-RespondentServerUrl-OmaUri-Begin -->
@@ -3169,7 +3199,7 @@ Required. Returns the URL of the SCEP server that responded to the enrollment re
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-SCEP-{UniqueID}-RespondentServerUrl-DFProperties-End -->
 
@@ -3185,7 +3215,7 @@ Required. Returns the URL of the SCEP server that responded to the enrollment re
 <!-- User-SCEP-{UniqueID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-SCEP-{UniqueID}-Status-Applicability-End -->
 
 <!-- User-SCEP-{UniqueID}-Status-OmaUri-Begin -->
@@ -3197,7 +3227,9 @@ Required. Returns the URL of the SCEP server that responded to the enrollment re
 <!-- User-SCEP-{UniqueID}-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required. Specify the latest status for the certificate due to enroll request.
+
 Valid values are:
+
 1 - finished successfully
 2 - pending (the device hasn't finished the action but has received the SCEP server pending response)
 32 - unknown
@@ -3213,7 +3245,7 @@ Valid values are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-SCEP-{UniqueID}-Status-DFProperties-End -->
 

@@ -4,7 +4,7 @@ description: Learn more about the EnterpriseCloudPrint Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- CloudPrinterDiscoveryEndPoint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- CloudPrinterDiscoveryEndPoint-Applicability-End -->
 
 <!-- CloudPrinterDiscoveryEndPoint-OmaUri-Begin -->
@@ -57,7 +57,7 @@ The default value is an empty string. Otherwise, the value should contain the UR
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CloudPrinterDiscoveryEndPoint-DFProperties-End -->
 
@@ -73,7 +73,7 @@ The default value is an empty string. Otherwise, the value should contain the UR
 <!-- CloudPrintOAuthAuthority-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- CloudPrintOAuthAuthority-Applicability-End -->
 
 <!-- CloudPrintOAuthAuthority-OmaUri-Begin -->
@@ -104,7 +104,7 @@ The default value is an empty string. Otherwise, the value should contain the UR
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CloudPrintOAuthAuthority-DFProperties-End -->
 
@@ -120,7 +120,7 @@ The default value is an empty string. Otherwise, the value should contain the UR
 <!-- CloudPrintOAuthClientId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- CloudPrintOAuthClientId-Applicability-End -->
 
 <!-- CloudPrintOAuthClientId-OmaUri-Begin -->
@@ -151,7 +151,7 @@ The default value is an empty string. Otherwise, the value should contain a GUID
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CloudPrintOAuthClientId-DFProperties-End -->
 
@@ -167,7 +167,7 @@ The default value is an empty string. Otherwise, the value should contain a GUID
 <!-- CloudPrintResourceId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- CloudPrintResourceId-Applicability-End -->
 
 <!-- CloudPrintResourceId-OmaUri-Begin -->
@@ -198,7 +198,7 @@ The default value is an empty string. Otherwise, the value should contain a URL.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CloudPrintResourceId-DFProperties-End -->
 
@@ -214,7 +214,7 @@ The default value is an empty string. Otherwise, the value should contain a URL.
 <!-- DiscoveryMaxPrinterLimit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DiscoveryMaxPrinterLimit-Applicability-End -->
 
 <!-- DiscoveryMaxPrinterLimit-OmaUri-Begin -->
@@ -238,7 +238,7 @@ This policy must target ./User, otherwise it fails.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-65535]` |
 | Default Value  | 20 |
@@ -256,7 +256,7 @@ This policy must target ./User, otherwise it fails.
 <!-- MopriaDiscoveryResourceId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- MopriaDiscoveryResourceId-Applicability-End -->
 
 <!-- MopriaDiscoveryResourceId-OmaUri-Begin -->
@@ -286,7 +286,7 @@ The default value is an empty string. Otherwise, the value should contain a URL.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MopriaDiscoveryResourceId-DFProperties-End -->
 

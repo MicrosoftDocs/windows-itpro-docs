@@ -1,8 +1,8 @@
 ---
-title: Increase scheduling priority (Windows 10)
+title: Increase scheduling priority
 description: Describes the best practices, location, values, policy management, and security considerations for the Increase scheduling priority security policy setting.
 ms.assetid: fbec5973-d35e-4797-9626-d0d56061527f
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 2/6/2020
 ms.technology: itpro-security
 ---
@@ -46,7 +46,7 @@ Constant: SeIncreaseBasePriorityPrivilege
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\User Rights Assignment
- 
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.
@@ -82,9 +82,9 @@ Verify that only Administrators and Window Manager\Window Manager Group have the
 
 None. Restricting the **Increase scheduling priority** user right to members of the Administrators group and Window Manager\Window Manager Group is the default configuration.
 
-> [!Warning]  
-> If you remove **Window Manager\Window Manager Group** from the **Increase scheduling priority** user right, certain applications and computers do not function correctly. In particular, the INK workspace does not function correctly on unified memory architecture (UMA) laptop and desktop computers that run Windows 10, version 1903 (or later) and that use the Intel GFX driver.  
->  
+> [!Warning]
+> If you remove **Window Manager\Window Manager Group** from the **Increase scheduling priority** user right, certain applications and computers do not function correctly. In particular, the INK workspace does not function correctly on unified memory architecture (UMA) laptop and desktop computers that run Windows 10, version 1903 (or later) and that use the Intel GFX driver.
+>
 > On affected computers, the display blinks when users draw on INK workspaces such as those that are used by Microsoft Edge, Microsoft PowerPoint, or Microsoft OneNote. The blinking occurs because the inking-related processes repeatedly try to use the Real-Time priority, but are denied permission.
 
 ## Related topics

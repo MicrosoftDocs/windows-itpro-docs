@@ -4,7 +4,7 @@ description: Learn more about the WebThreatDefense Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/01/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,9 +15,6 @@ ms.topic: reference
 
 <!-- WebThreatDefense-Begin -->
 # Policy CSP - WebThreatDefense
-
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
 
 <!-- WebThreatDefense-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- AutomaticDataCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 23H2 [10.0.22631] and later |
 <!-- AutomaticDataCollection-Applicability-End -->
 
 <!-- AutomaticDataCollection-OmaUri-Begin -->
@@ -41,8 +38,14 @@ ms.topic: reference
 <!-- AutomaticDataCollection-OmaUri-End -->
 
 <!-- AutomaticDataCollection-Description-Begin -->
-<!-- Description-Source-DDF -->
-Automatically collect website or app content when additional analysis is needed to help identify security threats.
+<!-- Description-Source-ADMX -->
+This policy setting determines whether Enhanced Phishing Protection can collect additional information-such as content displayed, sounds played, and application memory-when your users enter their work or school password into a suspicious website or app. This information is used only for security purposes and helps SmartScreen determine whether the website or app is malicious.
+
+- If you enable this policy setting, Enhanced Phishing Protection may automatically collect additional content for security analysis from a suspicious website or app when your users enter their work or school password into that website or app.
+
+- If you disable this policy setting, Enhanced Phishing Protection won't collect additional content for security analysis when your users enter their work or school password into a suspicious site or app.
+
+- If this policy isn't set, Enhanced Phishing Protection automatic data collection will honor the end user's settings.
 <!-- AutomaticDataCollection-Description-End -->
 
 <!-- AutomaticDataCollection-Editable-Begin -->
@@ -54,7 +57,7 @@ Automatically collect website or app content when additional analysis is needed 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AutomaticDataCollection-DFProperties-End -->
@@ -74,7 +77,12 @@ Automatically collect website or app content when additional analysis is needed 
 | Name | Value |
 |:--|:--|
 | Name | AutomaticDataCollection |
-| Path | WebThreatDefense > AT > WindowsComponents > WebThreatDefense |
+| Friendly Name | Automatic Data Collection |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Defender SmartScreen > Enhanced Phishing Protection |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WTDS\Components |
+| Registry Value Name | CaptureThreatWindow |
+| ADMX File Name | WebThreatDefense.admx |
 <!-- AutomaticDataCollection-GpMapping-End -->
 
 <!-- AutomaticDataCollection-Examples-Begin -->
@@ -89,7 +97,7 @@ Automatically collect website or app content when additional analysis is needed 
 <!-- NotifyMalicious-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- NotifyMalicious-Applicability-End -->
 
 <!-- NotifyMalicious-OmaUri-Begin -->
@@ -104,7 +112,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 - If you enable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen warns your users if they type their work or school password into one of the malicious scenarios described above and encourages them to change their password.
 
-- If you disable or don't configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen will not warn your users if they type their work or school password into one of the malicious scenarios described above.
+- If you disable or don't configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen won't warn your users if they type their work or school password into one of the malicious scenarios described above.
 <!-- NotifyMalicious-Description-End -->
 
 <!-- NotifyMalicious-Editable-Begin -->
@@ -116,7 +124,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NotifyMalicious-DFProperties-End -->
@@ -156,7 +164,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 <!-- NotifyPasswordReuse-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- NotifyPasswordReuse-Applicability-End -->
 
 <!-- NotifyPasswordReuse-OmaUri-Begin -->
@@ -171,7 +179,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 - If you enable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen warns users if they reuse their work or school password and encourages them to change it.
 
-- If you disable or don't configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen will not warn users if they reuse their work or school password.
+- If you disable or don't configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen won't warn users if they reuse their work or school password.
 <!-- NotifyPasswordReuse-Description-End -->
 
 <!-- NotifyPasswordReuse-Editable-Begin -->
@@ -183,7 +191,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NotifyPasswordReuse-DFProperties-End -->
@@ -223,7 +231,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 <!-- NotifyUnsafeApp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- NotifyUnsafeApp-Applicability-End -->
 
 <!-- NotifyUnsafeApp-OmaUri-Begin -->
@@ -238,7 +246,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 - If you enable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen warns your users if they store their password in text editor apps.
 
-- If you disable or don't configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen will not warn users if they store their password in text editor apps.
+- If you disable or don't configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen won't warn users if they store their password in text editor apps.
 <!-- NotifyUnsafeApp-Description-End -->
 
 <!-- NotifyUnsafeApp-Editable-Begin -->
@@ -250,7 +258,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NotifyUnsafeApp-DFProperties-End -->
@@ -290,7 +298,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 <!-- ServiceEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ServiceEnabled-Applicability-End -->
 
 <!-- ServiceEnabled-OmaUri-Begin -->
@@ -301,11 +309,11 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 <!-- ServiceEnabled-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting determines whether Enhanced Phishing Protection in Microsoft Defender SmartScreen is in audit mode or off. Users do not see notifications for any protection scenarios when Enhanced Phishing Protection in Microsoft Defender is in audit mode. Audit mode captures unsafe password entry events and sends telemetry through Microsoft Defender.
+This policy setting determines whether Enhanced Phishing Protection in Microsoft Defender SmartScreen is in audit mode or off. Users don't see notifications for any protection scenarios when Enhanced Phishing Protection in Microsoft Defender is in audit mode. Audit mode captures unsafe password entry events and sends telemetry through Microsoft Defender.
 
 - If you enable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen is enabled in audit mode and your users are unable to turn it off.
 
-- If you disable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen is off and it will not capture events, send telemetry, or notify users. Additionally, your users are unable to turn it on.
+- If you disable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen is off and it won't capture events, send telemetry, or notify users. Additionally, your users are unable to turn it on.
 
 - If you don't configure this setting, users can decide whether or not they will enable Enhanced Phishing Protection in Microsoft Defender SmartScreen.
 <!-- ServiceEnabled-Description-End -->
@@ -319,7 +327,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- ServiceEnabled-DFProperties-End -->

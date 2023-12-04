@@ -1,22 +1,20 @@
 ---
-title: Policies for update compliance, activity, and user experience
-description: Explanation and recommendations for settings
+title: Policies for update compliance and user experience
+description: Explanation and recommendations for update compliance, activity, and user experience for your organization.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
 manager: aaroncz
 ms.localizationpriority: medium
-ms.topic: article
-ms.technology: itpro-updates
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 12/31/2017
 ---
 
 # Policies for update compliance, activity, and user experience
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 Keeping devices up to date is the best way to keep them working smoothly and securely. 
 
@@ -30,19 +28,19 @@ deadline approaches, and then prioritize velocity as the deadline nears, while s
 Beginning with Windows 10, version 1903 and with the August 2019 security update for Windows 10, version 1709
 and later (including Windows 11), a new policy was introduced to replace older deadline-like policies: **Specify deadlines for automatic updates and restarts**.
 
-The older policies started enforcing deadlines once the device reached a “restart pending” state for
+The older policies started enforcing deadlines once the device reached a `restart pending` state for
 an update. The new policy starts the countdown for the update installation deadline from when the
 update is published plus any deferral. In addition, this policy includes a configurable grace period and the option
 to opt out of automatic restarts until the deadline is reached (although we recommend always allowing automatic
 restarts for maximum update velocity).
 
 We recommend you set deadlines as follows:
-- Quality update deadline, in days: 3
-- Feature update deadline, in days: 7
+- Quality update deadline, in days: 2
+- Feature update deadline, in days: 2
 
 Notifications are automatically presented to the user at appropriate times, and users can choose to be reminded
 later, to reschedule, or to restart immediately, depending on how close the deadline is. We recommend that you
-do **not** set any notification policies, because they are automatically configured with appropriate defaults. An exception is if you
+do **not** set any notification policies, because they're automatically configured with appropriate defaults. An exception is if you
 have kiosks or digital signage.
 
 While three days for quality updates and seven days for feature updates is our recommendation, you might decide
@@ -57,12 +55,12 @@ to a minimum of two days.
 ### Grace periods
 
 You can set a period of days for Windows to find a minimally disruptive automatic restart time before the restart is enforced. This
-is especially useful in cases where a user has been away for many days (for example, on vacation) so that the device will not
+is especially useful in cases where a user has been away for many days (for example, on vacation) so that the device won't
 be forced to update immediately when the user returns.
 
 We recommend you set the following:
 
-- Grace period, in days: 2
+- Grace period, in days: 5
 
 Once the deadline and grace period have passed, updates are applied automatically, and a restart occurs
 regardless of [active hours](#active-hours).
@@ -79,15 +77,15 @@ automatic restart. To take advantage of this feature, ensure **ConfigureDeadline
 Windows typically requires that a device is active and connected to the internet for at least six hours, with at least two
 of continuous activity, in order to successfully complete a system update. The device could have other
 physical circumstances that prevent successful installation of an update--for example, if a laptop is running low
-on battery power, or the user has shut down the device before active hours end and the device cannot comply
+on battery power, or the user has shut down the device before active hours end and the device can't comply
 with the deadline.
 
-You can use the settings in this section to ensure that devices are actually available to install updates during the update compliance period.
+You can use the settings in this section to ensure that devices are available to install updates during the update compliance period.
 
 ### Active hours
 
-"Active hours" identify the period of time when a device is expected to be in use. Normally, restarts will occur outside of
-these hours. Windows 10, version 1903 introduced "intelligent active hours," which allow the system to learn active hours based on a user’s activities, rather than you as an administrator having to make decisions for your organization or allowing the user to choose active hours that minimize the period when the system can install an update.
+"Active hours" identify the period of time when a device is expected to be in use. Normally, restarts occur outside of
+these hours. Windows 10, version 1903 introduced "intelligent active hours," which allow the system to learn active hours based on a user's activities, rather than you as an administrator having to make decisions for your organization or allowing the user to choose active hours that minimize the period when the system can install an update.
 
 > [!IMPORTANT]
 > If you used the **Configure Active Hours** setting in previous versions of Windows 10, these
@@ -96,14 +94,12 @@ options must be **Disabled** in order to take advantage of intelligent active ho
 If you do set active hours, we recommend setting the following policies to **Disabled** in order to increase update
 velocity:
 
-- [Delay automatic reboot](waas-restart.md#delay-automatic-reboot). While it’s possible to set the system to delay restarts for users who are logged
-in, this might delay an update indefinitely if a user is always either logged in or shut down. Instead, we
-recommend setting the following polices to **Disabled**:
+- [Delay automatic reboot](waas-restart.md#delay-automatic-reboot). While it's possible to set the system to delay restarts for users who are logged in, this setting might delay an update indefinitely if a user is always either logged in or shut down. Instead, we recommend setting the following polices to **Disabled**:
     - **Turn off auto-restart during active hours**
     - **No auto-restart with logged on users for scheduled automatic updates**
 
-    - [Limit restart delays](waas-restart.md#limit-restart-delays). By using compliance deadlines, your users will receive notifications that
-updates will occur, so we recommend that you set this policy to **Disabled**, to allow compliance deadlines to eliminate the user’s ability to delay a restart outside of compliance deadline settings.
+    - [Limit restart delays](waas-restart.md#limit-restart-delays). By using compliance deadlines, your users receive notifications that
+updates will occur, so we recommend that you set this policy to **Disabled**, to allow compliance deadlines to eliminate the user's ability to delay a restart outside of compliance deadline settings.
 
 - **Do not allow users to approve updates and reboots**. Letting users approve or engage with the update process outside of the deadline policies decreases update velocity and increases risk. These policies should be set to **Disabled**:
     - [Update/RequireUpdateApproval](/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
@@ -113,8 +109,8 @@ updates will occur, so we recommend that you set this policy to **Disabled**, to
     - [Update/EngagedRestartSnoozeScheduleForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-engagedrestartsnoozescheduleforfeatureupdates)
     - [Update/EngagedRestartTransitionSchedule](/windows/client-management/mdm/policy-csp-update#update-engagedrestarttransitionschedule)
 
-- [Configure automatic update](waas-wu-settings.md#configure-automatic-updates). By properly setting policies to configure automatic updates, you can increase update velocity by having clients contact a Windows Server Update Services (WSUS) server so it can manage them. We recommend that you set this policy to **Disabled**. However, if you need to provide values, ensure that you set downloads to install automatically by setting the [Group Policy](waas-manage-updates-wsus.md#configure-automatic-updates-and-update-service-location) to **4**. If you’re using Microsoft Intune, setting the value to [Reset to Default](/mem/intune/protect/windows-update-settings#user-experience-settings).
-- **Allow auto Windows Update to download over metered networks**. Since more and more devices primarily use cellular data and do not have wi-fi access, consider allowing users to automatically download updates from a metered network. Though the default setting does not allow download over a metered network, setting this value to **1** can increase velocity by enabling users to get updates whether they are connected to the internet or not, provided they have cellular service. 
+- [Configure automatic update](waas-wu-settings.md#configure-automatic-updates). By properly setting policies to configure automatic updates, you can increase update velocity by having clients contact a Windows Server Update Services (WSUS) server so it can manage them. We recommend that you set this policy to **Disabled**. However, if you need to provide values, ensure that you set downloads to install automatically by setting the [Group Policy](waas-manage-updates-wsus.md#configure-automatic-updates-and-update-service-location) to **4**. If you're using Microsoft Intune, setting the value to [Reset to Default](/mem/intune/protect/windows-update-settings#user-experience-settings).
+- **Allow auto Windows Update to download over metered networks**. Since more devices primarily use cellular data and don't have wi-fi access, consider allowing users to automatically download updates from a metered network. Though the default setting doesn't allow download over a metered network, setting this value to **1** can increase velocity by enabling users to get updates whether they're connected to the internet or not, provided they have cellular service. 
 
 > [!IMPORTANT]
 > Older versions of Windows don't support intelligent active hours. If your device runs a version of Windows prior to Windows 10, version 1903, we recommend setting the following policies:
@@ -127,11 +123,11 @@ recommend setting this value to **3** (corresponding to 3 AM). If 3:00 AM is in 
 
 ### Power policies
 
-Devices must actually be available during non-active hours in order to an update. They can't do this if power policies prevent them from waking up. In our organization, we strive to set a balance between security and eco-friendly configurations. We recommend the following settings to achieve what we feel are the appropriate tradeoffs:
+Devices must actually be available during nonactive hours in order to an update. They can't do this if power policies prevent them from waking up. In our organization, we strive to set a balance between security and eco-friendly configurations. We recommend the following settings to achieve what we feel are the appropriate tradeoffs:
 
-To a user, a device is either on or off, but for Windows, there are states that will allow an update to occur (active) and states that do not (inactive). Some states are considered active (sleep), but the user may think the device is off. Also, there are power statuses (plugged in/battery) that Windows checks before starting an update.
+To a user, a device is either on or off, but for Windows, there are states that allow an update to occur (active) and states that don't (inactive). Some states are considered active (sleep), but the user may think the device is off. Also, there are power statuses (plugged in/battery) that Windows checks before starting an update.
 
-You can override the default settings and prevent users from changing them in order to ensure that devices are available for updates during non-active hours.
+You can override the default settings and prevent users from changing them in order to ensure that devices are available for updates during nonactive hours.
 
 > [!NOTE]
 > One way to ensure that devices can install updates when you need them to is to educate your users to keep devices plugged in during non-active hours. Even with the best policies, a device that isn't plugged in will not be updated, even in sleep mode.
@@ -139,13 +135,12 @@ You can override the default settings and prevent users from changing them in or
 We recommend these power management settings:
 
 - Sleep mode (S1 or S0 Low Power Idle or [Modern Standby](/windows-hardware/design/device-experiences/modern-standby)). When a device is in sleep mode, the system
-appears to be off but if an update is available, it can wake the device up in order to take an update. The
+appears to be off but if an update is available, it can wake up the device in order to take an update. The
 power consumption in sleep mode is between working (system fully usable) and hibernate (S4 - lowest
-power level before shutdown). When a device is not being used, the system will generally move to sleep
+power level before shutdown). When a device isn't being used, the system will generally move to sleep
 mode before it goes to hibernate. Issues in velocity arise when the time between sleep and hibernate is
-too short and Windows does not have time to complete an update. Sleep mode is an important setting
-because the system can wake the system from sleep in order to start the update process, as long as there
-is enough power.
+too short and Windows doesn't have time to complete an update. Sleep mode is an important setting
+because the system can wake the system from sleep in order to start the update process, as long as there's enough power.
 
 Set the following policies to **Enable** or **Do Not Configure** in order to allow the device to use sleep mode:
 - [Power/AllowStandbyStatesWhenSleepingOnBattery](/windows/client-management/mdm/policy-csp-power#power-allowstandbystateswhensleepingonbattery)
@@ -156,15 +151,15 @@ sleep mode and the device has an opportunity to take an update:
 - [Power/SelectLidCloseActionOnBattery](/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactiononbattery)
 - [Power/SelectLidCloseActionPluggedIn](/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactionpluggedin)
 
-- **Hibernate**. When a device is hibernating, power consumption is very low and the system cannot wake up
-without user intervention, like pressing the power button. If a device is in this state, it cannot be updated
+- **Hibernate**. When a device is hibernating, power consumption is low and the system can't wake up
+without user intervention, like pressing the power button. If a device is in this state, it can't be updated
 unless it supports an ACPI Time and Alarm Device (TAD). That said, if a device supporting Traditional Sleep
-(S3) is plugged in, and a Windows update is available, a hibernate state will be delayed until the update is complete.
+(S3) is plugged in, and a Windows update is available, a hibernate state is delayed until the update is complete.
 
 > [!NOTE]
 > This does not apply to devices that support Modern Standby (S0 Low Power Idle). You can check which system sleep state (S3 or S0 Low Power Idle) a device supports by running `powercfg /a` at a command prompt. For more, see [Powercfg options](/windows-hardware/design/device-experiences/powercfg-command-line-options#option_availablesleepstates).
 
-The default timeout on devices that support traditional sleep is set to three hours. We recommend that you do not reduce these policies in order to allow Windows Update the opportunity to restart the device before sending it into hibernation:
+The default timeout on devices that support traditional sleep is set to three hours. We recommend that you don't reduce these policies in order to allow Windows Update the opportunity to restart the device before sending it into hibernation:
 
 - [Power/HibernateTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-hibernatetimeoutonbattery)
 - [Power/HibernateTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-hibernatetimeoutpluggedin)
@@ -177,7 +172,7 @@ Each release of Windows client can introduce new policies to make the experience
 > If you are using Group Policy, note that we don't update the old ADMX templates and you must use the newer (1903) ADMX template in order to use the newer policy. Also, if you are
 > using an MDM tool (Microsoft or non-Microsoft), you can't use the new policy until it's available in the tool interface.
 
-As administrators, you have set up and expect certain behaviors, so we expressly do not remove older policies since they were set up for your particular use cases. However, if you set a new policy without disabling a similar older policy, you could have conflicting behavior and updates might not perform as expected.
+As administrators, you have set up and expect certain behaviors, so we expressly don't remove older policies since they were set up for your particular use cases. However, if you set a new policy without disabling a similar older policy, you could have conflicting behavior and updates might not perform as expected.
 
 > [!IMPORTANT] 
 > We sometimes find that administrators set devices to get both Group Policy settings and MDM settings from an MDM server such as Microsoft Intune. Policy conflicts are handled differently, depending on how they are ultimately set up:
@@ -192,11 +187,11 @@ As administrators, you have set up and expect certain behaviors, so we expressly
 
 The following are policies that you might want to disable because they could decrease update velocity or there are better policies to use that might conflict:
 - **Defer Feature Updates Period in Days**. For maximum update velocity, it's best to set this to **0** (no
-deferral) so that the feature update can complete and monthly security updates will be offered again. Even if there is an urgent quality update that must be quickly deployed, it is best to use **Pause Feature
+deferral) so that the feature update can complete and monthly security updates are offered again. Even if there's an urgent quality update that must be quickly deployed, it's best to use **Pause Feature
 Updates** rather than setting a deferral policy. You can choose a longer period if you don't want to stay up to date with the latest feature update.
 - **Defer Quality Updates Period in Days**. To minimize risk and maximize update velocity, the maximum time you might want to consider while evaluating the update with a different ring of devices is two to three days.
 - **Pause Feature Updates Start Time**. Set to **Disabled** unless there is a known issue requiring time for a resolution.
-- **Pause Quality Updates Start Time**. Set to **Disabled** unless there is a known issue requiring time for a resolution.
-- **Deadline No Auto Reboot**. Default is **Disabled – Set to 0** . We recommend that devices automatically try to restart when an update is received. Windows uses user interactions to dynamically identify the least disruptive time to restart.
+- **Pause Quality Updates Start Time**. Set to **Disabled** unless there's a known issue requiring time for a resolution.
+- **Deadline No Auto Reboot**. Default is **Disabled - Set to 0** . We recommend that devices automatically try to restart when an update is received. Windows uses user interactions to dynamically identify the least disruptive time to restart.
 
-There are additional policies are no longer supported or have been superseded.
+There are also additional policies are no longer supported or have been superseded.

@@ -1,11 +1,11 @@
 ---
-title: 4618(S) A monitored security event pattern has occurred. (Windows 10)
+title: 4618(S) A monitored security event pattern has occurred. 
 description: Describes security event 4618(S) A monitored security event pattern has occurred.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

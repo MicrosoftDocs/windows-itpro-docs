@@ -4,7 +4,7 @@ description: Learn more about the ADMX_FramePanes Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_FramePanes-Begin -->
 # Policy CSP - ADMX_FramePanes
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_FramePanes-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- NoPreviewPane-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoPreviewPane-Applicability-End -->
 
 <!-- NoPreviewPane-OmaUri-Begin -->
@@ -44,14 +41,14 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting shows or hides the Details Pane in File Explorer.
 
-If you enable this policy setting and configure it to hide the pane, the Details Pane in File Explorer is hidden and cannot be turned on by the user.
+If you enable this policy setting and configure it to hide the pane, the Details Pane in File Explorer is hidden and can't be turned on by the user.
 
-If you enable this policy setting and configure it to show the pane, the Details Pane is always visible and cannot be hidden by the user.
+If you enable this policy setting and configure it to show the pane, the Details Pane is always visible and can't be hidden by the user.
 
 > [!NOTE]
-> This has a side effect of not being able to toggle to the Preview Pane since the two cannot be displayed at the same time.
+> This has a side effect of not being able to toggle to the Preview Pane since the two can't be displayed at the same time.
 
-If you disable, or do not configure this policy setting, the Details Pane is hidden by default and can be displayed by the user. This is the default policy setting.
+If you disable, or don't configure this policy setting, the Details Pane is hidden by default and can be displayed by the user. This is the default policy setting.
 <!-- NoPreviewPane-Description-End -->
 
 <!-- NoPreviewPane-Editable-Begin -->
@@ -63,13 +60,12 @@ If you disable, or do not configure this policy setting, the Details Pane is hid
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoPreviewPane-DFProperties-End -->
 
 <!-- NoPreviewPane-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -95,7 +91,7 @@ If you disable, or do not configure this policy setting, the Details Pane is hid
 <!-- NoReadingPane-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoReadingPane-Applicability-End -->
 
 <!-- NoReadingPane-OmaUri-Begin -->
@@ -108,9 +104,9 @@ If you disable, or do not configure this policy setting, the Details Pane is hid
 <!-- Description-Source-ADMX -->
 Hides the Preview Pane in File Explorer.
 
-If you enable this policy setting, the Preview Pane in File Explorer is hidden and cannot be turned on by the user.
+If you enable this policy setting, the Preview Pane in File Explorer is hidden and can't be turned on by the user.
 
-If you disable, or do not configure this setting, the Preview Pane is hidden by default and can be displayed by the user.
+If you disable, or don't configure this setting, the Preview Pane is hidden by default and can be displayed by the user.
 <!-- NoReadingPane-Description-End -->
 
 <!-- NoReadingPane-Editable-Begin -->
@@ -122,13 +118,12 @@ If you disable, or do not configure this setting, the Preview Pane is hidden by 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoReadingPane-DFProperties-End -->
 
 <!-- NoReadingPane-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

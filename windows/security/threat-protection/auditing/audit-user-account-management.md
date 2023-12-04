@@ -1,5 +1,5 @@
 ---
-title: Audit User Account Management (Windows 10)
+title: Audit User Account Management 
 description: Audit User Account Management is an audit policy setting that determines if the operating system generates audit events when certain tasks are performed.
 ms.assetid: f7e72998-3858-4197-a443-19586ecc4bfb
 ms.reviewer: 
@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/06/2021
 ms.technology: itpro-security

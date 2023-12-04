@@ -39,7 +39,7 @@
       "ms.collection": [
         "tier2"
       ],
-      "uhfHeaderId": "MSDocsHeader-M365-IT",
+      "uhfHeaderId": "MSDocsHeader-Windows",
       "ms.technology": "itpro-apps",
       "ms.topic": "article",
       "feedback_system": "GitHub",
@@ -60,7 +60,10 @@
         "jborsecnik",
         "tiburd",
         "garycentric",
-        "beccarobins"
+        "beccarobins",
+        "Stacyrch140",
+        "v-stsavell",
+        "American-Dipper"
       ],
       "searchScope": ["Windows 10"]
     },

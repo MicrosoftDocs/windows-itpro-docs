@@ -4,7 +4,7 @@ description: Learn more about the DataProtection Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowDirectMemoryAccess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDirectMemoryAccess-Applicability-End -->
 
 <!-- AllowDirectMemoryAccess-OmaUri-Begin -->
@@ -49,7 +49,7 @@ This policy setting allows you to block direct memory access (DMA) for all hot p
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowDirectMemoryAccess-DFProperties-End -->
@@ -75,7 +75,7 @@ This policy setting allows you to block direct memory access (DMA) for all hot p
 <!-- LegacySelectiveWipeID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LegacySelectiveWipeID-Applicability-End -->
 
 <!-- LegacySelectiveWipeID-OmaUri-Begin -->
@@ -86,10 +86,10 @@ This policy setting allows you to block direct memory access (DMA) for all hot p
 
 <!-- LegacySelectiveWipeID-Description-Begin -->
 <!-- Description-Source-DDF -->
-Important. This policy may change in a future release. It may be used for testing purposes, but should not be used in a production environment at this time. Setting used by Windows 8. 1 Selective Wipe.
+Important. This policy may change in a future release. It may be used for testing purposes, but shouldn't be used in a production environment at this time. Setting used by Windows 8. 1 Selective Wipe.
 
 > [!NOTE]
-> This policy is not recommended for use in Windows 10.
+> This policy isn't recommended for use in Windows 10.
 <!-- LegacySelectiveWipeID-Description-End -->
 
 <!-- LegacySelectiveWipeID-Editable-Begin -->
@@ -101,7 +101,7 @@ Important. This policy may change in a future release. It may be used for testin
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LegacySelectiveWipeID-DFProperties-End -->
 

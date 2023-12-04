@@ -1,8 +1,8 @@
 ---
-title: Trust computer and user accounts for delegation (Windows 10)
+title: Trust computer and user accounts for delegation
 description: Learn about best practices, security considerations and more for the security policy setting, Enable computer and user accounts to be trusted for delegation.
 ms.assetid: 524062d4-1595-41f3-8ce1-9c85fd21497b
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -55,13 +55,13 @@ The following table lists the actual and effective default policy values for the
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Not defined| 
-| Domain Controller Effective Default Settings | Administrators| 
-| Member Server Effective Default Settings | Administrators| 
-| Client Computer Effective Default Settings | Administrators| 
- 
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Not defined|
+| Domain Controller Effective Default Settings | Administrators|
+| Member Server Effective Default Settings | Administrators|
+| Client Computer Effective Default Settings | Administrators|
+
 ## Policy management
 
 This section describes features, tools and guidance to help you manage this policy.
@@ -86,7 +86,7 @@ Settings are applied in the following order through a Group Policy Object (GPO),
 When a local setting is greyed out, it indicates that a GPO currently controls that setting.
 
 > [!NOTE]
-> More information about configuring the policy can be found [here](./how-to-configure-security-policy-settings.md).
+> More information about configuring the policy can be found [here](how-to-configure-security-policy-settings.md).
 
 ## Security considerations
 
@@ -94,7 +94,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Misuse of the **Enable computer and user accounts to be trusted for delegation** user right could allow unauthorized users to impersonate other users on the network. An attacker could exploit this privilege to gain access to network resources and make it difficult to determine what has happened 
+Misuse of the **Enable computer and user accounts to be trusted for delegation** user right could allow unauthorized users to impersonate other users on the network. An attacker could exploit this privilege to gain access to network resources and make it difficult to determine what has happened
 after a security incident.
 
 ### Countermeasure
@@ -102,7 +102,7 @@ after a security incident.
 The **Enable computer and user accounts to be trusted for delegation** user right should be assigned only if there's a clear need for its functionality. When you assign this right, you should investigate the use of constrained delegation to control what the delegated accounts can do. On domain controllers, this right is assigned to the Administrators group by default.
 
 >**Note:**  There is no reason to assign this user right to anyone on member servers and workstations that belong to a domain because it has no meaning in those contexts. It is only relevant on domain controllers and stand-alone computers.
- 
+
 ### Potential impact
 
 None. Not defined is the default configuration.

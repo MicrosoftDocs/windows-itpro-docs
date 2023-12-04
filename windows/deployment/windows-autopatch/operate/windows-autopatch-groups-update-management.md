@@ -1,7 +1,7 @@
 ---
 title: Software update management for Autopatch groups
 description: This article provides an overview of how updates are handled with Autopatch groups
-ms.date: 05/01/2023
+ms.date: 07/25/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: overview
@@ -10,12 +10,12 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: andredm7
+ms.collection:
+  - highpri
+  - tier1
 ---
 
-# Software update management: Windows Autopatch groups experience (public preview)
-
-> [!IMPORTANT]
-> Windows Autopatch groups is in **public preview**. This feature is being actively developed and might not be complete. You can test and use these features in production environments and provide feedback.<p>The Windows Autopatch group experience only applies if you’ve opted-in to use Windows Autopatch groups.</p><br>**To opt-in to use Windows Autopatch groups:**<ol><li>Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and select **Devices** from the left navigation menu.</li><li>Under **Windows Autopatch**, select **Release Management**, then select **Autopatch groups (preview)**.</li><li>Review the **[Microsoft Privacy Statement](../overview/windows-autopatch-privacy.md)** and the **[Autopatch groups Public Preview Addendum](../references/windows-autopatch-groups-public-preview-addendum.md)**. If you agree, select the **I have reviewed and agree to the Autopatch groups Public Preview Addendum** checkbox. Then, select **Use preview** to test out Windows Autopatch groups and its bundled feature set. If the **Use preview** option is greyed out, ensure you meet all the [Autopatch group prerequisites](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#autopatch-groups-prerequisites).</li></ol>
+# Software update management
 
 Keeping your devices up to date is a balance of speed and stability. Windows Autopatch connects all devices to a modern cloud-based infrastructure to manage updates on your behalf.
 
@@ -23,18 +23,18 @@ Keeping your devices up to date is a balance of speed and stability. Windows Aut
 
 | Software update workload | Description |
 | ----- | ----- |
-| Windows quality update | Windows Autopatch uses four deployment rings to manage Windows quality updates. For more detailed information, see:<ul><li>[Windows Autopatch groups experience](../operate/windows-autopatch-groups-windows-quality-update-overview.md)</li><li>[Classic experience](../operate/windows-autopatch-windows-quality-update-overview.md) |
-| Windows feature update | Windows Autopatch uses four deployment rings to manage Windows feature updates. For more detailed information, see: <ul><li>[Windows Autopatch groups experience](windows-autopatch-groups-windows-feature-update-overview.md)</li><li>[Classic experience](windows-autopatch-windows-feature-update-overview.md)</li></ul> |
+| Windows quality update | Windows Autopatch uses four deployment rings to manage [Windows quality updates](../operate/windows-autopatch-groups-windows-quality-update-overview.md) |
+| Windows feature update | Windows Autopatch uses four deployment rings to manage [Windows feature updates](windows-autopatch-groups-windows-feature-update-overview.md) |
 | Anti-virus definition | Updated with each scan. |
-| Microsoft 365 Apps for enterprise | For more information, see [Microsoft 365 Apps for enterprise](windows-autopatch-microsoft-365-apps-enterprise.md). This software update workload uses the classic experience. |
-| Microsoft Edge | For more information, see [Microsoft Edge](../operate/windows-autopatch-edge.md). This software update workload uses the classic experience. |
-| Microsoft Teams | For more information, see [Microsoft Teams](../operate/windows-autopatch-teams.md). This software update workload uses the classic experience. |
+| Microsoft 365 Apps for enterprise | For more information, see [Microsoft 365 Apps for enterprise](windows-autopatch-microsoft-365-apps-enterprise.md). |
+| Microsoft Edge | For more information, see [Microsoft Edge](../operate/windows-autopatch-edge.md). |
+| Microsoft Teams | For more information, see [Microsoft Teams](../operate/windows-autopatch-teams.md). |
 
 ## Autopatch groups
 
 Autopatch groups help Microsoft Cloud-Managed services meet all organizations where they are at in their update management journey.  
 
-Autopatch groups is a logical container that groups several [Azure AD groups](/azure/active-directory/fundamentals/active-directory-groups-view-azure-portal), and software update policies, such as Windows Update rings and feature update policies, together.
+Autopatch groups is a logical container that groups several [Microsoft Entra groups](/azure/active-directory/fundamentals/active-directory-groups-view-azure-portal), and software update policies, such as Windows Update rings and feature update policies, together.
 
 For more information on key benefits and how to use Autopatch groups, see [Autopatch groups overview](../deploy/windows-autopatch-groups-overview.md).
 

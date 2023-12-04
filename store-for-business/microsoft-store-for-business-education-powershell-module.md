@@ -9,17 +9,21 @@ author: cmcatee-MSFT
 manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 07/21/2021
+ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
+ms.date: 05/24/2023
 ms.reviewer: 
 ---
 
 # Microsoft Store for Business and Education PowerShell module - preview
 
-**Applies to**
--   Windows 10
+**Applies to:**
+
+- Windows 10
 
 > [!IMPORTANT]
-> The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+>
+> - The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+> - In April 2023 the Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. An interaction with existing MDM and GPO policies may lead to customers seeing errors when accessing the Microsoft Store app. For more information see [Microsoft Store for Business tab removed](manage-access-to-private-store.md#microsoft-store-for-business-tab-removed).
 
 Microsoft Store for Business and Education PowerShell module (preview) is now available on [PowerShell Gallery](https://go.microsoft.com/fwlink/?linkid=853459).
 
@@ -32,7 +36,7 @@ You can use the PowerShell module to:
 - Perform bulk operations with .csv files - automates license management for customers with larger numbers of licenses
 
 >[!NOTE]
->Assigning apps to groups is not supported via this module. Instead, we recommend leveraging the Azure Active Directory Or MSOnline Modules to save members of a group to a CSV file and follow instructions below on how to use CSV file to manage assignments.
+>Assigning apps to groups is not supported via this module. Instead, we recommend leveraging the Microsoft Entra ID or [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) Modules to save members of a group to a CSV file and follow instructions below on how to use CSV file to manage assignments.
 
 ## Requirements
 To use the Microsoft Store for Business and Education PowerShell module, you'll need:
@@ -73,7 +77,7 @@ To authorize the PowerShell module, run this command. You'll need to sign-in wit
 
 Grant-MSStoreClientAppAccess
 ```
-You will be prompted to sign in with your work or school account and then to authorize the PowerShell Module to access your **Microsoft Store for Business and Education** account. Once the module has been imported into the current PowerShell session and authorized to call into your **Microsoft Store for Business and Education** account, Azure PowerShell cmdlets are loaded and ready to be used.
+You will be prompted to sign in with your work or school account and then to authorize the PowerShell Module to access your **Microsoft Store for Business and Education** account. Once the module has been imported into the current PowerShell session and authorized to call into your **Microsoft Store for Business and Education** account, Microsoft Graph PowerShell cmdlets are loaded and ready to be used.
 
 ## View items in Products and Services
 Service management should encounter no breaking changes as a result of the separation of Azure Service Management and **Microsoft Store for Business and Education PowerShell** preview.

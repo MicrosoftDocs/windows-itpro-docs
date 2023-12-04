@@ -1,8 +1,8 @@
 ---
-title: Access this computer from the network - security policy setting (Windows 10)
+title: Access this computer from the network - security policy setting
 description: Describes the best practices, location, values, policy management, and security considerations for the Access this computer from the network security policy setting.
 ms.assetid: f6767bc2-83d1-45f1-847c-54f5362db022
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/11/2021
 ms.technology: itpro-security
 ---
@@ -69,7 +69,7 @@ The following table lists the actual and effective default policy values for the
 | Domain controller effective default settings | Everyone, Administrators, Authenticated Users, Enterprise Domain Controllers, Pre-Windows 2000 Compatible Access |
 | Member server effective default settings | Everyone, Administrators, Users, Backup Operators |
 | Client computer effective default settings |Everyone, Administrators, Users, Backup Operators |
- 
+
 ## Policy management
 
 When you modify this user right, the following actions might cause users and services to experience network access issues:
@@ -103,11 +103,11 @@ Users who can connect from their device to the network can access resources on t
 
 ### Countermeasure
 
-Restrict the **Access this computer from the network** user right to only those users and groups who require access to the computer. For example, if you configure this policy setting to the **Administrators** and **Users** groups, users who sign in to the domain can access resources that are shared 
+Restrict the **Access this computer from the network** user right to only those users and groups who require access to the computer. For example, if you configure this policy setting to the **Administrators** and **Users** groups, users who sign in to the domain can access resources that are shared
 from servers in the domain if members of the **Domain Users** group are included in the local **Users** group.
 
 > **Note**  If you are using IPsec to help secure network communications in your organization, ensure that a group that includes machine accounts is given this right. This right is required for successful computer authentication. Assigning this right to **Authenticated Users** or **Domain Computers** meets this requirement.
- 
+
 ### Potential impact
 
 If you remove the **Access this computer from the network** user right on domain controllers for all users, no one can sign in to the domain or use network resources. If you remove this user right on member servers, users can't connect to those servers through the network. If you have installed optional components such as ASP.NET or Internet Information Services (IIS), you may need to assign this user right to other accounts that are required by those components. It's important to verify that authorized users are assigned this user right for the devices that they need to access the network.
@@ -116,5 +116,5 @@ If running Windows Server or Azure Stack HCI Failover Clustering, don't remove A
 
 ## Related topics
 [User Rights Assignment](user-rights-assignment.md)
- 
- 
+
+

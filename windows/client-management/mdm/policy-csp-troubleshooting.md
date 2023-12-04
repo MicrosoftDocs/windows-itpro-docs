@@ -4,7 +4,7 @@ description: Learn more about the Troubleshooting Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowRecommendations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowRecommendations-Applicability-End -->
 
 <!-- AllowRecommendations-OmaUri-Begin -->
@@ -42,26 +42,34 @@ This policy setting configures how troubleshooting for known problems can be app
 Not configuring this policy setting will allow the user to configure how troubleshooting is applied.
 
 Enabling this policy allows you to configure how troubleshooting is applied on the user's device. You can select from one of the following values:
-0 = Do not allow users, system features, or Microsoft to apply troubleshooting.
+
+0 = Don't allow users, system features, or Microsoft to apply troubleshooting.
+
 1 = Only automatically apply troubleshooting for critical problems by system features and Microsoft.
+
 2 = Automatically apply troubleshooting for critical problems by system features and Microsoft. Notify users when troubleshooting for other problems is available and allow users to choose to apply or ignore.
+
 3 = Automatically apply troubleshooting for critical and other problems by system features and Microsoft. Notify users when troubleshooting has solved a problem.
-4 = Automatically apply troubleshooting for critical and other problems by system features and Microsoft. Do not notify users when troubleshooting has solved a problem.
+
+4 = Automatically apply troubleshooting for critical and other problems by system features and Microsoft. Don't notify users when troubleshooting has solved a problem.
+
 5 = Allow the user to choose their own troubleshooting settings.
 
 After setting this policy, you can use the following instructions to check devices in your domain for available troubleshooting from Microsoft:
 
 1. Create a bat script with the following contents:
-rem The following batch script triggers Recommended Troubleshooting
-schtasks /run /TN "\Microsoft\Windows\Diagnosis\RecommendedTroubleshootingScanner"
 
-2. To create a new immediate task, navigate to the Group Policy Management Editor > Computer Configuration > Preferences and select Control Panel Settings.
-3. Under Control Panel settings, right-click on Scheduled Tasks and select New. Select Immediate Task (At least Windows 7).
+rem The following batch script triggers Recommended Troubleshooting schtasks /run /TN "\Microsoft\Windows\Diagnosis\RecommendedTroubleshootingScanner".
 
-4. Provide name and description as appropriate, then under Security Options set the user account to System and select the Run with highest privileges checkbox.
-5. In the Actions tab, create a new action, select Start a Program as its type, then enter the file created in step 1.
+1. To create a new immediate task, navigate to the Group Policy Management Editor > Computer Configuration > Preferences and select Control Panel Settings.
 
-6. Configure the task to deploy to your domain.
+1. Under Control Panel settings, right-click on Scheduled Tasks and select New. Select Immediate Task (At least Windows 7).
+
+1. Provide name and description as appropriate, then under Security Options set the user account to System and select the Run with highest privileges checkbox.
+
+1. In the Actions tab, create a new action, select Start a Program as its type, then enter the file created in step 1.
+
+1. Configure the task to deploy to your domain.
 <!-- AllowRecommendations-Description-End -->
 
 <!-- AllowRecommendations-Editable-Begin -->
@@ -73,7 +81,7 @@ schtasks /run /TN "\Microsoft\Windows\Diagnosis\RecommendedTroubleshootingScanne
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowRecommendations-DFProperties-End -->
@@ -83,11 +91,11 @@ schtasks /run /TN "\Microsoft\Windows\Diagnosis\RecommendedTroubleshootingScanne
 
 | Value | Description |
 |:--|:--|
-| 0 | Off - Do not allow users, system features, or Microsoft to apply troubleshooting. |
-| 1 (Default) | Critical - Automatically apply troubleshooting for critical problems detected by system features and Microsoft. Do not notify users when troubleshooting has solved a problem. |
+| 0 | Off - Don't allow users, system features, or Microsoft to apply troubleshooting. |
+| 1 (Default) | Critical - Automatically apply troubleshooting for critical problems detected by system features and Microsoft. Don't notify users when troubleshooting has solved a problem. |
 | 2 | Prompt - Automatically apply troubleshooting for critical problems detected by system features and Microsoft. Prompt users when troubleshooting for other problems is available and allow the user to choose to apply or ignore. |
 | 3 | Notify - Automatically apply troubleshooting for critical and other problems detected by system features and Microsoft. Notify users when troubleshooting has solved a problem. |
-| 4 | Silent - Automatically apply troubleshooting for critical and other problems detected by system features and Microsoft. Do not notify users when troubleshooting has solved a problem. |
+| 4 | Silent - Automatically apply troubleshooting for critical and other problems detected by system features and Microsoft. Don't notify users when troubleshooting has solved a problem. |
 | 5 | Configurable - Allow the user to choose their own troubleshooting settings. |
 <!-- AllowRecommendations-AllowedValues-End -->
 

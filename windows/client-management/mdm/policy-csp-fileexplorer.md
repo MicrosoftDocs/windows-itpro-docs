@@ -4,7 +4,7 @@ description: Learn more about the FileExplorer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- FileExplorer-Begin -->
 # Policy CSP - FileExplorer
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- FileExplorer-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- AllowOptionToShowNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowOptionToShowNetwork-Applicability-End -->
 
 <!-- AllowOptionToShowNetwork-OmaUri-Begin -->
@@ -58,7 +55,7 @@ When the Network folder is restricted, give the user the option to enumerate and
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowOptionToShowNetwork-DFProperties-End -->
@@ -84,7 +81,7 @@ When the Network folder is restricted, give the user the option to enumerate and
 <!-- AllowOptionToShowThisPC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowOptionToShowThisPC-Applicability-End -->
 
 <!-- AllowOptionToShowThisPC-OmaUri-Begin -->
@@ -111,7 +108,7 @@ When This PC location is restricted, give the user the option to enumerate and n
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowOptionToShowThisPC-DFProperties-End -->
@@ -137,7 +134,7 @@ When This PC location is restricted, give the user the option to enumerate and n
 <!-- DisableGraphRecentItems-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- DisableGraphRecentItems-Applicability-End -->
 
 <!-- DisableGraphRecentItems-OmaUri-Begin -->
@@ -148,7 +145,7 @@ When This PC location is restricted, give the user the option to enumerate and n
 
 <!-- DisableGraphRecentItems-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Turning off files from Office.com will prevent File Explorer from requesting recent cloud file metadata and displaying it in the Quick access view.
+Turning off this setting will prevent File Explorer from requesting cloud file metadata and displaying it in the homepage and other views in File Explorer. Any insights and files available based on account activity will be stopped in views such as Recent, Recommended, Favorites, etc.
 <!-- DisableGraphRecentItems-Description-End -->
 
 <!-- DisableGraphRecentItems-Editable-Begin -->
@@ -160,7 +157,7 @@ Turning off files from Office.com will prevent File Explorer from requesting rec
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableGraphRecentItems-DFProperties-End -->
@@ -170,8 +167,8 @@ Turning off files from Office.com will prevent File Explorer from requesting rec
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | File Explorer will request cloud file metadata and display it in the Quick access view. |
-| 1 | File Explorer will not request cloud file metadata or display it in the Quick access view. |
+| 0 (Default) | File Explorer will request cloud file metadata and display it in the homepage and other views. |
+| 1 | File Explorer won't request cloud file metadata or display it in the homepage or other views. |
 <!-- DisableGraphRecentItems-AllowedValues-End -->
 
 <!-- DisableGraphRecentItems-GpMapping-Begin -->
@@ -180,7 +177,7 @@ Turning off files from Office.com will prevent File Explorer from requesting rec
 | Name | Value |
 |:--|:--|
 | Name | DisableGraphRecentItems |
-| Friendly Name | Turn off files from Office.com in Quick access view |
+| Friendly Name | Turn off account-based insights, recent, favorite, and recommended files in File Explorer |
 | Location | Computer Configuration |
 | Path | WindowsComponents > File Explorer |
 | Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
@@ -200,7 +197,7 @@ Turning off files from Office.com will prevent File Explorer from requesting rec
 <!-- SetAllowedFolderLocations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetAllowedFolderLocations-Applicability-End -->
 
 <!-- SetAllowedFolderLocations-OmaUri-Begin -->
@@ -227,7 +224,7 @@ A value that can represent one or more folder locations in File Explorer. If not
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SetAllowedFolderLocations-DFProperties-End -->
@@ -257,7 +254,7 @@ A value that can represent one or more folder locations in File Explorer. If not
 <!-- SetAllowedStorageLocations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetAllowedStorageLocations-Applicability-End -->
 
 <!-- SetAllowedStorageLocations-OmaUri-Begin -->
@@ -284,7 +281,7 @@ A value that can represent one or more storage locations in File Explorer. If no
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SetAllowedStorageLocations-DFProperties-End -->
@@ -316,7 +313,7 @@ A value that can represent one or more storage locations in File Explorer. If no
 <!-- TurnOffDataExecutionPreventionForExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TurnOffDataExecutionPreventionForExplorer-Applicability-End -->
 
 <!-- TurnOffDataExecutionPreventionForExplorer-OmaUri-Begin -->
@@ -339,13 +336,12 @@ Disabling data execution prevention can allow certain legacy plug-in application
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TurnOffDataExecutionPreventionForExplorer-DFProperties-End -->
 
 <!-- TurnOffDataExecutionPreventionForExplorer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -372,7 +368,7 @@ Disabling data execution prevention can allow certain legacy plug-in application
 <!-- TurnOffHeapTerminationOnCorruption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TurnOffHeapTerminationOnCorruption-Applicability-End -->
 
 <!-- TurnOffHeapTerminationOnCorruption-OmaUri-Begin -->
@@ -395,13 +391,12 @@ Disabling heap termination on corruption can allow certain legacy plug-in applic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TurnOffHeapTerminationOnCorruption-DFProperties-End -->
 
 <!-- TurnOffHeapTerminationOnCorruption-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

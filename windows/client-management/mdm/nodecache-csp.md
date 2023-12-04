@@ -4,7 +4,7 @@ description: Learn more about the NodeCache CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -62,7 +62,7 @@ The following list shows the NodeCache configuration service provider nodes:
 <!-- Device-{ProviderID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProviderID}-Applicability-End -->
 
 <!-- Device-{ProviderID}-OmaUri-Begin -->
@@ -85,7 +85,7 @@ Group settings per DM server. Each group of settings is distinguished by the ser
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName:  It should be the same DM server PROVIDER-ID value that was supplied through the w7 APPLICATION configuration service provider XML during the enrollment process. |
 <!-- Device-{ProviderID}-DFProperties-End -->
@@ -102,7 +102,7 @@ Group settings per DM server. Each group of settings is distinguished by the ser
 <!-- Device-{ProviderID}-CacheVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProviderID}-CacheVersion-Applicability-End -->
 
 <!-- Device-{ProviderID}-CacheVersion-OmaUri-Begin -->
@@ -125,7 +125,7 @@ Character string representing the cache version set by the server.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get, Replace |
 <!-- Device-{ProviderID}-CacheVersion-DFProperties-End -->
 
@@ -141,7 +141,7 @@ Character string representing the cache version set by the server.
 <!-- Device-{ProviderID}-ChangedNodes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProviderID}-ChangedNodes-Applicability-End -->
 
 <!-- Device-{ProviderID}-ChangedNodes-OmaUri-Begin -->
@@ -152,7 +152,7 @@ Character string representing the cache version set by the server.
 
 <!-- Device-{ProviderID}-ChangedNodes-Description-Begin -->
 <!-- Description-Source-DDF -->
-List of nodes whose values do not match their expected values as specified in /NodeID/ExpectedValue.
+List of nodes whose values don't match their expected values as specified in /NodeID/ExpectedValue.
 <!-- Device-{ProviderID}-ChangedNodes-Description-End -->
 
 <!-- Device-{ProviderID}-ChangedNodes-Editable-Begin -->
@@ -164,7 +164,7 @@ List of nodes whose values do not match their expected values as specified in /N
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-{ProviderID}-ChangedNodes-DFProperties-End -->
 
@@ -180,7 +180,7 @@ List of nodes whose values do not match their expected values as specified in /N
 <!-- Device-{ProviderID}-ChangedNodesData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-{ProviderID}-ChangedNodesData-Applicability-End -->
 
 <!-- Device-{ProviderID}-ChangedNodesData-OmaUri-Begin -->
@@ -191,7 +191,7 @@ List of nodes whose values do not match their expected values as specified in /N
 
 <!-- Device-{ProviderID}-ChangedNodesData-Description-Begin -->
 <!-- Description-Source-DDF -->
-XML containing nodes whose values do not match their expected values as specified in /NodeID/ExpectedValue.
+XML containing nodes whose values don't match their expected values as specified in /NodeID/ExpectedValue.
 <!-- Device-{ProviderID}-ChangedNodesData-Description-End -->
 
 <!-- Device-{ProviderID}-ChangedNodesData-Editable-Begin -->
@@ -203,7 +203,7 @@ XML containing nodes whose values do not match their expected values as specifie
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Get |
 <!-- Device-{ProviderID}-ChangedNodesData-DFProperties-End -->
 
@@ -219,7 +219,7 @@ XML containing nodes whose values do not match their expected values as specifie
 <!-- Device-{ProviderID}-Nodes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProviderID}-Nodes-Applicability-End -->
 
 <!-- Device-{ProviderID}-Nodes-OmaUri-Begin -->
@@ -242,7 +242,7 @@ Root node for cached nodes.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{ProviderID}-Nodes-DFProperties-End -->
 
@@ -258,7 +258,7 @@ Root node for cached nodes.
 <!-- Device-{ProviderID}-Nodes-{NodeID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProviderID}-Nodes-{NodeID}-Applicability-End -->
 
 <!-- Device-{ProviderID}-Nodes-{NodeID}-OmaUri-Begin -->
@@ -269,7 +269,7 @@ Root node for cached nodes.
 
 <!-- Device-{ProviderID}-Nodes-{NodeID}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Information about each cached node is stored under NodeID as specified by the server. This value must not contain a comma.
+Information about each cached node is stored under NodeID as specified by the server. This value mustn't contain a comma.
 <!-- Device-{ProviderID}-Nodes-{NodeID}-Description-End -->
 
 <!-- Device-{ProviderID}-Nodes-{NodeID}-Editable-Begin -->
@@ -281,7 +281,7 @@ Information about each cached node is stored under NodeID as specified by the se
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- Device-{ProviderID}-Nodes-{NodeID}-DFProperties-End -->
@@ -298,7 +298,7 @@ Information about each cached node is stored under NodeID as specified by the se
 <!-- Device-{ProviderID}-Nodes-{NodeID}-AutoSetExpectedValue-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-{ProviderID}-Nodes-{NodeID}-AutoSetExpectedValue-Applicability-End -->
 
 <!-- Device-{ProviderID}-Nodes-{NodeID}-AutoSetExpectedValue-OmaUri-Begin -->
@@ -321,7 +321,7 @@ This will automatically set the value on the device to match the node's actual v
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Add, Delete, Get |
 <!-- Device-{ProviderID}-Nodes-{NodeID}-AutoSetExpectedValue-DFProperties-End -->
 
@@ -337,7 +337,7 @@ This will automatically set the value on the device to match the node's actual v
 <!-- Device-{ProviderID}-Nodes-{NodeID}-ExpectedValue-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProviderID}-Nodes-{NodeID}-ExpectedValue-Applicability-End -->
 
 <!-- Device-{ProviderID}-Nodes-{NodeID}-ExpectedValue-OmaUri-Begin -->
@@ -361,7 +361,7 @@ Supported values are string and x-nodemon-nonexistent.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get |
 <!-- Device-{ProviderID}-Nodes-{NodeID}-ExpectedValue-DFProperties-End -->
 
@@ -395,7 +395,7 @@ Here's an example for setting the ExpectedValue to nonexistent.
 <!-- Device-{ProviderID}-Nodes-{NodeID}-NodeURI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProviderID}-Nodes-{NodeID}-NodeURI-Applicability-End -->
 
 <!-- Device-{ProviderID}-Nodes-{NodeID}-NodeURI-OmaUri-Begin -->
@@ -418,7 +418,7 @@ This node's value is a complete OMA DM node URI. It can specify either an interi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get |
 <!-- Device-{ProviderID}-Nodes-{NodeID}-NodeURI-DFProperties-End -->
 
@@ -434,7 +434,7 @@ This node's value is a complete OMA DM node URI. It can specify either an interi
 <!-- User-{ProviderID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-Applicability-End -->
 
 <!-- User-{ProviderID}-OmaUri-Begin -->
@@ -457,7 +457,7 @@ Group settings per DM server. Each group of settings is distinguished by the ser
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName:  It should be the same DM server PROVIDER-ID value that was supplied through the w7 APPLICATION configuration service provider XML during the enrollment process. |
 <!-- User-{ProviderID}-DFProperties-End -->
@@ -474,7 +474,7 @@ Group settings per DM server. Each group of settings is distinguished by the ser
 <!-- User-{ProviderID}-CacheVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-CacheVersion-Applicability-End -->
 
 <!-- User-{ProviderID}-CacheVersion-OmaUri-Begin -->
@@ -497,7 +497,7 @@ Character string representing the cache version set by the server.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get, Replace |
 <!-- User-{ProviderID}-CacheVersion-DFProperties-End -->
 
@@ -513,7 +513,7 @@ Character string representing the cache version set by the server.
 <!-- User-{ProviderID}-ChangedNodes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-ChangedNodes-Applicability-End -->
 
 <!-- User-{ProviderID}-ChangedNodes-OmaUri-Begin -->
@@ -524,7 +524,7 @@ Character string representing the cache version set by the server.
 
 <!-- User-{ProviderID}-ChangedNodes-Description-Begin -->
 <!-- Description-Source-DDF -->
-List of nodes whose values do not match their expected values as specified in /NodeID/ExpectedValue.
+List of nodes whose values don't match their expected values as specified in /NodeID/ExpectedValue.
 <!-- User-{ProviderID}-ChangedNodes-Description-End -->
 
 <!-- User-{ProviderID}-ChangedNodes-Editable-Begin -->
@@ -536,7 +536,7 @@ List of nodes whose values do not match their expected values as specified in /N
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-{ProviderID}-ChangedNodes-DFProperties-End -->
 
@@ -552,7 +552,7 @@ List of nodes whose values do not match their expected values as specified in /N
 <!-- User-{ProviderID}-ChangedNodesData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-ChangedNodesData-Applicability-End -->
 
 <!-- User-{ProviderID}-ChangedNodesData-OmaUri-Begin -->
@@ -563,7 +563,7 @@ List of nodes whose values do not match their expected values as specified in /N
 
 <!-- User-{ProviderID}-ChangedNodesData-Description-Begin -->
 <!-- Description-Source-DDF -->
-XML containing nodes whose values do not match their expected values as specified in /NodeID/ExpectedValue.
+XML containing nodes whose values don't match their expected values as specified in /NodeID/ExpectedValue.
 <!-- User-{ProviderID}-ChangedNodesData-Description-End -->
 
 <!-- User-{ProviderID}-ChangedNodesData-Editable-Begin -->
@@ -575,7 +575,7 @@ XML containing nodes whose values do not match their expected values as specifie
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Get |
 <!-- User-{ProviderID}-ChangedNodesData-DFProperties-End -->
 
@@ -591,7 +591,7 @@ XML containing nodes whose values do not match their expected values as specifie
 <!-- User-{ProviderID}-Nodes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-Nodes-Applicability-End -->
 
 <!-- User-{ProviderID}-Nodes-OmaUri-Begin -->
@@ -614,7 +614,7 @@ Root node for cached nodes.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-{ProviderID}-Nodes-DFProperties-End -->
 
@@ -630,7 +630,7 @@ Root node for cached nodes.
 <!-- User-{ProviderID}-Nodes-{NodeID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-Nodes-{NodeID}-Applicability-End -->
 
 <!-- User-{ProviderID}-Nodes-{NodeID}-OmaUri-Begin -->
@@ -641,7 +641,7 @@ Root node for cached nodes.
 
 <!-- User-{ProviderID}-Nodes-{NodeID}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Information about each cached node is stored under NodeID as specified by the server. This value must not contain a comma.
+Information about each cached node is stored under NodeID as specified by the server. This value mustn't contain a comma.
 <!-- User-{ProviderID}-Nodes-{NodeID}-Description-End -->
 
 <!-- User-{ProviderID}-Nodes-{NodeID}-Editable-Begin -->
@@ -653,7 +653,7 @@ Information about each cached node is stored under NodeID as specified by the se
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- User-{ProviderID}-Nodes-{NodeID}-DFProperties-End -->
@@ -670,7 +670,7 @@ Information about each cached node is stored under NodeID as specified by the se
 <!-- User-{ProviderID}-Nodes-{NodeID}-AutoSetExpectedValue-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-Nodes-{NodeID}-AutoSetExpectedValue-Applicability-End -->
 
 <!-- User-{ProviderID}-Nodes-{NodeID}-AutoSetExpectedValue-OmaUri-Begin -->
@@ -693,7 +693,7 @@ This will automatically set the value on the device to match the node's actual v
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Add, Delete, Get |
 <!-- User-{ProviderID}-Nodes-{NodeID}-AutoSetExpectedValue-DFProperties-End -->
 
@@ -709,7 +709,7 @@ This will automatically set the value on the device to match the node's actual v
 <!-- User-{ProviderID}-Nodes-{NodeID}-ExpectedValue-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-Nodes-{NodeID}-ExpectedValue-Applicability-End -->
 
 <!-- User-{ProviderID}-Nodes-{NodeID}-ExpectedValue-OmaUri-Begin -->
@@ -733,7 +733,7 @@ Supported values are string and x-nodemon-nonexistent.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get |
 <!-- User-{ProviderID}-Nodes-{NodeID}-ExpectedValue-DFProperties-End -->
 
@@ -767,7 +767,7 @@ Here's an example for setting the ExpectedValue to nonexistent.
 <!-- User-{ProviderID}-Nodes-{NodeID}-NodeURI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-Nodes-{NodeID}-NodeURI-Applicability-End -->
 
 <!-- User-{ProviderID}-Nodes-{NodeID}-NodeURI-OmaUri-Begin -->
@@ -790,7 +790,7 @@ This node's value is a complete OMA DM node URI. It can specify either an interi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get |
 <!-- User-{ProviderID}-Nodes-{NodeID}-NodeURI-DFProperties-End -->
 

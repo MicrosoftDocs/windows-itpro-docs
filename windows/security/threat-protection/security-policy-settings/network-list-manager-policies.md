@@ -1,8 +1,8 @@
 ---
-title: Network List Manager policies (Windows 10)
+title: Network List Manager policies
 description: Network List Manager policies are security settings that configure different aspects of how networks are listed and displayed on one device or on many devices.
 ms.assetid: bd8109d4-b07c-4beb-a9a6-affae2ba2fda
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -36,7 +36,7 @@ The following policy settings are provided for Network List Manager Policies. Th
 
 ### Unidentified Networks
 
-This policy setting allows you to configure the **Network Location**, including the location type and the user permissions, for networks that Windows cannot identify due to a network issue or a lack of identifiable characters in the network information received by the operating system from the 
+This policy setting allows you to configure the **Network Location**, including the location type and the user permissions, for networks that Windows cannot identify due to a network issue or a lack of identifiable characters in the network information received by the operating system from the
 network. A network location identifies the type of network that a computer is connected to and automatically sets the appropriate firewall settings for that location. You can configure the following items for this policy setting:
 
 -   **Location type**. For this item, the following options are available:

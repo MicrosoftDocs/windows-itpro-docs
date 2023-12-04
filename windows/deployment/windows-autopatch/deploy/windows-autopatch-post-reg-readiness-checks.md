@@ -1,7 +1,7 @@
 ---
 title: Post-device registration readiness checks
 description: This article details how post-device registration readiness checks are performed in Windows Autopatch
-ms.date: 09/16/2022
+ms.date: 09/16/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -10,6 +10,9 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: andredm7
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # Post-device registration readiness checks (public preview)

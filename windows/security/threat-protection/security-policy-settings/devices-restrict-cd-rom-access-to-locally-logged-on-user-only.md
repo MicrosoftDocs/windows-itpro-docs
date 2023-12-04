@@ -1,8 +1,8 @@
 ---
-title: Restrict CD-ROM access to locally logged-on user (Windows 10)
+title: Restrict CD-ROM access to locally logged-on user
 description: Describes the best practices, location, values, and security considerations for the Devices Restrict CD-ROM access to locally logged-on user only security policy setting.
 ms.assetid: 8b8f44bb-84ce-4f18-af30-ab89910e234d
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -54,13 +54,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined | 
-| Default Domain Controller Policy | Not defined | 
-| Stand-Alone Server Default Settings | Disabled | 
-| DC Effective Default Settings | Disabled | 
-| Member Server Effective Default Settings | Disabled | 
-| Client Computer Effective Default Settings | Disabled | 
- 
+| Default Domain Policy | Not defined |
+| Default Domain Controller Policy | Not defined |
+| Stand-Alone Server Default Settings | Disabled |
+| DC Effective Default Settings | Disabled |
+| Member Server Effective Default Settings | Disabled |
+| Client Computer Effective Default Settings | Disabled |
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -75,7 +75,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-A remote user could potentially access a mounted CD that contains sensitive information. This risk is small because CD drives aren't automatically made available as shared drives; you must deliberately choose to share the drive. However, you can deny network users the ability to view data or run 
+A remote user could potentially access a mounted CD that contains sensitive information. This risk is small because CD drives aren't automatically made available as shared drives; you must deliberately choose to share the drive. However, you can deny network users the ability to view data or run
 applications from removable media on the server.
 
 ### Countermeasure

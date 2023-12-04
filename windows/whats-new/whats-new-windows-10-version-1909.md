@@ -41,9 +41,9 @@ If you're using Windows Update for Business, you'll receive the Windows 10, vers
 
 ## Security
 
-### Windows Defender Credential Guard
+### Credential Guard
 
-[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) is now available for ARM64 devices, for extra protection against credential theft for enterprises deploying ARM64 devices in their organizations, such as Surface Pro X.
+[Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) is now available for ARM64 devices, for extra protection against credential theft for enterprises deploying ARM64 devices in their organizations, such as Surface Pro X.
 
 ### Microsoft BitLocker
 
@@ -55,7 +55,10 @@ Windows 10, version 1909 also includes two new features called **Key-rolling** a
 
 ### Transport Layer Security (TLS)
 
-An experimental implementation of TLS 1.3 is included in Windows 10, version 1909. TLS 1.3 disabled by default system wide. If you enable TLS 1.3 on a device for testing, then it can also be enabled in Internet Explorer 11.0 and Microsoft Edge by using Internet Options. For beta versions of Microsoft Edge on Chromium, TLS 1.3 isn't built on the Windows TLS stack, and is instead configured independently, using the **Edge://flags** dialog. Also see [Microsoft Edge platform status](https://developer.microsoft.com/microsoft-edge/status/tls13/)
+An experimental implementation of TLS 1.3 is included in Windows 10, version 1909. TLS 1.3 is disabled by default system wide. If you enable TLS 1.3 on a device for testing, then it can also be enabled in Internet Explorer 11.0 and Microsoft Edge by using Internet Options. For beta versions of Microsoft Edge on Chromium, TLS 1.3 isn't built on the Windows TLS stack, and is instead configured independently, using the **Edge://flags** dialog.
+
+>[!NOTE]
+>The experiental implementation of TLS 1.3 isn't supported. TLS 1.3 is only supported on Windows 11 and Server 2022. For more information, see [Protocols in TLS/SSL (Schannel SSP)](/windows/win32/secauthn/protocols-in-tls-ssl--schannel-ssp-).
 
 ## Virtualization
 

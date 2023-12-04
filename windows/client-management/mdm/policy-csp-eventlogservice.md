@@ -4,7 +4,7 @@ description: Learn more about the EventLogService Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- EventLogService-Begin -->
 # Policy CSP - EventLogService
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- EventLogService-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- ControlEventLogBehavior-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ControlEventLogBehavior-Applicability-End -->
 
 <!-- ControlEventLogBehavior-OmaUri-Begin -->
@@ -44,9 +41,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting controls Event Log behavior when the log file reaches its maximum size.
 
-- If you enable this policy setting and a log file reaches its maximum size, new events are not written to the log and are lost.
+- If you enable this policy setting and a log file reaches its maximum size, new events aren't written to the log and are lost.
 
-- If you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
+- If you disable or don't configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
 
 > [!NOTE]
 > Old events may or may not be retained according to the "Backup log automatically when full" policy setting.
@@ -61,13 +58,12 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ControlEventLogBehavior-DFProperties-End -->
 
 <!-- ControlEventLogBehavior-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -94,7 +90,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- SpecifyMaximumFileSizeApplicationLog-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SpecifyMaximumFileSizeApplicationLog-Applicability-End -->
 
 <!-- SpecifyMaximumFileSizeApplicationLog-OmaUri-Begin -->
@@ -109,7 +105,7 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 
 - If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes), in kilobyte increments.
 
-- If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 1 megabyte.
+- If you disable or don't configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 1 megabyte.
 <!-- SpecifyMaximumFileSizeApplicationLog-Description-End -->
 
 <!-- SpecifyMaximumFileSizeApplicationLog-Editable-Begin -->
@@ -121,13 +117,12 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyMaximumFileSizeApplicationLog-DFProperties-End -->
 
 <!-- SpecifyMaximumFileSizeApplicationLog-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -153,7 +148,7 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 <!-- SpecifyMaximumFileSizeSecurityLog-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SpecifyMaximumFileSizeSecurityLog-Applicability-End -->
 
 <!-- SpecifyMaximumFileSizeSecurityLog-OmaUri-Begin -->
@@ -168,7 +163,7 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 
 - If you enable this policy setting, you can configure the maximum log file size to be between 20 megabytes (20480 kilobytes) and 2 terabytes (2147483647 kilobytes), in kilobyte increments.
 
-- If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 20 megabytes.
+- If you disable or don't configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 20 megabytes.
 <!-- SpecifyMaximumFileSizeSecurityLog-Description-End -->
 
 <!-- SpecifyMaximumFileSizeSecurityLog-Editable-Begin -->
@@ -180,13 +175,12 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyMaximumFileSizeSecurityLog-DFProperties-End -->
 
 <!-- SpecifyMaximumFileSizeSecurityLog-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -212,7 +206,7 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 <!-- SpecifyMaximumFileSizeSystemLog-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SpecifyMaximumFileSizeSystemLog-Applicability-End -->
 
 <!-- SpecifyMaximumFileSizeSystemLog-OmaUri-Begin -->
@@ -227,7 +221,7 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 
 - If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes), in kilobyte increments.
 
-- If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 1 megabyte.
+- If you disable or don't configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 1 megabyte.
 <!-- SpecifyMaximumFileSizeSystemLog-Description-End -->
 
 <!-- SpecifyMaximumFileSizeSystemLog-Editable-Begin -->
@@ -239,13 +233,12 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyMaximumFileSizeSystemLog-DFProperties-End -->
 
 <!-- SpecifyMaximumFileSizeSystemLog-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

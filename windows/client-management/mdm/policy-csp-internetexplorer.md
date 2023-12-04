@@ -4,7 +4,7 @@ description: Learn more about the InternetExplorer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 04/26/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,9 @@ ms.topic: reference
 <!-- InternetExplorer-Begin -->
 # Policy CSP - InternetExplorer
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- InternetExplorer-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +30,7 @@ ms.topic: reference
 <!-- AddSearchProvider-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AddSearchProvider-Applicability-End -->
 
 <!-- AddSearchProvider-OmaUri-Begin -->
@@ -53,7 +52,7 @@ This policy setting allows you to add a specific list of search providers to the
 > [!NOTE]
 > This list can be created from a custom administrative template file. For information about creating this custom administrative template file, see the Internet Explorer documentation on search providers.
 
-- If you disable or do not configure this policy setting, the user can configure their list of search providers unless another policy setting restricts such configuration.
+- If you disable or don't configure this policy setting, the user can configure their list of search providers unless another policy setting restricts such configuration.
 <!-- AddSearchProvider-Description-End -->
 
 <!-- AddSearchProvider-Editable-Begin -->
@@ -65,13 +64,12 @@ This policy setting allows you to add a specific list of search providers to the
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AddSearchProvider-DFProperties-End -->
 
 <!-- AddSearchProvider-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -98,7 +96,7 @@ This policy setting allows you to add a specific list of search providers to the
 <!-- AllowActiveXFiltering-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowActiveXFiltering-Applicability-End -->
 
 <!-- AllowActiveXFiltering-OmaUri-Begin -->
@@ -115,9 +113,9 @@ This policy setting allows you to add a specific list of search providers to the
 <!-- Description-Source-ADMX -->
 This policy setting controls the ActiveX Filtering feature for websites that are running ActiveX controls. The user can choose to turn off ActiveX Filtering for specific websites so that ActiveX controls can run properly.
 
-- If you enable this policy setting, ActiveX Filtering is enabled by default for the user. The user cannot turn off ActiveX Filtering, although they may add per-site exceptions.
+- If you enable this policy setting, ActiveX Filtering is enabled by default for the user. The user can't turn off ActiveX Filtering, although they may add per-site exceptions.
 
-- If you disable or do not configure this policy setting, ActiveX Filtering is not enabled by default for the user. The user can turn ActiveX Filtering on or off.
+- If you disable or don't configure this policy setting, ActiveX Filtering isn't enabled by default for the user. The user can turn ActiveX Filtering on or off.
 <!-- AllowActiveXFiltering-Description-End -->
 
 <!-- AllowActiveXFiltering-Editable-Begin -->
@@ -129,13 +127,12 @@ This policy setting controls the ActiveX Filtering feature for websites that are
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowActiveXFiltering-DFProperties-End -->
 
 <!-- AllowActiveXFiltering-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -162,7 +159,7 @@ This policy setting controls the ActiveX Filtering feature for websites that are
 <!-- AllowAddOnList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowAddOnList-Applicability-End -->
 
 <!-- AllowAddOnList-OmaUri-Begin -->
@@ -199,13 +196,12 @@ Value - A number indicating whether Internet Explorer should deny or allow the a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowAddOnList-DFProperties-End -->
 
 <!-- AllowAddOnList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -232,7 +228,7 @@ Value - A number indicating whether Internet Explorer should deny or allow the a
 <!-- AllowAutoComplete-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowAutoComplete-Applicability-End -->
 
 <!-- AllowAutoComplete-OmaUri-Begin -->
@@ -245,11 +241,11 @@ Value - A number indicating whether Internet Explorer should deny or allow the a
 <!-- Description-Source-ADMX -->
 This AutoComplete feature can remember and suggest User names and passwords on Forms.
 
-- If you enable this setting, the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms will be turned on. You have to decide whether to select "prompt me to save passwords".
+- If you enable this setting, the user can't change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms will be turned on. You have to decide whether to select "prompt me to save passwords".
 
-- If you disable this setting the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms is turned off. The user also cannot opt to be prompted to save passwords.
+- If you disable this setting the user can't change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms is turned off. The user also can't opt to be prompted to save passwords.
 
-- If you do not configure this setting, the user has the freedom of turning on Auto complete for User name and passwords on forms and the option of prompting to save passwords. To display this option, the users open the Internet Options dialog box, click the Contents Tab and click the Settings button.
+- If you don't configure this setting, the user has the freedom of turning on Auto complete for User name and passwords on forms and the option of prompting to save passwords. To display this option, the users open the Internet Options dialog box, click the Contents Tab and click the Settings button.
 <!-- AllowAutoComplete-Description-End -->
 
 <!-- AllowAutoComplete-Editable-Begin -->
@@ -261,13 +257,12 @@ This AutoComplete feature can remember and suggest User names and passwords on F
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowAutoComplete-DFProperties-End -->
 
 <!-- AllowAutoComplete-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -294,7 +289,7 @@ This AutoComplete feature can remember and suggest User names and passwords on F
 <!-- AllowCertificateAddressMismatchWarning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowCertificateAddressMismatchWarning-Applicability-End -->
 
 <!-- AllowCertificateAddressMismatchWarning-OmaUri-Begin -->
@@ -313,7 +308,7 @@ This policy setting allows you to turn on the certificate address mismatch secur
 
 - If you enable this policy setting, the certificate address mismatch warning always appears.
 
-- If you disable or do not configure this policy setting, the user can choose whether the certificate address mismatch warning appears (by using the Advanced page in the Internet Control panel).
+- If you disable or don't configure this policy setting, the user can choose whether the certificate address mismatch warning appears (by using the Advanced page in the Internet Control panel).
 <!-- AllowCertificateAddressMismatchWarning-Description-End -->
 
 <!-- AllowCertificateAddressMismatchWarning-Editable-Begin -->
@@ -325,13 +320,12 @@ This policy setting allows you to turn on the certificate address mismatch secur
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowCertificateAddressMismatchWarning-DFProperties-End -->
 
 <!-- AllowCertificateAddressMismatchWarning-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -358,7 +352,7 @@ This policy setting allows you to turn on the certificate address mismatch secur
 <!-- AllowDeletingBrowsingHistoryOnExit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowDeletingBrowsingHistoryOnExit-Applicability-End -->
 
 <!-- AllowDeletingBrowsingHistoryOnExit-OmaUri-Begin -->
@@ -375,11 +369,11 @@ This policy setting allows you to turn on the certificate address mismatch secur
 <!-- Description-Source-ADMX -->
 This policy setting allows the automatic deletion of specified items when the last browser window closes. The preferences selected in the Delete Browsing History dialog box (such as deleting temporary Internet files, cookies, history, form data, and passwords) are applied, and those items are deleted.
 
-- If you enable this policy setting, deleting browsing history on exit is turned on.
+- If you enable this policy setting, deleting browsing history on exit's turned on.
 
-- If you disable this policy setting, deleting browsing history on exit is turned off.
+- If you disable this policy setting, deleting browsing history on exit's turned off.
 
-- If you do not configure this policy setting, it can be configured on the General tab in Internet Options.
+- If you don't configure this policy setting, it can be configured on the General tab in Internet Options.
 
 If the "Prevent access to Delete Browsing History" policy setting is enabled, this policy setting has no effect.
 <!-- AllowDeletingBrowsingHistoryOnExit-Description-End -->
@@ -393,13 +387,12 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowDeletingBrowsingHistoryOnExit-DFProperties-End -->
 
 <!-- AllowDeletingBrowsingHistoryOnExit-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -426,7 +419,7 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 <!-- AllowEnhancedProtectedMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowEnhancedProtectedMode-Applicability-End -->
 
 <!-- AllowEnhancedProtectedMode-OmaUri-Begin -->
@@ -443,11 +436,11 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 <!-- Description-Source-ADMX -->
 Enhanced Protected Mode provides additional protection against malicious websites by using 64-bit processes on 64-bit versions of Windows. For computers running at least Windows 8, Enhanced Protected Mode also limits the locations Internet Explorer can read from in the registry and the file system.
 
-- If you enable this policy setting, Enhanced Protected Mode will be turned on. Any zone that has Protected Mode enabled will use Enhanced Protected Mode. Users will not be able to disable Enhanced Protected Mode.
+- If you enable this policy setting, Enhanced Protected Mode will be turned on. Any zone that has Protected Mode enabled will use Enhanced Protected Mode. Users won't be able to disable Enhanced Protected Mode.
 
 - If you disable this policy setting, Enhanced Protected Mode will be turned off. Any zone that has Protected Mode enabled will use the version of Protected Mode introduced in Internet Explorer 7 for Windows Vista.
 
-- If you do not configure this policy, users will be able to turn on or turn off Enhanced Protected Mode on the Advanced tab of the Internet Options dialog.
+- If you don't configure this policy, users will be able to turn on or turn off Enhanced Protected Mode on the Advanced tab of the Internet Options dialog.
 <!-- AllowEnhancedProtectedMode-Description-End -->
 
 <!-- AllowEnhancedProtectedMode-Editable-Begin -->
@@ -459,13 +452,12 @@ Enhanced Protected Mode provides additional protection against malicious website
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowEnhancedProtectedMode-DFProperties-End -->
 
 <!-- AllowEnhancedProtectedMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -492,7 +484,7 @@ Enhanced Protected Mode provides additional protection against malicious website
 <!-- AllowEnhancedSuggestionsInAddressBar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowEnhancedSuggestionsInAddressBar-Applicability-End -->
 
 <!-- AllowEnhancedSuggestionsInAddressBar-OmaUri-Begin -->
@@ -525,13 +517,12 @@ This policy setting allows Internet Explorer to provide enhanced suggestions as 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowEnhancedSuggestionsInAddressBar-DFProperties-End -->
 
 <!-- AllowEnhancedSuggestionsInAddressBar-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -558,7 +549,7 @@ This policy setting allows Internet Explorer to provide enhanced suggestions as 
 <!-- AllowEnterpriseModeFromToolsMenu-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowEnterpriseModeFromToolsMenu-Applicability-End -->
 
 <!-- AllowEnterpriseModeFromToolsMenu-OmaUri-Begin -->
@@ -589,13 +580,12 @@ If you disable or don't configure this policy setting, the menu option won't app
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowEnterpriseModeFromToolsMenu-DFProperties-End -->
 
 <!-- AllowEnterpriseModeFromToolsMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -621,7 +611,7 @@ If you disable or don't configure this policy setting, the menu option won't app
 <!-- AllowEnterpriseModeSiteList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowEnterpriseModeSiteList-Applicability-End -->
 
 <!-- AllowEnterpriseModeSiteList-OmaUri-Begin -->
@@ -652,13 +642,12 @@ This policy setting lets you specify where to find the list of websites you want
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowEnterpriseModeSiteList-DFProperties-End -->
 
 <!-- AllowEnterpriseModeSiteList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -684,7 +673,7 @@ This policy setting lets you specify where to find the list of websites you want
 <!-- AllowFallbackToSSL3-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowFallbackToSSL3-Applicability-End -->
 
 <!-- AllowFallbackToSSL3-OmaUri-Begin -->
@@ -697,9 +686,9 @@ This policy setting lets you specify where to find the list of websites you want
 <!-- Description-Source-ADMX -->
 This policy setting allows you to block an insecure fallback to SSL 3.0. When this policy is enabled, Internet Explorer will attempt to connect to sites using SSL 3.0 or below when TLS 1.0 or greater fails.
 
-We recommend that you do not allow insecure fallback in order to prevent a man-in-the-middle attack.
+We recommend that you don't allow insecure fallback in order to prevent a man-in-the-middle attack.
 
-This policy does not affect which security protocols are enabled.
+This policy doesn't affect which security protocols are enabled.
 
 If you disable this policy, system defaults will be used.
 <!-- AllowFallbackToSSL3-Description-End -->
@@ -713,13 +702,12 @@ If you disable this policy, system defaults will be used.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowFallbackToSSL3-DFProperties-End -->
 
 <!-- AllowFallbackToSSL3-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -745,7 +733,7 @@ If you disable this policy, system defaults will be used.
 <!-- AllowInternetExplorer7PolicyList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowInternetExplorer7PolicyList-Applicability-End -->
 
 <!-- AllowInternetExplorer7PolicyList-OmaUri-Begin -->
@@ -762,9 +750,9 @@ If you disable this policy, system defaults will be used.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to add specific sites that must be viewed in Internet Explorer 7 Compatibility View.
 
-- If you enable this policy setting, the user can add and remove sites from the list, but the user cannot remove the entries that you specify.
+- If you enable this policy setting, the user can add and remove sites from the list, but the user can't remove the entries that you specify.
 
-- If you disable or do not configure this policy setting, the user can add and remove sites from the list.
+- If you disable or don't configure this policy setting, the user can add and remove sites from the list.
 <!-- AllowInternetExplorer7PolicyList-Description-End -->
 
 <!-- AllowInternetExplorer7PolicyList-Editable-Begin -->
@@ -776,13 +764,12 @@ This policy setting allows you to add specific sites that must be viewed in Inte
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowInternetExplorer7PolicyList-DFProperties-End -->
 
 <!-- AllowInternetExplorer7PolicyList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -808,7 +795,7 @@ This policy setting allows you to add specific sites that must be viewed in Inte
 <!-- AllowInternetExplorerStandardsMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowInternetExplorerStandardsMode-Applicability-End -->
 
 <!-- AllowInternetExplorerStandardsMode-OmaUri-Begin -->
@@ -825,11 +812,11 @@ This policy setting allows you to add specific sites that must be viewed in Inte
 <!-- Description-Source-ADMX -->
 This policy setting controls how Internet Explorer displays local intranet content. Intranet content is defined as any webpage that belongs to the local intranet security zone.
 
-- If you enable this policy setting, Internet Explorer uses the current user agent string for local intranet content. Additionally, all local intranet Standards Mode pages appear in the Standards Mode available with the latest version of Internet Explorer. The user cannot change this behavior through the Compatibility View Settings dialog box.
+- If you enable this policy setting, Internet Explorer uses the current user agent string for local intranet content. Additionally, all local intranet Standards Mode pages appear in the Standards Mode available with the latest version of Internet Explorer. The user can't change this behavior through the Compatibility View Settings dialog box.
 
-- If you disable this policy setting, Internet Explorer uses an Internet Explorer 7 user agent string (with an additional string appended) for local intranet content. Additionally, all local intranet Standards Mode pages appear in Internet Explorer 7 Standards Mode. The user cannot change this behavior through the Compatibility View Settings dialog box.
+- If you disable this policy setting, Internet Explorer uses an Internet Explorer 7 user agent string (with an additional string appended) for local intranet content. Additionally, all local intranet Standards Mode pages appear in Internet Explorer 7 Standards Mode. The user can't change this behavior through the Compatibility View Settings dialog box.
 
-- If you do not configure this policy setting, Internet Explorer uses an Internet Explorer 7 user agent string (with an additional string appended) for local intranet content. Additionally, all local intranet Standards Mode pages appear in Internet Explorer 7 Standards Mode. This option results in the greatest compatibility with existing webpages, but newer content written to common Internet standards may be displayed incorrectly. This option matches the default behavior of Internet Explorer.
+- If you don't configure this policy setting, Internet Explorer uses an Internet Explorer 7 user agent string (with an additional string appended) for local intranet content. Additionally, all local intranet Standards Mode pages appear in Internet Explorer 7 Standards Mode. This option results in the greatest compatibility with existing webpages, but newer content written to common Internet standards may be displayed incorrectly. This option matches the default behavior of Internet Explorer.
 <!-- AllowInternetExplorerStandardsMode-Description-End -->
 
 <!-- AllowInternetExplorerStandardsMode-Editable-Begin -->
@@ -841,13 +828,12 @@ This policy setting controls how Internet Explorer displays local intranet conte
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowInternetExplorerStandardsMode-DFProperties-End -->
 
 <!-- AllowInternetExplorerStandardsMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -874,7 +860,7 @@ This policy setting controls how Internet Explorer displays local intranet conte
 <!-- AllowInternetZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowInternetZoneTemplate-Applicability-End -->
 
 <!-- AllowInternetZoneTemplate-OmaUri-Begin -->
@@ -895,11 +881,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowInternetZoneTemplate-Description-End -->
 
 <!-- AllowInternetZoneTemplate-Editable-Begin -->
@@ -911,13 +897,12 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowInternetZoneTemplate-DFProperties-End -->
 
 <!-- AllowInternetZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -944,7 +929,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowIntranetZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowIntranetZoneTemplate-Applicability-End -->
 
 <!-- AllowIntranetZoneTemplate-OmaUri-Begin -->
@@ -965,11 +950,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowIntranetZoneTemplate-Description-End -->
 
 <!-- AllowIntranetZoneTemplate-Editable-Begin -->
@@ -981,13 +966,12 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowIntranetZoneTemplate-DFProperties-End -->
 
 <!-- AllowIntranetZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1014,7 +998,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowLocalMachineZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowLocalMachineZoneTemplate-Applicability-End -->
 
 <!-- AllowLocalMachineZoneTemplate-OmaUri-Begin -->
@@ -1035,11 +1019,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowLocalMachineZoneTemplate-Description-End -->
 
 <!-- AllowLocalMachineZoneTemplate-Editable-Begin -->
@@ -1051,13 +1035,12 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowLocalMachineZoneTemplate-DFProperties-End -->
 
 <!-- AllowLocalMachineZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1084,7 +1067,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowLockedDownInternetZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowLockedDownInternetZoneTemplate-Applicability-End -->
 
 <!-- AllowLockedDownInternetZoneTemplate-OmaUri-Begin -->
@@ -1105,11 +1088,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowLockedDownInternetZoneTemplate-Description-End -->
 
 <!-- AllowLockedDownInternetZoneTemplate-Editable-Begin -->
@@ -1121,13 +1104,12 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowLockedDownInternetZoneTemplate-DFProperties-End -->
 
 <!-- AllowLockedDownInternetZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1154,7 +1136,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowLockedDownIntranetZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowLockedDownIntranetZoneTemplate-Applicability-End -->
 
 <!-- AllowLockedDownIntranetZoneTemplate-OmaUri-Begin -->
@@ -1175,11 +1157,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowLockedDownIntranetZoneTemplate-Description-End -->
 
 <!-- AllowLockedDownIntranetZoneTemplate-Editable-Begin -->
@@ -1191,13 +1173,12 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowLockedDownIntranetZoneTemplate-DFProperties-End -->
 
 <!-- AllowLockedDownIntranetZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1224,7 +1205,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowLockedDownLocalMachineZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowLockedDownLocalMachineZoneTemplate-Applicability-End -->
 
 <!-- AllowLockedDownLocalMachineZoneTemplate-OmaUri-Begin -->
@@ -1245,11 +1226,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowLockedDownLocalMachineZoneTemplate-Description-End -->
 
 <!-- AllowLockedDownLocalMachineZoneTemplate-Editable-Begin -->
@@ -1261,13 +1242,12 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowLockedDownLocalMachineZoneTemplate-DFProperties-End -->
 
 <!-- AllowLockedDownLocalMachineZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1294,7 +1274,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowLockedDownRestrictedSitesZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowLockedDownRestrictedSitesZoneTemplate-Applicability-End -->
 
 <!-- AllowLockedDownRestrictedSitesZoneTemplate-OmaUri-Begin -->
@@ -1315,11 +1295,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowLockedDownRestrictedSitesZoneTemplate-Description-End -->
 
 <!-- AllowLockedDownRestrictedSitesZoneTemplate-Editable-Begin -->
@@ -1331,13 +1311,12 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowLockedDownRestrictedSitesZoneTemplate-DFProperties-End -->
 
 <!-- AllowLockedDownRestrictedSitesZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1364,7 +1343,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowOneWordEntry-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowOneWordEntry-Applicability-End -->
 
 <!-- AllowOneWordEntry-OmaUri-Begin -->
@@ -1381,9 +1360,9 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- Description-Source-ADMX -->
 This policy allows the user to go directly to an intranet site for a one-word entry in the Address bar.
 
-- If you enable this policy setting, Internet Explorer goes directly to an intranet site for a one-word entry in the Address bar, if it is available.
+- If you enable this policy setting, Internet Explorer goes directly to an intranet site for a one-word entry in the Address bar, if it's available.
 
-- If you disable or do not configure this policy setting, Internet Explorer does not go directly to an intranet site for a one-word entry in the Address bar.
+- If you disable or don't configure this policy setting, Internet Explorer doesn't go directly to an intranet site for a one-word entry in the Address bar.
 <!-- AllowOneWordEntry-Description-End -->
 
 <!-- AllowOneWordEntry-Editable-Begin -->
@@ -1395,13 +1374,12 @@ This policy allows the user to go directly to an intranet site for a one-word en
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowOneWordEntry-DFProperties-End -->
 
 <!-- AllowOneWordEntry-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1428,7 +1406,7 @@ This policy allows the user to go directly to an intranet site for a one-word en
 <!-- AllowSaveTargetAsInIEMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1350] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.789] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
 <!-- AllowSaveTargetAsInIEMode-Applicability-End -->
 
 <!-- AllowSaveTargetAsInIEMode-OmaUri-Begin -->
@@ -1447,7 +1425,7 @@ This policy setting allows admins to enable "Save Target As" context menu in Int
 
 - If you enable this policy, "Save Target As" will show up in the Internet Explorer mode context menu and work the same as Internet Explorer.
 
-- If you disable or do not configure this policy setting, "Save Target As" will not show up in the Internet Explorer mode context menu.
+- If you disable or don't configure this policy setting, "Save Target As" won't show up in the Internet Explorer mode context menu.
 
 For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- AllowSaveTargetAsInIEMode-Description-End -->
@@ -1461,13 +1439,12 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowSaveTargetAsInIEMode-DFProperties-End -->
 
 <!-- AllowSaveTargetAsInIEMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1508,7 +1485,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- AllowSiteToZoneAssignmentList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowSiteToZoneAssignmentList-Applicability-End -->
 
 <!-- AllowSiteToZoneAssignmentList-OmaUri-Begin -->
@@ -1525,15 +1502,15 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage a list of sites that you want to associate with a particular security zone. These zone numbers have associated security settings that apply to all of the sites in the zone.
 
-Internet Explorer has 4 security zones, numbered 1-4, and these are used by this policy setting to associate sites to zones. They are: (1) Intranet zone, (2) Trusted Sites zone, (3) Internet zone, and (4) Restricted Sites zone. Security settings can be set for each of these zones through other policy settings, and their default settings are: Trusted Sites zone (Low template), Intranet zone (Medium-Low template), Internet zone (Medium template), and Restricted Sites zone (High template). (The Local Machine zone and its locked down equivalent have special security settings that protect your local computer.)
+Internet Explorer has 4 security zones, numbered 1-4, and these are used by this policy setting to associate sites to zones. They are: (1) Intranet zone, (2) Trusted Sites zone, (3) Internet zone, and (4) Restricted Sites zone. Security settings can be set for each of these zones through other policy settings, and their default settings are: Trusted Sites zone (Low template), Intranet zone (Medium-Low template), Internet zone (Medium template), and Restricted Sites zone (High template). (The Local Machine zone and its locked down equivalent have special security settings that protect your local computer).
 
 - If you enable this policy setting, you can enter a list of sites and their related zone numbers. The association of a site with a zone will ensure that the security settings for the specified zone are applied to the site. For each entry that you add to the list, enter the following information:
 
-Valuename - A host for an intranet site, or a fully qualified domain name for other sites. The valuename may also include a specific protocol. For example, if you enter <https://www.contoso.com> as the valuename, other protocols are not affected. If you enter just www.contoso.com, then all protocols are affected for that site, including http, https, ftp, and so on. The site may also be expressed as an IP address (e.g., 127.0.0.1) or range (e.g., 127.0.0.1-10). To avoid creating conflicting policies, do not include additional characters after the domain such as trailing slashes or URL path. For example, policy settings for www.contoso.com and www.contoso.com/mail would be treated as the same policy setting by Internet Explorer, and would therefore be in conflict.
+Valuename - A host for an intranet site, or a fully qualified domain name for other sites. The valuename may also include a specific protocol. For example, if you enter <https://www.contoso.com> as the valuename, other protocols aren't affected. If you enter just www.contoso.com, then all protocols are affected for that site, including http, https, ftp, and so on. The site may also be expressed as an IP address (e.g., 127.0.0.1) or range (e.g., 127.0.0.1-10). To avoid creating conflicting policies, don't include additional characters after the domain such as trailing slashes or URL path. For example, policy settings for www.contoso.com and www.contoso.com/mail would be treated as the same policy setting by Internet Explorer, and would therefore be in conflict.
 
 Value - A number indicating the zone with which this site should be associated for security settings. The Internet Explorer zones described above are 1-4.
 
-- If you disable or do not configure this policy, users may choose their own site-to-zone assignments.
+- If you disable or don't configure this policy, users may choose their own site-to-zone assignments.
 <!-- AllowSiteToZoneAssignmentList-Description-End -->
 
 <!-- AllowSiteToZoneAssignmentList-Editable-Begin -->
@@ -1547,13 +1524,12 @@ Value - A number indicating the zone with which this site should be associated f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowSiteToZoneAssignmentList-DFProperties-End -->
 
 <!-- AllowSiteToZoneAssignmentList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1606,7 +1582,7 @@ Value and index pairs in the SyncML example:
 <!-- AllowsLockedDownTrustedSitesZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowsLockedDownTrustedSitesZoneTemplate-Applicability-End -->
 
 <!-- AllowsLockedDownTrustedSitesZoneTemplate-OmaUri-Begin -->
@@ -1627,11 +1603,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowsLockedDownTrustedSitesZoneTemplate-Description-End -->
 
 <!-- AllowsLockedDownTrustedSitesZoneTemplate-Editable-Begin -->
@@ -1643,13 +1619,12 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowsLockedDownTrustedSitesZoneTemplate-DFProperties-End -->
 
 <!-- AllowsLockedDownTrustedSitesZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1676,7 +1651,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowSoftwareWhenSignatureIsInvalid-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowSoftwareWhenSignatureIsInvalid-Applicability-End -->
 
 <!-- AllowSoftwareWhenSignatureIsInvalid-OmaUri-Begin -->
@@ -1695,9 +1670,9 @@ This policy setting allows you to manage whether software, such as ActiveX contr
 
 - If you enable this policy setting, users will be prompted to install or run files with an invalid signature.
 
-- If you disable this policy setting, users cannot run or install files with an invalid signature.
+- If you disable this policy setting, users can't run or install files with an invalid signature.
 
-- If you do not configure this policy, users can choose to run or install files with an invalid signature.
+- If you don't configure this policy, users can choose to run or install files with an invalid signature.
 <!-- AllowSoftwareWhenSignatureIsInvalid-Description-End -->
 
 <!-- AllowSoftwareWhenSignatureIsInvalid-Editable-Begin -->
@@ -1709,13 +1684,12 @@ This policy setting allows you to manage whether software, such as ActiveX contr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowSoftwareWhenSignatureIsInvalid-DFProperties-End -->
 
 <!-- AllowSoftwareWhenSignatureIsInvalid-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1742,7 +1716,7 @@ This policy setting allows you to manage whether software, such as ActiveX contr
 <!-- AllowsRestrictedSitesZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowsRestrictedSitesZoneTemplate-Applicability-End -->
 
 <!-- AllowsRestrictedSitesZoneTemplate-OmaUri-Begin -->
@@ -1763,11 +1737,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowsRestrictedSitesZoneTemplate-Description-End -->
 
 <!-- AllowsRestrictedSitesZoneTemplate-Editable-Begin -->
@@ -1779,13 +1753,12 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowsRestrictedSitesZoneTemplate-DFProperties-End -->
 
 <!-- AllowsRestrictedSitesZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1812,7 +1785,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowSuggestedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowSuggestedSites-Applicability-End -->
 
 <!-- AllowSuggestedSites-OmaUri-Begin -->
@@ -1829,11 +1802,11 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- Description-Source-ADMX -->
 This policy setting controls the Suggested Sites feature, which recommends websites based on the user's browsing activity. Suggested Sites reports a user's browsing history to Microsoft to suggest sites that the user might want to visit.
 
-- If you enable this policy setting, the user is not prompted to enable Suggested Sites. The user's browsing history is sent to Microsoft to produce suggestions.
+- If you enable this policy setting, the user isn't prompted to enable Suggested Sites. The user's browsing history is sent to Microsoft to produce suggestions.
 
 - If you disable this policy setting, the entry points and functionality associated with this feature are turned off.
 
-- If you do not configure this policy setting, the user can turn on and turn off the Suggested Sites feature.
+- If you don't configure this policy setting, the user can turn on and turn off the Suggested Sites feature.
 <!-- AllowSuggestedSites-Description-End -->
 
 <!-- AllowSuggestedSites-Editable-Begin -->
@@ -1845,13 +1818,12 @@ This policy setting controls the Suggested Sites feature, which recommends websi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowSuggestedSites-DFProperties-End -->
 
 <!-- AllowSuggestedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1878,7 +1850,7 @@ This policy setting controls the Suggested Sites feature, which recommends websi
 <!-- AllowTrustedSitesZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowTrustedSitesZoneTemplate-Applicability-End -->
 
 <!-- AllowTrustedSitesZoneTemplate-OmaUri-Begin -->
@@ -1899,11 +1871,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowTrustedSitesZoneTemplate-Description-End -->
 
 <!-- AllowTrustedSitesZoneTemplate-Editable-Begin -->
@@ -1915,13 +1887,12 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowTrustedSitesZoneTemplate-DFProperties-End -->
 
 <!-- AllowTrustedSitesZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1948,7 +1919,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- CheckServerCertificateRevocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- CheckServerCertificateRevocation-Applicability-End -->
 
 <!-- CheckServerCertificateRevocation-OmaUri-Begin -->
@@ -1963,13 +1934,13 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 <!-- CheckServerCertificateRevocation-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether Internet Explorer will check revocation status of servers' certificates. Certificates are revoked when they have been compromised or are no longer valid, and this option protects users from submitting confidential data to a site that may be fraudulent or not secure.
+This policy setting allows you to manage whether Internet Explorer will check revocation status of servers' certificates. Certificates are revoked when they've been compromised or are no longer valid, and this option protects users from submitting confidential data to a site that may be fraudulent or not secure.
 
 - If you enable this policy setting, Internet Explorer will check to see if server certificates have been revoked.
 
-- If you disable this policy setting, Internet Explorer will not check server certificates to see if they have been revoked.
+- If you disable this policy setting, Internet Explorer won't check server certificates to see if they've been revoked.
 
-- If you do not configure this policy setting, Internet Explorer will not check server certificates to see if they have been revoked.
+- If you don't configure this policy setting, Internet Explorer won't check server certificates to see if they've been revoked.
 <!-- CheckServerCertificateRevocation-Description-End -->
 
 <!-- CheckServerCertificateRevocation-Editable-Begin -->
@@ -1981,13 +1952,12 @@ This policy setting allows you to manage whether Internet Explorer will check re
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CheckServerCertificateRevocation-DFProperties-End -->
 
 <!-- CheckServerCertificateRevocation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2014,7 +1984,7 @@ This policy setting allows you to manage whether Internet Explorer will check re
 <!-- CheckSignaturesOnDownloadedPrograms-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- CheckSignaturesOnDownloadedPrograms-Applicability-End -->
 
 <!-- CheckSignaturesOnDownloadedPrograms-OmaUri-Begin -->
@@ -2033,9 +2003,9 @@ This policy setting allows you to manage whether Internet Explorer checks for di
 
 - If you enable this policy setting, Internet Explorer will check the digital signatures of executable programs and display their identities before downloading them to user computers.
 
-- If you disable this policy setting, Internet Explorer will not check the digital signatures of executable programs or display their identities before downloading them to user computers.
+- If you disable this policy setting, Internet Explorer won't check the digital signatures of executable programs or display their identities before downloading them to user computers.
 
-- If you do not configure this policy, Internet Explorer will not check the digital signatures of executable programs or display their identities before downloading them to user computers.
+- If you don't configure this policy, Internet Explorer won't check the digital signatures of executable programs or display their identities before downloading them to user computers.
 <!-- CheckSignaturesOnDownloadedPrograms-Description-End -->
 
 <!-- CheckSignaturesOnDownloadedPrograms-Editable-Begin -->
@@ -2047,13 +2017,12 @@ This policy setting allows you to manage whether Internet Explorer checks for di
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CheckSignaturesOnDownloadedPrograms-DFProperties-End -->
 
 <!-- CheckSignaturesOnDownloadedPrograms-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2080,7 +2049,7 @@ This policy setting allows you to manage whether Internet Explorer checks for di
 <!-- ConfigureEdgeRedirectChannel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1350] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.789] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
 <!-- ConfigureEdgeRedirectChannel-Applicability-End -->
 
 <!-- ConfigureEdgeRedirectChannel-OmaUri-Begin -->
@@ -2095,24 +2064,30 @@ This policy setting allows you to manage whether Internet Explorer checks for di
 
 <!-- ConfigureEdgeRedirectChannel-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Enables you to configure up to three versions of Microsoft Edge to open a redirected site (in order of preference). Use this policy if your environment is configured to redirect sites from Internet Explorer 11 to Microsoft Edge. If any of the chosen versions are not installed on the device, that preference will be bypassed.
+Enables you to configure up to three versions of Microsoft Edge to open a redirected site (in order of preference). Use this policy if your environment is configured to redirect sites from Internet Explorer 11 to Microsoft Edge. If any of the chosen versions aren't installed on the device, that preference will be bypassed.
 
 If both the Windows Update for the next version of Microsoft Edge* and Microsoft Edge Stable channel are installed, the following behaviors occur:
-  - If you disable or don't configure this policy, Microsoft Edge Stable channel is used. This is the default behavior.
-  - If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
+
+- If you disable or don't configure this policy, Microsoft Edge Stable channel is used. This is the default behavior.
+
+- If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
+
 1 = Microsoft Edge Stable
 2 = Microsoft Edge Beta version 77 or later
 3 = Microsoft Edge Dev version 77 or later
-4 = Microsoft Edge Canary version 77 or later
+4 = Microsoft Edge Canary version 77 or later.
 
-If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge Stable channel are not installed, the following behaviors occur:
-  - If you disable or don't configure this policy, Microsoft Edge version 45 or earlier is automatically used. This is the default behavior.
-  - If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
+If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge Stable channel aren't installed, the following behaviors occur:
+
+- If you disable or don't configure this policy, Microsoft Edge version 45 or earlier is automatically used. This is the default behavior.
+
+- If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
+
 0 = Microsoft Edge version 45 or earlier
 1 = Microsoft Edge Stable
 2 = Microsoft Edge Beta version 77 or later
 3 = Microsoft Edge Dev version 77 or later
-4 = Microsoft Edge Canary version 77 or later
+4 = Microsoft Edge Canary version 77 or later.
 
 - For more information about the Windows update for the next version of Microsoft Edge including how to disable it, see< https://go.microsoft.com/fwlink/?linkid=2102115>. This update applies only to Windows 10 version 1709 and higher.
 <!-- ConfigureEdgeRedirectChannel-Description-End -->
@@ -2126,13 +2101,12 @@ If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureEdgeRedirectChannel-DFProperties-End -->
 
 <!-- ConfigureEdgeRedirectChannel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2365,7 +2339,7 @@ If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge 
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-Applicability-End -->
 
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-OmaUri-Begin -->
@@ -2386,9 +2360,9 @@ This policy setting determines whether Internet Explorer requires that all file-
 
 - If you enable this policy setting, Internet Explorer requires consistent MIME data for all received files.
 
-- If you disable this policy setting, Internet Explorer will not require consistent MIME data for all received files.
+- If you disable this policy setting, Internet Explorer won't require consistent MIME data for all received files.
 
-- If you do not configure this policy setting, Internet Explorer requires consistent MIME data for all received files.
+- If you don't configure this policy setting, Internet Explorer requires consistent MIME data for all received files.
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-Description-End -->
 
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-Editable-Begin -->
@@ -2400,13 +2374,12 @@ This policy setting determines whether Internet Explorer requires that all file-
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-DFProperties-End -->
 
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2432,7 +2405,7 @@ This policy setting determines whether Internet Explorer requires that all file-
 <!-- DisableActiveXVersionListAutoDownload-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DisableActiveXVersionListAutoDownload-Applicability-End -->
 
 <!-- DisableActiveXVersionListAutoDownload-OmaUri-Begin -->
@@ -2461,13 +2434,12 @@ For more information, see "Out-of-date ActiveX control blocking" in the Internet
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableActiveXVersionListAutoDownload-DFProperties-End -->
 
 <!-- DisableActiveXVersionListAutoDownload-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2494,7 +2466,7 @@ For more information, see "Out-of-date ActiveX control blocking" in the Internet
 <!-- DisableBypassOfSmartScreenWarnings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableBypassOfSmartScreenWarnings-Applicability-End -->
 
 <!-- DisableBypassOfSmartScreenWarnings-OmaUri-Begin -->
@@ -2513,7 +2485,7 @@ This policy setting determines whether the user can bypass warnings from SmartSc
 
 - If you enable this policy setting, SmartScreen Filter warnings block the user.
 
-- If you disable or do not configure this policy setting, the user can bypass SmartScreen Filter warnings.
+- If you disable or don't configure this policy setting, the user can bypass SmartScreen Filter warnings.
 <!-- DisableBypassOfSmartScreenWarnings-Description-End -->
 
 <!-- DisableBypassOfSmartScreenWarnings-Editable-Begin -->
@@ -2525,13 +2497,12 @@ This policy setting determines whether the user can bypass warnings from SmartSc
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableBypassOfSmartScreenWarnings-DFProperties-End -->
 
 <!-- DisableBypassOfSmartScreenWarnings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2558,7 +2529,7 @@ This policy setting determines whether the user can bypass warnings from SmartSc
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-Applicability-End -->
 
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-OmaUri-Begin -->
@@ -2573,11 +2544,11 @@ This policy setting determines whether the user can bypass warnings from SmartSc
 
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting determines whether the user can bypass warnings from SmartScreen Filter. SmartScreen Filter warns the user about executable files that Internet Explorer users do not commonly download from the Internet.
+This policy setting determines whether the user can bypass warnings from SmartScreen Filter. SmartScreen Filter warns the user about executable files that Internet Explorer users don't commonly download from the Internet.
 
 - If you enable this policy setting, SmartScreen Filter warnings block the user.
 
-- If you disable or do not configure this policy setting, the user can bypass SmartScreen Filter warnings.
+- If you disable or don't configure this policy setting, the user can bypass SmartScreen Filter warnings.
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-Description-End -->
 
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-Editable-Begin -->
@@ -2589,13 +2560,12 @@ This policy setting determines whether the user can bypass warnings from SmartSc
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-DFProperties-End -->
 
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2622,7 +2592,7 @@ This policy setting determines whether the user can bypass warnings from SmartSc
 <!-- DisableCompatView-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DisableCompatView-Applicability-End -->
 
 <!-- DisableCompatView-OmaUri-Begin -->
@@ -2639,9 +2609,9 @@ This policy setting determines whether the user can bypass warnings from SmartSc
 <!-- Description-Source-ADMX -->
 This policy setting controls the Compatibility View feature, which allows the user to fix website display problems that he or she may encounter while browsing.
 
-- If you enable this policy setting, the user cannot use the Compatibility View button or manage the Compatibility View sites list.
+- If you enable this policy setting, the user can't use the Compatibility View button or manage the Compatibility View sites list.
 
-- If you disable or do not configure this policy setting, the user can use the Compatibility View button and manage the Compatibility View sites list.
+- If you disable or don't configure this policy setting, the user can use the Compatibility View button and manage the Compatibility View sites list.
 <!-- DisableCompatView-Description-End -->
 
 <!-- DisableCompatView-Editable-Begin -->
@@ -2653,13 +2623,12 @@ This policy setting controls the Compatibility View feature, which allows the us
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableCompatView-DFProperties-End -->
 
 <!-- DisableCompatView-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2686,7 +2655,7 @@ This policy setting controls the Compatibility View feature, which allows the us
 <!-- DisableConfiguringHistory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableConfiguringHistory-Applicability-End -->
 
 <!-- DisableConfiguringHistory-OmaUri-Begin -->
@@ -2703,9 +2672,9 @@ This policy setting controls the Compatibility View feature, which allows the us
 <!-- Description-Source-ADMX -->
 This setting specifies the number of days that Internet Explorer tracks views of pages in the History List. To access the Temporary Internet Files and History Settings dialog box, from the Menu bar, on the Tools menu, click Internet Options, click the General tab, and then click Settings under Browsing history.
 
-- If you enable this policy setting, a user cannot set the number of days that Internet Explorer tracks views of the pages in the History List. You must specify the number of days that Internet Explorer tracks views of pages in the History List. Users can not delete browsing history.
+- If you enable this policy setting, a user can't set the number of days that Internet Explorer tracks views of the pages in the History List. You must specify the number of days that Internet Explorer tracks views of pages in the History List. Users can't delete browsing history.
 
-- If you disable or do not configure this policy setting, a user can set the number of days that Internet Explorer tracks views of pages in the History list. Users can delete browsing history.
+- If you disable or don't configure this policy setting, a user can set the number of days that Internet Explorer tracks views of pages in the History list. Users can delete browsing history.
 <!-- DisableConfiguringHistory-Description-End -->
 
 <!-- DisableConfiguringHistory-Editable-Begin -->
@@ -2717,13 +2686,12 @@ This setting specifies the number of days that Internet Explorer tracks views of
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableConfiguringHistory-DFProperties-End -->
 
 <!-- DisableConfiguringHistory-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2750,7 +2718,7 @@ This setting specifies the number of days that Internet Explorer tracks views of
 <!-- DisableCrashDetection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableCrashDetection-Applicability-End -->
 
 <!-- DisableCrashDetection-OmaUri-Begin -->
@@ -2769,7 +2737,7 @@ This policy setting allows you to manage the crash detection feature of add-on M
 
 - If you enable this policy setting, a crash in Internet Explorer will exhibit behavior found in Windows XP Professional Service Pack 1 and earlier, namely to invoke Windows Error Reporting. All policy settings for Windows Error Reporting continue to apply.
 
-- If you disable or do not configure this policy setting, the crash detection feature for add-on management will be functional.
+- If you disable or don't configure this policy setting, the crash detection feature for add-on management will be functional.
 <!-- DisableCrashDetection-Description-End -->
 
 <!-- DisableCrashDetection-Editable-Begin -->
@@ -2781,13 +2749,12 @@ This policy setting allows you to manage the crash detection feature of add-on M
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableCrashDetection-DFProperties-End -->
 
 <!-- DisableCrashDetection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2814,7 +2781,7 @@ This policy setting allows you to manage the crash detection feature of add-on M
 <!-- DisableCustomerExperienceImprovementProgramParticipation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableCustomerExperienceImprovementProgramParticipation-Applicability-End -->
 
 <!-- DisableCustomerExperienceImprovementProgramParticipation-OmaUri-Begin -->
@@ -2831,11 +2798,11 @@ This policy setting allows you to manage the crash detection feature of add-on M
 <!-- Description-Source-ADMX -->
 This policy setting prevents the user from participating in the Customer Experience Improvement Program (CEIP).
 
-- If you enable this policy setting, the user cannot participate in the CEIP, and the Customer Feedback Options command does not appear on the Help menu.
+- If you enable this policy setting, the user can't participate in the CEIP, and the Customer Feedback Options command doesn't appear on the Help menu.
 
-- If you disable this policy setting, the user must participate in the CEIP, and the Customer Feedback Options command does not appear on the Help menu.
+- If you disable this policy setting, the user must participate in the CEIP, and the Customer Feedback Options command doesn't appear on the Help menu.
 
-- If you do not configure this policy setting, the user can choose to participate in the CEIP.
+- If you don't configure this policy setting, the user can choose to participate in the CEIP.
 <!-- DisableCustomerExperienceImprovementProgramParticipation-Description-End -->
 
 <!-- DisableCustomerExperienceImprovementProgramParticipation-Editable-Begin -->
@@ -2847,13 +2814,12 @@ This policy setting prevents the user from participating in the Customer Experie
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableCustomerExperienceImprovementProgramParticipation-DFProperties-End -->
 
 <!-- DisableCustomerExperienceImprovementProgramParticipation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2880,7 +2846,7 @@ This policy setting prevents the user from participating in the Customer Experie
 <!-- DisableDeletingUserVisitedWebsites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableDeletingUserVisitedWebsites-Applicability-End -->
 
 <!-- DisableDeletingUserVisitedWebsites-OmaUri-Begin -->
@@ -2901,7 +2867,7 @@ This policy setting prevents the user from deleting the history of websites that
 
 - If you disable this policy setting, websites that the user has visited are deleted when he or she clicks Delete.
 
-- If you do not configure this policy setting, the user can choose whether to delete or preserve visited websites when he or she clicks Delete.
+- If you don't configure this policy setting, the user can choose whether to delete or preserve visited websites when he or she clicks Delete.
 
 If the "Prevent access to Delete Browsing History" policy setting is enabled, this policy setting is enabled by default.
 <!-- DisableDeletingUserVisitedWebsites-Description-End -->
@@ -2915,13 +2881,12 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableDeletingUserVisitedWebsites-DFProperties-End -->
 
 <!-- DisableDeletingUserVisitedWebsites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2948,7 +2913,7 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 <!-- DisableEnclosureDownloading-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableEnclosureDownloading-Applicability-End -->
 
 <!-- DisableEnclosureDownloading-OmaUri-Begin -->
@@ -2965,9 +2930,9 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 <!-- Description-Source-ADMX -->
 This policy setting prevents the user from having enclosures (file attachments) downloaded from a feed to the user's computer.
 
-- If you enable this policy setting, the user cannot set the Feed Sync Engine to download an enclosure through the Feed property page. A developer cannot change the download setting through the Feed APIs.
+- If you enable this policy setting, the user can't set the Feed Sync Engine to download an enclosure through the Feed property page. A developer can't change the download setting through the Feed APIs.
 
-- If you disable or do not configure this policy setting, the user can set the Feed Sync Engine to download an enclosure through the Feed property page. A developer can change the download setting through the Feed APIs.
+- If you disable or don't configure this policy setting, the user can set the Feed Sync Engine to download an enclosure through the Feed property page. A developer can change the download setting through the Feed APIs.
 <!-- DisableEnclosureDownloading-Description-End -->
 
 <!-- DisableEnclosureDownloading-Editable-Begin -->
@@ -2979,13 +2944,12 @@ This policy setting prevents the user from having enclosures (file attachments) 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableEnclosureDownloading-DFProperties-End -->
 
 <!-- DisableEnclosureDownloading-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3012,7 +2976,7 @@ This policy setting prevents the user from having enclosures (file attachments) 
 <!-- DisableEncryptionSupport-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableEncryptionSupport-Applicability-End -->
 
 <!-- DisableEncryptionSupport-OmaUri-Begin -->
@@ -3029,9 +2993,9 @@ This policy setting prevents the user from having enclosures (file attachments) 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off support for Transport Layer Security (TLS) 1.0, TLS 1.1, TLS 1.2, Secure Sockets Layer (SSL) 2.0, or SSL 3.0 in the browser. TLS and SSL are protocols that help protect communication between the browser and the target server. When the browser attempts to set up a protected communication with the target server, the browser and server negotiate which protocol and version to use. The browser and server attempt to match each other's list of supported protocols and versions, and they select the most preferred match.
 
-- If you enable this policy setting, the browser negotiates or does not negotiate an encryption tunnel by using the encryption methods that you select from the drop-down list.
+- If you enable this policy setting, the browser negotiates or doesn't negotiate an encryption tunnel by using the encryption methods that you select from the drop-down list.
 
-- If you disable or do not configure this policy setting, the user can select which encryption method the browser supports.
+- If you disable or don't configure this policy setting, the user can select which encryption method the browser supports.
 
 > [!NOTE]
 > SSL 2.0 is off by default and is no longer supported starting with Windows 10 Version 1607. SSL 2.0 is an outdated security protocol, and enabling SSL 2.0 impairs the performance and functionality of TLS 1.0.
@@ -3046,13 +3010,12 @@ This policy setting allows you to turn off support for Transport Layer Security 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableEncryptionSupport-DFProperties-End -->
 
 <!-- DisableEncryptionSupport-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3078,7 +3041,7 @@ This policy setting allows you to turn off support for Transport Layer Security 
 <!-- DisableFeedsBackgroundSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DisableFeedsBackgroundSync-Applicability-End -->
 
 <!-- DisableFeedsBackgroundSync-OmaUri-Begin -->
@@ -3097,7 +3060,7 @@ This policy setting controls whether to have background synchronization for feed
 
 - If you enable this policy setting, the ability to synchronize feeds and Web Slices in the background is turned off.
 
-- If you disable or do not configure this policy setting, the user can synchronize feeds and Web Slices in the background.
+- If you disable or don't configure this policy setting, the user can synchronize feeds and Web Slices in the background.
 <!-- DisableFeedsBackgroundSync-Description-End -->
 
 <!-- DisableFeedsBackgroundSync-Editable-Begin -->
@@ -3109,13 +3072,12 @@ This policy setting controls whether to have background synchronization for feed
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableFeedsBackgroundSync-DFProperties-End -->
 
 <!-- DisableFeedsBackgroundSync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3142,7 +3104,7 @@ This policy setting controls whether to have background synchronization for feed
 <!-- DisableFirstRunWizard-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableFirstRunWizard-Applicability-End -->
 
 <!-- DisableFirstRunWizard-OmaUri-Begin -->
@@ -3160,12 +3122,14 @@ This policy setting controls whether to have background synchronization for feed
 This policy setting prevents Internet Explorer from running the First Run wizard the first time a user starts the browser after installing Internet Explorer or Windows.
 
 - If you enable this policy setting, you must make one of the following choices:
-  - Skip the First Run wizard, and go directly to the user's home page.
-  - Skip the First Run wizard, and go directly to the "Welcome to Internet Explorer" webpage.
 
-Starting with Windows 8, the "Welcome to Internet Explorer" webpage is not available. The user's home page will display regardless of which option is chosen.
+- Skip the First Run wizard, and go directly to the user's home page.
 
-- If you disable or do not configure this policy setting, Internet Explorer may run the First Run wizard the first time the browser is started after installation.
+- Skip the First Run wizard, and go directly to the "Welcome to Internet Explorer" webpage.
+
+Starting with Windows 8, the "Welcome to Internet Explorer" webpage isn't available. The user's home page will display regardless of which option is chosen.
+
+- If you disable or don't configure this policy setting, Internet Explorer may run the First Run wizard the first time the browser is started after installation.
 <!-- DisableFirstRunWizard-Description-End -->
 
 <!-- DisableFirstRunWizard-Editable-Begin -->
@@ -3177,13 +3141,12 @@ Starting with Windows 8, the "Welcome to Internet Explorer" webpage is not avail
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableFirstRunWizard-DFProperties-End -->
 
 <!-- DisableFirstRunWizard-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3209,7 +3172,7 @@ Starting with Windows 8, the "Welcome to Internet Explorer" webpage is not avail
 <!-- DisableFlipAheadFeature-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableFlipAheadFeature-Applicability-End -->
 
 <!-- DisableFlipAheadFeature-OmaUri-Begin -->
@@ -3244,13 +3207,12 @@ Microsoft collects your browsing history to improve how flip ahead with page pre
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableFlipAheadFeature-DFProperties-End -->
 
 <!-- DisableFlipAheadFeature-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3277,7 +3239,7 @@ Microsoft collects your browsing history to improve how flip ahead with page pre
 <!-- DisableGeolocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DisableGeolocation-Applicability-End -->
 
 <!-- DisableGeolocation-OmaUri-Begin -->
@@ -3298,7 +3260,7 @@ This policy setting allows you to disable browser geolocation support. This will
 
 - If you disable this policy setting, browser geolocation support is turned on.
 
-- If you do not configure this policy setting, browser geolocation support can be turned on or off in Internet Options on the Privacy tab.
+- If you don't configure this policy setting, browser geolocation support can be turned on or off in Internet Options on the Privacy tab.
 <!-- DisableGeolocation-Description-End -->
 
 <!-- DisableGeolocation-Editable-Begin -->
@@ -3310,13 +3272,12 @@ This policy setting allows you to disable browser geolocation support. This will
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableGeolocation-DFProperties-End -->
 
 <!-- DisableGeolocation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3343,7 +3304,7 @@ This policy setting allows you to disable browser geolocation support. This will
 <!-- DisableHomePageChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableHomePageChange-Applicability-End -->
 
 <!-- DisableHomePageChange-OmaUri-Begin -->
@@ -3354,11 +3315,11 @@ This policy setting allows you to disable browser geolocation support. This will
 
 <!-- DisableHomePageChange-Description-Begin -->
 <!-- Description-Source-ADMX -->
-The Home page specified on the General tab of the Internet Options dialog box is the default Web page that Internet Explorer loads whenever it is run.
+The Home page specified on the General tab of the Internet Options dialog box is the default Web page that Internet Explorer loads whenever it's run.
 
-- If you enable this policy setting, a user cannot set a custom default home page. You must specify which default home page should load on the user machine. For machines with at least Internet Explorer 7, the home page can be set within this policy to override other home page policies.
+- If you enable this policy setting, a user can't set a custom default home page. You must specify which default home page should load on the user machine. For machines with at least Internet Explorer 7, the home page can be set within this policy to override other home page policies.
 
-- If you disable or do not configure this policy setting, the Home page box is enabled and users can choose their own home page.
+- If you disable or don't configure this policy setting, the Home page box is enabled and users can choose their own home page.
 <!-- DisableHomePageChange-Description-End -->
 
 <!-- DisableHomePageChange-Editable-Begin -->
@@ -3370,13 +3331,12 @@ The Home page specified on the General tab of the Internet Options dialog box is
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableHomePageChange-DFProperties-End -->
 
 <!-- DisableHomePageChange-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3403,7 +3363,7 @@ The Home page specified on the General tab of the Internet Options dialog box is
 <!-- DisableHTMLApplication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1060] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.3460] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2060] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1030] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1060] and later <br> ✅ Windows 10, version 1809 [10.0.17763.3460] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2060] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1030] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- DisableHTMLApplication-Applicability-End -->
 
 <!-- DisableHTMLApplication-OmaUri-Begin -->
@@ -3422,7 +3382,7 @@ This policy setting specifies if running the HTML Application (HTA file) is bloc
 
 - If you enable this policy setting, running the HTML Application (HTA file) will be blocked.
 
-- If you disable or do not configure this policy setting, running the HTML Application (HTA file) is allowed.
+- If you disable or don't configure this policy setting, running the HTML Application (HTA file) is allowed.
 <!-- DisableHTMLApplication-Description-End -->
 
 <!-- DisableHTMLApplication-Editable-Begin -->
@@ -3434,13 +3394,12 @@ This policy setting specifies if running the HTML Application (HTA file) is bloc
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableHTMLApplication-DFProperties-End -->
 
 <!-- DisableHTMLApplication-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3467,7 +3426,7 @@ This policy setting specifies if running the HTML Application (HTA file) is bloc
 <!-- DisableIgnoringCertificateErrors-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableIgnoringCertificateErrors-Applicability-End -->
 
 <!-- DisableIgnoringCertificateErrors-OmaUri-Begin -->
@@ -3484,9 +3443,9 @@ This policy setting specifies if running the HTML Application (HTA file) is bloc
 <!-- Description-Source-ADMX -->
 This policy setting prevents the user from ignoring Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificate errors that interrupt browsing (such as "expired", "revoked", or "name mismatch" errors) in Internet Explorer.
 
-- If you enable this policy setting, the user cannot continue browsing.
+- If you enable this policy setting, the user can't continue browsing.
 
-- If you disable or do not configure this policy setting, the user can choose to ignore certificate errors and continue browsing.
+- If you disable or don't configure this policy setting, the user can choose to ignore certificate errors and continue browsing.
 <!-- DisableIgnoringCertificateErrors-Description-End -->
 
 <!-- DisableIgnoringCertificateErrors-Editable-Begin -->
@@ -3498,13 +3457,12 @@ This policy setting prevents the user from ignoring Secure Sockets Layer/Transpo
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableIgnoringCertificateErrors-DFProperties-End -->
 
 <!-- DisableIgnoringCertificateErrors-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3531,7 +3489,7 @@ This policy setting prevents the user from ignoring Secure Sockets Layer/Transpo
 <!-- DisableInPrivateBrowsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableInPrivateBrowsing-Applicability-End -->
 
 <!-- DisableInPrivateBrowsing-OmaUri-Begin -->
@@ -3554,7 +3512,7 @@ InPrivate Browsing prevents Internet Explorer from storing data about a user's b
 
 - If you disable this policy setting, InPrivate Browsing is available for use.
 
-- If you do not configure this policy setting, InPrivate Browsing can be turned on or off through the registry.
+- If you don't configure this policy setting, InPrivate Browsing can be turned on or off through the registry.
 <!-- DisableInPrivateBrowsing-Description-End -->
 
 <!-- DisableInPrivateBrowsing-Editable-Begin -->
@@ -3566,13 +3524,12 @@ InPrivate Browsing prevents Internet Explorer from storing data about a user's b
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableInPrivateBrowsing-DFProperties-End -->
 
 <!-- DisableInPrivateBrowsing-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3599,7 +3556,7 @@ InPrivate Browsing prevents Internet Explorer from storing data about a user's b
 <!-- DisableInternetExplorerApp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1350] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.789] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
 <!-- DisableInternetExplorerApp-Applicability-End -->
 
 <!-- DisableInternetExplorerApp-OmaUri-Begin -->
@@ -3617,10 +3574,14 @@ InPrivate Browsing prevents Internet Explorer from storing data about a user's b
 This policy lets you restrict launching of Internet Explorer as a standalone browser.
 
 If you enable this policy, it:
-  - Prevents Internet Explorer 11 from launching as a standalone browser.
-  - Restricts Internet Explorer's usage to Microsoft Edge's native 'Internet Explorer mode'.
-  - Redirects all attempts at launching Internet Explorer 11 to Microsoft Edge Stable Channel browser.
-  - Overrides any other policies that redirect to Internet Explorer 11.
+
+- Prevents Internet Explorer 11 from launching as a standalone browser.
+
+- Restricts Internet Explorer's usage to Microsoft Edge's native 'Internet Explorer mode'.
+
+- Redirects all attempts at launching Internet Explorer 11 to Microsoft Edge Stable Channel browser.
+
+- Overrides any other policies that redirect to Internet Explorer 11.
 
 If you disable, or don't configure this policy, all sites are opened using the current active browser settings.
 
@@ -3637,13 +3598,12 @@ If you disable, or don't configure this policy, all sites are opened using the c
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableInternetExplorerApp-DFProperties-End -->
 
 <!-- DisableInternetExplorerApp-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3692,7 +3652,7 @@ If you disable, or don't configure this policy, all sites are opened using the c
 <!-- DisableProcessesInEnhancedProtectedMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableProcessesInEnhancedProtectedMode-Applicability-End -->
 
 <!-- DisableProcessesInEnhancedProtectedMode-OmaUri-Begin -->
@@ -3728,13 +3688,12 @@ This policy setting determines whether Internet Explorer 11 uses 64-bit processe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableProcessesInEnhancedProtectedMode-DFProperties-End -->
 
 <!-- DisableProcessesInEnhancedProtectedMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3761,7 +3720,7 @@ This policy setting determines whether Internet Explorer 11 uses 64-bit processe
 <!-- DisableProxyChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableProxyChange-Applicability-End -->
 
 <!-- DisableProxyChange-OmaUri-Begin -->
@@ -3778,9 +3737,9 @@ This policy setting determines whether Internet Explorer 11 uses 64-bit processe
 <!-- Description-Source-ADMX -->
 This policy setting specifies if a user can change proxy settings.
 
-- If you enable this policy setting, the user will not be able to configure proxy settings.
+- If you enable this policy setting, the user won't be able to configure proxy settings.
 
-- If you disable or do not configure this policy setting, the user can configure proxy settings.
+- If you disable or don't configure this policy setting, the user can configure proxy settings.
 <!-- DisableProxyChange-Description-End -->
 
 <!-- DisableProxyChange-Editable-Begin -->
@@ -3792,13 +3751,12 @@ This policy setting specifies if a user can change proxy settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableProxyChange-DFProperties-End -->
 
 <!-- DisableProxyChange-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3825,7 +3783,7 @@ This policy setting specifies if a user can change proxy settings.
 <!-- DisableSearchProviderChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableSearchProviderChange-Applicability-End -->
 
 <!-- DisableSearchProviderChange-OmaUri-Begin -->
@@ -3842,9 +3800,9 @@ This policy setting specifies if a user can change proxy settings.
 <!-- Description-Source-ADMX -->
 This policy setting prevents the user from changing the default search provider for the Address bar and the toolbar Search box.
 
-- If you enable this policy setting, the user cannot change the default search provider.
+- If you enable this policy setting, the user can't change the default search provider.
 
-- If you disable or do not configure this policy setting, the user can change the default search provider.
+- If you disable or don't configure this policy setting, the user can change the default search provider.
 <!-- DisableSearchProviderChange-Description-End -->
 
 <!-- DisableSearchProviderChange-Editable-Begin -->
@@ -3856,13 +3814,12 @@ This policy setting prevents the user from changing the default search provider 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableSearchProviderChange-DFProperties-End -->
 
 <!-- DisableSearchProviderChange-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3889,7 +3846,7 @@ This policy setting prevents the user from changing the default search provider 
 <!-- DisableSecondaryHomePageChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableSecondaryHomePageChange-Applicability-End -->
 
 <!-- DisableSecondaryHomePageChange-OmaUri-Begin -->
@@ -3906,12 +3863,12 @@ This policy setting prevents the user from changing the default search provider 
 <!-- Description-Source-ADMX -->
 Secondary home pages are the default Web pages that Internet Explorer loads in separate tabs from the home page whenever the browser is run. This policy setting allows you to set default secondary home pages.
 
-- If you enable this policy setting, you can specify which default home pages should load as secondary home pages. The user cannot set custom default secondary home pages.
+- If you enable this policy setting, you can specify which default home pages should load as secondary home pages. The user can't set custom default secondary home pages.
 
-- If you disable or do not configure this policy setting, the user can add secondary home pages.
+- If you disable or don't configure this policy setting, the user can add secondary home pages.
 
 > [!NOTE]
-> If the "Disable Changing Home Page Settings" policy is enabled, the user cannot add secondary home pages.
+> If the "Disable Changing Home Page Settings" policy is enabled, the user can't add secondary home pages.
 <!-- DisableSecondaryHomePageChange-Description-End -->
 
 <!-- DisableSecondaryHomePageChange-Editable-Begin -->
@@ -3923,13 +3880,12 @@ Secondary home pages are the default Web pages that Internet Explorer loads in s
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableSecondaryHomePageChange-DFProperties-End -->
 
 <!-- DisableSecondaryHomePageChange-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3955,7 +3911,7 @@ Secondary home pages are the default Web pages that Internet Explorer loads in s
 <!-- DisableSecuritySettingsCheck-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableSecuritySettingsCheck-Applicability-End -->
 
 <!-- DisableSecuritySettingsCheck-OmaUri-Begin -->
@@ -3974,7 +3930,7 @@ This policy setting turns off the Security Settings Check feature, which checks 
 
 - If you enable this policy setting, the feature is turned off.
 
-- If you disable or do not configure this policy setting, the feature is turned on.
+- If you disable or don't configure this policy setting, the feature is turned on.
 <!-- DisableSecuritySettingsCheck-Description-End -->
 
 <!-- DisableSecuritySettingsCheck-Editable-Begin -->
@@ -3986,13 +3942,12 @@ This policy setting turns off the Security Settings Check feature, which checks 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableSecuritySettingsCheck-DFProperties-End -->
 
 <!-- DisableSecuritySettingsCheck-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4019,7 +3974,7 @@ This policy setting turns off the Security Settings Check feature, which checks 
 <!-- DisableUpdateCheck-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableUpdateCheck-Applicability-End -->
 
 <!-- DisableUpdateCheck-OmaUri-Begin -->
@@ -4032,9 +3987,9 @@ This policy setting turns off the Security Settings Check feature, which checks 
 <!-- Description-Source-ADMX -->
 Prevents Internet Explorer from checking whether a new version of the browser is available.
 
-- If you enable this policy, it prevents Internet Explorer from checking to see whether it is the latest available browser version and notifying users if a new version is available.
+- If you enable this policy, it prevents Internet Explorer from checking to see whether it's the latest available browser version and notifying users if a new version is available.
 
-- If you disable this policy or do not configure it, Internet Explorer checks every 30 days by default, and then notifies users if a new version is available.
+- If you disable this policy or don't configure it, Internet Explorer checks every 30 days by default, and then notifies users if a new version is available.
 
 This policy is intended to help the administrator maintain version control for Internet Explorer by preventing users from being notified about new versions of the browser.
 <!-- DisableUpdateCheck-Description-End -->
@@ -4048,13 +4003,12 @@ This policy is intended to help the administrator maintain version control for I
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableUpdateCheck-DFProperties-End -->
 
 <!-- DisableUpdateCheck-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4081,7 +4035,7 @@ This policy is intended to help the administrator maintain version control for I
 <!-- DisableWebAddressAutoComplete-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DisableWebAddressAutoComplete-Applicability-End -->
 
 <!-- DisableWebAddressAutoComplete-OmaUri-Begin -->
@@ -4098,11 +4052,11 @@ This policy is intended to help the administrator maintain version control for I
 <!-- Description-Source-ADMX -->
 This AutoComplete feature suggests possible matches when users are entering Web addresses in the browser address bar.
 
-- If you enable this policy setting, user will not be suggested matches when entering Web addresses. The user cannot change the auto-complete for web-address setting.
+- If you enable this policy setting, user won't be suggested matches when entering Web addresses. The user can't change the auto-complete for web-address setting.
 
-- If you disable this policy setting, user will be suggested matches when entering Web addresses. The user cannot change the auto-complete for web-address setting.
+- If you disable this policy setting, user will be suggested matches when entering Web addresses. The user can't change the auto-complete for web-address setting.
 
-- If you do not configure this policy setting, a user will have the freedom to choose to turn the auto-complete setting for web-addresses on or off.
+- If you don't configure this policy setting, a user will have the freedom to choose to turn the auto-complete setting for web-addresses on or off.
 <!-- DisableWebAddressAutoComplete-Description-End -->
 
 <!-- DisableWebAddressAutoComplete-Editable-Begin -->
@@ -4114,13 +4068,12 @@ This AutoComplete feature suggests possible matches when users are entering Web 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableWebAddressAutoComplete-DFProperties-End -->
 
 <!-- DisableWebAddressAutoComplete-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4147,7 +4100,7 @@ This AutoComplete feature suggests possible matches when users are entering Web 
 <!-- DoNotAllowActiveXControlsInProtectedMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DoNotAllowActiveXControlsInProtectedMode-Applicability-End -->
 
 <!-- DoNotAllowActiveXControlsInProtectedMode-OmaUri-Begin -->
@@ -4162,15 +4115,15 @@ This AutoComplete feature suggests possible matches when users are entering Web 
 
 <!-- DoNotAllowActiveXControlsInProtectedMode-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting prevents ActiveX controls from running in Protected Mode when Enhanced Protected Mode is enabled. When a user has an ActiveX control installed that is not compatible with Enhanced Protected Mode and a website attempts to load the control, Internet Explorer notifies the user and gives the option to run the website in regular Protected Mode. This policy setting disables this notification and forces all websites to run in Enhanced Protected Mode.
+This policy setting prevents ActiveX controls from running in Protected Mode when Enhanced Protected Mode is enabled. When a user has an ActiveX control installed that isn't compatible with Enhanced Protected Mode and a website attempts to load the control, Internet Explorer notifies the user and gives the option to run the website in regular Protected Mode. This policy setting disables this notification and forces all websites to run in Enhanced Protected Mode.
 
 Enhanced Protected Mode provides additional protection against malicious websites by using 64-bit processes on 64-bit versions of Windows. For computers running at least Windows 8, Enhanced Protected Mode also limits the locations Internet Explorer can read from in the registry and the file system.
 
-When Enhanced Protected Mode is enabled, and a user encounters a website that attempts to load an ActiveX control that is not compatible with Enhanced Protected Mode, Internet Explorer notifies the user and gives the option to disable Enhanced Protected Mode for that particular website.
+When Enhanced Protected Mode is enabled, and a user encounters a website that attempts to load an ActiveX control that isn't compatible with Enhanced Protected Mode, Internet Explorer notifies the user and gives the option to disable Enhanced Protected Mode for that particular website.
 
-- If you enable this policy setting, Internet Explorer will not give the user the option to disable Enhanced Protected Mode. All Protected Mode websites will run in Enhanced Protected Mode.
+- If you enable this policy setting, Internet Explorer won't give the user the option to disable Enhanced Protected Mode. All Protected Mode websites will run in Enhanced Protected Mode.
 
-- If you disable or do not configure this policy setting, Internet Explorer notifies users and provides an option to run websites with incompatible ActiveX controls in regular Protected Mode. This is the default behavior.
+- If you disable or don't configure this policy setting, Internet Explorer notifies users and provides an option to run websites with incompatible ActiveX controls in regular Protected Mode. This is the default behavior.
 <!-- DoNotAllowActiveXControlsInProtectedMode-Description-End -->
 
 <!-- DoNotAllowActiveXControlsInProtectedMode-Editable-Begin -->
@@ -4182,13 +4135,12 @@ When Enhanced Protected Mode is enabled, and a user encounters a website that at
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DoNotAllowActiveXControlsInProtectedMode-DFProperties-End -->
 
 <!-- DoNotAllowActiveXControlsInProtectedMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4215,7 +4167,7 @@ When Enhanced Protected Mode is enabled, and a user encounters a website that at
 <!-- DoNotAllowUsersToAddSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DoNotAllowUsersToAddSites-Applicability-End -->
 
 <!-- DoNotAllowUsersToAddSites-OmaUri-Begin -->
@@ -4228,14 +4180,14 @@ When Enhanced Protected Mode is enabled, and a user encounters a website that at
 <!-- Description-Source-ADMX -->
 Prevents users from adding or removing sites from security zones. A security zone is a group of Web sites with the same security level.
 
-- If you enable this policy, the site management settings for security zones are disabled. (To see the site management settings for security zones, in the Internet Options dialog box, click the Security tab, and then click the Sites button.)
+- If you enable this policy, the site management settings for security zones are disabled. (To see the site management settings for security zones, in the Internet Options dialog box, click the Security tab, and then click the Sites button).
 
-- If you disable this policy or do not configure it, users can add Web sites to or remove sites from the Trusted Sites and Restricted Sites zones, and alter settings for the Local Intranet zone.
+- If you disable this policy or don't configure it, users can add Web sites to or remove sites from the Trusted Sites and Restricted Sites zones, and alter settings for the Local Intranet zone.
 
 This policy prevents users from changing site management settings for security zones established by the administrator.
 
 > [!NOTE]
-> The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from the interface, takes precedence over this policy. If it is enabled, this policy is ignored.
+> The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from the interface, takes precedence over this policy. If it's enabled, this policy is ignored.
 
 Also, see the "Security zones: Use only machine settings" policy.
 <!-- DoNotAllowUsersToAddSites-Description-End -->
@@ -4249,13 +4201,12 @@ Also, see the "Security zones: Use only machine settings" policy.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DoNotAllowUsersToAddSites-DFProperties-End -->
 
 <!-- DoNotAllowUsersToAddSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4282,7 +4233,7 @@ Also, see the "Security zones: Use only machine settings" policy.
 <!-- DoNotAllowUsersToChangePolicies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DoNotAllowUsersToChangePolicies-Applicability-End -->
 
 <!-- DoNotAllowUsersToChangePolicies-OmaUri-Begin -->
@@ -4297,12 +4248,12 @@ Prevents users from changing security zone settings. A security zone is a group 
 
 - If you enable this policy, the Custom Level button and security-level slider on the Security tab in the Internet Options dialog box are disabled.
 
-- If you disable this policy or do not configure it, users can change the settings for security zones.
+- If you disable this policy or don't configure it, users can change the settings for security zones.
 
 This policy prevents users from changing security zone settings established by the administrator.
 
 > [!NOTE]
-> The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from Internet Explorer in Control Panel, takes precedence over this policy. If it is enabled, this policy is ignored.
+> The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from Internet Explorer in Control Panel, takes precedence over this policy. If it's enabled, this policy is ignored.
 
 Also, see the "Security zones: Use only machine settings" policy.
 <!-- DoNotAllowUsersToChangePolicies-Description-End -->
@@ -4316,13 +4267,12 @@ Also, see the "Security zones: Use only machine settings" policy.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DoNotAllowUsersToChangePolicies-DFProperties-End -->
 
 <!-- DoNotAllowUsersToChangePolicies-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4349,7 +4299,7 @@ Also, see the "Security zones: Use only machine settings" policy.
 <!-- DoNotBlockOutdatedActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DoNotBlockOutdatedActiveXControls-Applicability-End -->
 
 <!-- DoNotBlockOutdatedActiveXControls-OmaUri-Begin -->
@@ -4382,13 +4332,12 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DoNotBlockOutdatedActiveXControls-DFProperties-End -->
 
 <!-- DoNotBlockOutdatedActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4415,7 +4364,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- DoNotBlockOutdatedActiveXControlsOnSpecificDomains-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DoNotBlockOutdatedActiveXControlsOnSpecificDomains-Applicability-End -->
 
 <!-- DoNotBlockOutdatedActiveXControlsOnSpecificDomains-OmaUri-Begin -->
@@ -4435,9 +4384,9 @@ This policy setting allows you to manage a list of domains on which Internet Exp
 - If you enable this policy setting, you can enter a custom list of domains for which outdated ActiveX controls won't be blocked in Internet Explorer. Each domain entry must be formatted like one of the following:
 
 1. "domain.name. TLD". For example, if you want to include *.contoso.com/*, use "contoso.com"
-2. "hostname". For example, if you want to include https://example, use "example"
+2. "hostname". For example, if you want to include https://example, use "example".
 
-3. "file:///path/filename.htm". For example, use "file:///C:/Users/contoso/Desktop/index.htm"
+3. "file:///path/filename.htm". For example, use "file:///C:/Users/contoso/Desktop/index.htm".
 
 - If you disable or don't configure this policy setting, the list is deleted and Internet Explorer continues to block specific outdated ActiveX controls on all domains in the Internet Zone.
 
@@ -4453,13 +4402,12 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DoNotBlockOutdatedActiveXControlsOnSpecificDomains-DFProperties-End -->
 
 <!-- DoNotBlockOutdatedActiveXControlsOnSpecificDomains-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4486,7 +4434,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- EnableExtendedIEModeHotkeys-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.143] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1474] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.906] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.143] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1474] and later <br> ✅ Windows 10, version 2004 [10.0.19041.906] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableExtendedIEModeHotkeys-Applicability-End -->
 
 <!-- EnableExtendedIEModeHotkeys-OmaUri-Begin -->
@@ -4505,7 +4453,7 @@ This policy setting lets admins enable extended Microsoft Edge Internet Explorer
 
 If you enable this policy, extended hotkey functionality is enabled in Internet Explorer mode and work the same as Internet Explorer.
 
-If you disable, or don't configure this policy, extended hotkeys will not work in Internet Explorer mode.
+If you disable, or don't configure this policy, extended hotkeys won't work in Internet Explorer mode.
 
 For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- EnableExtendedIEModeHotkeys-Description-End -->
@@ -4519,13 +4467,12 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableExtendedIEModeHotkeys-DFProperties-End -->
 
 <!-- EnableExtendedIEModeHotkeys-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4552,7 +4499,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- EnableGlobalWindowListInIEMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.558] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1566] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.527] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.558] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1566] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.527] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableGlobalWindowListInIEMode-Applicability-End -->
 
 <!-- EnableGlobalWindowListInIEMode-OmaUri-Begin -->
@@ -4568,6 +4515,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- EnableGlobalWindowListInIEMode-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This setting allows Internet Explorer mode to use the global window list that enables sharing state with other applications.
+
 The setting will take effect only when Internet Explorer 11 is disabled as a standalone browser.
 
 - If you enable this policy, Internet Explorer mode will use the global window list.
@@ -4587,13 +4535,12 @@ To learn more about disabling Internet Explorer 11 as a standalone browser, see 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableGlobalWindowListInIEMode-DFProperties-End -->
 
 <!-- EnableGlobalWindowListInIEMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4620,7 +4567,7 @@ To learn more about disabling Internet Explorer 11 as a standalone browser, see 
 <!-- IncludeAllLocalSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IncludeAllLocalSites-Applicability-End -->
 
 <!-- IncludeAllLocalSites-OmaUri-Begin -->
@@ -4635,13 +4582,13 @@ To learn more about disabling Internet Explorer 11 as a standalone browser, see 
 
 <!-- IncludeAllLocalSites-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls whether local sites which are not explicitly mapped into any Security Zone are forced into the local Intranet security zone.
+This policy setting controls whether local sites which aren't explicitly mapped into any Security Zone are forced into the local Intranet security zone.
 
-- If you enable this policy setting, local sites which are not explicitly mapped into a zone are considered to be in the Intranet Zone.
+- If you enable this policy setting, local sites which aren't explicitly mapped into a zone are considered to be in the Intranet Zone.
 
-- If you disable this policy setting, local sites which are not explicitly mapped into a zone will not be considered to be in the Intranet Zone (so would typically be in the Internet Zone).
+- If you disable this policy setting, local sites which aren't explicitly mapped into a zone won't be considered to be in the Intranet Zone (so would typically be in the Internet Zone).
 
-- If you do not configure this policy setting, users choose whether to force local sites into the Intranet Zone.
+- If you don't configure this policy setting, users choose whether to force local sites into the Intranet Zone.
 <!-- IncludeAllLocalSites-Description-End -->
 
 <!-- IncludeAllLocalSites-Editable-Begin -->
@@ -4653,13 +4600,12 @@ This policy setting controls whether local sites which are not explicitly mapped
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IncludeAllLocalSites-DFProperties-End -->
 
 <!-- IncludeAllLocalSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4686,7 +4632,7 @@ This policy setting controls whether local sites which are not explicitly mapped
 <!-- IncludeAllNetworkPaths-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IncludeAllNetworkPaths-Applicability-End -->
 
 <!-- IncludeAllNetworkPaths-OmaUri-Begin -->
@@ -4705,9 +4651,9 @@ This policy setting controls whether URLs representing UNCs are mapped into the 
 
 - If you enable this policy setting, all network paths are mapped into the Intranet Zone.
 
-- If you disable this policy setting, network paths are not necessarily mapped into the Intranet Zone (other rules might map one there).
+- If you disable this policy setting, network paths aren't necessarily mapped into the Intranet Zone (other rules might map one there).
 
-- If you do not configure this policy setting, users choose whether network paths are mapped into the Intranet Zone.
+- If you don't configure this policy setting, users choose whether network paths are mapped into the Intranet Zone.
 <!-- IncludeAllNetworkPaths-Description-End -->
 
 <!-- IncludeAllNetworkPaths-Editable-Begin -->
@@ -4719,13 +4665,12 @@ This policy setting controls whether URLs representing UNCs are mapped into the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IncludeAllNetworkPaths-DFProperties-End -->
 
 <!-- IncludeAllNetworkPaths-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4752,7 +4697,7 @@ This policy setting controls whether URLs representing UNCs are mapped into the 
 <!-- InternetZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- InternetZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -4771,9 +4716,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- InternetZoneAllowAccessToDataSources-Description-End -->
 
 <!-- InternetZoneAllowAccessToDataSources-Editable-Begin -->
@@ -4785,13 +4730,12 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- InternetZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4817,7 +4761,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- InternetZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- InternetZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -4834,11 +4778,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
+- If you don't configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 <!-- InternetZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- InternetZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -4850,13 +4794,12 @@ This policy setting manages whether users will be automatically prompted for Act
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- InternetZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4882,7 +4825,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- InternetZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- InternetZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -4901,7 +4844,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
+- If you disable or don't configure this setting, file downloads that aren't user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
 <!-- InternetZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- InternetZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -4913,13 +4856,12 @@ This policy setting determines whether users will be prompted for non user-initi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- InternetZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4945,7 +4887,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- InternetZoneAllowCopyPasteViaScript-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneAllowCopyPasteViaScript-Applicability-End -->
 
 <!-- InternetZoneAllowCopyPasteViaScript-OmaUri-Begin -->
@@ -4966,9 +4908,9 @@ This policy setting allows you to manage whether scripts can perform a clipboard
 
 If you select Prompt in the drop-down box, users are queried as to whether to perform clipboard operations.
 
-- If you disable this policy setting, a script cannot perform a clipboard operation.
+- If you disable this policy setting, a script can't perform a clipboard operation.
 
-- If you do not configure this policy setting, a script can perform a clipboard operation.
+- If you don't configure this policy setting, a script can perform a clipboard operation.
 <!-- InternetZoneAllowCopyPasteViaScript-Description-End -->
 
 <!-- InternetZoneAllowCopyPasteViaScript-Editable-Begin -->
@@ -4980,13 +4922,12 @@ If you select Prompt in the drop-down box, users are queried as to whether to pe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowCopyPasteViaScript-DFProperties-End -->
 
 <!-- InternetZoneAllowCopyPasteViaScript-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5012,7 +4953,7 @@ If you select Prompt in the drop-down box, users are queried as to whether to pe
 <!-- InternetZoneAllowDragAndDropCopyAndPasteFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneAllowDragAndDropCopyAndPasteFiles-Applicability-End -->
 
 <!-- InternetZoneAllowDragAndDropCopyAndPasteFiles-OmaUri-Begin -->
@@ -5033,7 +4974,7 @@ This policy setting allows you to manage whether users can drag files or copy an
 
 - If you disable this policy setting, users are prevented from dragging files or copying and pasting files from this zone.
 
-- If you do not configure this policy setting, users can drag files or copy and paste files from this zone automatically.
+- If you don't configure this policy setting, users can drag files or copy and paste files from this zone automatically.
 <!-- InternetZoneAllowDragAndDropCopyAndPasteFiles-Description-End -->
 
 <!-- InternetZoneAllowDragAndDropCopyAndPasteFiles-Editable-Begin -->
@@ -5045,13 +4986,12 @@ This policy setting allows you to manage whether users can drag files or copy an
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowDragAndDropCopyAndPasteFiles-DFProperties-End -->
 
 <!-- InternetZoneAllowDragAndDropCopyAndPasteFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5077,7 +5017,7 @@ This policy setting allows you to manage whether users can drag files or copy an
 <!-- InternetZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowFontDownloads-Applicability-End -->
 
 <!-- InternetZoneAllowFontDownloads-OmaUri-Begin -->
@@ -5100,7 +5040,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, HTML fonts can be downloaded automatically.
+- If you don't configure this policy setting, HTML fonts can be downloaded automatically.
 <!-- InternetZoneAllowFontDownloads-Description-End -->
 
 <!-- InternetZoneAllowFontDownloads-Editable-Begin -->
@@ -5112,13 +5052,12 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- InternetZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5144,7 +5083,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- InternetZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- InternetZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -5161,11 +5100,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.
+- If you don't configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.
 <!-- InternetZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- InternetZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -5177,13 +5116,12 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- InternetZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5209,7 +5147,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- InternetZoneAllowLoadingOfXAMLFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneAllowLoadingOfXAMLFiles-Applicability-End -->
 
 <!-- InternetZoneAllowLoadingOfXAMLFiles-OmaUri-Begin -->
@@ -5226,11 +5164,11 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the loading of Extensible Application Markup Language (XAML) files. XAML is an XML-based declarative markup language commonly used for creating rich user interfaces and graphics that take advantage of the Windows Presentation Foundation.
 
-- If you enable this policy setting and set the drop-down box to Enable, XAML files are automatically loaded inside Internet Explorer. The user cannot change this behavior. If you set the drop-down box to Prompt, the user is prompted for loading XAML files.
+- If you enable this policy setting and set the drop-down box to Enable, XAML files are automatically loaded inside Internet Explorer. The user can't change this behavior. If you set the drop-down box to Prompt, the user is prompted for loading XAML files.
 
-- If you disable this policy setting, XAML files are not loaded inside Internet Explorer. The user cannot change this behavior.
+- If you disable this policy setting, XAML files aren't loaded inside Internet Explorer. The user can't change this behavior.
 
-- If you do not configure this policy setting, the user can decide whether to load XAML files inside Internet Explorer.
+- If you don't configure this policy setting, the user can decide whether to load XAML files inside Internet Explorer.
 <!-- InternetZoneAllowLoadingOfXAMLFiles-Description-End -->
 
 <!-- InternetZoneAllowLoadingOfXAMLFiles-Editable-Begin -->
@@ -5242,13 +5180,12 @@ This policy setting allows you to manage the loading of Extensible Application M
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowLoadingOfXAMLFiles-DFProperties-End -->
 
 <!-- InternetZoneAllowLoadingOfXAMLFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5274,7 +5211,7 @@ This policy setting allows you to manage the loading of Extensible Application M
 <!-- InternetZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- InternetZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -5289,13 +5226,13 @@ This policy setting allows you to manage the loading of Extensible Application M
 
 <!-- InternetZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer will execute unsigned managed components.
 <!-- InternetZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- InternetZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -5307,13 +5244,12 @@ This policy setting allows you to manage whether . NET Framework components that
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- InternetZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5339,7 +5275,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls-Applicability-End -->
 
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls-OmaUri-Begin -->
@@ -5358,7 +5294,7 @@ This policy setting controls whether or not the user is prompted to allow Active
 
 - If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control to run from the current site or from all sites.
 
-- If you disable this policy setting, the user does not see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.
+- If you disable this policy setting, the user doesn't see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls-Description-End -->
 
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls-Editable-Begin -->
@@ -5370,13 +5306,12 @@ This policy setting controls whether or not the user is prompted to allow Active
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls-DFProperties-End -->
 
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5402,7 +5337,7 @@ This policy setting controls whether or not the user is prompted to allow Active
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-Applicability-End -->
 
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-OmaUri-Begin -->
@@ -5419,7 +5354,7 @@ This policy setting controls whether or not the user is prompted to allow Active
 <!-- Description-Source-ADMX -->
 This policy setting controls whether or not the user is allowed to run the TDC ActiveX control on websites.
 
-- If you enable this policy setting, the TDC ActiveX control will not run from websites in this zone.
+- If you enable this policy setting, the TDC ActiveX control won't run from websites in this zone.
 
 - If you disable this policy setting, the TDC Active X control will run from all sites in this zone.
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-Description-End -->
@@ -5433,13 +5368,12 @@ This policy setting controls whether or not the user is allowed to run the TDC A
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-DFProperties-End -->
 
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5465,7 +5399,7 @@ This policy setting controls whether or not the user is allowed to run the TDC A
 <!-- InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls-Applicability-End -->
 
 <!-- InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls-OmaUri-Begin -->
@@ -5484,9 +5418,9 @@ This policy setting determines whether a page can control embedded WebBrowser co
 
 - If you enable this policy setting, script access to the WebBrowser control is allowed.
 
-- If you disable this policy setting, script access to the WebBrowser control is not allowed.
+- If you disable this policy setting, script access to the WebBrowser control isn't allowed.
 
-- If you do not configure this policy setting, the user can enable or disable script access to the WebBrowser control. By default, script access to the WebBrowser control is allowed only in the Local Machine and Intranet zones.
+- If you don't configure this policy setting, the user can enable or disable script access to the WebBrowser control. By default, script access to the WebBrowser control is allowed only in the Local Machine and Intranet zones.
 <!-- InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls-Description-End -->
 
 <!-- InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls-Editable-Begin -->
@@ -5498,13 +5432,12 @@ This policy setting determines whether a page can control embedded WebBrowser co
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls-DFProperties-End -->
 
 <!-- InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5530,7 +5463,7 @@ This policy setting determines whether a page can control embedded WebBrowser co
 <!-- InternetZoneAllowScriptInitiatedWindows-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneAllowScriptInitiatedWindows-Applicability-End -->
 
 <!-- InternetZoneAllowScriptInitiatedWindows-OmaUri-Begin -->
@@ -5547,11 +5480,11 @@ This policy setting determines whether a page can control embedded WebBrowser co
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage restrictions on script-initiated pop-up windows and windows that include the title and status bars.
 
-- If you enable this policy setting, Windows Restrictions security will not apply in this zone. The security zone runs without the added layer of security provided by this feature.
+- If you enable this policy setting, Windows Restrictions security won't apply in this zone. The security zone runs without the added layer of security provided by this feature.
 
-- If you disable this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars cannot be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
+- If you disable this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars can't be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
 
-- If you do not configure this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars cannot be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
+- If you don't configure this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars can't be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
 <!-- InternetZoneAllowScriptInitiatedWindows-Description-End -->
 
 <!-- InternetZoneAllowScriptInitiatedWindows-Editable-Begin -->
@@ -5563,13 +5496,12 @@ This policy setting allows you to manage restrictions on script-initiated pop-up
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowScriptInitiatedWindows-DFProperties-End -->
 
 <!-- InternetZoneAllowScriptInitiatedWindows-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5595,7 +5527,7 @@ This policy setting allows you to manage restrictions on script-initiated pop-up
 <!-- InternetZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowScriptlets-Applicability-End -->
 
 <!-- InternetZoneAllowScriptlets-OmaUri-Begin -->
@@ -5614,9 +5546,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- InternetZoneAllowScriptlets-Description-End -->
 
 <!-- InternetZoneAllowScriptlets-Editable-Begin -->
@@ -5628,13 +5560,12 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowScriptlets-DFProperties-End -->
 
 <!-- InternetZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5660,7 +5591,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- InternetZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- InternetZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -5679,9 +5610,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -5696,13 +5627,12 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- InternetZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5728,7 +5658,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- InternetZoneAllowUpdatesToStatusBarViaScript-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneAllowUpdatesToStatusBarViaScript-Applicability-End -->
 
 <!-- InternetZoneAllowUpdatesToStatusBarViaScript-OmaUri-Begin -->
@@ -5747,7 +5677,7 @@ This policy setting allows you to manage whether script is allowed to update the
 
 - If you enable this policy setting, script is allowed to update the status bar.
 
-- If you disable or do not configure this policy setting, script is not allowed to update the status bar.
+- If you disable or don't configure this policy setting, script isn't allowed to update the status bar.
 <!-- InternetZoneAllowUpdatesToStatusBarViaScript-Description-End -->
 
 <!-- InternetZoneAllowUpdatesToStatusBarViaScript-Editable-Begin -->
@@ -5759,13 +5689,12 @@ This policy setting allows you to manage whether script is allowed to update the
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowUpdatesToStatusBarViaScript-DFProperties-End -->
 
 <!-- InternetZoneAllowUpdatesToStatusBarViaScript-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5791,7 +5720,7 @@ This policy setting allows you to manage whether script is allowed to update the
 <!-- InternetZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- InternetZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -5810,9 +5739,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- InternetZoneAllowUserDataPersistence-Description-End -->
 
 <!-- InternetZoneAllowUserDataPersistence-Editable-Begin -->
@@ -5824,13 +5753,12 @@ This policy setting allows you to manage the preservation of information in the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- InternetZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5856,7 +5784,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- InternetZoneAllowVBScriptToRunInInternetExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- InternetZoneAllowVBScriptToRunInInternetExplorer-Applicability-End -->
 
 <!-- InternetZoneAllowVBScriptToRunInInternetExplorer-OmaUri-Begin -->
@@ -5879,7 +5807,7 @@ If you selected Prompt in the drop-down box, users are asked to choose whether t
 
 If you selected Disable in the drop-down box, VBScript is prevented from running.
 
-If you do not configure or disable this policy setting, VBScript is prevented from running.
+If you don't configure or disable this policy setting, VBScript is prevented from running.
 <!-- InternetZoneAllowVBScriptToRunInInternetExplorer-Description-End -->
 
 <!-- InternetZoneAllowVBScriptToRunInInternetExplorer-Editable-Begin -->
@@ -5891,13 +5819,12 @@ If you do not configure or disable this policy setting, VBScript is prevented fr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneAllowVBScriptToRunInInternetExplorer-DFProperties-End -->
 
 <!-- InternetZoneAllowVBScriptToRunInInternetExplorer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5923,7 +5850,7 @@ If you do not configure or disable this policy setting, VBScript is prevented fr
 <!-- InternetZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-End -->
 
 <!-- InternetZoneDoNotRunAntimalwareAgainstActiveXControls-OmaUri-Begin -->
@@ -5956,13 +5883,12 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneDoNotRunAntimalwareAgainstActiveXControls-DFProperties-End -->
 
 <!-- InternetZoneDoNotRunAntimalwareAgainstActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5988,7 +5914,7 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- InternetZoneDownloadSignedActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneDownloadSignedActiveXControls-Applicability-End -->
 
 <!-- InternetZoneDownloadSignedActiveXControls-OmaUri-Begin -->
@@ -6007,9 +5933,9 @@ This policy setting allows you to manage whether users may download signed Activ
 
 - If you enable this policy, users can download signed controls without user intervention. If you select Prompt in the drop-down box, users are queried whether to download controls signed by publishers who aren't trusted. Code signed by trusted publishers is silently downloaded.
 
-- If you disable the policy setting, signed controls cannot be downloaded.
+- If you disable the policy setting, signed controls can't be downloaded.
 
-- If you do not configure this policy setting, users are queried whether to download controls signed by publishers who aren't trusted. Code signed by trusted publishers is silently downloaded.
+- If you don't configure this policy setting, users are queried whether to download controls signed by publishers who aren't trusted. Code signed by trusted publishers is silently downloaded.
 <!-- InternetZoneDownloadSignedActiveXControls-Description-End -->
 
 <!-- InternetZoneDownloadSignedActiveXControls-Editable-Begin -->
@@ -6021,13 +5947,12 @@ This policy setting allows you to manage whether users may download signed Activ
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneDownloadSignedActiveXControls-DFProperties-End -->
 
 <!-- InternetZoneDownloadSignedActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6053,7 +5978,7 @@ This policy setting allows you to manage whether users may download signed Activ
 <!-- InternetZoneDownloadUnsignedActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneDownloadUnsignedActiveXControls-Applicability-End -->
 
 <!-- InternetZoneDownloadUnsignedActiveXControls-OmaUri-Begin -->
@@ -6072,9 +5997,9 @@ This policy setting allows you to manage whether users may download unsigned Act
 
 - If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run.
 
-- If you disable this policy setting, users cannot run unsigned controls.
+- If you disable this policy setting, users can't run unsigned controls.
 
-- If you do not configure this policy setting, users cannot run unsigned controls.
+- If you don't configure this policy setting, users can't run unsigned controls.
 <!-- InternetZoneDownloadUnsignedActiveXControls-Description-End -->
 
 <!-- InternetZoneDownloadUnsignedActiveXControls-Editable-Begin -->
@@ -6086,13 +6011,12 @@ This policy setting allows you to manage whether users may download unsigned Act
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneDownloadUnsignedActiveXControls-DFProperties-End -->
 
 <!-- InternetZoneDownloadUnsignedActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6118,7 +6042,7 @@ This policy setting allows you to manage whether users may download unsigned Act
 <!-- InternetZoneEnableCrossSiteScriptingFilter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneEnableCrossSiteScriptingFilter-Applicability-End -->
 
 <!-- InternetZoneEnableCrossSiteScriptingFilter-OmaUri-Begin -->
@@ -6149,13 +6073,12 @@ This policy controls whether or not the Cross-Site Scripting (XSS) Filter will d
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneEnableCrossSiteScriptingFilter-DFProperties-End -->
 
 <!-- InternetZoneEnableCrossSiteScriptingFilter-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6181,7 +6104,7 @@ This policy controls whether or not the Cross-Site Scripting (XSS) Filter will d
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-Applicability-End -->
 
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-OmaUri-Begin -->
@@ -6198,13 +6121,13 @@ This policy controls whether or not the Cross-Site Scripting (XSS) Filter will d
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in different windows.
 
-- If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting.
 
-- If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when both the source and destination are in different windows. Users cannot change this setting.
+If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when both the source and destination are in different windows. Users can't change this setting.
 
-In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog.
+In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog.
 
-In Internet Explorer 9 and earlier versions, if you disable this policy or do not configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.
+In Internet Explorer 9 and earlier versions, if you disable this policy or don't configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting.
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-Description-End -->
 
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-Editable-Begin -->
@@ -6216,13 +6139,12 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-DFProperties-End -->
 
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6248,7 +6170,7 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-Applicability-End -->
 
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-OmaUri-Begin -->
@@ -6265,13 +6187,13 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in the same window.
 
-- If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting.
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting.
 
-- If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
+If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting in the Internet Options dialog.
 
-In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users can change this setting in the Internet Options dialog.
+In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in the same window. Users can change this setting in the Internet Options dialog.
 
-In Internet Explorer 9 and earlier versions, if you disable this policy setting or do not configure it, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
+In Internet Explorer 9 and earlier versions, if you disable this policy setting or don't configure it, users can drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting in the Internet Options dialog.
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-Description-End -->
 
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-Editable-Begin -->
@@ -6283,13 +6205,12 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-DFProperties-End -->
 
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6315,7 +6236,7 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 <!-- InternetZoneEnableMIMESniffing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneEnableMIMESniffing-Applicability-End -->
 
 <!-- InternetZoneEnableMIMESniffing-OmaUri-Begin -->
@@ -6332,11 +6253,11 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage MIME sniffing for file promotion from one type to another based on a MIME sniff. A MIME sniff is the recognition by Internet Explorer of the file type based on a bit signature.
 
-- If you enable this policy setting, the MIME Sniffing Safety Feature will not apply in this zone. The security zone will run without the added layer of security provided by this feature.
+- If you enable this policy setting, the MIME Sniffing Safety Feature won't apply in this zone. The security zone will run without the added layer of security provided by this feature.
 
-- If you disable this policy setting, the actions that may be harmful cannot run; this Internet Explorer security feature will be turned on in this zone, as dictated by the feature control setting for the process.
+- If you disable this policy setting, the actions that may be harmful can't run; this Internet Explorer security feature will be turned on in this zone, as dictated by the feature control setting for the process.
 
-- If you do not configure this policy setting, the MIME Sniffing Safety Feature will not apply in this zone.
+- If you don't configure this policy setting, the MIME Sniffing Safety Feature won't apply in this zone.
 <!-- InternetZoneEnableMIMESniffing-Description-End -->
 
 <!-- InternetZoneEnableMIMESniffing-Editable-Begin -->
@@ -6348,13 +6269,12 @@ This policy setting allows you to manage MIME sniffing for file promotion from o
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneEnableMIMESniffing-DFProperties-End -->
 
 <!-- InternetZoneEnableMIMESniffing-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6380,7 +6300,7 @@ This policy setting allows you to manage MIME sniffing for file promotion from o
 <!-- InternetZoneEnableProtectedMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneEnableProtectedMode-Applicability-End -->
 
 <!-- InternetZoneEnableProtectedMode-OmaUri-Begin -->
@@ -6397,11 +6317,11 @@ This policy setting allows you to manage MIME sniffing for file promotion from o
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn on Protected Mode. Protected Mode helps protect Internet Explorer from exploited vulnerabilities by reducing the locations that Internet Explorer can write to in the registry and the file system.
 
-- If you enable this policy setting, Protected Mode is turned on. The user cannot turn off Protected Mode.
+- If you enable this policy setting, Protected Mode is turned on. The user can't turn off Protected Mode.
 
-- If you disable this policy setting, Protected Mode is turned off. The user cannot turn on Protected Mode.
+- If you disable this policy setting, Protected Mode is turned off. The user can't turn on Protected Mode.
 
-- If you do not configure this policy setting, the user can turn on or turn off Protected Mode.
+- If you don't configure this policy setting, the user can turn on or turn off Protected Mode.
 <!-- InternetZoneEnableProtectedMode-Description-End -->
 
 <!-- InternetZoneEnableProtectedMode-Editable-Begin -->
@@ -6413,13 +6333,12 @@ This policy setting allows you to turn on Protected Mode. Protected Mode helps p
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneEnableProtectedMode-DFProperties-End -->
 
 <!-- InternetZoneEnableProtectedMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6445,7 +6364,7 @@ This policy setting allows you to turn on Protected Mode. Protected Mode helps p
 <!-- InternetZoneIncludeLocalPathWhenUploadingFilesToServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneIncludeLocalPathWhenUploadingFilesToServer-Applicability-End -->
 
 <!-- InternetZoneIncludeLocalPathWhenUploadingFilesToServer-OmaUri-Begin -->
@@ -6466,7 +6385,7 @@ This policy setting controls whether or not local path information is sent when 
 
 - If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form.
 
-- If you do not configure this policy setting, the user can choose whether path information is sent when he or she is uploading a file via an HTML form. By default, path information is sent.
+- If you don't configure this policy setting, the user can choose whether path information is sent when he or she is uploading a file via an HTML form. By default, path information is sent.
 <!-- InternetZoneIncludeLocalPathWhenUploadingFilesToServer-Description-End -->
 
 <!-- InternetZoneIncludeLocalPathWhenUploadingFilesToServer-Editable-Begin -->
@@ -6478,13 +6397,12 @@ This policy setting controls whether or not local path information is sent when 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneIncludeLocalPathWhenUploadingFilesToServer-DFProperties-End -->
 
 <!-- InternetZoneIncludeLocalPathWhenUploadingFilesToServer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6510,7 +6428,7 @@ This policy setting controls whether or not local path information is sent when 
 <!-- InternetZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- InternetZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -6527,13 +6445,13 @@ This policy setting controls whether or not local path information is sent when 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 <!-- InternetZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- InternetZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -6545,13 +6463,12 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- InternetZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6577,7 +6494,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- InternetZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneJavaPermissions-Applicability-End -->
 
 <!-- InternetZoneJavaPermissions-OmaUri-Begin -->
@@ -6598,13 +6515,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, the permission is set to High Safety.
+- If you don't configure this policy setting, the permission is set to High Safety.
 <!-- InternetZoneJavaPermissions-Description-End -->
 
 <!-- InternetZoneJavaPermissions-Editable-Begin -->
@@ -6616,13 +6533,12 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneJavaPermissions-DFProperties-End -->
 
 <!-- InternetZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6648,7 +6564,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- InternetZoneLaunchingApplicationsAndFilesInIFRAME-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneLaunchingApplicationsAndFilesInIFRAME-Applicability-End -->
 
 <!-- InternetZoneLaunchingApplicationsAndFilesInIFRAME-OmaUri-Begin -->
@@ -6669,7 +6585,7 @@ This policy setting allows you to manage whether applications may be run and fil
 
 - If you disable this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone.
 
-- If you do not configure this policy setting, users are queried to choose whether to run applications and download files from IFRAMEs on the pages in this zone.
+- If you don't configure this policy setting, users are queried to choose whether to run applications and download files from IFRAMEs on the pages in this zone.
 <!-- InternetZoneLaunchingApplicationsAndFilesInIFRAME-Description-End -->
 
 <!-- InternetZoneLaunchingApplicationsAndFilesInIFRAME-Editable-Begin -->
@@ -6681,13 +6597,12 @@ This policy setting allows you to manage whether applications may be run and fil
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneLaunchingApplicationsAndFilesInIFRAME-DFProperties-End -->
 
 <!-- InternetZoneLaunchingApplicationsAndFilesInIFRAME-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6713,7 +6628,7 @@ This policy setting allows you to manage whether applications may be run and fil
 <!-- InternetZoneLogonOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneLogonOptions-Applicability-End -->
 
 <!-- InternetZoneLogonOptions-OmaUri-Begin -->
@@ -6738,11 +6653,11 @@ Prompt for user name and password to query users for user IDs and passwords. Aft
 
 Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
 
-Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response is not supported by the server, the user is queried to provide the user name and password.
+Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response isn't supported by the server, the user is queried to provide the user name and password.
 
 - If you disable this policy setting, logon is set to Automatic logon only in Intranet zone.
 
-- If you do not configure this policy setting, logon is set to Automatic logon only in Intranet zone.
+- If you don't configure this policy setting, logon is set to Automatic logon only in Intranet zone.
 <!-- InternetZoneLogonOptions-Description-End -->
 
 <!-- InternetZoneLogonOptions-Editable-Begin -->
@@ -6754,13 +6669,12 @@ Automatic logon with current user name and password to attempt logon using Windo
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneLogonOptions-DFProperties-End -->
 
 <!-- InternetZoneLogonOptions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6786,7 +6700,7 @@ Automatic logon with current user name and password to attempt logon using Windo
 <!-- InternetZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- InternetZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -6803,11 +6717,11 @@ Automatic logon with current user name and password to attempt logon using Windo
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
 
-- If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+- If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+- If you disable this policy setting, users can't open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+- If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- InternetZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- InternetZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -6819,13 +6733,12 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- InternetZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6851,7 +6764,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Applicability-End -->
 
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-OmaUri-Begin -->
@@ -6870,9 +6783,9 @@ This policy setting allows you to manage whether . NET Framework components that
 
 - If you enable this policy setting, Internet Explorer will execute signed managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute signed managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute signed managed components.
+- If you disable this policy setting, Internet Explorer won't execute signed managed components.
 
-- If you do not configure this policy setting, Internet Explorer will execute signed managed components.
+- If you don't configure this policy setting, Internet Explorer will execute signed managed components.
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Description-End -->
 
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Editable-Begin -->
@@ -6884,13 +6797,12 @@ This policy setting allows you to manage whether . NET Framework components that
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-DFProperties-End -->
 
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6916,7 +6828,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles-Applicability-End -->
 
 <!-- InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles-OmaUri-Begin -->
@@ -6935,9 +6847,9 @@ This policy setting controls whether or not the "Open File - Security Warning" m
 
 - If you enable this policy setting and set the drop-down box to Enable, these files open without a security warning. If you set the drop-down box to Prompt, a security warning appears before the files open.
 
-- If you disable this policy setting, these files do not open.
+- If you disable this policy setting, these files don't open.
 
-- If you do not configure this policy setting, the user can configure how the computer handles these files. By default, these files are blocked in the Restricted zone, enabled in the Intranet and Local Computer zones, and set to prompt in the Internet and Trusted zones.
+- If you don't configure this policy setting, the user can configure how the computer handles these files. By default, these files are blocked in the Restricted zone, enabled in the Intranet and Local Computer zones, and set to prompt in the Internet and Trusted zones.
 <!-- InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles-Description-End -->
 
 <!-- InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles-Editable-Begin -->
@@ -6949,13 +6861,12 @@ This policy setting controls whether or not the "Open File - Security Warning" m
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles-DFProperties-End -->
 
 <!-- InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6981,7 +6892,7 @@ This policy setting controls whether or not the "Open File - Security Warning" m
 <!-- InternetZoneUsePopupBlocker-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneUsePopupBlocker-Applicability-End -->
 
 <!-- InternetZoneUsePopupBlocker-OmaUri-Begin -->
@@ -6996,13 +6907,13 @@ This policy setting controls whether or not the "Open File - Security Warning" m
 
 <!-- InternetZoneUsePopupBlocker-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether unwanted pop-up windows appear. Pop-up windows that are opened when the end user clicks a link are not blocked.
+This policy setting allows you to manage whether unwanted pop-up windows appear. Pop-up windows that are opened when the end user clicks a link aren't blocked.
 
 - If you enable this policy setting, most unwanted pop-up windows are prevented from appearing.
 
-- If you disable this policy setting, pop-up windows are not prevented from appearing.
+- If you disable this policy setting, pop-up windows aren't prevented from appearing.
 
-- If you do not configure this policy setting, most unwanted pop-up windows are prevented from appearing.
+- If you don't configure this policy setting, most unwanted pop-up windows are prevented from appearing.
 <!-- InternetZoneUsePopupBlocker-Description-End -->
 
 <!-- InternetZoneUsePopupBlocker-Editable-Begin -->
@@ -7014,13 +6925,12 @@ This policy setting allows you to manage whether unwanted pop-up windows appear.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetZoneUsePopupBlocker-DFProperties-End -->
 
 <!-- InternetZoneUsePopupBlocker-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7046,7 +6956,7 @@ This policy setting allows you to manage whether unwanted pop-up windows appear.
 <!-- IntranetZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- IntranetZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -7065,9 +6975,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- IntranetZoneAllowAccessToDataSources-Description-End -->
 
 <!-- IntranetZoneAllowAccessToDataSources-Editable-Begin -->
@@ -7079,13 +6989,12 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IntranetZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- IntranetZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7111,7 +7020,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- IntranetZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- IntranetZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -7128,11 +7037,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you don't configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 <!-- IntranetZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- IntranetZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -7144,13 +7053,12 @@ This policy setting manages whether users will be automatically prompted for Act
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IntranetZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- IntranetZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7176,7 +7084,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- IntranetZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- IntranetZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -7195,7 +7103,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, users will receive a file download dialog for automatic download attempts.
+- If you disable or don't configure this setting, users will receive a file download dialog for automatic download attempts.
 <!-- IntranetZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- IntranetZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -7207,13 +7115,12 @@ This policy setting determines whether users will be prompted for non user-initi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IntranetZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- IntranetZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7239,7 +7146,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- IntranetZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowFontDownloads-Applicability-End -->
 
 <!-- IntranetZoneAllowFontDownloads-OmaUri-Begin -->
@@ -7262,7 +7169,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, HTML fonts can be downloaded automatically.
+- If you don't configure this policy setting, HTML fonts can be downloaded automatically.
 <!-- IntranetZoneAllowFontDownloads-Description-End -->
 
 <!-- IntranetZoneAllowFontDownloads-Editable-Begin -->
@@ -7274,13 +7181,12 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IntranetZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- IntranetZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7306,7 +7212,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- IntranetZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- IntranetZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -7323,11 +7229,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.
+- If you don't configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.
 <!-- IntranetZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- IntranetZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -7339,13 +7245,12 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IntranetZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- IntranetZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7371,7 +7276,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -7386,13 +7291,13 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer will execute unsigned managed components.
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -7404,13 +7309,12 @@ This policy setting allows you to manage whether . NET Framework components that
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7436,7 +7340,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- IntranetZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowScriptlets-Applicability-End -->
 
 <!-- IntranetZoneAllowScriptlets-OmaUri-Begin -->
@@ -7455,9 +7359,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- IntranetZoneAllowScriptlets-Description-End -->
 
 <!-- IntranetZoneAllowScriptlets-Editable-Begin -->
@@ -7469,13 +7373,12 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IntranetZoneAllowScriptlets-DFProperties-End -->
 
 <!-- IntranetZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7501,7 +7404,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- IntranetZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- IntranetZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -7520,9 +7423,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -7537,13 +7440,12 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IntranetZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- IntranetZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7569,7 +7471,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- IntranetZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- IntranetZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -7588,9 +7490,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- IntranetZoneAllowUserDataPersistence-Description-End -->
 
 <!-- IntranetZoneAllowUserDataPersistence-Editable-Begin -->
@@ -7602,13 +7504,12 @@ This policy setting allows you to manage the preservation of information in the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IntranetZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- IntranetZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7634,7 +7535,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- IntranetZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- IntranetZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-End -->
 
 <!-- IntranetZoneDoNotRunAntimalwareAgainstActiveXControls-OmaUri-Begin -->
@@ -7667,13 +7568,12 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IntranetZoneDoNotRunAntimalwareAgainstActiveXControls-DFProperties-End -->
 
 <!-- IntranetZoneDoNotRunAntimalwareAgainstActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7699,7 +7599,7 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- IntranetZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- IntranetZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -7716,13 +7616,13 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 <!-- IntranetZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- IntranetZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -7734,13 +7634,12 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IntranetZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- IntranetZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7766,7 +7665,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- IntranetZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- IntranetZoneJavaPermissions-Applicability-End -->
 
 <!-- IntranetZoneJavaPermissions-OmaUri-Begin -->
@@ -7787,13 +7686,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, the permission is set to Medium Safety.
+- If you don't configure this policy setting, the permission is set to Medium Safety.
 <!-- IntranetZoneJavaPermissions-Description-End -->
 
 <!-- IntranetZoneJavaPermissions-Editable-Begin -->
@@ -7805,13 +7704,12 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IntranetZoneJavaPermissions-DFProperties-End -->
 
 <!-- IntranetZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7831,13 +7729,85 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 <!-- IntranetZoneJavaPermissions-End -->
 
+<!-- IntranetZoneLogonOptions-Begin -->
+## IntranetZoneLogonOptions
+
+<!-- IntranetZoneLogonOptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- IntranetZoneLogonOptions-Applicability-End -->
+
+<!-- IntranetZoneLogonOptions-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/InternetExplorer/IntranetZoneLogonOptions
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/InternetExplorer/IntranetZoneLogonOptions
+```
+<!-- IntranetZoneLogonOptions-OmaUri-End -->
+
+<!-- IntranetZoneLogonOptions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage settings for logon options.
+
+- If you enable this policy setting, you can choose from the following logon options.
+
+Anonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.
+
+Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response isn't supported by the server, the user is queried to provide the user name and password.
+
+- If you disable this policy setting, logon is set to Automatic logon only in Intranet zone.
+
+- If you don't configure this policy setting, logon is set to Automatic logon only in Intranet zone.
+<!-- IntranetZoneLogonOptions-Description-End -->
+
+<!-- IntranetZoneLogonOptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IntranetZoneLogonOptions-Editable-End -->
+
+<!-- IntranetZoneLogonOptions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IntranetZoneLogonOptions-DFProperties-End -->
+
+<!-- IntranetZoneLogonOptions-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | IZ_PolicyLogon_3 |
+| Friendly Name | Logon options |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Intranet Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1 |
+| ADMX File Name | inetres.admx |
+<!-- IntranetZoneLogonOptions-AdmxBacked-End -->
+
+<!-- IntranetZoneLogonOptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IntranetZoneLogonOptions-Examples-End -->
+
+<!-- IntranetZoneLogonOptions-End -->
+
 <!-- IntranetZoneNavigateWindowsAndFrames-Begin -->
 ## IntranetZoneNavigateWindowsAndFrames
 
 <!-- IntranetZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- IntranetZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -7854,11 +7824,11 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
 
-- If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+- If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+- If you disable this policy setting, users can't open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+- If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- IntranetZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- IntranetZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -7870,13 +7840,12 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IntranetZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- IntranetZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7902,7 +7871,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- JScriptReplacement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- JScriptReplacement-Applicability-End -->
 
 <!-- JScriptReplacement-OmaUri-Begin -->
@@ -7935,13 +7904,12 @@ This policy setting specifies whether JScript or JScript9Legacy is loaded for MS
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- JScriptReplacement-DFProperties-End -->
 
 <!-- JScriptReplacement-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7968,7 +7936,7 @@ This policy setting specifies whether JScript or JScript9Legacy is loaded for MS
 <!-- KeepIntranetSitesInInternetExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1350] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.789] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
 <!-- KeepIntranetSitesInInternetExplorer-Applicability-End -->
 
 <!-- KeepIntranetSitesInInternetExplorer-OmaUri-Begin -->
@@ -7992,8 +7960,9 @@ Prevents intranet sites from being opened in any browser except Internet Explore
 We strongly recommend keeping this policy in sync with the 'Send all intranet sites to Internet Explorer' ('SendIntranetToInternetExplorer') policy. Additionally, it's best to enable this policy only if your intranet sites have known compatibility problems with Microsoft Edge.
 
 Related policies:
-  - Send all intranet sites to Internet Explorer ('SendIntranetToInternetExplorer')
-  - Send all sites not included in the Enterprise Mode Site List to Microsoft Edge ('RestrictIE')
+
+- Send all intranet sites to Internet Explorer ('SendIntranetToInternetExplorer')
+- Send all sites not included in the Enterprise Mode Site List to Microsoft Edge ('RestrictIE')
 
 For more info about how to use this policy together with other related policies to create the optimal configuration for your organization, see< https://go.microsoft.com/fwlink/?linkid=2094210>.
 <!-- KeepIntranetSitesInInternetExplorer-Description-End -->
@@ -8007,13 +7976,12 @@ For more info about how to use this policy together with other related policies 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- KeepIntranetSitesInInternetExplorer-DFProperties-End -->
 
 <!-- KeepIntranetSitesInInternetExplorer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8063,7 +8031,7 @@ For more info about how to use this policy together with other related policies 
 <!-- LocalMachineZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- LocalMachineZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -8082,9 +8050,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- LocalMachineZoneAllowAccessToDataSources-Description-End -->
 
 <!-- LocalMachineZoneAllowAccessToDataSources-Editable-Begin -->
@@ -8096,13 +8064,12 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocalMachineZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8128,7 +8095,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LocalMachineZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- LocalMachineZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -8145,11 +8112,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you don't configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 <!-- LocalMachineZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- LocalMachineZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -8161,13 +8128,12 @@ This policy setting manages whether users will be automatically prompted for Act
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocalMachineZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8193,7 +8159,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LocalMachineZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- LocalMachineZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -8212,7 +8178,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, users will receive a file download dialog for automatic download attempts.
+- If you disable or don't configure this setting, users will receive a file download dialog for automatic download attempts.
 <!-- LocalMachineZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- LocalMachineZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -8224,13 +8190,12 @@ This policy setting determines whether users will be prompted for non user-initi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocalMachineZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8256,7 +8221,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LocalMachineZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowFontDownloads-Applicability-End -->
 
 <!-- LocalMachineZoneAllowFontDownloads-OmaUri-Begin -->
@@ -8279,7 +8244,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, HTML fonts can be downloaded automatically.
+- If you don't configure this policy setting, HTML fonts can be downloaded automatically.
 <!-- LocalMachineZoneAllowFontDownloads-Description-End -->
 
 <!-- LocalMachineZoneAllowFontDownloads-Editable-Begin -->
@@ -8291,13 +8256,12 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocalMachineZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8323,7 +8287,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LocalMachineZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- LocalMachineZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -8340,11 +8304,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you don't configure this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 <!-- LocalMachineZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- LocalMachineZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -8356,13 +8320,12 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocalMachineZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8388,7 +8351,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -8403,13 +8366,13 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer won't execute unsigned managed components.
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -8421,13 +8384,12 @@ This policy setting allows you to manage whether . NET Framework components that
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8453,7 +8415,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LocalMachineZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowScriptlets-Applicability-End -->
 
 <!-- LocalMachineZoneAllowScriptlets-OmaUri-Begin -->
@@ -8472,9 +8434,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- LocalMachineZoneAllowScriptlets-Description-End -->
 
 <!-- LocalMachineZoneAllowScriptlets-Editable-Begin -->
@@ -8486,13 +8448,12 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocalMachineZoneAllowScriptlets-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8518,7 +8479,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LocalMachineZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- LocalMachineZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -8537,9 +8498,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -8554,13 +8515,12 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocalMachineZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8586,7 +8546,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LocalMachineZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- LocalMachineZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -8605,9 +8565,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- LocalMachineZoneAllowUserDataPersistence-Description-End -->
 
 <!-- LocalMachineZoneAllowUserDataPersistence-Editable-Begin -->
@@ -8619,13 +8579,12 @@ This policy setting allows you to manage the preservation of information in the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocalMachineZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8651,7 +8610,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-End -->
 
 <!-- LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls-OmaUri-Begin -->
@@ -8684,13 +8643,12 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls-DFProperties-End -->
 
 <!-- LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8716,7 +8674,7 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- LocalMachineZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- LocalMachineZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -8733,13 +8691,13 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, users are queried whether to allow the control to be loaded with parameters or scripted.
+- If you don't configure this policy setting, users are queried whether to allow the control to be loaded with parameters or scripted.
 <!-- LocalMachineZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- LocalMachineZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -8751,13 +8709,12 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocalMachineZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- LocalMachineZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8783,7 +8740,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LocalMachineZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LocalMachineZoneJavaPermissions-Applicability-End -->
 
 <!-- LocalMachineZoneJavaPermissions-OmaUri-Begin -->
@@ -8804,13 +8761,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, the permission is set to Medium Safety.
+- If you don't configure this policy setting, the permission is set to Medium Safety.
 <!-- LocalMachineZoneJavaPermissions-Description-End -->
 
 <!-- LocalMachineZoneJavaPermissions-Editable-Begin -->
@@ -8822,13 +8779,12 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocalMachineZoneJavaPermissions-DFProperties-End -->
 
 <!-- LocalMachineZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8848,13 +8804,85 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 <!-- LocalMachineZoneJavaPermissions-End -->
 
+<!-- LocalMachineZoneLogonOptions-Begin -->
+## LocalMachineZoneLogonOptions
+
+<!-- LocalMachineZoneLogonOptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- LocalMachineZoneLogonOptions-Applicability-End -->
+
+<!-- LocalMachineZoneLogonOptions-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/InternetExplorer/LocalMachineZoneLogonOptions
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/InternetExplorer/LocalMachineZoneLogonOptions
+```
+<!-- LocalMachineZoneLogonOptions-OmaUri-End -->
+
+<!-- LocalMachineZoneLogonOptions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage settings for logon options.
+
+- If you enable this policy setting, you can choose from the following logon options.
+
+Anonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.
+
+Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response isn't supported by the server, the user is queried to provide the user name and password.
+
+- If you disable this policy setting, logon is set to Automatic logon only in Intranet zone.
+
+- If you don't configure this policy setting, logon is set to Automatic logon with current username and password.
+<!-- LocalMachineZoneLogonOptions-Description-End -->
+
+<!-- LocalMachineZoneLogonOptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LocalMachineZoneLogonOptions-Editable-End -->
+
+<!-- LocalMachineZoneLogonOptions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LocalMachineZoneLogonOptions-DFProperties-End -->
+
+<!-- LocalMachineZoneLogonOptions-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | IZ_PolicyLogon_9 |
+| Friendly Name | Logon options |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Local Machine Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0 |
+| ADMX File Name | inetres.admx |
+<!-- LocalMachineZoneLogonOptions-AdmxBacked-End -->
+
+<!-- LocalMachineZoneLogonOptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LocalMachineZoneLogonOptions-Examples-End -->
+
+<!-- LocalMachineZoneLogonOptions-End -->
+
 <!-- LocalMachineZoneNavigateWindowsAndFrames-Begin -->
 ## LocalMachineZoneNavigateWindowsAndFrames
 
 <!-- LocalMachineZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- LocalMachineZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -8871,11 +8899,11 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
 
-- If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+- If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+- If you disable this policy setting, users can't open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+- If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- LocalMachineZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LocalMachineZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -8887,13 +8915,12 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocalMachineZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- LocalMachineZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8919,7 +8946,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- LockedDownInternetZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -8938,9 +8965,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- LockedDownInternetZoneAllowAccessToDataSources-Description-End -->
 
 <!-- LockedDownInternetZoneAllowAccessToDataSources-Editable-Begin -->
@@ -8952,13 +8979,12 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownInternetZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8984,7 +9010,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -9001,11 +9027,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
+- If you don't configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -9017,13 +9043,12 @@ This policy setting manages whether users will be automatically prompted for Act
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9049,7 +9074,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -9068,7 +9093,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
+- If you disable or don't configure this setting, file downloads that aren't user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -9080,13 +9105,12 @@ This policy setting determines whether users will be prompted for non user-initi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9112,7 +9136,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LockedDownInternetZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowFontDownloads-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowFontDownloads-OmaUri-Begin -->
@@ -9135,7 +9159,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, HTML fonts can be downloaded automatically.
+- If you don't configure this policy setting, HTML fonts can be downloaded automatically.
 <!-- LockedDownInternetZoneAllowFontDownloads-Description-End -->
 
 <!-- LockedDownInternetZoneAllowFontDownloads-Editable-Begin -->
@@ -9147,13 +9171,12 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownInternetZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9179,7 +9202,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LockedDownInternetZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -9196,11 +9219,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you don't configure this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 <!-- LockedDownInternetZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- LockedDownInternetZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -9212,13 +9235,12 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownInternetZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9244,7 +9266,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -9259,13 +9281,13 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer won't execute unsigned managed components.
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -9277,13 +9299,12 @@ This policy setting allows you to manage whether . NET Framework components that
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9309,7 +9330,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LockedDownInternetZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowScriptlets-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowScriptlets-OmaUri-Begin -->
@@ -9328,9 +9349,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- LockedDownInternetZoneAllowScriptlets-Description-End -->
 
 <!-- LockedDownInternetZoneAllowScriptlets-Editable-Begin -->
@@ -9342,13 +9363,12 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownInternetZoneAllowScriptlets-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9374,7 +9394,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LockedDownInternetZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -9393,9 +9413,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -9410,13 +9430,12 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownInternetZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9442,7 +9461,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LockedDownInternetZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -9461,9 +9480,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- LockedDownInternetZoneAllowUserDataPersistence-Description-End -->
 
 <!-- LockedDownInternetZoneAllowUserDataPersistence-Editable-Begin -->
@@ -9475,13 +9494,12 @@ This policy setting allows you to manage the preservation of information in the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownInternetZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9507,7 +9525,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LockedDownInternetZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- LockedDownInternetZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -9524,13 +9542,13 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 <!-- LockedDownInternetZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- LockedDownInternetZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -9542,13 +9560,12 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownInternetZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- LockedDownInternetZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9574,7 +9591,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LockedDownInternetZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LockedDownInternetZoneJavaPermissions-Applicability-End -->
 
 <!-- LockedDownInternetZoneJavaPermissions-OmaUri-Begin -->
@@ -9595,13 +9612,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, Java applets are disabled.
+- If you don't configure this policy setting, Java applets are disabled.
 <!-- LockedDownInternetZoneJavaPermissions-Description-End -->
 
 <!-- LockedDownInternetZoneJavaPermissions-Editable-Begin -->
@@ -9613,13 +9630,12 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownInternetZoneJavaPermissions-DFProperties-End -->
 
 <!-- LockedDownInternetZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9645,7 +9661,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -9662,11 +9678,11 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
 
-- If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+- If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+- If you disable this policy setting, users can't open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+- If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -9678,13 +9694,12 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9710,7 +9725,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- LockedDownIntranetJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- LockedDownIntranetJavaPermissions-Applicability-End -->
 
 <!-- LockedDownIntranetJavaPermissions-OmaUri-Begin -->
@@ -9731,13 +9746,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, Java applets are disabled.
+- If you don't configure this policy setting, Java applets are disabled.
 <!-- LockedDownIntranetJavaPermissions-Description-End -->
 
 <!-- LockedDownIntranetJavaPermissions-Editable-Begin -->
@@ -9749,13 +9764,12 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownIntranetJavaPermissions-DFProperties-End -->
 
 <!-- LockedDownIntranetJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9781,7 +9795,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LockedDownIntranetZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -9800,9 +9814,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- LockedDownIntranetZoneAllowAccessToDataSources-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowAccessToDataSources-Editable-Begin -->
@@ -9814,13 +9828,12 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownIntranetZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9846,7 +9859,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -9863,11 +9876,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
+- If you don't configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -9879,13 +9892,12 @@ This policy setting manages whether users will be automatically prompted for Act
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9911,7 +9923,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -9930,7 +9942,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
+- If you disable or don't configure this setting, file downloads that aren't user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -9942,13 +9954,12 @@ This policy setting determines whether users will be prompted for non user-initi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9974,7 +9985,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LockedDownIntranetZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowFontDownloads-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowFontDownloads-OmaUri-Begin -->
@@ -9997,7 +10008,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, HTML fonts can be downloaded automatically.
+- If you don't configure this policy setting, HTML fonts can be downloaded automatically.
 <!-- LockedDownIntranetZoneAllowFontDownloads-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowFontDownloads-Editable-Begin -->
@@ -10009,13 +10020,12 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownIntranetZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10041,7 +10051,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LockedDownIntranetZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -10058,11 +10068,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you don't configure this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 <!-- LockedDownIntranetZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -10074,13 +10084,12 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownIntranetZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10106,7 +10115,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -10121,13 +10130,13 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer won't execute unsigned managed components.
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -10139,13 +10148,12 @@ This policy setting allows you to manage whether . NET Framework components that
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10171,7 +10179,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LockedDownIntranetZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowScriptlets-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowScriptlets-OmaUri-Begin -->
@@ -10190,9 +10198,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- LockedDownIntranetZoneAllowScriptlets-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowScriptlets-Editable-Begin -->
@@ -10204,13 +10212,12 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownIntranetZoneAllowScriptlets-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10236,7 +10243,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LockedDownIntranetZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -10255,9 +10262,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -10272,13 +10279,12 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownIntranetZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10304,7 +10310,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LockedDownIntranetZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -10323,9 +10329,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- LockedDownIntranetZoneAllowUserDataPersistence-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowUserDataPersistence-Editable-Begin -->
@@ -10337,13 +10343,12 @@ This policy setting allows you to manage the preservation of information in the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownIntranetZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10369,7 +10374,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LockedDownIntranetZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- LockedDownIntranetZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -10386,13 +10391,13 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 <!-- LockedDownIntranetZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- LockedDownIntranetZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -10404,13 +10409,12 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownIntranetZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10436,7 +10440,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -10453,11 +10457,11 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
 
-- If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+- If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+- If you disable this policy setting, users can't open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+- If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -10469,13 +10473,12 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10501,7 +10504,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- LockedDownLocalMachineZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -10520,9 +10523,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- LockedDownLocalMachineZoneAllowAccessToDataSources-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAccessToDataSources-Editable-Begin -->
@@ -10534,13 +10537,12 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownLocalMachineZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10566,7 +10568,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -10583,11 +10585,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
+- If you don't configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -10599,13 +10601,12 @@ This policy setting manages whether users will be automatically prompted for Act
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10631,7 +10632,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -10650,7 +10651,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
+- If you disable or don't configure this setting, file downloads that aren't user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -10662,13 +10663,12 @@ This policy setting determines whether users will be prompted for non user-initi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10694,7 +10694,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LockedDownLocalMachineZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowFontDownloads-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowFontDownloads-OmaUri-Begin -->
@@ -10717,7 +10717,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, HTML fonts can be downloaded automatically.
+- If you don't configure this policy setting, HTML fonts can be downloaded automatically.
 <!-- LockedDownLocalMachineZoneAllowFontDownloads-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowFontDownloads-Editable-Begin -->
@@ -10729,13 +10729,12 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownLocalMachineZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10761,7 +10760,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LockedDownLocalMachineZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -10778,11 +10777,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you don't configure this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 <!-- LockedDownLocalMachineZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -10794,13 +10793,12 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownLocalMachineZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10826,7 +10824,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -10841,13 +10839,13 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer won't execute unsigned managed components.
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -10859,13 +10857,12 @@ This policy setting allows you to manage whether . NET Framework components that
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10891,7 +10888,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LockedDownLocalMachineZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowScriptlets-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowScriptlets-OmaUri-Begin -->
@@ -10910,9 +10907,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- LockedDownLocalMachineZoneAllowScriptlets-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowScriptlets-Editable-Begin -->
@@ -10924,13 +10921,12 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownLocalMachineZoneAllowScriptlets-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10956,7 +10952,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LockedDownLocalMachineZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -10975,9 +10971,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -10992,13 +10988,12 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownLocalMachineZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11024,7 +11019,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LockedDownLocalMachineZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -11043,9 +11038,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- LockedDownLocalMachineZoneAllowUserDataPersistence-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowUserDataPersistence-Editable-Begin -->
@@ -11057,13 +11052,12 @@ This policy setting allows you to manage the preservation of information in the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownLocalMachineZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11089,7 +11083,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LockedDownLocalMachineZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -11106,13 +11100,13 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 <!-- LockedDownLocalMachineZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- LockedDownLocalMachineZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -11124,13 +11118,12 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownLocalMachineZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11156,7 +11149,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LockedDownLocalMachineZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LockedDownLocalMachineZoneJavaPermissions-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneJavaPermissions-OmaUri-Begin -->
@@ -11177,13 +11170,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, Java applets are disabled.
+- If you don't configure this policy setting, Java applets are disabled.
 <!-- LockedDownLocalMachineZoneJavaPermissions-Description-End -->
 
 <!-- LockedDownLocalMachineZoneJavaPermissions-Editable-Begin -->
@@ -11195,13 +11188,12 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownLocalMachineZoneJavaPermissions-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11227,7 +11219,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -11244,11 +11236,11 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
 
-- If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+- If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+- If you disable this policy setting, users can't open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+- If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -11260,13 +11252,12 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11292,7 +11283,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- LockedDownRestrictedSitesZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -11311,9 +11302,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- LockedDownRestrictedSitesZoneAllowAccessToDataSources-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAccessToDataSources-Editable-Begin -->
@@ -11325,13 +11316,12 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownRestrictedSitesZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11357,7 +11347,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -11374,11 +11364,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
+- If you don't configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -11390,13 +11380,12 @@ This policy setting manages whether users will be automatically prompted for Act
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11422,7 +11411,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -11441,7 +11430,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
+- If you disable or don't configure this setting, file downloads that aren't user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -11453,13 +11442,12 @@ This policy setting determines whether users will be prompted for non user-initi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11485,7 +11473,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LockedDownRestrictedSitesZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowFontDownloads-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowFontDownloads-OmaUri-Begin -->
@@ -11508,7 +11496,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, users are queried whether to allow HTML fonts to download.
+- If you don't configure this policy setting, users are queried whether to allow HTML fonts to download.
 <!-- LockedDownRestrictedSitesZoneAllowFontDownloads-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowFontDownloads-Editable-Begin -->
@@ -11520,13 +11508,12 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownRestrictedSitesZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11552,7 +11539,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LockedDownRestrictedSitesZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -11569,11 +11556,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you don't configure this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 <!-- LockedDownRestrictedSitesZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -11585,13 +11572,12 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownRestrictedSitesZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11617,7 +11603,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -11632,13 +11618,13 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer won't execute unsigned managed components.
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -11650,13 +11636,12 @@ This policy setting allows you to manage whether . NET Framework components that
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11682,7 +11667,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LockedDownRestrictedSitesZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowScriptlets-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowScriptlets-OmaUri-Begin -->
@@ -11701,9 +11686,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- LockedDownRestrictedSitesZoneAllowScriptlets-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowScriptlets-Editable-Begin -->
@@ -11715,13 +11700,12 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownRestrictedSitesZoneAllowScriptlets-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11747,7 +11731,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LockedDownRestrictedSitesZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -11766,9 +11750,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -11783,13 +11767,12 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownRestrictedSitesZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11815,7 +11798,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LockedDownRestrictedSitesZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -11834,9 +11817,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- LockedDownRestrictedSitesZoneAllowUserDataPersistence-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowUserDataPersistence-Editable-Begin -->
@@ -11848,13 +11831,12 @@ This policy setting allows you to manage the preservation of information in the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownRestrictedSitesZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11880,7 +11862,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -11897,13 +11879,13 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 <!-- LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -11915,13 +11897,12 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11947,7 +11928,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LockedDownRestrictedSitesZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LockedDownRestrictedSitesZoneJavaPermissions-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneJavaPermissions-OmaUri-Begin -->
@@ -11968,13 +11949,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, Java applets are disabled.
+- If you don't configure this policy setting, Java applets are disabled.
 <!-- LockedDownRestrictedSitesZoneJavaPermissions-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneJavaPermissions-Editable-Begin -->
@@ -11986,13 +11967,12 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownRestrictedSitesZoneJavaPermissions-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12018,7 +11998,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LockedDownRestrictedSitesZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -12037,9 +12017,9 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 - If you enable this policy setting, users can open additional windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow additional windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open other windows and frames from other domains or access applications from different domains.
+- If you disable this policy setting, users can't open other windows and frames from other domains or access applications from different domains.
 
-- If you do not configure this policy setting, users cannot open other windows and frames from different domains or access applications from different domains.
+- If you don't configure this policy setting, users can't open other windows and frames from different domains or access applications from different domains.
 <!-- LockedDownRestrictedSitesZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -12051,13 +12031,12 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownRestrictedSitesZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12083,7 +12062,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- LockedDownTrustedSitesZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -12102,9 +12081,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- LockedDownTrustedSitesZoneAllowAccessToDataSources-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAccessToDataSources-Editable-Begin -->
@@ -12116,13 +12095,12 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownTrustedSitesZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12148,7 +12126,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -12165,11 +12143,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
+- If you don't configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -12181,13 +12159,12 @@ This policy setting manages whether users will be automatically prompted for Act
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12213,7 +12190,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -12232,7 +12209,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
+- If you disable or don't configure this setting, file downloads that aren't user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -12244,13 +12221,12 @@ This policy setting determines whether users will be prompted for non user-initi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12276,7 +12252,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LockedDownTrustedSitesZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowFontDownloads-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowFontDownloads-OmaUri-Begin -->
@@ -12299,7 +12275,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, HTML fonts can be downloaded automatically.
+- If you don't configure this policy setting, HTML fonts can be downloaded automatically.
 <!-- LockedDownTrustedSitesZoneAllowFontDownloads-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowFontDownloads-Editable-Begin -->
@@ -12311,13 +12287,12 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownTrustedSitesZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12343,7 +12318,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LockedDownTrustedSitesZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -12360,11 +12335,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you don't configure this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 <!-- LockedDownTrustedSitesZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -12376,13 +12351,12 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownTrustedSitesZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12408,7 +12382,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -12423,13 +12397,13 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer won't execute unsigned managed components.
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -12441,13 +12415,12 @@ This policy setting allows you to manage whether . NET Framework components that
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12473,7 +12446,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LockedDownTrustedSitesZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowScriptlets-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowScriptlets-OmaUri-Begin -->
@@ -12492,9 +12465,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- LockedDownTrustedSitesZoneAllowScriptlets-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowScriptlets-Editable-Begin -->
@@ -12506,13 +12479,12 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownTrustedSitesZoneAllowScriptlets-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12538,7 +12510,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LockedDownTrustedSitesZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -12557,9 +12529,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -12574,13 +12546,12 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownTrustedSitesZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12606,7 +12577,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LockedDownTrustedSitesZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -12625,9 +12596,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- LockedDownTrustedSitesZoneAllowUserDataPersistence-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowUserDataPersistence-Editable-Begin -->
@@ -12639,13 +12610,12 @@ This policy setting allows you to manage the preservation of information in the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownTrustedSitesZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12671,7 +12641,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -12688,13 +12658,13 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 <!-- LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -12706,13 +12676,12 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12738,7 +12707,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LockedDownTrustedSitesZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LockedDownTrustedSitesZoneJavaPermissions-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneJavaPermissions-OmaUri-Begin -->
@@ -12759,13 +12728,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, Java applets are disabled.
+- If you don't configure this policy setting, Java applets are disabled.
 <!-- LockedDownTrustedSitesZoneJavaPermissions-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneJavaPermissions-Editable-Begin -->
@@ -12777,13 +12746,12 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownTrustedSitesZoneJavaPermissions-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12809,7 +12777,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -12826,11 +12794,11 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
 
-- If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+- If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+- If you disable this policy setting, users can't open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+- If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -12842,13 +12810,12 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12874,7 +12841,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- MimeSniffingSafetyFeatureInternetExplorerProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- MimeSniffingSafetyFeatureInternetExplorerProcesses-Applicability-End -->
 
 <!-- MimeSniffingSafetyFeatureInternetExplorerProcesses-OmaUri-Begin -->
@@ -12895,7 +12862,7 @@ This policy setting determines whether Internet Explorer MIME sniffing will prev
 
 - If you disable this policy setting, Internet Explorer processes will allow a MIME sniff promoting a file of one type to a more dangerous file type.
 
-- If you do not configure this policy setting, MIME sniffing will never promote a file of one type to a more dangerous file type.
+- If you don't configure this policy setting, MIME sniffing will never promote a file of one type to a more dangerous file type.
 <!-- MimeSniffingSafetyFeatureInternetExplorerProcesses-Description-End -->
 
 <!-- MimeSniffingSafetyFeatureInternetExplorerProcesses-Editable-Begin -->
@@ -12907,13 +12874,12 @@ This policy setting determines whether Internet Explorer MIME sniffing will prev
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MimeSniffingSafetyFeatureInternetExplorerProcesses-DFProperties-End -->
 
 <!-- MimeSniffingSafetyFeatureInternetExplorerProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12939,7 +12905,7 @@ This policy setting determines whether Internet Explorer MIME sniffing will prev
 <!-- MKProtocolSecurityRestrictionInternetExplorerProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- MKProtocolSecurityRestrictionInternetExplorerProcesses-Applicability-End -->
 
 <!-- MKProtocolSecurityRestrictionInternetExplorerProcesses-OmaUri-Begin -->
@@ -12960,7 +12926,7 @@ The MK Protocol Security Restriction policy setting reduces attack surface area 
 
 - If you disable this policy setting, applications can use the MK protocol API. Resources hosted on the MK protocol will work for the File Explorer and Internet Explorer processes.
 
-- If you do not configure this policy setting, the MK Protocol is prevented for File Explorer and Internet Explorer, and resources hosted on the MK protocol will fail.
+- If you don't configure this policy setting, the MK Protocol is prevented for File Explorer and Internet Explorer, and resources hosted on the MK protocol will fail.
 <!-- MKProtocolSecurityRestrictionInternetExplorerProcesses-Description-End -->
 
 <!-- MKProtocolSecurityRestrictionInternetExplorerProcesses-Editable-Begin -->
@@ -12972,13 +12938,12 @@ The MK Protocol Security Restriction policy setting reduces attack surface area 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MKProtocolSecurityRestrictionInternetExplorerProcesses-DFProperties-End -->
 
 <!-- MKProtocolSecurityRestrictionInternetExplorerProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13004,7 +12969,7 @@ The MK Protocol Security Restriction policy setting reduces attack surface area 
 <!-- NewTabDefaultPage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- NewTabDefaultPage-Applicability-End -->
 
 <!-- NewTabDefaultPage-OmaUri-Begin -->
@@ -13019,11 +12984,11 @@ The MK Protocol Security Restriction policy setting reduces attack surface area 
 
 <!-- NewTabDefaultPage-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to specify what is displayed when the user opens a new tab.
+This policy setting allows you to specify what's displayed when the user opens a new tab.
 
 - If you enable this policy setting, you can choose which page to display when the user opens a new tab: blank page (about:blank), the first home page, the new tab page or the new tab page with my news feed.
 
-- If you disable or do not configure this policy setting, the user can select his or her preference for this behavior.
+- If you disable or don't configure this policy setting, the user can select his or her preference for this behavior.
 <!-- NewTabDefaultPage-Description-End -->
 
 <!-- NewTabDefaultPage-Editable-Begin -->
@@ -13035,13 +13000,12 @@ This policy setting allows you to specify what is displayed when the user opens 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NewTabDefaultPage-DFProperties-End -->
 
 <!-- NewTabDefaultPage-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13067,7 +13031,7 @@ This policy setting allows you to specify what is displayed when the user opens 
 <!-- NotificationBarInternetExplorerProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- NotificationBarInternetExplorerProcesses-Applicability-End -->
 
 <!-- NotificationBarInternetExplorerProcesses-OmaUri-Begin -->
@@ -13086,9 +13050,9 @@ This policy setting allows you to manage whether the Notification bar is display
 
 - If you enable this policy setting, the Notification bar will be displayed for Internet Explorer Processes.
 
-- If you disable this policy setting, the Notification bar will not be displayed for Internet Explorer processes.
+- If you disable this policy setting, the Notification bar won't be displayed for Internet Explorer processes.
 
-- If you do not configure this policy setting, the Notification bar will be displayed for Internet Explorer Processes.
+- If you don't configure this policy setting, the Notification bar will be displayed for Internet Explorer Processes.
 <!-- NotificationBarInternetExplorerProcesses-Description-End -->
 
 <!-- NotificationBarInternetExplorerProcesses-Editable-Begin -->
@@ -13100,13 +13064,12 @@ This policy setting allows you to manage whether the Notification bar is display
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NotificationBarInternetExplorerProcesses-DFProperties-End -->
 
 <!-- NotificationBarInternetExplorerProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13132,7 +13095,7 @@ This policy setting allows you to manage whether the Notification bar is display
 <!-- PreventManagingSmartScreenFilter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- PreventManagingSmartScreenFilter-Applicability-End -->
 
 <!-- PreventManagingSmartScreenFilter-OmaUri-Begin -->
@@ -13149,9 +13112,9 @@ This policy setting allows you to manage whether the Notification bar is display
 <!-- Description-Source-ADMX -->
 This policy setting prevents the user from managing SmartScreen Filter, which warns the user if the website being visited is known for fraudulent attempts to gather personal information through "phishing," or is known to host malware.
 
-- If you enable this policy setting, the user is not prompted to turn on SmartScreen Filter. All website addresses that are not on the filter's allow list are sent automatically to Microsoft without prompting the user.
+- If you enable this policy setting, the user isn't prompted to turn on SmartScreen Filter. All website addresses that aren't on the filter's allow list are sent automatically to Microsoft without prompting the user.
 
-- If you disable or do not configure this policy setting, the user is prompted to decide whether to turn on SmartScreen Filter during the first-run experience.
+- If you disable or don't configure this policy setting, the user is prompted to decide whether to turn on SmartScreen Filter during the first-run experience.
 <!-- PreventManagingSmartScreenFilter-Description-End -->
 
 <!-- PreventManagingSmartScreenFilter-Editable-Begin -->
@@ -13163,13 +13126,12 @@ This policy setting prevents the user from managing SmartScreen Filter, which wa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventManagingSmartScreenFilter-DFProperties-End -->
 
 <!-- PreventManagingSmartScreenFilter-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13195,7 +13157,7 @@ This policy setting prevents the user from managing SmartScreen Filter, which wa
 <!-- PreventPerUserInstallationOfActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- PreventPerUserInstallationOfActiveXControls-Applicability-End -->
 
 <!-- PreventPerUserInstallationOfActiveXControls-OmaUri-Begin -->
@@ -13212,9 +13174,9 @@ This policy setting prevents the user from managing SmartScreen Filter, which wa
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent the installation of ActiveX controls on a per-user basis.
 
-- If you enable this policy setting, ActiveX controls cannot be installed on a per-user basis.
+- If you enable this policy setting, ActiveX controls can't be installed on a per-user basis.
 
-- If you disable or do not configure this policy setting, ActiveX controls can be installed on a per-user basis.
+- If you disable or don't configure this policy setting, ActiveX controls can be installed on a per-user basis.
 <!-- PreventPerUserInstallationOfActiveXControls-Description-End -->
 
 <!-- PreventPerUserInstallationOfActiveXControls-Editable-Begin -->
@@ -13226,13 +13188,12 @@ This policy setting allows you to prevent the installation of ActiveX controls o
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventPerUserInstallationOfActiveXControls-DFProperties-End -->
 
 <!-- PreventPerUserInstallationOfActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13259,7 +13220,7 @@ This policy setting allows you to prevent the installation of ActiveX controls o
 <!-- ProtectionFromZoneElevationInternetExplorerProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ProtectionFromZoneElevationInternetExplorerProcesses-Applicability-End -->
 
 <!-- ProtectionFromZoneElevationInternetExplorerProcesses-OmaUri-Begin -->
@@ -13280,7 +13241,7 @@ Internet Explorer places restrictions on each Web page it opens. The restriction
 
 - If you disable this policy setting, no zone receives such protection for Internet Explorer processes.
 
-- If you do not configure this policy setting, any zone can be protected from zone elevation by Internet Explorer processes.
+- If you don't configure this policy setting, any zone can be protected from zone elevation by Internet Explorer processes.
 <!-- ProtectionFromZoneElevationInternetExplorerProcesses-Description-End -->
 
 <!-- ProtectionFromZoneElevationInternetExplorerProcesses-Editable-Begin -->
@@ -13292,13 +13253,12 @@ Internet Explorer places restrictions on each Web page it opens. The restriction
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ProtectionFromZoneElevationInternetExplorerProcesses-DFProperties-End -->
 
 <!-- ProtectionFromZoneElevationInternetExplorerProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13324,7 +13284,7 @@ Internet Explorer places restrictions on each Web page it opens. The restriction
 <!-- RemoveRunThisTimeButtonForOutdatedActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RemoveRunThisTimeButtonForOutdatedActiveXControls-Applicability-End -->
 
 <!-- RemoveRunThisTimeButtonForOutdatedActiveXControls-OmaUri-Begin -->
@@ -13357,13 +13317,12 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RemoveRunThisTimeButtonForOutdatedActiveXControls-DFProperties-End -->
 
 <!-- RemoveRunThisTimeButtonForOutdatedActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13390,7 +13349,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- ResetZoomForDialogInIEMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.261] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1832] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1266] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.282] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.261] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1832] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1266] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.282] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ResetZoomForDialogInIEMode-Applicability-End -->
 
 <!-- ResetZoomForDialogInIEMode-OmaUri-Begin -->
@@ -13407,7 +13366,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- Description-Source-ADMX -->
 This policy setting lets admins reset zoom to default for HTML dialogs in Internet Explorer mode.
 
-If you enable this policy, the zoom of an HTML dialog in Internet Explorer mode will not get propagated from its parent page.
+If you enable this policy, the zoom of an HTML dialog in Internet Explorer mode won't get propagated from its parent page.
 
 If you disable, or don't configure this policy, the zoom of an HTML dialog in Internet Explorer mode will be set based on the zoom of it's parent page.
 
@@ -13423,13 +13382,12 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ResetZoomForDialogInIEMode-DFProperties-End -->
 
 <!-- ResetZoomForDialogInIEMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13456,7 +13414,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- RestrictActiveXInstallInternetExplorerProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictActiveXInstallInternetExplorerProcesses-Applicability-End -->
 
 <!-- RestrictActiveXInstallInternetExplorerProcesses-OmaUri-Begin -->
@@ -13475,9 +13433,9 @@ This policy setting enables blocking of ActiveX control installation prompts for
 
 - If you enable this policy setting, prompting for ActiveX control installations will be blocked for Internet Explorer processes.
 
-- If you disable this policy setting, prompting for ActiveX control installations will not be blocked for Internet Explorer processes.
+- If you disable this policy setting, prompting for ActiveX control installations won't be blocked for Internet Explorer processes.
 
-- If you do not configure this policy setting, the user's preference will be used to determine whether to block ActiveX control installations for Internet Explorer processes.
+- If you don't configure this policy setting, the user's preference will be used to determine whether to block ActiveX control installations for Internet Explorer processes.
 <!-- RestrictActiveXInstallInternetExplorerProcesses-Description-End -->
 
 <!-- RestrictActiveXInstallInternetExplorerProcesses-Editable-Begin -->
@@ -13489,13 +13447,12 @@ This policy setting enables blocking of ActiveX control installation prompts for
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictActiveXInstallInternetExplorerProcesses-DFProperties-End -->
 
 <!-- RestrictActiveXInstallInternetExplorerProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13521,7 +13478,7 @@ This policy setting enables blocking of ActiveX control installation prompts for
 <!-- RestrictedSitesZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -13540,9 +13497,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- RestrictedSitesZoneAllowAccessToDataSources-Description-End -->
 
 <!-- RestrictedSitesZoneAllowAccessToDataSources-Editable-Begin -->
@@ -13554,13 +13511,12 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13586,7 +13542,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- RestrictedSitesZoneAllowActiveScripting-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowActiveScripting-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowActiveScripting-OmaUri-Begin -->
@@ -13607,7 +13563,7 @@ This policy setting allows you to manage whether script code on pages in the zon
 
 - If you disable this policy setting, script code on pages in the zone is prevented from running.
 
-- If you do not configure this policy setting, script code on pages in the zone is prevented from running.
+- If you don't configure this policy setting, script code on pages in the zone is prevented from running.
 <!-- RestrictedSitesZoneAllowActiveScripting-Description-End -->
 
 <!-- RestrictedSitesZoneAllowActiveScripting-Editable-Begin -->
@@ -13619,13 +13575,12 @@ This policy setting allows you to manage whether script code on pages in the zon
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowActiveScripting-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowActiveScripting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13651,7 +13606,7 @@ This policy setting allows you to manage whether script code on pages in the zon
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -13668,11 +13623,11 @@ This policy setting allows you to manage whether script code on pages in the zon
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
+- If you don't configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -13684,13 +13639,12 @@ This policy setting manages whether users will be automatically prompted for Act
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13716,7 +13670,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -13735,7 +13689,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
+- If you disable or don't configure this setting, file downloads that aren't user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -13747,13 +13701,12 @@ This policy setting determines whether users will be prompted for non user-initi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13779,7 +13732,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- RestrictedSitesZoneAllowBinaryAndScriptBehaviors-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowBinaryAndScriptBehaviors-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowBinaryAndScriptBehaviors-OmaUri-Begin -->
@@ -13798,9 +13751,9 @@ This policy setting allows you to manage dynamic binary and script behaviors: co
 
 - If you enable this policy setting, binary and script behaviors are available. If you select Administrator approved in the drop-down box, only behaviors listed in the Admin-approved Behaviors under Binary Behaviors Security Restriction policy are available.
 
-- If you disable this policy setting, binary and script behaviors are not available unless applications have implemented a custom security manager.
+- If you disable this policy setting, binary and script behaviors aren't available unless applications have implemented a custom security manager.
 
-- If you do not configure this policy setting, binary and script behaviors are not available unless applications have implemented a custom security manager.
+- If you don't configure this policy setting, binary and script behaviors aren't available unless applications have implemented a custom security manager.
 <!-- RestrictedSitesZoneAllowBinaryAndScriptBehaviors-Description-End -->
 
 <!-- RestrictedSitesZoneAllowBinaryAndScriptBehaviors-Editable-Begin -->
@@ -13812,13 +13765,12 @@ This policy setting allows you to manage dynamic binary and script behaviors: co
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowBinaryAndScriptBehaviors-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowBinaryAndScriptBehaviors-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13844,7 +13796,7 @@ This policy setting allows you to manage dynamic binary and script behaviors: co
 <!-- RestrictedSitesZoneAllowCopyPasteViaScript-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowCopyPasteViaScript-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowCopyPasteViaScript-OmaUri-Begin -->
@@ -13865,9 +13817,9 @@ This policy setting allows you to manage whether scripts can perform a clipboard
 
 If you select Prompt in the drop-down box, users are queried as to whether to perform clipboard operations.
 
-- If you disable this policy setting, a script cannot perform a clipboard operation.
+- If you disable this policy setting, a script can't perform a clipboard operation.
 
-- If you do not configure this policy setting, a script cannot perform a clipboard operation.
+- If you don't configure this policy setting, a script can't perform a clipboard operation.
 <!-- RestrictedSitesZoneAllowCopyPasteViaScript-Description-End -->
 
 <!-- RestrictedSitesZoneAllowCopyPasteViaScript-Editable-Begin -->
@@ -13879,13 +13831,12 @@ If you select Prompt in the drop-down box, users are queried as to whether to pe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowCopyPasteViaScript-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowCopyPasteViaScript-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13911,7 +13862,7 @@ If you select Prompt in the drop-down box, users are queried as to whether to pe
 <!-- RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles-OmaUri-Begin -->
@@ -13932,7 +13883,7 @@ This policy setting allows you to manage whether users can drag files or copy an
 
 - If you disable this policy setting, users are prevented from dragging files or copying and pasting files from this zone.
 
-- If you do not configure this policy setting, users are queried to choose whether to drag or copy files from this zone.
+- If you don't configure this policy setting, users are queried to choose whether to drag or copy files from this zone.
 <!-- RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles-Description-End -->
 
 <!-- RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles-Editable-Begin -->
@@ -13944,13 +13895,12 @@ This policy setting allows you to manage whether users can drag files or copy an
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13976,7 +13926,7 @@ This policy setting allows you to manage whether users can drag files or copy an
 <!-- RestrictedSitesZoneAllowFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowFileDownloads-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowFileDownloads-OmaUri-Begin -->
@@ -13997,7 +13947,7 @@ This policy setting allows you to manage whether file downloads are permitted fr
 
 - If you disable this policy setting, files are prevented from being downloaded from the zone.
 
-- If you do not configure this policy setting, files are prevented from being downloaded from the zone.
+- If you don't configure this policy setting, files are prevented from being downloaded from the zone.
 <!-- RestrictedSitesZoneAllowFileDownloads-Description-End -->
 
 <!-- RestrictedSitesZoneAllowFileDownloads-Editable-Begin -->
@@ -14009,13 +13959,12 @@ This policy setting allows you to manage whether file downloads are permitted fr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowFileDownloads-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14041,7 +13990,7 @@ This policy setting allows you to manage whether file downloads are permitted fr
 <!-- RestrictedSitesZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowFontDownloads-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowFontDownloads-OmaUri-Begin -->
@@ -14064,7 +14013,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, users are queried whether to allow HTML fonts to download.
+- If you don't configure this policy setting, users are queried whether to allow HTML fonts to download.
 <!-- RestrictedSitesZoneAllowFontDownloads-Description-End -->
 
 <!-- RestrictedSitesZoneAllowFontDownloads-Editable-Begin -->
@@ -14076,13 +14025,12 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14108,7 +14056,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- RestrictedSitesZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -14125,11 +14073,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you don't configure this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 <!-- RestrictedSitesZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- RestrictedSitesZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -14141,13 +14089,12 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14173,7 +14120,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- RestrictedSitesZoneAllowLoadingOfXAMLFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowLoadingOfXAMLFiles-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowLoadingOfXAMLFiles-OmaUri-Begin -->
@@ -14190,11 +14137,11 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the loading of Extensible Application Markup Language (XAML) files. XAML is an XML-based declarative markup language commonly used for creating rich user interfaces and graphics that take advantage of the Windows Presentation Foundation.
 
-- If you enable this policy setting and set the drop-down box to Enable, XAML files are automatically loaded inside Internet Explorer. The user cannot change this behavior. If you set the drop-down box to Prompt, the user is prompted for loading XAML files.
+- If you enable this policy setting and set the drop-down box to Enable, XAML files are automatically loaded inside Internet Explorer. The user can't change this behavior. If you set the drop-down box to Prompt, the user is prompted for loading XAML files.
 
-- If you disable this policy setting, XAML files are not loaded inside Internet Explorer. The user cannot change this behavior.
+- If you disable this policy setting, XAML files aren't loaded inside Internet Explorer. The user can't change this behavior.
 
-- If you do not configure this policy setting, the user can decide whether to load XAML files inside Internet Explorer.
+- If you don't configure this policy setting, the user can decide whether to load XAML files inside Internet Explorer.
 <!-- RestrictedSitesZoneAllowLoadingOfXAMLFiles-Description-End -->
 
 <!-- RestrictedSitesZoneAllowLoadingOfXAMLFiles-Editable-Begin -->
@@ -14206,13 +14153,12 @@ This policy setting allows you to manage the loading of Extensible Application M
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowLoadingOfXAMLFiles-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowLoadingOfXAMLFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14238,7 +14184,7 @@ This policy setting allows you to manage the loading of Extensible Application M
 <!-- RestrictedSitesZoneAllowMETAREFRESH-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowMETAREFRESH-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowMETAREFRESH-OmaUri-Begin -->
@@ -14257,9 +14203,9 @@ This policy setting allows you to manage whether a user's browser can be redirec
 
 - If you enable this policy setting, a user's browser that loads a page containing an active Meta Refresh setting can be redirected to another Web page.
 
-- If you disable this policy setting, a user's browser that loads a page containing an active Meta Refresh setting cannot be redirected to another Web page.
+- If you disable this policy setting, a user's browser that loads a page containing an active Meta Refresh setting can't be redirected to another Web page.
 
-- If you do not configure this policy setting, a user's browser that loads a page containing an active Meta Refresh setting cannot be redirected to another Web page.
+- If you don't configure this policy setting, a user's browser that loads a page containing an active Meta Refresh setting can't be redirected to another Web page.
 <!-- RestrictedSitesZoneAllowMETAREFRESH-Description-End -->
 
 <!-- RestrictedSitesZoneAllowMETAREFRESH-Editable-Begin -->
@@ -14271,13 +14217,12 @@ This policy setting allows you to manage whether a user's browser can be redirec
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowMETAREFRESH-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowMETAREFRESH-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14303,7 +14248,7 @@ This policy setting allows you to manage whether a user's browser can be redirec
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -14318,13 +14263,13 @@ This policy setting allows you to manage whether a user's browser can be redirec
 
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer won't execute unsigned managed components.
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -14336,13 +14281,12 @@ This policy setting allows you to manage whether . NET Framework components that
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14368,7 +14312,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls-OmaUri-Begin -->
@@ -14387,7 +14331,7 @@ This policy setting controls whether or not the user is prompted to allow Active
 
 - If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control to run from the current site or from all sites.
 
-- If you disable this policy setting, the user does not see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.
+- If you disable this policy setting, the user doesn't see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls-Description-End -->
 
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls-Editable-Begin -->
@@ -14399,13 +14343,12 @@ This policy setting controls whether or not the user is prompted to allow Active
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14431,7 +14374,7 @@ This policy setting controls whether or not the user is prompted to allow Active
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-OmaUri-Begin -->
@@ -14448,7 +14391,7 @@ This policy setting controls whether or not the user is prompted to allow Active
 <!-- Description-Source-ADMX -->
 This policy setting controls whether or not the user is allowed to run the TDC ActiveX control on websites.
 
-- If you enable this policy setting, the TDC ActiveX control will not run from websites in this zone.
+- If you enable this policy setting, the TDC ActiveX control won't run from websites in this zone.
 
 - If you disable this policy setting, the TDC Active X control will run from all sites in this zone.
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-Description-End -->
@@ -14462,13 +14405,12 @@ This policy setting controls whether or not the user is allowed to run the TDC A
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14494,7 +14436,7 @@ This policy setting controls whether or not the user is allowed to run the TDC A
 <!-- RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls-OmaUri-Begin -->
@@ -14513,9 +14455,9 @@ This policy setting determines whether a page can control embedded WebBrowser co
 
 - If you enable this policy setting, script access to the WebBrowser control is allowed.
 
-- If you disable this policy setting, script access to the WebBrowser control is not allowed.
+- If you disable this policy setting, script access to the WebBrowser control isn't allowed.
 
-- If you do not configure this policy setting, the user can enable or disable script access to the WebBrowser control. By default, script access to the WebBrowser control is allowed only in the Local Machine and Intranet zones.
+- If you don't configure this policy setting, the user can enable or disable script access to the WebBrowser control. By default, script access to the WebBrowser control is allowed only in the Local Machine and Intranet zones.
 <!-- RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls-Description-End -->
 
 <!-- RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls-Editable-Begin -->
@@ -14527,13 +14469,12 @@ This policy setting determines whether a page can control embedded WebBrowser co
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14559,7 +14500,7 @@ This policy setting determines whether a page can control embedded WebBrowser co
 <!-- RestrictedSitesZoneAllowScriptInitiatedWindows-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowScriptInitiatedWindows-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowScriptInitiatedWindows-OmaUri-Begin -->
@@ -14576,11 +14517,11 @@ This policy setting determines whether a page can control embedded WebBrowser co
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage restrictions on script-initiated pop-up windows and windows that include the title and status bars.
 
-- If you enable this policy setting, Windows Restrictions security will not apply in this zone. The security zone runs without the added layer of security provided by this feature.
+- If you enable this policy setting, Windows Restrictions security won't apply in this zone. The security zone runs without the added layer of security provided by this feature.
 
-- If you disable this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars cannot be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
+- If you disable this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars can't be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
 
-- If you do not configure this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars cannot be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
+- If you don't configure this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars can't be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
 <!-- RestrictedSitesZoneAllowScriptInitiatedWindows-Description-End -->
 
 <!-- RestrictedSitesZoneAllowScriptInitiatedWindows-Editable-Begin -->
@@ -14592,13 +14533,12 @@ This policy setting allows you to manage restrictions on script-initiated pop-up
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowScriptInitiatedWindows-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowScriptInitiatedWindows-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14624,7 +14564,7 @@ This policy setting allows you to manage restrictions on script-initiated pop-up
 <!-- RestrictedSitesZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowScriptlets-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowScriptlets-OmaUri-Begin -->
@@ -14643,9 +14583,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- RestrictedSitesZoneAllowScriptlets-Description-End -->
 
 <!-- RestrictedSitesZoneAllowScriptlets-Editable-Begin -->
@@ -14657,13 +14597,12 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowScriptlets-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14689,7 +14628,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- RestrictedSitesZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -14708,9 +14647,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -14725,13 +14664,12 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14757,7 +14695,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- RestrictedSitesZoneAllowUpdatesToStatusBarViaScript-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowUpdatesToStatusBarViaScript-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowUpdatesToStatusBarViaScript-OmaUri-Begin -->
@@ -14776,7 +14714,7 @@ This policy setting allows you to manage whether script is allowed to update the
 
 - If you enable this policy setting, script is allowed to update the status bar.
 
-- If you disable or do not configure this policy setting, script is not allowed to update the status bar.
+- If you disable or don't configure this policy setting, script isn't allowed to update the status bar.
 <!-- RestrictedSitesZoneAllowUpdatesToStatusBarViaScript-Description-End -->
 
 <!-- RestrictedSitesZoneAllowUpdatesToStatusBarViaScript-Editable-Begin -->
@@ -14788,13 +14726,12 @@ This policy setting allows you to manage whether script is allowed to update the
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowUpdatesToStatusBarViaScript-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowUpdatesToStatusBarViaScript-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14820,7 +14757,7 @@ This policy setting allows you to manage whether script is allowed to update the
 <!-- RestrictedSitesZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -14839,9 +14776,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- RestrictedSitesZoneAllowUserDataPersistence-Description-End -->
 
 <!-- RestrictedSitesZoneAllowUserDataPersistence-Editable-Begin -->
@@ -14853,13 +14790,12 @@ This policy setting allows you to manage the preservation of information in the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14885,7 +14821,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer-OmaUri-Begin -->
@@ -14908,7 +14844,7 @@ If you selected Prompt in the drop-down box, users are asked to choose whether t
 
 If you selected Disable in the drop-down box, VBScript is prevented from running.
 
-If you do not configure or disable this policy setting, VBScript is prevented from running.
+If you don't configure or disable this policy setting, VBScript is prevented from running.
 <!-- RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer-Description-End -->
 
 <!-- RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer-Editable-Begin -->
@@ -14920,13 +14856,12 @@ If you do not configure or disable this policy setting, VBScript is prevented fr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14952,7 +14887,7 @@ If you do not configure or disable this policy setting, VBScript is prevented fr
 <!-- RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-End -->
 
 <!-- RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-OmaUri-Begin -->
@@ -14985,13 +14920,12 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-DFProperties-End -->
 
 <!-- RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15017,7 +14951,7 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- RestrictedSitesZoneDownloadSignedActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneDownloadSignedActiveXControls-Applicability-End -->
 
 <!-- RestrictedSitesZoneDownloadSignedActiveXControls-OmaUri-Begin -->
@@ -15036,9 +14970,9 @@ This policy setting allows you to manage whether users may download signed Activ
 
 - If you enable this policy, users can download signed controls without user intervention. If you select Prompt in the drop-down box, users are queried whether to download controls signed by publishers who aren't trusted. Code signed by trusted publishers is silently downloaded.
 
-- If you disable the policy setting, signed controls cannot be downloaded.
+- If you disable the policy setting, signed controls can't be downloaded.
 
-- If you do not configure this policy setting, signed controls cannot be downloaded.
+- If you don't configure this policy setting, signed controls can't be downloaded.
 <!-- RestrictedSitesZoneDownloadSignedActiveXControls-Description-End -->
 
 <!-- RestrictedSitesZoneDownloadSignedActiveXControls-Editable-Begin -->
@@ -15050,13 +14984,12 @@ This policy setting allows you to manage whether users may download signed Activ
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneDownloadSignedActiveXControls-DFProperties-End -->
 
 <!-- RestrictedSitesZoneDownloadSignedActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15082,7 +15015,7 @@ This policy setting allows you to manage whether users may download signed Activ
 <!-- RestrictedSitesZoneDownloadUnsignedActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneDownloadUnsignedActiveXControls-Applicability-End -->
 
 <!-- RestrictedSitesZoneDownloadUnsignedActiveXControls-OmaUri-Begin -->
@@ -15101,9 +15034,9 @@ This policy setting allows you to manage whether users may download unsigned Act
 
 - If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run.
 
-- If you disable this policy setting, users cannot run unsigned controls.
+- If you disable this policy setting, users can't run unsigned controls.
 
-- If you do not configure this policy setting, users cannot run unsigned controls.
+- If you don't configure this policy setting, users can't run unsigned controls.
 <!-- RestrictedSitesZoneDownloadUnsignedActiveXControls-Description-End -->
 
 <!-- RestrictedSitesZoneDownloadUnsignedActiveXControls-Editable-Begin -->
@@ -15115,13 +15048,12 @@ This policy setting allows you to manage whether users may download unsigned Act
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneDownloadUnsignedActiveXControls-DFProperties-End -->
 
 <!-- RestrictedSitesZoneDownloadUnsignedActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15147,7 +15079,7 @@ This policy setting allows you to manage whether users may download unsigned Act
 <!-- RestrictedSitesZoneEnableCrossSiteScriptingFilter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneEnableCrossSiteScriptingFilter-Applicability-End -->
 
 <!-- RestrictedSitesZoneEnableCrossSiteScriptingFilter-OmaUri-Begin -->
@@ -15178,13 +15110,12 @@ This policy controls whether or not the Cross-Site Scripting (XSS) Filter will d
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneEnableCrossSiteScriptingFilter-DFProperties-End -->
 
 <!-- RestrictedSitesZoneEnableCrossSiteScriptingFilter-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15210,7 +15141,7 @@ This policy controls whether or not the Cross-Site Scripting (XSS) Filter will d
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-Applicability-End -->
 
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-OmaUri-Begin -->
@@ -15227,13 +15158,13 @@ This policy controls whether or not the Cross-Site Scripting (XSS) Filter will d
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in different windows.
 
-- If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting.
 
-- If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when both the source and destination are in different windows. Users cannot change this setting.
+If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when both the source and destination are in different windows. Users can't change this setting.
 
-In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog.
+In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog.
 
-In Internet Explorer 9 and earlier versions, if you disable this policy or do not configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.
+In Internet Explorer 9 and earlier versions, if you disable this policy or don't configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting.
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-Description-End -->
 
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-Editable-Begin -->
@@ -15245,13 +15176,12 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-DFProperties-End -->
 
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15277,7 +15207,7 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-Applicability-End -->
 
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-OmaUri-Begin -->
@@ -15294,13 +15224,13 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in the same window.
 
-- If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting.
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting.
 
-- If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
+If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting in the Internet Options dialog.
 
-In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users can change this setting in the Internet Options dialog.
+In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in the same window. Users can change this setting in the Internet Options dialog.
 
-In Internet Explorer 9 and earlier versions, if you disable this policy setting or do not configure it, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
+In Internet Explorer 9 and earlier versions, if you disable this policy setting or don't configure it, users can drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting in the Internet Options dialog.
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-Description-End -->
 
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-Editable-Begin -->
@@ -15312,13 +15242,12 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-DFProperties-End -->
 
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15344,7 +15273,7 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 <!-- RestrictedSitesZoneEnableMIMESniffing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneEnableMIMESniffing-Applicability-End -->
 
 <!-- RestrictedSitesZoneEnableMIMESniffing-OmaUri-Begin -->
@@ -15361,11 +15290,11 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage MIME sniffing for file promotion from one type to another based on a MIME sniff. A MIME sniff is the recognition by Internet Explorer of the file type based on a bit signature.
 
-- If you enable this policy setting, the MIME Sniffing Safety Feature will not apply in this zone. The security zone will run without the added layer of security provided by this feature.
+- If you enable this policy setting, the MIME Sniffing Safety Feature won't apply in this zone. The security zone will run without the added layer of security provided by this feature.
 
-- If you disable this policy setting, the actions that may be harmful cannot run; this Internet Explorer security feature will be turned on in this zone, as dictated by the feature control setting for the process.
+- If you disable this policy setting, the actions that may be harmful can't run; this Internet Explorer security feature will be turned on in this zone, as dictated by the feature control setting for the process.
 
-- If you do not configure this policy setting, the actions that may be harmful cannot run; this Internet Explorer security feature will be turned on in this zone, as dictated by the feature control setting for the process.
+- If you don't configure this policy setting, the actions that may be harmful can't run; this Internet Explorer security feature will be turned on in this zone, as dictated by the feature control setting for the process.
 <!-- RestrictedSitesZoneEnableMIMESniffing-Description-End -->
 
 <!-- RestrictedSitesZoneEnableMIMESniffing-Editable-Begin -->
@@ -15377,13 +15306,12 @@ This policy setting allows you to manage MIME sniffing for file promotion from o
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneEnableMIMESniffing-DFProperties-End -->
 
 <!-- RestrictedSitesZoneEnableMIMESniffing-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15409,7 +15337,7 @@ This policy setting allows you to manage MIME sniffing for file promotion from o
 <!-- RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer-Applicability-End -->
 
 <!-- RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer-OmaUri-Begin -->
@@ -15430,7 +15358,7 @@ This policy setting controls whether or not local path information is sent when 
 
 - If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form.
 
-- If you do not configure this policy setting, the user can choose whether path information is sent when he or she is uploading a file via an HTML form. By default, path information is sent.
+- If you don't configure this policy setting, the user can choose whether path information is sent when he or she is uploading a file via an HTML form. By default, path information is sent.
 <!-- RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer-Description-End -->
 
 <!-- RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer-Editable-Begin -->
@@ -15442,13 +15370,12 @@ This policy setting controls whether or not local path information is sent when 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer-DFProperties-End -->
 
 <!-- RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15474,7 +15401,7 @@ This policy setting controls whether or not local path information is sent when 
 <!-- RestrictedSitesZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- RestrictedSitesZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -15491,13 +15418,13 @@ This policy setting controls whether or not local path information is sent when 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 <!-- RestrictedSitesZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- RestrictedSitesZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -15509,13 +15436,12 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- RestrictedSitesZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15541,7 +15467,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- RestrictedSitesZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneJavaPermissions-Applicability-End -->
 
 <!-- RestrictedSitesZoneJavaPermissions-OmaUri-Begin -->
@@ -15562,13 +15488,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, Java applets are disabled.
+- If you don't configure this policy setting, Java applets are disabled.
 <!-- RestrictedSitesZoneJavaPermissions-Description-End -->
 
 <!-- RestrictedSitesZoneJavaPermissions-Editable-Begin -->
@@ -15580,13 +15506,12 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneJavaPermissions-DFProperties-End -->
 
 <!-- RestrictedSitesZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15612,7 +15537,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME-Applicability-End -->
 
 <!-- RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME-OmaUri-Begin -->
@@ -15633,7 +15558,7 @@ This policy setting allows you to manage whether applications may be run and fil
 
 - If you disable this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone.
 
-- If you do not configure this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone.
+- If you don't configure this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone.
 <!-- RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME-Description-End -->
 
 <!-- RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME-Editable-Begin -->
@@ -15645,13 +15570,12 @@ This policy setting allows you to manage whether applications may be run and fil
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME-DFProperties-End -->
 
 <!-- RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15677,7 +15601,7 @@ This policy setting allows you to manage whether applications may be run and fil
 <!-- RestrictedSitesZoneLogonOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneLogonOptions-Applicability-End -->
 
 <!-- RestrictedSitesZoneLogonOptions-OmaUri-Begin -->
@@ -15702,11 +15626,11 @@ Prompt for user name and password to query users for user IDs and passwords. Aft
 
 Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
 
-Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response is not supported by the server, the user is queried to provide the user name and password.
+Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response isn't supported by the server, the user is queried to provide the user name and password.
 
 - If you disable this policy setting, logon is set to Automatic logon only in Intranet zone.
 
-- If you do not configure this policy setting, logon is set to Prompt for username and password.
+- If you don't configure this policy setting, logon is set to Prompt for username and password.
 <!-- RestrictedSitesZoneLogonOptions-Description-End -->
 
 <!-- RestrictedSitesZoneLogonOptions-Editable-Begin -->
@@ -15718,13 +15642,12 @@ Automatic logon with current user name and password to attempt logon using Windo
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneLogonOptions-DFProperties-End -->
 
 <!-- RestrictedSitesZoneLogonOptions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15750,7 +15673,7 @@ Automatic logon with current user name and password to attempt logon using Windo
 <!-- RestrictedSitesZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- RestrictedSitesZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -15769,9 +15692,9 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 - If you enable this policy setting, users can open additional windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow additional windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open other windows and frames from other domains or access applications from different domains.
+- If you disable this policy setting, users can't open other windows and frames from other domains or access applications from different domains.
 
-- If you do not configure this policy setting, users cannot open other windows and frames from different domains or access applications from different domains.
+- If you don't configure this policy setting, users can't open other windows and frames from different domains or access applications from different domains.
 <!-- RestrictedSitesZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- RestrictedSitesZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -15783,13 +15706,12 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- RestrictedSitesZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15815,7 +15737,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- RestrictedSitesZoneRunActiveXControlsAndPlugins-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneRunActiveXControlsAndPlugins-Applicability-End -->
 
 <!-- RestrictedSitesZoneRunActiveXControlsAndPlugins-OmaUri-Begin -->
@@ -15838,7 +15760,7 @@ If you selected Prompt in the drop-down box, users are asked to choose whether t
 
 - If you disable this policy setting, controls and plug-ins are prevented from running.
 
-- If you do not configure this policy setting, controls and plug-ins are prevented from running.
+- If you don't configure this policy setting, controls and plug-ins are prevented from running.
 <!-- RestrictedSitesZoneRunActiveXControlsAndPlugins-Description-End -->
 
 <!-- RestrictedSitesZoneRunActiveXControlsAndPlugins-Editable-Begin -->
@@ -15850,13 +15772,12 @@ If you selected Prompt in the drop-down box, users are asked to choose whether t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneRunActiveXControlsAndPlugins-DFProperties-End -->
 
 <!-- RestrictedSitesZoneRunActiveXControlsAndPlugins-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15882,7 +15803,7 @@ If you selected Prompt in the drop-down box, users are asked to choose whether t
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Applicability-End -->
 
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-OmaUri-Begin -->
@@ -15901,9 +15822,9 @@ This policy setting allows you to manage whether . NET Framework components that
 
 - If you enable this policy setting, Internet Explorer will execute signed managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute signed managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute signed managed components.
+- If you disable this policy setting, Internet Explorer won't execute signed managed components.
 
-- If you do not configure this policy setting, Internet Explorer will not execute signed managed components.
+- If you don't configure this policy setting, Internet Explorer won't execute signed managed components.
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Description-End -->
 
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Editable-Begin -->
@@ -15915,13 +15836,12 @@ This policy setting allows you to manage whether . NET Framework components that
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-DFProperties-End -->
 
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15947,7 +15867,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting-Applicability-End -->
 
 <!-- RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting-OmaUri-Begin -->
@@ -15970,7 +15890,7 @@ If you select Prompt in the drop-down box, users are queried to choose whether t
 
 - If you disable this policy setting, script interaction is prevented from occurring.
 
-- If you do not configure this policy setting, script interaction is prevented from occurring.
+- If you don't configure this policy setting, script interaction is prevented from occurring.
 <!-- RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting-Description-End -->
 
 <!-- RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting-Editable-Begin -->
@@ -15982,13 +15902,12 @@ If you select Prompt in the drop-down box, users are queried to choose whether t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting-DFProperties-End -->
 
 <!-- RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16014,7 +15933,7 @@ If you select Prompt in the drop-down box, users are queried to choose whether t
 <!-- RestrictedSitesZoneScriptingOfJavaApplets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneScriptingOfJavaApplets-Applicability-End -->
 
 <!-- RestrictedSitesZoneScriptingOfJavaApplets-OmaUri-Begin -->
@@ -16037,7 +15956,7 @@ If you select Prompt in the drop-down box, users are queried to choose whether t
 
 - If you disable this policy setting, scripts are prevented from accessing applets.
 
-- If you do not configure this policy setting, scripts are prevented from accessing applets.
+- If you don't configure this policy setting, scripts are prevented from accessing applets.
 <!-- RestrictedSitesZoneScriptingOfJavaApplets-Description-End -->
 
 <!-- RestrictedSitesZoneScriptingOfJavaApplets-Editable-Begin -->
@@ -16049,13 +15968,12 @@ If you select Prompt in the drop-down box, users are queried to choose whether t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneScriptingOfJavaApplets-DFProperties-End -->
 
 <!-- RestrictedSitesZoneScriptingOfJavaApplets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16081,7 +15999,7 @@ If you select Prompt in the drop-down box, users are queried to choose whether t
 <!-- RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles-Applicability-End -->
 
 <!-- RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles-OmaUri-Begin -->
@@ -16100,9 +16018,9 @@ This policy setting controls whether or not the "Open File - Security Warning" m
 
 - If you enable this policy setting and set the drop-down box to Enable, these files open without a security warning. If you set the drop-down box to Prompt, a security warning appears before the files open.
 
-- If you disable this policy setting, these files do not open.
+- If you disable this policy setting, these files don't open.
 
-- If you do not configure this policy setting, the user can configure how the computer handles these files. By default, these files are blocked in the Restricted zone, enabled in the Intranet and Local Computer zones, and set to prompt in the Internet and Trusted zones.
+- If you don't configure this policy setting, the user can configure how the computer handles these files. By default, these files are blocked in the Restricted zone, enabled in the Intranet and Local Computer zones, and set to prompt in the Internet and Trusted zones.
 <!-- RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles-Description-End -->
 
 <!-- RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles-Editable-Begin -->
@@ -16114,13 +16032,12 @@ This policy setting controls whether or not the "Open File - Security Warning" m
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles-DFProperties-End -->
 
 <!-- RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16146,7 +16063,7 @@ This policy setting controls whether or not the "Open File - Security Warning" m
 <!-- RestrictedSitesZoneTurnOnProtectedMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneTurnOnProtectedMode-Applicability-End -->
 
 <!-- RestrictedSitesZoneTurnOnProtectedMode-OmaUri-Begin -->
@@ -16163,11 +16080,11 @@ This policy setting controls whether or not the "Open File - Security Warning" m
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn on Protected Mode. Protected Mode helps protect Internet Explorer from exploited vulnerabilities by reducing the locations that Internet Explorer can write to in the registry and the file system.
 
-- If you enable this policy setting, Protected Mode is turned on. The user cannot turn off Protected Mode.
+- If you enable this policy setting, Protected Mode is turned on. The user can't turn off Protected Mode.
 
-- If you disable this policy setting, Protected Mode is turned off. The user cannot turn on Protected Mode.
+- If you disable this policy setting, Protected Mode is turned off. The user can't turn on Protected Mode.
 
-- If you do not configure this policy setting, the user can turn on or turn off Protected Mode.
+- If you don't configure this policy setting, the user can turn on or turn off Protected Mode.
 <!-- RestrictedSitesZoneTurnOnProtectedMode-Description-End -->
 
 <!-- RestrictedSitesZoneTurnOnProtectedMode-Editable-Begin -->
@@ -16179,13 +16096,12 @@ This policy setting allows you to turn on Protected Mode. Protected Mode helps p
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneTurnOnProtectedMode-DFProperties-End -->
 
 <!-- RestrictedSitesZoneTurnOnProtectedMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16211,7 +16127,7 @@ This policy setting allows you to turn on Protected Mode. Protected Mode helps p
 <!-- RestrictedSitesZoneUsePopupBlocker-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneUsePopupBlocker-Applicability-End -->
 
 <!-- RestrictedSitesZoneUsePopupBlocker-OmaUri-Begin -->
@@ -16226,13 +16142,13 @@ This policy setting allows you to turn on Protected Mode. Protected Mode helps p
 
 <!-- RestrictedSitesZoneUsePopupBlocker-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether unwanted pop-up windows appear. Pop-up windows that are opened when the end user clicks a link are not blocked.
+This policy setting allows you to manage whether unwanted pop-up windows appear. Pop-up windows that are opened when the end user clicks a link aren't blocked.
 
 - If you enable this policy setting, most unwanted pop-up windows are prevented from appearing.
 
-- If you disable this policy setting, pop-up windows are not prevented from appearing.
+- If you disable this policy setting, pop-up windows aren't prevented from appearing.
 
-- If you do not configure this policy setting, most unwanted pop-up windows are prevented from appearing.
+- If you don't configure this policy setting, most unwanted pop-up windows are prevented from appearing.
 <!-- RestrictedSitesZoneUsePopupBlocker-Description-End -->
 
 <!-- RestrictedSitesZoneUsePopupBlocker-Editable-Begin -->
@@ -16244,13 +16160,12 @@ This policy setting allows you to manage whether unwanted pop-up windows appear.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedSitesZoneUsePopupBlocker-DFProperties-End -->
 
 <!-- RestrictedSitesZoneUsePopupBlocker-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16276,7 +16191,7 @@ This policy setting allows you to manage whether unwanted pop-up windows appear.
 <!-- RestrictFileDownloadInternetExplorerProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictFileDownloadInternetExplorerProcesses-Applicability-End -->
 
 <!-- RestrictFileDownloadInternetExplorerProcesses-OmaUri-Begin -->
@@ -16291,13 +16206,13 @@ This policy setting allows you to manage whether unwanted pop-up windows appear.
 
 <!-- RestrictFileDownloadInternetExplorerProcesses-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting enables blocking of file download prompts that are not user initiated.
+This policy setting enables blocking of file download prompts that aren't user initiated.
 
-- If you enable this policy setting, file download prompts that are not user initiated will be blocked for Internet Explorer processes.
+- If you enable this policy setting, file download prompts that aren't user initiated will be blocked for Internet Explorer processes.
 
-- If you disable this policy setting, prompting will occur for file downloads that are not user initiated for Internet Explorer processes.
+- If you disable this policy setting, prompting will occur for file downloads that aren't user initiated for Internet Explorer processes.
 
-- If you do not configure this policy setting, the user's preference determines whether to prompt for file downloads that are not user initiated for Internet Explorer processes.
+- If you don't configure this policy setting, the user's preference determines whether to prompt for file downloads that aren't user initiated for Internet Explorer processes.
 <!-- RestrictFileDownloadInternetExplorerProcesses-Description-End -->
 
 <!-- RestrictFileDownloadInternetExplorerProcesses-Editable-Begin -->
@@ -16309,13 +16224,12 @@ This policy setting enables blocking of file download prompts that are not user 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictFileDownloadInternetExplorerProcesses-DFProperties-End -->
 
 <!-- RestrictFileDownloadInternetExplorerProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16341,7 +16255,7 @@ This policy setting enables blocking of file download prompts that are not user 
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-Applicability-End -->
 
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-OmaUri-Begin -->
@@ -16356,13 +16270,13 @@ This policy setting enables blocking of file download prompts that are not user 
 
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Internet Explorer allows scripts to programmatically open, resize, and reposition windows of various types. The Window Restrictions security feature restricts popup windows and prohibits scripts from displaying windows in which the title and status bars are not visible to the user or obfuscate other Windows' title and status bars.
+Internet Explorer allows scripts to programmatically open, resize, and reposition windows of various types. The Window Restrictions security feature restricts popup windows and prohibits scripts from displaying windows in which the title and status bars aren't visible to the user or obfuscate other Windows' title and status bars.
 
 - If you enable this policy setting, popup windows and other restrictions apply for File Explorer and Internet Explorer processes.
 
 - If you disable this policy setting, scripts can continue to create popup windows and windows that obfuscate other windows.
 
-- If you do not configure this policy setting, popup windows and other restrictions apply for File Explorer and Internet Explorer processes.
+- If you don't configure this policy setting, popup windows and other restrictions apply for File Explorer and Internet Explorer processes.
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-Description-End -->
 
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-Editable-Begin -->
@@ -16374,13 +16288,12 @@ Internet Explorer allows scripts to programmatically open, resize, and repositio
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-DFProperties-End -->
 
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16406,7 +16319,7 @@ Internet Explorer allows scripts to programmatically open, resize, and repositio
 <!-- SearchProviderList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SearchProviderList-Applicability-End -->
 
 <!-- SearchProviderList-OmaUri-Begin -->
@@ -16423,12 +16336,12 @@ Internet Explorer allows scripts to programmatically open, resize, and repositio
 <!-- Description-Source-ADMX -->
 This policy setting allows you to restrict the search providers that appear in the Search box in Internet Explorer to those defined in the list of policy keys for search providers (found under [HKCU or HKLM\Software\policies\Microsoft\Internet Explorer\SearchScopes]). Normally, search providers can be added from third-party toolbars or in Setup, but the user can also add them from a search provider's website.
 
-- If you enable this policy setting, the user cannot configure the list of search providers on his or her computer, and any default providers installed do not appear (including providers installed from other applications). The only providers that appear are those in the list of policy keys for search providers.
+- If you enable this policy setting, the user can't configure the list of search providers on his or her computer, and any default providers installed don't appear (including providers installed from other applications). The only providers that appear are those in the list of policy keys for search providers.
 
 > [!NOTE]
 > This list can be created through a custom administrative template file. For information about creating this custom administrative template file, see the Internet Explorer documentation on search providers.
 
-- If you disable or do not configure this policy setting, the user can configure his or her list of search providers.
+- If you disable or don't configure this policy setting, the user can configure his or her list of search providers.
 <!-- SearchProviderList-Description-End -->
 
 <!-- SearchProviderList-Editable-Begin -->
@@ -16440,13 +16353,12 @@ This policy setting allows you to restrict the search providers that appear in t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SearchProviderList-DFProperties-End -->
 
 <!-- SearchProviderList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16473,7 +16385,7 @@ This policy setting allows you to restrict the search providers that appear in t
 <!-- SecurityZonesUseOnlyMachineSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- SecurityZonesUseOnlyMachineSettings-Applicability-End -->
 
 <!-- SecurityZonesUseOnlyMachineSettings-OmaUri-Begin -->
@@ -16488,11 +16400,11 @@ Applies security zone information to all users of the same computer. A security 
 
 - If you enable this policy, changes that the user makes to a security zone will apply to all users of that computer.
 
-- If you disable this policy or do not configure it, users of the same computer can establish their own security zone settings.
+- If you disable this policy or don't configure it, users of the same computer can establish their own security zone settings.
 
-This policy is intended to ensure that security zone settings apply uniformly to the same computer and do not vary from user to user.
+This policy is intended to ensure that security zone settings apply uniformly to the same computer and don't vary from user to user.
 
-Also, see the "Security zones: Do not allow users to change policies" policy.
+Also, see the "Security zones: Don't allow users to change policies" policy.
 <!-- SecurityZonesUseOnlyMachineSettings-Description-End -->
 
 <!-- SecurityZonesUseOnlyMachineSettings-Editable-Begin -->
@@ -16504,13 +16416,12 @@ Also, see the "Security zones: Do not allow users to change policies" policy.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SecurityZonesUseOnlyMachineSettings-DFProperties-End -->
 
 <!-- SecurityZonesUseOnlyMachineSettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16537,7 +16448,7 @@ Also, see the "Security zones: Do not allow users to change policies" policy.
 <!-- SendSitesNotInEnterpriseSiteListToEdge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1350] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.789] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
 <!-- SendSitesNotInEnterpriseSiteListToEdge-Applicability-End -->
 
 <!-- SendSitesNotInEnterpriseSiteListToEdge-OmaUri-Begin -->
@@ -16573,13 +16484,12 @@ Disabling, or not configuring this setting, opens all sites based on the current
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SendSitesNotInEnterpriseSiteListToEdge-DFProperties-End -->
 
 <!-- SendSitesNotInEnterpriseSiteListToEdge-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16629,7 +16539,7 @@ Disabling, or not configuring this setting, opens all sites based on the current
 <!-- SpecifyUseOfActiveXInstallerService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- SpecifyUseOfActiveXInstallerService-Applicability-End -->
 
 <!-- SpecifyUseOfActiveXInstallerService-OmaUri-Begin -->
@@ -16648,7 +16558,7 @@ This policy setting allows you to specify how ActiveX controls are installed.
 
 - If you enable this policy setting, ActiveX controls are installed only if the ActiveX Installer Service is present and has been configured to allow the installation of ActiveX controls.
 
-- If you disable or do not configure this policy setting, ActiveX controls, including per-user controls, are installed through the standard installation process.
+- If you disable or don't configure this policy setting, ActiveX controls, including per-user controls, are installed through the standard installation process.
 <!-- SpecifyUseOfActiveXInstallerService-Description-End -->
 
 <!-- SpecifyUseOfActiveXInstallerService-Editable-Begin -->
@@ -16660,13 +16570,12 @@ This policy setting allows you to specify how ActiveX controls are installed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyUseOfActiveXInstallerService-DFProperties-End -->
 
 <!-- SpecifyUseOfActiveXInstallerService-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16693,7 +16602,7 @@ This policy setting allows you to specify how ActiveX controls are installed.
 <!-- TrustedSitesZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -16712,9 +16621,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- TrustedSitesZoneAllowAccessToDataSources-Description-End -->
 
 <!-- TrustedSitesZoneAllowAccessToDataSources-Editable-Begin -->
@@ -16726,13 +16635,12 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TrustedSitesZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16758,7 +16666,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- TrustedSitesZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -16775,11 +16683,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you don't configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 <!-- TrustedSitesZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- TrustedSitesZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -16791,13 +16699,12 @@ This policy setting manages whether users will be automatically prompted for Act
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TrustedSitesZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16823,7 +16730,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- TrustedSitesZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -16842,7 +16749,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, users will receive a file download dialog for automatic download attempts.
+- If you disable or don't configure this setting, users will receive a file download dialog for automatic download attempts.
 <!-- TrustedSitesZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- TrustedSitesZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -16854,13 +16761,12 @@ This policy setting determines whether users will be prompted for non user-initi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TrustedSitesZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16886,7 +16792,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- TrustedSitesZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowFontDownloads-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowFontDownloads-OmaUri-Begin -->
@@ -16909,7 +16815,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, HTML fonts can be downloaded automatically.
+- If you don't configure this policy setting, HTML fonts can be downloaded automatically.
 <!-- TrustedSitesZoneAllowFontDownloads-Description-End -->
 
 <!-- TrustedSitesZoneAllowFontDownloads-Editable-Begin -->
@@ -16921,13 +16827,12 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TrustedSitesZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16953,7 +16858,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- TrustedSitesZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -16970,11 +16875,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you don't configure this policy setting, a warning is issued to the user that potentially risky navigation is about to occur.
 <!-- TrustedSitesZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- TrustedSitesZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -16986,13 +16891,12 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TrustedSitesZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -17018,7 +16922,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -17033,13 +16937,13 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer will execute unsigned managed components.
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -17051,13 +16955,12 @@ This policy setting allows you to manage whether . NET Framework components that
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -17083,7 +16986,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- TrustedSitesZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowScriptlets-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowScriptlets-OmaUri-Begin -->
@@ -17102,9 +17005,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- TrustedSitesZoneAllowScriptlets-Description-End -->
 
 <!-- TrustedSitesZoneAllowScriptlets-Editable-Begin -->
@@ -17116,13 +17019,12 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TrustedSitesZoneAllowScriptlets-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -17148,7 +17050,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- TrustedSitesZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -17167,9 +17069,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -17184,13 +17086,12 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TrustedSitesZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -17216,7 +17117,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- TrustedSitesZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -17235,9 +17136,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- TrustedSitesZoneAllowUserDataPersistence-Description-End -->
 
 <!-- TrustedSitesZoneAllowUserDataPersistence-Editable-Begin -->
@@ -17249,13 +17150,12 @@ This policy setting allows you to manage the preservation of information in the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TrustedSitesZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -17281,7 +17181,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-End -->
 
 <!-- TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-OmaUri-Begin -->
@@ -17314,13 +17214,12 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-DFProperties-End -->
 
 <!-- TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -17346,7 +17245,7 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- TrustedSitesZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- TrustedSitesZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -17363,13 +17262,13 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, users are queried whether to allow the control to be loaded with parameters or scripted.
+- If you don't configure this policy setting, users are queried whether to allow the control to be loaded with parameters or scripted.
 <!-- TrustedSitesZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- TrustedSitesZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -17381,13 +17280,12 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TrustedSitesZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- TrustedSitesZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -17413,7 +17311,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- TrustedSitesZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- TrustedSitesZoneJavaPermissions-Applicability-End -->
 
 <!-- TrustedSitesZoneJavaPermissions-OmaUri-Begin -->
@@ -17434,13 +17332,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, the permission is set to Low Safety.
+- If you don't configure this policy setting, the permission is set to Low Safety.
 <!-- TrustedSitesZoneJavaPermissions-Description-End -->
 
 <!-- TrustedSitesZoneJavaPermissions-Editable-Begin -->
@@ -17452,13 +17350,12 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TrustedSitesZoneJavaPermissions-DFProperties-End -->
 
 <!-- TrustedSitesZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -17478,13 +17375,85 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 <!-- TrustedSitesZoneJavaPermissions-End -->
 
+<!-- TrustedSitesZoneLogonOptions-Begin -->
+## TrustedSitesZoneLogonOptions
+
+<!-- TrustedSitesZoneLogonOptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- TrustedSitesZoneLogonOptions-Applicability-End -->
+
+<!-- TrustedSitesZoneLogonOptions-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/InternetExplorer/TrustedSitesZoneLogonOptions
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/InternetExplorer/TrustedSitesZoneLogonOptions
+```
+<!-- TrustedSitesZoneLogonOptions-OmaUri-End -->
+
+<!-- TrustedSitesZoneLogonOptions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage settings for logon options.
+
+- If you enable this policy setting, you can choose from the following logon options.
+
+Anonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.
+
+Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response isn't supported by the server, the user is queried to provide the user name and password.
+
+- If you disable this policy setting, logon is set to Automatic logon only in Intranet zone.
+
+- If you don't configure this policy setting, logon is set to Automatic logon with current username and password.
+<!-- TrustedSitesZoneLogonOptions-Description-End -->
+
+<!-- TrustedSitesZoneLogonOptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TrustedSitesZoneLogonOptions-Editable-End -->
+
+<!-- TrustedSitesZoneLogonOptions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TrustedSitesZoneLogonOptions-DFProperties-End -->
+
+<!-- TrustedSitesZoneLogonOptions-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | IZ_PolicyLogon_5 |
+| Friendly Name | Logon options |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Trusted Sites Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2 |
+| ADMX File Name | inetres.admx |
+<!-- TrustedSitesZoneLogonOptions-AdmxBacked-End -->
+
+<!-- TrustedSitesZoneLogonOptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TrustedSitesZoneLogonOptions-Examples-End -->
+
+<!-- TrustedSitesZoneLogonOptions-End -->
+
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-Begin -->
 ## TrustedSitesZoneNavigateWindowsAndFrames
 
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -17501,11 +17470,11 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
 
-- If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+- If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+- If you disable this policy setting, users can't open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+- If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -17517,13 +17486,12 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

@@ -4,7 +4,7 @@ description: Learn more about the UserRights Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/01/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,8 +16,7 @@ ms.topic: reference
 <!-- UserRights-Begin -->
 # Policy CSP - UserRights
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- UserRights-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -94,7 +93,7 @@ For example, the following syntax grants user rights to Authenticated Users and 
 <![CDATA[Authenticated Users&#xF000;Replicator]]>
 ```
 
-For example, the following syntax grants user rights to two specific Azure Active Directory (Azure AD) users from Contoso, user1 and user2:
+For example, the following syntax grants user rights to two specific Microsoft Entra users from Contoso, user1 and user2:
 
 ```xml
 <![CDATA[AzureAD\user1@contoso.com&#xF000;AzureAD\user2@contoso.com]]>
@@ -113,7 +112,7 @@ For example, the following syntax grants user rights to a specific user or group
 <!-- AccessCredentialManagerAsTrustedCaller-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AccessCredentialManagerAsTrustedCaller-Applicability-End -->
 
 <!-- AccessCredentialManagerAsTrustedCaller-OmaUri-Begin -->
@@ -124,7 +123,7 @@ For example, the following syntax grants user rights to a specific user or group
 
 <!-- AccessCredentialManagerAsTrustedCaller-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right is used by Credential Manager during Backup/Restore. No accounts should have this privilege, as it is only assigned to Winlogon. Users' saved credentials might be compromised if this privilege is given to other entities.
+This user right is used by Credential Manager during Backup/Restore. No accounts should've this privilege, as it's only assigned to Winlogon. Users' saved credentials might be compromised if this privilege is given to other entities.
 <!-- AccessCredentialManagerAsTrustedCaller-Description-End -->
 
 <!-- AccessCredentialManagerAsTrustedCaller-Editable-Begin -->
@@ -136,7 +135,7 @@ This user right is used by Credential Manager during Backup/Restore. No accounts
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- AccessCredentialManagerAsTrustedCaller-DFProperties-End -->
@@ -162,7 +161,7 @@ This user right is used by Credential Manager during Backup/Restore. No accounts
 <!-- AccessFromNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AccessFromNetwork-Applicability-End -->
 
 <!-- AccessFromNetwork-OmaUri-Begin -->
@@ -173,7 +172,7 @@ This user right is used by Credential Manager during Backup/Restore. No accounts
 
 <!-- AccessFromNetwork-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users and groups are allowed to connect to the computer over the network. Remote Desktop Services are not affected by this user right.
+This user right determines which users and groups are allowed to connect to the computer over the network. Remote Desktop Services aren't affected by this user right.
 
 > [!NOTE]
 > Remote Desktop Services was called Terminal Services in previous versions of Windows Server.
@@ -188,7 +187,7 @@ This user right determines which users and groups are allowed to connect to the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- AccessFromNetwork-DFProperties-End -->
@@ -214,7 +213,7 @@ This user right determines which users and groups are allowed to connect to the 
 <!-- ActAsPartOfTheOperatingSystem-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ActAsPartOfTheOperatingSystem-Applicability-End -->
 
 <!-- ActAsPartOfTheOperatingSystem-OmaUri-Begin -->
@@ -240,7 +239,7 @@ This user right allows a process to impersonate any user without authentication.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- ActAsPartOfTheOperatingSystem-DFProperties-End -->
@@ -260,13 +259,62 @@ This user right allows a process to impersonate any user without authentication.
 
 <!-- ActAsPartOfTheOperatingSystem-End -->
 
+<!-- AdjustMemoryQuotasForProcess-Begin -->
+## AdjustMemoryQuotasForProcess
+
+<!-- AdjustMemoryQuotasForProcess-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AdjustMemoryQuotasForProcess-Applicability-End -->
+
+<!-- AdjustMemoryQuotasForProcess-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/AdjustMemoryQuotasForProcess
+```
+<!-- AdjustMemoryQuotasForProcess-OmaUri-End -->
+
+<!-- AdjustMemoryQuotasForProcess-Description-Begin -->
+<!-- Description-Source-DDF -->
+Adjust memory quotas for a process - This privilege determines who can change the maximum memory that can be consumed by a process. This privilege is useful for system tuning on a group or user basis.
+<!-- AdjustMemoryQuotasForProcess-Description-End -->
+
+<!-- AdjustMemoryQuotasForProcess-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AdjustMemoryQuotasForProcess-Editable-End -->
+
+<!-- AdjustMemoryQuotasForProcess-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- AdjustMemoryQuotasForProcess-DFProperties-End -->
+
+<!-- AdjustMemoryQuotasForProcess-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Adjust memory quotas for a process |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- AdjustMemoryQuotasForProcess-GpMapping-End -->
+
+<!-- AdjustMemoryQuotasForProcess-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AdjustMemoryQuotasForProcess-Examples-End -->
+
+<!-- AdjustMemoryQuotasForProcess-End -->
+
 <!-- AllowLocalLogOn-Begin -->
 ## AllowLocalLogOn
 
 <!-- AllowLocalLogOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowLocalLogOn-Applicability-End -->
 
 <!-- AllowLocalLogOn-OmaUri-Begin -->
@@ -292,7 +340,7 @@ This user right determines which users can log on to the computer.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- AllowLocalLogOn-DFProperties-End -->
@@ -312,13 +360,62 @@ This user right determines which users can log on to the computer.
 
 <!-- AllowLocalLogOn-End -->
 
+<!-- AllowLogOnThroughRemoteDesktop-Begin -->
+## AllowLogOnThroughRemoteDesktop
+
+<!-- AllowLogOnThroughRemoteDesktop-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AllowLogOnThroughRemoteDesktop-Applicability-End -->
+
+<!-- AllowLogOnThroughRemoteDesktop-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/AllowLogOnThroughRemoteDesktop
+```
+<!-- AllowLogOnThroughRemoteDesktop-OmaUri-End -->
+
+<!-- AllowLogOnThroughRemoteDesktop-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allow log on through Remote Desktop Services - This policy setting determines which users or groups can access the sign-in screen of a remote device through a Remote Desktop Services connection.
+<!-- AllowLogOnThroughRemoteDesktop-Description-End -->
+
+<!-- AllowLogOnThroughRemoteDesktop-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowLogOnThroughRemoteDesktop-Editable-End -->
+
+<!-- AllowLogOnThroughRemoteDesktop-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- AllowLogOnThroughRemoteDesktop-DFProperties-End -->
+
+<!-- AllowLogOnThroughRemoteDesktop-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Allow log on through Remote Desktop Services |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- AllowLogOnThroughRemoteDesktop-GpMapping-End -->
+
+<!-- AllowLogOnThroughRemoteDesktop-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowLogOnThroughRemoteDesktop-Examples-End -->
+
+<!-- AllowLogOnThroughRemoteDesktop-End -->
+
 <!-- BackupFilesAndDirectories-Begin -->
 ## BackupFilesAndDirectories
 
 <!-- BackupFilesAndDirectories-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- BackupFilesAndDirectories-Applicability-End -->
 
 <!-- BackupFilesAndDirectories-OmaUri-Begin -->
@@ -344,7 +441,7 @@ This user right determines which users can bypass file, directory, registry, and
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- BackupFilesAndDirectories-DFProperties-End -->
@@ -370,7 +467,7 @@ This user right determines which users can bypass file, directory, registry, and
 <!-- BypassTraverseChecking-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- BypassTraverseChecking-Applicability-End -->
 
 <!-- BypassTraverseChecking-OmaUri-Begin -->
@@ -381,7 +478,7 @@ This user right determines which users can bypass file, directory, registry, and
 
 <!-- BypassTraverseChecking-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users can traverse directory trees even though the user may not have permissions on the traversed directory. This privilege does not allow the user to list the contents of a directory, only to traverse directories.
+This user right determines which users can traverse directory trees even though the user may not have permissions on the traversed directory. This privilege doesn't allow the user to list the contents of a directory, only to traverse directories.
 <!-- BypassTraverseChecking-Description-End -->
 
 <!-- BypassTraverseChecking-Editable-Begin -->
@@ -393,7 +490,7 @@ This user right determines which users can traverse directory trees even though 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- BypassTraverseChecking-DFProperties-End -->
@@ -419,7 +516,7 @@ This user right determines which users can traverse directory trees even though 
 <!-- ChangeSystemTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ChangeSystemTime-Applicability-End -->
 
 <!-- ChangeSystemTime-OmaUri-Begin -->
@@ -451,7 +548,7 @@ This user right determines which users and groups can change the time and date o
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- ChangeSystemTime-DFProperties-End -->
@@ -477,7 +574,7 @@ This user right determines which users and groups can change the time and date o
 <!-- ChangeTimeZone-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ChangeTimeZone-Applicability-End -->
 
 <!-- ChangeTimeZone-OmaUri-Begin -->
@@ -488,7 +585,7 @@ This user right determines which users and groups can change the time and date o
 
 <!-- ChangeTimeZone-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users and groups can change the time zone used by the computer for displaying the local time, which is the computer's system time plus the time zone offset. System time itself is absolute and is not affected by a change in the time zone.
+This user right determines which users and groups can change the time zone used by the computer for displaying the local time, which is the computer's system time plus the time zone offset. System time itself is absolute and isn't affected by a change in the time zone.
 <!-- ChangeTimeZone-Description-End -->
 
 <!-- ChangeTimeZone-Editable-Begin -->
@@ -500,7 +597,7 @@ This user right determines which users and groups can change the time zone used 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- ChangeTimeZone-DFProperties-End -->
@@ -526,7 +623,7 @@ This user right determines which users and groups can change the time zone used 
 <!-- CreateGlobalObjects-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- CreateGlobalObjects-Applicability-End -->
 
 <!-- CreateGlobalObjects-OmaUri-Begin -->
@@ -537,7 +634,7 @@ This user right determines which users and groups can change the time zone used 
 
 <!-- CreateGlobalObjects-Description-Begin -->
 <!-- Description-Source-DDF -->
-This security setting determines whether users can create global objects that are available to all sessions. Users can still create objects that are specific to their own session if they do not have this user right. Users who can create global objects could affect processes that run under other users' sessions, which could lead to application failure or data corruption.
+This security setting determines whether users can create global objects that are available to all sessions. Users can still create objects that are specific to their own session if they don't have this user right. Users who can create global objects could affect processes that run under other users' sessions, which could lead to application failure or data corruption.
 
 > [!CAUTION]
 > Assigning this user right can be a security risk. Assign this user right only to trusted users.
@@ -552,7 +649,7 @@ This security setting determines whether users can create global objects that ar
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- CreateGlobalObjects-DFProperties-End -->
@@ -578,7 +675,7 @@ This security setting determines whether users can create global objects that ar
 <!-- CreatePageFile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- CreatePageFile-Applicability-End -->
 
 <!-- CreatePageFile-OmaUri-Begin -->
@@ -589,7 +686,7 @@ This security setting determines whether users can create global objects that ar
 
 <!-- CreatePageFile-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users and groups can call an internal application programming interface (API) to create and change the size of a page file. This user right is used internally by the operating system and usually does not need to be assigned to any users.
+This user right determines which users and groups can call an internal application programming interface (API) to create and change the size of a page file. This user right is used internally by the operating system and usually doesn't need to be assigned to any users.
 <!-- CreatePageFile-Description-End -->
 
 <!-- CreatePageFile-Editable-Begin -->
@@ -601,7 +698,7 @@ This user right determines which users and groups can call an internal applicati
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- CreatePageFile-DFProperties-End -->
@@ -627,7 +724,7 @@ This user right determines which users and groups can call an internal applicati
 <!-- CreatePermanentSharedObjects-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- CreatePermanentSharedObjects-Applicability-End -->
 
 <!-- CreatePermanentSharedObjects-OmaUri-Begin -->
@@ -638,7 +735,7 @@ This user right determines which users and groups can call an internal applicati
 
 <!-- CreatePermanentSharedObjects-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which accounts can be used by processes to create a directory object using the object manager. This user right is used internally by the operating system and is useful to kernel-mode components that extend the object namespace. Because components that are running in kernel mode already have this user right assigned to them, it is not necessary to specifically assign it.
+This user right determines which accounts can be used by processes to create a directory object using the object manager. This user right is used internally by the operating system and is useful to kernel-mode components that extend the object namespace. Because components that are running in kernel mode already have this user right assigned to them, it isn't necessary to specifically assign it.
 <!-- CreatePermanentSharedObjects-Description-End -->
 
 <!-- CreatePermanentSharedObjects-Editable-Begin -->
@@ -650,7 +747,7 @@ This user right determines which accounts can be used by processes to create a d
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- CreatePermanentSharedObjects-DFProperties-End -->
@@ -676,7 +773,7 @@ This user right determines which accounts can be used by processes to create a d
 <!-- CreateSymbolicLinks-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- CreateSymbolicLinks-Applicability-End -->
 
 <!-- CreateSymbolicLinks-OmaUri-Begin -->
@@ -687,7 +784,7 @@ This user right determines which accounts can be used by processes to create a d
 
 <!-- CreateSymbolicLinks-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines if the user can create a symbolic link from the computer he is logged on to.
+This user right determines if the user can create a symbolic link from the computer he is logged-on to.
 
 > [!CAUTION]
 > This privilege should only be given to trusted users. Symbolic links can expose security vulnerabilities in applications that aren't designed to handle them.
@@ -705,7 +802,7 @@ This user right determines if the user can create a symbolic link from the compu
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- CreateSymbolicLinks-DFProperties-End -->
@@ -731,7 +828,7 @@ This user right determines if the user can create a symbolic link from the compu
 <!-- CreateToken-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- CreateToken-Applicability-End -->
 
 <!-- CreateToken-OmaUri-Begin -->
@@ -742,10 +839,10 @@ This user right determines if the user can create a symbolic link from the compu
 
 <!-- CreateToken-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which accounts can be used by processes to create a token that can then be used to get access to any local resources when the process uses an internal application programming interface (API) to create an access token. This user right is used internally by the operating system. Unless it is necessary, do not assign this user right to a user, group, or process other than Local System.
+This user right determines which accounts can be used by processes to create a token that can then be used to get access to any local resources when the process uses an internal application programming interface (API) to create an access token. This user right is used internally by the operating system. Unless it's necessary, don't assign this user right to a user, group, or process other than Local System.
 
 > [!CAUTION]
-> Assigning this user right can be a security risk. Do not assign this user right to any user, group, or process that you do not want to take over the system.
+> Assigning this user right can be a security risk. Don't assign this user right to any user, group, or process that you don't want to take over the system.
 <!-- CreateToken-Description-End -->
 
 <!-- CreateToken-Editable-Begin -->
@@ -757,7 +854,7 @@ This user right determines which accounts can be used by processes to create a t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- CreateToken-DFProperties-End -->
@@ -783,7 +880,7 @@ This user right determines which accounts can be used by processes to create a t
 <!-- DebugPrograms-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DebugPrograms-Applicability-End -->
 
 <!-- DebugPrograms-OmaUri-Begin -->
@@ -794,7 +891,7 @@ This user right determines which accounts can be used by processes to create a t
 
 <!-- DebugPrograms-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users can attach a debugger to any process or to the kernel. Developers who are debugging their own applications do not need to be assigned this user right. Developers who are debugging new system components will need this user right to be able to do so. This user right provides complete access to sensitive and critical operating system components.
+This user right determines which users can attach a debugger to any process or to the kernel. Developers who are debugging their own applications don't need to be assigned this user right. Developers who are debugging new system components will need this user right to be able to do so. This user right provides complete access to sensitive and critical operating system components.
 
 > [!CAUTION]
 > Assigning this user right can be a security risk. Only assign this user right to trusted users.
@@ -809,7 +906,7 @@ This user right determines which users can attach a debugger to any process or t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- DebugPrograms-DFProperties-End -->
@@ -835,7 +932,7 @@ This user right determines which users can attach a debugger to any process or t
 <!-- DenyAccessFromNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DenyAccessFromNetwork-Applicability-End -->
 
 <!-- DenyAccessFromNetwork-OmaUri-Begin -->
@@ -858,7 +955,7 @@ This user right determines which users are prevented from accessing a computer o
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- DenyAccessFromNetwork-DFProperties-End -->
@@ -884,7 +981,7 @@ This user right determines which users are prevented from accessing a computer o
 <!-- DenyLocalLogOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DenyLocalLogOn-Applicability-End -->
 
 <!-- DenyLocalLogOn-OmaUri-Begin -->
@@ -898,7 +995,7 @@ This user right determines which users are prevented from accessing a computer o
 This security setting determines which service accounts are prevented from registering a process as a service.
 
 > [!NOTE]
-> This security setting does not apply to the System, Local Service, or Network Service accounts.
+> This security setting doesn't apply to the System, Local Service, or Network Service accounts.
 <!-- DenyLocalLogOn-Description-End -->
 
 <!-- DenyLocalLogOn-Editable-Begin -->
@@ -911,7 +1008,7 @@ This security setting determines which service accounts are prevented from regis
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- DenyLocalLogOn-DFProperties-End -->
@@ -937,7 +1034,7 @@ This security setting determines which service accounts are prevented from regis
 <!-- DenyLogOnAsBatchJob-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- DenyLogOnAsBatchJob-Applicability-End -->
 
 <!-- DenyLogOnAsBatchJob-OmaUri-Begin -->
@@ -960,7 +1057,7 @@ This security setting determines which accounts are prevented from being able to
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- DenyLogOnAsBatchJob-DFProperties-End -->
@@ -986,7 +1083,7 @@ This security setting determines which accounts are prevented from being able to
 <!-- DenyLogOnAsService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- DenyLogOnAsService-Applicability-End -->
 
 <!-- DenyLogOnAsService-OmaUri-Begin -->
@@ -1000,7 +1097,7 @@ This security setting determines which accounts are prevented from being able to
 Deny log on as a service -This security setting determines which service accounts are prevented from registering a process as a service. This policy setting supersedes the Log on as a service policy setting if an account is subject to both policies.
 
 > [!NOTE]
-> This security setting does not apply to the System, Local Service, or Network Service accounts. Default: None.
+> This security setting doesn't apply to the System, Local Service, or Network Service accounts. Default: None.
 <!-- DenyLogOnAsService-Description-End -->
 
 <!-- DenyLogOnAsService-Editable-Begin -->
@@ -1012,7 +1109,7 @@ Deny log on as a service -This security setting determines which service account
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- DenyLogOnAsService-DFProperties-End -->
@@ -1038,7 +1135,7 @@ Deny log on as a service -This security setting determines which service account
 <!-- DenyRemoteDesktopServicesLogOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DenyRemoteDesktopServicesLogOn-Applicability-End -->
 
 <!-- DenyRemoteDesktopServicesLogOn-OmaUri-Begin -->
@@ -1061,7 +1158,7 @@ This user right determines which users and groups are prohibited from logging on
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- DenyRemoteDesktopServicesLogOn-DFProperties-End -->
@@ -1087,7 +1184,7 @@ This user right determines which users and groups are prohibited from logging on
 <!-- EnableDelegation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnableDelegation-Applicability-End -->
 
 <!-- EnableDelegation-OmaUri-Begin -->
@@ -1098,7 +1195,7 @@ This user right determines which users and groups are prohibited from logging on
 
 <!-- EnableDelegation-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users can set the Trusted for Delegation setting on a user or computer object. The user or object that is granted this privilege must have write access to the account control flags on the user or computer object. A server process running on a computer (or under a user context) that is trusted for delegation can access resources on another computer using delegated credentials of a client, as long as the client account does not have the Account cannot be delegated account control flag set.
+This user right determines which users can set the Trusted for Delegation setting on a user or computer object. The user or object that's granted this privilege must have write access to the account control flags on the user or computer object. A server process running on a computer (or under a user context) that's trusted for delegation can access resources on another computer using delegated credentials of a client, as long as the client account doesn't have the Account can't be delegated account control flag set.
 
 > [!CAUTION]
 > Misuse of this user right, or of the Trusted for Delegation setting, could make the network vulnerable to sophisticated attacks using Trojan horse programs that impersonate incoming clients and use their credentials to gain access to network resources.
@@ -1113,7 +1210,7 @@ This user right determines which users can set the Trusted for Delegation settin
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- EnableDelegation-DFProperties-End -->
@@ -1139,7 +1236,7 @@ This user right determines which users can set the Trusted for Delegation settin
 <!-- GenerateSecurityAudits-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- GenerateSecurityAudits-Applicability-End -->
 
 <!-- GenerateSecurityAudits-OmaUri-Begin -->
@@ -1162,7 +1259,7 @@ This user right determines which accounts can be used by a process to add entrie
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- GenerateSecurityAudits-DFProperties-End -->
@@ -1188,7 +1285,7 @@ This user right determines which accounts can be used by a process to add entrie
 <!-- ImpersonateClient-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ImpersonateClient-Applicability-End -->
 
 <!-- ImpersonateClient-OmaUri-Begin -->
@@ -1199,13 +1296,13 @@ This user right determines which accounts can be used by a process to add entrie
 
 <!-- ImpersonateClient-Description-Begin -->
 <!-- Description-Source-DDF -->
-Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect (for example, by remote procedure call (RPC) or named pipes) to a service that they have created and then impersonating that client, which can elevate the unauthorized user's permissions to administrative or system levels.
+Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect (for example, by remote procedure call (RPC) or named pipes) to a service that they've created and then impersonating that client, which can elevate the unauthorized user's permissions to administrative or system levels.
 
 > [!CAUTION]
 > Assigning this user right can be a security risk. Only assign this user right to trusted users.
 
 > [!NOTE]
-> By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they are started. In addition, a user can also impersonate an access token if any of the following conditions exist. 1) The access token that is being impersonated is for this user. 2) The user, in this logon session, created the access token by logging on to the network with explicit credentials. 3) The requested level is less than Impersonate, such as Anonymous or Identify. Because of these factors, users do not usually need this user right.
+> By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they're started. In addition, a user can also impersonate an access token if any of the following conditions exist. 1) The access token that's being impersonated is for this user. 2) The user, in this logon session, created the access token by logging on to the network with explicit credentials. 3) The requested level is less than Impersonate, such as Anonymous or Identify. Because of these factors, users don't usually need this user right.
 
 > [!WARNING]
 > If you enable this setting, programs that previously had the Impersonate privilege may lose it, and they may not run.
@@ -1220,7 +1317,7 @@ Assigning this user right to a user allows programs running on behalf of that us
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- ImpersonateClient-DFProperties-End -->
@@ -1246,7 +1343,7 @@ Assigning this user right to a user allows programs running on behalf of that us
 <!-- IncreaseProcessWorkingSet-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- IncreaseProcessWorkingSet-Applicability-End -->
 
 <!-- IncreaseProcessWorkingSet-OmaUri-Begin -->
@@ -1272,7 +1369,7 @@ Increase a process working set. This privilege determines which user accounts ca
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- IncreaseProcessWorkingSet-DFProperties-End -->
@@ -1298,7 +1395,7 @@ Increase a process working set. This privilege determines which user accounts ca
 <!-- IncreaseSchedulingPriority-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- IncreaseSchedulingPriority-Applicability-End -->
 
 <!-- IncreaseSchedulingPriority-OmaUri-Begin -->
@@ -1326,7 +1423,7 @@ This user right determines which accounts can use a process with Write Property 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- IncreaseSchedulingPriority-DFProperties-End -->
@@ -1352,7 +1449,7 @@ This user right determines which accounts can use a process with Write Property 
 <!-- LoadUnloadDeviceDrivers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- LoadUnloadDeviceDrivers-Applicability-End -->
 
 <!-- LoadUnloadDeviceDrivers-OmaUri-Begin -->
@@ -1363,10 +1460,10 @@ This user right determines which accounts can use a process with Write Property 
 
 <!-- LoadUnloadDeviceDrivers-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users can dynamically load and unload device drivers or other code in to kernel mode. This user right does not apply to Plug and Play device drivers. It is recommended that you do not assign this privilege to other users.
+This user right determines which users can dynamically load and unload device drivers or other code in to kernel mode. This user right doesn't apply to Plug and Play device drivers. It's recommended that you don't assign this privilege to other users.
 
 > [!CAUTION]
-> Assigning this user right can be a security risk. Do not assign this user right to any user, group, or process that you do not want to take over the system.
+> Assigning this user right can be a security risk. Don't assign this user right to any user, group, or process that you don't want to take over the system.
 <!-- LoadUnloadDeviceDrivers-Description-End -->
 
 <!-- LoadUnloadDeviceDrivers-Editable-Begin -->
@@ -1378,7 +1475,7 @@ This user right determines which users can dynamically load and unload device dr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- LoadUnloadDeviceDrivers-DFProperties-End -->
@@ -1404,7 +1501,7 @@ This user right determines which users can dynamically load and unload device dr
 <!-- LockMemory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- LockMemory-Applicability-End -->
 
 <!-- LockMemory-OmaUri-Begin -->
@@ -1427,7 +1524,7 @@ This user right determines which accounts can use a process to keep data in phys
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- LockMemory-DFProperties-End -->
@@ -1453,7 +1550,7 @@ This user right determines which accounts can use a process to keep data in phys
 <!-- LogOnAsBatchJob-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- LogOnAsBatchJob-Applicability-End -->
 
 <!-- LogOnAsBatchJob-OmaUri-Begin -->
@@ -1464,7 +1561,7 @@ This user right determines which accounts can use a process to keep data in phys
 
 <!-- LogOnAsBatchJob-Description-Begin -->
 <!-- Description-Source-DDF -->
-This security setting allows a user to be logged on by means of a batch-queue facility and is provided only for compatibility with older versions of Windows. For example, when a user submits a job by means of the task scheduler, the task scheduler logs that user on as a batch user rather than as an interactive user.
+This security setting allows a user to be logged-on by means of a batch-queue facility and is provided only for compatibility with older versions of Windows. For example, when a user submits a job by means of the task scheduler, the task scheduler logs that user on as a batch user rather than as an interactive user.
 <!-- LogOnAsBatchJob-Description-End -->
 
 <!-- LogOnAsBatchJob-Editable-Begin -->
@@ -1476,7 +1573,7 @@ This security setting allows a user to be logged on by means of a batch-queue fa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- LogOnAsBatchJob-DFProperties-End -->
@@ -1502,7 +1599,7 @@ This security setting allows a user to be logged on by means of a batch-queue fa
 <!-- LogOnAsService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- LogOnAsService-Applicability-End -->
 
 <!-- LogOnAsService-OmaUri-Begin -->
@@ -1525,7 +1622,7 @@ This security setting allows a security principal to log on as a service. Servic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- LogOnAsService-DFProperties-End -->
@@ -1551,7 +1648,7 @@ This security setting allows a security principal to log on as a service. Servic
 <!-- ManageAuditingAndSecurityLog-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ManageAuditingAndSecurityLog-Applicability-End -->
 
 <!-- ManageAuditingAndSecurityLog-OmaUri-Begin -->
@@ -1562,7 +1659,7 @@ This security setting allows a security principal to log on as a service. Servic
 
 <!-- ManageAuditingAndSecurityLog-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users can specify object access auditing options for individual resources, such as files, Active Directory objects, and registry keys. This security setting does not allow a user to enable file and object access auditing in general. You can view audited events in the security log of the Event Viewer. A user with this privilege can also view and clear the security log.
+This user right determines which users can specify object access auditing options for individual resources, such as files, Active Directory objects, and registry keys. This security setting doesn't allow a user to enable file and object access auditing in general. You can view audited events in the security log of the Event Viewer. A user with this privilege can also view and clear the security log.
 <!-- ManageAuditingAndSecurityLog-Description-End -->
 
 <!-- ManageAuditingAndSecurityLog-Editable-Begin -->
@@ -1574,7 +1671,7 @@ This user right determines which users can specify object access auditing option
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- ManageAuditingAndSecurityLog-DFProperties-End -->
@@ -1600,7 +1697,7 @@ This user right determines which users can specify object access auditing option
 <!-- ManageVolume-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ManageVolume-Applicability-End -->
 
 <!-- ManageVolume-OmaUri-Begin -->
@@ -1623,7 +1720,7 @@ This user right determines which users and groups can run maintenance tasks on a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- ManageVolume-DFProperties-End -->
@@ -1649,7 +1746,7 @@ This user right determines which users and groups can run maintenance tasks on a
 <!-- ModifyFirmwareEnvironment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ModifyFirmwareEnvironment-Applicability-End -->
 
 <!-- ModifyFirmwareEnvironment-OmaUri-Begin -->
@@ -1663,7 +1760,7 @@ This user right determines which users and groups can run maintenance tasks on a
 This user right determines who can modify firmware environment values. Firmware environment variables are settings stored in the nonvolatile RAM of non-x86-based computers. The effect of the setting depends on the processor. On x86-based computers, the only firmware environment value that can be modified by assigning this user right is the Last Known Good Configuration setting, which should only be modified by the system. On Itanium-based computers, boot information is stored in nonvolatile RAM. Users must be assigned this user right to run bootcfg.exe and to change the Default Operating System setting on Startup and Recovery in System Properties. On all computers, this user right is required to install or upgrade Windows.
 
 > [!NOTE]
-> This security setting does not affect who can modify the system environment variables and user environment variables that are displayed on the Advanced tab of System Properties.
+> This security setting doesn't affect who can modify the system environment variables and user environment variables that are displayed on the Advanced tab of System Properties.
 <!-- ModifyFirmwareEnvironment-Description-End -->
 
 <!-- ModifyFirmwareEnvironment-Editable-Begin -->
@@ -1675,7 +1772,7 @@ This user right determines who can modify firmware environment values. Firmware 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- ModifyFirmwareEnvironment-DFProperties-End -->
@@ -1701,7 +1798,7 @@ This user right determines who can modify firmware environment values. Firmware 
 <!-- ModifyObjectLabel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ModifyObjectLabel-Applicability-End -->
 
 <!-- ModifyObjectLabel-OmaUri-Begin -->
@@ -1724,7 +1821,7 @@ This user right determines which user accounts can modify the integrity label of
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- ModifyObjectLabel-DFProperties-End -->
@@ -1750,7 +1847,7 @@ This user right determines which user accounts can modify the integrity label of
 <!-- ProfileSingleProcess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ProfileSingleProcess-Applicability-End -->
 
 <!-- ProfileSingleProcess-OmaUri-Begin -->
@@ -1773,7 +1870,7 @@ This user right determines which users can use performance monitoring tools to m
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- ProfileSingleProcess-DFProperties-End -->
@@ -1799,7 +1896,7 @@ This user right determines which users can use performance monitoring tools to m
 <!-- ProfileSystemPerformance-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ProfileSystemPerformance-Applicability-End -->
 
 <!-- ProfileSystemPerformance-OmaUri-Begin -->
@@ -1822,7 +1919,7 @@ This security setting determines which users can use performance monitoring tool
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- ProfileSystemPerformance-DFProperties-End -->
@@ -1848,7 +1945,7 @@ This security setting determines which users can use performance monitoring tool
 <!-- RemoteShutdown-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- RemoteShutdown-Applicability-End -->
 
 <!-- RemoteShutdown-OmaUri-Begin -->
@@ -1871,7 +1968,7 @@ This user right determines which users are allowed to shut down a computer from 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- RemoteShutdown-DFProperties-End -->
@@ -1897,7 +1994,7 @@ This user right determines which users are allowed to shut down a computer from 
 <!-- ReplaceProcessLevelToken-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ReplaceProcessLevelToken-Applicability-End -->
 
 <!-- ReplaceProcessLevelToken-OmaUri-Begin -->
@@ -1920,7 +2017,7 @@ This security setting determines which user accounts can call the CreateProcessA
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- ReplaceProcessLevelToken-DFProperties-End -->
@@ -1946,7 +2043,7 @@ This security setting determines which user accounts can call the CreateProcessA
 <!-- RestoreFilesAndDirectories-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- RestoreFilesAndDirectories-Applicability-End -->
 
 <!-- RestoreFilesAndDirectories-OmaUri-Begin -->
@@ -1972,7 +2069,7 @@ This user right determines which users can bypass file, directory, registry, and
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- RestoreFilesAndDirectories-DFProperties-End -->
@@ -1998,7 +2095,7 @@ This user right determines which users can bypass file, directory, registry, and
 <!-- ShutDownTheSystem-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ShutDownTheSystem-Applicability-End -->
 
 <!-- ShutDownTheSystem-OmaUri-Begin -->
@@ -2009,7 +2106,7 @@ This user right determines which users can bypass file, directory, registry, and
 
 <!-- ShutDownTheSystem-Description-Begin -->
 <!-- Description-Source-DDF -->
-This security setting determines which users who are logged on locally to the computer can shut down the operating system using the Shut Down command. Misuse of this user right can result in a denial of service.
+This security setting determines which users who are logged-on locally to the computer can shut down the operating system using the Shut Down command. Misuse of this user right can result in a denial of service.
 <!-- ShutDownTheSystem-Description-End -->
 
 <!-- ShutDownTheSystem-Editable-Begin -->
@@ -2021,7 +2118,7 @@ This security setting determines which users who are logged on locally to the co
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- ShutDownTheSystem-DFProperties-End -->
@@ -2047,7 +2144,7 @@ This security setting determines which users who are logged on locally to the co
 <!-- TakeOwnership-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TakeOwnership-Applicability-End -->
 
 <!-- TakeOwnership-OmaUri-Begin -->
@@ -2073,7 +2170,7 @@ This user right determines which users can take ownership of any securable objec
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- TakeOwnership-DFProperties-End -->

@@ -4,7 +4,7 @@ description: Learn more about the DeviceInstallation Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 04/26/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- DeviceInstallation-Begin -->
 # Policy CSP - DeviceInstallation
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- DeviceInstallation-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- AllowInstallationOfMatchingDeviceIDs-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowInstallationOfMatchingDeviceIDs-Applicability-End -->
 
 <!-- AllowInstallationOfMatchingDeviceIDs-OmaUri-Begin -->
@@ -45,18 +42,20 @@ ms.topic: reference
 This policy setting allows you to specify a list of Plug and Play hardware IDs and compatible IDs for devices that Windows is allowed to install. This policy setting is intended to be used only when the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is enabled, however it may also be used with the "Prevent installation of devices not described by other policy settings" policy setting for legacy policy definitions.
 
 When this policy setting is enabled together with the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting, Windows is allowed to install or update any device whose Plug and Play hardware ID or compatible ID appears in the list you create, unless another policy setting at the same or higher layer in the hierarchy specifically prevents that installation, such as the following policy settings:
-  - Prevent installation of devices that match these device IDs
-  - Prevent installation of devices that match any of these device instance IDs
-If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is not enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
+
+- Prevent installation of devices that match these device IDs
+- Prevent installation of devices that match any of these device instance IDs.
+
+If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting isn't enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
 
 > [!NOTE]
-> The "Prevent installation of devices not described by other policy settings" policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting for supported target Windows 10 versions. It is recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting when possible.
+> The "Prevent installation of devices not described by other policy settings" policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting for supported target Windows 10 versions. It's recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting when possible.
 
 Alternatively, if this policy setting is enabled together with the "Prevent installation of devices not described by other policy settings" policy setting, Windows is allowed to install or update any device whose Plug and Play hardware ID or compatible ID appears in the list you create, unless another policy setting specifically prevents that installation (for example, the "Prevent installation of devices that match any of these device IDs" policy setting, the "Prevent installation of devices for these device classes" policy setting, the "Prevent installation of devices that match any of these device instance IDs" policy setting, or the "Prevent installation of removable devices" policy setting).
 
 - If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-- If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
+- If you disable or don't configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
 <!-- AllowInstallationOfMatchingDeviceIDs-Description-End -->
 
 <!-- AllowInstallationOfMatchingDeviceIDs-Editable-Begin -->
@@ -69,13 +68,12 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowInstallationOfMatchingDeviceIDs-DFProperties-End -->
 
 <!-- AllowInstallationOfMatchingDeviceIDs-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -133,7 +131,7 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 <!-- AllowInstallationOfMatchingDeviceInstanceIDs-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AllowInstallationOfMatchingDeviceInstanceIDs-Applicability-End -->
 
 <!-- AllowInstallationOfMatchingDeviceInstanceIDs-OmaUri-Begin -->
@@ -147,17 +145,19 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 This policy setting allows you to specify a list of Plug and Play device instance IDs for devices that Windows is allowed to install. This policy setting is intended to be used only when the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is enabled, however it may also be used with the "Prevent installation of devices not described by other policy settings" policy setting for legacy policy definitions.
 
 When this policy setting is enabled together with the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting, Windows is allowed to install or update any device whose Plug and Play device instance ID appears in the list you create, unless another policy setting at the same or higher layer in the hierarchy specifically prevents that installation, such as the following policy settings:
-  - Prevent installation of devices that match any of these device instance IDs
-If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is not enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
+
+- Prevent installation of devices that match any of these device instance IDs.
+
+If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting isn't enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
 
 > [!NOTE]
-> The "Prevent installation of devices not described by other policy settings" policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting for supported target Windows 10 versions. It is recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting when possible.
+> The "Prevent installation of devices not described by other policy settings" policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting for supported target Windows 10 versions. It's recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting when possible.
 
 Alternatively, if this policy setting is enabled together with the "Prevent installation of devices not described by other policy settings" policy setting, Windows is allowed to install or update any device whose Plug and Play device instance ID appears in the list you create, unless another policy setting specifically prevents that installation (for example, the "Prevent installation of devices that match any of these device IDs" policy setting, the "Prevent installation of devices for these device classes" policy setting, the "Prevent installation of devices that match any of these device instance IDs" policy setting, or the "Prevent installation of removable devices" policy setting).
 
 - If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-- If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
+- If you disable or don't configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
 <!-- AllowInstallationOfMatchingDeviceInstanceIDs-Description-End -->
 
 <!-- AllowInstallationOfMatchingDeviceInstanceIDs-Editable-Begin -->
@@ -170,13 +170,12 @@ Peripherals can be specified by their [device instance ID](/windows-hardware/dri
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowInstallationOfMatchingDeviceInstanceIDs-DFProperties-End -->
 
 <!-- AllowInstallationOfMatchingDeviceInstanceIDs-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -236,7 +235,7 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <!-- AllowInstallationOfMatchingDeviceSetupClasses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowInstallationOfMatchingDeviceSetupClasses-Applicability-End -->
 
 <!-- AllowInstallationOfMatchingDeviceSetupClasses-OmaUri-Begin -->
@@ -250,19 +249,21 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 This policy setting allows you to specify a list of device setup class globally unique identifiers (GUIDs) for driver packages that Windows is allowed to install. This policy setting is intended to be used only when the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is enabled, however it may also be used with the "Prevent installation of devices not described by other policy settings" policy setting for legacy policy definitions.
 
 When this policy setting is enabled together with the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting, Windows is allowed to install or update driver packages whose device setup class GUIDs appear in the list you create, unless another policy setting at the same or higher layer in the hierarchy specifically prevents that installation, such as the following policy settings:
-  - Prevent installation of devices for these device classes
-  - Prevent installation of devices that match these device IDs
-  - Prevent installation of devices that match any of these device instance IDs
-If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is not enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
+
+- Prevent installation of devices for these device classes
+- Prevent installation of devices that match these device IDs
+- Prevent installation of devices that match any of these device instance IDs.
+
+If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting isn't enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
 
 > [!NOTE]
-> The "Prevent installation of devices not described by other policy settings" policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting for supported target Windows 10 versions. It is recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting when possible.
+> The "Prevent installation of devices not described by other policy settings" policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting for supported target Windows 10 versions. It's recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting when possible.
 
 Alternatively, if this policy setting is enabled together with the "Prevent installation of devices not described by other policy settings" policy setting, Windows is allowed to install or update driver packages whose device setup class GUIDs appear in the list you create, unless another policy setting specifically prevents installation (for example, the "Prevent installation of devices that match these device IDs" policy setting, the "Prevent installation of devices for these device classes" policy setting, the "Prevent installation of devices that match any of these device instance IDs" policy setting, or the "Prevent installation of removable devices" policy setting).
 
 - If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-- If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
+- If you disable or don't configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
 <!-- AllowInstallationOfMatchingDeviceSetupClasses-Description-End -->
 
 <!-- AllowInstallationOfMatchingDeviceSetupClasses-Editable-Begin -->
@@ -275,13 +276,12 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowInstallationOfMatchingDeviceSetupClasses-DFProperties-End -->
 
 <!-- AllowInstallationOfMatchingDeviceSetupClasses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -347,7 +347,7 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 <!-- EnableInstallationPolicyLayering-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.256] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.2145] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1714] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1151] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.256] and later <br> ✅ Windows 10, version 1809 [10.0.17763.2145] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1714] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1151] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableInstallationPolicyLayering-Applicability-End -->
 
 <!-- EnableInstallationPolicyLayering-OmaUri-Begin -->
@@ -360,31 +360,31 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 <!-- Description-Source-ADMX -->
 This policy setting will change the evaluation order in which Allow and Prevent policy settings are applied when more than one install policy setting is applicable for a given device. Enable this policy setting to ensure that overlapping device match criteria is applied based on an established hierarchy where more specific match criteria supersedes less specific match criteria. The hierarchical order of evaluation for policy settings that specify device match criteria is as follows:
 
-Device instance IDs > Device IDs > Device setup class > Removable devices
+Device instance IDs > Device IDs > Device setup class > Removable devices.
 
-Device instance IDs
+Device instance IDs.
 
 1. Prevent installation of devices using drivers that match these device instance IDs
-2. Allow installation of devices using drivers that match these device instance IDs
+1. Allow installation of devices using drivers that match these device instance IDs.
 
-Device IDs
+Device IDs.
 
-3. Prevent installation of devices using drivers that match these device IDs
-4. Allow installation of devices using drivers that match these device IDs
+1. Prevent installation of devices using drivers that match these device IDs
+1. Allow installation of devices using drivers that match these device IDs.
 
-Device setup class
+Device setup class.
 
-5. Prevent installation of devices using drivers that match these device setup classes
-6. Allow installation of devices using drivers that match these device setup classes
+1. Prevent installation of devices using drivers that match these device setup classes
+1. Allow installation of devices using drivers that match these device setup classes.
 
-Removable devices
+Removable devices.
 
-7. Prevent installation of removable devices
+1. Prevent installation of removable devices.
 
 > [!NOTE]
 > This policy setting provides more granular control than the "Prevent installation of devices not described by other policy settings" policy setting. If these conflicting policy settings are enabled at the same time, the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting will be enabled and the other policy setting will be ignored.
 
-If you disable or do not configure this policy setting, the default evaluation is used. By default, all "Prevent installation..." policy settings have precedence over any other policy setting that allows Windows to install a device.
+If you disable or don't configure this policy setting, the default evaluation is used. By default, all "Prevent installation.". policy settings have precedence over any other policy setting that allows Windows to install a device.
 <!-- EnableInstallationPolicyLayering-Description-End -->
 
 <!-- EnableInstallationPolicyLayering-Editable-Begin -->
@@ -396,13 +396,12 @@ If you disable or do not configure this policy setting, the default evaluation i
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableInstallationPolicyLayering-DFProperties-End -->
 
 <!-- EnableInstallationPolicyLayering-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -464,7 +463,7 @@ You can also change the evaluation order of device installation policy settings 
 <!-- PreventDeviceMetadataFromNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- PreventDeviceMetadataFromNetwork-Applicability-End -->
 
 <!-- PreventDeviceMetadataFromNetwork-OmaUri-Begin -->
@@ -477,9 +476,9 @@ You can also change the evaluation order of device installation policy settings 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent Windows from retrieving device metadata from the Internet.
 
-- If you enable this policy setting, Windows does not retrieve device metadata for installed devices from the Internet. This policy setting overrides the setting in the Device Installation Settings dialog box (Control Panel > System and Security > System > Advanced System Settings > Hardware tab).
+- If you enable this policy setting, Windows doesn't retrieve device metadata for installed devices from the Internet. This policy setting overrides the setting in the Device Installation Settings dialog box (Control Panel > System and Security > System > Advanced System Settings > Hardware tab).
 
-- If you disable or do not configure this policy setting, the setting in the Device Installation Settings dialog box controls whether Windows retrieves device metadata from the Internet.
+- If you disable or don't configure this policy setting, the setting in the Device Installation Settings dialog box controls whether Windows retrieves device metadata from the Internet.
 <!-- PreventDeviceMetadataFromNetwork-Description-End -->
 
 <!-- PreventDeviceMetadataFromNetwork-Editable-Begin -->
@@ -491,13 +490,12 @@ This policy setting allows you to prevent Windows from retrieving device metadat
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventDeviceMetadataFromNetwork-DFProperties-End -->
 
 <!-- PreventDeviceMetadataFromNetwork-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -524,7 +522,7 @@ This policy setting allows you to prevent Windows from retrieving device metadat
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Applicability-End -->
 
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-OmaUri-Begin -->
@@ -535,14 +533,14 @@ This policy setting allows you to prevent Windows from retrieving device metadat
 
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to prevent the installation of devices that are not specifically described by any other policy setting.
+This policy setting allows you to prevent the installation of devices that aren't specifically described by any other policy setting.
 
 > [!NOTE]
-> This policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting to provide more granular control. It is recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting instead of this policy setting.
+> This policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting to provide more granular control. It's recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting instead of this policy setting.
 
-- If you enable this policy setting, Windows is prevented from installing or updating the driver package for any device that is not described by either the "Allow installation of devices that match any of these device IDs", the "Allow installation of devices for these device classes", or the "Allow installation of devices that match any of these device instance IDs" policy setting.
+- If you enable this policy setting, Windows is prevented from installing or updating the driver package for any device that isn't described by either the "Allow installation of devices that match any of these device IDs", the "Allow installation of devices for these device classes", or the "Allow installation of devices that match any of these device instance IDs" policy setting.
 
-- If you disable or do not configure this policy setting, Windows is allowed to install or update the driver package for any device that is not described by the "Prevent installation of devices that match any of these device IDs", "Prevent installation of devices for these device classes" policy setting, "Prevent installation of devices that match any of these device instance IDs", or "Prevent installation of removable devices" policy setting.
+- If you disable or don't configure this policy setting, Windows is allowed to install or update the driver package for any device that isn't described by the "Prevent installation of devices that match any of these device IDs", "Prevent installation of devices for these device classes" policy setting, "Prevent installation of devices that match any of these device instance IDs", or "Prevent installation of removable devices" policy setting.
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Description-End -->
 
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Editable-Begin -->
@@ -554,13 +552,12 @@ This policy setting allows you to prevent the installation of devices that are n
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-DFProperties-End -->
 
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -624,7 +621,7 @@ You can also block installation by using a custom profile in Intune.
 <!-- PreventInstallationOfMatchingDeviceIDs-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PreventInstallationOfMatchingDeviceIDs-Applicability-End -->
 
 <!-- PreventInstallationOfMatchingDeviceIDs-OmaUri-Begin -->
@@ -644,7 +641,7 @@ This policy setting allows you to specify a list of Plug and Play hardware IDs a
 
 - If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-- If you disable or do not configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.
+- If you disable or don't configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.
 <!-- PreventInstallationOfMatchingDeviceIDs-Description-End -->
 
 <!-- PreventInstallationOfMatchingDeviceIDs-Editable-Begin -->
@@ -657,13 +654,12 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventInstallationOfMatchingDeviceIDs-DFProperties-End -->
 
 <!-- PreventInstallationOfMatchingDeviceIDs-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -729,7 +725,7 @@ For example, this custom profile blocks installation and usage of USB devices wi
 <!-- PreventInstallationOfMatchingDeviceInstanceIDs-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- PreventInstallationOfMatchingDeviceInstanceIDs-Applicability-End -->
 
 <!-- PreventInstallationOfMatchingDeviceInstanceIDs-OmaUri-Begin -->
@@ -746,7 +742,7 @@ This policy setting allows you to specify a list of Plug and Play device instanc
 
 - If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-- If you disable or do not configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.
+- If you disable or don't configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.
 <!-- PreventInstallationOfMatchingDeviceInstanceIDs-Description-End -->
 
 <!-- PreventInstallationOfMatchingDeviceInstanceIDs-Editable-Begin -->
@@ -759,13 +755,12 @@ Peripherals can be specified by their [device instance ID](/windows-hardware/dri
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventInstallationOfMatchingDeviceInstanceIDs-DFProperties-End -->
 
 <!-- PreventInstallationOfMatchingDeviceInstanceIDs-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -841,7 +836,7 @@ To prevent installation of devices with matching device instance IDs by using cu
 <!-- PreventInstallationOfMatchingDeviceSetupClasses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PreventInstallationOfMatchingDeviceSetupClasses-Applicability-End -->
 
 <!-- PreventInstallationOfMatchingDeviceSetupClasses-OmaUri-Begin -->
@@ -861,7 +856,7 @@ This policy setting allows you to specify a list of device setup class globally 
 
 - If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-- If you disable or do not configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.
+- If you disable or don't configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.
 <!-- PreventInstallationOfMatchingDeviceSetupClasses-Description-End -->
 
 <!-- PreventInstallationOfMatchingDeviceSetupClasses-Editable-Begin -->
@@ -874,13 +869,12 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventInstallationOfMatchingDeviceSetupClasses-DFProperties-End -->
 
 <!-- PreventInstallationOfMatchingDeviceSetupClasses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

@@ -2,7 +2,7 @@
 title: How Windows Hello for Business works - technology and terms
 description: Explore technology and terms associated with Windows Hello for Business. Learn how Windows Hello for Business works.
 ms.date: 10/08/2018
-ms.topic: article
+ms.topic: glossary
 ---
 
 # Technology and terms
@@ -32,32 +32,44 @@ In the issued AIK certificate, a special OID is added to attest that endorsement
 - [Windows client certificate enrollment protocol: glossary](/openspecs/windows_protocols/ms-wcce/719b890d-62e6-4322-b9b1-1f34d11535b4#gt_70efa425-6b46-462f-911d-d399404529ab)
 - [TPM library specification](https://trustedcomputinggroup.org/resource/tpm-library-specification/)
 
-## Azure Active Directory join
+<a name='azure-active-directory-join'></a>
 
-Azure Active Directory (Azure AD) join is intended for organizations that desire to be cloud-first or cloud-only. There's no restriction on the size or type of organizations that can deploy Azure AD join. Azure AD join also works in a hybrid environment and can enable access to on-premises applications and resources.
+## Microsoft Entra join
 
-### Related to Azure AD join
+Microsoft Entra join is intended for organizations that desire to be cloud-first or cloud-only. There's no restriction on the size or type of organizations that can deploy Microsoft Entra join. Microsoft Entra join also works in a hybrid environment and can enable access to on-premises applications and resources.
+
+<a name='related-to-azure-ad-join'></a>
+
+### Related to Microsoft Entra join
 
 - [Join type](#join-type)
-- [Hybrid Azure AD join](#hybrid-azure-ad-join)
+- [Microsoft Entra hybrid join](#hybrid-azure-ad-join)
 
-### More information about Azure AD join
+<a name='more-information-about-azure-ad-join'></a>
 
-[Introduction to device identity in Azure AD](/azure/active-directory/devices/overview).
+### More information about Microsoft Entra join
 
-## Azure AD registration
+[Introduction to device identity in Microsoft Entra ID](/azure/active-directory/devices/overview).
 
-The goal of Azure AD-registered devices is to provide you with support for the _bring your own device_ (BYOD) scenario. In this scenario, a user can access your organization's Azure AD-controlled resources using a personal device.
+<a name='azure-ad-registration'></a>
 
-### Related to Azure AD registration
+## Microsoft Entra registration
 
-- [Azure AD join](#azure-active-directory-join)
-- [Hybrid Azure AD join](#hybrid-azure-ad-join)
+The goal of Microsoft Entra registered devices is to provide you with support for the _bring your own device_ (BYOD) scenario. In this scenario, a user can access your organization's Microsoft Entra ID-controlled resources using a personal device.
+
+<a name='related-to-azure-ad-registration'></a>
+
+### Related to Microsoft Entra registration
+
+- [Microsoft Entra join](#azure-active-directory-join)
+- [Microsoft Entra hybrid join](#hybrid-azure-ad-join)
 - [Join type](#join-type)
 
-### More information about Azure AD registration
+<a name='more-information-about-azure-ad-registration'></a>
 
-[Introduction to device identity in Azure AD](/azure/active-directory/devices/overview).
+### More information about Microsoft Entra registration
+
+[Introduction to device identity in Microsoft Entra ID](/azure/active-directory/devices/overview).
 
 ## Certificate trust
 
@@ -66,7 +78,7 @@ The certificate trust model uses a securely issued certificate based on the user
 ### Related to certificate trust
 
 - [Deployment type](#deployment-type)
-- [Hybrid Azure AD join](#hybrid-azure-ad-join)
+- [Microsoft Entra hybrid join](#hybrid-azure-ad-join)
 - [Hybrid deployment](#hybrid-deployment)
 - [Cloud Kerberos trust](#cloud-kerberos-trust)
 - [Key trust](#key-trust)
@@ -79,23 +91,23 @@ The certificate trust model uses a securely issued certificate based on the user
 
 ## Cloud deployment
 
-The Windows Hello for Business cloud deployment is exclusively for organizations using cloud-based identities and resources. Device management is accomplished using Intune or a modern management alternative. Cloud deployments use Azure AD-joined or Azure AD-registered devices.
+The Windows Hello for Business cloud deployment is exclusively for organizations using cloud-based identities and resources. Device management is accomplished using Intune or a modern management alternative. Cloud deployments use Microsoft Entra joined or Microsoft Entra registered devices.
 
 ### Related to cloud deployment
 
-- [Azure AD join](#azure-active-directory-join)
-- [Azure AD registration](#azure-ad-registration)
+- [Microsoft Entra join](#azure-active-directory-join)
+- [Microsoft Entra registration](#azure-ad-registration)
 - [Deployment type](#deployment-type)
 - [Join type](#join-type)
 
 ## Cloud experience host
 
-In Windows 10 and Windows 11, cloud experience host is an application used while joining the workplace environment or Azure AD for rendering the experience when collecting your company-provided credentials. Once you enroll your device to your workplace environment or Azure AD, your organization will be able to manage your PC and collect information about you (including your location). It might add or remove apps or content, change settings, disable features, prevent you from removing your company account, or reset your PC.
+In Windows 10 and Windows 11, cloud experience host is an application used while joining the workplace environment or Microsoft Entra ID for rendering the experience when collecting your company-provided credentials. Once you enroll your device to your workplace environment or Microsoft Entra ID, your organization will be able to manage your PC and collect information about you (including your location). It might add or remove apps or content, change settings, disable features, prevent you from removing your company account, or reset your PC.
 
 ### Related to cloud experience host
 
-- [Windows Hello for Business](./hello-identity-verification.md)
-- [Managed Windows Hello in organization](./hello-manage-in-organization.md)
+- [Windows Hello for Business](hello-identity-verification.md)
+- [Managed Windows Hello in organization](hello-manage-in-organization.md)
 
 ### More information on cloud experience host
 
@@ -111,7 +123,7 @@ Giving the simplicity offered by this model, cloud Kerberos trust is the recomme
 ### Related to cloud Kerberos trust
 
 - [Deployment type](#deployment-type)
-- [Hybrid Azure AD join](#hybrid-azure-ad-join)
+- [Microsoft Entra hybrid join](#hybrid-azure-ad-join)
 - [Hybrid deployment](#hybrid-deployment)
 - [Key trust](#key-trust)
 - [On-premises deployment](#on-premises-deployment)
@@ -168,7 +180,7 @@ For certain devices that use firmware-based TPM produced by Intel or Qualcomm, t
 
 ## Federated environment
 
-Primarily for large enterprise organizations with more complex authentication requirements, on-premises directory objects are synchronized with Azure AD and users accounts are managed on-premises. With AD FS, users have the same password on-premises and in the cloud and they don't have to sign in again to use Microsoft cloud services. This federated authentication model can provide extra authentication requirements, such as smart card-based authentication or a third-party multi-factor authentication and is typically required when organizations have an authentication requirement not natively supported by Azure AD.
+Primarily for large enterprise organizations with more complex authentication requirements, on-premises directory objects are synchronized with Microsoft Entra ID and users accounts are managed on-premises. With AD FS, users have the same password on-premises and in the cloud and they don't have to sign in again to use Microsoft cloud services. This federated authentication model can provide extra authentication requirements, such as smart card-based authentication or a third-party multi-factor authentication and is typically required when organizations have an authentication requirement not natively supported by Microsoft Entra ID.
 
 ### Related to federated environment
 
@@ -179,9 +191,11 @@ Primarily for large enterprise organizations with more complex authentication re
 
 ### More information about federated environment
 
-[Choose the right authentication method for your Azure AD hybrid identity solution](/azure/active-directory/hybrid/choose-ad-authn)
+[Choose the right authentication method for your Microsoft Entra hybrid identity solution](/azure/active-directory/hybrid/choose-ad-authn)
 
-## Hybrid Azure AD join
+<a name='hybrid-azure-ad-join'></a>
+
+## Microsoft Entra hybrid join
 
 For more than a decade, many organizations have used the domain join to their on-premises Active Directory to enable:
 
@@ -190,27 +204,31 @@ For more than a decade, many organizations have used the domain join to their on
 
 Typically, organizations with an on-premises footprint rely on imaging methods to provision devices, and they often use or group policy to manage them.
 
-If your environment has an on-premises AD footprint and you also want benefit from the capabilities provided by Azure AD, you can implement hybrid Azure AD-joined devices. These devices are joined to both your on-premises Active Directory and your Azure AD.
+If your environment has an on-premises AD footprint and you also want benefit from the capabilities provided by Microsoft Entra ID, you can implement Microsoft Entra hybrid joined devices. These devices are joined to both your on-premises Active Directory and your Microsoft Entra ID.
 
-### Related to hybrid Azure AD join
+<a name='related-to-hybrid-azure-ad-join'></a>
 
-- [Azure AD join](#azure-active-directory-join)
-- [Azure AD registration](#azure-ad-registration)
+### Related to Microsoft Entra hybrid join
+
+- [Microsoft Entra join](#azure-active-directory-join)
+- [Microsoft Entra registration](#azure-ad-registration)
 - [Hybrid deployment](#hybrid-deployment)
 
-### More information about hybrid Azure AD join
+<a name='more-information-about-hybrid-azure-ad-join'></a>
 
-[Introduction to device identity in Azure AD](/azure/active-directory/devices/overview)
+### More information about Microsoft Entra hybrid join
+
+[Introduction to device identity in Microsoft Entra ID](/azure/active-directory/devices/overview)
 
 ## Hybrid deployment
 
-The Windows Hello for Business hybrid deployment is for organizations that have both on-premises and cloud resources that are accessed using a managed or federated identity that's synchronized with Azure AD. Hybrid deployments support devices that are Azure AD-registered, Azure AD-joined, and hybrid Azure AD-joined. The Hybrid deployment model supports three trust types for on-premises authentication: cloud Kerberos trust, key trust and certificate trust.
+The Windows Hello for Business hybrid deployment is for organizations that have both on-premises and cloud resources that are accessed using a managed or federated identity that's synchronized with Microsoft Entra ID. Hybrid deployments support devices that are Microsoft Entra registered, Microsoft Entra joined, and Microsoft Entra hybrid joined. The Hybrid deployment model supports three trust types for on-premises authentication: cloud Kerberos trust, key trust and certificate trust.
 
 ### Related to hybrid deployment
 
-- [Azure AD join](#azure-active-directory-join)
-- [Azure AD registration](#azure-ad-registration)
-- [Hybrid Azure AD join](#hybrid-azure-ad-join)
+- [Microsoft Entra join](#azure-active-directory-join)
+- [Microsoft Entra registration](#azure-ad-registration)
+- [Microsoft Entra hybrid join](#hybrid-azure-ad-join)
 
 ### More information about hybrid deployment
 
@@ -218,23 +236,23 @@ The Windows Hello for Business hybrid deployment is for organizations that have 
 
 ## Join type
 
-Join type is how devices are associated with Azure AD. For a device to authenticate to Azure AD it must be registered or joined.
+Join type is how devices are associated with Microsoft Entra ID. For a device to authenticate to Microsoft Entra it must be registered or joined.
 
-Registering a device to Azure AD enables you to manage a device's identity. When a device is registered, Azure AD device registration provides the device with an identity that is used to authenticate the device when a user signs-in to Azure AD. You can use the identity to enable or disable a device.
+Registering a device to Microsoft Entra ID enables you to manage a device's identity. When a device is registered, Microsoft Entra device registration provides the device with an identity that is used to authenticate the device when a user signs-in to Microsoft Entra ID. You can use the identity to enable or disable a device.
 
-When combined with a mobile device management (MDM) solution such as Microsoft Intune, the device attributes in Azure AD are updated with additional information about the device. This behavior allows you to create conditional access rules that enforce access from devices to meet your standards for security and compliance. For more information on enrolling devices in Microsoft Intune, see Enroll devices for management in Intune.
+When combined with a mobile device management (MDM) solution such as Microsoft Intune, the device attributes in Microsoft Entra ID are updated with additional information about the device. This behavior allows you to create conditional access rules that enforce access from devices to meet your standards for security and compliance. For more information on enrolling devices in Microsoft Intune, see Enroll devices for management in Intune.
 
 Joining a device is an extension to registering a device. This method provides you with all the benefits of registering a device, and changes the local state of a device. Changing the local state enables your users to sign-in to a device using an organizational work or school account instead of a personal account.
 
 ### Related to join type
 
-- [Azure AD join](#azure-active-directory-join)
-- [Azure AD registration](#azure-ad-registration)
-- [Hybrid Azure AD join](#hybrid-azure-ad-join)
+- [Microsoft Entra join](#azure-active-directory-join)
+- [Microsoft Entra registration](#azure-ad-registration)
+- [Microsoft Entra hybrid join](#hybrid-azure-ad-join)
 
 ### More information about join type
 
-[Introduction to device identity in Azure AD](/azure/active-directory/devices/overview)
+[Introduction to device identity in Microsoft Entra ID](/azure/active-directory/devices/overview)
 
 ## Key trust
 
@@ -245,7 +263,7 @@ The key trust model uses the user's Windows Hello for Business identity to authe
 - [Cloud Kerberos trust](#cloud-kerberos-trust)
 - [Certificate trust](#certificate-trust)
 - [Deployment type](#deployment-type)
-- [Hybrid Azure AD join](#hybrid-azure-ad-join)
+- [Microsoft Entra hybrid join](#hybrid-azure-ad-join)
 - [Hybrid deployment](#hybrid-deployment)
 - [On-premises deployment](#on-premises-deployment)
 - [Trust type](#trust-type)
@@ -256,7 +274,7 @@ The key trust model uses the user's Windows Hello for Business identity to authe
 
 ## Managed environment
 
-Managed environments are for non-federated environments where Azure AD manages the authentication using technologies such as Password Hash Synchronization and Pass-through Authentication rather than a federation service such as Active Directory Federation Services (ADFS).
+Managed environments are for non-federated environments where Microsoft Entra ID manages the authentication using technologies such as Password Hash Synchronization and Pass-through Authentication rather than a federation service such as Active Directory Federation Services (ADFS).
 
 ### Related to managed environment
 
@@ -280,7 +298,7 @@ The Windows Hello for Business on-premises deployment is for organizations that 
 
 ## Pass-through authentication
 
-Pass-through authentication provides a simple password validation for Azure AD authentication services. It uses a software agent that runs on one or more on-premises servers to validate the users directly with your on-premises Active Directory. With pass-through authentication (PTA), you synchronize on-premises Active Directory user account objects with Azure AD and manage your users on-premises. Allows your users to sign in to both on-premises and Microsoft cloud resources and applications using their on-premises account and password. This configuration validates users' passwords directly against your on-premises Active Directory without sending password hashes to Azure AD. Companies with a security requirement to immediately enforce on-premises user account states, password policies, and sign-in hours would use this authentication method. With seamless single sign-on, users are automatically signed in to Azure AD when they are on their corporate devices and connected to your corporate network.
+Pass-through authentication provides a simple password validation for Microsoft Entra authentication services. It uses a software agent that runs on one or more on-premises servers to validate the users directly with your on-premises Active Directory. With pass-through authentication (PTA), you synchronize on-premises Active Directory user account objects with Microsoft Entra ID and manage your users on-premises. Allows your users to sign in to both on-premises and Microsoft cloud resources and applications using their on-premises account and password. This configuration validates users' passwords directly against your on-premises Active Directory without sending password hashes to Microsoft Entra ID. Companies with a security requirement to immediately enforce on-premises user account states, password policies, and sign-in hours would use this authentication method. With seamless single sign-on, users are automatically signed in to Microsoft Entra ID when they are on their corporate devices and connected to your corporate network.
 
 ### Related to pass-through authentication
 
@@ -290,11 +308,11 @@ Pass-through authentication provides a simple password validation for Azure AD a
 
 ### More information about pass-through authentication
 
-[Choose the right authentication method for your Azure AD hybrid identity solution](/azure/active-directory/hybrid/choose-ad-authn)
+[Choose the right authentication method for your Microsoft Entra hybrid identity solution](/azure/active-directory/hybrid/choose-ad-authn)
 
 ## Password hash sync
 
-Password hash sync is the simplest way to enable authentication for on-premises directory objects in Azure AD. With password hash sync (PHS), you synchronize your on-premises Active Directory user account objects with Azure AD and manage your users on-premises. Hashes of user passwords are synchronized from your on-premises Active Directory to Azure AD so that the users have the same password on-premises and in the cloud. When passwords are changed or reset on-premises, the new password hashes are synchronized to Azure AD so that your users can always use the same password for cloud resources and on-premises resources. The passwords are never sent to Azure AD or stored in Azure AD in clear text. Some premium features of Azure AD, such as Identity Protection, require PHS regardless of which authentication method is selected. With seamless single sign-on, users are automatically signed in to Azure AD when they are on their corporate devices and connected to your corporate network.
+Password hash sync is the simplest way to enable authentication for on-premises directory objects in Microsoft Entra ID. With password hash sync (PHS), you synchronize your on-premises Active Directory user account objects with Microsoft Entra ID and manage your users on-premises. Hashes of user passwords are synchronized from your on-premises Active Directory to Microsoft Entra ID so that the users have the same password on-premises and in the cloud. When passwords are changed or reset on-premises, the new password hashes are synchronized to Microsoft Entra ID so that your users can always use the same password for cloud resources and on-premises resources. The passwords are never sent to Microsoft Entra ID or stored in Microsoft Entra ID in clear text. Some premium features of Microsoft Entra ID, such as Identity Protection, require PHS regardless of which authentication method is selected. With seamless single sign-on, users are automatically signed in to Microsoft Entra ID when they are on their corporate devices and connected to your corporate network.
 
 ### Related to password hash sync
 
@@ -304,13 +322,13 @@ Password hash sync is the simplest way to enable authentication for on-premises 
 
 ### More information about password hash sync
 
-[Choose the right authentication method for your Azure AD hybrid identity solution](/azure/active-directory/hybrid/choose-ad-authn)
+[Choose the right authentication method for your Microsoft Entra hybrid identity solution](/azure/active-directory/hybrid/choose-ad-authn)
 
 ## Primary refresh token
 
-Single sign on (SSO) relies on special tokens obtained for each of the types of applications above. These special tokens are then used to obtain access tokens to specific applications. In the traditional Windows Integrated authentication case using Kerberos, this token is a Kerberos TGT (ticket-granting ticket). For Azure AD and AD FS applications, this token is a _primary refresh token_ (PRT). It's a [JSON Web Token](https://openid.net/specs/draft-jones-json-web-token-07.html) that contains claims about both the user and the device.
+Single sign on (SSO) relies on special tokens obtained for each of the types of applications above. These special tokens are then used to obtain access tokens to specific applications. In the traditional Windows Integrated authentication case using Kerberos, this token is a Kerberos TGT (ticket-granting ticket). For Microsoft Entra ID and AD FS applications, this token is a _primary refresh token_ (PRT). It's a [JSON Web Token](https://openid.net/specs/draft-jones-json-web-token-07.html) that contains claims about both the user and the device.
 
-The PRT is initially obtained during Windows user sign-in or unlock in a similar way the Kerberos TGT is obtained. This behavior is true for both Azure AD joined and hybrid Azure AD-joined devices. For personal devices registered with Azure AD, the PRT is initially obtained upon Add Work or School Account. For a personal device the account to unlock the device isn't the work account, but a consumer account. For example, hotmail.com, live.com, or outlook.com.
+The PRT is initially obtained during Windows user sign-in or unlock in a similar way the Kerberos TGT is obtained. This behavior is true for both Microsoft Entra joined and Microsoft Entra hybrid joined devices. For personal devices registered with Microsoft Entra ID, the PRT is initially obtained upon Add Work or School Account. For a personal device the account to unlock the device isn't the work account, but a consumer account. For example, hotmail.com, live.com, or outlook.com.
 
 The PRT is needed for SSO. Without it, the user will be prompted for credentials when accessing applications every time. The PRT also contains information about the device. If you have any [device-based conditional access](/azure/active-directory/conditional-access/concept-conditional-access-grant) policy set on an application, without the PRT, access will be denied.
 
@@ -330,7 +348,7 @@ The storage root key (SRK) is also an asymmetric key pair (RSA with a minimum of
 
 ## Trust type
 
-The trust type determines how a user authenticates to the Active Directory to access on-premises resources. There are two trust types, key trust and certificate trust. The hybrid and on-premises deployment models support both trust types. The trust type doesn't affect authentication to Azure AD. Windows Hello for Business authentication to Azure AD always uses the key, not a certificate (excluding smart card authentication in a federated environment).
+The trust type determines how a user authenticates to the Active Directory to access on-premises resources. There are two trust types, key trust and certificate trust. The hybrid and on-premises deployment models support both trust types. The trust type doesn't affect authentication to Microsoft Entra ID. Windows Hello for Business authentication to Microsoft Entra ID always uses the key, not a certificate (excluding smart card authentication in a federated environment).
 
 ### Related to trust type
 
@@ -359,7 +377,7 @@ A TPM implements controls that meet the specification described by the Trusted C
 - The first TPM specification, version 1.2, was published in February 2005 by the TCG and standardized under ISO / IEC 11889 standard.
 - The latest TPM specification, referred to as TPM 2.0, was released in April 2014 and has been approved by the ISO/IEC Joint Technical Committee (JTC) as ISO/IEC 11889:2015.
 
-Windows 10 and Windows 11 use the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows](../../information-protection/tpm/tpm-recommendations.md).
+Windows 10 and Windows 11 use the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows](../../hardware-security/tpm/tpm-recommendations.md).
 
 Windows recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 and Windows 11 support only TPM 2.0.
 

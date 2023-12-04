@@ -1,0 +1,18 @@
+items:
+  - name: Security baselines
+    href: windows-security-configuration-framework/windows-security-baselines.md
+    items:
+    - name: Security Compliance Toolkit
+      href: windows-security-configuration-framework/security-compliance-toolkit-10.md
+    - name: Get support
+      href: windows-security-configuration-framework/get-support-for-security-baselines.md
+    - name: Guide to removing Microsoft Baseline Security Analyzer (MBSA)
+      href: windows-security-configuration-framework/mbsa-removal-and-guidance.md
+  - name: More Windows security
+    items:
+    - name: Override Process Mitigation Options to help enforce app-related security policies
+      href: ../../threat-protection/override-mitigation-options-for-app-related-security-policies.md
+    - name: Use Windows Event Forwarding to help with intrusion detection
+      href: ../../threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection.md
+    - name: Block untrusted fonts in an enterprise
+      href: ../../threat-protection/block-untrusted-fonts-in-enterprise.md

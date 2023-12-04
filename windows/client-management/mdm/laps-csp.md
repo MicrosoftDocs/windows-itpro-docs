@@ -4,7 +4,7 @@ description: Learn more about the LAPS CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 04/07/2023
+ms.date: 10/24/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,12 +16,14 @@ ms.topic: reference
 <!-- LAPS-Begin -->
 # LAPS CSP
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+
 <!-- LAPS-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The Local Administrator Password Solution (LAPS) configuration service provider (CSP) is used by the enterprise to manage back up of local administrator account passwords. Windows supports a LAPS Group Policy Object that is entirely separate from the LAPS CSP. Many of the various settings are common across both the LAPS GPO and CSP (GPO does not support any of the Action-related settings). As long as at least one LAPS setting is configured via CSP, any GPO-configured settings will be ignored. Also see [Configure policy settings for Windows LAPS](/windows-server/identity/laps/laps-management-policy-settings).
 
 > [!NOTE]
-> For more information on specific OS updates required to use the Windows LAPS CSP and associated features, plus the current status of the Azure Active Directory LAPS scenario, see [Windows LAPS availability and Azure AD LAPS public preview status](/windows-server/identity/laps/laps-overview#windows-laps-supported-platforms-and-azure-ad-laps-preview-status).
+> For more information on specific OS updates required to use the Windows LAPS CSP and associated features, plus the current status of the Microsoft Entra LAPS scenario, see [Windows LAPS availability and Microsoft Entra LAPS public preview status](/windows-server/identity/laps/laps-overview#windows-laps-supported-platforms-and-azure-ad-laps-preview-status).
 
 > [!TIP]
 > This article covers the specific technical details of the LAPS CSP.  For more information about the scenarios in which the LAPS CSP would be used, see [Windows Local Administrator Password Solution](/windows-server/identity/laps/laps).
@@ -54,7 +56,7 @@ The following list shows the LAPS configuration service provider nodes:
 <!-- Device-Actions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later <br> ✅ Windows Insider Preview [10.0.25145] |
 <!-- Device-Actions-Applicability-End -->
 
 <!-- Device-Actions-OmaUri-Begin -->
@@ -77,7 +79,7 @@ Defines the parent interior node for all action-related settings in the LAPS CSP
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Actions-DFProperties-End -->
 
@@ -93,7 +95,7 @@ Defines the parent interior node for all action-related settings in the LAPS CSP
 <!-- Device-Actions-ResetPassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later <br> ✅ Windows Insider Preview [10.0.25145] |
 <!-- Device-Actions-ResetPassword-Applicability-End -->
 
 <!-- Device-Actions-ResetPassword-OmaUri-Begin -->
@@ -117,7 +119,7 @@ This action invokes an immediate reset of the local administrator account passwo
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Exec |
 <!-- Device-Actions-ResetPassword-DFProperties-End -->
 
@@ -133,7 +135,7 @@ This action invokes an immediate reset of the local administrator account passwo
 <!-- Device-Actions-ResetPasswordStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later <br> ✅ Windows Insider Preview [10.0.25145] |
 <!-- Device-Actions-ResetPasswordStatus-Applicability-End -->
 
 <!-- Device-Actions-ResetPasswordStatus-OmaUri-Begin -->
@@ -161,7 +163,7 @@ The value returned is an HRESULT code:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 | Default Value  | 0 |
 <!-- Device-Actions-ResetPasswordStatus-DFProperties-End -->
@@ -178,7 +180,7 @@ The value returned is an HRESULT code:
 <!-- Device-Policies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later <br> ✅ Windows Insider Preview [10.0.25145] |
 <!-- Device-Policies-Applicability-End -->
 
 <!-- Device-Policies-OmaUri-Begin -->
@@ -201,7 +203,7 @@ Root node for LAPS policies.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 | Atomic Required | True |
 <!-- Device-Policies-DFProperties-End -->
@@ -218,7 +220,7 @@ Root node for LAPS policies.
 <!-- Device-Policies-ADEncryptedPasswordHistorySize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later <br> ✅ Windows Insider Preview [10.0.25145] |
 <!-- Device-Policies-ADEncryptedPasswordHistorySize-Applicability-End -->
 
 <!-- Device-Policies-ADEncryptedPasswordHistorySize-OmaUri-Begin -->
@@ -249,7 +251,7 @@ This setting has a maximum allowed value of 12 passwords.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-12]` |
 | Default Value  | 0 |
@@ -268,7 +270,7 @@ This setting has a maximum allowed value of 12 passwords.
 <!-- Device-Policies-AdministratorAccountName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later <br> ✅ Windows Insider Preview [10.0.25145] |
 <!-- Device-Policies-AdministratorAccountName-Applicability-End -->
 
 <!-- Device-Policies-AdministratorAccountName-OmaUri-Begin -->
@@ -285,7 +287,7 @@ If not specified, the default built-in local administrator account will be locat
 
 If specified, the specified account's password will be managed.
 
-**Note** if a custom managed local administrator account name is specified in this setting, that account must be created via other means. Specifying a name in this setting will not cause the account to be created.
+Note if a custom managed local administrator account name is specified in this setting, that account must be created via other means. Specifying a name in this setting won't cause the account to be created.
 <!-- Device-Policies-AdministratorAccountName-Description-End -->
 
 <!-- Device-Policies-AdministratorAccountName-Editable-Begin -->
@@ -297,7 +299,7 @@ If specified, the specified account's password will be managed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Policies-AdministratorAccountName-DFProperties-End -->
 
@@ -313,7 +315,7 @@ If specified, the specified account's password will be managed.
 <!-- Device-Policies-ADPasswordEncryptionEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later <br> ✅ Windows Insider Preview [10.0.25145] |
 <!-- Device-Policies-ADPasswordEncryptionEnabled-Applicability-End -->
 
 <!-- Device-Policies-ADPasswordEncryptionEnabled-OmaUri-Begin -->
@@ -332,7 +334,7 @@ This setting is only honored when the Active Directory domain is at Windows Serv
 
 - If this setting is enabled, and the Active Directory domain meets the DFL prerequisite, the password will be encrypted before being stored in Active Directory.
 
-- If this setting is disabled, or the Active Directory domain does not meet the DFL prerequisite, the password will be stored as clear-text in Active Directory.
+- If this setting is disabled, or the Active Directory domain doesn't meet the DFL prerequisite, the password will be stored as clear-text in Active Directory.
 
 If not specified, this setting defaults to True.
 <!-- Device-Policies-ADPasswordEncryptionEnabled-Description-End -->
@@ -348,7 +350,7 @@ If not specified, this setting defaults to True.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | True |
 | Dependency [BackupDirectory] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/LAPS/Policies/BackupDirectory` <br> Dependency Allowed Value: `2` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -375,7 +377,7 @@ If not specified, this setting defaults to True.
 <!-- Device-Policies-ADPasswordEncryptionPrincipal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later <br> ✅ Windows Insider Preview [10.0.25145] |
 <!-- Device-Policies-ADPasswordEncryptionPrincipal-Applicability-End -->
 
 <!-- Device-Policies-ADPasswordEncryptionPrincipal-OmaUri-Begin -->
@@ -414,7 +416,7 @@ If the specified user or group account is invalid the device will fallback to us
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Dependency [BackupDirectory] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/LAPS/Policies/BackupDirectory` <br> Dependency Allowed Value: `2` <br> Dependency Allowed Value Type: `ENUM` <br>  |
 <!-- Device-Policies-ADPasswordEncryptionPrincipal-DFProperties-End -->
@@ -431,7 +433,7 @@ If the specified user or group account is invalid the device will fallback to us
 <!-- Device-Policies-BackupDirectory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later <br> ✅ Windows Insider Preview [10.0.25145] |
 <!-- Device-Policies-BackupDirectory-Applicability-End -->
 
 <!-- Device-Policies-BackupDirectory-OmaUri-Begin -->
@@ -446,9 +448,9 @@ Use this setting to configure which directory the local admin account password i
 
 The allowable settings are:
 
-0=Disabled (password will not be backed up)
-1=Backup the password to Azure AD only
-2=Backup the password to Active Directory only
+0=Disabled (password won't be backed up)
+1=Backup the password to Microsoft Entra ID only
+2=Backup the password to Active Directory only.
 
 If not specified, this setting will default to 0.
 <!-- Device-Policies-BackupDirectory-Description-End -->
@@ -462,7 +464,7 @@ If not specified, this setting will default to 0.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Policies-BackupDirectory-DFProperties-End -->
@@ -472,8 +474,8 @@ If not specified, this setting will default to 0.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled (password will not be backed up). |
-| 1 | Backup the password to Azure AD only. |
+| 0 (Default) | Disabled (password won't be backed up). |
+| 1 | Backup the password to Microsoft Entra ID only. |
 | 2 | Backup the password to Active Directory only. |
 <!-- Device-Policies-BackupDirectory-AllowedValues-End -->
 
@@ -489,7 +491,7 @@ If not specified, this setting will default to 0.
 <!-- Device-Policies-PasswordAgeDays-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later <br> ✅ Windows Insider Preview [10.0.25145] |
 <!-- Device-Policies-PasswordAgeDays-Applicability-End -->
 
 <!-- Device-Policies-PasswordAgeDays-OmaUri-Begin -->
@@ -502,9 +504,9 @@ If not specified, this setting will default to 0.
 <!-- Description-Source-DDF -->
 Use this policy to configure the maximum password age of the managed local administrator account.
 
-If not specified, this setting will default to 30 days
+If not specified, this setting will default to 30 days.
 
-This setting has a minimum allowed value of 1 day when backing the password to on-premises Active Directory, and 7 days when backing the password to Azure AD.
+This setting has a minimum allowed value of 1 day when backing the password to on-premises Active Directory, and 7 days when backing the password to Microsoft Entra ID.
 
 This setting has a maximum allowed value of 365 days.
 <!-- Device-Policies-PasswordAgeDays-Description-End -->
@@ -518,7 +520,7 @@ This setting has a maximum allowed value of 365 days.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-365]` |
 | Default Value  | 30 |
@@ -537,7 +539,7 @@ This setting has a maximum allowed value of 365 days.
 <!-- Device-Policies-PasswordComplexity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later <br> ✅ Windows Insider Preview [10.0.25145] |
 <!-- Device-Policies-PasswordComplexity-Applicability-End -->
 
 <!-- Device-Policies-PasswordComplexity-OmaUri-Begin -->
@@ -555,7 +557,7 @@ The allowable settings are:
 1=Large letters
 2=Large letters + small letters
 3=Large letters + small letters + numbers
-4=Large letters + small letters + numbers + special characters
+4=Large letters + small letters + numbers + special characters.
 
 If not specified, this setting will default to 4.
 <!-- Device-Policies-PasswordComplexity-Description-End -->
@@ -571,7 +573,7 @@ If not specified, this setting will default to 4.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 4 |
 <!-- Device-Policies-PasswordComplexity-DFProperties-End -->
@@ -599,7 +601,7 @@ If not specified, this setting will default to 4.
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later <br> ✅ Windows Insider Preview [10.0.25145] |
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-Applicability-End -->
 
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-OmaUri-Begin -->
@@ -628,7 +630,7 @@ If not specified, this setting defaults to True.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | True |
 | Dependency [BackupDirectory] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/LAPS/Policies/BackupDirectory` <br> Dependency Allowed Value: `2` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -640,7 +642,7 @@ If not specified, this setting defaults to True.
 | Value | Description |
 |:--|:--|
 | false | Allow configured password expiration timestamp to exceed maximum password age. |
-| true (Default) | Do not allow configured password expiration timestamp to exceed maximum password age. |
+| true (Default) | Don't allow configured password expiration timestamp to exceed maximum password age. |
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-AllowedValues-End -->
 
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-Examples-Begin -->
@@ -655,7 +657,7 @@ If not specified, this setting defaults to True.
 <!-- Device-Policies-PasswordLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later <br> ✅ Windows Insider Preview [10.0.25145] |
 <!-- Device-Policies-PasswordLength-Applicability-End -->
 
 <!-- Device-Policies-PasswordLength-OmaUri-Begin -->
@@ -684,7 +686,7 @@ This setting has a maximum allowed value of 64 characters.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[8-64]` |
 | Default Value  | 14 |
@@ -702,7 +704,7 @@ This setting has a maximum allowed value of 64 characters.
 <!-- Device-Policies-PostAuthenticationActions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later <br> ✅ Windows Insider Preview [10.0.25145] |
 <!-- Device-Policies-PostAuthenticationActions-Applicability-End -->
 
 <!-- Device-Policies-PostAuthenticationActions-OmaUri-Begin -->
@@ -732,7 +734,7 @@ If not specified, this setting will default to 3 (Reset the password and logoff 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 3 |
 <!-- Device-Policies-PostAuthenticationActions-DFProperties-End -->
@@ -743,7 +745,7 @@ If not specified, this setting will default to 3 (Reset the password and logoff 
 | Value | Description |
 |:--|:--|
 | 1 | Reset password: upon expiry of the grace period, the managed account password will be reset. |
-| 3 (Default) | Reset the password and logoff the managed account: upon expiry of the grace period, the managed account password will be reset and any interactive logon sessions using the managed account will terminated. |
+| 3 (Default) | Reset the password and logoff the managed account: upon expiry of the grace period, the managed account password will be reset and any interactive logon sessions using the managed account will be terminated. |
 | 5 | Reset the password and reboot: upon expiry of the grace period, the managed account password will be reset and the managed device will be immediately rebooted. |
 <!-- Device-Policies-PostAuthenticationActions-AllowedValues-End -->
 
@@ -759,7 +761,7 @@ If not specified, this setting will default to 3 (Reset the password and logoff 
 <!-- Device-Policies-PostAuthenticationResetDelay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1663] and later <br> :heavy_check_mark: [10.0.25145] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.4244] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2784] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1754] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1480] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1663] and later <br> ✅ Windows 10, version 1809 [10.0.17763.4244] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2784] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1754] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1480] and later <br> ✅ Windows Insider Preview [10.0.25145] |
 <!-- Device-Policies-PostAuthenticationResetDelay-Applicability-End -->
 
 <!-- Device-Policies-PostAuthenticationResetDelay-OmaUri-Begin -->
@@ -788,7 +790,7 @@ This setting has a maximum allowed value of 24 hours.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-24]` |
 | Default Value  | 24 |
@@ -804,7 +806,7 @@ This setting has a maximum allowed value of 24 hours.
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
 ## Settings Applicability
 
-The LAPS CSP can be used to manage devices that are either joined to Azure AD or joined to both Azure AD and Active Directory (hybrid-joined). The LAPS CSP manages a mix of AAD-only and AD-only settings. The AD-only settings are only applicable for hybrid-joined devices, and then only when BackupDirectory is set to 2.
+The LAPS CSP can be used to manage devices that are either joined to Microsoft Entra ID or joined to both Microsoft Entra ID and Active Directory (hybrid-joined). The LAPS CSP manages a mix of Microsoft Entra-only and AD-only settings. The AD-only settings are only applicable for hybrid-joined devices, and then only when BackupDirectory is set to 2.
 
 | Setting name                        | Azure-joined | Hybrid-joined |
 |-------------------------------------|--------------|---------------|
@@ -826,9 +828,11 @@ The LAPS CSP can be used to manage devices that are either joined to Azure AD or
 
 The following examples are provided to show the correct format and shouldn't be considered as a recommendation.
 
-### Azure-joined device backing password up to Azure AD
+<a name='azure-joined-device-backing-password-up-to-azure-ad'></a>
 
-This example shows how to configure an Azure-joined device to back up its password to Azure Active Directory:
+### Azure-joined device backing password up to Microsoft Entra ID
+
+This example shows how to configure an Azure-joined device to back up its password to Microsoft Entra ID:
 
 ```xml
 <SyncMl xmlns="SYNCML:SYNCML1.2">

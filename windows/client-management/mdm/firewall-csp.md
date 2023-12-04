@@ -4,7 +4,7 @@ description: Learn more about the Firewall CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/01/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,12 +16,18 @@ ms.topic: reference
 <!-- Firewall-Begin -->
 # Firewall CSP
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+
 <!-- Firewall-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The Firewall configuration service provider (CSP) allows the mobile device management (MDM) server to configure the Windows Defender Firewall global settings, per profile settings, and the desired set of custom rules to be enforced on the device. Using the Firewall CSP the IT admin can now manage non-domain devices, and reduce the risk of network security threats across all systems connecting to the corporate network.
 
 > [!NOTE]
 > Firewall rules in the FirewallRules section must be wrapped in an Atomic block in SyncML, either individually or collectively.
+>
+> Atomic blocks are "all or nothing." If a firewall rule or firewall setting in an Atomic block fails to be applied, the entire Atomic block fails to be applied.
+>
+> If an Atomic block contains a firewall rule or firewall setting that is not supported on a particular Windows OS version, the entire Atomic block fails to be applied on that Windows version. For example, firewall rules with IcmpTypesAndCodes are only supported on Windows 11, applying an Atomic block that contains a rule with IcmpTypesAndCodes on Windows 10 fails.
 
 For detailed information on some of the fields below, see [[MS-FASP]: Firewall and Advanced Security Protocol documentation](/openspecs/windows_protocols/ms-winerrata/6521c5c4-1f76-4003-9ade-5cccfc27c8ac).
 <!-- Firewall-Editable-End -->
@@ -174,7 +180,7 @@ The following list shows the Firewall configuration service provider nodes:
 <!-- Device-MdmStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Applicability-End -->
 
 <!-- Device-MdmStore-OmaUri-Begin -->
@@ -197,7 +203,7 @@ Interior node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MdmStore-DFProperties-End -->
 
@@ -213,7 +219,7 @@ Interior node.
 <!-- Device-MdmStore-DomainProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-OmaUri-Begin -->
@@ -235,7 +241,7 @@ Interior node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MdmStore-DomainProfile-DFProperties-End -->
 
@@ -251,7 +257,7 @@ Interior node.
 <!-- Device-MdmStore-DomainProfile-AllowLocalIpsecPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-AllowLocalIpsecPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-AllowLocalIpsecPolicyMerge-OmaUri-Begin -->
@@ -274,7 +280,7 @@ This value is an on/off switch. If this value is false, connection security rule
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -301,7 +307,7 @@ This value is an on/off switch. If this value is false, connection security rule
 <!-- Device-MdmStore-DomainProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -324,7 +330,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -351,7 +357,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 <!-- Device-MdmStore-DomainProfile-AuthAppsAllowUserPrefMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-AuthAppsAllowUserPrefMerge-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-AuthAppsAllowUserPrefMerge-OmaUri-Begin -->
@@ -362,7 +368,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 
 <!-- Device-MdmStore-DomainProfile-AuthAppsAllowUserPrefMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If this value is false, authorized application firewall rules in the local store are ignored and not enforced. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If this value is false, authorized application firewall rules in the local store are ignored and not enforced. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-DomainProfile-AuthAppsAllowUserPrefMerge-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-AuthAppsAllowUserPrefMerge-Editable-Begin -->
@@ -374,7 +380,7 @@ This value is used as an on/off switch. If this value is false, authorized appli
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -401,7 +407,7 @@ This value is used as an on/off switch. If this value is false, authorized appli
 <!-- Device-MdmStore-DomainProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -412,7 +418,7 @@ This value is used as an on/off switch. If this value is false, authorized appli
 
 <!-- Device-MdmStore-DomainProfile-DefaultInboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. The merge law for this option is to let the value of the GroupPolicyRSoPStore.win if it is configured; otherwise, the local store value is used.
+This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. The merge law for this option is to let the value of the GroupPolicyRSoPStore.win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-DomainProfile-DefaultInboundAction-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-DefaultInboundAction-Editable-Begin -->
@@ -424,7 +430,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 1 |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -451,7 +457,7 @@ This value is the action that the firewall does by default (and evaluates at the
 <!-- Device-MdmStore-DomainProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -462,7 +468,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-DomainProfile-DefaultOutboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-DomainProfile-DefaultOutboundAction-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-DefaultOutboundAction-Editable-Begin -->
@@ -474,7 +480,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 0 |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -524,7 +530,7 @@ This value is the action that the firewall does by default (and evaluates at the
 <!-- Device-MdmStore-DomainProfile-DisableInboundNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-DisableInboundNotifications-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-DisableInboundNotifications-OmaUri-Begin -->
@@ -535,7 +541,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-DomainProfile-DisableInboundNotifications-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. If this value is false, the firewall MAY display a notification to the user when an application is blocked from listening on a port. If this value is on, the firewall MUST NOT display such a notification. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch. If this value is false, the firewall MAY display a notification to the user when an application is blocked from listening on a port. If this value is on, the firewall MUST NOT display such a notification. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-DomainProfile-DisableInboundNotifications-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-DisableInboundNotifications-Editable-Begin -->
@@ -547,7 +553,7 @@ This value is an on/off switch. If this value is false, the firewall MAY display
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -574,7 +580,7 @@ This value is an on/off switch. If this value is false, the firewall MAY display
 <!-- Device-MdmStore-DomainProfile-DisableStealthMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-DisableStealthMode-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-DisableStealthMode-OmaUri-Begin -->
@@ -585,7 +591,7 @@ This value is an on/off switch. If this value is false, the firewall MAY display
 
 <!-- Device-MdmStore-DomainProfile-DisableStealthMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. When this option is false, the server operates in stealth mode. The firewall rules used to enforce stealth mode are implementation-specific. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch. When this option is false, the server operates in stealth mode. The firewall rules used to enforce stealth mode are implementation-specific. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-DomainProfile-DisableStealthMode-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-DisableStealthMode-Editable-Begin -->
@@ -597,7 +603,7 @@ This value is an on/off switch. When this option is false, the server operates i
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [EnableFirewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -624,7 +630,7 @@ This value is an on/off switch. When this option is false, the server operates i
 <!-- Device-MdmStore-DomainProfile-DisableStealthModeIpsecSecuredPacketExemption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-DisableStealthModeIpsecSecuredPacketExemption-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-DisableStealthModeIpsecSecuredPacketExemption-OmaUri-Begin -->
@@ -635,7 +641,7 @@ This value is an on/off switch. When this option is false, the server operates i
 
 <!-- Device-MdmStore-DomainProfile-DisableStealthModeIpsecSecuredPacketExemption-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. This option is ignored if DisableStealthMode is on. Otherwise, when this option is true, the firewall's stealth mode rules MUST NOT prevent the host computer from responding to unsolicited network traffic if that traffic is secured by IPsec. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
+This value is an on/off switch. This option is ignored if DisableStealthMode is on. Otherwise, when this option is true, the firewall's stealth mode rules MUST NOT prevent the host computer from responding to unsolicited network traffic if that traffic is secured by IPsec. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
 <!-- Device-MdmStore-DomainProfile-DisableStealthModeIpsecSecuredPacketExemption-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-DisableStealthModeIpsecSecuredPacketExemption-Editable-Begin -->
@@ -647,7 +653,7 @@ This value is an on/off switch. This option is ignored if DisableStealthMode is 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -674,7 +680,7 @@ This value is an on/off switch. This option is ignored if DisableStealthMode is 
 <!-- Device-MdmStore-DomainProfile-DisableUnicastResponsesToMulticastBroadcast-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-DisableUnicastResponsesToMulticastBroadcast-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-DisableUnicastResponsesToMulticastBroadcast-OmaUri-Begin -->
@@ -685,7 +691,7 @@ This value is an on/off switch. This option is ignored if DisableStealthMode is 
 
 <!-- Device-MdmStore-DomainProfile-DisableUnicastResponsesToMulticastBroadcast-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If it is true, unicast responses to multicast broadcast traffic is blocked. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If it's true, unicast responses to multicast broadcast traffic is blocked. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-DomainProfile-DisableUnicastResponsesToMulticastBroadcast-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-DisableUnicastResponsesToMulticastBroadcast-Editable-Begin -->
@@ -697,7 +703,7 @@ This value is used as an on/off switch. If it is true, unicast responses to mult
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -724,7 +730,7 @@ This value is used as an on/off switch. If it is true, unicast responses to mult
 <!-- Device-MdmStore-DomainProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-EnableFirewall-OmaUri-Begin -->
@@ -735,7 +741,7 @@ This value is used as an on/off switch. If it is true, unicast responses to mult
 
 <!-- Device-MdmStore-DomainProfile-EnableFirewall-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch for the firewall and advanced security enforcement. If this value is false, the server MUST NOT block any network traffic, regardless of other policy settings. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch for the firewall and advanced security enforcement. If this value is false, the server MUST NOT block any network traffic, regardless of other policy settings. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-DomainProfile-EnableFirewall-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-EnableFirewall-Editable-Begin -->
@@ -747,7 +753,7 @@ This value is an on/off switch for the firewall and advanced security enforcemen
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Replace |
 | Default Value  | true |
 <!-- Device-MdmStore-DomainProfile-EnableFirewall-DFProperties-End -->
@@ -773,7 +779,7 @@ This value is an on/off switch for the firewall and advanced security enforcemen
 <!-- Device-MdmStore-DomainProfile-EnableLogDroppedPackets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-DomainProfile-EnableLogDroppedPackets-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-EnableLogDroppedPackets-OmaUri-Begin -->
@@ -796,7 +802,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -823,7 +829,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 <!-- Device-MdmStore-DomainProfile-EnableLogIgnoredRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-DomainProfile-EnableLogIgnoredRules-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-EnableLogIgnoredRules-OmaUri-Begin -->
@@ -834,7 +840,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 <!-- Device-MdmStore-DomainProfile-EnableLogIgnoredRules-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. The server MAY use this value in an implementation-specific way to control logging of events if a rule is not enforced for any reason. The merge law for this option is to let "on" values win.
+This value is used as an on/off switch. The server MAY use this value in an implementation-specific way to control logging of events if a rule isn't enforced for any reason. The merge law for this option is to let "on" values win.
 <!-- Device-MdmStore-DomainProfile-EnableLogIgnoredRules-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-EnableLogIgnoredRules-Editable-Begin -->
@@ -846,7 +852,7 @@ This value is used as an on/off switch. The server MAY use this value in an impl
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -873,7 +879,7 @@ This value is used as an on/off switch. The server MAY use this value in an impl
 <!-- Device-MdmStore-DomainProfile-EnableLogSuccessConnections-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-DomainProfile-EnableLogSuccessConnections-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-EnableLogSuccessConnections-OmaUri-Begin -->
@@ -896,7 +902,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -923,7 +929,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 <!-- Device-MdmStore-DomainProfile-GlobalPortsAllowUserPrefMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-GlobalPortsAllowUserPrefMerge-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-GlobalPortsAllowUserPrefMerge-OmaUri-Begin -->
@@ -934,7 +940,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 <!-- Device-MdmStore-DomainProfile-GlobalPortsAllowUserPrefMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If this value is false, global port firewall rules in the local store are ignored and not enforced. The setting only has meaning if it is set or enumerated in the Group Policy store or if it is enumerated from the GroupPolicyRSoPStore. The merge law for this option is to let the value GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If this value is false, global port firewall rules in the local store are ignored and not enforced. The setting only has meaning if it's set or enumerated in the Group Policy store or if it's enumerated from the GroupPolicyRSoPStore. The merge law for this option is to let the value GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-DomainProfile-GlobalPortsAllowUserPrefMerge-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-GlobalPortsAllowUserPrefMerge-Editable-Begin -->
@@ -946,7 +952,7 @@ This value is used as an on/off switch. If this value is false, global port fire
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -973,7 +979,7 @@ This value is used as an on/off switch. If this value is false, global port fire
 <!-- Device-MdmStore-DomainProfile-LogFilePath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-DomainProfile-LogFilePath-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-LogFilePath-OmaUri-Begin -->
@@ -984,7 +990,7 @@ This value is used as an on/off switch. If this value is false, global port fire
 
 <!-- Device-MdmStore-DomainProfile-LogFilePath-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is a string that represents a file path to the log where the firewall logs dropped packets and successful connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured, otherwise the MdmStore value wins if it is configured, otherwise the local store value is used.
+This value is a string that represents a file path to the log where the firewall logs dropped packets and successful connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured, otherwise the MdmStore value wins if it's configured, otherwise the local store value is used.
 <!-- Device-MdmStore-DomainProfile-LogFilePath-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-LogFilePath-Editable-Begin -->
@@ -996,7 +1002,7 @@ This value is a string that represents a file path to the log where the firewall
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 | Default Value  | %systemroot%\system32\LogFiles\Firewall\pfirewall.log |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -1014,7 +1020,7 @@ This value is a string that represents a file path to the log where the firewall
 <!-- Device-MdmStore-DomainProfile-LogMaxFileSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-DomainProfile-LogMaxFileSize-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-LogMaxFileSize-OmaUri-Begin -->
@@ -1025,7 +1031,7 @@ This value is a string that represents a file path to the log where the firewall
 
 <!-- Device-MdmStore-DomainProfile-LogMaxFileSize-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value specifies the size, in kilobytes, of the log file where dropped packets and successful connections are logged. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured, otherwise the MdmStore value wins if it is configured, otherwise the local store value is used.
+This value specifies the size, in kilobytes, of the log file where dropped packets and successful connections are logged. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured, otherwise the MdmStore value wins if it's configured, otherwise the local store value is used.
 <!-- Device-MdmStore-DomainProfile-LogMaxFileSize-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-LogMaxFileSize-Editable-Begin -->
@@ -1037,7 +1043,7 @@ This value specifies the size, in kilobytes, of the log file where dropped packe
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 1024 |
@@ -1056,7 +1062,7 @@ This value specifies the size, in kilobytes, of the log file where dropped packe
 <!-- Device-MdmStore-DomainProfile-Shielded-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-Shielded-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-Shielded-OmaUri-Begin -->
@@ -1079,7 +1085,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -1106,7 +1112,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 <!-- Device-MdmStore-DynamicKeywords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1706] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1706] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1706] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-OmaUri-Begin -->
@@ -1128,7 +1134,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MdmStore-DynamicKeywords-DFProperties-End -->
 
@@ -1144,7 +1150,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 <!-- Device-MdmStore-DynamicKeywords-Addresses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1706] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1706] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1706] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-OmaUri-Begin -->
@@ -1155,7 +1161,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-Description-Begin -->
 <!-- Description-Source-DDF -->
-A list of dynamic keyword addresses for use within firewall rules. Dynamic keyword addresses can either be a simple alias object or fully-qualified domain names which will be auto-resolved in the presence of the Microsoft Defender Advanced Threat Protection Service.
+A list of dynamic keyword addresses for use within firewall rules. Dynamic keyword addresses can either be a simple alias object or fully qualified domain names which will be auto-resolved in the presence of the Microsoft Defender Advanced Threat Protection Service.
 <!-- Device-MdmStore-DynamicKeywords-Addresses-Description-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-Editable-Begin -->
@@ -1167,7 +1173,7 @@ A list of dynamic keyword addresses for use within firewall rules. Dynamic keywo
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-DFProperties-End -->
 
@@ -1183,7 +1189,7 @@ A list of dynamic keyword addresses for use within firewall rules. Dynamic keywo
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1706] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1706] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1706] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-OmaUri-Begin -->
@@ -1206,7 +1212,7 @@ A unique GUID string identifier for this dynamic keyword address.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Atomic Required | True |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
@@ -1225,7 +1231,7 @@ A unique GUID string identifier for this dynamic keyword address.
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Addresses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1706] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1706] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1706] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Addresses-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Addresses-OmaUri-Begin -->
@@ -1236,11 +1242,16 @@ A unique GUID string identifier for this dynamic keyword address.
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Addresses-Description-Begin -->
 <!-- Description-Source-DDF -->
-Consists of one or more comma-delimited tokens specifying the addresses covered by this keyword. This value should not be set if AutoResolve is true.
+Consists of one or more comma-delimited tokens specifying the addresses covered by this keyword. This value shouldn't be set if AutoResolve is true.
+
 Valid tokens include:
+
 A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+
 A valid IPv6 address.
+
 An IPv4 address range in the format of "start address - end address" with no spaces included.
+
 An IPv6 address range in the format of "start address - end address" with no spaces included.
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Addresses-Description-End -->
 
@@ -1253,7 +1264,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `,`) |
 | Dependency [AutoResolve False] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/DynamicKeywords/Addresses/[Id]/AutoResolve` <br> Dependency Allowed Value: `false` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -1271,7 +1282,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-AutoResolve-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1706] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1706] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1706] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-AutoResolve-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-AutoResolve-OmaUri-Begin -->
@@ -1294,7 +1305,7 @@ If this flag is set to TRUE, then the 'keyword' field of this object is expected
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get |
 | Default Value  | false |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-AutoResolve-DFProperties-End -->
@@ -1320,7 +1331,7 @@ If this flag is set to TRUE, then the 'keyword' field of this object is expected
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Keyword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1706] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1706] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1706] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Keyword-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Keyword-OmaUri-Begin -->
@@ -1343,7 +1354,7 @@ A String representing keyword. If the AutoResolve value is true, this should be 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Keyword-DFProperties-End -->
 
@@ -1359,7 +1370,7 @@ A String representing keyword. If the AutoResolve value is true, this should be 
 <!-- Device-MdmStore-FirewallRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-OmaUri-Begin -->
@@ -1382,7 +1393,7 @@ A list of rules controlling traffic through the Windows Firewall. Each Rule ID i
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MdmStore-FirewallRules-DFProperties-End -->
 
@@ -1398,7 +1409,7 @@ A list of rules controlling traffic through the Windows Firewall. Each Rule ID i
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-OmaUri-Begin -->
@@ -1409,7 +1420,7 @@ A list of rules controlling traffic through the Windows Firewall. Each Rule ID i
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Unique alpha numeric identifier for the rule. The rule name must not include a forward slash (/).
+Unique alpha numeric identifier for the rule. The rule name mustn't include a forward slash (/).
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Description-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Editable-Begin -->
@@ -1421,7 +1432,7 @@ Unique alpha numeric identifier for the rule. The rule name must not include a f
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Atomic Required | True |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
@@ -1440,7 +1451,7 @@ Unique alpha numeric identifier for the rule. The rule name must not include a f
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-OmaUri-Begin -->
@@ -1463,7 +1474,7 @@ Specifies the action for the rule.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-DFProperties-End -->
 
@@ -1479,7 +1490,7 @@ Specifies the action for the rule.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-Type-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-Type-OmaUri-Begin -->
@@ -1491,6 +1502,7 @@ Specifies the action for the rule.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-Type-Description-Begin -->
 <!-- Description-Source-DDF -->
 Specifies the action the rule enforces:
+
 0 - Block
 1 - Allow.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-Type-Description-End -->
@@ -1504,7 +1516,7 @@ Specifies the action the rule enforces:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 1 |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-Type-DFProperties-End -->
@@ -1530,7 +1542,7 @@ Specifies the action the rule enforces:
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-OmaUri-Begin -->
@@ -1545,9 +1557,12 @@ Rules that control connections for an app, program or service.
 
 Specified based on the intersection of the following nodes.
 
-PackageFamilyName
-FilePath
-FQBN
+PackageFamilyName.
+
+FilePath.
+
+FQBN.
+
 ServiceName.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-Description-End -->
 
@@ -1560,7 +1575,7 @@ ServiceName.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-DFProperties-End -->
 
@@ -1576,7 +1591,7 @@ ServiceName.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-FilePath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-FilePath-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-FilePath-OmaUri-Begin -->
@@ -1599,7 +1614,7 @@ FilePath - This App/Id value represents the full file path of the app. For examp
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-FilePath-DFProperties-End -->
 
@@ -1615,7 +1630,7 @@ FilePath - This App/Id value represents the full file path of the app. For examp
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-Fqbn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-Fqbn-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-Fqbn-OmaUri-Begin -->
@@ -1638,7 +1653,7 @@ Fully Qualified Binary Name.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-Fqbn-DFProperties-End -->
 
@@ -1654,7 +1669,7 @@ Fully Qualified Binary Name.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-PackageFamilyName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-PackageFamilyName-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-PackageFamilyName-OmaUri-Begin -->
@@ -1677,7 +1692,7 @@ PackageFamilyName - This App/Id value represents the PackageFamilyName of the ap
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-PackageFamilyName-DFProperties-End -->
 
@@ -1693,7 +1708,7 @@ PackageFamilyName - This App/Id value represents the PackageFamilyName of the ap
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-ServiceName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-ServiceName-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-ServiceName-OmaUri-Begin -->
@@ -1716,7 +1731,7 @@ This is a service name, and is used in cases when a service, not an application,
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-ServiceName-DFProperties-End -->
 
@@ -1732,7 +1747,7 @@ This is a service name, and is used in cases when a service, not an application,
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Description-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Description-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Description-OmaUri-Begin -->
@@ -1755,7 +1770,7 @@ Specifies the description of the rule.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Description-DFProperties-End -->
 
@@ -1771,7 +1786,7 @@ Specifies the description of the rule.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Direction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Direction-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Direction-OmaUri-Begin -->
@@ -1785,6 +1800,7 @@ Specifies the description of the rule.
 The rule is enabled based on the traffic direction as following.
 
 IN - the rule applies to inbound traffic.
+
 OUT - the rule applies to outbound traffic.
 
 If not specified the default is OUT.
@@ -1799,7 +1815,7 @@ If not specified the default is OUT.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 | Default Value  | OUT |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Direction-DFProperties-End -->
@@ -1825,7 +1841,7 @@ If not specified the default is OUT.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-EdgeTraversal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-EdgeTraversal-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-EdgeTraversal-OmaUri-Begin -->
@@ -1852,7 +1868,7 @@ New rules have the EdgeTraversal property disabled by default.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-EdgeTraversal-DFProperties-End -->
 
@@ -1877,7 +1893,7 @@ New rules have the EdgeTraversal property disabled by default.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Enabled-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Enabled-OmaUri-Begin -->
@@ -1889,6 +1905,7 @@ New rules have the EdgeTraversal property disabled by default.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Enabled-Description-Begin -->
 <!-- Description-Source-DDF -->
 Indicates whether the rule is enabled or disabled. If the rule must be enabled, this value must be set to true.
+
 If not specified - a new rule is disabled by default.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Enabled-Description-End -->
 
@@ -1901,7 +1918,7 @@ If not specified - a new rule is disabled by default.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Enabled-DFProperties-End -->
 
@@ -1926,7 +1943,7 @@ If not specified - a new rule is disabled by default.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-OmaUri-Begin -->
@@ -1936,12 +1953,19 @@ If not specified - a new rule is disabled by default.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-OmaUri-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-Description-Begin -->
-<!-- Description-Source-Manual-Forced -->
+<!-- Description-Source-DDF -->
+String value. Multiple ICMP type+code pairs can be included in the string by separating each value with a ",". If more than one ICMP type+code pair is specified, the strings must be separated by a comma.
+
+To specify all ICMP types and codes, use the "\*" character. For specific ICMP types and codes, use the ":" to separate the type and code.
+
+The following are valid examples: 3:4 or 1:\*. The "\*" character can be used to represent any code. The "\*" character can't be used to specify any type, examples such as "\*:4" or "\*:\*" are invalid.
+
+When setting this field in a firewall rule, the protocol field must also be set, to either 1 (ICMP) or 58 (IPv6-ICMP).
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-Description-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Comma separated list of ICMP types and codes applicable to the firewall rule. To specify all ICMP types and codes, use the "\*" character. For specific ICMP types and codes, use the ":" character to separate the type and code, for example, 3:4, 1:\*. The "\*" character can be used to represent any code. The "\*" character cannot be used to specify any type; examples such as "\*:4" or "\*:\*" are invalid. If not specified, the default is All.
+If not specified, the default is All.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-Editable-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-DFProperties-Begin -->
@@ -1949,7 +1973,7 @@ Comma separated list of ICMP types and codes applicable to the firewall rule. To
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `,`) |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-DFProperties-End -->
@@ -1966,7 +1990,7 @@ Comma separated list of ICMP types and codes applicable to the firewall rule. To
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-InterfaceTypes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-InterfaceTypes-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-InterfaceTypes-OmaUri-Begin -->
@@ -1978,6 +2002,7 @@ Comma separated list of ICMP types and codes applicable to the firewall rule. To
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-InterfaceTypes-Description-Begin -->
 <!-- Description-Source-DDF -->
 String value. Multiple interface types can be included in the string by separating each value with a ",". Acceptable values are "RemoteAccess", "Wireless", "Lan", "MBB", and "All".
+
 If more than one interface type is specified, the strings must be separated by a comma.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-InterfaceTypes-Description-End -->
 
@@ -1990,7 +2015,7 @@ If more than one interface type is specified, the strings must be separated by a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | All |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-InterfaceTypes-DFProperties-End -->
@@ -2019,7 +2044,7 @@ If more than one interface type is specified, the strings must be separated by a
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalAddressRanges-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalAddressRanges-OmaUri-Begin -->
@@ -2030,13 +2055,18 @@ If more than one interface type is specified, the strings must be separated by a
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalAddressRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
-Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "*" is the default value.
+Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "\*" is the default value.
+
 Valid tokens include:
-"*" indicates any local address. If present, this must be the only token included.
+
+"\*" indicates any local address. If present, this must be the only token included.
 
 A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+
 A valid IPv6 address.
+
 An IPv4 address range in the format of "start address - end address" with no spaces included.
+
 An IPv6 address range in the format of "start address - end address" with no spaces included. If not specified the default is All.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalAddressRanges-Description-End -->
 
@@ -2049,7 +2079,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `,`) |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalAddressRanges-DFProperties-End -->
@@ -2066,7 +2096,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalPortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalPortRanges-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalPortRanges-OmaUri-Begin -->
@@ -2078,6 +2108,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalPortRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
 Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the default is All.
+
 When setting this field in a firewall rule, the protocol field must also be set, to either 6 (TCP) or 17 (UDP).
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalPortRanges-Description-End -->
 
@@ -2090,7 +2121,7 @@ When setting this field in a firewall rule, the protocol field must also be set,
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Regular Expression: `^[0-9,-]+$` |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalPortRanges-DFProperties-End -->
@@ -2107,7 +2138,7 @@ When setting this field in a firewall rule, the protocol field must also be set,
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-OmaUri-Begin -->
@@ -2119,7 +2150,8 @@ When setting this field in a firewall rule, the protocol field must also be set,
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-Description-Begin -->
 <!-- Description-Source-DDF -->
 Specifies the list of authorized local users for the app container.
-This is a string in Security Descriptor Definition Language (SDDL) format..
+
+This is a string in Security Descriptor Definition Language (SDDL) format.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-Description-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-Editable-Begin -->
@@ -2131,7 +2163,7 @@ This is a string in Security Descriptor Definition Language (SDDL) format..
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | `<SDDL>` |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-DFProperties-End -->
@@ -2148,7 +2180,7 @@ This is a string in Security Descriptor Definition Language (SDDL) format..
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Name-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Name-OmaUri-Begin -->
@@ -2171,7 +2203,7 @@ Specifies the friendly name of the firewall rule.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Name-DFProperties-End -->
 
@@ -2187,7 +2219,7 @@ Specifies the friendly name of the firewall rule.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 22H2 [10.0.19045.2913] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1880] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1635] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.2913] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1880] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1635] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-OmaUri-Begin -->
@@ -2198,7 +2230,7 @@ Specifies the friendly name of the firewall rule.
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies one WDAC tag. This is a string that can contain any alphanumeric character and any of the characters ":", "/", ".", and "_". A PolicyAppId and ServiceName cannot be specified in the same rule.
+Specifies one WDAC tag. This is a string that can contain any alphanumeric character and any of the characters ":", "/", ""., and "_". A PolicyAppId and ServiceName can't be specified in the same rule.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Description-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Editable-Begin -->
@@ -2210,7 +2242,7 @@ Specifies one WDAC tag. This is a string that can contain any alphanumeric chara
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Regular Expression: `^[A-Za-z0-9_.:/]+$` |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-DFProperties-End -->
@@ -2227,7 +2259,7 @@ Specifies one WDAC tag. This is a string that can contain any alphanumeric chara
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Profiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Profiles-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Profiles-OmaUri-Begin -->
@@ -2250,7 +2282,7 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Profiles-DFProperties-End -->
 
@@ -2260,10 +2292,10 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 | Flag | Description |
 |:--|:--|
 | 0x1 | FW_PROFILE_TYPE_DOMAIN:  This value represents the profile for networks that are connected to domains. |
-| 0x2 | FW_PROFILE_TYPE_STANDARD:  This value represents the standard profile for networks. These networks are classified as private by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are behind Network Address Translation (NAT) devices, routers, and other edge devices, and they are in a private location, such as a home or an office. AND FW_PROFILE_TYPE_PRIVATE:  This value represents the profile for private networks, which is represented by the same value as that used for FW_PROFILE_TYPE_STANDARD. |
-| 0x4 | FW_PROFILE_TYPE_PUBLIC:  This value represents the profile for public networks. These networks are classified as public by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are those at airports, coffee shops, and other public places where the peers in the network or the network administrator are not trusted. |
+| 0x2 | FW_PROFILE_TYPE_STANDARD:  This value represents the standard profile for networks. These networks are classified as private by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are behind Network Address Translation (NAT) devices, routers, and other edge devices, and they're in a private location, such as a home or an office. AND FW_PROFILE_TYPE_PRIVATE:  This value represents the profile for private networks, which is represented by the same value as that used for FW_PROFILE_TYPE_STANDARD. |
+| 0x4 | FW_PROFILE_TYPE_PUBLIC:  This value represents the profile for public networks. These networks are classified as public by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are those at airports, coffee shops, and other public places where the peers in the network or the network administrator aren't trusted. |
 | 0x7FFFFFFF | FW_PROFILE_TYPE_ALL:  This value represents all these network sets and any future network sets. |
-| 0x80000000 | FW_PROFILE_TYPE_CURRENT:  This value represents the current profiles to which the firewall and advanced security components determine the host is connected at the moment of the call. This value can be specified only in method calls, and it cannot be combined with other flags. |
+| 0x80000000 | FW_PROFILE_TYPE_CURRENT:  This value represents the current profiles to which the firewall and advanced security components determine the host is connected at the moment of the call. This value can be specified only in method calls, and it can't be combined with other flags. |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Profiles-AllowedValues-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Profiles-Examples-Begin -->
@@ -2278,7 +2310,7 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Protocol-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Protocol-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Protocol-OmaUri-Begin -->
@@ -2301,7 +2333,7 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-255]` |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Protocol-DFProperties-End -->
@@ -2318,7 +2350,7 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressDynamicKeywords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1706] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1706] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1706] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressDynamicKeywords-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressDynamicKeywords-OmaUri-Begin -->
@@ -2341,7 +2373,7 @@ Comma separated list of Dynamic Keyword Address Ids (GUID strings) specifying th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Regular Expression: `\{[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}\}` |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressDynamicKeywords-DFProperties-End -->
@@ -2358,7 +2390,7 @@ Comma separated list of Dynamic Keyword Address Ids (GUID strings) specifying th
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressRanges-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressRanges-OmaUri-Begin -->
@@ -2369,8 +2401,10 @@ Comma separated list of Dynamic Keyword Address Ids (GUID strings) specifying th
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
-Consists of one or more comma-delimited tokens specifying the remote addresses covered by the rule. The default value is "*". Valid tokens include:
-"*" indicates any remote address. If present, this must be the only token included.
+Consists of one or more comma-delimited tokens specifying the remote addresses covered by the rule. The default value is "\*". Valid tokens include:
+
+"\*" indicates any remote address. If present, this must be the only token included.
+
 "Defaultgateway"
 "DHCP"
 "DNS"
@@ -2379,10 +2413,14 @@ Consists of one or more comma-delimited tokens specifying the remote addresses c
 "RemoteCorpNetwork"
 "Internet"
 "PlayToRenderers"
-"LocalSubnet" indicates any local address on the local subnet. This token is not case-sensitive.
+"LocalSubnet" indicates any local address on the local subnet. This token isn't case-sensitive.
+
 A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+
 A valid IPv6 address.
+
 An IPv4 address range in the format of "start address - end address" with no spaces included.
+
 An IPv6 address range in the format of "start address - end address" with no spaces included. If not specified the default is All.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressRanges-Description-End -->
 
@@ -2395,7 +2433,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `,`) |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressRanges-DFProperties-End -->
@@ -2412,7 +2450,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemotePortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemotePortRanges-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemotePortRanges-OmaUri-Begin -->
@@ -2424,6 +2462,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemotePortRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
 Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the default is All.
+
 When setting this field in a firewall rule, the protocol field must also be set, to either 6 (TCP) or 17 (UDP).
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemotePortRanges-Description-End -->
 
@@ -2436,7 +2475,7 @@ When setting this field in a firewall rule, the protocol field must also be set,
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Regular Expression: `^[0-9,-]+$` |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemotePortRanges-DFProperties-End -->
@@ -2453,7 +2492,7 @@ When setting this field in a firewall rule, the protocol field must also be set,
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Status-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Status-OmaUri-Begin -->
@@ -2476,7 +2515,7 @@ Provides information about the specific version of the rule in deployment for mo
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Status-DFProperties-End -->
 
@@ -2492,7 +2531,7 @@ Provides information about the specific version of the rule in deployment for mo
 <!-- Device-MdmStore-Global-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-Applicability-End -->
 
 <!-- Device-MdmStore-Global-OmaUri-Begin -->
@@ -2514,7 +2553,7 @@ Provides information about the specific version of the rule in deployment for mo
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MdmStore-Global-DFProperties-End -->
 
@@ -2530,7 +2569,7 @@ Provides information about the specific version of the rule in deployment for mo
 <!-- Device-MdmStore-Global-BinaryVersionSupported-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-BinaryVersionSupported-Applicability-End -->
 
 <!-- Device-MdmStore-Global-BinaryVersionSupported-OmaUri-Begin -->
@@ -2541,7 +2580,7 @@ Provides information about the specific version of the rule in deployment for mo
 
 <!-- Device-MdmStore-Global-BinaryVersionSupported-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value contains the binary version of the structures and data types that are supported by the server. This value is not merged. In addition, this value is always a fixed value for a specific firewall and advanced security component's software build. This value identifies a policy configuration option that is supported only on servers that have a schema version of 0x0201.
+This value contains the binary version of the structures and data types that are supported by the server. This value isn't merged. In addition, this value is always a fixed value for a specific firewall and advanced security component's software build. This value identifies a policy configuration option that's supported only on servers that have a schema version of 0x0201.
 <!-- Device-MdmStore-Global-BinaryVersionSupported-Description-End -->
 
 <!-- Device-MdmStore-Global-BinaryVersionSupported-Editable-Begin -->
@@ -2553,7 +2592,7 @@ This value contains the binary version of the structures and data types that are
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MdmStore-Global-BinaryVersionSupported-DFProperties-End -->
 
@@ -2569,7 +2608,7 @@ This value contains the binary version of the structures and data types that are
 <!-- Device-MdmStore-Global-CRLcheck-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-CRLcheck-Applicability-End -->
 
 <!-- Device-MdmStore-Global-CRLcheck-OmaUri-Begin -->
@@ -2580,7 +2619,7 @@ This value contains the binary version of the structures and data types that are
 
 <!-- Device-MdmStore-Global-CRLcheck-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value specifies how certificate revocation list (CRL) verification is enforced. The value MUST be 0, 1, or 2. A value of 0 disables CRL checking. A value of 1 specifies that CRL checking is attempted and that certificate validation fails only if the certificate is revoked. Other failures that are encountered during CRL checking (such as the revocation URL being unreachable) do not cause certificate validation to fail. A value of 2 means that checking is required and that certificate validation fails if any error is encountered during CRL processing. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, use the local store value.
+This value specifies how certificate revocation list (CRL) verification is enforced. The value MUST be 0, 1, or 2. A value of 0 disables CRL checking. A value of 1 specifies that CRL checking is attempted and that certificate validation fails only if the certificate is revoked. Other failures that are encountered during CRL checking (such as the revocation URL being unreachable) don't cause certificate validation to fail. A value of 2 means that checking is required and that certificate validation fails if any error is encountered during CRL processing. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, use the local store value.
 <!-- Device-MdmStore-Global-CRLcheck-Description-End -->
 
 <!-- Device-MdmStore-Global-CRLcheck-Editable-Begin -->
@@ -2592,7 +2631,7 @@ This value specifies how certificate revocation list (CRL) verification is enfor
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 <!-- Device-MdmStore-Global-CRLcheck-DFProperties-End -->
 
@@ -2602,7 +2641,7 @@ This value specifies how certificate revocation list (CRL) verification is enfor
 | Value | Description |
 |:--|:--|
 | 0 | Disables CRL checking. |
-| 1 | Specifies that CRL checking is attempted and that certificate validation fails only if the certificate is revoked. Other failures that are encountered during CRL checking (such as the revocation URL being unreachable) do not cause certificate validation to fail. |
+| 1 | Specifies that CRL checking is attempted and that certificate validation fails only if the certificate is revoked. Other failures that are encountered during CRL checking (such as the revocation URL being unreachable) don't cause certificate validation to fail. |
 | 2 | Means that checking is required and that certificate validation fails if any error is encountered during CRL processing. |
 <!-- Device-MdmStore-Global-CRLcheck-AllowedValues-End -->
 
@@ -2618,7 +2657,7 @@ This value specifies how certificate revocation list (CRL) verification is enfor
 <!-- Device-MdmStore-Global-CurrentProfiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-CurrentProfiles-Applicability-End -->
 
 <!-- Device-MdmStore-Global-CurrentProfiles-OmaUri-Begin -->
@@ -2629,7 +2668,7 @@ This value specifies how certificate revocation list (CRL) verification is enfor
 
 <!-- Device-MdmStore-Global-CurrentProfiles-Description-Begin -->
 <!-- Description-Source-DDF -->
-Value that contains a bitmask of the current enforced profiles that are maintained by the server firewall host. See [FW_PROFILE_TYPE](/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) for the bitmasks that are used to identify profile types. This value is available only in the dynamic store; therefore, it is not merged and has no merge law.
+Value that contains a bitmask of the current enforced profiles that are maintained by the server firewall host. See [FW_PROFILE_TYPE](/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) for the bitmasks that are used to identify profile types. This value is available only in the dynamic store; therefore, it isn't merged and has no merge law.
 <!-- Device-MdmStore-Global-CurrentProfiles-Description-End -->
 
 <!-- Device-MdmStore-Global-CurrentProfiles-Editable-Begin -->
@@ -2641,7 +2680,7 @@ Value that contains a bitmask of the current enforced profiles that are maintain
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-MdmStore-Global-CurrentProfiles-DFProperties-End -->
 
@@ -2657,7 +2696,7 @@ Value that contains a bitmask of the current enforced profiles that are maintain
 <!-- Device-MdmStore-Global-DisableStatefulFtp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-DisableStatefulFtp-Applicability-End -->
 
 <!-- Device-MdmStore-Global-DisableStatefulFtp-OmaUri-Begin -->
@@ -2680,7 +2719,7 @@ This value is an on/off switch. If off, the firewall performs stateful File Tran
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 <!-- Device-MdmStore-Global-DisableStatefulFtp-DFProperties-End -->
@@ -2706,7 +2745,7 @@ This value is an on/off switch. If off, the firewall performs stateful File Tran
 <!-- Device-MdmStore-Global-EnablePacketQueue-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-EnablePacketQueue-Applicability-End -->
 
 <!-- Device-MdmStore-Global-EnablePacketQueue-OmaUri-Begin -->
@@ -2717,7 +2756,7 @@ This value is an on/off switch. If off, the firewall performs stateful File Tran
 
 <!-- Device-MdmStore-Global-EnablePacketQueue-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value specifies how scaling for the software on the receive side is enabled for both the encrypted receive and clear text forward path for the IPsec tunnel gateway scenario. Use of this option also ensures that the packet order is preserved. The data type for this option value is a integer and is a combination of flags. A value of 0x00 indicates that all queuing is to be disabled. A value of 0x01 specifies that inbound encrypted packets are to be queued. A value of 0x02 specifies that packets are to be queued after decryption is performed for forwarding.
+This value specifies how scaling for the software on the receive side is enabled for both the encrypted receive and clear text forward path for the IPsec tunnel gateway scenario. Use of this option also ensures that the packet order is preserved. The data type for this option value is an integer and is a combination of flags. A value of 0x00 indicates that all queuing is to be disabled. A value of 0x01 specifies that inbound encrypted packets are to be queued. A value of 0x02 specifies that packets are to be queued after decryption is performed for forwarding.
 <!-- Device-MdmStore-Global-EnablePacketQueue-Description-End -->
 
 <!-- Device-MdmStore-Global-EnablePacketQueue-Editable-Begin -->
@@ -2729,7 +2768,7 @@ This value specifies how scaling for the software on the receive side is enabled
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 0x0 |
 <!-- Device-MdmStore-Global-EnablePacketQueue-DFProperties-End -->
@@ -2756,7 +2795,7 @@ This value specifies how scaling for the software on the receive side is enabled
 <!-- Device-MdmStore-Global-IPsecExempt-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-IPsecExempt-Applicability-End -->
 
 <!-- Device-MdmStore-Global-IPsecExempt-OmaUri-Begin -->
@@ -2767,7 +2806,7 @@ This value specifies how scaling for the software on the receive side is enabled
 
 <!-- Device-MdmStore-Global-IPsecExempt-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value configures IPsec exceptions and MUST be a combination of the valid flags that are defined in [IPSEC_EXEMPT_VALUES](/openspecs/windows_protocols/ms-fasp/7daabd9f-74c3-4295-add6-e2402b01b191); therefore, the maximum value MUST always be IPSEC_EXEMPT_MAX-1 for servers supporting a schema version of 0x0201 and IPSEC_EXEMPT_MAX_V2_0-1 for servers supporting a schema version of 0x0200. If the maximum value is exceeded when the method RRPC_FWSetGlobalConfig (Opnum 4) is called, the method returns ERROR_INVALID_PARAMETER. This error code is returned if no other preceding error is discovered. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, use the local store value.
+This value configures IPsec exceptions and MUST be a combination of the valid flags that are defined in [IPSEC_EXEMPT_VALUES](/openspecs/windows_protocols/ms-fasp/7daabd9f-74c3-4295-add6-e2402b01b191); therefore, the maximum value MUST always be IPSEC_EXEMPT_MAX-1 for servers supporting a schema version of 0x0201 and IPSEC_EXEMPT_MAX_V2_0-1 for servers supporting a schema version of 0x0200. If the maximum value is exceeded when the method RRPC_FWSetGlobalConfig (Opnum 4) is called, the method returns ERROR_INVALID_PARAMETER. This error code is returned if no other preceding error is discovered. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, use the local store value.
 <!-- Device-MdmStore-Global-IPsecExempt-Description-End -->
 
 <!-- Device-MdmStore-Global-IPsecExempt-Editable-Begin -->
@@ -2779,7 +2818,7 @@ This value configures IPsec exceptions and MUST be a combination of the valid fl
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 0x0 |
 <!-- Device-MdmStore-Global-IPsecExempt-DFProperties-End -->
@@ -2808,7 +2847,7 @@ This value configures IPsec exceptions and MUST be a combination of the valid fl
 <!-- Device-MdmStore-Global-OpportunisticallyMatchAuthSetPerKM-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-OpportunisticallyMatchAuthSetPerKM-Applicability-End -->
 
 <!-- Device-MdmStore-Global-OpportunisticallyMatchAuthSetPerKM-OmaUri-Begin -->
@@ -2819,7 +2858,7 @@ This value configures IPsec exceptions and MUST be a combination of the valid fl
 
 <!-- Device-MdmStore-Global-OpportunisticallyMatchAuthSetPerKM-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. When this option is false, keying modules MUST ignore the entire authentication set if they do not support all of the authentication suites specified in the set. When this option is true, keying modules MUST ignore only the authentication suites that they don't support. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
+This value is used as an on/off switch. When this option is false, keying modules MUST ignore the entire authentication set if they don't support all of the authentication suites specified in the set. When this option is true, keying modules MUST ignore only the authentication suites that they don't support. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
 <!-- Device-MdmStore-Global-OpportunisticallyMatchAuthSetPerKM-Description-End -->
 
 <!-- Device-MdmStore-Global-OpportunisticallyMatchAuthSetPerKM-Editable-Begin -->
@@ -2831,7 +2870,7 @@ This value is used as an on/off switch. When this option is false, keying module
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 <!-- Device-MdmStore-Global-OpportunisticallyMatchAuthSetPerKM-DFProperties-End -->
 
@@ -2856,7 +2895,7 @@ This value is used as an on/off switch. When this option is false, keying module
 <!-- Device-MdmStore-Global-PolicyVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-PolicyVersion-Applicability-End -->
 
 <!-- Device-MdmStore-Global-PolicyVersion-OmaUri-Begin -->
@@ -2867,7 +2906,7 @@ This value is used as an on/off switch. When this option is false, keying module
 
 <!-- Device-MdmStore-Global-PolicyVersion-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value contains the policy version of the policy store being managed. This value is not merged and therefore, has no merge law.
+This value contains the policy version of the policy store being managed. This value isn't merged and therefore, has no merge law.
 <!-- Device-MdmStore-Global-PolicyVersion-Description-End -->
 
 <!-- Device-MdmStore-Global-PolicyVersion-Editable-Begin -->
@@ -2879,7 +2918,7 @@ This value contains the policy version of the policy store being managed. This v
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MdmStore-Global-PolicyVersion-DFProperties-End -->
 
@@ -2895,7 +2934,7 @@ This value contains the policy version of the policy store being managed. This v
 <!-- Device-MdmStore-Global-PolicyVersionSupported-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-PolicyVersionSupported-Applicability-End -->
 
 <!-- Device-MdmStore-Global-PolicyVersionSupported-OmaUri-Begin -->
@@ -2906,7 +2945,7 @@ This value contains the policy version of the policy store being managed. This v
 
 <!-- Device-MdmStore-Global-PolicyVersionSupported-Description-Begin -->
 <!-- Description-Source-DDF -->
-Value that contains the maximum policy version that the server host can accept. The version number is two octets in size. The lowest-order octet is the minor version; the second-to-lowest octet is the major version. This value is not merged and is always a fixed value for a particular firewall and advanced security components software build.
+Value that contains the maximum policy version that the server host can accept. The version number is two octets in size. The lowest-order octet is the minor version; the second-to-lowest octet is the major version. This value isn't merged and is always a fixed value for a particular firewall and advanced security components software build.
 <!-- Device-MdmStore-Global-PolicyVersionSupported-Description-End -->
 
 <!-- Device-MdmStore-Global-PolicyVersionSupported-Editable-Begin -->
@@ -2918,7 +2957,7 @@ Value that contains the maximum policy version that the server host can accept. 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-MdmStore-Global-PolicyVersionSupported-DFProperties-End -->
 
@@ -2934,7 +2973,7 @@ Value that contains the maximum policy version that the server host can accept. 
 <!-- Device-MdmStore-Global-PresharedKeyEncoding-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-PresharedKeyEncoding-Applicability-End -->
 
 <!-- Device-MdmStore-Global-PresharedKeyEncoding-OmaUri-Begin -->
@@ -2945,7 +2984,7 @@ Value that contains the maximum policy version that the server host can accept. 
 
 <!-- Device-MdmStore-Global-PresharedKeyEncoding-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the preshared key encoding that is used. MUST be a valid value from the [PRESHARED_KEY_ENCODING_VALUES](/openspecs/windows_protocols/ms-fasp/b9d24a5e-7755-4c60-adeb-e0c7a718f909) enumeration. Default is 1 [UTF-8]. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, use the local store value.
+Specifies the preshared key encoding that's used. MUST be a valid value from the [PRESHARED_KEY_ENCODING_VALUES](/openspecs/windows_protocols/ms-fasp/b9d24a5e-7755-4c60-adeb-e0c7a718f909) enumeration. Default is 1 [UTF-8]. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, use the local store value.
 <!-- Device-MdmStore-Global-PresharedKeyEncoding-Description-End -->
 
 <!-- Device-MdmStore-Global-PresharedKeyEncoding-Editable-Begin -->
@@ -2957,7 +2996,7 @@ Specifies the preshared key encoding that is used. MUST be a valid value from th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 1 |
 <!-- Device-MdmStore-Global-PresharedKeyEncoding-DFProperties-End -->
@@ -2967,7 +3006,7 @@ Specifies the preshared key encoding that is used. MUST be a valid value from th
 
 | Value | Description |
 |:--|:--|
-| 0 | FW_GLOBAL_CONFIG_PRESHARED_KEY_ENCODING_NONE:  Preshared key is not encoded. Instead, it is kept in its wide-character format. This symbolic constant has a value of 0. |
+| 0 | FW_GLOBAL_CONFIG_PRESHARED_KEY_ENCODING_NONE:  Preshared key isn't encoded. Instead, it's kept in its wide-character format. This symbolic constant has a value of 0. |
 | 1 (Default) | FW_GLOBAL_CONFIG_PRESHARED_KEY_ENCODING_UTF_8:  Encode the preshared key using UTF-8. This symbolic constant has a value of 1. |
 <!-- Device-MdmStore-Global-PresharedKeyEncoding-AllowedValues-End -->
 
@@ -2983,7 +3022,7 @@ Specifies the preshared key encoding that is used. MUST be a valid value from th
 <!-- Device-MdmStore-Global-SaIdleTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-SaIdleTime-Applicability-End -->
 
 <!-- Device-MdmStore-Global-SaIdleTime-OmaUri-Begin -->
@@ -2994,7 +3033,7 @@ Specifies the preshared key encoding that is used. MUST be a valid value from th
 
 <!-- Device-MdmStore-Global-SaIdleTime-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value configures the security association idle time, in seconds. Security associations are deleted after network traffic is not seen for this specified period of time. The value MUST be in the range of 300 to 3,600 inclusive. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, use the local store value.
+This value configures the security association idle time, in seconds. Security associations are deleted after network traffic isn't seen for this specified period of time. The value MUST be in the range of 300 to 3,600 inclusive. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, use the local store value.
 <!-- Device-MdmStore-Global-SaIdleTime-Description-End -->
 
 <!-- Device-MdmStore-Global-SaIdleTime-Editable-Begin -->
@@ -3006,7 +3045,7 @@ This value configures the security association idle time, in seconds. Security a
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Allowed Values | Range: `[300-3600]` |
 | Default Value  | 300 |
@@ -3024,7 +3063,7 @@ This value configures the security association idle time, in seconds. Security a
 <!-- Device-MdmStore-HyperVFirewallRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-OmaUri-Begin -->
@@ -3047,7 +3086,7 @@ A list of rules controlling traffic through the Windows Firewall for Hyper-V con
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MdmStore-HyperVFirewallRules-DFProperties-End -->
 
@@ -3063,7 +3102,7 @@ A list of rules controlling traffic through the Windows Firewall for Hyper-V con
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-OmaUri-Begin -->
@@ -3074,7 +3113,7 @@ A list of rules controlling traffic through the Windows Firewall for Hyper-V con
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Unique alpha numeric identifier for the rule. The rule name must not include a forward slash (/).
+Unique alpha numeric identifier for the rule. The rule name mustn't include a forward slash (/).
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Description-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Editable-Begin -->
@@ -3086,7 +3125,7 @@ Unique alpha numeric identifier for the rule. The rule name must not include a f
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Atomic Required | True |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
@@ -3105,7 +3144,7 @@ Unique alpha numeric identifier for the rule. The rule name must not include a f
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-OmaUri-Begin -->
@@ -3117,6 +3156,7 @@ Unique alpha numeric identifier for the rule. The rule name must not include a f
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Description-Begin -->
 <!-- Description-Source-DDF -->
 Specifies the action the rule enforces:
+
 0 - Block
 1 - Allow.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Description-End -->
@@ -3130,7 +3170,7 @@ Specifies the action the rule enforces:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 1 |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-DFProperties-End -->
@@ -3156,7 +3196,7 @@ Specifies the action the rule enforces:
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Direction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Direction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Direction-OmaUri-Begin -->
@@ -3170,6 +3210,7 @@ Specifies the action the rule enforces:
 The rule is enabled based on the traffic direction as following.
 
 IN - the rule applies to inbound traffic.
+
 OUT - the rule applies to outbound traffic.
 
 If not specified the default is OUT.
@@ -3184,7 +3225,7 @@ If not specified the default is OUT.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 | Default Value  | OUT |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Direction-DFProperties-End -->
@@ -3210,7 +3251,7 @@ If not specified the default is OUT.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Enabled-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Enabled-OmaUri-Begin -->
@@ -3222,6 +3263,7 @@ If not specified the default is OUT.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Enabled-Description-Begin -->
 <!-- Description-Source-DDF -->
 Indicates whether the rule is enabled or disabled. If the rule must be enabled, this value must be set to true.
+
 If not specified - a new rule is disabled by default.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Enabled-Description-End -->
 
@@ -3234,7 +3276,7 @@ If not specified - a new rule is disabled by default.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Enabled-DFProperties-End -->
 
@@ -3259,7 +3301,7 @@ If not specified - a new rule is disabled by default.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalAddressRanges-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalAddressRanges-OmaUri-Begin -->
@@ -3270,13 +3312,18 @@ If not specified - a new rule is disabled by default.
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalAddressRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
-Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "*" is the default value.
+Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "\*" is the default value.
+
 Valid tokens include:
-"*" indicates any local address. If present, this must be the only token included.
+
+"\*" indicates any local address. If present, this must be the only token included.
 
 A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+
 A valid IPv6 address.
+
 An IPv4 address range in the format of "start address - end address" with no spaces included.
+
 An IPv6 address range in the format of "start address - end address" with no spaces included. If not specified the default is All.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalAddressRanges-Description-End -->
 
@@ -3289,7 +3336,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `,`) |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalAddressRanges-DFProperties-End -->
@@ -3306,7 +3353,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalPortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalPortRanges-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalPortRanges-OmaUri-Begin -->
@@ -3329,7 +3376,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Regular Expression: `^[0-9,-]+$` |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalPortRanges-DFProperties-End -->
@@ -3346,7 +3393,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-OmaUri-Begin -->
@@ -3369,7 +3416,7 @@ Specifies the friendly name of the Hyper-V Firewall rule.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-DFProperties-End -->
 
@@ -3385,7 +3432,7 @@ Specifies the friendly name of the Hyper-V Firewall rule.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-OmaUri-Begin -->
@@ -3396,7 +3443,7 @@ Specifies the friendly name of the Hyper-V Firewall rule.
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value represents the order of rule enforcement. A lower priority rule is evaluated first. If not specified, block rules are evaluated before allow rules. If priority is configured, it is highly recommended to configure the value for ALL rules to ensure expected evaluation of rules.
+This value represents the order of rule enforcement. A lower priority rule is evaluated first. If not specified, block rules are evaluated before allow rules. If priority is configured, it's highly recommended to configure the value for ALL rules to ensure expected evaluation of rules.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Description-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Editable-Begin -->
@@ -3408,7 +3455,7 @@ This value represents the order of rule enforcement. A lower priority rule is ev
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-65535]` |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-DFProperties-End -->
@@ -3425,7 +3472,7 @@ This value represents the order of rule enforcement. A lower priority rule is ev
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Profiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Profiles-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Profiles-OmaUri-Begin -->
@@ -3448,7 +3495,7 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Profiles-DFProperties-End -->
 
@@ -3458,8 +3505,8 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 | Flag | Description |
 |:--|:--|
 | 0x1 | FW_PROFILE_TYPE_DOMAIN:  This value represents the profile for networks that are connected to domains. |
-| 0x2 | FW_PROFILE_TYPE_STANDARD:  This value represents the standard profile for networks. These networks are classified as private by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are behind Network Address Translation (NAT) devices, routers, and other edge devices, and they are in a private location, such as a home or an office. AND FW_PROFILE_TYPE_PRIVATE:  This value represents the profile for private networks, which is represented by the same value as that used for FW_PROFILE_TYPE_STANDARD. |
-| 0x4 | FW_PROFILE_TYPE_PUBLIC:  This value represents the profile for public networks. These networks are classified as public by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are those at airports, coffee shops, and other public places where the peers in the network or the network administrator are not trusted. |
+| 0x2 | FW_PROFILE_TYPE_STANDARD:  This value represents the standard profile for networks. These networks are classified as private by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are behind Network Address Translation (NAT) devices, routers, and other edge devices, and they're in a private location, such as a home or an office. AND FW_PROFILE_TYPE_PRIVATE:  This value represents the profile for private networks, which is represented by the same value as that used for FW_PROFILE_TYPE_STANDARD. |
+| 0x4 | FW_PROFILE_TYPE_PUBLIC:  This value represents the profile for public networks. These networks are classified as public by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are those at airports, coffee shops, and other public places where the peers in the network or the network administrator aren't trusted. |
 | 0x7FFFFFFF | FW_PROFILE_TYPE_ALL:  This value represents all these network sets and any future network sets. |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Profiles-AllowedValues-End -->
 
@@ -3475,7 +3522,7 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Protocol-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Protocol-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Protocol-OmaUri-Begin -->
@@ -3498,9 +3545,9 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-65535]` |
+| Allowed Values | Range: `[0-255]` |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Protocol-DFProperties-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Protocol-Examples-Begin -->
@@ -3515,7 +3562,7 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemoteAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemoteAddressRanges-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemoteAddressRanges-OmaUri-Begin -->
@@ -3526,11 +3573,16 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemoteAddressRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
-Consists of one or more comma-delimited tokens specifying the remote addresses covered by the rule. The default value is "*". Valid tokens include:
-"*" indicates any remote address. If present, this must be the only token included.
+Consists of one or more comma-delimited tokens specifying the remote addresses covered by the rule. The default value is "\*". Valid tokens include:
+
+"\*" indicates any remote address. If present, this must be the only token included.
+
 A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+
 A valid IPv6 address.
+
 An IPv4 address range in the format of "start address - end address" with no spaces included.
+
 An IPv6 address range in the format of "start address - end address" with no spaces included. If not specified the default is All.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemoteAddressRanges-Description-End -->
 
@@ -3543,7 +3595,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `,`) |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemoteAddressRanges-DFProperties-End -->
@@ -3560,7 +3612,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemotePortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemotePortRanges-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemotePortRanges-OmaUri-Begin -->
@@ -3583,7 +3635,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Regular Expression: `^[0-9,-]+$` |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemotePortRanges-DFProperties-End -->
@@ -3600,7 +3652,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Status-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Status-OmaUri-Begin -->
@@ -3623,7 +3675,7 @@ Provides information about the specific version of the rule in deployment for mo
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Status-DFProperties-End -->
 
@@ -3639,7 +3691,7 @@ Provides information about the specific version of the rule in deployment for mo
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-VMCreatorId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-VMCreatorId-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-VMCreatorId-OmaUri-Begin -->
@@ -3662,7 +3714,7 @@ This field specifies the VM Creator ID that this rule is applicable to. A NULL G
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Regular Expression: `\{[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}\}` |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-VMCreatorId-DFProperties-End -->
@@ -3679,7 +3731,7 @@ This field specifies the VM Creator ID that this rule is applicable to. A NULL G
 <!-- Device-MdmStore-HyperVVMSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-OmaUri-Begin -->
@@ -3702,7 +3754,7 @@ Settings for the Windows Firewall for Hyper-V containers. Each setting applies o
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MdmStore-HyperVVMSettings-DFProperties-End -->
 
@@ -3718,7 +3770,7 @@ Settings for the Windows Firewall for Hyper-V containers. Each setting applies o
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-OmaUri-Begin -->
@@ -3741,7 +3793,7 @@ VM Creator ID that these settings apply to. Valid format is a GUID.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Atomic Required | True |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
@@ -3760,7 +3812,7 @@ VM Creator ID that these settings apply to. Valid format is a GUID.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-AllowHostPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-AllowHostPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-AllowHostPolicyMerge-OmaUri-Begin -->
@@ -3783,7 +3835,7 @@ This value is used as an on/off switch. If this value is true, applicable host f
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-AllowHostPolicyMerge-DFProperties-End -->
@@ -3809,7 +3861,7 @@ This value is used as an on/off switch. If this value is true, applicable host f
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-OmaUri-Begin -->
@@ -3820,7 +3872,7 @@ This value is used as an on/off switch. If this value is true, applicable host f
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. This value controls the settings for all profiles. It is recommended to instead use the profile setting value under the profile subtree.
+This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. This value controls the settings for all profiles. It's recommended to instead use the profile setting value under the profile subtree.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-Editable-Begin -->
@@ -3832,7 +3884,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 1 |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -3859,7 +3911,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-OmaUri-Begin -->
@@ -3870,7 +3922,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. This value controls the settings for all profiles. It is recommended to instead use the profile setting value under the profile subtree.
+This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. This value controls the settings for all profiles. It's recommended to instead use the profile setting value under the profile subtree.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-Editable-Begin -->
@@ -3882,7 +3934,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 0 |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -3909,7 +3961,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-OmaUri-Begin -->
@@ -3931,7 +3983,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DFProperties-End -->
 
@@ -3947,7 +3999,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -3970,7 +4022,7 @@ This value is used as an on/off switch. If this value is false, Hyper-V Firewall
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -3997,7 +4049,7 @@ This value is used as an on/off switch. If this value is false, Hyper-V Firewall
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -4020,7 +4072,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 1 |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -4047,7 +4099,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -4070,7 +4122,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 0 |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/DomainProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -4097,7 +4149,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-EnableFirewall-OmaUri-Begin -->
@@ -4120,7 +4172,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Replace |
 | Default Value  | true |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-EnableFirewall-DFProperties-End -->
@@ -4146,7 +4198,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-OmaUri-Begin -->
@@ -4157,7 +4209,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch for the Hyper-V Firewall. This value controls the settings for all profiles. It is recommended to instead use the profile setting value under the profile subtree.
+This value is an on/off switch for the Hyper-V Firewall. This value controls the settings for all profiles. It's recommended to instead use the profile setting value under the profile subtree.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-Editable-Begin -->
@@ -4169,7 +4221,7 @@ This value is an on/off switch for the Hyper-V Firewall. This value controls the
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Replace |
 | Default Value  | true |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-DFProperties-End -->
@@ -4195,7 +4247,7 @@ This value is an on/off switch for the Hyper-V Firewall. This value controls the
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableLoopback-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableLoopback-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableLoopback-OmaUri-Begin -->
@@ -4218,7 +4270,7 @@ This value is an on/off switch for loopback traffic. This determines if this VM 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Replace |
 | Default Value  | false |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableLoopback-DFProperties-End -->
@@ -4244,7 +4296,7 @@ This value is an on/off switch for loopback traffic. This determines if this VM 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-OmaUri-Begin -->
@@ -4266,7 +4318,7 @@ This value is an on/off switch for loopback traffic. This determines if this VM 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DFProperties-End -->
 
@@ -4282,7 +4334,7 @@ This value is an on/off switch for loopback traffic. This determines if this VM 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -4305,7 +4357,7 @@ This value is used as an on/off switch. If this value is false, Hyper-V Firewall
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -4332,7 +4384,7 @@ This value is used as an on/off switch. If this value is false, Hyper-V Firewall
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -4355,7 +4407,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 1 |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -4382,7 +4434,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -4405,7 +4457,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 0 |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -4432,7 +4484,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-EnableFirewall-OmaUri-Begin -->
@@ -4455,7 +4507,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Replace |
 | Default Value  | true |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-EnableFirewall-DFProperties-End -->
@@ -4481,7 +4533,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-OmaUri-Begin -->
@@ -4503,7 +4555,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DFProperties-End -->
 
@@ -4519,7 +4571,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -4542,7 +4594,7 @@ This value is used as an on/off switch. If this value is false, Hyper-V Firewall
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -4569,7 +4621,7 @@ This value is used as an on/off switch. If this value is false, Hyper-V Firewall
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -4592,7 +4644,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 1 |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -4619,7 +4671,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -4642,7 +4694,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 0 |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -4669,7 +4721,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-OmaUri-Begin -->
@@ -4692,7 +4744,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Replace |
 | Default Value  | true |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-DFProperties-End -->
@@ -4718,7 +4770,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-PrivateProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-OmaUri-Begin -->
@@ -4740,7 +4792,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MdmStore-PrivateProfile-DFProperties-End -->
 
@@ -4756,7 +4808,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-PrivateProfile-AllowLocalIpsecPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-AllowLocalIpsecPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-AllowLocalIpsecPolicyMerge-OmaUri-Begin -->
@@ -4779,7 +4831,7 @@ This value is an on/off switch. If this value is false, connection security rule
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -4806,7 +4858,7 @@ This value is an on/off switch. If this value is false, connection security rule
 <!-- Device-MdmStore-PrivateProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -4829,7 +4881,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -4856,7 +4908,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 <!-- Device-MdmStore-PrivateProfile-AuthAppsAllowUserPrefMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-AuthAppsAllowUserPrefMerge-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-AuthAppsAllowUserPrefMerge-OmaUri-Begin -->
@@ -4867,7 +4919,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 
 <!-- Device-MdmStore-PrivateProfile-AuthAppsAllowUserPrefMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If this value is false, authorized application firewall rules in the local store are ignored and not enforced. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If this value is false, authorized application firewall rules in the local store are ignored and not enforced. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-AuthAppsAllowUserPrefMerge-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-AuthAppsAllowUserPrefMerge-Editable-Begin -->
@@ -4879,7 +4931,7 @@ This value is used as an on/off switch. If this value is false, authorized appli
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -4906,7 +4958,7 @@ This value is used as an on/off switch. If this value is false, authorized appli
 <!-- Device-MdmStore-PrivateProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -4917,7 +4969,7 @@ This value is used as an on/off switch. If this value is false, authorized appli
 
 <!-- Device-MdmStore-PrivateProfile-DefaultInboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. The merge law for this option is to let the value of the GroupPolicyRSoPStore.win if it is configured; otherwise, the local store value is used.
+This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. The merge law for this option is to let the value of the GroupPolicyRSoPStore.win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-DefaultInboundAction-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DefaultInboundAction-Editable-Begin -->
@@ -4929,7 +4981,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 1 |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -4956,7 +5008,7 @@ This value is the action that the firewall does by default (and evaluates at the
 <!-- Device-MdmStore-PrivateProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -4967,7 +5019,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-PrivateProfile-DefaultOutboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-DefaultOutboundAction-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DefaultOutboundAction-Editable-Begin -->
@@ -4979,7 +5031,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 0 |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5029,7 +5081,7 @@ This value is the action that the firewall does by default (and evaluates at the
 <!-- Device-MdmStore-PrivateProfile-DisableInboundNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-DisableInboundNotifications-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DisableInboundNotifications-OmaUri-Begin -->
@@ -5040,7 +5092,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-PrivateProfile-DisableInboundNotifications-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. If this value is false, the firewall MAY display a notification to the user when an application is blocked from listening on a port. If this value is on, the firewall MUST NOT display such a notification. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch. If this value is false, the firewall MAY display a notification to the user when an application is blocked from listening on a port. If this value is on, the firewall MUST NOT display such a notification. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-DisableInboundNotifications-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DisableInboundNotifications-Editable-Begin -->
@@ -5052,7 +5104,7 @@ This value is an on/off switch. If this value is false, the firewall MAY display
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5079,7 +5131,7 @@ This value is an on/off switch. If this value is false, the firewall MAY display
 <!-- Device-MdmStore-PrivateProfile-DisableStealthMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-DisableStealthMode-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DisableStealthMode-OmaUri-Begin -->
@@ -5090,7 +5142,7 @@ This value is an on/off switch. If this value is false, the firewall MAY display
 
 <!-- Device-MdmStore-PrivateProfile-DisableStealthMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. When this option is false, the server operates in stealth mode. The firewall rules used to enforce stealth mode are implementation-specific. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch. When this option is false, the server operates in stealth mode. The firewall rules used to enforce stealth mode are implementation-specific. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-DisableStealthMode-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DisableStealthMode-Editable-Begin -->
@@ -5102,7 +5154,7 @@ This value is an on/off switch. When this option is false, the server operates i
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5129,7 +5181,7 @@ This value is an on/off switch. When this option is false, the server operates i
 <!-- Device-MdmStore-PrivateProfile-DisableStealthModeIpsecSecuredPacketExemption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-DisableStealthModeIpsecSecuredPacketExemption-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DisableStealthModeIpsecSecuredPacketExemption-OmaUri-Begin -->
@@ -5140,7 +5192,7 @@ This value is an on/off switch. When this option is false, the server operates i
 
 <!-- Device-MdmStore-PrivateProfile-DisableStealthModeIpsecSecuredPacketExemption-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. This option is ignored if DisableStealthMode is on. Otherwise, when this option is true, the firewall's stealth mode rules MUST NOT prevent the host computer from responding to unsolicited network traffic if that traffic is secured by IPsec. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
+This value is an on/off switch. This option is ignored if DisableStealthMode is on. Otherwise, when this option is true, the firewall's stealth mode rules MUST NOT prevent the host computer from responding to unsolicited network traffic if that traffic is secured by IPsec. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
 <!-- Device-MdmStore-PrivateProfile-DisableStealthModeIpsecSecuredPacketExemption-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DisableStealthModeIpsecSecuredPacketExemption-Editable-Begin -->
@@ -5152,7 +5204,7 @@ This value is an on/off switch. This option is ignored if DisableStealthMode is 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5179,7 +5231,7 @@ This value is an on/off switch. This option is ignored if DisableStealthMode is 
 <!-- Device-MdmStore-PrivateProfile-DisableUnicastResponsesToMulticastBroadcast-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-DisableUnicastResponsesToMulticastBroadcast-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DisableUnicastResponsesToMulticastBroadcast-OmaUri-Begin -->
@@ -5190,7 +5242,7 @@ This value is an on/off switch. This option is ignored if DisableStealthMode is 
 
 <!-- Device-MdmStore-PrivateProfile-DisableUnicastResponsesToMulticastBroadcast-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If it is true, unicast responses to multicast broadcast traffic is blocked. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If it's true, unicast responses to multicast broadcast traffic is blocked. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-DisableUnicastResponsesToMulticastBroadcast-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DisableUnicastResponsesToMulticastBroadcast-Editable-Begin -->
@@ -5202,7 +5254,7 @@ This value is used as an on/off switch. If it is true, unicast responses to mult
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5229,7 +5281,7 @@ This value is used as an on/off switch. If it is true, unicast responses to mult
 <!-- Device-MdmStore-PrivateProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-EnableFirewall-OmaUri-Begin -->
@@ -5240,7 +5292,7 @@ This value is used as an on/off switch. If it is true, unicast responses to mult
 
 <!-- Device-MdmStore-PrivateProfile-EnableFirewall-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch for the firewall and advanced security enforcement. If this value is false, the server MUST NOT block any network traffic, regardless of other policy settings. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch for the firewall and advanced security enforcement. If this value is false, the server MUST NOT block any network traffic, regardless of other policy settings. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-EnableFirewall-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-EnableFirewall-Editable-Begin -->
@@ -5252,7 +5304,7 @@ This value is an on/off switch for the firewall and advanced security enforcemen
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Get, Replace |
 | Default Value  | true |
 <!-- Device-MdmStore-PrivateProfile-EnableFirewall-DFProperties-End -->
@@ -5278,7 +5330,7 @@ This value is an on/off switch for the firewall and advanced security enforcemen
 <!-- Device-MdmStore-PrivateProfile-EnableLogDroppedPackets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PrivateProfile-EnableLogDroppedPackets-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-EnableLogDroppedPackets-OmaUri-Begin -->
@@ -5301,7 +5353,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5328,7 +5380,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 <!-- Device-MdmStore-PrivateProfile-EnableLogIgnoredRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PrivateProfile-EnableLogIgnoredRules-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-EnableLogIgnoredRules-OmaUri-Begin -->
@@ -5339,7 +5391,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 <!-- Device-MdmStore-PrivateProfile-EnableLogIgnoredRules-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. The server MAY use this value in an implementation-specific way to control logging of events if a rule is not enforced for any reason. The merge law for this option is to let "on" values win.
+This value is used as an on/off switch. The server MAY use this value in an implementation-specific way to control logging of events if a rule isn't enforced for any reason. The merge law for this option is to let "on" values win.
 <!-- Device-MdmStore-PrivateProfile-EnableLogIgnoredRules-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-EnableLogIgnoredRules-Editable-Begin -->
@@ -5351,7 +5403,7 @@ This value is used as an on/off switch. The server MAY use this value in an impl
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5378,7 +5430,7 @@ This value is used as an on/off switch. The server MAY use this value in an impl
 <!-- Device-MdmStore-PrivateProfile-EnableLogSuccessConnections-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PrivateProfile-EnableLogSuccessConnections-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-EnableLogSuccessConnections-OmaUri-Begin -->
@@ -5401,7 +5453,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5428,7 +5480,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 <!-- Device-MdmStore-PrivateProfile-GlobalPortsAllowUserPrefMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-GlobalPortsAllowUserPrefMerge-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-GlobalPortsAllowUserPrefMerge-OmaUri-Begin -->
@@ -5439,7 +5491,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 <!-- Device-MdmStore-PrivateProfile-GlobalPortsAllowUserPrefMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If this value is false, global port firewall rules in the local store are ignored and not enforced. The setting only has meaning if it is set or enumerated in the Group Policy store or if it is enumerated from the GroupPolicyRSoPStore. The merge law for this option is to let the value GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If this value is false, global port firewall rules in the local store are ignored and not enforced. The setting only has meaning if it's set or enumerated in the Group Policy store or if it's enumerated from the GroupPolicyRSoPStore. The merge law for this option is to let the value GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-GlobalPortsAllowUserPrefMerge-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-GlobalPortsAllowUserPrefMerge-Editable-Begin -->
@@ -5451,7 +5503,7 @@ This value is used as an on/off switch. If this value is false, global port fire
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5478,7 +5530,7 @@ This value is used as an on/off switch. If this value is false, global port fire
 <!-- Device-MdmStore-PrivateProfile-LogFilePath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PrivateProfile-LogFilePath-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-LogFilePath-OmaUri-Begin -->
@@ -5489,7 +5541,7 @@ This value is used as an on/off switch. If this value is false, global port fire
 
 <!-- Device-MdmStore-PrivateProfile-LogFilePath-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is a string that represents a file path to the log where the firewall logs dropped packets and successful connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured, otherwise the MdmStore value wins if it is configured, otherwise the local store value is used.
+This value is a string that represents a file path to the log where the firewall logs dropped packets and successful connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured, otherwise the MdmStore value wins if it's configured, otherwise the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-LogFilePath-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-LogFilePath-Editable-Begin -->
@@ -5501,7 +5553,7 @@ This value is a string that represents a file path to the log where the firewall
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 | Default Value  | %systemroot%\system32\LogFiles\Firewall\pfirewall.log |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5519,7 +5571,7 @@ This value is a string that represents a file path to the log where the firewall
 <!-- Device-MdmStore-PrivateProfile-LogMaxFileSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PrivateProfile-LogMaxFileSize-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-LogMaxFileSize-OmaUri-Begin -->
@@ -5530,7 +5582,7 @@ This value is a string that represents a file path to the log where the firewall
 
 <!-- Device-MdmStore-PrivateProfile-LogMaxFileSize-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value specifies the size, in kilobytes, of the log file where dropped packets and successful connections are logged. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured, otherwise the MdmStore value wins if it is configured, otherwise the local store value is used.
+This value specifies the size, in kilobytes, of the log file where dropped packets and successful connections are logged. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured, otherwise the MdmStore value wins if it's configured, otherwise the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-LogMaxFileSize-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-LogMaxFileSize-Editable-Begin -->
@@ -5542,7 +5594,7 @@ This value specifies the size, in kilobytes, of the log file where dropped packe
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 1024 |
@@ -5561,7 +5613,7 @@ This value specifies the size, in kilobytes, of the log file where dropped packe
 <!-- Device-MdmStore-PrivateProfile-Shielded-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-Shielded-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-Shielded-OmaUri-Begin -->
@@ -5584,7 +5636,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5611,7 +5663,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 <!-- Device-MdmStore-PublicProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-OmaUri-Begin -->
@@ -5633,7 +5685,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MdmStore-PublicProfile-DFProperties-End -->
 
@@ -5649,7 +5701,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 <!-- Device-MdmStore-PublicProfile-AllowLocalIpsecPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-AllowLocalIpsecPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-AllowLocalIpsecPolicyMerge-OmaUri-Begin -->
@@ -5672,7 +5724,7 @@ This value is an on/off switch. If this value is false, connection security rule
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5699,7 +5751,7 @@ This value is an on/off switch. If this value is false, connection security rule
 <!-- Device-MdmStore-PublicProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -5722,7 +5774,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5749,7 +5801,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 <!-- Device-MdmStore-PublicProfile-AuthAppsAllowUserPrefMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-AuthAppsAllowUserPrefMerge-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-AuthAppsAllowUserPrefMerge-OmaUri-Begin -->
@@ -5760,7 +5812,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 
 <!-- Device-MdmStore-PublicProfile-AuthAppsAllowUserPrefMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If this value is false, authorized application firewall rules in the local store are ignored and not enforced. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If this value is false, authorized application firewall rules in the local store are ignored and not enforced. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PublicProfile-AuthAppsAllowUserPrefMerge-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-AuthAppsAllowUserPrefMerge-Editable-Begin -->
@@ -5772,7 +5824,7 @@ This value is used as an on/off switch. If this value is false, authorized appli
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5799,7 +5851,7 @@ This value is used as an on/off switch. If this value is false, authorized appli
 <!-- Device-MdmStore-PublicProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -5810,7 +5862,7 @@ This value is used as an on/off switch. If this value is false, authorized appli
 
 <!-- Device-MdmStore-PublicProfile-DefaultInboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. The merge law for this option is to let the value of the GroupPolicyRSoPStore.win if it is configured; otherwise, the local store value is used.
+This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. The merge law for this option is to let the value of the GroupPolicyRSoPStore.win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PublicProfile-DefaultInboundAction-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-DefaultInboundAction-Editable-Begin -->
@@ -5822,7 +5874,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 1 |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5849,7 +5901,7 @@ This value is the action that the firewall does by default (and evaluates at the
 <!-- Device-MdmStore-PublicProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -5860,7 +5912,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-PublicProfile-DefaultOutboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PublicProfile-DefaultOutboundAction-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-DefaultOutboundAction-Editable-Begin -->
@@ -5872,7 +5924,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 0 |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5922,7 +5974,7 @@ This value is the action that the firewall does by default (and evaluates at the
 <!-- Device-MdmStore-PublicProfile-DisableInboundNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-DisableInboundNotifications-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-DisableInboundNotifications-OmaUri-Begin -->
@@ -5933,7 +5985,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-PublicProfile-DisableInboundNotifications-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. If this value is false, the firewall MAY display a notification to the user when an application is blocked from listening on a port. If this value is on, the firewall MUST NOT display such a notification. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch. If this value is false, the firewall MAY display a notification to the user when an application is blocked from listening on a port. If this value is on, the firewall MUST NOT display such a notification. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PublicProfile-DisableInboundNotifications-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-DisableInboundNotifications-Editable-Begin -->
@@ -5945,7 +5997,7 @@ This value is an on/off switch. If this value is false, the firewall MAY display
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -5972,7 +6024,7 @@ This value is an on/off switch. If this value is false, the firewall MAY display
 <!-- Device-MdmStore-PublicProfile-DisableStealthMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-DisableStealthMode-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-DisableStealthMode-OmaUri-Begin -->
@@ -5983,7 +6035,7 @@ This value is an on/off switch. If this value is false, the firewall MAY display
 
 <!-- Device-MdmStore-PublicProfile-DisableStealthMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. When this option is false, the server operates in stealth mode. The firewall rules used to enforce stealth mode are implementation-specific. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch. When this option is false, the server operates in stealth mode. The firewall rules used to enforce stealth mode are implementation-specific. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PublicProfile-DisableStealthMode-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-DisableStealthMode-Editable-Begin -->
@@ -5995,7 +6047,7 @@ This value is an on/off switch. When this option is false, the server operates i
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -6022,7 +6074,7 @@ This value is an on/off switch. When this option is false, the server operates i
 <!-- Device-MdmStore-PublicProfile-DisableStealthModeIpsecSecuredPacketExemption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-DisableStealthModeIpsecSecuredPacketExemption-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-DisableStealthModeIpsecSecuredPacketExemption-OmaUri-Begin -->
@@ -6033,7 +6085,7 @@ This value is an on/off switch. When this option is false, the server operates i
 
 <!-- Device-MdmStore-PublicProfile-DisableStealthModeIpsecSecuredPacketExemption-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. This option is ignored if DisableStealthMode is on. Otherwise, when this option is true, the firewall's stealth mode rules MUST NOT prevent the host computer from responding to unsolicited network traffic if that traffic is secured by IPsec. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
+This value is an on/off switch. This option is ignored if DisableStealthMode is on. Otherwise, when this option is true, the firewall's stealth mode rules MUST NOT prevent the host computer from responding to unsolicited network traffic if that traffic is secured by IPsec. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
 <!-- Device-MdmStore-PublicProfile-DisableStealthModeIpsecSecuredPacketExemption-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-DisableStealthModeIpsecSecuredPacketExemption-Editable-Begin -->
@@ -6045,7 +6097,7 @@ This value is an on/off switch. This option is ignored if DisableStealthMode is 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -6072,7 +6124,7 @@ This value is an on/off switch. This option is ignored if DisableStealthMode is 
 <!-- Device-MdmStore-PublicProfile-DisableUnicastResponsesToMulticastBroadcast-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-DisableUnicastResponsesToMulticastBroadcast-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-DisableUnicastResponsesToMulticastBroadcast-OmaUri-Begin -->
@@ -6083,7 +6135,7 @@ This value is an on/off switch. This option is ignored if DisableStealthMode is 
 
 <!-- Device-MdmStore-PublicProfile-DisableUnicastResponsesToMulticastBroadcast-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If it is true, unicast responses to multicast broadcast traffic is blocked. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If it's true, unicast responses to multicast broadcast traffic is blocked. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PublicProfile-DisableUnicastResponsesToMulticastBroadcast-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-DisableUnicastResponsesToMulticastBroadcast-Editable-Begin -->
@@ -6095,7 +6147,7 @@ This value is used as an on/off switch. If it is true, unicast responses to mult
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -6122,7 +6174,7 @@ This value is used as an on/off switch. If it is true, unicast responses to mult
 <!-- Device-MdmStore-PublicProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-EnableFirewall-OmaUri-Begin -->
@@ -6133,7 +6185,7 @@ This value is used as an on/off switch. If it is true, unicast responses to mult
 
 <!-- Device-MdmStore-PublicProfile-EnableFirewall-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch for the firewall and advanced security enforcement. If this value is false, the server MUST NOT block any network traffic, regardless of other policy settings. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch for the firewall and advanced security enforcement. If this value is false, the server MUST NOT block any network traffic, regardless of other policy settings. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PublicProfile-EnableFirewall-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-EnableFirewall-Editable-Begin -->
@@ -6145,7 +6197,7 @@ This value is an on/off switch for the firewall and advanced security enforcemen
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 <!-- Device-MdmStore-PublicProfile-EnableFirewall-DFProperties-End -->
@@ -6171,7 +6223,7 @@ This value is an on/off switch for the firewall and advanced security enforcemen
 <!-- Device-MdmStore-PublicProfile-EnableLogDroppedPackets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PublicProfile-EnableLogDroppedPackets-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-EnableLogDroppedPackets-OmaUri-Begin -->
@@ -6194,7 +6246,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -6221,7 +6273,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 <!-- Device-MdmStore-PublicProfile-EnableLogIgnoredRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PublicProfile-EnableLogIgnoredRules-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-EnableLogIgnoredRules-OmaUri-Begin -->
@@ -6232,7 +6284,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 <!-- Device-MdmStore-PublicProfile-EnableLogIgnoredRules-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. The server MAY use this value in an implementation-specific way to control logging of events if a rule is not enforced for any reason. The merge law for this option is to let "on" values win.
+This value is used as an on/off switch. The server MAY use this value in an implementation-specific way to control logging of events if a rule isn't enforced for any reason. The merge law for this option is to let "on" values win.
 <!-- Device-MdmStore-PublicProfile-EnableLogIgnoredRules-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-EnableLogIgnoredRules-Editable-Begin -->
@@ -6244,7 +6296,7 @@ This value is used as an on/off switch. The server MAY use this value in an impl
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -6271,7 +6323,7 @@ This value is used as an on/off switch. The server MAY use this value in an impl
 <!-- Device-MdmStore-PublicProfile-EnableLogSuccessConnections-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PublicProfile-EnableLogSuccessConnections-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-EnableLogSuccessConnections-OmaUri-Begin -->
@@ -6294,7 +6346,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -6321,7 +6373,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 <!-- Device-MdmStore-PublicProfile-GlobalPortsAllowUserPrefMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-GlobalPortsAllowUserPrefMerge-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-GlobalPortsAllowUserPrefMerge-OmaUri-Begin -->
@@ -6332,7 +6384,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 <!-- Device-MdmStore-PublicProfile-GlobalPortsAllowUserPrefMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If this value is false, global port firewall rules in the local store are ignored and not enforced. The setting only has meaning if it is set or enumerated in the Group Policy store or if it is enumerated from the GroupPolicyRSoPStore. The merge law for this option is to let the value GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If this value is false, global port firewall rules in the local store are ignored and not enforced. The setting only has meaning if it's set or enumerated in the Group Policy store or if it's enumerated from the GroupPolicyRSoPStore. The merge law for this option is to let the value GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PublicProfile-GlobalPortsAllowUserPrefMerge-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-GlobalPortsAllowUserPrefMerge-Editable-Begin -->
@@ -6344,7 +6396,7 @@ This value is used as an on/off switch. If this value is false, global port fire
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -6371,7 +6423,7 @@ This value is used as an on/off switch. If this value is false, global port fire
 <!-- Device-MdmStore-PublicProfile-LogFilePath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PublicProfile-LogFilePath-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-LogFilePath-OmaUri-Begin -->
@@ -6382,7 +6434,7 @@ This value is used as an on/off switch. If this value is false, global port fire
 
 <!-- Device-MdmStore-PublicProfile-LogFilePath-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is a string that represents a file path to the log where the firewall logs dropped packets and successful connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured, otherwise the MdmStore value wins if it is configured, otherwise the local store value is used.
+This value is a string that represents a file path to the log where the firewall logs dropped packets and successful connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured, otherwise the MdmStore value wins if it's configured, otherwise the local store value is used.
 <!-- Device-MdmStore-PublicProfile-LogFilePath-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-LogFilePath-Editable-Begin -->
@@ -6394,7 +6446,7 @@ This value is a string that represents a file path to the log where the firewall
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 | Default Value  | %systemroot%\system32\LogFiles\Firewall\pfirewall.log |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
@@ -6412,7 +6464,7 @@ This value is a string that represents a file path to the log where the firewall
 <!-- Device-MdmStore-PublicProfile-LogMaxFileSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PublicProfile-LogMaxFileSize-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-LogMaxFileSize-OmaUri-Begin -->
@@ -6423,7 +6475,7 @@ This value is a string that represents a file path to the log where the firewall
 
 <!-- Device-MdmStore-PublicProfile-LogMaxFileSize-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value specifies the size, in kilobytes, of the log file where dropped packets and successful connections are logged. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured, otherwise the MdmStore value wins if it is configured, otherwise the local store value is used.
+This value specifies the size, in kilobytes, of the log file where dropped packets and successful connections are logged. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured, otherwise the MdmStore value wins if it's configured, otherwise the local store value is used.
 <!-- Device-MdmStore-PublicProfile-LogMaxFileSize-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-LogMaxFileSize-Editable-Begin -->
@@ -6435,7 +6487,7 @@ This value specifies the size, in kilobytes, of the log file where dropped packe
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 1024 |
@@ -6454,7 +6506,7 @@ This value specifies the size, in kilobytes, of the log file where dropped packe
 <!-- Device-MdmStore-PublicProfile-Shielded-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-Shielded-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-Shielded-OmaUri-Begin -->
@@ -6477,7 +6529,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 | Dependency [Enable Firewall] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableFirewall` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |

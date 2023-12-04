@@ -1,11 +1,11 @@
 ---
-title: 4722(S) A user account was enabled. (Windows 10)
+title: 4722(S) A user account was enabled. 
 description: Describes security event 4722(S) A user account was enabled. This event is generated when a user or computer object is enabled.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

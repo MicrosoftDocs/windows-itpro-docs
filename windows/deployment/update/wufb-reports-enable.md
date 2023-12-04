@@ -1,19 +1,21 @@
 ---
 title: Enable Windows Update for Business reports
-manager: aaroncz
-description: How to enable Windows Update for Business reports through the Azure portal
+titleSuffix: Windows Update for Business reports
+description: How to enable the Windows Update for Business reports service through the Azure portal or the Microsoft 365 admin center.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
-ms.topic: article
-ms.date: 04/26/2023
-ms.technology: itpro-updates
+manager: aaroncz
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+ms.date: 07/11/2023
 ---
 
 # Enable Windows Update for Business reports
 <!--37063317, 30141258, 37063041-->
-***(Applies to: Windows 11 & Windows 10)***
-
 After verifying the [prerequisites](wufb-reports-prerequisites.md) are met, you can start to set up Windows Update for Business reports. The two main steps for setting up  Windows Update for Business reports are:
 
 1. [Add Windows Update for Business reports](#bkmk_add) to your Azure subscription. This step has the following phases:
@@ -52,9 +54,7 @@ Windows Update for Business reports uses an [Azure Log Analytics workspaces](/az
 
 ## <a name="bkmk_enroll"></a> Enroll into Windows Update for Business reports
 
-Enroll into Windows Update for Business reports by configuring its settings through either the Azure Workbook or from the Microsoft 365 admin center. Completing the Windows Update for Business reports configuration removes needing to specify [`CommercialID`](update-compliance-get-started.md#get-your-commercialid), which was needed by Update Compliance, the predecessor of Windows Update for Business reports.
-
-Use one of the following methods to enroll into Windows Update for Business reports:
+Enroll into Windows Update for Business reports by configuring its settings through either the Azure Workbook or from the Microsoft 365 admin center. Use one of the following methods to enroll into Windows Update for Business reports:
 
 ##### <a name="bkmk_enroll-workbook"></a> Enroll through the Azure Workbook (recommended method)
 

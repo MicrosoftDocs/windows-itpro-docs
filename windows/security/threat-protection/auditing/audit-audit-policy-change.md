@@ -1,5 +1,5 @@
 ---
-title: Audit Audit Policy Change (Windows 10)
+title: Audit Audit Policy Change 
 description: The Advanced Security Audit policy setting, Audit Audit Policy Change, determines if audit events are generated when changes are made to audit policy.
 ms.assetid: 7153bf75-6978-4d7e-a821-59a699efb8a9
 ms.reviewer: 
@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/06/2021
 ms.technology: itpro-security

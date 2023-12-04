@@ -4,7 +4,7 @@ description: Learn more about the NetworkListManager Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowedTlsAuthenticationEndpoints-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- AllowedTlsAuthenticationEndpoints-Applicability-End -->
 
 <!-- AllowedTlsAuthenticationEndpoints-OmaUri-Begin -->
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- AllowedTlsAuthenticationEndpoints-Description-Begin -->
 <!-- Description-Source-DDF -->
-List of URLs (seperated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.
+List of URLs (separated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.
 <!-- AllowedTlsAuthenticationEndpoints-Description-End -->
 
 <!-- AllowedTlsAuthenticationEndpoints-Editable-Begin -->
@@ -62,7 +62,7 @@ Invoke-WebRequest -Uri https://nls.corp.contoso.com -Method get -UseBasicParsing
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- AllowedTlsAuthenticationEndpoints-DFProperties-End -->
@@ -79,7 +79,7 @@ Invoke-WebRequest -Uri https://nls.corp.contoso.com -Method get -UseBasicParsing
 <!-- ConfiguredTlsAuthenticationNetworkName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- ConfiguredTlsAuthenticationNetworkName-Applicability-End -->
 
 <!-- ConfiguredTlsAuthenticationNetworkName-OmaUri-Begin -->
@@ -104,7 +104,7 @@ This policy setting provides the string that names a network. If this setting is
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfiguredTlsAuthenticationNetworkName-DFProperties-End -->
 

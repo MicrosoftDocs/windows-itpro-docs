@@ -1,11 +1,11 @@
 ---
-title: 5712(S) A Remote Procedure Call (RPC) was attempted. (Windows 10)
+title: 5712(S) A Remote Procedure Call (RPC) was attempted. 
 description: Describes security event 5712(S) A Remote Procedure Call (RPC) was attempted.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

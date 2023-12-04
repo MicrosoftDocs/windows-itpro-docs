@@ -1,15 +1,12 @@
 ---
-title: Associate and deploy a VPN policy for Windows Information Protection (WIP) using the Azure portal for Microsoft Intune (Windows 10)
+title: Associate and deploy a VPN policy for Windows Information Protection (WIP) using the Azure portal for Microsoft Intune 
 description: After you've created and deployed your Windows Information Protection (WIP) policy, use Microsoft Intune to link it to your Virtual Private Network (VPN) policy
-ms.prod: windows-client
-ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 02/26/2019
 ms.reviewer: 
-ms.technology: itpro-security
 ---
 
 # Associate and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune
@@ -55,7 +52,7 @@ After you've created your VPN policy, you'll need to deploy it to the same group
 
 1.  On the **App policy** blade, select your newly created policy, select **User groups** from the menu that appears, and then select **Add user group**.
 
-    A list of user groups, made up of all of the security groups in your Azure Active Directory, appear in the **Add user group** blade.
+    A list of user groups, made up of all of the security groups in your Microsoft Entra ID, appear in the **Add user group** blade.
 
 2. Choose the group you want your policy to apply to, and then select **Select** to deploy the policy.
 

@@ -1,5 +1,5 @@
 ---
-title: Chromebook migration guide (Windows 10)
+title: Chromebook migration guide 
 description: Learn how to migrate a Google Chromebook-based learning environment to a Windows 10-based learning environment.
 ms.topic: how-to
 ms.date: 08/10/2022
@@ -125,10 +125,10 @@ Table 3. Settings in the Security node in the Google Admin Console
 
 |Section|Settings|
 |--- |--- |
-|Basic settings|These settings configure password management and whether or not two-factor authentication (2FA) is configured. You can set the minimum password length, the maximum password length, if non-admin users can recover their own passwords, and enable 2FA.<br> Record these settings and use them to help configure your on-premises Active Directory or Azure Active Directory (Azure AD) to mirror the current behavior of your Chromebook environment.|
+|Basic settings|These settings configure password management and whether or not two-factor authentication (2FA) is configured. You can set the minimum password length, the maximum password length, if non-admin users can recover their own passwords, and enable 2FA.<br> Record these settings and use them to help configure your on-premises Active Directory or Microsoft Entra ID to mirror the current behavior of your Chromebook environment.|
 |Password monitoring|This section is used to monitor the strength of user passwords. You don’t need to migrate any settings in this section.|
 |API reference|This section is used to enable access to various Google Apps Administrative APIs. You don’t need to migrate any settings in this section.|
-|Set up single sign-on (SSO)|This section is used to configure SSO for Google web-based apps (such as Google Apps Gmail or Google Apps Calendar). While you don’t need to migrate any settings in this section, you probably will want to configure Azure Active Directory synchronization to replace Google-based SSO.|
+|Set up single sign-on (SSO)|This section is used to configure SSO for Google web-based apps (such as Google Apps Gmail or Google Apps Calendar). While you don’t need to migrate any settings in this section, you probably will want to configure Microsoft Entra synchronization to replace Google-based SSO.|
 |Advanced settings|This section is used to configure administrative access to user data and to configure the Google Secure Data Connector (which allows Google Apps to access data on your local network). You don’t need to migrate any settings in this section.|
 
 **Identify locally configured settings to migrate**
@@ -306,7 +306,7 @@ Consider the following when you create your cloud services migration strategy:
 
 You need to plan for Windows device deployment to help ensure that the devices are successfully installed and configured to replace the Chromebook devices. Even if the vendor that provides the devices pre-loads Windows 10 on them, you still will need to perform other tasks.
 
-In this section, you'll select a Windows device deployment strategy; plan for Active Directory Domain Services (AD DS) and Azure AD services; plan for device, user, and app management; and plan for any necessary network infrastructure remediation.
+In this section, you'll select a Windows device deployment strategy; plan for Active Directory Domain Services (AD DS) and Microsoft Entra services; plan for device, user, and app management; and plan for any necessary network infrastructure remediation.
 
 ### <a href="" id="select-windows-device-deploy"></a>
 
@@ -332,17 +332,17 @@ Record the combination of Windows device deployment strategies that you selected
 
 ### <a href="" id="plan-adservices"></a>
 
-**Plan for AD DS and Azure AD services**
+**Plan for AD DS and Microsoft Entra services**
 
-The next decision you'll need to make concerns AD DS and Azure AD services. You can run AD DS on-premises, in the cloud by using Azure AD, or a combination of both (hybrid). The decision about which of these options is best is closely tied to how you'll manage your users, apps, and devices and if you'll use Office 365 and other Azure-based cloud services.
+The next decision you'll need to make concerns AD DS and Microsoft Entra services. You can run AD DS on-premises, in the cloud by using Microsoft Entra ID, or a combination of both (hybrid). The decision about which of these options is best is closely tied to how you'll manage your users, apps, and devices and if you'll use Office 365 and other Azure-based cloud services.
 
-In the hybrid configuration, your on-premises AD DS user and group objects are synchronized with Azure AD (including passwords). The synchronization happens both directions so that changes are made in both your on-premises AD DS and Azure AD.
+In the hybrid configuration, your on-premises AD DS user and group objects are synchronized with Microsoft Entra ID (including passwords). The synchronization happens both directions so that changes are made in both your on-premises AD DS and Microsoft Entra ID.
 
-Table 5 is a decision matrix that helps you decide if you can use only on-premises AD DS, only Azure AD, or a combination of both (hybrid). If the requirements you select from the table require on-premises AD DS and Azure AD, then you should select hybrid. For example, if you plan to use Office 365 and use Group Policy for management, then you would select hybrid. However, if you plan to use Office 365 and use Intune for management, then you would select only Azure AD.
+Table 5 is a decision matrix that helps you decide if you can use only on-premises AD DS, only Microsoft Entra ID, or a combination of both (hybrid). If the requirements you select from the table require on-premises AD DS and Microsoft Entra ID, then you should select hybrid. For example, if you plan to use Office 365 and use Group Policy for management, then you would select hybrid. However, if you plan to use Office 365 and use Intune for management, then you would select only Microsoft Entra ID.
 
-Table 5. Select on-premises AD DS, Azure AD, or hybrid
+Table 5. Select on-premises AD DS, Microsoft Entra ID, or hybrid
 
-|If you plan to...|On-premises AD DS|Azure AD|Hybrid|
+|If you plan to...|On-premises AD DS|Microsoft Entra ID|Hybrid|
 |--- |--- |--- |--- |
 |Use Office 365||✔️|✔️|
 |Use Intune for management||✔️|✔️|
@@ -383,7 +383,7 @@ Record the device, user, and app management products and technologies that you s
 
 **Plan network infrastructure remediation**
 
-In addition to AD DS, Azure AD, and management components, there are other network infrastructure services that Windows devices need. In most instances, Windows devices have the same network infrastructure requirements as the existing Chromebook devices.
+In addition to AD DS, Microsoft Entra ID, and management components, there are other network infrastructure services that Windows devices need. In most instances, Windows devices have the same network infrastructure requirements as the existing Chromebook devices.
 
 Examine each of the following network infrastructure technologies and services and determine if any remediation is necessary:
 
@@ -439,20 +439,22 @@ It's important that you perform any network infrastructure remediation first bec
 
 If you use network infrastructure products and technologies from other vendors, refer to the vendor documentation on how to perform the necessary remediation. If you determined that no remediation is necessary, you can skip this section.
 
-## Perform AD DS and Azure AD services deployment or remediation
+<a name='perform-ad-ds-and-azure-ad-services-deployment-or-remediation'></a>
+
+## Perform AD DS and Microsoft Entra services deployment or remediation
 
 
-It's important that you perform AD DS and Azure AD services deployment or remediation right after you finish network infrastructure remediation. Many of the remaining migration steps are dependent on you having your identity system (AD DS or Azure AD) in place and up to necessary expectations.
+It's important that you perform AD DS and Microsoft Entra services deployment or remediation right after you finish network infrastructure remediation. Many of the remaining migration steps are dependent on you having your identity system (AD DS or Microsoft Entra ID) in place and up to necessary expectations.
 
-In the [Plan for Active Directory services](#plan-adservices) section, you determined the AD DS and/or Azure AD deployment or remediation (if any) that needed to be performed. Use the following resources to deploy or remediate on-premises AD DS, Azure AD, or both:
+In the [Plan for Active Directory services](#plan-adservices) section, you determined the AD DS and/or Microsoft Entra deployment or remediation (if any) that needed to be performed. Use the following resources to deploy or remediate on-premises AD DS, Microsoft Entra ID, or both:
 
 - [Core network guidance for Windows Server](/windows-server/networking/core-network-guide/core-network-guide-windows-server)
 - [AD DS overview](/windows-server/identity/ad-ds/active-directory-domain-services)
-- [Azure AD documentation](/azure/active-directory/)
-- [Azure AD Premium](https://azure.microsoft.com/pricing/details/active-directory/)
+- [Microsoft Entra documentation](/azure/active-directory/)
+- [Microsoft Entra ID P1 or P2](https://azure.microsoft.com/pricing/details/active-directory/)
 - [Safely virtualizing Active Directory Domain Services (AD DS)](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)|
 
-If you decided not to migrate to AD DS or Azure AD as a part of the migration, or if you determined that no remediation is necessary, you can skip this section. If you use identity products and technologies from another vendor, refer to the vendor documentation on how to perform the necessary steps.
+If you decided not to migrate to AD DS or Microsoft Entra ID as a part of the migration, or if you determined that no remediation is necessary, you can skip this section. If you use identity products and technologies from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 
 ## Prepare device, user, and app management systems
 

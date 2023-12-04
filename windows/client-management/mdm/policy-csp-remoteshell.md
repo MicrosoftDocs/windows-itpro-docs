@@ -4,7 +4,7 @@ description: Learn more about the RemoteShell Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- RemoteShell-Begin -->
 # Policy CSP - RemoteShell
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- RemoteShell-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- AllowRemoteShellAccess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowRemoteShellAccess-Applicability-End -->
 
 <!-- AllowRemoteShellAccess-OmaUri-Begin -->
@@ -44,7 +41,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting configures access to remote shells.
 
-If you enable or do not configure this policy setting, new remote shell connections are accepted by the server.
+If you enable or don't configure this policy setting, new remote shell connections are accepted by the server.
 
 If you set this policy to 'disabled', new remote shell connections are rejected by the server.
 <!-- AllowRemoteShellAccess-Description-End -->
@@ -58,13 +55,12 @@ If you set this policy to 'disabled', new remote shell connections are rejected 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowRemoteShellAccess-DFProperties-End -->
 
 <!-- AllowRemoteShellAccess-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -91,7 +87,7 @@ If you set this policy to 'disabled', new remote shell connections are rejected 
 <!-- MaxConcurrentUsers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- MaxConcurrentUsers-Applicability-End -->
 
 <!-- MaxConcurrentUsers-OmaUri-Begin -->
@@ -108,7 +104,7 @@ The value can be any number from 1 to 100.
 
 - If you enable this policy setting, the new shell connections are rejected if they exceed the specified limit.
 
-- If you disable or do not configure this policy setting, the default number is five users.
+- If you disable or don't configure this policy setting, the default number is five users.
 <!-- MaxConcurrentUsers-Description-End -->
 
 <!-- MaxConcurrentUsers-Editable-Begin -->
@@ -120,13 +116,12 @@ The value can be any number from 1 to 100.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MaxConcurrentUsers-DFProperties-End -->
 
 <!-- MaxConcurrentUsers-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -152,7 +147,7 @@ The value can be any number from 1 to 100.
 <!-- SpecifyIdleTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- SpecifyIdleTimeout-Applicability-End -->
 
 <!-- SpecifyIdleTimeout-OmaUri-Begin -->
@@ -163,13 +158,13 @@ The value can be any number from 1 to 100.
 
 <!-- SpecifyIdleTimeout-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting configures the maximum time in milliseconds remote shell will stay open without any user activity until it is automatically deleted.
+This policy setting configures the maximum time in milliseconds remote shell will stay open without any user activity until it's automatically deleted.
 
 Any value from 0 to 0x7FFFFFFF can be set. A minimum of 60000 milliseconds (1 minute) is used for smaller values.
 
 - If you enable this policy setting, the server will wait for the specified amount of time since the last received message from the client before terminating the open shell.
 
-- If you do not configure or disable this policy setting, the default value of 900000 or 15 min will be used.
+- If you don't configure or disable this policy setting, the default value of 900000 or 15 min will be used.
 <!-- SpecifyIdleTimeout-Description-End -->
 
 <!-- SpecifyIdleTimeout-Editable-Begin -->
@@ -181,13 +176,12 @@ Any value from 0 to 0x7FFFFFFF can be set. A minimum of 60000 milliseconds (1 mi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyIdleTimeout-DFProperties-End -->
 
 <!-- SpecifyIdleTimeout-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -213,7 +207,7 @@ Any value from 0 to 0x7FFFFFFF can be set. A minimum of 60000 milliseconds (1 mi
 <!-- SpecifyMaxMemory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- SpecifyMaxMemory-Applicability-End -->
 
 <!-- SpecifyMaxMemory-OmaUri-Begin -->
@@ -230,7 +224,7 @@ Any value from 0 to 0x7FFFFFFF can be set, where 0 equals unlimited memory, whic
 
 - If you enable this policy setting, the remote operation is terminated when a new allocation exceeds the specified quota.
 
-- If you disable or do not configure this policy setting, the value 150 is used by default.
+- If you disable or don't configure this policy setting, the value 150 is used by default.
 <!-- SpecifyMaxMemory-Description-End -->
 
 <!-- SpecifyMaxMemory-Editable-Begin -->
@@ -242,13 +236,12 @@ Any value from 0 to 0x7FFFFFFF can be set, where 0 equals unlimited memory, whic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyMaxMemory-DFProperties-End -->
 
 <!-- SpecifyMaxMemory-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -274,7 +267,7 @@ Any value from 0 to 0x7FFFFFFF can be set, where 0 equals unlimited memory, whic
 <!-- SpecifyMaxProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- SpecifyMaxProcesses-Applicability-End -->
 
 <!-- SpecifyMaxProcesses-OmaUri-Begin -->
@@ -289,7 +282,7 @@ This policy setting configures the maximum number of processes a remote shell is
 
 - If you enable this policy setting, you can specify any number from 0 to 0x7FFFFFFF to set the maximum number of process per shell. Zero (0) means unlimited number of processes.
 
-- If you disable or do not configure this policy setting, the limit is five processes per shell.
+- If you disable or don't configure this policy setting, the limit's five processes per shell.
 <!-- SpecifyMaxProcesses-Description-End -->
 
 <!-- SpecifyMaxProcesses-Editable-Begin -->
@@ -301,13 +294,12 @@ This policy setting configures the maximum number of processes a remote shell is
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyMaxProcesses-DFProperties-End -->
 
 <!-- SpecifyMaxProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -333,7 +325,7 @@ This policy setting configures the maximum number of processes a remote shell is
 <!-- SpecifyMaxRemoteShells-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- SpecifyMaxRemoteShells-Applicability-End -->
 
 <!-- SpecifyMaxRemoteShells-OmaUri-Begin -->
@@ -348,9 +340,9 @@ This policy setting configures the maximum number of concurrent shells any user 
 
 Any number from 0 to 0x7FFFFFFF cand be set, where 0 means unlimited number of shells.
 
-- If you enable this policy setting, the user cannot open new remote shells if the count exceeds the specified limit.
+- If you enable this policy setting, the user can't open new remote shells if the count exceeds the specified limit.
 
-- If you disable or do not configure this policy setting, by default the limit is set to two remote shells per user.
+- If you disable or don't configure this policy setting, by default the limit's set to two remote shells per user.
 <!-- SpecifyMaxRemoteShells-Description-End -->
 
 <!-- SpecifyMaxRemoteShells-Editable-Begin -->
@@ -362,13 +354,12 @@ Any number from 0 to 0x7FFFFFFF cand be set, where 0 means unlimited number of s
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyMaxRemoteShells-DFProperties-End -->
 
 <!-- SpecifyMaxRemoteShells-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -394,7 +385,7 @@ Any number from 0 to 0x7FFFFFFF cand be set, where 0 means unlimited number of s
 <!-- SpecifyShellTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- SpecifyShellTimeout-Applicability-End -->
 
 <!-- SpecifyShellTimeout-OmaUri-Begin -->
@@ -417,13 +408,12 @@ This policy setting is deprecated and has no effect when set to any state: Enabl
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyShellTimeout-DFProperties-End -->
 
 <!-- SpecifyShellTimeout-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

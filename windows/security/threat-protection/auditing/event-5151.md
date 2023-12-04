@@ -1,11 +1,11 @@
 ---
-title: 5151(-) A more restrictive Windows Filtering Platform filter has blocked a packet. (Windows 10)
+title: 5151(-) A more restrictive Windows Filtering Platform filter has blocked a packet. 
 description: Describes security event 5151(-) A more restrictive Windows Filtering Platform filter has blocked a packet.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

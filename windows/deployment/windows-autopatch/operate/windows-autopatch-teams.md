@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams
 description: This article explains how Microsoft Teams updates are managed in Windows Autopatch
-ms.date: 05/30/2022
+ms.date: 09/15/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -10,6 +10,9 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: hathind
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # Microsoft Teams

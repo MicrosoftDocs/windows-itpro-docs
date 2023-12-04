@@ -4,7 +4,7 @@ description: Learn more about the Experience Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,8 +16,7 @@ ms.topic: reference
 <!-- Experience-Begin -->
 # Policy CSP - Experience
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Experience-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -29,7 +28,7 @@ ms.topic: reference
 <!-- AllowClipboardHistory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowClipboardHistory-Applicability-End -->
 
 <!-- AllowClipboardHistory-OmaUri-Begin -->
@@ -43,7 +42,9 @@ ms.topic: reference
 This policy setting determines whether history of Clipboard contents can be stored in memory.
 
 - If you enable this policy setting, history of Clipboard contents are allowed to be stored.
-- If you disable this policy setting, history of Clipboard contents are not allowed to be stored.
+
+- If you disable this policy setting, history of Clipboard contents aren't allowed to be stored.
+
 Policy change takes effect immediately.
 <!-- AllowClipboardHistory-Description-End -->
 
@@ -56,7 +57,7 @@ Policy change takes effect immediately.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowClipboardHistory-DFProperties-End -->
@@ -106,7 +107,7 @@ Policy change takes effect immediately.
 <!-- AllowCopyPaste-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowCopyPaste-Applicability-End -->
 
 <!-- AllowCopyPaste-OmaUri-Begin -->
@@ -129,7 +130,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowCopyPaste-DFProperties-End -->
@@ -155,7 +156,7 @@ This policy is deprecated.
 <!-- AllowCortana-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowCortana-Applicability-End -->
 
 <!-- AllowCortana-OmaUri-Begin -->
@@ -169,6 +170,7 @@ This policy is deprecated.
 This policy setting specifies whether Cortana is allowed on the device.
 
 - If you enable or don't configure this setting, Cortana will be allowed on the device.
+
 - If you disable this setting, Cortana will be turned off.
 
 When Cortana is off, users will still be able to use search to find things on the device.
@@ -183,7 +185,7 @@ When Cortana is off, users will still be able to use search to find things on th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowCortana-DFProperties-End -->
@@ -223,7 +225,7 @@ When Cortana is off, users will still be able to use search to find things on th
 <!-- AllowDeviceDiscovery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDeviceDiscovery-Applicability-End -->
 
 <!-- AllowDeviceDiscovery-OmaUri-Begin -->
@@ -234,7 +236,7 @@ When Cortana is off, users will still be able to use search to find things on th
 
 <!-- AllowDeviceDiscovery-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows users to turn on/off device discovery UX. When set to 0 , the projection pane is disabled. The Win+P and Win+K shortcut keys will not work on. Most restricted value is 0.
+Allows users to turn on/off device discovery UX. When set to 0 , the projection pane is disabled. The Win+P and Win+K shortcut keys won't work on. Most restricted value is 0.
 <!-- AllowDeviceDiscovery-Description-End -->
 
 <!-- AllowDeviceDiscovery-Editable-Begin -->
@@ -246,7 +248,7 @@ Allows users to turn on/off device discovery UX. When set to 0 , the projection 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowDeviceDiscovery-DFProperties-End -->
@@ -272,7 +274,7 @@ Allows users to turn on/off device discovery UX. When set to 0 , the projection 
 <!-- AllowFindMyDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowFindMyDevice-Applicability-End -->
 
 <!-- AllowFindMyDevice-OmaUri-Begin -->
@@ -287,7 +289,7 @@ This policy turns on Find My Device.
 
 When Find My Device is on, the device and its location are registered in the cloud so that the device can be located when the user initiates a Find command from account.microsoft.com. On devices that are compatible with active digitizers, enabling Find My Device will also allow the user to view the last location of use of their active digitizer on their device; this location is stored locally on the user's device after each use of their active digitizer.
 
-When Find My Device is off, the device and its location are not registered and the Find My Device feature will not work. The user will also not be able to view the location of the last use of their active digitizer on their device.
+When Find My Device is off, the device and its location aren't registered and the Find My Device feature won't work. The user will also not be able to view the location of the last use of their active digitizer on their device.
 <!-- AllowFindMyDevice-Description-End -->
 
 <!-- AllowFindMyDevice-Editable-Begin -->
@@ -299,7 +301,7 @@ When Find My Device is off, the device and its location are not registered and t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowFindMyDevice-DFProperties-End -->
@@ -339,7 +341,7 @@ When Find My Device is off, the device and its location are not registered and t
 <!-- AllowManualMDMUnenrollment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowManualMDMUnenrollment-Applicability-End -->
 
 <!-- AllowManualMDMUnenrollment-OmaUri-Begin -->
@@ -350,7 +352,7 @@ When Find My Device is off, the device and its location are not registered and t
 
 <!-- AllowManualMDMUnenrollment-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (e. g. auto-enrolled), then disabling the MDM unenrollment has no effect.
+Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Microsoft Entra joined and MDM enrolled (e. g. auto-enrolled), then disabling the MDM unenrollment has no effect.
 
 > [!NOTE]
 > The MDM server can always remotely delete the account. Most restricted value is 0.
@@ -365,7 +367,7 @@ Specifies whether to allow the user to delete the workplace account using the wo
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowManualMDMUnenrollment-DFProperties-End -->
@@ -391,7 +393,7 @@ Specifies whether to allow the user to delete the workplace account using the wo
 <!-- AllowSaveAsOfOfficeFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowSaveAsOfOfficeFiles-Applicability-End -->
 
 <!-- AllowSaveAsOfOfficeFiles-OmaUri-Begin -->
@@ -414,7 +416,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSaveAsOfOfficeFiles-DFProperties-End -->
@@ -440,7 +442,7 @@ This policy is deprecated.
 <!-- AllowScreenCapture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowScreenCapture-Applicability-End -->
 
 <!-- AllowScreenCapture-OmaUri-Begin -->
@@ -463,7 +465,7 @@ Allow screen capture.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowScreenCapture-DFProperties-End -->
@@ -483,6 +485,68 @@ Allow screen capture.
 
 <!-- AllowScreenCapture-End -->
 
+<!-- AllowScreenRecorder-Begin -->
+## AllowScreenRecorder
+
+<!-- AllowScreenRecorder-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AllowScreenRecorder-Applicability-End -->
+
+<!-- AllowScreenRecorder-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Experience/AllowScreenRecorder
+```
+<!-- AllowScreenRecorder-OmaUri-End -->
+
+<!-- AllowScreenRecorder-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to control whether screen recording functionality is available in the Windows Snipping Tool app.
+
+- If you disable this policy setting, screen recording functionality won't be accessible in the Windows Snipping Tool app.
+
+- If you enable or don't configure this policy setting, users will be able to access screen recording functionality.
+<!-- AllowScreenRecorder-Description-End -->
+
+<!-- AllowScreenRecorder-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowScreenRecorder-Editable-End -->
+
+<!-- AllowScreenRecorder-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowScreenRecorder-DFProperties-End -->
+
+<!-- AllowScreenRecorder-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
+<!-- AllowScreenRecorder-AllowedValues-End -->
+
+<!-- AllowScreenRecorder-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowScreenRecorder |
+| Path | Programs > AT > WindowsComponents > SnippingTool |
+<!-- AllowScreenRecorder-GpMapping-End -->
+
+<!-- AllowScreenRecorder-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowScreenRecorder-Examples-End -->
+
+<!-- AllowScreenRecorder-End -->
+
 <!-- AllowSharingOfOfficeFiles-Begin -->
 ## AllowSharingOfOfficeFiles
 
@@ -492,7 +556,7 @@ Allow screen capture.
 <!-- AllowSharingOfOfficeFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowSharingOfOfficeFiles-Applicability-End -->
 
 <!-- AllowSharingOfOfficeFiles-OmaUri-Begin -->
@@ -515,7 +579,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSharingOfOfficeFiles-DFProperties-End -->
@@ -541,7 +605,7 @@ This policy is deprecated.
 <!-- AllowSIMErrorDialogPromptWhenNoSIM-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowSIMErrorDialogPromptWhenNoSIM-Applicability-End -->
 
 <!-- AllowSIMErrorDialogPromptWhenNoSIM-OmaUri-Begin -->
@@ -564,7 +628,7 @@ Allow SIM error dialog prompts when no SIM is inserted.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSIMErrorDialogPromptWhenNoSIM-DFProperties-End -->
@@ -590,7 +654,7 @@ Allow SIM error dialog prompts when no SIM is inserted.
 <!-- AllowSpotlightCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowSpotlightCollection-Applicability-End -->
 
 <!-- AllowSpotlightCollection-OmaUri-Begin -->
@@ -604,7 +668,8 @@ Allow SIM error dialog prompts when no SIM is inserted.
 Specifies whether Spotlight collection is allowed as a Personalization->Background Setting.
 
 - If you enable this policy setting, Spotlight collection will show as an option in the user's Personalization Settings, and the user will be able to get daily images from Microsoft displayed on their desktop.
-- If you disable this policy setting, Spotlight collection will not show as an option in Personalization Settings, and the user will not have the choice of getting Microsoft daily images shown on their desktop.
+
+- If you disable this policy setting, Spotlight collection won't show as an option in Personalization Settings, and the user won't have the choice of getting Microsoft daily images shown on their desktop.
 <!-- AllowSpotlightCollection-Description-End -->
 
 <!-- AllowSpotlightCollection-Editable-Begin -->
@@ -620,7 +685,7 @@ The following list shows the supported values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
@@ -652,7 +717,7 @@ The following list shows the supported values:
 <!-- AllowSyncMySettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowSyncMySettings-Applicability-End -->
 
 <!-- AllowSyncMySettings-OmaUri-Begin -->
@@ -675,7 +740,7 @@ Allows or disallows all Windows sync settings on the device. For information abo
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSyncMySettings-DFProperties-End -->
@@ -685,7 +750,7 @@ Allows or disallows all Windows sync settings on the device. For information abo
 
 | Value | Description |
 |:--|:--|
-| 0 | Sync settings are not allowed. |
+| 0 | Sync settings aren't allowed. |
 | 1 (Default) | Sync settings allowed. |
 <!-- AllowSyncMySettings-AllowedValues-End -->
 
@@ -701,7 +766,7 @@ Allows or disallows all Windows sync settings on the device. For information abo
 <!-- AllowTailoredExperiencesWithDiagnosticData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowTailoredExperiencesWithDiagnosticData-Applicability-End -->
 
 <!-- AllowTailoredExperiencesWithDiagnosticData-OmaUri-Begin -->
@@ -714,11 +779,12 @@ Allows or disallows all Windows sync settings on the device. For information abo
 <!-- Description-Source-DDF -->
 This policy allows you to prevent Windows from using diagnostic data to provide customized experiences to the user.
 
-- If you enable this policy setting, Windows will not use diagnostic data from this device to customize content shown on the lock screen, Windows tips, Microsoft consumer features, or other related features. If these features are enabled, users will still see recommendations, tips and offers, but they may be less relevant.
-- If you disable or do not configure this policy setting, Microsoft will use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs and make it work better for them. Diagnostic data can include browser, app and feature usage, depending on the Diagnostic and usage data setting value.
+- If you enable this policy setting, Windows won't use diagnostic data from this device to customize content shown on the lock screen, Windows tips, Microsoft consumer features, or other related features. If these features are enabled, users will still see recommendations, tips and offers, but they may be less relevant.
+
+- If you disable or don't configure this policy setting, Microsoft will use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs and make it work better for them. Diagnostic data can include browser, app and feature usage, depending on the Diagnostic and usage data setting value.
 
 > [!NOTE]
-> This setting does not control Cortana cutomized experiences because there are separate policies to configure it. Most restricted value is 0.
+> This setting doesn't control Cortana cutomized experiences because there are separate policies to configure it. Most restricted value is 0.
 <!-- AllowTailoredExperiencesWithDiagnosticData-Description-End -->
 
 <!-- AllowTailoredExperiencesWithDiagnosticData-Editable-Begin -->
@@ -730,7 +796,7 @@ This policy allows you to prevent Windows from using diagnostic data to provide 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [Experience_AllowTailoredExperiencesWithDiagnosticData_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -774,7 +840,7 @@ This policy allows you to prevent Windows from using diagnostic data to provide 
 <!-- AllowTaskSwitcher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowTaskSwitcher-Applicability-End -->
 
 <!-- AllowTaskSwitcher-OmaUri-Begin -->
@@ -797,7 +863,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowTaskSwitcher-DFProperties-End -->
@@ -823,7 +889,7 @@ This policy is deprecated.
 <!-- AllowThirdPartySuggestionsInWindowsSpotlight-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowThirdPartySuggestionsInWindowsSpotlight-Applicability-End -->
 
 <!-- AllowThirdPartySuggestionsInWindowsSpotlight-OmaUri-Begin -->
@@ -846,7 +912,7 @@ Specifies whether to allow app and content suggestions from third-party software
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [Experience_AllowThirdPartySuggestionsInWindowsSpotlight_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -890,7 +956,7 @@ Specifies whether to allow app and content suggestions from third-party software
 <!-- AllowVoiceRecording-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowVoiceRecording-Applicability-End -->
 
 <!-- AllowVoiceRecording-OmaUri-Begin -->
@@ -913,7 +979,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowVoiceRecording-DFProperties-End -->
@@ -939,7 +1005,7 @@ This policy is deprecated.
 <!-- AllowWindowsConsumerFeatures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowWindowsConsumerFeatures-Applicability-End -->
 
 <!-- AllowWindowsConsumerFeatures-OmaUri-Begin -->
@@ -962,7 +1028,7 @@ Prior to Windows 10, version 1803, this policy had User scope. This policy allow
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [Experience_AllowWindowsConsumerFeatures_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -1003,7 +1069,7 @@ Prior to Windows 10, version 1803, this policy had User scope. This policy allow
 <!-- AllowWindowsSpotlight-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowWindowsSpotlight-Applicability-End -->
 
 <!-- AllowWindowsSpotlight-OmaUri-Begin -->
@@ -1017,7 +1083,8 @@ Prior to Windows 10, version 1803, this policy had User scope. This policy allow
 Specifies whether to turn off all Windows spotlight features at once.
 
 - If you enable this policy setting, Windows spotlight on lock screen, Windows Tips, Microsoft consumer features and other related features will be turned off. You should enable this policy setting if your goal is to minimize network traffic from target devices.
-- If you disable or do not configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings. Most restricted value is 0.
+
+- If you disable or don't configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings. Most restricted value is 0.
 <!-- AllowWindowsSpotlight-Description-End -->
 
 <!-- AllowWindowsSpotlight-Editable-Begin -->
@@ -1029,7 +1096,7 @@ Specifies whether to turn off all Windows spotlight features at once.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowWindowsSpotlight-DFProperties-End -->
@@ -1069,7 +1136,7 @@ Specifies whether to turn off all Windows spotlight features at once.
 <!-- AllowWindowsSpotlightOnActionCenter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowWindowsSpotlightOnActionCenter-Applicability-End -->
 
 <!-- AllowWindowsSpotlightOnActionCenter-OmaUri-Begin -->
@@ -1083,7 +1150,8 @@ Specifies whether to turn off all Windows spotlight features at once.
 This policy allows administrators to prevent Windows spotlight notifications from being displayed in the Action Center.
 
 - If you enable this policy, Windows spotlight notifications will no longer be displayed in the Action Center.
-- If you disable or do not configure this policy, Microsoft may display notifications in the Action Center that will suggest apps or features to help users be more productive on Windows. Most restricted value is 0.
+
+- If you disable or don't configure this policy, Microsoft may display notifications in the Action Center that will suggest apps or features to help users be more productive on Windows. Most restricted value is 0.
 <!-- AllowWindowsSpotlightOnActionCenter-Description-End -->
 
 <!-- AllowWindowsSpotlightOnActionCenter-Editable-Begin -->
@@ -1095,7 +1163,7 @@ This policy allows administrators to prevent Windows spotlight notifications fro
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [Experience_AllowWindowsSpotlightOnActionCenter_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -1136,7 +1204,7 @@ This policy allows administrators to prevent Windows spotlight notifications fro
 <!-- AllowWindowsSpotlightOnSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowWindowsSpotlightOnSettings-Applicability-End -->
 
 <!-- AllowWindowsSpotlightOnSettings-OmaUri-Begin -->
@@ -1159,7 +1227,7 @@ This policy allows IT admins to turn off Suggestions in Settings app. These sugg
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowWindowsSpotlightOnSettings-DFProperties-End -->
@@ -1199,7 +1267,7 @@ This policy allows IT admins to turn off Suggestions in Settings app. These sugg
 <!-- AllowWindowsSpotlightWindowsWelcomeExperience-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowWindowsSpotlightWindowsWelcomeExperience-Applicability-End -->
 
 <!-- AllowWindowsSpotlightWindowsWelcomeExperience-OmaUri-Begin -->
@@ -1213,7 +1281,8 @@ This policy allows IT admins to turn off Suggestions in Settings app. These sugg
 This policy setting lets you turn off the Windows spotlight Windows welcome experience feature. The Windows welcome experience feature introduces onboard users to Windows; for example, launching Microsoft Edge with a webpage that highlights new features.
 
 - If you enable this policy, the Windows welcome experience will no longer be displayed when there are updates and changes to Windows and its apps.
-- If you disable or do not configure this policy, the Windows welcome experience will be launched to inform onboard users about what's new, changed, and suggested. Most restricted value is 0.
+
+- If you disable or don't configure this policy, the Windows welcome experience will be launched to inform onboard users about what's new, changed, and suggested. Most restricted value is 0.
 <!-- AllowWindowsSpotlightWindowsWelcomeExperience-Description-End -->
 
 <!-- AllowWindowsSpotlightWindowsWelcomeExperience-Editable-Begin -->
@@ -1225,7 +1294,7 @@ This policy setting lets you turn off the Windows spotlight Windows welcome expe
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [Experience_AllowWindowsSpotlightWindowsWelcomeExperience_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -1266,7 +1335,7 @@ This policy setting lets you turn off the Windows spotlight Windows welcome expe
 <!-- AllowWindowsTips-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowWindowsTips-Applicability-End -->
 
 <!-- AllowWindowsTips-OmaUri-Begin -->
@@ -1289,7 +1358,7 @@ Enables or disables Windows Tips / soft landing.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [Experience_AllowWindowsTips_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -1333,7 +1402,7 @@ Enables or disables Windows Tips / soft landing.
 <!-- ConfigureChatIcon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureChatIcon-Applicability-End -->
 
 <!-- ConfigureChatIcon-OmaUri-Begin -->
@@ -1350,9 +1419,9 @@ This policy setting allows you to configure the Chat icon on the taskbar.
 
 - If you enable this policy setting and set it to Hide, the Chat icon will be hidden by default. Users can show or hide it in Settings.
 
-- If you enable this policy setting and set it to Disabled, the Chat icon will not be displayed, and users cannot show or hide it in Settings.
+- If you enable this policy setting and set it to Disabled, the Chat icon won't be displayed, and users can't show or hide it in Settings.
 
-- If you disable or do not configure this policy setting, the Chat icon will be configured according to the defaults for your Windows edition.
+- If you disable or don't configure this policy setting, the Chat icon will be configured according to the defaults for your Windows edition.
 <!-- ConfigureChatIcon-Description-End -->
 
 <!-- ConfigureChatIcon-Editable-Begin -->
@@ -1366,7 +1435,7 @@ This policy setting allows you to configure the Chat icon on the taskbar.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureChatIcon-DFProperties-End -->
@@ -1408,7 +1477,7 @@ This policy setting allows you to configure the Chat icon on the taskbar.
 <!-- ConfigureWindowsSpotlightOnLockScreen-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ConfigureWindowsSpotlightOnLockScreen-Applicability-End -->
 
 <!-- ConfigureWindowsSpotlightOnLockScreen-OmaUri-Begin -->
@@ -1421,13 +1490,13 @@ This policy setting allows you to configure the Chat icon on the taskbar.
 <!-- Description-Source-ADMX -->
 This policy setting lets you configure Windows spotlight on the lock screen.
 
-- If you enable this policy setting, "Windows spotlight" will be set as the lock screen provider and users will not be able to modify their lock screen. "Windows spotlight" will display daily images from Microsoft on the lock screen.
+- If you enable this policy setting, "Windows spotlight" will be set as the lock screen provider and users won't be able to modify their lock screen. "Windows spotlight" will display daily images from Microsoft on the lock screen.
 
-Additionally, if you check the "Include content from Enterprise spotlight" checkbox and your organization has setup an Enterprise spotlight content service in Azure, the lock screen will display internal messages and communications configured in that service, when available. If your organization does not have an Enterprise spotlight content service, the checkbox will have no effect.
+Additionally, if you check the "Include content from Enterprise spotlight" checkbox and your organization has setup an Enterprise spotlight content service in Azure, the lock screen will display internal messages and communications configured in that service, when available. If your organization doesn't have an Enterprise spotlight content service, the checkbox will have no effect.
 
 - If you disable this policy setting, Windows spotlight will be turned off and users will no longer be able to select it as their lock screen. Users will see the default lock screen image and will be able to select another image, unless you have enabled the "Prevent changing lock screen image" policy.
 
-- If you do not configure this policy, Windows spotlight will be available on the lock screen and will be selected by default, unless you have configured another default lock screen image using the "Force a specific default lock screen and logon image" policy.
+- If you don't configure this policy, Windows spotlight will be available on the lock screen and will be selected by default, unless you have configured another default lock screen image using the "Force a specific default lock screen and logon image" policy.
 
 > [!NOTE]
 > This policy is only available for Enterprise SKUs.
@@ -1442,7 +1511,7 @@ Additionally, if you check the "Include content from Enterprise spotlight" check
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [Experience_ConfigureWindowsSpotlightOnLockScreen_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -1455,8 +1524,8 @@ Additionally, if you check the "Include content from Enterprise spotlight" check
 |:--|:--|
 | 0 | Windows spotlight disabled. |
 | 1 (Default) | Windows spotlight enabled. |
-| 2 | Windows spotlight is always enabled, the user cannot disable it. |
-| 3 | Windows spotlight is always enabled, the user cannot disable it. For special configurations only. |
+| 2 | Windows spotlight is always enabled, the user can't disable it. |
+| 3 | Windows spotlight is always enabled, the user can't disable it. For special configurations only. |
 <!-- ConfigureWindowsSpotlightOnLockScreen-AllowedValues-End -->
 
 <!-- ConfigureWindowsSpotlightOnLockScreen-GpMapping-Begin -->
@@ -1485,7 +1554,7 @@ Additionally, if you check the "Include content from Enterprise spotlight" check
 <!-- DisableCloudOptimizedContent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableCloudOptimizedContent-Applicability-End -->
 
 <!-- DisableCloudOptimizedContent-OmaUri-Begin -->
@@ -1500,7 +1569,7 @@ This policy setting lets you turn off cloud optimized content in all Windows exp
 
 - If you enable this policy, Windows experiences that use the cloud optimized content client component, will instead present the default fallback content.
 
-- If you disable or do not configure this policy, Windows experiences will be able to use cloud optimized content.
+- If you disable or don't configure this policy, Windows experiences will be able to use cloud optimized content.
 <!-- DisableCloudOptimizedContent-Description-End -->
 
 <!-- DisableCloudOptimizedContent-Editable-Begin -->
@@ -1512,7 +1581,7 @@ This policy setting lets you turn off cloud optimized content in all Windows exp
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableCloudOptimizedContent-DFProperties-End -->
@@ -1552,7 +1621,7 @@ This policy setting lets you turn off cloud optimized content in all Windows exp
 <!-- DisableConsumerAccountStateContent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableConsumerAccountStateContent-Applicability-End -->
 
 <!-- DisableConsumerAccountStateContent-OmaUri-Begin -->
@@ -1567,7 +1636,7 @@ This policy setting lets you turn off cloud consumer account state content in al
 
 - If you enable this policy, Windows experiences that use the cloud consumer account state content client component, will instead present the default fallback content.
 
-- If you disable or do not configure this policy, Windows experiences will be able to use cloud consumer account state content.
+- If you disable or don't configure this policy, Windows experiences will be able to use cloud consumer account state content.
 <!-- DisableConsumerAccountStateContent-Description-End -->
 
 <!-- DisableConsumerAccountStateContent-Editable-Begin -->
@@ -1579,7 +1648,7 @@ This policy setting lets you turn off cloud consumer account state content in al
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableConsumerAccountStateContent-DFProperties-End -->
@@ -1619,7 +1688,7 @@ This policy setting lets you turn off cloud consumer account state content in al
 <!-- DisableTextTranslation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- DisableTextTranslation-Applicability-End -->
 
 <!-- DisableTextTranslation-OmaUri-Begin -->
@@ -1642,7 +1711,7 @@ Allows Text Translation feature to be enabled/disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableTextTranslation-DFProperties-End -->
@@ -1668,7 +1737,7 @@ Allows Text Translation feature to be enabled/disabled.
 <!-- DoNotShowFeedbackNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DoNotShowFeedbackNotifications-Applicability-End -->
 
 <!-- DoNotShowFeedbackNotifications-OmaUri-Begin -->
@@ -1683,10 +1752,10 @@ This policy setting allows an organization to prevent its devices from showing f
 
 - If you enable this policy setting, users will no longer see feedback notifications through the Windows Feedback app.
 
-- If you disable or do not configure this policy setting, users may see notifications through the Windows Feedback app asking users for feedback.
+- If you disable or don't configure this policy setting, users may see notifications through the Windows Feedback app asking users for feedback.
 
 > [!NOTE]
-> If you disable or do not configure this policy setting, users can control how often they receive feedback questions.
+> If you disable or don't configure this policy setting, users can control how often they receive feedback questions.
 <!-- DoNotShowFeedbackNotifications-Description-End -->
 
 <!-- DoNotShowFeedbackNotifications-Editable-Begin -->
@@ -1698,7 +1767,7 @@ This policy setting allows an organization to prevent its devices from showing f
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DoNotShowFeedbackNotifications-DFProperties-End -->
@@ -1708,7 +1777,7 @@ This policy setting allows an organization to prevent its devices from showing f
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Feedback notifications are not disabled. The actual state of feedback notifications on the device will then depend on what GP has configured or what the user has configured locally. |
+| 0 (Default) | Feedback notifications aren't disabled. The actual state of feedback notifications on the device will then depend on what GP has configured or what the user has configured locally. |
 | 1 | Feedback notifications are disabled. |
 <!-- DoNotShowFeedbackNotifications-AllowedValues-End -->
 
@@ -1738,7 +1807,7 @@ This policy setting allows an organization to prevent its devices from showing f
 <!-- DoNotSyncBrowserSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DoNotSyncBrowserSettings-Applicability-End -->
 
 <!-- DoNotSyncBrowserSettings-OmaUri-Begin -->
@@ -1751,11 +1820,11 @@ This policy setting allows an organization to prevent its devices from showing f
 <!-- Description-Source-ADMX -->
 Prevent the "browser" group from syncing to and from this PC. This turns off and disables the "browser" group on the "sync your settings" page in PC settings. The "browser" group contains settings and info like history and favorites.
 
-If you enable this policy setting, the "browser" group, including info like history and favorites, will not be synced.
+If you enable this policy setting, the "browser" group, including info like history and favorites, won't be synced.
 
 Use the option "Allow users to turn browser syncing on" so that syncing is turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "browser" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "browser" group is on by default and configurable by the user.
 <!-- DoNotSyncBrowserSettings-Description-End -->
 
 <!-- DoNotSyncBrowserSettings-Editable-Begin -->
@@ -1768,7 +1837,7 @@ Related policy: [PreventUsersFromTurningOnBrowserSyncing](#preventusersfromturni
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DoNotSyncBrowserSettings-DFProperties-End -->
@@ -1825,7 +1894,7 @@ _**Turn syncing off by default but don’t disable**_
 <!-- EnableOrganizationalMessages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- EnableOrganizationalMessages-Applicability-End -->
 
 <!-- EnableOrganizationalMessages-OmaUri-Begin -->
@@ -1848,7 +1917,7 @@ Organizational messages allow Administrators to deliver messages to their end us
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableOrganizationalMessages-DFProperties-End -->
@@ -1874,7 +1943,7 @@ Organizational messages allow Administrators to deliver messages to their end us
 <!-- PreventUsersFromTurningOnBrowserSyncing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- PreventUsersFromTurningOnBrowserSyncing-Applicability-End -->
 
 <!-- PreventUsersFromTurningOnBrowserSyncing-OmaUri-Begin -->
@@ -1897,7 +1966,7 @@ By default, the "browser" group syncs automatically between the user's devices, 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- PreventUsersFromTurningOnBrowserSyncing-DFProperties-End -->
@@ -1957,7 +2026,7 @@ _**Prevent syncing of browser settings and let users turn on syncing**_
 <!-- ShowLockOnUserTile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ShowLockOnUserTile-Applicability-End -->
 
 <!-- ShowLockOnUserTile-OmaUri-Begin -->
@@ -1974,7 +2043,7 @@ Shows or hides lock from the user tile menu.
 
 - If you disable this policy setting, the lock option will never be shown in the User Tile menu.
 
-- If you do not configure this policy setting, users will be able to choose whether they want lock to show through the Power Options Control Panel.
+- If you don't configure this policy setting, users will be able to choose whether they want lock to show through the Power Options Control Panel.
 <!-- ShowLockOnUserTile-Description-End -->
 
 <!-- ShowLockOnUserTile-Editable-Begin -->
@@ -1986,7 +2055,7 @@ Shows or hides lock from the user tile menu.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- ShowLockOnUserTile-DFProperties-End -->
@@ -1996,7 +2065,7 @@ Shows or hides lock from the user tile menu.
 
 | Value | Description |
 |:--|:--|
-| 0 | The lock option is not displayed in the User Tile menu. |
+| 0 | The lock option isn't displayed in the User Tile menu. |
 | 1 (Default) | The lock option is displayed in the User Tile menu. |
 <!-- ShowLockOnUserTile-AllowedValues-End -->
 

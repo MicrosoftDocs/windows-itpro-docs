@@ -4,7 +4,7 @@ description: Learn more about the ADMX_AttachmentManager Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_AttachmentManager-Begin -->
 # Policy CSP - ADMX_AttachmentManager
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_AttachmentManager-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- AM_EstimateFileHandlerRisk-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AM_EstimateFileHandlerRisk-Applicability-End -->
 
 <!-- AM_EstimateFileHandlerRisk-OmaUri-Begin -->
@@ -54,7 +51,7 @@ Using both the file handler and type data is the most restrictive option. Window
 
 - If you disable this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
 
-- If you do not configure this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
+- If you don't configure this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
 <!-- AM_EstimateFileHandlerRisk-Description-End -->
 
 <!-- AM_EstimateFileHandlerRisk-Editable-Begin -->
@@ -66,13 +63,12 @@ Using both the file handler and type data is the most restrictive option. Window
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AM_EstimateFileHandlerRisk-DFProperties-End -->
 
 <!-- AM_EstimateFileHandlerRisk-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -98,7 +94,7 @@ Using both the file handler and type data is the most restrictive option. Window
 <!-- AM_SetFileRiskLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AM_SetFileRiskLevel-Applicability-End -->
 
 <!-- AM_SetFileRiskLevel-OmaUri-Begin -->
@@ -115,13 +111,13 @@ High Risk: If the attachment is in the list of high-risk file types and is from 
 
 Moderate Risk: If the attachment is in the list of moderate-risk file types and is from the restricted or Internet zone, Windows prompts the user before accessing the file.
 
-Low Risk: If the attachment is in the list of low-risk file types, Windows will not prompt the user before accessing the file, regardless of the file's zone information.
+Low Risk: If the attachment is in the list of low-risk file types, Windows won't prompt the user before accessing the file, regardless of the file's zone information.
 
 - If you enable this policy setting, you can specify the default risk level for file types.
 
 - If you disable this policy setting, Windows sets the default risk level to moderate.
 
-- If you do not configure this policy setting, Windows sets the default risk level to moderate.
+- If you don't configure this policy setting, Windows sets the default risk level to moderate.
 <!-- AM_SetFileRiskLevel-Description-End -->
 
 <!-- AM_SetFileRiskLevel-Editable-Begin -->
@@ -133,13 +129,12 @@ Low Risk: If the attachment is in the list of low-risk file types, Windows will 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AM_SetFileRiskLevel-DFProperties-End -->
 
 <!-- AM_SetFileRiskLevel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -165,7 +160,7 @@ Low Risk: If the attachment is in the list of low-risk file types, Windows will 
 <!-- AM_SetHighRiskInclusion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AM_SetHighRiskInclusion-Applicability-End -->
 
 <!-- AM_SetHighRiskInclusion-OmaUri-Begin -->
@@ -182,7 +177,7 @@ This policy setting allows you to configure the list of high-risk file types. If
 
 - If you disable this policy setting, Windows uses its built-in list of file types that pose a high risk.
 
-- If you do not configure this policy setting, Windows uses its built-in list of high-risk file types.
+- If you don't configure this policy setting, Windows uses its built-in list of high-risk file types.
 <!-- AM_SetHighRiskInclusion-Description-End -->
 
 <!-- AM_SetHighRiskInclusion-Editable-Begin -->
@@ -194,13 +189,12 @@ This policy setting allows you to configure the list of high-risk file types. If
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AM_SetHighRiskInclusion-DFProperties-End -->
 
 <!-- AM_SetHighRiskInclusion-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -226,7 +220,7 @@ This policy setting allows you to configure the list of high-risk file types. If
 <!-- AM_SetLowRiskInclusion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AM_SetLowRiskInclusion-Applicability-End -->
 
 <!-- AM_SetLowRiskInclusion-OmaUri-Begin -->
@@ -237,13 +231,13 @@ This policy setting allows you to configure the list of high-risk file types. If
 
 <!-- AM_SetLowRiskInclusion-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure the list of low-risk file types. If the attachment is in the list of low-risk file types, Windows will not prompt the user before accessing the file, regardless of the file's zone information. This inclusion list overrides the list of high-risk file types built into Windows and has a lower precedence than the high-risk or medium-risk inclusion lists (where an extension is listed in more than one inclusion list).
+This policy setting allows you to configure the list of low-risk file types. If the attachment is in the list of low-risk file types, Windows won't prompt the user before accessing the file, regardless of the file's zone information. This inclusion list overrides the list of high-risk file types built into Windows and has a lower precedence than the high-risk or medium-risk inclusion lists (where an extension is listed in more than one inclusion list).
 
 - If you enable this policy setting, you can specify file types that pose a low risk.
 
 - If you disable this policy setting, Windows uses its default trust logic.
 
-- If you do not configure this policy setting, Windows uses its default trust logic.
+- If you don't configure this policy setting, Windows uses its default trust logic.
 <!-- AM_SetLowRiskInclusion-Description-End -->
 
 <!-- AM_SetLowRiskInclusion-Editable-Begin -->
@@ -255,13 +249,12 @@ This policy setting allows you to configure the list of low-risk file types. If 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AM_SetLowRiskInclusion-DFProperties-End -->
 
 <!-- AM_SetLowRiskInclusion-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -287,7 +280,7 @@ This policy setting allows you to configure the list of low-risk file types. If 
 <!-- AM_SetModRiskInclusion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AM_SetModRiskInclusion-Applicability-End -->
 
 <!-- AM_SetModRiskInclusion-OmaUri-Begin -->
@@ -304,7 +297,7 @@ This policy setting allows you to configure the list of moderate-risk file types
 
 - If you disable this policy setting, Windows uses its default trust logic.
 
-- If you do not configure this policy setting, Windows uses its default trust logic.
+- If you don't configure this policy setting, Windows uses its default trust logic.
 <!-- AM_SetModRiskInclusion-Description-End -->
 
 <!-- AM_SetModRiskInclusion-Editable-Begin -->
@@ -316,13 +309,12 @@ This policy setting allows you to configure the list of moderate-risk file types
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AM_SetModRiskInclusion-DFProperties-End -->
 
 <!-- AM_SetModRiskInclusion-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

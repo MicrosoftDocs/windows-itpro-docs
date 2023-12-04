@@ -1,14 +1,18 @@
 ---
 title: Enhancing cache performance
-manager: aaroncz
-description: How to enhance performance on a virtual machine used with Microsoft Connected Cache for ISPs
+titleSuffix: Microsoft Connected Cache for ISPs
+description: This article explains how to enhance performance on a virtual machine used with Microsoft Connected Cache for ISPs
 ms.prod: windows-client
-author: amyzhou
-ms.author: amyzhou
-ms.topic: reference
 ms.technology: itpro-updates
-ms.date: 12/31/2017
+ms.topic: reference
+ms.author: carmenf
+author: cmknox
+manager: aaroncz
+ms.reviewer: mstewart
 ms.collection: tier3
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/mcc-isp target=_blank>Microsoft Connected Cache for ISPs</a>
+ms.date: 12/31/2017
 ---
 
 # Enhancing cache performance

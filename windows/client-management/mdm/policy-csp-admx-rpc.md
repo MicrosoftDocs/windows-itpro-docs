@@ -4,7 +4,7 @@ description: Learn more about the ADMX_RPC Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_RPC-Begin -->
 # Policy CSP - ADMX_RPC
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_RPC-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- RpcExtendedErrorInformation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RpcExtendedErrorInformation-Applicability-End -->
 
 <!-- RpcExtendedErrorInformation-OmaUri-Begin -->
@@ -48,7 +45,7 @@ Extended error information includes the local time that the error occurred, the 
 
 - If you disable this policy setting, the RPC Runtime only generates a status code to indicate an error condition.
 
-- If you do not configure this policy setting, it remains disabled. It will only generate a status code to indicate an error condition.
+- If you don't configure this policy setting, it remains disabled. It will only generate a status code to indicate an error condition.
 
 - If you enable this policy setting, the RPC runtime will generate extended error information. You must select an error response type in the drop-down box.
 
@@ -67,10 +64,10 @@ Extended error information includes the local time that the error occurred, the 
 > Extended error information is formatted to be compatible with other operating systems and older Microsoft operating systems, but only newer Microsoft operating systems can read and respond to the information.
 
 > [!NOTE]
-> The default policy setting, "Off," is designed for systems where extended error information is considered to be sensitive, and it should not be made available remotely.
+> The default policy setting, "Off," is designed for systems where extended error information is considered to be sensitive, and it shouldn't be made available remotely.
 
 > [!NOTE]
-> This policy setting will not be applied until the system is rebooted.
+> This policy setting won't be applied until the system is rebooted.
 <!-- RpcExtendedErrorInformation-Description-End -->
 
 <!-- RpcExtendedErrorInformation-Editable-Begin -->
@@ -82,13 +79,12 @@ Extended error information includes the local time that the error occurred, the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RpcExtendedErrorInformation-DFProperties-End -->
 
 <!-- RpcExtendedErrorInformation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -114,7 +110,7 @@ Extended error information includes the local time that the error occurred, the 
 <!-- RpcIgnoreDelegationFailure-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RpcIgnoreDelegationFailure-Applicability-End -->
 
 <!-- RpcIgnoreDelegationFailure-OmaUri-Begin -->
@@ -127,20 +123,20 @@ Extended error information includes the local time that the error occurred, the 
 <!-- Description-Source-ADMX -->
 This policy setting controls whether the RPC Runtime ignores delegation failures when delegation is requested.
 
-The constrained delegation model, introduced in Windows Server 2003, does not report that delegation was enabled on a security context when a client connects to a server. Callers of RPC and COM are encouraged to use the RPC_C_QOS_CAPABILITIES_IGNORE_DELEGATE_FAILURE flag, but some applications written for the traditional delegation model prior to Windows Server 2003 may not use this flag and will encounter RPC_S_SEC_PKG_ERROR when connecting to a server that uses constrained delegation.
+The constrained delegation model, introduced in Windows Server 2003, doesn't report that delegation was enabled on a security context when a client connects to a server. Callers of RPC and COM are encouraged to use the RPC_C_QOS_CAPABILITIES_IGNORE_DELEGATE_FAILURE flag, but some applications written for the traditional delegation model prior to Windows Server 2003 may not use this flag and will encounter RPC_S_SEC_PKG_ERROR when connecting to a server that uses constrained delegation.
 
 - If you disable this policy setting, the RPC Runtime will generate RPC_S_SEC_PKG_ERROR errors to applications that ask for delegation and connect to servers using constrained delegation.
 
-- If you do not configure this policy setting, it remains disabled and will generate RPC_S_SEC_PKG_ERROR errors to applications that ask for delegation and connect to servers using constrained delegation.
+- If you don't configure this policy setting, it remains disabled and will generate RPC_S_SEC_PKG_ERROR errors to applications that ask for delegation and connect to servers using constrained delegation.
 
 - If you enable this policy setting, then:
 
-- "Off" directs the RPC Runtime to generate RPC_S_SEC_PKG_ERROR if the client asks for delegation, but the created security context does not support delegation.
+- "Off" directs the RPC Runtime to generate RPC_S_SEC_PKG_ERROR if the client asks for delegation, but the created security context doesn't support delegation.
 
-- "On" directs the RPC Runtime to accept security contexts that do not support delegation even if delegation was asked for.
+- "On" directs the RPC Runtime to accept security contexts that don't support delegation even if delegation was asked for.
 
 > [!NOTE]
-> This policy setting will not be applied until the system is rebooted.
+> This policy setting won't be applied until the system is rebooted.
 <!-- RpcIgnoreDelegationFailure-Description-End -->
 
 <!-- RpcIgnoreDelegationFailure-Editable-Begin -->
@@ -152,13 +148,12 @@ The constrained delegation model, introduced in Windows Server 2003, does not re
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RpcIgnoreDelegationFailure-DFProperties-End -->
 
 <!-- RpcIgnoreDelegationFailure-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -184,7 +179,7 @@ The constrained delegation model, introduced in Windows Server 2003, does not re
 <!-- RpcMinimumHttpConnectionTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RpcMinimumHttpConnectionTimeout-Applicability-End -->
 
 <!-- RpcMinimumHttpConnectionTimeout-OmaUri-Begin -->
@@ -205,12 +200,12 @@ The minimum allowed value for this policy setting is 90 seconds. The maximum is 
 
 - If you disable this policy setting, the idle connection timeout on the IIS server running the RPC HTTP proxy will be used.
 
-- If you do not configure this policy setting, it will remain disabled. The idle connection timeout on the IIS server running the RPC HTTP proxy will be used.
+- If you don't configure this policy setting, it will remain disabled. The idle connection timeout on the IIS server running the RPC HTTP proxy will be used.
 
 - If you enable this policy setting, and the IIS server running the RPC HTTP proxy is configured with a lower idle connection timeout, the timeout on the IIS server is used. Otherwise, the provided timeout value is used. The timeout is given in seconds.
 
 > [!NOTE]
-> This policy setting will not be applied until the system is rebooted.
+> This policy setting won't be applied until the system is rebooted.
 <!-- RpcMinimumHttpConnectionTimeout-Description-End -->
 
 <!-- RpcMinimumHttpConnectionTimeout-Editable-Begin -->
@@ -222,13 +217,12 @@ The minimum allowed value for this policy setting is 90 seconds. The maximum is 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RpcMinimumHttpConnectionTimeout-DFProperties-End -->
 
 <!-- RpcMinimumHttpConnectionTimeout-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -254,7 +248,7 @@ The minimum allowed value for this policy setting is 90 seconds. The maximum is 
 <!-- RpcStateInformation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RpcStateInformation-Applicability-End -->
 
 <!-- RpcStateInformation-OmaUri-Begin -->
@@ -269,14 +263,14 @@ This policy setting determines whether the RPC Runtime maintains RPC state infor
 
 - If you disable this policy setting, the RPC runtime defaults to "Auto2" level.
 
-- If you do not configure this policy setting, the RPC defaults to "Auto2" level.
+- If you don't configure this policy setting, the RPC defaults to "Auto2" level.
 
 - If you enable this policy setting, you can use the drop-down box to determine which systems maintain RPC state information.
 
-- "None" indicates that the system does not maintain any RPC state information.
+- "None" indicates that the system doesn't maintain any RPC state information.
 
 > [!NOTE]
-> Because the basic state information required for troubleshooting has a negligible effect on performance and uses only about 4K of memory, this setting is not recommended for most installations.
+> Because the basic state information required for troubleshooting has a negligible effect on performance and uses only about 4K of memory, this setting isn't recommended for most installations.
 
 - "Auto1" directs RPC to maintain basic state information only if the computer has at least 64 MB of memory.
 
@@ -284,13 +278,13 @@ This policy setting determines whether the RPC Runtime maintains RPC state infor
 
 - "Server" directs RPC to maintain basic state information on the computer, regardless of its capacity.
 
-- "Full" directs RPC to maintain complete RPC state information on the system, regardless of its capacity. Because this level can degrade performance, it is recommended for use only while you are investigating an RPC problem.
+- "Full" directs RPC to maintain complete RPC state information on the system, regardless of its capacity. Because this level can degrade performance, it's recommended for use only while you are investigating an RPC problem.
 
 > [!NOTE]
 > To retrieve the RPC state information from a system that maintains it, you must use a debugging tool.
 
 > [!NOTE]
-> This policy setting will not be applied until the system is rebooted.
+> This policy setting won't be applied until the system is rebooted.
 <!-- RpcStateInformation-Description-End -->
 
 <!-- RpcStateInformation-Editable-Begin -->
@@ -302,13 +296,12 @@ This policy setting determines whether the RPC Runtime maintains RPC state infor
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RpcStateInformation-DFProperties-End -->
 
 <!-- RpcStateInformation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

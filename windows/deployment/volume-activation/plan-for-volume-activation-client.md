@@ -16,6 +16,7 @@ ms.date: 11/07/2022
 
 **Applies to:**
 
+- Windows 11
 - Windows 10
 - Windows 8.1
 - Windows 8
@@ -87,8 +88,7 @@ Telephone activation is primarily used in situations where a computer is isolate
 - Active Directory-based activation
 
 > [!NOTE]
-> Token-based activation is available for specific situations when approved customers rely on a public key infrastructure in an isolated and high-security environment. For more information, contact your Microsoft Account Team or your service representative.
-Token-based Activation option is available for Windows 10 Enterprise LTSB editions (Version 1507 and 1607).
+> Token-based activation for Windows Enterprise (including LTSC) and Windows Server is available for specific situations when approved customers rely on a public key infrastructure in an isolated and high-security environment. For more information, contact your Microsoft Account Team or your service representative.
 
 ### Multiple activation key
 

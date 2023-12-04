@@ -9,11 +9,10 @@ metadata:
   ms.topic: landing-page # Required
   ms.prod: windows-client
   ms.collection:
-    - highpri
     - tier1
   author: aczechowski
   ms.author: aaroncz
-  manager: dougeby
+  manager: aaroncz
   ms.date: 08/05/2021 #Required; mm/dd/yyyy format.
   localization_priority: medium
     

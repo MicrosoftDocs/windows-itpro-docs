@@ -8,11 +8,13 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.technology: itpro-configure
 ---
 
 # Test scenario 4 - Use Cortana to find your upcoming meetings at work
+<!--Using include for Cortana in Windows deprecation -->
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
 >[!Important]
 >The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.
@@ -26,7 +28,7 @@ This scenario helps you search for both general upcoming meetings, and specific 
 
 This process helps you find your upcoming meetings.
 
-1. Check to make sure your work calendar is connected and synchronized with your Azure AD account.
+1. Check to make sure your work calendar is connected and synchronized with your Microsoft Entra account.
 
 2. Click on the **Cortana** icon in the taskbar, and then click in the **Search** bar.
 

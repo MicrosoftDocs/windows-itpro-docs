@@ -9,14 +9,13 @@ ms.localizationpriority: high
 ms.topic: conceptual
 ms.technology: itpro-fundamentals
 ms.date: 04/05/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2021</a>
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2021
 
-**Applies to**
--   Windows 10 Enterprise LTSC 2021
-
-This article lists new and updated features and content that is of interest to IT Pros for Windows 10 Enterprise LTSC 2021, compared to Windows 10 Enterprise LTSC 2019 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that is of interest to IT Pros for Windows 10 Enterprise LTSC 2021, compared to Windows 10 Enterprise LTSC 2019 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](overview.md).
 
 > [!NOTE]
 > Features in Windows 10 Enterprise LTSC 2021 are equivalent to Windows 10, version 21H2.<br>
@@ -75,7 +74,7 @@ Windows Defender Firewall also now supports [Windows Subsystem for Linux (WSL)](
 
 ### Virus and threat protection
 
-[Attack surface area reduction](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction) - IT admins can configure devices with advanced web protection that enables them to define allowlists and blocklists for specific URL's and IP addresses.
+[Attack surface area reduction](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction) - IT admins can configure devices with advanced web protection that enables them to define allowlists and blocklists for specific URLs and IP addresses.
 [Next generation protection](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) - Controls have been extended to protection from ransomware, credential misuse, and attacks that are transmitted through removable storage.
   - Integrity enforcement capabilities - Enable remote runtime attestation of Windows 10 platform.
   - [Tamper-proofing](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection) capabilities - Uses virtualization-based security to isolate critical Microsoft Defender for Endpoint security capabilities away from the OS and attackers.
@@ -150,9 +149,9 @@ Windows Hello enhancements include:
 
 ### Credential protection
 
-#### Windows Defender Credential Guard
+#### Credential Guard
 
-[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) is now available for ARM64 devices, for extra protection against credential theft for enterprises deploying ARM64 devices in their organizations, such as Surface Pro X.
+[Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) is now available for ARM64 devices, for extra protection against credential theft for enterprises deploying ARM64 devices in their organizations, such as Surface Pro X.
 
 ### Privacy controls
 
@@ -244,4 +243,4 @@ WPA3 H2E standards are supported for enhanced Wi-Fi security.
 
 ## See Also
 
-[Windows 10 Enterprise LTSC](index.md): A short description of the LTSC servicing channel with links to information about each release.
+[Windows 10 Enterprise LTSC](overview.md): A short description of the LTSC servicing channel with links to information about each release.

@@ -1,11 +1,11 @@
 ---
-title: 4716(S) Trusted domain information was modified. (Windows 10)
+title: 4716(S) Trusted domain information was modified. 
 description: Describes security event 4716(S) Trusted domain information was modified.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

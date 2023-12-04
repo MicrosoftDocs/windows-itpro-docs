@@ -66,8 +66,10 @@
       href: setup-digital-signage.md
     - name: Set up a single-app kiosk
       href: kiosk-single-app.md
-    - name: Set up a multi-app kiosk
+    - name: Set up a multi-app kiosk for Windows 10
       href: lock-down-windows-10-to-specific-apps.md
+    - name: Set up a multi-app kiosk for Windows 11
+      href: lock-down-windows-11-to-specific-apps.md
     - name: Kiosk reference information
       items:
         - name: More kiosk methods and reference information
@@ -141,7 +143,7 @@
           href: cortana-at-work/set-up-and-test-cortana-in-windows-10.md
         - name: Cortana at work testing scenarios
           href: cortana-at-work/cortana-at-work-testing-scenarios.md
-        - name: Test scenario 1 - Sign into Azure AD, enable the wake word, and try a voice query
+        - name: Test scenario 1 - Sign into Microsoft Entra ID, enable the wake word, and try a voice query
           href: cortana-at-work/cortana-at-work-scenario-1.md
         - name: Test scenario 2 - Run a Bing search with Cortana
           href: cortana-at-work/cortana-at-work-scenario-2.md
@@ -161,7 +163,7 @@
           href: cortana-at-work/cortana-at-work-o365.md
         - name: Testing scenarios using Cortana in your business or organization
           href: cortana-at-work/testing-scenarios-using-cortana-in-business-org.md
-        - name: Test scenario 1 - Sign into Azure AD, enable the wake word, and try a voice query
+        - name: Test scenario 1 - Sign into Microsoft Entra ID, enable the wake word, and try a voice query
           href: cortana-at-work/test-scenario-1.md
         - name: Test scenario 2 - Run a quick search with Cortana at work
           href: cortana-at-work/test-scenario-2.md

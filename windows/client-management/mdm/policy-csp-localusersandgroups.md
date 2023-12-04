@@ -4,7 +4,7 @@ description: Learn more about the LocalUsersAndGroups Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- Configure-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Configure-Applicability-End -->
 
 <!-- Configure-OmaUri-Begin -->
@@ -41,12 +41,11 @@ This Setting allows an administrator to manage local groups on a Device.
 Possible settings:
 
 1. Update Group Membership: Update a group and add and/or remove members though the 'U' action.
-When using Update, existing group members that are not specified in the policy remain untouched.
-
+When using Update, existing group members that aren't specified in the policy remain untouched.
 2. Replace Group Membership: Restrict a group by replacing group membership through the 'R' action.
 When using Replace, existing group membership is replaced by the list of members specified in
 the add member section. This option works in the same way as a Restricted Group and any group
-members that are not specified in the policy are removed.
+members that aren't specified in the policy are removed.
 
 > [!CAUTION]
 > If the same group is configured with both Replace and Update, then Replace will win.
@@ -55,7 +54,7 @@ members that are not specified in the policy are removed.
 <!-- Configure-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> The [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#configuregroupmembership) policy setting also allows you to configure members (users or Azure Active Directory groups) to a Windows 10 local group. However, it allows only for a full replace of the existing groups with the new members and does not allow selective add or remove.
+> The [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#configuregroupmembership) policy setting also allows you to configure members (users or Microsoft Entra groups) to a Windows 10 local group. However, it allows only for a full replace of the existing groups with the new members and does not allow selective add or remove.
 >
 > Starting from Windows 10, version 20H2, it is recommended to use the LocalUsersAndGroups policy instead of the RestrictedGroups policy. Applying both the policies to the same device is unsupported and may yield unpredictable results.
 <!-- Configure-Editable-End -->
@@ -65,7 +64,7 @@ members that are not specified in the policy are removed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Configure-DFProperties-End -->
 
@@ -167,21 +166,21 @@ where:
 
     > [!NOTE]
     > When specifying member names of the user accounts, you must use following format - AzureAD\userUPN. For example, "AzureAD\user1@contoso.com" or "AzureAD\user2@contoso.co.uk".
-For adding Azure AD groups, you need to specify the Azure AD Group SID. Azure AD group names are not supported with this policy.
+For adding Microsoft Entra groups, you need to specify the Microsoft Entra group SID. Microsoft Entra group names are not supported with this policy.
 For more information, see [LookupAccountNameA function](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea).
 
 See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configuration/custom-settings-windows-10) for information on how to create custom profiles.
 
 > [!IMPORTANT]
 >
-> - `<add member>` and `<remove member>` can use an Azure AD SID or the user's name. For adding or removing Azure AD groups using this policy, you must use the group's SID. Azure AD group SIDs can be obtained using [Graph](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true#json-representation) API for Groups. The SID is present in the `securityIdentifier` attribute.
+> - `<add member>` and `<remove member>` can use a Microsoft Entra SID or the user's name. For adding or removing Microsoft Entra groups using this policy, you must use the group's SID. Microsoft Entra group SIDs can be obtained using [Graph](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true#json-representation) API for Groups. The SID is present in the `securityIdentifier` attribute.
 > - When specifying a SID in the `<add member>` or `<remove member>`, member SIDs are added without attempting to resolve them. Therefore, be very careful when specifying a SID to ensure it is correct.
 > - `<remove member>` is not valid for the R (Restrict) action and will be ignored if present.
 > - The list in the XML is processed in the given order except for the R actions, which get processed last to ensure they win. It also means that, if a group is present multiple times with different add/remove values, all of them will be processed in the order they are present.
 
-**Example 1**: Azure Active Directory focused.
+**Example 1**: Microsoft Entra ID focused.
 
-The following example updates the built-in administrators group with the SID **S-1-5-21-2222222222-3333333333-4444444444-500** with an Azure AD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444** on an AAD-joined machine.
+The following example updates the built-in administrators group with the SID **S-1-5-21-2222222222-3333333333-4444444444-500** with a Microsoft Entra account "bob@contoso.com" and a Microsoft Entra group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444** on a Microsoft Entra joined machine.
 
 ```xml
 <GroupConfiguration>
@@ -193,7 +192,7 @@ The following example updates the built-in administrators group with the SID **S
 </GroupConfiguration>
 ```
 
-**Example 2**: Replace / Restrict the built-in administrators group with an Azure AD user account.
+**Example 2**: Replace / Restrict the built-in administrators group with a Microsoft Entra user account.
 
 > [!NOTE]
 > When using the 'R' replace option to configure the built-in Administrators group with the SID **S-1-5-21-2222222222-3333333333-4444444444-500** you should always specify the administrator as a member plus any other custom members. This is necessary because the built-in administrator must always be a member of the administrators group.
@@ -210,7 +209,7 @@ The following example updates the built-in administrators group with the SID **S
 
 **Example 3**: Update action for adding and removing group members on a hybrid joined machine.
 
-The following example shows how you can update a local group (**Administrators** with the SID **S-1-5-21-2222222222-3333333333-4444444444-500**)—add an AD domain group as a member using its name (**Contoso\ITAdmins**), add an Azure Active Directory group by its SID (**S-1-12-1-111111111-22222222222-3333333333-4444444444**), and remove a local account (**Guest**) if it exists.
+The following example shows how you can update a local group (**Administrators** with the SID **S-1-5-21-2222222222-3333333333-4444444444-500**)—add an AD domain group as a member using its name (**Contoso\ITAdmins**), add a Microsoft Entra group by its SID (**S-1-12-1-111111111-22222222222-3333333333-4444444444**), and remove a local account (**Guest**) if it exists.
 
 ```xml
 <GroupConfiguration>
@@ -224,7 +223,7 @@ The following example shows how you can update a local group (**Administrators**
 ```
 
 > [!NOTE]
-> When Azure Active Directory group SID's are added to local groups, Azure AD account logon privileges are evaluated only for the following well-known groups on a Windows 10 device:
+> When Microsoft Entra group SID's are added to local groups, Microsoft Entra account logon privileges are evaluated only for the following well-known groups on a Windows 10 device:
 >
 > - Administrators
 > - Users

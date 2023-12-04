@@ -9,14 +9,13 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 ms.technology: itpro-fundamentals
 ms.date: 04/05/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2019</a>
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2019
 
-**Applies to**
--   Windows 10 Enterprise LTSC 2019
-
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2019, compared to Windows 10 Enterprise LTSC 2016 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2019, compared to Windows 10 Enterprise LTSC 2016 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](overview.md).
 
 >[!NOTE]
 >Features in Windows 10 Enterprise LTSC 2019 are equivalent to Windows 10, version 1809.
@@ -209,14 +208,14 @@ Windows Hello for Business now supports FIDO 2.0 authentication for Azure AD Joi
 
 For more information, see: [Windows Hello and FIDO2 Security Keys enable secure and easy authentication for shared devices](https://blogs.windows.com/business/2018/04/17/windows-hello-fido2-security-keys/#OdKBg3pwJQcEKCbJ.97)
 
-#### Windows Defender Credential Guard
+#### Credential Guard
 
-Windows Defender Credential Guard is a security service in Windows 10 built to protect Active Directory (AD) domain credentials so that they can't be stolen or misused by malware on a user's machine. It's designed to protect against well-known threats such as Pass-the-Hash and credential harvesting.
+Credential Guard is a security service in Windows 10 built to protect Active Directory (AD) domain credentials so that they can't be stolen or misused by malware on a user's machine. It's designed to protect against well-known threats such as Pass-the-Hash and credential harvesting.
 
-Windows Defender Credential Guard has always been an optional feature, but Windows 10 in S mode turns on this functionality by default when the machine has been Azure Active Directory-joined. This feature provides an added level of security when connecting to domain resources not normally present on devices running Windows 10 in S mode.
+Credential Guard has always been an optional feature, but Windows 10 in S mode turns on this functionality by default when the machine has been Azure Active Directory-joined. This feature provides an added level of security when connecting to domain resources not normally present on devices running Windows 10 in S mode.
 
 > [!NOTE]
-> Windows Defender Credential Guard is available only to S mode devices or Enterprise and Education Editions.
+> Credential Guard is available only to S mode devices or Enterprise and Education Editions.
 
 For more information, see [Credential Guard Security Considerations](/windows/security/identity-protection/credential-guard/credential-guard-requirements#security-considerations).
 
@@ -457,7 +456,7 @@ Windows 10 Enterprise LTSC 2019 adds many new [configuration service providers (
 
 Some of the other new CSPs are:
 
-- The [DynamicManagement CSP](/windows/client-management/mdm/dynamicmanagement-csp) allows you to manage devices differently depending on location, network, or time. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country to avoid roaming charges, or the wireless network can be disabled when the device isn't within the corporate building or campus. Once configured, these settings will be enforced even if the device can't reach the management server when the location or network changes. The dynamic management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs.
+- The [DynamicManagement CSP](/windows/client-management/mdm/dynamicmanagement-csp) allows you to manage devices differently depending on location, network, or time. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country/region to avoid roaming charges, or the wireless network can be disabled when the device isn't within the corporate building or campus. Once configured, these settings will be enforced even if the device can't reach the management server when the location or network changes. The dynamic management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs.
 
 - The [CleanPC CSP](/windows/client-management/mdm/cleanpc-csp) allows removal of user-installed and pre-installed applications, with the option to persist user data.
 
@@ -577,4 +576,4 @@ See the following example:
 
 ## See also
 
-[Windows 10 Enterprise LTSC](index.md): A short description of the LTSC servicing channel with links to information about each release.
+[Windows 10 Enterprise LTSC](overview.md): A short description of the LTSC servicing channel with links to information about each release.

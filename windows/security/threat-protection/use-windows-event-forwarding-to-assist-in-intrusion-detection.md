@@ -1,10 +1,10 @@
 ---
-title: Use Windows Event Forwarding to help with intrusion detection (Windows 10)
+title: Use Windows Event Forwarding to help with intrusion detection 
 description: Learn about an approach to collect events from devices in your organization. This article talks about events in both normal operations and when an intrusion is suspected.
 ms.prod: windows-client
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.date: 02/28/2019
 ms.localizationpriority: medium
 ms.technology: itpro-security
@@ -666,4 +666,4 @@ You can get more info with the following links:
 -   [Event Queries and Event XML](/previous-versions/bb399427(v=vs.90))
 -   [Event Query Schema](/windows/win32/wes/queryschema-schema)
 -   [Windows Event Collector](/windows/win32/wec/windows-event-collector)
--   [4625(F): An account failed to log on](./auditing/event-4625.md)
+-   [4625(F): An account failed to log on](auditing/event-4625.md)

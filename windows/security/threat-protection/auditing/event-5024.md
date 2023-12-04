@@ -1,11 +1,11 @@
 ---
-title: 5024(S) The Windows Firewall Service has started successfully. (Windows 10)
+title: 5024(S) The Windows Firewall Service has started successfully. 
 description: Describes security event 5024(S) The Windows Firewall Service has started successfully.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

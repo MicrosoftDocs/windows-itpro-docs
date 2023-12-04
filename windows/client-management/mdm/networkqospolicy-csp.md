@@ -4,7 +4,7 @@ description: Learn more about the NetworkQoSPolicy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -32,9 +32,9 @@ The following actions are supported:
 - Layer 3 tagging using a differentiated services code point (DSCP) value
 
 > [!NOTE]
-> The NetworkQoSPolicy configuration service provider is officially supported for devices that are Intune managed and Azure AD joined. Currently, this CSP is not supported on the following devices:
+> The NetworkQoSPolicy configuration service provider is officially supported for devices that are Intune managed and Microsoft Entra joined. Currently, this CSP is not supported on the following devices:
 >
-> - Azure AD Hybrid joined devices.
+> - Microsoft Entra hybrid joined devices.
 > - Devices that use both GPO and CSP at the same time.
 >
 > The minimum operating system requirement for this CSP is Windows 10, version 1703. This CSP is not supported in Microsoft Surface Hub prior to Windows 10, version 1703.
@@ -60,7 +60,7 @@ The following list shows the NetworkQoSPolicy configuration service provider nod
 <!-- Device-{Name}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-{Name}-Applicability-End -->
 
 <!-- Device-{Name}-OmaUri-Begin -->
@@ -83,7 +83,7 @@ The value of this node should be a policy name.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | UniqueName: The value of this node should be a policy name. |
 <!-- Device-{Name}-DFProperties-End -->
@@ -100,7 +100,7 @@ The value of this node should be a policy name.
 <!-- Device-{Name}-AppPathNameMatchCondition-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-{Name}-AppPathNameMatchCondition-Applicability-End -->
 
 <!-- Device-{Name}-AppPathNameMatchCondition-OmaUri-Begin -->
@@ -123,7 +123,7 @@ Specifies the name of an application to be used to match the network traffic, su
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{Name}-AppPathNameMatchCondition-DFProperties-End -->
 
@@ -139,7 +139,7 @@ Specifies the name of an application to be used to match the network traffic, su
 <!-- Device-{Name}-DestinationPortMatchCondition-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-{Name}-DestinationPortMatchCondition-Applicability-End -->
 
 <!-- Device-{Name}-DestinationPortMatchCondition-OmaUri-Begin -->
@@ -162,7 +162,7 @@ Specifies a single port or a range of ports to be used to match the network traf
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{Name}-DestinationPortMatchCondition-DFProperties-End -->
 
@@ -178,7 +178,7 @@ Specifies a single port or a range of ports to be used to match the network traf
 <!-- Device-{Name}-DSCPAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-{Name}-DSCPAction-Applicability-End -->
 
 <!-- Device-{Name}-DSCPAction-OmaUri-Begin -->
@@ -201,7 +201,7 @@ The differentiated services code point (DSCP) value to apply to matching network
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-63]` |
 <!-- Device-{Name}-DSCPAction-DFProperties-End -->
@@ -218,7 +218,7 @@ The differentiated services code point (DSCP) value to apply to matching network
 <!-- Device-{Name}-IPProtocolMatchCondition-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-{Name}-IPProtocolMatchCondition-Applicability-End -->
 
 <!-- Device-{Name}-IPProtocolMatchCondition-OmaUri-Begin -->
@@ -241,7 +241,7 @@ Specifies the IP protocol used to match the network traffic. Valid values are 0:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-{Name}-IPProtocolMatchCondition-DFProperties-End -->
@@ -258,7 +258,7 @@ Specifies the IP protocol used to match the network traffic. Valid values are 0:
 <!-- Device-{Name}-PriorityValue8021Action-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-{Name}-PriorityValue8021Action-Applicability-End -->
 
 <!-- Device-{Name}-PriorityValue8021Action-OmaUri-Begin -->
@@ -281,7 +281,7 @@ The IEEE 802.1p value to apply to matching network traffice. Valid values are 0-
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-7]` |
 <!-- Device-{Name}-PriorityValue8021Action-DFProperties-End -->
@@ -298,7 +298,7 @@ The IEEE 802.1p value to apply to matching network traffice. Valid values are 0-
 <!-- Device-{Name}-SourcePortMatchCondition-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-{Name}-SourcePortMatchCondition-Applicability-End -->
 
 <!-- Device-{Name}-SourcePortMatchCondition-OmaUri-Begin -->
@@ -321,7 +321,7 @@ Specifies a single port or a range of ports to be used to match the network traf
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{Name}-SourcePortMatchCondition-DFProperties-End -->
 
@@ -337,7 +337,7 @@ Specifies a single port or a range of ports to be used to match the network traf
 <!-- Device-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-Version-Applicability-End -->
 
 <!-- Device-Version-OmaUri-Begin -->
@@ -360,7 +360,7 @@ Version information.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Version-DFProperties-End -->
 

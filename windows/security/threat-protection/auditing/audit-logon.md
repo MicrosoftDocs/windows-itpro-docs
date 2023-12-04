@@ -1,5 +1,5 @@
 ---
-title: Audit Logon (Windows 10)
+title: Audit Logon 
 description: The Advanced Security Audit policy setting, Audit Logon, determines if audit events are generated when a user attempts to log on to a computer.
 ms.assetid: ca968d03-7d52-48c4-ba0e-2bcd2937231b
 ms.reviewer: 
@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/06/2021
 ms.technology: itpro-security

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Programs Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_Programs-Begin -->
 # Policy CSP - ADMX_Programs
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_Programs-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- NoDefaultPrograms-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoDefaultPrograms-Applicability-End -->
 
 <!-- NoDefaultPrograms-OmaUri-Begin -->
@@ -42,15 +39,15 @@ ms.topic: reference
 
 <!-- NoDefaultPrograms-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting removes the Set Program Access and Defaults page from the Programs Control Panel. As a result, users cannot view or change the associated page.
+This setting removes the Set Program Access and Defaults page from the Programs Control Panel. As a result, users can't view or change the associated page.
 
 The Set Program Access and Computer Defaults page allows administrators to specify default programs for certain activities, such as Web browsing or sending e-mail, as well as specify the programs that are accessible from the Start menu, desktop, and other locations.
 
 If this setting is disabled or not configured, the Set Program Access and Defaults button is available to all users.
 
-This setting does not prevent users from using other tools and methods to change program access or defaults.
+This setting doesn't prevent users from using other tools and methods to change program access or defaults.
 
-This setting does not prevent the Default Programs icon from appearing on the Start menu.
+This setting doesn't prevent the Default Programs icon from appearing on the Start menu.
 <!-- NoDefaultPrograms-Description-End -->
 
 <!-- NoDefaultPrograms-Editable-Begin -->
@@ -62,13 +59,12 @@ This setting does not prevent the Default Programs icon from appearing on the St
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoDefaultPrograms-DFProperties-End -->
 
 <!-- NoDefaultPrograms-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -95,7 +91,7 @@ This setting does not prevent the Default Programs icon from appearing on the St
 <!-- NoGetPrograms-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoGetPrograms-Applicability-End -->
 
 <!-- NoGetPrograms-OmaUri-Begin -->
@@ -112,9 +108,9 @@ This setting prevents users from accessing the "Get Programs" page from the Prog
 
 Published programs are those programs that the system administrator has explicitly made available to the user with a tool such as Windows Installer. Typically, system administrators publish programs to notify users of their availability, to recommend their use, or to enable users to install them without having to search for installation files.
 
-- If this setting is enabled, users cannot view the programs that have been published by the system administrator, and they cannot use the "Get Programs" page to install published programs. Enabling this feature does not prevent users from installing programs by using other methods. Users will still be able to view and installed assigned (partially installed) programs that are offered on the desktop or on the Start menu.
+- If this setting is enabled, users can't view the programs that have been published by the system administrator, and they can't use the "Get Programs" page to install published programs. Enabling this feature doesn't prevent users from installing programs by using other methods. Users will still be able to view and installed assigned (partially installed) programs that are offered on the desktop or on the Start menu.
 
-- If this setting is disabled or is not configured, the "Install a program from the network" task to the "Get Programs" page will be available to all users.
+- If this setting is disabled or isn't configured, the "Install a program from the network" task to the "Get Programs" page will be available to all users.
 
 > [!NOTE]
 > If the "Hide Programs Control Panel" setting is enabled, this setting is ignored.
@@ -129,13 +125,12 @@ Published programs are those programs that the system administrator has explicit
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoGetPrograms-DFProperties-End -->
 
 <!-- NoGetPrograms-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -162,7 +157,7 @@ Published programs are those programs that the system administrator has explicit
 <!-- NoInstalledUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoInstalledUpdates-Applicability-End -->
 
 <!-- NoInstalledUpdates-OmaUri-Begin -->
@@ -179,7 +174,7 @@ This setting prevents users from accessing "Installed Updates" page from the "Vi
 
 If this setting is disabled or not configured, the "View installed updates" task and the "Installed Updates" page will be available to all users.
 
-This setting does not prevent users from using other tools and methods to install or uninstall programs.
+This setting doesn't prevent users from using other tools and methods to install or uninstall programs.
 <!-- NoInstalledUpdates-Description-End -->
 
 <!-- NoInstalledUpdates-Editable-Begin -->
@@ -191,13 +186,12 @@ This setting does not prevent users from using other tools and methods to instal
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoInstalledUpdates-DFProperties-End -->
 
 <!-- NoInstalledUpdates-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -224,7 +218,7 @@ This setting does not prevent users from using other tools and methods to instal
 <!-- NoProgramsAndFeatures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoProgramsAndFeatures-Applicability-End -->
 
 <!-- NoProgramsAndFeatures-OmaUri-Begin -->
@@ -239,7 +233,7 @@ This setting prevents users from accessing "Programs and Features" to view, unin
 
 If this setting is disabled or not configured, "Programs and Features" will be available to all users.
 
-This setting does not prevent users from using other tools and methods to view or uninstall programs. It also does not prevent users from linking to related Programs Control Panel Features including Windows Features, Get Programs, or Windows Marketplace.
+This setting doesn't prevent users from using other tools and methods to view or uninstall programs. It also doesn't prevent users from linking to related Programs Control Panel Features including Windows Features, Get Programs, or Windows Marketplace.
 <!-- NoProgramsAndFeatures-Description-End -->
 
 <!-- NoProgramsAndFeatures-Editable-Begin -->
@@ -251,13 +245,12 @@ This setting does not prevent users from using other tools and methods to view o
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoProgramsAndFeatures-DFProperties-End -->
 
 <!-- NoProgramsAndFeatures-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -284,7 +277,7 @@ This setting does not prevent users from using other tools and methods to view o
 <!-- NoProgramsCPL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoProgramsCPL-Applicability-End -->
 
 <!-- NoProgramsCPL-OmaUri-Begin -->
@@ -303,7 +296,7 @@ If this setting is disabled or not configured, the Programs Control Panel in Cat
 
 When enabled, this setting takes precedence over the other settings in this folder.
 
-This setting does not prevent users from using other tools and methods to install or uninstall programs.
+This setting doesn't prevent users from using other tools and methods to install or uninstall programs.
 <!-- NoProgramsCPL-Description-End -->
 
 <!-- NoProgramsCPL-Editable-Begin -->
@@ -315,13 +308,12 @@ This setting does not prevent users from using other tools and methods to instal
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoProgramsCPL-DFProperties-End -->
 
 <!-- NoProgramsCPL-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -348,7 +340,7 @@ This setting does not prevent users from using other tools and methods to instal
 <!-- NoWindowsFeatures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoWindowsFeatures-Applicability-End -->
 
 <!-- NoWindowsFeatures-OmaUri-Begin -->
@@ -359,11 +351,11 @@ This setting does not prevent users from using other tools and methods to instal
 
 <!-- NoWindowsFeatures-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting prevents users from accessing the "Turn Windows features on or off" task from the Programs Control Panel in Category View, Programs and Features in Classic View, and Get Programs. As a result, users cannot view, enable, or disable various Windows features and services.
+This setting prevents users from accessing the "Turn Windows features on or off" task from the Programs Control Panel in Category View, Programs and Features in Classic View, and Get Programs. As a result, users can't view, enable, or disable various Windows features and services.
 
-If this setting is disabled or is not configured, the "Turn Windows features on or off" task will be available to all users.
+If this setting is disabled or isn't configured, the "Turn Windows features on or off" task will be available to all users.
 
-This setting does not prevent users from using other tools and methods to configure services or enable or disable program components.
+This setting doesn't prevent users from using other tools and methods to configure services or enable or disable program components.
 <!-- NoWindowsFeatures-Description-End -->
 
 <!-- NoWindowsFeatures-Editable-Begin -->
@@ -375,13 +367,12 @@ This setting does not prevent users from using other tools and methods to config
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoWindowsFeatures-DFProperties-End -->
 
 <!-- NoWindowsFeatures-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -408,7 +399,7 @@ This setting does not prevent users from using other tools and methods to config
 <!-- NoWindowsMarketplace-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoWindowsMarketplace-Applicability-End -->
 
 <!-- NoWindowsMarketplace-OmaUri-Begin -->
@@ -423,9 +414,9 @@ This setting prevents users from access the "Get new programs from Windows Marke
 
 Windows Marketplace allows users to purchase and/or download various programs to their computer for installation.
 
-Enabling this feature does not prevent users from navigating to Windows Marketplace using other methods.
+Enabling this feature doesn't prevent users from navigating to Windows Marketplace using other methods.
 
-If this feature is disabled or is not configured, the "Get new programs from Windows Marketplace" task link will be available to all users.
+If this feature is disabled or isn't configured, the "Get new programs from Windows Marketplace" task link will be available to all users.
 
 > [!NOTE]
 > If the "Hide Programs control Panel" setting is enabled, this setting is ignored.
@@ -440,13 +431,12 @@ If this feature is disabled or is not configured, the "Get new programs from Win
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoWindowsMarketplace-DFProperties-End -->
 
 <!-- NoWindowsMarketplace-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

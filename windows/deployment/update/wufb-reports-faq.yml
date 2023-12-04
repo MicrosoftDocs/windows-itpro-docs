@@ -1,0 +1,183 @@
+### YamlMime:FAQ
+metadata:
+  title: Frequently Asked Questions (FAQ)
+  titleSuffix: Windows Update for Business reports
+  description: Answers to frequently asked questions about Windows Update for Business reports.
+  ms.prod: windows-client
+  ms.technology: itpro-updates
+  ms.topic: faq
+  manager: aaroncz
+  author: mestew
+  ms.author: mstewart
+  ms.date: 06/20/2023
+title: Frequently Asked Questions about Windows Update for Business reports
+summary: |
+  This article answers frequently asked questions about Windows Update for Business reports. <!--7760853-->
+
+  **General questions**:
+
+  - [What is Windows Update for Business reports?](#what-is-windows-update-for-business-reports)
+  - [Is Windows Update for Business reports free?](#is-windows-update-for-business-reports-free)
+  - [What Windows versions are supported?](#what-windows-versions-are-supported)
+
+  **Setup questions**:
+
+  - [How do you set up Windows Update for Business reports?](#how-do-you-set-up-windows-update-for-business-reports)
+  - [Why is "Waiting for Windows Update for Business reports data" displayed on the page](#why-is--waiting-for-windows-update-for-business-reports-data--displayed-on-the-page)
+  - [Why am I getting the error "400 Bad Request: The specified resource already exists"?](#why-am-i-getting-the-error--400-bad-request--the-specified-resource-already-exists-)
+
+  **Questions about using Windows Update for Business reports**:
+
+  - [Why is the device name null(#)?](#why-is-the-device-name-null---)
+  - [Why am I missing devices in reports?](#why-am-i-missing-devices-in-reports)
+  - [What is the difference between OS version and target version?](#what-is-the-difference-between-os-version-and-target-version)
+  - [Why are there multiple records for the same device?](#why-are-there-multiple-records-for-the-same-device)
+  - [When should I use the UCClient, UCClientUpdateStatus, or UCUpdateAlert tables?](#when-should-i-use-the-ucclient--ucclientupdatestatus--or-ucupdatealert-tables)
+  - [What is the difference between quality and security updates?](#what-is-the-difference-between-quality-and-security-updates)
+  - [How do I confirm that devices are sending data?](#how-do-i-confirm-that-devices-are-sending-data)
+  - [Why isn't the workbook displaying data even though my UCClient table has data?](#why-isn-t-the-workbook-displaying-data-even-though-my-ucclient-table-has-data)
+
+  **Delivery Optimization data**:
+
+  - [What time period does the Delivery Optimization data include?](#what-time-period-does-the-delivery-optimization-data-include)
+  - [Data is showing as "Unknown", what does that mean?](#data-is-showing-as--unknown---what-does-that-mean)
+  - [How are the 'Top 10' groups identified?](#how-are-the--top-10--groups-identified)
+  - [The GroupIDs don't look familiar, why are they different?](#the-groupids-don-t-look-familiar--why-are-they-different)
+  - [How can I see data for device in the office vs. out of the office?](#how-can-i-see-data-for-device-in-the-office-vs--out-of-the-office)
+  - [What does the data in UCDOStatus table represent?](#what-does-the-data-in-ucdostatus-table-represent)
+  - [What does the data in UCDOAggregatedStatus table represent?](#what-does-the-data-in-ucdoaggregatedstatus-table-represent)
+  - [How are BytesFromCache calculated when there's a Connected Cache server used by my ISP?](#how-are-bytesfromcache-calculated-when-there-s-a-connected-cache-server-used-by-my-isp)
+  - [How do the results from the Delivery Optimization PowerShell cmdlets compare to the results in the report?](#how-do-the-results-from-the-delivery-optimization-powershell-cmdlets-compare-to-the-results-in-the-report)
+  - [The report represents the last 28 days of data, why do some queries include >= seven days?](#the-report-represents-the-last-28-days-of-data--why-do-some-queries-include----seven-days)  
+
+sections:
+  - name: General
+    questions:
+      - question: What is Windows Update for Business reports?
+        answer: |
+          Windows Update for Business reports is a cloud-based solution that provides information about your Microsoft Entra joined devices' compliance with Windows updates. Windows Update for Business reports is offered through the [Azure portal](https://portal.azure.com), and it's included as part of the Windows 10 or Windows 11 prerequisite licenses.  
+      - question: Is Windows Update for Business reports free?
+        answer: |
+          Data ingested into your Log Analytics workspace can be retained at no charge for up to first 31 days (or 90 days if [Microsoft Sentinel](/azure/sentinel/overview) is enabled on the workspace). Data ingested into [Application Insights](/azure/azure-monitor/app/app-insights-overview), either classic or workspace-based, is retained for 90 days without any charge.
+          Data retained beyond these no-charge periods are charged for each GB of data retained for a month, pro-rated daily. For more information, see **Log Data Retention** in [Azure Monitor pricing](https://azure.microsoft.com/en-us/pricing/details/monitor/#pricing).
+      - question: What Windows versions are supported?
+        answer: |
+          Windows Update for Business reports supports clients running a [supported version of Windows 10 or Windows 11](/windows/release-health/supported-versions-windows-client) Professional, Education, Enterprise, and Enterprise multi-session editions. Windows Update for Business reports only provides data for the standard Desktop Windows client version and isn't currently compatible with Windows Server, Surface Hub, IoT, or other versions.
+
+  - name: Setup questions
+    questions:
+      - question: How do you set up Windows Update for Business reports?
+        answer: |
+          After verifying the [prerequisites](wufb-reports-prerequisites.md) are met, you can start to set up Windows Update for Business reports. 
+          The two main steps for setting up  Windows Update for Business reports are:
+
+          1. [Add Windows Update for Business reports](wufb-reports-enable.md#bkmk_add) to your Azure subscription. This step has the following phases:
+            1. [Select or create a new Log Analytics workspace](wufb-reports-enable.md#bkmk_workspace) for use with Windows Update for Business reports.
+            1. Enroll into Windows Update for Business reports using one of the following methods:
+              - Enroll through the [Azure Workbook](wufb-reports-enable.md#bkmk_enroll) (preferred method)
+              - Enroll from the [Microsoft 365 admin center](wufb-reports-enable.md#bkmk_admin-center).
+          1. Configure the clients to send data to Windows Update for Business reports. You can configure clients in the following three ways:
+              - Use a [script](wufb-reports-configuration-script.md)
+              - Use [Microsoft Intune](wufb-reports-configuration-intune.md)
+              - Configure [manually](wufb-reports-configuration-manual.md)    
+      - question: Why is `Waiting for Windows Update for Business reports data` displayed on the page?
+        answer: |
+          Typically, the **Waiting for Windows Update for Business reports data** message is displayed because: 
+          - You may not have the correct [permissions](wufb-reports-prerequisites.md#permissions) to display the data. 
+          - The initial enrollment may not be complete yet.
+          - It's possible that devices aren't sharing data. If you received a successful save message during enrollment but still haven't seen any data after 48 hours, try using the [configuration script](wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
+          If you've verified the above items, but still aren't seeing data, you can unenroll then re-enroll. However, it takes another 24-48 hours for the enrollment to complete. If the issue persists, [contact support](wufb-reports-help.md).  
+      - question: "Why am I getting the error `400 Bad Request: The specified resource already exists`?"
+        answer: |
+          A `400 Bad Request: The specified resource already exists` error message indicates that the service already has a subscription and workspace mapping saved. If you're trying to re-enroll with the same configuration settings, wait a few minutes, then refresh the page before saving your subscription and workspace again. Sometimes it can take time to register the save, so it's important to not re-enroll too quickly.
+  - name: Using Windows Update for Business reports
+    questions:
+      - question: Why is the device name null(#)?
+        answer: |
+          If you're seeing the device ID but not the device name, it's possible that the required policy for displaying the device name isn't set on the client. Ensure clients have the policy configured.
+          - CSP: [System/AllowDeviceNameInDiagnosticData](/windows/client-management/mdm/policy-csp-system#allowdevicenameindiagnosticdata)
+          - Group Policy: Allow device name to be sent in Windows diagnostic data
+            - Located in **Computer Configuration** > **Administrative Templates** > **Windows Components** >**Data Collection and Preview Builds**. It can take up to 21 days for all device names to show in up in reports assuming they're powered on and active.
+      - question: Why am I missing devices in reports?
+        answer: |
+          Here are some reasons why you may not be seeing devices in reports:
+
+          - **The device isn't enrolled with Azure Active Directory**: A [prerequisite](wufb-reports-prerequisites.md#azure-and-azure-active-directory) for devices is that they're either [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+          - **The device isn't sending data**: It's possible devices aren't sharing data due to a policy being incorrectly configured or a proxy or firewall configuration. Try using the [configuration script](wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
+          - **The device isn't active enough**: Clients must be active and connected to the internet to scan against Microsoft Update. Ensure devices are powered on and have been active at least once in the past 28 days.
+          - **The workbook has limited the results**: The default limit for rows in Azure workbooks is set to 1000. This limit is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the three dots beside each component.
+      - question: Why are there multiple records for the same device?
+        answer: |
+          Devices have multiple records when the `UCClientUpdateStatus` or `UCClientServiceStatus` tables are queried. These tables contain multiple records because they have the history for all devices that have discovered applicable updates within the past 28 days. For example, it's possible that a device has discovered multiple security updates, each with different update states, at various times over the past 28 days. It's also possible that a device can be in multiple deployments, so multiple records are displayed.    
+      - question: What is the difference between OS version and target version?
+        answer: |
+          The word *target* in data labels refers to the update version, build or KB the client intends to update to. Typically, the fields starting with *OS*, such as OSbuild and OSversion, represents what the device is currently running.
+      - question: When should I use the UCClient, UCClientUpdateStatus, or UCUpdateAlert tables?
+        answer: |
+          These tables can be used for the following information:
+
+          - **UCClient**: Represents an individual device's record. It contains data such as the device's name, currently installed build, and the OS Edition. Each device has one record in this table. Use this table to get the overall compliance status of your devices.
+            - To display information for a specific device by Azure AD device ID: </br>
+              `UCClient where AzureADDeviceId contains "01234567-89ab-cdef-0123-456789abcdef"`
+            - To display all device records for devices running any Windows 11 OS version:</br>
+              `UCClient | where OSVersion contains "Windows 11"`
+
+          - **UCClientUpdateStatus**: Contains records for every update the device determined was applicable. There can be multiple records for a device if it's discovered multiple applicable updates in the past 60 days. Use this table if you want to get detailed update status for your active deployments. There will typically be 3 update status records per device for the latest 3 security updates.    
+            - To find device records for devices that determined the March 14, 2023 update was applicable:</br>
+              `UCClientUpdateStatus | where UpdateCategory =="WindowsQualityUpdate" and UpdateReleaseTime == "3/14/2023"`  
+            - To display devices that are in the restart required substate:</br>
+              `UCClientUpdateStatus |where ClientSubstate =="RestartRequired"`
+          
+          - **UCUpdateAlert**: Use this table to understand update failures and act on devices through alert recommendations. This table contains information that needs attention, relative to one device, one update and one deployment (if relevant).  
+            - To display information about an error code: 
+              `UCUpdateAlert|where ErrorCode =="0X8024000b"`
+            - To display a count of devices with active alerts by subtype:
+              `UCUpdateAlert |where AlertStatus =="Active"|summarize Devices=count() by AlertSubtype`
+      - question: What is the difference between quality and security updates?
+        answer: |
+          Windows quality updates are monthly updates that are [released on the second or fourth Tuesday of the month](release-cycle.md). The cumulative updates released on the second Tuesday of the month can contain both security updates and nonsecurity updates. Cumulative updates released on the fourth Tuesday of the month are optional nonsecurity preview releases. Use the fields within the [UCClient table](wufb-reports-schema-ucclient.md) for additional information, such as:
+            
+            - **OSSecurityUpdateStatus**: Indicates the status of the monthly update that's released on the second Tuesday
+            - **OSQualityUpdateStatus**: Indicates the status of the monthly update that's released on the fourth Tuesday
+      - question: How do I confirm that devices are sending data?
+        answer: |
+          Once enrollment is done and devices are properly configured to share data, wait for 48 hours for data to start showing up in reports. It can take up to 14 days for all of your devices to show up in reports in some cases where devices aren't active much. You can check to see if the Log Analytics tables are being populated in your workspace. The data is ingested by the service daily to generate reports. If you notice a day is missing, it's possible that the reports service missed an ingestion. To confirm devices are sending data, [query](wufb-reports-use.md#display-windows-update-for-business-reports-data) the [UCClient table](wufb-reports-schema-ucclient.md). The following query shows total enrolled device count per time-generated: 
+
+          `UCClient | summarize count() by TimeGenerated`
+
+          :::image type="content" source="media/7760853-wufb-reports-time-generated.png" alt-text="Screenshot of using a Kusto (KQL) query for time generated on Windows Update for Business reports data in Log Analytics." lightbox="media/7760853-wufb-reports-time-generated.png":::
+      - question: Why isn't the workbook displaying data even though my UCClient table has data?
+        answer: |
+          If the [UCClient table](wufb-reports-schema-ucclient.md) has data, but the [workbook](wufb-reports-workbook.md) isn't displaying data, ensure that the user has correct permissions to read the data. The [Log Analytics Reader](/azure/role-based-access-control/built-in-roles#log-analytics-reader) role is needed to view the data in the workbooks. The [Log Analytics Contributor](/azure/role-based-access-control/built-in-roles#log-analytics-contributor) role is needed to do any edits to the queries and workbooks.
+  - name: Delivery Optimization data
+    questions:  
+      - question: What time period does the Delivery Optimization data include?
+        answer: |
+          Data is aggregated for the last 28 days for active devices.
+      - question: Data is showing as 'Unknown', what does that mean?
+        answer: |
+          You may see data in the report listed as 'Unknown'. This status indicates that the Delivery Optimization DownloadMode setting is either invalid or empty.
+      - question: How are the 'Top 10' groups identified?
+        answer: |
+          The top groups are represented by the number of devices in a particular group, for any of the four group types (GroupID, City, Country, and ISP).
+      - question: The GroupIDs don't look familiar, why are they different?
+        answer: |
+          The GroupID values are encoded for data protection requirements. For more information, see [Mapping GroupIDs](wufb-reports-do.md#mapping-groupid).
+      - question: How can I see data for device in the office vs. out of the office?
+        answer: |
+          Today, we don't have a distinction for data that was downloaded by location. 
+      - question: What does the data in UCDOStatus table represent?
+        answer: |
+          A row in UCDOStatus represents data downloaded by a combination of a single device ID (AzureADDeviceId) by content type (ContentType).
+      - question: What does the data in UCDOAggregatedStatus table represent?
+        answer: |
+          A row in UCDOAggregatedStatus represents data summarized at the tenant level (AzureADTenantID) for each content type (ContentType).
+      - question: How are BytesFromCache calculated when there's a Connected Cache server used by my ISP?
+        answer: |
+            If there's a Connected Cache server at the ISP level, BytesFromCache filters out any bytes coming the ISP's Connected Cache.
+      - question: How do the results from the Delivery Optimization PowerShell cmdlets compare to the results in the report?
+        answer: |
+            [Delivery Optimization PowerShell cmdlets](waas-delivery-optimization-setup.md#monitor-delivery-optimization) can be a powerful tool used to monitor Delivery Optimization data on the device. These cmdlets use the cache on the device. The data calculated in the report is taken from the Delivery Optimization events.
+      - question: The report represents the last 28 days of data, why do some queries include >= seven days?
+        answer: |
+            The data in the report does represent the last 28 days of data. The query for last seven days is just to get the data for the latest snapshot from past seven days. It's possible that data is delayed for sometime and not available for current day, so we look for past seven day snapshot in log analytics and show the latest snapshot.

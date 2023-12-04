@@ -1,11 +1,11 @@
 ---
-title: 4699(S) A scheduled task was deleted. (Windows 10)
+title: 4699(S) A scheduled task was deleted. 
 description: Describes security event 4699(S) A scheduled task was deleted. This event is generated every time a scheduled task is deleted.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

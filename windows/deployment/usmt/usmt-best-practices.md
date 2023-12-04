@@ -69,7 +69,7 @@ As the authorized administrator, it is your responsibility to protect the privac
 
 - **Maintain security of the file server and the deployment server**
 
-    We recommend that you manage the security of the file and deployment servers. It's important to make sure that the file server where you save the store is secure. You must also secure the deployment server, to ensure that the user data that is in the log files isn't exposed. We also recommend that you only transmit data over a secure Internet connection, such as a virtual private network. For more information about network security, see [Microsoft Security Compliance Manager](https://go.microsoft.com/fwlink/p/?LinkId=215657).
+    We recommend that you manage the security of the file and deployment servers. It's important to make sure that the file server where you save the store is secure. You must also secure the deployment server, to ensure that the user data that is in the log files isn't exposed. We also recommend that you only transmit data over a secure Internet connection, such as a virtual private network. For more information about network security, see [Microsoft Security Compliance Manager](https://www.microsoft.com/download/details.aspx?id=53353).
 
 - **Password Migration**
 

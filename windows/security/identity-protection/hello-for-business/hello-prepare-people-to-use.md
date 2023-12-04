@@ -1,8 +1,8 @@
 ---
-title: Prepare people to use Windows Hello (Windows)
+title: Prepare people to use Windows Hello 
 description: When you set a policy to require Windows Hello for Business in the workplace, you will want to prepare people in your organization.
 ms.date: 08/19/2018
-ms.topic: article
+ms.topic: end-user-help
 ---
 # Prepare people to use Windows Hello
 
@@ -10,7 +10,7 @@ When you set a policy to require Windows Hello for Business in the workplace, yo
 
 After enrollment in Hello, users should use their gesture (such as a PIN or fingerprint) for access to corporate resources. Their gesture is only valid on the enrolled device.
 
-Although the organization may require users to change their Active Directory or Azure Active Directory (AD) account password at regular intervals, changes to their passwords have no effect on Hello.
+Although the organization may require users to change their Active Directory or Microsoft Entra account password at regular intervals, changes to their passwords have no effect on Hello.
 
 People who are currently using virtual or physical smart cards for authentication can use their virtual smart card to verify their identity when they set up Hello.
 
@@ -52,4 +52,3 @@ If your policy allows it, people can use biometrics (fingerprint, iris, and faci
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
 - [Event ID 300 - Windows Hello successfully created](/windows/security/identity-protection/hello-for-business/hello-faq)
 - [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
-

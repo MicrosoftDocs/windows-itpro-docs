@@ -1,33 +1,36 @@
 ---
 title: Operator sign up and service onboarding
-manager: aaroncz
-description: Service onboarding for Microsoft Connected Cache for ISP
+description: Instructions on how to go through the service onboarding process for Microsoft Connected Cache for ISPs.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: how-to
+manager: aaroncz
 author: nidos
 ms.author: nidos
-ms.topic: article
-ms.date: 12/31/2017
-ms.technology: itpro-updates
+ms.reviewer: mstewart
 ms.collection: tier3
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>	
+ms.date: 07/07/2023
 ---
 
 # Operator sign up and service onboarding for Microsoft Connected Cache
 
-**Applies to**
-
-- Windows 10
-- Windows 11
-
 This article details the process of signing up for Microsoft Connected Cache for Internet Service Providers (public preview). 
 
  > [!NOTE]
- > Microsoft Connected Cache is now in public review. Instead of submitting a survey, you can directly onboard by following the instructions in this article.
+ > Microsoft Connected Cache is now in public preview. Instead of submitting a survey, you can directly onboard by following the instructions in this article.
 
 ## Prerequisites
 
 Before you begin sign up, ensure you have the following components:
 
 1. **Azure Pay-As-You-Go subscription**: Microsoft Connected Cache is a completely free-of-charge service hosted in Azure. You'll need to have a Pay-As-You-Go subscription in order to onboard to our service. To create a subscription, go to the [Pay-As-You-Go subscription page](https://azure.microsoft.com/offers/ms-azr-0003p/).
+
+   > [!NOTE]
+   > Microsoft Connected Cache is a completely free service for operators. None of the resources created in Azure will incur any charges. However, be aware that any additional services that might be selected as part of the Azure sign-up process might incur charges.
 
 1. **Access to Azure portal**: Ensure you have the credentials needed to access your organization's Azure portal.
 
@@ -69,7 +72,7 @@ Before you begin sign up, ensure you have the following components:
     :::image type="content" source="images/mcc-isp-operator-verification.png" alt-text="Screenshot of the sign up verification page on Azure portal for Microsoft Connected Cache." lightbox="./images/mcc-isp-operator-verification.png":::
 
     > [!NOTE]
-    > **Can't find the verification email in your inbox?** Check that the email under the NOC role is correct in [Peering DB](https://www.peeringdb.com/). Search for an email from the sender **microsoft-noreply@microsoft.com** with the email subject: "Here’s your Microsoft Connected Cache verification code" in your Spam folders. Still can't find it? Ensure that your email admin rules allow emails from the sender **microsoft-noreply@microsoft.com**.
+    > **Can't find the verification email in your inbox?** Check that the email under the NOC role is correct in [Peering DB](https://www.peeringdb.com/). Search for an email from the sender **microsoft-noreply@microsoft.com** with the email subject: "Here's your Microsoft Connected Cache verification code" in your Spam folders. Still can't find it? Ensure that your email admin rules allow emails from the sender **microsoft-noreply@microsoft.com**.
 
 1. Once verified, follow the instructions in [Create, provision, and deploy cache node](mcc-isp-create-provision-deploy.md) to create your cache node.
 

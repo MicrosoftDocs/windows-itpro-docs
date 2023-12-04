@@ -1,11 +1,11 @@
 ---
-title: 4767(S) A user account was unlocked. (Windows 10)
+title: 4767(S) A user account was unlocked. 
 description: Describes security event 4767(S) A user account was unlocked. This event is generated every time a user account is unlocked.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

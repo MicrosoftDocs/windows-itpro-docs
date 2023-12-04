@@ -1,18 +1,18 @@
 ---
-title: Basic security audit policies (Windows 10)
+title: Basic security audit policies
 description: Learn about basic security audit policies that specify the categories of security-related events that you want to audit for the needs of your organization.
 ms.assetid: 3B678568-7AD7-4734-9BB4-53CF5E04E1D3
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/06/2021
 ms.technology: itpro-security
 ---
@@ -34,15 +34,15 @@ The event categories that you can choose to audit are:
 -   Audit process tracking
 -   Audit system events
 
-If you choose to audit access to objects as part of your audit policy, you must enable either the audit directory service access category (for auditing objects on a domain controller), or the audit object access category (for auditing objects on a member server or workstation). Once you have enabled the object access category, you can specify the types of access you want to audit for each group or user.
+If you choose to audit access to objects as part of your audit policy, you must enable either the audit directory service access category, for auditing objects on a domain controller, or the audit object access category, for auditing objects on a member server or workstation. After you enable the object access category, you can specify the types of access you want to audit for each group or user.
 
 ## In this section
 
-| Topic | Description |
+| Article | Description |
 | - | - |
 | [Create a basic audit policy for an event category](create-a-basic-audit-policy-settings-for-an-event-category.md) | By defining auditing settings for specific event categories, you can create an auditing policy that suits the security needs of your organization. On devices that are joined to a domain, auditing settings for the event categories are undefined by default. On domain controllers, auditing is turned on by default. |
-| [Apply a basic audit policy on a file or folder](apply-a-basic-audit-policy-on-a-file-or-folder.md) | You can apply audit policies to individual files and folders on your computer by setting the permission type to record successful access attempts or failed access attempts in the security log. | 
-| [View the security event log](view-the-security-event-log.md) | The security log records each event as defined by the audit policies you set on each object.| 
+| [Apply a basic audit policy on a file or folder](apply-a-basic-audit-policy-on-a-file-or-folder.md) | You can apply audit policies to individual files and folders on your computer by setting the permission type to record successful or failed access attempts in the security log. |
+| [View the security event log](view-the-security-event-log.md) | The security log records each event as defined by the audit policies you set on each object.|
 | [Basic security audit policy settings](basic-security-audit-policy-settings.md) | Basic security audit policy settings are found under Computer Configuration\Windows Settings\Security Settings\Local Policies\Audit Policy.|
- 
- 
+
+

@@ -1,11 +1,11 @@
 ---
-title: 5035(F) The Windows Firewall Driver failed to start. (Windows 10)
+title: 5035(F) The Windows Firewall Driver failed to start. 
 description: Describes security event 5035(F) The Windows Firewall Driver failed to start.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

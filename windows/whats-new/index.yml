@@ -14,13 +14,13 @@ metadata:
     - tier1
   author: aczechowski
   ms.author: aaroncz
-  manager: dougeby
-  ms.date: 11/14/2022
+  manager: aaroncz
+  ms.date: 10/31/2023
   localization_priority: medium
 
 landingContent:
 
-  - title: Windows 11
+  - title: Windows 11 planning
     linkLists:
       - linkListType: overview
         links:
@@ -32,10 +32,21 @@ landingContent:
             url: windows-11-plan.md
           - text: Prepare for Windows 11
             url: windows-11-prepare.md
+          - text: Windows commercial licensing overview
+            url: windows-licensing.md
+
+  - title: Windows 11
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: What's new in Windows 11, version 23H2
+            url: whats-new-windows-11-version-23h2.md
+          - text: What's new in Windows 11, version 22H2
+            url: whats-new-windows-11-version-22h2.md
 
   - title: Windows 10
     linkLists:
-      - linkListType: overview
+      - linkListType: whats-new
         links:
           - text: What's new in Windows 10, version 22H2
             url: whats-new-windows-10-version-22h2.md
@@ -63,4 +74,4 @@ landingContent:
           - text: Compare Windows 11 Editions
             url: https://www.microsoft.com/windows/business/compare-windows-11
           - text: Windows 10 Enterprise LTSC
-            url: ltsc/index.md
+            url: ltsc/overview.md

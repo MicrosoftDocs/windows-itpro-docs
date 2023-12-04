@@ -4,7 +4,7 @@ description: Learn more about the NetworkIsolation Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- EnterpriseCloudResources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- EnterpriseCloudResources-Applicability-End -->
 
 <!-- EnterpriseCloudResources-OmaUri-Begin -->
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- EnterpriseCloudResources-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting does not apply to desktop apps.
+This setting doesn't apply to desktop apps.
 
 A pipe-separated list of domain cloud resources. Each cloud resource can also be paired optionally with an internal proxy server by using a trailing comma followed by the proxy address.
 
@@ -45,7 +45,7 @@ Contains a list of Enterprise resource domains hosted in the cloud. Connections 
 
 If a proxy is paired with a cloud resource, traffic to the cloud resource will be routed through the enterprise network via the denoted proxy server (on Port 80). A proxy server used for this purpose must also be configured using the Intranet proxy servers for apps policy.
 
-Example: [cloudresource]|[cloudresource]|[cloudresource],[proxy]|[cloudresource]|[cloudresource],[proxy]|
+Example: [cloudresource]|[cloudresource]|[cloudresource],[proxy]|[cloudresource]|[cloudresource],[proxy]|.
 
 For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 <!-- EnterpriseCloudResources-Description-End -->
@@ -59,7 +59,7 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- EnterpriseCloudResources-DFProperties-End -->
@@ -90,7 +90,7 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 <!-- EnterpriseInternalProxyServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- EnterpriseInternalProxyServers-Applicability-End -->
 
 <!-- EnterpriseInternalProxyServers-OmaUri-Begin -->
@@ -101,13 +101,13 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 
 <!-- EnterpriseInternalProxyServers-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting does not apply to desktop apps.
+This setting doesn't apply to desktop apps.
 
 A semicolon-separated list of intranet proxy server IP addresses. These addresses are categorized as private by Windows Network Isolation and are accessible to apps that have the Home/Work Networking capability.
 
 - If you enable this policy setting, it allows an administrator to configure a set of proxies that provide access to intranet resources.
 
-- If you disable or do not configure this policy setting, Windows Network Isolation attempts to discover proxies and configures them as Internet nodes.
+- If you disable or don't configure this policy setting, Windows Network Isolation attempts to discover proxies and configures them as Internet nodes.
 
 This setting should NOT be used to configure Internet proxies.
 
@@ -125,7 +125,7 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `,`) |
 <!-- EnterpriseInternalProxyServers-DFProperties-End -->
@@ -156,7 +156,7 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 <!-- EnterpriseIPRange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- EnterpriseIPRange-Applicability-End -->
 
 <!-- EnterpriseIPRange-OmaUri-Begin -->
@@ -167,7 +167,7 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 
 <!-- EnterpriseIPRange-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting does not apply to desktop apps.
+This setting doesn't apply to desktop apps.
 
 A comma-separated list of IP address ranges that are in your corporate network.
 
@@ -177,7 +177,7 @@ Windows Network Isolation attempts to automatically discover private network hos
 
 To ensure that these addresses are the only addresses ever classified as private, enable the "Subnet definitions are authoritative" policy setting.
 
-- If you disable or do not configure this policy setting, Windows Network Isolation attempts to automatically discover your private network hosts.
+- If you disable or don't configure this policy setting, Windows Network Isolation attempts to automatically discover your private network hosts.
 
 Example: 3efe:1092::/96,18.1.1.1/10
 
@@ -193,7 +193,7 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `,`) |
 <!-- EnterpriseIPRange-DFProperties-End -->
@@ -234,7 +234,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <!-- EnterpriseIPRangesAreAuthoritative-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- EnterpriseIPRangesAreAuthoritative-Applicability-End -->
 
 <!-- EnterpriseIPRangesAreAuthoritative-OmaUri-Begin -->
@@ -245,13 +245,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <!-- EnterpriseIPRangesAreAuthoritative-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting does not apply to desktop apps.
+This setting doesn't apply to desktop apps.
 
 Turns off Windows Network Isolation's automatic discovery of private network hosts in the domain corporate environment.
 
 - If you enable this policy setting, it turns off Windows Network Isolation's automatic discovery of private network hosts in the domain corporate environment. Only network hosts within the address ranges configured via Group Policy will be classified as private.
 
-- If you disable or do not configure this policy setting, Windows Network Isolation attempts to automatically discover your private network hosts in the domain corporate environment.
+- If you disable or don't configure this policy setting, Windows Network Isolation attempts to automatically discover your private network hosts in the domain corporate environment.
 
 For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 <!-- EnterpriseIPRangesAreAuthoritative-Description-End -->
@@ -265,7 +265,7 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnterpriseIPRangesAreAuthoritative-DFProperties-End -->
@@ -305,7 +305,7 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 <!-- EnterpriseNetworkDomainNames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- EnterpriseNetworkDomainNames-Applicability-End -->
 
 <!-- EnterpriseNetworkDomainNames-OmaUri-Begin -->
@@ -316,7 +316,7 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 
 <!-- EnterpriseNetworkDomainNames-Description-Begin -->
 <!-- Description-Source-DDF -->
-This is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to. This is a comma-separated list of domains, for example contoso. sharepoint. com, Fabrikam. com.
+This is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that's sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to. This is a comma-separated list of domains, for example contoso. sharepoint. com, Fabrikam. com.
 
 > [!NOTE]
 > The client requires domain name to be canonical, otherwise the setting will be rejected by the client. Here are the steps to create canonical domain names:Transform the ASCII characters (A-Z only) to lower case. For example, Microsoft. COM -> microsoft. com. Call IdnToAscii with IDN_USE_STD3_ASCII_RULES as the flags. Call IdnToUnicode with no flags set (dwFlags = 0).
@@ -336,7 +336,7 @@ For more information, see the following APIs:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `,`) |
 <!-- EnterpriseNetworkDomainNames-DFProperties-End -->
@@ -353,7 +353,7 @@ For more information, see the following APIs:
 <!-- EnterpriseProxyServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- EnterpriseProxyServers-Applicability-End -->
 
 <!-- EnterpriseProxyServers-OmaUri-Begin -->
@@ -364,13 +364,13 @@ For more information, see the following APIs:
 
 <!-- EnterpriseProxyServers-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting does not apply to desktop apps.
+This setting doesn't apply to desktop apps.
 
 A semicolon-separated list of Internet proxy server IP addresses. These addresses are categorized as Internet by Windows Network Isolation and are accessible to apps that have the Internet Client or Internet Client/Server capabilities.
 
 - If you enable this policy setting, apps on proxied networks can access the Internet without relying on the Private Network capability. However, in most situations Windows Network Isolation will be able to correctly discover proxies. By default, any proxies configured with this setting are merged with proxies that are auto-discovered. To make this policy configuration the sole list of allowed proxies, enable the "Proxy definitions are authoritative" setting.
 
-- If you disable or do not configure this policy setting, apps will use the Internet proxies auto-discovered by Windows Network Isolation.
+- If you disable or don't configure this policy setting, apps will use the Internet proxies auto-discovered by Windows Network Isolation.
 
 Example: [3efe:3022::1000];18.0.0.1;18.0.0.2
 
@@ -386,7 +386,7 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `,`) |
 <!-- EnterpriseProxyServers-DFProperties-End -->
@@ -417,7 +417,7 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 <!-- EnterpriseProxyServersAreAuthoritative-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- EnterpriseProxyServersAreAuthoritative-Applicability-End -->
 
 <!-- EnterpriseProxyServersAreAuthoritative-OmaUri-Begin -->
@@ -428,13 +428,13 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 
 <!-- EnterpriseProxyServersAreAuthoritative-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting does not apply to desktop apps.
+This setting doesn't apply to desktop apps.
 
 Turns off Windows Network Isolation's automatic proxy discovery in the domain corporate environment.
 
 - If you enable this policy setting, it turns off Windows Network Isolation's automatic proxy discovery in the domain corporate environment. Only proxies configured with Group Policy are authoritative. This applies to both Internet and intranet proxies.
 
-- If you disable or do not configure this policy setting, Windows Network Isolation attempts to automatically discover your proxy server addresses.
+- If you disable or don't configure this policy setting, Windows Network Isolation attempts to automatically discover your proxy server addresses.
 
 For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 <!-- EnterpriseProxyServersAreAuthoritative-Description-End -->
@@ -448,7 +448,7 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnterpriseProxyServersAreAuthoritative-DFProperties-End -->
@@ -488,7 +488,7 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 <!-- NeutralResources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- NeutralResources-Applicability-End -->
 
 <!-- NeutralResources-OmaUri-Begin -->
@@ -499,7 +499,7 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 
 <!-- NeutralResources-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting does not apply to desktop apps.
+This setting doesn't apply to desktop apps.
 
 A comma-separated list of domain names that can be used as both work or personal resource.
 
@@ -515,7 +515,7 @@ For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `,`) |
 <!-- NeutralResources-DFProperties-End -->

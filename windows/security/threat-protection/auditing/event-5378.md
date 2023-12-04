@@ -1,11 +1,11 @@
 ---
-title: 5378(F) The requested credentials delegation was disallowed by policy. (Windows 10)
+title: 5378(F) The requested credentials delegation was disallowed by policy. 
 description: Describes security event 5378(F) The requested credentials delegation was disallowed by policy.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

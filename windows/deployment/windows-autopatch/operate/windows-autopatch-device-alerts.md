@@ -1,7 +1,7 @@
 ---
 title: Device alerts
 description: Provide notifications and information about the necessary steps to keep your devices up to date. 
-ms.date: 05/01/2023
+ms.date: 08/01/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -10,16 +10,16 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: adnich
+ms.collection:
+  - highpri
+  - tier1
 ---
 
-# Device alerts (public preview)
+# Device alerts
 
-> [!IMPORTANT]
-> Windows Autopatch groups is in **public preview**. This feature is being actively developed and might not be complete. You can test and use these features in production environments and provide feedback.<p>The Windows Autopatch group experience only applies if you’ve opted-in to use Windows Autopatch groups.</p><br>**To opt-in to use Windows Autopatch groups:**<ol><li>Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and select **Devices** from the left navigation menu.</li><li>Under **Windows Autopatch**, select **Release Management**, then select **Autopatch groups (preview)**.</li><li>Review the **[Microsoft Privacy Statement](../overview/windows-autopatch-privacy.md)** and the **[Autopatch groups Public Preview Addendum](../references/windows-autopatch-groups-public-preview-addendum.md)**. If you agree, select the **I have reviewed and agree to the Autopatch groups Public Preview Addendum** checkbox. Then, select **Use preview** to test out Windows Autopatch groups and its bundled feature set. If the **Use preview** option is greyed out, ensure you meet all the [Autopatch group prerequisites](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#autopatch-groups-prerequisites).</li></ol>
+Windows Autopatch and Windows Updates use Device alerts to provide notifications and information about the necessary steps to keep your devices up to date. In Windows Autopatch reporting, every device is provided with a section for alerts. If no alerts are listed, no action is needed. Navigate to **Reports** > **Quality update status** or **Feature update status** > **Device** > select the **Device alerts** column. The provided information helps you understand:
 
-Windows Autopatch and Windows Updates use Device alerts to provide notifications and information about the necessary steps to keep your devices up to date. In Windows Autopatch reporting, every device is provided with a section for alerts. If no alerts are listed, no action is needed. Navigate to **Reports** > **Quality update status** or **Feature update status** > **Device** > select the **Device alerts** column. The provided information will help you understand:
-
-- The action(s) that have either been performed by Microsoft and/or Windows Autopatch to keep the device properly updated.
+- Microsoft and/or Windows Autopatch performs the action(s) to keep the device properly updated.
 - The actions you must perform so the device can properly be updated.
 
 > [!NOTE]
@@ -42,19 +42,19 @@ Windows Autopatch assigns alerts to either Microsoft Action or Customer Action. 
 
 | Assignment | Description |
 | ----- | ----- |
-| Microsoft Action | Refers to the responsibility of the Windows Autopatch service to remediate. The actions are performed by Windows Autopatch automatically. |
+| Microsoft Action | Refers to the responsibility of the Windows Autopatch service to remediate. Windows Autopatch performs these actions automatically. |
 | Customer Action | Refers to your responsibility to carry out the appropriate action(s) to resolve the reported alert. |
 
 ## Alert resolutions
 
-Alert resolutions are provided through the Windows Update service and provide the reason why an update didn’t perform as expected. The recommended actions are general recommendations and if additional assistance is needed, [submit a support request](../operate/windows-autopatch-support-request.md)
+Alert resolutions are provided through the Windows Update service and provide the reason why an update didn’t perform as expected. The recommended actions are general recommendations and if additional assistance is needed, [submit a support request](../operate/windows-autopatch-support-request.md).
 
 | Alert message | Description | Windows Autopatch recommendation(s) |
 | ----- | ----- | ----- |
 | `CancelledByUser` | User canceled the update | The Windows Update service has reported the update was canceled by the user.<p>It's recommended to work with the end user to allow updates to execute as scheduled.</p> |
 | `DamagedMedia` | The update file or hard drive is damaged | The Windows Update service has indicated the update payload might be damaged or corrupt. <p>It's recommended to run `Chkdsk /F` on the device with administrator privileges, then retry the update. For more information, see [chkdsk](/windows-server/administration/windows-commands/chkdsk?tabs=event-viewer).</p> |
 | `DeploymentConflict` | Device is in more than one deployment of the same update type. Only the first deployment assigned is effective. | The Windows Update service has reported a policy conflict.<p>For more information, see the [Windows Autopatch Policy Health dashboard](../operate/windows-autopatch-policy-health-and-remediation.md).</p><p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
-| `DeviceRegistrationInvalidAzureADDeviceId` | The device isn't able to register or authenticate properly with Windows Update because of an invalid Azure AD Device ID. | The Windows Update service has reported a device registration issue.<p>For more information, see [Windows Autopatch post-device registration readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md).</p><p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
+| `DeviceRegistrationInvalidAzureADDeviceId` | The device isn't able to register or authenticate properly with Windows Update because of an invalid Microsoft Entra Device ID. | The Windows Update service has reported a device registration issue.<p>For more information, see [Windows Autopatch post-device registration readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md).</p><p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
 | `DeviceRegistrationInvalidGlobalDeviceId` | The device isn't able to register or authenticate properly with Windows Update because of an invalid Global Device ID. |The Windows Update service has reported that the MSA Service may be disabled preventing Global Device ID assignment.<p>Check that the MSA Service is running or able to run on device.</p><p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
 | `DeviceRegistrationIssue` | The device isn't able to register or authenticate properly with Windows Update. | The Windows Update service has reported a device registration issue.<p>For more information, see [Windows Autopatch post-device registration readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md).</p><p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
 | `DeviceRegistrationNoTrustType` | The device isn't able to register or authenticate properly with Windows Update because it can't establish Trust. | The Windows Update service has reported a device registration issue.<p>For more information, see [Windows Autopatch post-device registration readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md).</p><p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
@@ -79,6 +79,7 @@ Alert resolutions are provided through the Windows Update service and provide th
 | `InstallIssueRedirection` | A known folder that doesn't support redirection to another drive might have been redirected to another drive. | The Windows Update service has reported that the Windows Update file location may be redirected to an invalid location. Check your Windows Installation, and retry the update.<p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
 | `InstallMissingInfo` | Windows Update doesn't have the information it needs about the update to finish the installation. | The Windows Update service has reported that another update may have replaced the one you're trying to install. Check the update, and then try reinstalling it. |
 | `InstallOutOfMemory` | The installation couldn't be completed because Windows ran out of memory. | The Windows Update service has reported the system doesn't have sufficient system memory to perform the update.<p>Restart Windows, then try the installation again.</p><p>If it still fails, allocate more memory to the device, or increase the size of the virtual memory pagefile(s). For more information, see [How to determine the appropriate page file size for 64-bit versions of Windows](/troubleshoot/windows-client/performance/how-to-determine-the-appropriate-page-file-size-for-64-bit-versions-of-windows).</p> |
+| `InstallSetupBlock` | There's an application or driver blocking the upgrade. | The Windows Update service has detected that an application or driver is hindering the upgrade process. Utilize the SetupDiag utility to identify and diagnose any compatibility problems.<p>For more information, see [SetupDiag - Windows Deployment](/windows/deployment/upgrade/setupdiag).</p> |
 | `InstallSetupError` | Windows Setup encountered an error while installing. | The Windows Update service has reported an error during installation.Review the last reported HEX error code in [Quality update status report](../operate/windows-autopatch-groups-windows-quality-update-status-report.md) to further investigate.<p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
 | `PolicyConflict` | There are client policies (MDM, GP) that conflict with Windows Update settings. | The Windows Update service has reported a policy conflict. Review  the [Windows Autopatch Policy Health dashboard](../operate/windows-autopatch-policy-health-and-remediation.md).<p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
 | `PolicyConflictDeferral` | The Deferral Policy configured on the device is preventing the update from installing. | The Windows Update service has reported a policy conflict. Review  the [Windows Autopatch Policy Health dashboard](../operate/windows-autopatch-policy-health-and-remediation.md).<p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |

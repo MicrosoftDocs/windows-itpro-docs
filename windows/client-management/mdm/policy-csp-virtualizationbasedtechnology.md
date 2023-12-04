@@ -4,7 +4,7 @@ description: Learn more about the VirtualizationBasedTechnology Area in Policy C
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- HypervisorEnforcedCodeIntegrity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- HypervisorEnforcedCodeIntegrity-Applicability-End -->
 
 <!-- HypervisorEnforcedCodeIntegrity-OmaUri-Begin -->
@@ -49,7 +49,7 @@ Hypervisor-Protected Code Integrity: 0 - Turns off Hypervisor-Protected Code Int
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HypervisorEnforcedCodeIntegrity-DFProperties-End -->
@@ -90,7 +90,7 @@ Hypervisor-Protected Code Integrity: 0 - Turns off Hypervisor-Protected Code Int
 <!-- RequireUEFIMemoryAttributesTable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RequireUEFIMemoryAttributesTable-Applicability-End -->
 
 <!-- RequireUEFIMemoryAttributesTable-OmaUri-Begin -->
@@ -113,7 +113,7 @@ Require UEFI Memory Attributes Table.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- RequireUEFIMemoryAttributesTable-DFProperties-End -->
@@ -123,7 +123,7 @@ Require UEFI Memory Attributes Table.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not require UEFI Memory Attributes Table. |
+| 0 (Default) | Don't require UEFI Memory Attributes Table. |
 | 1 | Require UEFI Memory Attributes Table. |
 <!-- RequireUEFIMemoryAttributesTable-AllowedValues-End -->
 

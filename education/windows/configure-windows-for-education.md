@@ -29,7 +29,7 @@ It's easy to be education ready when using Microsoft products. We recommend the 
 
 1. Use an Office 365 Education tenant. 
 
-    With Office 365, you also have Azure Active Directory (Azure AD). To learn more about Office 365 Education features and pricing, see [Office 365 Education plans and pricing](https://products.office.com/en-us/academic/compare-office-365-education-plans).
+    With Office 365, you also have Microsoft Entra ID. To learn more about Office 365 Education features and pricing, see [Office 365 Education plans and pricing](https://products.office.com/en-us/academic/compare-office-365-education-plans).
 
 2. Activate Intune for Education in your tenant.
 
@@ -39,11 +39,11 @@ It's easy to be education ready when using Microsoft products. We recommend the 
    1. Provision the PC using one of these methods:
       * [Provision PCs with the Set up School PCs app](use-set-up-school-pcs-app.md) - The usage of this method will automatically set both **SetEduPolicies** to True and **AllowCortana** to False.
       * [Provision PCs with a custom package created with Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-create-package) - Make sure to set both **SetEduPolicies** to True and **AllowCortana** to False.
-   2. Join the PC to Azure Active Directory.
-      * Use Set up School PCs or Windows Configuration Designer to bulk enroll to Azure AD.
-      * Manually Azure AD join the PC during the Windows device setup experience.
+   2. Join the PC to Microsoft Entra ID.
+      * Use Set up School PCs or Windows Configuration Designer to bulk enroll to Microsoft Entra ID.
+      * Manually Microsoft Entra join the PC during the Windows device setup experience.
    3. Enroll the PCs in MDM.
-      * If you've activated Intune for Education in your Azure AD tenant, enrollment will happen automatically when the PC is joined to Azure AD. Intune for Education will automatically set **SetEduPolicies** to True and **AllowCortana** to False.
+      * If you've activated Intune for Education in your Microsoft Entra tenant, enrollment will happen automatically when the PC is joined to Microsoft Entra ID. Intune for Education will automatically set **SetEduPolicies** to True and **AllowCortana** to False.
    4. Ensure that needed assistive technology apps can be used.
       * If you've students or school personnel who rely on assistive technology apps that aren't available in the Microsoft Store, and who are using a Windows 10 S device, configure their device to Windows 10 Pro Education to allow the download and use of non-Microsoft Store assistive technology apps. See [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) for more info.
 
@@ -136,13 +136,15 @@ Provide an ad-free experience that is a safer, more private search option for Kâ
 
 ### Configurations
 
-#### Azure AD and Office 365 Education tenant
+<a name='azure-ad-and-office-365-education-tenant'></a>
+
+#### Microsoft Entra ID and Office 365 Education tenant
 To suppress ads when searching with Bing on Microsoft Edge on any network, follow these steps:
 
-1. Ensure your Office 365 tenant is registered as an education tenant. For more information, see [Verify your Office 365 domain to prove education status](https://support.office.com/article/Verify-your-Office-365-domain-to-prove-ownership-nonprofit-or-education-status-or-to-activate-Yammer-87d1844e-aa47-4dc0-a61b-1b773fd4e590).
-2. Domain join the Windows 10 PCs to your Azure AD tenant (this tenant is the same as your Office 365 tenant).
+1. Ensure your Office 365 tenant is registered as an education tenant. For more information, see [Verify your Office 365 domain to prove education status](https://support.office.com/article/Verify-your-Office-365-domain-to-prove-ownership-nonprofit-or-education-status-or-to-activate-viva-engage-87d1844e-aa47-4dc0-a61b-1b773fd4e590).
+2. Domain join the Windows 10 PCs to your Microsoft Entra tenant (this tenant is the same as your Office 365 tenant).
 3. Configure **SetEduPolicies** according to one of the methods described in the previous sections in this topic.
-4. Have students sign in with their Azure AD identity, which is the same as your Office 365 identity, to use the PC.
+4. Have students sign in with their Microsoft Entra identity, which is the same as your Office 365 identity, to use the PC.
 > [!NOTE]
 > If you are verifying your Office 365 domain to prove education status (step 1 above), you may need to wait up to 7 days for the ad-free experience to take effect. Microsoft recommends not to roll out the browser to your students until that time.
 

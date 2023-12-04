@@ -4,7 +4,7 @@ description: Learn more about the Bluetooth Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowAdvertising-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowAdvertising-Applicability-End -->
 
 <!-- AllowAdvertising-OmaUri-Begin -->
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- AllowAdvertising-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether the device can send out Bluetooth advertisements. If this is not set or it is deleted, the default value of 1 (Allow) is used. Most restricted value is 0.
+Specifies whether the device can send out Bluetooth advertisements. If this isn't set or it's deleted, the default value of 1 (Allow) is used. Most restricted value is 0.
 <!-- AllowAdvertising-Description-End -->
 
 <!-- AllowAdvertising-Editable-Begin -->
@@ -49,7 +49,7 @@ Specifies whether the device can send out Bluetooth advertisements. If this is n
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowAdvertising-DFProperties-End -->
@@ -59,7 +59,7 @@ Specifies whether the device can send out Bluetooth advertisements. If this is n
 
 | Value | Description |
 |:--|:--|
-| 0 | Not allowed. When set to 0, the device will not send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement is not received by the peripheral. |
+| 0 | Not allowed. When set to 0, the device won't send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement isn't received by the peripheral. |
 | 1 (Default) | Allowed. When set to 1, the device will send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement is received by the peripheral. |
 <!-- AllowAdvertising-AllowedValues-End -->
 
@@ -75,7 +75,7 @@ Specifies whether the device can send out Bluetooth advertisements. If this is n
 <!-- AllowDiscoverableMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDiscoverableMode-Applicability-End -->
 
 <!-- AllowDiscoverableMode-OmaUri-Begin -->
@@ -86,7 +86,7 @@ Specifies whether the device can send out Bluetooth advertisements. If this is n
 
 <!-- AllowDiscoverableMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether other Bluetooth-enabled devices can discover the device. If this is not set or it is deleted, the default value of 1 (Allow) is used. Most restricted value is 0.
+Specifies whether other Bluetooth-enabled devices can discover the device. If this isn't set or it's deleted, the default value of 1 (Allow) is used. Most restricted value is 0.
 <!-- AllowDiscoverableMode-Description-End -->
 
 <!-- AllowDiscoverableMode-Editable-Begin -->
@@ -98,7 +98,7 @@ Specifies whether other Bluetooth-enabled devices can discover the device. If th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowDiscoverableMode-DFProperties-End -->
@@ -108,7 +108,7 @@ Specifies whether other Bluetooth-enabled devices can discover the device. If th
 
 | Value | Description |
 |:--|:--|
-| 0 | Not allowed. When set to 0, other devices will not be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that you cannot see the name of the device. |
+| 0 | Not allowed. When set to 0, other devices won't be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that you can't see the name of the device. |
 | 1 (Default) | Allowed. When set to 1, other devices will be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel and verify that you can discover it. |
 <!-- AllowDiscoverableMode-AllowedValues-End -->
 
@@ -124,7 +124,7 @@ Specifies whether other Bluetooth-enabled devices can discover the device. If th
 <!-- AllowPrepairing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowPrepairing-Applicability-End -->
 
 <!-- AllowPrepairing-OmaUri-Begin -->
@@ -147,7 +147,7 @@ Specifies whether to allow specific bundled Bluetooth peripherals to automatical
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowPrepairing-DFProperties-End -->
@@ -173,7 +173,7 @@ Specifies whether to allow specific bundled Bluetooth peripherals to automatical
 <!-- AllowPromptedProximalConnections-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowPromptedProximalConnections-Applicability-End -->
 
 <!-- AllowPromptedProximalConnections-OmaUri-Begin -->
@@ -196,7 +196,7 @@ This policy allows the IT admin to block users on these managed devices from usi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowPromptedProximalConnections-DFProperties-End -->
@@ -222,7 +222,7 @@ This policy allows the IT admin to block users on these managed devices from usi
 <!-- LocalDeviceName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- LocalDeviceName-Applicability-End -->
 
 <!-- LocalDeviceName-OmaUri-Begin -->
@@ -233,7 +233,7 @@ This policy allows the IT admin to block users on these managed devices from usi
 
 <!-- LocalDeviceName-Description-Begin -->
 <!-- Description-Source-DDF -->
-Sets the local Bluetooth device name. If this is set, the value that it is set to will be used as the Bluetooth device name. To verify the policy is set, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that the value that was specified. If this policy is not set or it is deleted, the default local radio name is used.
+Sets the local Bluetooth device name. If this is set, the value that it's set to will be used as the Bluetooth device name. To verify the policy is set, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that the value that was specified. If this policy isn't set or it's deleted, the default local radio name is used.
 <!-- LocalDeviceName-Description-End -->
 
 <!-- LocalDeviceName-Editable-Begin -->
@@ -245,7 +245,7 @@ Sets the local Bluetooth device name. If this is set, the value that it is set t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocalDeviceName-DFProperties-End -->
 
@@ -261,7 +261,7 @@ Sets the local Bluetooth device name. If this is set, the value that it is set t
 <!-- ServicesAllowedList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ServicesAllowedList-Applicability-End -->
 
 <!-- ServicesAllowedList-OmaUri-Begin -->
@@ -284,7 +284,7 @@ Set a list of allowable services and profiles. String hex formatted array of Blu
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- ServicesAllowedList-DFProperties-End -->
@@ -301,7 +301,7 @@ Set a list of allowable services and profiles. String hex formatted array of Blu
 <!-- SetMinimumEncryptionKeySize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- SetMinimumEncryptionKeySize-Applicability-End -->
 
 <!-- SetMinimumEncryptionKeySize-OmaUri-Begin -->
@@ -324,7 +324,7 @@ There are multiple levels of encryption strength when pairing Bluetooth devices.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-16]` |
 | Default Value  | 0 |

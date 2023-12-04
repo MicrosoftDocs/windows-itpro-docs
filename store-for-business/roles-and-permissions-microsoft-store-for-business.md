@@ -1,6 +1,6 @@
 ---
 title: Roles and permissions in Microsoft Store for Business and Education (Windows 10)
-description: The first person to sign in to Microsoft Store for Business or Microsoft Store for Education must be a Global Admin of the Azure Active Directory (AD) tenant. Once the Global Admin has signed in, they can give permissions to others employees.
+description: The first person to sign in to Microsoft Store for Business or Microsoft Store for Education must be a Global Admin of the Microsoft Entra tenant. Once the Global Admin has signed in, they can give permissions to others employees.
 keywords: roles, permissions
 ms.assetid: CB6281E1-37B1-4B8B-991D-BC5ED361F1EE
 ms.reviewer: 
@@ -12,24 +12,26 @@ author: cmcatee-MSFT
 manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 07/21/2021
+ms.date: 05/24/2023
 ---
 
 # Roles and permissions in Microsoft Store for Business and Education
 
-**Applies to**
+**Applies to:**
 
 - Windows 10
 
 > [!IMPORTANT]
-> The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+>
+> - The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+> - In April 2023 the Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. An interaction with existing MDM and GPO policies may lead to customers seeing errors when accessing the Microsoft Store app. For more information see [Microsoft Store for Business tab removed](manage-access-to-private-store.md#microsoft-store-for-business-tab-removed).
 
-> [!IMPORTANT]
-> Starting on April 14th, 2021, only free apps will be available in Microsoft Store for Business and Education. For more information, see [Microsoft Store for Business and Education](index.md).
+> [!NOTE]
+> As of April 14th, 2021, only free apps are available in Microsoft Store for Business and Education. For more information, see [Microsoft Store for Business and Education](index.md).
 
-The first person to sign in to Microsoft Store for Business or Microsoft Store for Education must be a Global Admin of the Azure Active Directory (AD) tenant. Once the Global Admin has signed in, they can give permissions to others employees.
+The first person to sign in to Microsoft Store for Business or Microsoft Store for Education must be a Global Admin of the Microsoft Entra tenant. Once the Global Admin has signed in, they can give permissions to others employees.
 
-Microsoft Store for Business and Education has a set of roles that help admins and employees manage access to apps and tasks for Microsoft Store. Employees with these roles will need to use their Azure AD account to access the Store. Global Administrators and global user accounts that are used with other Microsoft services, such as Azure, or Office 365 can sign in to Microsoft Store. Global user accounts have some permissions in Microsoft Store, and Microsoft Store has a set of roles that help IT admins and employees manage access to apps and tasks for Microsoft Store.
+Microsoft Store for Business and Education has a set of roles that help admins and employees manage access to apps and tasks for Microsoft Store. Employees with these roles will need to use their Microsoft Entra account to access the Store. Global Administrators and global user accounts that are used with other Microsoft services, such as Azure, or Office 365 can sign in to Microsoft Store. Global user accounts have some permissions in Microsoft Store, and Microsoft Store has a set of roles that help IT admins and employees manage access to apps and tasks for Microsoft Store.
 
 ## Global user account permissions in Microsoft Store
 
@@ -47,7 +49,7 @@ This table lists the global user accounts and the permissions they have in Micro
 
 ## Microsoft Store roles and permissions
 
-Microsoft Store for Business has a set of roles that help IT admins and employees manage access to apps and tasks for Microsoft Store. Employees with these roles will need to use their Azure AD account to access Microsoft Store.
+Microsoft Store for Business has a set of roles that help IT admins and employees manage access to apps and tasks for Microsoft Store. Employees with these roles will need to use their Microsoft Entra account to access Microsoft Store.
 
 This table lists the roles and their permissions.
 
@@ -98,4 +100,4 @@ These permissions allow people to:
 
     <!--- ![Image showing Assign roles to people box in Microsoft Store for Business.](images/wsfb-permissions-assignrole.png) -->
 
-4. If you don't find the name you want, you might need to add people to your Azure AD directory. For more information, see [Manage user accounts in Microsoft Store for Business and Education](manage-users-and-groups-microsoft-store-for-business.md).
+4. If you don't find the name you want, you might need to add people to your Microsoft Entra directory. For more information, see [Manage user accounts in Microsoft Store for Business and Education](manage-users-and-groups-microsoft-store-for-business.md).

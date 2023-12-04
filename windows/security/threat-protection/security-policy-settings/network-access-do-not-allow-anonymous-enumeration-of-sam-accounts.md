@@ -1,8 +1,8 @@
 ---
-title: Network access Do not allow anonymous enumeration of SAM accounts (Windows 10)
+title: Network access Do not allow anonymous enumeration of SAM accounts
 description: Describes the best practices, location, values, and security considerations for the Network access Do not allow anonymous enumeration of SAM accounts security policy setting.
 ms.assetid: 6ee25b33-ad43-4097-b031-7be680f64c7c
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -53,13 +53,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
 | Stand-Alone Server Default Settings | Enabled|
-| DC Effective Default Settings | Enabled| 
-| Member Server Effective Default Settings| Enabled| 
-| Client Computer Effective Default Settings | Enabled| 
- 
+| DC Effective Default Settings | Enabled|
+| Member Server Effective Default Settings| Enabled|
+| Client Computer Effective Default Settings | Enabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

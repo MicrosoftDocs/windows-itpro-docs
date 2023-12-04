@@ -1,8 +1,8 @@
 ---
-title: Manage auditing and security log (Windows 10)
+title: Manage auditing and security log
 description: Describes the best practices, location, values, policy management, and security considerations for the Manage auditing and security log security policy setting.
 ms.assetid: 4b946c0d-f904-43db-b2d5-7f0917575347
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -53,13 +53,13 @@ The following table lists the actual and effective default policy values for the
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Administrators| 
-| Stand-Alone Server Default Settings | Administrators| 
-| Domain Controller Effective Default Settings | Administrators| 
-| Member Server Effective Default Settings | Administrators| 
-| Client Computer Effective Default Settings| Administrators| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Administrators|
+| Stand-Alone Server Default Settings | Administrators|
+| Domain Controller Effective Default Settings | Administrators|
+| Member Server Effective Default Settings | Administrators|
+| Client Computer Effective Default Settings| Administrators|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.
@@ -100,7 +100,7 @@ Ensure that only the local Administrators group has the **Manage auditing and se
 Restricting the **Manage auditing and security log** user right to the local Administrators group is the default configuration.
 
 >**Warning:**  If groups other than the local Administrators group have been assigned this user right, removing this user right might cause performance issues with other applications. Before removing this right from a group, investigate whether applications are dependent on this right.
- 
+
 ## Related topics
 
 - [User Rights Assignment](user-rights-assignment.md)

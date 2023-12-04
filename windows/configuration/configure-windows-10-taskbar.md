@@ -1,18 +1,10 @@
 ---
 title: Configure Windows 10 taskbar
 description: Administrators can pin more apps to the taskbar and remove default pinned apps from the taskbar by adding a section to a layout modification XML file.
-ms.prod: windows-client
 author: lizgt2000
 ms.author: lizlong
-ms.topic: article
-ms.localizationpriority: medium
-ms.date: 01/18/2018
-ms.reviewer: 
-manager: aaroncz
-ms.collection:
- - highpri
- - tier2
-ms.technology: itpro-configure
+ms.topic: how-to
+ms.date: 08/18/2023
 ---
 
 # Configure Windows 10 taskbar
@@ -26,7 +18,7 @@ You can specify different taskbar configurations based on device locale and regi
 
 If you specify an app to be pinned that isn't provisioned for the user on the computer, the pinned icon won't appear on the taskbar.
 
-The order of apps in the XML file dictates the order of pinned apps on the taskbar from left to right, to the right of any existing apps pinned by the user.
+The order of apps in the XML file dictates the order of pinned apps on the taskbar from left to right, starting to the right of any existing apps pinned by the user.
 
 > [!NOTE]
 > In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
@@ -321,11 +313,18 @@ The resulting taskbar for computers in any other country region:
 
 ## Related topics
 
-- [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
-- [Customize and export Start layout](customize-and-export-start-layout.md)
-- [Add image for secondary tiles](start-secondary-tiles.md)
-- [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
-- [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-- [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-- [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
-- [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
+[Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
+
+[Customize and export Start layout](customize-and-export-start-layout.md)
+
+[Add image for secondary tiles](start-secondary-tiles.md)
+
+[Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
+
+[Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+
+[Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
+
+[Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+
+[Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)

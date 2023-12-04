@@ -1,7 +1,7 @@
 ---
 title: Reset and wipe Windows devices
 description: Learn about the reset and wipe options for Windows devices using Intune for Education, including scenarios when to delete devices.
-ms.date: 08/31/2022
+ms.date: 11/09/2023
 ms.topic: tutorial
 ---
 
@@ -86,7 +86,7 @@ There are scenarios that require a device to be deleted from your tenant, for ex
 
 1. If possible, perform a **factory reset (wipe)** of the device. If the device can't be wiped, delete the device from Intune using [these steps][MEM-1]
 1. If the device is registered in Autopilot, delete the Autopilot object using [these steps][MEM-2]
-1. Delete the device from Azure Active Directory using [these steps][MEM-3]
+1. Delete the device from Microsoft Entra ID using [these steps][MEM-3]
 
 ## Autopilot considerations for a motherboard replacement scenario
 
@@ -104,6 +104,7 @@ Repairing Autopilot-enrolled devices can be complex, as OEM requirements must be
 For more information, see [Autopilot motherboard replacement scenario guidance][MEM-4].
 
 <!-- Reference links in article -->
+
 [MEM-1]: /mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal
 [MEM-2]: /mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal
 [MEM-3]: /mem/intune/remote-actions/devices-wipe#delete-devices-from-the-azure-active-directory-portal

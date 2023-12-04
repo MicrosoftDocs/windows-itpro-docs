@@ -1,11 +1,11 @@
 ---
-title: 5377(S) Credential Manager credentials were restored from a backup. (Windows 10)
+title: 5377(S) Credential Manager credentials were restored from a backup. 
 description: Describes security event 5377(S) Credential Manager credentials were restored from a backup.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

@@ -1,8 +1,8 @@
 ---
-title: Adjust memory quotas for a process (Windows 10)
+title: Adjust memory quotas for a process
 description: Describes the best practices, location, values, policy management, and security considerations for the Adjust memory quotas for a process security policy setting.
 ms.assetid: 6754a2c8-6d07-4567-9af3-335fd8dd7626
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -53,7 +53,7 @@ By default, members of the Administrators, Local Service, and Network Service gr
 
 The following table lists the actual and effective default policy values. Default values are also listed on the policy’s property page.
 
-| Server type or GPO | Default value | 
+| Server type or GPO | Default value |
 | - | - |
 | Default Domain Policy | Administrators<br>Local Service<br>Network Service |
 | Default Domain Controller Policy | Administrators<br>Local Service<br>Network Service |
@@ -61,7 +61,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain Controller Effective Default Settings | Administrators<br>Local Service<br>Network Service |
 | Member Server Effective Default Settings | Administrators<br>Local Service<br>Network Service |
 | Client Computer Effective Default Settings | Administrators<br>Local Service<br>Network Service |
- 
+
 ## Policy management
 
 A restart of the device is not required for this policy setting to be effective.
@@ -97,5 +97,5 @@ Organizations that have not restricted users to roles with limited privileges ma
 
 ## Related topics
 - [User Rights Assignment](user-rights-assignment.md)
- 
- 
+
+

@@ -3,6 +3,8 @@ items:
   href: index.yml
   expanded: true
   items:
+  - name: Contributing to CSP reference
+    href: contribute-csp-reference.md
   - name: Device description framework (DDF) files
     href: configuration-service-provider-ddf.md
   - name: Support scenarios
@@ -27,6 +29,15 @@ items:
       href: ../structure-of-oma-dm-provisioning-files.md
     - name: Server requirements for OMA DM
       href: ../server-requirements-windows-mdm.md
+  - name: Declared Configuration protocol
+    href: ../declared-configuration.md
+    items:
+    - name: Declared Configuration extensibility
+      href: ../declared-configuration-extensibility.md
+    - name: DeclaredConfiguration CSP
+      href: declaredconfiguration-csp.md
+    - name: DMClient CSP
+      href: dmclient-csp.md
   - name: Configuration service providers (CSPs)
     expanded: true
     items:
@@ -382,8 +393,6 @@ items:
           href: policy-csp-cellular.md
         - name: CloudDesktop
           href: policy-csp-clouddesktop.md
-        - name: CloudPC
-          href: policy-csp-cloudpc.md
         - name: Connectivity
           href: policy-csp-connectivity.md
         - name: ControlPolicyConflict
@@ -440,6 +449,8 @@ items:
           href: policy-csp-feeds.md
         - name: FileExplorer
           href: policy-csp-fileexplorer.md
+        - name: FileSystem
+          href: policy-csp-filesystem.md
         - name: Games
           href: policy-csp-games.md
         - name: Handwriting
@@ -554,6 +565,8 @@ items:
           href: policy-csp-webthreatdefense.md
         - name: Wifi
           href: policy-csp-wifi.md
+        - name: WindowsAI
+          href: policy-csp-windowsai.md
         - name: WindowsAutopilot
           href: policy-csp-windowsautopilot.md
         - name: WindowsConnectionManager
@@ -629,6 +642,11 @@ items:
       items:
       - name: ClientCertificateInstall DDF file
         href: clientcertificateinstall-ddf-file.md
+    - name: CloudDesktop
+      href: clouddesktop-csp.md
+      items:
+      - name: CloudDesktop DDF file
+        href: clouddesktop-ddf-file.md
     - name: CM_CellularEntries
       href: cm-cellularentries-csp.md
     - name: CMPolicy
@@ -643,6 +661,11 @@ items:
       items:
       - name: CustomDeviceUI DDF file
         href: customdeviceui-ddf.md
+    - name: DeclaredConfiguration
+      href: declaredconfiguration-csp.md
+      items:
+      - name: DeclaredConfiguration DDF file
+        href: declaredconfiguration-ddf-file.md
     - name: Defender
       href: defender-csp.md
       items:

@@ -4,7 +4,7 @@ description: Learn more about the Messaging Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowMessageSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowMessageSync-Applicability-End -->
 
 <!-- AllowMessageSync-OmaUri-Begin -->
@@ -51,7 +51,7 @@ Disable this feature to avoid information being stored on servers outside of you
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowMessageSync-DFProperties-End -->
@@ -61,7 +61,7 @@ Disable this feature to avoid information being stored on servers outside of you
 
 | Value | Description |
 |:--|:--|
-| 0 | Message sync is not allowed and cannot be changed by the user. |
+| 0 | Message sync isn't allowed and can't be changed by the user. |
 | 1 (Default) | Message sync is allowed. The user can change this setting. |
 <!-- AllowMessageSync-AllowedValues-End -->
 
@@ -91,7 +91,7 @@ Disable this feature to avoid information being stored on servers outside of you
 <!-- AllowMMS-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowMMS-Applicability-End -->
 
 <!-- AllowMMS-OmaUri-Begin -->
@@ -114,7 +114,7 @@ This policy setting allows you to enable or disable the sending and receiving ce
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowMMS-DFProperties-End -->
@@ -140,7 +140,7 @@ This policy setting allows you to enable or disable the sending and receiving ce
 <!-- AllowRCS-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowRCS-Applicability-End -->
 
 <!-- AllowRCS-OmaUri-Begin -->
@@ -163,7 +163,7 @@ This policy setting allows you to enable or disable the sending and receiving of
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowRCS-DFProperties-End -->

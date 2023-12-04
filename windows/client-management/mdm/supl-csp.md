@@ -4,7 +4,7 @@ description: Learn more about the SUPL CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 04/26/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -89,7 +89,7 @@ The following list shows the SUPL configuration service provider nodes:
 <!-- Device-SUPL1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Applicability-End -->
 
 <!-- Device-SUPL1-OmaUri-Begin -->
@@ -112,7 +112,7 @@ Required for SUPL. Defines the account for the SUPL Enabled Terminal (SET) node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-SUPL1-DFProperties-End -->
 
@@ -128,7 +128,7 @@ Required for SUPL. Defines the account for the SUPL Enabled Terminal (SET) node.
 <!-- Device-SUPL1-Addr-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Addr-Applicability-End -->
 
 <!-- Device-SUPL1-Addr-OmaUri-Begin -->
@@ -154,7 +154,7 @@ For OMA DM, if the format for this node is incorrect the entry will be ignored a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-SUPL1-Addr-DFProperties-End -->
 
@@ -170,7 +170,7 @@ For OMA DM, if the format for this node is incorrect the entry will be ignored a
 <!-- Device-SUPL1-AppID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-AppID-Applicability-End -->
 
 <!-- Device-SUPL1-AppID-OmaUri-Begin -->
@@ -193,7 +193,7 @@ Required. The AppID for SUPL is automatically set to "ap0004". This is a read-on
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-SUPL1-AppID-DFProperties-End -->
 
@@ -209,7 +209,7 @@ Required. The AppID for SUPL is automatically set to "ap0004". This is a read-on
 <!-- Device-SUPL1-Ext-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-OmaUri-Begin -->
@@ -231,7 +231,7 @@ Required. The AppID for SUPL is automatically set to "ap0004". This is a read-on
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-SUPL1-Ext-DFProperties-End -->
 
@@ -247,7 +247,7 @@ Required. The AppID for SUPL is automatically set to "ap0004". This is a read-on
 <!-- Device-SUPL1-Ext-Microsoft-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-OmaUri-Begin -->
@@ -269,7 +269,7 @@ Required. The AppID for SUPL is automatically set to "ap0004". This is a read-on
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-SUPL1-Ext-Microsoft-DFProperties-End -->
 
@@ -285,7 +285,7 @@ Required. The AppID for SUPL is automatically set to "ap0004". This is a read-on
 <!-- Device-SUPL1-Ext-Microsoft-FullVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-SUPL1-Ext-Microsoft-FullVersion-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-FullVersion-OmaUri-Begin -->
@@ -308,7 +308,7 @@ Optional. Determines the full version (X. Y. Z where X, Y and Z are major versio
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 | Allowed Values | Regular Expression: `^(\d+\.)?(\d+\.)?(\*|\d+)$` |
 | Default Value  | 1.0.0 |
@@ -326,7 +326,7 @@ Optional. Determines the full version (X. Y. Z where X, Y and Z are major versio
 <!-- Device-SUPL1-Ext-Microsoft-HighAccPositioningMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-HighAccPositioningMethod-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-HighAccPositioningMethod-OmaUri-Begin -->
@@ -351,7 +351,7 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 0 |
 <!-- Device-SUPL1-Ext-Microsoft-HighAccPositioningMethod-DFProperties-End -->
@@ -381,7 +381,7 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-OmaUri-Begin -->
@@ -392,7 +392,7 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Description-Begin -->
 <!-- Description-Source-DDF -->
-This setting is deprecated in Windows 10. Optional. Boolean. Specifies whether the location toggle on the location screen in Settings is also used to manage SUPL network-initiated (NI) requests for location. If the value is set to 0, the NI behavior is independent from the current location toggle setting. If the value is set to 1, the NI behavior follows the current location toggle setting. The default value is 1. **Note** that most clients do not support this behavior. This value manages the settings for both SUPL and v2 UPL. If a phone is configured for both SUPL and V2 UPL and these values differ, the SUPL setting will always be used.
+This setting is deprecated in Windows 10. Optional. Boolean. Specifies whether the location toggle on the location screen in Settings is also used to manage SUPL network-initiated (NI) requests for location. If the value is set to 0, the NI behavior is independent from the current location toggle setting. If the value is set to 1, the NI behavior follows the current location toggle setting. The default value is 1. Note that most clients don't support this behavior. This value manages the settings for both SUPL and v2 UPL. If a phone is configured for both SUPL and V2 UPL and these values differ, the SUPL setting will always be used.
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Description-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Editable-Begin -->
@@ -423,7 +423,7 @@ For OMA DM, if the format for this node is incorrect then an entry will be ignor
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-DFProperties-End -->
@@ -449,7 +449,7 @@ For OMA DM, if the format for this node is incorrect then an entry will be ignor
 <!-- Device-SUPL1-Ext-Microsoft-MCCMNCPairs-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-MCCMNCPairs-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-MCCMNCPairs-OmaUri-Begin -->
@@ -460,7 +460,7 @@ For OMA DM, if the format for this node is incorrect then an entry will be ignor
 
 <!-- Device-SUPL1-Ext-Microsoft-MCCMNCPairs-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required. List all of the MCC and MNC pairs owned by the mobile operator. This list is used to verify that the UICC matches the network and SUPL can be used. When the UICC and network do not match, the phone uses the default location service and does not use SUPL.
+Required. List all of the MCC and MNC pairs owned by the mobile operator. This list is used to verify that the UICC matches the network and SUPL can be used. When the UICC and network don't match, the phone uses the default location service and doesn't use SUPL.
 <!-- Device-SUPL1-Ext-Microsoft-MCCMNCPairs-Description-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-MCCMNCPairs-Editable-Begin -->
@@ -475,7 +475,7 @@ For OMA DM, if the format for this node is incorrect then an entry will be ignor
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-SUPL1-Ext-Microsoft-MCCMNCPairs-DFProperties-End -->
 
@@ -491,7 +491,7 @@ For OMA DM, if the format for this node is incorrect then an entry will be ignor
 <!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-OmaUri-Begin -->
@@ -514,7 +514,7 @@ Optional. Time in seconds that the network-initiated location request is display
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 30 |
 <!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-DFProperties-End -->
@@ -531,7 +531,7 @@ Optional. Time in seconds that the network-initiated location request is display
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-OmaUri-Begin -->
@@ -542,7 +542,7 @@ Optional. Time in seconds that the network-initiated location request is display
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required. Specifies the root certificate for the H-SLP server. Windows does not support a non-secure mode. If this node is not included, the configuration service provider will fail but may not return a specific error.
+Required. Specifies the root certificate for the H-SLP server. Windows doesn't support a non-secure mode. If this node isn't included, the configuration service provider will fail but may not return a specific error.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Description-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Editable-Begin -->
@@ -554,7 +554,7 @@ Required. Specifies the root certificate for the H-SLP server. Windows does not 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-DFProperties-End -->
 
@@ -570,7 +570,7 @@ Required. Specifies the root certificate for the H-SLP server. Windows does not 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Data-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Data-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Data-OmaUri-Begin -->
@@ -593,7 +593,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 
 | Property name | Property value |
 |:--|:--|
-| Format | b64 |
+| Format | `b64` |
 | Access Type | Get, Replace |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Data-DFProperties-End -->
 
@@ -609,7 +609,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Name-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Name-OmaUri-Begin -->
@@ -632,7 +632,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Name-DFProperties-End -->
 
@@ -648,7 +648,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-OmaUri-Begin -->
@@ -671,7 +671,7 @@ Specifies the root certificate for the H-SLP server.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-DFProperties-End -->
 
@@ -687,7 +687,7 @@ Specifies the root certificate for the H-SLP server.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Data-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Data-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Data-OmaUri-Begin -->
@@ -710,7 +710,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 
 | Property name | Property value |
 |:--|:--|
-| Format | b64 |
+| Format | `b64` |
 | Access Type | Get, Replace |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Data-DFProperties-End -->
 
@@ -726,7 +726,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Name-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Name-OmaUri-Begin -->
@@ -749,7 +749,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Name-DFProperties-End -->
 
@@ -765,7 +765,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-OmaUri-Begin -->
@@ -788,7 +788,7 @@ Specifies the root certificate for the H-SLP server.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-DFProperties-End -->
 
@@ -804,7 +804,7 @@ Specifies the root certificate for the H-SLP server.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Data-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Data-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Data-OmaUri-Begin -->
@@ -827,7 +827,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 
 | Property name | Property value |
 |:--|:--|
-| Format | b64 |
+| Format | `b64` |
 | Access Type | Get, Replace |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Data-DFProperties-End -->
 
@@ -843,7 +843,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Name-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Name-OmaUri-Begin -->
@@ -866,7 +866,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Name-DFProperties-End -->
 
@@ -882,7 +882,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-OmaUri-Begin -->
@@ -905,7 +905,7 @@ Specifies the root certificate for the H-SLP server.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-DFProperties-End -->
 
@@ -921,7 +921,7 @@ Specifies the root certificate for the H-SLP server.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Data-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Data-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Data-OmaUri-Begin -->
@@ -944,7 +944,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 
 | Property name | Property value |
 |:--|:--|
-| Format | b64 |
+| Format | `b64` |
 | Access Type | Get, Replace |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Data-DFProperties-End -->
 
@@ -960,7 +960,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Name-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Name-OmaUri-Begin -->
@@ -983,7 +983,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Name-DFProperties-End -->
 
@@ -999,7 +999,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-OmaUri-Begin -->
@@ -1022,7 +1022,7 @@ Specifies the root certificate for the H-SLP server.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-DFProperties-End -->
 
@@ -1038,7 +1038,7 @@ Specifies the root certificate for the H-SLP server.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Data-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Data-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Data-OmaUri-Begin -->
@@ -1061,7 +1061,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 
 | Property name | Property value |
 |:--|:--|
-| Format | b64 |
+| Format | `b64` |
 | Access Type | Get, Replace |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Data-DFProperties-End -->
 
@@ -1077,7 +1077,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Name-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Name-OmaUri-Begin -->
@@ -1100,7 +1100,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Name-DFProperties-End -->
 
@@ -1116,7 +1116,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-OmaUri-Begin -->
@@ -1139,7 +1139,7 @@ Specifies the root certificate for the H-SLP server.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-DFProperties-End -->
 
@@ -1155,7 +1155,7 @@ Specifies the root certificate for the H-SLP server.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Data-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Data-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Data-OmaUri-Begin -->
@@ -1178,7 +1178,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 
 | Property name | Property value |
 |:--|:--|
-| Format | b64 |
+| Format | `b64` |
 | Access Type | Get, Replace |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Data-DFProperties-End -->
 
@@ -1194,7 +1194,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Name-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Name-OmaUri-Begin -->
@@ -1217,7 +1217,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Name-DFProperties-End -->
 
@@ -1233,7 +1233,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 <!-- Device-SUPL1-Ext-Microsoft-ServerAccessInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-ServerAccessInterval-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-ServerAccessInterval-OmaUri-Begin -->
@@ -1256,7 +1256,7 @@ Optional. Integer. Defines the minimum interval of time in seconds between mobil
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 60 |
 <!-- Device-SUPL1-Ext-Microsoft-ServerAccessInterval-DFProperties-End -->
@@ -1273,7 +1273,7 @@ Optional. Integer. Defines the minimum interval of time in seconds between mobil
 <!-- Device-SUPL1-Ext-Microsoft-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-Version-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-Version-OmaUri-Begin -->
@@ -1296,7 +1296,7 @@ Optional. Determines the major version of the SUPL protocol to use. For SUPL 1.0
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Allowed Values | Range: `[1-2]` |
 | Default Value  | 1 |
@@ -1314,7 +1314,7 @@ Optional. Determines the major version of the SUPL protocol to use. For SUPL 1.0
 <!-- Device-V2UPL1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-V2UPL1-Applicability-End -->
 
 <!-- Device-V2UPL1-OmaUri-Begin -->
@@ -1337,7 +1337,7 @@ Required for V2 UPL for CDMA. Specifies the account settings for user plane loca
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-V2UPL1-DFProperties-End -->
 
@@ -1353,7 +1353,7 @@ Required for V2 UPL for CDMA. Specifies the account settings for user plane loca
 <!-- Device-V2UPL1-ApplicationTypeIndicator_MR-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-V2UPL1-ApplicationTypeIndicator_MR-Applicability-End -->
 
 <!-- Device-V2UPL1-ApplicationTypeIndicator_MR-OmaUri-Begin -->
@@ -1376,7 +1376,7 @@ Required. This value must always be set to 00000011.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-V2UPL1-ApplicationTypeIndicator_MR-DFProperties-End -->
 
@@ -1392,7 +1392,7 @@ Required. This value must always be set to 00000011.
 <!-- Device-V2UPL1-LocMasterSwitchDependencyNII-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-V2UPL1-LocMasterSwitchDependencyNII-Applicability-End -->
 
 <!-- Device-V2UPL1-LocMasterSwitchDependencyNII-OmaUri-Begin -->
@@ -1415,7 +1415,7 @@ Optional. Boolean. Specifies whether the location toggle on the location screen 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 <!-- Device-V2UPL1-LocMasterSwitchDependencyNII-DFProperties-End -->
@@ -1441,7 +1441,7 @@ Optional. Boolean. Specifies whether the location toggle on the location screen 
 <!-- Device-V2UPL1-MPC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-V2UPL1-MPC-Applicability-End -->
 
 <!-- Device-V2UPL1-MPC-OmaUri-Begin -->
@@ -1464,7 +1464,7 @@ Optional. The address of the mobile positioning center (MPC), in the format ipAd
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-V2UPL1-MPC-DFProperties-End -->
 
@@ -1480,7 +1480,7 @@ Optional. The address of the mobile positioning center (MPC), in the format ipAd
 <!-- Device-V2UPL1-NIDefaultTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-V2UPL1-NIDefaultTimeout-Applicability-End -->
 
 <!-- Device-V2UPL1-NIDefaultTimeout-OmaUri-Begin -->
@@ -1503,7 +1503,7 @@ Optional. Time in seconds that the network-initiated location request is display
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 30 |
 <!-- Device-V2UPL1-NIDefaultTimeout-DFProperties-End -->
@@ -1520,7 +1520,7 @@ Optional. Time in seconds that the network-initiated location request is display
 <!-- Device-V2UPL1-PDE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-V2UPL1-PDE-Applicability-End -->
 
 <!-- Device-V2UPL1-PDE-OmaUri-Begin -->
@@ -1543,7 +1543,7 @@ Optional. The address of the Position Determination Entity (PDE), in the format 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-V2UPL1-PDE-DFProperties-End -->
 
@@ -1559,7 +1559,7 @@ Optional. The address of the Position Determination Entity (PDE), in the format 
 <!-- Device-V2UPL1-PositioningMethod_MR-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-V2UPL1-PositioningMethod_MR-Applicability-End -->
 
 <!-- Device-V2UPL1-PositioningMethod_MR-OmaUri-Begin -->
@@ -1582,7 +1582,7 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 0 |
 <!-- Device-V2UPL1-PositioningMethod_MR-DFProperties-End -->
@@ -1611,7 +1611,7 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 <!-- Device-V2UPL1-ServerAccessInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-V2UPL1-ServerAccessInterval-Applicability-End -->
 
 <!-- Device-V2UPL1-ServerAccessInterval-OmaUri-Begin -->
@@ -1634,7 +1634,7 @@ Optional. Integer. Defines the minimum interval of time in seconds between mobil
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 60 |
 <!-- Device-V2UPL1-ServerAccessInterval-DFProperties-End -->

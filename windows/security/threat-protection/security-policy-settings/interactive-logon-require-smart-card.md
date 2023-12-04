@@ -4,11 +4,11 @@ description: "Describes the best practices, location, values, policy management,
 author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
-ms.reviewer: 
+ms.reviewer:
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 01/13/2023
 ---
 
@@ -38,7 +38,7 @@ Requiring users to use long, complex passwords for authentication enhances netwo
 
 ### Best practices
 
-- Set **Interactive logon: Require Windows Hello for Business or smart card** to Enabled. All users will have to use smart cards to sign in to the network, or a Windows Hello for Business method. This requirement means that the organization must have a reliable public key infrastructure (PKI) in place, and provide smart cards and smart card readers for all users. For more information about password-less authentication, see [Windows Hello for Business overview](../../identity-protection/hello-for-business/hello-overview.md).
+- Set **Interactive logon: Require Windows Hello for Business or smart card** to Enabled. All users will have to use smart cards to sign in to the network, or a Windows Hello for Business method. This requirement means that the organization must have a reliable public key infrastructure (PKI) in place, and provide smart cards and smart card readers for all users. For more information about password-less authentication, see [Windows Hello for Business overview](../../identity-protection/hello-for-business/index.md).
 
 ### Location
 
@@ -92,4 +92,4 @@ All users of a device with this setting enabled must use smart cards or a Window
 ## Related articles
 
 - [Security Options](security-options.md)
-- [Windows Hello for Business overview](../../identity-protection/hello-for-business/hello-overview.md)
+- [Windows Hello for Business overview](../../identity-protection/hello-for-business/index.md)

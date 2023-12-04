@@ -1,11 +1,11 @@
 ---
-title: 4945(S) A rule was listed when the Windows Firewall started. (Windows 10)
+title: 4945(S) A rule was listed when the Windows Firewall started. 
 description: Describes security event 4945(S) A rule was listed when the Windows Firewall started.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

@@ -1,5 +1,5 @@
 ---
-title: Audit System Integrity (Windows 10)
+title: Audit System Integrity 
 description: The policy setting, Audit System Integrity, determines if the operating system audits events that violate the integrity of the security subsystem.
 ms.assetid: 942a9a7f-fa31-4067-88c7-f73978bf2034
 ms.reviewer: 
@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/06/2021
 ms.technology: itpro-security

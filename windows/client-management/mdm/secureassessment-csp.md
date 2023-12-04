@@ -1,82 +1,171 @@
 ---
 title: SecureAssessment CSP
-description: Learn how the SecureAssessment configuration service provider (CSP) is used to provide configuration information for the secure assessment browser.
-ms.reviewer:
+description: Learn more about the SecureAssessment CSP.
+author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.topic: reference
+ms.date: 10/23/2023
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 06/26/2017
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- SecureAssessment-Begin -->
 # SecureAssessment CSP
 
-The table below shows the applicability of Windows:
+<!-- SecureAssessment-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SecureAssessment-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SecureAssessment-Tree-Begin -->
+The following list shows the SecureAssessment configuration service provider nodes:
 
-The SecureAssessment configuration service provider is used to provide configuration information for the secure assessment browser.
+- ./Vendor/MSFT/SecureAssessment
+  - [AllowScreenMonitoring](#allowscreenmonitoring)
+  - [AllowTextSuggestions](#allowtextsuggestions)
+  - [Assessments](#assessments)
+  - [LaunchURI](#launchuri)
+  - [RequirePrinting](#requireprinting)
+  - [TesterAccount](#testeraccount)
+<!-- SecureAssessment-Tree-End -->
 
-The following example shows the SecureAssessment configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
+<!-- Device-AllowScreenMonitoring-Begin -->
+## AllowScreenMonitoring
+
+<!-- Device-AllowScreenMonitoring-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-AllowScreenMonitoring-Applicability-End -->
+
+<!-- Device-AllowScreenMonitoring-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/SecureAssessment/AllowScreenMonitoring
 ```
-./Vendor/MSFT
-SecureAssessment
-----LaunchURI
-----TesterAccount
-----AllowScreenMonitoring
-----RequirePrinting
-----AllowTextSuggestions
-----Assessments
+<!-- Device-AllowScreenMonitoring-OmaUri-End -->
+
+<!-- Device-AllowScreenMonitoring-Description-Begin -->
+<!-- Description-Source-DDF -->
+Indicates if screen monitoring is allowed by the app.
+<!-- Device-AllowScreenMonitoring-Description-End -->
+
+<!-- Device-AllowScreenMonitoring-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-AllowScreenMonitoring-Editable-End -->
+
+<!-- Device-AllowScreenMonitoring-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get, Replace |
+| Default Value  | 0 |
+<!-- Device-AllowScreenMonitoring-DFProperties-End -->
+
+<!-- Device-AllowScreenMonitoring-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 | Screen monitoring is allowed. |
+| 0 (Default) | Screen monitoring isn't allowed. |
+<!-- Device-AllowScreenMonitoring-AllowedValues-End -->
+
+<!-- Device-AllowScreenMonitoring-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-AllowScreenMonitoring-Examples-End -->
+
+<!-- Device-AllowScreenMonitoring-End -->
+
+<!-- Device-AllowTextSuggestions-Begin -->
+## AllowTextSuggestions
+
+<!-- Device-AllowTextSuggestions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-AllowTextSuggestions-Applicability-End -->
+
+<!-- Device-AllowTextSuggestions-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/SecureAssessment/AllowTextSuggestions
 ```
-<a href="" id="--vendor-msft-secureassessment"></a>**./Vendor/MSFT/SecureAssessment**
-The root node for the SecureAssessment configuration service provider.
+<!-- Device-AllowTextSuggestions-OmaUri-End -->
 
-The supported operation is Get.
+<!-- Device-AllowTextSuggestions-Description-Begin -->
+<!-- Description-Source-DDF -->
+Indicates if keyboard text suggestions are allowed by the app.
+<!-- Device-AllowTextSuggestions-Description-End -->
 
-<a href="" id="launchuri"></a>**LaunchURI**
-URI link to an assessment that's automatically loaded when the secure assessment browser is launched.
+<!-- Device-AllowTextSuggestions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-AllowTextSuggestions-Editable-End -->
 
-The supported operations are Add, Delete, Get, and Replace.
+<!-- Device-AllowTextSuggestions-DFProperties-Begin -->
+**Description framework properties**:
 
-<a href="" id="testeraccount"></a>**TesterAccount**
-The user name of the test taking account.
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get, Replace |
+| Default Value  | 0 |
+<!-- Device-AllowTextSuggestions-DFProperties-End -->
 
-- To specify a domain account, use domain\\user.
-- To specify an Azure Active Directory account, use username@tenant.com.
-- To specify a local account, use the username.
+<!-- Device-AllowTextSuggestions-AllowedValues-Begin -->
+**Allowed values**:
 
-The supported operations are Add, Delete, Get, and Replace.
+| Value | Description |
+|:--|:--|
+| 1 | Keyboard text suggestions are allowed. |
+| 0 (Default) | Keyboard text suggestions aren't allowed. |
+<!-- Device-AllowTextSuggestions-AllowedValues-End -->
 
-<a href="" id="allowscreenmonitoring"></a>**AllowScreenMonitoring**
-Added in Windows 10, version 1703. Boolean value that indicates whether screen capture is allowed by the app.
+<!-- Device-AllowTextSuggestions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-AllowTextSuggestions-Examples-End -->
 
-Supported operations are Get and Replace.
+<!-- Device-AllowTextSuggestions-End -->
 
-<a href="" id="requireprinting"></a>**RequirePrinting**
-Added in Windows 10, version 1703. Boolean value that indicates whether printing is allowed by the app.
+<!-- Device-Assessments-Begin -->
+## Assessments
 
-Supported operations are Get and Replace.
+<!-- Device-Assessments-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.521] and later |
+<!-- Device-Assessments-Applicability-End -->
 
-<a href="" id="AllowTextSuggestions"></a>**AllowTextSuggestions**
-Added in Windows 10, version 1703. Boolean value that indicates whether keyboard text suggestions are allowed by the app.
+<!-- Device-Assessments-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/SecureAssessment/Assessments
+```
+<!-- Device-Assessments-OmaUri-End -->
 
-Supported operations are Get and Replace.
+<!-- Device-Assessments-Description-Begin -->
+<!-- Description-Source-DDF -->
+Enables support for multiple assessments and for assessment grouping. The structure is specified by an XML.
+<!-- Device-Assessments-Description-End -->
 
-<a href="" id="Assessments"></a>**Assessments**
-Added in Windows 11, version 22H2. Enables support for multiple assessments. When configured, users can select from a list of assessments. The node accepts an XML string that represents the list of available assessments.
+<!-- Device-Assessments-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+When configured, users can select from a list of assessments. The node accepts an XML string that represents the list of available assessments.
+<!-- Device-Assessments-Editable-End -->
 
-Supported operations are Add, Delete, Get and Replace.
+<!-- Device-Assessments-DFProperties-Begin -->
+**Description framework properties**:
 
-XML schema
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Assessments-DFProperties-End -->
+
+<!-- Device-Assessments-AllowedValues-Begin -->
+**Allowed values**:
 
 ```xml
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -89,8 +178,8 @@ XML schema
               <xs:element name="Assessment" maxOccurs="unbounded" minOccurs="0">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element type="xs:string" name="TestName"/>
-                    <xs:element type="xs:string" name="TestUri"/>
+                    <xs:element type="xs:string" name="TestName" />
+                    <xs:element type="xs:string" name="TestUri" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -102,8 +191,12 @@ XML schema
   </xs:element>
 </xs:schema>
 ```
+<!-- Device-Assessments-AllowedValues-End -->
 
-Example:
+<!-- Device-Assessments-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
+
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
 <AssessmentsRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -124,12 +217,144 @@ Example:
     </Assessments>
 </AssessmentsRoot>
 ```
+<!-- Device-Assessments-Examples-End -->
 
-## Related topics
+<!-- Device-Assessments-End -->
 
-[Set up Take a Test](/education/windows/take-a-test-multiple-pcs)
+<!-- Device-LaunchURI-Begin -->
+## LaunchURI
 
-[Configuration service provider reference](index.yml)
+<!-- Device-LaunchURI-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-LaunchURI-Applicability-End -->
 
+<!-- Device-LaunchURI-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/SecureAssessment/LaunchURI
+```
+<!-- Device-LaunchURI-OmaUri-End -->
 
+<!-- Device-LaunchURI-Description-Begin -->
+<!-- Description-Source-DDF -->
+Link to an assessment that's automatically loaded when the Secure Assessment Browser is launched.
+<!-- Device-LaunchURI-Description-End -->
 
+<!-- Device-LaunchURI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-LaunchURI-Editable-End -->
+
+<!-- Device-LaunchURI-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Regular Expression: `System.Xml.XmlElement` |
+<!-- Device-LaunchURI-DFProperties-End -->
+
+<!-- Device-LaunchURI-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-LaunchURI-Examples-End -->
+
+<!-- Device-LaunchURI-End -->
+
+<!-- Device-RequirePrinting-Begin -->
+## RequirePrinting
+
+<!-- Device-RequirePrinting-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-RequirePrinting-Applicability-End -->
+
+<!-- Device-RequirePrinting-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/SecureAssessment/RequirePrinting
+```
+<!-- Device-RequirePrinting-OmaUri-End -->
+
+<!-- Device-RequirePrinting-Description-Begin -->
+<!-- Description-Source-DDF -->
+Indicates if printing is required by the app.
+<!-- Device-RequirePrinting-Description-End -->
+
+<!-- Device-RequirePrinting-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-RequirePrinting-Editable-End -->
+
+<!-- Device-RequirePrinting-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get, Replace |
+| Default Value  | 1 |
+<!-- Device-RequirePrinting-DFProperties-End -->
+
+<!-- Device-RequirePrinting-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 (Default) | Printing is allowed. |
+| 0 | Printing isn't allowed. |
+<!-- Device-RequirePrinting-AllowedValues-End -->
+
+<!-- Device-RequirePrinting-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-RequirePrinting-Examples-End -->
+
+<!-- Device-RequirePrinting-End -->
+
+<!-- Device-TesterAccount-Begin -->
+## TesterAccount
+
+<!-- Device-TesterAccount-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-TesterAccount-Applicability-End -->
+
+<!-- Device-TesterAccount-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/SecureAssessment/TesterAccount
+```
+<!-- Device-TesterAccount-OmaUri-End -->
+
+<!-- Device-TesterAccount-Description-Begin -->
+<!-- Description-Source-DDF -->
+The user name of the test taking account. To specify a domain account, use domain\user. To specify a Microsoft Entra account, use username@tenant.com. To specify a local account, use the username.
+<!-- Device-TesterAccount-Description-End -->
+
+<!-- Device-TesterAccount-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-TesterAccount-Editable-End -->
+
+<!-- Device-TesterAccount-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-TesterAccount-DFProperties-End -->
+
+<!-- Device-TesterAccount-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-TesterAccount-Examples-End -->
+
+<!-- Device-TesterAccount-End -->
+
+<!-- SecureAssessment-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- SecureAssessment-CspMoreInfo-End -->
+
+<!-- SecureAssessment-End -->
+
+## Related articles
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

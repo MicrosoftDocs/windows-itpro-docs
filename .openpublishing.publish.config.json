@@ -12,7 +12,8 @@
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content"
+        "RestApi": "Content",
+        "ZonePivotGroups": "Toc"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
@@ -90,6 +91,7 @@
       "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
+        "ZonePivotGroups": "Toc",
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
@@ -106,6 +108,7 @@
       "moniker_ranges": [],
       "open_to_public_contributors": false,
       "type_mapping": {
+        "ZonePivotGroups": "Toc",
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
@@ -122,6 +125,7 @@
       "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
+        "ZonePivotGroups": "Toc",
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
@@ -138,6 +142,7 @@
       "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
+        "ZonePivotGroups": "Toc",
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
@@ -170,6 +175,7 @@
       "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
+        "ZonePivotGroups": "Toc",
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
@@ -186,6 +192,7 @@
       "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
+        "ZonePivotGroups": "Toc",
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
@@ -239,5 +246,19 @@
   "need_generate_pdf_url_template": true,
   "contribution_branch_mappings": {},
   "need_generate_pdf": false,
-  "need_generate_intellisense": false
+  "need_generate_intellisense": false,
+  "redirection_files": [
+    ".openpublishing.redirection.browsers.json",
+    ".openpublishing.redirection.education.json",
+    ".openpublishing.redirection.json",
+    ".openpublishing.redirection.store-for-business.json",
+    ".openpublishing.redirection.windows-application-management.json",
+    ".openpublishing.redirection.windows-client-management.json",
+    ".openpublishing.redirection.windows-configuration.json",
+    ".openpublishing.redirection.windows-deployment.json",
+    ".openpublishing.redirection.windows-hub.json",
+    ".openpublishing.redirection.windows-privacy.json",
+    ".openpublishing.redirection.windows-security.json",
+    ".openpublishing.redirection.windows-whats-new.json"
+  ]
 }

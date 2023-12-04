@@ -1,7 +1,7 @@
 ---
 title: Enrollment in Intune with Windows Autopilot
-description: Learn how to join Azure AD and enroll in Intune using Windows Autopilot.
-ms.date: 08/31/2022
+description: Learn how to join Microsoft Entra ID and enroll in Intune using Windows Autopilot.
+ms.date: 03/08/2023
 ms.topic: tutorial
 ---
 
@@ -61,8 +61,8 @@ More advanced dynamic membership rules can be created from Microsoft Intune admi
 
 For Autopilot devices to offer a customized OOBE experience, you must create **Windows Autopilot deployment profiles** and assign them to a group containing the devices.
 A deployment profile is a collection of settings that determine the behavior of the device during OOBE. Among other settings, a deployment profile specifies a **deployment mode**, which can either be:
-1. **User-driven:** devices with this profile are associated with the user enrolling the device. User credentials are required to complete the Azure AD join process during OOBE
-1. **Self-deploying:** devices with this profile aren't associated with the user enrolling the device. User credentials aren't required to complete the Azure AD join process. Rather, the device is joined automatically and, for this reason, specific hardware requirements must be met to use this mode.
+1. **User-driven:** devices with this profile are associated with the user enrolling the device. User credentials are required to complete the Microsoft Entra join process during OOBE
+1. **Self-deploying:** devices with this profile aren't associated with the user enrolling the device. User credentials aren't required to complete the Microsoft Entra join process. Rather, the device is joined automatically and, for this reason, specific hardware requirements must be met to use this mode.
 
 To create an Autopilot deployment profile:
 
@@ -97,7 +97,7 @@ To deploy the ESP to devices, you need to create an ESP profile in Microsoft Int
 For more information, see [Set up the Enrollment Status Page][MEM-3].
 
 > [!CAUTION]
-> When targeting an ESP to **Windows 11 SE** devices, only applications included in the [<u>approved app list</u>][EDU-1] should part of the ESP configuration.
+> The Enrollment Status Page (ESP) is compatible with Windows 11 SE. However, due to the E Mode policy, devices may not complete the enrollment. For more information, see [Enrollment Status Page][EDU-3].
 
 ### Autopilot end-user experience
 
@@ -109,8 +109,8 @@ When a Windows device is turned on for the first time, the end-user experience w
 1. Connect to the internet: if connecting through Wi-Fi, the user will be prompted to connect to a wireless network. If the device is connected through an ethernet cable, Windows will skip this step
 1. Apply updates: the device will look for and apply required updates
 1. Windows will detect if the device has an Autopilot profile assigned to it. If so, it will proceed with the customized OOBE experience. If the Autopilot profile specifies a naming convention for the device, the device will be renamed, and a reboot will occur
-1. The user authenticates to Azure AD, using the school account
-1. The device joins Azure AD, enrolls in Intune and all the settings and applications are configured
+1. The user authenticates to Microsoft Entra ID, using the school account
+1. The device joins Microsoft Entra ID, enrolls in Intune and all the settings and applications are configured
 
 > [!NOTE]
 > Some of these steps may be skipped, depending on the Autopilot profile configuration and if the device is using a wired connection.
@@ -120,7 +120,7 @@ When a Windows device is turned on for the first time, the end-user experience w
 ________________________________________________________
 ## Next steps
 
-With the devices joined to Azure AD tenant and managed by Intune, you can use Intune to maintain them and report on their status.
+With the devices joined to Microsoft Entra tenant and managed by Intune, you can use Intune to maintain them and report on their status.
 
 > [!div class="nextstepaction"]
 > [Next: Manage devices >](manage-overview.md)
@@ -144,5 +144,6 @@ With the devices joined to Azure AD tenant and managed by Intune, you can use In
 
 [EDU-1]: /education/windows/windows-11-se-overview
 [EDU-2]: /intune-education/windows-11-se-overview#windows-autopilot
+[EDU-3]: ../tutorial-deploy-apps-winse/considerations.md#enrollment-status-page
 
 [SURF-1]: /surface/surface-autopilot-registration-support

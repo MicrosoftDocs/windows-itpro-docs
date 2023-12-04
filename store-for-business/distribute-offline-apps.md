@@ -11,19 +11,20 @@ author: cmcatee-MSFT
 manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 07/21/2021
+ms.date: 05/24/2023
 ---
 
 # Distribute offline apps
-
 
 **Applies to:**
 
 - Windows 10
 
 > [!IMPORTANT]
-> The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
-> 
+>
+> - The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+> - In April 2023 the Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. An interaction with existing MDM and GPO policies may lead to customers seeing errors when accessing the Microsoft Store app. For more information see [Microsoft Store for Business tab removed](manage-access-to-private-store.md#microsoft-store-for-business-tab-removed).
+
 Offline licensing is a new licensing option for Windows 10 with Microsoft Store for Business and Microsoft Store for Education. With offline licenses, organizations can download apps and their licenses to deploy within their network, or on devices that are not connected to the Internet. ISVs or devs can opt-in their apps for offline licensing when they submit them to the Windows Dev Center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store for Business and Microsoft Store for Education. This model allows organizations to deploy apps when users or devices do not have connectivity to the Store.
 
 ## Why offline-licensed apps?
@@ -34,7 +35,7 @@ Offline-licensed apps offer an alternative to online apps, and provide additiona
 
 - **You use imaging to manage devices in your organization** - Offline-licensed apps can be added to images and deployed with Deployment Image Servicing and Management (DISM), or Windows Imaging and Configuration Designer (ICD).
 
-- **Your employees do not have Azure Active Directory (AD) accounts** - Azure AD accounts are required for employees that install apps assigned to them from Microsoft Store or that claim apps from a private store.
+- **Your employees do not have Microsoft Entra accounts** - Microsoft Entra accounts are required for employees that install apps assigned to them from Microsoft Store or that claim apps from a private store.
 
 ## Distribution options for offline-licensed apps
 
@@ -45,8 +46,9 @@ You can't distribute offline-licensed apps directly from Microsoft Store. Once y
 - **Create provisioning package**. You can use Windows Imaging and Configuration Designer (ICD) to create a provisioning package for your offline app. Once you have the package, there are options to [apply the provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package). For more information, see [Provisioning Packages for Windows 10](/windows/configuration/provisioning-packages/provisioning-packages).
 
 - **Mobile device management provider or management server.** You can use a mobile device management (MDM) provider or management server to distribute offline apps. For more information, see these topics:
-    - [Manage apps from Microsoft Store for Business with Microsoft Configuration Manager](/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-    - [Manage apps from Microsoft Store for Business with Microsoft Intune](/mem/intune/apps/windows-store-for-business)<br>
+
+  - [Manage apps from Microsoft Store for Business with Microsoft Configuration Manager](/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+  - [Manage apps from Microsoft Store for Business with Microsoft Intune](/mem/intune/apps/windows-store-for-business)
 
 For third-party MDM providers or management servers, check your product documentation.
 

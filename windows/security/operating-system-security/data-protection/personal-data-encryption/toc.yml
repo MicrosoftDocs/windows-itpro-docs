@@ -1,0 +1,7 @@
+items:
+- name: PDE overview
+  href: index.md
+- name: Configure PDE
+  href: configure.md
+- name: PDE frequently asked questions (FAQ)
+  href: faq.yml

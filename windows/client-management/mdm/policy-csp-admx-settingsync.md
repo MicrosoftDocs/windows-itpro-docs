@@ -4,7 +4,7 @@ description: Learn more about the ADMX_SettingSync Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_SettingSync-Begin -->
 # Policy CSP - ADMX_SettingSync
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_SettingSync-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- DisableApplicationSettingSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableApplicationSettingSync-Applicability-End -->
 
 <!-- DisableApplicationSettingSync-OmaUri-Begin -->
@@ -44,11 +41,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Prevent the "app settings" group from syncing to and from this PC. This turns off and disables the "app settings" group on the "sync your settings" page in PC settings.
 
-If you enable this policy setting, the "app settings" group will not be synced.
+If you enable this policy setting, the "app settings" group won't be synced.
 
 Use the option "Allow users to turn app settings syncing on" so that syncing it turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "app settings" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "app settings" group is on by default and configurable by the user.
 <!-- DisableApplicationSettingSync-Description-End -->
 
 <!-- DisableApplicationSettingSync-Editable-Begin -->
@@ -60,13 +57,12 @@ If you do not set or disable this setting, syncing of the "app settings" group i
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableApplicationSettingSync-DFProperties-End -->
 
 <!-- DisableApplicationSettingSync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -93,7 +89,7 @@ If you do not set or disable this setting, syncing of the "app settings" group i
 <!-- DisableAppSyncSettingSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableAppSyncSettingSync-Applicability-End -->
 
 <!-- DisableAppSyncSettingSync-OmaUri-Begin -->
@@ -106,11 +102,11 @@ If you do not set or disable this setting, syncing of the "app settings" group i
 <!-- Description-Source-ADMX -->
 Prevent the "AppSync" group from syncing to and from this PC. This turns off and disables the "AppSync" group on the "sync your settings" page in PC settings.
 
-If you enable this policy setting, the "AppSync" group will not be synced.
+If you enable this policy setting, the "AppSync" group won't be synced.
 
 Use the option "Allow users to turn app syncing on" so that syncing it turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "AppSync" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "AppSync" group is on by default and configurable by the user.
 <!-- DisableAppSyncSettingSync-Description-End -->
 
 <!-- DisableAppSyncSettingSync-Editable-Begin -->
@@ -122,13 +118,12 @@ If you do not set or disable this setting, syncing of the "AppSync" group is on 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableAppSyncSettingSync-DFProperties-End -->
 
 <!-- DisableAppSyncSettingSync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -155,7 +150,7 @@ If you do not set or disable this setting, syncing of the "AppSync" group is on 
 <!-- DisableCredentialsSettingSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableCredentialsSettingSync-Applicability-End -->
 
 <!-- DisableCredentialsSettingSync-OmaUri-Begin -->
@@ -168,11 +163,11 @@ If you do not set or disable this setting, syncing of the "AppSync" group is on 
 <!-- Description-Source-ADMX -->
 Prevent the "passwords" group from syncing to and from this PC. This turns off and disables the "passwords" group on the "sync your settings" page in PC settings.
 
-If you enable this policy setting, the "passwords" group will not be synced.
+If you enable this policy setting, the "passwords" group won't be synced.
 
 Use the option "Allow users to turn passwords syncing on" so that syncing it turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "passwords" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "passwords" group is on by default and configurable by the user.
 <!-- DisableCredentialsSettingSync-Description-End -->
 
 <!-- DisableCredentialsSettingSync-Editable-Begin -->
@@ -184,13 +179,12 @@ If you do not set or disable this setting, syncing of the "passwords" group is o
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableCredentialsSettingSync-DFProperties-End -->
 
 <!-- DisableCredentialsSettingSync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -217,7 +211,7 @@ If you do not set or disable this setting, syncing of the "passwords" group is o
 <!-- DisableDesktopThemeSettingSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableDesktopThemeSettingSync-Applicability-End -->
 
 <!-- DisableDesktopThemeSettingSync-OmaUri-Begin -->
@@ -230,11 +224,11 @@ If you do not set or disable this setting, syncing of the "passwords" group is o
 <!-- Description-Source-ADMX -->
 Prevent the "desktop personalization" group from syncing to and from this PC. This turns off and disables the "desktop personalization" group on the "sync your settings" page in PC settings.
 
-If you enable this policy setting, the "desktop personalization" group will not be synced.
+If you enable this policy setting, the "desktop personalization" group won't be synced.
 
 Use the option "Allow users to turn desktop personalization syncing on" so that syncing it turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "desktop personalization" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "desktop personalization" group is on by default and configurable by the user.
 <!-- DisableDesktopThemeSettingSync-Description-End -->
 
 <!-- DisableDesktopThemeSettingSync-Editable-Begin -->
@@ -246,13 +240,12 @@ If you do not set or disable this setting, syncing of the "desktop personalizati
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableDesktopThemeSettingSync-DFProperties-End -->
 
 <!-- DisableDesktopThemeSettingSync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -279,7 +272,7 @@ If you do not set or disable this setting, syncing of the "desktop personalizati
 <!-- DisablePersonalizationSettingSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisablePersonalizationSettingSync-Applicability-End -->
 
 <!-- DisablePersonalizationSettingSync-OmaUri-Begin -->
@@ -292,11 +285,11 @@ If you do not set or disable this setting, syncing of the "desktop personalizati
 <!-- Description-Source-ADMX -->
 Prevent the "personalize" group from syncing to and from this PC. This turns off and disables the "personalize" group on the "sync your settings" page in PC settings.
 
-If you enable this policy setting, the "personalize" group will not be synced.
+If you enable this policy setting, the "personalize" group won't be synced.
 
 Use the option "Allow users to turn personalize syncing on" so that syncing it turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "personalize" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "personalize" group is on by default and configurable by the user.
 <!-- DisablePersonalizationSettingSync-Description-End -->
 
 <!-- DisablePersonalizationSettingSync-Editable-Begin -->
@@ -308,13 +301,12 @@ If you do not set or disable this setting, syncing of the "personalize" group is
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisablePersonalizationSettingSync-DFProperties-End -->
 
 <!-- DisablePersonalizationSettingSync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -341,7 +333,7 @@ If you do not set or disable this setting, syncing of the "personalize" group is
 <!-- DisableSettingSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableSettingSync-Applicability-End -->
 
 <!-- DisableSettingSync-OmaUri-Begin -->
@@ -358,7 +350,7 @@ If you enable this policy setting, "sync your settings" will be turned off, and 
 
 Use the option "Allow users to turn syncing on" so that syncing it turned off by default but not disabled.
 
-If you do not set or disable this setting, "sync your settings" is on by default and configurable by the user.
+If you don't set or disable this setting, "sync your settings" is on by default and configurable by the user.
 <!-- DisableSettingSync-Description-End -->
 
 <!-- DisableSettingSync-Editable-Begin -->
@@ -370,13 +362,12 @@ If you do not set or disable this setting, "sync your settings" is on by default
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableSettingSync-DFProperties-End -->
 
 <!-- DisableSettingSync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -403,7 +394,7 @@ If you do not set or disable this setting, "sync your settings" is on by default
 <!-- DisableStartLayoutSettingSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableStartLayoutSettingSync-Applicability-End -->
 
 <!-- DisableStartLayoutSettingSync-OmaUri-Begin -->
@@ -416,11 +407,11 @@ If you do not set or disable this setting, "sync your settings" is on by default
 <!-- Description-Source-ADMX -->
 Prevent the "Start layout" group from syncing to and from this PC. This turns off and disables the "Start layout" group on the "sync your settings" page in PC settings.
 
-If you enable this policy setting, the "Start layout" group will not be synced.
+If you enable this policy setting, the "Start layout" group won't be synced.
 
 Use the option "Allow users to turn start syncing on" so that syncing is turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "Start layout" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "Start layout" group is on by default and configurable by the user.
 <!-- DisableStartLayoutSettingSync-Description-End -->
 
 <!-- DisableStartLayoutSettingSync-Editable-Begin -->
@@ -432,13 +423,12 @@ If you do not set or disable this setting, syncing of the "Start layout" group i
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableStartLayoutSettingSync-DFProperties-End -->
 
 <!-- DisableStartLayoutSettingSync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -465,7 +455,7 @@ If you do not set or disable this setting, syncing of the "Start layout" group i
 <!-- DisableSyncOnPaidNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableSyncOnPaidNetwork-Applicability-End -->
 
 <!-- DisableSyncOnPaidNetwork-OmaUri-Begin -->
@@ -480,7 +470,7 @@ Prevent syncing to and from this PC when on metered Internet connections. This t
 
 If you enable this policy setting, syncing on metered connections will be turned off, and no syncing will take place when this PC is on a metered connection.
 
-If you do not set or disable this setting, syncing on metered connections is configurable by the user.
+If you don't set or disable this setting, syncing on metered connections is configurable by the user.
 <!-- DisableSyncOnPaidNetwork-Description-End -->
 
 <!-- DisableSyncOnPaidNetwork-Editable-Begin -->
@@ -492,13 +482,12 @@ If you do not set or disable this setting, syncing on metered connections is con
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableSyncOnPaidNetwork-DFProperties-End -->
 
 <!-- DisableSyncOnPaidNetwork-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -525,7 +514,7 @@ If you do not set or disable this setting, syncing on metered connections is con
 <!-- DisableWindowsSettingSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableWindowsSettingSync-Applicability-End -->
 
 <!-- DisableWindowsSettingSync-OmaUri-Begin -->
@@ -538,11 +527,11 @@ If you do not set or disable this setting, syncing on metered connections is con
 <!-- Description-Source-ADMX -->
 Prevent the "Other Windows settings" group from syncing to and from this PC. This turns off and disables the "Other Windows settings" group on the "sync your settings" page in PC settings.
 
-If you enable this policy setting, the "Other Windows settings" group will not be synced.
+If you enable this policy setting, the "Other Windows settings" group won't be synced.
 
 Use the option "Allow users to turn other Windows settings syncing on" so that syncing it turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "Other Windows settings" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "Other Windows settings" group is on by default and configurable by the user.
 <!-- DisableWindowsSettingSync-Description-End -->
 
 <!-- DisableWindowsSettingSync-Editable-Begin -->
@@ -554,13 +543,12 @@ If you do not set or disable this setting, syncing of the "Other Windows setting
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableWindowsSettingSync-DFProperties-End -->
 
 <!-- DisableWindowsSettingSync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

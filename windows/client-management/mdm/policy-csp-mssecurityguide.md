@@ -4,7 +4,7 @@ description: Learn more about the MSSecurityGuide Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- MSSecurityGuide-Begin -->
 # Policy CSP - MSSecurityGuide
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- MSSecurityGuide-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- ApplyUACRestrictionsToLocalAccountsOnNetworkLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ApplyUACRestrictionsToLocalAccountsOnNetworkLogon-Applicability-End -->
 
 <!-- ApplyUACRestrictionsToLocalAccountsOnNetworkLogon-OmaUri-Begin -->
@@ -53,14 +50,13 @@ ms.topic: reference
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ApplyUACRestrictionsToLocalAccountsOnNetworkLogon-DFProperties-End -->
 
 <!-- ApplyUACRestrictionsToLocalAccountsOnNetworkLogon-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -82,7 +78,7 @@ ms.topic: reference
 <!-- ConfigureSMBV1ClientDriver-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureSMBV1ClientDriver-Applicability-End -->
 
 <!-- ConfigureSMBV1ClientDriver-OmaUri-Begin -->
@@ -104,14 +100,13 @@ ms.topic: reference
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureSMBV1ClientDriver-DFProperties-End -->
 
 <!-- ConfigureSMBV1ClientDriver-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -133,7 +128,7 @@ ms.topic: reference
 <!-- ConfigureSMBV1Server-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureSMBV1Server-Applicability-End -->
 
 <!-- ConfigureSMBV1Server-OmaUri-Begin -->
@@ -155,14 +150,13 @@ ms.topic: reference
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureSMBV1Server-DFProperties-End -->
 
 <!-- ConfigureSMBV1Server-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -184,7 +178,7 @@ ms.topic: reference
 <!-- EnableStructuredExceptionHandlingOverwriteProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnableStructuredExceptionHandlingOverwriteProtection-Applicability-End -->
 
 <!-- EnableStructuredExceptionHandlingOverwriteProtection-OmaUri-Begin -->
@@ -206,14 +200,13 @@ ms.topic: reference
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableStructuredExceptionHandlingOverwriteProtection-DFProperties-End -->
 
 <!-- EnableStructuredExceptionHandlingOverwriteProtection-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -229,13 +222,63 @@ ms.topic: reference
 
 <!-- EnableStructuredExceptionHandlingOverwriteProtection-End -->
 
+<!-- NetBTNodeTypeConfiguration-Begin -->
+## NetBTNodeTypeConfiguration
+
+<!-- NetBTNodeTypeConfiguration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- NetBTNodeTypeConfiguration-Applicability-End -->
+
+<!-- NetBTNodeTypeConfiguration-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MSSecurityGuide/NetBTNodeTypeConfiguration
+```
+<!-- NetBTNodeTypeConfiguration-OmaUri-End -->
+
+<!-- NetBTNodeTypeConfiguration-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- NetBTNodeTypeConfiguration-Description-End -->
+
+<!-- NetBTNodeTypeConfiguration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NetBTNodeTypeConfiguration-Editable-End -->
+
+<!-- NetBTNodeTypeConfiguration-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NetBTNodeTypeConfiguration-DFProperties-End -->
+
+<!-- NetBTNodeTypeConfiguration-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_SecGuide_0050_NetbtNodeTypeConfig |
+| ADMX File Name | SecGuide.admx |
+<!-- NetBTNodeTypeConfiguration-AdmxBacked-End -->
+
+<!-- NetBTNodeTypeConfiguration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NetBTNodeTypeConfiguration-Examples-End -->
+
+<!-- NetBTNodeTypeConfiguration-End -->
+
 <!-- TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications-Begin -->
 ## TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications
 
 <!-- TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications-Applicability-End -->
 
 <!-- TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications-OmaUri-Begin -->
@@ -257,14 +300,13 @@ ms.topic: reference
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications-DFProperties-End -->
 
 <!-- TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -286,7 +328,7 @@ ms.topic: reference
 <!-- WDigestAuthentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- WDigestAuthentication-Applicability-End -->
 
 <!-- WDigestAuthentication-OmaUri-Begin -->
@@ -308,14 +350,13 @@ ms.topic: reference
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WDigestAuthentication-DFProperties-End -->
 
 <!-- WDigestAuthentication-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

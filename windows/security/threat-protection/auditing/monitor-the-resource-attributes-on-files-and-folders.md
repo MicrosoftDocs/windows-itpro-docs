@@ -1,8 +1,8 @@
 ---
-title: Monitor the resource attributes on files and folders (Windows 10)
+title: Monitor the resource attributes on files and folders
 description: Learn how to use advanced security auditing options to monitor attempts to change settings on the resource attributes of files.
 ms.assetid: 4944097b-320f-44c7-88ed-bf55946a358b
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/09/2021
 ms.technology: itpro-security
 ---
@@ -31,7 +31,7 @@ If your organization has a carefully thought out authorization configuration for
 Use the following procedures to configure settings to monitor changes to resource attributes on files and folders. These procedures assume that have configured and deployed central access policies in your network. For more information about how to configure and deploy central access policies, see [Dynamic Access Control: Scenario Overview](/windows-server/identity/solution-guides/dynamic-access-control--scenario-overview) .
 
 >**Note:**  Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
- 
+
 **To monitor changes to resource attributes on files**
 
 1.  Sign in to your domain controller by using domain administrator credentials.

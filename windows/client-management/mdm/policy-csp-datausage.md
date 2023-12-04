@@ -4,7 +4,7 @@ description: Learn more about the DataUsage Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- DataUsage-Begin -->
 # Policy CSP - DataUsage
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- DataUsage-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- SetCost3G-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SetCost3G-Applicability-End -->
 
 <!-- SetCost3G-OmaUri-Begin -->
@@ -48,11 +45,11 @@ This policy setting configures the cost of 3G connections on the local machine.
 
 - Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.
 
-- Fixed: Use of this connection is not restricted by usage charges and capacity constraints up to a certain data limit.
+- Fixed: Use of this connection isn't restricted by usage charges and capacity constraints up to a certain data limit.
 
 - Variable: This connection is costed on a per byte basis.
 
-- If this policy setting is disabled or is not configured, the cost of 3G connections is Fixed by default.
+- If this policy setting is disabled or isn't configured, the cost of 3G connections is Fixed by default.
 <!-- SetCost3G-Description-End -->
 
 <!-- SetCost3G-Editable-Begin -->
@@ -66,13 +63,12 @@ This policy setting configures the cost of 3G connections on the local machine.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SetCost3G-DFProperties-End -->
 
 <!-- SetCost3G-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -98,7 +94,7 @@ This policy setting configures the cost of 3G connections on the local machine.
 <!-- SetCost4G-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SetCost4G-Applicability-End -->
 
 <!-- SetCost4G-OmaUri-Begin -->
@@ -115,11 +111,11 @@ This policy setting configures the cost of 4G connections on the local machine.
 
 - Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.
 
-- Fixed: Use of this connection is not restricted by usage charges and capacity constraints up to a certain data limit.
+- Fixed: Use of this connection isn't restricted by usage charges and capacity constraints up to a certain data limit.
 
 - Variable: This connection is costed on a per byte basis.
 
-- If this policy setting is disabled or is not configured, the cost of 4G connections is Fixed by default.
+- If this policy setting is disabled or isn't configured, the cost of 4G connections is Fixed by default.
 <!-- SetCost4G-Description-End -->
 
 <!-- SetCost4G-Editable-Begin -->
@@ -131,13 +127,12 @@ This policy setting configures the cost of 4G connections on the local machine.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SetCost4G-DFProperties-End -->
 
 <!-- SetCost4G-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

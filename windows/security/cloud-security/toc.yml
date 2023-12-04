@@ -1,0 +1,17 @@
+items:
+- name: Overview
+  href: index.md
+- name: Join Active Directory and Microsoft Entra ID with single sign-on (SSO) 🔗
+  href: /azure/active-directory/devices/concept-azure-ad-join
+- name: Security baselines with Intune 🔗
+  href: /mem/intune/protect/security-baselines
+- name: Remote wipe (Autopilot reset) 🔗
+  href: /windows/client-management/mdm/remotewipe-csp
+- name: Mobile Device Management (MDM) 🔗
+  href: /windows/client-management/mdm/
+- name: Universal Print 🔗
+  href: /universal-print
+- name: Windows Autopatch 🔗
+  href: /windows/deployment/windows-autopatch
+- name: Windows Autopilot 🔗
+  href: /windows/deployment/windows-autopilot

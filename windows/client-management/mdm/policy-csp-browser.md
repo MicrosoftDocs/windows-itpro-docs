@@ -4,7 +4,7 @@ description: Learn more about the Browser Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/27/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowAddressBarDropdown-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowAddressBarDropdown-Applicability-End -->
 
 <!-- AllowAddressBarDropdown-OmaUri-Begin -->
@@ -62,7 +62,7 @@ This policy setting lets you decide whether the Address bar drop-down functional
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowAddressBarDropdown-DFProperties-End -->
@@ -102,7 +102,7 @@ This policy setting lets you decide whether the Address bar drop-down functional
 <!-- AllowAutofill-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAutofill-Applicability-End -->
 
 <!-- AllowAutofill-OmaUri-Begin -->
@@ -135,7 +135,7 @@ This policy setting lets you decide whether employees can use Autofill to automa
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowAutofill-DFProperties-End -->
@@ -185,7 +185,7 @@ To verify AllowAutofill is set to 0 (not allowed):
 <!-- AllowBrowser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowBrowser-Applicability-End -->
 
 <!-- AllowBrowser-OmaUri-Begin -->
@@ -212,7 +212,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowBrowser-DFProperties-End -->
@@ -238,7 +238,7 @@ This policy is deprecated.
 <!-- AllowConfigurationUpdateForBooksLibrary-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowConfigurationUpdateForBooksLibrary-Applicability-End -->
 
 <!-- AllowConfigurationUpdateForBooksLibrary-OmaUri-Begin -->
@@ -265,7 +265,7 @@ This policy setting lets you decide whether Microsoft Edge can automatically upd
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowConfigurationUpdateForBooksLibrary-DFProperties-End -->
@@ -291,7 +291,7 @@ This policy setting lets you decide whether Microsoft Edge can automatically upd
 <!-- AllowCookies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowCookies-Applicability-End -->
 
 <!-- AllowCookies-OmaUri-Begin -->
@@ -309,8 +309,11 @@ This policy setting lets you decide whether Microsoft Edge can automatically upd
 This setting lets you configure how to work with cookies.
 
 - If you enable this setting, you must also decide whether to:
+
 Allow all cookies (default): Allows all cookies from all websites.
+
 Block all cookies: Blocks all cookies from all websites.
+
 Block only 3rd-party cookies: Blocks only cookies from 3rd-party websites.
 
 - If you disable or don't configure this setting, all cookies are allowed from all sites.
@@ -325,7 +328,7 @@ Block only 3rd-party cookies: Blocks only cookies from 3rd-party websites.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 2 |
 <!-- AllowCookies-DFProperties-End -->
@@ -373,7 +376,7 @@ To verify AllowCookies is set to 0 (not allowed):
 <!-- AllowDeveloperTools-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- AllowDeveloperTools-Applicability-End -->
 
 <!-- AllowDeveloperTools-OmaUri-Begin -->
@@ -404,7 +407,7 @@ This policy setting lets you decide whether F12 Developer Tools are available on
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowDeveloperTools-DFProperties-End -->
@@ -444,7 +447,7 @@ This policy setting lets you decide whether F12 Developer Tools are available on
 <!-- AllowDoNotTrack-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDoNotTrack-Applicability-End -->
 
 <!-- AllowDoNotTrack-OmaUri-Begin -->
@@ -477,7 +480,7 @@ This policy setting lets you decide whether employees can send Do Not Track requ
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowDoNotTrack-DFProperties-End -->
@@ -524,7 +527,7 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 <!-- AllowExtensions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowExtensions-Applicability-End -->
 
 <!-- AllowExtensions-OmaUri-Begin -->
@@ -555,7 +558,7 @@ This setting lets you decide whether employees can load extensions in Microsoft 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowExtensions-DFProperties-End -->
@@ -595,7 +598,7 @@ This setting lets you decide whether employees can load extensions in Microsoft 
 <!-- AllowFlash-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowFlash-Applicability-End -->
 
 <!-- AllowFlash-OmaUri-Begin -->
@@ -626,7 +629,7 @@ This setting lets you decide whether employees can run Adobe Flash in Microsoft 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowFlash-DFProperties-End -->
@@ -666,7 +669,7 @@ This setting lets you decide whether employees can run Adobe Flash in Microsoft 
 <!-- AllowFlashClickToRun-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowFlashClickToRun-Applicability-End -->
 
 <!-- AllowFlashClickToRun-OmaUri-Begin -->
@@ -695,7 +698,7 @@ Sites get onto the auto-allowed list based on user feedback, specifically by how
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowFlashClickToRun-DFProperties-End -->
@@ -735,7 +738,7 @@ Sites get onto the auto-allowed list based on user feedback, specifically by how
 <!-- AllowFullScreenMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowFullScreenMode-Applicability-End -->
 
 <!-- AllowFullScreenMode-OmaUri-Begin -->
@@ -766,7 +769,7 @@ If disabled, full-screen mode is unavailable for use in Microsoft Edge.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowFullScreenMode-DFProperties-End -->
@@ -806,7 +809,7 @@ If disabled, full-screen mode is unavailable for use in Microsoft Edge.
 <!-- AllowInPrivate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- AllowInPrivate-Applicability-End -->
 
 <!-- AllowInPrivate-OmaUri-Begin -->
@@ -837,7 +840,7 @@ This policy setting lets you decide whether employees can browse using InPrivate
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowInPrivate-DFProperties-End -->
@@ -877,7 +880,7 @@ This policy setting lets you decide whether employees can browse using InPrivate
 <!-- AllowMicrosoftCompatibilityList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowMicrosoftCompatibilityList-Applicability-End -->
 
 <!-- AllowMicrosoftCompatibilityList-OmaUri-Begin -->
@@ -908,7 +911,7 @@ This policy setting lets you decide whether to use the Microsoft Compatibility L
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowMicrosoftCompatibilityList-DFProperties-End -->
@@ -948,7 +951,7 @@ This policy setting lets you decide whether to use the Microsoft Compatibility L
 <!-- AllowPasswordManager-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- AllowPasswordManager-Applicability-End -->
 
 <!-- AllowPasswordManager-OmaUri-Begin -->
@@ -981,7 +984,7 @@ This policy setting lets you decide whether employees can save their passwords l
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowPasswordManager-DFProperties-End -->
@@ -1026,7 +1029,7 @@ To verify AllowPasswordManager is set to 0 (not allowed):
 <!-- AllowPopups-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowPopups-Applicability-End -->
 
 <!-- AllowPopups-OmaUri-Begin -->
@@ -1041,7 +1044,7 @@ To verify AllowPasswordManager is set to 0 (not allowed):
 
 <!-- AllowPopups-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting lets you decide whether to turn on Pop-up Blocker. By default, Pop-up Blocker is turned on..
+This policy setting lets you decide whether to turn on Pop-up Blocker. By default, Pop-up Blocker is turned on.
 
 - If you enable this setting, Pop-up Blocker is turned on, stopping pop-up windows from appearing.
 
@@ -1059,7 +1062,7 @@ This policy setting lets you decide whether to turn on Pop-up Blocker. By defaul
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowPopups-DFProperties-End -->
@@ -1104,7 +1107,7 @@ To verify AllowPopups is set to 0 (not allowed):
 <!-- AllowPrelaunch-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowPrelaunch-Applicability-End -->
 
 <!-- AllowPrelaunch-OmaUri-Begin -->
@@ -1135,7 +1138,7 @@ If you prevent pre-launch, Microsoft Edge won't pre-launch during Windows sign i
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowPrelaunch-DFProperties-End -->
@@ -1174,7 +1177,7 @@ If you prevent pre-launch, Microsoft Edge won't pre-launch during Windows sign i
 <!-- AllowPrinting-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowPrinting-Applicability-End -->
 
 <!-- AllowPrinting-OmaUri-Begin -->
@@ -1193,7 +1196,7 @@ With this policy, you can restrict whether printing web content in Microsoft Edg
 
 If enabled, printing is allowed.
 
-If disabled, printing is not allowed.
+If disabled, printing isn't allowed.
 <!-- AllowPrinting-Description-End -->
 
 <!-- AllowPrinting-Editable-Begin -->
@@ -1205,7 +1208,7 @@ If disabled, printing is not allowed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowPrinting-DFProperties-End -->
@@ -1245,7 +1248,7 @@ If disabled, printing is not allowed.
 <!-- AllowSavingHistory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowSavingHistory-Applicability-End -->
 
 <!-- AllowSavingHistory-OmaUri-Begin -->
@@ -1264,7 +1267,7 @@ Microsoft Edge saves your user's browsing history, which is made up of info abou
 
 If enabled or not configured, the browsing history is saved and visible in the History pane.
 
-If disabled, the browsing history stops saving and is not visible in the History pane. If browsing history exists before this policy was disabled, the previous browsing history remains visible in the History pane. This policy, when disabled, does not stop roaming of existing history or history coming from other roamed devices.
+If disabled, the browsing history stops saving and isn't visible in the History pane. If browsing history exists before this policy was disabled, the previous browsing history remains visible in the History pane. This policy, when disabled, doesn't stop roaming of existing history or history coming from other roamed devices.
 <!-- AllowSavingHistory-Description-End -->
 
 <!-- AllowSavingHistory-Editable-Begin -->
@@ -1276,7 +1279,7 @@ If disabled, the browsing history stops saving and is not visible in the History
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSavingHistory-DFProperties-End -->
@@ -1316,7 +1319,7 @@ If disabled, the browsing history stops saving and is not visible in the History
 <!-- AllowSearchEngineCustomization-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowSearchEngineCustomization-Applicability-End -->
 
 <!-- AllowSearchEngineCustomization-OmaUri-Begin -->
@@ -1332,9 +1335,11 @@ If disabled, the browsing history stops saving and is not visible in the History
 <!-- AllowSearchEngineCustomization-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether users can change their search engine.
+
 - If you disable this setting, users can't add new search engines or change the default used in the address bar.
 
-**Important**
+Important.
+
 This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
 
 - If you enable or don't configure this policy, users can add new search engines and change the default used in the address bar from within Microsoft Edge Settings.
@@ -1351,7 +1356,7 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSearchEngineCustomization-DFProperties-End -->
@@ -1391,7 +1396,7 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
 <!-- AllowSearchSuggestionsinAddressBar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowSearchSuggestionsinAddressBar-Applicability-End -->
 
 <!-- AllowSearchSuggestionsinAddressBar-OmaUri-Begin -->
@@ -1424,7 +1429,7 @@ This policy setting lets you decide whether search suggestions appear in the Add
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSearchSuggestionsinAddressBar-DFProperties-End -->
@@ -1464,7 +1469,7 @@ This policy setting lets you decide whether search suggestions appear in the Add
 <!-- AllowSideloadingOfExtensions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowSideloadingOfExtensions-Applicability-End -->
 
 <!-- AllowSideloadingOfExtensions-OmaUri-Begin -->
@@ -1483,15 +1488,17 @@ Sideloading installs and runs unverified extensions in Microsoft Edge. With this
 
 If enabled or not configured, sideloading of unverified extensions in Microsoft Edge is allowed.
 
-If disabled, sideloading of unverified extensions in Microsoft Edge is not allowed. Extensions can be installed only through Microsoft store (including a store for business), enterprise storefront (such as Company Portal) or PowerShell (using Add-AppxPackage). When disabled, this policy does not prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, in Group Policy Editor, enable Allows development of Windows Store apps and installing them from an integrated development environment (IDE), which is located at:
+If disabled, sideloading of unverified extensions in Microsoft Edge isn't allowed. Extensions can be installed only through Microsoft store (including a store for business), enterprise storefront (such as Company Portal) or PowerShell (using Add-AppxPackage). When disabled, this policy doesn't prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, in Group Policy Editor, enable Allows development of Windows Store apps and installing them from an integrated development environment (IDE), which is located at:
 
-Computer Configuration > Administrative Templates > Windows Components > App Package Deployment
+Computer Configuration > Administrative Templates > Windows Components > App Package Deployment.
 
 Supported versions: Microsoft Edge on Windows 10, version 1809
-Default setting: Disabled or not configured
+Default setting: Disabled or not configured.
+
 Related policies:
-  - Allows development of Windows Store apps and installing them from an integrated development environment (IDE)
-  - Allow all trusted apps to install 
+
+- Allows development of Windows Store apps and installing them from an integrated development environment (IDE)
+- Allow all trusted apps to install
 <!-- AllowSideloadingOfExtensions-Description-End -->
 
 <!-- AllowSideloadingOfExtensions-Editable-Begin -->
@@ -1503,7 +1510,7 @@ Related policies:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSideloadingOfExtensions-DFProperties-End -->
@@ -1513,7 +1520,7 @@ Related policies:
 
 | Value | Description |
 |:--|:--|
-| 0 | Prevented/Not allowed. Disabling does not prevent sideloading of extensions using Add-AppxPackage via Powershell. To prevent this, set the ApplicationManagement/AllowDeveloperUnlock policy to 1 (enabled). |
+| 0 | Prevented/Not allowed. Disabling doesn't prevent sideloading of extensions using Add-AppxPackage via Powershell. To prevent this, set the ApplicationManagement/AllowDeveloperUnlock policy to 1 (enabled). |
 | 1 (Default) | Allowed. |
 <!-- AllowSideloadingOfExtensions-AllowedValues-End -->
 
@@ -1543,7 +1550,7 @@ Related policies:
 <!-- AllowSmartScreen-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowSmartScreen-Applicability-End -->
 
 <!-- AllowSmartScreen-OmaUri-Begin -->
@@ -1576,7 +1583,7 @@ This policy setting lets you configure whether to turn on Windows Defender Smart
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSmartScreen-DFProperties-End -->
@@ -1586,7 +1593,7 @@ This policy setting lets you configure whether to turn on Windows Defender Smart
 
 | Value | Description |
 |:--|:--|
-| 0 | Turned off. Do not protect users from potential threats and prevent users from turning it on. |
+| 0 | Turned off. Don't protect users from potential threats and prevent users from turning it on. |
 | 1 (Default) | Turned on. Protect users from potential threats and prevent users from turning it off. |
 <!-- AllowSmartScreen-AllowedValues-End -->
 
@@ -1621,7 +1628,7 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 <!-- AllowTabPreloading-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowTabPreloading-Applicability-End -->
 
 <!-- AllowTabPreloading-OmaUri-Begin -->
@@ -1652,7 +1659,7 @@ If you prevent preloading, Microsoft Edge won't load the Start or New Tab page d
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowTabPreloading-DFProperties-End -->
@@ -1691,7 +1698,7 @@ If you prevent preloading, Microsoft Edge won't load the Start or New Tab page d
 <!-- AllowWebContentOnNewTabPage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowWebContentOnNewTabPage-Applicability-End -->
 
 <!-- AllowWebContentOnNewTabPage-OmaUri-Begin -->
@@ -1724,7 +1731,7 @@ This policy setting lets you configure what appears when Microsoft Edge opens a 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowWebContentOnNewTabPage-DFProperties-End -->
@@ -1764,7 +1771,7 @@ This policy setting lets you configure what appears when Microsoft Edge opens a 
 <!-- AlwaysEnableBooksLibrary-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AlwaysEnableBooksLibrary-Applicability-End -->
 
 <!-- AlwaysEnableBooksLibrary-OmaUri-Begin -->
@@ -1795,7 +1802,7 @@ This policy setting helps you to decide whether to make the Books tab visible, r
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AlwaysEnableBooksLibrary-DFProperties-End -->
@@ -1835,7 +1842,7 @@ This policy setting helps you to decide whether to make the Books tab visible, r
 <!-- ClearBrowsingDataOnExit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ClearBrowsingDataOnExit-Applicability-End -->
 
 <!-- ClearBrowsingDataOnExit-OmaUri-Begin -->
@@ -1852,7 +1859,7 @@ This policy setting helps you to decide whether to make the Books tab visible, r
 <!-- Description-Source-ADMX -->
 This policy setting allows the automatic clearing of browsing data when Microsoft Edge closes.
 
-- If you enable this policy setting, clearing browsing history on exit is turned on.
+- If you enable this policy setting, clearing browsing history on exit's turned on.
 
 - If you disable or don't configure this policy setting, it can be turned on and configured by the employee in the Clear browsing data options under Settings.
 <!-- ClearBrowsingDataOnExit-Description-End -->
@@ -1866,7 +1873,7 @@ This policy setting allows the automatic clearing of browsing data when Microsof
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ClearBrowsingDataOnExit-DFProperties-End -->
@@ -1913,7 +1920,7 @@ To verify whether browsing data is cleared on exit (ClearBrowsingDataOnExit is s
 <!-- ConfigureAdditionalSearchEngines-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ConfigureAdditionalSearchEngines-Applicability-End -->
 
 <!-- ConfigureAdditionalSearchEngines-OmaUri-Begin -->
@@ -1930,14 +1937,15 @@ To verify whether browsing data is cleared on exit (ClearBrowsingDataOnExit is s
 <!-- Description-Source-ADMX -->
 This policy setting lets you add up to 5 additional search engines, which can't be removed by your employees, but can be made a personal default engine. This setting doesn't set the default search engine. For that, you must use the "Set default search engine" setting.
 
-**Important**
+Important.
+
 This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
 
 - If you enable this setting, you can add up to 5 additional search engines. For each additional engine, you must also add a link to your OpenSearch XML file, including at least the short name and https: URL of the search engine. For more info about creating the OpenSearch XML file, see the Understanding OpenSearch Standards (https://msdn.microsoft.com/library/dd163546.aspx) topic. Use this format to specify the link(s) you wish to add: `<https://fabrikam.com/opensearch.xml>` `<https://www.contoso.com/opensearch.xml>`
 
 - If you disable this setting, any added search engines are removed from your employee's devices.
 
-- If you don't configure this setting, the search engine list is set to what is specified in App settings.
+- If you don't configure this setting, the search engine list is set to what's specified in App settings.
 <!-- ConfigureAdditionalSearchEngines-Description-End -->
 
 <!-- ConfigureAdditionalSearchEngines-Editable-Begin -->
@@ -1949,7 +1957,7 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureAdditionalSearchEngines-DFProperties-End -->
 
@@ -1979,7 +1987,7 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
 <!-- ConfigureFavoritesBar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureFavoritesBar-Applicability-End -->
 
 <!-- ConfigureFavoritesBar-OmaUri-Begin -->
@@ -1994,7 +2002,7 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
 
 <!-- ConfigureFavoritesBar-Description-Begin -->
 <!-- Description-Source-ADMX -->
-The favorites bar shows your user's links to sites they have added to it. With this policy, you can specify whether to set the favorites bar to always be visible or hidden on any page.
+The favorites bar shows your user's links to sites they've added to it. With this policy, you can specify whether to set the favorites bar to always be visible or hidden on any page.
 
 If enabled, favorites bar is always visible on any page, and the favorites bar toggle in Settings sets to On, but disabled preventing your users from making changes. An error message also shows at the top of the Settings pane indicating that your organization manages some settings. The show bar/hide bar option is hidden from the context menu.
 
@@ -2012,7 +2020,7 @@ If not configured, the favorites bar is hidden but is visible on the Start and N
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureFavoritesBar-DFProperties-End -->
@@ -2052,7 +2060,7 @@ If not configured, the favorites bar is hidden but is visible on the Start and N
 <!-- ConfigureHomeButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureHomeButton-Applicability-End -->
 
 <!-- ConfigureHomeButton-OmaUri-Begin -->
@@ -2074,15 +2082,21 @@ By default, this policy is disabled or not configured and clicking the home butt
 When enabled, the home button is locked down preventing your users from making changes in Microsoft Edge's UI settings. To let your users change the Microsoft Edge UI settings, enable the Unlock Home Button policy.
 
 If Enabled AND:
-  - Show home button & set to Start page is selected, clicking the home button loads the Start page.
-  - Show home button & set to New tab page is selected, clicking the home button loads a New tab page.
-  - Show home button & set a specific page is selected, clicking the home button loads the URL specified in the Set Home Button URL policy.
-  - Hide home button is selected, the home button is hidden in Microsoft Edge.
 
-Default setting: Disabled or not configured
+- Show home button & set to Start page is selected, clicking the home button loads the Start page.
+
+- Show home button & set to New tab page is selected, clicking the home button loads a New tab page.
+
+- Show home button & set a specific page is selected, clicking the home button loads the URL specified in the Set Home Button URL policy.
+
+- Hide home button is selected, the home button is hidden in Microsoft Edge.
+
+Default setting: Disabled or not configured.
+
 Related policies:
-  - Set Home Button URL
-  - Unlock Home Button.
+
+- Set Home Button URL
+- Unlock Home Button.
 <!-- ConfigureHomeButton-Description-End -->
 
 <!-- ConfigureHomeButton-Editable-Begin -->
@@ -2094,7 +2108,7 @@ Related policies:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureHomeButton-DFProperties-End -->
@@ -2138,7 +2152,7 @@ Related policies:
 <!-- ConfigureKioskMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureKioskMode-Applicability-End -->
 
 <!-- ConfigureKioskMode-OmaUri-Begin -->
@@ -2158,11 +2172,16 @@ Configure how Microsoft Edge behaves when it's running in kiosk mode with assign
 You need to configure Microsoft Edge in assigned access for this policy to take effect; otherwise, these settings are ignored. To learn more about assigned access and kiosk configuration, see "Configure kiosk and shared devices running Windows desktop editions" (https://aka.ms/E489vw).
 
 If enabled and set to 0 (Default or not configured):
-  - If it's a single app, it runs InPrivate full screen for digital signage or interactive displays.
-  - If it's one of many apps, Microsoft Edge runs as normal.
+
+- If it's a single app, it runs InPrivate full screen for digital signage or interactive displays.
+
+- If it's one of many apps, Microsoft Edge runs as normal.
+
 If enabled and set to 1:
-  - If it's a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can't minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking "End session." You can configure Microsoft Edge to restart after a period of inactivity by using the "Configure kiosk reset after idle timeout" policy.
-  - If it's one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can't customize Microsoft Edge.
+
+- If it's a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can't minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking "End session". You can configure Microsoft Edge to restart after a period of inactivity by using the "Configure kiosk reset after idle timeout" policy.
+
+- If it's one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can't customize Microsoft Edge.
 <!-- ConfigureKioskMode-Description-End -->
 
 <!-- ConfigureKioskMode-Editable-Begin -->
@@ -2174,7 +2193,7 @@ If enabled and set to 1:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureKioskMode-DFProperties-End -->
@@ -2213,7 +2232,7 @@ If enabled and set to 1:
 <!-- ConfigureKioskResetAfterIdleTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureKioskResetAfterIdleTimeout-Applicability-End -->
 
 <!-- ConfigureKioskResetAfterIdleTimeout-OmaUri-Begin -->
@@ -2232,11 +2251,11 @@ You can configure Microsoft Edge to reset to the configured start experience aft
 
 If enabled, you can set the idle time in minutes (0-1440). You must set the Configure kiosk mode policy to 1 and configure Microsoft Edge in assigned access as a single app for this policy to work. Once the idle time meets the time specified, a confirmation message prompts the user to continue, and if no user action, Microsoft Edge resets after 30 seconds.
 
-If you set this policy to 0, Microsoft Edge does not use an idle timer.
+If you set this policy to 0, Microsoft Edge doesn't use an idle timer.
 
 If disabled or not configured, the default value is 5 minutes.
 
-If you do not configure Microsoft Edge in assigned access, then this policy does not take effect.
+If you don't configure Microsoft Edge in assigned access, then this policy doesn't take effect.
 <!-- ConfigureKioskResetAfterIdleTimeout-Description-End -->
 
 <!-- ConfigureKioskResetAfterIdleTimeout-Editable-Begin -->
@@ -2248,7 +2267,7 @@ If you do not configure Microsoft Edge in assigned access, then this policy does
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1440]` |
 | Default Value  | 5 |
@@ -2280,7 +2299,7 @@ If you do not configure Microsoft Edge in assigned access, then this policy does
 <!-- ConfigureOpenMicrosoftEdgeWith-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureOpenMicrosoftEdgeWith-Applicability-End -->
 
 <!-- ConfigureOpenMicrosoftEdgeWith-OmaUri-Begin -->
@@ -2298,10 +2317,14 @@ If you do not configure Microsoft Edge in assigned access, then this policy does
 You can configure Microsoft Edge to lock down the Start page, preventing users from changing or customizing it.
 
 If enabled, you can choose one of the following options:
-  - Start page: the Start page loads ignoring the Configure Start Pages policy.
-  - New tab page: the New tab page loads ignoring the Configure Start Pages policy.
-  - Previous pages: all tabs the user had open when Microsoft Edge last closed loads ignoring the Configure Start Pages policy.
-  - A specific page or pages: the URL(s) specified with Configure Start Pages policy load(s). If selected, you must specify at least one URL in Configure Start Pages; otherwise, this policy is ignored.
+
+- Start page: the Start page loads ignoring the Configure Start Pages policy.
+
+- New tab page: the New tab page loads ignoring the Configure Start Pages policy.
+
+- Previous pages: all tabs the user had open when Microsoft Edge last closed loads ignoring the Configure Start Pages policy.
+
+- A specific page or pages: the URL(s) specified with Configure Start Pages policy load(s). If selected, you must specify at least one URL in Configure Start Pages; otherwise, this policy is ignored.
 
 When enabled, and you want to make changes, you must first set the Disable Lockdown of Start Pages to not configured, make the changes to the Configure Open Microsoft Edge With policy, and then enable the Disable Lockdown of Start Pages policy.
 
@@ -2309,6 +2332,7 @@ If disabled or not configured, and you enable the Disable Lockdown of Start Page
 
 Default setting: A specific page or pages (default)
 Related policies:
+
 -Disable Lockdown of Start Pages
 -Configure Start Pages.
 <!-- ConfigureOpenMicrosoftEdgeWith-Description-End -->
@@ -2322,7 +2346,7 @@ Related policies:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 3 |
 <!-- ConfigureOpenMicrosoftEdgeWith-DFProperties-End -->
@@ -2369,7 +2393,7 @@ Related policies:
 <!-- ConfigureTelemetryForMicrosoft365Analytics-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureTelemetryForMicrosoft365Analytics-Applicability-End -->
 
 <!-- ConfigureTelemetryForMicrosoft365Analytics-OmaUri-Begin -->
@@ -2384,7 +2408,7 @@ Related policies:
 
 <!-- ConfigureTelemetryForMicrosoft365Analytics-Description-Begin -->
 <!-- Description-Source-ADMX -->
-You can configure Microsoft Edge to send intranet history only, internet history only, or both to Desktop Analytics for enterprise devices with a configured Commercial ID. If disabled or not configured, Microsoft Edge does not send browsing history data to Desktop Analytics.
+You can configure Microsoft Edge to send intranet history only, internet history only, or both to Desktop Analytics for enterprise devices with a configured Commercial ID. If disabled or not configured, Microsoft Edge doesn't send browsing history data to Desktop Analytics.
 
 Supported versions: Microsoft Edge on Windows 10, version 1809
 Default setting: Disabled or not configured (no data collected or sent)
@@ -2399,7 +2423,7 @@ Default setting: Disabled or not configured (no data collected or sent)
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureTelemetryForMicrosoft365Analytics-DFProperties-End -->
@@ -2441,7 +2465,7 @@ Default setting: Disabled or not configured (no data collected or sent)
 <!-- DisableLockdownOfStartPages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableLockdownOfStartPages-Applicability-End -->
 
 <!-- DisableLockdownOfStartPages-OmaUri-Begin -->
@@ -2456,14 +2480,16 @@ Default setting: Disabled or not configured (no data collected or sent)
 
 <!-- DisableLockdownOfStartPages-Description-Begin -->
 <!-- Description-Source-ADMX -->
-You can configure Microsoft Edge to disable the lockdown of Start pages allowing users to change or customize their start pages. To do this, you must also enable the Configure Start Pages or Configure Open Microsoft With policy. When enabled, all configured start pages are editable. Any Start page configured using the Configure Start pages policy is not locked down allowing users to edit their Start pages.
+You can configure Microsoft Edge to disable the lockdown of Start pages allowing users to change or customize their start pages. To do this, you must also enable the Configure Start Pages or Configure Open Microsoft With policy. When enabled, all configured start pages are editable. Any Start page configured using the Configure Start pages policy isn't locked down allowing users to edit their Start pages.
 
-If disabled or not configured, the Start pages configured in the Configure Start Pages policy cannot be changed and remain locked down.
+If disabled or not configured, the Start pages configured in the Configure Start Pages policy can't be changed and remain locked down.
 
-Supported devices: Domain-joined or MDM-enrolled
+Supported devices: Domain-joined or MDM-enrolled.
+
 Related policy:
-  - Configure Start Pages
-  - Configure Open Microsoft Edge With.
+
+- Configure Start Pages
+- Configure Open Microsoft Edge With.
 <!-- DisableLockdownOfStartPages-Description-End -->
 
 <!-- DisableLockdownOfStartPages-Editable-Begin -->
@@ -2480,7 +2506,7 @@ Related policy:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableLockdownOfStartPages-DFProperties-End -->
@@ -2519,7 +2545,7 @@ Related policy:
 <!-- EnableExtendedBooksTelemetry-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnableExtendedBooksTelemetry-Applicability-End -->
 
 <!-- EnableExtendedBooksTelemetry-OmaUri-Begin -->
@@ -2550,7 +2576,7 @@ This policy setting lets you decide how much data to send to Microsoft about the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableExtendedBooksTelemetry-DFProperties-End -->
@@ -2590,7 +2616,7 @@ This policy setting lets you decide how much data to send to Microsoft about the
 <!-- EnterpriseModeSiteList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- EnterpriseModeSiteList-Applicability-End -->
 
 <!-- EnterpriseModeSiteList-OmaUri-Begin -->
@@ -2621,7 +2647,7 @@ This policy setting lets you configure whether to use Enterprise Mode and the En
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnterpriseModeSiteList-DFProperties-End -->
 
@@ -2651,7 +2677,7 @@ This policy setting lets you configure whether to use Enterprise Mode and the En
 <!-- EnterpriseSiteListServiceUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- EnterpriseSiteListServiceUrl-Applicability-End -->
 
 <!-- EnterpriseSiteListServiceUrl-OmaUri-Begin -->
@@ -2678,7 +2704,7 @@ Important. Discontinued in Windows 10, version 1511. Use the Browser/EnterpriseM
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnterpriseSiteListServiceUrl-DFProperties-End -->
 
@@ -2694,7 +2720,7 @@ Important. Discontinued in Windows 10, version 1511. Use the Browser/EnterpriseM
 <!-- FirstRunURL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- FirstRunURL-Applicability-End -->
 
 <!-- FirstRunURL-OmaUri-Begin -->
@@ -2721,7 +2747,7 @@ Configure first run URL.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Dependency [Browser_FirstRunURL_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Browser/PreventFirstRunPage` <br> Dependency Allowed Value: `[0]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- FirstRunURL-DFProperties-End -->
@@ -2738,7 +2764,7 @@ Configure first run URL.
 <!-- HomePages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HomePages-Applicability-End -->
 
 <!-- HomePages-OmaUri-Begin -->
@@ -2753,7 +2779,7 @@ Configure first run URL.
 
 <!-- HomePages-Description-Begin -->
 <!-- Description-Source-ADMX -->
-When you enable the Configure Open Microsoft Edge With policy, you can configure one or more Start pages. When you enable this policy, users are not allowed to make changes to their Start pages.
+When you enable the Configure Open Microsoft Edge With policy, you can configure one or more Start pages. When you enable this policy, users aren't allowed to make changes to their Start pages.
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
@@ -2762,15 +2788,19 @@ If enabled, you must include URLs to the pages, separating multiple pages using 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the `<about:blank>` value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+
+If you don't want to send traffic to Microsoft, enable this policy and use the `<about:blank>` value, which honors domain- and non-domain-joined devices, when it's the only configured URL.
 
 Version 1809:
+
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
 
-Supported devices: Domain-joined or MDM-enrolled
+Supported devices: Domain-joined or MDM-enrolled.
+
 Related policy:
-  - Configure Open Microsoft Edge With
-  - Disable Lockdown of Start Pages.
+
+- Configure Open Microsoft Edge With
+- Disable Lockdown of Start Pages.
 <!-- HomePages-Description-End -->
 
 <!-- HomePages-Editable-Begin -->
@@ -2782,7 +2812,7 @@ Related policy:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- HomePages-DFProperties-End -->
 
@@ -2812,7 +2842,7 @@ Related policy:
 <!-- LockdownFavorites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LockdownFavorites-Applicability-End -->
 
 <!-- LockdownFavorites-OmaUri-Begin -->
@@ -2831,7 +2861,8 @@ This policy setting lets you decide whether employees can add, import, sort, or 
 
 - If you enable this setting, employees won't be able to add, import, or change anything in the Favorites list. Also as part of this, Save a Favorite, Import settings, and the context menu items (such as, Create a new folder) are all turned off.
 
-**Important**
+Important.
+
 Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
 
 - If you disable or don't configure this setting (default), employees can add, import and make changes to the Favorites list.
@@ -2846,7 +2877,7 @@ Don't enable both this setting and the Keep favorites in sync between Internet E
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LockdownFavorites-DFProperties-End -->
@@ -2886,7 +2917,7 @@ Don't enable both this setting and the Keep favorites in sync between Internet E
 <!-- PreventAccessToAboutFlagsInMicrosoftEdge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- PreventAccessToAboutFlagsInMicrosoftEdge-Applicability-End -->
 
 <!-- PreventAccessToAboutFlagsInMicrosoftEdge-OmaUri-Begin -->
@@ -2917,7 +2948,7 @@ This policy setting lets you decide whether employees can access the about:flags
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PreventAccessToAboutFlagsInMicrosoftEdge-DFProperties-End -->
@@ -2957,7 +2988,7 @@ This policy setting lets you decide whether employees can access the about:flags
 <!-- PreventCertErrorOverrides-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- PreventCertErrorOverrides-Applicability-End -->
 
 <!-- PreventCertErrorOverrides-OmaUri-Begin -->
@@ -2974,7 +3005,7 @@ This policy setting lets you decide whether employees can access the about:flags
 <!-- Description-Source-ADMX -->
 Web security certificates are used to ensure a site your users go to is legitimate, and in some circumstances encrypts the data. With this policy, you can specify whether to prevent users from bypassing the security warning to sites that have SSL errors.
 
-If enabled, overriding certificate errors are not allowed.
+If enabled, overriding certificate errors aren't allowed.
 
 If disabled or not configured, overriding certificate errors are allowed.
 <!-- PreventCertErrorOverrides-Description-End -->
@@ -2988,7 +3019,7 @@ If disabled or not configured, overriding certificate errors are allowed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PreventCertErrorOverrides-DFProperties-End -->
@@ -3028,7 +3059,7 @@ If disabled or not configured, overriding certificate errors are allowed.
 <!-- PreventFirstRunPage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PreventFirstRunPage-Applicability-End -->
 
 <!-- PreventFirstRunPage-OmaUri-Begin -->
@@ -3059,7 +3090,7 @@ This policy setting lets you decide whether employees see Microsoft's First Run 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PreventFirstRunPage-DFProperties-End -->
@@ -3099,7 +3130,7 @@ This policy setting lets you decide whether employees see Microsoft's First Run 
 <!-- PreventLiveTileDataCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PreventLiveTileDataCollection-Applicability-End -->
 
 <!-- PreventLiveTileDataCollection-OmaUri-Begin -->
@@ -3130,7 +3161,7 @@ This policy lets you decide whether Microsoft Edge can gather Live Tile metadata
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PreventLiveTileDataCollection-DFProperties-End -->
@@ -3170,7 +3201,7 @@ This policy lets you decide whether Microsoft Edge can gather Live Tile metadata
 <!-- PreventSmartScreenPromptOverride-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- PreventSmartScreenPromptOverride-Applicability-End -->
 
 <!-- PreventSmartScreenPromptOverride-OmaUri-Begin -->
@@ -3187,7 +3218,7 @@ This policy lets you decide whether Microsoft Edge can gather Live Tile metadata
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether employees can override the Windows Defender SmartScreen warnings about potentially malicious websites.
 
-- If you enable this setting, employees can't ignore Windows Defender SmartScreen warnings and they are blocked from continuing to the site.
+- If you enable this setting, employees can't ignore Windows Defender SmartScreen warnings and they're blocked from continuing to the site.
 
 - If you disable or don't configure this setting, employees can ignore Windows Defender SmartScreen warnings and continue to the site.
 <!-- PreventSmartScreenPromptOverride-Description-End -->
@@ -3201,7 +3232,7 @@ This policy setting lets you decide whether employees can override the Windows D
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PreventSmartScreenPromptOverride-DFProperties-End -->
@@ -3241,7 +3272,7 @@ This policy setting lets you decide whether employees can override the Windows D
 <!-- PreventSmartScreenPromptOverrideForFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- PreventSmartScreenPromptOverrideForFiles-Applicability-End -->
 
 <!-- PreventSmartScreenPromptOverrideForFiles-OmaUri-Begin -->
@@ -3258,7 +3289,7 @@ This policy setting lets you decide whether employees can override the Windows D
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether employees can override the Windows Defender SmartScreen warnings about downloading unverified files.
 
-- If you enable this setting, employees can't ignore Windows Defender SmartScreen warnings and they are blocked from downloading the unverified files.
+- If you enable this setting, employees can't ignore Windows Defender SmartScreen warnings and they're blocked from downloading the unverified files.
 
 - If you disable or don't configure this setting, employees can ignore Windows Defender SmartScreen warnings and continue the download process.
 <!-- PreventSmartScreenPromptOverrideForFiles-Description-End -->
@@ -3272,7 +3303,7 @@ This policy setting lets you decide whether employees can override the Windows D
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PreventSmartScreenPromptOverrideForFiles-DFProperties-End -->
@@ -3312,7 +3343,7 @@ This policy setting lets you decide whether employees can override the Windows D
 <!-- PreventTurningOffRequiredExtensions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- PreventTurningOffRequiredExtensions-Applicability-End -->
 
 <!-- PreventTurningOffRequiredExtensions-OmaUri-Begin -->
@@ -3351,7 +3382,7 @@ Related Documents:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- PreventTurningOffRequiredExtensions-DFProperties-End -->
@@ -3382,7 +3413,7 @@ Related Documents:
 <!-- PreventUsingLocalHostIPAddressForWebRTC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- PreventUsingLocalHostIPAddressForWebRTC-Applicability-End -->
 
 <!-- PreventUsingLocalHostIPAddressForWebRTC-OmaUri-Begin -->
@@ -3413,7 +3444,7 @@ This policy setting lets you decide whether an employee's LocalHost IP address s
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PreventUsingLocalHostIPAddressForWebRTC-DFProperties-End -->
@@ -3453,7 +3484,7 @@ This policy setting lets you decide whether an employee's LocalHost IP address s
 <!-- ProvisionFavorites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ProvisionFavorites-Applicability-End -->
 
 <!-- ProvisionFavorites-OmaUri-Begin -->
@@ -3468,11 +3499,12 @@ This policy setting lets you decide whether an employee's LocalHost IP address s
 
 <!-- ProvisionFavorites-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure a default set of favorites, which will appear for employees. Employees cannot modify, sort, move, export or delete these provisioned favorites.
+This policy setting allows you to configure a default set of favorites, which will appear for employees. Employees can't modify, sort, move, export or delete these provisioned favorites.
 
 - If you enable this setting, you can set favorite URL's and favorite folders to appear on top of users' favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites.
 
-**Important**
+Important.
+
 Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
 
 - If you disable or don't configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.
@@ -3487,7 +3519,7 @@ Don't enable both this setting and the Keep favorites in sync between Internet E
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ProvisionFavorites-DFProperties-End -->
 
@@ -3498,7 +3530,7 @@ Don't enable both this setting and the Keep favorites in sync between Internet E
 |:--|:--|
 | Name | ConfiguredFavorites |
 | Friendly Name | Provision Favorites |
-| Element Name | Specify the URL which points to the file that has all the data for provisioning favorites (in html format). You can export a set of favorites from Microsoft Edge and use that html file for provisioning user machines.<br> <br> URL can be specified as<br> <br> 1. HTTP location: https://localhost:8080/URLs.html<br> 2. Local network: \\network\shares\URLs.html<br> 3. Local file: file:///c:\\Users\\`<user>`\\Documents\\URLs.html or C:\\Users\\`<user>`\\Documents\\URLs.html. |
+| Element Name | ConfiguredFavoritesPrompt |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Microsoft Edge |
 | Registry Key Name | Software\Policies\Microsoft\MicrosoftEdge\Favorites |
@@ -3524,7 +3556,7 @@ To define a default list of favorites:
 <!-- SendIntranetTraffictoInternetExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- SendIntranetTraffictoInternetExplorer-Applicability-End -->
 
 <!-- SendIntranetTraffictoInternetExplorer-OmaUri-Begin -->
@@ -3555,7 +3587,7 @@ This policy setting lets you decide whether your intranet sites should all open 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SendIntranetTraffictoInternetExplorer-DFProperties-End -->
@@ -3595,7 +3627,7 @@ This policy setting lets you decide whether your intranet sites should all open 
 <!-- SetDefaultSearchEngine-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SetDefaultSearchEngine-Applicability-End -->
 
 <!-- SetDefaultSearchEngine-OmaUri-Begin -->
@@ -3612,14 +3644,16 @@ This policy setting lets you decide whether your intranet sites should all open 
 <!-- Description-Source-ADMX -->
 This policy setting lets you configure the default search engine for your employees. Your employees can change the default search engine at any time.
 
-**Important**
+Important.
+
 This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
 
 - If you enable this setting, you can choose a default search engine for your employees.
 
 - If this setting is enabled, you must also add the default engine to the "Set default search engine" setting, by adding a link to your OpenSearch XML file, including at least the short name and https: URL of the search engine. For more info about creating the OpenSearch XML file, see the Understanding OpenSearch Standards (https://msdn.microsoft.com/library/dd163546.aspx) topic. Use this format to specify the link you wish to add: `<https://fabrikam.com/opensearch.xml>`
 
-**Note**
+Note.
+
 If you'd like your employees to use the default Microsoft Edge settings for each market, you can set the string to EDGEDEFAULT. If you'd like your employees to use Microsoft Bing as the default search engine, you can set the string to EDGEBING.
 
 Employees can change the default search engine at any time, unless you disable the "Allow search engine customization" setting, which restricts any changes.
@@ -3638,7 +3672,7 @@ Employees can change the default search engine at any time, unless you disable t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SetDefaultSearchEngine-DFProperties-End -->
 
@@ -3668,7 +3702,7 @@ Employees can change the default search engine at any time, unless you disable t
 <!-- SetHomeButtonURL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- SetHomeButtonURL-Applicability-End -->
 
 <!-- SetHomeButtonURL-OmaUri-Begin -->
@@ -3687,7 +3721,8 @@ The home button can be configured to load a custom URL when your user clicks the
 
 If enabled, or configured, and the Configure Home Button policy is enabled, and the Show home button & set a specific page is selected, a custom URL loads when your user clicks the home button.
 
-Default setting: Blank or not configured
+Default setting: Blank or not configured.
+
 Related policy: Configure Home Button.
 <!-- SetHomeButtonURL-Description-End -->
 
@@ -3700,7 +3735,7 @@ Related policy: Configure Home Button.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SetHomeButtonURL-DFProperties-End -->
 
@@ -3730,7 +3765,7 @@ Related policy: Configure Home Button.
 <!-- SetNewTabPageURL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- SetNewTabPageURL-Applicability-End -->
 
 <!-- SetNewTabPageURL-OmaUri-Begin -->
@@ -3751,7 +3786,8 @@ If enabled, you can set the default New Tab page URL.
 
 If disabled or not configured, the default Microsoft Edge new tab page is used.
 
-Default setting: Disabled or not configured
+Default setting: Disabled or not configured.
+
 Related policy: Allow web content on New Tab page.
 <!-- SetNewTabPageURL-Description-End -->
 
@@ -3764,7 +3800,7 @@ Related policy: Allow web content on New Tab page.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SetNewTabPageURL-DFProperties-End -->
 
@@ -3794,7 +3830,7 @@ Related policy: Allow web content on New Tab page.
 <!-- ShowMessageWhenOpeningSitesInInternetExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ShowMessageWhenOpeningSitesInInternetExplorer-Applicability-End -->
 
 <!-- ShowMessageWhenOpeningSitesInInternetExplorer-OmaUri-Begin -->
@@ -3815,8 +3851,10 @@ If enabled, the notification appears on a new page. If you want users to continu
 
 If disabled or not configured, the default app behavior occurs and no additional page displays.
 
-Default setting: Disabled or not configured
+Default setting: Disabled or not configured.
+
 Related policies:
+
 -Configure the Enterprise Mode Site List
 -Send all intranet sites to Internet Explorer 11.
 <!-- ShowMessageWhenOpeningSitesInInternetExplorer-Description-End -->
@@ -3830,7 +3868,7 @@ Related policies:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ShowMessageWhenOpeningSitesInInternetExplorer-DFProperties-End -->
@@ -3871,7 +3909,7 @@ Related policies:
 <!-- SyncFavoritesBetweenIEAndMicrosoftEdge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SyncFavoritesBetweenIEAndMicrosoftEdge-Applicability-End -->
 
 <!-- SyncFavoritesBetweenIEAndMicrosoftEdge-OmaUri-Begin -->
@@ -3902,7 +3940,7 @@ This setting lets you decide whether people can sync their favorites between Int
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SyncFavoritesBetweenIEAndMicrosoftEdge-DFProperties-End -->
@@ -3950,7 +3988,7 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 <!-- UnlockHomeButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- UnlockHomeButton-Applicability-End -->
 
 <!-- UnlockHomeButton-OmaUri-Begin -->
@@ -3971,8 +4009,10 @@ If enabled, the UI settings for the home button are enabled allowing your users 
 
 If disabled or not configured, the UI settings for the home button are disabled preventing your users from making changes.
 
-Default setting: Disabled or not configured
+Default setting: Disabled or not configured.
+
 Related policy:
+
 -Configure Home Button
 -Set Home Button URL.
 <!-- UnlockHomeButton-Description-End -->
@@ -3986,7 +4026,7 @@ Related policy:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- UnlockHomeButton-DFProperties-End -->
@@ -4026,7 +4066,7 @@ Related policy:
 <!-- UseSharedFolderForBooks-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- UseSharedFolderForBooks-Applicability-End -->
 
 <!-- UseSharedFolderForBooks-OmaUri-Begin -->
@@ -4057,7 +4097,7 @@ This policy setting lets you decide whether Microsoft Edge stores books from the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- UseSharedFolderForBooks-DFProperties-End -->

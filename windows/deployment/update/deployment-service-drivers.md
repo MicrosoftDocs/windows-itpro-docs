@@ -1,19 +1,24 @@
 ---
-title: Deploy drivers and firmware updates with Windows Update for Business deployment service.
-description: Use Windows Update for Business deployment service to deploy driver and firmware updates. 
+title: Deploy drivers and firmware updates
+titleSuffix: Windows Update for Business deployment service 
+description: Use Windows Update for Business deployment service to deploy driver and firmware updates to devices.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
-ms.localizationpriority: medium
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
-ms.technology: itpro-updates
-ms.date: 02/14/2023
+ms.collection:
+  - tier1
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 06/22/2023
 ---
 
 # Deploy drivers and firmware updates with Windows Update for Business deployment service
 <!--7260403, 7512398-->
-***(Applies to: Windows 11 & Windows 10)***
 
 The Windows Update for Business deployment service is used to approve and schedule software updates. The deployment service exposes its capabilities through the [Microsoft Graph API](/graph/use-the-api). You can call the API directly, through a [Graph SDK](/graph/sdks/sdks-overview), or integrate them with a management tool such as [Microsoft Intune](/mem/intune). 
 
@@ -81,7 +86,7 @@ To create a policy without any deployment settings, in the request body specify 
    
    {
      "audience": {
-       "@odata.id": "d39ad1ce-0123-4567-89ab-cdef01234567"
+       "id": "d39ad1ce-0123-4567-89ab-cdef01234567"
      }
    }
    ```
@@ -123,7 +128,7 @@ To create a policy with additional settings, in the request body:
    {
      "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
      "audience": {
-       "@odata.id": "d39ad1ce-0123-4567-89ab-cdef01234567"
+       "id": "d39ad1ce-0123-4567-89ab-cdef01234567"
      },
      "complianceChanges": [
        {
@@ -182,7 +187,7 @@ content-type: application/json
 Once Windows Update for Business deployment service has scan results from devices, the applicability for driver and firmware updates can be displayed for a deployment audience. Each applicable update returns the following information:
 
 - An `id` for its [catalog entry](/graph/api/resources/windowsupdates-catalogentry)
-- The **Azure AD ID** of the devices it's applicable to
+- The **Microsoft Entra ID** of the devices it's applicable to
 - Information describing the update such as the name and version.
 
 To display [applicable content](/graph/api/resources/windowsupdates-applicablecontent), run a query using the  **Audience ID**, for example `d39ad1ce-0123-4567-89ab-cdef01234567`:  
@@ -192,7 +197,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d
 ```
 
 The following truncated response displays:
-  - An **Azure AD ID** of `01234567-89ab-cdef-0123-456789abcdef`
+  - An **Microsoft Entra ID** of `01234567-89ab-cdef-0123-456789abcdef`
   - The **Catalog ID** of `5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c`  
 
       ```json

@@ -1,11 +1,11 @@
 ---
-title: 5889(S) An object was deleted from the COM+ Catalog. (Windows 10)
+title: 5889(S) An object was deleted from the COM+ Catalog. 
 description: Describes security event 5889(S) An object was deleted from the COM+ Catalog.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

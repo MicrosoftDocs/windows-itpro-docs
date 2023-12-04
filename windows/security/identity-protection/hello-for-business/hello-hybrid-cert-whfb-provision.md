@@ -16,9 +16,9 @@ After the prerequisites are met and the PKI and AD FS configurations are validat
 #### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
 > [!IMPORTANT]
-> The information in this section applies to hybrid Azure AD joined devices only.
+> The information in this section applies to Microsoft Entra hybrid joined devices only.
 
-For hybrid Azure AD joined devices, you can use group policies to configure Windows Hello for Business.
+For Microsoft Entra hybrid joined devices, you can use group policies to configure Windows Hello for Business.
 It is suggested to create a security group (for example, *Windows Hello for Business Users*) to make it easy to deploy Windows Hello for Business in phases. You assign the **Group Policy** and **Certificate template permissions** to this group to simplify the deployment by adding the users to the group. This provides users with the proper permissions to provision Windows Hello for Business and to enroll in the Windows Hello for Business authentication certificate.
 
 ### Enable Windows Hello for Business group policy setting
@@ -95,11 +95,11 @@ Users (or devices) must receive the Windows Hello for Business group policy sett
 ## Configure Windows Hello for Business using Microsoft Intune
 
 > [!IMPORTANT]
-> The information in this section applies to Azure AD joined devices managed by Intune. Before proceeding, ensure that you completed the steps described in:
-> - [Configure single sign-on for Azure AD joined devices](hello-hybrid-aadj-sso.md)
+> The information in this section applies to Microsoft Entra joined devices managed by Intune. Before proceeding, ensure that you completed the steps described in:
+> - [Configure single sign-on for Microsoft Entra joined devices](hello-hybrid-aadj-sso.md)
 > - [Using Certificates for AADJ On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md)
 
-For Azure AD joined devices enrolled in Intune, you can use Intune policies to manage Windows Hello for Business.
+For Microsoft Entra joined devices enrolled in Intune, you can use Intune policies to manage Windows Hello for Business.
 
 There are different ways to enable and configure Windows Hello for Business in Intune:
 
@@ -139,7 +139,7 @@ To configure Windows Hello for Business using an *account protection* policy:
 1. Under *Block Windows Hello for Business*, select **Disabled** and multiple policies become available
     - These policies are optional to configure, but it's recommended to configure *Enable to use a Trusted Platform Module (TPM)* to **Yes**
     - For more information about these policies, see [MDM policy settings for Windows Hello for Business](hello-manage-in-organization.md#mdm-policy-settings-for-windows-hello-for-business)
-1. Under *Enable to certificate for on-premises resources*, select **Disabled** and multiple policies become available
+1. Under *Enable to certificate for on-premises resources*, select **YES**
 1. Select **Next**
 1. Optionally, add *scope tags* > **Next**
 1. Assign the policy to a security group that contains as members the devices or users that you want to configure > **Next**
@@ -163,19 +163,19 @@ This is the process that occurs after a user signs in, to enroll in Windows Hell
 1. The user is prompted with a full screen page to use Windows Hello with the organization account. The user selects **OK**
 1. The provisioning flow proceeds to the multi-factor authentication portion of the enrollment. Provisioning informs the user that it's actively attempting to contact the user through their configured form of MFA. The provisioning process doesn't proceed until authentication succeeds, fails or times out. A failed or timeout MFA results in an error and asks the user to retry
 1. After a successful MFA, the provisioning flow asks the user to create and validate a PIN. This PIN must observe any PIN complexity policies configured on the device
-1. The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key. When key registration completes, Windows Hello for Business provisioning informs the user they can use their PIN to sign-in. The user may close the provisioning application and see their desktop. While the user has completed provisioning, Azure AD Connect synchronizes the user's key to Active Directory
+1. The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Microsoft Entra ID to register the public key. When key registration completes, Windows Hello for Business provisioning informs the user they can use their PIN to sign-in. The user may close the provisioning application and see their desktop. While the user has completed provisioning, Microsoft Entra Connect synchronizes the user's key to Active Directory
 
 :::image type="content" source="images/haadj-whfb-pin-provisioning.gif" alt-text="Animation showing a user logging on to an HAADJ device with a password, and being prompted to enroll in Windows Hello for Business.":::
 
 > [!IMPORTANT]
 > The following is the enrollment behavior prior to Windows Server 2016 update [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).
 > 
-> The minimum time needed to synchronize the user's public key from Azure Active Directory to the on-premises Active Directory is 30 minutes. The Azure AD Connect scheduler controls the synchronization interval. 
+> The minimum time needed to synchronize the user's public key from Microsoft Entra ID to the on-premises Active Directory is 30 minutes. The Microsoft Entra Connect scheduler controls the synchronization interval. 
 > **This synchronization latency delays the user's ability to authenticate and use on-premises resources until the user's public key has synchronized to Active Directory.** Once synchronized, the user can authenticate and use on-premises resources.
-> Read [Azure AD Connect sync: Scheduler](/azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler) to view and adjust the **synchronization cycle** for your organization.
+> Read [Microsoft Entra Connect Sync: Scheduler](/azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler) to view and adjust the **synchronization cycle** for your organization.
 >
 > [!NOTE]
-> Windows Server 2016 update [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889) provides synchronous certificate enrollment during hybrid certificate trust provisioning.  With this update, users no longer need to wait for Azure AD Connect to sync their  public key on-premises.  Users enroll their certificate during provisioning and can use the certificate for sign-in immediately after completing the provisioning. The update needs to be installed on the federation servers.
+> Windows Server 2016 update [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889) provides synchronous certificate enrollment during hybrid certificate trust provisioning.  With this update, users no longer need to wait for Microsoft Entra Connect to sync their  public key on-premises.  Users enroll their certificate during provisioning and can use the certificate for sign-in immediately after completing the provisioning. The update needs to be installed on the federation servers.
 
 After a successful key registration, Windows creates a certificate request using the same key pair to request a certificate.  Windows send the certificate request to the AD FS server for certificate enrollment.
 

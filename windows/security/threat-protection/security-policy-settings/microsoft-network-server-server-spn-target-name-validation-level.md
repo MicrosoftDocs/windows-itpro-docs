@@ -1,8 +1,8 @@
 ---
-title: Microsoft network server Server SPN target name validation level (Windows 10)
+title: Microsoft network server Server SPN target name validation level
 description: Best practices, security considerations, and more for the security policy setting, Microsoft network server Server SPN target name validation level.
 ms.assetid: 18337f78-eb45-42fd-bdbd-f8cd02c3e154
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -54,7 +54,7 @@ The default setting is Off.
 This setting affects the server SMB behavior, and its implementation should be carefully evaluated and tested to prevent disruptions to file and print serving capabilities.
 
 >**Note:**  All Windows operating systems support a client-side SMB component and a server-side SMB component.
- 
+
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
@@ -65,13 +65,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or Group Policy object (GPO) | Default value |
 | - | - |
-| Default domain policy | Off | 
-| Default domain controller policy| Off| 
-| Stand-alone server default settings | Off| 
-| Domain controller effective default settings| Validation level check not implemented| 
-| Member server effective default settings | Validation level check not implemented| 
-| Effective GPO default settings on client computers | Validation level check not implemented| 
- 
+| Default domain policy | Off |
+| Default domain controller policy| Off|
+| Stand-alone server default settings | Off|
+| Domain controller effective default settings| Validation level check not implemented|
+| Member server effective default settings | Validation level check not implemented|
+| Effective GPO default settings on client computers | Validation level check not implemented|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

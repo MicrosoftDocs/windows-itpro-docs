@@ -4,7 +4,7 @@ description: Learn more about the DeviceStatus CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -82,7 +82,7 @@ The following list shows the DeviceStatus configuration service provider nodes:
 <!-- Device-Antispyware-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Antispyware-Applicability-End -->
 
 <!-- Device-Antispyware-OmaUri-Begin -->
@@ -105,7 +105,7 @@ Node for the antispyware query.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Antispyware-DFProperties-End -->
 
@@ -121,7 +121,7 @@ Node for the antispyware query.
 <!-- Device-Antispyware-SignatureStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Antispyware-SignatureStatus-Applicability-End -->
 
 <!-- Device-Antispyware-SignatureStatus-OmaUri-Begin -->
@@ -132,7 +132,7 @@ Node for the antispyware query.
 
 <!-- Device-Antispyware-SignatureStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the status of the antispyware signature. Valid values: 0 - The security software reports that it is not the most recent version. 1 - The security software reports that it is the most recent version. 2 - Not applicable. This is returned for devices like the phone that do not have an antivirus (where the API doesn't exist.) If more than one antispyware provider is active, this node returns: 1 - If every active antispyware provider has a valid signature status. 0 - If any of the active antispyware providers has an invalid signature status.
+Integer that specifies the status of the antispyware signature. Valid values: 0 - The security software reports that it isn't the most recent version. 1 - The security software reports that it's the most recent version. 2 - Not applicable. This is returned for devices like the phone that don't have an antivirus (where the API doesn't exist). If more than one antispyware provider is active, this node returns: 1 - If every active antispyware provider has a valid signature status. 0 - If any of the active antispyware providers has an invalid signature status.
 <!-- Device-Antispyware-SignatureStatus-Description-End -->
 
 <!-- Device-Antispyware-SignatureStatus-Editable-Begin -->
@@ -145,7 +145,7 @@ This node also returns 0 when no anti-spyware provider is active.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 | Default Value  | 1 |
 <!-- Device-Antispyware-SignatureStatus-DFProperties-End -->
@@ -162,7 +162,7 @@ This node also returns 0 when no anti-spyware provider is active.
 <!-- Device-Antispyware-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Antispyware-Status-Applicability-End -->
 
 <!-- Device-Antispyware-Status-OmaUri-Begin -->
@@ -173,7 +173,7 @@ This node also returns 0 when no anti-spyware provider is active.
 
 <!-- Device-Antispyware-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the status of the antispyware. Valid values: 0 - The status of the security provider category is good and does not need user attention. 1 - The status of the security provider category is not monitored by Windows Security Center (WSC). 2 - The status of the security provider category is poor and the computer may be at risk. 3 - The security provider category is in snooze state. Snooze indicates that WSC is not actively protecting the computer.
+Integer that specifies the status of the antispyware. Valid values: 0 - The status of the security provider category is good and doesn't need user attention. 1 - The status of the security provider category isn't monitored by Windows Security Center (WSC). 2 - The status of the security provider category is poor and the computer may be at risk. 3 - The security provider category is in snooze state. Snooze indicates that WSC isn't actively protecting the computer.
 <!-- Device-Antispyware-Status-Description-End -->
 
 <!-- Device-Antispyware-Status-Editable-Begin -->
@@ -185,7 +185,7 @@ Integer that specifies the status of the antispyware. Valid values: 0 - The stat
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 | Default Value  | 3 |
 <!-- Device-Antispyware-Status-DFProperties-End -->
@@ -202,7 +202,7 @@ Integer that specifies the status of the antispyware. Valid values: 0 - The stat
 <!-- Device-Antivirus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Antivirus-Applicability-End -->
 
 <!-- Device-Antivirus-OmaUri-Begin -->
@@ -225,7 +225,7 @@ Node for the antivirus query.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Antivirus-DFProperties-End -->
 
@@ -241,7 +241,7 @@ Node for the antivirus query.
 <!-- Device-Antivirus-SignatureStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Antivirus-SignatureStatus-Applicability-End -->
 
 <!-- Device-Antivirus-SignatureStatus-OmaUri-Begin -->
@@ -252,7 +252,7 @@ Node for the antivirus query.
 
 <!-- Device-Antivirus-SignatureStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the status of the antivirus signature. Valid values: 0 - The security software reports that it is not the most recent version. 1 (default) - The security software reports that it is the most recent version. 2 - Not applicable. This is returned for devices like the phone that do not have an antivirus (where the API doesn't exist.) If more than one antivirus provider is active, this node returns: 1 - If every active antivirus provider has a valid signature status. 0 - If any of the active antivirus providers has an invalid signature status.
+Integer that specifies the status of the antivirus signature. Valid values: 0 - The security software reports that it isn't the most recent version. 1 (default) - The security software reports that it's the most recent version. 2 - Not applicable. This is returned for devices like the phone that don't have an antivirus (where the API doesn't exist). If more than one antivirus provider is active, this node returns: 1 - If every active antivirus provider has a valid signature status. 0 - If any of the active antivirus providers has an invalid signature status.
 <!-- Device-Antivirus-SignatureStatus-Description-End -->
 
 <!-- Device-Antivirus-SignatureStatus-Editable-Begin -->
@@ -265,7 +265,7 @@ This node also returns 0 when no antivirus provider is active.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 | Default Value  | 1 |
 <!-- Device-Antivirus-SignatureStatus-DFProperties-End -->
@@ -282,7 +282,7 @@ This node also returns 0 when no antivirus provider is active.
 <!-- Device-Antivirus-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Antivirus-Status-Applicability-End -->
 
 <!-- Device-Antivirus-Status-OmaUri-Begin -->
@@ -293,7 +293,7 @@ This node also returns 0 when no antivirus provider is active.
 
 <!-- Device-Antivirus-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the status of the antivirus. Valid values: 0 - Antivirus is on and monitoring, 1 - Antivirus is disabled, 2 - Antivirus is not monitoring the device/PC or some options have been turned off, 3 (default) - Antivirus is temporarily not completely monitoring the device/PC, 4 - Antivirus not applicable for this device. This is returned for devices like the phone that do not have an antivirus (where the API doesn't exist.)
+Integer that specifies the status of the antivirus. Valid values: 0 - Antivirus is on and monitoring, 1 - Antivirus is disabled, 2 - Antivirus isn't monitoring the device/PC or some options have been turned off, 3 (default) - Antivirus is temporarily not completely monitoring the device/PC, 4 - Antivirus not applicable for this device. This is returned for devices like the phone that don't have an antivirus (where the API doesn't exist).
 <!-- Device-Antivirus-Status-Description-End -->
 
 <!-- Device-Antivirus-Status-Editable-Begin -->
@@ -305,7 +305,7 @@ Integer that specifies the status of the antivirus. Valid values: 0 - Antivirus 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 | Default Value  | 3 |
 <!-- Device-Antivirus-Status-DFProperties-End -->
@@ -322,7 +322,7 @@ Integer that specifies the status of the antivirus. Valid values: 0 - Antivirus 
 <!-- Device-Battery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Battery-Applicability-End -->
 
 <!-- Device-Battery-OmaUri-Begin -->
@@ -345,7 +345,7 @@ Node for the battery query.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Battery-DFProperties-End -->
 
@@ -361,7 +361,7 @@ Node for the battery query.
 <!-- Device-Battery-EstimatedChargeRemaining-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Battery-EstimatedChargeRemaining-Applicability-End -->
 
 <!-- Device-Battery-EstimatedChargeRemaining-OmaUri-Begin -->
@@ -372,7 +372,7 @@ Node for the battery query.
 
 <!-- Device-Battery-EstimatedChargeRemaining-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the estimated battery charge remaining. This is the value returned in BatteryLifeTime in SYSTEM_POWER_STATUS structure. The value is the number of seconds of battery life remaining when the device is not connected to an AC power source. When it is connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
+Integer that specifies the estimated battery charge remaining. This is the value returned in BatteryLifeTime in SYSTEM_POWER_STATUS structure. The value is the number of seconds of battery life remaining when the device isn't connected to an AC power source. When it's connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
 <!-- Device-Battery-EstimatedChargeRemaining-Description-End -->
 
 <!-- Device-Battery-EstimatedChargeRemaining-Editable-Begin -->
@@ -384,7 +384,7 @@ Integer that specifies the estimated battery charge remaining. This is the value
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 | Default Value  | 0 |
 <!-- Device-Battery-EstimatedChargeRemaining-DFProperties-End -->
@@ -401,7 +401,7 @@ Integer that specifies the estimated battery charge remaining. This is the value
 <!-- Device-Battery-EstimatedRuntime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Battery-EstimatedRuntime-Applicability-End -->
 
 <!-- Device-Battery-EstimatedRuntime-OmaUri-Begin -->
@@ -412,7 +412,7 @@ Integer that specifies the estimated battery charge remaining. This is the value
 
 <!-- Device-Battery-EstimatedRuntime-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the estimated runtime of the battery. This is the value returned in BatteryLifeTime in SYSTEM_POWER_STATUS structure. The value is the number of seconds of battery life remaining when the device is not connected to an AC power source. When it is connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
+Integer that specifies the estimated runtime of the battery. This is the value returned in BatteryLifeTime in SYSTEM_POWER_STATUS structure. The value is the number of seconds of battery life remaining when the device isn't connected to an AC power source. When it's connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
 <!-- Device-Battery-EstimatedRuntime-Description-End -->
 
 <!-- Device-Battery-EstimatedRuntime-Editable-Begin -->
@@ -424,7 +424,7 @@ Integer that specifies the estimated runtime of the battery. This is the value r
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 | Default Value  | 0 |
 <!-- Device-Battery-EstimatedRuntime-DFProperties-End -->
@@ -441,7 +441,7 @@ Integer that specifies the estimated runtime of the battery. This is the value r
 <!-- Device-Battery-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Battery-Status-Applicability-End -->
 
 <!-- Device-Battery-Status-OmaUri-Begin -->
@@ -464,7 +464,7 @@ Integer that specifies the status of the battery.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 | Default Value  | 0 |
 <!-- Device-Battery-Status-DFProperties-End -->
@@ -481,7 +481,7 @@ Integer that specifies the status of the battery.
 <!-- Device-CellularIdentities-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CellularIdentities-Applicability-End -->
 
 <!-- Device-CellularIdentities-OmaUri-Begin -->
@@ -506,7 +506,7 @@ Node for queries on the SIM cards.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-CellularIdentities-DFProperties-End -->
 
@@ -522,7 +522,7 @@ Node for queries on the SIM cards.
 <!-- Device-CellularIdentities-{IMEI}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CellularIdentities-{IMEI}-Applicability-End -->
 
 <!-- Device-CellularIdentities-{IMEI}-OmaUri-Begin -->
@@ -545,7 +545,7 @@ The unique International Mobile Station Equipment Identity (IMEI) number of the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-CellularIdentities-{IMEI}-DFProperties-End -->
@@ -562,7 +562,7 @@ The unique International Mobile Station Equipment Identity (IMEI) number of the 
 <!-- Device-CellularIdentities-{IMEI}-CommercializationOperator-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CellularIdentities-{IMEI}-CommercializationOperator-Applicability-End -->
 
 <!-- Device-CellularIdentities-{IMEI}-CommercializationOperator-OmaUri-Begin -->
@@ -585,7 +585,7 @@ The mobile service provider or mobile operator associated with the specific IMEI
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-CellularIdentities-{IMEI}-CommercializationOperator-DFProperties-End -->
 
@@ -601,7 +601,7 @@ The mobile service provider or mobile operator associated with the specific IMEI
 <!-- Device-CellularIdentities-{IMEI}-ICCID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CellularIdentities-{IMEI}-ICCID-Applicability-End -->
 
 <!-- Device-CellularIdentities-{IMEI}-ICCID-OmaUri-Begin -->
@@ -624,7 +624,7 @@ The Integrated Circuit Card ID (ICCID) of the SIM card associated with the speci
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-CellularIdentities-{IMEI}-ICCID-DFProperties-End -->
 
@@ -640,7 +640,7 @@ The Integrated Circuit Card ID (ICCID) of the SIM card associated with the speci
 <!-- Device-CellularIdentities-{IMEI}-IMSI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CellularIdentities-{IMEI}-IMSI-Applicability-End -->
 
 <!-- Device-CellularIdentities-{IMEI}-IMSI-OmaUri-Begin -->
@@ -663,7 +663,7 @@ The International Mobile Subscriber Identity (IMSI) associated with the IMEI num
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-CellularIdentities-{IMEI}-IMSI-DFProperties-End -->
 
@@ -679,7 +679,7 @@ The International Mobile Subscriber Identity (IMSI) associated with the IMEI num
 <!-- Device-CellularIdentities-{IMEI}-PhoneNumber-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CellularIdentities-{IMEI}-PhoneNumber-Applicability-End -->
 
 <!-- Device-CellularIdentities-{IMEI}-PhoneNumber-OmaUri-Begin -->
@@ -702,7 +702,7 @@ Phone number associated with the specific IMEI number.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-CellularIdentities-{IMEI}-PhoneNumber-DFProperties-End -->
 
@@ -718,7 +718,7 @@ Phone number associated with the specific IMEI number.
 <!-- Device-CellularIdentities-{IMEI}-RoamingCompliance-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CellularIdentities-{IMEI}-RoamingCompliance-Applicability-End -->
 
 <!-- Device-CellularIdentities-{IMEI}-RoamingCompliance-OmaUri-Begin -->
@@ -741,7 +741,7 @@ Boolean value that indicates compliance with the enforced enterprise roaming pol
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-CellularIdentities-{IMEI}-RoamingCompliance-DFProperties-End -->
 
@@ -757,7 +757,7 @@ Boolean value that indicates compliance with the enforced enterprise roaming pol
 <!-- Device-CellularIdentities-{IMEI}-RoamingStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CellularIdentities-{IMEI}-RoamingStatus-Applicability-End -->
 
 <!-- Device-CellularIdentities-{IMEI}-RoamingStatus-OmaUri-Begin -->
@@ -780,7 +780,7 @@ Indicates whether the SIM card associated with the specific IMEI number is roami
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-CellularIdentities-{IMEI}-RoamingStatus-DFProperties-End -->
 
@@ -796,7 +796,7 @@ Indicates whether the SIM card associated with the specific IMEI number is roami
 <!-- Device-CertAttestation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1165] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-CertAttestation-Applicability-End -->
 
 <!-- Device-CertAttestation-OmaUri-Begin -->
@@ -819,7 +819,7 @@ Node for Certificate Attestation.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-CertAttestation-DFProperties-End -->
 
@@ -835,7 +835,7 @@ Node for Certificate Attestation.
 <!-- Device-CertAttestation-MDMClientCertAttestation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1165] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-CertAttestation-MDMClientCertAttestation-Applicability-End -->
 
 <!-- Device-CertAttestation-MDMClientCertAttestation-OmaUri-Begin -->
@@ -858,7 +858,7 @@ MDM Certificate attestation information. This will return an XML blob containing
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-CertAttestation-MDMClientCertAttestation-DFProperties-End -->
 
@@ -874,7 +874,7 @@ MDM Certificate attestation information. This will return an XML blob containing
 <!-- Device-Compliance-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Compliance-Applicability-End -->
 
 <!-- Device-Compliance-OmaUri-Begin -->
@@ -897,7 +897,7 @@ Node for the compliance query.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Compliance-DFProperties-End -->
 
@@ -913,7 +913,7 @@ Node for the compliance query.
 <!-- Device-Compliance-EncryptionCompliance-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Compliance-EncryptionCompliance-Applicability-End -->
 
 <!-- Device-Compliance-EncryptionCompliance-OmaUri-Begin -->
@@ -936,7 +936,7 @@ Boolean value that indicates compliance with the enterprise encryption policy fo
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-Compliance-EncryptionCompliance-DFProperties-End -->
 
@@ -952,7 +952,7 @@ Boolean value that indicates compliance with the enterprise encryption policy fo
 <!-- Device-DeviceGuard-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-DeviceGuard-Applicability-End -->
 
 <!-- Device-DeviceGuard-OmaUri-Begin -->
@@ -975,7 +975,7 @@ Node for Device Guard query.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-DeviceGuard-DFProperties-End -->
 
@@ -991,7 +991,7 @@ Node for Device Guard query.
 <!-- Device-DeviceGuard-HypervisorEnforcedCodeIntegrityStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-DeviceGuard-HypervisorEnforcedCodeIntegrityStatus-Applicability-End -->
 
 <!-- Device-DeviceGuard-HypervisorEnforcedCodeIntegrityStatus-OmaUri-Begin -->
@@ -1014,7 +1014,7 @@ Hypervisor Enforced Code Integrity (HVCI) status. 0 - Running, 1 - Reboot requir
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-DeviceGuard-HypervisorEnforcedCodeIntegrityStatus-DFProperties-End -->
 
@@ -1030,7 +1030,7 @@ Hypervisor Enforced Code Integrity (HVCI) status. 0 - Running, 1 - Reboot requir
 <!-- Device-DeviceGuard-LsaCfgCredGuardStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-DeviceGuard-LsaCfgCredGuardStatus-Applicability-End -->
 
 <!-- Device-DeviceGuard-LsaCfgCredGuardStatus-OmaUri-Begin -->
@@ -1053,7 +1053,7 @@ Local System Authority (LSA) credential guard status. 0 - Running, 1 - Reboot re
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-DeviceGuard-LsaCfgCredGuardStatus-DFProperties-End -->
 
@@ -1069,7 +1069,7 @@ Local System Authority (LSA) credential guard status. 0 - Running, 1 - Reboot re
 <!-- Device-DeviceGuard-SystemGuardStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-DeviceGuard-SystemGuardStatus-Applicability-End -->
 
 <!-- Device-DeviceGuard-SystemGuardStatus-OmaUri-Begin -->
@@ -1092,7 +1092,7 @@ System Guard status. 0 - Running, 1 - Reboot required, 2 - Not configured, 3 - S
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-DeviceGuard-SystemGuardStatus-DFProperties-End -->
 
@@ -1108,7 +1108,7 @@ System Guard status. 0 - Running, 1 - Reboot required, 2 - Not configured, 3 - S
 <!-- Device-DeviceGuard-VirtualizationBasedSecurityHwReq-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-DeviceGuard-VirtualizationBasedSecurityHwReq-Applicability-End -->
 
 <!-- Device-DeviceGuard-VirtualizationBasedSecurityHwReq-OmaUri-Begin -->
@@ -1119,7 +1119,7 @@ System Guard status. 0 - Running, 1 - Reboot required, 2 - Not configured, 3 - S
 
 <!-- Device-DeviceGuard-VirtualizationBasedSecurityHwReq-Description-Begin -->
 <!-- Description-Source-DDF -->
-Virtualization-based security hardware requirement status. The value is a 256 value bitmask. 0x0: System meets hardware configuration requirements, 0x1: SecureBoot required, 0x2: DMA Protection required, 0x4: HyperV not supported for Guest VM, 0x8: HyperV feature is not available.
+Virtualization-based security hardware requirement status. The value is a 256 value bitmask. 0x0: System meets hardware configuration requirements, 0x1: SecureBoot required, 0x2: DMA Protection required, 0x4: HyperV not supported for Guest VM, 0x8: HyperV feature isn't available.
 <!-- Device-DeviceGuard-VirtualizationBasedSecurityHwReq-Description-End -->
 
 <!-- Device-DeviceGuard-VirtualizationBasedSecurityHwReq-Editable-Begin -->
@@ -1131,7 +1131,7 @@ Virtualization-based security hardware requirement status. The value is a 256 va
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-DeviceGuard-VirtualizationBasedSecurityHwReq-DFProperties-End -->
 
@@ -1147,7 +1147,7 @@ Virtualization-based security hardware requirement status. The value is a 256 va
 <!-- Device-DeviceGuard-VirtualizationBasedSecurityStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-DeviceGuard-VirtualizationBasedSecurityStatus-Applicability-End -->
 
 <!-- Device-DeviceGuard-VirtualizationBasedSecurityStatus-OmaUri-Begin -->
@@ -1170,7 +1170,7 @@ Virtualization-based security status. Value is one of the following: 0 - Running
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-DeviceGuard-VirtualizationBasedSecurityStatus-DFProperties-End -->
 
@@ -1186,7 +1186,7 @@ Virtualization-based security status. Value is one of the following: 0 - Running
 <!-- Device-DMA-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-DMA-Applicability-End -->
 
 <!-- Device-DMA-OmaUri-Begin -->
@@ -1209,7 +1209,7 @@ Node for DMA query.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-DMA-DFProperties-End -->
 
@@ -1225,7 +1225,7 @@ Node for DMA query.
 <!-- Device-DMA-BootDMAProtectionStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-DMA-BootDMAProtectionStatus-Applicability-End -->
 
 <!-- Device-DMA-BootDMAProtectionStatus-OmaUri-Begin -->
@@ -1248,7 +1248,7 @@ Boot DMA Protection status. 1 - Enabled, 2 - Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-DMA-BootDMAProtectionStatus-DFProperties-End -->
 
@@ -1264,7 +1264,7 @@ Boot DMA Protection status. 1 - Enabled, 2 - Disabled.
 <!-- Device-DomainName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-DomainName-Applicability-End -->
 
 <!-- Device-DomainName-OmaUri-Begin -->
@@ -1287,7 +1287,7 @@ Returns the fully qualified domain name of the device(if any).
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-DomainName-DFProperties-End -->
 
@@ -1303,7 +1303,7 @@ Returns the fully qualified domain name of the device(if any).
 <!-- Device-Firewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Firewall-Applicability-End -->
 
 <!-- Device-Firewall-OmaUri-Begin -->
@@ -1326,7 +1326,7 @@ Node for the firewall query.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Firewall-DFProperties-End -->
 
@@ -1342,7 +1342,7 @@ Node for the firewall query.
 <!-- Device-Firewall-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Firewall-Status-Applicability-End -->
 
 <!-- Device-Firewall-Status-OmaUri-Begin -->
@@ -1353,7 +1353,7 @@ Node for the firewall query.
 
 <!-- Device-Firewall-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the status of the firewall. Valid values: 0 - Firewall is on and monitoring, 1 - Firewall has been disabled, 2 - Firewall is not monitoring all networks or some rules have been turned off, 3 (default) - Firewall is temporarily not monitoring all networks, 4 - Not applicable. This is returned for devices like the phone that do not have an antivirus (where the API doesn't exist.)
+Integer that specifies the status of the firewall. Valid values: 0 - Firewall is on and monitoring, 1 - Firewall has been disabled, 2 - Firewall isn't monitoring all networks or some rules have been turned off, 3 (default) - Firewall is temporarily not monitoring all networks, 4 - Not applicable. This is returned for devices like the phone that don't have an antivirus (where the API doesn't exist).
 <!-- Device-Firewall-Status-Description-End -->
 
 <!-- Device-Firewall-Status-Editable-Begin -->
@@ -1365,7 +1365,7 @@ Integer that specifies the status of the firewall. Valid values: 0 - Firewall is
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 | Default Value  | 3 |
 <!-- Device-Firewall-Status-DFProperties-End -->
@@ -1382,7 +1382,7 @@ Integer that specifies the status of the firewall. Valid values: 0 - Firewall is
 <!-- Device-NetworkIdentifiers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-NetworkIdentifiers-Applicability-End -->
 
 <!-- Device-NetworkIdentifiers-OmaUri-Begin -->
@@ -1405,7 +1405,7 @@ Node for queries on network and device properties.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-NetworkIdentifiers-DFProperties-End -->
 
@@ -1421,7 +1421,7 @@ Node for queries on network and device properties.
 <!-- Device-NetworkIdentifiers-{MacAddress}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-NetworkIdentifiers-{MacAddress}-Applicability-End -->
 
 <!-- Device-NetworkIdentifiers-{MacAddress}-OmaUri-Begin -->
@@ -1444,7 +1444,7 @@ MAC address of the wireless network card. A MAC address is present for each netw
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-NetworkIdentifiers-{MacAddress}-DFProperties-End -->
@@ -1461,7 +1461,7 @@ MAC address of the wireless network card. A MAC address is present for each netw
 <!-- Device-NetworkIdentifiers-{MacAddress}-IPAddressV4-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-NetworkIdentifiers-{MacAddress}-IPAddressV4-Applicability-End -->
 
 <!-- Device-NetworkIdentifiers-{MacAddress}-IPAddressV4-OmaUri-Begin -->
@@ -1484,7 +1484,7 @@ IPv4 address of the network card associated with the MAC address.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-NetworkIdentifiers-{MacAddress}-IPAddressV4-DFProperties-End -->
 
@@ -1500,7 +1500,7 @@ IPv4 address of the network card associated with the MAC address.
 <!-- Device-NetworkIdentifiers-{MacAddress}-IPAddressV6-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-NetworkIdentifiers-{MacAddress}-IPAddressV6-Applicability-End -->
 
 <!-- Device-NetworkIdentifiers-{MacAddress}-IPAddressV6-OmaUri-Begin -->
@@ -1523,7 +1523,7 @@ IPv6 address of the network card associated with the MAC address.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-NetworkIdentifiers-{MacAddress}-IPAddressV6-DFProperties-End -->
 
@@ -1539,7 +1539,7 @@ IPv6 address of the network card associated with the MAC address.
 <!-- Device-NetworkIdentifiers-{MacAddress}-IsConnected-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-NetworkIdentifiers-{MacAddress}-IsConnected-Applicability-End -->
 
 <!-- Device-NetworkIdentifiers-{MacAddress}-IsConnected-OmaUri-Begin -->
@@ -1562,7 +1562,7 @@ Boolean value that indicates whether the network card associated with the MAC ad
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-NetworkIdentifiers-{MacAddress}-IsConnected-DFProperties-End -->
 
@@ -1578,7 +1578,7 @@ Boolean value that indicates whether the network card associated with the MAC ad
 <!-- Device-NetworkIdentifiers-{MacAddress}-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-NetworkIdentifiers-{MacAddress}-Type-Applicability-End -->
 
 <!-- Device-NetworkIdentifiers-{MacAddress}-Type-OmaUri-Begin -->
@@ -1601,7 +1601,7 @@ Type of network connection. The value is one of the following: 2 - WLAN (or othe
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-NetworkIdentifiers-{MacAddress}-Type-DFProperties-End -->
 
@@ -1617,7 +1617,7 @@ Type of network connection. The value is one of the following: 2 - WLAN (or othe
 <!-- Device-OS-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-OS-Applicability-End -->
 
 <!-- Device-OS-OmaUri-Begin -->
@@ -1640,7 +1640,7 @@ Node for the OS query.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-OS-DFProperties-End -->
 
@@ -1656,7 +1656,7 @@ Node for the OS query.
 <!-- Device-OS-Edition-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-OS-Edition-Applicability-End -->
 
 <!-- Device-OS-Edition-OmaUri-Begin -->
@@ -1679,7 +1679,7 @@ String that specifies the OS edition.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 | Default Value  | Not available |
 <!-- Device-OS-Edition-DFProperties-End -->
@@ -1696,7 +1696,7 @@ String that specifies the OS edition.
 <!-- Device-OS-Mode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-OS-Mode-Applicability-End -->
 
 <!-- Device-OS-Mode-OmaUri-Begin -->
@@ -1719,7 +1719,7 @@ Read only node that specifies the device mode. Valid values: 0 - the device is i
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 | Default Value  | Not available |
 <!-- Device-OS-Mode-DFProperties-End -->
@@ -1736,7 +1736,7 @@ Read only node that specifies the device mode. Valid values: 0 - the device is i
 <!-- Device-SecureBootState-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SecureBootState-Applicability-End -->
 
 <!-- Device-SecureBootState-OmaUri-Begin -->
@@ -1759,7 +1759,7 @@ Indicates whether secure boot is enabled. The value is one of the following: 0 -
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-SecureBootState-DFProperties-End -->
 
@@ -1775,7 +1775,7 @@ Indicates whether secure boot is enabled. The value is one of the following: 0 -
 <!-- Device-TPM-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-TPM-Applicability-End -->
 
 <!-- Device-TPM-OmaUri-Begin -->
@@ -1798,7 +1798,7 @@ Node for the TPM query.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-TPM-DFProperties-End -->
 
@@ -1814,7 +1814,7 @@ Node for the TPM query.
 <!-- Device-TPM-ManufacturerId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1387] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1387] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1387] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1387] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1387] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1387] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1387] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1387] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-TPM-ManufacturerId-Applicability-End -->
 
 <!-- Device-TPM-ManufacturerId-OmaUri-Begin -->
@@ -1837,7 +1837,7 @@ String that specifies the TPM manufacturer ID as a number.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 | Default Value  | Not available |
 <!-- Device-TPM-ManufacturerId-DFProperties-End -->
@@ -1854,7 +1854,7 @@ String that specifies the TPM manufacturer ID as a number.
 <!-- Device-TPM-ManufacturerIdTxt-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1387] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1387] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1387] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1387] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1387] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1387] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1387] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1387] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-TPM-ManufacturerIdTxt-Applicability-End -->
 
 <!-- Device-TPM-ManufacturerIdTxt-OmaUri-Begin -->
@@ -1877,7 +1877,7 @@ String that specifies the TPM manufacturer ID as text.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 | Default Value  | Not available |
 <!-- Device-TPM-ManufacturerIdTxt-DFProperties-End -->
@@ -1894,7 +1894,7 @@ String that specifies the TPM manufacturer ID as text.
 <!-- Device-TPM-ManufacturerVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1387] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1387] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1387] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1387] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1387] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1387] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1387] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1387] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-TPM-ManufacturerVersion-Applicability-End -->
 
 <!-- Device-TPM-ManufacturerVersion-OmaUri-Begin -->
@@ -1917,7 +1917,7 @@ String that specifies the manufacturer version.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 | Default Value  | Not available |
 <!-- Device-TPM-ManufacturerVersion-DFProperties-End -->
@@ -1934,7 +1934,7 @@ String that specifies the manufacturer version.
 <!-- Device-TPM-SpecificationVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-TPM-SpecificationVersion-Applicability-End -->
 
 <!-- Device-TPM-SpecificationVersion-OmaUri-Begin -->
@@ -1957,7 +1957,7 @@ String that specifies the specification version.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 | Default Value  | Not available |
 <!-- Device-TPM-SpecificationVersion-DFProperties-End -->
@@ -1974,7 +1974,7 @@ String that specifies the specification version.
 <!-- Device-UAC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-UAC-Applicability-End -->
 
 <!-- Device-UAC-OmaUri-Begin -->
@@ -1997,7 +1997,7 @@ Node for the UAC query.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-UAC-DFProperties-End -->
 
@@ -2013,7 +2013,7 @@ Node for the UAC query.
 <!-- Device-UAC-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-UAC-Status-Applicability-End -->
 
 <!-- Device-UAC-Status-OmaUri-Begin -->
@@ -2036,7 +2036,7 @@ Integer that specifies the status of the UAC.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-UAC-Status-DFProperties-End -->
 

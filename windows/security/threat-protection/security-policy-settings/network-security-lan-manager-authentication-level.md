@@ -1,8 +1,8 @@
 ---
-title: Network security LAN Manager authentication level (Windows 10)
+title: Network security LAN Manager authentication level
 description: Best practices, location, values, policy management and security considerations for the policy setting, Network security LAN Manager authentication level.
 ms.assetid: bbe1a98c-420a-41e7-9d3c-3a2fe0f1843e
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,10 +12,10 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: 
+ms.collection:
   - highpri
   - tier3
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -50,18 +50,18 @@ LAN Manager authentication includes the LM, NTLM, and NTLMv2 variants, and it's 
 -   Send NTLMv2 responses only. Refuse LM & NTLM
 -   Not Defined
 
-The **Network security: LAN Manager authentication level** setting determines which challenge/response authentication protocol is used for network logons. This choice affects the authentication protocol level that clients use, the session security level that the computers negotiate, and the 
+The **Network security: LAN Manager authentication level** setting determines which challenge/response authentication protocol is used for network logons. This choice affects the authentication protocol level that clients use, the session security level that the computers negotiate, and the
 authentication level that servers accept. The following table identifies the policy settings, describes the setting, and identifies the security level used in the corresponding registry setting if you choose to use the registry to control this setting instead of the policy setting.
 
 | Setting | Description | Registry security level |
 | - | - | - |
-| Send LM &amp; NTLM responses | Client devices use LM and NTLM authentication, and they never use NTLMv2 session security. Domain controllers accept LM, NTLM, and NTLMv2 authentication.| 0| 
-| Send LM &amp; NTLM – use NTLMv2 session security if negotiated | Client devices use LM and NTLM authentication, and they use NTLMv2 session security if the server supports it. Domain controllers accept LM, NTLM, and NTLMv2 authentication.| 1| 
-| Send NTLM response only| Client devices use NTLMv1 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers accept LM, NTLM, and NTLMv2 authentication.| 2| 
-| Send NTLMv2 response only | Client devices use NTLMv2 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers accept LM, NTLM, and NTLMv2 authentication.| 3| 
-| Send NTLMv2 response only. Refuse LM | Client devices use NTLMv2 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers refuse to accept LM authentication, and they'll accept only NTLM and NTLMv2 authentication.| 4| 
-| Send NTLMv2 response only. Refuse LM &amp; NTLM | Client devices use NTLMv2 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers refuse to accept LM and NTLM authentication, and they'll accept only NTLMv2 authentication.| 5| 
- 
+| Send LM &amp; NTLM responses | Client devices use LM and NTLM authentication, and they never use NTLMv2 session security. Domain controllers accept LM, NTLM, and NTLMv2 authentication.| 0|
+| Send LM &amp; NTLM – use NTLMv2 session security if negotiated | Client devices use LM and NTLM authentication, and they use NTLMv2 session security if the server supports it. Domain controllers accept LM, NTLM, and NTLMv2 authentication.| 1|
+| Send NTLM response only| Client devices use NTLMv1 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers accept LM, NTLM, and NTLMv2 authentication.| 2|
+| Send NTLMv2 response only | Client devices use NTLMv2 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers accept LM, NTLM, and NTLMv2 authentication.| 3|
+| Send NTLMv2 response only. Refuse LM | Client devices use NTLMv2 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers refuse to accept LM authentication, and they'll accept only NTLM and NTLMv2 authentication.| 4|
+| Send NTLMv2 response only. Refuse LM &amp; NTLM | Client devices use NTLMv2 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers refuse to accept LM and NTLM authentication, and they'll accept only NTLMv2 authentication.| 5|
+
 ### Best practices
 
 -   Best practices are dependent on your specific security and authentication requirements.
@@ -80,13 +80,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Send NTLMv2 response only| 
-| DC Effective Default Settings | Send NTLMv2 response only| 
-| Member Server Effective Default Settings | Send NTLMv2 response only| 
-| Client Computer Effective Default Settings | Not defined| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Send NTLMv2 response only|
+| DC Effective Default Settings | Send NTLMv2 response only|
+| Member Server Effective Default Settings | Send NTLMv2 response only|
+| Client Computer Effective Default Settings | Not defined|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

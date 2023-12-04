@@ -4,7 +4,7 @@ description: Learn more about the Power Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 10/24/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- Power-Begin -->
 # Policy CSP - Power
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- Power-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- AllowHibernate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowHibernate-Applicability-End -->
 
 <!-- AllowHibernate-OmaUri-Begin -->
@@ -54,7 +51,7 @@ This policy setting decides if hibernate on the machine is allowed or not. Suppo
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowHibernate-DFProperties-End -->
@@ -80,7 +77,7 @@ This policy setting decides if hibernate on the machine is allowed or not. Suppo
 <!-- AllowStandbyStatesWhenSleepingOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowStandbyStatesWhenSleepingOnBattery-Applicability-End -->
 
 <!-- AllowStandbyStatesWhenSleepingOnBattery-OmaUri-Begin -->
@@ -93,9 +90,9 @@ This policy setting decides if hibernate on the machine is allowed or not. Suppo
 <!-- Description-Source-ADMX -->
 This policy setting manages whether or not Windows is allowed to use standby states when putting the computer in a sleep state.
 
-- If you enable or do not configure this policy setting, Windows uses standby states to put the computer in a sleep state.
+- If you enable or don't configure this policy setting, Windows uses standby states to put the computer in a sleep state.
 
-- If you disable this policy setting, standby states (S1-S3) are not allowed.
+- If you disable this policy setting, standby states (S1-S3) aren't allowed.
 <!-- AllowStandbyStatesWhenSleepingOnBattery-Description-End -->
 
 <!-- AllowStandbyStatesWhenSleepingOnBattery-Editable-Begin -->
@@ -107,13 +104,12 @@ This policy setting manages whether or not Windows is allowed to use standby sta
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowStandbyStatesWhenSleepingOnBattery-DFProperties-End -->
 
 <!-- AllowStandbyStatesWhenSleepingOnBattery-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -140,7 +136,7 @@ This policy setting manages whether or not Windows is allowed to use standby sta
 <!-- AllowStandbyWhenSleepingPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowStandbyWhenSleepingPluggedIn-Applicability-End -->
 
 <!-- AllowStandbyWhenSleepingPluggedIn-OmaUri-Begin -->
@@ -153,9 +149,9 @@ This policy setting manages whether or not Windows is allowed to use standby sta
 <!-- Description-Source-ADMX -->
 This policy setting manages whether or not Windows is allowed to use standby states when putting the computer in a sleep state.
 
-- If you enable or do not configure this policy setting, Windows uses standby states to put the computer in a sleep state.
+- If you enable or don't configure this policy setting, Windows uses standby states to put the computer in a sleep state.
 
-- If you disable this policy setting, standby states (S1-S3) are not allowed.
+- If you disable this policy setting, standby states (S1-S3) aren't allowed.
 <!-- AllowStandbyWhenSleepingPluggedIn-Description-End -->
 
 <!-- AllowStandbyWhenSleepingPluggedIn-Editable-Begin -->
@@ -167,13 +163,12 @@ This policy setting manages whether or not Windows is allowed to use standby sta
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowStandbyWhenSleepingPluggedIn-DFProperties-End -->
 
 <!-- AllowStandbyWhenSleepingPluggedIn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -200,7 +195,7 @@ This policy setting manages whether or not Windows is allowed to use standby sta
 <!-- DisplayOffTimeoutOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisplayOffTimeoutOnBattery-Applicability-End -->
 
 <!-- DisplayOffTimeoutOnBattery-OmaUri-Begin -->
@@ -215,7 +210,7 @@ This policy setting allows you to specify the period of inactivity before Window
 
 - If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 
 If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- DisplayOffTimeoutOnBattery-Description-End -->
@@ -229,13 +224,12 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisplayOffTimeoutOnBattery-DFProperties-End -->
 
 <!-- DisplayOffTimeoutOnBattery-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -261,7 +255,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- DisplayOffTimeoutPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisplayOffTimeoutPluggedIn-Applicability-End -->
 
 <!-- DisplayOffTimeoutPluggedIn-OmaUri-Begin -->
@@ -276,7 +270,7 @@ This policy setting allows you to specify the period of inactivity before Window
 
 - If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 
 If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- DisplayOffTimeoutPluggedIn-Description-End -->
@@ -290,13 +284,12 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisplayOffTimeoutPluggedIn-DFProperties-End -->
 
 <!-- DisplayOffTimeoutPluggedIn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -322,7 +315,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- EnergySaverBatteryThresholdOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- EnergySaverBatteryThresholdOnBattery-Applicability-End -->
 
 <!-- EnergySaverBatteryThresholdOnBattery-OmaUri-Begin -->
@@ -337,7 +330,7 @@ This policy setting allows you to specify battery charge level at which Energy S
 
 - If you enable this policy setting, you must provide a percent value, indicating the battery charge level. Energy Saver will be automatically turned on at (and below) the specified level.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- EnergySaverBatteryThresholdOnBattery-Description-End -->
 
 <!-- EnergySaverBatteryThresholdOnBattery-Editable-Begin -->
@@ -349,7 +342,7 @@ This policy setting allows you to specify battery charge level at which Energy S
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-100]` |
 | Default Value  | 0 |
@@ -381,7 +374,7 @@ This policy setting allows you to specify battery charge level at which Energy S
 <!-- EnergySaverBatteryThresholdPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- EnergySaverBatteryThresholdPluggedIn-Applicability-End -->
 
 <!-- EnergySaverBatteryThresholdPluggedIn-OmaUri-Begin -->
@@ -396,7 +389,7 @@ This policy setting allows you to specify battery charge level at which Energy S
 
 - If you enable this policy setting, you must provide a percent value, indicating the battery charge level. Energy Saver will be automatically turned on at (and below) the specified level.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- EnergySaverBatteryThresholdPluggedIn-Description-End -->
 
 <!-- EnergySaverBatteryThresholdPluggedIn-Editable-Begin -->
@@ -408,7 +401,7 @@ This policy setting allows you to specify battery charge level at which Energy S
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-100]` |
 | Default Value  | 0 |
@@ -440,7 +433,7 @@ This policy setting allows you to specify battery charge level at which Energy S
 <!-- HibernateTimeoutOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- HibernateTimeoutOnBattery-Applicability-End -->
 
 <!-- HibernateTimeoutOnBattery-OmaUri-Begin -->
@@ -455,9 +448,9 @@ This policy setting allows you to specify the period of inactivity before Window
 
 - If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- HibernateTimeoutOnBattery-Description-End -->
 
 <!-- HibernateTimeoutOnBattery-Editable-Begin -->
@@ -469,13 +462,12 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- HibernateTimeoutOnBattery-DFProperties-End -->
 
 <!-- HibernateTimeoutOnBattery-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -501,7 +493,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- HibernateTimeoutPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- HibernateTimeoutPluggedIn-Applicability-End -->
 
 <!-- HibernateTimeoutPluggedIn-OmaUri-Begin -->
@@ -516,9 +508,9 @@ This policy setting allows you to specify the period of inactivity before Window
 
 - If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- HibernateTimeoutPluggedIn-Description-End -->
 
 <!-- HibernateTimeoutPluggedIn-Editable-Begin -->
@@ -530,13 +522,12 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- HibernateTimeoutPluggedIn-DFProperties-End -->
 
 <!-- HibernateTimeoutPluggedIn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -562,7 +553,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- RequirePasswordWhenComputerWakesOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RequirePasswordWhenComputerWakesOnBattery-Applicability-End -->
 
 <!-- RequirePasswordWhenComputerWakesOnBattery-OmaUri-Begin -->
@@ -575,9 +566,9 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- Description-Source-ADMX -->
 This policy setting specifies whether or not the user is prompted for a password when the system resumes from sleep.
 
-- If you enable or do not configure this policy setting, the user is prompted for a password when the system resumes from sleep.
+- If you enable or don't configure this policy setting, the user is prompted for a password when the system resumes from sleep.
 
-- If you disable this policy setting, the user is not prompted for a password when the system resumes from sleep.
+- If you disable this policy setting, the user isn't prompted for a password when the system resumes from sleep.
 <!-- RequirePasswordWhenComputerWakesOnBattery-Description-End -->
 
 <!-- RequirePasswordWhenComputerWakesOnBattery-Editable-Begin -->
@@ -589,13 +580,12 @@ This policy setting specifies whether or not the user is prompted for a password
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RequirePasswordWhenComputerWakesOnBattery-DFProperties-End -->
 
 <!-- RequirePasswordWhenComputerWakesOnBattery-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -622,7 +612,7 @@ This policy setting specifies whether or not the user is prompted for a password
 <!-- RequirePasswordWhenComputerWakesPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RequirePasswordWhenComputerWakesPluggedIn-Applicability-End -->
 
 <!-- RequirePasswordWhenComputerWakesPluggedIn-OmaUri-Begin -->
@@ -635,9 +625,9 @@ This policy setting specifies whether or not the user is prompted for a password
 <!-- Description-Source-ADMX -->
 This policy setting specifies whether or not the user is prompted for a password when the system resumes from sleep.
 
-- If you enable or do not configure this policy setting, the user is prompted for a password when the system resumes from sleep.
+- If you enable or don't configure this policy setting, the user is prompted for a password when the system resumes from sleep.
 
-- If you disable this policy setting, the user is not prompted for a password when the system resumes from sleep.
+- If you disable this policy setting, the user isn't prompted for a password when the system resumes from sleep.
 <!-- RequirePasswordWhenComputerWakesPluggedIn-Description-End -->
 
 <!-- RequirePasswordWhenComputerWakesPluggedIn-Editable-Begin -->
@@ -649,13 +639,12 @@ This policy setting specifies whether or not the user is prompted for a password
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RequirePasswordWhenComputerWakesPluggedIn-DFProperties-End -->
 
 <!-- RequirePasswordWhenComputerWakesPluggedIn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -682,7 +671,7 @@ This policy setting specifies whether or not the user is prompted for a password
 <!-- SelectLidCloseActionOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectLidCloseActionOnBattery-Applicability-End -->
 
 <!-- SelectLidCloseActionOnBattery-OmaUri-Begin -->
@@ -696,14 +685,15 @@ This policy setting specifies whether or not the user is prompted for a password
 This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC.
 
 Possible actions include:
+
 -Take no action
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
 - If you enable this policy setting, you must select the desired action.
 
-- If you disable this policy setting or do not configure it, users can see and change this setting.
+- If you disable this policy setting or don't configure it, users can see and change this setting.
 <!-- SelectLidCloseActionOnBattery-Description-End -->
 
 <!-- SelectLidCloseActionOnBattery-Editable-Begin -->
@@ -715,7 +705,7 @@ Possible actions include:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SelectLidCloseActionOnBattery-DFProperties-End -->
@@ -757,7 +747,7 @@ Possible actions include:
 <!-- SelectLidCloseActionPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectLidCloseActionPluggedIn-Applicability-End -->
 
 <!-- SelectLidCloseActionPluggedIn-OmaUri-Begin -->
@@ -771,14 +761,15 @@ Possible actions include:
 This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC.
 
 Possible actions include:
+
 -Take no action
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
 - If you enable this policy setting, you must select the desired action.
 
-- If you disable this policy setting or do not configure it, users can see and change this setting.
+- If you disable this policy setting or don't configure it, users can see and change this setting.
 <!-- SelectLidCloseActionPluggedIn-Description-End -->
 
 <!-- SelectLidCloseActionPluggedIn-Editable-Begin -->
@@ -790,7 +781,7 @@ Possible actions include:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SelectLidCloseActionPluggedIn-DFProperties-End -->
@@ -832,7 +823,7 @@ Possible actions include:
 <!-- SelectPowerButtonActionOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectPowerButtonActionOnBattery-Applicability-End -->
 
 <!-- SelectPowerButtonActionOnBattery-OmaUri-Begin -->
@@ -846,14 +837,15 @@ Possible actions include:
 This policy setting specifies the action that Windows takes when a user presses the power button.
 
 Possible actions include:
+
 -Take no action
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
 - If you enable this policy setting, you must select the desired action.
 
-- If you disable this policy setting or do not configure it, users can see and change this setting.
+- If you disable this policy setting or don't configure it, users can see and change this setting.
 <!-- SelectPowerButtonActionOnBattery-Description-End -->
 
 <!-- SelectPowerButtonActionOnBattery-Editable-Begin -->
@@ -865,7 +857,7 @@ Possible actions include:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SelectPowerButtonActionOnBattery-DFProperties-End -->
@@ -907,7 +899,7 @@ Possible actions include:
 <!-- SelectPowerButtonActionPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectPowerButtonActionPluggedIn-Applicability-End -->
 
 <!-- SelectPowerButtonActionPluggedIn-OmaUri-Begin -->
@@ -921,14 +913,15 @@ Possible actions include:
 This policy setting specifies the action that Windows takes when a user presses the power button.
 
 Possible actions include:
+
 -Take no action
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
 - If you enable this policy setting, you must select the desired action.
 
-- If you disable this policy setting or do not configure it, users can see and change this setting.
+- If you disable this policy setting or don't configure it, users can see and change this setting.
 <!-- SelectPowerButtonActionPluggedIn-Description-End -->
 
 <!-- SelectPowerButtonActionPluggedIn-Editable-Begin -->
@@ -940,7 +933,7 @@ Possible actions include:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SelectPowerButtonActionPluggedIn-DFProperties-End -->
@@ -982,7 +975,7 @@ Possible actions include:
 <!-- SelectSleepButtonActionOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectSleepButtonActionOnBattery-Applicability-End -->
 
 <!-- SelectSleepButtonActionOnBattery-OmaUri-Begin -->
@@ -996,14 +989,15 @@ Possible actions include:
 This policy setting specifies the action that Windows takes when a user presses the sleep button.
 
 Possible actions include:
+
 -Take no action
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
 - If you enable this policy setting, you must select the desired action.
 
-- If you disable this policy setting or do not configure it, users can see and change this setting.
+- If you disable this policy setting or don't configure it, users can see and change this setting.
 <!-- SelectSleepButtonActionOnBattery-Description-End -->
 
 <!-- SelectSleepButtonActionOnBattery-Editable-Begin -->
@@ -1015,7 +1009,7 @@ Possible actions include:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SelectSleepButtonActionOnBattery-DFProperties-End -->
@@ -1057,7 +1051,7 @@ Possible actions include:
 <!-- SelectSleepButtonActionPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectSleepButtonActionPluggedIn-Applicability-End -->
 
 <!-- SelectSleepButtonActionPluggedIn-OmaUri-Begin -->
@@ -1071,14 +1065,15 @@ Possible actions include:
 This policy setting specifies the action that Windows takes when a user presses the sleep button.
 
 Possible actions include:
+
 -Take no action
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
 - If you enable this policy setting, you must select the desired action.
 
-- If you disable this policy setting or do not configure it, users can see and change this setting.
+- If you disable this policy setting or don't configure it, users can see and change this setting.
 <!-- SelectSleepButtonActionPluggedIn-Description-End -->
 
 <!-- SelectSleepButtonActionPluggedIn-Editable-Begin -->
@@ -1090,7 +1085,7 @@ Possible actions include:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SelectSleepButtonActionPluggedIn-DFProperties-End -->
@@ -1132,7 +1127,7 @@ Possible actions include:
 <!-- StandbyTimeoutOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- StandbyTimeoutOnBattery-Applicability-End -->
 
 <!-- StandbyTimeoutOnBattery-OmaUri-Begin -->
@@ -1147,9 +1142,9 @@ This policy setting allows you to specify the period of inactivity before Window
 
 - If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- StandbyTimeoutOnBattery-Description-End -->
 
 <!-- StandbyTimeoutOnBattery-Editable-Begin -->
@@ -1161,13 +1156,12 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StandbyTimeoutOnBattery-DFProperties-End -->
 
 <!-- StandbyTimeoutOnBattery-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1193,7 +1187,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- StandbyTimeoutPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- StandbyTimeoutPluggedIn-Applicability-End -->
 
 <!-- StandbyTimeoutPluggedIn-OmaUri-Begin -->
@@ -1208,9 +1202,9 @@ This policy setting allows you to specify the period of inactivity before Window
 
 - If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- StandbyTimeoutPluggedIn-Description-End -->
 
 <!-- StandbyTimeoutPluggedIn-Editable-Begin -->
@@ -1222,13 +1216,12 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StandbyTimeoutPluggedIn-DFProperties-End -->
 
 <!-- StandbyTimeoutPluggedIn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1254,7 +1247,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- TurnOffHybridSleepOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- TurnOffHybridSleepOnBattery-Applicability-End -->
 
 <!-- TurnOffHybridSleepOnBattery-OmaUri-Begin -->
@@ -1265,11 +1258,11 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!-- TurnOffHybridSleepOnBattery-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to turn off hybrid sleep.
+This policy setting allows you to turn off Hybrid Sleep.
 
-- If you enable this policy setting, a hiberfile is not generated when the system transitions to sleep (Stand By).
+- If you enable this policy setting, a hiberfile isn't generated when the system transitions to sleep (Stand By).
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- TurnOffHybridSleepOnBattery-Description-End -->
 
 <!-- TurnOffHybridSleepOnBattery-Editable-Begin -->
@@ -1281,7 +1274,7 @@ This policy setting allows you to turn off hybrid sleep.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- TurnOffHybridSleepOnBattery-DFProperties-End -->
@@ -1292,7 +1285,7 @@ This policy setting allows you to turn off hybrid sleep.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | . |
-| 1 | Hybrid sleep. |
+| 1 | Hybrid Sleep. |
 <!-- TurnOffHybridSleepOnBattery-AllowedValues-End -->
 
 <!-- TurnOffHybridSleepOnBattery-GpMapping-Begin -->
@@ -1321,7 +1314,7 @@ This policy setting allows you to turn off hybrid sleep.
 <!-- TurnOffHybridSleepPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- TurnOffHybridSleepPluggedIn-Applicability-End -->
 
 <!-- TurnOffHybridSleepPluggedIn-OmaUri-Begin -->
@@ -1332,11 +1325,11 @@ This policy setting allows you to turn off hybrid sleep.
 
 <!-- TurnOffHybridSleepPluggedIn-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to turn off hybrid sleep.
+This policy setting allows you to turn off Hybrid Sleep.
 
-- If you enable this policy setting, a hiberfile is not generated when the system transitions to sleep (Stand By).
+- If you enable this policy setting, a hiberfile isn't generated when the system transitions to sleep (Stand By).
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- TurnOffHybridSleepPluggedIn-Description-End -->
 
 <!-- TurnOffHybridSleepPluggedIn-Editable-Begin -->
@@ -1348,7 +1341,7 @@ This policy setting allows you to turn off hybrid sleep.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- TurnOffHybridSleepPluggedIn-DFProperties-End -->
@@ -1359,7 +1352,7 @@ This policy setting allows you to turn off hybrid sleep.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | . |
-| 1 | Hybrid sleep. |
+| 1 | Hybrid Sleep. |
 <!-- TurnOffHybridSleepPluggedIn-AllowedValues-End -->
 
 <!-- TurnOffHybridSleepPluggedIn-GpMapping-Begin -->
@@ -1388,7 +1381,7 @@ This policy setting allows you to turn off hybrid sleep.
 <!-- UnattendedSleepTimeoutOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- UnattendedSleepTimeoutOnBattery-Applicability-End -->
 
 <!-- UnattendedSleepTimeoutOnBattery-OmaUri-Begin -->
@@ -1399,13 +1392,13 @@ This policy setting allows you to turn off hybrid sleep.
 
 <!-- UnattendedSleepTimeoutOnBattery-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
+This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user isn't present at the computer.
 
-- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows does not automatically transition to sleep.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows doesn't automatically transition to sleep.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- UnattendedSleepTimeoutOnBattery-Description-End -->
 
 <!-- UnattendedSleepTimeoutOnBattery-Editable-Begin -->
@@ -1417,7 +1410,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 0 |
@@ -1449,7 +1442,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- UnattendedSleepTimeoutPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- UnattendedSleepTimeoutPluggedIn-Applicability-End -->
 
 <!-- UnattendedSleepTimeoutPluggedIn-OmaUri-Begin -->
@@ -1460,13 +1453,13 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!-- UnattendedSleepTimeoutPluggedIn-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
+This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user isn't present at the computer.
 
-- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows does not automatically transition to sleep.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows doesn't automatically transition to sleep.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- UnattendedSleepTimeoutPluggedIn-Description-End -->
 
 <!-- UnattendedSleepTimeoutPluggedIn-Editable-Begin -->
@@ -1478,7 +1471,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 0 |
