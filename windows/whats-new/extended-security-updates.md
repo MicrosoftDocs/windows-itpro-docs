@@ -26,7 +26,7 @@ Individuals or organizations who elect to continue using Windows 10 after suppor
 
 ## Device prerequisites
 
-To be eligible for ESU, devices must be running Windows 10, version 22H2.
+To be eligible to install updates from the ESU program, devices must be running Windows 10, version 22H2.
 
 ## Limitations
 
@@ -43,7 +43,7 @@ The following are frequently asked questions about the ESU program for Windows 1
 
 ### How much does ESU cost?
 
-Final pricing and enrollment conditions will be made available closer to the October 2025 date for end of support, approximately one year before the end of support for Windows 10.
+Final pricing and enrollment conditions will be made available closer to the October 2025 date for end of support, approximately one year before the end of support for Windows 10. ESU will be free for all Windows 365 customers. For more information about Windows 365, see [What is Windows 365?](/windows-365/overview).
 
 ### Is there a minimum license purchase requirement for Windows 10 ESU?
 
@@ -67,7 +67,7 @@ No, technical support isn't included in the ESU program. Microsoft will provide 
 
 ### Will Windows 10 PCs stop working without the ESU offering?
 
-Windows 10 PCs will continue to work, but we recommend customers upgrade or transition to a new Windows 11 PC for the best, most secure computing experience. Beginning October 14, 2025, Microsoft will no longer provide the following for versions of Windows 10 that reach end of support on that date:
+Windows 10 PCs will continue to work, but we recommend customers upgrade eligible PCs to Windows 11 using Windows Autopatch, Microsoft Intune, or transition to a new Windows 11 PC for the best, most secure computing experience. Customers also have the option to migrate to the cloud and subscribe to Windows 365 to make Windows 11 available to users on any device with a Cloud PC. Beginning October 14, 2025, Microsoft will no longer provide the following for versions of Windows 10 that reach end of support on that date:
 
 - Technical support
 - Feature updates or new features
