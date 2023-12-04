@@ -1,9 +1,9 @@
 ---
 title: Managed installer and ISG technical reference and troubleshooting guide
-description: Explains how to configure a custom Managed Installer.
+description: A technical reference and troubleshooting guide for managed installer and Intelligent Security Graph (ISG).
 ms.localizationpriority: medium
 ms.date: 11/11/2022
-ms.topic: article
+ms.topic: troubleshooting
 ---
 
 # Managed installer and ISG technical reference and troubleshooting guide
