@@ -13,9 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server</a>
-
-
-ms.date: 11/27/2023
+ms.date: 12/05/2023
 ---
 
 # Update Windows installation media with Dynamic Update
@@ -113,13 +111,13 @@ This table shows the correct sequence for applying the various tasks to the file
 
 ### Multiple Windows editions
 
-The main operating system file (install.wim) may contain multiple editions of Windows. It's possible that only an update for a given edition is required to deploy it, based on the index. Or, it might be that all editions need an update. Further, ensure that languages are installed before Features on Demand, and the latest cumulative update is always applied last.
+The main operating system file (install.wim) might contain multiple editions of Windows. It's possible that only an update for a given edition is required to deploy it, based on the index. Or, it might be that all editions need an update. Further, ensure that languages are installed before Features on Demand, and the latest cumulative update is always applied last.
 
 ### Additional languages and features
 
-You don't have to add more languages and features to the image to accomplish the updates, but it's an opportunity to customize the image with more languages, Optional Components, and Features on Demand beyond what is in your starting image. To do this, it's important to make these changes in the correct order: first apply servicing stack updates, followed by language additions, then by feature additions, and finally the latest cumulative update. The provided sample script installs a second language (in this case Japanese (ja-JP)). Since this language is backed by an lp.cab, there's no need to add a Language Experience Pack. Japanese is added to both the main operating system and to the recovery environment to allow the user to see the recovery screens in Japanese. This includes adding localized versions of the packages currently installed in the recovery image.
+You don't have to add more languages and features to the image to accomplish the updates, but it's an opportunity to customize the image with more languages, Optional Components, and Features on Demand beyond what's in your starting image. When you add more languages and features, it's important to make these changes in the correct order: first apply servicing stack updates, followed by language additions, then by feature additions, and finally the latest cumulative update. The provided sample script installs a second language (in this case Japanese (ja-JP)). Since this language is backed by an lp.cab, there's no need to add a Language Experience Pack. Japanese is added to both the main operating system and to the recovery environment to allow the user to see the recovery screens in Japanese. This includes adding localized versions of the packages currently installed in the recovery image.
 
-Optional Components, along with the .NET feature, can be installed offline, however doing so creates pending operations that require the device to restart. As a result, the call to perform image cleanup would fail. There are two options to avoid this. One option is to skip the image cleanup step, though that results in a larger install.wim. Another option is to install the .NET and Optional Components in a step after cleanup but before export. This is the option in the sample script. By doing this, you'll have to start with the original install.wim (with no pending actions) when you maintain or update the image the next time (for example, the next month).
+Optional Components, along with the .NET feature, can be installed offline, however doing so creates pending operations that require the device to restart. As a result, the call to perform image cleanup would fail. There are two options to avoid the cleanup failure. One option is to skip the image cleanup step, though that results in a larger install.wim. Another option is to install the .NET and Optional Components in a step after cleanup but before export. This is the option in the sample script. By doing this, you'll have to start with the original install.wim (with no pending actions) when you maintain or update the image the next time (for example, the next month).
 
 ## Windows PowerShell scripts to apply Dynamic Updates to an existing image
 
@@ -133,7 +131,7 @@ These examples are for illustration only, and therefore lack error handling. The
 
 ### Get started
 
-The script starts by declaring global variables and creating folders to use for mounting images. Then, make a copy of the original media, from \oldMedia to \newMedia, keeping the original media in case there's a script error and it's necessary to start over from a known state. Also, it will provide a comparison of old versus new media to evaluate changes. To ensure that the new media updates, make sure they aren't read-only.
+The script starts by declaring global variables and creating folders to use for mounting images. Then, make a copy of the original media, from \oldMedia to \newMedia, keeping the original media in case there's a script error and it's necessary to start over from a known state. Also, it provides a comparison of old versus new media to evaluate changes. To ensure that the new media updates, make sure they aren't read-only.
 
 ```powershell
 #Requires -RunAsAdministrator
@@ -205,7 +203,7 @@ For the first image, Winre.wim is copied to the working folder, and mounted. It 
 
 Next, for the mounted OS image, the script starts by applying the servicing stack Dynamic Update. Then, it adds Japanese language support and then the Japanese language features. Unlike the Dynamic Update packages, it uses `Add-WindowsCapability` to add these features. For a full list of such features, and their associated capability name, see [Available Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod). Now is the time to enable other Optional Components or add other Features on Demand. If such a feature has an associated cumulative update (for example, .NET), this is the time to apply those. The script then proceeds with applying the latest cumulative update. Finally, the script cleans and exports the image. You can install Optional Components, along with the .NET feature, offline, but that requires the device to be restarted. This is why the script installs .NET and Optional Components after cleanup and before export.
 
-This process is repeated for each edition of Windows within the main operating system file. To reduce size, the serviced Winre.wim file from the first image is saved, and used to update each subsequent Windows edition. This will reduce the final size of install.wim. 
+This process is repeated for each edition of Windows within the main operating system file. To reduce size, the serviced Winre.wim file from the first image is saved, and used to update each subsequent Windows edition. This reduces the final size of install.wim. 
 
 
 ```powershell
