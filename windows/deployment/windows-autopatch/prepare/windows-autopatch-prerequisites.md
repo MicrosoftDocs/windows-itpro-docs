@@ -1,7 +1,7 @@
 ---
 title: Prerequisites
 description: This article details the prerequisites needed for Windows Autopatch
-ms.date: 09/24/2023
+ms.date: 12/04/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -21,7 +21,7 @@ Getting started with Windows Autopatch has been designed to be easy. This articl
 
 | Area | Prerequisite details |
 | ----- | ----- |
-| Licensing | Windows Autopatch requires Windows 10/11 Enterprise E3 (or higher) to be assigned to your users. Additionally, Microsoft Entra ID P1 or P2 and Microsoft Intune are required. For details about the specific service plans, see [more about licenses](#more-about-licenses).<p><p>For more information on available licenses, see [Microsoft 365 licensing](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).<p><p>For more information about licensing terms and conditions for products and services purchased through Microsoft Commercial Volume Licensing Programs, see the [Product Terms site](https://www.microsoft.com/licensing/terms/). |
+| Licensing | Windows Autopatch requires Windows 10/11 Enterprise E3 (or higher), or F3 to be assigned to your users. Additionally, Microsoft Entra ID P1 or P2 and Microsoft Intune are required. For details about the specific service plans, see [more about licenses](#more-about-licenses).<p><p>For more information on available licenses, see [Microsoft 365 licensing](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).<p><p>For more information about licensing terms and conditions for products and services purchased through Microsoft Commercial Volume Licensing Programs, see the [Product Terms site](https://www.microsoft.com/licensing/terms/). |
 | Connectivity | All Windows Autopatch devices require connectivity to multiple Microsoft service endpoints from the corporate network.<p><p>For the full list of required IPs and URLs, see [Configure your network](../prepare/windows-autopatch-configure-network.md). |
 | Microsoft Entra ID | Microsoft Entra ID must either be the source of authority for all user accounts, or user accounts must be synchronized from on-premises Active Directory using the latest supported version of Microsoft Entra Connect to enable Microsoft Entra hybrid join.<br><ul><li>For more information, see [Microsoft Entra Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect) and [Microsoft Entra hybrid join](/azure/active-directory/devices/howto-hybrid-azure-ad-join)</li><li>For more information on supported Microsoft Entra Connect versions, see [Microsoft Entra Connect:Version release history](/azure/active-directory/hybrid/reference-connect-version-history).</li></ul> |
 | Device management | [Devices must be already enrolled with Microsoft Intune](/mem/intune/user-help/enroll-windows-10-device) prior to registering with Windows Autopatch. Intune must be set as the Mobile Device Management (MDM) authority or co-management must be turned on and enabled on the target devices.<p><p>At a minimum, the Windows Update, Device configuration and Office Click-to-Run apps workloads must be set to Pilot Intune or Intune. You must also ensure that the devices you intend on bringing to Windows Autopatch are in the targeted device collection. For more information, see [co-management requirements for Windows Autopatch](#configuration-manager-co-management-requirements).<p>Other device management prerequisites include:<ul><li>Devices must be corporate-owned. Windows bring-your-own-devices (BYOD) are blocked during device registration prerequisite checks.</li><li>Devices must be managed by either Intune or Configuration Manager co-management. Devices only managed by Configuration Manager aren't supported.</li><li>Devices must be in communication with Microsoft Intune in the **last 28 days**. Otherwise, the devices won't be registered with Autopatch.</li><li>Devices must be connected to the internet.</li><li>Devices must have a **Serial number**, **Model** and **Manufacturer**. Device emulators that don't generate this information fail to meet **Intune or Cloud-attached** prerequisite check.</li></ul><p>See [Register your devices](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices) for more details on device prerequisites and on how the device registration process works with Windows Autopatch.<p>For more information on co-management, see [co-management for Windows devices](/mem/configmgr/comanage/overview).</p> |
@@ -46,6 +46,10 @@ Windows Autopatch is included with Windows 10/11 Enterprise E3 or higher (user-b
 | [Windows 10/11 Enterprise E3](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | WIN10_VDA_E3 | 6a0f6da5-0b87-4190-a6ae-9bb5a2b9546a |
 | [Windows 10/11 Enterprise E5](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | WIN10_VDA_E5 | 488ba24a-39a9-4473-8ee5-19291e71b002 |
 | [Windows 10/11 Enterprise VDA](/windows/deployment/deploy-enterprise-licenses#virtual-desktop-access-vda) | E3_VDA_only | d13ef257-988a-46f3-8fce-f47484dd4550 |
+| [Microsoft 365 F3](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_F1 | 66b55226-6b4f-492c-910c-a3b7a3c9d993 |
+| Microsoft 365 F3 (self-service) | Microsoft_365_F3_Department |6803cf1e-c822-41a1-864e-a31377bcdb7e |
+| Microsoft 365 F3 (for Department) | Microsoft_365_F3_DEPT |45972061-34c4-44c8-9e83-ad97815acc34 |
+| Microsoft 365 F3 EEA (no Teams) | Microsoft_365_F3_EEA_(no_Teams) | f7ee79a7-7aec-4ca4-9fb9-34d6b930ad87 |
 
 The following Windows 10 editions, build version and architecture are supported to be [registered](../deploy/windows-autopatch-register-devices.md) with Windows Autopatch:
 
