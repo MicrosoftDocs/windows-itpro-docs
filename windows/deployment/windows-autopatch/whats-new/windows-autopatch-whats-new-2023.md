@@ -21,13 +21,13 @@ This article lists new and updated feature releases, and service releases, with 
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
 
-## November 2023
+## December 2023
 
-### October feature releases or updates
+### December feature releases or updates
 
 | Article | Description |
 | ----- | ----- |
-| [Prerequisites](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) | Added F SKU licenses to the More about licenses section. Also see [FAQ](../overview/windows-autopatch-faq.yml)<ul><li>[MC690609](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Prerequisites](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) | Added F SKU licenses to the [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) section. Also see [FAQ](../overview/windows-autopatch-faq.yml)<ul><li>[MC690609](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
 
 ## November service release
 
