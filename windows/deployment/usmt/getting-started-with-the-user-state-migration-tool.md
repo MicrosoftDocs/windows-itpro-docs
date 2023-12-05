@@ -30,18 +30,18 @@ This article outlines the general process that you should follow to migrate file
 
 1. Use the `/GenMigXML` command-line option to determine which files are included in your migration, and to determine whether any modifications are necessary. For more information, see [ScanState Syntax](usmt-scanstate-syntax.md)
 
-1. If necessary, modify copies of the `Migration.xml` and `MigDocs.xml` files and create custom .xml files. To modify the migration behavior, such as migrating the **Documents** folder but not the **Music** folder, you can create a custom .xml file or modify the rules in the existing migration .xml files. The document finder, or `MigXmlHelper.GenerateDocPatterns` helper function, can be used to automatically find user documents on a computer without creating extensive custom migration .xml files.
+1. If necessary, modify copies of the `Migration.xml` and `MigDocs.xml` files and create custom **.xml** files. To modify the migration behavior, such as migrating the **Documents** folder but not the **Music** folder, you can create a custom **.xml** file or modify the rules in the existing migration **.xml** files. The document finder, or `MigXmlHelper.GenerateDocPatterns` helper function, can be used to automatically find user documents on a computer without creating extensive custom migration **.xml** files.
 
     > [!IMPORTANT]
     >
-    > We recommend that you always make and modify copies of the .xml files included in User State Migration Tool (USMT). Never modify the original .xml files.
+    > We recommend that you always make and modify copies of the **.xml** files included in User State Migration Tool (USMT). Never modify the original **.xml** files.
 
-    You can use the `MigXML.xsd` file to help you write and validate the .xml files. For more information about how to modify these files, see [USMT XML Reference](usmt-xml-reference.md).
+    You can use the `MigXML.xsd` file to help you write and validate the **.xml** files. For more information about how to modify these files, see [USMT XML Reference](usmt-xml-reference.md).
 
 1. Create a [Config.xml File](usmt-configxml-file.md) if you want to exclude any components from the migration. To create this file, run the `ScanState.exe` command with the following options:
 
     - [/genconfig](usmt-scanstate-syntax.md#migration-rule-options).
-    - [/i](usmt-scanstate-syntax.md#migration-rule-options) - as arguments specify the .xml files that you plan to use with `ScanState.exe`.
+    - [/i](usmt-scanstate-syntax.md#migration-rule-options) - as arguments specify the **.xml** files that you plan to use with `ScanState.exe`.
 
    For example, the following command creates a `Config.xml` file by using the `MigDocs.xml` and `MigApp.xml` files:
 
@@ -61,7 +61,7 @@ This article outlines the general process that you should follow to migrate file
      >
      > USMT fails if it can't migrate a file or setting unless you specify the `/c` option. When you specify the `/c` option, USMT ignores the errors, and log an error every time that it encounters a file that is being used that USMT didn't migrate. You can use the `<ErrorControl>` section in the `Config.xml` file to specify which errors should be ignored, and which should cause the migration to fail.
 
-1. Run the `ScanState.exe` command on the source computer to collect files and settings. You should specify all of the .xml files that you want the `ScanState.exe` command to use. For example,
+1. Run the `ScanState.exe` command on the source computer to collect files and settings. You should specify all of the **.xml** files that you want the `ScanState.exe` command to use. For example,
 
      ```cmd
         ScanState.exe \\server\migration\mystore /config:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:ScanState.log
@@ -89,7 +89,7 @@ This article outlines the general process that you should follow to migrate file
      >
      > Use `/c` to continue your migration if errors are encountered, and use the `<ErrorControl>` section in the `Config.xml` file to specify which errors should be ignored, and which errors should cause the migration to fail.
 
-1. Run the `LoadState.exe` command on the destination computer. Specify the same set of .xml files that you specified when you used the `ScanState.exe` command. However, the `Config.xml` file doesn't always need to be specified. The `Config.xml` file only needs to be specified when you wanted to exclude some of the files and settings that you migrated to the store. For example, you might want to migrate the My Documents folder to the store, but not to the destination computer. For example, modify the `Config.xml` file and specify the updated file by using the `LoadState.exe` command. Then, the `LoadState.exe` command migrates only the files and settings that you want to migrate. For more information about how the `LoadState.exe` command processes and migrates data, see [How USMT Works](usmt-how-it-works.md).
+1. Run the `LoadState.exe` command on the destination computer. Specify the same set of **.xml** files that you specified when you used the `ScanState.exe` command. However, the `Config.xml` file doesn't always need to be specified. The `Config.xml` file only needs to be specified when you wanted to exclude some of the files and settings that you migrated to the store. For example, you might want to migrate the My Documents folder to the store, but not to the destination computer. For example, modify the `Config.xml` file and specify the updated file by using the `LoadState.exe` command. Then, the `LoadState.exe` command migrates only the files and settings that you want to migrate. For more information about how the `LoadState.exe` command processes and migrates data, see [How USMT Works](usmt-how-it-works.md).
 
     For example, the following command migrates the files and settings:
 
