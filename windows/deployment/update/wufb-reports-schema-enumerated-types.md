@@ -11,7 +11,7 @@ manager: aaroncz
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 11/27/2023
+ms.date: 12/06/2023
 ---
 
 # Enumerated types for Windows Update for Business reports
@@ -75,8 +75,8 @@ Compliance status
 
 |Value | Description |
 |---|---|
-| **Compliant** | The latest Windows Update for Business deployment service deployment is installed on the client |
-| **NotCompliant** |  The latest Windows Update for Business deployment service deployment isn't installed on the client |
+| **Compliant** | The latest deployment from the Windows Update for Business deployment service is installed on the client |
+| **NotCompliant** |  The latest deployment from the Windows Update for Business deployment service isn't installed on the client|
 | **NotApplicable** | Client isn't part of any Windows Update for Business deployment service deployments |
 
 ## OSServicingChannel

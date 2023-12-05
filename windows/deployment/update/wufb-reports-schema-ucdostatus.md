@@ -11,7 +11,7 @@ ms.reviewer: carmenf
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 11/27/2022
+ms.date: 12/06/2023
 ---
 
 # UCDOStatus
