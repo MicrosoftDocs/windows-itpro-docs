@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.topic: reference
+ms.topic: conceptual
 ms.collection:
   - highpri
   - tier1
