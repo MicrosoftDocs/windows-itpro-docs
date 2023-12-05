@@ -5,7 +5,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 12/05/2023
+ms.date: 12/06/2023
 ms.topic: article
 ms.technology: itpro-deploy
 ---
@@ -132,7 +132,8 @@ Your script should do the following actions:
     - If the versions of the applications are the same on both the source and destination computers, migrate each setting using the **&lt;include&gt;** and **&lt;exclude&gt;** elements.
 
     - If the version of the application on the destination computer is newer than the one on the source computer, and the application can't import the settings, your script should either:
-        1. Add the set of files that trigger the import using the **&lt;addObjects&gt;** element
+
+        1. Add the set of files that trigger the import using the **&lt;addObjects&gt;** element.
         2. Create a mapping that applies the old settings to the correct location on the destination computer using the **&lt;locationModify&gt;** element, and the `RelativeMove` and `ExactMove` helper functions.
 
     - If you must install the application before migrating the settings, delete any settings that are already on the destination computer using the **&lt;destinationCleanup&gt;** element.
@@ -153,7 +154,7 @@ For more information, see the [Exclude files and settings](usmt-exclude-files-an
 
 ## Related articles
 
-- [USMT XML reference](usmt-xml-reference.md)
-- [Conflicts and precedence](usmt-conflicts-and-precedence.md)
-- [XML elements library](usmt-xml-elements-library.md)
-- [Log files](usmt-log-files.md)
+- [USMT XML reference](usmt-xml-reference.md).
+- [Conflicts and precedence](usmt-conflicts-and-precedence.md).
+- [XML elements library](usmt-xml-elements-library.md).
+- [Log files](usmt-log-files.md).

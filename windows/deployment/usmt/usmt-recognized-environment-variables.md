@@ -6,7 +6,7 @@ ms.technology: itpro-deploy
 manager: aaroncz
 ms.author: frankroj
 author: frankroj
-ms.date: 12/05/2023
+ms.date: 12/06/2023
 ms.topic: conceptual
 ms.collection:
   - highpri

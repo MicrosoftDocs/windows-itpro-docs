@@ -7,7 +7,7 @@ ms.prod: windows-client
 author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
-ms.date: 12/05/2023
+ms.date: 12/06/2023
 ---
 
 # Getting started with the User State Migration Tool (USMT)

@@ -6,7 +6,7 @@ ms.technology: itpro-deploy
 author: frankroj
 manager: aaroncz
 ms.author: frankroj
-ms.date: 12/05/2023
+ms.date: 12/06/2023
 ms.topic: overview
 ms.collection:
   - highpri
@@ -47,4 +47,4 @@ There are some scenarios in which the use of USMT isn't recommended. These scena
 
 ## Related articles
 
-- [User State Migration Tool (USMT) technical reference](usmt-technical-reference.md)
+- [User State Migration Tool (USMT) technical reference](usmt-technical-reference.md).
