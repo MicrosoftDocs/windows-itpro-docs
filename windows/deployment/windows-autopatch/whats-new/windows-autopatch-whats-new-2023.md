@@ -23,7 +23,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 ## November 2023
 
-### October feature releases or updates
+### November feature releases or updates
 
 | Article | Description |
 | ----- | ----- |
