@@ -39,6 +39,7 @@
         "tier2"
       ],
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
+      "zone_pivot_group_filename": "resources/zone-pivot-groups.json",
       "uhfHeaderId": "MSDocsHeader-Windows",
       "ms.localizationpriority": "medium",
       "ms.prod": "windows-client",

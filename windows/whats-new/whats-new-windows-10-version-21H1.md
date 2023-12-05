@@ -6,7 +6,7 @@ author: mestew
 ms.author: mstewart
 manager: aaroncz
 ms.localizationpriority: high
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
   - highpri
   - tier2
