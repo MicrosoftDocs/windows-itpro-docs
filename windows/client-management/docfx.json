@@ -38,6 +38,7 @@
       "ms.collection": [
         "tier2"
       ],
+      "zone_pivot_group_filename": "resources/zone-pivot-groups.json",
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Windows",
       "ms.technology": "itpro-manage",

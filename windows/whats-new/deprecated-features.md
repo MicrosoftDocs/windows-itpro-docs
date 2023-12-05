@@ -1,7 +1,7 @@
 ---
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer actively developing in Windows 10 and Windows 11.
-ms.date: 11/15/2023
+ms.date: 12/05/2023
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
@@ -35,7 +35,9 @@ The features in this article are no longer being actively developed, and might b
 > If you have feedback about the proposed replacement of any of these features, you can use the [Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332).
 
 |Feature    |  Details and mitigation  | Deprecation announced |
-| ----------- | --------------------- | ---- |
+|---|---|---|
+| Windows speech recognition <!--8396142-->| [Windows speech recognition](https://support.microsoft.com/windows/83ff75bd-63eb-0b6c-18d4-6fae94050571) is deprecated and is no longer being developed. This feature is being replaced with [voice access](https://support.microsoft.com/topic/4dcd23ee-f1b9-4fd1-bacc-862ab611f55d). Voice access is available for Windows 11, version 22H2, or later devices. | December 2023 |
+| Microsoft Defender Application Guard for Office <!--8396036-->| [Microsoft Defender Application Guard for Office](/microsoft-365/security/office-365-security/app-guard-for-office-install) is being deprecated and is no longer being updated. This deprecation also includes the [Windows.Security.Isolation APIs](/uwp/api/windows.security.isolation) that are used for Microsoft Defender Application Guard for Office. We recommend transitioning to Microsoft Defender for Endpoint [attack surface reduction rules](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) along with [Protected View](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365#global-settings-for-safe-attachments) and [Windows Defender Application Control](/windows/security/application-security/application-control/windows-defender-application-control/wdac).  | November 2023 |
 | Steps Recorder (psr.exe) <!--8412957-->| Steps Recorder is no longer being updated and will be removed in a future release of Windows. For screen recording, we recommend the Snipping Tool, Xbox Game Bar, or Microsoft Clipchamp. | November 2023 |
 | Tips <!--8412913--> | The Tips app is deprecated and will be removed in a future release of Windows. Content in the app will continue to be updated with information about new Windows features until the app is removed. | November 2023 |
 | Computer Browser <!--8454292-->| The Computer Browser driver and service are deprecated. The browser (browser protocol and service) is a dated and insecure device location protocol. This protocol, service, and driver were first disabled by default in Windows 10 with the removal of the SMB1 service. For more information on Computer Browser, see [MS-BRWS Common Internet File System](/openspecs/windows_protocols/ms-brws/3cfbad92-09b3-4abc-808f-c6f6347d5677). | November 2023 | 
