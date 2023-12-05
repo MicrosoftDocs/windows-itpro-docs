@@ -21,9 +21,9 @@ This article lists new and updated feature releases, and service releases, with 
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
 
-## November 2023
+## December 2023
 
-### November feature releases or updates
+### December feature releases or updates
 
 | Article | Description |
 | ----- | ----- |
