@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 author: mestew
 manager: aaroncz
 ms.author: mstewart
-ms.topic: article
+ms.topic: conceptual
 ms.technology: itpro-fundamentals
 ms.date: 10/28/2022
 ms.collection:
