@@ -99,8 +99,8 @@ System environment variables are necessary in the scenarios outlined in the foll
 
 |Variable|Value|Scenario|
 |--- |--- |--- |
-|*USMT_WORKING_DIR*|Full path to a working directory|Required when USMT binaries are located on read-only media, which doesn't support the creation of log files or temporary storage. To set the system environment variable, at a command prompt type the following command: <br><br> `Set USMT_WORKING_DIR=<path to working directory>`|
-*|MIG_OFFLINE_PLATFORM_ARCH*|32 or 64|While operating offline, this environment variable defines the architecture of the offline system, if the system doesn't match the WinPE and `ScanState.exe` architecture. This environment variable enables the 32-bit ScanState application to gather data from a computer with 64-bit architecture, or the 64-bit ScanState application to gather data from a computer with 32-bit architecture. Specifying the architecture is required when auto-detection of the offline architecture doesn't function properly. For example, to set this system environment variable for a 32-bit architecture, at a command prompt type the following command: <br><br> `Set MIG_OFFLINE_PLATFORM_ARCH=32`|
+|**USMT_WORKING_DIR**|Full path to a working directory|Required when USMT binaries are located on read-only media, which doesn't support the creation of log files or temporary storage. To set the system environment variable, at a command prompt type the following command: <br><br> `Set USMT_WORKING_DIR=<path to working directory>`|
+|**MIG_OFFLINE_PLATFORM_ARCH**|32 or 64|While operating offline, this environment variable defines the architecture of the offline system, if the system doesn't match the WinPE and `ScanState.exe` architecture. This environment variable enables the 32-bit ScanState application to gather data from a computer with 64-bit architecture, or the 64-bit ScanState application to gather data from a computer with 32-bit architecture. Specifying the architecture is required when auto-detection of the offline architecture doesn't function properly. For example, to set this system environment variable for a 32-bit architecture, at a command prompt type the following command: <br><br> `Set MIG_OFFLINE_PLATFORM_ARCH=32`|
 
 ## Offline.xml elements
 
@@ -110,45 +110,59 @@ Use an `Offline.xml` file when running the ScanState tool on a computer that has
 
 This element contains other elements that define how an offline migration is to be performed.
 
-Syntax: `<offline>` `</offline>`
+```XML
+<offline> </offline>
+```
 
 ### &lt;winDir&gt;
 
 This element is a required child of **&lt;offline&gt;** and contains information about how the offline volume can be selected. The migration is performed from the first element of **&lt;winDir&gt;** that contains a valid Windows system volume.
 
-Syntax: `<winDir>` `</winDir>`
+```XML
+<winDir> </winDir>
+```
 
 ### &lt;path&gt;
 
 This element is a required child of **&lt;winDir&gt;** and contains a file path pointing to a valid Windows directory. Relative paths are interpreted from the ScanState tool's working directory.
 
-Syntax: `<path> C:\Windows </path>`
+```XML
+<path> C:\Windows </path>
+```
 
--or-
+or when used with the **&lt;mappings&gt;** element:
 
-Syntax, when used with the **&lt;mappings&gt;** element: `<path> C:\, D:\ </path>`
+```XML
+<path> C:\, D:\ </path>
+```
 
 ### &lt;mappings&gt;
 
 This element is an optional child of **&lt;offline&gt;**. When specified, the **&lt;mappings&gt;** element overrides the automatically detected WinPE drive mappings. Each child **&lt;path&gt;** element provides a mapping from one system volume to another. Additionally, mappings between folders can be provided, since an entire volume can be mounted to a specific folder.
 
-Syntax: `<mappings>` `</mappings>`
+```XML
+<mappings> </mappings>
+```
 
 ### &lt;failOnMultipleWinDir&gt;
 
 This element is an optional child of **&lt;offline&gt;**. The **&lt;failOnMultipleWinDir&gt;** element allows the user to specify that the migration should fail when USMT detects that there are multiple instances of Windows installed on the source machine. When the **&lt;failOnMultipleWinDir&gt;** element isn't present, the default behavior is that the migration doesn't fail.
 
-Syntax: `<failOnMultipleWinDir>1</failOnMultipleWinDir>`
+```XML
+<failOnMultipleWinDir>1</failOnMultipleWinDir>
+```
 
--or-
+or
 
-Syntax: `<failOnMultipleWinDir>0</failOnMultipleWinDir>`
+```XML
+<failOnMultipleWinDir>0</failOnMultipleWinDir>
+```
 
 ### Offline .xml Example
 
 The following XML example illustrates some of the elements discussed earlier in this article.
 
-```xml
+```XML
 <offline>
      <winDir>
           <path>C:\Windows</path> 
