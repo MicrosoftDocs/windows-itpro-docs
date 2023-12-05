@@ -1,8 +1,8 @@
 ---
-title: Minimum password age 
+title: Minimum password age
 description: Describes the best practices, location, values, policy management, and security considerations for the Minimum password age security policy setting.
 ms.assetid: 91915cb2-1b3f-4fb7-afa0-d03df95e8161
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.prod: windows-client
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.date: 11/13/2018
 ms.technology: itpro-security
-ms.topic: conceptual
+ms.topic: reference
 ---
 
 # Minimum password age
@@ -35,15 +35,15 @@ The **Minimum password age** policy setting determines the period of time (in da
 
 ### Best practices
 
-[Windows security baselines](../../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md) recommend setting **Minimum password age** to one day. 
+[Windows security baselines](../../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md) recommend setting **Minimum password age** to one day.
 
-Setting the number of days to 0 allows immediate password changes. This setting isn't recommended. 
-Combining immediate password changes with password history allows someone to change a password repeatedly until the password history requirement is met and re-establish the original password again. 
-For example, suppose a password is "Ra1ny day!" and the history requirement is 24. 
-If the minimum password age is 0, the password can be changed 24 times in a row until finally changed back to "Ra1ny day!". 
+Setting the number of days to 0 allows immediate password changes. This setting isn't recommended.
+Combining immediate password changes with password history allows someone to change a password repeatedly until the password history requirement is met and re-establish the original password again.
+For example, suppose a password is "Ra1ny day!" and the history requirement is 24.
+If the minimum password age is 0, the password can be changed 24 times in a row until finally changed back to "Ra1ny day!".
 The minimum password age of 1 day prevents that.
 
-If you set a password for a user and you want that user to change the administrator-defined password, you must select the **User must change password at next logon** check box. 
+If you set a password for a user and you want that user to change the administrator-defined password, you must select the **User must change password at next logon** check box.
 Otherwise, the user won't be able to change the password until the number of days specified by **Minimum password age**.
 
 ### Location
@@ -56,13 +56,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or Group Policy Object (GPO) | Default value |
 | - | - |
-| Default domain policy| 1 day| 
-| Default domain controller policy| Not defined| 
-| Stand-alone server default settings | 0 days| 
-| Domain controller effective default settings | 1 day| 
-| Member server effective default settings | 1 day| 
-| Effective GPO default settings on client computers| 1 day| 
- 
+| Default domain policy| 1 day|
+| Default domain controller policy| Not defined|
+| Stand-alone server default settings | 0 days|
+| Domain controller effective default settings | 1 day|
+| Member server effective default settings | 1 day|
+| Effective GPO default settings on client computers| 1 day|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

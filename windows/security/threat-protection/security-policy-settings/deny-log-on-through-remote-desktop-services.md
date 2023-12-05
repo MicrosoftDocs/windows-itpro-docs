@@ -1,8 +1,8 @@
 ---
-title: Deny log on through Remote Desktop Services 
+title: Deny log on through Remote Desktop Services
 description: Best practices, location, values, policy management, and security considerations for the security policy setting, Deny log on through Remote Desktop Services.
 ms.assetid: 84bbb807-287c-4acc-a094-cf0ffdcbca67
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -51,12 +51,12 @@ The following table lists the actual and effective default policy values for the
 | Server type or GPO | Default value |
 | - | - |
 | Default Domain Policy | Not defined |
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Not defined| 
-| Domain Controller Effective Default Settings | Not defined| 
-| Member Server Effective Default Settings | Not defined| 
-| Client Computer Effective Default Settings | Not defined| 
- 
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Not defined|
+| Domain Controller Effective Default Settings | Not defined|
+| Member Server Effective Default Settings | Not defined|
+| Client Computer Effective Default Settings | Not defined|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

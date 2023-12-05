@@ -41,14 +41,6 @@ landingContent:
             url: ./microsoft-edge-forrester.md
 
   # Card (optional)
-  - title: Test your site on Microsoft Edge
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Test your site on Microsoft Edge for free on BrowserStack
-            url: https://developer.microsoft.com/microsoft-edge/tools/remote/
-  
-  # Card (optional)
   - title: Improve compatibility with Enterprise Mode
     linkLists:
       - linkListType: how-to-guide

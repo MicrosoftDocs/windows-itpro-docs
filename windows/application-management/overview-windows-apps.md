@@ -92,7 +92,7 @@ When you use an MDM provider like Microsoft Intune, you can create shortcuts to 
 
 ## Android&trade;️ apps
 
-Starting with Windows 11, you can install Android&trade;️ apps. This feature uses the Windows Subsystem for Android, and allows users to interact with mobile apps just like others apps.
+Starting with Windows 11, you can install Android&trade;️ apps. This feature uses the Windows Subsystem for Android, and allows users to interact with mobile apps just like other apps.
 
 For more information, see the following articles:
 

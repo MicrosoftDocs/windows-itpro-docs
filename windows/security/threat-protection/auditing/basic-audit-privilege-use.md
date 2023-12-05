@@ -1,8 +1,8 @@
 ---
-title: Audit privilege use 
+title: Audit privilege use
 description: Determines whether to audit each instance of a user exercising a user right.
 ms.assetid: C5C6DAAF-8B58-4DFB-B1CE-F0675AE0E9F8
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: low
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/06/2021
 ms.technology: itpro-security
 ---
@@ -46,10 +46,10 @@ You can configure this security setting under Computer Configuration\\Windows Se
 | - | - |
 | 576 | Specified privileges were added to a user's access token.<br>**Note:**  This event is generated when the user logs on.|
 | 577 | A user attempted to perform a privileged system service operation. |
-| 578 | Privileges were used on an already open handle to a protected object. | 
- 
+| 578 | Privileges were used on an already open handle to a protected object. |
+
 ## Related topics
 
 - [Basic security audit policy settings](basic-security-audit-policy-settings.md)
- 
- 
+
+

@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 10/27/2023 
+ms.date: 12/04/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -20,6 +20,20 @@ ms.collection:
 This article lists new and updated feature releases, and service releases, with their corresponding Message center post numbers (if applicable).
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
+
+## December 2023
+
+### December feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Prerequisites](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) | Added F SKU licenses to the [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) section. Also see [FAQ](../overview/windows-autopatch-faq.yml)<ul><li>[MC690609](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+
+## November service release
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC689492](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned Maintenance: Service maintenance to improve Windows Autopatch performance |
 
 ## October 2023
 

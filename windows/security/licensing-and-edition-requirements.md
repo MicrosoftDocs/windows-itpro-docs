@@ -1,8 +1,6 @@
 ---
 title: Windows security features licensing and edition requirements
 description: Learn about Windows licensing and edition requirements for the features included in Windows.
-ms.collection:
-- tier2
 ms.topic: conceptual
 ms.date: 06/15/2023
 appliesto:

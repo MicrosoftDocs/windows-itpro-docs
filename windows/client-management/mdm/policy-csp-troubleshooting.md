@@ -4,7 +4,7 @@ description: Learn more about the Troubleshooting Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -61,15 +61,15 @@ After setting this policy, you can use the following instructions to check devic
 
 rem The following batch script triggers Recommended Troubleshooting schtasks /run /TN "\Microsoft\Windows\Diagnosis\RecommendedTroubleshootingScanner".
 
-2. To create a new immediate task, navigate to the Group Policy Management Editor > Computer Configuration > Preferences and select Control Panel Settings.
+1. To create a new immediate task, navigate to the Group Policy Management Editor > Computer Configuration > Preferences and select Control Panel Settings.
 
-3. Under Control Panel settings, right-click on Scheduled Tasks and select New. Select Immediate Task (At least Windows 7).
+1. Under Control Panel settings, right-click on Scheduled Tasks and select New. Select Immediate Task (At least Windows 7).
 
-4. Provide name and description as appropriate, then under Security Options set the user account to System and select the Run with highest privileges checkbox.
+1. Provide name and description as appropriate, then under Security Options set the user account to System and select the Run with highest privileges checkbox.
 
-5. In the Actions tab, create a new action, select Start a Program as its type, then enter the file created in step 1.
+1. In the Actions tab, create a new action, select Start a Program as its type, then enter the file created in step 1.
 
-6. Configure the task to deploy to your domain.
+1. Configure the task to deploy to your domain.
 <!-- AllowRecommendations-Description-End -->
 
 <!-- AllowRecommendations-Editable-Begin -->

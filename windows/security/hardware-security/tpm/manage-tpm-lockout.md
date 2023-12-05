@@ -2,7 +2,7 @@
 title: Manage TPM lockout
 description: This article for the IT professional describes how to manage the lockout feature for the Trusted Platform Module (TPM) in Windows.
 ms.topic: conceptual
-ms.date: 04/26/2023
+ms.date: 11/17/2023
 ---
 
 # Manage TPM lockout
@@ -17,20 +17,19 @@ Windows takes ownership of the TPM ownership upon first boot. By default, Window
 
 In some cases, encryption keys are protected by a TPM by requiring a valid authorization value to access the key. A common example is configuring BitLocker Drive Encryption to use the TPM plus PIN key protector. In this scenario, the user must type the correct PIN during the boot process to access the volume encryption key protected by the TPM. To prevent malicious users or software from discovering authorization values, TPMs implement protection logic. The protection logic is designed to slow or stop responses from the TPM if it detects that an entity might be trying to guess authorization values.
 
-### TPM 1.2
-
-The industry standards from the Trusted Computing Group (TCG) specify that TPM manufacturers must implement some form of protection logic in TPM 1.2 and TPM 2.0 chips. TPM 1.2 devices implement different protection mechanisms and behavior. In general, the TPM chip takes exponentially longer to respond if incorrect authorization values are sent to the TPM. Some TPM chips may not store failed attempts over time. Other TPM chips may store every failed attempt indefinitely. Therefore, some users may experience increasingly longer delays when they mistype an authorization value that is sent to the TPM. These delays can prevent them from using the TPM for a period of time.
-
 ### TPM 2.0
 
 TPM 2.0 devices have standardized lockout behavior which Windows configures. TPM 2.0 devices have a maximum count threshold and a healing time. Windows configures the maximum count to be 32 and the healing time to be 10 minutes. This configuration means that every continuous 10 minutes of powered on operation without an event causes the counter to decrease by 1.
 
 If your TPM has entered lockout mode or is responding slowly to commands, you can reset the lockout value by using the following procedures. Resetting the TPM lockout requires the TPM owner's authorization. This value is no longer retained by default starting with Windows 10 version 1607 and higher.
 
+### TPM 1.2
+
+The industry standards from the Trusted Computing Group (TCG) specify that TPM manufacturers must implement some form of protection logic in TPM 1.2 and TPM 2.0 chips. TPM 1.2 devices implement different protection mechanisms and behavior. In general, the TPM chip takes exponentially longer to respond if incorrect authorization values are sent to the TPM. Some TPM chips may not store failed attempts over time. Other TPM chips may store every failed attempt indefinitely. Therefore, some users may experience increasingly longer delays when they mistype an authorization value that is sent to the TPM. These delays can prevent them from using the TPM for a period of time.
+
 ## Reset the TPM lockout by using the TPM MMC
 
 > [!NOTE]
->
 > This procedure is only available if you have configured Windows to retain the TPM Owner Password. By default, this password isn't available in Windows 10 starting with version 1607 and higher.
 
 The following procedure explains the steps to reset the TPM lockout by using the TPM MMC.
@@ -39,7 +38,7 @@ The following procedure explains the steps to reset the TPM lockout by using the
 
 1. Open the TPM MMC (tpm.msc).
 
-1 In the **Action** pane, select **Reset TPM Lockout** to start the Reset TPM Lockout Wizard.
+1. In the **Action** pane, select **Reset TPM Lockout** to start the Reset TPM Lockout Wizard.
 
 1. Choose one of the following methods to enter the TPM owner password:
 
@@ -77,4 +76,4 @@ You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets i
 
 ## Related articles
 
-- [Trusted Platform Module](trusted-platform-module-top-node.md)
+- [Trusted Platform Module](trusted-platform-module-overview.md)

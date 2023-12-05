@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Securitycenter Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -48,14 +48,6 @@ Note that Security Center can only be turned off for computers that are joined t
 - If you enable this policy setting, Security Center is turned on for all users.
 
 - If you disable this policy setting, Security Center is turned off for domain members.
-
-Windows XP SP2
-----------------------
-In Windows XP SP2, the essential security settings that are monitored by Security Center include firewall, antivirus, and Automatic Updates. Note that Security Center might not be available following a change to this policy setting until after the computer is restarted for Windows XP SP2 computers.
-
-Windows Vista
----------------------
-In Windows Vista, this policy setting monitors essential security settings to include firewall, antivirus, antispyware, Internet security settings, User Account Control, and Automatic Updates. Windows Vista computers don't require a reboot for this policy setting to take effect.
 <!-- SecurityCenter_SecurityCenterInDomain-Description-End -->
 
 <!-- SecurityCenter_SecurityCenterInDomain-Editable-Begin -->

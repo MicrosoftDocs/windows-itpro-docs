@@ -8,7 +8,7 @@ ms.topic: reference
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
-ms.date: 02/23/2018
+ms.date: 11/16/2023
 ---
 
 # Update CSP
@@ -40,7 +40,7 @@ The following example shows the Update configuration service provider in tree fo
 ----FailedUpdates
 --------Failed Update Guid
 ------------HResult
-------------Status
+------------State
 ------------RevisionNumber
 ----InstalledUpdates
 --------Installed Update Guid
@@ -63,136 +63,152 @@ The following example shows the Update configuration service provider in tree fo
 ```
 
 <a href="" id="update"></a>**./Vendor/MSFT/Update**
-<p>The root node.
+The root node.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="approvedupdates"></a>**ApprovedUpdates**
-<p>Node for update approvals and EULA acceptance on behalf of the end-user.
+Node for update approvals and EULA acceptance on behalf of the end-user.
 
 > [!NOTE]
 > When the RequireUpdateApproval policy is set, the MDM uses the ApprovedUpdates list to pass the approved GUIDs. These GUIDs should be a subset of the InstallableUpdates list.
 
-<p>The MDM must first present the EULA to IT and have them accept it before the update is approved. Failure to do this is a breach of legal or contractual obligations. The EULAs can be obtained from the update metadata and have their own EULA ID. It's possible for multiple updates to share the same EULA. It is only necessary to approve the EULA once per EULA ID, not one per update.
+The MDM must first present the EULA to IT and have them accept it before the update is approved. Failure to do this is a breach of legal or contractual obligations. The EULAs can be obtained from the update metadata and have their own EULA ID. It's possible for multiple updates to share the same EULA. It is only necessary to approve the EULA once per EULA ID, not one per update.
 
-<p>The update approval list enables IT to approve individual updates and update classifications. Auto-approval by update classifications allows IT to automatically approve Definition Updates (that is, updates to the virus and spyware definitions on devices) and Security Updates (that is, product-specific updates for security-related vulnerability). The update approval list doesn't support the uninstallation of updates by revoking approval of already installed updates. Updates are approved based on UpdateID, and an UpdateID only needs to be approved once. An update UpdateID and RevisionNumber are part of the UpdateIdentity type. An UpdateID can be associated to several UpdateIdentity GUIDs due to changes to the RevisionNumber setting. MDM services must synchronize the UpdateIdentity of an UpdateID based on the latest RevisionNumber to get the latest metadata for an update. However, update approval is based on UpdateID.
+The update approval list enables IT to approve individual updates and update classifications. Auto-approval by update classifications allows IT to automatically approve Definition Updates (that is, updates to the virus and spyware definitions on devices) and Security Updates (that is, product-specific updates for security-related vulnerability). The update approval list doesn't support the uninstallation of updates by revoking approval of already installed updates. Updates are approved based on UpdateID, and an UpdateID only needs to be approved once. An update UpdateID and RevisionNumber are part of the UpdateIdentity type. An UpdateID can be associated to several UpdateIdentity GUIDs due to changes to the RevisionNumber setting. MDM services must synchronize the UpdateIdentity of an UpdateID based on the latest RevisionNumber to get the latest metadata for an update. However, update approval is based on UpdateID.
 
 > [!NOTE]
 > For the Windows 10 build, the client may need to reboot after additional updates are added.
 
-<p>Supported operations are Get and Add.
+Supported operations are Get and Add.
 
 <a href="" id="approvedupdates-approved-update-guid"></a>**ApprovedUpdates/_Approved Update Guid_**
-<p>Specifies the update GUID.
+Specifies the update GUID.
 
-<p>To auto-approve a class of updates, you can specify the <a href="/previous-versions/windows/desktop/ff357803(v=vs.85)" data-raw-source="[Update Classifications](/previous-versions/windows/desktop/ff357803(v=vs.85))">Update Classifications</a> GUIDs. We strongly recommend to always specify the DefinitionsUpdates classification (E0789628-CE08-4437-BE74-2495B842F43B), which are used for anti-malware signatures. These GUIDs are released periodically (several times a day). Some businesses may also want to auto-approve security updates to get them deployed quickly.
+To auto-approve a class of updates, you can specify the <a href="/previous-versions/windows/desktop/ff357803(v=vs.85)" data-raw-source="[Update Classifications](/previous-versions/windows/desktop/ff357803(v=vs.85))">Update Classifications</a> GUIDs. We strongly recommend to always specify the DefinitionsUpdates classification (E0789628-CE08-4437-BE74-2495B842F43B), which are used for anti-malware signatures. These GUIDs are released periodically (several times a day). Some businesses may also want to auto-approve security updates to get them deployed quickly.
 
-<p>Supported operations are Get and Add.
+Supported operations are Get and Add.
 
-<p>Sample syncml:
+Sample syncml:
 
 ```
 <LocURI>./Vendor/MSFT/Update/ApprovedUpdates/%7ba317dafe-baf4-453f-b232-a7075efae36e%7d</LocURI>
 ```
 
 <a href="" id="approvedupdates-approved-update-guid-approvedtime"></a>**ApprovedUpdates/*Approved Update Guid*/ApprovedTime**
-<p>Specifies the time the update gets approved.
+Specifies the time the update gets approved.
 
-<p>Supported operations are Get and Add.
+Supported operations are Get and Add.
 
 <a href="" id="failedupdates"></a>**FailedUpdates**
-<p>Specifies the approved updates that failed to install on a device.
+Specifies the approved updates that failed to install on a device.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="failedupdates-failed-update-guid"></a>**FailedUpdates/_Failed Update Guid_**
-<p>Update identifier field of the UpdateIdentity GUID that represents an update that failed to download or install.
+Update identifier field of the UpdateIdentity GUID that represents an update that failed to download or install.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="failedupdates-failed-update-guid-hresult"></a>**FailedUpdates/*Failed Update Guid*/HResult**
-<p>The update failure error code.
+The update failure error code.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
-<a href="" id="failedupdates-failed-update-guid-status"></a>**FailedUpdates/*Failed Update Guid*/Status**
-<p>Specifies the failed update status (for example, download, install).
+<a href="" id="failedupdates-failed-update-guid-state"></a>**FailedUpdates/*Failed Update Guid*/State**
+Specifies the failed update state.
 
-<p>Supported operation is Get.
+| Update Status              | Integer Value |
+| -------------------------- | ------------- |
+| UpdateStatusNewUpdate      | 1             |
+| UpdateStatusReadyToDownload| 2             |
+| UpdateStatusDownloading    | 4             |
+| UpdateStatusDownloadBlocked| 8             |
+| UpdateStatusDownloadFailed | 16            |
+| UpdateStatusReadyToInstall | 32            |
+| UpdateStatusInstalling     | 64            |
+| UpdateStatusInstallBlocked | 128           |
+| UpdateStatusInstallFailed  | 256           |
+| UpdateStatusRebootRequired | 512           |
+| UpdateStatusUpdateCompleted| 1024          |
+| UpdateStatusCommitFailed   | 2048          |
+| UpdateStatusPostReboot     | 4096          |
+
+Supported operation is Get.
 
 <a href="" id="failedupdates-failed-update-guid-revisionnumber"></a>**FailedUpdates/*Failed Update Guid*/RevisionNumber**
-<p>Added in Windows 10, version 1703. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
+Added in Windows 10, version 1703. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="installedupdates"></a>**InstalledUpdates**
-<p>The updates that are installed on the device.
+The updates that are installed on the device.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="installedupdates-installed-update-guid"></a>**InstalledUpdates/_Installed Update Guid_**
-<p>UpdateIDs that represent the updates installed on a device.
+UpdateIDs that represent the updates installed on a device.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="installedupdates-installed-update-guid-revisionnumber"></a>**InstalledUpdates/*Installed Update Guid*/RevisionNumber**
-<p>Added in Windows 10, version 1703. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
+Added in Windows 10, version 1703. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="installableupdates"></a>**InstallableUpdates**
-<p>The updates that are applicable and not yet installed on the device. These updates include updates that aren't yet approved.
+The updates that are applicable and not yet installed on the device. These updates include updates that aren't yet approved.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="installableupdates-installable-update-guid"></a>**InstallableUpdates/_Installable Update Guid_**
-<p>Update identifiers that represent the updates applicable and not installed on a device.
+Update identifiers that represent the updates applicable and not installed on a device.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="installableupdates-installable-update-guid-type"></a>**InstallableUpdates/*Installable Update Guid*/Type**
-<p>The UpdateClassification value of the update. Valid values are:
+The UpdateClassification value of the update. Valid values are:
 
 - 0 - None
 - 1 - Security
 - 2 - Critical
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="installableupdates-installable-update-guid-revisionnumber"></a>**InstallableUpdates/*Installable Update Guid*/RevisionNumber**
-<p>The revision number for the update that must be passed in server to server sync to get the metadata for the update.
+The revision number for the update that must be passed in server to server sync to get the metadata for the update.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="pendingrebootupdates"></a>**PendingRebootUpdates**
-<p>The updates that require a reboot to complete the update session.
+The updates that require a reboot to complete the update session.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="pendingrebootupdates-pending-reboot-update-guid"></a>**PendingRebootUpdates/_Pending Reboot Update Guid_**
-<p>Update identifiers for the pending reboot state.
+Update identifiers for the pending reboot state.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="pendingrebootupdates-pending-reboot-update-guid-installedtime"></a>**PendingRebootUpdates/*Pending Reboot Update Guid*/InstalledTime**
-<p>The time the update is installed.
+The time the update is installed.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="pendingrebootupdates-pending-reboot-update-guid-revisionnumber"></a>**PendingRebootUpdates/*Pending Reboot Update Guid*/RevisionNumber**
-<p>Added in Windows 10, version 1703. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
+Added in Windows 10, version 1703. The revision number for the update that must be passed in server to server sync to get the metadata for the update.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="lastsuccessfulscantime"></a>**LastSuccessfulScanTime**
-<p>The last successful scan time.
+The last successful scan time.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="deferupgrade"></a>**DeferUpgrade**
-<p>Upgrades deferred until the next period.
+Upgrades deferred until the next period.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="rollback"></a>**Rollback**
 Added in Windows 10, version 1803. Node for the rollback operations.
