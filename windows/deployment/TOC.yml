@@ -328,7 +328,9 @@
           - name: UCServiceUpdateStatus
             href: update/wufb-reports-schema-ucserviceupdatestatus.md
           - name: UCUpdateAlert
-            href: update/wufb-reports-schema-ucupdatealert.md                                                                         
+            href: update/wufb-reports-schema-ucupdatealert.md
+          - name: Enumerated types
+            href: update/wufb-reports-schema-enumerated-types.md                                                                                       
     - name: Troubleshooting
       items:
       - name: Resolve upgrade errors
