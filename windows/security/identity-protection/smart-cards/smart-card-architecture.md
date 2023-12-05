@@ -2,7 +2,7 @@
 title: Smart Card Architecture 
 description: This topic for the IT professional describes the system architecture that supports smart cards in the Windows operating system.
 ms.topic: reference-architecture
-ms.date: 11/06/2023
+ms.date: 11/22/2023
 ---
 
 # Smart Card Architecture

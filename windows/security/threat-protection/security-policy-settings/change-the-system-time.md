@@ -1,8 +1,8 @@
 ---
-title: Change the system time - security policy setting 
+title: Change the system time - security policy setting
 description: Describes the best practices, location, values, policy management, and security considerations for the Change the system time security policy setting.
 ms.assetid: f2f6637d-acbc-4352-8ca3-ec563f918e65
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -52,13 +52,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not Defined | 
+| Default Domain Policy| Not Defined |
 | Default Domain Controller Policy | Administrators <br/>Server Operators <br/>Local Service|
 | Stand-Alone Server Default Settings | Administrators <br/>Local Service|
-| DC Effective Default Settings | Administrators <br/>Server Operators <br/>Local Service| 
+| DC Effective Default Settings | Administrators <br/>Server Operators <br/>Local Service|
 | Member Server Effective Default Settings | Administrators <br/>Local Service|
-| Client Computer Effective Default Settings | Administrators <br/>Local Service| 
- 
+| Client Computer Effective Default Settings | Administrators <br/>Local Service|
+
 ## Policy management
 
 This section describes features, tools and guidance to help you manage this policy.

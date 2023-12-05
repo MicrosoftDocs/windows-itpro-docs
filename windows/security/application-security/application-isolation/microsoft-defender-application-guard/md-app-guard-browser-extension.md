@@ -19,7 +19,7 @@ Microsoft Defender Application Guard Extension defends devices in your organizat
 
 ## Prerequisites
 
-Microsoft Defender Application Guard Extension works with the following editions of Windows 10, version 1803 or later:
+Microsoft Defender Application Guard Extension works with the following editions of Windows 10, version 1809 or later:
 
 - Windows 10 Professional
 - Windows 10 Enterprise

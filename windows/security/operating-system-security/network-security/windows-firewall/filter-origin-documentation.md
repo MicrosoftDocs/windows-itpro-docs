@@ -1,21 +1,19 @@
 ---
-title: Filter origin audit log improvements
-description: Filter origin documentation audit log improvements
+title: Filter origin audit log
+description: Learn about Windows Firewall and filter origin audit log to troubleshoot packet drops.
 ms.topic: troubleshooting
-ms.date: 11/07/2023
+ms.date: 11/21/2023
 ---
 
-# Filter origin audit log improvements
+# Filter origin audit log
 
-Debugging packet drops is a continuous issue to Windows customers. In the past, customers had limited information about packet drops.
-
-Typically, when investigating packet drop events, a customer would use the field `Filter Run-Time ID` from Windows Filtering Platform (WFP) audits 5157 or 5152.
+When investigating packet drop events, you can use the field `Filter Run-Time ID` from Windows Filtering Platform (WFP) audits `5157` or `5152`.
 
 ![Event properties.](images/event-properties-5157.png)
 
-The filter ID uniquely identifies the filter that caused the packet drop. The filter ID can be searched in the WFP state dump output to trace back to the Firewall rule where the filter originated from. However, the filter ID isn't a reliable source for tracing back to the filter or the rule, as the filter ID can change for many reasons despite the rule not changing at all. This change in ID makes the diagnosis process error-prone and difficult.
+The *filter ID* uniquely identifies the filter that caused the packet drop. The filter ID can be searched in the WFP state dump output to trace back to the Firewall rule where the filter originated from. However, the filter ID isn't a reliable source for tracing back to the filter or the rule, as the filter ID can change for many reasons despite the rule not changing at all. The change in ID makes the diagnosis process error-prone and difficult.
 
-For customers to debug packet drop events correctly and efficiently, they would need more context about the blocking filter such as its origin. The blocking filters can be categorized under these filter origins:
+To debug packet drop events correctly and efficiently, you need more context about the blocking filter, such as its origin. The blocking filters can be categorized under these filter origins:
 
 1. Firewall rules
 1. Firewall default block filters
@@ -27,17 +25,14 @@ For customers to debug packet drop events correctly and efficiently, they would 
     1. Universal Windows Platform (UWP) default
     1. Windows Service Hardening (WSH) default
 
-The next section describes the improvements made to audits 5157 and 5152, and how the above filter origins are used in these events. These improvements were added in the Windows Server 2022 and Windows 11 releases.
+The next section describes the improvements made to audits `5157` and `5152` in Windows 11 and Windows Server 2022, and how the filter origins are used in these events.
 
 ## Improved firewall audit
 
-The two new fields added to the audit 5157 and 5152 events are `Filter Origin` and `Interface Index`.
+Starting in Windows 11 and Windows Server 2022, two new fields added to the audit `5157` and `5152` events are *Filter Origin* and *Interface Index*:
 
-The `Filter Origin` field helps identify the cause of the drop. Packet drops from firewall are explicitly dropped by default block filters created by the Windows Firewall service or a firewall rule that may be created by users, policies, services, apps, etc.
-
-`Filter Origin` specifies either the rule ID (a unique identifier of a Firewall rule) or the name of one of the default block filters.
-
-The `Interface Index` field specifies the network interface in which the packet was dropped. This field helps to identify which interface was quarantined, if the `Filter Origin` is a `Quarantine Default`.
+- The *Filter Origin* field helps identify the cause of the drop. Packet drops from firewall are explicitly dropped by default block filters created by the Windows Firewall service or a firewall rule that may be created by users, policies, services, apps, etc. Filter Origin` specifies either the *rule ID* (a unique identifier of a Firewall rule) or the name of one of the default block filters
+- The *Interface Index* field specifies the network interface in which the packet was dropped. This field helps to identify which interface was quarantined, if the *Filter Origin* is a *Quarantine Default*
 
 To enable a specific audit event, run the corresponding command in an administrator command prompt:
 
@@ -48,11 +43,11 @@ To enable a specific audit event, run the corresponding command in an administra
 
 ## Example flow of debugging packet drops with filter origin
 
-As the audit surfaces `Filter Origin` and `Interface Index`, the network admin can determine the root cause of the network packet drop, and the interface it happened on.
+As the audit surfaces *Filter Origin* and *Interface Index*, the network admin can determine the root cause of the network packet drop, and the interface it happened on.
 
 ![Event audit.](images/event-audit-5157.png)
 
-The next sections are divided by `Filter Origin` type, the value is either a rule name or the name of one of the default block filters. If the filter origin is one of the default block filters, skip to the section, **Firewall default block filters**. Otherwise, continue to the section **Firewall rules**.
+The next sections are divided by *Filter Origin* type, the value is either a rule name or the name of one of the default block filters. If the filter origin is one of the default block filters, skip to the section, [Firewall default block filters](#firewall-default-block-filters).
 
 ## Firewall rules
 
@@ -65,20 +60,19 @@ Get-NetFirewallRule -Name " {A549B7CF-0542-4B67-93F9-EEBCDD584377} "
 
 ![Firewall rule.](images/firewallrule.png)
 
-After identifying the rule that caused the drop, the network admin can now modify/disable the rule to allow the traffic they want through command prompt or using the Windows Defender UI. The network admin can find the rule in the UI with the rule's `DisplayName`.
+After identifying the rule that caused the drop, the network admin can modify or disable the rule to allow the traffic they want through one of the available [tools](tools.md). The network admin can find the rule in the UI with the rule's *DisplayName*.
 
 >[!NOTE]
-> Firewall rules from Mobile Device Management (MDM) store cannot be searched using the Windows Defender UI. Additionally, the above method will not work when the `Filter Origin` is one of the default block filters, as they do not correspond to any firewall rules.
+> Firewall rules from Mobile Device Management (MDM) store cannot be searched using the Windows Firewall UI. Additionally, the above method doesn't work when the *Filter Origin* is one of the default block filters, as they don't correspond to any firewall rules.
 
 ## Firewall default block filters
 
 ### AppContainer loopback
 
-Network drop events from the AppContainer loopback block filter origin occur when localhost loopback isn't enabled properly for the Universal Windows Platform (UWP) app.
+Network drop events from the AppContainer loopback block filter origin occur when localhost loopback isn't enabled properly for the Universal Windows Platform (UWP) app:
 
-To enable localhost loopback in a local debugging environment, see [Communicating with localhost](/windows/iot-core/develop-your-app/loopback).
-
-To enable localhost loopback for a published app that requires loopback access to communicate with another UWP or packaged Win32 app, see [uap4:LoopbackAccessRules](/uwp/schemas/appxpackage/uapmanifestschema/element-uap4-loopbackaccessrules).
+- To enable localhost loopback in a local debugging environment, see [Communicating with localhost](/windows/iot-core/develop-your-app/loopback)
+- To enable localhost loopback for a published app that requires loopback access to communicate with another UWP or packaged Win32 app, see [uap4:LoopbackAccessRules](/uwp/schemas/appxpackage/uapmanifestschema/element-uap4-loopbackaccessrules)
 
 ### Boot time default
 
@@ -92,10 +86,7 @@ Run the following PowerShell command to generate more information about the inte
 
 ```Powershell
 Get-NetIPInterface -InterfaceIndex <Interface Index>
-Get-NetIPInterface -InterfaceIndex 5
 ```
-
-![Quarantine default block filter.](images/quarantine-default-block-filter.png)
 
 To learn more about the quarantine feature, see [Quarantine behavior](quarantine.md).
 
@@ -115,11 +106,7 @@ To generate a list of all the query user block rules, you can run the following 
 Get-NetFirewallRule | Where {$_.Name -like "*Query User*"}
 ```
 
-![Query user default block filter.](images/query-user-default-block-filters.png)
-
-The query user pop-up feature is enabled by default.
-
-To disable the query user pop-up, you can run the following command in administrative command prompt:
+The query user pop-up feature is enabled by default. To disable the query user pop-up, you can run the following command in administrative command prompt:
 
 ```cmd
 Netsh set allprofiles inboundusernotification disable

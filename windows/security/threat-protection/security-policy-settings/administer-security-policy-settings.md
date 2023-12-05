@@ -1,8 +1,8 @@
 ---
-title: Administer security policy settings 
+title: Administer security policy settings
 description: This article discusses different methods to administer security policy settings on a local device or throughout a small- or medium-sized organization.
 ms.assetid: 7617d885-9d28-437a-9371-171197407599
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -250,7 +250,7 @@ For example, a workstation that is joined to a domain will have its local securi
 both the domain and local settings. If the workstation is a member of more than one Organizational Unit, then the Organizational Unit that immediately contains the workstation has the highest order of precedence.
 
 > [!NOTE]
-> Use gpresult.exe to find out what policies are applied to a device and in what order.  
+> Use gpresult.exe to find out what policies are applied to a device and in what order.
 For domain accounts, there can be only one account policy that includes password policies, account lockout policies, and Kerberos policies.
 
 **Persistence in security settings**
@@ -300,10 +300,10 @@ To avoid continued flagging of settings that you've investigated and determined 
 You can resolve discrepancies between analysis database and system settings by:
 
 - Accepting or changing some or all of the values that are flagged or not included in the configuration, if you determine that the local system security levels are valid due to the context (or role) of that computer. These attribute values are then updated in the database and applied to the system when you click **Configure Computer Now**.
-- Configuring the system to the analysis database values, if you determine the system isn't in compliance with valid security levels.  
-- Importing a more appropriate template for the role of that computer into the database as the new base configuration and applying it to the system.  
-Changes to the analysis database are made to the stored template in the database, not to the security template file. The security template file will only be modified if you either return to Security Templates and edit that template or export the stored configuration to the same template file.  
-You should use **Configure Computer Now** only to modify security areas *not* affected by Group Policy settings, such as security on local files and folders, registry keys, and system services. Otherwise, when the Group Policy settings are applied, it will take precedence over local settings—such as account policies.  
+- Configuring the system to the analysis database values, if you determine the system isn't in compliance with valid security levels.
+- Importing a more appropriate template for the role of that computer into the database as the new base configuration and applying it to the system.
+Changes to the analysis database are made to the stored template in the database, not to the security template file. The security template file will only be modified if you either return to Security Templates and edit that template or export the stored configuration to the same template file.
+You should use **Configure Computer Now** only to modify security areas *not* affected by Group Policy settings, such as security on local files and folders, registry keys, and system services. Otherwise, when the Group Policy settings are applied, it will take precedence over local settings—such as account policies.
 In general, don't use **Configure Computer Now** when you're analyzing security for domain-based clients, since you'll have to configure each client individually. In this case, you should return to Security Templates, modify the template, and reapply it to the appropriate Group Policy Object.
 
 ### <a href="" id="bkmk-autoseccfgtasks"></a>Automating security configuration tasks

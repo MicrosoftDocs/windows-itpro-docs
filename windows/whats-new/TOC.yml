@@ -20,6 +20,8 @@
 - name: Windows 10
   expanded: true
   items:
+    - name: Extended Security Updates (ESU) program for Windows 10
+      href: extended-security-updates.md
     - name: What's new in Windows 10, version 22H2
       href: whats-new-windows-10-version-22H2.md
     - name: What's new in Windows 10, version 21H2

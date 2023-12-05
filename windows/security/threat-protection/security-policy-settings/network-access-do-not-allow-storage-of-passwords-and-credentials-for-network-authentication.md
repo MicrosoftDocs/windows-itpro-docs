@@ -1,8 +1,8 @@
 ---
-title: Network access Do not allow storage of passwords and credentials for network authentication 
+title: Network access Do not allow storage of passwords and credentials for network authentication
 description: Learn about best practices and more for the security policy setting, Network access Do not allow storage of passwords and credentials for network authentication
 ms.assetid: b9b64360-36ea-40fa-b795-2d6558c46563
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 07/01/2021
 ms.technology: itpro-security
 ---
@@ -55,13 +55,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or Group Policy Object (GPO) | Default value |
 | - | - |
-| Default domain policy| Not defined| 
-| Default domain controller policy| Not defined| 
-| Stand-alone server default settings | Not defined| 
-| Domain controller effective default settings| Disabled| 
-| Member server effective default settings | Disabled| 
-| Effective GPO default settings on client computers |Disabled| 
- 
+| Default domain policy| Not defined|
+| Default domain controller policy| Not defined|
+| Stand-alone server default settings | Not defined|
+| Domain controller effective default settings| Disabled|
+| Member server effective default settings | Disabled|
+| Effective GPO default settings on client computers |Disabled|
+
 ### Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -83,7 +83,7 @@ This section describes how an attacker might exploit a feature or its configurat
 Passwords that are cached can be accessed by the user when logged on to the device. Although this information may sound obvious, a problem can arise if the user unknowingly runs malicious software that reads the passwords and forwards them to another, unauthorized user.
 
 >**Note:**  The chances of success for this exploit and others that involve malicious software are reduced significantly for organizations that effectively implement and manage an enterprise antivirus solution combined with sensible software restriction policies.
- 
+
 Regardless of what encryption algorithm is used to encrypt the password verifier, a password verifier can be overwritten so that an attacker can authenticate as the user to whom the verifier belongs. Therefore, the administrator's password may be overwritten. This procedure requires physical access to the device. Utilities exist that can help overwrite the cached verifier. With the help of one of these utilities, an attacker can authenticate by using the overwritten value.
 
 Overwriting the administrator's password doesn't help the attacker access data that is encrypted by using that password. Also, overwriting the password doesn't help the attacker access any Encrypting File System (EFS) data that belongs to other users on that device. Overwriting the password doesn't help an attacker replace the verifier, because the base keying material is incorrect. Therefore, data that is encrypted by using Encrypting File System or by using the Data Protection API (DPAPI) won't decrypt.

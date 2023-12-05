@@ -1,8 +1,8 @@
 ---
-title: Monitor claim types 
+title: Monitor claim types
 description: Learn how to monitor changes to claim types that are associated with dynamic access control when you're using advanced security auditing options.
 ms.assetid: 426084da-4eef-44af-aeec-e7ab4d4e2439
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/09/2021
 ms.technology: itpro-security
 ---
@@ -28,7 +28,7 @@ Use the following procedures to configure settings to monitor changes to claim t
 Access Control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](/windows-server/identity/solution-guides/deploy-a-central-access-policy--demonstration-steps-).
 
 >**Note:**  Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
- 
+
 **To configure settings to monitor changes to claim types**
 
 1.  Sign in to your domain controller by using domain administrator credential.

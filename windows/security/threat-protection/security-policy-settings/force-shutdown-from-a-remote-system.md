@@ -1,8 +1,8 @@
 ---
-title: Force shutdown from a remote system 
+title: Force shutdown from a remote system
 description: Describes the best practices, location, values, policy management, and security considerations for the Force shutdown from a remote system security policy setting.
 ms.assetid: 63129243-31ea-42a4-a598-c7064f48a3df
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -52,13 +52,13 @@ The following table lists the actual and effective default policy values for the
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Administrators<br/>Server Operators| 
-| Stand-Alone Server Default Settings | Administrators| 
-| Domain Controller Effective Default Settings | Administrators<br/>Server Operators| 
-| Member Server Effective Default Settings | Administrators| 
-| Client Computer Effective Default Settings | Administrators| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Administrators<br/>Server Operators|
+| Stand-Alone Server Default Settings | Administrators|
+| Domain Controller Effective Default Settings | Administrators<br/>Server Operators|
+| Member Server Effective Default Settings | Administrators|
+| Client Computer Effective Default Settings | Administrators|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.
