@@ -110,7 +110,9 @@ Use an `Offline.xml` file when running the ScanState tool on a computer that has
 
 This element contains other elements that define how an offline migration is to be performed.
 
-```XML
+Syntax:
+
+```xml
 <offline> </offline>
 ```
 
@@ -118,7 +120,9 @@ This element contains other elements that define how an offline migration is to 
 
 This element is a required child of **&lt;offline&gt;** and contains information about how the offline volume can be selected. The migration is performed from the first element of **&lt;winDir&gt;** that contains a valid Windows system volume.
 
-```XML
+Syntax:
+
+```xml
 <winDir> </winDir>
 ```
 
@@ -126,13 +130,17 @@ This element is a required child of **&lt;offline&gt;** and contains information
 
 This element is a required child of **&lt;winDir&gt;** and contains a file path pointing to a valid Windows directory. Relative paths are interpreted from the ScanState tool's working directory.
 
-```XML
+Syntax:
+
+```xml
 <path> C:\Windows </path>
 ```
 
 or when used with the **&lt;mappings&gt;** element:
 
-```XML
+Syntax:
+
+```xml
 <path> C:\, D:\ </path>
 ```
 
@@ -140,7 +148,9 @@ or when used with the **&lt;mappings&gt;** element:
 
 This element is an optional child of **&lt;offline&gt;**. When specified, the **&lt;mappings&gt;** element overrides the automatically detected WinPE drive mappings. Each child **&lt;path&gt;** element provides a mapping from one system volume to another. Additionally, mappings between folders can be provided, since an entire volume can be mounted to a specific folder.
 
-```XML
+Syntax:
+
+```xml
 <mappings> </mappings>
 ```
 
@@ -148,13 +158,17 @@ This element is an optional child of **&lt;offline&gt;**. When specified, the **
 
 This element is an optional child of **&lt;offline&gt;**. The **&lt;failOnMultipleWinDir&gt;** element allows the user to specify that the migration should fail when USMT detects that there are multiple instances of Windows installed on the source machine. When the **&lt;failOnMultipleWinDir&gt;** element isn't present, the default behavior is that the migration doesn't fail.
 
-```XML
+Syntax:
+
+```xml
 <failOnMultipleWinDir>1</failOnMultipleWinDir>
 ```
 
 or
 
-```XML
+Syntax:
+
+```xml
 <failOnMultipleWinDir>0</failOnMultipleWinDir>
 ```
 
@@ -162,7 +176,7 @@ or
 
 The following XML example illustrates some of the elements discussed earlier in this article.
 
-```XML
+```xml
 <offline>
      <winDir>
           <path>C:\Windows</path> 

@@ -208,7 +208,7 @@ To generate the XML migration rules file for a source computer:
     ScanState.exe /genmigxml: <filepath.xml>
     ```
 
-    Where:
+    where:
 
       - **&lt;USMTpath&gt;** - location on your source computer of the saved USMT files and tools.
       - **&lt;filepath.xml&gt;** - full path to a file where you can save the report.
