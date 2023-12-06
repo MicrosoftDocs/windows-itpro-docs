@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/25/2023
+ms.date: 12/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -47,7 +47,7 @@ The following XML file contains the device description framework (DDF) for the C
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
         <MSFT:CspVersion>9.9</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x30;0x31;0x7E;0x87;0x88;0x88*;0xA1;0xA2;0xA4;0xA5;0xB4;0xBC;0xBD;0xBF;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x30;0x31;0x7E;0x88;0xA1;0xA2;0xA4;0xA5;0xBC;0xBF;0xCD;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
