@@ -61,7 +61,7 @@ Additionally, the order in the **&lt;ErrorControl&gt;** section implies priority
 <ErrorControl>
   <fileError>
     <nonFatal errorCode="33">* [*]</nonFatal>
-    <fatal errorCode="any">C:\Users\* [*]</fatal>
+    <fatal errorCode="specify system error message here">C:\Users\* [*]</fatal>
   </fileError>
   <registryError>
     <nonFatal errorCode="5">HKCU\SOFTWARE\Microsoft\* [*]</nonFatal>
@@ -85,12 +85,12 @@ The **&lt;fatal&gt;** element isn't required.
 Syntax:
 
 ```xml
-<fatal errorCode="any"> <*pattern*> </fatal>
+<fatal errorCode="specify system error message here"> <pattern> </fatal>
 ```
 
 |Parameter|Required|Value|
 |--- |--- |--- |
-|errorCode|No|"any" or "*specify system error message here*"|
+|errorCode|No|*Specify system error message here*|
 
 You use the **&lt;fatal&gt;** element to specify that errors matching a specific pattern should cause USMT to halt the migration.
 
@@ -125,12 +125,12 @@ The **&lt;nonFatal&gt;** element isn't required.
 Syntax:
 
 ```xml
-<nonfatal errorCode="any"> <*pattern*> </nonFatal>
+<nonfatal errorCode="specify system error message here"> <pattern> </nonFatal>
 ```
 
 |Parameter|Required|Value|
 |--- |--- |--- |
-|**&lt;errorCode&gt;**|No|"any" or "*specify system error message here*". If system error messages aren't specified, the default behavior applies the parameter to all system error messages.|
+|**&lt;errorCode&gt;**|No|*Specify system error message here*. If system error messages aren't specified, the default behavior applies the parameter to all system error messages.|
 
 You use the **&lt;nonFatal&gt;** element to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
 
@@ -152,7 +152,7 @@ Syntax:
 
 |Parameter|Required|Value|
 |--- |--- |--- |
-|**&lt;errorCode&gt;**|No|"any" or "*specify system error message here*". If system error messages aren't specified, the default behavior applies the parameter to all system error messages.|
+|**&lt;errorCode&gt;**|No|*Specify system error message here*. If system error messages aren't specified, the default behavior applies the parameter to all system error messages.|
 
 You use the **&lt;registryError&gt;** element to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
 
@@ -214,7 +214,7 @@ The **&lt;createHardLink&gt;** element defines a standard MigXML pattern that de
 Syntax:
 
 ```xml
-<createHardLink> <*pattern*> </createHardLink>
+<createHardLink> <pattern> </createHardLink>
 ```
 
 ### &lt;errorHardLink&gt;
@@ -224,7 +224,7 @@ The **&lt;errorHardLink&gt;** element defines a standard MigXML pattern that des
 Syntax:
 
 ```xml
-<errorHardLink> <*pattern*> </errorHardLink>
+<errorHardLink> <pattern> </errorHardLink>
 ```
 
 ### &lt;ProfileControl&gt;
@@ -457,7 +457,7 @@ The following sample `Config.xml` file contains detailed examples about items yo
 
           <fileError>
             <nonFatal errorCode="33">* [*]</nonFatal>
-            <fatal errorCode="any">C:\Users\* [*]</fatal>
+            <fatal errorCode="specify system error message here">C:\Users\* [*]</fatal>
           </fileError>
           <registryError>
             <nonFatal errorCode="5">* [*]</nonFatal>
