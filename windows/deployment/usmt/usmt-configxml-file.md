@@ -21,7 +21,8 @@ The `Config.xml` file has a different format than the other migration **.xml** f
 For more information about using the `Config.xml` file with other migration files, such as the `MigDocs.xml` and `MigApps.xml` files, see [Understanding Migration XML Files](understanding-migration-xml-files.md).
 
 > [!NOTE]
-> To exclude a component from the `Config.xml` file, set the **migrate** value to **no**. Deleting the XML tag for the component from the `Config.xml` file will not exclude the component from your migration.
+>
+> To exclude a component from the `Config.xml` file, set the **migrate** value to **no**. Deleting the XML tag for the component from the `Config.xml` file doesn't exclude the component from your migration.
 
 ## Migration Policies
 
@@ -61,7 +62,7 @@ Additionally, the order in the **&lt;ErrorControl&gt;** section implies priority
 <ErrorControl>
   <fileError>
     <nonFatal errorCode="33">* [*]</nonFatal>
-    <fatal errorCode="specify system error message here">C:\Users\* [*]</fatal>
+    <fatal errorCode="any">C:\Users\* [*]</fatal>
   </fileError>
   <registryError>
     <nonFatal errorCode="5">HKCU\SOFTWARE\Microsoft\* [*]</nonFatal>
@@ -70,6 +71,7 @@ Additionally, the order in the **&lt;ErrorControl&gt;** section implies priority
 ```
 
 > [!IMPORTANT]
+>
 > The configurable **&lt;ErrorControl&gt;** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
 
 ### &lt;fatal&gt;
@@ -85,12 +87,12 @@ The **&lt;fatal&gt;** element isn't required.
 Syntax:
 
 ```xml
-<fatal errorCode="specify system error message here"> <pattern> </fatal>
+<fatal errorCode="any"> <specify pattern here> </fatal>
 ```
 
 |Parameter|Required|Value|
 |--- |--- |--- |
-|errorCode|No|*Specify system error message here*|
+|errorCode|No|"any" or "*specify system error message here*"|
 
 You use the **&lt;fatal&gt;** element to specify that errors matching a specific pattern should cause USMT to halt the migration.
 
@@ -125,12 +127,12 @@ The **&lt;nonFatal&gt;** element isn't required.
 Syntax:
 
 ```xml
-<nonfatal errorCode="specify system error message here"> <pattern> </nonFatal>
+<nonfatal errorCode="any"> <specify pattern here> </nonFatal>
 ```
 
 |Parameter|Required|Value|
 |--- |--- |--- |
-|**&lt;errorCode&gt;**|No|*Specify system error message here*. If system error messages aren't specified, the default behavior applies the parameter to all system error messages.|
+|**&lt;errorCode&gt;**|No|"any" or "*specify system error message*". If system error messages aren't specified, the default behavior applies the parameter to all system error messages.|
 
 You use the **&lt;nonFatal&gt;** element to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
 
@@ -147,12 +149,12 @@ The **&lt;registryError&gt;** element isn't required.
 Syntax:
 
 ```xml
-<registryError> </registryError>
+<registryError errorcode="any"> </registryError>
 ```
 
 |Parameter|Required|Value|
 |--- |--- |--- |
-|**&lt;errorCode&gt;**|No|*Specify system error message here*. If system error messages aren't specified, the default behavior applies the parameter to all system error messages.|
+|**&lt;errorCode&gt;**|No|"any" or "*specify system error message here*". If system error messages aren't specified, the default behavior applies the parameter to all system error messages.|
 
 You use the **&lt;registryError&gt;** element to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
 
@@ -181,6 +183,7 @@ Syntax:
 The following **&lt;HardLinkStoreControl&gt;** sample code specifies that hard links can be created to locked files only if the locked file resides somewhere under C:\\Users\\. Otherwise, a file-access error occurs when a locked file is encountered that can't be copied, even though is technically possible for the link to be created.
 
 > [!IMPORTANT]
+>
 > The **&lt;ErrorControl&gt;** section can be configured to conditionally ignore file access errors, based on the file's location.
 
 ```xml
@@ -214,7 +217,7 @@ The **&lt;createHardLink&gt;** element defines a standard MigXML pattern that de
 Syntax:
 
 ```xml
-<createHardLink> <pattern> </createHardLink>
+<createHardLink> <specify pattern here> </createHardLink>
 ```
 
 ### &lt;errorHardLink&gt;
@@ -224,7 +227,7 @@ The **&lt;errorHardLink&gt;** element defines a standard MigXML pattern that des
 Syntax:
 
 ```xml
-<errorHardLink> <pattern> </errorHardLink>
+<errorHardLink> <specify pattern here> </errorHardLink>
 ```
 
 ### &lt;ProfileControl&gt;
@@ -234,7 +237,7 @@ This element is used to contain other elements that establish rules for migratin
 Syntax:
 
 ```xml
-<ProfileControl>` `</ProfileControl>
+<ProfileControl> </ProfileControl>
 ```
 
 ### &lt;localGroups&gt;
@@ -457,7 +460,7 @@ The following sample `Config.xml` file contains detailed examples about items yo
 
           <fileError>
             <nonFatal errorCode="33">* [*]</nonFatal>
-            <fatal errorCode="specify system error message here">C:\Users\* [*]</fatal>
+            <fatal errorCode="any">C:\Users\* [*]</fatal>
           </fileError>
           <registryError>
             <nonFatal errorCode="5">* [*]</nonFatal>
