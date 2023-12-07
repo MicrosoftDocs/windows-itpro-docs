@@ -2,7 +2,7 @@
 title: Deploy certificates for remote desktop sign-in
 description: Learn how to deploy certificates to cloud Kerberos trust and key trust users, to enable remote desktop sign-in with supplied credentials.
 ms.topic: how-to
-ms.date: 07/25/2023
+ms.date: 12/7/2023
 ---
 
 # Deploy certificates for remote desktop (RDP) sign-in
@@ -50,8 +50,8 @@ Follow these steps to create a certificate template:
 
 1. Select **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates
 1. Close the Certificate Templates console
-1. Open an elevated command prompt and change to a temporary working directory
-1. Execute the following command, replacing `<TemplateName>` with the **Template display name** noted above
+1. Open an elevated Command Prompt and change to a temporary working directory
+1. Execute the following command, replacing `<TemplateName>` with the **Template display name** noted in the table
 
     ```cmd
     certutil.exe -dstemplate <TemplateName> > <TemplateName.txt>
@@ -126,7 +126,7 @@ This section describes how to configure a SCEP policy in Intune. Similar steps c
     | Setting| Configurations |
     | --- | --- |
     |*Certificate Type*| User |
-    |*Subject name format* | `CN={{UserPrincipalName}}` <br>**Note:** if there is a mismatch between the user UPN suffix and the Active Directory domain FQDN, use `CN={{OnPrem_Distinguished_Name}}` instead.|
+    |*Subject name format* | `CN={{UserPrincipalName}}` <br>**Note:** if there's a mismatch between the user UPN suffix and the Active Directory domain FQDN, use `CN={{OnPrem_Distinguished_Name}}` instead.|
     |*Subject alternative name* |From the dropdown, select **User principal name (UPN)** with a value of `{{UserPrincipalName}}`|
     |*Certificate validity period* | Configure a value of your choosing|
     |*Key storage provider (KSP)* | **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)**|
@@ -159,13 +159,13 @@ Once the Intune policy is created, targeted clients will request a certificate d
 
 If you're using a non-Microsoft PKI, the certificate templates published to the on-premises Active Directory may not be available. For guidance with integration of Intune/SCEP with non-Microsoft PKI deployments, refer to [Use third-party certification authorities (CA) with SCEP in Microsoft Intune][MEM-6].
 
-As an alternative to using SCEP or if none of the previously covered solutions will work in your environment, you can manually generate Certificate Signing Requests (CSR) for submission to your PKI. To assist with this approach, you can use the [Generate-CertificateRequest][HTTP-1] PowerShell commandlet.
+As an alternative to using SCEP, or if none of the previously covered solutions work in your environment, you can manually generate Certificate Signing Requests (CSR) for submission to your PKI. To assist with this approach, you can use the [Generate-CertificateRequest][HTTP-1] PowerShell commandlet.
 
-The `Generate-CertificateRequest` commandlet will generate an *.inf* file for a pre-existing Windows Hello for Business key. The *.inf* can be used to generate a certificate request manually using `certreq.exe`. The commandlet will also generate a *.req* file, which can be submitted to your PKI for a certificate.
+The `Generate-CertificateRequest` commandlet generates an `.inf` file for a pre-existing Windows Hello for Business key. The `.inf` can be used to generate a certificate request manually using `certreq.exe`. The commandlet also generates a `.req` file, which can be submitted to your PKI for a certificate.
 
 ## User experience
 
-After obtaining a certificate, users can RDP to any Windows devices in the same Active Directory forest as the user's Active Directory account.
+After the certificate is obtained, users can RDP to any Windows devices in the same Active Directory forest as the user's Active Directory account.
 
 > [!NOTE]
 > The certificate chain of the issuing CA must be trusted by the target server.
