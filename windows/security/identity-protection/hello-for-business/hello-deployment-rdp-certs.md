@@ -44,12 +44,17 @@ Follow these steps to create a certificate template:
     | *General* | <ul><li>Specify a **Template display name**, for example *WHfB Certificate Authentication*</li><li>Set the validity period to the desired value</li><li>Take note of the Template name for later, which should be the same as the Template display name minus spaces (*WHfBCertificateAuthentication* in this example)</li></ul>|
     | *Extensions* | Verify the **Application Policies** extension includes **Smart Card Logon**|
     | *Subject Name* | <ul><li> Select the **Build from this Active Directory** information button if it isn't already selected</li><li>Select **Fully distinguished name** from the **Subject name format** list if Fully distinguished name isn't already selected</li><li>Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**</li></ul><br>**Note:** If you deploy certificates via Intune, select **Supply in the request** instead of *Build from this Active Directory*.|
-    |*Request Handling*|<ul><li>Set the Purpose to **Signature and smartcard logon** and select **Yes** when prompted to change the certificate purpose</li><li>Select the **Renew with same key** check box</li><li>Select **Prompt the user during enrollment**</li></ul>|
-    |*Cryptography*|<ul><li>Set the Provider Category to **Key Storage Provider**</li><li>Set the Algorithm name to **RSA**</li><li>Set the minimum key size to **2048**</li><li>Select **Requests must use one of the following providers**</li><li>Select **Microsoft Software Key Storage Provider**</li><li>Set the Request hash to **SHA256**</li></ul>|
+    |*Request Handling*|<ul><li>Set the Purpose to **Signature and smartcard logon** and select **Yes** when prompted to change the certificate purpose</li><li>Select the **Renew with same key** check box</li><li>Select **Prompt the user during enrollment**</li></ul><br>**Note:** If you deploy certificates via Intune with a PKCS profile, select the option **Allow private key to be exported**|
+    |*Cryptography*|<ul><li>Set the Provider Category to **Key Storage Provider**</li><li>Set the Algorithm name to **RSA**</li><li>Set the minimum key size to **2048**</li><li>Select **Requests must use one of the following providers**</li><li>Select **Microsoft Software Key Storage Provider**</li><li>Set the Request hash to **SHA256**</li></ul><br>**Note:** If you deploy certificates via Intune with a PKCS profile, use the **Microsoft Software Key Storage Provider**|
     |*Security*|Add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them|
 
 1. Select **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates
 1. Close the Certificate Templates console
+
+#### Add Microsoft Passport Key Storage Provider to the certificate template
+
+The following steps are required when you deploy certificates using an on-premises Active Directory Certificate Services enrollment policy. They are not required when distributing certificates using Microsoft Intune PKCS or SCEP profiles.
+
 1. Open an elevated Command Prompt and change to a temporary working directory
 1. Execute the following command, replacing `<TemplateName>` with the **Template display name** noted in the table
 
@@ -70,9 +75,14 @@ Follow these steps to create a certificate template:
     certutil.exe -dsaddtemplate <TemplateName.txt>
     ```
 
-    > [!NOTE]
-    >  You can verify that the template was updated by checking its properties:
-    > :::image type="content" source="images/rdp-certificate-template.png" alt-text="Screenshot of the RDP certificate template updated with the Passport KSP.":::
+:::row:::
+    :::column:::
+    > [!TIP] You can verify that the template was updated by checking its properties.
+    :::column-end:::
+    :::column:::
+    :::image type="content" source="images/rdp-certificate-template.png" alt-text="Screenshot of the RDP certificate template updated with the Passport KSP.":::
+    :::column-end:::
+:::row-end:::
 
 1. In the Certificate Authority console, right-click **Certificate Templates**, select **New > Certificate Template to Issue**
 1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and select **OK**. It can take some time for the template to replicate to all servers and become available in this list
@@ -102,12 +112,6 @@ Deploying a certificate to Intune-managed devices may be achieved using the Simp
 - [Configure infrastructure to support SCEP certificate profiles with Microsoft Intune][MEM-1]
 - [Configure and use PKCS certificates with Intune][MEM-2]
 
-> [!IMPORTANT]
-> When using a PKCS profile, modify the certificate template with the following properties:
->
-> Use the *Microsoft Software Key Storage Provider*
-> Select the option **Allow private key to be exported**
-
 Next, you should deploy the root CA certificate (and any other intermediate certificate authority certificates) to Microsoft Entra joined Devices using a *Trusted root certificate* policy with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune][MEM-5].
 
 Once these requirements are met, a policy can be configured in Intune that provisions certificates for the users on the targeted device.
@@ -126,7 +130,7 @@ This section describes how to configure a SCEP policy in Intune. Similar steps c
     | Setting| Configurations |
     | --- | --- |
     |*Certificate Type*| User |
-    |*Subject name format* | `CN={{UserPrincipalName}}` <br>**Note:** if there's a mismatch between the user UPN suffix and the Active Directory domain FQDN, use `CN={{OnPrem_Distinguished_Name}}` instead.|
+    |*Subject name format* | `CN={{UserPrincipalName}}` <br><br>**Note:** if there's a mismatch between the user UPN suffix and the Active Directory domain FQDN, use `CN={{OnPrem_Distinguished_Name}}` instead.|
     |*Subject alternative name* |From the dropdown, select **User principal name (UPN)** with a value of `{{UserPrincipalName}}`|
     |*Certificate validity period* | Configure a value of your choosing|
     |*Key storage provider (KSP)* | **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)**|
