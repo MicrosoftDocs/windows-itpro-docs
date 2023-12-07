@@ -74,15 +74,16 @@ The following steps are required when you deploy certificates using an on-premis
     ```cmd
     certutil.exe -dsaddtemplate <TemplateName.txt>
     ```
-> [!TIP]
-> :::row:::
->    :::column:::
->    You can verify that the template was updated by checking its properties.
->     :::column-end:::
->     :::column:::
->     :::image type="content" source="images/rdp-certificate-template.png" alt-text="Screenshot of the RDP certificate template updated with the Passport KSP.":::
->     :::column-end:::
->:::row-end:::
+
+:::row:::
+    :::column span="3":::
+    >[!NOTE]
+    >You can verify that the template was updated by checking its properties.
+    :::column-end:::
+    :::column span="1":::
+    :::image type="content" source="images/rdp-certificate-template.png" alt-text="Screenshot of the RDP certificate template updated with the Passport KSP." lightbox="images/rdp-certificate-template.png" border="false"::::::
+    :::column-end:::
+:::row-end:::
 
 #### Issue the certificate template
 
