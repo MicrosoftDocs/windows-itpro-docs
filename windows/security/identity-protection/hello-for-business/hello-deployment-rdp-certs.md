@@ -8,9 +8,11 @@ ms.date: 07/25/2023
 # Deploy certificates for remote desktop (RDP) sign-in
 
 This document describes Windows Hello for Business functionalities or scenarios that apply to:
+
 - **Deployment type:** [!INCLUDE [hybrid](./includes/hello-deployment-hybrid.md)]
 - **Trust type:** [!INCLUDE [cloud-kerberos](./includes/hello-trust-cloud-kerberos.md)], [!INCLUDE [key](./includes/hello-trust-key.md)]
 - **Join type:** [!INCLUDE [hello-join-aadj](./includes/hello-join-aad.md)], [!INCLUDE [hello-join-hybrid](./includes/hello-join-hybrid.md)]
+
 ---
 
 Windows Hello for Business supports using a certificate as the supplied credential, when establishing a remote desktop connection to another Windows device. This document discusses three approaches for *cloud Kerberos trust* and *key trust* deployments, where authentication certificates can be deployed to an existing Windows Hello for Business user:
@@ -21,8 +23,7 @@ Windows Hello for Business supports using a certificate as the supplied credenti
 
 ## Deploy certificates via Active Directory Certificate Services (AD CS)
 
-> [!NOTE]
-> This process is applicable to *Microsoft Entra hybrid joined* devices only.
+This process is applicable to Microsoft Entra hybrid joined devices only.
 
 To deploy certificates using an on-premises Active Directory Certificate Services enrollment policy, you must first create a *certificate template*, and then deploy certificates based on that template.
 
@@ -69,6 +70,10 @@ Follow these steps to create a certificate template:
     certutil.exe -dsaddtemplate <TemplateName.txt>
     ```
 
+    > [!NOTE]
+    >  You can verify that the template was updated by checking its properties:
+    > :::image type="content" source="images/rdp-certificate-template.png" alt-text="Screenshot of the RDP certificate template updated with the Passport KSP.":::
+
 1. In the Certificate Authority console, right-click **Certificate Templates**, select **New > Certificate Template to Issue**
 1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and select **OK**. It can take some time for the template to replicate to all servers and become available in this list
 1. After the template replicates, in the MMC, right-click in the Certification Authority list, select **All Tasks > Stop Service**. Right-click the name of the CA again, select **All Tasks > Start Service**
@@ -85,16 +90,23 @@ Follow these steps to create a certificate template:
 
 ## Deploy certificates via Intune
 
+This process is applicable to both *Microsoft Entra joined* and *Microsoft Entra hybrid joined* devices that are managed via Intune.
+
 > [!CAUTION]
-> This process is applicable to both *Microsoft Entra joined* and *Microsoft Entra hybrid joined* devices that are managed via Intune.
 >
 > If you deploy certificates via Intune and configure Windows Hello for Business via group policy, the devices will fail to obtain a certificate, logging the error code `0x82ab0011` in the `DeviceManagement-Enterprise-Diagnostic-Provider` log.\
 > To avoid the error, configure Windows Hello for Business via Intune instead of group policy.
 
-Deploying a certificate to Microsoft Entra joined or Microsoft Entra hybrid joined devices may be achieved using the Simple Certificate Enrollment Protocol (SCEP) or PKCS (PFX) via Intune. For guidance deploying the required infrastructure, refer to:
+Deploying a certificate to Intune-managed devices may be achieved using the Simple Certificate Enrollment Protocol (SCEP) or PKCS (PFX) options. For guidance deploying the required infrastructure, refer to:
 
 - [Configure infrastructure to support SCEP certificate profiles with Microsoft Intune][MEM-1]
 - [Configure and use PKCS certificates with Intune][MEM-2]
+
+> [!IMPORTANT]
+> When using a PKCS profile, modify the certificate template with the following properties:
+>
+> Use the *Microsoft Software Key Storage Provider*
+> Select the option **Allow private key to be exported**
 
 Next, you should deploy the root CA certificate (and any other intermediate certificate authority certificates) to Microsoft Entra joined Devices using a *Trusted root certificate* policy with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune][MEM-5].
 
@@ -114,15 +126,15 @@ This section describes how to configure a SCEP policy in Intune. Similar steps c
     | Setting| Configurations |
     | --- | --- |
     |*Certificate Type*| User |
-    |*Subject name format* | `CN={{UserPrincipalName}}` |
-    |*Subject alternative name* |From the dropdown, select **User principal name (UPN)** with a value of `{{UserPrincipalName}}`
+    |*Subject name format* | `CN={{UserPrincipalName}}` <br>**Note:** if there is a mismatch between the user UPN suffix and the Active Directory domain FQDN, use `CN={{OnPrem_Distinguished_Name}}` instead.|
+    |*Subject alternative name* |From the dropdown, select **User principal name (UPN)** with a value of `{{UserPrincipalName}}`|
     |*Certificate validity period* | Configure a value of your choosing|
-    |*Key storage provider (KSP)* | **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)**
+    |*Key storage provider (KSP)* | **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)**|
     |*Key usage*| **Digital Signature**|
     |*Key size (bits)* | **2048**|
     |*For Hash algorithm*|**SHA-2**|
     |*Root Certificate*| Select **+Root Certificate** and select the trusted certificate profile created earlier for the Root CA Certificate|
-    |*Extended key usage*| <ul><li>*Name:* **Smart Card Logon**</li><li>*Object Identifier:* `1.3.6.1.4.1.311.20.2.2`</li><li>*Predefined Values:* **Not configured**</li><br><li>*Name:* **Client Authentication**</li><li>*Object Identifier:* `1.3.6.1.5.5.7.3.2 `</li><li>*Predefined Values:* **Client Authentication**</li></ul>|
+    |*Extended key usage*| <ul><li>*Name:* **Smart Card Logon**</li><li>*Object Identifier:* `1.3.6.1.4.1.311.20.2.2`</li><li>*Predefined Values:* **Not configured**</li><br><li>*Name:* **Client Authentication**</li><li>*Object Identifier:* `1.3.6.1.5.5.7.3.2`</li><li>*Predefined Values:* **Client Authentication**</li></ul>|
     |*Renewal threshold (%)*|Configure a value of your choosing|
     |*SCEP Server URLs*|Provide the public endpoint(s) that you configured during the deployment of your SCEP infrastructure|
 
@@ -151,7 +163,7 @@ As an alternative to using SCEP or if none of the previously covered solutions w
 
 The `Generate-CertificateRequest` commandlet will generate an *.inf* file for a pre-existing Windows Hello for Business key. The *.inf* can be used to generate a certificate request manually using `certreq.exe`. The commandlet will also generate a *.req* file, which can be submitted to your PKI for a certificate.
 
-## RDP sign-in with Windows Hello for Business certificate authentication
+## User experience
 
 After obtaining a certificate, users can RDP to any Windows devices in the same Active Directory forest as the user's Active Directory account.
 
@@ -161,6 +173,10 @@ After obtaining a certificate, users can RDP to any Windows devices in the same 
 1. Open the Remote Desktop Client (`mstsc.exe`) on the client where the authentication certificate has been deployed
 1. Attempt an RDP session to a target server
 1. Use the certificate credential protected by your Windows Hello for Business gesture to authenticate
+
+:::image type="content" source="images/rdp/rdp-signin-certificate.gif" alt-text="Animation showing a user signing in via RDP using the Windows Hello for Business fingerprint protector.":::
+
+<!-- links -->
 
 [MEM-1]: /mem/intune/protect/certificates-scep-configure
 [MEM-2]: /mem/intune/protect/certificates-pfx-configure
