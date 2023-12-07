@@ -1,13 +1,41 @@
 ---
-title: Deploy certificates for remote desktop sign-in
-description: Learn how to deploy certificates to cloud Kerberos trust and key trust users, to enable remote desktop sign-in with supplied credentials.
-ms.topic: how-to
+title: Remote Desktop sign-in with Windows Hello for Business
+description: Learn how you can sign-in via Remote Desktop (RDP) using Windows Hello for Business.
 ms.date: 12/7/2023
+ms.topic: how-to
 ---
 
-# Deploy certificates for remote desktop (RDP) sign-in
+# Remote Desktop sign-in with Windows Hello for Business
 
-This document describes Windows Hello for Business functionalities or scenarios that apply to:
+Windows Hello for Business supports using a certificate deployed to a Windows Hello for Business container as a supplied credential to establish a remote desktop connection to a server or another device. This feature takes advantage of the redirected smart card capabilities of the Remote Desktop Protocol (RDP).
+
+## How it works
+
+Windows generates and stores cryptographic keys using a software component called a *key storage provider* (KSP):
+
+- Software-based keys are created and stored using the *Microsoft Software Key Storage Provider*
+- Smart card keys are created and stored using the *Microsoft Smart Card Key Storage Provider*
+- Keys created and protected by Windows Hello for Business are created and stored using the *Microsoft Passport Key Storage Provider*
+
+A certificate on a smart card starts with creating an asymmetric key pair using the Microsoft Smart Card KSP. Windows requests a certificate based on the key pair from your enterprises issuing certificate authority, which returns a certificate that is stored in the user's Personal certificate store. The private key remains on the smart card and the public key is stored with the certificate. Metadata on the certificate (and the key) stores the key storage provider used to create the key (remember the certificate contains the public key).
+
+The same concept applies to Windows Hello for Business, except that the keys are created using the Microsoft Passport KSP. The user's private key remains protected by the device's security module (TPM) and the user's gesture (PIN/biometric). The certificate APIs hide the complexity. When an application uses a certificate, the certificate APIs locate the keys using the saved key storage provider. The key storage providers direct the certificate APIs on which provider they use to find the private key associated with the certificate. This is how Windows knows you have a smart card certificate without the smart card inserted, and prompts you to insert the smart card.
+
+Windows Hello for Business emulates a smart card for application compatibility, and the Microsoft Passport KSP prompts the user for their biometric gesture or PIN.
+
+## Compatibility
+
+While users appreciate the convenience of biometrics, and administrators value the security, you may experience compatibility issues with applications and Windows Hello for Business certificates. In such scenarios, you can deploy policy setting to revert to the previous behavior for the users needing it.
+
+> [!div class="mx-imgBorder"]
+> ![WHFB Certificate GP Setting.](images/rdpbio/rdpbiopolicysetting.png)
+
+> [!NOTE]
+> Remote Desktop with biometric doesn't work with [Dual Enrollment](hello-feature-dual-enrollment.md) or scenarios where the user provides alternative credentials.
+
+## Deploy certificates for remote desktop (RDP) sign-in
+
+This section  describes Windows Hello for Business functionalities or scenarios that apply to:
 
 - **Deployment type:** [!INCLUDE [hybrid](./includes/hello-deployment-hybrid.md)]
 - **Trust type:** [!INCLUDE [cloud-kerberos](./includes/hello-trust-cloud-kerberos.md)], [!INCLUDE [key](./includes/hello-trust-key.md)]
@@ -81,7 +109,7 @@ The following steps are required when you deploy certificates using an on-premis
     >You can verify that the template was updated by checking its properties.
     :::column-end:::
     :::column span="1":::
-    :::image type="content" source="images/rdp-certificate-template.png" alt-text="Screenshot of the RDP certificate template updated with the Passport KSP." lightbox="images/rdp-certificate-template.png" border="false"::::::
+    :::image type="content" source="images/rdp-certificate-template.png" alt-text="Screenshot of the RDP certificate template updated with the Passport KSP." lightbox="images/rdp-certificate-template.png" border="false":::
     :::column-end:::
 :::row-end:::
 
