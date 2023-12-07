@@ -7,7 +7,13 @@ ms.topic: how-to
 
 # Remote Desktop sign-in with Windows Hello for Business
 
-Windows Hello for Business supports using a certificate deployed to a Windows Hello for Business container as a supplied credential to establish a remote desktop connection to a server or another device. This feature takes advantage of the redirected smart card capabilities of the Remote Desktop Protocol (RDP).
+You can use Windows Hello for Business to sign in to a remote desktop session, using the redirected smart card capabilities of the Remote Desktop Protocol (RDP). This is possible by deplyoing a certificate to the user's device, which is then used as the supplied credential when establishing the RDP connection to another Windows device.
+
+This article describes three certificate deployment approaches, where authentication certificates are deployed to the Windows Hello for Business container:
+
+- Using an Active Directory Certificate Services enrollment policy
+- Using Microsoft Intune with SCEP or PKCS connectors
+- Using a third-party PKI
 
 ## How it works
 
@@ -23,41 +29,17 @@ The same concept applies to Windows Hello for Business, except that the keys are
 
 Windows Hello for Business emulates a smart card for application compatibility, and the Microsoft Passport KSP prompts the user for their biometric gesture or PIN.
 
-## Compatibility
-
-While users appreciate the convenience of biometrics, and administrators value the security, you may experience compatibility issues with applications and Windows Hello for Business certificates. In such scenarios, you can deploy policy setting to revert to the previous behavior for the users needing it.
-
-> [!div class="mx-imgBorder"]
-> ![WHFB Certificate GP Setting.](images/rdpbio/rdpbiopolicysetting.png)
-
 > [!NOTE]
 > Remote Desktop with biometric doesn't work with [Dual Enrollment](hello-feature-dual-enrollment.md) or scenarios where the user provides alternative credentials.
 
-## Deploy certificates for remote desktop (RDP) sign-in
+## Create a Windows Hello for Business certificate template
 
-This section  describes Windows Hello for Business functionalities or scenarios that apply to:
+This process is applicable to scenarios where you deploy certificates using an on-premises Active Directory Certificate Services infrastrusture, which include:
 
-- **Deployment type:** [!INCLUDE [hybrid](./includes/hello-deployment-hybrid.md)]
-- **Trust type:** [!INCLUDE [cloud-kerberos](./includes/hello-trust-cloud-kerberos.md)], [!INCLUDE [key](./includes/hello-trust-key.md)]
-- **Join type:** [!INCLUDE [hello-join-aadj](./includes/hello-join-aad.md)], [!INCLUDE [hello-join-hybrid](./includes/hello-join-hybrid.md)]
+- Using an Active Directory Certificate Services enrollment policy
+- Using Microsoft Intune with SCEP or PKCS connectors
 
----
-
-Windows Hello for Business supports using a certificate as the supplied credential, when establishing a remote desktop connection to another Windows device. This document discusses three approaches for *cloud Kerberos trust* and *key trust* deployments, where authentication certificates can be deployed to an existing Windows Hello for Business user:
-
-- Deploy certificates to hybrid joined devices using an on-premises Active Directory Certificate Services enrollment policy
-- Deploy certificates to hybrid or Microsoft Entra joined devices using Intune
-- Work with third-party PKIs
-
-## Deploy certificates via Active Directory Certificate Services (AD CS)
-
-This process is applicable to Microsoft Entra hybrid joined devices only.
-
-To deploy certificates using an on-premises Active Directory Certificate Services enrollment policy, you must first create a *certificate template*, and then deploy certificates based on that template.
-
-### Create a Windows Hello for Business certificate template
-
-Follow these steps to create a certificate template:
+You must first create a *certificate template*, and then deploy certificates based on that template to the Windows Hello for Business container. The following steps describe how to create a certificate template:
 
 1. Sign in to your issuing certificate authority (CA) and open *Server Manager*
 1. Select **Tools > Certification Authority**. The Certification Authority Microsoft Management Console (MMC) opens
@@ -109,7 +91,7 @@ The following steps are required when you deploy certificates using an on-premis
     >You can verify that the template was updated by checking its properties.
     :::column-end:::
     :::column span="1":::
-    :::image type="content" source="images/rdp-certificate-template.png" alt-text="Screenshot of the RDP certificate template updated with the Passport KSP." lightbox="images/rdp-certificate-template.png" border="false":::
+    :::image type="content" source="images/rdp/rdp-certificate-template.png" alt-text="Screenshot of the RDP certificate template updated with the Passport KSP." lightbox="images/rdp/rdp-certificate-template.png" border="false":::
     :::column-end:::
 :::row-end:::
 
@@ -210,6 +192,10 @@ After the certificate is obtained, users can RDP to any Windows devices in the s
 1. Use the certificate credential protected by your Windows Hello for Business gesture to authenticate
 
 :::image type="content" source="images/rdp/rdp-signin-certificate.gif" alt-text="Animation showing a user signing in via RDP using the Windows Hello for Business fingerprint protector.":::
+
+## Compatibility
+
+While users appreciate the convenience of biometrics, and administrators value the security, you may experience compatibility issues with applications and Windows Hello for Business certificates. In such scenarios, you can deploy policy setting to revert to the previous behavior for the users needing it.
 
 <!-- links -->
 
