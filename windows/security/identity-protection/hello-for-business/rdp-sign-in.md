@@ -73,8 +73,8 @@ You must first create a *certificate template*, and then deploy certificates bas
     | *Extensions* | Verify the **Application Policies** extension includes **Smart Card Logon**|
     | *Subject Name* | <ul><li> Select the **Build from this Active Directory** information button if it isn't already selected</li><li>Select **Fully distinguished name** from the **Subject name format** list if Fully distinguished name isn't already selected</li><li>Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**</li></ul><br>**Note:** If you deploy certificates via Intune, select **Supply in the request** instead of *Build from this Active Directory*.|
     |*Request Handling*|<ul><li>Set the Purpose to **Signature and smartcard logon** and select **Yes** when prompted to change the certificate purpose</li><li>Select the **Renew with same key** check box</li><li>Select **Prompt the user during enrollment**</li></ul><br>**Note:** If you deploy certificates via Intune with a PKCS profile, select the option **Allow private key to be exported**|
-    |*Cryptography*|<ul><li>Set the Provider Category to **Key Storage Provider**</li><li>Set the Algorithm name to **RSA**</li><li>Set the minimum key size to **2048**</li><li>Select **Requests must use one of the following providers**</li><li>Select **Microsoft Software Key Storage Provider**</li><li>Set the Request hash to **SHA256**</li></ul><br>**Note:** If you deploy certificates via Intune with a PKCS profile, use the **Microsoft Software Key Storage Provider**|
-    |*Security*|Add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them. <br>**Note:** If you deploy certificates via Intune, grant **Enroll** access to the service principal used for SCEP or PKCS.|
+    |*Cryptography*|<ul><li>Set the Provider Category to **Key Storage Provider**</li><li>Set the Algorithm name to **RSA**</li><li>Set the minimum key size to **2048**</li><li>Select **Requests must use one of the following providers**</li><li>Select **Microsoft Software Key Storage Provider**</li><li>Set the Request hash to **SHA256**</li>|
+    |*Security*|Add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them. <br><br>**Note:** If you deploy certificates via Intune, grant **Enroll** access to the security principal used for SCEP or PKCS.|
 
 1. Select **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates
 1. Close the Certificate Templates console
@@ -113,7 +113,7 @@ The following steps are required when you deploy certificates using an on-premis
     :::column-end:::
 :::row-end:::
 
-#### Issue the certificate template
+### Issue the certificate template
 
 1. In the Certificate Authority console, right-click **Certificate Templates**, select **New > Certificate Template to Issue**
 1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and select **OK**. It can take some time for the template to replicate to all servers and become available in this list
@@ -199,7 +199,7 @@ To verify that the certificate is correctly deployed to the Windows Hello for Bu
 certutil -store -user my
 ```
 
-The output lists keys and certificates stored in the user store. If a certificate issued from your CA is deployed to the Windows Hello for Business container, the output will display the certificate with a `Provider` value of `Microsoft Passport Key Storage Provider`.
+The output lists keys and certificates stored in the user store. If a certificate issued from your CA is deployed to the Windows Hello for Business container, the output displays the certificate with a `Provider` value of `Microsoft Passport Key Storage Provider`.
 
 For example:
 
