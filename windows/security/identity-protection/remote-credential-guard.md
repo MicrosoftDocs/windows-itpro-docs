@@ -187,7 +187,7 @@ Not documented.
 
 ---
 
-## Use Remote Credential Guard
+## Usee experience
 
 Once a client receives the policy, you can connect to the remote host using Remote Credential Guard by opening the Remote Desktop Client (`mstsc.exe`). The user is automatically authenticated to the remote host:
 

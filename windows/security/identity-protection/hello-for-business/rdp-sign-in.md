@@ -1,7 +1,7 @@
 ---
 title: Remote Desktop sign-in with Windows Hello for Business
 description: Learn how you can sign-in via Remote Desktop (RDP) using Windows Hello for Business.
-ms.date: 12/7/2023
+ms.date: 12/8/2023
 ms.topic: how-to
 ---
 
@@ -14,6 +14,9 @@ This article describes three certificate deployment approaches, where authentica
 - Using an Active Directory Certificate Services enrollment policy
 - Using Microsoft Intune with SCEP or PKCS connectors
 - Using a third-party PKI
+
+> [!TIP]
+> Consider using Remote Credential Guard instead of Windows Hello for Business for RDP sign-in. Remote Credential Guard provides single sign-on (SSO) to RDP sessions using Kerberos authentication, and doesn't require the deployment of certificates. For more information, see [Remote Credential Guard](../remote-credential-guard.md).
 
 ## How it works
 
@@ -184,12 +187,9 @@ The `Generate-CertificateRequest` commandlet generates an `.inf` file for a pre-
 
 After the certificate is obtained, users can RDP to any Windows devices in the same Active Directory forest as the user's Active Directory account.
 
-> [!NOTE]
-> The certificate chain of the issuing CA must be trusted by the target server.
-
 :::row:::
     :::column span="2":::
-    1. Open the Remote Desktop Client (`mstsc.exe`) on the client where the authentication certificate has been deployed
+    1. Open the Remote Desktop Client (`mstsc.exe`) on the client where the authentication certificate is deployed
     1. Attempt an RDP session to a target server
     1. Use the certificate credential protected by your Windows Hello for Business gesture to authenticate
     :::column-end:::
@@ -198,11 +198,21 @@ After the certificate is obtained, users can RDP to any Windows devices in the s
     :::column-end:::
 :::row-end:::
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b6e1038d-98b5-48dc-8afb-65523d12cfaf]
+> [!NOTE]
+> The user must be authorized to connect to the remote server using the Remote Desktop protocol, for example by being a member of the Remote Desktop Users local group on the remote host.
 
 ## Compatibility
 
 While users appreciate the convenience of biometrics, and administrators value the security, you may experience compatibility issues with applications and Windows Hello for Business certificates. In such scenarios, you can deploy policy setting to revert to the previous behavior for the users needing it.
+
+## User experience 2
+
+After the certificate is obtained, users can RDP to any Windows devices in the same Active Directory forest as the user's Active Directory account.
+
+1. Open the Remote Desktop Client (`mstsc.exe`) on the client where the authentication certificate is deployed
+1. Attempt an RDP session to a target server
+1. Use the certificate credential protected by your Windows Hello for Business gesture to authenticate
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b6e1038d-98b5-48dc-8afb-65523d12cfaf]
 
 <!-- links -->
 
