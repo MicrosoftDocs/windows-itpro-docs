@@ -190,7 +190,33 @@ The `Generate-CertificateRequest` commandlet generates an `.inf` file for a pre-
 
 ## Verify that the certificate is deployed
 
-To verify that the certificate is corretly deployed to the Windows Hello for Business container, follow these steps:
+To verify that the certificate is correctly deployed to the Windows Hello for Business container, use the following command:
+
+```cmd
+certutil -store -user my
+```
+
+The output lists keys and certificates stored in the user store. If a certificate issued from your CA is deployed to the Windows Hello for Business container, the output will display the certificate with a `Provider` value of `Microsoft Passport Key Storage Provider`.
+
+For example:
+
+```cmd
+C:\Users\amanda.brady>certutil -store -user my
+my "Personal"
+================ Certificate 0 ================
+Serial Number: 110000001f4c4eccc46fc8f93a00000000001f
+Issuer: CN=Contoso - Issuing CA, DC=CONTOSO, DC=COM
+ NotBefore: 12/8/2023 6:16 AM
+ NotAfter: 12/7/2024 6:16 AM
+Subject: CN=amanda.brady@contoso.com
+Non-root Certificate
+Template: 1.3.6.1.4.1.311.21.8.2835349.12167323.7094945.1118853.678601.83.11484210.8005739
+Cert Hash(sha1): 63c6ce5fc512933179d3c0a5e94ecba98092f93d
+Key Container = S-1-12-1-../../login.windows.net/../amanda.brady@contoso.com
+Provider = Microsoft Passport Key Storage Provider
+Private key is NOT exportable
+Encryption test passed
+```
 
 ## User experience
 
