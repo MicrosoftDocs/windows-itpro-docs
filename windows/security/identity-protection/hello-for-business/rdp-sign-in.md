@@ -11,7 +11,7 @@ You can use Windows Hello for Business to sign in to a remote desktop session, u
 
 This article describes three certificate deployment approaches, where authentication certificates are deployed to the Windows Hello for Business container:
 
-- Using an Active Directory Certificate Services enrollment policy
+- Using an Active Directory Certificate Services (AD CS) enrollment policy
 - Using Microsoft Intune with SCEP or PKCS connectors
 - Using a third-party PKI
 
@@ -39,7 +39,7 @@ Windows Hello for Business emulates a smart card for application compatibility, 
 
 This process is applicable to scenarios where you deploy certificates using an on-premises Active Directory Certificate Services infrastrusture, which include:
 
-- Using an Active Directory Certificate Services enrollment policy
+- Using an AD CS enrollment policy
 - Using Microsoft Intune with SCEP or PKCS connectors
 
 You must first create a *certificate template*, and then deploy certificates based on that template to the Windows Hello for Business container. The following steps describe how to create a certificate template:
@@ -59,7 +59,7 @@ You must first create a *certificate template*, and then deploy certificates bas
     | *Subject Name* | <ul><li> Select the **Build from this Active Directory** information button if it isn't already selected</li><li>Select **Fully distinguished name** from the **Subject name format** list if Fully distinguished name isn't already selected</li><li>Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**</li></ul><br>**Note:** If you deploy certificates via Intune, select **Supply in the request** instead of *Build from this Active Directory*.|
     |*Request Handling*|<ul><li>Set the Purpose to **Signature and smartcard logon** and select **Yes** when prompted to change the certificate purpose</li><li>Select the **Renew with same key** check box</li><li>Select **Prompt the user during enrollment**</li></ul><br>**Note:** If you deploy certificates via Intune with a PKCS profile, select the option **Allow private key to be exported**|
     |*Cryptography*|<ul><li>Set the Provider Category to **Key Storage Provider**</li><li>Set the Algorithm name to **RSA**</li><li>Set the minimum key size to **2048**</li><li>Select **Requests must use one of the following providers**</li><li>Select **Microsoft Software Key Storage Provider**</li><li>Set the Request hash to **SHA256**</li></ul><br>**Note:** If you deploy certificates via Intune with a PKCS profile, use the **Microsoft Software Key Storage Provider**|
-    |*Security*|Add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them|
+    |*Security*|Add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them. <br>**Note:** If you deploy certificates via Intune, grant **Enroll** access to the service principal used for SCEP or PKCS.|
 
 1. Select **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates
 1. Close the Certificate Templates console
@@ -104,7 +104,9 @@ The following steps are required when you deploy certificates using an on-premis
 1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and select **OK**. It can take some time for the template to replicate to all servers and become available in this list
 1. After the template replicates, in the MMC, right-click in the Certification Authority list, select **All Tasks > Stop Service**. Right-click the name of the CA again, select **All Tasks > Start Service**
 
-### Request a certificate
+## Deploy certificates via AD CS enrollment policy
+
+Here are the steps to manually request a certificate using an Active Directory Certificate Services enrollment policy:
 
 1. Sign in to a client that is Microsoft Entra hybrid joined, ensuring that the client has line of sight to a domain controller and the issuing CA
 1. Open the **Certificates - Current User** Microsoft Management Console (MMC). To do so, you can execute the command `certmgr.msc`
@@ -113,6 +115,8 @@ The following steps are required when you deploy certificates using an on-premis
 1. Under *Select Certificate Enrollment Policy*, select **Active Directory Enrollment Policy > Next**
 1. Under *Request Certificates*, select the check-box for the certificate template you created in the previous section (*WHfB Certificate Authentication*) and then select **Enroll**
 1. After a successful certificate request, select **Finish** on the Certificate Installation Results screen
+
+Alternatively, you can configure the certificate template
 
 ## Deploy certificates via Intune
 
@@ -188,12 +192,12 @@ The `Generate-CertificateRequest` commandlet generates an `.inf` file for a pre-
 After the certificate is obtained, users can RDP to any Windows devices in the same Active Directory forest as the user's Active Directory account.
 
 :::row:::
-    :::column span="2":::
+    :::column span="1":::
     1. Open the Remote Desktop Client (`mstsc.exe`) on the client where the authentication certificate is deployed
     1. Attempt an RDP session to a target server
     1. Use the certificate credential protected by your Windows Hello for Business gesture to authenticate
     :::column-end:::
-    :::column span="2":::
+    :::column span="3":::
     > [!VIDEO https://learn-video.azurefd.net/vod/player?id=b6e1038d-98b5-48dc-8afb-65523d12cfaf]
     :::column-end:::
 :::row-end:::
