@@ -35,6 +35,18 @@ Windows Hello for Business emulates a smart card for application compatibility, 
 > [!NOTE]
 > Remote Desktop with biometric doesn't work with [Dual Enrollment](hello-feature-dual-enrollment.md) or scenarios where the user provides alternative credentials.
 
+## Requirements
+
+Here's a list of requiremets to enable RDP sign-in with Windows Hello for Business:
+
+> [!div class="checklist"]
+> * A PKI infrastructure based on AD CS or third-party
+> * Windows Hello for Business deployed to the clients
+> * If you plan to support Microsoft Entra joined devices, the domain controllers must have a certificate, which serves as a *root of trust* for the clients. The certificate ensures that clients don't communicate with rogue domain controllers
+> * If you plan to deploy certificates using Microsoft Intune:
+  > * Ensure you have the required infrastructure to support either [SCEP][MEM-1] or [PKCS][MEM-2] deployments
+  > * Deploy the root CA certificate (and any other intermediate certificate authority certificates) to Microsoft Entra joined Devices using a *Trusted root certificate* policy with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune][MEM-5]
+
 ## Create a Windows Hello for Business certificate template
 
 This process is applicable to scenarios where you deploy certificates using an on-premises Active Directory Certificate Services infrastrusture, which include:
@@ -116,8 +128,6 @@ Here are the steps to manually request a certificate using an Active Directory C
 1. Under *Request Certificates*, select the check-box for the certificate template you created in the previous section (*WHfB Certificate Authentication*) and then select **Enroll**
 1. After a successful certificate request, select **Finish** on the Certificate Installation Results screen
 
-Alternatively, you can configure the certificate template
-
 ## Deploy certificates via Intune
 
 This process is applicable to both *Microsoft Entra joined* and *Microsoft Entra hybrid joined* devices that are managed via Intune.
@@ -126,15 +136,6 @@ This process is applicable to both *Microsoft Entra joined* and *Microsoft Entra
 >
 > If you deploy certificates via Intune and configure Windows Hello for Business via group policy, the devices will fail to obtain a certificate, logging the error code `0x82ab0011` in the `DeviceManagement-Enterprise-Diagnostic-Provider` log.\
 > To avoid the error, configure Windows Hello for Business via Intune instead of group policy.
-
-Deploying a certificate to Intune-managed devices may be achieved using the Simple Certificate Enrollment Protocol (SCEP) or PKCS (PFX) options. For guidance deploying the required infrastructure, refer to:
-
-- [Configure infrastructure to support SCEP certificate profiles with Microsoft Intune][MEM-1]
-- [Configure and use PKCS certificates with Intune][MEM-2]
-
-Next, you should deploy the root CA certificate (and any other intermediate certificate authority certificates) to Microsoft Entra joined Devices using a *Trusted root certificate* policy with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune][MEM-5].
-
-Once these requirements are met, a policy can be configured in Intune that provisions certificates for the users on the targeted device.
 
 ### Create a policy in Intune
 
@@ -186,6 +187,10 @@ If you're using a non-Microsoft PKI, the certificate templates published to the 
 As an alternative to using SCEP, or if none of the previously covered solutions work in your environment, you can manually generate Certificate Signing Requests (CSR) for submission to your PKI. To assist with this approach, you can use the [Generate-CertificateRequest][HTTP-1] PowerShell commandlet.
 
 The `Generate-CertificateRequest` commandlet generates an `.inf` file for a pre-existing Windows Hello for Business key. The `.inf` can be used to generate a certificate request manually using `certreq.exe`. The commandlet also generates a `.req` file, which can be submitted to your PKI for a certificate.
+
+## Verify that the certificate is deployed
+
+To verify that the certificate is corretly deployed to the Windows Hello for Business container, follow these steps:
 
 ## User experience
 
