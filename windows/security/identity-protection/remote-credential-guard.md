@@ -187,11 +187,11 @@ Not documented.
 
 ---
 
-## Usee experience
+## User experience
 
 Once a client receives the policy, you can connect to the remote host using Remote Credential Guard by opening the Remote Desktop Client (`mstsc.exe`). The user is automatically authenticated to the remote host:
 
-[!VIDEO https://learn-video.azurefd.net/vod/player?id=39cc96a2-5193-48be-a4f3-d491571fd9a1]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=39cc96a2-5193-48be-a4f3-d491571fd9a1]
 
 > [!NOTE]
 > The user must be authorized to connect to the remote server using the Remote Desktop protocol, for example by being a member of the Remote Desktop Users local group on the remote host.
