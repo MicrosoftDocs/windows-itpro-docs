@@ -15,7 +15,7 @@ appliesto:
 
 >**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
 
-Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows appears as a side bar docked on the Windows desktop and is designed to help users get things done in Windows. Copilot in Windows can perform common tasks in Windows like changing Windows settings, which makes it different from the browser-based [Copilot in Edge](/bing-chat-enterprise/edge). However, both user experiences, Copilot in Windows and Copilot in Edge, can share the same underlying chat provider platform. It's important for organizations to properly configure the chat provider platform that Copilot in Windows uses, since it's possible for users to copy and paste sensitive information into the chat.
+Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows appears as a side bar docked on the Windows desktop and is designed to help users get things done in Windows. Copilot in Windows can perform common tasks in Windows like changing Windows settings, which makes it different from the browser-based [Copilot in Edge](/copilot/edge). However, both user experiences, Copilot in Windows and Copilot in Edge, can share the same underlying chat provider platform. It's important for organizations to properly configure the chat provider platform that Copilot in Windows uses, since it's possible for users to copy and paste sensitive information into the chat.
 
 > [!Note]
 > - Copilot in Windows is currently available as a preview. We will continue to experiment with new ideas and methods using your feedback.
@@ -44,7 +44,7 @@ Copilot in Windows can use either Microsoft Copilot or Copilot with commercial d
 
 ### Copilot
 
-[Copilot](https://www.microsoft.com/bing/do-more-with-ai/what-is-bing-chat-and-how-can-you-use-it) is a consumer experience and has a daily limit on the number of chat queries per user when not signed in with a Microsoft account. It doesn't offer the same data protection as Copilot with commercial data protection.
+Copilot is a consumer experience and has a daily limit on the number of chat queries per user when not signed in with a Microsoft account. It doesn't offer the same data protection as Copilot with commercial data protection.
 
 - [Copilot in Windows: Your data and privacy](https://support.microsoft.com/windows/3e265e82-fc76-4d0a-afc0-4a0de528b73a)
 - The privacy statement for using Copilot follows the [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) including the product specific guidance in the Microsoft privacy statement for **Bing** under the **Search, Microsoft Edge, and artificial intelligence** section.
