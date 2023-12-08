@@ -203,16 +203,18 @@ After the certificate is obtained, users can RDP to any Windows devices in the s
 
 ## Compatibility
 
-While users appreciate the convenience of biometrics, and administrators value the security, you may experience compatibility issues with applications and Windows Hello for Business certificates. In such scenarios, you can deploy policy setting to revert to the previous behavior for the users needing it.
+While users appreciate the convenience of biometrics, and administrators value the security, you may experience compatibility issues with applications and Windows Hello for Business certificates. In such scenarios, you can deploy a policy setting to revert to the previous behavior for the users needing it.
 
-## User experience 2
+### Use Windows Hello for Business certificates as smart card certificates
 
-After the certificate is obtained, users can RDP to any Windows devices in the same Active Directory forest as the user's Active Directory account.
+If you enable this policy setting, applications use Windows Hello for Business certificates as smart card certificates. Biometric factors are unavailable when a user is asked to authorize the use of the certificate's private key. This policy setting is designed to allow compatibility with applications that rely exclusively on smart card certificates.
 
-1. Open the Remote Desktop Client (`mstsc.exe`) on the client where the authentication certificate is deployed
-1. Attempt an RDP session to a target server
-1. Use the certificate credential protected by your Windows Hello for Business gesture to authenticate
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b6e1038d-98b5-48dc-8afb-65523d12cfaf]
+If you disable or don't configure this policy setting, applications don't use Windows Hello for Business certificates as smart card certificates, and biometric factors are available when a user is asked to authorize the use of the certificate's private key.
+
+|  | Path |
+|--|--|
+| **CSP** | `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/`[UseHelloCertificatesAsSmartCardCertificates][WIN-1]|
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Hello for Business** |
 
 <!-- links -->
 
@@ -224,3 +226,5 @@ After the certificate is obtained, users can RDP to any Windows devices in the s
 [MEM-6]: /mem/intune/protect/certificate-authority-add-scep-overview
 
 [HTTP-1]: https://www.powershellgallery.com/packages/Generate-CertificateRequest
+
+[WIN-1]: /windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciesusehellocertificatesassmartcardcertificates
