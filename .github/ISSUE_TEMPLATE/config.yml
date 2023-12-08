@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: New feedback experience
+    url: https://learn.microsoft.com/office/new-feedback
+    about: We’re transitioning our feedback experience away from GitHub Issues. For more information, select Open.
