@@ -188,15 +188,17 @@ After the certificate is obtained, users can RDP to any Windows devices in the s
 > The certificate chain of the issuing CA must be trusted by the target server.
 
 :::row:::
-    :::column span="3":::
+    :::column span="2":::
     1. Open the Remote Desktop Client (`mstsc.exe`) on the client where the authentication certificate has been deployed
     1. Attempt an RDP session to a target server
     1. Use the certificate credential protected by your Windows Hello for Business gesture to authenticate
     :::column-end:::
-    :::column span="1":::
+    :::column span="2":::
     > [!VIDEO https://learn-video.azurefd.net/vod/player?id=b6e1038d-98b5-48dc-8afb-65523d12cfaf]
     :::column-end:::
 :::row-end:::
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b6e1038d-98b5-48dc-8afb-65523d12cfaf]
 
 ## Compatibility
 
