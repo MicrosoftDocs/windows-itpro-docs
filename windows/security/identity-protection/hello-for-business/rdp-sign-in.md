@@ -44,8 +44,8 @@ Here's a list of requiremets to enable RDP sign-in with Windows Hello for Busine
 > * Windows Hello for Business deployed to the clients
 > * If you plan to support Microsoft Entra joined devices, the domain controllers must have a certificate, which serves as a *root of trust* for the clients. The certificate ensures that clients don't communicate with rogue domain controllers
 > * If you plan to deploy certificates using Microsoft Intune:
-  > * Ensure you have the required infrastructure to support either [SCEP][MEM-1] or [PKCS][MEM-2] deployments
-  > * Deploy the root CA certificate (and any other intermediate certificate authority certificates) to Microsoft Entra joined Devices using a *Trusted root certificate* policy with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune][MEM-5]
+    > * Ensure you have the required infrastructure to support either [SCEP][MEM-1] or [PKCS][MEM-2] deployments
+    > * Deploy the root CA certificate (and any other intermediate certificate authority certificates) to Microsoft Entra joined Devices using a *Trusted root certificate* policy with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune][MEM-5]
 
 ## Create a Windows Hello for Business certificate template
 
