@@ -61,7 +61,7 @@ You must first create a *certificate template*, and then deploy certificates bas
 1. Select **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates
 1. Close the Certificate Templates console
 
-#### Add Microsoft Passport Key Storage Provider to the certificate template
+### Add Microsoft Passport Key Storage Provider to the certificate template
 
 The following steps are required when you deploy certificates using an on-premises Active Directory Certificate Services enrollment policy. They are not required when distributing certificates using Microsoft Intune PKCS or SCEP profiles.
 
@@ -187,11 +187,16 @@ After the certificate is obtained, users can RDP to any Windows devices in the s
 > [!NOTE]
 > The certificate chain of the issuing CA must be trusted by the target server.
 
-1. Open the Remote Desktop Client (`mstsc.exe`) on the client where the authentication certificate has been deployed
-1. Attempt an RDP session to a target server
-1. Use the certificate credential protected by your Windows Hello for Business gesture to authenticate
-
-:::image type="content" source="images/rdp/rdp-signin-certificate.gif" alt-text="Animation showing a user signing in via RDP using the Windows Hello for Business fingerprint protector.":::
+:::row:::
+    :::column span="3":::
+    1. Open the Remote Desktop Client (`mstsc.exe`) on the client where the authentication certificate has been deployed
+    1. Attempt an RDP session to a target server
+    1. Use the certificate credential protected by your Windows Hello for Business gesture to authenticate
+    :::column-end:::
+    :::column span="1":::
+    > [!VIDEO https://learn-video.azurefd.net/vod/player?id=b6e1038d-98b5-48dc-8afb-65523d12cfaf]
+    :::column-end:::
+:::row-end:::
 
 ## Compatibility
 
