@@ -1,13 +1,13 @@
 # YamlMime:ZonePivotGroups
 groups:
-- id: windows-versions-10-11
+- id: windows-versions-11-10
   title: Windows versions
   prompt: "Select the Windows version you want to learn about:"
   pivots:
-  - id: windows-10
-    title: Windows 10
   - id: windows-11
     title: Windows 11
+  - id: windows-10
+    title: Windows 10
 - id: windows-editions-proent-proedu
   title: Windows editions
   prompt: "Select the Windows edition you want to learn about:"
