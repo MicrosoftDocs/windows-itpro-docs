@@ -1,7 +1,7 @@
 ---
 title: Remote Desktop sign-in with Windows Hello for Business
 description: Learn how you can sign-in via Remote Desktop (RDP) using Windows Hello for Business.
-ms.date: 12/8/2023
+ms.date: 12/09/2023
 ms.topic: how-to
 ---
 
@@ -230,7 +230,6 @@ After the certificate is obtained, users can RDP to any Windows devices in the s
 1. Use the certificate credential protected by your Windows Hello for Business gesture to authenticate
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=b6e1038d-98b5-48dc-8afb-65523d12cfaf]
-
 
 > [!NOTE]
 > The user must be authorized to connect to the remote server using the Remote Desktop protocol, for example by being a member of the Remote Desktop Users local group on the remote host.
