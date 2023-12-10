@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Remote Desktop sign-in with Windows Hello for Business
 
-You can use Windows Hello for Business to sign in to a remote desktop session, using the redirected smart card capabilities of the Remote Desktop Protocol (RDP). This is possible by deplyoing a certificate to the user's device, which is then used as the supplied credential when establishing the RDP connection to another Windows device.
+You can use Windows Hello for Business to sign in to a remote desktop session, using the redirected smart card capabilities of the Remote Desktop Protocol (RDP). This is possible by deploying a certificate to the user's device, which is then used as the supplied credential when establishing the RDP connection to another Windows device.
 
 This article describes three certificate deployment approaches, where authentication certificates are deployed to the Windows Hello for Business container:
 
@@ -37,14 +37,14 @@ Windows Hello for Business emulates a smart card for application compatibility, 
 
 ## Requirements
 
-Here's a list of requiremets to enable RDP sign-in with Windows Hello for Business:
+Here's a list of requirements to enable RDP sign-in with Windows Hello for Business:
 
 > [!div class="checklist"]
 > * A PKI infrastructure based on AD CS or third-party
 > * Windows Hello for Business deployed to the clients
 > * If you plan to support Microsoft Entra joined devices, the domain controllers must have a certificate, which serves as a *root of trust* for the clients. The certificate ensures that clients don't communicate with rogue domain controllers
 
-If you plan to deploy certificates using Microsoft Intune, here are additional requiremets:
+If you plan to deploy certificates using Microsoft Intune, here are more requirements:
 
 > [!div class="checklist"]
 > * Ensure you have the infrastructure to support either [SCEP][MEM-1] or [PKCS][MEM-2] deployment
@@ -52,7 +52,7 @@ If you plan to deploy certificates using Microsoft Intune, here are additional r
 
 ## Create a certificate template
 
-The process of creating a certificate template is applicable to scenarios where you use an on-premises Active Directory Certificate Services (AD CS) infrastrusture.\
+The process of creating a certificate template is applicable to scenarios where you use an on-premises Active Directory Certificate Services (AD CS) infrastructure.\
 You must first create a certificate template, and then deploy certificates based on that template to the Windows Hello for Business container.
 
 The certificate template configuration is different depending on whether you deploy certificates using Microsoft Intune or an AD CS enrollment policy. Select the option that best suits your needs.
@@ -238,7 +238,7 @@ Encryption test passed
 
 ## User experience
 
-Once users obtain their certificate, they can RDP to any Windows devices in the same Active Directory forest as the users' Active Directory account by opening the Remote Desktop Client (`mstsc.exe`). When connecting to the remote host, they are prompted to use Windows Hello for Business to authenticate.
+Once users obtain their certificate, they can RDP to any Windows devices in the same Active Directory forest as the users' Active Directory account by opening the Remote Desktop Client (`mstsc.exe`). When connecting to the remote host, they're prompted to use Windows Hello for Business to authenticate.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=b6e1038d-98b5-48dc-8afb-65523d12cfaf]
 
@@ -247,13 +247,13 @@ Once users obtain their certificate, they can RDP to any Windows devices in the 
 
 ## Compatibility
 
-While users appreciate the convenience of biometrics, and administrators value the security, you may experience compatibility issues with applications and Windows Hello for Business certificates. In such scenarios, you can deploy a policy setting to revert to the previous behavior for the users needing it.
+While users appreciate the convenience of biometrics, and administrators value the security, you might experience compatibility issues with applications and Windows Hello for Business certificates. In such scenarios, you can deploy a policy setting to revert to the previous behavior for the users needing it.
 
 ### Use Windows Hello for Business certificates as smart card certificates
 
 If you enable this policy setting, applications use Windows Hello for Business certificates as smart card certificates. Biometric factors are unavailable when a user is asked to authorize the use of the certificate's private key. This policy setting is designed to allow compatibility with applications that rely exclusively on smart card certificates.
 
-If you disable or don't configure this policy setting, applications don't use Windows Hello for Business certificates as smart card certificates, and biometric factors are available when a user is asked to authorize the use of the certificate's private key.
+If you disable or don't configure this policy setting, applications don't use Windows Hello for Business certificates as smart card certificates. Biometric factors are available when a user is asked to authorize the use of the certificate's private key.
 
 |  | Path |
 |--|--|
