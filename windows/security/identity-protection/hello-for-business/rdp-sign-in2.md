@@ -52,13 +52,12 @@ If you plan to deploy certificates using Microsoft Intune, here are additional r
 
 ## Create a certificate template
 
-[!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
+The process of creating a certificate template is applicable to scenarios where you use an on-premises Active Directory Certificate Services (AD CS) infrastrusture.\
+You must first create a certificate template, and then deploy certificates based on that template to the Windows Hello for Business container.
+
+The process is different depending on whether you deploy certificates using an AD CS enrollment policy or Microsoft Intune. Select the option that best suits your needs.
 
 # [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Microsoft Intune**](#tab/intune)
-
-This process is applicable to scenarios where you deploy certificates using an on-premises Active Directory Certificate Services infrastrusture and the devices are managed by Microsoft Intune.
-
-You must first create a *certificate template*, and then deploy certificates based on that template to the Windows Hello for Business container. The following steps describe how to create a certificate template:
 
 1. Sign in to your issuing certificate authority (CA) and open *Server Manager*
 1. Select **Tools > Certification Authority**. The Certification Authority Microsoft Management Console (MMC) opens
@@ -80,11 +79,7 @@ You must first create a *certificate template*, and then deploy certificates bas
 1. Select **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates
 1. Close the Certificate Templates console
 
-# [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
-
-This process is applicable to scenarios where you deploy certificates using an on-premises Active Directory Certificate Services infrastrusture and the certificates are distributed using an AD CS enrollment policy.
-
-You must first create a *certificate template*, and then deploy certificates based on that template to the Windows Hello for Business container. The following steps describe how to create a certificate template:
+# [:::image type="icon" source="../../images/icons/certificate.svg" border="false"::: **AD CS policy**](#tab/adcs)
 
 1. Sign in to your issuing certificate authority (CA) and open *Server Manager*
 1. Select **Tools > Certification Authority**. The Certification Authority Microsoft Management Console (MMC) opens
@@ -161,7 +156,6 @@ This process is applicable to both *Microsoft Entra joined* and *Microsoft Entra
 > If you deploy certificates via Intune and configure Windows Hello for Business via group policy, the devices will fail to obtain a certificate, logging the error code `0x82ab0011` in the `DeviceManagement-Enterprise-Diagnostic-Provider` log.\
 > To avoid the error, configure Windows Hello for Business via Intune instead of group policy.
 
-
 This section describes how to configure a SCEP policy in Intune. Similar steps can be followed to configure a PKCS policy.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank"><b>Microsoft Intune admin center</b></a>
@@ -194,7 +188,7 @@ This section describes how to configure a SCEP policy in Intune. Similar steps c
 For more information how to configure SCEP policies, see [Configure SCEP certificate profiles in Intune][MEM-3].
 To configure PKCS policies, see [Configure and use PKCS certificate with Intune][MEM-4].
 
-# [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+# [:::image type="icon" source="../../images/icons/certificate.svg" border="false"::: **AD CS policy**](#tab/adcs)
 
 Here are the steps to manually request a certificate using an Active Directory Certificate Services enrollment policy:
 
