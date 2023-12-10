@@ -11,8 +11,8 @@ You can use Windows Hello for Business to sign in to a remote desktop session, u
 
 This article describes three certificate deployment approaches, where authentication certificates are deployed to the Windows Hello for Business container:
 
-- Using an Active Directory Certificate Services (AD CS) enrollment policy
 - Using Microsoft Intune with SCEP or PKCS connectors
+- Using an Active Directory Certificate Services (AD CS) enrollment policy
 - Using a third-party PKI
 
 > [!TIP]
@@ -50,12 +50,13 @@ If you plan to deploy certificates using Microsoft Intune, here are additional r
 > * Ensure you have the infrastructure to support either [SCEP][MEM-1] or [PKCS][MEM-2] deployment
 > * Deploy the root CA certificate and any other intermediate certificate authority certificates to Microsoft Entra joined Devices using a [Trusted root certificate policy][MEM-5]
 
-## Create a Windows Hello for Business certificate template
+## Create a certificate template
 
-This process is applicable to scenarios where you deploy certificates using an on-premises Active Directory Certificate Services infrastrusture, which include:
+[!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
 
-- Using an AD CS enrollment policy
-- Using Microsoft Intune with SCEP or PKCS connectors
+# [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Microsoft Intune**](#tab/intune)
+
+This process is applicable to scenarios where you deploy certificates using an on-premises Active Directory Certificate Services infrastrusture and the devices are managed by Microsoft Intune.
 
 You must first create a *certificate template*, and then deploy certificates based on that template to the Windows Hello for Business container. The following steps describe how to create a certificate template:
 
@@ -79,9 +80,39 @@ You must first create a *certificate template*, and then deploy certificates bas
 1. Select **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates
 1. Close the Certificate Templates console
 
-### Add Microsoft Passport Key Storage Provider to the certificate template
+### Issue the certificate template
 
-The following steps are required when you deploy certificates using an on-premises Active Directory Certificate Services enrollment policy. They are not required when distributing certificates using Microsoft Intune PKCS or SCEP profiles.
+1. In the Certificate Authority console, right-click **Certificate Templates**, select **New > Certificate Template to Issue**
+1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and select **OK**. It can take some time for the template to replicate to all servers and become available in this list
+1. After the template replicates, in the MMC, right-click in the Certification Authority list, select **All Tasks > Stop Service**. Right-click the name of the CA again, select **All Tasks > Start Service**
+
+# [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+
+This process is applicable to scenarios where you deploy certificates using an on-premises Active Directory Certificate Services infrastrusture and the certificates are distributed using an AD CS enrollment policy.
+
+You must first create a *certificate template*, and then deploy certificates based on that template to the Windows Hello for Business container. The following steps describe how to create a certificate template:
+
+1. Sign in to your issuing certificate authority (CA) and open *Server Manager*
+1. Select **Tools > Certification Authority**. The Certification Authority Microsoft Management Console (MMC) opens
+1. In the MMC, expand the CA name and right-click **Certificate Templates > Manage**
+1. The Certificate Templates console opens. All of the certificate templates are displayed in the details pane
+1. Right-click the **Smartcard Logon** template and select **Duplicate Template**
+1. Use the following table to configure the template:
+
+    | Tab Name | Configurations |
+    | --- | --- |
+    | *Compatibility* | <ul><li>Clear the **Show resulting changes** check box</li><li>Select **Windows Server 2012 or Windows Server 2012 R2** from the *Certification Authority list*</li><li>Select **Windows Server 2012 or Windows Server 2012 R2** from the *Certification Recipient list*</li></ul>|
+    | *General* | <ul><li>Specify a **Template display name**, for example *WHfB Certificate Authentication*</li><li>Set the validity period to the desired value</li><li>Take note of the Template name for later, which should be the same as the Template display name minus spaces (*WHfBCertificateAuthentication* in this example)</li></ul>|
+    | *Extensions* | Verify the **Application Policies** extension includes **Smart Card Logon**|
+    | *Subject Name* | <ul><li> Select the **Build from this Active Directory** information button if it isn't already selected</li><li>Select **Fully distinguished name** from the **Subject name format** list if Fully distinguished name isn't already selected</li><li>Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**</li></ul><br>**Note:** If you deploy certificates via Intune, select **Supply in the request** instead of *Build from this Active Directory*.|
+    |*Request Handling*|<ul><li>Set the Purpose to **Signature and smartcard logon** and select **Yes** when prompted to change the certificate purpose</li><li>Select the **Renew with same key** check box</li><li>Select **Prompt the user during enrollment**</li></ul><br>**Note:** If you deploy certificates via Intune with a PKCS profile, select the option **Allow private key to be exported**|
+    |*Cryptography*|<ul><li>Set the Provider Category to **Key Storage Provider**</li><li>Set the Algorithm name to **RSA**</li><li>Set the minimum key size to **2048**</li><li>Select **Requests must use one of the following providers**</li><li>Select **Microsoft Software Key Storage Provider**</li><li>Set the Request hash to **SHA256**</li>|
+    |*Security*|Add the security principal used for SCEP or PKCS **Enroll** access.|
+
+1. Select **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates
+1. Close the Certificate Templates console
+
+### Add Microsoft Passport Key Storage Provider to the certificate template
 
 1. Open an elevated Command Prompt and change to a temporary working directory
 1. Execute the following command, replacing `<TemplateName>` with the **Template display name** noted in the table
@@ -119,19 +150,15 @@ The following steps are required when you deploy certificates using an on-premis
 1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and select **OK**. It can take some time for the template to replicate to all servers and become available in this list
 1. After the template replicates, in the MMC, right-click in the Certification Authority list, select **All Tasks > Stop Service**. Right-click the name of the CA again, select **All Tasks > Start Service**
 
-## Deploy certificates via AD CS enrollment policy
+---
 
-Here are the steps to manually request a certificate using an Active Directory Certificate Services enrollment policy:
+## Deploy certificates
 
-1. Sign in to a client that is Microsoft Entra hybrid joined, ensuring that the client has line of sight to a domain controller and the issuing CA
-1. Open the **Certificates - Current User** Microsoft Management Console (MMC). To do so, you can execute the command `certmgr.msc`
-1. In the left pane of the MMC, right-click **Personal > All Tasks > Request New Certificate…**
-1. On the Certificate Enrollment screen, select **Next**
-1. Under *Select Certificate Enrollment Policy*, select **Active Directory Enrollment Policy > Next**
-1. Under *Request Certificates*, select the check-box for the certificate template you created in the previous section (*WHfB Certificate Authentication*) and then select **Enroll**
-1. After a successful certificate request, select **Finish** on the Certificate Installation Results screen
+[!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
 
-## Deploy certificates via Intune
+# [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Microsoft Intune**](#tab/intune)
+
+### Create a policy in Intune
 
 This process is applicable to both *Microsoft Entra joined* and *Microsoft Entra hybrid joined* devices that are managed via Intune.
 
@@ -140,7 +167,6 @@ This process is applicable to both *Microsoft Entra joined* and *Microsoft Entra
 > If you deploy certificates via Intune and configure Windows Hello for Business via group policy, the devices will fail to obtain a certificate, logging the error code `0x82ab0011` in the `DeviceManagement-Enterprise-Diagnostic-Provider` log.\
 > To avoid the error, configure Windows Hello for Business via Intune instead of group policy.
 
-### Create a policy in Intune
 
 This section describes how to configure a SCEP policy in Intune. Similar steps can be followed to configure a PKCS policy.
 
@@ -173,6 +199,20 @@ This section describes how to configure a SCEP policy in Intune. Similar steps c
 
 For more information how to configure SCEP policies, see [Configure SCEP certificate profiles in Intune][MEM-3].
 To configure PKCS policies, see [Configure and use PKCS certificate with Intune][MEM-4].
+
+# [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+
+Here are the steps to manually request a certificate using an Active Directory Certificate Services enrollment policy:
+
+1. Sign in to a client that is Microsoft Entra hybrid joined, ensuring that the client has line of sight to a domain controller and the issuing CA
+1. Open the **Certificates - Current User** Microsoft Management Console (MMC). To do so, you can execute the command `certmgr.msc`
+1. In the left pane of the MMC, right-click **Personal > All Tasks > Request New Certificate…**
+1. On the Certificate Enrollment screen, select **Next**
+1. Under *Select Certificate Enrollment Policy*, select **Active Directory Enrollment Policy > Next**
+1. Under *Request Certificates*, select the check-box for the certificate template you created in the previous section (*WHfB Certificate Authentication*) and then select **Enroll**
+1. After a successful certificate request, select **Finish** on the Certificate Installation Results screen
+
+---
 
 ## Use third-party certification authorities
 
@@ -214,7 +254,7 @@ Encryption test passed
 
 ## User experience
 
-Once users obtain their certificates, they can RDP to any Windows devices in the same Active Directory forest as the users' Active Directory account by opening the Remote Desktop Client (`mstsc.exe`). When connecting to the remote host, they are prompted to use Windows Hello for Business to authenticate.
+Once users obtain their certificate, they can RDP to any Windows devices in the same Active Directory forest as the users' Active Directory account by opening the Remote Desktop Client (`mstsc.exe`). When connecting to the remote host, they are prompted to use Windows Hello for Business to authenticate.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=b6e1038d-98b5-48dc-8afb-65523d12cfaf]
 
