@@ -55,7 +55,7 @@ If you plan to deploy certificates using Microsoft Intune, here are additional r
 The process of creating a certificate template is applicable to scenarios where you use an on-premises Active Directory Certificate Services (AD CS) infrastrusture.\
 You must first create a certificate template, and then deploy certificates based on that template to the Windows Hello for Business container.
 
-The process is different depending on whether you deploy certificates using an AD CS enrollment policy or Microsoft Intune. Select the option that best suits your needs.
+The certificate template configuration is different depending on whether you deploy certificates using Microsoft Intune or an AD CS enrollment policy. Select the option that best suits your needs.
 
 # [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Microsoft Intune**](#tab/intune)
 
@@ -72,9 +72,9 @@ The process is different depending on whether you deploy certificates using an A
     | *General* | <ul><li>Specify a **Template display name**, for example *WHfB Certificate Authentication*</li><li>Set the validity period to the desired value</li></ul>|
     | *Extensions* | Verify the **Application Policies** extension includes **Smart Card Logon**.|
     | *Subject Name* | Select **Supply in the request**.|
-    |*Request Handling*|<ul><li>Set the Purpose to **Signature and smartcard logon** and select **Yes** when prompted to change the certificate purpose</li><li>Select the **Renew with same key** check box</li><li>Select **Prompt the user during enrollment**</li></ul><br>**Note:** If you deploy certificates via Intune with a PKCS profile, select the option **Allow private key to be exported**|
+    |*Request Handling*|<ul><li>Set the Purpose to **Signature and smartcard logon** and select **Yes** when prompted to change the certificate purpose</li><li>Select the **Renew with same key** check box</li><li>Select **Prompt the user during enrollment**</li></ul><br>**Note:** If you deploy certificates with a PKCS profile, select the option **Allow private key to be exported**|
     |*Cryptography*|<ul><li>Set the Provider Category to **Key Storage Provider**</li><li>Set the Algorithm name to **RSA**</li><li>Set the minimum key size to **2048**</li><li>Select **Requests must use one of the following providers**</li><li>Select **Microsoft Software Key Storage Provider**</li><li>Set the Request hash to **SHA256**</li>|
-    |*Security*|Add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them. <br><br>**Note:** If you deploy certificates via Intune, grant **Enroll** access to the security principal used for SCEP or PKCS.|
+    |*Security*|Add the security principal used for SCEP or PKCS **Enroll** access|
 
 1. Select **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates
 1. Close the Certificate Templates console
@@ -96,7 +96,7 @@ The process is different depending on whether you deploy certificates using an A
     | *Subject Name* | <ul><li> Select the **Build from this Active Directory** information button if it isn't already selected</li><li>Select **Fully distinguished name** from the **Subject name format** list if Fully distinguished name isn't already selected</li><li>Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**</li></ul>|
     |*Request Handling*|<ul><li>Set the Purpose to **Signature and smartcard logon** and select **Yes** when prompted to change the certificate purpose</li><li>Select the **Renew with same key** check box</li><li>Select **Prompt the user during enrollment**</li></ul>|
     |*Cryptography*|<ul><li>Set the Provider Category to **Key Storage Provider**</li><li>Set the Algorithm name to **RSA**</li><li>Set the minimum key size to **2048**</li><li>Select **Requests must use one of the following providers**</li><li>Select **Microsoft Software Key Storage Provider**</li><li>Set the Request hash to **SHA256**</li>|
-    |*Security*|Add the security principal used for SCEP or PKCS **Enroll** access|
+    |*Security*|Add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them.|
 
 1. Select **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates
 1. Close the Certificate Templates console
@@ -126,7 +126,7 @@ The process is different depending on whether you deploy certificates using an A
 :::row:::
     :::column span="3":::
     >[!NOTE]
-    >You can verify that the template was updated by checking its properties.
+    >You can verify that the template is updated by checking its properties.
     :::column-end:::
     :::column span="1":::
     :::image type="content" source="images/rdp/rdp-certificate-template.png" alt-text="Screenshot of the RDP certificate template updated with the Passport KSP." lightbox="images/rdp/rdp-certificate-template.png" border="false":::
@@ -135,7 +135,7 @@ The process is different depending on whether you deploy certificates using an A
 
 ---
 
-## Issue the certificate template
+### Issue the certificate template
 
 1. In the Certificate Authority console, right-click **Certificate Templates**, select **New > Certificate Template to Issue**
 1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and select **OK**. It can take some time for the template to replicate to all servers and become available in this list
@@ -143,18 +143,9 @@ The process is different depending on whether you deploy certificates using an A
 
 ## Deploy certificates
 
-[!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
+The process of deploying certificates is different depending on whether you use Microsoft Intune or an AD CS enrollment policy. Select the option that best suits your needs.
 
 # [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Microsoft Intune**](#tab/intune)
-
-### Create a policy in Intune
-
-This process is applicable to both *Microsoft Entra joined* and *Microsoft Entra hybrid joined* devices that are managed via Intune.
-
-> [!CAUTION]
->
-> If you deploy certificates via Intune and configure Windows Hello for Business via group policy, the devices will fail to obtain a certificate, logging the error code `0x82ab0011` in the `DeviceManagement-Enterprise-Diagnostic-Provider` log.\
-> To avoid the error, configure Windows Hello for Business via Intune instead of group policy.
 
 This section describes how to configure a SCEP policy in Intune. Similar steps can be followed to configure a PKCS policy.
 
@@ -171,7 +162,7 @@ This section describes how to configure a SCEP policy in Intune. Similar steps c
     |*Subject name format* | `CN={{UserPrincipalName}}` <br><br>**Note:** if there's a mismatch between the user UPN suffix and the Active Directory domain FQDN, use `CN={{OnPrem_Distinguished_Name}}` instead.|
     |*Subject alternative name* |From the dropdown, select **User principal name (UPN)** with a value of `{{UserPrincipalName}}`|
     |*Certificate validity period* | Configure a value of your choosing|
-    |*Key storage provider (KSP)* | **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)**|
+    |*Key storage provider (KSP)* | **Enroll to Windows Hello for Business, otherwise fail**|
     |*Key usage*| **Digital Signature**|
     |*Key size (bits)* | **2048**|
     |*For Hash algorithm*|**SHA-2**|
@@ -187,6 +178,11 @@ This section describes how to configure a SCEP policy in Intune. Similar steps c
 
 For more information how to configure SCEP policies, see [Configure SCEP certificate profiles in Intune][MEM-3].
 To configure PKCS policies, see [Configure and use PKCS certificate with Intune][MEM-4].
+
+> [!CAUTION]
+>
+> If you deploy certificates via Intune and configure Windows Hello for Business via group policy, the devices will fail to obtain a certificate, logging the error code `0x82ab0011` in the `DeviceManagement-Enterprise-Diagnostic-Provider` log.\
+> To avoid the error, configure Windows Hello for Business via Intune instead of group policy.
 
 # [:::image type="icon" source="../../images/icons/certificate.svg" border="false"::: **AD CS policy**](#tab/adcs)
 
