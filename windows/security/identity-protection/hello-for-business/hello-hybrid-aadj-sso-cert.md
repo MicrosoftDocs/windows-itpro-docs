@@ -79,45 +79,45 @@ The easiest way to verify that the onPremisesDistingushedNamne attribute is sync
 
 2. Select **Sign in to Graph Explorer** and provide Azure credentials.
 
-> [!NOTE]
-> To successfully query the Graph API, adequate [permissions](/graph/api/user-get?) must be granted.
+   > [!NOTE]
+   > To successfully query the Graph API, adequate [permissions](/graph/api/user-get?) must be granted.
 
 3. Select **Modify permissions (Preview)**. Scroll down and locate **User.Read.All** (or any other required permission) and select **Consent**. You'll now be prompted for delegated permissions consent.
 
 4. In the Graph Explorer URL, enter `https://graph.microsoft.com/v1.0/users/[userid]?$select=displayName,userPrincipalName,onPremisesDistinguishedName`, where **[userid]** is the user principal name of a user in Microsoft Entra ID.  Select **Run query**.
 
-> [!NOTE]
-> Because the v1.0 endpoint of the Graph API only provides a limited set of parameters, we will use the $select [Optional OData query parameter](/graph/api/user-get?). For convenience, it is possible to switch the API version selector from **v1.0** to **beta** before performing the query. This will provide all available user information, but remember, **beta** endpoint queries should not be used in production scenarios.
+   > [!NOTE]
+   > Because the v1.0 endpoint of the Graph API only provides a limited set of parameters, we will use the $select [Optional OData query parameter](/graph/api/user-get?). For convenience, it is possible to switch the API version selector from **v1.0** to **beta** before performing the query. This will provide all available user information, but remember, **beta** endpoint queries should not be used in production scenarios.
 
-#### Request
+   #### Request
 
-<!-- {
-  "blockType": "request",
-  "name": "get_user_select"
-} -->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,userPrincipalName,onPremisesDistinguishedName
-```
+   <!-- {
+     "blockType": "request",
+     "name": "get_user_select"
+   } -->
+   ```msgraph-interactive
+   GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,userPrincipalName,onPremisesDistinguishedName
+   ```
 
 5. In the returned results, review the JSON data for the **onPremisesDistinguishedName** attribute.  Ensure the attribute has a value and that the value is accurate for the given user. If the **onPremisesDistinguishedName** attribute isn't synchronized the value will be **null**.
 
-#### Response
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
+   #### Response
+   <!-- {
+     "blockType": "response",
+     "truncated": true,
+     "@odata.type": "microsoft.graph.user"
+   } -->
+   ```http
+   HTTP/1.1 200 OK
+   Content-type: application/json
 
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(displayName,userPrincipalName,onPremisesDistinguishedName)/$entity",
-    "displayName": "Nestor Wilke",
-    "userPrincipalName": "NestorW@contoso.com",
-    "onPremisesDistinguishedName" : "CN=Nestor Wilke,OU=Operations,DC=contoso,DC=com"
-}
-```
+   {
+       "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(displayName,userPrincipalName,onPremisesDistinguishedName)/$entity",
+       "displayName": "Nestor Wilke",
+       "userPrincipalName": "NestorW@contoso.com",
+       "onPremisesDistinguishedName" : "CN=Nestor Wilke,OU=Operations,DC=contoso,DC=com"
+   }
+   ```
 
 ## Prepare the Network Device Enrollment Services (NDES) Service Account
 
