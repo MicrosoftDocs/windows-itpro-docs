@@ -240,11 +240,6 @@ Encryption test passed
 
 Once users obtain their certificate, they can RDP to any Windows devices in the same Active Directory forest as the users' Active Directory account by opening the Remote Desktop Client (`mstsc.exe`). When connecting to the remote host, they're prompted to use Windows Hello for Business to unlock the private key of the certificate.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b6e1038d-98b5-48dc-8afb-65523d12cfaf]
-
-> [!NOTE]
-> The user must be authorized to connect to the remote server using the Remote Desktop protocol, for example by being a member of the Remote Desktop Users local group on the remote host.
-
 :::row:::
     :::column span="2":::
     **Microsoft Entra joined device**
@@ -265,6 +260,13 @@ Once users obtain their certificate, they can RDP to any Windows devices in the 
     :::image type="content" source="images/rdp/rdc-entra-hybrid-joined.png" alt-text="Screenshot of the Remote Desktop Client using a PIN." lightbox="images/rdp/rdp-certificate-template.png" border="false":::
     :::column-end:::
 :::row-end:::
+
+Here's a brief video showing the user experience from a Microsoft Entra joined device using fingerprint as unlock factor:
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b6e1038d-98b5-48dc-8afb-65523d12cfaf]
+
+> [!NOTE]
+> The user must be authorized to connect to the remote server using the Remote Desktop protocol, for example by being a member of the Remote Desktop Users local group on the remote host.
 
 ## Compatibility
 
