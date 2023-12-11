@@ -250,7 +250,7 @@ Sign-in to the issuing certificate authority with access equivalent to _local ad
 
 1. Open an elevated command prompt and type the following command:
 
-   ```console
+   ```cmd
    certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE
    ```
 
@@ -428,13 +428,13 @@ Sign-in the NDES server with access equivalent to _Domain Admins_.
 
 2. Type the following command to register the service principal name
 
-   ```console
+   ```cmd
    setspn -s http/[FqdnOfNdesServer] [DomainName\\NdesServiceAccount]
    ```
 
    where **[FqdnOfNdesServer]** is the fully qualified domain name of the NDES server and **[DomainName\NdesServiceAccount]** is the domain name and NDES service account name separated by a backslash (\\).  An example of the command looks like the following:
 
-   ```console
+   ```cmd
    setspn -s http/ndes.corp.contoso.com contoso\ndessvc
    ```
 
@@ -544,13 +544,13 @@ Sign-in to the NDES Server with _local administrator_ equivalent credentials.
 
 3. Type the following command:
 
-   ```console
+   ```cmd
    reg add HKLM\Software\Microsoft\Cryptography\MSCEP /v [registryValueName] /t REG_SZ /d [certificateTemplateName]
    ```
 
    where **registryValueName** is one of the three value names from the above table and where **certificateTemplateName** is the name of the certificate template you created for Windows Hello for Business Microsoft Entra joined devices.  Example:
 
-   ```console
+   ```cmd
    reg add HKLM\Software\Microsoft\Cryptography\MSCEP /v SignatureTemplate /t REG_SZ /d AADJWHFBAuthentication
    ```
 
@@ -793,7 +793,7 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 
 2. Run the following commands:
 
-   ```console
+   ```cmd
    reg add HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters /v MaxFieldLength /t REG_DWORD /d 65534
    reg add HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters /v MaxRequestBytes /t REG_DWORD /d 65534
    ```
