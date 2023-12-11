@@ -1,7 +1,7 @@
 ---
 title: Remote Desktop sign-in with Windows Hello for Business
-description: Learn how you can sign-in via Remote Desktop (RDP) using Windows Hello for Business.
-ms.date: 12/09/2023
+description: Learn how to configure Remote Desktop (RDP) sign-in with Windows Hello for Business.
+ms.date: 12/11/2023
 ms.topic: how-to
 ---
 
@@ -9,11 +9,10 @@ ms.topic: how-to
 
 You can use Windows Hello for Business to sign in to a remote desktop session, using the redirected smart card capabilities of the Remote Desktop Protocol (RDP). This is possible by deploying a certificate to the user's device, which is then used as the supplied credential when establishing the RDP connection to another Windows device.
 
-This article describes three certificate deployment approaches, where authentication certificates are deployed to the Windows Hello for Business container:
+This article describes two certificate deployment approaches, where authentication certificates are deployed to the Windows Hello for Business container:
 
 - Using Microsoft Intune with SCEP or PKCS connectors
 - Using an Active Directory Certificate Services (AD CS) enrollment policy
-- Using a third-party PKI
 
 > [!TIP]
 > Consider using Remote Credential Guard instead of Windows Hello for Business for RDP sign-in. Remote Credential Guard provides single sign-on (SSO) to RDP sessions using Kerberos authentication, and doesn't require the deployment of certificates. For more information, see [Remote Credential Guard](../remote-credential-guard.md).
