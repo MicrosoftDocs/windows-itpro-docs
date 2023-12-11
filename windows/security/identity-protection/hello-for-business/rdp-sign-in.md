@@ -238,7 +238,7 @@ Encryption test passed
 
 ## User experience
 
-Once users obtain their certificate, they can RDP to any Windows devices in the same Active Directory forest as the users' Active Directory account by opening the Remote Desktop Client (`mstsc.exe`). When connecting to the remote host, they're prompted to use Windows Hello for Business to unlock the private key of the certificate.
+Once users obtain their certificate, they can RDP to any Windows devices in the same Active Directory forest as the users' Active Directory account by opening Remote Desktop Connection (`mstsc.exe`). When connecting to the remote host, they're prompted to use Windows Hello for Business to unlock the private key of the certificate.
 
 :::row:::
     :::column span="2":::
@@ -254,10 +254,10 @@ Once users obtain their certificate, they can RDP to any Windows devices in the 
 :::row-end:::
 :::row:::
     :::column span="2":::
-    :::image type="content" source="images/rdp/rdc-entra-joined.png" alt-text="Screenshot of the Remote Desktop Client using WHFB biometrics." lightbox="images/rdp/rdp-certificate-template.png" border="false":::
+    :::image type="content" source="images/rdp/rdc-entra-joined.png" alt-text="Screenshot of Remote Desktop Connection authentication prompt using biometrics." border="false":::
     :::column-end:::
     :::column span="2":::
-    :::image type="content" source="images/rdp/rdc-entra-hybrid-joined.png" alt-text="Screenshot of the Remote Desktop Client using a PIN." lightbox="images/rdp/rdp-certificate-template.png" border="false":::
+    :::image type="content" source="images/rdp/rdc-entra-hybrid-joined.png" alt-text="Screenshot of Remote Desktop Connection authentication prompt using a PIN." border="false":::
     :::column-end:::
 :::row-end:::
 
