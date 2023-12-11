@@ -1,7 +1,7 @@
 ---
 title: Web sign-in for Windows
 description: Learn how Web sign-in in Windows works, key scenarios, and how to configure it.
-ms.date: 09/27/2023
+ms.date: 12/11/2023
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -35,6 +35,9 @@ To use web sign-in, the clients must meet the following prerequisites:
 ## Configure web sign-in
 
 To use web sign-in, your devices must be configured with different policies. Review the following instructions to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
+
+> [!NOTE]
+> Web sign-in uses a system-managed local account called `WsiAccount`. The account is created automatically when you enable Web sign-in, and it's not displayed in the user selection list. Every time user needs to use Web sign-in, the account is enabled. After the user signs in, the account is disabled.
 
 #### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune**](#tab/intune)
 
