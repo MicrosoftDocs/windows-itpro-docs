@@ -55,7 +55,7 @@ If you plan to deploy certificates using Microsoft Intune, here are more require
 The process of creating a certificate template is applicable to scenarios where you use an on-premises Active Directory Certificate Services (AD CS) infrastructure.\
 You must first create a certificate template, and then deploy certificates based on that template to the Windows Hello for Business container.
 
-The certificate template configuration is different depending on whether you deploy certificates using Microsoft Intune or an AD CS enrollment policy. Select the option that best suits your needs.
+The certificate template configuration is different depending on whether you deploy certificates using Microsoft Intune or an Active Directory enrollment policy. Select the option that best suits your needs.
 
 # [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Microsoft Intune**](#tab/intune)
 
@@ -143,7 +143,7 @@ The certificate template configuration is different depending on whether you dep
 
 ## Deploy certificates
 
-The process of deploying certificates is different depending on whether you use Microsoft Intune or an AD CS enrollment policy. Select the option that best suits your needs.
+The process of deploying certificates is different depending on whether you use Microsoft Intune or an Active Directory enrollment policy. Select the option that best suits your needs.
 
 # [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Microsoft Intune**](#tab/intune)
 
@@ -238,12 +238,31 @@ Encryption test passed
 
 ## User experience
 
-Once users obtain their certificate, they can RDP to any Windows devices in the same Active Directory forest as the users' Active Directory account by opening the Remote Desktop Client (`mstsc.exe`). When connecting to the remote host, they're prompted to use Windows Hello for Business to authenticate.
+Once users obtain their certificate, they can RDP to any Windows devices in the same Active Directory forest as the users' Active Directory account by opening the Remote Desktop Client (`mstsc.exe`). When connecting to the remote host, they're prompted to use Windows Hello for Business to unlock the private key of the certificate.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=b6e1038d-98b5-48dc-8afb-65523d12cfaf]
 
 > [!NOTE]
 > The user must be authorized to connect to the remote server using the Remote Desktop protocol, for example by being a member of the Remote Desktop Users local group on the remote host.
+
+:::row:::
+    :::column span="2":::
+    **Microsoft Entra joined device**
+    The user can authenticate using any available Windows Hello unlock gestures, including biometrics.
+    :::column-end:::
+    :::column span="2":::
+    :::image type="content" source="images/rdp/prompt-entra-joined.png" alt-text="Screenshot of the Remote Desktop Client using WHFB biometrics." lightbox="images/rdp/rdp-certificate-template.png" border="false":::
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="2":::
+    **Microsoft Entra hybrid joined device**
+    The credential prompt identifies the Windows Hello credential provider as *Security device credential*. The user must use the PIN credential provider to unlock.
+    :::column-end:::
+    :::column span="2":::
+    :::image type="content" source="images/rdp/prompt-entra-hybrid-joined.png" alt-text="Screenshot of the Remote Desktop Client using a PIN." lightbox="images/rdp/rdp-certificate-template.png" border="false":::
+    :::column-end:::
+:::row-end:::
 
 ## Compatibility
 
