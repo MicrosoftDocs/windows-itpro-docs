@@ -37,7 +37,7 @@ To use web sign-in, the clients must meet the following prerequisites:
 To use web sign-in, your devices must be configured with different policies. Review the following instructions to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
 
 > [!NOTE]
-> Web sign-in uses a system-managed local account called `WsiAccount`. The account is created automatically when you enable Web sign-in, and it's not displayed in the user selection list. Every time user needs to use Web sign-in, the account is enabled. After the user signs in, the account is disabled.
+> Web sign-in uses a system-managed local account called *WsiAccount*. The account is created automatically when you enable Web sign-in, and it's not displayed in the user selection list. Every time a user uses the Web sign-in credential provider, the *WsiAccount* account is enabled. After the user signs in, the account is disabled.
 
 #### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune**](#tab/intune)
 
