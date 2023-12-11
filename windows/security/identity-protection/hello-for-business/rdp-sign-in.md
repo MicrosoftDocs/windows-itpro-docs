@@ -248,19 +248,21 @@ Once users obtain their certificate, they can RDP to any Windows devices in the 
 :::row:::
     :::column span="2":::
     **Microsoft Entra joined device**
+
     The user can authenticate using any available Windows Hello unlock gestures, including biometrics.
     :::column-end:::
     :::column span="2":::
-    :::image type="content" source="images/rdp/prompt-entra-joined.png" alt-text="Screenshot of the Remote Desktop Client using WHFB biometrics." lightbox="images/rdp/rdp-certificate-template.png" border="false":::
+    **Microsoft Entra hybrid joined device**
+
+    The credential prompt identifies the Windows Hello credential provider as *Security device credential*. The user must use the PIN credential provider to unlock.
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column span="2":::
-    **Microsoft Entra hybrid joined device**
-    The credential prompt identifies the Windows Hello credential provider as *Security device credential*. The user must use the PIN credential provider to unlock.
+    :::image type="content" source="images/rdp/rdc-entra-joined.png" alt-text="Screenshot of the Remote Desktop Client using WHFB biometrics." lightbox="images/rdp/rdp-certificate-template.png" border="false":::
     :::column-end:::
     :::column span="2":::
-    :::image type="content" source="images/rdp/prompt-entra-hybrid-joined.png" alt-text="Screenshot of the Remote Desktop Client using a PIN." lightbox="images/rdp/rdp-certificate-template.png" border="false":::
+    :::image type="content" source="images/rdp/rdc-entra-hybrid-joined.png" alt-text="Screenshot of the Remote Desktop Client using a PIN." lightbox="images/rdp/rdp-certificate-template.png" border="false":::
     :::column-end:::
 :::row-end:::
 
