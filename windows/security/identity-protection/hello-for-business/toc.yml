@@ -96,8 +96,6 @@ items:
         href: hello-cert-trust-policy-settings.md
   - name: Planning for Domain Controller load
     href: hello-adequate-domain-controllers.md
-  - name: Deploy certificates for remote desktop (RDP) sign-in
-    href: hello-deployment-rdp-certs.md
 - name: How-to Guides
   items:
   - name: Prepare people to use Windows Hello
@@ -119,7 +117,7 @@ items:
   - name: Multi-factor Unlock
     href: feature-multifactor-unlock.md
   - name: Remote desktop (RDP) sign-in
-    href: hello-feature-remote-desktop.md
+    href: rdp-sign-in.md
 - name: Troubleshooting
   items:
   - name: Known deployment issues
