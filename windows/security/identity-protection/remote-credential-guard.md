@@ -145,8 +145,8 @@ The policy can have different values, depending on the level of security you wan
 - **Require Remote Credential Guard**: Remote Desktop Client must use Remote Credential Guard to connect to remote hosts
 - **Restrict credential delegation**: Remote Desktop Client must use Restricted Admin or Remote Credential Guard to connect to remote hosts. In this configuration, Remote Credential Guard is preferred, but it uses Restricted Admin mode (if supported) when Remote Credential Guard can't be used
 
-> [!NOTE]
-> When *Restrict Credential Delegation* is enabled, the `/restrictedAdmin` switch will be ignored. Windows enforces the policy configuration instead and uses Remote Credential Guard.
+  > [!NOTE]
+  > When *Restrict Credential Delegation* is enabled, the `/restrictedAdmin` switch will be ignored. Windows enforces the policy configuration instead and uses Remote Credential Guard.
 
 To configure your clients, you can use:
 
