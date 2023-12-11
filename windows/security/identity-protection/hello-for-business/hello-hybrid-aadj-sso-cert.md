@@ -486,7 +486,7 @@ Sign-in to the certificate authority or management workstations with an _Enterpr
 > [!NOTE]
 > If you closed Server Manger from the last set of tasks, start Server Manager and click the action flag that shows a yellow exclamation point.
 
-![Server Manager Post-Install Yellow flag.](images/aadjcert/servermanager-post-ndes-yellowactionflag.png)
+:::image type="content" alt-text="Server Manager Post-Install Yellow flag." source="images/aadjcert/servermanager-post-ndes-yellowactionflag.png" lightbox="images/aadjcert/servermanager-post-ndes-yellowactionflag.png":::
 
 1. Select the **Configure Active Directory Certificate Services on the destination server** link.
 
@@ -583,7 +583,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 4. Select **Download connector service**.  Select **Accept terms & Download**.  Save the file (AADApplicationProxyConnectorInstaller.exe) in a location accessible by others on the domain.
 
-   ![Azure Application Proxy Connectors.](images/aadjcert/azureconsole-applicationproxy-connectors-empty.png)
+   :::image type="content" alt-text="Azure Application Proxy Connectors." source="images/aadjcert/azureconsole-applicationproxy-connectors-empty.png" lightbox="images/aadjcert/azureconsole-applicationproxy-connectors-empty.png":::
 
 5. Sign-in the computer that will run the connector with access equivalent to a _domain user_.
 
@@ -616,11 +616,11 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 3. Under **MANAGE**, select **Application proxy**.
 
-   ![Azure Application Proxy Connector groups.](images/aadjcert/azureconsole-applicationproxy-connectors-default.png)
+   :::image type="content" alt-text="Azure Application Proxy Connector groups." source="images/aadjcert/azureconsole-applicationproxy-connectors-default.png" lightbox="images/aadjcert/azureconsole-applicationproxy-connectors-default.png":::
 
 4. Select **New Connector Group**. Under **Name**, type **NDES WHFB Connectors**.
 
-   ![Azure Application New Connector Group.](images/aadjcert/azureconsole-applicationproxy-connectors-newconnectorgroup.png)
+   :::image type="content" alt-text="Azure Application New Connector Group." source="images/aadjcert/azureconsole-applicationproxy-connectors-newconnectorgroup.png" lightbox="images/aadjcert/azureconsole-applicationproxy-connectors-newconnectorgroup.png":::
 
 5. Select each connector agent in the **Connectors** list that will service Windows Hello for Business certificate enrollment requests.
 
@@ -644,7 +644,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 7. Under **Internal URL**, select **https://** from the first list.  In the text box next to **https://**, type the hostname you want to use as your external hostname for the Microsoft Entra application proxy.  In the list next to the hostname you typed, select a DNS suffix you want to use externally for the Microsoft Entra application proxy.  It's recommended to use the default, -[tenantName].msapproxy.net where **[tenantName]** is your current Microsoft Entra tenant name (-mstephendemo.msappproxy.net).
 
-   ![Azure NDES Application Proxy Configuration.](images/aadjcert/azureconsole-appproxyconfig.png)
+   :::image type="content" alt-text="Azure NDES Application Proxy Configuration." source="images/aadjcert/azureconsole-appproxyconfig.png" lightbox="images/aadjcert/azureconsole-appproxyconfig.png":::
 
 8. Select **Passthrough** from the **Pre Authentication** list.
 
@@ -699,7 +699,7 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 
 2. Expand the node that has the name of the NDES server.  Expand **Sites** and select **Default Web Site**.
 
-   ![NDES IIS Console](images/aadjcert/ndes-iis-console.png)
+   :::image type="content" alt-text="NDES IIS Console" source="images/aadjcert/ndes-iis-console.png" lightbox="images/aadjcert/ndes-iis-console.png":::
 
 3. Select **Bindings...** under **Actions**.  Select **Add**.
 
@@ -771,7 +771,7 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 
 3. In the content pane, double-click **Request Filtering**.  Select **Edit Feature Settings...** in the action pane.
 
-   ![Intune NDES Request filtering.](images/aadjcert/NDES-IIS-RequestFiltering.png)
+   :::image type="content" alt-text="Intune NDES Request filtering." source="images/aadjcert/NDES-IIS-RequestFiltering.png" lightbox="images/aadjcert/NDES-IIS-RequestFiltering.png":::
 
 4. Select **Allow unlisted file name extensions**.
 
@@ -842,7 +842,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 7. Select **Assigned** from the **Membership type** list.
 
-   ![Microsoft Entra new group creation.](images/aadjcert/azureadcreatewhfbcertgroup.png)
+   :::image type="content" alt-text="Microsoft Entra new group creation." source="images/aadjcert/azureadcreatewhfbcertgroup.png" lightbox="images/aadjcert/azureadcreatewhfbcertgroup.png":::
 
 8. Select **Members**.  Use the  **Select members** pane to add members to this group. When finished, select **Select**.
 
@@ -894,7 +894,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 16. Type a percentage (without the percent sign) next to **Renewal Threshold** to determine when the certificate should attempt to renew. The recommended value is **20**.
 
-    ![WHFB SCEP certificate Profile EKUs.](images/aadjcert/profile03.png)
+    :::image type="content" alt-text="WHFB SCEP certificate Profile EKUs." source="images/aadjcert/profile03.png" lightbox="images/aadjcert/profile03.png":::
 
 17. Under **SCEP Server URLs**, type the fully qualified external name of the Microsoft Entra application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**. For example, ```https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll```. Select **Add**. Repeat this step for each additional NDES Microsoft Entra application proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests among the URLs listed in the SCEP certificate profile.
 
@@ -916,7 +916,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 5. In the **Assignments** pane, select **Selected Groups** from the **Assign to** list.  Select **Select groups to include**.
 
-   ![WHFB SCEP Profile Assignment.](images/aadjcert/profile04.png)
+   :::image type="content" alt-text="WHFB SCEP Profile Assignment." source="images/aadjcert/profile04.png" lightbox="images/aadjcert/profile04.png":::
 
 6. Select the **AADJ WHFB Certificate Users** group. Select **Select**.
 
