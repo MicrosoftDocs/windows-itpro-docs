@@ -6,9 +6,9 @@ ms.date: 12/12/2023
 ms.topic: conceptual
 ---
 
-[!INCLUDE [mdag-edge-deprecation-notice](../../../includes/mdag-edge-deprecation-notice.md)]
-
 # Application Guard testing scenarios
+
+[!INCLUDE [mdag-edge-deprecation-notice](../../../includes/mdag-edge-deprecation-notice.md)]
 
 We've come up with a list of scenarios that you can use to test hardware-based isolation in your organization.
 

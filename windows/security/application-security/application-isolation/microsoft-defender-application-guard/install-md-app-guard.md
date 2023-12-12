@@ -5,9 +5,9 @@ ms.date: 12/12/2023
 ms.topic: how-to
 ---
 
-[!INCLUDE [mdag-edge-deprecation-notice](../../../includes/mdag-edge-deprecation-notice.md)]
-
 # Prepare to install Microsoft Defender Application Guard
+
+[!INCLUDE [mdag-edge-deprecation-notice](../../../includes/mdag-edge-deprecation-notice.md)]
 
 Before you continue, review [System requirements for Microsoft Defender Application Guard](reqs-md-app-guard.md) to review the hardware and software installation requirements for Microsoft Defender Application Guard.
 

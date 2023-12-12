@@ -6,9 +6,9 @@ ms.date: 12/12/2023
 ms.topic: conceptual
 ---
 
-[!INCLUDE [mdag-edge-deprecation-notice](../../../includes/mdag-edge-deprecation-notice.md)]
-
 # Microsoft Defender Application Guard Extension
+
+[!INCLUDE [mdag-edge-deprecation-notice](../../../includes/mdag-edge-deprecation-notice.md)]
 
 [Microsoft Defender Application Guard Extension](https://www.microsoft.com/security/blog/2019/05/23/new-browser-extensions-for-integrating-microsofts-hardware-based-isolation/) is a web browser add-on available for [Chrome](https://chrome.google.com/webstore/detail/application-guard-extensi/mfjnknhkkiafjajicegabkbimfhplplj/) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/application-guard-extension/).
 
