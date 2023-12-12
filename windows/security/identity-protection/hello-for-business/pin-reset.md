@@ -225,7 +225,7 @@ For Microsoft Entra joined devices:
 1. Follow the instructions provided by the provisioning process
 1. When finished, unlock your desktop using your newly created PIN
 
-  > [!VIDEO https://learn-video.azurefd.net/vod/player?id=310f7665-6276-4ad8-b76e-429073c10972]
+  > [!VIDEO https://learn-video.azurefd.net/vod/player?id=310f7665-6276-4ad8-b76e-429073c10972 alt-text="Anmimation showing the PIN reset user experience from the lock screen."]
 
 For Microsoft Entra hybrid joined devices:
 
