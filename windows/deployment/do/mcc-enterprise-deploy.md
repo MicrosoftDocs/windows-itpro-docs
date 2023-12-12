@@ -13,7 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>	
-ms.date: 03/10/2023
+ms.date: 11/09/2023
 ---
 
 # Deploy your cache node
@@ -29,7 +29,7 @@ To deploy MCC to your server:
 1. [Create an MCC Node](#create-an-mcc-node-in-azure)
 1. [Edit Cache Node Information](#edit-cache-node-information)
 1. [Install MCC on a physical server or VM](#install-mcc-on-windows)
-1. [Verify proper functioning MCC server](#verify-proper-functioning-mcc-server)
+1. [Verify MCC functionality](#verify-mcc-server-functionality)
 1. [Review common Issues](#common-issues) if needed.
 
 For questions regarding these instructions contact [msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com)
@@ -194,12 +194,15 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
     > </br>
     > </br> [D] Do not run **[R] Run once** [S] Suspend [?] Help (default is "D"):
 
-1. Choose whether you would like to create a new virtual switch or select an existing one. Name your switch and select the Net Adapter to use for the switch. A computer restart will be required if you're creating a new switch.
+1. Choose whether you would like to create a new external virtual switch or select an existing external virtual switch.  
+   If creating a new external virtual switch, name your switch and be sure to choose a Local Area Connection (USB adapters work as well however, we do not recommend using Wi-Fi). A computer restart will be required if you're creating a new switch.
 
     > [!NOTE]
     > Restarting your computer after creating a switch is recommended. You'll notice network delays during installation if the computer has not been restarted.
 
-    If you restarted your computer after creating a switch, start from Step 2 above and skip step 5.
+    If you restarted your computer after creating a switch, start from step 2 above and skip to step 5.
+
+    If you opt to use an existing external switch, select the switch from the presented options. Local Area Connection (or USB) is preferable to Wi-Fi. 
 
    :::image type="content" source="./images/ent-mcc-script-new-switch.png" alt-text="Screenshot of the installer script running in PowerShell when a new switch is created." lightbox="./images/ent-mcc-script-new-switch.png":::
 
@@ -207,34 +210,46 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 
      :::image type="content" source="./images/ent-mcc-script-existing-switch.png" alt-text="Screenshot of the installer script running in PowerShell when using an existing switch." lightbox="./images/ent-mcc-script-existing-switch.png":::
 
-1. Decide whether you would like to use dynamic or static address for the Eflow VM
+1. Decide whether you would like to use dynamic or static address for the Eflow VM. If you choose to use a static IP, do not use the IP address of the server. It is a VM, and it will have its own IP.
 
     :::image type="content" source="./images/ent-mcc-script-dynamic-address.png" alt-text="Screenshot of the installer script running in PowerShell asking if you'd like to use a dynamic address." lightbox="./images/ent-mcc-script-dynamic-address.png":::
 
     > [!NOTE]
     > Choosing a dynamic IP address might assign a different IP address when the MCC restarts. A static IP address is recommended so you don't have to change this value in your management solution when MCC restarts.
 
-1. Choose where you would like to download, install, and store the virtual hard disk for EFLOW. You'll also be asked how much memory, storage, and how many cores you would like to allocate for the VM. For this example, we chose the default values for all prompts.
-
-1. Follow the Azure Device Login link and sign into the Azure portal.
-
-     :::image type="content" source="./images/ent-mcc-script-device-code.png" alt-text="Screenshot of the installer script running in PowerShell displaying the code and URL to use for the Azure portal." lightbox="./images/ent-mcc-script-device-code.png":::
-
-1. If this is your first MCC deployment, select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
+   The IP address you assign to the EFLOW VM should be within the same subnet as the host server (based on the subnet mask) and not used by any other machine on the network.
+   For example, for host configuration where the server IP Address is 192.168.1.202 and the subnet mask is 255.255.255.0, the static IP can be anything 192.168.1.* except 192.168.1.202.
+   <!-- Insert Image 1 & 2. Remove ent-mcc-script-dynamic-address.png image (it is replaced by image 2) -->
+    :::image type="content" source="./images/external-switch-1.jpg" alt-text="Screenshot of a sample output of ipconfig command showing example of subnet mask." lightbox="./images/external-switch-1.jpg":::
+    :::image type="content" source="./images/assigning-ip-2.png" alt-text="Screenshot of multiple installer questions about ipv4 address for Eflow." lightbox="./images/assigning-ip-2.png":::
+   
+   If you would like to use your own DNS server instead of Google DNS 8.8.8.8, select **n** and set your own DNS server IP.
+   :::image type="content" source="./images/use-custom-dns-3.png" alt-text="Screenshot of multiple installer questions about setting an alternate DNS server." lightbox="./images/use-custom-dns-3.png":::
+   If you use a dynamic IP address, the DHCP server will automatically configure the IP address and DNS settings. 
+ 
+1. Choose where you would like to download, install, and store the virtual hard disk for EFLOW. You'll also be asked how much memory, storage, and how many cores you would like to allocate for the VM. For this example, we chose the default values for download path, install path, and virtual hard disk path. 
+   <!-- Insert Image 4 -->
+   :::image type="content" source="./images/installation-info-4.png" alt-text="Screenshot of multiple installer questions about memory and storage for EFLOW." lightbox="./images/installation-info-4.png":::
+   For more information, see [Sizing Recommendations](mcc-enterprise-prerequisites.md#sizing-recommendations) for memory, virtual storage, and CPU cores. For this example we chose the recommend values for a Branch Office/Small Enterprise deployment.
+   <!-- Insert Image 5 -->
+   :::image type="content" source="./images/memory-storage-5.png" alt-text="Screenshot of multiple installer questions about memory and storage." lightbox="./images/memory-storage-5.png":::
+   <!-- Remove: If this is your first MCC deployment, select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
 
     1. You'll be shown a list of existing IoT Hubs in your Azure subscription. Enter the number corresponding to the IoT Hub to select it. **You'll likely have only 1 IoT Hub in your subscription, in which case you want to enter "1"**
 
        :::image type="content" source="./images/ent-mcc-script-select-hub.png" alt-text="Screenshot of the installer script running in PowerShell prompting you to select which IoT Hub to use." lightbox="./images/ent-mcc-script-select-hub.png":::
+       -->
+1.  When the installation is complete, you should see the following output (the values below will be your own)
        :::image type="content" source="./images/ent-mcc-script-complete.png" alt-text="Screenshot of the installer script displaying the completion summary in PowerShell." lightbox="./images/ent-mcc-script-complete.png":::
-
+       <!-- Insert Image 7 -->
+    :::image type="content" source="./images/installation-complete-7.png" alt-text="Screenshot of expected output when installation is complete." lightbox="./images/installation-complete-7.png":::
 
 1. Your MCC deployment is now complete.
+   If you don't see any errors, continue to the next section to validate your MCC deployment. Your VM will not appear in Hyper-V Manager as it is an EFLOW VM.
+   - After validating your MCC is properly functional, review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
+   - If you had errors during your deployment, see the [Common Issues](#common-issues) section in this article.
 
-    1. If you don't see any errors, continue to the next section to validate your MCC deployment. Your VM will not appear in Hyper-V Manager as it is an EFLOW VM.
-    1. After validating your MCC is properly functional, review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
-    1. If you had errors during your deployment, see the [Common Issues](#common-issues) section in this article.
-
-## Verify proper functioning MCC server
+## Verify MCC server functionality
 
 #### Verify client side
 
@@ -251,14 +266,20 @@ Connect to the EFLOW VM and check if MCC is properly running:
 
    :::image type="content" source="./images/ent-mcc-connect-eflowvm.png" alt-text="Screenshot of running connect-EflowVm, sudo -s, and iotedge list from PowerShell." lightbox="./images/ent-mcc-connect-eflowvm.png":::
 
-You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edgeHub but not MCC, try this command in a few minutes. The MCC container can take a few minutes to deploy.
+You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edgeHub but not MCC, try this command in a few minutes. The MCC container can take a few minutes to deploy. If iotedge list times out, you can run docker ps -a to list the running containers.
+If the 3 containers are still not running, run the following commands to check if DNS resolution is working correctly:
+```bash
+ping www.microsoft.com
+resolvectl query microsoft.com
+```
+See the [common issues](#common-issues) section for more information.
 
 #### Verify server side
 
-For a validation of properly functioning MCC, execute the following command in the EFLOW VM or any device in the network. Replace <CacheServerIP\> with the IP address of the cache server.
+To validate that MCC is properly functioning, execute the following command in the EFLOW VM or any device in the network. Replace <CacheServerIP\> with the IP address of the cache server.
 
 ```powershell
-wget [http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com]
+wget http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com
 ```
 
 A successful test result will display a status code of 200 along with additional information.
@@ -319,3 +340,69 @@ This command will provide the current status of the starting, stopping of a cont
 
 > [!NOTE]
 > You should consult the IoT Edge troubleshooting guide ([Common issues and resolutions for Azure IoT Edge](/azure/iot-edge/troubleshoot)) for any issues you may encounter configuring IoT Edge, but we've listed a few issues that we encountered during our internal validation.
+>
+
+### DNS needs to be configured
+
+Run the following IoT Edge install state check:
+
+```bash
+sudo iotedge check --verbose
+```
+
+If you see issues with ports 5671, 443, and 8883, your IoT Edge device needs to update the DNS for Docker.
+
+To configure the device to work with your DNS, use the following steps:
+
+1. Use `ifconfig` to find the appropriate NIC adapter name.
+
+    ```bash
+    ifconfig
+    ```
+
+1. Run `nmcli device show <network adapter name>` to show the DNS name for the ethernet adapter. For example, to show DNS information for **eno1**:
+
+    ```bash
+    nmcli device show eno1 
+    ```
+
+    :::image type="content" source="images/mcc-isp-nmcli.png" alt-text="Screenshot of a sample output of nmcli command to show network adapter information." lightbox="./images/mcc-isp-nmcli.png":::
+
+1. Open or create the Docker configuration file used to configure the DNS server.
+
+    ```bash
+    sudo nano /etc/docker/daemon.json
+    ```
+
+1. Paste the following string into the **daemon.json** file, and include the appropriate DNS server address. For example, in the previous screenshot, `IP4.DNS[1]` is `10.50.10.50`.
+
+    ```bash
+    { "dns": ["x.x.x.x"]}
+    ```
+
+1. Save the changes to daemon.json. If you need to change permissions on this file, use the following command:
+
+    ```bash
+    sudo chmod 555 /etc/docker/daemon.json
+    ```
+
+1. Restart Docker to pick up the new DNS setting. Then restart IoT Edge.
+
+    ```bash
+    sudo systemctl restart docker
+    sudo systemctl daemon-reload
+    sudo restart IoTEdge
+    ```
+
+### Resolve DNS issues
+Follow these steps if you see a DNS error when trying to resolve hostnames during the provisioning or download of container:
+Run ``` Get-EflowVmEndpoint ``` to get interface name
+
+Once you get the name 
+```bash
+Set-EflowVmDNSServers -vendpointName "interface name from above" -dnsServers @("DNS_IP_ADDRESS")
+Stop-EflowVm
+Start-EflowVm
+```
+
+

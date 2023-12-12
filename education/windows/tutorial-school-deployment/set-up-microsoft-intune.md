@@ -1,7 +1,7 @@
 ---
 title: Set up device management
 description: Learn how to configure the Intune service and set up the environment for education.
-ms.date: 08/31/2022
+ms.date: 11/09/2023
 ms.topic: tutorial
 appliesto:
 ---
@@ -74,7 +74,7 @@ To disable Windows Hello for Business at the tenant level:
 
 For more information how to enable Windows Hello for Business on specific devices, see [Create a Windows Hello for Business policy][MEM-4].
 
-________________________________________________________
+---
 
 ## Next steps
 

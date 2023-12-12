@@ -1,14 +1,10 @@
 ---
 title: Manage multi-user and guest Windows devices
 description: options to optimize Windows devices used in shared scenarios, such touchdown spaces in an enterprise, temporary customer use in retail or shared devices in a school.
-ms.date: 08/18/2023
-ms.prod: windows-client
-ms.technology: itpro-configure
+ms.date: 11/08/2023
 ms.topic: concept-article
 author: paolomatarazzo
 ms.author: paoloma
-manager: aaroncz
-ms.collection: tier2
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
@@ -61,12 +57,10 @@ Shared devices require special considerations regarding power settings. Shared P
 
 - To learn how to configure Shared PC, see [Set up a shared or guest Windows device](set-up-shared-or-guest-pc.md).
 - For a list of settings configured by the different options offered by Shared PC, see the [Shared PC technical reference](shared-pc-technical.md).
-- For a list of settings exposed by the SharedPC configuration service provider, see [SharedPC CSP][WIN-3].
-- For a list of settings exposed by Windows Configuration Designer, see [SharedPC CSP][WIN-4].
+- For a list of settings exposed by the SharedPC configuration service provider, see [SharedPC CSP][WIN-1].
+- For a list of settings exposed by Windows Configuration Designer, see [SharedPC CSP][WIN-2].
 
------------
+<!--links-->
 
-[WIN-1]: /windows/configuration/provisioning-packages/provisioning-create-package
-[WIN-2]: /windows/configuration/provisioning-packages/provisioning-apply-package
-[WIN-3]: /windows/client-management/mdm/sharedpc-csp
-[WIN-4]: /windows/configuration/wcd/wcd-sharedpc
+[WIN-1]: /windows/client-management/mdm/sharedpc-csp
+[WIN-2]: /windows/configuration/wcd/wcd-sharedpc

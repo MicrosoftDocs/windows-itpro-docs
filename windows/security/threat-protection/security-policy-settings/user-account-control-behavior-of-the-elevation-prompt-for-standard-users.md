@@ -5,7 +5,7 @@ ms.author: vinpa
 ms.prod: windows-client
 author: vinaypamnani-msft
 manager: aaroncz
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 01/18/2023
 ms.technology: itpro-security
 ---

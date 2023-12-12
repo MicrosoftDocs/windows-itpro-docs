@@ -1,8 +1,8 @@
 ---
-title: Generate security audits 
+title: Generate security audits
 description: Describes the best practices, location, values, policy management, and security considerations for the Generate security audits security policy setting.
 ms.assetid: c0e1cd80-840e-4c74-917c-5c2349de885f
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -53,13 +53,13 @@ The following table lists the actual and effective default policy values for the
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Local Service<br/>Network Service| 
-| Stand-Alone Server Default Settings | Local Service<br/>Network Service| 
-| Domain Controller Effective Default Settings | Local Service<br/>Network Service| 
-| Member Server Effective Default Settings | Local Service<br/>Network Service| 
-| Client Computer Effective Default Settings | Local Service<br/>Network Service| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Local Service<br/>Network Service|
+| Stand-Alone Server Default Settings | Local Service<br/>Network Service|
+| Domain Controller Effective Default Settings | Local Service<br/>Network Service|
+| Member Server Effective Default Settings | Local Service<br/>Network Service|
+| Client Computer Effective Default Settings | Local Service<br/>Network Service|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

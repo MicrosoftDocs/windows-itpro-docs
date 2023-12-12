@@ -15,6 +15,7 @@ ms.topic: reference
 # Windows 10, version 1709 and later and Windows 11 optional diagnostic data
 
 Applies to:
+- Windows 11, version 23H2
 - Windows 11, version 22H2
 - Windows 11, version 21H2
 - Windows 10, version 22H2

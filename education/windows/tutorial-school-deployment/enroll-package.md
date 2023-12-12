@@ -1,7 +1,7 @@
 ---
 title: Enrollment of Windows devices with provisioning packages
 description: Learn about how to enroll Windows devices with provisioning packages using SUSPCs and Windows Configuration Designer.
-ms.date: 08/31/2022
+ms.date: 11/09/2023
 ms.topic: tutorial
 ---
 
@@ -49,7 +49,8 @@ All settings defined in the package and in Intune will be applied to the device,
 
 :::image type="content" source="./images/win11-oobe-ppkg.gif" alt-text="Windows 11 OOBE - enrollment with provisioning package animation." border="false":::
 
-________________________________________________________
+---
+
 ## Next steps
 
 With the devices joined to Microsoft Entra tenant and managed by Intune, you can use Intune to maintain them and report on their status.

@@ -1,8 +1,8 @@
 ---
-title: Audit logon events 
+title: Audit logon events
 description: Determines whether to audit each instance of a user logging on to or logging off from a device.
 ms.assetid: 78B5AFCB-0BBD-4C38-9FE9-6B4571B94A35
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,10 +12,10 @@ ms.localizationpriority: low
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: 
+ms.collection:
   - highpri
   - tier3
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/06/2021
 ms.technology: itpro-security
 ---
@@ -41,11 +41,11 @@ You can configure this security setting by opening the appropriate policy under 
 | - | - |
 | 4624          | A user successfully logged on to a computer. For information about the type of logon, see the Logon Types table below.                                                                                          |
 | 4625          | Logon failure. A logon attempt was made with an unknown user name or a known user name with a bad password.                                                                                                     |
-| 4634          | The logoff process was completed for a user.                                                                                                                                                                    |                                                                                                                               
+| 4634          | The logoff process was completed for a user.                                                                                                                                                                    |
 | 4647          | A user initiated the logoff process.                                                                                                                                                                            |
 | 4648          | A user successfully logged on to a computer using explicit credentials while already logged on as a different user.                                                                                             |
 | 4779          | A user disconnected a terminal server session without logging off.                                                                                                                                              |
- 
+
 
 When event 4624 (Legacy Windows Event ID 528) is logged, a logon type is also listed in the event log. The following table describes each logon type.
 
@@ -60,9 +60,9 @@ When event 4624 (Legacy Windows Event ID 528) is logged, a logon type is also li
 | 9          | NewCredentials    | A caller cloned its current token and specified new credentials for outbound connections. The new logon session has the same local identity, but uses different credentials for other network connections.|
 | 10         | RemoteInteractive | A user logged on to this computer remotely using Terminal Services or Remote Desktop.|
 | 11         | CachedInteractive | A user logged on to this computer with network credentials that were stored locally on the computer. The domain controller was not contacted to verify the credentials.|
- 
+
 ## Related topics
 
 - [Basic security audit policy settings](basic-security-audit-policy-settings.md)
- 
- 
+
+
