@@ -8054,6 +8054,16 @@
       "source_path": "windows/security/security-foundations/msft-security-dev-lifecycle.md",
       "redirect_url": "/compliance/assurance/assurance-microsoft-security-development-lifecycle",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-feature-pin-reset.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/pin-reset",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-adequate-domain-controllers.md",
+      "redirect_url": "/windows-server/administration/performance-tuning/role/active-directory-server/capacity-planning-for-active-directory-domain-services",
+      "redirect_document_id": false
     }
   ]
 }
