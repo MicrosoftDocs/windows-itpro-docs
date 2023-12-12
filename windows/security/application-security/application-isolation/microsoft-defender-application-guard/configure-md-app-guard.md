@@ -2,9 +2,11 @@
 title: Configure the Group Policy settings for Microsoft Defender Application Guard
 description: Learn about the available Group Policy settings for Microsoft Defender Application Guard.
 ms.localizationpriority: medium
-ms.date: 07/11/2023
+ms.date: 12/12/2023
 ms.topic: how-to
 ---
+
+[!INCLUDE [mdag-edge-deprecation-notice](../../../includes/mdag-edge-deprecation-notice.md)]
 
 # Configure Microsoft Defender Application Guard policy settings
 

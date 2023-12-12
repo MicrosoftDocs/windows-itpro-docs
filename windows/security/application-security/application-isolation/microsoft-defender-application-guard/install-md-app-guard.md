@@ -1,9 +1,11 @@
 ---
 title: Enable hardware-based isolation for Microsoft Edge
 description: Learn about the Microsoft Defender Application Guard modes (Standalone or Enterprise-managed), and how to install Application Guard in your enterprise.
-ms.date: 07/11/2023
+ms.date: 12/12/2023
 ms.topic: how-to
 ---
+
+[!INCLUDE [mdag-edge-deprecation-notice](../../../includes/mdag-edge-deprecation-notice.md)]
 
 # Prepare to install Microsoft Defender Application Guard
 
