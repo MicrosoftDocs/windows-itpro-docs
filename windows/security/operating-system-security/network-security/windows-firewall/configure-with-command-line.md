@@ -1,7 +1,7 @@
 ---
 title: Manage Windows Firewall with the command line
 description: Learn how to manage Windows Firewall from the command line. This guide provides examples how to manage Windows Firewall with PowerShell and Netsh. 
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/21/2023
 ---
 

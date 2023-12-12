@@ -94,8 +94,6 @@ items:
         href: hello-cert-trust-validate-deploy-mfa.md
       - name: Configure Windows Hello for Business policy settings
         href: hello-cert-trust-policy-settings.md
-  - name: Planning for Domain Controller load
-    href: hello-adequate-domain-controllers.md
 - name: How-to Guides
   items:
   - name: Prepare people to use Windows Hello
@@ -107,7 +105,7 @@ items:
 - name: Windows Hello for Business features
   items:
   - name: PIN reset
-    href: hello-feature-pin-reset.md
+    href: pin-reset.md
   - name: Windows Hello Enhanced Security Sign-in (ESS) 🔗
     href: /windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security
   - name: Dual enrollment
