@@ -167,10 +167,11 @@ If your organization doesn't have on-premises resources, write **Cloud Only** in
 If your organization is federated with Azure or uses any service, such as AD Connect, Office365 or OneDrive, or your users access cloud and on-premises resources, write **Hybrid** in box **1a** on your planning worksheet.
 
 If your organization doesn't have cloud resources, write **On-Premises** in box **1a** on your planning worksheet.
-> [!NOTE]
->  * Main use case of On-Premises deployment is for "Enhanced Security Administrative Environments" also known as "Red Forests". 
->  * Migration from on-premise to hybrid deployment will require redeployment.
 
+>[!NOTE]
+>
+>- Main use case of On-Premises deployment is for "Enhanced Security Administrative Environments" also known as "Red Forests"
+>- Migration from on-premise to hybrid deployment will require redeployment
 
 ### Trust type
 
@@ -277,7 +278,7 @@ Write **1703 or later** in box **3a** on your planning worksheet if any of the f
 
 ### Active Directory
 
-The Active Directory portion of the planning guide should be complete.  Most of the conditions are baseline prerequisites except for your domain controllers.  The domain controllers used in your deployment are decided by the chosen trust type. 
+The Active Directory portion of the planning guide should be complete.  Most of the conditions are baseline prerequisites except for your domain controllers.  The domain controllers used in your deployment are decided by the chosen trust type.
 
 Review the trust type portion of this section if box **4d** on your planning worksheet remains empty.
 
@@ -289,7 +290,7 @@ If box **1a** on your planning worksheet reads **cloud only**, ignore the public
 
 If box **1b** on your planning worksheet reads **key trust**, write **N/A** in box **5b** on your planning worksheet. Key trust doesn't require any change in public key infrastructure, skip this part and go to **Cloud** section.
 
-The registration authority only relates to certificate trust deployments and the management used for domain and nondomain joined devices.  Microsoft Entra hybrid joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Microsoft Entra hybrid joined devices and Microsoft Entra joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates. 
+The registration authority only relates to certificate trust deployments and the management used for domain and nondomain joined devices.  Microsoft Entra hybrid joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Microsoft Entra hybrid joined devices and Microsoft Entra joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates.
 
 If box **2a** reads **GP** and box **2b** reads **modern management**, write **AD FS RA and NDES** in box **5b** on your planning worksheet.  In box **5c**, write the following certificate templates names and issuances:
 
@@ -305,8 +306,8 @@ If box **2a** reads **GP** and box **2b** reads **N/A**, write **AD FS RA** in b
 
 | Certificate Template Name | Issued To |
 | --- | --- |
-| Exchange Enrollment Agent | AD FS RA | 
-| Web Server | AD FS RA | 
+| Exchange Enrollment Agent | AD FS RA |
+| Web Server | AD FS RA |
 
 If box **2a** or **2b** reads modern management, write **NDES** in box **5b** and write the following certificate template names and issuances in box 5c on your planning worksheet.
 

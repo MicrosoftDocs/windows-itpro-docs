@@ -16,11 +16,11 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 List of provisioning flows:
 
-- [Microsoft Entra joined provisioning in a managed environment](#azure-ad-joined-provisioning-in-a-managed-environment)
-- [Microsoft Entra joined provisioning in a federated environment](#azure-ad-joined-provisioning-in-a-federated-environment)
-- [Microsoft Entra hybrid joined provisioning in a cloud Kerberos trust deployment in a managed environment](#hybrid-azure-ad-joined-provisioning-in-a-cloud-kerberos-trust-deployment-in-a-managed-environment)
-- [Microsoft Entra hybrid joined provisioning in a key trust deployment in a managed environment](#hybrid-azure-ad-joined-provisioning-in-a-key-trust-deployment-in-a-managed-environment)
-- [Microsoft Entra hybrid joined provisioning in a synchronous certificate trust deployment in a federated environment](#hybrid-azure-ad-joined-provisioning-in-a-synchronous-certificate-trust-deployment-in-a-federated-environment)
+- [Microsoft Entra joined provisioning in a managed environment](#microsoft-entra-joined-provisioning-in-a-managed-environment)
+- [Microsoft Entra joined provisioning in a federated environment](#microsoft-entra-joined-provisioning-in-a-federated-environment)
+- [Microsoft Entra hybrid joined provisioning in a cloud Kerberos trust deployment in a managed environment](#microsoft-entra-hybrid-joined-provisioning-in-a-cloud-kerberos-trust-deployment-in-a-managed-environment)
+- [Microsoft Entra hybrid joined provisioning in a key trust deployment in a managed environment](#microsoft-entra-hybrid-joined-provisioning-in-a-key-trust-deployment-in-a-managed-environment)
+- [Microsoft Entra hybrid joined provisioning in a synchronous certificate trust deployment in a federated environment](#microsoft-entra-hybrid-joined-provisioning-in-a-synchronous-certificate-trust-deployment-in-a-federated-environment)
 - [Domain joined provisioning in an On-premises key trust deployment](#domain-joined-provisioning-in-an-on-premises-key-trust-deployment)
 - [Domain joined provisioning in an On-premises certificate trust deployment](#domain-joined-provisioning-in-an-on-premises-certificate-trust-deployment)
 
@@ -108,6 +108,7 @@ List of provisioning flows:
 |C | The application sends the EDRS token, ukpub, attestation data, and device information to the Enterprise DRS for user key registration.  Enterprise DRS validates the MFA claim remains current.  On successful validation, the Enterprise DRS locates the user's object in Active Directory, writes the key information to a multi-values attribute. The key information includes a reference to the device from which it was created. The Enterprise DRS returns a key ID to the application, which represents the end of user key registration.|
 
 ## Domain joined provisioning in an On-premises Certificate Trust deployment
+
 ![Domain joined provisioning in an On-premises Certificate Trust deployment.](images/howitworks/prov-onprem-certtrust.png)
 [Full size image](images/howitworks/prov-onprem-certtrust.png)
 
