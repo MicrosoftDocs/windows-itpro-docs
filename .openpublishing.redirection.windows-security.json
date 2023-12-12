@@ -8049,6 +8049,11 @@
       "source_path": "windows/security/identity-protection/hello-for-business/hello-deployment-rdp-certs.md",
       "redirect_url": "/windows/security/identity-protection/hello-for-business/rdp-sign-in",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/security-foundations/msft-security-dev-lifecycle.md",
+      "redirect_url": "/compliance/assurance/assurance-microsoft-security-development-lifecycle",
+      "redirect_document_id": false
     }
   ]
 }

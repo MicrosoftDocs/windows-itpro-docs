@@ -1,7 +1,7 @@
 ---
 title: Evaluate Virtual Smart Card Security
 description: Learn about the security characteristics and considerations when deploying TPM virtual smart cards.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/06/2023
 ---
 
