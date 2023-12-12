@@ -6,4 +6,4 @@ ms.topic: include
 ---
 
 > [!WARNING]
-> Microsoft Defender Application Guard for Edge is being deprecated and is no longer being updated. This deprecation also includes the [Windows Isolated App Launcher APIs](/win32/api/isolatedapplauncher/) that are used for Microsoft Defender Application Guard for Edge. You are still using a secure enterprise browser by using Microsoft Edge for Business. Download the [Microsoft Edge For Business Security Whitepaper](https://edgestatic.azureedge.net/shared/cms/pdfs/Microsoft_Edge_Security_Whitepaper_v2.pdf) to learn more.
+> Microsoft Defender Application Guard for Edge is being deprecated and is no longer being updated. This deprecation also includes the [Windows Isolated App Launcher APIs](/windows/win32/api/isolatedapplauncher/) that are used for Microsoft Defender Application Guard for Edge. You are still using a secure enterprise browser by using Microsoft Edge for Business. Download the [Microsoft Edge For Business Security Whitepaper](https://edgestatic.azureedge.net/shared/cms/pdfs/Microsoft_Edge_Security_Whitepaper_v2.pdf) to learn more.
