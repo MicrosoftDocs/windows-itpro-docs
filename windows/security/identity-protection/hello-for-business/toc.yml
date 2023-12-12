@@ -94,8 +94,6 @@ items:
         href: hello-cert-trust-validate-deploy-mfa.md
       - name: Configure Windows Hello for Business policy settings
         href: hello-cert-trust-policy-settings.md
-  - name: Planning for Domain Controller load
-    href: hello-adequate-domain-controllers.md
 - name: How-to Guides
   items:
   - name: Prepare people to use Windows Hello
