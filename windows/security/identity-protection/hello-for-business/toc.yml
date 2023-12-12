@@ -107,7 +107,7 @@ items:
 - name: Windows Hello for Business features
   items:
   - name: PIN reset
-    href: hello-feature-pin-reset.md
+    href: pin-reset.md
   - name: Windows Hello Enhanced Security Sign-in (ESS) 🔗
     href: /windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security
   - name: Dual enrollment

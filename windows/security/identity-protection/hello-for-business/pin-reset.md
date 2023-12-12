@@ -1,39 +1,39 @@
 ---
 title: PIN reset
-description: Learn how Microsoft PIN reset service enables your users to recover a forgotten Windows Hello for Business PIN.
-ms.date: 08/15/2023
+description: Learn how Microsoft PIN reset service enables your users to recover a forgotten Windows Hello for Business PIN, and how to configure it.
+ms.date: 12/12/2023
 ms.topic: how-to
 ---
 
 # PIN reset
 
-This article describes how *Microsoft PIN reset service* enables your users to recover a forgotten Windows Hello for Business PIN.
+This article describes how *Microsoft PIN reset service* enables your users to recover a forgotten Windows Hello for Business PIN, and how to configure it.
 
 ## Overview
 
 Windows Hello for Business provides the capability for users to reset forgotten PINs. There are two forms of PIN reset:
 
-- *Destructive PIN reset*: with this option, the user's existing PIN and underlying credentials, including any keys or certificates added to their Windows Hello container, are deleted from the client and a new sign in key and PIN are provisioned. Destructive PIN reset is the default option, and doesn't require configuration
-- *Non-destructive PIN reset*: with this option, the user's Windows Hello for Business container and keys are preserved, but the user's PIN that they use to authorize key usage is changed. For non-destructive PIN reset, you must deploy the *Microsoft PIN reset service* and configure your clients' policy to enable the *PIN recovery* feature
+- *Destructive PIN reset*: the user's existing PIN and underlying credentials, including any keys or certificates added to their Windows Hello container, are deleted from the client and a new sign in key and PIN are provisioned. Destructive PIN reset is the default option, and doesn't require configuration
+- *Non-destructive PIN reset*: the user's Windows Hello for Business container and keys are preserved, but the user's PIN that they use to authorize key usage is changed. For nondestructive PIN reset, you must deploy the *Microsoft PIN reset service* and configure your clients' policy to enable the *PIN recovery* feature
 
-## How non-destructive PIN reset works
+## How nondestructive PIN reset works
 
 **Requirements:**
 
 - Hybrid or cloud-only Windows Hello for Business deployments
 - Windows Enterprise, Education and Pro editions. There's no licensing requirement for this feature
 
-When non-destructive PIN reset is enabled on a client, a *256-bit AES* key is generated locally. The key is added to a user's Windows Hello for Business container and keys as the *PIN reset protector*. This PIN reset protector is encrypted using a public key retrieved from the Microsoft PIN reset service and then stored on the client for later use during PIN reset. After a user initiates a PIN reset, completes authentication and multi-factor authentication to Microsoft Entra ID, the encrypted PIN reset protector is sent to the Microsoft PIN reset service, decrypted, and returned to the client. The decrypted PIN reset protector is used to change the PIN used to authorize Windows Hello for Business keys and it's then cleared from memory.
+When nondestructive PIN reset is enabled on a client, a *256-bit AES* key is generated locally. The key is added to a user's Windows Hello for Business container and keys as the *PIN reset protector*. This PIN reset protector is encrypted using a public key retrieved from the Microsoft PIN reset service and then stored on the client for later use during PIN reset. After a user initiates a PIN reset, completes authentication and multifactor authentication to Microsoft Entra ID, the encrypted PIN reset protector is sent to the Microsoft PIN reset service, decrypted, and returned to the client. The decrypted PIN reset protector is used to change the PIN used to authorize Windows Hello for Business keys, and it's then cleared from memory.
 
 Using Group Policy, Microsoft Intune or a compatible MDM solution, you can configure Windows devices to securely use the Microsoft PIN reset service, which enables users to reset their forgotten PIN without requiring re-enrollment.
 
-The following table compares destructive and non-destructive PIN reset:
+The following table compares destructive and nondestructive PIN reset:
 
-|Category|Destructive PIN reset|Non-Destructive PIN reset|
+|Category|Destructive PIN reset|Nondestructive PIN reset|
 |--- |--- |--- |
-|**Functionality**|The user's existing PIN and underlying credentials, including any keys or certificates added to their Windows Hello container, are deleted from the client and a new sign in key and PIN are provisioned.|You must deploy the Microsoft PIN reset service and client policy to enable the PIN recovery feature. During a non-destructive PIN reset, the user's Windows Hello for Business container and keys are preserved, but the user's PIN that they use to authorize key usage is changed.|
+|**Functionality**|The user's existing PIN and underlying credentials, including any keys or certificates added to their Windows Hello container, are deleted from the client and a new sign in key and PIN are provisioned.|You must deploy the Microsoft PIN reset service and client policy to enable the PIN recovery feature. During a nondestructive PIN reset, the user's Windows Hello for Business container and keys are preserved, but the user's PIN that they use to authorize key usage is changed.|
 |**Microsoft Entra joined**|Cert Trust, Key Trust, and cloud Kerberos trust|Cert Trust, Key Trust, and cloud Kerberos trust|
-|**Microsoft Entra hybrid joined**|Cert Trust and cloud Kerberos trust for both settings and above the lock support destructive PIN reset. Key Trust doesn't support this option from above the lock screen. This is due to the sync delay between when a user provisions their Windows Hello for Business credential and being able to use it for sign-in. It does support from the settings page and the users must have a corporate network connectivity to the DC. |Cert Trust, Key Trust, and cloud Kerberos trust for both settings and above the lock support non-destructive PIN reset. No network connection is required for the DC.|
+|**Microsoft Entra hybrid joined**|Cert Trust and cloud Kerberos trust for both settings and above the lock support destructive PIN reset. Key Trust doesn't support this option from above the lock screen. This is due to the sync delay between when a user provisions their Windows Hello for Business credential and being able to use it for sign-in. It does support from the settings page and the users must have a corporate network connectivity to the DC. |Cert Trust, Key Trust, and cloud Kerberos trust for both settings and above the lock support nondestructive PIN reset. No network connection is required for the DC.|
 |**On Premises**|If AD FS is used for on premises deployments, users must have a corporate network connectivity to federation services. |The PIN reset service relies on Microsoft Entra identities, so it's only available for Microsoft Entra hybrid joined and Microsoft Entra joined devices.|
 |**Additional configuration required**|Supported by default and doesn't require configuration|Deploy the Microsoft PIN reset service and client policy to enable the PIN recovery feature.|
 |**MSA/Enterprise**|MSA and Enterprise|Enterprise only.|
@@ -42,7 +42,7 @@ The following table compares destructive and non-destructive PIN reset:
 
 ## Enable the Microsoft PIN Reset Service in your Microsoft Entra tenant
 
-Before you can use non-destructive PIN reset, you must register two applications in your Microsoft Entra tenant:
+Before you can use nondestructive PIN reset, you must register two applications in your Microsoft Entra tenant:
 
 - Microsoft Pin Reset Service Production
 - Microsoft Pin Reset Client Production
@@ -54,7 +54,7 @@ To register the applications, follow these steps:
   1. Go to the [Microsoft PIN Reset Service Production website][APP-1], and sign in using a *Global Administrator* account you use to manage your Microsoft Entra tenant. Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to give consent to the application to access your organization
   :::column-end:::
   :::column span="1":::
-    :::image type="content" alt-text="Screenshot showing the PIN reset service permissions page." source="images/pinreset/pin-reset-service-prompt.png" lightbox="images/pinreset/pin-reset-service-prompt.png" border="true":::
+    :::image type="content" alt-text="Screenshot showing the PIN reset service permissions page." source="images/pin-reset/pin-reset-service-prompt.png" lightbox="images/pin-reset/pin-reset-service-prompt.png" border="true":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -62,7 +62,7 @@ To register the applications, follow these steps:
   2. Go to the [Microsoft PIN Reset Client Production website][APP-2], and sign in using a *Global Administrator* account you use to manage your Microsoft Entra tenant. Review the permissions requested by the *Microsoft Pin Reset Client Production* application, and select **Next**.
   :::column-end:::
   :::column span="1":::
-    :::image type="content" alt-text="Screenshot showing the PIN reset client permissions page." source="images/pinreset/pin-reset-client-prompt.png" lightbox="images/pinreset/pin-reset-client-prompt.png" border="true":::
+    :::image type="content" alt-text="Screenshot showing the PIN reset client permissions page." source="images/pin-reset/pin-reset-client-prompt.png" lightbox="images/pin-reset/pin-reset-client-prompt.png" border="true":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -72,7 +72,7 @@ To register the applications, follow these steps:
   >After acceptance, the redirect page will show a blank page. This is a known behavior.
   :::column-end:::
   :::column span="1":::
-    :::image type="content" alt-text="Screenshot showing the PIN reset service permissions final page." source="images/pinreset/pin-reset-service-prompt-2.png" lightbox="images/pinreset/pin-reset-service-prompt-2.png" border="true":::
+    :::image type="content" alt-text="Screenshot showing the PIN reset service permissions final page." source="images/pin-reset/pin-reset-service-prompt-2.png" lightbox="images/pin-reset/pin-reset-service-prompt-2.png" border="true":::
   :::column-end:::
 :::row-end:::
 
@@ -81,7 +81,7 @@ To register the applications, follow these steps:
 1. Sign in to the [Microsoft Entra Manager admin center](https://entra.microsoft.com)
 1. Select **Microsoft Entra ID > Applications > Enterprise applications**
 1. Search by application name "Microsoft PIN" and verify that both **Microsoft Pin Reset Service Production** and **Microsoft Pin Reset Client Production** are in the list
-   :::image type="content" alt-text="PIN reset service permissions page." source="images/pinreset/pin-reset-applications.png" lightbox="images/pinreset/pin-reset-applications-expanded.png":::
+   :::image type="content" alt-text="PIN reset service permissions page." source="images/pin-reset/pin-reset-applications.png" lightbox="images/pin-reset/pin-reset-applications-expanded.png":::
 
 ## Enable PIN recovery on the clients
 
@@ -136,7 +136,7 @@ GET https://graph.microsoft.com/v1.0/organization?$select=id
 
 #### Confirm that PIN Recovery policy is enforced on the devices
 
-The _PIN reset_ configuration can be viewed by running [**dsregcmd /status**](/azure/active-directory/devices/troubleshoot-device-dsregcmd) from the command line. This state can be found under the output in the user state section as the **CanReset** line item. If **CanReset** reports as DestructiveOnly, then only destructive PIN reset is enabled. If **CanReset** reports DestructiveAndNonDestructive, then non-destructive PIN reset is enabled.
+The _PIN reset_ configuration can be viewed by running [**dsregcmd /status**](/azure/active-directory/devices/troubleshoot-device-dsregcmd) from the command line. This state can be found under the output in the user state section as the **CanReset** line item. If **CanReset** reports as DestructiveOnly, then only destructive PIN reset is enabled. If **CanReset** reports DestructiveAndNonDestructive, then nondestructive PIN reset is enabled.
 
 **Sample User state Output for Destructive PIN Reset**
 
@@ -182,7 +182,7 @@ The _PIN reset_ configuration can be viewed by running [**dsregcmd /status**](/a
 
 **Applies to:** Microsoft Entra joined devices
 
-PIN reset on Microsoft Entra joined devices uses a flow called *web sign-in* to authenticate users in the lock screen. Web sign-in only allows navigation to specific domains. If web sign-in attempts to navigate to a domain that isn't allowed, it displays a page with the error message: *"We can't open that page right now"*.\
+PIN reset on Microsoft Entra joined devices uses a flow called *web sign-in* to authenticate users in the lock screen. Web sign-in only allows navigation to specific domains. If web sign-in attempts to navigate to a domain that isn't allowed, it displays a page with the error message: *We can't open that page right now*.\
 If you have a federated environment and authentication is handled using AD FS or a third-party identity provider, then you must configure your devices with a policy to allow a list of domains that can be reached during PIN reset flows. When set, it ensures that authentication pages from that identity provider can be used during Microsoft Entra joined PIN reset.
 
 [!INCLUDE [intune-settings-catalog-1](../../../../includes/configure/intune-settings-catalog-1.md)]
@@ -202,9 +202,9 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 > [!NOTE]
 > For Azure Government, there is a known issue with PIN reset on Microsoft Entra joined devices failing. When the user attempts to launch PIN reset, the PIN reset UI shows an error page that says, *"We can't open that page right now"*. The ConfigureWebSignInAllowedUrls policy can be used to work around this issue. If you are experiencing this problem and you are using Azure US Government cloud, set **login.microsoftonline.us** as the value for the ConfigureWebSignInAllowedUrls policy.
 
-## Use PIN reset
+## User experience
 
-Destructive and non-destructive PIN reset scenarios use the same steps for initiating a PIN reset. If users have forgotten their PINs, but have an alternate sign-in method, they can navigate to Sign-in options in *Settings* and initiate a PIN reset from the PIN options. If users don't have an alternate way to sign into their devices, PIN reset can also be initiated from the Windows lock screen with the *PIN credential provider*. Users must authenticate and complete multi-factor authentication to reset their PIN. After PIN reset is complete, users can sign in using their new PIN.
+Destructive and nondestructive PIN reset scenarios use the same steps for initiating a PIN reset. If users have forgotten their PINs, but have an alternate sign-in method, they can navigate to Sign-in options in *Settings* and initiate a PIN reset from the PIN options. If users don't have an alternate way to sign into their devices, PIN reset can also be initiated from the Windows lock screen with the *PIN credential provider*. Users must authenticate and complete multifactor authentication to reset their PIN. After PIN reset is complete, users can sign in using their new PIN.
 
 >[!IMPORTANT]
 >For Microsoft Entra hybrid joined devices, users must have corporate network connectivity to domain controllers to complete destructive PIN reset. If AD FS is being used for certificate trust or for on-premises only deployments, users must also have corporate network connectivity to federation services to reset their PIN.
@@ -225,7 +225,7 @@ For Microsoft Entra joined devices:
 1. Follow the instructions provided by the provisioning process
 1. When finished, unlock your desktop using your newly created PIN
 
-:::image type="content" alt-text="Animation showing the PIN reset experience from the lock screen." source="images/pinreset/pin-reset.gif" border="false":::
+  > [!VIDEO https://learn-video.azurefd.net/vod/player?id=310f7665-6276-4ad8-b76e-429073c10972]
 
 For Microsoft Entra hybrid joined devices:
 
