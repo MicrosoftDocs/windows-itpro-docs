@@ -1,7 +1,7 @@
 ---
 title: Virtual Smart Card Overview
 description: Learn about virtual smart card technology for Windows.
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 11/06/2023
 ---
 

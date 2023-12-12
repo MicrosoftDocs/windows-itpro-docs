@@ -2,7 +2,7 @@
 title: VPN authentication options 
 description: Learn about the EAP authentication methods that Windows supports in VPNs to provide secure authentication using username/password and certificate-based methods.
 ms.date: 08/03/2023
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # VPN authentication options
