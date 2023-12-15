@@ -84,7 +84,7 @@ Once the prerequisites are met, deploying Windows Hello for Business with a clou
 > * Provision Windows Hello for Business on Windows clients
 
 > [!div class="nextstepaction"]
-> [Next: configure and provision Windows Hello for Business >](hybrid-clud-kerberos-trust-enroll.md)
+> [Next: configure and provision Windows Hello for Business >](hybrid-cloud-kerberos-trust-enroll.md)
 
 <!--Links-->
 

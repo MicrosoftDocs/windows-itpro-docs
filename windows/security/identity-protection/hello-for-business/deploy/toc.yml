@@ -10,10 +10,10 @@ items:
   - name: Cloud Kerberos trust deployment
     items:
       - name: Overview
-        href: hybrid-clud-kerberos-trust.md
+        href: hybrid-cloud-kerberos-trust.md
         displayName: cloud Kerberos trust
       - name: Configure and provision Windows Hello for Business
-        href: hybrid-clud-kerberos-trust-enroll.md
+        href: hybrid-cloud-kerberos-trust-enroll.md
         displayName: cloud Kerberos trust
   - name: Key trust deployment
     items: 
@@ -54,7 +54,7 @@ items:
   - name: Key trust deployment
     items: 
     - name: Overview
-      href: hybrid-clud-kerberos-trust.md
+      href: hybrid-cloud-kerberos-trust.md
     - name: Configure and validate the PKI
       href: on-premises-key-trust-pki.md
     - name: Prepare and deploy Active Directory Federation Services (AD FS)

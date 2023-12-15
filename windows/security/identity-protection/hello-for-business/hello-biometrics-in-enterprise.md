@@ -80,7 +80,7 @@ To use Iris authentication, you'll need a [HoloLens 2 device](/hololens/). All H
 
 ## Related topics
 
-- [Windows Hello for Business](hello-identity-verification.md)
+- [Windows Hello for Business](requirements.md)
 - [How Windows Hello for Business works](hello-how-it-works.md)
 - [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)

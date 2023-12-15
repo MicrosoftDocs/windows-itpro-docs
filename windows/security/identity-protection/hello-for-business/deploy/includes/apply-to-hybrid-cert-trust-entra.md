@@ -5,6 +5,6 @@ ms.topic: include
 
 [!INCLUDE [intro](intro.md)]
 - **Deployment type:** [!INCLUDE [tooltip-deployment-hybrid](tooltip-deployment-hybrid.md)]
-- **Trust type:** [!INCLUDE [tooltip-cert-trust](tooltip-cert-trust.md)]
+- **Trust type:** [!INCLUDE [tooltip-cert-trust](tooltip-trust-cert.md)]
 - **Join type:** [!INCLUDE [tooltip-join-entra](tooltip-join-entra.md)]
 ---

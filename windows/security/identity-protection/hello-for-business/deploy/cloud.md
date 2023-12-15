@@ -54,7 +54,7 @@ The following method explains how to disable Windows Hello for Business enrollme
     When disabled, users can't provision Windows Hello for Business. When set to Disabled, you can still configure the subsequent settings for Windows Hello for Business even though this policy won't enable Windows Hello for Business.
 
 > [!NOTE]
-> This policy is only applied during new device enrollments. For currently enrolled devices, you can [set the same settings in a device configuration policy](hello-manage-in-organization.md).
+> This policy is only applied during new device enrollments. For currently enrolled devices, you can [set the same settings in a device configuration policy](../hello-manage-in-organization.md).
 
 ## Disable Windows Hello for Business enrollment without Intune
 

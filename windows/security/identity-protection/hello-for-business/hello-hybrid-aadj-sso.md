@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Configure single sign-on for Microsoft Entra joined devices
 
-[!INCLUDE [hello-hybrid-key-trust](includes/hello-hybrid-keycert-trust-aad.md)]
+[!INCLUDE [apply-to-hybrid-key-and-cert-trust](deploy/includes/apply-to-hybrid-key-and-cert-trust.md)]
 
 Windows Hello for Business combined with Microsoft Entra joined devices makes it easy for users to securely access cloud-based resources using a strong, two-factor credential. Some resources may remain on-premises as enterprises transition resources to the cloud and Microsoft Entra joined devices may need to access these resources. With additional configurations to the hybrid deployment, you can provide single sign-on to on-premises resources for Microsoft Entra joined devices using Windows Hello for Business, using a key or a certificate.
 
@@ -203,7 +203,7 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 1. Repeat this procedure on all your domain controllers
 
 > [!NOTE]
-> You can configure domain controllers to automatically enroll and renew their certificates. Automatic certificate enrollment helps prevent authentication outages due to expired certificates. Refer to the [Windows Hello Deployment Guides](hello-deployment-guide.md) to learn how to deploy automatic certificate enrollment for domain controllers.
+> You can configure domain controllers to automatically enroll and renew their certificates. Automatic certificate enrollment helps prevent authentication outages due to expired certificates. Refer to the [Windows Hello Deployment Guides](index.md) to learn how to deploy automatic certificate enrollment for domain controllers.
 
 > [!IMPORTANT]
 > If you are not using automatic certificate enrollment, create a calendar reminder to alert you two months before the certificate expiration date. Send the reminder to multiple people in the organization to ensure more than one or two people know when these certificates expire.
