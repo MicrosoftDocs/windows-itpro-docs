@@ -8,12 +8,12 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
-ms.topic: how-to
+ms.topic: tutorial
 ---
 
 # Hybrid certificate trust deployment
 
-[!INCLUDE [hello-hybrid-cert-trust](includes/hello-hybrid-cert-trust.md)]
+[!INCLUDE [apply-to-hybrid-cert-trust](includes/apply-to-hybrid-cert-trust.md)]
 
 Hybrid environments are distributed systems that enable organizations to use on-premises and Microsoft Entra protected resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication and single sign-on to modern resources.
 
@@ -117,7 +117,7 @@ To configure Windows Hello for Business, devices can be configured through a mob
 > - Configure single sign-on (SSO) for Microsoft Entra joined devices
 
 > [!div class="nextstepaction"]
-> [Next: configure and validate the Public Key Infrastructure >](hybrid-cert-trust-validate-pki.md)
+> [Next: configure and validate the Public Key Infrastructure >](hybrid-cert-trust-pki.md)
 
 <!--links-->
 [AZ-1]: /azure/active-directory/hybrid/how-to-connect-sync-whatis

@@ -13,7 +13,7 @@ ms.topic: tutorial
 
 # Deployment guide for the on-premises certificate trust model
 
-[!INCLUDE [hello-on-premises-cert-trust](includes/hello-on-premises-cert-trust.md)]
+[!INCLUDE [apply-to-on-premises-cert-trust-entra](includes/apply-to-on-premises-cert-trust-entra.md)]
 
 Windows Hello for Business replaces username and password authentication to Windows with an asymmetric key pair. This deployment guide provides the information to deploy Windows Hello for Business in an on-premises environment.
 
@@ -40,4 +40,4 @@ Sign-in to a domain controller or to a management workstation with a *Domain Adm
 1. Select **OK**
 
 > [!div class="nextstepaction"]
-> [Next: validate and configure a PKI >](on-premises-cert-trust-validate-pki.md)
+> [Next: validate and configure a PKI >](on-premises-cert-trust-pki.md)

@@ -12,7 +12,7 @@ ms.topic: tutorial
 ---
 # Configure and validate the PKI in an hybrid certificate trust model
 
-[!INCLUDE [hello-hybrid-cert-trust](includes/hello-hybrid-cert-trust.md)]
+[!INCLUDE [apply-to-hybrid-cert-trust](includes/apply-to-hybrid-cert-trust.md)]
 
 Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* or *certificate trust* models. The domain controllers must have a certificate, which serves as a *root of trust* for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
 
@@ -80,6 +80,6 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 > - Validate the domain controllers configuration
 
 > [!div class="nextstepaction"]
-> [Next: configure AD FS >](hybrid-cert-whfb-settings-adfs.md)
+> [Next: configure AD FS >](hybrid-cert-trust-adfs.md)
 
 <!--links-->

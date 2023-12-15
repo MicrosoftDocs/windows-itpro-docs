@@ -1,7 +1,7 @@
 ---
 title: Configure and validate the Public Key Infrastructure in an on-premises certificate trust model
 description: Configure and validate the Public Key Infrastructure the Public Key Infrastructure when deploying Windows Hello for Business in a certificate trust model.
-ms.date: 09/07/2023
+ms.date: 12/15/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -13,7 +13,7 @@ ms.topic: tutorial
 
 # Configure and validate the Public Key Infrastructure - on-premises certificate trust
 
-[!INCLUDE [hello-on-premises-cert-trust](includes/hello-on-premises-cert-trust.md)]
+[!INCLUDE [apply-to-on-premises-cert-trust-entra](includes/apply-to-on-premises-cert-trust-entra.md)]
 
 Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* or *certificate trust* models. The domain controllers must have a certificate, which serves as a root of trust for clients. The certificate ensures that clients don't communicate with rogue domain controllers. The certificate trust model extends certificate issuance to client computers. During Windows Hello for Business provisioning, the user receives a sign-in certificate.
 

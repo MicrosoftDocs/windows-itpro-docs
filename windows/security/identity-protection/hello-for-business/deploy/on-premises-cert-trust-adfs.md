@@ -10,9 +10,10 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
 ms.topic: tutorial
 ---
+
 # Prepare and deploy Active Directory Federation Services - on-premises certificate trust
 
-[!INCLUDE [hello-on-premises-cert-trust](includes/hello-on-premises-cert-trust.md)]
+[!INCLUDE [apply-to-on-premises-cert-trust-entra](includes/apply-to-on-premises-cert-trust-entra.md)]
 
 Windows Hello for Business works exclusively with the Active Directory Federation Service (AD FS) role included with Windows Server. The on-premises certificate trust deployment model uses AD FS for *certificate enrollment* and *device registration*.
 
@@ -319,4 +320,4 @@ Each file in this folder represents a certificate in the service account's Perso
 For detailed information about the certificate, use `Certutil -q -v <certificateThumbprintFileName>`.
 
 > [!div class="nextstepaction"]
-> [Next: validate and deploy multi-factor authentication (MFA) >](on-premises-cert-trust-validate-deploy-mfa.md)
+> [Next: validate and deploy multi-factor authentication (MFA) >](on-premises-cert-trust-mfa.md)
