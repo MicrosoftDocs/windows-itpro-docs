@@ -131,7 +131,7 @@ Giving the simplicity offered by this model, cloud Kerberos trust is the recomme
 
 ### More information about cloud Kerberos trust
 
-[Cloud Kerberos trust deployment](hello-hybrid-cloud-kerberos-trust.md)
+[Cloud Kerberos trust deployment](hybrid-clud-kerberos-trust.md)
 
 ## Deployment type
 

@@ -8,7 +8,7 @@ ms.topic: tutorial
 ---
 # Cloud Kerberos trust deployment
 
-[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cloudkerb-trust.md)]
+[!INCLUDE [apply-to-hybrid-cloud-kerberos-trust](includes/apply-to-hybrid-cloud-kerberos-trust.md)]
 
 Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This deployment guide provides the information to deploy Windows Hello for Business in a *cloud Kerberos trust* scenario.
 
@@ -84,7 +84,7 @@ Once the prerequisites are met, deploying Windows Hello for Business with a clou
 > * Provision Windows Hello for Business on Windows clients
 
 > [!div class="nextstepaction"]
-> [Next: configure and provision Windows Hello for Business >](hello-hybrid-cloud-kerberos-trust-provision.md)
+> [Next: configure and provision Windows Hello for Business >](hybrid-clud-kerberos-trust-enroll.md)
 
 <!--Links-->
 

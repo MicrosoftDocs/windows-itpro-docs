@@ -12,7 +12,7 @@ Windows Hello for Business is the springboard to a world without passwords. It r
 
 This deployment overview is to guide you through deploying Windows Hello for Business. Your first step should be to use the Passwordless Wizard in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/modernonboarding/passwordlesssetup) or the [Planning a Windows Hello for Business Deployment](hello-planning-guide.md) guide to determine the right deployment model for your organization.
 
-Once you've chosen a deployment model, the deployment guide for that model will provide you with the information needed to successfully deploy Windows Hello for Business in your environment. Read the [Windows Hello for Business Deployment Prerequisite Overview](hello-identity-verification.md) for a summary of the prerequisites for each different Windows Hello for Business deployment model.
+Once you've chosen a deployment model, the deployment guide for that model will provide you with the information needed to successfully deploy Windows Hello for Business in your environment. Read the [Windows Hello for Business Deployment Prerequisite Overview](requirements.md) for a summary of the prerequisites for each different Windows Hello for Business deployment model.
 
 ## Requirements
 
@@ -44,18 +44,18 @@ The trust model determines how you want users to authenticate to the on-premises
 - The certificate trust model also supports enterprises, which aren't ready to deploy Windows Server 2016 Domain Controllers.
 
 > [!NOTE]
-> RDP does not support authentication with Windows Hello for Business Key Trust or cloud Kerberos trust deployments as a supplied credential. RDP is only supported with certificate trust deployments as a supplied credential at this time. Windows Hello for Business Key Trust and cloud Kerberos trust can be used with [Remote Credential Guard](../remote-credential-guard.md).
+> RDP does not support authentication with Windows Hello for Business Key Trust or cloud Kerberos trust deployments as a supplied credential. RDP is only supported with certificate trust deployments as a supplied credential at this time. Windows Hello for Business Key Trust and cloud Kerberos trust can be used with [Remote Credential Guard](../../remote-credential-guard.md).
 
 Following are the various deployment guides and models included in this topic:
 
-- [Microsoft Entra hybrid joined cloud Kerberos trust Deployment](hello-hybrid-cloud-kerberos-trust.md)
-- [Microsoft Entra hybrid joined Key Trust Deployment](hello-hybrid-key-trust.md)
-- [Microsoft Entra hybrid joined Certificate Trust Deployment](deploy/hybrid-cert-trust.md)
+- [Microsoft Entra hybrid joined cloud Kerberos trust Deployment](hybrid-clud-kerberos-trust.md)
+- [Microsoft Entra hybrid joined Key Trust Deployment](hybrid-key-trust.md)
+- [Microsoft Entra hybrid joined Certificate Trust Deployment](hybrid-cert-trust.md)
 - [Microsoft Entra join Single Sign-on Deployment Guides](hello-hybrid-aadj-sso.md)
-- [On Premises Key Trust Deployment](hello-deployment-key-trust.md)
-- [On Premises Certificate Trust Deployment](deploy/on-premises-cert-trust.md)
+- [On Premises Key Trust Deployment](hybrid-clud-kerberos-trust.md)
+- [On Premises Certificate Trust Deployment](on-premises-cert-trust.md)
 
-For Windows Hello for Business hybrid [certificate trust prerequisites](/windows/security/identity-protection/hello-for-business/deploy/hybrid-cert-trust#directory-synchronization) and [key trust prerequisites](/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust#directory-synchronization) deployments, you'll need Microsoft Entra Connect to synchronize user accounts in the on-premises Active Directory with Microsoft Entra ID. For on-premises deployments, both key and certificate trust, use the Azure MFA server where the credentials aren't synchronized to Microsoft Entra ID. Learn how to [deploy Multifactor Authentication Services (MFA) for key trust](hello-key-trust-validate-deploy-mfa.md) and [for certificate trust](deploy/on-premises-cert-trust-mfa.md) deployments.
+For Windows Hello for Business hybrid [certificate trust prerequisites](/windows/security/identity-protection/hello-for-business/deploy/hybrid-cert-trust#directory-synchronization) and [key trust prerequisites](/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust#directory-synchronization) deployments, you'll need Microsoft Entra Connect to synchronize user accounts in the on-premises Active Directory with Microsoft Entra ID. For on-premises deployments, both key and certificate trust, use the Azure MFA server where the credentials aren't synchronized to Microsoft Entra ID. Learn how to [deploy Multifactor Authentication Services (MFA) for key trust](on-premises-key-trust-mfa.md) and [for certificate trust](deploy/on-premises-cert-trust-mfa.md) deployments.
 
 ## Provisioning
 

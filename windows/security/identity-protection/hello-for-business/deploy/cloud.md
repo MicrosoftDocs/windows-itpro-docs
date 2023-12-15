@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Cloud-only deployment
 
-[!INCLUDE [hello-hybrid-key-trust](./includes/hello-cloud.md)]
+[!INCLUDE [apply-to-cloud](includes/apply-to-cloud.md)]
 
 ## Introduction
 
@@ -21,7 +21,7 @@ You may wish to disable the automatic Windows Hello for Business enrollment prom
 
 Cloud only deployments will use Microsoft Entra multifactor authentication (MFA) during Windows Hello for Business enrollment, and there's no additional MFA configuration needed. If you aren't already registered in MFA, you'll be guided through the MFA registration as part of the Windows Hello for Business enrollment process.
 
-The necessary Windows Hello for Business prerequisites are located at [Cloud Only Deployment](hello-identity-verification.md#azure-ad-cloud-only-deployment).
+The necessary Windows Hello for Business prerequisites are located at [Cloud Only Deployment](requirements.md#azure-ad-cloud-only-deployment).
 
 It's possible for federated domains to configure the *FederatedIdpMfaBehavior* flag. The flag instructs Microsoft Entra ID to accept, enforce, or reject the MFA challenge from the federated IdP. For more information, see [federatedIdpMfaBehavior values](/graph/api/resources/internaldomainfederation#federatedidpmfabehavior-values). To check this setting, use the following PowerShell command:
 

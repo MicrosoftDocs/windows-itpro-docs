@@ -7,7 +7,7 @@ ms.topic: tutorial
 
 # Configure and enroll in Windows Hello for Business - hybrid key trust
 
-[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-key-trust.md)]
+[!INCLUDE [apply-to-hybrid-key-trust](includes/apply-to-hybrid-key-trust.md)]
 
 After the prerequisites are met and the PKI configuration is validated, Windows Hello for business must be enabled on the Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 

@@ -13,7 +13,7 @@ ms.topic: tutorial
 
 # Validate and deploy multifactor authentication - on-premises key trust
 
-[!INCLUDE [hello-on-premises-key-trust](./includes/hello-on-premises-key-trust.md)]
+[!INCLUDE [apply-to-on-premises-key-trust](includes/apply-to-on-premises-key-trust.md)]
 
 Windows Hello for Business requires users perform multifactor authentication (MFA) prior to enroll in the service. On-premises deployments can use, as MFA option:
 
@@ -29,4 +29,4 @@ For information on available third-party authentication methods see [Configure A
 Follow the integration and deployment guide for the authentication provider you select to integrate and deploy it to AD FS. Make sure that the authentication provider is selected as a multifactor authentication option in the AD FS authentication policy. For information on configuring AD FS authentication policies see [Configure Authentication Policies](/windows-server/identity/ad-fs/operations/configure-authentication-policies).
 
 > [!div class="nextstepaction"]
-> [Next: configure Windows Hello for Business Policy settings](hello-key-trust-policy-settings.md)
+> [Next: configure Windows Hello for Business Policy settings](on-premises-key-trust-enroll.md)

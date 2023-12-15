@@ -9,7 +9,7 @@ ms.topic: tutorial
 ---
 # Configure Windows Hello for Business group policy settings - on-premises key trust
 
-[!INCLUDE [hello-on-premises-key-trust](./includes/hello-on-premises-key-trust.md)]
+[!INCLUDE [apply-to-on-premises-key-trust](includes/apply-to-on-premises-key-trust.md)]
 
 On-premises key trust deployments of Windows Hello for Business need one Group Policy setting: *Enable Windows Hello for Business*.
 The Group Policy setting determines whether users are allowed, and prompted, to enroll for Windows Hello for Business. It can be configured for computers or users.

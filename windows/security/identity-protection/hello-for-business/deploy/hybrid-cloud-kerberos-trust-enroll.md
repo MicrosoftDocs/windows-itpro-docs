@@ -8,7 +8,7 @@ ms.topic: tutorial
 ---
 # Configure and provision Windows Hello for Business - cloud Kerberos trust
 
-[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cloudkerb-trust.md)]
+[!INCLUDE [hello-hybrid-key-trust](includes/hello-hybrid-cloudkerb-trust.md)]
 
 ## Deployment steps
 

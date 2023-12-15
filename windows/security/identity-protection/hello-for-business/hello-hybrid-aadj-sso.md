@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Configure single sign-on for Microsoft Entra joined devices
 
-[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-keycert-trust-aad.md)]
+[!INCLUDE [hello-hybrid-key-trust](includes/hello-hybrid-keycert-trust-aad.md)]
 
 Windows Hello for Business combined with Microsoft Entra joined devices makes it easy for users to securely access cloud-based resources using a strong, two-factor credential. Some resources may remain on-premises as enterprises transition resources to the cloud and Microsoft Entra joined devices may need to access these resources. With additional configurations to the hybrid deployment, you can provide single sign-on to on-premises resources for Microsoft Entra joined devices using Windows Hello for Business, using a key or a certificate.
 
