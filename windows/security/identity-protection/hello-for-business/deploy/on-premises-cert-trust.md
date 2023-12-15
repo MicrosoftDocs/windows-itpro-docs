@@ -1,5 +1,5 @@
 ---
-title: Windows Hello for Business deployment guide for the on-premises certificate trust model
+title: Deployment guide for the on-premises certificate trust model
 description: Learn how to deploy Windows Hello for Business in an on-premises, certificate trust model.
 ms.date: 12/15/2023
 appliesto: 
@@ -10,18 +10,19 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
 ms.topic: tutorial
 ---
-# Deployment guide overview - on-premises certificate trust
 
-[!INCLUDE [hello-on-premises-cert-trust](../includes/hello-on-premises-cert-trust.md)]
+# Deployment guide for the on-premises certificate trust model
+
+[!INCLUDE [hello-on-premises-cert-trust](includes/hello-on-premises-cert-trust.md)]
 
 Windows Hello for Business replaces username and password authentication to Windows with an asymmetric key pair. This deployment guide provides the information to deploy Windows Hello for Business in an on-premises environment.
 
 There are four steps to deploying Windows Hello for Business in an on-premises certificate trust model:
 
-1. [Validate and configure a PKI](hello-cert-trust-validate-pki.md)
-1. [Prepare and deploy AD FS](hello-cert-trust-adfs.md)
-1. [Validate and deploy multi-factor authentication (MFA)](hello-cert-trust-validate-deploy-mfa.md)
-1. [Configure Windows Hello for Business Policy settings](hello-cert-trust-policy-settings.md)
+1. [Validate and configure a PKI](on-premises-cert-trust-validate-pki.md)
+1. [Prepare and deploy AD FS](on-premises-cert-trust-adfs.md)
+1. [Validate and deploy multi-factor authentication (MFA)](on-premises-cert-trust-validate-deploy-mfa.md)
+1. [Configure Windows Hello for Business Policy settings](on-premises-cert-trust-policy-settings.md)
 
 ## Create the Windows Hello for Business Users security group
 
@@ -39,4 +40,4 @@ Sign-in to a domain controller or to a management workstation with a *Domain Adm
 1. Select **OK**
 
 > [!div class="nextstepaction"]
-> [Next: validate and configure a PKI >](hello-cert-trust-validate-pki.md)
+> [Next: validate and configure a PKI >](on-premises-cert-trust-validate-pki.md)

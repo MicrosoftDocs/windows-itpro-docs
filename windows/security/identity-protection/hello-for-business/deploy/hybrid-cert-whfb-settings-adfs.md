@@ -13,7 +13,7 @@ ms.topic: tutorial
 
 # Configure Active Directory Federation Services - hybrid certificate trust
 
-[!INCLUDE [hello-hybrid-key-trust](../includes/hello-hybrid-cert-trust.md)]
+[!INCLUDE [hello-hybrid-key-trust](includes/hello-hybrid-cert-trust.md)]
 
 The Windows Hello for Business certificate-based deployments use AD FS as the certificate registration authority (CRA).
 The CRA is responsible for issuing and revoking certificates to users. Once the registration authority verifies the certificate request, it signs the certificate request using its enrollment agent certificate and sends it to the certificate authority.\
@@ -81,4 +81,4 @@ Before moving to the next section, ensure the following steps are complete:
 > - Update group memberships for the AD FS service account
 
 > [!div class="nextstepaction"]
-> [Next: configure policy settings >](/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-provision)
+> [Next: configure policy settings >](hybrid-cert-whfb-provision.md)

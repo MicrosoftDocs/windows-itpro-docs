@@ -12,7 +12,7 @@ ms.topic: tutorial
 ---
 # Prepare and deploy Active Directory Federation Services - on-premises certificate trust
 
-[!INCLUDE [hello-on-premises-cert-trust](../includes/hello-on-premises-cert-trust.md)]
+[!INCLUDE [hello-on-premises-cert-trust](includes/hello-on-premises-cert-trust.md)]
 
 Windows Hello for Business works exclusively with the Active Directory Federation Service (AD FS) role included with Windows Server. The on-premises certificate trust deployment model uses AD FS for *certificate enrollment* and *device registration*.
 
@@ -51,7 +51,7 @@ Sign-in the federation server with *domain administrator* equivalent credentials
 1. Select **Next** on the **Select Certificate Enrollment Policy** page
 1. On the **Request Certificates** page, select the **Internal Web Server** check box
 1. Select the **⚠️ More information is required to enroll for this certificate. Click here to configure settings** link
-    :::image type="content" source="images/hello-internal-web-server-cert.png" lightbox="images/hello-internal-web-server-cert.png" alt-text="Example of Certificate Properties Subject Tab - This is what shows when you select the above link.":::
+    :::image type="content" source="../images/hello-internal-web-server-cert.png" lightbox="../images/hello-internal-web-server-cert.png" alt-text="Example of Certificate Properties Subject Tab - This is what shows when you select the above link.":::
 1. Under **Subject name**, select **Common Name** from the **Type** list. Type the FQDN of the computer hosting the AD FS role and then select **Add**
 1. Under **Alternative name**, select **DNS** from the **Type** list. Type the FQDN of the name that you will use for your federation services (*sts.corp.contoso.com*). The name you use here MUST match the name you use when configuring the AD FS server role. Select **Add** and **OK** when finished
 1. Select **Enroll**
@@ -160,11 +160,11 @@ Sign-in to the federation server with *Enterprise Administrator* equivalent cred
 1. In the details pane, select **Configure device registration**
 1. In the **Configure Device Registration** dialog, Select **OK**
 
-:::image type="content" source="images/adfs-device-registration.png" lightbox="images/adfs-device-registration.png" alt-text="AD FS device registration: configuration of the service connection point.":::
+:::image type="content" source="../images/adfs-device-registration.png" lightbox="../images/adfs-device-registration.png" alt-text="AD FS device registration: configuration of the service connection point.":::
 
 Triggering device registration from AD FS, creates the service connection point (SCP) in the Active Directory configuration partition. The SCP is used to store the device registration information that Windows clients will automatically discover.
 
-:::image type="content" source="images/adfs-scp.png" lightbox="images/adfs-scp.png" alt-text="AD FS device registration: service connection point object created by AD FS.":::
+:::image type="content" source="../images/adfs-scp.png" lightbox="../images/adfs-scp.png" alt-text="AD FS device registration: service connection point object created by AD FS.":::
 
 ## Review to validate the AD FS and Active Directory configuration
 
@@ -319,4 +319,4 @@ Each file in this folder represents a certificate in the service account's Perso
 For detailed information about the certificate, use `Certutil -q -v <certificateThumbprintFileName>`.
 
 > [!div class="nextstepaction"]
-> [Next: validate and deploy multi-factor authentication (MFA) >](hello-cert-trust-validate-deploy-mfa.md)
+> [Next: validate and deploy multi-factor authentication (MFA) >](on-premises-cert-trust-validate-deploy-mfa.md)
