@@ -12,7 +12,7 @@ ms.topic: tutorial
 ---
 # Prepare and deploy Active Directory Federation Services - on-premises certificate trust
 
-[!INCLUDE [hello-on-premises-cert-trust](./includes/hello-on-premises-cert-trust.md)]
+[!INCLUDE [hello-on-premises-cert-trust](../includes/hello-on-premises-cert-trust.md)]
 
 Windows Hello for Business works exclusively with the Active Directory Federation Service (AD FS) role included with Windows Server. The on-premises certificate trust deployment model uses AD FS for *certificate enrollment* and *device registration*.
 

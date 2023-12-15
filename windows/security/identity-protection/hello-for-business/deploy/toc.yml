@@ -1,0 +1,81 @@
+items:
+- name: Deployment guides
+  items:
+  - name: Windows Hello for Business deployment overview
+    href: ../hello-deployment-guide.md
+  - name: Planning a Windows Hello for Business deployment
+    href: ../hello-planning-guide.md
+  - name: Deployment prerequisite overview
+    href: ../hello-identity-verification.md
+  - name: Cloud-only deployment
+    href: ../hello-aad-join-cloud-only-deploy.md
+  - name: Hybrid deployments
+    items:
+    - name: Cloud Kerberos trust deployment
+      items:
+        - name: Overview
+          href: ../hello-hybrid-cloud-kerberos-trust.md
+          displayName: cloud Kerberos trust
+        - name: Configure and provision Windows Hello for Business
+          href: ../hello-hybrid-cloud-kerberos-trust-provision.md
+          displayName: cloud Kerberos trust
+    - name: Key trust deployment
+      items: 
+      - name: Overview
+        href: ../hello-hybrid-key-trust.md
+        displayName: key trust
+      - name: Configure and validate the PKI
+        href: ../hello-hybrid-key-trust-validate-pki.md
+        displayName: key trust
+      - name: Configure and provision Windows Hello for Business
+        href: ../hello-hybrid-key-trust-provision.md
+        displayName: key trust
+      - name: Configure SSO for Microsoft Entra joined devices
+        href: ../hello-hybrid-aadj-sso.md
+        displayName: key trust
+    - name: Certificate trust deployment
+      items: 
+      - name: Overview
+        href: hybrid-cert-trust.md
+        displayName: certificate trust
+      - name: Configure and validate the PKI
+        href: hybrid-cert-trust-validate-pki.md
+        displayName: certificate trust
+      - name: Configure AD FS
+        href: hybrid-cert-whfb-settings-adfs.md
+        displayName: certificate trust
+      - name: Configure and provision Windows Hello for Business
+        href: hybrid-cert-whfb-provision.md
+        displayName: certificate trust
+      - name: Configure SSO for Microsoft Entra joined devices
+        href: ../hello-hybrid-aadj-sso.md
+        displayName: certificate trust
+      - name: Deploy certificates to Microsoft Entra joined devices
+        href: hello-hybrid-aadj-sso-cert.md
+        displayName: certificate trust
+  - name: On-premises deployments
+    items:
+    - name: Key trust deployment
+      items: 
+      - name: Overview
+        href: ../hello-deployment-key-trust.md
+      - name: Configure and validate the PKI
+        href: ../hello-key-trust-validate-pki.md
+      - name: Prepare and deploy Active Directory Federation Services (AD FS)
+        href: ../hello-key-trust-adfs.md
+      - name: Validate and deploy multi-factor authentication (MFA) services
+        href: ../hello-key-trust-validate-deploy-mfa.md
+      - name: Configure Windows Hello for Business policy settings
+        href: ../hello-key-trust-policy-settings.md
+    - name: Certificate trust deployment
+      items: 
+      - name: Overview
+        href: on-premises-cert-trust.md
+      - name: Configure and validate Public Key Infrastructure (PKI)
+        href: on-premises-cert-trust-validate-pki.md
+      - name: Prepare and Deploy Active Directory Federation Services (AD FS)
+        href: on-premises-cert-trust-adfs.md
+      - name: Validate and deploy multi-factor authentication (MFA) services
+        href: on-premises-cert-trust-validate-deploy-mfa.md
+      - name: Configure Windows Hello for Business policy settings
+        href: on-premises-cert-trust-policy-settings.md

@@ -13,7 +13,7 @@ ms.topic: how-to
 
 # Hybrid certificate trust deployment
 
-[!INCLUDE [hello-hybrid-cert-trust](./includes/hello-hybrid-cert-trust.md)]
+[!INCLUDE [hello-hybrid-cert-trust](../includes/hello-hybrid-cert-trust.md)]
 
 Hybrid environments are distributed systems that enable organizations to use on-premises and Microsoft Entra protected resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication and single sign-on to modern resources.
 

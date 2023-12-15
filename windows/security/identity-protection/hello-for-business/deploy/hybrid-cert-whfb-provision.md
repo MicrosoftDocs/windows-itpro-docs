@@ -7,7 +7,7 @@ ms.topic: tutorial
 
 # Configure and provision Windows Hello for Business - hybrid certificate trust
 
-[!INCLUDE [hello-hybrid-certificate-trust](./includes/hello-hybrid-cert-trust.md)]
+[!INCLUDE [hello-hybrid-certificate-trust](../includes/hello-hybrid-cert-trust.md)]
 
 ## Policy Configuration
 
