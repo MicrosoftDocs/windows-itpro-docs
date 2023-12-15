@@ -1,7 +1,7 @@
 ---
 title: Configure Active Directory Federation Services in a hybrid certificate trust model
 description: Learn how to configure Active Directory Federation Services to support the Windows Hello for Business hybrid certificate trust model.
-ms.date: 01/03/2023
+ms.date: 12/15/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -10,9 +10,10 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
 ms.topic: tutorial
 ---
+
 # Configure Active Directory Federation Services - hybrid certificate trust
 
-[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cert-trust.md)]
+[!INCLUDE [apply-to-hybrid-cert-trust](includes/apply-to-hybrid-cert-trust.md)]
 
 The Windows Hello for Business certificate-based deployments use AD FS as the certificate registration authority (CRA).
 The CRA is responsible for issuing and revoking certificates to users. Once the registration authority verifies the certificate request, it signs the certificate request using its enrollment agent certificate and sends it to the certificate authority.\
@@ -80,4 +81,4 @@ Before moving to the next section, ensure the following steps are complete:
 > - Update group memberships for the AD FS service account
 
 > [!div class="nextstepaction"]
-> [Next: configure policy settings >](/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-provision)
+> [Next: configure policy settings >](hybrid-cert-trust-enroll.md)

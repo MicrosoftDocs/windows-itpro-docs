@@ -1,7 +1,7 @@
 ---
 title: Configure and validate the Public Key Infrastructure in an on-premises certificate trust model
 description: Configure and validate the Public Key Infrastructure the Public Key Infrastructure when deploying Windows Hello for Business in a certificate trust model.
-ms.date: 09/07/2023
+ms.date: 12/15/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -10,27 +10,28 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
 ms.topic: tutorial
 ---
+
 # Configure and validate the Public Key Infrastructure - on-premises certificate trust
 
-[!INCLUDE [hello-on-premises-cert-trust](./includes/hello-on-premises-cert-trust.md)]
+[!INCLUDE [apply-to-on-premises-cert-trust-entra](includes/apply-to-on-premises-cert-trust-entra.md)]
 
 Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* or *certificate trust* models. The domain controllers must have a certificate, which serves as a root of trust for clients. The certificate ensures that clients don't communicate with rogue domain controllers. The certificate trust model extends certificate issuance to client computers. During Windows Hello for Business provisioning, the user receives a sign-in certificate.
 
-[!INCLUDE [lab-based-pki-deploy](includes/lab-based-pki-deploy.md)]
+[!INCLUDE [lab-based-pki-deploy](../includes/lab-based-pki-deploy.md)]
 
 ## Configure the enterprise PKI
 
-[!INCLUDE [dc-certificate-template](includes/dc-certificate-template.md)]
+[!INCLUDE [dc-certificate-template](../includes/dc-certificate-template.md)]
 
-[!INCLUDE [dc-certificate-template-supersede](includes/dc-certificate-supersede.md)]
+[!INCLUDE [dc-certificate-template-supersede](../includes/dc-certificate-supersede.md)]
 
-[!INCLUDE [web-server-certificate-template](includes/web-server-certificate-template.md)]
+[!INCLUDE [web-server-certificate-template](../includes/web-server-certificate-template.md)]
 
-[!INCLUDE [enrollment-agent-certificate-template](includes/enrollment-agent-certificate-template.md)]
+[!INCLUDE [enrollment-agent-certificate-template](../includes/enrollment-agent-certificate-template.md)]
 
-[!INCLUDE [auth-certificate-template](includes/auth-certificate-template.md)]
+[!INCLUDE [auth-certificate-template](../includes/auth-certificate-template.md)]
 
-[!INCLUDE [unpublish-superseded-templates](includes/unpublish-superseded-templates.md)]
+[!INCLUDE [unpublish-superseded-templates](../includes/unpublish-superseded-templates.md)]
 
 ### Publish certificate templates to the CA
 
@@ -49,11 +50,11 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 
 ## Configure and deploy certificates to domain controllers
 
-[!INCLUDE [dc-certificate-deployment](includes/dc-certificate-deployment.md)]
+[!INCLUDE [dc-certificate-deployment](../includes/dc-certificate-deployment.md)]
 
 ## Validate the configuration
 
-[!INCLUDE [dc-certificate-validate](includes/dc-certificate-validate.md)]
+[!INCLUDE [dc-certificate-validate](../includes/dc-certificate-validate.md)]
 
 > [!div class="nextstepaction"]
-> [Next: prepare and deploy AD FS >](hello-cert-trust-adfs.md)
+> [Next: prepare and deploy AD FS >](on-premises-cert-trust-adfs.md)
