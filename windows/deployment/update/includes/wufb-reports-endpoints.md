@@ -8,7 +8,8 @@ ms.topic: include
 ms.date: 12/15/2023
 ms.localizationpriority: medium
 ---
-<!--This file is shared by updates/wufb-reports-prerequisites.md and the update/update-compliance-configuration-manual.md articles. Headings are driven by article context.  -->
+
+<!-- This file is shared by update/wufb-reports-prerequisites.md and update/wufb-reports-configuration-manual.md articles. Headings are driven by article context. -->
 
 Devices must be able to contact the following endpoints in order to authenticate and send diagnostic data: 
 
