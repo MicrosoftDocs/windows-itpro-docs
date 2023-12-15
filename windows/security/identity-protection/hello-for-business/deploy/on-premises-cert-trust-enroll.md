@@ -1,14 +1,22 @@
 ---
 title: Configure Windows Hello for Business Policy settings in an on-premises certificate trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business in an on-premises certificate trust scenario
-ms.date: 09/07/2023
+ms.date: 12/15/2023
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
 ms.topic: tutorial
 ---
+
 # Configure Windows Hello for Business group policy settings - on-premises certificate Trust
 
-[!INCLUDE [hello-on-premises-cert-trust](./includes/hello-on-premises-cert-trust.md)]
+[!INCLUDE [apply-to-on-premises-cert-trust-entra](includes/apply-to-on-premises-cert-trust-entra.md)]
 
 On-premises certificate-based deployments of Windows Hello for Business need three Group Policy settings:
+
 - Enable Windows Hello for Business
 - Use certificate for on-premises authentication
 - Enable automatic enrollment of certificates
@@ -72,7 +80,7 @@ The application of the Windows Hello for Business Group Policy object uses secur
 
 ## Other Related Group Policy settings
 
-There are other Windows Hello for Business policy settings you can configure to manage your Windows Hello for Business deployment.  These policy settings are computer-based policy setting; so they are applicable to any user that sign-in from a computer with these policy settings. 
+There are other Windows Hello for Business policy settings you can configure to manage your Windows Hello for Business deployment.  These policy settings are computer-based policy setting; so they are applicable to any user that sign-in from a computer with these policy settings.
 
 ### Use a hardware security device
 

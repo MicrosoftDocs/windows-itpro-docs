@@ -1,39 +1,40 @@
 ---
 title: Windows Hello for Business hybrid certificate trust deployment
 description: Learn how to deploy Windows Hello for Business in a hybrid certificate trust scenario.
-ms.date: 03/16/2023
+ms.date: 12/15/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
-ms.topic: how-to
+ms.topic: tutorial
 ---
 
 # Hybrid certificate trust deployment
 
-[!INCLUDE [hello-hybrid-cert-trust](./includes/hello-hybrid-cert-trust.md)]
+[!INCLUDE [apply-to-hybrid-cert-trust](includes/apply-to-hybrid-cert-trust.md)]
 
 Hybrid environments are distributed systems that enable organizations to use on-premises and Microsoft Entra protected resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication and single sign-on to modern resources.
 
 This deployment guide describes how to deploy Windows Hello for Business in a hybrid certificate trust scenario.
 
 > [!IMPORTANT]
-> Windows Hello for Business *cloud Kerberos trust* is the recommended deployment model when compared to the *key trust model*. It is also the recommended deployment model if you don't need to deploy certificates to the end users. For more information, see [cloud Kerberos trust deployment](hello-hybrid-cloud-kerberos-trust.md).
+> Windows Hello for Business *cloud Kerberos trust* is the recommended deployment model when compared to the *key trust model*. It is also the recommended deployment model if you don't need to deploy certificates to the end users. For more information, see [cloud Kerberos trust deployment](../hello-hybrid-cloud-kerberos-trust.md).
 
-It's recommended that you review the [Windows Hello for Business planning guide](hello-planning-guide.md) prior to using the deployment guide. The planning guide helps you make decisions by explaining the available options with each aspect of the deployment and explains the potential outcomes based on each of these decisions.
+It's recommended that you review the [Windows Hello for Business planning guide](../hello-planning-guide.md) prior to using the deployment guide. The planning guide helps you make decisions by explaining the available options with each aspect of the deployment and explains the potential outcomes based on each of these decisions.
 
 ## Prerequisites
-The following prerequisites must be met for a hybrid certificate trust deployment:
 
 > [!div class="checklist"]
-> * Directories and directory synchronization
-> * Federated authentication to Microsoft Entra ID
-> * Device registration
-> * Public Key Infrastructure
-> * Multifactor authentication
-> * Device management
+> The following prerequisites must be met for a hybrid certificate trust deployment:
+>
+> - Directories and directory synchronization
+> - Federated authentication to Microsoft Entra ID
+> - Device registration
+> - Public Key Infrastructure
+> - Multifactor authentication
+> - Device management
 
 ### Directories and directory synchronization
 
@@ -50,8 +51,6 @@ The hybrid-certificate trust deployment needs an *Microsoft Entra ID P1 or P2* s
 
 > [!IMPORTANT]
 > Windows Hello for Business is tied between a user and a device. Both the user and device object must be synchronized between Microsoft Entra ID and Active Directory.
-
-<a name='federated-authentication-to-azure-ad'></a>
 
 ### Federated authentication to Microsoft Entra ID
 
@@ -91,8 +90,6 @@ The enterprise PKI and a certificate registration authority (CRA) are required t
 
 During Windows Hello for Business provisioning, users receive a sign-in certificate through the CRA.
 
-<a name='multi-factor-authentication'></a>
-
 ### Multifactor authentication
 
 The Windows Hello for Business provisioning process lets a user enroll in Windows Hello for Business using their user name and password as one factor, but requires a second factor of authentication.\
@@ -110,28 +107,23 @@ To configure Windows Hello for Business, devices can be configured through a mob
 
 ## Next steps
 
-Once the prerequisites are met, deploying Windows Hello for Business with a hybrid key trust model consists of the following steps:
-
 > [!div class="checklist"]
-> * Configure and validate the PKI
-> * Configure AD FS
-> * Configure Windows Hello for Business settings
-> * Provision Windows Hello for Business on Windows clients
-> * Configure single sign-on (SSO) for Microsoft Entra joined devices
+> Once the prerequisites are met, deploying Windows Hello for Business with a hybrid key trust model consists of the following steps:
+>
+> - Configure and validate the PKI
+> - Configure AD FS
+> - Configure Windows Hello for Business settings
+> - Provision Windows Hello for Business on Windows clients
+> - Configure single sign-on (SSO) for Microsoft Entra joined devices
 
 > [!div class="nextstepaction"]
-> [Next: configure and validate the Public Key Infrastructure >](hello-hybrid-cert-trust-validate-pki.md)
+> [Next: configure and validate the Public Key Infrastructure >](hybrid-cert-trust-pki.md)
 
 <!--links-->
 [AZ-1]: /azure/active-directory/hybrid/how-to-connect-sync-whatis
 [AZ-2]: /azure/multi-factor-authentication/multi-factor-authentication
 [AZ-3]: /azure/multi-factor-authentication/multi-factor-authentication-whats-next
-[AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
-[AZ-5]: /azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler
-[AZ-6]: /azure/active-directory/hybrid/whatis-phs
-[AZ-7]: /azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication
 [AZ-8]: /azure/active-directory/devices/hybrid-azuread-join-plan
-[AZ-9]: /azure/active-directory/devices/hybrid-azuread-join-federated-domains
 [AZ-10]: /azure/active-directory/devices/howto-hybrid-azure-ad-join#federated-domains
 [AZ-11]: /azure/active-directory/devices/hybrid-azuread-join-manual
 

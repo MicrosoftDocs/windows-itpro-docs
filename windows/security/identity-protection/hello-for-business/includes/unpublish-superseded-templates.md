@@ -1,5 +1,5 @@
 ---
-ms.date: 12/28/2022
+ms.date: 12/15/2023
 ms.topic: include
 ---
 
@@ -15,4 +15,3 @@ Sign in to the CA or management workstation with *Enterprise Administrator* equi
 1. Expand the parent node from the navigation pane > **Certificate Templates**
 1. Right-click the *Domain Controller* certificate template and select **Delete**. Select **Yes** on the **Disable certificate templates** window
 1. Repeat step 3 for the *Domain Controller Authentication* and *Kerberos Authentication* certificate templates
-

@@ -50,12 +50,12 @@ Following are the various deployment guides and models included in this topic:
 
 - [Microsoft Entra hybrid joined cloud Kerberos trust Deployment](hello-hybrid-cloud-kerberos-trust.md)
 - [Microsoft Entra hybrid joined Key Trust Deployment](hello-hybrid-key-trust.md)
-- [Microsoft Entra hybrid joined Certificate Trust Deployment](hello-hybrid-cert-trust.md)
+- [Microsoft Entra hybrid joined Certificate Trust Deployment](deploy/hybrid-cert-trust.md)
 - [Microsoft Entra join Single Sign-on Deployment Guides](hello-hybrid-aadj-sso.md)
 - [On Premises Key Trust Deployment](hello-deployment-key-trust.md)
-- [On Premises Certificate Trust Deployment](hello-deployment-cert-trust.md)
+- [On Premises Certificate Trust Deployment](deploy/on-premises-cert-trust.md)
 
-For Windows Hello for Business hybrid [certificate trust prerequisites](/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust#directory-synchronization) and [key trust prerequisites](/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust#directory-synchronization) deployments, you'll need Microsoft Entra Connect to synchronize user accounts in the on-premises Active Directory with Microsoft Entra ID. For on-premises deployments, both key and certificate trust, use the Azure MFA server where the credentials aren't synchronized to Microsoft Entra ID. Learn how to [deploy Multifactor Authentication Services (MFA) for key trust](hello-key-trust-validate-deploy-mfa.md) and [for certificate trust](hello-cert-trust-validate-deploy-mfa.md) deployments.
+For Windows Hello for Business hybrid [certificate trust prerequisites](/windows/security/identity-protection/hello-for-business/deploy/hybrid-cert-trust#directory-synchronization) and [key trust prerequisites](/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust#directory-synchronization) deployments, you'll need Microsoft Entra Connect to synchronize user accounts in the on-premises Active Directory with Microsoft Entra ID. For on-premises deployments, both key and certificate trust, use the Azure MFA server where the credentials aren't synchronized to Microsoft Entra ID. Learn how to [deploy Multifactor Authentication Services (MFA) for key trust](hello-key-trust-validate-deploy-mfa.md) and [for certificate trust](deploy/on-premises-cert-trust-mfa.md) deployments.
 
 ## Provisioning
 
