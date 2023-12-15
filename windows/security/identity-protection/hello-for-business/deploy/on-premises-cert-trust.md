@@ -19,10 +19,10 @@ Windows Hello for Business replaces username and password authentication to Wind
 
 There are four steps to deploying Windows Hello for Business in an on-premises certificate trust model:
 
-1. [Validate and configure a PKI](on-premises-cert-trust-validate-pki.md)
+1. [Validate and configure a PKI](on-premises-cert-trust-pki.md)
 1. [Prepare and deploy AD FS](on-premises-cert-trust-adfs.md)
-1. [Validate and deploy multi-factor authentication (MFA)](on-premises-cert-trust-validate-deploy-mfa.md)
-1. [Configure Windows Hello for Business Policy settings](on-premises-cert-trust-policy-settings.md)
+1. [Validate and deploy multi-factor authentication (MFA)](on-premises-cert-trust-mfa.md)
+1. [Configure Windows Hello for Business Policy settings](on-premises-cert-trust-enroll.md)
 
 ## Create the Windows Hello for Business Users security group
 

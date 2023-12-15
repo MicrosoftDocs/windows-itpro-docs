@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Using Certificates for AADJ On-premises Single-sign On
 
-[!INCLUDE [hello-hybrid-key-trust](deploy/includes/hello-hybrid-cert-trust-aad.md)]
+[!INCLUDE [apply-to-hybrid-cert-trust-entra](deploy/includes/apply-to-hybrid-cert-trust-entra.md)]
 
 If you plan to use certificates for on-premises single-sign on, then follow these **additional** steps to configure the environment to enroll Windows Hello for Business certificates for Microsoft Entra joined devices.
 

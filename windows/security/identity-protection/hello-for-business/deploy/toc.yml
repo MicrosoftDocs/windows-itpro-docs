@@ -36,14 +36,14 @@ items:
     - name: Overview
       href: hybrid-cert-trust.md
       displayName: certificate trust
-    - name: Configure and validate the PKI
-      href: hybrid-cert-trust-validate-pki.md
+    - name: Configure and validate Public Key Infrastructure (PKI)
+      href: hybrid-cert-trust-pki.md
       displayName: certificate trust
     - name: Configure AD FS
-      href: hybrid-cert-whfb-settings-adfs.md
+      href: hybrid-cert-trust-adfs.md
       displayName: certificate trust
-    - name: Configure and provision Windows Hello for Business
-      href: hybrid-cert-whfb-provision.md
+    - name: Configure and enroll in Windows Hello for Business
+      href: hybrid-cert-trust-enroll.md
       displayName: certificate trust
     - name: Configure SSO for Microsoft Entra joined devices
       href: ../hello-hybrid-aadj-sso.md
@@ -70,10 +70,10 @@ items:
     - name: Overview
       href: on-premises-cert-trust.md
     - name: Configure and validate Public Key Infrastructure (PKI)
-      href: on-premises-cert-trust-validate-pki.md
+      href: on-premises-cert-trust-pki.md
     - name: Prepare and Deploy Active Directory Federation Services (AD FS)
       href: on-premises-cert-trust-adfs.md
-    - name: Validate and deploy multi-factor authentication (MFA) services
-      href: on-premises-cert-trust-validate-deploy-mfa.md
-    - name: Configure Windows Hello for Business policy settings
-      href: on-premises-cert-trust-policy-settings.md
+    - name: Validate and deploy multi-factor authentication (MFA)
+      href: on-premises-cert-trust-mfa.md
+    - name: Configure and enroll in Windows Hello for Business
+      href: on-premises-cert-trust-enroll.md

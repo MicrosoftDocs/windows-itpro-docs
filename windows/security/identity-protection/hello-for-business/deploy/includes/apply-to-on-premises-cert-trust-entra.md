@@ -5,6 +5,6 @@ ms.topic: include
 
 [!INCLUDE [hello-intro](../../includes/hello-intro.md)]
 - **Deployment type:** [!INCLUDE [hello-deployment-onpremises](../../includes/hello-deployment-onpremises.md)]
-- **Trust type:** [!INCLUDE [hello-trust-certificate](tooltip-cert-trust.md)]
+- **Trust type:** [!INCLUDE [tooltip-cert-trust](tooltip-cert-trust.md)]
 - **Join type:** [!INCLUDE [hello-join-domain](../../includes/hello-join-domain.md)]
 ---
