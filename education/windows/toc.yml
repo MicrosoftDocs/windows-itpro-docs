@@ -56,8 +56,6 @@ items:
       href: use-set-up-school-pcs-app.md
     - name: Upgrade Windows Home to Windows Education on student-owned devices
       href: change-home-to-edu.md
-    - name: Reset devices with Autopilot Reset
-      href: autopilot-reset.md
 - name: Reference
   items:
     - name: Set up School PCs
