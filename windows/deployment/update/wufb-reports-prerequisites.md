@@ -60,7 +60,7 @@ The following levels are recommended, but not required:
 - The *Enhanced* level for Windows 10 devices.
 - The *Optional* level for Windows 11 devices (previously *Full*). <!--8027083-->
 
-Device names don't appear in Windows Update for Business reports unless you individually opt-in devices by using a policy. The configuration script does this action for you, but when using other client configuration methods, set one of the following policies to display device names:
+Device names don't appear in Windows Update for Business reports unless you individually opt in devices by using a policy. The configuration script does this action for you, but when using other client configuration methods, set one of the following policies to display device names:
 
 - CSP: System/[AllowDeviceNameInDiagnosticData](/windows/client-management/mdm/policy-csp-system#system-allowdevicenameindiagnosticdata)
 - Group Policy: **Allow device name to be sent in Windows diagnostic data** under **Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds**
