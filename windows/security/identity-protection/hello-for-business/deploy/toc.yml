@@ -49,7 +49,7 @@ items:
       href: ../hello-hybrid-aadj-sso.md
       displayName: certificate trust
     - name: Deploy certificates to Microsoft Entra joined devices
-      href: hello-hybrid-aadj-sso-cert.md
+      href: ../hello-hybrid-aadj-sso-cert.md
       displayName: certificate trust
 - name: On-premises deployments
   items:
