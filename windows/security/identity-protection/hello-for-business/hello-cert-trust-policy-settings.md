@@ -1,7 +1,7 @@
 ---
 title: Configure Windows Hello for Business Policy settings in an on-premises certificate trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business in an on-premises certificate trust scenario
-ms.date: 09/07/2023
+ms.date: 12/15/2023
 ms.topic: tutorial
 ---
 # Configure Windows Hello for Business group policy settings - on-premises certificate Trust
@@ -9,6 +9,7 @@ ms.topic: tutorial
 [!INCLUDE [hello-on-premises-cert-trust](./includes/hello-on-premises-cert-trust.md)]
 
 On-premises certificate-based deployments of Windows Hello for Business need three Group Policy settings:
+
 - Enable Windows Hello for Business
 - Use certificate for on-premises authentication
 - Enable automatic enrollment of certificates

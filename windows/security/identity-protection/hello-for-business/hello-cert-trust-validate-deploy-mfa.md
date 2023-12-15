@@ -1,7 +1,7 @@
 ---
 title: Validate and Deploy MFA for Windows Hello for Business with certificate trust
 description: Validate and deploy multifactor authentication (MFA) for Windows Hello for Business in an on-premises certificate trust model.
-ms.date: 09/07/2023
+ms.date: 12/15/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -28,4 +28,4 @@ For information about third-party authentication methods, see [Configure Additio
 Follow the integration and deployment guide for the authentication provider you plan to integrate to AD FS. Make sure that the authentication provider is selected as a multifactor authentication option in the AD FS authentication policy. For information on configuring AD FS authentication policies, see [Configure Authentication Policies](/windows-server/identity/ad-fs/operations/configure-authentication-policies).
 
 > [!div class="nextstepaction"]
-> [Next: configure Windows Hello for Business Policy settings](hello-cert-trust-policy-settings.md)
+> [Next: configure Windows Hello for Business Policy settings >](hello-cert-trust-policy-settings.md)

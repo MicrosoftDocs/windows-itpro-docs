@@ -1,5 +1,5 @@
 ---
-ms.date: 01/23/2023
+ms.date: 12/15/2023
 ms.topic: include
 ---
 
@@ -10,29 +10,18 @@ Windows clients communicate with AD FS via HTTPS. To meet this need, a *server a
 Sign in to a CA or management workstations with *Domain Administrator* equivalent credentials.
 
 1. Open the **Certification Authority** management console
-1. Right-click **Certificate Templates** and select **Manage**
+1. Right-click **Certificate Templates > Manage**
 1. In the **Certificate Template Console**, right-click the **Web Server** template in the details pane and select **Duplicate Template**
-1. On the **Compatibility** tab:
-   - Clear the **Show resulting changes** check box
-   - Select **Windows Server 2016** from the **Certification Authority** list
-   - Select **Windows 10 / Windows Server 2016** from the **Certificate Recipient** list
-1. On the **General** tab:
-   - Type *Internal Web Server* in **Template display name**
-   - Adjust the validity and renewal period to meet your enterprise's needs
-   > [!NOTE]
-   > If you use different template names, you'll need to remember and substitute these names in different portions of the lab.
-1. On the **Request Handling** tab, select **Allow private key to be exported**
-1. On the **Subject** tab, select the **Supply in the request** button if it isn't already selected
-1. On the **Security** tab:
-   - Select **Add**
-   - Type **Domain Computers** in the **Enter the object names to select** box
-   - Select **OK**
-   - Select the **Allow** check box next to the **Enroll** permission
-1. On the **Cryptography** tab:
-   - Select **Key Storage Provider** from the **Provider Category** list
-   - Select **RSA** from the **Algorithm name** list
-   - Type *2048* in the **Minimum key size** text box
-   - Select **SHA256** from the **Request hash** list
-   - Select **OK**
-1. Close the console
+1. Use the following table to configure the template:
 
+    | Tab Name | Configurations |
+    | --- | --- |
+    | *Compatibility* | <ul><li>Clear the **Show resulting changes** check box</li><li>Select **Windows Server 2016** from the *Certification Authority list*</li><li>Select **Windows 10 / Windows Server 2016** from the *Certification Recipient list*</li></ul>|
+    | *General* | <ul><li>Specify a **Template display name**, for example *Internal Web Server*</li><li>Set the validity period to the desired value</li><li>Take note of the template name for later, which should be the same as the Template display name minus spaces</li></ul>|
+    | *Request Handling* | Select **Allow private key to be exported** |
+    | *Subject Name* | Select **Supply in the request**|
+    |*Security*|Add **Domain Computers** with **Enroll** access|
+    |*Cryptography*|<ul><li>Set the *Provider Category* to **Key Storage Provider**</li><li>Set the *Algorithm name* to **RSA**</li><li>Set the *minimum key size* to **2048**</li><li>Set the *Request hash* to **SHA256**</li>|
+
+1. Select **OK** to finalize your changes and create the new template
+1. Close the console

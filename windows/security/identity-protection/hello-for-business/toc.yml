@@ -70,8 +70,6 @@ items:
       items: 
       - name: Overview
         href: hello-deployment-key-trust.md
-      - name: Validate Active Directory prerequisites
-        href: hello-key-trust-validate-ad-prereq.md
       - name: Configure and validate the PKI
         href: hello-key-trust-validate-pki.md
       - name: Prepare and deploy Active Directory Federation Services (AD FS)

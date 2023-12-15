@@ -1,7 +1,7 @@
 ---
 title: Configure Active Directory Federation Services in a hybrid certificate trust model
 description: Learn how to configure Active Directory Federation Services to support the Windows Hello for Business hybrid certificate trust model.
-ms.date: 01/03/2023
+ms.date: 12/15/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -10,6 +10,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
 ms.topic: tutorial
 ---
+
 # Configure Active Directory Federation Services - hybrid certificate trust
 
 [!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cert-trust.md)]

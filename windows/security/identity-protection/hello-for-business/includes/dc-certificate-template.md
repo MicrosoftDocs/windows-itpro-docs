@@ -1,5 +1,5 @@
 ---
-ms.date: 12/28/2022
+ms.date: 12/15/2023
 ms.topic: include
 ---
 
@@ -27,25 +27,14 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
 1. Open the **Certification Authority** management console
 1. Right-click **Certificate Templates > Manage**
 1. In the **Certificate Template Console**, right-click the **Kerberos Authentication** template in the details pane and select **Duplicate Template**
-1. On the **Compatibility** tab:
-   - Clear the **Show resulting changes** check box
-   - Select **Windows Server 2016** from the **Certification Authority** list
-   - Select **Windows 10 / Windows Server 2016** from the **Certificate Recipient** list
-1. On the **General** tab
-   - Type *Domain Controller Authentication (Kerberos)* in Template display name
-   - Adjust the validity and renewal period to meet your enterprise's needs
-   > [!NOTE]
-   > If you use different template names, you'll need to remember and substitute these names in different portions of the lab.
-1. On the **Subject Name** tab:
-   - Select the **Build from this Active Directory information** button if it isn't already selected
-   - Select **None** from the **Subject name format** list
-   - Select **DNS name** from the **Include this information in alternate subject** list
-   - Clear all other items
-1. On the **Cryptography** tab:
-   - Select **Key Storage Provider** from the **Provider Category** list
-   - Select **RSA** from the **Algorithm name** list
-   - Type *2048* in the **Minimum key size** text box
-   - Select **SHA256** from the **Request hash** list
-1. Select **OK**
-1. Close the console
+1. Use the following table to configure the template:
 
+    | Tab Name | Configurations |
+    | --- | --- |
+    | *Compatibility* | <ul><li>Clear the **Show resulting changes** check box</li><li>Select **Windows Server 2016** from the *Certification Authority list*</li><li>Select **Windows 10 / Windows Server 2016** from the *Certification Recipient list*</li></ul>|
+    | *General* | <ul><li>Specify a **Template display name**, for example *Domain Controller Authentication (Kerberos)*</li><li>Set the validity period to the desired value</li><li>Take note of the template name for later, which should be the same as the Template display name minus spaces</li></ul>|
+    | *Subject Name* | <ul><li>Select **Build from this Active Directory information**</li><li>Select **None** from the **Subject name format** list</li><li>Select **DNS name** from the **Include this information in alternate subject** list</li><li>Clear all other items</li></ul>|
+    |*Cryptography*|<ul><li>Set the *Provider Category* to **Key Storage Provider**</li><li>Set the *Algorithm name* to **RSA**</li><li>Set the *minimum key size* to **2048**</li><li>Set the *Request hash* to **SHA256**</li>|
+
+1. Select **OK** to finalize your changes and create the new template
+1. Close the console

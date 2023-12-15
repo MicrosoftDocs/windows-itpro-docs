@@ -1,5 +1,5 @@
 ---
-ms.date: 12/28/2022
+ms.date: 12/15/2023
 ms.topic: include
 ---
 
@@ -30,4 +30,3 @@ However, the certificate template and the superseding of certificate templates i
 >To see all certificates in the NTAuth store, use the following command:
 >
 > `Certutil -viewstore -enterprise NTAuth`
-

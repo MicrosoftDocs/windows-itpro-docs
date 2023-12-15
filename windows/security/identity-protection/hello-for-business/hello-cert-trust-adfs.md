@@ -1,7 +1,7 @@
 ---
 title: Prepare and deploy Active Directory Federation Services in an on-premises certificate trust model
 description: Learn how to configure Active Directory Federation Services to support the Windows Hello for Business on-premises certificate trust model.
-ms.date: 09/07/2023
+ms.date: 12/15/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -29,6 +29,7 @@ Prepare the AD FS deployment by installing and **updating** two Windows Servers.
 Typically, a federation service is an edge facing role. However, the federation services and instance used with the on-premises deployment of Windows Hello for Business does not need Internet connectivity.
 
 The AD FS role needs a *server authentication* certificate for the federation services, and you can use a certificate issued by your enterprise (internal) CA. The server authentication certificate should have the following names included in the certificate, if you are requesting an individual certificate for each node in the federation farm:
+
  - **Subject Name**: the internal FQDN of the federation server
  - **Subject Alternate Name**: the federation service name (e.g. *sts.corp.contoso.com*) or an appropriate wildcard entry (e.g. *\*.corp.contoso.com*)
 
@@ -318,4 +319,4 @@ Each file in this folder represents a certificate in the service account's Perso
 For detailed information about the certificate, use `Certutil -q -v <certificateThumbprintFileName>`.
 
 > [!div class="nextstepaction"]
-> [Next: validate and deploy multi-factor authentication (MFA)](hello-cert-trust-validate-deploy-mfa.md)
+> [Next: validate and deploy multi-factor authentication (MFA) >](hello-cert-trust-validate-deploy-mfa.md)

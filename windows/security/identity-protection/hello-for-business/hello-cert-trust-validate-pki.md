@@ -10,6 +10,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
 ms.topic: tutorial
 ---
+
 # Configure and validate the Public Key Infrastructure - on-premises certificate trust
 
 [!INCLUDE [hello-on-premises-cert-trust](./includes/hello-on-premises-cert-trust.md)]

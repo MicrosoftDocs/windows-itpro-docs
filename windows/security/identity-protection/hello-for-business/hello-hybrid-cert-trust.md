@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business hybrid certificate trust deployment
 description: Learn how to deploy Windows Hello for Business in a hybrid certificate trust scenario.
-ms.date: 03/16/2023
+ms.date: 12/15/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -51,8 +51,6 @@ The hybrid-certificate trust deployment needs an *Microsoft Entra ID P1 or P2* s
 > [!IMPORTANT]
 > Windows Hello for Business is tied between a user and a device. Both the user and device object must be synchronized between Microsoft Entra ID and Active Directory.
 
-<a name='federated-authentication-to-azure-ad'></a>
-
 ### Federated authentication to Microsoft Entra ID
 
 Windows Hello for Business hybrid certificate trust doesn't support Microsoft Entra ID *Pass-through Authentication* (PTA) or *password hash sync* (PHS).\
@@ -90,8 +88,6 @@ An enterprise public key infrastructure (PKI) is required as *trust anchor* for 
 The enterprise PKI and a certificate registration authority (CRA) are required to issue authentication certificates to users. Hybrid certificate trust deployment uses AD FS as a CRA.
 
 During Windows Hello for Business provisioning, users receive a sign-in certificate through the CRA.
-
-<a name='multi-factor-authentication'></a>
 
 ### Multifactor authentication
 
