@@ -44,7 +44,7 @@ If your policy allows it, people can use biometrics (fingerprint, iris, and faci
 
 ## Related topics
 
-- [Windows Hello for Business](requirements.md)
+- [Windows Hello for Business](deploy/requirements.md)
 - [How Windows Hello for Business works](hello-how-it-works.md)
 - [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)

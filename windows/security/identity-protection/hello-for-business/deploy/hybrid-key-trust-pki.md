@@ -53,6 +53,7 @@ Sign in using *Enterprise Administrator* equivalent credentials on a Windows Ser
 
 > [!IMPORTANT]
 > For Microsoft Entra joined devices to authenticate to on-premises resources, ensure to:
+>
 > - Install the root CA certificate in the device's trusted root certificate store. See [how to deploy a trusted certificate profile](/mem/intune/protect/certificates-trusted-root#to-create-a-trusted-certificate-profile) via Intune
 > - Publish your certificate revocation list to a location that is available to Microsoft Entra joined devices, such as a web-based URL
 
@@ -74,7 +75,7 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 1. Close the console
 
 > [!IMPORTANT]
-> If you plan to deploy **Microsoft Entra joined** devices, and require single sign-on (SSO) to on-premises resources when signing in with Windows Hello for Business, follow the procedures to [update your CA to include an http-based CRL distribution point](hello-hybrid-aadj-sso.md).
+> If you plan to deploy **Microsoft Entra joined** devices, and require single sign-on (SSO) to on-premises resources when signing in with Windows Hello for Business, follow the procedures to [update your CA to include an http-based CRL distribution point](../hello-hybrid-aadj-sso.md).
 
 ## Configure and deploy certificates to domain controllers
 
@@ -89,6 +90,7 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 Before moving to the next section, ensure the following steps are complete:
 
 > [!div class="checklist"]
+>
 > - Configure domain controller certificates
 > - Supersede existing domain controller certificates
 > - Unpublish superseded certificate templates

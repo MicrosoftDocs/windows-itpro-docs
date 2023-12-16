@@ -44,7 +44,7 @@ For more information read [how authentication works](hello-how-it-works-authenti
 ## Related topics
 
 - [Technology and Terminology](hello-how-it-works-technology.md)
-- [Windows Hello for Business](requirements.md)
+- [Windows Hello for Business](deploy/requirements.md)
 - [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)

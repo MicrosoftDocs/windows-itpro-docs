@@ -100,7 +100,7 @@ Sign-in a domain controller or management workstations with *Domain Admin* equiv
 
 > [!NOTE]
 > Windows Hello for Business can be configured using different policies. These policies are optional to configure, but it's recommended to enable *Use a hardware security device*.
-> 
+>
 > For more information about these policies, see [Group Policy settings for Windows Hello for Business](../hello-manage-in-organization.md#group-policy-settings-for-windows-hello-for-business).
 
 ### Configure security for GPO
