@@ -13,12 +13,12 @@ Windows Hello for Business replaces username and password authentication to Wind
 
 1. [Validate and configure a PKI](on-premises-key-trust-pki.md)
 1. [Prepare and deploy AD FS](on-premises-key-trust-adfs.md)
-1. [Validate and deploy multi-factor authentication (MFA)](on-premises-key-trust-mfa.md)
+1. [Validate and deploy multifactor authentication (MFA)](on-premises-key-trust-mfa.md)
 1. [Configure Windows Hello for Business Policy settings](on-premises-key-trust-enroll.md)
 
 ## Create the Windows Hello for Business Users security group
 
-While this is not a required step, it is recommended to create a security group to simplify the deployment.
+While this isn't a required step, it's recommended to create a security group to simplify the deployment.
 
 The *Windows Hello for Business Users* group is used to make it easy to deploy Windows Hello for Business in phases. You assign Group Policy permissions to this group to simplify the deployment by adding the users to the group. This provides users with the proper permissions to provision Windows Hello for Business.
 
