@@ -1,6 +1,6 @@
 ---
-title: Configure and validate the Public Key Infrastructure in an hybrid key trust model
-description: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in an hybrid key trust model.
+title: Configure and validate the Public Key Infrastructure in a hybrid key trust model
+description: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in a hybrid key trust model.
 ms.date: 01/03/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
