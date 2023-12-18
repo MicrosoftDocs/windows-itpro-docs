@@ -44,7 +44,7 @@ Hybrid Windows Hello for Business needs two directories:
 - A Microsoft Entra tenant with a Microsoft Entra ID P1 or P2 subscription
 
 The two directories must be synchronized with [Microsoft Entra Connect Sync][AZ-1], which synchronizes user accounts from the on-premises Active Directory to Microsoft Entra ID.
-The hybrid-certificate trust deployment needs an *Microsoft Entra ID P1 or P2* subscription because it uses the device write-back synchronization feature.
+The hybrid-certificate trust deployment needs a *Microsoft Entra ID P1 or P2* subscription because it uses the device write-back synchronization feature.
 
 > [!NOTE]
 > Windows Hello for Business hybrid certificate trust is not supported if the users' on-premises UPN suffix cannot be added as a verified domain in Microsoft Entra ID.
