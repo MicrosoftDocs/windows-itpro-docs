@@ -8,7 +8,7 @@ ms.topic: tutorial
 ---
 # Cloud Kerberos trust deployment
 
-[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cloudkerb-trust.md)]
+[!INCLUDE [apply-to-hybrid-cloud-kerberos-trust](includes/apply-to-hybrid-cloud-kerberos-trust.md)]
 
 Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This deployment guide provides the information to deploy Windows Hello for Business in a *cloud Kerberos trust* scenario.
 
@@ -45,7 +45,7 @@ When Microsoft Entra Kerberos is enabled in an Active Directory domain, an *Azur
 :::image type="content" source="images/azuread-kerberos-object.png" alt-text="Active Directory Users and Computers console, showing the computer object representing the Microsoft Entra Kerberos server ":::
 
 For more information about how Microsoft Entra Kerberos enables access to on-premises resources, see [enabling passwordless security key sign-in to on-premises resources][AZ-1].\
-For more information about how Microsoft Entra Kerberos works with Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business authentication technical deep dive](hello-how-it-works-authentication.md#hybrid-azure-ad-join-authentication-using-cloud-kerberos-trust).
+For more information about how Microsoft Entra Kerberos works with Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business authentication technical deep dive](../hello-how-it-works-authentication.md#hybrid-azure-ad-join-authentication-using-cloud-kerberos-trust).
 
 > [!IMPORTANT]
 > When implementing the cloud Kerberos trust deployment model, you *must* ensure that you have an adequate number of *read-write domain controllers* in each Active Directory site where users will be authenticating with Windows Hello for Business. For more information, see [Capacity planning for Active Directory][SERV-1].
@@ -84,7 +84,7 @@ Once the prerequisites are met, deploying Windows Hello for Business with a clou
 > * Provision Windows Hello for Business on Windows clients
 
 > [!div class="nextstepaction"]
-> [Next: configure and provision Windows Hello for Business >](hello-hybrid-cloud-kerberos-trust-provision.md)
+> [Next: configure and provision Windows Hello for Business >](hybrid-cloud-kerberos-trust-enroll.md)
 
 <!--Links-->
 

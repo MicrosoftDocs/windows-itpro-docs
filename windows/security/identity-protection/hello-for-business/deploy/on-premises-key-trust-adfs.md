@@ -12,7 +12,7 @@ ms.topic: tutorial
 ---
 # Prepare and deploy Active Directory Federation Services - on-premises key trust
 
-[!INCLUDE [hello-on-premises-key-trust](./includes/hello-on-premises-key-trust.md)]
+[!INCLUDE [apply-to-on-premises-key-trust](includes/apply-to-on-premises-key-trust.md)]
 
 Windows Hello for Business works exclusively with the Active Directory Federation Service (AD FS) role included with Windows Server. The on-premises key trust deployment model uses AD FS for *key registration* and *device registration*.
 
@@ -261,4 +261,4 @@ Before you continue with the deployment, validate your deployment progress by re
 > * Confirm you created and deployed the Intranet Zone settings to prevent double authentication to the federation server
 
 > [!div class="nextstepaction"]
-> [Next: validate and deploy multi-factor authentication (MFA)](hello-key-trust-validate-deploy-mfa.md)
+> [Next: validate and deploy multi-factor authentication (MFA)](on-premises-key-trust-mfa.md)

@@ -74,7 +74,7 @@ For a UWP VPN plug-in, the app vendor controls the authentication method to be u
 See [EAP configuration](/windows/client-management/mdm/eap-configuration) for EAP XML configuration.
 
 >[!NOTE]
->To configure Windows Hello for Business authentication, follow the steps in [EAP configuration](/windows/client-management/mdm/eap-configuration) to create a smart card certificate. [Learn more about Windows Hello for Business.](../../../identity-protection/hello-for-business/hello-identity-verification.md).
+>To configure Windows Hello for Business authentication, follow the steps in [EAP configuration](/windows/client-management/mdm/eap-configuration) to create a smart card certificate. [Learn more about Windows Hello for Business.](../../../identity-protection/hello-for-business/index.md).
 
 The following image shows the field for EAP XML in a Microsoft Intune VPN profile. The EAP XML field only appears when you select a built-in connection type (automatic, IKEv2, L2TP, PPTP).
 

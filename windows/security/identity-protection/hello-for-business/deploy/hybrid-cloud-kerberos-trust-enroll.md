@@ -8,7 +8,7 @@ ms.topic: tutorial
 ---
 # Configure and provision Windows Hello for Business - cloud Kerberos trust
 
-[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cloudkerb-trust.md)]
+[!INCLUDE [apply-to-hybrid-cloud-kerberos-trust](includes/apply-to-hybrid-cloud-kerberos-trust.md)]
 
 ## Deployment steps
 
@@ -29,7 +29,7 @@ If you haven't deployed Microsoft Entra Kerberos, follow the instructions in the
 
 After setting up the Microsoft Entra Kerberos object, Windows Hello for business cloud Kerberos trust must be enabled on your Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 
-#### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune**](#tab/intune)
+#### [:::image type="icon" source="images/intune.svg"::: **Intune**](#tab/intune)
 
 For devices managed by Intune, you can use Intune policies to configure Windows Hello for Business.
 
@@ -68,7 +68,7 @@ To configure Windows Hello for Business using an account protection policy:
 1. Specify a **Name** and, optionally, a **Description** > **Next**.
 1. Under **Block Windows Hello for Business**, select **Disabled** and multiple policies become available.
     - These policies are optional to configure, but it's recommended to configure **Enable to use a Trusted Platform Module (TPM)** to **Yes**.
-    - For more information about these policies, see [MDM policy settings for Windows Hello for Business](hello-manage-in-organization.md#mdm-policy-settings-for-windows-hello-for-business).
+    - For more information about these policies, see [MDM policy settings for Windows Hello for Business](../hello-manage-in-organization.md#mdm-policy-settings-for-windows-hello-for-business).
 1. Under **Enable to certificate for on-premises resources**, select **Not configured**
 1. Select **Next**.
 1. Optionally, add **scope tags** and select **Next**.
@@ -107,7 +107,7 @@ To configure the cloud Kerberos trust policy:
 
 1. Assign the policy to a security group that contains as members the devices or users that you want to configure.
 
-#### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
+#### [:::image type="icon" source="images/group-policy.svg"::: **GPO**](#tab/gpo)
 
 Microsoft Entra hybrid joined organizations can use Windows Hello for Business Group Policy to manage the feature. Group Policy can be configured to enable users to enroll and use Windows Hello for Business.
 
@@ -118,7 +118,7 @@ You can configure the Enable Windows Hello for Business Group Policy setting for
 Cloud Kerberos trust requires setting a dedicated policy for it to be enabled. This policy is only available as a computer configuration.
 
 > [!NOTE]
-> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune][MEM-1] and [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp). For more information about policy conflicts, see [Policy conflicts from multiple policy sources](hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources).
+> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune][MEM-1] and [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp). For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources).
 
 #### Update administrative templates
 
@@ -199,7 +199,7 @@ If you deployed Windows Hello for Business using the certificate trust model, an
 
 ## Frequently Asked Questions
 
-For a list of frequently asked questions about Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business Frequently Asked Questions](hello-faq.yml#cloud-kerberos-trust).
+For a list of frequently asked questions about Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business Frequently Asked Questions](../hello-faq.yml#cloud-kerberos-trust).
 
 <!--Links-->
 

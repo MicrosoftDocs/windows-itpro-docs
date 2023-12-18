@@ -12,7 +12,7 @@ ms.topic: tutorial
 ---
 # Configure and validate the Public Key Infrastructure - on-premises key trust
 
-[!INCLUDE [hello-on-premises-key-trust](./includes/hello-on-premises-key-trust.md)]
+[!INCLUDE [apply-to-on-premises-key-trust](includes/apply-to-on-premises-key-trust.md)]
 
 Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* or *certificate trust* models. The domain controllers must have a certificate, which serves as a root of trust for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
 
@@ -52,4 +52,4 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 [!INCLUDE [dc-certificate-validate](includes/dc-certificate-validate.md)]
 
 > [!div class="nextstepaction"]
-> [Next: prepare and deploy AD FS >](hello-key-trust-adfs.md)
+> [Next: prepare and deploy AD FS >](on-premises-key-trust-adfs.md)
