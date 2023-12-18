@@ -2,7 +2,7 @@
 title: Remote Credential Guard 
 description: Learn how Remote Credential Guard helps to secure Remote Desktop credentials by never sending them to the target device.
 ms.topic: how-to
-ms.date: 12/04/2023
+ms.date: 12/08/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -145,8 +145,8 @@ The policy can have different values, depending on the level of security you wan
 - **Require Remote Credential Guard**: Remote Desktop Client must use Remote Credential Guard to connect to remote hosts
 - **Restrict credential delegation**: Remote Desktop Client must use Restricted Admin or Remote Credential Guard to connect to remote hosts. In this configuration, Remote Credential Guard is preferred, but it uses Restricted Admin mode (if supported) when Remote Credential Guard can't be used
 
-> [!NOTE]
-> When *Restrict Credential Delegation* is enabled, the `/restrictedAdmin` switch will be ignored. Windows enforces the policy configuration instead and uses Remote Credential Guard.
+  > [!NOTE]
+  > When *Restrict Credential Delegation* is enabled, the `/restrictedAdmin` switch will be ignored. Windows enforces the policy configuration instead and uses Remote Credential Guard.
 
 To configure your clients, you can use:
 
@@ -187,11 +187,11 @@ Not documented.
 
 ---
 
-## Use Remote Credential Guard
+## User experience
 
 Once a client receives the policy, you can connect to the remote host using Remote Credential Guard by opening the Remote Desktop Client (`mstsc.exe`). The user is automatically authenticated to the remote host:
 
-:::image type="content" source="images/remote-credential-guard.gif" alt-text="Animation showing a client connecting to a remote server using Remote Credential Guard with SSO.":::
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=39cc96a2-5193-48be-a4f3-d491571fd9a1]
 
 > [!NOTE]
 > The user must be authorized to connect to the remote server using the Remote Desktop protocol, for example by being a member of the Remote Desktop Users local group on the remote host.
