@@ -19,13 +19,24 @@ appliesto:
 
 # Deprecated features for Windows client
 
-Each version of Windows client adds new features and functionality. Occasionally, new versions also remove features and functionality, often because they've added a newer option. This article provides details about the features and functionalities that are no longer being developed in Windows client. For more information about features that have been removed, see [Windows features removed](removed-features.md).
+Each version of Windows client adds new features and functionality. Occasionally, new versions also remove features and functionality, often because they've added a newer option. This article provides details about the features and functionalities that are no longer being developed in Windows client.<!-- this sentence is used by tip for RSS --> For more information about features that have been removed, see [Windows features removed](removed-features.md).
 
 For more information about features in Windows 11, see [Feature deprecations and removals](https://www.microsoft.com/windows/windows-11-specifications#table3).
 
 To understand the distinction between *deprecation* and *removal*, see [Windows client features lifecycle](feature-lifecycle.md).
 
 The features in this article are no longer being actively developed, and might be removed in a future update. Some features have been replaced with other features or functionality and some are now available from other sources.
+
+> [!TIP]
+> You can use RSS to be notified when this page is updated.<!-- 8590853 --> For example, the following RSS link includes this article:
+>
+> ``` url
+> https://learn.microsoft.com/api/search/rss?search=%22details+about+the+features+and+functionalities+that+are+no+longer+being+developed+in+Windows%22&locale=en-us&%24filter=%28category+eq+%27Documentation%27%29
+> ```
+>
+> This example includes the `&locale=en-us` variable. The `locale` variable is required, but you can change it to another supported locale. For example, `&locale=ja-jp`.
+>
+> For more information on using RSS for notifications, see [How to use the docs](/mem/use-docs#notifications) in the Intune documentation.
 
 ## Deprecated features
 
