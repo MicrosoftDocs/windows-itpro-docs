@@ -5,7 +5,7 @@ metadata:
   author: paolomatarazzo
   ms.author: paoloma
   ms.topic: faq
-  ms.date: 08/03/2023
+  ms.date: 12/08/2023
 
 title: Common questions about Windows Hello for Business
 summary: Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This Frequently Asked Questions (FAQ) article is intended to help you learn more about Windows Hello for Business.
@@ -242,7 +242,7 @@ sections:
           - attempting to access on-premises resources secured by Active Directory
       - question: Can I use RDP/VDI with Windows Hello for Business cloud Kerberos trust?
         answer: |
-          Windows Hello for Business cloud Kerberos trust can't be used as a supplied credential with RDP/VDI. Similar to key trust, cloud Kerberos trust can be used for RDP with [Remote Credential Guard](/windows/security/identity-protection/remote-credential-guard) or if a [certificate is enrolled into Windows Hello for Business](hello-deployment-rdp-certs.md) for this purpose.
+          Windows Hello for Business cloud Kerberos trust can't be used as a supplied credential with RDP/VDI. Similar to key trust, cloud Kerberos trust can be used for RDP with [Remote Credential Guard](/windows/security/identity-protection/remote-credential-guard) or if a [certificate is enrolled into Windows Hello for Business](rdp-sign-in.md) for this purpose.
       - question: Do all my domain controllers need to be fully patched as per the prerequisites for me to use Windows Hello for Business cloud Kerberos trust?
         answer: |
           No, only the number necessary to handle the load from all cloud Kerberos trust devices.

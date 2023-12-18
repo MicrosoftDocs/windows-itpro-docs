@@ -2,13 +2,13 @@
 
 
 
-## Week of November 06, 2023
+## Week of December 11, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 11/7/2023 | [Reset devices with Autopilot Reset](/education/windows/autopilot-reset) | modified |
-| 11/9/2023 | [Configure Stickers for Windows 11 SE](/education/windows/edu-stickers) | modified |
-| 11/9/2023 | What's new in the Windows Set up School PCs app | removed |
-| 11/9/2023 | [Management functionalities for Surface devices](/education/windows/tutorial-school-deployment/manage-surface-devices) | modified |
-| 11/9/2023 | [Use Set up School PCs app](/education/windows/use-set-up-school-pcs-app) | modified |
+| 12/12/2023 | Chromebook migration guide | removed |
+| 12/12/2023 | Deploy Windows 10 in a school district | removed |
+| 12/12/2023 | Deploy Windows 10 in a school | removed |
+| 12/12/2023 | Windows 10 for Education | removed |
+| 12/12/2023 | [Reset devices with Autopilot Reset](/education/windows/autopilot-reset) | modified |
