@@ -1,13 +1,13 @@
 ---
-title: How to use Single Sign-On (SSO) over VPN and Wi-Fi connections
-description: Explains requirements to enable Single Sign-On (SSO) to on-premises domain resources over WiFi or VPN connections.
-ms.date: 08/03/2023
+title: How to use single sign-on (SSO) over VPN and Wi-Fi connections
+description: Explains requirements to enable single sign-on (SSO) to on-premises domain resources over WiFi or VPN connections.
+ms.date: 12/12/2023
 ms.topic: how-to
 ---
 
-# How to use Single Sign-On (SSO) over VPN and Wi-Fi connections
+# How to use single sign-on (SSO) over VPN and Wi-Fi connections
 
-This article explains requirements to enable Single Sign-On (SSO) to on-premises domain resources over Wi-Fi or VPN connections. The following scenarios are typically used:
+This article explains requirements to enable single sign-on (SSO) to on-premises domain resources over Wi-Fi or VPN connections. The following scenarios are typically used:
 
 - Connecting to a network using Wi-Fi or VPN
 - Use credentials for Wi-Fi or VPN authentication to also authenticate requests to access domain resources, without being prompted for domain credentials
@@ -21,7 +21,7 @@ The credentials that are used for the connection authentication are placed in *C
 
 The credentials are placed in Credential Manager as a *session credential*:
 
-- A *session credential* implies that it is valid for the current user session
+- A *session credential* implies that it's valid for the current user session
 - The credentials are cleaned up when the Wi-Fi or VPN connection is disconnected
 
 > [!NOTE]
@@ -30,22 +30,22 @@ The credentials are placed in Credential Manager as a *session credential*:
 For example, if someone using Microsoft Edge tries to access a domain resource, Microsoft Edge has the right Enterprise Authentication capability. This allows [WinInet](/windows/win32/wininet/wininet-reference) to release the credentials that it gets from Credential Manager to the SSP that is requesting it.
 For more information about the Enterprise Authentication capability, see [App capability declarations](/windows/uwp/packaging/app-capability-declarations).
 
-The local security authority will look at the device application to determine if it has the right capability. This includes items such as a Universal Windows Platform (UWP) application.
+The local security authority looks at the device application to determine if it has the right capability. This includes items such as a Universal Windows Platform (UWP) application.
 If the app isn't a UWP, it doesn't matter.
-But, if the application is a UWP app, it will evaluate at the device capability for Enterprise Authentication.
-If it does have that capability and if the resource that you're trying to access is in the Intranet zone in the Internet Options (ZoneMap), then the credential will be released.
+But, if the application is a UWP app, it evaluates at the device capability for Enterprise Authentication.
+If it does have that capability and if the resource that you're trying to access is in the Intranet zone in the Internet Options (ZoneMap), then the credential is released.
 This behavior helps prevent credentials from being misused by untrusted third parties.
 
 ## Intranet zone
 
-For the Intranet zone, by default it only allows single-label names, such as *http://finance*.
+For the Intranet zone, by default it only allows single-label names, such as `http://finance`.
 If the resource that needs to be accessed has multiple domain labels, then the workaround is to use the [Registry CSP](/windows/client-management/mdm/registry-csp).
 
 ### Setting the ZoneMap
 
 The ZoneMap is controlled using a registry that can be set through MDM.
-By default, single-label names such as *http://finance* are already in the intranet zone.
-For multi-label names, such as *http://finance.net*, the ZoneMap needs to be updated.
+By default, single-label names such as `http://finance` are already in the intranet zone.
+For multi-label names, such as `http://finance.net`, the ZoneMap needs to be updated.
 
 ## MDM Policy
 
@@ -72,8 +72,8 @@ If the credentials are certificate-based, then the elements in the following tab
 
 | Template element | Configuration |
 |------------------|---------------|
-| SubjectName | The user's distinguished name (DN) where the domain components of the distinguished name reflect the internal DNS namespace when the SubjectAlternativeName does not have the fully qualified UPN required to find the domain controller. </br>This requirement is relevant in multi-forest environments as it ensures a domain controller can be located. |
-| SubjectAlternativeName | The user's fully qualified UPN where a domain name component of the user's UPN matches the organizations internal domain's DNS namespace. </br>This requirement is relevant in multi-forest environments as it ensures a domain controller can be located when the SubjectName does not have the DN required to find the domain controller. |
+| SubjectName | The user's distinguished name (DN) where the domain components of the distinguished name reflect the internal DNS namespace when the SubjectAlternativeName doesn't have the fully qualified UPN required to find the domain controller. </br>This requirement is relevant in multi-forest environments as it ensures a domain controller can be located. |
+| SubjectAlternativeName | The user's fully qualified UPN where a domain name component of the user's UPN matches the organizations internal domain's DNS namespace. </br>This requirement is relevant in multi-forest environments as it ensures a domain controller can be located when the SubjectName doesn't have the DN required to find the domain controller. |
 | Key Storage Provider (KSP) | If the device is joined to Microsoft Entra ID, a discrete SSO certificate is used. |
 | EnhancedKeyUsage | One or more of the following EKUs is required: </br><ul><li>Client Authentication (for the VPN)</li><li>EAP Filtering OID (for Windows Hello for Business)</li><li>SmartCardLogon (for Microsoft Entra joined devices)</li></ul>If the domain controllers require smart card EKU either:<ul><li>SmartCardLogon</li><li>id-pkinit-KPClientAuth (1.3.6.1.5.2.3.4) </li></ul>Otherwise:</br><ul><li>TLS/SSL Client Authentication (1.3.6.1.5.5.7.3.2)</li></ul> |
 
@@ -86,9 +86,6 @@ For more information, see [Configure certificate infrastructure for SCEP](/mem/i
 
 You need IP connectivity to a DNS server and domain controller over the network interface so that authentication can succeed as well.
 
-Domain controllers must have appropriate KDC certificates for the client to trust them as domain controllers. Because phones are not domain-joined, the root CA of the KDC's certificate must be in the Third-Party Root CA or Smart Card Trusted Roots store.
+Domain controllers must have appropriate KDC certificates for the client to trust them as domain controllers. Because phones aren't domain-joined, the root CA of the KDC's certificate must be in the Third-Party Root CA or Smart Card Trusted Roots store.
 
-Domain controllers must be using certificates based on the updated KDC certificate template Kerberos Authentication.
-This requires that all authenticating domain controllers run Windows Server 2016, or you'll need to enable strict KDC validation on domain controllers that run previous versions of Windows Server.
-
-For more information, see [Enabling Strict KDC Validation in Windows Kerberos](https://www.microsoft.com/download/details.aspx?id=6382).
+Domain controllers must be using certificates based on the updated *KDC certificate template* Kerberos Authentication.

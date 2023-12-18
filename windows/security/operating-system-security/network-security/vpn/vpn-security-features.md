@@ -2,7 +2,7 @@
 title: VPN security features
 description: Learn about security features for VPN, including LockDown VPN and traffic filters.
 ms.date: 08/03/2023
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # VPN security features
