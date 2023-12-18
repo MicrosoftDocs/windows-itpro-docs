@@ -10,7 +10,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
 ms.topic: tutorial
 ---
-# Configure and validate the PKI in an hybrid certificate trust model
+# Configure and validate the PKI in a hybrid certificate trust model
 
 [!INCLUDE [apply-to-hybrid-cert-trust](includes/apply-to-hybrid-cert-trust.md)]
 
