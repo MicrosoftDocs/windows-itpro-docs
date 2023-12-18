@@ -15,13 +15,13 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
 1. Use the following table to configure the template:
 
     | Tab Name | Configurations |
-    | --- | --- |
-    | *Compatibility* | <ul><li>Clear the **Show resulting changes** check box</li><li>Select **Windows Server 2016** from the *Certification Authority list*</li><li>Select **Windows 10 / Windows Server 2016** from the *Certification Recipient list*</li></ul>|
-    | *General* | <ul><li>Specify a **Template display name**, for example *Internal Web Server*</li><li>Set the validity period to the desired value</li><li>Take note of the template name for later, which should be the same as the Template display name minus spaces</li></ul>|
+    |--|--|
+    | *Compatibility* | <ul><li>Clear the **Show resulting changes** check box</li><li>Select **Windows Server 2016** from the *Certification Authority list*</li><li>Select **Windows 10 / Windows Server 2016** from the *Certification Recipient list*</li></ul> |
+    | *General* | <ul><li>Specify a **Template display name**, for example *Internal Web Server*</li><li>Set the validity period to the desired value</li><li>Take note of the template name for later, which should be the same as the Template display name minus spaces</li></ul> |
     | *Request Handling* | Select **Allow private key to be exported** |
-    | *Subject Name* | Select **Supply in the request**|
-    |*Security*|Add **Domain Computers** with **Enroll** access|
-    |*Cryptography*|<ul><li>Set the *Provider Category* to **Key Storage Provider**</li><li>Set the *Algorithm name* to **RSA**</li><li>Set the *minimum key size* to **2048**</li><li>Set the *Request hash* to **SHA256**</li>|
+    | *Subject Name* | Select **Supply in the request** |
+    | *Security* | Add **Domain Computers** with **Enroll** access |
+    | *Cryptography* | <ul><li>Set the *Provider Category* to **Key Storage Provider**</li><li>Set the *Algorithm name* to **RSA**</li><li>Set the *minimum key size* to **2048**</li><li>Set the *Request hash* to **SHA256**</li> |
 
 1. Select **OK** to finalize your changes and create the new template
 1. Close the console

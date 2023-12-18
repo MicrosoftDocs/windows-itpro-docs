@@ -10,6 +10,8 @@ items:
     href: hello-biometrics-in-enterprise.md
   - name: How Windows Hello for Business works
     href: hello-how-it-works.md
+- name: Plan a Windows Hello for Business deployment
+  href: hello-planning-guide.md
 - name: Deployment guides
   href: deploy/toc.yml
 - name: How-to Guides

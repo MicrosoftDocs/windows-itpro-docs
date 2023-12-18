@@ -12,16 +12,16 @@ ms.topic: how-to
 ---
 # Hybrid key trust deployment
 
-[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-key-trust.md)]
+[!INCLUDE [apply-to-hybrid-key-trust](includes/apply-to-hybrid-key-trust.md)]
 
 Hybrid environments are distributed systems that enable organizations to use on-premises and Microsoft Entra protected resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication and single sign-on to modern resources.
 
 This deployment guide describes how to deploy Windows Hello for Business in a hybrid key trust scenario.
 
 > [!IMPORTANT]
-> Windows Hello for Business *cloud Kerberos trust* is the recommended deployment model when compared to the *key trust model*. For more information, see [cloud Kerberos trust deployment](hello-hybrid-cloud-kerberos-trust.md).
+> Windows Hello for Business *cloud Kerberos trust* is the recommended deployment model when compared to the *key trust model*. For more information, see [cloud Kerberos trust deployment](hybrid-cloud-kerberos-trust.md).
 
-It is recommended that you review the [Windows Hello for Business planning guide](hello-planning-guide.md) prior to using the deployment guide. The planning guide helps you make decisions by explaining the available options with each aspect of the deployment and explains the potential outcomes based on each of these decisions.
+It is recommended that you review the [Windows Hello for Business planning guide](../hello-planning-guide.md) prior to using the deployment guide. The planning guide helps you make decisions by explaining the available options with each aspect of the deployment and explains the potential outcomes based on each of these decisions.
 
 ## Prerequisites
 
@@ -94,7 +94,7 @@ Once the prerequisites are met, deploying Windows Hello for Business with a hybr
 > * Configure single sign-on (SSO) for Microsoft Entra joined devices
 
 > [!div class="nextstepaction"]
-> [Next: configure and validate the Public Key Infrastructure >](hello-hybrid-key-trust-validate-pki.md)
+> [Next: configure and validate the Public Key Infrastructure >](hybrid-key-trust-pki.md)
 
 <!--links-->
 [AZ-1]: /azure/active-directory/hybrid/how-to-connect-sync-whatis

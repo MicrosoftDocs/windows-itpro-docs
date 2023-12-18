@@ -1,6 +1,6 @@
 ---
-title: Configure and validate the Public Key Infrastructure in an hybrid key trust model
-description: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in an hybrid key trust model.
+title: Configure and validate the Public Key Infrastructure in a hybrid key trust model
+description: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in a hybrid key trust model.
 ms.date: 01/03/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
@@ -12,7 +12,7 @@ ms.topic: tutorial
 ---
 # Configure and validate the Public Key Infrastructure - hybrid key trust
 
-[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-key-trust.md)]
+[!INCLUDE [apply-to-hybrid-key-trust](includes/apply-to-hybrid-key-trust.md)]
 
 Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* model. The domain controllers must have a certificate, which serves as a *root of trust* for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
 
@@ -53,6 +53,7 @@ Sign in using *Enterprise Administrator* equivalent credentials on a Windows Ser
 
 > [!IMPORTANT]
 > For Microsoft Entra joined devices to authenticate to on-premises resources, ensure to:
+>
 > - Install the root CA certificate in the device's trusted root certificate store. See [how to deploy a trusted certificate profile](/mem/intune/protect/certificates-trusted-root#to-create-a-trusted-certificate-profile) via Intune
 > - Publish your certificate revocation list to a location that is available to Microsoft Entra joined devices, such as a web-based URL
 
@@ -74,7 +75,7 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 1. Close the console
 
 > [!IMPORTANT]
-> If you plan to deploy **Microsoft Entra joined** devices, and require single sign-on (SSO) to on-premises resources when signing in with Windows Hello for Business, follow the procedures to [update your CA to include an http-based CRL distribution point](hello-hybrid-aadj-sso.md).
+> If you plan to deploy **Microsoft Entra joined** devices, and require single sign-on (SSO) to on-premises resources when signing in with Windows Hello for Business, follow the procedures to [update your CA to include an http-based CRL distribution point](../hello-hybrid-aadj-sso.md).
 
 ## Configure and deploy certificates to domain controllers
 
@@ -89,6 +90,7 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 Before moving to the next section, ensure the following steps are complete:
 
 > [!div class="checklist"]
+>
 > - Configure domain controller certificates
 > - Supersede existing domain controller certificates
 > - Unpublish superseded certificate templates
@@ -97,7 +99,7 @@ Before moving to the next section, ensure the following steps are complete:
 > - Validate the domain controllers configuration
 
 > [!div class="nextstepaction"]
-> [Next: configure and provision Windows Hello for Business >](hello-hybrid-key-trust-provision.md)
+> [Next: configure and provision Windows Hello for Business >](hybrid-key-trust-enroll.md)
 
 <!--links-->
 [SERV-1]: /troubleshoot/windows-server/windows-security/requirements-domain-controller

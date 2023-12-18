@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Cloud-only deployment
 
-[!INCLUDE [hello-hybrid-key-trust](./includes/hello-cloud.md)]
+[!INCLUDE [apply-to-cloud](includes/apply-to-cloud.md)]
 
 ## Introduction
 
@@ -21,7 +21,7 @@ You may wish to disable the automatic Windows Hello for Business enrollment prom
 
 Cloud only deployments will use Microsoft Entra multifactor authentication (MFA) during Windows Hello for Business enrollment, and there's no additional MFA configuration needed. If you aren't already registered in MFA, you'll be guided through the MFA registration as part of the Windows Hello for Business enrollment process.
 
-The necessary Windows Hello for Business prerequisites are located at [Cloud Only Deployment](hello-identity-verification.md#azure-ad-cloud-only-deployment).
+The necessary Windows Hello for Business prerequisites are located at [Cloud Only Deployment](requirements.md#azure-ad-cloud-only-deployment).
 
 It's possible for federated domains to configure the *FederatedIdpMfaBehavior* flag. The flag instructs Microsoft Entra ID to accept, enforce, or reject the MFA challenge from the federated IdP. For more information, see [federatedIdpMfaBehavior values](/graph/api/resources/internaldomainfederation#federatedidpmfabehavior-values). To check this setting, use the following PowerShell command:
 
@@ -54,7 +54,7 @@ The following method explains how to disable Windows Hello for Business enrollme
     When disabled, users can't provision Windows Hello for Business. When set to Disabled, you can still configure the subsequent settings for Windows Hello for Business even though this policy won't enable Windows Hello for Business.
 
 > [!NOTE]
-> This policy is only applied during new device enrollments. For currently enrolled devices, you can [set the same settings in a device configuration policy](hello-manage-in-organization.md).
+> This policy is only applied during new device enrollments. For currently enrolled devices, you can [set the same settings in a device configuration policy](../hello-manage-in-organization.md).
 
 ## Disable Windows Hello for Business enrollment without Intune
 
@@ -62,7 +62,7 @@ If you don't use Intune in your organization, then you can disable Windows Hello
 
 Intune uses the following registry keys: **`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\Device\Policies`**
 
-To look up your Tenant ID, see [How to find your Microsoft Entra tenant ID](/azure/active-directory/fundamentals/how-to-find-tenant) or try the following, ensuring to sign-in with your organization's account:
+To look up your Tenant ID, see [How to find your Microsoft Entra tenant ID](/azure/active-directory/fundamentals/how-to-find-tenant) or try the following, ensuring to sign in with your organization's account:
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization?$select=id
