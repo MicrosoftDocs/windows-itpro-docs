@@ -38,7 +38,7 @@ Using an SOE can vastly simplify the migration and reduce overall deployment cha
 |[Identify users](usmt-identify-users.md)|Use command-line options to specify which users to migrate and how they should be migrated.|
 |[Identify applications settings](usmt-identify-application-settings.md)|Determine which applications you want to migrate and prepare a list of application settings to be migrated.|
 |[Identify operating system settings](usmt-identify-operating-system-settings.md)|Use migration to create a new standard environment on each of the destination computers.|
-|[Identify file types, files, and folders](usmt-identify-file-types-files-and-folders.md)|For the items that need to be migrated, determine and locate the following locations:<br><ul><li>Standard.</li><li>Company-specified.</li><li>Non-standard.</li></ul>of the following items: <ul><li>File types.</li><li>Files.</li><li>Folders.</li><li>Settings.</li></ul>|
+|[Identify file types, files, and folders](usmt-identify-file-types-files-and-folders.md)|For the following items that need to be migrated: <br><ul><li>File types.</li><li>Files.</li><li>Folders.</li><li>Settings.</li></ul> determine and locate the following locations where these items might be located:<br><ul><li>Standard.</li><li>Company-specified.</li><li>Non-standard.</li></ul>|
 
 ## Related articles
 
