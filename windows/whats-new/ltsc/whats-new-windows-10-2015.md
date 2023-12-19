@@ -2,20 +2,23 @@
 title: What's new in Windows 10 Enterprise LTSC 2015
 manager: aaroncz
 ms.author: mstewart
-description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2015 (also known as Windows 10 Enterprise 2015 LTSB).
+description: New and updated IT pro content about new features in Windows 10 Enterprise LTSC 2015 (also known as Windows 10 Enterprise 2015 LTSB).
 ms.prod: windows-client
 author: mestew
 ms.localizationpriority: low
-ms.topic: article
+ms.topic: conceptual
 ms.technology: itpro-fundamentals
-ms.date: 02/26/2023
+ms.date: 12/18/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2015</a>
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2015
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](overview.md).
+This article lists new and updated features and content that are of interest to IT pros for Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](overview.md).
+
+> [!NOTE]
+> Windows 10 Enterprise LTSC 2015 was first available on July 29, 2015. Features in Windows 10 Enterprise LTSC 2015 are equivalent to Windows 10, version 1507.
 
 ## Deployment
 
@@ -29,24 +32,24 @@ With Windows 10, you can create provisioning packages that let you quickly and e
 
 ### AppLocker
 
-AppLocker was available for Windows 8.1, and is improved with Windows 10. See [Requirements to use AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker) for a list of operating system requirements.
+AppLocker was available for Windows 8.1, and is improved with Windows 10. See [Requirements to use AppLocker](/windows/security/application-security/application-control/windows-defender-application-control/applocker/requirements-to-use-applocker) for a list of operating system requirements.
 
 Enhancements to AppLocker in Windows 10 include:
 
 -   A new parameter was added to the [New-AppLockerPolicy](/powershell/module/applocker/new-applockerpolicy) Windows PowerShell cmdlet that lets you choose whether executable and DLL rule collections apply to non-interactive processes. To enable this parameter, set the **ServiceEnforcement** to **Enabled**.
 -   A new [AppLocker](/windows/client-management/mdm/applocker-csp) configuration service provider was added to allow you to enable AppLocker rules by using an MDM server.
 
-[Learn how to manage AppLocker within your organization](/windows/device-security/applocker/applocker-overview).
+[Learn how to manage AppLocker within your organization](/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-overview).
 
 ### BitLocker
 
 Enhancements to AppLocker in Windows 10 include:
 
--   **Encrypt and recover your device with Azure Active Directory**. In addition to using a Microsoft Account, automatic [Device Encryption](/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10#device-encryption) can now encrypt your devices that are joined to an Azure Active Directory domain. When the device is encrypted, the BitLocker recovery key is automatically escrowed to Azure Active Directory. This escrow will make it easier to recover your BitLocker key online.
--   **DMA port protection**. You can use the [DataProtection/AllowDirectMemoryAccess](/windows/client-management/mdm/policy-configuration-service-provider#dataprotection-allowdirectmemoryaccess) MDM policy to block DMA ports when the device is starting up. Also, when a device is locked, all unused DMA ports are turned off, but any devices that are already plugged into a DMA port will continue to work. When the device is unlocked, all DMA ports are turned back on.
--   **New Group Policy for configuring pre-boot recovery**. You can now configure the pre-boot recovery message and recover URL that is shown on the pre-boot recovery screen. For more info, see the [Configure pre-boot recovery message and URL](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#bkmk-configurepreboot) section in "BitLocker Group Policy settings."
+-   **Encrypt and recover your device with Microsoft Entra**. In addition to using a Microsoft Account, automatic device encryption can now encrypt your devices that are joined to an Microsoft Entra domain. When the device is encrypted, the BitLocker recovery key is automatically escrowed to Microsoft Entra. This escrow will make it easier to recover your BitLocker key online.
+-   **DMA port protection**. You can use the [DataProtection/AllowDirectMemoryAccess](/windows/client-management/mdm/policy-csp-dataprotection#allowdirectmemoryaccess) MDM policy to block DMA ports when the device is starting up. Also, when a device is locked, all unused DMA ports are turned off, but any devices that are already plugged into a DMA port will continue to work. When the device is unlocked, all DMA ports are turned back on.
+-   **New Group Policy for configuring pre-boot recovery**. You can now configure the pre-boot recovery message and recover URL that is shown on the pre-boot recovery screen. For more infomation, see [BitLocker preboot recovery screen](/windows/security/operating-system-security/data-protection/bitlocker/preboot-recovery-screen).
 
-[Learn how to deploy and manage BitLocker within your organization](/windows/device-security/bitlocker/bitlocker-overview).
+[Learn how to deploy and manage BitLocker within your organization](/windows/security/operating-system-security/data-protection/bitlocker/).
 
 ### Certificate management
 
@@ -54,20 +57,22 @@ For Windows 10-based devices, you can use your MDM server to directly deploy cli
 
 ### Microsoft Passport
 
-In Windows 10, [Microsoft Passport](/windows/access-protection/hello-for-business/hello-identity-verification) replaces passwords with strong two-factor authentication that consists of an enrolled device and a Windows Hello (biometric) or PIN.
+In Windows 10, [Microsoft Passport](/windows/security/identity-protection/hello-for-business/deploy/requirements) replaces passwords with strong two-factor authentication that consists of an enrolled device and a Windows Hello (biometric) or PIN.
 
-Microsoft Passport lets users authenticate to a Microsoft account, an Active Directory account, a Microsoft Azure Active Directory (AD) account, or non-Microsoft service that supports Fast ID Online (FIDO) authentication. After an initial two-step verification during Microsoft Passport enrollment, a Microsoft Passport is set up on the user's device and the user sets a gesture, which can be Windows Hello or a PIN. The user provides the gesture to verify identity; Windows then uses Microsoft Passport to authenticate users and help them to access protected resources and services.
+Microsoft Passport lets users authenticate to a Microsoft account, an Active Directory account, a Microsoft Entra ID account, or non-Microsoft service that supports Fast ID Online (FIDO) authentication. After an initial two-step verification during Microsoft Passport enrollment, a Microsoft Passport is set up on the user's device and the user sets a gesture, which can be Windows Hello or a PIN. The user provides the gesture to verify identity; Windows then uses Microsoft Passport to authenticate users and help them to access protected resources and services.
 
 ### Security auditing
 
 In Windows 10, security auditing has added some improvements:
+
 -   [New audit subcategories](#bkmk-auditsubcat)
 -   [More info added to existing audit events](#bkmk-moreinfo)
 
 #### <a href="" id="bkmk-auditsubcat"></a>New audit subcategories
 
 In Windows 10, two new audit subcategories were added to the Advanced Audit Policy Configuration to provide greater granularity in audit events:
--   [Audit Group Membership](/windows/device-security/auditing/audit-group-membership) Found in the Logon/Logoff audit category, the Audit Group Membership subcategory allows you to audit the group membership information in a user's logon token. Events in this subcategory are generated when group memberships are enumerated or queried on the PC where the sign-in session was created. For an interactive logon, the security audit event is generated on the PC that the user logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the PC hosting the resource.
+
+-   [Audit Group Membership](/windows/security/threat-protection/auditing/audit-handle-manipulation) Found in the Logon/Logoff audit category, the Audit Group Membership subcategory allows you to audit the group membership information in a user's logon token. Events in this subcategory are generated when group memberships are enumerated or queried on the PC where the sign-in session was created. For an interactive logon, the security audit event is generated on the PC that the user logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the PC hosting the resource.
     When this setting is configured, one or more security audit events are generated for each successful sign-in. You must also enable the **Audit Logon** setting under **Advanced Audit Policy Configuration\\System Audit Policies\\Logon/Logoff**. Multiple events are generated if the group membership information can't fit in a single security audit event.
 -   [Audit PNP Activity](/windows/security/threat-protection/auditing/audit-pnp-activity) Found in the Detailed Tracking category, the Audit PNP Activity subcategory allows you to audit when plug and play detects an external device.
     Only Success audits are recorded for this category. If you don't configure this policy setting, no audit event is generated when an external device is detected by plug and play.
@@ -76,6 +81,7 @@ In Windows 10, two new audit subcategories were added to the Advanced Audit Poli
 #### <a href="" id="bkmk-moreinfo"></a>More info added to existing audit events
 
 With Windows 10, version 1507, we've added more info to existing audit events to make it easier for you to put together a full audit trail and come away with the information you need to protect your enterprise. Improvements were made to the following audit events:
+
 -   [Changed the kernel default audit policy](#bkmk-kdal)
 -   [Added a default process SACL to LSASS.exe](#bkmk-lsass)
 -   [Added new fields in the logon event](#bkmk-logon)
@@ -96,6 +102,7 @@ This process-when enabled-can help identify attacks that steal credentials from 
 #### <a href="" id="bkmk-logon"></a>New fields in the sign-in event
 
 The sign-in event ID 4624 has been updated to include more verbose information to make them easier to analyze. The following fields have been added to event 4624:
+
 1.  **MachineLogon** String: yes or no
     If the account that signed in to the PC is a computer account, this field will be yes. Otherwise, the field is no.
 2.  **ElevatedToken** String: yes or no
@@ -109,7 +116,6 @@ The sign-in event ID 4624 has been updated to include more verbose information t
     A list of all of the groups in the user's token.
 6.  **RestrictedAdminMode** String: yes or no
     If the user logs into the PC in restricted admin mode with Remote Desktop, this field will be yes.
-    For more info on restricted admin mode, see [Restricted Admin mode for RDP](/archive/blogs/kfalde/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2).
 
 #### <a href="" id="bkmk-process"></a>New fields in the process creation event
 
@@ -156,24 +162,25 @@ Event ID 4826 has been added to track the following changes to the Boot Configur
 
 #### <a href="" id="bkmk-pnp"></a>New PNP events
 
-Event ID 6416 has been added to track when an external device is detected through Plug and Play. One important scenario is if an external device that contains malware is inserted into a high-value machine that doesn’t expect this type of action, such as a domain controller.
-
-[Learn how to manage your security audit policies within your organization](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn319078(v=ws.11))
+Event ID 6416 has been added to track when an external device is detected through Plug and Play. One important scenario is if an external device that contains malware is inserted into a high-value machine that doesn't expect this type of action, such as a domain controller.
 
 ### Trusted Platform Module
 
 #### New TPM features in Windows 10
 
 The following sections describe the new and changed functionality in the TPM for Windows 10:
+
 -   [Device health attestation](#bkmk-dha)
--   [Microsoft Passport](/windows/access-protection/hello-for-business/hello-identity-verification) support
--   [Device Guard](/windows/device-security/device-guard/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies) support
--   [Credential Guard](/windows/access-protection/credential-guard/credential-guard) support
+-   [Microsoft Passport](/windows/security/identity-protection/hello-for-business/deploy/requirements) support
+-   [Device Guard](/windows/security/application-security/application-control/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control) support
+-   [Credential Guard](/windows/security/identity-protection/credential-guard/) support
 
 ### <a href="" id="bkmk-dha"></a>Device health attestation
 
 Device health attestation enables enterprises to establish trust based on hardware and software components of a managed device. With device health attestation, you can configure an MDM server to query a health attestation service that will allow or deny a managed device access to a secure resource.
+
 Some things that you can check on the device are:
+
 -   Is Data Execution Prevention supported and enabled?
 -   Is BitLocker Drive Encryption supported and enabled?
 -   Is SecureBoot supported and enabled?
@@ -181,7 +188,7 @@ Some things that you can check on the device are:
 > [!NOTE]
 > The device must be running Windows 10 and it must support at least TPM 2.0.
 
-[Learn how to deploy and manage TPM within your organization](/windows/device-security/tpm//trusted-platform-module-overview).
+[Learn how to deploy and manage TPM within your organization](/windows/security/hardware-security/tpm/trusted-platform-module-overview).
 
 ### User Account Control
 
@@ -189,13 +196,13 @@ User Account Control (UAC) helps prevent malware from damaging a computer and he
 
 You shouldn't turn off UAC because such a setting isn't supportive of devices running Windows 10. If you do turn off UAC, all Universal Windows Platform apps stop working. You must always set the **HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\EnableLUA** registry value to 1. If you need to provide auto elevation for programmatic access or installation, you could set the **HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\ConsentPromptBehaviorAdmin** registry value to 0, which is the same as setting the UAC slider Never Notify. This setting isn't recommended for devices running Windows 10.
 
-For more info about how to manage UAC, see [UAC Group Policy Settings and Registry Key Settings](/windows/access-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings).
+For more info about how to manage UAC, see [UAC group policy settings and registry key settings](/windows/security/application-security/application-control/user-account-control/settings-and-configuration).
 
 In Windows 10, User Account Control has added some improvements:
 
 -   **Integration with the Antimalware Scan Interface (AMSI)**. The [AMSI](/windows/win32/amsi/antimalware-scan-interface-portal) scans all UAC elevation requests for malware. If malware is detected, the admin privilege is blocked.
 
-[Learn how to manage User Account Control within your organization](/windows/access-protection/user-account-control/user-account-control-overview).
+[Learn how to manage User Account Control within your organization](/windows/security/application-security/application-control/user-account-control/).
 
 ### VPN profile options
 
@@ -207,7 +214,7 @@ Windows 10 provides a set of VPN features that both increase enterprise security
 - Lock down VPN
 - Integration with Microsoft Passport for Work
 
-[Learn more about the VPN options in Windows 10.](/windows/access-protection/vpn/vpn-profile-options)
+[Learn more about the VPN options in Windows 10.](/windows/security/operating-system-security/network-security/vpn/vpn-profile-options)
 
 
 ## Management
@@ -216,11 +223,11 @@ Windows 10 provides mobile device management (MDM) capabilities for PCs, laptops
 
 ### MDM support
 
-MDM policies for Windows 10 align with the policies supported in Windows 8.1 and are expanded to address even more enterprise scenarios, such as managing multiple users who have Microsoft Azure Active Directory (Azure AD) accounts, full control over the Microsoft Store, VPN configuration, and more.
+MDM policies for Windows 10 align with the policies supported in Windows 8.1 and are expanded to address even more enterprise scenarios, such as managing multiple users who have Microsoft Entra ID accounts, full control over the Microsoft Store, VPN configuration, and more.
 
-MDM support in Windows 10 is based on [Open Mobile Alliance (OMA)](https://go.microsoft.com/fwlink/p/?LinkId=533885) Device Management (DM) protocol 1.2.1 specification.
+MDM support in Windows 10 is based on Open Mobile Alliance (OMA) Device Management (DM) protocol 1.2.1 specification.
 
-Corporate-owned devices can be enrolled automatically for enterprises using Azure AD. [Reference for Mobile device management for Windows 10](/windows/client-management/mdm/)
+Corporate-owned devices can be enrolled automatically for enterprises using Azure AD. [Reference for mobile device management for Windows 10](/windows/client-management/mdm/)
 
 ### Unenrollment
 
@@ -265,17 +272,17 @@ Administrators can also use mobile device management (MDM) or Group Policy to di
 
 ## Updates 
 
-Windows Update for Business enables information technology administrators to keep the Windows 10-based devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Microsoft’s Windows Update service.
+Windows Update for Business enables information technology administrators to keep the Windows 10-based devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Microsoft's Windows Update service.
 
-By using [Group Policy Objects](/previous-versions/cc498727(v=msdn.10)), Windows Update for Business is an easily established and implemented system that enables organizations and administrators to exercise control on how their Windows 10-based devices are updated, by allowing:
+By using group policy objects, Windows Update for Business is an easily established and implemented system that enables organizations and administrators to exercise control on how their Windows 10-based devices are updated, by allowing:
 
 -   **Deployment and validation groups**; where administrators can specify which devices go first in an update wave, and which devices will come later (to ensure any quality bars are met).
 
 -   **Peer-to-peer delivery**, which administrators can enable to make delivery of updates to branch offices and remote sites with limited bandwidth efficient.
 
--   **Use with existing tools** such as Microsoft Intune and the [Enterprise Mobility Suite](/enterprise-mobility-security).
+-   **Use with existing tools** such as Microsoft Intune and Configuration Manager.
 
-Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, and provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh852345(v=ws.11)) and [Microsoft Configuration Manager](/configmgr).
+Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, and provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as Windows Server Update Services (WSUS) and [Microsoft Configuration Manager](/configmgr).
 
 
 Learn more about [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb).
