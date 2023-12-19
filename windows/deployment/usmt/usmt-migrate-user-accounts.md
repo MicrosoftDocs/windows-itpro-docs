@@ -1,11 +1,11 @@
 ---
-title: Migrate User Accounts (Windows 10)
+title: Migrate User Accounts
 description: Learn how to migrate user accounts and how to specify which users to include and exclude by using the User options on the command line.
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 12/19/2023
 ms.topic: article
 ms.technology: itpro-deploy
 ---
@@ -20,15 +20,15 @@ Links to detailed explanations of commands are available in the [Related article
 
 1. Sign into the source computer as an administrator.
 
-2. Enter the following `ScanState.exe` command line in a command prompt window:
+1. Enter the following `ScanState.exe` command line in a command prompt window:
 
     ```cmd
     ScanState.exe \\server\share\migration\mystore /i:MigDocs.xml /i:MigApp.xml /o
     ````
 
-3. Sign into the destination computer as an administrator.
+1. Sign into the destination computer as an administrator.
 
-4. Enter one of the following `LoadState.exe ` command lines in a command prompt window:
+1. Enter one of the following `LoadState.exe` command lines in a command prompt window:
 
    - If you're migrating domain accounts, enter:
 
@@ -51,15 +51,15 @@ Links to detailed explanations of commands are available in the [Related article
 
 1. Sign into the source computer as an administrator.
 
-2. Enter the following `ScanState.exe` command line in a command prompt window:
+1. Enter the following `ScanState.exe` command line in a command prompt window:
 
     ```cmd
     ScanState.exe \\server\share\migration\mystore /ue:*\* /ui:contoso\user1 /ui:fabrikam\user2 /i:MigDocs.xml /i:MigApp.xml /o
     ```
 
-3. Sign into the destination computer as an administrator.
+1. Sign into the destination computer as an administrator.
 
-4. Enter the following `LoadState.exe ` command line in a command prompt window:
+1. Enter the following `LoadState.exe` command line in a command prompt window:
 
     ```cmd
     LoadState.exe  \\server\share\migration\mystore /i:MigDocs.xml /i:MigApp.xml
@@ -71,15 +71,15 @@ Links to detailed explanations of commands are available in the [Related article
 
 1. Sign into the source computer as an administrator.
 
-2. Enter the following `ScanState.exe` command line in a command prompt window:
+1. Enter the following `ScanState.exe` command line in a command prompt window:
 
     ```cmd
     ScanState.exe \\server\share\migration\mystore /ue:*\* /ui:contoso\user1 /ui:contoso\user2 /i:MigDocs.xml /i:MigApp.xml /o
     ```
 
-3. Sign into the destination computer as an administrator.
+1. Sign into the destination computer as an administrator.
 
-4. Enter the following `LoadState.exe ` command line in a command prompt window:
+1. Enter the following `LoadState.exe` command line in a command prompt window:
 
     ```cmd
     LoadState.exe  \\server\share\migration\mystore /mu:contoso\user1:fabrikam\user1 /mu:contoso\user2:fabrikam\user2 /i:MigDocs.xml /i:MigApp.xml
@@ -87,8 +87,6 @@ Links to detailed explanations of commands are available in the [Related article
 
 ## Related articles
 
-[Identify users](usmt-identify-users.md)
-
-[ScanState syntax](usmt-scanstate-syntax.md)
-
-[LoadState syntax](usmt-loadstate-syntax.md)
+- [Identify users](usmt-identify-users.md)
+- [ScanState syntax](usmt-scanstate-syntax.md)
+- [LoadState syntax](usmt-loadstate-syntax.md)

@@ -1,18 +1,18 @@
 ---
-title: Conflicts and Precedence (Windows 10)
-description: In this article, learn how User State Migration Tool (USMT) 10.0 deals with conflicts and precedence.
+title: Conflicts and Precedence
+description: In this article, learn how User State Migration Tool (USMT) deals with conflicts and precedence.
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 12/19/2023
 ms.topic: article
 ms.technology: itpro-deploy
 ---
 
 # Conflicts and precedence
 
-When you include, exclude, and reroute files and settings, it's important to know how User State Migration Tool (USMT) 10.0 deals with conflicts and precedence. When working with USMT, the following are the most important conflicts and precedence guidelines to keep in mind.
+When you include, exclude, and reroute files and settings, it's important to know how User State Migration Tool (USMT) deals with conflicts and precedence. When working with USMT, the following are the most important conflicts and precedence guidelines to keep in mind.
 
 - **If there are conflicting rules within a component, the most specific rule is applied.** However, the **&lt;unconditionalExclude&gt;** rule is an exception because it takes precedence over all others. Directory names take precedence over file extensions. For examples, see [What happens when there are conflicting &lt;include&gt; and &lt;exclude&gt; rules?](#what-happens-when-there-are-conflicting-include-and-exclude-rules) and the first example in [&lt;include&gt; and &lt;exclude&gt; rules precedence examples](#include-and-exclude-rules-precedence-examples) later in this article.
 
@@ -20,11 +20,11 @@ When you include, exclude, and reroute files and settings, it's important to kno
 
 - **If the rules are equally specific, &lt;exclude&gt; takes precedence over &lt;include&gt;.** For example, if you use the **&lt;exclude&gt;** rule to exclude a file and use the **&lt;include&gt;** rule to include the same file, the file will be excluded.
 
-- **The ordering of components does not matter.** It doesn't matter which components are listed in which .xml file, because each component is processed independently of the other components across all of the .xml files.
+- **The ordering of components does not matter.** It doesn't matter which components are listed in which **.xml** file, because each component is processed independently of the other components across all of the **.xml** files.
 
 - **The ordering of the &lt;include&gt; and &lt;exclude&gt; rules within a component does not matter.**
 
-- **You can use the &lt;unconditionalExclude&gt; element to globally exclude data.** This element excludes objects, regardless of any other **&lt;include&gt;** rules that are in the .xml files. For example, you can use the **&lt;unconditionalExclude&gt;** element to exclude all MP3 files on the computer or to exclude all files from `C:\UserData`.
+- **You can use the &lt;unconditionalExclude&gt; element to globally exclude data.** This element excludes objects, regardless of any other **&lt;include&gt;** rules that are in the **.xml** files. For example, you can use the **&lt;unconditionalExclude&gt;** element to exclude all MP3 files on the computer or to exclude all files from `C:\UserData`.
 
 ## General
 
@@ -34,7 +34,7 @@ Only rules inside the same component can affect each other, depending on specifi
 
 If you have an **&lt;include&gt;** rule in one component and a **&lt;locationModify&gt;** rule in another component for the same file, the file will be migrated in both places. That is, it will be included based on the **&lt;include&gt;** rule, and it will be migrated based on the **&lt;locationModify&gt;** rule.
 
-The following .xml file migrates all files from C:\\Userdocs, including .mp3 files, because the **&lt;exclude&gt;** rule is specified in a separate component.
+The following **.xml** file migrates all files from C:\\Userdocs, including .mp3 files, because the **&lt;exclude&gt;** rule is specified in a separate component.
 
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/UserDocs">
@@ -68,7 +68,7 @@ The following .xml file migrates all files from C:\\Userdocs, including .mp3 fil
 
 ### How does precedence work with the Config.xml file?
 
-Specifying `migrate="no"` in the `Config.xml` file is the same as deleting the corresponding component from the migration .xml file. However, if you set `migrate="no"` for My Documents, but you have a rule similar to the one shown below in a migration .xml file (which includes all of the .doc files from My Documents), then only the .doc files will be migrated, and all other files will be excluded.
+Specifying `migrate="no"` in the `Config.xml` file is the same as deleting the corresponding component from the migration **.xml** file. However, if you set `migrate="no"` for My Documents, but you have a rule similar to the one shown below in a migration **.xml** file (which includes all of the .doc files from My Documents), then only the .doc files will be migrated, and all other files will be excluded.
 
 ```xml
 <include>
@@ -86,13 +86,13 @@ The ordering of components doesn't matter. Each component is processed independe
 
 There are two broad categories of rules.
 
-- **Rules that affect the behavior of both the ScanState and LoadState tools**. For example, the **&lt;include&gt;**, **&lt;exclude&gt;**, and **&lt;unconditionalExclude&gt;** rules are processed for each component in the .xml files. For each component, USMT creates an include list and an exclude list. Some of the rules in the component might be discarded due to specificity, but all of the remaining rules are processed. For each **&lt;include&gt;** rule, USMT iterates through the elements to see if any of the locations need to be excluded. USMT enumerates all of the objects and creates a list of objects it's going to collect for each user. Once the list is complete, each of the objects is stored or migrated to the destination computer.
+- **Rules that affect the behavior of both the ScanState and LoadState tools**. For example, the **&lt;include&gt;**, **&lt;exclude&gt;**, and **&lt;unconditionalExclude&gt;** rules are processed for each component in the **.xml** files. For each component, USMT creates an include list and an exclude list. Some of the rules in the component might be discarded due to specificity, but all of the remaining rules are processed. For each **&lt;include&gt;** rule, USMT iterates through the elements to see if any of the locations need to be excluded. USMT enumerates all of the objects and creates a list of objects it's going to collect for each user. Once the list is complete, each of the objects is stored or migrated to the destination computer.
 
 - **Rules that affect the behavior of only the LoadState tool**. For example, the **&lt;locationModify&gt;**, **&lt;contentModify&gt;**, and **&lt;destinationCleanup&gt;** rules don't affect ScanState. They're processed only with LoadState. First, the LoadState tool determines the content and location of each component based on the **&lt;locationModify&gt;** and **&lt;contentModify&gt;** rules. Then, LoadState processes all of the **&lt;destinationCleanup&gt;** rules and deletes data from the destination computer. Lastly, LoadState applies the components to the computer.
 
 ### How does USMT combine all of the .xml files that I specify on the command line?
 
-USMT doesn't distinguish the .xml files based on their name or content. It processes each component within the files separately. USMT supports multiple .xml files only to make it easier to maintain and organize the components within them. Because USMT uses a urlid to distinguish each component from the others, be sure that each .xml file that you specify on the command line has a unique migration urlid.
+USMT doesn't distinguish the **.xml** files based on their name or content. It processes each component within the files separately. USMT supports multiple **.xml** files only to make it easier to maintain and organize the components within them. Because USMT uses a urlid to distinguish each component from the others, be sure that each **.xml** file that you specify on the command line has a unique migration urlid.
 
 ## The &lt;include&gt; and &lt;exclude&gt; rules
 
@@ -117,7 +117,7 @@ In the following example, mp3 files won't be excluded from the migration. The mp
 
 ### &lt;include&gt; and &lt;exclude&gt; rules precedence examples
 
-These examples explain how USMT deals with **&lt;include&gt;** and **&lt;exclude&gt;** rules. When the rules are in different components, the resulting behavior will be the same regardless of whether the components are in the same or in different migration .xml files.
+These examples explain how USMT deals with **&lt;include&gt;** and **&lt;exclude&gt;** rules. When the rules are in different components, the resulting behavior will be the same regardless of whether the components are in the same or in different migration **.xml** files.
 
 - [Including and excluding files](#including-and-excluding-files)
 
@@ -178,7 +178,7 @@ The destination computer contains the following files:
 
 - `C:\Data\SampleB.txt`
 
-You have a custom .xml file that contains the following code:
+You have a custom **.xml** file that contains the following code:
 
 ```xml
 <include> 
@@ -188,7 +188,7 @@ You have a custom .xml file that contains the following code:
 </include> 
 ```
 
-For this example, the following information describes the resulting behavior if you add the code to your custom .xml file.
+For this example, the following information describes the resulting behavior if you add the code to your custom **.xml** file.
 
 #### Example 1
 
