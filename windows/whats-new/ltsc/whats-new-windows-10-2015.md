@@ -45,9 +45,9 @@ Enhancements to AppLocker in Windows 10 include:
 
 Enhancements to AppLocker in Windows 10 include:
 
--   **Encrypt and recover your device with Microsoft Entra**. In addition to using a Microsoft Account, automatic device encryption can now encrypt your devices that are joined to an Microsoft Entra domain. When the device is encrypted, the BitLocker recovery key is automatically escrowed to Microsoft Entra. This escrow will make it easier to recover your BitLocker key online.
+-   **Encrypt and recover your device with Microsoft Entra**. In addition to using a Microsoft Account, automatic device encryption can now encrypt your devices that are joined to a Microsoft Entra domain. When the device is encrypted, the BitLocker recovery key is automatically escrowed to Microsoft Entra. This escrow will make it easier to recover your BitLocker key online.
 -   **DMA port protection**. You can use the [DataProtection/AllowDirectMemoryAccess](/windows/client-management/mdm/policy-csp-dataprotection#allowdirectmemoryaccess) MDM policy to block DMA ports when the device is starting up. Also, when a device is locked, all unused DMA ports are turned off, but any devices that are already plugged into a DMA port will continue to work. When the device is unlocked, all DMA ports are turned back on.
--   **New Group Policy for configuring pre-boot recovery**. You can now configure the pre-boot recovery message and recover URL that is shown on the pre-boot recovery screen. For more infomation, see [BitLocker preboot recovery screen](/windows/security/operating-system-security/data-protection/bitlocker/preboot-recovery-screen).
+-   **New Group Policy for configuring pre-boot recovery**. You can now configure the pre-boot recovery message and recover URL that is shown on the pre-boot recovery screen. For more information, see [BitLocker preboot recovery screen](/windows/security/operating-system-security/data-protection/bitlocker/preboot-recovery-screen).
 
 [Learn how to deploy and manage BitLocker within your organization](/windows/security/operating-system-security/data-protection/bitlocker/).
 
