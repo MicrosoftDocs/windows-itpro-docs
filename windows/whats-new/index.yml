@@ -48,12 +48,13 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
+          - text: Extended Security Updates (ESU) program for Windows 10
+            url: extended-security-updates.md        
           - text: What's new in Windows 10, version 22H2
             url: whats-new-windows-10-version-22h2.md
           - text: What's new in Windows 10, version 21H2
             url: whats-new-windows-10-version-21h2.md
-          - text: What's new in Windows 10, version 21H1
-            url: whats-new-windows-10-version-21h1.md
+
 
   - title: Learn more
     linkLists:
