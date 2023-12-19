@@ -106,7 +106,7 @@ In Windows 10 and Windows 11, cloud experience host is an application used while
 
 ### Related to cloud experience host
 
-- [Windows Hello for Business](hello-identity-verification.md)
+- [Windows Hello for Business](deploy/requirements.md)
 - [Managed Windows Hello in organization](hello-manage-in-organization.md)
 
 ### More information on cloud experience host
@@ -131,7 +131,7 @@ Giving the simplicity offered by this model, cloud Kerberos trust is the recomme
 
 ### More information about cloud Kerberos trust
 
-[Cloud Kerberos trust deployment](hello-hybrid-cloud-kerberos-trust.md)
+[Cloud Kerberos trust deployment](deploy/hybrid-cloud-kerberos-trust.md)
 
 ## Deployment type
 

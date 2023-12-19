@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Using Certificates for AADJ On-premises Single-sign On
 
-[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cert-trust-aad.md)]
+[!INCLUDE [apply-to-hybrid-cert-trust-entra](deploy/includes/apply-to-hybrid-cert-trust-entra.md)]
 
 If you plan to use certificates for on-premises single-sign on, then follow these **additional** steps to configure the environment to enroll Windows Hello for Business certificates for Microsoft Entra joined devices.
 
@@ -79,45 +79,45 @@ The easiest way to verify that the onPremisesDistingushedNamne attribute is sync
 
 2. Select **Sign in to Graph Explorer** and provide Azure credentials.
 
-> [!NOTE]
-> To successfully query the Graph API, adequate [permissions](/graph/api/user-get?) must be granted.
+   > [!NOTE]
+   > To successfully query the Graph API, adequate [permissions](/graph/api/user-get?) must be granted.
 
 3. Select **Modify permissions (Preview)**. Scroll down and locate **User.Read.All** (or any other required permission) and select **Consent**. You'll now be prompted for delegated permissions consent.
 
 4. In the Graph Explorer URL, enter `https://graph.microsoft.com/v1.0/users/[userid]?$select=displayName,userPrincipalName,onPremisesDistinguishedName`, where **[userid]** is the user principal name of a user in Microsoft Entra ID.  Select **Run query**.
 
-> [!NOTE]
-> Because the v1.0 endpoint of the Graph API only provides a limited set of parameters, we will use the $select [Optional OData query parameter](/graph/api/user-get?). For convenience, it is possible to switch the API version selector from **v1.0** to **beta** before performing the query. This will provide all available user information, but remember, **beta** endpoint queries should not be used in production scenarios.
+   > [!NOTE]
+   > Because the v1.0 endpoint of the Graph API only provides a limited set of parameters, we will use the $select [Optional OData query parameter](/graph/api/user-get?). For convenience, it is possible to switch the API version selector from **v1.0** to **beta** before performing the query. This will provide all available user information, but remember, **beta** endpoint queries should not be used in production scenarios.
 
-#### Request
+   #### Request
 
-<!-- {
-  "blockType": "request",
-  "name": "get_user_select"
-} -->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,userPrincipalName,onPremisesDistinguishedName
-```
+   <!-- {
+     "blockType": "request",
+     "name": "get_user_select"
+   } -->
+   ```msgraph-interactive
+   GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,userPrincipalName,onPremisesDistinguishedName
+   ```
 
 5. In the returned results, review the JSON data for the **onPremisesDistinguishedName** attribute.  Ensure the attribute has a value and that the value is accurate for the given user. If the **onPremisesDistinguishedName** attribute isn't synchronized the value will be **null**.
 
-#### Response
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
+   #### Response
+   <!-- {
+     "blockType": "response",
+     "truncated": true,
+     "@odata.type": "microsoft.graph.user"
+   } -->
+   ```http
+   HTTP/1.1 200 OK
+   Content-type: application/json
 
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(displayName,userPrincipalName,onPremisesDistinguishedName)/$entity",
-    "displayName": "Nestor Wilke",
-    "userPrincipalName": "NestorW@contoso.com",
-    "onPremisesDistinguishedName" : "CN=Nestor Wilke,OU=Operations,DC=contoso,DC=com"
-}
-```
+   {
+       "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(displayName,userPrincipalName,onPremisesDistinguishedName)/$entity",
+       "displayName": "Nestor Wilke",
+       "userPrincipalName": "NestorW@contoso.com",
+       "onPremisesDistinguishedName" : "CN=Nestor Wilke,OU=Operations,DC=contoso,DC=com"
+   }
+   ```
 
 ## Prepare the Network Device Enrollment Services (NDES) Service Account
 
@@ -250,7 +250,7 @@ Sign-in to the issuing certificate authority with access equivalent to _local ad
 
 1. Open an elevated command prompt and type the following command:
 
-   ```console
+   ```cmd
    certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE
    ```
 
@@ -428,13 +428,13 @@ Sign-in the NDES server with access equivalent to _Domain Admins_.
 
 2. Type the following command to register the service principal name
 
-   ```console
+   ```cmd
    setspn -s http/[FqdnOfNdesServer] [DomainName\\NdesServiceAccount]
    ```
 
    where **[FqdnOfNdesServer]** is the fully qualified domain name of the NDES server and **[DomainName\NdesServiceAccount]** is the domain name and NDES service account name separated by a backslash (\\).  An example of the command looks like the following:
 
-   ```console
+   ```cmd
    setspn -s http/ndes.corp.contoso.com contoso\ndessvc
    ```
 
@@ -486,7 +486,7 @@ Sign-in to the certificate authority or management workstations with an _Enterpr
 > [!NOTE]
 > If you closed Server Manger from the last set of tasks, start Server Manager and click the action flag that shows a yellow exclamation point.
 
-![Server Manager Post-Install Yellow flag.](images/aadjcert/servermanager-post-ndes-yellowactionflag.png)
+:::image type="content" alt-text="Server Manager Post-Install Yellow flag." source="images/aadjcert/servermanager-post-ndes-yellowactionflag.png" lightbox="images/aadjcert/servermanager-post-ndes-yellowactionflag.png":::
 
 1. Select the **Configure Active Directory Certificate Services on the destination server** link.
 
@@ -544,13 +544,13 @@ Sign-in to the NDES Server with _local administrator_ equivalent credentials.
 
 3. Type the following command:
 
-   ```console
+   ```cmd
    reg add HKLM\Software\Microsoft\Cryptography\MSCEP /v [registryValueName] /t REG_SZ /d [certificateTemplateName]
    ```
 
    where **registryValueName** is one of the three value names from the above table and where **certificateTemplateName** is the name of the certificate template you created for Windows Hello for Business Microsoft Entra joined devices.  Example:
 
-   ```console
+   ```cmd
    reg add HKLM\Software\Microsoft\Cryptography\MSCEP /v SignatureTemplate /t REG_SZ /d AADJWHFBAuthentication
    ```
 
@@ -583,7 +583,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 4. Select **Download connector service**.  Select **Accept terms & Download**.  Save the file (AADApplicationProxyConnectorInstaller.exe) in a location accessible by others on the domain.
 
-   ![Azure Application Proxy Connectors.](images/aadjcert/azureconsole-applicationproxy-connectors-empty.png)
+   :::image type="content" alt-text="Azure Application Proxy Connectors." source="images/aadjcert/azureconsole-applicationproxy-connectors-empty.png" lightbox="images/aadjcert/azureconsole-applicationproxy-connectors-empty.png":::
 
 5. Sign-in the computer that will run the connector with access equivalent to a _domain user_.
 
@@ -616,11 +616,11 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 3. Under **MANAGE**, select **Application proxy**.
 
-   ![Azure Application Proxy Connector groups.](images/aadjcert/azureconsole-applicationproxy-connectors-default.png)
+   :::image type="content" alt-text="Azure Application Proxy Connector groups." source="images/aadjcert/azureconsole-applicationproxy-connectors-default.png" lightbox="images/aadjcert/azureconsole-applicationproxy-connectors-default.png":::
 
 4. Select **New Connector Group**. Under **Name**, type **NDES WHFB Connectors**.
 
-   ![Azure Application New Connector Group.](images/aadjcert/azureconsole-applicationproxy-connectors-newconnectorgroup.png)
+   :::image type="content" alt-text="Azure Application New Connector Group." source="images/aadjcert/azureconsole-applicationproxy-connectors-newconnectorgroup.png" lightbox="images/aadjcert/azureconsole-applicationproxy-connectors-newconnectorgroup.png":::
 
 5. Select each connector agent in the **Connectors** list that will service Windows Hello for Business certificate enrollment requests.
 
@@ -644,7 +644,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 7. Under **Internal URL**, select **https://** from the first list.  In the text box next to **https://**, type the hostname you want to use as your external hostname for the Microsoft Entra application proxy.  In the list next to the hostname you typed, select a DNS suffix you want to use externally for the Microsoft Entra application proxy.  It's recommended to use the default, -[tenantName].msapproxy.net where **[tenantName]** is your current Microsoft Entra tenant name (-mstephendemo.msappproxy.net).
 
-   ![Azure NDES Application Proxy Configuration.](images/aadjcert/azureconsole-appproxyconfig.png)
+   :::image type="content" alt-text="Azure NDES Application Proxy Configuration." source="images/aadjcert/azureconsole-appproxyconfig.png" lightbox="images/aadjcert/azureconsole-appproxyconfig.png":::
 
 8. Select **Passthrough** from the **Pre Authentication** list.
 
@@ -699,7 +699,7 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 
 2. Expand the node that has the name of the NDES server.  Expand **Sites** and select **Default Web Site**.
 
-   ![NDES IIS Console](images/aadjcert/ndes-iis-console.png)
+   :::image type="content" alt-text="NDES IIS Console" source="images/aadjcert/ndes-iis-console.png" lightbox="images/aadjcert/ndes-iis-console.png":::
 
 3. Select **Bindings...** under **Actions**.  Select **Add**.
 
@@ -771,7 +771,7 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 
 3. In the content pane, double-click **Request Filtering**.  Select **Edit Feature Settings...** in the action pane.
 
-   ![Intune NDES Request filtering.](images/aadjcert/NDES-IIS-RequestFiltering.png)
+   :::image type="content" alt-text="Intune NDES Request filtering." source="images/aadjcert/NDES-IIS-RequestFiltering.png" lightbox="images/aadjcert/NDES-IIS-RequestFiltering.png":::
 
 4. Select **Allow unlisted file name extensions**.
 
@@ -793,7 +793,7 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 
 2. Run the following commands:
 
-   ```console
+   ```cmd
    reg add HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters /v MaxFieldLength /t REG_DWORD /d 65534
    reg add HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters /v MaxRequestBytes /t REG_DWORD /d 65534
    ```
@@ -842,7 +842,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 7. Select **Assigned** from the **Membership type** list.
 
-   ![Microsoft Entra new group creation.](images/aadjcert/azureadcreatewhfbcertgroup.png)
+   :::image type="content" alt-text="Microsoft Entra new group creation." source="images/aadjcert/azureadcreatewhfbcertgroup.png" lightbox="images/aadjcert/azureadcreatewhfbcertgroup.png":::
 
 8. Select **Members**.  Use the  **Select members** pane to add members to this group. When finished, select **Select**.
 
@@ -879,9 +879,10 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 11. Next to **Subject name format**, type **CN={{OnPrem_Distinguished_Name}}** to make the on-premises distinguished name the subject of the issued certificate.
 
-   > [!NOTE]
-   > If the distinguished name contains special characters like a plus sign ("+"), comma (","), semicolon (";"), or equal sign ("="), the bracketed name must be enclosed in quotation marks: CN=”{{OnPrem_Distinguished_Name}}”.
-   > If the length of the distinguished name is more than 64 characters, the name length enforcement on the Certification Authority [must be disabled](/previous-versions/windows/it-pro/windows-server-2003/cc784789(v=ws.10)?#disable-dn-length-enforcement).
+    > [!NOTE]
+    > If the distinguished name contains special characters like a plus sign ("+"), comma (","), semicolon (";"), or equal sign ("="), the bracketed name must be enclosed in quotation marks: `CN="{{OnPrem_Distinguished_Name}}"`.
+    >
+    > If the length of the distinguished name is more than 64 characters, the name length enforcement on the Certification Authority [must be disabled](/previous-versions/windows/it-pro/windows-server-2003/cc784789(v=ws.10)?#disable-dn-length-enforcement).
 
 12. Specify **User Principal Name (UPN)** as a **Subject Alternative Name** parameter. Set its value as {{UserPrincipalName}}.
 
@@ -893,7 +894,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 16. Type a percentage (without the percent sign) next to **Renewal Threshold** to determine when the certificate should attempt to renew. The recommended value is **20**.
 
-    ![WHFB SCEP certificate Profile EKUs.](images/aadjcert/profile03.png)
+    :::image type="content" alt-text="WHFB SCEP certificate Profile EKUs." source="images/aadjcert/profile03.png" lightbox="images/aadjcert/profile03.png":::
 
 17. Under **SCEP Server URLs**, type the fully qualified external name of the Microsoft Entra application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**. For example, ```https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll```. Select **Add**. Repeat this step for each additional NDES Microsoft Entra application proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests among the URLs listed in the SCEP certificate profile.
 
@@ -915,7 +916,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 5. In the **Assignments** pane, select **Selected Groups** from the **Assign to** list.  Select **Select groups to include**.
 
-   ![WHFB SCEP Profile Assignment.](images/aadjcert/profile04.png)
+   :::image type="content" alt-text="WHFB SCEP Profile Assignment." source="images/aadjcert/profile04.png" lightbox="images/aadjcert/profile04.png":::
 
 6. Select the **AADJ WHFB Certificate Users** group. Select **Select**.
 

@@ -4,7 +4,7 @@ description: Learn more about the RemoteDesktopServices Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/06/2023
+ms.date: 12/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -156,6 +156,106 @@ FIPS compliance can be configured through the System cryptography. Use FIPS comp
 <!-- ClientConnectionEncryptionLevel-Examples-End -->
 
 <!-- ClientConnectionEncryptionLevel-End -->
+
+<!-- DisconnectOnLockBasicAuthn-Begin -->
+## DisconnectOnLockBasicAuthn
+
+<!-- DisconnectOnLockBasicAuthn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisconnectOnLockBasicAuthn-Applicability-End -->
+
+<!-- DisconnectOnLockBasicAuthn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/DisconnectOnLockBasicAuthn
+```
+<!-- DisconnectOnLockBasicAuthn-OmaUri-End -->
+
+<!-- DisconnectOnLockBasicAuthn-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- DisconnectOnLockBasicAuthn-Description-End -->
+
+<!-- DisconnectOnLockBasicAuthn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisconnectOnLockBasicAuthn-Editable-End -->
+
+<!-- DisconnectOnLockBasicAuthn-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisconnectOnLockBasicAuthn-DFProperties-End -->
+
+<!-- DisconnectOnLockBasicAuthn-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_DISCONNECT_ON_LOCK_POLICY |
+| ADMX File Name | terminalserver.admx |
+<!-- DisconnectOnLockBasicAuthn-AdmxBacked-End -->
+
+<!-- DisconnectOnLockBasicAuthn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisconnectOnLockBasicAuthn-Examples-End -->
+
+<!-- DisconnectOnLockBasicAuthn-End -->
+
+<!-- DisconnectOnLockWebAccountAuthn-Begin -->
+## DisconnectOnLockWebAccountAuthn
+
+<!-- DisconnectOnLockWebAccountAuthn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisconnectOnLockWebAccountAuthn-Applicability-End -->
+
+<!-- DisconnectOnLockWebAccountAuthn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/DisconnectOnLockWebAccountAuthn
+```
+<!-- DisconnectOnLockWebAccountAuthn-OmaUri-End -->
+
+<!-- DisconnectOnLockWebAccountAuthn-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- DisconnectOnLockWebAccountAuthn-Description-End -->
+
+<!-- DisconnectOnLockWebAccountAuthn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisconnectOnLockWebAccountAuthn-Editable-End -->
+
+<!-- DisconnectOnLockWebAccountAuthn-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisconnectOnLockWebAccountAuthn-DFProperties-End -->
+
+<!-- DisconnectOnLockWebAccountAuthn-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_DISCONNECT_ON_LOCK_AAD_POLICY |
+| ADMX File Name | terminalserver.admx |
+<!-- DisconnectOnLockWebAccountAuthn-AdmxBacked-End -->
+
+<!-- DisconnectOnLockWebAccountAuthn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisconnectOnLockWebAccountAuthn-Examples-End -->
+
+<!-- DisconnectOnLockWebAccountAuthn-End -->
 
 <!-- DoNotAllowDriveRedirection-Begin -->
 ## DoNotAllowDriveRedirection

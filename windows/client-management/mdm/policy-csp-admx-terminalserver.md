@@ -4,7 +4,7 @@ description: Learn more about the ADMX_TerminalServer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/06/2023
+ms.date: 12/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1368,7 +1368,7 @@ Note:
 
 1. For connections from client computers that are using Remote Desktop Protocol 7.1 or earlier versions that are connecting to computers running at least Windows 8 or Windows Server 2012, the minimum of the following values is used as the color depth format:
 
-a.    Value specified by this policy setting b.    Maximum color depth supported by the client c.    Value requested by the client.
+a.	Value specified by this policy setting b.	Maximum color depth supported by the client c.	Value requested by the client.
 
 If the client doesn't support at least 16 bits, the connection is terminated.
 <!-- TS_COLORDEPTH-Description-End -->
