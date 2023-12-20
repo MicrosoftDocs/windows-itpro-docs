@@ -87,6 +87,6 @@ Links to detailed explanations of commands are available in the [Related article
 
 ## Related articles
 
-- [Identify users](usmt-identify-users.md)
-- [ScanState syntax](usmt-scanstate-syntax.md)
-- [LoadState syntax](usmt-loadstate-syntax.md)
+- [Identify users](usmt-identify-users.md).
+- [ScanState syntax](usmt-scanstate-syntax.md).
+- [LoadState syntax](usmt-loadstate-syntax.md).

@@ -233,4 +233,4 @@ During LoadState, all the files will be restored, overwriting the existing files
 
 ## Related articles
 
-[USMT XML reference](usmt-xml-reference.md)
+[USMT XML reference](usmt-xml-reference.md).

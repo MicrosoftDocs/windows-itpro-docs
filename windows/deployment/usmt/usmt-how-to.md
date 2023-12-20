@@ -1,18 +1,18 @@
 ---
-title: User State Migration Tool (USMT) How-to articles (Windows 10)
-description: Reference the articles in this article to learn how to use User State Migration Tool (USMT) 10.0 to perform specific tasks.
+title: User State Migration Tool (USMT) How-to articles
+description: Reference the articles in this article to learn how to use User State Migration Tool (USMT) to perform specific tasks.
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 12/20/2023
 ms.topic: article
 ms.technology: itpro-deploy
 ---
 
 # User State Migration Tool (USMT) how-to articles
 
-The following table lists articles that describe how to use User State Migration Tool (USMT) 10.0 to perform specific tasks.
+The following table lists articles that describe how to use User State Migration Tool (USMT) to perform specific tasks.
 
 ## In this section
 
@@ -29,6 +29,6 @@ The following table lists articles that describe how to use User State Migration
 
 ## Related articles
 
-- [User State Migration Tool (USMT) overview topics](usmt-topics.md)
-- [User State Migration Tool (USMT) troubleshooting](usmt-troubleshooting.md)
-- [User State Migration Toolkit (USMT) reference](usmt-reference.md)
+- [User State Migration Tool (USMT) overview topics](usmt-topics.md).
+- [User State Migration Tool (USMT) troubleshooting](usmt-troubleshooting.md).
+- [User State Migration Toolkit (USMT) reference](usmt-reference.md).
