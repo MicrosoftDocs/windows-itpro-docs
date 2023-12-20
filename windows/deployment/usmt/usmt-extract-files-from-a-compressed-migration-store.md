@@ -1,11 +1,11 @@
 ---
-title: Extract Files from a Compressed USMT Migration Store (Windows 10)
+title: Extract Files from a Compressed USMT Migration Store
 description: In this article, learn how to extract files from a compressed User State Migration Tool (USMT) migration store.
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 12/20/2023
 ms.topic: article
 ms.technology: itpro-deploy
 ---
@@ -22,7 +22,7 @@ Options used with the `/extract` option can specify:
 
 - Include and exclude patterns for selective data extraction.
 
-In addition, you can specify the file patterns that you want to extract by using the `/i` option to include file patterns or the `/e` option to exclude file patterns. When both the `/i` option and the `/e` option are used in the same command, include patterns take precedence over exclude patterns. Note that this is different from the include and exclude rules used in the **ScanState** and **LoadState** tools.
+In addition, you can specify the file patterns that you want to extract by using the `/i` option to include file patterns or the `/e` option to exclude file patterns. When both the `/i` option and the `/e` option are used in the same command, include patterns take precedence over exclude patterns. The `/i` and the `/e` options are different from the include and exclude rules used in the **ScanState** and **LoadState** tools.
 
 ## To run the UsmtUtils tool with the /extract option
 
@@ -34,7 +34,7 @@ UsmtUtils.exe /extract <filePath> <destinationPath> [/i:<includePattern>] [/e:<e
 
 Where the placeholders have the following values:
 
-- **&lt;USMTpath&gt;** is the location where you have saved the USMT files and tools.
+- **&lt;USMTpath&gt;** is the location where the USMT files and tools are saved.
 
 - **&lt;filePath&gt;** is the location of the migration store.
 
@@ -80,18 +80,16 @@ UsmtUtils.exe /extract D:\MyMigrationStore\USMT\store.mig /e:*.exe C:\ExtractedS
 
 ### To extract file types using the include pattern and the exclude pattern
 
-To extract files from a compressed migration store, and to exclude files of one type (such as .exe files) while including only specific files, use both the include pattern and the exclude pattern, as in this example:
+When files are extracted from a compressed migration store, both the include and the exclude patterns can be used at the same time. Files of one type can be excluded while files of another type can be included. For example:
 
 ```cmd
 UsmtUtils.exe /extract D:\MyMigrationStore\USMT\store.mig /i:myProject.* /e:*.exe C:\ExtractedStore /o
 ```
 
-In this example, if there is a myProject.exe file, it will also be extracted because the include pattern option takes precedence over the exclude pattern option.
+In this example, if there's a **myProject.exe** file, the file is also extracted because the include pattern option takes precedence over the exclude pattern option.
 
 ## Related articles
 
-[UsmtUtils syntax](usmt-utilities.md)
-
-[Return codes](/troubleshoot/windows-client/deployment/usmt-return-codes)
-
-[Verify the condition of a compressed migration store](verify-the-condition-of-a-compressed-migration-store.md)
+- [UsmtUtils syntax](usmt-utilities.md).
+- [Return codes](/troubleshoot/windows-client/deployment/usmt-return-codes).
+- [Verify the condition of a compressed migration store](verify-the-condition-of-a-compressed-migration-store.md).

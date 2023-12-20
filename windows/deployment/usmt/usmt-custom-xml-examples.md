@@ -1,5 +1,5 @@
 ---
-title: Custom XML Examples (Windows 10)
+title: Custom XML Examples
 description: Use custom XML examples to learn how to migrate an unsupported application, migrate files and registry keys, and migrate the My Videos folder.
 manager: aaroncz
 ms.author: frankroj
@@ -7,7 +7,7 @@ ms.prod: windows-client
 author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
-ms.date: 11/01/2022
+ms.date: 12/20/2023
 ---
 
 # Custom XML Examples
@@ -99,7 +99,7 @@ The following sample is a custom .xml file named `CustomFile.xml` that migrates 
 
   `<include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>`
 
-  This filter has no effect on files that aren't shortcuts. For example, if there's a shortcut in **My Videos** on the source computer that points to `C:\Folder1`, that shortcut will be migrated only if `C:\Folder1` exists on the destination computer. However, all other files, such as .mp3 files, migrate without any filtering.
+  This filter has no effect on files that aren't shortcuts. For example, if there's a shortcut in **My Videos** on the source computer that points to `C:\Folder1`, that shortcut is migrated only if `C:\Folder1` exists on the destination computer. However, all other files, such as .mp3 files, migrate without any filtering.
 
 - **Sample pattern**: Migrates **My Videos** for all users:
 
@@ -275,6 +275,5 @@ The behavior for this custom .xml file is described within the `<displayName>` t
 
 ## Related articles
 
-[USMT XML reference](usmt-xml-reference.md)
-
-[Customize USMT XML files](usmt-customize-xml-files.md)
+- [USMT XML reference](usmt-xml-reference.md).
+- [Customize USMT XML files](usmt-customize-xml-files.md).
