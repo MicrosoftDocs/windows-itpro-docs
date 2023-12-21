@@ -14,7 +14,7 @@ File hash rules use a system-computed Authenticode cryptographic hash of the ide
 
 For info about the file hash condition, see [Understanding the File Hash Rule Condition in AppLocker](understanding-the-file-hash-rule-condition-in-applocker.md).
 
-To create an AppLocker policy in a Group Policy Object (GPO), you can perform this task by using the Group Policy Management Console. To create an AppLocker policy for the local computer or for use in a security template, use the Local Security Policy snap-in. For info how to use these MMC snap-ins, see [Administer AppLocker](administer-applocker.md#bkmk-using-snapins).
+To manage an AppLocker policy in a Group Policy Object (GPO), you can perform this task by using the Group Policy Management Console. To manage an AppLocker policy for the local computer or for use in a security template, use the Local Security Policy snap-in. For info how to use these MMC snap-ins to administer AppLocker, see [Administer AppLocker](administer-applocker.md#using-the-mmc-snap-ins-to-administer-applocker).
 
 ## To create a new rule with a file hash condition
 
