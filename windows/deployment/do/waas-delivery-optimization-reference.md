@@ -161,7 +161,7 @@ Starting in Windows 10, version 1803, set this policy to restrict peer selection
 - 4 = DNS Suffix
 - 5 = Starting with Windows 10, version 1903, you can use the Microsoft Entra tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
-When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy is ignored. The default behavior, when the GroupID or GroupIDSource policies aren't set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order. If GroupIDSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.  
+When set, the Group ID will be assigned automatically from the selected source. This policy is ignored if the GroupID policy is also set. The default behavior, when the GroupID or GroupIDSource policies aren't set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order. If GroupIDSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.  
 
 ### Minimum RAM (inclusive) allowed to use Peer Caching  
 
