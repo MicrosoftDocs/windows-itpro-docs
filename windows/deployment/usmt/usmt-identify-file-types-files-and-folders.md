@@ -24,28 +24,15 @@ Once you've verified which files and file types that the end users work with reg
 
 To find the registered file types on a computer running a currently supported version of Windows:
 
-1. Right-click the Start Menu and select **Settings**.
+1. Right-click the **Start Menu** and select **Settings**.
 
-1. From the left panel, select **Apps**.
+1. When the **Settings** window opens, select **Apps**.
 
-1. Under the **Apps** pane, select **Default apps**.
+1. Select **Default apps**.
 
-1. Under the **Apps > Default apps** pane, scroll down past the list of apps until the **Related settings** section is reached.
+1. Scroll down and then select **Choose defaults by file type** or **Choose default apps by file type**.
 
-1. Under **Related settings**, select **Choose defaults by file type**.
-
-1. Under the **Apps > Default apps > Choose defaults by file type**, the registered file types are displayed.
-
-
-1. Open **Control Panel**
-
-1. Make sure **View by:** is set to **Category** and then select **Programs**.
-
-1. Select **Default Programs**
-
-1. select **Associate a file type or protocol with a program**.
-
-1. On this screen, the registered file types are displayed.
+1. In the window that opens, the registered file types are displayed.
 
 For more information about how to change the file types, files, and folders that are migrated when you specify the MigUser.xml file, see [User State Migration Tool (USMT) how-to topics](usmt-how-to.md).
 
