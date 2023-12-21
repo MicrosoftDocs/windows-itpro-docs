@@ -1,8 +1,8 @@
 ---
-title: Network security Restrict NTLM Incoming NTLM traffic 
+title: Network security Restrict NTLM Incoming NTLM traffic
 description: Best practices, security considerations, and more for the security policy setting, Network Security Restrict NTLM Incoming NTLM traffic.
 ms.assetid: c0eff7d3-ed59-4004-908a-2205295fefb8
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -60,13 +60,13 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 | Server type or GPO | Default value |
 | - | - |
-| Default domain policy| Not defined| 
+| Default domain policy| Not defined|
 | Default domain controller policy | Not defined |
-| Stand-alone server default settings | Not defined| 
-| Domain controller effective default settings | Not defined| 
-| Member server effective default settings | Not defined| 
-| Client computer effective default settings | Not defined| 
- 
+| Stand-alone server default settings | Not defined|
+| Domain controller effective default settings | Not defined|
+| Member server effective default settings | Not defined|
+| Client computer effective default settings | Not defined|
+
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.
@@ -101,7 +101,7 @@ When it has been determined that the NTLM authentication protocol shouldn't be u
 
 ### Potential impact
 
-If you configure this policy setting, numerous NTLM authentication requests could fail within your network, which could degrade productivity. Before implementing this change through this policy setting, set **Network security: Restrict NTLM: Audit Incoming NTLM traffic** to the same option so that 
+If you configure this policy setting, numerous NTLM authentication requests could fail within your network, which could degrade productivity. Before implementing this change through this policy setting, set **Network security: Restrict NTLM: Audit Incoming NTLM traffic** to the same option so that
 you can review the log for the potential impact, perform an analysis of servers, and create an exception list of servers to exclude from this policy setting [Network security: Restrict NTLM: Add server exceptions in this domain](network-security-restrict-ntlm-add-server-exceptions-in-this-domain.md).
 
 ## Related topics

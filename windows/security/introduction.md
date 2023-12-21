@@ -25,7 +25,7 @@ A Zero Trust security model gives the right people the right access at the right
 1. When verified, give people and devices access to only necessary resources for the necessary amount of time
 1. Use continuous analytics to drive threat detection and improve defenses
 
-For Windows 11, the Zero Trust principle of *verify explicitly* applies to risks introduced by both devices and people. Windows 11 provides *chip-to-cloud security*, enabling IT administrators to implement strong authorization and authentication processes with features like [Windows Hello for Business](identity-protection/hello-for-business/index.md). IT administrators also gain attestation and measurements for determining if a device meets requirements and can be trusted. Windows 11 works out-of-the-box with Microsoft Intune and Azure Active Directory, which enables timely and seamless access decisions. Furthermore, IT administrators can easily customize Windows to meet specific user and policy requirements for access, privacy, compliance, and more.
+For Windows 11, the Zero Trust principle of *verify explicitly* applies to risks introduced by both devices and people. Windows 11 provides *chip-to-cloud security*, enabling IT administrators to implement strong authorization and authentication processes with features like [Windows Hello for Business](identity-protection/hello-for-business/index.md). IT administrators also gain attestation and measurements for determining if a device meets requirements and can be trusted. Windows 11 works out-of-the-box with Microsoft Intune and Microsoft Entra ID, which enables timely and seamless access decisions. Furthermore, IT administrators can easily customize Windows to meet specific user and policy requirements for access, privacy, compliance, and more.
 
 ### Security, by default
 
@@ -49,7 +49,7 @@ Passwords have been an important part of digital security for a long time, and t
 
 ### Connecting to cloud services
 
-Microsoft offers comprehensive cloud services for identity, storage, and access management in addition to the tools needed to attest that Windows devices connecting to your network are trustworthy. You can also enforce compliance and conditional access with a modern device management (MDM) service such as Microsoft Intune, which works with Azure Active Directory and Microsoft Azure Attestation to control access to applications and data through the cloud.
+Microsoft offers comprehensive cloud services for identity, storage, and access management in addition to the tools needed to attest that Windows devices connecting to your network are trustworthy. You can also enforce compliance and conditional access with a modern device management (MDM) service such as Microsoft Intune, which works with Microsoft Entra ID and Microsoft Azure Attestation to control access to applications and data through the cloud.
 
 ## Next steps
 

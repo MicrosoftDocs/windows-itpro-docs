@@ -1,7 +1,7 @@
 ---
 title: Management functionalities for Surface devices
 description: Learn about the management capabilities offered to Surface devices, including firmware management and the Surface Management Portal.
-ms.date: 08/31/2022
+ms.date: 11/09/2023
 ms.topic: tutorial
 appliesto: 
   - ✅ <b>Surface devices</b>
@@ -9,7 +9,7 @@ appliesto:
 
 # Management functionalities for Surface devices
 
-Microsoft Surface devices offer many advanced management functionalities, including the possibility to manage firmware settings and a web portal designed for them.
+Microsoft Surface devices offer advanced management functionalities, including the possibility to manage firmware settings and a web portal designed for them.
 
 ## Manage device firmware for Surface devices
 
@@ -27,20 +27,18 @@ When Surface devices are enrolled in cloud management and users sign in for the 
 
 To access and use the Surface Management Portal:
 
-1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Select **All services** > **Surface Management Portal**
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
+1. Select **All services** > **Surface Management Portal**
     :::image type="content" source="./images/surface-management-portal.png" alt-text="Surface Management Portal within Microsoft Intune" lightbox="./images/surface-management-portal-expanded.png" border="true":::
-3. To obtain insights for all your Surface devices, select **Monitor**
+1. To obtain insights for all your Surface devices, select **Monitor**
     - Devices that are out of compliance or not registered, have critically low storage, require updates, or are currently inactive, are listed here
-4. To obtain details on each insights category, select **View report**
+1. To obtain details on each insights category, select **View report**
     - This dashboard displays diagnostic information that you can customize and export
-5. To obtain the device's warranty information, select **Device warranty and coverage**
-6. To review a list of support requests and their status, select **Support requests**
+1. To obtain the device's warranty information, select **Device warranty and coverage**
+1. To review a list of support requests and their status, select **Support requests**
 
 <!-- Reference links in article -->
 
 [INT-1]: /intune/configuration/device-firmware-configuration-interface-windows
-
 [MEM-1]: /mem/autopilot/dfci-management
-
 [SURF-1]: /surface/surface-manage-dfci-guide

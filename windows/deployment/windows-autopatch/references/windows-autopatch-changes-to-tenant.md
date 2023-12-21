@@ -1,7 +1,7 @@
 ---
 title: Changes made at tenant enrollment
 description: This reference article details the changes made to your tenant when enrolling into Windows Autopatch
-ms.date: 06/23/2023
+ms.date: 12/13/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: reference
@@ -32,15 +32,9 @@ Windows Autopatch creates an enterprise application in your tenant. This enterpr
 | ----- | ------ | ----- |
 | Modern Workplace Management | The Modern Workplace Management application:<ul><li>Manages the service</li><li>Publishes baseline configuration updates</li><li>Maintains overall service health</li></ul> | <ul><li>DeviceManagementApps.ReadWrite.All</li><li>DeviceManagementConfiguration.ReadWrite.All</li><li>DeviceManagementManagedDevices.PriviligedOperation.All</li><li>DeviceManagementManagedDevices.ReadWrite.All</li><li>DeviceManagementRBAC.ReadWrite.All</li><li>DeviceManagementServiceConfig.ReadWrite.All</li><li>Directory.Read.All</li><li>Group.Create</li><li>Policy.Read.All</li><li>WindowsUpdates.ReadWrite.All</li></ul> |
 
-### Service principal
+## Microsoft Entra groups
 
-Windows Autopatch will create a service principal in your tenant to establish an identity and restrict access to what resources the service has access to within the tenant. For more information, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object). The service principal created by Windows Autopatch is:  
-
-- Modern Workplace Customer APIs
-
-## Azure Active Directory groups
-
-Windows Autopatch will create the required Azure Active Directory groups to operate the service.
+Windows Autopatch will create the required Microsoft Entra groups to operate the service.
 
 The following groups target Windows Autopatch configurations to devices and management of the service by our [first party enterprise applications](#windows-autopatch-enterprise-applications).
 

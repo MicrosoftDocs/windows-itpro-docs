@@ -9,7 +9,6 @@ metadata:
   ms.prod: windows-client
   ms.technology: itpro-security
   ms.collection:
-    - highpri
     - tier1
   author: paolomatarazzo
   ms.author: paoloma
@@ -64,7 +63,7 @@ productDirectory:
         - url: /windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines
           text: Windows security baselines
         - url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/
-          text: MMicrosoft Defender SmartScreen
+          text: Microsoft Defender SmartScreen
         - url: /windows/security/operating-system-security
           text: Learn more about OS security >
 
@@ -77,7 +76,7 @@ productDirectory:
           text: Windows passwordless experience
         - url: /windows/security/identity-protection/web-sign-in
           text: Web sign-in for Windows
-        - url: /windows/security/identity-protection/passkey
+        - url: /windows/security/identity-protection/passkeys
           text: Support for passkeys in Windows
         - url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection
           text: Enhanced phishing protection with SmartScreen

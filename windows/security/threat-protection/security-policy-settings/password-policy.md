@@ -1,8 +1,8 @@
 ---
-title: Password Policy 
+title: Password Policy
 description: An overview of password policies for Windows and links to information for each policy setting.
 ms.assetid: aec1220d-a875-4575-9050-f02f9c54a3b6
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,10 +12,10 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: 
+ms.collection:
   - highpri
   - tier3
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -50,14 +50,14 @@ The following topics provide a discussion of password policy implementation and 
 
 | Topic | Description |
 | - | - |
-| [Enforce password history](enforce-password-history.md)| Describes the best practices, location, values, policy management, and security considerations for the **Enforce password history** security policy setting.| 
-| [Maximum password age](maximum-password-age.md) | Describes the best practices, location, values, policy management, and security considerations for the **Maximum password age** security policy setting.| 
-| [Minimum password age](minimum-password-age.md) | Describes the best practices, location, values, policy management, and security considerations for the **Minimum password age** security policy setting.| 
-| [Minimum password length](minimum-password-length.md) | Describes the best practices, location, values, policy management, and security considerations for the **Minimum password length** security policy setting.| 
+| [Enforce password history](enforce-password-history.md)| Describes the best practices, location, values, policy management, and security considerations for the **Enforce password history** security policy setting.|
+| [Maximum password age](maximum-password-age.md) | Describes the best practices, location, values, policy management, and security considerations for the **Maximum password age** security policy setting.|
+| [Minimum password age](minimum-password-age.md) | Describes the best practices, location, values, policy management, and security considerations for the **Minimum password age** security policy setting.|
+| [Minimum password length](minimum-password-length.md) | Describes the best practices, location, values, policy management, and security considerations for the **Minimum password length** security policy setting.|
 | [Password must meet complexity requirements](password-must-meet-complexity-requirements.md) | Describes the best practices, location, values, and security considerations for the **Password must meet complexity requirements** security policy setting.|
-| [Store passwords using reversible encryption](store-passwords-using-reversible-encryption.md) | Describes the best practices, location, values, and security considerations for the **Store passwords using reversible encryption** security policy setting.| 
- 
+| [Store passwords using reversible encryption](store-passwords-using-reversible-encryption.md) | Describes the best practices, location, values, and security considerations for the **Store passwords using reversible encryption** security policy setting.|
+
 ## Related topics
 
 - [Configure security policy settings](how-to-configure-security-policy-settings.md)
- 
+

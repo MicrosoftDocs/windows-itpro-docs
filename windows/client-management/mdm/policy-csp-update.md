@@ -4,7 +4,7 @@ description: Learn more about the Update Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/28/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -292,8 +292,16 @@ Allows the IT admin to manage whether Automatic Updates accepts updates signed b
 <!-- AllowOptionalContent-OmaUri-End -->
 
 <!-- AllowOptionalContent-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy enables devices to get offered optional updates and users interact with the 'Get the latest updates as soon as they're available' toggle on the Windows Update Settings page.
+<!-- Description-Source-ADMX -->
+This policy enables devices to get optional updates (including gradual feature rollouts (CFRs) - learn more by visiting aka.ms/AllowOptionalContent)
+
+When the policy is configured.
+
+- If "Automatically receive optional updates (including CFRs)" is selected, the device will get the latest optional updates automatically in line with the configured quality update deferrals. This includes optional cumulative updates and gradual feature rollouts (CFRs).
+
+- If "Automatically receive optional updates" is selected, the device will only get optional cumulative updates automatically, in line with the quality update deferrals.
+
+- If "Users can select which optional updates to receive" is selected, users can select which optional updates to get by visiting Settings > Windows Update > Advanced options > Optional updates. Users can also enable the toggle "Get the latest updates as soon as they're available" to automatically receive optional updates and gradual feature rollouts.
 <!-- AllowOptionalContent-Description-End -->
 
 <!-- AllowOptionalContent-Editable-Begin -->
@@ -327,7 +335,12 @@ This policy enables devices to get offered optional updates and users interact w
 | Name | Value |
 |:--|:--|
 | Name | AllowOptionalContent |
-| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
+| Friendly Name | Enable optional updates |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Update > Manage updates offered from Windows Update |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
+| Registry Value Name | SetAllowOptionalContent |
+| ADMX File Name | WindowsUpdate.admx |
 <!-- AllowOptionalContent-GpMapping-End -->
 
 <!-- AllowOptionalContent-Examples-Begin -->
@@ -1281,7 +1294,7 @@ If the status is set to Disabled or Not Configured, Windows will check for avail
 > If the "Configure Automatic Updates" policy is disabled, this policy has no effect.
 
 > [!NOTE]
-> This policy isn't supported on %WINDOWS_ARM_VERSION_6_2%. Setting this policy won't have any effect on %WINDOWS_ARM_VERSION_6_2% PCs.
+> This policy isn't supported on Windows RT. Setting this policy won't have any effect on Windows RT PCs.
 <!-- DetectionFrequency-Description-End -->
 
 <!-- DetectionFrequency-Editable-Begin -->
@@ -1459,7 +1472,7 @@ Allows Windows Update Agent to determine the download URL when it's missing from
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-OmaUri-Begin -->
@@ -1528,7 +1541,7 @@ Configure this policy to specify whether to receive **Windows Driver Updates** f
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-OmaUri-Begin -->
@@ -1597,7 +1610,7 @@ Configure this policy to specify whether to receive **Windows Feature Updates** 
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-OmaUri-Begin -->
@@ -1666,7 +1679,7 @@ Configure this policy to specify whether to receive **Other Updates** from Windo
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-OmaUri-Begin -->
@@ -1958,7 +1971,7 @@ If any of the following two policies are enabled, this policy has no effect:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations.
 
-2. Always automatically restart at scheduled time.
+1. Always automatically restart at scheduled time.
 
 Note that the default max active hours range is 18 hours from the active hours start time unless otherwise configured via the Specify active hours range for auto-restarts policy.
 <!-- ActiveHoursEnd-Description-End -->
@@ -2085,7 +2098,7 @@ If any of the following two policies are enabled, this policy has no effect:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations.
 
-2. Always automatically restart at scheduled time.
+1. Always automatically restart at scheduled time.
 
 Note that the default max active hours range is 18 hours from the active hours start time unless otherwise configured via the Specify active hours range for auto-restarts policy.
 <!-- ActiveHoursStart-Description-End -->
@@ -3599,7 +3612,7 @@ Enabling either of the following two policies will override the above policy:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations.
 
-2. Always automatically restart at scheduled time.
+1. Always automatically restart at scheduled time.
 <!-- AutoRestartDeadlinePeriodInDays-Description-End -->
 
 <!-- AutoRestartDeadlinePeriodInDays-Editable-Begin -->
@@ -3664,7 +3677,7 @@ Enabling either of the following two policies will override the above policy:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations.
 
-2. Always automatically restart at scheduled time.
+1. Always automatically restart at scheduled time.
 <!-- AutoRestartDeadlinePeriodInDaysForFeatureUpdates-Description-End -->
 
 <!-- AutoRestartDeadlinePeriodInDaysForFeatureUpdates-Editable-Begin -->
@@ -4083,9 +4096,9 @@ If you disable or don't configure this policy, the PC will restart following the
 Enabling any of the following policies will override the above policy:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time.
+1. Always automatically restart at scheduled time.
 
-3. Specify deadline before auto-restart for update installation.
+1. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartDeadline-Description-End -->
 
 <!-- EngagedRestartDeadline-Editable-Begin -->
@@ -4153,9 +4166,9 @@ If you disable or don't configure this policy, the PC will restart following the
 Enabling any of the following policies will override the above policy:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time.
+1. Always automatically restart at scheduled time.
 
-3. Specify deadline before auto-restart for update installation.
+1. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartDeadlineForFeatureUpdates-Description-End -->
 
 <!-- EngagedRestartDeadlineForFeatureUpdates-Editable-Begin -->
@@ -4223,9 +4236,9 @@ If you disable or don't configure this policy, the PC will restart following the
 Enabling any of the following policies will override the above policy:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time.
+1. Always automatically restart at scheduled time.
 
-3. Specify deadline before auto-restart for update installation.
+1. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartSnoozeSchedule-Description-End -->
 
 <!-- EngagedRestartSnoozeSchedule-Editable-Begin -->
@@ -4293,9 +4306,9 @@ If you disable or don't configure this policy, the PC will restart following the
 Enabling any of the following policies will override the above policy:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time.
+1. Always automatically restart at scheduled time.
 
-3. Specify deadline before auto-restart for update installation.
+1. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-Description-End -->
 
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-Editable-Begin -->
@@ -4363,9 +4376,9 @@ If you disable or don't configure this policy, the PC will restart following the
 Enabling any of the following policies will override the above policy:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time.
+1. Always automatically restart at scheduled time.
 
-3. Specify deadline before auto-restart for update installation.
+1. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartTransitionSchedule-Description-End -->
 
 <!-- EngagedRestartTransitionSchedule-Editable-Begin -->
@@ -4433,9 +4446,9 @@ If you disable or don't configure this policy, the PC will restart following the
 Enabling any of the following policies will override the above policy:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time.
+1. Always automatically restart at scheduled time.
 
-3. Specify deadline before auto-restart for update installation.
+1. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-Description-End -->
 
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-Editable-Begin -->

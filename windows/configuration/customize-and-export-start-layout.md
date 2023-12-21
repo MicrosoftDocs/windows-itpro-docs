@@ -10,7 +10,6 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.date: 08/18/2023
 ms.collection:
- - highpri
  - tier1
 ms.technology: itpro-configure
 ---

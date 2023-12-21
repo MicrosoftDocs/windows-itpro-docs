@@ -10,39 +10,42 @@ metadata:
   ms.topic: hub-page
   ms.prod: windows-client
   ms.collection:
-    - highpri
     - tier1
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz
-  ms.date: 09/18/2023
+  ms.date: 10/31/2023
 
 highlightedContent:
   items:
   - title: Get started with Windows 11
     itemType: get-started
     url: /windows/whats-new/windows-11-overview
-  - title: Windows 11, version 22H2
+  - title: Windows 11, version 23H2
     itemType: whats-new
-    url: /windows/whats-new/whats-new-windows-11-version-22H2
-  - title: Windows 11, version 22H2 group policy settings reference 
+    url: /windows/whats-new/whats-new-windows-11-version-23h2
+  - title: Windows 11, version 23H2 group policy settings reference
     itemType: download
-    url: https://www.microsoft.com/en-us/download/details.aspx?id=104594
+    url: https://www.microsoft.com/download/details.aspx?id=105668
   - title: Windows release health
     itemType: whats-new
     url: /windows/release-health
   - title: Windows commercial licensing
     itemType: overview
     url: /windows/whats-new/windows-licensing
+  - title: Copilot in Windows
+    itemType: how-to-guide
+    url: /windows/client-management/manage-windows-copilot
   - title: Windows 365 documentation
     itemType: overview
     url: /windows-365
   - title: Explore all Windows trainings and learning paths for IT pros
     itemType: learn
     url: https://learn.microsoft.com/en-us/training/browse/?products=windows&roles=administrator
-  - title: Enroll Windows client devices in Microsoft Intune
-    itemType: how-to-guide
-    url: /mem/intune/fundamentals/deployment-guide-enrollment-windows
+
+#  - title: Enroll Windows client devices in Microsoft Intune
+#    itemType: how-to-guide
+#    url: /mem/intune/fundamentals/deployment-guide-enrollment-windows
 
 productDirectory:
   title: Get started

@@ -3,24 +3,22 @@ title: What is Delivery Optimization?
 description: This article provides information about Delivery Optimization, a peer-to-peer distribution method in Windows 10 and Windows 11.
 ms.prod: windows-client
 ms.technology: itpro-updates
-ms.localizationpriority: medium
+ms.topic: overview
 author: cmknox
 ms.author: carmenf
 manager: aaroncz
+ms.reviewer: mstewart
 ms.collection:
   - tier3
   - highpri
-ms.topic: overview
-ms.date: 12/31/2017
-ms.reviewer: mstewart
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+ms.date: 06/02/2023
 ---
 
 # What is Delivery Optimization?
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 > **Looking for Group Policy objects?** See [Delivery Optimization reference](waas-delivery-optimization-reference.md) or the master spreadsheet available at the Download Center [for Windows 11](https://www.microsoft.com/en-us/download/details.aspx?id=104594) or [for Windows 10](https://www.microsoft.com/en-us/download/details.aspx?id=104678).
 
@@ -52,7 +50,8 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Windows Client | Minimum Windows version | HTTP Downloader | Peer to Peer | Microsoft Connected Cache (MCC)
 |------------------|---------------|----------------|----------|----------------|
 | Windows Update ([feature updates quality updates, language packs, drivers](../update/get-started-updates-channels-tools.md#types-of-updates)) | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Windows 10 Store apps | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Windows 10/11 UWP Store apps | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Windows 11 Win32 Store apps | Windows 11 | :heavy_check_mark: |  |  |
 | Windows 10 Store for Business apps | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Windows Defender definition updates | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Intune Win32 apps| Windows 10 1709, Windows 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
@@ -60,10 +59,11 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Edge Browser Updates | Windows 10 1809, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Configuration Manager Express updates| Windows 10 1709 + Configuration Manager version 1711, Windows 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
 | Dynamic updates| Windows 10 1903, Windows 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
-| MDM Agent | Windows 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
+| MDM Agent | Windows 11 | :heavy_check_mark: |  |  |
 | Xbox Game Pass (PC) | Windows 10 1809, Windows 11 | :heavy_check_mark: |  | :heavy_check_mark: |
 | Windows Package Manager| Windows 10 1809, Windows 11 | :heavy_check_mark: |  |  |
 | MSIX Installer| Windows 10 2004, Windows 11 | :heavy_check_mark: |  |  |
+| Teams (via MSIX Installer) | Windows 10 2004, Windows 11 | :heavy_check_mark: |  |  |
 
 #### Windows Server
 

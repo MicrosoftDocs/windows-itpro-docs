@@ -8,7 +8,7 @@ manager: aaroncz
 ms.collection:
 - highpri
 - tier3
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/07/2023
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

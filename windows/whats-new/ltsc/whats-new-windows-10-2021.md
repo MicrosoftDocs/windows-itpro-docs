@@ -8,7 +8,7 @@ author: mestew
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.technology: itpro-fundamentals
-ms.date: 04/05/2023
+ms.date: 12/18/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2021</a>
 ---
@@ -18,8 +18,9 @@ appliesto:
 This article lists new and updated features and content that is of interest to IT Pros for Windows 10 Enterprise LTSC 2021, compared to Windows 10 Enterprise LTSC 2019 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](overview.md).
 
 > [!NOTE]
-> Features in Windows 10 Enterprise LTSC 2021 are equivalent to Windows 10, version 21H2.<br>
-> The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the General Availability Channel release of Windows 10 might be limited.
+> Windows 10 Enterprise LTSC 2021 was first available on November 16, 2021. Features in Windows 10 Enterprise LTSC 2021 are equivalent to Windows 10, version 21H2.
+>
+> The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the general availability channel release of Windows 10 might be limited.
 
 Windows 10 Enterprise LTSC 2021 builds on Windows 10 Enterprise LTSC 2019, adding premium features such as advanced protection against modern security threats and comprehensive device management, app management, and control capabilities. 
 
@@ -28,9 +29,9 @@ The Windows 10 Enterprise LTSC 2021 release includes the cumulative enhancements
 ## Lifecycle
 
 > [!IMPORTANT]
-> Windows 10 Enterprise LTSC 2021 has a 5 year lifecycle ([IoT Enterprise LTSC](/windows/iot/iot-enterprise/whats-new/windows-iot-enterprise-ltsc) continues to have a [10 year lifecycle](/lifecycle/products/windows-10-iot-enterprise-ltsc-2021)). Thus, the LTSC 2021 release is not a direct replacement for LTSC 2019, which has a 10 year lifecycle.
+> Windows 10 Enterprise LTSC 2021 has a 5 year lifecycle. ([IoT Enterprise LTSC](/windows/iot/iot-enterprise/whats-new/windows-iot-enterprise-ltsc) continues to have a [10 year lifecycle](/lifecycle/products/windows-10-iot-enterprise-ltsc-2021)). Thus, the LTSC 2021 release is not a direct replacement for LTSC 2019, which has a 10 year lifecycle.
 
-For more information about the lifecycle for this release, see [The next Windows 10 Long Term Servicing Channel (LTSC) release](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-next-windows-10-long-term-servicing-channel-ltsc-release/ba-p/2147232).
+For more information about the lifecycle for this release, see [The next Windows 10 long-term servicing channel (LTSC) release](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-next-windows-10-long-term-servicing-channel-ltsc-release/ba-p/2147232).
 
 ## Hardware security
 
@@ -52,7 +53,7 @@ There are already devices in the market today that offer SMM Firmware Protection
 
 ### Encryption and data protection
 
-BitLocker and Mobile Device Management (MDM) with Azure Active Directory work together to protect your devices from accidental password disclosure. Now, a new key-rolling feature securely rotates recovery passwords on MDM-managed devices. The feature is activated whenever Microsoft Intune/MDM tools or a recovery password is used to unlock a BitLocker protected drive. As a result, the recovery password will be better protected when users manually unlock a BitLocker drive.
+BitLocker and Mobile Device Management (MDM) with Microsoft Entra ID work together to protect your devices from accidental password disclosure. Now, a new key-rolling feature securely rotates recovery passwords on MDM-managed devices. The feature is activated whenever Microsoft Intune/MDM tools or a recovery password is used to unlock a BitLocker protected drive. As a result, the recovery password will be better protected when users manually unlock a BitLocker drive.
 
 ### Network security
 
@@ -97,11 +98,12 @@ Windows Defender Firewall also now supports [Windows Subsystem for Linux (WSL)](
 
 ### App isolation
 
-[Windows Sandbox](https://techcommunity.microsoft.com/t5/Windows-Kernel-Internals/Windows-Sandbox/ba-p/301849): Isolated desktop environment where you can run untrusted software without the fear of lasting impact to your device.
+[Windows Sandbox](/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview): Isolated desktop environment where you can run untrusted software without the fear of lasting impact to your device.
 
 #### Microsoft Defender Application Guard
 
-[Microsoft Defender Application Guard](/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview) enhancements include: 
+[Microsoft Defender Application Guard](/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview) enhancements include:
+
   - Standalone users can install and configure their Windows Defender Application Guard settings without needing to change registry key settings. Enterprise users can check their settings to see what their administrators have configured for their machines to better understand the behavior.
   - Application Guard is now an extension in Google Chrome and Mozilla Firefox. Many users are in a hybrid browser environment, and would like to extend Application Guard's browser isolation technology beyond Microsoft Edge. In the latest release, users can install the Application Guard extension in their Chrome or Firefox browsers. This extension will redirect untrusted navigation to the Application Guard Edge browser. There's also a companion app to enable this feature in the Microsoft Store. Users can quickly launch Application Guard from their desktop using this app. This feature is also available in Windows 10, version 1803 or later with the latest updates.
 
@@ -118,10 +120,6 @@ Application Guard performance is improved with optimized document opening times:
 - An issue is fixed that could cause a one-minute-or-more delay when you open a Microsoft Defender Application Guard (Application Guard) Office document. This issue can occur when you try to open a file using a Universal Naming Convention (UNC) path or Server Message Block (SMB) share link.
 - A memory issue is fixed that could cause an Application Guard container to use almost 1 GB of working set memory when the container is idle.
 - The performance of Robocopy is improved when copying files over 400 MB in size.
-
-[Edge support for Microsoft Defender Application Guard](/deployedge/microsoft-edge-security-windows-defender-application-guard) has been available for Chromium-based Edge since early 2020.
-
-**Application Guard now supports Office**: With [Microsoft Defender Application Guard for Office](/microsoft-365/security/office-365-security/install-app-guard), you can launch untrusted Office documents (from outside the Enterprise) in an isolated container to prevent potentially malicious content from compromising your device.
 
 ### Application Control
 
@@ -140,12 +138,12 @@ Windows Hello enhancements include:
 - Windows Hello is now supported as Fast Identity Online 2 (FIDO2) authenticator across all major browsers including Chrome and Firefox.
 - You can now enable passwordless sign-in for Microsoft accounts on your Windows 10 device by going to **Settings > Accounts > Sign-in options**, and selecting **On** under **Make your device passwordless**. Enabling passwordless sign-in will switch all Microsoft accounts on your Windows 10 device to modern authentication with Windows Hello Face, Fingerprint, or PIN.
 - Windows Hello PIN sign-in support is [added to Safe mode](/windows-insider/archive/new-in-20H1#windows-hello-pin-in-safe-mode-build-18995).
-- Windows Hello for Business now has Hybrid Azure Active Directory support and phone number sign-in (Microsoft account). FIDO2 security key support is expanded to Azure Active Directory hybrid environments, enabling enterprises with hybrid environments to take advantage of [passwordless authentication](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). For more information, see [Expanding Azure Active Directory support for FIDO2 preview to hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/expanding-azure-active-directory-support-for-fido2-preview-to/ba-p/981894).
+- Windows Hello for Business now has Microsoft Entra hybrid support and phone number sign-in (Microsoft account). FIDO2 security key support is expanded to Microsoft Entra hybrid environments, enabling enterprises with hybrid environments to take advantage of [passwordless authentication](/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises). For more information, see [Expanding Azure Active Directory support for FIDO2 preview to hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/expanding-azure-active-directory-support-for-fido2-preview-to/ba-p/981894).
 - With specialized hardware and software components available on devices shipping with Windows 10, version 20H2 configured out of factory, Windows Hello now offers added support for virtualization-based security with supporting fingerprint and face sensors. This feature isolates and secures a user's biometric authentication data.
 - Windows Hello multi-camera support is added, allowing users to choose an external camera priority when both external and internal Windows Hello-capable cameras are present.
-- [Windows Hello FIDO2 certification](https://fidoalliance.org/microsoft-achieves-fido2-certification-for-windows-hello/): Windows Hello is now a FIDO2 Certified authenticator and enables password-less sign-in for websites supporting FIDO2 authentication, such as Microsoft account and Azure AD.
+- [Windows Hello FIDO2 certification](https://fidoalliance.org/microsoft-achieves-fido2-certification-for-windows-hello/): Windows Hello is now a FIDO2 Certified authenticator and enables password-less sign-in for websites supporting FIDO2 authentication, such as Microsoft account and Entra ID.
 - [Streamlined Windows Hello PIN reset experience](/windows/security/identity-protection/hello-for-business/hello-videos#windows-hello-for-business-forgotten-pin-user-experience): Microsoft account users have a revamped Windows Hello PIN reset experience with the same look and feel as signing in on the web.
-- [Remote Desktop with Biometrics](/windows/security/identity-protection/hello-for-business/hello-feature-remote-desktop#remote-desktop-with-biometrics): Azure Active Directory and Active Directory users using Windows Hello for Business can use biometrics to authenticate to a remote desktop session.
+- [Remote Desktop with Biometrics](/windows/security/identity-protection/hello-for-business/hello-feature-remote-desktop#remote-desktop-with-biometrics): Microsoft Entra ID and Active Directory users using Windows Hello for Business can use biometrics to authenticate to a remote desktop session.
 
 ### Credential protection
 
@@ -155,26 +153,19 @@ Windows Hello enhancements include:
 
 ### Privacy controls
 
-[Microphone privacy settings](https://support.microsoft.com/en-us/help/4468232/windows-10-camera-microphone-and-privacy-microsoft-privacy): A microphone icon appears in the notification area letting you see which apps are using your microphone.
+[Microphone privacy settings](https://support.microsoft.com/windows/windows-camera-microphone-and-privacy-a83257bc-e990-d54a-d212-b5e41beba857): A microphone icon appears in the notification area letting you see which apps are using your microphone.
 
 ## Cloud Services
 
-### Microsoft Intune family of products
-
-Configuration Manager, Intune, Desktop Analytics, Co-Management, and the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) are now part of the [Microsoft endpoint management services](/mem/endpoint-manager-overview). See the Nov. 4 2019 [announcement](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/).
-
-### Configuration Manager
-
-An in-place upgrade wizard is available in Configuration Manager. For more information, see [Simplifying Windows 10 deployment with Configuration Manager](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-windows-10-deployment-with-configuration-manager/ba-p/1214364).
-
-#### Microsoft Intune
+### Microsoft Intune
 
 Microsoft Intune supports Windows 10 Enterprise LTSC 2021 with the following exception:
+
 - [Update rings](/mem/intune/protect/windows-10-update-rings) can't be used for feature updates since Windows 10 LTSC versions don't receive feature updates. Update rings can be used for quality updates for Windows 10 Enterprise LTSC 2021 clients.
 
-A new Intune remote action: **Collect diagnostics**, lets you collect the logs from corporate devices without interrupting or waiting for the end user. For more information, see [Collect diagnostics remote action](/mem/intune/fundamentals/whats-new#collect-diagnostics-remote-action).
+A new Intune remote action: **Collect diagnostics**, lets you collect the logs from corporate devices without interrupting or waiting for the end user. For more information, see [Collect diagnostics remote action](/mem/intune/remote-actions/collect-diagnostics).
 
-Intune has also added capabilities to [Role-based access control](/mem/intune/fundamentals/whats-new#role-based-access-control) (RBAC) that can be used to further define profile settings for the Enrollment Status Page (ESP). For more information, see [Create Enrollment Status Page profile and assign to a group](/mem/intune/enrollment/windows-enrollment-status#create-enrollment-status-page-profile-and-assign-to-a-group). 
+Intune has also added capabilities to [Role-based access control](/mem/intune/fundamentals/role-based-access-control) (RBAC) that can be used to further define profile settings for the Enrollment Status Page (ESP). For more information, see [Create Enrollment Status Page profile and assign to a group](/mem/intune/enrollment/windows-enrollment-status).
 
 For a full list of what's new in Microsoft Intune, see [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new).
 
@@ -189,7 +180,8 @@ Windows Management Instrumentation (WMI) Group Policy Service (GPSVC) has a perf
 
 #### Key-rolling and Key-rotation
 
-This release also includes two new features called Key-rolling and Key-rotation enables secure rolling of Recovery passwords on MDM-managed Azure Active Directory devices on demand from Microsoft Intune/MDM tools or when a recovery password is used to unlock the BitLocker protected drive. This feature will help prevent accidental recovery password disclosure as part of manual BitLocker drive unlock by users.
+This release also includes two new features called key-rolling and key-rotation enables secure rolling of recovery passwords on MDM-managed Microsoft Entra ID devices on demand from Microsoft Intune/MDM tools or when a recovery password is used to unlock the BitLocker protected drive. This feature will help prevent accidental recovery password disclosure as part of manual BitLocker drive unlock by users.
+
 ## Deployment
 
 ### SetupDiag

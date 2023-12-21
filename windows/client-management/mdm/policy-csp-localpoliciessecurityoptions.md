@@ -4,7 +4,7 @@ description: Learn more about the LocalPoliciesSecurityOptions Area in Policy CS
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 12/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -367,6 +367,134 @@ Accounts: Rename guest account This security setting determines whether a differ
 
 <!-- Accounts_RenameGuestAccount-End -->
 
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-Begin -->
+## Audit_AuditTheUseOfBackupAndRestoreprivilege
+
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-Applicability-End -->
+
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/Audit_AuditTheUseOfBackupAndRestoreprivilege
+```
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-OmaUri-End -->
+
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-Description-Begin -->
+<!-- Description-Source-DDF -->
+Audit: Audit the use of Backup and Restore privilege This security setting determines whether to audit the use of all user privileges, including Backup and Restore, when the Audit privilege use policy is in effect. Enabling this option when the Audit privilege use policy is also enabled generates an audit event for every file that's backed up or restored. If you disable this policy, then use of the Backup or Restore privilege isn't audited even when Audit privilege use is enabled.
+
+> [!NOTE]
+> On Windows versions prior to Windows Vista configuring this security setting, changes won't take effect until you restart Windows. Enabling this setting can cause a LOT of events, sometimes hundreds per second, during a backup operation. Default: Disabled.
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-Description-End -->
+
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-Editable-End -->
+
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `b64` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: ``) |
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-DFProperties-End -->
+
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-Examples-End -->
+
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-End -->
+
+<!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-Begin -->
+## Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings
+
+<!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-Applicability-End -->
+
+<!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings
+```
+<!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-OmaUri-End -->
+
+<!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-Description-Begin -->
+<!-- Description-Source-DDF -->
+Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings Windows Vista and later versions of Windows allow audit policy to be managed in a more precise way using audit policy subcategories. Setting audit policy at the category level will override the new subcategory audit policy feature. Group Policy only allows audit policy to be set at the category level, and existing group policy may override the subcategory settings of new machines as they're joined to the domain or upgraded to Windows Vista or later versions. To allow audit policy to be managed using subcategories without requiring a change to Group Policy, there is a new registry value in Windows Vista and later versions, SCENoApplyLegacyAuditPolicy, which prevents the application of category-level audit policy from Group Policy and from the Local Security Policy administrative tool. If the category level audit policy set here isn't consistent with the events that are currently being generated, the cause might be that this registry key is set. Default: Enabled.
+<!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-Description-End -->
+
+<!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-Editable-End -->
+
+<!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-DFProperties-End -->
+
+<!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-Examples-End -->
+
+<!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-End -->
+
+<!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-Begin -->
+## Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits
+
+<!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-Applicability-End -->
+
+<!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits
+```
+<!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-OmaUri-End -->
+
+<!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-Description-Begin -->
+<!-- Description-Source-DDF -->
+Audit: Shut down system immediately if unable to log security audits This security setting determines whether the system shuts down if it's unable to log security events. If this security setting is enabled, it causes the system to stop if a security audit can't be logged for any reason. Typically, an event fails to be logged when the security audit log is full and the retention method that's specified for the security log is either Do Not Overwrite Events or Overwrite Events by Days. If the security log is full and an existing entry can't be overwritten, and this security option is enabled, the following Stop error appears: STOP: C0000244 {Audit Failed} An attempt to generate a security audit failed. To recover, an administrator must log on, archive the log (optional), clear the log, and reset this option as desired. Until this security setting is reset, no users, other than a member of the Administrators group will be able to log on to the system, even if the security log isn't full.
+
+> [!NOTE]
+> On Windows versions prior to Windows Vista configuring this security setting, changes won't take effect until you restart Windows. Default: Disabled.
+<!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-Description-End -->
+
+<!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-Editable-End -->
+
+<!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 0 |
+<!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-DFProperties-End -->
+
+<!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-Examples-End -->
+
+<!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-End -->
+
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Begin -->
 ## Devices_AllowedToFormatAndEjectRemovableMedia
 
@@ -587,6 +715,381 @@ Devices: Restrict CD-ROM access to locally logged-on user only This security set
 <!-- Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly-Examples-End -->
 
 <!-- Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly-End -->
+
+<!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-Begin -->
+## Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly
+
+<!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-Applicability-End -->
+
+<!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly
+```
+<!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-OmaUri-End -->
+
+<!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-Description-Begin -->
+<!-- Description-Source-DDF -->
+Devices: Restrict floppy access to locally logged-on user only This security setting determines whether removable floppy media are accessible to both local and remote users simultaneously. If this policy is enabled, it allows only the interactively logged-on user to access removable floppy media. If this policy is enabled and no one is logged-on interactively, the floppy can be accessed over the network. Default: This policy isn't defined and floppy disk drive access isn't restricted to the locally logged-on user.
+<!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-Description-End -->
+
+<!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-Editable-End -->
+
+<!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-DFProperties-End -->
+
+<!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Devices: Restrict floppy access to locally logged-on user only |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-GpMapping-End -->
+
+<!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-Examples-End -->
+
+<!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-End -->
+
+<!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-Begin -->
+## DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways
+
+<!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-Applicability-End -->
+
+<!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways
+```
+<!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-OmaUri-End -->
+
+<!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-Description-Begin -->
+<!-- Description-Source-DDF -->
+Domain member: Digitally encrypt or sign secure channel data (always) This security setting determines whether all secure channel traffic initiated by the domain member must be signed or encrypted. When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup etc. This setting determines whether or not all secure channel traffic initiated by the domain member meets minimum security requirements. Specifically it determines whether all secure channel traffic initiated by the domain member must be signed or encrypted. If this policy is enabled, then the secure channel won't be established unless either signing or encryption of all secure channel traffic is negotiated. If this policy is disabled, then encryption and signing of all secure channel traffic is negotiated with the Domain Controller in which case the level of signing and encryption depends on the version of the Domain Controller and the settings of the following two policies: Domain member: Digitally encrypt secure channel data (when possible) Domain member: Digitally sign secure channel data (when possible) Default: Enabled.
+
+> [!NOTE]
+> If this policy is enabled, the policy Domain member: Digitally sign secure channel data (when possible) is assumed to be enabled regardless of its current setting. This ensures that the domain member attempts to negotiate at least signing of the secure channel traffic. Logon information transmitted over the secure channel is always encrypted regardless of whether encryption of ALL other secure channel traffic is negotiated or not.
+<!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-Description-End -->
+
+<!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-Editable-End -->
+
+<!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-DFProperties-End -->
+
+<!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Domain member: Digitally encrypt or sign secure channel data (always) |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-GpMapping-End -->
+
+<!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-Examples-End -->
+
+<!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-End -->
+
+<!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-Begin -->
+## DomainMember_DigitallyEncryptSecureChannelDataWhenPossible
+
+<!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-Applicability-End -->
+
+<!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/DomainMember_DigitallyEncryptSecureChannelDataWhenPossible
+```
+<!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-OmaUri-End -->
+
+<!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-Description-Begin -->
+<!-- Description-Source-DDF -->
+Domain member: Digitally encrypt secure channel data (when possible) This security setting determines whether a domain member attempts to negotiate encryption for all secure channel traffic that it initiates. When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass-through authentication, LSA SID/name Lookup etc. This setting determines whether or not the domain member attempts to negotiate encryption for all secure channel traffic that it initiates. If enabled, the domain member will request encryption of all secure channel traffic. If the domain controller supports encryption of all secure channel traffic, then all secure channel traffic will be encrypted. Otherwise only logon information transmitted over the secure channel will be encrypted. If this setting is disabled, then the domain member won't attempt to negotiate secure channel encryption. Default: Enabled.
+
+> [!IMPORTANT]
+> There is no known reason for disabling this setting. Besides unnecessarily reducing the potential confidentiality level of the secure channel, disabling this setting may unnecessarily reduce secure channel throughput, because concurrent API calls that use the secure channel are only possible when the secure channel is signed or encrypted.
+
+> [!NOTE]
+> Domain controllers are also domain members and establish secure channels with other domain controllers in the same domain as well as domain controllers in trusted domains.
+<!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-Description-End -->
+
+<!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-Editable-End -->
+
+<!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-DFProperties-End -->
+
+<!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Domain member: Digitally encrypt secure channel data (when possible) |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-GpMapping-End -->
+
+<!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-Examples-End -->
+
+<!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-End -->
+
+<!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-Begin -->
+## DomainMember_DigitallySignSecureChannelDataWhenPossible
+
+<!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-Applicability-End -->
+
+<!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/DomainMember_DigitallySignSecureChannelDataWhenPossible
+```
+<!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-OmaUri-End -->
+
+<!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-Description-Begin -->
+<!-- Description-Source-DDF -->
+Domain member: Digitally sign secure channel data (when possible) This security setting determines whether a domain member attempts to negotiate signing for all secure channel traffic that it initiates. When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup etc. This setting determines whether or not the domain member attempts to negotiate signing for all secure channel traffic that it initiates. If enabled, the domain member will request signing of all secure channel traffic. If the Domain Controller supports signing of all secure channel traffic, then all secure channel traffic will be signed which ensures that it can't be tampered with in transit. Default: Enabled.
+<!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-Description-End -->
+
+<!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-Editable-End -->
+
+<!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-DFProperties-End -->
+
+<!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Domain member: Digitally sign secure channel data (when possible) |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-GpMapping-End -->
+
+<!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-Examples-End -->
+
+<!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-End -->
+
+<!-- DomainMember_DisableMachineAccountPasswordChanges-Begin -->
+## DomainMember_DisableMachineAccountPasswordChanges
+
+<!-- DomainMember_DisableMachineAccountPasswordChanges-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- DomainMember_DisableMachineAccountPasswordChanges-Applicability-End -->
+
+<!-- DomainMember_DisableMachineAccountPasswordChanges-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/DomainMember_DisableMachineAccountPasswordChanges
+```
+<!-- DomainMember_DisableMachineAccountPasswordChanges-OmaUri-End -->
+
+<!-- DomainMember_DisableMachineAccountPasswordChanges-Description-Begin -->
+<!-- Description-Source-DDF -->
+Domain member: Disable machine account password changes Determines whether a domain member periodically changes its computer account password.
+
+- If this setting is enabled, the domain member doesn't attempt to change its computer account password.
+
+- If this setting is disabled, the domain member attempts to change its computer account password as specified by the setting for Domain Member: Maximum age for machine account password, which by default is every 30 days. Default: Disabled.
+
+> [!NOTE]
+> This security setting shouldn't be enabled. Computer account passwords are used to establish secure channel communications between members and domain controllers and, within the domain, between the domain controllers themselves. Once it's established, the secure channel is used to transmit sensitive information that's necessary for making authentication and authorization decisions. This setting shouldn't be used in an attempt to support dual-boot scenarios that use the same computer account. If you want to dual-boot two installations that are joined to the same domain, give the two installations different computer names.
+<!-- DomainMember_DisableMachineAccountPasswordChanges-Description-End -->
+
+<!-- DomainMember_DisableMachineAccountPasswordChanges-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DomainMember_DisableMachineAccountPasswordChanges-Editable-End -->
+
+<!-- DomainMember_DisableMachineAccountPasswordChanges-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 0 |
+<!-- DomainMember_DisableMachineAccountPasswordChanges-DFProperties-End -->
+
+<!-- DomainMember_DisableMachineAccountPasswordChanges-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Domain member: Disable machine account password changes |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- DomainMember_DisableMachineAccountPasswordChanges-GpMapping-End -->
+
+<!-- DomainMember_DisableMachineAccountPasswordChanges-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DomainMember_DisableMachineAccountPasswordChanges-Examples-End -->
+
+<!-- DomainMember_DisableMachineAccountPasswordChanges-End -->
+
+<!-- DomainMember_MaximumMachineAccountPasswordAge-Begin -->
+## DomainMember_MaximumMachineAccountPasswordAge
+
+<!-- DomainMember_MaximumMachineAccountPasswordAge-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- DomainMember_MaximumMachineAccountPasswordAge-Applicability-End -->
+
+<!-- DomainMember_MaximumMachineAccountPasswordAge-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/DomainMember_MaximumMachineAccountPasswordAge
+```
+<!-- DomainMember_MaximumMachineAccountPasswordAge-OmaUri-End -->
+
+<!-- DomainMember_MaximumMachineAccountPasswordAge-Description-Begin -->
+<!-- Description-Source-DDF -->
+Domain member: Maximum machine account password age This security setting determines how often a domain member will attempt to change its computer account password. Default: 30 days.
+
+> [!IMPORTANT]
+> This setting applies to Windows 2000 computers, but it isn't available through the Security Configuration Manager tools on these computers.
+<!-- DomainMember_MaximumMachineAccountPasswordAge-Description-End -->
+
+<!-- DomainMember_MaximumMachineAccountPasswordAge-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DomainMember_MaximumMachineAccountPasswordAge-Editable-End -->
+
+<!-- DomainMember_MaximumMachineAccountPasswordAge-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-999]` |
+| Default Value  | 30 |
+<!-- DomainMember_MaximumMachineAccountPasswordAge-DFProperties-End -->
+
+<!-- DomainMember_MaximumMachineAccountPasswordAge-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Domain member: Maximum machine account password age |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- DomainMember_MaximumMachineAccountPasswordAge-GpMapping-End -->
+
+<!-- DomainMember_MaximumMachineAccountPasswordAge-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DomainMember_MaximumMachineAccountPasswordAge-Examples-End -->
+
+<!-- DomainMember_MaximumMachineAccountPasswordAge-End -->
+
+<!-- DomainMember_RequireStrongSessionKey-Begin -->
+## DomainMember_RequireStrongSessionKey
+
+<!-- DomainMember_RequireStrongSessionKey-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- DomainMember_RequireStrongSessionKey-Applicability-End -->
+
+<!-- DomainMember_RequireStrongSessionKey-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/DomainMember_RequireStrongSessionKey
+```
+<!-- DomainMember_RequireStrongSessionKey-OmaUri-End -->
+
+<!-- DomainMember_RequireStrongSessionKey-Description-Begin -->
+<!-- Description-Source-DDF -->
+Domain member: Require strong (Windows 2000 or later) session key This security setting determines whether 128-bit key strength is required for encrypted secure channel data. When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller within the domain. This secure channel is used to perform operations such as NTLM pass-through authentication, LSA SID/name Lookup, and so on. Depending on what version of Windows is running on the domain controller that the domain member is communicating with and the settings of the parameters: Domain member: Digitally encrypt or sign secure channel data (always) Domain member: Digitally encrypt secure channel data (when possible) Some or all of the information that's transmitted over the secure channel will be encrypted. This policy setting determines whether or not 128-bit key strength is required for the secure channel information that's encrypted.
+
+- If this setting is enabled, then the secure channel won't be established unless 128-bit encryption can be performed.
+
+- If this setting is disabled, then the key strength is negotiated with the domain controller. Default: Enabled.
+
+> [!IMPORTANT]
+> In order to take advantage of this policy on member workstations and servers, all domain controllers that constitute the member's domain must be running Windows 2000 or later. In order to take advantage of this policy on domain controllers, all domain controllers in the same domain as well as all trusted domains must run Windows 2000 or later.
+<!-- DomainMember_RequireStrongSessionKey-Description-End -->
+
+<!-- DomainMember_RequireStrongSessionKey-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DomainMember_RequireStrongSessionKey-Editable-End -->
+
+<!-- DomainMember_RequireStrongSessionKey-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- DomainMember_RequireStrongSessionKey-DFProperties-End -->
+
+<!-- DomainMember_RequireStrongSessionKey-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Domain member: Require strong (Windows 2000 or later) session key |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- DomainMember_RequireStrongSessionKey-GpMapping-End -->
+
+<!-- DomainMember_RequireStrongSessionKey-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DomainMember_RequireStrongSessionKey-Examples-End -->
+
+<!-- DomainMember_RequireStrongSessionKey-End -->
 
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-Begin -->
 ## InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked
@@ -822,6 +1325,56 @@ Interactive logon: Don't require CTRL+ALT+DEL This security setting determines w
 
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-End -->
 
+<!-- InteractiveLogon_MachineAccountThreshold-Begin -->
+## InteractiveLogon_MachineAccountThreshold
+
+<!-- InteractiveLogon_MachineAccountThreshold-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- InteractiveLogon_MachineAccountThreshold-Applicability-End -->
+
+<!-- InteractiveLogon_MachineAccountThreshold-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/InteractiveLogon_MachineAccountThreshold
+```
+<!-- InteractiveLogon_MachineAccountThreshold-OmaUri-End -->
+
+<!-- InteractiveLogon_MachineAccountThreshold-Description-Begin -->
+<!-- Description-Source-DDF -->
+Interactive logon: Machine account threshold. The machine lockout policy is enforced only on those machines that have BitLocker enabled for protecting OS volumes. Please ensure that appropriate recovery password backup policies are enabled. This security setting determines the number of failed logon attempts that causes the machine to be locked out. A locked out machine can only be recovered by providing recovery key at console. You can set the value between 1 and 999 failed logon attempts. If you set the value to 0, the machine will never be locked out. Values from 1 to 3 will be interpreted as 4. Failed password attempts against workstations or member servers that have been locked using either CTRL+ALT+DELETE or password protected screen savers counts as failed logon attempts. The machine lockout policy is enforced only on those machines that have BitLocker enabled for protecting OS volumes. Please ensure that the appropriate recovery password backup policies are enabled. Default: 0.
+<!-- InteractiveLogon_MachineAccountThreshold-Description-End -->
+
+<!-- InteractiveLogon_MachineAccountThreshold-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- InteractiveLogon_MachineAccountThreshold-Editable-End -->
+
+<!-- InteractiveLogon_MachineAccountThreshold-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-999]` |
+| Default Value  | 0 |
+<!-- InteractiveLogon_MachineAccountThreshold-DFProperties-End -->
+
+<!-- InteractiveLogon_MachineAccountThreshold-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Interactive logon: Machine account lockout threshold |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- InteractiveLogon_MachineAccountThreshold-GpMapping-End -->
+
+<!-- InteractiveLogon_MachineAccountThreshold-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- InteractiveLogon_MachineAccountThreshold-Examples-End -->
+
+<!-- InteractiveLogon_MachineAccountThreshold-End -->
+
 <!-- InteractiveLogon_MachineInactivityLimit-Begin -->
 ## InteractiveLogon_MachineInactivityLimit
 
@@ -971,6 +1524,87 @@ Interactive logon: Message title for users attempting to log on This security se
 <!-- InteractiveLogon_MessageTitleForUsersAttemptingToLogOn-Examples-End -->
 
 <!-- InteractiveLogon_MessageTitleForUsersAttemptingToLogOn-End -->
+
+<!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Begin -->
+## InteractiveLogon_NumberOfPreviousLogonsToCache
+
+<!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Applicability-End -->
+
+<!-- InteractiveLogon_NumberOfPreviousLogonsToCache-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/InteractiveLogon_NumberOfPreviousLogonsToCache
+```
+<!-- InteractiveLogon_NumberOfPreviousLogonsToCache-OmaUri-End -->
+
+<!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Description-Begin -->
+<!-- Description-Source-DDF -->
+Interactive logon: Number of previous logons to cache (in case domain controller isn't available) Each unique user's logon information is cached locally so that, in the event that a domain controller is unavailable during subsequent logon attempts, they're able to log on. The cached logon information is stored from the previous logon session. If a domain controller is unavailable and a user's logon information isn't cached, the user is prompted with this message: There are currently no logon servers available to service the logon request. In this policy setting, a value of 0 disables logon caching. Any value above 50 only caches 50 logon attempts. Windows supports a maximum of 50 cache entries and the number of entries consumed per user depends on the credential. For example, a maximum of 50 unique password user accounts can be cached on a Windows system, but only 25 smart card user accounts can be cached because both the password information and the smart card information are stored. When a user with cached logon information logs on again, the user's individual cached information is replaced. Default: Windows Server 2008: 25 All Other Versions: 10.
+<!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Description-End -->
+
+<!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Editable-End -->
+
+<!-- InteractiveLogon_NumberOfPreviousLogonsToCache-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 10 |
+<!-- InteractiveLogon_NumberOfPreviousLogonsToCache-DFProperties-End -->
+
+<!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Examples-End -->
+
+<!-- InteractiveLogon_NumberOfPreviousLogonsToCache-End -->
+
+<!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-Begin -->
+## InteractiveLogon_PromptUserToChangePasswordBeforeExpiration
+
+<!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-Applicability-End -->
+
+<!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/InteractiveLogon_PromptUserToChangePasswordBeforeExpiration
+```
+<!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-OmaUri-End -->
+
+<!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-Description-Begin -->
+<!-- Description-Source-DDF -->
+Interactive logon: Prompt user to change password before expiration Determines how far in advance (in days) users are warned that their password is about to expire. With this advance warning, the user has time to construct a password that's sufficiently strong. Default: 5 days.
+<!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-Description-End -->
+
+<!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-Editable-End -->
+
+<!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-999]` |
+| Default Value  | 5 |
+<!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-DFProperties-End -->
+
+<!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-Examples-End -->
+
+<!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-End -->
 
 <!-- InteractiveLogon_SmartCardRemovalBehavior-Begin -->
 ## InteractiveLogon_SmartCardRemovalBehavior
@@ -1226,6 +1860,56 @@ Microsoft network client: Send unencrypted password to connect to third-party SM
 
 <!-- MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers-End -->
 
+<!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-Begin -->
+## MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession
+
+<!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-Applicability-End -->
+
+<!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession
+```
+<!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-OmaUri-End -->
+
+<!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-Description-Begin -->
+<!-- Description-Source-DDF -->
+Microsoft network server: Amount of idle time required before suspending a session This security setting determines the amount of continuous idle time that must pass in a Server Message Block (SMB) session before the session is suspended due to inactivity. Administrators can use this policy to control when a computer suspends an inactive SMB session. If client activity resumes, the session is automatically reestablished. For this policy setting, a value of 0 means to disconnect an idle session as quickly as is reasonably possible. The maximum value is 99999, which is 208 days; in effect, this value disables the policy. Default: This policy isn't defined, which means that the system treats it as 15 minutes for servers and undefined for workstations.
+<!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-Description-End -->
+
+<!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-Editable-End -->
+
+<!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-15]` |
+| Default Value  | 15 |
+<!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-DFProperties-End -->
+
+<!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Microsoft network server: Amount of idle time required before suspending session |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-GpMapping-End -->
+
+<!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-Examples-End -->
+
+<!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-End -->
+
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsAlways-Begin -->
 ## MicrosoftNetworkServer_DigitallySignCommunicationsAlways
 
@@ -1358,6 +2042,191 @@ Microsoft network server: Digitally sign communications (if client agrees) This 
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-Examples-End -->
 
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-End -->
+
+<!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-Begin -->
+## MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire
+
+<!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-Applicability-End -->
+
+<!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire
+```
+<!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-OmaUri-End -->
+
+<!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-Description-Begin -->
+<!-- Description-Source-DDF -->
+Microsoft network server: Disconnect clients when logon hours expire This security setting determines whether to disconnect users who are connected to the local computer outside their user account's valid logon hours. This setting affects the Server Message Block (SMB) component. When this policy is enabled, it causes client sessions with the SMB Service to be forcibly disconnected when the client's logon hours expire. If this policy is disabled, an established client session is allowed to be maintained after the client's logon hours have expired. Default on Windows Vista and above: Enabled. Default on Windows XP: Disabled.
+<!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-Description-End -->
+
+<!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-Editable-End -->
+
+<!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-DFProperties-End -->
+
+<!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-Examples-End -->
+
+<!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-End -->
+
+<!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-Begin -->
+## MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel
+
+<!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-Applicability-End -->
+
+<!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel
+```
+<!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-OmaUri-End -->
+
+<!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-Description-Begin -->
+<!-- Description-Source-DDF -->
+Microsoft network server: Server SPN target name validation level This policy setting controls the level of validation a computer with shared folders or printers (the server) performs on the service principal name (SPN) that's provided by the client computer when it establishes a session using the server message block (SMB) protocol. The server message block (SMB) protocol provides the basis for file and print sharing and other networking operations, such as remote Windows administration. The SMB protocol supports validating the SMB server service principal name (SPN) within the authentication blob provided by a SMB client to prevent a class of attacks against SMB servers referred to as SMB relay attacks. This setting will affect both SMB1 and SMB2. This security setting determines the level of validation a SMB server performs on the service principal name (SPN) provided by the SMB client when trying to establish a session to an SMB server. The options are: Off - the SPN isn't required or validated by the SMB server from a SMB client. Accept if provided by client - the SMB server will accept and validate the SPN provided by the SMB client and allow a session to be established if it matches the SMB server's list of SPN's for itself. If the SPN does NOT match, the session request for that SMB client will be denied. Required from client - the SMB client MUST send a SPN name in session setup, and the SPN name provided MUST match the SMB server that's being requested to establish a connection. If no SPN is provided by client, or the SPN provided doesn't match, the session is denied. Default: Off All Windows operating systems support both a client-side SMB component and a server-side SMB component. This setting affects the server SMB behavior, and its implementation should be carefully evaluated and tested to prevent disruptions to file and print serving capabilities. Additional information on implementing and using this to secure your SMB servers can be found at the Microsoft website (https://go.microsoft.com/fwlink/?LinkId=144505).
+<!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-Description-End -->
+
+<!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-Editable-End -->
+
+<!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-2]` |
+| Default Value  | 0 |
+<!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-DFProperties-End -->
+
+<!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-Examples-End -->
+
+<!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-End -->
+
+<!-- MinimumPasswordLength-Begin -->
+## MinimumPasswordLength
+
+<!-- MinimumPasswordLength-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- MinimumPasswordLength-Applicability-End -->
+
+<!-- MinimumPasswordLength-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/MinimumPasswordLength
+```
+<!-- MinimumPasswordLength-OmaUri-End -->
+
+<!-- MinimumPasswordLength-Description-Begin -->
+<!-- Description-Source-DDF -->
+This security setting determines the least number of characters that a password for a user account may contain. The maximum value for this setting depends on the value of the Relax minimum password length limits setting. If the Relax minimum password length limits setting isn't defined, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and disabled, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and enabled, this setting may be configured from 0 to 128. Setting the required number of characters to 0 means that no password is required.
+
+> [!NOTE]
+> By default, member computers follow the configuration of their domain controllers. Default values: 7 on domain controllers 0 on stand-alone servers Configuring this setting larger than 14 may affect compatibility with clients, services, and applications. We recommend that you only configure this setting larger than 14 after you use the Minimum password length audit setting to test for potential incompatibilities at the new setting.
+<!-- MinimumPasswordLength-Description-End -->
+
+<!-- MinimumPasswordLength-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MinimumPasswordLength-Editable-End -->
+
+<!-- MinimumPasswordLength-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-128]` |
+| Default Value  | 0 |
+<!-- MinimumPasswordLength-DFProperties-End -->
+
+<!-- MinimumPasswordLength-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Minimum password length |
+| Path | Windows Settings > Security Settings > Account Policies > Password Policy |
+<!-- MinimumPasswordLength-GpMapping-End -->
+
+<!-- MinimumPasswordLength-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MinimumPasswordLength-Examples-End -->
+
+<!-- MinimumPasswordLength-End -->
+
+<!-- MinimumPasswordLengthAudit-Begin -->
+## MinimumPasswordLengthAudit
+
+<!-- MinimumPasswordLengthAudit-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- MinimumPasswordLengthAudit-Applicability-End -->
+
+<!-- MinimumPasswordLengthAudit-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/MinimumPasswordLengthAudit
+```
+<!-- MinimumPasswordLengthAudit-OmaUri-End -->
+
+<!-- MinimumPasswordLengthAudit-Description-Begin -->
+<!-- Description-Source-DDF -->
+This security setting determines the minimum password length for which password length audit warning events are issued. This setting may be configured from 1 to 128. You should only enable and configure this setting when you try to determine the potential effect of increasing the minimum password length setting in your environment. If this setting isn't defined, audit events won't be issued. If this setting is defined and is less than or equal to the minimum password length setting, audit events won't be issued. If this setting is defined and is greater than the minimum password length setting, and the length of a new account password is less than this setting, an audit event will be issued.
+<!-- MinimumPasswordLengthAudit-Description-End -->
+
+<!-- MinimumPasswordLengthAudit-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MinimumPasswordLengthAudit-Editable-End -->
+
+<!-- MinimumPasswordLengthAudit-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[1-128]` |
+| Default Value  | 4294967295 |
+<!-- MinimumPasswordLengthAudit-DFProperties-End -->
+
+<!-- MinimumPasswordLengthAudit-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Minimum password length audit |
+| Path | Windows Settings > Security Settings > Account Policies > Password Policy |
+<!-- MinimumPasswordLengthAudit-GpMapping-End -->
+
+<!-- MinimumPasswordLengthAudit-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MinimumPasswordLengthAudit-Examples-End -->
+
+<!-- MinimumPasswordLengthAudit-End -->
 
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-Begin -->
 ## NetworkAccess_AllowAnonymousSIDOrNameTranslation
@@ -1540,6 +2409,227 @@ Network access: Don't allow anonymous enumeration of SAM accounts and shares Thi
 
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares-End -->
 
+<!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-Begin -->
+## NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication
+
+<!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-Applicability-End -->
+
+<!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication
+```
+<!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-OmaUri-End -->
+
+<!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-Description-Begin -->
+<!-- Description-Source-DDF -->
+Network access: Don't allow storage of passwords and credentials for network authentication This security setting determines whether Credential Manager saves passwords and credentials for later use when it gains domain authentication.
+
+- If you enable this setting, Credential Manager doesn't store passwords and credentials on the computer.
+
+- If you disable or don't configure this policy setting, Credential Manager will store passwords and credentials on this computer for later use for domain authentication.
+
+> [!NOTE]
+> When configuring this security setting, changes won't take effect until you restart Windows. Default: Disabled.
+<!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-Description-End -->
+
+<!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-Editable-End -->
+
+<!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 0 |
+<!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-DFProperties-End -->
+
+<!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-Examples-End -->
+
+<!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-End -->
+
+<!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-Begin -->
+## NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers
+
+<!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-Applicability-End -->
+
+<!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers
+```
+<!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-OmaUri-End -->
+
+<!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-Description-Begin -->
+<!-- Description-Source-DDF -->
+Network access: Let Everyone permissions apply to anonymous users This security setting determines what additional permissions are granted for anonymous connections to the computer. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that doesn't maintain a reciprocal trust. By Default, the Everyone security identifier (SID) is removed from the token created for anonymous connections. Therefore, permissions granted to the Everyone group don't apply to anonymous users. If this option is set, anonymous users can only access those resources for which the anonymous user has been explicitly given permission. If this policy is enabled, the Everyone SID is added to the token that's created for anonymous connections. In this case, anonymous users are able to access any resource for which the Everyone group has been given permissions. Default: Disabled.
+<!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-Description-End -->
+
+<!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-Editable-End -->
+
+<!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 0 |
+<!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-DFProperties-End -->
+
+<!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Network access: Let Everyone permissions apply to anonymous users |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-GpMapping-End -->
+
+<!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-Examples-End -->
+
+<!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-End -->
+
+<!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-Begin -->
+## NetworkAccess_NamedPipesThatCanBeAccessedAnonymously
+
+<!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-Applicability-End -->
+
+<!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/NetworkAccess_NamedPipesThatCanBeAccessedAnonymously
+```
+<!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-OmaUri-End -->
+
+<!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-Description-Begin -->
+<!-- Description-Source-DDF -->
+Network access: Named pipes that can be accessed anonymously This security setting determines which communication sessions (pipes) will have attributes and permissions that allow anonymous access. Default: None.
+<!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-Description-End -->
+
+<!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-Editable-End -->
+
+<!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-DFProperties-End -->
+
+<!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-Examples-End -->
+
+<!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-End -->
+
+<!-- NetworkAccess_RemotelyAccessibleRegistryPaths-Begin -->
+## NetworkAccess_RemotelyAccessibleRegistryPaths
+
+<!-- NetworkAccess_RemotelyAccessibleRegistryPaths-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- NetworkAccess_RemotelyAccessibleRegistryPaths-Applicability-End -->
+
+<!-- NetworkAccess_RemotelyAccessibleRegistryPaths-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/NetworkAccess_RemotelyAccessibleRegistryPaths
+```
+<!-- NetworkAccess_RemotelyAccessibleRegistryPaths-OmaUri-End -->
+
+<!-- NetworkAccess_RemotelyAccessibleRegistryPaths-Description-Begin -->
+<!-- Description-Source-DDF -->
+Network access: Remotely accessible registry paths This security setting determines which registry keys can be accessed over the network, regardless of the users or groups listed in the access control list (ACL) of the winreg registry key. Default: System\CurrentControlSet\Control\ProductOptions System\CurrentControlSet\Control\Server Applications Software\Microsoft\Windows NT\CurrentVersion Caution Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.
+
+> [!NOTE]
+> This security setting isn't available on earlier versions of Windows. The security setting that appears on computers running Windows XP, &quot;Network access: Remotely accessible registry paths&quot; corresponds to the &quot;Network access: Remotely accessible registry paths and subpaths&quot; security option on members of the Windows Server 2003 family. For more information, see Network access: Remotely accessible registry paths and subpaths.
+<!-- NetworkAccess_RemotelyAccessibleRegistryPaths-Description-End -->
+
+<!-- NetworkAccess_RemotelyAccessibleRegistryPaths-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NetworkAccess_RemotelyAccessibleRegistryPaths-Editable-End -->
+
+<!-- NetworkAccess_RemotelyAccessibleRegistryPaths-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NetworkAccess_RemotelyAccessibleRegistryPaths-DFProperties-End -->
+
+<!-- NetworkAccess_RemotelyAccessibleRegistryPaths-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NetworkAccess_RemotelyAccessibleRegistryPaths-Examples-End -->
+
+<!-- NetworkAccess_RemotelyAccessibleRegistryPaths-End -->
+
+<!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-Begin -->
+## NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths
+
+<!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-Applicability-End -->
+
+<!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths
+```
+<!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-OmaUri-End -->
+
+<!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-Description-Begin -->
+<!-- Description-Source-DDF -->
+Network access: Remotely accessible registry paths and subpaths This security setting determines which registry paths and subpaths can be accessed over the network, regardless of the users or groups listed in the access control list (ACL) of the winreg registry key. Default: System\CurrentControlSet\Control\Print\Printers System\CurrentControlSet\Services\Eventlog Software\Microsoft\OLAP Server Software\Microsoft\Windows NT\CurrentVersion\Print Software\Microsoft\Windows NT\CurrentVersion\Windows System\CurrentControlSet\Control\ContentIndex System\CurrentControlSet\Control\Terminal Server System\CurrentControlSet\Control\Terminal Server\UserConfig System\CurrentControlSet\Control\Terminal Server\DefaultUserConfiguration Software\Microsoft\Windows NT\CurrentVersion\Perflib System\CurrentControlSet\Services\SysmonLog System\CurrentControlSet\Services\CertSvc System\CurrentControlSet\Services\Wins Caution Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.
+
+> [!NOTE]
+> On Windows XP, this security setting was called "Network access: Remotely accessible registry paths". If you configure this setting on a member of the Windows Server 2003 family that's joined to a domain, this setting is inherited by computers running Windows XP, but will appear as the "Network access: Remotely accessible registry paths" security option. For more information, see Network access: Remotely accessible registry paths and subpaths.
+<!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-Description-End -->
+
+<!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-Editable-End -->
+
+<!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-DFProperties-End -->
+
+<!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-Examples-End -->
+
+<!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-End -->
+
 <!-- NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares-Begin -->
 ## NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares
 
@@ -1645,6 +2735,130 @@ Network access: Restrict clients allowed to make remote calls to SAM This policy
 <!-- NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM-Examples-End -->
 
 <!-- NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM-End -->
+
+<!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-Begin -->
+## NetworkAccess_SharesThatCanBeAccessedAnonymously
+
+<!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-Applicability-End -->
+
+<!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/NetworkAccess_SharesThatCanBeAccessedAnonymously
+```
+<!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-OmaUri-End -->
+
+<!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-Description-Begin -->
+<!-- Description-Source-DDF -->
+Network access: Shares that can be accessed anonymously This security setting determines which network shares can accessed by anonymous users. Default: None specified.
+<!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-Description-End -->
+
+<!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-Editable-End -->
+
+<!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-DFProperties-End -->
+
+<!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-Examples-End -->
+
+<!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-End -->
+
+<!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-Begin -->
+## NetworkAccess_SharingAndSecurityModelForLocalAccounts
+
+<!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-Applicability-End -->
+
+<!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/NetworkAccess_SharingAndSecurityModelForLocalAccounts
+```
+<!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-OmaUri-End -->
+
+<!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-Description-Begin -->
+<!-- Description-Source-DDF -->
+Network access: Sharing and security model for local accounts This security setting determines how network logons that use local accounts are authenticated. If this setting is set to Classic, network logons that use local account credentials authenticate by using those credentials. The Classic model allows fine control over access to resources. By using the Classic model, you can grant different types of access to different users for the same resource. If this setting is set to Guest only, network logons that use local accounts are automatically mapped to the Guest account. By using the Guest model, you can have all users treated equally. All users authenticate as Guest, and they all receive the same level of access to a given resource, which can be either Read-only or Modify. Default on domain computers: Classic. Default on stand-alone computers: Guest only Important With the Guest only model, any user who can access your computer over the network (including anonymous Internet users) can access your shared resources. You must use the Windows Firewall or another similar device to protect your computer from unauthorized access. Similarly, with the Classic model, local accounts must be password protected; otherwise, those user accounts can be used by anyone to access shared system resources.
+
+> [!NOTE]
+> This setting doesn't affect interactive logons that are performed remotely by using such services as Telnet or Remote Desktop Services. Remote Desktop Services was called Terminal Services in previous versions of Windows Server. This policy will have no impact on computers running Windows 2000. When the computer isn't joined to a domain, this setting also modifies the Sharing and Security tabs in File Explorer to correspond to the sharing and security model that's being used.
+<!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-Description-End -->
+
+<!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-Editable-End -->
+
+<!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 0 |
+<!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-DFProperties-End -->
+
+<!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-Examples-End -->
+
+<!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-End -->
+
+<!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-Begin -->
+## NetworkSecurity_AllowLocalSystemNULLSessionFallback
+
+<!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-Applicability-End -->
+
+<!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/NetworkSecurity_AllowLocalSystemNULLSessionFallback
+```
+<!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-OmaUri-End -->
+
+<!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-Description-Begin -->
+<!-- Description-Source-DDF -->
+Network security: Allow LocalSystem NULL session fallback Allow NTLM to fall back to NULL session when used with LocalSystem. The default is TRUE up to Windows Vista and FALSE in Windows 7.
+<!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-Description-End -->
+
+<!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-Editable-End -->
+
+<!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-DFProperties-End -->
+
+<!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-Examples-End -->
+
+<!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-End -->
 
 <!-- NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM-Begin -->
 ## NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM
@@ -1960,6 +3174,53 @@ Network security LAN Manager authentication level This security setting determin
 <!-- NetworkSecurity_LANManagerAuthenticationLevel-Examples-End -->
 
 <!-- NetworkSecurity_LANManagerAuthenticationLevel-End -->
+
+<!-- NetworkSecurity_LDAPClientSigningRequirements-Begin -->
+## NetworkSecurity_LDAPClientSigningRequirements
+
+<!-- NetworkSecurity_LDAPClientSigningRequirements-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- NetworkSecurity_LDAPClientSigningRequirements-Applicability-End -->
+
+<!-- NetworkSecurity_LDAPClientSigningRequirements-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/NetworkSecurity_LDAPClientSigningRequirements
+```
+<!-- NetworkSecurity_LDAPClientSigningRequirements-OmaUri-End -->
+
+<!-- NetworkSecurity_LDAPClientSigningRequirements-Description-Begin -->
+<!-- Description-Source-DDF -->
+Network security: LDAP client signing requirements This security setting determines the level of data signing that's requested on behalf of clients issuing LDAP BIND requests, as follows: None: The LDAP BIND request is issued with the options that are specified by the caller. Negotiate signing: If Transport Layer Security/Secure Sockets Layer (TLS\SSL) hasn't been started, the LDAP BIND request is initiated with the LDAP data signing option set in addition to the options specified by the caller. If TLS\SSL has been started, the LDAP BIND request is initiated with the options that are specified by the caller. Require signature: This is the same as Negotiate signing. However, if the LDAP server's intermediate saslBindInProgress response doesn't indicate that LDAP traffic signing is required, the caller is told that the LDAP BIND command request failed.
+
+> [!CAUTION]
+> If you set the server to Require signature, you must also set the client. Not setting the client results in a loss of connection with the server.
+
+> [!NOTE]
+> This setting doesn't have any impact on ldap_simple_bind or ldap_simple_bind_s. No Microsoft LDAP clients that are shipped with Windows XP Professional use ldap_simple_bind or ldap_simple_bind_s to talk to a domain controller. Default: Negotiate signing.
+<!-- NetworkSecurity_LDAPClientSigningRequirements-Description-End -->
+
+<!-- NetworkSecurity_LDAPClientSigningRequirements-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NetworkSecurity_LDAPClientSigningRequirements-Editable-End -->
+
+<!-- NetworkSecurity_LDAPClientSigningRequirements-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-2]` |
+| Default Value  | 0 |
+<!-- NetworkSecurity_LDAPClientSigningRequirements-DFProperties-End -->
+
+<!-- NetworkSecurity_LDAPClientSigningRequirements-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NetworkSecurity_LDAPClientSigningRequirements-Examples-End -->
+
+<!-- NetworkSecurity_LDAPClientSigningRequirements-End -->
 
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients-Begin -->
 ## NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients
@@ -2320,6 +3581,155 @@ Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers This po
 
 <!-- NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers-End -->
 
+<!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-Begin -->
+## RecoveryConsole_AllowAutomaticAdministrativeLogon
+
+<!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-Applicability-End -->
+
+<!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon
+```
+<!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-OmaUri-End -->
+
+<!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-Description-Begin -->
+<!-- Description-Source-DDF -->
+Recovery console: Allow automatic administrative logon This security setting determines if the password for the Administrator account must be given before access to the system is granted. If this option is enabled, the Recovery Console doesn't require you to provide a password, and it automatically logs on to the system. Default: This policy isn't defined and automatic administrative logon isn't allowed.
+<!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-Description-End -->
+
+<!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-Editable-End -->
+
+<!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 0 |
+<!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-DFProperties-End -->
+
+<!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Recovery console: Allow automatic administrative logon |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-GpMapping-End -->
+
+<!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-Examples-End -->
+
+<!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-End -->
+
+<!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-Begin -->
+## RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders
+
+<!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-Applicability-End -->
+
+<!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders
+```
+<!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-OmaUri-End -->
+
+<!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-Description-Begin -->
+<!-- Description-Source-DDF -->
+Recovery console: Allow floppy copy and access to all drives and all folders Enabling this security option makes the Recovery Console SET command available, which allows you to set the following Recovery Console environment variables: AllowWildCards: Enable wildcard support for some commands (such as the DEL command). AllowAllPaths: Allow access to all files and folders on the computer. AllowRemovableMedia: Allow files to be copied to removable media, such as a floppy disk. NoCopyPrompt: Don't prompt when overwriting an existing file. Default: This policy isn't defined and the recover console SET command isn't available.
+<!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-Description-End -->
+
+<!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-Editable-End -->
+
+<!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 0 |
+<!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-DFProperties-End -->
+
+<!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-Examples-End -->
+
+<!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-Begin -->
+## RelaxMinimumPasswordLengthLimits
+
+<!-- RelaxMinimumPasswordLengthLimits-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- RelaxMinimumPasswordLengthLimits-Applicability-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/RelaxMinimumPasswordLengthLimits
+```
+<!-- RelaxMinimumPasswordLengthLimits-OmaUri-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting controls whether the minimum password length setting can be increased beyond the legacy limit of 14. If this setting isn't defined, minimum password length may be configured to no more than 14. If this setting is defined and disabled, minimum password length may be configured to no more than 14. If this setting is defined and enabled, minimum password length may be configured more than 14.
+<!-- RelaxMinimumPasswordLengthLimits-Description-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RelaxMinimumPasswordLengthLimits-Editable-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- RelaxMinimumPasswordLengthLimits-DFProperties-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- RelaxMinimumPasswordLengthLimits-AllowedValues-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Relax minimum password length |
+| Path | Windows Settings > Security Settings > Account Policies > Password Policy |
+<!-- RelaxMinimumPasswordLengthLimits-GpMapping-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RelaxMinimumPasswordLengthLimits-Examples-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-End -->
+
 <!-- Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn-Begin -->
 ## Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn
 
@@ -2435,6 +3845,138 @@ Shutdown: Clear virtual memory pagefile This security setting determines whether
 <!-- Shutdown_ClearVirtualMemoryPageFile-Examples-End -->
 
 <!-- Shutdown_ClearVirtualMemoryPageFile-End -->
+
+<!-- SystemCryptography_ForceStrongKeyProtection-Begin -->
+## SystemCryptography_ForceStrongKeyProtection
+
+<!-- SystemCryptography_ForceStrongKeyProtection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- SystemCryptography_ForceStrongKeyProtection-Applicability-End -->
+
+<!-- SystemCryptography_ForceStrongKeyProtection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/SystemCryptography_ForceStrongKeyProtection
+```
+<!-- SystemCryptography_ForceStrongKeyProtection-OmaUri-End -->
+
+<!-- SystemCryptography_ForceStrongKeyProtection-Description-Begin -->
+<!-- Description-Source-DDF -->
+System Cryptography: Force strong key protection for user keys stored on the computer This security setting determines if users' private keys require a password to be used. The options are: User input isn't required when new keys are stored and used User is prompted when the key is first used User must enter a password each time they use a key For more information, see Public key infrastructure. Default: This policy isn't defined.
+<!-- SystemCryptography_ForceStrongKeyProtection-Description-End -->
+
+<!-- SystemCryptography_ForceStrongKeyProtection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SystemCryptography_ForceStrongKeyProtection-Editable-End -->
+
+<!-- SystemCryptography_ForceStrongKeyProtection-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-2]` |
+| Default Value  | 0 |
+<!-- SystemCryptography_ForceStrongKeyProtection-DFProperties-End -->
+
+<!-- SystemCryptography_ForceStrongKeyProtection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SystemCryptography_ForceStrongKeyProtection-Examples-End -->
+
+<!-- SystemCryptography_ForceStrongKeyProtection-End -->
+
+<!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-Begin -->
+## SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems
+
+<!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-Applicability-End -->
+
+<!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems
+```
+<!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-OmaUri-End -->
+
+<!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-Description-Begin -->
+<!-- Description-Source-DDF -->
+System objects: Require case insensitivity for non-Windows subsystems This security setting determines whether case insensitivity is enforced for all subsystems. The Win32 subsystem is case insensitive. However, the kernel supports case sensitivity for other subsystems, such as POSIX. If this setting is enabled, case insensitivity is enforced for all directory objects, symbolic links, and IO objects, including file objects. Disabling this setting doesn't allow the Win32 subsystem to become case sensitive. Default: Enabled.
+<!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-Description-End -->
+
+<!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-Editable-End -->
+
+<!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-DFProperties-End -->
+
+<!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | System objects: Require case insensitivity for non-Windows subsystems |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-GpMapping-End -->
+
+<!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-Examples-End -->
+
+<!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-End -->
+
+<!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-Begin -->
+## SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects
+
+<!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-Applicability-End -->
+
+<!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects
+```
+<!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-OmaUri-End -->
+
+<!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-Description-Begin -->
+<!-- Description-Source-DDF -->
+System objects: Strengthen default permissions of internal system objects (e.g., Symbolic Links) This security setting determines the strength of the default discretionary access control list (DACL) for objects. Active Directory maintains a global list of shared system resources, such as DOS device names, mutexes, and semaphores. In this way, objects can be located and shared among processes. Each type of object is created with a default DACL that specifies who can access the objects and what permissions are granted. If this policy is enabled, the default DACL is stronger, allowing users who aren't administrators to read shared objects but not allowing these users to modify shared objects that they didn't create. Default: Enabled.
+<!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-Description-End -->
+
+<!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-Editable-End -->
+
+<!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-DFProperties-End -->
+
+<!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-Examples-End -->
+
+<!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-End -->
 
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-Begin -->
 ## UserAccountControl_AllowUIAccessApplicationsToPromptForElevation
@@ -2751,7 +4293,7 @@ User Account Control: Only elevate executable files that are signed and validate
 
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Only elevate UIAccess applications that are installed in secure locations This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following: - ...\Program Files\, including subfolders - ...\Windows\system32\ - ...\Program Files (x86)\, including subfolders for 64-bit versions of Windows Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting. The options are: - Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity. - Disabled: An application runs with UIAccess integrity even if it doesn't reside in a secure location in the file system.
+User Account Control: Only elevate UIAccess applications that are installed in secure locations This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following: - ..\Program Files\, including subfolders - ..\Windows\system32\ - ..\Program Files (x86)\, including subfolders for 64-bit versions of Windows Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting. The options are: - Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity. - Disabled: An application runs with UIAccess integrity even if it doesn't reside in a secure location in the file system.
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Description-End -->
 
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Editable-Begin -->

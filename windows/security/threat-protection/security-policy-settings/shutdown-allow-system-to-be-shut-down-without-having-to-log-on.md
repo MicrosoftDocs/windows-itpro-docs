@@ -1,8 +1,8 @@
 ---
-title: Shutdown Allow system to be shut down without having to log on 
+title: Shutdown Allow system to be shut down without having to log on
 description: Best practices, security considerations, and more for the security policy setting Shutdown Allow system to be shut down without having to log on.
 ms.assetid: f3964767-5377-4416-8eb3-e14d553a7315
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -29,7 +29,7 @@ Describes the best practices, location, values, policy management, and security 
 
 This policy setting determines whether you can shut down a device without having to sign in to Windows. When you enable it, the **Shut Down** option is available on the sign-in screen in Windows. If you disable this setting, the **Shut Down** option is removed from the screen. To use the option, the user must sign in on the device successfully and have the **Shut down the system** user right.
 
-Users who access the console locally can shut down the system. Attackers or misguided users can connect to the server by using Remote Desktop Services, and then shut it down or restart it without having to identify themselves. A malicious user might also cause a temporary denial-of-service 
+Users who access the console locally can shut down the system. Attackers or misguided users can connect to the server by using Remote Desktop Services, and then shut it down or restart it without having to identify themselves. A malicious user might also cause a temporary denial-of-service
 condition from a local console by restarting or shutting down the server.
 
 ### Possible values
@@ -59,13 +59,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Disabled| 
-| DC Effective Default Settings | Disabled| 
-| Member Server Effective Default Settings | Disabled| 
-| Client Computer Effective Default Settings | Enabled| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Disabled|
+| DC Effective Default Settings | Disabled|
+| Member Server Effective Default Settings | Disabled|
+| Client Computer Effective Default Settings | Enabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

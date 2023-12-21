@@ -1,9 +1,6 @@
 ---
 title: Windows Hello for Business Overview
 description: Learn how Windows Hello for Business replaces passwords with strong two-factor authentication on Windows devices.
-ms.collection: 
-  - highpri
-  - tier1
 ms.topic: overview
 ms.date: 04/24/2023
 ---
@@ -25,7 +22,7 @@ Windows Hello lets users authenticate to:
 
 - A Microsoft account.
 - An Active Directory account.
-- A Microsoft Azure Active Directory (Azure AD) account.
+- A Microsoft Entra account.
 - Identity Provider Services or Relying Party Services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication.
 
 After an initial two-step verification of the user during enrollment, Windows Hello is set up on the user's device and Windows asks the user to set a gesture, which can be a biometric, such as a fingerprint, or a PIN. The user provides the gesture to verify their identity. Windows then uses Windows Hello to authenticate users.
@@ -71,7 +68,7 @@ Windows Hello helps protect user identities and user credentials. Because the us
 
 - Windows Hello credentials are based on certificate or asymmetrical key pair. Windows Hello credentials can be bound to the device, and the token that is obtained using the credential is also bound to the device.
 
-- An identity provider validates the user identity and maps the Windows Hello public key to a user account during the registration step. Example providers are Active Directory, Azure AD, or a Microsoft account.
+- An identity provider validates the user identity and maps the Windows Hello public key to a user account during the registration step. Example providers are Active Directory, Microsoft Entra ID, or a Microsoft account.
 
 - Keys can be generated in hardware (TPM 1.2 or 2.0 for enterprises, and TPM 2.0 for consumers) or software, based on the policy. To guarantee that keys are generated in hardware, you must set policy.
 
@@ -81,7 +78,7 @@ Windows Hello helps protect user identities and user credentials. Because the us
 
 - PIN entry and biometric gesture both trigger Windows 10 and later to use the private key to cryptographically sign data that is sent to the identity provider. The identity provider verifies the user's identity and authenticates the user.
 
-- Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.
+- Personal (Microsoft account) and corporate (Active Directory or Microsoft Entra ID) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.
 
 - Certificate private keys can be protected by the Windows Hello container and the Windows Hello gesture.
 
@@ -89,7 +86,7 @@ For details, see [How Windows Hello for Business works](hello-how-it-works.md).
 
 ## Comparing key-based and certificate-based authentication
 
-Windows Hello for Business can use either keys (hardware or software) or certificates in hardware or software. Enterprises that have a public key infrastructure (PKI) for issuing and managing end user certificates can continue to use PKI in combination with Windows Hello for Business. Enterprises that don't use PKI or want to reduce the effort associated with managing user certificates can rely on key-based credentials for Windows Hello. This functionality still uses certificates on the domain controllers as a root of trust. Starting with Windows 10 version 21H2, there's a feature called cloud Kerberos trust for hybrid deployments, which uses Azure AD as the root of trust. cloud Kerberos trust uses key-based credentials for Windows Hello but doesn't require certificates on the domain controller.
+Windows Hello for Business can use either keys (hardware or software) or certificates in hardware or software. Enterprises that have a public key infrastructure (PKI) for issuing and managing end user certificates can continue to use PKI in combination with Windows Hello for Business. Enterprises that don't use PKI or want to reduce the effort associated with managing user certificates can rely on key-based credentials for Windows Hello. This functionality still uses certificates on the domain controllers as a root of trust. Starting with Windows 10 version 21H2, there's a feature called cloud Kerberos trust for hybrid deployments, which uses Microsoft Entra ID as the root of trust. cloud Kerberos trust uses key-based credentials for Windows Hello but doesn't require certificates on the domain controller.
 
 Windows Hello for Business with a key, including cloud Kerberos trust, doesn't support supplied credentials for RDP. RDP doesn't support authentication with a key or a self signed certificate. RDP with Windows Hello for Business is supported with certificate based deployments as a supplied credential. Windows Hello for Business with a key credential can be used with [Remote Credential Guard](../remote-credential-guard.md).
 

@@ -2,10 +2,11 @@
 title: Windows passwordless experience
 description: Learn how Windows passwordless experience enables your organization to move away from passwords.
 ms.collection: 
-  - highpri
   - tier1
-ms.date: 09/11/2023
+ms.date: 09/27/2023
 ms.topic: how-to
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
 
 # Windows passwordless experience
@@ -22,7 +23,7 @@ With Windows passwordless experience, users who sign in with Windows Hello or a 
   >[!NOTE]
   >Users can reset their password using <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>DEL</kbd> > **Manage your account**
 
-Windows passwordless experience doesn't affect the initial sign-in experience and local accounts. It only applies to subsequent sign-ins for Microsoft Entra ID accounts. It also doesn't prevent a user from signing in with a password when using the *Other user* option in the lock screen.\
+Windows passwordless experience doesn't affect the initial sign-in experience and local accounts. It only applies to subsequent sign-ins for Microsoft Entra accounts. It also doesn't prevent a user from signing in with a password when using the *Other user* option in the lock screen.\
 The password credential provider is hidden only for the last signed in user who signed in Windows Hello or a FIDO2 security key. Windows passwordless experience isn't about preventing users from using passwords, rather to guide and educate them to not use passwords.
 
 This article explains how to enable Windows passwordless experience and describes the user experiences.
@@ -36,7 +37,7 @@ Windows passwordless experience has the following requirements:
 
 - Windows 11, version 22H2 with [KB5030310][KB-1] or later
 - Microsoft Entra joined
-- Windows Hello for Busines credentials enrolled for the user, or a FIDO2 security key
+- Windows Hello for Business credentials enrolled for the user, or a FIDO2 security key
 - MDM-managed: Microsoft Intune or other MDM solution
 
 >[!NOTE]
@@ -120,7 +121,7 @@ Here's a list of recommendations to consider before enabling Windows passwordles
 - If Windows Hello for Business is enabled, configure the [PIN reset](../hello-for-business/hello-feature-pin-reset.md) feature to allow users to reset their PIN from the lock screen. The PIN reset experience is improved starting in Windows 11, version 22H2 with [KB5030310][KB-1]
 - Don't configure the security policy *Interactive logon: Don't display last signed-in*, as it prevents Windows passwordless experience from working
 - Don't disable the password credential provider using the *Exclude credential providers* policy. The key differences between the two policies are:
-  - The Exclude credential providers policy disables passwords for *all accounts*, including local accounts. Windows passwordless experience only applies to Microsoft Entra ID accounts that sign in with Windows Hello or a FIDO2 security key. It also excludes *Other User* from the policy, so users have a backup sign in option
+  - The Exclude credential providers policy disables passwords for *all accounts*, including local accounts. Windows passwordless experience only applies to Microsoft Entra accounts that sign in with Windows Hello or a FIDO2 security key. It also excludes *Other User* from the policy, so users have a backup sign in option
   - Exclude credential providers policy prevents the use of passwords for RDP and *Run as* authentication scenarios
 - To facilitate helpdesk support operations, consider enabling the local administrator account or create a separate one, randomizing its password using the [Windows Local Administrator Password Solution (LAPS)][SERV-1]
 

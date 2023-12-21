@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP supported by Group Policy.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 09/25/2023
+ms.date: 12/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -383,10 +383,21 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [Devices_AllowedToFormatAndEjectRemovableMedia](policy-csp-localpoliciessecurityoptions.md)
 - [Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters](policy-csp-localpoliciessecurityoptions.md)
 - [Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly](policy-csp-localpoliciessecurityoptions.md)
+- [Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly](policy-csp-localpoliciessecurityoptions.md)
+- [DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways](policy-csp-localpoliciessecurityoptions.md)
+- [DomainMember_DigitallyEncryptSecureChannelDataWhenPossible](policy-csp-localpoliciessecurityoptions.md)
+- [DomainMember_DigitallySignSecureChannelDataWhenPossible](policy-csp-localpoliciessecurityoptions.md)
+- [DomainMember_DisableMachineAccountPasswordChanges](policy-csp-localpoliciessecurityoptions.md)
+- [DomainMember_MaximumMachineAccountPasswordAge](policy-csp-localpoliciessecurityoptions.md)
+- [DomainMember_RequireStrongSessionKey](policy-csp-localpoliciessecurityoptions.md)
+- [MinimumPasswordLength](policy-csp-localpoliciessecurityoptions.md)
+- [MinimumPasswordLengthAudit](policy-csp-localpoliciessecurityoptions.md)
+- [RelaxMinimumPasswordLengthLimits](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_DoNotRequireCTRLALTDEL](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_DoNotDisplayLastSignedIn](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_DoNotDisplayUsernameAtSignIn](policy-csp-localpoliciessecurityoptions.md)
+- [InteractiveLogon_MachineAccountThreshold](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_MachineInactivityLimit](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_MessageTextForUsersAttemptingToLogOn](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_MessageTitleForUsersAttemptingToLogOn](policy-csp-localpoliciessecurityoptions.md)
@@ -394,11 +405,13 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [MicrosoftNetworkClient_DigitallySignCommunicationsAlways](policy-csp-localpoliciessecurityoptions.md)
 - [MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees](policy-csp-localpoliciessecurityoptions.md)
 - [MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers](policy-csp-localpoliciessecurityoptions.md)
+- [MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession](policy-csp-localpoliciessecurityoptions.md)
 - [MicrosoftNetworkServer_DigitallySignCommunicationsAlways](policy-csp-localpoliciessecurityoptions.md)
 - [MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees](policy-csp-localpoliciessecurityoptions.md)
 - [NetworkAccess_AllowAnonymousSIDOrNameTranslation](policy-csp-localpoliciessecurityoptions.md)
 - [NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts](policy-csp-localpoliciessecurityoptions.md)
 - [NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares](policy-csp-localpoliciessecurityoptions.md)
+- [NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers](policy-csp-localpoliciessecurityoptions.md)
 - [NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares](policy-csp-localpoliciessecurityoptions.md)
 - [NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM](policy-csp-localpoliciessecurityoptions.md)
 - [NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM](policy-csp-localpoliciessecurityoptions.md)
@@ -412,8 +425,10 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic](policy-csp-localpoliciessecurityoptions.md)
 - [NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic](policy-csp-localpoliciessecurityoptions.md)
 - [NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers](policy-csp-localpoliciessecurityoptions.md)
+- [RecoveryConsole_AllowAutomaticAdministrativeLogon](policy-csp-localpoliciessecurityoptions.md)
 - [Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn](policy-csp-localpoliciessecurityoptions.md)
 - [Shutdown_ClearVirtualMemoryPageFile](policy-csp-localpoliciessecurityoptions.md)
+- [SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_UseAdminApprovalMode](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_AllowUIAccessApplicationsToPromptForElevation](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_BehaviorOfTheElevationPromptForAdministrators](policy-csp-localpoliciessecurityoptions.md)
@@ -679,8 +694,24 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 
 ## SystemServices
 
+- [ConfigureComputerBrowserServiceStartupMode](policy-csp-systemservices.md)
 - [ConfigureHomeGroupListenerServiceStartupMode](policy-csp-systemservices.md)
 - [ConfigureHomeGroupProviderServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureIISAdminServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureInfraredMonitorServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureInternetConnectionSharingServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureLxssManagerServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureMicrosoftFTPServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureRemoteProcedureCallLocatorServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureRoutingAndRemoteAccessServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureSimpleTCPIPServicesStartupMode](policy-csp-systemservices.md)
+- [ConfigureSpecialAdministrationConsoleHelperServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureSSDPDiscoveryServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureUPnPDeviceHostServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureWebManagementServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureWindowsMediaPlayerNetworkSharingServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureWindowsMobileHotspotServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureWorldWideWebPublishingServiceStartupMode](policy-csp-systemservices.md)
 - [ConfigureXboxAccessoryManagementServiceStartupMode](policy-csp-systemservices.md)
 - [ConfigureXboxLiveAuthManagerServiceStartupMode](policy-csp-systemservices.md)
 - [ConfigureXboxLiveGameSaveServiceStartupMode](policy-csp-systemservices.md)
@@ -817,6 +848,8 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [LogOnAsService](policy-csp-userrights.md)
 - [IncreaseProcessWorkingSet](policy-csp-userrights.md)
 - [DenyLogOnAsService](policy-csp-userrights.md)
+- [AdjustMemoryQuotasForProcess](policy-csp-userrights.md)
+- [AllowLogOnThroughRemoteDesktop](policy-csp-userrights.md)
 
 ## VirtualizationBasedTechnology
 
@@ -883,6 +916,8 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [AllowVideoInput](policy-csp-windowssandbox.md)
 - [AllowPrinterRedirection](policy-csp-windowssandbox.md)
 - [AllowClipboardRedirection](policy-csp-windowssandbox.md)
+- [AllowMappedFolders](policy-csp-windowssandbox.md)
+- [AllowWriteToMappedFolders](policy-csp-windowssandbox.md)
 
 ## WirelessDisplay
 

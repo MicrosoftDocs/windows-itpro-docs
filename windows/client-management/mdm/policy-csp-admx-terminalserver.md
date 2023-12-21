@@ -4,7 +4,7 @@ description: Learn more about the ADMX_TerminalServer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/30/2023
+ms.date: 12/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1362,11 +1362,11 @@ You can use this policy setting to set a limit on the color depth of any connect
 
 Note:
 
-1.	Setting the color depth to 24 bits is only supported on Windows Server 2003 and Windows XP Professional.
+1. Setting the color depth to 24 bits is only supported on Windows Server 2003 and Windows XP Professional.
 
-2.	The value specified in this policy setting isn't applied to connections from client computers that are using at least Remote Desktop Protocol 8.0 (computers running at least Windows 8 or Windows Server 2012). The 32-bit color depth format is always used for these connections.
+1. The value specified in this policy setting isn't applied to connections from client computers that are using at least Remote Desktop Protocol 8.0 (computers running at least Windows 8 or Windows Server 2012). The 32-bit color depth format is always used for these connections.
 
-3.	For connections from client computers that are using Remote Desktop Protocol 7.1 or earlier versions that are connecting to computers running at least Windows 8 or Windows Server 2012, the minimum of the following values is used as the color depth format:
+1. For connections from client computers that are using Remote Desktop Protocol 7.1 or earlier versions that are connecting to computers running at least Windows 8 or Windows Server 2012, the minimum of the following values is used as the color depth format:
 
 a.	Value specified by this policy setting b.	Maximum color depth supported by the client c.	Value requested by the client.
 
@@ -2130,19 +2130,19 @@ To allow users to overwrite the "Set RD Gateway server address" policy setting a
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify whether the RD Session Host server should join a farm in RD Connection Broker. RD Connection Broker tracks user sessions and allows a user to reconnect to their existing session in a load-balanced RD Session Host server farm. To participate in RD Connection Broker, the Remote Desktop Session Host role service must be installed on the server.
 
-If the policy setting is enabled, the RD Session Host server joins the farm that's specified in the RD Connection Broker farm name policy setting. The farm exists on the RD Connection Broker server that's specified in the Configure RD Connection Broker server name policy setting.
+- If the policy setting is enabled, the RD Session Host server joins the farm that's specified in the RD Connection Broker farm name policy setting. The farm exists on the RD Connection Broker server that's specified in the Configure RD Connection Broker server name policy setting.
 
-- If you disable this policy setting, the server doesn't join a farm in RD Connection Broker, and user session tracking isn't performed. If the policy setting is disabled, you can't use either the Remote Desktop Session Host Configuration tool or the Remote Desktop Services WMI Provider to join the server to RD Connection Broker.
+- If you disable this policy setting, the server doesn't join a farm in RD Connection Broker, and user session tracking isn't performed.
+
+- If the policy setting is disabled, you can't use either the Remote Desktop Session Host Configuration tool or the Remote Desktop Services WMI Provider to join the server to RD Connection Broker.
 
 If the policy setting isn't configured, the policy setting isn't specified at the Group Policy level.
 
 Note:
 
-1.
+1. - If you enable this policy setting, you must also enable the Configure RD Connection Broker farm name and Configure RD Connection Broker server name policy settings.
 
-- If you enable this policy setting, you must also enable the Configure RD Connection Broker farm name and Configure RD Connection Broker server name policy settings.
-
-2. For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.
+1. For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.
 <!-- TS_JOIN_SESSION_DIRECTORY-Description-End -->
 
 <!-- TS_JOIN_SESSION_DIRECTORY-Editable-Begin -->
@@ -2330,7 +2330,7 @@ This policy setting allows you to specify the order in which an RD Session Host 
 
 1. Remote Desktop license servers that are published in Active Directory Domain Services.
 
-2. Remote Desktop license servers that are installed on domain controllers in the same domain as the RD Session Host server.
+1. Remote Desktop license servers that are installed on domain controllers in the same domain as the RD Session Host server.
 
 - If you disable or don't configure this policy setting, the RD Session Host server doesn't specify a license server at the Group Policy level.
 <!-- TS_LICENSE_SERVERS-Description-End -->
@@ -2459,7 +2459,7 @@ Per Device licensing mode requires that each device connecting to this RD Sessio
 - If you disable or don't configure this policy setting, the licensing mode isn't specified at the Group Policy level.
 
 > [!NOTE]
-> AAD Per User mode is deprecated on Windows 11 and above.
+> Microsoft Entra ID Per User mode is deprecated on Windows 11 and above.
 <!-- TS_LICENSING_MODE-Description-End -->
 
 <!-- TS_LICENSING_MODE-Editable-Begin -->
@@ -2515,7 +2515,7 @@ Per Device licensing mode requires that each device connecting to this RD Sessio
 <!-- Description-Source-ADMX -->
 Specifies whether Remote Desktop Services limits the number of simultaneous connections to the server.
 
-You can use this setting to restrict the number of Remote Desktop Services sessions that can be active on a server. If this number is exceeded, addtional users who try to connect receive an error message telling them that the server is busy and to try again later. Restricting the number of sessions improves performance because fewer sessions are demanding system resources. By default, RD Session Host servers allow an unlimited number of Remote Desktop Services sessions, and Remote Desktop for Administration allows two Remote Desktop Services sessions.
+You can use this setting to restrict the number of Remote Desktop Services sessions that can be active on a server. If this number is exceeded, additional users who try to connect receive an error message telling them that the server is busy and to try again later. Restricting the number of sessions improves performance because fewer sessions are demanding system resources. By default, RD Session Host servers allow an unlimited number of Remote Desktop Services sessions, and Remote Desktop for Administration allows two Remote Desktop Services sessions.
 
 To use this setting, enter the number of connections you want to specify as the maximum for the server. To specify an unlimited number of connections, type 999999.
 
@@ -3074,13 +3074,13 @@ By default, when a new user signs in to a computer, the Start screen is shown an
 
 1. No remote control allowed: Disallows an administrator to use remote control or view a remote user session.
 
-2. Full Control with user's permission: Allows the administrator to interact with the session, with the user's consent.
+1. Full Control with user's permission: Allows the administrator to interact with the session, with the user's consent.
 
-3. Full Control without user's permission: Allows the administrator to interact with the session, without the user's consent.
+1. Full Control without user's permission: Allows the administrator to interact with the session, without the user's consent.
 
-4. View Session with user's permission: Allows the administrator to watch the session of a remote user with the user's consent.
+1. View Session with user's permission: Allows the administrator to watch the session of a remote user with the user's consent.
 
-5. View Session without user's permission: Allows the administrator to watch the session of a remote user without the user's consent.
+1. View Session without user's permission: Allows the administrator to watch the session of a remote user without the user's consent.
 
 - If you disable this policy setting, administrators can interact with a user's Remote Desktop Services session, with the user's consent.
 <!-- TS_RemoteControl_1-Description-End -->
@@ -3141,13 +3141,13 @@ By default, when a new user signs in to a computer, the Start screen is shown an
 
 1. No remote control allowed: Disallows an administrator to use remote control or view a remote user session.
 
-2. Full Control with user's permission: Allows the administrator to interact with the session, with the user's consent.
+1. Full Control with user's permission: Allows the administrator to interact with the session, with the user's consent.
 
-3. Full Control without user's permission: Allows the administrator to interact with the session, without the user's consent.
+1. Full Control without user's permission: Allows the administrator to interact with the session, without the user's consent.
 
-4. View Session with user's permission: Allows the administrator to watch the session of a remote user with the user's consent.
+1. View Session with user's permission: Allows the administrator to watch the session of a remote user with the user's consent.
 
-5. View Session without user's permission: Allows the administrator to watch the session of a remote user without the user's consent.
+1. View Session without user's permission: Allows the administrator to watch the session of a remote user without the user's consent.
 
 - If you disable this policy setting, administrators can interact with a user's Remote Desktop Services session, with the user's consent.
 <!-- TS_RemoteControl_2-Description-End -->
@@ -3275,7 +3275,7 @@ Note:
 
 1. This policy setting isn't effective unless both the Join RD Connection Broker and the Configure RD Connection Broker server name policy settings are enabled and configured by using Group Policy.
 
-2. For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.
+1. For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.
 <!-- TS_SD_ClustName-Description-End -->
 
 <!-- TS_SD_ClustName-Editable-Begin -->
@@ -3404,9 +3404,9 @@ Note:
 
 1. For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.
 
-2. This policy setting isn't effective unless the Join RD Connection Broker policy setting is enabled.
+1. This policy setting isn't effective unless the Join RD Connection Broker policy setting is enabled.
 
-3. To be an active member of an RD Session Host server farm, the computer account for each RD Session Host server in the farm must be a member of one of the following local groups on the RD Connection Broker server: Session Directory Computers, Session Broker Computers, or RDS Endpoint Servers.
+1. To be an active member of an RD Session Host server farm, the computer account for each RD Session Host server in the farm must be a member of one of the following local groups on the RD Connection Broker server: Session Directory Computers, Session Broker Computers, or RDS Endpoint Servers.
 <!-- TS_SD_Loc-Description-End -->
 
 <!-- TS_SD_Loc-Editable-Begin -->
@@ -4070,14 +4070,14 @@ This policy setting allows you to configure graphics encoding to use the RemoteF
 
 <!-- TS_SERVER_PROFILE-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows the administrator to configure the RemoteFX experience for Remote Desktop Session Host or Remote Desktop Virtualization Host servers. By default, the system will choose the best experience based on available nework bandwidth.
+This policy setting allows the administrator to configure the RemoteFX experience for Remote Desktop Session Host or Remote Desktop Virtualization Host servers. By default, the system will choose the best experience based on available network bandwidth.
 
 - If you enable this policy setting, the RemoteFX experience could be set to one of the following options:
 
 1. Let the system choose the experience for the network condition
-2. Optimize for server scalability.
+1. Optimize for server scalability.
 
-3. Optimize for minimum bandwidth usage.
+1. Optimize for minimum bandwidth usage.
 
 - If you disable or don't configure this policy setting, the RemoteFX experience will change dynamically based on the network condition".
 <!-- TS_SERVER_PROFILE-Description-End -->
@@ -5677,7 +5677,7 @@ Note:
 
 1. The roaming user profiles enabled by the policy setting apply only to Remote Desktop Services connections. A user might also have a Windows roaming user profile configured. The Remote Desktop Services roaming user profile always takes precedence in a Remote Desktop Services session.
 
-2. To configure a mandatory Remote Desktop Services roaming user profile for all users connecting remotely to the RD Session Host server, use this policy setting together with the "Use mandatory profiles on the RD Session Host server" policy setting located in Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\RD Session Host\Profiles. The path set in the "Set path for Remote Desktop Services Roaming User Profile" policy setting should contain the mandatory profile.
+1. To configure a mandatory Remote Desktop Services roaming user profile for all users connecting remotely to the RD Session Host server, use this policy setting together with the "Use mandatory profiles on the RD Session Host server" policy setting located in Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\RD Session Host\Profiles. The path set in the "Set path for Remote Desktop Services Roaming User Profile" policy setting should contain the mandatory profile.
 <!-- TS_USER_PROFILES-Description-End -->
 
 <!-- TS_USER_PROFILES-Editable-Begin -->

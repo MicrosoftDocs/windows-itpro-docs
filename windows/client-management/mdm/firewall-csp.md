@@ -4,7 +4,7 @@ description: Learn more about the Firewall CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2151,7 +2151,7 @@ When setting this field in a firewall rule, the protocol field must also be set,
 <!-- Description-Source-DDF -->
 Specifies the list of authorized local users for the app container.
 
-This is a string in Security Descriptor Definition Language (SDDL) format\.
+This is a string in Security Descriptor Definition Language (SDDL) format.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-Description-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-Editable-Begin -->
@@ -3472,7 +3472,7 @@ This value represents the order of rule enforcement. A lower priority rule is ev
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Profiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Profiles-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Profiles-OmaUri-Begin -->
@@ -3547,7 +3547,7 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 |:--|:--|
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-65535]` |
+| Allowed Values | Range: `[0-255]` |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Protocol-DFProperties-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Protocol-Examples-Begin -->
@@ -3812,7 +3812,7 @@ VM Creator ID that these settings apply to. Valid format is a GUID.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-AllowHostPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-AllowHostPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-AllowHostPolicyMerge-OmaUri-Begin -->
@@ -3961,7 +3961,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-OmaUri-Begin -->
@@ -3999,7 +3999,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -4049,7 +4049,7 @@ This value is used as an on/off switch. If this value is false, Hyper-V Firewall
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -4099,7 +4099,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -4149,7 +4149,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-EnableFirewall-OmaUri-Begin -->
@@ -4296,7 +4296,7 @@ This value is an on/off switch for loopback traffic. This determines if this VM 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-OmaUri-Begin -->
@@ -4334,7 +4334,7 @@ This value is an on/off switch for loopback traffic. This determines if this VM 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -4384,7 +4384,7 @@ This value is used as an on/off switch. If this value is false, Hyper-V Firewall
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -4434,7 +4434,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -4484,7 +4484,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-EnableFirewall-OmaUri-Begin -->
@@ -4533,7 +4533,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-OmaUri-Begin -->
@@ -4571,7 +4571,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -4621,7 +4621,7 @@ This value is used as an on/off switch. If this value is false, Hyper-V Firewall
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -4671,7 +4671,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -4721,7 +4721,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-OmaUri-Begin -->

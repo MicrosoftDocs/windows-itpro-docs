@@ -1,9 +1,8 @@
 ---
 title: Smart Cards for Windows Service 
 description: This topic for the IT professional and smart card developers describes how the Smart Cards for Windows service manages readers and application interactions.
-ms.reviewer: ardenw
 ms.topic: concept-article
-ms.date: 09/24/2021
+ms.date: 11/22/2023
 ---
 
 # Smart Cards for Windows Service
@@ -69,34 +68,31 @@ The Smart Cards for Windows service runs in the context of a local service, and 
   </registryKeys>
 ```
 
-> **Note**&nbsp;&nbsp;For winscard.dll to be invoked as the proper class installer, the INF file for a smart card reader must specify the following for **Class** and **ClassGUID**:<br>
-`Class=SmartCardReader`<br>`ClassGuid={50DD5230-BA8A-11D1-BF5D-0000F805F530}`
+> [!NOTE]
+> For winscard.dll to be invoked as the proper class installer, the INF file for a smart card reader must specify the following for **Class** and **ClassGUID**:
+>
+> `Class=SmartCardReader`
+> `ClassGuid={50DD5230-BA8A-11D1-BF5D-0000F805F530}`
 
 By default, the service is configured for manual mode. Creators of smart card reader drivers must configure their INFs so that they start the service automatically and winscard.dll files call a predefined entry point to start the service during installation. The entry point is defined as part of the **SmartCardReader** class, and it is not called directly. If a device advertises itself as part of this class, the entry point is automatically invoked to start the service when the device is inserted. Using this method ensures that the service is enabled when it is needed, but it is also disabled for users who do not use smart cards.
 
 When the service is started, it performs several functions:
 
-1.  It registers itself for service notifications.
+1. It registers itself for service notifications
+1. It registers itself for Plug and Play (PnP) notifications related to device removal and additions
+1. It initializes its data cache and a global event that signals that the service has started
 
-2.  It registers itself for Plug and Play (PnP) notifications related to device removal and additions.
-
-3.  It initializes its data cache and a global event that signals that the service has started.
-
-> **Note**&nbsp;&nbsp;For smart card implementations, consider sending all communications in Windows operating systems with smart card readers through the Smart Cards for Windows service. This provides an interface to track, select, and communicate with all drivers that declare themselves members of the smart card reader device group.
+> [!NOTE]
+> For smart card implementations, consider sending all communications in Windows operating systems with smart card readers through the Smart Cards for Windows service. This provides an interface to track, select, and communicate with all drivers that declare themselves members of the smart card reader device group.
 
 The Smart Cards for Windows service categorizes each smart card reader slot as a unique reader, and each slot is also managed separately, regardless of the device's physical characteristics. The Smart Cards for Windows service handles the following high-level actions:
 
--   Device introduction
-
--   Reader initialization
-
--   Notifying clients of new readers
-
--   Serializing access to readers
-
--   Smart card access
-
--   Tunneling of reader-specific commands
+- Device introduction
+- Reader initialization
+- Notifying clients of new readers
+- Serializing access to readers
+- Smart card access
+- Tunneling of reader-specific commands
 
 ## See also
 

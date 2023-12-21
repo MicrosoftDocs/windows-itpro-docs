@@ -2,20 +2,13 @@
 
 
 
-## Week of September 11, 2023
+## Week of December 11, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 9/11/2023 | [Configure education themes for Windows 11](/education/windows/edu-themes) | modified |
-| 9/11/2023 | [Configure federated sign-in for Windows devices](/education/windows/federated-sign-in) | modified |
-
-
-## Week of September 04, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/5/2023 | [Configure federated sign-in for Windows devices](/education/windows/federated-sign-in) | modified |
-| 9/5/2023 | [Windows for Education documentation](/education/windows/index) | modified |
-| 9/5/2023 | [Windows 11 SE Overview](/education/windows/windows-11-se-overview) | modified |
+| 12/12/2023 | Chromebook migration guide | removed |
+| 12/12/2023 | Deploy Windows 10 in a school district | removed |
+| 12/12/2023 | Deploy Windows 10 in a school | removed |
+| 12/12/2023 | Windows 10 for Education | removed |
+| 12/12/2023 | [Reset devices with Autopilot Reset](/education/windows/autopilot-reset) | modified |

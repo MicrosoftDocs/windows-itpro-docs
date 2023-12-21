@@ -1,10 +1,6 @@
 ---
 title: Enable memory integrity
 description: This article explains the steps to opt in to using memory integrity on Windows devices.
-ms.localizationpriority: medium
-ms.collection:
-  - highpri
-  - tier2
 ms.topic: conceptual
 ms.date: 03/16/2023
 appliesto:
@@ -48,8 +44,6 @@ To enable memory integrity on Windows devices with supporting hardware throughou
 **Memory integrity** can be turned on in **Windows Security** settings and found at **Windows Security** > **Device security** > **Core isolation details** > **Memory integrity**. For more information, see [Device protection in Windows Security](https://support.microsoft.com/help/4096339/windows-10-device-protection-in-windows-defender-security-center).
 
 Beginning with Windows 11 22H2, **Windows Security** shows a warning if memory integrity is turned off. The warning indicator also appears on the Windows Security icon in the Windows Taskbar and in the Windows Notification Center. The user can dismiss the warning from within **Windows Security**.
-
-To proactively dismiss the memory integrity warning, you can set the **Hardware_HVCI_Off** (DWORD) registry value under `HKLM\SOFTWARE\Microsoft\Windows Security Health\State` to 0. After you change the registry value, you must restart the device for the change to take effect.
 
 ### Enable memory integrity using Intune
 

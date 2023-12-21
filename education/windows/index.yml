@@ -10,153 +10,115 @@ metadata:
   ms.technology: itpro-edu
   ms.collection:
     - education
-    - highpri
     - tier1
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz
-  ms.date: 07/28/2023
+  ms.date: 10/30/2023
 
 highlightedContent:
   items:
-  - title: Get started with Windows 11
+  - title: Get started with Windows 11 SE
     itemType: get-started
-    url: /windows/whats-new/windows-11-overview
+    url: windows-11-se-overview.md
   - title: Windows 11, version 22H2
     itemType: whats-new
     url: /windows/whats-new/whats-new-windows-11-version-22H2
-  - title: Windows 11, version 22H2 group policy settings reference 
-    itemType: download
-    url: https://www.microsoft.com/en-us/download/details.aspx?id=104594
-  - title: Windows release health
-    itemType: whats-new
-    url: /windows/release-health
-  - title: Windows commercial licensing
-    itemType: overview
-    url: /windows/whats-new/windows-licensing
-  - title: Windows 365 documentation
-    itemType: overview
-    url: /windows-365
   - title: Explore all Windows trainings and learning paths for IT pros
     itemType: learn
     url: https://learn.microsoft.com/en-us/training/browse/?products=windows&roles=administrator
-  - title: Enroll Windows client devices in Microsoft Intune
+  - title: Deploy applications to Windows 11 SE with Intune
     itemType: how-to-guide
-    url: /mem/intune/fundamentals/deployment-guide-enrollment-windows
+    url: /education/windows/tutorial-deploy-apps-winse
 
 productDirectory:
   title: Get started
   items:
-
-    - title: Hardware security
-      imageSrc: /media/common/i_usb.svg
+    - title: Learn how to deploy Windows
+      imageSrc: /media/common/i_deploy.svg
       links:
-        - url: /windows/security/hardware-security/tpm/trusted-platform-module-overview
-          text: Trusted Platform Module
-        - url: /windows/security/hardware-security/pluton/microsoft-pluton-security-processor
-          text: Microsoft Pluton
-        - url: /windows/security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows
-          text: Windows Defender System Guard
-        - url: /windows-hardware/design/device-experiences/oem-vbs
-          text: Virtualization-based security (VBS)
-        - url: /windows-hardware/design/device-experiences/oem-highly-secure-11
-          text: Secured-core PC
-        - url: /windows/security/hardware-security
-          text: Learn more about hardware security >
-
-    - title: OS security
-      imageSrc: /media/common/i_threat-protection.svg
+        - url: /education/windows/tutorial-school-deployment/
+          text: "Tutorial: deploy and manage Windows devices in a school"
+        - url: /education/windows/tutorial-school-deployment/enroll-autopilot
+          text: Enrollment in Intune with Windows Autopilot
+        - url: use-set-up-school-pcs-app.md
+          text: Deploy devices with Set up School PCs
+        - url: /windows/deployment
+          text: Learn more about Windows deployment >
+    - title: Learn how to secure Windows
+      imageSrc: /media/common/i_security-management.svg
       links:
-        - url: /windows/security/operating-system-security
-          text: Trusted boot
-        - url: /windows/security/operating-system-security/system-security/windows-defender-security-center/windows-defender-security-center
-          text: Windows security settings
-        - url: 	/windows/security/operating-system-security/data-protection/bitlocker/
-          text: BitLocker
-        - url: /windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines
-          text: Windows security baselines
-        - url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/
-          text: MMicrosoft Defender SmartScreen
-        - url: /windows/security/operating-system-security
-          text: Learn more about OS security >
-
-    - title: Identity protection
-      imageSrc: /media/common/i_identity-protection.svg
-      links:
-        - url: /windows/security/identity-protection/hello-for-business
-          text: Windows Hello for Business
-        - url: /windows/security/identity-protection/credential-guard
-          text: Credential Guard
-        - url: /windows-server/identity/laps/laps-overview
-          text: Windows LAPS (Local Administrator Password Solution)
-        - url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection
-          text: Enhanced phishing protection with SmartScreen
-        - url: /education/windows/federated-sign-in
-          text: Federated sign-in (EDU)
-        - url: /windows/security/identity-protection
-          text: Learn more about identity protection >
-
-    - title: Application security
-      imageSrc: /media/common/i_queries.svg
-      links:
-        - url: /windows/security/application-security/application-control/windows-defender-application-control/
-          text: Windows Defender Application Control (WDAC)
+        - url: federated-sign-in.md
+          text: Configure federated sign-in for Windows devices
         - url: /windows/security/application-security/application-control/user-account-control
           text: User Account Control (UAC)
-        - url: /windows/security/application-security/application-control/windows-defender-application-control/design/microsoft-recommended-driver-block-rules
-          text: Microsoft vulnerable driver blocklist
-        - url: /windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview
-          text: Microsoft Defender Application Guard (MDAG)
-        - url: /windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview
-          text: Windows Sandbox
-        - url: /windows/security/application-security
-          text: Learn more about application security >
-
-    - title: Security foundations
-      imageSrc: /media/common/i_build.svg
-      links:
-        - url: /windows/security/security-foundations/certification/fips-140-validation
-          text: FIPS 140-2 validation
-        - url: /windows/security/security-foundations/certification/windows-platform-common-criteria
-          text: Common Criteria Certifications
-        - url: /windows/security/security-foundations/msft-security-dev-lifecycle
-          text: Microsoft Security Development Lifecycle (SDL)
-        - url: https://www.microsoft.com/msrc/bounty-windows-insider-preview
-          text: Microsoft Windows Insider Preview bounty program
-        - url: https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/
-          text: OneFuzz service
-        - url: /windows/security/security-foundations
-          text: Learn more about security foundations >
-
-    - title: Cloud security
-      imageSrc: /media/common/i_cloud-security.svg
-      links:
         - url: /mem/intune/protect/security-baselines
           text: Security baselines with Intune
         - url: /windows/deployment/windows-autopatch
           text: Windows Autopatch
-        - url: /windows/deployment/windows-autopilot
-          text: Windows Autopilot
         - url: /universal-print
           text: Universal Print
-        - url: /windows/client-management/mdm/remotewipe-csp
-          text: Remote wipe
-        - url: /windows/security/cloud-security
-          text: Learn more about cloud security >
+        - url: /windows/security
+          text: Learn more about Windows security >
+
+    - title: Learn how to manage Windows devices
+      imageSrc: /media/common/i_management.svg
+      links:
+        - url: tutorial-school-deployment/manage-overview.md
+          text: Manage devices with Microsoft Intune
+        - url: tutorial-school-deployment/manage-surface-devices.md
+          text: Management functionalities for Surface devices
+        - url: /education/windows/get-minecraft-for-education
+          text: Get and deploy Minecraft Education
+        - url: /windows/client-management
+          text: Learn more about Windows management >
+
+    - title: Learn how to configure Windows
+      imageSrc: /media/common/i_config-tools.svg
+      links:
+        - url: /education/windows/tutorial-school-deployment/configure-devices-overview
+          text: Configure settings and applications with Microsoft Intune
+        - url: /windows/configuration/set-up-shared-or-guest-pc
+          text: Set up a shared or guest Windows device
+        - url: /education/windows/take-tests-in-windows
+          text: Take tests and assessments in Windows
+        - url: set-up-school-pcs-provisioning-package.md
+          text: Provisioning package settings
+        - url: https://www.youtube.com/watch?v=2ZLup_-PhkA
+          text: "Video: Use the Set up School PCs App"
 
 additionalContent:
   sections:
-    - title: More Windows resources
-      items:
+    - title: For developers # < 60 chars (optional)
+      summary: Are you an app developer looking for information about developing solutions on Microsoft Education products? Start here. # < 160 chars (optional)
+    - items:
+        # Card
+        - title: UWP apps for education
+          summary: Learn how to write universal apps for education.
+          url: /windows/uwp/apps-for-education/
+        # Card
+        - title: Take a test API
+          summary: Learn how web applications can use the API to provide a locked down experience for taking tests.
+          url: /windows/uwp/apps-for-education/take-a-test-api
 
-        - title: Windows Server
-          links:
-            - text: Windows Server documentation
-              url: /windows-server
-            - text: What's new in Windows Server 2022?
-              url: /windows-server/get-started/whats-new-in-windows-server-2022
-            - text: Windows Server blog
-              url: https://cloudblogs.microsoft.com/windowsserver/
+        - title: Office dev center
+          summary: Integrate with Office 365 across devices and services to extend Microsoft enterprise-scale compliance and security to students, teachers, and staff in your education app.
+          url: https://developer.microsoft.com/office/
+
+        - title: Data Streamer
+          summary: Bring new STEM experiences into the classroom with real-time data in Excel using Data Streamer. Data Streamer can send data to Excel from a sensor or application.
+          url: /microsoft-365/education/data-streamer
+    - title: For partners # < 60 chars (optional)
+      summary: Looking for resources available to Microsoft Education partners? Start here. # < 160 chars (optional)
+    - items:
+
+        - title: Microsoft Partner Network
+          summary: Discover the latest news and resources for Microsoft Education products, solutions, licensing and readiness.
+          url: https://partner.microsoft.com/explore/education
+
+        - title: Education Partner community Yammer group
+          summary: Sign in with your Microsoft Partner account and join the Education Partner community private group on Yammer.
+          url: https://www.yammer.com/mepn/
 
         - title: Windows product site and blogs
           links:

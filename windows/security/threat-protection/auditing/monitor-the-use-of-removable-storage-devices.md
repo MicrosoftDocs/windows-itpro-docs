@@ -1,8 +1,8 @@
 ---
-title: Monitor the use of removable storage devices 
+title: Monitor the use of removable storage devices
 description: Learn how advanced security auditing options can be used to monitor attempts to use removable storage devices to access network resources.
 ms.assetid: b0a9e4a5-b7ff-41c6-96ff-0228d4ba5da8
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/09/2021
 ms.technology: itpro-security
 ---

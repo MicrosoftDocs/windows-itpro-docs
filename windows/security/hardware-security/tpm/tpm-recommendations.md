@@ -2,9 +2,8 @@
 title: TPM recommendations
 description: This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows.
 ms.topic: conceptual
-ms.date: 02/02/2023
+ms.date: 11/17/2023
 ms.collection:
-- highpri
 - tier1
 ---
 
@@ -35,25 +34,15 @@ From an industry standard, Microsoft has been an industry leader in moving and s
 TPM 2.0 products and systems have important security advantages over TPM 1.2, including:
 
 - The TPM 1.2 spec only allows for the use of RSA and the SHA-1 hashing algorithm.
-
 - For security reasons, some entities are moving away from SHA-1. Notably, NIST has required many federal agencies to move to SHA-256 as of 2014, and technology leaders, including Microsoft and Google have announced they will remove support for SHA-1 based signing or certificates in 2017.
-
 - TPM 2.0 **enables greater crypto agility** by being more flexible with respect to cryptographic algorithms.
-
   - TPM 2.0 supports newer algorithms, which can improve drive signing and key generation performance. For the full list of supported algorithms, see the [TCG Algorithm Registry](http://www.trustedcomputinggroup.org/tcg-algorithm-registry/). Some TPMs don't support all algorithms.
-
   - For the list of algorithms that Windows supports in the platform cryptographic storage provider, see [CNG Cryptographic Algorithm Providers](/windows/win32/seccertenroll/cng-cryptographic-algorithm-providers).
-
   - TPM 2.0 achieved ISO standardization ([ISO/IEC 11889:2015](https://www.microsoft.com/security/blog/2015/06/29/governments-recognize-the-importance-of-tpm-2-0-through-iso-adoption)).
-
   - Use of TPM 2.0 may help eliminate the need for OEMs to make exception to standard configurations for certain countries and regions.
-
 - TPM 2.0 offers a more **consistent experience** across different implementations.
-
   - TPM 1.2 implementations vary in policy settings. This may result in support issues as lockout policies vary.
-
   - TPM 2.0 lockout policy is configured by Windows, ensuring a consistent dictionary attack protection guarantee.
-
 - While TPM 1.2 parts are discrete silicon components, which are typically soldered on the motherboard, TPM 2.0 is available as a **discrete (dTPM)** silicon component in a single semiconductor package, an **integrated** component incorporated in one or more semiconductor packages - alongside other logic units in the same package(s), and as a **firmware (fTPM)** based component running in a trusted execution environment (TEE) on a general purpose SoC.
 
 > [!NOTE]
@@ -65,11 +54,9 @@ TPM 2.0 products and systems have important security advantages over TPM 1.2, in
 
 There are three implementation options for TPMs:
 
-- Discrete TPM chip as a separate component in its own semiconductor package
-
-- Integrated TPM solution, using dedicated hardware integrated into one or more semiconductor packages alongside, but logically separate from, other components
-
-- Firmware TPM solution, running the TPM in firmware in a Trusted Execution mode of a general purpose computation unit
+- Discrete TPM chip as a separate component in its own semiconductor package.
+- Integrated TPM solution, using dedicated hardware integrated into one or more semiconductor packages alongside, but logically separate from, other components.
+- Firmware TPM solution, running the TPM in firmware in a Trusted Execution mode of a general purpose computation unit.
 
 Windows uses any compatible TPM in the same way. Microsoft does not take a position on which way a TPM should be implemented and there is a wide ecosystem of available TPM solutions, which should suit all needs.
 
@@ -95,22 +82,22 @@ For end consumers, TPM is behind the scenes but is still relevant. TPM is used f
 
 The following table defines which Windows features require TPM support.
 
- Windows Features | TPM Required | Supports TPM 1.2  | Supports TPM 2.0  | Details  |
--|-|-|-|-
- Measured Boot | Yes | Yes | Yes | Measured Boot requires TPM 1.2 or 2.0 and UEFI Secure Boot. TPM 2.0 is recommended since it supports newer cryptographic algorithms. TPM 1.2 only supports the SHA-1 algorithm which is being deprecated.  
- BitLocker | No | Yes | Yes | TPM 1.2 or 2.0 are supported but TPM 2.0 is recommended. [Automatic Device Encryption requires Modern Standby](../../operating-system-security/data-protection/bitlocker/bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption) including TPM 2.0 support
- Device Encryption | Yes | N/A | Yes | Device Encryption requires Modern Standby/Connected Standby certification, which requires TPM 2.0.
- Windows Defender Application Control (Device Guard) | No | Yes | Yes
- Windows Defender System Guard (DRTM) | Yes | No | Yes | TPM 2.0 and UEFI firmware is required.
- Credential Guard | No | Yes | Yes | Windows 10, version 1507 (End of Life as of May 2017) only supported TPM 2.0 for Credential Guard. Beginning with Windows 10, version 1511, TPM 1.2 and 2.0 are supported. Paired with Windows Defender System Guard, TPM 2.0 provides enhanced security for Credential Guard. Windows 11 requires TPM 2.0 by default to facilitate easier enablement of this enhanced security for customers.
- Device Health Attestation| Yes | Yes | Yes | TPM 2.0 is recommended since it supports newer cryptographic algorithms. TPM 1.2 only supports the SHA-1 algorithm which is being deprecated.
- Windows Hello/Windows Hello for Business| No | Yes | Yes | Azure AD join supports both versions of TPM, but requires TPM with keyed-hash message authentication code (HMAC) and Endorsement Key (EK) certificate for key attestation support. TPM 2.0 is recommended over TPM 1.2 for better performance and security. Windows Hello as a FIDO platform authenticator will take advantage of TPM 2.0 for key storage.
- UEFI Secure Boot | No | Yes | Yes
- TPM Platform Crypto Provider Key Storage Provider| Yes | Yes | Yes
- Virtual Smart Card | Yes | Yes | Yes
- Certificate storage | No | Yes | Yes | TPM is only required when the certificate is stored in the TPM.
- Autopilot | No | N/A | Yes | If you intend to deploy a scenario which requires TPM (such as white glove and self-deploying mode), then TPM 2.0 and UEFI firmware are required.
- SecureBIO | Yes | No | Yes | TPM 2.0 and UEFI firmware is required.
+| Windows Features | TPM Required | Supports TPM 1.2 | Supports TPM 2.0 | Details |
+|--|--|--|--|--|
+| Measured Boot | Yes | Yes | Yes | Measured Boot requires TPM 1.2 or 2.0 and UEFI Secure Boot. TPM 2.0 is recommended since it supports newer cryptographic algorithms. TPM 1.2 only supports the SHA-1 algorithm which is being deprecated. |
+| BitLocker | No | Yes | Yes | TPM 1.2 or 2.0 are supported but TPM 2.0 is recommended. [Device Encryption requires Modern Standby](../../operating-system-security/data-protection/bitlocker/index.md#device-encryption) including TPM 2.0 support |
+| Device Encryption | Yes | N/A | Yes | Device Encryption requires Modern Standby/Connected Standby certification, which requires TPM 2.0. |
+| Windows Defender Application Control (Device Guard) | No | Yes | Yes |
+| Windows Defender System Guard (DRTM) | Yes | No | Yes | TPM 2.0 and UEFI firmware is required. |
+| Credential Guard | No | Yes | Yes | Windows 10, version 1507 (End of Life as of May 2017) only supported TPM 2.0 for Credential Guard. Beginning with Windows 10, version 1511, TPM 1.2 and 2.0 are supported. Paired with Windows Defender System Guard, TPM 2.0 provides enhanced security for Credential Guard. Windows 11 requires TPM 2.0 by default to facilitate easier enablement of this enhanced security for customers. |
+| Device Health Attestation | Yes | Yes | Yes | TPM 2.0 is recommended since it supports newer cryptographic algorithms. TPM 1.2 only supports the SHA-1 algorithm which is being deprecated. |
+| Windows Hello/Windows Hello for Business | No | Yes | Yes | Microsoft Entra join supports both versions of TPM, but requires TPM with keyed-hash message authentication code (HMAC) and Endorsement Key (EK) certificate for key attestation support. TPM 2.0 is recommended over TPM 1.2 for better performance and security. Windows Hello as a FIDO platform authenticator will take advantage of TPM 2.0 for key storage. |
+| UEFI Secure Boot | No | Yes | Yes |
+| TPM Platform Crypto Provider Key Storage Provider | Yes | Yes | Yes |
+| Virtual Smart Card | Yes | Yes | Yes |
+| Certificate storage | No | Yes | Yes | TPM is only required when the certificate is stored in the TPM. |
+| Autopilot | No | N/A | Yes | If you intend to deploy a scenario which requires TPM (such as white glove and self-deploying mode), then TPM 2.0 and UEFI firmware are required. |
+| SecureBIO | Yes | No | Yes | TPM 2.0 and UEFI firmware is required. |
 
 ## OEM Status on TPM 2.0 system availability and certified parts
 
@@ -118,4 +105,4 @@ Government customers and enterprise customers in regulated industries may have a
 
 ## Related topics
 
-- [Trusted Platform Module](trusted-platform-module-top-node.md) (list of topics)
+- [Trusted Platform Module](trusted-platform-module-overview.md)

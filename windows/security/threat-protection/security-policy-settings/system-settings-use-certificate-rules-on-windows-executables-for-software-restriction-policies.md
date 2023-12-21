@@ -1,8 +1,8 @@
 ---
-title: System settings Use certificate rules on Windows executables for Software Restriction Policies 
+title: System settings Use certificate rules on Windows executables for Software Restriction Policies
 description: Best practices and more for the security policy setting, System settings Use certificate rules on Windows executables for Software Restriction Policies.
 ms.assetid: 2380d93b-b553-4e56-a0c0-d1ef740d089c
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -37,7 +37,7 @@ This policy setting determines whether digital certificates are processed when s
 
 ### Best practices
 
--   Set this policy to **Enabled**. Enabling certificate rules results in software restriction policies checking a certificate revocation list (CRL) to make sure that the software's certificate and signature are valid. When you start signed programs, this setting can decrease system performance. 
+-   Set this policy to **Enabled**. Enabling certificate rules results in software restriction policies checking a certificate revocation list (CRL) to make sure that the software's certificate and signature are valid. When you start signed programs, this setting can decrease system performance.
 You can disable CRLs by editing the software restriction policies in the desired GPO. In the **Trusted Publishers Properties** dialog box, clear the **Publisher** and **Timestamp** check boxes.
 
 ### Location
@@ -50,13 +50,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
 | Stand-Alone Server Default Settings | Disabled |
-| DC Effective Default Settings | Disabled| 
-| Member Server Effective Default Settings | Disabled| 
-| Client Computer Effective Default Settings | Disabled| 
- 
+| DC Effective Default Settings | Disabled|
+| Member Server Effective Default Settings | Disabled|
+| Client Computer Effective Default Settings | Disabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

@@ -17,7 +17,7 @@ Over the past few years, Microsoft has continued their commitment to enabling a 
 
 ### 1. Develop a password replacement offering
 
-Before you move away from passwords, you need something to replace them. With Windows 10 and Windows 11, Microsoft introduced Windows Hello for Business, a strong, hardware protected two-factor credential that enables single sign-on to Azure Active Directory and Active Directory.
+Before you move away from passwords, you need something to replace them. With Windows 10 and Windows 11, Microsoft introduced Windows Hello for Business, a strong, hardware protected two-factor credential that enables single sign-on to Microsoft Entra ID and Active Directory.
 
 Deploying Windows Hello for Business is the first step towards a password-less environment. Windows Hello for Business coexists nicely with existing password-based security. Users are likely to use Windows Hello for Business because of its convenience, especially when combined with biometrics. However, some workflows and applications may still need passwords. This early stage is about implementing an alternative and getting users used to it.
 
@@ -147,7 +147,7 @@ After successfully moving a work persona to password freedom, you can prioritize
 
 ### Password-less replacement offering (step 1)
 
-The first step to password freedom is providing an alternative to passwords. Windows 10 and Windows 11 provide an affordable and easy in-box alternative to passwords, Windows Hello for Business, a strong, two-factor authentication to Azure Active Directory and Active Directory.
+The first step to password freedom is providing an alternative to passwords. Windows 10 and Windows 11 provide an affordable and easy in-box alternative to passwords, Windows Hello for Business, a strong, two-factor authentication to Microsoft Entra ID and Active Directory.
 
 #### Identify test users that represent the targeted work persona
 
@@ -155,12 +155,12 @@ A successful transition relies on user acceptance testing. It's impossible for y
 
 #### Deploy Windows Hello for Business to test users
 
-Next, you'll want to plan your Windows Hello for Business deployment. Your test users will need an alternative way to sign-in during step 2 of the journey to becoming password-less. Use the [Windows Hello for Business planning guide](hello-planning-guide.md) to help learning which deployment is best suited for your environment. Next, use the [Windows Hello for Business deployment guides](hello-deployment-guide.md) to deploy Windows Hello for Business.
+Next, you'll want to plan your Windows Hello for Business deployment. Your test users will need an alternative way to sign-in during step 2 of the journey to becoming password-less. Use the [Windows Hello for Business planning guide](hello-planning-guide.md) to help learning which deployment is best suited for your environment. Next, use the [Windows Hello for Business deployment guides](index.md) to deploy Windows Hello for Business.
 
 With the Windows Hello for Business infrastructure in place, you can limit Windows Hello for Business enrollments to the targeted work personas. The great news is that you'll only need to deploy the infrastructure once. When other targeted work personas need to start using Windows Hello for Business, add them to a group. You'll use the first work persona to validate your Windows Hello for Business deployment.
 
 > [!NOTE]
-> There are many different ways to connect a device to Azure. Deployments may vary based on how the device is joined to Azure Active Directory. Review your planning guide and deployment guide to ensure additional infrastructure is not needed for an additional Azure joined devices.
+> There are many different ways to connect a device to Azure. Deployments may vary based on how the device is joined to Microsoft Entra ID. Review your planning guide and deployment guide to ensure additional infrastructure is not needed for an additional Azure joined devices.
 
 #### Validate that passwords and Windows Hello for Business work
 
@@ -206,7 +206,7 @@ Start mitigating password usages based on the workflows of your targeted persona
 
 Mitigating password usage with applications is one of the more challenging obstacles in the password-less journey. If your organization develops the application, then you are in better shape the common-off-the-shelf software (COTS).
 
-The ideal mitigation for applications that prompt the user for a password is to enable those applications to use an existing authenticated identity, such as Azure Active Directory or Active Directory. Work with the applications vendors to have them add support for Azure identities. For on-premises applications, have the application use Windows integrated authentication. The goal for your users should be a seamless single sign-on experience where each user authenticates once when they sign-in to Windows. Use this same strategy for applications that store their own identities in their own databases.
+The ideal mitigation for applications that prompt the user for a password is to enable those applications to use an existing authenticated identity, such as Microsoft Entra ID or Active Directory. Work with the applications vendors to have them add support for Azure identities. For on-premises applications, have the application use Windows integrated authentication. The goal for your users should be a seamless single sign-on experience where each user authenticates once when they sign-in to Windows. Use this same strategy for applications that store their own identities in their own databases.
 
 Each scenario on your list should now have a problem statement, an investigation as to why the password was used, and a mitigation plan on how to make the password usage go away. Armed with this data, one-by-one, close the gaps on user-visible passwords. Change policies and procedures as needed, make infrastructure changes where possible. Convert in-house applications to use federated identities or Windows integrated authentication. Work with third-party software vendors to update their software to support federated identities or Windows integrated authentication.
 

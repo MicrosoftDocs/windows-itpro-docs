@@ -6,7 +6,7 @@ ms.topic: overview
 ---
 # How Windows Hello for Business works in Windows Devices
 
-Windows Hello for Business is a two-factor credential that is a more secure alternative to passwords. Whether you are cloud or on-premises, Windows Hello for Business has a deployment option for you. For cloud deployments, you can use Windows Hello for Business with Azure Active Directory-joined, Hybrid Azure Active Directory-joined, or Azure AD registered devices. Windows Hello for Business also works for domain joined devices.
+Windows Hello for Business is a two-factor credential that is a more secure alternative to passwords. Whether you are cloud or on-premises, Windows Hello for Business has a deployment option for you. For cloud deployments, you can use Windows Hello for Business with Microsoft Entra joined, Microsoft Entra hybrid joined, or Microsoft Entra registered devices. Windows Hello for Business also works for domain joined devices.
 
 Watch this quick video where Pieter Wigleven gives a simple explanation of how Windows Hello for Business works and some of its supporting features.
 > [!VIDEO https://www.youtube.com/embed/G-GJuDWbBE8]
@@ -17,7 +17,7 @@ Windows Hello for Business is a distributed system that uses several components 
 
 ### Device Registration
 
-Registration is a fundamental prerequisite for Windows Hello for Business.  Without registration, Windows Hello for Business provisioning cannot start. Registration is where the device **registers** its identity with the identity provider. For cloud and hybrid deployments, the identity provider is Azure Active Directory and the device registers with the Azure Device Registration Service (ADRS). For on-premises deployments, the identity provider is Active Directory Federation Services (AD FS), and the device registers with the enterprise device registration service hosted on the federation servers (AD FS).
+Registration is a fundamental prerequisite for Windows Hello for Business.  Without registration, Windows Hello for Business provisioning cannot start. Registration is where the device **registers** its identity with the identity provider. For cloud and hybrid deployments, the identity provider is Microsoft Entra ID and the device registers with the Azure Device Registration Service (ADRS). For on-premises deployments, the identity provider is Active Directory Federation Services (AD FS), and the device registers with the enterprise device registration service hosted on the federation servers (AD FS).
 
 For more information, read [how device registration works](/azure/active-directory/devices/device-registration-how-it-works).
 
@@ -44,7 +44,7 @@ For more information read [how authentication works](hello-how-it-works-authenti
 ## Related topics
 
 - [Technology and Terminology](hello-how-it-works-technology.md)
-- [Windows Hello for Business](hello-identity-verification.md)
+- [Windows Hello for Business](deploy/requirements.md)
 - [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
