@@ -28,7 +28,7 @@ When planning for your migration, you should identify which operating system set
 
 - **Internet**
 
-    The Internet factor includes the settings that let you connect to the Internet and control how your browser operates. The settings include items such as your home page URL, favorites, bookmarks, cookies, security settings, and proxy settings.
+    The Internet factor includes the settings that let you connect to the Internet and control how your browser operates. The settings include items such as your home page URL, favorites, bookmarks, cookies, security settings, and proxy settings. These settings might not be supported in all browsers.
 
 - **Mail**
 

@@ -1,22 +1,22 @@
 ---
-title: Include Files and Settings (Windows 10)
-description: Specify the migration .xml files you want, then use the User State Migration Tool (USMT) 10.0  to migrate the settings and components specified.
+title: Include Files and Settings
+description: Specify the migration .xml files you want, then use the User State Migration Tool (USMT) to migrate the settings and components specified.
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 12/21/2023
 ms.topic: article
 ms.technology: itpro-deploy
 ---
 
 # Include Files and Settings
 
-When you specify the migration .xml files, User State Migration Tool (USMT) 10.0 migrates the settings and components specified in [What does USMT migrate?](usmt-what-does-usmt-migrate.md). To include additional files and settings, we recommend that you create a custom .xml file, and then include this file when using both the `ScanState.exe` and `LoadState.exe` commands. By creating a custom .xml file, you can keep your changes separate from the default .xml files, which makes it easier to track your modifications.
+When you specify the migration **.xml** files, User State Migration Tool (USMT) migrates the settings and components specified in [What does USMT migrate?](usmt-what-does-usmt-migrate.md). To include additional files and settings, we recommend that you create a custom **.xml** file, and then include this file when using both the `ScanState.exe` and `LoadState.exe` commands. By creating a custom **.xml** file, you can keep your changes separate from the default **.xml** files. Creating a custom **.xml** file makes it easier to track modifications.
 
 ## Migrate a single registry key
 
-The following .xml file migrates a single registry key.
+The following **.xml** file migrates a single registry key.
 
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
@@ -41,7 +41,7 @@ The following examples show how to migrate a folder from a specific drive, and f
 
 ### Migrate a folder from a specific drive
 
-- **Including subfolders.** The following .xml file migrates all files and subfolders from `C:\EngineeringDrafts` to the destination computer.
+- **Including subfolders.** The following **.xml** file migrates all files and subfolders from `C:\EngineeringDrafts` to the destination computer.
 
     ```xml
     <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
@@ -60,7 +60,7 @@ The following examples show how to migrate a folder from a specific drive, and f
     </migration>
     ```
 
-- **Excluding subfolders.** The following .xml file migrates all files from `C:\EngineeringDrafts`, but it doesn't migrate any subfolders within `C:\EngineeringDrafts`.
+- **Excluding subfolders.** The following **.xml** file migrates all files from `C:\EngineeringDrafts`, but it doesn't migrate any subfolders within `C:\EngineeringDrafts`.
 
     ```xml
     <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
@@ -81,7 +81,7 @@ The following examples show how to migrate a folder from a specific drive, and f
 
 ### Migrate a folder from any location
 
-The following .xml file migrates all files and subfolders of the `EngineeringDrafts` folder from any drive on the computer. If multiple folders exist with the same name, then all files with this name are migrated.
+The following **.xml** file migrates all files and subfolders of the `EngineeringDrafts` folder from any drive on the computer. If multiple folders exist with the same name, then all files with this name are migrated.
 
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
@@ -101,7 +101,7 @@ The following .xml file migrates all files and subfolders of the `EngineeringDra
 </migration>
 ```
 
-The following .xml file migrates all files and subfolders of the `EngineeringDrafts` folder from any location on the `C:\` drive. If multiple folders exist with the same name, they're all migrated.
+The following **.xml** file migrates all files and subfolders of the `EngineeringDrafts` folder from any location on the `C:\` drive. If multiple folders exist with the same name, they're all migrated.
 
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
@@ -123,7 +123,7 @@ The following .xml file migrates all files and subfolders of the `EngineeringDra
 
 ## Migrate a file type into a specific folder
 
-The following .xml file migrates `.mp3` files located in the specified drives on the source computer into the `C:\Music` folder on the destination computer.
+The following **.xml** file migrates `.mp3` files located in the specified drives on the source computer into the `C:\Music` folder on the destination computer.
 
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
@@ -152,7 +152,7 @@ The following .xml file migrates `.mp3` files located in the specified drives on
 
 The following examples show how to migrate a file from a specific folder, and how to migrate a file from any location.
 
-- **To migrate a file from a folder.** The following .xml file migrates only the `Sample.doc` file from `C:\EngineeringDrafts` on the source computer to the destination computer.
+- **To migrate a file from a folder.** The following **.xml** file migrates only the `Sample.doc` file from `C:\EngineeringDrafts` on the source computer to the destination computer.
 
     ```xml
     <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
@@ -185,10 +185,7 @@ The following examples show how to migrate a file from a specific folder, and ho
 
 ## Related articles
 
-[Customize USMT XML files](usmt-customize-xml-files.md)
-
-[Custom XML examples](usmt-custom-xml-examples.md)
-
-[Conflicts and precedence](usmt-conflicts-and-precedence.md)
-
-[USMT XML reference](usmt-xml-reference.md)
+- [Customize USMT XML files](usmt-customize-xml-files.md).
+- [Custom XML examples](usmt-custom-xml-examples.md).
+- [Conflicts and precedence](usmt-conflicts-and-precedence.md).
+- [USMT XML reference](usmt-xml-reference.md).
