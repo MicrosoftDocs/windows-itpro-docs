@@ -15,7 +15,7 @@ This article for IT professionals describes the steps to enable the AppLocker po
 
 For info about how AppLocker policies are applied within a GPO structure, see [Understand AppLocker rules and enforcement setting inheritance in Group Policy](understand-applocker-rules-and-enforcement-setting-inheritance-in-group-policy.md).
 
-To create an AppLocker policy in a Group Policy Object (GPO), you can perform this task by using the Group Policy Management Console. To create an AppLocker policy for the local computer or for use in a security template, use the Local Security Policy snap-in. For info how to use these MMC snap-ins to administer AppLocker, see [Administer AppLocker](administer-applocker.md#using-the-mmc-snap-ins-to-administer-applocker).
+To manage an AppLocker policy in a Group Policy Object (GPO), you can perform this task by using the Group Policy Management Console. To manage an AppLocker policy for the local computer or for use in a security template, use the Local Security Policy snap-in. For info how to use these MMC snap-ins to administer AppLocker, see [Administer AppLocker](administer-applocker.md#using-the-mmc-snap-ins-to-administer-applocker).
 
 ## To enable the Enforce rules enforcement setting
 

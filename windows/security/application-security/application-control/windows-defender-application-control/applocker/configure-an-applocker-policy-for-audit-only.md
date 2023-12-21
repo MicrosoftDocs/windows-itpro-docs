@@ -14,7 +14,7 @@ After AppLocker rules are created within the rule collection, you can configure 
 
 When AppLocker policy enforcement mode is set to **Enforce rules**, rules are enforced for the rule collection and all events are logged to the AppLocker event logs for that rule collection. When AppLocker policy enforcement mode is set to **Audit only**, rules are only evaluated but all events generated from that evaluation are written to the AppLocker event logs.
 
-To create an AppLocker policy in a Group Policy Object (GPO), you can perform this task by using the Group Policy Management Console. To create an AppLocker policy for the local computer or for use in a security template, use the Local Security Policy snap-in. For info how to use these MMC snap-ins to administer AppLocker, see [Administer AppLocker](administer-applocker.md#using-the-mmc-snap-ins-to-administer-applocker).
+To manage an AppLocker policy in a Group Policy Object (GPO), you can perform this task by using the Group Policy Management Console. To manage an AppLocker policy for the local computer or for use in a security template, use the Local Security Policy snap-in. For info how to use these MMC snap-ins to administer AppLocker, see [Administer AppLocker](administer-applocker.md#using-the-mmc-snap-ins-to-administer-applocker).
 
 ## To audit rule collections
 
