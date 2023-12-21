@@ -104,7 +104,7 @@ additionalContent:
             url: update/waas-manage-updates-wufb.md
           - text: Windows Update for Business deployment service
             url: update/deployment-service-overview.md
-          - text: Manage additional Windows Update settings
+          - text: Manage Windows Update settings
             url: update/waas-wu-settings.md
           - text: Windows Update for Business reports overview
             url: update/wufb-reports-overview.md
