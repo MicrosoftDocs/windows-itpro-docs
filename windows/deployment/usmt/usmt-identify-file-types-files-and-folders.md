@@ -1,11 +1,11 @@
 ---
-title: Identify File Types, Files, and Folders (Windows 10)
+title: Identify File Types, Files, and Folders
 description: Learn how to identify the file types, files, folders, and settings that you want to migrate when you're planning your migration.
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 12/21/2023
 ms.topic: article
 ms.technology: itpro-deploy
 ---
@@ -22,16 +22,30 @@ When planning for your migration, if not using MigDocs.xml, you should identify 
 
 Once you've verified which files and file types that the end users work with regularly, you'll need to locate them. Files may be saved to a single folder or scattered across a drive. A good starting point for finding files types to include is to look at the registered file types on the computer.
 
-To find the registered file types on a computer running Windows 7, Windows 8, Windows 10, or Windows 11:
+To find the registered file types on a computer running a currently supported version of Windows:
+
+1. Right-click the Start Menu and select **Settings**.
+
+1. From the left panel, select **Apps**.
+
+1. Under the **Apps** pane, select **Default apps**.
+
+1. Under the **Apps > Default apps** pane, scroll down past the list of apps until the **Related settings** section is reached.
+
+1. Under **Related settings**, select **Choose defaults by file type**.
+
+1. Under the **Apps > Default apps > Choose defaults by file type**, the registered file types are displayed.
+
 
 1. Open **Control Panel**
-2. Make sure **View by:** is set to **Category** and then select **Programs**.
 
-3. Select **Default Programs**
+1. Make sure **View by:** is set to **Category** and then select **Programs**.
 
-4. select **Associate a file type or protocol with a program**.
+1. Select **Default Programs**
 
-5. On this screen, the registered file types are displayed.
+1. select **Associate a file type or protocol with a program**.
+
+1. On this screen, the registered file types are displayed.
 
 For more information about how to change the file types, files, and folders that are migrated when you specify the MigUser.xml file, see [User State Migration Tool (USMT) how-to topics](usmt-how-to.md).
 
