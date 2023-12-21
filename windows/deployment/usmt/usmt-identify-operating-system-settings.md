@@ -22,9 +22,9 @@ When planning for your migration, you should identify which operating system set
 
     The action factor includes items such as:
 
-        - The key-repeat rate.
-        - Whether double-clicking a folder opens it in a new window or the same window.
-        - Whether you need to single-click or double-click an item to open it.
+    - The key-repeat rate.
+    - Whether double-clicking a folder opens it in a new window or the same window.
+    - Whether you need to single-click or double-click an item to open it.
 
 - **Internet**
 
