@@ -5,18 +5,9 @@ ms.topic: overview
 ms.date: 04/24/2023
 ---
 
-<!-- Windows Hello is a feature that lets you sign in to your Windows device with your biometric data, such as your face, fingerprint or iris. It is more secure and convenient than using a password, and it works with compatible devices and cameras. To use Windows Hello, you need to set up a PIN and then enable the facial or fingerprint recognition option in the Settings app. You can also use a PIN as an alternative sign-in method.
-
-It is different from Windows Hello, which is designed for personal devices and individual accounts. Windows Hello for Business provides stronger security and more configuration options for enterprises and organizations. It also requires additional infrastructure and policies to support it. Some of the key differences are:
-
-Windows Hello for Business uses a two-factor authentication method that combines a device-specific credential with a biometric or PIN gesture. This credential is tied to your identity provider, such as Active Directory or Azure AD, and can be used to access enterprise apps, websites, and services. Windows Hello for individuals uses a single-factor authentication method that is unique to the device, but can use a password hash depending on the account type.
-Windows Hello for Business can be managed and enforced by IT administrators using Group Policy or Mobile Device Management (MDM) tools. They can set policies to control the use of biometrics, PINs, and security keys, as well as the enrollment and revocation of credentials. Windows Hello for individuals does not have these management options and is configured by the user.
-Windows Hello for Business supports Fast Identity Online (FIDO) 2.0 authentication standards, which enable passwordless sign-in to compatible websites and services. Windows Hello for individuals does not support FIDO 2.0, but can use FIDO U2F security keys as
--->
-
 # Windows Hello for Business Overview
 
-Windows Hello for Business replaces passwords with strong two-factor authentication on devices. This authentication consists of a type of user credential that is tied to a device and uses a biometric or PIN.
+Windows Hello is an authentication feature that allows users to sign in to their Windows devices using a PIN, facial recognition, fingerprint scanning, or iris scanning, instead of a traditional password.
 
 Windows Hello addresses the following problems with passwords:
 
@@ -27,18 +18,38 @@ Windows Hello addresses the following problems with passwords:
 
 Windows Hello lets users authenticate to:
 
-- A Microsoft account.
-- An Active Directory account.
-- A Microsoft Entra account.
-- Identity Provider Services or Relying Party Services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication.
+- A Microsoft account
+- Identity provider (IdP) services or relying party (RP) Services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication
+
+Windows Hello for Business is an extension of Windows Hello that provides enterprise-grade security and management capabilities. It allows organizations to use the same biometric authentication methods as Windows Hello, but with additional features such as device attestation, certificate-based authentication, and conditional access policies.
+
+One of the key differences between Windows Hello and Windows Hello for Business is the level of security they provide. While Windows Hello is a convenient way to sign in to your device, Windows Hello for Business provides additional security measures to protect against advanced threats and attacks:
+
+- Individuals can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Windows Hello is unique to the device on which it's set up, but can use a password hash depending on an individual's account type. This configuration is referred to as *Windows Hello convenience PIN* and it's not backed by asymmetric (public/private key) or certificate-based authentication
+- *Windows Hello for Business*, which is configured by via policy settings, always uses key-based or certificate-based authentication
+
+Windows Hello for Business lets users authenticate to:
+
+- A Microsoft Entra ID account
+- An Active Directory account
+- Identity provider (IdP) services or relying party (RP) Services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication
+
+Windows Hello for Business offers IT administrators security and management capabilities that are essential for enterprise environments. Policy settings can be deployed to the devices, ensuring that all devices are secure and compliant with organization requirements.
+
+> [!NOTE]
+> FIDO2 (Fast Identity Online) authentication is an open standard for passwordless authentication. It allows users to sign in to their devices and apps using biometric authentication or a physical security key, without the need for a traditional password. FIDO2 support in Windows Hello for Business provides an additional layer of security and convenience for users, while also reducing the risk of password-related attacks.
+
+## Windows Hello and two factor authentication
+
+Windows Hello for Business uses a two-factor authentication method that combines a device-specific credential with a biometric or PIN gesture. This credential is tied to your identity provider, such as Microsoft Entra ID or Active Directory, and can be used to access enterprise apps, websites, and services.
 
 After an initial two-step verification of the user during enrollment, Windows Hello is set up on the user's device and Windows asks the user to set a gesture, which can be a biometric, such as a fingerprint, or a PIN. The user provides the gesture to verify their identity. Windows then uses Windows Hello to authenticate users.
 
-As an administrator in an enterprise or educational organization, you can create policies to manage Windows Hello for Business use on Windows 10-based devices that connect to your organization.
-
 ## Biometric sign-in
 
- Windows Hello provides reliable, fully integrated biometric authentication based on facial recognition or fingerprint matching. Windows Hello uses a combination of special infrared (IR) cameras and software to increase accuracy and guard against spoofing. Major hardware vendors are shipping devices that have integrated Windows Hello-compatible cameras. Fingerprint reader hardware can be used or added to devices that don't currently have it. On devices that support Windows Hello, an easy biometric gesture unlocks users' credentials.
+ Windows Hello provides reliable, fully integrated biometric authentication based on facial recognition or fingerprint matching. Windows Hello uses a combination of special infrared (IR) cameras and software to increase accuracy and guard against spoofing. Major hardware vendors are shipping devices that have integrated Windows Hello-compatible cameras and fingerprint readers.
+
+On devices that support Windows Hello, an easy biometric gesture unlocks users' credentials:
 
 - **Facial recognition**. This type of biometric recognition uses special cameras that see in IR light, which allows them to reliably tell the difference between a photograph or scan and a living person. Several vendors are shipping external cameras that incorporate this technology, and major laptop manufacturers are incorporating it into their devices, as well.
 - **Fingerprint recognition**. This type of biometric recognition uses a capacitive fingerprint sensor to scan your fingerprint. Fingerprint readers have been available for Windows computers for years, but the current generation of sensors is more reliable and less error-prone. Most existing fingerprint readers work with Windows 10 and Windows 11, whether they're external or integrated into laptops or USB keyboards.
@@ -46,19 +57,11 @@ As an administrator in an enterprise or educational organization, you can create
 
 Windows stores biometric data that is used to implement Windows Hello securely on the local device only. The biometric data doesn't roam and is never sent to external devices or servers. Because Windows Hello only stores biometric identification data on the device, there's no single collection point an attacker can compromise to steal biometric data.
 
-## The difference between Windows Hello and Windows Hello for Business
-
-- Individuals can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Windows Hello is unique to the device on which it's set up, but can use a password hash depending on an individual's account type. This configuration is referred to as *Windows Hello convenience PIN* and it's not backed by asymmetric (public/private key) or certificate-based authentication.
-
-- *Windows Hello for Business*, which is configured by group policy or mobile device management (MDM) policy, always uses key-based or certificate-based authentication. This behavior makes it more secure than *Windows Hello convenience PIN*.
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=fb5ceb53-d82b-4997-bde1-d473b620038a]
 
 ## Benefits of Windows Hello
 
-Reports of identity theft and large-scale hacking are frequent headlines. Nobody wants to be notified that their user name and password have been exposed.
-
-You may wonder [how a PIN can help protect a device better than a password](hello-why-pin-is-better-than-password.md). Passwords are shared secrets; they're entered on a device and transmitted over the network to the server. An intercepted account name and password can be used by anyone, anywhere. Because they're stored on the server, a server breach can reveal those stored credentials.
-
-In Windows 10 and later, Windows Hello replaces passwords. When an identity provider supports keys, the Windows Hello provisioning process creates a cryptographic key pair bound to the Trusted Platform Module (TPM), if a device has a TPM 2.0, or in software. Access to these keys and obtaining a signature to validate user possession of the private key is enabled only by the PIN or biometric gesture. The two-step verification that takes place during Windows Hello enrollment creates a trusted relationship between the identity provider and the user when the public portion of the public/private key pair is sent to an identity provider and associated with a user account. When a user enters the gesture on the device, the identity provider knows that it's a verified identity, because of the combination of Windows Hello keys and gestures. It then provides an authentication token that allows Windows to access resources and services.
+When an identity provider supports keys, the Windows Hello provisioning process creates a cryptographic key pair bound to the Trusted Platform Module (TPM), if a device has a TPM 2.0, or in software. Access to these keys and obtaining a signature to validate user possession of the private key is enabled only by the PIN or biometric gesture. The two-step verification that takes place during Windows Hello enrollment creates a trusted relationship between the identity provider and the user when the public portion of the public/private key pair is sent to an identity provider and associated with a user account. When a user enters the gesture on the device, the identity provider knows that it's a verified identity, because of the combination of Windows Hello keys and gestures. It then provides an authentication token that allows Windows to access resources and services.
 
 > [!NOTE]
 > Windows Hello as a convenience sign-in uses regular username and password authentication, without the user entering the password.
@@ -154,12 +157,20 @@ On the surface, a PIN looks much like a password. A PIN can be a set of numbers,
 
 To compromise a Windows Hello credential that TPM protects, an attacker must have access to the physical device. Then, the attacker must find a way to spoof the user's biometrics or guess the PIN. All these actions must be done before [TPM anti-hammering](/windows/device-security/tpm/tpm-fundamentals#anti-hammering) protection locks the device.
 
-
 ## Why do you need a PIN to use biometrics?
 
 Windows Hello enables biometric sign-in for Windows: fingerprint, iris, or facial recognition. When you set up Windows Hello, you're asked to create a PIN after the biometric setup. The PIN enables you to sign in when you can't use your preferred biometric because of an injury or because the sensor is unavailable or not working properly.
 
 If you only had a biometric sign-in configured and, for any reason, were unable to use that method to sign in, you would have to sign in using your account and password, which doesn't provide you with the same level of protection as Hello.
+
+## User experience
+
+Windows Hello for Business provisioning begins immediately after the user signs in, after the user profile is loaded, but before the user can access their desktop. Windows only launches the provisioning experience if all the prerequisite checks pass. If the prerequisites aren't met, Windows doesn't launch the provisioning experience and the user can't enroll in Windows Hello for Business.
+
+
+
+> [!NOTE]
+> You must allow access to the URL `account.microsoft.com` to initiate Windows Hello for Business provisioning. This URL launches the subsequent steps in the provisioning process and is required to successfully complete Windows Hello for Business provisioning. This URL doesn't require any authentication and as such, doesn't collect any user data.
 
 <!--
 
@@ -226,10 +237,5 @@ Authentication
 
 
 
-## User experience
 
-Windows Hello for Business provisioning begins immediately after the user has signed in, after the user profile is loaded, but before the user can access their desktop. Windows only launches the provisioning experience if all the prerequisite checks pass. You can determine the status of the prerequisite checks by viewing the **User Device Registration** in the **Event Viewer** under **Applications and Services Logs\Microsoft\Windows**.
-
-> [!NOTE]
-> You must allow access to the URL `account.microsoft.com` to initiate Windows Hello for Business provisioning. This URL launches the subsequent steps in the provisioning process and is required to successfully complete Windows Hello for Business provisioning. This URL doesn't require any authentication and as such, doesn't collect any user data.
 -->

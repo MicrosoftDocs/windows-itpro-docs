@@ -168,7 +168,9 @@ The deployment of certificates to users and Domain Controllers requires more con
 
 ## Prepare users to use Windows Hello
 
-When you set a policy to require Windows Hello for Business in the workplace, you will want to prepare people in your organization by explaining how to use Hello.
+When you set a policy to require Windows Hello for Business in the workplace, you will want to prepare people in your organization by explaining how to enroll and use Windows Hello.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7]
 
 After enrollment in Hello, users should use their gesture (such as a PIN or fingerprint) for access to corporate resources. Their gesture is only valid on the enrolled device.
 
