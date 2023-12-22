@@ -124,30 +124,33 @@ On the surface, a PIN looks much like a password. A PIN can be a set of numbers,
     :::column span="1":::
     **A PIN is tied to a device**
     :::column-end:::
-    :::column spna="3":::
+    :::column span="3":::
     One important difference between an online password and a Hello PIN is that the PIN is tied to the specific device on which it's set up. That PIN is useless to anyone without that specific hardware. Someone who obtains your online password can sign in to your account from anywhere, but if they obtain your PIN, they'd have to access your device too. The PIN can't be used anywhere except on that specific device. If you want to sign in on multiple devices, you have to set up Hello on each device.
+    :::column-end:::
 :::row-end:::
 :::row:::
     :::column span="1":::
     **A PIN is local to the device**
     :::column-end:::
-    :::column spna="3":::
+    :::column span="3":::
     An online password is transmitted to the server. The password can be intercepted in transmission or obtained from a server. A PIN is local to the device, never transmitted anywhere, and it isn't stored on the server.
 
     When the PIN is created, it establishes a trusted relationship with the identity provider and creates an asymmetric key pair that is used for authentication. When you enter your PIN, you unlock the authentication key, which is used to sign the request that is sent to the authenticating server.
 
     Even though local passwords are local to the device, they're less secure than a PIN, as described in the next section.
+    :::column-end:::
 :::row-end:::
 :::row:::
     :::column span="1":::
     **A PIN is backed by hardware**
     :::column-end:::
-    :::column spna="3":::
+    :::column span="3":::
     The Hello PIN is backed by a Trusted Platform Module (TPM) chip, which is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. Windows doesn't link local passwords to TPM, therefore PINs are considered more secure than local passwords.
 
     User key material is generated and available within the TPM of the device. The TPM protects the key material from attackers who want to capture and reuse it. Since Hello uses asymmetric key pairs, users credentials can't be stolen in cases where the identity provider or websites the user accesses have been compromised.
     
     The TPM protects against various known and potential attacks, including PIN brute-force attacks. After too many incorrect guesses, the device is locked.
+    :::column-end:::
 :::row-end:::
 
 ## What if someone steals the device?
