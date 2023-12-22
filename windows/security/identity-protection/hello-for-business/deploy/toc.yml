@@ -50,7 +50,7 @@ items:
   - name: Key trust deployment
     items: 
     - name: Overview
-      href: hybrid-cloud-kerberos-trust.md
+      href: on-premises-key-trust.md
     - name: Configure and validate the PKI
       href: on-premises-key-trust-pki.md
     - name: Prepare and deploy Active Directory Federation Services (AD FS)

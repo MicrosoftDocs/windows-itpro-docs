@@ -174,9 +174,7 @@ After enrollment in Hello, users should use their gesture (such as a PIN or fing
 
 Although the organization may require users to change their Active Directory or Microsoft Entra account password at regular intervals, changes to their passwords have no effect on Hello.
 
-People who are currently using virtual or physical smart cards for authentication can use their virtual smart card to verify their identity when they set up Hello.
-
-[!INCLUDE [virtual-smart-card-deprecation-notice](../../../includes/virtual-smart-card-deprecation-notice.md)]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=44c16430-756f-490a-9fc1-80e2724fef8d]
 
 ## On devices owned by the organization
 

@@ -99,6 +99,23 @@ You can create a Group Policy or mobile device management (MDM) policy to config
 Windows Hello for Business is enabled by default for devices that are Microsoft Entra joined. If you need to disable the automatic enablement, there are different options to configure them.
 
 
+### Use Intune to disable Windows Hello for Business enrollment
+
+We recommend that you disable or manage Windows Hello for Business provisioning behavior through an Intune policy. For more specific information, see [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello).
+
+### Disable Windows Hello for Business using Intune Enrollment policy
+
+The following method explains how to disable Windows Hello for Business enrollment using Intune.
+
+1. Sign into the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Go to **Devices** > **Enrollment** > **Enroll devices** > **Windows enrollment** > **Windows Hello for Business**. The Windows Hello for Business pane opens.
+3. If you don't want to enable Windows Hello for Business during device enrollment, select **Disabled** for **Configure Windows Hello for Business**.
+
+    When disabled, users can't provision Windows Hello for Business. When set to Disabled, you can still configure the subsequent settings for Windows Hello for Business even though this policy won't enable Windows Hello for Business.
+
+> [!NOTE]
+> This policy is only applied during new device enrollments. For currently enrolled devices, you can [set the same settings in a device configuration policy](../configure.md).
+
 ### Disable during OS deployment
 
 If you don't use Intune in your organization, then you can disable Windows Hello for Business using the registry. You can use a third-party MDM, or some other method that you use to manage these devices. Because these systems are Microsoft Entra joined only, and not domain joined, these settings can also be made manually in the registry.
