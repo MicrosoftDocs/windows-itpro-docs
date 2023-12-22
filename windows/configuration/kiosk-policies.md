@@ -29,7 +29,7 @@ When the assigned access kiosk configuration is applied on the device, certain p
 
 ## Group Policy
 
-The following local policies affect all **non-administrator** users on the system, regardless whether the user is configured as an assigned access user or not.  These users include local users, domain users, and Azure Active Directory users.
+The following local policies affect all **non-administrator** users on the system, regardless whether the user is configured as an assigned access user or not.  These users include local users, domain users, and Microsoft Entra users.
 
 | Setting |	Value |
 | --- | --- |

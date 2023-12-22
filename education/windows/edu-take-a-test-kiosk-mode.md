@@ -1,7 +1,7 @@
 ---
 title: Configure Take a Test in kiosk mode
 description: Learn how to configure Windows to execute the Take a Test app in kiosk mode, using Intune and provisioning packages.
-ms.date: 09/30/2022
+ms.date: 11/08/2023
 ms.topic: how-to
 ---
 
@@ -199,7 +199,7 @@ To create a local account, and configure Take a Test in kiosk mode using the Set
    :::image type="content" source="./images/takeatest/login-screen-take-a-test-single-pc.png" alt-text="Windows 11 SE login screen with the take a test account." border="true":::
 
    > [!NOTE]  
-   > To sign-in with a local account on a device that is joined to Azure AD or Active Directory, you must prefix the username with either `<computername>\` or `.\`.
+   > To sign-in with a local account on a device that is joined to Microsoft Entra ID or Active Directory, you must prefix the username with either `<computername>\` or `.\`.
 
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: Interactive logon Machine inactivity limit 
+title: Interactive logon Machine inactivity limit
 description: Describes the best practices, location, values, management, and security considerations for the Interactive logon Machine inactivity limit security policy setting.
 ms.assetid: 7065b4a9-0d52-41d5-afc4-5aedfc4162b5
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,10 +12,10 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: 
+ms.collection:
   - highpri
   - tier3
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/18/2018
 ms.technology: itpro-security
 ---
@@ -57,13 +57,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Disabled| 
-| DC Effective Default Settings | Disabled| 
-| Member Server Effective Default Settings | Disabled| 
-| Client Computer Effective Default Settings | Disabled| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Disabled|
+| DC Effective Default Settings | Disabled|
+| Member Server Effective Default Settings | Disabled|
+| Client Computer Effective Default Settings | Disabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

@@ -39,14 +39,14 @@
         "tier2"
       ],
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
+      "zone_pivot_group_filename": "resources/zone-pivot-groups.json",
       "uhfHeaderId": "MSDocsHeader-Windows",
       "ms.localizationpriority": "medium",
       "ms.prod": "windows-client",
       "ms.technology": "itpro-security",
       "manager": "aaroncz",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
-      "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
+      "feedback_system": "Standard",
+            "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.security",
@@ -65,7 +65,10 @@
         "dstrome",
         "v-dihans",
         "garycentric",
-        "beccarobins"
+        "beccarobins",
+        "Stacyrch140",
+        "v-stsavell",
+        "American-Dipper"
       ],
       "searchScope": [
         "Windows 10"
@@ -88,9 +91,7 @@
         "operating-system-security/data-protection/**/*.md": "paolomatarazzo",
         "operating-system-security/data-protection/**/*.yml": "paolomatarazzo",
         "operating-system-security/network-security/**/*.md": "paolomatarazzo",
-        "operating-system-security/network-security/**/*.yml": "paolomatarazzo",
-        "operating-system-security/network-security/windows-firewall/**/*.md": "ngangulyms",
-        "operating-system-security/network-security/windows-firewall/**/*.yml": "ngangulyms"
+        "operating-system-security/network-security/**/*.yml": "paolomatarazzo"
       },
       "ms.author":{
         "application-security//**/*.md": "vinpa",
@@ -108,9 +109,7 @@
         "operating-system-security/data-protection/**/*.md": "paoloma",
         "operating-system-security/data-protection/**/*.yml": "paoloma",
         "operating-system-security/network-security/**/*.md": "paoloma",
-        "operating-system-security/network-security/**/*.yml": "paoloma",
-        "operating-system-security/network-security/windows-firewall/*.md": "nganguly",
-        "operating-system-security/network-security/windows-firewall/*.yml": "nganguly"
+        "operating-system-security/network-security/**/*.yml": "paoloma"
       },
       "appliesto": {
         "application-security//**/*.md": [
@@ -215,20 +214,20 @@
         "identity-protection/hello-for-business/*.md": "erikdau",
         "identity-protection/credential-guard/*.md": "zwhittington",
         "identity-protection/access-control/*.md": "sulahiri",
-        "operating-system-security/network-security/windows-firewall/*.md": "paoloma",
+        "identity-protection/smart-cards/*.md": "ardenw",
+        "identity-protection/virtual-smart-cards/*.md": "ardenw",
+        "operating-system-security/network-security/windows-firewall/*.md": "nganguly",
         "operating-system-security/network-security/vpn/*.md": "pesmith",
         "operating-system-security/data-protection/personal-data-encryption/*.md":"rhonnegowda",
         "operating-system-security/device-management/windows-security-configuration-framework/*.md": "jmunck"
       },
       "ms.collection": {
-        "application-security/application-control/windows-defender-application-control/**/*.md": [ "tier3", "must-keep" ],
         "identity-protection/hello-for-business/*.md": "tier1",
         "information-protection/pluton/*.md": "tier1",
         "information-protection/tpm/*.md": "tier1",
         "threat-protection/auditing/*.md": "tier3",
         "operating-system-security/data-protection/bitlocker/*.md": "tier1",
-        "operating-system-security/data-protection/personal-data-encryption/*.md": "tier1",
-        "operating-system-security/network-security/windows-firewall/*.md": [ "tier3", "must-keep" ]
+        "operating-system-security/data-protection/personal-data-encryption/*.md": "tier1"
       }
     },
     "template": [],

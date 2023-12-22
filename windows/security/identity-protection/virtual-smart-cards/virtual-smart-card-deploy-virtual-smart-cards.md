@@ -1,8 +1,8 @@
 ---
 title: Deploy Virtual Smart Cards
 description: Learn about what to consider when deploying a virtual smart card authentication solution
-ms.topic: conceptual
-ms.date: 02/22/2023
+ms.topic: concept-article
+ms.date: 11/06/2023
 ---
 
 # Deploy Virtual Smart Cards
@@ -19,11 +19,9 @@ A device manufacturer creates physical devices, and then an organization purchas
 
 This topic contains information about the following phases in a virtual smart card lifecycle:
 
--   [Create and personalize virtual smart cards](#create-and-personalize-virtual-smart-cards)
-
--   [Provision virtual smart cards](#provision-virtual-smart-cards)
-
--   [Maintain virtual smart cards](#maintain-virtual-smart-cards)
+- [Create and personalize virtual smart cards](#create-and-personalize-virtual-smart-cards)
+- [Provision virtual smart cards](#provision-virtual-smart-cards)
+- [Maintain virtual smart cards](#maintain-virtual-smart-cards)
 
 ## Create and personalize virtual smart cards
 
@@ -54,9 +52,7 @@ A virtual smart card appears within the operating system as a physical smart car
 
 - **Non-exportability**: Because all private information on the virtual smart card is encrypted by using the TPM on the host computer, it can't be used on a different computer with a different TPM. Additionally, TPMs are designed to be tamper-resistant and non-exportable, so a malicious user can't reverse engineer an identical TPM or install the same TPM on a different computer.
     For more information, see [Evaluate Virtual Smart Card Security](virtual-smart-card-evaluate-security.md).
-
 - **Isolated cryptography**: TPMs provide the same properties of isolated cryptography that is offered by physical smart cards, which is utilized by virtual smart cards. Unencrypted copies of private keys are loaded only within the TPM and never into memory that is accessible by the operating system. All cryptographic operations with these private keys occur inside the TPM.
-
 - **Anti-hammering**: If a user enters a PIN incorrectly, the virtual smart card responds by using the anti-hammering logic of the TPM, which rejects further attempts for some time instead of blocking the card. This is also known as lockout.
     For more information, see [Blocked virtual smart card](#blocked-virtual-smart-card) and [Evaluate Virtual Smart Card Security](virtual-smart-card-evaluate-security.md).
 
@@ -70,12 +66,9 @@ During virtual smart card personalization, the values for the administrator key,
 
 Because the administrator key is critical to the security of the card, it's important to consider the deployment environment and decide on the proper administrator key setting strategy. Options for these strategies include:
 
-- **Uniform**: Administrator keys for all the virtual smart cards deployed in the organization are the same. Although using the same key makes the maintenance infrastructure easy (only one key needs to be stored), it's highly insecure. This strategy might be sufficient for small organizations, but if the administrator key is compromised, all virtual smart cards that use the key must be reissued.
-
-- **Random, not stored**: Administrator keys are assigned randomly for all virtual smart cards, and they aren't recorded. This is a valid option if the deployment administrators don't require the ability to reset PINs, and instead prefer to delete and reissue virtual smart cards. This is a viable strategy if the administrator prefers to set PUK values for the virtual smart cards and then use this value to reset PINs, if necessary.
-
-- **Random, stored**: you assign the administrator keys randomly, storing them in a central location. Each card's security is independent of the others. This is a secure strategy on a large scale, unless the administrator key database is compromised.
-
+- **Uniform**: Administrator keys for all the virtual smart cards deployed in the organization are the same. Although using the same key makes the maintenance infrastructure easy (only one key needs to be stored), it's highly insecure. This strategy might be sufficient for small organizations, but if the administrator key is compromised, all virtual smart cards that use the key must be reissued
+- **Random, not stored**: Administrator keys are assigned randomly for all virtual smart cards, and they aren't recorded. This is a valid option if the deployment administrators don't require the ability to reset PINs, and instead prefer to delete and reissue virtual smart cards. This is a viable strategy if the administrator prefers to set PUK values for the virtual smart cards and then use this value to reset PINs, if necessary
+- **Random, stored**: you assign the administrator keys randomly, storing them in a central location. Each card's security is independent of the others. This is a secure strategy on a large scale, unless the administrator key database is compromised
 - **Deterministic**: Administrator keys are the result of some function or known information. For example, the user ID could be used to randomly generate data that can be further processed through a symmetric encryption algorithm by using a secret. This administrator key can be similarly regenerated when needed, and it doesn't need to be stored. The security of this method relies on the security of the secret used.
 
 Although the PUK and the administrator key methodologies provide unlocking and resetting functionality, they do so in different ways. The PUK is a PIN that is entered on the computer to enable a user PIN reset.
@@ -112,9 +105,8 @@ You can use APIs to build Microsoft Store apps that you can use to manage the fu
 
 When a device or computer isn't joined to a domain, the TPM ownerAuth is stored in the registry under HKEY\_LOCAL\_MACHINE. This exposes some threats. Most of the threat vectors are protected by BitLocker, but threats that aren't protected include:
 
--   A malicious user possesses a device that has an active local sign-in session before the device locks. The malicious user could attempt a brute-force attack on the virtual smart card PIN, and then access the corporate secrets.
-
--   A malicious user possesses a device that has an active virtual private network (VPN) session. The device is then compromised.
+- A malicious user possesses a device that has an active local sign-in session before the device locks. The malicious user could attempt a brute-force attack on the virtual smart card PIN, and then access the corporate secrets
+- A malicious user possesses a device that has an active virtual private network (VPN) session. The device is then compromised
 
 The proposed mitigation for the previous scenarios is to use Exchange ActiveSync (EAS) policies to reduce the automatic lockout time from five minutes to 30 seconds of inactivity. You can set policies for automatic lockout while provisioning virtual smart cards. If an organization wants more security, they can also configure a setting to remove the ownerAuth from the local device.
 
@@ -165,7 +157,7 @@ Similar to physical smart cards, virtual smart cards require certificate enrollm
 
 #### Certificate issuance
 
-Users can enroll for certificates from within a remote desktop session that is established to provision the card. This process can also be managed by the smart card management tool that the user runs through the remote desktop connection. This model works for deployments that require the user to sign a request for enrollment by using a physical smart card. The driver for the physical smart card doesn't need to be installed on the client computer if it's installed on the remote computer. This is made possible by smart card redirection functionality that was introduced in Windows Server 2003, which ensures that smart cards that are connected to the client computer are available for use during a remote session.
+Users can enroll for certificates from within a remote desktop session that is established to provision the card. This process can also be managed by the smart card management tool that the user runs through the remote desktop connection. This model works for deployments that require the user to sign a request for enrollment by using a physical smart card. The driver for the physical smart card doesn't need to be installed on the client computer if it's installed on the remote computer. This is made possible by smart card redirection functionality, which ensures that smart cards that are connected to the client computer are available for use during a remote session.
 
 Alternatively, without establishing a remote desktop connection, users can enroll for certificates from the Certificate Management console (certmgr.msc) on a client computer. Users can also create a request and submit it to a server from within a custom certificate enrollment application (for example, a registration authority) that has controlled access to the certification authority (CA). This requires specific enterprise configuration and deployments for Certificate Enrollment Policies (CEP) and Certificate Enrollment Services (CES).
 
@@ -189,11 +181,11 @@ This command creates a card with a randomized administrator key. The key is auto
 
 `tpmvscmgr.exe destroy /instance <instance ID>`
 
-where &lt;instance ID&gt; is the value that is printed on the screen when the user creates the card. Specifically, for the first card created, the instance ID is ROOT\\SMARTCARDREADER\\0000).
+where `<instance ID>` is the value that is printed on the screen when the user creates the card. Specifically, for the first card created, the instance ID is `ROOT\SMARTCARDREADER\0000`.
 
 ### Certificate management for unmanaged cards
 
-Depending on the security requirements that are unique to an organization, users can initially enroll for certificates from the certificate management console (certmgr.msc) or from within custom certificate enrollment applications. The latter method can create a request and submit it to a server that has access to the Certification Authority. This requires specific organizational configurations and deployments for certificate enrollment policies and certificate enrollment services. Windows has built-in tools, specifically Certreq.exe and Certutil.exe, which can be used by scripts to perform the enrollment from the command line.
+Depending on the security requirements that are unique to an organization, users can initially enroll for certificates from the certificate management console (certmgr.msc) or from within custom certificate enrollment applications. The latter method can create a request and submit it to a server that has access to the Certification Authority. This requires specific organizational configurations and deployments for certificate enrollment policies and certificate enrollment services. Windows has built-in tools, specifically Certreq.exe and Certutil.exe, which can be used by scripts to perform the enrollment from the command line.
 
 #### Requesting the certificate by providing domain credentials only
 
@@ -211,19 +203,15 @@ The user can import the certificate into the **MY** store (which is the user's c
 
 For deployments that require users to use a physical smart card to sign the certificate request, you can use the procedure:
 
-1.  Users initiate a request on a domain-joined computer.
-
-2.  Users complete the request by using a physical smart card to sign the request.
-
-3.  Users download the request to the virtual smart card on their client computer.
+1. Users initiate a request on a domain-joined computer
+1. Users complete the request by using a physical smart card to sign the request
+1. Users download the request to the virtual smart card on their client computer
 
 #### Using one-time password for enrollment
 
 Another option to ensure that users are strongly authenticated before virtual smart card certificates are issued, is to send a user a one-time password through SMS, email, or phone. The user then types the one-time password during the certificate enrollment from an application or a script on a desktop that invokes built-in command-line tools.
 
-#### Certificate lifecycle management
-
-Certificate renewal can be done from the same tools that are used for the initial certificate enrollment. Certificate enrollment policies and certificate enrollment services can also be used to perform automatic renewal.
+**Certificate lifecycle management**: certificate renewal can be done from the same tools that are used for the initial certificate enrollment. Certificate enrollment policies and certificate enrollment services can also be used to perform automatic renewal.
 
 Certificate revocation requires careful planning. When information about the certificate to be revoked is reliably available, the specific certificate can be easily revoked. When information about the certificate to be revoked isn't easy to determine, all certificates issued to the user under the policy that was used to issue the certificate might need to be revoked. For example, if an employee reports a lost or compromised device, and information that associates the device with a certificate isn't available.
 
@@ -235,11 +223,11 @@ Maintenance is a significant portion of the virtual smart card lifecycle and one
 
 When renewing with a previously used key, no extra steps are required because a strong certificate with this key was issued during the initial provisioning. However, when the user requests a new key pair, you must take the same steps that were used during provisioning to assure the strength of the credentials. Renewal with new keys should occur periodically to counter sophisticated long-term attempts by malicious users to infiltrate the system. When new keys are assigned, you must ensure that the new keys are being used by the expected individuals on the same virtual smart cards.
 
-**Resetting PINs**: Resetting virtual smart card PINs is also a frequent necessity, because employees forget their PINs. There are two ways to accomplish this, depending on choices made earlier in the deployment: Use a PUK (if the PUK is set), or use a challenge-response approach with the administration key. Before resetting the PIN, the user's identity must be verified by using some means other than the card—most likely the verification method that you used during initial provisioning (for example, in-person proofing). This is necessary in user-error scenarios when users forget their PINs. However, you should never reset a PIN if it has been compromised because the level of vulnerability after the PIN is exposed is difficult to identify. The entire card should be reissued.
+**Reset PINs**: Resetting virtual smart card PINs is also a frequent necessity, because employees forget their PINs. There are two ways to accomplish this, depending on choices made earlier in the deployment: Use a PUK (if the PUK is set), or use a challenge-response approach with the administration key. Before resetting the PIN, the user's identity must be verified by using some means other than the card—most likely the verification method that you used during initial provisioning (for example, in-person proofing). This is necessary in user-error scenarios when users forget their PINs. However, you should never reset a PIN if it has been compromised because the level of vulnerability after the PIN is exposed is difficult to identify. The entire card should be reissued.
 
 **Lockout reset**: A frequent precursor to resetting a PIN is the necessity of resetting the TPM lockout time because the TPM anti-hammering logic will be engaged with multiple PIN entry failures for a virtual smart card. This is currently device specific.
 
-**Retiring cards**: The final aspect of virtual smart card management is retiring cards when they're no longer needed. When an employee leaves the company, it's desirable to revoke domain access. Revoking sign-in credentials from the certification authority (CA) accomplishes this goal.
+**Retire cards**: The final aspect of virtual smart card management is retiring cards when they're no longer needed. When an employee leaves the company, it's desirable to revoke domain access. Revoking sign-in credentials from the certification authority (CA) accomplishes this goal.
 
 The card should be reissued if the same computer is used by other employees without reinstalling the operating system. Reusing the former card can allow the former employee to change the PIN after leaving the organization, and then hijack certificates that belong to the new user to obtain unauthorized domain access. However, if the employee takes the virtual smart card-enabled computer, it's only necessary to revoke the certificates that are stored on the virtual smart card.
 

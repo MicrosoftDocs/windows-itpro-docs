@@ -1,28 +1,27 @@
 items:
-- name: Smart Card Technical Reference
+- name: Smart card technical reference
   href: smart-card-windows-smart-card-technical-reference.md
+- name: How smart card sign-in works 
+  href: smart-card-how-smart-card-sign-in-works-in-windows.md
   items:
-    - name: How Smart Card Sign-in Works in Windows
-      href: smart-card-how-smart-card-sign-in-works-in-windows.md
-      items:
-        - name: Smart Card Architecture
-          href: smart-card-architecture.md
-        - name: Certificate Requirements and Enumeration
-          href: smart-card-certificate-requirements-and-enumeration.md
-        - name: Smart Card and Remote Desktop Services
-          href: smart-card-and-remote-desktop-services.md
-        - name: Smart Cards for Windows Service
-          href: smart-card-smart-cards-for-windows-service.md
-        - name: Certificate Propagation Service
-          href: smart-card-certificate-propagation-service.md
-        - name: Smart Card Removal Policy Service
-          href: smart-card-removal-policy-service.md
-    - name: Smart Card Tools and Settings
-      href: smart-card-tools-and-settings.md
-      items:
-        - name: Smart Cards Debugging Information
-          href: smart-card-debugging-information.md
-        - name: Smart Card Group Policy and Registry Settings
-          href: smart-card-group-policy-and-registry-settings.md
-        - name: Smart Card Events
-          href: smart-card-events.md
+    - name: Smart card architecture
+      href: smart-card-architecture.md
+    - name: Certificate requirements and enumeration
+      href: smart-card-certificate-requirements-and-enumeration.md
+    - name: Smart card and Remote Desktop Services
+      href: smart-card-and-remote-desktop-services.md
+    - name: Smart cards for Windows Service
+      href: smart-card-smart-cards-for-windows-service.md
+    - name: Certificate Propagation Service
+      href: smart-card-certificate-propagation-service.md
+    - name: Smart card Removal Policy Service
+      href: smart-card-removal-policy-service.md
+- name: Smart Card tools and settings
+  href: smart-card-tools-and-settings.md
+  items:
+    - name: Smart cards debugging information
+      href: smart-card-debugging-information.md
+    - name: Smart card group policy and registry settings
+      href: smart-card-group-policy-and-registry-settings.md
+    - name: Smart card events
+      href: smart-card-events.md

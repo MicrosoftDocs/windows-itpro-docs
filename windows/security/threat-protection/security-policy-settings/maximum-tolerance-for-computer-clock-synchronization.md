@@ -1,8 +1,8 @@
 ---
-title: Maximum tolerance for computer clock synchronization 
+title: Maximum tolerance for computer clock synchronization
 description: Best practices, location, values, policy management, and security considerations for the policy setting, Maximum tolerance for computer clock synchronization.
 ms.assetid: ba2cf59e-d69d-469e-95e3-8e6a0ba643af
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -28,7 +28,7 @@ Describes the best practices, location, values, policy management, and security 
 
 This security setting determines the maximum time difference (in minutes) that Kerberos V5 tolerates between the time on the client clock and the time on the domain controller that provides Kerberos authentication.
 
-To prevent "replay attacks," the Kerberos v5 protocol uses time stamps as part of its protocol definition. For time stamps to work properly, the clocks of the client and the domain controller need to be in sync as much as possible. In other words, both devices must be set to the same time and date. 
+To prevent "replay attacks," the Kerberos v5 protocol uses time stamps as part of its protocol definition. For time stamps to work properly, the clocks of the client and the domain controller need to be in sync as much as possible. In other words, both devices must be set to the same time and date.
 Because the clocks of two computers are often out of sync, you can use this policy setting to establish the maximum acceptable difference to the Kerberos protocol between a client clock and domain controller clock. If the difference between a client computer clock and the domain controller clock is less than the maximum time difference that is specified in this policy, any timestamp that's used in a session between the two devices is considered to be authentic.
 
 The possible values for this Group Policy setting are:
@@ -50,13 +50,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| 5 minutes| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Not applicable| 
-| Domain Controller Effective Default Settings| 5 minutes| 
-| Member Server Effective Default Settings | Not applicable| 
-| Client Computer Effective Default Settings | Not applicable| 
- 
+| Default Domain Policy| 5 minutes|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Not applicable|
+| Domain Controller Effective Default Settings| 5 minutes|
+| Member Server Effective Default Settings | Not applicable|
+| Client Computer Effective Default Settings | Not applicable|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

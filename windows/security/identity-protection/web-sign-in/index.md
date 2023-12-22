@@ -1,12 +1,11 @@
 ---
 title: Web sign-in for Windows
 description: Learn how Web sign-in in Windows works, key scenarios, and how to configure it.
-ms.date: 09/27/2023
+ms.date: 12/11/2023
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ms.collection:
-  - highpri
   - tier1
 ---
 
@@ -25,14 +24,20 @@ This article describes how to configure Web sign-in and the supported key scenar
 To use web sign-in, the clients must meet the following prerequisites:
 
 - Windows 11, version 22H2 with [5030310][KB-1], or later
-- Must be Microsoft Entra joined
+- Must be [Microsoft Entra joined](/entra/identity/devices/concept-directory-join)
 - Must have Internet connectivity, as the authentication is done over the Internet
+
+> [!IMPORTANT]
+> Web sign-in is not supported for Microsoft Entra hybrid joined or domain joined devices.
 
 [!INCLUDE [federated-sign-in](../../../../includes/licensing/web-sign-in.md)]
 
 ## Configure web sign-in
 
 To use web sign-in, your devices must be configured with different policies. Review the following instructions to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
+
+> [!NOTE]
+> Web sign-in uses a system-managed local account called *WsiAccount*. The account is created automatically when you enable Web sign-in, and it's not displayed in the user selection list. Every time a user uses the Web sign-in credential provider, the *WsiAccount* account is enabled. After the user signs in, the account is disabled.
 
 #### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune**](#tab/intune)
 
@@ -72,17 +77,18 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 Once the devices are configured, a new sign-in experience becomes available, as indicated by the presence of the Web sign-in credential provider :::image type="icon" source="images/web-sign-in-credential-provider.svg" border="false"::: in the Windows lock screen.
 
-:::image type="content" source="images/lock-screen.png" border="false" lightbox="images/lock-screen.png" alt-text="Screenshot of the Windows lock screen showing the Web sign-in credential provider.":::
+:::image type="content" source="images/lock-screen.png" border="false" alt-text="Screenshot of the Windows lock screen showing the Web sign-in credential provider.":::
 
 Here's a list of key scenarios supported by Web sign-in, and a brief animation showing the user experience. Select the thumbnail to start the animation.
 
 ### Passwordless sign-in
+
 :::row:::
-  :::column span="3":::
+  :::column span="2":::
   Users can sign in to Windows passwordless, even before enrolling in Windows Hello for Business. For example, by using the Microsoft Authenticator app as a sign-in method.
   :::column-end:::
-  :::column span="1":::
-  :::image type="content" source="images/web-sign-in-authenticator.png" border="false" lightbox="images/web-sign-in-authenticator.gif" alt-text="Animation of the Web sign-in experience with Microsoft Authenticator.":::
+  :::column span="2":::
+  > [!VIDEO https://learn-video.azurefd.net/vod/player?id=974e445a-b78a-4555-86db-919473907535]
   :::column-end:::
 :::row-end:::
 
@@ -97,11 +103,11 @@ To learn more:
 ### Windows Hello for Business PIN reset
 
 :::row:::
-  :::column span="3":::
+  :::column span="2":::
   The Windows Hello PIN reset flow is seamless and more robust than in previous versions.
   :::column-end:::
-  :::column span="1":::
-  :::image type="content" source="images/web-sign-in-pin-reset.png" border="false" lightbox="images/web-sign-in-pin-reset.gif" alt-text="Animation of the PIN reset in experience.":::
+  :::column span="2":::
+  > [!VIDEO https://learn-video.azurefd.net/vod/player?id=310f7665-6276-4ad8-b76e-429073c10972]
   :::column-end:::
 :::row-end:::
 
@@ -110,36 +116,37 @@ For more information, see [PIN reset](../hello-for-business/hello-feature-pin-re
 ### Temporary Access Pass (TAP)
 
 :::row:::
-  :::column span="3":::
+  :::column span="2":::
   A Temporary Access Pass (TAP) is a time-limited passcode granted by an administrator to a user. Users can sign in with a TAP using the Web sign-in credential provider. For example:
 
   - to onboard Windows Hello for Business or a FIDO2 security key
   - if lost or forgotten FIDO2 security key and unknown password
 
   :::column-end:::
-  :::column span="1":::
-  :::image type="content" source="images/web-sign-in-tap.png" border="false" lightbox="images/web-sign-in-tap.gif" alt-text="Animation of the TAP sign in experience.":::
+  :::column span="2":::
+  > [!VIDEO https://learn-video.azurefd.net/vod/player?id=8d80bef4-96a8-4467-8e67-e0637bdabcd8]
   :::column-end:::
 :::row-end:::
 
 For more information, see [Use a Temporary Access Pass][AAD-3].
 
-### Sign in with a federated identity
+### Federated authentication
 
 :::row:::
-  :::column span="3":::
+  :::column span="2":::
   If the Microsoft Entra tenant is federated with a third-party SAML-P identity provider (IdP), federated users can sign using the Web sign-in credential provider.
   :::column-end:::
-  :::column span="1":::
-  :::image type="content" source="images/web-sign-in-federated-auth.png" border="false" lightbox="images/web-sign-in-federated-auth.gif" alt-text="Animation of the sign in experience with a federated user.":::
+  :::column span="2":::
+  > [!VIDEO https://learn-video.azurefd.net/vod/player?id=88ad0efb-9031-428c-a3cf-612c47810ecf]
   :::column-end:::
 :::row-end:::
 
 > [!TIP]
 > To improve the user experience for federated identities:
 >
-> - Configure the *preferred Microsoft Entra tenant name* feature, which allows users to select the domain name during the sign-in process. The users are then automatically redirected to the identity provider sign-in page.
 > - Enable Windows Hello for Business. Once the user signs in, the user can enroll in Windows Hello for Business and then use it to sign in to the device
+> - Configure the *preferred Microsoft Entra tenant name* feature, which allows users to select the domain name during the sign-in process. The users are then automatically redirected to the identity provider sign-in page
+>    :::image type="content" source="images/web-sign-in-preferred-tenant.png" alt-text="Screenshot of the Windows lock screen with preferred tenant configured.":::
 
 For more information about preferred tenant name, see [Authentication CSP - PreferredAadTenantDomainName][WIN-1].
 
@@ -154,7 +161,7 @@ Here's a list of important considerations to keep in mind when configuring or us
 
 ### Known issues
 
-- If you attempt to sign in while the device is offline, you get the following message: *It doesn't look that you're connected to the Internet. Check your connection and try again*. Selecting the *Back to sign-in* option doesn't bring you back to the lock screen. As a workaround, you can press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the lock screen.
+- If you attempt to sign in while the device is offline, you get the following message: *It doesn't look like you're connected to the Internet. Check your connection and try again*. Selecting the *Back to sign-in* option doesn't bring you back to the lock screen. As a workaround, you can press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the lock screen.
 
 ### :::image type="icon" source="../../images/icons/feedback.svg" border="false"::: Provide feedback
 

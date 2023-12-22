@@ -24,7 +24,7 @@ items:
       href: enterprise-certificate-pinning.md
   - name: Web sign-in
     href: web-sign-in/index.md
-  - name: Federated sign-in 🔗
+  - name: Federated sign-in (EDU) 🔗
     href: /education/windows/federated-sign-in
   - name: Advanced credential protection
     items:

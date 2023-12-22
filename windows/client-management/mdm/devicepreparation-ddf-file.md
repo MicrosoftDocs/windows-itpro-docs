@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/03/2023
+ms.date: 12/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -31,7 +31,7 @@ The following XML file contains the device description framework (DDF) for the D
       <AccessType>
         <Get />
       </AccessType>
-      <Description>Parent node for the CSP.</Description>
+      <Description>Parent node for configuring the Device Preparation page in OOBE settings and configuring </Description>
       <DFFormat>
         <node />
       </DFFormat>
@@ -42,12 +42,12 @@ The following XML file contains the device description framework (DDF) for the D
         <Permanent />
       </Scope>
       <DFType>
-        <DDFName />
+        <MIME />
       </DFType>
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -58,7 +58,7 @@ The following XML file contains the device description framework (DDF) for the D
           <Replace />
         </AccessType>
         <DefaultValue>false</DefaultValue>
-        <Description>This node determines whether to enable or show the Device Preparation page.</Description>
+        <Description>This node determines whether to show the Device Preparation page during OOBE.</Description>
         <DFFormat>
           <bool />
         </DFFormat>
@@ -71,16 +71,6 @@ The following XML file contains the device description framework (DDF) for the D
         <DFType>
           <MIME />
         </DFType>
-        <MSFT:AllowedValues ValueType="ENUM">
-          <MSFT:Enum>
-            <MSFT:Value>false</MSFT:Value>
-            <MSFT:ValueDescription>The page is not enabled</MSFT:ValueDescription>
-          </MSFT:Enum>
-          <MSFT:Enum>
-            <MSFT:Value>true</MSFT:Value>
-            <MSFT:ValueDescription>The page is enabled</MSFT:ValueDescription>
-          </MSFT:Enum>
-        </MSFT:AllowedValues>
       </DFProperties>
     </Node>
     <Node>
@@ -90,7 +80,7 @@ The following XML file contains the device description framework (DDF) for the D
           <Get />
           <Replace />
         </AccessType>
-        <Description>This node provides status of the Device Preparation page.  Values are an enum: 0 = Disabled; 1 = Enabled;  2 = InProgress; 3 = ExitedOnSuccess; 4 = ExitedOnFailure.</Description>
+        <Description>This node provides status of the Device Preparation page.  </Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -118,11 +108,11 @@ The following XML file contains the device description framework (DDF) for the D
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>3</MSFT:Value>
-            <MSFT:ValueDescription>Succeeded</MSFT:ValueDescription>
+            <MSFT:ValueDescription>ExitOnSuccess</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>4</MSFT:Value>
-            <MSFT:ValueDescription>Failed</MSFT:ValueDescription>
+            <MSFT:ValueDescription>ExitOnFailure</MSFT:ValueDescription>
           </MSFT:Enum>
         </MSFT:AllowedValues>
       </DFProperties>
@@ -134,7 +124,7 @@ The following XML file contains the device description framework (DDF) for the D
           <Get />
           <Replace />
         </AccessType>
-        <Description>This node configures specific settings for the Device Preparation page.</Description>
+        <Description>This node configures the Device Preparation page settings.</Description>
         <DFFormat>
           <chr />
         </DFFormat>
@@ -147,7 +137,8 @@ The following XML file contains the device description framework (DDF) for the D
         <DFType>
           <MIME />
         </DFType>
-        <MSFT:AllowedValues ValueType="None">
+        <MSFT:AllowedValues ValueType="JSON">
+          <MSFT:Value>{"AgentDownloadTimeoutSeconds": 900, "PageTimeoutSeconds": 3600, "ErrorMessage": "This is an error message.", "AllowSkipOnFailure": true, "AllowDiagnostics": true }</MSFT:Value>
         </MSFT:AllowedValues>
       </DFProperties>
     </Node>
@@ -157,7 +148,7 @@ The following XML file contains the device description framework (DDF) for the D
         <AccessType>
           <Get />
         </AccessType>
-        <Description>The subnodes configure settings for the Bootstrapper Agent.</Description>
+        <Description>Parent node for configuring agent that orchestrage provioning and communicate status to Device Preparation page.</Description>
         <DFFormat>
           <node />
         </DFFormat>
@@ -171,30 +162,6 @@ The following XML file contains the device description framework (DDF) for the D
           <DDFName />
         </DFType>
       </DFProperties>
-      <Node>
-        <NodeName>ClassID</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Get />
-            <Replace />
-          </AccessType>
-          <Description>This node stores the class ID for the Bootstrapper Agent WinRT object.</Description>
-          <DFFormat>
-            <chr />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Permanent />
-          </Scope>
-          <DFType>
-            <MIME />
-          </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
-        </DFProperties>
-      </Node>
       <Node>
         <NodeName>ExecutionContext</NodeName>
         <DFProperties>
@@ -215,32 +182,6 @@ The following XML file contains the device description framework (DDF) for the D
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
-        </DFProperties>
-      </Node>
-      <Node>
-        <NodeName>InstallationStatusUri</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Get />
-            <Replace />
-          </AccessType>
-          <Description>This node holds a URI that can be queried for the status of the Bootstrapper Agent installation.</Description>
-          <DFFormat>
-            <chr />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Permanent />
-          </Scope>
-          <DFType>
-            <MIME />
-          </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
         </DFProperties>
       </Node>
     </Node>
@@ -250,7 +191,7 @@ The following XML file contains the device description framework (DDF) for the D
         <AccessType>
           <Get />
         </AccessType>
-        <Description>The subnode configures the settings for the MDMProvider.</Description>
+        <Description>Parent node for configuring the MDM provider that interacts with the BootstrapperAgent. </Description>
         <DFFormat>
           <node />
         </DFFormat>
@@ -268,10 +209,12 @@ The following XML file contains the device description framework (DDF) for the D
         <NodeName>Progress</NodeName>
         <DFProperties>
           <AccessType>
+            <Add />
+            <Delete />
             <Get />
             <Replace />
           </AccessType>
-          <Description>Noode for reporting progress status as opaque data.</Description>
+          <Description>Node for reporting progress status as opaque data. Contract for data is between the server and EMM agent that reads the data. </Description>
           <DFFormat>
             <chr />
           </DFFormat>
@@ -286,29 +229,51 @@ The following XML file contains the device description framework (DDF) for the D
           </DFType>
         </DFProperties>
       </Node>
-    </Node>
-    <Node>
-      <NodeName>MdmAgentInstalled</NodeName>
-      <DFProperties>
-        <AccessType>
-          <Get />
-          <Replace />
-        </AccessType>
-        <DefaultValue>false</DefaultValue>
-        <Description>This node indicates whether the MDM agent was installed or not. When set to true sets the AUTOPILOT_MDM_AGENT_REGISTERED WNF event.</Description>
-        <DFFormat>
-          <bool />
-        </DFFormat>
-        <Occurrence>
-          <One />
-        </Occurrence>
-        <Scope>
-          <Permanent />
-        </Scope>
-        <DFType>
-          <MIME />
-        </DFType>
-      </DFProperties>
+      <Node>
+        <NodeName>MdmAgentInstalled</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>False</DefaultValue>
+          <Description>This node indicates whether the mdm agent was installed or not. When set to true sets the AUTOPILOT_MDM_AGENT_REGISTERED WNF event.</Description>
+          <DFFormat>
+            <bool />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>RebootRequired</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DefaultValue>False</DefaultValue>
+          <Description>This node indicates whether an MDM policy was provisioned that requires a reboot.</Description>
+          <DFFormat>
+            <bool />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+        </DFProperties>
+      </Node>
     </Node>
   </Node>
 </MgmtTree>

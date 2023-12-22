@@ -36,7 +36,7 @@ Designed for organizations, Microsoft Store for Business and Microsoft Store for
 ## Features
 Organizations or schools of any size can benefit from using Microsoft Store for Business or Microsoft Store for Education:
 
-- **Scales to fit the size of your business** - For smaller businesses, with Azure AD accounts or Office 365 accounts and Windows 10 devices, you can quickly have an end-to-end process for acquiring and distributing content using the Store for Business. For larger businesses, all the capabilities of the Store for Business are available to you, or you can integrate Microsoft Store for Business with management tools, for greater control over access to apps and app updates. You can use existing work or school accounts.
+- **Scales to fit the size of your business** - For smaller businesses, with Microsoft Entra accounts or Office 365 accounts and Windows 10 devices, you can quickly have an end-to-end process for acquiring and distributing content using the Store for Business. For larger businesses, all the capabilities of the Store for Business are available to you, or you can integrate Microsoft Store for Business with management tools, for greater control over access to apps and app updates. You can use existing work or school accounts.
 - **Bulk app acquisition** - Acquire apps in volume from Microsoft Store for Business.
 - **Centralized management** – Microsoft Store provides centralized management for inventory, billing, permissions, and order history. You can use Microsoft Store to view, manage and distribute items purchased from:
     - **Microsoft Store for Business** – Apps acquired from Microsoft Store for Business
@@ -63,21 +63,21 @@ You'll need this software to work with Store for Business and Education.
 - Admins working with Store for Business and Education need a browser compatible with Microsoft Store running on a PC or mobile device. Supported browsers include: Internet Explorer 10 or later, or current versions of Microsoft Edge, Chrome or Firefox. JavaScript must be supported and enabled.
 - Employees using apps from Store for Business and Education need at least Windows 10, version 1511 running on a PC or mobile device.
 
-Microsoft Azure Active Directory (AD) accounts for your employees:
+Microsoft Entra accounts for your employees:
 
-- Admins need Azure AD accounts to sign up for Store for Business and Education, and then to sign in, get apps, distribute apps, and manage app licenses. You can sign up for Azure AD accounts as part of signing up for Store for Business and Education.
-- Employees need Azure AD account when they access Store for Business content from Windows devices.
-- If you use a management tool to distribute and manage online-licensed apps, all employees will need an Azure AD account
-- For offline-licensed apps, Azure AD accounts are not required for employees.
+- Admins need Microsoft Entra accounts to sign up for Store for Business and Education, and then to sign in, get apps, distribute apps, and manage app licenses. You can sign up for Microsoft Entra accounts as part of signing up for Store for Business and Education.
+- Employees need Microsoft Entra account when they access Store for Business content from Windows devices.
+- If you use a management tool to distribute and manage online-licensed apps, all employees will need a Microsoft Entra account
+- For offline-licensed apps, Microsoft Entra accounts are not required for employees.
 - Admins can add or remove user accounts in the Microsoft 365 admin center, even if you don't have an Office 365 subscription. You can access the Office 365 admin portal directly from the Store for Business and Education. 
 
-For more information on Azure AD, see [About Office 365 and Azure Active Directory](/previous-versions//dn509517(v=technet.10)), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
+For more information on Microsoft Entra ID, see [About Office 365 and Microsoft Entra ID](/previous-versions//dn509517(v=technet.10)), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
 
 ### Optional
 
 While not required, you can use a management tool to distribute and manage apps. Using a management tool allows you to distribute content, scope app availability, and control when app updates are installed. This might make sense for larger organizations that already use a management tool. A couple of things to note about management tools:
 
-- Need to integrate with Windows 10 management framework and Azure AD.
+- Need to integrate with Windows 10 management framework and Microsoft Entra ID.
 - Need to sync with the Store for Business inventory to distribute apps.
 
 ## How does the Store for Business and Education work?
@@ -88,7 +88,7 @@ The first step for getting your organization started with Store for Business and
 
 ## Set up
 
-After your admin signs up for the Store for Business and Education, they can assign roles to other employees in your company or school. The admin needs Azure AD User Admin permissions to assign Microsoft Store for Business and Education roles. These are the roles and their permissions.
+After your admin signs up for the Store for Business and Education, they can assign roles to other employees in your company or school. The admin needs Microsoft Entra user Admin permissions to assign Microsoft Store for Business and Education roles. These are the roles and their permissions.
 
 | Permission | Account settings | Acquire apps | Distribute apps | Device Guard signing |
 | ---------- | ---------------- | ------------ | --------------- | -------------------- |
@@ -100,7 +100,7 @@ After your admin signs up for the Store for Business and Education, they can ass
 > [!NOTE]
 > Currently, the Basic purchaser role is only available for schools using Microsoft Store for Education. For more information, see [Microsoft Store for Education permissions](/education/windows/education-scenarios-store-for-business?toc=%2fmicrosoft-store%2feducation%2ftoc.json#manage-domain-settings).
 
-In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](manage-users-and-groups-microsoft-store-for-business.md).
+In some cases, admins will need to add Microsoft Entra accounts for their employees. For more information, see [Manage user accounts and groups](manage-users-and-groups-microsoft-store-for-business.md).
 
 Also, if your organization plans to use a management tool, you'll need to configure your management tool to sync with Store for Business and Education.
 
@@ -130,7 +130,7 @@ App distribution is handled through two channels, either through the Microsoft S
 **Distribute with Store for Business and Education**:
 - Email link – After purchasing an app, Admins can send employees a link in an email message. Employees can click the link to install the app.
 - Curate private store for all employees – A private store can include content you've purchased from Microsoft Store for Business, and your line-of-business apps that you've submitted to Microsoft Store for Business. Apps in your private store are available to all of your employees. They can browse the private store and install apps when needed.
-- To use the options above users must be signed in with an Azure AD account on a Windows 10 device. Licenses are assigned as individuals install apps. 
+- To use the options above users must be signed in with a Microsoft Entra account on a Windows 10 device. Licenses are assigned as individuals install apps. 
 
 **Using a management tool** – For larger organizations that want a greater level of control over how apps are distributed and managed, a management tools provides other distribution options:
 - Scoped content distribution – Ability to scope content distribution to specific groups of employees.
@@ -334,7 +334,7 @@ Customers in these markets can use Microsoft Store for Business and Education to
 - Aremenia
 - Azerbaijan
 - Belarus
-- Bosnia
+- Bosnia and Herzegovina
 - Brazil
 - Georgia
 - India
@@ -366,7 +366,7 @@ This table summarize what customers can purchase, depending on which Microsoft S
 
 ## Privacy notice
 
-Store for Business and Education services get names and email addresses of people in your organization from Azure Active Directory. This information is needed for these admin functions:
+Store for Business and Education services get names and email addresses of people in your organization from Microsoft Entra ID. This information is needed for these admin functions:
 - Granting and managing permissions
 - Managing app licenses 
 - Distributing apps to people (names appear in a list that admins can select from)

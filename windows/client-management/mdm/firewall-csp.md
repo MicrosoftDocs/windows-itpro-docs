@@ -4,7 +4,7 @@ description: Learn more about the Firewall CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/03/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2151,7 +2151,7 @@ When setting this field in a firewall rule, the protocol field must also be set,
 <!-- Description-Source-DDF -->
 Specifies the list of authorized local users for the app container.
 
-This is a string in Security Descriptor Definition Language (SDDL) format\.
+This is a string in Security Descriptor Definition Language (SDDL) format.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-Description-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-Editable-Begin -->

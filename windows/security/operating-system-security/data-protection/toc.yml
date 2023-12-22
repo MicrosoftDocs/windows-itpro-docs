@@ -1,7 +1,7 @@
 items:
 - name: BitLocker
   href: bitlocker/toc.yml
-- name: Encrypted Hard Drive
+- name: Encrypted hard drives
   href: encrypted-hard-drive.md
 - name: Personal data encryption (PDE)
   href: personal-data-encryption/toc.yml

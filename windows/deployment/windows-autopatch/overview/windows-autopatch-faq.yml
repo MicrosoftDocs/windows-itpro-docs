@@ -4,7 +4,7 @@ metadata:
   description: Answers to frequently asked questions about Windows Autopatch.
   ms.prod: windows-client
   ms.topic: faq
-  ms.date: 07/19/2023
+  ms.date: 12/04/2023
   audience: itpro
   ms.localizationpriority: medium
   manager: dougeby
@@ -28,10 +28,10 @@ sections:
           Windows Autopatch supports Windows 365 for Enterprise. Windows 365 for Business isn't supported.
       - question: Does Windows Autopatch support Windows Education (A3/A5) or Windows Front Line Worker (F3) licensing?
         answer: |
-          Autopatch isn't available for 'A' or 'F' series licensing.
+          Autopatch isn't available for 'A'. Windows Autopatch supports some 'F' series licensing. For more information, see [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses). 
       - question: Will Windows Autopatch support local domain join Windows 10?
         answer: | 
-          Windows Autopatch doesn't support local (on-premises) domain join. Windows Autopatch supports [Hybrid AD join](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or pure [Azure AD join](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+          Windows Autopatch doesn't support local (on-premises) domain join. Windows Autopatch supports [Hybrid AD join](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or pure [Microsoft Entra join](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
       - question: Will Windows Autopatch be available for state and local government customers?
         answer: |
           Windows Autopatch is available for all Windows E3 customers using Azure commercial cloud. However, Autopatch isn't currently supported for government cloud (GCC) customers. Although Windows 365 Enterprise is in the Azure Commercial cloud, when Windows 365 Enterprise is used with a GCC customer tenant, Autopatch is not supported.
@@ -54,8 +54,8 @@ sections:
           - [Switch workloads for device configuration, Windows Update and Microsoft 365 Apps from Configuration Manager to Intune](/mem/configmgr/comanage/how-to-switch-workloads) (minimum Pilot Intune. Pilot collection must contain the devices you want to register into Autopatch.)
       - question: What are the licensing requirements for Windows Autopatch?
         answer: |
-          - Windows Autopatch is included with Window 10/11 Enterprise E3 or higher (user-based only). For more information, see [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses).
-          - [Azure AD Premium](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses) (for Co-management)
+          - Windows Autopatch is included with Window 10/11 Enterprise E3 or higher (user-based only) or F3. For more information, see [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses).
+          - [Azure AD Premium](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses) (for co-management)
           - [Microsoft Intune](/mem/intune/fundamentals/licenses) (includes Configuration Manager 2010 or greater via co-management)
       - question: Are there hardware requirements for Windows Autopatch?
         answer: |
@@ -111,7 +111,7 @@ sections:
           No, you can't customize update scheduling. However, you can specify [active hours](../operate/windows-autopatch-windows-quality-update-end-user-exp.md#servicing-window) to prevent users from updating during business hours.
       - question: Does Autopatch support include and exclude groups, or dynamic groups to define deployment ring membership?
         answer: |
-          Windows Autopatch doesn't support managing update deployment ring membership using your Azure AD groups. For more information, see [Moving devices in between deployment rings](../operate/windows-autopatch-update-management.md#moving-devices-in-between-deployment-rings).
+          Windows Autopatch doesn't support managing update deployment ring membership using your Microsoft Entra groups. For more information, see [Moving devices in between deployment rings](../operate/windows-autopatch-update-management.md#moving-devices-in-between-deployment-rings).
       - question: Does Autopatch have two release cadences per update or are there two release cadences per-ring?
         answer: |
           The release cadences are defined based on the update type. For example, a [regular cadence](../operate/windows-autopatch-windows-quality-update-overview.md#windows-quality-update-releases) (for a Windows quality update would be a gradual rollout from the Test ring to the Broad ring over 14 days whereas an [expedited release](../operate/windows-autopatch-windows-quality-update-overview.md#expedited-releases) would roll out more rapidly.

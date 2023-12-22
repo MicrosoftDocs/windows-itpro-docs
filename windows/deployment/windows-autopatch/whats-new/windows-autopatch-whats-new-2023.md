@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 10/04/2023 
+ms.date: 12/14/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -20,6 +20,41 @@ ms.collection:
 This article lists new and updated feature releases, and service releases, with their corresponding Message center post numbers (if applicable).
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
+
+## December 2023
+
+### December feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Prerequisites](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) | Added F SKU licenses to the [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) section. Also see [FAQ](../overview/windows-autopatch-faq.yml)<ul><li>[MC690609](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+
+## December service release
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC697414](https://admin.microsoft.com/adminportal/home#/MessageCenter) | New Feature: Alerts for Windows Autopatch policy conflicts Public Preview announcement |
+| [MC695483](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned Maintenance: Windows Autopatch configuration update – December 2023 |
+
+## November service release
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC689492](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned Maintenance: Service maintenance to improve Windows Autopatch performance |
+
+## October 2023
+
+### October feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#microsoft-365-apps-for-enterprise-update-controls) | Added more information about the Allow setting in the [Microsoft 365 Apps for enterprise update controls](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#microsoft-365-apps-for-enterprise-update-controls) section |
+
+## October service release
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC680344](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned Maintenance: Service Improvements |
 
 ## September 2023
 

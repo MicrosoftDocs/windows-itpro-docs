@@ -2,7 +2,7 @@
 title: VPN and conditional access
 description: Learn how to integrate the VPN client with the Conditional Access platform, and how to create access rules for Microsoft Entra connected apps.
 ms.date: 08/03/2023
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # VPN and conditional access

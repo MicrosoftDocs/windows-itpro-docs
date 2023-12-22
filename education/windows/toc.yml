@@ -46,7 +46,7 @@ items:
       items:
       - name: Configure federated sign-in
         href: federated-sign-in.md
-      - name: Configure federation between Google Workspace and Azure AD
+      - name: Configure federation between Google Workspace and Microsoft Entra ID
         href: configure-aad-google-trust.md
     - name: Configure Shared PC
       href: /windows/configuration/set-up-shared-or-guest-pc?context=/education/context/context
@@ -56,32 +56,6 @@ items:
       href: use-set-up-school-pcs-app.md
     - name: Upgrade Windows Home to Windows Education on student-owned devices
       href: change-home-to-edu.md
-    - name: Migrate from Chromebook to Windows
-      items: 
-        - name: Chromebook migration guide
-          href: chromebook-migration-guide.md
-    - name: Deploy Windows 10 devices in a school
-      items: 
-      - name: Overview
-        href: deploy-windows-10-overview.md
-      - name: Deploy Windows 10 in a school
-        href: deploy-windows-10-in-a-school.md
-      - name: Deploy Windows 10 in a school district
-        href: deploy-windows-10-in-a-school-district.md
-      - name: Deployment recommendations for school IT administrators
-        href: edu-deployment-recommendations.md
-      - name: Set up Windows devices for education
-        items: 
-          - name: Overview
-            href: set-up-windows-10.md
-          - name: Azure AD join for school PCs
-            href: set-up-school-pcs-azure-ad-join.md
-          - name: Active Directory join for school PCs
-            href: set-up-students-pcs-to-join-domain.md
-          - name: Provision student PCs with apps
-            href: set-up-students-pcs-with-apps.md
-    - name: Reset devices with Autopilot Reset
-      href: autopilot-reset.md
 - name: Reference
   items:
     - name: Set up School PCs
