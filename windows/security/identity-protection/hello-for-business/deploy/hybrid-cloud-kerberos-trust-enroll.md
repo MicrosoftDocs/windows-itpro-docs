@@ -64,7 +64,7 @@ To configure Windows Hello for Business using an account protection policy:
 1. Specify a **Name** and, optionally, a **Description** > **Next**.
 1. Under **Block Windows Hello for Business**, select **Disabled** and multiple policies become available.
     - These policies are optional to configure, but it's recommended to configure **Enable to use a Trusted Platform Module (TPM)** to **Yes**.
-    - For more information about these policies, see [MDM policy settings for Windows Hello for Business](../configure.md#mdm-policy-settings-for-windows-hello-for-business).
+    - For more information about these policies, see [Windows Hello for Business policy settings](../policy-settings).
 1. Under **Enable to certificate for on-premises resources**, select **Not configured**
 1. Select **Next**.
 1. Optionally, add **scope tags** and select **Next**.

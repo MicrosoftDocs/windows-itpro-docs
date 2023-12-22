@@ -22,4 +22,4 @@ If you disable or not configure this setting, then non-ESS sensors are blocked o
 | **CSP** | `./Device/Vendor/MSFT/PassportForWork/Biometrics/`[EnableESSwithSupportedPeripherals](/windows/client-management/mdm/passportforwork-csp#devicebiometricsenableesswithsupportedperipherals) |
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Hello for Business** |
 
-For more information, see [How does Enhanced Sign-in Security protect biometric data](windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security#how-does-enhanced-sign-in-security-protect-biometric-data).
+For more information, see [How does Enhanced Sign-in Security protect biometric data](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security#how-does-enhanced-sign-in-security-protect-biometric-data).

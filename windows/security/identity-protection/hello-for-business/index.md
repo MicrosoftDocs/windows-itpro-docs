@@ -112,10 +112,7 @@ To allow facial recognition, you must have devices with integrated special infra
 
 To use Iris authentication, you'll need a [HoloLens 2 device](/hololens/). All HoloLens 2 editions are equipped with the same sensors. Iris is implemented the same way as other Windows Hello technologies and achieves biometrics security FAR of 1/100K.
 
-
-
-
-# Why a PIN is better than an online password
+## Why a PIN is better than an online password
 
 Windows Hello enables users to sign in to their device using a PIN. How is a PIN different from (and better than) a local password?
 On the surface, a PIN looks much like a password. A PIN can be a set of numbers, but enterprise policy might enforce complex PINs that include special characters and letters, both upper-case and lower-case. Something like **t758A!** could be an account password or a complex Hello PIN. It isn't the structure of a PIN (length, complexity) that makes it better than an online password, it's how it works. First, we need to distinguish between two types of passwords: *local passwords* are validated against the machine's password store, whereas *online passwords* are validated against a server.
