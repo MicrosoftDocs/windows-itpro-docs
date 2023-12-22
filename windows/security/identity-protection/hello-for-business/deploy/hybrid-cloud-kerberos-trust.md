@@ -2,15 +2,14 @@
 title: Windows Hello for Business cloud Kerberos trust deployment
 description: Learn how to deploy Windows Hello for Business in a cloud Kerberos trust scenario.
 ms.date: 02/24/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10, version 21H2 and later</a>
 ms.topic: tutorial
 ---
+
 # Cloud Kerberos trust deployment
 
 [!INCLUDE [apply-to-hybrid-cloud-kerberos-trust](includes/apply-to-hybrid-cloud-kerberos-trust.md)]
 
-Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This deployment guide provides the information to deploy Windows Hello for Business in a *cloud Kerberos trust* scenario.
+This deployment guide provides the information to deploy Windows Hello for Business in a *cloud Kerberos trust* scenario.
 
 ## Introduction to cloud Kerberos trust
 
@@ -24,8 +23,6 @@ Windows Hello for Business cloud Kerberos trust uses *Microsoft Entra Kerberos*,
 
 > [!NOTE]
 > Windows Hello for Business cloud Kerberos trust is the recommended deployment model when compared to the *key trust model*. It is also the preferred deployment model if you do not need to support certificate authentication scenarios.
-
-<a name='azure-ad-kerberos-and-cloud-kerberos-trust-authentication'></a>
 
 ## Microsoft Entra Kerberos and cloud Kerberos trust authentication
 
@@ -45,7 +42,7 @@ When Microsoft Entra Kerberos is enabled in an Active Directory domain, an *Azur
 :::image type="content" source="images/azuread-kerberos-object.png" alt-text="Active Directory Users and Computers console, showing the computer object representing the Microsoft Entra Kerberos server ":::
 
 For more information about how Microsoft Entra Kerberos enables access to on-premises resources, see [enabling passwordless security key sign-in to on-premises resources][AZ-1].\
-For more information about how Microsoft Entra Kerberos works with Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business authentication technical deep dive](../hello-how-it-works-authentication.md#hybrid-azure-ad-join-authentication-using-cloud-kerberos-trust).
+For more information about how Microsoft Entra Kerberos works with Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business authentication technical deep dive](../hello-how-it-works-authentication.md#microsoft-entra-hybrid-join-authentication-using-cloud-kerberos-trust).
 
 > [!IMPORTANT]
 > When implementing the cloud Kerberos trust deployment model, you *must* ensure that you have an adequate number of *read-write domain controllers* in each Active Directory site where users will be authenticating with Windows Hello for Business. For more information, see [Capacity planning for Active Directory][SERV-1].
@@ -66,7 +63,7 @@ The following scenarios aren't supported using Windows Hello for Business cloud 
 
 - On-premises only deployments
 - RDP/VDI scenarios using supplied credentials (RDP/VDI can be used with Remote Credential Guard or if a certificate is enrolled into the Windows Hello for Business container)
-- Using cloud Kerberos trust for "Run as"
+- Using cloud Kerberos trust for *Run as*
 - Signing in with cloud Kerberos trust on a Microsoft Entra hybrid joined device without previously signing in with DC connectivity
 
 > [!NOTE]
@@ -79,9 +76,10 @@ The following scenarios aren't supported using Windows Hello for Business cloud 
 Once the prerequisites are met, deploying Windows Hello for Business with a cloud Kerberos trust model consists of the following steps:
 
 > [!div class="checklist"]
-> * Deploy Microsoft Entra Kerberos
-> * Configure Windows Hello for Business settings
-> * Provision Windows Hello for Business on Windows clients
+>
+> - Deploy Microsoft Entra Kerberos
+> - Configure Windows Hello for Business settings
+> - Provision Windows Hello for Business on Windows clients
 
 > [!div class="nextstepaction"]
 > [Next: configure and provision Windows Hello for Business >](hybrid-cloud-kerberos-trust-enroll.md)

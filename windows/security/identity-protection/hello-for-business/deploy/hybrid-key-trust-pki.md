@@ -1,15 +1,10 @@
 ---
-title: Configure and validate the Public Key Infrastructure in a hybrid key trust model
-description: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in a hybrid key trust model.
-ms.date: 01/03/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
+title: Configure and validate the Public Key Infrastructure in an hybrid key trust model
+description: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in an hybrid key trust model.
+ms.date: 12/18/2023
 ms.topic: tutorial
 ---
+
 # Configure and validate the Public Key Infrastructure - hybrid key trust
 
 [!INCLUDE [apply-to-hybrid-key-trust](includes/apply-to-hybrid-key-trust.md)]
@@ -46,7 +41,7 @@ Sign in using *Enterprise Administrator* equivalent credentials on a Windows Ser
 
 ## Configure the enterprise PKI
 
-[!INCLUDE [dc-certificate-template](includes/dc-certificate-template.md)]
+[!INCLUDE [dc-certificate-template](includes/certificate-template-dc.md)]
 
 > [!NOTE]
 > Inclusion of the *KDC Authentication* OID in domain controller certificate is not required for Microsoft Entra hybrid joined devices. The OID is required for enabling authentication with Windows Hello for Business to on-premises resources by Microsoft Entra joined devices.

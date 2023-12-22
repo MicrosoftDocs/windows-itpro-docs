@@ -38,8 +38,6 @@ The following table compares destructive and nondestructive PIN reset:
 |**Additional configuration required**|Supported by default and doesn't require configuration|Deploy the Microsoft PIN reset service and client policy to enable the PIN recovery feature.|
 |**MSA/Enterprise**|MSA and Enterprise|Enterprise only.|
 
-<a name='enable-the-microsoft-pin-reset-service-in-your-azure-ad-tenant'></a>
-
 ## Enable the Microsoft PIN Reset Service in your Microsoft Entra tenant
 
 Before you can use nondestructive PIN reset, you must register two applications in your Microsoft Entra tenant:
@@ -175,8 +173,6 @@ The _PIN reset_ configuration can be viewed by running [**dsregcmd /status**](/a
 
 +----------------------------------------------------------------------+
 ```
-
-<a name='configure-allowed-urls-for-federated-identity-providers-on-azure-ad-joined-devices'></a>
 
 ## Configure allowed URLs for federated identity providers on Microsoft Entra joined devices
 

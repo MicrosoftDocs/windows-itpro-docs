@@ -2,18 +2,12 @@
 title: Configure Windows Hello for Business Policy settings in an on-premises certificate trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business in an on-premises certificate trust scenario
 ms.date: 12/15/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
 ms.topic: tutorial
 ---
 
 # Configure Windows Hello for Business group policy settings - on-premises certificate Trust
 
-[!INCLUDE [apply-to-on-premises-cert-trust-entra](includes/apply-to-on-premises-cert-trust-entra.md)]
+[!INCLUDE [apply-to-on-premises-cert-trust-entra](includes/apply-to-on-premises-cert-trust.md)]
 
 On-premises certificate-based deployments of Windows Hello for Business need three Group Policy settings:
 
@@ -115,9 +109,9 @@ The settings can be found in *Administrative Templates\System\PIN Complexity*, u
 
 ## Review to validate the configuration
 
-Before you continue with the deployment, validate your deployment progress by reviewing the following items:
-
 > [!div class="checklist"]
+>Before you continue with the deployment, validate your deployment progress by reviewing the following items:
+>
 > - Confirm you configured the Enable Windows Hello for Business to the scope that matches your deployment (Computer vs. User)
 > - Confirm you configure the Use Certificate enrollment for on-premises authentication policy setting
 > - Confirm you configured the proper security settings for the Group Policy object

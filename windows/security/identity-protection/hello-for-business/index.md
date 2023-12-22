@@ -4,19 +4,26 @@ description: Learn how Windows Hello for Business replaces passwords with strong
 ms.topic: overview
 ms.date: 04/24/2023
 ---
+
+<!-- Windows Hello is a feature that lets you sign in to your Windows device with your biometric data, such as your face, fingerprint or iris. It is more secure and convenient than using a password, and it works with compatible devices and cameras. To use Windows Hello, you need to set up a PIN and then enable the facial or fingerprint recognition option in the Settings app. You can also use a PIN as an alternative sign-in method.
+
+It is different from Windows Hello, which is designed for personal devices and individual accounts. Windows Hello for Business provides stronger security and more configuration options for enterprises and organizations. It also requires additional infrastructure and policies to support it. Some of the key differences are:
+
+Windows Hello for Business uses a two-factor authentication method that combines a device-specific credential with a biometric or PIN gesture. This credential is tied to your identity provider, such as Active Directory or Azure AD, and can be used to access enterprise apps, websites, and services. Windows Hello for individuals uses a single-factor authentication method that is unique to the device, but can use a password hash depending on the account type.
+Windows Hello for Business can be managed and enforced by IT administrators using Group Policy or Mobile Device Management (MDM) tools. They can set policies to control the use of biometrics, PINs, and security keys, as well as the enrollment and revocation of credentials. Windows Hello for individuals does not have these management options and is configured by the user.
+Windows Hello for Business supports Fast Identity Online (FIDO) 2.0 authentication standards, which enable passwordless sign-in to compatible websites and services. Windows Hello for individuals does not support FIDO 2.0, but can use FIDO U2F security keys as
+-->
+
 # Windows Hello for Business Overview
 
 Windows Hello for Business replaces passwords with strong two-factor authentication on devices. This authentication consists of a type of user credential that is tied to a device and uses a biometric or PIN.
 
->[!NOTE]
-> When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
-
 Windows Hello addresses the following problems with passwords:
 
-- Strong passwords can be difficult to remember, and users often reuse passwords on multiple sites.
-- Server breaches can expose symmetric network credentials (passwords).
-- Passwords are subject to [replay attacks](/previous-versions/dotnet/netframework-4.0/aa738652(v=vs.100)).
-- Users can inadvertently expose their passwords due to phishing attacks.
+- Strong passwords can be difficult to remember, and users often reuse passwords on multiple sites
+- Server breaches can expose symmetric network credentials (passwords)
+- Passwords are subject to replay attacks
+- Users can inadvertently expose their passwords due to phishing attacks
 
 Windows Hello lets users authenticate to:
 
@@ -37,7 +44,7 @@ As an administrator in an enterprise or educational organization, you can create
 - **Fingerprint recognition**. This type of biometric recognition uses a capacitive fingerprint sensor to scan your fingerprint. Fingerprint readers have been available for Windows computers for years, but the current generation of sensors is more reliable and less error-prone. Most existing fingerprint readers work with Windows 10 and Windows 11, whether they're external or integrated into laptops or USB keyboards.
 - **Iris Recognition**. This type of biometric recognition uses cameras to perform scan of your iris. HoloLens 2 is the first Microsoft device to introduce an Iris scanner. These iris scanners are the same across all HoloLens 2 devices.
 
-Windows stores biometric data that is used to implement Windows Hello securely on the local device only. The biometric data doesn't roam and is never sent to external devices or servers. Because Windows Hello only stores biometric identification data on the device, there's no single collection point an attacker can compromise to steal biometric data. For more information about biometric authentication with Windows Hello for Business, see [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md).
+Windows stores biometric data that is used to implement Windows Hello securely on the local device only. The biometric data doesn't roam and is never sent to external devices or servers. Because Windows Hello only stores biometric identification data on the device, there's no single collection point an attacker can compromise to steal biometric data.
 
 ## The difference between Windows Hello and Windows Hello for Business
 
@@ -64,49 +71,165 @@ Windows Hello helps protect user identities and user credentials. Because the us
 
 [!INCLUDE [windows-hello-for-business](../../../../includes/licensing/windows-hello-for-business.md)]
 
-## How Windows Hello for Business works: key points
+## Hardware requirements
 
-- Windows Hello credentials are based on certificate or asymmetrical key pair. Windows Hello credentials can be bound to the device, and the token that is obtained using the credential is also bound to the device.
+We've been working with the device manufacturers to help ensure a high-level of performance and protection is met by each sensor and device, based on these requirements:
 
-- An identity provider validates the user identity and maps the Windows Hello public key to a user account during the registration step. Example providers are Active Directory, Microsoft Entra ID, or a Microsoft account.
+- **False Accept Rate (FAR).** Represents the instance a biometric identification solution verifies an unauthorized person. This is normally represented as a ratio of number of instances in a given population size, for example 1 in 100 000. This can also be represented as a percentage of occurrence, for example, 0.001%. This measurement is heavily considered the most important with regard to the security of the biometric algorithm.
 
-- Keys can be generated in hardware (TPM 1.2 or 2.0 for enterprises, and TPM 2.0 for consumers) or software, based on the policy. To guarantee that keys are generated in hardware, you must set policy.
+- **False Reject Rate (FRR).** Represents the instances a biometric identification solution fails to verify an authorized person correctly. Usually represented as a percentage, the sum of the True Accept Rate and False Reject Rate is 1. Can be with or without anti-spoofing or liveness detection.
 
-- Authentication is the two-factor authentication with the combination of a key or certificate tied to a device and something that the person knows (a PIN) or something that the person is (biometrics). The Windows Hello gesture doesn't roam between devices and isn't shared with the server. Biometrics templates are stored locally on a device. The PIN is never stored or shared.
+### Fingerprint sensor requirements
 
-- The private key never leaves a device when using TPM. The authenticating server has a public key that is mapped to the user account during the registration process.
+To allow fingerprint matching, you must have devices with fingerprint sensors and software. Fingerprint sensors, or sensors that use an employee's unique fingerprint as an alternative logon option, can be touch sensors (large area or small area) or swipe sensors. Each type of sensor has its own set of detailed requirements that must be implemented by the manufacturer, but all of the sensors must include anti-spoofing measures.
 
-- PIN entry and biometric gesture both trigger Windows 10 and later to use the private key to cryptographically sign data that is sent to the identity provider. The identity provider verifies the user's identity and authenticates the user.
+**Acceptable performance range for small to large size touch sensors**
 
-- Personal (Microsoft account) and corporate (Active Directory or Microsoft Entra ID) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.
+- False Accept Rate (FAR): <0.001 - 0.002%
 
-- Certificate private keys can be protected by the Windows Hello container and the Windows Hello gesture.
+- Effective, real world FRR with Anti-spoofing or liveness detection: <10%
 
-For details, see [How Windows Hello for Business works](hello-how-it-works.md).
+**Acceptable performance range for swipe sensors**
 
-## Comparing key-based and certificate-based authentication
+- False Accept Rate (FAR): <0.002%
 
-Windows Hello for Business can use either keys (hardware or software) or certificates in hardware or software. Enterprises that have a public key infrastructure (PKI) for issuing and managing end user certificates can continue to use PKI in combination with Windows Hello for Business. Enterprises that don't use PKI or want to reduce the effort associated with managing user certificates can rely on key-based credentials for Windows Hello. This functionality still uses certificates on the domain controllers as a root of trust. Starting with Windows 10 version 21H2, there's a feature called cloud Kerberos trust for hybrid deployments, which uses Microsoft Entra ID as the root of trust. cloud Kerberos trust uses key-based credentials for Windows Hello but doesn't require certificates on the domain controller.
+- Effective, real world FRR with Anti-spoofing or liveness detection: <10%
 
-Windows Hello for Business with a key, including cloud Kerberos trust, doesn't support supplied credentials for RDP. RDP doesn't support authentication with a key or a self signed certificate. RDP with Windows Hello for Business is supported with certificate based deployments as a supplied credential. Windows Hello for Business with a key credential can be used with [Remote Credential Guard](../remote-credential-guard.md).
+### Facial recognition sensors
 
-## Learn more
+To allow facial recognition, you must have devices with integrated special infrared (IR) sensors and software. Facial recognition sensors use special cameras that see in IR light, letting them tell the difference between a photo and a living person while scanning an employee's facial features. These sensors, like the fingerprint sensors, must also include anti-spoofing measures (required) and a way to configure them (optional).
 
-[Implementing strong user authentication with Windows Hello for Business](https://www.microsoft.com/insidetrack/implementing-strong-user-authentication-with-windows-hello-for-business)
+- False Accept Rate (FAR): <0.001%
 
-[Implementing Windows Hello for Business at Microsoft](https://www.microsoft.com/insidetrack/implementing-windows-hello-for-business-at-microsoft)
+- False Reject Rate (FRR) without Anti-spoofing or liveness detection: <5%
 
-[Windows Hello for Business: Authentication](https://youtu.be/WPmzoP_vMek): In this video, learn about Windows Hello for Business and how it's used to sign-in and access resources.
+- Effective, real world FRR with Anti-spoofing or liveness detection: <10%
 
-[Windows Hello face authentication](/windows-hardware/design/device-experiences/windows-hello-face-authentication)
+> [!NOTE]
+>Windows Hello face authentication does not currently support wearing a mask during enrollment or authentication. Wearing a mask to enroll is a security concern because other users wearing a similar mask may be able to unlock your device. The product group is aware of this behavior and is investigating this topic further. Please remove a mask if you are wearing one when you enroll or unlock with Windows Hello face authentication. If your working environment doesn't allow you to remove a mask temporarily, please consider unenrolling from face authentication and only using PIN or fingerprint.
 
-## Related articles
+### Iris recognition sensor requirements
 
-- [How Windows Hello for Business works](hello-how-it-works.md)
-- [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
-- [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
-- [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
-- [Windows Hello and password changes](hello-and-password-changes.md)
-- [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
-- [Event ID 300 - Windows Hello successfully created](/windows/security/identity-protection/hello-for-business/hello-faq)
-- [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
+To use Iris authentication, you'll need a [HoloLens 2 device](/hololens/). All HoloLens 2 editions are equipped with the same sensors. Iris is implemented the same way as other Windows Hello technologies and achieves biometrics security FAR of 1/100K.
+
+
+
+
+# Why a PIN is better than an online password
+
+Windows Hello enables users to sign in to their device using a PIN. How is a PIN different from (and better than) a local password?
+On the surface, a PIN looks much like a password. A PIN can be a set of numbers, but enterprise policy might enforce complex PINs that include special characters and letters, both upper-case and lower-case. Something like **t758A!** could be an account password or a complex Hello PIN. It isn't the structure of a PIN (length, complexity) that makes it better than an online password, it's how it works. First, we need to distinguish between two types of passwords: *local passwords* are validated against the machine's password store, whereas *online passwords* are validated against a server.
+
+:::row:::
+    :::column span="1":::
+    **A PIN is tied to a device**
+    :::column-end:::
+    :::column spna="3":::
+    One important difference between an online password and a Hello PIN is that the PIN is tied to the specific device on which it's set up. That PIN is useless to anyone without that specific hardware. Someone who obtains your online password can sign in to your account from anywhere, but if they obtain your PIN, they'd have to access your device too. The PIN can't be used anywhere except on that specific device. If you want to sign in on multiple devices, you have to set up Hello on each device.
+:::row-end:::
+:::row:::
+    :::column span="1":::
+    **A PIN is local to the device**
+    :::column-end:::
+    :::column spna="3":::
+    An online password is transmitted to the server. The password can be intercepted in transmission or obtained from a server. A PIN is local to the device, never transmitted anywhere, and it isn't stored on the server.
+
+    When the PIN is created, it establishes a trusted relationship with the identity provider and creates an asymmetric key pair that is used for authentication. When you enter your PIN, you unlock the authentication key, which is used to sign the request that is sent to the authenticating server.
+
+    Even though local passwords are local to the device, they're less secure than a PIN, as described in the next section.
+:::row-end:::
+:::row:::
+    :::column span="1":::
+    **A PIN is backed by hardware**
+    :::column-end:::
+    :::column spna="3":::
+    The Hello PIN is backed by a Trusted Platform Module (TPM) chip, which is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. Windows doesn't link local passwords to TPM, therefore PINs are considered more secure than local passwords.
+
+    User key material is generated and available within the TPM of the device. The TPM protects the key material from attackers who want to capture and reuse it. Since Hello uses asymmetric key pairs, users credentials can't be stolen in cases where the identity provider or websites the user accesses have been compromised.
+    
+    The TPM protects against various known and potential attacks, including PIN brute-force attacks. After too many incorrect guesses, the device is locked.
+:::row-end:::
+
+## What if someone steals the device?
+
+To compromise a Windows Hello credential that TPM protects, an attacker must have access to the physical device. Then, the attacker must find a way to spoof the user's biometrics or guess the PIN. All these actions must be done before [TPM anti-hammering](/windows/device-security/tpm/tpm-fundamentals#anti-hammering) protection locks the device.
+
+
+## Why do you need a PIN to use biometrics?
+
+Windows Hello enables biometric sign-in for Windows: fingerprint, iris, or facial recognition. When you set up Windows Hello, you're asked to create a PIN after the biometric setup. The PIN enables you to sign in when you can't use your preferred biometric because of an injury or because the sensor is unavailable or not working properly.
+
+If you only had a biometric sign-in configured and, for any reason, were unable to use that method to sign in, you would have to sign in using your account and password, which doesn't provide you with the same level of protection as Hello.
+
+<!--
+
+## Conditional access considerations
+
+Conditional Access can prevent or grant access to services like Exchange Online and SharePoint Online, based on the status of Windows Hello. To learn more about the Intune options to configure and monitor Windows Hello for Business, check the following articles.
+
+Windows Hello can replace passwords with two-factor authentication that consists of a Windows Hello biometric credential or PIN along with the device itself with the set of private/public keys. Windows Hello lets users authenticate to a Microsoft account, an Active Directory account, a Microsoft Entra ID account, or non-Microsoft service that supports Fast ID Online (FIDO) authentication. After an initial two-step verification during Windows Hello enrollment, a Windows Hello credential is set up on the user's device and the user sets a gesture, which can be Windows Hello or a PIN. The user provides the gesture to verify identity; Windows then uses Hello to authenticate users and help them to access protected resources and services.
+
+Benefits
+User convenience: users provide their credentials, and are then guided to set up Windows Hello. From that point on, they can access enterprise resources by providing a gesture
+Security: Windows Hello helps protect user identities and user credentials. Since no passwords are used, it circumvents phishing and brute force attacks, but most importantly it prevents server breaches as Windows Hello credentials are asymmetric key pair and replayability attacks when these keys are generated within isolated environments of TPMs
+
+How Windows Hello for Business Works
+
+Windows Hello credentials are based on certificate or asymmetrical key pair (RSA 2048 bit key pairs).
+The identity provider (Microsoft Entra ID, Active Directory,Microsoft Account) validates the user identity and maps a Windows Hello public key to the user account during the registration step.
+
+Keys can be generated in hardware (TPM 1.2 or 2.0) or software, based on configured policy settings:
+
+- Keys generated in hardware, on select TPMs, can be attested to cryptographicly prove the fact that they are hardware bound
+- If a device doesn't have a supported TPM, you can configure a policy setting to enable software keys
+
+Authentication is the two factor authentication with combination of a device (key or certificate) and something that the user sknows (a PIN), or something that person is (biometric). We refer to PIN and biometrics as *Windows Hello gestures*. Windows Hello gestures don't roam between devices and aren't shared with the server; they are stored locally on the device.
+
+The private key never leaves a device. The authenticating server has a public key mapped to user account during the registration process
+PIN entry and biogesture both trigger Windows to verify the user's identity and authenticate using Windows Hello keys or certificates
+Personal (Microsoft account) and corporate (Microsoft Entra ID/Active Directory) accounts use separate containers for keys, separated by domains, to ensure user privacy
+
+
+The biometric data used to support Windows Hello is stored on the local device only. It doesn't roam and is never sent to external devices or servers. This separation helps to stop potential attackers by providing no single collection point that an attacker could potentially compromise to steal biometric data. Additionally, even if an attacker was able to get the biometric data from a device, it cannot be converted back into a raw biometric sample that could be recognized by the biometric sensor.
+
+Each sensor on a device has its own biometric database file where template data is stored. Each database has a unique, randomly generated key that is encrypted to the system. The template data for the sensor is encrypted with this per-database key using AES with CBC chaining mode. The hash is SHA256. Some fingerprint sensors have the capability to complete matching on the fingerprint sensor module instead of in the OS. These sensors store biometric data on the fingerprint module instead of in the database file.
+
+PIN is better than password:
+Tied to the device
+- Pin is useless to anyone without the specific device
+Local to the device
+- Pin isn't transmitted anywhere, and it isn't stored on the server
+Backed by hardware
+- Protect PIN against brute-force and other potentials known attacks
+Can be complex
+
+
+*The Windows Hello for Business Container (NGC) can be used to protect keys from many sources.
+*Each key is generated and bound to the TPM if the hardware is capable.
+*It may also protect a custom enrolled certificate (e.g. SmartCard emulation)
+*Can also contain generic passkey credentials
+
+
+
+
+Deployment steps:
+Device Registration
+- Device is joined to AD and/or AAD
+Provisioning
+    *Enable WHfB using Group Policy or Intune
+    *When the policy is received, if all the prerequisites are met, the user will be able to configure WHfB
+    *The dsregcmd tool is critical to solve registration and provisioning issues
+- WHFB is enrolled on the client: During enrollment: the user is required to perform MFA
+- Keys are registered with AD and/or AAD
+Authentication
+- WHfB is used to authenticate user against AAD and/or AD
+
+
+
+## User experience
+
+Windows Hello for Business provisioning begins immediately after the user has signed in, after the user profile is loaded, but before the user can access their desktop. Windows only launches the provisioning experience if all the prerequisite checks pass. You can determine the status of the prerequisite checks by viewing the **User Device Registration** in the **Event Viewer** under **Applications and Services Logs\Microsoft\Windows**.
+
+> [!NOTE]
+> You must allow access to the URL `account.microsoft.com` to initiate Windows Hello for Business provisioning. This URL launches the subsequent steps in the provisioning process and is required to successfully complete Windows Hello for Business provisioning. This URL doesn't require any authentication and as such, doesn't collect any user data.
+-->

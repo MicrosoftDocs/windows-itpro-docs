@@ -1,15 +1,10 @@
 ---
 title: Configure and validate the Public Key Infrastructure in an on-premises key trust model
 description: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in a key trust model.
-ms.date: 09/07/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
+ms.date: 12/18/2023
 ms.topic: tutorial
 ---
+
 # Configure and validate the Public Key Infrastructure - on-premises key trust
 
 [!INCLUDE [apply-to-on-premises-key-trust](includes/apply-to-on-premises-key-trust.md)]
@@ -20,11 +15,11 @@ Windows Hello for Business must have a Public Key Infrastructure (PKI) when usin
 
 ## Configure the enterprise PKI
 
-[!INCLUDE [dc-certificate-template](includes/dc-certificate-template.md)]
+[!INCLUDE [dc-certificate-template](includes/certificate-template-dc.md)]
 
 [!INCLUDE [dc-certificate-template-supersede](includes/dc-certificate-supersede.md)]
 
-[!INCLUDE [web-server-certificate-template](includes/web-server-certificate-template.md)]
+[!INCLUDE [web-server-certificate-template](includes/certificate-template-web-server.md)]
 
 [!INCLUDE [unpublish-superseded-templates](includes/unpublish-superseded-templates.md)]
 

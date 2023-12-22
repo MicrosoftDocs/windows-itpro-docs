@@ -2,8 +2,6 @@
 title: Windows Hello for Business cloud Kerberos trust clients configuration and enrollment
 description: Learn how to configure devices and enroll them in Windows Hello for Business in a cloud Kerberos trust scenario.
 ms.date: 02/24/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10, version 21H2 and later</a>
 ms.topic: tutorial
 ---
 # Configure and provision Windows Hello for Business - cloud Kerberos trust
@@ -16,8 +14,6 @@ Deploying Windows Hello for Business cloud Kerberos trust consists of two steps:
 
 1. Set up Microsoft Entra Kerberos.
 1. Configure a Windows Hello for Business policy and deploy it to the devices.
-
-<a name='deploy-azure-ad-kerberos'></a>
 
 ### Deploy Microsoft Entra Kerberos
 
@@ -174,7 +170,7 @@ Once a user has set up a PIN with cloud Kerberos trust, it can be used **immedia
 
 If you deployed Windows Hello for Business using the key trust model, and want to migrate to the cloud Kerberos trust model, follow these steps:
 
-1. [Set up Microsoft Entra Kerberos in your hybrid environment](#deploy-azure-ad-kerberos).
+1. [Set up Microsoft Entra Kerberos in your hybrid environment](#deploy-microsoft-entra-kerberos).
 1. [Enable cloud Kerberos trust via Group Policy or Intune](#configure-windows-hello-for-business-policy).
 1. For Microsoft Entra joined devices, sign out and sign in to the device using Windows Hello for Business.
 

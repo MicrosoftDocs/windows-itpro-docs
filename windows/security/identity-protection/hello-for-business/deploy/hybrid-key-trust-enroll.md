@@ -54,7 +54,7 @@ To configure Windows Hello for Business using an *account protection* policy:
 1. Specify a **Name** and, optionally, a **Description** > **Next**
 1. Under *Block Windows Hello for Business*, select **Disabled** and multiple policies become available
     - These policies are optional to configure, but it's recommended to configure *Enable to use a Trusted Platform Module (TPM)* to **Yes**
-    - For more information about these policies, see [MDM policy settings for Windows Hello for Business](../hello-manage-in-organization.md#mdm-policy-settings-for-windows-hello-for-business)
+    - For more information about these policies, see [Configure Windows Hello for Business](../configure.md)
 1. Select **Next**
 1. Optionally, add *scope tags* > **Next**
 1. Assign the policy to a security group that contains as members the devices or users that you want to configure > **Next**
@@ -72,7 +72,7 @@ It's suggested to create a security group (for example, *Windows Hello for Busin
 The Windows Hello for Business Group Policy object delivers the correct Group Policy settings to the user, which enables them to enroll and use Windows Hello for Business to authenticate to Azure and Active Directory
 
 > [!NOTE]
-> If you deployed Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources)
+> If you deployed Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../configure.md#policy-conflicts-from-multiple-policy-sources)
 
 ### Enable Windows Hello for Business group policy setting
 
@@ -101,7 +101,7 @@ Sign-in a domain controller or management workstations with *Domain Admin* equiv
 > [!NOTE]
 > Windows Hello for Business can be configured using different policies. These policies are optional to configure, but it's recommended to enable *Use a hardware security device*.
 >
-> For more information about these policies, see [Group Policy settings for Windows Hello for Business](../hello-manage-in-organization.md#group-policy-settings-for-windows-hello-for-business).
+> For more information about these policies, see [Configure Windows Hello for Business](../configure.md).
 
 ### Configure security for GPO
 

@@ -1,39 +1,30 @@
 ---
 title: Windows Hello for Business hybrid key trust deployment
 description: Learn how to deploy Windows Hello for Business in a hybrid key trust scenario.
-ms.date: 12/28/2022
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
-ms.topic: how-to
+ms.date: 12/18/2023
+ms.topic: tutorial
 ---
-# Hybrid key trust deployment
+
+# Hybrid key trust deployment guide
 
 [!INCLUDE [apply-to-hybrid-key-trust](includes/apply-to-hybrid-key-trust.md)]
 
-Hybrid environments are distributed systems that enable organizations to use on-premises and Microsoft Entra protected resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication and single sign-on to modern resources.
-
-This deployment guide describes how to deploy Windows Hello for Business in a hybrid key trust scenario.
+This deployment guide describes how to deploy Windows Hello for Business with a hybrid key trust model.
 
 > [!IMPORTANT]
 > Windows Hello for Business *cloud Kerberos trust* is the recommended deployment model when compared to the *key trust model*. For more information, see [cloud Kerberos trust deployment](hybrid-cloud-kerberos-trust.md).
 
-It is recommended that you review the [Windows Hello for Business planning guide](../hello-planning-guide.md) prior to using the deployment guide. The planning guide helps you make decisions by explaining the available options with each aspect of the deployment and explains the potential outcomes based on each of these decisions.
-
 ## Prerequisites
 
-The following prerequisites must be met for a hybrid key trust deployment:
-
 > [!div class="checklist"]
-> * Directories and directory synchronization
-> * Authentication to Microsoft Entra ID
-> * Device registration
-> * Public Key Infrastructure
-> * Multifactor authentication
-> * Device management
+>The following prerequisites must be met for a hybrid key trust deployment:
+>
+> - Directories and directory synchronization
+> - Authentication to Microsoft Entra ID
+> - Device registration
+> - Public Key Infrastructure
+> - Multifactor authentication
+> - Device management
 
 ### Directories and directory synchronization
 
@@ -48,7 +39,8 @@ During the Window Hello for Business provisioning process, users register the pu
 > [!NOTE]
 > Windows Hello for Business hybrid key trust is not supported if the users' on-premises UPN suffix cannot be added as a verified domain in Microsoft Entra ID.
 
-<a name='authentication-to-azure-ad'></a>
+> [!IMPORTANT]
+> Windows Hello for Business is tied between a user and a device. Both the user and device object must be synchronized between Microsoft Entra ID and Active Directory.
 
 ### Authentication to Microsoft Entra ID
 
@@ -65,8 +57,6 @@ For *Microsoft Entra hybrid joined* devices, review the guidance on the [Plan yo
 ### Public Key Infrastructure
 
 An enterprise PKI is required as *trust anchor* for authentication. Domain controllers require a certificate for Windows clients to trust them.
-
-<a name='multi-factor-authentication'></a>
 
 ### Multifactor authentication
 
@@ -85,13 +75,13 @@ To configure Windows Hello for Business, devices can be configured through a mob
 
 ## Next steps
 
-Once the prerequisites are met, deploying Windows Hello for Business with a hybrid key trust model consists of the following steps:
-
 > [!div class="checklist"]
-> * Configure and validate the PKI
-> * Configure Windows Hello for Business settings
-> * Provision Windows Hello for Business on Windows clients
-> * Configure single sign-on (SSO) for Microsoft Entra joined devices
+> Once the prerequisites are met, deploying Windows Hello for Business with a hybrid key trust model consists of the following steps:
+>
+> - Configure and validate the PKI
+> - Configure Windows Hello for Business settings
+> - Provision Windows Hello for Business on Windows clients
+> - Configure single sign-on (SSO) for Microsoft Entra joined devices
 
 > [!div class="nextstepaction"]
 > [Next: configure and validate the Public Key Infrastructure >](hybrid-key-trust-pki.md)

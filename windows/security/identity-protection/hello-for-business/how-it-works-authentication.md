@@ -10,8 +10,6 @@ Windows Hello for Business authentication is a passwordless, two-factor authenti
 
 Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in and can, optionally, authenticate to Active Directory. Microsoft Entra hybrid joined devices authenticate to Active Directory during sign-in, and authenticate to Microsoft Entra ID in the background.
 
-<a name='azure-ad-join-authentication-to-azure-ad'></a>
-
 ## Microsoft Entra join authentication to Microsoft Entra ID
 
 ![Microsoft Entra join authentication to Microsoft Entra ID.](images/howitworks/auth-aadj-cloud.png)
@@ -27,8 +25,6 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 |D | The Cloud AP provider receives the encrypted PRT with session key.  Using the device's private transport key, the Cloud AP provider decrypt the session key and protects the session key using the device's TPM.|
 |E | The Cloud AP provider returns a successful authentication response to lsass. Lsass caches the PRT, and informs Winlogon of the success authentication.  Winlogon creates a logon session, loads the user's profile, and starts explorer.exe.|
 
-<a name='azure-ad-join-authentication-to-active-directory-using-cloud-kerberos-trust'></a>
-
 ## Microsoft Entra join authentication to Active Directory using cloud Kerberos trust
 
 ![Microsoft Entra join authentication to Active Directory.](images/howitworks/auth-aadj-cloudtrust-kerb.png)
@@ -37,8 +33,6 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 | :----: | :----------- |
 |A | Authentication to Active Directory from a Microsoft Entra joined device begins with the user first attempts to use a resource that needs Kerberos authentication.  The Kerberos security support provider, hosted in lsass, uses metadata from the Windows Hello for Business key to get a hint of the user's domain.  Using the hint, the provider uses the DClocator service to locate a 2016 domain controller.
 |B | After locating a domain controller, the Kerberos provider sends a partial TGT that it received from Microsoft Entra ID from a previous Microsoft Entra authentication to the domain controller. The partial TGT contains only the user SID, and it's signed by Microsoft Entra Kerberos. The domain controller verifies that the partial TGT is valid. On success, the KDC returns a TGT to the client.|
-
-<a name='azure-ad-join-authentication-to-active-directory-using-a-key'></a>
 
 ## Microsoft Entra join authentication to Active Directory using a key
 
@@ -53,8 +47,6 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 > [!NOTE]
 > You might have an on-premises domain federated with Microsoft Entra ID. Once you have successfully provisioned Windows Hello for Business PIN/Bio on the Microsoft Entra joined device, any future login of Windows Hello for Business (PIN/Bio) sign-in will directly authenticate against Microsoft Entra ID to get PRT and trigger authenticate against your DC (if LOS to DC is available) to get Kerberos. It no longer uses AD FS to authenticate for Windows Hello for Business sign-ins.
 
-<a name='azure-ad-join-authentication-to-active-directory-using-a-certificate'></a>
-
 ## Microsoft Entra join authentication to Active Directory using a certificate
 
 ![Microsoft Entra join authentication to Active Directory using a Certificate.](images/howitworks/auth-aadj-certtrust-kerb.png)
@@ -68,8 +60,6 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 > [!NOTE]
 > You may have an on-premises domain federated with Microsoft Entra ID. Once you have successfully provisioned Windows Hello for Business PIN/Bio on, any future login of Windows Hello for Business (PIN/Bio) sign-in will directly authenticate against Microsoft Entra ID to get PRT, as well as authenticate against your DC (if LOS to DC is available) to get Kerberos as mentioned previously. AD FS federation is used only when Enterprise PRT calls are placed from the client. You need to have device write-back enabled to get "Enterprise PRT" from your federation.  
 
-<a name='hybrid-azure-ad-join-authentication-using-cloud-kerberos-trust'></a>
-
 ## Microsoft Entra hybrid join authentication using cloud Kerberos trust
 
 ![Microsoft Entra hybrid join authentication using Microsoft Entra Kerberos](images/howitworks/auth-haadj-cloudtrust.png)
@@ -81,8 +71,6 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 |C | Microsoft Entra ID validates the signed nonce using the user's securely registered public key against the nonce signature. After validating the signature, Microsoft Entra ID then validates the returned signed nonce. After validating the nonce, Microsoft Entra ID creates a PRT with session key that is encrypted to the device's transport key and creates a Partial TGT from Microsoft Entra Kerberos and returns them to Cloud AP.
 |D | Cloud AP  receives the encrypted PRT with session key. Using the device's private transport key, Cloud AP decrypts the session key and protects the session key using the device's TPM (if available). Cloud AP returns a successful authentication response to lsass. Lsass caches the PRT and the Partial TGT.
 |E | The Kerberos security support provider, hosted in lsass, uses metadata from the Windows Hello for Business key to get a hint of the user's domain.  Using the hint, the provider uses the DClocator service to locate a 2016 domain controller. After locating an active 2016 domain controller, the Kerberos provider sends the partial TGT that it received from Microsoft Entra ID to the domain controller. The partial TGT contains only the user SID and is signed by Microsoft Entra Kerberos. The domain controller verifies that the partial TGT is valid. On success, the KDC returns a TGT to the client. Kerberos returns the TGT to lsass, where it's cached and used for subsequent service ticket requests. Lsass informs Winlogon of the success authentication. Winlogon creates a logon session, loads the user's profile, and starts explorer.exe.|
-
-<a name='hybrid-azure-ad-join-authentication-using-a-key'></a>
 
 ## Microsoft Entra hybrid join authentication using a key
 
@@ -100,8 +88,6 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 
 > [!IMPORTANT]
 > In the above deployment model, a newly provisioned user will not be able to sign in using Windows Hello for Business until (a) Microsoft Entra Connect successfully synchronizes the public key to the on-premises Active Directory and (b) device has line of sight to the domain controller for the first time.
-
-<a name='hybrid-azure-ad-join-authentication-using-a-certificate'></a>
 
 ## Microsoft Entra hybrid join authentication using a certificate
 

@@ -1,28 +1,18 @@
 ---
 title: Windows Hello for Business hybrid certificate trust deployment
 description: Learn how to deploy Windows Hello for Business in a hybrid certificate trust scenario.
-ms.date: 12/15/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
+ms.date: 12/18/2023
 ms.topic: tutorial
 ---
 
-# Hybrid certificate trust deployment
+# Hybrid certificate trust deployment guide
 
 [!INCLUDE [apply-to-hybrid-cert-trust](includes/apply-to-hybrid-cert-trust.md)]
 
-Hybrid environments are distributed systems that enable organizations to use on-premises and Microsoft Entra protected resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication and single sign-on to modern resources.
-
-This deployment guide describes how to deploy Windows Hello for Business in a hybrid certificate trust scenario.
+This deployment guide describes how to deploy Windows Hello for Business with a hybrid certificate trust model.
 
 > [!IMPORTANT]
 > Windows Hello for Business *cloud Kerberos trust* is the recommended deployment model when compared to the *key trust model*. It is also the recommended deployment model if you don't need to deploy certificates to the end users. For more information, see [cloud Kerberos trust deployment](hybrid-cloud-kerberos-trust.md).
-
-It's recommended that you review the [Windows Hello for Business planning guide](../hello-planning-guide.md) prior to using the deployment guide. The planning guide helps you make decisions by explaining the available options with each aspect of the deployment and explains the potential outcomes based on each of these decisions.
 
 ## Prerequisites
 
@@ -44,7 +34,7 @@ Hybrid Windows Hello for Business needs two directories:
 - A Microsoft Entra tenant with a Microsoft Entra ID P1 or P2 subscription
 
 The two directories must be synchronized with [Microsoft Entra Connect Sync][AZ-1], which synchronizes user accounts from the on-premises Active Directory to Microsoft Entra ID.
-The hybrid-certificate trust deployment needs a *Microsoft Entra ID P1 or P2* subscription because it uses the device write-back synchronization feature.
+A *Microsoft Entra ID P1 or P2* subscription is required for the device write-back synchronization feature.
 
 > [!NOTE]
 > Windows Hello for Business hybrid certificate trust is not supported if the users' on-premises UPN suffix cannot be added as a verified domain in Microsoft Entra ID.

@@ -217,8 +217,6 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 1. Review the information below the list of fields to confirm the new URL for the CRL distribution point is present in the certificate. Select **OK**
     ![New Certificate with updated CDP.](images/aadj/dc-cert-with-new-cdp.png)
 
-<a name='deploy-the-root-ca-certificate-to-azure-ad-joined-devices'></a>
-
 ## Deploy the root CA certificate to Microsoft Entra joined devices
 
 The domain controllers have a certificate that includes the new CRL distribution point. Next, you need the enterprise root certificate so you can deploy it to Microsoft Entra joined devices. When you deploy the enterprise root certificates to a device, it ensures the device trusts any certificates issued by the certificate authority. Without the certificate, Microsoft Entra joined devices don't trust domain controller certificates and authentication fails.

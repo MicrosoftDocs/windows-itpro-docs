@@ -8,8 +8,6 @@ ms.topic: troubleshooting
 
 The content of this article is to help troubleshoot known deployment issues for Windows Hello for Business.
 
-<a name='pin-reset-on-azure-ad-join-devices-fails-with-we-cant-open-that-page-right-now-error'></a>
-
 ## PIN reset on Microsoft Entra join devices fails with *We can't open that page right now* error
 
 PIN reset on Microsoft Entra joined devices uses a flow called *web sign-in* to authenticate the user above lock. Web sign in only allows navigation to specific domains. If web sign-in attempts to navigate to a domain that isn't allowed, it displays a page with the error message *We can't open that page right now*.
@@ -49,8 +47,6 @@ After the initial sign-in attempt, the user's Windows Hello for Business public 
 ### Resolve user public key deletion issue
 
 To resolve the issue, update Windows Server 2016 and 2019 domain controllers with the latest patches. For Windows Server 2016, the behavior is fixed in build *14393.4104* ([KB4593226](https://support.microsoft.com/help/4593226)) and later. For Windows Server 2019, the behavior is fixed in build *17763.1637* ([KB4592440](https://support.microsoft.com/help/4592440)).
-
-<a name='azure-ad-joined-device-access-to-on-premises-resources-using-key-trust-and-third-party-certificate-authority-ca'></a>
 
 ## Microsoft Entra joined device access to on-premises resources using key trust and third-party Certificate Authority (CA)
 

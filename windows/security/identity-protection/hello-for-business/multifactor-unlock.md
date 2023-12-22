@@ -1,9 +1,10 @@
 ---
 title: Multi-factor unlock
-description: Learn how Windows offers multi-factor device unlock by extending Windows Hello with trusted signals.
-ms.date: 03/30/2023
+description: Learn how to configure Windows Hello for Business multi-factor unlock by extending Windows Hello with trusted signals.
+ms.date: 12/19/2023
 ms.topic: how-to
 ---
+
 # Multi-factor unlock
 
 Windows Hello for Business supports the use of a single credential (PIN and biometrics) for unlocking a device. Therefore, if any of those credentials are compromised (shoulder surfed), an attacker could gain access to the system.
@@ -331,35 +332,66 @@ The following example configures **Wi-Fi** as a trusted signal.
 </rule>
 ```
 
-## Deploy Multifactor Unlock
+## Configure multi-factor unlock
 
->[!IMPORTANT]
->You need to remove all third party credential providers to ensure users cannot unlock their devices if they do not have the required factors. The fall back options are to use passwords or smart cards (both of which could be disabled as needed).
+To configure multi-factor unlock you can use:
 
-### Create the Multifactor Unlock Group Policy object
-
-The Group Policy object contains the policy settings needed to trigger Windows Hello for Business provisioning and to ensure Windows Hello for Business authentication certificates are automatically renewed.
+- Microsoft Intune/CSP
+- Group policy
 
 >[!IMPORTANT]
 >
 > - PIN **must** be in at least one of the groups
 > - Trusted signals **must** be combined with another credential provider
-> - You cannot use the same unlock factor to satisfy both categories. Therefore, if you include any credential provider in both categories, it means it can satisfy either category, but not both
-> - The multifactor unlock feature is also supported via the Passport for Work CSP. For more information, see [Passport For Work CSP](/windows/client-management/mdm/passportforwork-csp).
+> - You can't use the same unlock factor to satisfy both categories. Therefore, if you include any credential provider in bothcategories, it means it can satisfy either category, but not both
 
-1. Start the **Group Policy Management Console** (`gpmc.msc`).
-1. Expand the domain and select the **Group Policy Object** node in the navigation pane.
-1. Right-click **Group Policy object** and select **New**.
-1. Type *Multifactor Unlock* in the name box and select **OK**.
-1. In the content pane, right-click the **Multifactor Unlock** Group Policy object and select **Edit**.
-1. In the navigation pane, expand **Policies** under **Computer Configuration**.
-1. Expand **Administrative Templates > Windows Component**, and select **Windows Hello for Business**.
-    ![Group Policy Editor.](images/multifactorUnlock/gpme.png)
-1. In the content pane, open **Configure device unlock factors**. Select **Enable**. The **Options** section populates the policy setting with default values.
-    ![Multifactor Policy Setting.](images/multifactorUnlock/gp-setting.png)
-1. Configure first and second unlock factors using the information in [Configure Unlock Factors](#configure-unlock-factors).
-1. If using trusted signals, configure the trusted signals used by the unlock factor using the information in [Configure Signal Rules for the Trusted Signal Credential Provider](#configure-signal-rules-for-the-trusted-signal-credential-provider).
-1. Select **OK** to close the **Group Policy Management Editor**. Use the **Group Policy Management Console** to deploy the newly created Group Policy object to your organization's computers.
+[!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
+
+#### [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
+
+[!INCLUDE [intune-settings-catalog-1](../../../../includes/configure/intune-settings-catalog-1.md)]
+
+| Category | Setting name |
+|--|--|
+| **Administrative Templates** > **Windows Hello for Business** | Device Unlock Plugins |
+
+1. Configure first and second unlock factors using the information in [Configure Unlock Factors](#configure-unlock-factors)
+1. If using trusted signals, configure the trusted signals used by the unlock factor using the information in [Configure Signal Rules for the Trusted Signal Credential Provider](#configure-signal-rules-for-the-trusted-signal-credential-provider)
+
+[!INCLUDE [intune-settings-catalog-2](../../../../includes/configure/intune-settings-catalog-2.md)]
+
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [PassportForWork CSP][CSP-1].
+
+| Setting |
+|--------|
+| ./Device/Vendor/MSFT/PassportForWork/[DeviceUnlock](/windows/client-management/mdm/passportforwork-csp#devicedeviceunlock)|
+
+#### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+
+[!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)]
+
+| Group policy path | Group policy setting | Value |
+| - | - | - |
+| **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Hello for Business**  | Configure device unlock factors | Enabled |
+
+1. Configure first and second unlock factors using the information in [Configure Unlock Factors](#configure-unlock-factors)
+1. If using trusted signals, configure the trusted signals used by the unlock factor using the information in [Configure Signal Rules for the Trusted Signal Credential Provider](#configure-signal-rules-for-the-trusted-signal-credential-provider)
+
+[!INCLUDE [gpo-settings-2](../../../../includes/configure/gpo-settings-2.md)]
+
+---
+
+>[!IMPORTANT]
+>You should remove all third party credential providers to ensure users cannot unlock their devices if they do not have the required factors. The fall back options are to use passwords or smart cards (both of which could be disabled as needed).
+
+## User experience
+
+Here's a brief video showing the user experience when multi-factor unlock is enabled:
+
+1. The user first signs in with fingerprint + Bluetooth-paired phone
+1. The user then signs in with fingerprint + PIN
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2bdf21db-30c9-4d8e-99ff-f3ae72c494fe alt-text="Video showing the user experience of multi-factor unlock using fingerprint+Bluetooth and fingerprint+PIN."]
 
 ## Troubleshoot
 
@@ -374,3 +406,8 @@ Multi-factor unlock writes events to event log under **Application and Services 
 |6520|Warning event|
 |7520|Error event|
 |8520|Success event|
+
+<!--links-->
+
+[CSP-1]: /windows/client-management/mdm/passportforwork-csp
+[INT-1]: /mem/intune/configuration/settings-catalog

@@ -1,13 +1,7 @@
 ---
 title: Configure and validate the PKI in an hybrid certificate trust model
 description: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in a hybrid certificate trust model.
-ms.date: 12/15/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
+ms.date: 12/18/2023
 ms.topic: tutorial
 ---
 # Configure and validate the PKI in a hybrid certificate trust model
@@ -22,7 +16,7 @@ Hybrid certificate trust deployments issue users a sign-in certificate, enabling
 
 ## Configure the enterprise PKI
 
-[!INCLUDE [dc-certificate-template](includes/dc-certificate-template.md)]
+[!INCLUDE [dc-certificate-template](includes/certificate-template-dc.md)]
 
 > [!NOTE]
 > Inclusion of the *KDC Authentication* OID in domain controller certificate is not required for Microsoft Entra hybrid joined devices. The OID is required for enabling authentication with Windows Hello for Business to on-premises resources by Microsoft Entra joined devices.
@@ -35,9 +29,9 @@ Hybrid certificate trust deployments issue users a sign-in certificate, enabling
 
 [!INCLUDE [dc-certificate-template-supersede](includes/dc-certificate-supersede.md)]
 
-[!INCLUDE [enrollment-agent-certificate-template](includes/enrollment-agent-certificate-template.md)]
+[!INCLUDE [enrollment-agent-certificate-template](includes/certificate-template-enrollment-agent.md)]
 
-[!INCLUDE [auth-certificate-template](includes/auth-certificate-template.md)]
+[!INCLUDE [auth-certificate-template](includes/certificate-template-auth.md)]
 
 [!INCLUDE [unpublish-superseded-templates](includes/unpublish-superseded-templates.md)]
 
