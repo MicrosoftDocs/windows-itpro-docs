@@ -1,18 +1,18 @@
 ---
-title: User State Migration Tool (USMT) Overview Topics (Windows 10)
+title: User State Migration Tool (USMT) Overview Articles
 description: Learn about User State Migration Tool (USMT) overview articles that describe USMT as a highly customizable user-profile migration experience for IT professionals.
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 12/22/2023
 ms.topic: article
 ms.technology: itpro-deploy
 ---
 
-# User State Migration Tool (USMT) overview topics
+# User State Migration Tool (USMT) overview articles
 
-The User State Migration Tool (USMT) 10.0 provides a highly customizable user-profile migration experience for IT professionals. USMT includes three command-line tools: `ScanState.exe`, `LoadState.exe`, and `UsmtUtils.exe`. USMT also includes a set of three modifiable .xml files: `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`. Additionally, you can create custom .xml files to support your migration needs. You can also create a `Config.xml` file to specify files or settings to exclude from the migration.
+The User State Migration Tool (USMT) provides a highly customizable user-profile migration experience for IT professionals. USMT includes three command-line tools: `ScanState.exe`, `LoadState.exe`, and `UsmtUtils.exe`. USMT also includes a set of three modifiable .xml files: `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`. Additionally, you can create custom .xml files to support your migration needs. You can also create a `Config.xml` file to specify files or settings to exclude from the migration.
 
 ## In this section
 
@@ -24,6 +24,6 @@ The User State Migration Tool (USMT) 10.0 provides a highly customizable user-pr
 
 ## Related articles
 
-- [User State Migration Tool (USMT) how-to topics](usmt-how-to.md)
-- [User State Migration Tool (USMT) troubleshooting](usmt-troubleshooting.md)
-- [User State Migration Toolkit (USMT) reference](usmt-reference.md)
+- [User State Migration Tool (USMT) how-to articles](usmt-how-to.md).
+- [User State Migration Tool (USMT) troubleshooting](usmt-troubleshooting.md).
+- [User State Migration Toolkit (USMT) reference](usmt-reference.md).
