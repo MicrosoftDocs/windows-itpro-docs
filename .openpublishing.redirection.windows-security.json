@@ -8254,6 +8254,11 @@
       "source_path": "windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password.md",
       "redirect_url": "/windows/security/identity-protection/hello-for-business/",
       "redirect_document_id": false
-    }    
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/passwordless-strategy.md",
+      "redirect_url": "/windows/security/identity-protection/passwordless-strategy/",
+      "redirect_document_id": false
+    }
   ]
 }
