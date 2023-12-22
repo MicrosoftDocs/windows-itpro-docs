@@ -274,6 +274,8 @@
               href: applocker\understanding-applocker-rule-exceptions.md
             - name: Understanding AppLocker rule collections
               href: applocker\understanding-applocker-rule-collections.md
+            - name: Understand AppLocker rule collection extensions
+              href: applocker\rule-collection-extensions.md
             - name: Understanding AppLocker allow and deny actions on rules
               href: applocker\understanding-applocker-allow-and-deny-actions-on-rules.md
             - name: Understanding AppLocker rule condition types
