@@ -64,7 +64,7 @@ To configure Windows Hello for Business using an account protection policy:
 1. Specify a **Name** and, optionally, a **Description** > **Next**.
 1. Under **Block Windows Hello for Business**, select **Disabled** and multiple policies become available.
     - These policies are optional to configure, but it's recommended to configure **Enable to use a Trusted Platform Module (TPM)** to **Yes**.
-    - For more information about these policies, see [MDM policy settings for Windows Hello for Business](../hello-manage-in-organization.md#mdm-policy-settings-for-windows-hello-for-business).
+    - For more information about these policies, see [MDM policy settings for Windows Hello for Business](../configure.md#mdm-policy-settings-for-windows-hello-for-business).
 1. Under **Enable to certificate for on-premises resources**, select **Not configured**
 1. Select **Next**.
 1. Optionally, add **scope tags** and select **Next**.
@@ -114,7 +114,7 @@ You can configure the Enable Windows Hello for Business Group Policy setting for
 Cloud Kerberos trust requires setting a dedicated policy for it to be enabled. This policy is only available as a computer configuration.
 
 > [!NOTE]
-> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune][MEM-1] and [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp). For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources).
+> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune][MEM-1] and [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp). For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../configure.md#policy-conflicts-from-multiple-policy-sources).
 
 #### Update administrative templates
 
