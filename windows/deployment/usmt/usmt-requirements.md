@@ -5,7 +5,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 12/22/2023
 ms.topic: article
 ms.technology: itpro-deploy
 ---
@@ -18,7 +18,7 @@ The User State Migration Tool (USMT) doesn't have any explicit RAM or CPU speed 
 
 The following table lists the operating systems supported in USMT.
 
-| Operating Systems | ScanState<br>(Source Device)| LoadState<br>(Destination Device)|
+| Operating<br>Systems | ScanState<br>(Source<br>Device)| LoadState<br>(Destination<br>Device)|
 |--- |--- |--- |
 |Windows 7|✔️|❌|
 |Windows 8|✔️|❌|
@@ -27,9 +27,9 @@ The following table lists the operating systems supported in USMT.
 
 > [!NOTE]
 >
-> - You can migrate a 32-bit operating system to a 64-bit operating system. However, you can't migrate a 64-bit operating system to a 32-bit operating system.
+> - 32-bit operating system can be migrated to a 64-bit operating system. However, a 64-bit operating system can't be migrated to a 32-bit operating system.
 >
-> - It's supported to gather data from a source device using **ScanState** for a version of Windows that is out of support, but it's not supported to restore data to a destination device using **LoadState** to a version of Windows that is out of support.
+> - Gathering data from a source device using **ScanState** for a version of Windows that is out of support is supported. However, restoring data to a destination device using **LoadState** to a version of Windows that is out of support isn't supported.
 
 ## Unsupported scenarios
 
