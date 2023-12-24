@@ -309,5 +309,3 @@
           items:
             - name: Using Event Viewer with AppLocker
               href: applocker\using-event-viewer-with-applocker.md
-        - name: AppLocker Settings
-          href: applocker\applocker-settings.md
