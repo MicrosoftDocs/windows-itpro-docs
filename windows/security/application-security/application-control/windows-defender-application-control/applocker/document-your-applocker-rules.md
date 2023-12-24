@@ -10,9 +10,8 @@ ms.date: 12/22/2023
 
 To complete this AppLocker planning document, you should first complete the following steps:
 
-1. [Determine your application control objectives](determine-your-application-control-objectives.md)
-2. [Create a list of apps deployed to each business group](create-list-of-applications-deployed-to-each-business-group.md)
-3. [Select the types of rules to create](select-types-of-rules-to-create.md)
+1. [Create a list of apps deployed to each business group](create-list-of-applications-deployed-to-each-business-group.md)
+2. [Select the types of rules to create](select-types-of-rules-to-create.md)
 
 Document the following items for each business group or organizational unit:
 

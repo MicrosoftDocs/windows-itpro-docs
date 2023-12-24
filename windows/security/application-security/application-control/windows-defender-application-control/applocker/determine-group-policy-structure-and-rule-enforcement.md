@@ -21,7 +21,6 @@ This overview article describes the process to follow when you're planning to de
 When determining how many Group Policy Objects (GPOs) to create for managing AppLocker policy in your organization, you should consider the following points:
 
 - Whether you're creating new GPOs or using existing GPOs
-- Whether you're implementing Software Restriction Policies (SRP) policies and AppLocker policies in the same GPO
 - GPO naming conventions
 - GPO size limits
 

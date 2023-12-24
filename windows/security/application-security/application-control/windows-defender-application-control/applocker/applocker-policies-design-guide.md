@@ -19,7 +19,7 @@ To understand if AppLocker is the correct application control solution for your 
 | Article | Description |
 | --- | --- |
 | [Understand AppLocker policy design decisions](understand-applocker-policy-design-decisions.md) | This article describes AppLocker design questions, possible answers, and other considerations when you plan a deployment of application control policies by using AppLocker. |
-| [Determine your application control objectives](determine-your-application-control-objectives.md) | This article helps you with the decisions you need to make to determine what applications to control and how to control them by comparing Software Restriction Policies (SRP) and AppLocker. |
+| [Determine your application control objectives](determine-your-application-control-objectives.md) | This article helps you with the decisions you need to make to determine what applications to control and how to control them using AppLocker. |
 | [Create a list of apps deployed to each business group](create-list-of-applications-deployed-to-each-business-group.md) | This article describes the process of gathering app usage requirements from each business group in order to implement application control policies by using AppLocker. |
 | [Select the types of rules to create](select-types-of-rules-to-create.md) | This article lists resources you can use when selecting your application control policy rules by using AppLocker. |
 | [Determine the Group Policy structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md) | This overview article describes the process to follow when you're planning to deploy AppLocker rules. |

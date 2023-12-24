@@ -21,7 +21,6 @@ The following are prerequisites or recommendations to deploying policies:
 - Document your application control policy deployment plan by addressing these tasks:
   - [Understand the AppLocker policy deployment process](understand-the-applocker-policy-deployment-process.md)
   - [Understand AppLocker policy design decisions](understand-applocker-policy-design-decisions.md)
-  - [Determine your application control objectives](determine-your-application-control-objectives.md)
   - [Create list of apps deployed to each business group](create-list-of-applications-deployed-to-each-business-group.md)
   - [Select types of rules to create](select-types-of-rules-to-create.md)
   - [Determine Group Policy Structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md)
@@ -33,6 +32,5 @@ The following are prerequisites or recommendations to deploying policies:
 | --- | --- |
 | [Understand the AppLocker policy deployment process](understand-the-applocker-policy-deployment-process.md) | This planning and deployment article for the IT professional describes the process for using AppLocker when deploying application control policies. |
 | [Requirements for Deploying AppLocker Policies](requirements-for-deploying-applocker-policies.md) | This deployment article for the IT professional lists the requirements that you need to consider before you deploy AppLocker policies. |
-| [Use Software Restriction Policies and AppLocker policies](using-software-restriction-policies-and-applocker-policies.md) | This article for the IT professional describes how to use Software Restriction Policies (SRP) and AppLocker policies in the same Windows deployment. |
 | [Create Your AppLocker policies](create-your-applocker-policies.md) | This overview article for the IT professional describes the steps to create an AppLocker policy and prepare it for deployment. |
 | [Deploy the AppLocker policy into production](deploy-the-applocker-policy-into-production.md) | This article for the IT professional describes the tasks that should be completed before you deploy AppLocker application control settings. |
