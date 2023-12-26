@@ -118,5 +118,5 @@ On each computer with the app installed, right-click on the font name and click 
 
 **To fix your apps by excluding processes**
 
-1.  On each computer with the app installed, open regedit.exe and go to `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\<process_image_name>`.For example, if you want to exclude Microsoft Word processes, you'd use `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Winword.exe`.
+1.  On each computer with the app installed, open regedit.exe and go to `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\<process_image_name>`. For example, if you want to exclude Microsoft Word processes, you'd use `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Winword.exe`.
 2.  Add other processes that need to be excluded here, and then turn on the Blocking untrusted fonts feature, using the steps in [Turn on and use the Blocking Untrusted Fonts feature](#turn-on-and-use-the-blocking-untrusted-fonts-feature), earlier in this article.
