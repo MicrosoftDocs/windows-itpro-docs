@@ -193,7 +193,7 @@
         "operating-system-security/data-protection/personal-data-encryption/*.yml": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>"
         ],
-        "operating-system-security/device-management/windows-security-configuration-framework/**/*.md": [
+        "operating-system-security/device-management/**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
