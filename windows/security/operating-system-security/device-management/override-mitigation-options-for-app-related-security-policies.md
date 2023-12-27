@@ -25,7 +25,7 @@ The following procedure describes how to use Group Policy to override individual
 
 1. Open your Group Policy editor and go to the **Administrative Templates\System\Mitigation Options\Process Mitigation Options** setting.
 
-    ![Group Policy editor: Process Mitigation Options with setting enabled and Show button active.](images/gp-process-mitigation-options.png)
+    ![Screenshot of the Group Policy editor: Process Mitigation Options with setting enabled and Show button active.](images/gp-process-mitigation-options.png)
 
 2. Click **Enabled**, and then in the **Options** area, click **Show** to open the **Show Contents** box, where you'll be able to add your apps and the appropriate bit flag values, as shown in the [Setting the bit field](#setting-the-bit-field) and [Example](#example) sections of this topic.
 
@@ -35,7 +35,7 @@ The following procedure describes how to use Group Policy to override individual
     > - **Value.** A bit field with a series of bit flags in particular positions. Bits can be set to `0` (where the setting is forced off), `1` (where the setting is forced on), or `?` (where the setting retains the previous, existing value).
     > Setting bit flags in positions not specified here to anything other than `?` might cause undefined behavior.
 
-    ![Group Policy editor: Process Mitigation Options with Show Contents box and example text.](images/gp-process-mitigation-options-show.png)
+    ![Screenshot of the Group Policy editor: Process Mitigation Options with Show Contents box and example text.](images/gp-process-mitigation-options-show.png)
 
 ## Setting the bit field
 
