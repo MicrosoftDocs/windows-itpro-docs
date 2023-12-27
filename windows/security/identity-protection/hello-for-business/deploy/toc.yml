@@ -4,13 +4,7 @@ items:
 - name: Hybrid deployments
   items:
   - name: Cloud Kerberos trust deployment
-    items:
-      - name: Overview
-        href: hybrid-cloud-kerberos-trust.md
-        displayName: cloud Kerberos trust
-      - name: Configure and provision Windows Hello for Business
-        href: hybrid-cloud-kerberos-trust-enroll.md
-        displayName: cloud Kerberos trust
+    href: hybrid-cloud-kerberos-trust.md
   - name: Key trust deployment
     items: 
     - name: Overview

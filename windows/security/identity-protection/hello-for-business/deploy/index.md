@@ -76,9 +76,12 @@ The goal of Windows Hello for Business cloud Kerberos trust is to provide a simp
 
 - No need to deploy a public key infrastructure (PKI) or to change an existing PKI
 - No need to synchronize public keys between Microsoft Entra ID and Active Directory for users to access on-premises resources. There isn't any delay between the user's Windows Hello for Business provisioning, and being able to authenticate to Active Directory
-- [FIDO2 security key sign-in][AZ-1] can be deployed with minimal extra setup
+- [FIDO2 security key sign-in][ENTRA-1] can be deployed with minimal extra setup
 
-Windows Hello for Business cloud Kerberos trust is the recommended deployment model when compared to the *key trust model*. It is also the preferred deployment model if you don't need to support certificate authentication scenarios.
+> [!TIP]
+> Windows Hello for Business cloud Kerberos trust is the recommended deployment model when compared to the *key trust model*. It is also the preferred deployment model if you do not need to support certificate authentication scenarios.
+>
+> For more information about how Microsoft Entra Kerberos enables access to on-premises resources, see [enabling passwordless security key sign-in to on-premises resources][ENTRA-1].
 
 ### Device registration
 
@@ -243,6 +246,8 @@ People can go to **Settings** > **Accounts** > **Work or school**, select the wo
 <!--links-->
 
 [ENTRA-1]: /entra/identity/authentication/concept-mfa-howitworks
+[ENTRA-2]: /entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises
+
 [SERV-1]: /windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods
 [ENTRA-2]: /entra/identity/authentication/howto-mfaserver-deploy
 
