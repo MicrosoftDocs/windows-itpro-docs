@@ -11,19 +11,19 @@ ms.topic: tutorial
 
 [!INCLUDE [requirements](includes/requirements.md)]
 
-:ballot_box_with_check: Deployment options
-  :ballot_box_with_check: Deploment models
-  :ballot_box_with_check: Trust types
-:ballot_box_with_check: Authentication
-  :ballot_box_with_check: Device registration
-  :ballot_box_with_check: Key registration
-  :ballot_box_with_check: Directory synchronization
-  :ballot_box_with_check: Multifactor authentication
-:ballot_box_with_check: Device configuration
-:ballot_box_with_check: Public Key Infrastructure
-:ballot_box_with_check: Licensing for cloud services
-:ballot_box_with_check: Windows requirements
-:ballot_box_with_check: Windows Server requirements
+1. Deployment options
+  1. Deploment models
+  1. Trust types
+1. Authentication
+  1. Device registration
+  1. Key registration
+  1. Directory synchronization
+  1. Multifactor authentication
+1. Device configuration
+1. Public Key Infrastructure
+1. Licensing for cloud services
+1. Windows requirements
+1. Windows Server requirements
 
 ## Deployment steps
 

@@ -10,10 +10,10 @@ ms.topic: how-to
 
 [!INCLUDE [requirements](includes/requirements.md)]
 
-:ballot_box_with_check: Authentication to Microsoft Entra ID
-  :ballot_box_with_check: Multifactor authentication
-:ballot_box_with_check: Device configuration
-:ballot_box_with_check: Licensing for cloud services
+1. Authentication to Microsoft Entra ID
+  1. Multifactor authentication
+1. Device configuration
+1. Licensing for cloud services
 
 ## Introduction
 

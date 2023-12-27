@@ -24,21 +24,22 @@ This guide removes the appearance of complexity by helping you make decisions on
 
 Read this document and record your decisions. When finished, you should have all the necessary information to determine requirements and the next steps for your Windows Hello for Business deployment.
 
-There are 7 major categories to consider when planning a Windows Hello for Business deployment:
+There are 8 major categories to consider when planning a Windows Hello for Business deployment:
 
-:ballot_box_with_check: Deployment options
-  :ballot_box_with_check: Deploment models
-  :ballot_box_with_check: Trust types
-:ballot_box_with_check: Authentication
-  :ballot_box_with_check: Device registration
-  :ballot_box_with_check: Key registration
-  :ballot_box_with_check: Directory synchronization
-  :ballot_box_with_check: Multifactor authentication
-:ballot_box_with_check: Device configuration
-:ballot_box_with_check: Public Key Infrastructure
-:ballot_box_with_check: Licensing for cloud services
-:ballot_box_with_check: Windows requirements
-:ballot_box_with_check: Windows Server requirements
+- Deployment options
+  - Deploment models
+  - Trust types
+- Authentication
+  - Device registration
+  - Key registration
+  - Directory synchronization
+  - Multifactor authentication
+- Device configuration
+- Public Key Infrastructure
+- Licensing for cloud services
+- Windows requirements
+- Windows Server requirements
+- Prepare users to use Windows Hello
 
 ## Deployment Options
 
@@ -180,7 +181,7 @@ Update-MgDomainFederationConfiguration -DomainId $DomainId -FederatedIdpMfaBehav
 
 If you configure the flag with a value of either `acceptIfMfaDoneByFederatedIdp` (default) or `enforceMfaByFederatedIdp`, you must verify that your federated IDP is correctly configured and working with the MFA adapter and provider used by your IdP.
 
-### Device configuration
+## Device configuration
 
 Windows Hello for Business provides organizations with a rich set of granular policy settings with which they can use to configure their devices. There are two main options to configure Windows Hello for Business: configuration service provider (CSP) and group policy (GPO).
 
@@ -193,7 +194,7 @@ Windows Hello for Business provides organizations with a rich set of granular po
 | :black_square_button:|Hybrid| CSP (MDM) or Active Directory GPOs |
 | :black_square_button:|On-premises | Active Directory GPOs |
 
-### Public Key Infrastructure (PKI)
+## Public Key Infrastructure (PKI)
 
 While cloud Kerberos trust is the only hybrid deployment option that doesn't require the deployment of any certificates, the other hybrid and on-premises models depend on an enterprise PKI as a trust anchor for authentication:
 
@@ -207,7 +208,7 @@ While cloud Kerberos trust is the only hybrid deployment option that doesn't req
 | :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: not required <br> :black_square_button: **Key trust**: required <br> :black_square_button: **Certificate trust**: required|
 | :black_square_button:|On-premises | required |
 
-### Licensing for cloud services
+## Licensing for cloud services
 
 Here are some considerations regarding licensing requirements for cloud services:
 
@@ -223,7 +224,7 @@ Here are some considerations regarding licensing requirements for cloud services
 | :black_square_button: |Hybrid| :black_square_button: **Cloud Kerberos trust**: not required <br> :black_square_button: **Key trust**: not required <br> :black_square_button: **Certificate trust**: Microsoft Entra ID P1|
 | :black_square_button: |On-premises | Azure MFA, if used as MFA solution |
 
-### Windows requirements
+## Windows requirements
 
 All supported Windows 10 and Windows 11 versions can be used with Windows Hello for Business. However, cloud Kerberos trust requires minimum versions:
 
@@ -233,7 +234,7 @@ All supported Windows 10 and Windows 11 versions can be used with Windows Hello 
 | :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: Windows 10 21H2, with [KB5010415][KB-1] and later; Windows 11 21H2, with [KB5010414][KB-2] and later  <br> :black_square_button: **Key trust**: All supported versions <br> :black_square_button: **Certificate trust**: All supported versions|
 | :black_square_button:|On-premises | All supported versions |
 
-### Windows Server requirements
+## Windows Server requirements
 
 All supported Windows Server versions can be used with Windows Hello for Business as Domain Controller. However, cloud Kerberos trust requires minimum versions:
 
@@ -242,6 +243,25 @@ All supported Windows Server versions can be used with Windows Hello for Busines
 | :black_square_button:| Cloud-only | n/a |
 | :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: Windows Server 2016, [KB3534307][KB-3]; Windows Server 2019, [KB4534321][KB-4], Windows Server 2022  <br> :black_square_button: **Key trust**: All supported versions <br> :black_square_button: **Certificate trust**: All supported versions|
 | :black_square_button:|On-premises | All supported versions |
+
+## Prepare users to use Windows Hello
+
+When you enable Windows Hello for Business in your organization, make sure to prepare the users by explaining how to enroll and use Windows Hello.
+
+Ensure you have a strategy in place to ensure the users have an MFA option that is easy to use during enrollment.
+
+Depending on the hardware, users might be prompted to register their fingerprint or face.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7]
+
+After enrollment in Windows Hello, users should use their gesture (such as a PIN or fingerprint) for access to their devices and corporate resources.
+
+> [!NOTE]
+> The gesture is only valid on the enrolled device.
+
+Although the organization might require users to change their Active Directory or Microsoft Entra account password at regular intervals, changes to their passwords have no effect on Hello.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=44c16430-756f-490a-9fc1-80e2724fef8d]
 
 ## Next steps
 
@@ -258,17 +278,6 @@ Now that you've read about the different deployment options and requirements, yo
 > - [(on-premises | certificate trust)](on-premises-cert-trust.md)
 
 <!--
-## Prepare users to use Windows Hello
-
-When you set a policy to require Windows Hello for Business in the workplace, you will want to prepare people in your organization by explaining how to enroll and use Windows Hello.
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7]
-
-After enrollment in Hello, users should use their gesture (such as a PIN or fingerprint) for access to corporate resources. Their gesture is only valid on the enrolled device.
-
-Although the organization may require users to change their Active Directory or Microsoft Entra account password at regular intervals, changes to their passwords have no effect on Hello.
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=44c16430-756f-490a-9fc1-80e2724fef8d]
 
 ## On devices owned by the organization
 
