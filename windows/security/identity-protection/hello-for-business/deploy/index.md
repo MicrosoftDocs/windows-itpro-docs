@@ -24,22 +24,21 @@ This guide removes the appearance of complexity by helping you make decisions on
 
 Read this document and record your decisions. When finished, you should have all the necessary information to determine requirements and the next steps for your Windows Hello for Business deployment.
 
-> [!div class="checklist"]
-> There are 7 major categories to consider when planning a Windows Hello for Business deployment:
->
->- Deployment options
->  - Deploment models
->  - Trust types
->- Authentication
->  - Device registration
->  - Key registration
->  - Directory synchronization
->  - Multifactor authentication
->- Device configuration
->- Public Key Infrastructure
->- Licensing requirements for cloud services
->- Windows requirements
->- Windows Server requirements
+There are 7 major categories to consider when planning a Windows Hello for Business deployment:
+
+:ballot_box_with_check: Deployment options
+  :ballot_box_with_check: Deploment models
+  :ballot_box_with_check: Trust types
+:ballot_box_with_check: Authentication
+  :ballot_box_with_check: Device registration
+  :ballot_box_with_check: Key registration
+  :ballot_box_with_check: Directory synchronization
+  :ballot_box_with_check: Multifactor authentication
+:ballot_box_with_check: Device configuration
+:ballot_box_with_check: Public Key Infrastructure
+:ballot_box_with_check: Licensing for cloud services
+:ballot_box_with_check: Windows requirements
+:ballot_box_with_check: Windows Server requirements
 
 ## Deployment Options
 
@@ -208,7 +207,7 @@ While cloud Kerberos trust is the only hybrid deployment option that doesn't req
 | :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: not required <br> :black_square_button: **Key trust**: required <br> :black_square_button: **Certificate trust**: required|
 | :black_square_button:|On-premises | required |
 
-### Licensing requirements for cloud services
+### Licensing for cloud services
 
 Here are some considerations regarding licensing requirements for cloud services:
 

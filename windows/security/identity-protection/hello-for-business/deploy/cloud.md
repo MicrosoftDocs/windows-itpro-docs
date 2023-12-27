@@ -10,6 +10,11 @@ ms.topic: how-to
 
 [!INCLUDE [requirements](includes/requirements.md)]
 
+:ballot_box_with_check: Authentication to Microsoft Entra ID
+  :ballot_box_with_check: Multifactor authentication
+:ballot_box_with_check: Device configuration
+:ballot_box_with_check: Licensing for cloud services
+
 ## Introduction
 
 When you Microsoft Entra join a device, the system attempts to automatically enroll you in Windows Hello for Business, by default. If you want to use Windows Hello for Business in a cloud-only environment, there's no additional configuration needed.

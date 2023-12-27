@@ -11,6 +11,20 @@ ms.topic: tutorial
 
 [!INCLUDE [requirements](includes/requirements.md)]
 
+:ballot_box_with_check: Deployment options
+  :ballot_box_with_check: Deploment models
+  :ballot_box_with_check: Trust types
+:ballot_box_with_check: Authentication
+  :ballot_box_with_check: Device registration
+  :ballot_box_with_check: Key registration
+  :ballot_box_with_check: Directory synchronization
+  :ballot_box_with_check: Multifactor authentication
+:ballot_box_with_check: Device configuration
+:ballot_box_with_check: Public Key Infrastructure
+:ballot_box_with_check: Licensing for cloud services
+:ballot_box_with_check: Windows requirements
+:ballot_box_with_check: Windows Server requirements
+
 ## Deployment steps
 
 Once the prerequisites are met, deploying Windows Hello for Business consists of the following steps:
