@@ -9,21 +9,10 @@ ms.topic: tutorial
 
 [!INCLUDE [apply-to-hybrid-cert-trust](includes/apply-to-hybrid-cert-trust.md)]
 
-This deployment guide describes how to deploy Windows Hello for Business with a hybrid certificate trust model.
-
 > [!IMPORTANT]
 > Windows Hello for Business *cloud Kerberos trust* is the recommended deployment model when compared to the *key trust model*. It is also the recommended deployment model if you don't need to deploy certificates to the end users. For more information, see [cloud Kerberos trust deployment](hybrid-cloud-kerberos-trust.md).
 
-## Prerequisites
-
-> [!div class="checklist"]
-> The following prerequisites must be met for a hybrid certificate trust deployment:
->
-> - Directories and directory synchronization
-> - Federated authentication to Microsoft Entra ID
-> - Device registration
-> - Public Key Infrastructure
-> - Multifactor authentication
+[!INCLUDE [requirements](includes/requirements.md)]
 
 ### Directories and directory synchronization
 

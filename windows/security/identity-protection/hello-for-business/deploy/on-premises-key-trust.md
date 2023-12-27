@@ -9,13 +9,17 @@ ms.topic: tutorial
 
 [!INCLUDE [apply-to-on-premises-key-trust](includes/apply-to-on-premises-key-trust.md)]
 
-This deployment guide provides the information to deploy Windows Hello for Business with an on-premises key trust model.
+[!INCLUDE [requirements](includes/requirements.md)]
 
-There are three steps to complete this deployment:
+## Deployment steps
 
-1. [Validate and configure a PKI](on-premises-key-trust-pki.md)
-1. [Prepare and deploy AD FS with MFA](on-premises-key-trust-adfs.md)
-1. [Configure and enroll in Windows Hello for Business](on-premises-key-trust-enroll.md)
+Once the prerequisites are met, deploying Windows Hello for Business consists of the following steps:
+
+> [!div class="checklist"]
+>
+> - [Validate and configure a PKI](on-premises-key-trust-pki.md)
+> - [Prepare and deploy AD FS with MFA](on-premises-key-trust-adfs.md)
+> - [Configure and enroll in Windows Hello for Business](on-premises-key-trust-enroll.md)
 
 ## Create the Windows Hello for Business Users security group
 

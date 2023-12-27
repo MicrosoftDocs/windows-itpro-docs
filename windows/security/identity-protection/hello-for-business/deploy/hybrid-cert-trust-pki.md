@@ -8,7 +8,7 @@ ms.topic: tutorial
 
 [!INCLUDE [apply-to-hybrid-cert-trust](includes/apply-to-hybrid-cert-trust.md)]
 
-Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* or *certificate trust* models. The domain controllers must have a certificate, which serves as a *root of trust* for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
+Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *certificate trust* models. The domain controllers must have a certificate, which serves as a *root of trust* for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
 
 Hybrid certificate trust deployments issue users a sign-in certificate, enabling them to authenticate to Active Directory using Windows Hello for Business credentials. Additionally, hybrid certificate trust deployments issue certificates to registration authorities to provide defense-in-depth security when issuing user authentication certificates.
 
@@ -18,14 +18,7 @@ Hybrid certificate trust deployments issue users a sign-in certificate, enabling
 
 [!INCLUDE [dc-certificate-template](includes/certificate-template-dc.md)]
 
-> [!NOTE]
-> Inclusion of the *KDC Authentication* OID in domain controller certificate is not required for Microsoft Entra hybrid joined devices. The OID is required for enabling authentication with Windows Hello for Business to on-premises resources by Microsoft Entra joined devices.
-
-> [!IMPORTANT]
-> For Microsoft Entra joined devices to authenticate to on-premises resources, ensure to:
->
-> - Install the root CA certificate in the device's trusted root certificate store. See [how to deploy a trusted certificate profile](/mem/intune/protect/certificates-trusted-root#to-create-a-trusted-certificate-profile) via Intune
-> - Publish your certificate revocation list to a location that is available to Microsoft Entra joined devices, such as a web-based URL
+[!INCLUDE [dc-certificate-template-dc-hybrid-notes](includes/certificate-template-dc-hybrid-notes.md)]
 
 [!INCLUDE [dc-certificate-template-supersede](includes/dc-certificate-supersede.md)]
 

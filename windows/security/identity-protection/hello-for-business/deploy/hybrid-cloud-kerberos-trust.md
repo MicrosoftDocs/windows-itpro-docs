@@ -9,9 +9,11 @@ ms.topic: tutorial
 
 [!INCLUDE [apply-to-hybrid-cloud-kerberos-trust](includes/apply-to-hybrid-cloud-kerberos-trust.md)]
 
+[!INCLUDE [requirements](includes/requirements.md)]
+
 ## Deployment steps
 
-Once the prerequisites are met, deploying Windows Hello for Business cloud Kerberos trust consists of the following steps:
+Once the prerequisites are met, deploying Windows Hello for Business consists of the following steps:
 
 > [!div class="checklist"]
 >
