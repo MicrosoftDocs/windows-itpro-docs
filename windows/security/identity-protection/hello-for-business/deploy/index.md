@@ -5,24 +5,6 @@ ms.date: 12/18/2023
 ms.topic: overview
 ---
 
-<!--
-Planning your Windows Hello for Business deployment begins with choosing a deployment type. Like all distributed systems, Windows Hello for Business depends on multiple components within your organization's infrastructure.
-
-### Deployment Model
-
-Choose the deployment model based on the resources your users access. Use the following guidance to make your decision.
-
-- If your organization doesn't have on-premises resources, use **Cloud Only**
-- If your organization syncronizes users to Microsoft Entra ID to access cloud services, select **Hybrid**
-- If your organization doesn't have cloud resources, select **On-Premises**
-
-### Trust type
-
-Choose a trust type that is best suited for your organizations. The trust type determines whether you issue authentication certificates to your users. One trust model isn't more secure than the other.
-
-The deployment of certificates to users and Domain Controllers requires more configuration and infrastructure, which could also be a factor to consider in your decision. Additional infrastructure needed for certificate-trust deployments includes a certificate registration authority. In a federated environment, you need to activate the Device Writeback option in Microsoft Entra Connect.
--->
-
 # Plan a Windows Hello for Business Deployment
 
 This planning guide helps you understand the different topologies, architectures, and components that encompass a Windows Hello for Business infrastructure.
@@ -76,6 +58,10 @@ There are three deployment models from which you can choose:
 
 A deployment's trust type defines how Windows Hello for Business clients **authenticate to Active Directory**. For this reason, the trust type isn't applicable to a cloud-only deployment model.
 
+The trust type determines whether you issue authentication certificates to your users. One trust model isn't more secure than the other.
+
+The deployment of certificates to users and Domain Controllers requires more configuration and infrastructure, which could also be a factor to consider in your decision. Additional infrastructure needed for certificate-trust deployments includes a certificate registration authority. In a federated environment, you must activate the Device Writeback option in Microsoft Entra Connect.
+
 There are three trust types from which you can choose:
 
 | :ballot_box_with_check: | Trust type | Description |
@@ -103,9 +89,9 @@ All devices included in the Windows Hello for Business deployment must go throug
 
 | :ballot_box_with_check:| Deployment model | Device registration options |
 |-|-|-|-|
-| :ballot_box_without_check:| Cloud-only | Microsoft Entra joined <br> Microsoft Entra registered |
-| :ballot_box_without_check:|Hybrid| Microsoft Entra hybrid joined <br> Microsoft Entra joined <br> Microsoft Entra registered |
-| :ballot_box_without_check:|On-premises | AD FS |
+| :black_square_button:| Cloud-only | Microsoft Entra joined <br> Microsoft Entra registered |
+| :black_square_button:|Hybrid| Microsoft Entra hybrid joined <br> Microsoft Entra joined <br> Microsoft Entra registered |
+| :black_square_button:|On-premises | AD FS |
 
 ### Key registration
 
@@ -116,9 +102,9 @@ The built-in Windows Hello for Business provisioning experience creates a device
 
 | :ballot_box_with_check:| Deployment model | Key registration IdP |
 |-|-|-|-|
-| :ballot_box_without_check:| Cloud-only | Microsoft Entra ID |
-| :ballot_box_without_check:|Hybrid| Microsoft Entra ID |
-| :ballot_box_without_check:|On-premises | AD FS |
+| :black_square_button:| Cloud-only | Microsoft Entra ID |
+| :black_square_button:|Hybrid| Microsoft Entra ID |
+| :black_square_button:|On-premises | AD FS |
 
 ### Directory synchronization
 
@@ -129,9 +115,9 @@ Hybrid and on-premises deployments use directory synchronization, however, each 
 
 | :ballot_box_with_check:| Deployment model | Directory sync options |
 |-|-|-|-|
-| :ballot_box_without_check:| Cloud-only | n/a |
-| :ballot_box_without_check:|Hybrid| Microsoft Entra Connect|
-| :ballot_box_without_check:|On-premises | Azure MFA server |
+| :black_square_button:| Cloud-only | n/a |
+| :black_square_button:|Hybrid| Microsoft Entra Connect|
+| :black_square_button:|On-premises | Azure MFA server |
 
 ### Multifactor authentication
 
@@ -145,9 +131,9 @@ The goal of Windows Hello for Business is to move organizations away from passwo
 
 | :ballot_box_with_check:| Deployment model | MFA options |
 |-|-|-|-|
-| :ballot_box_without_check:| Cloud-only | Microsoft Entra MFA <> Third-party MFA via Microsoft Entra ID custom controls or federation|
-| :ballot_box_without_check:|Hybrid| Microsoft Entra MFA <> Third-party MFA via Microsoft Entra ID custom controls or federation|
-| :ballot_box_without_check:|On-premises | AD FS MFA adapter |
+| :black_square_button:| Cloud-only | Microsoft Entra MFA <> Third-party MFA via Microsoft Entra ID custom controls or federation|
+| :black_square_button:|Hybrid| Microsoft Entra MFA <> Third-party MFA via Microsoft Entra ID custom controls or federation|
+| :black_square_button:|On-premises | AD FS MFA adapter |
 
 ### Device configuration
 
@@ -158,9 +144,9 @@ Windows Hello for Business provides organizations with a rich set of granular po
 
 | :ballot_box_with_check:| Deployment model | Device configuration options |
 |-|-|-|-|
-| :ballot_box_without_check:| Cloud-only | CSP (MDM) or local GPO |
-| :ballot_box_without_check:|Hybrid| CSP (MDM) or Active Directory GPOs |
-| :ballot_box_without_check:|On-premises | Active Directory GPOs |
+| :black_square_button:| Cloud-only | CSP (MDM) or local GPO |
+| :black_square_button:|Hybrid| CSP (MDM) or Active Directory GPOs |
+| :black_square_button:|On-premises | Active Directory GPOs |
 
 ### Public Key Infrastructure (PKI)
 
@@ -172,9 +158,9 @@ While cloud Kerberos trust is the only hybrid deployment option that doesn't req
 
 | :ballot_box_with_check:| Deployment model | PKI |
 |-|-|-|-|
-| :ballot_box_without_check:| Cloud-only | not required |
-| :ballot_box_without_check:|Hybrid| Cloud Kerberos trust: not required <br>Certificate trust and key trust: required |
-| :ballot_box_without_check:|On-premises | required |
+| :black_square_button:| Cloud-only | not required |
+| :black_square_button:|Hybrid| :black_square_button: Cloud Kerberos trust: not required <br> :black_square_button: Certificate trust and key trust: required |
+| :black_square_button:|On-premises | required |
 
 ### Licensing requirements for cloud services
 
@@ -188,9 +174,9 @@ Here are some considerations regarding licensing requirements for cloud services
 
 | :ballot_box_with_check:| Deployment model | Cloud services licenses (minimum) |
 |-|-|-|-|
-| :ballot_box_without_check:| Cloud-only | not required |
-| :ballot_box_without_check:|Hybrid| - **Cloud Kerberos trust**: not required <br>- **Key trust**: not required <br>- **Certificate trust**: Microsoft Entra ID P1|
-| :ballot_box_without_check:|On-premises | Azure MFA |
+| :black_square_button:| Cloud-only | not required |
+| :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: not required <br>:black_square_button: **Key trust**: not required <br>:black_square_button: **Certificate trust**: Microsoft Entra ID P1|
+| :black_square_button:|On-premises | Azure MFA |
 
 ### Windows and Windows Server requirements
 
@@ -198,17 +184,17 @@ All supported Windows 10 and Windows 11 versions can be used with Windows Hello 
 
 | :ballot_box_with_check:| Deployment model | Windows version |
 |-|-|-|-|
-| :ballot_box_without_check:| Cloud-only | All supported versions |
-| :ballot_box_without_check:|Hybrid| - **Cloud Kerberos trust**: Windows 10 21H2, with KB5010415 and later; Windows 11 21H2, with KB5010414 and later  <br>- **Key trust**: All supported versions <br>- **Certificate trust**: All supported versions|
-| :ballot_box_without_check:|On-premises | All supported versions |
+| :black_square_button:| Cloud-only | All supported versions |
+| :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: Windows 10 21H2, with [KB5010415][KB-1] and later; Windows 11 21H2, with [KB5010414][KB-2] and later  <br>:black_square_button: **Key trust**: All supported versions <br>:black_square_button: **Certificate trust**: All supported versions|
+| :black_square_button:|On-premises | All supported versions |
 
 All supported Windows Server versions can be used with Windows Hello for Business as Domain Controller. However, cloud Kerberos trust requires minimum versions:
 
 | :ballot_box_with_check:| Deployment model | Domain Controller OS version |
 |-|-|-|-|
-| :ballot_box_without_check:| Cloud-only | n/a |
-| :ballot_box_without_check:|Hybrid| - **Cloud Kerberos trust**: Windows Server 2016, [KB3534307][SUP-1]; Windows Server 2019, [KB4534321][SUP-2], Windows Server 2022  <br>- **Key trust**: All supported versions <br>- **Certificate trust**: All supported versions|
-| :ballot_box_without_check:|On-premises | All supported versions |
+| :black_square_button:| Cloud-only | n/a |
+| :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: Windows Server 2016, [KB3534307][KB-3]; Windows Server 2019, [KB4534321][KB-4], Windows Server 2022  <br>:black_square_button: **Key trust**: All supported versions <br>:black_square_button: **Certificate trust**: All supported versions|
+| :black_square_button:|On-premises | All supported versions |
 
 ## Next steps
 
@@ -260,5 +246,7 @@ People can go to **Settings** > **Accounts** > **Work or school**, select the wo
 [SERV-1]: /windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods
 [ENTRA-2]: /entra/identity/authentication/howto-mfaserver-deploy
 
-[SUP-1]: https://support.microsoft.com/topic/january-23-2020-kb4534307-os-build-14393-3474-b181594e-2c6a-14ea-e75b-678efea9d27e
-[SUP-2]: https://support.microsoft.com/topic/january-23-2020-kb4534321-os-build-17763-1012-023e84c3-f9aa-3b55-8aff-d512911c459f
+[KB-1]: https://support.microsoft.com/topic/5010415
+[KB-2]: https://support.microsoft.com/topic/5010414
+[KB-3]: https://support.microsoft.com/topic/4534307
+[KB-4]: https://support.microsoft.com/topic/4534321
