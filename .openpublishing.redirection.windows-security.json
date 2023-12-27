@@ -4576,6 +4576,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-settings.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/applocker-technical-reference.md",
       "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-technical-reference",
       "redirect_document_id": false
@@ -4673,6 +4678,11 @@
     {
       "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/determine-your-application-control-objectives.md",
       "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/determine-your-application-control-objectives",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/application-security/application-control/windows-defender-application-control/applocker/determine-your-application-control-objectives.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/wdac-and-applocker-overview",
       "redirect_document_id": false
     },
     {
@@ -4843,6 +4853,11 @@
     {
       "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/understand-applocker-enforcement-settings.md",
       "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/understand-applocker-enforcement-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/application-security/application-control/windows-defender-application-control/applocker/understand-applocker-enforcement-settings.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/working-with-applocker-rules#enforcement-modes",
       "redirect_document_id": false
     },
     {
