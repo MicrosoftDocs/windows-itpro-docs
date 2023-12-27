@@ -5,7 +5,7 @@ ms.topic: include
 
 :::row:::
     :::column span="1":::
-    Authentication to Microsoft Entra ID
+    :ballot_box_with_check: Authentication to Microsoft Entra ID
     :::column-end:::
     :::column span="3":::
     Authentication to Microsoft Entra ID can be configured with or without federation:

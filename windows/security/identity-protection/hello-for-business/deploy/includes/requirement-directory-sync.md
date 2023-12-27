@@ -5,7 +5,7 @@ ms.topic: include
 
 :::row:::
     :::column span="1":::
-Directories and directory synchronization
+    :ballot_box_with_check: Directories and directory synchronization
     :::column-end:::
     :::column span="3":::
 Hybrid Windows Hello for Business needs two directories:
