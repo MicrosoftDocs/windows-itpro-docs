@@ -131,8 +131,8 @@ The goal of Windows Hello for Business is to move organizations away from passwo
 
 | :ballot_box_with_check:| Deployment model | MFA options |
 |-|-|-|-|
-| :black_square_button:| Cloud-only | Microsoft Entra MFA <> Third-party MFA via Microsoft Entra ID custom controls or federation|
-| :black_square_button:|Hybrid| Microsoft Entra MFA <> Third-party MFA via Microsoft Entra ID custom controls or federation|
+| :black_square_button:| Cloud-only | :black_square_button: Microsoft Entra MFA <br> :black_square_button: Third-party MFA via Microsoft Entra ID custom controls or federation|
+| :black_square_button:|Hybrid| :black_square_button:Microsoft Entra MFA <br> :black_square_button: Third-party MFA via Microsoft Entra ID custom controls or federation|
 | :black_square_button:|On-premises | AD FS MFA adapter |
 
 ### Device configuration
@@ -159,7 +159,7 @@ While cloud Kerberos trust is the only hybrid deployment option that doesn't req
 | :ballot_box_with_check:| Deployment model | PKI |
 |-|-|-|-|
 | :black_square_button:| Cloud-only | not required |
-| :black_square_button:|Hybrid| :black_square_button: Cloud Kerberos trust: not required <br> :black_square_button: Certificate trust and key trust: required |
+| :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: not required <br> :black_square_button: **Key trust**: required <br> :black_square_button: **Certificate trust**: required|
 | :black_square_button:|On-premises | required |
 
 ### Licensing requirements for cloud services
@@ -174,9 +174,9 @@ Here are some considerations regarding licensing requirements for cloud services
 
 | :ballot_box_with_check:| Deployment model | Cloud services licenses (minimum) |
 |-|-|-|-|
-| :black_square_button:| Cloud-only | not required |
-| :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: not required <br>:black_square_button: **Key trust**: not required <br>:black_square_button: **Certificate trust**: Microsoft Entra ID P1|
-| :black_square_button:|On-premises | Azure MFA |
+| :black_square_button: | Cloud-only | not required |
+| :black_square_button: |Hybrid| :black_square_button: **Cloud Kerberos trust**: not required <br> :black_square_button: **Key trust**: not required <br> :black_square_button: **Certificate trust**: Microsoft Entra ID P1|
+| :black_square_button: |On-premises | Azure MFA |
 
 ### Windows and Windows Server requirements
 
@@ -185,7 +185,7 @@ All supported Windows 10 and Windows 11 versions can be used with Windows Hello 
 | :ballot_box_with_check:| Deployment model | Windows version |
 |-|-|-|-|
 | :black_square_button:| Cloud-only | All supported versions |
-| :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: Windows 10 21H2, with [KB5010415][KB-1] and later; Windows 11 21H2, with [KB5010414][KB-2] and later  <br>:black_square_button: **Key trust**: All supported versions <br>:black_square_button: **Certificate trust**: All supported versions|
+| :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: Windows 10 21H2, with [KB5010415][KB-1] and later; Windows 11 21H2, with [KB5010414][KB-2] and later  <br> :black_square_button: **Key trust**: All supported versions <br> :black_square_button: **Certificate trust**: All supported versions|
 | :black_square_button:|On-premises | All supported versions |
 
 All supported Windows Server versions can be used with Windows Hello for Business as Domain Controller. However, cloud Kerberos trust requires minimum versions:
@@ -193,7 +193,7 @@ All supported Windows Server versions can be used with Windows Hello for Busines
 | :ballot_box_with_check:| Deployment model | Domain Controller OS version |
 |-|-|-|-|
 | :black_square_button:| Cloud-only | n/a |
-| :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: Windows Server 2016, [KB3534307][KB-3]; Windows Server 2019, [KB4534321][KB-4], Windows Server 2022  <br>:black_square_button: **Key trust**: All supported versions <br>:black_square_button: **Certificate trust**: All supported versions|
+| :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: Windows Server 2016, [KB3534307][KB-3]; Windows Server 2019, [KB4534321][KB-4], Windows Server 2022  <br> :black_square_button: **Key trust**: All supported versions <br> :black_square_button: **Certificate trust**: All supported versions|
 | :black_square_button:|On-premises | All supported versions |
 
 ## Next steps
