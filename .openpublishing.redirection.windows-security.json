@@ -16,6 +16,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/security/threat-protection/override-mitigation-options-for-app-related-security-policies.md",
+      "redirect_url": "/windows/security/operating-system-security/device-management/override-mitigation-options-for-app-related-security-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/block-untrusted-fonts-in-enterprise.md",
+      "redirect_url": "/windows/security/operating-system-security/device-management/block-untrusted-fonts-in-enterprise",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection.md",
+      "redirect_url": "/windows/security/operating-system-security/device-management/use-windows-event-forwarding-to-assist-in-intrusion-detection",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/security//threat-protection/mbsa-removal-and-guidance.md",
       "redirect_url": "/windows/security/operating-system-security/device-management/windows-security-configuration-framework/mbsa-removal-and-guidance",
       "redirect_document_id": false
