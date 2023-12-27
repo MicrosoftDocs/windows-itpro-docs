@@ -59,7 +59,7 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Edge Browser Updates | Windows 10 1809, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Configuration Manager Express updates| Windows 10 1709 + Configuration Manager version 1711, Windows 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
 | Dynamic updates| Windows 10 1903, Windows 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
-| MDM Agent | Windows 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
+| MDM Agent | Windows 11 | :heavy_check_mark: |  |  |
 | Xbox Game Pass (PC) | Windows 10 1809, Windows 11 | :heavy_check_mark: |  | :heavy_check_mark: |
 | Windows Package Manager| Windows 10 1809, Windows 11 | :heavy_check_mark: |  |  |
 | MSIX Installer| Windows 10 2004, Windows 11 | :heavy_check_mark: |  |  |
