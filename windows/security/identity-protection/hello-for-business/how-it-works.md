@@ -81,4 +81,8 @@ Changes to a user account password doesn't affect sign-in or unlock, since Windo
 
 - Certificate private keys can be protected by the Windows Hello container and the Windows Hello gesture.
 
-For details, see [How Windows Hello for Business works](hello-how-it-works.md).
+## Next steps
+
+> [!div class="nextstepaction"]
+>
+> [Learn how Windows Hello for Business works >](how-it-works.md)

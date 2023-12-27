@@ -26,20 +26,20 @@ Read this document and record your decisions. When finished, you should have all
 
 There are 8 major categories to consider when planning a Windows Hello for Business deployment:
 
-- Deployment options
-  - Deploment models
-  - Trust types
-- Authentication
-  - Device registration
-  - Key registration
-  - Directory synchronization
-  - Multifactor authentication
-- Device configuration
-- Public Key Infrastructure
-- Licensing for cloud services
-- Windows requirements
-- Windows Server requirements
-- Prepare users to use Windows Hello
+1. Deployment options
+    1. Deploment models
+    1. Trust types
+1. Authentication
+    1. Device registration
+    1. Key registration
+    1. Directory synchronization
+    1. Multifactor authentication
+1. Device configuration
+1. Public Key Infrastructure
+1. Licensing for cloud services
+1. Windows requirements
+1. Windows Server requirements
+1. Prepare users to use Windows Hello
 
 ## Deployment Options
 

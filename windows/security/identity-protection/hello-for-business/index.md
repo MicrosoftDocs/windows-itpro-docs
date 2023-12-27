@@ -167,10 +167,15 @@ If you only had a biometric sign-in configured and, for any reason, were unable 
 
 Windows Hello for Business provisioning begins immediately after the user signs in, after the user profile is loaded, but before the user can access their desktop. Windows only launches the provisioning experience if all the prerequisite checks pass. If the prerequisites aren't met, Windows doesn't launch the provisioning experience and the user can't enroll in Windows Hello for Business.
 
-
-
 > [!NOTE]
 > You must allow access to the URL `account.microsoft.com` to initiate Windows Hello for Business provisioning. This URL launches the subsequent steps in the provisioning process and is required to successfully complete Windows Hello for Business provisioning. This URL doesn't require any authentication and as such, doesn't collect any user data.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+>
+> [Plan a Windows Hello for Business Deployment](deploy/index.md)
+
 
 <!--
 

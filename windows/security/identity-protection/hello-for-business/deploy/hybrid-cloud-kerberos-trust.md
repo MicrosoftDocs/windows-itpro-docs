@@ -12,13 +12,13 @@ ms.topic: tutorial
 [!INCLUDE [requirements](includes/requirements.md)]
 
 1. Deployment options
-  1. Deploment models
-  1. Trust types
+    1. Deploment models
+    1. Trust types
 1. Authentication
-  1. Device registration
-  1. Key registration
-  1. Directory synchronization
-  1. Multifactor authentication
+    1. Device registration
+    1. Key registration
+    1. Directory synchronization
+    1. Multifactor authentication
 1. Device configuration
 1. Public Key Infrastructure
 1. Licensing for cloud services
