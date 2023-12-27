@@ -1,4 +1,6 @@
 items:
+- name: Plan a Windows Hello for Business Deployment
+  href: index.md
 - name: Cloud-only deployment
   href: cloud.md
 - name: Hybrid deployments

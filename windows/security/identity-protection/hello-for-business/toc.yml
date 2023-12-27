@@ -3,14 +3,12 @@ items:
   href: index.md
 - name: How Windows Hello for Business works
   href: how-it-works.md
-- name: Windows Hello for Business planning guide
-  href: deploy/index.md
-- name: Configure Windows Hello for Business
-  href: configure.md
 - name: Deployment guides
   href: deploy/toc.yml
 - name: How-to-guides
   items:
+  - name: Configure Windows Hello for Business
+    href: configure.md
   - name: Configure PIN reset
     href: pin-reset.md
   - name: Configure dual enrollment

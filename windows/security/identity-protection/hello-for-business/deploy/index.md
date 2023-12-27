@@ -22,16 +22,24 @@ This guide removes the appearance of complexity by helping you make decisions on
 
 ### How to Proceed
 
-Read this document and record your decisions. When finished, you should have all the necessary information to determine the next steps for your Windows Hello for Business deployment.
+Read this document and record your decisions. When finished, you should have all the necessary information to determine requirements and the next steps for your Windows Hello for Business deployment.
 
-There are # major categories to consider when planning a Windows Hello for Business deployment:
-
-- Deployment Options
-- Client
-- Management
-- Active Directory
-- Public Key Infrastructure
-- Cloud
+> [!div class="checklist"]
+> There are 7 major categories to consider when planning a Windows Hello for Business deployment:
+>
+>- Deployment options
+>  - Deploment models
+>  - Trust types
+>- Authentication
+>  - Device registration
+>  - Key registration
+>  - Directory synchronization
+>  - Multifactor authentication
+>- Device configuration
+>- Public Key Infrastructure
+>- Licensing requirements for cloud services
+>- Windows requirements
+>- Windows Server requirements
 
 ## Deployment Options
 
@@ -83,7 +91,7 @@ The goal of Windows Hello for Business cloud Kerberos trust is to provide a simp
 >
 > For more information about how Microsoft Entra Kerberos enables access to on-premises resources, see [enabling passwordless security key sign-in to on-premises resources][ENTRA-1].
 
-### Authentication to Microsoft Entra ID
+## Authentication
 
 In cloud-only and hybrid deployments, all users and devices must authenticate to Microsoft Entra ID.
 
@@ -155,8 +163,6 @@ The goal of Windows Hello for Business is to move organizations away from passwo
 For more information how to configure Microsoft Entra multifactor authentication, see [Configure Microsoft Entra multifactor authentication settings][ENTRA-4].\
 For more information how to configure AD FS to provide multifactor authentication, see [Configure Azure MFA as authentication provider with AD FS][SER-1].
 
-
-
 #### MFA and federated authentication
 
 It's possible for federated domains to configure the *FederatedIdpMfaBehavior* flag. The flag instructs Microsoft Entra ID to accept, enforce, or reject the MFA challenge from the federated IdP. For more information, see [federatedIdpMfaBehavior values](/graph/api/resources/internaldomainfederation#federatedidpmfabehavior-values). To check this setting, use the following PowerShell command:
@@ -216,7 +222,7 @@ Here are some considerations regarding licensing requirements for cloud services
 |-|-|-|-|
 | :black_square_button: | Cloud-only | not required |
 | :black_square_button: |Hybrid| :black_square_button: **Cloud Kerberos trust**: not required <br> :black_square_button: **Key trust**: not required <br> :black_square_button: **Certificate trust**: Microsoft Entra ID P1|
-| :black_square_button: |On-premises | Azure MFA |
+| :black_square_button: |On-premises | Azure MFA, if used as MFA solution |
 
 ### Windows requirements
 
@@ -228,7 +234,7 @@ All supported Windows 10 and Windows 11 versions can be used with Windows Hello 
 | :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: Windows 10 21H2, with [KB5010415][KB-1] and later; Windows 11 21H2, with [KB5010414][KB-2] and later  <br> :black_square_button: **Key trust**: All supported versions <br> :black_square_button: **Certificate trust**: All supported versions|
 | :black_square_button:|On-premises | All supported versions |
 
-### Windows and Windows Server requirements
+### Windows Server requirements
 
 All supported Windows Server versions can be used with Windows Hello for Business as Domain Controller. However, cloud Kerberos trust requires minimum versions:
 
@@ -242,7 +248,7 @@ All supported Windows Server versions can be used with Windows Hello for Busines
 
 Now that you've read about the different deployment options and requirements, you can choose the implementation that best suits your organization.
 
-> [!div class="op_multi_selector" title1="Deployment type:" title2="Trust type:"]
+> [!div class="op_multi_selector" title1="Deployment model:" title2="Trust type:"]
 > To learn more about the deployment process, chose a deployment model and trust type from the following drop-down lists:
 >
 > - [(cloud-only|Microsoft Entra ID)](cloud.md)
