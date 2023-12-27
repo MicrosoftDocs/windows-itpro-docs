@@ -21,7 +21,7 @@ Once the prerequisites are met, deploying Windows Hello for Business consists of
 > - Configure Windows Hello for Business settings
 > - Provision Windows Hello for Business on Windows clients
 
-### Deploy Microsoft Entra Kerberos
+## Deploy Microsoft Entra Kerberos
 
 If you've already deployed on-premises SSO for passwordless security key sign-in, then you've already deployed Microsoft Entra Kerberos in your hybrid environment. You don't need to redeploy or change your existing Microsoft Entra Kerberos deployment to support Windows Hello for Business and you can skip this section.
 
@@ -48,7 +48,7 @@ For more information about how Microsoft Entra Kerberos works with Windows Hello
 
 When implementing the cloud Kerberos trust deployment model, you *must* ensure that you have an adequate number of *read-write domain controllers* in each Active Directory site where users will be authenticating with Windows Hello for Business. For more information, see [Capacity planning for Active Directory][SERV-1].
 
-### Configure Windows Hello for Business policy
+## Configure Windows Hello for Business policy
 
 After setting up the Microsoft Entra Kerberos object, Windows Hello for business cloud Kerberos trust must be enabled on your Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 
@@ -224,7 +224,7 @@ If you deployed Windows Hello for Business using the certificate trust model, an
 
 For a list of frequently asked questions about Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business Frequently Asked Questions](../hello-faq.yml#cloud-kerberos-trust).
 
-### Unsupported scenarios
+## Unsupported scenarios
 
 The following scenarios aren't supported using Windows Hello for Business cloud Kerberos trust:
 

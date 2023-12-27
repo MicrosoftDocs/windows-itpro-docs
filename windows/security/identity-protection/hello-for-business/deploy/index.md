@@ -138,6 +138,24 @@ The goal of Windows Hello for Business is to move organizations away from passwo
 | :black_square_button:|Hybrid| :black_square_button:Microsoft Entra MFA <br> :black_square_button: Third-party MFA via Microsoft Entra ID custom controls or federation|
 | :black_square_button:|On-premises | AD FS MFA adapter |
 
+#### MFA and federated authentication
+
+It's possible for federated domains to configure the *FederatedIdpMfaBehavior* flag. The flag instructs Microsoft Entra ID to accept, enforce, or reject the MFA challenge from the federated IdP. For more information, see [federatedIdpMfaBehavior values](/graph/api/resources/internaldomainfederation#federatedidpmfabehavior-values). To check this setting, use the following PowerShell command:
+
+```powershell
+Connect-MgGraph
+$DomainId = "<your federated domain name>"
+Get-MgDomainFederationConfiguration -DomainId $DomainId |fl
+```
+
+To reject the MFA claim from the federated IdP, use the following command. This change impacts all MFA scenarios for the federated domain:
+
+```powershell
+Update-MgDomainFederationConfiguration -DomainId $DomainId -FederatedIdpMfaBehavior rejectMfaByFederatedIdp
+```
+
+If you configure the flag with a value of either `acceptIfMfaDoneByFederatedIdp` (default) or `enforceMfaByFederatedIdp`, you must verify that your federated IDP is correctly configured and working with the MFA adapter and provider used by your IdP.
+
 ### Device configuration
 
 Windows Hello for Business provides organizations with a rich set of granular policy settings with which they can use to configure their devices. There are two main options to configure Windows Hello for Business: configuration service provider (CSP) and group policy (GPO).
@@ -181,7 +199,7 @@ Here are some considerations regarding licensing requirements for cloud services
 | :black_square_button: |Hybrid| :black_square_button: **Cloud Kerberos trust**: not required <br> :black_square_button: **Key trust**: not required <br> :black_square_button: **Certificate trust**: Microsoft Entra ID P1|
 | :black_square_button: |On-premises | Azure MFA |
 
-### Windows and Windows Server requirements
+### Windows requirements
 
 All supported Windows 10 and Windows 11 versions can be used with Windows Hello for Business. However, cloud Kerberos trust requires minimum versions:
 
@@ -190,6 +208,8 @@ All supported Windows 10 and Windows 11 versions can be used with Windows Hello 
 | :black_square_button:| Cloud-only | All supported versions |
 | :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: Windows 10 21H2, with [KB5010415][KB-1] and later; Windows 11 21H2, with [KB5010414][KB-2] and later  <br> :black_square_button: **Key trust**: All supported versions <br> :black_square_button: **Certificate trust**: All supported versions|
 | :black_square_button:|On-premises | All supported versions |
+
+### Windows and Windows Server requirements
 
 All supported Windows Server versions can be used with Windows Hello for Business as Domain Controller. However, cloud Kerberos trust requires minimum versions:
 

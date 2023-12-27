@@ -14,8 +14,11 @@ ms.topic: tutorial
 
 [!INCLUDE [requirements](includes/requirements.md)]
 
-### Directories and directory synchronization
-
+:::row:::
+    :::column span="1":::
+Directories and directory synchronization
+    :::column-end:::
+    :::column span="3":::
 Hybrid Windows Hello for Business needs two directories:
 
 - An on-premises Active Directory
@@ -29,25 +32,48 @@ During the Window Hello for Business provisioning process, users register the pu
 
 > [!IMPORTANT]
 > Windows Hello for Business is tied between a user and a device. Both the user and device object must be synchronized between Microsoft Entra ID and Active Directory.
+    :::column-end:::
 
-### Authentication to Microsoft Entra ID
+:::row-end:::
 
+:::row:::
+    :::column span="1":::
+        Authentication to Microsoft Entra ID
+    :::column-end:::
+    :::column span="3":::
 Authentication to Microsoft Entra ID can be configured with or without federation:
-
 - [Password hash synchronization][AZ-6] or [Microsoft Entra pass-through authentication][AZ-7] is required for non-federated environments
 - Active Directory Federation Services (AD FS) or a third-party federation service is required for federated environments
+    :::column-end:::
 
-### Device registration
+:::row-end:::
 
+:::row:::
+    :::column span="1":::
+        Device registration
+    :::column-end:::
+    :::column span="3":::
 The Windows devices must be registered in Microsoft Entra ID. Devices can be registered in Microsoft Entra ID using either *Microsoft Entra join* or *Microsoft Entra hybrid join*.\
 For *Microsoft Entra hybrid joined* devices, review the guidance on the [Plan your Microsoft Entra hybrid join implementation][AZ-8] page.
+    :::column-end:::
 
-### Public Key Infrastructure
+:::row-end:::
 
+:::row:::
+    :::column span="1":::
+Public Key Infrastructure
+    :::column-end:::
+    :::column span="3":::
 An enterprise PKI is required as *trust anchor* for authentication. Domain controllers require a certificate for Windows clients to trust them.
+    :::column-end:::
 
-### Multifactor authentication
+:::row-end:::
 
+:::row:::
+    :::column span="1":::
+Multifactor authentication
+    :::column-end:::
+    :::column span="3":::
 The Windows Hello for Business provisioning process lets a user enroll in Windows Hello for Business using their user name and password as one factor, but requires a second factor of authentication.\
 Hybrid deployments can use:
 
@@ -56,10 +82,18 @@ Hybrid deployments can use:
 
 For more information how to configure Microsoft Entra multifactor authentication, see [Configure Microsoft Entra multifactor authentication settings][AZ-3].\
 For more information how to configure AD FS to provide multifactor authentication, see [Configure Azure MFA as authentication provider with AD FS][SER-1].
+    :::column-end:::
+:::row-end:::
 
-### Device management
-
+:::row:::
+    :::column span="1":::
+Device management
+    :::column-end:::
+    :::column span="3":::
 To configure Windows Hello for Business, devices can be configured through a mobile device management (MDM) solution like Intune, or via group policy.
+    :::column-end:::
+
+:::row-end:::
 
 ## Next steps
 
