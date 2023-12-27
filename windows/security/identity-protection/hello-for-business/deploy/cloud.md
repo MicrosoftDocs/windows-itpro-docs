@@ -24,7 +24,6 @@ If you want to disable the automatic Windows Hello for Business enrollment promp
 >
 > - Authentication to Microsoft Entra ID
 > - Microsoft Entra multifactor authentication
-> - Device management solution (Intune or supported third-party MDM), optional
 > - Microsoft Entra ID P1 or P2 subscription - optional, needed for automatic MDM enrollment when the device joins Microsoft Entra ID
 
 Cloud-only deployments use Microsoft Entra multifactor authentication (MFA) during Windows Hello for Business enrollment, and there's no additional MFA configuration needed. If you aren't already registered in MFA, you'll be guided through the MFA registration as part of the Windows Hello for Business enrollment process.

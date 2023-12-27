@@ -19,12 +19,7 @@ This deployment guide describes how to deploy Windows Hello for Business with a 
 > [!div class="checklist"]
 >The following prerequisites must be met for a hybrid key trust deployment:
 >
-> - Directories and directory synchronization
-> - Authentication to Microsoft Entra ID
-> - Device registration
 > - Public Key Infrastructure
-> - Multifactor authentication
-> - Device management
 
 ### Directories and directory synchronization
 

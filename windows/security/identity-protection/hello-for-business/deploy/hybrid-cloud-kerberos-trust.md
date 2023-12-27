@@ -47,16 +47,6 @@ For more information about how Microsoft Entra Kerberos works with Windows Hello
 > [!IMPORTANT]
 > When implementing the cloud Kerberos trust deployment model, you *must* ensure that you have an adequate number of *read-write domain controllers* in each Active Directory site where users will be authenticating with Windows Hello for Business. For more information, see [Capacity planning for Active Directory][SERV-1].
 
-## Prerequisites
-
-| Requirement | Notes |
-| --- | --- |
-| Multifactor authentication | This requirement can be met using [Microsoft Entra multifactor authentication](/azure/active-directory/authentication/howto-mfa-getstarted), multifactor authentication provided through AD FS, or a comparable solution. |
-| Windows 10, version 21H2 or Windows 11 and later | If you're using Windows 10 21H2, KB5010415 must be installed. If you're using Windows 11 21H2, KB5010414 must be installed. There's no Windows version support difference between Microsoft Entra joined and Microsoft Entra hybrid joined devices. |
-| Windows Server 2016 or later Domain Controllers | If you're using Windows Server 2016, [KB3534307][SUP-1] must be installed. If you're using Server 2019, [KB4534321][SUP-2] must be installed. |
-| Microsoft Entra Kerberos PowerShell module | This module is used for enabling and managing Microsoft Entra Kerberos. It's available through the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADHybridAuthenticationManagement).|
-| Device management | Windows Hello for Business cloud Kerberos trust can be managed with group policy or through mobile device management (MDM) policy. This feature is disabled by default and must be enabled using policy. |
-
 ### Unsupported scenarios
 
 The following scenarios aren't supported using Windows Hello for Business cloud Kerberos trust:
@@ -89,6 +79,3 @@ Once the prerequisites are met, deploying Windows Hello for Business with a clou
 [AZ-1]: /azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises
 
 [SERV-1]: /windows-server/administration/performance-tuning/role/active-directory-server/capacity-planning-for-active-directory-domain-services
-
-[SUP-1]: https://support.microsoft.com/topic/january-23-2020-kb4534307-os-build-14393-3474-b181594e-2c6a-14ea-e75b-678efea9d27e
-[SUP-2]: https://support.microsoft.com/topic/january-23-2020-kb4534321-os-build-17763-1012-023e84c3-f9aa-3b55-8aff-d512911c459f

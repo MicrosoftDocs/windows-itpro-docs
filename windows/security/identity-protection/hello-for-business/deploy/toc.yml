@@ -1,5 +1,5 @@
 items:
-- name: Cloud-only deployments
+- name: Cloud-only deployment
   href: cloud.md
 - name: Hybrid deployments
   items:

@@ -24,7 +24,6 @@ This deployment guide describes how to deploy Windows Hello for Business with a 
 > - Device registration
 > - Public Key Infrastructure
 > - Multifactor authentication
-> - Device management
 
 ### Directories and directory synchronization
 
