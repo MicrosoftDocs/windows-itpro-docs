@@ -83,6 +83,16 @@ The goal of Windows Hello for Business cloud Kerberos trust is to provide a simp
 >
 > For more information about how Microsoft Entra Kerberos enables access to on-premises resources, see [enabling passwordless security key sign-in to on-premises resources][ENTRA-1].
 
+### Authentication to Microsoft Entra ID
+
+In cloud-only and hybrid deployments, all users and devices must authenticate to Microsoft Entra ID.
+
+Authentication to Microsoft Entra ID can be configured with or without federation:
+
+- For key trust, [Password hash synchronization][ENTRA-6] or [Microsoft Entra pass-through authentication][ENTRA-7] is required for non-federated environments
+- Certificate trust doesn't support Microsoft Entra ID *Pass-through Authentication* (PTA) or *password hash sync* (PHS). Windows Hello for Business hybrid certificate trust requires Active Directory to be federated with Microsoft Entra ID using AD FS. Additionally, you need to configure your AD FS farm to support Azure registered devices
+- Active Directory Federation Services (AD FS) or a third-party federation service is required for federated environments
+
 ### Device registration
 
 All devices included in the Windows Hello for Business deployment must go through a process called *device registration*. Device registration enables devices to authenticate to identity providers:
@@ -95,6 +105,8 @@ All devices included in the Windows Hello for Business deployment must go throug
 | :black_square_button:| Cloud-only | Microsoft Entra joined <br> Microsoft Entra registered |
 | :black_square_button:|Hybrid| Microsoft Entra hybrid joined <br> Microsoft Entra joined <br> Microsoft Entra registered |
 | :black_square_button:|On-premises | AD FS |
+
+For *Microsoft Entra hybrid joined* devices, review the guidance on the [Plan your Microsoft Entra hybrid join implementation][ENTRA-5] page.
 
 ### Key registration
 
@@ -113,13 +125,15 @@ The built-in Windows Hello for Business provisioning experience creates a device
 
 Hybrid and on-premises deployments use directory synchronization, however, each for a different purpose:
 
-- Hybrid deployments use Microsoft Entra Connect to synchronize Active Directory identities (users and devices) or credentials (in key trust model) between itself and Microsoft Entra ID. This synchronization enables SSO to Microsoft Entra ID and its federated components
+- Hybrid deployments use [Microsoft Entra Connect Sync][ENTRA-3] to synchronize Active Directory identities (users and devices) or credentials between itself and Microsoft Entra ID. During the Window Hello for Business provisioning process, users register the public portion of their Windows Hello for Business credential with Microsoft Entra ID. Microsoft Entra Connect Sync synchronizes the Windows Hello for Business public key to Active Directory. This synchronization enables SSO to Microsoft Entra ID and its federated components.
+    > [!IMPORTANT]
+    > Windows Hello for Business is tied between a user and a device. Both the user and device object must be synchronized between Microsoft Entra ID and Active Directory.
 - On-premises deployments use directory synchronization to import users from Active Directory to the Azure MFA server, which sends data to the MFA cloud service to perform the verification
 
 | :ballot_box_with_check:| Deployment model | Directory sync options |
 |-|-|-|-|
 | :black_square_button:| Cloud-only | n/a |
-| :black_square_button:|Hybrid| Microsoft Entra Connect|
+| :black_square_button:|Hybrid| Microsoft Entra Connect Sync|
 | :black_square_button:|On-premises | Azure MFA server |
 
 ### Multifactor authentication
@@ -127,7 +141,7 @@ Hybrid and on-premises deployments use directory synchronization, however, each 
 The goal of Windows Hello for Business is to move organizations away from passwords by providing them with a *strong credential* that enables easy two-factor authentication. The built-in provisioning experience accepts the user's weak credentials (username and password) as the first factor authentication. However, the user must provide a second factor of authentication before Windows provisions a strong credential:
 
 - For cloud-only and hybrid deployments, ther are different choices for multifactor authentication, including [Microsoft Entra MFA][ENTRA-1]
-- On-premises deployments must use a multifactor option that can integrate as an AD FS multifactor adapter. Organizations can choose from third-party options that offer an AD FS MFA adapter. For more infomration, see [Microsoft and third-party additional authentication methods][SERV-1]
+- On-premises deployments must use a multifactor option that can integrate as an AD FS multifactor adapter. Organizations can choose from third-party options that offer an AD FS MFA adapter. For more infomration, see [Microsoft and third-party additional authentication methods][SER-2]
 
 > [!IMPORTANT]
 > As of July 1, 2019, Microsoft doesn't offer MFA Server for new deployments. New deployments that require multifactor authentication should use cloud-based Microsoft Entra multifactor authentication. Existing deployment where the MFA Server was activated prior to July 1, 2019 can download the latest version, future updates, and generate activation credentials. See [Getting started with the Azure Multi-Factor Authentication Server][ENTRA-2] for more details.
@@ -137,6 +151,11 @@ The goal of Windows Hello for Business is to move organizations away from passwo
 | :black_square_button:| Cloud-only | :black_square_button: Microsoft Entra MFA <br> :black_square_button: Third-party MFA via Microsoft Entra ID custom controls or federation|
 | :black_square_button:|Hybrid| :black_square_button:Microsoft Entra MFA <br> :black_square_button: Third-party MFA via Microsoft Entra ID custom controls or federation|
 | :black_square_button:|On-premises | AD FS MFA adapter |
+
+For more information how to configure Microsoft Entra multifactor authentication, see [Configure Microsoft Entra multifactor authentication settings][ENTRA-4].\
+For more information how to configure AD FS to provide multifactor authentication, see [Configure Azure MFA as authentication provider with AD FS][SER-1].
+
+
 
 #### MFA and federated authentication
 
@@ -266,10 +285,15 @@ People can go to **Settings** > **Accounts** > **Work or school**, select the wo
 <!--links-->
 
 [ENTRA-1]: /entra/identity/authentication/concept-mfa-howitworks
-[ENTRA-2]: /entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises
-
-[SERV-1]: /windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods
 [ENTRA-2]: /entra/identity/authentication/howto-mfaserver-deploy
+[ENTRA-3]: /entra/identity/hybrid/connect/how-to-connect-sync-whatis
+[ENTRA-4]: /entra/identity/authentication/howto-mfa-mfasettings
+[ENTRA-5]: /entra/identity/devices/hybrid-join-plan
+[ENTRA-6]: /entra/identity/hybrid/connect/whatis-phs
+[ENTRA-7]: /entra/identity/hybrid/connect/how-to-connect-pta
+
+[SER-1]: /windows-server/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa
+[SER-2]: /windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods
 
 [KB-1]: https://support.microsoft.com/topic/5010415
 [KB-2]: https://support.microsoft.com/topic/5010414
