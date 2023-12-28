@@ -51,22 +51,15 @@ It's fundamentally important to understand which deployment model to use for a s
 
 There are three deployment models from which you can choose:
 
-```mermaid
-sequenceDiagram
-    participant dotcom
-    participant iframe
-    participant viewscreen
-    dotcom->>iframe: loads html w/ iframe url
-    iframe->>viewscreen: request template
-    viewscreen->>iframe: html & javascript
-    iframe->>dotcom: iframe ready
-    dotcom->>iframe: set mermaid data on iframe
-    iframe->>iframe: render mermaid
-```
-
-<div id="cloud-only-checkbox">
-**Cloud-only**
-</div>
+[ ] Test for a checkbox
+[x] Test for a checkbox
+[] Test
+-[] Test
+- [] Test
+- [x] Test
+-[x] test
+- [ ] test
+- [x] test
 
 :::row:::
     :::column span="1":::
