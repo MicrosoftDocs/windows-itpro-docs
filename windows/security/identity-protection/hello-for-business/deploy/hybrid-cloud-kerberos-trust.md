@@ -11,29 +11,21 @@ ms.topic: tutorial
 
 [!INCLUDE [requirements](includes/requirements.md)]
 
-1. Deployment options
-    1. Deploment models
-    1. Trust types
-1. Authentication
-    1. Device registration
-    1. Key registration
-    1. Directory synchronization
-    1. Multifactor authentication
-1. Device configuration
-1. Public Key Infrastructure
-1. Licensing for cloud services
-1. Windows requirements
-1. Windows Server requirements
+> [!div class="checklist"]
+>
+> - [Authentication](index.md#authentication)
+> - [Device configuration](index.md#device-configuration)
+> - [Windows requirements](index.md#windows-requirements)
+> - [Windows Server requirements](index.md#windows-server-requirements)
+> - [Prepare users to use Windows Hello](index.md#prepare-users-to-use-windows-hello)
 
 ## Deployment steps
 
 Once the prerequisites are met, deploying Windows Hello for Business consists of the following steps:
 
-> [!div class="checklist"]
->
-> - Deploy Microsoft Entra Kerberos
-> - Configure Windows Hello for Business settings
-> - Provision Windows Hello for Business on Windows clients
+- Deploy Microsoft Entra Kerberos
+- Configure Windows Hello for Business settings
+- Provision Windows Hello for Business on Windows clients
 
 ## Deploy Microsoft Entra Kerberos
 

@@ -2,7 +2,7 @@ items:
 - name: Plan a Windows Hello for Business Deployment
   href: index.md
 - name: Cloud-only deployment
-  href: cloud.md
+  href: cloud-only.md
 - name: Hybrid deployments
   items:
   - name: Cloud Kerberos trust deployment

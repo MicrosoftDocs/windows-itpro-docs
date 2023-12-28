@@ -11,6 +11,16 @@ ms.topic: tutorial
 
 [!INCLUDE [requirements](includes/requirements.md)]
 
+> [!div class="checklist"]
+>
+> - [Public Key Infrastructure](index.md#public-key-infrastructure-pki)
+> - [Authentication](index.md#authentication)
+> - [Device configuration](index.md#device-configuration)
+> - [Licensing for cloud services](index.md#licensing-for-cloud-services)
+> - [Windows requirements](index.md#windows-requirements)
+> - [Windows Server requirements](index.md#windows-server-requirements)
+> - [Prepare users to use Windows Hello](index.md#prepare-users-to-use-windows-hello)
+
 ## Deployment steps
 
 Once the prerequisites are met, deploying Windows Hello for Business consists of the following steps:

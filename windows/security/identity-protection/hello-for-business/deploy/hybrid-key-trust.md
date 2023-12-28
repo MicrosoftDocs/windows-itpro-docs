@@ -14,6 +14,13 @@ ms.topic: tutorial
 
 [!INCLUDE [requirements](includes/requirements.md)]
 
+> [!div class="checklist"]
+>
+> - [Public Key Infrastructure](index.md#public-key-infrastructure-pki)
+> - [Authentication](index.md#authentication)
+> - [Device configuration](index.md#device-configuration)
+> - [Prepare users to use Windows Hello](index.md#prepare-users-to-use-windows-hello)
+
 ## Next steps
 
 > [!div class="checklist"]

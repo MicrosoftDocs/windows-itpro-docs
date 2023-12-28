@@ -10,14 +10,16 @@ ms.topic: how-to
 
 [!INCLUDE [requirements](includes/requirements.md)]
 
-1. Authentication to Microsoft Entra ID
-  1. Multifactor authentication
-1. Device configuration
-1. Licensing for cloud services
+> [!div class="checklist"]
+>
+> - [Authentication](index.md#authentication)
+> - [Device configuration](index.md#device-configuration)
+> - [Licensing for cloud services](index.md#licensing-for-cloud-services)
+> - [Prepare users to use Windows Hello](index.md#prepare-users-to-use-windows-hello)
 
 ## Introduction
 
-When you Microsoft Entra join a device, the system attempts to automatically enroll you in Windows Hello for Business, by default. If you want to use Windows Hello for Business in a cloud-only environment, there's no additional configuration needed.
+When you Microsoft Entra join a device, the system attempts to automatically enroll you in Windows Hello for Business, by default. If you want to use Windows Hello for Business in a cloud-only environment with its default settings, there's no additional configuration needed.
 
 If you want to disable the automatic Windows Hello for Business enrollment prompt, you can configure your devices with a policy setting or registry key. For more information, see [Disable Windows Hello for Business]([Disable Windows Hello for Business enrollment](../configure.md#disable-windows-hello-for-business-enrollment).
 

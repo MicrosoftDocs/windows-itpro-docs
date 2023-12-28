@@ -14,6 +14,14 @@ ms.topic: tutorial
 
 [!INCLUDE [requirements](includes/requirements.md)]
 
+> [!div class="checklist"]
+>
+> - [Public Key Infrastructure](index.md#public-key-infrastructure-pki)
+> - [Authentication](index.md#authentication)
+> - [Device configuration](index.md#device-configuration)
+> - [Licensing for cloud services](index.md#licensing-for-cloud-services)
+> - [Prepare users to use Windows Hello](index.md#prepare-users-to-use-windows-hello)
+
 ### Federated authentication to Microsoft Entra ID
 
 Windows Hello for Business hybrid certificate trust doesn't support Microsoft Entra ID *Pass-through Authentication* (PTA) or *password hash sync* (PHS).\
