@@ -22,7 +22,7 @@ This guide removes the appearance of complexity by helping you make decisions on
 
 ### How to proceed
 
-Read this document and record your decisions. When finished, you should have all the necessary information to determine requirements and the next steps for your Windows Hello for Business deployment.
+Read this document and record your decisions. When finished, you should have all the necessary information to evaluate the available options and to determine requirements for your Windows Hello for Business deployment.
 
 There are 8 major categories to consider when planning a Windows Hello for Business deployment:
 
@@ -138,7 +138,7 @@ Hybrid and on-premises deployments use directory synchronization, however, each 
 
 | Deployment model | Directory sync options |
 |-|-|
-| Cloud-only | n/a |
+|Cloud-only | n/a |
 |Hybrid| Microsoft Entra Connect Sync|
 |On-premises | Azure MFA server |
 
@@ -153,7 +153,7 @@ The goal of Windows Hello for Business is to move organizations away from passwo
 > As of July 1, 2019, Microsoft doesn't offer MFA Server for new deployments. New deployments that require multifactor authentication should use cloud-based Microsoft Entra multifactor authentication. Existing deployment where the MFA Server was activated prior to July 1, 2019 can download the latest version, future updates, and generate activation credentials. See [Getting started with the Azure Multi-Factor Authentication Server][ENTRA-2] for more details.
 
 | Deployment model | MFA options |
-|-|-|-|
+|-|-|
 | Cloud-only | :black_square_button: Microsoft Entra MFA <br> :black_square_button: Third-party MFA via Microsoft Entra ID custom controls or federation|
 |Hybrid| :black_square_button: Microsoft Entra MFA <br> :black_square_button: Third-party MFA via Microsoft Entra ID custom controls or federation <br><br> For more information how to configure Microsoft Entra multifactor authentication, see [Configure Microsoft Entra multifactor authentication settings][ENTRA-4].|
 |On-premises | AD FS MFA adapter <br><br> For more information how to configure AD FS to provide multifactor authentication, see [Configure Azure MFA as authentication provider with AD FS][SER-1]. |
@@ -183,11 +183,11 @@ Windows Hello for Business provides organizations with a rich set of granular po
 - The CSP option is ideal for devices that are managed through a Mobile Device Management (MDM) solution, like Microsoft Intune
 - GPO can be used to configure domain joined devices and where devices aren't managed via MDM
 
-| | Deployment model | Device configuration options |
-|-|-|-|-|
-| :black_square_button:| Cloud-only | CSP (MDM) <br> GPO (local) |
-| :black_square_button:|Hybrid| CSP (MDM) <br> GPO (Active Directory or local) |
-| :black_square_button:|On-premises | GPO (Active Directory or local)|
+| Deployment model | Device configuration options |
+|-|-|
+| Cloud-only | CSP (MDM) <br> GPO (local) |
+|Hybrid| CSP (MDM) <br> GPO (Active Directory or local) |
+|On-premises | GPO (Active Directory or local)|
 
 ## Public Key Infrastructure (PKI)
 
@@ -197,11 +197,11 @@ While cloud Kerberos trust is the only hybrid deployment option that doesn't req
 - Deployments using the certificate trust type require an enterprise PKI and a certificate registration authority (CRA) to issue authentication certificates to users. AD FS is used as a CRA
 - Hybrid deployments might need to issue VPN certificates to users to enable connectivity on-premises resources
 
-| | Deployment model | PKI |
-|-|-|-|-|
-| :black_square_button:| Cloud-only | not required |
-| :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: not required <br> :black_square_button: **Key trust**: required <br> :black_square_button: **Certificate trust**: required|
-| :black_square_button:|On-premises | required |
+| Deployment model | PKI |
+|-|-|
+| Cloud-only | not required |
+|Hybrid| :black_square_button: **Cloud Kerberos trust**: not required <br> :black_square_button: **Key trust**: required <br> :black_square_button: **Certificate trust**: required|
+|On-premises | required |
 
 ## Licensing for cloud services
 
@@ -213,31 +213,31 @@ Here are some considerations regarding licensing requirements for cloud services
   - Some Microsoft Entra multifactor authentication features require a license. For more details, see [Features and licenses for Microsoft Entra multifactor authentication](/azure/active-directory/authentication/concept-mfa-licensing).
 - Enrolling a certificate using the AD FS registration authority requires devices to authenticate to the AD FS server, which requires device write-back, a Microsoft Entra ID P1 or P2 feature
 
-|  | Deployment model | Cloud services licenses (minimum) |
-|--|--|--|--|
-| :black_square_button: | Cloud-only | not required |
-| :black_square_button: | Hybrid | :black_square_button: **Cloud Kerberos trust**: not required <br> :black_square_button: **Key trust**: not required <br> :black_square_button: **Certificate trust**: Microsoft Entra ID P1 |
-| :black_square_button: | On-premises | Azure MFA, if used as MFA solution |
+| Deployment model | Cloud services licenses (minimum) |
+|--|--|
+| Cloud-only | not required |
+| Hybrid | :black_square_button: **Cloud Kerberos trust**: not required <br> :black_square_button: **Key trust**: not required <br> :black_square_button: **Certificate trust**: Microsoft Entra ID P1 |
+| On-premises | Azure MFA, if used as MFA solution |
 
 ## Windows requirements
 
 All supported Windows 10 and Windows 11 versions can be used with Windows Hello for Business. However, cloud Kerberos trust requires minimum versions:
 
-|  | Deployment model | Windows version |
-|--|--|--|--|
-| :black_square_button: | Cloud-only | All supported versions |
-| :black_square_button: | Hybrid | :black_square_button: **Cloud Kerberos trust**: Windows 10 21H2, with [KB5010415][KB-1] and later; Windows 11 21H2, with [KB5010414][KB-2] and later  <br> :black_square_button: **Key trust**: All supported versions <br> :black_square_button: **Certificate trust**: All supported versions |
-| :black_square_button: | On-premises | All supported versions |
+| Deployment model | Windows version |
+|--|--|
+| Cloud-only | All supported versions |
+| Hybrid | :black_square_button: **Cloud Kerberos trust**: Windows 10 21H2, with [KB5010415][KB-1] and later; Windows 11 21H2, with [KB5010414][KB-2] and later  <br> :black_square_button: **Key trust**: All supported versions <br> :black_square_button: **Certificate trust**: All supported versions |
+| On-premises | All supported versions |
 
 ## Windows Server requirements
 
 All supported Windows Server versions can be used with Windows Hello for Business as Domain Controller. However, cloud Kerberos trust requires minimum versions:
 
-| | Deployment model | Domain Controller OS version |
-|-|-|-|-|
-| :black_square_button:| Cloud-only | n/a |
-| :black_square_button:|Hybrid| :black_square_button: **Cloud Kerberos trust**: Windows Server 2016, [KB3534307][KB-3]; Windows Server 2019, [KB4534321][KB-4], Windows Server 2022  <br> :black_square_button: **Key trust**: All supported versions <br> :black_square_button: **Certificate trust**: All supported versions|
-| :black_square_button:|On-premises | All supported versions |
+| Deployment model | Domain Controller OS version |
+|-|-|-|
+| Cloud-only | n/a |
+|Hybrid| :black_square_button: **Cloud Kerberos trust**: Windows Server 2016, [KB3534307][KB-3]; Windows Server 2019, [KB4534321][KB-4], Windows Server 2022  <br> :black_square_button: **Key trust**: All supported versions <br> :black_square_button: **Certificate trust**: All supported versions|
+|On-premises | All supported versions |
 
 ## Prepare users to use Windows Hello
 
@@ -257,6 +257,16 @@ After enrollment in Windows Hello, users should use their gesture (such as a PIN
 Although the organization might require users to change their Active Directory or Microsoft Entra account password at regular intervals, changes to their passwords have no effect on Hello.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=44c16430-756f-490a-9fc1-80e2724fef8d]
+
+## Requirements table
+
+## Full table
+
+| Deployment model | Trust type | Authentication options | Device/Key registration IdP | Directory sync options | MFA | Device configuration | PKI | Licensing | Windows | DC OS version |
+|--|--|--|--|--|--|--|--|--|--|--|
+| :black_square_button: Cloud-only | n/a | :black_square_button: **Non-federated**<br> :black_square_button: **Federated** | Microsoft Entra ID | n/a | :black_square_button: Microsoft Entra MFA <br> :black_square_button: Third-party MFA via Microsoft Entra ID custom controls or federation | CSP (MDM) <br> GPO (local) | not required | not required | All supported versions | n/a |
+| :black_square_button: Hybrid | :black_square_button: **Cloud Kerberos trust** <br> :black_square_button: **Key trust** <br> :black_square_button: **Certificate trust** | :black_square_button: **Non-federated**<br> :black_square_button: **Federated** | Microsoft Entra ID | Microsoft Entra Connect Sync | :black_square_button: Microsoft Entra MFA <br> :black_square_button: Third-party MFA via Microsoft Entra ID custom controls or federation | CSP (MDM) <br> GPO (Active Directory or local) | :black_square_button: **Cloud Kerberos trust**: not required <br> :black_square_button: **Key trust**: required <br> :black_square_button: **Certificate trust**: required | :black_square_button: **Cloud Kerberos trust**: not required <br> :black_square_button: **Key trust**: not required <br> :black_square_button: **Certificate trust**: Microsoft Entra ID P1 | :black_square_button: **Cloud Kerberos trust**: Windows 10 21H2, with [KB5010415][KB-1] and later; Windows 11 21H2, with [KB5010414][KB-2] and later  <br> :black_square_button: **Key trust**: All supported versions <br> :black_square_button: **Certificate trust**: All supported versions | :black_square_button: **Cloud Kerberos trust**: Windows Server 2016, [KB3534307][KB-3]; Windows Server 2019, [KB4534321][KB-4], Windows Server 2022  <br> :black_square_button: **Key trust**: All supported versions <br> :black_square_button: **Certificate trust**: All supported versions |
+| :black_square_button: On-premises | :black_square_button: **Key trust** <br> :black_square_button: **Certificate trust** | n/a | AD FS | Azure MFA server | AD FS MFA adapter | GPO (Active Directory or local) | required | Azure MFA, if used as MFA solution | All supported versions | All supported versions |
 
 ## Next steps
 
