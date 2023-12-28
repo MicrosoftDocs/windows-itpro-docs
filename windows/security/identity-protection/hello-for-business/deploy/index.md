@@ -51,6 +51,48 @@ It's fundamentally important to understand which deployment model to use for a s
 
 There are three deployment models from which you can choose:
 
+```mermaid
+sequenceDiagram
+    participant dotcom
+    participant iframe
+    participant viewscreen
+    dotcom->>iframe: loads html w/ iframe url
+    iframe->>viewscreen: request template
+    viewscreen->>iframe: html & javascript
+    iframe->>dotcom: iframe ready
+    dotcom->>iframe: set mermaid data on iframe
+    iframe->>iframe: render mermaid
+```
+
+<div id="cloud-only-checkbox">
+**Cloud-only**
+</div>
+
+:::row:::
+    :::column span="1":::
+        - [ ] **Cloud-only**
+    :::column-end:::    
+    :::column span="3"::::::
+        For organizations that only have cloud identities and don't access on-premises resources. These organizations typically join their devices to the cloud and exclusively use resources in the cloud such as SharePoint Online, OneDrive, and others. Also, since the users don't use on-premises resources, they don't need certificates for things like VPN because everything they need is hosted in cloud services.
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        - [ ] **Hybrid**
+    :::column-end:::    
+    :::column span="3"::::::
+        For organizations that have identities synchronized from Active Directory to Microsoft Entra ID. These organizations use applications registered in Microsoft Entra ID, and want a sinlge sign-on (SSO) experience for both on-premises and Microsoft Entra resources.
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        - [ ] **On-premises**
+    :::column-end:::    
+    :::column span="3"::::::
+        For organizations that don't have cloud identities or use applications hosted in Microsoft Entra ID. These organizations use on-premises applications, integrated in Active Directory, and want a SSO user experiences when accessing them.
+    :::column-end:::
+:::row-end:::
+
 | :ballot_box_with_check: | Deployment model | Description |
 |--|--|--|
 | :black_square_button: | **Cloud-only** |For organizations that only have cloud identities and don't access on-premises resources. These organizations typically join their devices to the cloud and exclusively use resources in the cloud such as SharePoint Online, OneDrive, and others. Also, since the users don't use on-premises resources, they don't need certificates for things like VPN because everything they need is hosted in cloud services|

@@ -174,7 +174,7 @@ Windows Hello for Business provisioning begins immediately after the user signs 
 
 > [!div class="nextstepaction"]
 >
-> [Plan a Windows Hello for Business Deployment](deploy/index.md)
+> [Learn how Windows Hello for Business works >](how-it-works.md)
 
 
 <!--

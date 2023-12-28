@@ -85,4 +85,4 @@ Changes to a user account password doesn't affect sign-in or unlock, since Windo
 
 > [!div class="nextstepaction"]
 >
-> [Learn how Windows Hello for Business works >](how-it-works.md)
+> [Plan a Windows Hello for Business Deployment >](deploy/index.md)
