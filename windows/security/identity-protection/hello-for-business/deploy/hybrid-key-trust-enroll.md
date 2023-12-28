@@ -11,60 +11,39 @@ ms.topic: tutorial
 
 After the prerequisites are met and the PKI configuration is validated, Windows Hello for business must be enabled on the Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 
-#### [:::image type="icon" source="images/intune.svg"::: **Intune**](#tab/intune)
+# [:::image type="icon" source="images/intune.svg"::: **Intune**](#tab/intune)
 
-## Configure Windows Hello for Business using Microsoft Intune
+Review the article [Configure Windows Hello for Business using Microsoft Intune](../configure.md#configure-windows-hello-for-business-using-microsoft-intune) to learn about the different options offered by Microsoft Intune to configure Windows Hello for Business.
 
-For Microsoft Entra joined devices and Microsoft Entra hybrid joined devices enrolled in Intune, you can use Intune policies to manage Windows Hello for Business.
+If the Intune tenant-wide policy is enabled and configured to your needs, you can skip to [Configure cloud Kerberos trust policy](#configure-the-cloud-kerberos-trust-policy). Otherwise, follow the instructions below to enable Windows Hello for Business a policy using an *account protection* policy.
 
-There are different ways to enable and configure Windows Hello for Business in Intune:
+## Enable Windows Hello for Business
 
-- Using a policy applied at the tenant level. The tenant policy:
-  - Is only applied at enrollment time, and any changes to its configuration won't apply to devices already enrolled in Intune
-  - It applies to *all devices* getting enrolled in Intune. For this reason, the policy is usually disabled and Windows Hello for Business is enabled using a policy targeted to a security group
-- A device configuration policy that is applied *after* device enrollment. Any changes to the policy will be applied to the devices during regular policy refresh intervals. There are different policy types to choose from:
-  - [Settings catalog][MEM-1]
-  - [Security baselines][MEM-2]
-  - [Custom policy][MEM-3], via the [PassportForWork CSP][MEM-4]
-  - [Account protection policy][MEM-5]
-  - [Identity protection policy template][MEM-6]
+To configure Windows Hello for Business using an account protection policy:
 
-### Verify the tenant-wide policy
-
-To check the Windows Hello for Business policy applied at enrollment time:
-
-1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Select **Devices** > **Windows** > **Windows Enrollment**
-1. Select **Windows Hello for Business**
-1. Verify the status of **Configure Windows Hello for Business** and any settings that may be configured
-
-:::image type="content" source="images/whfb-intune-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Intune admin center." lightbox="images/whfb-intune-disable.png":::
-
-If the tenant-wide policy is enabled and configured to your needs, you can skip to [Enroll in Windows Hello for Business](#enroll-in-windows-hello-for-business). Otherwise, follow the instructions below to create a policy using an *account protection* policy.
-
-### Enable and configure Windows Hello for Business
-
-To configure Windows Hello for Business using an *account protection* policy:
-
-1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the <a href="https://intune.microsoft.com" target="_blank"><b>Microsoft Intune admin center</b></a>
 1. Select **Endpoint security** > **Account protection**
 1. Select **+ Create Policy**
-1. For *Platform**, select **Windows 10 and later** and for *Profile* select **Account protection**
+1. For **Platform**, select **Windows 10 and later** and for **Profile** select **Account protection**
 1. Select **Create**
 1. Specify a **Name** and, optionally, a **Description** > **Next**
-1. Under *Block Windows Hello for Business*, select **Disabled** and multiple policies become available
-    - These policies are optional to configure, but it's recommended to configure *Enable to use a Trusted Platform Module (TPM)* to **Yes**
-    - For more information about these policies, see [Configure Windows Hello for Business](../configure.md)
+1. Under **Block Windows Hello for Business**, select **Disabled** and multiple policies become available
+    - These policies are optional to configure, but it's recommended to configure **Enable to use a Trusted Platform Module (TPM)** to **Yes**
+    - For more information about these policies, see [Windows Hello for Business policy settings](../policy-settings)
+1. Under **Enable to certificate for on-premises resources**, select **Not configured**
 1. Select **Next**
-1. Optionally, add *scope tags* > **Next**
+1. Optionally, add **scope tags** and select **Next**
 1. Assign the policy to a security group that contains as members the devices or users that you want to configure > **Next**
 1. Review the policy configuration and select **Create**
 
-:::image type="content" source="images/whfb-intune-account-protection-enable.png" alt-text="Enablement of Windows Hello for Business from Microsoft Intune admin center using an account protection policy." lightbox="images/whfb-intune-account-protection-enable.png":::
+> [!TIP]
+> If you want to enforce the use of digits for your Windows Hello for Business PIN, use the settings catalog and choose **Digits** or **Digits (User)** instead of using the Account protection template.
 
-#### [:::image type="icon" source="images/group-policy.svg"::: **GPO**](#tab/gpo)
+:::image type="content" source="images/whfb-intune-account-protection-enable.png" alt-text="Screenshot of the enablement of Windows Hello for Business from Microsoft Intune admin center using an account protection policy." lightbox="images/whfb-intune-account-protection-enable.png":::
 
-## Configure Windows Hello for Business using group policies
+Assign the policy to a security group that contains as members the devices or users that you want to configure.
+
+# [:::image type="icon" source="images/group-policy.svg"::: **GPO**](#tab/gpo)
 
 For Microsoft Entra hybrid joined devices, you can use group policies to configure Windows Hello for Business.
 It's suggested to create a security group (for example, *Windows Hello for Business Users*) to make it easy to deploy Windows Hello for Business in phases. You assign **Group Policy permissions** to this group to simplify the deployment by adding the users to the group.
@@ -137,29 +116,25 @@ This information is also available using the `dsregcmd /status` command from a c
 
 :::image type="content" source="images/Event358.png" alt-text="Details about event ID 358 showing that the device is ready to enroll in Windows Hello for Business." border="false" lightbox="images/Event358.png":::
 
-### PIN Setup
+### User experience
 
-The following process occurs after a user signs in, to enroll in Windows Hello for Business:
+After a user signs in, the Windows Hello for Business enrollment process begins:
 
-1. The user is prompted with a full screen page to use Windows Hello with the organization account. The user selects **OK**
-1. The enrollment flow proceeds to the multi-factor authentication phase. The process informs the user that there's an MFA contact attempt, using the configured form of MFA. The provisioning process doesn't proceed until authentication succeeds, fails or times out. A failed or timeout MFA results in an error and asks the user to retry
+1. If the device supports biometric authentication, the user is prompted to set up a biometric gesture. This gesture can be used to unlock the device and authenticate to resources that require Windows Hello for Business. The user can skip this step if they don't want to set up a biometric gesture
+1. The user is prompted to use Windows Hello with the organization account. The user selects **OK**
+1. The provisioning flow proceeds to the multi-factor authentication portion of the enrollment. Provisioning informs the user that it's actively attempting to contact the user through their configured form of MFA. The provisioning process doesn't proceed until authentication succeeds, fails or times out. A failed or timeout MFA results in an error and asks the user to retry
 1. After a successful MFA, the provisioning flow asks the user to create and validate a PIN. This PIN must observe any PIN complexity policies configured on the device
-1. The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Microsoft Entra ID to register the public key. When key registration completes, Windows Hello for Business provisioning informs the user they can use their PIN to sign-in. The user may close the provisioning application and see their desktop. While the user has completed provisioning, Microsoft Entra Connect synchronizes the user's key to Active Directory
+1. The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Microsoft Entra ID to register the public key. When key registration completes, Windows Hello for Business provisioning informs the user they can use their PIN to sign-in. The user may close the provisioning application and access their desktop
 
-:::image type="content" source="images/haadj-whfb-pin-provisioning.gif" alt-text="Animation showing a user logging on to an HAADJ device with a password, and being prompted to enroll in Windows Hello for Business.":::
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7 alt-text="Video showing the Windows Hello for Business enrollment steps after signing in with a password."]
+
+While the user has completed provisioning, Microsoft Entra Connect synchronizes the user's key from Microsoft Entra ID to Active Directory.
 
 > [!IMPORTANT]
 > The minimum time needed to synchronize the user's public key from Microsoft Entra ID to the on-premises Active Directory is 30 minutes. The Microsoft Entra Connect scheduler controls the synchronization interval.
-> **This synchronization latency delays the user's ability to authenticate and use on-premises resources until the user's public key has synchronized to Active Directory.** Once synchronized, the user can authenticate and use on-premises resources.
+> **This synchronization latency delays the user's ability to authenticate and use on-premises resources until the user's public key has synchronized to Active Directory.** Once synchronized, the user can authenticate and access on-premises resources.
 > Read [Microsoft Entra Connect Sync: Scheduler][AZ-5] to view and adjust the **synchronization cycle** for your organization.
 
 <!--links-->
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
 [AZ-5]: /azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler
-
-[MEM-1]: /mem/intune/configuration/settings-catalog
-[MEM-2]: /mem/intune/protect/security-baselines
-[MEM-3]: /mem/intune/configuration/custom-settings-configure
-[MEM-4]: /windows/client-management/mdm/passportforwork-csp
-[MEM-5]: /mem/intune/protect/endpoint-security-account-protection-policy
-[MEM-6]: /mem/intune/protect/identity-protection-configure

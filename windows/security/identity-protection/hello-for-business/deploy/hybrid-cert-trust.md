@@ -22,9 +22,8 @@ ms.topic: tutorial
 > - [Licensing for cloud services](index.md#licensing-for-cloud-services)
 > - [Prepare users to use Windows Hello](index.md#prepare-users-to-use-windows-hello)
 
-### Federated authentication to Microsoft Entra ID
+## Federated authentication to Microsoft Entra ID
 
-Windows Hello for Business hybrid certificate trust doesn't support Microsoft Entra ID *Pass-through Authentication* (PTA) or *password hash sync* (PHS).\
 Windows Hello for Business hybrid certificate trust requires Active Directory to be federated with Microsoft Entra ID using AD FS. You must also configure the AD FS farm to support Azure registered devices.
 
 If you're new to AD FS and federation services:
@@ -38,7 +37,7 @@ Once you have your AD FS design ready:
 
 The AD FS farm used with Windows Hello for Business must be Windows Server 2016 with minimum update of [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).
 
-### Device registration and device write-back
+## Device registration and device write-back
 
 Windows devices must be registered in Microsoft Entra ID. Devices can be registered in Microsoft Entra ID using either *Microsoft Entra join* or *Microsoft Entra hybrid join*.\
 For Microsoft Entra hybrid joined devices, review the guidance on the [plan your Microsoft Entra hybrid join implementation][AZ-8] page.
