@@ -99,11 +99,11 @@ For on-premises deployments, the identity provider is the on-premises server run
 
 Here's a list of requirements for federated and non-federated deployments.
 
-| | Deployment model | Authentication options | Requirements and details |
-|-|-|-|-|
-|:black_square_button:| Cloud-only |:black_square_button: Microsoft Entra ID<br>:black_square_button: Federated |Federated authentication requires a third-party federation service.|
-|:black_square_button:|Hybrid|:black_square_button: Microsoft Entra ID<br>:black_square_button: Federated|:black_square_button: Federated authentication requires AD FS or a third-party federation service<br>:black_square_button: **Cloud Kerberos trust** requires Microsoft Entra Kerberos<br>:black_square_button: **Key trust, non-federated**: [Password hash synchronization (PHS)][ENTRA-6] or [Microsoft Entra pass-through authentication (PTA)][ENTRA-7]<br> :black_square_button: **Certificate trust** doesn't support [PTA][ENTRA-7] or [(PHS)][ENTRA-6]. Active Directory must be federated with Microsoft Entra ID using AD FS. Additionally, you need to configure your AD FS farm to support Azure registered devices|
-|:black_square_button:|On-premises |AD FS|n/a|
+|  | Deployment model | Authentication options | Requirements and details |
+|--|--|--|--|
+| :black_square_button: | Cloud-only | :black_square_button: Microsoft Entra ID<br> :black_square_button: Federated | Federated authentication requires a third-party federation service. |
+| :black_square_button: | Hybrid | :black_square_button: Microsoft Entra ID<br> :black_square_button: Federated | :black_square_button: Federated authentication requires AD FS or a third-party federation service<br> :black_square_button: **Cloud Kerberos trust** requires Microsoft Entra Kerberos<br> :black_square_button: **Key trust, non-federated**: [Password hash synchronization (PHS)][ENTRA-6] or [Microsoft Entra pass-through authentication (PTA)][ENTRA-7]<br> :black_square_button: **Certificate trust** doesn't support [PTA][ENTRA-7] or [(PHS)][ENTRA-6]. Active Directory must be federated with Microsoft Entra ID using AD FS. Additionally, you need to configure your AD FS farm to support Azure registered devices |
+| :black_square_button: | On-premises | AD FS | n/a |
 
 ### Device registration
 
