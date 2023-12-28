@@ -15,7 +15,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>
-ms.date: 02/06/2023
+ms.date: 11/07/2023
 ---
 
 # Appendix
@@ -37,9 +37,10 @@ Most customers choose to install their cache node on a Windows Server with a nes
 
 ### Installing on VMware
 
+Microsoft Connected Cache for Enterprise and Education can be successfully installed on VMware. To do so, there are a couple of additional configurations to be made. Ensure the VM is turned off before making the following configuration changes:
+
 1. Ensure that you're using ESX. In the VM settings, turn on the option **Expose hardware assisted virtualization to the guest OS**.
-1. Microsoft Connected Cache for Enterprise and Education can be successfully installed on VMware. To do so, there are a couple of additional configurations to be made. Ensure the VM is turned off before making the configuration changes:
-Using the Hyper-V Manager, create an external switch. For the external switch to have internet connection, ensure **"Allow promiscuous mode"** is switched to **Yes**.
+1. Using the Hyper-V Manager, create an external switch. For the external switch to have internet connection, ensure **"Allow promiscuous mode"** is switched to **Yes**.
 
 ### Installing on Hyper-V
 
