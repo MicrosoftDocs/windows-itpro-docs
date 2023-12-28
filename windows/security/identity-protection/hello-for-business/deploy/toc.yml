@@ -12,9 +12,6 @@ items:
     - name: Overview
       href: hybrid-key-trust.md
       displayName: key trust
-    - name: Configure and validate the PKI
-      href: hybrid-key-trust-pki.md
-      displayName: key trust
     - name: Configure and provision Windows Hello for Business
       href: hybrid-key-trust-enroll.md
       displayName: key trust

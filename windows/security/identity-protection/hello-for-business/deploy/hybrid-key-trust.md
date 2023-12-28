@@ -21,6 +21,15 @@ ms.topic: tutorial
 > - [Device configuration](index.md#device-configuration)
 > - [Prepare users to use Windows Hello](index.md#prepare-users-to-use-windows-hello)
 
+## Deployment steps
+
+> [!div class="checklist"]
+> Once the prerequisites are met, deploying Windows Hello for Business consists of the following steps:
+>
+> - [Configure and validate the Public Key Infrastructure](#configure-and-validate-the-public-key-infrastructure)
+> - [Configure and enroll in Windows Hello for Business](hybrid-key-trust-enroll.md)
+> - (optional) [Configure single sign-on for Microsoft Entra joined devices](../hello-hybrid-aadj-sso.md)
+
 ## Configure and validate the Public Key Infrastructure
 
 Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* model. The domain controllers must have a certificate, which serves as a *root of trust* for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
@@ -67,9 +76,8 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 
 ## Section review and next steps
 
-Before moving to the next section, ensure the following steps are complete:
-
 > [!div class="checklist"]
+> Before moving to the next section, ensure the following steps are complete:
 >
 > - Configure domain controller certificates
 > - Supersede existing domain controller certificates
@@ -79,23 +87,7 @@ Before moving to the next section, ensure the following steps are complete:
 > - Validate the domain controllers configuration
 
 > [!div class="nextstepaction"]
-> [Next: configure and provision Windows Hello for Business >](hybrid-key-trust-enroll.md)
+> [Next: configure and enroll in Windows Hello for Business >](hybrid-key-trust-enroll.md)
 
 <!--links-->
 [SERV-1]: /troubleshoot/windows-server/windows-security/requirements-domain-controller
-
-<!-->
-## Next steps
-
-> [!div class="checklist"]
-> Once the prerequisites are met, deploying Windows Hello for Business with a hybrid key trust model consists of the following steps:
->
-> - Configure and validate the PKI
-> - Configure Windows Hello for Business settings
-> - Provision Windows Hello for Business on Windows clients
-> - Configure single sign-on (SSO) for Microsoft Entra joined devices
-
-> [!div class="nextstepaction"]
-> [Next: configure and validate the Public Key Infrastructure >](hybrid-key-trust-pki.md)
-
-<!--links-->
