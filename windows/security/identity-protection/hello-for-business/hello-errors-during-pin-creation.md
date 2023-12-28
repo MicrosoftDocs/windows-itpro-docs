@@ -13,7 +13,7 @@ When you set up Windows Hello in Windows client, you may get an error during the
 
 The following image shows an example of an error during **Create a PIN**.
 
-![PIN error.](images/pinerror.png)
+![PIN error.](images/provisioning-error.png)
 
 ## Error mitigations
 

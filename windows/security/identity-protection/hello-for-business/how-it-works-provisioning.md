@@ -14,16 +14,6 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 - The Windows Hello for Business deployment type
 - If the environment is managed or federated
 
-List of provisioning flows:
-
-- [Microsoft Entra joined provisioning in a managed environment](#microsoft-entra-joined-provisioning-in-a-managed-environment)
-- [Microsoft Entra joined provisioning in a federated environment](#microsoft-entra-joined-provisioning-in-a-federated-environment)
-- [Microsoft Entra hybrid joined provisioning in a cloud Kerberos trust deployment in a managed environment](#microsoft-entra-hybrid-joined-provisioning-in-a-cloud-kerberos-trust-deployment-in-a-managed-environment)
-- [Microsoft Entra hybrid joined provisioning in a key trust deployment in a managed environment](#microsoft-entra-hybrid-joined-provisioning-in-a-key-trust-deployment-in-a-managed-environment)
-- [Microsoft Entra hybrid joined provisioning in a synchronous certificate trust deployment in a federated environment](#microsoft-entra-hybrid-joined-provisioning-in-a-synchronous-certificate-trust-deployment-in-a-federated-environment)
-- [Domain joined provisioning in an On-premises key trust deployment](#domain-joined-provisioning-in-an-on-premises-key-trust-deployment)
-- [Domain joined provisioning in an On-premises certificate trust deployment](#domain-joined-provisioning-in-an-on-premises-certificate-trust-deployment)
-
 > [!NOTE]
 > The flows in this section are not exhaustive for every possible scenario. For example, Federated Key Trust is also a supported configuration.
 
