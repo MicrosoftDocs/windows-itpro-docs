@@ -89,6 +89,9 @@ Windows Hello for Business is designed to be managed by group policy or MDM, but
 > [!IMPORTANT]
 > The [*MDMWinsOverGP*](/windows/client-management/mdm/policy-csp-controlpolicyconflict#mdmwinsovergp) policy setting doesn't apply to Windows Hello for Business. MDMWinsOverGP only applies to policies in the *Policy CSP*, while the Windows Hello for Business policies are in the *PassportForWork CSP*.
 
+> [!NOTE]
+> For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune][MEM-1] and [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp).
+
 ## Manage Windows Hello for Business in your organization
 
 You can create a Group Policy or mobile device management (MDM) policy to configure Windows Hello for Business on Windows devices.
@@ -151,10 +154,10 @@ Learn more about Windows Hello for Business features and how to configure them:
 
 [CSP-1]: /windows/client-management/mdm/passportforwork-csp#devicetenantid
 [CSP-2]: /windows/client-management/mdm/passportforwork-csp
-[ENTRA-1]: /entra/identity/conditional-access/overview
 [ENTRA-2]: /entra/fundamentals/how-to-find-tenant
 [MEM-1]: /mem/intune/configuration/settings-catalog
 [MEM-2]: /mem/intune/protect/security-baselines
 [MEM-3]: /mem/intune/configuration/custom-settings-configure
+[MEM-4]: /windows/client-management/mdm/passportforwork-csp
 [MEM-5]: /mem/intune/protect/endpoint-security-account-protection-policy
 [MEM-6]: /mem/intune/protect/identity-protection-configure

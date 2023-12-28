@@ -21,17 +21,18 @@ ms.topic: tutorial
 
 ## Deployment steps
 
-Once the prerequisites are met, deploying Windows Hello for Business consists of the following steps:
-
-- Deploy Microsoft Entra Kerberos
-- Configure Windows Hello for Business settings
-- Provision Windows Hello for Business on Windows clients
+> [!div class="checklist"]
+> Once the prerequisites are met, deploying Windows Hello for Business consists of the following steps:
+>
+> - [Deploy Microsoft Entra Kerberos](#deploy-microsoft-entra-kerberos)
+> - [Configure Windows Hello for Business settings](#configure-windows-hello-for-business-policy)
+> - [Provision Windows Hello for Business](#provision-windows-hello-for-business)
 
 ## Deploy Microsoft Entra Kerberos
 
-If you've already deployed on-premises SSO for passwordless security key sign-in, then you've already deployed Microsoft Entra Kerberos in your hybrid environment. You don't need to redeploy or change your existing Microsoft Entra Kerberos deployment to support Windows Hello for Business and you can skip this section.
+If you've already deployed on-premises SSO for passwordless security key sign-in, then you've already deployed Microsoft Entra Kerberos in your organization. You don't need to redeploy or change your existing Microsoft Entra Kerberos deployment to support Windows Hello for Business and you can skip to the [Configure Windows Hello for Business settings](#configure-windows-hello-for-business-policy) section.
 
-If you haven't deployed Microsoft Entra Kerberos, follow the instructions in the [Enable passwordless security key sign-in to on-premises resources by using Microsoft Entra ID][AZ-2] documentation. This page includes information on how to install and use the Microsoft Entra Kerberos PowerShell module. Use the module to create a Microsoft Entra Kerberos server object for the domains where you want to use Windows Hello for Business cloud Kerberos trust.
+If you haven't deployed Microsoft Entra Kerberos, follow the instructions in the [Enable passwordless security key sign-in][ENTRA-1] documentation. This page includes information on how to install and use the Microsoft Entra Kerberos PowerShell module. Use the module to create a Microsoft Entra Kerberos server object for the domains where you want to use Windows Hello for Business cloud Kerberos trust.
 
 ### Microsoft Entra Kerberos and cloud Kerberos trust authentication
 
@@ -43,7 +44,7 @@ When Microsoft Entra Kerberos is enabled in an Active Directory domain, an *Azur
   > [!NOTE]
   > Similar rules and restrictions used for RODCs apply to the AzureADKerberos computer object. For example, users that are direct or indirect members of priviliged built-in security groups won't be able to use cloud Kerberos trust.
 
-:::image type="content" source="images/azuread-kerberos-object.png" alt-text="Active Directory Users and Computers console, showing the computer object representing the Microsoft Entra Kerberos server ":::
+:::image type="content" source="images/azuread-kerberos-object.png" alt-text="Screenshot of the Active Directory Users and Computers console, showing the computer object representing the Microsoft Entra Kerberos server.":::
 
 For more information about how Microsoft Entra Kerberos works with Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business authentication technical deep dive](../how-it-works-authentication.md#microsoft-entra-hybrid-join-authentication-using-cloud-kerberos-trust).
 
@@ -62,26 +63,7 @@ After setting up the Microsoft Entra Kerberos object, Windows Hello for business
 
 For devices managed by Intune, you can use Intune policies to configure Windows Hello for Business.
 
-There are different ways to enable and configure Windows Hello for Business in Intune:
-
-- When the device is enrolled in Intune, a tenant-wide policy is applied to the device. This policy is applied at enrollment time only, and any changes to its configuration won't apply to devices already enrolled in Intune. For this reason, this policy is usually disabled, and Windows Hello for Business can be enabled using a policy targeted to a security group.
-- After the device is enrolled in Intune, you can apply a device configuration policy. Any changes to the policy will be applied to the devices during regular policy refresh intervals. There are different policy types to choose from:
-  - [Settings catalog][MEM-7]
-  - [Security baselines][MEM-2]
-  - [Custom policy][MEM-3], via the [PassportForWork CSP][MEM-4]
-  - [Account protection policy][MEM-5]
-  - [Identity protection policy template][MEM-6]
-
-### Verify the tenant-wide policy
-
-To check the Windows Hello for Business policy applied at enrollment time:
-
-1. Sign in to the <a href="https://intune.microsoft.com" target="_blank"><b>Microsoft Intune admin center</b></a>.
-1. Select **Devices** > **Windows** > **Windows Enrollment**.
-1. Select **Windows Hello for Business**.
-1. Verify the status of **Configure Windows Hello for Business** and any settings that may be configured.
-
-:::image type="content" source="images/whfb-intune-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Intune admin center." border="true" lightbox="images/whfb-intune-disable.png":::
+For more information about the options offered by Microsoft Intune, see [Configure Windows Hello for Business using Microsoft Intune](../configure.md#configure-windows-hello-for-business-using-microsoft-intune).
 
 If the tenant-wide policy is enabled and configured to your needs, you can skip to [Configure cloud Kerberos trust policy](#configure-the-cloud-kerberos-trust-policy). Otherwise, follow the instructions below to create a policy using an *account protection* policy.
 
@@ -107,7 +89,7 @@ To configure Windows Hello for Business using an account protection policy:
 > [!TIP]
 > If you want to enforce the use of digits for your Windows Hello for Business PIN, use the settings catalog and choose **Digits** or **Digits (User)** instead of using the Account protection template.
 
-:::image type="content" source="images/whfb-intune-account-protection-enable.png" alt-text="This image shows the enablement of Windows Hello for Business from Microsoft Intune admin center using an account protection policy." lightbox="images/whfb-intune-account-protection-enable.png":::
+:::image type="content" source="images/whfb-intune-account-protection-enable.png" alt-text="Screenshot of the enablement of Windows Hello for Business from Microsoft Intune admin center using an account protection policy." lightbox="images/whfb-intune-account-protection-enable.png":::
 
 Assign the policy to a security group that contains as members the devices or users that you want to configure.
 
@@ -142,12 +124,9 @@ Microsoft Entra hybrid joined organizations can use Windows Hello for Business G
 
 The Enable Windows Hello for Business Group Policy setting is used by Windows to determine if a user should attempt to enroll a credential. A user will only attempt enrollment if this policy is configured to enabled.  
 
-You can configure the Enable Windows Hello for Business Group Policy setting for computers or users. Deploying this policy setting to computers results in all users that sign-in that computer to attempt a Windows Hello for Business enrollment. Deploying this policy setting to a user results in only that user attempting a Windows Hello for Business enrollment. Additionally, you can deploy the policy setting to a group of users so only those users attempt a Windows Hello for Business enrollment. If both user and computer policy settings are deployed, the user policy setting has precedence.
+You can configure the Enable Windows Hello for Business Group Policy setting for computers or users. Deploying this policy setting to computers results in all users that sign-in that computer to attempt a Windows Hello for Business enrollment. Deploying this policy setting to a user results in only that user attempting a Windows Hello for Business enrollment. You can deploy the policy setting to a group of users so only those users attempt a Windows Hello for Business enrollment. If both user and computer policy settings are deployed, the user policy setting has precedence.
 
 Cloud Kerberos trust requires setting a dedicated policy for it to be enabled. This policy is only available as a computer configuration.
-
-> [!NOTE]
-> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune][MEM-1] and [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp). For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../configure.md#policy-conflicts-from-multiple-policy-sources).
 
 #### Update administrative templates
 
@@ -169,7 +148,7 @@ You can configure Windows Hello for Business cloud Kerberos trust using a Group 
 ---
 
 > [!IMPORTANT]
-> If the **Use certificate for on-premises authentication** policy is enabled, certificate trust will take precedence over cloud Kerberos trust. Ensure that the machines that you want to enable cloud Kerberos trust have this policy **not configured**.
+> If the **Use certificate for on-premises authentication** policy is enabled, certificate trust takes precedence over cloud Kerberos trust. Ensure that the machines that you want to enable cloud Kerberos trust have this policy **not configured**.
 
 ## Provision Windows Hello for Business
 
@@ -240,9 +219,13 @@ The following scenarios aren't supported using Windows Hello for Business cloud 
 
 <!--Links-->
 
-[AZ-2]: /azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises#install-the-azure-ad-kerberos-powershell-module
+[ENTRA-1]: /entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises#install-the-azureadhybridauthenticationmanagement-module
 [AZ-3]: /azure/active-directory/fundamentals/how-to-find-tenant
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
+
+[SERV-1]: /windows-server/administration/performance-tuning/role/active-directory-server/capacity-planning-for-active-directory-domain-services
+
+[TS-1]: /troubleshoot/windows-client/group-policy/create-and-manage-central-store
 
 [MEM-1]: /mem/intune/protect/identity-protection-windows-settings
 [MEM-2]: /mem/intune/protect/security-baselines
@@ -251,7 +234,3 @@ The following scenarios aren't supported using Windows Hello for Business cloud 
 [MEM-5]: /mem/intune/protect/endpoint-security-account-protection-policy
 [MEM-6]: /mem/intune/protect/identity-protection-configure
 [MEM-7]: /mem/intune/configuration/settings-catalog
-
-[SERV-1]: /windows-server/administration/performance-tuning/role/active-directory-server/capacity-planning-for-active-directory-domain-services
-
-[TS-1]: /troubleshoot/windows-client/group-policy/create-and-manage-central-store

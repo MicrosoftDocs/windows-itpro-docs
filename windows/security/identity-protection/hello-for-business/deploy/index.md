@@ -112,7 +112,7 @@ Here's a list of requirements for federated and nonfederated deployments.
 | Deployment model | Authentication options |
 |--|--| 
 | **Cloud-only** | :black_square_button: **Non-federated**<br> :black_square_button: **Federated**: federated authentication requires a third-party federation service |
-| **Hybrid** | :black_square_button: **Non-federated**:<br>&emsp; :black_square_button: **Key trust** requires [Password hash synchronization (PHS)][ENTRA-6] or [Microsoft Entra pass-through authentication (PTA)][ENTRA-7]<br><br> :black_square_button: **Federated**: federated authentication requires AD FS or a third-party federation service<br>&emsp; :black_square_button: **Certificate trust** doesn't support [PTA][ENTRA-7] or [PHS][ENTRA-6]. Active Directory must be federated with Microsoft Entra ID using AD FS. Additionally, you must configure your AD FS farm to support Microsoft Entra registered devices |
+| **Hybrid** | :black_square_button: **Non-federated**:<br>&emsp; :black_square_button: **Key trust** requires [password hash synchronization (PHS)][ENTRA-6] or [pass-through authentication (PTA)][ENTRA-7]<br><br> :black_square_button: **Federated**: federated authentication requires AD FS or a third-party federation service<br>&emsp; :black_square_button: **Certificate trust** doesn't support [PTA][ENTRA-7] or [PHS][ENTRA-6]. Active Directory must be federated with Microsoft Entra ID using AD FS. Additionally, you must configure your AD FS farm to support Microsoft Entra registered devices |
 | **On-premises** | AD FS |
 
 ### Device registration

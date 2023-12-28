@@ -17,7 +17,7 @@ ms.topic: how-to
 > - [Licensing for cloud services](index.md#licensing-for-cloud-services)
 > - [Prepare users to use Windows Hello](index.md#prepare-users-to-use-windows-hello)
 
-## Introduction
+## Configure and enroll in Windows Hello for Business
 
 When you Microsoft Entra join a device, the system attempts to automatically enroll you in Windows Hello for Business, by default. If you want to use Windows Hello for Business in a cloud-only environment with its default settings, there's no additional configuration needed.
 
