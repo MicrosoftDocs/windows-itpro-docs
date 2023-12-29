@@ -1,11 +1,11 @@
 ---
 title: Windows Hello for Business cloud Kerberos trust deployment
 description: Learn how to deploy Windows Hello for Business in a cloud Kerberos trust scenario.
-ms.date: 02/24/2023
+ms.date: 12/29/2023
 ms.topic: tutorial
 ---
 
-# Cloud Kerberos trust deployment
+# Cloud Kerberos trust deployment guide
 
 [!INCLUDE [apply-to-hybrid-cloud-kerberos-trust](includes/apply-to-hybrid-cloud-kerberos-trust.md)]
 
@@ -30,7 +30,7 @@ ms.topic: tutorial
 
 ## Deploy Microsoft Entra Kerberos
 
-If you've already deployed on-premises SSO for passwordless security key sign-in, then you've already deployed Microsoft Entra Kerberos in your organization. You don't need to redeploy or change your existing Microsoft Entra Kerberos deployment to support Windows Hello for Business and you can skip to the [Configure Windows Hello for Business settings](#configure-windows-hello-for-business-policy) section.
+If you've already deployed on-premises SSO for passwordless security key sign-in, then you've already deployed Microsoft Entra Kerberos in your organization. You don't need to redeploy or change your existing Microsoft Entra Kerberos deployment to support Windows Hello for Business and you can skip to the [Configure Windows Hello for Business policy settings](#configure-windows-hello-for-business-policy-settings) section.
 
 If you haven't deployed Microsoft Entra Kerberos, follow the instructions in the [Enable passwordless security key sign-in][ENTRA-1] documentation. This page includes information on how to install and use the Microsoft Entra Kerberos PowerShell module. Use the module to create a Microsoft Entra Kerberos server object for the domains where you want to use Windows Hello for Business cloud Kerberos trust.
 
@@ -65,31 +65,7 @@ Review the article [Configure Windows Hello for Business using Microsoft Intune]
 
 If the Intune tenant-wide policy is enabled and configured to your needs, you can skip to [Configure cloud Kerberos trust policy](#configure-the-cloud-kerberos-trust-policy). Otherwise, follow the instructions below to enable Windows Hello for Business a policy using an *account protection* policy.
 
-### Enable Windows Hello for Business
-
-To configure Windows Hello for Business using an account protection policy:
-
-1. Sign in to the <a href="https://intune.microsoft.com" target="_blank"><b>Microsoft Intune admin center</b></a>
-1. Select **Endpoint security** > **Account protection**
-1. Select **+ Create Policy**
-1. For **Platform**, select **Windows 10 and later** and for **Profile** select **Account protection**
-1. Select **Create**
-1. Specify a **Name** and, optionally, a **Description** > **Next**
-1. Under **Block Windows Hello for Business**, select **Disabled** and multiple policies become available
-    - These policies are optional to configure, but it's recommended to configure **Enable to use a Trusted Platform Module (TPM)** to **Yes**
-    - For more information about these policies, see [Windows Hello for Business policy settings](../policy-settings)
-1. Under **Enable to certificate for on-premises resources**, select **Not configured**
-1. Select **Next**
-1. Optionally, add **scope tags** and select **Next**
-1. Assign the policy to a security group that contains as members the devices or users that you want to configure > **Next**
-1. Review the policy configuration and select **Create**
-
-> [!TIP]
-> If you want to enforce the use of digits for your Windows Hello for Business PIN, use the settings catalog and choose **Digits** or **Digits (User)** instead of using the Account protection template.
-
-:::image type="content" source="images/whfb-intune-account-protection-enable.png" alt-text="Screenshot of the enablement of Windows Hello for Business from Microsoft Intune admin center using an account protection policy." lightbox="images/whfb-intune-account-protection-enable.png":::
-
-Assign the policy to a security group that contains as members the devices or users that you want to configure.
+[!INCLUDE [intune-account-protection-policy](includes/intune-account-protection-policy.md)]
 
 ### Configure the cloud Kerberos trust policy
 
@@ -111,13 +87,10 @@ For more information about the cloud Kerberos trust policy, see [Windows Hello f
 
 # [:::image type="icon" source="images/group-policy.svg"::: **GPO**](#tab/gpo)
 
-Microsoft Entra hybrid joined organizations can use Windows Hello for Business Group Policy to manage the feature. Group Policy can be configured to enable users to enroll and use Windows Hello for Business.
+[!INCLUDE [gpo-enable-whfb](includes/gpo-enable-whfb.md)]
 
-The Enable Windows Hello for Business Group Policy setting is used by Windows to determine if a user should attempt to enroll a credential. A user will only attempt enrollment if this policy is configured to enabled.  
-
-You can configure the Enable Windows Hello for Business Group Policy setting for computers or users. Deploying this policy setting to computers results in all users that sign-in that computer to attempt a Windows Hello for Business enrollment. Deploying this policy setting to a user results in only that user attempting a Windows Hello for Business enrollment. You can deploy the policy setting to a group of users so only those users attempt a Windows Hello for Business enrollment. If both user and computer policy settings are deployed, the user policy setting has precedence.
-
-Cloud Kerberos trust requires setting a dedicated policy for it to be enabled. This policy is only available as a computer configuration.
+> [!NOTE]
+> Cloud Kerberos trust requires setting a dedicated policy for it to be enabled. This policy is only available as a computer configuration.
 
 #### Update administrative templates
 
@@ -157,15 +130,7 @@ The cloud Kerberos trust prerequisite check detects whether the user has a parti
 
 ### User experience
 
-After a user signs in, the Windows Hello for Business enrollment process begins:
-
-1. If the device supports biometric authentication, the user is prompted to set up a biometric gesture. This gesture can be used to unlock the device and authenticate to resources that require Windows Hello for Business. The user can skip this step if they don't want to set up a biometric gesture
-1. The user is prompted to use Windows Hello with the organization account. The user selects **OK**
-1. The provisioning flow proceeds to the multi-factor authentication portion of the enrollment. Provisioning informs the user that it's actively attempting to contact the user through their configured form of MFA. The provisioning process doesn't proceed until authentication succeeds, fails or times out. A failed or timeout MFA results in an error and asks the user to retry
-1. After a successful MFA, the provisioning flow asks the user to create and validate a PIN. This PIN must observe any PIN complexity policies configured on the device
-1. The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Microsoft Entra ID to register the public key. When key registration completes, Windows Hello for Business provisioning informs the user they can use their PIN to sign-in. The user may close the provisioning application and access their desktop
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7 alt-text="Video showing the Windows Hello for Business enrollment steps after signing in with a password."]
+[!INCLUDE [user-experience](includes/user-experience.md)]
 
 Once a user completes enrollment with cloud Kerberos trust, the Windows Hello gesture can be used **immediately** for sign-in. On a Microsoft Entra hybrid joined device, the first use of the PIN requires line of sight to a DC. Once the user has signed in or unlocked with the DC, cached sign-in can be used for subsequent unlocks without line of sight or network connectivity.
 

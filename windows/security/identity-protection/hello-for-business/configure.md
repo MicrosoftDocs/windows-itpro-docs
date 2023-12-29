@@ -96,11 +96,9 @@ Windows Hello for Business is designed to be managed by group policy or MDM, but
 
 You can create a Group Policy or mobile device management (MDM) policy to configure Windows Hello for Business on Windows devices.
 
-
 ## Disable Windows Hello for Business enrollment
 
 Windows Hello for Business is enabled by default for devices that are Microsoft Entra joined. If you need to disable the automatic enablement, there are different options to configure them.
-
 
 ### Use Intune to disable Windows Hello for Business enrollment
 
