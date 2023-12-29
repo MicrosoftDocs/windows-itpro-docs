@@ -101,11 +101,7 @@ The certificate authority validates the certificate was signed by the registrati
 > Windows Server 2016 update [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889) provides synchronous certificate enrollment during hybrid certificate trust provisioning. With this update, users don't need to wait for Microsoft Entra Connect to sync their public key on-premises. Users enroll their certificate during provisioning and can use the certificate for sign-in immediately after completing the provisioning. The update needs to be installed on the federation servers.
 
 <!--links-->
+
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
 
-[MEM-1]: /mem/intune/configuration/settings-catalog
-[MEM-2]: /mem/intune/protect/security-baselines
 [MEM-3]: /mem/intune/configuration/custom-settings-configure
-[MEM-4]: /windows/client-management/mdm/passportforwork-csp
-[MEM-5]: /mem/intune/protect/endpoint-security-account-protection-policy
-[MEM-6]: /mem/intune/protect/identity-protection-configure

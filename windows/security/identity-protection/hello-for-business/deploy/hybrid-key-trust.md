@@ -1,5 +1,5 @@
 ---
-title: Windows Hello for Business hybrid key trust deployment
+title: Windows Hello for Business hybrid key trust deployment guide
 description: Learn how to deploy Windows Hello for Business in a hybrid key trust scenario.
 ms.date: 12/29/2023
 ms.topic: tutorial
