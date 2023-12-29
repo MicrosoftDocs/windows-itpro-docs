@@ -23,49 +23,26 @@ If the Intune tenant-wide policy is enabled and configured to your needs, you ca
 
 [!INCLUDE [gpo-enable-whfb](includes/gpo-enable-whfb.md)]
 
-### Enable and configure Windows Hello for Business
+### Configure the Windows Hello for Business with group policy
 
-Sign-in a domain controller or management workstations with *Domain Admin* equivalent credentials.
+[!INCLUDE [gpo-settings-1](../../../../../includes/configure/gpo-settings-1.md)]
 
-1. Start the **Group Policy Management Console** (gpmc.msc)
-1. Expand the domain and select the **Group Policy Object** node in the navigation pane
-1. Right-click **Group Policy object** and select **New**
-1. Type *Enable Windows Hello for Business* in the name box and select **OK**
-1. In the content pane, right-click the **Enable Windows Hello for Business** group policy object and select **Edit**
-1. In the navigation pane, expand **Policies** under **User Configuration**
-1. Expand **Administrative Templates > Windows Component**, and select **Windows Hello for Business**
-1. In the content pane, open **Use Windows Hello for Business**. Select **Enable > OK**
-1. Close the **Group Policy Management Editor**
+| Group policy path | Group policy setting | Value |
+| - | - | - |
+| **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business** |Use Windows Hello for Business| **Enabled**|
+| **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business** |Use a hardware security device| **Enabled**|
 
 > [!NOTE]
-> Windows Hello for Business can be configured using different policies. These policies are optional to configure, but it's recommended to enable *Use a hardware security device*.
->
-> For more information about these policies, see [Configure Windows Hello for Business](../configure.md).
+> The enablement of the *Use a hardware security device* policy setting is optional, but recommended.
 
-### Configure security for GPO
+[!INCLUDE [gpo-settings-2](../../../../../includes/configure/gpo-settings-2.md)]
 
-The best way to deploy the Windows Hello for Business GPO is to use security group filtering. Only members of the targeted security group will provision Windows Hello for Business, enabling a phased rollout.
-
-1. Start the **Group Policy Management Console** (gpmc.msc)
-1. Expand the domain and select the **Group Policy Object** node in the navigation pane
-1. Open the **Enable Windows Hello for Business** GPO
-1. In the **Security Filtering** section of the content pane, select **Add**.  Type the name of the security group you previously created (for example, *Windows Hello for Business Users*) and select **OK**
-1. Select the **Delegation** tab. Select **Authenticated Users > Advanced**
-1. In the **Group or User names** list, select **Authenticated Users**.  In the **Permissions for Authenticated Users** list, clear the **Allow** check box for the **Apply Group Policy** permission. Select **OK**
-
-### Deploy the Windows Hello for Business Group Policy object
-
-The application of Group Policy object uses security group filtering. This solution allows linking the GPO to the domain, ensuring the GPO is scoped to all users. The security group filtering ensures that only the members of the *Windows Hello for Business Users* global group receive and apply the GPO, which results in the provisioning of Windows Hello for Business.
-
-1. Start the **Group Policy Management Console** (gpmc.msc)
-1. In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and select **Link an existing GPO**
-1. In the **Select GPO** dialog box, select *Enable Windows Hello for Business* or the name of the Windows Hello for Business Group Policy object you previously created and select **OK**
-
-### Add members to the targeted group
-
-Users (or devices) must receive the Windows Hello for Business group policy settings and have the proper permission to provision  Windows Hello for Business. You can provide users with these settings and permissions by adding members to the *Windows Hello for Business Users* group. Users and groups who aren't members of this group won't attempt to enroll for Windows Hello for Business.
+> [!TIP]
+> The best way to deploy the Windows Hello for Business GPO is to use security group filtering. Only members of the targeted security group will provision Windows Hello for Business, enabling a phased rollout. This solution allows linking the GPO to the domain, ensuring the GPO is scoped to all security principals. The security group filtering ensures that only the members of the global group receive and apply the GPO, which results in the provisioning of Windows Hello for Business.
 
 ---
+
+Additional policy settings can be configured to control the behavior of Windows Hello for Business. For more information, see [Windows Hello for Business policy settings](../policy-settings.md).
 
 ## Enroll in Windows Hello for Business
 

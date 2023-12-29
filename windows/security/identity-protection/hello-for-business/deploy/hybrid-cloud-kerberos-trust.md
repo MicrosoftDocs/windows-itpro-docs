@@ -98,16 +98,23 @@ You may need to update your Group Policy definitions to be able to configure the
 
 You can also create a Group Policy Central Store and copy them their respective language folder. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows][TS-1].
 
-#### Create the Windows Hello for Business group policy object
+### Configure the Windows Hello for Business with group policy
 
-You can configure Windows Hello for Business cloud Kerberos trust using a Group Policy Object (GPO).
+[!INCLUDE [gpo-settings-1](../../../../../includes/configure/gpo-settings-1.md)]
 
-1. Using the Group Policy Management Console (GPMC), scope a domain-based Group Policy to computer objects in Active Directory.
-1. Edit the Group Policy object from Step 1.
-1. Expand **Computer Configuration > Administrative Templates > Windows Components > Windows Hello for Business**.
-1. Select **Use Windows Hello for Business** > **Enable** > **OK**.
-1. Select **Use cloud Kerberos trust for on-premises authentication** > **Enable** > **OK**.
-1. Optional, but recommended: select **Use a hardware security device** > **Enable** > **OK**.
+| Group policy path | Group policy setting | Value |
+| - | - | - |
+| **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business** |Use Windows Hello for Business| **Enabled**|
+| **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business** |Use cloud Kerberos trust for on-premises authentication| **Enabled**|
+| **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business** |Use a hardware security device| **Enabled**|
+
+> [!NOTE]
+> The enablement of the *Use a hardware security device* policy setting is optional, but recommended.
+
+[!INCLUDE [gpo-settings-2](../../../../../includes/configure/gpo-settings-2.md)]
+
+> [!TIP]
+> The best way to deploy the Windows Hello for Business GPO is to use security group filtering. Only members of the targeted security group will provision Windows Hello for Business, enabling a phased rollout. This solution allows linking the GPO to the domain, ensuring the GPO is scoped to all security principals. The security group filtering ensures that only the members of the global group receive and apply the GPO, which results in the provisioning of Windows Hello for Business.
 
 ---
 
@@ -138,9 +145,9 @@ Once a user completes enrollment with cloud Kerberos trust, the Windows Hello ge
 
 If you deployed Windows Hello for Business using the key trust model, and want to migrate to the cloud Kerberos trust model, follow these steps:
 
-1. [Set up Microsoft Entra Kerberos in your hybrid environment](#deploy-microsoft-entra-kerberos).
-1. [Enable cloud Kerberos trust via Group Policy or Intune](#configure-windows-hello-for-business-policy).
-1. For Microsoft Entra joined devices, sign out and sign in to the device using Windows Hello for Business.
+1. [Set up Microsoft Entra Kerberos in your hybrid environment](#deploy-microsoft-entra-kerberos)
+1. [Enable cloud Kerberos trust via Group Policy or Intune](#configure-windows-hello-for-business-policy-settings)
+1. For Microsoft Entra joined devices, sign out and sign in to the device using Windows Hello for Business
 
 > [!NOTE]
 > For Microsoft Entra hybrid joined devices, users must perform the first sign in with new credentials while having line of sight to a DC.
@@ -152,11 +159,11 @@ If you deployed Windows Hello for Business using the key trust model, and want t
 
 If you deployed Windows Hello for Business using the certificate trust model, and want to use the cloud Kerberos trust model, you must redeploy Windows Hello for Business by following these steps:
 
-1. Disable the certificate trust policy.
-1. [Enable cloud Kerberos trust via Group Policy or Intune](#configure-windows-hello-for-business-policy).
-1. Remove the certificate trust credential using the command `certutil -deletehellocontainer` from the user context.
-1. Sign out and sign back in.
-1. Provision Windows Hello for Business using a method of your choice.
+1. Disable the certificate trust policy
+1. [Enable cloud Kerberos trust via Group Policy or Intune](#configure-windows-hello-for-business-policy-settings)
+1. Remove the certificate trust credential using the command `certutil.exe -deletehellocontainer` from the user context
+1. Sign out and sign back in
+1. Provision Windows Hello for Business using a method of your choice
 
 > [!NOTE]
 > For Microsoft Entra hybrid joined devices, users must perform the first sign-in with new credentials while having line of sight to a DC.
@@ -175,18 +182,9 @@ The following scenarios aren't supported using Windows Hello for Business cloud 
 
 <!--Links-->
 
-[ENTRA-1]: /entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises#install-the-azureadhybridauthenticationmanagement-module
-[AZ-3]: /azure/active-directory/fundamentals/how-to-find-tenant
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
-
-[SERV-1]: /windows-server/administration/performance-tuning/role/active-directory-server/capacity-planning-for-active-directory-domain-services
-
-[TS-1]: /troubleshoot/windows-client/group-policy/create-and-manage-central-store
-
-[MEM-1]: /mem/intune/protect/identity-protection-windows-settings
-[MEM-3]: /mem/intune/configuration/custom-settings-configure
-[MEM-4]: /windows/client-management/mdm/passportforwork-csp
-[MEM-5]: /mem/intune/protect/endpoint-security-account-protection-policy
-[MEM-6]: /mem/intune/protect/identity-protection-configure
-
 [CSP-1]: /windows/client-management/mdm/passportforwork-csp
+[ENTRA-1]: /entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises#install-the-azureadhybridauthenticationmanagement-module
+[MEM-3]: /mem/intune/configuration/custom-settings-configure
+[SERV-1]: /windows-server/administration/performance-tuning/role/active-directory-server/capacity-planning-for-active-directory-domain-services
+[TS-1]: /troubleshoot/windows-client/group-policy/create-and-manage-central-store
