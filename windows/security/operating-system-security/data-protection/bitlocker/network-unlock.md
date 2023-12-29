@@ -46,7 +46,7 @@ The server side configuration to enable Network Unlock also requires provisionin
 The Network Unlock process follows these phases:
 
 :::row:::
-  :::column span="3":::
+  :::column span="2":::
     1. The Windows boot manager detects a Network Unlock protector in the BitLocker configuration
     2. The client computer uses its DHCP driver in the UEFI to get a valid IPv4 IP address
     3. The client computer broadcasts a vendor-specific DHCP request that contains a network key (a 256-bit intermediate key) and an AES-256 session key for the reply. The network key is encrypted by using the 2048-bit RSA Public Key of the Network Unlock certificate from the WDS server
@@ -57,7 +57,7 @@ The Network Unlock process follows these phases:
     8. This combined key is used to create an AES-256 key that unlocks the volume
     9. Windows continues the boot sequence
   :::column-end:::
-  :::column span="1":::
+  :::column span="2":::
     :::image type="content" source="images/network-unlock-diagram.svg" alt-text="Diagram of the Network Unlock sequence." lightbox="images/network-unlock-diagram.svg" border="false":::
   :::column-end:::
 :::row-end:::
