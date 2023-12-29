@@ -5,7 +5,7 @@ ms.date: 12/15/2023
 ms.topic: tutorial
 ---
 
-# Configure Active Directory Federation Services - hybrid certificate trust
+# Configure Active Directory Federation Services in a hybrid certificate trust model
 
 [!INCLUDE [apply-to-hybrid-cert-trust](includes/apply-to-hybrid-cert-trust.md)]
 

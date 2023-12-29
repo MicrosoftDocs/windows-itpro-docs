@@ -15,6 +15,3 @@ You can configure the *Enable Windows Hello for Business* setting for computer o
 - Deploying this policy setting to a user (or group of users), results in only that user attempting a Windows Hello for Business enrollment
 
 If both user and computer policy settings are deployed, the user policy setting has precedence.
-
-> [!NOTE]
-> If you deployed Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../../configure.md#policy-conflicts-from-multiple-policy-sources)

@@ -22,6 +22,16 @@ ms.topic: tutorial
 > - [Licensing for cloud services](index.md#licensing-for-cloud-services)
 > - [Prepare users to use Windows Hello](index.md#prepare-users-to-use-windows-hello)
 
+## Deployment steps
+
+> [!div class="checklist"]
+> Once the prerequisites are met, deploying Windows Hello for Business consists of the following steps:
+>
+> - [Configure and validate the Public Key Infrastructure](hybrid-cert-trust-pki.md)
+> - [Configure Active Directory Federation Services](hybrid-cert-trust-adfs.md) 
+> - [Configure and enroll in Windows Hello for Business](hybrid-cert-trust-enroll.md)
+> - (optional) [Configure single sign-on for Microsoft Entra joined devices](../hello-hybrid-aadj-sso.md)
+
 ## Federated authentication to Microsoft Entra ID
 
 Windows Hello for Business hybrid certificate trust requires Active Directory to be federated with Microsoft Entra ID using AD FS. You must also configure the AD FS farm to support Azure registered devices.
@@ -74,14 +84,10 @@ During Windows Hello for Business provisioning, users receive a sign-in certific
 > [Next: configure and validate the Public Key Infrastructure >](hybrid-cert-trust-pki.md)
 
 <!--links-->
-[AZ-1]: /azure/active-directory/hybrid/how-to-connect-sync-whatis
-[AZ-2]: /azure/multi-factor-authentication/multi-factor-authentication
-[AZ-3]: /azure/multi-factor-authentication/multi-factor-authentication-whats-next
 [AZ-8]: /azure/active-directory/devices/hybrid-azuread-join-plan
 [AZ-10]: /azure/active-directory/devices/howto-hybrid-azure-ad-join#federated-domains
 [AZ-11]: /azure/active-directory/devices/hybrid-azuread-join-manual
 
-[SER-1]: /windows-server/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa
 [SER-2]: /windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm
 [SER-3]: /windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts
 [SER-4]: /windows-server/identity/ad-fs/design/ad-fs-design-guide-in-windows-server-2012-r2

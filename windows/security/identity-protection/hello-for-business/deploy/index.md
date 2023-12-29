@@ -47,7 +47,7 @@ It's fundamentally important to understand which deployment model to use for a s
 
 There are three deployment models from which you can choose:
 
-| | Deployment model | Description |
+| :ballot_box_with_check: | Deployment model | Description |
 |--|--|--|
 | :black_square_button: | **Cloud-only** |For organizations that only have cloud identities and don't access on-premises resources. These organizations typically join their devices to the cloud and exclusively use resources in the cloud such as SharePoint Online, OneDrive, and others. Also, since the users don't use on-premises resources, they don't need certificates for things like VPN because everything they need is hosted in cloud services|
 | :black_square_button: | **Hybrid** |For organizations that have identities synchronized from Active Directory to Microsoft Entra ID. These organizations use applications registered in Microsoft Entra ID, and want a single sign-on (SSO) experience for both on-premises and Microsoft Entra resources|
@@ -68,7 +68,7 @@ The deployment of certificates to users and Domain Controllers requires more con
 
 There are three trust types from which you can choose:
 
-| | Trust type | Description |
+| :ballot_box_with_check: | Trust type | Description |
 |--|--|--|
 | :black_square_button: | **Cloud Kerberos trust**|  Users authenticate to Active Directory by requesting a TGT from Microsoft Entra ID, using Microsoft Entra Kerberos. The on-premises domain controllers are still responsible for Kerberos service tickets and authorization. Cloud Kerberos trust uses the same infrastructure required for FIDO2 security key sign-in, and it can be used for new or existing Windows Hello for Business deployments. |
 | :black_square_button: | **Key trust**| Users authenticate to the on-premises Active Directory using a device-bound key (hardware or software) created during the Windows Hello provisioning experience. It requires to distribute certificates to domain controllers. |

@@ -12,7 +12,7 @@ items:
     - name: Requirements and validation
       href: hybrid-key-trust.md
       displayName: key trust
-    - name: Configure and provision Windows Hello for Business
+    - name: Configure and enroll in Windows Hello for Business
       href: hybrid-key-trust-enroll.md
       displayName: key trust
     - name: Configure SSO for Microsoft Entra joined devices
@@ -20,7 +20,7 @@ items:
       displayName: key trust
   - name: Certificate trust deployment
     items: 
-    - name: Requirements and validation
+    - name: Overview
       href: hybrid-cert-trust.md
       displayName: certificate trust
     - name: Configure and validate Public Key Infrastructure (PKI)

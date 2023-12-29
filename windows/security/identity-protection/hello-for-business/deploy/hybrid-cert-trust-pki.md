@@ -4,6 +4,7 @@ description: Configure and validate the Public Key Infrastructure when deploying
 ms.date: 12/18/2023
 ms.topic: tutorial
 ---
+
 # Configure and validate the PKI in a hybrid certificate trust model
 
 [!INCLUDE [apply-to-hybrid-cert-trust](includes/apply-to-hybrid-cert-trust.md)]

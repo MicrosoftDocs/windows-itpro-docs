@@ -1,17 +1,17 @@
 ---
 title: Windows Hello for Business hybrid key trust clients configuration and enrollment
 description: Learn how to configure devices and enroll them in Windows Hello for Business in a hybrid key trust scenario.
-ms.date: 01/03/2023
+ms.date: 12/29/2023
 ms.topic: tutorial
 ---
 
-# Configure and enroll in Windows Hello for Business - hybrid key trust
+# Configure and enroll in Windows Hello for Business in a hybrid key trust model
 
 [!INCLUDE [apply-to-hybrid-key-trust](includes/apply-to-hybrid-key-trust.md)]
 
 After the prerequisites are met and the PKI configuration is validated, Windows Hello for business must be enabled on the Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 
-# [:::image type="icon" source="images/intune.svg"::: **Intune**](#tab/intune)
+# [:::image type="icon" source="images/intune.svg"::: **Intune/CSP**](#tab/intune)
 
 Review the article [Configure Windows Hello for Business using Microsoft Intune](../configure.md#configure-windows-hello-for-business-using-microsoft-intune) to learn about the different options offered by Microsoft Intune to configure Windows Hello for Business.
 
@@ -23,13 +23,11 @@ If the Intune tenant-wide policy is enabled and configured to your needs, you ca
 
 [!INCLUDE [gpo-enable-whfb](includes/gpo-enable-whfb.md)]
 
-### Configure the Windows Hello for Business with group policy
-
 [!INCLUDE [gpo-settings-1](../../../../../includes/configure/gpo-settings-1.md)]
 
 | Group policy path | Group policy setting | Value |
 | - | - | - |
-| **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business** |Use Windows Hello for Business| **Enabled**|
+| **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**<br>or<br> **User Configuration\Administrative Templates\Windows Components\Windows Hello for Business**|Use Windows Hello for Business| **Enabled**|
 | **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business** |Use a hardware security device| **Enabled**|
 
 > [!NOTE]
@@ -41,6 +39,9 @@ If the Intune tenant-wide policy is enabled and configured to your needs, you ca
 > The best way to deploy the Windows Hello for Business GPO is to use security group filtering. Only members of the targeted security group will provision Windows Hello for Business, enabling a phased rollout. This solution allows linking the GPO to the domain, ensuring the GPO is scoped to all security principals. The security group filtering ensures that only the members of the global group receive and apply the GPO, which results in the provisioning of Windows Hello for Business.
 
 ---
+
+> [!NOTE]
+> If you deployed Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../../configure.md#policy-conflicts-from-multiple-policy-sources)
 
 Additional policy settings can be configured to control the behavior of Windows Hello for Business. For more information, see [Windows Hello for Business policy settings](../policy-settings.md).
 

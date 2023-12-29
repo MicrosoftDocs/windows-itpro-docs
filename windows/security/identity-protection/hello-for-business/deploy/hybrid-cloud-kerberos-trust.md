@@ -19,6 +19,8 @@ ms.topic: tutorial
 > - [Windows Server requirements](index.md#windows-server-requirements)
 > - [Prepare users to use Windows Hello](index.md#prepare-users-to-use-windows-hello)
 
+When implementing the cloud Kerberos trust deployment model, you *must* ensure that you have an adequate number of *read-write domain controllers* in each Active Directory site where users will be authenticating with Windows Hello for Business. For more information, see [Capacity planning for Active Directory][SERV-1].
+
 ## Deployment steps
 
 > [!div class="checklist"]
@@ -53,13 +55,11 @@ For more information about how Microsoft Entra Kerberos works with Windows Hello
 >
 > Due to possible attack vectors from Microsoft Entra ID to Active Directory, it's not recommended to unblock these accounts by relaxing the Password Replication Policy of the computer object `CN=AzureADKerberos,OU=Domain Controllers,<domain-DN>`.
 
-When implementing the cloud Kerberos trust deployment model, you *must* ensure that you have an adequate number of *read-write domain controllers* in each Active Directory site where users will be authenticating with Windows Hello for Business. For more information, see [Capacity planning for Active Directory][SERV-1].
-
 ## Configure Windows Hello for Business policy settings
 
 After setting up the Microsoft Entra Kerberos object, Windows Hello for business cloud Kerberos trust must be enabled on your Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 
-# [:::image type="icon" source="images/intune.svg"::: **Intune**](#tab/intune)
+# [:::image type="icon" source="images/intune.svg"::: **Intune/CSP**](#tab/intune)
 
 Review the article [Configure Windows Hello for Business using Microsoft Intune](../configure.md#configure-windows-hello-for-business-using-microsoft-intune) to learn about the different options offered by Microsoft Intune to configure Windows Hello for Business.
 
@@ -104,7 +104,7 @@ You can also create a Group Policy Central Store and copy them their respective 
 
 | Group policy path | Group policy setting | Value |
 | - | - | - |
-| **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business** |Use Windows Hello for Business| **Enabled**|
+| **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**<br>or<br> **User Configuration\Administrative Templates\Windows Components\Windows Hello for Business**|Use Windows Hello for Business| **Enabled**|
 | **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business** |Use cloud Kerberos trust for on-premises authentication| **Enabled**|
 | **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business** |Use a hardware security device| **Enabled**|
 
@@ -117,6 +117,9 @@ You can also create a Group Policy Central Store and copy them their respective 
 > The best way to deploy the Windows Hello for Business GPO is to use security group filtering. Only members of the targeted security group will provision Windows Hello for Business, enabling a phased rollout. This solution allows linking the GPO to the domain, ensuring the GPO is scoped to all security principals. The security group filtering ensures that only the members of the global group receive and apply the GPO, which results in the provisioning of Windows Hello for Business.
 
 ---
+
+> [!NOTE]
+> If you deployed Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../../configure.md#policy-conflicts-from-multiple-policy-sources)
 
 Additional policy settings can be configured to control the behavior of Windows Hello for Business. For more information, see [Windows Hello for Business policy settings](../policy-settings.md).
 
