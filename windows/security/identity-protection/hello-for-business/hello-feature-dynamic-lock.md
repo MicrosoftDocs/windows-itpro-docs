@@ -1,7 +1,7 @@
 ---
 title: Dynamic lock
 description: Learn how to configure dynamic lock on Windows devices via group policies. This feature locks a device when a Bluetooth signal falls below a set value.
-[ms.date: 03/10/2023](hello-hybrid-aadj-sso.md)
+ms.date: 03/10/2023
 ms.topic: how-to
 ---
 
