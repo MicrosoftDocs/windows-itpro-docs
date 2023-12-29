@@ -15,9 +15,9 @@ After the prerequisites are met and the PKI configuration is validated, Windows 
 
 Review the article [Configure Windows Hello for Business using Microsoft Intune](../configure.md#configure-windows-hello-for-business-using-microsoft-intune) to learn about the different options offered by Microsoft Intune to configure Windows Hello for Business.
 
-If the Intune tenant-wide policy is enabled and configured to your needs, you can skip to [Configure cloud Kerberos trust policy](#configure-the-cloud-kerberos-trust-policy). Otherwise, follow the instructions below to enable Windows Hello for Business a policy using an *account protection* policy.
+If the Intune tenant-wide policy is enabled and configured to your needs, you can skip to [Enroll in Windows Hello for Business](#enroll-in-windows-hello-for-business). Otherwise, follow the instructions below to enable Windows Hello for Business a policy using an *settings catalog* policy.
 
-[!INCLUDE [intune-account-protection-policy](includes/intune-account-protection-policy.md)]
+[!INCLUDE [intune-settings-catalog-enable-whfb](includes/intune-settings-catalog-enable-whfb.md)]
 
 # [:::image type="icon" source="images/group-policy.svg"::: **GPO**](#tab/gpo)
 
@@ -49,7 +49,7 @@ Additional policy settings can be configured to control the behavior of Windows 
 The Windows Hello for Business provisioning process begins immediately after the user profile is loaded and before the user receives their desktop. For the provisioning process to begin, all prerequisite checks must pass.
 
 You can determine the status of the prerequisite checks by viewing the **User Device Registration** admin log under **Applications and Services Logs > Microsoft > Windows**.\
-This information is also available using the `dsregcmd /status` command from a console. For more information, see [dsregcmd][AZ-4].
+This information is also available using the `dsregcmd.exe /status` command from a console. For more information, see [dsregcmd][AZ-4].
 
 :::image type="content" source="images/Event358.png" alt-text="Details about event ID 358 showing that the device is ready to enroll in Windows Hello for Business." border="false" lightbox="images/Event358.png":::
 

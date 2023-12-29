@@ -63,9 +63,9 @@ After setting up the Microsoft Entra Kerberos object, Windows Hello for business
 
 Review the article [Configure Windows Hello for Business using Microsoft Intune](../configure.md#configure-windows-hello-for-business-using-microsoft-intune) to learn about the different options offered by Microsoft Intune to configure Windows Hello for Business.
 
-If the Intune tenant-wide policy is enabled and configured to your needs, you can skip to [Configure cloud Kerberos trust policy](#configure-the-cloud-kerberos-trust-policy). Otherwise, follow the instructions below to enable Windows Hello for Business a policy using an *account protection* policy.
+If the Intune tenant-wide policy is enabled and configured to your needs, you can skip to [Configure cloud Kerberos trust policy](#configure-the-cloud-kerberos-trust-policy). Otherwise, follow the instructions below to enable Windows Hello for Business a policy using an *settings catalog* policy.
 
-[!INCLUDE [intune-account-protection-policy](includes/intune-account-protection-policy.md)]
+[!INCLUDE [intune-settings-catalog-enable-whfb](includes/intune-settings-catalog-enable-whfb.md)]
 
 ### Configure the cloud Kerberos trust policy
 
@@ -92,7 +92,7 @@ For more information about the cloud Kerberos trust policy, see [Windows Hello f
 > [!NOTE]
 > Cloud Kerberos trust requires setting a dedicated policy for it to be enabled. This policy is only available as a computer configuration.
 
-#### Update administrative templates
+### Update administrative templates
 
 You may need to update your Group Policy definitions to be able to configure the cloud Kerberos trust policy. You can copy the ADMX and ADML files from a Windows client that supports cloud Kerberos trust to their respective language folder on your Group Policy management server. Windows Hello for Business settings are in the *Passport.admx* and *Passport.adml* files.
 
@@ -128,7 +128,7 @@ Additional policy settings can be configured to control the behavior of Windows 
 The Windows Hello for Business provisioning process begins immediately after a user has signed in if certain prerequisite checks are passed. Windows Hello for Business *cloud Kerberos trust* adds a prerequisite check for Microsoft Entra hybrid joined devices when cloud Kerberos trust is enabled by policy.
 
 You can determine the status of the prerequisite check by viewing the **User Device Registration** admin log under **Applications and Services Logs** > **Microsoft** > **Windows**.\
-This information is also available using the `dsregcmd /status` command from a console. For more information, see [dsregcmd][AZ-4].
+This information is also available using the `dsregcmd.exe /status` command from a console. For more information, see [dsregcmd][AZ-4].
 
 The cloud Kerberos trust prerequisite check detects whether the user has a partial TGT before allowing provisioning to start. The purpose of this check is to validate whether Microsoft Entra Kerberos is set up for the user's domain and tenant. If Microsoft Entra Kerberos is set up, the user will receive a partial TGT during sign-in with one of their other unlock methods. This check has three states: Yes, No, and Not Tested. The *Not Tested* state is reported if cloud Kerberos trust isn't being enforced by policy or if the device is Microsoft Entra joined.
 

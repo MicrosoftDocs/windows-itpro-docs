@@ -9,7 +9,7 @@ items:
     href: hybrid-cloud-kerberos-trust.md
   - name: Key trust deployment
     items: 
-    - name: Overview
+    - name: Requirements and validation
       href: hybrid-key-trust.md
       displayName: key trust
     - name: Configure and provision Windows Hello for Business
@@ -20,7 +20,7 @@ items:
       displayName: key trust
   - name: Certificate trust deployment
     items: 
-    - name: Overview
+    - name: Requirements and validation
       href: hybrid-cert-trust.md
       displayName: certificate trust
     - name: Configure and validate Public Key Infrastructure (PKI)
