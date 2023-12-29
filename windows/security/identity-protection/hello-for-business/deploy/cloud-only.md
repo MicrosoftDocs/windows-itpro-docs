@@ -34,6 +34,10 @@ Cloud-only deployments use Microsoft Entra multifactor authentication (MFA) duri
 
 Policy settings can be configured to control the behavior of Windows Hello for Business. For more information, see [Windows Hello for Business policy settings](../policy-settings.md).
 
+## Enroll in Windows Hello for Business
+
+The Windows Hello for Business provisioning process begins immediately after a user has signed in if certain prerequisite checks are passed.
+
 ### User experience
 
 [!INCLUDE [user-experience](includes/user-experience.md)]
