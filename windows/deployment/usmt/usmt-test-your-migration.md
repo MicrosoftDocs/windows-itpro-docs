@@ -41,5 +41,5 @@ After the pilot migration is verified that it successfully migrated the specifie
 
 ## Related articles
 
-- [Plan your migration](usmt-plan-your-migration.md).
+- [Plan the migration](usmt-plan-your-migration.md).
 - [Log files](usmt-log-files.md).

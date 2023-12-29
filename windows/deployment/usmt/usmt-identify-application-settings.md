@@ -1,18 +1,18 @@
 ---
 title: Identify Applications Settings
-description: Identify which applications and settings you want to migrate before using the User State Migration Tool (USMT).
+description: Identify which applications and settings need to be migrated before using the User State Migration Tool (USMT).
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 12/21/2023
+ms.date: 12/28/2023
 ms.topic: article
 ms.technology: itpro-deploy
 ---
 
 # Identify applications settings
 
-When planning for your migration, you should identify which applications and settings you want to migrate. For more information about how to create a custom **.xml** file to migrate the settings of another application, see [Customize USMT XML files](usmt-customize-xml-files.md).
+Which applications and settings need to be migrated should be identified when planning a migration. For more information about how to create a custom **.xml** file to migrate the settings of another application, see [Customize USMT XML files](usmt-customize-xml-files.md).
 
 ## Applications
 
@@ -22,7 +22,7 @@ Next, identify an application owner to be in charge of each application. Applica
 
 ## Application settings
 
-Next, determine and locate the application settings to be migrated. You can acquire much of the information that you need for this step when you're testing the new applications for compatibility with the new operating system.
+Next, determine and locate the application settings to be migrated. Much of the information that is needed for this step can be acquired when testing the new applications for compatibility with the new operating system.
 
 After completing the list of applications to be migrated, review the list, and work with each application owner on a list of settings to be migrated. For each setting, determine whether it needs to be migrated or if the default settings are adequate. Then, determine where the setting is located, for example, in the registry or in an .ini file. Next, consider the following questions to determine what needs to be done to migrate the setting successfully:
 
@@ -32,7 +32,7 @@ After completing the list of applications to be migrated, review the list, and w
 
 - Do the settings need to be moved or altered?
 
-- Can the first-run process force the application to appear as if it had run already? If so, does this work correctly, or does it break the application?
+- Can the first-run process force the application to appear as if it ran already? If so, does this work correctly, or does it break the application?
 
 After answering these questions, create a custom **.xml** file to migrate settings. Work with the application owner to develop test cases and to determine the file types that need to be migrated for the application.
 
