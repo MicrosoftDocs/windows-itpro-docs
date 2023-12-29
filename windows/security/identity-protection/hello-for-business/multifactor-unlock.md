@@ -366,7 +366,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 |--------|
 | ./Device/Vendor/MSFT/PassportForWork/[DeviceUnlock](/windows/client-management/mdm/passportforwork-csp#devicedeviceunlock)|
 
-#### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+#### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
 [!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)]
 

@@ -37,7 +37,7 @@ To enable Credential Guard, you can use:
 
 [!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Intune/MDM**](#tab/intune)
+#### [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
 
 ### Configure Credential Guard with Intune
 
@@ -64,7 +64,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 Once the policy is applied, restart the device.
 
-#### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+#### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
 ### Configure Credential Guard with group policy
 
@@ -232,7 +232,7 @@ There are different options to disable Credential Guard. The option you choose d
 
 [!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Intune/MDM**](#tab/intune)
+#### [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
 
 ### Disable Credential Guard with Intune
 
@@ -254,7 +254,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 Once the policy is applied, restart the device.
 
-#### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+#### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
 ### Disable  Credential Guard with group policy
 
@@ -336,7 +336,7 @@ Use one of the following options to disable VBS:
 
 [!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Intune/MDM**](#tab/intune)
+#### [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
 
 ### Disable VBS with Intune
 
@@ -358,7 +358,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 Once the policy is applied, restart the device.
 
-#### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+#### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
 ### Disable  VBS with group policy
 
