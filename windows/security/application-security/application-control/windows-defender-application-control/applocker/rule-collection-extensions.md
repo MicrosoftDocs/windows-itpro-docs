@@ -6,12 +6,12 @@ ms.collection:
 - must-keep
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 12/19/2023
+ms.date: 12/23/2023
 ---
 
 # AppLocker rule collection extensions
 
-This article describes the rule collection extensions added in Windows 10 or later. Rule collection extensions are optional features available only for the EXE and DLL rule collections. Configure rule collection extensions by directly editing your AppLocker policy XML as shown in the following XML fragment.
+This article describes the rule collection extensions added in Windows 10 and later. Rule collection extensions are optional features available only for the EXE and DLL rule collections. Configure rule collection extensions by directly editing your AppLocker policy XML as shown in the following XML fragment.
 
 ```xml
 <RuleCollectionExtensions>

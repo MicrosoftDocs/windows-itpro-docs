@@ -35,10 +35,10 @@ The DLL rule collection isn't enabled by default. To learn how to enable the DLL
 
 ## Enforcement modes
 
-AppLocker policies set an **enforcement mode** for each rule collection included in the policy. These enforcement modes are described in the following table. 
+AppLocker policies set an **enforcement mode** for each rule collection included in the policy. These enforcement modes are described in the following table.
 
 | Enforcement mode | Description |
-| - | - |
+| --- | --- |
 | **Not configured** | Despite the name, this enforcement mode **doesn't** mean the rules are ignored. On the contrary, if any rules exist in a rule collection that is "not configured", the rules **will be enforced** unless a policy with a higher precedence changes the enforcement mode to Audit only. Since this enforcement mode can be confusing for policy authors, you should avoid using this value in your AppLocker policies. Instead, you should choose explicitly between the remaining two options. |
 | **Enforce rules** | Rules are enforced. When a user runs an app affected by an AppLocker rule, the app binary is blocked. Info about the binary is added to the AppLocker event log. |
 | **Audit only** | Rules are audited but not enforced. When a user runs an app affected by an AppLocker rule, the app binary is allowed to run. However, the info about the binary is added to the AppLocker event log. The Audit-only enforcement mode helps you identify the apps affected by the policy before the policy is enforced. |
@@ -76,7 +76,7 @@ The **File version** and **Package version** control whether a user can run a sp
 The following table describes how a publisher condition is applied.
 
 | Option | The publisher condition allows or denies... |
-|---|---|
+| --- | --- |
 | **All signed files** | All files signed by any publisher. |
 | **Publisher only** | All files signed by the named publisher. |
 | **Publisher and product name** | All files for the specified product signed by the named publisher. |
