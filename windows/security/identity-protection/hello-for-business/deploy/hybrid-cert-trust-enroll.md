@@ -9,8 +9,6 @@ ms.topic: tutorial
 
 [!INCLUDE [apply-to-hybrid-cert-trust](includes/apply-to-hybrid-cert-trust.md)]
 
-## Policy Configuration
-
 After the prerequisites are met and the PKI and AD FS configurations are validated, Windows Hello for business must be enabled on the Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 
 # [:::image type="icon" source="images/group-policy.svg"::: **GPO**](#tab/gpo)
@@ -87,6 +85,8 @@ This information is also available using the `dsregcmd.exe /status` command from
 ### User experience
 
 [!INCLUDE [user-experience](includes/user-experience.md)]
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7 alt-text="Video showing the Windows Hello for Business enrollment steps after signing in with a password."]
 
 After a successful key registration, Windows creates a certificate request using the same key pair to request a certificate.  Windows send the certificate request to the AD FS server for certificate enrollment.
 

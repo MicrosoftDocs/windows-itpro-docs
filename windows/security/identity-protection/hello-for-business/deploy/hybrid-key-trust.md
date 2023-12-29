@@ -79,7 +79,7 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 > [!div class="checklist"]
 > Before moving to the next section, ensure the following steps are complete:
 >
-> - Configure domain controller certificates
+> - Configure domain controller certificate template
 > - Supersede existing domain controller certificates
 > - Unpublish superseded certificate templates
 > - Publish the certificate template to the CA

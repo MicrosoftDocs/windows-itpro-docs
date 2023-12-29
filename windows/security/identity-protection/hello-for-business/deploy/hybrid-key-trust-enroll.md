@@ -58,6 +58,9 @@ This information is also available using the `dsregcmd.exe /status` command from
 
 [!INCLUDE [user-experience](includes/user-experience.md)]
 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7 alt-text="Video showing the Windows Hello for Business enrollment steps after signing in with a password."]
+
 While the user has completed provisioning, Microsoft Entra Connect synchronizes the user's key from Microsoft Entra ID to Active Directory.
 
 > [!IMPORTANT]

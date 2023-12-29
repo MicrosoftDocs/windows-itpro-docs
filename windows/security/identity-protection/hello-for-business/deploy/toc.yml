@@ -20,7 +20,7 @@ items:
       displayName: key trust
   - name: Certificate trust deployment
     items: 
-    - name: Overview
+    - name: Requirements and validation
       href: hybrid-cert-trust.md
       displayName: certificate trust
     - name: Configure and validate Public Key Infrastructure (PKI)
@@ -42,17 +42,15 @@ items:
   items:
   - name: Key trust deployment
     items: 
-    - name: Overview
+    - name: Requirements and validation
       href: on-premises-key-trust.md
-    - name: Configure and validate the PKI
-      href: on-premises-key-trust-pki.md
     - name: Prepare and deploy Active Directory Federation Services (AD FS)
       href: on-premises-key-trust-adfs.md
     - name: Configure and enroll in Windows Hello for Business
       href: on-premises-key-trust-enroll.md
   - name: Certificate trust deployment
     items: 
-    - name: Overview
+    - name: Requirements and validation
       href: on-premises-cert-trust.md
     - name: Configure and validate Public Key Infrastructure (PKI)
       href: on-premises-cert-trust-pki.md
