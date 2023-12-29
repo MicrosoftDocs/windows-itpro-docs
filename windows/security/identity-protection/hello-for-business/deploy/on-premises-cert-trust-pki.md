@@ -5,7 +5,7 @@ ms.date: 01/03/2024
 ms.topic: tutorial
 ---
 
-## Configure and validate the Public Key Infrastructure
+# Configure and validate the PKI in an on-premises certificate trust model
 
 [!INCLUDE [apply-to-on-premises-cert-trust](includes/apply-to-on-premises-cert-trust.md)]
 

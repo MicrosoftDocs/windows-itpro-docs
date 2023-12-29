@@ -66,8 +66,6 @@ When an identity provider supports keys, the Windows Hello provisioning process 
 > [!NOTE]
 > Windows Hello as a convenience sign-in uses regular username and password authentication, without the user entering the password.
 
-:::image type="content" alt-text="How authentication works in Windows Hello." source="images/authflow.png" lightbox="images/authflow.png":::
-
 Imagine that someone is looking over your shoulder as you get money from an ATM and sees the PIN that you enter. Having that PIN won't help them access your account because they don't have your ATM card. In the same way, learning your PIN for your device doesn't allow that attacker to access your account because the PIN is local to your specific device and doesn't enable any type of authentication from any other device.
 
 Windows Hello helps protect user identities and user credentials. Because the user doesn't enter a password (except during provisioning), it helps circumvent phishing and brute force attacks. It also helps prevent server breaches because Windows Hello credentials are an asymmetric key pair, which helps prevent replay attacks when these keys are protected by TPMs.
