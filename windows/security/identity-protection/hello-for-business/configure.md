@@ -2,7 +2,7 @@
 title: Configure Windows Hello for Business
 description: Learn about the configuration options for Windows Hello for Business and how to implement them in your organization.
 ms.topic: how-to
-ms.date: 12/19/2023
+ms.date: 01/03/2024
 ---
 
 # Configure Windows Hello for Business

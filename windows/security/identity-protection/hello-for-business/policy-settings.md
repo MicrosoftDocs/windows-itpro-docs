@@ -2,7 +2,7 @@
 title: Windows Hello for Business policy settings
 description: Learn about the policy settings to configure Configure Windows Hello for Business.
 ms.topic: reference
-ms.date: 12/19/2023
+ms.date: 01/03/2024
 ---
 
 # Windows Hello for Business policy settings

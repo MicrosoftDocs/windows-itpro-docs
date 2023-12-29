@@ -1,10 +1,7 @@
 ---
-ms.date: 09/07/2023
+ms.date: 01/03/2024
 title: Configure Windows Hello for Business Policy settings in an on-premises key trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business in an on-premises key trust scenario
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.topic: tutorial
 ---
 

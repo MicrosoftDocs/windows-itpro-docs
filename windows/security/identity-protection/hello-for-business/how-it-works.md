@@ -1,7 +1,7 @@
 ---
 title: How Windows Hello for Business works
 description: Learn how Windows Hello for Business works, and how it can help your users authenticate to services.
-ms.date: 05/05/2018
+ms.date: 01/03/2024
 ms.topic: overview
 ---
 

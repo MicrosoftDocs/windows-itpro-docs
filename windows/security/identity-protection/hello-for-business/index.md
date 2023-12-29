@@ -2,7 +2,7 @@
 title: Windows Hello for Business Overview
 description: Learn how Windows Hello for Business replaces passwords with strong two-factor authentication on Windows devices.
 ms.topic: overview
-ms.date: 04/24/2023
+ms.date: 01/03/2024
 ---
 
 # Windows Hello for Business Overview

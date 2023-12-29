@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business glossary
 description: Explore technology and terms associated with Windows Hello for Business
-ms.date: 12/18/2023
+ms.date: 01/03/2024
 ms.topic: glossary
 ---
 

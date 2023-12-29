@@ -1,7 +1,7 @@
 ---
 title: Configure Windows Hello for Business Policy settings in an on-premises certificate trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business in an on-premises certificate trust scenario
-ms.date: 12/15/2023
+ms.date: 01/03/2024
 ms.topic: tutorial
 ---
 

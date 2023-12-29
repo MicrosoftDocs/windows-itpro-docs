@@ -1,37 +1,13 @@
 ---
-title: Windows Hello for Business on-premises key trust deployment guide
-description: Learn how to deploy Windows Hello for Business in an on-premises, key trust scenario.
+title: Configure and validate the Public Key Infrastructure in an on-premises key trust model
+description: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in a key trust model.
 ms.date: 01/03/2024
 ms.topic: tutorial
 ---
 
-# On-premises key trust deployment guide
+## Configure and validate the Public Key Infrastructure
 
 [!INCLUDE [apply-to-on-premises-key-trust](includes/apply-to-on-premises-key-trust.md)]
-
-[!INCLUDE [requirements](includes/requirements.md)]
-
-> [!div class="checklist"]
->
-> - [Public Key Infrastructure](index.md#public-key-infrastructure-pki)
-> - [Authentication](index.md#authentication)
-> - [Device configuration](index.md#device-configuration)
-> - [Licensing for cloud services](index.md#licensing-for-cloud-services)
-> - [Windows requirements](index.md#windows-requirements)
-> - [Windows Server requirements](index.md#windows-server-requirements)
-> - [Prepare users to use Windows Hello](index.md#prepare-users-to-use-windows-hello)
-
-## Deployment steps
-
-Once the prerequisites are met, deploying Windows Hello for Business consists of the following steps:
-
-> [!div class="checklist"]
->
-> - [Configure and validate the Public Key Infrastructure](#configure-and-validate-the-public-key-infrastructure)
-> - [Prepare and deploy AD FS with MFA](on-premises-key-trust-adfs.md)
-> - [Configure and enroll in Windows Hello for Business](on-premises-key-trust-enroll.md)
-
-## Configure and validate the Public Key Infrastructure
 
 Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* or *certificate trust* models. The domain controllers must have a certificate, which serves as a root of trust for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
 
@@ -69,18 +45,6 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 ## Validate the configuration
 
 [!INCLUDE [dc-certificate-validate](includes/dc-certificate-validate.md)]
-
-## Section review and next steps
-
-> [!div class="checklist"]
-> Before moving to the next section, ensure the following steps are complete:
->
-> - Configure domain controller and web server certificate templates
-> - Supersede existing domain controller certificates
-> - Unpublish superseded certificate templates
-> - Publish the certificate templates to the CA
-> - Deploy certificates to the domain controllers
-> - Validate the domain controllers configuration
 
 > [!div class="nextstepaction"]
 > [Next: prepare and deploy AD FS >](on-premises-key-trust-adfs.md)

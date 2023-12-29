@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business cloud Kerberos trust deployment guide
 description: Learn how to deploy Windows Hello for Business in a cloud Kerberos trust scenario.
-ms.date: 12/29/2023
+ms.date: 01/03/2024
 ms.topic: tutorial
 ---
 

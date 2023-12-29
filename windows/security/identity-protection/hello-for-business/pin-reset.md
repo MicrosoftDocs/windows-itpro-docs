@@ -1,7 +1,7 @@
 ---
 title: PIN reset
 description: Learn how Microsoft PIN reset service enables your users to recover a forgotten Windows Hello for Business PIN, and how to configure it.
-ms.date: 12/12/2023
+ms.date: 01/03/2024
 ms.topic: how-to
 ---
 

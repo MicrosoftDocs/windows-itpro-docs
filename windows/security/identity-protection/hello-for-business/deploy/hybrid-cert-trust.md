@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business hybrid certificate trust deployment guide
 description: Learn how to deploy Windows Hello for Business in a hybrid certificate trust scenario.
-ms.date: 12/18/2023
+ms.date: 01/03/2024
 ms.topic: tutorial
 ---
 

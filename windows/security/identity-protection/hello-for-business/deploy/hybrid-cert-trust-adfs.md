@@ -1,7 +1,7 @@
 ---
 title: Configure Active Directory Federation Services in a hybrid certificate trust model
 description: Learn how to configure Active Directory Federation Services (AD FS) to support the Windows Hello for Business hybrid certificate trust model.
-ms.date: 12/15/2023
+ms.date: 01/03/2024
 ms.topic: tutorial
 ---
 
