@@ -45,8 +45,6 @@ The process requires no user interaction, provided the user signs-in using Windo
 
 # [:::image type="icon" source="images/intune.svg"::: **Intune/CSP**](#tab/intune)
 
-## Configure Windows Hello for Business using Microsoft Intune
-
 > [!IMPORTANT]
 > The information in this section applies to Microsoft Entra joined devices managed by Intune. Before proceeding, ensure that you completed the steps described in:
 >
