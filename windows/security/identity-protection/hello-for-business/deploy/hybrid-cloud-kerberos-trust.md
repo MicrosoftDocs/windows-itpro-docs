@@ -144,6 +144,8 @@ The cloud Kerberos trust prerequisite check detects whether the user has a parti
 
 Once a user completes enrollment with cloud Kerberos trust, the Windows Hello gesture can be used **immediately** for sign-in. On a Microsoft Entra hybrid joined device, the first use of the PIN requires line of sight to a DC. Once the user has signed in or unlocked with the DC, cached sign-in can be used for subsequent unlocks without line of sight or network connectivity.
 
+While the user has completed provisioning, Microsoft Entra Connect synchronizes the user's key from Microsoft Entra ID to Active Directory.
+
 ## Migrate from key trust deployment model to cloud Kerberos trust
 
 If you deployed Windows Hello for Business using the key trust model, and want to migrate to the cloud Kerberos trust model, follow these steps:

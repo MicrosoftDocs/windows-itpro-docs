@@ -1,10 +1,11 @@
 ---
 title: Windows Hello for Business cloud-only deployment
-description: Learn how to configure Windows Hello for Business in a cloud-only deployment scenario.
-ms.date: 10/03/2023
+description: Learn how to deplyo Windows Hello for Business in a cloud-only deployment scenario.
+ms.date: 01/01/2024
 ms.topic: how-to
 ---
-# Cloud-only deployment
+
+# Cloud-only deployment guide
 
 [!INCLUDE [apply-to-cloud](includes/apply-to-cloud.md)]
 
@@ -17,13 +18,29 @@ ms.topic: how-to
 > - [Licensing for cloud services](index.md#licensing-for-cloud-services)
 > - [Prepare users to use Windows Hello](index.md#prepare-users-to-use-windows-hello)
 
-## Configure and enroll in Windows Hello for Business
+## Deployment steps
 
-When you Microsoft Entra join a device, the system attempts to automatically enroll you in Windows Hello for Business, by default. If you want to use Windows Hello for Business in a cloud-only environment with its default settings, there's no additional configuration needed.
+> [!div class="checklist"]
+> Once the prerequisites are met, deploying Windows Hello for Business consists of the following steps:
+>
+> - [Configure Windows Hello for Business policy settings](#configure-windows-hello-for-business-policy-settings)
+> - [Enroll in Windows Hello for Business](#enroll-in-windows-hello-for-business)
 
-If you want to disable the automatic Windows Hello for Business enrollment prompt, you can configure your devices with a policy setting or registry key. For more information, see [Disable Windows Hello for Business]([Disable Windows Hello for Business enrollment](../configure.md#disable-windows-hello-for-business-enrollment).
+## Configure Windows Hello for Business policy settings
+
+When you Microsoft Entra join a device, the system attempts to automatically enroll you in Windows Hello for Business. If you want to use Windows Hello for Business in a cloud-only environment with its default settings, there's no additional configuration needed.
+
+Cloud-only deployments use Microsoft Entra multifactor authentication (MFA) during Windows Hello for Business enrollment, and there's no additional MFA configuration needed. If you aren't already registered in MFA, you'll be guided through the MFA registration as part of the Windows Hello for Business enrollment process.
+
+Policy settings can be configured to control the behavior of Windows Hello for Business. For more information, see [Windows Hello for Business policy settings](../policy-settings.md).
+
+### User experience
+
+[!INCLUDE [user-experience](includes/user-experience.md)]
+
+## Disable automatic enrollment
+
+If you want to disable the automatic Windows Hello for Business enrollment prompt, you can configure your devices with a policy setting or registry key. For more information, see [Disable Windows Hello for Business enrollment](../configure.md#disable-windows-hello-for-business-enrollment).
 
 > [!NOTE]
 > During the out-of-box experience (OOBE) flow of a Microsoft Entra join, you are guided to enroll in Windows Hello for Business when you don't have Intune. You can cancel the PIN screen and configure this cancellation with registry keys to prevent future prompts.
-
-Cloud-only deployments use Microsoft Entra multifactor authentication (MFA) during Windows Hello for Business enrollment, and there's no additional MFA configuration needed. If you aren't already registered in MFA, you'll be guided through the MFA registration as part of the Windows Hello for Business enrollment process.

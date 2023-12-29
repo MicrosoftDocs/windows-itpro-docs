@@ -58,7 +58,7 @@ The Network Unlock process follows these phases:
     9. Windows continues the boot sequence
   :::column-end:::
   :::column span="2":::
-    :::image type="content" source="images/network-unlock-diagram.svg" alt-text="Diagram of the Network Unlock sequence." lightbox="images/network-unlock-diagram.svg":::
+    :::image type="content" source="images/network-unlock-diagram.svg" alt-text="Diagram of the Network Unlock sequence." lightbox="images/network-unlock-diagram.svg" border="false":::
   :::column-end:::
 :::row-end:::
 
