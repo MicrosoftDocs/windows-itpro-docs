@@ -155,7 +155,7 @@ A successful transition relies on user acceptance testing. It's impossible for y
 
 #### Deploy Windows Hello for Business to test users
 
-Next, you'll want to plan your Windows Hello for Business deployment. Your test users will need an alternative way to sign-in during step 2 of the journey to becoming password-less. Use the [Windows Hello for Business planning guide](hello-planning-guide.md) to help learning which deployment is best suited for your environment. Next, use the [Windows Hello for Business deployment guides](hello-deployment-guide.md) to deploy Windows Hello for Business.
+Next, you'll want to plan your Windows Hello for Business deployment. Your test users will need an alternative way to sign-in during step 2 of the journey to becoming password-less. Use the [Windows Hello for Business planning guide](hello-planning-guide.md) to help learning which deployment is best suited for your environment. Next, use the [Windows Hello for Business deployment guides](index.md) to deploy Windows Hello for Business.
 
 With the Windows Hello for Business infrastructure in place, you can limit Windows Hello for Business enrollments to the targeted work personas. The great news is that you'll only need to deploy the infrastructure once. When other targeted work personas need to start using Windows Hello for Business, add them to a group. You'll use the first work persona to validate your Windows Hello for Business deployment.
 

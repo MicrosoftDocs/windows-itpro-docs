@@ -2,7 +2,6 @@
 title: Support for passkeys in Windows
 description: Learn about passkeys and how to use them on Windows devices.
 ms.collection: 
-- highpri
 - tier1
 ms.topic: overview
 ms.date: 11/07/2023

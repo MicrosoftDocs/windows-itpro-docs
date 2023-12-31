@@ -2,7 +2,7 @@
 title: Windows Hello biometrics in the enterprise 
 description: Windows Hello uses biometrics to authenticate users and guard against potential spoofing, through fingerprint matching and facial recognition.
 ms.date: 01/12/2021
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Windows Hello biometrics in the enterprise
@@ -25,9 +25,7 @@ The Windows Hello authenticator works to authenticate and allow employees onto y
 Windows Hello provides many benefits, including:
 
 - It helps to strengthen your protections against credential theft. Because an attacker must have both the device and the biometric info or PIN, it's much more difficult to gain access without the employee's knowledge.
-
 - Employees get a simple authentication method (backed up with a PIN) that's always with them, so there's nothing to lose. No more forgetting passwords!
-
 - Support for Windows Hello is built into the operating system so you can add additional biometric devices and policies as part of a coordinated rollout or to individual employees or groups using Group Policy or Mobile Device Management (MDM) configurations service provider (CSP) policies.<br>For more info about the available Group Policies and MDM CSPs, see the [Implement Windows Hello for Business in your organization](hello-manage-in-organization.md) topic.
 
 ## Where is Windows Hello data stored?
@@ -80,7 +78,7 @@ To use Iris authentication, you'll need a [HoloLens 2 device](/hololens/). All H
 
 ## Related topics
 
-- [Windows Hello for Business](hello-identity-verification.md)
+- [Windows Hello for Business](deploy/requirements.md)
 - [How Windows Hello for Business works](hello-how-it-works.md)
 - [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)

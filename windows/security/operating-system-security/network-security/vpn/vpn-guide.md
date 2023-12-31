@@ -2,7 +2,7 @@
 title: Windows VPN technical guide
 description: Learn how to plan and configure Windows devices for your organization's VPN solution.
 ms.date: 08/03/2023
-ms.topic: conceptual
+ms.topic: overview
 ---
 
 # Windows VPN technical guide

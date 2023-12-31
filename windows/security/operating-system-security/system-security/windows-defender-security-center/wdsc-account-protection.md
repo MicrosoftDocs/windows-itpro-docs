@@ -11,7 +11,7 @@ ms.topic: article
 The **Account protection** section contains information and settings for account protection and sign-in. You can get more information about these capabilities from the following list:
 
 - [Microsoft Account](https://account.microsoft.com/account/faq)
-- [Windows Hello for Business](../../../identity-protection/hello-for-business/hello-identity-verification.md)
+- [Windows Hello for Business](../../../identity-protection/hello-for-business/index.md)
 - [Lock your Windows 10 PC automatically when you step away from it](https://support.microsoft.com/help/4028111/windows-lock-your-windows-10-pc-automatically-when-you-step-away-from)
 
 You can also choose to hide the section from users of the device, if you don't want your employees to access or view user-configured options for these features.

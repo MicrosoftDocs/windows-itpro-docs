@@ -4,7 +4,7 @@ description: Learn more about the Authentication Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/24/2023
+ms.date: 12/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,8 +15,6 @@ ms.topic: reference
 
 <!-- Authentication-Begin -->
 # Policy CSP - Authentication
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Authentication-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -402,7 +400,7 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 <!-- EnablePasswordlessExperience-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 23H2 [10.0.22631.2506] and later |
 <!-- EnablePasswordlessExperience-Applicability-End -->
 
 <!-- EnablePasswordlessExperience-OmaUri-Begin -->
@@ -469,10 +467,7 @@ Specifies whether web-based sign-in is allowed for signing in to Windows.
 <!-- EnableWebSignIn-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-> [!WARNING]
-> The Web sign-in feature is intended for recovery purposes in the event a password isn't available as an authentication method. Web sign-in only supports *temporary access pass* as an authentication method for Microsoft Entra ID, unless it's used in a limited federated scope.
-
-**Web sign-in** is a modern way of signing into a Windows PC. It enables Windows sign-in support for new Microsoft Entra credentials, like temporary access pass.
+Web sign-in is a credential provider that enables a web-based sign-in experience on Windows devices. Initially introduced in Windows 10 with support for Temporary Access Pass (TAP) only, Web sign-in expanded its capabilities starting in Windows 11, version 22H2 with KB5030310. For more information, see [Web sign-in for Windows](/windows/security/identity-protection/web-sign-in).
 
 > [!NOTE]
 > Web sign-in is only supported on Microsoft Entra joined PCs.

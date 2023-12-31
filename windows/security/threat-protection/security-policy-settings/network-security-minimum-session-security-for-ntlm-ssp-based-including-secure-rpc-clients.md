@@ -1,8 +1,8 @@
 ---
-title: Network security Minimum session security for NTLM SSP based (including secure RPC) clients 
+title: Network security Minimum session security for NTLM SSP based (including secure RPC) clients
 description: Best practices and more for the security policy setting, Network security Minimum session security for NTLM SSP based (including secure RPC) clients.
 ms.assetid: 89903de8-23d0-4e0f-9bef-c00cb7aebf00
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 07/27/2017
 ms.technology: itpro-security
 ---
@@ -53,13 +53,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy| Not defined| 
-| Stand-Alone Server Default Settings | Require 128-bit encryption| 
-| DC Effective Default Settings | Require 128-bit encryption| 
-| Member Server Effective Default Settings | Require 128-bit encryption| 
-| Client Computer Effective Default Settings | Require 128-bit encryption| 
- 
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy| Not defined|
+| Stand-Alone Server Default Settings | Require 128-bit encryption|
+| DC Effective Default Settings | Require 128-bit encryption|
+| Member Server Effective Default Settings | Require 128-bit encryption|
+| Client Computer Effective Default Settings | Require 128-bit encryption|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
