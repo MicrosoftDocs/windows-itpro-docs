@@ -49,9 +49,9 @@ There are three deployment models from which you can choose:
 
 || Deployment model | Description |
 |--|--|--|
-| ** :black_square_button: ** | **Cloud-only** |For organizations that only have cloud identities and don't access on-premises resources. These organizations typically join their devices to the cloud and exclusively use resources in the cloud such as SharePoint Online, OneDrive, and others. Also, since the users don't use on-premises resources, they don't need certificates for things like VPN because everything they need is hosted in cloud services|
-| ** :black_square_button: ** | **Hybrid** |For organizations that have identities synchronized from Active Directory to Microsoft Entra ID. These organizations use applications registered in Microsoft Entra ID, and want a single sign-on (SSO) experience for both on-premises and Microsoft Entra resources|
-| ** :black_square_button: ** | **On-premises** |For organizations that don't have cloud identities or use applications hosted in Microsoft Entra ID. These organizations use on-premises applications, integrated in Active Directory, and want an SSO user experiences when accessing them.|
+| **:black_square_button:**| **Cloud-only** | For organizations that only have cloud identities and don't access on-premises resources. These organizations typically join their devices to the cloud and exclusively use resources in the cloud such as SharePoint Online, OneDrive, and others. Also, since the users don't use on-premises resources, they don't need certificates for things like VPN because everything they need is hosted in cloud services |
+| **:black_square_button:**| **Hybrid** | For organizations that have identities synchronized from Active Directory to Microsoft Entra ID. These organizations use applications registered in Microsoft Entra ID, and want a single sign-on (SSO) experience for both on-premises and Microsoft Entra resources |
+| **:black_square_button:**| **On-premises** | For organizations that don't have cloud identities or use applications hosted in Microsoft Entra ID. These organizations use on-premises applications, integrated in Active Directory, and want an SSO user experiences when accessing them |
 
 >[!NOTE]
 >
@@ -70,9 +70,9 @@ There are three trust types from which you can choose:
 
 || Trust type | Description |
 |--|--|--|
-| ** :black_square_button: ** | **Cloud Kerberos**| Users authenticate to Active Directory by requesting a TGT from Microsoft Entra ID, using Microsoft Entra Kerberos. The on-premises domain controllers are still responsible for Kerberos service tickets and authorization. Cloud Kerberos trust uses the same infrastructure required for FIDO2 security key sign-in, and it can be used for new or existing Windows Hello for Business deployments. |
-| ** :black_square_button: ** | **Key**| Users authenticate to the on-premises Active Directory using a device-bound key (hardware or software) created during the Windows Hello provisioning experience. It requires to distribute certificates to domain controllers. |
-| ** :black_square_button: ** | **Certificate**| The certificate trust type issues authentication certificates to users. Users authenticate using a certificate requested using a device-bound key (hardware or software) created during the Windows Hello provisioning experience. |
+| :black_square_button: | **Cloud Kerberos**| Users authenticate to Active Directory by requesting a TGT from Microsoft Entra ID, using Microsoft Entra Kerberos. The on-premises domain controllers are still responsible for Kerberos service tickets and authorization. Cloud Kerberos trust uses the same infrastructure required for FIDO2 security key sign-in, and it can be used for new or existing Windows Hello for Business deployments. |
+| :black_square_button: | **Key**| Users authenticate to the on-premises Active Directory using a device-bound key (hardware or software) created during the Windows Hello provisioning experience. It requires to distribute certificates to domain controllers. |
+| :black_square_button: | **Certificate**| The certificate trust type issues authentication certificates to users. Users authenticate using a certificate requested using a device-bound key (hardware or software) created during the Windows Hello provisioning experience. |
 
 *Key trust* and *certificate trust* use certificate authentication-based Kerberos when requesting kerberos ticket-granting-tickets (TGTs) for on-premises authentication. This type of authentication requires a PKI for DC certificates, and requires end-user certificates for certificate trust.
 
@@ -252,14 +252,14 @@ All supported Windows 10 and Windows 11 versions can be used with Windows Hello 
 
 All supported Windows Server versions can be used with Windows Hello for Business as Domain Controller. However, cloud Kerberos trust requires minimum versions:
 
-|| Deployment model | Trust type | Domain Controller OS version |
-|--|--|--|--|
-| ** :black_square_button: ** | **Cloud-only** | n/a | All supported versions |
-| ** :black_square_button: ** | **Hybrid** | Cloud Kerberos | - Windows Server 2016, [KB3534307][KB-3]<br>- Windows Server 2019, [KB4534321][KB-4], Windows Server 2022 |
-| ** :black_square_button: ** | **Hybrid** | Key | All supported versions |
-| ** :black_square_button: ** | **Hybrid** | Certificate | All supported versions |
-| ** :black_square_button: ** | **On-premises** | Key| All supported versions |
-| ** :black_square_button: ** | **On-premises** |Certificate | All supported versions |
+|| Deployment model | Trust type     | Domain Controller OS version                                                                              |
+|-----------------------------|------------------|----------------|-----------------------------------------------------------------------------------------------------------|
+| ** :black_square_button: ** | **Cloud-only**   | n/a            | All supported versions                                                                                    |
+| ** :black_square_button: ** | **Hybrid**       | Cloud Kerberos | - Windows Server 2016, [KB3534307][KB-3]<br>- Windows Server 2019, [KB4534321][KB-4], Windows Server 2022 |
+| ** :black_square_button: ** | **Hybrid**       | Key            | All supported versions                                                                                    |
+| ** :black_square_button: ** | **Hybrid**       | Certificate    | All supported versions                                                                                    |
+| ** :black_square_button: ** | **On-premises**  | Key            | All supported versions                                                                                    |
+| ** :black_square_button: ** | **On-premises**  | Certificate    | All supported versions                                                                                    |
 
 ## Prepare users to use Windows Hello
 
