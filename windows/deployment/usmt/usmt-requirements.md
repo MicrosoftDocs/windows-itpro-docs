@@ -46,8 +46,9 @@ For more information about previous releases of the USMT tools, see [User State 
 
 ## Credentials
 
-- **Run as administrator**
-    When manually running the **ScanState** and **LoadState** tools, you must run them from an elevated command prompt to ensure that all specified users are migrated. If you don't run USMT from an elevated prompt, only the user profile that is logged on is included in the migration.
+- **Run as administrator.**
+
+  When manually running the **ScanState** and **LoadState** tools, you must run them from an elevated command prompt to ensure that all specified users are migrated. If you don't run USMT from an elevated prompt, only the user profile that is logged on is included in the migration.
 
 To open an elevated command prompt:
 

@@ -16,7 +16,7 @@ When planning for your migration, you should identify which operating system set
 
 - **Appearance**
 
-    The appearance factor includes items such as wallpaper, colors, sounds, and the location of the taskbar.
+  The appearance factor includes items such as wallpaper, colors, sounds, and the location of the taskbar.
 
 - **Action**
 
@@ -28,11 +28,11 @@ When planning for your migration, you should identify which operating system set
 
 - **Internet**
 
-    The Internet factor includes the settings that let you connect to the Internet and control how your browser operates. The settings include items such as your home page URL, favorites, bookmarks, cookies, security settings, and proxy settings. These settings might not be supported in all browsers.
+  The Internet factor includes the settings that let you connect to the Internet and control how your browser operates. The settings include items such as your home page URL, favorites, bookmarks, cookies, security settings, and proxy settings. These settings might not be supported in all browsers.
 
 - **Mail**
 
-    The mail factor includes the information that you need to connect to your mail server, your signature file, views, mail rules, local mail, and contacts.
+  The mail factor includes the information that you need to connect to your mail server, your signature file, views, mail rules, local mail, and contacts.
 
 To help determine which settings to migrate, consider any previous migration experiences and the results of any conducted surveys and tests. Also consider the number of help-desk calls related to operating-system settings from the past, and are able to handle in the future. Also decide how much of the new operating-system functionality needs to be taken advantage of.
 
