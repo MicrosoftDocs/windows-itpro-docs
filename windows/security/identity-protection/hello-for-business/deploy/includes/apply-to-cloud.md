@@ -4,7 +4,10 @@ ms.topic: include
 ---
 
 [!INCLUDE [intro](intro.md)]
-<!--- **Deployment type:** [!INCLUDE [tooltip-deployment-cloud](tooltip-deployment-cloud.md)]
-- **Join type:** [!INCLUDE [tootip-join-entra](tooltip-join-entra.md)]-->
+<!--
+- **Deployment type:** [!INCLUDE [tooltip-deployment-cloud](tooltip-deployment-cloud.md)]
+- **Join type:** [!INCLUDE [tootip-join-entra](tooltip-join-entra.md)]
+-->
+> - **Deployment type:** [!INCLUDE [tooltip-deployment-cloud](tooltip-deployment-cloud.md)]
 > - **Join type:** [!INCLUDE [tootip-join-entra](tooltip-join-entra.md)]
 ---
