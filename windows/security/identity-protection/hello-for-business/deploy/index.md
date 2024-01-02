@@ -68,11 +68,11 @@ The deployment of certificates to users and Domain Controllers requires more con
 
 There are three trust types from which you can choose:
 
-| :ballot_box_with_check: | Trust type | Description |
+|| Trust type | Description |
 |--|--|--|
-| :black_square_button: | **Cloud Kerberos trust**|  Users authenticate to Active Directory by requesting a TGT from Microsoft Entra ID, using Microsoft Entra Kerberos. The on-premises domain controllers are still responsible for Kerberos service tickets and authorization. Cloud Kerberos trust uses the same infrastructure required for FIDO2 security key sign-in, and it can be used for new or existing Windows Hello for Business deployments. |
-| :black_square_button: | **Key trust**| Users authenticate to the on-premises Active Directory using a device-bound key (hardware or software) created during the Windows Hello provisioning experience. It requires to distribute certificates to domain controllers. |
-| :black_square_button: | **Certificate trust**| The certificate trust type issues authentication certificates to users. Users authenticate using a certificate requested using a device-bound key (hardware or software) created during the Windows Hello provisioning experience. |
+| :black_square_button: | **Cloud Kerberos**|  Users authenticate to Active Directory by requesting a TGT from Microsoft Entra ID, using Microsoft Entra Kerberos. The on-premises domain controllers are still responsible for Kerberos service tickets and authorization. Cloud Kerberos trust uses the same infrastructure required for FIDO2 security key sign-in, and it can be used for new or existing Windows Hello for Business deployments. |
+| :black_square_button: | **Key**| Users authenticate to the on-premises Active Directory using a device-bound key (hardware or software) created during the Windows Hello provisioning experience. It requires to distribute certificates to domain controllers. |
+| :black_square_button: | **Certificate**| The certificate trust type issues authentication certificates to users. Users authenticate using a certificate requested using a device-bound key (hardware or software) created during the Windows Hello provisioning experience. |
 
 *Key trust* and *certificate trust* use certificate authentication-based Kerberos when requesting kerberos ticket-granting-tickets (TGTs) for on-premises authentication. This type of authentication requires a PKI for DC certificates, and requires end-user certificates for certificate trust.
 
@@ -95,11 +95,14 @@ Cloud Kerberos trust is the only hybrid deployment option that doesn't require t
 - Deployments using the certificate trust type require an enterprise PKI and a certificate registration authority (CRA) to issue authentication certificates to users. AD FS is used as a CRA
 - Hybrid deployments might need to issue VPN certificates to users to enable connectivity on-premises resources
 
-| Deployment model | PKI |
-|-|-|
-| **Cloud-only** | not required |
-| **Hybrid** | :black_square_button: **Cloud Kerberos trust**: not required <br> :black_square_button: **Key trust**: required <br> :black_square_button: **Certificate trust**: required|
-| **On-premises** | required |
+|| Deployment model | Trust type | PKI required? |
+|--|--|--|--|
+| :black_square_button: | **Cloud-only** |  n/a | no |
+| :black_square_button: | **Hybrid** |  **Cloud Kerberos** | no |
+| :black_square_button: | **Hybrid** |  **Key** | yes |
+| :black_square_button: | **Hybrid** |  **Certificate** | yes |
+| :black_square_button: | **On-premises** |  **Key** | yes |
+| :black_square_button: | **On-premises** |  **Certificate** | yes |
 
 ## Authentication
 
@@ -109,11 +112,17 @@ For on-premises deployments, the identity provider is the on-premises server run
 
 Here's a list of requirements for federated and nonfederated deployments.
 
-| Deployment model | Authentication options |
-|--|--| 
-| **Cloud-only** | :black_square_button: **Non-federated**<br> :black_square_button: **Federated**: federated authentication requires a third-party federation service |
-| **Hybrid** | :black_square_button: **Non-federated**:<br>&emsp; :black_square_button: **Key trust** requires [password hash synchronization (PHS)][ENTRA-6] or [pass-through authentication (PTA)][ENTRA-7]<br><br> :black_square_button: **Federated**: federated authentication requires AD FS or a third-party federation service<br>&emsp; :black_square_button: **Certificate trust** doesn't support [PTA][ENTRA-7] or [PHS][ENTRA-6]. Active Directory must be federated with Microsoft Entra ID using AD FS. Additionally, you must configure your AD FS farm to support Microsoft Entra registered devices |
-| **On-premises** | AD FS |
+|| Deployment model | Deployment model | Trust type | Authentication to Microsoft Entra ID | Requirements |
+|--|--|--|--|--|
+| :black_square_button: | **Cloud-only** | n/a | **non-federated** | n/a |
+| :black_square_button: | **Cloud-only** | n/a | **federated** | third-party federation service |
+| :black_square_button: | **Hybrid** |  **Cloud Kerberos**| non-federated  | Microsoft Entra Kerberos |
+| :black_square_button: | **Hybrid** |  **Key** | non-federated | [Password hash synchronization (PHS)][ENTRA-6] or [pass-through authentication (PTA)][ENTRA-7]|
+| :black_square_button: | **Hybrid** |  **Key** | federated | AD FS or third-party federation service. It doesn't support [PTA][ENTRA-7] or [PHS][ENTRA-6] |
+| :black_square_button: | **Hybrid** |  **Certificate** | non-federated | AD FS |
+| :black_square_button: | **Hybrid** |  **Certificate** | federated | AD FS |
+| :black_square_button: | **On-premises** |  **Certificate** | n/a | AD FS |
+| :black_square_button: | **On-premises** |  **Certificate** | n/a | AD FS |
 
 ### Device registration
 
@@ -250,11 +259,7 @@ The next video shows the Windows Hello for Business enrollment experience after 
 1. The provisioning flow proceeds to the multi-factor authentication portion of the enrollment. Provisioning informs the user that it's actively attempting to contact the user through their configured form of MFA. The provisioning process doesn't proceed until authentication succeeds, fails or times out. A failed or timeout MFA results in an error and asks the user to retry
 1. After a successful MFA, the provisioning flow asks the user to create and validate a PIN. This PIN must observe any PIN complexity policies configured on the device
 
-<div style="text-align: center;">
-
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7 alt-text="Video showing the Windows Hello for Business enrollment steps after signing in with a password."]
-
-</div>
 
 After enrollment in Windows Hello, users should use their gesture (such as a PIN or fingerprint) for access to their devices and corporate resources. The unlock gesture is valid only on the enrolled device.
 
@@ -276,7 +281,7 @@ Now that you've read about the different deployment options and requirements, yo
 > [!div class="op_multi_selector" title1="Deployment model:" title2="Trust type:"]
 > To learn more about the deployment process, chose a deployment model and trust type from the following drop-down lists:
 >
-> - [(cloud-only|Microsoft Entra ID)](cloud-only.md)
+> - [(cloud-only|n/a)](cloud-only.md)
 > - [(hybrid | cloud Kerberos trust)](hybrid-cloud-kerberos-trust.md)
 > - [(hybrid | key trust)](hybrid-key-trust.md)
 > - [(hybrid | certificate trust)](hybrid-cert-trust.md)
