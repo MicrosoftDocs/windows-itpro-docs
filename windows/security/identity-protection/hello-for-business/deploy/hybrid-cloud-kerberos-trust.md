@@ -61,7 +61,7 @@ For more information about how Microsoft Entra Kerberos works with Windows Hello
 After setting up the Microsoft Entra Kerberos object, Windows Hello for business must be enabled and configured to use cloud Kerberos trust. There are 2 policy settings required to configure Windows Hello for Business in a cloud Kerberos trust model:
 
 - [Use Windows Hello for Business](../policy-settings.md#use-windows-hello-for-business)
-- [use-cloud-trust-for-on-premises-authentication](../policy-settings.md#use-cloud-trust-for-on-premises-authentication)
+- [Use cloud trust for on-premises authentication](../policy-settings.md#use-cloud-trust-for-on-premises-authentication)
 
 Another optional, but recommended, policy setting is:
 
