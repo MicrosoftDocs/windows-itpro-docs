@@ -1192,7 +1192,7 @@ Syntax:
 |--- |--- |--- |
 | filter | No. <br>If this parameter isn't specified, then all patterns that are inside the child **\<objectSet\>** element are processed. | A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`. <br>The script is called for each object that is enumerated by the object sets in the **\<include\>** rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated. |
 
-The following example is from the MigUser.xml file:
+The following example is from the `MigUser.xml` file:
 
 ```xml
 <component type="Documents" context="User">
@@ -1480,7 +1480,7 @@ Syntax:
 |--- |--- |--- |
 |script|Yes|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`. <br><br>The script is called for each object that is enumerated by the object sets in the **\<include\>** rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated.|
 
-The following example is from the MigUser.xml file:
+The following example is from the `MigUser.xml` file:
 
 ```xml
 <rules>
@@ -1692,7 +1692,7 @@ Syntax:
 </objectSet>
 ```
 
-The following example is from the MigUser.xml file:
+The following example is from the `MigUser.xml` file:
 
 ```xml
 <component type="Documents" context="User">
@@ -1836,7 +1836,7 @@ Syntax:
 |--- |--- |--- |
 | role | Yes | Defines the role for the component. Role can be one of: <ul><li>**Container**</li><li>**Binaries**</li><li>**Settings**</li><li>**Data**</li></ul> One of the following items can be specified: <ol><li>Up to three **\<role\>** elements within a **\<component\>** - one "Binaries" role element, one "Settings" role element and one "Data" role element. These parameters don't change the migration behavior - their only purpose is to help categorize the settings that are migrating. These **\<role\>** elements can be nested, but each nested element must be of the same role parameter.</li><li>One "Container" **\<role\>** element within a **\<component\>** element. In this case, any child **\<rules\>** elements can't be specified, only other **\<component\>** elements. And each child **\<component\>** element must have the same type as that of parent **\<component\>** element. For example:</li></ol> <pre class="syntax"><code>\<component context="UserAndSystem" type="Application"\> <br>  \<displayName _locID="migapp.msoffice2016"\>Microsoft Office 2016\</displayName\> <br>  \<environment name="GlobalEnv" /\> <br>  \<role role="Container"\><br>    \<detection name="AnyOffice2016Version" /\> <br>    \<detection name="Word2016" /\> <br>    \<!-- <br> Office 2016 Common Settings <br>  --\> <br>     \<component context="UserAndSystem" type="Application"\></code></pre> |
 
-The following example is from the MigUser.xml file. For more examples, see the `MigApp.xml` file:
+The following example is from the `MigUser.xml` file. For more examples, see the `MigApp.xml` file:
 
 ```xml
 <component type="System" context="User">
@@ -1891,7 +1891,7 @@ Syntax:
 | name | Yes, when **\<rules\>** is a child to **\<namedElements\>** <br>No, when **\<rules\>** is a child to any other element | When *ID* is specified, any child elements aren't processed. Instead, any other **\<rules\>** elements with the same name that are declared within **\<namedElements\>** are processed. |
 | context | No <br>(default = UserAndSystem) | Defines the scope of this parameter - whether to process this component in the context of the specific user, across the entire operating system, or both. <br>The largest possible scope is set by the component element. For example, if a **\<component\>** element has a context of **User** and a **\<rules\>** element had a context of **UserAndSystem**, then the **\<rules\>** element would act as though it has a context of **User**. If **\<rules\>** had a context of **System**, it would act as though **\<rules\>** wasn't there. <ul><li>**User**: Evaluates the variables for each user.</li><li>**System**: Evaluates the variables only once for the system.</li><li>**UserAndSystem**: Evaluates the variables for the entire operating system and each user.</li></ul> |
 
-The following example is from the MigUser.xml file:
+The following example is from the `MigUser.xml` file:
 
 ```xml
 <component type="Documents" context="User">
@@ -2016,7 +2016,7 @@ These functions return either a string or a pattern.
     | *PatternSegment* | Yes | The suffix of an encoded pattern. The value is concatenated with a drive specification, such as "c:", to form a complete [encoded file pattern](#specifying-locations). For example, "* [*.doc]". *PatternSegment* can't be an environment variable. |
     | *DriveType* | Yes | The drive type for which the patterns are to be generated. One of the following items can be specified: <ul><li>Fixed</li><li>CDROM</li><li>Removable</li><li>Remote</li></ul> |
 
-  See the last component in the MigUser.xml file for an example of this element.
+  See the last component in the `MigUser.xml` file for an example of this element.
 
 - **GenerateUserPatterns**
 

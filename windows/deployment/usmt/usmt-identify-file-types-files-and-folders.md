@@ -15,7 +15,7 @@ appliesto:
 
 # Identify file types, files, and folders
 
-When planning for your migration, if not using MigDocs.xml, you should identify the file types, files, folders, and settings that you want to migrate. First, you should determine the standard file locations on each computer, such as the **Documents** folder, `C:\Data` , and company-specified locations, such as `\\EngineeringDrafts`. Next, you should determine and locate the non-standard locations. For non-standard locations, consider the following items:
+When planning for your migration, if not using `MigDocs.xml`, you should identify the file types, files, folders, and settings that you want to migrate. First, you should determine the standard file locations on each computer, such as the **Documents** folder, `C:\Data` , and company-specified locations, such as `\\EngineeringDrafts`. Next, you should determine and locate the non-standard locations. For non-standard locations, consider the following items:
 
 - **File types**: Consider which file types need to be included and excluded from the migration. You can create this list based on common applications used in your organization. Applications normally use specific file name extensions. For example, Microsoft Office Word primarily uses `.doc`, `.docx` and `.dotx` file name extension. However, it also uses other file types, such as templates (`.dot` files), on a less frequent basis.
 
@@ -37,7 +37,7 @@ To find the registered file types on a computer running a currently supported ve
 
 1. In the window that opens, the registered file types are displayed.
 
-For more information about how to change the file types, files, and folders that are migrated when you specify the MigUser.xml file, see [User State Migration Tool (USMT) how-to articles](usmt-how-to.md).
+For more information about how to change the file types, files, and folders that are migrated when you specify the `MigUser.xml` file, see [User State Migration Tool (USMT) how-to articles](usmt-how-to.md).
 
 ## Related articles
 

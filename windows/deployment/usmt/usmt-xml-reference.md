@@ -21,7 +21,7 @@ This section contains articles that can be used to work with and to customize th
 
 | Link | Description |
 |--- |--- |
-|[Understanding migration XML files](understanding-migration-xml-files.md)|Provides an overview of the default and custom migration XML files and includes guidelines for creating and editing a customized version of the MigDocs.xml file.|
+|[Understanding migration XML files](understanding-migration-xml-files.md)|Provides an overview of the default and custom migration XML files and includes guidelines for creating and editing a customized version of the `MigDocs.xml` file.|
 |[Config.xml file](usmt-configxml-file.md)|Describes the `Config.xml` file and policies concerning its configuration.|
 |[Customize USMT XML files](usmt-customize-xml-files.md)|Describes how to customize USMT XML files.|
 |[Custom XML examples](usmt-custom-xml-examples.md)|Gives examples of XML files for various migration scenarios.|
