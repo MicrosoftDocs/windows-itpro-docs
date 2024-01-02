@@ -41,9 +41,7 @@ If you're new to AD FS and federation services:
 - Review [key AD FS concepts][SER-3] prior to deploying the AD FS farm
 - Review the [AD FS design guide][SER-4] to design and plan your federation service
 
-Once you have your AD FS design ready:
-
-- Review [deploying a federation server farm][SER-2] to configure AD FS in your environment
+Once you have your AD FS design ready, review [deploying a federation server farm][SER-2] to configure AD FS in your environment
 
 The AD FS farm used with Windows Hello for Business must be Windows Server 2016 with minimum update of [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).
 
@@ -60,7 +58,7 @@ Hybrid certificate trust deployments require the *device write-back* feature. Au
 > [!NOTE]
 > Windows Hello for Business is tied between a user and a device. Both the user and device need to be synchronized between Microsoft Entra ID and Active Directory. Device write-back is used to update the *msDS-KeyCredentialLink* attribute on the computer object.
 
-If you manually configured AD FS, or if you ran Microsoft Entra Connect Sync using *Custom Settings*, you must ensure that you have configured **device write-back** and **device authentication** in your AD FS farm. For more information, see [Configure Device Write Back and Device Authentication][SER-5].
+If you manually configured AD FS, or if you ran Microsoft Entra Connect Sync using *Custom Settings*, you must ensure to configure **device write-back** and **device authentication** in your AD FS farm. For more information, see [Configure Device Write Back and Device Authentication][SER-5].
 
 ### Public Key Infrastructure
 

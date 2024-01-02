@@ -17,7 +17,7 @@ ms.topic: tutorial
 
 ## Configure Windows Hello for Business policy settings
 
-There are 2 policy setting required to enable Windows Hello for Business in a certificate trust model:
+There are two policy settings required to enable Windows Hello for Business in a certificate trust model:
 
 - [Use Windows Hello for Business](../policy-settings.md#use-windows-hello-for-business)
 - [Use certificate for on-premises authentication](../policy-settings.md#use-certificate-for-on-premises-authentication)
@@ -26,7 +26,7 @@ Another optional, but recommended, policy setting is:
 
 - [Use a hardware security device](../policy-settings.md#use-a-hardware-security-device)
 
-Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
+Use the following instructions to configure your devices using either Microsoft Intune or group policy (GPO).
 
 # [:::image type="icon" source="images/group-policy.svg"::: **GPO**](#tab/gpo)
 
@@ -91,9 +91,9 @@ For more information about the certificate trust policy, see [Windows Hello for 
 
 ---
 
-If you deploy Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../configure.md#policy-conflicts-from-multiple-policy-sources)
+If you deploy Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings take precedence, and Intune settings are ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../configure.md#policy-conflicts-from-multiple-policy-sources)
 
-Additional policy settings can be configured to control the behavior of Windows Hello for Business. For more information, see [Windows Hello for Business policy settings](../policy-settings.md).
+More policy settings can be configured to control the behavior of Windows Hello for Business. For more information, see [Windows Hello for Business policy settings](../policy-settings.md).
 
 ## Enroll in Windows Hello for Business
 
@@ -115,7 +115,7 @@ The AD FS registration authority verifies the key used in the certificate reques
 > [!NOTE]
 > In order for AD FS to verify the key used in the certificate request, it needs to be able to access the `https://enterpriseregistration.windows.net` endpoint.
 
-The certificate authority validates the certificate was signed by the registration authority. On successful validation of the signature, it issues a certificate based on the request and returns the certificate to the AD FS registration authority. The registration authority returns the certificate to Windows where it then installs the certificate in the current user's certificate store. Once this process completes, the Windows Hello for Business provisioning workflow informs the user that they can use their PIN to sign-in through the Action Center.
+The CA validates that the certificate is signed by the registration authority. On successful validation, it issues a certificate based on the request and returns the certificate to the AD FS registration authority. The registration authority returns the certificate to Windows where it then installs the certificate in the current user's certificate store. Once this process completes, the Windows Hello for Business provisioning workflow informs the user that they can use their PIN to sign-in through the Action Center.
 
 > [!NOTE]
 > Windows Server 2016 update [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889) provides synchronous certificate enrollment during hybrid certificate trust provisioning. With this update, users don't need to wait for Microsoft Entra Connect to sync their public key on-premises. Users enroll their certificate during provisioning and can use the certificate for sign-in immediately after completing the provisioning. The update needs to be installed on the federation servers.

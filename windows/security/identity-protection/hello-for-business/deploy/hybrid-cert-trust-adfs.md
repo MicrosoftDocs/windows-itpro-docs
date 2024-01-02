@@ -11,7 +11,7 @@ ms.topic: tutorial
 
 The Windows Hello for Business certificate-based deployments use AD FS as the certificate registration authority (CRA).
 The CRA is responsible for issuing and revoking certificates to users. Once the registration authority verifies the certificate request, it signs the certificate request using its enrollment agent certificate and sends it to the certificate authority.\
-The CRA enrolls for an *enrollment agent certificate*, and the Windows Hello for Business *authentication certificate template* is configured to only issue certificates to certificate requests that have been signed with an enrollment agent certificate.
+The CRA enrolls for an *enrollment agent certificate*, and the Windows Hello for Business *authentication certificate template* is configured to only issue certificates to requests signed with an enrollment agent certificate.
 
 > [!NOTE]
 > In order for AD FS to verify user certificate requests for Windows Hello for Business, it needs to be able to access the `https://enterpriseregistration.windows.net` endpoint.
@@ -33,11 +33,11 @@ Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplat
 
 AD FS performs its own certificate lifecycle management. Once the registration authority is configured with the proper certificate template, the AD FS server attempts to enroll the certificate on the first certificate request or when the service first starts.
 
-Approximately 60 days prior to enrollment agent certificate's expiration, the AD FS service attempts to renew the certificate until it is successful. If the certificate fails to renew, and the certificate expires, the AD FS server will request a new enrollment agent certificate. You can view the AD FS event logs to determine the status of the enrollment agent certificate.
+Approximately 60 days prior to enrollment agent certificate's expiration, the AD FS service attempts to renew the certificate until it's successful. If the certificate fails to renew, and the certificate expires, the AD FS server requests a new enrollment agent certificate. You can view the AD FS event logs to determine the status of the enrollment agent certificate.
 
 ### Group Memberships for the AD FS service account
 
-The AD FS service account must be member of the security group targeted by the authentication certificate template auto-enrollment (e.g. *Window Hello for Business Users*). The security group provides the AD FS service with the permissions needed to enroll a Windows Hello for Business authentication certificate on behalf of the provisioning user.
+The AD FS service account must be member of the security group targeted by the authentication certificate template autoenrollment (for example, *Window Hello for Business Users*). The security group provides the AD FS service with the permissions needed to enroll a Windows Hello for Business authentication certificate on behalf of the provisioning user.
 
 > [!TIP]
 > The adfssvc account is the AD FS service account.
@@ -45,7 +45,7 @@ The AD FS service account must be member of the security group targeted by the a
 Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
 
 1. Open **Active Directory Users and Computers**
-1. Search for the security group targeted by the authentication certificate template auto-enrollment (e.g. *Window Hello for Business Users*)
+1. Search for the security group targeted by the authentication certificate template autoenrollment (for example, *Window Hello for Business Users*)
 1. Select the **Members** tab and select **Add**
 1. In the **Enter the object names to select** text box, type **adfssvc** or substitute the name of the AD FS service account in your AD FS deployment > **OK**
 1. Select **OK** to return to **Active Directory Users and Computers**

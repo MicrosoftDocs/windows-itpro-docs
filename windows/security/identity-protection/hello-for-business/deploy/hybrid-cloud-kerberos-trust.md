@@ -33,7 +33,7 @@ ms.topic: tutorial
 
 ## Deploy Microsoft Entra Kerberos
 
-If you've already deployed on-premises SSO for passwordless security key sign-in, then you've already deployed Microsoft Entra Kerberos in your organization. You don't need to redeploy or change your existing Microsoft Entra Kerberos deployment to support Windows Hello for Business and you can skip to the [Configure Windows Hello for Business policy settings](#configure-windows-hello-for-business-policy-settings) section.
+If you've already deployed on-premises SSO for passwordless security key sign-in, then Microsoft Entra Kerberos is already deployed in your organization. You don't need to redeploy or change your existing Microsoft Entra Kerberos deployment to support Windows Hello for Business, and you can skip to the [Configure Windows Hello for Business policy settings](#configure-windows-hello-for-business-policy-settings) section.
 
 If you haven't deployed Microsoft Entra Kerberos, follow the instructions in the [Enable passwordless security key sign-in][ENTRA-1] documentation. This page includes information on how to install and use the Microsoft Entra Kerberos PowerShell module. Use the module to create a Microsoft Entra Kerberos server object for the domains where you want to use Windows Hello for Business cloud Kerberos trust.
 
@@ -58,7 +58,7 @@ For more information about how Microsoft Entra Kerberos works with Windows Hello
 
 ## Configure Windows Hello for Business policy settings
 
-After setting up the Microsoft Entra Kerberos object, Windows Hello for business must be enabled and configured to use cloud Kerberos trust. There are 2 policy settings required to configure Windows Hello for Business in a cloud Kerberos trust model:
+After setting up the Microsoft Entra Kerberos object, Windows Hello for business must be enabled and configured to use cloud Kerberos trust. There are two policy settings required to configure Windows Hello for Business in a cloud Kerberos trust model:
 
 - [Use Windows Hello for Business](../policy-settings.md#use-windows-hello-for-business)
 - [Use cloud trust for on-premises authentication](../policy-settings.md#use-cloud-trust-for-on-premises-authentication)
@@ -70,7 +70,7 @@ Another optional, but recommended, policy setting is:
 > [!IMPORTANT]
 > If the **Use certificate for on-premises authentication** policy is enabled, certificate trust takes precedence over cloud Kerberos trust. Ensure that the machines that you want to enable cloud Kerberos trust have this policy **not configured**.
 
-Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
+The following instructions explain how to configure your devices using either Microsoft Intune or group policy (GPO).
 
 # [:::image type="icon" source="images/intune.svg"::: **Intune/CSP**](#tab/intune)
 
@@ -123,18 +123,18 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 ---
 
-If you deploy Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../configure.md#policy-conflicts-from-multiple-policy-sources).
+If you deploy Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings take precedence, and Intune settings are ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../configure.md#policy-conflicts-from-multiple-policy-sources).
 
-Additional policy settings can be configured to control the behavior of Windows Hello for Business. For more information, see [Windows Hello for Business policy settings](../policy-settings.md).
+More policy settings can be configured to control the behavior of Windows Hello for Business. For more information, see [Windows Hello for Business policy settings](../policy-settings.md).
 
 ## Enroll in Windows Hello for Business
 
-The Windows Hello for Business provisioning process begins immediately after a user has signed in if certain prerequisite checks are passed. Windows Hello for Business *cloud Kerberos trust* adds a prerequisite check for Microsoft Entra hybrid joined devices when cloud Kerberos trust is enabled by policy.
+The Windows Hello for Business provisioning process begins immediately after a user signs in, if the prerequisite checks pass. Windows Hello for Business *cloud Kerberos trust* adds a prerequisite check for Microsoft Entra hybrid joined devices when cloud Kerberos trust is enabled by policy.
 
 You can determine the status of the prerequisite check by viewing the **User Device Registration** admin log under **Applications and Services Logs** > **Microsoft** > **Windows**.\
 This information is also available using the `dsregcmd.exe /status` command from a console. For more information, see [dsregcmd][AZ-4].
 
-The cloud Kerberos trust prerequisite check detects whether the user has a partial TGT before allowing provisioning to start. The purpose of this check is to validate whether Microsoft Entra Kerberos is set up for the user's domain and tenant. If Microsoft Entra Kerberos is set up, the user will receive a partial TGT during sign-in with one of their other unlock methods. This check has three states: Yes, No, and Not Tested. The *Not Tested* state is reported if cloud Kerberos trust isn't being enforced by policy or if the device is Microsoft Entra joined.
+The cloud Kerberos trust prerequisite check detects whether the user has a partial TGT before allowing provisioning to start. The purpose of this check is to validate whether Microsoft Entra Kerberos is set up for the user's domain and tenant. If Microsoft Entra Kerberos is set up, the user receives a partial TGT during sign-in with one of their other unlock methods. This check has three states: Yes, No, and Not Tested. The *Not Tested* state is reported if cloud Kerberos trust isn't enforced by policy or if the device is Microsoft Entra joined.
 
 > [!NOTE]
 > The cloud Kerberos trust prerequisite check isn't done on Microsoft Entra joined devices. If Microsoft Entra Kerberos isn't provisioned, a user on a Microsoft Entra joined device will still be able to sign in, but won't have SSO to on-premises resources secured by Active Directory.
@@ -145,9 +145,9 @@ The cloud Kerberos trust prerequisite check detects whether the user has a parti
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7 alt-text="Video showing the Windows Hello for Business enrollment steps after signing in with a password."]
 
-Once a user completes enrollment with cloud Kerberos trust, the Windows Hello gesture can be used **immediately** for sign-in. On a Microsoft Entra hybrid joined device, the first use of the PIN requires line of sight to a DC. Once the user has signed in or unlocked with the DC, cached sign-in can be used for subsequent unlocks without line of sight or network connectivity.
+Once a user completes enrollment with cloud Kerberos trust, the Windows Hello gesture can be used **immediately** for sign-in. On a Microsoft Entra hybrid joined device, the first use of the PIN requires line of sight to a DC. Once the user signs in or unlocks with the DC, cached sign-in can be used for subsequent unlocks without line of sight or network connectivity.
 
-While the user has completed provisioning, Microsoft Entra Connect synchronizes the user's key from Microsoft Entra ID to Active Directory.
+After enrollment, Microsoft Entra Connect synchronizes the user's key from Microsoft Entra ID to Active Directory.
 
 ## Migrate from key trust deployment model to cloud Kerberos trust
 

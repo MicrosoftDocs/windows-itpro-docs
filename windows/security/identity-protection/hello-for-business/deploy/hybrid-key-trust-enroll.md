@@ -17,7 +17,7 @@ ms.topic: tutorial
 
 ## Configure Windows Hello for Business policy settings
 
-There's 1 policy setting required to enable Windows Hello for Business in a key trust model:
+There's one policy setting required to enable Windows Hello for Business in a key trust model:
 
 - [Use Windows Hello for Business](../policy-settings.md#use-windows-hello-for-business)
 
@@ -25,7 +25,7 @@ Another optional, but recommended, policy setting is:
 
 - [Use a hardware security device](../policy-settings.md#use-a-hardware-security-device)
 
-Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
+The following instructions describe how to configure your devices using either Microsoft Intune or group policy (GPO).
 
 # [:::image type="icon" source="images/intune.svg"::: **Intune/CSP**](#tab/intune)
 
@@ -68,9 +68,9 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 ---
 
-If you deploy Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../configure.md#policy-conflicts-from-multiple-policy-sources)
+If you deploy Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings take precedence, and Intune settings are ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../configure.md#policy-conflicts-from-multiple-policy-sources)
 
-Additional policy settings can be configured to control the behavior of Windows Hello for Business. For more information, see [Windows Hello for Business policy settings](../policy-settings.md).
+Other policy settings can be configured to control the behavior of Windows Hello for Business. For more information, see [Windows Hello for Business policy settings](../policy-settings.md).
 
 ## Enroll in Windows Hello for Business
 
@@ -87,7 +87,7 @@ This information is also available using the `dsregcmd.exe /status` command from
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7 alt-text="Video showing the Windows Hello for Business enrollment steps after signing in with a password."]
 
-While the user has completed provisioning, Microsoft Entra Connect synchronizes the user's key from Microsoft Entra ID to Active Directory.
+After enrollment, Microsoft Entra Connect synchronizes the user's key from Microsoft Entra ID to Active Directory.
 
 > [!IMPORTANT]
 > The minimum time needed to synchronize the user's public key from Microsoft Entra ID to the on-premises Active Directory is 30 minutes. The Microsoft Entra Connect scheduler controls the synchronization interval.
