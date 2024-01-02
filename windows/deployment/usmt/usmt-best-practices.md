@@ -25,11 +25,11 @@ This article discusses general and security-related best practices when using Us
 
 - **Don't use MigUser.xml and MigDocs.xml together.**
 
-  If you use both **.xml** files, some migrated files can be duplicated if conflicting instructions are given about target locations. You can use the `/genmigxml` command-line option to determine which files are included in your migration, and to determine if any modifications are necessary. For more information, see [Identify file types, files, and folders](usmt-identify-file-types-files-and-folders.md).
+  If you use both **.xml** files, some migrated files can be duplicated if conflicting instructions are given about target locations. You can use the `/genmigxml` command-line option to determine which files are included in the migration, and to determine if any modifications are necessary. For more information, see [Identify file types, files, and folders](usmt-identify-file-types-files-and-folders.md).
 
 - **Use MigDocs.xml for a better migration experience.**
 
-  If your data set is unknown or if many files are stored outside of the standard user-profile folders, the `MigDocs.xml` file is a better choice than the `MigUser.xml` file, because the `MigDocs.xml` file gathers a broader scope of data. The `MigDocs.xml` file migrates folders of data based on location, and on registered file type by querying the registry for registered application extensions. The `MigUser.xml` file migrates only the files with the specified file extensions.
+  If the data set is unknown or if many files are stored outside of the standard user-profile folders, the `MigDocs.xml` file is a better choice than the `MigUser.xml` file, because the `MigDocs.xml` file gathers a broader scope of data. The `MigDocs.xml` file migrates folders of data based on location, and on registered file type by querying the registry for registered application extensions. The `MigUser.xml` file migrates only the files with the specified file extensions.
 
 - **Close all applications before running either the ScanState or LoadState tools.**
 
@@ -49,11 +49,11 @@ This article discusses general and security-related best practices when using Us
 
 - **Migrate in groups.**
 
-  If you decide to perform the migration while users are using the network, it's best to migrate user accounts in groups. To minimize the effect on network performance, determine the size of the groups based on the size of each user account. Migrating in phases also allows you to make sure each phase is successful before starting the next phase. Using this method, you can make any necessary modifications to your plan between groups.
+  If you decide to perform the migration while users are using the network, it's best to migrate user accounts in groups. To minimize the effect on network performance, determine the size of the groups based on the size of each user account. Migrating in phases also allows you to make sure each phase is successful before starting the next phase. Using this method, you can make any necessary modifications to the plan between groups.
 
 ## Security best practices
 
-As the authorized administrator, it is your responsibility to protect the privacy of the users and maintain security during and after the migration. In particular, you must consider the following issues:
+As the authorized administrator, it's the responsibility to protect the privacy of the users and maintain security during and after the migration. In particular, you must consider the following issues:
 
 - **Encrypting File System (EFS).**
 
@@ -104,11 +104,11 @@ As the authorized administrator, it is your responsibility to protect the privac
 
 - **Use the default migration XML files as models.**
 
-  To create a custom **.xml** file, you can use the migration **.xml** files as models to create your own. If you need to migrate user data files, model your custom **.xml** file on `MigUser.xml`. To migrate application settings, model your custom **.xml** file on the `MigApp.xml` file.
+  To create a custom **.xml** file, migration **.xml** files can be used as models to create customized versions. If user data files need to be migrated, model the custom **.xml** file on `MigUser.xml`. To migrate application settings, model the custom **.xml** file on the `MigApp.xml` file.
 
 - **Consider the impact on performance when using the \<context\> parameter.**
 
-  Your migration performance can be affected when you use the **\<context\>** element with the **\<component\>** element; for example, as in when you want to encapsulate logical units of file- or path-based **\<include\>** and **\<exclude\>** rules.
+  The migration performance can be affected when you use the **\<context\>** element with the **\<component\>** element; for example, as in when you want to encapsulate logical units of file- or path-based **\<include\>** and **\<exclude\>** rules.
 
   In the **User** context, a rule is processed one time for each user on the system.
   
@@ -120,7 +120,7 @@ As the authorized administrator, it is your responsibility to protect the privac
   >
   > The number of times a rule is processed doesn't affect the number of times a file is migrated. The USMT migration engine ensures that each file migrates only once.
 
-- **Microsoft recommends that you create a separate .xml file instead of adding your .xml code to one of the existing migration .xml files.**
+- **Microsoft recommends that you create a separate .xml file instead of adding .xml code to one of the existing migration .xml files.**
 
   For example, if you have code that migrates the settings for an application, you shouldn't just add the code to the `MigApp.xml` file.
 
@@ -137,4 +137,4 @@ As the authorized administrator, it is your responsibility to protect the privac
 ## Related articles
 
 - [Migration store encryption](usmt-migration-store-encryption.md).
-- [Plan your migration](usmt-plan-your-migration.md).
+- [Plan the migration](usmt-plan-your-migration.md).

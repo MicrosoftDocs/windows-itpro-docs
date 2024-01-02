@@ -1,6 +1,6 @@
 ---
 title: USMT Log Files
-description: Learn how to use User State Migration Tool (USMT) logs to monitor your migration and to troubleshoot errors and failed migrations.
+description: Learn how to use User State Migration Tool (USMT) logs to monitor the migration and to troubleshoot errors and failed migrations.
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
@@ -15,7 +15,7 @@ appliesto:
 
 # USMT log files
 
-You can use User State Migration Tool (USMT) logs to monitor your migration and to troubleshoot errors and failed migrations. This article describes the available command-line options to enable USMT logs. It also describes new XML elements that can be used to configure:
+You can use User State Migration Tool (USMT) logs to monitor the migration and to troubleshoot errors and failed migrations. This article describes the available command-line options to enable USMT logs. It also describes new XML elements that can be used to configure:
 
 - Which types of errors are fatal and should halt the migration.
 - Which types are non-fatal and should be skipped so that the migration can continue.
@@ -37,11 +37,11 @@ The following table describes each command-line option related to logs, and it p
 
 ## ScanState and LoadState logs
 
- **ScanState** and **LoadState** logs are text files that are create when you run the **ScanState** and **LoadState** tools. You can use these logs to help monitor your migration. The content of the log depends on the command-line options that you use and the verbosity level that you specify. For more information about verbosity levels, see [Monitoring options](usmt-scanstate-syntax.md#monitoring-options) in [ScanState syntax](usmt-scanstate-syntax.md).
+ **ScanState** and **LoadState** logs are text files that are create when you run the **ScanState** and **LoadState** tools. You can use these logs to help monitor the migration. The content of the log depends on the command-line options that you use and the verbosity level that you specify. For more information about verbosity levels, see [Monitoring options](usmt-scanstate-syntax.md#monitoring-options) in [ScanState syntax](usmt-scanstate-syntax.md).
 
 ## Progress log
 
-You can create a progress log using the `/progress` option. External tools, such as Microsoft System Center Operations Manager, can parse the progress log to update your monitoring systems. The first three fields in each line are fixed as follows:
+You can create a progress log using the `/progress` option. External tools, such as Microsoft System Center Operations Manager, can parse the progress log to update the monitoring systems. The first three fields in each line are fixed as follows:
 
 - **Date:** Date, in the format of *day* *shortNameOfTheMonth* *year*. For example: 08 Jun 2023.
 
@@ -298,7 +298,7 @@ Upon reviewing the diagnostic log, you confirm that the files are still migratin
 </migration>
 ```
 
-Your revised migration XML script excludes the files from migrating, as confirmed in the diagnostic log:
+The revised migration XML script excludes the files from migrating, as confirmed in the diagnostic log:
 
 ```xml
 <MigUnitList>

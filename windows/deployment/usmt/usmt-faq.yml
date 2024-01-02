@@ -62,7 +62,7 @@ sections:
       - question: |
           How do I install USMT?
         answer: |
-          Because USMT is included in Windows Assessment and Deployment Kit (Windows ADK), you need to install the Windows ADK package on at least one computer in your environment. The USMT binaries can then be copied from the USMT directory located on the original computer where the Windows ADK was installed to additional client computers.
+          Because USMT is included in Windows Assessment and Deployment Kit (Windows ADK), you need to install the Windows ADK package on at least one computer in the environment. The USMT binaries can then be copied from the USMT directory located on the original computer where the Windows ADK was installed to additional client computers.
 
       - question: |
           How do I uninstall USMT?
@@ -105,7 +105,7 @@ sections:
       - question: |
           Can I use custom **.xml** files that were written for USMT 5.0?
         answer: |
-          Yes. You can use custom **.xml** files that were written for USMT 5.0 with newer versions of USMT. However, in order to use new USMT functionality, you must revisit your custom USMT files and refresh them to include the new command-line options and XML elements.
+          Yes. You can use custom **.xml** files that were written for USMT 5.0 with newer versions of USMT. However, in order to use new USMT functionality, you must revisit the custom USMT files and refresh them to include the new command-line options and XML elements.
 
       - question: |
           How can I validate the **.xml** files?

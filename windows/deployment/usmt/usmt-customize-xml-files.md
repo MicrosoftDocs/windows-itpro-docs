@@ -29,7 +29,7 @@ To modify the migration, do one or more of the following.
 
 - **Modify the migration .xml files.** If you want to exclude a portion of a component, modify the **.xml** files. For example, to migrate C:\\ but exclude all of the **.mp3** files, or to move data to a new location on the destination computer. To modify these files, you must be familiar with the migration rules and syntax. If you want ScanState and LoadState to use these files, specify them at the command line when each command is entered.
 
-- **Create a custom .xml file.** You can also create a custom **.xml** file to migrate settings for another application, or to change the migration behavior to suit your needs. For ScanState and LoadState to use this file, specify them on both command lines.
+- **Create a custom .xml file.** You can also create a custom **.xml** file to migrate settings for another application, or to change the migration behavior to suit the organization's needs. For ScanState and LoadState to use this file, specify them on both command lines.
 
 - **Create and modify a Config.xml file.** Create and modify a `Config.xml` file if you want to exclude an entire component from the migration. For example, you can use a `Config.xml` file to exclude the entire **Documents** folder, or exclude the settings for an application. Excluding components using a `Config.xml` file is easier than modifying the migration **.xml** files because you don't need to be familiar with the migration rules and syntax. In addition, using a `Config.xml` file is the only way to exclude the operating system settings from being migrated.
 
@@ -55,7 +55,7 @@ This section describes the migration **.xml** files that are included with USMT.
 
 ## Custom .xml files
 
-You can create custom **.xml** files to customize the migration for your unique needs. For example, you might want to create a custom file to migrate a line-of-business application or to modify the default migration behavior. If you want `ScanState.exe` and `LoadState.exe` to use this file, specify it with both commands. For more information, see the [Custom XML examples](usmt-custom-xml-examples.md) article.
+Custom **.xml** files can be created to customize the migration for the organization's unique needs. For example, you might want to create a custom file to migrate a line-of-business application or to modify the default migration behavior. If you want `ScanState.exe` and `LoadState.exe` to use this file, specify it with both commands. For more information, see the [Custom XML examples](usmt-custom-xml-examples.md) article.
 
 ## The Config.xml file
 
@@ -77,7 +77,7 @@ In addition, note the following functionality with the `Config.xml` file:
 
 > [!NOTE]
 >
-> To exclude a component from the `Config.xml` file, set the **migrate** value to **"no"**. Deleting the XML tag for the component from the `Config.xml` file doesn't exclude the component from your migration.
+> To exclude a component from the `Config.xml` file, set the **migrate** value to **"no"**. Deleting the XML tag for the component from the `Config.xml` file doesn't exclude the component from the migration.
 
 ### Examples
 

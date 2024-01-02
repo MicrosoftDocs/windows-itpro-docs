@@ -17,7 +17,7 @@ appliesto:
 
 ## Supported operating systems
 
-The User State Migration Tool (USMT) doesn't have any explicit RAM or CPU speed requirements for either the source or destination computers. If your computer complies with the system requirements of the operating system, it also complies with the requirements for USMT. You need an intermediate store location large enough to hold all of the migrated data and settings. The same amount of hard disk space is also needed on the destination computer for the migrated files and settings.
+The User State Migration Tool (USMT) doesn't have any explicit RAM or CPU speed requirements for either the source or destination computers. If the computer complies with the system requirements of the operating system, it also complies with the requirements for USMT. You need an intermediate store location large enough to hold all of the migrated data and settings. The same amount of hard disk space is also needed on the destination computer for the migrated files and settings.
 
 The following table lists the operating systems supported in USMT.
 
@@ -98,6 +98,6 @@ This documentation assumes that IT professionals using USMT understand command-l
 
 ## Related articles
 
-- [Plan your migration](usmt-plan-your-migration.md).
+- [Plan the migration](usmt-plan-your-migration.md).
 - [Estimate migration store size](usmt-estimate-migration-store-size.md).
 - [User State Migration Tool (USMT) overview articles](usmt-topics.md).

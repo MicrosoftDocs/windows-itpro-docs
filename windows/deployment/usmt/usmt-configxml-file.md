@@ -25,7 +25,7 @@ For more information about using the `Config.xml` file with other migration file
 
 > [!NOTE]
 >
-> To exclude a component from the `Config.xml` file, set the **migrate** value to **no**. Deleting the XML tag for the component from the `Config.xml` file doesn't exclude the component from your migration.
+> To exclude a component from the `Config.xml` file, set the **migrate** value to **no**. Deleting the XML tag for the component from the `Config.xml` file doesn't exclude the component from the migration.
 
 ## Migration Policies
 

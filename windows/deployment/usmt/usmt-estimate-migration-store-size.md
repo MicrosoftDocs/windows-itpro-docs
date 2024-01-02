@@ -15,11 +15,11 @@ appliesto:
 
 # Estimate migration store size
 
-The disk space requirements for a migration are dependent on the size of the migration store and the type of migration. You can estimate the amount of disk space needed for computers in your organization based on information about your organization's infrastructure. You can also calculate the disk space requirements using the ScanState tool.
+The disk space requirements for a migration are dependent on the size of the migration store and the type of migration. You can estimate the amount of disk space needed for computers in the organization based on information about the organization's infrastructure. You can also calculate the disk space requirements using the ScanState tool.
 
 ## Hard disk space requirements
 
-- **Store**: For non-hard-link migrations, ensure that there's enough available disk space at the location where the store is saved. The store contains the data being migrated. You can save your store to another partition, an external storage device such as a USB flash drive or a server. For more information, see [Choose a Migration Store Type](usmt-choose-migration-store-type.md).
+- **Store**: For non-hard-link migrations, ensure that there's enough available disk space at the location where the store is saved. The store contains the data being migrated. You can save the store to another partition, an external storage device such as a USB flash drive, or a server. For more information, see [Choose a Migration Store Type](usmt-choose-migration-store-type.md).
 
 - **Source Computer**: The source computer needs enough available space for the following items:
 
@@ -41,7 +41,7 @@ The disk space requirements for a migration are dependent on the size of the mig
 
 ## Calculate disk space requirements using the ScanState tool
 
-You can use the ScanState tool to calculate the disk space requirements for a particular compressed or uncompressed migration. It isn't necessary to estimate the migration store size for a hard-link migration since this method doesn't create a separate migration store. The ScanState tool provides disk space requirements for the state of the computer at the time the tool is run. The state of the computer might change during day-to-day use. For this reason, use the calculations as an estimate when planning your migration.
+You can use the ScanState tool to calculate the disk space requirements for a particular compressed or uncompressed migration. It isn't necessary to estimate the migration store size for a hard-link migration since this method doesn't create a separate migration store. The ScanState tool provides disk space requirements for the state of the computer at the time the tool is run. The state of the computer might change during day-to-day use. For this reason, use the calculations as an estimate when planning the migration.
 
 To run the ScanState tool on the source computer with USMT installed:
 
@@ -100,7 +100,7 @@ Additionally, USMT performs a compliance check for a required minimum of 250 MB 
 
 Determine how much space is needed to store the migrated data. Calculations should be based on the volume of e-mail, personal documents, and system settings for each user. The best way to estimate the required space is to survey several computers to arrive at an average for the size of the store that is needed.
 
-The amount of space that is required in the store varies and depends on the local storage strategies the organization uses. For example, one key element that determines the size of migration data sets is e-mail storage. If e-mail is stored centrally, data sets are smaller. If e-mail is stored locally, such as offline-storage files, data sets are larger. Mobile users typically have larger data sets than workstation users. You should perform tests and inventory the network to determine the average data set size in your organization.
+The amount of space that is required in the store varies and depends on the local storage strategies the organization uses. For example, one key element that determines the size of migration data sets is e-mail storage. If e-mail is stored centrally, data sets are smaller. If e-mail is stored locally, such as offline-storage files, data sets are larger. Mobile users typically have larger data sets than workstation users. You should perform tests and inventory the network to determine the average data set size in the organization.
 
 > [!NOTE]
 >
@@ -110,7 +110,7 @@ When trying to determine how much disk space is needed, consider the following i
 
 - **E-mail**: If users deal with a large volume of e-mail or keep e-mail on their local computers instead of on a mail server, the e-mail can take up as much disk space as all other user files combined. Prior to migrating user data, make sure that users who store e-mail locally synchronize their inboxes with their mail server.
 
-- **User documents**: Frequently, all of a user's documents fit into less than 50 MB of space, depending on the types of files involved. This estimate assumes typical office work, such as word-processing documents and spreadsheets. This estimate can vary substantially based on the types of documents that your organization uses. For example, an architectural firm that predominantly uses computer-aided design (CAD) files needs more space than a law firm that primarily uses word-processing documents. You don't need to migrate the documents that users store on file servers through mechanisms such as Folder Redirection, as long as users will have access to these locations after the migration.
+- **User documents**: Frequently, all of a user's documents fit into less than 50 MB of space, depending on the types of files involved. This estimate assumes typical office work, such as word-processing documents and spreadsheets. This estimate can vary substantially based on the types of documents that the organization uses. For example, an architectural firm that predominantly uses computer-aided design (CAD) files needs more space than a law firm that primarily uses word-processing documents. You don't need to migrate the documents that users store on file servers through mechanisms such as Folder Redirection, as long as users will have access to these locations after the migration.
 
 - **User system settings**: Five megabytes is adequate space to save the registry settings. This requirement can fluctuate, however, based on the number of applications that are installed. It's rare, however, for the user-specific portion of the registry to exceed 5 MB.
 

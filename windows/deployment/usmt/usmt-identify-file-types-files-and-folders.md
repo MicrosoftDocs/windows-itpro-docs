@@ -1,6 +1,6 @@
 ---
 title: Identify File Types, Files, and Folders
-description: Learn how to identify the file types, files, folders, and settings that you want to migrate when you're planning your migration.
+description: Identify the file types, files, folders, and settings that need to be migrated when planning the migration.
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
@@ -15,9 +15,9 @@ appliesto:
 
 # Identify file types, files, and folders
 
-When planning for your migration, if not using `MigDocs.xml`, you should identify the file types, files, folders, and settings that you want to migrate. First, you should determine the standard file locations on each computer, such as the **Documents** folder, `C:\Data` , and company-specified locations, such as `\\EngineeringDrafts`. Next, you should determine and locate the non-standard locations. For non-standard locations, consider the following items:
+When planning the migration, if not using `MigDocs.xml`, you should identify the file types, files, folders, and settings that you want to migrate. First, you should determine the standard file locations on each computer, such as the **Documents** folder, `C:\Data` , and company-specified locations, such as `\\EngineeringDrafts`. Next, you should determine and locate the non-standard locations. For non-standard locations, consider the following items:
 
-- **File types**: Consider which file types need to be included and excluded from the migration. You can create this list based on common applications used in your organization. Applications normally use specific file name extensions. For example, Microsoft Office Word primarily uses `.doc`, `.docx` and `.dotx` file name extension. However, it also uses other file types, such as templates (`.dot` files), on a less frequent basis.
+- **File types**: Consider which file types need to be included and excluded from the migration. You can create this list based on common applications used in the organization. Applications normally use specific file name extensions. For example, Microsoft Office Word primarily uses `.doc`, `.docx` and `.dotx` file name extension. However, it also uses other file types, such as templates (`.dot` files), on a less frequent basis.
 
 - **Excluded locations**: Consider the locations on the computer that should be excluded from the migration (for example, `%WINDIR%` and **Program Files**).
 

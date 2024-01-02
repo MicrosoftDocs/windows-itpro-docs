@@ -25,7 +25,7 @@ A hard-link migration store can be used when the planned migration meets both of
 
 - The operating system is being upgraded on the same volume of the computer.
 
-You can't use a hard-link migration store if your planned migration includes any of the following tasks:
+You can't use a hard-link migration store if the planned migration includes any of the following tasks:
 
 - Data is being migrated from one computer to a different computer.
 
@@ -37,7 +37,7 @@ You can't use a hard-link migration store if your planned migration includes any
 
 The hard-link migration store is created using the command-line option, `/hardlink`, and is equivalent to other migration-store types. However, it differs in that hard links are utilized to keep files stored on the source computer during the migration. Keeping the files in place on the source computer eliminates the redundant work of duplicating files. It also enables the performance benefits and reduction in disk utilization that define this scenario.
 
-When you create a hard link, you give an existing file one more path. For instance, you could create a hard link to `c:\file1.txt` called `c:\hard link\myFile.txt`. These two paths relate to the same file. If you open `c:\file1.txt`, make changes, and save the file, you see those changes when you open `c:\hard link\myFile.txt`. If you delete `c:\file1.txt`, the file still exists on your computer as `c:\hardlink\myFile.txt`. You must delete both references to the file in order to delete the file.
+When you create a hard link, you give an existing file one more path. For instance, you could create a hard link to `c:\file1.txt` called `c:\hard link\myFile.txt`. These two paths relate to the same file. If you open `c:\file1.txt`, make changes, and save the file, you see those changes when you open `c:\hard link\myFile.txt`. If you delete `c:\file1.txt`, the file still exists on the computer as `c:\hardlink\myFile.txt`. You must delete both references to the file in order to delete the file.
 
 > [!NOTE]
 > A hard link can only be created for a file on the same volume. If you copy a hard-link migration store to another drive or external device, the files, and not the links, are copied, as in a non-compressed migration-store scenario.
@@ -72,7 +72,7 @@ For example, a company decides to deploy the latest supported version of Windows
 
     > [!NOTE]
     >
-    > As a best practice, Microsoft recommends that you do not create your hard-link migration store until just before you perform the migration in order to migrate the latest versions of your files. You should not use your software applications on the computer after creating the migration store until you have finished migrating your files with **LoadState**.
+    > As a best practice, Microsoft recommends not to create the hard-link migration store until just before the migration is performed in order to migrate the latest versions of files. Software applications shouldn't be used on the computer after creating the migration store until files finish migrating with **LoadState**.
 
 1. On each computer, an administrator installs the company's standard operating environment (SOE), which includes the latest supported version of Windows and other applications the company currently uses.
 
@@ -170,4 +170,4 @@ The following XML sample specifies that files locked by an application under the
 
 ## Related articles
 
-- [Plan your migration](usmt-plan-your-migration.md).
+- [Plan the migration](usmt-plan-your-migration.md).

@@ -15,7 +15,7 @@ appliesto:
 
 # User State Migration Tool (USMT) overview articles
 
-The User State Migration Tool (USMT) provides a highly customizable user-profile migration experience for IT professionals. USMT includes three command-line tools: `ScanState.exe`, `LoadState.exe`, and `UsmtUtils.exe`. USMT also includes a set of three modifiable .xml files: `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`. Additionally, you can create custom **.xml** files to support your migration needs. You can also create a `Config.xml` file to specify files or settings to exclude from the migration.
+The User State Migration Tool (USMT) provides a highly customizable user-profile migration experience for IT professionals. USMT includes three command-line tools: `ScanState.exe`, `LoadState.exe`, and `UsmtUtils.exe`. USMT also includes a set of three modifiable .xml files: `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`. Additionally, you can create custom **.xml** files to support the organization's migration needs. You can also create a `Config.xml` file to specify files or settings to exclude from the migration.
 
 ## In this section
 

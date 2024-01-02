@@ -15,7 +15,7 @@ appliesto:
 
 # Identify operating system settings
 
-When planning for your migration, you should identify which operating system settings you want to migrate and to what extent you want to create a new standard environment on each of the computers. User State Migration Tool (USMT) enables you to migrate select settings and keep the default values for all others. The operating system settings include the following parameters:
+When planning the migration, you should identify which operating system settings you want to migrate and to what extent you want to create a new standard environment on each of the computers. User State Migration Tool (USMT) enables you to migrate select settings and keep the default values for all others. The operating system settings include the following parameters:
 
 - **Appearance**
 
@@ -31,11 +31,11 @@ When planning for your migration, you should identify which operating system set
 
 - **Internet**
 
-  The Internet factor includes the settings that let you connect to the Internet and control how your browser operates. The settings include items such as your home page URL, favorites, bookmarks, cookies, security settings, and proxy settings. These settings might not be supported in all browsers.
+  The Internet factor includes the settings that let you connect to the Internet and control the browser operates. The settings include items such as the home page URL, favorites, bookmarks, cookies, security settings, and proxy settings. These settings might not be supported in all browsers.
 
 - **Mail**
 
-  The mail factor includes the information that you need to connect to your mail server, your signature file, views, mail rules, local mail, and contacts.
+  The mail factor includes the information that you need to connect the mail server, the signature file, views, mail rules, local mail, and contacts. These settings might not be supported in all email applications.
 
 To help determine which settings to migrate, consider any previous migration experiences and the results of any conducted surveys and tests. Also consider the number of help-desk calls related to operating-system settings from the past, and are able to handle in the future. Also decide how much of the new operating-system functionality needs to be taken advantage of.
 

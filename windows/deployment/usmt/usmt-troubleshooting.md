@@ -15,7 +15,7 @@ appliesto:
 
 # User State Migration Tool (USMT) troubleshooting
 
-The following table describes articles that address common User State Migration Tool (USMT) issues and questions. These articles describe tools that you can use to troubleshoot issues that arise during your migration.
+The following table describes articles that address common User State Migration Tool (USMT) issues and questions. These articles describe tools that you can use to troubleshoot issues that arise during the migration.
 
 ## In this section
 

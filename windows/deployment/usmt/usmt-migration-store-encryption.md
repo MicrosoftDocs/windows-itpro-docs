@@ -32,8 +32,8 @@ The following table describes the command-line encryption options in USMT.
 
 > [!IMPORTANT]
 >
-> Some encryption algorithms might not be available on your systems. You can verify which algorithms are available by running the `UsmtUtils.exe` command with the `/ec` option. For more information, see [UsmtUtils syntax](usmt-utilities.md).
+> Some encryption algorithms might not be available on some systems. Which algorithms are available can be verified by running the `UsmtUtils.exe` command with the `/ec` option. For more information, see [UsmtUtils syntax](usmt-utilities.md).
 
 ## Related articles
 
-- [Plan your migration](usmt-plan-your-migration.md).
+- [Plan the migration](usmt-plan-your-migration.md).

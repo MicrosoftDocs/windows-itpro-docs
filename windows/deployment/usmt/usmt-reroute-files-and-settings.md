@@ -15,7 +15,7 @@ appliesto:
 
 # Reroute Files and Settings
 
-To reroute files and settings, create a custom **.xml** file and specify the **.xml** file name on both the `ScanState.exe` and `LoadState.exe` command-lines. Th custom **.xml** file enables you to keep your changes separate from the default **.xml** files, so that it's easier to track your modifications.
+To reroute files and settings, create a custom **.xml** file and specify the **.xml** file name on both the `ScanState.exe` and `LoadState.exe` command-lines. The custom **.xml** file enables keeping changes separate from the default **.xml** files, so that it's easier to track modifications.
 
 ## Reroute a folder
 

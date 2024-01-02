@@ -22,9 +22,9 @@ You can use User State Migration Tool (USMT) to streamline and simplify user sta
 
 USMT enables you to do the following actions:
 
-- Configure your migration according to your business needs by using the migration rule (.xml) files to control exactly which files and settings are migrated and how they're migrated. For more information about how to modify these files, see [USMT XML reference](usmt-xml-reference.md).
+- Configure the migration according to the organization's business needs by using the migration rule (.xml) files to control exactly which files and settings are migrated and how they're migrated. For more information about how to modify these files, see [USMT XML reference](usmt-xml-reference.md).
 
-- Fit your customized migration into your automated deployment process by using the **ScanState** and **LoadState** tools, which control collecting and restoring the user files and settings. For more information, see [User State Migration Tool (USMT) command-line syntax](usmt-command-line-syntax.md).
+- Fit the customized migration into the automated deployment process by using the **ScanState** and **LoadState** tools, which control collecting and restoring the user files and settings. For more information, see [User State Migration Tool (USMT) command-line syntax](usmt-command-line-syntax.md).
 
 - Perform offline migrations. You can run migrations offline by using the ScanState command in Windows Preinstallation Environment (WinPE) or you can perform migrations from previous installations of Windows contained in **Windows.old** directories. For more information about migration types, see [Choose a migration store Type](usmt-choose-migration-store-type.md) and [Offline migration reference](offline-migration-reference.md).
 

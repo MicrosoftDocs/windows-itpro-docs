@@ -15,13 +15,13 @@ appliesto:
 
 # Conflicts and precedence
 
-When you include, exclude, and reroute files and settings, it's important to know how User State Migration Tool (USMT) deals with conflicts and precedence. When working with USMT, the following are the most important conflicts and precedence guidelines to keep in mind.
+When you include, exclude, and reroute files and settings, it's important to know how User State Migration Tool (USMT) deals with conflicts and precedence. The following are the most important conflicts and precedence guidelines to keep in mind when working with USMT.
 
 - **If there are conflicting rules within a component, the most specific rule is applied.** However, the **\<unconditionalExclude\>** rule is an exception because it takes precedence over all others. Directory names take precedence over file extensions. For examples, see [What happens when there are conflicting \<include\> and \<exclude\> rules?](#what-happens-when-there-are-conflicting-include-and-exclude-rules) and the first example in [\<include\> and \<exclude\> rules precedence examples](#include-and-exclude-rules-precedence-examples) later in this article.
 
 - **Only rules inside the same component can affect each other, depending on specificity.** Rules that are in different components don't affect each other, except for the **\<unconditionalExclude\>** rule.
 
-- **If the rules are equally specific, \<exclude\> takes precedence over \<include\>.** For example, if you use the **\<exclude\>** rule to exclude a file and use the **\<include\>** rule to include the same file, the file will be excluded.
+- **If the rules are equally specific, \<exclude\> takes precedence over \<include\>.** For example, if you use the **\<exclude\>** rule to exclude a file and use the **\<include\>** rule to include the same file, the file is excluded.
 
 - **The ordering of components does not matter.** It doesn't matter which components are listed in which **.xml** file, because each component is processed independently of the other components across all of the **.xml** files.
 
@@ -33,9 +33,9 @@ When you include, exclude, and reroute files and settings, it's important to kno
 
 ### What is the relationship between rules that are located within different components?
 
-Only rules inside the same component can affect each other, depending on specificity, except for the **\<unconditionalExclude\>** rule. Rules that are in different components don't affect each other. If there's an **\<include\>** rule in one component and an identical **\<exclude\>** rule in another component, the data will be migrated because the two rules are independent of each other.
+Only rules inside the same component can affect each other, depending on specificity, except for the **\<unconditionalExclude\>** rule. Rules that are in different components don't affect each other. If there's an **\<include\>** rule in one component and an identical **\<exclude\>** rule in another component, the data is migrated because the two rules are independent of each other.
 
-If you have an **\<include\>** rule in one component and a **\<locationModify\>** rule in another component for the same file, the file will be migrated in both places. That is, it will be included based on the **\<include\>** rule, and it will be migrated based on the **\<locationModify\>** rule.
+If you have an **\<include\>** rule in one component and a **\<locationModify\>** rule in another component for the same file, the file is migrated in both places. That is, the file is included based on the **\<include\>** rule, and the file is migrated based on the **\<locationModify\>** rule.
 
 The following **.xml** file migrates all files from C:\\Userdocs, including **.mp3** files, because the **\<exclude\>** rule is specified in a separate component.
 
@@ -71,7 +71,7 @@ The following **.xml** file migrates all files from C:\\Userdocs, including **.m
 
 ### How does precedence work with the Config.xml file?
 
-Specifying `migrate="no"` in the `Config.xml` file is the same as deleting the corresponding component from the migration **.xml** file. However, if you set `migrate="no"` for the **Documents** folder, but you have a rule similar to the one shown below in a migration **.xml** file (which includes all of the **.doc** files from the **Documents** folder), then only the **.doc** files will be migrated, and all other files will be excluded.
+Specifying `migrate="no"` in the `Config.xml` file is the same as deleting the corresponding component from the migration **.xml** file. However, if you set `migrate="no"` for the **Documents** folder, but you have a rule similar to the following rule in a migration **.xml** file (which includes all of the **.doc** files from the **Documents** folder), then only the **.doc** files is migrated, and all other files are excluded.
 
 ```xml
 <include>
@@ -83,7 +83,7 @@ Specifying `migrate="no"` in the `Config.xml` file is the same as deleting the c
 
 ### How does USMT process each component in an .xml file with multiple components?
 
-The ordering of components doesn't matter. Each component is processed independently of other components. For example, if you have an **\<include\>** rule in one component and a **\<locationModify\>** rule in another component for the same file, the file will be migrated in both places. That is, it will be included based on the **\<include\>** rule, and it will be migrated based on the **\<locationModify\>** rule.
+The ordering of components doesn't matter. Each component is processed independently of other components. For example, if you have an **\<include\>** rule in one component and a **\<locationModify\>** rule in another component for the same file, the file is migrated in both places. That is, the file is included based on the **\<include\>** rule, and the file is migrated based on the **\<locationModify\>** rule.
 
 ### How are rules processed?
 
@@ -101,9 +101,9 @@ USMT doesn't distinguish the **.xml** files based on their name or content. It p
 
 ### What happens when there are conflicting \<include\> and \<exclude\> rules?
 
-If there are conflicting rules within a component, the most specific rule is applied, except with the **\<unconditionalExclude\>** rule, which takes precedence over all other rules. If the rules are equally specific, then the data won't be migrated. For example if you exclude a file, and include the same file, the file won't be migrated. If there are conflicting rules within different components, the rules don't affect each other because each component is processed independently.
+If there are conflicting rules within a component, the most specific rule is applied, except with the **\<unconditionalExclude\>** rule, which takes precedence over all other rules. If the rules are equally specific, then the data isn't migrated. For example if you exclude a file, and include the same file, the file isn't migrated. If there are conflicting rules within different components, the rules don't affect each other because each component is processed independently.
 
-In the following example, mp3 files won't be excluded from the migration. The mp3 files won't be excluded because directory names take precedence over the file extensions.
+In the following example, mp3 files aren't excluded from the migration. The mp3 files aren't excluded because directory names take precedence over the file extensions.
 
 ```xml
 <include>
@@ -120,7 +120,7 @@ In the following example, mp3 files won't be excluded from the migration. The mp
 
 ### \<include\> and \<exclude\> rules precedence examples
 
-These examples explain how USMT deals with **\<include\>** and **\<exclude\>** rules. When the rules are in different components, the resulting behavior will be the same regardless of whether the components are in the same or in different migration **.xml** files.
+These examples explain how USMT deals with **\<include\>** and **\<exclude\>** rules. When the rules are in different components, the resulting behavior is the same regardless of whether the components are in the same or in different migration **.xml** files.
 
 - [Including and excluding files](#including-and-excluding-files)
 
@@ -133,7 +133,7 @@ These examples explain how USMT deals with **\<include\>** and **\<exclude\>** r
 | <ul><li>Include rule: \<pattern type=&quot;File&quot;\>C:\Dir1* []\</pattern\></li><li>Exclude rule: \<pattern type=&quot;File&quot;\>C:* [.txt]\</pattern\></li></ul> | Migrates all files and subfolders in Dir1 (including all **.txt** files in C:). | The **\<exclude\>** rule doesn't affect the migration because the **\<include\>** rule is more specific. |
 | <ul><li>Include rule: \<pattern type=&quot;File&quot;\>C:\Dir1* []\</pattern\></li><li>Exclude rule: \<pattern type=&quot;File&quot;\>C:\Dir1\Dir2* [.txt]\</pattern\></li></ul> | Migrates all files and subfolders in C:\Dir1, except the **.txt** files in C:\Dir1\Dir2 and its subfolders. | Both rules are processed as intended. |
 | <ul><li>Include rule: \<pattern type=&quot;File&quot;\>C:\Dir1* []\</pattern\></li><li>Exclude rule: \<pattern type=&quot;File&quot;\>C:\Dir1\ * [.txt]\</pattern\></li></ul> | Migrates all files and subfolders in C:\Dir1, except the **.txt** files in C:\Dir1 and its subfolders. | Both rules are processed as intended. |
-| <ul><li>Include rule: \<pattern type=&quot;File&quot;\>C:\Dir1\Dir2* [.txt]\</pattern\></li><li>Exclude rule: \<pattern type=&quot;File&quot;\>C:\Dir1\Dir2* [.txt]\</pattern\></li></ul> | Nothing will be migrated. | The rules are equally specific, so the **\<exclude\>** rule takes precedence over the **\<include\>** rule. |
+| <ul><li>Include rule: \<pattern type=&quot;File&quot;\>C:\Dir1\Dir2* [.txt]\</pattern\></li><li>Exclude rule: \<pattern type=&quot;File&quot;\>C:\Dir1\Dir2* [.txt]\</pattern\></li></ul> | Nothing is migrated. | The rules are equally specific, so the **\<exclude\>** rule takes precedence over the **\<include\>** rule. |
 | <ul><li>Include rule: C:\Dir1* [.txt]</li><li>Exclude rule: C:\Dir1\Dir2* []</li></ul> | Migrates the **.txt** files in Dir1 and the **.txt** files from subfolders other than Dir2. <br>No files are migrated from Dir2 or its subfolders. | Both rules are processed as intended. |
 | <ul><li>Include rule: C:\Dir1\Dir2* []</li><li>Exclude rule: C:\Dir1* [.txt]</li></ul> | Migrates all files and subfolders of Dir2, except the **.txt** files from Dir1 and any subfolders of Dir1 (including Dir2). | Both rules are processed as intended. |
 
@@ -153,7 +153,7 @@ These examples explain how USMT deals with **\<include\>** and **\<exclude\>** r
 
 | If you have the following code in different components | Resulting behavior | Explanation |
 |-----|-----|-----|
-| Component 1:<ul><li>Include rule: <br>HKLM\Software\Microsoft\Command Processor [DefaultColor]</li><li>Exclude rule: <br>HKLM\Software\Microsoft\Command Processor* []</li></ul> <br>Component 2:<ul><li>Include rule: <br>HKLM\Software\Microsoft\Command Processor* []</li><li>Exclude rule: <br>HKLM\Software\Microsoft\Command Processor [DefaultColor]</li></ul> | Migrates all the keys/values under HKLM\Software\Microsoft\Command Processor. | Rules that are in different components don't affect each other, except for the **\<unconditionalExclude\>** rule. Therefore, in this example, the objects that were excluded when Component 1 was processed were included when Component 2 was processed. |
+| Component 1:<ul><li>Include rule: <br>HKLM\Software\Microsoft\Command Processor [DefaultColor]</li><li>Exclude rule: <br>HKLM\Software\Microsoft\Command Processor* []</li></ul> <br>Component 2:<ul><li>Include rule: <br>HKLM\Software\Microsoft\Command Processor* []</li><li>Exclude rule: <br>HKLM\Software\Microsoft\Command Processor [DefaultColor]</li></ul> | Migrates all the keys/values under HKLM\Software\Microsoft\Command Processor. | Rules that are in different components don't affect each other, except for the **\<unconditionalExclude\>** rule. In this example, the objects that were excluded when Component 1 was processed were included when Component 2 was processed. |
 
 ## File collisions
 
@@ -163,7 +163,7 @@ If there isn't a **\<merge\>** rule, the default behavior for the registry is fo
 
 ### How does the \<merge\> rule work when there are file collisions?
 
-When a collision is detected, USMT will select the most specific **\<merge\>** rule and apply it to resolve the conflict. For example, if you have a **\<merge\>** rule for **C:\\\* \[\*\]** set to **sourcePriority()** and another **\<merge\>** rule for **C:\\subfolder\\\* \[\*\]** set to **destinationPriority()** , then USMT uses the **destinationPriority()** rule because it's the most specific.
+When a collision is detected, USMT selects the most specific **\<merge\>** rule and apply it to resolve the conflict. For example, if you have a **\<merge\>** rule for **C:\\\* \[\*\]** set to **sourcePriority()** and another **\<merge\>** rule for **C:\\subfolder\\\* \[\*\]** set to **destinationPriority()** , then USMT uses the **destinationPriority()** rule because it's the most specific.
 
 ### Example scenario
 
@@ -191,7 +191,7 @@ You have a custom **.xml** file that contains the following code:
 </include> 
 ```
 
-For this example, the following information describes the resulting behavior if you add the code to your custom **.xml** file.
+For this example, the following information describes the resulting behavior if the code is added to the custom **.xml** file.
 
 #### Example 1
 
@@ -203,7 +203,7 @@ For this example, the following information describes the resulting behavior if 
 </merge>
 ```
 
-**Result**: During ScanState, all the files will be added to the store. During LoadState, only `C:\Data\SampleA.txt` will be restored.
+**Result**: During ScanState, all the files are added to the store. During LoadState, only `C:\Data\SampleA.txt` is restored.
 
 #### Example 2
 
@@ -215,8 +215,8 @@ For this example, the following information describes the resulting behavior if 
 </merge>
 ```
 
-**Result**: During ScanState, all the files will be added to the store.
-During LoadState, all the files will be restored, overwriting the existing files on the destination computer.
+**Result**: During ScanState, all the files are added to the store.
+During LoadState, all the files are restored, overwriting the existing files on the destination computer.
 
 #### Example 3
 
@@ -228,11 +228,11 @@ During LoadState, all the files will be restored, overwriting the existing files
 </merge>
 ```
 
-**Result**: During ScanState, all the files will be added to the store. During LoadState, the following actions will occur:
+**Result**: During ScanState, all the files are added to the store. During LoadState, the following actions occur:
 
-- `C:\Data\SampleA.txt` will be restored.
-- `C:\Data\SampleB.txt` will be restored, overwriting the existing file on the destination computer.
-- `C:\Data\Folder\SampleB.txt` won't be restored.
+- `C:\Data\SampleA.txt` is restored.
+- `C:\Data\SampleB.txt` is restored, overwriting the existing file on the destination computer.
+- `C:\Data\Folder\SampleB.txt` aren't restored.
 
 ## Related articles
 

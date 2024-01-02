@@ -23,7 +23,7 @@ appliesto:
 
   - You can use the User State Migration Tool (USMT) XML schema (the `MigXML.xsd` file) to validate the migration **.xml** files using an XML authoring tool such as Microsoft® Visual Studio®.
   
-    For more information about how to use the schema with your XML authoring environment, see the environment's documentation.
+    For more information about how to use the schema with an XML authoring environment, see the environment's documentation.
 
 - [Ask the Directory Services Team blog](https://techcommunity.microsoft.com/t5/ask-the-directory-services-team/bg-p/AskDS).
 

@@ -15,7 +15,7 @@ appliesto:
 
 # Understanding migration XML files
 
-You can modify the behavior of a basic User State Migration Tool (USMT) migration by using XML files; these files provide instructions on where and how the USMT tools should gather and apply files and settings. USMT includes three XML files that you can use to customize a basic migration: the `MigDocs.xml` and `MigUser.xml` files, which modify how files are discovered on the source computer, and the MigApps.xml file, which is required in order to migrate supported application settings. You can also create and edit custom XML files and a `Config.xml` file to further customize your migration.
+You can modify the behavior of a basic User State Migration Tool (USMT) migration by using XML files; these files provide instructions on where and how the USMT tools should gather and apply files and settings. USMT includes three XML files that you can use to customize a basic migration: the `MigDocs.xml` and `MigUser.xml` files, which modify how files are discovered on the source computer, and the MigApps.xml file, which is required in order to migrate supported application settings. You can also create and edit custom XML files and a `Config.xml` file to further customize the migration.
 
 This article provides an overview of the default and custom migration XML files and includes guidelines for creating and editing a customized version of the `MigDocs.xml` file. The `MigDocs.xml` file uses the new `GenerateDocPatterns` function available in USMT to automatically find user documents on a source computer.
 
@@ -155,11 +155,11 @@ The default `MigUser.xml` file doesn't migrate the following data:
 
 - ACLS for files in folders outside the user profile.
 
-You can make a copy of the `MigUser.xml` file and modify it to include or exclude standard user-profile folders and file name extensions. If you know all of the extensions for the files you want to migrate from the source computer, use the `MigUser.xml` file to move all of your relevant data, regardless of the location of the files. However, this provision can result in a migration that contains more files than intended. For example, if you choose to migrate all **.jpg** files, it can also migrate image files such as thumbnails and logos from legacy applications that are installed on the source computer.
+You can make a copy of the `MigUser.xml` file and modify it to include or exclude standard user-profile folders and file name extensions. If you know all of the extensions for the files you want to migrate from the source computer, use the `MigUser.xml` file to move all of the relevant data, regardless of the location of the files. However, this provision can result in a migration that contains more files than intended. For example, if you choose to migrate all **.jpg** files, it can also migrate image files such as thumbnails and logos from legacy applications that are installed on the source computer.
 
 > [!NOTE]
 >
-> Each file name extension you include in the rules within the `MigUser.xml` file increases the amount of time needed for the ScanState tool to gather the files for the migration. If you're migrating more than 300 file types, the migration experience can be slow. For more information about other ways to organize the migration of your data, see the [Using multiple XML files](#using-multiple-xml-files) section of this article.
+> Each file name extension you include in the rules within the `MigUser.xml` file increases the amount of time needed for the ScanState tool to gather the files for the migration. If you're migrating more than 300 file types, the migration experience can be slow. For more information about other ways to organize the migration of the data, see the [Using multiple XML files](#using-multiple-xml-files) section of this article.
 
 ## Using multiple XML files
 
@@ -184,17 +184,17 @@ ScanState.exe <store> /config:c:\myFolder\Config.xml /i:migapps.xml /i:MigDocs.x
 >
 > You shouldn't use the `MigUser.xml` and `MigDocs.xml` files together in the same command. Using both XML files can result in duplication of some migrated files. Duplication of some migrated files can occur when conflicting target-location instructions are given in each XML file. The target file is stored once during the migration, but each XML file applies the file to a different location on the destination computer.
 
-If your data set is unknown or if many files are stored outside of the standard user-profile folders, the `MigDocs.xml` is a better choice than the `MigUser.xml` file, because the `MigDocs.xml` file gathers a broader scope of data. The `MigDocs.xml` file migrates folders of data based on location. The `MigUser.xml` file migrates only the files with the specified file name extensions.
+If the data set is unknown or if many files are stored outside of the standard user-profile folders, the `MigDocs.xml` is a better choice than the `MigUser.xml` file, because the `MigDocs.xml` file gathers a broader scope of data. The `MigDocs.xml` file migrates folders of data based on location. The `MigUser.xml` file migrates only the files with the specified file name extensions.
 
 If you want more control over the migration, you can create custom XML files. For more information on creating custom XML files, see [Creating and editing a custom XML file](#creating-and-editing-a-custom-xml-file) for more information.
 
 ## Creating and editing a custom XML file
 
-You can use the `/genmigxml` command-line option to determine which files are included in your migration. The `/genmigxml` option creates a file in a location you specify, so that you can review the XML rules and make modifications as necessary.
+You can use the `/genmigxml` command-line option to determine which files are included in the migration. The `/genmigxml` option creates a file in a location you specify, so that you can review the XML rules and make modifications as necessary.
 
 > [!NOTE]
 >
-> If you reinstall USMT, the default migration XML files are overwritten and any customizations you make directly to these files are lost. Consider creating separate XML files for your custom migration rules and saving them in a secure location.
+> If you reinstall USMT, the default migration XML files are overwritten and any customizations you make directly to these files are lost. Consider creating separate XML files for the custom migration rules and saving them in a secure location.
 
 To generate the XML migration rules file for a source computer:
 
@@ -213,7 +213,7 @@ To generate the XML migration rules file for a source computer:
 
     where:
 
-      - **\<USMTpath\>** - location on your source computer of the saved USMT files and tools.
+      - **\<USMTpath\>** - location on the source computer of the saved USMT files and tools.
       - **\<filepath.xml\>** - full path to a file where you can save the report.
 
     For example, enter:
@@ -405,7 +405,7 @@ For more examples of exclude rules that you can use in custom migration XML file
 
 ### Include rules usage examples
 
-The application data directory is the most common location that you would need to add an include rule for. The `GenerateDocPatterns` function excludes this location by default. If your company uses an application that saves important data to this location, you can create include rules to migrate the data. For example, the default location for **.pst** files is: `%CSIDL_LOCAL_APPDATA%\Microsoft\Outlook`. The `MigApp.xml` file contains migration rules to move only those **.pst** files that are linked to Microsoft Outlook. To include **.pst** files that aren't linked, you can do the following modification:
+The application data directory is the most common location that you would need to add an include rule for. The `GenerateDocPatterns` function excludes this location by default. If the organization uses an application that saves important data to this location, you can create include rules to migrate the data. For example, the default location for **.pst** files is: `%CSIDL_LOCAL_APPDATA%\Microsoft\Outlook`. The `MigApp.xml` file contains migration rules to move only those **.pst** files that are linked to Microsoft Outlook. To include **.pst** files that aren't linked, you can do the following modification:
 
 #### Example 1: Include a file name extension in a known user folder
 
@@ -441,7 +441,7 @@ For more examples of include rules that you can use in custom migration XML file
 
 You can include additional rules for the migration in the `MigDocs.xml` file or other XML migration files. For example, you can use the `<locationModify>` element to move files from the folder where they were gathered to a different folder, when they're applied to the destination computer.
 
-You can use an XML schema (MigXML.xsd) file to validate the syntax of your customized XML files. For more information, see [USMT Resources](usmt-resources.md).
+You can use an XML schema (MigXML.xsd) file to validate the syntax of the customized XML files. For more information, see [USMT Resources](usmt-resources.md).
 
 ## Related articles
 

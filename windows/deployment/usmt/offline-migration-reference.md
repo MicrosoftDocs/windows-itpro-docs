@@ -192,4 +192,4 @@ The following XML example illustrates some of the elements discussed earlier in 
 
 ## Related articles
 
-- [Plan your migration](usmt-plan-your-migration.md).
+- [Plan the migration](usmt-plan-your-migration.md).

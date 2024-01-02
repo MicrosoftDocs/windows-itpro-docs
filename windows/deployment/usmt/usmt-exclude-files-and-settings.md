@@ -29,7 +29,7 @@ Methods to customize the migration and include and exclude files and settings in
 
 ## Create a custom .xml file
 
-Microsoft recommends that you create a custom **.xml** file instead of modifying the default migration **.xml** files. When you use a custom **.xml** file, you can keep your changes separate from the default **.xml** file, which makes it easier to track your modifications.
+Microsoft recommends that you create a custom **.xml** file instead of modifying the default migration **.xml** files. When you use a custom **.xml** file, you can keep the changes separate from the default **.xml** file, which makes it easier to track the modifications.
 
 ### \<include\> and \<exclude\>
 
@@ -285,7 +285,7 @@ For more information, see [Config.xml File](usmt-configxml-file.md).
 
 > [!NOTE]
 >
-> To exclude a component from the `Config.xml` file, set the **migrate** value to **"no"**. Deleting the XML tag for the component from the `Config.xml` file doesn't exclude the component from your migration.
+> To exclude a component from the `Config.xml` file, set the **migrate** value to **"no"**. Deleting the XML tag for the component from the `Config.xml` file doesn't exclude the component from the migration.
 
 ## Related articles
 

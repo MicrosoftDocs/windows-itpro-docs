@@ -17,7 +17,7 @@ appliesto:
 
 ## Example 1: Migrating an unsupported application
 
-The following template is a template for the sections that you need to migrate your application. The template isn't functional on its own, but you can use it to write your own **.xml** file.
+The following template is a template for the sections that are needed to migrate applications. The template isn't functional on its own, but it can be used to write custom **.xml** file.
 
 **Template**
 <br>
