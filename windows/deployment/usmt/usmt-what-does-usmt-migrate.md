@@ -120,8 +120,6 @@ USMT migrates operating-system components to a destination computer. The followi
   
   The use of a **\<ProfileControl\>** section in the `Config.xml` file is required when running an offline migration.
 
-- Windows Internet Explorer® settings. **¹**
-
 - Microsoft® Open Database Connectivity (ODBC) settings.
 
 - Mouse and keyboard settings.

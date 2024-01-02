@@ -33,17 +33,17 @@ When you use User State Migration Tool (USMT) to gather and restore user state, 
 
 The following user data and settings migrate offline, similar to an online migration:
 
-- Data and registry keys specified in MigXML
+- Data and registry keys specified in MigXML.
 
-- User accounts
+- User accounts.
 
-- Application settings
+- Application settings.
 
-- Limited set of operating-system settings
+- Limited set of operating-system settings.
 
-- EFS files
+- EFS files.
 
-- Internet Explorer Favorites
+- Favorites.
 
 For exceptions to what you can migrate offline, see [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)
 
