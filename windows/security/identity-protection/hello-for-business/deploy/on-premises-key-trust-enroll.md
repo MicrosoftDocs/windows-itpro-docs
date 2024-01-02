@@ -9,7 +9,7 @@ ms.topic: tutorial
 
 [!INCLUDE [apply-to-on-premises-key-trust](includes/apply-to-on-premises-key-trust.md)]
 
-After the prerequisites are met and the PKI and AD FS configurations are validated, Windows Hello for business must be enabled on the Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
+After the prerequisites are met and the PKI and AD FS configurations are validated, Windows Hello for business must be enabled on the Windows devices. Follow the instructions below to configure your devices using group policy (GPO).
 
 [!INCLUDE [gpo-enable-whfb](includes/gpo-enable-whfb.md)]
 

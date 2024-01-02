@@ -1,5 +1,5 @@
 ---
-title: Windows Hello for Business hybrid key trust clients configuration and enrollment
+title: Configure and enroll in Windows Hello for Business in a hybrid key trust model
 description: Learn how to configure devices and enroll them in Windows Hello for Business in a hybrid key trust scenario.
 ms.date: 12/29/2023
 ms.topic: tutorial
@@ -13,11 +13,24 @@ After the prerequisites are met and the PKI configuration is validated, Windows 
 
 # [:::image type="icon" source="images/intune.svg"::: **Intune/CSP**](#tab/intune)
 
-Review the article [Configure Windows Hello for Business using Microsoft Intune](../configure.md#configure-windows-hello-for-business-using-microsoft-intune) to learn about the different options offered by Microsoft Intune to configure Windows Hello for Business.
+> [!NOTE]
+> Review the article [Configure Windows Hello for Business using Microsoft Intune](../configure.md#configure-windows-hello-for-business-using-microsoft-intune) to learn about the different options offered by Microsoft Intune to configure Windows Hello for Business.
 
-If the Intune tenant-wide policy is enabled and configured to your needs, you can skip to [Enroll in Windows Hello for Business](#enroll-in-windows-hello-for-business). Otherwise, follow the instructions below to enable Windows Hello for Business a policy using an *settings catalog* policy.
+If the Intune tenant-wide policy is enabled and configured to your needs, you can skip to [Enroll in Windows Hello for Business](#enroll-in-windows-hello-for-business).
 
-[!INCLUDE [intune-settings-catalog-enable-whfb](includes/intune-settings-catalog-enable-whfb.md)]
+[!INCLUDE [intune-settings-catalog-1](../../../../../includes/configure/intune-settings-catalog-1.md)]
+
+| Category | Setting name | Value |
+|--|--|--|
+| **Windows Hello for Business** | Use Passport For Work | true |
+
+[!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
+
+Alternatively, you can configure devices using a [custom policy][MEM-1] with the [PassportForWork CSP][CSP-1].
+
+| Setting |
+|--------|
+| - **OMA-URI:** `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/UsePassportForWork`<br>- **Data type:** `bool`<br>- **Value:** `True`|
 
 # [:::image type="icon" source="images/group-policy.svg"::: **GPO**](#tab/gpo)
 
@@ -71,3 +84,6 @@ While the user has completed provisioning, Microsoft Entra Connect synchronizes 
 <!--links-->
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
 [AZ-5]: /azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler
+[CSP-1]: /windows/client-management/mdm/passportforwork-csp
+[MEM-1]: /mem/intune/configuration/custom-settings-configure
+

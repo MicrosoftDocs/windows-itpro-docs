@@ -19,7 +19,8 @@ ms.topic: tutorial
 > - [Windows Server requirements](index.md#windows-server-requirements)
 > - [Prepare users to use Windows Hello](index.md#prepare-users-to-use-windows-hello)
 
-When implementing the cloud Kerberos trust deployment model, you *must* ensure that you have an adequate number of *read-write domain controllers* in each Active Directory site where users will be authenticating with Windows Hello for Business. For more information, see [Capacity planning for Active Directory][SERV-1].
+> [!IMPORTANT]
+> When implementing the cloud Kerberos trust deployment model, you *must* ensure that you have an adequate number of *read-write domain controllers* in each Active Directory site where users will be authenticating with Windows Hello for Business. For more information, see [Capacity planning for Active Directory][SERV-1].
 
 ## Deployment steps
 
@@ -57,30 +58,29 @@ For more information about how Microsoft Entra Kerberos works with Windows Hello
 
 ## Configure Windows Hello for Business policy settings
 
-After setting up the Microsoft Entra Kerberos object, Windows Hello for business cloud Kerberos trust must be enabled on your Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
+After setting up the Microsoft Entra Kerberos object, Windows Hello for business must be enabled and configured to use the cloud Kerberos trust. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 
 # [:::image type="icon" source="images/intune.svg"::: **Intune/CSP**](#tab/intune)
 
-Review the article [Configure Windows Hello for Business using Microsoft Intune](../configure.md#configure-windows-hello-for-business-using-microsoft-intune) to learn about the different options offered by Microsoft Intune to configure Windows Hello for Business.
+> [!NOTE]
+> Review the article [Configure Windows Hello for Business using Microsoft Intune](../configure.md#configure-windows-hello-for-business-using-microsoft-intune) to learn about the different options offered by Microsoft Intune to configure Windows Hello for Business.
 
-If the Intune tenant-wide policy is enabled and configured to your needs, you can skip to [Configure cloud Kerberos trust policy](#configure-the-cloud-kerberos-trust-policy). Otherwise, follow the instructions below to enable Windows Hello for Business a policy using an *settings catalog* policy.
-
-[!INCLUDE [intune-settings-catalog-enable-whfb](includes/intune-settings-catalog-enable-whfb.md)]
-
-### Configure the cloud Kerberos trust policy
+If the Intune tenant-wide policy is enabled and configured to your needs, you only need to enable the policy setting **Use Cloud Trust For On Prem Auth**. Otherwise, both settings must be configured.
 
 [!INCLUDE [intune-settings-catalog-1](../../../../../includes/configure/intune-settings-catalog-1.md)]
 
 | Category | Setting name | Value |
 |--|--|--|
+| **Windows Hello for Business** | Use Passport For Work | true |
 | **Windows Hello for Business** | Use Cloud Trust For On Prem Auth | Enabled |
 
 [!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][MEM-3] with the [PassportForWork CSP][CSP-1].
+Alternatively, you can configure devices using a [custom policy][MEM-1] with the [PassportForWork CSP][CSP-1].
 
 | Setting |
 |--------|
+| - **OMA-URI:** `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/UsePassportForWork`<br>- **Data type:** `bool`<br>- **Value:** `True`|
 | - **OMA-URI:** `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/UseCloudTrustForOnPremAuth`<br>- **Data type:** `bool`<br>- **Value:** `True`|
 
 For more information about the cloud Kerberos trust policy, see [Windows Hello for Business policy settings](../policy-settings.md#use-cloud-trust-for-on-premises-authentication).
@@ -90,15 +90,11 @@ For more information about the cloud Kerberos trust policy, see [Windows Hello f
 [!INCLUDE [gpo-enable-whfb](includes/gpo-enable-whfb.md)]
 
 > [!NOTE]
-> Cloud Kerberos trust requires setting a dedicated policy for it to be enabled. This policy is only available as a computer configuration.
-
-### Update administrative templates
-
-You may need to update your Group Policy definitions to be able to configure the cloud Kerberos trust policy. You can copy the ADMX and ADML files from a Windows client that supports cloud Kerberos trust to their respective language folder on your Group Policy management server. Windows Hello for Business settings are in the *Passport.admx* and *Passport.adml* files.
-
-You can also create a Group Policy Central Store and copy them their respective language folder. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows][TS-1].
-
-### Configure the Windows Hello for Business with group policy
+> Cloud Kerberos trust requires setting a dedicated policy for it to be enabled. This policy setting is only available as a computer configuration.
+>
+>You may need to update your Group Policy definitions to be able to configure the cloud Kerberos trust policy. You can copy the ADMX and ADML files from a Windows client that supports cloud Kerberos trust to their respective language folder on your Group Policy management server. Windows Hello for Business settings are in the *Passport.admx* and *Passport.adml* files.
+>
+>You can also create a Group Policy Central Store and copy them their respective language folder. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows][TS-1].
 
 [!INCLUDE [gpo-settings-1](../../../../../includes/configure/gpo-settings-1.md)]
 
@@ -118,8 +114,7 @@ You can also create a Group Policy Central Store and copy them their respective 
 
 ---
 
-> [!NOTE]
-> If you deployed Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../configure.md#policy-conflicts-from-multiple-policy-sources).
+If you deploy Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../configure.md#policy-conflicts-from-multiple-policy-sources).
 
 Additional policy settings can be configured to control the behavior of Windows Hello for Business. For more information, see [Windows Hello for Business policy settings](../policy-settings.md).
 
@@ -190,6 +185,7 @@ The following scenarios aren't supported using Windows Hello for Business cloud 
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
 [CSP-1]: /windows/client-management/mdm/passportforwork-csp
 [ENTRA-1]: /entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises#install-the-azureadhybridauthenticationmanagement-module
-[MEM-3]: /mem/intune/configuration/custom-settings-configure
+[MEM-1]: /mem/intune/configuration/custom-settings-configure
 [SERV-1]: /windows-server/administration/performance-tuning/role/active-directory-server/capacity-planning-for-active-directory-domain-services
 [TS-1]: /troubleshoot/windows-client/group-policy/create-and-manage-central-store
+

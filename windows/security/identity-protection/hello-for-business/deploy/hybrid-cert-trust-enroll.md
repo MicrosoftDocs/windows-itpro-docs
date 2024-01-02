@@ -1,11 +1,11 @@
 ---
-title: Configure and provision Windows Hello for Business in a hybrid certificate trust model
+title: Configure and enroll in Windows Hello for Business in hybrid certificate trust model
 description: Learn how to configure devices and enroll them in Windows Hello for Business in a hybrid certificate trust scenario.
 ms.date: 01/03/2024
 ms.topic: tutorial
 ---
 
-# Configure and provision Windows Hello for Business in hybrid certificate trust model
+# Configure and enroll in Windows Hello for Business in hybrid certificate trust model
 
 [!INCLUDE [apply-to-hybrid-cert-trust](includes/apply-to-hybrid-cert-trust.md)]
 
@@ -17,8 +17,6 @@ After the prerequisites are met and the PKI and AD FS configurations are validat
 
 > [!TIP]
 > Use the same *Windows Hello for Business Users* security group to assign **Certificate template permissions** to ensure the same members can enroll in the Windows Hello for Business authentication certificate.
-
-### Enable automatic enrollment of certificates group policy setting
 
 Windows Hello for Business provisioning performs the initial enrollment of the Windows Hello for Business authentication certificate. This certificate expires based on the duration configured in the Windows Hello for Business *authentication certificate* template.
 
@@ -49,26 +47,25 @@ The process requires no user interaction, provided the user signs-in using Windo
 > - [Configure single sign-on for Microsoft Entra joined devices](../hello-hybrid-aadj-sso.md)
 > - [Using Certificates for AADJ On-premises Single-sign On](../hello-hybrid-aadj-sso-cert.md)
 
-Review the article [Configure Windows Hello for Business using Microsoft Intune](../configure.md#configure-windows-hello-for-business-using-microsoft-intune) to learn about the different options offered by Microsoft Intune to configure Windows Hello for Business.
+> [!NOTE]
+> Review the article [Configure Windows Hello for Business using Microsoft Intune](../configure.md#configure-windows-hello-for-business-using-microsoft-intune) to learn about the different options offered by Microsoft Intune to configure Windows Hello for Business.
 
-If the Intune tenant-wide policy is enabled and configured to your needs, you can skip to [Enroll in Windows Hello for Business](#enroll-in-windows-hello-for-business). Otherwise, follow the instructions below to enable Windows Hello for Business a policy using an *settings catalog* policy.
-
-[!INCLUDE [intune-settings-catalog-enable-whfb](includes/intune-settings-catalog-enable-whfb.md)]
-
-### Configure the certificate trust policy
+If the Intune tenant-wide policy is enabled and configured to your needs, you can skip to [Enroll in Windows Hello for Business](#enroll-in-windows-hello-for-business).
 
 [!INCLUDE [intune-settings-catalog-1](../../../../../includes/configure/intune-settings-catalog-1.md)]
 
 | Category | Setting name | Value |
 |--|--|--|
+| **Windows Hello for Business** | Use Passport For Work | true |
 | **Windows Hello for Business** | Use Certificate For On Prem Auth | Enabled |
 
 [!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][MEM-3] with the [PassportForWork CSP][CSP-1].
+Alternatively, you can configure devices using a [custom policy][MEM-1] with the [PassportForWork CSP][CSP-1].
 
 | Setting |
 |--------|
+| - **OMA-URI:** `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/UsePassportForWork`<br>- **Data type:** `bool`<br>- **Value:** `True`|
 | - **OMA-URI:** `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/UseCertificateForOnPremAuth`<br>- **Data type:** `bool`<br>- **Value:** `True`|
 
 For more information about the certificate trust policy, see [Windows Hello for Business policy settings](../policy-settings.md#use-certificate-for-on-premises-authentication).
@@ -103,5 +100,5 @@ The certificate authority validates the certificate was signed by the registrati
 <!--links-->
 
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
-
-[MEM-3]: /mem/intune/configuration/custom-settings-configure
+[CSP-1]: /windows/client-management/mdm/passportforwork-csp
+[MEM-1]: /mem/intune/configuration/custom-settings-configure
