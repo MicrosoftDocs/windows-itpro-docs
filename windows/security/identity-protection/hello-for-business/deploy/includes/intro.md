@@ -5,6 +5,6 @@ ms.topic: include
 
 <!--**This article describes Windows Hello for Business functionalities or scenarios that apply to:**-->
 
-> [!div class="op_multi_selector" title1="Deployment model:" title2="Trust type:"]
+> [!div class="checklist"]
 > **This article describes Windows Hello for Business functionalities or scenarios that apply to:**
 >
