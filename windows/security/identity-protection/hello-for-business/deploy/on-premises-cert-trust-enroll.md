@@ -1,15 +1,32 @@
 ---
-title: Configure Windows Hello for Business Policy settings in an on-premises certificate trust
-description: Configure Windows Hello for Business Policy settings for Windows Hello for Business in an on-premises certificate trust scenario
 ms.date: 01/03/2024
 ms.topic: tutorial
+title: Configure Windows Hello for Business Policy settings in an on-premises certificate trust
+description: Configure Windows Hello for Business Policy settings for Windows Hello for Business in an on-premises certificate trust scenario
 ---
 
 # Configure and enroll in Windows Hello for Business in an on-premises certificate trust model
 
 [!INCLUDE [apply-to-on-premises-cert-trust](includes/apply-to-on-premises-cert-trust.md)]
 
-After the prerequisites are met and the PKI and AD FS configurations are validated, Windows Hello for business must be enabled on the Windows devices. Follow the instructions below to configure your devices using group policy (GPO).
+> [!div class="checklist"]
+> Once the prerequisites are met, and the PKI and AD FS configurations are validated, deploying Windows Hello for Business consists of the following steps:
+>
+> - [Configure Windows Hello for Business policy settings](#configure-windows-hello-for-business-policy-settings)
+> - [Enroll in Windows Hello for Business](#enroll-in-windows-hello-for-business)
+
+## Configure Windows Hello for Business policy settings
+
+There are 2 policy setting required to enable Windows Hello for Business in a certificate trust model:
+
+- [Use Windows Hello for Business](../policy-settings.md#use-windows-hello-for-business)
+- [Use certificate for on-premises authentication](../policy-settings.md#use-certificate-for-on-premises-authentication)
+
+Another optional, but recommended, policy setting is:
+
+- [Use a hardware security device](../policy-settings.md#use-a-hardware-security-device)
+
+Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 
 [!INCLUDE [gpo-enable-whfb](includes/gpo-enable-whfb.md)]
 

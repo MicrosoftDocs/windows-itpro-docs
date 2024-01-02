@@ -38,9 +38,13 @@ typically configured via an MDM solution like Microsoft Intune, using the [Passp
 > [!NOTE]
 > Review the article [Configure Windows Hello for Business using Microsoft Intune](../configure.md#configure-windows-hello-for-business-using-microsoft-intune) to learn about the different options offered by Microsoft Intune to configure Windows Hello for Business.
 
-If the Intune tenant-wide policy is configured to disable Windows Hello for Business, or if devices are deployed with Windows Hello disabled, tThere's one policy setting required to enable Windows Hello for Business in a cloud-only trust model:
+If the Intune tenant-wide policy is configured to *disable Windows Hello for Business*, or if devices are deployed with Windows Hello disabled, you must configure one policy setting to enable Windows Hello for Business in a cloud-only trust model:
 
 - [Use Windows Hello for Business](../policy-settings.md#use-windows-hello-for-business)
+
+Another optional, but recommended, policy setting is:
+
+- [Use a hardware security device](../policy-settings.md#use-a-hardware-security-device)
 
 Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 
@@ -51,6 +55,7 @@ Follow the instructions below to configure your devices using either Microsoft I
 | Category | Setting name | Value |
 |--|--|--|
 | **Windows Hello for Business** | Use Passport For Work | true |
+| **Windows Hello for Business** | Require Security Device | true |
 
 [!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
 
@@ -59,6 +64,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 | Setting |
 |--------|
 | - **OMA-URI:** `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/UsePassportForWork`<br>- **Data type:** `bool`<br>- **Value:** `True`|
+| - **OMA-URI:** `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/RequireSecurityDevice`<br>- **Data type:** `bool`<br>- **Value:** `True`|
 
 # [:::image type="icon" source="images/group-policy.svg"::: **GPO**](#tab/gpo)
 
@@ -69,11 +75,7 @@ To configure a device with group policy, use the [Local Group Policy Editor](/pr
 | **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**<br>or<br> **User Configuration\Administrative Templates\Windows Components\Windows Hello for Business**|Use Windows Hello for Business| **Enabled**|
 | **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business** |Use a hardware security device| **Enabled**|
 
-> [!NOTE]
-> The enablement of the *Use a hardware security device* policy setting is optional, but recommended.
-
 ---
-
 
 > [!TIP]
 > If you're using Microsoft Intune, and you're not using the [tenant-wide policy](../configure.md#verify-the-tenant-wide-policy), enable the Enrollment Status Page (ESP) to ensure that the devices receive the Windows Hello for Business policy settings before users can access their desktop. For more information about ESP, see [Set up the Enrollment Status Page][MEM-1].
@@ -88,14 +90,17 @@ The Windows Hello for Business provisioning process begins immediately after a u
 
 [!INCLUDE [user-experience](includes/user-experience.md)]
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7 alt-text="Video showing the Windows Hello for Business enrollment steps after signing in with a password."]
+
 ## Disable automatic enrollment
 
 If you want to disable the automatic Windows Hello for Business enrollment prompt, you can configure your devices with a policy setting or registry key. For more information, see [Disable Windows Hello for Business enrollment](../configure.md#disable-windows-hello-for-business-enrollment).
 
 > [!NOTE]
-> During the out-of-box experience (OOBE) flow of a Microsoft Entra join, you are guided to enroll in Windows Hello for Business when you don't have Intune. You can cancel the PIN screen and configure this cancellation with registry keys to prevent future prompts.
+> During the out-of-box experience (OOBE) flow of a Microsoft Entra join, you are guided to enroll in Windows Hello for Business when you don't have Intune. You can cancel the PIN screen and access the desktop without enrolling in Windows Hello for Business.
 
 <!--links-->
 
+[CSP-1]: /windows/client-management/mdm/passportforwork-csp
 [MEM-1]: /mem/intune/enrollment/windows-enrollment-status
 [WIN-1]: /windows/client-management/mdm/passportforwork-csp

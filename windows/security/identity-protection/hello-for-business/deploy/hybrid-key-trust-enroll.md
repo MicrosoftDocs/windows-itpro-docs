@@ -9,7 +9,23 @@ ms.topic: tutorial
 
 [!INCLUDE [apply-to-hybrid-key-trust](includes/apply-to-hybrid-key-trust.md)]
 
-After the prerequisites are met and the PKI configuration is validated, Windows Hello for business must be enabled on the Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
+> [!div class="checklist"]
+> Once the prerequisites are met and the PKI configuration is validated, deploying Windows Hello for Business consists of the following steps:
+>
+> - [Configure Windows Hello for Business policy settings](#configure-windows-hello-for-business-policy-settings)
+> - [Enroll in Windows Hello for Business](#enroll-in-windows-hello-for-business)
+
+## Configure Windows Hello for Business policy settings
+
+There's 1 policy setting required to enable Windows Hello for Business in a key trust model:
+
+- [Use Windows Hello for Business](../policy-settings.md#use-windows-hello-for-business)
+
+Another optional, but recommended, policy setting is:
+
+- [Use a hardware security device](../policy-settings.md#use-a-hardware-security-device)
+
+Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 
 # [:::image type="icon" source="images/intune.svg"::: **Intune/CSP**](#tab/intune)
 
@@ -23,6 +39,7 @@ If the Intune tenant-wide policy is enabled and configured to your needs, you ca
 | Category | Setting name | Value |
 |--|--|--|
 | **Windows Hello for Business** | Use Passport For Work | true |
+| **Windows Hello for Business** | Require Security Device | true |
 
 [!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
 
@@ -31,6 +48,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 | Setting |
 |--------|
 | - **OMA-URI:** `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/UsePassportForWork`<br>- **Data type:** `bool`<br>- **Value:** `True`|
+| - **OMA-URI:** `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/RequireSecurityDevice`<br>- **Data type:** `bool`<br>- **Value:** `True`|
 
 # [:::image type="icon" source="images/group-policy.svg"::: **GPO**](#tab/gpo)
 
@@ -43,9 +61,6 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 | **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**<br>or<br> **User Configuration\Administrative Templates\Windows Components\Windows Hello for Business**|Use Windows Hello for Business| **Enabled**|
 | **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business** |Use a hardware security device| **Enabled**|
 
-> [!NOTE]
-> The enablement of the *Use a hardware security device* policy setting is optional, but recommended.
-
 [!INCLUDE [gpo-settings-2](../../../../../includes/configure/gpo-settings-2.md)]
 
 > [!TIP]
@@ -53,8 +68,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 ---
 
-> [!NOTE]
-> If you deployed Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../configure.md#policy-conflicts-from-multiple-policy-sources)
+If you deploy Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../configure.md#policy-conflicts-from-multiple-policy-sources)
 
 Additional policy settings can be configured to control the behavior of Windows Hello for Business. For more information, see [Windows Hello for Business policy settings](../policy-settings.md).
 
@@ -71,7 +85,6 @@ This information is also available using the `dsregcmd.exe /status` command from
 
 [!INCLUDE [user-experience](includes/user-experience.md)]
 
-
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7 alt-text="Video showing the Windows Hello for Business enrollment steps after signing in with a password."]
 
 While the user has completed provisioning, Microsoft Entra Connect synchronizes the user's key from Microsoft Entra ID to Active Directory.
@@ -86,4 +99,3 @@ While the user has completed provisioning, Microsoft Entra Connect synchronizes 
 [AZ-5]: /azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler
 [CSP-1]: /windows/client-management/mdm/passportforwork-csp
 [MEM-1]: /mem/intune/configuration/custom-settings-configure
-

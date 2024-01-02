@@ -63,6 +63,10 @@ After setting up the Microsoft Entra Kerberos object, Windows Hello for business
 - [Use Windows Hello for Business](../policy-settings.md#use-windows-hello-for-business)
 - [use-cloud-trust-for-on-premises-authentication](../policy-settings.md#use-cloud-trust-for-on-premises-authentication)
 
+Another optional, but recommended, policy setting is:
+
+- [Use a hardware security device](../policy-settings.md#use-a-hardware-security-device)
+
 > [!IMPORTANT]
 > If the **Use certificate for on-premises authentication** policy is enabled, certificate trust takes precedence over cloud Kerberos trust. Ensure that the machines that you want to enable cloud Kerberos trust have this policy **not configured**.
 
@@ -81,6 +85,7 @@ If the Intune tenant-wide policy is enabled and configured to your needs, you on
 |--|--|--|
 | **Windows Hello for Business** | Use Passport For Work | true |
 | **Windows Hello for Business** | Use Cloud Trust For On Prem Auth | Enabled |
+| **Windows Hello for Business** | Require Security Device | true |
 
 [!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
 
@@ -90,6 +95,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 |--------|
 | - **OMA-URI:** `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/UsePassportForWork`<br>- **Data type:** `bool`<br>- **Value:** `True`|
 | - **OMA-URI:** `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/UseCloudTrustForOnPremAuth`<br>- **Data type:** `bool`<br>- **Value:** `True`|
+| - **OMA-URI:** `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/RequireSecurityDevice`<br>- **Data type:** `bool`<br>- **Value:** `True`|
 
 # [:::image type="icon" source="images/group-policy.svg"::: **GPO**](#tab/gpo)
 
@@ -109,9 +115,6 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 | **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**<br>or<br> **User Configuration\Administrative Templates\Windows Components\Windows Hello for Business**|Use Windows Hello for Business| **Enabled**|
 | **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business** |Use cloud Kerberos trust for on-premises authentication| **Enabled**|
 | **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business** |Use a hardware security device| **Enabled**|
-
-> [!NOTE]
-> The enablement of the *Use a hardware security device* policy setting is optional, but recommended.
 
 [!INCLUDE [gpo-settings-2](../../../../../includes/configure/gpo-settings-2.md)]
 
@@ -139,6 +142,8 @@ The cloud Kerberos trust prerequisite check detects whether the user has a parti
 ### User experience
 
 [!INCLUDE [user-experience](includes/user-experience.md)]
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7 alt-text="Video showing the Windows Hello for Business enrollment steps after signing in with a password."]
 
 Once a user completes enrollment with cloud Kerberos trust, the Windows Hello gesture can be used **immediately** for sign-in. On a Microsoft Entra hybrid joined device, the first use of the PIN requires line of sight to a DC. Once the user has signed in or unlocked with the DC, cached sign-in can be used for subsequent unlocks without line of sight or network connectivity.
 
