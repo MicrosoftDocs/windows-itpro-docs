@@ -130,11 +130,11 @@ When an application or the operating system has a lock on a file, the file is ha
 
 Operating system locked files can't remain in place and must be copied into the hard-link migration store. As a result, selecting many operating-system files for migration significantly reduces performance during a hard-link migration. As a best practice, we recommend that you don't migrate any files out of the `\Windows` directory, which minimizes performance-related issues.
 
-Application locked files are treated the same in hard-link migrations as in other scenarios when the volume shadow-copy service isn't being utilized. The volume shadow-copy service can't be used with hard-link migrations. However, by modifying the new **&lt;HardLinkStoreControl&gt;** section in the `Config.xml` file, it's possible to enable the migration of files locked by an application.
+Application locked files are treated the same in hard-link migrations as in other scenarios when the volume shadow-copy service isn't being utilized. The volume shadow-copy service can't be used with hard-link migrations. However, by modifying the new **\<HardLinkStoreControl\>** section in the `Config.xml` file, it's possible to enable the migration of files locked by an application.
 
 > [!IMPORTANT]
 >
-> There are some scenarios in which modifying the **&lt;HardLinkStoreControl&gt;** section in the `Config.xml` file makes it more difficult to delete a hard-link migration store. In these scenarios, you must use `UsmtUtils.exe` to schedule the migration store for deletion on the next restart.
+> There are some scenarios in which modifying the **\<HardLinkStoreControl\>** section in the `Config.xml` file makes it more difficult to delete a hard-link migration store. In these scenarios, you must use `UsmtUtils.exe` to schedule the migration store for deletion on the next restart.
 
 ## XML elements in the Config.xml file
 
@@ -142,11 +142,11 @@ A new section in the `Config.xml` file allows optional configuration of some of 
 
 | Element | Description |
 |--- |--- |
-| **&lt;Policies&gt;** | This element contains elements that describe the policies that USMT follows while creating a migration store. |
-| **&lt;HardLinkStoreControl&gt;** | This element contains elements that describe how to handle files during the creation of a hard link migration store. |
-| **&lt;fileLocked&gt;** | This element contains elements that describe how to handle files that are locked for editing. |
-| **&lt;createHardLink&gt;** | This element defines a standard MigXML pattern that describes file paths where hard links should be created, even if the file is locked for editing by another application. <br/><br/>Syntax: `<createHardLink>` [pattern] `</createHardLink>` |
-| **&lt;errorHardLink&gt;** | This element defines a standard MigXML pattern that describes file paths where hard links shouldn't be created, if the file is locked for editing by another application. <br/><br/>`<errorHardLink>` [pattern] `</errorHardLink>` |
+| **\<Policies\>** | This element contains elements that describe the policies that USMT follows while creating a migration store. |
+| **\<HardLinkStoreControl\>** | This element contains elements that describe how to handle files during the creation of a hard link migration store. |
+| **\<fileLocked\>** | This element contains elements that describe how to handle files that are locked for editing. |
+| **\<createHardLink\>** | This element defines a standard MigXML pattern that describes file paths where hard links should be created, even if the file is locked for editing by another application. <br><br>Syntax: `<createHardLink>` [pattern] `</createHardLink>` |
+| **\<errorHardLink\>** | This element defines a standard MigXML pattern that describes file paths where hard links shouldn't be created, if the file is locked for editing by another application. <br><br>`<errorHardLink>` [pattern] `</errorHardLink>` |
 
 > [!IMPORTANT]
 >

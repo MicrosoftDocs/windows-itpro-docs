@@ -19,7 +19,7 @@ When using the XML files `MigDocs.xml`, `MigApp.xml`, and `MigUser.xml`, you can
 
 ## Variables that are processed for the operating system and in the context of each user
 
-You can use these variables within sections in the .xml files with `context=UserAndSystem`, `context=User`, and `context=System`.
+You can use these variables within sections in the **.xml** files with `context=UserAndSystem`, `context=User`, and `context=System`.
 
 |Variable|Explanation|
 |--- |--- |
@@ -83,7 +83,7 @@ You can use these variables within sections in the .xml files with `context=User
 
 ## Variables that are recognized only in the user context
 
-You can use these variables in the .xml files within sections with `context=User` and `context=UserAndSystem`.
+You can use these variables in the **.xml** files within sections with `context=User` and `context=UserAndSystem`.
 
 |Variable|Explanation|
 |--- |--- |

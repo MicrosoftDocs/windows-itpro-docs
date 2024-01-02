@@ -34,9 +34,9 @@ A company receives funds to update the operating system on all of its computers 
 
 1. On each computer, the administrator boots the machine into WinPE and runs the **ScanState** command-line tool, specifying the `/hardlink /nocompress` command-line options. **ScanState** saves the user state to a hard-link migration store on each computer, improving performance by minimizing network traffic and minimizing migration failures on computers with limited space available on the hard drive.
 
-2. On each computer, the administrator installs the company's standard operating environment (SOE) which includes the latest supported version of Windows and other company applications.
+1. On each computer, the administrator installs the company's standard operating environment (SOE) which includes the latest supported version of Windows and other company applications.
 
-3. The administrator runs the **LoadState** command-line tool on each computer. **LoadState** restores each user state back to each computer.
+1. The administrator runs the **LoadState** command-line tool on each computer. **LoadState** restores each user state back to each computer.
 
 ### Scenario Two: PC-refresh using a compressed migration store
 
@@ -44,9 +44,9 @@ A company receives funds to update the operating system on all of its computers 
 
 1. The administrator runs the **ScanState** command-line tool on each computer. **ScanState** saves each user state to a server.
 
-2. On each computer, the administrator installs the company's standard SOE that includes the latest supported version of Windows and other company applications.
+1. On each computer, the administrator installs the company's standard SOE that includes the latest supported version of Windows and other company applications.
 
-3. The administrator runs the **LoadState** command-line tool on each source computer, and **LoadState** restores each user state back to the computer.
+1. The administrator runs the **LoadState** command-line tool on each source computer, and **LoadState** restores each user state back to the computer.
 
 ### Scenario Three: PC-refresh using a hard-link migration store
 
@@ -54,9 +54,9 @@ A company receives funds to update the operating system on all of its computers 
 
 1. The administrator runs the **ScanState** command-line tool on each computer, specifying the `/hardlink /nocompress` command-line options. **ScanState** saves the user state to a hard-link migration store on each computer, improving performance by minimizing network traffic and minimizing migration failures on computers with limited space available on the hard drive.
 
-2. On each computer, the administrator installs the company's SOE that includes the latest supported version of Windows and other company applications.
+1. On each computer, the administrator installs the company's SOE that includes the latest supported version of Windows and other company applications.
 
-3. The administrator runs the **LoadState** command-line tool on each computer. **LoadState** restores each user state back on each computer.
+1. The administrator runs the **LoadState** command-line tool on each computer. **LoadState** restores each user state back on each computer.
 
 ### Scenario Four: PC-refresh using Windows.old folder and a hard-link migration store
 
@@ -67,9 +67,9 @@ A company decides to update the operating system on all of its computers to the 
     - Performing the install without formatting or repartitioning the disk.
     - Selecting a partition that contains the previous version of Windows.
 
-2. On each computer, the administrator installs the company's SOE that includes company applications.
+1. On each computer, the administrator installs the company's SOE that includes company applications.
 
-3. The administrator runs the **ScanState** and **LoadState** command-line tools successively on each computer while specifying the `/hardlink /nocompress` command-line options.
+1. The administrator runs the **ScanState** and **LoadState** command-line tools successively on each computer while specifying the `/hardlink /nocompress` command-line options.
 
 ## PC-replacement
 
@@ -83,9 +83,9 @@ A company is allocating 20 new computers to users in the accounting department. 
 
 1. On each source computer, an administrator boots the machine into WinPE and runs **ScanState** to collect the user state to either a server or an external hard disk.
 
-2. On each new computer, the administrator installs the company's SOE that includes the latest supported version of Windows and other company applications.
+1. On each new computer, the administrator installs the company's SOE that includes the latest supported version of Windows and other company applications.
 
-3. On each of the new computers, the administrator runs the **LoadState** tool, restoring each user state from the migration store to one of the new computers.
+1. On each of the new computers, the administrator runs the **LoadState** tool, restoring each user state from the migration store to one of the new computers.
 
 ### Scenario Two: Manual network migration
 

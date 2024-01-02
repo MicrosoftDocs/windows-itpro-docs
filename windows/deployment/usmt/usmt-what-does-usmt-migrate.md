@@ -14,11 +14,11 @@ ms.technology: itpro-deploy
 
 ## Default migration scripts
 
-The User State Migration Tool (USMT) is designed so that an IT engineer can precisely define migrations using the USMT .xml scripting language. USMT provides the following sample scripts:
+The User State Migration Tool (USMT) is designed so that an IT engineer can precisely define migrations using the USMT **.xml** scripting language. USMT provides the following sample scripts:
 
 - **MigApp.XML** - Rules to migrate application settings.
 
-- **MigDocs.XML** - Rules that use the **MigXmlHelper.GenerateDocPatterns** helper function, which can be used to automatically find user documents on a computer without the need to author extensive custom migration .xml files.
+- **MigDocs.XML** - Rules that use the **MigXmlHelper.GenerateDocPatterns** helper function, which can be used to automatically find user documents on a computer without the need to author extensive custom migration **.xml** files.
 
 - **MigUser.XML** - Rules to migrate user profiles and user data.
 
@@ -91,9 +91,7 @@ This section describes the user data that USMT migrates by default, using the `M
 
 ## Operating-system components
 
-USMT migrates operating-system components to a destination computer from computers running Windows 7 and Windows 8
-
-The following components are migrated by default using the manifest files:
+USMT migrates operating-system components to a destination computer. The following components are migrated by default using the manifest files:
 
 - Accessibility settings.
 
@@ -111,7 +109,7 @@ The following components are migrated by default using the manifest files:
 
 - Fonts.
 
-- Group membership. USMT migrates users' group settings. The groups to which a user belongs can be found by right-clicking **My Computer** on the Start menu and then selecting **Manage**. The use of a **&lt;ProfileControl&gt;** section in the `Config.xml` file is required when running an offline migration.
+- Group membership. USMT migrates users' group settings. The groups to which a user belongs can be found by right-clicking **My Computer** on the Start menu and then selecting **Manage**. The use of a **\<ProfileControl\>** section in the `Config.xml` file is required when running an offline migration.
 
 - Windows Internet Explorer® settings. **¹**
 

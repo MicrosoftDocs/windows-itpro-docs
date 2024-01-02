@@ -38,7 +38,7 @@ You can run the [Cipher.exe](/windows-server/administration/windows-commands/cip
 cipher.exe /D /S:<PATH>
 ```
 
-where *&lt;Path&gt;* is the full path of the topmost parent directory where the encryption attribute is set.
+where *\<Path\>* is the full path of the topmost parent directory where the encryption attribute is set.
 
 ## Related articles
 

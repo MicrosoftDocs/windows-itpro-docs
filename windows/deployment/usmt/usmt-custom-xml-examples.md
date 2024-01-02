@@ -14,7 +14,7 @@ ms.date: 12/20/2023
 
 ## Example 1: Migrating an unsupported application
 
-The following template is a template for the sections that you need to migrate your application. The template isn't functional on its own, but you can use it to write your own .xml file.
+The following template is a template for the sections that you need to migrate your application. The template isn't functional on its own, but you can use it to write your own **.xml** file.
 
 **Template**
 <br>
@@ -89,7 +89,7 @@ The following template is a template for the sections that you need to migrate y
 
 ## Example 2: Migrating the My Videos folder
 
-The following sample is a custom .xml file named `CustomFile.xml` that migrates **My Videos** for all users, if the folder exists on the source computer.
+The following sample is a custom **.xml** file named `CustomFile.xml` that migrates **My Videos** for all users, if the folder exists on the source computer.
 
 - **Sample condition**: Verifies that **My Videos** exists on the source computer:
 
@@ -137,7 +137,7 @@ The following sample is a custom .xml file named `CustomFile.xml` that migrates 
 
 ## Example 3: Migrating files and registry keys
 
-The sample patterns describe the behavior in the following example .xml file.
+The sample patterns describe the behavior in the following example **.xml** file.
 
 - **Sample pattern**: Migrates all instances of the file `Usmttestfile.txt` from all subdirectories under `%ProgramFiles%\USMTTestFolder`:
 
@@ -195,7 +195,7 @@ The sample patterns describe the behavior in the following example .xml file.
 
 ## Example 4: Migrating specific folders from various locations
 
-The behavior for this custom .xml file is described within the `<displayName>` tags in the code.
+The behavior for this custom **.xml** file is described within the `<displayName>` tags in the code.
 
 **XML file**
 <br>

@@ -34,23 +34,23 @@ UsmtUtils.exe /extract <filePath> <destinationPath> [/i:<includePattern>] [/e:<e
 
 Where the placeholders have the following values:
 
-- **&lt;USMTpath&gt;** is the location where the USMT files and tools are saved.
+- **\<USMTpath\>** is the location where the USMT files and tools are saved.
 
-- **&lt;filePath&gt;** is the location of the migration store.
+- **\<filePath\>** is the location of the migration store.
 
-- **&lt;destination path&gt;** is the location of the file where you want the **/extract** option to put the extracted migration store contents.
+- **\<destination path\>** is the location of the file where you want the **/extract** option to put the extracted migration store contents.
 
-- **&lt;includePattern&gt;** specifies the pattern for the files to include in the extraction.
+- **\<includePattern\>** specifies the pattern for the files to include in the extraction.
 
-- **&lt;excludePattern&gt;** specifies the pattern for the files to omit from the extraction.
+- **\<excludePattern\>** specifies the pattern for the files to omit from the extraction.
 
-- **&lt;AlgID&gt;** is the cryptographic algorithm that was used to create the migration store on the `ScanState.exe` command line.
+- **\<AlgID\>** is the cryptographic algorithm that was used to create the migration store on the `ScanState.exe` command line.
 
-- **&lt;logfile&gt;** is the location and name of the log file.
+- **\<logfile\>** is the location and name of the log file.
 
-- **&lt;keystring&gt;** is the encryption key that was used to encrypt the migration store.
+- **\<keystring\>** is the encryption key that was used to encrypt the migration store.
 
-- **&lt;filename&gt;** is the location and name of the text file that contains the encryption key.
+- **\<filename\>** is the location and name of the text file that contains the encryption key.
 
 ### To extract all files from a compressed migration store
 

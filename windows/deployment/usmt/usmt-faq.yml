@@ -74,7 +74,7 @@ sections:
       - question: |
           How can I exclude a folder or a certain type of file from the migration?
         answer: |
-          You can use the **&lt;unconditionalExclude&gt;** element to globally exclude data from the migration. For example, you can use this element to exclude all MP3 files on the computer or to exclude all files from `C:\UserData`. This element excludes objects regardless of any other **&lt;include&gt;** rules that are in the **.xml** files. For an example, see **&lt;unconditionalExclude&gt;** in the [Exclude files and settings](usmt-exclude-files-and-settings.md) article. For the syntax of this element, see [XML elements library](usmt-xml-elements-library.md).
+          You can use the **\<unconditionalExclude\>** element to globally exclude data from the migration. For example, you can use this element to exclude all MP3 files on the computer or to exclude all files from `C:\UserData`. This element excludes objects regardless of any other **\<include\>** rules that are in the **.xml** files. For an example, see **\<unconditionalExclude\>** in the [Exclude files and settings](usmt-exclude-files-and-settings.md) article. For the syntax of this element, see [XML elements library](usmt-xml-elements-library.md).
           
       - question: |
           What happens to files that were located on a drive that don't exist on the destination computer?
@@ -85,7 +85,7 @@ sections:
           - Destination computer doesn't have an E:\\ drive.
           - C:\\ is the system drive on the destination computer.
 
-          the file is migrated to `C:\data\File.pst`. This behavior holds true even when **&lt;locationModify&gt;** rules attempt to move data to a drive that doesn't exist on the destination computer.
+          the file is migrated to `C:\data\File.pst`. This behavior holds true even when **\<locationModify\>** rules attempt to move data to a drive that doesn't exist on the destination computer.
           
   - name: USMT .xml Files
     questions:

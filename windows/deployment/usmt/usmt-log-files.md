@@ -140,14 +140,14 @@ However, upon testing the migration you notice that the **New Text Document.txt*
 
 ```xml
 <MigUnitList>
-  <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
+  <MigUnit Name="\<System\>\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
     <Patterns Type="Include">
       <Pattern Type="File" Path="C:\data [*]"/>
     </Patterns>
   </MigUnit>
 </MigUnitList>
 <Perform Name="Gather" User="System">
-  <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)">
+  <MigUnit Name="\<System\>\DATA1 (CMXEAgent)">
     <Operation Name="Store" Type="File" Path="C:\data" SimObj="false" Success="true"/>
     <Operation Name="Store" Type="File" Path="C:\data [test (1).txt]" SimObj="false" Success="true"/>
     <Operation Name="Store" Type="File" Path="C:\data [test.txt]" SimObj="false" Success="true"/>
@@ -155,9 +155,9 @@ However, upon testing the migration you notice that the **New Text Document.txt*
 </Perform>
 ```
 
-Analysis of this XML section reveals the migunit that was created when the migration rule was processed. The **&lt;Perform&gt;** section details the actual files that were scheduled for gathering and the result of the gathering operation. The **New Text Document.txt** file doesn't appear in this section, which confirms that the migration rule wasn't correctly authored.
+Analysis of this XML section reveals the migunit that was created when the migration rule was processed. The **\<Perform\>** section details the actual files that were scheduled for gathering and the result of the gathering operation. The **New Text Document.txt** file doesn't appear in this section, which confirms that the migration rule wasn't correctly authored.
 
-An analysis of the [XML elements library](usmt-xml-elements-library.md) reference article reveals that the [**&lt;pattern&gt;**](usmt-xml-elements-library.md#pattern) tag needs to be modified as follows:
+An analysis of the [XML elements library](usmt-xml-elements-library.md) reference article reveals that the [**\<pattern\>**](usmt-xml-elements-library.md#pattern) tag needs to be modified as follows:
 
 ```xml
 <pattern type="File">c:\data\* [*]</pattern>
@@ -167,14 +167,14 @@ When the migration is performed again with the modified tag, the diagnostic log 
 
 ```xml
 <MigUnitList>
-  <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
+  <MigUnit Name="\<System\>\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
     <Patterns Type="Include">
       <Pattern Type="File" Path="C:\data\* [*]"/>
     </Patterns>
   </MigUnit>
 </MigUnitList>
 <Perform Name="Gather" User="System">
-  <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)">
+  <MigUnit Name="\<System\>\DATA1 (CMXEAgent)">
     <Operation Name="Store" Type="File" Path="C:\data" SimObj="false" Success="true"/>
     <Operation Name="Store" Type="File" Path="C:\data [test (1).txt]" SimObj="false" Success="true"/>
     <Operation Name="Store" Type="File" Path="C:\data [test.txt]" SimObj="false" Success="true"/>
@@ -184,7 +184,7 @@ When the migration is performed again with the modified tag, the diagnostic log 
 </Perform>
 ```
 
-This diagnostic log confirms that the modified **&lt;pattern&gt;** value enables the migration of the file.
+This diagnostic log confirms that the modified **\<pattern\>** value enables the migration of the file.
 
 **Why is this file migrating when I authored an exclude rule excluding it?**
 
@@ -242,7 +242,7 @@ However, upon testing the migration you notice that all the text files are still
 
 ```xml
 <MigUnitList>
-  <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
+  <MigUnit Name="\<System\>\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
     <Patterns Type="Include">
       <Pattern Type="File" Path="C:\data\* [*]"/>
     </Patterns>
@@ -252,7 +252,7 @@ However, upon testing the migration you notice that all the text files are still
   </MigUnit>
 </MigUnitList>
 <Perform Name="Gather" User="System">
-  <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)">
+  <MigUnit Name="\<System\>\DATA1 (CMXEAgent)">
     <Operation Name="Store" Type="File" Path="C:\data" SimObj="false" Success="true"/>
     <Operation Name="Store" Type="File" Path="C:\data [test (1).txt]" SimObj="false" Success="true"/>
     <Operation Name="Store" Type="File" Path="C:\data [test.docx]" SimObj="false" Success="true"/>
@@ -299,7 +299,7 @@ Your revised migration XML script excludes the files from migrating, as confirme
 
 ```xml
 <MigUnitList>
-  <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
+  <MigUnit Name="\<System\>\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
     <Patterns Type="Include">
       <Pattern Type="File" Path="C:\data\* [*]"/>
     </Patterns>
@@ -309,7 +309,7 @@ Your revised migration XML script excludes the files from migrating, as confirme
   </MigUnit>
 </MigUnitList>
 <Perform Name="Gather" User="System">
-  <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)">
+  <MigUnit Name="\<System\>\DATA1 (CMXEAgent)">
     <Operation Name="Store" Type="File" Path="C:\data" SimObj="false" Success="true"/>
     <Operation Name="Store" Type="File" Path="C:\data [test.docx]" SimObj="false" Success="true"/>
     <Operation Name="Store" Type="File" Path="C:\data\New Folder" SimObj="false" Success="true"/>

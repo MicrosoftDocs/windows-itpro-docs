@@ -53,7 +53,7 @@ The following table defines the supported combination of online and offline oper
 |Running Operating System|Offline Operating System|
 |---|---|
 |Currently supported version of WinPE, with the MSXML library|Windows 7, Windows 8, Windows 10, Windows 11|
-|Windows 7, Windows 8, Windows 10, Windows 11|Windows.old directory|
+|Windows 10, Windows 11|Windows.old directory|
 
 > [!NOTE]
 >
@@ -61,7 +61,7 @@ The following table defines the supported combination of online and offline oper
 
 ## User-group membership and profile control
 
-User-group membership isn't preserved during offline migrations. You must configure a **&lt;ProfileControl&gt;** section in the `Config.xml` file to specify the groups that the migrated users should be made members of. The following example places all migrated users into the Users group:
+User-group membership isn't preserved during offline migrations. You must configure a **\<ProfileControl\>** section in the `Config.xml` file to specify the groups that the migrated users should be made members of. The following example places all migrated users into the Users group:
 
 ```xml
 <Configuration>
@@ -87,9 +87,9 @@ An offline migration can either be enabled by using a configuration file on the 
 
 |Component|Option|Description|
 |--- |--- |--- |
-|*ScanState.exe*|**/offline:***&lt;path to Offline.xml&gt;*|This command-line option enables the offline-migration mode and requires a path to an Offline.xml configuration file.|
-|*ScanState.exe*|**/offlineWinDir:***&lt;Windows directory&gt;*|This command-line option enables the offline-migration mode and starts the migration from the location specified. It's only for use in WinPE offline scenarios where the migration is occurring from a Windows directory.|
-|*ScanState.exe*|**/OfflineWinOld:***&lt;Windows.old directory&gt;*|This command-line option enables the offline migration mode and starts the migration from the location specified. Only use in Windows.old migration scenarios, where the migration is occurring from a Windows.old directory.|
+|*ScanState.exe*|**/offline:***\<path to Offline.xml\>*|This command-line option enables the offline-migration mode and requires a path to an Offline.xml configuration file.|
+|*ScanState.exe*|**/offlineWinDir:***\<Windows directory\>*|This command-line option enables the offline-migration mode and starts the migration from the location specified. It's only for use in WinPE offline scenarios where the migration is occurring from a Windows directory.|
+|*ScanState.exe*|**/OfflineWinOld:***\<Windows.old directory\>*|This command-line option enables the offline migration mode and starts the migration from the location specified. Only use in Windows.old migration scenarios, where the migration is occurring from a Windows.old directory.|
 
 You can use only one of the `/offline`, `/offlineWinDir`, or `/OfflineWinOld` command-line options at a time. USMT doesn't support using more than one together.
 
@@ -106,7 +106,7 @@ System environment variables are necessary in the scenarios outlined in the foll
 
 Use an `Offline.xml` file when running the ScanState tool on a computer that has multiple Windows directories. The `Offline.xml` file specifies which directories to scan for windows files. An `Offline.xml` file can be used with the `/offline` option as an alternative to specifying a single Windows directory path with the `/offlineDir` option.
 
-### &lt;offline&gt;
+### \<offline\>
 
 This element contains other elements that define how an offline migration is to be performed.
 
@@ -116,9 +116,9 @@ Syntax:
 <offline> </offline>
 ```
 
-### &lt;winDir&gt;
+### \<winDir\>
 
-This element is a required child of **&lt;offline&gt;** and contains information about how the offline volume can be selected. The migration is performed from the first element of **&lt;winDir&gt;** that contains a valid Windows system volume.
+This element is a required child of **\<offline\>** and contains information about how the offline volume can be selected. The migration is performed from the first element of **\<winDir\>** that contains a valid Windows system volume.
 
 Syntax:
 
@@ -126,9 +126,9 @@ Syntax:
 <winDir> </winDir>
 ```
 
-### &lt;path&gt;
+### \<path\>
 
-This element is a required child of **&lt;winDir&gt;** and contains a file path pointing to a valid Windows directory. Relative paths are interpreted from the ScanState tool's working directory.
+This element is a required child of **\<winDir\>** and contains a file path pointing to a valid Windows directory. Relative paths are interpreted from the ScanState tool's working directory.
 
 Syntax:
 
@@ -136,7 +136,7 @@ Syntax:
 <path> C:\Windows </path>
 ```
 
-or when used with the **&lt;mappings&gt;** element:
+or when used with the **\<mappings\>** element:
 
 Syntax:
 
@@ -144,9 +144,9 @@ Syntax:
 <path> C:\, D:\ </path>
 ```
 
-### &lt;mappings&gt;
+### \<mappings\>
 
-This element is an optional child of **&lt;offline&gt;**. When specified, the **&lt;mappings&gt;** element overrides the automatically detected WinPE drive mappings. Each child **&lt;path&gt;** element provides a mapping from one system volume to another. Additionally, mappings between folders can be provided, since an entire volume can be mounted to a specific folder.
+This element is an optional child of **\<offline\>**. When specified, the **\<mappings\>** element overrides the automatically detected WinPE drive mappings. Each child **\<path\>** element provides a mapping from one system volume to another. Additionally, mappings between folders can be provided, since an entire volume can be mounted to a specific folder.
 
 Syntax:
 
@@ -154,9 +154,9 @@ Syntax:
 <mappings> </mappings>
 ```
 
-### &lt;failOnMultipleWinDir&gt;
+### \<failOnMultipleWinDir\>
 
-This element is an optional child of **&lt;offline&gt;**. The **&lt;failOnMultipleWinDir&gt;** element allows the user to specify that the migration should fail when USMT detects that there are multiple instances of Windows installed on the source machine. When the **&lt;failOnMultipleWinDir&gt;** element isn't present, the default behavior is that the migration doesn't fail.
+This element is an optional child of **\<offline\>**. The **\<failOnMultipleWinDir\>** element allows the user to specify that the migration should fail when USMT detects that there are multiple instances of Windows installed on the source machine. When the **\<failOnMultipleWinDir\>** element isn't present, the default behavior is that the migration doesn't fail.
 
 Syntax:
 

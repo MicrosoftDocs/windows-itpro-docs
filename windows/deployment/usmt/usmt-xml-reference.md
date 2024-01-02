@@ -1,18 +1,18 @@
 ---
-title: USMT XML Reference (Windows 10)
-description: Learn about working with and customizing the migration XML files using User State Migration Tool (USMT) XML Reference for Windows 10.
+title: USMT XML Reference
+description: Learn about working with and customizing the migration XML files using User State Migration Tool (USMT) XML Reference for Windows.
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 12/30/2023
 ms.topic: article
 ms.technology: itpro-deploy
 ---
 
 # USMT XML reference
 
-This section contains articles that you can use to work with and to customize the migration XML files.
+This section contains articles that can be used to work with and to customize the migration XML files.
 
 ## In this section
 

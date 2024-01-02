@@ -28,13 +28,13 @@ Before you modify the **.xml** files, become familiar with the following guideli
 
 - **Required elements**.
 
-    The required elements for a migration **.xml** file are **&lt;migration&gt;**, **&lt;component&gt;**, **&lt;role&gt;**, and **&lt;rules&gt;**.
+    The required elements for a migration **.xml** file are **\<migration\>**, **\<component\>**, **\<role\>**, and **\<rules\>**.
 
 - **Required child elements**.
 
   - USMT doesn't fail with an error if you don't specify the required child elements. However, you must specify the required child elements for the parent element to affect the migration.
 
-  - The required child elements apply only to the first definition of the element. If these elements are defined and then referred to using their name, the required child elements don't apply. For example, if you define `<detects name="Example">` in **&lt;namedElements&gt;**, and you specify `<detects name="Example"/>` in **&lt;component&gt;** to refer to this element, the definition inside **&lt;namedElements&gt;** must have the required child elements, but the **&lt;component&gt;** element doesn't need to have the required child elements.
+  - The required child elements apply only to the first definition of the element. If these elements are defined and then referred to using their name, the required child elements don't apply. For example, if you define `<detects name="Example">` in **\<namedElements\>**, and you specify `<detects name="Example"/>` in **\<component\>** to refer to this element, the definition inside **\<namedElements\>** must have the required child elements, but the **\<component\>** element doesn't need to have the required child elements.
 
 - **File names with brackets**.
 

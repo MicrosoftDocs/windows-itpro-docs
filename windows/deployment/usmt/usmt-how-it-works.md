@@ -50,17 +50,17 @@ When you run the **ScanState** tool on the source computer, it goes through the 
 
     1. Each component that is selected in the previous step is processed further. Any profile-specific variables (such as **CSIDL_PERSONAL**) are evaluated in the context of the current profile. For example, if the profile that is being processed belongs to **User1**, then **CSIDL_PERSONAL** would expand to `C:\Users\User1\Documents`, assuming that the user profiles are stored in the `C:\Users` directory.
 
-    1. For each selected component, **ScanState** evaluates the **&lt;detects&gt;** section. If the condition in the **&lt;detects&gt;** section evaluates to false, the component isn't processed any further. Otherwise, the processing of this component continues.
+    1. For each selected component, **ScanState** evaluates the **\<detects\>** section. If the condition in the **\<detects\>** section evaluates to false, the component isn't processed any further. Otherwise, the processing of this component continues.
 
-    1. For each selected component, **ScanState** evaluates the **&lt;rules&gt;** sections. For each **&lt;rules&gt;** section, if the current user profile is the system profile and the context of the **&lt;rules&gt;** section is **System** or **UserAndSystem**, the rule is processed further. Otherwise, this rule is ignored. Alternatively, if the current user profile isn't the system profile and the context of the **&lt;rules&gt;** section is **User** or **UserAndSystem**, the rule is processed further. Otherwise, this rule is ignored.
+    1. For each selected component, **ScanState** evaluates the **\<rules\>** sections. For each **\<rules\>** section, if the current user profile is the system profile and the context of the **\<rules\>** section is **System** or **UserAndSystem**, the rule is processed further. Otherwise, this rule is ignored. Alternatively, if the current user profile isn't the system profile and the context of the **\<rules\>** section is **User** or **UserAndSystem**, the rule is processed further. Otherwise, this rule is ignored.
 
-    1. **ScanState** creates a list of migration units that need to be migrated by processing the various subsections under this **&lt;rules&gt;** section. Each unit is collected if the unit is mentioned in an **&lt;include&gt;** subsection, as long as there isn't a more specific rule for it in an **&lt;exclude&gt;** subsection in the same **&lt;rules&gt;** section. For more information about precedence in the **.xml** files, see [Conflicts and precedence](usmt-conflicts-and-precedence.md).
+    1. **ScanState** creates a list of migration units that need to be migrated by processing the various subsections under this **\<rules\>** section. Each unit is collected if the unit is mentioned in an **\<include\>** subsection, as long as there isn't a more specific rule for it in an **\<exclude\>** subsection in the same **\<rules\>** section. For more information about precedence in the **.xml** files, see [Conflicts and precedence](usmt-conflicts-and-precedence.md).
 
-        In addition, any migration unit (such as a file, registry key, or set of registry values) that is in an &lt;UnconditionalExclude&gt; section isn't migrated.
+        In addition, any migration unit (such as a file, registry key, or set of registry values) that is in an \<UnconditionalExclude\> section isn't migrated.
 
         > [!NOTE]
         >
-        > **ScanState** ignores some subsections such as &lt;destinationCleanup&gt; and &lt;locationModify&gt;. These sections are evaluated only on the destination computer.
+        > **ScanState** ignores some subsections such as \<destinationCleanup\> and \<locationModify\>. These sections are evaluated only on the destination computer.
 
 1. In the **Collecting** phase, **ScanState** creates a central list of the migration units by combining the lists that were created for each selected user profile.
 
@@ -102,21 +102,21 @@ The **LoadState** process is similar to the **ScanState** process. The **ScanSta
 
        > [!NOTE]
        >
-       > **LoadState** ignores the **&lt;detects&gt;** section specified in a component. At this point, all specified components are considered to be detected and are selected for migration.
+       > **LoadState** ignores the **\<detects\>** section specified in a component. At this point, all specified components are considered to be detected and are selected for migration.
 
-   1. For each selected component, **LoadState** evaluates the **&lt;rules&gt;** sections. For each **&lt;rules&gt;** section, if the current user profile is the system profile and the context of the **&lt;rules&gt;** section is **System** or **UserAndSystem**, the rule is processed further. Otherwise, this rule is ignored. Alternatively, if the current user profile isn't the system profile and the context of the **&lt;rules&gt;** section is **User** or **UserAndSystem**, the rule is processed further. Otherwise, this rule is ignored.
+   1. For each selected component, **LoadState** evaluates the **\<rules\>** sections. For each **\<rules\>** section, if the current user profile is the system profile and the context of the **\<rules\>** section is **System** or **UserAndSystem**, the rule is processed further. Otherwise, this rule is ignored. Alternatively, if the current user profile isn't the system profile and the context of the **\<rules\>** section is **User** or **UserAndSystem**, the rule is processed further. Otherwise, this rule is ignored.
 
-   1. **LoadState** creates a central list of migration units by processing the various subsections under the **&lt;rules&gt;** section. Each migration unit that is in an **&lt;include&gt;** subsection is migrated as long, as there isn't a more specific rule for it in an **&lt;exclude&gt;** subsection in the same **&lt;rules&gt;** section. For more information about precedence, see [Conflicts and precedence](usmt-conflicts-and-precedence.md).
+   1. **LoadState** creates a central list of migration units by processing the various subsections under the **\<rules\>** section. Each migration unit that is in an **\<include\>** subsection is migrated as long, as there isn't a more specific rule for it in an **\<exclude\>** subsection in the same **\<rules\>** section. For more information about precedence, see [Conflicts and precedence](usmt-conflicts-and-precedence.md).
 
-   1. **LoadState** evaluates the destination computer-specific subsections, for example, the **&lt;destinationCleanup&gt;** and **&lt;locationModify&gt;** subsections.
+   1. **LoadState** evaluates the destination computer-specific subsections, for example, the **\<destinationCleanup\>** and **\<locationModify\>** subsections.
 
    1. If the destination computer is running a currently supported version of Windows, then the migunits that were collected by **ScanState** using downlevel manifest files are processed by **LoadState** using the corresponding Component Manifest from the downlevel Windows version. The downlevel manifest files aren't used during **LoadState**.
 
        > [!IMPORTANT]
        >
-       > It's important to specify the **.xml** files with the `LoadState.exe` command if you want **LoadState** to use them. Otherwise, any destination-specific rules, such as **&lt;locationModify&gt;**, in these **.xml** files are ignored, even if the same **.xml** files were provided when the `ScanState.exe` command ran.
+       > It's important to specify the **.xml** files with the `LoadState.exe` command if you want **LoadState** to use them. Otherwise, any destination-specific rules, such as **\<locationModify\>**, in these **.xml** files are ignored, even if the same **.xml** files were provided when the `ScanState.exe` command ran.
 
-1. In the **Apply** phase, **LoadState** writes the migration units that were collected to the various locations on the destination computer. If there are conflicts and there isn't a **&lt;merge&gt;** rule for the object, the default behavior for the registry is for the source to overwrite the destination. The default behavior for files is for the source to be renamed incrementally, for example, OriginalFileName(1).OriginalExtension. Some settings, such as fonts, wallpaper, and screen-saver settings, don't take effect until the next time the user logs on. For this reason, you should sign out when the `LoadState.exe` command actions are finished.
+1. In the **Apply** phase, **LoadState** writes the migration units that were collected to the various locations on the destination computer. If there are conflicts and there isn't a **\<merge\>** rule for the object, the default behavior for the registry is for the source to overwrite the destination. The default behavior for files is for the source to be renamed incrementally, for example, OriginalFileName(1).OriginalExtension. Some settings, such as fonts, wallpaper, and screen-saver settings, don't take effect until the next time the user logs on. For this reason, you should sign out when the `LoadState.exe` command actions are finished.
 
 ## Related articles
 

@@ -18,7 +18,7 @@ ms.technology: itpro-deploy
 
 - Microsoft Visual Studio
 
-  - You can use the User State Migration Tool (USMT) XML schema (the `MigXML.xsd` file) to validate the migration .xml files using an XML authoring tool such as Microsoft® Visual Studio®.
+  - You can use the User State Migration Tool (USMT) XML schema (the `MigXML.xsd` file) to validate the migration **.xml** files using an XML authoring tool such as Microsoft® Visual Studio®.
   
     For more information about how to use the schema with your XML authoring environment, see the environment's documentation.
 

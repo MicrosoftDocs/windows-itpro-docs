@@ -86,9 +86,9 @@ As the authorized administrator, it is your responsibility to protect the privac
 
     If you used a particular set of mig\*.xml files in the ScanState tool, either called through the `/auto` option, or individually through the `/i` option, then you should use same option to call the exact same mig\*.xml files in the LoadState tool.
 
-- **The &lt;CustomFileName&gt; in the migration urlid should match the name of the file**
+- **The \<CustomFileName\> in the migration urlid should match the name of the file**
 
-    Although it isn't a requirement, it's good practice for **&lt;CustomFileName&gt;** to match the name of the file. For example, the following example is from the `MigApp.xml` file:
+    Although it isn't a requirement, it's good practice for **\<CustomFileName\>** to match the name of the file. For example, the following example is from the `MigApp.xml` file:
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -103,9 +103,9 @@ As the authorized administrator, it is your responsibility to protect the privac
 
     To create a custom **.xml** file, you can use the migration **.xml** files as models to create your own. If you need to migrate user data files, model your custom **.xml** file on `MigUser.xml`. To migrate application settings, model your custom **.xml** file on the `MigApp.xml` file.
 
-- **Consider the impact on performance when using the &lt;context&gt; parameter**
+- **Consider the impact on performance when using the \<context\> parameter**
 
-    Your migration performance can be affected when you use the **&lt;context&gt;** element with the **&lt;component&gt;** element; for example, as in when you want to encapsulate logical units of file- or path-based **&lt;include&gt;** and **&lt;exclude&gt;** rules.
+    Your migration performance can be affected when you use the **\<context\>** element with the **\<component\>** element; for example, as in when you want to encapsulate logical units of file- or path-based **\<include\>** and **\<exclude\>** rules.
 
     In the **User** context, a rule is processed one time for each user on the system.
 

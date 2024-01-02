@@ -26,11 +26,11 @@ For more information about using the `Config.xml` file with other migration file
 
 ## Migration Policies
 
-In USMT, there are migration policies that can be configured in the `Config.xml` file. For example, you can configure **&lt;ErrorControl&gt;**, **&lt;ProfileControl&gt;**, and **&lt;HardLinkStoreControl&gt;** options. The following elements and parameters are for use in the `Config.xml` file only.
+In USMT, there are migration policies that can be configured in the `Config.xml` file. For example, you can configure **\<ErrorControl\>**, **\<ProfileControl\>**, and **\<HardLinkStoreControl\>** options. The following elements and parameters are for use in the `Config.xml` file only.
 
-### &lt;Policies&gt;
+### \<Policies\>
 
-The **&lt;Policies&gt;** element contains elements that describe the policies that USMT follows while creating a migration store. Valid children of the **&lt;Policies&gt;** element are **&lt;ErrorControl&gt;** and **&lt;HardLinkStoreControl&gt;**. The **&lt;Policies&gt;** element is a child of **&lt;Configuration&gt;**.
+The **\<Policies\>** element contains elements that describe the policies that USMT follows while creating a migration store. Valid children of the **\<Policies\>** element are **\<ErrorControl\>** and **\<HardLinkStoreControl\>**. The **\<Policies\>** element is a child of **\<Configuration\>**.
 
 Syntax:
 
@@ -38,15 +38,15 @@ Syntax:
 <Policies> </Policies>
 ```
 
-### &lt;ErrorControl&gt;
+### \<ErrorControl\>
 
-The **&lt;ErrorControl&gt;** element is an optional element you can configure in the `Config.xml` file. The configurable **&lt;ErrorControl&gt;** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
+The **\<ErrorControl\>** element is an optional element you can configure in the `Config.xml` file. The configurable **\<ErrorControl\>** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
 
 - **Number of occurrences**: Once for each component
 
-- **Parent elements**: The **&lt;Policies&gt;** element
+- **Parent elements**: The **\<Policies\>** element
 
-- **Child elements**: The **&lt;fileError&gt;** and **&lt;registryError&gt;** element
+- **Child elements**: The **\<fileError\>** and **\<registryError\>** element
 
 Syntax:
 
@@ -54,9 +54,9 @@ Syntax:
 <ErrorControl> </ErrorControl>
 ```
 
-The following example specifies that all locked files, regardless of their location (including files in C:\\Users), should be ignored. However, the migration fails if any file in C:\\Users can't be accessed because of any other reason. In the following example, the **&lt;ErrorControl&gt;** element ignores any problems in migrating registry keys that match the supplied pattern, and it resolves them to an **Access denied** error.
+The following example specifies that all locked files, regardless of their location (including files in C:\\Users), should be ignored. However, the migration fails if any file in C:\\Users can't be accessed because of any other reason. In the following example, the **\<ErrorControl\>** element ignores any problems in migrating registry keys that match the supplied pattern, and it resolves them to an **Access denied** error.
 
-Additionally, the order in the **&lt;ErrorControl&gt;** section implies priority. In this example, the first **&lt;nonFatal&gt;** tag takes precedence over the second **&lt;fatal&gt;** tag. This precedence is applied, regardless of how many tags are listed.
+Additionally, the order in the **\<ErrorControl\>** section implies priority. In this example, the first **\<nonFatal\>** tag takes precedence over the second **\<fatal\>** tag. This precedence is applied, regardless of how many tags are listed.
 
 ```xml
 <ErrorControl>
@@ -72,15 +72,15 @@ Additionally, the order in the **&lt;ErrorControl&gt;** section implies priority
 
 > [!IMPORTANT]
 >
-> The configurable **&lt;ErrorControl&gt;** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
+> The configurable **\<ErrorControl\>** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
 
-### &lt;fatal&gt;
+### \<fatal\>
 
-The **&lt;fatal&gt;** element isn't required.
+The **\<fatal\>** element isn't required.
 
 - **Number of occurrences**: Once for each component
 
-- **Parent elements**: **&lt;fileError&gt;** and **&lt;registryError&gt;**
+- **Parent elements**: **\<fileError\>** and **\<registryError\>**
 
 - **Child elements**: None.
 
@@ -94,17 +94,17 @@ Syntax:
 |--- |--- |--- |
 |errorCode|No|"any" or "*specify system error message here*"|
 
-You use the **&lt;fatal&gt;** element to specify that errors matching a specific pattern should cause USMT to halt the migration.
+You use the **\<fatal\>** element to specify that errors matching a specific pattern should cause USMT to halt the migration.
 
-### &lt;fileError&gt;
+### \<fileError\>
 
-The **&lt;fileError&gt;** element isn't required.
+The **\<fileError\>** element isn't required.
 
 - **Number of occurrences**: Once for each component
 
-- **Parent elements**: **&lt;ErrorControl&gt;**
+- **Parent elements**: **\<ErrorControl\>**
 
-- **Child elements**: **&lt;nonFatal&gt;** and **&lt;fatal&gt;**
+- **Child elements**: **\<nonFatal\>** and **\<fatal\>**
 
 Syntax:
 
@@ -112,15 +112,15 @@ Syntax:
 <fileError> </fileError>
 ```
 
-You use the **&lt;fileError&gt;** element to represent the behavior associated with file errors.
+You use the **\<fileError\>** element to represent the behavior associated with file errors.
 
-### &lt;nonFatal&gt;
+### \<nonFatal\>
 
-The **&lt;nonFatal&gt;** element isn't required.
+The **\<nonFatal\>** element isn't required.
 
 - **Number of occurrences**: Once for each component
 
-- **Parent elements**: The **&lt;fileError&gt;** and **&lt;registryError&gt;** elements.
+- **Parent elements**: The **\<fileError\>** and **\<registryError\>** elements.
 
 - **Child elements**: None.
 
@@ -132,19 +132,19 @@ Syntax:
 
 |Parameter|Required|Value|
 |--- |--- |--- |
-|**&lt;errorCode&gt;**|No|"any" or "*specify system error message*". If system error messages aren't specified, the default behavior applies the parameter to all system error messages.|
+|**\<errorCode\>**|No|"any" or "*specify system error message*". If system error messages aren't specified, the default behavior applies the parameter to all system error messages.|
 
-You use the **&lt;nonFatal&gt;** element to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
+You use the **\<nonFatal\>** element to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
 
-### &lt;registryError&gt;
+### \<registryError\>
 
-The **&lt;registryError&gt;** element isn't required.
+The **\<registryError\>** element isn't required.
 
 - **Number of occurrences**: Once for each component
 
-- **Parent elements**: **&lt;ErrorControl&gt;**
+- **Parent elements**: **\<ErrorControl\>**
 
-- **Child elements**: **&lt;nonfatal&gt;** and **&lt;fatal&gt;**
+- **Child elements**: **\<nonfatal\>** and **\<fatal\>**
 
 Syntax:
 
@@ -154,13 +154,13 @@ Syntax:
 
 |Parameter|Required|Value|
 |--- |--- |--- |
-|**&lt;errorCode&gt;**|No|"any" or "*specify system error message here*". If system error messages aren't specified, the default behavior applies the parameter to all system error messages.|
+|**\<errorCode\>**|No|"any" or "*specify system error message here*". If system error messages aren't specified, the default behavior applies the parameter to all system error messages.|
 
-You use the **&lt;registryError&gt;** element to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
+You use the **\<registryError\>** element to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
 
-### &lt;HardLinkStoreControl&gt;
+### \<HardLinkStoreControl\>
 
-The **&lt;HardLinkStoreControl&gt;** element contains elements that describe how to handle files during the creation of a hard-link migration store. Its only valid child is **&lt;fileLocked&gt;**.
+The **\<HardLinkStoreControl\>** element contains elements that describe how to handle files during the creation of a hard-link migration store. Its only valid child is **\<fileLocked\>**.
 
 Syntax:
 
@@ -170,9 +170,9 @@ Syntax:
 
 - **Number of occurrences**: Once for each component
 
-- **Parent elements**: **&lt;Policies&gt;**
+- **Parent elements**: **\<Policies\>**
 
-- **Child elements**: **&lt;fileLocked&gt;**
+- **Child elements**: **\<fileLocked\>**
 
 Syntax:
 
@@ -180,11 +180,11 @@ Syntax:
 <HardLinkStoreControl> </HardLinkStoreControl>
 ```
 
-The following **&lt;HardLinkStoreControl&gt;** sample code specifies that hard links can be created to locked files only if the locked file resides somewhere under C:\\Users\\. Otherwise, a file-access error occurs when a locked file is encountered that can't be copied, even though is technically possible for the link to be created.
+The following **\<HardLinkStoreControl\>** sample code specifies that hard links can be created to locked files only if the locked file resides somewhere under C:\\Users\\. Otherwise, a file-access error occurs when a locked file is encountered that can't be copied, even though is technically possible for the link to be created.
 
 > [!IMPORTANT]
 >
-> The **&lt;ErrorControl&gt;** section can be configured to conditionally ignore file access errors, based on the file's location.
+> The **\<ErrorControl\>** section can be configured to conditionally ignore file access errors, based on the file's location.
 
 ```xml
 <Policy>
@@ -200,9 +200,9 @@ The following **&lt;HardLinkStoreControl&gt;** sample code specifies that hard l
 </Policy>
 ```
 
-### &lt;fileLocked&gt;
+### \<fileLocked\>
 
-The **&lt;fileLocked&gt;** element contains elements that describe how to handle files that are locked for editing. The rules defined by the **&lt;fileLocked&gt;** element are processed in the order in which they appear in the XML file.
+The **\<fileLocked\>** element contains elements that describe how to handle files that are locked for editing. The rules defined by the **\<fileLocked\>** element are processed in the order in which they appear in the XML file.
 
 Syntax:
 
@@ -210,9 +210,9 @@ Syntax:
 <fileLocked> </fileLocked>
 ```
 
-### &lt;createHardLink&gt;
+### \<createHardLink\>
 
-The **&lt;createHardLink&gt;** element defines a standard MigXML pattern that describes file paths where hard links should be created, even if the file is locked for editing by another application.
+The **\<createHardLink\>** element defines a standard MigXML pattern that describes file paths where hard links should be created, even if the file is locked for editing by another application.
 
 Syntax:
 
@@ -220,9 +220,9 @@ Syntax:
 <createHardLink> <specify pattern here> </createHardLink>
 ```
 
-### &lt;errorHardLink&gt;
+### \<errorHardLink\>
 
-The **&lt;errorHardLink&gt;** element defines a standard MigXML pattern that describes file paths where hard links shouldn't be created if the file is locked for editing by another application. USMT attempts to copy files under these paths into the migration store. However, if that isn't possible, **Error\_Locked** is thrown. This error is a standard Windows application programming interface (API) error that can be captured by the **&lt;ErrorControl&gt;** section to either cause USMT to skip the file or abort the migration.
+The **\<errorHardLink\>** element defines a standard MigXML pattern that describes file paths where hard links shouldn't be created if the file is locked for editing by another application. USMT attempts to copy files under these paths into the migration store. However, if that isn't possible, **Error\_Locked** is thrown. This error is a standard Windows application programming interface (API) error that can be captured by the **\<ErrorControl\>** section to either cause USMT to skip the file or abort the migration.
 
 Syntax:
 
@@ -230,9 +230,9 @@ Syntax:
 <errorHardLink> <specify pattern here> </errorHardLink>
 ```
 
-### &lt;ProfileControl&gt;
+### \<ProfileControl\>
 
-This element is used to contain other elements that establish rules for migrating profiles, users, and policies around local group membership during the migration. **&lt;ProfileMigration&gt;** is a child of **&lt;Configuration&gt;**.
+This element is used to contain other elements that establish rules for migrating profiles, users, and policies around local group membership during the migration. **\<ProfileMigration\>** is a child of **\<Configuration\>**.
 
 Syntax:
 
@@ -240,9 +240,9 @@ Syntax:
 <ProfileControl> </ProfileControl>
 ```
 
-### &lt;localGroups&gt;
+### \<localGroups\>
 
-This element is used to contain other elements that establish rules for how to migrate local groups. **&lt;localGroups&gt;** is a child of **&lt;ProfileControl&gt;**.
+This element is used to contain other elements that establish rules for how to migrate local groups. **\<localGroups\>** is a child of **\<ProfileControl\>**.
 
 Syntax:
 
@@ -250,7 +250,7 @@ Syntax:
 <localGroups> </localGroups>
 ```
 
-### &lt;mappings&gt;
+### \<mappings\>
 
 This element is used to contain other elements that establish mappings between groups.
 
@@ -260,9 +260,9 @@ Syntax:
 <mappings> </mappings>
 ```
 
-### &lt;changeGroup&gt;
+### \<changeGroup\>
 
-This element describes the source and destination groups for a local group membership change during the migration. It's a child of **&lt;localGroups&gt;**. The following parameters are defined:
+This element describes the source and destination groups for a local group membership change during the migration. It's a child of **\<localGroups\>**. The following parameters are defined:
 
 |Parameter|Required|Value|
 |--- |--- |--- |
@@ -270,7 +270,7 @@ This element describes the source and destination groups for a local group membe
 |To|Yes|A local group that the users are to be moved to during the migration.|
 |appliesTo|Yes|nonmigratedUsers, migratedUsers, AllUsers. This value defines which users the change group operation should apply to.|
 
-The valid and required children of **&lt;changeGroup&gt;** are **&lt;include&gt;** and **&lt;exclude&gt;**. Although both can be children at the same time, only one is required.
+The valid and required children of **\<changeGroup\>** are **\<include\>** and **\<exclude\>**. Although both can be children at the same time, only one is required.
 
 Syntax:
 
@@ -278,9 +278,9 @@ Syntax:
 <changeGroup From="Group1" To= "Group2"> </changeGroup>
 ```
 
-### &lt;include&gt;
+### \<include\>
 
-This element specifies that its required child, *&lt;pattern&gt;*, should be included in the migration.
+This element specifies that its required child, *\<pattern\>*, should be included in the migration.
 
 Syntax:
 
@@ -288,9 +288,9 @@ Syntax:
 <include> </include>
 ```
 
-### &lt;exclude&gt;
+### \<exclude\>
 
-This element specifies that its required child, *&lt;pattern&gt;*, should be excluded from the migration.
+This element specifies that its required child, *\<pattern\>*, should be excluded from the migration.
 
 Syntax:
 

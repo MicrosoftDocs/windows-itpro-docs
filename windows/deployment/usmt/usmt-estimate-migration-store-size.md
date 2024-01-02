@@ -50,7 +50,7 @@ To run the ScanState tool on the source computer with USMT installed:
     cd /d "C:\Program Files (x86)\Windows Kits\10.0\Assessment and Deployment Kit\User State Migration Tool\<architecture>"
     ```
 
-    where *&lt;architecture&gt;* is x86 or amd64.
+    where *\<architecture\>* is x86 or amd64.
 
 1. Run the **ScanState** tool to generate an XML report of the space requirements. At the command prompt, enter:
 
@@ -60,8 +60,8 @@ To run the ScanState tool on the source computer with USMT installed:
 
     Where:
 
-    - *&lt;StorePath&gt;* is a path to a directory where the migration store is saved.
-    - *&lt;path to a file&gt;* is the path and filename where the XML report for space requirements is saved.
+    - *\<StorePath\>* is a path to a directory where the migration store is saved.
+    - *\<path to a file\>* is the path and filename where the XML report for space requirements is saved.
 
     For example:
 
@@ -69,7 +69,7 @@ To run the ScanState tool on the source computer with USMT installed:
     ScanState.exe c:\store /p:c:\spaceRequirements.xml
     ```
 
-    Although a migration store isn't created by running this command, the *&lt;StorePath&gt;* is still a required parameter.
+    Although a migration store isn't created by running this command, the *\<StorePath\>* is still a required parameter.
 
 The ScanState tool also allows you to estimate disk space requirements based on a customized migration. For example, you might not want to migrate the My Documents folder to the destination computer. You can specify this condition in a configuration file when you run the ScanState tool. For more information, see [Customize USMT XML files](usmt-customize-xml-files.md).
 
@@ -77,7 +77,7 @@ The ScanState tool also allows you to estimate disk space requirements based on 
 >
 > To preserve the functionality of existing applications or scripts that require the previous behavior of USMT, the `/p` option is still available in USMT without having to specify the path to a file. For more information, see [Monitoring Options](usmt-scanstate-syntax.md#monitoring-options).
 
-The space requirements report provides two elements, &lt;**storeSize**&gt; and &lt;**temporarySpace**&gt;. The &lt;**temporarySpace**&gt; value shows the disk space, in bytes, that USMT uses to operate during the migration but it doesn't include the minimum 250 MB needed to support USMT. The &lt;**storeSize**&gt; value shows the disk space, in bytes, required to host the migration store contents on both the source and destination computers. The following example shows a report generated using `/p:`*&lt;path to a file&gt;*.
+The space requirements report provides two elements, \<**storeSize**\> and \<**temporarySpace**\>. The \<**temporarySpace**\> value shows the disk space, in bytes, that USMT uses to operate during the migration but it doesn't include the minimum 250 MB needed to support USMT. The \<**storeSize**\> value shows the disk space, in bytes, required to host the migration store contents on both the source and destination computers. The following example shows a report generated using `/p:`*\<path to a file\>*.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

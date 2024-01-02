@@ -171,13 +171,13 @@ The following examples show how to migrate a file from a specific folder, and ho
     </migration>
     ```
 
-- **To migrate a file from any location.** To migrate the `Sample.doc` file from any location on the `C:\` drive, use the **&lt;pattern&gt;** element, as the following example shows. If multiple files exist with the same name on the `C:\` drive, all of files with this name are migrated.
+- **To migrate a file from any location.** To migrate the `Sample.doc` file from any location on the `C:\` drive, use the **\<pattern\>** element, as the following example shows. If multiple files exist with the same name on the `C:\` drive, all of files with this name are migrated.
 
     ```xml
     <pattern type="File"> C:\* [Sample.doc] </pattern>
     ```
 
-    To migrate the Sample.doc file from any drive on the computer, use &lt;script&gt; as the following example shows. If multiple files exist with the same name, all files with this name are migrated.
+    To migrate the Sample.doc file from any drive on the computer, use \<script\> as the following example shows. If multiple files exist with the same name, all files with this name are migrated.
 
     ```xml
     <script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script>
