@@ -58,7 +58,15 @@ For more information about how Microsoft Entra Kerberos works with Windows Hello
 
 ## Configure Windows Hello for Business policy settings
 
-After setting up the Microsoft Entra Kerberos object, Windows Hello for business must be enabled and configured to use the cloud Kerberos trust. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
+After setting up the Microsoft Entra Kerberos object, Windows Hello for business must be enabled and configured to use cloud Kerberos trust. There are 2 policy settings required to configure Windows Hello for Business in a cloud Kerberos trust model:
+
+- [Use Windows Hello for Business](../policy-settings.md#use-windows-hello-for-business)
+- [use-cloud-trust-for-on-premises-authentication](../policy-settings.md#use-cloud-trust-for-on-premises-authentication)
+
+> [!IMPORTANT]
+> If the **Use certificate for on-premises authentication** policy is enabled, certificate trust takes precedence over cloud Kerberos trust. Ensure that the machines that you want to enable cloud Kerberos trust have this policy **not configured**.
+
+Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 
 # [:::image type="icon" source="images/intune.svg"::: **Intune/CSP**](#tab/intune)
 
@@ -82,8 +90,6 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 |--------|
 | - **OMA-URI:** `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/UsePassportForWork`<br>- **Data type:** `bool`<br>- **Value:** `True`|
 | - **OMA-URI:** `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/UseCloudTrustForOnPremAuth`<br>- **Data type:** `bool`<br>- **Value:** `True`|
-
-For more information about the cloud Kerberos trust policy, see [Windows Hello for Business policy settings](../policy-settings.md#use-cloud-trust-for-on-premises-authentication).
 
 # [:::image type="icon" source="images/group-policy.svg"::: **GPO**](#tab/gpo)
 
@@ -117,9 +123,6 @@ For more information about the cloud Kerberos trust policy, see [Windows Hello f
 If you deploy Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](../configure.md#policy-conflicts-from-multiple-policy-sources).
 
 Additional policy settings can be configured to control the behavior of Windows Hello for Business. For more information, see [Windows Hello for Business policy settings](../policy-settings.md).
-
-> [!IMPORTANT]
-> If the **Use certificate for on-premises authentication** policy is enabled, certificate trust takes precedence over cloud Kerberos trust. Ensure that the machines that you want to enable cloud Kerberos trust have this policy **not configured**.
 
 ## Enroll in Windows Hello for Business
 
@@ -188,4 +191,3 @@ The following scenarios aren't supported using Windows Hello for Business cloud 
 [MEM-1]: /mem/intune/configuration/custom-settings-configure
 [SERV-1]: /windows-server/administration/performance-tuning/role/active-directory-server/capacity-planning-for-active-directory-domain-services
 [TS-1]: /troubleshoot/windows-client/group-policy/create-and-manage-central-store
-

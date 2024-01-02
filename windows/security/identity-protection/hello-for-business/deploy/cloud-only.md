@@ -32,12 +32,53 @@ When you Microsoft Entra join a device, the system attempts to automatically enr
 
 Cloud-only deployments use Microsoft Entra multifactor authentication (MFA) during Windows Hello for Business enrollment, and there's no additional MFA configuration needed. If you aren't already registered in MFA, you'll be guided through the MFA registration as part of the Windows Hello for Business enrollment process.
 
-Policy settings can be configured to control the behavior of Windows Hello for Business, via configuration service provider (CSP) or group policy (GPO). In cloud-only deployments, devices are typically configured via an MDM solution like Microsoft Intune, using the [PassportForWork CSP][WIN-1].
+Policy settings can be configured to control the behavior of Windows Hello for Business, via configuration service provider (CSP) or group policy (GPO). In cloud-only deployments, devices are 
+typically configured via an MDM solution like Microsoft Intune, using the [PassportForWork CSP][WIN-1].
+
+> [!NOTE]
+> Review the article [Configure Windows Hello for Business using Microsoft Intune](../configure.md#configure-windows-hello-for-business-using-microsoft-intune) to learn about the different options offered by Microsoft Intune to configure Windows Hello for Business.
+
+If the Intune tenant-wide policy is configured to disable Windows Hello for Business, or if devices are deployed with Windows Hello disabled, tThere's one policy setting required to enable Windows Hello for Business in a cloud-only trust model:
+
+- [Use Windows Hello for Business](../policy-settings.md#use-windows-hello-for-business)
+
+Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
+
+# [:::image type="icon" source="images/intune.svg"::: **Intune/CSP**](#tab/intune)
+
+[!INCLUDE [intune-settings-catalog-1](../../../../../includes/configure/intune-settings-catalog-1.md)]
+
+| Category | Setting name | Value |
+|--|--|--|
+| **Windows Hello for Business** | Use Passport For Work | true |
+
+[!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
+
+Alternatively, you can configure devices using a [custom policy][MEM-1] with the [PassportForWork CSP][CSP-1].
+
+| Setting |
+|--------|
+| - **OMA-URI:** `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/UsePassportForWork`<br>- **Data type:** `bool`<br>- **Value:** `True`|
+
+# [:::image type="icon" source="images/group-policy.svg"::: **GPO**](#tab/gpo)
+
+To configure a device with group policy, use the [Local Group Policy Editor](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc731745(v=ws.10)).
+
+| Group policy path | Group policy setting | Value |
+| - | - | - |
+| **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**<br>or<br> **User Configuration\Administrative Templates\Windows Components\Windows Hello for Business**|Use Windows Hello for Business| **Enabled**|
+| **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business** |Use a hardware security device| **Enabled**|
+
+> [!NOTE]
+> The enablement of the *Use a hardware security device* policy setting is optional, but recommended.
+
+---
+
 
 > [!TIP]
 > If you're using Microsoft Intune, and you're not using the [tenant-wide policy](../configure.md#verify-the-tenant-wide-policy), enable the Enrollment Status Page (ESP) to ensure that the devices receive the Windows Hello for Business policy settings before users can access their desktop. For more information about ESP, see [Set up the Enrollment Status Page][MEM-1].
 
-For a list of settings to configure Windows Hello for Business, see [Windows Hello for Business policy settings](../policy-settings.md).
+Additional policy settings can be configured to control the behavior of Windows Hello for Business. For more information, see [Windows Hello for Business policy settings](../policy-settings.md).
 
 ## Enroll in Windows Hello for Business
 
