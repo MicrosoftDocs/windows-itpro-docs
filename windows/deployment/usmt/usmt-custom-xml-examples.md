@@ -1,6 +1,6 @@
 ---
 title: Custom XML Examples
-description: Use custom XML examples to learn how to migrate an unsupported application, migrate files and registry keys, and migrate the My Videos folder.
+description: Use custom XML examples to learn how to migrate an unsupported application, migrate files and registry keys, and migrate the Videos folder.
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
@@ -89,19 +89,19 @@ The following template is a template for the sections that you need to migrate y
 
 ## Example 2: Migrating the My Videos folder
 
-The following sample is a custom **.xml** file named `CustomFile.xml` that migrates **My Videos** for all users, if the folder exists on the source computer.
+The following sample is a custom **.xml** file named `CustomFile.xml` that migrates the **Videos** folder for all users, if the folder exists on the source computer.
 
-- **Sample condition**: Verifies that **My Videos** exists on the source computer:
+- **Sample condition**: Verifies that the **Videos** folder exists on the source computer:
 
   `<condition>MigXmlHelper.DoesObjectExist("File","%CSIDL_MYVIDEO%")</condition>`
 
-- **Sample filter**: Filters out the shortcuts in **My Videos** that don't resolve on the destination computer:
+- **Sample filter**: Filters out the shortcuts in the **Videos** folder that don't resolve on the destination computer:
 
   `<include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>`
 
-  This filter has no effect on files that aren't shortcuts. For example, if there's a shortcut in **My Videos** on the source computer that points to `C:\Folder1`, that shortcut is migrated only if `C:\Folder1` exists on the destination computer. However, all other files, such as .mp3 files, migrate without any filtering.
+  This filter has no effect on files that aren't shortcuts. For example, if there's a shortcut in the **Videos** folder on the source computer that points to `C:\Folder1`, that shortcut is migrated only if `C:\Folder1` exists on the destination computer. However, all other files, such as .mp3 files, migrate without any filtering.
 
-- **Sample pattern**: Migrates **My Videos** for all users:
+- **Sample pattern**: Migrates the **Videos** folder for all users:
 
   `<pattern type="File">%CSIDL_MYVIDEO%* [*]</pattern>`
 

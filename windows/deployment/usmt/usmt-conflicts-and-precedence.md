@@ -68,7 +68,7 @@ The following **.xml** file migrates all files from C:\\Userdocs, including .mp3
 
 ### How does precedence work with the Config.xml file?
 
-Specifying `migrate="no"` in the `Config.xml` file is the same as deleting the corresponding component from the migration **.xml** file. However, if you set `migrate="no"` for My Documents, but you have a rule similar to the one shown below in a migration **.xml** file (which includes all of the .doc files from My Documents), then only the .doc files will be migrated, and all other files will be excluded.
+Specifying `migrate="no"` in the `Config.xml` file is the same as deleting the corresponding component from the migration **.xml** file. However, if you set `migrate="no"` for the **Documents** folder, but you have a rule similar to the one shown below in a migration **.xml** file (which includes all of the .doc files from the **Documents** folder), then only the .doc files will be migrated, and all other files will be excluded.
 
 ```xml
 <include>

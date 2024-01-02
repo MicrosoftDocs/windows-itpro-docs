@@ -82,7 +82,7 @@ Next, go through the user interface and make a list of all of the available sett
 
 ## Step 3: Identify how to apply the gathered settings
 
-If the version of the application on the source computer is the same as the one on the destination computer, then the collected files and registry keys don't need to be modified. By default, USMT migrates the files and registry keys from the source location to the corresponding location on the destination computer. For example, if a file was collected from the `C:\Documents and Settings\User1\My Documents` folder and the profile directory on the destination computer is located at `D:\Users\User1`, then USMT automatically migrates the file to `D:\Users\User1\My Documents`. However, the location of some settings might need to be modified in the following three cases:
+If the version of the application on the source computer is the same as the one on the destination computer, then the collected files and registry keys don't need to be modified. By default, USMT migrates the files and registry keys from the source location to the corresponding location on the destination computer. For example, if a file was collected from the `C:\Users\User1\Documents` folder and the profile directory on the destination computer is located at `D:\Users\User1`, then USMT automatically migrates the file to `D:\Users\User1\Documents`. However, the location of some settings might need to be modified in the following three cases:
 
 ### Case 1: The version of the application on the destination computer is newer than the one on the source computer
 

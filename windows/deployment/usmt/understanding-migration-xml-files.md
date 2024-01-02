@@ -217,7 +217,7 @@ To generate the XML migration rules file for a source computer:
 
     ```cmd
     cd /d c:\USMT
-    ScanState.exe /genmigxml:"C:\Documents and Settings\USMT Tester\Desktop\genMig.xml"
+    ScanState.exe /genmigxml:"C:\Users\USMT Tester\Desktop\genMig.xml"
     ```
 
 ### The GenerateDocPatterns function

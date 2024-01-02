@@ -58,7 +58,7 @@ By doing this process, you don't need to save the files to a server.
 
 > [!IMPORTANT]
 >
-> If possible, have users store their data within their `%UserProfile%\My Documents` and `%UserProfile%\Application Data` folders. Having users store their data at these locations reduces the chance of USMT missing critical user data that is located in a directory that USMT isn't configured to check.
+> If possible, have users store their data within their `%UserProfile%\Documents` and `%UserProfile%\Application Data` folders. Having users store their data at these locations reduces the chance of USMT missing critical user data that is located in a directory that USMT isn't configured to check.
 
 ### The /localonly command-line option
 

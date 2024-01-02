@@ -1035,7 +1035,7 @@ Example:
 
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/miguser">
-<!-- This component migrates My Video files -->
+<!-- This component migrates the files in the Video folder -->
    <component type="System" context="System">
       <displayName>System Data</displayName>
          <role role="Data">
@@ -1507,9 +1507,9 @@ These functions control how collisions are resolved.
     ```xml
     <merge script="MigXmlHelper.DestinationPriority()">
          <objectSet>
-              <pattern type="Registry">HKCU\Software\Microsoft\Office\9.0\PhotoDraw\ [MyPictures]</pattern>
-              <pattern type="Registry">HKCU\Software\Microsoft\Office\9.0\PhotoDraw\Settings\ [PicturesPath]</pattern>
-              <pattern type="Registry">HKCU\Software\Microsoft\Office\9.0\PhotoDraw\Settings\ [AdditionalPlugInPath]</pattern>
+              <pattern type="Registry">HKCU\Software\Microsoft\Office\16.0\PhotoDraw\ [MyPictures]</pattern>
+              <pattern type="Registry">HKCU\Software\Microsoft\Office\16.0\PhotoDraw\Settings\ [PicturesPath]</pattern>
+              <pattern type="Registry">HKCU\Software\Microsoft\Office\16.0\PhotoDraw\Settings\ [AdditionalPlugInPath]</pattern>
          </objectSet>
     </merge>
     ```
@@ -2017,13 +2017,13 @@ These functions return either a string or a pattern.
 
 - **GenerateUserPatterns**
 
-  The `GenerateUserPatterns` function iterates through all users that are being migrated, excluding the currently processed user if **\<ProcessCurrentUser\>** is **FALSE**, and expands the specified pattern in the context of each user. For example, if users A, B, and C have profiles in `C:\Documents and Settings`, by calling `GenerateUserPattens('File','%userprofile% [*.doc]','TRUE')`, the helper function generates the following three patterns:
+  The `GenerateUserPatterns` function iterates through all users that are being migrated, excluding the currently processed user if **\<ProcessCurrentUser\>** is **FALSE**, and expands the specified pattern in the context of each user. For example, if users A, B, and C have profiles in `C:\Users`, by calling `GenerateUserPattens('File','%userprofile% [*.doc]','TRUE')`, the helper function generates the following three patterns:
 
-  - "C:\\Documents and Settings\\A\\\* \[\*.doc\]"
+  - "C:\\Users\\A\\\* \[\*.doc\]"
 
-  - "C:\\Documents and Settings\\B\\\* \[\*.doc\]"
+  - "C:\\Users\\B\\\* \[\*.doc\]"
 
-  - "C:\\Documents and Settings\\C\\\* \[\*.doc\]"
+  - "C:\\Users\\C\\\* \[\*.doc\]"
 
   Syntax: `GenerateUserPatterns("ObjectType","EncodedLocationPattern","ProcessCurrentUser")`
 
@@ -2037,7 +2037,7 @@ These functions return either a string or a pattern.
 
 If `GenerateUserPattens('File','%userprofile% [*.doc]','FALSE')` is called while USMT is processing user A, then this function only generates patterns for users B and C. This helper function can be used to build complex rules. For example, to migrate all `.doc` files from the source computer - but if user X isn't migrated, then don't migrate any of the `.doc` files from user X's profile.
 
-The following example is example code for this scenario. The first **\<rules\>** element migrates all `.doc` files on the source computer except for those inside `C:\Documents and Settings`. The second **\<rules\>** elements migrate all `.doc` files from `C:\Documents and Settings` except for the `.doc` files in the profiles of the other users. Because the second **\<rules\>** element is processed in each migrated user context, the end result is the desired behavior. The end result is the one we expected.
+The following example is example code for this scenario. The first **\<rules\>** element migrates all `.doc` files on the source computer except for those inside `C:\Users`. The second **\<rules\>** elements migrate all `.doc` files from `C:\Users` except for the `.doc` files in the profiles of the other users. Because the second **\<rules\>** element is processed in each migrated user context, the end result is the desired behavior. The end result is the one we expected.
 
 ```xml
 <rules context="System">

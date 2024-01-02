@@ -276,7 +276,7 @@ You can create and modify a `Config.xml` file if you want to exclude components 
 
 - **To exclude an operating system setting:** Specify `migrate="no"` for the setting under the **\<WindowsComponents\>** section.
 
-- **To exclude My Documents:** Specify `migrate="no"` for **My Documents** under the **\<Documents\>** section. Any **\<include\>** rules in the **.xml** files are still applied. For example, if you have a rule that includes all the .docx files in My Documents, then .docx files are still migrated. However, any additional files that aren't .docx aren't migrated.
+- **To exclude the Documents folder:** Specify `migrate="no"` for the **Documents** folder under the **\<Documents\>** section. Any **\<include\>** rules in the **.xml** files are still applied. For example, if you have a rule that includes all the .docx files in the **Documents** folder, then .docx files are still migrated. However, any additional files that aren't .docx aren't migrated.
 
 For more information, see [Config.xml File](usmt-configxml-file.md).
 

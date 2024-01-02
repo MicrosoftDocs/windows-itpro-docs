@@ -16,7 +16,7 @@ To reroute files and settings, create a custom **.xml** file and specify the **.
 
 ## Reroute a folder
 
-The following custom **.xml** file migrates the directories and files from `C:\EngineeringDrafts` into the **My Documents** folder of every user. **%CSIDL_PERSONAL%** is the virtual folder representing the **My Documents** desktop item, which is equivalent to **CSIDL_MYDOCUMENTS**.
+The following custom **.xml** file migrates the directories and files from `C:\EngineeringDrafts` into the **Documents** folder of every user. **%CSIDL_PERSONAL%** is the virtual folder representing the **\<User\>** desktop item, which is equivalent to **CSIDL_MYDOCUMENTS**.
 
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
@@ -49,7 +49,7 @@ The following custom **.xml** file reroutes .mp3 files located in the fixed driv
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="System">
-  <displayName>All .mp3 files to My Documents</displayName>
+  <displayName>All .mp3 files to the Documents folder</displayName>
   <role role="Data">
     <rules>
       <include>
@@ -71,12 +71,12 @@ The following custom **.xml** file reroutes .mp3 files located in the fixed driv
 
 ## Reroute a specific file
 
-The following custom **.xml** file migrates the `Sample.doc` file from `C:\EngineeringDrafts` into the **My Documents** folder of every user. **%CSIDL_PERSONAL%** is the virtual folder representing the **My Documents** desktop item, which is equivalent to **CSIDL_MYDOCUMENTS**.
+The following custom **.xml** file migrates the `Sample.doc` file from `C:\EngineeringDrafts` into the **Documents** folder of every user. **%CSIDL_PERSONAL%** is the virtual folder representing the **\<User\>** desktop item, which is equivalent to **CSIDL_MYDOCUMENTS**.
 
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="User">
-<displayName>Sample.doc into My Documents</displayName>
+<displayName>Sample.doc into the Documents folder</displayName>
     <role role="Data">
       <rules>
         <include> 

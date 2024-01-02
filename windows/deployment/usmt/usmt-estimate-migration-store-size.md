@@ -71,7 +71,7 @@ To run the ScanState tool on the source computer with USMT installed:
 
     Although a migration store isn't created by running this command, the *\<StorePath\>* is still a required parameter.
 
-The ScanState tool also allows you to estimate disk space requirements based on a customized migration. For example, you might not want to migrate the My Documents folder to the destination computer. You can specify this condition in a configuration file when you run the ScanState tool. For more information, see [Customize USMT XML files](usmt-customize-xml-files.md).
+The ScanState tool also allows you to estimate disk space requirements based on a customized migration. For example, you might not want to migrate the **Documents** folder to the destination computer. You can specify this condition in a configuration file when you run the ScanState tool. For more information, see [Customize USMT XML files](usmt-customize-xml-files.md).
 
 > [!NOTE]
 >

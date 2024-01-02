@@ -128,7 +128,7 @@ The following **.xml** file migrates `.mp3` files located in the specified drive
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="System">
-  <displayName>All .mp3 files to My Documents</displayName>
+  <displayName>All .mp3 files to the Documents folder</displayName>
   <role role="Data">
     <rules>
       <include>

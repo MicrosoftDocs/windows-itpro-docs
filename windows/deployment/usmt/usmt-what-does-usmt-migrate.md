@@ -33,15 +33,15 @@ The User State Migration Tool (USMT) is designed so that an IT engineer can prec
 
 This section describes the user data that USMT migrates by default, using the `MigUser.xml` file. It also defines how to migrate access control lists (ACLs).
 
-- **Folders from each user profile.** When the `MigUser.xml` file is specified, USMT migrates everything in a user's profiles including the following items:
+- **Folders from each user profile.** When the `MigUser.xml` file is specified, USMT migrates everything in a user's profiles including the following folder items:
 
-  - My Documents.
+  - Documents.
 
-  - My Video.
+  - Videos.
 
-  - My Music.
+  - Music.
 
-  - My Pictures.
+  - Pictures.
 
   - Desktop files.
 
@@ -109,7 +109,13 @@ USMT migrates operating-system components to a destination computer. The followi
 
 - Fonts.
 
-- Group membership. USMT migrates users' group settings. The groups to which a user belongs can be found by right-clicking **My Computer** on the Start menu and then selecting **Manage**. The use of a **\<ProfileControl\>** section in the `Config.xml` file is required when running an offline migration.
+- Group membership. USMT migrates users' group settings. To view what groups a user belongs to:
+
+  1. Right-clicking on the Start menu and then selecting **Computer Management**.
+  1. In the **Computer Management** console, expand **System tools** > **Local Users and Groups** > **Groups**.
+  1. Inspect the individual groups in the results pane to see what users belong to what groups.
+  
+  The use of a **\<ProfileControl\>** section in the `Config.xml` file is required when running an offline migration.
 
 - Windows Internet Explorer® settings. **¹**
 
@@ -196,7 +202,7 @@ USMT doesn't migrate the following operating-system settings.
 
 Also note the following items:
 
-- Run USMT from an account with administrative credentials. Otherwise, some data doesn't migrate. When running the **ScanState** and **LoadState** tools, the tools must be run in Administrator mode from an account with administrative credentials. If USMT isn't run in Administrator mode, only the user profile that is logged on is included in the migration.
+- Run USMT from an account with administrative credentials. Otherwise, some data doesn't migrate. When the **ScanState** and **LoadState** tools are run, the tools must be run in Administrator mode from an account with administrative credentials. If USMT isn't run in Administrator mode, only the user profile that is logged on is included in the migration.
 
 - Use the `/localonly` option to exclude the data from removable drives and network drives mapped on the source computer. For more information about what is excluded when `/localonly` is specified, see [ScanState syntax](usmt-scanstate-syntax.md).
 
