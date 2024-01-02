@@ -5,9 +5,12 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 12/06/2023
+ms.date: 01/02/2024
 ms.topic: article
 ms.technology: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # USMT best practices
@@ -38,11 +41,11 @@ This article discusses general and security-related best practices when using Us
 
 - **Managed environment.**
 
-  To create a managed environment, you can move all of the end user's documents into **Documents** folder (%CSIDL\_PERSONAL%). We recommend that you migrate files into the smallest-possible number of folders on the destination computer. Minimizing folders helps to clean up files on the destination computer if the `LoadState.exe` command fails before completion.
+  To create a managed environment, you can move all of the end user's documents into **Documents** folder (%CSIDL\_PERSONAL%). Microsoft recommends that you migrate files into the smallest-possible number of folders on the destination computer. Minimizing folders helps to clean up files on the destination computer if the `LoadState.exe` command fails before completion.
 
 - **Chkdsk.exe.**
 
-  We recommend that you run **Chkdsk.exe** before running the ScanState and LoadState tools. **Chkdsk.exe** creates a status report for a hard disk drive and lists and corrects common errors. For more information about the **Chkdsk.exe** tool, see [Chkdsk](/previous-versions/windows/it-pro/windows-xp/bb490876(v=technet.10)).
+  Microsoft recommends that you run **Chkdsk.exe** before running the ScanState and LoadState tools. **Chkdsk.exe** creates a status report for a hard disk drive and lists and corrects common errors. For more information about the **Chkdsk.exe** tool, see [Chkdsk](/previous-versions/windows/it-pro/windows-xp/bb490876(v=technet.10)).
 
 - **Migrate in groups.**
 
@@ -66,11 +69,11 @@ As the authorized administrator, it is your responsibility to protect the privac
 
 - **Virus Scan.**
 
-  We recommend that you scan both the source and destination computers for viruses before running USMT. In addition, you should scan the destination computer image. To help protect data from viruses, we strongly recommend running an antivirus utility before migration.
+  Microsoft recommends that you scan both the source and destination computers for viruses before running USMT. In addition, you should scan the destination computer image. To help protect data from viruses, Microsoft strongly recommends running an antivirus utility before migration.
 
 - **Maintain security of the file server and the deployment server.**
 
-  We recommend that you manage the security of the file and deployment servers. It's important to make sure that the file server where you save the store is secure. You must also secure the deployment server, to ensure that the user data that is in the log files isn't exposed. We also recommend that you only transmit data over a secure Internet connection, such as a virtual private network. For more information about network security, see [Microsoft Security Compliance Manager](https://www.microsoft.com/download/details.aspx?id=53353).
+  Microsoft recommends that you manage the security of the file and deployment servers. It's important to make sure that the file server where you save the store is secure. You must also secure the deployment server, to ensure that the user data that is in the log files isn't exposed. Microsoft also recommends that you only transmit data over a secure Internet connection, such as a virtual private network. For more information about network security, see [Microsoft Security Compliance Manager](https://www.microsoft.com/download/details.aspx?id=53353).
 
 - **Password Migration.**
 
@@ -117,7 +120,7 @@ As the authorized administrator, it is your responsibility to protect the privac
   >
   > The number of times a rule is processed doesn't affect the number of times a file is migrated. The USMT migration engine ensures that each file migrates only once.
 
-- **We recommend that you create a separate .xml file instead of adding your .xml code to one of the existing migration .xml files.**
+- **Microsoft recommends that you create a separate .xml file instead of adding your .xml code to one of the existing migration .xml files.**
 
   For example, if you have code that migrates the settings for an application, you shouldn't just add the code to the `MigApp.xml` file.
 

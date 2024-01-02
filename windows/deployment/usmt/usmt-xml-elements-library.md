@@ -5,9 +5,12 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 12/29/2023
+ms.date: 01/02/2024
 ms.topic: article
 ms.technology: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # XML elements library
@@ -1240,7 +1243,7 @@ The following functions return a Boolean value. They can be used to migrate cert
 
 - **IgnoreIrrelevantLinks**
 
-    This filter screens out the .lnk files that point to an object that isn't valid on the destination computer. The screening takes place on the destination computer, so all .lnk files are saved to the store during **ScanState**. Then they're screened out when the **LoadState** tool runs.
+    This filter screens out the **.lnk** files that point to an object that isn't valid on the destination computer. The screening takes place on the destination computer, so all **.lnk** files are saved to the store during **ScanState**. Then they're screened out when the **LoadState** tool runs.
 
     Syntax: `IgnoreIrrelevantLinks ()`
 
@@ -1597,7 +1600,7 @@ This filter helper function can be used to filter the migration of files based o
 |--- |--- |
 |Property|filesize, dateCreated, dateModified, dateAccessed|
 |Operator|range, neq, lte, lt, eq, gte, gt|
-|valueToCompare|The value that is being compared. For example: <br>Date: "2008/05/15-2005/05/17", "2008/05/15" <br>Size: A numeral with B, KB, MB, or GB at the end. "5GB", "1KB-1MB"|
+|valueToCompare|The value that is being compared. For example: <br>Date: "2023/05/15-2020/05/17", "2023/05/15" <br>Size: A numeral with B, KB, MB, or GB at the end. "5GB", "1KB-1MB"|
 
 ```xml
 <component context="System"  type="Application">
@@ -1605,7 +1608,7 @@ This filter helper function can be used to filter the migration of files based o
 <role role="Data">
 
    <rules>
-        <include filter='MigXmlHelper.FileProperties("dateAccessed","range","2008/05/15-2008/05/17")'>
+        <include filter='MigXmlHelper.FileProperties("dateAccessed","range","2023/05/15-2020/05/17")'>
          <objectSet>
          <pattern type="File">%SYSTEMDRIVE%\DOCS\* [*]</pattern>
          </objectSet>
@@ -1831,7 +1834,7 @@ Syntax:
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-| role | Yes | Defines the role for the component. Role can be one of: <ul><li>**Container**</li><li>**Binaries**</li><li>**Settings**</li><li>**Data**</li></ul> One of the following items can be specified: <ol><li>Up to three **\<role\>** elements within a **\<component\>** - one "Binaries" role element, one "Settings" role element and one "Data" role element. These parameters don't change the migration behavior - their only purpose is to help categorize the settings that are migrating. These **\<role\>** elements can be nested, but each nested element must be of the same role parameter.</li><li>One "Container" **\<role\>** element within a **\<component\>** element. In this case, any child **\<rules\>** elements can't be specified, only other **\<component\>** elements. And each child **\<component\>** element must have the same type as that of parent **\<component\>** element. For example:</li></ol> <pre class="syntax"><code>\<component context="UserAndSystem" type="Application"\> <br>  \<displayName _locID="migapp.msoffice2016"\>Microsoft Office 2016\</displayName\> <br>  \<environment name="GlobalEnv" /\> <br>  \<role role="Container"\><br>    \<detection name="AnyOffice2016Version" /\> <br>    \<detection name="Word2016" /\> <br>    \<!-- <br> Office 2003 Common Settings <br>  --\> <br>     \<component context="UserAndSystem" type="Application"\></code></pre> |
+| role | Yes | Defines the role for the component. Role can be one of: <ul><li>**Container**</li><li>**Binaries**</li><li>**Settings**</li><li>**Data**</li></ul> One of the following items can be specified: <ol><li>Up to three **\<role\>** elements within a **\<component\>** - one "Binaries" role element, one "Settings" role element and one "Data" role element. These parameters don't change the migration behavior - their only purpose is to help categorize the settings that are migrating. These **\<role\>** elements can be nested, but each nested element must be of the same role parameter.</li><li>One "Container" **\<role\>** element within a **\<component\>** element. In this case, any child **\<rules\>** elements can't be specified, only other **\<component\>** elements. And each child **\<component\>** element must have the same type as that of parent **\<component\>** element. For example:</li></ol> <pre class="syntax"><code>\<component context="UserAndSystem" type="Application"\> <br>  \<displayName _locID="migapp.msoffice2016"\>Microsoft Office 2016\</displayName\> <br>  \<environment name="GlobalEnv" /\> <br>  \<role role="Container"\><br>    \<detection name="AnyOffice2016Version" /\> <br>    \<detection name="Word2016" /\> <br>    \<!-- <br> Office 2016 Common Settings <br>  --\> <br>     \<component context="UserAndSystem" type="Application"\></code></pre> |
 
 The following example is from the MigUser.xml file. For more examples, see the `MigApp.xml` file:
 
@@ -1990,7 +1993,7 @@ These functions return either a string or a pattern.
 
     |Setting|Required?|Value|
     |--- |--- |--- |
-    | *ObjectType* | Yes | The type of object. Can be Registry or Ini (for an .ini file). |
+    | *ObjectType* | Yes | The type of object. Can be Registry or Ini (for an **.ini** file). |
     | *EncodedLocationPattern* | Yes | <ul><li>If type of object is Registry, EncodedLocationPattern must be a valid registry path. For example, `HKLM\SOFTWARE\MyKey[]`.</li><li>If the type of object is Ini, then EncodedLocationPattern must be in the following format: <br>**IniFilePath&#124;SectionName[SettingName]**</li></ul> |
     | *ExpandContent* | No (default=TRUE) | Can be **TRUE** or **FALSE**. If **FALSE**, then the given location isn't expanded before returned. |
 
@@ -2072,7 +2075,7 @@ The `MigXmlHelper.GenerateDocPatterns` helper function invokes the document find
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-|*ScanProgramFiles*|No (default = FALSE)|Can be **TRUE** or **FALSE**. The *ScanProgramFiles* parameter determines whether or not the document finder scans the **Program Files** directory to gather registered file extensions for known applications. For example, when set to **TRUE** it discovers and migrates .jpg files under the Photoshop directory, if `.jpg` is a file extension registered to Photoshop.|
+|*ScanProgramFiles*|No (default = FALSE)|Can be **TRUE** or **FALSE**. The *ScanProgramFiles* parameter determines whether or not the document finder scans the **Program Files** directory to gather registered file extensions for known applications. For example, when set to **TRUE** it discovers and migrates **.jpg** files under the Photoshop directory, if `.jpg` is a file extension registered to Photoshop.|
 |*IncludePatterns*|No (default = TRUE)|Can be **TRUE** or **FALSE**. **TRUE** generates include patterns and can be added under the **\<include\>** element. **FALSE** generates exclude patterns and can be added under the **\<exclude\>** element.|
 |*SystemDrive*|No (default = FALSE)|Can be **TRUE** or **FALSE**. If **TRUE**, restricts all patterns to the system drive.|
 

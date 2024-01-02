@@ -5,9 +5,12 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 12/23/2023
+ms.date: 01/02/2024
 ms.topic: article
 ms.technology: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Common Migration Scenarios
@@ -60,9 +63,9 @@ A company receives funds to update the operating system on all of its computers 
 
 ### Scenario Four: PC-refresh using Windows.old folder and a hard-link migration store
 
-A company decides to update the operating system on all of its computers to the latest supported version of Windows. Each employee keeps the same computer, but the operating system on each computer will be updated. In this scenario, an administrator uses Windows.old and a hard-link migration store to save each user state to their respective computer.
+A company decides to update the operating system on all of its computers to the latest supported version of Windows. Each employee keeps the same computer, but the operating system on each computer will be updated. In this scenario, an administrator uses **Windows.old** and a hard-link migration store to save each user state to their respective computer.
 
-1. The administrator clean installs the latest supported version of Windows on each computer. During the install, they make sure that the Windows.old directory is created by taking the following actions:
+1. The administrator clean installs the latest supported version of Windows on each computer. During the install, they make sure that the **Windows.old** directory is created by taking the following actions:
 
     - Performing the install without formatting or repartitioning the disk.
     - Selecting a partition that contains the previous version of Windows.

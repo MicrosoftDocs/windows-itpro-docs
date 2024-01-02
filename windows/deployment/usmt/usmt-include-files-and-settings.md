@@ -5,14 +5,17 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 12/21/2023
+ms.date: 01/02/2024
 ms.topic: article
 ms.technology: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Include Files and Settings
 
-When you specify the migration **.xml** files, User State Migration Tool (USMT) migrates the settings and components specified in [What does USMT migrate?](usmt-what-does-usmt-migrate.md). To include additional files and settings, we recommend that you create a custom **.xml** file, and then include this file when using both the `ScanState.exe` and `LoadState.exe` commands. By creating a custom **.xml** file, you can keep your changes separate from the default **.xml** files. Creating a custom **.xml** file makes it easier to track modifications.
+When you specify the migration **.xml** files, User State Migration Tool (USMT) migrates the settings and components specified in [What does USMT migrate?](usmt-what-does-usmt-migrate.md). To include additional files and settings, Microsoft recommends that you create a custom **.xml** file, and then include this file when using both the `ScanState.exe` and `LoadState.exe` commands. By creating a custom **.xml** file, you can keep your changes separate from the default **.xml** files. Creating a custom **.xml** file makes it easier to track modifications.
 
 ## Migrate a single registry key
 

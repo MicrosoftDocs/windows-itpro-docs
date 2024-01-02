@@ -8,7 +8,10 @@ author: frankroj
 ms.topic: article
 ms.localizationpriority: medium
 ms.technology: itpro-deploy
-ms.date: 12/21/2023
+ms.date: 01/02/2024
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Identify users

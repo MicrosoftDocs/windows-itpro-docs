@@ -5,9 +5,12 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 12/22/2023
+ms.date: 01/02/2024
 ms.topic: article
 ms.technology: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # User State Migration Tool (USMT) technical reference
@@ -34,7 +37,7 @@ USMT tools can be used on several versions of Windows operating systems. For mor
 
 ## USMT support for Microsoft Office
 
-USMT in the currently supported versions of the Windows ADK supports migration of user settings for installations of Microsoft Office 2003, 2007, 2010, 2013, and 2016.
+USMT in the currently supported versions of the Windows ADK supports migration of user settings for installations of Microsoft Office 2013 and 2016.
 
 ## In this section
 

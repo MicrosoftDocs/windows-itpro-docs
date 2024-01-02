@@ -5,9 +5,12 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 12/20/2023
+ms.date: 01/02/2024
 ms.topic: article
 ms.technology: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Customize USMT XML files
@@ -24,7 +27,7 @@ USMT doesn't reroute the files, and they're migrated to `C:\data`.
 
 To modify the migration, do one or more of the following.
 
-- **Modify the migration .xml files.** If you want to exclude a portion of a component, modify the **.xml** files. For example, to migrate C:\\ but exclude all of the .mp3 files, or to move data to a new location on the destination computer. To modify these files, you must be familiar with the migration rules and syntax. If you want ScanState and LoadState to use these files, specify them at the command line when each command is entered.
+- **Modify the migration .xml files.** If you want to exclude a portion of a component, modify the **.xml** files. For example, to migrate C:\\ but exclude all of the **.mp3** files, or to move data to a new location on the destination computer. To modify these files, you must be familiar with the migration rules and syntax. If you want ScanState and LoadState to use these files, specify them at the command line when each command is entered.
 
 - **Create a custom .xml file.** You can also create a custom **.xml** file to migrate settings for another application, or to change the migration behavior to suit your needs. For ScanState and LoadState to use this file, specify them on both command lines.
 

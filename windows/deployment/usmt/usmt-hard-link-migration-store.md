@@ -5,9 +5,12 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 12/20/2023
+ms.date: 01/02/2024
 ms.topic: article
 ms.technology: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Hard-Link Migration Store
@@ -69,7 +72,7 @@ For example, a company decides to deploy the latest supported version of Windows
 
     > [!NOTE]
     >
-    > As a best practice, we recommend that you do not create your hard-link migration store until just before you perform the migration in order to migrate the latest versions of your files. You should not use your software applications on the computer after creating the migration store until you have finished migrating your files with **LoadState**.
+    > As a best practice, Microsoft recommends that you do not create your hard-link migration store until just before you perform the migration in order to migrate the latest versions of your files. You should not use your software applications on the computer after creating the migration store until you have finished migrating your files with **LoadState**.
 
 1. On each computer, an administrator installs the company's standard operating environment (SOE), which includes the latest supported version of Windows and other applications the company currently uses.
 
@@ -128,7 +131,7 @@ For more information, see [Migrate EFS files and certificates](usmt-migrate-efs-
 
 When an application or the operating system has a lock on a file, the file is handled differently when using a hard-link migration store.
 
-Operating system locked files can't remain in place and must be copied into the hard-link migration store. As a result, selecting many operating-system files for migration significantly reduces performance during a hard-link migration. As a best practice, we recommend that you don't migrate any files out of the `\Windows` directory, which minimizes performance-related issues.
+Operating system locked files can't remain in place and must be copied into the hard-link migration store. As a result, selecting many operating-system files for migration significantly reduces performance during a hard-link migration. As a best practice, Microsoft recommends that you don't migrate any files out of the `\Windows` directory, which minimizes performance-related issues.
 
 Application locked files are treated the same in hard-link migrations as in other scenarios when the volume shadow-copy service isn't being utilized. The volume shadow-copy service can't be used with hard-link migrations. However, by modifying the new **\<HardLinkStoreControl\>** section in the `Config.xml` file, it's possible to enable the migration of files locked by an application.
 

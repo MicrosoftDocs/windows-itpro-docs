@@ -7,7 +7,10 @@ ms.prod: windows-client
 author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
-ms.date: 12/20/2023
+ms.date: 01/02/2024
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Custom XML Examples
@@ -99,7 +102,7 @@ The following sample is a custom **.xml** file named `CustomFile.xml` that migra
 
   `<include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>`
 
-  This filter has no effect on files that aren't shortcuts. For example, if there's a shortcut in the **Videos** folder on the source computer that points to `C:\Folder1`, that shortcut is migrated only if `C:\Folder1` exists on the destination computer. However, all other files, such as .mp3 files, migrate without any filtering.
+  This filter has no effect on files that aren't shortcuts. For example, if there's a shortcut in the **Videos** folder on the source computer that points to `C:\Folder1`, that shortcut is migrated only if `C:\Folder1` exists on the destination computer. However, all other files, such as **.mp3** files, migrate without any filtering.
 
 - **Sample pattern**: Migrates the **Videos** folder for all users:
 

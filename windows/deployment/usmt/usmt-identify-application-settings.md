@@ -5,9 +5,12 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 12/28/2023
+ms.date: 01/02/2024
 ms.topic: article
 ms.technology: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Identify applications settings
@@ -24,7 +27,7 @@ Next, identify an application owner to be in charge of each application. Applica
 
 Next, determine and locate the application settings to be migrated. Much of the information that is needed for this step can be acquired when testing the new applications for compatibility with the new operating system.
 
-After completing the list of applications to be migrated, review the list, and work with each application owner on a list of settings to be migrated. For each setting, determine whether it needs to be migrated or if the default settings are adequate. Then, determine where the setting is located, for example, in the registry or in an .ini file. Next, consider the following questions to determine what needs to be done to migrate the setting successfully:
+After completing the list of applications to be migrated, review the list, and work with each application owner on a list of settings to be migrated. For each setting, determine whether it needs to be migrated or if the default settings are adequate. Then, determine where the setting is located, for example, in the registry or in an **.ini** file. Next, consider the following questions to determine what needs to be done to migrate the setting successfully:
 
 - Is the destination version of the application newer than the source version?
 

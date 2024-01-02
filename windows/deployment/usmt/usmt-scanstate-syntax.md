@@ -8,6 +8,9 @@ author: frankroj
 ms.date: 11/01/2022
 ms.topic: article
 ms.technology: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # ScanState syntax
@@ -66,7 +69,7 @@ To create an encrypted store using the `Config.xml` file and the default migrati
 
 ## Run the ScanState command on an offline Windows system
 
-The `ScanState.exe` command can be run in Windows Preinstallation Environment (WinPE). In addition, USMT supports migrations from previous installations of Windows contained in Windows.old directories. The offline directory can be a Windows directory when the `ScanState.exe` command is run in WinPE or a Windows.old directory when the `ScanState.exe` command is run in Windows.
+The `ScanState.exe` command can be run in Windows Preinstallation Environment (WinPE). In addition, USMT supports migrations from previous installations of Windows contained in **Windows.old** directories. The offline directory can be a Windows directory when the `ScanState.exe` command is run in WinPE or a **Windows.old** directory when the `ScanState.exe` command is run in Windows.
 
 There are several benefits to running the `ScanState.exe` command on an offline Windows image, including:
 
@@ -76,7 +79,7 @@ There are several benefits to running the `ScanState.exe` command on an offline 
 
 - **Simplified end to end deployment process.**
 
-  Migrating data from Windows.old simplifies the end-to-end deployment process by enabling the migration process to occur after the new operating system is installed.
+  Migrating data from **Windows.old** simplifies the end-to-end deployment process by enabling the migration process to occur after the new operating system is installed.
 
 - **Improved success of migration.**
 
@@ -94,7 +97,7 @@ There are several benefits to running the `ScanState.exe` command on an offline 
 |Command-Line Option|Definition|
 |--- |--- |
 |**/offline:** *"path to an Offline.xml file"*|This option is used to define a path to an offline **.xml** file that might specify other offline migration options. For example, an offline Windows directory or any domain or folder redirection required in the migration.|
-|**/offlinewindir:** *"path to a Windows directory"*|This option specifies the offline Windows directory that the `ScanState.exe` command gathers user state from. The offline directory can be Windows.old when the `ScanState.exe` command is run in Windows or a Windows directory when the `ScanState.exe` command is run in WinPE.|
+|**/offlinewindir:** *"path to a Windows directory"*|This option specifies the offline Windows directory that the `ScanState.exe` command gathers user state from. The offline directory can be **Windows.old** when the `ScanState.exe` command is run in Windows or a Windows directory when the `ScanState.exe` command is run in WinPE.|
 |**/offlinewinold:** *"Windows.old directory"*|This command-line option enables the offline migration mode and starts the migration from the location specified. This option is only intended to be used in **Windows.old** migration scenarios, where the migration is occurring from a **Windows.old** directory.|
 
 ## Migration rule options

@@ -5,9 +5,12 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 12/20/2023
+ms.date: 01/02/2024
 ms.topic: article
 ms.technology: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Exclude files and settings
@@ -20,13 +23,13 @@ Methods to customize the migration and include and exclude files and settings in
 
   - [Include and exclude](#include-and-exclude): You can use the **\<include\>** and **\<exclude\>** elements to exclude objects with conditions. For example, you can migrate all files located in the `C:\` drive, except any `.mp3` files. It's important to remember that [Conflicts and precedence](usmt-conflicts-and-precedence.md) apply to these elements.
 
-  - [unconditionalExclude](#example-1-how-to-migrate-all-files-from-c-except-mp3-files): You can use the **\<unconditionalExclude\>** element to globally exclude data. This element takes precedence over all other include and exclude rules in the **.xml** files. Therefore, this element excludes objects regardless of any other **\<include\>** rules that are in the **.xml** files. For example, you can exclude all .mp3 files on the computer, or you can exclude all files from C:\\UserData.
+  - [unconditionalExclude](#example-1-how-to-migrate-all-files-from-c-except-mp3-files): You can use the **\<unconditionalExclude\>** element to globally exclude data. This element takes precedence over all other include and exclude rules in the **.xml** files. Therefore, this element excludes objects regardless of any other **\<include\>** rules that are in the **.xml** files. For example, you can exclude all **.mp3** files on the computer, or you can exclude all files from C:\\UserData.
 
 - [Create a Config.xml file](#create-a-config-xml-file): You can create and modify a `Config.xml` file to exclude an entire component from the migration. For example, you can use this file to exclude the settings for one of the default applications. In addition, creating and modifying a `Config.xml` file is the only way to exclude the operating-system settings that are migrated to computers running Windows. Excluding components using this file is easier than modifying the migration **.xml** files because you don't need to be familiar with the migration rules and syntax.
 
 ## Create a custom .xml file
 
-We recommend that you create a custom **.xml** file instead of modifying the default migration **.xml** files. When you use a custom **.xml** file, you can keep your changes separate from the default **.xml** file, which makes it easier to track your modifications.
+Microsoft recommends that you create a custom **.xml** file instead of modifying the default migration **.xml** files. When you use a custom **.xml** file, you can keep your changes separate from the default **.xml** file, which makes it easier to track your modifications.
 
 ### \<include\> and \<exclude\>
 
@@ -48,7 +51,7 @@ The migration **.xml** files, `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`, co
 
 ### Example 1: How to migrate all files from `C:\` except `.mp3` files
 
-The following **.xml** file migrates all files located on the C: drive, except any .mp3 files.
+The following **.xml** file migrates all files located on the C: drive, except any **.mp3** files.
 
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/mp3files">
@@ -276,7 +279,7 @@ You can create and modify a `Config.xml` file if you want to exclude components 
 
 - **To exclude an operating system setting:** Specify `migrate="no"` for the setting under the **\<WindowsComponents\>** section.
 
-- **To exclude the Documents folder:** Specify `migrate="no"` for the **Documents** folder under the **\<Documents\>** section. Any **\<include\>** rules in the **.xml** files are still applied. For example, if you have a rule that includes all the .docx files in the **Documents** folder, then .docx files are still migrated. However, any additional files that aren't .docx aren't migrated.
+- **To exclude the Documents folder:** Specify `migrate="no"` for the **Documents** folder under the **\<Documents\>** section. Any **\<include\>** rules in the **.xml** files are still applied. For example, if you have a rule that includes all the **.docx** files in the **Documents** folder, then **.docx** files are still migrated. However, any additional files that aren't **.docx** aren't migrated.
 
 For more information, see [Config.xml File](usmt-configxml-file.md).
 

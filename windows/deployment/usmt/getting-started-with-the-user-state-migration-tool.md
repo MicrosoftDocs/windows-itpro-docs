@@ -7,7 +7,10 @@ ms.prod: windows-client
 author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
-ms.date: 12/06/2023
+ms.date: 01/02/2024
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Getting started with the User State Migration Tool (USMT)
@@ -16,7 +19,7 @@ This article outlines the general process to follow to migrate files and setting
 
 ## Step 1: Plan the migration
 
-1. [Plan The Migration](usmt-plan-your-migration.md). Depending on whether the migration scenario is refreshing or replacing computers, an online migration or an offline migration can be chosen. Offline migrations can use either Windows Preinstallation Environment (WinPE) or the files in the Windows.old directory. For more information, see [Common Migration Scenarios](usmt-common-migration-scenarios.md).
+1. [Plan The Migration](usmt-plan-your-migration.md). Depending on whether the migration scenario is refreshing or replacing computers, an online migration or an offline migration can be chosen. Offline migrations can use either Windows Preinstallation Environment (WinPE) or the files in the **Windows.old** directory. For more information, see [Common Migration Scenarios](usmt-common-migration-scenarios.md).
 
 1. [Determine What to Migrate](usmt-determine-what-to-migrate.md). Data to consider migrating includes end-user information, applications settings, operating-system settings, files, folders, and registry keys.
 

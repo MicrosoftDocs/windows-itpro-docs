@@ -5,9 +5,12 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 12/22/2023
+ms.date: 01/02/2024
 ms.topic: article
 ms.technology: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Reroute Files and Settings
@@ -44,7 +47,7 @@ The following custom **.xml** file migrates the directories and files from `C:\E
 
 ## Reroute a specific file type
 
-The following custom **.xml** file reroutes .mp3 files located in the fixed drives on the source computer into the `C:\Music` folder on the destination computer.
+The following custom **.xml** file reroutes **.mp3** files located in the fixed drives on the source computer into the `C:\Music` folder on the destination computer.
 
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">

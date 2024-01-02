@@ -5,9 +5,12 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 12/21/2023
+ms.date: 01/02/2024
 ms.topic: article
 ms.technology: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # LoadState syntax
@@ -18,7 +21,7 @@ The `LoadState.exe` command is used with the User State Migration Tool (USMT) to
 
 Before you run the `LoadState.exe` command, note the following items:
 
-- To ensure that all operating system settings migrate, we recommend that you run the `LoadState.exe` commands in administrator mode from an account with administrative credentials.
+- To ensure that all operating system settings migrate, Microsoft recommends that you run the `LoadState.exe` commands in administrator mode from an account with administrative credentials.
 
 - For information about software requirements for running the `LoadState.exe` command, see [USMT requirements](usmt-requirements.md).
 
@@ -56,7 +59,7 @@ USMT provides the following options that you can use to specify how and where th
 | **/decrypt /key**:*KeyString* <br>or <br>**/decrypt /key**:"*Key String*" <br>or <br>**/decrypt /keyfile**:[*Path*]*FileName* | Decrypts the store with the specified key. With this option, the encryption key needs to be specified in one of the following ways:<ul><li>`/key`:*KeyString* specifies the encryption key. If there's a space in *KeyString*, you must surround the argument with quotation marks (`"`).</li><li>`/keyfile`:*FilePathAndName* specifies a text (`.txt`) file that contains the encryption key</li></ul> <br>*KeyString* can't exceed 256 characters. <br>The `/key` and `/keyfile` options can't be used on the same command line. <br>The `/decrypt` and `/nocompress` options can't be used on the same command line. <br><div class="alert">**Important** <br> Use caution when using the `/key` or `keyfile` options. For example, anyone who has access to scripts that run the `LoadState.exe` command with these options also have access to the encryption key.</div> <br>For example: <br>`LoadState.exe  /i:MigApp.xml /i:MigDocs.xml \server\share\migration\mystore /decrypt /key:mykey` |
 | **/decrypt**:*"encryption strength"* | The `/decrypt` option accepts a command-line parameter to define the encryption strength specified for the migration store encryption. For more information about supported encryption algorithms, see [Migration Store Encryption](usmt-migration-store-encryption.md). |
 | **/hardlink** | Enables user-state data to be restored from a hard-link migration store. The `/nocompress` parameter must be specified with `/hardlink` option. |
-| **/nocompress** | Specifies that the store isn't compressed. You should only use this option in testing environments. We recommend that you use a compressed store during your actual migration. This option can't be used with the `/decrypt` option. <br>For example: <br>`LoadState.exe  /i:MigApp.xml /i:MigDocs.xml \server\share\migration\mystore /nocompress` |
+| **/nocompress** | Specifies that the store isn't compressed. You should only use this option in testing environments. Microsoft recommends that you use a compressed store during your actual migration. This option can't be used with the `/decrypt` option. <br>For example: <br>`LoadState.exe  /i:MigApp.xml /i:MigDocs.xml \server\share\migration\mystore /nocompress` |
 
 ## Migration rule options
 

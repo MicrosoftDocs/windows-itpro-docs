@@ -6,11 +6,14 @@ ms.technology: itpro-deploy
 author: frankroj
 manager: aaroncz
 ms.author: frankroj
-ms.date: 12/06/2023
+ms.date: 01/02/2024
 ms.topic: overview
 ms.collection:
   - highpri
   - tier2
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # User State Migration Tool (USMT) overview
@@ -23,7 +26,7 @@ USMT enables you to do the following actions:
 
 - Fit your customized migration into your automated deployment process by using the **ScanState** and **LoadState** tools, which control collecting and restoring the user files and settings. For more information, see [User State Migration Tool (USMT) command-line syntax](usmt-command-line-syntax.md).
 
-- Perform offline migrations. You can run migrations offline by using the ScanState command in Windows Preinstallation Environment (WinPE) or you can perform migrations from previous installations of Windows contained in Windows.old directories. For more information about migration types, see [Choose a migration store Type](usmt-choose-migration-store-type.md) and [Offline migration reference](offline-migration-reference.md).
+- Perform offline migrations. You can run migrations offline by using the ScanState command in Windows Preinstallation Environment (WinPE) or you can perform migrations from previous installations of Windows contained in **Windows.old** directories. For more information about migration types, see [Choose a migration store Type](usmt-choose-migration-store-type.md) and [Offline migration reference](offline-migration-reference.md).
 
 ## Benefits
 

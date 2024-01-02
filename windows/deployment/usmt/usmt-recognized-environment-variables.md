@@ -6,11 +6,14 @@ ms.technology: itpro-deploy
 manager: aaroncz
 ms.author: frankroj
 author: frankroj
-ms.date: 12/06/2023
+ms.date: 01/02/2024
 ms.topic: conceptual
 ms.collection:
   - highpri
   - tier2
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Recognized environment variables

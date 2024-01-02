@@ -5,9 +5,12 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 12/06/2023
+ms.date: 01/02/2024
 ms.topic: article
 ms.technology: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Offline Migration Reference
@@ -16,11 +19,11 @@ Offline migration enables the ScanState tool to run inside a different Windows o
 
 - **Windows PE.** The ScanState tool can be run from within Windows PE, gathering files and settings from the offline Windows operating system on that machine.
 
-- **Windows.old.** The ScanState tool can gather files and settings from the Windows.old directory. The Windows.old directory is created during Windows installation on a partition that contains a previous installation of Windows. For example, the ScanState tool can run in Windows, gathering files from a previous Windows installation contained in the Windows.old directory.
+- **Windows.old.** The ScanState tool can gather files and settings from the **Windows.old** directory. The **Windows.old** directory is created during Windows installation on a partition that contains a previous installation of Windows. For example, the ScanState tool can run in Windows, gathering files from a previous Windows installation contained in the **Windows.old** directory.
 
 When you use User State Migration Tool (USMT) to gather and restore user state, offline migration reduces the cost of deployment by:
 
-- **Reducing complexity.** In computer-refresh scenarios, migrations from the Windows.old directory reduce complexity by eliminating the need for the ScanState tool to be run before the operating system is deployed. Also, migrations from the Windows.old directory enable ScanState and LoadState to be run successively.
+- **Reducing complexity.** In computer-refresh scenarios, migrations from the **Windows.old** directory reduce complexity by eliminating the need for the ScanState tool to be run before the operating system is deployed. Also, migrations from the **Windows.old** directory enable ScanState and LoadState to be run successively.
 
 - **Improving performance.** When USMT runs in an offline Windows Preinstallation Environment (WinPE) environment, it has better access to the hardware resources. Running USMT in WinPE can increase performance on older machines with limited hardware resources and numerous installed software applications.
 
@@ -53,7 +56,7 @@ The following table defines the supported combination of online and offline oper
 |Running Operating System|Offline Operating System|
 |---|---|
 |Currently supported version of WinPE, with the MSXML library|Windows 7, Windows 8, Windows 10, Windows 11|
-|Windows 10, Windows 11|Windows.old directory|
+|Windows 10, Windows 11|**Windows.old** directory|
 
 > [!NOTE]
 >
@@ -89,7 +92,7 @@ An offline migration can either be enabled by using a configuration file on the 
 |--- |--- |--- |
 |*ScanState.exe*|**/offline:***\<path to Offline.xml\>*|This command-line option enables the offline-migration mode and requires a path to an Offline.xml configuration file.|
 |*ScanState.exe*|**/offlineWinDir:***\<Windows directory\>*|This command-line option enables the offline-migration mode and starts the migration from the location specified. It's only for use in WinPE offline scenarios where the migration is occurring from a Windows directory.|
-|*ScanState.exe*|**/OfflineWinOld:***\<Windows.old directory\>*|This command-line option enables the offline migration mode and starts the migration from the location specified. Only use in Windows.old migration scenarios, where the migration is occurring from a Windows.old directory.|
+|*ScanState.exe*|**/OfflineWinOld:***\<Windows.old directory\>*|This command-line option enables the offline migration mode and starts the migration from the location specified. Only use in **Windows.old** migration scenarios, where the migration is occurring from a **Windows.old** directory.|
 
 You can use only one of the `/offline`, `/offlineWinDir`, or `/OfflineWinOld` command-line options at a time. USMT doesn't support using more than one together.
 

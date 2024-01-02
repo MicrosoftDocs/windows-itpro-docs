@@ -5,9 +5,12 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 12/06/2023
+ms.date: 01/02/2024
 ms.topic: article
 ms.technology: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Migrate Application Settings
@@ -16,7 +19,7 @@ A custom **.xml** file can be created to migrate specific line-of-business appli
 
 This article defines how to author a custom migration **.xml** file that migrates the settings of an application that isn't migrated by default using `MigApp.xml`. The settings should be migrated after the application is installed, but before the user runs the application for the first time.
 
-This article doesn't contain information about how to migrate applications that store settings in an application-specific store, only the applications that store the information in files or in the registry. It also doesn't contain information about how to migrate the data that users create using the application. For example, if the application creates .doc files using a specific template, this article doesn't discuss how to migrate the .doc files and templates themselves.
+This article doesn't contain information about how to migrate applications that store settings in an application-specific store, only the applications that store the information in files or in the registry. It also doesn't contain information about how to migrate the data that users create using the application. For example, if the application creates **.doc** files using a specific template, this article doesn't discuss how to migrate the **.doc** files and templates themselves.
 
 ## Before beginning
 
@@ -113,7 +116,7 @@ After completing steps 1 through 3, create a custom migration **.xml** file that
 
 > [!NOTE]
 >
-> We recommend creating a separate **.xml** file instead of adding a script to the `MigApp.xml` file. A separate **.xml** file is recommended because the `MigApp.xml` file is a large file and it's difficult to read and edit. In addition, if USMT is reinstalled, the `MigApp.xml` file is overwritten with the default version of the file and the customized version is lost.
+> Microsoft recommends creating a separate **.xml** file instead of adding a script to the `MigApp.xml` file. A separate **.xml** file is recommended because the `MigApp.xml` file is a large file and it's difficult to read and edit. In addition, if USMT is reinstalled, the `MigApp.xml` file is overwritten with the default version of the file and the customized version is lost.
 
 > [!IMPORTANT]
 >

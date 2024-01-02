@@ -5,9 +5,12 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 12/19/2023
+ms.date: 01/02/2024
 ms.topic: article
 ms.technology: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Conflicts and precedence
@@ -34,7 +37,7 @@ Only rules inside the same component can affect each other, depending on specifi
 
 If you have an **\<include\>** rule in one component and a **\<locationModify\>** rule in another component for the same file, the file will be migrated in both places. That is, it will be included based on the **\<include\>** rule, and it will be migrated based on the **\<locationModify\>** rule.
 
-The following **.xml** file migrates all files from C:\\Userdocs, including .mp3 files, because the **\<exclude\>** rule is specified in a separate component.
+The following **.xml** file migrates all files from C:\\Userdocs, including **.mp3** files, because the **\<exclude\>** rule is specified in a separate component.
 
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/UserDocs">
@@ -68,7 +71,7 @@ The following **.xml** file migrates all files from C:\\Userdocs, including .mp3
 
 ### How does precedence work with the Config.xml file?
 
-Specifying `migrate="no"` in the `Config.xml` file is the same as deleting the corresponding component from the migration **.xml** file. However, if you set `migrate="no"` for the **Documents** folder, but you have a rule similar to the one shown below in a migration **.xml** file (which includes all of the .doc files from the **Documents** folder), then only the .doc files will be migrated, and all other files will be excluded.
+Specifying `migrate="no"` in the `Config.xml` file is the same as deleting the corresponding component from the migration **.xml** file. However, if you set `migrate="no"` for the **Documents** folder, but you have a rule similar to the one shown below in a migration **.xml** file (which includes all of the **.doc** files from the **Documents** folder), then only the **.doc** files will be migrated, and all other files will be excluded.
 
 ```xml
 <include>
@@ -127,18 +130,18 @@ These examples explain how USMT deals with **\<include\>** and **\<exclude\>** r
 
 | If you have the following code in the same component | Resulting behavior | Explanation |
 |-----|-----|-----|
-| <ul><li>Include rule: \<pattern type=&quot;File&quot;\>C:\Dir1* []\</pattern\></li><li>Exclude rule: \<pattern type=&quot;File&quot;\>C:* [.txt]\</pattern\></li></ul> | Migrates all files and subfolders in Dir1 (including all .txt files in C:). | The **\<exclude\>** rule doesn't affect the migration because the **\<include\>** rule is more specific. |
-| <ul><li>Include rule: \<pattern type=&quot;File&quot;\>C:\Dir1* []\</pattern\></li><li>Exclude rule: \<pattern type=&quot;File&quot;\>C:\Dir1\Dir2* [.txt]\</pattern\></li></ul> | Migrates all files and subfolders in C:\Dir1, except the .txt files in C:\Dir1\Dir2 and its subfolders. | Both rules are processed as intended. |
-| <ul><li>Include rule: \<pattern type=&quot;File&quot;\>C:\Dir1* []\</pattern\></li><li>Exclude rule: \<pattern type=&quot;File&quot;\>C:\Dir1\ * [.txt]\</pattern\></li></ul> | Migrates all files and subfolders in C:\Dir1, except the .txt files in C:\Dir1 and its subfolders. | Both rules are processed as intended. |
+| <ul><li>Include rule: \<pattern type=&quot;File&quot;\>C:\Dir1* []\</pattern\></li><li>Exclude rule: \<pattern type=&quot;File&quot;\>C:* [.txt]\</pattern\></li></ul> | Migrates all files and subfolders in Dir1 (including all **.txt** files in C:). | The **\<exclude\>** rule doesn't affect the migration because the **\<include\>** rule is more specific. |
+| <ul><li>Include rule: \<pattern type=&quot;File&quot;\>C:\Dir1* []\</pattern\></li><li>Exclude rule: \<pattern type=&quot;File&quot;\>C:\Dir1\Dir2* [.txt]\</pattern\></li></ul> | Migrates all files and subfolders in C:\Dir1, except the **.txt** files in C:\Dir1\Dir2 and its subfolders. | Both rules are processed as intended. |
+| <ul><li>Include rule: \<pattern type=&quot;File&quot;\>C:\Dir1* []\</pattern\></li><li>Exclude rule: \<pattern type=&quot;File&quot;\>C:\Dir1\ * [.txt]\</pattern\></li></ul> | Migrates all files and subfolders in C:\Dir1, except the **.txt** files in C:\Dir1 and its subfolders. | Both rules are processed as intended. |
 | <ul><li>Include rule: \<pattern type=&quot;File&quot;\>C:\Dir1\Dir2* [.txt]\</pattern\></li><li>Exclude rule: \<pattern type=&quot;File&quot;\>C:\Dir1\Dir2* [.txt]\</pattern\></li></ul> | Nothing will be migrated. | The rules are equally specific, so the **\<exclude\>** rule takes precedence over the **\<include\>** rule. |
-| <ul><li>Include rule: C:\Dir1* [.txt]</li><li>Exclude rule: C:\Dir1\Dir2* []</li></ul> | Migrates the .txt files in Dir1 and the .txt files from subfolders other than Dir2. <br>No files are migrated from Dir2 or its subfolders. | Both rules are processed as intended. |
-| <ul><li>Include rule: C:\Dir1\Dir2* []</li><li>Exclude rule: C:\Dir1* [.txt]</li></ul> | Migrates all files and subfolders of Dir2, except the .txt files from Dir1 and any subfolders of Dir1 (including Dir2). | Both rules are processed as intended. |
+| <ul><li>Include rule: C:\Dir1* [.txt]</li><li>Exclude rule: C:\Dir1\Dir2* []</li></ul> | Migrates the **.txt** files in Dir1 and the **.txt** files from subfolders other than Dir2. <br>No files are migrated from Dir2 or its subfolders. | Both rules are processed as intended. |
+| <ul><li>Include rule: C:\Dir1\Dir2* []</li><li>Exclude rule: C:\Dir1* [.txt]</li></ul> | Migrates all files and subfolders of Dir2, except the **.txt** files from Dir1 and any subfolders of Dir1 (including Dir2). | Both rules are processed as intended. |
 
 | If you have the following code in different components | Resulting behavior | Explanation |
 |-----|----|----|
-| Component 1:<ul><li>Include rule: \<pattern type=&quot;File&quot;\>C:\Dir1* []\</pattern\></li><li>Exclude rule: \<pattern type=&quot;File&quot;\>C:\Dir1\Dir2* [.txt]\</pattern\></li></ul> <br>Component 2:<ul><li>Include rule: \<pattern type=&quot;File&quot;\>C:\Dir1\Dir2* [.txt]\</pattern\></li><li>Exclude rule: \<pattern type=&quot;File&quot;\>C:\Dir1* []\</pattern\></li></ul> | Migrates all files and subfolders of C:\Dir1\ (including C:\Dir1\Dir2). | Rules that are in different components don't affect each other, except for the **\<unconditionalExclude\>** rule. Therefore, in this example, although some .txt files were excluded when Component 1 was processed, they were included when Component 2 was processed. |
-| Component 1:<ul><li>Include rule: C:\Dir1\Dir2* []</li></ul> <br>Component 2:<ul><li>Exclude rule: C:\Dir1* [.txt]</li></ul> | Migrates all files and subfolders from Dir2 except the .txt files in C:\Dir1 and its subfolders. | Both rules are processed as intended. |
-| Component 1:<ul><li>Exclude rule: C:\Dir1\Dir2* []</li></ul> <br>Component 2:<ul><li>Include rule: C:\Dir1* [.txt]</li></ul> | Migrates all .txt files in Dir1 and any subfolders. | Component 1 doesn't contain an **\<include\>** rule, so the **\<exclude\>** rule isn't processed. |
+| Component 1:<ul><li>Include rule: \<pattern type=&quot;File&quot;\>C:\Dir1* []\</pattern\></li><li>Exclude rule: \<pattern type=&quot;File&quot;\>C:\Dir1\Dir2* [.txt]\</pattern\></li></ul> <br>Component 2:<ul><li>Include rule: \<pattern type=&quot;File&quot;\>C:\Dir1\Dir2* [.txt]\</pattern\></li><li>Exclude rule: \<pattern type=&quot;File&quot;\>C:\Dir1* []\</pattern\></li></ul> | Migrates all files and subfolders of C:\Dir1\ (including C:\Dir1\Dir2). | Rules that are in different components don't affect each other, except for the **\<unconditionalExclude\>** rule. Therefore, in this example, although some **.txt** files were excluded when Component 1 was processed, they were included when Component 2 was processed. |
+| Component 1:<ul><li>Include rule: C:\Dir1\Dir2* []</li></ul> <br>Component 2:<ul><li>Exclude rule: C:\Dir1* [.txt]</li></ul> | Migrates all files and subfolders from Dir2 except the **.txt** files in C:\Dir1 and its subfolders. | Both rules are processed as intended. |
+| Component 1:<ul><li>Exclude rule: C:\Dir1\Dir2* []</li></ul> <br>Component 2:<ul><li>Include rule: C:\Dir1* [.txt]</li></ul> | Migrates all **.txt** files in Dir1 and any subfolders. | Component 1 doesn't contain an **\<include\>** rule, so the **\<exclude\>** rule isn't processed. |
 
 ### Including and excluding registry objects
 
