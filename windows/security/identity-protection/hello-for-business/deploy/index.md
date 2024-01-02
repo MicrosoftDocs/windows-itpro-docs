@@ -287,7 +287,7 @@ The next video shows the Windows Hello for Business enrollment experience as par
 
 1. The user joins the device to Microsoft Entra ID and is prompted for MFA during the join process
 1. The device is Managed by Microsoft Intune and applies Windows Hello for Business policy settings
-1. After the user profile is loaded, but before the access to the Desktop is granted, the user must enroll in Windows Hello
+1. After the user profile is loaded, but before the access to the desktop is granted, the user must enroll in Windows Hello
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=44c16430-756f-490a-9fc1-80e2724fef8d alt-text="Video showing the Windows Hello for Business enrollment steps after the out-of-box-experience process."]
 
