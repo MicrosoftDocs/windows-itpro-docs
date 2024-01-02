@@ -111,7 +111,7 @@ If your users are defined in Microsoft Entra ID and not synchronized from Active
 The following sample PowerShell script generates a random password of 64 characters and sets it for the user specified in the variable name $userId.
 Modify the **userId** variable of the script to match your environment (first line), and then run it in a PowerShell session. When prompted to authenticate to Microsoft Entra ID, use the credentials of an account with a role capable of resetting passwords.
 
-```powershell
+```azurepowershell-interactive
 $userId = "<UPN of the user>"
 
 function Generate-RandomPassword{
