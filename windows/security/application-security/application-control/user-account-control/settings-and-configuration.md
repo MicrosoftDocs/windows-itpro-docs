@@ -80,7 +80,7 @@ The policy settings are located under: `Computer Configuration\Windows Settings\
 |User Account Control: Switch to the secure desktop when prompting for elevation |  Enabled |
 |User Account Control: Virtualize file and registry write failures to per-user locations | Enabled |
 
-#### [:::image type="icon" source="../../../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+#### [:::image type="icon" source="../../../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
 The registry keys are found under the key: `HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System`.
 

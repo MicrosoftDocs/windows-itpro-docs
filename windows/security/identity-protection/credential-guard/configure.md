@@ -81,7 +81,7 @@ Once the policy is applied, restart the device.
 
 Once the policy is applied, restart the device.
 
-#### [:::image type="icon" source="../../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+#### [:::image type="icon" source="../../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
 ### Configure Credential Guard with registry settings
 
@@ -270,7 +270,7 @@ If Credential Guard is enabled via Group Policy and without UEFI Lock, disabling
 
 Once the policy is applied, restart the device.
 
-#### [:::image type="icon" source="../../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+#### [:::image type="icon" source="../../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
 ### Disable Credential Guard with registry settings
 
@@ -374,7 +374,7 @@ Configure the policy used to enable VBS to **Disabled**.
 
 Once the policy is applied, restart the device
 
-#### [:::image type="icon" source="../../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+#### [:::image type="icon" source="../../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
 ### Disable VBS with registry settings
 

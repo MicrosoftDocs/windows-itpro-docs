@@ -109,7 +109,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 | **Computer Configuration\Administrative Templates\System\Credentials Delegation** | Remote host allows delegation of nonexportable credentials | Enabled |
 
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
-#### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+#### [:::image type="icon" source="../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
 To configure devices using the registry, use the following settings:
 
@@ -181,7 +181,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
 
-#### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+#### [:::image type="icon" source="../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
 Not documented.
 
