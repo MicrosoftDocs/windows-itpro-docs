@@ -15,7 +15,7 @@ appliesto:
 
 # Extract files from a compressed USMT migration store
 
-When you migrate files and settings during a typical PC-refresh migration, you usually create a compressed migration store file on the intermediate store. This migration store is a single image file that contains all files being migrated as well as a catalog file. To protect the compressed file, you can encrypt it by using different encryption algorithms. When you migrate the file back to the source computer after the operating system is installed, you can run the **UsmtUtils** command with the `/extract` option to recover the files from the compressed migration store. You can also use the **UsmtUtils** command with the `/extract` option any time you need to recover data from a migration store.
+When files and settings are migrated during a typical PC-refresh migration, a compressed migration store file is usually created on the intermediate store. This migration store is a single image file that contains all files being migrated as well as a catalog file. To protect the compressed file, it can be encrypted by using different encryption algorithms. When the file is migrated back to the source computer after the operating system is installed, the **UsmtUtils** command can be run with the `/extract` option to recover the files from the compressed migration store. The **UsmtUtils** command with the `/extract` option can also be used any time data needs to be recovered from a migration store.
 
 Options used with the `/extract` option can specify:
 
@@ -25,7 +25,7 @@ Options used with the `/extract` option can specify:
 
 - Include and exclude patterns for selective data extraction.
 
-In addition, you can specify the file patterns that you want to extract by using the `/i` option to include file patterns or the `/e` option to exclude file patterns. When both the `/i` option and the `/e` option are used in the same command, include patterns take precedence over exclude patterns. The `/i` and the `/e` options are different from the include and exclude rules used in the **ScanState** and **LoadState** tools.
+In addition, the file patterns that need to be extracted can be specified by using the `/i` option to include file patterns or the `/e` option to exclude file patterns. When both the `/i` option and the `/e` option are used in the same command, include patterns take precedence over exclude patterns. The `/i` and the `/e` options are different from the include and exclude rules used in the **ScanState** and **LoadState** tools.
 
 ## To run the UsmtUtils tool with the /extract option
 
@@ -41,7 +41,7 @@ Where the placeholders have the following values:
 
 - **\<filePath\>** is the location of the migration store.
 
-- **\<destination path\>** is the location of the file where you want the **/extract** option to put the extracted migration store contents.
+- **\<destination path\>** is the location of the file where the **/extract** option should put the extracted migration store contents.
 
 - **\<includePattern\>** specifies the pattern for the files to include in the extraction.
 

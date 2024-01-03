@@ -15,29 +15,29 @@ appliesto:
 
 # Exclude files and settings
 
-When you specify the migration **.xml** files, `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`, the User State Migration Tool (USMT) migrates the settings and components listed, as discussed in [What does USMT migrate?](usmt-what-does-usmt-migrate.md) You can create a custom **.xml** file to further specify what to include or exclude in the migration. In addition, you can create a `Config.xml` file to exclude an entire component from a migration. You can't, however, exclude users by using the migration **.xml** files or the `Config.xml` file. The only way to specify which users to include and exclude is by using the user options on the command line in the ScanState tool. For more information, see the [User options](usmt-scanstate-syntax.md#user-options) section of the [ScanState syntax](usmt-scanstate-syntax.md) article.
+When the migration **.xml** files `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml` are specified, the User State Migration Tool (USMT) migrates the settings and components listed, as discussed in [What does USMT migrate?](usmt-what-does-usmt-migrate.md) A custom **.xml** file can be created to further specify what to include or exclude in the migration. In addition, a `Config.xml` file can be created to exclude an entire component from a migration. However, users can't be excluded by using the migration **.xml** files or the `Config.xml` file. The only way to specify which users to include and exclude is by using the user options on the command line in the ScanState tool. For more information, see the [User options](usmt-scanstate-syntax.md#user-options) section of the [ScanState syntax](usmt-scanstate-syntax.md) article.
 
 Methods to customize the migration and include and exclude files and settings include:
 
-- [Create a custom .xml file](#create-a-custom-xml-file). You can use the following elements to specify what to exclude:
+- [Create a custom .xml file](#create-a-custom-xml-file). The following elements can be used to specify what to exclude:
 
-  - [Include and exclude](#include-and-exclude): You can use the **\<include\>** and **\<exclude\>** elements to exclude objects with conditions. For example, you can migrate all files located in the `C:\` drive, except any `.mp3` files. It's important to remember that [Conflicts and precedence](usmt-conflicts-and-precedence.md) apply to these elements.
+  - [Include and exclude](#include-and-exclude): The **\<include\>** and **\<exclude\>** elements can be used to exclude objects with conditions. For example, all files located in the `C:\` drive can be migrated, except any `.mp3` files. It's important to remember that [Conflicts and precedence](usmt-conflicts-and-precedence.md) apply to these elements.
 
-  - [unconditionalExclude](#example-1-how-to-migrate-all-files-from-c-except-mp3-files): You can use the **\<unconditionalExclude\>** element to globally exclude data. This element takes precedence over all other include and exclude rules in the **.xml** files. Therefore, this element excludes objects regardless of any other **\<include\>** rules that are in the **.xml** files. For example, you can exclude all **.mp3** files on the computer, or you can exclude all files from C:\\UserData.
+  - [unconditionalExclude](#example-1-how-to-migrate-all-files-from-c-except-mp3-files): The **\<unconditionalExclude\>** element can be used to globally exclude data. This element takes precedence over all other include and exclude rules in the **.xml** files. Therefore, this element excludes objects regardless of any other **\<include\>** rules that are in the **.xml** files. For example, all **.mp3** files can be excluded on the computer, or all files from C:\\UserData can be excluded.
 
-- [Create a Config.xml file](#create-a-config-xml-file): You can create and modify a `Config.xml` file to exclude an entire component from the migration. For example, you can use this file to exclude the settings for one of the default applications. In addition, creating and modifying a `Config.xml` file is the only way to exclude the operating-system settings that are migrated to computers running Windows. Excluding components using this file is easier than modifying the migration **.xml** files because you don't need to be familiar with the migration rules and syntax.
+- [Create a Config.xml file](#create-a-config-xml-file): A `Config.xml` file can be created and modified to exclude an entire component from the migration. For example, this file can be used to exclude the settings for one of the default applications. In addition, creating and modifying a `Config.xml` file is the only way to exclude the operating-system settings that are migrated to computers running Windows. Excluding components using this file is easier than modifying the migration **.xml** files because familiarity with the migration rules and syntax isn't required.
 
 ## Create a custom .xml file
 
-Microsoft recommends that you create a custom **.xml** file instead of modifying the default migration **.xml** files. When you use a custom **.xml** file, you can keep the changes separate from the default **.xml** file, which makes it easier to track the modifications.
+Microsoft recommends creating a custom **.xml** file instead of modifying the default migration **.xml** files. When a custom **.xml** file is used, the changes can be kept separate from the default **.xml** file, which makes it easier to track the modifications.
 
 ### \<include\> and \<exclude\>
 
-The migration **.xml** files, `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`, contain the **\<component\>** element, which typically represents a self-contained component or an application such as Microsoft Office Outlook and Word. To exclude the files and registry settings that are associated with these components, use the **\<include\>** and **\<exclude\>** elements. For example, you can use these elements to migrate all files and settings with pattern X except files and settings with pattern Y, where Y is more specific than X. For the syntax of these elements, see [USMT XML Reference](usmt-xml-reference.md).
+The migration **.xml** files, `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`, contain the **\<component\>** element, which typically represents a self-contained component or an application such as Microsoft Office Outlook and Word. To exclude the files and registry settings that are associated with these components, use the **\<include\>** and **\<exclude\>** elements. For example, these elements can be used to migrate all files and settings with pattern X except files and settings with pattern Y, where Y is more specific than X. For the syntax of these elements, see [USMT XML Reference](usmt-xml-reference.md).
 
 > [!NOTE]
 >
-> If you specify an **\<exclude\>** rule, always specify a corresponding **\<include\>** rule. Otherwise, if you don't specify an **\<include\>** rule, the specific files or settings aren't included. They're already excluded from the migration. Thus, an unaccompanied **\<exclude\>** rule is unnecessary.
+> If an **\<exclude\>** rule is specified, always specify a corresponding **\<include\>** rule. Otherwise, if an **\<include\>** rule isn't specified, the specific files or settings aren't included. They're already excluded from the migration. Thus, an unaccompanied **\<exclude\>** rule is unnecessary.
 
 - [Example 1: How to migrate all files from C:\\ except .mp3 files](#example-1-how-to-migrate-all-files-from-c-except-mp3-files)
 
@@ -273,13 +273,13 @@ The following **.xml** file unconditionally excludes the system folders of `C:\W
 
 ## Create a Config XML File
 
-You can create and modify a `Config.xml` file if you want to exclude components from the migration. Excluding components using this file is easier than modifying the migration **.xml** files because you don't need to be familiar with the migration rules and syntax. `Config.xml` is an optional file that you can create using the `/genconfig` command-line option with the ScanState tool. For example, you can use the `Config.xml` file to exclude the settings for one of the default applications. In addition, creating and modifying this file is the only way to exclude the operating-system settings that are migrated to computers running Windows.
+A `Config.xml` file can be created and modified to exclude components from the migration. Excluding components using this file is easier than modifying the migration **.xml** files because familiarity with the migration rules and syntax isn't required. `Config.xml` is an optional file that can be created using the `/genconfig` command-line option with the ScanState tool. For example, the `Config.xml` file can be used to exclude the settings for one of the default applications. In addition, creating and modifying this file is the only way to exclude the operating-system settings that are migrated to computers running Windows.
 
 - **To exclude the settings for a default application:** Specify `migrate="no"` for the application under the **\<Applications\>** section of the `Config.xml` file.
 
 - **To exclude an operating system setting:** Specify `migrate="no"` for the setting under the **\<WindowsComponents\>** section.
 
-- **To exclude the Documents folder:** Specify `migrate="no"` for the **Documents** folder under the **\<Documents\>** section. Any **\<include\>** rules in the **.xml** files are still applied. For example, if you have a rule that includes all the **.docx** files in the **Documents** folder, then **.docx** files are still migrated. However, any additional files that aren't **.docx** aren't migrated.
+- **To exclude the Documents folder:** Specify `migrate="no"` for the **Documents** folder under the **\<Documents\>** section. Any **\<include\>** rules in the **.xml** files are still applied. For example, if a rule exists that includes all the **.docx** files in the **Documents** folder, then **.docx** files are still migrated. However, any additional files that aren't **.docx** aren't migrated.
 
 For more information, see [Config.xml File](usmt-configxml-file.md).
 
