@@ -24,6 +24,11 @@
       "source_path": "windows/application-management/apps-in-windows-10.md",
       "redirect_url": "/windows/application-management/overview-windows-apps",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/sideload-apps-in-windows-10.md",
+      "redirect_url": "/windows/application-management/sideload-apps-in-windows",
+      "redirect_document_id": false
     }
   ]
 }

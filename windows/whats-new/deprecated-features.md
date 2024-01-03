@@ -1,7 +1,7 @@
 ---
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer actively developing in Windows 10 and Windows 11.
-ms.date: 12/15/2023
+ms.date: 12/20/2023
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
@@ -19,13 +19,24 @@ appliesto:
 
 # Deprecated features for Windows client
 
-Each version of Windows client adds new features and functionality. Occasionally, new versions also remove features and functionality, often because they've added a newer option. This article provides details about the features and functionalities that are no longer being developed in Windows client. For more information about features that have been removed, see [Windows features removed](removed-features.md).
+Each version of Windows client adds new features and functionality. Occasionally, new versions also remove features and functionality, often because they've added a newer option. This article provides details about the features and functionalities that are no longer being developed in Windows client.<!-- this sentence is used by tip for RSS --> For more information about features that have been removed, see [Windows features removed](removed-features.md).
 
 For more information about features in Windows 11, see [Feature deprecations and removals](https://www.microsoft.com/windows/windows-11-specifications#table3).
 
 To understand the distinction between *deprecation* and *removal*, see [Windows client features lifecycle](feature-lifecycle.md).
 
 The features in this article are no longer being actively developed, and might be removed in a future update. Some features have been replaced with other features or functionality and some are now available from other sources.
+
+> [!TIP]
+> You can use RSS to be notified when this page is updated.<!-- 8590853 --> For example, the following RSS link includes this article:
+>
+> ``` url
+> https://learn.microsoft.com/api/search/rss?search=%22details+about+the+features+and+functionalities+that+are+no+longer+being+developed+in+Windows%22&locale=en-us&%24filter=%28category+eq+%27Documentation%27%29
+> ```
+>
+> This example includes the `&locale=en-us` variable. The `locale` variable is required, but you can change it to another supported locale. For example, `&locale=ja-jp`.
+>
+> For more information on using RSS for notifications, see [How to use the docs](/mem/use-docs#notifications) in the Intune documentation.
 
 ## Deprecated features
 
@@ -34,11 +45,12 @@ The features in this article are no longer being actively developed, and might b
 > [!NOTE]
 > If you have feedback about the proposed replacement of any of these features, you can use the [Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332).
 
-|Feature    |  Details and mitigation  | Deprecation announced |
+| Feature | Details and mitigation  | Deprecation announced |
 |---|---|---|
-| Microsoft Defender Application Guard for Edge <!--8591267-->| [Microsoft Defender Application Guard](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview.md), including the [Windows Isolated App Launcher APIs](/windows/win32/api/isolatedapplauncher/), is being deprecated for Microsoft Edge for Business and [will no longer be updated](feature-lifecycle.md). Please download the [Microsoft Edge For Business Security Whitepaper](https://edgestatic.azureedge.net/shared/cms/pdfs/Microsoft_Edge_Security_Whitepaper_v2.pdf) to learn more about Edge for Business security capabilities. | December 2023 |
+| Windows Mixed Reality <!--8412877--> | [Windows Mixed Reality](/windows/mixed-reality/enthusiast-guide/before-you-start) is deprecated and will be removed in a future release of Windows. This deprecation includes the [Mixed Reality Portal](/windows/mixed-reality/enthusiast-guide/install-windows-mixed-reality) app, and [Windows Mixed Reality for SteamVR](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality) and Steam VR Beta. | December 2023 |
+| Microsoft Defender Application Guard for Edge <!--8591267-->| [Microsoft Defender Application Guard](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview), including the [Windows Isolated App Launcher APIs](/windows/win32/api/isolatedapplauncher/), is being deprecated for Microsoft Edge for Business and [will no longer be updated](feature-lifecycle.md). Please download the [Microsoft Edge For Business Security Whitepaper](https://edgestatic.azureedge.net/shared/cms/pdfs/Microsoft_Edge_Security_Whitepaper_v2.pdf) to learn more about Edge for Business security capabilities. | December 2023 |
 | Legacy console mode <!-- 8577271 -->| The [legacy console mode](/windows/console/legacymode) is deprecated and no longer being updated. In future Windows releases, it will be available as an optional [Feature on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities). This feature won't be installed by default. | December 2023 |
-| Windows speech recognition <!--8396142-->| [Windows speech recognition](https://support.microsoft.com/windows/83ff75bd-63eb-0b6c-18d4-6fae94050571) is being deprecated and is no longer being developed. This feature is being replaced with [voice access](https://support.microsoft.com/en-us/topic/4dcd23ee-f1b9-4fd1-bacc-862ab611f55d). Voice access is available for Windows 11, version 22H2, or later devices. Currently, voice access supports five English locales: English - US, English - UK, English - India, English - New Zealand, English - Canada, and English - Australia. For more information, see [Setup voice access](https://support.microsoft.com/en-us/topic/set-up-voice-access-9fc44e29-12bf-4d86-bc4e-e9bb69df9a0e). | December 2023 |
+| Windows speech recognition <!--8396142-->| [Windows speech recognition](https://support.microsoft.com/windows/83ff75bd-63eb-0b6c-18d4-6fae94050571) is  deprecated and is no longer being developed. This feature is being replaced with [voice access](https://support.microsoft.com/topic/4dcd23ee-f1b9-4fd1-bacc-862ab611f55d). Voice access is available for Windows 11, version 22H2, or later devices. Currently, voice access supports five English locales: English - US, English - UK, English - India, English - New Zealand, English - Canada, and English - Australia. For more information, see [Setup voice access](https://support.microsoft.com/topic/set-up-voice-access-9fc44e29-12bf-4d86-bc4e-e9bb69df9a0e). | December 2023 |
 | Microsoft Defender Application Guard for Office <!--8396036-->| [Microsoft Defender Application Guard for Office](/microsoft-365/security/office-365-security/app-guard-for-office-install), including the [Windows Isolated App Launcher APIs](/windows/win32/api/isolatedapplauncher/), is being deprecated and will no longer be updated. We recommend transitioning to Microsoft Defender for Endpoint [attack surface reduction rules](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) along with [Protected View](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365#global-settings-for-safe-attachments) and [Windows Defender Application Control](/windows/security/application-security/application-control/windows-defender-application-control/wdac).  | November 2023 |
 | Steps Recorder (psr.exe) <!--8412957-->| Steps Recorder is no longer being updated and will be removed in a future release of Windows. For screen recording, we recommend the Snipping Tool, Xbox Game Bar, or Microsoft Clipchamp. | November 2023 |
 | Tips <!--8412913--> | The Tips app is deprecated and will be removed in a future release of Windows. Content in the app will continue to be updated with information about new Windows features until the app is removed. | November 2023 |

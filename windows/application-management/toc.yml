@@ -8,7 +8,7 @@ items:
     - name: Add or hide Windows features
       href: add-apps-and-features.md
     - name: Sideload line of business (LOB) apps
-      href: sideload-apps-in-windows-10.md
+      href: sideload-apps-in-windows.md
     - name: Private app repo on Windows 11
       href: private-app-repository-mdm-company-portal-windows-11.md
     - name: Remove background task resource restrictions
