@@ -149,8 +149,8 @@ A new section in the `Config.xml` file allows optional configuration of some of 
 | **\<Policies\>** | This element contains elements that describe the policies that USMT follows while creating a migration store. |
 | **\<HardLinkStoreControl\>** | This element contains elements that describe how to handle files during the creation of a hard link migration store. |
 | **\<fileLocked\>** | This element contains elements that describe how to handle files that are locked for editing. |
-| **\<createHardLink\>** | This element defines a standard MigXML pattern that describes file paths where hard links should be created, even if the file is locked for editing by another application. <br><br>Syntax: `<createHardLink>` [pattern] `</createHardLink>` |
-| **\<errorHardLink\>** | This element defines a standard MigXML pattern that describes file paths where hard links shouldn't be created, if the file is locked for editing by another application. <br><br>`<errorHardLink>` [pattern] `</errorHardLink>` |
+| **\<createHardLink\>** | This element defines a standard MigXML pattern that describes file paths where hard links should be created, even if the file is locked for editing by another application.<br><br>Syntax: `<createHardLink>` [pattern] `</createHardLink>` |
+| **\<errorHardLink\>** | This element defines a standard MigXML pattern that describes file paths where hard links shouldn't be created, if the file is locked for editing by another application.<br><br>`<errorHardLink>` [pattern] `</errorHardLink>` |
 
 > [!IMPORTANT]
 >

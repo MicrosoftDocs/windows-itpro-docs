@@ -29,7 +29,7 @@ The following table describes the XML elements and helper functions can be used 
 
 | Elements A-K | Elements L-Z | Helper functions |
 |-----|----|-----|
-| [\<addObjects\>](#addobjects) <br>[\<attributes\>](#attributes) <br>[\<bytes\>](#bytes) <br>[\<commandLine\>](#commandline) <br>[\<component\>](#component) <br>[\<condition\>](#condition) <br>[\<conditions\>](#conditions) <br>[\<content\>](#content) <br>[\<contentModify\>](#contentmodify) <br>[\<description\>](#description) <br>[\<destinationCleanup\>](#destinationcleanup) <br>[\<detect\>](#detect) <br>[\<detects\>](#detects) <br>[\<detection\>](#detection) <br>[\<displayName\>](#displayname) <br>[\<environment\>](#environment) <br>[\<exclude\>](#exclude) <br>[\<excludeAttributes\>](#excludeattributes) <br>[\<extensions\>](#extensions) <br>[\<extension\>](#extension) <br>[\<externalProcess\>](#externalprocess) <br>[\<icon\>](#icon) <br>[\<include\>](#include) <br>[\<includeAttribute\>](#includeattributes) | [\<library\>](#library) <br>[\<location\>](#location) <br>[\<locationModify\>](#locationmodify) <br>[\<_locDefinition\>](#_locdefinition) <br>[\<manufacturer\>](#manufacturer) <br>[\<merge\>](#merge) <br>[\<migration\>](#migration) <br>[\<namedElements\>](#namedelements) <br>[\<object\>](#object) <br>[\<objectSet\>](#objectset) <br>[\<path\>](#path) <br>[\<paths\>](#paths) <br>[\<pattern\>](#pattern) <br>[\<processing\>](#processing) <br>[\<plugin\>](#plugin) <br>[\<role\>](#role) <br>[\<rules\>](#rules) <br>[\<script\>](#script) <br>[\<text\>](#text) <br>[\<unconditionalExclude\>](#unconditionalexclude) <br>[\<variable\>](#variable) <br>[\<version\>](#version) <br>[\<windowsObjects\>](#windowsobjects) | [\<condition\> functions](#condition-functions) <br>[\<content\> functions](#content-functions) <br>[\<contentModify\> functions](#contentmodify-functions) <br>[\<include\> and \<exclude\> filter functions](#include-and-exclude-filter-functions) <br>[\<locationModify\> functions](#locationmodify-functions) <br>[\<merge\> functions](#merge-functions) <br>[\<script\> functions](#script-functions) <br>[Internal USMT functions](#internal-usmt-functions) |
+| [\<addObjects\>](#addobjects)<br>[\<attributes\>](#attributes)<br>[\<bytes\>](#bytes)<br>[\<commandLine\>](#commandline)<br>[\<component\>](#component)<br>[\<condition\>](#condition)<br>[\<conditions\>](#conditions)<br>[\<content\>](#content)<br>[\<contentModify\>](#contentmodify)<br>[\<description\>](#description)<br>[\<destinationCleanup\>](#destinationcleanup)<br>[\<detect\>](#detect)<br>[\<detects\>](#detects)<br>[\<detection\>](#detection)<br>[\<displayName\>](#displayname)<br>[\<environment\>](#environment)<br>[\<exclude\>](#exclude)<br>[\<excludeAttributes\>](#excludeattributes)<br>[\<extensions\>](#extensions)<br>[\<extension\>](#extension)<br>[\<externalProcess\>](#externalprocess)<br>[\<icon\>](#icon)<br>[\<include\>](#include)<br>[\<includeAttribute\>](#includeattributes) | [\<library\>](#library)<br>[\<location\>](#location)<br>[\<locationModify\>](#locationmodify)<br>[\<_locDefinition\>](#_locdefinition)<br>[\<manufacturer\>](#manufacturer)<br>[\<merge\>](#merge)<br>[\<migration\>](#migration)<br>[\<namedElements\>](#namedelements)<br>[\<object\>](#object)<br>[\<objectSet\>](#objectset)<br>[\<path\>](#path)<br>[\<paths\>](#paths)<br>[\<pattern\>](#pattern)<br>[\<processing\>](#processing)<br>[\<plugin\>](#plugin)<br>[\<role\>](#role)<br>[\<rules\>](#rules)<br>[\<script\>](#script)<br>[\<text\>](#text)<br>[\<unconditionalExclude\>](#unconditionalexclude)<br>[\<variable\>](#variable)<br>[\<version\>](#version)<br>[\<windowsObjects\>](#windowsobjects) | [\<condition\> functions](#condition-functions)<br>[\<content\> functions](#content-functions)<br>[\<contentModify\> functions](#contentmodify-functions)<br>[\<include\> and \<exclude\> filter functions](#include-and-exclude-filter-functions)<br>[\<locationModify\> functions](#locationmodify-functions)<br>[\<merge\> functions](#merge-functions)<br>[\<script\> functions](#script-functions)<br>[Internal USMT functions](#internal-usmt-functions) |
 
 ## \<addObjects\>
 
@@ -85,7 +85,7 @@ Syntax:
 
 | Setting | Required? | Value |
 |------|-----|----|
-| *Content* | Yes | The content depends on the type of object specified. <br><ul><li>For files, the content can be a string containing any of the following attributes separated by commas:<ul><li>Archive</li><li>Read-only</li><li>System</li><li>Hidden</li></ul></li><li>For registry keys, the content can be one of the following types:<ul><li>None</li><li>String</li><li>ExpandString</li><li>Binary</li><li>Dword</li><li>REG_SZ</li></ul></li></ul>|
+| *Content* | Yes | The content depends on the type of object specified.<br><ul><li>For files, the content can be a string containing any of the following attributes separated by commas:<ul><li>Archive</li><li>Read-only</li><li>System</li><li>Hidden</li></ul></li><li>For registry keys, the content can be one of the following types:<ul><li>None</li><li>String</li><li>ExpandString</li><li>Binary</li><li>Dword</li><li>REG_SZ</li></ul></li></ul>|
 
 The following example is from the `MigApp.xml` file:
 
@@ -176,9 +176,9 @@ hidden="Yes|No">
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-| type | Yes | The following items can be used to group settings, and define the type of the component.<ul><li>**System:** Operating system settings. All Windows components are defined by this type. <br>When **type="System"** and **defaultSupported="FALSE"**, the settings don't migrate unless there's an equivalent component in the **.xml** files that is specified on the `LoadState.exe` command line. For example, the default `MigSys.xml` file contains components with **type="System"** and **defaultSupported="FALSE"**. If this file is specified on the `ScanState.exe` command line, the file must also be specified on the `LoadState.exe` command line for the settings to migrate. The file must be specified because the `LoadState.exe` tool must detect an equivalent component. That is, the component must have the same migration urlid of the **.xml** file and an identical display name. Otherwise, the **LoadState** tool doesn't migrate those settings from the store. This setting is helpful because a store can be used for destination computers that are the same or different version of Windows as the source computer.</li><li>**Application:** Settings for an application.</li><li>**Device:** Settings for a device.</li><li>**Documents:** Specifies files.</li></ul> |
-| context | No <br>Default = UserAndSystem | Defines the scope of this parameter; that is, whether to process this component in the context of the specific user, across the entire operating system, or both. <br>The largest possible scope is set by the **\<component\>** element. For example, if a **\<component\>** element has a context of **User** and a **\<rules\>** element had a context of **UserAndSystem**, then the **\<rules\>** element would act as though it has a context of **User**. If a **\<rules\>** element has a context of **System**, it would act as though the **\<rules\>** element isn't there. <ul><li>**User**: Evaluates the component for each user.</li><li>**System**: Evaluates the component only once for the system.</li><li>**UserAndSystem**: Evaluates the component for the entire operating system and each user.</li></ul> |
-| defaultSupported | No <br>(default = TRUE) | Can be any of **TRUE**, **FALSE**, **YES**, or **NO**. If this parameter is **FALSE** (or **NO**), the component isn't migrated unless there's an equivalent component on the destination computer. <br>When **type="System"** and **defaultSupported="FALSE"**, the settings aren't migrated unless there's an equivalent component in the **.xml** files that are specified on the `LoadState.exe` command line. For example, the default `MigSys.xml` file contains components with **type="System"** and **defaultSupported="FALSE"**. If this file is specified on the `ScanState.exe` command line, the file must also be specified on the `LoadState.exe` command line for the settings to migrate. The file has to be specified in both command lines because the **LoadState** tool must detect an equivalent component. That is, the component must have the same migration urlid of the **.xml** file and an identical display name or the **LoadState** tool doesn't migrate those settings from the store. This setting is helpful because a store can be used for destination computers that are the same or different version of Windows as the source computer. |
+| type | Yes | The following items can be used to group settings, and define the type of the component.<ul><li>**System:** Operating system settings. All Windows components are defined by this type.<br>When **type="System"** and **defaultSupported="FALSE"**, the settings don't migrate unless there's an equivalent component in the **.xml** files that is specified on the `LoadState.exe` command line. For example, the default `MigSys.xml` file contains components with **type="System"** and **defaultSupported="FALSE"**. If this file is specified on the `ScanState.exe` command line, the file must also be specified on the `LoadState.exe` command line for the settings to migrate. The file must be specified because the `LoadState.exe` tool must detect an equivalent component. That is, the component must have the same migration urlid of the **.xml** file and an identical display name. Otherwise, the **LoadState** tool doesn't migrate those settings from the store. This setting is helpful because a store can be used for destination computers that are the same or different version of Windows as the source computer.</li><li>**Application:** Settings for an application.</li><li>**Device:** Settings for a device.</li><li>**Documents:** Specifies files.</li></ul> |
+| context | No<br>Default = UserAndSystem | Defines the scope of this parameter; that is, whether to process this component in the context of the specific user, across the entire operating system, or both.<br>The largest possible scope is set by the **\<component\>** element. For example, if a **\<component\>** element has a context of **User** and a **\<rules\>** element had a context of **UserAndSystem**, then the **\<rules\>** element would act as though it has a context of **User**. If a **\<rules\>** element has a context of **System**, it would act as though the **\<rules\>** element isn't there. <ul><li>**User**: Evaluates the component for each user.</li><li>**System**: Evaluates the component only once for the system.</li><li>**UserAndSystem**: Evaluates the component for the entire operating system and each user.</li></ul> |
+| defaultSupported | No<br>(default = TRUE) | Can be any of **TRUE**, **FALSE**, **YES**, or **NO**. If this parameter is **FALSE** (or **NO**), the component isn't migrated unless there's an equivalent component on the destination computer.<br>When **type="System"** and **defaultSupported="FALSE"**, the settings aren't migrated unless there's an equivalent component in the **.xml** files that are specified on the `LoadState.exe` command line. For example, the default `MigSys.xml` file contains components with **type="System"** and **defaultSupported="FALSE"**. If this file is specified on the `ScanState.exe` command line, the file must also be specified on the `LoadState.exe` command line for the settings to migrate. The file has to be specified in both command lines because the **LoadState** tool must detect an equivalent component. That is, the component must have the same migration urlid of the **.xml** file and an identical display name or the **LoadState** tool doesn't migrate those settings from the store. This setting is helpful because a store can be used for destination computers that are the same or different version of Windows as the source computer. |
 | hidden |   | This parameter is for internal USMT use only. |
 
 For an example, see any of the default migration **.xml** files.
@@ -205,7 +205,7 @@ Syntax:
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-|negation|No <br>Default = No|**"Yes"** reverses the True/False value of the condition.|
+|negation|No<br>Default = No|**"Yes"** reverses the True/False value of the condition.|
 |*ScriptName*|Yes|A script that is defined within this migration section.|
 
 For example, in the following code sample, the **\<condition\>** elements, **A** and **B**, are joined together by the **AND** operator because they are in separate **\<conditions\>** sections:
@@ -272,7 +272,7 @@ The **\<condition\>** functions return a Boolean value. These elements can be us
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*OSType*|Yes|Can be **9x** or **NT**. If *OSType* doesn't match the type of the current operating system, then it returns **FALSE**. For example, if the current operating system is Windows NT-based and *OSType* is **"9x"**, the result is **FALSE**.|
-    |*OSVersion*|Yes|The major version, minor version, build number, and corrected service diskette version separated by periods. For example, `5.0.2600.Service Pack 1`. Partial specification of the version can also be specified but no pattern is allowed such as `5.0`. <br><br>The **IsOSLaterThan** function returns **TRUE** if the current operating system is later than or equal to *OSVersion*.|
+    |*OSVersion*|Yes|The major version, minor version, build number, and corrected service diskette version separated by periods. For example, `5.0.2600.Service Pack 1`. Partial specification of the version can also be specified but no pattern is allowed such as `5.0`.<br><br>The **IsOSLaterThan** function returns **TRUE** if the current operating system is later than or equal to *OSVersion*.|
 
   For example:
 
@@ -289,7 +289,7 @@ The **\<condition\>** functions return a Boolean value. These elements can be us
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*OSType*|Yes|Can be **9x** or **NT**. If *OSType* doesn't match the type of the current operating system, then it returns **FALSE**. For example, if the current operating system is Windows NT-based and *OSType* is **"9x"** the result is **FALSE**.|
-    |*OSVersion*|Yes|The major version, minor version, build number, and corrected service diskette version separated by periods. For example, `5.0.2600.Service Pack 1`. Partial specification of the version can also be specified but no pattern is allowed such as `5.0`. <br><br>The **IsOSEarlierThan** function returns **TRUE** if the current operating system is earlier than *OSVersion*.|
+    |*OSVersion*|Yes|The major version, minor version, build number, and corrected service diskette version separated by periods. For example, `5.0.2600.Service Pack 1`. Partial specification of the version can also be specified but no pattern is allowed such as `5.0`.<br><br>The **IsOSEarlierThan** function returns **TRUE** if the current operating system is earlier than *OSVersion*.|
 
 ### Object content functions
 
@@ -484,7 +484,7 @@ Syntax:
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-|filter|Yes|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`. <br>The script is called for each object that is enumerated by the object sets in the **\<include\>** rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated.|
+|filter|Yes|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`.<br>The script is called for each object that is enumerated by the object sets in the **\<include\>** rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated.|
 
 ### \<content\> functions
 
@@ -571,7 +571,7 @@ Syntax:
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-|script|Yes|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2").` <br><br>The script is called for each object that is enumerated by the object sets in the include rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated.|
+|script|Yes|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2").`<br><br>The script is called for each object that is enumerated by the object sets in the include rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated.|
 
 ### \<contentModify\> functions
 
@@ -664,7 +664,7 @@ The following functions change the content of objects as they're migrated. These
 
     |Setting|Required?|Value|
     |--- |--- |--- |
-    | *Delimiters* | Yes | A single character that is used to separate the content of the object that is being processed. The content is considered as a list of elements that is separated by the *Delimiters*. <br>For example, `"."` separates the string based on a period. |
+    | *Delimiters* | Yes | A single character that is used to separate the content of the object that is being processed. The content is considered as a list of elements that is separated by the *Delimiters*.<br>For example, `"."` separates the string based on a period. |
     | *Instruction* | Yes | Can be one of the following values: <ul><li>**Add**: Adds *String* to the resulting MULTI-SZ if it isn't already there.</li><li>**Remove**: Removes *String* from the resulting MULTI-SZ.</li></ul> |
     | *String* | Yes | The string to be added or removed. |
 
@@ -718,7 +718,7 @@ Syntax:
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-|filter|Yes|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`. <br><br>The script is called for each object that is enumerated by the object sets in the include rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated.|
+|filter|Yes|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`.<br><br>The script is called for each object that is enumerated by the object sets in the include rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated.|
 
 For example:
 
@@ -756,8 +756,8 @@ Syntax:
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-| name | Yes, when **\<detect\>** is a child to **\<namedElements\>** <br>No, when **\<detect\>** is a child to \<detects\> | When *ID* is specified, any child elements aren't processed. Instead, any other **\<detect\>** elements with the same name that are declared within the **\<namedElements\>** element are processed. |
-| context | No <br>(default = UserAndSystem) | Defines the scope of this parameter, which is whether to process this component in the context of the specific user, across the entire operating system, or both. <br>The largest possible scope is set by the component element. For example, if a **\<component\>** element has a context of **User**, and a **\<rules\>** element had a context of **UserAndSystem**, then the **\<rules\>** element would act as though it had a context of **User**. If the **\<rules\>** element had a context of **System**, it would act as though the **\<rules\>** element weren't there. <ul><li>**User**: Evaluates the variables for each user.</li><li>**System**: Evaluates the variables only once for the system.</li><li>**UserAndSystem**: Evaluates the variables for the entire operating system and each user.</li></ul> |
+| name | Yes, when **\<detect\>** is a child to **\<namedElements\>**<br>No, when **\<detect\>** is a child to \<detects\> | When *ID* is specified, any child elements aren't processed. Instead, any other **\<detect\>** elements with the same name that are declared within the **\<namedElements\>** element are processed. |
+| context | No<br>(default = UserAndSystem) | Defines the scope of this parameter, which is whether to process this component in the context of the specific user, across the entire operating system, or both.<br>The largest possible scope is set by the component element. For example, if a **\<component\>** element has a context of **User**, and a **\<rules\>** element had a context of **UserAndSystem**, then the **\<rules\>** element would act as though it had a context of **User**. If the **\<rules\>** element had a context of **System**, it would act as though the **\<rules\>** element weren't there. <ul><li>**User**: Evaluates the variables for each user.</li><li>**System**: Evaluates the variables only once for the system.</li><li>**UserAndSystem**: Evaluates the variables for the entire operating system and each user.</li></ul> |
 
 For examples, see the examples for [\<detection\>](#detection).
 
@@ -782,8 +782,8 @@ Syntax:
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-| name | Yes, when \<detects\> is a child to **\<namedElements\>** <br>No, when \<detects\> is a child to **\<role\>** or **\<rules\>** | When *ID* is specified, no child **\<detect\>** elements are processed. Instead, any other **\<detects\>** elements with the same name that are declared within the **\<namedElements\>** element are processed. |
-| context | No <br>(default = UserAndSystem) | Defines the scope of this parameter: whether to process this component in the context of the specific user, across the entire operating system, or both. <br>The largest possible scope is set by the **\<component element\>**. For example, if a **\<component\>** element has a context of **User** and a **\<rules\>** element had a context of **UserAndSystem**, then the **\<rules\>** element would act as though it had a context of **User**. If the **\<rules\>** element had a context of **System**, it would act as though the **\<rules\>** element weren't there. <ul><li>**User**: Evaluates the variables for each user.</li><li>**System**: Evaluates the variables only once for the system.</li><li>**UserAndSystem**: Evaluates the variables for the entire operating system and each user.</li></ul> <br>The context parameter is ignored for **\<detects\>** elements that are inside **\<rules\>** elements. |
+| name | Yes, when \<detects\> is a child to **\<namedElements\>**<br>No, when \<detects\> is a child to **\<role\>** or **\<rules\>** | When *ID* is specified, no child **\<detect\>** elements are processed. Instead, any other **\<detects\>** elements with the same name that are declared within the **\<namedElements\>** element are processed. |
+| context | No<br>(default = UserAndSystem) | Defines the scope of this parameter: whether to process this component in the context of the specific user, across the entire operating system, or both.<br>The largest possible scope is set by the **\<component element\>**. For example, if a **\<component\>** element has a context of **User** and a **\<rules\>** element had a context of **UserAndSystem**, then the **\<rules\>** element would act as though it had a context of **User**. If the **\<rules\>** element had a context of **System**, it would act as though the **\<rules\>** element weren't there. <ul><li>**User**: Evaluates the variables for each user.</li><li>**System**: Evaluates the variables only once for the system.</li><li>**UserAndSystem**: Evaluates the variables for the entire operating system and each user.</li></ul><br>The context parameter is ignored for **\<detects\>** elements that are inside **\<rules\>** elements. |
 
 The following example is from the `MigApp.xml` file.
 
@@ -895,8 +895,8 @@ Syntax:
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-| name | Yes, when **\<environment\>** is a child of **\<namedElements\>** <br>No, when **\<environment\>** is a child of **\<role\>** or **\<component\>** | When declared as a child of the **\<role\>** or **\<component\>** elements, if *ID* is declared, USMT ignores the content of the **\<environment\>** element and the content of the **\<environment\>** element with the same name declared in the **\<namedElements\>** element is processed. |
-| context | No <br>(default = UserAndSystem) | Defines the scope of this parameter: whether to process this component in the context of the specific user, across the entire operating system, or both. <br>The largest possible scope is set by the **\<component\>** element. For example, if a **\<component\>** element has a context of **User** and a **\<rules\>** element had a context of **UserAndSystem**, then the **\<rules\>** element would act as though it had a context of **User**. If the **\<rules\>** element had a context of **System**, it would act as though **\<rules\>** weren't there. <ul><li>**User**: Evaluates the variables for each user.</li><li>**System**: Evaluates the variables only once for the system.</li><li>**UserAndSystem**: Evaluates the variables for the entire operating system and each user.</li></ul> |
+| name | Yes, when **\<environment\>** is a child of **\<namedElements\>**<br>No, when **\<environment\>** is a child of **\<role\>** or **\<component\>** | When declared as a child of the **\<role\>** or **\<component\>** elements, if *ID* is declared, USMT ignores the content of the **\<environment\>** element and the content of the **\<environment\>** element with the same name declared in the **\<namedElements\>** element is processed. |
+| context | No<br>(default = UserAndSystem) | Defines the scope of this parameter: whether to process this component in the context of the specific user, across the entire operating system, or both.<br>The largest possible scope is set by the **\<component\>** element. For example, if a **\<component\>** element has a context of **User** and a **\<rules\>** element had a context of **UserAndSystem**, then the **\<rules\>** element would act as though it had a context of **User**. If the **\<rules\>** element had a context of **System**, it would act as though **\<rules\>** weren't there. <ul><li>**User**: Evaluates the variables for each user.</li><li>**System**: Evaluates the variables only once for the system.</li><li>**UserAndSystem**: Evaluates the variables for the entire operating system and each user.</li></ul> |
 
 ## Examples
 
@@ -999,7 +999,7 @@ Syntax:
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-|filter|No <br>(default = No)|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`. <br><br>The script is called for each object that is enumerated by the object sets in the include rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated.|
+|filter|No<br>(default = No)|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`.<br><br>The script is called for each object that is enumerated by the object sets in the include rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated.|
 
 For example, from the `MigUser.xml` file:
 
@@ -1190,7 +1190,7 @@ Syntax:
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-| filter | No. <br>If this parameter isn't specified, then all patterns that are inside the child **\<objectSet\>** element are processed. | A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`. <br>The script is called for each object that is enumerated by the object sets in the **\<include\>** rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated. |
+| filter | No.<br>If this parameter isn't specified, then all patterns that are inside the child **\<objectSet\>** element are processed. | A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`.<br>The script is called for each object that is enumerated by the object sets in the **\<include\>** rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated. |
 
 The following example is from the `MigUser.xml` file:
 
@@ -1359,7 +1359,7 @@ Syntax:
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-|script|Yes|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`. <br><br>The script is called for each object that is enumerated by the object sets in the include rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated.|
+|script|Yes|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`.<br><br>The script is called for each object that is enumerated by the object sets in the include rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated.|
 
 The following example is from the `MigApp.xml` file:
 
@@ -1478,7 +1478,7 @@ Syntax:
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-|script|Yes|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`. <br><br>The script is called for each object that is enumerated by the object sets in the **\<include\>** rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated.|
+|script|Yes|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`.<br><br>The script is called for each object that is enumerated by the object sets in the **\<include\>** rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated.|
 
 The following example is from the `MigUser.xml` file:
 
@@ -1525,7 +1525,7 @@ These functions control how collisions are resolved.
 
     |Setting|Required?|Value|
     |--- |--- |--- |
-    | *FilePattern* | Yes | <ul><li>**\<F\>** is replaced by the original file name.</li><li>**\<N\>** is replaced by an incrementing counter until there's no collision with the objects on the destination computer.</li><li>**\<E\>** is replaced by the original file name extension.</li></ul> <br>For example, `<F> (<N>).<E>` changes the source file `MyDocument.doc` into `MyDocument (1).doc` on the destination computer. |
+    | *FilePattern* | Yes | <ul><li>**\<F\>** is replaced by the original file name.</li><li>**\<N\>** is replaced by an incrementing counter until there's no collision with the objects on the destination computer.</li><li>**\<E\>** is replaced by the original file name extension.</li></ul><br>For example, `<F> (<N>).<E>` changes the source file `MyDocument.doc` into `MyDocument (1).doc` on the destination computer. |
 
 - **NewestVersion**
 
@@ -1600,7 +1600,7 @@ This filter helper function can be used to filter the migration of files based o
 |--- |--- |
 |Property|filesize, dateCreated, dateModified, dateAccessed|
 |Operator|range, neq, lte, lt, eq, gte, gt|
-|valueToCompare|The value that is being compared. For example: <br>Date: "2023/05/15-2020/05/17", "2023/05/15" <br>Size: A numeral with B, KB, MB, or GB at the end. "5GB", "1KB-1MB"|
+|valueToCompare|The value that is being compared. For example:<br>Date: "2023/05/15-2020/05/17", "2023/05/15"<br>Size: A numeral with B, KB, MB, or GB at the end. "5GB", "1KB-1MB"|
 
 ```xml
 <component context="System"  type="Application">
@@ -1753,8 +1753,8 @@ Syntax:
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-| type | Yes | *typeID* can be Registry, File, or Ini. If *typeId* is Ini, then a space between *Path* and *object* isn't allowed. For example, the following format is correct when type="Ini": <br>**\<pattern type="Ini"\>%WinAmp5InstPath%\Winamp.ini&#124;WinAmp[keeponscreen]\</pattern\>** |
-| *Path* [*object*] | Yes | A valid registry or file path pattern, followed by at least one space, followed by brackets [] that contain the object to be migrated. <ul><li>*Path* can contain the asterisk (`*`) wildcard character or can be an [Recognized environment variables](usmt-recognized-environment-variables.md). The question mark can't be used as a wildcard character. `HKCU` and `HKLM` can be used to refer to `HKEY_CURRENT_USER` and `HKEY_LOCAL_MACHINE` respectively.</li><li>*Object* can contain the asterisk (`*`) wildcard character. However, the question mark can't be used as a wildcard character. For example: <br> **`C:\Folder\ [*]`** enumerates all files in `C:\Folder` but no subfolders of `C:\Folder`. <br> **`C:\Folder* [*]`** enumerates all files and subfolders of `C:\Folder`. <br> **`C:\Folder\ [*.mp3]`** enumerates all `.mp3` files in `C:\Folder`. <br> **`C:\Folder\ [Sample.doc]`** enumerates only the `Sample.doc` file located in C:\Folder. <div class="alert">**Note**<br>If migrating a file that has a square bracket character ([ or ]) in the file name, a carrot (^) character must be inserted directly before the bracket for it to be valid. For example, if there's a file named "file].txt", `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern>` must be specified instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.</div></li></ul> |
+| type | Yes | *typeID* can be Registry, File, or Ini. If *typeId* is Ini, then a space between *Path* and *object* isn't allowed. For example, the following format is correct when type="Ini":<br>**\<pattern type="Ini"\>%WinAmp5InstPath%\Winamp.ini&#124;WinAmp[keeponscreen]\</pattern\>** |
+| *Path* [*object*] | Yes | A valid registry or file path pattern, followed by at least one space, followed by brackets [] that contain the object to be migrated. <ul><li>*Path* can contain the asterisk (`*`) wildcard character or can be an [Recognized environment variables](usmt-recognized-environment-variables.md). The question mark can't be used as a wildcard character. `HKCU` and `HKLM` can be used to refer to `HKEY_CURRENT_USER` and `HKEY_LOCAL_MACHINE` respectively.</li><li>*Object* can contain the asterisk (`*`) wildcard character. However, the question mark can't be used as a wildcard character. For example:<br> **`C:\Folder\ [*]`** enumerates all files in `C:\Folder` but no subfolders of `C:\Folder`.<br> **`C:\Folder* [*]`** enumerates all files and subfolders of `C:\Folder`.<br> **`C:\Folder\ [*.mp3]`** enumerates all `.mp3` files in `C:\Folder`.<br> **`C:\Folder\ [Sample.doc]`** enumerates only the `Sample.doc` file located in C:\Folder. <div class="alert">**Note**<br>If migrating a file that has a square bracket character ([ or ]) in the file name, a carrot (^) character must be inserted directly before the bracket for it to be valid. For example, if there's a file named "file].txt", `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern>` must be specified instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.</div></li></ul> |
 
 For example:
 
@@ -1834,7 +1834,7 @@ Syntax:
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-| role | Yes | Defines the role for the component. Role can be one of: <ul><li>**Container**</li><li>**Binaries**</li><li>**Settings**</li><li>**Data**</li></ul> One of the following items can be specified: <ol><li>Up to three **\<role\>** elements within a **\<component\>** - one "Binaries" role element, one "Settings" role element and one "Data" role element. These parameters don't change the migration behavior - their only purpose is to help categorize the settings that are migrating. These **\<role\>** elements can be nested, but each nested element must be of the same role parameter.</li><li>One "Container" **\<role\>** element within a **\<component\>** element. In this case, any child **\<rules\>** elements can't be specified, only other **\<component\>** elements. And each child **\<component\>** element must have the same type as that of parent **\<component\>** element. For example:</li></ol> <pre class="syntax"><code>\<component context="UserAndSystem" type="Application"\> <br>  \<displayName _locID="migapp.msoffice2016"\>Microsoft Office 2016\</displayName\> <br>  \<environment name="GlobalEnv" /\> <br>  \<role role="Container"\><br>    \<detection name="AnyOffice2016Version" /\> <br>    \<detection name="Word2016" /\> <br>    \<!-- <br> Office 2016 Common Settings <br>  --\> <br>     \<component context="UserAndSystem" type="Application"\></code></pre> |
+| role | Yes | Defines the role for the component. Role can be one of: <ul><li>**Container**</li><li>**Binaries**</li><li>**Settings**</li><li>**Data**</li></ul> One of the following items can be specified: <ol><li>Up to three **\<role\>** elements within a **\<component\>** - one "Binaries" role element, one "Settings" role element and one "Data" role element. These parameters don't change the migration behavior - their only purpose is to help categorize the settings that are migrating. These **\<role\>** elements can be nested, but each nested element must be of the same role parameter.</li><li>One "Container" **\<role\>** element within a **\<component\>** element. In this case, any child **\<rules\>** elements can't be specified, only other **\<component\>** elements. And each child **\<component\>** element must have the same type as that of parent **\<component\>** element. For example:</li></ol> <pre class="syntax"><code>\<component context="UserAndSystem" type="Application"\><br>  \<displayName _locID="migapp.msoffice2016"\>Microsoft Office 2016\</displayName\><br>  \<environment name="GlobalEnv" /\><br>  \<role role="Container"\><br>    \<detection name="AnyOffice2016Version" /\><br>    \<detection name="Word2016" /\><br>    \<!--<br> Office 2016 Common Settings<br>  --\><br>     \<component context="UserAndSystem" type="Application"\></code></pre> |
 
 The following example is from the `MigUser.xml` file. For more examples, see the `MigApp.xml` file:
 
@@ -1888,8 +1888,8 @@ Syntax:
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-| name | Yes, when **\<rules\>** is a child to **\<namedElements\>** <br>No, when **\<rules\>** is a child to any other element | When *ID* is specified, any child elements aren't processed. Instead, any other **\<rules\>** elements with the same name that are declared within **\<namedElements\>** are processed. |
-| context | No <br>(default = UserAndSystem) | Defines the scope of this parameter - whether to process this component in the context of the specific user, across the entire operating system, or both. <br>The largest possible scope is set by the component element. For example, if a **\<component\>** element has a context of **User** and a **\<rules\>** element had a context of **UserAndSystem**, then the **\<rules\>** element would act as though it has a context of **User**. If **\<rules\>** had a context of **System**, it would act as though **\<rules\>** wasn't there. <ul><li>**User**: Evaluates the variables for each user.</li><li>**System**: Evaluates the variables only once for the system.</li><li>**UserAndSystem**: Evaluates the variables for the entire operating system and each user.</li></ul> |
+| name | Yes, when **\<rules\>** is a child to **\<namedElements\>**<br>No, when **\<rules\>** is a child to any other element | When *ID* is specified, any child elements aren't processed. Instead, any other **\<rules\>** elements with the same name that are declared within **\<namedElements\>** are processed. |
+| context | No<br>(default = UserAndSystem) | Defines the scope of this parameter - whether to process this component in the context of the specific user, across the entire operating system, or both.<br>The largest possible scope is set by the component element. For example, if a **\<component\>** element has a context of **User** and a **\<rules\>** element had a context of **UserAndSystem**, then the **\<rules\>** element would act as though it has a context of **User**. If **\<rules\>** had a context of **System**, it would act as though **\<rules\>** wasn't there. <ul><li>**User**: Evaluates the variables for each user.</li><li>**System**: Evaluates the variables only once for the system.</li><li>**UserAndSystem**: Evaluates the variables for the entire operating system and each user.</li></ul> |
 
 The following example is from the `MigUser.xml` file:
 
@@ -1961,7 +1961,7 @@ The return value that is required by **\<script\>** depends on the parent elemen
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-| *ScriptWithArguments* | Yes | A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`. <br>The script is called for each object that is enumerated by the object sets in the **\<include\>** rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated. <br>The return value that is required by **\<script\>** depends on the parent element. <ul><li>When used within **\<variable\>**, the return value must be a string.</li><li>When used within **\<objectSet\>**, the return value must be a two-dimensional array of strings.</li><li>When used within **\<location\>**, the return value must be a valid location that aligns with the type attribute of **\<location\>**. For example, if \<location type="File"\>, the child script element, if specified, must be a valid file location. <div class="alert">**Note**<br>If migrating a file that has a bracket character ([ or ]) in the file name, insert the carrot (^) character directly before the bracket for it to be valid. For example, if there's a file named "file].txt", specify `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern>` instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.</div></li></ul> |
+| *ScriptWithArguments* | Yes | A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`.<br>The script is called for each object that is enumerated by the object sets in the **\<include\>** rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object is migrated. If it's **FALSE**, it isn't migrated.<br>The return value that is required by **\<script\>** depends on the parent element. <ul><li>When used within **\<variable\>**, the return value must be a string.</li><li>When used within **\<objectSet\>**, the return value must be a two-dimensional array of strings.</li><li>When used within **\<location\>**, the return value must be a valid location that aligns with the type attribute of **\<location\>**. For example, if \<location type="File"\>, the child script element, if specified, must be a valid file location. <div class="alert">**Note**<br>If migrating a file that has a bracket character ([ or ]) in the file name, insert the carrot (^) character directly before the bracket for it to be valid. For example, if there's a file named "file].txt", specify `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern>` instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.</div></li></ul> |
 
 Examples:
 
@@ -1994,7 +1994,7 @@ These functions return either a string or a pattern.
     |Setting|Required?|Value|
     |--- |--- |--- |
     | *ObjectType* | Yes | The type of object. Can be Registry or Ini (for an **.ini** file). |
-    | *EncodedLocationPattern* | Yes | <ul><li>If type of object is Registry, EncodedLocationPattern must be a valid registry path. For example, `HKLM\SOFTWARE\MyKey[]`.</li><li>If the type of object is Ini, then EncodedLocationPattern must be in the following format: <br>**IniFilePath&#124;SectionName[SettingName]**</li></ul> |
+    | *EncodedLocationPattern* | Yes | <ul><li>If type of object is Registry, EncodedLocationPattern must be a valid registry path. For example, `HKLM\SOFTWARE\MyKey[]`.</li><li>If the type of object is Ini, then EncodedLocationPattern must be in the following format:<br>**IniFilePath&#124;SectionName[SettingName]**</li></ul> |
     | *ExpandContent* | No (default=TRUE) | Can be **TRUE** or **FALSE**. If **FALSE**, then the given location isn't expanded before returned. |
 
   For example:
