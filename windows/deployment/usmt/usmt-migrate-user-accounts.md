@@ -5,7 +5,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/02/2024
+ms.date: 01/03/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:
@@ -15,7 +15,7 @@ appliesto:
 
 # Migrate User Accounts
 
-By default, all users are migrated. The only way to specify which users to include and exclude is on the command line by using the User options. Users can't be specified in the migration XML files or by using the `Config.xml` file.
+By default, all users are migrated. The only way to specify which users to include and exclude is on the command line by using the [ScanState User options](usmt-scanstate-syntax.md#user-options) and the [LoadState User options](usmt-loadstate-syntax.md#user-options). Users can't be specified in the migration XML files or by using the `Config.xml` file.
 
 ## To migrate all user accounts and user settings
 

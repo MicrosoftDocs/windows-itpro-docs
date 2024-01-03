@@ -5,7 +5,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/02/2024
+ms.date: 01/03/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:
@@ -91,7 +91,7 @@ There are two broad categories of rules.
 
 - **Rules that affect the behavior of both the ScanState and LoadState tools**. For example, the **\<include\>**, **\<exclude\>**, and **\<unconditionalExclude\>** rules are processed for each component in the **.xml** files. For each component, USMT creates an include list and an exclude list. Some of the rules in the component might be discarded due to specificity, but all of the remaining rules are processed. For each **\<include\>** rule, USMT iterates through the elements to see if any of the locations need to be excluded. USMT enumerates all of the objects and creates a list of objects it's going to collect for each user. Once the list is complete, each of the objects is stored or migrated to the destination computer.
 
-- **Rules that affect the behavior of only the LoadState tool**. For example, the **\<locationModify\>**, **\<contentModify\>**, and **\<destinationCleanup\>** rules don't affect ScanState. They're processed only with LoadState. First, the LoadState tool determines the content and location of each component based on the **\<locationModify\>** and **\<contentModify\>** rules. Then, LoadState processes all of the **\<destinationCleanup\>** rules and deletes data from the destination computer. Lastly, LoadState applies the components to the computer.
+- **Rules that affect the behavior of only the LoadState tool**. For example, the **\<locationModify\>**, **\<contentModify\>**, and **\<destinationCleanup\>** rules don't affect ScanState. They're processed only with LoadState. First, the **LoadState** tool determines the content and location of each component based on the **\<locationModify\>** and **\<contentModify\>** rules. Then, **LoadState** processes all of the **\<destinationCleanup\>** rules and deletes data from the destination computer. Lastly, **LoadState** applies the components to the computer.
 
 ### How does USMT combine all of the .xml files that I specify on the command line?
 

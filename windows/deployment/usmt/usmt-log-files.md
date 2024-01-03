@@ -5,7 +5,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/02/2024
+ms.date: 01/03/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:
@@ -15,7 +15,7 @@ appliesto:
 
 # USMT log files
 
-You can use User State Migration Tool (USMT) logs to monitor the migration and to troubleshoot errors and failed migrations. This article describes the available command-line options to enable USMT logs. It also describes new XML elements that can be used to configure:
+User State Migration Tool (USMT) logs can be used to monitor the migration and to troubleshoot errors and failed migrations. This article describes the available command-line options to enable USMT logs. It also describes new XML elements that can be used to configure:
 
 - Which types of errors are fatal and should halt the migration.
 - Which types are non-fatal and should be skipped so that the migration can continue.
@@ -33,15 +33,16 @@ The following table describes each command-line option related to logs, and it p
 |Set the environment variable **MIG_ENABLE_DIAG** to a path to an XML file.|`USMTDiag.xml`|The diagnostic log contains detailed system environment information, user environment information, and information about the migration units (migunits) being gathered and their contents.|
 
 > [!NOTE]
-> You cannot store any of the log files in *StorePath*. If you do, the log will be overwritten when USMT is run.
+>
+> The log files can't be stored in *StorePath*. If the log files are stored in *StorePath*, the log files are overwritten when USMT runs.
 
 ## ScanState and LoadState logs
 
- **ScanState** and **LoadState** logs are text files that are create when you run the **ScanState** and **LoadState** tools. You can use these logs to help monitor the migration. The content of the log depends on the command-line options that you use and the verbosity level that you specify. For more information about verbosity levels, see [Monitoring options](usmt-scanstate-syntax.md#monitoring-options) in [ScanState syntax](usmt-scanstate-syntax.md).
+ **ScanState** and **LoadState** logs are text files that are created when the **ScanState** and **LoadState** tools run. These logs can be used to help monitor the migration. The content of the log depends on the command-line options that are used and the verbosity level that is specified. For more information about verbosity levels, see [Monitoring options](usmt-scanstate-syntax.md#monitoring-options) in [ScanState syntax](usmt-scanstate-syntax.md).
 
 ## Progress log
 
-You can create a progress log using the `/progress` option. External tools, such as Microsoft System Center Operations Manager, can parse the progress log to update the monitoring systems. The first three fields in each line are fixed as follows:
+A progress log can be created using the `/progress` option. External tools, such as Microsoft System Center Operations Manager, can parse the progress log to update the monitoring systems. The first three fields in each line are fixed as follows:
 
 - **Date:** Date, in the format of *day* *shortNameOfTheMonth* *year*. For example: 08 Jun 2023.
 
@@ -79,7 +80,7 @@ The List files log (`Listfiles.txt`) provides a list of the files that were migr
 
 ## Diagnostic log
 
-You can obtain the diagnostic log by setting the environment variable **MIG_ENABLE_DIAG** to a path to an XML file.
+The diagnostic log can be obtained by setting the environment variable **MIG_ENABLE_DIAG** to a path to an XML file.
 
 The diagnostic log contains:
 
@@ -93,7 +94,7 @@ The diagnostic log contains:
 
 The diagnostic log is essentially a report of all the migration units (migunits) included in the migration. A migunit is a collection of data. In the XML files, the component identifies the migunit that the migunit is associated with. The migration store is made up of all the migunits in the migration. The diagnostic log can be used to verify which migunits were included in the migration and can be used for troubleshooting while authoring migration XML files.
 
-The following examples describe common scenarios in which you can use the diagnostic log.
+The following examples describe common scenarios in which the diagnostic log can be used.
 
 **Why is this file not migrating when I authored an "include" rule for it?**
 
@@ -117,7 +118,7 @@ The directory of `C:\data\New Folder` contains:
                1 File(s)              0 bytes
 ```
 
-To migrate these files you author the following migration XML:
+To migrate these files the following migration XML is authored:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -139,7 +140,7 @@ To migrate these files you author the following migration XML:
 </migration>
 ```
 
-However, upon testing the migration you notice that the **New Text Document.txt** file isn't included in the migration. To troubleshoot this failure, the migration can be repeated with the environment variable **MIG_ENABLE_DIAG** set such that the diagnostic log is generated. Searching the diagnostic log for the component **DATA1** reveals the following XML section:
+However, upon testing the migration, the **New Text Document.txt** file is noticed that it wasn't included in the migration. To troubleshoot this failure, the migration can be repeated with the environment variable **MIG_ENABLE_DIAG** set such that the diagnostic log is generated. Searching the diagnostic log for the component **DATA1** reveals the following XML section:
 
 ```xml
 <MigUnitList>
@@ -191,7 +192,7 @@ This diagnostic log confirms that the modified **\<pattern\>** value enables the
 
 **Why is this file migrating when I authored an exclude rule excluding it?**
 
-In this scenario, you have the following directory structure and you want all files in the **Data** directory to migrate, except for text files. The `C:\Data` folder contains:
+In this scenario, the following directory structure exists and all files in the **Data** directory should migrate, except for text files. The `C:\Data` folder contains:
 
 ```cmd
 Directory of C:\Data
@@ -213,7 +214,7 @@ The `C:\Data\New Folder\` contains:
                1 File(s)              0 bytes
 ```
 
-You author the following migration XML:
+The following migration XML is authored:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -241,7 +242,7 @@ You author the following migration XML:
 </component>
 ```
 
-However, upon testing the migration you notice that all the text files are still included in the migration. In order to troubleshoot this issue, the migration can be performed with the environment variable **MIG_ENABLE_DIAG** set so that the diagnostic log is generated. Searching the diagnostic log for the component **DATA1** reveals the following XML section:
+However, upon testing the migration, all the text files are noticed that they're still included in the migration. In order to troubleshoot this issue, the migration can be performed with the environment variable **MIG_ENABLE_DIAG** set so that the diagnostic log is generated. Searching the diagnostic log for the component **DATA1** reveals the following XML section:
 
 ```xml
 <MigUnitList>
@@ -267,7 +268,7 @@ However, upon testing the migration you notice that all the text files are still
 </Perform>
 ```
 
-Upon reviewing the diagnostic log, you confirm that the files are still migrating, and that it's a problem with the authored migration XML rule. You author an update to the migration XML script as follows:
+When the diagnostic log is reviewed, the files are still migrating is confirmed, and that it's a problem with the authored migration XML rule. An update is authored to the migration XML script as follows:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

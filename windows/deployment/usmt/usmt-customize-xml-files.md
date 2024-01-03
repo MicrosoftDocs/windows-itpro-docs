@@ -5,7 +5,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/02/2024
+ms.date: 01/03/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:
@@ -17,7 +17,7 @@ appliesto:
 
 ## Overview
 
-To use any of the migration **.xml** files with the ScanState and LoadState tools, specify these files at the command line using the `/i` option. Because the ScanState and LoadState tools need the **.xml** files to control the migration, specify the same set of **.xml** files for both the `ScanState.exe` and `LoadState.exe` commands. However, the `Config.xml` file with the `/config` option doesn't need to be specified, unless some of the migrated files and settings from the store need to be excluded. For example, to migrate the **Documents** folder to the store but not to the destination computer. To achieve this scenario, modify the `Config.xml` file and specify the updated file with the `LoadState.exe` command. The `LoadState.exe` command then only migrates the desired files and settings.
+To use any of the migration **.xml** files with the **ScanState** and **LoadState** tools, specify these files at the command line using the `/i` option. Because the **ScanState** and **LoadState** tools need the **.xml** files to control the migration, specify the same set of **.xml** files for both the `ScanState.exe` and `LoadState.exe` commands. However, the `Config.xml` file with the `/config` option doesn't need to be specified, unless some of the migrated files and settings from the store need to be excluded. For example, to migrate the **Documents** folder to the store but not to the destination computer. To achieve this scenario, modify the `Config.xml` file and specify the updated file with the `LoadState.exe` command. The `LoadState.exe` command then only migrates the desired files and settings.
 
 If an **.xml** file is left out from the `LoadState.exe` command, all of the data in the store that was migrated with the missing **.xml** files are migrated. However, the migration rules that were specified with the `ScanState.exe` command don't apply. For example, if an **.xml** file is left out, and it contains a rerouting rule such as:
 
@@ -27,9 +27,9 @@ USMT doesn't reroute the files, and they're migrated to `C:\data`.
 
 To modify the migration, do one or more of the following.
 
-- **Modify the migration .xml files.** To exclude a portion of a component, modify the **.xml** files. For example, to migrate C:\\ but exclude all of the **.mp3** files, or to move data to a new location on the destination computer. To modify these files, familiarity with the migration rules and syntax is a must. For ScanState and LoadState to use these files, specify them at the command line when each command is entered.
+- **Modify the migration .xml files.** To exclude a portion of a component, modify the **.xml** files. For example, to migrate C:\\ but exclude all of the **.mp3** files, or to move data to a new location on the destination computer. To modify these files, familiarity with the migration rules and syntax is a must. For **ScanState** and **LoadState** to use these files, specify them at the command line when each command is entered.
 
-- **Create a custom .xml file.** A custom **.xml** file can also be created to migrate settings for another application, or to change the migration behavior to suit the organization's needs. For ScanState and LoadState to use this file, specify them on both command lines.
+- **Create a custom .xml file.** A custom **.xml** file can also be created to migrate settings for another application, or to change the migration behavior to suit the organization's needs. For **ScanState** and **LoadState** to use this file, specify them on both command lines.
 
 - **Create and modify a Config.xml file.** Create and modify a `Config.xml` file to exclude an entire component from the migration. For example, a `Config.xml` file can be used to exclude the entire **Documents** folder, or exclude the settings for an application. Excluding components using a `Config.xml` file is easier than modifying the migration **.xml** files because familiarity with the migration rules and syntax isn't needed. In addition, using a `Config.xml` file is the only way to exclude the operating system settings from being migrated.
 
@@ -45,9 +45,9 @@ This section describes the migration **.xml** files that are included with USMT.
 
 - **The MigApp.xml file.** Specify this file with both the `ScanState.exe` and `LoadState.exe` commands to migrate application settings.
 
-- **The MigDocs.xml file.** Specify this file with both the ScanState and LoadState tools to migrate all user folders and files that are found by the **MigXmlHelper.GenerateDocPatterns** helper function. This helper function finds user data that resides on the root of any drive and in the Users directory. However, it doesn't find and migrate any application data, program files, or any files in the Windows directory. The `MigDocs.xml` file can be modified.
+- **The MigDocs.xml file.** Specify this file with both the **ScanState** and **LoadState** tools to migrate all user folders and files that are found by the **MigXmlHelper.GenerateDocPatterns** helper function. This helper function finds user data that resides on the root of any drive and in the Users directory. However, it doesn't find and migrate any application data, program files, or any files in the Windows directory. The `MigDocs.xml` file can be modified.
 
-- **The MigUser.xml file.** Specify this file with both the `ScanState.exe` and `LoadState.exe` commands to migrate user folders, files, and file types. The `MigUser.xml` file can be modified. This file doesn't contain rules that migrate specific user accounts. The only way to specify which user accounts to migrate is on the command line using the ScanState and the LoadState user options.
+- **The MigUser.xml file.** Specify this file with both the `ScanState.exe` and `LoadState.exe` commands to migrate user folders, files, and file types. The `MigUser.xml` file can be modified. This file doesn't contain rules that migrate specific user accounts. The only way to specify which user accounts to migrate is on the command line by using the [ScanState User options](usmt-scanstate-syntax.md#user-options) and the [LoadState User options](usmt-loadstate-syntax.md#user-options).
 
 > [!NOTE]
 >

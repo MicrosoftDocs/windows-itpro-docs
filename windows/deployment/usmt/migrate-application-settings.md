@@ -5,7 +5,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/02/2024
+ms.date: 01/03/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:
@@ -15,7 +15,7 @@ appliesto:
 
 # Migrate Application Settings
 
-A custom **.xml** file can be created to migrate specific line-of-business application settings or to change the default migration behavior of the User State Migration Tool (USMT). For ScanState and LoadState to use this file, the custom **.xml** file must be specified on both command lines.
+A custom **.xml** file can be created to migrate specific line-of-business application settings or to change the default migration behavior of the User State Migration Tool (USMT). For **ScanState** and **LoadState** to use this file, the custom **.xml** file must be specified on both command lines.
 
 This article defines how to author a custom migration **.xml** file that migrates the settings of an application that isn't migrated by default using `MigApp.xml`. The settings should be migrated after the application is installed, but before the user runs the application for the first time.
 
@@ -153,7 +153,7 @@ To speed up the time it takes to collect and migrate the data, only one user can
 /ue:*\* /ui:user1
 ```
 
-For more information, see the [Exclude files and settings](usmt-exclude-files-and-settings.md) article and the [User options](usmt-scanstate-syntax.md#user-options) section in the [ScanState syntax](usmt-scanstate-syntax.md) article. To troubleshoot a problem, check the progress log, the ScanState log, and the LoadState log. The logs contain warnings and errors that could point to problems with the migration.
+For more information, see the [Exclude files and settings](usmt-exclude-files-and-settings.md) article and the [User options](usmt-scanstate-syntax.md#user-options) section in the [ScanState syntax](usmt-scanstate-syntax.md) article. To troubleshoot a problem, check the progress log, the **ScanState** log, and the **LoadState** log. The logs contain warnings and errors that could point to problems with the migration.
 
 ## Related articles
 

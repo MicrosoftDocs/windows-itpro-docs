@@ -6,7 +6,7 @@ ms.technology: itpro-deploy
 author: frankroj
 manager: aaroncz
 ms.author: frankroj
-ms.date: 01/02/2024
+ms.date: 01/03/2024
 ms.topic: overview
 ms.collection:
   - highpri
@@ -26,7 +26,7 @@ USMT enables the following actions:
 
 - Fit the customized migration into the automated deployment process by using the **ScanState** and **LoadState** tools, which control collecting and restoring the user files and settings. For more information, see [User State Migration Tool (USMT) command-line syntax](usmt-command-line-syntax.md).
 
-- Perform offline migrations. Migrations can be run offline by using the ScanState command in Windows Preinstallation Environment (WinPE) or migrations can be performed from previous installations of Windows contained in **Windows.old** directories. For more information about migration types, see [Choose a migration store Type](usmt-choose-migration-store-type.md) and [Offline migration reference](offline-migration-reference.md).
+- Perform offline migrations. Migrations can be run offline by using the **ScanState** command in Windows Preinstallation Environment (WinPE) or migrations can be performed from previous installations of Windows contained in **Windows.old** directories. For more information about migration types, see [Choose a migration store Type](usmt-choose-migration-store-type.md) and [Offline migration reference](offline-migration-reference.md).
 
 ## Benefits
 

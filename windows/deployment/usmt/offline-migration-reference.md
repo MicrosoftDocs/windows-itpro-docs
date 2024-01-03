@@ -5,7 +5,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/02/2024
+ms.date: 01/03/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:
@@ -15,19 +15,19 @@ appliesto:
 
 # Offline Migration Reference
 
-Offline migration enables the ScanState tool to run inside a different Windows operating system than the Windows operating system from which ScanState is gathering files and settings. There are two primary offline scenarios:
+Offline migration enables the **ScanState** tool to run inside a different Windows operating system than the Windows operating system from which **ScanState** is gathering files and settings. There are two primary offline scenarios:
 
-- **Windows PE.** The ScanState tool can be run from within Windows PE, gathering files and settings from the offline Windows operating system on that machine.
+- **Windows PE.** The **ScanState** tool can be run from within Windows PE, gathering files and settings from the offline Windows operating system on that machine.
 
-- **Windows.old.** The ScanState tool can gather files and settings from the **Windows.old** directory. The **Windows.old** directory is created during Windows installation on a partition that contains a previous installation of Windows. For example, the ScanState tool can run in Windows, gathering files from a previous Windows installation contained in the **Windows.old** directory.
+- **Windows.old.** The **ScanState** tool can gather files and settings from the **Windows.old** directory. The **Windows.old** directory is created during Windows installation on a partition that contains a previous installation of Windows. For example, the **ScanState** tool can run in Windows, gathering files from a previous Windows installation contained in the **Windows.old** directory.
 
 When using the User State Migration Tool (USMT) to gather and restore user state, offline migration reduces the cost of deployment by:
 
-- **Reducing complexity.** In computer-refresh scenarios, migrations from the **Windows.old** directory reduce complexity by eliminating the need for the ScanState tool to be run before the operating system is deployed. Also, migrations from the **Windows.old** directory enable ScanState and LoadState to be run successively.
+- **Reducing complexity.** In computer-refresh scenarios, migrations from the **Windows.old** directory reduce complexity by eliminating the need for the **ScanState** tool to be run before the operating system is deployed. Also, migrations from the **Windows.old** directory enable **ScanState** and **LoadState** to be run successively.
 
 - **Improving performance.** When USMT runs in an offline Windows Preinstallation Environment (WinPE) environment, it has better access to the hardware resources. Running USMT in WinPE can increase performance on older machines with limited hardware resources and numerous installed software applications.
 
-- **New recovery scenario.** In scenarios where a machine no longer restarts properly, it might be possible to gather user state with the ScanState tool from within WinPE.
+- **New recovery scenario.** In scenarios where a machine no longer restarts properly, it might be possible to gather user state with the **ScanState** tool from within WinPE.
 
 ## What migrates offline?
 
@@ -60,7 +60,7 @@ The following table defines the supported combination of online and offline oper
 
 > [!NOTE]
 >
-> It is possible to run the ScanState tool while the drive remains encrypted by suspending Windows BitLocker Drive Encryption before booting into WinPE. For more information, see [BitLocker operations guide: Suspend and resume](/windows/security/operating-system-security/data-protection/bitlocker/operations-guide#suspend-and-resume). If using a Microsoft Configuration Manager task sequence, see [Task sequence steps: Disable BitLocker](/mem/configmgr/osd/understand/task-sequence-steps#BKMK_DisableBitLocker).
+> It is possible to run the **ScanState** tool while the drive remains encrypted by suspending Windows BitLocker Drive Encryption before booting into WinPE. For more information, see [BitLocker operations guide: Suspend and resume](/windows/security/operating-system-security/data-protection/bitlocker/operations-guide#suspend-and-resume). If using a Microsoft Configuration Manager task sequence, see [Task sequence steps: Disable BitLocker](/mem/configmgr/osd/understand/task-sequence-steps#BKMK_DisableBitLocker).
 
 ## User-group membership and profile control
 
@@ -103,11 +103,11 @@ System environment variables are necessary in the scenarios outlined in the foll
 |Variable|Value|Scenario|
 |--- |--- |--- |
 |**USMT_WORKING_DIR**|Full path to a working directory|Required when USMT binaries are located on read-only media, which doesn't support the creation of log files or temporary storage. To set the system environment variable, at a command prompt type the following command:<br><br> `Set USMT_WORKING_DIR=<path to working directory>`|
-|**MIG_OFFLINE_PLATFORM_ARCH**|32 or 64|While operating offline, this environment variable defines the architecture of the offline system, if the system doesn't match the WinPE and `ScanState.exe` architecture. This environment variable enables the 32-bit ScanState application to gather data from a computer with 64-bit architecture, or the 64-bit ScanState application to gather data from a computer with 32-bit architecture. Specifying the architecture is required when auto-detection of the offline architecture doesn't function properly. For example, to set this system environment variable for a 32-bit architecture, at a command prompt type the following command:<br><br> `Set MIG_OFFLINE_PLATFORM_ARCH=32`|
+|**MIG_OFFLINE_PLATFORM_ARCH**|32 or 64|While operating offline, this environment variable defines the architecture of the offline system, if the system doesn't match the WinPE and `ScanState.exe` architecture. This environment variable enables the 32-bit **ScanState** application to gather data from a computer with 64-bit architecture, or the 64-bit **ScanState** application to gather data from a computer with 32-bit architecture. Specifying the architecture is required when auto-detection of the offline architecture doesn't function properly. For example, to set this system environment variable for a 32-bit architecture, at a command prompt type the following command:<br><br> `Set MIG_OFFLINE_PLATFORM_ARCH=32`|
 
 ## Offline.xml elements
 
-Use an `Offline.xml` file when running the ScanState tool on a computer that has multiple Windows directories. The `Offline.xml` file specifies which directories to scan for windows files. An `Offline.xml` file can be used with the `/offline` option as an alternative to specifying a single Windows directory path with the `/offlineDir` option.
+Use an `Offline.xml` file when running the **ScanState** tool on a computer that has multiple Windows directories. The `Offline.xml` file specifies which directories to scan for windows files. An `Offline.xml` file can be used with the `/offline` option as an alternative to specifying a single Windows directory path with the `/offlineDir` option.
 
 ### \<offline\>
 
@@ -131,7 +131,7 @@ Syntax:
 
 ### \<path\>
 
-This element is a required child of **\<winDir\>** and contains a file path pointing to a valid Windows directory. Relative paths are interpreted from the ScanState tool's working directory.
+This element is a required child of **\<winDir\>** and contains a file path pointing to a valid Windows directory. Relative paths are interpreted from the **ScanState** tool's working directory.
 
 Syntax:
 

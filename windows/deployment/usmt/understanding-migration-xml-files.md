@@ -5,7 +5,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/02/2024
+ms.date: 01/03/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:
@@ -21,7 +21,7 @@ This article provides an overview of the default and custom migration XML files 
 
 ## Overview of the Config.xml file
 
-The `Config.xml` file is the configuration file created by the `/genconfig` option of the ScanState tool. It can be used to modify which operating-system components USMT migrates. The `Config.xml` file can be used with other XML files, such as in the following example:
+The `Config.xml` file is the configuration file created by the `/genconfig` option of the **ScanState** tool. It can be used to modify which operating-system components USMT migrates. The `Config.xml` file can be used with other XML files, such as in the following example:
 
 `ScanState.exe /i:migapps.xml /i:MigDocs.xml /genconfig:c:\myFolder\Config.xml`
 
@@ -33,7 +33,7 @@ When used this way, the `Config.xml` file tightly controls aspects of the migrat
 
 ## Overview of the MigApp.xml file
 
-The `MigApp.xml` file installed with USMT includes instructions to migrate the settings for the applications listed in [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md). In order to migrate application settings, the `MigApp.xml` file must be included when using the ScanState and LoadState tools by using the `/i` option. The `MigDocs.xml` and `MigUser.xml` files don't migrate application settings. A custom XML file can be created to include additional applications. For more information, see [Customize USMT XML Files](usmt-customize-xml-files.md).
+The `MigApp.xml` file installed with USMT includes instructions to migrate the settings for the applications listed in [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md). In order to migrate application settings, the `MigApp.xml` file must be included when using the **ScanState** and **LoadState** tools by using the `/i` option. The `MigDocs.xml` and `MigUser.xml` files don't migrate application settings. A custom XML file can be created to include additional applications. For more information, see [Customize USMT XML Files](usmt-customize-xml-files.md).
 
 > [!IMPORTANT]
 >
@@ -41,7 +41,7 @@ The `MigApp.xml` file installed with USMT includes instructions to migrate the s
 
 ## Overview of the MigDocs.xml file
 
-The `MigDocs.xml` file uses the new `GenerateDocPatterns` helper function to create instructions for USMT to migrate files from the source computer, based on the location of the files. The `MigDocs.xml` file can be used with the ScanState and LoadState tools to perform a more targeted migration than using USMT without XML instructions.
+The `MigDocs.xml` file uses the new `GenerateDocPatterns` helper function to create instructions for USMT to migrate files from the source computer, based on the location of the files. The `MigDocs.xml` file can be used with the **ScanState** and **LoadState** tools to perform a more targeted migration than using USMT without XML instructions.
 
 The default `MigDocs.xml` file migrates the following data:
 
@@ -107,11 +107,11 @@ The default `MigDocs.xml` file doesn't migrate the following data:
 
 - Folders that contain installed applications.
 
-The `/genmigxml` option can be used with the ScanState tool to review and modify what files are migrated.
+The `/genmigxml` option can be used with the **ScanState** tool to review and modify what files are migrated.
 
 ## Overview of the MigUser.xml file
 
-The `MigUser.xml` file includes instructions for USMT to migrate user files based on file name extensions. The `MigUser.xml` file can be used with the ScanState and LoadState tools to perform a more targeted migration than using USMT without XML instructions. The `MigUser.xml` file gathers all files from the standard user-profile folders, and any files on the computer with the specified file name extensions.
+The `MigUser.xml` file includes instructions for USMT to migrate user files based on file name extensions. The `MigUser.xml` file can be used with the **ScanState** and **LoadState** tools to perform a more targeted migration than using USMT without XML instructions. The `MigUser.xml` file gathers all files from the standard user-profile folders, and any files on the computer with the specified file name extensions.
 
 The default `MigUser.xml` file migrates the following data:
 
@@ -159,11 +159,11 @@ The `MigUser.xml` file can be copied and then the copy modified to include or ex
 
 > [!NOTE]
 >
-> Each file name extension included in the rules within the `MigUser.xml` file increases the amount of time needed for the ScanState tool to gather the files for the migration. If more than 300 file types are being migrated, the migration experience can be slow. For more information about other ways to organize the migration of the data, see the [Using multiple XML files](#using-multiple-xml-files) section of this article.
+> Each file name extension included in the rules within the `MigUser.xml` file increases the amount of time needed for the **ScanState** tool to gather the files for the migration. If more than 300 file types are being migrated, the migration experience can be slow. For more information about other ways to organize the migration of the data, see the [Using multiple XML files](#using-multiple-xml-files) section of this article.
 
 ## Using multiple XML files
 
-Multiple XML files can be used with the ScanState and LoadState tools. Each of the default XML files included with or generated by USMT is configured for a specific component of the migration. Custom XML files can also be used to supplement these default files with more migration rules.
+Multiple XML files can be used with the **ScanState** and **LoadState** tools. Each of the default XML files included with or generated by USMT is configured for a specific component of the migration. Custom XML files can also be used to supplement these default files with more migration rules.
 
 |XML migration file|Modifies the following components:|
 |--- |--- |

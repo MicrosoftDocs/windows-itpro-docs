@@ -5,7 +5,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/02/2024
+ms.date: 01/03/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:
@@ -15,7 +15,7 @@ appliesto:
 
 # Config.xml File
 
-The `Config.xml` file is an optional User State Migration Tool (USMT) file that can be created using the `/genconfig` option with the ScanState tool. If all of the default components should be included and no changes need to be made to the default store-creation or profile-migration behavior, a `Config.xml` file doesn't need to be created.
+The `Config.xml` file is an optional User State Migration Tool (USMT) file that can be created using the `/genconfig` option with the **ScanState** tool. If all of the default components should be included and no changes need to be made to the default store-creation or profile-migration behavior, a `Config.xml` file doesn't need to be created.
 
 However, if the default migration behavior defined in the `MigApp.xml`, `MigUser.xml` and `MigDocs.xml` files is satisfactory, but certain components need to be excluded, a `Config.xml` file can be created and modified while leaving the other **.xml** files unchanged. For example, a `Config.xml` file must be created to exclude any of the operating-system settings that are migrated. It's necessary to create and modify the `Config.xml` file to change any of the default store-creation or profile-migration behavior.
 

@@ -5,7 +5,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/02/2024
+ms.date: 01/03/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:
@@ -21,7 +21,7 @@ appliesto:
 |--- |--- |
 |[USMT requirements](usmt-requirements.md)|Describes operating system, hardware, and software requirements, and user prerequisites.|
 |[USMT best practices](usmt-best-practices.md)|Discusses general and security-related best practices when using USMT.|
-|[How USMT works](usmt-how-it-works.md)|Learn about the processes behind the ScanState and LoadState tools.|
+|[How USMT works](usmt-how-it-works.md)|Learn about the processes behind the **ScanState** and **LoadState** tools.|
 |[Plan the migration](usmt-plan-your-migration.md)|Choose what to migrate and the best migration scenario for the organization.|
 |[User State Migration Tool (USMT) command-line syntax](usmt-command-line-syntax.md)|Explore command-line options for the ScanState, LoadState, and UsmtUtils tools.|
 |[USMT XML reference](usmt-xml-reference.md)|Learn about customizing a migration with XML files.|

@@ -5,7 +5,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/02/2024
+ms.date: 01/03/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:
@@ -15,7 +15,7 @@ appliesto:
 
 # Estimate migration store size
 
-The disk space requirements for a migration are dependent on the size of the migration store and the type of migration. The amount of disk space needed for computers in the organization can be estimated based on information about the organization's infrastructure. Disk space requirements can also be calculated using the ScanState tool.
+The disk space requirements for a migration are dependent on the size of the migration store and the type of migration. The amount of disk space needed for computers in the organization can be estimated based on information about the organization's infrastructure. Disk space requirements can also be calculated using the **ScanState** tool.
 
 ## Hard disk space requirements
 
@@ -25,7 +25,7 @@ The disk space requirements for a migration are dependent on the size of the mig
 
   - **E250 megabytes (MB) minimum of hard disk space**: Space is needed to support the User State Migration Tool (USMT) operations, for example, growth in the page file. If every volume involved in the migration is formatted as NTFS, 250 MB should be enough space to ensure success for almost every hard-link migration, regardless of the size of the migration. The USMT tool that captures data (ScanState) doesn't create the migration store if 250 MB of disk space isn't available.
 
-  - **Temporary space for USMT to run**: Extra disk space is required for the USMT tools to operate. This disk space requirement doesn't include the minimum 250 MB needed to create the migration store. The amount of temporary space required can be calculated using the ScanState tool.
+  - **Temporary space for USMT to run**: Extra disk space is required for the USMT tools to operate. This disk space requirement doesn't include the minimum 250 MB needed to create the migration store. The amount of temporary space required can be calculated using the **ScanState** tool.
 
   - **Hard-link migration store**: It isn't necessary to estimate the size of a hard-link migration store. The only case where the hard-link store can be large is when non-NTFS file volumes exist on the system and those volumes contain data being migrated.
 
@@ -37,13 +37,13 @@ The disk space requirements for a migration are dependent on the size of the mig
 
   - **Data being migrated**: Data being migrated includes files and registry information.
 
-  - **Temporary space for USMT to run**: Extra disk space is required for the USMT tools to operate. The amount of temporary space required can be calculated using the ScanState tool.
+  - **Temporary space for USMT to run**: Extra disk space is required for the USMT tools to operate. The amount of temporary space required can be calculated using the **ScanState** tool.
 
-## Calculate disk space requirements using the ScanState tool
+## Calculate disk space requirements using the **ScanState** tool
 
-The ScanState tool can be used to calculate the disk space requirements for a particular compressed or uncompressed migration. It isn't necessary to estimate the migration store size for a hard-link migration since this method doesn't create a separate migration store. The ScanState tool provides disk space requirements for the state of the computer at the time the tool is run. The state of the computer might change during day-to-day use. For this reason, use the calculations as an estimate when planning the migration.
+The **ScanState** tool can be used to calculate the disk space requirements for a particular compressed or uncompressed migration. It isn't necessary to estimate the migration store size for a hard-link migration since this method doesn't create a separate migration store. The **ScanState** tool provides disk space requirements for the state of the computer at the time the tool is run. The state of the computer might change during day-to-day use. For this reason, use the calculations as an estimate when planning the migration.
 
-To run the ScanState tool on the source computer with USMT installed:
+To run the **ScanState** tool on the source computer with USMT installed:
 
 1. Open a command prompt with administrator privileges.
 
@@ -74,7 +74,7 @@ To run the ScanState tool on the source computer with USMT installed:
 
     Although a migration store isn't created by running this command, the *\<StorePath\>* is still a required parameter.
 
-The ScanState tool also allows estimation of disk space requirements based on a customized migration. For example, the **Documents** folder might need to be migrated to the destination computer. This condition can be specified in a configuration file when the ScanState tool is run. For more information, see [Customize USMT XML files](usmt-customize-xml-files.md).
+The **ScanState** tool also allows estimation of disk space requirements based on a customized migration. For example, the **Documents** folder might need to be migrated to the destination computer. This condition can be specified in a configuration file when the **ScanState** tool is run. For more information, see [Customize USMT XML files](usmt-customize-xml-files.md).
 
 > [!NOTE]
 >

@@ -5,7 +5,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/02/2024
+ms.date: 01/03/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:
@@ -15,7 +15,7 @@ appliesto:
 
 # Exclude files and settings
 
-When the migration **.xml** files `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml` are specified, the User State Migration Tool (USMT) migrates the settings and components listed, as discussed in [What does USMT migrate?](usmt-what-does-usmt-migrate.md) A custom **.xml** file can be created to further specify what to include or exclude in the migration. In addition, a `Config.xml` file can be created to exclude an entire component from a migration. However, users can't be excluded by using the migration **.xml** files or the `Config.xml` file. The only way to specify which users to include and exclude is by using the user options on the command line in the ScanState tool. For more information, see the [User options](usmt-scanstate-syntax.md#user-options) section of the [ScanState syntax](usmt-scanstate-syntax.md) article.
+When the migration **.xml** files `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml` are specified, the User State Migration Tool (USMT) migrates the settings and components listed, as discussed in [What does USMT migrate?](usmt-what-does-usmt-migrate.md) A custom **.xml** file can be created to further specify what to include or exclude in the migration. In addition, a `Config.xml` file can be created to exclude an entire component from a migration. However, users can't be excluded by using the migration **.xml** files or the `Config.xml` file. The only way to specify which users to include and exclude is by using the user options on the command line in the **ScanState** tool. For more information, see the [User options](usmt-scanstate-syntax.md#user-options) section of the [ScanState syntax](usmt-scanstate-syntax.md) article.
 
 Methods to customize the migration and include and exclude files and settings include:
 
@@ -273,7 +273,7 @@ The following **.xml** file unconditionally excludes the system folders of `C:\W
 
 ## Create a Config XML File
 
-A `Config.xml` file can be created and modified to exclude components from the migration. Excluding components using this file is easier than modifying the migration **.xml** files because familiarity with the migration rules and syntax isn't required. `Config.xml` is an optional file that can be created using the `/genconfig` command-line option with the ScanState tool. For example, the `Config.xml` file can be used to exclude the settings for one of the default applications. In addition, creating and modifying this file is the only way to exclude the operating-system settings that are migrated to computers running Windows.
+A `Config.xml` file can be created and modified to exclude components from the migration. Excluding components using this file is easier than modifying the migration **.xml** files because familiarity with the migration rules and syntax isn't required. `Config.xml` is an optional file that can be created using the `/genconfig` command-line option with the **ScanState** tool. For example, the `Config.xml` file can be used to exclude the settings for one of the default applications. In addition, creating and modifying this file is the only way to exclude the operating-system settings that are migrated to computers running Windows.
 
 - **To exclude the settings for a default application:** Specify `migrate="no"` for the application under the **\<Applications\>** section of the `Config.xml` file.
 

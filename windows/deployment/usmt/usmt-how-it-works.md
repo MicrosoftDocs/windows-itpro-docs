@@ -7,7 +7,7 @@ ms.prod: windows-client
 author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
-ms.date: 01/02/2024
+ms.date: 01/03/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -23,7 +23,7 @@ USMT includes two tools that migrate settings and data: **ScanState** and **Load
 
 ## The ScanState process
 
-When you run the **ScanState** tool on the source computer, it goes through the following process:
+When the **ScanState** tool runs on the source computer, it goes through the following process:
 
 1. It parses and validates the command-line parameters, creates the `ScanState.log` file, and then begins logging.
 
@@ -39,9 +39,9 @@ When you run the **ScanState** tool on the source computer, it goes through the 
 
     The **ScanState** tool collects information about the application settings and user data components from the **.xml** files that are specified on the command line.
 
-    In currently supported versions of Windows, the manifest files control how the operating-system settings are migrated. You can't modify these files. If you want to exclude certain operating-system settings, you must create and modify a `Config.xml` file.
+    In currently supported versions of Windows, the manifest files control how the operating-system settings are migrated. These files can't be modified. To exclude certain operating-system settings, a `Config.xml` file must be created and modified.
 
-1. **ScanState** determines which user profiles should be migrated. By default, all user profiles on the source computer are migrated. However, you can include and exclude users using the User Options. The public profile in a source computer running currently supported versions of Windows is always migrated, and you can't exclude these profiles from the migration.
+1. **ScanState** determines which user profiles should be migrated. By default, all user profiles on the source computer are migrated. However, users can be included and excluded using the [User options](usmt-scanstate-syntax.md#user-options). The System profile and the Public profile in a source computer running currently supported versions of Windows is always migrated, and these profiles can't be excluded from the migration.
 
 1. In the **Scanning** phase, **ScanState** does the following for each user profile selected for migration:
 
@@ -83,11 +83,11 @@ The **LoadState** process is similar to the **ScanState** process. The **ScanSta
 
    **LoadState** obtains information for the application-settings components and user-data components from the migration **.xml** files that are specified by the `LoadState.exe` command.
 
-   In currently supported versions of Windows, the manifest files control how the operating-system settings are migrated. You can't modify these files. If you want to exclude certain operating-system settings, you must create and modify a `Config.xml` file.
+   In currently supported versions of Windows, the manifest files control how the operating-system settings are migrated. These files can't be modified. To exclude certain operating-system settings, a `Config.xml` file must be created and modified.
 
-1. **LoadState** determines which user profiles should be migrated. By default, all user profiles present on the source computer are migrated. However, you can include and exclude users using the **User Options**. The system profile, the Public profile in a source computer running currently supported versions of Windows is always migrated and you can't exclude these profiles from the migration.
+1. **LoadState** determines which user profiles should be migrated. By default, all user profiles present on the source computer are migrated. However, users can be included and excluded using the [User options](usmt-loadstate-syntax.md#user-options). The System profile and the Public profile in a source computer running currently supported versions of Windows is always migrated and these profiles can't be excluded from the migration.
 
-   - If you're migrating local user accounts and if the accounts don't already exist on the destination computer, you must use the `/lac` command-line option. If you don't specify the `/lac` option, any local user accounts that aren't already present on the destination computer, aren't migrated.
+   - If local user accounts are being migrated and if the accounts don't already exist on the destination computer, the `/lac` command-line option must be used. If the `/lac` option isn't specified, any local user accounts that aren't already present on the destination computer, aren't migrated.
 
    - When specified with the `LoadState.exe` command, the `/md` and `/mu` options are processed to rename the user profile on the destination computer.
 
@@ -117,9 +117,9 @@ The **LoadState** process is similar to the **ScanState** process. The **ScanSta
 
        > [!IMPORTANT]
        >
-       > It's important to specify the **.xml** files with the `LoadState.exe` command if you want **LoadState** to use them. Otherwise, any destination-specific rules, such as **\<locationModify\>**, in these **.xml** files are ignored, even if the same **.xml** files were provided when the `ScanState.exe` command ran.
+       > For **LoadState** to use the **.xml** files, it's important to specify them with the `LoadState.exe` command. Otherwise, any destination-specific rules, such as **\<locationModify\>**, in these **.xml** files are ignored, even if the same **.xml** files were provided when the `ScanState.exe` command ran.
 
-1. In the **Apply** phase, **LoadState** writes the migration units that were collected to the various locations on the destination computer. If there are conflicts and there isn't a **\<merge\>** rule for the object, the default behavior for the registry is for the source to overwrite the destination. The default behavior for files is for the source to be renamed incrementally, for example, OriginalFileName(1).OriginalExtension. Some settings, such as fonts, wallpaper, and screen-saver settings, don't take effect until the next time the user logs on. For this reason, you should sign out when the `LoadState.exe` command actions are finished.
+1. In the **Apply** phase, **LoadState** writes the migration units that were collected to the various locations on the destination computer. If there are conflicts and there isn't a **\<merge\>** rule for the object, the default behavior for the registry is for the source to overwrite the destination. The default behavior for files is for the source to be renamed incrementally, for example, OriginalFileName(1).OriginalExtension. Some settings, such as fonts, wallpaper, and screen-saver settings, don't take effect until the next time the user logs on. For this reason, sign out when the `LoadState.exe` command actions are finished.
 
 ## Related articles
 

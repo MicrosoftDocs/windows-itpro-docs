@@ -37,7 +37,7 @@ This article discusses general and security-related best practices when using Us
 
 - **Log off after running the LoadState.**
 
-  Some settings, such as fonts, wallpaper, and screensaver settings, won't take effect until the next time the user logs on. For this reason, sign out after running the LoadState tool.
+  Some settings, such as fonts, wallpaper, and screensaver settings, won't take effect until the next time the user logs on. For this reason, sign out after running the **LoadState** tool.
 
 - **Managed environment.**
 
@@ -45,11 +45,11 @@ This article discusses general and security-related best practices when using Us
 
 - **Chkdsk.exe.**
 
-  Microsoft recommends running **Chkdsk.exe** before running the ScanState and LoadState tools. **Chkdsk.exe** creates a status report for a hard disk drive and lists and corrects common errors. For more information about the **Chkdsk.exe** tool, see [Chkdsk](/previous-versions/windows/it-pro/windows-xp/bb490876(v=technet.10)).
+  Microsoft recommends running **Chkdsk.exe** before running the **ScanState** and **LoadState** tools. **Chkdsk.exe** creates a status report for a hard disk drive and lists and corrects common errors. For more information about the **Chkdsk.exe** tool, see [Chkdsk](/previous-versions/windows/it-pro/windows-xp/bb490876(v=technet.10)).
 
 - **Migrate in groups.**
 
-  If the migration is performed while users are using the network, it's best to migrate user accounts in groups. To minimize the effect on network performance, determine the size of the groups based on the size of each user account. Migrating in phases also allows making sure each phase is successful before starting the next phase. When this method is used, any necessary modifications can be made to the plan between groups.
+  If the migration is performed while users are using the network, it's best to migrate user accounts in groups. To minimize the effect on network performance, determine the size of the groups based on the size of each user account. Migrating in phases also allows making sure each phase is successful before starting the next phase. When this method is, any necessary modifications can be made to the plan between groups.
 
 ## Security best practices
 
@@ -69,7 +69,7 @@ As the authorized administrator, it's the responsibility to protect the privacy 
 
 - **Virus Scan.**
 
-  Microsoft recommends scanning both the source and destination computers for viruses before running USMT. In addition, the destination computer image should be scanned. To help protect data from viruses, Microsoft strongly recommends running an antivirus utility before migration.
+  Microsoft recommends to scan both the source and destination computers for viruses before running USMT. In addition, the destination computer image should be scanned. To help protect data from viruses, Microsoft strongly recommends running an antivirus utility before migration.
 
 - **Maintain security of the file server and the deployment server.**
 
@@ -87,7 +87,7 @@ As the authorized administrator, it's the responsibility to protect the privacy 
 
 - **Specify the same set of mig\*.xml files in both the ScanState and the LoadState tools.**
 
-  If a particular set of mig\*.xml files are used with the ScanState tool, either called through the `/auto` option, or individually through the `/i` option, then the same option should be used to call the exact same mig\*.xml files in the LoadState tool.
+  If a particular set of mig\*.xml files are used with the **ScanState** tool, either called through the `/auto` option, or individually through the `/i` option, then the same option should be used to call the exact same mig\*.xml files in the **LoadState** tool.
 
 - **The \<CustomFileName\> in the migration urlid should match the name of the file.**
 
