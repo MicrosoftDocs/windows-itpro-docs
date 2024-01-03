@@ -70,7 +70,6 @@ Select one of the tabs to see the list of available settings:
 [!INCLUDE [enable-ess-with-supported-peripherals](includes/enable-ess-with-supported-peripherals.md)]
 [!INCLUDE [use-biometrics](includes/use-biometrics.md)]
 
-
 # [:::image type="icon" source="images/smartcard.svg"::: **Smart card settings**](#tab/smartcard)
 
 |Setting Name|CSP|GPO|
@@ -78,7 +77,6 @@ Select one of the tabs to see the list of available settings:
 |[Turn off smart card emulation](#turn-off-smart-card-emulation)|❌|✅|
 |[Allow enumeration of emulated smart card for all users](#allow-enumeration-of-emulated-smart-card-for-all-users)|❌|✅|
 |[Use Windows Hello for Business certificates as smart card certificates](#use-windows-hello-for-business-certificates-as-smart-card-certificates)|✅|✅|
-
 
 [!INCLUDE [allow-enumeration-of-emulated-smart-card-for-all-users](includes/allow-enumeration-of-emulated-smart-card-for-all-users.md)]
 [!INCLUDE [turn-off-smart-card-emulation](includes/turn-off-smart-card-emulation.md)]
