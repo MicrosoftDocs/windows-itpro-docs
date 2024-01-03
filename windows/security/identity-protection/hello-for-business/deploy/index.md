@@ -108,6 +108,18 @@ Cloud Kerberos trust is the only hybrid deployment option that doesn't require t
 
 ## Authentication
 
+### Pass-through authentication
+
+Pass-through authentication provides a simple password validation for Microsoft Entra authentication services. It uses a software agent that runs on one or more on-premises servers to validate the users directly with your on-premises Active Directory. With pass-through authentication (PTA), you synchronize on-premises Active Directory user account objects with Microsoft Entra ID and manage your users on-premises. Allows your users to sign in to both on-premises and Microsoft cloud resources and applications using their on-premises account and password. This configuration validates users' passwords directly against your on-premises Active Directory without sending password hashes to Microsoft Entra ID. Companies with a security requirement to immediately enforce on-premises user account states, password policies, and sign-in hours would use this authentication method. With seamless single sign-on, users are automatically signed in to Microsoft Entra ID when they are on their corporate devices and connected to your corporate network.
+
+### Password hash sync
+
+Password hash sync is the simplest way to enable authentication for on-premises directory objects in Microsoft Entra ID. With password hash sync (PHS), you synchronize your on-premises Active Directory user account objects with Microsoft Entra ID and manage your users on-premises. Hashes of user passwords are synchronized from your on-premises Active Directory to Microsoft Entra ID so that the users have the same password on-premises and in the cloud. When passwords are changed or reset on-premises, the new password hashes are synchronized to Microsoft Entra ID so that your users can always use the same password for cloud resources and on-premises resources. The passwords are never sent to Microsoft Entra ID or stored in Microsoft Entra ID in clear text. Some premium features of Microsoft Entra ID, such as Identity Protection, require PHS regardless of which authentication method is selected. With seamless single sign-on, users are automatically signed in to Microsoft Entra ID when they are on their corporate devices and connected to your corporate network.
+
+### Managed environment
+
+Managed environments are for non-federated environments where Microsoft Entra ID manages the authentication using technologies such as Password Hash Synchronization and Pass-through Authentication rather than a federation service such as Active Directory Federation Services (AD FS).
+
 ### Federation
 
 For cloud-only and hybrid deployments, users and devices must authenticate to Microsoft Entra ID. Authentication to Microsoft Entra ID can use federation to enable single sign-on (SSO) from another identity provider.
@@ -126,7 +138,12 @@ Here's a list of requirements for federated and nonfederated deployments.
 
 ### Device registration
 
-All devices included in the Windows Hello for Business deployment must go through a process called *device registration*. Device registration enables devices to authenticate to an identity provider (IdP).
+All devices included in the Windows Hello for Business deployment must go through a process called *device registration*. Device registration enables devices to be associated and to authentiticate to an identity provider (IdP). Device registration is identified by the *join type*.
+
+Registering a device to Microsoft Entra ID enables you to manage a device's identity. When a device is registered, Microsoft Entra provides the device with an identity that is used to authenticate the device when a user signs-in to Microsoft Entra ID. You can use the identity to enable or disable a device.\
+When combined with a mobile device management (MDM) solution such as Microsoft Intune, the device attributes in Microsoft Entra ID are updated with additional information about the device. This behavior allows you to create conditional access rules that enforce access from devices to meet your standards for security and compliance.
+
+Joining a device is an extension to registering a device. This method provides you with all the benefits of registering a device, and changes the local state of a device. Changing the local state enables your users to sign-in to a device using an organizational work or school account instead of a personal account.
 
 For on-premises deployments, the server running the Active Directory Federation Services (AD FS) role is responsible for device registration. For cloud-only and hybrid deployments, devices must register in Microsoft Entra ID.
 
@@ -136,7 +153,8 @@ For on-premises deployments, the server running the Active Directory Federation 
 | **Hybrid** |Microsoft Entra joined<br>Microsoft Entra hybrid joined<br>Microsoft Entra registered|Microsoft Entra ID|
 | **On-premises** | Active Directory domain joined | AD FS |
 
-For *Microsoft Entra hybrid joined* devices, review the guidance on the [Plan your Microsoft Entra hybrid join implementation][ENTRA-5] page.
+> [!IMPORTANT]
+> For *Microsoft Entra hybrid joined* guidance, review [Plan your Microsoft Entra hybrid join implementation][ENTRA-5].
 
 ### Key registration
 
