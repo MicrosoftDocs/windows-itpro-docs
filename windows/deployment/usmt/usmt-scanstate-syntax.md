@@ -65,7 +65,7 @@ To create an encrypted store using the `Config.xml` file and the default migrati
 | **/hardlink** | Enables the creation of a hard-link migration store at the specified location. The `/nocompress` option must be specified with the `/hardlink` option. |
 | **/encrypt** [{**/key:** *\<KeyString\>* &#124; **/keyfile**:*\<file\>*]} | Encrypts the store with the specified key. Encryption is disabled by default. With this option, the encryption key needs to be specified in one of the following ways: <ul><li>`/key`: *KeyString* specifies the encryption key. If there's a space in *KeyString*, *KeyString* needs to be surrounded with quotation marks (`"`).</li><li>`/keyfile`: *FilePathAndName* specifies a text (`.txt`) file that contains the encryption key.</li></ul><br>*KeyString* is recommended to be at least eight characters long, but it can't exceed 256 characters. The `/key` and `/keyfile` options can't be used on the same command line. The `/encrypt` and `/nocompress` options can't be used on the same command line. <div class="alert">**Important**<br>Use caution when using the `/key` or `keyfile` options. For example, anyone who has access to scripts that run the `ScanState.exe` command with these options also have access to the encryption key.</div><br>The following example shows the `ScanState.exe` command and the `/key` option:<br>`ScanState.exe /i:MigDocs.xml /i:MigApp.xml \server\share\migration\mystore /encrypt /key:mykey` |
 | **/encrypt**:*\<EncryptionStrength\>* | The `/encrypt` option accepts a command-line parameter to define the encryption strength to be used for encryption of the migration store. For more information about supported encryption algorithms, see [Migration Store Encryption](usmt-migration-store-encryption.md). |
-| **/nocompress** | Disables compression of data and saves the files to a hidden folder named &quot;File&quot; at *StorePath*\USMT. Compression is enabled by default. Combining the `/nocompress` option with the `/hardlink` option generates a hard-link migration store. The uncompressed store can be used to view what USMT stored, troubleshoot a problem, or run an antivirus utility against the files. This option should only be used in testing environments. Microsoft recommends using a compressed store during production migrations, unless combining the `/nocompress` option with the `/hardlink` option.<br><br>The `/nocompress` and `/encrypt` options can't be used together in one statement on the command line. However, if an uncompressed store is migrated, the `LoadState.exe` command migrates each file directly from the store to the correct location on the destination computer without a temporary location.<br><br>For example:<br>`ScanState.exe /i:MigDocs.xml /i:MigApp.xml \server\share\migration\mystore /nocompress` |
+| **/nocompress** | Disables compression of data and saves the files to a hidden folder named "File" at *StorePath*\USMT. Compression is enabled by default. Combining the `/nocompress` option with the `/hardlink` option generates a hard-link migration store. The uncompressed store can be used to view what USMT stored, troubleshoot a problem, or run an antivirus utility against the files. This option should only be used in testing environments. Microsoft recommends using a compressed store during production migrations, unless combining the `/nocompress` option with the `/hardlink` option.<br><br>The `/nocompress` and `/encrypt` options can't be used together in one statement on the command line. However, if an uncompressed store is migrated, the `LoadState.exe` command migrates each file directly from the store to the correct location on the destination computer without a temporary location.<br><br>For example:<br>`ScanState.exe /i:MigDocs.xml /i:MigApp.xml \server\share\migration\mystore /nocompress` |
 
 ## Run the ScanState command on an offline Windows system
 
@@ -106,7 +106,7 @@ USMT provides the following options to specify what files to migrate.
 
 | Command-Line Option | Description |
 |-----|-----|
-| **/i:**[*Path*]*FileName* | **(include)**<br><br>Specifies an **.xml** file that contains rules that define what user, application, or system state to migrate. This option can be specified multiple times to include all of the **.xml** files (`MigApp.xml`, `MigDocs.xml`, and any custom **.xml** files that are created). *Path* can be either a relative or full path. If the *Path* variable isn't specified, then *FileName* must be located in the current directory. For more information about which files to specify, see the &quot;XML Files&quot; section of the [Frequently asked questions](usmt-faq.yml) article. |
+| **/i:**[*Path*]*FileName* | **(include)**<br><br>Specifies an **.xml** file that contains rules that define what user, application, or system state to migrate. This option can be specified multiple times to include all of the **.xml** files (`MigApp.xml`, `MigDocs.xml`, and any custom **.xml** files that are created). *Path* can be either a relative or full path. If the *Path* variable isn't specified, then *FileName* must be located in the current directory. For more information about which files to specify, see the \"XML Files\" section of the [Frequently asked questions](usmt-faq.yml) article. |
 | **/genconfig:**[*Path*]*FileName* | (Generate **Config.xml**)<br><br>Generates the optional `Config.xml` file, but doesn't create a migration store. To ensure that this file contains everything that needs to be migrated, create this file on a source computer that contains all of the:<ul><li>components</li><li>applications</li><li>settings</li><li></ul>present on the destination computers. In addition, the other migration **.xml** files should be specified, using the **/i** option, when this option is specified.<br><br>After this file is created, it can be used with the `ScanState.exe` command using the **/config** option.<br><br>The only options that can be specified with this option are the `/i`, `/v`, and `/l` options. *StorePath* can't be specified, because the `/genconfig` option doesn't create a store. *Path* can be either a relative or full path. If the *Path* variable isn't specified, then *FileName* is created in the current directory.<br><br>Examples: <ul><li>The following example creates a `Config.xml` file in the current directory:<br>`ScanState.exe /i:MigApp.xml /i:MigDocs.xml /genconfig:Config.xml /v:13`</li></ul> |
 | **/config:**[*Path*]*FileName* | Specifies the `Config.xml` file that the `ScanState.exe` command should use to create the store. This option can't be used more than once on the command line. *Path* can be either a relative or full path. If the *Path* variable isn't specified, then *FileName* must be located in the current directory.<br><br>The following example creates a store using the `Config.xml` file, `MigDocs.xml`, and `MigApp.xml` files:<br>`ScanState.exe \server\share\migration\mystore /config:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:ScanState.log`<br><br>The following example migrates the files and settings to the destination computer using the `Config.xml`, `MigDocs.xml`, and `MigApp.xml` files:<br>`LoadState.exe  \server\share\migration\mystore /config:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:LoadState.log` |
 | **/auto:** *path to script files* | This option enables specifying the location of the default **.xml** files. If no path is specified, USMT references the directory where the USMT binaries are located. The `/auto` option has the same effect as using the following options: `/i: MigDocs.xml /i:MigApp.xml /v:5`. |
@@ -130,7 +130,7 @@ USMT provides several options that can be used to analyze problems that occur du
 | **/c** | When this option is specified, the `ScanState.exe` command continues to run, even if non-fatal errors occur. Any files or settings that cause an error are logged in the progress log. For example, if there's a large file that doesn't fit in the store, the `ScanState.exe` command logs an error and continue with the migration. In addition, if a file is open or in use by an application, USMT might not be able to migrate the file and logs an error. Without the `/c` option, the `ScanState.exe` command exits on the first error.<br><br>The \<**ErrorControl**\> section in the `Config.xml` file can be used to specify which file or registry read/write errors can be safely ignored and which might cause the migration to fail. This advantage in the `Config.xml` file enables the `/c` command-line option to safely skip all input/output (I/O) errors in the environment. In addition, the /`genconfig` option now generates a sample \<**ErrorControl**\> section that is enabled by specifying error messages and desired behaviors in the `Config.xml` file. |
 | **/r:***\<TimesToRetry\>* | **(Retry)**<br><br>Specifies the number of times to retry when an error occurs while saving the user state to a server. The default is three times. This option is useful in environments where network connectivity isn't reliable.<br><br>When the user state is stored, the `/r` option can't recover data that is lost due to a network-hardware failure, such as a faulty or disconnected network cable, or when a virtual private network (VPN) connection fails. The retry option is intended for large, busy networks where connectivity is satisfactory, but communication latency is a problem. |
 | **/w:***\<SecondsBeforeRetry\>* | **(Wait)**<br><br>Specifies the time to wait, in seconds, before retrying a network file operation. The default is 1 second. |
-| **/p:***\<pathToFile\>* | When the `ScanState.exe` command runs, it creates an **.xml** file in the path specified. This **.xml** file includes improved space estimations for the migration store. The following example shows how to create this **.xml** file:<br>`ScanState.exe C:\MigrationLocation [additional parameters]`<br>`/p:"C:\MigrationStoreSize.xml"`<br><br>For more information, see [Estimate Migration Store Size](usmt-estimate-migration-store-size.md).<br><br>To preserve the functionality of existing applications or scripts that require the previous behavior of USMT, the `/p` option can be used, without specifying *&quot;pathtoafile&quot;*, in USMT. If only the `/p` option is specified, the storage space estimations are created in the same manner as with USMT 3.x releases. |
+| **/p:***\<pathToFile\>* | When the `ScanState.exe` command runs, it creates an **.xml** file in the path specified. This **.xml** file includes improved space estimations for the migration store. The following example shows how to create this **.xml** file:<br>`ScanState.exe C:\MigrationLocation [additional parameters]`<br>`/p:"C:\MigrationStoreSize.xml"`<br><br>For more information, see [Estimate Migration Store Size](usmt-estimate-migration-store-size.md).<br><br>To preserve the functionality of existing applications or scripts that require the previous behavior of USMT, the `/p` option can be used, without specifying *\"pathtoafile\"*, in USMT. If only the `/p` option is specified, the storage space estimations are created in the same manner as with USMT 3.x releases. |
 | **/?** or **/help** | Displays Help at the command line. |
 
 ## User options
@@ -196,37 +196,37 @@ For more information, see [Migrate EFS Files and Certificates](usmt-migrate-efs-
 
 ## Incompatible command-line options
 
-The following table indicates which command-line options aren't compatible with the `ScanState.exe` command. If the table entry for a particular combination is blank, the options are compatible and they can be used together. The X symbol means that the options aren't compatible. For example, the `/nocompress` option can't be used with the `/encrypt` option.
+The following table indicates which command-line options aren't compatible with the `ScanState.exe` command. If the table entry for a particular combination has a ✔️, the options are compatible and they can be used together. The ❌ symbol means that the options aren't compatible. For example, the `/nocompress` option can't be used with the `/encrypt` option.
 
 |Command-Line Option|/keyfile|/nocompress|/genconfig|/all|
 |--- |--- |--- |--- |--- |
-|**/i**|||||
-|**/o**|||||
-|**/v**|||||
-|**/nocompress**||||N/A|
-|**/localonly**|||❌||
-|**/key**|❌||❌||
-|**/encrypt**|Required*|❌|❌||
-|**/keyfile**|N/A||❌||
-|**/l**|||||
-|**/listfiles**|||❌||
-|**/progress**|||❌||
-|**/r**|||❌||
-|**/w**|||❌||
-|**/c**|||❌||
-|**/p**|||❌|N/A|
-|**/all**|||❌||
-|**/ui**|||❌|❌|
-|**/ue**|||❌|❌|
-|**/uel**|||❌|❌|
-|**/efs**:*\<option\>*|||❌||
-|**/genconfig**|||N/A||
-|**/config**|||❌||
-|*\<StorePath\>*|||❌||
+|**/i**| ✔️ | ✔️ | ✔️ | ✔️ |
+|**/o**| ✔️ | ✔️ | ✔️ | ✔️ |
+|**/v**| ✔️ | ✔️ | ✔️ | ✔️ |
+|**/nocompress**| ✔️ | ✔️ | ✔️ |N/A|
+|**/localonly**| ✔️ | ✔️ | ❌ | ✔️ |
+|**/key**| ❌ | ✔️ | ❌ | ✔️ |
+|**/encrypt**|Required*| ❌ | ❌ | ✔️ |
+|**/keyfile**|N/A| ✔️ | ❌ | ✔️ |
+|**/l**| ✔️ | ✔️ | ✔️ | ✔️ |
+|**/listfiles**| ✔️ | ✔️ | ❌ | ✔️ |
+|**/progress**| ✔️ | ✔️ | ❌ | ✔️ |
+|**/r**| ✔️ | ✔️ | ❌ | ✔️ |
+|**/w**| ✔️ | ✔️ | ❌ | ✔️ |
+|**/c**| ✔️ | ✔️ | ❌ | ✔️ |
+|**/p**| ✔️ | ✔️ | ❌ |N/A|
+|**/all**| ✔️ | ✔️ | ❌ | ✔️ |
+|**/ui**| ✔️ | ✔️ | ❌ | ❌ |
+|**/ue**| ✔️ | ✔️ | ❌ | ❌ |
+|**/uel**| ✔️ | ✔️ | ❌ | ❌ |
+|**/efs**:*\<option\>*| ✔️ | ✔️ | ❌ | ✔️ |
+|**/genconfig**| ✔️ | ✔️ |N/A| ✔️ |
+|**/config**| ✔️ | ✔️ | ❌ | ✔️ |
+|*\<StorePath\>*| ✔️ | ✔️ | ❌ | ✔️ |
 
 > [!NOTE]
 >
-> The `/key` or `/keyfile` option must be specified with the `/encrypt` option.
+> Either the `/key` or `/keyfile` option must be specified with the `/encrypt` option.
 
 ## Related articles
 

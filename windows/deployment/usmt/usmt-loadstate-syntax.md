@@ -126,37 +126,37 @@ The `/uel`, `/ue` and `/ui` options can be used together to migrate only the use
 
 ## Incompatible command-line options
 
-The following table indicates which command-line options aren't compatible with the `LoadState.exe` command. If the table entry for a particular combination is blank, the options are compatible, and they can be used together. The ❌ symbol means that the options aren't compatible. For example, the `/nocompress` option can't be used with the `/encrypt` option.
+The following table indicates which command-line options aren't compatible with the `LoadState.exe` command. If the table entry for a particular combination has a ✔️, the options are compatible, and they can be used together. The ❌ symbol means that the options aren't compatible. For example, the `/nocompress` option can't be used with the `/encrypt` option.
 
 | Command-Line Option | /keyfile | /nocompress | /genconfig | /all |
 |--- |--- |--- |--- |--- |
-| **/i** |  |  |  |  |
-| **/v** |  |  |  |  |
-| **/nocompress** |  | N/A | ❌ |  |
-| **/key** | ❌ |  | ❌ |  |
-| **/decrypt** | Required* | ❌ | ❌ |  |
-| **/keyfile** | N/A |  | ❌ |  |
-| **/l** |  |  |  |  |
-| **/progress** |  |  | ❌ |  |
-| **/r** |  |  | ❌ |  |
-| **/w** |  |  | ❌ |  |
-| **/c** |  |  | ❌ |  |
-| **/p** |  |  | ❌ | N/A |
-| **/all** |  |  | ❌ |  |
-| **/ui** |  |  | ❌ | ❌ |
-| **/ue** |  |  | ❌ | ❌ |
-| **/uel** |  |  | ❌ | ❌ |
-| **/genconfig** |  |  | N/A |  |
-| **/config** |  |  | ❌ |  |
-| *StorePath* |  |  |  |  |
-| **/md** |  |  |  |  |
-| **/mu** |  |  |  |  |
-| **/lae** |  |  |  |  |
-| **/lac** |  |  |  |  |
+| **/i** | ✔️ | ✔️ | ✔️ | ✔️ |
+| **/v** | ✔️ | ✔️ | ✔️ | ✔️ |
+| **/nocompress** | ✔️ | N/A | ❌ | ✔️ |
+| **/key** | ❌ | ✔️ | ❌ | ✔️ |
+| **/decrypt** | Required* | ❌ | ❌ | ✔️ |
+| **/keyfile** | N/A | ✔️ | ❌ | ✔️ |
+| **/l** | ✔️ | ✔️ | ✔️ | ✔️ |
+| **/progress** | ✔️ | ✔️ | ❌ | ✔️ |
+| **/r** | ✔️ | ✔️ | ❌ | ✔️ |
+| **/w** | ✔️ | ✔️ | ❌ | ✔️ |
+| **/c** | ✔️ | ✔️ | ❌ | ✔️ |
+| **/p** | ✔️ | ✔️ | ❌ | N/A |
+| **/all** | ✔️ | ✔️ | ❌ | ✔️ |
+| **/ui** | ✔️ | ✔️ | ❌ | ❌ |
+| **/ue** | ✔️ | ✔️ | ❌ | ❌ |
+| **/uel** | ✔️ | ✔️ | ❌ | ❌ |
+| **/genconfig** | ✔️ | ✔️ | N/A | ✔️ |
+| **/config** | ✔️ | ✔️ | ❌ | ✔️ |
+| *StorePath* | ✔️ | ✔️ | ✔️ | ✔️ |
+| **/md** | ✔️ | ✔️ | ✔️ | ✔️ |
+| **/mu** | ✔️ | ✔️ | ✔️ | ✔️ |
+| **/lae** | ✔️ | ✔️ | ✔️ | ✔️ |
+| **/lac** | ✔️ | ✔️ | ✔️ | ✔️ |
 
 > [!NOTE]
 >
-> You must specify either the `/key` or `/keyfile` option with the `/encrypt` option.
+> Either the `/key` or `/keyfile` option must be specified with the `/decrypt` option.
 
 ## Related articles
 
