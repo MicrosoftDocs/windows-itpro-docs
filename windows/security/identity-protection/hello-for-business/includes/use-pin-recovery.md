@@ -18,7 +18,7 @@ PIN recovery requires the user to perform multi-factor authentication to Microso
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/`[EnablePinRecovery](/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciesenablepinrecovery) |
+| **CSP** | `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/`[EnablePinRecovery](/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciesenablepinrecovery) <br> `./User/Vendor/MSFT/PassportForWork/{TenantId}/Policies/`[EnablePinRecovery](/windows/client-management/mdm/passportforwork-csp#usertenantidpoliciesenablepinrecovery) |
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Hello for Business** |
 
 For more information, see [PIN reset](../pin-reset.md).

@@ -60,7 +60,9 @@ There are three deployment models from which you can choose:
 
 ### Trust types
 
-A deployment's trust type defines how Windows Hello for Business clients **authenticate to Active Directory**. For this reason, the trust type isn't applicable to a cloud-only deployment model.
+A deployment's trust type defines how Windows Hello for Business clients **authenticate to Active Directory**. The trust type doesn't affect authentication to Microsoft Entra ID. For this reason, the trust type isn't applicable to a cloud-only deployment model.
+
+Windows Hello for Business authentication to Microsoft Entra ID always uses the key, not a certificate (excluding smart card authentication in a federated environment).
 
 The trust type determines whether you issue authentication certificates to your users. One trust model isn't more secure than the other.
 
@@ -106,9 +108,9 @@ Cloud Kerberos trust is the only hybrid deployment option that doesn't require t
 
 ## Authentication
 
-For cloud-only and hybrid deployments, users and devices must authenticate to Microsoft Entra ID. Authentication to Microsoft Entra ID can use federation to enable single sign-on (SSO) from another identity provider.
+### Federation
 
-For on-premises deployments, the identity provider is the on-premises server running the Active Directory Federation Services (AD FS) role.
+For cloud-only and hybrid deployments, users and devices must authenticate to Microsoft Entra ID. Authentication to Microsoft Entra ID can use federation to enable single sign-on (SSO) from another identity provider.
 
 Here's a list of requirements for federated and nonfederated deployments.
 
@@ -121,18 +123,18 @@ Here's a list of requirements for federated and nonfederated deployments.
 |    **🔲** | **Hybrid** | Key | federated | AD FS or third-party federation service. It doesn't support [PTA][ENTRA-7] or [PHS][ENTRA-6] |
 |    **🔲** | **Hybrid** | Certificate | non-federated | AD FS |
 |    **🔲** | **Hybrid** | Certificate | federated | AD FS |
-|    **🔲** | **On-premises** | Certificate | n/a | AD FS |
-|    **🔲** | **On-premises** | Certificate | n/a | AD FS |
 
 ### Device registration
 
-All devices included in the Windows Hello for Business deployment must go through a process called *device registration*. Device registration enables devices to authenticate to identity providers:
+All devices included in the Windows Hello for Business deployment must go through a process called *device registration*. Device registration enables devices to authenticate to an identity provider (IdP).
 
-| Deployment model | Device registration IdP |
-|-|-|
-| **Cloud-only** |Microsoft Entra ID |
-| **Hybrid** |Microsoft Entra ID|
-| **On-premises** | AD FS |
+For on-premises deployments, the server running the Active Directory Federation Services (AD FS) role is responsible for device registration. For cloud-only and hybrid deployments, devices must register in Microsoft Entra ID.
+
+| Deployment model | Join type | Device registration IdP |
+|-|-|-|
+| **Cloud-only** |Microsoft Entra joined<br>Microsoft Entra registered|Microsoft Entra ID |
+| **Hybrid** |Microsoft Entra joined<br>Microsoft Entra hybrid joined<br>Microsoft Entra registered|Microsoft Entra ID|
+| **On-premises** | Active Directory domain joined | AD FS |
 
 For *Microsoft Entra hybrid joined* devices, review the guidance on the [Plan your Microsoft Entra hybrid join implementation][ENTRA-5] page.
 

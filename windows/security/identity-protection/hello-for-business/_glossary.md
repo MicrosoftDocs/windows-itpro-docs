@@ -21,40 +21,9 @@ Many existing devices that will upgrade to Windows 10 won't have a TPM, or the T
 
 In the issued AIK certificate, a special OID is added to attest that endorsement certificate was used during the attestation process. This information can be used by a relying party to decide whether to reject devices that are attested using AIK certificates without an endorsement certificate or accept them. Another scenario can be to not allow access to high-value assets from devices that are attested by an AIK certificate that's not backed by an endorsement certificate.
 
-## Microsoft Entra join
-
-Microsoft Entra join is intended for organizations that desire to be cloud-first or cloud-only. There's no restriction on the size or type of organizations that can deploy Microsoft Entra join. Microsoft Entra join also works in a hybrid environment and can enable access to on-premises applications and resources.
-
-## Microsoft Entra registration
-
-The goal of Microsoft Entra registered devices is to provide you with support for the _bring your own device_ (BYOD) scenario. In this scenario, a user can access your organization's Microsoft Entra ID-controlled resources using a personal device.
-
-## Certificate trust
-
-The certificate trust model uses a securely issued certificate based on the user's Windows Hello for Business identity to authenticate to on-premises Active Directory. The certificate trust model is supported in hybrid and on-premises deployments and is compatible with Windows Server 2008 R2 and later domain controllers.
-
-## Cloud deployment
-
-The Windows Hello for Business cloud deployment is exclusively for organizations using cloud-based identities and resources. Device management is accomplished using Intune or a modern management alternative. Cloud deployments use Microsoft Entra joined or Microsoft Entra registered devices.
-
 ## Cloud experience host
 
 In Windows 10 and Windows 11, cloud experience host is an application used while joining the workplace environment or Microsoft Entra ID for rendering the experience when collecting your company-provided credentials. Once you enroll your device to your workplace environment or Microsoft Entra ID, your organization will be able to manage your PC and collect information about you (including your location). It might add or remove apps or content, change settings, disable features, prevent you from removing your company account, or reset your PC.
-
-## Cloud Kerberos trust
-
-The cloud Kerberos trust model offers a simplified deployment experience, when compared to the other trust types.\
-With cloud Kerberos trust, there's no need to deploy certificates to the users or to the domain controllers, which is ideal for environments without an existing PKI.
-
-Giving the simplicity offered by this model, cloud Kerberos trust is the recommended model when compared to the key trust model. It is also the preferred deployment model if you do not need to support certificate authentication scenarios.
-
-## Deployment type
-
-Windows Hello for Business has three deployment models to accommodate the needs of different organizations. The three deployment models include:
-
-- Cloud
-- Hybrid
-- On-premises
 
 ## Endorsement key
 
@@ -67,29 +36,9 @@ The endorsement key acts as an identity card for the TPM.
 The endorsement key is often accompanied by one or two digital certificates:
 
 - One certificate is produced by the TPM manufacturer and is called the **endorsement certificate**. The endorsement certificate is used to prove the authenticity of the TPM (for example, that it's a real TPM manufactured by a specific chip maker) to local processes, applications, or cloud services. The endorsement certificate is created during manufacturing or the first time the TPM is initialized by communicating with an online service.
-
 - The other certificate is produced by the platform builder and is called the **platform certificate** to indicate that a specific TPM is integrated with a certain device.
 
-For certain devices that use firmware-based TPM produced by Intel or Qualcomm, the endorsement certificate is created when the TPM is initialized during the OOBE of Windows 10 and Windows 11.
-
-## Federated environment
-
-Primarily for large enterprise organizations with more complex authentication requirements, on-premises directory objects are synchronized with Microsoft Entra ID and users accounts are managed on-premises. With AD FS, users have the same password on-premises and in the cloud and they don't have to sign in again to use Microsoft cloud services. This federated authentication model can provide extra authentication requirements, such as smart card-based authentication or a third-party multi-factor authentication and is typically required when organizations have an authentication requirement not natively supported by Microsoft Entra ID.
-
-## Microsoft Entra hybrid join
-
-For more than a decade, many organizations have used the domain join to their on-premises Active Directory to enable:
-
-- IT departments to manage work-owned devices from a central location.
-- Users to sign in to their devices with their Active Directory work or school accounts.
-
-Typically, organizations with an on-premises footprint rely on imaging methods to provision devices, and they often use or group policy to manage them.
-
-If your environment has an on-premises AD footprint and you also want benefit from the capabilities provided by Microsoft Entra ID, you can implement Microsoft Entra hybrid joined devices. These devices are joined to both your on-premises Active Directory and your Microsoft Entra ID.
-
-## Hybrid deployment
-
-The Windows Hello for Business hybrid deployment is for organizations that have both on-premises and cloud resources that are accessed using a managed or federated identity that's synchronized with Microsoft Entra ID. Hybrid deployments support devices that are Microsoft Entra registered, Microsoft Entra joined, and Microsoft Entra hybrid joined. The Hybrid deployment model supports three trust types for on-premises authentication: cloud Kerberos trust, key trust and certificate trust.
+For certain devices that use firmware-based TPM produced by Intel or Qualcomm, the endorsement certificate is created when the TPM is initialized during Windows OOBE.
 
 ## Join type
 
@@ -101,17 +50,9 @@ When combined with a mobile device management (MDM) solution such as Microsoft I
 
 Joining a device is an extension to registering a device. This method provides you with all the benefits of registering a device, and changes the local state of a device. Changing the local state enables your users to sign-in to a device using an organizational work or school account instead of a personal account.
 
-## Key trust
-
-The key trust model uses the user's Windows Hello for Business identity to authenticate to on-premises Active Directory. The key trust model is supported in hybrid and on-premises deployments and requires Windows Server 2016 domain controllers.
-
 ## Managed environment
 
 Managed environments are for non-federated environments where Microsoft Entra ID manages the authentication using technologies such as Password Hash Synchronization and Pass-through Authentication rather than a federation service such as Active Directory Federation Services (ADFS).
-
-## On-premises deployment
-
-The Windows Hello for Business on-premises deployment is for organizations that exclusively have on-premises resources that are accessed using Active Directory identities. On-premises deployments support domain joined devices. The on-premises deployment model supports two authentication trust types, key trust and certificate trust.
 
 ## Pass-through authentication
 
@@ -133,45 +74,3 @@ The PRT is needed for SSO. Without it, the user will be prompted for credentials
 
 The storage root key (SRK) is also an asymmetric key pair (RSA with a minimum of 2048-bits length). The SRK has a major role and is used to protect TPM keys, so that these keys can't be used without the TPM. The SRK key is created when the ownership of the TPM is taken.
 
-## Trust type
-
-The trust type determines how a user authenticates to the Active Directory to access on-premises resources. There are two trust types, key trust and certificate trust. The hybrid and on-premises deployment models support both trust types. The trust type doesn't affect authentication to Microsoft Entra ID. Windows Hello for Business authentication to Microsoft Entra ID always uses the key, not a certificate (excluding smart card authentication in a federated environment).
-
-## Trusted platform module
-
-A trusted platform module (TPM) is a hardware component that provides unique security features.
-
-Windows uses security characteristics of a TPM for the following functions:
-
-- Measuring boot integrity sequence. Based on that sequence, it automatically unlocks BitLocker-protected drives
-- Protecting credentials
-- Health attestation
-
-A TPM implements controls that meet the specification described by the Trusted Computing Group (TCG). There are currently two versions of the TPM specification produced by TCG that aren't compatible with each other:
-
-- The first TPM specification, version 1.2, was published in February 2005 by the TCG and standardized under ISO / IEC 11889 standard.
-- The latest TPM specification, referred to as TPM 2.0, was released in April 2014 and has been approved by the ISO/IEC Joint Technical Committee (JTC) as ISO/IEC 11889:2015.
-
-Windows 10 and Windows 11 use the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows](../../hardware-security/tpm/tpm-recommendations.md).
-
-Windows recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 and Windows 11 support only TPM 2.0.
-
-TPM 2.0 provides a major revision to the capabilities over TPM 1.2:
-
-- Update cryptography strength to meet modern security needs
-  - Support for SHA-256 for PCRs
-  - Support for HMAC command
-- Cryptographic algorithms flexibility to support government needs
-  - TPM 1.2 is severely restricted in terms of what algorithms it can support
-  - TPM 2.0 can support arbitrary algorithms with minor updates to the TCG specification documents
-- Consistency across implementations
-  - The TPM 1.2 specification allows vendors wide latitude when choosing implementation details
-  - TPM 2.0 standardizes much of this behavior
-
-In a simplified manner, the TPM is a passive component with limited resources. It can calculate random numbers, RSA keys, decrypt short data, store hashes taken when booting the device. A TPM incorporates in a single component:
-
-- An RSA 2048-bit key generator
-- A random number generator
-- Nonvolatile memory for storing EK, SRK, and AIK keys
-- A cryptographic engine to encrypt, decrypt, and sign
-- Volatile memory for storing the PCRs and RSA keys

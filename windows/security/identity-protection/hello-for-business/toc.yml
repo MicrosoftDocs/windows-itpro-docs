@@ -3,12 +3,12 @@ items:
   href: index.md
 - name: How Windows Hello for Business works
   href: how-it-works.md
+- name: Configure Windows Hello for Business
+  href: configure.md
 - name: Deployment guides
   href: deploy/toc.yml
 - name: How-to-guides
   items:
-  - name: Configure Windows Hello for Business
-    href: configure.md
   - name: Configure PIN reset
     href: pin-reset.md
   - name: Configure dual enrollment
@@ -37,8 +37,6 @@ items:
     href: webauthn-apis.md
   - name: Windows Hello Enhanced Security Sign-in (ESS) 🔗
     href: /windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security
-  - name: Technology and terminology
-    href: glossary.md
   - name: Frequently Asked Questions (FAQ)
     href: hello-faq.yml
   - name: Windows Hello for Business videos

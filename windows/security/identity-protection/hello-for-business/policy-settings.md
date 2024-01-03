@@ -46,6 +46,7 @@ Select one of the tabs to see the list of available settings:
 |[Require lowercase letters](#require-lowercase-letters)|✅|✅|
 |[Require special characters](#require-special-characters)|✅|✅|
 |[Require uppercase letters](#require-uppercase-letters)|✅|✅|
+|[Use PIN recovery](#use-pin-recovery)|✅|✅|
 
 [!INCLUDE [expiration](includes/expiration.md)]
 [!INCLUDE [history](includes/history.md)]
