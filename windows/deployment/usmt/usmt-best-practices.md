@@ -25,7 +25,7 @@ This article discusses general and security-related best practices when using Us
 
 - **Don't use MigUser.xml and MigDocs.xml together.**
 
-  If you use both **.xml** files, some migrated files can be duplicated if conflicting instructions are given about target locations. You can use the `/genmigxml` command-line option to determine which files are included in the migration, and to determine if any modifications are necessary. For more information, see [Identify file types, files, and folders](usmt-identify-file-types-files-and-folders.md).
+  If both `MigUser.xml` and `MigDocs.xml` are used together, some migrated files can be duplicated if conflicting instructions are given about target locations. The `/genmigxml` command-line option can be used to determine which files are included in the migration, and to determine if any modifications are necessary. For more information, see [Identify file types, files, and folders](usmt-identify-file-types-files-and-folders.md).
 
 - **Use MigDocs.xml for a better migration experience.**
 
@@ -33,27 +33,27 @@ This article discusses general and security-related best practices when using Us
 
 - **Close all applications before running either the ScanState or LoadState tools.**
 
-  Although using the `/vsc` switch can allow the migration of many files that are open with another application, it's a best practice to close all applications in order to ensure all files and settings migrate. Without the `/vsc` or `/c` switch, USMT fails when it can't migrate a file or setting. When you use the `/c` option, USMT ignores any files or settings that it can't migrate and log an error each time.
+  Although using the `/vsc` switch can allow the migration of many files that are open with another application, it's a best practice to close all applications in order to ensure all files and settings migrate. Without the `/vsc` or `/c` switch, USMT fails when it can't migrate a file or setting. When the `/c` option is used, USMT ignores any files or settings that it can't migrate and log an error each time.
 
-- **Log off after you run the LoadState.**
+- **Log off after running the LoadState.**
 
-  Some settings, such as fonts, wallpaper, and screensaver settings, won't take effect until the next time the user logs on. For this reason, you should sign out after you run the LoadState tool.
+  Some settings, such as fonts, wallpaper, and screensaver settings, won't take effect until the next time the user logs on. For this reason, sign out after running the LoadState tool.
 
 - **Managed environment.**
 
-  To create a managed environment, you can move all of the end user's documents into **Documents** folder (%CSIDL\_PERSONAL%). Microsoft recommends that you migrate files into the smallest-possible number of folders on the destination computer. Minimizing folders helps to clean up files on the destination computer if the `LoadState.exe` command fails before completion.
+  To create a managed environment, all of the end user's documents can be moved into the **Documents** folder (%CSIDL\_PERSONAL%). Microsoft recommends migrating files into the smallest-possible number of folders on the destination computer. Minimizing folders helps to clean up files on the destination computer if the `LoadState.exe` command fails before completion.
 
 - **Chkdsk.exe.**
 
-  Microsoft recommends that you run **Chkdsk.exe** before running the ScanState and LoadState tools. **Chkdsk.exe** creates a status report for a hard disk drive and lists and corrects common errors. For more information about the **Chkdsk.exe** tool, see [Chkdsk](/previous-versions/windows/it-pro/windows-xp/bb490876(v=technet.10)).
+  Microsoft recommends running **Chkdsk.exe** before running the ScanState and LoadState tools. **Chkdsk.exe** creates a status report for a hard disk drive and lists and corrects common errors. For more information about the **Chkdsk.exe** tool, see [Chkdsk](/previous-versions/windows/it-pro/windows-xp/bb490876(v=technet.10)).
 
 - **Migrate in groups.**
 
-  If you decide to perform the migration while users are using the network, it's best to migrate user accounts in groups. To minimize the effect on network performance, determine the size of the groups based on the size of each user account. Migrating in phases also allows you to make sure each phase is successful before starting the next phase. Using this method, you can make any necessary modifications to the plan between groups.
+  If the migration is performed while users are using the network, it's best to migrate user accounts in groups. To minimize the effect on network performance, determine the size of the groups based on the size of each user account. Migrating in phases also allows making sure each phase is successful before starting the next phase. When this method is used, any necessary modifications can be made to the plan between groups.
 
 ## Security best practices
 
-As the authorized administrator, it's the responsibility to protect the privacy of the users and maintain security during and after the migration. In particular, you must consider the following issues:
+As the authorized administrator, it's the responsibility to protect the privacy of the users and maintain security during and after the migration. In particular, the following issues must be considered:
 
 - **Encrypting File System (EFS).**
 
@@ -61,7 +61,7 @@ As the authorized administrator, it's the responsibility to protect the privacy 
 
   > [!NOTE]
   >
-  > If you migrate an encrypted file without also migrating the certificate, end users won't be able to access the file after the migration.
+  > If an encrypted file is migrated without also migrating the certificate, end users won't be able to access the file after the migration.
 
 - **Encrypt the store.**
 
@@ -69,11 +69,11 @@ As the authorized administrator, it's the responsibility to protect the privacy 
 
 - **Virus Scan.**
 
-  Microsoft recommends that you scan both the source and destination computers for viruses before running USMT. In addition, you should scan the destination computer image. To help protect data from viruses, Microsoft strongly recommends running an antivirus utility before migration.
+  Microsoft recommends scanning both the source and destination computers for viruses before running USMT. In addition, the destination computer image should be scanned. To help protect data from viruses, Microsoft strongly recommends running an antivirus utility before migration.
 
 - **Maintain security of the file server and the deployment server.**
 
-  Microsoft recommends that you manage the security of the file and deployment servers. It's important to make sure that the file server where you save the store is secure. You must also secure the deployment server, to ensure that the user data that is in the log files isn't exposed. Microsoft also recommends that you only transmit data over a secure Internet connection, such as a virtual private network. For more information about network security, see [Microsoft Security Compliance Manager](https://www.microsoft.com/download/details.aspx?id=53353).
+  Microsoft recommends managing the security of the file and deployment servers. It's important to make sure that the file server where the store is saved is secure. The deployment server must also be secured to ensure that the user data that is in the log files isn't exposed. Microsoft also recommends to only transmit data over a secure network connection, such as a virtual private network. For more information about network security, see [Microsoft Security Compliance Manager](https://www.microsoft.com/download/details.aspx?id=53353).
 
 - **Password Migration.**
 
@@ -81,13 +81,13 @@ As the authorized administrator, it's the responsibility to protect the privacy 
 
 - **Local Account Creation.**
 
-  Before you migrate local accounts, see the Migrating Local Accounts section in the [Identify Users](usmt-identify-users.md) article.
+  Before local accounts are migrated, see the Migrating Local Accounts section in the [Identify Users](usmt-identify-users.md) article.
 
 ## XML file best practices
 
 - **Specify the same set of mig\*.xml files in both the ScanState and the LoadState tools.**
 
-  If you used a particular set of mig\*.xml files in the ScanState tool, either called through the `/auto` option, or individually through the `/i` option, then you should use same option to call the exact same mig\*.xml files in the LoadState tool.
+  If a particular set of mig\*.xml files are used with the ScanState tool, either called through the `/auto` option, or individually through the `/i` option, then the same option should be used to call the exact same mig\*.xml files in the LoadState tool.
 
 - **The \<CustomFileName\> in the migration urlid should match the name of the file.**
 
@@ -108,7 +108,7 @@ As the authorized administrator, it's the responsibility to protect the privacy 
 
 - **Consider the impact on performance when using the \<context\> parameter.**
 
-  The migration performance can be affected when you use the **\<context\>** element with the **\<component\>** element; for example, as in when you want to encapsulate logical units of file- or path-based **\<include\>** and **\<exclude\>** rules.
+  The migration performance can be affected when the **\<context\>** element is used with the **\<component\>** element. For example, when encapsulating logical units of file- or path-based **\<include\>** and **\<exclude\>** rules.
 
   In the **User** context, a rule is processed one time for each user on the system.
   
@@ -120,15 +120,15 @@ As the authorized administrator, it's the responsibility to protect the privacy 
   >
   > The number of times a rule is processed doesn't affect the number of times a file is migrated. The USMT migration engine ensures that each file migrates only once.
 
-- **Microsoft recommends that you create a separate .xml file instead of adding .xml code to one of the existing migration .xml files.**
+- **Microsoft recommends to create a separate .xml file instead of adding .xml code to one of the existing migration .xml files.**
 
-  For example, if you have code that migrates the settings for an application, you shouldn't just add the code to the `MigApp.xml` file.
+  For example, for code that migrates the settings for an application, the code shouldn't just be added to the `MigApp.xml` file.
 
-- **You should not create custom .xml files to alter the operating system settings that are migrated.**
+- **Custom .xml files shouldn't be created to alter the operating system settings that are migrated.**
 
   Manifest files determine what settings are migrated. Manifest files can't be modified. Since manifest files can't be modified, to exclude certain operating system settings from the migration, create and modify a `Config.xml` file instead.
 
-- **You can use the asterisk (\*) wildcard character in any migration XML file that you create.**
+- **The asterisk (\*) wildcard character can be used in any migration XML file that is created.**
 
   > [!NOTE]
   >

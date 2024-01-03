@@ -31,7 +31,7 @@ USMT also includes a set of three modifiable **.xml** files:
 - MigDocs.xml
 - MigUser.xml
 
-Additionally, you can create custom **.xml** files to support the organization's migration needs. You can also create a `Config.xml` file to specify files or settings to exclude from the migration.
+Additionally, custom **.xml** files can be created to support the organization's migration needs. A `Config.xml` file can also be created to specify files or settings to exclude from the migration.
 
 USMT tools can be used on several versions of Windows operating systems. For more information, see [USMT requirements](usmt-requirements.md). For more information about previous releases of the USMT tools, see [User State Migration Tool (USMT) overview](/previous-versions/windows/hh825227(v=win.10)).
 

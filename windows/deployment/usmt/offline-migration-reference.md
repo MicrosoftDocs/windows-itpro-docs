@@ -21,7 +21,7 @@ Offline migration enables the ScanState tool to run inside a different Windows o
 
 - **Windows.old.** The ScanState tool can gather files and settings from the **Windows.old** directory. The **Windows.old** directory is created during Windows installation on a partition that contains a previous installation of Windows. For example, the ScanState tool can run in Windows, gathering files from a previous Windows installation contained in the **Windows.old** directory.
 
-When you use User State Migration Tool (USMT) to gather and restore user state, offline migration reduces the cost of deployment by:
+When using the User State Migration Tool (USMT) to gather and restore user state, offline migration reduces the cost of deployment by:
 
 - **Reducing complexity.** In computer-refresh scenarios, migrations from the **Windows.old** directory reduce complexity by eliminating the need for the ScanState tool to be run before the operating system is deployed. Also, migrations from the **Windows.old** directory enable ScanState and LoadState to be run successively.
 
@@ -45,7 +45,7 @@ The following user data and settings migrate offline, similar to an online migra
 
 - Favorites.
 
-For exceptions to what you can migrate offline, see [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)
+For exceptions to what can be migrated offline, see [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)
 
 ## What offline environments are supported?
 
@@ -64,7 +64,7 @@ The following table defines the supported combination of online and offline oper
 
 ## User-group membership and profile control
 
-User-group membership isn't preserved during offline migrations. You must configure a **\<ProfileControl\>** section in the `Config.xml` file to specify the groups that the migrated users should be made members of. The following example places all migrated users into the Users group:
+User-group membership isn't preserved during offline migrations. A **\<ProfileControl\>** section must be configured in the `Config.xml` file to specify the groups that the migrated users should be made members of. The following example places all migrated users into the Users group:
 
 ```xml
 <Configuration>
@@ -94,7 +94,7 @@ An offline migration can either be enabled by using a configuration file on the 
 |*ScanState.exe*|**/offlineWinDir:***\<Windows directory\>*|This command-line option enables the offline-migration mode and starts the migration from the location specified. It's only for use in WinPE offline scenarios where the migration is occurring from a Windows directory.|
 |*ScanState.exe*|**/OfflineWinOld:***\<Windows.old directory\>*|This command-line option enables the offline migration mode and starts the migration from the location specified. Only use in **Windows.old** migration scenarios, where the migration is occurring from a **Windows.old** directory.|
 
-You can use only one of the `/offline`, `/offlineWinDir`, or `/OfflineWinOld` command-line options at a time. USMT doesn't support using more than one together.
+Only one of the `/offline`, `/offlineWinDir`, or `/OfflineWinOld` command-line options can be used at a time. USMT doesn't support using more than one together.
 
 ## Environment variables
 

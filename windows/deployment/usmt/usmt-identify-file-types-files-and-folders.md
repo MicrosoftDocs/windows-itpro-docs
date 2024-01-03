@@ -15,9 +15,9 @@ appliesto:
 
 # Identify file types, files, and folders
 
-When planning the migration, if not using `MigDocs.xml`, you should identify the file types, files, folders, and settings that you want to migrate. First, you should determine the standard file locations on each computer, such as the **Documents** folder, `C:\Data` , and company-specified locations, such as `\\EngineeringDrafts`. Next, you should determine and locate the non-standard locations. For non-standard locations, consider the following items:
+When a migration is planned and `MigDocs.xml` isn't being used, the file types, files, folders, and settings that need to be migrated should be identified. First, the standard file locations on each computer, such as the **Documents** folder, `C:\Data` , and organization-specified locations, such as `\\EngineeringDrafts`, should be determined. Next, non-standard locations should be determined and located. For non-standard locations, consider the following items:
 
-- **File types**: Consider which file types need to be included and excluded from the migration. You can create this list based on common applications used in the organization. Applications normally use specific file name extensions. For example, Microsoft Office Word primarily uses `.doc`, `.docx` and `.dotx` file name extension. However, it also uses other file types, such as templates (`.dot` files), on a less frequent basis.
+- **File types**: Consider which file types need to be included and excluded from the migration. This list can be created based on common applications used in the organization. Applications normally use specific file name extensions. For example, Microsoft Office Word primarily uses `.doc`, `.docx` and `.dotx` file name extension. However, it also uses other file types, such as templates (`.dot` files), on a less frequent basis.
 
 - **Excluded locations**: Consider the locations on the computer that should be excluded from the migration (for example, `%WINDIR%` and **Program Files**).
 
@@ -37,7 +37,7 @@ To find the registered file types on a computer running a currently supported ve
 
 1. In the window that opens, the registered file types are displayed.
 
-For more information about how to change the file types, files, and folders that are migrated when you specify the `MigUser.xml` file, see [User State Migration Tool (USMT) how-to articles](usmt-how-to.md).
+For more information about how to change the file types, files, and folders that are migrated when the `MigUser.xml` file is specified, see [User State Migration Tool (USMT) how-to articles](usmt-how-to.md).
 
 ## Related articles
 

@@ -18,11 +18,11 @@ appliesto:
 
 # Recognized environment variables
 
-When using the XML files `MigDocs.xml`, `MigApp.xml`, and `MigUser.xml`, you can use environment variables to identify folders that can be different on different computers. Constant special item ID list (CSIDL) values provide a way to identify folders that applications use frequently but could have different names or locations on any given computer. For example, the **Documents** folder could be `C:\Users\<Username>\Documents` on one computer and `C:\Users\<Username>\My Documents` on another. You can use the asterisk (\*) wildcard character in `MigUser.xml`, `MigApp.xml` and `MigDoc.xml` files. However, you can't use the asterisk (\*) wildcard characters in the `Config.xml` file.
+When the XML files `MigDocs.xml`, `MigApp.xml`, and `MigUser.xml` are used, the environment variables can be used to identify folders that can be different on different computers. Constant special item ID list (CSIDL) values provide a way to identify folders that applications use frequently but could have different names or locations on any given computer. For example, the **Documents** folder could be `C:\Users\<Username>\Documents` on one computer and `C:\Users\<Username>\My Documents` on another. The asterisk (\*) wildcard character can be used in the `MigUser.xml`, `MigApp.xml` and `MigDoc.xml` files. However, the asterisk (\*) wildcard character can't be used in the `Config.xml` file.
 
 ## Variables that are processed for the operating system and in the context of each user
 
-You can use these variables within sections in the **.xml** files with `context=UserAndSystem`, `context=User`, and `context=System`.
+These variables can be used within sections in the **.xml** files with `context=UserAndSystem`, `context=User`, and `context=System`.
 
 |Variable|Explanation|
 |--- |--- |
@@ -86,12 +86,12 @@ You can use these variables within sections in the **.xml** files with `context=
 
 ## Variables that are recognized only in the user context
 
-You can use these variables in the **.xml** files within sections with `context=User` and `context=UserAndSystem`.
+These variables can be used in the **.xml** files within sections with `context=User` and `context=UserAndSystem`.
 
 |Variable|Explanation|
 |--- |--- |
 |*APPDATA*|Same as **CSIDL_APPDATA**.|
-|*CSIDL_ADMINTOOLS*|The file-system directory that is used to store administrative tools for an individual user. The Microsoft® Management Console (MMC) saves customized consoles to this directory, which roams with the user profile.|
+|*CSIDL_ADMINTOOLS*|The file-system directory that is used to store administrative tools for an individual user. The Microsoft Management Console (MMC) saves customized consoles to this directory, which roams with the user profile.|
 |*CSIDL_ALTSTARTUP*|The file-system directory that corresponds to the user's non-localized Startup program group.|
 |*CSIDL_APPDATA*|The file-system directory that serves as a common repository for application-specific data. A typical path is `C:\Users\<username>\AppData\Roaming`.|
 |*CSIDL_BITBUCKET*|The virtual folder that contains the objects in the user's Recycle Bin.|

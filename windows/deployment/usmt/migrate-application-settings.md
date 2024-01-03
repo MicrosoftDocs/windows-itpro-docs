@@ -33,7 +33,7 @@ There are many ways to detect if an application is installed. The best practice 
 
 ### Check the registry for an application uninstall key
 
-When many applications are installed (especially those installed using the Microsoft® Windows® Installer technology), an application uninstall key is created under:
+When many applications are installed (especially those installed using the Microsoft Windows Installer technology), an application uninstall key is created under:
 
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall`
 

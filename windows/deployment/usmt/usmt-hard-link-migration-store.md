@@ -15,7 +15,7 @@ appliesto:
 
 # Hard-Link Migration Store
 
-A **hard-link migration store** enables you to perform an in-place migration where all user state is maintained on the computer while the old operating system is removed and the new operating system is installed. This functionality is what makes **hard-link migration store** best suited for the computer-refresh scenario. Use of a hard-link migration store for a computer-refresh scenario drastically improves migration performance and significantly reduces hard-disk utilization, reduces deployment costs, and enables entirely new migration scenarios.
+A **hard-link migration store** enables an in-place migration to be performed where all user state is maintained on the computer while the old operating system is removed and the new operating system is installed. This functionality is what makes **hard-link migration store** best suited for the computer-refresh scenario. Use of a hard-link migration store for a computer-refresh scenario drastically improves migration performance and significantly reduces hard-disk utilization, reduces deployment costs, and enables entirely new migration scenarios.
 
 ## When to use a hard-link migration
 
@@ -25,7 +25,7 @@ A hard-link migration store can be used when the planned migration meets both of
 
 - The operating system is being upgraded on the same volume of the computer.
 
-You can't use a hard-link migration store if the planned migration includes any of the following tasks:
+A hard-link migration store can't be used if the planned migration includes any of the following tasks:
 
 - Data is being migrated from one computer to a different computer.
 
@@ -37,20 +37,21 @@ You can't use a hard-link migration store if the planned migration includes any 
 
 The hard-link migration store is created using the command-line option, `/hardlink`, and is equivalent to other migration-store types. However, it differs in that hard links are utilized to keep files stored on the source computer during the migration. Keeping the files in place on the source computer eliminates the redundant work of duplicating files. It also enables the performance benefits and reduction in disk utilization that define this scenario.
 
-When you create a hard link, you give an existing file one more path. For instance, you could create a hard link to `c:\file1.txt` called `c:\hard link\myFile.txt`. These two paths relate to the same file. If you open `c:\file1.txt`, make changes, and save the file, you see those changes when you open `c:\hard link\myFile.txt`. If you delete `c:\file1.txt`, the file still exists on the computer as `c:\hardlink\myFile.txt`. You must delete both references to the file in order to delete the file.
+When a hard link is created, an existing file is given one more path. For instance, a hard link to `c:\file1.txt` can be created called `c:\hard link\myFile.txt`. These two paths relate to the same file. If `c:\file1.txt` is opened, then changes made to the file followed by the file being saved, those changes are seen when `c:\hard link\myFile.txt` is opened. If `c:\file1.txt` is deleted, the file still exists on the computer as `c:\hardlink\myFile.txt`. Both references to the file must be deleted in order to delete the file.
 
 > [!NOTE]
-> A hard link can only be created for a file on the same volume. If you copy a hard-link migration store to another drive or external device, the files, and not the links, are copied, as in a non-compressed migration-store scenario.
+>
+>A hard link can only be created for a file on the same volume. If a hard-link migration store is copied to another drive or external device, the files, and not the links, are copied, as in a non-compressed migration-store scenario.
 
 For more information about hard links, see [Hard Links and Junctions](/windows/win32/fileio/hard-links-and-junctions)
 
 In most aspects, a hard-link migration store is identical to an uncompressed migration store. The hard-link migration store is located as specified by the **ScanState.exe** command-line tool. The contents of the store can be viewed by using Windows Explorer. Once created, it can be deleted or copied to another location without changing user state. Restoring a hard-link migration store is similar to restoring any other migration store. However, as with creating the store, the same hard-link functionality is used to keep files in-place.
 
-As a best practice, delete the hard-link migration store after you confirm that the files are successfully migrated via the **LoadState** tool. Since **LoadState** creates new paths to the files on the new installation of a Windows operating system, deleting the hard links in the migration store only deletes one path to the files. It doesn't delete the actual files or the paths to them from the new operating system.
+As a best practice, delete the hard-link migration store after confirming that the files are successfully migrated via the **LoadState** tool. Since **LoadState** creates new paths to the files on the new installation of a Windows operating system, deleting the hard links in the migration store only deletes one path to the files. It doesn't delete the actual files or the paths to them from the new operating system.
 
 > [!IMPORTANT]
 >
-> Using the `/c` option will force the **LoadState** tool to continue applying files when non-fatal errors occur. If you use the `/c` option, you should verify that no errors are reported in the logs before deleting the hard-link migration store in order to avoid data loss.
+> Using the `/c` option forces the **LoadState** tool to continue applying files when non-fatal errors occur. If the `/c` option is used, verify that no errors are reported in the logs before deleting the hard-link migration store in order to avoid data loss.
 
 Keeping the hard-link migration store can result in extra disk space being consumed or problems with some applications for the following reasons:
 
@@ -66,7 +67,7 @@ Keeping the hard-link migration store can result in extra disk space being consu
 
 ## Hard-link migration scenario
 
-For example, a company decides to deploy the latest supported version of Windows on all of their computers. Each employee keeps the same computer, but the operating system on each computer will be updated.
+For example, an organization decides to deploy the latest supported version of Windows on all of their computers. Each employee keeps the same computer, but the operating system on each computer will be updated.
 
 1. An administrator runs the **ScanState** command-line tool on each computer, specifying the `/hardlink` command-line option. The **ScanState** tool saves the user state to a hard-link migration store on each computer, improving performance by reducing file duplication, except in certain specific instances.
 
@@ -74,7 +75,7 @@ For example, a company decides to deploy the latest supported version of Windows
     >
     > As a best practice, Microsoft recommends not to create the hard-link migration store until just before the migration is performed in order to migrate the latest versions of files. Software applications shouldn't be used on the computer after creating the migration store until files finish migrating with **LoadState**.
 
-1. On each computer, an administrator installs the company's standard operating environment (SOE), which includes the latest supported version of Windows and other applications the company currently uses.
+1. On each computer, an administrator installs the organization's standard operating environment (SOE), which includes the latest supported version of Windows and other applications the organization currently uses.
 
 1. An administrator runs the **LoadState** command-line tool on each computer. The **LoadState** tool restores user state back on each computer.
 
@@ -113,7 +114,7 @@ Running this command on a system that contains the operating system on the C: dr
 
 `D:\USMTMIG\`
 
-The drive you specify on the command line for the hard-link migration store is important, because it defines where the **master migration store** should be placed. The **master migration store** is the location where data migrating from non-NTFS volumes is stored. This volume must have enough space to contain all of the data that comes from non-NTFS volumes. As in other scenarios, if a migration store already exists at the specified path, the `/o` option must be used to overwrite the existing data in the store.
+The drive specified on the command line for the hard-link migration store is important, because it defines where the **master migration store** should be placed. The **master migration store** is the location where data migrating from non-NTFS volumes is stored. This volume must have enough space to contain all of the data that comes from non-NTFS volumes. As in other scenarios, if a migration store already exists at the specified path, the `/o` option must be used to overwrite the existing data in the store.
 
 ### Location modifications
 
@@ -123,7 +124,7 @@ Location modifications that redirect migrated content from one volume to a diffe
 
 To migrate Encrypting File System (EFS) files to a new installation of an operating system on the same volume of the computer, specify the `/efs:hardlink` option in the `ScanState.exe` command-line syntax.
 
-If the EFS files are being restored to a different partition, you should use the `/efs:copyraw` option instead of the `/efs:hardlink` option. Hard links can only be created for files on the same volume. Moving the files to another partition during the migration requires a copy of the files to be created on the new partition. The `/efs:copyraw` option copies the files to the new partition in encrypted format.
+If the EFS files are being restored to a different partition, the `/efs:copyraw` option should be used instead of the `/efs:hardlink` option. Hard links can only be created for files on the same volume. Moving the files to another partition during the migration requires a copy of the files to be created on the new partition. The `/efs:copyraw` option copies the files to the new partition in encrypted format.
 
 For more information, see [Migrate EFS files and certificates](usmt-migrate-efs-files-and-certificates.md) and [Encrypted file options](usmt-scanstate-syntax.md#encrypted-file-options).
 
@@ -131,13 +132,13 @@ For more information, see [Migrate EFS files and certificates](usmt-migrate-efs-
 
 When an application or the operating system has a lock on a file, the file is handled differently when using a hard-link migration store.
 
-Operating system locked files can't remain in place and must be copied into the hard-link migration store. As a result, selecting many operating-system files for migration significantly reduces performance during a hard-link migration. As a best practice, Microsoft recommends that you don't migrate any files out of the `\Windows` directory, which minimizes performance-related issues.
+Operating system locked files can't remain in place and must be copied into the hard-link migration store. As a result, selecting many operating-system files for migration significantly reduces performance during a hard-link migration. As a best practice, Microsoft recommends not migrating any files out of the `\Windows` directory, which minimizes performance-related issues.
 
 Application locked files are treated the same in hard-link migrations as in other scenarios when the volume shadow-copy service isn't being utilized. The volume shadow-copy service can't be used with hard-link migrations. However, by modifying the new **\<HardLinkStoreControl\>** section in the `Config.xml` file, it's possible to enable the migration of files locked by an application.
 
 > [!IMPORTANT]
 >
-> There are some scenarios in which modifying the **\<HardLinkStoreControl\>** section in the `Config.xml` file makes it more difficult to delete a hard-link migration store. In these scenarios, you must use `UsmtUtils.exe` to schedule the migration store for deletion on the next restart.
+> There are some scenarios in which modifying the **\<HardLinkStoreControl\>** section in the `Config.xml` file makes it more difficult to delete a hard-link migration store. In these scenarios, `UsmtUtils.exe` must be used to schedule the migration store for deletion on the next restart.
 
 ## XML elements in the Config.xml file
 
@@ -153,7 +154,7 @@ A new section in the `Config.xml` file allows optional configuration of some of 
 
 > [!IMPORTANT]
 >
-> You must use the `/nocompress` option with the `/HardLink` option.
+> The `/nocompress` option must be used with the `/HardLink` option.
 
 The following XML sample specifies that files locked by an application under the `\Users` directory can remain in place during the migration. It also specifies that locked files that aren't located in the `\Users` directory should result in the **File in Use** error. It's important to exercise caution when specifying the paths using the **`<createhardlink>`** tag in order to minimize scenarios that make the hard-link migration store more difficult to delete.
 

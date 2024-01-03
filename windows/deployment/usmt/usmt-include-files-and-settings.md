@@ -1,6 +1,6 @@
 ---
 title: Include Files and Settings
-description: Specify the migration .xml files you want, then use the User State Migration Tool (USMT) to migrate the settings and components specified.
+description: Specify the migration .xml files that are needed, then use the User State Migration Tool (USMT) to migrate the settings and components specified.
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
@@ -15,7 +15,7 @@ appliesto:
 
 # Include Files and Settings
 
-When you specify the migration **.xml** files, User State Migration Tool (USMT) migrates the settings and components specified in [What does USMT migrate?](usmt-what-does-usmt-migrate.md). To include additional files and settings, Microsoft recommends that you create a custom **.xml** file, and then include this file when using both the `ScanState.exe` and `LoadState.exe` commands. By creating a custom **.xml** file, you can keep the changes separate from the default **.xml** files. Creating a custom **.xml** file makes it easier to track modifications.
+When the migration **.xml** files are specified, User State Migration Tool (USMT) migrates the settings and components specified in [What does USMT migrate?](usmt-what-does-usmt-migrate.md). To include additional files and settings, Microsoft recommends creating a custom **.xml** file, and then include this file when using both the `ScanState.exe` and `LoadState.exe` commands. Creating a custom **.xml** file allows changes to be kept separate from the default **.xml** files. Creating a custom **.xml** file makes it easier to track modifications.
 
 ## Migrate a single registry key
 

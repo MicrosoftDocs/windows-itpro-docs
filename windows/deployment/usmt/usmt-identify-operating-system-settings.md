@@ -1,6 +1,6 @@
 ---
 title: Identify Operating System Settings
-description: Identify which system settings you want to migrate, then use the User State Migration Tool (USMT) to select settings and keep the default values for all others.
+description: Identify which system settings need to be migrated. The User State Migration Tool (USMT) can then be used to select settings and keep the default values for all others.
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
@@ -15,7 +15,7 @@ appliesto:
 
 # Identify operating system settings
 
-When planning the migration, you should identify which operating system settings you want to migrate and to what extent you want to create a new standard environment on each of the computers. User State Migration Tool (USMT) enables you to migrate select settings and keep the default values for all others. The operating system settings include the following parameters:
+When the migration is being planned, which operating system settings need to be migrated should be identified. Additionally, to what extent a new standard environment should be created on each of the computers should also be identified. User State Migration Tool (USMT) enables migrating select settings and keep the default values for all others. The operating system settings include the following parameters:
 
 - **Appearance**
 
@@ -31,11 +31,11 @@ When planning the migration, you should identify which operating system settings
 
 - **Internet**
 
-  The Internet factor includes the settings that let you connect to the Internet and control the browser operates. The settings include items such as the home page URL, favorites, bookmarks, cookies, security settings, and proxy settings. These settings might not be supported in all browsers.
+  The Internet factor includes the settings needed to connect to the Internet and controls how the browser operates. The settings include items such as the home page URL, favorites, bookmarks, cookies, security settings, and proxy settings. These settings might not be supported in all browsers.
 
 - **Mail**
 
-  The mail factor includes the information that you need to connect the mail server, the signature file, views, mail rules, local mail, and contacts. These settings might not be supported in all email applications.
+  The mail factor includes the information needed to connect the mail server, the signature file, views, mail rules, local mail, and contacts. These settings might not be supported in all email applications.
 
 To help determine which settings to migrate, consider any previous migration experiences and the results of any conducted surveys and tests. Also consider the number of help-desk calls related to operating-system settings from the past, and are able to handle in the future. Also decide how much of the new operating-system functionality needs to be taken advantage of.
 
@@ -45,7 +45,7 @@ Settings that should be migrated include:
 - Settings that make the work environment comfortable.
 - Settings that will reduce help-desk calls after the migration.
 
-Although it's easy to dismiss migrating user preferences, you should consider the factor of users spending time restoring items such as:
+Although it's easy to dismiss migrating user preferences, the factor should be considered of users spending time restoring items such as:
 
 - Wallpaper.
 - Screen savers.

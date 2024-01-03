@@ -15,7 +15,7 @@ appliesto:
 
 # User State Migration Tool (USMT) troubleshooting
 
-The following table describes articles that address common User State Migration Tool (USMT) issues and questions. These articles describe tools that you can use to troubleshoot issues that arise during the migration.
+The following table describes articles that address common User State Migration Tool (USMT) issues and questions. These articles describe tools that can be used to troubleshoot issues that arise during the migration.
 
 ## In this section
 
@@ -23,7 +23,7 @@ The following table describes articles that address common User State Migration 
 |--- |--- |
 |[Common Issues](/troubleshoot/windows-client/deployment/usmt-common-issues)|Find troubleshooting solutions for common problems in USMT.|
 |[Frequently Asked Questions](usmt-faq.yml)|Find answers to questions about how to use USMT.|
-|[Log Files](usmt-log-files.md)|Learn how to enable logging to help you troubleshoot issues in USMT.|
+|[Log Files](usmt-log-files.md)|Learn how to enable logging to help troubleshoot issues in USMT.|
 |[Return Codes](/troubleshoot/windows-client/deployment/usmt-return-codes)|Learn how to use return codes to identify problems in USMT.|
 |[USMT Resources](usmt-resources.md)|Find more information and support for using USMT.|
 

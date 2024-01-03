@@ -33,7 +33,7 @@ Microsoft recommends that you create a custom **.xml** file instead of modifying
 
 ### \<include\> and \<exclude\>
 
-The migration **.xml** files, `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`, contain the **\<component\>** element, which typically represents a self-contained component or an application such as Microsoft® Office Outlook® and Word. To exclude the files and registry settings that are associated with these components, use the **\<include\>** and **\<exclude\>** elements. For example, you can use these elements to migrate all files and settings with pattern X except files and settings with pattern Y, where Y is more specific than X. For the syntax of these elements, see [USMT XML Reference](usmt-xml-reference.md).
+The migration **.xml** files, `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`, contain the **\<component\>** element, which typically represents a self-contained component or an application such as Microsoft Office Outlook and Word. To exclude the files and registry settings that are associated with these components, use the **\<include\>** and **\<exclude\>** elements. For example, you can use these elements to migrate all files and settings with pattern X except files and settings with pattern Y, where Y is more specific than X. For the syntax of these elements, see [USMT XML Reference](usmt-xml-reference.md).
 
 > [!NOTE]
 >

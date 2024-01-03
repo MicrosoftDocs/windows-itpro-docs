@@ -17,7 +17,7 @@ appliesto:
 
 ## Supported operating systems
 
-The User State Migration Tool (USMT) doesn't have any explicit RAM or CPU speed requirements for either the source or destination computers. If the computer complies with the system requirements of the operating system, it also complies with the requirements for USMT. You need an intermediate store location large enough to hold all of the migrated data and settings. The same amount of hard disk space is also needed on the destination computer for the migrated files and settings.
+The User State Migration Tool (USMT) doesn't have any explicit RAM or CPU speed requirements for either the source or destination computers. If the computer complies with the system requirements of the operating system, it also complies with the requirements for USMT. An intermediate store location large enough to hold all of the migrated data and settings is needed. The same amount of hard disk space is also needed on the destination computer for the migrated files and settings.
 
 The following table lists the operating systems supported in USMT.
 
@@ -36,7 +36,7 @@ The following table lists the operating systems supported in USMT.
 
 ## Unsupported scenarios
 
-- USMT doesn't support any of the Windows Server® operating systems.
+- USMT doesn't support any of the Windows Server operating systems.
 - USMT shouldn't be used for migrating between previous versions of Windows. USMT is only meant to:
   - Migrate to a currently supported version of Windows
   - Migrate between currently supported versions of Windows, assuming the version of Windows being migrated to is newer or the same as the previous version of Windows being migrated from.
@@ -51,7 +51,7 @@ For more information about previous releases of the USMT tools, see [User State 
 
 - **Run as administrator.**
 
-  When manually running the **ScanState** and **LoadState** tools, you must run them from an elevated command prompt to ensure that all specified users are migrated. If you don't run USMT from an elevated prompt, only the user profile that is logged on is included in the migration.
+  When the **ScanState** and **LoadState** tools are run, they must be run from an elevated command prompt to ensure that all specified users are migrated. If USMT isn't run from an elevated prompt, only the user profile that is logged on is included in the migration.
 
 To open an elevated command prompt:
 
@@ -63,7 +63,7 @@ To open an elevated command prompt:
 
 > [!IMPORTANT]
 >
-> You must run USMT using an account with full administrative permissions, including the following privileges:
+> USMT must run using an account with full administrative permissions, including the following privileges:
 >
 > - SeBackupPrivilege (Back up files and directories)
 > - SeDebugPrivilege (Debug programs)
@@ -75,7 +75,7 @@ To open an elevated command prompt:
 
 ### Specify the `/c` option and \<ErrorControl\> settings in the `Config.xml` file
 
-USMT fails if it can't migrate a file or setting, unless the `/c` option is specified. When you specify the `/c` option, USMT logs an error each time it encounters a file that is in use that didn't migrate, but the migration isn't be interrupted. In USMT, you can specify in the `Config.xml` file, which types of errors should allow the migration to continue, and which should cause the migration to fail. For more information about error reporting, and the **\<ErrorControl\>** element, see [Config.xml file](usmt-configxml-file.md#errorcontrol), [Log files](usmt-log-files.md), and [XML elements library](usmt-xml-elements-library.md).
+USMT fails if it can't migrate a file or setting, unless the `/c` option is specified. When the `/c` option is specified, USMT logs an error each time it encounters a file that is in use that didn't migrate, but the migration isn't be interrupted. In USMT, which types of errors should allow the migration to continue and which should cause the migration to fail can be specified in the `Config.xml` file. For more information about error reporting, and the **\<ErrorControl\>** element, see [Config.xml file](usmt-configxml-file.md#errorcontrol), [Log files](usmt-log-files.md), and [XML elements library](usmt-xml-elements-library.md).
 
 ## LoadState
 

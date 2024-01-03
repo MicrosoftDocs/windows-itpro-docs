@@ -15,7 +15,7 @@ appliesto:
 
 # User State Migration Tool (USMT) overview articles
 
-The User State Migration Tool (USMT) provides a highly customizable user-profile migration experience for IT professionals. USMT includes three command-line tools: `ScanState.exe`, `LoadState.exe`, and `UsmtUtils.exe`. USMT also includes a set of three modifiable .xml files: `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`. Additionally, you can create custom **.xml** files to support the organization's migration needs. You can also create a `Config.xml` file to specify files or settings to exclude from the migration.
+The User State Migration Tool (USMT) provides a highly customizable user-profile migration experience for IT professionals. USMT includes three command-line tools: `ScanState.exe`, `LoadState.exe`, and `UsmtUtils.exe`. USMT also includes a set of three modifiable .xml files: `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`. Additionally, custom **.xml** files can be created to support the organization's migration needs. A `Config.xml` file can also be created to specify files or settings to exclude from the migration.
 
 ## In this section
 
@@ -23,7 +23,7 @@ The User State Migration Tool (USMT) provides a highly customizable user-profile
 |------ |----------- |
 |[User State Migration Tool (USMT) overview](usmt-overview.md)|Describes the benefits and limitations of using USMT.|
 |[Getting started with the User State Migration Tool (USMT)](getting-started-with-the-user-state-migration-tool.md)|Describes the general process to follow to migrate files and settings, and provides links to more information.|
-|[Windows upgrade and migration considerations](../upgrade/windows-upgrade-and-migration-considerations.md)|Discusses the Microsoft® tools you can use to move files and settings between installations and special considerations for performing an upgrade or migration.|
+|[Windows upgrade and migration considerations](../upgrade/windows-upgrade-and-migration-considerations.md)|Discusses the Microsoft tools that can be used to move files and settings between installations and special considerations for performing an upgrade or migration.|
 
 ## Related articles
 

@@ -23,7 +23,7 @@ Before you modify the **.xml** files, become familiar with the following guideli
 
 - **XML schema**.
 
-    You can use the User State Migration Tool (USMT) XML schema, MigXML.xsd, to write and validate migration **.xml** files.
+    You can use the User State Migration Tool (USMT) XML schema, `MigXML.xsd`, to write and validate migration **.xml** files.
 
 - **Conflicts**.
 

@@ -1,6 +1,6 @@
 ---
 title: Config.xml File
-description: Learn how the Config.xml file is an optional User State Migration Tool (USMT) file that you can create using the /genconfig option with the ScanState.exe tool.
+description: Learn how the Config.xml file is an optional User State Migration Tool (USMT) file that can be created using the /genconfig option with the ScanState.exe tool.
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
@@ -15,11 +15,11 @@ appliesto:
 
 # Config.xml File
 
-The `Config.xml` file is an optional User State Migration Tool (USMT) file that you can create using the `/genconfig` option with the ScanState tool. If you want to include all of the default components, and don't want to change the default store-creation or profile-migration behavior, you don't need to create a `Config.xml` file.
+The `Config.xml` file is an optional User State Migration Tool (USMT) file that can be created using the `/genconfig` option with the ScanState tool. If all of the default components should be included and no changes need to be made to the default store-creation or profile-migration behavior, a `Config.xml` file doesn't need to be created.
 
-However, if you're satisfied with the default migration behavior defined in the `MigApp.xml`, `MigUser.xml` and `MigDocs.xml` files, but you want to exclude certain components, you can create and modify a `Config.xml` file and leave the other **.xml** files unchanged. For example, you must create and modify the `Config.xml` file if you want to exclude any of the operating-system settings that are migrated. It's necessary to create and modify this file if you want to change any of the default store-creation or profile-migration behavior.
+However, if the default migration behavior defined in the `MigApp.xml`, `MigUser.xml` and `MigDocs.xml` files is satisfactory, but certain components need to be excluded, a `Config.xml` file can be created and modified while leaving the other **.xml** files unchanged. For example, a `Config.xml` file must be created to exclude any of the operating-system settings that are migrated. It's necessary to create and modify the `Config.xml` file to change any of the default store-creation or profile-migration behavior.
 
-The `Config.xml` file has a different format than the other migration **.xml** files, because it doesn't contain any migration rules. It contains only a list of the operating-system components, applications, user documents that can be migrated, and user-profile policy and error-control policy. For this reason, excluding components using the `Config.xml` file is easier than modifying the migration **.xml** files, because you don't need to be familiar with the migration rules and syntax. However, you can't use wildcard characters in this file.
+The `Config.xml` file has a different format than the other migration **.xml** files, because it doesn't contain any migration rules. It contains only a list of the operating-system components, applications, user documents that can be migrated, and user-profile policy and error-control policy. For this reason, excluding components using the `Config.xml` file is easier than modifying the migration **.xml** files, because familiarization with the migration rules and syntax isn't needed. However, wildcard characters can't be used in this file.
 
 For more information about using the `Config.xml` file with other migration files, such as the `MigDocs.xml` and `MigApps.xml` files, see [Understanding Migration XML Files](understanding-migration-xml-files.md).
 
@@ -29,7 +29,7 @@ For more information about using the `Config.xml` file with other migration file
 
 ## Migration Policies
 
-In USMT, there are migration policies that can be configured in the `Config.xml` file. For example, you can configure **\<ErrorControl\>**, **\<ProfileControl\>**, and **\<HardLinkStoreControl\>** options. The following elements and parameters are for use in the `Config.xml` file only.
+In USMT, there are migration policies that can be configured in the `Config.xml` file. For example, **\<ErrorControl\>**, **\<ProfileControl\>**, and **\<HardLinkStoreControl\>** options can be configured. The following elements and parameters are for use in the `Config.xml` file only.
 
 ### \<Policies\>
 
@@ -43,7 +43,7 @@ Syntax:
 
 ### \<ErrorControl\>
 
-The **\<ErrorControl\>** element is an optional element you can configure in the `Config.xml` file. The configurable **\<ErrorControl\>** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
+The **\<ErrorControl\>** element is an optional element that can be configured in the `Config.xml` file. The configurable **\<ErrorControl\>** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, a path can be specified using the (\*) wildcard character.
 
 - **Number of occurrences**: Once for each component
 
@@ -75,7 +75,7 @@ Additionally, the order in the **\<ErrorControl\>** section implies priority. In
 
 > [!IMPORTANT]
 >
-> The configurable **\<ErrorControl\>** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
+> The configurable **\<ErrorControl\>** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, a path using the (\*) wildcard character can be specified.
 
 ### \<fatal\>
 
@@ -97,7 +97,7 @@ Syntax:
 |--- |--- |--- |
 |errorCode|No|"any" or "*specify system error message here*"|
 
-You use the **\<fatal\>** element to specify that errors matching a specific pattern should cause USMT to halt the migration.
+The **\<fatal\>** element can be used to specify that errors matching a specific pattern should cause USMT to halt the migration.
 
 ### \<fileError\>
 
@@ -115,7 +115,7 @@ Syntax:
 <fileError> </fileError>
 ```
 
-You use the **\<fileError\>** element to represent the behavior associated with file errors.
+The **\<fileError\>** element can be used to represent the behavior associated with file errors.
 
 ### \<nonFatal\>
 
@@ -137,7 +137,7 @@ Syntax:
 |--- |--- |--- |
 |**\<errorCode\>**|No|"any" or "*specify system error message*". If system error messages aren't specified, the default behavior applies the parameter to all system error messages.|
 
-You use the **\<nonFatal\>** element to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
+The **\<nonFatal\>** element can be used to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
 
 ### \<registryError\>
 
@@ -159,7 +159,7 @@ Syntax:
 |--- |--- |--- |
 |**\<errorCode\>**|No|"any" or "*specify system error message here*". If system error messages aren't specified, the default behavior applies the parameter to all system error messages.|
 
-You use the **\<registryError\>** element to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
+The **\<registryError\>** element can be used to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
 
 ### \<HardLinkStoreControl\>
 
@@ -303,7 +303,7 @@ Syntax:
 
 ## Sample Config.xml File
 
-The following sample `Config.xml` file contains detailed examples about items you can choose to exclude from a migration.
+The following sample `Config.xml` file contains detailed examples about items that can be excluded from a migration.
 
 <br>
 <br>
