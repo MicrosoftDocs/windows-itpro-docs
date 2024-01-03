@@ -111,10 +111,9 @@ Cloud Kerberos trust is the only hybrid deployment option that doesn't require t
 Here are some core concepts regarding authentication to Microsoft Entra ID:
 
 :::row:::
-:::row:::
     :::column span="1":::
         **Password hash sync (PHS)**
-    :::column-end:::    
+    :::column-end:::
     :::colum span="3":::
         Password hash sync is the simplest way to enable authentication for on-premises directory objects in Microsoft Entra ID. With PHS, you synchronize your on-premises Active Directory user account objects with Microsoft Entra ID and manage your users on-premises. Hashes of user passwords are synchronized from your on-premises Active Directory to Microsoft Entra ID so that the users have the same password on-premises and in the cloud. When passwords are changed or reset on-premises, the new password hashes are synchronized to Microsoft Entra ID so that your users can always use the same password for cloud resources and on-premises resources. The passwords are never sent to Microsoft Entra ID or stored in Microsoft Entra ID in clear text. Some premium features of Microsoft Entra ID, such as Identity Protection, require PHS regardless of which authentication method is selected. With seamless single sign-on, users are automatically signed in to Microsoft Entra ID when they are on their corporate devices and connected to your corporate network.
 
@@ -123,7 +122,7 @@ Here are some core concepts regarding authentication to Microsoft Entra ID:
 :::row-end:::
     :::column span="1":::
         **Pass-through authentication (PTA)**
-    :::column-end:::    
+    :::column-end:::
     :::colum span="3":::
         Pass-through authentication provides a simple password validation for Microsoft Entra authentication services. It uses a software agent that runs on one or more on-premises servers to validate the users directly with your on-premises Active Directory. With pass-through authentication (PTA), you synchronize on-premises Active Directory user account objects with Microsoft Entra ID and manage your users on-premises. Allows your users to sign in to both on-premises and Microsoft cloud resources and applications using their on-premises account and password. This configuration validates users' passwords directly against your on-premises Active Directory without sending password hashes to Microsoft Entra ID. Companies with a security requirement to immediately enforce on-premises user account states, password policies, and sign-in hours would use this authentication method. With seamless single sign-on, users are automatically signed in to Microsoft Entra ID when they are on their corporate devices and connected to your corporate network.
 
@@ -133,7 +132,7 @@ Here are some core concepts regarding authentication to Microsoft Entra ID:
 :::row:::
     :::column span="1":::
         **Cloud authentication**
-    :::column-end:::    
+    :::column-end:::
     :::colum span="3":::
         Cloud authentication is for environments where Microsoft Entra ID manages the authentication using technologies such as Password Hash Synchronization and Pass-through Authentication, rather than a federation service like Active Directory Federation Services (AD FS).
     :::column-end:::
@@ -141,7 +140,7 @@ Here are some core concepts regarding authentication to Microsoft Entra ID:
 :::row:::
     :::column span="1":::
         **Federated authentication**
-    :::column-end:::    
+    :::column-end:::
     :::colum span="3":::
         Federated authentication is for environments where Microsoft Entra ID hands off the authentication process to a separate trusted authentication system, such as on-premises Active Directory Federation Services (AD FS), to validate the user's credential. The authentication system can provide other advanced authentication requirements, for example, third-party multifactor authentication.
     :::column-end:::
@@ -289,6 +288,7 @@ All supported Windows 10 and Windows 11 versions can be used with Windows Hello 
 | **🔲** | **Hybrid** | Certificate | All supported versions |
 | **🔲** | **On-premises** | Key| All supported versions |
 | **🔲** | **On-premises** | Certificate | All supported versions |
+
 ## Windows Server requirements
 
 All supported Windows Server versions can be used with Windows Hello for Business as Domain Controller. However, cloud Kerberos trust requires minimum versions:
@@ -302,7 +302,7 @@ All supported Windows Server versions can be used with Windows Hello for Busines
 | **🔲** | **On-premises**  | Key            | All supported versions                                                                                    |
 | **🔲** | **On-premises**  | Certificate    | All supported versions                                                                                    |
 
-## Prepare users to use Windows Hello
+## Prepare users to enroll and use Windows Hello
 
 When you enable Windows Hello for Business in your organization, make sure to prepare the users by explaining how to enroll and use Windows Hello.
 
