@@ -1,25 +1,28 @@
 ---
 title: Recognized environment variables
-description: Learn how to use environment variables to identify folders that may be different on different computers.
+description: Learn how to use environment variables to identify folders that can be different on different computers.
 ms.prod: windows-client
 ms.technology: itpro-deploy
 manager: aaroncz
 ms.author: frankroj
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 01/03/2024
 ms.topic: conceptual
 ms.collection:
   - highpri
   - tier2
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Recognized environment variables
 
-When using the XML files `MigDocs.xml`, `MigApp.xml`, and `MigUser.xml`, you can use environment variables to identify folders that may be different on different computers. Constant special item ID list (CSIDL) values provide a way to identify folders that applications use frequently but may not have the same name or location on any given computer. For example, the **Documents** folder may be `C:\Users\<Username>\My Documents` on one computer and `C:\Documents and Settings\<username>\My Documents` on another. You can use the asterisk (\*) wildcard character in `MigUser.xml`, `MigApp.xml` and `MigDoc.xml` files. However, you can't use the asterisk (\*) wildcard characters in the `Config.xml` file.
+When the XML files `MigDocs.xml`, `MigApp.xml`, and `MigUser.xml` are used, the environment variables can be used to identify folders that can be different on different computers. Constant special item ID list (CSIDL) values provide a way to identify folders that applications use frequently but could have different names or locations on any given computer. For example, the **Documents** folder could be `C:\Users\<Username>\Documents` on one computer and `C:\Users\<Username>\My Documents` on another. The asterisk (\*) wildcard character can be used in the `MigUser.xml`, `MigApp.xml` and `MigDoc.xml` files. However, the asterisk (\*) wildcard character can't be used in the `Config.xml` file.
 
 ## Variables that are processed for the operating system and in the context of each user
 
-You can use these variables within sections in the .xml files with `context=UserAndSystem`, `context=User`, and `context=System`.
+These variables can be used within sections in the **.xml** files with `context=UserAndSystem`, `context=User`, and `context=System`.
 
 |Variable|Explanation|
 |--- |--- |
@@ -40,8 +43,8 @@ You can use these variables within sections in the .xml files with `context=User
 |*CSIDL_COMMON_STARTUP*|The file-system directory that contains the programs that appear in the Startup folder for all users. A typical path is `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup`.|
 |*CSIDL_COMMON_TEMPLATES*|The file-system directory that contains the templates that are available to all users. A typical path is `C:\ProgramData\Microsoft\Windows\Templates`.|
 |*CSIDL_COMMON_VIDEO*|The file-system directory that serves as a repository for video files common to all users. A typical path is `C:\Users\Public\Videos`.|
-|*CSIDL_DEFAULT_APPDATA*|Refers to the Appdata folder inside `%DEFAULTUSERPROFILE%`.|
-|C*SIDL_DEFAULT_LOCAL_APPDATA*|Refers to the local Appdata folder inside `%DEFAULTUSERPROFILE%`.|
+|*CSIDL_DEFAULT_APPDATA*|Refers to the `Appdata` folder inside `%DEFAULTUSERPROFILE%`.|
+|C*SIDL_DEFAULT_LOCAL_APPDATA*|Refers to the local `Appdata` folder inside `%DEFAULTUSERPROFILE%`.|
 |*CSIDL_DEFAULT_COOKIES*|Refers to the Cookies folder inside `%DEFAULTUSERPROFILE%`.|
 |*CSIDL_DEFAULT_CONTACTS*|Refers to the Contacts folder inside `%DEFAULTUSERPROFILE%`.|
 |*CSIDL_DEFAULT_DESKTOP*|Refers to the Desktop folder inside `%DEFAULTUSERPROFILE%`.|
@@ -50,10 +53,10 @@ You can use these variables within sections in the .xml files with `context=User
 |*CSIDL_DEFAULT_HISTORY*|Refers to the History folder inside `%DEFAULTUSERPROFILE%`.|
 |*CSIDL_DEFAULT_INTERNET_CACHE*|Refers to the Internet Cache folder inside `%DEFAULTUSERPROFILE%`.|
 |*CSIDL_DEFAULT_PERSONAL*|Refers to the Personal folder inside `%DEFAULTUSERPROFILE%`.|
-|*CSIDL_DEFAULT_MYDOCUMENTS*|Refers to the My Documents folder inside `%DEFAULTUSERPROFILE%`.|
-|*CSIDL_DEFAULT_MYPICTURES*|Refers to the My Pictures folder inside `%DEFAULTUSERPROFILE%`.|
-|*CSIDL_DEFAULT_MYMUSIC*|Refers to the My Music folder inside `%DEFAULTUSERPROFILE%`.|
-|*CSIDL_DEFAULT_MYVIDEO*|Refers to the My Videos folder inside `%DEFAULTUSERPROFILE%`.|
+|*CSIDL_DEFAULT_MYDOCUMENTS*|Refers to the Documents folder inside `%DEFAULTUSERPROFILE%`.|
+|*CSIDL_DEFAULT_MYPICTURES*|Refers to the Pictures folder inside `%DEFAULTUSERPROFILE%`.|
+|*CSIDL_DEFAULT_MYMUSIC*|Refers to the Music folder inside `%DEFAULTUSERPROFILE%`.|
+|*CSIDL_DEFAULT_MYVIDEO*|Refers to the Videos folder inside `%DEFAULTUSERPROFILE%`.|
 |*CSIDL_DEFAULT_RECENT*|Refers to the Recent folder inside `%DEFAULTUSERPROFILE%`.|
 |*CSIDL_DEFAULT_SENDTO*|Refers to the Send To folder inside `%DEFAULTUSERPROFILE%`.|
 |*CSIDL_DEFAULT_STARTMENU*|Refers to the Start Menu folder inside `%DEFAULTUSERPROFILE%`.|
@@ -83,12 +86,12 @@ You can use these variables within sections in the .xml files with `context=User
 
 ## Variables that are recognized only in the user context
 
-You can use these variables in the .xml files within sections with `context=User` and `context=UserAndSystem`.
+These variables can be used in the **.xml** files within sections with `context=User` and `context=UserAndSystem`.
 
 |Variable|Explanation|
 |--- |--- |
 |*APPDATA*|Same as **CSIDL_APPDATA**.|
-|*CSIDL_ADMINTOOLS*|The file-system directory that is used to store administrative tools for an individual user. The Microsoft® Management Console (MMC) saves customized consoles to this directory, which roams with the user profile.|
+|*CSIDL_ADMINTOOLS*|The file-system directory that is used to store administrative tools for an individual user. The Microsoft Management Console (MMC) saves customized consoles to this directory, which roams with the user profile.|
 |*CSIDL_ALTSTARTUP*|The file-system directory that corresponds to the user's non-localized Startup program group.|
 |*CSIDL_APPDATA*|The file-system directory that serves as a common repository for application-specific data. A typical path is `C:\Users\<username>\AppData\Roaming`.|
 |*CSIDL_BITBUCKET*|The virtual folder that contains the objects in the user's Recycle Bin.|
@@ -99,20 +102,20 @@ You can use these variables in the .xml files within sections with `context=User
 |*CSIDL_COOKIES*|The file-system directory that serves as a common repository for Internet cookies. A typical path is `C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Cookies`.|
 |*CSIDL_DESKTOP*|The virtual folder representing the Windows desktop.|
 |*CSIDL_DESKTOPDIRECTORY*|The file-system directory used to physically store file objects on the desktop, which shouldn't be confused with the desktop folder itself. A typical path is `C:\Users\<username>\Desktop`.|
-|*CSIDL_DRIVES*|The virtual folder representing My Computer that contains everything on the local computer: storage devices, printers, and Control Panel. The folder may also contain mapped network drives.|
+|*CSIDL_DRIVES*|The virtual folder representing **This PC** that contains everything on the local computer: storage devices, printers, and Control Panel. The folder could also contain mapped network drives.|
 |*CSIDL_FAVORITES*|The file-system directory that serves as a common repository for the user's favorites. A typical path is `C:\Users\<username>\Favorites`.|
 |*CSIDL_HISTORY*|The file-system directory that serves as a common repository for Internet history items.|
 |*CSIDL_INTERNET*|A virtual folder for Internet Explorer.|
 |*CSIDL_INTERNET_CACHE*|The file-system directory that serves as a common repository for temporary Internet files. A typical path is `C:\Users\<username>\AppData\Local\Microsoft\Windows\Temporary Internet Files`|
 |*CSIDL_LOCAL_APPDATA*|The file-system directory that serves as a data repository for local, non-roaming applications. A typical path is `C:\Users\<username>\AppData\Local`.|
-|*CSIDL_MYDOCUMENTS*|The virtual folder representing My Documents.A typical path is `C:\Users\<username>\Documents`.|
+|*CSIDL_MYDOCUMENTS*|The virtual folder representing the **Documents** folder.A typical path is `C:\Users\<username>\Documents`.|
 |*CSIDL_MYMUSIC*|The file-system directory that serves as a common repository for music files. A typical path is `C:\Users\<username>\Music`.|
 |*CSIDL_MYPICTURES*|The file-system directory that serves as a common repository for image files. A typical path is `C:\Users\<username>\Pictures`.|
 |*CSIDL_MYVIDEO*|The file-system directory that serves as a common repository for video files. A typical path is `C:\Users\<username>\Videos`.|
-|*CSIDL_NETHOOD*|A file-system directory that contains the link objects that may exist in the My Network Places virtual folder. It isn't the same as *CSIDL_NETWORK*, which represents the network namespace root. A typical path is `C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Network Shortcuts`.|
-|*CSIDL_NETWORK*|A virtual folder representing My Network Places, the root of the network namespace hierarchy.|
-|*CSIDL_PERSONAL*|The virtual folder representing the My Documents desktop item. This value is equivalent to **CSIDL_MYDOCUMENTS**. A typical path is `C:\Documents and Settings\<username>\My Documents`.|
-|*CSIDL_PLAYLISTS*|The virtual folder used to store play albums, typically `C:\Users\<username>\My Music\Playlists`.|
+|*CSIDL_NETHOOD*|A file-system directory that contains the link objects that could exist in the **Network** virtual folder. It isn't the same as *CSIDL_NETWORK*, which represents the network namespace root. A typical path is `C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Network Shortcuts`.|
+|*CSIDL_NETWORK*|A virtual folder representing the **Network** desktop item, the root of the network namespace hierarchy.|
+|*CSIDL_PERSONAL*|The virtual folder representing the **\<User\>** desktop item. This value is equivalent to **CSIDL_MYDOCUMENTS**. A typical path is `C:\User\<username>\Documents`.|
+|*CSIDL_PLAYLISTS*|The virtual folder used to store play albums, typically `C:\Users\<username>\Music\Playlists`.|
 |*CSIDL_PRINTERS*|The virtual folder that contains installed printers.|
 |*CSIDL_PRINTHOOD*|The file-system directory that contains the link objects that can exist in the Printers virtual folder. A typical path is `C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Printer Shortcuts`.|
 |*CSIDL_PROFILE*|The user's profile folder. A typical path is `C:\Users\<username>`.|
