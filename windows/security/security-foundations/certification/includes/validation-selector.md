@@ -1,4 +1,5 @@
-> [!div class="op_multi_selector" title1="Product:" title2="Version:"]
+> [!div class="op_multi_selector" title1="Product:" title2="Release:"]
+Choose a product and release from the following drop-down lists to view its certified cryptographic modules:
 
 > - [(Windows | Windows 11)](../validations/fips-140-windows11.md)
 > - [(Windows | Windows 10)](../validations/fips-140-windows10.md)
