@@ -297,7 +297,7 @@ All supported Windows Server versions can be used with Windows Hello for Busines
 || Deployment model | Trust type     | Domain Controller OS version                                                                              |
 |-----------------------------|------------------|----------------|-----------------------------------------------------------------------------------------------------------|
 | **🔲** | **Cloud-only**   | n/a            | All supported versions                                                                                    |
-| **🔲** | **Hybrid**       | Cloud Kerberos | - Windows Server 2016, [KB3534307][KB-3]<br>- Windows Server 2019, [KB4534321][KB-4], Windows Server 2022 |
+| **🔲** | **Hybrid**       | Cloud Kerberos | - Windows Server 2016, [KB3534307][KB-3]<br>- Windows Server 2019, [KB4534321][KB-4]<br>- Windows Server 2022 |
 | **🔲** | **Hybrid**       | Key            | All supported versions                                                                                    |
 | **🔲** | **Hybrid**       | Certificate    | All supported versions                                                                                    |
 | **🔲** | **On-premises**  | Key            | All supported versions                                                                                    |
@@ -305,11 +305,11 @@ All supported Windows Server versions can be used with Windows Hello for Busines
 
 ## Prepare users to enroll and use Windows Hello
 
-When you enable Windows Hello for Business in your organization, make sure to prepare the users by explaining how to enroll and use Windows Hello.
+When you are ready to enable Windows Hello for Business in your organization, make sure to prepare the users by explaining how to enroll and use Windows Hello.\
+Since enrollment in Windows Hello requires multi-factor authentication, ensure you have a solution in place for users to use MFA during enrollment. Depending on the hardware, users might be prompted to register their fingerprint or face.
 
-Ensure you have a strategy in place to ensure the users have an MFA option that is easy to use during enrollment.
-
-Depending on the hardware, users might be prompted to register their fingerprint or face.
+> [!TIP]
+> To facilitate user communication and to ensure a successful Windows Hello for Business deployment, you can find customizable material (email templates, posters, trainings, etc.) at [Microsoft Entra templates](https://aka.ms/adminmails).
 
 The next video shows the Windows Hello for Business enrollment experience after a user signs in with a password:
 

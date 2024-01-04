@@ -58,6 +58,7 @@ The biometric data used to support Windows Hello is stored on the local device o
 > [!NOTE]
 >Each sensor on a device will have its own biometric database file where template data is stored. Each database has a unique, randomly generated key that is encrypted to the system. The template data for the sensor will be encrypted with this per-database key using AES with CBC chaining mode. The hash is SHA256. Some fingerprint sensors have the capability to complete matching on the fingerprint sensor module instead of in the OS. These sensors will store biometric data on the fingerprint module instead of in the database file.
 
+> C:\WINDOWS\System32\WinBioDatabase
 
 ## Windows Hello for Business and password changes
 

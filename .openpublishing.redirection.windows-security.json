@@ -8314,6 +8314,11 @@
       "source_path": "windows/security/identity-protection/hello-for-business/deploy/hybrid-key-trust-pki.md",
       "redirect_url": "/windows/security/identity-protection/hello-for-business/deploy/hybrid-key-trust",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-videos.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/",
+      "redirect_document_id": false
     }
   ]
 }

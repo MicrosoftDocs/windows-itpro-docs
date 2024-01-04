@@ -38,7 +38,4 @@ items:
   - name: Windows Hello Enhanced Security Sign-in (ESS) 🔗
     href: /windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security
   - name: Frequently Asked Questions (FAQ)
-    href: hello-faq.yml
-  - name: Windows Hello for Business videos
-    href: hello-videos.md
-    
+    href: hello-faq.yml    

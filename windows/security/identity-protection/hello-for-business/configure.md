@@ -13,19 +13,20 @@ Windows Hello for Business offers a variety of configuration options to accommod
 
 You can configure Windows Hello for Business by using the following options:
 
-- Configuration Service Provider (CSP): commonly used for devices managed by a Mobile Device Management (MDM) solution, like Microsoft Intune. To configure Windows Hello for Business, you use the [PassportForWork CSP][CSP-2]
+- Configuration Service Provider (CSP): commonly used for devices managed by a Mobile Device Management (MDM) solution, like Microsoft Intune. CSPs can also be configured with [provisioning packages](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers#csps-in-windows-configuration-designer), which are usually used at deployment time or for unamanged devices. To configure Windows Hello for Business, use the [PassportForWork CSP][CSP-2]
 - Group policy (GPO): used for devices that are Active Directory joined or Microsoft Entra hybrid joined, and aren't managed by a device management solution
-- Provisioning packages: used to configure devices at deployment time or for devices that aren't managed by a device management solution
 
-### Policy precedence
+## Policy precedence
 
-Some of the Windows Hello for Business policies are available for both computer and user configuration.
+Some of the Windows Hello for Business policies are available for both computer and user configuration. The following list describes the policy precedence for Windows Hello for Business:
 
-*user policies* take precedence over *computer policies*. If a user policy is set, the corresponded computer policy is ignored. If a user policy is not set, the computer policy is used.
-
-Policies for Windows Hello for Business are enforced using the following hierarchy:
-
-- User GPO > Computer GPO > User MDM > Device MDM > Device Lock policy
+- *User policies* take precedence over *computer policies*. If a user policy is set, the corresponded computer policy is ignored. If a user policy is not set, the computer policy is used
+- Windows Hello for Business policy settings are enforced using the following hierarchy:
+  - User GPO
+  - Computer GPO
+  - User MDM
+  - Device MDM
+  - Device Lock policy
 
 >[!IMPORTANT]
 >All devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
