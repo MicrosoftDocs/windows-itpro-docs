@@ -15,7 +15,6 @@ The following tables list the completed FIPS 140 validations of cryptographic mo
 ## Windows Server 2016, build 10.0.14393.1770
 
 Validated Editions: Standard, Datacenter, Storage Server
-
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Windows OS Loader][sp-3502] (winload)|[#3502][certificate-3502]|FIPS Approved: AES, RSA, and SHS; Other Allowed: NDRNG|
@@ -27,7 +26,6 @@ Validated Editions: Standard, Datacenter, Storage Server
 ## Windows Server 2016, build 10.0.14393
 
 Validated Editions: Standard, Datacenter, Storage Server
-
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-2934] (dumpfve.sys)|[#2934][certificate-2934]|FIPS Approved: AES|

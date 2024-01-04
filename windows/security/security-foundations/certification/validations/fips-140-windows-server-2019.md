@@ -15,7 +15,6 @@ The following tables list the completed FIPS 140 validations of cryptographic mo
 ## Windows Server 2019, builds 10.0.17763.10021 and 10.0.17763.10127
 
 Validated Edition: Datacenter Core
-
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter]|Pending [(in process)][in-process]||
@@ -29,8 +28,7 @@ Validated Edition: Datacenter Core
 
 ## Windows Server 2019, build 10.0.17763.107
 
-Validated Editions: Standard, Datacenter
-
+Validated Editions: Standard Core, Datacenter Core
 |Cryptographic Module (linked to Security Policy document)|Version|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |--- |
 |[BitLocker Dump Filter][sp-3092]|10.0.17763|[#3092][certificate-3092]|FIPS Approved: AES, RSA, and SHS|

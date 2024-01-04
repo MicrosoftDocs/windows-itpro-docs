@@ -16,7 +16,6 @@ The following tables list the completed FIPS 140 validations of cryptographic mo
 ## Windows Server 2012 R2
 
 Validated Editions: Server, Storage Server, StorSimple 8000 Series, Azure StorSimple Virtual Array Windows Server 2012 R2
-
 |Cryptographic Module|Version (link to Security Policy)|CMVP Certificate #|
 |--- |--- |--- |
 |BitLocker Dump Filter (dumpfve.sys) <br>*Doesn't apply to Azure StorSimple Virtual Array Windows Server 2012 R2*|[6.3.9600 6.3.9600.17031][sp-2354]|[2354][certificate-2354]|
@@ -30,7 +29,6 @@ Validated Editions: Server, Storage Server, StorSimple 8000 Series, Azure StorSi
 ## Windows Server 2012
 
 Validated Editions: Server, Storage Server
-
 |Cryptographic Module|Version (link to Security Policy)|CMVP Certificate #|
 |--- |--- |--- |
 |BitLocker Dump Filter (DUMPFVE.SYS)|[6.2.9200][sp-1899]|[1899][sp-1899]|

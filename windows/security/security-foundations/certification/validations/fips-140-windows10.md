@@ -16,7 +16,6 @@ The following tables list the completed FIPS 140 validations of cryptographic mo
 ## Windows 10, version 2004 (May 2020 Update), build 10.0.19041
 
 Validated Editions: Home, Pro, Enterprise, Education
-
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-4538]|[#4538][certificate-4538]|FIPS Approved: AES, RSA, and SHS|
@@ -33,7 +32,6 @@ Validated Editions: Home, Pro, Enterprise, Education
 ## Windows 10, version 1909 (November 2019 Update), build 10.0.18363
 
 Validated Editions: Home, Pro, Enterprise, Education
-
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-4538]|[#4538][certificate-4538]|FIPS Approved: AES, RSA, and SHS|
@@ -50,7 +48,6 @@ Validated Editions: Home, Pro, Enterprise, Education
 ## Windows 10, version 1903 (May 2019 Update), build 10.0.18362
 
 Validated Editions: Home, Pro, Enterprise, Education
-
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-4538]|[#4538][certificate-4538]|FIPS Approved: AES, RSA, and SHS|
@@ -66,7 +63,6 @@ Validated Editions: Home, Pro, Enterprise, Education
 ## Windows 10, version 1809 (October 2018 Update), build 10.0.17763
 
 Validated Editions: Home, Pro, Enterprise, Education
-
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-3092]|[#3092][certificate-3092]|FIPS Approved: AES, RSA, and SHS|
@@ -81,7 +77,6 @@ Validated Editions: Home, Pro, Enterprise, Education
 ## Windows 10, version 1803 (April 2018 Update), build 10.0.17134
 
 Validated Editions: Home, Pro, Enterprise, Education
-
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-3092]|[#3092][certificate-3092]|FIPS Approved: AES, RSA, and SHS|
@@ -95,7 +90,6 @@ Validated Editions: Home, Pro, Enterprise, Education
 ## Windows 10, version 1709 (Fall Creators Update), build 10.0.16299
 
 Validated Editions: Home, Pro, Enterprise, Education, S, Surface Hub, Mobile
-
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-3092]|[#3092][certificate-3092]|FIPS Approved: AES, RSA, and SHS|
@@ -110,7 +104,6 @@ Validated Editions: Home, Pro, Enterprise, Education, S, Surface Hub, Mobile
 ## Windows 10, version 1703 (Creators Update), build 10.0.15063
 
 Validated Editions: Home, Pro, Enterprise, Education, S, Surface Hub, Mobile
-
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-3092] <br>*Applies only to Pro, Enterprise, Education, S, Mobile, and Surface Hub Editions.*|[#3092][certificate-3092]|FIPS Approved: AES, RSA, and SHS|
@@ -125,7 +118,6 @@ Validated Editions: Home, Pro, Enterprise, Education, S, Surface Hub, Mobile
 ## Windows 10, version 1607 (Anniversary Update), build 10.0.14393.1770
 
 Validated Editions: Windows 10 (Home/Consumer), Pro, Enterprise, Enterprise LTSB, Mobile
-
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Windows OS Loader][sp-3502] (winload)|[#3502][certificate-3502]|FIPS Approved: AES, RSA, and SHS; Other Allowed: NDRNG|
@@ -137,7 +129,6 @@ Validated Editions: Windows 10 (Home/Consumer), Pro, Enterprise, Enterprise LTSB
 ## Windows 10, version 1607 (Anniversary Update), build 10.0.14393
 
 Validated Editions: Windows 10 (Home/Consumer), Pro, Enterprise, Enterprise LTSB, Mobile
-
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-2934] (dumpfve.sys) <br>*Applies only to Pro, Enterprise, Enterprise LTSB, and Mobile Editions.*|[#2934][certificate-2934]|FIPS Approved: AES|
@@ -152,7 +143,6 @@ Validated Editions: Windows 10 (Home/Consumer), Pro, Enterprise, Enterprise LTSB
 ## Windows 10, version 1511 (November Update), build 10.0.10586.1176
 
 Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
-
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Windows OS Loader][sp-3451] (winload)|[#3451][certificate-3451]|FIPS Approved: AES, RSA, and SHS|
@@ -163,7 +153,6 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
 ## Windows 10, version 1511 (November Update), build 10.0.10586
 
 Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
-
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-2703] (dumpfve.sys) <br>*Applies only to Pro, Enterprise, Mobile, and Surface Hub Editions.*|[#2703][certificate-2703]|FIPS Approved: AES|
@@ -178,7 +167,6 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
 ## Windows 10, version 1507, build 10.0.10240.17643
 
 Validated Editions: Enterprise LTSB
-
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Windows OS Loader][sp-3427] (winload)|[#3427][certificate-3427]|FIPS Approved: AES, RSA, and SHS; Other Allowed: NDRNG|
@@ -189,7 +177,6 @@ Validated Editions: Enterprise LTSB
 ## Windows 10, version 1507, build 10.0.10240
 
 Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, and Surface Hub
-
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-2603] (dumpfve.sys) <br>*Applies only to Pro, Enterprise, and Enterprise LTSB Editions.*|[#2603][certificate-2603]|FIPS Approved: AES|

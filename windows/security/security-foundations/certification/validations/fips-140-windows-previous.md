@@ -15,7 +15,6 @@ The following tables list the completed FIPS 140 validations of cryptographic mo
 ## Windows 8.1
 
 Validated Editions: RT, Pro, Enterprise, Phone, Embedded
-
 |Cryptographic Module|Version (link to Security Policy)|CMVP Certificate #|
 |--- |--- |--- |
 |BitLocker Dump Filter (dumpfve.sys)|[6.3.9600 6.3.9600.17031][sp-2354]|[#2354][certificate-2354]|
@@ -29,7 +28,6 @@ Validated Editions: RT, Pro, Enterprise, Phone, Embedded
 ## Windows 8
 
 Validated Editions: RT, Home, Pro, Enterprise, Phone
-
 |Cryptographic Module|Version (link to Security Policy)|CMVP Certificate #|
 |--- |--- |--- |
 |BitLocker Dump Filter (DUMPFVE.SYS)|[6.2.9200][sp-1899]|[#1899][sp-1899]|
@@ -45,7 +43,6 @@ Validated Editions: RT, Home, Pro, Enterprise, Phone
 ## Windows 7
 
 Validated Editions: Windows 7, Windows 7 SP1
-
 |Cryptographic Module|Version (link to Security Policy)|CMVP Certificate #|
 |--- |--- |--- |
 |BitLocker Drive Encryption|[6.1.7600.16385, 6.1.7600.16429, 6.1.7600.16757, 6.1.7600.20536, 6.1.7600.20873, 6.1.7600.20897, 6.1.7600.20916, 6.1.7601.17514, 6.1.7601.17556, 6.1.7601.21634, 6.1.7601.21655, and 6.1.7601.21675][sp-1332]|[1332][certificate-1332]|
@@ -60,7 +57,6 @@ Validated Editions: Windows 7, Windows 7 SP1
 ## Windows Vista SP1
 
 Validated Editions: Ultimate Edition
-
 |Cryptographic Module|Version (link to Security Policy)|CMVP Certificate #|
 |--- |--- |--- |
 |Boot Manager (bootmgr)|[6.0.6001.18000 and 6.0.6002.18005][sp-978]|[978][certificate-978]|
@@ -74,7 +70,6 @@ Validated Editions: Ultimate Edition
 ## Windows Vista
 
 Validated Editions: Ultimate Edition
-
 |Cryptographic Module|Version (link to Security Policy)|CMVP Certificate #|
 |--- |--- |--- |
 |BitLocker Drive Encryption|[6.0.6000.16386][sp-947]|[947][certificate-947]|
