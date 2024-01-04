@@ -13,26 +13,9 @@ ms.collection: tier3
 
 The following tables list the completed FIPS 140 validations of cryptographic modules used in Windows 10, organized by major release of the operating system. The linked Security Policy document for each module provides details on the module capabilities and the policies the operator must follow to use the module in its FIPS approved mode of operation. For information on using the overall operating system in its FIPS approved mode, see [Use Windows in a FIPS 140 Approved Mode of Operation](../use-windows-in-fips-approved-mode.md). For details on the FIPS approved algorithms used by each module, including CAVP algorithm certificates, see the module's linked Security Policy document or CMVP module certificate.
 
-## Windows 10, version 2004 (May 2020 Update), build 10.0.19041
+## Windows 10, version 2004 (May 2020 Update)
 
-Validated Editions: Home, Pro, Enterprise, Education
-
-|Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
-|--- |--- |--- |
-|[BitLocker Dump Filter][sp-4538]|[#4538][certificate-4538]|FIPS Approved: AES, RSA, and SHS|
-|[Boot Manager][sp-3923]|[#3923][certificate-3923]|FIPS Approved: AES, CKG, HMAC, PBKDF, RSA, and SHS|
-|[Code Integrity][sp-4511]|[#4511][certificate-4511]|FIPS Approved: AES, RSA, and SHS|
-|[Cryptographic Primitives Library][sp-4536]|[#4536][certificate-4536]|FIPS Approved: AES, CKG, CVL, DRBG, DSA, ECDSA, HMAC, KAS, KBKDF, KTS, PBKDF, RSA, SHS, and Triple-DES; Other Allowed: NDRNG|
-|[Kernel Mode Cryptographic Primitives Library][sp-4515]|[#4515][certificate-4515]|FIPS Approved: AES, CKG, CVL, DRBG, DSA, ECDSA, HMAC, KAS, KBKDF, KTS, PBKDF, RSA, SHS, and Triple-DES; Other Allowed: NDRNG|
-|[Secure Kernel Code Integrity][sp-4512]|[#4512][certificate-4512]|FIPS Approved: AES, RSA, and SHS|
-|[TCB Launcher][sp-4457] <br>*Applies only to Enterprise Edition.*|[#4457][certificate-4457]|FIPS Approved: AES, CKG, DRBG, RSA, and SHS; Other Allowed: NDRNG|
-|[Windows OS Loader][sp-4339]|[#4339][certificate-4339]|FIPS Approved: AES, CKG, DRBG, RSA, and SHS; Other Allowed: NDRNG|
-|[Virtual TPM][sp-4537]|[#4537][certificate-4537]|FIPS Approved: AES, CKG, CVL, DRBG, ECDSA, HMAC, KAS, KBKDF, KTS, RSA, and SHS; Other Allowed: NDRNG|
-|[Windows Resume][sp-4348]|[#4348][certificate-4348]|FIPS Approved: AES, HMAC, KBKDF, RSA, and SHS|
-
-## Windows 10, version 1909 (November 2019 Update), build 10.0.18363
-
-Validated Editions: Home, Pro, Enterprise, Education
+Build: 10.0.19041. Validated Editions: Home, Pro, Enterprise, Education
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -47,9 +30,26 @@ Validated Editions: Home, Pro, Enterprise, Education
 |[Virtual TPM][sp-4537]|[#4537][certificate-4537]|FIPS Approved: AES, CKG, CVL, DRBG, ECDSA, HMAC, KAS, KBKDF, KTS, RSA, and SHS; Other Allowed: NDRNG|
 |[Windows Resume][sp-4348]|[#4348][certificate-4348]|FIPS Approved: AES, HMAC, KBKDF, RSA, and SHS|
 
-## Windows 10, version 1903 (May 2019 Update), build 10.0.18362
+## Windows 10, version 1909 (November 2019 Update)
 
-Validated Editions: Home, Pro, Enterprise, Education
+Build: 10.0.18363. Validated Editions: Home, Pro, Enterprise, Education
+
+|Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
+|--- |--- |--- |
+|[BitLocker Dump Filter][sp-4538]|[#4538][certificate-4538]|FIPS Approved: AES, RSA, and SHS|
+|[Boot Manager][sp-3923]|[#3923][certificate-3923]|FIPS Approved: AES, CKG, HMAC, PBKDF, RSA, and SHS|
+|[Code Integrity][sp-4511]|[#4511][certificate-4511]|FIPS Approved: AES, RSA, and SHS|
+|[Cryptographic Primitives Library][sp-4536]|[#4536][certificate-4536]|FIPS Approved: AES, CKG, CVL, DRBG, DSA, ECDSA, HMAC, KAS, KBKDF, KTS, PBKDF, RSA, SHS, and Triple-DES; Other Allowed: NDRNG|
+|[Kernel Mode Cryptographic Primitives Library][sp-4515]|[#4515][certificate-4515]|FIPS Approved: AES, CKG, CVL, DRBG, DSA, ECDSA, HMAC, KAS, KBKDF, KTS, PBKDF, RSA, SHS, and Triple-DES; Other Allowed: NDRNG|
+|[Secure Kernel Code Integrity][sp-4512]|[#4512][certificate-4512]|FIPS Approved: AES, RSA, and SHS|
+|[TCB Launcher][sp-4457] <br>*Applies only to Enterprise Edition.*|[#4457][certificate-4457]|FIPS Approved: AES, CKG, DRBG, RSA, and SHS; Other Allowed: NDRNG|
+|[Windows OS Loader][sp-4339]|[#4339][certificate-4339]|FIPS Approved: AES, CKG, DRBG, RSA, and SHS; Other Allowed: NDRNG|
+|[Virtual TPM][sp-4537]|[#4537][certificate-4537]|FIPS Approved: AES, CKG, CVL, DRBG, ECDSA, HMAC, KAS, KBKDF, KTS, RSA, and SHS; Other Allowed: NDRNG|
+|[Windows Resume][sp-4348]|[#4348][certificate-4348]|FIPS Approved: AES, HMAC, KBKDF, RSA, and SHS|
+
+## Windows 10, version 1903 (May 2019 Update)
+
+Build: 10.0.18362. Validated Editions: Home, Pro, Enterprise, Education
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -63,9 +63,9 @@ Validated Editions: Home, Pro, Enterprise, Education
 |[Virtual TPM][sp-4537]|[#4537][certificate-4537]|FIPS Approved: AES, CKG, CVL, DRBG, ECDSA, HMAC, KAS, KBKDF, KTS, RSA, and SHS; Other Allowed: NDRNG|
 |[Windows Resume][sp-4348]|[#4348][certificate-4348]|FIPS Approved: AES, HMAC, KBKDF, RSA, and SHS|
 
-## Windows 10, version 1809 (October 2018 Update), build 10.0.17763
+## Windows 10, version 1809 (October 2018 Update)
 
-Validated Editions: Home, Pro, Enterprise, Education
+Build: 10.0.17763. Validated Editions: Home, Pro, Enterprise, Education
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -78,9 +78,9 @@ Validated Editions: Home, Pro, Enterprise, Education
 |[Virtual TPM][sp-3690]|[#3690][certificate-3690]|FIPS Approved: AES, CKG, CVL, DRBG, ECDSA, HMAC, KAS, KBKDF, KTS, RSA, and SHS; Other Allowed: NDRNG|
 |[Windows OS Loader][sp-3615]|[#3615][certificate-3615]|FIPS Approved: AES, CKG, DRBG, RSA, and SHS; Other Allowed: NDRNG|
 
-## Windows 10, version 1803 (April 2018 Update), build 10.0.17134
+## Windows 10, version 1803 (April 2018 Update)
 
-Validated Editions: Home, Pro, Enterprise, Education
+Build: 10.0.17134. Validated Editions: Home, Pro, Enterprise, Education
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -92,9 +92,9 @@ Validated Editions: Home, Pro, Enterprise, Education
 |[Secure Kernel Code Integrity][sp-3096]|[#3096][certificate-3096]|FIPS Approved: AES, RSA, and SHS|
 |[Windows OS Loader][sp-3480]|[#3480][certificate-3480]|FIPS Approved: AES, CKG, DRBG, RSA, and SHS; Other Allowed: NDRNG|
 
-## Windows 10, version 1709 (Fall Creators Update), build 10.0.16299
+## Windows 10, version 1709 (Fall Creators Update)
 
-Validated Editions: Home, Pro, Enterprise, Education, S, Surface Hub, Mobile
+Build: 10.0.16299. Validated Editions: Home, Pro, Enterprise, Education, S, Surface Hub, Mobile
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -107,9 +107,9 @@ Validated Editions: Home, Pro, Enterprise, Education, S, Surface Hub, Mobile
 |[Windows Resume][sp-3091]|[#3091][certificate-3091]|FIPS Approved: AES, RSA, and SHS|
 |[Windows OS Loader][sp-3194]|[#3194][certificate-3194]|FIPS Approved: AES, RSA, and SHS; Other Allowed: NDRNG|
 
-## Windows 10, version 1703 (Creators Update), build 10.0.15063
+## Windows 10, version 1703 (Creators Update)
 
-Validated Editions: Home, Pro, Enterprise, Education, S, Surface Hub, Mobile
+Build: 10.0.15063. Validated Editions: Home, Pro, Enterprise, Education, S, Surface Hub, Mobile
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -122,9 +122,9 @@ Validated Editions: Home, Pro, Enterprise, Education, S, Surface Hub, Mobile
 |[Windows OS Loader][sp-3090]|[#3090][certificate-3090]|FIPS Approved: AES, RSA, and SHS|
 |[Windows Resume][sp-3091] <br>*Applies only to Home, Pro, Enterprise, Education, and S Editions.*|[#3091][certificate-3091]|FIPS Approved: AES, RSA, and SHS|
 
-## Windows 10, version 1607 (Anniversary Update), build 10.0.14393.1770
+## Windows 10, version 1607 (Anniversary Update)
 
-Validated Editions: Windows 10 (Home/Consumer), Pro, Enterprise, Enterprise LTSB, Mobile
+Build: 10.0.14393.1770. Validated Editions: Windows 10 (Home/Consumer), Pro, Enterprise, Enterprise LTSB, Mobile
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -134,9 +134,7 @@ Validated Editions: Windows 10 (Home/Consumer), Pro, Enterprise, Enterprise LTSB
 |[Code Integrity][sp-3510] (ci.dll)|[#3510][certificate-3510]|FIPS Approved: AES, RSA, and SHS|
 |[Secure Kernel Code Integrity][sp-3513] (skci.dll) <br>*Applies only to Pro, Enterprise, and Enterprise LTSB Editions.*|[#3513][certificate-3513]|FIPS Approved: RSA and SHS; Other Allowed: MD5|
 
-## Windows 10, version 1607 (Anniversary Update), build 10.0.14393
-
-Validated Editions: Windows 10 (Home/Consumer), Pro, Enterprise, Enterprise LTSB, Mobile
+Build: 10.0.14393. Validated Editions: Windows 10 (Home/Consumer), Pro, Enterprise, Enterprise LTSB, Mobile
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -149,9 +147,9 @@ Validated Editions: Windows 10 (Home/Consumer), Pro, Enterprise, Enterprise LTSB
 |[Kernel Mode Cryptographic Primitives Library][sp-2936] (cng.sys)|[#2936][certificate-2936]|FIPS Approved: AES, CVL, DRBG, DSA, ECDSA, HMAC, KAS, KBKDF, KTS, PBKDF, RSA, SHS, and Triple-DES; Other Allowed: HMAC-MD5, MD5, and NDRNG|
 |[Secure Kernel Code Integrity][sp-2938] (skci.dll) <br>*Applies only to Pro, Enterprise, and Enterprise LTSB Editions.*|[#2938][certificate-2938]|FIPS Approved: RSA and SHS; Other Allowed: MD5|
 
-## Windows 10, version 1511 (November Update), build 10.0.10586.1176
+## Windows 10, version 1511 (November Update)
 
-Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
+Build: 10.0.10586.1176. Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -160,9 +158,7 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
 |[Boot Manager][sp-3447]|[#3447][certificate-3447]|FIPS Approved: AES, HMAC, PBKDF, RSA, and SHS|
 |[Code Integrity][sp-3469] (ci.dll)|[#3469][certificate-3469]|FIPS Approved: AES, RSA, and SHS|
 
-## Windows 10, version 1511 (November Update), build 10.0.10586
-
-Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
+Build: 10.0.10586. Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -175,9 +171,9 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
 |[Kernel Mode Cryptographic Primitives Library][sp-2605] (cng.sys)|[#2605][certificate-2605]|FIPS Approved: AES, CVL, DRBG, DSA, ECDSA, HMAC, KAS, KBKDF, KTS, PBKDF, RSA, SHS, and Triple-DES; Other Allowed: HMAC-MD5, MD5, and NDRNG|
 |[Secure Kernel Code Integrity][sp-2607] (skci.dll) <br>*Applies only to Enterprise and Enterprise LTSB Editions.*|[#2607][certificate-2607]|FIPS Approved: RSA and SHS|
 
-## Windows 10, version 1507, build 10.0.10240.17643
+## Windows 10, version 1507
 
-Validated Editions: Enterprise LTSB
+Build: 10.0.10240.17643. Validated Editions: Enterprise LTSB
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -186,9 +182,7 @@ Validated Editions: Enterprise LTSB
 |[Boot Manager][sp-3415]|[#3415][certificate-3415]|FIPS Approved: AES, HMAC, PBKDF, RSA, and SHS|
 |[Code Integrity][sp-3437] (ci.dll)|[#3437][certificate-3437]|FIPS Approved: AES, RSA, and SHS|
 
-## Windows 10, version 1507, build 10.0.10240
-
-Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, and Surface Hub
+Build: 10.0.10240. Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, and Surface Hub
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |

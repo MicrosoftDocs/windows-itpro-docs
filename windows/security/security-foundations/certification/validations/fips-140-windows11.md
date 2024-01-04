@@ -13,9 +13,9 @@ ms.collection: tier3
 
 The following tables list the completed FIPS 140 validations of cryptographic modules used in Windows 11, organized by major release of the operating system. The linked Security Policy document for each module provides details on the module capabilities and the policies the operator must follow to use the module in its FIPS approved mode of operation. For information on using the overall operating system in its FIPS approved mode, see [Use Windows in a FIPS 140 Approved Mode of Operation](../use-windows-in-fips-approved-mode.md). For details on the FIPS approved algorithms used by each module, including CAVP algorithm certificates, see the module's linked Security Policy document or CMVP module certificate.
 
-## Windows 11, version 21H2, build 10.0.22000
+## Windows 11, version 21H2
 
-Validated Edition: Windows 11
+Build: 10.0.22000. Validated Edition: Windows 11
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |

@@ -12,9 +12,9 @@ ms.collection: tier3
 
 The following tables list the completed FIPS 140 validations of cryptographic modules used in Windows Server 2016, organized by major release of the operating system. The linked Security Policy document for each module provides details on the module capabilities and the policies the operator must follow to use the module in its FIPS approved mode of operation. For information on using the overall operating system in its FIPS approved mode, see [Use Windows in a FIPS 140 Approved Mode of Operation](../use-windows-in-fips-approved-mode.md). For details on the FIPS approved algorithms used by each module, including CAVP algorithm certificates, see the module's linked Security Policy document or CMVP module certificate.
 
-## Windows Server 2016, build 10.0.14393.1770
+## Windows Server 2016
 
-Validated Editions: Standard, Datacenter, Storage Server
+Build: 10.0.14393.1770. Validated Editions: Standard, Datacenter, Storage Server.
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -24,9 +24,7 @@ Validated Editions: Standard, Datacenter, Storage Server
 |[Code Integrity][sp-3510] (ci.dll)|[#3510][certificate-3510]|FIPS Approved: AES, RSA, and SHS|
 |[Secure Kernel Code Integrity][sp-3513] (skci.dll)|[#3513][certificate-3513]|FIPS Approved: RSA and SHS; Other Allowed: MD5|
 
-## Windows Server 2016, build 10.0.14393
-
-Validated Editions: Standard, Datacenter, Storage Server
+Build: 10.0.14393. Validated Editions: Standard, Datacenter, Storage Server.
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |

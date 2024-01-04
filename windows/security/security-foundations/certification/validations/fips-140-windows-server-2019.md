@@ -12,9 +12,9 @@ ms.collection: tier3
 
 The following tables list the completed FIPS 140 validations of cryptographic modules used in Windows Server 2019, organized by major release of the operating system. The linked Security Policy document for each module provides details on the module capabilities and the policies the operator must follow to use the module in its FIPS approved mode of operation. For information on using the overall operating system in its FIPS approved mode, see [Use Windows in a FIPS 140 Approved Mode of Operation](../use-windows-in-fips-approved-mode.md). For details on the FIPS approved algorithms used by each module, see its linked Security Policy document or module certificate.
 
-## Windows Server 2019, builds 10.0.17763.10021 and 10.0.17763.10127
+## Windows Server 2019
 
-Validated Edition: Datacenter Core
+Builds: 10.0.17763.10021 and 10.0.17763.10127. Validated Edition: Datacenter Core
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -27,9 +27,7 @@ Validated Edition: Datacenter Core
 |[Virtual TPM]|Pending [(in process)][in-process]||
 |[Windows OS Loader][sp-4545]|[#4545][certificate-4545]|FIPS Approved: AES, RSA, and SHS; Other Allowed: NDRNG|
 
-## Windows Server 2019, build 10.0.17763.107
-
-Validated Editions: Standard Core, Datacenter Core
+Build: 10.0.17763.107. Validated Editions: Standard Core, Datacenter Core
 
 |Cryptographic Module (linked to Security Policy document)|Version|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |--- |

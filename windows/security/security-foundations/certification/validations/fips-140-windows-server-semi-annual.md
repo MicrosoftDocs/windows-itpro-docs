@@ -13,24 +13,9 @@ ms.collection: tier3
 
 The following tables list the completed FIPS 140 validations of cryptographic modules used in Windows Server semi-annual releases, organized by major release of the operating system. The linked Security Policy document for each module provides details on the module capabilities and the policies the operator must follow to use the module in its FIPS approved mode of operation. For information on using the overall operating system in its FIPS approved mode, see [Use Windows in a FIPS 140 Approved Mode of Operation](../use-windows-in-fips-approved-mode.md). For details on the FIPS approved algorithms used by each module, including CAVP algorithm certificates, see the module's linked Security Policy document or CMVP module certificate.
 
-## Windows Server, version 2004 (May 2020 Update), build 10.0.19041
+## Windows Server, version 2004 (May 2020 Update)
 
-Validated Editions: Standard Core, Datacenter Core
-
-|Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
-|--- |--- |--- |
-|[BitLocker Dump Filter][sp-4538]|[#4538][certificate-4538]|FIPS Approved: AES, RSA, and SHS|
-|[Boot Manager][sp-3923]|[#3923][certificate-3923]|FIPS Approved: AES, CKG, HMAC, PBKDF, RSA, and SHS|
-|[Code Integrity][sp-4511]|[#4511][certificate-4511]|FIPS Approved: AES, RSA, and SHS|
-|[Cryptographic Primitives Library][sp-4536]|[#4536][certificate-4536]|FIPS Approved: AES, CKG, CVL, DRBG, DSA, ECDSA, HMAC, KAS, KBKDF, KTS, PBKDF, RSA, SHS, and Triple-DES; Other Allowed: NDRNG|
-|[Kernel Mode Cryptographic Primitives Library][sp-4515]|[#4515][certificate-4515]|FIPS Approved: AES, CKG, CVL, DRBG, DSA, ECDSA, HMAC, KAS, KBKDF, KTS, PBKDF, RSA, SHS, and Triple-DES; Other Allowed: NDRNG|
-|[Secure Kernel Code Integrity][sp-4512]|[#4512][certificate-4512]|FIPS Approved: AES, RSA, and SHS|
-|[Virtual TPM][sp-4537]|[#4537][certificate-4537]|FIPS Approved: AES, CKG, CVL, DRBG, ECDSA, HMAC, KAS, KBKDF, KTS, RSA, and SHS; Other Allowed: NDRNG|
-|[Windows OS Loader][sp-4339]|[#4339][certificate-4339]|FIPS Approved: AES, CKG, DRBG, RSA, and SHS; Other Allowed: NDRNG|
-
-## Windows Server, version 1909 (November 2019 Update), build 10.0.18363
-
-Validated Editions: Standard Core, Datacenter Core
+Build: 10.0.19041. Validated Editions: Standard Core, Datacenter Core
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -43,9 +28,9 @@ Validated Editions: Standard Core, Datacenter Core
 |[Virtual TPM][sp-4537]|[#4537][certificate-4537]|FIPS Approved: AES, CKG, CVL, DRBG, ECDSA, HMAC, KAS, KBKDF, KTS, RSA, and SHS; Other Allowed: NDRNG|
 |[Windows OS Loader][sp-4339]|[#4339][certificate-4339]|FIPS Approved: AES, CKG, DRBG, RSA, and SHS; Other Allowed: NDRNG|
 
-## Windows Server, version 1903 (May 2019 Update), build 10.0.18362
+## Windows Server, version 1909 (November 2019 Update)
 
-Validated Editions: Standard Core, Datacenter Core
+Build: 10.0.18363. Validated Editions: Standard Core, Datacenter Core
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -58,9 +43,24 @@ Validated Editions: Standard Core, Datacenter Core
 |[Virtual TPM][sp-4537]|[#4537][certificate-4537]|FIPS Approved: AES, CKG, CVL, DRBG, ECDSA, HMAC, KAS, KBKDF, KTS, RSA, and SHS; Other Allowed: NDRNG|
 |[Windows OS Loader][sp-4339]|[#4339][certificate-4339]|FIPS Approved: AES, CKG, DRBG, RSA, and SHS; Other Allowed: NDRNG|
 
-## Windows Server, version 1809, build 10.0.17763
+## Windows Server, version 1903 (May 2019 Update)
 
-Validated Editions: Standard Core, Datacenter Core
+Build: 10.0.18362. Validated Editions: Standard Core, Datacenter Core
+
+|Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
+|--- |--- |--- |
+|[BitLocker Dump Filter][sp-4538]|[#4538][certificate-4538]|FIPS Approved: AES, RSA, and SHS|
+|[Boot Manager][sp-3923]|[#3923][certificate-3923]|FIPS Approved: AES, CKG, HMAC, PBKDF, RSA, and SHS|
+|[Code Integrity][sp-4511]|[#4511][certificate-4511]|FIPS Approved: AES, RSA, and SHS|
+|[Cryptographic Primitives Library][sp-4536]|[#4536][certificate-4536]|FIPS Approved: AES, CKG, CVL, DRBG, DSA, ECDSA, HMAC, KAS, KBKDF, KTS, PBKDF, RSA, SHS, and Triple-DES; Other Allowed: NDRNG|
+|[Kernel Mode Cryptographic Primitives Library][sp-4515]|[#4515][certificate-4515]|FIPS Approved: AES, CKG, CVL, DRBG, DSA, ECDSA, HMAC, KAS, KBKDF, KTS, PBKDF, RSA, SHS, and Triple-DES; Other Allowed: NDRNG|
+|[Secure Kernel Code Integrity][sp-4512]|[#4512][certificate-4512]|FIPS Approved: AES, RSA, and SHS|
+|[Virtual TPM][sp-4537]|[#4537][certificate-4537]|FIPS Approved: AES, CKG, CVL, DRBG, ECDSA, HMAC, KAS, KBKDF, KTS, RSA, and SHS; Other Allowed: NDRNG|
+|[Windows OS Loader][sp-4339]|[#4339][certificate-4339]|FIPS Approved: AES, CKG, DRBG, RSA, and SHS; Other Allowed: NDRNG|
+
+## Windows Server, version 1809
+
+Build: 10.0.17763. Validated Editions: Standard Core, Datacenter Core
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -73,9 +73,9 @@ Validated Editions: Standard Core, Datacenter Core
 |[Virtual TPM][sp-3690]|[#3690][certificate-3690]|FIPS Approved: AES, CKG, CVL, DRBG, ECDSA, HMAC, KAS, KBKDF, KTS, RSA, and SHS; Other Allowed: NDRNG|
 |[Windows OS Loader][sp-3615]|[#3615][certificate-3615]|FIPS Approved: AES, CKG, DRBG, RSA, and SHS; Other Allowed: NDRNG|
 
-## Windows Server, version 1803, build 10.0.17134
+## Windows Server, version 1803
 
-Validated Editions: Standard Core, Datacenter Core
+Build: 10.0.17134. Validated Editions: Standard Core, Datacenter Core
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
@@ -87,9 +87,9 @@ Validated Editions: Standard Core, Datacenter Core
 |[Secure Kernel Code Integrity][sp-3096]|[#3096][certificate-3096]|FIPS Approved: AES, RSA, and SHS|
 |[Windows OS Loader][sp-3480]|[#3480][certificate-3480]|FIPS Approved: AES, CKG, DRBG, RSA, and SHS; Other Allowed: NDRNG|
 
-## Windows Server, version 1709, build 10.0.16299
+## Windows Server, version 1709
 
-Validated Editions: Standard Core, Datacenter Core
+Build: 10.0.16299. Validated Editions: Standard Core, Datacenter Core
 
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |

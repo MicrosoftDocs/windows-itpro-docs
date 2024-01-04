@@ -1,5 +1,5 @@
 items:
-- name: FIPS 140 validation overview
+- name: FIPS 140 validation
   href: fips-140-validation.md
 - name: Windows FIPS approved mode
   href: use-windows-in-fips-approved-mode.md
@@ -21,5 +21,5 @@ items:
     href: ./validations/fips-140-windows-server-previous.md
   - name: Other products
     href: ./validations/fips-140-other-products.md
-- name: Common Criteria certifications
+- name: Common Criteria certification
   href: windows-platform-common-criteria.md
