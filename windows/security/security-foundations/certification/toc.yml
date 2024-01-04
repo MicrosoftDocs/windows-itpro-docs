@@ -1,9 +1,9 @@
 items:
-- name: Windows FIPS 140 validation overview
+- name: FIPS 140 validation overview
   href: fips-140-validation.md
-- name: Use Windows in FIPS approved mode
+- name: Windows FIPS approved mode
   href: use-windows-in-fips-approved-mode.md
-- name: Completed FIPS module validations
+- name: Completed FIPS validations
   items:
   - name: Windows 11
     href: ./validations/fips-140-windows11.md

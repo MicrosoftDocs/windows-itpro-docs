@@ -8,13 +8,14 @@ author: msrobertd
 ms.reviewer: paoloma
 ms.collection: tier3
 ---
-# FIPS 140 validated modules for Windows Server 2016
+# FIPS 140 validated modules in Windows Server 2016
 
 The following tables list the completed FIPS 140 validations of cryptographic modules used in Windows Server 2016, organized by major release of the operating system. The linked Security Policy document for each module provides details on the module capabilities and the policies the operator must follow to use the module in its FIPS approved mode of operation. For information on using the overall operating system in its FIPS approved mode, see [Use Windows in a FIPS 140 Approved Mode of Operation](../use-windows-in-fips-approved-mode.md). For details on the FIPS approved algorithms used by each module, including CAVP algorithm certificates, see the module's linked Security Policy document or CMVP module certificate.
 
 ## Windows Server 2016, build 10.0.14393.1770
 
 Validated Editions: Standard, Datacenter, Storage Server
+
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Windows OS Loader][sp-3502] (winload)|[#3502][certificate-3502]|FIPS Approved: AES, RSA, and SHS; Other Allowed: NDRNG|
@@ -26,6 +27,7 @@ Validated Editions: Standard, Datacenter, Storage Server
 ## Windows Server 2016, build 10.0.14393
 
 Validated Editions: Standard, Datacenter, Storage Server
+
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-2934] (dumpfve.sys)|[#2934][certificate-2934]|FIPS Approved: AES|

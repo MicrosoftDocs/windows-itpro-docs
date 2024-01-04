@@ -9,7 +9,7 @@ ms.reviewer: paoloma
 ms.collection: tier3
 ---
 
-# Windows FIPS 140 validation overview
+# Windows FIPS 140 validations
 
 The Federal Information Processing Standard (FIPS) Publication 140 is a U.S. government standard that defines the minimum-security requirements for cryptographic modules in IT products. This topic introduces the FIPS 140 validation process for the Windows cryptographic modules, algorithms, and entropy source.
 

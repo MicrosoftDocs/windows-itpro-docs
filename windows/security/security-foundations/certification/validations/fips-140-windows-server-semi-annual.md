@@ -9,13 +9,14 @@ ms.reviewer: paoloma
 ms.collection: tier3
 ---
 
-# FIPS 140 validated modules for Windows Server Semi-Annual Releases
+# FIPS 140 validated modules in Windows Server semi-annual releases
 
 The following tables list the completed FIPS 140 validations of cryptographic modules used in Windows Server semi-annual releases, organized by major release of the operating system. The linked Security Policy document for each module provides details on the module capabilities and the policies the operator must follow to use the module in its FIPS approved mode of operation. For information on using the overall operating system in its FIPS approved mode, see [Use Windows in a FIPS 140 Approved Mode of Operation](../use-windows-in-fips-approved-mode.md). For details on the FIPS approved algorithms used by each module, including CAVP algorithm certificates, see the module's linked Security Policy document or CMVP module certificate.
 
 ## Windows Server, version 2004 (May 2020 Update), build 10.0.19041
 
 Validated Editions: Standard Core, Datacenter Core
+
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-4538]|[#4538][certificate-4538]|FIPS Approved: AES, RSA, and SHS|
@@ -30,6 +31,7 @@ Validated Editions: Standard Core, Datacenter Core
 ## Windows Server, version 1909 (November 2019 Update), build 10.0.18363
 
 Validated Editions: Standard Core, Datacenter Core
+
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-4538]|[#4538][certificate-4538]|FIPS Approved: AES, RSA, and SHS|
@@ -44,6 +46,7 @@ Validated Editions: Standard Core, Datacenter Core
 ## Windows Server, version 1903 (May 2019 Update), build 10.0.18362
 
 Validated Editions: Standard Core, Datacenter Core
+
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-4538]|[#4538][certificate-4538]|FIPS Approved: AES, RSA, and SHS|
@@ -57,9 +60,8 @@ Validated Editions: Standard Core, Datacenter Core
 
 ## Windows Server, version 1809, build 10.0.17763
 
-*Note: this release of Windows Server is also known as Windows Server 2019, build 10.0.17763.*
-
 Validated Editions: Standard Core, Datacenter Core
+
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-3092]|[#3092][certificate-3092]|FIPS Approved: AES, RSA, and SHS|
@@ -74,6 +76,7 @@ Validated Editions: Standard Core, Datacenter Core
 ## Windows Server, version 1803, build 10.0.17134
 
 Validated Editions: Standard Core, Datacenter Core
+
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-3092]|[#3092][certificate-3092]|FIPS Approved: AES, RSA, and SHS|
@@ -87,6 +90,7 @@ Validated Editions: Standard Core, Datacenter Core
 ## Windows Server, version 1709, build 10.0.16299
 
 Validated Editions: Standard Core, Datacenter Core
+
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[BitLocker Dump Filter][sp-3092]|[#3092][certificate-3092]|FIPS Approved: AES, RSA, and SHS|

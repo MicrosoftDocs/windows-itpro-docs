@@ -8,13 +8,14 @@ author: msrobertd
 ms.reviewer: paoloma
 ms.collection: tier3
 ---
-# FIPS 140 validated modules for previous Windows versions
+# FIPS 140 validated modules in previous Windows versions
 
 The following tables list the completed FIPS 140 validations of cryptographic modules used in versions of Windows  prior to Windows 10, organized by major release of the operating system. The linked Security Policy document for each module provides details on the module capabilities and the policies the operator must follow to use the module in its FIPS approved mode of operation. For information on using the overall operating system in its FIPS approved mode, see [Use Windows in a FIPS 140 Approved Mode of Operation](../use-windows-in-fips-approved-mode.md). For details on the FIPS approved algorithms used by each module, including CAVP algorithm certificates, see the module's linked Security Policy document or CMVP module certificate.
 
 ## Windows 8.1
 
 Validated Editions: RT, Pro, Enterprise, Phone, Embedded
+
 |Cryptographic Module|Version (link to Security Policy)|CMVP Certificate #|
 |--- |--- |--- |
 |BitLocker Dump Filter (dumpfve.sys)|[6.3.9600 6.3.9600.17031][sp-2354]|[#2354][certificate-2354]|
@@ -28,6 +29,7 @@ Validated Editions: RT, Pro, Enterprise, Phone, Embedded
 ## Windows 8
 
 Validated Editions: RT, Home, Pro, Enterprise, Phone
+
 |Cryptographic Module|Version (link to Security Policy)|CMVP Certificate #|
 |--- |--- |--- |
 |BitLocker Dump Filter (DUMPFVE.SYS)|[6.2.9200][sp-1899]|[#1899][sp-1899]|
@@ -43,6 +45,7 @@ Validated Editions: RT, Home, Pro, Enterprise, Phone
 ## Windows 7
 
 Validated Editions: Windows 7, Windows 7 SP1
+
 |Cryptographic Module|Version (link to Security Policy)|CMVP Certificate #|
 |--- |--- |--- |
 |BitLocker Drive Encryption|[6.1.7600.16385, 6.1.7600.16429, 6.1.7600.16757, 6.1.7600.20536, 6.1.7600.20873, 6.1.7600.20897, 6.1.7600.20916, 6.1.7601.17514, 6.1.7601.17556, 6.1.7601.21634, 6.1.7601.21655, and 6.1.7601.21675][sp-1332]|[1332][certificate-1332]|
@@ -56,7 +59,8 @@ Validated Editions: Windows 7, Windows 7 SP1
 
 ## Windows Vista SP1
 
-Validated Editions: Ultimate Edition
+Validated Edition: Ultimate Edition
+
 |Cryptographic Module|Version (link to Security Policy)|CMVP Certificate #|
 |--- |--- |--- |
 |Boot Manager (bootmgr)|[6.0.6001.18000 and 6.0.6002.18005][sp-978]|[978][certificate-978]|
@@ -69,7 +73,8 @@ Validated Editions: Ultimate Edition
 
 ## Windows Vista
 
-Validated Editions: Ultimate Edition
+Validated Edition: Ultimate Edition
+
 |Cryptographic Module|Version (link to Security Policy)|CMVP Certificate #|
 |--- |--- |--- |
 |BitLocker Drive Encryption|[6.0.6000.16386][sp-947]|[947][certificate-947]|

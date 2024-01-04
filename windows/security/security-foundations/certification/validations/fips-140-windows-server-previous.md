@@ -9,13 +9,14 @@ ms.reviewer: paoloma
 ms.collection: tier3
 ---
 
-# FIPS 140 validated modules for previous Windows Server versions
+# FIPS 140 validated modules in previous Windows Server versions
 
 The following tables list the completed FIPS 140 validations of cryptographic modules used in versions of Windows Server prior to Windows Server 2016, organized by major release of the operating system. The linked Security Policy document for each module provides details on the module capabilities and the policies the operator must follow to use the module in its FIPS approved mode of operation. For information on using the overall operating system in its FIPS approved mode, see [Use Windows in a FIPS 140 Approved Mode of Operation](../use-windows-in-fips-approved-mode.md). For details on the FIPS approved algorithms used by each module, including CAVP algorithm certificates, see the module's linked Security Policy document or CMVP module certificate.
 
 ## Windows Server 2012 R2
 
 Validated Editions: Server, Storage Server, StorSimple 8000 Series, Azure StorSimple Virtual Array Windows Server 2012 R2
+
 |Cryptographic Module|Version (link to Security Policy)|CMVP Certificate #|
 |--- |--- |--- |
 |BitLocker Dump Filter (dumpfve.sys) <br>*Doesn't apply to Azure StorSimple Virtual Array Windows Server 2012 R2*|[6.3.9600 6.3.9600.17031][sp-2354]|[2354][certificate-2354]|
@@ -29,6 +30,7 @@ Validated Editions: Server, Storage Server, StorSimple 8000 Series, Azure StorSi
 ## Windows Server 2012
 
 Validated Editions: Server, Storage Server
+
 |Cryptographic Module|Version (link to Security Policy)|CMVP Certificate #|
 |--- |--- |--- |
 |BitLocker Dump Filter (DUMPFVE.SYS)|[6.2.9200][sp-1899]|[1899][sp-1899]|

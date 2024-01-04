@@ -16,6 +16,7 @@ The following tables list the completed FIPS 140 validations of cryptographic mo
 ## Windows 11, version 21H2, build 10.0.22000
 
 Validated Edition: Windows 11
+
 |Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
 |--- |--- |--- |
 |[Boot Manager][sp-4546]|[#3089][certificate-4546]|FIPS Approved: AES, CKG, HMAC, PBKDF, RSA, and SHS|
