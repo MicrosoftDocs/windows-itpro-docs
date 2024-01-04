@@ -38,7 +38,8 @@ Validated Editions: RT, Home, Pro, Enterprise, Phone
 |Boot Manager|[6.2.9200][sp-1895]|[#1895][sp-1895]|
 |Code Integrity (CI.DLL)|[6.2.9200][sp-1897]|[#1897][sp-1897]|
 |Enhanced Cryptographic Provider (RSAENH.DLL)|[6.2.9200][sp-1894]|[#1894][sp-1894]|
-|Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH.DLL)|[6.2.9200][sp-1893]|[#1893][sp-1893]||Cryptographic Primitives Library (BCRYPTPRIMITIVES.DLL)|[6.2.9200][sp-1892]|[#1892][sp-1892]|
+|Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH.DLL)|[6.2.9200][sp-1893]|[#1893][sp-1893]|
+|Cryptographic Primitives Library (BCRYPTPRIMITIVES.DLL)|[6.2.9200][sp-1892]|[#1892][sp-1892]|
 |Kernel Mode Cryptographic Primitives Library (cng.sys)|[6.2.9200][sp-1891]|[#1891][certificate-1891]|
 
 ## Windows 7
@@ -67,7 +68,8 @@ Validated Editions: Ultimate Edition
 |Code Integrity (ci.dll)|[6.0.6001.18000, 6.0.6001.18023, 6.0.6001.22120, and 6.0.6002.18005][sp-980]|[980][certificate-980]|
 |Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH)|[6.0.6001.18000 and 6.0.6002.18005][sp-1003]|[1003][certificate-1003]|
 |Enhanced Cryptographic Provider (RSAENH)|[6.0.6001.22202 and 6.0.6002.18005][sp-1002]|[1002][certificate-1002]|
-|Kernel Mode Security Support Provider Interface (ksecdd.sys)|[6.0.6001.18709, 6.0.6001.18272, 6.0.6001.18796, 6.0.6001.22202, 6.0.6001.22450, 6.0.6001.22987, 6.0.6001.23069, 6.0.6002.18005, 6.0.6002.18051, 6.0.6002.18541, 6.0.6002.18643, 6.0.6002.22152, 6.0.6002.22742, and 6.0.6002.22869][sp-1000]|[1000][certificate-1000]||Winload OS Loader (winload.exe)|[6.0.6001.18000, 6.0.6001.18027, 6.0.6001.18606, 6.0.6001.22125, 6.0.6001.22861, 6.0.6002.18005, 6.0.6002.18411 and 6.0.6002.22596][sp-979]|[979][certificate-979]|
+|Kernel Mode Security Support Provider Interface (ksecdd.sys)|[6.0.6001.18709, 6.0.6001.18272, 6.0.6001.18796, 6.0.6001.22202, 6.0.6001.22450, 6.0.6001.22987, 6.0.6001.23069, 6.0.6002.18005, 6.0.6002.18051, 6.0.6002.18541, 6.0.6002.18643, 6.0.6002.22152, 6.0.6002.22742, and 6.0.6002.22869][sp-1000]|[1000][certificate-1000]|
+|Winload OS Loader (winload.exe)|[6.0.6001.18000, 6.0.6001.18027, 6.0.6001.18606, 6.0.6001.22125, 6.0.6001.22861, 6.0.6002.18005, 6.0.6002.18411 and 6.0.6002.22596][sp-979]|[979][certificate-979]|
 
 ## Windows Vista
 
