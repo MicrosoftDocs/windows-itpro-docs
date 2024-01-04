@@ -15,7 +15,7 @@ The Federal Information Processing Standard (FIPS) Publication 140 is a U.S. gov
 
 The Windows cryptographic modules are used across different Microsoft products, including Windows client operating systems, Windows Server, and Azure cloud services. For a current listing of FIPS 140 validated cryptographic modules, select a product from the drop-down menus below.
 
-[!INCLUDE [validation-selector](../includes/validation-selector.md)]
+[!INCLUDE [validation-selector](./includes/validation-selector.md)]
 
 ## Understand the Windows FIPS 140 validation process
 

@@ -18,7 +18,7 @@ ms.collection: tier3
 
 Administrators must ensure that all cryptographic modules installed in the operational environment are FIPS 140 validated. To identify which modules have been validated for a particular Microsoft product, select a product from the drop-down menus below.
 
-[!INCLUDE [validation-selector](../includes/validation-selector.md)]
+[!INCLUDE [validation-selector](./includes/validation-selector.md)]
 
 ### Step 2: Ensure all security policies for all cryptographic modules are followed
 
@@ -37,7 +37,7 @@ If you turn on FIPS mode, the Cryptographic Primitives Library `bcryptprimitives
 
 This FIPS security policy may be enabled by following the instructions in the Security Policy document for the Cryptographic Primitives Library or Kernel Mode Cryptographic Primitives Library.
 
-For more information on the FIPS mode security policy setting, see [System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing](security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md).
+For more information on the FIPS mode security policy setting, see [System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing](/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md).
 
 ### Step 4: Ensure that only FIPS validated cryptographic algorithms are used
 
