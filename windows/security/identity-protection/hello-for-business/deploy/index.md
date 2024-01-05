@@ -108,45 +108,6 @@ Cloud Kerberos trust is the only hybrid deployment option that doesn't require t
 
 ## Authentication
 
-Here are some core concepts regarding authentication to Microsoft Entra ID:
-
-:::row:::
-    :::column span="1":::
-        **Password hash sync (PHS)**
-    :::column-end:::
-    :::column span="3":::
-        Password hash sync is the simplest way to enable authentication for on-premises directory objects in Microsoft Entra ID. With PHS, you synchronize your on-premises Active Directory user account objects with Microsoft Entra ID and manage your users on-premises. Hashes of user passwords are synchronized from your on-premises Active Directory to Microsoft Entra ID so that the users have the same password on-premises and in the cloud. When passwords are changed or reset on-premises, the new password hashes are synchronized to Microsoft Entra ID so that your users can always use the same password for cloud resources and on-premises resources. The passwords are never sent to Microsoft Entra ID or stored in Microsoft Entra ID in clear text. Some premium features of Microsoft Entra ID, such as Identity Protection, require PHS regardless of which authentication method is selected. With seamless single sign-on, users are automatically signed in to Microsoft Entra ID when they are on their corporate devices and connected to your corporate network.
-
-        Learn more: [password hash synchronization (PHS)][ENTRA-6]
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-        **Pass-through authentication (PTA)**
-    :::column-end:::
-    :::column span="3":::
-        Pass-through authentication provides a simple password validation for Microsoft Entra authentication services. It uses a software agent that runs on one or more on-premises servers to validate the users directly with your on-premises Active Directory. With pass-through authentication (PTA), you synchronize on-premises Active Directory user account objects with Microsoft Entra ID and manage your users on-premises. Allows your users to sign in to both on-premises and Microsoft cloud resources and applications using their on-premises account and password. This configuration validates users' passwords directly against your on-premises Active Directory without sending password hashes to Microsoft Entra ID. Companies with a security requirement to immediately enforce on-premises user account states, password policies, and sign-in hours would use this authentication method. With seamless single sign-on, users are automatically signed in to Microsoft Entra ID when they are on their corporate devices and connected to your corporate network.
-
-        Learn more: [pass-through authentication (PTA)][ENTRA-7]
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-        **Cloud authentication**
-    :::column-end:::
-    :::column span="3":::
-        Cloud authentication is for environments where Microsoft Entra ID manages the authentication using technologies such as Password Hash Synchronization and Pass-through Authentication, rather than a federation service like Active Directory Federation Services (AD FS).
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-        **Federated authentication**
-    :::column-end:::
-    :::column span="3":::
-        Federated authentication is for environments where Microsoft Entra ID hands off the authentication process to a separate trusted authentication system, such as on-premises Active Directory Federation Services (AD FS), to validate the user's credential. The authentication system can provide other advanced authentication requirements, for example, third-party multifactor authentication.
-    :::column-end:::
-:::row-end:::
-
 Here's a list of requirements for federated and nonfederated deployments.
 
 || Deployment model | Trust type | Authentication to Microsoft Entra ID | Requirements |
@@ -171,31 +132,6 @@ For on-premises deployments, the server running the Active Directory Federation 
 
 > [!IMPORTANT]
 > For *Microsoft Entra hybrid joined* guidance, review [Plan your Microsoft Entra hybrid join implementation][ENTRA-5].
-
-### Key registration
-
-The built-in Windows Hello for Business provisioning experience creates a device-bound asymmetric key pair as the user's credentials. The private key is protected by the device's security modules. The credential is a *user key*, not a *device key*. The provisioning experience registers the user's public key with the identity provider:
-
-| Deployment model | Key registration service provider |
-|-|-|
-| **Cloud-only** | Microsoft Entra ID |
-| **Hybrid** | Microsoft Entra ID |
-| **On-premises** | AD FS |
-
-### Directory synchronization
-
-Hybrid and on-premises deployments use directory synchronization, however, each for a different purpose:
-
-- Hybrid deployments use [Microsoft Entra Connect Sync][ENTRA-3] to synchronize Active Directory identities (users and devices) or credentials between itself and Microsoft Entra ID. During the Window Hello for Business provisioning process, users register the public portion of their Windows Hello for Business credential with Microsoft Entra ID. Microsoft Entra Connect Sync synchronizes the Windows Hello for Business public key to Active Directory. This synchronization enables SSO to Microsoft Entra ID and its federated components.
-    > [!IMPORTANT]
-    > Windows Hello for Business is tied between a user and a device. Both the user and device object must be synchronized between Microsoft Entra ID and Active Directory.
-- On-premises deployments use directory synchronization to import users from Active Directory to the Azure MFA server, which sends data to the MFA cloud service to perform the verification
-
-| Deployment model | Directory sync options |
-|-|-|
-| **Cloud-only** | n/a |
-| **Hybrid** | Microsoft Entra Connect Sync|
-| **On-premises** | Azure MFA server |
 
 ### Multifactor authentication
 
@@ -236,6 +172,31 @@ Update-MgDomainFederationConfiguration -DomainId $DomainId -FederatedIdpMfaBehav
 ```
 
 If you configure the flag with a value of either `acceptIfMfaDoneByFederatedIdp` (default) or `enforceMfaByFederatedIdp`, you must verify that your federated IDP is correctly configured and working with the MFA adapter and provider used by your IdP.
+
+### Key registration
+
+The built-in Windows Hello for Business provisioning experience creates a device-bound asymmetric key pair as the user's credentials. The private key is protected by the device's security modules. The credential is a *user key*, not a *device key*. The provisioning experience registers the user's public key with the identity provider:
+
+| Deployment model | Key registration service provider |
+|-|-|
+| **Cloud-only** | Microsoft Entra ID |
+| **Hybrid** | Microsoft Entra ID |
+| **On-premises** | AD FS |
+
+### Directory synchronization
+
+Hybrid and on-premises deployments use directory synchronization, however, each for a different purpose:
+
+- Hybrid deployments use [Microsoft Entra Connect Sync][ENTRA-3] to synchronize Active Directory identities (users and devices) or credentials between itself and Microsoft Entra ID. During the Window Hello for Business provisioning process, users register the public portion of their Windows Hello for Business credential with Microsoft Entra ID. Microsoft Entra Connect Sync synchronizes the Windows Hello for Business public key to Active Directory. This synchronization enables SSO to Microsoft Entra ID and its federated components.
+    > [!IMPORTANT]
+    > Windows Hello for Business is tied between a user and a device. Both the user and device object must be synchronized between Microsoft Entra ID and Active Directory.
+- On-premises deployments use directory synchronization to import users from Active Directory to the Azure MFA server, which sends data to the MFA cloud service to perform the verification
+
+| Deployment model | Directory sync options |
+|-|-|
+| **Cloud-only** | n/a |
+| **Hybrid** | Microsoft Entra Connect Sync|
+| **On-premises** | Azure MFA server |
 
 ## Device configuration
 

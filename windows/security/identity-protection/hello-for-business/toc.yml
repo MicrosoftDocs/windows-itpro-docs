@@ -2,7 +2,13 @@ items:
 - name: Overview
   href: index.md
 - name: How Windows Hello for Business works
-  href: how-it-works.md
+  items:
+    - name: Core concepts 
+      href: how-it-works.md
+    - name: How provisioning works
+      href: how-it-works-provisioning.md
+    - name: How authentication works
+      href: how-it-works-authentication.md
 - name: Configure Windows Hello for Business
   href: configure.md
 - name: Deployment guides
@@ -29,10 +35,6 @@ items:
   items:
   - name: Windows Hello for Business policy settings
     href: policy-settings.md
-  - name: How Windows Hello for Business provisioning works
-    href: how-it-works-provisioning.md
-  - name: How Windows Hello for Business authentication works
-    href: how-it-works-authentication.md
   - name: WebAuthn APIs
     href: webauthn-apis.md
   - name: Windows Hello Enhanced Security Sign-in (ESS) 🔗

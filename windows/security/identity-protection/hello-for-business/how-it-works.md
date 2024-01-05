@@ -44,7 +44,9 @@ Windows Hello for Business is a distributed system that uses several components 
 
 ## Device Registration
 
-Registration is a fundamental prerequisite for Windows Hello for Business.  Without registration, Windows Hello for Business provisioning cannot start. Registration is where the device **registers** its identity with the identity provider. For cloud and hybrid deployments, the identity provider is Microsoft Entra ID and the device registers with the Device Registration Service. For on-premises deployments, the identity provider is Active Directory Federation Services (AD FS), and the device registers with the enterprise device registration service hosted on the federation servers (AD FS).
+Registration is a fundamental prerequisite for Windows Hello for Business. Without registration, Windows Hello for Business provisioning cannot start. Registration is where the device registers its identity with the identity provider:
+
+- For cloud and hybrid deployments, the identity provider is Microsoft Entra ID and the device registers with the *Device Registration Service* - For on-premises deployments, the identity provider is Active Directory Federation Services (AD FS), and the device registers with the enterprise device registration service hosted on AD FS
 
 All devices included in the Windows Hello for Business deployment must go through a process called *device registration*. Device registration enables devices to be associated and to authentiticate to an identity provider (IdP). Device registration is identified by the *join type*.
 
@@ -57,20 +59,50 @@ For more information, read [how device registration works](/azure/active-directo
 
 Provisioning is when the user uses one form of authentication to request a new Windows Hello for Business credential. Typically the user signs in to Windows using user name and password. The provisioning flow requires a second factor of authentication before it can create a strong, two-factor Windows Hello for Business credential.
 
+### Authentication to Microsoft Entra ID and MFA
+
+Here are some core concepts regarding authentication to Microsoft Entra ID:
+
 :::row:::
-    :::column:::
-        Windows Hello generates a new public-private key pair on the device. The TPM generates and protects this private key; if the device doesn't have a TPM, the private key is encrypted and stored in software. This initial key is referred to as the *protector key*. It's associated only with a single gesture; in other words, if a user registers a PIN, a fingerprint, and a face on the same device, each of those gestures will have a unique protector key. **Each unique gesture generates a unique protector key**. The protector key securely wraps the *authentication key*. The container has only one authentication key, but there can be multiple copies of that key wrapped with different unique protector keys. Windows Hello also generates an administrative key that the user or administrator can use to reset credentials, when necessary (for example, when using the PIN reset service). In addition to the protector key, TPM-enabled devices generate a block of data that contains attestations from the TPM.
+    :::column span="1":::
+        **Password hash sync (PHS)**
     :::column-end:::
-    :::column:::
-        :::image type="content" source="images/hello-container.png" alt-text="Diagram of the Windows Hello container.":::
+    :::column span="3":::
+        Password hash sync is the simplest way to enable authentication for on-premises directory objects in Microsoft Entra ID. With PHS, you synchronize your on-premises Active Directory user account objects with Microsoft Entra ID and manage your users on-premises. Hashes of user passwords are synchronized from your on-premises Active Directory to Microsoft Entra ID so that the users have the same password on-premises and in the cloud. When passwords are changed or reset on-premises, the new password hashes are synchronized to Microsoft Entra ID so that your users can always use the same password for cloud resources and on-premises resources. The passwords are never sent to Microsoft Entra ID or stored in Microsoft Entra ID in clear text. Some premium features of Microsoft Entra ID, such as Identity Protection, require PHS regardless of which authentication method is selected. With seamless single sign-on, users are automatically signed in to Microsoft Entra ID when they are on their corporate devices and connected to your corporate network.
+
+        Learn more: [password hash synchronization (PHS)][ENTRA-6]
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        **Pass-through authentication (PTA)**
+    :::column-end:::
+    :::column span="3":::
+        Pass-through authentication provides a simple password validation for Microsoft Entra authentication services. It uses a software agent that runs on one or more on-premises servers to validate the users directly with your on-premises Active Directory. With pass-through authentication (PTA), you synchronize on-premises Active Directory user account objects with Microsoft Entra ID and manage your users on-premises. Allows your users to sign in to both on-premises and Microsoft cloud resources and applications using their on-premises account and password. This configuration validates users' passwords directly against your on-premises Active Directory without sending password hashes to Microsoft Entra ID. Companies with a security requirement to immediately enforce on-premises user account states, password policies, and sign-in hours would use this authentication method. With seamless single sign-on, users are automatically signed in to Microsoft Entra ID when they are on their corporate devices and connected to your corporate network.
+
+        Learn more: [pass-through authentication (PTA)][ENTRA-7]
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        **Cloud authentication**
+    :::column-end:::
+    :::column span="3":::
+        Cloud authentication is for environments where Microsoft Entra ID manages the authentication using technologies such as Password Hash Synchronization and Pass-through Authentication, rather than a federation service like Active Directory Federation Services (AD FS).
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        **Federated authentication**
+    :::column-end:::
+    :::column span="3":::
+        Federated authentication is for environments where Microsoft Entra ID hands off the authentication process to a separate trusted authentication system, such as on-premises Active Directory Federation Services (AD FS), to validate the user's credential. The authentication system can provide other advanced authentication requirements, for example, third-party multifactor authentication.
     :::column-end:::
 :::row-end:::
 
-At this point, the user has a PIN gesture defined on the device and an associated protector key for that PIN gesture. That means the user is able to securely sign in to the device with the PIN and thus be able to establish a trusted session with the device to add support for a biometric gesture as an alternative for the PIN. When you add a biometric gesture, it follows the same basic sequence: the user authenticates to the system by using the PIN, and then registers the new biometric, after which Windows generates a unique key pair and stores it securely. Future sign-ins can then use either the PIN or the registered biometric gestures.
+### Use gesture and key generation in TPM
 
-For more information, read [how provisioning works](how-it-works-provisioning.md).
-
-### Attestation identity keys
+#### Attestation identity keys
 
 Because the endorsement certificate is unique for each device and doesn't change, the usage of it may present privacy concerns because it's theoretically possible to track a specific device. To avoid this privacy problem, Windows issues a derived attestation anchor based on the endorsement certificate. This intermediate key, which can be attested to an endorsement key, is the Attestation Identity Key (AIK) and the corresponding certificate is called the AIK certificate. This AIK certificate is issued by a Microsoft cloud service.
 
@@ -84,7 +116,7 @@ Many existing devices that will upgrade to Windows 10 won't have a TPM, or the T
 
 In the issued AIK certificate, a special OID is added to attest that endorsement certificate was used during the attestation process. This information can be used by a relying party to decide whether to reject devices that are attested using AIK certificates without an endorsement certificate or accept them. Another scenario can be to not allow access to high-value assets from devices that are attested by an AIK certificate that's not backed by an endorsement certificate.
 
-### Endorsement key
+#### Endorsement key
 
 The TPM has an embedded unique cryptographic key called the endorsement key. The TPM endorsement key is a pair of asymmetric keys (RSA size 2048 bits).
 
@@ -99,9 +131,24 @@ The endorsement key is often accompanied by one or two digital certificates:
 
 For certain devices that use firmware-based TPM produced by Intel or Qualcomm, the endorsement certificate is created when the TPM is initialized during Windows OOBE.
 
-### Storage root key
+#### Storage root key
 
 The storage root key (SRK) is also an asymmetric key pair (RSA with a minimum of 2048-bits length). The SRK has a major role and is used to protect TPM keys, so that these keys can't be used without the TPM. The SRK key is created when the ownership of the TPM is taken.
+
+### Key registration
+
+:::row:::
+    :::column:::
+        Windows Hello generates a new public-private key pair on the device. The TPM generates and protects this private key; if the device doesn't have a TPM, the private key is encrypted and stored in software. This initial key is referred to as the *protector key*. It's associated only with a single gesture; in other words, if a user registers a PIN, a fingerprint, and a face on the same device, each of those gestures will have a unique protector key. **Each unique gesture generates a unique protector key**. The protector key securely wraps the *authentication key*. The container has only one authentication key, but there can be multiple copies of that key wrapped with different unique protector keys. Windows Hello also generates an administrative key that the user or administrator can use to reset credentials, when necessary (for example, when using the PIN reset service). In addition to the protector key, TPM-enabled devices generate a block of data that contains attestations from the TPM.
+    :::column-end:::
+    :::column:::
+        :::image type="content" source="images/hello-container.png" alt-text="Diagram of the Windows Hello container.":::
+    :::column-end:::
+:::row-end:::
+
+At this point, the user has a PIN gesture defined on the device and an associated protector key for that PIN gesture. That means the user is able to securely sign in to the device with the PIN and thus be able to establish a trusted session with the device to add support for a biometric gesture as an alternative for the PIN. When you add a biometric gesture, it follows the same basic sequence: the user authenticates to the system by using the PIN, and then registers the new biometric, after which Windows generates a unique key pair and stores it securely. Future sign-ins can then use either the PIN or the registered biometric gestures.
+
+For more information, read [how provisioning works](how-it-works-provisioning.md).
 
 ## Authentication
 
@@ -120,10 +167,16 @@ The PRT is initially obtained during Windows user sign-in or unlock in a similar
 
 The PRT is needed for SSO. Without it, the user will be prompted for credentials when accessing applications every time. The PRT also contains information about the device. If you have any [device-based conditional access](/azure/active-directory/conditional-access/concept-conditional-access-grant) policy set on an application, without the PRT, access will be denied.
 
-
 ### Windows Hello for Business and password changes
 
 Changes to a user account password doesn't affect sign-in or unlock, since Windows Hello for Business uses a key or certificate.
+
+## Key synchronization (optional)
+
+## Certificate enrollment (optional)
+
+
+
 
 ## How Windows Hello for Business works: key points
 
