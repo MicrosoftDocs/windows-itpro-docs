@@ -1,11 +1,11 @@
 ---
 title: Windows 11 overview for administrators
-description: Learn more about Windows 11. Read about the features IT professionals and administrators should know about Windows 11, including security, using apps, using Android apps, the new desktop, and deploying and servicing PCs.
+description: Learn more about Windows 11. Read about the features IT professionals and administrators should know about Windows 11, including security, apps, the new desktop, and deploying and servicing PCs.
 manager: aaroncz
 author: mestew
 ms.author: mstewart
 ms.prod: windows-client
-ms.date: 09/20/2022
+ms.date: 01/08/2024
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
 ms.topic: overview
@@ -18,9 +18,9 @@ appliesto:
 
 # Windows 11 overview
 
-Windows 11 is the next client operating system, and includes features that organizations should know. Windows 11 is built on the same foundation as Windows 10. If you use Windows 10, then Windows 11 is a natural transition. It's an update to what you know, and what you're familiar with.
+Windows 11 is a client operating system and includes features that organizations should know about. Windows 11 is built on the same foundation as Windows 10. If you use Windows 10, then Windows 11 is a natural transition. It's an update to what you know, and what you're familiar with.
 
-It offers innovations focused on enhancing end-user productivity, and is designed to support today's hybrid work environment.
+Windows 11 offers innovations focused on enhancing end-user productivity, and is designed to support today's hybrid work environment.
 
 Your investments in update and device management are carried forward. For example, many of the same apps and tools can be used in Windows 11. Many of the same security settings and policies can be applied to Windows 11 devices, including PCs. You can use Windows Autopilot with a zero touch deployment to enroll your Windows devices in Microsoft Intune. You can also use newer features, such as Azure Virtual Desktop and Windows 365 on your Windows 11 devices.
 
@@ -52,7 +52,7 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
 
 - **Windows Hello for Business** helps protect users and identities. It replaces passwords, and uses a PIN or biometric that stays locally on the device. Device manufacturers are including more secure hardware features, such as IR cameras and TPM chips. These features are used with Windows Hello for Business to help protect user identities on your organization devices.
 
-  As an admin, going passwordless help secures user identities. The Windows OS, Azure AD, and Intune work together to remove passwords, create more secure policies, and help enforce compliance.
+  As an admin, going passwordless help secures user identities. The Windows OS, Microsoft Entra ID, and Intune work together to remove passwords, create more secure policies, and help enforce compliance.
 
   For more information, see:
 
@@ -88,7 +88,7 @@ For more information on the security features you can configure, manage, and enf
 
 ## Customize the desktop experience
 
-- **Snap Layouts, Snap Groups**: When you open an app, hover your mouse over the minimize/maximize option. When you do, you can select a different layout for the app:
+- **Snap Layouts, Snap Groups**: When you open an app, hover your mouse over the minimize or maximize option. When you do, you can select a different layout for the app:
 
   :::image type="content" source="./images/windows-11-whats-new/windows-11-snap-layouts.png" alt-text="In Windows 11, use the minimize or maximize button on an app to see the available snap layouts.":::
 
@@ -150,7 +150,7 @@ For more information on the security features you can configure, manage, and enf
   - [Windows Subsystem for Android](https://support.microsoft.com/windows/abed2335-81bf-490a-92e5-fe01b66e5c48)
   - [Windows Subsystem for Android developer information](/windows/android/wsa)
 
-- Your Windows 10 apps will also work on Windows 11. **[App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure)** is also available if there are some issues.
+- Your Windows 10 apps also work on Windows 11. **[App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure)** is also available if there are some issues.
 
   You can continue to use **MSIX packages** for your UWP, Win32, WPF, and WinForm desktop application files. Continue to use **Windows Package Manager** to install Windows apps. You can create **Azure virtual desktops** that run Windows 11. Use **Azure Virtual desktop with MSIX app attach** to virtualize desktops and apps. For more information on these features, see [Overview of apps on Windows client devices](/windows/application-management/overview-windows-apps).
 
@@ -185,13 +185,13 @@ For more information on the security features you can configure, manage, and enf
 
 ## Deployment and servicing
 
-- **Install Windows 11**: The same methods you use to install Windows 10 can also be used to install Windows 11. For example, you can deploy Windows to your devices using Windows Autopilot, Microsoft Deployment Toolkit (MDT), Configuration Manager, and more. Windows 11 will be delivered as an upgrade to eligible devices running Windows 10.
+- **Install Windows 11**: The same methods you use to install Windows 10 can also be used to install Windows 11. For example, you can deploy Windows to your devices using Windows Autopilot, Microsoft Deployment Toolkit (MDT), Configuration Manager, and more. Windows 11 is delivered as an upgrade to eligible devices running Windows 10.
 
   For more information on getting started, see [Windows client deployment resources and documentation](/windows/deployment/) and [Plan for Windows 11](windows-11-plan.md).
 
   For more information on the end-user experience, see [Ways to install Windows 11](https://support.microsoft.com/windows/e0edbbfb-cfc5-4011-868b-2ce77ac7c70e).
 
-- **Windows Autopilot**: If you're purchasing new devices, you can use Windows Autopilot to set up and pre-configure the devices. When users get the device, they sign in with their organization account (`user@contoso.com`). In the background, Autopilot gets them ready for use, and deploys any apps or policies you set. You can also use Windows Autopilot to reset, repurpose, and recover devices. Autopilot offers zero touch deployment for admins.
+- **Windows Autopilot**: If you're purchasing new devices, you can use Windows Autopilot to set up and preconfigure the devices. When users get the device, they sign in with their organization account (`user@contoso.com`). In the background, Autopilot gets them ready for use, and deploys any apps or policies you set. You can also use Windows Autopilot to reset, repurpose, and recover devices. Autopilot offers zero touch deployment for admins.
 
   If you have a global or remote workforce, then Autopilot might be the right option to install the OS, and get it ready for use. For more information, see [Overview of Windows Autopilot](/mem/autopilot/windows-autopilot).
 
@@ -201,7 +201,7 @@ For more information on the security features you can configure, manage, and enf
 
 - **Windows Updates and Delivery optimization** helps manage updates, and manage features on your devices. Starting with Windows 11, the OS feature updates are installed annually. For more information on servicing channels, and what they are, see [Servicing channels](/windows/deployment/update/waas-overview#servicing-channels).
 
-  Like Windows 10, Windows 11 will receive monthly quality updates.
+  Like Windows 10, Windows 11 receives monthly quality updates.
 
   You have options to install updates on your Windows devices, including Intune, Group Policy, Windows Server Update Services (WSUS), and more. For more information, see [Assign devices to servicing channels](/windows/deployment/update/waas-servicing-channels-windows-10-updates).
 
