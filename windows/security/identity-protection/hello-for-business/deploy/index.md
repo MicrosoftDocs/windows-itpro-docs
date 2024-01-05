@@ -24,18 +24,17 @@ This guide aims to simplify the deployment process by helping you make informed 
 
 Read this document and record your decisions. When finished, you should have all the necessary information to evaluate the available options and to determine requirements for your Windows Hello for Business deployment.
 
-There are eight major categories to consider when planning a Windows Hello for Business deployment:
+There are seven main areas to consider when planning a Windows Hello for Business deployment:
 
 > [!div class="checklist"]
 >
 > - [Deployment options](#deployment-options)
-> - [Public Key Infrastructure](#public-key-infrastructure-pki)
-> - [Authentication](#authentication)
-> - [Device configuration](#device-configuration)
-> - [Licensing for cloud services](#licensing-for-cloud-services)
-> - [Windows requirements](#windows-requirements)
-> - [Windows Server requirements](#windows-server-requirements)
-> - [Prepare users to enroll and use Windows Hello](#prepare-users-to-enroll-and-use-windows-hello)
+> - [Public Key Infrastructure (PKI) requirements](#pki-requirements)
+> - [Authentication to Microsoft Entra ID requirements](#authentication-to-microsoft-entra-id)
+> - [Device configuration options](#device-configuration-options)
+> - [Licensing for cloud services requirements](#licensing-for-cloud-services-requirements)
+> - [Operating System requirements](#operating-system-requirements)
+> - [Prepare users](#prepare-users-)
 
 ## Deployment options
 
@@ -47,11 +46,11 @@ It's fundamentally important to understand which deployment model to use for a s
 
 There are three deployment models from which you can choose:
 
-|| Deployment model | Description |
+|  | Deployment model | Description |
 |--|--|--|
-|     **🔲**| **Cloud-only** | For organizations that only have cloud identities and don't access on-premises resources. These organizations typically join their devices to the cloud and exclusively use resources in the cloud such as SharePoint Online, OneDrive, and others. Also, since the users don't use on-premises resources, they don't need certificates for things like VPN because everything they need is hosted in cloud services. |
-|     **🔲**| **Hybrid** | For organizations that have identities synchronized from Active Directory to Microsoft Entra ID. These organizations use applications registered in Microsoft Entra ID, and want a single sign-on (SSO) experience for both on-premises and Microsoft Entra resources. |
-|     **🔲**| **On-premises** | For organizations that don't have cloud identities or use applications hosted in Microsoft Entra ID. These organizations use on-premises applications, integrated in Active Directory, and want an SSO user experiences when accessing them. |
+| **🔲** | **Cloud-only** | For organizations that only have cloud identities and don't access on-premises resources. These organizations typically join their devices to the cloud and exclusively use resources in the cloud such as SharePoint Online, OneDrive, and others. Also, since the users don't use on-premises resources, they don't need certificates for things like VPN because everything they need is hosted in cloud services. |
+| **🔲** | **Hybrid** | For organizations that have identities synchronized from Active Directory to Microsoft Entra ID. These organizations use applications registered in Microsoft Entra ID, and want a single sign-on (SSO) experience for both on-premises and Microsoft Entra resources. |
+| **🔲** | **On-premises** | For organizations that don't have cloud identities or use applications hosted in Microsoft Entra ID. These organizations use on-premises applications, integrated in Active Directory, and want an SSO user experiences when accessing them. |
 
 >[!NOTE]
 >
@@ -89,7 +88,7 @@ The goal of Windows Hello for Business cloud Kerberos trust is to provide a simp
 
 Cloud Kerberos trust requires the deployment of Microsoft Entra Kerberos. For more information about how Microsoft Entra Kerberos enables access to on-premises resources, see [enabling passwordless security key sign-in to on-premises resources][ENTRA-1].
 
-## Public Key Infrastructure (PKI)
+## PKI requirements
 
 Cloud Kerberos trust is the only hybrid deployment option that doesn't require the deployment of any certificates. The other hybrid and on-premises models depend on an enterprise PKI as a trust anchor for authentication:
 
@@ -97,28 +96,28 @@ Cloud Kerberos trust is the only hybrid deployment option that doesn't require t
 - Deployments using the certificate trust type require an enterprise PKI and a certificate registration authority (CRA) to issue authentication certificates to users. AD FS is used as a CRA
 - Hybrid deployments might need to issue VPN certificates to users to enable connectivity on-premises resources
 
-|| Deployment model | Trust type | PKI required? |
+|  | Deployment model | Trust type | PKI required? |
 |--|--|--|--|
-|    **🔲** | **Cloud-only** | n/a | no |
-|    **🔲** | **Hybrid** | Cloud Kerberos | no |
-|    **🔲** | **Hybrid** | Key | yes |
-|    **🔲** | **Hybrid** | Certificate | yes |
-|    **🔲** | **On-premises** | Key | yes |
-|    **🔲** | **On-premises** | Certificate | yes |
+| **🔲** | **Cloud-only** | n/a | no |
+| **🔲** | **Hybrid** | Cloud Kerberos | no |
+| **🔲** | **Hybrid** | Key | yes |
+| **🔲** | **Hybrid** | Certificate | yes |
+| **🔲** | **On-premises** | Key | yes |
+| **🔲** | **On-premises** | Certificate | yes |
 
 ## Authentication to Microsoft Entra ID
 
 Users can authenticate to Microsoft Entra ID using federated authentication or cloud (nonfederated) authentication. Requirements vary based on trust type and authentication type:
 
-|| Deployment model | Trust type | Authentication to Microsoft Entra ID | Requirements |
+|  | Deployment model | Trust type | Authentication to Microsoft Entra ID | Requirements |
 |--|--|--|--|--|
-|    **🔲** | **Cloud-only** | n/a | Cloud authentication | n/a |
-|    **🔲** | **Cloud-only** | n/a | Federated authentication | third-party federation service |
-|    **🔲** | **Hybrid** | Cloud Kerberos trust | Cloud authentication | Microsoft Entra Kerberos |
-|    **🔲** | **Hybrid** | Key trust | Cloud authentication | Password hash sync (PHS) or Pass-through authentication (PTA)|
-|    **🔲** | **Hybrid** | Key trust | Federated authentication | AD FS or third-party federation service. Key trust with federated authentication doesn't support PTA or PHS |
-|    **🔲** | **Hybrid** | Certificate trust | non-federated | AD FS |
-|    **🔲** | **Hybrid** | Certificate trust | federated | AD FS |
+| **🔲** | **Cloud-only** | n/a | Cloud authentication | n/a |
+| **🔲** | **Cloud-only** | n/a | Federated authentication | third-party federation service |
+| **🔲** | **Hybrid** | Cloud Kerberos trust | Cloud authentication | Microsoft Entra Kerberos |
+| **🔲** | **Hybrid** | Key trust | Cloud authentication | Password hash sync (PHS) or Pass-through authentication (PTA) |
+| **🔲** | **Hybrid** | Key trust | Federated authentication | AD FS or third-party federation service. Key trust with federated authentication doesn't support PTA or PHS |
+| **🔲** | **Hybrid** | Certificate trust | non-federated | AD FS |
+| **🔲** | **Hybrid** | Certificate trust | federated | AD FS |
 
 To learn more:
 
@@ -204,7 +203,7 @@ Hybrid and on-premises deployments use directory synchronization, however, each 
 | **Hybrid** | Microsoft Entra Connect Sync|
 | **On-premises** | Azure MFA server |
 
-## Device configuration
+## Device configuration options
 
 Windows Hello for Business provides a rich set of granular policy settings. There are two main options to configure Windows Hello for Business: configuration service provider (CSP) and group policy (GPO).
 
@@ -220,14 +219,14 @@ Windows Hello for Business provides a rich set of granular policy settings. Ther
 | **🔲** | **On-premises** | CSP |
 | **🔲** | **On-premises** | GPO (Active Directory or local) |
 
-## Licensing for cloud services
+## Licensing for cloud services requirements
 
 Here are some considerations regarding licensing requirements for cloud services:
 
-- Windows Hello for Business doesn't require a Microsoft Entra ID P1 or P2 subscription. However, some dependencies, such as [MDM automatic enrollment](/mem/intune/enrollment/quickstart-setup-auto-enrollment) and [Conditional Access](/azure/active-directory/conditional-access/overview) do
+- Windows Hello for Business doesn't require a Microsoft Entra ID P1 or P2 subscription. However, some dependencies, such as [MDM automatic enrollment][MEM-1] and [Conditional Access][ENTRA-8] do
   - Devices managed via MDM don't require a Microsoft Entra ID P1 or P2 subscription. By forgoing the subscription, users must manually enroll devices in the MDM solution, such as Microsoft Intune or a supported third-party MDM
 - You can deploy Windows Hello for Business using the Microsoft Entra ID Free tier. All Microsoft Entra ID Free accounts can use Microsoft Entra multifactor authentication for the Windows passwordless features
-  - Some Microsoft Entra multifactor authentication features require a license. For more information, see [Features and licenses for Microsoft Entra multifactor authentication](/azure/active-directory/authentication/concept-mfa-licensing).
+  - Some Microsoft Entra multifactor authentication features require a license. For more information, see [Features and licenses for Microsoft Entra multifactor authentication][ENTRA-9].
 - Enrolling a certificate using the AD FS registration authority requires devices to authenticate to the AD FS server, which requires device write-back, a Microsoft Entra ID P1 or P2 feature
 
 || Deployment model | Trust type | Cloud services licenses (minimum)|
@@ -239,9 +238,11 @@ Here are some considerations regarding licensing requirements for cloud services
 | **🔲** | **On-premises** | Key | Azure MFA, if used as MFA solution |
 | **🔲** | **On-premises** | Certificate | Azure MFA, if used as MFA solution |
 
-## Windows requirements
+## Operating System requirements
 
-All supported Windows 10 and Windows 11 versions can be used with Windows Hello for Business. However, cloud Kerberos trust requires minimum versions:
+### Windows requirements
+
+All supported Windows versions can be used with Windows Hello for Business. However, cloud Kerberos trust requires minimum versions:
 
 || Deployment model | Trust type | Windows version|
 |--|--|--|--|
@@ -252,7 +253,7 @@ All supported Windows 10 and Windows 11 versions can be used with Windows Hello 
 | **🔲** | **On-premises** | Key| All supported versions |
 | **🔲** | **On-premises** | Certificate | All supported versions |
 
-## Windows Server requirements
+### Windows Server requirements
 
 All supported Windows Server versions can be used with Windows Hello for Business as Domain Controller. However, cloud Kerberos trust requires minimum versions:
 
@@ -265,10 +266,10 @@ All supported Windows Server versions can be used with Windows Hello for Busines
 | **🔲** | **On-premises** | Key | All supported versions |
 | **🔲** | **On-premises** | Certificate | All supported versions |
 
-## Prepare users to enroll and use Windows Hello
+## Prepare users
 
-When you are ready to enable Windows Hello for Business in your organization, make sure to prepare the users by explaining how to enroll and use Windows Hello.\
-Since enrollment in Windows Hello requires multi-factor authentication, ensure you have a solution in place for users to use MFA during enrollment. Depending on the hardware, users might be prompted to register their fingerprint or face.
+When you are ready to enable Windows Hello for Business in your organization, make sure to prepare the users by explaining how to provision and use Windows Hello.\
+Since provisioning of Windows Hello requires multi-factor authentication, ensure you have a solution in place for users to use MFA during the process. Depending on the hardware, users might be prompted to register their fingerprint or face.
 
 > [!TIP]
 > To facilitate user communication and to ensure a successful Windows Hello for Business deployment, you can find customizable material (email templates, posters, trainings, etc.) at [Microsoft Entra templates](https://aka.ms/adminmails).
@@ -318,6 +319,8 @@ Now that you've read about the different deployment options and requirements, yo
 [ENTRA-5]: /entra/identity/devices/hybrid-join-plan
 [ENTRA-6]: /entra/identity/hybrid/connect/whatis-phs
 [ENTRA-7]: /entra/identity/hybrid/connect/how-to-connect-pta
+[ENTRA-8]: /entra/identity/conditional-access/overview
+[ENTRA-9]: /entra/identity/authentication/concept-mfa-licensing
 
 [SER-1]: /windows-server/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa
 [SER-2]: /windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods
@@ -326,3 +329,4 @@ Now that you've read about the different deployment options and requirements, yo
 [KB-2]: https://support.microsoft.com/topic/5010414
 [KB-3]: https://support.microsoft.com/topic/4534307
 [KB-4]: https://support.microsoft.com/topic/4534321
+[MEM-1]: /mem/intune/enrollment/quickstart-setup-auto-enrollment

@@ -98,12 +98,14 @@ The storage root key (SRK) is also an asymmetric key pair (RSA with a minimum of
 
 :::row:::
     :::column:::
-        Windows Hello generates a new public-private key pair on the device. The TPM generates and protects this private key; if the device doesn't have a TPM, the private key is encrypted and stored in software. This initial key is referred to as the *protector key*. It's associated only with a single gesture; in other words, if a user registers a PIN, a fingerprint, and a face on the same device, each of those gestures will have a unique protector key. **Each unique gesture generates a unique protector key**. The protector key securely wraps the *authentication key*. The container has only one authentication key, but there can be multiple copies of that key wrapped with different unique protector keys. Windows Hello also generates an administrative key that the user or administrator can use to reset credentials, when necessary (for example, when using the PIN reset service). In addition to the protector key, TPM-enabled devices generate a block of data that contains attestations from the TPM.
+        Windows Hello generates a new public-private key pair on the device. The TPM generates and protects this private key; if the device doesn't have a TPM, the private key is encrypted and stored in software. This initial key is referred to as the *protector key*. It's associated only with a single gesture; in other words, if a user registers a PIN, a fingerprint, and a face on the same device, each of those gestures will have a unique protector key. **Each unique gesture generates a unique protector key**. The protector key securely wraps the *authentication key*. The container has only one authentication key, but there can be multiple copies of that key wrapped with different unique protector keys.
     :::column-end:::
     :::column:::
-        :::image type="content" source="images/hello-container.png" alt-text="Diagram of the Windows Hello container.":::
+        :::image type="content" source="images/hello-container.png" alt-text="Diagram of the Windows Hello container." lightbox="images/hello-container.png" border="false":::
     :::column-end:::
 :::row-end:::
+
+Windows Hello also generates an administrative key that the user or administrator can use to reset credentials, when necessary (for example, when using the PIN reset service). In addition to the protector key, TPM-enabled devices generate a block of data that contains attestations from the TPM.
 
 At this point, the user has a PIN gesture defined on the device and an associated protector key for that PIN gesture. That means the user is able to securely sign in to the device with the PIN and thus be able to establish a trusted session with the device to add support for a biometric gesture as an alternative for the PIN. When you add a biometric gesture, it follows the same basic sequence: the user authenticates to the system by using the PIN, and then registers the new biometric, after which Windows generates a unique key pair and stores it securely. Future sign-ins can then use either the PIN or the registered biometric gestures.
 
