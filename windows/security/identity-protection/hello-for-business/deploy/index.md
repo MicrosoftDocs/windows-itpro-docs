@@ -107,21 +107,21 @@ Cloud Kerberos trust is the only hybrid deployment option that doesn't require t
 
 ## Authentication to Microsoft Entra ID
 
-Users can authenticate to Microsoft Entra ID using federated authentication or cloud (nonfederated) authentication. Requirements vary based on trust type and authentication type:
+Users can authenticate to Microsoft Entra ID using federated authentication or cloud (nonfederated) authentication. Requirements vary based on trust type:
 
 |  | Deployment model | Trust type | Authentication to Microsoft Entra ID | Requirements |
 |--|--|--|--|--|
 | **🔲** | **Cloud-only** | n/a | Cloud authentication | n/a |
-| **🔲** | **Cloud-only** | n/a | Federated authentication | third-party federation service |
-| **🔲** | **Hybrid** | Cloud Kerberos trust | Cloud authentication | Microsoft Entra Kerberos |
+| **🔲** | **Cloud-only** | n/a | Federated authentication | Third-party federation service |
+| **🔲** | **Hybrid** | Cloud Kerberos trust | Cloud authentication | Password hash sync (PHS) or Pass-through authentication (PTA) |
+| **🔲** | **Hybrid** | Cloud Kerberos trust | Federated authentication | AD FS or third-party federation service |
 | **🔲** | **Hybrid** | Key trust | Cloud authentication | Password hash sync (PHS) or Pass-through authentication (PTA) |
-| **🔲** | **Hybrid** | Key trust | Federated authentication | AD FS or third-party federation service. Key trust with federated authentication doesn't support PTA or PHS |
-| **🔲** | **Hybrid** | Certificate trust | non-federated | AD FS |
-| **🔲** | **Hybrid** | Certificate trust | federated | AD FS |
+| **🔲** | **Hybrid** | Key trust | Federated authentication | AD FS or third-party federation service |
+| **🔲** | **Hybrid** | Certificate trust | Federated authentication | This deployment model doesn't support PTA or PHS. Active Directory must be federated with Microsoft Entra ID using AD FS. The AD FS farm must support device registration.|
 
 To learn more:
 
-- [Federation with Microsoft Entra ID](/entra/identity/hybrid/connect/whatis-fed)
+- [Federation with Microsoft Entra ID][ENTRA-10]
 - [Password hash synchronization (PHS)][ENTRA-6]
 - [Pass-through authentication (PTA)][ENTRA-7]
 
@@ -321,6 +321,7 @@ Now that you've read about the different deployment options and requirements, yo
 [ENTRA-7]: /entra/identity/hybrid/connect/how-to-connect-pta
 [ENTRA-8]: /entra/identity/conditional-access/overview
 [ENTRA-9]: /entra/identity/authentication/concept-mfa-licensing
+[ENTRA-10]: /entra/identity/hybrid/connect/whatis-fed
 
 [SER-1]: /windows-server/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa
 [SER-2]: /windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods

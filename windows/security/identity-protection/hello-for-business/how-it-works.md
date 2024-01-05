@@ -79,7 +79,6 @@ Windows Hello for Business is a distributed system that requires multiple techno
     
     :::column-end:::
 :::row-end:::
-:::row:::
 
 The following sections provide deeper insight into each of these components.
 
