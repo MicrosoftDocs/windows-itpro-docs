@@ -29,7 +29,6 @@ The statement *PIN is stronger than Password* is not directed at the strength of
 >
 > For more information, see [What is a Primary Refresh Token](/azure/active-directory/devices/concept-primary-refresh-token#when-does-a-prt-get-an-mfa-claim).
 
-
 ## Windows Hello data storage
 
 The biometric data used to support Windows Hello is stored on the local device only. It doesn't roam and is never sent to external devices or servers. This separation helps to stop potential attackers by providing no single collection point that an attacker could potentially compromise to steal biometric data. Additionally, even if an attacker was actually able to get the biometric data from a device, it cannot be converted back into a raw biometric sample that could be recognized by the biometric sensor.
@@ -46,6 +45,11 @@ Windows Hello for Business is a distributed system that uses several components 
 ## Device Registration
 
 Registration is a fundamental prerequisite for Windows Hello for Business.  Without registration, Windows Hello for Business provisioning cannot start. Registration is where the device **registers** its identity with the identity provider. For cloud and hybrid deployments, the identity provider is Microsoft Entra ID and the device registers with the Device Registration Service. For on-premises deployments, the identity provider is Active Directory Federation Services (AD FS), and the device registers with the enterprise device registration service hosted on the federation servers (AD FS).
+
+All devices included in the Windows Hello for Business deployment must go through a process called *device registration*. Device registration enables devices to be associated and to authentiticate to an identity provider (IdP). Device registration is identified by the *join type*.
+
+- Registering a device to Microsoft Entra ID enables you to manage a device's identity. When a device is registered, Microsoft Entra provides the device with an identity that is used to authenticate the device when a user signs-in to Microsoft Entra ID. You can use the identity to enable or disable a device. When combined with a mobile device management (MDM) solution such as Microsoft Intune, the device attributes in Microsoft Entra ID are updated with additional information about the device. This behavior allows you to create conditional access rules that enforce access from devices to meet your standards for security and compliance
+- Joining a device to Microsoft Entra ID is an extension to registering a device. This method provides you with all the benefits of registering a device, and changes the local state of a device. Changing the local state enables your users to sign-in to a device using an organizational work or school account, instead of a personal account
 
 For more information, read [how device registration works](/azure/active-directory/devices/device-registration-how-it-works).
 

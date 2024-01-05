@@ -16,9 +16,9 @@ This guide explains the role of each component within Windows Hello for Business
 
 ## Using this guide
 
-There are many options from which you can choose when deploying Windows Hello for Business. Providing multiple options ensures nearly every organization can deploy Windows Hello for Business. Providing many options makes the deployment appear complex. However, most organization will realize they've already implemented most of the infrastructure on which the Windows Hello for Business deployment depends. It's important to understand that Windows Hello for Business is a distributed system and does take proper planning across multiple teams within an organization.
+There are many options available for deploying Windows Hello for Business, ensuring compatibility with various organizational infrastructures. While the deployment process may appear complex, most organizations will find that they have already implemented the necessary infrastructure. It is important to note that Windows Hello for Business is a distributed system and requires proper planning across multiple teams within an organization.
 
-This guide removes the appearance of complexity by helping you make decisions on each aspect of your Windows Hello for Business deployment and the options you need to consider. Using this guide also identifies the information needed to help you make decisions about the deployment that best suits your environment.
+This guide aims to simplify the deployment process by helping you make informed decisions about each aspect of your Windows Hello for Business deployment. It provides information on the options available and assists in selecting the deployment approach that best suits your environment.
 
 ### How to proceed
 
@@ -35,7 +35,7 @@ There are eight major categories to consider when planning a Windows Hello for B
 > - [Licensing for cloud services](#licensing-for-cloud-services)
 > - [Windows requirements](#windows-requirements)
 > - [Windows Server requirements](#windows-server-requirements)
-> - [Prepare users to use Windows Hello](#prepare-users-to-use-windows-hello)
+> - [Prepare users to enroll and use Windows Hello](#prepare-users-to-enroll-and-use-windows-hello)
 
 ## Deployment options
 
@@ -161,11 +161,6 @@ Here's a list of requirements for federated and nonfederated deployments.
 
 ### Device registration
 
-All devices included in the Windows Hello for Business deployment must go through a process called *device registration*. Device registration enables devices to be associated and to authentiticate to an identity provider (IdP). Device registration is identified by the *join type*.
-
-- Registering a device to Microsoft Entra ID enables you to manage a device's identity. When a device is registered, Microsoft Entra provides the device with an identity that is used to authenticate the device when a user signs-in to Microsoft Entra ID. You can use the identity to enable or disable a device. When combined with a mobile device management (MDM) solution such as Microsoft Intune, the device attributes in Microsoft Entra ID are updated with additional information about the device. This behavior allows you to create conditional access rules that enforce access from devices to meet your standards for security and compliance
-- Joining a device to Microsoft Entra ID is an extension to registering a device. This method provides you with all the benefits of registering a device, and changes the local state of a device. Changing the local state enables your users to sign-in to a device using an organizational work or school account, instead of a personal account
-
 For on-premises deployments, the server running the Active Directory Federation Services (AD FS) role is responsible for device registration. For cloud-only and hybrid deployments, devices must register in Microsoft Entra ID.
 
 | Deployment model | Supported join type | Device registration service provider |
@@ -244,7 +239,7 @@ If you configure the flag with a value of either `acceptIfMfaDoneByFederatedIdp`
 
 ## Device configuration
 
-Windows Hello for Business provides organizations with a rich set of granular policy settings with which they can use to configure their devices. There are two main options to configure Windows Hello for Business: configuration service provider (CSP) and group policy (GPO).
+Windows Hello for Business provides a rich set of granular policy settings. There are two main options to configure Windows Hello for Business: configuration service provider (CSP) and group policy (GPO).
 
 - The CSP option is ideal for devices that are managed through a Mobile Device Management (MDM) solution, like Microsoft Intune. CSPs can also be configured with [provisioning packages](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers#csps-in-windows-configuration-designer)
 - GPO can be used to configure domain joined devices and where devices aren't managed via MDM
@@ -294,14 +289,14 @@ All supported Windows 10 and Windows 11 versions can be used with Windows Hello 
 
 All supported Windows Server versions can be used with Windows Hello for Business as Domain Controller. However, cloud Kerberos trust requires minimum versions:
 
-|| Deployment model | Trust type     | Domain Controller OS version                                                                              |
-|-----------------------------|------------------|----------------|-----------------------------------------------------------------------------------------------------------|
-| **🔲** | **Cloud-only**   | n/a            | All supported versions                                                                                    |
-| **🔲** | **Hybrid**       | Cloud Kerberos | - Windows Server 2016, [KB3534307][KB-3]<br>- Windows Server 2019, [KB4534321][KB-4]<br>- Windows Server 2022 |
-| **🔲** | **Hybrid**       | Key            | All supported versions                                                                                    |
-| **🔲** | **Hybrid**       | Certificate    | All supported versions                                                                                    |
-| **🔲** | **On-premises**  | Key            | All supported versions                                                                                    |
-| **🔲** | **On-premises**  | Certificate    | All supported versions                                                                                    |
+|  | Deployment model | Trust type | Domain Controller OS version |
+|--|--|--|--|
+| **🔲** | **Cloud-only** | n/a | All supported versions |
+| **🔲** | **Hybrid** | Cloud Kerberos | - Windows Server 2016, with [KB3534307][KB-3] and later<br>- Windows Server 2019, with [KB4534321][KB-4] and later<br>- Windows Server 2022 |
+| **🔲** | **Hybrid** | Key | All supported versions |
+| **🔲** | **Hybrid** | Certificate | All supported versions |
+| **🔲** | **On-premises** | Key | All supported versions |
+| **🔲** | **On-premises** | Certificate | All supported versions |
 
 ## Prepare users to enroll and use Windows Hello
 
