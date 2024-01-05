@@ -106,19 +106,25 @@ Cloud Kerberos trust is the only hybrid deployment option that doesn't require t
 |    **🔲** | **On-premises** | Key | yes |
 |    **🔲** | **On-premises** | Certificate | yes |
 
-## Authentication
+## Authentication to Microsoft Entra ID
 
-Here's a list of requirements for federated and nonfederated deployments.
+Users can authenticate to Microsoft Entra ID using federated authentication or cloud (nonfederated) authentication. Requirements vary based on trust type and authentication type:
 
 || Deployment model | Trust type | Authentication to Microsoft Entra ID | Requirements |
 |--|--|--|--|--|
 |    **🔲** | **Cloud-only** | n/a | Cloud authentication | n/a |
 |    **🔲** | **Cloud-only** | n/a | Federated authentication | third-party federation service |
 |    **🔲** | **Hybrid** | Cloud Kerberos trust | Cloud authentication | Microsoft Entra Kerberos |
-|    **🔲** | **Hybrid** | Key trust | Cloud authentication | PHS or PTA|
+|    **🔲** | **Hybrid** | Key trust | Cloud authentication | Password hash sync (PHS) or Pass-through authentication (PTA)|
 |    **🔲** | **Hybrid** | Key trust | Federated authentication | AD FS or third-party federation service. Key trust with federated authentication doesn't support PTA or PHS |
 |    **🔲** | **Hybrid** | Certificate trust | non-federated | AD FS |
 |    **🔲** | **Hybrid** | Certificate trust | federated | AD FS |
+
+To learn more:
+
+- [Federation with Microsoft Entra ID](/entra/identity/hybrid/connect/whatis-fed)
+- [Password hash synchronization (PHS)][ENTRA-6]
+- [Pass-through authentication (PTA)][ENTRA-7]
 
 ### Device registration
 
