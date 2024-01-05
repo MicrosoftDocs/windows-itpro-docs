@@ -59,4 +59,4 @@ items:
     - name: Configure and enroll in Windows Hello for Business
       href: on-premises-cert-trust-enroll.md
 - name: Prepare users to provision and use Hello
-  href: index.md
+  href: prepare-users.md
