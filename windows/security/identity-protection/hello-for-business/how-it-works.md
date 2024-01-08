@@ -24,7 +24,8 @@ Windows Hello for Business is a distributed system that requires multiple techno
 :::row:::
     :::column span="1":::
     **Device Registration**
-    :::image type="content" source="images/howitworks/device-registration.png" alt-text="Icon representing the device registration phase.":::
+
+    :::image type="content" source="images/howitworks/device-registration.png" alt-text="Icon representing the device registration phase." border="false":::
     :::column-end:::
     :::column span="3":::
     Registration is a prerequisite for Windows Hello for Business. Without device registration, Windows Hello for Business provisioning cannot start.
@@ -35,7 +36,8 @@ Windows Hello for Business is a distributed system that requires multiple techno
 :::row:::
     :::column span="1":::
     **Provisioning**
-:::image type="content" source="images/howitworks/provisioning.png" alt-text="Icon representing the provisioning phase.":::
+
+    :::image type="content" source="images/howitworks/provisioning.png" alt-text="Icon representing the provisioning phase." border="false":::
     :::column-end:::
     :::column span="3":::
     During this phase, the user authenticates using one form of authentication (typically, username/password) to request a new Windows Hello for Business credential. The provisioning flow requires a second factor of authentication before it can create a strong, two-factor Windows Hello for Business credential.
@@ -47,26 +49,20 @@ Windows Hello for Business is a distributed system that requires multiple techno
     :::column-end:::
 :::row-end:::
 :::row:::
-    :::column span="":::
-    **Key Registration**
-    :::column-end:::
-:::row-end:::
-:::row:::
     :::column span="1":::
-    :::image type="content" source="images/howitworks/key-synchronization.png" alt-text="Icon representing the synchronization phase.":::
+    **Key Registration**
+
+    :::image type="content" source="images/howitworks/synchronization.png" alt-text="Icon representing the synchronization phase." border="false":::
     :::column-end:::
     :::column span="3":::
         In this phase, applicable only to hybrid deploments, the user's public key is synchronized from Microsoft Entra ID to Active Directory.
     :::column-end:::
 :::row-end:::
 :::row:::
-    :::column span="":::
-    #### Certificate enrollment phase
-    :::column-end:::
-:::row-end:::
-:::row:::
     :::column span="1":::
-    :::image type="content" source="images/howitworks/certificate-enrollment.png" alt-text="Icon representing the certificate enrollment phase.":::
+    **Certificate enrollment**
+
+    :::image type="content" source="images/howitworks/certificate-enrollment.png" alt-text="Icon representing the certificate enrollment phase." border="false":::
     :::column-end:::
     :::column span="3":::
     This phase occurs only in certificate trust deployments. A user certificate is issued by an internal PKI and the public key stored in the Windows Hello container 
@@ -75,18 +71,27 @@ Windows Hello for Business is a distributed system that requires multiple techno
 :::row:::
     :::column span="1":::
     **Authentication**
+
+    :::image type="content" source="images/howitworks/authentication.png" alt-text="Icon representing the authentication phase." border="false":::
     :::column-end:::
     :::column span="3":::
-    Once the provisioning phase completes, users can sign-in to Windows using biometrics or a PIN. Regardless of the gesture used, authentication occurs using the private portion of the Windows Hello for Business credential.
+    In this last phase, users can sign-in to Windows using biometrics or a PIN. Regardless of the gesture used, authentication occurs using the private portion of the Windows Hello for Business credential.
 
-    In this phase, WHfB is used to authenticate user against the IdP. The user provides a gesture (PIN or biometric) and the IdP validates the user identity by mapping the user account to the public key used during the key registration step
+    The user provides a gesture and the IdP validates the user identity by mapping the user account to the public key used during the key registration phase.
 
     :::column-end:::
 :::row-end:::
 
 The following sections provide deeper insight into each of these components.
 
-## Device Registration
+:::row:::
+    :::column span="1":::
+    :::image type="content" source="images/howitworks/device-registration.png" alt-text="Icon representing the device registration phase." border="false":::
+    :::column-end:::
+    :::column span="3":::
+    ## Device Registration
+    :::column-end:::
+:::row-end:::
 
 All devices included in the Windows Hello for Business deployment must go through a process called *device registration*. Device registration enables devices to be associated and to authentiticate to an IdP:
 
