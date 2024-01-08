@@ -1,11 +1,12 @@
 ---
 title: Test The Migration
 description: Learn about testing the migration plan in a controlled laboratory setting before deploying it to the entire organization.
+ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/03/2024
+ms.date: 01/09/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:
