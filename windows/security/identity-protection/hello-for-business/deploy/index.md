@@ -207,7 +207,7 @@ Hybrid and on-premises deployments use directory synchronization, however, each 
 
 Windows Hello for Business provides a rich set of granular policy settings. There are two main options to configure Windows Hello for Business: configuration service provider (CSP) and group policy (GPO).
 
-- The CSP option is ideal for devices that are managed through a Mobile Device Management (MDM) solution, like Microsoft Intune. CSPs can also be configured with [provisioning packages](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers#csps-in-windows-configuration-designer)
+- The CSP option is ideal for devices that are managed through a Mobile Device Management (MDM) solution, like Microsoft Intune. CSPs can also be configured with [provisioning packages][WIN-1]
 - GPO can be used to configure domain joined devices and where devices aren't managed via MDM
 
 || Deployment model | Device configuration options|
@@ -307,3 +307,4 @@ Now that you've read about the different deployment options and requirements, yo
 [KB-3]: https://support.microsoft.com/topic/4534307
 [KB-4]: https://support.microsoft.com/topic/4534321
 [MEM-1]: /mem/intune/enrollment/quickstart-setup-auto-enrollment
+[WIN-1]: /windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers#csps-in-windows-configuration-designer
