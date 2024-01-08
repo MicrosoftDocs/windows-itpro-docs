@@ -1,11 +1,12 @@
 ---
 title: Estimate Migration Store Size
 description: Estimate the disk space requirement for a migration so that the User State Migration Tool (USMT) can be used.
+ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/03/2024
+ms.date: 01/09/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:

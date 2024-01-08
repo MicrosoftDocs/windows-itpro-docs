@@ -1,11 +1,12 @@
 ---
 title: User State Migration Toolkit (USMT) Reference
 description: Use this User State Migration Toolkit (USMT) article to learn details about USMT, like operating system, hardware, and software requirements, and user prerequisites.
+ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/03/2024
+ms.date: 01/09/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:
