@@ -52,8 +52,6 @@ items:
     items: 
     - name: Requirements and validation
       href: on-premises-cert-trust.md
-    - name: Configure and validate Public Key Infrastructure (PKI)
-      href: on-premises-cert-trust-pki.md
     - name: Prepare and Deploy Active Directory Federation Services (AD FS)
       href: on-premises-cert-trust-adfs.md
     - name: Configure and enroll in Windows Hello for Business
