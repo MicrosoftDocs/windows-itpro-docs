@@ -1,11 +1,12 @@
 ---
 title: Include Files and Settings
 description: Specify the migration .xml files that are needed, then use the User State Migration Tool (USMT) to migrate the settings and components specified.
+ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/03/2024
+ms.date: 01/09/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:

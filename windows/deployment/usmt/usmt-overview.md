@@ -4,9 +4,10 @@ description: Learn about using User State Migration Tool (USMT) to streamline an
 ms.prod: windows-client
 ms.technology: itpro-deploy
 author: frankroj
+ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
-ms.date: 01/03/2024
+ms.date: 01/09/2024
 ms.topic: overview
 ms.collection:
   - highpri
