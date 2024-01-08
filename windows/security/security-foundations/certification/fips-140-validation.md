@@ -784,7 +784,7 @@ As part of the configuration rules outlined in the Security Policy documents, Wi
 
 ## Determine if a Windows service or application is FIPS 140 compliant
 
-Microsoft validates the cryptographic modules used in Windows and other products, not individual Windows services or applications. Contact the vendor of the service or application for information on whether it calls a validated Windows cryptographic module in a FIPS compliant manner. 
+Microsoft validates the cryptographic modules used in Windows and other products, not individual Windows services or applications. Contact the vendor of the service or application for information on whether it calls a validated Windows cryptographic module (validated by the CMVP as meeting the FIPS 140 requirements and issued a certificate) in a FIPS compliant manner (calling for FIPS 140 validated cryptography and configured according to a defined FIPS approved mode of operation).
 
 ## FIPS 140 and the Commercial National Security Algorithm Suite
 
