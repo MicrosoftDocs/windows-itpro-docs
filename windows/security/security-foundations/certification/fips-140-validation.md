@@ -13,7 +13,9 @@ ms.collection: tier3
 
 The Federal Information Processing Standard (FIPS) Publication 140 is a U.S. government standard that defines the minimum-security requirements for cryptographic modules in IT products. This topic introduces the FIPS 140 validation process for the Windows cryptographic modules. The Windows cryptographic modules are used across different Microsoft products, including Windows client operating systems, Windows Server operating systems, and Azure cloud services.
 
-Microsoft maintains an active commitment to meeting the requirements of the FIPS 140 standard, having validated cryptographic modules against it since it was first established in 2001. Windows cryptographic modules are validated under the [Cryptographic Module Validation Program (CMVP)][CMVP], a joint effort between the U.S. National Institute of Standards and Technology (NIST) and the Canadian Centre for Cyber Security (CCCS). CMVP validates cryptographic modules against the Security Requirements for Cryptographic Modules (part of FIPS 140) and related FIPS cryptography standards. The NIST Information Technology Laboratory operates related programs that validate the FIPS approved cryptographic algorithms in the modules ([Cryptographic Algorithm Validation Program, CAVP][CAVP]) as well as the entropy source used by the modules ([Entropy Validation program][ESV]).
+Microsoft maintains an active commitment to meeting the requirements of the FIPS 140 standard, having validated cryptographic modules against it since it was first established in 2001. Windows cryptographic modules are validated under the [Cryptographic Module Validation Program (CMVP)][CMVP], a joint effort between the U.S. National Institute of Standards and Technology (NIST) and the Canadian Centre for Cyber Security (CCCS). The CMVP validates cryptographic modules against the Security Requirements for Cryptographic Modules (part of FIPS 140) and related FIPS cryptography standards. The NIST Information Technology Laboratory operates related programs that validate the FIPS approved cryptographic algorithms in the modules ([Cryptographic Algorithm Validation Program, CAVP][CAVP]) as well as the entropy source used by the modules ([Entropy Validation program][ESV]).
+
+The cadence for starting module validation aligns with the feature updates of Windows and Windows Server. As the software industry evolves, operating systems release more frequently. Microsoft completes validation work on major releases but, in between releases, seeks to minimize the changes to the cryptographic modules. The duration of each evaluation varies, depending on many factors.
 
 ## Validated modules used by Windows client
 
@@ -782,7 +784,7 @@ As part of the configuration rules outlined in the Security Policy documents, Wi
 
 ## Determine if a Windows service or application is FIPS 140 compliant
 
-Microsoft validates the cryptographic modules used in Windows and other products, not individual Windows services or applications. Contact the vendor of the service or application for information on whether it calls a validated Windows cryptographic module in a FIPS compliant manner. *FIPS 140 validated* signifies that the cryptographic module, or a product that embeds the module, has been validated by the CMVP as meeting the FIPS 140 requirements. *FIPS 140 compliant* is a different industry term for IT products that rely on FIPS 140 validated modules for cryptographic functionality. A compliant solution calls FIPS 140 validated cryptography, and is configured according to the defined FIPS approved mode of operation.
+Microsoft validates the cryptographic modules used in Windows and other products, not individual Windows services or applications. Contact the vendor of the service or application for information on whether it calls a validated Windows cryptographic module in a FIPS compliant manner. 
 
 ## FIPS 140 and the Commercial National Security Algorithm Suite
 
@@ -790,7 +792,7 @@ The *Commercial National Security Algorithm* (CNSA) suite is a set of cryptograp
 
 ## FIPS 140 and Common Criteria certifications
 
-FIPS 140 and *Common Criteria* are two complementary but different security standards. Whereas FIPS 140 validates cryptographic functionality, Common Criteria evaluates a broader selection of security functions in IT products. Common Criteria evaluations often rely on FIPS 140 validations to provide assurance that basic cryptographic functionality is implemented properly. For information about Microsoft's Common Criteria certification program, see [Common Criteria certifications](windows-platform-common-criteria.md).
+FIPS 140 and *Common Criteria* are two complementary but different security standards. Whereas FIPS 140 validates cryptographic functionality, Common Criteria evaluates a broader selection of security functions in IT products. Common Criteria evaluations may rely on FIPS 140 validations to provide assurance that basic cryptographic functionality is implemented properly. For information about Microsoft's Common Criteria certification program, see [Common Criteria certifications](windows-platform-common-criteria.md).
 
 ## Contact
 
