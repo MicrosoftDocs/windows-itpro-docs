@@ -5,6 +5,8 @@ items:
   items:
     - name: Core concepts 
       href: how-it-works.md
+    - name: How device registration works 🔗
+      href: /entra/identity/devices/device-registration-how-it-works
     - name: How provisioning works
       href: how-it-works-provisioning.md
     - name: How authentication works

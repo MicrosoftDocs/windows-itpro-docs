@@ -6,7 +6,24 @@ ms.date: 01/03/2024
 ---
 
 # Windows Hello for Business Overview
+<!--
+Windows Hello for Business is a two-factor credential that is a more secure alternative to passwords.
+Windows Hello lets your employees use fingerprint, facial recognition, or iris recognition as an alternative method to unlocking a device. With Windows Hello, authentication happens when the employee provides his or her unique biometric identifier while accessing the device-specific Windows Hello credentials.
 
+The Windows Hello authenticator works to authenticate and allow employees onto your enterprise network. Authentication doesn't roam among devices, isn't shared with a server, and can't easily be extracted from a device. If multiple employees share a device, each employee will use his or her own biometric data on the device.
+
+
+Windows Hello for Business is two-factor authentication based on the observed authentication factors of: *something you have*, *something you know*, and *something that's part of you*. Windows Hello for Business incorporates two of these factors: something you have (the user's private key protected by the device's security module) and something you know (your PIN). With the proper hardware, you can enhance the user experience by introducing biometrics. By using biometrics, you can replace the "something you know" authentication factor with the "something that is part of you" factor, with the assurances that users can fall back to the "something you know factor".
+
+When using Windows Hello for Business, the PIN isn't a symmetric key, whereas the password is a symmetric key. With passwords, there's a server that has some representation of the password. With Windows Hello for Business, the PIN is user-provided entropy used to load the private key in the Trusted Platform Module (TPM). The server doesn't have a copy of the PIN. For that matter, the Windows client doesn't have a copy of the current PIN either. The user must provide the entropy, the TPM-protected key, and the TPM that generated that key in order to successfully access the private key.
+The statement *PIN is stronger than Password* is not directed at the strength of the entropy used by the PIN. It's about the difference between providing entropy versus continuing the use of a symmetric key (the password). The TPM has anti-hammering features that thwart brute-force PIN attacks (an attacker's continuous attempt to try all combination of PINs). Some organizations may worry about shoulder surfing. For those organizations, rather than increase the complexity of the PIN, implement the [Multifactor Unlock](multifactor-unlock.md) feature.
+
+> [!TIP]
+> The Windows Hello for Business key meets Microsoft Entra multifactor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources.
+>
+> For more information, see [What is a Primary Refresh Token](/azure/active-directory/devices/concept-primary-refresh-token#when-does-a-prt-get-an-mfa-claim).
+
+-->
 Windows Hello is an authentication feature that allows users to sign in to their Windows devices using a PIN, facial recognition, fingerprint scanning, or iris scanning, instead of a traditional password.
 
 Windows Hello addresses the following problems with passwords:
@@ -183,12 +200,6 @@ Windows Hello for Business provisioning begins immediately after the user signs 
 
 <!--
 
-## Conditional access considerations
-
-Conditional Access can prevent or grant access to services like Exchange Online and SharePoint Online, based on the status of Windows Hello. To learn more about the Intune options to configure and monitor Windows Hello for Business, check the following articles.
-
-Windows Hello can replace passwords with two-factor authentication that consists of a Windows Hello biometric credential or PIN along with the device itself with the set of private/public keys. Windows Hello lets users authenticate to a Microsoft account, an Active Directory account, a Microsoft Entra ID account, or non-Microsoft service that supports Fast ID Online (FIDO) authentication. After an initial two-step verification during Windows Hello enrollment, a Windows Hello credential is set up on the user's device and the user sets a gesture, which can be Windows Hello or a PIN. The user provides the gesture to verify identity; Windows then uses Hello to authenticate users and help them to access protected resources and services.
-
 Benefits
 User convenience: users provide their credentials, and are then guided to set up Windows Hello. From that point on, they can access enterprise resources by providing a gesture
 Security: Windows Hello helps protect user identities and user credentials. Since no passwords are used, it circumvents phishing and brute force attacks, but most importantly it prevents server breaches as Windows Hello credentials are asymmetric key pair and replayability attacks when these keys are generated within isolated environments of TPMs
@@ -212,28 +223,6 @@ PIN entry and biogesture both trigger Windows to verify the user's identity and 
 *Each key is generated and bound to the TPM if the hardware is capable.
 *It may also protect a custom enrolled certificate (e.g. SmartCard emulation)
 *Can also contain generic passkey credentials
-
-
--->
-
-There are 5 phases related to Windows Hello for Business:
-
-1. Device registration
-1. Provisioning
-    1. When the policy is received, if all the prerequisites are met, the user will be able to configure WHfB
-    > [!TIP]
-    > The `dsregcmd.exe` tool is critical to solve registration and provisioning issues
-    1. The device receives a policy that enables WHfB and passes all the pre-requisites (based on  the deployment type). A user provisions, or *enrolls*, Windows Hello by authenticating to the IdP with MFA.
-    1. After successful MFA, the user must provide a gesture and PIN which will trigger a key pair generation in TPM    
-    1. Key registration: the public key is registered with the IdP and the private key is stored in the TPM. The private key is protected by the TPM and can't be exported.
-1. Authentication
-    In this phase, WHfB is used to authenticate user against the IdP. The user provides a gesture (PIN or biometric) and the IdP validates the user identity by mapping the user account to the public key used during the key registration step
-1. Key synchronization
-    In this phase, applicable only to hybrid deploments, the user's public key is synchronized from Microsoft Entra ID to Active Directory.
-1. Certificate enrollment
-    This phase occurs only in certificate trust deployments. A user certificate is issued by an internal PKI and the public key stored in the Windows Hello container 
-
-
 
 
 -->

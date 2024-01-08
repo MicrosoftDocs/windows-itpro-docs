@@ -117,7 +117,7 @@ Users can authenticate to Microsoft Entra ID using federated authentication or c
 | **🔲** | **Hybrid** | Cloud Kerberos trust | Federated authentication | AD FS or third-party federation service |
 | **🔲** | **Hybrid** | Key trust | Cloud authentication | Password hash sync (PHS) or Pass-through authentication (PTA) |
 | **🔲** | **Hybrid** | Key trust | Federated authentication | AD FS or third-party federation service |
-| **🔲** | **Hybrid** | Certificate trust | Federated authentication | This deployment model doesn't support PTA or PHS. Active Directory must be federated with Microsoft Entra ID using AD FS. The AD FS farm must support device registration.|
+| **🔲** | **Hybrid** | Certificate trust | Federated authentication | This deployment model doesn't support PTA or PHS. Active Directory must be federated with Microsoft Entra ID using AD FS|
 
 To learn more:
 
