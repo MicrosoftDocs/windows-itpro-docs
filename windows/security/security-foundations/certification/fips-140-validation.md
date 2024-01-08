@@ -454,7 +454,7 @@ Validated Edition: Ultimate Edition
 
 </details>
 
-### Other products that use the Windows cryptographic modules
+### Related products
 
 <details>
 
