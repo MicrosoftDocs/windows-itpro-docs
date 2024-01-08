@@ -7,18 +7,11 @@ ms.topic: concept-article
 
 # How Windows Hello for Business works
 
-<!--
-
-## How Windows Hello for Business works: key points
-
-- Windows Hello credentials are based on certificate or asymmetrical key pair. Windows Hello credentials can be bound to the device, and the token that is obtained using the credential is also bound to the device.
--->
-
 Windows Hello for Business is a distributed system that requires multiple technologies to work together. To simplify the explanation of how Windows Hello for Business works, it can be broken down into 5 phases. 2 of these phases are required only for specific deplyoment types.
 
 :::row:::
     :::column span="":::
-    **Device Registration**
+    **1. Device Registration**
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -28,12 +21,12 @@ Windows Hello for Business is a distributed system that requires multiple techno
     :::column span="3":::
     Registration is a prerequisite for Windows Hello for Business. Without device registration, Windows Hello for Business provisioning cannot start.
     
-    During device registration, the device registers its identity with the identity provider (IdP), so that it can be associated and authenticate to the IdP. The IdP can be Active Directory or Microsoft Entra ID.
+    During device registration, the device registers its identity with the identity provider (IdP), so that it can be associated and authenticate to the IdP.
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column span="":::
-    **Provisioning**
+    **2. Provisioning**
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -51,7 +44,7 @@ Windows Hello for Business is a distributed system that requires multiple techno
 :::row-end:::
 :::row:::
     :::column span="":::
-    **Key synchronization**
+    **3. Key synchronization**
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -64,7 +57,7 @@ Windows Hello for Business is a distributed system that requires multiple techno
 :::row-end:::
 :::row:::
     :::column span="":::
-    **Certificate enrollment**
+    **4. Certificate enrollment**
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -77,7 +70,7 @@ Windows Hello for Business is a distributed system that requires multiple techno
 :::row-end:::
 :::row:::
     :::column span="":::
-    **Authentication**
+    **5. Authentication**
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -87,12 +80,12 @@ Windows Hello for Business is a distributed system that requires multiple techno
     :::column span="3":::
     In this last phase, users can sign-in to Windows using biometrics or a PIN. Regardless of the gesture used, authentication occurs using the private portion of the Windows Hello for Business credential.
 
-    The user provides a gesture and the IdP validates the user identity by mapping the user account to the public key used during the key registration phase.
+    The user provides a gesture, and the IdP validates the user identity by mapping the user account to the public key used during the key registration phase.
 
     :::column-end:::
 :::row-end:::
 
-The following sections provide deeper insight into each of these components.
+The following sections provide deeper insights into each of these phases.
 
 ## Device Registration
 
@@ -115,56 +108,7 @@ The provisioning phase begins once device registration completes, and after the 
    > [!NOTE]
    > The list of prerequisites varies depending on the deployment tyep.
 1. The user *enrolls* in Windows Hello by authenticating to the IdP with MFA.
-1. After successful MFA, the user must provide a biogesture (if available) and PIN, which trigger a key pair generation
-
-> [!IMPORTANT]
-> Keys can be generated in hardware (TPM 1.2 or 2.0) or software, based on the configured policy setting. To guarantee that keys are generated in hardware, you must configure a policy setting. For more information, see [Use a hardware security device](policy-settings.md#use-a-hardware-security-device).
-
-Access to these keys and obtaining a signature to validate user possession of the private key is enabled only by the PIN or biometric gesture. The two-step verification that takes place during Windows Hello enrollment creates a trusted relationship between the identity provider and the user when the public portion of the public/private key pair is sent to an identity provider and associated with a user account. When a user enters the gesture on the device, the identity provider knows that it's a verified identity, because of the combination of Windows Hello keys and gestures. It then provides an authentication token that allows Windows to access resources and services.
-
-### Use gesture and key generation in TPM
-
-#### Attestation identity keys
-
-Because the endorsement certificate is unique for each device and doesn't change, the usage of it may present privacy concerns because it's theoretically possible to track a specific device. To avoid this privacy problem, Windows issues a derived attestation anchor based on the endorsement certificate. This intermediate key, which can be attested to an endorsement key, is the Attestation Identity Key (AIK) and the corresponding certificate is called the AIK certificate. This AIK certificate is issued by a Microsoft cloud service.
-
-> [!NOTE]
-> The AIK certificate must be provisioned in conjunction with a third-party service like the Microsoft Cloud CA service. After it is provisioned, the AIK private key can be used to report platform configuration. Windows creates a signature over the platform log state (and a monotonic counter value) at each boot by using the AIK.
-> The AIK is an asymmetric (public/private) key pair that is used as a substitute for the EK as an identity for the TPM for privacy purposes. The private portion of an AIK is never revealed or used outside the TPM and can only be used inside the TPM for a limited set of operations. Furthermore, it can only be used for signing, and only for limited, TPM-defined operations.
-
-Windows creates AIKs protected by the TPM, if available, that are 2048-bit RSA signing keys. Microsoft hosts a cloud service called Microsoft Cloud CA to establish cryptographically that it's communicating with a real TPM and that the TPM possesses the presented AIK. After the Microsoft Cloud CA service has established these facts, it will issue an AIK certificate to the Windows device.
-
-Many existing devices that will upgrade to Windows 10 won't have a TPM, or the TPM won't contain an endorsement certificate. **To accommodate those devices, Windows 10 or Windows 11 allows the issuance of AIK certificates without the presence of an endorsement certificate.** Such AIK certificates aren't issued by Microsoft Cloud CA. This behavior isn't as trustworthy as an endorsement certificate that is burned into the device during manufacturing, but it will provide compatibility for advanced scenarios like Windows Hello for Business without TPM.
-
-In the issued AIK certificate, a special OID is added to attest that endorsement certificate was used during the attestation process. This information can be used by a relying party to decide whether to reject devices that are attested using AIK certificates without an endorsement certificate or accept them. Another scenario can be to not allow access to high-value assets from devices that are attested by an AIK certificate that's not backed by an endorsement certificate.
-
-#### Endorsement key
-
-The TPM has an embedded unique cryptographic key called the endorsement key. The TPM endorsement key is a pair of asymmetric keys (RSA size 2048 bits).
-
-The endorsement key public key is used for sending securely sensitive parameters, such as when taking possession of the TPM that contains the defining hash of the owner password. The EK private key is used when creating secondary keys like AIKs.
-
-The endorsement key acts as an identity card for the TPM.
-
-The endorsement key is often accompanied by one or two digital certificates:
-
-- One certificate is produced by the TPM manufacturer and is called the **endorsement certificate**. The endorsement certificate is used to prove the authenticity of the TPM (for example, that it's a real TPM manufactured by a specific chip maker) to local processes, applications, or cloud services. The endorsement certificate is created during manufacturing or the first time the TPM is initialized by communicating with an online service.
-- The other certificate is produced by the platform builder and is called the **platform certificate** to indicate that a specific TPM is integrated with a certain device.
-
-For certain devices that use firmware-based TPM produced by Intel or Qualcomm, the endorsement certificate is created when the TPM is initialized during Windows OOBE.
-
-#### Storage root key
-
-The storage root key (SRK) is also an asymmetric key pair (RSA with a minimum of 2048-bits length). The SRK has a major role and is used to protect TPM keys, so that these keys can't be used without the TPM. The SRK key is created when the ownership of the TPM is taken.
-
-### Windows Hello data storage
-
-The biometric data used to support Windows Hello is stored on the local device only. It doesn't roam and is never sent to external devices or servers. This separation helps to stop potential attackers by providing no single collection point that an attacker could potentially compromise to steal biometric data. Additionally, even if an attacker was actually able to get the biometric data from a device, it cannot be converted back into a raw biometric sample that could be recognized by the biometric sensor.
-
-> [!NOTE]
->Each sensor on a device will have its own biometric database file where template data is stored. Each database has a unique, randomly generated key that is encrypted to the system. The template data for the sensor will be encrypted with this per-database key using AES with CBC chaining mode. The hash is SHA256. Some fingerprint sensors have the capability to complete matching on the fingerprint sensor module instead of in the OS. These sensors will store biometric data on the fingerprint module instead of in the database file.
-
-> C:\WINDOWS\System32\WinBioDatabase
+1. After successful MFA, the user must provide a biogesture (if available) and PIN, which trigger a key pair generation and registration with the IdP
 
 ### Key registration
 
@@ -177,13 +121,27 @@ The biometric data used to support Windows Hello is stored on the local device o
     :::column-end:::
 :::row-end:::
 
-Personal (Microsoft account) and corporate (Active Directory or Microsoft Entra ID) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.
+> [!IMPORTANT]
+> Keys can be generated in hardware (TPM 1.2 or 2.0) or software, based on the configured policy setting. To guarantee that keys are generated in hardware, you must configure a policy setting. For more information, see [Use a hardware security device](policy-settings.md#use-a-hardware-security-device).
+
+Personal (Microsoft account) and Work or School (Active Directory or Microsoft Entra ID) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.
 
 Windows Hello also generates an administrative key that the user or administrator can use to reset credentials, when necessary (for example, when using the PIN reset service). In addition to the protector key, TPM-enabled devices generate a block of data that contains attestations from the TPM.
 
-At this point, the user has a PIN gesture defined on the device and an associated protector key for that PIN gesture. That means the user is able to securely sign in to the device with the PIN and thus be able to establish a trusted session with the device to add support for a biometric gesture as an alternative for the PIN. When you add a biometric gesture, it follows the same basic sequence: the user authenticates to the system by using the PIN, and then registers the new biometric, after which Windows generates a unique key pair and stores it securely. Future sign-ins can then use either the PIN or the registered biometric gestures.
+Access to these keys and obtaining a signature to validate user possession of the private key is enabled only by the PIN or biometric gesture. The two-step verification that takes place during Windows Hello enrollment creates a trusted relationship between the IdP and the user when the public portion of the public/private key pair is sent to an identity provider and associated with a user account. When a user enters the gesture on the device, the identity provider knows that it's a verified identity, because of the combination of Windows Hello keys and gestures. It then provides an authentication token that allows Windows to access resources and services.
 
 For more information, see [how provisioning works](how-it-works-provisioning.md).
+
+To learn more how Windows uses the TPM in support of Windows Hello for Business, see [How Windows uses the Trusted Platform Module](../../hardware-security/tpm/how-windows-uses-the-tpm.md).
+
+### Windows Hello data storage
+
+The biometric data used to support Windows Hello is stored on the local device only. It doesn't roam and is never sent to external devices or servers. This separation helps to stop potential attackers by providing no single collection point that an attacker could potentially compromise to steal biometric data. Additionally, even if an attacker was actually able to get the biometric data from a device, it cannot be converted back into a raw biometric sample that could be recognized by the biometric sensor.
+
+> [!NOTE]
+>Each sensor on a device has its own biometric database file where template data is stored (path `C:\WINDOWS\System32\WinBioDatabase`). Each database has a unique, randomly generated key that is encrypted to the system. The template data for the sensor is encrypted with the per-database key using AES with CBC chaining mode. The hash is SHA256.
+>
+>Some fingerprint sensors have the capability to complete matching on the fingerprint sensor module instead of in the OS. These sensors store biometric data on the fingerprint module instead of in the database file.
 
 ## Key synchronization (optional)
 
@@ -191,12 +149,13 @@ For more information, see [how provisioning works](how-it-works-provisioning.md)
 
 ## Authentication
 
+Windows Hello credentials are based on certificate or asymmetrical key pair. Windows Hello credentials can be bound to the device, and the token that is obtained using the credential is also bound to the device.
+
 Authentication is the two-factor authentication with the combination of:
 
 - A key, or certificate, tied to a device and
   - something that the person knows (a PIN) or
   - something that the person is (biometrics)
-
 
 PIN entry and biometric gesture both trigger Windows to use the private key to cryptographically sign data that is sent to the identity provider. The identity provider verifies the user's identity and authenticates the user.
 
