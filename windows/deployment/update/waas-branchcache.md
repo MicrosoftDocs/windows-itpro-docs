@@ -35,7 +35,9 @@ Whether you use BranchCache with Configuration Manager or WSUS, each client that
 In Windows 10, version 1607, the Windows Update Agent uses Delivery Optimization by default, even when the updates are retrieved from WSUS. When using BranchCache with Windows client, set the Delivery Optimization **Download mode** to '100' (Bypass) to allow clients to use the Background Intelligent Transfer Service (BITS) protocol with BranchCache instead. For instructions on how to use BranchCache in Distributed Cache mode with WSUS, see the section WSUS and Configuration Manager with BranchCache in Distributed Cache mode.
 
 > [!Note] 
-> Setting [Download mode](../do/waas-delivery-optimization-reference.md#download-mode) to '100' (Bypass) is only available in Windows 10, version 1607 and later, not in Windows 11. BranchCache isn't supported for Delivery Optimization in Windows 11. <!--8530422-->
+> Setting [Download mode](../do/waas-delivery-optimization-reference.md#download-mode) to '100' (Bypass) is only available in Windows 10, version 1607 and laterBranchCache isn't supported for content downloaded using Delivery Optimization in Windows 11.
+>
+> Bypass mode [Download mode](../do/waas-delivery-optimization-reference.md#download-mode) '100' is only available in Windows 10, version 1607 and deprecated in Windows 11. BranchCache isn't supported for Delivery Optimization in Windows 11. <!--8530422-->
 
 ## Configure servers for BranchCache
 
