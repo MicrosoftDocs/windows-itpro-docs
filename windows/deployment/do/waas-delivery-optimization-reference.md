@@ -259,7 +259,7 @@ Starting in Windows 10, version 1803, set this policy to restrict peer selection
 
 If Group mode is set, Delivery Optimization connects to locally discovered peers that are also part of the same Group (have the same Group ID).
 
-The Local Peer Discovery (DNS-SD) option can only be set via MDM delivered policies on Windows 11 builds. This feature can be enabled in supported Windows 10 builds by setting the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization\DORestrictPeerSelectionBy` value to **2**.
+In Windows 11, the Local Peer Discovery (DNS-SD) option can be set via MDM or Group Policy. However, in Windows 10, this feature can be enabled by setting the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization\DORestrictPeerSelectionBy` value to **2**.
 
 ### Delay background download from HTTP (in secs)
 
