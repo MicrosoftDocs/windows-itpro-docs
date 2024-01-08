@@ -22,9 +22,12 @@ ms.topic: overview
 Windows Hello for Business is a distributed system that requires multiple technologies to work together. To simplify the explanation of how Windows Hello for Business works, it can be broken down into 5 phases. 2 of these phases are required only for specific deplyoment types.
 
 :::row:::
-    :::column span="1":::
+    :::column span="":::
     **Device Registration**
-
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
     :::image type="content" source="images/howitworks/device-registration.png" alt-text="Icon representing the device registration phase." border="false":::
     :::column-end:::
     :::column span="3":::
@@ -34,9 +37,12 @@ Windows Hello for Business is a distributed system that requires multiple techno
     :::column-end:::
 :::row-end:::
 :::row:::
-    :::column span="1":::
+    :::column span="":::
     **Provisioning**
-
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
     :::image type="content" source="images/howitworks/provisioning.png" alt-text="Icon representing the provisioning phase." border="false":::
     :::column-end:::
     :::column span="3":::
@@ -49,9 +55,12 @@ Windows Hello for Business is a distributed system that requires multiple techno
     :::column-end:::
 :::row-end:::
 :::row:::
-    :::column span="1":::
+    :::column span="":::
     **Key Registration**
-
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
     :::image type="content" source="images/howitworks/synchronization.png" alt-text="Icon representing the synchronization phase." border="false":::
     :::column-end:::
     :::column span="3":::
@@ -59,9 +68,12 @@ Windows Hello for Business is a distributed system that requires multiple techno
     :::column-end:::
 :::row-end:::
 :::row:::
-    :::column span="1":::
+    :::column span="":::
     **Certificate enrollment**
-
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
     :::image type="content" source="images/howitworks/certificate-enrollment.png" alt-text="Icon representing the certificate enrollment phase." border="false":::
     :::column-end:::
     :::column span="3":::
@@ -69,9 +81,12 @@ Windows Hello for Business is a distributed system that requires multiple techno
     :::column-end:::
 :::row-end:::
 :::row:::
-    :::column span="1":::
+    :::column span="":::
     **Authentication**
-
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
     :::image type="content" source="images/howitworks/authentication.png" alt-text="Icon representing the authentication phase." border="false":::
     :::column-end:::
     :::column span="3":::
@@ -84,14 +99,7 @@ Windows Hello for Business is a distributed system that requires multiple techno
 
 The following sections provide deeper insight into each of these components.
 
-:::row:::
-    :::column span="1":::
-    :::image type="content" source="images/howitworks/device-registration.png" alt-text="Icon representing the device registration phase." border="false":::
-    :::column-end:::
-    :::column span="3":::
-    ## Device Registration
-    :::column-end:::
-:::row-end:::
+## Device Registration
 
 All devices included in the Windows Hello for Business deployment must go through a process called *device registration*. Device registration enables devices to be associated and to authentiticate to an IdP:
 
