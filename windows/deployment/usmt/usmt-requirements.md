@@ -38,6 +38,8 @@ The following table lists the operating systems supported in USMT.
 ## Unsupported scenarios
 
 - USMT doesn't support any of the Windows Server operating systems.
+- USMT doesn't support Microsoft Entra joined devices as either a source or destination device.
+- USMT might work with Microsoft Entra hybrid joined devices, but it's not a tested scenario so therefore unsupported.
 - USMT shouldn't be used for migrating between previous versions of Windows. USMT is only meant to:
   - Migrate to a currently supported version of Windows
   - Migrate between currently supported versions of Windows, assuming the version of Windows being migrated to is newer or the same as the previous version of Windows being migrated from.
