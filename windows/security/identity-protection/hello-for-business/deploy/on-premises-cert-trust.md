@@ -14,13 +14,13 @@ ms.topic: tutorial
 
 > [!div class="checklist"]
 >
-> - [Public Key Infrastructure](index.md#public-key-infrastructure-pki)
-> - [Authentication](index.md#authentication)
-> - [Device configuration](index.md#device-configuration)
-> - [Licensing for cloud services](index.md#licensing-for-cloud-services)
+> - [Public Key Infrastructure](index.md#pki-requirements)
+> - [Authentication](index.md#authentication-to-microsoft-entra-id)
+> - [Device configuration](index.md#device-configuration-options)
+> - [Licensing for cloud services](index.md#licensing-for-cloud-services-requirements)
 > - [Windows requirements](index.md#windows-requirements)
 > - [Windows Server requirements](index.md#windows-server-requirements)
-> - [Prepare users to use Windows Hello](index.md#prepare-users-to-use-windows-hello)
+> - [Prepare users to use Windows Hello](prepare-users.md)
 
 ## Deployment steps
 

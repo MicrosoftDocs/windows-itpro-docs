@@ -13,11 +13,11 @@ ms.topic: tutorial
 
 > [!div class="checklist"]
 >
-> - [Authentication](index.md#authentication)
-> - [Device configuration](index.md#device-configuration)
+> - [Authentication](index.md#authentication-to-microsoft-entra-id)
+> - [Device configuration](index.md#device-configuration-options)
 > - [Windows requirements](index.md#windows-requirements)
 > - [Windows Server requirements](index.md#windows-server-requirements)
-> - [Prepare users to use Windows Hello](index.md#prepare-users-to-use-windows-hello)
+> - [Prepare users to use Windows Hello](prepare-users.md)
 
 > [!IMPORTANT]
 > When implementing the cloud Kerberos trust deployment model, you *must* ensure that you have an adequate number of *read-write domain controllers* in each Active Directory site where users will be authenticating with Windows Hello for Business. For more information, see [Capacity planning for Active Directory][SERV-1].

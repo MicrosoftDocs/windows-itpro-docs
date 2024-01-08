@@ -108,7 +108,7 @@ This information is also available using the `dsregcmd.exe /status` command from
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7 alt-text="Video showing the Windows Hello for Business enrollment steps after signing in with a password."]
 
-After a successful key registration, Windows creates a certificate request using the same key pair to request a certificate.  Windows send the certificate request to the AD FS server for certificate enrollment.
+After a successful key registration, Windows creates a certificate request using the same key pair to request a certificate. Windows sends the certificate request to the AD FS server for certificate enrollment.
 
 The AD FS registration authority verifies the key used in the certificate request matches the key that was previously registered. On a successful match, the AD FS registration authority signs the certificate request using its enrollment agent certificate and sends it to the certificate authority.
 

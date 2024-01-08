@@ -16,10 +16,10 @@ ms.topic: tutorial
 
 > [!div class="checklist"]
 >
-> - [Public Key Infrastructure](index.md#public-key-infrastructure-pki)
-> - [Authentication](index.md#authentication)
-> - [Device configuration](index.md#device-configuration)
-> - [Prepare users to use Windows Hello](index.md#prepare-users-to-use-windows-hello)
+> - [Public Key Infrastructure](index.md#pki-requirements)
+> - [Authentication](index.md#authentication-to-microsoft-entra-id)
+> - [Device configuration](index.md#device-configuration-options)
+> - [Prepare users to use Windows Hello](prepare-users.md)
 
 ## Deployment steps
 

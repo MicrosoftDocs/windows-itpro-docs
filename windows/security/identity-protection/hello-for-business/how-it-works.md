@@ -1,8 +1,8 @@
 ---
 title: How Windows Hello for Business works
-description: Learn how Windows Hello for Business works, and how it can help your users authenticate to services.
+description: Learn how Windows Hello for Business works, and how it can help you protect your organization.
 ms.date: 01/03/2024
-ms.topic: overview
+ms.topic: concept-article
 ---
 
 # How Windows Hello for Business works
@@ -12,7 +12,6 @@ ms.topic: overview
 ## How Windows Hello for Business works: key points
 
 - Windows Hello credentials are based on certificate or asymmetrical key pair. Windows Hello credentials can be bound to the device, and the token that is obtained using the credential is also bound to the device.
-- 
 - Keys can be generated in hardware (TPM 1.2 or 2.0 for enterprises, and TPM 2.0 for consumers) or software, based on the policy. To guarantee that keys are generated in hardware, you must set policy.
 - Authentication is the two-factor authentication with the combination of a key or certificate tied to a device and something that the person knows (a PIN) or something that the person is (biometrics). The Windows Hello gesture doesn't roam between devices and isn't shared with the server. Biometrics templates are stored locally on a device. The PIN is never stored or shared.
 - The private key never leaves a device when using TPM. The authenticating server has a public key that is mapped to the user account during the registration process.
@@ -48,15 +47,15 @@ Windows Hello for Business is a distributed system that requires multiple techno
     :::column span="3":::
     During this phase, the user authenticates using one form of authentication (typically, username/password) to request a new Windows Hello for Business credential. The provisioning flow requires a second factor of authentication before it can create a strong, two-factor Windows Hello for Business credential.
 
-    After multi-factor authentication (MFA), the provisioning process generates a key pair bound to the Trusted Platform Module (TPM), if available, or in software:
-    - the private key is protected by the TPM and can't be exported
-    - the public key is registered with the IdP and the private key is stored in the TPM
+    After multi-factor authentication (MFA), the provisioning process:
+    1. **Generates a key pair** bound to the Trusted Platform Module (TPM), if available, or in software. The private key is stored and protected by the TPM, and can't be exported
+    2. **Registers the public key** with the IdP
     
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column span="":::
-    **Key Registration**
+    **Key synchronization**
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -64,7 +63,7 @@ Windows Hello for Business is a distributed system that requires multiple techno
     :::image type="content" source="images/howitworks/synchronization.png" alt-text="Icon representing the synchronization phase." border="false":::
     :::column-end:::
     :::column span="3":::
-        In this phase, applicable only to hybrid deploments, the user's public key is synchronized from Microsoft Entra ID to Active Directory.
+    In this phase, applicable only to hybrid deploments, the user's public key is synchronized from Microsoft Entra ID to Active Directory.
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -77,7 +76,7 @@ Windows Hello for Business is a distributed system that requires multiple techno
     :::image type="content" source="images/howitworks/certificate-enrollment.png" alt-text="Icon representing the certificate enrollment phase." border="false":::
     :::column-end:::
     :::column span="3":::
-    This phase occurs only in certificate trust deployments. A user certificate is issued by an internal PKI and the public key stored in the Windows Hello container 
+    In this phase, applicable only to deploments using certificates, a certificate is issued to the user using the organization's public key infrastructure (PKI).
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -229,6 +228,8 @@ Changes to a user account password doesn't affect sign-in or unlock, since Windo
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Whether you have have a cloud-only deployment, hybrid, or on-premises, Windows Hello for Business has a deployment option for you. To learn more, see [Plan a Windows Hello for Business Deployment](deploy/index.md).
+> Whether you have have a cloud-only deployment, hybrid, or on-premises, Windows Hello for Business has a deployment option for you.
+>
+> To learn more, see:
 >
 > [Plan a Windows Hello for Business Deploymen](deploy/index.md)
