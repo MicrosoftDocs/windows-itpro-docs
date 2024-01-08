@@ -47,16 +47,26 @@ Windows Hello for Business is a distributed system that requires multiple techno
     :::column-end:::
 :::row-end:::
 :::row:::
+    :::column span="":::
+    **Key Registration**
+    :::column-end:::
+:::row-end:::
+:::row:::
     :::column span="1":::
-    **Key synchronization**
+    :::image type="content" source="images/howitworks/key-synchronization.png" alt-text="Icon representing the synchronization phase.":::
     :::column-end:::
     :::column span="3":::
         In this phase, applicable only to hybrid deploments, the user's public key is synchronized from Microsoft Entra ID to Active Directory.
     :::column-end:::
 :::row-end:::
 :::row:::
+    :::column span="":::
+    #### Certificate enrollment phase
+    :::column-end:::
+:::row-end:::
+:::row:::
     :::column span="1":::
-    **Certificate enrollment**
+    :::image type="content" source="images/howitworks/certificate-enrollment.png" alt-text="Icon representing the certificate enrollment phase.":::
     :::column-end:::
     :::column span="3":::
     This phase occurs only in certificate trust deployments. A user certificate is issued by an internal PKI and the public key stored in the Windows Hello container 
