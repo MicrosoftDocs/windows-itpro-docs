@@ -214,7 +214,7 @@ USMT doesn't migrate the Start menu layout. To migrate a user's Start menu, sett
 
 ### User profiles from Active Directory to Microsoft Entra ID
 
-- USMT doesn't support migrating user profiles from Active Directory to Microsoft Entra ID.
+- USMT doesn't support migrating user profiles from Active Directory to Microsoft Entra ID or vice-versa.
 - USMT doesn't support migrating user profiles between Microsoft Entra ID.
 - USMT might work when migrating user profiles between Microsoft Entra hybrid join accounts or between Active Directory and Microsoft Entra hybrid join accounts, but it's not a tested scenario so therefore unsupported.
 
