@@ -18,12 +18,23 @@ Windows Hello for Business is two-factor authentication based on the observed au
 When using Windows Hello for Business, the PIN isn't a symmetric key, whereas the password is a symmetric key. With passwords, there's a server that has some representation of the password. With Windows Hello for Business, the PIN is user-provided entropy used to load the private key in the Trusted Platform Module (TPM). The server doesn't have a copy of the PIN. For that matter, the Windows client doesn't have a copy of the current PIN either. The user must provide the entropy, the TPM-protected key, and the TPM that generated that key in order to successfully access the private key.
 The statement *PIN is stronger than Password* is not directed at the strength of the entropy used by the PIN. It's about the difference between providing entropy versus continuing the use of a symmetric key (the password). The TPM has anti-hammering features that thwart brute-force PIN attacks (an attacker's continuous attempt to try all combination of PINs). Some organizations may worry about shoulder surfing. For those organizations, rather than increase the complexity of the PIN, implement the [Multifactor Unlock](multifactor-unlock.md) feature.
 
-> [!TIP]
-> The Windows Hello for Business key meets Microsoft Entra multifactor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources.
->
-> For more information, see [What is a Primary Refresh Token](/azure/active-directory/devices/concept-primary-refresh-token#when-does-a-prt-get-an-mfa-claim).
+
 
 -->
+
+Windows Hello is an authentication technology built into Windows, targeted at both consumer and organizations. Windows Hello is designed to provide enhanced security and improved ease of use when compared with passwords.
+
+Security
+On devices with a TPM, Windows Hello provides enhanced security through phish-resistant two-factor authentication. Authentication requires a PIN (something the user knows) or biometric data (something the user is), coupled with possession of the device itself containing the hardware-bound credential (something the user has). There is no symmetric secret (password) which can be stolen from a server or phished from a user and used remotely.
+
+Ease of use
+With compatible hardware, the user can log in with face or fingerprint, which is much easier and more convenient than typing in a credential. For users without biometrics, a PIN can be shorter and easier to remember than a complex password. The use of a PIN doesn't compromise security, since Windows Hello has built-in brute force protection and the PIN never leaves the device.
+
+With FIDO/WebAuthn, Windows Hello can also be used to log in to supported websites, which reduces the need to remember or manage multiple complex passwords for a user's online accounts.
+
+
+
+
 Windows Hello is an authentication feature that allows users to sign in to their Windows devices using a PIN, facial recognition, fingerprint scanning, or iris scanning, instead of a traditional password.
 
 Windows Hello addresses the following problems with passwords:

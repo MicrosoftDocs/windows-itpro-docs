@@ -160,3 +160,17 @@ Learn more about Windows Hello for Business features and how to configure them:
 [MEM-4]: /windows/client-management/mdm/passportforwork-csp
 [MEM-5]: /mem/intune/protect/endpoint-security-account-protection-policy
 [MEM-6]: /mem/intune/protect/identity-protection-configure
+
+<!--
+MDM user policy registry path:
+"HKLM:SOFTWARE\Microsoft\Policies\PassportForWork\<tenantID>\< userSid>\Policies".
+
+MDM device policy registry path:
+"HKLM:SOFTWARE\Microsoft\Policies\PassportForWork\<tenantID>\Device\Policies".
+
+GP user policy registry paths:
+"HKEY_USERS:<userSID>\SOFTWARE\Policies\Microsoft\PassportForWork"
+
+GP device policy registry path:
+"HKLM:SOFTWARE\Policies\Microsoft\PassportForWork".
+-->
