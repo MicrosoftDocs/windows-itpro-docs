@@ -9,9 +9,9 @@ ms.topic: concept-article
 
 Windows Hello for Business is a distributed system that requires multiple technologies to work together. To simplify the explanation of how Windows Hello for Business works, let's break it down into five phases, which represent the chronological order of the deployment process.
 
-Two of these phases are required only for certain deployment scenarios.
-
 > [!NOTE]
+> Two of these phases are required only for certain deployment scenarios.
+>
 > The deployment scenarios are described in the article: [Plan a Windows Hello for Business deployment](deploy/index.md).
 
 :::row:::
@@ -78,9 +78,7 @@ Two of these phases are required only for certain deployment scenarios.
     :::image type="content" source="images/howitworks/authentication.png" alt-text="Icon representing the authentication phase." border="false":::
     :::column-end:::
     :::column span="3":::
-    In this last phase, users can sign-in to Windows using biometrics or a PIN. Regardless of the gesture used, authentication occurs using the private portion of the Windows Hello for Business credential.
-
-    The user provides a gesture, and the IdP validates the user identity by mapping the user account to the public key used during the provisioning phase.
+    In this last phase, the user can sign-in to Windows using biometrics or a PIN. Regardless of the gesture used, authentication occurs using the private portion of the Windows Hello for Business credential. The IdP validates the user identity by mapping the user account to the public key used during the provisioning phase.
 
     :::column-end:::
 :::row-end:::
@@ -91,18 +89,18 @@ The following sections provide deeper insights into each of these phases.
 
 All devices included in the Windows Hello for Business deployment must go through a process called *device registration*. Device registration enables devices to be associated and to authenticate to an IdP:
 
-- For cloud and hybrid deployments, the identity provider is Microsoft Entra ID and the device registers with the *Device Registration Service*
+- For cloud and hybrid deployments, the identity provider is Microsoft Entra ID, and the device registers with the *Device Registration Service*
 - For on-premises deployments, the identity provider is Active Directory Federation Services (AD FS), and the device registers with the *Enterprise Device Registration Service* hosted on AD FS
 
 When a device is registered, the IdP provides the device with an identity that is used to authenticate the device when a user signs-in.
 
-The device registration type is called *join type*.
+There are different registration types, which are identified as *join type*. For more information, see [What is a device identity][ENTRA-1].
 
-For more information and detailed sequence diagrams, see [how device registration works](/entra/identity/devices/device-registration-how-it-works).
+For detailed sequence diagrams, see [how device registration works](/entra/identity/devices/device-registration-how-it-works).
 
 ## Provisioning
 
-The first step in the usage of Windows Hello is setting up a *container*. This is called the *provisioning* phase. In the context of Windows Hello for Business, a container is a logical grouping of *key material* or data. Windows Hello uses a single container that holds user key material for personal accounts (including key material associated with the user's Microsoft account or with other consumer identity providers), and credentials associated with an organization's account. The container holds organization's credentials only on devices that are *registered* with the organization.
+The first step in the usage of Windows Hello is setting up a *container*. In the context of Windows Hello for Business, a container is a logical grouping of *key material*, or data. Windows Hello uses a single container that holds user key material for personal accounts (including key material associated with the user's Microsoft account or with other consumer identity providers), and credentials associated with an organization's account. The container holds organization's credentials only on devices that are *registered* with the organization.
 
 > [!NOTE]
 > There are no physical containers on disk, in the registry, or elsewhere. Containers are logical units used to group related items. The keys, certificates, and credentials that Windows Hello stores, are protected without the creation of actual containers or folders.
@@ -218,3 +216,8 @@ Changing a user account password doesn't affect sign-in or unlock, since Windows
 > To learn more, see:
 >
 > [Plan a Windows Hello for Business Deployment](deploy/index.md)
+
+
+<!--links-->
+
+[ENTRA-1]: entra/identity/devices/overview

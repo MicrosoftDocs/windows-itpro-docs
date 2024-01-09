@@ -62,8 +62,6 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 
 ## Microsoft Entra hybrid join authentication using cloud Kerberos trust
 
-![Microsoft Entra hybrid join authentication using Microsoft Entra Kerberos](images/howitworks/auth-haadj-cloudtrust.png)
-
 ![Microsoft Entra hybrid join authentication using Microsoft Entra Kerberos](images/howitworks/auth-haadj-cloudtrust.svg)
 
 | Phase  | Description  |
