@@ -96,33 +96,34 @@ When a device is registered, the IdP provides the device with an identity that i
 
 There are different registration types, which are identified as *join type*. For more information, see [What is a device identity][ENTRA-1].
 
-For detailed sequence diagrams, see [how device registration works](/entra/identity/devices/device-registration-how-it-works).
+For detailed sequence diagrams, see [how device registration works][ENTRA-4].
 
 ## Provisioning
 
-The first step in the usage of Windows Hello is setting up a *container*. In the context of Windows Hello for Business, a container is a logical grouping of *key material*, or data. Windows Hello uses a single container that holds user key material for personal accounts (including key material associated with the user's Microsoft account or with other consumer identity providers), and credentials associated with an organization's account. The container holds organization's credentials only on devices that are *registered* with the organization.
+The first step in the usage of Windows Hello is setting up a *container*. A Windows Hello container is a logical grouping of *key material*, or data. Windows Hello uses a single container that holds user key material for personal accounts (for example, the user's Microsoft account or passkeys), and credentials associated with an organization's account. The container holds organization's credentials only on devices that are *registered* with the organization's IdP.
 
 > [!NOTE]
 > There are no physical containers on disk, in the registry, or elsewhere. Containers are logical units used to group related items. The keys, certificates, and credentials that Windows Hello stores, are protected without the creation of actual containers or folders.
 
-Windows Hello provisioning is triggered once device registration completes, and after the device receives a policy that enables Windows Hello. If all the prerequisites are met, a Cloud Experience Host (CXH) window is launched to take the user through the Windows Hello provisioning flow.
+Windows Hello provisioning is triggered once device registration completes, and after the device receives a policy that enables Windows Hello. If all the prerequisites are met, a Cloud eXperience Host (CXH) window is launched to take the user through the Windows Hello provisioning flow.
 
 > [!NOTE]
-> The list of prerequisites varies depending on the deployment type.
+> The list of prerequisites varies depending on the deployment type, as described in the article [Plan a Windows Hello for Business deployment](deploy/index.md).
 
 :::image type="content" source="images/howitworks/cxh-provision.png" alt-text="Screenshot of the Cloud Experience Host prompting the user to provision Windows Hello." border="false":::
 
-1. The user *enrolls* in Windows Hello by authenticating to the IdP with MFA
-1. After successful MFA, the user must provide a bio gesture (if available) and PIN, which trigger the creation of the Windows Hello container. A public/private key pair is generated and the public key is registered with the IdP.
+Here are the steps involved with the provisioning phase:
 
- After multi-factor authentication (MFA), the provisioning process:
+1. In the CXH window, the user is prompted to authenticate to the IdP with MFA
+1. After successful MFA, the user must provide a bio gesture (if available), and a PIN
+1. After the PIN confirmation, the Windows Hello container is created
+1. A public/private key pair is generated. The key pair is bound to the Trusted Platform Module (TPM), if available, or in software
+1. The private key is stored locally and protected by the TPM, and can't be exported
+1. The public key is registered with the IdP, mapped to the user account
+    1. The Device Registration Service writes the key to the user object in Microsoft Entra ID
+    1. For on-premises scenarios, AD FS writes the key is written to Active Directory
 
-    1. **Generates a key pair** bound to the Trusted Platform Module (TPM), if available, or in software. The private key is stored locally and protected by the TPM, and can't be exported
-    1. **Registers the public key** with the IdP, mapped to the user account
-
-### Key registration
-
-The IdP validates the user identity and maps the Windows Hello public key to a user account during the registration step.
+### Key registration details
 
 :::row:::
     :::column:::
@@ -141,9 +142,6 @@ Personal (Microsoft account) and Work or School (Active Directory or Microsoft E
 Windows Hello also generates an *administrative key*. The administrative key can be used to reset credentials when necessary. For example, when using the [PIN reset service](pin-reset.md). In addition to the protector key, TPM-enabled devices generate a block of data that contains attestations from the TPM.
 
 Access to these keys, and obtaining a signature to validate user possession of the private key, is enabled only by the PIN or biometric gesture. The two-step verification that takes place during Windows Hello enrollment creates a trusted relationship between the IdP and the user when the public portion of the public/private key pair is sent to an identity provider and associated with a user account. When a user enters the gesture on the device, the identity provider knows that it's a verified identity, because of the combination of Windows Hello keys and gestures. It then provides an authentication token that allows Windows to access resources and services.
-
-The Device Registration Service writes the key to the user object in Microsoft Entra ID.
-For on-premises scenarios, the key is written to Active Directory by AD FS.
 
 For more information and detailed sequence diagrams, see [how provisioning works](how-it-works-provisioning.md).
 
@@ -193,16 +191,16 @@ For more information and detailed sequence diagrams, see [how authentication wor
 
 ### Primary refresh token
 
-Single sign-on (SSO) relies on special tokens obtained to access specific applications. In the traditional Windows Integrated authentication case using Kerberos, the token is a Kerberos TGT (ticket-granting ticket). For Microsoft Entra ID and AD FS applications, this token is a *primary refresh token* (PRT). It's a [JSON Web Token](https://openid.net/specs/draft-jones-json-web-token-07.html) that contains claims about both the user and the device.
+Single sign-on (SSO) relies on special tokens obtained to access specific applications. In the traditional Windows Integrated authentication case using Kerberos, the token is a Kerberos TGT (ticket-granting ticket). For Microsoft Entra ID and AD FS applications, this token is a *primary refresh token* (PRT). It's a [JSON Web Token][WEB-1] that contains claims about both the user and the device.
 
 The PRT is initially obtained during sign-in or unlock in a similar way the Kerberos TGT is obtained. This behavior is true for both Microsoft Entra joined and Microsoft Entra hybrid joined devices. For personal devices registered with Microsoft Entra ID, the PRT is initially obtained upon *Add Work or School Account*. For a personal device, the account to unlock the device isn't the work account, but a consumer account referred to as *Microsoft account*.
 
-The PRT is needed for SSO. Without it, users would be prompted for credentials every time they access applications. The PRT also contains information about the device. If you have any [device-based conditional access](/azure/active-directory/conditional-access/concept-conditional-access-grant) policies set on an application, without the PRT access is denied.
+The PRT is needed for SSO. Without it, users would be prompted for credentials every time they access applications. The PRT also contains information about the device. If you have any [device-based conditional access][ENTRA-3] policies set on an application, without the PRT access is denied.
 
 > [!TIP]
 > The Windows Hello for Business key meets Microsoft Entra multifactor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources.
 >
-> For more information, see [What is a Primary Refresh Token](/azure/active-directory/devices/concept-primary-refresh-token#when-does-a-prt-get-an-mfa-claim).
+> For more information, see [What is a Primary Refresh Token][ENTRA-2].
 
 ### Windows Hello for Business and password changes
 
@@ -217,7 +215,11 @@ Changing a user account password doesn't affect sign-in or unlock, since Windows
 >
 > [Plan a Windows Hello for Business Deployment](deploy/index.md)
 
-
 <!--links-->
 
-[ENTRA-1]: entra/identity/devices/overview
+[ENTRA-1]: /entra/identity/devices/overview
+[ENTRA-2]: /entra/identity/devices/concept-primary-refresh-token
+[ENTRA-3]: /entra/identity/conditional-access/concept-conditional-access-grant
+[ENTRA-4]: /entra/identity/devices/device-registration-how-it-works
+
+[WEB-1]: https://openid.net/specs/draft-jones-json-web-token-07.html
