@@ -1,7 +1,7 @@
 ---
 title: How Windows Hello for Business works
 description: Learn how Windows Hello for Business works, and how it can help you protect your organization.
-ms.date: 01/03/2024
+ms.date: 01/09/2024
 ms.topic: concept-article
 ---
 
@@ -119,27 +119,26 @@ The first step in the usage of Windows Hello is setting up a *container*. A Wind
 
 Here are the steps involved with the provisioning phase:
 
+1. In the CXH window, the user is prompted to authenticate to the IdP with MFA
+1. After successful MFA, the user must provide a bio gesture (if available), and a PIN
+1. After the PIN confirmation, the Windows Hello container is created
+1. A public/private key pair is generated. The key pair is bound to the Trusted Platform Module (TPM), if available, or in software
+1. The private key is stored locally and protected by the TPM, and can't be exported
+1. The public key is registered with the IdP, mapped to the user account
+  1. The Device Registration Service writes the key to the user object in Microsoft Entra ID
+  1. For on-premises scenarios, AD FS writes the key is written to Active Directory
+
+The following video shows the Windows Hello for Business enrollment steps after signing in with a password:
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7 alt-text="Video showing the Windows Hello for Business enrollment steps after signing in with a password."]
+
+For more information and detailed sequence diagrams, see [how provisioning works](how-it-works-provisioning.md).
+
+### Windows Hello container details
+
 :::row:::
     :::column:::
-    1. In the CXH window, the user is prompted to authenticate to the IdP with MFA
-    1. After successful MFA, the user must provide a bio gesture (if available), and a PIN
-    1. After the PIN confirmation, the Windows Hello container is created
-    1. A public/private key pair is generated. The key pair is bound to the Trusted Platform Module (TPM), if available, or in software
-    1. The private key is stored locally and protected by the TPM, and can't be exported
-    1. The public key is registered with the IdP, mapped to the user account
-      1. The Device Registration Service writes the key to the user object in Microsoft Entra ID
-      1. For on-premises scenarios, AD FS writes the key is written to Active Directory
-    :::column-end:::
-    :::column:::
-        > [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7 alt-text="Video showing the Windows Hello for Business enrollment steps after signing in with a password."]
-    :::column-end:::
-:::row-end:::
-
-### Key registration details
-
-:::row:::
-    :::column:::
-        Windows Hello generates a new public-private key pair on the device. The TPM generates and protects the private key. If the device doesn't have a TPM, the private key is encrypted and stored in software. This initial key is referred to as the *protector key*. The protector key is associated with a single gesture: if a user registers a PIN, a fingerprint, and a face on the same device, each of those gestures has a unique protector key. The protector key securely wraps the *authentication key*. The container has only one authentication key, but there can be multiple copies of that key wrapped with different unique protector keys.
+        During the provisioning phase, Windows Hello generates a new public-private key pair on the device. The TPM generates and protects the private key. If the device doesn't have a TPM, the private key is encrypted and stored in software. This initial key is referred to as the *protector key*. The protector key is associated with a single gesture: if a user registers a PIN, a fingerprint, and a face on the same device, each of those gestures has a unique protector key. The protector key securely wraps the *authentication key*. The container has only one authentication key, but there can be multiple copies of that key wrapped with different unique protector keys.
     :::column-end:::
     :::column:::
         :::image type="content" source="images/howitworks/hello-container.png" alt-text="Diagram of the Windows Hello container." border="false":::
@@ -153,9 +152,7 @@ Personal (Microsoft account) and Work or School (Active Directory or Microsoft E
 
 Windows Hello also generates an *administrative key*. The administrative key can be used to reset credentials when necessary. For example, when using the [PIN reset service](pin-reset.md). In addition to the protector key, TPM-enabled devices generate a block of data that contains attestations from the TPM.
 
-Access to these keys, and obtaining a signature to validate user possession of the private key, is enabled only by the PIN or biometric gesture. The two-step verification that takes place during Windows Hello enrollment creates a trusted relationship between the IdP and the user when the public portion of the public/private key pair is sent to an identity provider and associated with a user account. When a user enters the gesture on the device, the identity provider knows that it's a verified identity, because of the combination of Windows Hello keys and gestures. It then provides an authentication token that allows Windows to access resources and services.
-
-For more information and detailed sequence diagrams, see [how provisioning works](how-it-works-provisioning.md).
+Access to the key material stored in the container, and obtaining a signature to validate user possession of the private key, is enabled only by the PIN or biometric gesture. The two-step verification that takes place during provisioning creates a trusted relationship between the IdP and the user. This happens when the public portion of the public/private key pair is sent to an identity provider and associated with the user account. When a user enters the gesture on the device, the identity provider knows that it's a verified identity, because of the combination of Windows Hello keys and gestures. It then provides an authentication token that allows Windows to access resources and services.
 
 To learn more how Windows uses the TPM in support of Windows Hello for Business, see [How Windows uses the Trusted Platform Module](../../hardware-security/tpm/how-windows-uses-the-tpm.md).
 
@@ -170,9 +167,9 @@ The biometric data used to support Windows Hello is stored on the local device o
 
 ## Key synchronization
 
-Key synchronization is required in hybrid environments. After the user provisions a Windows Hello for Business credential, the key must sync from Microsoft Entra ID to Active Directory.
+Key synchronization is required in hybrid environments. After the user provisions a Windows Hello for Business credential, the key must synchronize from Microsoft Entra ID to Active Directory.
 
-The user's public key is written to the `msDS-KeyCredentialLink` attribute of the user object. The synchronization is handled by Microsoft Entra Connect Sync.
+The user's public key is written to the `msDS-KeyCredentialLink` attribute of the user object in Active Directory. The synchronization is handled by Microsoft Entra Connect Sync.
 
 ## Certificate enrollment
 
@@ -188,11 +185,11 @@ Authentication is the two-factor authentication with the combination of:
   - something that the person knows (a PIN) or
   - something that the person is (biometrics)
 
-PIN entry and biometric gesture both trigger Windows to use the private key to cryptographically sign data that is sent to the identity provider. The identity provider verifies the user's identity and authenticates the user.
+PIN entry and biometric gesture both trigger Windows to use the private key to cryptographically sign data that is sent to the identity provider. The IdP verifies the user's identity and authenticates the user.
 
 The PIN or the private portion of the credential are never sent to the IdP, and the PIN isn't stored on the device. The PIN and bio gestures are *user-provided entropy* when performing operations that use the private portion of the credential.
 
-When a user wants to access protected key material, the authentication process begins with the user entering a PIN or biometric gesture to unlock the device, a process sometimes called *releasing the key*. Think of it like using a physical key to unlock a door: before you can unlock the door, you need to remove the key from your pocket or purse. The user's PIN unlocks the protector key for the container on the device. When that container is unlocked, applications (and thus the user) can use whatever IDP keys reside inside the container.
+When a user wants to access protected key material, the authentication process begins with the user entering a PIN or biometric gesture to unlock the device, a process sometimes called *releasing the key*. Think of it like using a physical key to unlock a door: before you can unlock the door, you need to remove the key from your pocket or purse. The user's PIN unlocks the protector key for the container on the device. When that container is unlocked, applications (and thus the user) can use whatever IdP keys reside inside the container.
 
 These keys are used to sign requests that are sent to the IdP, requesting access to specified resources.
 
@@ -205,14 +202,14 @@ For more information and detailed sequence diagrams, see [how authentication wor
 
 Single sign-on (SSO) relies on special tokens obtained to access specific applications. In the traditional Windows Integrated authentication case using Kerberos, the token is a Kerberos TGT (ticket-granting ticket). For Microsoft Entra ID and AD FS applications, this token is a *primary refresh token* (PRT). It's a [JSON Web Token][WEB-1] that contains claims about both the user and the device.
 
-The PRT is initially obtained during sign-in or unlock in a similar way the Kerberos TGT is obtained. This behavior is true for both Microsoft Entra joined and Microsoft Entra hybrid joined devices. For personal devices registered with Microsoft Entra ID, the PRT is initially obtained upon *Add Work or School Account*. For a personal device, the account to unlock the device isn't the work account, but a consumer account referred to as *Microsoft account*.
+The PRT is initially obtained during sign-in or unlock in a similar way the Kerberos TGT is obtained. This behavior is true for both Microsoft Entra joined and Microsoft Entra hybrid joined devices. For personal devices registered with Microsoft Entra ID, the PRT is initially obtained upon *Add Work or School Account*. For a personal device, the account to unlock the device isn't the work account, but a consumer account (*Microsoft account*).
 
 The PRT is needed for SSO. Without it, users would be prompted for credentials every time they access applications. The PRT also contains information about the device. If you have any [device-based conditional access][ENTRA-3] policies set on an application, without the PRT access is denied.
 
 > [!TIP]
 > The Windows Hello for Business key meets Microsoft Entra multifactor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources.
->
-> For more information, see [What is a Primary Refresh Token][ENTRA-2].
+
+For more information, see [What is a Primary Refresh Token][ENTRA-2].
 
 ### Windows Hello for Business and password changes
 
@@ -221,9 +218,7 @@ Changing a user account password doesn't affect sign-in or unlock, since Windows
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Whether you have have a cloud-only deployment, hybrid, or on-premises, Windows Hello for Business has a deployment option for you.
->
-> To learn more, see:
+> To accommodate the multitude of organization needs and requirements, Windows Hello for Business offers different deployment options. To learn how to plan a Windows Hello for Business deployment, see:
 >
 > [Plan a Windows Hello for Business Deployment](deploy/index.md)
 
