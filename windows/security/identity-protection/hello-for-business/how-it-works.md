@@ -34,7 +34,7 @@ Windows Hello for Business is a distributed system that requires multiple techno
 :::row-end:::
 :::row:::
     :::column span="1":::
-    :::image type="content" source="images/howitworks/provisioning.png" alt-text="Icon representing the provisioning phase." border="false":::
+    :::image type="content" source="images/howitworks/provision.png" alt-text="Icon representing the provisioning phase." border="false":::
     :::column-end:::
     :::column span="3":::
     During this phase, the user authenticates using one form of authentication (typically, username/password) to request a new Windows Hello for Business credential. The provisioning flow requires a second factor of authentication before it can create a strong, two-factor Windows Hello for Business credential.
@@ -105,28 +105,31 @@ For more information and detailed sequence diagrams, see [how device registratio
 
 ## Provisioning
 
-The first step in the usage of Windows Hello is setting up a *container*. This is called the *provisioning* step.
+The first step in the usage of Windows Hello is setting up a *container*. This is called the *provisioning* phase. In the context of Windows Hello for Business, a container is a logical grouping of *key material* or data. Windows Hello uses a single container that holds user key material for personal accounts (including key material associated with the user's Microsoft account or with other consumer identity providers), and credentials associated with an organization's account. The container holds organization's credentials only on devices that are *registered* with the organization.
 
-Windows Hello provisioning is triggered once device registration completes, and after the device receives a policy that enables Windows Hello. A Cloud Experience Host (CXH) window is launched to take the user through the Windows Hello provisioning flow.
+> [!NOTE]
+> There are no physical containers on disk, in the registry, or elsewhere. Containers are logical units used to group related items. The keys, certificates, and credentials that Windows Hello stores, are protected without the creation of actual containers or folders.
 
-The IdP validates the user identity and maps the Windows Hello public key to a user account during the registration step.
+Windows Hello provisioning is triggered once device registration completes, and after the device receives a policy that enables Windows Hello. If all the prerequisites are met, a Cloud Experience Host (CXH) window is launched to take the user through the Windows Hello provisioning flow.
 
-The provisioning phase begins 
+> [!NOTE]
+> The list of prerequisites varies depending on the deployment type.
 
-1. When the policy is received, if all the prerequisites are met, the user is prompted to use Windows Hello
-   > [!NOTE]
-   > The list of prerequisites varies depending on the deployment type.
+:::image type="content" source="images/howitworks/cxh-provision.png" alt-text="Screenshot of the Cloud Experience Host prompting the user to provision Windows Hello." border="false":::
+
 1. The user *enrolls* in Windows Hello by authenticating to the IdP with MFA
-1. After successful MFA, the user must provide a bio gesture (if available) and PIN, which trigger a key pair generation and registration with the IdP
+1. After successful MFA, the user must provide a bio gesture (if available) and PIN, which trigger the creation of the Windows Hello container. A public/private key pair is generated and the public key is registered with the IdP.
 
 ### Key registration
+
+The IdP validates the user identity and maps the Windows Hello public key to a user account during the registration step.
 
 :::row:::
     :::column:::
         Windows Hello generates a new public-private key pair on the device. The TPM generates and protects the private key. If the device doesn't have a TPM, the private key is encrypted and stored in software. This initial key is referred to as the *protector key*. The protector key is associated with a single gesture: if a user registers a PIN, a fingerprint, and a face on the same device, each of those gestures has a unique protector key. The protector key securely wraps the *authentication key*. The container has only one authentication key, but there can be multiple copies of that key wrapped with different unique protector keys.
     :::column-end:::
     :::column:::
-        :::image type="content" source="images/hello-container.png" alt-text="Diagram of the Windows Hello container." lightbox="images/hello-container.png" border="false":::
+        :::image type="content" source="images/howitworks/hello-container.png" alt-text="Diagram of the Windows Hello container." lightbox="images/hello-container.png" border="false":::
     :::column-end:::
 :::row-end:::
 

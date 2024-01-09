@@ -30,7 +30,7 @@ sections:
           > There are no physical containers on disk, in the registry, or elsewhere. Containers are logical units used to group related items. The keys, certificates, and credentials that Windows Hello stores, are protected without the creation of actual containers or folders.
 
           The container contains a set of keys, some of which are used to protect other keys. The following image illustrates an example: the *protector key* is used to encrypt the *authentication key*, and the authentication key is used to encrypt the individual keys stored in the container. Each logical container holds one or more sets of keys.\
-          :::image type="content" source="images/hello-container.png" alt-text="logical container with set of keys":::
+          :::image type="content" source="images/howitworks/hello-container.png" alt-text="logical container with set of keys" border="false":::
 
           Containers can contain several types of key material:
             - An authentication key, which is always an asymmetric public-private key pair. This key pair is generated during registration. It must be unlocked each time it's accessed, by using either the user's PIN or a biometric gesture. The authentication key exists until the user resets the PIN, at which time a new key will be generated. When the new key is generated, all the key material that the old key previously protected must be decrypted and re-encrypted using the new key.
