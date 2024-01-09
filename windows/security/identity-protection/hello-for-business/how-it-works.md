@@ -16,7 +16,7 @@ Windows Hello for Business is a distributed system that requires multiple techno
 
 :::row:::
     :::column span="":::
-    **1. Device Registration**
+    #### 1. Device Registration
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -31,7 +31,7 @@ Windows Hello for Business is a distributed system that requires multiple techno
 :::row-end:::
 :::row:::
     :::column span="":::
-    **2. Provisioning**
+    #### 2. Provisioning
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -44,7 +44,7 @@ Windows Hello for Business is a distributed system that requires multiple techno
 :::row-end:::
 :::row:::
     :::column span="":::
-    **3. Key synchronization**
+    #### 3. Key synchronization
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -57,7 +57,7 @@ Windows Hello for Business is a distributed system that requires multiple techno
 :::row-end:::
 :::row:::
     :::column span="":::
-    **4. Certificate enrollment**
+    #### 4. Certificate enrollment
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -70,7 +70,7 @@ Windows Hello for Business is a distributed system that requires multiple techno
 :::row-end:::
 :::row:::
     :::column span="":::
-    **5. Authentication**
+    #### 5. Authentication
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -110,7 +110,7 @@ The first step in the usage of Windows Hello is setting up a *container*. A Wind
     Windows Hello provisioning is triggered once device registration completes, and after the device receives a policy that enables Windows Hello. If all the prerequisites are met, a Cloud eXperience Host (CXH) window is launched to take the user through the Windows Hello provisioning flow.
     :::column-end:::
     :::column:::
-    :::image type="content" source="images/howitworks/cxh-provision.png" alt-text="Screenshot of the Cloud Experience Host prompting the user to provision Windows Hello." border="false":::
+    :::image type="content" source="images/howitworks/cxh-provision.png" alt-text="Screenshot of the Cloud Experience Host prompting the user to provision Windows Hello." border="false" lightbox="images/howitworks/cxh-provision.png":::
     :::column-end:::
 :::row-end:::
 
