@@ -7,7 +7,9 @@ ms.topic: concept-article
 
 # How Windows Hello for Business works
 
-Windows Hello for Business is a distributed system that requires multiple technologies to work together. To simplify the explanation of how Windows Hello for Business works, let's break it down into five phases. Two of these phases are required only for certain deployment scenarios.
+Windows Hello for Business is a distributed system that requires multiple technologies to work together. To simplify the explanation of how Windows Hello for Business works, let's break it down into five phases, which represent the chronological order of the deployment process.
+
+Two of these phases are required only for certain deployment scenarios.
 
 > [!NOTE]
 > The deployment scenarios are described in the article: [Plan a Windows Hello for Business deployment](deploy/index.md).
@@ -38,11 +40,6 @@ Windows Hello for Business is a distributed system that requires multiple techno
     :::column-end:::
     :::column span="3":::
     During this phase, the user authenticates using one form of authentication (typically, username/password) to request a new Windows Hello for Business credential. The provisioning flow requires a second factor of authentication before it can create a strong, two-factor Windows Hello for Business credential.
-
-    After multi-factor authentication (MFA), the provisioning process:
-
-    1. **Generates a key pair** bound to the Trusted Platform Module (TPM), if available, or in software. The private key is stored locally and protected by the TPM, and can't be exported
-    1. **Registers the public key** with the IdP, mapped to the user account
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -120,6 +117,11 @@ Windows Hello provisioning is triggered once device registration completes, and 
 1. The user *enrolls* in Windows Hello by authenticating to the IdP with MFA
 1. After successful MFA, the user must provide a bio gesture (if available) and PIN, which trigger the creation of the Windows Hello container. A public/private key pair is generated and the public key is registered with the IdP.
 
+ After multi-factor authentication (MFA), the provisioning process:
+
+    1. **Generates a key pair** bound to the Trusted Platform Module (TPM), if available, or in software. The private key is stored locally and protected by the TPM, and can't be exported
+    1. **Registers the public key** with the IdP, mapped to the user account
+
 ### Key registration
 
 The IdP validates the user identity and maps the Windows Hello public key to a user account during the registration step.
@@ -158,13 +160,13 @@ The biometric data used to support Windows Hello is stored on the local device o
 >
 >Some fingerprint sensors have the capability to complete matching on the fingerprint sensor module instead of in the OS. These sensors store biometric data on the fingerprint module instead of in the database file.
 
-## Key synchronization (optional)
+## Key synchronization
 
 Key synchronization is required in hybrid environments. After the user provisions a Windows Hello for Business credential, the key must sync from Microsoft Entra ID to Active Directory.
 
 The user's public key is written to the `msDS-KeyCredentialLink` attribute of the user object. The synchronization is handled by Microsoft Entra Connect Sync.
 
-## Certificate enrollment (optional)
+## Certificate enrollment
 
 For certificate deployments, after registering the key, the client generates a cetificate request. The request is sent to the Certificate Registration Authority (CRA). The CRA is on the Active Directory Federation Services (AD FS) server, which validates the certificate request and fulfills it using the enterprise PKI.
 

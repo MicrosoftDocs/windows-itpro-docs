@@ -64,6 +64,8 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 
 ![Microsoft Entra hybrid join authentication using Microsoft Entra Kerberos](images/howitworks/auth-haadj-cloudtrust.png)
 
+![Microsoft Entra hybrid join authentication using Microsoft Entra Kerberos](images/howitworks/auth-haadj-cloudtrust.svg)
+
 | Phase  | Description  |
 | :----: | :----------- |
 |A | Authentication begins when the user dismisses the lock screen, which triggers Winlogon to show the Windows Hello for Business credential provider.  The user provides their Windows Hello gesture (PIN or biometrics).  The credential provider packages these credentials and returns them to Winlogon.  Winlogon passes the collected credentials to lsass. Lsass queries Windows Hello for Business policy to check if cloud Kerberos trust is enabled. If cloud Kerberos trust is enabled, Lsass passes the collected credentials to the Cloud Authentication security support provider, or Cloud AP. Cloud AP requests a nonce from Microsoft Entra ID. Microsoft Entra ID returns a nonce.
