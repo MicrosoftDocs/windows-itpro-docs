@@ -1,11 +1,12 @@
 ---
 title: Exclude Files and Settings
 description: In this article, learn how to exclude files and settings when creating a custom .xml file and a Config.xml file.
+ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/03/2024
+ms.date: 01/09/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:

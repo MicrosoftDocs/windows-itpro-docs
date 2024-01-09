@@ -1,11 +1,12 @@
 ---
 title: Conflicts and Precedence
 description: In this article, learn how User State Migration Tool (USMT) deals with conflicts and precedence.
+ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/03/2024
+ms.date: 01/09/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:

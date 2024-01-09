@@ -1,11 +1,12 @@
 ---
 title: XML Elements Library
 description: Learn about the XML elements and helper functions that can be employed to author migration .xml files to use with User State Migration Tool (USMT).
+ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/03/2024
+ms.date: 01/09/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:
