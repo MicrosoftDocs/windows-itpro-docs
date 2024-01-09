@@ -129,7 +129,7 @@ The IdP validates the user identity and maps the Windows Hello public key to a u
         Windows Hello generates a new public-private key pair on the device. The TPM generates and protects the private key. If the device doesn't have a TPM, the private key is encrypted and stored in software. This initial key is referred to as the *protector key*. The protector key is associated with a single gesture: if a user registers a PIN, a fingerprint, and a face on the same device, each of those gestures has a unique protector key. The protector key securely wraps the *authentication key*. The container has only one authentication key, but there can be multiple copies of that key wrapped with different unique protector keys.
     :::column-end:::
     :::column:::
-        :::image type="content" source="images/howitworks/hello-container.png" alt-text="Diagram of the Windows Hello container." lightbox="images/hello-container.png" border="false":::
+        :::image type="content" source="images/howitworks/hello-container.png" alt-text="Diagram of the Windows Hello container." border="false":::
     :::column-end:::
 :::row-end:::
 
@@ -166,7 +166,7 @@ The user's public key is written to the `msDS-KeyCredentialLink` attribute of th
 
 ## Certificate enrollment (optional)
 
-For certificate deployments, after registering the key, the client generates a cetificate request. The request is sent to the Certificate Registration Authority (AD FS). AD FS validates the certificate request and fulfills the request using the enterprise PKI.
+For certificate deployments, after registering the key, the client generates a cetificate request. The request is sent to the Certificate Registration Authority (CRA). The CRA is on the Active Directory Federation Services (AD FS) server, which validates the certificate request and fulfills it using the enterprise PKI.
 
 ## Authentication
 
