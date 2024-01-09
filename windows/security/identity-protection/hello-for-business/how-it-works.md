@@ -105,23 +105,35 @@ The first step in the usage of Windows Hello is setting up a *container*. A Wind
 > [!NOTE]
 > There are no physical containers on disk, in the registry, or elsewhere. Containers are logical units used to group related items. The keys, certificates, and credentials that Windows Hello stores, are protected without the creation of actual containers or folders.
 
-Windows Hello provisioning is triggered once device registration completes, and after the device receives a policy that enables Windows Hello. If all the prerequisites are met, a Cloud eXperience Host (CXH) window is launched to take the user through the Windows Hello provisioning flow.
+:::row:::
+    :::column:::
+    Windows Hello provisioning is triggered once device registration completes, and after the device receives a policy that enables Windows Hello. If all the prerequisites are met, a Cloud eXperience Host (CXH) window is launched to take the user through the Windows Hello provisioning flow.
+    :::column-end:::
+    :::column:::
+    :::image type="content" source="images/howitworks/cxh-provision.png" alt-text="Screenshot of the Cloud Experience Host prompting the user to provision Windows Hello." border="false":::
+    :::column-end:::
+:::row-end:::
 
 > [!NOTE]
 > The list of prerequisites varies depending on the deployment type, as described in the article [Plan a Windows Hello for Business deployment](deploy/index.md).
 
-:::image type="content" source="images/howitworks/cxh-provision.png" alt-text="Screenshot of the Cloud Experience Host prompting the user to provision Windows Hello." border="false":::
-
 Here are the steps involved with the provisioning phase:
 
-1. In the CXH window, the user is prompted to authenticate to the IdP with MFA
-1. After successful MFA, the user must provide a bio gesture (if available), and a PIN
-1. After the PIN confirmation, the Windows Hello container is created
-1. A public/private key pair is generated. The key pair is bound to the Trusted Platform Module (TPM), if available, or in software
-1. The private key is stored locally and protected by the TPM, and can't be exported
-1. The public key is registered with the IdP, mapped to the user account
-    1. The Device Registration Service writes the key to the user object in Microsoft Entra ID
-    1. For on-premises scenarios, AD FS writes the key is written to Active Directory
+:::row:::
+    :::column:::
+    1. In the CXH window, the user is prompted to authenticate to the IdP with MFA
+    1. After successful MFA, the user must provide a bio gesture (if available), and a PIN
+    1. After the PIN confirmation, the Windows Hello container is created
+    1. A public/private key pair is generated. The key pair is bound to the Trusted Platform Module (TPM), if available, or in software
+    1. The private key is stored locally and protected by the TPM, and can't be exported
+    1. The public key is registered with the IdP, mapped to the user account
+      1. The Device Registration Service writes the key to the user object in Microsoft Entra ID
+      1. For on-premises scenarios, AD FS writes the key is written to Active Directory
+    :::column-end:::
+    :::column:::
+        > [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7 alt-text="Video showing the Windows Hello for Business enrollment steps after signing in with a password."]
+    :::column-end:::
+:::row-end:::
 
 ### Key registration details
 
