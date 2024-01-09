@@ -1,11 +1,12 @@
 ---
 title: User State Migration Tool (USMT) Troubleshooting
 description: Learn about articles that address common User State Migration Tool (USMT) issues and questions to help troubleshooting.
+ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/03/2024
+ms.date: 01/09/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:

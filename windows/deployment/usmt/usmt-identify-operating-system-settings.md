@@ -1,11 +1,12 @@
 ---
 title: Identify Operating System Settings
 description: Identify which system settings need to be migrated. The User State Migration Tool (USMT) can then be used to select settings and keep the default values for all others.
+ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/03/2024
+ms.date: 01/09/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:
