@@ -154,6 +154,13 @@ Windows Hello also generates an *administrative key*. The administrative key can
 
 Access to the key material stored in the container, and obtaining a signature to validate user possession of the private key, is enabled only by the PIN or biometric gesture. The two-step verification that takes place during provisioning creates a trusted relationship between the IdP and the user. This happens when the public portion of the public/private key pair is sent to an identity provider and associated with the user account. When a user enters the gesture on the device, the identity provider knows that it's a verified identity, because of the combination of Windows Hello keys and gestures. It then provides an authentication token that allows Windows to access resources and services.
 
+A container can contain several types of key material:
+
+- An *authentication key*, which is always an asymmetric public-private key pair. This key pair is generated during registration. It must be unlocked each time it's accessed, by using either the user's PIN or a biometric gesture. The authentication key exists until the user resets the PIN, at which time a new key will be generated. When the new key is generated, all the key material that the old key previously protected must be decrypted and re-encrypted using the new key
+- The *IdP key*. These keys can be either symmetric or asymmetric, depending on which IdP you use. A single container may contain zero or more IdP keys, with some restrictions (for example, the enterprise container can contain zero or one IdP key). IdP keys are stored in the container. For certificate-based Windows Hello for Work, when the container is unlocked, applications that require access to the IdP key or key pair can request access. IdP keys are used to sign or encrypt authentication requests or tokens sent from this device to the IDP. IdP keys are typically long-lived but could have a shorter lifetime than the authentication key. Microsoft accounts, Active Directory accounts, and Microsoft Entra accounts all require the use of asymmetric key pairs. The device generates public and private keys, registers the public key with the IdP (which stores it for later verification), and securely stores the private key. For enterprises, the IdP keys can be generated in two ways:
+  - The IdP key pair can be associated with an enterprise Certificate Authority (CA) through the Windows Network Device Enrollment Service (NDES). In this case, Windows Hello requests a new certificate with the same key as the certificate from the existing PKI. This option lets organizations that have an existing PKI continue to use it where appropriate. Given that many applications, such as VPN solutions, require the use of certificates, when you deploy Windows Hello in this mode, it allows a faster transition away from user passwords while still preserving certificate-based functionality. This option also allows the enterprise to store additional certificates in the protected container. For example, an enterprise might want to store a certificate that allows the user to authenticate via RDP.
+  - The IdP can generate the IdP key pair directly, which allows quick, lower-overhead deployment of Windows Hello in environments that don't have or need a PKI.
+
 To learn more how Windows uses the TPM in support of Windows Hello for Business, see [How Windows uses the Trusted Platform Module](../../hardware-security/tpm/how-windows-uses-the-tpm.md).
 
 ### Windows Hello data storage
@@ -218,7 +225,7 @@ Changing a user account password doesn't affect sign-in or unlock, since Windows
 ## Next steps
 
 > [!div class="nextstepaction"]
-> To accommodate the multitude of organization needs and requirements, Windows Hello for Business offers different deployment options. To learn how to plan a Windows Hello for Business deployment, see:
+> To accommodate the multitude of organizations needs and requirements, Windows Hello for Business offers different deployment options. To learn how to plan a Windows Hello for Business deployment, see:
 >
 > [Plan a Windows Hello for Business Deployment](deploy/index.md)
 
