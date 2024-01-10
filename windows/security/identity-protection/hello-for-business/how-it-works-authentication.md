@@ -12,7 +12,9 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 
 ## Microsoft Entra join authentication to Microsoft Entra ID
 
-![Microsoft Entra join authentication to Microsoft Entra ID.](images/howitworks/auth-aadj-cloud.png)
+![Microsoft Entra join authentication to Microsoft Entra ID.](images/howitworks/auth/auth-aadj-cloud.png)
+
+:::image type="content" source="images/howitworks/auth/entra-join-entra.svg" alt-text="Diagram of a Microsoft Entra join device authenticating to Microsoft Entra ID." lightbox="images/howitworks/auth/entra-join-entra.svg" border="false":::
 
 > [!NOTE]
 > All Microsoft Entra joined devices authenticate with Windows Hello for Business to Microsoft Entra ID the same way. The Windows Hello for Business trust type only impacts how the device authenticates to on-premises AD.
@@ -27,7 +29,9 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 
 ## Microsoft Entra join authentication to Active Directory using cloud Kerberos trust
 
-![Microsoft Entra join authentication to Active Directory.](images/howitworks/auth-aadj-cloudtrust-kerb.png)
+![Microsoft Entra join authentication to Active Directory.](images/howitworks/auth/auth-aadj-cloudtrust-kerb.png)
+
+:::image type="content" source="images/howitworks/auth/entra-join-ad-ckt.svg" alt-text="Diagram of a Microsoft Entra join device authenticating to Active Directory using cloud Kerberos trust." lightbox="images/howitworks/auth/entra-join-ad-ckt.svg" border="false":::
 
 | Phase  | Description  |
 | :----: | :----------- |
@@ -36,7 +40,9 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 
 ## Microsoft Entra join authentication to Active Directory using a key
 
-![Microsoft Entra join authentication to Active Directory using a Key.](images/howitworks/auth-aadj-keytrust-kerb.png)
+![Microsoft Entra join authentication to Active Directory using a Key.](images/howitworks/auth/auth-aadj-keytrust-kerb.png)
+
+:::image type="content" source="images/howitworks/auth/entra-join-ad-kt.svg" alt-text="Diagram of a Microsoft Entra join device authenticating to Active Directory using key trust." lightbox="images/howitworks/auth/entra-join-ad-kt.svg" border="false":::
 
 | Phase  | Description  |
 | :----: | :----------- |
@@ -49,7 +55,9 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 
 ## Microsoft Entra join authentication to Active Directory using a certificate
 
-![Microsoft Entra join authentication to Active Directory using a Certificate.](images/howitworks/auth-aadj-certtrust-kerb.png)
+![Microsoft Entra join authentication to Active Directory using a Certificate.](images/howitworks/auth/auth-aadj-certtrust-kerb.png)
+
+:::image type="content" source="images/howitworks/auth/entra-join-ad-ct.svg" alt-text="Diagram of a Microsoft Entra join device authenticating to Active Directory using certificate trust." lightbox="images/howitworks/auth/entra-join-ad-ct.svg" border="false":::
 
 | Phase  | Description  |
 | :----: | :----------- |
@@ -62,7 +70,7 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 
 ## Microsoft Entra hybrid join authentication using cloud Kerberos trust
 
-![Microsoft Entra hybrid join authentication using Microsoft Entra Kerberos](images/howitworks/auth-haadj-cloudtrust.svg)
+:::image type="content" source="images/howitworks/auth/hybrid-entra-join-ckt.svg" alt-text="Diagram of a Microsoft Entra hybrid join device authenticating to Active Directory using cloud Kerberos trust." lightbox="images/howitworks/auth/hybrid-entra-join-ckt.svg" border="false":::
 
 | Phase  | Description  |
 | :----: | :----------- |
@@ -74,7 +82,9 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 
 ## Microsoft Entra hybrid join authentication using a key
 
-![Microsoft Entra hybrid join authentication using a key.](images/howitworks/auth-haadj-keytrust.png)
+![Microsoft Entra hybrid join authentication using a key.](images/howitworks/auth/auth-haadj-keytrust.png)
+
+:::image type="content" source="images/howitworks/auth/hybrid-entra-join-kt.svg" alt-text="Diagram of a Microsoft Entra hybrid join device authenticating to Active Directory using key trust." lightbox="images/howitworks/auth/hybrid-entra-join-kt.svg" border="false":::
 
 | Phase  | Description  |
 | :----: | :----------- |
@@ -91,7 +101,9 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 
 ## Microsoft Entra hybrid join authentication using a certificate
 
-![Microsoft Entra hybrid join authentication using a Certificate.](images/howitworks/auth-haadj-certtrust.png)
+![Microsoft Entra hybrid join authentication using a Certificate.](images/howitworks/auth/auth-haadj-certtrust.png)
+
+:::image type="content" source="images/howitworks/auth/hybrid-entra-join-ct.svg" alt-text="Diagram of a Microsoft Entra hybrid join device authenticating to Active Directory using certificate trust." lightbox="images/howitworks/auth/hybrid-entra-join-ct.svg" border="false":::
 
 | Phase  | Description  |
 | :----: | :----------- |

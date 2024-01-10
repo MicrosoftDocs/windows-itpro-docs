@@ -155,14 +155,14 @@ Windows Hello can also be used as a FIDO2 authenticator to authenticate to any w
 
 To learn more how Windows uses the TPM in support of Windows Hello for Business, see [How Windows uses the Trusted Platform Module](../../hardware-security/tpm/how-windows-uses-the-tpm.md).
 
-### Windows Hello data storage
+### Biometric data storage
 
 The biometric data used to support Windows Hello is stored on the local device only. It doesn't roam and is never sent to external devices or servers. This separation helps to stop potential attackers by providing no single collection point that an attacker could potentially compromise to steal biometric data. Even if an attacker could obtain the biometric data from a device, it couldn't be converted back into a raw biometric sample recognizable by the biometric sensor.
 
+Each sensor has its own biometric database file where template data is stored (path `C:\WINDOWS\System32\WinBioDatabase`). Each database file has a unique, randomly generated key that is encrypted to the system. The template data for the sensor is encrypted with the per-database key using AES with CBC chaining mode. The hash is SHA256.
+
 > [!NOTE]
->Each sensor on a device has its own biometric database file where template data is stored (path `C:\WINDOWS\System32\WinBioDatabase`). Each database has a unique, randomly generated key that is encrypted to the system. The template data for the sensor is encrypted with the per-database key using AES with CBC chaining mode. The hash is SHA256.
->
->Some fingerprint sensors have the capability to complete matching on the fingerprint sensor module instead of in the OS. These sensors store biometric data on the fingerprint module instead of in the database file.
+>Some fingerprint sensors have the capability to complete matching on the fingerprint sensor module instead of in the OS. These sensors store biometric data on the fingerprint module instead of in the database file. For more information, see [Windows Hello Enhanced Security Sign-in (ESS)][WINH-1].
 
 ## Key synchronization
 
@@ -231,3 +231,4 @@ Changing a user account password doesn't affect sign-in or unlock, since Windows
 [ENTRA-4]: /entra/identity/devices/device-registration-how-it-works
 
 [WEB-1]: https://openid.net/specs/draft-jones-json-web-token-07.html
+[WINH-1]: /windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security

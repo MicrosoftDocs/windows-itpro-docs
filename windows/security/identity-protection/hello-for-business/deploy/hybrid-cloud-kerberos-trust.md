@@ -149,6 +149,12 @@ Once a user completes enrollment with cloud Kerberos trust, the Windows Hello ge
 
 After enrollment, Microsoft Entra Connect synchronizes the user's key from Microsoft Entra ID to Active Directory.
 
+### Sequence diagrams
+
+To better understand the provisioning and authentication flows, review the following sequence diagrams:
+
+ 
+
 ## Migrate from key trust deployment model to cloud Kerberos trust
 
 If you deployed Windows Hello for Business using the key trust model, and want to migrate to the cloud Kerberos trust model, follow these steps:
