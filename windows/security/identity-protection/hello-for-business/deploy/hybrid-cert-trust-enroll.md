@@ -120,6 +120,19 @@ The CA validates that the certificate is signed by the registration authority. O
 > [!NOTE]
 > Windows Server 2016 update [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889) provides synchronous certificate enrollment during hybrid certificate trust provisioning. With this update, users don't need to wait for Microsoft Entra Connect to sync their public key on-premises. Users enroll their certificate during provisioning and can use the certificate for sign-in immediately after completing the provisioning. The update needs to be installed on the federation servers.
 
+### Sequence diagrams
+
+To better understand the provisioning flows, review the following sequence diagrams based on the device join and authentication type:
+
+- [Microsoft Entra joined provisioning in a managed environment](../how-it-works-provisioning.md#microsoft-entra-joined-provisioning-in-a-managed-environment)
+- [Microsoft Entra joined provisioning in a federated environment](../how-it-works-provisioning.md#microsoft-entra-joined-provisioning-in-a-federated-environment)
+- [Microsoft Entra hybrid joined provisioning in a certificate trust deployment in a federated environment](../how-it-works-provisioning.md#microsoft-entra-hybrid-joined-provisioning-in-a-synchronous-certificate-trust-deployment-in-a-federated-environment)
+
+To better understand the authentication flows, review the following sequence diagram:
+
+- [Microsoft Entra join authentication to Active Directory using a certificate](../how-it-works-authentication.md#microsoft-entra-join-authentication-to-active-directory-using-a-certificate)
+- [Microsoft Entra hybrid join authentication using a certificate](../how-it-works-authentication.md#microsoft-entra-hybrid-join-authentication-using-a-certificate)
+
 <!--links-->
 
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd

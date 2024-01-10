@@ -69,5 +69,17 @@ This information is also available using the `dsregcmd.exe /status` command from
 
 [!INCLUDE [user-experience](includes/user-experience.md)]
 
+After a successful key registration, Windows creates a certificate request using the same key pair to request a certificate. Windows sends the certificate request to the AD FS server for certificate enrollment.
+
+The AD FS registration authority verifies the key used in the certificate request matches the key that was previously registered. On a successful match, the AD FS registration authority signs the certificate request using its enrollment agent certificate and sends it to the certificate authority.
+
+The CA validates that the certificate is signed by the registration authority. On successful validation, it issues a certificate based on the request and returns the certificate to the AD FS registration authority. The registration authority returns the certificate to Windows where it then installs the certificate in the current user's certificate store. Once this process completes, the Windows Hello for Business provisioning workflow informs the user that they can use their PIN to sign-in through the Action Center.
+
+### Sequence diagram
+
+To better understand the provisioning flows, review the following sequence diagram:
+
+- [Domain joined provisioning in an On-premises Certificate Trust deployment](../how-it-works-provisioning.md#domain-joined-provisioning-in-an-on-premises-certificate-trust-deployment)
+
 <!--links-->
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd

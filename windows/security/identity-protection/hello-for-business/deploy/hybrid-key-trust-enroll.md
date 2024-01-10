@@ -94,6 +94,19 @@ After enrollment, Microsoft Entra Connect synchronizes the user's key from Micro
 > **This synchronization latency delays the user's ability to authenticate and use on-premises resources until the user's public key has synchronized to Active Directory.** Once synchronized, the user can authenticate and access on-premises resources.
 > Read [Microsoft Entra Connect Sync: Scheduler][AZ-5] to view and adjust the **synchronization cycle** for your organization.
 
+### Sequence diagrams
+
+To better understand the provisioning flows, review the following sequence diagrams based on the device join and authentication type:
+
+- [Microsoft Entra joined provisioning in a managed environment](../how-it-works-provisioning.md#microsoft-entra-joined-provisioning-in-a-managed-environment)
+- [Microsoft Entra joined provisioning in a federated environment](../how-it-works-provisioning.md#microsoft-entra-joined-provisioning-in-a-federated-environment)
+- [Microsoft Entra hybrid joined provisioning in a key trust deployment in a managed environment](../how-it-works-provisioning.md#microsoft-entra-hybrid-joined-provisioning-in-a-key-trust-deployment-in-a-managed-environment)
+
+To better understand the authentication flows, review the following sequence diagram:
+
+- [Microsoft Entra hybrid join authentication using a key](../how-it-works-authentication.md#microsoft-entra-hybrid-join-authentication-using-a-key)
+- [Microsoft Entra join authentication to Active Directory using a key](../how-it-works-authentication.md#microsoft-entra-join-authentication-to-active-directory-using-a-key)
+
 <!--links-->
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
 [AZ-5]: /azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler
