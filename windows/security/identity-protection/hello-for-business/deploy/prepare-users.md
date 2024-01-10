@@ -1,16 +1,26 @@
 ---
 title: Prepare users to provision and use Windows Hello for Business
-description: Learn about the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of your infrastructure.
+description: Learn how to prepare users to enroll and to use Windows Hello for Business.
 ms.date: 01/02/2024
 ms.topic: overview
 ---
 
 # Prepare users to provision and use Windows Hello for Business
 
-Since provisioning of Windows Hello requires multi-factor authentication, ensure you have a solution in place for users to use MFA during the process. Depending on the hardware, users might be prompted to register their fingerprint or face.
+This article provides guidance on how to prepare users to enroll and to use Windows Hello for Business. It also provides guidance on how to communicate the benefits of Windows Hello for Business to users.
+
+## Multi-factor authentication
+
+The provisioning of Windows Hello requires users to authenticate with multi-factor (MFA). Ensure that you have a solution in place for users to use MFA during the process.
 
 > [!TIP]
 > To facilitate user communication and to ensure a successful Windows Hello for Business deployment, you can find customizable material (email templates, posters, trainings, etc.) at [Microsoft Entra templates](https://aka.ms/adminmails).
+
+## Biometric gestures
+
+Depending on the hardware, users might be prompted to register their fingerprint or face. Explain to users that for convenience, they should register their biometric gesture during the provisioning process. The biometric gesture can be used to unlock the device and to authenticate to resources that require Windows Hello for Business. Biometric gestures are valid only on the enrolled device and are not stored outside the device.
+
+## User experience
 
 The next video shows the Windows Hello for Business enrollment experience after a user signs in with a password:
 

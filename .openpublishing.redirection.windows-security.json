@@ -8217,7 +8217,7 @@
     },
     {
       "source_path": "windows/security/identity-protection/hello-for-business/hello-key-trust-validate-pki.md",
-      "redirect_url": "/windows/security/identity-protection/hello-for-business/deploy/on-premises-key-trust-pki",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/deploy/on-premises-key-trust",
       "redirect_document_id": false
     },
     {
@@ -8328,6 +8328,11 @@
     {
       "source_path": "windows/security/identity-protection/hello-for-business/hello-faq.yml",
       "redirect_url": "/windows/security/identity-protection/hello-for-business/faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/deploy/on-premises-key-trust-pki.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/deploy/on-premises-key-trust",
       "redirect_document_id": false
     }
   ]
