@@ -12,8 +12,6 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 
 ## Microsoft Entra join authentication to Microsoft Entra ID
 
-![Microsoft Entra join authentication to Microsoft Entra ID.](images/howitworks/auth/auth-aadj-cloud.png)
-
 :::image type="content" source="images/howitworks/auth/entra-join-entra.png" alt-text="Diagram of a Microsoft Entra join device authenticating to Microsoft Entra ID." lightbox="images/howitworks/auth/entra-join-entra.png" border="false":::
 
 > [!NOTE]
@@ -29,8 +27,6 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 
 ## Microsoft Entra join authentication to Active Directory using cloud Kerberos trust
 
-![Microsoft Entra join authentication to Active Directory.](images/howitworks/auth/auth-aadj-cloudtrust-kerb.png)
-
 :::image type="content" source="images/howitworks/auth/entra-join-ad-ckt.png" alt-text="Diagram of a Microsoft Entra join device authenticating to Active Directory using cloud Kerberos trust." lightbox="images/howitworks/auth/entra-join-ad-ckt.png" border="false":::
 
 | Phase  | Description  |
@@ -39,8 +35,6 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 |B | After locating a domain controller, the Kerberos provider sends a partial TGT that it received from Microsoft Entra ID from a previous Microsoft Entra authentication to the domain controller. The partial TGT contains only the user SID, and it's signed by Microsoft Entra Kerberos. The domain controller verifies that the partial TGT is valid. On success, the KDC returns a TGT to the client.|
 
 ## Microsoft Entra join authentication to Active Directory using a key
-
-![Microsoft Entra join authentication to Active Directory using a Key.](images/howitworks/auth/auth-aadj-keytrust-kerb.png)
 
 :::image type="content" source="images/howitworks/auth/entra-join-ad-kt.png" alt-text="Diagram of a Microsoft Entra join device authenticating to Active Directory using key trust." lightbox="images/howitworks/auth/entra-join-ad-kt.png" border="false":::
 
@@ -54,8 +48,6 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 > You might have an on-premises domain federated with Microsoft Entra ID. Once you have successfully provisioned Windows Hello for Business PIN/Bio on the Microsoft Entra joined device, any future login of Windows Hello for Business (PIN/Bio) sign-in will directly authenticate against Microsoft Entra ID to get PRT and trigger authenticate against your DC (if LOS to DC is available) to get Kerberos. It no longer uses AD FS to authenticate for Windows Hello for Business sign-ins.
 
 ## Microsoft Entra join authentication to Active Directory using a certificate
-
-![Microsoft Entra join authentication to Active Directory using a Certificate.](images/howitworks/auth/auth-aadj-certtrust-kerb.png)
 
 :::image type="content" source="images/howitworks/auth/entra-join-ad-ct.png" alt-text="Diagram of a Microsoft Entra join device authenticating to Active Directory using certificate trust." lightbox="images/howitworks/auth/entra-join-ad-ct.png" border="false":::
 
@@ -82,8 +74,6 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 
 ## Microsoft Entra hybrid join authentication using a key
 
-![Microsoft Entra hybrid join authentication using a key.](images/howitworks/auth/auth-haadj-keytrust.png)
-
 :::image type="content" source="images/howitworks/auth/hybrid-entra-join-kt.png" alt-text="Diagram of a Microsoft Entra hybrid join device authenticating to Active Directory using key trust." lightbox="images/howitworks/auth/hybrid-entra-join-kt.png" border="false":::
 
 | Phase  | Description  |
@@ -100,8 +90,6 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 > In the above deployment model, a newly provisioned user will not be able to sign in using Windows Hello for Business until (a) Microsoft Entra Connect successfully synchronizes the public key to the on-premises Active Directory and (b) device has line of sight to the domain controller for the first time.
 
 ## Microsoft Entra hybrid join authentication using a certificate
-
-![Microsoft Entra hybrid join authentication using a Certificate.](images/howitworks/auth/auth-haadj-certtrust.png)
 
 :::image type="content" source="images/howitworks/auth/hybrid-entra-join-ct.png" alt-text="Diagram of a Microsoft Entra hybrid join device authenticating to Active Directory using certificate trust." lightbox="images/howitworks/auth/hybrid-entra-join-ct.png" border="false":::
 
