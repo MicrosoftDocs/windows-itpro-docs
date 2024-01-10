@@ -19,7 +19,7 @@ Windows Hello for Business is a distributed system that requires multiple techno
     :::image type="content" source="images/howitworks/device-registration.png" alt-text="Icon representing the device registration phase." border="false":::
     :::column-end:::
     :::column span="3":::
-    #### 1. Device Registration
+    #### Device registration phase
     :::column-end:::
 :::row-end:::
 
@@ -30,7 +30,7 @@ During device registration, the device registers its identity with the identity 
     :::image type="content" source="images/howitworks/provision.png" alt-text="Icon representing the provisioning phase." border="false":::
     :::column-end:::
     :::column span="3":::
-    #### 2. Provisioning
+    #### Provisioning phase
     :::column-end:::
 :::row-end:::
 
@@ -41,7 +41,7 @@ During this phase, the user authenticates using one form of authentication (typi
     :::image type="content" source="images/howitworks/synchronization.png" alt-text="Icon representing the synchronization phase." border="false":::
     :::column-end:::
     :::column span="3":::
-    #### 3. Key synchronization
+    #### Key synchronization phase
     :::column-end:::
 :::row-end:::
 
@@ -52,7 +52,7 @@ In this phase, applicable to some hybrid deployments, the user's public key is s
     :::image type="content" source="images/howitworks/certificate-enrollment.png" alt-text="Icon representing the certificate enrollment phase." border="false":::
     :::column-end:::
     :::column span="3":::
-    #### 4. Certificate enrollment
+    #### Certificate enrollment phase
     :::column-end:::
 :::row-end:::
 
@@ -63,7 +63,7 @@ In this phase, applicable only to deployments using certificates, a certificate 
     :::image type="content" source="images/howitworks/authentication.png" alt-text="Icon representing the authentication phase." border="false":::
     :::column-end:::
     :::column span="3":::
-    ##### 5. Authentication
+    #### Authentication phase
     :::column-end:::
 :::row-end:::
 
