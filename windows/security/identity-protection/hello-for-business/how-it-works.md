@@ -34,7 +34,7 @@ In this phase, the device registers its identity with the identity provider (IdP
     :::column-end:::
 :::row-end:::
 
-During this phase, the user authenticates using one form of authentication (typically, username/password) to request a new Windows Hello for Business credential. The provisioning flow requires a second factor of authentication before it can generate create a public/private key pair. The public key is registered with the IdP, mapped to the user account.
+During this phase, the user authenticates using one form of authentication (typically, username/password) to request a new Windows Hello for Business credential. The provisioning flow requires a second factor of authentication before it can generate a public/private key pair. The public key is registered with the IdP, mapped to the user account.
 
 :::row:::
     :::column span="1":::
@@ -140,18 +140,18 @@ Personal (Microsoft account) and Work or School (Active Directory or Microsoft E
 
 Windows Hello also generates an *administrative key*. The administrative key can be used to reset credentials when necessary. For example, when using the [PIN reset service](pin-reset.md). In addition to the protector key, TPM-enabled devices generate a block of data that contains attestations from the TPM.
 
-Access to the key material stored in the container, and obtaining a signature to validate user possession of the private key, is enabled only by the PIN or biometric gesture. The two-step verification that takes place during provisioning creates a trusted relationship between the IdP and the user. This happens when the public portion of the public/private key pair is sent to an identity provider and associated with the user account. When a user enters the gesture on the device, the identity provider knows that it's a verified identity, because of the combination of Windows Hello keys and gestures. It then provides an authentication token that allows Windows to access resources and services.
+Access to the key material stored in the container, is enabled only by the PIN or biometric gesture. The two-step verification that takes place during provisioning creates a trusted relationship between the IdP and the user. This happens when the public portion of the public/private key pair is sent to an identity provider and associated with the user account. When a user enters the gesture on the device, the identity provider knows that it's a verified identity, because of the combination of Windows Hello keys and gestures. It then provides an authentication token that allows Windows to access resources and services.
 
 A container can contain several types of key material:
 
-- An *authentication key*, which is always an asymmetric public-private key pair. This key pair is generated during registration. It must be unlocked each time it's accessed, by using either the user's PIN or a biometric gesture. The authentication key exists until the user resets the PIN, at which time a new key will be generated. When the new key is generated, all the key material that the old key previously protected must be decrypted and re-encrypted using the new key
+- An *authentication key*, which is always an asymmetric public-private key pair. This key pair is generated during registration. It must be unlocked each time it's accessed, by using either the user's PIN or a biometric gesture. The authentication key exists until the user resets the PIN, at which time a new key is generated. When the new key is generated, all the key material that the old key previously protected must be decrypted and re-encrypted using the new key
 - One or multiple *user ID keys*. These keys can be either symmetric or asymmetric, depending on which IdP you use. For certificate-based Windows Hello for Work, when the container is unlocked, applications that require access to the user ID key or key pair can request access. User ID keys are used to sign or encrypt authentication requests or tokens sent from this device to the IdP. User ID keys are typically long-lived but could have a shorter lifetime than the authentication key. Microsoft accounts, Active Directory accounts, and Microsoft Entra accounts all require the use of asymmetric key pairs. The device generates public and private keys, registers the public key with the IdP (which stores it for later verification), and securely stores the private key. For enterprises, the user ID keys can be generated in two ways:
-  - The user ID key pair can be associated with an enterprise Certificate Authority (CA) through the Windows Network Device Enrollment Service (NDES). In this case, Windows Hello requests a new certificate with the same key as the certificate from the existing PKI. This option lets organizations that have an existing PKI continue to use it where appropriate. Given that many applications, such as VPN solutions, require the use of certificates, when you deploy Windows Hello in this mode, it allows a faster transition away from user passwords while still preserving certificate-based functionality. This option also allows the enterprise to store additional certificates in the protected container. For example, an enterprise might want to store a certificate that allows the user to authenticate via RDP.
-  - The IdP can generate the user ID key pair directly, which allows quick, lower-overhead deployment of Windows Hello in environments that don't have or need a PKI.
+  - The user ID key pair can be associated with an enterprise Certificate Authority (CA). This option lets organizations that have an existing PKI continue to use it where appropriate. Given that many applications, such as VPN solutions, require the use of certificates, when you deploy Windows Hello in this mode, it allows a faster transition away from user passwords while still preserving certificate-based functionality. This option also allows the enterprise to store other certificates in the protected container. For example, an enterprise might want to store a certificate that allows the user to authenticate via RDP
+  - The IdP can generate the user ID key pair directly, which allows quick, lower-overhead deployment of Windows Hello in environments that don't have or need a PKI
 
-User ID keys are used to authenticate the user to a service. For example, by signing a nonce to prove possession of the private key which corresponds to a registered public key. A user with an Active Directory, Microsoft Entra ID or Microsoft account will have a key associated with their account, which can be used to sign into their Windows device by authenticating to the cloud (Microsoft Entra ID/MSA) or domain controller (Active Directory).
+User ID keys are used to authenticate the user to a service. For example, by signing a nonce to prove possession of the private key, which corresponds to a registered public key. Users with an Active Directory, Microsoft Entra ID or Microsoft account have a key associated with their account. The key can be used to sign into their Windows device by authenticating to a domain controller (Active Directory scenario), or to the cloud (Microsoft Entra ID and MSA scenarios).
 
-Windows Hello can also be used as a FIDO2 authenticator to authenticate to any website that supports WebAuthn. Using APIs, a website or application can create a FIDO user ID key in the user's Windows Hello container. On subsequent visits, the user can authenticate to the website or app using their Windows Hello PIN or biometric gesture.
+Windows Hello can also be used as a FIDO2 authenticator to authenticate to any website that supports WebAuthn. Websites or application can create a FIDO user ID key in the user's Windows Hello container using APIs. On subsequent visits, the user can authenticate to the website or app using their Windows Hello PIN or biometric gesture.
 
 To learn more how Windows uses the TPM in support of Windows Hello for Business, see [How Windows uses the Trusted Platform Module](../../hardware-security/tpm/how-windows-uses-the-tpm.md).
 
@@ -172,9 +172,9 @@ The user's public key is written to the `msDS-KeyCredentialLink` attribute of th
 
 ## Certificate enrollment
 
-For certificate deployments, after registering the key, the client generates a cetificate request. The request is sent to the Certificate Registration Authority (CRA). The CRA is on the Active Directory Federation Services (AD FS) server, which validates the certificate request and fulfills it using the enterprise PKI.
+For certificate deployments, after registering the key, the client generates a certificate request. The request is sent to the Certificate Registration Authority (CRA). The CRA is on the Active Directory Federation Services (AD FS) server, which validates the certificate request and fulfills it using the enterprise PKI.
 
-A certificate is enrolled on the user's logon key to authenticate to on-premise resources.
+A certificate is enrolled on the user's Hello container, which is used to authenticate to on-premises resources.
 
 ## Authentication
 
@@ -188,7 +188,7 @@ Authentication is the two-factor authentication with the combination of:
 
 PIN entry and biometric gesture both trigger Windows to use the private key to cryptographically sign data that is sent to the identity provider. The IdP verifies the user's identity and authenticates the user.
 
-The PIN or the private portion of the credential are never sent to the IdP, and the PIN isn't stored on the device. The PIN and bio gestures are *user-provided entropy* when performing operations that use the private portion of the credential.
+The PIN or the private portion of the credentials is never sent to the IdP, and the PIN isn't stored on the device. The PIN and bio gestures are *user-provided entropy* when performing operations that use the private portion of the credential.
 
 When a user wants to access protected key material, the authentication process begins with the user entering a PIN or biometric gesture to unlock the device, a process sometimes called *releasing the key*. Think of it like using a physical key to unlock a door: before you can unlock the door, you need to remove the key from your pocket or purse. The user's PIN unlocks the protector key for the container on the device. When that container is unlocked, applications (and thus the user) can use whatever User ID keys reside inside the container.
 
