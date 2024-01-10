@@ -1,7 +1,7 @@
 ---
 title: Prerequisites
 description: This article details the prerequisites needed for Windows Autopatch
-ms.date: 12/04/2023
+ms.date: 01/10/2024
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -36,12 +36,19 @@ Windows Autopatch is included with Windows 10/11 Enterprise E3 or higher (user-b
 | [Microsoft 365 E3](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E3 | 05e9a617-0261-4cee-bb44-138d3ef5d965 |
 | [Microsoft 365 E3 (500 seats minimum_HUB)](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | Microsoft_365_E3 | 0c21030a-7e60-4ec7-9a0f-0042e0e0211a |
 | [Microsoft 365 E3 - Unattended License](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E3_RPA1 | c2ac2ee4-9bb1-47e4-8541-d689c7e83371 |
+| Microsoft 365 E3 EEA (no Teams) - Unattended License | Microsoft_365_E3_EEA_(no_Teams)_Unattended_License | a23dbafb-3396-48b3-ad9c-a304fe206043 |
+| Microsoft 365 E3 EEA (no Teams) (500 seats min)_HUB | O365_w/o Teams Bundle_M3_(500_seats_min)_HUB | 602e6573-55a3-46b1-a1a0-cc267991501a |
+| [TEST - Microsoft 365 E3](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E3_TEST | 23a55cbc-971c-4ba2-8bae-04cd13d2f4ad |
 | [Microsoft 365 E5](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E5 | 06ebc4ee-1bb5-47dd-8120-11324bc54e06 |
 | [Microsoft 365 E5 (500 seats minimum)_HUB](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | Microsoft_365_E5 | db684ac5-c0e7-4f92-8284-ef9ebde75d33 |
 | [Microsoft 365 E5 with calling minutes](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E5_CALLINGMINUTES | a91fc4e0-65e5-4266-aa76-4037509c1626 |
 | [Microsoft 365 E5 without audio conferencing](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E5_NOPSTNCONF | cd2925a3-5076-4233-8931-638a8c94f773 |
 | [Microsoft 365 E5 without audio conferencing (500 seats minimum)_HUB](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | Microsoft_365_E5_without_Audio_Conferencing | 2113661c-6509-4034-98bb-9c47bd28d63c |
-| [TEST - Microsoft 365 E3](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E3_TEST | 23a55cbc-971c-4ba2-8bae-04cd13d2f4ad |
+| Microsoft 365 E5 EEA (no Teams) | O365_w/o_Teams_Bundle_M5 |3271cf8e-2be5-4a09-a549-70fd05baaa17 |
+| Microsoft 365 E5 EEA (no Teams) with Calling Minutes | Microsoft_365_E5_EEA_(no_Teams)_with_Calling_Minutes | 6ee4114a-9b2d-4577-9e7a-49fa43d222d3 |
+| Microsoft 365 E5 EEA (no Teams) without Audio Conferencing | Microsoft_365_E5_EEA_(no_Teams)_without_Audio_Conferencing | 90277bc7-a6fe-4181-99d8-712b08b8d32b |
+| Microsoft 365 E5 EEA (no Teams) without Audio Conferencing (500 seats min)_HUB | Microsoft_365_E5_EEA_(no_Teams)_without_Audio_Conferencing_(500_seats_min)_HUB | a640eead-25f6-4bec-97e3-23cfd382d7c2 |
+| Microsoft 365 E5 EEA (no Teams) (500 seats min)_HUB | O365_w/o_Teams_Bundle_M5_(500_seats_min)_HUB | 1e988bf3-8b7c-4731-bec0-4e2a2946600c |
 | [TEST - Microsoft 365 E5 without audio conferencing](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E5_NOPSTNCONF_TEST | 1362a0d9-b3c2-4112-bf1a-7a838d181c0f |
 | [Windows 10/11 Enterprise E3](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | WIN10_VDA_E3 | 6a0f6da5-0b87-4190-a6ae-9bb5a2b9546a |
 | [Windows 10/11 Enterprise E5](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | WIN10_VDA_E5 | 488ba24a-39a9-4473-8ee5-19291e71b002 |
