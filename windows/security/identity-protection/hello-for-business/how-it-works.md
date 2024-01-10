@@ -15,73 +15,59 @@ Windows Hello for Business is a distributed system that requires multiple techno
 > The deployment scenarios are described in the article: [Plan a Windows Hello for Business deployment](deploy/index.md).
 
 :::row:::
-    :::column span="":::
-    #### 1. Device Registration
-    :::column-end:::
-:::row-end:::
-:::row:::
     :::column span="1":::
     :::image type="content" source="images/howitworks/device-registration.png" alt-text="Icon representing the device registration phase." border="false":::
     :::column-end:::
     :::column span="3":::
-    Registration is a prerequisite for Windows Hello for Business. Without device registration, Windows Hello for Business provisioning can't start.
-    
-    During device registration, the device registers its identity with the identity provider (IdP), so that it can be associated and authenticate to the IdP.
+    #### 1. Device Registration
     :::column-end:::
 :::row-end:::
-:::row:::
-    :::column span="":::
-    #### 2. Provisioning
-    :::column-end:::
-:::row-end:::
+
+During device registration, the device registers its identity with the identity provider (IdP), so that it can be associated and authenticate to the IdP.
+
 :::row:::
     :::column span="1":::
     :::image type="content" source="images/howitworks/provision.png" alt-text="Icon representing the provisioning phase." border="false":::
     :::column-end:::
     :::column span="3":::
-    During this phase, the user authenticates using one form of authentication (typically, username/password) to request a new Windows Hello for Business credential. The provisioning flow requires a second factor of authentication before it can create a strong, two-factor Windows Hello for Business credential.
+    #### 2. Provisioning
     :::column-end:::
 :::row-end:::
-:::row:::
-    :::column span="":::
-    #### 3. Key synchronization
-    :::column-end:::
-:::row-end:::
+
+During this phase, the user authenticates using one form of authentication (typically, username/password) to request a new Windows Hello for Business credential. The provisioning flow requires a second factor of authentication before it can generate create a public/private key pair. The public key is registered with the IdP, mapped to the user account.
+
 :::row:::
     :::column span="1":::
     :::image type="content" source="images/howitworks/synchronization.png" alt-text="Icon representing the synchronization phase." border="false":::
     :::column-end:::
     :::column span="3":::
-    In this phase, applicable only to hybrid deployments, the user's public key is synchronized from Microsoft Entra ID to Active Directory.
+    #### 3. Key synchronization
     :::column-end:::
 :::row-end:::
-:::row:::
-    :::column span="":::
-    #### 4. Certificate enrollment
-    :::column-end:::
-:::row-end:::
+
+In this phase, applicable to some hybrid deployments, the user's public key is synchronized from Microsoft Entra ID to Active Directory.
+
 :::row:::
     :::column span="1":::
     :::image type="content" source="images/howitworks/certificate-enrollment.png" alt-text="Icon representing the certificate enrollment phase." border="false":::
     :::column-end:::
     :::column span="3":::
-    In this phase, applicable only to deployments using certificates, a certificate is issued to the user using the organization's public key infrastructure (PKI).
+    #### 4. Certificate enrollment
     :::column-end:::
 :::row-end:::
-:::row:::
-    :::column span="":::
-    #### 5. Authentication
-    :::column-end:::
-:::row-end:::
+
+In this phase, applicable only to deployments using certificates, a certificate is issued to the user using the organization's public key infrastructure (PKI).
+
 :::row:::
     :::column span="1":::
     :::image type="content" source="images/howitworks/authentication.png" alt-text="Icon representing the authentication phase." border="false":::
     :::column-end:::
     :::column span="3":::
-    In this last phase, the user can sign-in to Windows using biometrics or a PIN. Regardless of the gesture used, authentication occurs using the private portion of the Windows Hello for Business credential. The IdP validates the user identity by mapping the user account to the public key used during the provisioning phase.
-
+    ##### 5. Authentication
     :::column-end:::
 :::row-end:::
+
+In this last phase, the user can sign-in to Windows using biometrics or a PIN. Regardless of the gesture used, authentication occurs using the private portion of the Windows Hello for Business credential. The IdP validates the user identity by mapping the user account to the public key used during the provisioning phase.
 
 The following sections provide deeper insights into each of these phases.
 
@@ -181,6 +167,8 @@ The user's public key is written to the `msDS-KeyCredentialLink` attribute of th
 ## Certificate enrollment
 
 For certificate deployments, after registering the key, the client generates a cetificate request. The request is sent to the Certificate Registration Authority (CRA). The CRA is on the Active Directory Federation Services (AD FS) server, which validates the certificate request and fulfills it using the enterprise PKI.
+
+A certificate is enrolled on the user's logon key to authenticate to on-premise resources.
 
 ## Authentication
 
