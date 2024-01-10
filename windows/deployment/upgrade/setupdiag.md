@@ -1,8 +1,8 @@
 ---
 title: SetupDiag
 description: SetupDiag works by examining Windows Setup log files. This article shows how to use the SetupDiag tool to diagnose Windows Setup errors.
-ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.service: windows-client
+ms.subservice: itpro-deploy
 author: frankroj
 manager: aaroncz
 ms.author: frankroj
@@ -254,93 +254,48 @@ Each rule name and its associated unique rule identifier are listed with a descr
 | DebugSetupMemoryDump | C7C63D8A-C5F6-4255-8031-74597773C3C6 | This offline only rule indicates a bug check occurred during setup.  If the debugger tools are available on the system, SetupDiag will debug the memory dump and provide details. |
 | DebugSetupCrash | CEEBA202-6F04-4BC3-84B8-7B99AED924B1 | This offline only rule indicates that setup itself encountered a failure that resulted in a process memory dump.  If the debugger tools are installed on the system, SetupDiag will debug the memory dump and give further details. |
 | DebugMemoryDump | 505ED489-329A-43F5-B467-FCAAF6A1264C | This offline only rule is for any memory.dmp file that resulted during the setup/upgrade operation.  If the debugger tools are installed on the system, SetupDiag will debug the memory dump and give further details. |
-|  |  |  |
-
-
-1. BootFailureDetected - 4FB446C2-D4EC-40B4-97E2-67EB19D1CFB7
-    - This rule indicates a boot failure occurred during a specific phase of the update.  The rule will indicate the failure code and phase for diagnostic purposes.
-1. FindDebugInfoFromRollbackLog - 9600EB68-1120-4A87-9FE9-3A4A70ACFC37
-    - This rule will determine and give details when a bug check occurs during the setup/upgrade process that resulted in a memory dump, but without the requirement of the debugger package being on the executing machine.
-1. AdvancedInstallerFailed - 77D36C96-32BE-42A2-BB9C-AAFFE64FCADC
-    - Finds fatal advanced installer operations that cause setup failures.
-1. FindMigApplyUnitFailure - A4232E11-4043-4A37-9BF4-5901C46FD781
-    - Detects a migration unit failure that caused the update to fail.  This rule will output the name of the migration plug-in and the error code it produced for diagnostic purposes.
-1. FindMigGatherUnitFailure - D04C064B-CD77-4E64-96D6-D26F30B4EE29
-    - Detects a migration gather unit failure that caused the update to fail.  This rule will output the name of the gather unit/plug-in and the error code it produced for diagnostic purposes.
-1. CriticalSafeOSDUFailure - 73566DF2-CA26-4073-B34C-C9BC70DBF043
-    - This rule indicates a failure occurred while updating the SafeOS image with a critical dynamic update.  It will indicate the phase and error code that occurred while attempting to update the SafeOS image for diagnostic purposes.
-1. UserProfileCreationFailureDuringOnlineApply - 678117CE-F6A9-40C5-BC9F-A22575C78B14
-    - Indicates there was a critical failure while creating or modifying a User Profile during the online apply phase of the update.  It will indicate the operation and error code associated with the failure for diagnostic purposes.
-1. WimMountFailure - BE6DF2F1-19A6-48C6-AEF8-D3B0CE3D4549
-    - This rule indicates the update failed to mount a WIM file.  It will show the name of the WIM file and the error message and error code associated with the failure for diagnostic purposes.
-1. FindSuccessfulUpgrade - 8A0824C8-A56D-4C55-95A0-22751AB62F3E
-    - Determines if the given setup was a success or not based off the logs.
-1. FindSetupHostReportedFailure - 6253C04F-2E4E-4F7A-B88E-95A69702F7EC
-    - Gives information about failures surfaced early in the upgrade process by setuphost.exe
-1. FindDownlevelFailure - 716334B7-F46A-4BAA-94F2-3E31BC9EFA55
-    - Gives failure information surfaced by SetupPlatform, later in the down-level phase.
-1. FindAbruptDownlevelFailure - 55882B1A-DA3E-408A-9076-23B22A0472BD
-    - Gives last operation failure information when the system fails in the down-level, but the log just ends abruptly.
-1. FindSetupPlatformFailedOperationInfo - 307A0133-F06B-4B75-AEA8-116C3B53C2D1
-    - Gives last phase and error information when SetupPlatform indicates a critical failure.  This rule will indicate the operation and error associated with the failure for diagnostic purposes.
-1. FindRollbackFailure - 3A43C9B5-05B3-4F7C-A955-88F991BB5A48
-    - Gives last operation, failure phase and error information when a rollback occurs.
-1. AdvancedInstallerGenericFailure - 4019550D-4CAA-45B0-A222-349C48E86F71
-    - A rule to match AdvancedInstaller read/write failures in a generic sense.  Will output the executable being called as well as the error code and exit code reported.
-1. OptionalComponentFailedToGetOCsFromPackage - D012E2A2-99D8-4A8C-BBB2-088B92083D78  (NOTE:  This rule replaces the OptionalComponentInstallFailure rule present in v1.10.
-    - This matches a specific Optional Component failure when attempting to enumerate components in a package.  Will output the package name and error code.
-1. OptionalComponentOpenPackageFailed - 22952520-EC89-4FBD-94E0-B67DF88347F6
-    - Matches a specific Optional Component failure when attempting to open an OC package.  Will output the package name and error code.
-1. OptionalComponentInitCBSSessionFailed - 63340812-9252-45F3-A0F2-B2A4CA5E9317
-    - Matches a specific failure where the advanced installer service or components aren't operating or started on the system.  Will output the error code.
-1. UserProfileCreationFailureDuringFinalize - C6677BA6-2E53-4A88-B528-336D15ED1A64
-    - Matches a specific User Profile creation error during the finalize phase of setup.  Will output the failure code.
-1. WimApplyExtractFailure - 746879E9-C9C5-488C-8D4B-0C811FF3A9A8
-    - Matches a WIM apply failure during WIM extraction phases of setup.  Will output the extension, path and error code.
-1. UpdateAgentExpanderFailure - 66E496B3-7D19-47FA-B19B-4040B9FD17E2
-    - Matches DPX expander failures in the down-level phase of update from Windows Update.  Will output the package name, function, expression and error code.
-1. FindFatalPluginFailure - E48E3F1C-26F6-4AFB-859B-BF637DA49636
-    - Matches any plug-in failure that setupplatform decides is fatal to setup.  Will output the plugin name, operation and error code.
-1. AdvancedInstallerFailed - 77D36C96-32BE-42A2-BB9C-AAFFE64FCADC
-    - Indicates critical failure in the AdvancedInstaller while running an installer package, includes the .exe being called, the phase, mode, component and error codes.
-1. MigrationAbortedDueToPluginFailure - D07A24F6-5B25-474E-B516-A730085940C9
-    - Indicates a critical failure in a migration plugin that causes setup to abort the migration.  Will provide the setup operation, plug-in name, plug-in action and error code.
-1. DISMAddPackageFailed - 6196FF5B-E69E-4117-9EC6-9C1EAB20A3B9
-    - Indicates a critical failure during a DISM add package operation.  Will specify the Package Name, DISM error and add package error code.
-1. PlugInComplianceBlock - D912150B-1302-4860-91B5-527907D08960
-    - Detects all compat blocks from Server compliance plug-ins.  Outputs the block information and remediation.
-1. AdvancedInstallerGenericFailure - 4019550D-4CAA-45B0-A222-349C48E86F71
-    - Triggers on advanced installer failures in a generic sense, outputting the application called, phase, mode, component and error code.
-1. FindMigGatherApplyFailure - A9964E6C-A2A8-45FF-B6B5-25E0BD71428E
-    - Shows errors when the migration Engine fails out on a gather or apply operation.  Indicates the Migration Object (file or registry path), the Migration
-1. OptionalComponentFailedToGetOCsFromPackage - D012E2A2-99D8-4A8C-BBB2-088B92083D78
-    - Indicates the optional component (OC) migration operation failed to enumerate optional components from an OC Package.  Outputs the package name and error code.
-1. OptionalComponentOpenPackageFailed - 22952520-EC89-4FBD-94E0-B67DF88347F6
-    - Indicates the optional component migration operation failed to open an optional component Package.  Outputs the package name and error code.
-1. OptionalComponentInitCBSSessionFailed - 63340812-9252-45F3-A0F2-B2A4CA5E9317
-    - Indicates corruption in the servicing stack on the down-level system.  Outputs the error code encountered while trying to initialize the servicing component on the existing OS.
-1. DISMproviderFailure - D76EF86F-B3F8-433F-9EBF-B4411F8141F4
-    - Triggers when a DISM provider (plug-in) fails in a critical operation.  Outputs the file (plug-in name), function called + error code, and error message from the provider.
-1. SysPrepLaunchModuleFailure - 7905655C-F295-45F7-8873-81D6F9149BFD
-    - Indicates a sysPrep plug-in has failed in a critical operation.  Indicates the plug-in name, operation name and error code.
-1. UserProvidedDriverInjectionFailure - 2247C48A-7EE3-4037-AFAB-95B92DE1D980
-    - A driver provided to setup (via command line input) has failed in some way.  Outputs the driver install function and error code.
-1. PlugInComplianceBlock - D912150B-1302-4860-91B5-527907D08960
-    - These are for server upgrades only, will output the compliance block and remediation required.
-1. PreReleaseWimMountDriverFound - 31EC76CC-27EC-4ADC-9869-66AABEDB56F0
-    - Captures failures due to having an unrecognized wimmount.sys driver registered on the system.
-1. WinSetupBootFilterFailure - C073BFC8-5810-4E19-B53B-4280B79E096C
-    - Detects failures in the kernel mode file operations.
-1. WimMountDriverIssue - 565B60DD-5403-4797-AE3E-BC5CB972FBAE
-    - Detects failures in WimMount.sys registration on the system.
-1. DISMImageSessionFailure - 61B7886B-10CD-4C98-A299-B987CB24A11C
-    - Captures failure information when DISM fails to start an image session successfully.
-1. FindEarlyDownlevelError - A4CE4FC9-5E10-4BB1-8ECE-3B29EB9D7C52
-    - Detects failures in down-level phase before setup platform is invoked.
-1. FindSPFatalError - A4028172-1B09-48F8-AD3B-86CDD7D55852
-    - Captures failure information when setup platform encounters a fatal error.
-1. UserProfileSuffixMismatch - B4BBCCCE-F99D-43EB-9090-078213397FD8
-    - Detects when a file or other object causes the migration or creation of a user profile to fail during the update.
+| BootFailureDetected | 4FB446C2-D4EC-40B4-97E2-67EB19D1CFB7 | This rule indicates a boot failure occurred during a specific phase of the update.  The rule will indicate the failure code and phase for diagnostic purposes. |
+| FindDebugInfoFromRollbackLog | 9600EB68-1120-4A87-9FE9-3A4A70ACFC37 | This rule will determine and give details when a bug check occurs during the setup/upgrade process that resulted in a memory dump, but without the requirement of the debugger package being on the executing machine. |
+| AdvancedInstallerFailed | 77D36C96-32BE-42A2-BB9C-AAFFE64FCADC | Finds fatal advanced installer operations that cause setup failures. |
+| FindMigApplyUnitFailure | A4232E11-4043-4A37-9BF4-5901C46FD781 | Detects a migration unit failure that caused the update to fail.  This rule will output the name of the migration plug-in and the error code it produced for diagnostic purposes. |
+| FindMigGatherUnitFailure | D04C064B-CD77-4E64-96D6-D26F30B4EE29 | Detects a migration gather unit failure that caused the update to fail.  This rule will output the name of the gather unit/plug-in and the error code it produced for diagnostic purposes. |
+| CriticalSafeOSDUFailure | 73566DF2-CA26-4073-B34C-C9BC70DBF043 | This rule indicates a failure occurred while updating the SafeOS image with a critical dynamic update.  It will indicate the phase and error code that occurred while attempting to update the SafeOS image for diagnostic purposes. |
+| UserProfileCreationFailureDuringOnlineApply | 678117CE-F6A9-40C5-BC9F-A22575C78B14 | Indicates there was a critical failure while creating or modifying a User Profile during the online apply phase of the update.  It will indicate the operation and error code associated with the failure for diagnostic purposes. |
+| WimMountFailure | BE6DF2F1-19A6-48C6-AEF8-D3B0CE3D4549 | This rule indicates the update failed to mount a WIM file.  It will show the name of the WIM file and the error message and error code associated with the failure for diagnostic purposes. |
+| FindSuccessfulUpgrade | 8A0824C8-A56D-4C55-95A0-22751AB62F3E | Determines if the given setup was a success or not based off the logs. |
+| FindSetupHostReportedFailure | 6253C04F-2E4E-4F7A-B88E-95A69702F7EC | Gives information about failures surfaced early in the upgrade process by `setuphost.exe` |
+| FindDownlevelFailure | 716334B7-F46A-4BAA-94F2-3E31BC9EFA55 | Gives failure information surfaced by SetupPlatform, later in the down-level phase. |
+| FindAbruptDownlevelFailure | 55882B1A-DA3E-408A-9076-23B22A0472BD | Gives last operation failure information when the system fails in the down-level, but the log just ends abruptly. |
+| FindSetupPlatformFailedOperationInfo | 307A0133-F06B-4B75-AEA8-116C3B53C2D1 | Gives last phase and error information when SetupPlatform indicates a critical failure.  This rule will indicate the operation and error associated with the failure for diagnostic purposes. |
+| FindRollbackFailure | 3A43C9B5-05B3-4F7C-A955-88F991BB5A48 | Gives last operation, failure phase and error information when a rollback occurs. |
+| AdvancedInstallerGenericFailure | 4019550D-4CAA-45B0-A222-349C48E86F71 | A rule to match AdvancedInstaller read/write failures in a generic sense.  Will output the executable being called as well as the error code and exit code reported. |
+| OptionalComponentFailedToGetOCsFromPackage | D012E2A2-99D8-4A8C-BBB2-088B92083D78 | This matches a specific Optional Component failure when attempting to enumerate components in a package.  Will output the package name and error code. This rule replaces the OptionalComponentInstallFailure rule present in v1.10. |
+| OptionalComponentOpenPackageFailed | 22952520-EC89-4FBD-94E0-B67DF88347F6 | Matches a specific Optional Component failure when attempting to open an OC package.  Will output the package name and error code. |
+| OptionalComponentInitCBSSessionFailed | 63340812-9252-45F3-A0F2-B2A4CA5E9317 | Matches a specific failure where the advanced installer service or components aren't operating or started on the system.  Will output the error code. |
+| UserProfileCreationFailureDuringFinalize | C6677BA6-2E53-4A88-B528-336D15ED1A64 | Matches a specific User Profile creation error during the finalize phase of setup.  Will output the failure code. |
+| WimApplyExtractFailure | 746879E9-C9C5-488C-8D4B-0C811FF3A9A8 | Matches a WIM apply failure during WIM extraction phases of setup.  Will output the extension, path and error code. |
+| UpdateAgentExpanderFailure | 66E496B3-7D19-47FA-B19B-4040B9FD17E2 | Matches DPX expander failures in the down-level phase of update from Windows Update.  Will output the package name, function, expression and error code. |
+| FindFatalPluginFailure | E48E3F1C-26F6-4AFB-859B-BF637DA49636 | Matches any plug-in failure that setupplatform decides is fatal to setup.  Will output the plugin name, operation and error code. |
+| AdvancedInstallerFailed | 77D36C96-32BE-42A2-BB9C-AAFFE64FCADC | Indicates critical failure in the AdvancedInstaller while running an installer package, includes the .exe being called, the phase, mode, component and error codes. |
+| MigrationAbortedDueToPluginFailure | D07A24F6-5B25-474E-B516-A730085940C9 | Indicates a critical failure in a migration plugin that causes setup to abort the migration.  Will provide the setup operation, plug-in name, plug-in action and error code. |
+| DISMAddPackageFailed | 6196FF5B-E69E-4117-9EC6-9C1EAB20A3B9 | Indicates a critical failure during a DISM add package operation.  Will specify the Package Name, DISM error and add package error code. |
+| PlugInComplianceBlock | D912150B-1302-4860-91B5-527907D08960 | Detects all compat blocks from Server compliance plug-ins.  Outputs the block information and remediation. |
+| AdvancedInstallerGenericFailure | 4019550D-4CAA-45B0-A222-349C48E86F71 | Triggers on advanced installer failures in a generic sense, outputting the application called, phase, mode, component and error code. |
+| FindMigGatherApplyFailure | A9964E6C-A2A8-45FF-B6B5-25E0BD71428E | Shows errors when the migration Engine fails out on a gather or apply operation.  Indicates the Migration Object (file or registry path), the Migration |
+| OptionalComponentFailedToGetOCsFromPackage | D012E2A2-99D8-4A8C-BBB2-088B92083D78 | Indicates the optional component (OC) migration operation failed to enumerate optional components from an OC Package.  Outputs the package name and error code. |
+| OptionalComponentOpenPackageFailed | 22952520-EC89-4FBD-94E0-B67DF88347F6 | Indicates the optional component migration operation failed to open an optional component Package.  Outputs the package name and error code. |
+| OptionalComponentInitCBSSessionFailed | 63340812-9252-45F3-A0F2-B2A4CA5E9317 | Indicates corruption in the servicing stack on the down-level system.  Outputs the error code encountered while trying to initialize the servicing component on the existing OS. |
+| DISMproviderFailure | D76EF86F-B3F8-433F-9EBF-B4411F8141F4 | Triggers when a DISM provider (plug-in) fails in a critical operation.  Outputs the file (plug-in name), function called + error code, and error message from the provider. |
+| SysPrepLaunchModuleFailure | 7905655C-F295-45F7-8873-81D6F9149BFD | Indicates a sysPrep plug-in has failed in a critical operation.  Indicates the plug-in name, operation name and error code. |
+| UserProvidedDriverInjectionFailure | 2247C48A-7EE3-4037-AFAB-95B92DE1D980 | A driver provided to setup (via command line input) has failed in some way.  Outputs the driver install function and error code. |
+| PlugInComplianceBlock | D912150B-1302-4860-91B5-527907D08960 | These are for server upgrades only, will output the compliance block and remediation required. |
+| PreReleaseWimMountDriverFound | 31EC76CC-27EC-4ADC-9869-66AABEDB56F0 | Captures failures due to having an unrecognized `wimmount.sys` driver registered on the system. |
+| WinSetupBootFilterFailure | C073BFC8-5810-4E19-B53B-4280B79E096C | Detects failures in the kernel mode file operations. |
+| WimMountDriverIssue | 565B60DD-5403-4797-AE3E-BC5CB972FBAE | Detects failures in `WimMount.sys` registration on the system. |
+| DISMImageSessionFailure | 61B7886B-10CD-4C98-A299-B987CB24A11C | Captures failure information when DISM fails to start an image session successfully. |
+| FindEarlyDownlevelError | A4CE4FC9-5E10-4BB1-8ECE-3B29EB9D7C52 | Detects failures in down-level phase before setup platform is invoked. |
+| FindSPFatalError | A4028172-1B09-48F8-AD3B-86CDD7D55852 | Captures failure information when setup platform encounters a fatal error. |
+| UserProfileSuffixMismatch | B4BBCCCE-F99D-43EB-9090-078213397FD8 | Detects when a file or other object causes the migration or creation of a user profile to fail during the update. |
 
 <!--
 
