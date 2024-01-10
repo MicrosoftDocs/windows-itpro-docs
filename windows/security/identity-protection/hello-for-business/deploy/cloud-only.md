@@ -92,6 +92,17 @@ The Windows Hello for Business provisioning process begins immediately after a u
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=36dc8679-0fcc-4abf-868d-97ec8b749da7 alt-text="Video showing the Windows Hello for Business enrollment steps after signing in with a password."]
 
+### Sequence diagrams
+
+To better understand the provisioning flows, review the following sequence diagrams based on the authentication type:
+
+- [Microsoft Entra joined provisioning in a managed environment](../how-it-works-provisioning.md#microsoft-entra-joined-provisioning-in-a-managed-environment)
+- [Microsoft Entra joined provisioning in a federated environment](../how-it-works-provisioning.md#microsoft-entra-joined-provisioning-in-a-federated-environment)
+
+To better understand the authentication flows, review the following sequence diagram:
+
+- [Microsoft Entra join authentication to Microsoft Entra ID](../how-it-works-authentication.md#microsoft-entra-join-authentication-to-microsoft-entra-id)
+
 ## Disable automatic enrollment
 
 If you want to disable the automatic Windows Hello for Business enrollment, you can configure your devices with a policy setting or registry key. For more information, see [Disable Windows Hello for Business enrollment](../configure.md#disable-windows-hello-for-business-enrollment).

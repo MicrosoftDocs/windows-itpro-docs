@@ -67,7 +67,7 @@ In this phase, required by deployments using certificates, a certificate is issu
     :::column-end:::
 :::row-end:::
 
-In this last phase, the user can sign-in to Windows using biometrics or a PIN. Regardless of the gesture used, authentication occurs using the private portion of the Windows Hello for Business credential. The IdP validates the user identity by mapping the user account to the public key used during the provisioning phase.
+In this last phase, the user can sign-in to Windows using biometrics or a PIN. Regardless of the gesture used, authentication occurs using the private portion of the Windows Hello for Business credential. The IdP validates the user identity by mapping the user account to the public key registered during the provisioning phase.
 
 The following sections provide deeper insights into each of these phases.
 
@@ -111,8 +111,8 @@ Here are the steps involved with the provisioning phase:
 1. A public/private key pair is generated. The key pair is bound to the Trusted Platform Module (TPM), if available, or in software
 1. The private key is stored locally and protected by the TPM, and can't be exported
 1. The public key is registered with the IdP, mapped to the user account
-  1. The Device Registration Service writes the key to the user object in Microsoft Entra ID
-  1. For on-premises scenarios, AD FS writes the key is written to Active Directory
+    1. The Device Registration Service writes the key to the user object in Microsoft Entra ID
+    1. For on-premises scenarios, AD FS writes the key to Active Directory
 
 The following video shows the Windows Hello for Business enrollment steps after signing in with a password:
 
@@ -124,14 +124,16 @@ For more information and detailed sequence diagrams, see [how provisioning works
 
 :::row:::
     :::column:::
-        During the provisioning phase, Windows Hello generates a new public-private key pair on the device. The TPM generates and protects the private key. If the device doesn't have a TPM, the private key is encrypted and stored in software. This initial key is referred to as the *protector key*. The protector key is associated with a single gesture: if a user registers a PIN, a fingerprint, and a face on the same device, each of those gestures has a unique protector key. The protector key securely wraps the *authentication key*. The authentication key is used to *unlock* the user ID keys. The container has only one authentication key, but there can be multiple copies of that key wrapped with different unique protector keys.
+        During the provisioning phase, Windows Hello generates a new public/private key pair on the device. The TPM generates and protects the private key. If the device doesn't have a TPM, the private key is encrypted and stored in software. This initial key is referred to as the *protector key*. The protector key is associated with a single gesture: if a user registers a PIN, a fingerprint, and a face on the same device, each of those gestures has a unique protector key.
 
-        Each protector encrypts its own copy of the authentication key. How the encryption is performed is up to the protector itself. For example, the PIN protector performs a TPM seal operation using the PIN as entropy, or when no TPM is available, performs symmetric encryption of the auth blob using a key derived from the PIN itself.
+        The protector key securely wraps the *authentication key*. The authentication key is used to unlock the *user ID keys*. The container has only one authentication key, but there can be multiple copies of that key wrapped with different unique protector keys.
     :::column-end:::
     :::column:::
         :::image type="content" source="images/howitworks/hello-container.png" alt-text="Diagram of the Windows Hello container." border="false":::
     :::column-end:::
 :::row-end:::
+
+Each protector encrypts its own copy of the authentication key. How the encryption is performed is up to the protector itself. For example, the PIN protector performs a TPM seal operation using the PIN as entropy, or when no TPM is available, performs symmetric encryption of the authentication key using a key derived from the PIN itself.
 
 > [!IMPORTANT]
 > Keys can be generated in hardware (TPM 1.2 or 2.0) or software, based on the configured policy setting. To guarantee that keys are generated in hardware, you must configure a policy setting. For more information, see [Use a hardware security device](policy-settings.md#use-a-hardware-security-device).

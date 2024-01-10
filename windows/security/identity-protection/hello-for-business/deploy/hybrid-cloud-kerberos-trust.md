@@ -151,9 +151,15 @@ After enrollment, Microsoft Entra Connect synchronizes the user's key from Micro
 
 ### Sequence diagrams
 
-To better understand the provisioning and authentication flows, review the following sequence diagrams:
+To better understand the provisioning flows, review the following sequence diagrams based on the device join and authentication type:
 
- 
+- [Microsoft Entra joined provisioning in a managed environment](../how-it-works-provisioning.md#microsoft-entra-joined-provisioning-in-a-managed-environment)
+- [Microsoft Entra joined provisioning in a federated environment](../how-it-works-provisioning.md#microsoft-entra-joined-provisioning-in-a-federated-environment)
+- [Microsoft Entra hybrid joined provisioning in a cloud Kerberos trust deployment in a managed environment](../how-it-works-provisioning.md#microsoft-entra-hybrid-joined-provisioning-in-a-cloud-kerberos-trust-deployment-in-a-managed-environment)
+
+To better understand the authentication flows, review the following sequence diagram:
+
+- [Microsoft Entra join authentication to Active Directory using cloud Kerberos trust](../how-it-works-authentication.md#microsoft-entra-join-authentication-to-active-directory-using-cloud-kerberos-trust)
 
 ## Migrate from key trust deployment model to cloud Kerberos trust
 
