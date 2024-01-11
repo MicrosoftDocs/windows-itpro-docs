@@ -8,7 +8,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
 ms.topic: conceptual
-ms.date: 06/29/2023
+ms.date: 01/11/2024
 ms.reviewer: 
 ---
 
@@ -20,39 +20,18 @@ ms.reviewer:
 
 ## Latest updates for Store for Business and Education
 
-**May 2023**
+**January 2024**
 
-**Removal of Microsoft Store for Business tab from Microsoft Store app on Windows 10 PCs**
+**Removal of private store capability from Microsoft Store for Business and Education**
 
-The Microsoft Store for Business tab was removed from the Microsoft Store app on Windows 10. The Microsoft Store for Business tab is still available on HoloLens devices.
+The private store tab and associated functionality was removed from the Microsoft Store for Business and Education portal. This includes the ability to add apps to private groups and to download and install apps from the private store.  
 
-Users on Windows 10 PCs can no longer do the following tasks:
-
-- see Line of Business (LOB) products listed in the Microsoft Store for Business tab
-- acquire or install [online apps](/mem/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business#online-and-offline-apps)
-- assign licenses for existing [online apps](/mem/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business#online-and-offline-apps) using the Store for Business portal or Store for Business app
-
-[Offline app](/mem/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business#online-and-offline-apps) distribution and licensing scenarios aren't impacted by this change.
-
-We recommend that you add your apps through the new Microsoft Store app experience in Intune. If an app isn’t available in the Microsoft Store, you must retrieve an app package from the vendor and install it as an LOB app or Win32 app. For instructions, read the following articles:
-
-- [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-microsoft)
-- [Add a Windows line-of-business app to Microsoft Intune](/mem/intune/apps/lob-apps-windows)
-- [Add, assign, and monitor a Win32 app in Microsoft Intune](/mem/intune/apps/apps-win32-add)
-
-Follow the [Intune Customer Success blog](https://aka.ms/IntuneCustomerSuccess) where we will publish more information about this change.
-
-<!---
-We've been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new features!
-|  |  |
-|-----------------------|---------------------------------|
-| ![Private store performance icon.](images/perf-improvement-icon.png) |**Performance improvements in private store**<br /><br /> We've made it significantly faster for you to update the private store. Many changes to the private store are available immediately after you make them. <br /><br />[Get more info](./manage-private-store-settings.md#private-store-performance)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
-| <iframe width="288" height="232" src="https://www.youtube-nocookie.com/embed/IpLIZU_j7Z0" frameborder="0" allowfullscreen></iframe>| **Manage Windows device deployment with Windows Autopilot Deployment** <br /><br /> In Microsoft Store for Business, you can manage devices for your organization and apply an Autopilot deployment profile to your devices. When people in your organization run the out-of-box experience on the device, the profile configures Windows, based on the Autopilot deployment profile you applied to the device.<br /><br />[Get more info](add-profile-to-devices.md)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education  |
-| ![Microsoft Store for Business Settings page, Distribute tab showing app requests setting.](images/msfb-wn-1709-app-request.png) |**Request an app**<br /><br />People in your organization can request additional licenses for apps in your private store, and then Admins or Purchasers can make the purchases. <br /><br />[Get more info](./acquire-apps-microsoft-store-for-business.md#request-apps)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
-||  ![Image showing Add a Collection.](images/msfb-add-collection.png) |**Private store collections**<br /><br> You can groups of apps in your private store with **Collections**. This can help you organize apps and help people find apps for their job or classroom. <br /><br />[Get more info](https://review.learn.microsoft.com/microsoft-store/manage-private-store-settings?branch=msfb-14856406#add-a-collection)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
--->
+We recommend customers use the [Private app repository, Windows Package Manager, and Company Portal app](../windows/application-management/private-app-repository-mdm-company-portal-windows-11.md) to provide a private app repository within their organization.
 
 ## Previous releases and updates
+
+[May 2023](release-history-microsoft-store-business-education.md#may-2023)
+- Tab removed from Microsoft Store apps on Windows 10 PCs.
 
 [April 2023](release-history-microsoft-store-business-education.md#april-2023)
 - Tab removed from Microsoft Store apps on Windows 11 PCs.
