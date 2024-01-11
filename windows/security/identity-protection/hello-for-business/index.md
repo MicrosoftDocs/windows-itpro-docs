@@ -20,6 +20,12 @@ The statement *PIN is stronger than Password* is not directed at the strength of
 
 
 
+Windows Hello is a cryptographically strong alternative to a password. Password is a symmetric-based secret—generally, a hash that gets computed on a client and sent to a server at registration time.
+Windows Hello uses asymmetric (public-key) cryptography instead, where the user owns a public and private key pair. It prevents attacks on software by ideally storing the private key in some type of hardware element such as the TPM—thus never leaving the client machine—and the associated public key is registered and stored on a server. During authentication, the user performs a signature operation with the private key. The server containing the public key then validates that signature and trusts that the user is who they say they are because they used the key that was generated at registration time.
+
+Also, as opposed to passwords, Windows Hello supports numerous gestures (e.g., PIN, fingerprint, and face) to access the key pair and authenticate the user to a resource.
+
+
 -->
 
 Windows Hello is an authentication technology built into Windows, targeted at both consumer and organizations. Windows Hello is designed to provide enhanced security and improved ease of use when compared with passwords.
@@ -62,14 +68,14 @@ Windows Hello for Business lets users authenticate to:
 - An Active Directory account
 - Identity provider (IdP) services or relying party (RP) Services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication
 
-Windows Hello for Business offers IT administrators security and management capabilities that are essential for enterprise environments. Policy settings can be deployed to the devices, ensuring that all devices are secure and compliant with organization requirements.
+Windows Hello for Business offers IT administrators security and management capabilities that are essential for organization environments. Policy settings can be deployed to the devices, ensuring that all devices are secure and compliant with organization requirements.
 
 > [!NOTE]
 > FIDO2 (Fast Identity Online) authentication is an open standard for passwordless authentication. It allows users to sign in to their devices and apps using biometric authentication or a physical security key, without the need for a traditional password. FIDO2 support in Windows Hello for Business provides an additional layer of security and convenience for users, while also reducing the risk of password-related attacks.
 
 ## Windows Hello and two factor authentication
 
-Windows Hello for Business uses a two-factor authentication method that combines a device-specific credential with a biometric or PIN gesture. This credential is tied to your identity provider, such as Microsoft Entra ID or Active Directory, and can be used to access enterprise apps, websites, and services.
+Windows Hello for Business uses a two-factor authentication method that combines a device-specific credential with a biometric or PIN gesture. This credential is tied to your identity provider, such as Microsoft Entra ID or Active Directory, and can be used to access organization apps, websites, and services.
 
 After an initial two-step verification of the user during enrollment, Windows Hello is set up on the user's device and Windows asks the user to set a gesture, which can be a biometric, such as a fingerprint, or a PIN. The user provides the gesture to verify their identity. Windows then uses Windows Hello to authenticate users.
 
@@ -150,7 +156,7 @@ To use Iris authentication, you'll need a [HoloLens 2 device](/hololens/). All H
 ## Why a PIN is better than an online password
 
 Windows Hello enables users to sign in to their device using a PIN. How is a PIN different from (and better than) a local password?
-On the surface, a PIN looks much like a password. A PIN can be a set of numbers, but enterprise policy might enforce complex PINs that include special characters and letters, both upper-case and lower-case. Something like **t758A!** could be an account password or a complex Hello PIN. It isn't the structure of a PIN (length, complexity) that makes it better than an online password, it's how it works. First, we need to distinguish between two types of passwords: *local passwords* are validated against the machine's password store, whereas *online passwords* are validated against a server.
+On the surface, a PIN looks much like a password. A PIN can be a set of numbers, but policy settings might enforce complex PINs that include special characters and letters, both upper-case and lower-case. Something like **t758A!** could be an account password or a complex Hello PIN. It isn't the structure of a PIN (length, complexity) that makes it better than an online password, it's how it works. First, we need to distinguish between two types of passwords: *local passwords* are validated against the machine's password store, whereas *online passwords* are validated against a server.
 
 :::row:::
     :::column span="1":::
