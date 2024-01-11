@@ -1,8 +1,8 @@
 ---
 title: SetupDiag
 description: SetupDiag works by examining Windows Setup log files. This article shows how to use the SetupDiag tool to diagnose Windows Setup errors.
-ms.service: windows-client
-ms.subservice: itpro-deploy
+ms.prod: windows-client
+ms.technology: itpro-deploy
 author: frankroj
 manager: aaroncz
 ms.author: frankroj
@@ -21,7 +21,7 @@ appliesto:
 
 > [!NOTE]
 >
-> This is a 300 level topic (moderate advanced). See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
+> This is a 300 level topic (moderate advanced). See [Resolve Windows upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
 
 > [!div class="nextstepaction"]
 > [Download SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142)
@@ -673,4 +673,4 @@ Refer to "https://learn.microsoft.com/windows/desktop/Debug/system-error-codes" 
 
 ## Related articles
 
-- [Resolve Windows 10 upgrade errors: Technical information for IT Pros](./resolve-windows-10-upgrade-errors.md).
+- [Resolve Windows upgrade errors: Technical information for IT Pros](./resolve-windows-10-upgrade-errors.md).
