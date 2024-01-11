@@ -28,7 +28,7 @@ Looking for info on the latest release? Check out [What's new in Microsoft Store
 
 The private store tab and associated functionality was removed from the Microsoft Store for Business and Education portal. This includes the ability to add apps to private groups and to download and install apps from the private store.  
 
-We recommend customers use the [Private app repository, Windows Package Manager, and Company Portal app](../windows/application-management/private-app-repository-mdm-company-portal-windows-11.md) to provide a private app repository within their organization.
+We recommend customers use the [Private app repository, Windows Package Manager, and Company Portal app](/windows/application-management/private-app-repository-mdm-company-portal-windows-11.md) to provide a private app repository within their organization.
 
 ## May 2023
 
