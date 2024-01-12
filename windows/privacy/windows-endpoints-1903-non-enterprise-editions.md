@@ -1,8 +1,8 @@
 ---
 title: Windows 10, version 1903, connection endpoints for non-Enterprise editions
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 1903.
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
@@ -88,7 +88,6 @@ The following methodology was used to derive the network endpoints:
 | oneclient.sfx.ms\* | HTTPS | Used by OneDrive for Business to download and verify app updates
 | onecollector.cloudapp.aria.akadns.net | HTTPS | Microsoft Office
 | ow1.res.office365.com | HTTP | Microsoft Office
-| pti.store.microsoft.com | HTTPS | Microsoft Store
 | purchase.mp.microsoft.com\* | HTTPS | Used to communicate with Microsoft Store
 | query.prod.cms.rt.microsoft.com\* | HTTPS | Used to retrieve Windows Spotlight metadata
 | ris.api.iris.microsoft.com\* | TLSv1.2/HTTPS | Used to retrieve Windows Spotlight metadata
@@ -172,7 +171,6 @@ The following methodology was used to derive the network endpoints:
 | nav.smartscreen.microsoft.com | HTTPS | Windows Defender
 | ocsp.digicert.com\* | HTTP | CRL and OCSP checks to the issuing certificate authorities
 | oneclient.sfx.ms | HTTP | OneDrive
-| pti.store.microsoft.com | HTTPS | Microsoft Store
 | ris.api.iris.microsoft.com.akadns.net | HTTPS | Used to retrieve Windows Spotlight metadata
 | ris-prod-atm.trafficmanager.net | HTTPS | Azure
 | s2s.config.skype.com | HTTP | Microsoft Skype
@@ -251,7 +249,6 @@ The following methodology was used to derive the network endpoints:
 | ocsp.digicert.com\* | HTTP | CRL and OCSP checks to the issuing certificate authorities
 | oneclient.sfx.ms/\* | HTTPS | Used by OneDrive for Business to download and verify app updates
 | onecollector.cloudapp.aria.akadns.net | HTTPS | Microsoft Office
-| pti.store.microsoft.com | HTTPS | Microsoft Store
 | settings-win.data.microsoft.com/settings/\* | HTTPS | Used as a way for apps to dynamically update their configuration
 | share.microsoft.com | HTTPS | Microsoft Store
 | skypeecs-prod-usw-0.cloudapp.net | HTTPS | Skype
