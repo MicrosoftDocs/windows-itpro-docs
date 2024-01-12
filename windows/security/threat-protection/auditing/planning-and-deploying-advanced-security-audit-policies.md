@@ -4,7 +4,6 @@ description: Learn to deploy an effective security audit policy in a network tha
 ms.assetid: 7428e1db-aba8-407b-a39e-509671e5a442
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 09/09/2021
-ms.technology: itpro-security
 ---
 
 # Plan and deploy advanced security audit policies

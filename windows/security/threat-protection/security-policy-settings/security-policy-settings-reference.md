@@ -4,7 +4,6 @@ description: This reference of security settings provides information about how 
 ms.assetid: ef5a4579-15a8-4507-9a43-b7ccddcb0ed1
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Security policy settings reference

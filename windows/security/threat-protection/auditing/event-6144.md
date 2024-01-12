@@ -2,7 +2,6 @@
 title: 6144(S) Security policy in the group policy objects has been applied successfully. 
 description: Describes security event 6144(S) Security policy in the group policy objects has been applied successfully.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/08/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

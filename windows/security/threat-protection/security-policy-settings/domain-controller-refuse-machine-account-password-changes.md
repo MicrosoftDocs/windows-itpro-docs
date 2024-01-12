@@ -3,12 +3,10 @@ title: Refuse machine account password changes policy
 description: Describes the best practices, location, values, and security considerations for the Domain controller Refuse machine account password changes security policy setting.
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 ms.topic: reference
-ms.technology: itpro-security
 ms.date: 12/31/2017
 ---
 
