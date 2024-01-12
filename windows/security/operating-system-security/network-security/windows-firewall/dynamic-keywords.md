@@ -186,85 +186,10 @@ New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound
 
 ## Example rules for block all outbound and allow some FQDNs
 
-### Chrome Config
+This is a sample list of application FQDN evaluation. These were observed when inspecting traffic on the first launch of Microsoft Edge.
 
-This is a sample list of application FQDN evaluation. These were observed when inspecting traffic on Chrome first launch. This is not a complete list and not a recommendation. It is an example of how an application should be evaluated to ensure proper connectivity and function, as https://microsoft.sharepoint.com/teams/windowsdefender/Shared%20Documents/WiAD%20PM/Boost%20-%20Data%20and%20Web%20Protection/Firewall/General%20FQDN%20Firewall%20Rule%20Considerations.docx#_Configuring_block_all.
-
-```PowerShell
-$id = '{' + (new-guid).ToString() + '}'
-$fqdn = '*.google.com'
-New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
-New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
- 
-$id = '{' + (new-guid).ToString() + '}'
-$fqdn = 'http://www.google.com/'
-New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
-New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
- 
-$id = '{' + (new-guid).ToString() + '}'
-$fqdn = 'google.com'
-New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
-New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
- 
-$id = '{' + (new-guid).ToString() + '}'
-$fqdn = '*.googleapis.com'
-New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
-New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
- 
-$id = '{' + (new-guid).ToString() + '}'
-$fqdn = '*.googleusercontent.com'
-New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
-New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
- 
-$id = '{' + (new-guid).ToString() + '}'
-$fqdn = 'http://www.gstatic.com/'
-New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
-New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
- 
-$id = '{' + (new-guid).ToString() + '}'
-$fqdn = 'ipv6.msftconnecttest.com'
-New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
-New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
- 
-$id = '{' + (new-guid).ToString() + '}'
-$fqdn = 'client.wns.windows.com'
-New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
-New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
- 
-$id = '{' + (new-guid).ToString() + '}'
-$fqdn = 'dns.msftncsi.com'
-New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
-New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
- 
-$id = '{' + (new-guid).ToString() + '}'
-$fqdn = '*.microsoft.com'
-New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
-New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
- 
-$id = '{' + (new-guid).ToString() + '}'
-$fqdn = 'http://www.microsoft.com/'
-New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
-New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
- 
-$id = '{' + (new-guid).ToString() + '}'
-$fqdn = 'microsoft.com'
-New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
-New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
- 
-$id = '{' + (new-guid).ToString() + '}'
-$fqdn = '*.gfx.ms.com'
-New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
-New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
-```
-
-### Edge Rules
-
-This is a sample list of application FQDN evaluation. These were observed when inspecting traffic on Edge first launch.
-
-> [!NOTE]
-> This is not a complete list and not a recommendation. It is an example of how an application should be evaluated to ensure proper connectivity and function, as described above.
-
-[Edge](deployedge/microsoft-edge-security-endpoints)
+> [!IMPORTANT]
+> This is not a complete list nor a recommendation. It's an example of how an application should be evaluated to ensure proper connectivity and function.
 
 ```PowerShell
 $id = '{' + (new-guid).ToString() + '}'
@@ -332,3 +257,5 @@ $fqdn = 'http://www.microsoft.com/'
 New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
 New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
 ```
+
+To learn more about Microsoft Edge requirements for Internet connectivity, see [Allow list for Microsoft Edge endpoints](/deployedge/microsoft-edge-security-endpoints).
