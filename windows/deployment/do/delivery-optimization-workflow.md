@@ -25,7 +25,7 @@ Delivery Optimization is a cloud-managed solution that uses peer-to-peer (P2P) a
 
 Delivery Optimization can't be used to download or send personal content. Delivery Optimization doesn't access personal files or folders, and it doesn't change any files on the device.
 
-Delivery Optimization downloads the same updates and apps that you would get through [Windows Update](../update/windows-update-security.md) and the Microsoft Store, using the same security measures. To make sure you're getting authentic updates, Delivery Optimization gets information securely from Microsoft to check the authenticity of each part of an update or app that it downloads from other PCs. The authenticity of the downloads is checked again before installing it. <!--8658744-->
+Delivery Optimization downloads the same updates and apps that you would get through [Windows Update](../update/windows-update-security.md), Microsoft Store apps, and other Microsoft updates using the same security measures. To make sure you're getting authentic updates, Delivery Optimization gets information securely from Microsoft to check the authenticity of each part of an update or app that it downloads from other PCs. The authenticity of the downloads is checked again before installing it. <!--8658744-->
 
 ## Download request workflow  
 
