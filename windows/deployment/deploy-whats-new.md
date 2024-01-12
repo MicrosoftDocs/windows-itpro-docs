@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.collection:
   - highpri
   - tier2
-ms.date: 11/17/2023
+ms.date: 01/12/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -21,7 +21,7 @@ appliesto:
 
 This article provides an overview of new solutions and online content related to deploying Windows client in your organization.
 
-- For an all-up overview of new features in Windows 10, see [What's new in Windows 10](/windows/whats-new/index).
+- For an all-up overview of new features in Windows, see [What's new in Windows](/windows/whats-new/).
 
 ## [Preview] Windows Autopilot diagnostics page
 
@@ -88,7 +88,7 @@ The following Delivery Optimization policies are removed in the Windows 10, vers
 
 - **Intune console updates**: target version is now available allowing you to specify which supported version of Windows you want devices to move to. Additionally, this capability enables you to keep devices on their current version until they reach end of service. Check it out in Intune, also available as a Group Policy and Configuration Service Provider (CSP) policy.
 
-- **Validation improvements**: To ensure devices and end users stay productive and protected, Microsoft blocks devices from updating when there are known issues that would impact that device. Also, to better enable IT administrators to validate on the latest release, a new policy is available that enables admins to opt devices out of the built-in safeguard holds.
+- **Validation improvements**: To ensure devices and end users stay productive and protected, Microsoft blocks devices from updating when there are known issues affect that device. Also, to better enable IT administrators to validate on the latest release, a new policy is available that enables admins to opt devices out of the built-in safeguard holds.
 
 - [**Automatic Restart Sign-on (ARSO)**](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-): Windows automatically signs in as the user and locks their device in order to complete the update. This automatic sign-on ensures that when the user returns and unlocks the device, the update is completed.
 
@@ -158,8 +158,8 @@ Input from the community heavily influenced the development of Upgrade Readiness
 
 For more information about Upgrade Readiness, see the following articles:
 
-- [Windows Analytics blog](https://aka.ms/blog/WindowsAnalytics/)
-- [Manage Windows upgrades with Upgrade Readiness](/mem/configmgr/desktop-analytics/overview)
+- [Windows Analytics blog](https://aka.ms/blog/WindowsAnalytics/).
+- [Manage Windows upgrades with Upgrade Readiness](/mem/configmgr/desktop-analytics/overview).
 
 ### Update Compliance
 
@@ -215,7 +215,7 @@ For more information, see the following guides:
 
 ## Troubleshooting guidance
 
-[Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md) was published in October of 2016 and continues to be updated with new fixes. The article provides a detailed explanation of the Windows upgrade process and instructions on how to locate, interpret, and resolve specific errors that can be encountered during the upgrade process.
+[Resolve Windows upgrade errors](upgrade/resolve-windows-upgrade-errors.md) was published in October of 2016 and continues to be updated with new fixes. The article provides a detailed explanation of the Windows upgrade process and instructions on how to locate, interpret, and resolve specific errors that can be encountered during the upgrade process.
 
 ## Related articles
 

@@ -1,6 +1,6 @@
 ---
 title: Log files and resolving upgrade errors
-description: Learn how to interpret and analyze the log files that are generated during the Windows 10 upgrade process.
+description: Learn how to interpret and analyze the log files that are generated during the Windows upgrade process.
 ms.prod: windows-client
 author: frankroj
 manager: aaroncz
@@ -11,28 +11,27 @@ ms.collection:
   - highpri
   - tier2
 ms.technology: itpro-deploy
-ms.date: 10/28/2022
+ms.date: 01/12/2024
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Windows upgrade log files
 
-**Applies to**
-
-- Windows 10
-
 > [!NOTE]
+>
 > This is a 400-level topic (advanced).<br>
-
-> See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
+>
+> See [Resolve Windows upgrade errors](resolve-windows-upgrade-errors.md) for a full list of topics in this article.
 
 Several log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure Windows Explorer to view hidden items, or use a tool to automatically gather these logs. The most useful log is **setupact.log**. The log files are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code. 
 
 > [!NOTE]
+>
 > Also see the [Windows Error Reporting](windows-error-reporting.md) section in this document for help locating error codes and log files.
 
-The following table describes some log files and how to use them for troubleshooting purposes: 
-
-
+The following table describes some log files and how to use them for troubleshooting purposes:
 
 |Log file |Phase: Location |Description |When to use|
 |---|---|---|---|
@@ -48,21 +47,17 @@ The following table describes some log files and how to use them for troubleshoo
 
 ## Log entry structure
 
-A setupact.log or setuperr.log entry (files are located at C:\Windows) includes the following elements:
+A `setupact.log` or `setuperr.log` entry (files are located at C:\Windows) includes the following elements:
 
 1. **The date and time** - 2016-09-08 09:20:05
 
+1. **The log level** - Info, Warning, Error, Fatal Error
 
-2. **The log level** - Info, Warning, Error, Fatal Error
+1. **The logging component** - CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS
 
+  The logging components SP (setup platform), MIG (migration engine), and CONX (compatibility information) are useful for troubleshooting Windows Setup errors.
 
-3. **The logging component** - CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS
-
-
-   The logging components SP (setup platform), MIG (migration engine), and CONX (compatibility information) are useful for troubleshooting Windows Setup errors.
-
-
-4. **The message** - Operation completed successfully.
+1. **The message** - Operation completed successfully.
 
 See the following example:
 
@@ -78,39 +73,40 @@ To analyze Windows Setup log files:
 
 1. Determine the Windows Setup error code. This code should be returned by Windows Setup if it isn't successful with the upgrade process.
 
-2. Based on the [extend code](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#extend-codes) portion of the error code, determine the type and location of a log file to investigate.
+1. Based on the [extend code](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#extend-codes) portion of the error code, determine the type and location of a log file to investigate.
 
-3. Open the log file in a text editor, such as notepad.
+1. Open the log file in a text editor, such as notepad.
 
-4. Using the [result code](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#result-codes) portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the "abort" and abandoning" text strings described in step 7 below.
+1. Using the [result code](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#result-codes) portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the "abort" and abandoning" text strings described in step 7 below.
 
-5. To find the last occurrence of the result code:
+1. To find the last occurrence of the result code:
 
     1. Scroll to the bottom of the file and select after the last character.
-    2. Select **Edit**.
-    3. Select **Find**.
-    4. Type the result code.
-    5. Under **Direction** select **Up**.
-    6. Select **Find Next**.
+    1. Select **Edit**.
+    1. Select **Find**.
+    1. Type the result code.
+    1. Under **Direction** select **Up**.
+    1. Select **Find Next**.
 
-6. When you've located the last occurrence of the result code, scroll up a few lines from this location in the file and review the processes that failed prior to generating the result code.
+1. When you've located the last occurrence of the result code, scroll up a few lines from this location in the file and review the processes that failed prior to generating the result code.
 
-7. Search for the following important text strings:
+1. Search for the following important text strings:
 
    - `Shell application requested abort`
    - `Abandoning apply due to error for object`
 
-8. Decode Win32 errors that appear in this section.
+1. Decode Win32 errors that appear in this section.
 
-9. Write down the timestamp for the observed errors in this section.
+1. Write down the timestamp for the observed errors in this section.
 
-10. Search other log files for additional information matching these timestamps or errors.
+1. Search other log files for additional information matching these timestamps or errors.
 
 For example, assume that the error code for an error is 0x8007042B - 0x2000D. Searching for "8007042B" reveals the following content from the setuperr.log file:
 
 > [!NOTE]
+>
 > Some lines in the text below are shortened to enhance readability. For example
-> 
+>
 > - The date and time at the start of each line (ex: 2016-10-05 15:27:08) is shortened to minutes and seconds
 > - The certificate file name, which is a long text string, is shortened to just "CN."
 
@@ -250,15 +246,16 @@ Therefore, Windows Setup failed because it wasn't able to migrate the corrupt fi
 <<<  [Exit status: FAILURE(0xC1900101)]
 ```
 
-This analysis indicates that the Windows upgrade error can be resolved by deleting the C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN] file.
+This analysis indicates that the Windows upgrade error can be resolved by deleting the `C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN]` file.
 
 > [!NOTE]
-> In this example, the full, unshortened file name is  C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\be8228fb2d3cb6c6b0ccd9ad51b320b4_a43d512c-69f2-42de-aef9-7a88fabdaa3f. 
+>
+> In this example, the full, unshortened file name is  `C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\be8228fb2d3cb6c6b0ccd9ad51b320b4_a43d512c-69f2-42de-aef9-7a88fabdaa3f`.
 
 ## Related articles
 
-[Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml)
-<br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
-<br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
-<br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
-<br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](/troubleshoot/windows-server/deployment/fix-windows-update-errors)
+- [Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml).
+- [Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx).
+- [Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications).
+- [Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro).
+- [Fix Windows Update errors by using the DISM or System Update Readiness tool](/troubleshoot/windows-server/deployment/fix-windows-update-errors).

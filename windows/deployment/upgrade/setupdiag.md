@@ -11,7 +11,7 @@ ms.topic: troubleshooting
 ms.collection:
   - highpri
   - tier2
-ms.date: 01/10/2024
+ms.date: 01/12/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -21,7 +21,7 @@ appliesto:
 
 > [!NOTE]
 >
-> This is a 300 level topic (moderate advanced). See [Resolve Windows upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
+> This is a 300 level article (moderate advanced). See [Resolve Windows upgrade errors](resolve-windows-upgrade-errors.md) for a full list of articles in this section.
 
 > [!div class="nextstepaction"]
 > [Download SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142)
@@ -30,7 +30,7 @@ appliesto:
 
 > [!IMPORTANT]
 >
-> Always be sure to run the most recent version of SetupDiag. This ensures the latest functionality and fixes to known issues.
+> Microsoft recommends running the latest version of SetupDiag when running it manually. The latest version is available via the following [download link](https://go.microsoft.com/fwlink/?linkid=870142). Running the latest version ensures the latest functionality and fixes known issues.
 
 SetupDiag is a diagnostic tool that can be used to obtain details about why a Windows upgrade was unsuccessful.
 
@@ -38,7 +38,7 @@ SetupDiag works by examining Windows Setup log files. It attempts to parse these
 
 SetupDiag is included with [Windows Setup](/windows-hardware/manufacture/desktop/deployment-troubleshooting-and-log-files#windows-setup-scenario) in all currently supported versions of Windows.
 
-During the upgrade process, Windows Setup will extract all its sources files, including **SetupDiag.exe**, to the **%SystemDrive%\$Windows.~bt\Sources** directory. If there's an issue with the upgrade, SetupDiag will automatically run to determine the cause of the failure.
+During the upgrade process, Windows Setup extracts all its sources files, including **SetupDiag.exe**, to the **%SystemDrive%\$Windows.~bt\Sources** directory. If there's an issue with the upgrade, SetupDiag automatically runs to determine the cause of the failure.
 
 When run by Windows Setup, the following [parameters](#parameters) are used:
 
@@ -47,29 +47,29 @@ When run by Windows Setup, the following [parameters](#parameters) are used:
 - /Output:%windir%\logs\SetupDiag\SetupDiagResults.xml
 - /RegPath:HKEY_LOCAL_MACHINE\SYSTEM\Setup\SetupDiag\Results
 
-The resulting SetupDiag analysis can be found at `%WinDir%\Logs\SetupDiag\SetupDiagResults.xml` and in the registry under `HKLM\SYSTEM\Setup\SetupDiag\Results`.  Note that the registry path isn't the same as the default registry path when SetupDiag is run manually. When SetupDiag is run manually, and the `/RegPath` parameter isn't specified, data is stored in the registry at `HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag`.
+The resulting SetupDiag analysis can be found at `%WinDir%\Logs\SetupDiag\SetupDiagResults.xml` and in the registry under `HKLM\SYSTEM\Setup\SetupDiag\Results`. Note that the registry path isn't the same as the default registry path when SetupDiag is run manually. When SetupDiag is run manually, and the `/RegPath` parameter isn't specified, data is stored in the registry at `HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag`.
 
 > [!IMPORTANT]
 >
 > When SetupDiag indicates that there were multiple failures, the last failure in the log file is typically the fatal error, not the first one.
 
-If the upgrade process proceeds normally, the **Sources** directory including **SetupDiag.exe** is moved under **%SystemDrive%\Windows.Old** for cleanup. If the **Windows.old** directory is deleted later, **SetupDiag.exe** will also be removed.
+If the upgrade process proceeds normally, the **Sources** directory including **SetupDiag.exe** is moved under **%SystemDrive%\Windows.Old** for cleanup. If the **Windows.old** directory is deleted later, **SetupDiag.exe** is also removed.
 
 ## Using SetupDiag
 
 To quickly use SetupDiag on your current computer:
 
-1. Verify that your system meets the [requirements](#requirements) described below. If needed, install [.NET framework 4.6](https://www.microsoft.com/download/details.aspx?id=48137).
+1. Verify that your system meets the [requirements](#requirements). If needed, install [.NET framework 4.6](https://www.microsoft.com/download/details.aspx?id=48137).
 
 1. [Download SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142).
 
-1. If your web browser asks what to do with the file, choose **Save**. By default, the file will be saved to your **Downloads** folder. IF desired, you can also save it to a different location by using **Save As**.
+1. If your web browser asks what to do with the file, choose **Save**. By default, the file is saved to the **Downloads** folder. If desired, you can also save it to a different location by using **Save As**.
 
-1. When SetupDiag has finished downloading, open the folder where you downloaded the file. By default, this folder is the **Downloads** folder, which is displayed in File Explorer under **Quick access** in the left navigation pane.
+1. When SetupDiag finishes downloading, open the folder where you downloaded the file. By default, this folder is the **Downloads** folder, which is displayed in File Explorer under **Quick access** in the left navigation pane.
 
 1. Double-click the **SetupDiag** file to run it. Select **Yes** if you're asked to approve running the program.
 
- Double-clicking the file to run it will automatically close the command window when SetupDiag has completed its analysis. If you wish to keep this window open instead, and review the messages that you see, run the program by typing **SetupDiag** at the command prompt instead of double-clicking it. You'll need to change directories to the location of SetupDiag to run it this way.
+ Double-clicking the file to run it automatically closes the command window when SetupDiag has completed its analysis. If you wish to keep this window open instead, and review the messages that you see, run the program by typing **SetupDiag** at the command prompt instead of double-clicking it. You'll need to change directories to the location of SetupDiag to run it this way.
 
 1. A command window will open while SetupDiag diagnoses your computer. Wait for this process to finish.
 
@@ -673,4 +673,4 @@ Refer to "https://learn.microsoft.com/windows/desktop/Debug/system-error-codes" 
 
 ## Related articles
 
-- [Resolve Windows upgrade errors: Technical information for IT Pros](./resolve-windows-10-upgrade-errors.md).
+- [Resolve Windows upgrade errors: Technical information for IT Pros](./resolve-windows-upgrade-errors.md).

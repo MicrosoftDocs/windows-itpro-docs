@@ -129,7 +129,7 @@ additionalContent:
           - text: Convert a disk from MBR to GPT
             url: mbr-to-gpt.md
           - text: Resolve Windows upgrade errors
-            url: upgrade/resolve-windows-10-upgrade-errors.md
+            url: upgrade/resolve-windows-upgrade-errors.md
 
       - title: Licensing and activation
         links:
