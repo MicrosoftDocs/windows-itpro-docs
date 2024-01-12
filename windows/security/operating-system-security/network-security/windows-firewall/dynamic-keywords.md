@@ -197,3 +197,10 @@ foreach ($domain in $domains) {
     New-NetFirewallRule -DisplayName "allow $domain" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
 }
 ```
+
+For more information about the PowerShell cmdlets used to manage dynamic keywords, see:
+
+- [Get-NetFirewallDynamicKeywordAddress](/powershell/module/netsecurity/get-netfirewalldynamickeywordaddress)
+- [New-NetFirewallDynamicKeywordAddress](/powershell/module/netsecurity/new-netfirewalldynamickeywordaddress)
+- [Remove-NetFirewallDynamicKeywordAddress](/powershell/module/netsecurity/remove-netfirewalldynamickeywordaddress)
+- [Update-NetFirewallDynamicKeywordAddress](/powershell/module/netsecurity/update-netfirewalldynamickeywordaddress)
