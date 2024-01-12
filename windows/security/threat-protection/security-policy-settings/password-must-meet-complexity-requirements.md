@@ -8,7 +8,7 @@ manager: aaroncz
 ms.collection:
  - highpri
  - tier3
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/07/2023
 ---
 

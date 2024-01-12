@@ -1,13 +1,13 @@
 ---
 title: Add workstations to domain
 description: Describes the best practices, location, values, policy management and security considerations for the Add workstations to domain security policy setting.
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -81,7 +81,7 @@ This policy has the following security considerations:
 
 ### Vulnerability
 
-The **Add workstations to domain** user right presents a moderate vulnerability. Users with this right could add a device to the domain that is configured in a way that violates organizational security policies. For example, if your organization doesn't want its users to have administrative 
+The **Add workstations to domain** user right presents a moderate vulnerability. Users with this right could add a device to the domain that is configured in a way that violates organizational security policies. For example, if your organization doesn't want its users to have administrative
 privileges on their devices, users could install Windows on their computers and then add the computers to the domain. The user would know the password for the local administrator account, could sign in with that account, and then add a personal domain account to the local Administrators group.
 
 ### Countermeasure

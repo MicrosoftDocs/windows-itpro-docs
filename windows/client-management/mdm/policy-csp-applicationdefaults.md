@@ -4,7 +4,7 @@ description: Learn more about the ApplicationDefaults Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/03/2023
+ms.date: 12/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- DefaultAssociationsConfiguration-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-This policy allows an administrator to set default file type and protocol associations. When set, default associations will be applied on sign-in to the PC. The association file can be created using the DISM tool (dism /online /export-defaultappassociations:appassoc. xml), and then needs to be base64 encoded before being added to SyncML. If policy is enabled and the client machine is Microsoft Entra joined, the associations assigned in SyncML will be processed and default associations will be applied.
+This policy allows an administrator to set default file type and protocol associations. When set, default associations will be applied on sign-in to the PC. The association file can be created using the DISM tool (dism /online /export-defaultappassociations:appassoc.xml). The file can be further edited by adding attributes to control how often associations are applied by the policy. The file then needs to be base64 encoded before being added to SyncML. If policy is enabled and the client machine is Microsoft Entra joined, the associations assigned in SyncML will be processed and default associations will be applied.
 <!-- DefaultAssociationsConfiguration-Description-End -->
 
 <!-- DefaultAssociationsConfiguration-Editable-Begin -->
@@ -158,7 +158,7 @@ To create the SyncML, follow these steps:
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Windows supports web-to-app linking with app URI handlers.
 
-Enabling this policy setting enables web-to-app linking so that apps can be launched with a http(s) URI.
+Enabling this policy setting enables web-to-app linking so that apps can be launched with an http(s) URI.
 
 Disabling this policy disables web-to-app linking and http(s) URIs will be opened in the default browser instead of launching the associated app.
 

@@ -1,8 +1,8 @@
 ---
-title: Load and unload device drivers 
+title: Load and unload device drivers
 description: Describes the best practices, location, values, policy management, and security considerations for the Load and unload device drivers security policy setting.
 ms.assetid: 66262532-c610-470c-9792-35ff4389430f
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -56,13 +56,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Administrators<br/>Print Operators| 
-| Stand-Alone Server Default Settings | Administrators| 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Administrators<br/>Print Operators|
+| Stand-Alone Server Default Settings | Administrators|
 | Domain Controller Effective Default Settings | Administrators<br/>Print Operators |
-| Member Server Effective Default Settings | Administrators| 
-| Client Computer Effective Default Settings | Administrators| 
- 
+| Member Server Effective Default Settings | Administrators|
+| Client Computer Effective Default Settings | Administrators|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.
@@ -91,7 +91,7 @@ This section describes how an attacker might exploit a feature or its configurat
 Device drivers run as highly privileged code. A user who has the **Load and unload device drivers** user right could unintentionally install malware that masquerades as a device driver. Administrators should exercise care and install only drivers with verified digital signatures.
 
 >**Note:**  You must have this user right or be a member of the local Administrators group to install a new driver for a local printer or to manage a local printer and configure defaults for options such as duplex printing.
- 
+
 ### Countermeasure
 
 Don't assign the **Load and unload device drivers** user right to any user or group other than Administrators on member servers. On domain controllers, don't assign this user right to any user or group other than Domain Admins.

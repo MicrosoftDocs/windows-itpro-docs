@@ -1,8 +1,8 @@
 ---
-title: Perform volume maintenance tasks 
+title: Perform volume maintenance tasks
 description: Describes the best practices, location, values, policy management, and security considerations for the Perform volume maintenance tasks security policy setting.
 ms.assetid: b6990813-3898-43e2-8221-c9c06d893244
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -54,13 +54,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Administrators| 
-| Stand-Alone Server Default Settings | Administrators| 
-| DC Effective Default Settings | Administrators| 
-| Member Server Effective Default Settings | Administrators| 
-| Client Computer Effective Default Settings | Administrators| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Administrators|
+| Stand-Alone Server Default Settings | Administrators|
+| DC Effective Default Settings | Administrators|
+| Member Server Effective Default Settings | Administrators|
+| Client Computer Effective Default Settings | Administrators|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

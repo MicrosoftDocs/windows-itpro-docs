@@ -4,7 +4,7 @@ description: Learn more about the LocalPoliciesSecurityOptions Area in Policy CS
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/03/2023
+ms.date: 12/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2125,6 +2125,109 @@ Microsoft network server: Server SPN target name validation level This policy se
 
 <!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-End -->
 
+<!-- MinimumPasswordLength-Begin -->
+## MinimumPasswordLength
+
+<!-- MinimumPasswordLength-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- MinimumPasswordLength-Applicability-End -->
+
+<!-- MinimumPasswordLength-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/MinimumPasswordLength
+```
+<!-- MinimumPasswordLength-OmaUri-End -->
+
+<!-- MinimumPasswordLength-Description-Begin -->
+<!-- Description-Source-DDF -->
+This security setting determines the least number of characters that a password for a user account may contain. The maximum value for this setting depends on the value of the Relax minimum password length limits setting. If the Relax minimum password length limits setting isn't defined, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and disabled, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and enabled, this setting may be configured from 0 to 128. Setting the required number of characters to 0 means that no password is required.
+
+> [!NOTE]
+> By default, member computers follow the configuration of their domain controllers. Default values: 7 on domain controllers 0 on stand-alone servers Configuring this setting larger than 14 may affect compatibility with clients, services, and applications. We recommend that you only configure this setting larger than 14 after you use the Minimum password length audit setting to test for potential incompatibilities at the new setting.
+<!-- MinimumPasswordLength-Description-End -->
+
+<!-- MinimumPasswordLength-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MinimumPasswordLength-Editable-End -->
+
+<!-- MinimumPasswordLength-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-128]` |
+| Default Value  | 0 |
+<!-- MinimumPasswordLength-DFProperties-End -->
+
+<!-- MinimumPasswordLength-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Minimum password length |
+| Path | Windows Settings > Security Settings > Account Policies > Password Policy |
+<!-- MinimumPasswordLength-GpMapping-End -->
+
+<!-- MinimumPasswordLength-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MinimumPasswordLength-Examples-End -->
+
+<!-- MinimumPasswordLength-End -->
+
+<!-- MinimumPasswordLengthAudit-Begin -->
+## MinimumPasswordLengthAudit
+
+<!-- MinimumPasswordLengthAudit-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- MinimumPasswordLengthAudit-Applicability-End -->
+
+<!-- MinimumPasswordLengthAudit-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/MinimumPasswordLengthAudit
+```
+<!-- MinimumPasswordLengthAudit-OmaUri-End -->
+
+<!-- MinimumPasswordLengthAudit-Description-Begin -->
+<!-- Description-Source-DDF -->
+This security setting determines the minimum password length for which password length audit warning events are issued. This setting may be configured from 1 to 128. You should only enable and configure this setting when you try to determine the potential effect of increasing the minimum password length setting in your environment. If this setting isn't defined, audit events won't be issued. If this setting is defined and is less than or equal to the minimum password length setting, audit events won't be issued. If this setting is defined and is greater than the minimum password length setting, and the length of a new account password is less than this setting, an audit event will be issued.
+<!-- MinimumPasswordLengthAudit-Description-End -->
+
+<!-- MinimumPasswordLengthAudit-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MinimumPasswordLengthAudit-Editable-End -->
+
+<!-- MinimumPasswordLengthAudit-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[1-128]` |
+| Default Value  | 4294967295 |
+<!-- MinimumPasswordLengthAudit-DFProperties-End -->
+
+<!-- MinimumPasswordLengthAudit-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Minimum password length audit |
+| Path | Windows Settings > Security Settings > Account Policies > Password Policy |
+<!-- MinimumPasswordLengthAudit-GpMapping-End -->
+
+<!-- MinimumPasswordLengthAudit-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MinimumPasswordLengthAudit-Examples-End -->
+
+<!-- MinimumPasswordLengthAudit-End -->
+
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-Begin -->
 ## NetworkAccess_AllowAnonymousSIDOrNameTranslation
 
@@ -3569,6 +3672,64 @@ Recovery console: Allow floppy copy and access to all drives and all folders Ena
 
 <!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-End -->
 
+<!-- RelaxMinimumPasswordLengthLimits-Begin -->
+## RelaxMinimumPasswordLengthLimits
+
+<!-- RelaxMinimumPasswordLengthLimits-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- RelaxMinimumPasswordLengthLimits-Applicability-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/RelaxMinimumPasswordLengthLimits
+```
+<!-- RelaxMinimumPasswordLengthLimits-OmaUri-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting controls whether the minimum password length setting can be increased beyond the legacy limit of 14. If this setting isn't defined, minimum password length may be configured to no more than 14. If this setting is defined and disabled, minimum password length may be configured to no more than 14. If this setting is defined and enabled, minimum password length may be configured more than 14.
+<!-- RelaxMinimumPasswordLengthLimits-Description-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RelaxMinimumPasswordLengthLimits-Editable-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- RelaxMinimumPasswordLengthLimits-DFProperties-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- RelaxMinimumPasswordLengthLimits-AllowedValues-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Relax minimum password length |
+| Path | Windows Settings > Security Settings > Account Policies > Password Policy |
+<!-- RelaxMinimumPasswordLengthLimits-GpMapping-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RelaxMinimumPasswordLengthLimits-Examples-End -->
+
+<!-- RelaxMinimumPasswordLengthLimits-End -->
+
 <!-- Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn-Begin -->
 ## Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn
 
@@ -4132,7 +4293,7 @@ User Account Control: Only elevate executable files that are signed and validate
 
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Only elevate UIAccess applications that are installed in secure locations This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following: - ...\Program Files\, including subfolders - ...\Windows\system32\ - ...\Program Files (x86)\, including subfolders for 64-bit versions of Windows Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting. The options are: - Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity. - Disabled: An application runs with UIAccess integrity even if it doesn't reside in a secure location in the file system.
+User Account Control: Only elevate UIAccess applications that are installed in secure locations This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following: - ..\Program Files\, including subfolders - ..\Windows\system32\ - ..\Program Files (x86)\, including subfolders for 64-bit versions of Windows Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting. The options are: - Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity. - Disabled: An application runs with UIAccess integrity even if it doesn't reside in a secure location in the file system.
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Description-End -->
 
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Editable-Begin -->
