@@ -57,7 +57,7 @@ To create rules from the WDAC events in [MDE Advanced Hunting](../operations/que
 1. Navigate to the Advanced Hunting section within the MDE console and query the WDAC events. **The Wizard requires the following fields** in the Advanced Hunting csv file export: 
 
    ```KQL
-   | project Timestamp, DeviceId, DeviceName, ActionType, FileName, FolderPath, SHA1, SHA256, IssuerName, IssuerTBSHash, PublisherName, PublisherTBSHash, AuthenticodeHash, PolicyId, PolicyName
+   | project-keep Timestamp, DeviceId, DeviceName, ActionType, FileName, FolderPath, SHA1, SHA256, IssuerName, IssuerTBSHash, PublisherName, PublisherTBSHash, AuthenticodeHash, PolicyId, PolicyName
    ```
 
    The following Advanced Hunting query is recommended:
@@ -76,7 +76,7 @@ To create rules from the WDAC events in [MDE Advanced Hunting](../operations/que
    | extend PolicyId = parsejson(AdditionalFields).PolicyID
    | extend PolicyName = parsejson(AdditionalFields).PolicyName
    // Keep only required fields for the WDAC Wizard
-   | project Timestamp,DeviceId,DeviceName,ActionType,FileName,FolderPath,SHA1,SHA256,IssuerName,IssuerTBSHash,PublisherName,PublisherTBSHash,AuthenticodeHash,PolicyId,PolicyName
+   | project-keep Timestamp,DeviceId,DeviceName,ActionType,FileName,FolderPath,SHA1,SHA256,IssuerName,IssuerTBSHash,PublisherName,PublisherTBSHash,AuthenticodeHash,PolicyId,PolicyName
    ```
 
 2. Export the WDAC event results by selecting the **Export** button in the results view.
