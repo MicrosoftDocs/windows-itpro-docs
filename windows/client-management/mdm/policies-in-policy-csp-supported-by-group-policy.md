@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP supported by Group Policy.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/03/2023
+ms.date: 12/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -390,6 +390,9 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [DomainMember_DisableMachineAccountPasswordChanges](policy-csp-localpoliciessecurityoptions.md)
 - [DomainMember_MaximumMachineAccountPasswordAge](policy-csp-localpoliciessecurityoptions.md)
 - [DomainMember_RequireStrongSessionKey](policy-csp-localpoliciessecurityoptions.md)
+- [MinimumPasswordLength](policy-csp-localpoliciessecurityoptions.md)
+- [MinimumPasswordLengthAudit](policy-csp-localpoliciessecurityoptions.md)
+- [RelaxMinimumPasswordLengthLimits](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_DoNotRequireCTRLALTDEL](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_DoNotDisplayLastSignedIn](policy-csp-localpoliciessecurityoptions.md)
@@ -691,8 +694,24 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 
 ## SystemServices
 
+- [ConfigureComputerBrowserServiceStartupMode](policy-csp-systemservices.md)
 - [ConfigureHomeGroupListenerServiceStartupMode](policy-csp-systemservices.md)
 - [ConfigureHomeGroupProviderServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureIISAdminServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureInfraredMonitorServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureInternetConnectionSharingServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureLxssManagerServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureMicrosoftFTPServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureRemoteProcedureCallLocatorServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureRoutingAndRemoteAccessServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureSimpleTCPIPServicesStartupMode](policy-csp-systemservices.md)
+- [ConfigureSpecialAdministrationConsoleHelperServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureSSDPDiscoveryServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureUPnPDeviceHostServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureWebManagementServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureWindowsMediaPlayerNetworkSharingServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureWindowsMobileHotspotServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureWorldWideWebPublishingServiceStartupMode](policy-csp-systemservices.md)
 - [ConfigureXboxAccessoryManagementServiceStartupMode](policy-csp-systemservices.md)
 - [ConfigureXboxLiveAuthManagerServiceStartupMode](policy-csp-systemservices.md)
 - [ConfigureXboxLiveGameSaveServiceStartupMode](policy-csp-systemservices.md)
@@ -829,6 +848,8 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [LogOnAsService](policy-csp-userrights.md)
 - [IncreaseProcessWorkingSet](policy-csp-userrights.md)
 - [DenyLogOnAsService](policy-csp-userrights.md)
+- [AdjustMemoryQuotasForProcess](policy-csp-userrights.md)
+- [AllowLogOnThroughRemoteDesktop](policy-csp-userrights.md)
 
 ## VirtualizationBasedTechnology
 
@@ -895,6 +916,8 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [AllowVideoInput](policy-csp-windowssandbox.md)
 - [AllowPrinterRedirection](policy-csp-windowssandbox.md)
 - [AllowClipboardRedirection](policy-csp-windowssandbox.md)
+- [AllowMappedFolders](policy-csp-windowssandbox.md)
+- [AllowWriteToMappedFolders](policy-csp-windowssandbox.md)
 
 ## WirelessDisplay
 

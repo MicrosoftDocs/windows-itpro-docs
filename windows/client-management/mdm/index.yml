@@ -1,21 +1,20 @@
 ### YamlMime:Landing
 
 title: Configuration Service Provider # < 60 chars
-summary: Learn more about the configuration service provider (CSP) policies available on Windows 10 and Windows 11. # < 160 chars
+summary: Learn more about the configuration service provider (CSP) policies available on Windows devices. # < 160 chars
 
 metadata:
   title: Configuration Service Provider # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn more about the configuration service provider (CSP) policies available on Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn more about the configuration service provider (CSP) policies available on Windows devices. # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: landing-page
   ms.technology: itpro-manage
   ms.prod: windows-client
   ms.collection:
-    - highpri
     - tier1
   author: vinaypamnani-msft
   ms.author: vinpa
   manager: aaroncz
-  ms.date: 08/04/2022
+  ms.date: 10/25/2023
   localization_priority: medium
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -35,8 +34,8 @@ landingContent:
             url: configuration-service-provider-ddf.md
           - text: BitLocker CSP
             url: bitlocker-csp.md
-          - text: DynamicManagement CSP
-            url: dynamicmanagement-csp.md
+          - text: Declared Configuration protocol
+            url: ../declared-configuration.md
 
 
   # Card (optional)

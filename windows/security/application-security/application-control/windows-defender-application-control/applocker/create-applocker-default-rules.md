@@ -1,31 +1,28 @@
 ---
 title: Create AppLocker default rules
-description: This topic for IT professionals describes the steps to create a standard set of AppLocker rules that will allow Windows system files to run.
+description: This article for IT professionals describes the steps to create a standard set of AppLocker rules that allow Windows system files to run.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 09/21/2017
+ms.date: 12/21/2023
 ---
 
 # Create AppLocker default rules
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
+This article for IT professionals describes the steps to create a standard set of AppLocker rules that allow Windows system files to run.
 
-This topic for IT professionals describes the steps to create a standard set of AppLocker rules that will allow Windows system files to run.
-
-AppLocker includes default rules for each rule collection. These rules are intended to help ensure that the files that are required for Windows to operate properly are allowed to run.
+The AppLocker wizard can generate default rules for each rule collection. These rules are intended to help ensure that the files that are required for Windows to operate properly are allowed to run.
 
 > [!IMPORTANT]
 > You can use the default rules as a template when creating your own rules to allow files within the Windows folders to run. However, these rules are only meant to function as a starter policy when you are first testing AppLocker rules. The default rules can be modified in the same way as other AppLocker rule types.
- 
-You can perform this task by using the Group Policy Management Console for an AppLocker policy in a Group Policy Object (GPO) or by using the Local Security Policy snap-in for an AppLocker policy on a local computer or in a security template. For information how to use these MMC snap-ins to administer AppLocker, see [Administer AppLocker](administer-applocker.md#bkmk-using-snapins).
 
-**To create default rules**
+To manage an AppLocker policy in a Group Policy Object (GPO), you can perform this task by using the Group Policy Management Console. To manage an AppLocker policy for the local computer or for use in a security template, use the Local Security Policy snap-in. For info how to use these MMC snap-ins to administer AppLocker, see [Administer AppLocker](administer-applocker.md#using-the-mmc-snap-ins-to-administer-applocker).
 
-1.  Open the AppLocker console.
-2.  Right-click the appropriate rule type for which you want to automatically generate default rules. You can automatically generate rules for executable, Windows Installer, script rules and Packaged app rules.
-3.  Click **Create Default Rules**.
+## To create default rules
 
-## Related topics
+1. Open the AppLocker console.
+2. Right-click the appropriate rule type for which you want to automatically generate default rules. You can automatically generate rules for executable, Windows Installer, script rules and Packaged app rules.
+3. Select **Create Default Rules**.
+
+## Related articles
 
 - [Understanding AppLocker default rules](understanding-applocker-default-rules.md)

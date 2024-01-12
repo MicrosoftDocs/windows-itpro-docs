@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 06/02/2023
+ms.date: 12/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -46,7 +46,7 @@ The following XML file contains the device description framework (DDF) for the B
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.15063</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -770,52 +770,6 @@ Supported Values: String form of request ID. Example format of request ID is GUI
           <MSFT:OsBuildVersion>10.0.18363</MSFT:OsBuildVersion>
           <MSFT:CspVersion>5.0</MSFT:CspVersion>
         </MSFT:Applicability>
-      </DFProperties>
-    </Node>
-    <Node>
-      <NodeName>AllowSuspensionOfBitLockerProtection</NodeName>
-      <DFProperties>
-        <AccessType>
-          <Add />
-          <Delete />
-          <Get />
-          <Replace />
-        </AccessType>
-        <DefaultValue>1</DefaultValue>
-        <Description>This policy setting allows suspending protection for BitLocker Drive Encryption when enabled and prevents suspending protection when disabled.
-                         Warning: When policy is disabled, some scenarios will be blocked and prevent those scenarios from behaving normally.
-                         The format is integer.
-                         The expected values for this policy are:
-
-                         0 = Prevent BitLocker Drive Encryption protection from being suspended.
-                         1 = This is the default, when the policy is not set. Allows suspending BitLocker Drive Encryption protection.
-                         </Description>
-        <DFFormat>
-          <int />
-        </DFFormat>
-        <Occurrence>
-          <ZeroOrOne />
-        </Occurrence>
-        <Scope>
-          <Dynamic />
-        </Scope>
-        <DFType>
-          <MIME />
-        </DFType>
-        <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
-        </MSFT:Applicability>
-        <MSFT:AllowedValues ValueType="ENUM">
-          <MSFT:Enum>
-            <MSFT:Value>0</MSFT:Value>
-            <MSFT:ValueDescription>Prevent BitLocker Drive Encryption protection from being suspended.</MSFT:ValueDescription>
-          </MSFT:Enum>
-          <MSFT:Enum>
-            <MSFT:Value>1</MSFT:Value>
-            <MSFT:ValueDescription>This is the default, when the policy is not set. Allows suspending BitLocker Drive Encryption protection.</MSFT:ValueDescription>
-          </MSFT:Enum>
-        </MSFT:AllowedValues>
       </DFProperties>
     </Node>
     <Node>

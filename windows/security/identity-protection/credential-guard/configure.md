@@ -2,9 +2,6 @@
 title: Configure Credential Guard 
 description: Learn how to configure Credential Guard using MDM, Group Policy, or the registry.
 ms.date: 08/31/2023
-ms.collection:
-  - highpri
-  - tier2
 ms.topic: how-to
 ---
 

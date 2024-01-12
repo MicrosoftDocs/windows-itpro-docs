@@ -1,16 +1,16 @@
 ---
 title: Network security Configure encryption types allowed for Kerberos
 description: Best practices, location, values and security considerations for the policy setting, Network security Configure encryption types allowed for Kerberos Win7 only.
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-ms.collection: 
+ms.collection:
   - highpri
   - tier3
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -32,7 +32,7 @@ For more information, see [KDC event ID 16 or 27 is logged if DES for Kerberos i
 
 The following table lists and explains the allowed encryption types.
 
- 
+
 | Encryption type | Description and version support |
 | - | - |
 | DES_CBC_CRC | Data Encryption Standard with Cipher Block Chaining using the Cyclic Redundancy Check function<br/>Supported in Windows 2000 Server, Windows XP, Windows Server 2003, Windows Vista, and Windows Server 2008. The Windows 7, Windows 10, Windows 11, Windows Server 2008 R2, and later operating systems don't support DES by default. |
@@ -91,7 +91,7 @@ Don't configure this policy. This disablement will force the computers running W
 ### Potential impact
 
 If you don't select any of the encryption types, computers running Windows Server 2008 R2, Windows 7 and Windows 10, might have Kerberos authentication failures when connecting with computers running non-Windows versions of the Kerberos protocol.
- 
+
 
 If you do select any encryption type, you'll lower the effectiveness of encryption for Kerberos authentication but you'll improve interoperability with computers running older versions of Windows.
 Contemporary non-Windows implementations of the Kerberos protocol support RC4 and AES 128-bit and AES 256-bit encryption. Most implementations, including the MIT Kerberos protocol and the Windows Kerberos protocol, are deprecating DES encryption.

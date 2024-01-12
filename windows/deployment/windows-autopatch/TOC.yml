@@ -130,6 +130,8 @@
     - name: What's new
       href:
       items: 
+        - name: What's new 2024
+          href: whats-new/windows-autopatch-whats-new-2024.md
         - name: What's new 2023
           href: whats-new/windows-autopatch-whats-new-2023.md
         - name: What's new 2022

@@ -3,12 +3,12 @@ title: Microsoft network server Digitally sign communications (always)
 description: Best practices, security considerations, and more for the security policy setting, Microsoft network server Digitally sign communications (always).
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 01/13/2023
 ---
 

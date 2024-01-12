@@ -1,9 +1,6 @@
 ---
 title: Windows Sandbox configuration
 description: Windows Sandbox configuration
-ms.collection:
-  - highpri
-  - tier2
 ms.topic: article
 ms.date: 05/25/2023
 ---
