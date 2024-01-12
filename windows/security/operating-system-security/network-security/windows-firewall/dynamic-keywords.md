@@ -98,9 +98,7 @@ In high security environments, an inventory of all enterprise-spanning apps must
 
 ## Manage dynamic keywords with Windows PowerShell
 
-The following hydration scripts read the current Firewall configuration, extract FQDN based rules and perform DNS resolution on each domain, so that IP addresses for those rules get populated.
-
-### Hydrate FQDN rule IPs using Resolve-DNSName
+The following sample scripts read the current Windows Firewall configuration, extract FQDN-based rules, and perform DNS resolution on each domain. The result is that the IP addresses for those rules get populated.
 
 ```PowerShell
 Get-NetFirewallDynamicKeywordAddress -AllAutoResolve |`
@@ -112,18 +110,7 @@ ForEach-Object {
 }
 ```
 
-Silent:
-
-```PowerShell
-Get-NetFirewallDynamicKeywordAddress -AllAutoResolve |`
-ForEach-Object {
-  if(!$_.Keyword.Contains("*")) {
-    resolve-dnsname -Name $_.Keyword -DNSOnly | out-null
-  }
-}
-```
-
-Hydrate FQDN rule IPs using NSLookup
+A similar script can be used to perform DNS resolution using `nslookup.exe`:
 
 ```PowerShell
 Get-NetFirewallDynamicKeywordAddress -AllAutoResolve |`
@@ -143,9 +130,7 @@ $appPath = 'C:\Windows\System32\nslookup.exe'
 New-NetFirewallRule -DisplayName "allow $appName" -Program $appPath -Action Allow -Direction Outbound -Protocol UDP -RemotePort 53
 ```
 
-### Additional PowerShell and Firewall Commands
-
-#### Enable Network Protection
+### Enable Network Protection
 
 Block Mode:
 
@@ -155,7 +140,7 @@ Audit Mode:
 
 `Set-MpPreference -EnableNetworkProtection AuditMode`
 
-#### Display Auto resolve rules and associated resolved IP addresses
+### Display Auto resolve rules and associated resolved IP addresses
 
 > [!NOTE]
 > IP addresses will not populate until DNS query is observed.
@@ -184,18 +169,12 @@ New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
 New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
 ```
 
-## Example rules for block all outbound and allow some FQDNs
+### Block all outbound and allow some FQDNs
 
 This is a sample list of application FQDN evaluation. These were observed when inspecting traffic on the first launch of Microsoft Edge.
 
 > [!IMPORTANT]
 > This is not a complete list nor a recommendation. It's an example of how an application should be evaluated to ensure proper connectivity and function.
-
-```PowerShell
-
-
-
-```
 
 To learn more about Microsoft Edge requirements for Internet connectivity, see [Allow list for Microsoft Edge endpoints](/deployedge/microsoft-edge-security-endpoints).
 
@@ -212,9 +191,9 @@ $domains = @(
     'ntp.msn.com'
 )
 
-foreach ($fqdn in $domains) {
+foreach ($domain in $domains) {
     $id = '{' + (New-Guid).ToString() + '}'
-    New-NetFirewallDynamicKeywordAddress -Id $id -Keyword $fqdn -AutoResolve $true
-    New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
+    New-NetFirewallDynamicKeywordAddress -Id $id -Keyword $domain -AutoResolve $true
+    New-NetFirewallRule -DisplayName "allow $domain" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
 }
 ```
