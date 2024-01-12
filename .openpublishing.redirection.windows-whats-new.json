@@ -2,12 +2,12 @@
    "redirections":[
       {
          "source_path":"windows/whats-new/applocker.md",
-         "redirect_url":"/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+         "redirect_url":"/previous-versions/windows/it-pro/windows-10/whats-new/whats-new-windows-10-version-1507-and-1511",
          "redirect_document_id":false
       },
       {
          "source_path":"windows/whats-new/bitlocker.md",
-         "redirect_url":"/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+         "redirect_url":"/previous-versions/windows/it-pro/windows-10/whats-new/whats-new-windows-10-version-1507-and-1511",
          "redirect_document_id":false
       },
       {
@@ -22,7 +22,7 @@
       },
       {
          "source_path":"windows/whats-new/credential-guard.md",
-         "redirect_url":"/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+         "redirect_url":"/previous-versions/windows/it-pro/windows-10/whats-new/whats-new-windows-10-version-1507-and-1511",
          "redirect_document_id":false
       },
       {
@@ -62,7 +62,7 @@
       },
       {
          "source_path":"windows/whats-new/security-auditing.md",
-         "redirect_url":"/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+         "redirect_url":"/previous-versions/windows/it-pro/windows-10/whats-new/whats-new-windows-10-version-1507-and-1511",
          "redirect_document_id":false
       },
       {
@@ -77,7 +77,7 @@
       },
       {
          "source_path":"windows/whats-new/user-account-control.md",
-         "redirect_url":"/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+         "redirect_url":"/previous-versions/windows/it-pro/windows-10/whats-new/whats-new-windows-10-version-1507-and-1511",
          "redirect_document_id":false
       },
       {
@@ -107,7 +107,7 @@
       },
       {
          "source_path":"windows/whats-new/windows-update-for-business.md",
-         "redirect_url":"/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+         "redirect_url":"/previous-versions/windows/it-pro/windows-10/whats-new/whats-new-windows-10-version-1507-and-1511",
          "redirect_document_id":false
       },
       {
