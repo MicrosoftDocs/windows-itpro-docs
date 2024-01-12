@@ -77,6 +77,8 @@ To check that the policy was successfully applied on your computer:
 > [!NOTE]
 > To use this policy with Windows Server 2016, you must convert the policy XML on a device running a newer operating system.
 
+The below recommended blocklist xml policy file can also be downloaded from the [Microsoft Download Center](https://aka.ms/VulnerableDriverBlockList).
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
