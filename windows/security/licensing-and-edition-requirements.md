@@ -7,7 +7,6 @@ appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ms.author: paoloma
 author: paolomatarazzo
-ms.prod: windows-client
 ---
 
 # Windows security features licensing and edition requirements
