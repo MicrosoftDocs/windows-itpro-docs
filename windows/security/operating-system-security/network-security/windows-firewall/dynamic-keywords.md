@@ -37,19 +37,16 @@ Dynamic keywords can be configured by defining a set of IP address ranges or FQD
 
 ### Functions and known limitations
 
-The Windows Firewall FQDN feature uses the Network Protection external callout driver, to inspect DNS responses where the DNS query matches FQDN rules.
+The Windows Firewall FQDN feature uses the Network Protection external callout driver, to inspect DNS responses where the DNS query matches FQDN rules. Some important functions and limitations of the feature are:
 
 - The Network Protection component doesn't periodically execute DNS queries. It requires an application to execute a DNS query
 - Windows Firewall flushes all stored resolved IP addresses on device restart
-- Network protection doesn't synchronously inspect the DNS response, meaning it currently doesn't hold the UDP packet during inspection. It's an asynchronous function
-  - This can create a condition where an application, after receiving the DNS response, may attempt to connect to an IP address but gets initially blocked if it's faster than the FW rule update.
-    - This is in the order of milliseconds
-    - Generally, applications have retry logic for an initial failed connection and as a result the issue is transparent to the end user
-    - On occasion a component may not have retry logic on initial connection fail. Which is solved in two ways
-     - The end user can hit "refresh" in the application they're using, and it should connect successfully at that time
-     - Customers can use the pre-hydration scripts tactfully where this condition is occurring in their environment
-- MDE keywords in the FQDN feature are case sensitive.
-- If local policy merge is disabled, then all rules must be recreated via Intune. For more information, see [Local policy merge and application rules](rules.md#local-policy-merge-and-application-rules).
+- Network protection doesn't synchronously inspect the DNS response, meaning it doesn't hold the UDP packet during inspection. This can create a condition where an application, after receiving the DNS response, may attempt to connect to an IP address, but gets initially blocked if it's faster than the firewall rule update, which is in the order of milliseconds
+  - Generally, applications have retry logic for an initial failed connection and as a result the issue is transparent to the end user
+  - On occasion a component may not have retry logic on initial connection fail. Which is solved in two ways:
+    - The user can hit *refresh* in the application they're using, and it should connect successfully
+    - Administrators can use the *pre-hydration* scripts tactfully, where this condition is occurring in their environment
+<!-- MDE keywords in the FQDN feature are case sensitive-->
 
 ### Order of operations
 
@@ -58,7 +55,7 @@ The Windows Firewall FQDN feature uses the Network Protection external callout d
 1. Network Protection listens for the DNS response. Once UDP packets are received, Network Protection parses the packets and sends the information to Windows Firewall
 1. Windows Firewall updates the corresponding firewall rules with the resolved IP(s)
 
-### Key Configuration Points for FQDN Feature
+### FQDN Feature requirements
 
 - Microsoft Defender Antivirus must be turned on and running platform version `4.18.2209.7` or later.
   - To verify, open [Windows Security](windowsdefender://) and select **Settings** > **About**
