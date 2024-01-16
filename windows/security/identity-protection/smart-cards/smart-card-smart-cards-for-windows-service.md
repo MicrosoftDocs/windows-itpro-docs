@@ -2,7 +2,7 @@
 title: Smart Cards for Windows Service 
 description: This topic for the IT professional and smart card developers describes how the Smart Cards for Windows service manages readers and application interactions.
 ms.topic: concept-article
-ms.date: 11/22/2023
+ms.date: 01/16/2024
 ---
 
 # Smart Cards for Windows Service
