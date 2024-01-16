@@ -64,8 +64,6 @@ items:
         href: set-up-school-pcs-technical.md
       - name: Provisioning package settings
         href: set-up-school-pcs-provisioning-package.md
-      - name: What's new in Set up School PCs
-        href: set-up-school-pcs-whats-new.md
     - name: Take a Test technical reference
       href: take-a-test-app-technical.md
     - name: Shared PC technical reference

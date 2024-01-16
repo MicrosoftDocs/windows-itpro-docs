@@ -199,6 +199,26 @@
       "source_path": "education/windows/autopilot-reset.md",
       "redirect_url": "/autopilot/windows-autopilot-reset",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/set-up-students-pcs-with-apps.md",
+      "redirect_url": "/education/windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/set-up-windows-10.md",
+      "redirect_url": "/education/windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/edu-deployment-recommendations.md",
+      "redirect_url": "/education/windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/set-up-school-pcs-azure-ad-join.md",
+      "redirect_url": "/education/windows",
+      "redirect_document_id": false
     }
   ]
 }

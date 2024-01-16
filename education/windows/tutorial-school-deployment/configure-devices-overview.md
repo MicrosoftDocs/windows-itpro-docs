@@ -11,11 +11,13 @@ Before distributing devices to your users, you must ensure that the devices will
 Microsoft Intune uses Microsoft Entra groups to assign policies and applications to devices.
 With Microsoft Intune for Education, you can conveniently create groups and assign policies and applications to them.
 
-In this section you will:
+
 > [!div class="checklist"]
-> * Create groups
-> * Create and assign policies to groups
-> * Create and assign applications to groups
+>In this section you will:
+>
+> - Create groups
+> - Create and assign policies to groups
+> - Create and assign applications to groups
 
 ## Create groups
 
