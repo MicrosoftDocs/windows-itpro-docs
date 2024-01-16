@@ -1,7 +1,7 @@
 ---
 title: Configure applications with Microsoft Intune
 description: Learn how to configure applications with Microsoft Intune in preparation for device deployment.
-ms.date: 03/08/2023
+ms.date: 01/16/2024
 ms.topic: tutorial
 ---
 
@@ -14,11 +14,12 @@ Applications can be assigned to groups:
 - If you target apps to a **group of users**, the apps will be installed on any managed devices that the users sign into
 - If you target apps to a **group of devices**, the apps will be installed on those devices and available to any user who signs in
 
-In this section you will:
 > [!div class="checklist"]
-> * Add apps to Intune for Education
-> * Assign apps to groups
-> * Review some considerations for Windows 11 SE devices
+>In this section you will:
+>
+> - Add apps to Intune for Education
+> - Assign apps to groups
+> - Review some considerations for Windows 11 SE devices
 
 ## Add apps to Intune for Education
 
