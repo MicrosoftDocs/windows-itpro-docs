@@ -219,6 +219,16 @@
       "source_path": "education/windows/set-up-school-pcs-azure-ad-join.md",
       "redirect_url": "/education/windows",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/set-up-students-pcs-to-join-domain.md",
+      "redirect_url": "/education/windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/windows-editions-for-education-customers.md",
+      "redirect_url": "/education/windows",
+      "redirect_document_id": false
     }
   ]
 }

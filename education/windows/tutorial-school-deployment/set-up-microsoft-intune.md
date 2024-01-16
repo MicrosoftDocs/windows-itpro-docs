@@ -18,7 +18,6 @@ The Microsoft Intune service can be managed in different ways, and one of them i
 
 For more information, see [Intune for Education documentation][INT-1].
 
-
 > [!div class="checklist"]
 >In this section you will:
 >
