@@ -90,7 +90,7 @@ The following are requirements for the FQDN feature:
 
 This section provides some examples how to manage dynamic keywords using Windows PowerShell. A few important things to consider when using dynamic keywords are:
 
-- All dynamic keyword objects must have a unique GUID identifier to represent them
+- All dynamic keyword objects must have a unique identifier (GUID) to represent them
 - A firewall rule can use dynamic keywords instead of explicitly defining IP addresses for its conditions
 - A firewall rule can use both dynamic keywords and statically defined address ranges
 - A dynamic keyword object can be reused across multiple firewall rules
@@ -104,7 +104,7 @@ This section provides some examples how to manage dynamic keywords using Windows
 Here's an example script to allow an FQDN from PowerShell. Replace the `$fqdn` variable value with the FQDN you wish to block (line #1):
 
 ```PowerShell
-
+$fqdn = 'contoso.com'
 $id = '{' + (new-guid).ToString() + '}'
 New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
 New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
