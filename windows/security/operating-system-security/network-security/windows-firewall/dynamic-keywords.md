@@ -29,11 +29,24 @@ Dynamic keywords can be configured by defining a set of IP address ranges or FQD
 
 - FQDN support is for reducing the overhead of managing IP rules where IP addresses are dynamic and change frequently
 - FQDNs aren't a replacement for IP addresses in all scenarios. IP addresses should be used when possible, for security and performance reasons
-  - FQDN rules have a performance impact on the endpoint, including DNS latency
+  - FQDN rules can affect performance on the endpoint, caused by DNS latency and other factors
   - FQDN isn't a secure DNS service. The FQDN resolution uses the default DNS configuration of the endpoint
 - An FQDN rule requires a DNS query to happen for that FQDN to be resolved to an IP address. Traffic to IP addresses must generate a DNS query for FQDN rules
   - Limitations may include: websites accessed via proxy, secure DNS services, certain VPN tunnel configurations, cached IPs on the endpoint
 - While Partially Qualified Domain Names (PQDNs) are allowed, FQDNs are preferred. Wildcards `*` are supported for hosts, for example `*.contoso.com`
+
+Two examples of FQDN rules are:
+
+- Block all outbound and inbound by default and allow specific outbound traffic
+- Block all inbound by default and block some specific outbound traffic
+
+> [!NOTE]
+> Inbound FQDN rules aren't natively supported. However, it's possible to use *pre-hydration* scripts to generate inbound IP entries for the rules.
+
+> [!CAUTION]
+> The default configuration of *Blocked for Outbound* rules can be considered for certain highly secure environments. However, the *Inbound* rule configuration should never be changed in a way that allows traffic by default.
+
+In high security environments, an inventory of all enterprise-spanning apps must be taken and logged by the administrator or administrators. Records must include whether an app used requires network connectivity. Administrators should create new rules specific to each app that needs network connectivity and push those rules centrally, using configuration service provider (CSP) or group policy (GPO).
 
 ### Functions and known limitations
 
@@ -50,12 +63,16 @@ The Windows Firewall FQDN feature uses the Network Protection external callout d
 
 ### Order of operations
 
-1. Firewall publishes the list of FQDNs to Network Protection
+The following is the order of operations for the FQDN feature:
+
+1. Windows Firewall publishes the list of FQDNs to Network Protection
 1. Network Protection listens for DNS queries where FQDNs match the definition from Windows Firewall
 1. Network Protection listens for the DNS response. Once UDP packets are received, Network Protection parses the packets and sends the information to Windows Firewall
 1. Windows Firewall updates the corresponding firewall rules with the resolved IP(s)
 
 ### FQDN Feature requirements
+
+The following are requirements for the FQDN feature:
 
 - Microsoft Defender Antivirus must be turned on and running platform version `4.18.2209.7` or later.
   - To verify, open [Windows Security](windowsdefender://) and select **Settings** > **About**
@@ -69,74 +86,52 @@ The Windows Firewall FQDN feature uses the Network Protection external callout d
     > [!TIP]
     > You can also download the ADMX file from there, follow the directions, and configure it via gpedit.msc for local testing.
 
-### Example configurations for the two primary postures for FQDN
-
-- Block all outbound and inbound by default and allow specific outbound traffic
-- Block all inbound by default and block some specific outbound traffic
-- Inbound FQDN rules aren't natively supported. However, it's possible to use Sample_hydration_scripts to generate inbound IP entries for the rules.  
-
-Here are a few general guidelines for configuring outbound rules. https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/checklist-creating-outbound-firewall-rules
-
-> [!CAUTION]
-> The default configuration of *Blocked for Outbound* rules can be considered for certain highly secure environments. However, the *Inbound* rule configuration should never be changed in a way that allows traffic by default.
-
-In high security environments, an inventory of all enterprise-spanning apps must be taken and logged by the administrator or administrators. Records must include whether an app used requires network connectivity. Administrators will need to create new rules specific to each app that needs network connectivity and push those rules centrally, via group policy (GP), Mobile Device Management (MDM), or both (for hybrid or co-management environments). For example, Edge https://learn.microsoft.com/en-us/deployedge/microsoft-edge-security-endpoints
-
 ## Manage dynamic keywords with Windows PowerShell
 
-<!--
-All dynamic keyword addresses must have a unique GUID identifier to represent them.
+This section provides some examples how to manage dynamic keywords using Windows PowerShell. A few important things to consider when using dynamic keywords are:
 
-A firewall rule:
-- can use dynamic keywords instead of explicitly defining IP addresses for its conditions. A firewall rule 
-- can use both dynamic keywords and statically defined remote address range
-
-A dynamic keyword object can be re-used across multiple firewall rules.
-
-If a firewall rule doesn't have any configured remote addresses (that is, configured with only AutoResolve objects which have not yet been resolved), then the rule won't be enforced. If a rule uses multiple dynamic keyword addresses, then the rule will be enforced for all addresses that are currently resolved, even if there are other objects that are not yet resolved. When a dynamic keyword address is updated, all associated rule objects will have their remote addresses updated as well.
-
-The operating system (OS) itself doesn't enforce any dependencies between a rule and a dynamic keyword address. This means that either object can be created first—the rule can reference dynamic keyword address IDs that don't yet exist (in which case, the rule won't be enforced). Furthermore, you can delete a dynamic keyword address even if it's in use by a firewall rule.
--->
+- All dynamic keyword objects must have a unique GUID identifier to represent them
+- A firewall rule can use dynamic keywords instead of explicitly defining IP addresses for its conditions
+- A firewall rule can use both dynamic keywords and statically defined address ranges
+- A dynamic keyword object can be re-used across multiple firewall rules
+- If a firewall rule doesn't have any configured remote addresses (that is, configured with only AutoResolve objects which have not yet been resolved), then the rule won't be enforced
+- If a rule uses multiple dynamic keywords, then the rule will be enforced for all addresses that are currently resolved, even if there are other objects that are not yet resolved. When a dynamic keyword address is updated, all associated rule objects will have their remote addresses updated as well
+- Windows doesn't enforce any dependencies between a rule and a dynamic keyword address. This means that either object can be created first—the rule can reference dynamic keyword address IDs that don't yet exist (in which case, the rule won't be enforced). Furthermore, you can delete a dynamic keyword address even if it's in use by a firewall rule
 
 ### Allow Outbound
 
 Here's an example script to allow a site from PowerShell. Replace the `$fqdn` variable value with the FQDN you wish to block (line #1):
 
 ```PowerShell
-$fqdn = 'contoso.com'
+
 $id = '{' + (new-guid).ToString() + '}'
 New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
 New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
 ```
 
-### Display Auto resolve rules and associated resolved IP addresses
-
-> [!NOTE]
-> IP addresses will not populate until DNS query is observed.
-
-`Get-NetFirewallDynamicKeywordAddress -AllAutoResolve`
-
-### Allow Outbound
-
-Here's an example script to allow a site from PowerShell. Replace the `$fqdn` variable value with the FQDN you wish to block (line #1):
-
-```PowerShell
-$fqdn = 'google.com'
-$id = '{' + (new-guid).ToString() + '}'
-New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
-New-NetFirewallRule -DisplayName "allow $fqdn" -Action Allow -Direction Outbound -RemoteDynamicKeywordAddresses $id
-```
+Dynamic keyword addresses can be created with the `AutoResolve` parameter set to `$true` or `$false`. If `AutoResolve` is set to `$true`, then Windows will attempt to resolve the keyword to an IP address.
 
 ### Block Outbound
 
 Here's an example script to block a site from PowerShell (replace somedomain.com below with the domain you wish to block):
 
 ```PowerShell
+$fqdn = 'contoso.com'
 $id = '{' + (new-guid).ToString() + '}'
-$fqdn = 'somedomain.com'
 New-NetFirewallDynamicKeywordAddress -id $id -Keyword $fqdn -AutoResolve $true
 New-NetFirewallRule -DisplayName "block $fqdn" -Action Block -Direction Outbound -RemoteDynamicKeywordAddresses $id
 ```
+
+### Display Auto resolve rules and associated resolved IP addresses
+
+This example shows how to display all dynamic keyword addresses that have the `AutoResolve` parameter set to `$true` and the associated resolved IP addresses.
+
+```PowerShell
+Get-NetFirewallDynamicKeywordAddress -AllAutoResolve
+```
+
+> [!NOTE]
+> IP addresses will not populate until DNS query is observed.
 
 ### Hydrate FQDN rules
 
