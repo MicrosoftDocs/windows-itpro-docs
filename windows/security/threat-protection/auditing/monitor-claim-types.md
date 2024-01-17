@@ -4,7 +4,6 @@ description: Learn how to monitor changes to claim types that are associated wit
 ms.assetid: 426084da-4eef-44af-aeec-e7ab4d4e2439
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 09/09/2021
-ms.technology: itpro-security
 ---
 
 # Monitor claim types

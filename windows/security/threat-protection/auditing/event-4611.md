@@ -2,7 +2,6 @@
 title: 4611(S) A trusted logon process has been registered with the Local Security Authority. 
 description: Describes security event 4611(S) A trusted logon process has been registered with the Local Security Authority.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

@@ -4,7 +4,6 @@ description: Best practices, location, values, policy management, and security c
 ms.assetid: ffabc3c5-9206-4105-94ea-84f597a54b2e
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Profile system performance
