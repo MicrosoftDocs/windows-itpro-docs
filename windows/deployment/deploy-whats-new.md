@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.collection:
   - highpri
   - tier2
-ms.date: 01/16/2024
+ms.date: 01/17/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
