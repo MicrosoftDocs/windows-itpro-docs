@@ -138,7 +138,7 @@ For instructions on how to run the tool in offline mode and with more advanced o
   SetupDiag.exe /Output:C:\SetupDiag\Results.log
   ```
 
-- The following example uses the /Output parameter to save results to a path name that contains a space:
+- The following example uses the **/Output** parameter to save results to a path name that contains a space:
 
   ```cmd
   SetupDiag /Output:"C:\Tools\SetupDiag\SetupDiag Results\Results.log"
@@ -150,7 +150,7 @@ For instructions on how to run the tool in offline mode and with more advanced o
   SetupDiag.exe /Output:C:\SetupDiag\Results.log /LogsPath:D:\Temp\Logs\LogSet1
   ```
 
-- The following example sets recovery scenario in offline mode. In the example, SetupDiag searches for reset/recovery logs in the specified LogsPath location and output the results to the directory specified by the /Output parameter.
+- The following example sets recovery scenario in offline mode. In the example, SetupDiag searches for reset/recovery logs in the specified LogsPath location and output the results to the directory specified by the **/Output** parameter.
 
   ```cmd
   SetupDiag.exe /Output:C:\SetupDiag\RecoveryResults.log /LogsPath:D:\Temp\Cabs\PBR_Log /Scenario:Recovery
@@ -180,7 +180,7 @@ For instructions on how to run the tool in offline mode and with more advanced o
   SetupDiag.exe
   ```
 
-- The following example is an example of Reset/Recovery Offline Mode. SetupDiag is instructed to look for reset/recovery logs in the specified LogsPath location and output the results to the directory specified by the /Output parameter.
+- The following example is an example of Reset/Recovery Offline Mode. SetupDiag is instructed to look for reset/recovery logs in the specified LogsPath location. It then outputs the results to the directory specified by the **/Output** parameter.
 
   ```cmd
   SetupDiag.exe /Output:C:\SetupDiag\RecoveryResults.log /LogsPath:D:\Temp\Cabs\PBR_Log /Scenario:Recovery
@@ -283,11 +283,11 @@ Each rule name and its associated unique rule identifier are listed with a descr
 | SafeModeHardblock | 404D9523-B7A8-4203-90AF-5FBB05B6579B | This block indicates that the host OS is booted to Safe Mode, where upgrade isn't supported. |
 | InsufficientSystemPartitionDiskSpaceHardblock | 3789FBF8-E177-437D-B1E3-D38B4C4269D1 | This block is encountered when setup determines the system partition doesn't have enough space to be serviced with the newer boot files required during the upgrade process. The system partition is where the boot loader files are stored |
 | CompatBlockedApplicationAutoUninstall | BEBA5BC6-6150-413E-8ACE-5E1EC8D34DD5 | This rule indicates there's an application that needs to be uninstalled before setup can continue. |
-| CompatBlockedApplicationDismissable | EA52620B-E6A0-4BBC-882E-0686605736D9 | When setup is run in /quiet mode, there are dismissible application messages that turn into blocks unless the command line also specifies **/compat ignorewarning**.  This rule indicates setup was executed in /quiet mode but there's an application dismissible block message that prevented setup from continuing. |
-| **CompatBlockedFODDismissable** | 7B693C42-793E-4E9E-A10B-ED0F33D45E2A | When setup is run in /quiet mode, there are dismissible Feature On Demand messages that turn into blocks unless the command line also specifies **/compat ignorewarning**.  This rule indicates setup was executed in /quiet mode but there's a Feature On Demand dismissible block message that prevented setup from continuing, usually that the target OS image is missing a Feature On Demand that the current OS has installed. Removal of the Feature On Demand in the current OS will also resolve the issue.
+| CompatBlockedApplicationDismissable | EA52620B-E6A0-4BBC-882E-0686605736D9 | When setup is run in **/quiet** mode, there are dismissible application messages that turn into blocks unless the command line also specifies **/compat ignorewarning**.  This rule indicates setup was executed in **/quiet** mode but there's an application dismissible block message that prevented setup from continuing. |
+| **CompatBlockedFODDismissable** | 7B693C42-793E-4E9E-A10B-ED0F33D45E2A | When setup is run in **/quiet** mode, there are dismissible Feature On Demand messages that turn into blocks unless the command line also specifies **/compat ignorewarning**.  This rule indicates setup was executed in **/quiet** mode but there's a Feature On Demand dismissible block message that prevented setup from continuing, usually that the target OS image is missing a Feature On Demand that is installed in the current OS. Removal of the Feature On Demand in the current OS should also resolve the issue.
 | CompatBlockedApplicationManualUninstall | 9E912E5F-25A5-4FC0-BEC1-CA0EA5432FF4 | This rule indicates that an application without an Add/Remove Programs entry, is present on the system and blocking setup from continuing.  This block typically requires manual removal of the files associated with this application to continue. |
-| **GenericCompatBlock** | 511B9D95-C945-4F9B-BD63-98F1465E1CF6 | Generic compatibility block. |
-| **GatedCompatBlock** | 34A9F145-3842-4A68-987F-4622EE0FC162 | Gated compatibility block. |
+| **GenericCompatBlock** | 511B9D95-C945-4F9B-BD63-98F1465E1CF6 | The rule indicates that system doesn't meet a hardware requirement for running Windows. For example, the device is missing a requirement for TPM 2.0. This issue can occur even when an attempt is made to bypass the hardware requirements. |
+| **GatedCompatBlock** | 34A9F145-3842-4A68-987F-4622EE0FC162 | This rule indicates that the upgrade failed due to a temporary block. A temporary block is put in place when an issue is found with a specific piece of software or hardware driver and the issue has a fix pending. The block is lifted once the fix is widely available. |
 | HardblockDeviceOrDriver | ED3AEFA1-F3E2-4F33-8A21-184ADF215B1B | This error indicates a device driver that is loaded on the host OS isn't compatible with the newer OS version. The device driver needs to be removed prior to the upgrade. |
 | HardblockMismatchedLanguage | 60BA8449-CF23-4D92-A108-D6FCEFB95B45 | This rule indicates the host OS and the target OS language editions don't match. |
 | HardblockFlightSigning | 598F2802-3E7F-4697-BD18-7A6371C8B2F8 | This rule indicates the target OS is a pre-release, Windows Insider build, and the target machine has Secure Boot enabled.  This rule blocks the pre-release signed build from booting if installed on the machine. |
@@ -298,13 +298,13 @@ Each rule name and its associated unique rule identifier are listed with a descr
 | DebugSetupCrash | CEEBA202-6F04-4BC3-84B8-7B99AED924B1 | This offline only rule indicates that setup itself encountered a failure that resulted in a process memory dump.  If the debugger tools are installed on the system, SetupDiag debugs the memory dump and give further details. |
 | DebugMemoryDump | 505ED489-329A-43F5-B467-FCAAF6A1264C | This offline only rule is for any memory.dmp file that resulted during the setup/upgrade operation.  If the debugger tools are installed on the system, SetupDiag debugs the memory dump and give further details. |
 | DeviceInstallHang | 37BB1C3A-4D79-40E8-A556-FDA126D40BC6 | This failure rule indicates the system hung or bug checked during the device installation phase of upgrade. |
-| **DriverPackageMissingFileFailure** | 37BB1C3A-4D79-40E8-A556-FDA126D40BC6 | This rule indicates that a driver package had a missing file during device install. Updating the driver package may help resolve the issue. |
+| **DriverPackageMissingFileFailure** | 37BB1C3A-4D79-40E8-A556-FDA126D40BC6 | This rule indicates that a driver package had a missing file during device install. Updating the driver package might help resolve the issue. |
 | **UnsignedDriverBootFailure** | CD270AA4-C044-4A22-886A-F34EF2E79469 | This rule indicates that an unsigned driver caused a boot failure. |
 | BootFailureDetected | 4FB446C2-D4EC-40B4-97E2-67EB19D1CFB7 | This rule indicates a boot failure occurred during a specific phase of the update.  The rule indicates the failure code and phase for diagnostic purposes. |
 | WinSetupBootFilterFailure | C073BFC8-5810-4E19-B53B-4280B79E096C | Detects failures in the kernel mode file operations. |
 | FindDebugInfoFromRollbackLog | 9600EB68-1120-4A87-9FE9-3A4A70ACFC37 | This rule determines and gives details when a bug check occurs during the setup/upgrade process that resulted in a memory dump. However, a debugger package isn't required on the executing machine. |
 | AdvancedInstallerFailed | 77D36C96-32BE-42A2-BB9C-AAFFE64FCADC | Finds fatal advanced installer operations that cause setup failures. Indicates critical failure in the AdvancedInstaller while running an installer package, includes the .exe being called, the phase, mode, component and error codes. |
-| **AdvancedInstallerPluginInstallFailed** | 2F784A0E-CEB1-47C5-8072-F1294C7CB4AE | This rule indicates AdvancedInstaller encountered a plug-in installer failure. |
+| **AdvancedInstallerPluginInstallFailed** | 2F784A0E-CEB1-47C5-8072-F1294C7CB4AE | This rule indicates some component that was being installed via an advanced installer (FeatureOnDemand, Language Packs, .NET packages, etc.) failed to install. The rule calls out what was being installed. If the failed component is a FeatureOnDemand, remove the Windows Feature, reboot, and try the upgrade again. If the failed component is a Language Pack, remove the additional language pack, reboot, and try the upgrade again. |
 | AdvancedInstallerGenericFailure | 4019550D-4CAA-45B0-A222-349C48E86F71 | A rule to match AdvancedInstaller read/write failures in a generic sense.  Triggers on advanced installer failures in a generic sense. It outputs the application called, phase, mode, component and error code. |
 | FindMigApplyUnitFailure | A4232E11-4043-4A37-9BF4-5901C46FD781 | Detects a migration unit failure that caused the update to fail.  This rule outputs the name of the migration plug-in and the error code it produced for diagnostic purposes. |
 | FindMigGatherUnitFailure | D04C064B-CD77-4E64-96D6-D26F30B4EE29 | Detects a migration gather unit failure that caused the update to fail.  This rule outputs the name of the gather unit/plug-in and the error code it produced for diagnostic purposes. |
@@ -316,7 +316,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 | UserProfileCreationFailureDuringOnlineApply | 678117CE-F6A9-40C5-BC9F-A22575C78B14 | Indicates there was a critical failure while creating or modifying a User Profile during the online apply phase of the update.  It indicates the operation and error code associated with the failure for diagnostic purposes. |
 | UserProfileCreationFailureDuringFinalize | C6677BA6-2E53-4A88-B528-336D15ED1A64 | Matches a specific User Profile creation error during the finalize phase of setup.  It outputs the failure code. |
 | UserProfileSuffixMismatch | B4BBCCCE-F99D-43EB-9090-078213397FD8 | Detects when a file or other object causes the migration or creation of a user profile to fail during the update. |
-| **DuplicateUserProfileFailure** | BD7B3109-80F1-4421-8F0A-B34CD25F4B51 | This rule indicates a fatal error while migrating user profiles, usually with multiple SIDs associated with a single user profile. |
+| **DuplicateUserProfileFailure** | BD7B3109-80F1-4421-8F0A-B34CD25F4B51 | This rule indicates a fatal error while migrating user profiles, usually with multiple SIDs associated with a single user profile. This error usually occurs when software creates local user accounts that aren't ever used or signed in with. The rule indicates the SID and UserName of the account that is causing the failure. To attempt to resolve the issue, first back up all the user's files for the affected user account. After the user's files are backed up, delete the account in a supported manner. Make sure that the account isn't one that is needed or is currently used to sign into the device. After deleting the account, reboot, and try the upgrade again. |
 | WimMountFailure | BE6DF2F1-19A6-48C6-AEF8-D3B0CE3D4549 | This rule indicates the update failed to mount a WIM file.  It shows the name of the WIM file and the error message and error code associated with the failure for diagnostic purposes. |
 | WimMountDriverIssue | 565B60DD-5403-4797-AE3E-BC5CB972FBAE | Detects failures in `WimMount.sys` registration on the system. |
 | WimApplyExtractFailure | 746879E9-C9C5-488C-8D4B-0C811FF3A9A8 | Matches a WIM apply failure during WIM extraction phases of setup.  It outputs the extension, path and error code. |
@@ -329,7 +329,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 | SysPrepLaunchModuleFailure | 7905655C-F295-45F7-8873-81D6F9149BFD | Indicates a sysPrep plug-in failed in a critical operation.  Indicates the plug-in name, operation name and error code. |
 | UserProvidedDriverInjectionFailure | 2247C48A-7EE3-4037-AFAB-95B92DE1D980 | A driver provided to setup (via command line input) failed in some way.  Outputs the driver install function and error code. |
 | **DriverMigrationFailure** | 9378D9E2-256E-448C-B02F-137F611F5CE3 | This rule indicates a fatal failure when migrating drivers. |
-| **UnknownDriverMigrationFailure** | D7541B80-5071-42CE-AD14-FBE8C0C4F7FD | This rule indicates a fatal failure when migrating drivers. |
+| **UnknownDriverMigrationFailure** | D7541B80-5071-42CE-AD14-FBE8C0C4F7FD | This rule indicates a bad driver package resides on the system. The driver package causes the upgrade to fail when the driver package is attempted to migrate to the new OS. The rule usually indicates the driver package name that caused the issue. The remediation is to remove the bad driver package, reboot, and try the upgrade again.  If an update to this driver is available from the OEM, updating the driver package is recommended. |
 | | |
 | FindSuccessfulUpgrade | 8A0824C8-A56D-4C55-95A0-22751AB62F3E | Determines if the given setup was a success or not based off the logs. |
 | FindSetupHostReportedFailure | 6253C04F-2E4E-4F7A-B88E-95A69702F7EC | Gives information about failures surfaced early in the upgrade process by `setuphost.exe` |
