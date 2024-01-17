@@ -236,7 +236,7 @@ Logs ZipFile created at: c:\setupdiag\Logs_14.zip
 
 ## Rules
 
-When SetupDiag searches log files, it uses a set of rules to match known issues. These rules are contained in the rules.xml file that is extracted when SetupDiag is run. The rules.xml file might be updated as new versions of SetupDiag are made available.
+When SetupDiag searches log files, it uses a set of rules to match known issues. These rules are contained in an xml file. The xml file might be updated with new and updated rules as new versions of SetupDiag are made available.
 
 Each rule name and its associated unique rule identifier are listed with a description of the known upgrade-blocking issue. In the rule descriptions, the term **down-level** refers to the first phase of the upgrade process, which runs under the original OS.
 
@@ -298,11 +298,6 @@ Each rule name and its associated unique rule identifier are listed with a descr
 | FindSPFatalError | A4028172-1B09-48F8-AD3B-86CDD7D55852 | Captures failure information when setup platform encounters a fatal error. |
 | FindSetupPlatformFailedOperationInfo | 307A0133-F06B-4B75-AEA8-116C3B53C2D1 | Gives last phase and error information when SetupPlatform indicates a critical failure.  This rule indicates the operation and error associated with the failure for diagnostic purposes. |
 | FindRollbackFailure | 3A43C9B5-05B3-4F7C-A955-88F991BB5A48 | Gives last operation, failure phase and error information when a rollback occurs. |
-
-
-
-
-
 
 ## Sample logs
 
