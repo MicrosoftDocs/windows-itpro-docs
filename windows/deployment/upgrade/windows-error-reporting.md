@@ -8,7 +8,7 @@ author: frankroj
 ms.localizationpriority: medium
 ms.topic: article
 ms.technology: itpro-deploy
-ms.date: 01/17/2024
+ms.date: 01/18/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -22,7 +22,7 @@ appliesto:
 >
 > See [Resolve Windows upgrade errors](resolve-windows-upgrade-errors.md) for a full list of articles in this section.
 
-When Windows Setup fails, the result and extend code are recorded as an informational event in the Application log by Windows Error Reporting as event 1001. The event name is **WinSetupDiag02**.  You can use Event Viewer to review this event, or you can use Windows PowerShell.
+When Windows Setup fails, the result and extend code are recorded as an informational event in the Application log by Windows Error Reporting as event 1001. The event name is **WinSetupDiag02**.  You can use Event Viewer or Windows PowerShell to review this event.
 
 To use Windows PowerShell, type the following commands from an elevated Windows PowerShell prompt:
 

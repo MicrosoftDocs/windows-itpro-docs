@@ -12,7 +12,7 @@ ms.topic: troubleshooting
 ms.collection:
   - highpri
   - tier2
-ms.date: 01/17/2024
+ms.date: 01/18/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -486,9 +486,9 @@ Refer to "https://learn.microsoft.com/windows/desktop/Debug/system-error-codes" 
 }
 ```
 
-## Sample registry key
+## Example registry key
 
-![Example of Addreg.](./../images/addreg.png)
+:::image type="content" alt-text="Example of Addreg registry key." source="../images/addreg.png":::
 
 ## Related articles
 
