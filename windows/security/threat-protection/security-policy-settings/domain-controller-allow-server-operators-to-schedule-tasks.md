@@ -3,13 +3,11 @@ title: Domain controller Allow server operators to schedule tasks
 description: Describes the best practices, location, values, and security considerations for the Domain controller Allow server operators to schedule tasks security policy setting.
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Domain controller: Allow server operators to schedule tasks

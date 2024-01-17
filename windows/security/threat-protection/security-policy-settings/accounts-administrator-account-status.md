@@ -4,7 +4,6 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: 71a3bd48-1014-49e0-a936-bfe9433af23e
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 08/01/2017
-ms.technology: itpro-security
 ---
 
 # Accounts: Administrator account status

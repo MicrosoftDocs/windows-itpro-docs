@@ -2,12 +2,10 @@
 title: Behavior of the elevation prompt for standard users
 description: Learn about best practices, security considerations, and more for the policy setting, User Account Control Behavior of the elevation prompt for standard users.
 ms.author: vinpa
-ms.prod: windows-client
 author: vinaypamnani-msft
 manager: aaroncz
 ms.topic: reference
 ms.date: 01/18/2023
-ms.technology: itpro-security
 ---
 
 # User Account Control: Behavior of the elevation prompt for standard users

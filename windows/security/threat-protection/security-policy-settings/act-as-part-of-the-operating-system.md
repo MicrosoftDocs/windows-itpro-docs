@@ -4,7 +4,6 @@ description: Describes the best practices, location, values, policy management, 
 ms.assetid: c1b7e084-a9f7-4377-b678-07cc913c8b0c
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Act as part of the operating system

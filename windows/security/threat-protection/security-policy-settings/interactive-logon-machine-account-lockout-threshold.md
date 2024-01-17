@@ -4,7 +4,6 @@ description: Best practices, location, values, management, and security consider
 ms.assetid: ebbd8e22-2611-4ebe-9db9-d49344e631e4
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Interactive logon: Machine account lockout threshold

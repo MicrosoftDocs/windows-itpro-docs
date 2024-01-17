@@ -4,7 +4,6 @@ description: Describes the best practices, location, values, policy management, 
 ms.assetid: 3b1afae4-68bb-472f-a43e-49e300d73e50
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Change the time zone - security policy setting
