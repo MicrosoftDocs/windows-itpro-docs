@@ -4,7 +4,6 @@ description: Learn how to use advanced security auditing options to monitor chan
 ms.assetid: 553f98a6-7606-4518-a3c5-347a33105130
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 09/09/2021
-ms.technology: itpro-security
 ---
 
 # Monitor central access policy and rule definitions

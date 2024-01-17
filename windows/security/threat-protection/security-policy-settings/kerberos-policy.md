@@ -4,7 +4,6 @@ description: Describes the Kerberos Policy settings and provides links to policy
 ms.assetid: 94017dd9-b1a3-4624-af9f-b29161b4bf38
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Kerberos Policy

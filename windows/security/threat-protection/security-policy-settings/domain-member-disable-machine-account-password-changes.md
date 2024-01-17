@@ -4,7 +4,6 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: 1f660300-a07a-4243-a09f-140aa1ab8867
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 06/27/2019
-ms.technology: itpro-security
 ---
 
 # Domain member: Disable machine account password changes

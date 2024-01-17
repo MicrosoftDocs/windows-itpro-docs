@@ -4,7 +4,6 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: 4904bb40-a2bd-4fef-a102-260ba8d74e30
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +16,6 @@ ms.collection:
   - tier3
 ms.topic: reference
 ms.date: 11/02/2018
-ms.technology: itpro-security
 ---
 
 # Account lockout threshold

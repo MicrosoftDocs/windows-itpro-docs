@@ -4,7 +4,6 @@ description: Learn about best practices and more for the syntax policy setting, 
 ms.assetid: 0fe3521a-5252-44df-8a47-8d92cf936e7c
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # DCOM: Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax

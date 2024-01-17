@@ -2,7 +2,6 @@
 title: 1102(S) The audit log was cleared. 
 description: Though you shouldn't normally see it, this event generates every time Windows Security audit log is cleared. This is for event 1102(S).
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

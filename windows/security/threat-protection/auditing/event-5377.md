@@ -2,7 +2,6 @@
 title: 5377(S) Credential Manager credentials were restored from a backup. 
 description: Describes security event 5377(S) Credential Manager credentials were restored from a backup.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/08/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 
