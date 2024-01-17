@@ -107,26 +107,16 @@ For instructions on how to run the tool in offline mode and with more advanced o
 
 | Parameter | Description |
 | --- | --- |
-
 | /? | Displays interactive help |
-
 | /Output:\[Full path and file name for output log file\] | This optional parameter specifies the name and location for the results log file. The output file contains the analysis from SetupDiag.  Only text format output is supported.  UNC paths work provided the context under which SetupDiag runs has access to the UNC path.  If the path has a space in it, the entire path must be enclosed in double quotes (**"**). See the [Examples](#examples) sections for an example. <br><br> Default: If not specified, SetupDiag creates the file **SetupDiagResults.log** in the same  directory where **SetupDiag.exe** is run. |
-
 | /LogsPath:\[Full path to logs\] | This optional parameter specifies the location of logs to parse and where to find the log files for an offline analysis. These log files can be in a flat folder format, or containing multiple subdirectories.  SetupDiag recursively searches all child directories. Defaults to checking the current system for logs. |
-
 | /ZipLogs:\[True \| False\] | This optional parameter Tells **SetupDiag.exe** to create a zip file containing the results and all the log files that were parsed. The zip file is created in the same directory where **SetupDiag.exe** is run. <br><br> Default: If not specified, a value of 'true' is used. |
-
 | /Format:\[xml \| json\] | This optional parameter specifies the output format for log files to be XML or JSON.  If this parameter isn't specified, text format is used by default. |
-
 | /Scenario:\[Recovery \| Debug\] | This optional parameter can do one of the following two items based on the argument used: <ul><li>Recovery instructs **SetupDiag.exe** to look for and process reset and recovery logs and ignore setup/upgrade logs.</li><li>Debug instructs **SetupDiag.exe** to debug memory dumps if the requisite debug binaries are installed.</li></ul> |
-
 | /Verbose | This optional parameter creates a diagnostic log in the current directory, with debugging information, additional data, and details about SetupDiag. By default, SetupDiag only produces a log file entry for major errors.  Using **/Verbose** causes SetupDiag to always produce another log file with debugging details. These details can be useful when reporting a problem with SetupDiag. |
-
 | /NoTel | This optional parameter tells **SetupDiag.exe** not to send diagnostic telemetry to Microsoft. |
-
 | /RegPath | This optional parameter Instructs **SetupDiag.exe** to add failure information to the registry under the given path. Registry paths should start with **HKEY_LOCAL_MACHINE** or **HKEY_CURRENT_USER** and be accessible at the elevation level SetupDiag is executed under. If this parameter isn't specified, the default path is **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**. |
-
-| /AddReg | This optional parameter Instructs **SetupDiag.exe** to add failure information to the registry on the executing system in offline mode. SetupDiag will by default add failure information to the registry in Online mode only. Registry data will go to **HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup\Volatile\SetupDiag** unless otherwise specified. |
+| /AddReg | This optional parameter Instructs **SetupDiag.exe** to add failure information to the registry on the executing system in offline mode. SetupDiag by default adds failure information to the registry in Online mode only. Registry data goes to **HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup\Volatile\SetupDiag** unless otherwise specified. |
 
 > [!NOTE]
 >
@@ -136,7 +126,7 @@ For instructions on how to run the tool in offline mode and with more advanced o
 
 ### Examples
 
-- In the following example, SetupDiag is run with default parameters (online mode, results file is SetupDiagResults.log in the same folder where SetupDiag is run).
+- In the following example, SetupDiag is run with default parameters in online mode. The results file is **SetupDiagResults.log** in the same folder where SetupDiag is run.
 
   ```cmd
   SetupDiag.exe
@@ -172,31 +162,31 @@ For instructions on how to run the tool in offline mode and with more advanced o
   SetupDiag.exe /Scenario:Recovery /Format:xml
   ```
 
-- The following is an example of Offline Mode. SetupDiag is instructed to parse setup/upgrade log files in the LogsPath directory and output the results to `C:\SetupDiag\Results.txt`.
+- The following example is an example of Offline Mode. SetupDiag is instructed to parse setup/upgrade log files in the LogsPath directory and output the results to `C:\SetupDiag\Results.txt`.
 
   ```cmd
   SetupDiag.exe /Output:C:\SetupDiag\Results.txt /LogsPath:D:\Temp\Logs\Logs1 /RegPath:HKEY_CURRENT_USER\SYSTEM\SetupDiag
   ```
 
-- The following is an example of Online Mode. SetupDiag is instructed to look for setup/upgrade logs on the current system and output its results in XML format to `C:\SetupDiag\Results.xml`.
+- The following example is an example of Online Mode. SetupDiag is instructed to look for setup/upgrade logs on the current system and output its results in XML format to `C:\SetupDiag\Results.xml`.
 
   ```cmd
   SetupDiag.exe /Output:C:\SetupDiag\Results.xml /Format:xml
   ```
 
-- The following is an example of Online Mode where no parameters are needed or used. SetupDiag is instructed to look for setup/upgrade logs on the current system and output the results to the same directory where SetupDiag is located.
+- The following example is an example of Online Mode where no parameters are needed or used. SetupDiag is instructed to look for setup/upgrade logs on the current system and output the results to the same directory where SetupDiag is located.
 
   ```cmd
   SetupDiag.exe
   ```
 
-- The following is an example of Reset/Recovery Offline Mode. SetupDiag is instructed to look for reset/recovery logs in the specified LogsPath location and output the results to the directory specified by the /Output parameter.
+- The following example is an example of Reset/Recovery Offline Mode. SetupDiag is instructed to look for reset/recovery logs in the specified LogsPath location and output the results to the directory specified by the /Output parameter.
 
   ```cmd
   SetupDiag.exe /Output:C:\SetupDiag\RecoveryResults.log /LogsPath:D:\Temp\Cabs\PBR_Log /Scenario:Recovery
   ```
 
-- The following Reset/Recovery Online Mode. SetupDiag is instructed to look for reset/recovery logs on the current system and output its results in XML format.
+- The following example is an example of Reset/Recovery Online Mode. SetupDiag is instructed to look for reset/recovery logs on the current system and output its results in XML format.
 
   ```cmd
   SetupDiag.exe /Scenario:Recovery /Format:xml
