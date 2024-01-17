@@ -4,7 +4,6 @@ description: Provides information about basic audit policies that are available 
 ms.assetid: 2e8ea400-e555-43e5-89d6-0898cb89da90
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Audit Policy

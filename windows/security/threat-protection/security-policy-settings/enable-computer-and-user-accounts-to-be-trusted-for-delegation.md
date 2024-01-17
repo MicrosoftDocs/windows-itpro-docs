@@ -4,7 +4,6 @@ description: Learn about best practices, security considerations and more for th
 ms.assetid: 524062d4-1595-41f3-8ce1-9c85fd21497b
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Enable computer and user accounts to be trusted for delegation
