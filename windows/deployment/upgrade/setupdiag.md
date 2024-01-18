@@ -25,7 +25,7 @@ appliesto:
 > This article is a 300 level article (moderate advanced). See [Resolve Windows upgrade errors](resolve-windows-upgrade-errors.md) for a full list of articles in this section.
 
 > [!div class="nextstepaction"]
-> [Download SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142)
+> [Download the latest version of SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142)
 
 ## About SetupDiag
 
@@ -107,16 +107,16 @@ For instructions on how to run the tool in offline mode and with more advanced o
 
 | Parameter | Description |
 | --- | --- |
-| /? | Displays interactive help |
-| /Output:\[Full path and file name for output log file\] | This optional parameter specifies the name and location for the results log file. The output file contains the analysis from SetupDiag.  Only text format output is supported.  UNC paths work provided the context under which SetupDiag runs has access to the UNC path.  If the path has a space in it, the entire path must be enclosed in double quotes (**"**). See the [Examples](#examples) sections for an example. <br><br> Default: If not specified, SetupDiag creates the file **SetupDiagResults.log** in the same  directory where **SetupDiag.exe** is run. |
-| /LogsPath:\[Full path to logs\] | This optional parameter specifies the location of logs to parse and where to find the log files for an offline analysis. These log files can be in a flat folder format, or containing multiple subdirectories.  SetupDiag recursively searches all child directories. Defaults to checking the current system for logs. |
-| /ZipLogs:\[True \| False\] | This optional parameter Tells **SetupDiag.exe** to create a zip file containing the results and all the log files that were parsed. The zip file is created in the same directory where **SetupDiag.exe** is run. <br><br> Default: If not specified, a value of 'true' is used. |
-| /Format:\[xml \| json\] | This optional parameter specifies the output format for log files to be XML or JSON.  If this parameter isn't specified, text format is used by default. |
-| /Scenario:\[Recovery \| Debug\] | This optional parameter can do one of the following two items based on the argument used: <ul><li>Recovery instructs **SetupDiag.exe** to look for and process reset and recovery logs and ignore setup/upgrade logs.</li><li>Debug instructs **SetupDiag.exe** to debug memory dumps if the requisite debug binaries are installed.</li></ul> |
-| /Verbose | This optional parameter creates a diagnostic log in the current directory, with debugging information, additional data, and details about SetupDiag. By default, SetupDiag only produces a log file entry for major errors.  Using **/Verbose** causes SetupDiag to always produce another log file with debugging details. These details can be useful when reporting a problem with SetupDiag. |
-| /NoTel | This optional parameter tells **SetupDiag.exe** not to send diagnostic telemetry to Microsoft. |
-| /RegPath | This optional parameter Instructs **SetupDiag.exe** to add failure information to the registry under the given path. Registry paths should start with **HKEY_LOCAL_MACHINE** or **HKEY_CURRENT_USER** and be accessible at the elevation level SetupDiag is executed under. If this parameter isn't specified, the default path is **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**. |
-| /AddReg | This optional parameter Instructs **SetupDiag.exe** to add failure information to the registry on the executing system in offline mode. SetupDiag by default adds failure information to the registry in Online mode only. Registry data goes to **HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup\Volatile\SetupDiag** unless otherwise specified. |
+| **/?** | Displays interactive help |
+| **/Output:\[Full path and file name for output log file\]** | This optional parameter specifies the name and location for the results log file. The output file contains the analysis from SetupDiag.  Only text format output is supported.  UNC paths work provided the context under which SetupDiag runs has access to the UNC path.  If the path has a space in it, the entire path must be enclosed in double quotes (**"**). See the [Examples](#examples) sections for an example. <br><br> Default: If not specified, SetupDiag creates the file **SetupDiagResults.log** in the same  directory where **SetupDiag.exe** is run. |
+| **/LogsPath:\[Full path to logs\]** | This optional parameter specifies the location of logs to parse and where to find the log files for an offline analysis. These log files can be in a flat folder format, or containing multiple subdirectories.  SetupDiag recursively searches all child directories. Defaults to checking the current system for logs. |
+| **/ZipLogs:\[True \| False\]** | This optional parameter Tells **SetupDiag.exe** to create a zip file containing the results and all the log files that were parsed. The zip file is created in the same directory where **SetupDiag.exe** is run. <br><br> Default: If not specified, a value of 'true' is used. |
+| **/Format:\[xml \| json\]** | This optional parameter specifies the output format for log files to be XML or JSON.  If this parameter isn't specified, text format is used by default. |
+| **/Scenario:\[Recovery \| Debug\]** | This optional parameter can do one of the following two items based on the argument used: <br><br> <ul><li>Recovery instructs **SetupDiag.exe** to look for and process reset and recovery logs and ignore setup/upgrade logs.</li><li>Debug instructs **SetupDiag.exe** to debug memory dumps if the requisite debug binaries are installed.</li></ul> |
+| **/Verbose** | This optional parameter creates a diagnostic log in the current directory, with debugging information, additional data, and details about SetupDiag. By default, SetupDiag only produces a log file entry for major errors.  Using **/Verbose** causes SetupDiag to always produce another log file with debugging details. These details can be useful when reporting a problem with SetupDiag. |
+| **/NoTel** | This optional parameter tells **SetupDiag.exe** not to send diagnostic telemetry to Microsoft. |
+| **/RegPath** | This optional parameter Instructs **SetupDiag.exe** to add failure information to the registry under the given path. Registry paths should start with **HKEY_LOCAL_MACHINE** or **HKEY_CURRENT_USER** and be accessible at the elevation level SetupDiag is executed under. If this parameter isn't specified, the default path is **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**. |
+| **/AddReg** | This optional parameter Instructs **SetupDiag.exe** to add failure information to the registry on the executing system in offline mode. SetupDiag by default adds failure information to the registry in Online mode only. Registry data goes to **HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup\Volatile\SetupDiag** unless otherwise specified. |
 
 > [!NOTE]
 >

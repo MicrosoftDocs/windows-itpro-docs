@@ -58,9 +58,7 @@ Using the **Attach a screenshot** and **Attach a file** options allows screensho
 
 Finally the **Recreate my problem** option can be used to potentially send additional data and logs for Microsoft to evaluate.
 
-Once all the feedback items are completed, select the **Submit** button to send the feedback.
-
-After **Submit** is selected, that's all that needs to be done. Microsoft receives the feedback and begins analyzing the issue. The submitted feedback can be checked on periodically to see what solutions are provided.
+Once all the feedback items are completed, select the **Submit** button to send the feedback. Microsoft receives the feedback and begins analyzing the issue. The submitted feedback can be checked on periodically to see what solutions are provided.
 
 ## Link to the feedback
 
