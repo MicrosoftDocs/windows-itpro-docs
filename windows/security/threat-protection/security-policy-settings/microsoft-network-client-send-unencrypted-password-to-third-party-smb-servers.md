@@ -4,7 +4,6 @@ description: Learn about best practices and more for the security policy setting
 ms.assetid: 97a76b93-afa7-4dd9-bb52-7c9e289b6017
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 

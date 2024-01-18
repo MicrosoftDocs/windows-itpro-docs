@@ -4,7 +4,6 @@ description: Determines whether to audit each instance of a user logging on to o
 ms.assetid: 78B5AFCB-0BBD-4C38-9FE9-6B4571B94A35
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +16,6 @@ ms.collection:
   - tier3
 ms.topic: reference
 ms.date: 09/06/2021
-ms.technology: itpro-security
 ---
 
 # Audit logon events

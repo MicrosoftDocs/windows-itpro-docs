@@ -4,7 +4,6 @@ description: Best practices, security considerations, and more for the security 
 ms.assetid: 64950a95-6985-4db6-9905-1db18557352d
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # User Account Control: Only elevate executables that are signed and validated
