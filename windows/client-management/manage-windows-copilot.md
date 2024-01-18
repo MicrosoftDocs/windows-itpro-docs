@@ -2,10 +2,10 @@
 title: Manage Copilot in Windows
 description: Learn how to manage Copilot in Windows for commercial environments using MDM and group policy. Learn about the chat providers available to Copilot in Windows.
 ms.topic: conceptual
-ms.technology: itpro-windows-copilot
+ms.subservice: itpro-windows-copilot
 ms.date: 11/06/2023
 ms.author: mstewart
-author: mestew 
+author: mestew
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2 or later</a>
 ---
@@ -41,7 +41,7 @@ Organizations that aren't ready to use Copilot in Windows can disable it until t
 
 Copilot in Windows can use either Bing Chat or Bing Chat Enterprise as its chat provider platform. The chat provider platform is the underlying service that Copilot in Windows uses to communicate with the user. The chat provider platform that Copilot in Windows uses is important because it is possible for users to copy and paste sensitive information into the chat provider. Each chat provider platform has different privacy and security protections.
 
-**Bing Chat**: 
+**Bing Chat**:
 
 [Bing Chat](https://www.microsoft.com/bing/do-more-with-ai/what-is-bing-chat-and-how-can-you-use-it) is a consumer experience and if a user isn't signed in with their Microsoft account, the number of chat queries per user has a daily limit. Bing Chat doesn't offer the same commercial data protection as Bing Chat Enterprise does. The following privacy and security protections apply for Bing Chat:
    - [Copilot in Windows: Your data and privacy](https://support.microsoft.com/windows/3e265e82-fc76-4d0a-afc0-4a0de528b73a)
@@ -86,7 +86,7 @@ To verify that Bing Chat Enterprise is enabled for the user as the chat provider
      - Currently, Microsoft 365 A3 and A5 for faculty requires additional configuration. For more information, see [Manage Bing Chat Enterprise](/bing-chat-enterprise/manage).
    - Microsoft 365 Business Standard
    - Microsoft 365 Business Premium
-1. To verify that Bing Chat Enterprise is enabled for the user, select the user's **Display name** to open the flyout menu. 
+1. To verify that Bing Chat Enterprise is enabled for the user, select the user's **Display name** to open the flyout menu.
 1. In the flyout, select the **Licenses & apps** tab, then expand the **Apps** list.
 1. Verify that **Bing Chat Enterprise** is enabled for the user.
 1. If you prefer to view a user's licenses from the [Azure portal](https://portal.azure.com), you will find it under **Microsoft Entra ID** > **Users**. Select the user's name, then **Licenses**. Select a  license that includes Bing Chat Enterprise, and verify that it's listed as **On**.
@@ -121,7 +121,7 @@ When Bing Chat Enterprise is the chat provider platform, the user experience cle
 
 ## Ensure the Copilot in Windows user experience is enabled
 
-Once you've configured the chat provider platform that Copilot in Windows uses, you need to ensure that the Copilot in Windows user experience is enabled. Ensuring the Copilot in Windows user experience is enabled varies by the Windows version. 
+Once you've configured the chat provider platform that Copilot in Windows uses, you need to ensure that the Copilot in Windows user experience is enabled. Ensuring the Copilot in Windows user experience is enabled varies by the Windows version.
 
 ### Enable the Copilot in Windows user experience for Windows 11, version 22H2 clients
 
@@ -142,7 +142,7 @@ To enable Copilot in Windows for managed Windows 11, version 22H2 devices, you n
    - **Group Policy:** Computer Configuration\Administrative Templates\Windows Components\Windows Update\Windows Update for Business\\**Allow updates to Windows optional features**
    - **CSP**: ./Device/Vendor/MSFT/Policy/Config/Update/[AllowOptionalUpdates](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowoptionalupdates)
       - In the Intune [settings catalog](/mem/intune/configuration/settings-catalog), this setting is named **Allow optional updates** under the **Windows Update for Business** category.
- 
+
    The optional updates policy applies to Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later. When setting policy for [optional updates](/windows/deployment/update/waas-configure-wufb#enable-optional-updates), ensure you select one of the following options that includes CFRs:
     - Automatically receive optional updates (including CFRs)
       - This selection places devices into an early CFR phase
