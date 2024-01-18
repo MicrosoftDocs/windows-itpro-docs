@@ -1,14 +1,7 @@
 ---
 title: ADMX_Taskbar Policy CSP
 description: Learn more about the ADMX_Taskbar Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -105,16 +98,7 @@ A reboot is required for this policy setting to take effect.
 <!-- EnableLegacyBalloonNotifications-OmaUri-End -->
 
 <!-- EnableLegacyBalloonNotifications-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy disables the functionality that converts balloons to toast notifications.
-
-- If you enable this policy setting, system and application notifications will render as balloons instead of toast notifications.
-
-Enable this policy setting if a specific app or system component that uses balloon notifications has compatibility issues with toast notifications.
-
-- If you disable or don't configure this policy setting, all notifications will appear as toast notifications.
-
-A reboot is required for this policy setting to take effect.
+<!-- Description-Source-Not-Found -->
 <!-- EnableLegacyBalloonNotifications-Description-End -->
 
 <!-- EnableLegacyBalloonNotifications-Editable-Begin -->

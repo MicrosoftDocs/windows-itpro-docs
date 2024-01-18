@@ -1,13 +1,6 @@
 ---
 title: Reporting CSP
 description: The Reporting configuration service provider is used to retrieve Windows Information Protection (formerly known as Enterprise Data Protection) and security auditing logs.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-ms.topic: reference
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
