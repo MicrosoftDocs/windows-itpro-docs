@@ -8,25 +8,27 @@ author: frankroj
 ms.localizationpriority: medium
 ms.topic: article
 ms.technology: itpro-deploy
-ms.date: 10/28/2022
+ms.date: 01/18/2024
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Windows Error Reporting
 
-**Applies to**
--   Windows 10
-
 > [!NOTE]
-> This is a 300 level topic (moderately advanced).  
-> See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
+>
+> This article is a 300 level article (moderately advanced).  
+>
+> See [Resolve Windows upgrade errors](resolve-windows-upgrade-errors.md) for a full list of articles in this section.
 
-
-When Windows Setup fails, the result and extend code are recorded as an informational event in the Application log by Windows Error Reporting as event 1001. The event name is **WinSetupDiag02**.  You can use Event Viewer to review this event, or you can use Windows PowerShell.
+When Windows Setup fails, the result and extend code are recorded as an informational event in the Application log by Windows Error Reporting as event 1001. The event name is **WinSetupDiag02**.  Event Viewer or Windows PowerShell can be used to review this event.
 
 To use Windows PowerShell, type the following commands from an elevated Windows PowerShell prompt:
 
 > [!IMPORTANT]
-> The following source will be available only if you have updated from a previous version of Windows 10 to a new version. If you installed the current version and have not updated, the source named **WinSetupDiag02** will be unavailable.
+>
+> The following Event logs are only available if Windows was updated from a previous version of Windows to a new version of Windows.
 
 ```powershell
 $events = Get-WinEvent -FilterHashtable @{LogName="Application";ID="1001";Data="WinSetupDiag02"}
@@ -34,37 +36,35 @@ $event = [xml]$events[0].ToXml()
 $event.Event.EventData.Data
 ```
 
-To use Event Viewer: 
+To use Event Viewer:
+
 1. Open Event Viewer and navigate to **Windows Logs\Application**.
-2. Select **Find**, and then search for **winsetupdiag02**.
-3. Double-click the event that is highlighted.
+1. Select **Find**, and then search for **winsetupdiag02**.
+1. Double-click the event that is highlighted.
 
 > [!NOTE]
-> For legacy operating systems, the Event Name was WinSetupDiag01. 
+>
+> For legacy operating systems, the Event Name was WinSetupDiag01.
 
 Ten parameters are listed in the event:
 
-| Parameters  | 
-| ------------- | 
-|P1: The Setup Scenario (1=Media,5=WindowsUpdate,7=Media Creation Tool)   | 
-|P2: Setup Mode (x=default,1=Downlevel,5=Rollback)   | 
-|P3: New OS Architecture (x=default,0=X86,9=AMD64)   | 
-|P4: Install Result (x=default,0=Success,1=Failure,2=Cancel,3=Blocked)   | 
-|**P5: Result Error Code**  (Ex: 0xc1900101)   | 
-|**P6: Extend Error Code**  (Ex: 0x20017)   | 
-|P7: Source OS build (Ex: 9600)   | 
-|P8: Source OS branch (not typically available)   | 
-|P9: New OS build (Ex: 16299}   | 
-|P10: New OS branch (Ex: rs3_release}   | 
+| Parameters  |
+| ------------- |
+| P1: The Setup Scenario (1=Media,5=WindowsUpdate,7=Media Creation Tool) |
+| P2: Setup Mode (x=default,1=Downlevel,5=Rollback) |
+| P3: New OS Architecture (x=default,0=X86,9=AMD64) |
+| P4: Install Result (x=default,0=Success,1=Failure,2=Cancel,3=Blocked) |
+| **P5: Result Error Code**  (Ex: 0xc1900101) |
+| **P6: Extend Error Code**  (Ex: 0x20017) |
+| P7: Source OS build (Ex: 9600) |
+| P8: Source OS branch (not typically available) |
+| P9: New OS build (Ex: 16299) |
+| P10: New OS branch (Ex: rs3_release) |
 
-The event will also contain links to log files that can be used to perform a detailed diagnosis of the error. An example of this event from a successful upgrade is shown below.
+The event also contains links to log files that can be used to perform a detailed diagnosis of the error. The following example is an example of this event from a successful upgrade:
 
 :::image type="content" alt-text="Windows Error Reporting." source="../images/event.png" lightbox="../images/event.png":::
 
 ## Related articles
 
-[Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml)  
-[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)  
-[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)  
-[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)  
-[Fix Windows Update errors by using the DISM or System Update Readiness tool](/troubleshoot/windows-server/deployment/fix-windows-update-errors)
+- [Fix Windows Update errors by using the DISM or System Update Readiness tool](/troubleshoot/windows-server/deployment/fix-windows-update-errors).
