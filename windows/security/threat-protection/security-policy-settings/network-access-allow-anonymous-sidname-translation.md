@@ -4,7 +4,6 @@ description: Best practices, location, values, policy management and security co
 ms.assetid: 0144477f-22a6-4d06-b70a-9c9c2196e99e
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Network access: Allow anonymous SID/Name translation

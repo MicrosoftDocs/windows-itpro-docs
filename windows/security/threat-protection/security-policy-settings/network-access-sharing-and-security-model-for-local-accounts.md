@@ -4,7 +4,6 @@ description: Best practices, security considerations, and more for the security 
 ms.assetid: 0b3d703c-ea27-488f-8f59-b345af75b994
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Network access: Sharing and security model for local accounts

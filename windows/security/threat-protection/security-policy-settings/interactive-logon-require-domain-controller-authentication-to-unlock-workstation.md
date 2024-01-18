@@ -4,7 +4,6 @@ description: Best practices security considerations, and more for the policy set
 ms.assetid: 97618ed3-e946-47db-a212-b5e7a4fc6ffc
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Interactive logon: Require Domain Controller authentication to unlock workstation

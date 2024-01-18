@@ -6,13 +6,11 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/06/2021
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

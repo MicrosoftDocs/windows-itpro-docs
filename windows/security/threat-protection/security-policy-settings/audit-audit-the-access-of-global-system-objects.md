@@ -4,7 +4,6 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: 20d40a79-ce89-45e6-9bb4-148f83958460
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Audit: Audit the access of global system objects

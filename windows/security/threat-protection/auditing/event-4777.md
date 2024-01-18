@@ -2,7 +2,6 @@
 title: 4777(F) The domain controller failed to validate the credentials for an account. 
 description: Describes security event 4777(F) The domain controller failed to validate the credentials for an account.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

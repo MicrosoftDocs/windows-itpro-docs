@@ -26,8 +26,6 @@ items:
         href: /windows/deployment/windows-10-pro-in-s-mode?context=/education/context/context
       - name: Deploy Win32 apps to S Mode devices
         href: /windows/security/threat-protection/windows-defender-application-control/lob-win32-apps-on-s?context=/education/context/context
-    - name: Windows 10 editions for education customers
-      href: windows-editions-for-education-customers.md
     - name: Considerations for shared and guest devices
       href: /windows/configuration/shared-devices-concepts?context=/education/context/context
     - name: Windows 10 configuration recommendations for education customers
@@ -64,8 +62,6 @@ items:
         href: set-up-school-pcs-technical.md
       - name: Provisioning package settings
         href: set-up-school-pcs-provisioning-package.md
-      - name: What's new in Set up School PCs
-        href: set-up-school-pcs-whats-new.md
     - name: Take a Test technical reference
       href: take-a-test-app-technical.md
     - name: Shared PC technical reference

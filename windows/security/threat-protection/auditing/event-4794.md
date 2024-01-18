@@ -2,7 +2,6 @@
 title: 4794(S, F) An attempt was made to set the Directory Services Restore Mode administrator password. 
 description: Describes security event 4794(S, F) An attempt was made to set the Directory Services Restore Mode administrator password.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 
