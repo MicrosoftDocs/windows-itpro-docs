@@ -1777,7 +1777,7 @@
     },
     {
       "source_path": "windows/deployment/deploy-windows-to-go.md",
-      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-to-go/deploy-windows-to-go",
       "redirect_document_id": false
     },
     {
@@ -11212,7 +11212,7 @@
     },
     {
       "source_path": "windows/deployment/planning/best-practice-recommendations-for-windows-to-go.md",
-      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-to-go/best-practice-recommendations-for-windows-to-go",
       "redirect_document_id": false
     },
     {
@@ -11347,7 +11347,7 @@
     },
     {
       "source_path": "windows/deployment/planning/deployment-considerations-for-windows-to-go.md",
-      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-to-go/deployment-considerations-for-windows-to-go",
       "redirect_document_id": false
     },
     {
@@ -11447,7 +11447,7 @@
     },
     {
       "source_path": "windows/deployment/planning/prepare-your-organization-for-windows-to-go.md",
-      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-to-go/prepare-your-organization-for-windows-to-go",
       "redirect_document_id": false
     },
     {
@@ -11487,7 +11487,7 @@
     },
     {
       "source_path": "windows/deployment/planning/security-and-data-protection-considerations-for-windows-to-go.md",
-      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-to-go/security-and-data-protection-considerations-for-windows-to-go",
       "redirect_document_id": false
     },
     {
@@ -11682,7 +11682,7 @@
     },
     {
       "source_path": "windows/deployment/planning/windows-to-go-overview.md",
-      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-to-go/windows-to-go-overview",
       "redirect_document_id": false
     },
     {
@@ -12757,7 +12757,7 @@
     },
     {
       "source_path": "windows/deployment/planning/windows-to-go-frequently-asked-questions.yml",
-      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-to-go/windows-to-go-frequently-asked-questions",
       "redirect_document_id": false
     },
     {
