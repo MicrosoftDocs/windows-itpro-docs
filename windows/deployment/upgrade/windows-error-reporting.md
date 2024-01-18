@@ -22,7 +22,7 @@ appliesto:
 >
 > See [Resolve Windows upgrade errors](resolve-windows-upgrade-errors.md) for a full list of articles in this section.
 
-When Windows Setup fails, the result and extend code are recorded as an informational event in the Application log by Windows Error Reporting as event 1001. The event name is **WinSetupDiag02**.  You can use Event Viewer or Windows PowerShell to review this event.
+When Windows Setup fails, the result and extend code are recorded as an informational event in the Application log by Windows Error Reporting as event 1001. The event name is **WinSetupDiag02**.  Event Viewer or Windows PowerShell can be used to review this event.
 
 To use Windows PowerShell, type the following commands from an elevated Windows PowerShell prompt:
 
