@@ -41,9 +41,9 @@
       "zone_pivot_group_filename": "resources/zone-pivot-groups.json",
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Windows",
-      "ms.technology": "itpro-manage",
       "audience": "ITPro",
-      "ms.prod": "windows-client",
+      "ms.service": "windows-client",
+      "ms.subservice": "itpro-manage",
       "ms.topic": "article",
       "ms.author": "vinpa",
       "author": "vinaypamnani-msft",
@@ -85,6 +85,9 @@
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
         ]
+      },
+      "ms.topic": {
+        "mdm/*.md": "reference"
       }
     },
     "template": [],
