@@ -3,13 +3,11 @@ title: Add workstations to domain
 description: Describes the best practices, location, values, policy management and security considerations for the Add workstations to domain security policy setting.
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Add workstations to domain

@@ -4,7 +4,6 @@ description: Learn best practices, security considerations, and more for the pol
 ms.assetid: a1bfb58b-1ae8-4de9-832b-aa889a6e64bd
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Accounts: Limit local account use of blank passwords to console logon only

@@ -4,7 +4,6 @@ description: Best practices, security considerations and more for the security p
 ms.assetid: 37e380c2-22e1-44cd-9993-e12815b845cf
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Network security: Restrict NTLM: Audit incoming NTLM traffic

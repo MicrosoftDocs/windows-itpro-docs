@@ -4,7 +4,6 @@ description: Best practices, security considerations, and more for the security 
 ms.assetid: 73e6023e-0af3-4531-8238-82f0f0e4965b
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Domain member: Digitally encrypt secure channel data (when possible)

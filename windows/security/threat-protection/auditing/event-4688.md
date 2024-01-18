@@ -2,7 +2,6 @@
 title: 4688(S) A new process has been created. 
 description: Describes security event 4688(S) A new process has been created. This event is generated when a new process starts.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 01/24/2022
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

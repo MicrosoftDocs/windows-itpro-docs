@@ -1,11 +1,12 @@
 ---
 title: Identify Applications Settings
 description: Identify which applications and settings need to be migrated before using the User State Migration Tool (USMT).
+ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 01/03/2024
+ms.date: 01/09/2024
 ms.topic: article
 ms.technology: itpro-deploy
 appliesto:

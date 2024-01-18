@@ -4,7 +4,6 @@ description: Best practices, security considerations, and more for the policy se
 ms.assetid: 9b017399-0a54-4580-bfae-614c2beda3a1
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication

@@ -21,7 +21,7 @@
     items:
     - name: Delivery Optimization reference
       href: waas-delivery-optimization-reference.md
-    - name: Delivery Optimization client-service communication
+    - name: Delivery Optimization workflow, privacy, security, and endpoints
       href: delivery-optimization-workflow.md       
     - name: Using a proxy with Delivery Optimization
       href: delivery-optimization-proxy.md
