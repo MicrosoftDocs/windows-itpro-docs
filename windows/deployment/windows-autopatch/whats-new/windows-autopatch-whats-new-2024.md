@@ -27,6 +27,8 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
+| [Windows quality updates overview](../operate/windows-autopatch-groups-windows-quality-update-overview.md) | Added [Import Update rings for Windows 10 and later](../operate/windows-autopatch-groups-windows-quality-update-overview.md#import-update-rings-for-windows-10-and-later-public-preview) |
+| [Windows quality updates overview](../operate/windows-autopatch-groups-windows-quality-update-overview.md#service-level-objective) | Updated the Service level objective, added the Service level objective calculation. |
 | [Prerequisites](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) | Added more E3 and E5 licenses to the [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) section. |
 
 ## January service releases
