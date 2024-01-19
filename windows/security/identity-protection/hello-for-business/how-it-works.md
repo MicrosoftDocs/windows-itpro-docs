@@ -98,7 +98,7 @@ For detailed sequence diagrams, see [how device registration works][ENTRA-4].
 > [!NOTE]
 > The list of prerequisites varies depending on the deployment type, as described in the article [Plan a Windows Hello for Business deployment](deploy/index.md).
 
-During the provisioning phase, a *Windows Hello container* is created. A Windows Hello container is a logical grouping of *key material*, or data. Windows Hello uses a single container that holds user key material for personal accounts (for example, the user's Microsoft account or passkeys), and credentials associated with an organization's account. The container holds organization's credentials only on devices that are *registered* with the organization's IdP.
+During the provisioning phase, a *Windows Hello container* is created. A Windows Hello container is a logical grouping of *key material*, or data. The container holds organization's credentials only on devices that are *registered* with the organization's IdP.
 
 > [!NOTE]
 > There are no physical containers on disk, in the registry, or elsewhere. Containers are logical units used to group related items. The keys, certificates, and credentials that Windows Hello stores, are protected without the creation of actual containers or folders.
