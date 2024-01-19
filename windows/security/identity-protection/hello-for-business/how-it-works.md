@@ -129,7 +129,7 @@ For more information and detailed sequence diagrams, see [how provisioning works
         The protector key securely wraps the *authentication key*. The authentication key is used to unlock the *user ID keys*. The container has only one authentication key, but there can be multiple copies of that key wrapped with different unique protector keys.
     :::column-end:::
     :::column:::
-        :::image type="content" source="images/howitworks/hello-container.png" alt-text="Diagram of the Windows Hello container." border="false":::
+        :::image type="content" source="images/howitworks/hello-container.png" alt-text="Diagram of the Windows Hello container." border="false" lightbox="images/howitworks/hello-container.png":::
     :::column-end:::
 :::row-end:::
 
