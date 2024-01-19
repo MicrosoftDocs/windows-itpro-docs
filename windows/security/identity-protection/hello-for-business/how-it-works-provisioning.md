@@ -19,8 +19,8 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 ## Microsoft Entra joined provisioning in a managed environment
 
-![Microsoft Entra joined provisioning in a managed environment.](images/howitworks/prov/aadj-managed.png)
-[Full size image](images/howitworks/prov/aadj-managed.png)
+![Microsoft Entra joined provisioning in a managed environment.](images/howitworks/prov/entra-join-managed.png)
+[Full size image](images/howitworks/prov/entra-join-managed.png)
 
 | Phase | Description |
 |:-:|:-|
@@ -30,8 +30,8 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 ## Microsoft Entra joined provisioning in a federated environment
 
-![Microsoft Entra joined provisioning in federated environment.](images/howitworks/prov/aadj-federated.png)
-[Full size image](images/howitworks/prov/aadj-federated.png)
+![Microsoft Entra joined provisioning in federated environment.](images/howitworks/prov/entra-join-federated.png)
+[Full size image](images/howitworks/prov/entra-join-federated.png)
 
 | Phase | Description |
 |:-:|:-|
@@ -41,8 +41,8 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 ## Microsoft Entra hybrid joined provisioning in a cloud Kerberos trust deployment in a managed environment
 
-![Microsoft Entra hybrid joined provisioning in a cloud Kerberos trust deployment in a Managed environment.](images/howitworks/prov/haadj-cloudtrust-managed.png)
-[Full size image](images/howitworks/prov/haadj-cloudtrust-managed.png)
+![Microsoft Entra hybrid joined provisioning in a cloud Kerberos trust deployment in a Managed environment.](images/howitworks/prov/hybrid-entra-join-ckt.png)
+[Full size image](images/howitworks/prov/hybrid-entra-join-ckt.png)
 
 | Phase | Description |
 |:-:|:-|
@@ -55,8 +55,8 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 ## Microsoft Entra hybrid joined provisioning in a key trust deployment in a managed environment
 
-![Microsoft Entra hybrid joined provisioning in a key trust deployment in a managed environment.](images/howitworks/prov/haadj-keytrust-managed.png)
-[Full size image](images/howitworks/prov/haadj-keytrust-managed.png)
+![Microsoft Entra hybrid joined provisioning in a key trust deployment in a managed environment.](images/howitworks/prov/hybrid-entra-join-managed-kt.png)
+[Full size image](images/howitworks/prov/hybrid-entra-join-managed-kt.png)
 
 | Phase | Description |
 |:-:|:-|
@@ -70,8 +70,8 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 ## Microsoft Entra hybrid joined provisioning in a synchronous certificate trust deployment in a federated environment
 
-![Microsoft Entra hybrid joined provisioning in a synchronous Certificate trust deployment in a federated environment.](images/howitworks/prov/haadj-instant-certtrust-federated.png)
-[Full size image](images/howitworks/prov/haadj-instant-certtrust-federated.png)
+![Microsoft Entra hybrid joined provisioning in a synchronous Certificate trust deployment in a federated environment.](images/howitworks/prov/hybrid-entra-join-federated.png)
+[Full size image](images/howitworks/prov/hybrid-entra-join-federated.png)
 
 | Phase | Description |
 |:-|:-|
@@ -88,8 +88,8 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 ## Domain joined provisioning in an On-premises Key Trust deployment
 
-![Domain joined provisioning in an On-premises Key Trust deployment.](images/howitworks/prov/onprem-keytrust.png)
-[Full size image](images/howitworks/prov/onprem-keytrust.png)
+![Domain joined provisioning in an On-premises Key Trust deployment.](images/howitworks/prov/onprem-kt.png)
+[Full size image](images/howitworks/prov/onprem-kt.png)
 
 | Phase  | Description  |
 | :----: | :----------- |
@@ -99,8 +99,8 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 ## Domain joined provisioning in an On-premises Certificate Trust deployment
 
-![Domain joined provisioning in an On-premises Certificate Trust deployment.](images/howitworks/prov/onprem-certtrust.png)
-[Full size image](images/howitworks/prov/onprem-certtrust.png)
+![Domain joined provisioning in an On-premises Certificate Trust deployment.](images/howitworks/prov/onprem-ct.png)
+[Full size image](images/howitworks/prov/onprem-ct.png)
 
 | Phase  | Description  |
 | :----: | :----------- |
