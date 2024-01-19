@@ -45,7 +45,7 @@ During this phase, the user authenticates using one form of authentication (typi
     :::column-end:::
 :::row-end:::
 
-In this phase, required by some hybrid deployments, the user's public key is synchronized from Microsoft Entra ID to Active Directory.
+In this phase, **required by some hybrid deployments**, the user's public key is synchronized from Microsoft Entra ID to Active Directory.
 
 :::row:::
     :::column span="1":::
@@ -56,7 +56,7 @@ In this phase, required by some hybrid deployments, the user's public key is syn
     :::column-end:::
 :::row-end:::
 
-In this phase, required by deployments using certificates, a certificate is issued to the user using the organization's public key infrastructure (PKI).
+In this phase, **required only by deployments using certificates**, a certificate is issued to the user using the organization's public key infrastructure (PKI).
 
 :::row:::
     :::column span="1":::
@@ -86,14 +86,9 @@ For detailed sequence diagrams, see [how device registration works][ENTRA-4].
 
 ## Provisioning
 
-The first step in the usage of Windows Hello is setting up a *container*. A Windows Hello container is a logical grouping of *key material*, or data. Windows Hello uses a single container that holds user key material for personal accounts (for example, the user's Microsoft account or passkeys), and credentials associated with an organization's account. The container holds organization's credentials only on devices that are *registered* with the organization's IdP.
-
-> [!NOTE]
-> There are no physical containers on disk, in the registry, or elsewhere. Containers are logical units used to group related items. The keys, certificates, and credentials that Windows Hello stores, are protected without the creation of actual containers or folders.
-
 :::row:::
     :::column:::
-    Windows Hello provisioning is triggered once device registration completes, and after the device receives a policy that enables Windows Hello. If all the prerequisites are met, a Cloud eXperience Host (CXH) window is launched to take the user through the Windows Hello provisioning flow.
+    Windows Hello provisioning is triggered once device registration completes, and after the device receives a policy that enables Windows Hello. If all the prerequisites are met, a Cloud eXperience Host (CXH) window is launched to take the user through the provisioning flow.
     :::column-end:::
     :::column:::
     :::image type="content" source="images/howitworks/cxh-provision.png" alt-text="Screenshot of the Cloud Experience Host prompting the user to provision Windows Hello." border="false" lightbox="images/howitworks/cxh-provision.png":::
@@ -102,6 +97,11 @@ The first step in the usage of Windows Hello is setting up a *container*. A Wind
 
 > [!NOTE]
 > The list of prerequisites varies depending on the deployment type, as described in the article [Plan a Windows Hello for Business deployment](deploy/index.md).
+
+During the provisioning phase, a *Windows Hello container* is created. A Windows Hello container is a logical grouping of *key material*, or data. Windows Hello uses a single container that holds user key material for personal accounts (for example, the user's Microsoft account or passkeys), and credentials associated with an organization's account. The container holds organization's credentials only on devices that are *registered* with the organization's IdP.
+
+> [!NOTE]
+> There are no physical containers on disk, in the registry, or elsewhere. Containers are logical units used to group related items. The keys, certificates, and credentials that Windows Hello stores, are protected without the creation of actual containers or folders.
 
 Here are the steps involved with the provisioning phase:
 
