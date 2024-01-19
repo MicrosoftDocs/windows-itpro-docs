@@ -79,7 +79,7 @@ The CA validates that the certificate is signed by the registration authority. O
 
 To better understand the provisioning flows, review the following sequence diagram:
 
-- [Domain joined provisioning in an On-premises Certificate Trust deployment](../how-it-works-provisioning.md#domain-joined-provisioning-in-an-on-premises-certificate-trust-deployment)
+- [Provisioning in an on-premises certificate trust deployment model](../how-it-works-provisioning.md#provisioning-in-an-on-premises-certificate-trust-deployment-model)
 
 <!--links-->
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd

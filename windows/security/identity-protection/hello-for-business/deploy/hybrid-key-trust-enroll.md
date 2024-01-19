@@ -98,9 +98,9 @@ After enrollment, Microsoft Entra Connect synchronizes the user's key from Micro
 
 To better understand the provisioning flows, review the following sequence diagrams based on the device join and authentication type:
 
-- [Microsoft Entra joined provisioning in a managed environment](../how-it-works-provisioning.md#microsoft-entra-joined-provisioning-in-a-managed-environment)
-- [Microsoft Entra joined provisioning in a federated environment](../how-it-works-provisioning.md#microsoft-entra-joined-provisioning-in-a-federated-environment)
-- [Microsoft Entra hybrid joined provisioning in a key trust deployment in a managed environment](../how-it-works-provisioning.md#microsoft-entra-hybrid-joined-provisioning-in-a-key-trust-deployment-in-a-managed-environment)
+- [Provisioning for Microsoft Entra joined devices with managed authentication](../how-it-works-provisioning.md#provisioning-for-microsoft-entra-joined-devices-with-managed-authentication)
+- [Provisioning for Microsoft Entra joined devices with federated authentication](../how-it-works-provisioning.md#provisioning-for-microsoft-entra-joined-devices-with-federated-authentication)
+- [Provisioning in a hybrid key trust deployment model with managed authentication](../how-it-works-provisioning.md#provisioning-in-a-hybrid-key-trust-deployment-model-with-managed-authentication)
 
 To better understand the authentication flows, review the following sequence diagram:
 

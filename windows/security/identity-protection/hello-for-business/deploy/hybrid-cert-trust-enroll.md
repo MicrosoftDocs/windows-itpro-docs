@@ -124,9 +124,9 @@ The CA validates that the certificate is signed by the registration authority. O
 
 To better understand the provisioning flows, review the following sequence diagrams based on the device join and authentication type:
 
-- [Microsoft Entra joined provisioning in a managed environment](../how-it-works-provisioning.md#microsoft-entra-joined-provisioning-in-a-managed-environment)
-- [Microsoft Entra joined provisioning in a federated environment](../how-it-works-provisioning.md#microsoft-entra-joined-provisioning-in-a-federated-environment)
-- [Microsoft Entra hybrid joined provisioning in a certificate trust deployment in a federated environment](../how-it-works-provisioning.md#microsoft-entra-hybrid-joined-provisioning-in-a-synchronous-certificate-trust-deployment-in-a-federated-environment)
+- [Provisioning for Microsoft Entra joined devices with managed authentication](../how-it-works-provisioning.md#provisioning-for-microsoft-entra-joined-devices-with-managed-authentication)
+- [Provisioning for Microsoft Entra joined devices with federated authentication](../how-it-works-provisioning.md#provisioning-for-microsoft-entra-joined-devices-with-federated-authentication)
+- [Provisioning in a hybrid certificate trust deployment model with federated authentication](../how-it-works-provisioning.md#provisioning-in-a-hybrid-certificate-trust-deployment-model-with-federated-authentication)
 
 To better understand the authentication flows, review the following sequence diagram:
 

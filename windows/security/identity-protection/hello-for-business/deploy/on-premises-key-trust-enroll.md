@@ -56,6 +56,6 @@ This information is also available using the `dsregcmd.exe /status` command from
 
 To better understand the provisioning flows, review the following sequence diagram:
 
-- [Domain joined provisioning in an On-premises Key Trust deployment](../how-it-works-provisioning.md#domain-joined-provisioning-in-an-on-premises-key-trust-deployment)
+- [Provisioning in an on-premises key trust deployment model](../how-it-works-provisioning.md#provisioning-in-an-on-premises-key-trust-deployment-model)
 
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd

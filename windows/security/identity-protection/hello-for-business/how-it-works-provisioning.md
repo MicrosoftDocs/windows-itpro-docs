@@ -17,10 +17,9 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 > [!NOTE]
 > The flows in this section are not exhaustive for every possible scenario. For example, Federated Key Trust is also a supported configuration.
 
-## Microsoft Entra joined provisioning in a managed environment
+## Provisioning for Microsoft Entra joined devices with managed authentication
 
-![Microsoft Entra joined provisioning in a managed environment.](images/howitworks/prov/entra-join-managed.png)
-[Full size image](images/howitworks/prov/entra-join-managed.png)
+:::image type="content" source="images/howitworks/prov/entra-join-managed.png" alt-text="Sequence diagram of the Windows Hello provisioning flow for Microsoft Entra joined devices with managed authentication." lightbox="images/howitworks/prov/entra-join-managed.png" border="false":::
 
 | Phase | Description |
 |:-:|:-|
@@ -28,10 +27,9 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 | B | After receiving an ADRS access token, the application detects if the device has a Windows Hello biometric compatible sensor. If the application detects a biometric sensor, it gives the user the choice to enroll biometrics. After completing or skipping biometric enrollment, the application requires the user to create a PIN and the default (and fall-back gesture when used with biometrics). The user provides and confirms their PIN.  Next, the application requests a Windows Hello for Business key pair from the key pregeneration pool, which includes attestation data.  This is the user key (ukpub/ukpriv). |
 | C | The application sends the ADRS token, ukpub, attestation data, and device information to ADRS for user key registration. Azure DRS validates the MFA claim remains current. On successful validation, Azure DRS locates the user's object in Microsoft Entra ID, writes the key information to a multi-values attribute. The key information includes a reference to the device from which it was created. Microsoft Entra ID returns a key ID to the application, which signals the end of user provisioning and the application exits. |
 
-## Microsoft Entra joined provisioning in a federated environment
+## Provisioning for Microsoft Entra joined devices with federated authentication
 
-![Microsoft Entra joined provisioning in federated environment.](images/howitworks/prov/entra-join-federated.png)
-[Full size image](images/howitworks/prov/entra-join-federated.png)
+:::image type="content" source="images/howitworks/prov/entra-join-federated.png" alt-text="Sequence diagram of the Windows Hello provisioning flow for Microsoft Entra joined devices with federated authentication." lightbox="images/howitworks/prov/entra-join-federated.png" border="false":::
 
 | Phase | Description |
 |:-:|:-|
@@ -39,10 +37,9 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 | B | After receiving an ADRS access token, the application detects if the device has a Windows Hello biometric compatible sensor.  If the application detects a biometric sensor, it gives the user the choice to enroll biometrics.  After completing or skipping biometric enrollment, the application requires the user to create a PIN and the default (and fall-back gesture when used with biometrics).  The user provides and confirms their PIN.  Next, the application requests a Windows Hello for Business key pair from the key pregeneration pool, which includes attestation data.  This is the user key (ukpub/ukpriv). |
 | C | The application sends the ADRS token, ukpub, attestation data, and device information to ADRS for user key registration.  Azure DRS validates MFA claim remains current.  On successful validation, Azure DRS locates the user's object in Microsoft Entra ID, writes the key information to a multi-values attribute. The key information includes a reference to the device from which it was created. Microsoft Entra ID returns key ID to the application, which signals the end of user provisioning and the application exits. |
 
-## Microsoft Entra hybrid joined provisioning in a cloud Kerberos trust deployment in a managed environment
+## Provisioning in a cloud Kerberos trust deployment model with managed authentication
 
-![Microsoft Entra hybrid joined provisioning in a cloud Kerberos trust deployment in a Managed environment.](images/howitworks/prov/hybrid-entra-join-ckt.png)
-[Full size image](images/howitworks/prov/hybrid-entra-join-ckt.png)
+:::image type="content" source="images/howitworks/prov/hybrid-entra-join-ckt.png" alt-text="Sequence diagram of the Windows Hello provisioning flow in a hybrid cloud Kerberos trust deployment model with managed authentication." lightbox="images/howitworks/prov/hybrid-entra-join-ckt.png" border="false":::
 
 | Phase | Description |
 |:-:|:-|
@@ -53,7 +50,9 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 > [!NOTE]
 > Windows Hello for Business cloud Kerberos trust does not require users' keys to be synced from Microsoft Entra ID to Active Directory. Users can immediately authenticate to Microsoft Entra ID and AD after provisioning their credential.
 
-## Microsoft Entra hybrid joined provisioning in a key trust deployment in a managed environment
+## Provisioning in a hybrid key trust deployment model with managed authentication
+
+:::image type="content" source="images/howitworks/prov/hybrid-entra-join-managed-kt.png" alt-text="Sequence diagram of the Windows Hello provisioning flow in a hybrid key trust deployment model with managed authentication." lightbox="images/howitworks/prov/hybrid-entra-join-managed-kt.png" border="false":::
 
 ![Microsoft Entra hybrid joined provisioning in a key trust deployment in a managed environment.](images/howitworks/prov/hybrid-entra-join-managed-kt.png)
 [Full size image](images/howitworks/prov/hybrid-entra-join-managed-kt.png)
@@ -68,10 +67,9 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 > [!IMPORTANT]
 > The newly provisioned user will not be able to sign in using Windows Hello for Business until Microsoft Entra Connect successfully synchronizes the public key to the on-premises Active Directory.
 
-## Microsoft Entra hybrid joined provisioning in a synchronous certificate trust deployment in a federated environment
+## Provisioning in a hybrid certificate trust deployment model with federated authentication
 
-![Microsoft Entra hybrid joined provisioning in a synchronous Certificate trust deployment in a federated environment.](images/howitworks/prov/hybrid-entra-join-federated.png)
-[Full size image](images/howitworks/prov/hybrid-entra-join-federated.png)
+:::image type="content" source="images/howitworks/prov/hybrid-entra-join-federated.png" alt-text="Sequence diagram of the Windows Hello provisioning flow in a hybrid certificate trust deployment model with federated authentication." lightbox="images/howitworks/prov/hybrid-entra-join-federated.png" border="false":::
 
 | Phase | Description |
 |:-|:-|
@@ -86,10 +84,9 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 > [!IMPORTANT]
 > Synchronous certificate enrollment doesn't depend on Microsoft Entra Connect to synchronize the user's public key to issue the Windows Hello for Business authentication certificate.  Users can sign-in using the certificate immediately after provisioning completes.  Microsoft Entra Connect continues to synchronize the public key to Active Directory, but is not shown in this flow.
 
-## Domain joined provisioning in an On-premises Key Trust deployment
+## Provisioning in an on-premises key trust deployment model
 
-![Domain joined provisioning in an On-premises Key Trust deployment.](images/howitworks/prov/onprem-kt.png)
-[Full size image](images/howitworks/prov/onprem-kt.png)
+:::image type="content" source="images/howitworks/prov/onprem-kt.png" alt-text="Sequence diagram of the Windows Hello provisioning flow in an on-premises key trust deployment model." lightbox="images/howitworks/prov/onprem-kt.png" border="false":::
 
 | Phase  | Description  |
 | :----: | :----------- |
@@ -97,10 +94,9 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 | B| After receiving an EDRS access token, the application detects if the device has a Windows Hello biometric compatible sensor.  If the application detects a biometric sensor, it gives the user the choice to enroll biometrics.  After completing or skipping biometric enrollment, the application requires the user to create a PIN and the default (and fall-back gesture when used with biometrics).  The user provides and confirms their PIN.  Next, the application requests a Windows Hello for Business key pair from the key pregeneration pool, which includes attestation data.  This is the user key (ukpub/ukpriv).|
 |C | The application sends the EDRS token, ukpub, attestation data, and device information to the Enterprise DRS for user key registration.  Enterprise DRS validates the MFA claim remains current.  On successful validation, the Enterprise DRS locates the user's object in Active Directory, writes the key information to a multi-values attribute. The key information includes a reference to the device from which it was created. The Enterprise DRS returns a key ID to the application, which represents the end of user key registration.|
 
-## Domain joined provisioning in an On-premises Certificate Trust deployment
+## Provisioning in an on-premises certificate trust deployment model
 
-![Domain joined provisioning in an On-premises Certificate Trust deployment.](images/howitworks/prov/onprem-ct.png)
-[Full size image](images/howitworks/prov/onprem-ct.png)
+:::image type="content" source="images/howitworks/prov/onprem-ct.png" alt-text="Sequence diagram of the Windows Hello provisioning flow in an on-premises certificate trust deployment model." lightbox="images/howitworks/prov/onprem-ct.png" border="false":::
 
 | Phase  | Description  |
 | :----: | :----------- |

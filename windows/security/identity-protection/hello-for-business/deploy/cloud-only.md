@@ -96,8 +96,8 @@ The Windows Hello for Business provisioning process begins immediately after a u
 
 To better understand the provisioning flows, review the following sequence diagrams based on the authentication type:
 
-- [Microsoft Entra joined provisioning in a managed environment](../how-it-works-provisioning.md#microsoft-entra-joined-provisioning-in-a-managed-environment)
-- [Microsoft Entra joined provisioning in a federated environment](../how-it-works-provisioning.md#microsoft-entra-joined-provisioning-in-a-federated-environment)
+- [Provisioning for Microsoft Entra joined devices with managed authentication](../how-it-works-provisioning.md#provisioning-for-microsoft-entra-joined-devices-with-managed-authentication)
+- [Provisioning for Microsoft Entra joined devices with federated authentication](../how-it-works-provisioning.md#provisioning-for-microsoft-entra-joined-devices-with-federated-authentication)
 
 To better understand the authentication flows, review the following sequence diagram:
 
