@@ -1,7 +1,7 @@
 ---
 title: What's new 2024
 description: This article lists the 2024 feature releases and any corresponding Message center post numbers.
-ms.date: 01/11/2024
+ms.date: 01/18/2024
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -28,3 +28,9 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | Article | Description |
 | ----- | ----- |
 | [Prerequisites](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) | Added more E3 and E5 licenses to the [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) section. |
+
+## January service releases
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC708071](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned Maintenance: Service Improvements  |
