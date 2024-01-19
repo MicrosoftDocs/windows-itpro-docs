@@ -1,14 +1,7 @@
 ---
 title: Accounts CSP
 description: The Accounts configuration service provider (CSP) is used by the enterprise to rename devices, and create local Windows accounts & join them to a group.
-ms.author: vinpa
-ms.topic: reference
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.date: 03/27/2020
-ms.reviewer:
-manager: aaroncz
 ---
 
 # Accounts CSP

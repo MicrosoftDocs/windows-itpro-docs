@@ -2,7 +2,7 @@
 title: Use Quick Assist to help users
 description: Learn how IT Pros can use Quick Assist to help users.
 ms.date: 08/10/2023
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 ms.collection:
 - highpri

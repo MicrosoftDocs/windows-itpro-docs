@@ -1,7 +1,7 @@
 ---
 title: What's new in MDM enrollment and management
 description: Discover what's new and breaking changes in mobile device management (MDM) enrollment and management experience across all Windows devices.
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 08/10/2023
 ---
