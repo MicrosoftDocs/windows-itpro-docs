@@ -1,10 +1,9 @@
 ---
-title: Access Credential Manager as a trusted caller 
+title: Access Credential Manager as a trusted caller
 description: Describes best practices, security considerations, and more for the security policy setting, Access Credential Manager as a trusted caller.
 ms.assetid: a51820d2-ca5b-47dd-8e9b-d7008603db88
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Access Credential Manager as a trusted caller
@@ -56,7 +54,7 @@ The following table shows the default value for the server type or Group Policy 
 | Domain controller effective default settings | Not defined |
 | Member server effective default settings | Not defined |
 | Client computer effective default settings | Not defined |
- 
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.
@@ -93,4 +91,4 @@ None. Not defined is the default configuration.
 
 ## Related topics
 [User Rights Assignment](user-rights-assignment.md)
- 
+

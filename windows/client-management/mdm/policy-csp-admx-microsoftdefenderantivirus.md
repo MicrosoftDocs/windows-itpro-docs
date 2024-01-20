@@ -1,14 +1,7 @@
 ---
 title: ADMX_MicrosoftDefenderAntivirus Policy CSP
 description: Learn more about the ADMX_MicrosoftDefenderAntivirus Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/30/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -838,7 +831,7 @@ Microsoft Defender Antivirus automatically determines which applications should 
 
 Enabled:
 
-Specify additional allowed applications in the Options section..
+Specify additional allowed applications in the Options section.
 
 Disabled:
 
@@ -1283,12 +1276,12 @@ This policy, if defined, will prevent antimalware from using the configured prox
 This policy setting defines the URL of a proxy .pac file that should be used when the client attempts to connect the network for security intelligence updates and MAPS reporting. If the proxy auto-config fails or if there is no proxy auto-config specified, the client will fall back to the alternative options (in order):
 
 1. Proxy server (if specified)
-2. Proxy .pac URL (if specified)
+1. Proxy .pac URL (if specified)
 
-3. None
-4. Internet Explorer proxy settings.
+1. None
+1. Internet Explorer proxy settings.
 
-5. Autodetect.
+1. Autodetect.
 
 - If you enable this setting, the proxy setting will be set to use the specified proxy .pac according to the order specified above.
 
@@ -1349,12 +1342,12 @@ This policy setting defines the URL of a proxy .pac file that should be used whe
 This policy setting allows you to configure the named proxy that should be used when the client attempts to connect to the network for security intelligence updates and MAPS reporting. If the named proxy fails or if there is no proxy specified, the client will fall back to the alternative options (in order):
 
 1. Proxy server (if specified)
-2. Proxy .pac URL (if specified)
+1. Proxy .pac URL (if specified)
 
-3. None
-4. Internet Explorer proxy settings.
+1. None
+1. Internet Explorer proxy settings.
 
-5. Autodetect.
+1. Autodetect.
 
 - If you enable this setting, the proxy will be set to the specified URL according to the order specified above. The URL should be proceeded with either https:// or https://.
 

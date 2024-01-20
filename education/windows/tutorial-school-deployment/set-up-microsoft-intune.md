@@ -1,7 +1,7 @@
 ---
 title: Set up device management
 description: Learn how to configure the Intune service and set up the environment for education.
-ms.date: 08/31/2022
+ms.date: 01/16/2024
 ms.topic: tutorial
 appliesto:
 ---
@@ -18,10 +18,11 @@ The Microsoft Intune service can be managed in different ways, and one of them i
 
 For more information, see [Intune for Education documentation][INT-1].
 
-In this section you will:
 > [!div class="checklist"]
-> * Review Intune's licensing prerequisites
-> * Configure the Intune service for education devices
+>In this section you will:
+>
+> - Review Intune's licensing prerequisites
+> - Configure the Intune service for education devices
 
 ## Prerequisites
 
@@ -74,7 +75,7 @@ To disable Windows Hello for Business at the tenant level:
 
 For more information how to enable Windows Hello for Business on specific devices, see [Create a Windows Hello for Business policy][MEM-4].
 
-________________________________________________________
+---
 
 ## Next steps
 

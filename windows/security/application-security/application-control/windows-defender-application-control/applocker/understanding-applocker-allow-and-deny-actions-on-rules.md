@@ -1,36 +1,28 @@
 ---
 title: Understanding AppLocker allow and deny actions on rules
-description: This topic explains the differences between allow and deny actions on AppLocker rules.
+description: This article explains the differences between allow and deny actions on AppLocker rules.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 09/21/2017
+ms.date: 12/23/2023
 ---
 
 # Understanding AppLocker allow and deny actions on rules
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
-
-This topic explains the differences between allow and deny actions on AppLocker rules.
+This article explains the differences between allow and deny actions on AppLocker rules.
 
 ## Allow action versus deny action on rules
 
-Unlike Software Restriction Policies (SRP), each AppLocker rule collection functions as an allowed list of files. Only the files that are listed within the rule collection are allowed to run. This **block by default, allow by exception** configuration makes it easier to determine what will occur when an AppLocker rule is applied.
+Each AppLocker rule collection functions as an explicit allowlist of files. You can only run files that are covered by one or more allow rules within the rule collection. You can also create rules that explicitly deny some files from running. All other files not covered by an explicit Allow or Deny rule are *implicitly* blocked from running. Understanding this **block by default, allow by exception** behavior is critical when analyzing how your policy affects users in your organization.
 
-You can also create rules that use the deny action. When applying rules, AppLocker first checks whether any explicit deny actions are specified in the rule list. If you have denied a file from running in a rule collection, the deny action will take precedence over any allow action, regardless of which Group Policy Object (GPO) the rule was originally applied in. Because AppLocker functions as an allowed list by default, if no rule explicitly allows or denies a file from running, AppLocker's default deny action will block the file.
+When AppLocker applies rules, it first checks whether any explicit deny actions are specified in the rule list. If you deny a file from running in a rule collection, the deny action takes precedence over any allow action and can't be overridden. Then, AppLocker checks for any explicit allow actions for the file. Because AppLocker functions as an allowlist by default, if no rule explicitly allows or denies a file from running, AppLocker's default deny action blocks the file.
 
-### Deny rule considerations
+### Using AppLocker to implement a blocklist
 
-Although you can use AppLocker to create a rule to allow all files to run and then use rules to deny specific files, this configuration is not recommended. The deny action is generally less secure than the allow action because a malicious user could modify the file to invalidate the rule. Deny actions can also be circumvented. For example, if you configure a deny action for a file or folder path, the user can still run the file from any other path. The following table details security concerns for different rule conditions with deny actions.
+Although you can use AppLocker to create an explicit blocklist policy, this approach doesn't scale well for most organizations and isn't recommended as a practical application control strategy. However, if you choose to do so, be sure to include an "allow \*" rule within the rule collection so that all other files run.
 
-| Rule condition | Security concern with deny action |
-| - | - |
-| Publisher | A user could modify the properties of a file (for example, re-signing the file with a different certificate).|
-| File hash | A user could modify the hash for a file.|
-| Path | A user could move the denied file to a different location and run it from there.|
- 
->**Important:**  If you choose to use the deny action on rules, you must ensure that you first create rules that allow the Windows system files to run. AppLocker enforces rules for allowed applications by default, so after one or more rules have been created for a rule collection (affecting the Windows system files), only the apps that are listed as being allowed will be permitted to run. Therefore, creating a single rule in a rule collection to deny a malicious file from running will also deny all other files on the computer from running.
- 
-## Related topics
+> [!IMPORTANT]
+> If you don't include allow rules for all required apps, including Windows system files, within a rule collection, you will cause unexpected results because your policy will *implicitly* deny all other files on the computer from running.
+
+## Related articles
 
 - [How AppLocker works](how-applocker-works-techref.md)

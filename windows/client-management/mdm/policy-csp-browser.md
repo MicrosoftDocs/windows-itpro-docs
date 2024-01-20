@@ -1,14 +1,7 @@
 ---
 title: Browser Policy CSP
 description: Learn more about the Browser Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1044,7 +1037,7 @@ To verify AllowPasswordManager is set to 0 (not allowed):
 
 <!-- AllowPopups-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting lets you decide whether to turn on Pop-up Blocker. By default, Pop-up Blocker is turned on..
+This policy setting lets you decide whether to turn on Pop-up Blocker. By default, Pop-up Blocker is turned on.
 
 - If you enable this setting, Pop-up Blocker is turned on, stopping pop-up windows from appearing.
 
@@ -3530,7 +3523,7 @@ Don't enable both this setting and the Keep favorites in sync between Internet E
 |:--|:--|
 | Name | ConfiguredFavorites |
 | Friendly Name | Provision Favorites |
-| Element Name | Specify the URL which points to the file that has all the data for provisioning favorites (in html format). You can export a set of favorites from Microsoft Edge and use that html file for provisioning user machines.<br> <br> URL can be specified as.<br> <br> 1. HTTP location: https://localhost:8080/URLs.html<br> 2. Local network: \\network\shares\URLs.html.<br> <br> 3. Local file: file:///c:\\Users\\`<user>`\\Documents\\URLs.html or C:\\Users\\`<user>`\\Documents\\URLs.html. |
+| Element Name | ConfiguredFavoritesPrompt |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Microsoft Edge |
 | Registry Key Name | Software\Policies\Microsoft\MicrosoftEdge\Favorites |

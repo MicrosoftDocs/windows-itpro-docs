@@ -1,10 +1,9 @@
 ---
-title: File System (Global Object Access Auditing) 
+title: File System (Global Object Access Auditing)
 description: The policy setting, File System (Global Object Access Auditing), enables you to configure a global system access control list (SACL) for an entire computer.
 ms.assetid: 4f215d61-0e23-46e4-9e58-08511105d25b
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/09/2021
-ms.technology: itpro-security
 ---
 
 # File System (Global Object Access Auditing)

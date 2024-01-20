@@ -1,20 +1,15 @@
 ---
 title: WindowsSandbox Policy CSP
 description: Learn more about the WindowsSandbox Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- WindowsSandbox-Begin -->
 # Policy CSP - WindowsSandbox
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- WindowsSandbox-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -147,6 +142,56 @@ This policy setting enables or disables clipboard sharing with the sandbox.
 <!-- AllowClipboardRedirection-Examples-End -->
 
 <!-- AllowClipboardRedirection-End -->
+
+<!-- AllowMappedFolders-Begin -->
+## AllowMappedFolders
+
+<!-- AllowMappedFolders-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AllowMappedFolders-Applicability-End -->
+
+<!-- AllowMappedFolders-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsSandbox/AllowMappedFolders
+```
+<!-- AllowMappedFolders-OmaUri-End -->
+
+<!-- AllowMappedFolders-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allow mapping folders into Windows Sandbox.
+<!-- AllowMappedFolders-Description-End -->
+
+<!-- AllowMappedFolders-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowMappedFolders-Editable-End -->
+
+<!-- AllowMappedFolders-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- AllowMappedFolders-DFProperties-End -->
+
+<!-- AllowMappedFolders-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowMappedFolders |
+| Path | WindowsSandbox > AT > WindowsComponents > WindowsSandboxCat |
+<!-- AllowMappedFolders-GpMapping-End -->
+
+<!-- AllowMappedFolders-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowMappedFolders-Examples-End -->
+
+<!-- AllowMappedFolders-End -->
 
 <!-- AllowNetworking-Begin -->
 ## AllowNetworking
@@ -405,6 +450,57 @@ Note that there may be security implications of exposing host video input to the
 <!-- AllowVideoInput-Examples-End -->
 
 <!-- AllowVideoInput-End -->
+
+<!-- AllowWriteToMappedFolders-Begin -->
+## AllowWriteToMappedFolders
+
+<!-- AllowWriteToMappedFolders-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AllowWriteToMappedFolders-Applicability-End -->
+
+<!-- AllowWriteToMappedFolders-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsSandbox/AllowWriteToMappedFolders
+```
+<!-- AllowWriteToMappedFolders-OmaUri-End -->
+
+<!-- AllowWriteToMappedFolders-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allow Sandbox to write to mapped folders.
+<!-- AllowWriteToMappedFolders-Description-End -->
+
+<!-- AllowWriteToMappedFolders-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowWriteToMappedFolders-Editable-End -->
+
+<!-- AllowWriteToMappedFolders-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+| Dependency [WindowsSandbox_AllowWriteToMappedFolders_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/WindowsSandbox/AllowMappedFolders` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+<!-- AllowWriteToMappedFolders-DFProperties-End -->
+
+<!-- AllowWriteToMappedFolders-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowWriteToMappedFolders |
+| Path | WindowsSandbox > AT > WindowsComponents > WindowsSandboxCat |
+<!-- AllowWriteToMappedFolders-GpMapping-End -->
+
+<!-- AllowWriteToMappedFolders-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowWriteToMappedFolders-Examples-End -->
+
+<!-- AllowWriteToMappedFolders-End -->
 
 <!-- WindowsSandbox-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

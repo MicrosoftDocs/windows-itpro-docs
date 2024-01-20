@@ -1,10 +1,9 @@
 ---
-title: Accounts Rename administrator account 
+title: Accounts Rename administrator account
 description: This security policy reference topic for the IT professional describes the best practices, location, values, and security considerations for this policy setting.
 ms.assetid: d21308eb-7c60-4e48-8747-62b8109844f9
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Accounts: Rename administrator account
@@ -55,7 +53,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Administrator |
 | Member Server Effective Default Settings | Administrator |
 | Client Computer Effective Default Settings | Administrator |
- 
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -93,5 +91,5 @@ You must provide users who are authorized to use this account with the new accou
 ## Related topics
 
 [Security Options](security-options.md)
- 
- 
+
+

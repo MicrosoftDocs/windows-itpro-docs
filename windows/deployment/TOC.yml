@@ -328,13 +328,15 @@
           - name: UCServiceUpdateStatus
             href: update/wufb-reports-schema-ucserviceupdatestatus.md
           - name: UCUpdateAlert
-            href: update/wufb-reports-schema-ucupdatealert.md                                                                         
+            href: update/wufb-reports-schema-ucupdatealert.md
+          - name: Enumerated types
+            href: update/wufb-reports-schema-enumerated-types.md                                                                                       
     - name: Troubleshooting
       items:
       - name: Resolve upgrade errors
         items:
-        - name: Resolve Windows client upgrade errors
-          href: upgrade/resolve-windows-10-upgrade-errors.md
+        - name: Resolve Windows upgrade errors
+          href: upgrade/resolve-windows-upgrade-errors.md
         - name: Quick fixes
           href: /troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: SetupDiag

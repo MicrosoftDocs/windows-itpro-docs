@@ -2,7 +2,7 @@
 title: Manage TPM commands
 description: This article for the IT professional describes how to manage which Trusted Platform Module (TPM) commands are available to domain users and to local users.
 ms.topic: conceptual
-ms.date: 04/26/2023
+ms.date: 11/17/2023
 ---
 
 # Manage TPM commands
@@ -15,10 +15,9 @@ The following procedures describe how to manage the TPM command lists. You must 
 
 ## Block TPM commands by using the Local Group Policy Editor
 
-1. Open the Local Group Policy Editor (gpedit.msc). If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then select **Yes**.
+1. Open the Local Group Policy Editor (`gpedit.msc`). If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then select **Yes**.
 
     > [!NOTE]
-    >
     > Administrators with appropriate rights in a domain can configure a Group Policy Object (GPO) that can be applied through Active Directory Domain Services (AD DS).
 
 1. In the console tree, under **Computer Configuration**, expand **Administrative Templates**, and then expand **System**.
@@ -32,7 +31,6 @@ The following procedures describe how to manage the TPM command lists. You must 
 1. For each command that you want to block, select **Add**, enter the command number, and then select **OK**.
 
     > [!NOTE]
-    >
     > For a list of commands, see links in the [TPM Specification](https://www.trustedcomputinggroup.org/tpm-main-specification/).
 
 1. After you have added numbers for each command that you want to block, select **OK** twice.
@@ -41,9 +39,7 @@ The following procedures describe how to manage the TPM command lists. You must 
 
 ## Block or allow TPM commands by using the TPM MMC
 
-1. Open the TPM MMC (tpm.msc)
-
-1. If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then select **Yes**.
+1. Open the TPM MMC (`tpm.msc`). If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then select **Yes**.
 
 1. In the console tree, select **Command Management**. A list of TPM commands is displayed.
 
@@ -53,9 +49,7 @@ The following procedures describe how to manage the TPM command lists. You must 
 
 ## Block new commands
 
-1. Open the TPM MMC (tpm.msc).
-
-    If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then select **Yes**.
+1. Open the TPM MMC (`tpm.msc`). If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then select **Yes**.
 
 1. In the console tree, select **Command Management**. A list of TPM commands is displayed.
 
@@ -69,4 +63,4 @@ You can manage the TPM using Windows PowerShell. For details, see [TrustedPlatfo
 
 ## Related articles
 
-- [Trusted Platform Module](trusted-platform-module-top-node.md)
+- [Trusted Platform Module](trusted-platform-module-overview.md)

@@ -7,15 +7,13 @@ metadata:
   title: Manage Windows client # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about the administrative tools, tasks, and best practices for managing Windows clients across your enterprise. # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: landing-page
-  ms.prod: windows-client
-  ms.technology: itpro-manage
   ms.collection:
     - highpri
     - tier1
   author: vinaypamnani-msft
   ms.author: vinpa
   manager: aaroncz
-  ms.date: 09/26/2023
+  ms.date: 01/18/2024
   localization_priority: medium
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new

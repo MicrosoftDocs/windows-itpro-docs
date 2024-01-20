@@ -1,14 +1,12 @@
 ---
 title: Refuse machine account password changes policy
 description: Describes the best practices, location, values, and security considerations for the Domain controller Refuse machine account password changes security policy setting.
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-ms.topic: conceptual
-ms.technology: itpro-security
+ms.topic: reference
 ms.date: 12/31/2017
 ---
 
@@ -52,13 +50,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 |---|---|
-| Default Domain Policy | Not defined | 
-| Default Domain Controller Policy | Not defined | 
-| Stand-Alone Server Default Settings | Not defined | 
-| DC Effective Default Settings | Disabled | 
-| Member Server Effective Default Settings | Disabled | 
-| Client Computer Effective Default Settings | Not applicable | 
- 
+| Default Domain Policy | Not defined |
+| Default Domain Controller Policy | Not defined |
+| Stand-Alone Server Default Settings | Not defined |
+| DC Effective Default Settings | Disabled |
+| Member Server Effective Default Settings | Disabled |
+| Client Computer Effective Default Settings | Not applicable |
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

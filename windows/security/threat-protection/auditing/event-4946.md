@@ -2,7 +2,6 @@
 title: 4946(S) A change has been made to Windows Firewall exception list. A rule was added. 
 description: Describes security event 4946(S) A change has been made to Windows Firewall exception list. A rule was added.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/08/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

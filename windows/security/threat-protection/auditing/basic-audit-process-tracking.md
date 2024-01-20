@@ -1,10 +1,9 @@
 ---
-title: Audit process tracking 
+title: Audit process tracking
 description: Determines whether to audit detailed tracking information for events such as program activation, process exit, handle duplication, and indirect object access.
 ms.assetid: 91AC5C1E-F4DA-4B16-BEE2-C92D66E4CEEA
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: low
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/06/2021
-ms.technology: itpro-security
 ---
 
 # Audit process tracking
@@ -34,20 +32,20 @@ You can configure this security setting under Computer Configuration\\Windows Se
 
 | Process tracking events | Description |
 | - | - |
-| 592 | A new process was created.| 
+| 592 | A new process was created.|
 | 593 | A process exited. |
-| 594 | A handle to an object was duplicated.| 
-| 595 | Indirect access to an object was obtained.| 
+| 594 | A handle to an object was duplicated.|
+| 595 | Indirect access to an object was obtained.|
 | 596 | A data protection master key was backed up.<br>**Note:**  The master key is used by the CryptProtectData and CryptUnprotectData routines, and Encrypting File System (EFS). The master key is backed up each time a new one is created. (The default setting is 90 days.) The key is usually backed up to a domain controller.|
-| 597 | A data protection master key was recovered from a recovery server.| 
+| 597 | A data protection master key was recovered from a recovery server.|
 | 598 | Auditable data was protected. |
-| 599 | Auditable data was unprotected.| 
-| 600 | A process was assigned a primary token.| 
+| 599 | Auditable data was unprotected.|
+| 600 | A process was assigned a primary token.|
 | 601 | A user attempted to install a service. |
 | 602 | A scheduler job was created. |
- 
+
 ## Related topics
 
 - [Basic security audit policy settings](basic-security-audit-policy-settings.md)
- 
- 
+
+

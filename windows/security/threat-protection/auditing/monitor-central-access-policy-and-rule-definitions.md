@@ -1,10 +1,9 @@
 ---
-title: Monitor central access policy and rule definitions 
+title: Monitor central access policy and rule definitions
 description: Learn how to use advanced security auditing options to monitor changes to central access policy and central access rule definitions.
 ms.assetid: 553f98a6-7606-4518-a3c5-347a33105130
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/09/2021
-ms.technology: itpro-security
 ---
 
 # Monitor central access policy and rule definitions
@@ -28,7 +26,7 @@ Follow the procedures in this article to configure settings to monitor changes t
 
 > [!NOTE]
 > Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
- 
+
 **Configure settings to monitor central access policy and rule definition changes**
 
 1.  Sign in to your domain controller by using domain administrator credentials.

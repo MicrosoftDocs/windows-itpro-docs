@@ -1,14 +1,7 @@
 ---
 title: MSSecurityGuide Policy CSP
 description: Learn more about the MSSecurityGuide Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -221,6 +214,56 @@ ms.topic: reference
 <!-- EnableStructuredExceptionHandlingOverwriteProtection-Examples-End -->
 
 <!-- EnableStructuredExceptionHandlingOverwriteProtection-End -->
+
+<!-- NetBTNodeTypeConfiguration-Begin -->
+## NetBTNodeTypeConfiguration
+
+<!-- NetBTNodeTypeConfiguration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- NetBTNodeTypeConfiguration-Applicability-End -->
+
+<!-- NetBTNodeTypeConfiguration-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MSSecurityGuide/NetBTNodeTypeConfiguration
+```
+<!-- NetBTNodeTypeConfiguration-OmaUri-End -->
+
+<!-- NetBTNodeTypeConfiguration-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- NetBTNodeTypeConfiguration-Description-End -->
+
+<!-- NetBTNodeTypeConfiguration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NetBTNodeTypeConfiguration-Editable-End -->
+
+<!-- NetBTNodeTypeConfiguration-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NetBTNodeTypeConfiguration-DFProperties-End -->
+
+<!-- NetBTNodeTypeConfiguration-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_SecGuide_0050_NetbtNodeTypeConfig |
+| ADMX File Name | SecGuide.admx |
+<!-- NetBTNodeTypeConfiguration-AdmxBacked-End -->
+
+<!-- NetBTNodeTypeConfiguration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NetBTNodeTypeConfiguration-Examples-End -->
+
+<!-- NetBTNodeTypeConfiguration-End -->
 
 <!-- TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications-Begin -->
 ## TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications

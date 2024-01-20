@@ -1,14 +1,7 @@
 ---
 title: PassportForWork CSP
 description: Learn more about the PassportForWork CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 10/03/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -253,8 +246,8 @@ Don't start Windows Hello provisioning after sign-in.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | Disabled. |
-| true | Enabled. |
+| false (Default) | Post Logon Provisioning Enabled. |
+| true | Post Logon Provisioning Disabled. |
 <!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-AllowedValues-End -->
 
 <!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Examples-Begin -->

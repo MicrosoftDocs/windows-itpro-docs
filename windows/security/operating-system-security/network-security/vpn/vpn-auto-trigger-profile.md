@@ -2,7 +2,7 @@
 title: VPN auto-triggered profile options
 description: With auto-triggered VPN profile options, Windows can automatically establish a VPN connection based on IT admin-defined rules. Learn about the types of auto-trigger rules that you can create for VPN connections.
 ms.date: 08/03/2023
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # VPN auto-triggered profile options

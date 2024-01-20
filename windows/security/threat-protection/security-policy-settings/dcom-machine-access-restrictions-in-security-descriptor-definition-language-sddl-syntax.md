@@ -1,10 +1,9 @@
 ---
-title: DCOM Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax 
+title: DCOM Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax
 description: Learn about best practices and more for the syntax policy setting, DCOM Machine Access Restrictions in Security Descriptor Definition Language (SDDL).
 ms.assetid: 0fe3521a-5252-44df-8a47-8d92cf936e7c
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # DCOM: Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax
@@ -55,12 +53,12 @@ The following table lists the actual and effective default values for this polic
 | Server type or GPO | Default value
 | - | - |
 | Default Domain Policy | Blank |
-| Default Domain Controller Policy | Blank | 
-| Stand-Alone Server Default Settings | Blank | 
-| DC Effective Default Settings | Not defined | 
-| Member Server Effective Default Settings | Not defined | 
-| Client Computer Effective Default Settings | Not defined | 
- 
+| Default Domain Controller Policy | Blank |
+| Stand-Alone Server Default Settings | Blank |
+| DC Effective Default Settings | Not defined |
+| Member Server Effective Default Settings | Not defined |
+| Client Computer Effective Default Settings | Not defined |
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -72,7 +70,7 @@ None. Changes to this policy become effective without a computer restart when th
 
 The registry settings that are created as a result of enabling the **DCOM: Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax** policy setting take precedence over the previous registry settings when this policy setting was configured. The Remote Procedure Call (RPC) service checks the new registry keys in the Policies section for the computer restrictions, and these registry entries take precedence over the existing registry keys under OLE. This precedence means that previously existing registry settings are no longer effective, and if you make changes to the existing settings, device access permissions for users aren't changed. Use care in configuring the list of users and groups.
 
-If the administrator is denied permission to access DCOM applications due to the changes made to DCOM in the Windows operating system, the administrator can use the **DCOM: Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax** policy setting to manage DCOM access to the computer. The administrator can use this setting to specify which users and groups can access the DCOM application on the computer locally and remotely. This setting will restore control of the DCOM application to the administrator and users. To define this setting, open the **DCOM: Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax** setting, and click 
+If the administrator is denied permission to access DCOM applications due to the changes made to DCOM in the Windows operating system, the administrator can use the **DCOM: Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax** policy setting to manage DCOM access to the computer. The administrator can use this setting to specify which users and groups can access the DCOM application on the computer locally and remotely. This setting will restore control of the DCOM application to the administrator and users. To define this setting, open the **DCOM: Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax** setting, and click
 **Edit Security**. Specify the users or groups you want to include and the computer access permissions for those users or groups. This information defines the setting and sets the appropriate SDDL value.
 
 ## Security considerations
@@ -96,5 +94,5 @@ Windows implements default COM ACLs when they're installed. Modifying these ACLs
 ## Related topics
 
 - [Security Options](security-options.md)
- 
- 
+
+

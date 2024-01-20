@@ -1,10 +1,9 @@
 ---
-title: Account lockout duration 
+title: Account lockout duration
 description: Describes the best practices, location, values, and security considerations for the Account lockout duration security policy setting.
 ms.assetid: a4167bf4-27c3-4a9b-8ef0-04e3c6ec3aa4
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,12 +11,11 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: 
+ms.collection:
   - highpri
   - tier3
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 08/16/2021
-ms.technology: itpro-security
 ---
 
 # Account lockout duration
@@ -40,7 +38,7 @@ This policy setting is dependent on the **Account lockout threshold** policy set
 
 If [Account lockout threshold](account-lockout-threshold.md) is configured, after the specified number of failed attempts, the account will be locked out. If the **Account lockout duration** is set to 0, the account will remain locked until an administrator unlocks it manually.
 
-It's advisable to set **Account lockout duration** to approximately 15 minutes. To specify that the account will never be locked out, set the **Account lockout threshold** value to 0. 
+It's advisable to set **Account lockout duration** to approximately 15 minutes. To specify that the account will never be locked out, set the **Account lockout threshold** value to 0.
 
 ### Location
 
@@ -58,7 +56,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain controller effective default settings | Not defined |
 | Member server effective default settings | Not defined |
 | Client computer effective default settings | Not applicable |
- 
+
 ## Security considerations
 
 More than a few unsuccessful password submissions during an attempt to sign in to a computer might represent an attacker's attempts to determine an account password by trial and error. The Windows and Windows Server operating systems can track sign-in attempts, and you can configure the operating system to disable the account for a preset period of time after a specified number of failed attempts. Account lockout policy settings control the threshold for this response and what action to take after the threshold is reached.
@@ -78,5 +76,5 @@ Configuring the **Account lockout duration** policy setting to 0 so that account
 ## Related topics
 
 [Account Lockout Policy](account-lockout-policy.md)
- 
- 
+
+

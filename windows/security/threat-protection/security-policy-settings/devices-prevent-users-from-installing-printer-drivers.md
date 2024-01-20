@@ -1,10 +1,9 @@
 ---
-title: Devices Prevent users from installing printer drivers 
+title: Devices Prevent users from installing printer drivers
 description: Describes the best practices, location, values, and security considerations for the Devices Prevent users from installing printer drivers security policy setting.
 ms.assetid: ab70a122-f7f9-47e0-ad8c-541f30a27ec3
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 01/05/2022
-ms.technology: itpro-security
 ---
 
 # Devices: Prevent users from installing printer drivers
@@ -44,7 +42,7 @@ Although it might be appropriate in some organizations to allow users to install
 -   It's advisable to set **Devices: Prevent users from installing printer drivers** to Enabled. Only users in the Administrative, Power User, or Server Operator groups will be able to install printers on servers. If this policy setting is enabled, but the driver for a network printer already exists on the local computer, users can still add the network printer. This policy setting doesn't affect a user's ability to add a local printer.
 
 > [!NOTE]
-> After applying the [July 6, 2021 updates](https://support.microsoft.com/topic/kb5005010-restricting-installation-of-new-printer-drivers-after-applying-the-july-6-2021-updates-31b91c02-05bc-4ada-a7ea-183b129578a7), non-administrators, including delegated admin groups like printer operators, cannot install signed and unsigned printer drivers to a print server. By default, only administrators can install both signed and unsigned printer drivers to a print server. 
+> After applying the [July 6, 2021 updates](https://support.microsoft.com/topic/kb5005010-restricting-installation-of-new-printer-drivers-after-applying-the-july-6-2021-updates-31b91c02-05bc-4ada-a7ea-183b129578a7), non-administrators, including delegated admin groups like printer operators, cannot install signed and unsigned printer drivers to a print server. By default, only administrators can install both signed and unsigned printer drivers to a print server.
 
 ### Location
 
@@ -56,13 +54,13 @@ The following table lists the actual and effective default values for this polic
 
 Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Enabled| 
-| DC Effective Default Settings | Enabled| 
-| Member Server Effective Default Settings | Enabled| 
-| Client Computer Effective Default Settings | Disabled| 
- 
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Enabled|
+| DC Effective Default Settings | Enabled|
+| Member Server Effective Default Settings | Enabled|
+| Client Computer Effective Default Settings | Disabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -77,7 +75,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-It may be appropriate in some organizations to allow users to install printer drivers on their own workstations. However, you should allow only administrators, not users, to do so on servers because printer driver installation on a server may unintentionally cause the computer to become less 
+It may be appropriate in some organizations to allow users to install printer drivers on their own workstations. However, you should allow only administrators, not users, to do so on servers because printer driver installation on a server may unintentionally cause the computer to become less
 stable. A malicious user could install inappropriate printer drivers in a deliberate attempt to damage the computer, or a user might accidentally install malicious software that masquerades as a printer driver.
 
 ### Countermeasure

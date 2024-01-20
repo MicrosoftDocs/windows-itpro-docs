@@ -2,7 +2,7 @@
 title: Windows Hello and password changes
 description: Learn the impact of changing a password when using Windows Hello.
 ms.date: 03/15/2023
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # Windows Hello and password changes
 
