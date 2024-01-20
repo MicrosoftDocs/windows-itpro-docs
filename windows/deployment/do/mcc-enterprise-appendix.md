@@ -40,7 +40,7 @@ Most customers choose to install their cache node on a Windows Server with a nes
 Microsoft Connected Cache for Enterprise and Education can be successfully installed on VMware. To do so, there are a couple of additional configurations to be made. Ensure the VM is turned off before making the following configuration changes:
 
 1. Ensure that you're using ESX. In the VM settings, turn on the option **Expose hardware assisted virtualization to the guest OS**.
-1. Using the Hyper-V Manager, create an external switch. For the external switch to have internet connection, ensure **"Allow promiscuous mode"** is switched to **Yes**.
+1. Using the Hyper-V Manager, create an external switch. For the external switch to have internet connection, ensure **"Allow promiscuous mode"** and **"Forged transmits"** are switched to **Yes**.
 
 ### Installing on Hyper-V
 
