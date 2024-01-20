@@ -266,7 +266,7 @@ Connect to the EFLOW VM and check if MCC is properly running:
 
    :::image type="content" source="./images/ent-mcc-connect-eflowvm.png" alt-text="Screenshot of running connect-EflowVm, sudo -s, and iotedge list from PowerShell." lightbox="./images/ent-mcc-connect-eflowvm.png":::
 
-You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edgeHub but not MCC, try this command in a few minutes. The MCC container can take a few minutes to deploy. If iotedge list times out, you can run docker ps -a to list the running containers.
+You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edgeHub but not MCC, try this command in a few minutes. The MCC container can take a few minutes to deploy. If iotedge list times out, you can run `docker ps -a` to list the running containers.
 If the 3 containers are still not running, run the following commands to check if DNS resolution is working correctly:
 ```bash
 ping www.microsoft.com
@@ -342,31 +342,46 @@ This command will provide the current status of the starting, stopping of a cont
 > You should consult the IoT Edge troubleshooting guide ([Common issues and resolutions for Azure IoT Edge](/azure/iot-edge/troubleshoot)) for any issues you may encounter configuring IoT Edge, but we've listed a few issues that we encountered during our internal validation.
 >
 
-### DNS needs to be configured
-
+### Resolve DNS configuration issues
 Run the following IoT Edge install state check:
 
 ```bash
 sudo iotedge check --verbose
 ```
+If you see issues with ports 5671, 443, and 8883, you need to update your DNS configuration.
 
-If you see issues with ports 5671, 443, and 8883, your IoT Edge device needs to update the DNS for Docker.
+If you provided an invalid or blocked DNS server IP address during installation, you can change it once EFLOW is up and running using the following steps:
 
-To configure the device to work with your DNS, use the following steps:
+#### Update DNS configuration in EFLOW 
+1. On Windows machine or VM, run `ipconfig /all` and note the Ethernet adapter “DNS Servers” IP address (two DNS server IP addresses are show in the example below)
 
+:::image type="content" source="./images/ent-mcc-ethernet-dns-servers.png" alt-text="Screenshot of the output of ipconfig. Ehternet adapter with DNS Servers are circled." lightbox="./images/ent-mcc-ethernet-dns-servers.png":::
+
+1.	Use one or more of the DNS servers listed in the ipconfig /all output
+```bash
+$eflowVmEndpoint=Get-EflowVmEndpoint
+Set-EflowVmDNSServers -vendpointName $eflowVmEndpoint.Name -dnsServers @("DNS_IP_ADDRESS")
+Stop-EflowVm
+Start-EflowVm
+```
+
+Multiple DNS server can be added as a comma-separated list. For example:
+```bash
+… -dnsServers @("DNS_IP_ADDRESS_1", "DNS_IP_ADDRESS_2")
+```
+After updating the DNS entry, `ping www.microsoft.com` should succeed.
+
+
+In some cases, even after configuring the DNS correctly, issues may persist in name resolution in Docker containers. To update the Docker DNS configuration the following steps should be performed:
+
+#### Update Docker DNS configuration 
 1. Use `ifconfig` to find the appropriate NIC adapter name.
 
     ```bash
     ifconfig
     ```
 
-1. Run `nmcli device show <network adapter name>` to show the DNS name for the ethernet adapter. For example, to show DNS information for **eno1**:
-
-    ```bash
-    nmcli device show eno1 
-    ```
-
-    :::image type="content" source="images/mcc-isp-nmcli.png" alt-text="Screenshot of a sample output of nmcli command to show network adapter information." lightbox="./images/mcc-isp-nmcli.png":::
+1. Run `resolvectl dns` to get the DNS IP address for the ethernet adapter.
 
 1. Open or create the Docker configuration file used to configure the DNS server.
 
@@ -374,11 +389,7 @@ To configure the device to work with your DNS, use the following steps:
     sudo nano /etc/docker/daemon.json
     ```
 
-1. Paste the following string into the **daemon.json** file, and include the appropriate DNS server address. For example, in the previous screenshot, `IP4.DNS[1]` is `10.50.10.50`.
-
-    ```bash
-    { "dns": ["x.x.x.x"]}
-    ```
+1. Append or add the DNS Server IP address to the **daemon.json** file.
 
 1. Save the changes to daemon.json. If you need to change permissions on this file, use the following command:
 
@@ -393,16 +404,4 @@ To configure the device to work with your DNS, use the following steps:
     sudo systemctl daemon-reload
     sudo restart IoTEdge
     ```
-
-### Resolve DNS issues
-Follow these steps if you see a DNS error when trying to resolve hostnames during the provisioning or download of container:
-Run ``` Get-EflowVmEndpoint ``` to get interface name
-
-Once you get the name 
-```bash
-Set-EflowVmDNSServers -vendpointName "interface name from above" -dnsServers @("DNS_IP_ADDRESS")
-Stop-EflowVm
-Start-EflowVm
-```
-
 
