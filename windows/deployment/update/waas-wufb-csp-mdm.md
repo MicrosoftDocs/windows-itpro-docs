@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 11/30/2023
+ms.date: 01/18/2024
 ---
 
 # Walkthrough: Use CSPs and MDMs to configure Windows Update for Business
@@ -202,9 +202,9 @@ The features that are turned off by default from servicing updates will be enabl
 
  You can enable these features by using [AllowTemporaryEnterpriseFeatureControl](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowtemporaryenterprisefeaturecontrol). The following options are available:
 
-- **0** (default): Allowed. All features in the latest monthly cumulative update are enabled.
-  - When the policy is set to **0**, all features that are currently turned off will turn on when the device next reboots
-- **1** - Not allowed. Features that are shipped turned off by default will remain off
+- **0** (default): Not allowed. Features that are shipped turned off by default will remain off
+- **1**: Allowed. All features in the latest monthly cumulative update are enabled.
+  - When the policy is set to **1**, all features that are currently turned off will turn on when the device next reboots.
 
 #### I want to enable optional updates
 <!--7991583-->
