@@ -7,12 +7,14 @@ ms.date: 01/03/2024
 
 # Windows Hello for Business policy settings
 
-The list of settings is sorted alphabetically and organized in four categories:
+This reference article provides a comprehensive list of policy settings for Windows Hello for Business. The list of settings is sorted alphabetically and organized in four categories:
 
 - **Feature settings**: used to enable Windows Hello for Business and configure basic options
 - **PIN setting**: used to configure PIN authentication, like PIN complexity and recovery
 - **Biometric setting**: used to configure biometric authentication
 - **Smart card settings**: used to configure smart card authentication used in conjunction with Windows Hello for Business
+
+For information about how to configure these settings, see [Configure Windows Hello for Business](configure.md).
 
 Select one of the tabs to see the list of available settings:
 

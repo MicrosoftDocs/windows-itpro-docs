@@ -74,7 +74,7 @@ There are different ways to enable and configure Windows Hello for Business in I
 
 ### Verify the tenant-wide policy
 
-To check the Windows Hello for Business policy applied at enrollment time:
+To check the Windows Hello for Business policy settings applied at enrollment time:
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** > **Windows** > **Windows Enrollment**
@@ -93,55 +93,30 @@ Windows Hello for Business is designed to be managed by group policy or MDM, but
 > [!NOTE]
 > For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune][MEM-1] and [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp).
 
-## Manage Windows Hello for Business in your organization
-
-You can create a Group Policy or mobile device management (MDM) policy to configure Windows Hello for Business on Windows devices.
-
 ## Disable Windows Hello for Business enrollment
 
-Windows Hello for Business is enabled by default for devices that are Microsoft Entra joined. If you need to disable the automatic enablement, there are different options to configure them.
+Windows Hello for Business is enabled by default for devices that are Microsoft Entra joined. If you need to disable the automatic enablement, there are different options, including:
 
-### Use Intune to disable Windows Hello for Business enrollment
+- Disable Windows Hello using the [tenant-wide policy](#verify-the-tenant-wide-policy)
+- Disable it using one of the policy types available in Intune, while enabling the Enrollment Status Page (ESP). The ESP can be configured to prevent a user from accessing the desktop until the device receives all the required policies. For more information, see [Set up the Enrollment Status Page](/mem/intune/enrollment/windows-enrollment-status). The policy setting to configure is [Use Windows Hello for Business](policy-settings.md#use-windows-hello-for-business)
+- Provision the devices using a provisioning package that disables Windows Hello for Business. For more information, see [Provisioning packages for Windows](/windows/configuration/provisioning-packages/provisioning-packages)
+- Scripted solutions that can modify the registry settings to disable Windows Hello for Business during OS deployment
 
-We recommend that you disable or manage Windows Hello for Business provisioning behavior through an Intune policy. For more specific information, see [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello).
-
-### Disable Windows Hello for Business using Intune Enrollment policy
-
-The following method explains how to disable Windows Hello for Business enrollment using Intune.
-
-1. Sign into the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Go to **Devices** > **Enrollment** > **Enroll devices** > **Windows enrollment** > **Windows Hello for Business**. The Windows Hello for Business pane opens.
-3. If you don't want to enable Windows Hello for Business during device enrollment, select **Disabled** for **Configure Windows Hello for Business**.
-
-    When disabled, users can't provision Windows Hello for Business. When set to Disabled, you can still configure the subsequent settings for Windows Hello for Business even though this policy won't enable Windows Hello for Business.
+| Policy type | Registry path | Value |
+|-|-|-|
+| CSP (user)| `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\UserSid\Policies`| `UsePassportForWork` <br> - DWORD `0` to Disable<br>- DWORD `1` to Enable|
+| CSP (device)| `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\Device\Policies`| `UsePassportForWork` <br> - DWORD `0` to Disable<br>- DWORD `1` to Enable|
+| GPO (user)| `HKEY_USERS\<UserSID>\SOFTWARE\Policies\Microsoft\PassportForWork`| `Enabled` <br> - DWORD `0` to Disable<br>- DWORD `1` to Enable|
+| GPO (device)| `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PassportForWork`| `Enabled` <br> - DWORD `0` to Disable<br>- DWORD `1` to Enable|
 
 > [!NOTE]
-> This policy is only applied during new device enrollments. For devices that are already enrolled, you can set the same settings in a configuration policy.
-
-### Disable during OS deployment
-
-If you don't use Intune in your organization, then you can disable Windows Hello for Business using the registry. You can use a third-party MDM, or some other method that you use to manage these devices. Because these systems are Microsoft Entra joined only, and not domain joined, these settings can also be made manually in the registry.
-
-Intune uses the following registry keys: **`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\Device\Policies`**
-
-These registry settings are pushed from Intune for user policies:
-
-- Intune User Policy: **`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\UserSid\Policies`**
-- DWORD: **UsePassportForWork**
-- Value = **0** for Disable, or Value = **1** for Enable
-
-These registry settings can be applied from Local or Group Policies:
-
-- Local/GPO User Policy: **`HKEY_USERS\UserSID\SOFTWARE\Policies\Microsoft\PassportForWork`**
-- Local/GPO Device Policy: **`HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PassportForWork`**
-- DWORD: **Enabled**
-- Value = **0** for Disable or Value = **1** for Enable
-
-If there's a conflicting Device policy and User policy, the User policy would take precedence. We don't recommend creating Local/GPO registry settings that could conflict with an Intune policy. This conflict could lead to unexpected results.
+> If there's a conflicting device policy and user policy, the user policy takes precedence. It's not recommended to create Local GPO or registry settings that could conflict with an MDM policy. This conflict could lead to unexpected results.
 
 ## Next steps
 
-Learn more about Windows Hello for Business features and how to configure them:
+For a list of Windows Hello for Business policy settings, see [Windows Hello for Business policy settings](policy-settings.md).
+
+To learn more about Windows Hello for Business features and how to configure them, see:
 
 - [PIN reset](pin-reset.md)
 - [Dual enrollment](hello-feature-dual-enrollment.md)
@@ -160,17 +135,3 @@ Learn more about Windows Hello for Business features and how to configure them:
 [MEM-4]: /windows/client-management/mdm/passportforwork-csp
 [MEM-5]: /mem/intune/protect/endpoint-security-account-protection-policy
 [MEM-6]: /mem/intune/protect/identity-protection-configure
-
-<!--
-MDM user policy registry path:
-"HKLM:SOFTWARE\Microsoft\Policies\PassportForWork\<tenantID>\< userSid>\Policies".
-
-MDM device policy registry path:
-"HKLM:SOFTWARE\Microsoft\Policies\PassportForWork\<tenantID>\Device\Policies".
-
-GP user policy registry paths:
-"HKEY_USERS:<userSID>\SOFTWARE\Policies\Microsoft\PassportForWork"
-
-GP device policy registry path:
-"HKLM:SOFTWARE\Policies\Microsoft\PassportForWork".
--->
