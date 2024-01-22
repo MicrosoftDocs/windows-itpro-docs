@@ -7,8 +7,6 @@ ms.date: 01/03/2024
 
 # Windows Hello for Business overview
 <!--
-Windows Hello for Business is a two-factor credential that is a more secure alternative to passwords.
-Windows Hello lets your employees use fingerprint, facial recognition, or iris recognition as an alternative method to unlocking a device. With Windows Hello, authentication happens when the employee provides his or her unique biometric identifier while accessing the device-specific Windows Hello credentials.
 
 The Windows Hello authenticator works to authenticate and allow employees onto your enterprise network. Authentication doesn't roam among devices, isn't shared with a server, and can't easily be extracted from a device. If multiple employees share a device, each employee will use his or her own biometric data on the device.
 
@@ -28,50 +26,49 @@ Also, as opposed to passwords, Windows Hello supports numerous gestures (e.g., P
 
 Authentication is the two factor authentication with combination of a device (key or certificate) and something that the user sknows (a PIN), or something that person is (biometric). We refer to PIN and biometrics as *Windows Hello gestures*. Windows Hello gestures don't roam between devices and aren't shared with the server; they are stored locally on the device.
 
--->
 
-Windows Hello is an authentication technology available to consumers and organizations. Windows Hello is designed to provide enhanced security and improved ease of use when compared with passwords.
+Windows Hello is a security feature that allows users to sign in to Windows devices using a PIN or biometrics, like fingerprint or facial recognition.
 
-Security
-On devices with a TPM, Windows Hello provides enhanced security through phish-resistant two-factor authentication. Authentication requires a PIN (something the user knows) or biometric data (something the user is), coupled with possession of the device itself containing the hardware-bound credential (something the user has). There is no symmetric secret (password) which can be stolen from a server or phished from a user and used remotely.
-
-Ease of use
-With compatible hardware, the user can log in with face or fingerprint, which is much easier and more convenient than typing in a credential. For users without biometrics, a PIN can be shorter and easier to remember than a complex password. The use of a PIN doesn't compromise security, since Windows Hello has built-in brute force protection and the PIN never leaves the device.
-
-With FIDO/WebAuthn, Windows Hello can also be used to log in to supported websites, which reduces the need to remember or manage multiple complex passwords for a user's online accounts.
-
-
-Windows Hello is an authentication feature that allows users to sign in to their Windows devices using a PIN, facial recognition, fingerprint scanning, or iris scanning, instead of a traditional password.
-
-Windows Hello addresses the following problems with passwords:
+Windows Hello addresses the following problems that affect passwords:
 
 - Strong passwords can be difficult to remember, and users often reuse passwords on multiple sites
 - Server breaches can expose symmetric network credentials (passwords)
 - Passwords are subject to replay attacks
 - Users can inadvertently expose their passwords due to phishing attacks
 
-Windows Hello lets users authenticate to:
+Windows Hello is a technology available to both consumers and organizations. *Windows Hello for Business* is an *extension* of Windows Hello, that provides enterprise-grade security and management capabilities. -->
 
-- A Microsoft account
-- Identity provider (IdP) services or relying party (RP) Services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication
+## Windows Hello and Windows Hello for Business
 
-Windows Hello for Business is an extension of Windows Hello that provides enterprise-grade security and management capabilities. It allows organizations to use the same biometric authentication methods as Windows Hello, but with additional features such as device attestation, certificate-based authentication, and conditional access policies.
+*Windows Hello* is a secure and convenient authentication technology that allows users to sign in to their Windows devices using biometric data (for example, face recognition or fingerprint), or a PIN instead of a traditional password. It provides enhanced security through phish-resistant two-factor authentication, and built-in brute force protection. With FIDO/WebAuthn, Windows Hello can also be used to log in to supported websites, reducing the need to remember multiple complex passwords.
 
-One of the key differences between Windows Hello and Windows Hello for Business is the level of security they provide. While Windows Hello is a convenient way to sign in to your device, Windows Hello for Business provides additional security measures to protect against advanced threats and attacks:
+*Windows Hello for Business* is an extension of Windows Hello that provides enterprise-grade security and management capabilities, including device attestation, certificate-based authentication, and conditional access policies. Policy settings can be deployed to devices to ensure they are secure and compliant with organizational requirements.
 
-- Individuals can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Windows Hello is unique to the device on which it's set up, but can use a password hash depending on an individual's account type. This configuration is referred to as *Windows Hello convenience PIN* and it's not backed by asymmetric (public/private key) or certificate-based authentication
-- *Windows Hello for Business*, which is configured by via policy settings, always uses key-based or certificate-based authentication
+### Authentication
 
-Windows Hello for Business lets users authenticate to:
+The following table lists the differences between Windows Hello and Windows Hello for business 
 
-- A Microsoft Entra ID account
-- An Active Directory account
-- Identity provider (IdP) services or relying party (RP) Services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication
+|Windows Hello|Windows Hello for Business|
+|-|-|
+|With Windows Hello, users can authenticate to:<br>- A Microsoft account<br>- Identity provider (IdP) services or relying party (RP) services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication|With Windows Hello for Business, users can authenticate to:<br>- A Microsoft Entra ID account<br>- An Active Directory account<br>- Identity provider (IdP) services or relying party (RP) Services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication|
 
-Windows Hello for Business offers IT administrators security and management capabilities that are essential for organization environments. Policy settings can be deployed to the devices, ensuring that all devices are secure and compliant with organization requirements.
+### Security
+
+One of the key differences between Windows Hello and Windows Hello for Business is the level of security they provide. While Windows Hello is a convenient way to sign in to a device, Windows Hello for Business provides additional security measures to protect against advanced threats and attacks:
+
+|Windows Hello|Windows Hello for Business|
+|-|-|
+|Individuals can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Windows Hello is unique to the device on which it's set up, but can use a password hash depending on an individual's account type. This configuration is referred to as *Windows Hello convenience PIN* and it's not backed by asymmetric (public/private key) or certificate-based authentication.|
+| - Configured by via policy settings, it always uses key-based or certificate-based authentication.<br> - On devices with a TPM, Windows Hello provides enhanced security through phish-resistant two-factor authentication. Authentication requires a PIN (something the user knows) or biometric data (something the user is), coupled with possession of the device itself containing the hardware-bound credential (something the user has). There is no symmetric secret (password) which can be stolen from a server or phished from a user and used remotely.|
 
 > [!NOTE]
 > FIDO2 (Fast Identity Online) authentication is an open standard for passwordless authentication. It allows users to sign in to their devices and apps using biometric authentication or a physical security key, without the need for a traditional password. FIDO2 support in Windows Hello for Business provides an additional layer of security and convenience for users, while also reducing the risk of password-related attacks.
+
+### Ease of use
+
+With compatible hardware, the user can sign in with face or fingerprint, which is much easier and more convenient than typing in a credential. For users without biometrics, a PIN can be shorter and easier to remember than a complex password. The use of a PIN doesn't compromise security, since Windows Hello has built-in brute force protection and the PIN never leaves the device.
+
+With FIDO/WebAuthn, Windows Hello can also be used to log in to supported websites, which reduces the need to remember or manage multiple complex passwords for a user's online accounts.
 
 ## Windows Hello and two factor authentication
 
