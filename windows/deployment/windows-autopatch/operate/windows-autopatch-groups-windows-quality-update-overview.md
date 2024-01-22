@@ -47,8 +47,8 @@ The service level objective for each of these states is calculated as:
 
 | State | Calculation |
 | ----- | ----- |
-| Device that is active during release | This service level objective calculation assumes the device has typical activity during the scheduled release period.<p>Calculated by:</p>`Deferral + Deadline + Reporting Period = service level objective` |
-| Device that becomes active after release | This service level objective calculation refers to offline devices during the scheduled release period but come back online later.<p>Calculated by:</p>`Grace Period + Reporting period = service level objective` |
+| Device that is active during release | This service level objective calculation assumes the device has typical activity during the scheduled release period. Calculated by:<p>`Deferral + Deadline + Reporting Period = service level objective`</p> |
+| Device that becomes active after release | This service level objective calculation refers to offline devices during the scheduled release period but come back online later. Calculated by:<p>`Grace Period + Reporting period = service level objective`</p> |
 
 | Timeframe | Value defined in |
 | ----- | ----- |
