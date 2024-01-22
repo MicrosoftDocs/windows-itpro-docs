@@ -54,9 +54,6 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 :::image type="content" source="images/howitworks/prov/hybrid-entra-join-managed-kt.png" alt-text="Sequence diagram of the Windows Hello provisioning flow in a hybrid key trust deployment model with managed authentication." lightbox="images/howitworks/prov/hybrid-entra-join-managed-kt.png" border="false":::
 
-![Microsoft Entra hybrid joined provisioning in a key trust deployment in a managed environment.](images/howitworks/prov/hybrid-entra-join-managed-kt.png)
-[Full size image](images/howitworks/prov/hybrid-entra-join-managed-kt.png)
-
 | Phase | Description |
 |:-:|:-|
 | A | The provisioning application hosted in the Cloud Experience Host (CXH) starts provisioning by requesting an access token for the Azure Device Registration Service (ADRS). The application makes the request using the Microsoft Entra Web Account Manager plug-in.<br>Users must provide two factors of authentication.  In this phase, the user has already provided one factor of authentication, typically user name and password. The Microsoft Entra multifactor authentication service provides the second factor of authentication. If the user has performed Microsoft Entra multifactor authentication within the last 10 minutes, such as when registering the device from the out-of-box-experience (OOBE), then they aren't prompted for MFA because the current MFA remains valid.<br>Microsoft Entra ID validates the access token request and the MFA claim associated with it, creates an ADRS access token, and returns it to the application. |
