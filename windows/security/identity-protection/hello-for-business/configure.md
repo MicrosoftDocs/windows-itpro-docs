@@ -102,12 +102,12 @@ Windows Hello for Business is enabled by default for devices that are Microsoft 
 - Provision the devices using a provisioning package that disables Windows Hello for Business. For more information, see [Provisioning packages for Windows](/windows/configuration/provisioning-packages/provisioning-packages)
 - Scripted solutions that can modify the registry settings to disable Windows Hello for Business during OS deployment
 
-| Setting |
-|--|
-| CSP (user)<br>**Key path**: `HHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\UserSid\Policies` <br>**Key name**: `UsePassportForWork`<br>**Type**: `REG_DWORD`<br>**Value**:<br>&emsp;`1` to enable<br>&emsp;`0` to Disable |
-| CSP (device)<br>**Key path**: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\Device\Policies` <br>**Key name**: `UsePassportForWork`<br>**Type**: `REG_DWORD`<br>**Value**:<br>&emsp;`1` to enable<br>&emsp;`0` to Disable |
-| GPO (user)<br>**Key path**: `HKEY_USERS\<UserSID>\SOFTWARE\Policies\Microsoft\PassportForWork` <br>**Key name**: `Enabled`<br>**Type**: `REG_DWORD`<br>**Value**:<br>&emsp;`1` to enable<br>&emsp;`0` to Disable |
-| GPO (user)<br>**Key path**: `KEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PassportForWork` <br>**Key name**: `Enabled`<br>**Type**: `REG_DWORD`<br>**Value**:<br>&emsp;`1` to enable<br>&emsp;`0` to Disable |
+Configuration type| Details |
+|--|-|
+| CSP (user)|**Key path**: `HHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\UserSid\Policies`<br>**Key name**: `UsePassportForWork`<br>**Type**: `REG_DWORD`<br>**Value**:<br>&emsp;`1` to enable<br>&emsp;`0` to disable |
+| CSP (device)|**Key path**: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\Device\Policies`<br>**Key name**: `UsePassportForWork`<br>**Type**: `REG_DWORD`<br>**Value**:<br>&emsp;`1` to enable<br>&emsp;`0` to disable |
+| GPO (user)|**Key path**: `HKEY_USERS\<UserSID>\SOFTWARE\Policies\Microsoft\PassportForWork`<br>**Key name**: `Enabled`<br>**Type**: `REG_DWORD`<br>**Value**:<br>&emsp;`1` to enable<br>&emsp;`0` to disable |
+| GPO (user)|**Key path**: `KEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PassportForWork`<br>**Key name**: `Enabled`<br>**Type**: `REG_DWORD`<br>**Value**:<br>&emsp;`1` to enable<br>&emsp;`0` to disable |
 
 > [!NOTE]
 > If there's a conflicting device policy and user policy, the user policy takes precedence. It's not recommended to create Local GPO or registry settings that could conflict with an MDM policy. This conflict could lead to unexpected results.
