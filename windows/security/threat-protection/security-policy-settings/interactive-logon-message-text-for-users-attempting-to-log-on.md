@@ -4,7 +4,6 @@ description: Learn about best practices, security considerations and more for th
 ms.assetid: fcfe8a6d-ca65-4403-b9e6-2fa017a31c2e
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Interactive logon: Message text for users attempting to log on

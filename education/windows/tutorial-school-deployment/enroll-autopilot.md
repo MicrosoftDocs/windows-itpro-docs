@@ -1,7 +1,7 @@
 ---
 title: Enrollment in Intune with Windows Autopilot
 description: Learn how to join Microsoft Entra ID and enroll in Intune using Windows Autopilot.
-ms.date: 03/08/2023
+ms.date: 01/16/2024
 ms.topic: tutorial
 ---
 
@@ -61,8 +61,9 @@ More advanced dynamic membership rules can be created from Microsoft Intune admi
 
 For Autopilot devices to offer a customized OOBE experience, you must create **Windows Autopilot deployment profiles** and assign them to a group containing the devices.
 A deployment profile is a collection of settings that determine the behavior of the device during OOBE. Among other settings, a deployment profile specifies a **deployment mode**, which can either be:
+
 1. **User-driven:** devices with this profile are associated with the user enrolling the device. User credentials are required to complete the Microsoft Entra join process during OOBE
-1. **Self-deploying:** devices with this profile aren't associated with the user enrolling the device. User credentials aren't required to complete the Microsoft Entra join process. Rather, the device is joined automatically and, for this reason, specific hardware requirements must be met to use this mode.
+1. **Self-deploying:** devices with this profile aren't associated with the user enrolling the device. User credentials aren't required to complete the Microsoft Entra join process. Rather, the device is joined automatically and, for this reason, specific hardware requirements must be met to use this mode
 
 To create an Autopilot deployment profile:
 
@@ -142,8 +143,6 @@ With the devices joined to Microsoft Entra tenant and managed by Intune, you can
 
 [M365-1]: https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2
 
-[EDU-1]: /education/windows/windows-11-se-overview
-[EDU-2]: /intune-education/windows-11-se-overview#windows-autopilot
 [EDU-3]: ../tutorial-deploy-apps-winse/considerations.md#enrollment-status-page
 
 [SURF-1]: /surface/surface-autopilot-registration-support

@@ -2,7 +2,7 @@
 title: Smart Card Removal Policy Service 
 description: This topic for the IT professional describes the role of the removal policy service (ScPolicySvc) in smart card implementation.
 ms.topic: concept-article
-ms.date: 11/22/2023
+ms.date: 01/16/2024
 ---
 
 # Smart Card Removal Policy Service

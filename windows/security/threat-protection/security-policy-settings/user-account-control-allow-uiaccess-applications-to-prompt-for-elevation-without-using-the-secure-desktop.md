@@ -4,7 +4,6 @@ description: Best practices and more for the policy setting, User Account Contro
 ms.assetid: fce20472-3c93-449d-b520-13c4c74a9892
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop

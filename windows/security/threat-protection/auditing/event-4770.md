@@ -2,7 +2,6 @@
 title: 4770(S) A Kerberos service ticket was renewed. 
 description: Describes security event 4770(S) A Kerberos service ticket was renewed.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

@@ -1,24 +1,20 @@
 ---
 title: Enforce AppLocker rules
-description: This topic for IT professionals describes how to enforce application control rules by using AppLocker.
+description: This article for IT professionals describes how to enforce application control rules by using AppLocker.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 09/21/2017
+ms.date: 12/21/2023
 ---
 
 # Enforce AppLocker rules
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
-
-This topic for IT professionals describes how to enforce application control rules by using AppLocker.
+This article for IT professionals describes how to enforce application control rules by using AppLocker.
 
 After AppLocker rules are created within the rule collection, you can configure the enforcement setting to **Enforce rules** or **Audit only** on the rule collection.
 
-When AppLocker policy enforcement is set to **Enforce rules**, rules are enforced for the rule collection and all events are audited. When AppLocker policy enforcement is set to **Audit only**, rules are only evaluated but all events generated from that evaluation are written to the AppLocker log.
-
-There is no audit mode for the DLL rule collection. DLL rules affect specific apps. Therefore, test the impact of these rules first before deploying them to production.
+When AppLocker policy enforcement is set to **Enforce rules**, rules are enforced and events are logged to the AppLocker logs. When AppLocker policy enforcement is set to **Audit only**, rules are only evaluated but events generated from that evaluation are written to the AppLocker logs.
 
 To enforce AppLocker rules by configuring an AppLocker policy to **Enforce rules**, see [Configure an AppLocker policy for enforce rules](configure-an-applocker-policy-for-enforce-rules.md).
 
->**Caution:**  AppLocker rules will be enforced immediately on the local device or when the Group Policy object (GPO) is updated by performing this procedure. If you want to see the effect of applying an AppLocker policy before setting the enforcement setting to **Enforce rules**, configure the policy to **Audit only**. For info about how to do this, see [Configure an AppLocker policy for audit only](configure-an-applocker-policy-for-audit-only.md)or [Test an AppLocker policy by Using Test-AppLockerPolicy](test-an-applocker-policy-by-using-test-applockerpolicy.md).
+> [!WARNING]
+> AppLocker rules will be enforced immediately on the local device or when the Group Policy object (GPO) is updated by performing this procedure. If you want to see the effect of applying an AppLocker policy before setting the enforcement setting to **Enforce rules**, configure the policy to **Audit only**. For info about how to do this, see [Configure an AppLocker policy for audit only](configure-an-applocker-policy-for-audit-only.md)or [Test an AppLocker policy by Using Test-AppLockerPolicy](test-an-applocker-policy-by-using-test-applockerpolicy.md).

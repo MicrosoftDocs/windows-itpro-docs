@@ -4,7 +4,6 @@ description: Learn how to monitor user and device claims that are associated wit
 ms.assetid: 71796ea9-5fe4-4183-8475-805c3c1f319f
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 09/09/2021
-ms.technology: itpro-security
 ---
 
 # Monitor user and device claims during sign-in

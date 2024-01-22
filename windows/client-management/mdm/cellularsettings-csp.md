@@ -1,13 +1,6 @@
 ---
 title: CellularSettings CSP
 description: Learn how the CellularSettings configuration service provider is used to configure cellular settings on a mobile device.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-ms.topic: reference
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
@@ -42,8 +35,8 @@ CellularSettings
 
 |Value|Setting|
 |--- |--- |
-|0|Don’t roam|
-|1|Don’t roam (or Domestic roaming if applicable)|
+|0|Don't roam|
+|1|Don't roam (or Domestic roaming if applicable)|
 |2|Roam|
 
 ## Related topics

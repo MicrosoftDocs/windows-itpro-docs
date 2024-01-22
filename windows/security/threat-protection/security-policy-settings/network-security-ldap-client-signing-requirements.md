@@ -4,7 +4,6 @@ description: Best practices, location, values, policy management and security co
 ms.assetid: 38b35489-eb5b-4035-bc87-df63de50509c
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Network security: LDAP client signing requirements

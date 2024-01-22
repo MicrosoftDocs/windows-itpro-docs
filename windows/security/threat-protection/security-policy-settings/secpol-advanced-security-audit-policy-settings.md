@@ -4,7 +4,6 @@ description: Provides information about the advanced security audit policy setti
 ms.assetid: 6BF9A642-DBC3-4101-94A3-B2316C553CE3
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Advanced security audit policy settings for Windows 10

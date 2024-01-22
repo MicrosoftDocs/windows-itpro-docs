@@ -4,7 +4,6 @@ description: Learn about basic security audit policies that specify the categori
 ms.assetid: 3B678568-7AD7-4734-9BB4-53CF5E04E1D3
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 09/06/2021
-ms.technology: itpro-security
 ---
 
 # Basic security audit policies
