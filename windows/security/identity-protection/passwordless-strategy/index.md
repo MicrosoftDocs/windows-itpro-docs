@@ -36,7 +36,7 @@ Deploy Windows Hello for Business or FIDO2 security keys is the first step towar
 
 With a password replacement option and passwords coexisting in the environment, the next step is to reduce the password surface area. The environment and workflows need to stop asking for passwords. The goal of this step is to achieve a state where the users know they have a password, **but they never use it**. This state helps decondition users from providing a password anytime a password prompt shows on their computer. This behavior is how passwords are phished. Users who rarely, if at all, use their password are unlikely to provide it. **Password prompts are no longer the norm**.
 
-In this phase, deploy *Windows passwordles experience* to reduce the password surface area by hiding the password credential provider from the user.
+<!--In this phase, deploy *Windows passwordles experience* to reduce the password surface area by hiding the password credential provider from the user.-->
 
 :::row:::
    :::column span="1":::

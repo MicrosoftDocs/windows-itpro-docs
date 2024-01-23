@@ -54,7 +54,7 @@ Mitigating password usage with applications is one of the more challenging obsta
 
 The ideal mitigation for applications that prompt the user for a password is to enable those applications to use an existing authenticated identity, such as Microsoft Entra ID or Active Directory. Work with the applications vendors to have them add support for Microsoft Entra identities. For on-premises applications, have the application use Windows integrated authentication. The goal for your users should be a seamless single sign-on experience where each user authenticates once when they sign-in to Windows. Use this same strategy for applications that store their own identities in their own databases.
 
-Each scenario on your list should now have a problem statement, an investigation as to why the password was used, and a mitigation plan on how to make the password usage go away. Armed with this data, one-by-one, close the gaps on user-visible passwords. Change policies and procedures as needed, make infrastructure changes where possible. Convert in-house applications to integrate in your Microsoft Entra ID tenant, use federated identities, or use Windows integrated authentication. Work with third-party software vendors to update their software to integraate in Microsoft Entra ID, support federated identities, or use Windows integrated authentication.
+Each scenario on your list should now have a problem statement, an investigation as to why the password was used, and a mitigation plan on how to make the password usage go away. Armed with this data, one-by-one, close the gaps on user-visible passwords. Change policies and procedures as needed, make infrastructure changes where possible. Convert in-house applications to integrate in your Microsoft Entra ID tenant, use federated identities, or use Windows integrated authentication. Work with third-party software vendors to update their software to integrate in Microsoft Entra ID, support federated identities, or use Windows integrated authentication.
 
 ## Repeat until all user password usage is mitigated
 
@@ -63,7 +63,7 @@ Some or all of your mitigations are in place. You need to validate that your sol
 ## Remove password capabilities from Windows
 
 You believe you've mitigated all the password usage for the targeted work persona. Now comes the true test: configure Windows so the user can't use a password.
-Windows provides three ways to prevent your users from using passwords. The following table describes the options and their pros and cons:
+Windows offers different options to prevent users from using passwords. The following table describes the options and their pros and cons:
 
 | Option | Description | Supported on | Pros | Cons |
 | -|-|-|-|-|

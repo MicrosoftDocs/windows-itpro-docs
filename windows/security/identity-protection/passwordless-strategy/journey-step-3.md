@@ -53,32 +53,15 @@ Resolve the issues per your service level agreements. Higher severity items may 
 
 You transitioned all the users for the targeted work persona to a passwordless environment and you've successfully validated all their workflows. The last step to complete the passwordless transition is to remove the user's knowledge of the password and prevent the authenticating authority from accepting passwords.
 
-### Users defined in Active Directory
+### Password scrambling
 
-If your users are defined in Active Directory, you can change their password to random data and prevent interactive password sign-ins using an account configuration on the user object.
+If your users are defined in Active Directory, you can scramble their password to a random value.
 
-:::row:::
-   :::column span="2":::
-   The account options on a user account include the option **Smart card is required for interactive logon**, also known as *SCRIL*.
-
-    > [!NOTE]
-    > Do not confuse the Interactive Logon security policy for SCRIL. Security policies are enforced on the client (locally). A user account configured for SCRIL is enforced at the domain controller.
-   :::column-end:::
-   :::column span="2":::
-   :::image type="content" source="images/user-properties-aduc.png" alt-text="Example user properties in Active Directory Users and Computers that shows the SCRIL setting on Account options." lightbox="images/user-properties-aduc.png" border="false":::
-   :::column-end:::
-:::row-end:::
-
-When you configure a user account for SCRIL:
-
-- Active Directory changes the affected user's password to a random 128 bits of data
-- Domain controllers don't allow the user to sign-in interactively with a password
-- Users no longer need to change their password when it expires, because passwords for SCRIL users don't expire
+### Password expiration
 
 The users are effectively password-less because:
 
 - They don't know their password
-- Their password is 128 random bits of data and is likely to include non-typable characters
 - The user isn't asked to change their password
 - Domain controllers don't allow passwords for interactive authentication
 
@@ -93,16 +76,8 @@ The following image shows the message on the Windows lock screen when a SCRIL-en
 
 :::image type="content" source="images/lock-screen-scril.png" alt-text="Screenshot of the Windows lock screen showing the SCRIL message." border="false":::
 
-#### Automatic password change for SCRIL configured users
+### Password rotation
 
-Domains configured for Windows Server 2016 or later domain functional level can further secure the unknown password for SCRIL-enabled users by configuring the domain to automatically change the password for SCRIL users.
-
-In this configuration, passwords for SCRIL-configured users expire based on Active Directory password policy settings. When the SCRIL user authenticates from a domain controller, the domain controller recognizes the password has expired, and automatically generates a new random 128-bit password for the user as part of the authentication. This feature is great because your users don't experience any change password notifications or any authentication outages.
-
-:::image type="content" source="images/domain-properties-adac.png" alt-text="The Active Directory Administrative Center on Windows Server 2016 showing the domain setting for SCRIL." border="false":::
-
-> [!NOTE]
-> Some components within Windows, such as *Data Protection APIs* and *NTLM authentication*, still need artifacts of a user possessing a password. The SCRIL option provides interoperability by reducing the password usage surface, while Microsoft continues to close the gaps to remove the password completely.
 
 ### Cloud-only users
 

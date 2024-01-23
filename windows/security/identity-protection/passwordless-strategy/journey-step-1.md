@@ -33,12 +33,12 @@ A successful transition relies on user acceptance testing. It's impossible for y
 
 ## Deploy Windows Hello for Business or FIDO2 security keys to test users
 
-Next, you'll want to plan your password replacement deployment. Your test users will need an alternative way to sign-in during step 2 of the journey to becoming passwordless. Use the [Windows Hello for Business planning guide](..\hello-for-business\hello-planning-guide.md) to help learning which deployment is best suited for your environment. Next, use the [Windows Hello for Business deployment guides](..\hello-for-business\hello-deployment-guide.md) to deploy Windows Hello for Business. With the Windows Hello for Business infrastructure in place, you can limit Windows Hello for Business enrollments to the targeted work personas. The great news is that you'll only need to deploy the infrastructure once. When other targeted work personas need to start using Windows Hello for Business, add them to a group. You'll use the first work persona to validate your Windows Hello for Business deployment.
+Next, you'll want to plan your password replacement deployment. Your test users will need an alternative way to sign-in during step 2 of the journey to becoming passwordless. Use the [Windows Hello for Business planning guide](..\hello-for-business\deploy\index.md) to help learning which deployment is best suited for your environment. Next, use one of the deployment guides to deploy Windows Hello for Business. With the Windows Hello for Business infrastructure in place, you can limit Windows Hello for Business enrollments to the targeted work personas. The great news is that you'll only need to deploy the infrastructure once. When other targeted work personas need to start using Windows Hello for Business, add them to a group. You'll use the first work persona to validate your Windows Hello for Business deployment.
 
 If you decide to use FIDO2 security keys, follow the [Enable security key sign-in to Windows guide](/entra/identity/authentication/howto-authentication-passwordless-security-key-windows) to learn how to adopt FIDO2 security keys.
 
 > [!NOTE]
-> Deployments vary based on how the device is joined to Microsoft Entra ID. Review the planning guide and deployment guide to learn the type of infrastructure required to support your devices.
+> Deployments vary based on how the device is joined to Microsoft Entra ID. Review the planning guide to learn the type of infrastructure required to support your devices.
 
 ## Validate passwords and Windows Hello for Business or FIDO2 security keys
 
@@ -48,9 +48,9 @@ In this first step, passwords and your password replacement choice must coexist.
 
 ## Next steps
 
-Before you move to step 2, make sure you've:
-
 > [!div class="checklist"]
+> Before you move to step 2, make sure you've:
+>
 > - Selected your targeted work persona
 > - Identified your test users who represent the targeted work persona
 > - Deployed Windows Hello for Business or FIDO2 security keys to test users
