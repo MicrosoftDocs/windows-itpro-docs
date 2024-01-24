@@ -65,19 +65,7 @@ The users are effectively password-less because:
 - The user isn't asked to change their password
 - Domain controllers don't allow passwords for interactive authentication
 
-The following image shows the SCRIL setting for a user in Active Directory Administrative Center:
-
-:::image type="content" source="images/user-properties-adac.png" alt-text="Example user properties in Active Directory Administrative Center that shows the SCRIL setting." border="false" lightbox="images/user-properties-adac.png":::
-
-> [!TIP]
-> Windows Hello for Business was formerly known as *Microsoft Passport*.
-
-The following image shows the message on the Windows lock screen when a SCRIL-enabled user tries to sign in with a password from an Active Directory joined device:
-
-:::image type="content" source="images/lock-screen-scril.png" alt-text="Screenshot of the Windows lock screen showing the SCRIL message." border="false":::
-
 ### Password rotation
-
 
 ### Cloud-only users
 
