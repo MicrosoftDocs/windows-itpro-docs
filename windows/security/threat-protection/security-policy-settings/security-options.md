@@ -4,11 +4,9 @@ description: Introduction to the Security Options settings of the local security
 ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.date: 01/13/2023
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

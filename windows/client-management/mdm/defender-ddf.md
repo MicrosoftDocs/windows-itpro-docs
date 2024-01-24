@@ -1,14 +1,7 @@
 ---
 title: Defender DDF file
 description: View the XML file containing the device description framework (DDF) for the Defender configuration service provider.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 11/06/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -46,7 +39,7 @@ The following XML file contains the device description framework (DDF) for the D
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.10586</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -305,6 +298,52 @@ The following XML file contains the device description framework (DDF) for the D
           <DDFName />
         </DFType>
       </DFProperties>
+      <Node>
+        <NodeName>DeviceControl</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <Description>An interior node to group information about Device Cotrol health status.</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName />
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>State</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description><![CDATA[Provide the current state of the Device Control.]]></Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME />
+            </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.17763</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.3</MSFT:CspVersion>
+            </MSFT:Applicability>
+          </DFProperties>
+        </Node>
+      </Node>
       <Node>
         <NodeName>ProductStatus</NodeName>
         <DFProperties>
@@ -1059,7 +1098,8 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
             <MSFT:CspVersion>1.3</MSFT:CspVersion>
           </MSFT:Applicability>
-          <MSFT:AllowedValues ValueType="None">
+          <MSFT:AllowedValues ValueType="RegEx">
+            <MSFT:Value>^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$|^(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$|^(?:[0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}$|^(?:[0-9a-fA-F]{1,4}:){1,5}(?::[0-9a-fA-F]{1,4}){1,2}$|^(?:[0-9a-fA-F]{1,4}:){1,4}(?::[0-9a-fA-F]{1,4}){1,3}$|^(?:[0-9a-fA-F]{1,4}:){1,3}(?::[0-9a-fA-F]{1,4}){1,4}$|^(?:[0-9a-fA-F]{1,4}:){1,2}(?::[0-9a-fA-F]{1,4}){1,5}$|^[0-9a-fA-F]{1,4}(?::[0-9a-fA-F]{1,4}){1,6}$|^::1$|^::$</MSFT:Value>
             <MSFT:List Delimiter="|" />
           </MSFT:AllowedValues>
         </DFProperties>
@@ -2141,7 +2181,7 @@ The following XML file contains the device description framework (DDF) for the D
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>1</MSFT:Value>
-              <MSFT:ValueDescription>If you set this setting to 1, all files and directories that are excluded from real-time protection using contextual exclusions are scanned during a quick scan. Exclusions that contain wildcards are not supported and are not scanned.</MSFT:ValueDescription>
+              <MSFT:ValueDescription>If you set this setting to 1, all files and directories that are excluded from real-time protection using contextual exclusions are scanned during a quick scan.</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>
@@ -2181,6 +2221,105 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
               <MSFT:ValueDescription>If you either disable or do not configure this setting, updates occur whenever a new security intelligence update is detected at the location that is specified by SecurityIntelligenceLocation.</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>ScheduleSecurityIntelligenceUpdateTime</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>105</DefaultValue>
+          <Description>This setting allows you to specify the time of day at which to check for security intelligence updates. The time value is represented as the number of minutes past midnight (00:00). For example, 120 is equivalent to 02:00 AM. By default, this setting is configured to check for security intelligence updates 15 minutes before the scheduled scan time. The schedule is based on local time on the computer where the check is occurring.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="Range">
+            <MSFT:Value>[0-1439]</MSFT:Value>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>ScheduleSecurityIntelligenceUpdateDay</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>8</DefaultValue>
+          <Description>This setting allows you to specify the day of the week on which to check for security intelligence updates. By default, this setting is configured to never check for security intelligence updates.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>Daily</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>Sunday</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>2</MSFT:Value>
+              <MSFT:ValueDescription>Monday</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>3</MSFT:Value>
+              <MSFT:ValueDescription>Tuesday</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>4</MSFT:Value>
+              <MSFT:ValueDescription>Wednesday</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>5</MSFT:Value>
+              <MSFT:ValueDescription>Thursday</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>6</MSFT:Value>
+              <MSFT:ValueDescription>Friday</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>7</MSFT:Value>
+              <MSFT:ValueDescription>Saturday</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>8</MSFT:Value>
+              <MSFT:ValueDescription>Never</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>
@@ -2355,7 +2494,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
-          <Description>Defines what are the devices primary ids that should be secured by Defender Device Control. The primary id values should be pipe (|) separated. Example: RemovableMediaDevices|CdRomDevices. If this configuration is not set the default value will be applied, meaning all of the supported devices will be secured.</Description>
+          <Description>Defines which device's primary ids should be secured by Defender Device Control. The primary id values should be pipe (|) separated. Example: RemovableMediaDevices|CdRomDevices. If this configuration is not set the default value will be applied, meaning all supported devices will be secured. Currently supported primary ids are: RemovableMediaDevices, CdRomDevices, WpdDevices, PrinterDevices.</Description>
           <DFFormat>
             <chr />
           </DFFormat>
@@ -2372,7 +2511,8 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:OsBuildVersion>10.0.17763</MSFT:OsBuildVersion>
             <MSFT:CspVersion>1.3</MSFT:CspVersion>
           </MSFT:Applicability>
-          <MSFT:AllowedValues ValueType="None">
+          <MSFT:AllowedValues ValueType="RegEx">
+            <MSFT:Value>^RemovableMediaDevices|CdRomDevices|WpdDevices|PrinterDevices$</MSFT:Value>
             <MSFT:List Delimiter="|" />
           </MSFT:AllowedValues>
         </DFProperties>

@@ -1,14 +1,7 @@
 ---
 title: ADMX-backed policies in Policy CSP
 description: Learn about the ADMX-backed policies in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 11/06/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -2541,6 +2534,8 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [RequireSecureRPCCommunication](policy-csp-remotedesktopservices.md)
 - [ClientConnectionEncryptionLevel](policy-csp-remotedesktopservices.md)
 - [DoNotAllowWebAuthnRedirection](policy-csp-remotedesktopservices.md)
+- [DisconnectOnLockBasicAuthn](policy-csp-remotedesktopservices.md)
+- [DisconnectOnLockWebAccountAuthn](policy-csp-remotedesktopservices.md)
 
 ## RemoteManagement
 

@@ -4,7 +4,6 @@ description: Best practices, location, values, and security considerations for t
 ms.assetid: 48b5c424-9ba8-416d-be7d-ccaabb3f49af
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Microsoft network server: Disconnect clients when sign-in hours expire

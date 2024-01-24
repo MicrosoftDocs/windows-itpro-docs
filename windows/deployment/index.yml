@@ -1,104 +1,180 @@
-### YamlMime:Landing
+### YamlMime:Hub
 
-title: Windows client deployment resources and documentation # < 60 chars
-summary: Learn about deploying and keeping Windows client devices up to date.  # < 160 chars
+title: Deploy and update Windows # < 60 chars; shows at top of hub page
+summary: Learn about deploying and updating Windows client devices in your organization. # < 160 chars
 
 metadata:
-  title: Windows client deployment resources and documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about deploying Windows and keeping it up to date in your organization. # Required; article description that is displayed in search results. < 160 chars.
-  ms.topic: landing-page
-  ms.technology: itpro-deploy
+  title: Windows client deployment documentation # Required; browser tab title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about deploying and updating Windows client devices in your organization. # Required; article description that is displayed in search results. < 160 chars.
+  ms.topic: hub-page
   ms.prod: windows-client
+  ms.technology: itpro-deploy
   ms.collection:
     - highpri
     - tier1
-  author: frankroj
-  ms.author: frankroj
+  author: aczechowski
+  ms.author: aaroncz
   manager: aaroncz
-  ms.date: 10/31/2022
+  ms.date: 01/18/2024
   localization_priority: medium
-    
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
-landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: Plan
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Create a deployment plan
-            url: update/create-deployment-plan.md
-          - text: Define readiness criteria
-            url: update/plan-define-readiness.md
-          - text: Evaluate infrastructure and tools
-            url: update/eval-infra-tools.md
-          - text: Define your servicing strategy
-            url:  update/plan-define-strategy.md
+# common graphics: https://review.learn.microsoft.com/content-production-service/internal/image-gallery?branch=main
 
-  # Card (optional)
-  - title: Prepare
-    linkLists:
-      - linkListType: how-to-guide
+productDirectory:
+  title: Get started
+  items:
+    - title: Plan
+      imageSrc: /media/common/i_overview.svg
+      links:
+        - text: Plan for Windows 11
+          url: /windows/whats-new/windows-11-plan?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+        - text: Create a deployment plan
+          url: update/create-deployment-plan.md
+        - text: Define readiness criteria
+          url: update/plan-define-readiness.md
+        - text: Define your servicing strategy
+          url: update/plan-define-strategy.md
+        - text: Determine application readiness
+          url: update/plan-determine-app-readiness.md
+        - text: Plan for volume activation
+          url: volume-activation/plan-for-volume-activation-client.md
+
+    - title: Prepare
+      imageSrc: /media/common/i_tasks.svg
+      links:
+        - text: Prepare for Windows 11
+          url: /windows/whats-new/windows-11-prepare?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+        - text: Prepare to deploy Windows updates
+          url: update/prepare-deploy-windows.md
+        - text: Prepare updates using Windows Update for Business
+          url: update/waas-manage-updates-wufb.md
+        - text: Evaluate and update infrastructure
+          url: update/update-policies.md
+        - text: Set up Delivery Optimization for Windows client updates
+          url: do/waas-delivery-optimization-setup.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+        - text: Prepare for imaging with Configuration Manager
+          url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
+
+    - title: Deploy
+      imageSrc: /media/common/i_deploy.svg
+      links:
+        - text: Deploy Windows with Autopilot
+          url: /mem/autopilot/tutorial/autopilot-scenarios
+        - text: Assign devices to servicing channels
+          url: update/waas-servicing-channels-windows-10-updates.md
+        - text: Deploy updates with Intune
+          url: update/deploy-updates-intune.md
+        - text: Deploy Windows updates with Configuration Manager
+          url: update/deploy-updates-configmgr.md
+        - text: Upgrade Windows using Configuration Manager
+          url: deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md
+        - text: Check release health
+          url: update/check-release-health.md
+
+additionalContent:
+  sections:
+    - title: Solutions
+      items:
+
+      - title: Windows Autopilot
         links:
-          - text: Prepare to deploy Windows updates
-            url: update/prepare-deploy-windows.md
-          - text: Prepare updates using Windows Update for Business
+          - text: Overview
+            url: /mem/autopilot/windows-autopilot
+          - text: Scenarios
+            url: /mem/autopilot/tutorial/autopilot-scenarios
+          - text: Device registration
+            url: /mem/autopilot/registration-overview
+          - text: Learn more about Windows Autopilot >
+            url: /mem/autopilot
+
+      - title: Windows Autopatch
+        links:
+          - text: What is Windows Autopatch?
+            url: windows-autopatch/overview/windows-autopatch-overview.md
+          - text: Frequently asked questions (FAQ)
+            url: windows-autopatch/overview/windows-autopatch-faq.yml
+          - text: Prerequisites
+            url: windows-autopatch/prepare/windows-autopatch-prerequisites.md
+          - text: Learn more about Windows Autopatch >
+            url: windows-autopatch/index.yml
+
+      - title: Windows Update for Business
+        links:
+          - text: What is Windows Update for Business?
             url: update/waas-manage-updates-wufb.md
-          - text: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
-            url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
-          - text: Set up Delivery Optimization for Windows client updates
+          - text: Windows Update for Business deployment service
+            url: update/deployment-service-overview.md
+          - text: Manage Windows Update settings
+            url: update/waas-wu-settings.md
+          - text: Windows Update for Business reports overview
+            url: update/wufb-reports-overview.md
+
+      - title: Optimize and cache content
+        links:
+          - text: What is Delivery Optimization?
+            url: do/waas-delivery-optimization.md
+          - text: What is Microsoft Connected Cache?
+            url: do/waas-microsoft-connected-cache.md
+          - text: Frequently asked questions
+            url: do/waas-delivery-optimization-faq.yml
+          - text: Learn more about Delivery Optimization >
             url: do/index.yml
 
-  # Card (optional)
-  - title: Deploy
-    linkLists:
-      - linkListType: deploy
+      - title: In-place upgrade and imaging
         links:
-          - text: Deploy Windows 10 with Autopilot
-            url: /mem/autopilot
-          - text: Assign devices to servicing channels
-            url: update/waas-servicing-channels-windows-10-updates.md
- 
-  # Card
-  - title: Overview
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What's new in Windows deployment
-            url: deploy-whats-new.md
-          - text: Windows 11 overview
-            url: /windows/whats-new/windows-11
-          - text: Windows client deployment scenarios
-            url: windows-10-deployment-scenarios.md
-          - text: Basics of Windows updates, channels, and tools
-            url:  update/get-started-updates-channels-tools.md
-          - text: Overview of Windows Autopilot
-            url:  /mem/autopilot/windows-autopilot
+          - text: Upgrade Windows using Configuration Manager
+            url: deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md
+          - text: Deploy a Windows image using Configuration Manager
+            url: deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md
+          - text: Convert a disk from MBR to GPT
+            url: mbr-to-gpt.md
+          - text: Resolve Windows upgrade errors
+            url: upgrade/resolve-windows-upgrade-errors.md
 
-  # Card
-  - title: Support remote work
-    linkLists:
-      - linkListType: concept
+      - title: Licensing and activation
         links:
-          - text: Deploy Windows 10 for a remote world
-            url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/deploying-a-new-version-of-windows-10-in-a-remote-world/ba-p/1419846
-          - text: Empower remote workers with Microsoft 365
-            url: /microsoft-365/solutions/empower-people-to-work-remotely
-          - text: Top 12 tasks for security teams to support working from home
-            url: /microsoft-365/security/top-security-tasks-for-remote-work
-          - text: Support your remote workforce
-            url: /microsoftteams/faq-support-remote-workforce
+          - text: Plan for volume activation
+            url: volume-activation/plan-for-volume-activation-client.md
+          - text: Subscription activation
+            url: windows-10-subscription-activation.md
+          - text: Volume activation management tool (VAMT)
+            url: volume-activation/introduction-vamt.md
+          - text: Activate using key management service (KMS)
+            url: volume-activation/activate-using-key-management-service-vamt.md
+          - text: Windows commercial licensing overview
+            url: /windows/whats-new/windows-licensing
 
-  # Card (optional)
-  - title: Microsoft Learn training
-    linkLists:
-      - linkListType: learn
+    - title: More resources
+      items:
+
+      - title: Release and lifecycle
         links:
-          - text: Plan to deploy updates for Windows 10 and Microsoft 365 Apps
-            url: /training/modules/windows-plan
-          - text: Prepare to deploy updates for Windows 10 and Microsoft 365 Apps
-            url: /training/modules/windows-prepare/
-          - text: Deploy updates for Windows 10 and Microsoft 365 Apps
-            url: /training/modules/windows-deploy
+          - text: Windows release health dashboard
+            url: /windows/release-health
+          - text: Windows client features lifecycle
+            url: /windows/whats-new/feature-lifecycle
+          - text: Lifecycle FAQ - Windows
+            url: /lifecycle/faq/windows
+
+      - title: Windows hardware
+        links:
+          - text: Download and install the Windows ADK
+            url: /windows-hardware/get-started/adk-install
+          - text: Deployment tools
+            url: /windows-hardware/manufacture/desktop/boot-and-install-windows
+#          - text: 
+#            url: 
+#          - text: 
+#            url: 
+
+      - title: Community
+        links:
+          - text: Windows IT pro blog
+            url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog
+          - text: Windows office hours
+            url: https://aka.ms/windows/officehours
+#          - text: 
+#            url: 
+#          - text: 
+#            url: 
+

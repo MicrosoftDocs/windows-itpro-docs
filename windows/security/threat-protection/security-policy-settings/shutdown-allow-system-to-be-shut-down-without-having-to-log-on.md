@@ -4,7 +4,6 @@ description: Best practices, security considerations, and more for the security 
 ms.assetid: f3964767-5377-4416-8eb3-e14d553a7315
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Shutdown: Allow system to be shut down without having to log on

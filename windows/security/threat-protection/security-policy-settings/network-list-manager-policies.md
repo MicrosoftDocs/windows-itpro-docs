@@ -4,7 +4,6 @@ description: Network List Manager policies are security settings that configure 
 ms.assetid: bd8109d4-b07c-4beb-a9a6-affae2ba2fda
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Network List Manager policies

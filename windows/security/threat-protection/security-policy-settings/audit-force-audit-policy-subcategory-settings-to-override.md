@@ -4,7 +4,6 @@ description: Learn more about the security policy setting, Audit Force audit pol
 ms.assetid: 8ddc06bc-b6d6-4bac-9051-e0d77035bd4e
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings

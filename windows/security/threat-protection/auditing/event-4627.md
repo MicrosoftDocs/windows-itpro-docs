@@ -2,7 +2,6 @@
 title: 4627(S) Group membership information. 
 description: Describes security event 4627(S) Group membership information. This event is generated with event 4624(S) An account was successfully logged on.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

@@ -1,14 +1,7 @@
 ---
 title: Defender CSP
 description: Learn more about the Defender CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 11/06/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -80,6 +73,8 @@ The following list shows the Defender configuration service provider nodes:
     - [RandomizeScheduleTaskTimes](#configurationrandomizescheduletasktimes)
     - [ScanOnlyIfIdleEnabled](#configurationscanonlyifidleenabled)
     - [SchedulerRandomizationTime](#configurationschedulerrandomizationtime)
+    - [ScheduleSecurityIntelligenceUpdateDay](#configurationschedulesecurityintelligenceupdateday)
+    - [ScheduleSecurityIntelligenceUpdateTime](#configurationschedulesecurityintelligenceupdatetime)
     - [SecuredDevicesConfiguration](#configurationsecureddevicesconfiguration)
     - [SecurityIntelligenceLocationUpdateAtScheduledTimeOnly](#configurationsecurityintelligencelocationupdateatscheduledtimeonly)
     - [SecurityIntelligenceUpdatesChannel](#configurationsecurityintelligenceupdateschannel)
@@ -101,6 +96,8 @@ The following list shows the Defender configuration service provider nodes:
     - [ComputerState](#healthcomputerstate)
     - [DefenderEnabled](#healthdefenderenabled)
     - [DefenderVersion](#healthdefenderversion)
+    - [DeviceControl](#healthdevicecontrol)
+      - [State](#healthdevicecontrolstate)
     - [EngineVersion](#healthengineversion)
     - [FullScanOverdue](#healthfullscanoverdue)
     - [FullScanRequired](#healthfullscanrequired)
@@ -350,7 +347,7 @@ Control whether network protection can improve performance by switching from rea
 | Value | Description |
 |:--|:--|
 | 1 | Allow switching to asynchronous inspection. |
-| 0 (Default) | Don't allow asynchronous inspection. |
+| 0 (Default) | Don’t allow asynchronous inspection. |
 <!-- Device-Configuration-AllowSwitchToAsyncInspection-AllowedValues-End -->
 
 <!-- Device-Configuration-AllowSwitchToAsyncInspection-Examples-Begin -->
@@ -1980,7 +1977,7 @@ Allows an administrator to explicitly disable network packet inspection made by 
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | List (Delimiter: `|`) |
+| Allowed Values | Regular Expression: `^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$|^(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$|^(?:[0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}$|^(?:[0-9a-fA-F]{1,4}:){1,5}(?::[0-9a-fA-F]{1,4}){1,2}$|^(?:[0-9a-fA-F]{1,4}:){1,4}(?::[0-9a-fA-F]{1,4}){1,3}$|^(?:[0-9a-fA-F]{1,4}:){1,3}(?::[0-9a-fA-F]{1,4}){1,4}$|^(?:[0-9a-fA-F]{1,4}:){1,2}(?::[0-9a-fA-F]{1,4}){1,5}$|^[0-9a-fA-F]{1,4}(?::[0-9a-fA-F]{1,4}){1,6}$|^::1$|^::$` |
 <!-- Device-Configuration-ExcludedIpAddresses-DFProperties-End -->
 
 <!-- Device-Configuration-ExcludedIpAddresses-Examples-Begin -->
@@ -2470,7 +2467,7 @@ This setting allows you to scan excluded files and directories during quick scan
 | Value | Description |
 |:--|:--|
 | 0 (Default) | If you set this setting to 0 or don't configure it, exclusions aren't scanned during quick scans. |
-| 1 | If you set this setting to 1, all files and directories that are excluded from real-time protection using contextual exclusions are scanned during a quick scan. Exclusions that contain wildcards aren't supported and aren't scanned. |
+| 1 | If you set this setting to 1, all files and directories that are excluded from real-time protection using contextual exclusions are scanned during a quick scan. |
 <!-- Device-Configuration-QuickScanIncludeExclusions-AllowedValues-End -->
 
 <!-- Device-Configuration-QuickScanIncludeExclusions-Examples-Begin -->
@@ -2618,6 +2615,103 @@ This setting allows you to configure the scheduler randomization in hours. The r
 
 <!-- Device-Configuration-SchedulerRandomizationTime-End -->
 
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Begin -->
+### Configuration/ScheduleSecurityIntelligenceUpdateDay
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Applicability-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/ScheduleSecurityIntelligenceUpdateDay
+```
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-OmaUri-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting allows you to specify the day of the week on which to check for security intelligence updates. By default, this setting is configured to never check for security intelligence updates.
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Description-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Editable-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 8 |
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-DFProperties-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Daily. |
+| 1 | Sunday. |
+| 2 | Monday. |
+| 3 | Tuesday. |
+| 4 | Wednesday. |
+| 5 | Thursday. |
+| 6 | Friday. |
+| 7 | Saturday. |
+| 8 (Default) | Never. |
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-AllowedValues-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Examples-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Begin -->
+### Configuration/ScheduleSecurityIntelligenceUpdateTime
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Applicability-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/ScheduleSecurityIntelligenceUpdateTime
+```
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-OmaUri-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting allows you to specify the time of day at which to check for security intelligence updates. The time value is represented as the number of minutes past midnight (00:00). For example, 120 is equivalent to 02:00 AM. By default, this setting is configured to check for security intelligence updates 15 minutes before the scheduled scan time. The schedule is based on local time on the computer where the check is occurring.
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Description-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Editable-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1439]` |
+| Default Value  | 105 |
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-DFProperties-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Examples-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-End -->
+
 <!-- Device-Configuration-SecuredDevicesConfiguration-Begin -->
 ### Configuration/SecuredDevicesConfiguration
 
@@ -2635,7 +2729,7 @@ This setting allows you to configure the scheduler randomization in hours. The r
 
 <!-- Device-Configuration-SecuredDevicesConfiguration-Description-Begin -->
 <!-- Description-Source-DDF -->
-Defines what are the devices primary ids that should be secured by Defender Device Control. The primary id values should be pipe (|) separated. Example: RemovableMediaDevices|CdRomDevices. If this configuration isn't set the default value will be applied, meaning all of the supported devices will be secured.
+Defines which device's primary ids should be secured by Defender Device Control. The primary id values should be pipe (|) separated. Example: RemovableMediaDevices|CdRomDevices. If this configuration isn't set the default value will be applied, meaning all supported devices will be secured. Currently supported primary ids are: RemovableMediaDevices, CdRomDevices, WpdDevices, PrinterDevices.
 <!-- Device-Configuration-SecuredDevicesConfiguration-Description-End -->
 
 <!-- Device-Configuration-SecuredDevicesConfiguration-Editable-Begin -->
@@ -2649,7 +2743,7 @@ Defines what are the devices primary ids that should be secured by Defender Devi
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | List (Delimiter: `|`) |
+| Allowed Values | Regular Expression: `^RemovableMediaDevices|CdRomDevices|WpdDevices|PrinterDevices$` |
 <!-- Device-Configuration-SecuredDevicesConfiguration-DFProperties-End -->
 
 <!-- Device-Configuration-SecuredDevicesConfiguration-Examples-Begin -->
@@ -3644,6 +3738,84 @@ Version number of Windows Defender on the device.
 <!-- Device-Health-DefenderVersion-Examples-End -->
 
 <!-- Device-Health-DefenderVersion-End -->
+
+<!-- Device-Health-DeviceControl-Begin -->
+### Health/DeviceControl
+
+<!-- Device-Health-DeviceControl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-Health-DeviceControl-Applicability-End -->
+
+<!-- Device-Health-DeviceControl-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Health/DeviceControl
+```
+<!-- Device-Health-DeviceControl-OmaUri-End -->
+
+<!-- Device-Health-DeviceControl-Description-Begin -->
+<!-- Description-Source-DDF -->
+An interior node to group information about Device Cotrol health status.
+<!-- Device-Health-DeviceControl-Description-End -->
+
+<!-- Device-Health-DeviceControl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Health-DeviceControl-Editable-End -->
+
+<!-- Device-Health-DeviceControl-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get |
+<!-- Device-Health-DeviceControl-DFProperties-End -->
+
+<!-- Device-Health-DeviceControl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Health-DeviceControl-Examples-End -->
+
+<!-- Device-Health-DeviceControl-End -->
+
+<!-- Device-Health-DeviceControl-State-Begin -->
+#### Health/DeviceControl/State
+
+<!-- Device-Health-DeviceControl-State-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- Device-Health-DeviceControl-State-Applicability-End -->
+
+<!-- Device-Health-DeviceControl-State-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Health/DeviceControl/State
+```
+<!-- Device-Health-DeviceControl-State-OmaUri-End -->
+
+<!-- Device-Health-DeviceControl-State-Description-Begin -->
+<!-- Description-Source-DDF -->
+Provide the current state of the Device Control.
+<!-- Device-Health-DeviceControl-State-Description-End -->
+
+<!-- Device-Health-DeviceControl-State-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Health-DeviceControl-State-Editable-End -->
+
+<!-- Device-Health-DeviceControl-State-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get |
+<!-- Device-Health-DeviceControl-State-DFProperties-End -->
+
+<!-- Device-Health-DeviceControl-State-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Health-DeviceControl-State-Examples-End -->
+
+<!-- Device-Health-DeviceControl-State-End -->
 
 <!-- Device-Health-EngineVersion-Begin -->
 ### Health/EngineVersion

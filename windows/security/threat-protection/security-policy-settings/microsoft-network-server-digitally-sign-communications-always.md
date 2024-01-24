@@ -5,8 +5,6 @@ author: vinaypamnani-msft
 ms.author: vinpa
 ms.reviewer:
 manager: aaroncz
-ms.prod: windows-client
-ms.technology: itpro-security
 ms.localizationpriority: medium
 ms.topic: reference
 ms.date: 01/13/2023

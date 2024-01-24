@@ -4,7 +4,6 @@ description: Learn how to monitor changes to the central access policies that ap
 ms.assetid: 126b051e-c20d-41f1-b42f-6cff24dcf20c
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 09/09/2021
-ms.technology: itpro-security
 ---
 
 # Monitor the central access policies that apply on a file server
