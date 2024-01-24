@@ -1,13 +1,6 @@
 ---
 title: Policies in Policy CSP supported by HoloLens 2
 description: Learn about the policies in Policy CSP supported by HoloLens 2.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-ms.topic: reference
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 02/03/2023
 ---

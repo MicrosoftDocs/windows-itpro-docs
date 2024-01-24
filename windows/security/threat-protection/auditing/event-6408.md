@@ -2,7 +2,6 @@
 title: 6408(-) Registered product %1 failed and Windows Firewall is now controlling the filtering for %2. 
 description: Describes security event 6408(-) Registered product %1 failed and Windows Firewall is now controlling the filtering for %2.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/09/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

@@ -2,7 +2,6 @@
 title: 4701(S) A scheduled task was disabled. 
 description: Describes security event 4701(S) A scheduled task was disabled. This event is generated every time a scheduled task is disabled.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

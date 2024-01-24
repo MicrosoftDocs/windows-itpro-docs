@@ -4,7 +4,6 @@ description: Describes the Account Lockout Policy settings and links to informat
 ms.assetid: eb968c28-17c5-405f-b413-50728cb7b724
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 10/11/2018
-ms.technology: itpro-security
 ---
 
 # Account Lockout Policy

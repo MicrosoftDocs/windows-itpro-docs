@@ -1,14 +1,9 @@
 ---
 title: Contributing to CSP reference articles
 description: Learn more about contributing to the CSP reference articles.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
 ms.date: 07/18/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
 ms.topic: reference
+ms.localizationpriority: medium
 ---
 
 # Contributing to the CSP reference articles

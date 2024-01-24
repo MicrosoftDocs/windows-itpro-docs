@@ -4,7 +4,6 @@ description: Best practices, security considerations, and more for the policy se
 ms.assetid: 8227842a-569d-480f-b43c-43450bbaa722
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Microsoft network server: Amount of idle time required before suspending session

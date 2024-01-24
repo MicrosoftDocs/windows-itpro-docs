@@ -4,7 +4,6 @@ description: Best practices, location, values, policy management and security co
 ms.assetid: bbe1a98c-420a-41e7-9d3c-3a2fe0f1843e
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +16,6 @@ ms.collection:
   - tier3
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Network security: LAN Manager authentication level
