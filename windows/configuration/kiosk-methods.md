@@ -24,7 +24,7 @@ ms.date: 12/31/2017
 
 Some desktop devices in an enterprise serve a special purpose. For example, a PC in the lobby that customers use to see your product catalog. Or, a PC displaying visual content as a digital sign. Windows client offers two different locked-down experiences for public or specialized use:
 
-- **A single-app kiosk**: Runs a single Universal Windows Platform (UWP) app in full screen above the lock screen. People using the kiosk can see only that app. When the kiosk account (a local standard user account) signs in, the kiosk app will launch automatically, and you can configure the kiosk account to sign in automatically as well. If the kiosk app is closed, it will automatically restart. 
+- **A single-app kiosk**: Runs a single Universal Windows Platform (UWP) app in full screen above the lock screen. People using the kiosk can see only that app. When the kiosk account (a local standard user account) signs in, the kiosk app launches automatically, and you can configure the kiosk account to sign in automatically as well. If the kiosk app is closed, it will automatically restart. 
   
   A single-app kiosk is ideal for public use. Using [Shell Launcher](kiosk-shelllauncher.md), you can configure a kiosk device that runs a Windows desktop application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on. This type of single-app kiosk doesn't run above the lock screen. 
 
