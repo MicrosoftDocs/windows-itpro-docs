@@ -73,7 +73,7 @@ Copilot with Graph-grounded chat enables you to use your work content and contex
 - Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundational LLMs.
 - It only surfaces organizational data to which individual users have at least view permissions.
 - The information contained within your prompts, the data retrieved, and the generated responses remain within your tenant's service boundary. For more information about privacy and security for Graph-grounded chat, see [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-privacy)
-- Copilot with Graph-grounded chat is part of Copilot for Microsoft 365, an add-on plan. For more information about license requirements, see [Microsoft Copilot for Microsoft 365 license requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements#license-requirements).
+- Copilot with Graph-grounded chat is part of Copilot for Microsoft 365, an add-on plan. For more information about prerequisites and license requirements, see [Microsoft Copilot for Microsoft 365 requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements#license-requirements).
 
 ## Configure the chat provider platform that Copilot in Windows uses
 
