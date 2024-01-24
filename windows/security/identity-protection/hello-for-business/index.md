@@ -17,8 +17,8 @@ The following table lists the main authentication and security differences betwe
 
 ||Windows Hello|Windows Hello for Business|
 |-|-|-|
-|**Authentication**|Users can authenticate to:<br>- A Microsoft account<br>- Identity provider (IdP) services or relying party (RP) services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication.|With Windows Hello for Business, users can authenticate to:<br>- A Microsoft Entra ID account<br>- An Active Directory account<br>- Identity provider (IdP) services or relying party (RP) Services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication.|
-|**Security**|Users can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Windows Hello is unique to the device on which it's set up, but can use a password hash depending on the account type. This configuration is referred to as *Windows Hello convenience PIN*, and it's not backed by asymmetric (public/private key) or certificate-based authentication.|It uses key-based or certificate-based authentication.On devices with a TPM, Windows Hello provides enhanced security through phish-resistant two-factor authentication. Authentication requires a PIN (something the user knows) or biometric data (something the user is), coupled with possession of the device itself containing the hardware-bound credential (something the user has). There is no symmetric secret (password) which can be stolen from a server or phished from a user and used remotely.|
+|**Authentication**|Users can authenticate to:<br>- A Microsoft account<br>- Identity provider (IdP) services or relying party (RP) services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication.|Users can authenticate to:<br>- A Microsoft Entra ID account<br>- An Active Directory account<br>- Identity provider (IdP) services or relying party (RP) Services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication.|
+|**Security**|Users can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Windows Hello is unique to the device on which it's set up, but can use a password hash depending on the account type. This configuration is referred to as *Windows Hello convenience PIN*, and it's not backed by asymmetric (public/private key) or certificate-based authentication.|It uses **key-based** or **certificate-based** authentication. There's no symmetric secret (password) which can be stolen from a server or phished from a user and used remotely.<br>Enhanced security is available on devices with a Trusted Platform Module (TPM).|
 
 > [!NOTE]
 > FIDO2 (Fast Identity Online) authentication is an open standard for passwordless authentication. It allows users to sign in to their devices and apps using biometric authentication or a physical security key, without the need for a traditional password. FIDO2 support in Windows Hello for Business provides an additional layer of security and convenience for users, while also reducing the risk of password-related attacks.
@@ -48,9 +48,9 @@ Windows Hello for Business is considered two-factor authentication based on the 
 
 On devices that support Windows Hello, an easy biometric gesture unlocks users' credentials:
 
-- **Facial recognition**. This type of biometric recognition uses special cameras that see in IR light, which allows them to reliably tell the difference between a photograph or scan and a living person. Several vendors offer external cameras that incorporate this technology, and many laptop manufacturers incorporate it into their devices
-- **Fingerprint recognition**. This type of biometric recognition uses a capacitive fingerprint sensor to scan your fingerprint. Most existing fingerprint readers work with Windows, whether they're external or integrated into laptops or USB keyboards
-- **Iris Recognition**. This type of biometric recognition uses cameras to perform scan of your iris. HoloLens 2 is the first Microsoft device to introduce an Iris scanner
+- **Facial recognition**: this type of biometric recognition uses special cameras that see in IR light, which allows them to reliably tell the difference between a photograph or scan and a living person. Several vendors offer external cameras that incorporate this technology, and many laptop manufacturers incorporate it into their devices
+- **Fingerprint recognition**: this type of biometric recognition uses a capacitive fingerprint sensor to scan your fingerprint. Most existing fingerprint readers work with Windows, whether they're external or integrated into laptops or USB keyboards
+- **Iris Recognition**: this type of biometric recognition uses cameras to perform scan of your iris. HoloLens 2 is the first Microsoft device to introduce an Iris scanner
 
 Windows stores biometric data that is used to implement Windows Hello securely on the local device only. The biometric data doesn't roam and is never sent to external devices or servers. Because Windows Hello only stores biometric identification data on the device, there's no single collection point an attacker can compromise to steal biometric data.
 
@@ -62,14 +62,14 @@ The following video shows a demonstration of Windows Hello for Business in actio
 
 ## Hardware requirements
 
-We've been working with the manufacturers to help ensure a high-level of performance and protection is met by each sensor and device, based on the following requirements:
+Microsoft collaborates with manufacturers to help ensuring a high-level of performance and protection is met by each sensor and device, based on the following requirements:
 
-- **False Accept Rate (FAR).** Represents the instance a biometric identification solution verifies an unauthorized person. This is normally represented as a ratio of number of instances in a given population size, for example 1 in 100 000. This can also be represented as a percentage of occurrence, for example, 0.001%. This measurement is heavily considered the most important with regard to the security of the biometric algorithm
-- **False Reject Rate (FRR).** Represents the instances a biometric identification solution fails to verify an authorized person correctly. Usually represented as a percentage, the sum of the True Accept Rate and False Reject Rate is 1. Can be with or without anti-spoofing or liveness detection
+- **False Accept Rate (FAR):** represents the instance a biometric identification solution verifies an unauthorized person. This is normally represented as a ratio of number of instances in a given population size, for example 1 in 100,000. This can also be represented as a percentage of occurrence, for example, 0.001%. This measurement is heavily considered the most important with regard to the security of the biometric algorithm
+- **False Reject Rate (FRR):** represents the instances a biometric identification solution fails to verify an authorized person correctly. Usually represented as a percentage, the sum of the True Accept Rate and False Reject Rate is 1. Can be with or without anti-spoofing or liveness detection
 
 ### Fingerprint sensor requirements
 
-To allow fingerprint matching, you must have devices with fingerprint sensors and software. Fingerprint sensors, or sensors that use an employee's unique fingerprint as an alternative logon option, can be touch sensors (large area or small area) or swipe sensors. Each type of sensor has its own set of detailed requirements that must be implemented by the manufacturer, but all of the sensors must include anti-spoofing measures.
+To allow fingerprint matching, devices must have fingerprint sensors and software. Fingerprint sensors can be touch sensors (large area or small area) or swipe sensors. Each type of sensor has its own set of detailed requirements that must be implemented by the manufacturer, but all of the sensors must include anti-spoofing measures.
 
 Acceptable performance range for small to large size touch sensors:
 
@@ -95,6 +95,8 @@ To allow facial recognition, you must have devices with integrated special infra
 ### Iris recognition sensor requirements
 
 To use Iris authentication, you'll need a [HoloLens 2 device](/hololens/). All HoloLens 2 editions are equipped with the same sensors. Iris is implemented the same way as other Windows Hello technologies and achieves biometrics security FAR of 1/100K.
+
+For more information about the hardware requirements for Windows Hello, see [Windows Hello biometric requirements](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements).
 
 ## Next steps
 
