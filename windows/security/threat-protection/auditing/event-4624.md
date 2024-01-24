@@ -250,6 +250,9 @@ This event generates when a logon session is created (on destination machine). I
 - **Source Port** [Type = UnicodeString]: source port which was used for logon attempt from remote machine.
 
     - 0 for interactive logons.
+ 
+  > [!NOTE]
+  The fields for IP address/port and workstation name are populated depending on the authentication context and protocol used. LSASS will audit the information the authenticating service shares with LSASS. For example, network logons with Kerberos likely have no workstation information, and NTLM logons have no TCP/IP details.
 
 **Detailed Authentication Information:**
 
