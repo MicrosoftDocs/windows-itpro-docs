@@ -132,6 +132,12 @@ When Copilot with commercial data protection is the chat provider platform, the 
 
 :::image type="content" source="images/copilot-commercial-data-protection-chat-provider.png" alt-text="Screenshot of the Copilot in Windows user experience when Copilot with commercial data protection is the chat provider." lightbox="images/copilot-commercial-data-protection-chat-provider.png":::
 
+
+### Copilot with Graph-grounded chat as the chat provider platform 
+<!---8639813-->
+
+:::image type="content" source="images/cwork-toggle-graph-grounded-chat.png" alt-text="Screenshot of the Copilot in Windows user experience when the work toggle is selected and the chart provider is Copilot with Graph-grounded chat." lightbox="images/work-toggle-graph-grounded-chat.png":::
+
 ## Ensure the Copilot in Windows user experience is enabled
 
 Once you've configured the chat provider platform that Copilot in Windows uses, you need to ensure that the Copilot in Windows user experience is enabled. Ensuring the Copilot in Windows user experience is enabled varies by the Windows version.
