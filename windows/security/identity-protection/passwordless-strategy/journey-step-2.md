@@ -62,38 +62,38 @@ Some or all of your mitigations are in place. You need to validate that your sol
 
 ## Remove password capabilities from Windows
 
-You believe you've mitigated all the password usage for the targeted work persona. Now comes the true test: configure Windows so the user can't use a password.
-Windows offers different options to prevent users from using passwords. The following table describes the options and their pros and cons:
+You believe you've mitigated all the password usage for the targeted work persona. Now comes the true test: configure Windows so the user can't use a password.\
+Windows offers three main options to reduce or eliminate the password surface area:
 
-| Option | Description | Supported on | Pros | Cons |
-| -|-|-|-|-|
-| Passwordless experience | -|-|-|-|
-| Interactive logon security policy to exclude the password credential provider| -|-|-|-|
-| Interactive logon security policy to to only allow Windows Hello for Business or FIDO 2 security keys sign-ins and unlocks| -|-|-|-|
+- Windows passwordless experience
+- Exclude the password credential provider
+- Require Windows Hello for Business or a smart card
 
-The following image shows the Windows lock screen when Windows passwordless experience is enabled. A user enrolled in Windows Hello for Business doesn't have the option to use a password to sign in:
+### Windows passwordless experience
 
-:::image type="content" source="images/passwordless-experience.png" alt-text="Screenshot of the Windows lock screen with passwordless experience enabled." border="false":::
+*Windows Passwordless experience* is a security policy that hides the password credential provider for user accounts that sign in with Windows Hello or a FIDO2 security key. This is the recommended option, but it's only available on Microsoft Entra joined devices. The following image shows the Windows lock screen when Windows passwordless experience is enabled. A user enrolled in Windows Hello for Business doesn't have the option to use a password to sign in:
 
-## Security policy
+    :::image type="content" source="images/passwordless-experience.png" alt-text="Screenshot of the Windows lock screen with passwordless experience enabled." border="false":::
 
-You can use the CSP or Group Policy to deploy an interactive logon security policy setting to the devices.
+To learn more, see [Windows passwordless experience](../passwordless-experience/index.md)
 
- This policy setting is found under **Computer Configuration > Policies > Windows Settings > Local Policy > Security Options**.  The name of the policy setting depends on the version of the operating systems you use to configure Group Policy.
+### Exclude the password credential provider
 
-The policy name for these operating systems is **Interactive logon: Require Windows Hello for Business or smart card**.
+The *Exclude credential providers* policy setting can be used to disable the password credentail provider. When configured, Windows disables the possibility to uyse passwords for *all accounts*, including local accounts. It also prevents the use of passwords for RDP and *Run as* authentication scenarios. This policy setting might impact support scenarios, such as when a user needs to sign in with a local account to troubleshoot a problem. For this reason, carefully evaluate all scenarios before enabling it.
 
-When you enable this security policy setting, Windows prevents users from signing in or unlocking with a password. The password credential provider remains visible to the user. If a user tries to use a password, Windows informs the user they must use Windows Hello for Business or a smart card.
+- GPO: **Computer Configuration** > **Administrative Templates** > **System** > **Logon** > **Exclude credential providers**
+- CSP: ``./Device/Vendor/MSFT/Policy/Config/ADMX_CredentialProviders/`[ExcludedCredentialProviders](/windows/client-management/mdm/policy-csp-admx-credentialproviders#excludedcredentialproviders)
 
-### Excluding the password credential provider
+The value to enter in the policy to hide the password credential provider is `{60b78e88-ead8-445c-9cfd-0b87f74ea6cd}`.
 
-You can use Group Policy to deploy an administrative template policy setting to the computer. This policy setting is found under **Computer Configuration > Policies > Administrative Templates > System > Logon**:
+### Require Windows Hello for Business or a smart card
 
-The name of the policy setting is **Exclude credential providers**. The value to enter in the policy to hide the password credential provider is `{60b78e88-ead8-445c-9cfd-0b87f74ea6cd}`.
+The *Require Windows Hello for Business or a smart card* policy setting can be used to require Windows Hello for Business or a smart card for interactive logon. When enabled, Windows prevents users from signing in or unlocking with a password. The password credential provider remains visible to the user. If a user tries to use a password, Windows informs the user they must use Windows Hello for Business or a smart card.
 
-Excluding the password credential provider hides the password credential provider from Windows and any application that attempts to load it. This configuration prevents the user from entering a password using the credential provider. However, this change doesn't prevent applications from creating their own password collection dialogs and prompting the user for a password using custom dialogs.
+- GPO: **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options** > **Interactive logon: Require Windows Hello for Business or smart card**
+- CSP: `./Device/Vendor/MSFT/Policy/Config/Security/InteractiveLogon/`[RequireWindowsHelloForBusinessOrSmartCard](/windows/client-management/mdm/policy-csp-security-interactivelogon#requirewindowshelloforbusinessorsmartcard)
 
-### Validate that none of the workflows needs passwords
+## Validate that none of the workflows needs passwords
 
 This stage is the significant moment. You have identified password usage, developed solutions to mitigate password usage, and have removed or disabled password usage from Windows. In this configuration, your users won't be able to use a password. Users will be blocked if any of their workflows ask them for a password. Ideally, your test users should be able to complete all the work flows of the targeted work persona without any password usage. Don't forget those low percentage work flows, such as provisioning a new user or a user that forgot their PIN or can't use their strong credential. Ensure those scenarios are validated as well.
 
