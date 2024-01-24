@@ -17,7 +17,7 @@ The following table lists the main authentication and security differences betwe
 
 ||Windows Hello for Business|Windows Hello|
 |-|-|-|
-|**Authentication**|Users can authenticate to:<br>- A Microsoft Entra ID account<br>- An Active Directory account<br>- Identity provider (IdP) services or relying party (RP) Services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication.|Users can authenticate to:<br>- A Microsoft account<br>- Identity provider (IdP) services or relying party (RP) services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication.|
+|**Authentication**|Users can authenticate to:<br>- A Microsoft Entra ID account<br>- An Active Directory account<br>- Identity provider (IdP) or relying party (RP) services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication.|Users can authenticate to:<br>- A Microsoft account<br>- Identity provider (IdP) or relying party (RP) services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication.|
 |**Security**|It uses **key-based** or **certificate-based** authentication. There's no symmetric secret (password) which can be stolen from a server or phished from a user and used remotely.<br>Enhanced security is available on devices with a Trusted Platform Module (TPM).|Users can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Windows Hello is unique to the device on which it's set up, but can use a password hash depending on the account type. This configuration is referred to as *Windows Hello convenience PIN*, and it's not backed by asymmetric (public/private key) or certificate-based authentication.|
 
 > [!NOTE]
