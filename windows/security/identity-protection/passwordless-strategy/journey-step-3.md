@@ -65,6 +65,13 @@ The users are effectively password-less because:
 - The user isn't asked to change their password
 - Domain controllers don't allow passwords for interactive authentication
 
+#### Prompt user to change password before expiration
+
+Determines how far in advance (in days) users are warned that their password is about to expire. When you set the policy setting to zero, there is no password expiration warning when the user logs on.
+
+- GPO: **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options** > **Interactive logon: Prompt user to change password before expiration**
+- CSP: `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/`[InteractiveLogon_PromptUserToChangePasswordBeforeExpiration](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#interactivelogon_promptusertochangepasswordbeforeexpiration)
+
 ### Password rotation
 
 ### Cloud-only users

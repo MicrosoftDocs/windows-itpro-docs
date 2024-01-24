@@ -88,10 +88,10 @@ The value to enter in the policy to hide the password credential provider is `{6
 
 ### Require Windows Hello for Business or a smart card
 
-The *Require Windows Hello for Business or a smart card* policy setting can be used to require Windows Hello for Business or a smart card for interactive logon. When enabled, Windows prevents users from signing in or unlocking with a password. The password credential provider remains visible to the user. If a user tries to use a password, Windows informs the user they must use Windows Hello for Business or a smart card.
+The *Require Windows Hello for Business or a smart card* policy setting can be used to require Windows Hello for Business or a smart card for interactive logon. When enabled, Windows prevents users from signing in or unlocking with a password. The password credential provider remains visible to the user. If a user tries to use a password, Windows informs the user they must use Windows Hello for Business or a smart card. Before enabling this policy, the user must be enrolled in Windows Hello for Business or have a smart card. Therefore, implementing this policy requires careful planning and coordination.
 
 - GPO: **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options** > **Interactive logon: Require Windows Hello for Business or smart card**
-- CSP: `./Device/Vendor/MSFT/Policy/Config/Security/InteractiveLogon/`[RequireWindowsHelloForBusinessOrSmartCard](/windows/client-management/mdm/policy-csp-security-interactivelogon#requirewindowshelloforbusinessorsmartcard)
+- CSP: not available
 
 ## Validate that none of the workflows needs passwords
 
