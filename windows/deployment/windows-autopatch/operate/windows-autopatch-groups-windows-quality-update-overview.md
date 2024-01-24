@@ -1,7 +1,7 @@
 ---
 title: Windows quality updates overview with Autopatch groups experience
 description: This article explains how Windows quality updates are managed with Autopatch groups
-ms.date: 08/23/2023
+ms.date: 01/22/2024
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -34,10 +34,81 @@ For devices in the [Default Autopatch group](../deploy/windows-autopatch-groups-
 
 ## Service level objective
 
-Windows Autopatch aims to keep at least 95% of eligible devices on the latest Windows quality update 21 days after release. Devices that have cadence type set to Schedule install aren't eligible for Windows quality update SLO. For more information about the Schedule Install cadence type, see [Deployment cadence types](../operate/windows-autopatch-groups-windows-update.md#deployment-cadence).
+Windows Autopatch aims to keep at least 95% of [Up to Date devices](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#up-to-date-devices) on the latest quality update. Autopatch uses the previously defined release schedule on a per ring basis with a five-day reporting period to calculate and evaluate the service level objective (SLO). The result of the service level objective is the column “% with the latest quality update” displayed in release management and reporting.
+
+### Service level objective calculation
+
+There are two states a device can be in when calculating the service level objective (SLO):
+
+- Devices that are active during the release
+- Devices that become active after the release
+
+The service level objective for each of these states is calculated as:
+
+| State | Calculation |
+| ----- | ----- |
+| Device that is active during release | This service level objective calculation assumes the device has typical activity during the scheduled release period. Calculated by:<p>`Deferral + Deadline + Reporting Period = service level objective`</p> |
+| Device that becomes active after release | This service level objective calculation refers to offline devices during the scheduled release period but come back online later. Calculated by:<p>`Grace Period + Reporting period = service level objective`</p> |
+
+| Timeframe | Value defined in |
+| ----- | ----- |
+| Deferral | Targeted deployment ring |
+| Deadline | Targeted deployment ring |
+| Grace period | Targeted deployment ring |
+| Reporting period | Five days. Value defined by Windows Autopatch. |
+
+> [!NOTE]
+> Targeted deployment ring refers to the deployment ring value of the device in question. If a device has a five day deferral with a two day deadline, and two day grace period, the SLO for the device would be calculated to `5 + 2 + 5 = 12`-day service level objective from the second Tuesday of the month. The five day reporting period is one established by Windows Autopatch to allow enough time for device check-in reporting and data evaluation within the service.
 
 > [!IMPORTANT]
 > Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
+
+## Import Update rings for Windows 10 and later (public preview)
+
+> [!IMPORTANT]
+> This feature is in **public preview**. It's being actively developed, and might not be complete.
+
+You can import your organization’s existing Intune Update rings for Windows 10 and later into Windows Autopatch. Importing your organization’s Update rings provides the benefits of the Windows Autopatch's reporting and device readiness without the need to redeploy, or change your organization’s existing update rings.  
+
+Imported rings automatically register all targeted devices into Windows Autopatch. For more information about device registration, see the [device registration workflow diagram](../deploy/windows-autopatch-device-registration-overview.md#detailed-device-registration-workflow-diagram).
+
+> [!NOTE]
+> Devices which are registered as part of an imported ring, might take up to 72 hours after the devices have received the latest version of the policy, to be reflected in Windows Autopatch devices blade and reporting. For more information about reporting, see [Windows quality and feature update reports overview](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md).
+
+> [!NOTE]
+> Device registration failures don't affect your existing update schedule or targeting. However, devices that fail to register might affect Windows Autopatch’s ability to provide reporting and insights. Any conflicts should be resolved as needed. For additional assistance, [submit a support request](../operate/windows-autopatch-support-request.md).
+
+### Import Update rings for Windows 10 and later
+
+**To import Update rings for Windows 10 and later:**
+
+1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).  
+2. Select **Devices** from the left navigation menu.  
+3. Under the **Windows Autopatch** section, select **Release management**.  
+4. In the **Release management** blade, go to the **Release schedule** tab and select **Windows quality updates**.  
+5. Select **Import Update rings for Windows 10 and later**.  
+6. Select the existing rings you would like to import.  
+7. Select **Import**.
+
+### Remove an imported Update ring for Windows 10 and later
+
+**To remove an Imported Update rings for Windows 10 and later:**
+
+1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).  
+2. Select **Devices** from the left navigation menu.  
+3. Under the **Windows Autopatch** section, select **Release management**.  
+4. In the **Release management** blade, go to the **Release schedule** tab and select **Windows quality updates**.  
+5. Select the Update rings for Windows 10 and later you would like to remove.  
+6. Select the **horizontal ellipses (...)** and select **Remove**.
+
+### Known limitations
+
+The following Windows Autopatch features aren't available with imported Intune Update rings:  
+
+- Autopatch groups and features dependent on Autopatch groups  
+- Moving devices in between deployment rings in devices
+- Automated deployment ring remediation functions  
+- Policy health and remediation
 
 ## Release management
 
@@ -54,14 +125,14 @@ In the Release management blade, you can:
 
 For each [deployment ring](windows-autopatch-update-management.md#windows-autopatch-deployment-rings), the **Release schedule** tab contains:
 
-- The status of the update. Releases appear as **Active**. The update schedule is based on the values of the [Windows 10 Update Ring policies](/mem/intune/protect/windows-update-for-business-configure), which have been configured on your behalf.
+- The status of the update. Releases appear as **Active**. The update schedule is based on the values of the [Windows 10 Update Ring policies](/mem/intune/protect/windows-update-for-business-configure), which are configured on your behalf.
 - The date the update is available.
 - The target completion date of the update.
 - In the **Release schedule** tab, you can either [**Pause** and/or **Resume**](#pause-and-resume-a-release) a Windows quality update release.
 
 ### Expedited releases
 
-Threat and vulnerability information about a new revision of Windows becomes available on the second Tuesday of each month. Windows Autopatch assesses that information shortly afterwards. If the service determines that it's critical to security, it may be expedited. The quality update is also evaluated on an ongoing basis throughout the release and Windows Autopatch may choose to expedite at any time during the release.
+Threat and vulnerability information about a new revision of Windows becomes available on the second Tuesday of each month. Windows Autopatch assesses that information shortly afterwards. If the service determines that it's critical to security, it might be expedited. The quality update is also evaluated on an ongoing basis throughout the release and Windows Autopatch might choose to expedite at any time during the release.
 
 When expediting a release, the regular goal of 95% of devices in 21 days no longer applies. Instead, Windows Autopatch greatly accelerates the release schedule of the release to update the environment more quickly. This approach requires an updated schedule for all devices outside of the Test ring since those devices are already getting the update quickly.
 
@@ -104,7 +175,7 @@ For the deployment rings that have passed quality updates deferral date, the OOB
 
 The service-level pause is driven by the various software update deployment-related signals Windows Autopatch receives from Windows Update for Business, and several other product groups within Microsoft.
 
-If Windows Autopatch detects a [significant issue with a release](../operate/windows-autopatch-groups-windows-quality-update-signals.md), we may decide to pause that release.
+If Windows Autopatch detects a [significant issue with a release](../operate/windows-autopatch-groups-windows-quality-update-signals.md), we might decide to pause that release.
 
 > [!IMPORTANT]
 > Pausing or resuming an update can take up to eight hours to be applied to devices. Windows Autopatch uses Microsoft Intune as its device management solution and that's the average frequency Windows devices take to communicate back to Microsoft Intune with new instructions to pause, resume or rollback updates.<p>For more information, see [how long does it take for devices to get a policy, profile, or app after they are assigned from Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).</p>
@@ -125,8 +196,8 @@ The three following statuses are associated with paused quality updates:
 
 | Status | Description |
 | ----- | ------ |
-| Paused by Service | If the Windows Autopatch service has paused an update, the release has the **Paused by Service** status. The Paused by Service only applies to rings that aren't Paused by the Tenant. |
-| Paused by Tenant | If you've paused an update, the release has the **Paused by Tenant** status. The Windows Autopatch service can't overwrite a tenant pause. You must select **Resume** to resume the update. |
+| Paused by Service | If the Windows Autopatch service paused an update, the release has the **Paused by Service** status. The **Paused by Service** status only applies to rings that aren't Paused by the Tenant. |
+| Paused by Tenant | If you paused an update, the release has the **Paused by Tenant** status. The Windows Autopatch service can't overwrite a tenant pause. You must select **Resume** to resume the update. |
 
 ## Remediating Not ready and/or Not up to Date devices
 

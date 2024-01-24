@@ -1,7 +1,7 @@
 ---
 title: Set up Microsoft Entra ID
 description: Learn how to create and prepare your Microsoft Entra tenant for an education environment.
-ms.date: 11/09/2023
+ms.date: 01/16/2024
 ms.topic: tutorial
 appliesto:
 ---
@@ -12,12 +12,13 @@ The Microsoft platform for education simplifies the management of Windows device
 
 Microsoft Entra ID, which is included with the Microsoft 365 Education subscription, provides authentication and authorization to any Microsoft cloud services. Identity objects are defined in Microsoft Entra ID for human identities, like students and teachers, as well as non-human identities, like devices, services, and applications. Once users get Microsoft 365 licenses assigned, they'll be able to consume services and access resources within the tenant. With Microsoft 365 Education, you can manage identities for your teachers and students, assign licenses to devices and users, and create groups for the classrooms.
 
-In this section you will:
 > [!div class="checklist"]
-> * Set up a Microsoft 365 Education tenant
-> * Add users, create groups, and assign licenses
-> * Configure school branding
-> * Enable bulk enrollment
+>In this section you will:
+>
+> - Set up a Microsoft 365 Education tenant
+> - Add users, create groups, and assign licenses
+> - Configure school branding
+> - Enable bulk enrollment
 
 ## Create a Microsoft 365 tenant
 
@@ -45,7 +46,7 @@ For more information, see [Overview of the Microsoft 365 admin center][M365-2].
 With the Microsoft 365 tenant in place, it's time to add users, create groups, and assign licenses. All students and teachers need a user account before they can sign in and access the different Microsoft 365 services. There are multiple ways to do this, including using School Data Sync (SDS), synchronizing an on-premises Active Directory, manually, or a combination of the above.
 
 > [!NOTE]
-> Synchronizing your Student Information System (SIS) with School Data Sync is the preferred way to create students and teachers as users in a Microsoft 365 Education tenant. However, if you want to integrate an on-premises directory and synchronize accounts to the cloud, skip to [<u>Azure Active Directory Sync</u>](#azure-active-directory-sync) below.
+> Synchronizing your Student Information System (SIS) with School Data Sync is the preferred way to create students and teachers as users in a Microsoft 365 Education tenant. However, if you want to integrate an on-premises directory and synchronize accounts to the cloud, skip to [Microsoft Entra Connect Sync](#microsoft-entra-connect-sync) below.
 
 ### School Data Sync
 
@@ -61,7 +62,7 @@ For more information, see [Overview of School Data Sync][SDS-1].
 >
 > Remember that you should typically deploy test SDS data (users, groups, and so on) in a separate test tenant, not your school production environment.
 
-### Azure Active Directory Sync
+### Microsoft Entra Connect Sync
 
 To integrate an on-premises directory with Microsoft Entra ID, you can use **Microsoft Entra Connect** to synchronize users, groups, and other objects. Microsoft Entra Connect lets you configure the authentication method appropriate for your school, including:
 

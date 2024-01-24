@@ -4,7 +4,6 @@ description: Best practices, location, values, policy management, and security c
 ms.assetid: 84bbb807-287c-4acc-a094-cf0ffdcbca67
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Deny log on through Remote Desktop Services

@@ -1,16 +1,16 @@
 ---
-title: How Windows Defender System Guard helps protect Windows
-description: Learn how Windows Defender System Guard reorganizes the existing Windows system integrity features under one roof.
+title: How System Guard helps protect Windows
+description: Learn how System Guard reorganizes the existing Windows system integrity features under one roof.
 ms.localizationpriority: medium
-ms.date: 10/25/2023
+ms.date: 01/16/2024
 ms.topic: conceptual
 ---
 
-# Windows Defender System Guard: How a hardware-based root of trust helps protect Windows
+# System Guard: How a hardware-based root of trust helps protect Windows
 
 To protect critical resources such as the Windows authentication stack, single sign-on tokens, the Windows Hello biometric stack, and the Virtual Trusted Platform Module, a system's firmware and hardware must be trustworthy.
 
-Windows Defender System Guard reorganizes the existing Windows system integrity features under one roof and sets up the next set of investments in Windows security. It's designed to make these security guarantees:
+System Guard reorganizes the existing Windows system integrity features under one roof and sets up the next set of investments in Windows security. It's designed to make these security guarantees:
 
 - Protect and maintain the integrity of the system as it starts up
 - Validate that system integrity has truly been maintained through local and remote attestation
@@ -33,7 +33,7 @@ Also, a bug fix for UEFI code can take a long time to design, build, retest, val
 
 ### Secure Launch—the Dynamic Root of Trust for Measurement (DRTM)
 
-[Windows Defender System Guard Secure Launch](system-guard-secure-launch-and-smm-protection.md), first introduced in Windows 10 version 1809, aims to alleviate these issues by leveraging a technology known as the Dynamic Root of Trust for Measurement (DRTM). DRTM lets the system freely boot into untrusted code initially, but shortly after launches the system into a trusted state by taking control of all CPUs and forcing them down a well-known and measured code path. This has the benefit of allowing untrusted early UEFI code to boot the system, but then being able to securely transition into a trusted and measured state.
+[System Guard Secure Launch](system-guard-secure-launch-and-smm-protection.md), first introduced in Windows 10 version 1809, aims to alleviate these issues by leveraging a technology known as the Dynamic Root of Trust for Measurement (DRTM). DRTM lets the system freely boot into untrusted code initially, but shortly after launches the system into a trusted state by taking control of all CPUs and forcing them down a well-known and measured code path. This has the benefit of allowing untrusted early UEFI code to boot the system, but then being able to securely transition into a trusted and measured state.
 
 ![System Guard Secure Launch.](images/system-guard-secure-launch.png)
 
@@ -56,15 +56,15 @@ SMM protection is built on top of the Secure Launch technology and requires it t
 
 ## Validating platform integrity after Windows is running (run time)
 
-While Windows Defender System Guard provides advanced protection that will help protect and maintain the integrity of the platform during boot and at run time, the reality is that we must apply an "assume breach" mentality to even our most sophisticated security technologies. We can trust that the technologies are successfully doing their jobs, but we also need the ability to verify that they were successful in achieving their goals. For platform integrity, we can't just trust the platform, which potentially could be compromised, to self-attest to its security state. So Windows Defender System Guard includes a series of technologies that enable remote analysis of the device's integrity.
+While System Guard provides advanced protection that will help protect and maintain the integrity of the platform during boot and at run time, the reality is that we must apply an "assume breach" mentality to even our most sophisticated security technologies. We can trust that the technologies are successfully doing their jobs, but we also need the ability to verify that they were successful in achieving their goals. For platform integrity, we can't just trust the platform, which potentially could be compromised, to self-attest to its security state. So System Guard includes a series of technologies that enable remote analysis of the device's integrity.
 
-As Windows boots, a series of integrity measurements are taken by Windows Defender System Guard using the device's Trusted Platform Module 2.0 (TPM 2.0). System Guard Secure Launch doesn't support earlier TPM versions, such as TPM 1.2. This process and data are hardware-isolated away from Windows to help ensure that the measurement data isn't subject to the type of tampering that could happen if the platform was compromised. From here, the measurements can be used to determine the integrity of the device's firmware, hardware configuration state, and Windows boot-related components, to name a few.
+As Windows boots, a series of integrity measurements are taken by System Guard using the device's Trusted Platform Module 2.0 (TPM 2.0). System Guard Secure Launch doesn't support earlier TPM versions, such as TPM 1.2. This process and data are hardware-isolated away from Windows to help ensure that the measurement data isn't subject to the type of tampering that could happen if the platform was compromised. From here, the measurements can be used to determine the integrity of the device's firmware, hardware configuration state, and Windows boot-related components, to name a few.
 
-![Boot time integrity.](images/windows-defender-system-guard-boot-time-integrity.png)
+![Boot time integrity.](images/system-guard-boot-time-integrity.png)
 
-After the system boots, Windows Defender System Guard signs and seals these measurements using the TPM. Upon request, a management system like Intune or Microsoft Configuration Manager can acquire them for remote analysis. If Windows Defender System Guard indicates that the device lacks integrity, the management system can take a series of actions, such as denying the device access to resources.
+After the system boots, System Guard signs and seals these measurements using the TPM. Upon request, a management system like Intune or Microsoft Configuration Manager can acquire them for remote analysis. If System Guard indicates that the device lacks integrity, the management system can take a series of actions, such as denying the device access to resources.
 
-[!INCLUDE [windows-defender-system-guard](../../../includes/licensing/windows-defender-system-guard.md)]
+[!INCLUDE [system-guard](../../../includes/licensing/system-guard.md)]
 
 ## System requirements for System Guard
 
@@ -78,7 +78,7 @@ This feature is available for the following processors:
 
 |Name|Description|
 |--------|-----------|
-|64-bit CPU|A 64-bit computer with minimum four cores (logical processors) is required for hypervisor and virtualization-based security (VBS). For more information about Hyper-V, see [Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) or [Introduction to Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/about/). For more information about hypervisor, see [Hypervisor Specifications](/virtualization/hyper-v-on-windows/reference/tlfs).|
+|64-bit CPU|A 64-bit computer with minimum four cores (logical processors) is required for hypervisor and Virtualization-based security (VBS). For more information about Hyper-V, see [Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) or [Introduction to Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/about/). For more information about hypervisor, see [Hypervisor Specifications](/virtualization/hyper-v-on-windows/reference/tlfs).|
 |Trusted Platform Module (TPM) 2.0|Platforms must support a discrete TPM 2.0. Integrated/firmware TPMs aren't supported, except Intel chips that support Platform Trust Technology (PTT), which is a type of integrated hardware TPM that meets the TPM 2.0 spec.|
 |Windows DMA Protection|Platforms must meet the Windows DMA Protection Specification (all external DMA ports must be off by default until the OS explicitly powers them).|
 |SMM communication buffers| All SMM communication buffers must be implemented in EfiRuntimeServicesData, EfiRuntimeServicesCode, EfiACPIMemoryNVS, or EfiReservedMemoryType memory types. |
@@ -94,7 +94,7 @@ This feature is available for the following processors:
 
 |Name|Description|
 |--------|-----------|
-|64-bit CPU|A 64-bit computer with minimum four cores (logical processors) is required for hypervisor and virtualization-based security (VBS). For more information about Hyper-V, see [Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) or [Introduction to Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/about/). For more information about hypervisor, see [Hypervisor Specifications](/virtualization/hyper-v-on-windows/reference/tlfs).|
+|64-bit CPU|A 64-bit computer with minimum four cores (logical processors) is required for hypervisor and Virtualization-based security (VBS). For more information about Hyper-V, see [Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) or [Introduction to Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/about/). For more information about hypervisor, see [Hypervisor Specifications](/virtualization/hyper-v-on-windows/reference/tlfs).|
 |Trusted Platform Module (TPM) 2.0|Platforms must support a discrete TPM 2.0 OR Microsoft Pluton TPM.|
 |Windows DMA Protection|Platforms must meet the Windows DMA Protection Specification (all external DMA ports must be off by default until the OS explicitly powers them).|
 |SMM communication buffers| All SMM communication buffers must be implemented in EfiRuntimeServicesData, EfiRuntimeServicesCode, EfiACPIMemoryNVS, or EfiReservedMemoryType memory types. |

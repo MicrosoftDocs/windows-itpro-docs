@@ -4,7 +4,6 @@ description: Advanced security audit policy settings might appear to overlap wit
 ms.assetid: 6FE8AC10-F48E-4BBF-979B-43A5DFDC5DFC
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 09/6/2021
-ms.technology: itpro-security
 ---
 
 # Advanced security audit policies

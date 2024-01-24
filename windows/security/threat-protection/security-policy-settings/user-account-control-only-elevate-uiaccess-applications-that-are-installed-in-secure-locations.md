@@ -4,7 +4,6 @@ description: Learn about best practices and more for the policy setting, User Ac
 ms.assetid: 4333409e-a5be-4f2f-8808-618f53abd22c
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # User Account Control: Only elevate UIAccess applications that are installed in secure locations

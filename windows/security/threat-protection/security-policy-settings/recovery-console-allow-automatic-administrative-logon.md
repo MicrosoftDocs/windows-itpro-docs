@@ -4,7 +4,6 @@ description: Best practices, location, values, policy management, and security c
 ms.assetid: be2498fc-48f4-43f3-ad09-74664e45e596
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Recovery console: Allow automatic administrative logon

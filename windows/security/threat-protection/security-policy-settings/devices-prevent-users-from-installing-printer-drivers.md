@@ -4,7 +4,6 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: ab70a122-f7f9-47e0-ad8c-541f30a27ec3
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 01/05/2022
-ms.technology: itpro-security
 ---
 
 # Devices: Prevent users from installing printer drivers

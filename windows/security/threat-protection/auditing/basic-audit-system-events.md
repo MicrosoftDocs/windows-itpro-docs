@@ -4,7 +4,6 @@ description: Determines whether to audit when a user restarts or shuts down the 
 ms.assetid: BF27588C-2AA7-4365-A4BF-3BB377916447
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 09/06/2021
-ms.technology: itpro-security
 ---
 
 # Audit system events
