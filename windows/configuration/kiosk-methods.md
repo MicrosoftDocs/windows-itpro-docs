@@ -32,7 +32,7 @@ Some desktop devices in an enterprise serve a special purpose. For example, a PC
 
 - **A multi-app kiosk**: Runs one or more apps from the desktop. People using the kiosk see a customized Start that shows only the tiles for the apps that are allowed. With this approach, you can configure a locked-down experience for different account types. 
 
-  A multi-app kiosk is appropriate for devices that are shared by multiple people. When you configure a multi-app kiosk, [specific policies are enforced](kiosk-policies.md) that will affect **all** non-administrator users on the device. 
+  A multi-app kiosk is appropriate for devices that are shared by multiple people. When you configure a multi-app kiosk, [specific policies are enforced](kiosk-policies.md) that affects **all** non-administrator users on the device. 
 
   ![Illustration of a kiosk Start screen that runs multiple apps on a Windows client device.](images/kiosk-desktop.png)
 
