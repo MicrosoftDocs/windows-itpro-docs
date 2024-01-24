@@ -9,9 +9,9 @@ ms.date: 01/03/2024
 
 ## Overview
 
-*Windows Hello* is a secure and convenient authentication technology that allows users to sign in to their Windows devices using biometric data (for example, face recognition or fingerprint), or a PIN instead of a traditional password. It provides enhanced security through phish-resistant two-factor authentication, and built-in brute force protection. With FIDO/WebAuthn, Windows Hello can also be used to log in to supported websites, reducing the need to remember multiple complex passwords.
+*Windows Hello* is a secure and convenient authentication technology that allows users to sign in to their Windows devices using biometric data (for example, face recognition or fingerprint), or a PIN instead of a traditional password. It provides enhanced security through phish-resistant two-factor authentication, and built-in brute force protection. With FIDO/WebAuthn, Windows Hello can also be used to sign in to supported websites, reducing the need to remember multiple complex passwords.
 
-*Windows Hello for Business* is an **extension** of Windows Hello that provides enterprise-grade security and management capabilities, including device attestation, certificate-based authentication, and conditional access policies. Policy settings can be deployed to devices to ensure they are secure and compliant with organizational requirements.
+*Windows Hello for Business* is an **extension** of Windows Hello that provides enterprise-grade security and management capabilities, including device attestation, certificate-based authentication, and conditional access policies. Policy settings can be deployed to devices to ensure they're secure and compliant with organizational requirements.
 
 The following table lists the main authentication and security differences between Windows Hello and Windows Hello for business:
 
@@ -27,10 +27,10 @@ The following table lists the main authentication and security differences betwe
 
 Windows Hello for Business provides many benefits, including:
 
-- It helps to strengthen your protections against credential theft. An attacker must have both the device and the biometric or PIN, making it much more difficult to gain access without the user's knowledge
+- It helps to strengthen protections against credential theft. An attacker must have both the device and the biometric or PIN, making it much more difficult to gain access without the user's knowledge
 - Since no passwords are used, it circumvents phishing and brute force attacks. Most importantly, it prevents server breaches and replay attacks because the credentials are asymmetric and generated within isolated environments of TPMs
 - Users get a simple and convenient authentication method (backed up with a PIN) that's always with them, so there's nothing to lose. The use of a PIN doesn't compromise security, since Windows Hello has built-in brute force protection, and the PIN never leaves the device
-- Support for Windows Hello is built into the operating system, so you can add biometric devices as part of a coordinated rollout or to individual employees as needed
+- You can add biometric devices as part of a coordinated rollout or to specific users, as needed
 
 The following video shows a demonstration of Windows Hello for Business in action, where a user signs in with a fingerprint:
 
@@ -62,8 +62,8 @@ Windows stores biometric data that is used to implement Windows Hello securely o
 
 Microsoft collaborates with manufacturers to help ensuring a high-level of performance and protection is met by each sensor and device, based on the following requirements:
 
-- **False Accept Rate (FAR):** represents the instance a biometric identification solution verifies an unauthorized person. This is normally represented as a ratio of number of instances in a given population size, for example 1 in 100,000. This can also be represented as a percentage of occurrence, for example, 0.001%. This measurement is heavily considered the most important with regard to the security of the biometric algorithm
-- **False Reject Rate (FRR):** represents the instances a biometric identification solution fails to verify an authorized person correctly. Usually represented as a percentage, the sum of the True Accept Rate and False Reject Rate is 1. Can be with or without anti-spoofing or liveness detection
+- **False Accept Rate (FAR):** represents the instance a biometric identification solution verifies an unauthorized person. This is normally represented as a ratio of number of instances in a given population size, for example 1 in 100,000. This can also be represented as a percentage of occurrence, for example, 0.001%. This measurement is heavily considered the most important regarding the security of the biometric algorithm
+- **False Reject Rate (FRR):** represents the instances a biometric identification solution fails to verify an authorized person correctly. Represented as a percentage, the sum of the True Accept Rate and False Reject Rate is 1. Can be with or without anti-spoofing or liveness detection
 
 ### Fingerprint sensor requirements
 
@@ -92,7 +92,7 @@ To allow facial recognition, you must have devices with integrated special infra
 
 ### Iris recognition sensor requirements
 
-To use Iris authentication, you'll need a [HoloLens 2 device](/hololens/). All HoloLens 2 editions are equipped with the same sensors. Iris is implemented the same way as other Windows Hello technologies and achieves biometrics security FAR of 1/100K.
+To use Iris authentication, you need a [HoloLens 2 device](/hololens/). All HoloLens 2 editions are equipped with the same sensors. Iris is implemented the same way as other Windows Hello technologies and achieves biometrics security FAR of 1/100K.
 
 For more information about the hardware requirements for Windows Hello, see [Windows Hello biometric requirements](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements).
 
