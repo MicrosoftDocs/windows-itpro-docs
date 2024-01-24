@@ -9,7 +9,7 @@ ms.date: 01/03/2024
 
 ## Overview
 
-*Windows Hello* is a secure and convenient authentication technology that allows users to sign in to their Windows devices using biometric data (for example, face recognition or fingerprint), or a PIN instead of a traditional password. It provides enhanced security through phish-resistant two-factor authentication, and built-in brute force protection. With FIDO/WebAuthn, Windows Hello can also be used to sign in to supported websites, reducing the need to remember multiple complex passwords.
+*Windows Hello* is an authentication technology that allows users to sign in to their Windows devices using biometric data, or a PIN, instead of a traditional password. It provides enhanced security through phish-resistant two-factor authentication, and built-in brute force protection. With FIDO/WebAuthn, Windows Hello can also be used to sign in to supported websites, reducing the need to remember multiple complex passwords.
 
 *Windows Hello for Business* is an **extension** of Windows Hello that provides enterprise-grade security and management capabilities, including device attestation, certificate-based authentication, and conditional access policies. Policy settings can be deployed to devices to ensure they're secure and compliant with organizational requirements.
 
