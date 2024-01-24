@@ -68,9 +68,9 @@ Copilot is a consumer experience and has a daily limit on the number of chat que
 
 ### Microsoft Copilot with Graph-grounded chat
 <!---8639813-->
-Copilot with Graph-grounded chat enables you to use your work content and context in Copilot for Windows. With Graph-grounded chat, you can draft content and get answers to questions, all securely grounded in your Microsoft 365 work data such as user documents, emails, calendar, chats, meetings, and contacts. When you use the **Work** toggle in Copilot in Windows to query Graph-grounded chat, the following high-level privacy and security protections apply:
+Copilot with Graph-grounded chat enables you to use your work content and context in Copilot for Windows. With Graph-grounded chat, you can draft content and get answers to questions, all securely grounded in your Microsoft Graph data such as user documents, emails, calendar, chats, meetings, and contacts. When you use the **Work** toggle in Copilot in Windows to query Graph-grounded chat, the following high-level privacy and security protections apply:
 
-- Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs.
+- Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundational LLMs.
 - It only surfaces organizational data to which individual users have at least view permissions.
 - The information contained within your prompts, the data retrieved, and the generated responses remain within your tenant's service boundary. For more information about privacy and security for Graph-grounded chat, see [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-privacy)
 - Copilot with Graph-grounded chat is part of Copilot for Microsoft 365, an add-on plan. For more information about license requirements, see [Microsoft Copilot for Microsoft 365 license requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements#license-requirements).
@@ -136,7 +136,9 @@ When Copilot with commercial data protection is the chat provider platform, the 
 ### Copilot with Graph-grounded chat as the chat provider platform 
 <!---8639813-->
 
-:::image type="content" source="images/cwork-toggle-graph-grounded-chat.png" alt-text="Screenshot of the Copilot in Windows user experience when the work toggle is selected and the chart provider is Copilot with Graph-grounded chat." lightbox="images/work-toggle-graph-grounded-chat.png":::
+When users are assigned [Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-setup) licenses, they're automatically presented with a **Work** toggle in Copilot for Windows. When **Work** is selected, Copilot with Graph-grounded chat is the chat provider platform used by Copilot in Windows. When using Graph-grounded chat, user prompts can securely access Microsoft Graph content, such as emails, chats, and documents.  
+
+:::image type="content" source="images/work-toggle-graph-grounded-chat.png" alt-text="Screenshot of the Copilot in Windows user experience when the work toggle is selected and the chart provider is Copilot with Graph-grounded chat." lightbox="images/work-toggle-graph-grounded-chat.png":::
 
 ## Ensure the Copilot in Windows user experience is enabled
 
