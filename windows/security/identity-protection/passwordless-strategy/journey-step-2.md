@@ -73,7 +73,7 @@ Windows offers three main options to reduce or eliminate the password surface ar
 
 *Windows Passwordless experience* is a security policy that hides the password credential provider for user accounts that sign in with Windows Hello or a FIDO2 security key. This is the recommended option, but it's only available on Microsoft Entra joined devices. The following image shows the Windows lock screen when Windows passwordless experience is enabled. A user enrolled in Windows Hello for Business doesn't have the option to use a password to sign in:
 
-    :::image type="content" source="images/passwordless-experience.png" alt-text="Screenshot of the Windows lock screen with passwordless experience enabled." border="false":::
+:::image type="content" source="images/passwordless-experience.png" alt-text="Screenshot of the Windows lock screen with passwordless experience enabled." border="false":::
 
 To learn more, see [Windows passwordless experience](../passwordless-experience/index.md)
 
