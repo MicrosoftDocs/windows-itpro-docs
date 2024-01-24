@@ -3,7 +3,7 @@ title: Manage Copilot in Windows
 description: Learn how to manage Copilot in Windows for commercial environments using MDM and group policy. Learn about the chat providers available to Copilot in Windows.
 ms.topic: conceptual
 ms.subservice: windows-copilot
-ms.date: 01/22/2024
+ms.date: 01/31/2024
 ms.author: mstewart
 author: mestew
 appliesto:
@@ -73,7 +73,7 @@ Copilot with Graph-grounded chat enables you to use your work content and contex
 - Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs.
 - It only surfaces organizational data to which individual users have at least view permissions.
 - The information contained within your prompts, the data retrieved, and the generated responses remain within your tenant's service boundary. For more information about privacy and security for Graph-grounded chat, see [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-privacy)
-- Copilot with Graph-grounded chat is part of Copilot for Microsoft 365, an add-on plan. For more information about license requirements, see [Microsoft Copilot for Microsoft 365 license requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements#license-requirements)
+- Copilot with Graph-grounded chat is part of Copilot for Microsoft 365, an add-on plan. For more information about license requirements, see [Microsoft Copilot for Microsoft 365 license requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements#license-requirements).
 
 ## Configure the chat provider platform that Copilot in Windows uses
 
@@ -130,7 +130,7 @@ $users | Where-Object { -not $_.AssignedPlans -or ($_.AssignedPlans.Service -eq 
 
 When Copilot with commercial data protection is the chat provider platform, the user experience clearly states that **Your personal and company data are protected in this chat**. There's also a shield symbol labeled **Protected** at the top of the Copilot in Windows sidebar and the provider is listed under the Copilot logo when the sidebar is first opened. The following image shows the message that's displayed in this scenario:
 
-:::image type="content" source="images/bing-chat-enterprise-chat-provider.png" alt-text="Screenshot of the Copilot in Windows user experience when Copilot with commercial data protection is the chat provider." lightbox="images/bing-chat-enterprise-chat-provider.png":::
+:::image type="content" source="images/copilot-commercial-data-protection-chat-provider-8639813.png" alt-text="Screenshot of the Copilot in Windows user experience when Copilot with commercial data protection is the chat provider." lightbox="images/copilot-commercial-data-protection-chat-provider-8639813.png":::
 
 ## Ensure the Copilot in Windows user experience is enabled
 
