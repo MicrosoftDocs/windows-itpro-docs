@@ -67,7 +67,7 @@ Copilot is a consumer experience and has a daily limit on the number of chat que
   > Copilot with commercial data protection doesn't have access to Microsoft 365 Apps data, such as email, calendar, or files using Microsoft Graph, unlike [Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-overview) which can be used in the Microsoft 365 apps.
 
 ### Microsoft Copilot with Graph-grounded chat
-
+<!---8639813-->
 Copilot with Graph-grounded chat enables you to use your work content and context in Copilot for Windows. With Graph-grounded chat, you can draft content and get answers to questions, all securely grounded in your Microsoft 365 work data such as user documents, emails, calendar, chats, meetings, and contacts. When you use the **Work** toggle in Copilot in Windows to query Graph-grounded chat, the following high-level privacy and security protections apply:
 
 - Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs.
@@ -130,7 +130,7 @@ $users | Where-Object { -not $_.AssignedPlans -or ($_.AssignedPlans.Service -eq 
 
 When Copilot with commercial data protection is the chat provider platform, the user experience clearly states that **Your personal and company data are protected in this chat**. There's also a shield symbol labeled **Protected** at the top of the Copilot in Windows sidebar and the provider is listed under the Copilot logo when the sidebar is first opened. The following image shows the message that's displayed in this scenario:
 
-:::image type="content" source="images/copilot-commercial-data-protection-chat-provider-8639813.png" alt-text="Screenshot of the Copilot in Windows user experience when Copilot with commercial data protection is the chat provider." lightbox="images/copilot-commercial-data-protection-chat-provider-8639813.png":::
+:::image type="content" source="images/copilot-commercial-data-protection-chat-provider.png" alt-text="Screenshot of the Copilot in Windows user experience when Copilot with commercial data protection is the chat provider." lightbox="images/copilot-commercial-data-protection-chat-provider.png":::
 
 ## Ensure the Copilot in Windows user experience is enabled
 
