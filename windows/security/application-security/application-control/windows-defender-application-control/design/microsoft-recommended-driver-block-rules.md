@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 ms.collection:
 - tier3
 - must-keep
-ms.date: 06/06/2023
+ms.date: 01/24/2024
 ms.topic: article
 ---
 
@@ -20,7 +20,7 @@ Microsoft has strict requirements for code running in kernel. So, malicious acto
 - Malicious behaviors (malware) or certificates used to sign malware
 - Behaviors that aren't malicious but circumvent the Windows Security Model and can be exploited by attackers to elevate privileges in the Windows kernel
 
-Drivers can be submitted to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission). For more information about driver submission, see [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/). To report an issue or request a change to the vulnerable driver blocklist, including updating a block rule once a driver vulnerability has been patched, visit the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi) or submit feedback on this article.
+Drivers can be submitted to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission). For more information about driver submission, see [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/). To report an issue or request a change to the blocklist, including updating a block rule once a driver has been fixed, visit the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi) or submit feedback on this article.
 
 > [!NOTE]
 > Blocking drivers can cause devices or software to malfunction, and in rare cases, lead to blue screen. The vulnerable driver blocklist is not guaranteed to block every driver found to have vulnerabilities. Microsoft attempts to balance the security risks from vulnerable drivers with the potential impact on compatibility and reliability to produce the blocklist. As always, Microsoft recommends using an explicit allow list approach to security wherever possible.
@@ -39,7 +39,7 @@ With Windows 11 2022 update, the vulnerable driver blocklist  is enabled by defa
 
 The blocklist is updated with each new major release of Windows, typically 1-2 times per year, including most recently with the Windows 11 2022 update released in September 2022. The most current blocklist is now also available for Windows 10 20H2 and Windows 11 21H2 users as an optional update from Windows Update. Microsoft will occasionally publish future updates through regular Windows servicing.
 
-Customers who always want the most up-to-date driver blocklist can also use Windows Defender Application Control (WDAC) to apply the latest recommended driver blocklist contained in this article. For your convenience, we've provided a download of the most up-to-date vulnerable driver blocklist along with instructions to apply it on your computer at the end of this article. Otherwise, you can use the XML provided below to create your own custom WDAC policies.
+Customers who always want the most up-to-date driver blocklist can also use Windows Defender Application Control (WDAC) to apply the latest recommended driver blocklist contained in this article. For your convenience, we provide a download of the most up-to-date vulnerable driver blocklist along with instructions to apply it on your computer at the end of this article. Otherwise, use the following XML to create your own custom WDAC policies.
 
 ## Blocking vulnerable drivers using WDAC
 
@@ -72,12 +72,12 @@ To check that the policy was successfully applied on your computer:
 ## Vulnerable driver blocklist XML
 
 > [!IMPORTANT]
-> The policy listed below contains **Allow All** rules. If your version of Windows supports WDAC multiple policies, we recommend deploying this policy alongside any existing WDAC policies. If you do plan to merge this policy with another policy, you may need to remove the **Allow All** rules before merging it if the other policy applies an explicit allow list. For more information, see [Create a WDAC Deny Policy](/windows/security/threat-protection/windows-defender-application-control/create-wdac-deny-policy#single-policy-considerations).
+> The following policy contains **Allow All** rules. If your version of Windows supports WDAC multiple policies, we recommend deploying this policy alongside any existing WDAC policies. If you do plan to merge this policy with another policy, you may need to remove the **Allow All** rules before merging it if the other policy applies an explicit allow list. For more information, see [Create a WDAC Deny Policy](/windows/security/threat-protection/windows-defender-application-control/create-wdac-deny-policy#single-policy-considerations).
 
 > [!NOTE]
 > To use this policy with Windows Server 2016, you must convert the policy XML on a device running a newer operating system.
 
-The below recommended blocklist xml policy file can also be downloaded from the [Microsoft Download Center](https://aka.ms/VulnerableDriverBlockList).
+The following recommended blocklist xml policy file can also be downloaded from the [Microsoft Download Center](https://aka.ms/VulnerableDriverBlockList).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
