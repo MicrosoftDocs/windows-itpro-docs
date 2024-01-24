@@ -15,10 +15,10 @@ ms.date: 01/03/2024
 
 The following table lists the main authentication and security differences between Windows Hello and Windows Hello for business:
 
-||Windows Hello|Windows Hello for Business|
+||Windows Hello for Business|Windows Hello|
 |-|-|-|
-|**Authentication**|Users can authenticate to:<br>- A Microsoft account<br>- Identity provider (IdP) services or relying party (RP) services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication.|Users can authenticate to:<br>- A Microsoft Entra ID account<br>- An Active Directory account<br>- Identity provider (IdP) services or relying party (RP) Services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication.|
-|**Security**|Users can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Windows Hello is unique to the device on which it's set up, but can use a password hash depending on the account type. This configuration is referred to as *Windows Hello convenience PIN*, and it's not backed by asymmetric (public/private key) or certificate-based authentication.|It uses **key-based** or **certificate-based** authentication. There's no symmetric secret (password) which can be stolen from a server or phished from a user and used remotely.<br>Enhanced security is available on devices with a Trusted Platform Module (TPM).|
+|**Authentication**|Users can authenticate to:<br>- A Microsoft Entra ID account<br>- An Active Directory account<br>- Identity provider (IdP) services or relying party (RP) Services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication.|Users can authenticate to:<br>- A Microsoft account<br>- Identity provider (IdP) services or relying party (RP) services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication.|
+|**Security**|It uses **key-based** or **certificate-based** authentication. There's no symmetric secret (password) which can be stolen from a server or phished from a user and used remotely.<br>Enhanced security is available on devices with a Trusted Platform Module (TPM).|Users can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Windows Hello is unique to the device on which it's set up, but can use a password hash depending on the account type. This configuration is referred to as *Windows Hello convenience PIN*, and it's not backed by asymmetric (public/private key) or certificate-based authentication.|
 
 > [!NOTE]
 > FIDO2 (Fast Identity Online) authentication is an open standard for passwordless authentication. It allows users to sign in to their devices and apps using biometric authentication or a physical security key, without the need for a traditional password. FIDO2 support in Windows Hello for Business provides an additional layer of security and convenience for users, while also reducing the risk of password-related attacks.
@@ -32,7 +32,9 @@ Windows Hello for Business provides many benefits, including:
 - Users get a simple and convenient authentication method (backed up with a PIN) that's always with them, so there's nothing to lose. The use of a PIN doesn't compromise security, since Windows Hello has built-in brute force protection, and the PIN never leaves the device
 - Support for Windows Hello is built into the operating system, so you can add biometric devices as part of a coordinated rollout or to individual employees as needed
 
-With FIDO/WebAuthn, Windows Hello can also be used to log in to supported websites, which reduces the need to remember or manage multiple complex passwords for a user's online accounts.
+The following video shows a demonstration of Windows Hello for Business in action, where a user signs in with a fingerprint:
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=fb5ceb53-d82b-4997-bde1-d473b620038a]
 
 ## Windows Hello and two factor authentication
 
@@ -53,10 +55,6 @@ On devices that support Windows Hello, an easy biometric gesture unlocks users' 
 - **Iris Recognition**: this type of biometric recognition uses cameras to perform scan of your iris. HoloLens 2 is the first Microsoft device to introduce an Iris scanner
 
 Windows stores biometric data that is used to implement Windows Hello securely on the local device only. The biometric data doesn't roam and is never sent to external devices or servers. Because Windows Hello only stores biometric identification data on the device, there's no single collection point an attacker can compromise to steal biometric data.
-
-The following video shows a demonstration of Windows Hello for Business in action, where a user signs in with a fingerprint:
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=fb5ceb53-d82b-4997-bde1-d473b620038a]
 
 [!INCLUDE [windows-hello-for-business](../../../../includes/licensing/windows-hello-for-business.md)]
 

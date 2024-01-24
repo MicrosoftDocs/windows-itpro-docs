@@ -7,7 +7,7 @@ ms.date: 01/03/2024
 
 # Configure Windows Hello for Business
 
-Windows Hello for Business offers a variety of configuration options to accommodate the needs of your organization. This article describes the configuration options and how to implement them.
+This article describes the options to configure Windows Hello for Business in an organization, and how to implement them.
 
 ## Configuration options
 

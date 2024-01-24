@@ -16,4 +16,4 @@ If you enable this policy setting, the user must use one factor from each list t
 | **CSP** | `./Device/Vendor/MSFT/PassportForWork/`[DeviceUnlock](/windows/client-management/mdm/passportforwork-csp#devicedeviceunlock) |
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Hello for Business** |
 
-For more information about multi-factor unlock, see [Multi-factor unlock with Windows Hello for Business](/windows/security/identity-protection/hello-for-business/multi-factor-unlock).
+For more information, see [Multi-factor unlock](../multifactor-unlock.md).
