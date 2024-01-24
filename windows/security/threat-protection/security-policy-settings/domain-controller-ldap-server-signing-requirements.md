@@ -3,13 +3,11 @@ title: Domain controller LDAP server signing requirements
 description: Describes the best practices, location, values, and security considerations for the Domain controller LDAP server signing requirements security policy setting.
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Domain controller: LDAP server signing requirements

@@ -4,7 +4,6 @@ description: The policy setting, Audit object access, determines whether to audi
 ms.assetid: D15B6D67-7886-44C2-9972-3F192D5407EA
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 09/06/2021
-ms.technology: itpro-security
 ---
 
 # Audit object access

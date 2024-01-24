@@ -3,12 +3,10 @@ title: Network security Restrict NTLM in this domain
 description: Learn about best practices, security considerations and more for the security policy setting, Network Security Restrict NTLM NTLM authentication in this domain.
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 ms.topic: reference
-ms.technology: itpro-security
 ms.date: 12/31/2017
 ---
 
