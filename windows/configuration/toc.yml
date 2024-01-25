@@ -11,15 +11,15 @@ items:
       href: taskbar/toc.yml
     - name: Configure access to the Microsoft Store
       href: store/stop-employees-from-using-microsoft-store.md
-    - name: Configure Windows Spotlight on the lock screen
-      href: lock-screen/windows-spotlight.md
     - name: Manage Microsoft Store tips, "fun facts", and suggestions
       href: tips/manage-tips-and-suggestions.md
-    - name: Configure cellular settings for tablets and PCs
-      href: cellular/provisioning-apn.md
+- name: Configure Windows Spotlight on the lock screen
+  href: lock-screen/windows-spotlight.md
+- name: Configure cellular settings for tablets and PCs
+  href: cellular/provisioning-apn.md
 - name: Configure kiosks and digital signs
   href: kiosk/toc.yml
-- name: Configure multi-user and guest devices 
+- name: Configure multi-user and guest devices
   href: shared-pc/toc.yml
 - name: Use provisioning packages
   href: provisioning-packages/toc.yml

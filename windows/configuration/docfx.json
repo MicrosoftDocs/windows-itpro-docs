@@ -43,6 +43,8 @@
       "uhfHeaderId": "MSDocsHeader-Windows",
       "ms.subservice": "itpro-configure",
       "ms.service": "windows-client",
+      "ms.author": "paoloma",
+      "author": "paolomatarazzo",
       "manager": "aaroncz",
       "feedback_system": "Standard",
             "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
@@ -74,8 +76,6 @@
         "cortana-at-work/**/*.*": "None"
       },
       "author":{
-        "*//**/*.md": "paolomatarazzo",
-        "*//**/*.yml": "paolomatarazzo",
         "cortana-at-work//**/*.md": "aczechowski",
         "cortana-at-work//**/*.yml": "aczechowski",
         "wcd//**/*.md": "aczechowski",
@@ -84,8 +84,6 @@
         "ue-v//**/*.yml": "aczechowski"
       },
       "ms.author":{
-        "*//**/*.md": "paoloma",
-        "*//**/*.yml": "paoloma",
         "cortana-at-work//**/*.md": "aaroncz",
         "cortana-at-work//**/*.yml": "aaroncz",
         "wcd//**/*.md": "aaroncz",
