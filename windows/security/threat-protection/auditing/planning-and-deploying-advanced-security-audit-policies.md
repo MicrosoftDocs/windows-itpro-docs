@@ -1,10 +1,9 @@
 ---
-title: Plan and deploy advanced security audit policies 
+title: Plan and deploy advanced security audit policies
 description: Learn to deploy an effective security audit policy in a network that includes advanced security audit policies.
 ms.assetid: 7428e1db-aba8-407b-a39e-509671e5a442
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/09/2021
-ms.technology: itpro-security
 ---
 
 # Plan and deploy advanced security audit policies
@@ -120,7 +118,7 @@ The following table provides an example of a resource analysis for an organizati
 | Payroll data| Corp-Finance-1| Accounting: Read/write on Corp-Finance-1<br/>Departmental Payroll Managers: Write only on Corp-Finance-1| High| Financial integrity and employee privacy|
 | Patient medical records| MedRec-2| Doctors and Nurses: Read/write on Med/Rec-2<br/>Lab Assistants: Write only on MedRec-2<br/>Accounting: Read only on MedRec-2| High| Strict legal and regulatory standards|
 | Consumer health information| Web-Ext-1| Public Relations Web Content Creators: Read/write on Web-Ext-1<br/>Public: Read only on Web-Ext-1| Low| Public education and corporate image|
- 
+
 ### Users
 
 Many organizations find it useful to classify the types of users they have and then base permissions on this classification. This classification can help you identify which user activities should be the subject of security auditing and the amount of audit data that they'll generate.
@@ -140,7 +138,7 @@ The following table illustrates an analysis of users on a network. Our example c
 | Account administrators| User accounts and security groups| Account administrators have full privileges to create new user accounts, reset passwords, and modify security group memberships. We need a mechanism to monitor these changes. |
 | Members of the Finance OU| Financial records| Users in Finance have read/write access to critical financial records but no ability to change permissions on these resources. These financial records are subject to government regulatory compliance requirements. |
 | External partners | Project Z| Employees of partner organizations have read/write access to certain project data and servers relating to Project Z but not to other servers or data on the network.|
- 
+
 ### Computers
 
 Security and auditing requirements and audit event volume can vary considerably for different types of computers in an organization. These requirements can be based on:
@@ -151,14 +149,14 @@ Security and auditing requirements and audit event volume can vary considerably 
     > [!NOTE]
     > For more information about auditing:
     > - In Exchange Server, see [Exchange 2010 Security Guide](/previous-versions/office/exchange-server-2010/bb691338(v=exchg.141)).
-    > - In SQL Server 2008, see [Auditing (Database Engine)](/previous-versions/sql/sql-server-2008-r2/cc280526(v=sql.105)).   
+    > - In SQL Server 2008, see [Auditing (Database Engine)](/previous-versions/sql/sql-server-2008-r2/cc280526(v=sql.105)).
     > - In SQL Server 2012, see [SQL Server Audit (Database Engine)](/sql/relational-databases/security/auditing/sql-server-audit-database-engine).
-     
+
 -   The operating system versions
 
     > [!NOTE]
     > The operating system version determines which auditing options are available and the volume of audit event data.
-     
+
 -   The business value of the data
 
 For example, a web server that's accessed by external users requires different audit settings than a root certification authority (CA) that's never exposed to the public internet or even to regular users on the organization's network.
@@ -171,7 +169,7 @@ The following table illustrates an analysis of computers in an organization.
 | File servers | Windows Server 2012| Separate resource OUs by department and (in some cases) by location|
 | Portable computers  | Windows Vista and Windows 7| Separate portable computer OUs by department and (in some cases) by location|
 | Web servers | Windows Server 2008 R2 | WebSrv OU|
- 
+
 ### Regulatory requirements
 
 Many industries and locales have specific requirements for network operations and how resources are protected. In the health care and financial industries, for example, strict guidelines control who can access records and how the records are used. Many countries/regions have strict privacy rules. To identify regulatory requirements, work with your organization's legal department and other departments responsible for these requirements. Then consider the security configuration and auditing options that you can use to comply with these regulations and verify compliance.
@@ -199,7 +197,7 @@ By using Group Policy, you can apply your security audit policy to defined group
 > Whether you apply advanced audit policies by using Group Policy or logon scripts, don't use both the basic audit policy settings under **Local Policies\Audit Policy** and the advanced settings under **Security Settings\Advanced Audit Policy Configuration**. Using both basic and advanced audit policy settings can cause unexpected results in audit reporting.
 
 If you use **Advanced Audit Policy Configuration** settings or logon scripts to apply advanced audit policies, be sure to enable the **Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings** policy setting under **Local Policies\\Security Options**. This configuration will prevent conflicts between similar settings by forcing basic security auditing to be ignored.
-     
+
 
 The following examples show how you can apply audit policies to an organization's OU structure:
 
@@ -210,8 +208,8 @@ The following examples show how you can apply audit policies to an organization'
 ## <a href="" id="bkmk-3"></a>Map your security auditing goals to a security audit policy configuration
 
 After you identify your security auditing goals, you can map them to a security audit policy configuration. This audit policy configuration must address your security auditing goals. But it also must reflect your organization's constraints, such as the numbers of:
-- Computers that need to be monitored 
-- Activities that you want to audit 
+- Computers that need to be monitored
+- Activities that you want to audit
 - Audit events that your audit configuration will generate
 - Administrators available to analyze and act upon audit data
 
@@ -230,7 +228,7 @@ You can view and configure security audit policy settings in the supported versi
 -   *Security Settings\\Local Policies\\Audit Policy*
 -   *Security Settings\\Local Policies\\Security Options*
 -   *Security Settings\\Advanced Audit Policy Configuration*
- 
+
 For more information, see [Advanced security audit policy settings](advanced-security-audit-policy-settings.md).
 
 ### Choose audit settings to use
@@ -255,16 +253,16 @@ Compromise to an organization's data resources can cause tremendous financial lo
 
     > [!NOTE]
     > To audit user attempts to access all file system objects on a computer, use the *Global Object Access Auditing* settings [Registry (Global Object Access Auditing)](registry-global-object-access-auditing.md) or [File System (Global Object Access Auditing)](file-system-global-object-access-auditing.md).
-     
+
 -   **Object Access\\[Audit Handle Manipulation](audit-handle-manipulation.md)**: This policy setting determines whether the operating system generates audit events when a handle to an object is opened or closed. Only objects with configured SACLs generate these events and only if the attempted handle operation matches the SACL.
 
     Event volume can be high, depending on how the SACLs are configured. When used together with the **Audit File System** or **Audit Registry** policy setting, the **Audit Handle Manipulation** policy setting can provide useful "reason for access" audit data that details the precise permissions on which the audit event is based. For example, if a file is configured as a *read-only* resource but a user tries to save changes to the file, the audit event will log the event *and* the permissions that were used (or attempted to be used) to save the file changes.
- 
+
 -   **Global Object Access Auditing**: Many organizations use security auditing to comply with regulatory requirements that govern data security and privacy. But demonstrating that strict controls are being enforced can be difficult. To address this issue, the supported versions of Windows include two **Global Object Access Auditing** policy settings, one for the registry and one for the file system. When you configure these settings, they apply a global system access control SACL on all objects of that class on a system. These settings can't be overridden or circumvented.
 
     > [!IMPORTANT]
     > The **Global Object Access Auditing** policy settings must be configured and applied in conjunction with the **Audit File System** and **Audit Registry** audit policy settings in the **Object Access** category.
-     
+
 ### User activity
 
 The settings in the previous section relate to activity involving the files, folders, and network shares that are stored on a network. The settings in this section focus on the users who may try to access those resources, including employees, partners, and customers.
@@ -279,7 +277,7 @@ In most cases, these attempts are legitimate, and the network needs to make data
 
     > [!NOTE]
     > There's no failure event for logoff activity, because failed logoffs (such as when a system abruptly shuts down) don't generate an audit record. Logoff events aren't 100-percent reliable. For example, a computer can be turned off without a proper logoff and shut down, so a logoff event isn't generated.
-     
+
 -   **Logon/Logoff\\[Audit Special Logon](audit-special-logon.md)**: A special logon has administrator-equivalent rights and can be used to elevate a process to a higher level. It's recommended to track these types of logons.
 -   **Object Access\\[Audit Certification Services](audit-certification-services.md)**: This policy setting enables you to monitor activities on a computer that hosts Active Directory Certificate Services (AD CS) role services to ensure that only authorized users do these tasks and only authorized or desirable tasks are done.
 -   **Object Access\\[Audit File System](audit-file-system.md) and Object Access\\[Audit File Share](audit-file-share.md)**: These policy settings are described in the previous section.
@@ -288,7 +286,7 @@ In most cases, these attempts are legitimate, and the network needs to make data
 
     > [!IMPORTANT]
     > On critical systems where all attempts to change registry settings should be tracked, you can combine the **Audit Registry** and **Global Object Access Auditing** policy settings to track all attempts to modify registry settings on a computer.
-     
+
 -   **Object Access\\[Audit SAM](audit-sam.md)**: The Security Accounts Manager (SAM) is a database on computers running Windows that stores user accounts and security descriptors for users on the local computer. Changes to user and group objects are tracked by the **Account Management** audit category. However, user accounts with the proper user rights could potentially alter the files where the account and password information is stored in the system, bypassing any **Account Management** events.
 -   **Privilege Use\\[Audit Sensitive Privilege Use](audit-sensitive-privilege-use.md)**: These policy settings and audit events enable you to track the use of certain rights on one or more systems. If you configure this policy setting, an audit event is generated when sensitive rights requests are made.
 
@@ -301,7 +299,7 @@ The following network activity policy settings enable you to monitor security-re
 
     >[!NOTE]
     >**Account Logon** policy settings apply only to specific domain account activities, regardless of which computer is accessed. **Logon/Logoff** policy settings apply to the computer that hosts the resources that are accessed.
-     
+
 -   **Account Logon\\[Audit Other Account Logon Events](audit-other-account-logon-events.md)**: This policy setting can be used to track various network activities, including attempts to create Remote Desktop connections, wired network connections, and wireless connections.
 -   **DS Access**: Policy settings in this category enable you to monitor AD DS role services. These services provide account data, validate logons, maintain network access permissions, and provide other functionality that's critical to secure and proper functioning of a network. Therefore, auditing the rights to access and modify the configuration of a domain controller can help an organization maintain a secure and reliable network. One of the key tasks that AD DS performs is replication of data between domain controllers.
 -   **Logon/Logoff\\[Audit IPsec Extended Mode](audit-ipsec-extended-mode.md)**, **Logon/Logoff\\[Audit IPsec Main Mode](audit-ipsec-main-mode.md)**, and **Logon/Logoff\\[Audit IPsec Quick Mode](audit-ipsec-quick-mode.md)**: Networks often support many external users, including remote employees and partners. Because these users are outside the organization's network boundaries, IPsec is often used to help protect communications over the internet. It enables network-level peer authentication, data origin authentication, data integrity checks, data confidentiality (encryption), and protection against replay attacks. You can use these settings to ensure that IPsec services are functioning properly.

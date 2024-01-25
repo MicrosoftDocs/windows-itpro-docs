@@ -1,15 +1,13 @@
 ---
 title: Security options
 description: Introduction to the Security Options settings of the local security policies plus links to more information.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.date: 01/13/2023
-ms.technology: itpro-security
-ms.topic: conceptual
+ms.topic: reference
 ---
 
 # Security Options
@@ -108,7 +106,7 @@ For info about setting security policies, see [Configure security policy setting
 | [Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers](network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers.md)| Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers** security policy setting. |
 | [Recovery console: Allow automatic administrative logon](recovery-console-allow-automatic-administrative-logon.md)| Describes the best practices, location, values, policy management, and security considerations for the **Recovery console: Allow automatic administrative logon** security policy setting. |
 | [Recovery console: Allow floppy copy and access to all drives and folders](recovery-console-allow-floppy-copy-and-access-to-all-drives-and-folders.md)| Describes the best practices, location, values, policy management, and security considerations for the **Recovery console: Allow floppy copy and access to all drives and folders** security policy setting. |
-| [Shutdown: Allow system to be shut down without having to lg on](shutdown-allow-system-to-be-shut-down-without-having-to-log-on.md)| Describes the best practices, location, values, policy management, and security considerations for the **Shutdown: Allow system to be shut down without having to log on** security policy setting. |
+| [Shutdown: Allow system to be shut down without having to log on](shutdown-allow-system-to-be-shut-down-without-having-to-log-on.md)| Describes the best practices, location, values, policy management, and security considerations for the **Shutdown: Allow system to be shut down without having to log on** security policy setting. |
 | [Shutdown: Clear virtual memory pagefile](shutdown-clear-virtual-memory-pagefile.md)| Describes the best practices, location, values, policy management, and security considerations for the **Shutdown: Clear virtual memory pagefile** security policy setting.|
 | [System cryptography: Force strong key protection for user keys stored on the computer](system-cryptography-force-strong-key-protection-for-user-keys-stored-on-the-computer.md)| Describes the best practices, location, values, policy management, and security considerations for the **System cryptography: Force strong key protection for user keys stored on the computer** security policy setting. |
 | [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing](system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md)| This security policy reference topic for the IT professional describes the best practices, location, values, policy management, and security considerations for this policy setting. |

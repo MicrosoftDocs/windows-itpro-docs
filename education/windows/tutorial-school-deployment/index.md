@@ -1,8 +1,8 @@
 ---
 title: Introduction to the tutorial deploy and manage Windows devices in a school
 description: Introduction to deployment and management of Windows devices in education environments.
-ms.date: 08/31/2022
-ms.topic: conceptual
+ms.date: 11/09/2023
+ms.topic: tutorial
 ---
 
 # Tutorial: deploy and manage Windows devices in a school
@@ -46,7 +46,7 @@ From enrollment, through configuration and protection, to resetting, Intune for 
 
 :::image type="content" source="./images/device-lifecycle.png" alt-text="The device lifecycle for Intune-managed devices" border="false":::
 
-- **Enroll:** to enable remote device management, devices must be enrolled in Intune with an account in your Azure AD tenant. Some enrollment methods require an IT administrator to initiate enrollment, while others require students to complete the initial device setup process. This document discusses the facets of various device enrollment methodologies
+- **Enroll:** to enable remote device management, devices must be enrolled in Intune with an account in your Microsoft Entra tenant. Some enrollment methods require an IT administrator to initiate enrollment, while others require students to complete the initial device setup process. This document discusses the facets of various device enrollment methodologies
 - **Configure:** once the devices are enrolled in Intune, applications and settings will be applied, as defined by the IT administrator
 - **Protect and manage:** in addition to its configuration capabilities, Intune for Education helps protect devices from unauthorized access or malicious attacks. For example, adding an extra layer of authentication with Windows Hello can make devices more secure. Policies are available that let you control settings for Windows Firewall, Endpoint Protection, and software updates
 - **Retire:** when it's time to repurpose a device, Intune for Education offers several options, including resetting the device, removing it from management, or wiping school data. In this document, we cover different device return and exchange scenarios
@@ -55,18 +55,19 @@ From enrollment, through configuration and protection, to resetting, Intune for 
 
 In the remainder of this document, we'll discuss the key concepts and benefits of modern device management with Microsoft 365 solutions for education. The guidance is organized around the four main pillars of modern device management:
 
-- **Identity management:** setting up and configuring the identity system, with Microsoft 365 Education and Azure Active Directory, as the foundation for user identity and authentication
+- **Identity management:** setting up and configuring the identity system, with Microsoft 365 Education and Microsoft Entra ID, as the foundation for user identity and authentication
 - **Initial setup:** setting up the Intune for Education environment for managing devices, including configuring settings, deploying applications, and defining updates cadence  
 - **Device enrollment:** Setting up Windows devices for deployment and enrolling them in Intune for Education
 - **Device reset:** Resetting managed devices with Intune for Education
 
-________________________________________________________
+---
+
 ## Next steps
 
-Let's begin with the creation and configuration of your Azure AD tenant and Intune environment.
+Let's begin with the creation and configuration of your Microsoft Entra tenant and Intune environment.
 
 > [!div class="nextstepaction"]
-> [Next: Set up Azure Active Directory >](set-up-azure-ad.md)
+> [Next: Set up Microsoft Entra ID >](set-up-microsoft-entra-id.md)
 
 <!-- Reference links in article -->
 

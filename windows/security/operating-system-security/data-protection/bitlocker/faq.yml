@@ -1,11 +1,9 @@
 ### YamlMime:FAQ
 metadata:
   title: BitLocker FAQ
-  description: Learn more about BitLocker by reviewing the frequently asked questions. 
-  ms.collection:
-    - tier1
+  description: Learn more about BitLocker by reviewing the frequently asked questions.
   ms.topic: faq
-  ms.date: 07/25/2023
+  ms.date: 10/30/2023
 title: BitLocker FAQ
 summary: Learn more about BitLocker by reviewing the frequently asked questions.
 
@@ -14,55 +12,29 @@ sections:
 ### YamlMime:FAQ
   - name: Overview and requirements
     questions:
-      - question: How does BitLocker work?
-        answer: |
-          **How BitLocker works with operating system drives**
-          
-          BitLocker Can be used to mitigate unauthorized data access on lost or stolen computers by encrypting all user files and system files on the operating system drive, including the swap files and hibernation files, and checking the integrity of early boot components and boot configuration data.
-          
-          **How BitLocker works with fixed and removable data drives**
-          
-          BitLocker can be used to encrypt the entire contents of a data drive. Group Policy can be used to require BitLocker be enabled on a drive before the computer can write data to the drive. BitLocker can be configured with various unlock methods for data drives, and a data drive supports multiple unlock methods.
-          
       - question: Does BitLocker support multifactor authentication?
         answer: Yes, BitLocker supports multifactor authentication for operating system drives. If BitLocker is enabled on a computer that has a TPM version 1.2 or later, additional forms of authentication can be used with the TPM protection.
 
-      - question: What are the BitLocker hardware and software requirements?
-        answer: |
-          For requirements, see [System requirements](index.md#system-requirements).
-          
-          > [!NOTE]
-          > Dynamic disks aren't supported by BitLocker. Dynamic data volumes won't be displayed in the Control Panel. Although the operating system volume will always be displayed in the Control Panel, regardless of whether it's a Dynamic disk, if it's a dynamic disk it can't be protected by BitLocker.
-
-      - question: Why are two partitions required? Why does the system drive have to be so large?
+      - question: Why are two partitions required?
         answer: Two partitions are required to run BitLocker because pre-startup authentication and system integrity verification must occur on a separate partition from the encrypted operating system drive. This configuration helps protect the operating system and the information in the encrypted drive.
 
-      - question: Which Trusted Platform Modules (TPMs) does BitLocker support?
-        answer: |
-          BitLocker supports TPM version 1.2 or higher. BitLocker support for TPM 2.0 requires Unified Extensible Firmware Interface (UEFI) for the device. 
-          
-          > [!NOTE]
-          > TPM 2.0 isn't supported in Legacy and CSM Modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as Native UEFI only. The Legacy and Compatibility Support Module (CSM) options must be disabled. For added security, enable the Secure Boot feature.
-          > 
-          > Installed Operating System on hardware in legacy mode will stop the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](/windows/deployment/mbr-to-gpt) before changing the BIOS mode that will prepare the OS and the disk to support UEFI.
-          
       - question: How can I tell if a computer has a TPM?
-        answer: Beginning with Windows 10, version 1803, the TPM status can be checked in **Windows Defender Security Center** > **Device Security** > **Security processor details**. In previous versions of Windows, open the TPM MMC console (tpm.msc) and look under the **Status** heading. [**Get-TPM**](/powershell/module/trustedplatformmodule/get-tpm?view=windowsserver2019-ps)** can also be run in PowerShell to get more details about the TPM on the current computer.
+        answer: The TPM status can be checked in **Windows Defender Security Center** > **Device Security** > **Security processor details**. 
 
       - question: Can I use BitLocker on an operating system drive without a TPM?
         answer: |
-          Yes, BitLocker can be enabled on an operating system drive without a TPM version 1.2 or higher, if the BIOS or UEFI firmware has the ability to read from a USB flash drive in the boot environment. BitLocker won't unlock the protected drive until BitLocker's own volume master key is first released by either the computer's TPM or by a USB flash drive containing the BitLocker startup key for that computer. However, computers without TPMs won't be able to use the system integrity verification that BitLocker can also provide.
+          Yes, BitLocker can be enabled on an operating system drive without a TPM, if the BIOS or UEFI firmware has the ability to read from a USB flash drive in the boot environment. BitLocker won't unlock the protected drive until BitLocker's own volume master key is first released by either the computer's TPM or by a USB flash drive containing the BitLocker startup key for that computer. However, computers without TPMs won't be able to use the system integrity verification that BitLocker can also provide.
           To help determine whether a computer can read from a USB device during the boot process, use the BitLocker system check as part of the BitLocker setup process. This system check performs tests to confirm that the computer can properly read from the USB devices at the appropriate time and that the computer meets other BitLocker requirements.
           
       - question: How do I obtain BIOS support for the TPM on my computer?
         answer: |
           Contact the computer manufacturer to request a Trusted Computing Group (TCG)-compliant BIOS or UEFI boot firmware that meets the following requirements:
           
-          - It's compliant with the TCG standards for a client computer.
-          - It has a secure update mechanism to help prevent a malicious BIOS or boot firmware from being installed on the computer.
+          - It's compliant with the TCG standards for a client computer
+          - It has a secure update mechanism to help prevent a malicious BIOS or boot firmware from being installed on the computer
           
-      - question: What credentials are required to use BitLocker?
-        answer: To turn on, turn off, or change configurations of BitLocker on operating system and fixed data drives, membership in the local **Administrators** group is required. Standard users can turn on, turn off, or change configurations of BitLocker on removable data drives.
+      - question: What user rights are required to use BitLocker?
+        answer: To turn on, turn off, or change configurations of BitLocker on operating system and fixed data drives, membership to the local *Administrators* group is required. Standard users can turn on, turn off, or change configurations of BitLocker on removable data drives.
 
       - question: What is the recommended boot order for computers that are going to be BitLocker-protected?
         answer: The computer's startup options should be configured to have the hard disk drive first in the boot order, before any other drives such as CD/DVD drives or USB drives. If the hard disk isn't first and the computer typically boots from the hard disk, then a boot order change may be detected or assumed when removable media is found during boot. The boot order typically affects the system measurement that is verified by BitLocker and a change in boot order will cause a prompt for the BitLocker recovery key. For the same reason, if a laptop is used with a docking station, ensure that the hard disk drive is first in the boot order both when the laptop is docked and undocked. 
@@ -70,16 +42,16 @@ sections:
   - name: BitLocker and Windows upgrade
     questions:
       - question: |
-          Can I upgrade to Windows 10 with BitLocker enabled?
+          Can I upgrade Windows versions with BitLocker enabled?
         answer: |
           Yes. 
 
       - question: |
           What is the difference between suspending and decrypting BitLocker?
         answer: |
-          **Decrypt** completely removes BitLocker protection and fully decrypts the drive.
+          *Decrypt* completely removes BitLocker protection and fully decrypts the drive.
           
-          **Suspend** keeps the data encrypted but encrypts the BitLocker volume master key with a clear key. The clear key is a cryptographic key stored unencrypted and unprotected on the disk drive. By storing this key unencrypted, the **Suspend** option allows for changes or upgrades to the computer without the time and cost of decrypting and re-encrypting the entire drive. After the changes are made and BitLocker is again enabled, BitLocker will reseal the encryption key to the new values of the measured components that changed as a part of the upgrade, the volume master key is changed, the protectors are updated to match and the clear key is erased.
+          *Suspend* keeps the data encrypted but encrypts the BitLocker volume master key with a clear key. The clear key is a cryptographic key stored unencrypted and unprotected on the disk drive. By storing this key unencrypted, the *Suspend* option allows for changes or upgrades to the computer without the time and cost of decrypting and re-encrypting the entire drive. After the changes are made and BitLocker is again enabled, BitLocker will reseal the encryption key to the new values of the measured components that changed as a part of the upgrade, the volume master key is changed, the protectors are updated to match and the clear key is erased.
           
       - question: |
           Do I have to suspend BitLocker protection to download and install system updates and upgrades?
@@ -87,25 +59,22 @@ sections:
           No user action is required for BitLocker in order to apply updates from Microsoft, including [Windows quality updates and feature updates](/windows/deployment/update/waas-quick-start). 
           Users need to suspend BitLocker for Non-Microsoft software updates, such as:   
           
-          -	Some TPM firmware updates if these updates clear the TPM outside of the Windows API. Not every TPM firmware update will clear the TPM. Users don't have to suspend BitLocker if the TPM firmware update uses Windows API to clear the TPM because in this case, BitLocker will be automatically suspended. It's recommended that users test their TPM firmware updates if they don't want to suspend BitLocker protection.
-          -	Non-Microsoft application updates that modify the UEFI\BIOS configuration.
-          -	Manual or third-party updates to secure boot databases (only if BitLocker uses Secure Boot for integrity validation).
-          -	Updates to UEFI\BIOS firmware, installation of additional UEFI drivers, or UEFI applications without using the Windows update mechanism (only if BitLocker doesn't use Secure Boot for integrity validation during updates).
-           -	BitLocker can be checked if it uses Secure Boot for integrity validation with the command line `manage-bde.exe -protectors -get C:`. If Secure Boot for integrity validation is being used, it will be report **Uses Secure Boot for integrity validation**.
+          -	Some TPM firmware updates if these updates clear the TPM outside of the Windows API. Not every TPM firmware update will clear the TPM. Users don't have to suspend BitLocker if the TPM firmware update uses Windows API to clear the TPM because in this case, BitLocker will be automatically suspended. It's recommended that users test their TPM firmware updates if they don't want to suspend BitLocker protection
+          -	Non-Microsoft application updates that modify the UEFI\BIOS configuration
+          -	Manual or third-party updates to secure boot databases (only if BitLocker uses Secure Boot for integrity validation)
+          -	Updates to UEFI\BIOS firmware, installation of additional UEFI drivers, or UEFI applications without using the Windows update mechanism (only if BitLocker doesn't use Secure Boot for integrity validation during updates)
+          -	BitLocker can be checked if it uses Secure Boot for integrity validation with the command line `manage-bde.exe -protectors -get C:`. If Secure Boot for integrity validation is being used, it reports **Uses Secure Boot for integrity validation**
           
           
           > [!NOTE]
-          > If BitLocker has been suspended, BitLocker protection can be resumed after the upgrade or update has been installed. Upon resuming protection, BitLocker will reseal the encryption key to the new values of the measured components that changed as a part of the upgrade or update. If these types of upgrades or updates are applied without suspending BitLocker, the computer will enter recovery mode when restarting and will require a recovery key or password to access the computer.
+          > If BitLocker is suspended, you can resume BitLocker protection after the upgrade or update is installed. Upon resuming protection, BitLocker will reseal the encryption key to the new values of the measured components that changed as a part of the upgrade or update. If these types of upgrades or updates are applied without suspending BitLocker, the computer will enter recovery mode when restarting and will require a recovery key or password to access the computer.
 
   - name: Deployment and administration
     questions:
       - question: Can BitLocker deployment be automated in an enterprise environment?
         answer: |
-          Yes, the deployment and configuration of both BitLocker and the TPM can be automated using either WMI or Windows PowerShell scripts. Which method is chosen to implement the automation depends on the environment. `Manage-bde.exe` can also be used to locally or remotely configure BitLocker. For more info about writing scripts that use the BitLocker WMI providers, see [BitLocker Drive Encryption Provider](/windows/win32/secprov/bitlocker-drive-encryption-provider). For more info about using Windows PowerShell cmdlets with BitLocker Drive Encryption, see [BitLocker Cmdlets in Windows PowerShell](/powershell/module/bitlocker/index?view=win10-ps).
+          Yes, the deployment and configuration BitLocker can be automated using either Windows PowerShell or with the `manage-bde.exe` command. For more information about common BitLocker management commands, check the [BitLocker operations guide](operations-guide.md).
           
-      - question: Can BitLocker encrypt more than just the operating system drive?
-        answer: Yes.
-
       - question: Is there a noticeable performance impact when BitLocker is enabled on a computer?
         answer: Typically, there's a small performance overhead, often in single-digit percentages, which is relative to the throughput of the storage operations on which it needs to operate.
 
@@ -121,39 +90,41 @@ sections:
       - question: Does BitLocker encrypt and decrypt the entire drive all at once when reading and writing data?
         answer: No, BitLocker doesn't encrypt and decrypt the entire drive when reading and writing data. The encrypted sectors in the BitLocker-protected drive are decrypted only as they're requested from system read operations. Blocks that are written to the drive are encrypted before the system writes them to the physical disk. No unencrypted data is ever stored on a BitLocker-protected drive.
 
-      - question: How can I prevent users on a network from storing data on an unencrypted drive?
+      - question: How can I prevent users from storing data on an unencrypted drive?
         answer: |
-          Group Policy settings can be configured to require that data drives be BitLocker-protected before a BitLocker-protected computer can write data to them. For more info, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
+          Policy settings can be configured to require that data drives be BitLocker-protected before a BitLocker-protected computer can write data to them. For more info, see [BitLocker policy settings](configure.md).
           When these policy settings are enabled, the BitLocker-protected operating system will mount any data drives that aren't protected by BitLocker as read-only.
           
-      - question: What is Used Disk Space Only encryption?
+      - question: |
+          What is Used Disk Space Only encryption?
         answer: |
-          BitLocker in Windows 10 lets users choose to encrypt just their data. Although it's not the most secure way to encrypt a drive, this option can reduce encryption time by more than 99 percent, depending on how much data that needs to be encrypted. For more information, see [Used Disk Space Only encryption](bitlocker-device-encryption-overview-windows-10.md#used-disk-space-only-encryption).
+          BitLocker lets users choose to encrypt just their data. Although it's not the most secure way to encrypt a drive, this option can reduce encryption time by more than 99 percent, depending on how much data that needs to be encrypted. For more information, see [Used Disk Space Only encryption](planning-guide.md#used-disk-space-only-encryption).
           
-      - question: What system changes would cause the integrity check on my operating system drive to fail?
+      - question: |
+          What system changes would cause the integrity check on the OS drive to fail?
         answer: |
           The following types of system changes can cause an integrity check failure and prevent the TPM from releasing the BitLocker key to decrypt the protected operating system drive:
           
-          - Moving the BitLocker-protected drive into a new computer.
-          - Installing a new motherboard with a new TPM.
-          - Turning off, disabling, or clearing the TPM.
-          - Changing any boot configuration settings.
-          - Changing the BIOS, UEFI firmware, master boot record, boot sector, boot manager, option ROM, or other early boot components or boot configuration data.
+          - Moving the BitLocker-protected drive into a new computer
+          - Installing a new motherboard with a new TPM
+          - Turning off, disabling, or clearing the TPM
+          - Changing any boot configuration settings
+          - Changing the BIOS, UEFI firmware, master boot record, boot sector, boot manager, option ROM, or other early boot components or boot configuration data
           
       - question: What causes BitLocker to start into recovery mode when attempting to start the operating system drive?
         answer: |
           Because BitLocker is designed to protect computers from numerous attacks, there are numerous reasons why BitLocker could start in recovery mode. 
           For example: 
           
-          - Changing the BIOS boot order to boot another drive in advance of the hard drive.
-          - Adding or removing hardware, such as inserting a new card in the computer.
-          - Removing, inserting, or completely depleting the charge on a smart battery on a portable computer.
+          - Changing the BIOS boot order to boot another drive in advance of the hard drive
+          - Adding or removing hardware, such as inserting a new card in the computer
+          - Removing, inserting, or completely depleting the charge on a smart battery on a portable computer
           
           In BitLocker, recovery consists of decrypting a copy of the volume master key using either a recovery key stored on a USB flash drive or a cryptographic key derived from a recovery password. 
           The TPM isn't involved in any recovery scenarios, so recovery is still possible if the TPM fails boot component validation, malfunctions, or is removed.
           
       - question: What can prevent BitLocker from binding to PCR 7?
-        answer: BitLocker can be prevented from binding to PCR 7 if a non-Windows OS booted prior to Windows, or if Secure Boot isn't available to the device, either because it has been disabled or the hardware doesn't support it.
+        answer: BitLocker can be prevented from binding to PCR 7 if a non-Windows OS booted prior to Windows, or if Secure Boot isn't available to the device, either because it's disabled or the hardware doesn't support it.
 
       - question: Can I swap hard disks on the same computer if BitLocker is enabled on the operating system drive?
         answer: Yes, multiple hard disks can be swapped on the same computer if BitLocker is enabled, but only if the hard disks were BitLocker-protected on the same computer. The BitLocker keys are unique to the TPM and the operating system drive. If a backup operating system or data drive needs to be prepared in case of a disk failure, make sure that they were matched with the correct TPM. Different hard drives can also be configured for different operating systems and then enable BitLocker on each one with different authentication methods (such as one with TPM-only and one with TPM+PIN) without any conflicts.
@@ -161,57 +132,79 @@ sections:
       - question: Can I access my BitLocker-protected drive if I insert the hard disk into a different computer?
         answer: Yes, if the drive is a data drive, it can be unlocked from the **BitLocker Drive Encryption** Control Panel item by using a password or smart card. If the data drive was configured for automatic unlock only, it will need to be unlocked by using the recovery key. The encrypted hard disk can be unlocked by a data recovery agent (if one was configured) or it can be unlocked by using the recovery key.
 
-      - question: Why is **Turn BitLocker on** not available when I right-click a drive?
+      - question: Why isn't the "Turn BitLocker on" option available when I right-click a drive?
         answer: Some drives can't be encrypted with BitLocker. Reasons a drive can't be encrypted include insufficient disk size, an incompatible file system, if the drive is a dynamic disk, or a drive is designated as the system partition. By default, the system drive (or system partition) is hidden from display. However, if it isn't created as a hidden drive when the operating system was installed due to a custom installation process, that drive might be displayed but can't be encrypted.
 
       - question: What type of disk configurations are supported by BitLocker?
         answer: Any number of internal, fixed data drives can be protected with BitLocker. On some versions ATA and SATA-based, direct-attached storage devices are also supported.
 
   - name: Key Management
-    questions:
+    questions:      
       - question: How can I authenticate or unlock my removable data drive?
         answer: |
-          Removable data drives can be unlocked using a password or a smart card. An SID protector can also be configured to unlock a drive by using user domain credentials. After encryption has started, the drive can also be automatically unlocked on a specific computer for a specific user account. System administrators can configure which options are available for users including password complexity and minimum length requirements. To unlock by using a SID protector, use `manage-bde.exe`:
+          Removable data drives can be unlocked using a password or a smart card. A SID protector can also be configured to unlock a drive by using user domain credentials. After encryption has started, the drive can also be automatically unlocked on a specific computer for a specific user account. System administrators can configure which options are available for users including password complexity and minimum length requirements. To unlock by using a SID protector, use `manage-bde.exe`:
           
           ```cmd
-          Manage-bde.exe -protectors -add e: -sid <i>domain\username</i></code>
+          Manage-bde.exe -protectors -add e: -sid domain\username
           ```
           
-      - question: What is the difference between a recovery password, recovery key, PIN, enhanced PIN, and startup key?
+      - question: What is the difference between a TPM owner password, recovery password, recovery key, PIN, enhanced PIN, and startup key?
         answer: |
-          For tables that list and describe elements such as a recovery password, recovery key, and PIN, see [BitLocker key protectors](prepare-your-organization-for-bitlocker-planning-and-policies.md#bitlocker-key-protectors) and [BitLocker authentication methods](prepare-your-organization-for-bitlocker-planning-and-policies.md#bitlocker-authentication-methods). 
+          There are multiple keys that can be generated and used by BitLocker. Some keys are required and some are optional protectors you can choose to use depending on the level of security you require.
+
+          **TPM owner password**
+
+          Prior to enabling BitLocker on a computer with a TPM version 1.2, you must initialize the TPM. The initialization process generates a TPM owner password, which is a password set on the TPM. You must be able to supply the TPM owner password to change the state of the TPM, such as when enabling or disabling the TPM or resetting the TPM lockout.
+
+          **Recovery password and recovery key**
+
+          When you set up BitLocker, you must choose how access to BitLocker-protected drives can be recovered in the event that the specified unlock method cannot be used (such as if the TPM cannot validate the boot components, the personal identification number (PIN) is forgotten, or the password is forgotten). In these situations, you must be able to supply either the recovery key or the recovery password to unlock the encrypted data on the drive. When you supply the recovery information, you can use either of the following formats:
+
+          - A recovery password consisting of 48 digits divided into eight groups. During recovery, you need to type this password into the BitLocker recovery console by using the function keys on your keyboard
+          - A key file on a USB flash drive that is read directly by the BitLocker recovery console. During recovery, you need to insert this USB device
+
+          **PIN and enhanced PIN**
           
+          For a higher level of security with the TPM, you can configure BitLocker with a personal identification number (PIN). The PIN is a user-created value that must be entered each time the computer starts or resumes from hibernation. The PIN can consist of 4 to 20 digits as specified by the *Configure minimum PIN length for startup* policy setting and is stored internally as a 256-bit hash of the entered Unicode characters. This value is never displayed to the user. The PIN is used to provide another factor of authentication in conjunction with TPM authentication.\
+          For an even higher level of security with the TPM, you can configure BitLocker to use enhanced PINs. Enhanced PINs are PINs that use the full keyboard character set in addition to the numeric set to allow for more possible PIN combinations and are between 4 and 20 characters in length. To use enhanced PINs, you must enable the *Allow enhanced PINs for startup* policy setting before adding the PIN to the drive. By enabling this policy, all PINs created can utilize full keyboard characters.
+
+          **Startup key**
+
+          Configuring a startup key is another method to enable a higher level of security with the TPM. The startup key is a key stored on a USB flash drive, and the USB flash drive must be inserted every time the computer starts. The startup key is used to provide another factor of authentication in conjunction with TPM authentication. To use a USB flash drive as a startup key, the USB flash drive must be formatted by using the NTFS, FAT, or FAT32 file system.
+
+          >[!IMPORTANT]
+          > You must have a startup key to use BitLocker on a non-TPM computer.
+
       - question: How can the recovery password and recovery key be stored?
         answer: |
           The recovery password and recovery key for an operating system drive or a fixed data drive can be saved to a folder, saved to one or more USB devices, saved to a Microsoft Account, or printed.
           
           For removable data drives, the recovery password and recovery key can be saved to a folder, saved to a Microsoft Account, or printed. By default, a recovery key for a removable drive can't be stored on a removable drive.
           
-          A domain administrator can also configure Group Policy to automatically generate recovery passwords and store them in Active Directory Domain Services (AD DS) for any BitLocker-protected drive.
+          A domain administrator can also configure policy settings to automatically generate recovery passwords and store them in Active Directory Domain Services (AD DS) or Microsoft Entra ID for any BitLocker-protected drive.
           
       - question: Is it possible to add an additional method of authentication without decrypting the drive if I only have the TPM authentication method enabled?
         answer: |
-          The `Manage-bde.exe` command-line tool can be used to replace TPM-only authentication mode with a multifactor authentication mode. For example, if BitLocker is enabled with TPM authentication only and PIN authentication needs to be added, use the following commands from an elevated command prompt, replacing *4-20 digit numeric PIN* with the desired numeric PIN:
+          The `Manage-bde.exe` command-line tool can be used to replace TPM-only authentication mode with a multifactor authentication mode. For example, if BitLocker is enabled with TPM authentication only and PIN authentication needs to be added, use the following commands from an elevated Command Prompt, replacing *4-20 digit numeric PIN* with the desired numeric PIN:
           
           ```cmd
           manage-bde.exe -protectors -delete %systemdrive% -type tpm
-         
+
           manage-bde.exe -protectors -add %systemdrive% -tpmandpin <4-20 digit numeric PIN>
           ```
-          
-          
+
       - question: When should an additional method of authentication be considered?
         answer: |
           New hardware that meets [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/) requirements make a PIN less critical as a mitigation, and having a TPM-only protector is likely sufficient when combined with policies like device lockout. For example, Surface Pro and Surface Book don't have external DMA ports to attack. 
-          For older hardware, where a PIN may be needed, it's recommended to enable [enhanced PINs](bitlocker-group-policy-settings.md#allow-enhanced-pins-for-startup) that allow non-numeric characters such as letters and punctuation marks, and to set the PIN length based on the risk tolerance and the hardware anti-hammering capabilities available to the TPMs on the computers. 
+          For older hardware, where a PIN may be needed, it's recommended to enable [enhanced PINs](configure.md) that allow non-numeric characters such as letters and punctuation marks, and to set the PIN length based on the risk tolerance and the hardware anti-hammering capabilities available to the TPMs on the computers. 
           
       - question: If I lose my recovery information, will the BitLocker-protected data be unrecoverable?
         answer: |
           BitLocker is designed to make the encrypted drive unrecoverable without the required authentication. When in recovery mode, the user needs the recovery password or recovery key to unlock the encrypted drive.
           
           > [!IMPORTANT]
-          > Store the recovery information in AD DS, along with in a Microsoft Account, or another safe location.
-           
+          > Store the recovery information in Microsoft Entra ID, AD DS, Microsoft Account, or another safe location.
+
       - question: Can the USB flash drive that is used as the startup key also be used to store the recovery key?
         answer: While using a USB flash drive as both the startup key and for storage of the recovery key is technically possible, it isn't a best practice to use one USB flash drive to store both keys. If the USB flash drive that contains the startup key is lost or stolen, the recovery key will also be lost. In addition, inserting this key would cause the computer to automatically boot from the recovery key even if TPM-measured files have changed, which circumvents the TPM's system integrity check.
 
@@ -247,7 +240,7 @@ sections:
           It's possible that a personal identification number (PIN) can be discovered by an attacker performing a brute force attack. A brute force attack occurs when an attacker uses an automated tool to try different PIN combinations until the correct one is discovered. For BitLocker-protected computers, this type of attack, also known as a dictionary attack, requires that the attacker has physical access to the computer.
           
           The TPM has the built-in ability to detect and react to these types of attacks. Because different manufacturers' TPMs may support different PIN and attack mitigations, contact the TPM's manufacturer to determine how the computer's TPM mitigates PIN brute force attacks.
-          After the TPM's manufacturer has been determined, contact the manufacturer to gather the TPM's vendor-specific information. Most manufacturers use the PIN authentication failure count to exponentially increase lockout time to the PIN interface. However, each manufacturer has different policies regarding when and how the failure counter is decreased or reset.
+          After the TPM's manufacturer is determined, contact the manufacturer to gather the TPM's vendor-specific information. Most manufacturers use the PIN authentication failure count to exponentially increase lockout time to the PIN interface. However, each manufacturer has different policies regarding when and how the failure counter is decreased or reset.
           
       - question: How can I determine the manufacturer of my TPM?
         answer: The TPM manufacturer can be determined in **Windows Defender Security Center** > **Device Security** > **Security processor details**.
@@ -260,11 +253,15 @@ sections:
           - What is the algorithm for determining the duration of a lockout based on the number of failed attempts and any other relevant parameters?
           - What actions can cause the failure count and lockout duration to be decreased or reset?
           
-      - question: Can PIN length and complexity be managed with Group Policy?
+      - question: Can PIN length and complexity be managed with policy settings?
         answer: |
-          Yes and No. The minimum personal identification number (PIN) length can be configured by using the **Configure minimum PIN length for startup** Group Policy setting and allow the use of alphanumeric PINs by enabling the **Allow enhanced PINs for startup** Group Policy setting. However, PIN complexity can't be required via Group Policy.
+          The minimum personal identification number (PIN) length can be configured by using the **Configure minimum PIN length for startup** Group Policy setting and allow the use of alphanumeric PINs by enabling the **Allow enhanced PINs for startup** policy setting. PIN complexity can't be required via policy settings.
           
-          For more info, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
+          For more info, see [BitLocker policy settings](configure.md).
+          
+      - question: How are the PIN and TPM used to derive the volume master key?
+        answer: |
+          BitLocker hashes the user-specified personal identification number (PIN) by using SHA-256, and the first 160 bits of the hash are used as authorization data sent to the TPM to seal the volume master key. The volume master key is now protected by both the TPM and the PIN. To unseal the volume master key, you are required to enter the PIN each time the computer restarts or resumes from hibernation.
 
   - name: BitLocker To Go
     questions:
@@ -288,34 +285,23 @@ sections:
         answer: |
           Stored information | Description
           -------------------|------------
-          Hash of the TPM owner password | Beginning with Windows 10, the password hash isn't stored in AD DS by default. The password hash can be stored only if the TPM is owned and the ownership was taken by using components of Windows 8.1 or earlier, such as the BitLocker Setup Wizard or the TPM snap-in.
           BitLocker recovery password | The recovery password allows unlocking of and access to the drive after a recovery incident. Domain administrators can view the BitLocker recovery password by using the BitLocker Recovery Password Viewer. For more information about this tool, see [BitLocker: Use BitLocker Recovery Password Viewer](bitlocker-use-bitlocker-recovery-password-viewer.md).
           BitLocker key package | The key package helps to repair damage to the hard disk that would otherwise prevent standard recovery. Using the key package for recovery requires the BitLocker Repair Tool, `Repair-bde`. 
           
       - question: |
-          What if BitLocker is enabled on a computer before the computer has joined the domain?
+          What if BitLocker is enabled on a computer before the computer joins the domain?
         answer: |
-          If BitLocker is enabled on a drive before Group Policy has been applied to enforce a backup, the recovery information won't be automatically backed up to AD DS when the computer joins the domain or when Group Policy is subsequently applied. However, the Group Policy settings **Choose how BitLocker-protected operating system drives can be recovered**, **Choose how BitLocker-protected fixed drives can be recovered**, and **Choose how BitLocker-protected removable drives can be recovered** can be chosen to require the computer to be connected to a domain before BitLocker can be enabled to help ensure that recovery information for BitLocker-protected drives in the organization is backed up to AD DS.
+          If BitLocker is enabled on a drive before policy settings are applied to enforce a backup, the recovery information won't be automatically backed up to AD DS when the computer joins the domain or when the policy settings are subsequently applied. However, the policy settings **Choose how BitLocker-protected operating system drives can be recovered**, **Choose how BitLocker-protected fixed drives can be recovered**, and **Choose how BitLocker-protected removable drives can be recovered** can be chosen to require the computer to be connected to a domain before BitLocker can be enabled to help ensure that recovery information for BitLocker-protected drives in the organization is backed up to AD DS.
           
-          For more info, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
-          
-          The BitLocker Windows Management Instrumentation (WMI) interface does allow administrators to write a script to back up or synchronize an online client's existing recovery information. However, BitLocker doesn't automatically manage this process. The `manage-bde.exe` command-line tool can also be used to manually back up recovery information to AD DS. For example, to back up all of the recovery information for the `$env:SystemDrive` to AD DS, the following command script can be used from an elevated command prompt:
-          
-          ```powershell
-          $BitLocker = Get-BitLockerVolume -MountPoint $env:SystemDrive
-          $RecoveryProtector = $BitLocker.KeyProtector | Where-Object { $_.KeyProtectorType -eq 'RecoveryPassword' }
-          
-          Backup-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId $RecoveryProtector.KeyProtectorID
-          BackupToAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId $RecoveryProtector.KeyProtectorID
-          ```
+          For more information how to back up the recovery password to AD DS or Microsoft Entra ID, review the [BitLocker operations guide](operations-guide.md).
           
           > [!IMPORTANT]
-          > Joining a computer to the domain should be the first step for new computers within an organization. After computers are joined to a domain, storing the BitLocker recovery key to AD DS is automatic (when enabled in Group Policy).
+          > Joining a computer to the domain should be the first step for new computers within an organization. After computers are joined to a domain, storing the BitLocker recovery key to AD DS is automatic (when enabled with policy settings).
 
       - question: |
-          Is there an event log entry recorded on the client computer to indicate the success or failure of the Active Directory backup?
+          Is there an event log entry recorded on the client computer to indicate the success or failure of the Microsoft Entra ID or Active Directory backup?
         answer: |
-          Yes, an event log entry that indicates the success or failure of an Active Directory backup is recorded on the client computer. However, even if an event log entry says "Success," the information could have been subsequently removed from AD DS, or BitLocker could have been reconfigured in such a way that the Active Directory information can no longer unlock the drive (such as by removing the recovery password key protector). In addition, it's also possible that the log entry could be spoofed.
+          Yes, an event log entry that indicates the success or failure of a backup is recorded on the client computer. However, even if an event log entry says "Success," the information could have been subsequently removed from AD DS, or BitLocker could have been reconfigured in such a way that the Active Directory information can no longer unlock the drive (such as by removing the recovery password key protector). In addition, it's also possible that the log entry could be spoofed.
           
           Ultimately, determining whether a legitimate backup exists in AD DS requires querying AD DS with domain administrator credentials by using the BitLocker password viewer tool.
           
@@ -329,28 +315,28 @@ sections:
         answer: |
           If the backup initially fails, such as when a domain controller is unreachable at the time when the BitLocker setup wizard is run, BitLocker doesn't try again to back up the recovery information to AD DS.
           
-          When an administrator selects the **Require BitLocker backup to AD DS** check box of the **Store BitLocker recovery information in Active Directory Domain Service (Windows 2008 and Windows Vista)** policy setting, or the equivalent **Do not enable BitLocker until recovery information is stored in AD DS for (operating system | fixed data | removable data) drives** check box in any of the **Choose how BitLocker-protected operating system drives can be recovered**, **Choose how BitLocker-protected fixed data drives can be recovered**, and **Choose how BitLocker-protected removable data drives can be recovered** policy settings, users can't enable BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds. With these settings configured if the backup fails, BitLocker can't be enabled, ensuring that administrators will be able to recover BitLocker-protected drives in the organization.
+          When an administrator selects the **Do not enable BitLocker until recovery information is stored in AD DS for (operating system | fixed data | removable data) drives** check box in any of the **Choose how BitLocker-protected operating system drives can be recovered**, **Choose how BitLocker-protected fixed data drives can be recovered**, and **Choose how BitLocker-protected removable data drives can be recovered** policy settings, users can't enable BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds. With these settings configured if the backup fails, BitLocker can't be enabled, ensuring that administrators will be able to recover BitLocker-protected drives in the organization.
           
-          For more info, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
+          For more info, see [BitLocker policy settings](configure.md).
           
-          When an administrator clears these check boxes, the administrator is allowing a drive to be BitLocker-protected without having the recovery information successfully backed up to AD DS; however, BitLocker won't automatically retry the backup if it fails. Instead, administrators can create a backup script, as described earlier in [What if BitLocker is enabled on a computer before the computer has joined the domain?](#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-has-joined-the-domain-) to capture the information after connectivity is restored.
+          When an administrator clears these check boxes, the administrator is allowing a drive to be BitLocker-protected without having the recovery information successfully backed up to AD DS; however, BitLocker won't automatically retry the backup if it fails. Instead, administrators can create a backup script, as described earlier in [What if BitLocker is enabled on a computer before the computer joins the domain?](#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-joins-the-domain-) to capture the information after connectivity is restored.
 
   - name: Security
     questions:
       - question: |
           What form of encryption does BitLocker use? Is it configurable?
         answer: |
-          BitLocker uses Advanced Encryption Standard (AES) as its encryption algorithm with configurable key lengths of 128 bits or 256 bits. The default encryption setting is AES-128, but the options are configurable by using Group Policy.
+          BitLocker uses Advanced Encryption Standard (AES) as its encryption algorithm with configurable key lengths of 128 bits or 256 bits. The default encryption setting is AES-128, but the options are configurable by using policy settings.
 
       - question: |
           What is the best practice for using BitLocker on an operating system drive?
         answer: |
-          The recommended practice for BitLocker configuration on an operating system drive is to implement BitLocker on a computer with a TPM version 1.2 or higher, and a Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware implementation, along with a PIN. By requiring a PIN that was set by the user in addition to the TPM validation, a malicious user that has physical access to the computer can't start the computer.
+          The recommended practice for BitLocker configuration on an operating system drive is to implement BitLocker on a computer with a TPM version 1.2 or higher.
 
       - question: |
           What are the implications of using the sleep or hibernate power management options?
         answer: |
-          BitLocker on operating system drives in its basic configuration (with a TPM but without other startup authentication) provides extra security for the hibernate mode. However, BitLocker provides greater security when it's configured to use another startup authentication factor (TPM+PIN, TPM+USB, or TPM+PIN+USB) with the hibernate mode. This method is more secure because returning from hibernation requires authentication. In sleep mode, the computer is vulnerable to direct memory access attacks, since unprotected data remains in RAM. Therefore, for improved security, it's recommended to disable sleep mode and to use TPM+PIN for the authentication method. Startup authentication can be configured by using [Group Policy](./bitlocker-group-policy-settings.md) or Mobile Device Management with the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp). 
+          BitLocker on operating system drives in its basic configuration provides extra security for the hibernate mode. In sleep mode, the computer is vulnerable to direct memory access attacks, since unprotected data remains in RAM. Therefore, for improved security, it's recommended to disable sleep mode. Startup authentication can be configured by using a [policy setting](configure.md). 
           
       - question: |
           What are the advantages of a TPM?
@@ -363,9 +349,9 @@ sections:
   - name: Network Unlock
     questions:
       - question: |
-          BitLocker Network Unlock FAQ
+          What is BitLocker Network Unlock?
         answer: |  
-          BitLocker Network Unlock enables easier management for BitLocker-enabled desktops and servers that use the TPM+PIN protection method in a domain environment. When a computer that is connected to a wired corporate network is rebooted, Network Unlock allows the PIN entry prompt to be bypassed. It automatically unlocks BitLocker-protected operating system volumes by using a trusted key that is provided by the Windows Deployment Services server as its secondary authentication method.
+          BitLocker Network Unlock enables easier management for BitLocker-enabled clients and servers that use the TPM+PIN protection method in a domain environment. When a computer that is connected to a wired corporate network is rebooted, Network Unlock allows the PIN entry prompt to be bypassed. It automatically unlocks BitLocker-protected operating system volumes by using a trusted key that is provided by the Windows Deployment Services server as its secondary authentication method.
           
           To use Network Unlock, a PIN must be configured for the computer. When the computer isn't connected to the network, a PIN will need to be provided to unlock it.
           
@@ -373,7 +359,7 @@ sections:
           
           Network Unlock uses two protectors - the TPM protector and the protector provided by the network or by the PIN. Automatic unlock uses a single protector - the one stored in the TPM. If the computer is joined to a network without the key protector, it will prompt to enter a PIN. If the PIN isn't available, the recovery key will need to be used to unlock the computer if it can't be connected to the network.
           
-          For more info, see [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md).
+          For more info, see [BitLocker: How to enable Network Unlock](network-unlock.md).
 
   - name: Use BitLocker with other programs
     questions:
@@ -412,13 +398,13 @@ sections:
         answer: |
           The system check is designed to ensure the computer's BIOS or UEFI firmware is compatible with BitLocker and that the TPM is working correctly. The system check can fail for several reasons:
           
-          - The computer's BIOS or UEFI firmware can't read USB flash drives.
-          - The computer's BIOS, uEFI firmware, or boot menu doesn't have reading USB flash drives enabled.
-          - There are multiple USB flash drives inserted into the computer.
-          - The PIN wasn't entered correctly.
-          - The computer's BIOS or UEFI firmware only supports using the function keys (F1-F10) to enter numerals in the pre-boot environment.
-          - The startup key was removed before the computer finished rebooting.
-          - The TPM has malfunctioned and fails to unseal the keys.
+          - The computer's BIOS or UEFI firmware can't read USB flash drives
+          - The computer's BIOS, uEFI firmware, or boot menu doesn't have reading USB flash drives enabled
+          - There are multiple USB flash drives inserted into the computer
+          - The PIN wasn't entered correctly
+          - The computer's BIOS or UEFI firmware only supports using the function keys (F1-F10) to enter numerals in the pre-boot environment
+          - The startup key was removed before the computer finished rebooting
+          - The TPM has malfunctioned and fails to unseal the keys
           
       - question: |
           What can I do if the recovery key on my USB flash drive can't be read?
@@ -466,11 +452,11 @@ sections:
         answer: |
           BitLocker should work like any specific physical machine within its hardware limitations as long as the environment (physical or virtual) meets Windows Operating System requirements to run.
           - With TPM: Yes, it's supported.
-          - Without  TPM: Yes, it's supported (with password protector).
+          - Without TPM: Yes, it's supported (with password protector).
           
-          BitLocker is also supported on data volume VHDs, such as those used by clusters, if running Windows 10, Windows 8.1, Windows 8, Windows Server 2016, Windows Server 2012 R2, or Windows Server 2012.
+          BitLocker is also supported on data volume VHDs, such as those used by clusters.
           
       - question: |
           Can I use BitLocker with virtual machines (VMs)?
         answer: |
-          Yes. Password protectors and virtual TPMs can be used with BitLocker to protect virtual machines. VMs can be domain joined, Azure AD-joined, or workplace-joined (via **Settings** > **Accounts** > **Access work or school** > **Connect**) to receive policy. Encryption can be enabled either while creating the VM or by using other existing management tools such as the BitLocker CSP, or even by using a startup script or sign-in script delivered by Group Policy. Windows Server 2016 also supports [Shielded VMs and guarded fabric](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node) to protect VMs from malicious administrators.
+          Yes, BitLocker can be used with virtual machines (VMs) if the environment meets BitLocker's hardware and software requirements.

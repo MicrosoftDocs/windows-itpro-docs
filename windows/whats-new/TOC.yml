@@ -11,13 +11,17 @@
       href: windows-11-plan.md
     - name: Prepare for Windows 11
       href: windows-11-prepare.md
-    - name: Windows 11 temporary enterprise feature control
-      href: temporary-enterprise-feature-control.md      
+    - name: Windows 11 enterprise feature control
+      href: temporary-enterprise-feature-control.md
+    - name: What's new in Windows 11, version 23H2
+      href: whats-new-windows-11-version-23h2.md
     - name: What's new in Windows 11, version 22H2
       href: whats-new-windows-11-version-22h2.md
 - name: Windows 10
   expanded: true
   items:
+    - name: Extended Security Updates (ESU) program for Windows 10
+      href: extended-security-updates.md
     - name: What's new in Windows 10, version 22H2
       href: whats-new-windows-10-version-22H2.md
     - name: What's new in Windows 10, version 21H2
@@ -36,6 +40,6 @@
     - name: Deprecated Windows features
       href: deprecated-features.md
     - name: Resources for deprecated features
-      href: deprecated-features-resources.md       
+      href: deprecated-features-resources.md
     - name: Removed Windows features
       href: removed-features.md

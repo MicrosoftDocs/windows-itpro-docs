@@ -1,14 +1,7 @@
 ---
 title: AppLocker CSP
 description: Learn more about the AppLocker CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -76,7 +69,7 @@ The following list shows the AppLocker configuration service provider nodes:
 <!-- Device-ApplicationLaunchRestrictions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-OmaUri-Begin -->
@@ -122,7 +115,7 @@ Defines restrictions for applications.
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-OmaUri-Begin -->
@@ -162,7 +155,7 @@ Grouping nodes are dynamic nodes, and there may be any number of them for a give
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-OmaUri-Begin -->
@@ -200,7 +193,7 @@ Grouping nodes are dynamic nodes, and there may be any number of them for a give
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-OmaUri-Begin -->
@@ -242,7 +235,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-OmaUri-Begin -->
@@ -281,7 +274,7 @@ Defines restrictions for processing DLL files.
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-OmaUri-Begin -->
@@ -320,7 +313,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-OmaUri-Begin -->
@@ -358,7 +351,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-OmaUri-Begin -->
@@ -399,7 +392,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-OmaUri-Begin -->
@@ -438,7 +431,7 @@ Defines restrictions for launching executable applications.
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-OmaUri-Begin -->
@@ -477,7 +470,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-OmaUri-Begin -->
@@ -515,7 +508,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-OmaUri-Begin -->
@@ -556,7 +549,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-OmaUri-Begin -->
@@ -595,7 +588,7 @@ Defines restrictions for executing Windows Installer files.
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-OmaUri-Begin -->
@@ -634,7 +627,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-OmaUri-Begin -->
@@ -675,7 +668,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-OmaUri-Begin -->
@@ -714,7 +707,7 @@ Defines restrictions for running scripts.
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-OmaUri-Begin -->
@@ -753,7 +746,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-OmaUri-Begin -->
@@ -794,7 +787,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-OmaUri-Begin -->
@@ -833,7 +826,7 @@ Defines restrictions for running apps from the Microsoft Store.
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-OmaUri-Begin -->
@@ -872,7 +865,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-Applicability-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-OmaUri-Begin -->
@@ -913,7 +906,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-EnterpriseDataProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EnterpriseDataProtection-Applicability-End -->
 
 <!-- Device-EnterpriseDataProtection-OmaUri-Begin -->
@@ -972,7 +965,7 @@ Additional information:
 <!-- Device-EnterpriseDataProtection-{Grouping}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EnterpriseDataProtection-{Grouping}-Applicability-End -->
 
 <!-- Device-EnterpriseDataProtection-{Grouping}-OmaUri-Begin -->
@@ -1012,7 +1005,7 @@ Grouping nodes are dynamic nodes, and there may be any number of them for a give
 <!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Applicability-End -->
 
 <!-- Device-EnterpriseDataProtection-{Grouping}-EXE-OmaUri-Begin -->
@@ -1051,7 +1044,7 @@ Defines restrictions for launching executable applications.
 <!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-Applicability-End -->
 
 <!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-OmaUri-Begin -->
@@ -1092,7 +1085,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Applicability-End -->
 
 <!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-OmaUri-Begin -->
@@ -1131,7 +1124,7 @@ Defines restrictions for running apps from the Microsoft Store.
 <!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-Applicability-End -->
 
 <!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-OmaUri-Begin -->
@@ -1172,7 +1165,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-FamilySafety-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FamilySafety-Applicability-End -->
 
 <!-- Device-FamilySafety-OmaUri-Begin -->
@@ -1210,7 +1203,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-FamilySafety-{Grouping}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FamilySafety-{Grouping}-Applicability-End -->
 
 <!-- Device-FamilySafety-{Grouping}-OmaUri-Begin -->
@@ -1249,7 +1242,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-FamilySafety-{Grouping}-EXE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FamilySafety-{Grouping}-EXE-Applicability-End -->
 
 <!-- Device-FamilySafety-{Grouping}-EXE-OmaUri-Begin -->
@@ -1287,7 +1280,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Applicability-End -->
 
 <!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-OmaUri-Begin -->
@@ -1326,7 +1319,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-FamilySafety-{Grouping}-EXE-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FamilySafety-{Grouping}-EXE-Policy-Applicability-End -->
 
 <!-- Device-FamilySafety-{Grouping}-EXE-Policy-OmaUri-Begin -->
@@ -1367,7 +1360,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-FamilySafety-{Grouping}-StoreApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FamilySafety-{Grouping}-StoreApps-Applicability-End -->
 
 <!-- Device-FamilySafety-{Grouping}-StoreApps-OmaUri-Begin -->
@@ -1405,7 +1398,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Applicability-End -->
 
 <!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-OmaUri-Begin -->
@@ -1444,7 +1437,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-Applicability-End -->
 
 <!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-OmaUri-Begin -->
@@ -1485,7 +1478,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-LaunchControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LaunchControl-Applicability-End -->
 
 <!-- Device-LaunchControl-OmaUri-Begin -->
@@ -1523,7 +1516,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-LaunchControl-{Grouping}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LaunchControl-{Grouping}-Applicability-End -->
 
 <!-- Device-LaunchControl-{Grouping}-OmaUri-Begin -->
@@ -1562,7 +1555,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-LaunchControl-{Grouping}-EXE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LaunchControl-{Grouping}-EXE-Applicability-End -->
 
 <!-- Device-LaunchControl-{Grouping}-EXE-OmaUri-Begin -->
@@ -1600,7 +1593,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Applicability-End -->
 
 <!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-OmaUri-Begin -->
@@ -1639,7 +1632,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-LaunchControl-{Grouping}-EXE-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LaunchControl-{Grouping}-EXE-Policy-Applicability-End -->
 
 <!-- Device-LaunchControl-{Grouping}-EXE-Policy-OmaUri-Begin -->
@@ -1680,7 +1673,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-LaunchControl-{Grouping}-StoreApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LaunchControl-{Grouping}-StoreApps-Applicability-End -->
 
 <!-- Device-LaunchControl-{Grouping}-StoreApps-OmaUri-Begin -->
@@ -1718,7 +1711,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 <!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Applicability-End -->
 
 <!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-OmaUri-Begin -->
@@ -1757,7 +1750,7 @@ The EnforcementMode node for Windows Information Protection (formerly known as E
 <!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-Applicability-End -->
 
 <!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-OmaUri-Begin -->

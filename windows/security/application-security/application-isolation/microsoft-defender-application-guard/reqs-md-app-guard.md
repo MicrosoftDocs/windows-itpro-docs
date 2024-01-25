@@ -3,10 +3,12 @@ title: System requirements for Microsoft Defender Application Guard
 description: Learn about the system requirements for installing and running Microsoft Defender Application Guard.
 ms.topic: overview
 ms.localizationpriority: medium
-ms.date: 07/11/2023
+ms.date: 12/12/2023
 ---
 
 # System requirements for Microsoft Defender Application Guard
+
+[!INCLUDE [mdag-edge-deprecation-notice](../../../includes/mdag-edge-deprecation-notice.md)]
 
 The threat landscape is continually evolving. While hackers are busy developing new techniques to breach enterprise networks by compromising workstations, phishing schemes remain one of the top ways to lure employees into social engineering attacks. Microsoft Defender Application Guard is designed to help prevent old, and newly emerging attacks, to help keep employees productive.
 
@@ -34,6 +36,6 @@ Your environment must have the following hardware to run Microsoft Defender Appl
 
 | Software | Description |
 |--------|-----------|
-| Operating system | Windows 10 Enterprise edition, version 1809 or later <br/> Windows 10 Professional edition, version 1809 or later <br/> Windows 10 Professional for Workstations edition, version 1809 or later <br/> Windows 10 Professional Education edition, version 1809 or later <br/> Windows 10 Education edition, version 1809 or later <br/> Windows 11 Education, Enterprise, and Professional editions |
+| Operating system | Windows 10 Enterprise or Education editions, version 1809 or later <br/> Windows 10 Professional edition, version 1809 or later (only [standalone mode](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/install-md-app-guard#standalone-mode) is supported)  <br/> Windows 11 Education or Enterprise editions <br/> Windows 11 Professional edition (only [Standalone mode](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/install-md-app-guard#standalone-mode) is supported) |
 | Browser | Microsoft Edge |
 | Management system <br> (only for managed devices)| [Microsoft Intune](/intune/) <p> **OR** <p> [Microsoft Configuration Manager](/configmgr/) <p> **OR** <p> [Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753298(v=ws.11)) <p> **OR** <p>Your current, company-wide, non-Microsoft mobile device management (MDM) solution. For info about non-Microsoft MDM solutions, see the documentation that came with your product. |

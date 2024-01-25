@@ -2,9 +2,8 @@
 title: Troubleshoot the TPM
 description: Learn how to view and troubleshoot the Trusted Platform Module (TPM).
 ms.topic: conceptual
-ms.date: 02/02/2023
+ms.date: 11/17/2023
 ms.collection:
-- highpri
 - tier1
 ---
 
@@ -16,13 +15,14 @@ This article provides information how to troubleshoot the Trusted Platform Modul
 - [Clear all the keys from the TPM](#clear-all-the-keys-from-the-tpm)
 
 With TPM 1.2 and Windows 11, you can also take the following actions:
-- [Turn on or turn off the TPM](#turn-on-or-turn-off)
+
+- [Turn on or turn off the TPM](#turn-on-or-turn-off-the-tpm)
 
 For information about the TPM cmdlets, see [TPM Cmdlets in Windows PowerShell](/powershell/module/trustedplatformmodule/?view=win10-ps&preserve-view=true).
 
 ## About TPM initialization and ownership
 
-Windows automatically initializes and takes ownership of the TPM. This is a change from previous operating systems, where you had to initialize the TPM and create an owner password.
+Windows automatically initializes and takes ownership of the TPM. There's no need for you to initialize the TPM and create an owner password.
 
 ### TPM initialization
 
@@ -69,7 +69,7 @@ Clearing the TPM can result in data loss. To protect against such loss, review t
 
 Membership in the local Administrators group, or equivalent, is the minimum required to complete this procedure.
 
-**To clear the TPM**
+#### To clear the TPM
 
 1. Open the Windows Defender Security Center app.
 1. Select **Device security**.
@@ -79,7 +79,7 @@ Membership in the local Administrators group, or equivalent, is the minimum requ
     - You'll be prompted to restart the computer. During the restart, you might be prompted by the UEFI to press a button to confirm that you wish to clear the TPM.
     - After the device restarts, your TPM will be automatically prepared for use by Windows.
 
-## <a href="" id="turn-on-or-turn-off"></a>Turn on or turn off the TPM
+## Turn on or turn off the TPM
 
 Normally, the TPM is turned on as part of the TPM initialization process. You don't normally need to turn the TPM on or off. However, if necessary you can do so by using the TPM MMC.
 
@@ -103,7 +103,7 @@ If you want to stop using the services that are provided by the TPM, you can use
    - If you saved your TPM owner password on a removable storage device, insert it, and then select **I have the owner password file**. In the **Select backup file with the TPM owner password** dialog box, select **Browse** to locate the *.tpm* file that is saved on your removable storage device, select **Open**, and then select **Turn TPM Off**.
    - If you don't have the removable storage device with your saved TPM owner password, select **I want to enter the password**. In the **Type your TPM owner password** dialog box, type your password (including hyphens), and then select **Turn TPM Off**.
    - If you didn't save your TPM owner password or no longer know it, select **I do not have the TPM owner password**, and follow the instructions that are provided in the dialog box and subsequent UEFI screens to turn off the TPM without entering the password.
-  
+
 ## Use the TPM cmdlets
 
 You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](/powershell/module/trustedplatformmodule/?view=win10-ps&preserve-view=true).

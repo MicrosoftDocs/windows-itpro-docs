@@ -1,0 +1,51 @@
+### YamlMime:FAQ
+
+metadata:
+  title: Frequently asked questions for Personal Data Encryption (PDE)
+  description: Answers to common questions regarding Personal Data Encryption (PDE).
+  ms.topic: faq
+  ms.date: 08/11/2023
+
+title: Frequently asked questions for Personal Data Encryption (PDE)
+summary: |
+  Here are some answers to common questions regarding Personal Data Encryption (PDE)
+
+sections:
+  - name: General
+    questions:
+      - question: Can PDE encrypt entire volumes or drives?
+        answer: |
+          No. PDE only encrypts specified files and content.
+      - question: How are files and content protected by PDE selected?
+        answer: |
+          [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager) are used to select which files and content are protected using PDE.
+      - question: Can users manually encrypt and decrypt files with PDE?
+        answer: |
+          Currently users can decrypt files manually but they can't encrypt files manually. For information on how a user can manually decrypt a file, see the section [Decrypt PDE-encrypted content](configure.md#decrypt-pde-encrypted-content). 
+      - question: Can PDE protected content be accessed after signing on via a Remote Desktop connection (RDP)?
+        answer: |
+          No. Accessing PDE protected content over RDP isn't currently supported.
+      - question: Can PDE protected content be accessed via a network share?
+        answer: |
+          No. PDE protected content can only be accessed after signing on locally to Windows with Windows Hello for Business credentials.
+      - question: What encryption method and strength does PDE use?
+        answer: |
+          PDE uses AES-CBC with a 256-bit key to encrypt content.
+
+  - name: PDE and other Windows features
+    questions:
+      - question: What is the relation between Windows Hello for Business and PDE?
+        answer: |
+          During user sign-on, Windows Hello for Business unlocks the keys that PDE uses to protect content.
+      - question: If a user signs into Windows with a password instead of Windows Hello for Business, will they be able to access their PDE protected content?
+        answer: |
+          No. The keys used by PDE to protect content are protected by Windows Hello for Business credentials and will only be unlocked when signing on with Windows Hello for Business PIN or biometrics.
+      - question: Can a file be protected with both PDE and EFS at the same time?
+        answer: |
+          No. PDE and EFS are mutually exclusive.
+      - question: Is PDE a replacement for BitLocker?
+        answer: |
+          No. It's still recommended to encrypt all volumes with BitLocker Drive Encryption for increased security.
+      - question: Do I need to use OneDrive in Microsoft 365 as my backup provider?
+        answer: |
+          No. PDE doesn't have a requirement for a backup provider, including OneDrive in Microsoft 365. However, backups are recommended in case the keys used by PDE to protect files are lost. OneDrive in Microsoft 365 is a recommended backup provider.

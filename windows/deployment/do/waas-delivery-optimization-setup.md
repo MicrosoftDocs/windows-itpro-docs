@@ -1,24 +1,23 @@
 ---
 title: Set up Delivery Optimization
-description: In this article, learn how to set up Delivery Optimization.
+description: In this article, learn how to set up Delivery Optimization for use by Windows clients in your organization.
+ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: how-to
 author: cmknox
 ms.author: carmenf
 ms.reviewer: mstewart
 manager: aaroncz
-ms.prod: windows-client
-ms.technology: itpro-updates
-ms.localizationpriority: medium
-ms.topic: how-to
-ms.date: 12/19/2022
 ms.collection: tier3
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
+ms.date: 08/15/2023
 ---
 
 # Set up Delivery Optimization for Windows
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
@@ -30,7 +29,7 @@ You find the Delivery Optimization settings in Group Policy under **Computer Con
 
 Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile, which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](/mem/intune/configuration/delivery-optimization-windows).
 
-**Starting with Windows 10, version 1903**, you can use the Azure Active Directory (Azure AD) Tenant ID as a means to define groups. To set the value for [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) to its new maximum value of 5.
+**Starting with Windows 10, version 1903**, you can use the Microsoft Entra tenant ID as a means to define groups. To set the value for [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) to its new maximum value of 5.
 
 ## Allow service endpoints
 
@@ -67,7 +66,7 @@ Quick-reference table:
 
 ### Hybrid WAN scenario
 
-For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group, when the GroupID or GroupIDSource policies aren't set, is the AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. If your domain-based group is too wide, or your Active Directory sites aren't aligned with your site network topology, then you should consider other options for dynamically creating groups, for example by using the [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) policy.
+For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group, when the GroupID or GroupIDSource policies aren't set, is the AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order. If your domain-based group is too wide, or your Active Directory sites aren't aligned with your site network topology, then you should consider other options for dynamically creating groups, for example by using the [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) policy.
 
 In Group Policy go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
 
@@ -109,17 +108,6 @@ With Group Policy, go to **Computer Configuration\Administrative Templates\Windo
 Using MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set [DOMaxCacheAge](/windows/client-management/mdm/policy-csp-deliveryoptimization#domaxcacheage) to 7 or more (up to 30 days).
 
 [Learn more](delivery-optimization-test.md) about Delivery Optimization testing scenarios.
-
-<!--Using include file, waas-delivery-optimization-monitor.md, for shared content on DO monitoring-->
-[!INCLUDE [Monitor Delivery Optimization](includes/waas-delivery-optimization-monitor.md)]
-
-### Monitor with Windows Update for Business Delivery Optimization Report
-
-Windows Update for Business Delivery Optimization Report provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer, Microsoft Connected Cache (MCC), HTTP source/CDN distribution over the past 28 days.
-
-:::image type="content" source="/windows/deployment/update/images/wufb-do-overview.png" alt-text="This screenshot shows the Windows Update for Business report, Delivery Optimization status in Update Compliance." lightbox="/windows/deployment/update/images/wufb-do-overview.png":::
-
-For details, see [Windows Update for Business Delivery Optimization Report](../update/wufb-reports-overview.md).
 
 ## Troubleshooting
 

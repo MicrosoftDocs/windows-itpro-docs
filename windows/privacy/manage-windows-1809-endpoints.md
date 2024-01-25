@@ -1,12 +1,12 @@
 ---
 title: Connection endpoints for Windows 10, version 1809
 description: Explains what Windows 10 endpoints are used for, how to turn off traffic to them, and the impact. Specific to Windows 10 Enterprise, version 1809.
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
+manager: laurawi
 ms.date: 01/18/2018
 ms.topic: reference
 ---
@@ -296,7 +296,6 @@ If you [turn off traffic for these endpoints](manage-connections-from-windows-op
 | Source process | Protocol | Destination |
 |:--------------:|:--------:|:------------|
 |  | HTTP   | `storeedgefd.dsx.mp.microsoft.com`  |
-|  | HTTP \ HTTPS   | `pti.store.microsoft.com`  |
 ||TLS v1.2| `cy2.*.md.mp.microsoft.com.*.` |
 | svchost | HTTPS | `displaycatalog.mp.microsoft.com` |
 

@@ -1,30 +1,21 @@
 ---
 title: Mobile device enrollment
-description: Learn how mobile device enrollment verifies that only authenticated and authorized devices can be managed by their enterprise.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 04/05/2023
+description: Learn how mobile device enrollment verifies that only authenticated and authorized devices are managed by the enterprise.
+ms.topic: conceptual
+ms.date: 08/10/2023
 ms.collection:
 - highpri
 - tier2
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Mobile device enrollment
 
-Mobile device enrollment is the first phase of enterprise management. The device is configured to communicate with the MDM server using security precautions during the enrollment process. The enrollment service verifies that only authenticated and authorized devices can be managed by their enterprise.
+Mobile device enrollment is the first phase of enterprise management. The device is configured to communicate with the MDM server using security precautions during the enrollment process. The enrollment service verifies that only authenticated and authorized devices are managed by the enterprise.
 
 The enrollment process includes the following steps:
 
 1. **Discovery of the enrollment endpoint**: This step provides the enrollment endpoint configuration settings.
-1. **Certificate installation**: This step handles user authentication, certificate generation, and certificate installation. The installed certificates will be used in the future to manage client/server Secure Sockets Layer (SSL) mutual authentication.
+1. **Certificate installation**: This step handles user authentication, certificate generation, and certificate installation. The installed certificates will be used in the future to manage client/server (TLS/SSL) mutual authentication.
 1. **DM Client provisioning**: This step configures the Device Management (DM) client to connect to a Mobile Device Management (MDM) server after enrollment via DM SyncML over HTTPS (also known as Open Mobile Alliance Device Management (OMA DM) XML).
 
 ## Enrollment protocol
@@ -52,9 +43,9 @@ The certificate enrollment is an implementation of the MS-WSTEP protocol.
 
 ### Management configuration
 
-The server sends provisioning XML that contains a server certificate (for SSL server authentication), a client certificate issued by enterprise CA, DM client bootstrap information (for the client to communicate with the management server), an enterprise application token (for the user to install enterprise applications), and the link to download the Company Hub application.
+The server sends provisioning XML that contains a server certificate (for TLS/SSL server authentication), a client certificate issued by enterprise CA, DM client bootstrap information (for the client to communicate with the management server), an enterprise application token (for the user to install enterprise applications), and the link to download the Company Hub application.
 
-The following topics describe the end-to-end enrollment process using various authentication methods:
+The following articles describe the end-to-end enrollment process using various authentication methods:
 
 - [Federated authentication device enrollment](federated-authentication-device-enrollment.md)
 - [Certificate authentication device enrollment](certificate-authentication-device-enrollment.md)
@@ -69,7 +60,7 @@ The following topics describe the end-to-end enrollment process using various au
 
 ## Enrollment support for domain-joined devices
 
-Devices that are joined to an on-premises Active Directory can enroll into MDM via **Settings** > **Access work or school**. However, the enrollment can only target the user enrolled with user-specific policies. Device targeted policies will continue to impact all users of the device.
+Devices that are joined to an on-premises Active Directory can enroll into MDM via **Settings** > **Access work or school**. However, the enrollment can only target the user enrolled with user-specific policies. Device targeted policies continue to target all users of the device.
 
 ## Enrollment scenarios not supported
 
@@ -124,7 +115,7 @@ The enrollment server can decline enrollment messages using the SOAP Fault forma
 | s:        | CertificateRequest   | MENROLL_E_DEVICE_CERTIFICATEREQUEST_ERROR | The user has no permission for the certificate template or the certificate authority is unreachable. Try again or contact your system administrator. | 80180004 |
 | s:        | EnrollmentServer     | MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR    | The Mobile Device Management (MDM) server encountered an error. Try again or contact your system administrator.                                      | 80180005 |
 | a:        | InternalServiceFault | MENROLL_E_DEVICE_INTERNALSERVICE_ERROR    | There was an unhandled exception on the Mobile Device Management (MDM) server. Try again or contact your system administrator.                       | 80180006 |
-| a:        | InvalidSecurity      | MENROLL_E_DEVICE_INVALIDSECURITY_ERROR    | The Mobile Device Management (MDM) server was not able to validate your account. Try again or contact your system administrator.                     | 80180007 |
+| a:        | InvalidSecurity      | MENROLL_E_DEVICE_INVALIDSECURITY_ERROR    | The Mobile Device Management (MDM) server wasn't able to validate your account. Try again or contact your system administrator.                     | 80180007 |
 
 SOAP format also includes `deviceenrollmentserviceerror` element. Here's an example:
 
@@ -172,7 +163,7 @@ SOAP format also includes `deviceenrollmentserviceerror` element. Here's an exam
 
 TraceID is a freeform text node that is logged. It should identify the server side state for this enrollment attempt. This information may be used by support to look up why the server declined the enrollment.
 
-## Related topics
+## Related articles
 
 - [MDM enrollment of Windows-based devices](mdm-enrollment-of-windows-devices.md)
 - [Federated authentication device enrollment](federated-authentication-device-enrollment.md)

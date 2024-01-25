@@ -2,9 +2,8 @@
 title: "Audit: Audit the use of Backup and Restore privilege (Windows 10)"
 description: "Describes the best practices, location, values, and security considerations for the 'Audit: Audit the use of Backup and Restore privilege' security policy setting."
 ms.assetid: f656a2bb-e8d6-447b-8902-53df3a7756c5
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/01/2019
-ms.technology: itpro-security
 ---
 
 # Audit: Audit the use of Backup and Restore privilege
@@ -51,11 +49,11 @@ The following table lists the actual and effective default values for this polic
 | - | - |
 | Default Domain Policy | Not defined |
 | Default Domain Controller Policy | Not defined |
-| Stand-Alone Server Default Settings | Disabled | 
-| DC Effective Default Settings | Disabled | 
-| Member Server Effective Default Settings | Disabled | 
-| Client Computer Effective Default Settings | Disabled | 
- 
+| Stand-Alone Server Default Settings | Disabled |
+| DC Effective Default Settings | Disabled |
+| Member Server Effective Default Settings | Disabled |
+| Client Computer Effective Default Settings | Disabled |
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -92,4 +90,4 @@ If you enable this policy setting, a large number of security events could be ge
 ## Related topics
 
 - [Security Options](security-options.md)
- 
+

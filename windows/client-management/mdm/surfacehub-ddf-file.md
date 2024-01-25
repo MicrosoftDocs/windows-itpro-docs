@@ -1,14 +1,7 @@
 ---
 title: SurfaceHub DDF file
 description: View the XML file containing the device description framework (DDF) for the SurfaceHub configuration service provider.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/01/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1348,6 +1341,43 @@ The following XML file contains the device description framework (DDF) for the S
           </DFType>
           <MSFT:Applicability>
             <MSFT:OsBuildVersion>10.0.15063</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.0</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>false</MSFT:Value>
+              <MSFT:ValueDescription>Disabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>true</MSFT:Value>
+              <MSFT:ValueDescription>Enabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>DefaultAutomaticFraming</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>true</DefaultValue>
+          <Description>Specifies whether the Surface Hub 2 Smart Camera feature to automatically zoom and keep users centered in the video is enabled.</Description>
+          <DFFormat>
+            <bool />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.19042</MSFT:OsBuildVersion>
             <MSFT:CspVersion>1.0</MSFT:CspVersion>
           </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="ENUM">

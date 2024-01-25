@@ -1,26 +1,17 @@
 ---
 title: Bulk enrollment
-description: Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to re-image the devices.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 04/05/2023
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+description: Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to reimage the devices.
+ms.topic: conceptual
+ms.date: 08/10/2023
 ---
 
 # Bulk enrollment using Windows Configuration Designer
 
-Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to re-image the devices. You can use the [Provisioning CSP](mdm/provisioning-csp.md) for bulk enrollment, except for the Azure Active Directory Join enrollment scenario.
+Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to reimage the devices. You can use the [Provisioning CSP](mdm/provisioning-csp.md) for bulk enrollment, except for the Microsoft Entra join enrollment scenario.
 
 ## Typical use cases
 
-- Set up devices in bulk for large organizations to be managed by MDM.
+- Set up devices in bulk for large organizations for MDM management.
 - Set up kiosks, such as ATMs or point-of-sale (POS) terminals.
 - Set up school computers.
 - Set up industrial machinery.
@@ -32,10 +23,10 @@ On the desktop and mobile devices, you can use an enrollment certificate or enro
 
 > [!NOTE]
 >
-> - Bulk-join is not supported in Azure Active Directory Join.
+> - Bulk-join is not supported in Microsoft Entra join.
 > - Bulk enrollment does not work in Intune standalone environment.
 > - Bulk enrollment works in Microsoft Intune where the ppkg is generated from the Configuration Manager console.
-> - To change bulk enrollment settings, login to **Azure AD**, then **Devices**, and then click **Device Settings**. Change the number under **Maximum number of devices per user**.
+> - To change bulk enrollment settings, login to **Microsoft Entra ID**, then **Devices**, and then click **Device Settings**. Change the number under **Maximum number of devices per user**.
 > - Bulk Token creation is not supported with federated accounts.
 
 ## What you need
@@ -130,7 +121,7 @@ Using the WCD, create a provisioning package using the enrollment information re
 
 1. Configure the other settings, such as the Wi-Fi connection so that the device can join a network before joining MDM (for example, **Runtime settings** > **ConnectivityProfiles** > **WLANSetting**).
 1. When you're done adding all the settings, on the **File** menu, select **Save**.
-1. Export and build the package (steps 10-13 in the procedure above).
+1. Export and build the package (steps 10-13 in previous section).
 1. Apply the package to some test devices and verify that they work. For more information, see [Apply a provisioning package](#apply-a-provisioning-package).
 1. Apply the package to your devices.
 
@@ -148,9 +139,9 @@ Using the WCD, create a provisioning package using the enrollment information re
 
 ## Retry logic if there's a failure
 
-- If the provisioning engine receives a failure from a CSP, it will retry to provision three times in a row.
-- If all immediate attempts fail, a delayed task is launched to try provisioning again later. It will retry four times at a decaying rate of 15 minutes -> 1 hr -> 4 hr -> "Next System Start". These attempts will be run from the SYSTEM context.
-- It will also retry to apply the provisioning each time it's launched, if started from somewhere else as well.
+- If the provisioning engine receives a failure from a CSP, it retries provisioning three times in a row.
+- If all immediate attempts fail, a delayed task is launched to try provisioning again later. It will retry four times at a decaying rate of 15 minutes -> 1 hr -> 4 hr -> "Next System Start". These attempts are run from the SYSTEM context.
+- It also retries the provisioning each time it's launched, if started from somewhere else as well.
 - In addition, provisioning will be restarted in the SYSTEM context after a sign in and the [system has been idle](/windows/win32/taskschd/task-idle-conditions).
 
 ## Related articles

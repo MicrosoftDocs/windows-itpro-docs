@@ -1,14 +1,7 @@
 ---
 title: RemoteDesktop Policy CSP
 description: Learn more about the RemoteDesktop Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -26,7 +19,7 @@ ms.topic: reference
 <!-- AutoSubscription-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1370] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1370] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1370] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1370] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1370] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1370] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1370] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1370] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AutoSubscription-Applicability-End -->
 
 <!-- AutoSubscription-OmaUri-Begin -->
@@ -84,7 +77,7 @@ To automatically subscribe to [Azure Virtual Desktop](/azure/virtual-desktop/ove
 <!-- LoadAadCredKeyFromProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LoadAadCredKeyFromProfile-Applicability-End -->
 
 <!-- LoadAadCredKeyFromProfile-OmaUri-Begin -->
@@ -95,13 +88,13 @@ To automatically subscribe to [Azure Virtual Desktop](/azure/virtual-desktop/ove
 
 <!-- LoadAadCredKeyFromProfile-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allow encrypted DPAPI cred keys to be loaded from user profiles for AAD accounts.
+Allow encrypted DPAPI cred keys to be loaded from user profiles for Microsoft Entra accounts.
 <!-- LoadAadCredKeyFromProfile-Description-End -->
 
 <!-- LoadAadCredKeyFromProfile-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-This policy allows the user to load the data protection API (DPAPI) cred key from their user profile, and decrypt any previously encrypted DPAPI data in the user profile or encrypt any new DPAPI data. This policy is needed when using [FSLogix user profiles](/fslogix/overview) from Azure AD-joined VMs.
+This policy allows the user to load the data protection API (DPAPI) cred key from their user profile, and decrypt any previously encrypted DPAPI data in the user profile or encrypt any new DPAPI data. This policy is needed when using [FSLogix user profiles](/fslogix/overview) from Microsoft Entra joined VMs.
 <!-- LoadAadCredKeyFromProfile-Editable-End -->
 
 <!-- LoadAadCredKeyFromProfile-DFProperties-Begin -->

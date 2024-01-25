@@ -1,10 +1,9 @@
 ---
-title: Change the time zone - security policy setting 
+title: Change the time zone - security policy setting
 description: Describes the best practices, location, values, policy management, and security considerations for the Change the time zone security policy setting.
 ms.assetid: 3b1afae4-68bb-472f-a43e-49e300d73e50
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Change the time zone - security policy setting
@@ -50,13 +48,13 @@ The following table lists the actual and effective default policy values for the
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not Defined| 
-| Default Domain Controller Policy | Administrators<br/>Users| 
-| Stand-Alone Server Default Settings | Administrators<br/>Users| 
-| Domain Controller Effective Default Settings | Administrators<br/>Users| 
-| Member Server Effective Default Settings | Administrators<br/>Users| 
-| Client Computer Effective Default Settings | Administrators<br/>Users| 
- 
+| Default Domain Policy| Not Defined|
+| Default Domain Controller Policy | Administrators<br/>Users|
+| Stand-Alone Server Default Settings | Administrators<br/>Users|
+| Domain Controller Effective Default Settings | Administrators<br/>Users|
+| Member Server Effective Default Settings | Administrators<br/>Users|
+| Client Computer Effective Default Settings | Administrators<br/>Users|
+
 ## Policy management
 
 A restart of the device is not required for this policy setting to be effective.

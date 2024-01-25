@@ -2,18 +2,16 @@
 title: Kernel DMA Protection
 description: Learn how Kernel DMA Protection protects Windows devices against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices.
 ms.collection:
-  - highpri
   - tier1
 ms.topic: conceptual
-ms.date: 07/31/2023
+ms.date: 01/09/2024
 ---
 
 # Kernel DMA Protection
 
-Kernel DMA Protection is a Windows security feature that protects against external peripherals from gaining unauthorized access to memory.
+Kernel Direct Memory Access (DMA) Protection is a Windows security feature that protects against external peripherals from gaining unauthorized access to memory.
 
-PCIe hot plug devices such as Thunderbolt, USB4, and CFexpress allow users to attach classes of external peripherals, including graphics cards, to their devices with the plug-and-play ease of USB.\
-These devices are DMA-capable, and can access system memory and perform read and write operations without the need for the system processor's involvement. This capability is the reason behind the exceptional performance of PCI devices, but it also makes them susceptible to *drive-by DMA attacks*.
+PCIe hot plug devices such as Thunderbolt, USB4, and CFexpress allow users to attach classes of external peripherals, including graphics cards, to their devices with the plug-and-play ease of USB. These devices are DMA-capable, and can access system memory and perform read and write operations without the need for the system processor's involvement. This capability is the reason behind the exceptional performance of PCI devices, but it also makes them susceptible to *drive-by DMA attacks*.
 
 Drive-by DMA attacks are attacks that occur while the owner of the system isn't present and usually take just a few minutes, with simple-to-moderate attacking tools (affordable, off-the-shelf hardware and software), that don't require the disassembly of the device. For example, attackers can plug in a USB-like device while the device owner is on a break, and walk away with all the secrets on the machine, or inject a malware that allows them to have full control over the device remotely while bypassing the lock screen.
 
@@ -22,8 +20,7 @@ Drive-by DMA attacks are attacks that occur while the owner of the system isn't 
 
 ## How Windows protects against DMA drive-by attacks
 
-Windows uses the system *Input/Output Memory Management Unit (IOMMU)* to block external peripherals from starting and performing DMA, unless the drivers for these peripherals support memory isolation (such as DMA-remapping).
-Peripherals with [DMA Remapping compatible drivers][LINK-1] will be automatically enumerated, started, and allowed to perform DMA to their assigned memory regions.
+Windows uses the system *Input/Output Memory Management Unit (IOMMU)* to block external peripherals from starting and performing DMA, unless the drivers for these peripherals support memory isolation (such as DMA-remapping). Peripherals with [DMA Remapping compatible drivers][LINK-1] will be automatically enumerated, started, and allowed to perform DMA to their assigned memory regions.
 
 By default, peripherals with DMA Remapping incompatible drivers will be blocked from starting and performing DMA until an authorized user signs into the system or unlocks the screen. IT administrators can modify the default behavior applied to devices with DMA Remapping incompatible drivers using MDM or group policies.
 
@@ -54,27 +51,27 @@ You can use the Windows Security settings to check if Kernel DMA Protection is e
 1. Open **Windows Security**.
 1. Select **Device security > Core isolation details > Memory access protection**
 
-:::image type="content" source="images/kernel-dma-protection-security-center.png" alt-text="Screenshot of Kernel DMA protection in Windows Security." lightbox="images/kernel-dma-protection-security-center.png" border="true":::
+   :::image type="content" source="images/kernel-dma-protection-security-center.png" alt-text="Screenshot of Kernel DMA protection in Windows Security." lightbox="images/kernel-dma-protection-security-center.png" border="true":::
 
-Alternatively, you can use the System Information desktop app (`msinfo32.exe`). If the system supports Kernel DMA Protection, the **Kernel DMA Protection** value will be set to **ON**.
+   Alternatively, you can use the System Information desktop app (`msinfo32.exe`). If the system supports Kernel DMA Protection, the **Kernel DMA Protection** value will be set to **ON**.
 
-:::image type="content" source="images/kernel-dma-protection.png" alt-text="Screenshot of Kernel DMA protection in System Information." lightbox="images/kernel-dma-protection.png" border="true":::
+   :::image type="content" source="images/kernel-dma-protection.png" alt-text="Screenshot of Kernel DMA protection in System Information." lightbox="images/kernel-dma-protection.png" border="true":::
 
-If the current state of **Kernel DMA Protection** is **OFF** and **Hyper-V - Virtualization Enabled in Firmware** is **NO**:
+   If the current state of **Kernel DMA Protection** is **OFF** and **Hyper-V - Virtualization Enabled in Firmware** is **NO**:
 
-- Reboot into UEFI settings
-- Turn on Intel Virtualization Technology
-- Turn on Intel Virtualization Technology for I/O (VT-d)
-- Reboot system into Windows
+   - Reboot into UEFI settings
+   - Turn on Intel Virtualization Technology
+   - Turn on Intel Virtualization Technology for I/O (VT-d)
+   - Reboot system into Windows
 
-> [!NOTE]
-> If the **Hyper-V** Windows feature is enabled, all the Hyper-V-related features will be hidden, and **A hypervisor has been detected. Features required for Hyper-V will not be displayed** entity will be shown at the bottom of the list. It means that **Hyper-V - Virtualization Enabled in Firmware** is set to **YES**.
->
-> Enabling Hyper-V virtualization in Firmware (IOMMU) is required to enable **Kernel DMA Protection**, even when the firmware has the flag of *ACPI Kernel DMA Protection Indicators* described in [Kernel DMA Protection (Memory Access Protection) for OEMs][LINK-3].
+   > [!NOTE]
+   > If the **Hyper-V** Windows feature is enabled, all the Hyper-V-related features will be hidden, and **A hypervisor has been detected. Features required for Hyper-V will not be displayed** entity will be shown at the bottom of the list. It means that **Hyper-V - Virtualization Enabled in Firmware** is set to **YES**.
+   >
+   > Enabling Hyper-V virtualization in Firmware (IOMMU) is required to enable **Kernel DMA Protection**, even when the firmware has the flag of *ACPI Kernel DMA Protection Indicators* described in [Kernel DMA Protection (Memory Access Protection) for OEMs][LINK-3].
 
-If the state of **Kernel DMA Protection** remains Off, then the system doesn't support Kernel DMA Protection.
+   If the state of **Kernel DMA Protection** remains Off, then the system doesn't support Kernel DMA Protection.
 
-For systems that don't support Kernel DMA Protection, refer to the [BitLocker countermeasures](../operating-system-security/data-protection/bitlocker/bitlocker-countermeasures.md) or [Thunderbolt 3 and Security on Microsoft Windows Operating system][EXT-1] for other means of DMA protection.
+For systems that don't support Kernel DMA Protection, refer to the [BitLocker countermeasures](../operating-system-security/data-protection/bitlocker/countermeasures.md) or [Thunderbolt 3 and Security on Microsoft Windows Operating system][EXT-1] for other means of DMA protection.
 
 ## Frequently asked questions
 
@@ -84,8 +81,7 @@ No, Kernel DMA Protection only protects against drive-by DMA attacks after the O
 
 ### How can I check if a certain driver supports DMA-remapping?
 
-Not all devices and drivers support DMA-remapping. To check if a specific driver is opted into DMA-remapping, check the values corresponding to the DMA Remapping Policy property in the Details tab of a device in Device Manager*. A value of **0** or **1** means that the device driver doesn't support DMA-remapping. A value of **2** means that the device driver supports DMA-remapping. If the property isn't available, then the device driver doesn't support DMA-remapping.
-Check the driver instance for the device you're testing. Some drivers may have varying values depending on the location of the device (internal vs. external).
+Not all devices and drivers support DMA-remapping. To check if a specific driver is opted into DMA-remapping, check the values corresponding to the DMA Remapping Policy property in the Details tab of a device in Device Manager*. A value of **0** or **1** means that the device driver doesn't support DMA-remapping. A value of **2** means that the device driver supports DMA-remapping. If the property isn't available, then the device driver doesn't support DMA-remapping. Check the driver instance for the device you're testing. Some drivers may have varying values depending on the location of the device (internal vs. external).
 
 :::image type="content" source="images/device-details.png" alt-text="Screenshot of device details for a Thunderbolt controller showing a value of 2." border="false":::
 

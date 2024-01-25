@@ -1,20 +1,8 @@
 ---
 title: Windows Libraries
 description: All about Windows Libraries, which are containers for users' content, such as Documents and Pictures.
-ms.prod: windows-client
-author: vinaypamnani-msft
-ms.author: vinpa
-manager: aaroncz
-ms.reviewer:
-ms.technology: itpro-manage
-ms.topic: article
-ms.date: 04/11/2023
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2022</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2019</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016</a>
+ms.topic: conceptual
+ms.date: 08/10/2023
 ---
 
 # Windows libraries
@@ -23,7 +11,7 @@ Libraries are virtual containers for users' content. A library can contain files
 
 ## Features for Users
 
-Windows libraries are backed by full content search and rich metadata. Libraries offer the following advantages to users:
+Windows libraries provide full content search and rich metadata. Libraries offer the following advantages to users:
 
 - Aggregate content from multiple storage locations into a single, unified presentation.
 - Enable users to stack and group library contents based on metadata.
@@ -63,7 +51,7 @@ Libraries are built upon the legacy known folders (such as My Documents, My Pict
 
 ### Hiding Default Libraries
 
-Users or administrators can hide or delete the default libraries, though the libraries node in the Navigation pane can't be hidden or deleted. Hiding a default library is preferable to deleting it, as applications like Windows Media Player rely on the default libraries and will re-create them if they don't exist on the computer. See [How to Hide Default Libraries](/previous-versions/windows/it-pro/windows-7/ee461108(v=ws.10)#BKMK_HideDefaultLibraries) for instructions.
+Users or administrators can hide or delete the default libraries, though the libraries node in the Navigation pane can't be hidden or deleted. Hiding a default library is preferable to deleting it, as applications like Windows Media Player rely on the default libraries and re-create them if they don't exist on the computer. See [How to Hide Default Libraries](/previous-versions/windows/it-pro/windows-7/ee461108(v=ws.10)#BKMK_HideDefaultLibraries) for instructions.
 
 ### Default Save Locations for Libraries
 
@@ -117,9 +105,7 @@ The following library attributes can be modified within Windows Explorer, the Li
 - Order of library locations
 - Default save location
 
-The library icon can be modified by the administrator or user by directly editing the Library Description schema file.
-
-See [Library Description Schema](/windows/win32/shell/library-schema-entry) for information on creating Library Description files.
+The library icon can be modified by the administrator or user by directly editing the Library Description schema file. See [Library Description Schema](/windows/win32/shell/library-schema-entry) for information on creating Library Description files.
 
 ## See also
 

@@ -1,22 +1,13 @@
 ---
 title: Authentication Policy CSP
 description: Learn more about the Authentication Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- Authentication-Begin -->
 # Policy CSP - Authentication
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Authentication-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -28,7 +19,7 @@ ms.topic: reference
 <!-- AllowAadPasswordReset-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowAadPasswordReset-Applicability-End -->
 
 <!-- AllowAadPasswordReset-OmaUri-Begin -->
@@ -39,13 +30,13 @@ ms.topic: reference
 
 <!-- AllowAadPasswordReset-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether password reset is enabled for AAD accounts.
+Specifies whether password reset is enabled for Microsoft Entra accounts.
 <!-- AllowAadPasswordReset-Description-End -->
 
 <!-- AllowAadPasswordReset-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-This policy allows the Azure Active Directory (Azure AD) tenant administrator to enable the self-service password reset feature on the Windows sign-in screen.
+This policy allows the Microsoft Entra tenant administrator to enable the self-service password reset feature on the Windows sign-in screen.
 <!-- AllowAadPasswordReset-Editable-End -->
 
 <!-- AllowAadPasswordReset-DFProperties-Begin -->
@@ -79,7 +70,7 @@ This policy allows the Azure Active Directory (Azure AD) tenant administrator to
 <!-- AllowEAPCertSSO-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowEAPCertSSO-Applicability-End -->
 
 <!-- AllowEAPCertSSO-OmaUri-Begin -->
@@ -90,7 +81,7 @@ This policy allows the Azure Active Directory (Azure AD) tenant administrator to
 
 <!-- AllowEAPCertSSO-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows an EAP cert-based authentication for a single sign on (SSO) to access internal resources.
+Allows an EAP cert-based authentication for a single sign-on (SSO) to access internal resources.
 <!-- AllowEAPCertSSO-Description-End -->
 
 <!-- AllowEAPCertSSO-Editable-Begin -->
@@ -128,7 +119,7 @@ Allows an EAP cert-based authentication for a single sign on (SSO) to access int
 <!-- AllowFastReconnect-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowFastReconnect-Applicability-End -->
 
 <!-- AllowFastReconnect-OmaUri-Begin -->
@@ -177,7 +168,7 @@ Allows EAP Fast Reconnect from being attempted for EAP Method TLS. Most restrict
 <!-- AllowSecondaryAuthenticationDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowSecondaryAuthenticationDevice-Applicability-End -->
 
 <!-- AllowSecondaryAuthenticationDevice-OmaUri-Begin -->
@@ -188,7 +179,7 @@ Allows EAP Fast Reconnect from being attempted for EAP Method TLS. Most restrict
 
 <!-- AllowSecondaryAuthenticationDevice-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy allows users to use a companion device, such as a phone, fitness band, or IoT device, to sign on to a desktop computer running Windows 10. The companion device provides a second factor of authentication with Windows Hello.
+This policy allows users to use a companion device, such as a phone, fitness band, or IoT device, to sign-on to a desktop computer running Windows 10. The companion device provides a second factor of authentication with Windows Hello.
 
 - If you enable or don't configure this policy setting, users can authenticate to Windows Hello using a companion device.
 
@@ -244,7 +235,7 @@ This policy allows users to use a companion device, such as a phone, fitness ban
 <!-- ConfigureWebcamAccessDomainNames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureWebcamAccessDomainNames-Applicability-End -->
 
 <!-- ConfigureWebcamAccessDomainNames-OmaUri-Begin -->
@@ -262,7 +253,7 @@ Specifies a list of domains that are allowed to access the webcam in Web Sign-in
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 > [!NOTE]
-> Web sign-in is only supported on Azure AD joined PCs.
+> Web sign-in is only supported on Microsoft Entra joined PCs.
 <!-- ConfigureWebcamAccessDomainNames-Editable-End -->
 
 <!-- ConfigureWebcamAccessDomainNames-DFProperties-Begin -->
@@ -293,7 +284,7 @@ Your organization federates to "Contoso IDP" and your web sign-in portal at `sig
 <!-- ConfigureWebSignInAllowedUrls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.2145] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134.2145] and later |
 <!-- ConfigureWebSignInAllowedUrls-Applicability-End -->
 
 <!-- ConfigureWebSignInAllowedUrls-OmaUri-Begin -->
@@ -312,7 +303,7 @@ Specifies a list of URLs that are navigable in Web Sign-in based authentication 
 
 This policy specifies the list of domains that users can access in certain authentication scenarios. For example:
 
-- Azure Active Directory (Azure AD) PIN reset
+- Microsoft Entra ID PIN reset
 - Web sign-in Windows device scenarios where authentication is handled by Active Directory Federation Services (AD FS) or a third-party federated identity provider
 
 > [!NOTE]
@@ -347,7 +338,7 @@ Your organization's PIN reset or web sign-in authentication flow is expected to 
 <!-- EnableFastFirstSignIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- EnableFastFirstSignIn-Applicability-End -->
 
 <!-- EnableFastFirstSignIn-OmaUri-Begin -->
@@ -358,13 +349,13 @@ Your organization's PIN reset or web sign-in authentication flow is expected to 
 
 <!-- EnableFastFirstSignIn-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether new non-admin AAD accounts should auto-connect to pre-created candidate local accounts.
+Specifies whether new non-admin Microsoft Entra accounts should auto-connect to pre-created candidate local accounts.
 <!-- EnableFastFirstSignIn-Description-End -->
 
 <!-- EnableFastFirstSignIn-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Azure Active Directory (Azure AD) accounts to the pre-configured candidate local accounts.
+This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Microsoft Entra accounts to the pre-configured candidate local accounts.
 
 > [!IMPORTANT]
 > Pre-configured candidate local accounts are any local accounts that are pre-configured or added on the device.
@@ -386,8 +377,8 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 | Value | Description |
 |:--|:--|
 | 0 (Default) | The feature defaults to the existing SKU and device capabilities. |
-| 1 | Enabled. Auto-connect new non-admin Azure AD accounts to pre-configured candidate local accounts. |
-| 2 | Disabled. Don't auto-connect new non-admin Azure AD accounts to pre-configured local accounts. |
+| 1 | Enabled. Auto-connect new non-admin Microsoft Entra accounts to pre-configured candidate local accounts. |
+| 2 | Disabled. Don't auto-connect new non-admin Microsoft Entra accounts to pre-configured local accounts. |
 <!-- EnableFastFirstSignIn-AllowedValues-End -->
 
 <!-- EnableFastFirstSignIn-Examples-Begin -->
@@ -402,7 +393,7 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 <!-- EnablePasswordlessExperience-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 23H2 [10.0.22631.2506] and later |
 <!-- EnablePasswordlessExperience-Applicability-End -->
 
 <!-- EnablePasswordlessExperience-OmaUri-Begin -->
@@ -413,7 +404,7 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 
 <!-- EnablePasswordlessExperience-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether connected users on AADJ devices receive a Passwordless experience on Windows.
+Specifies whether connected users on Microsoft Entra joined devices receive a Passwordless experience on Windows.
 <!-- EnablePasswordlessExperience-Description-End -->
 
 <!-- EnablePasswordlessExperience-Editable-Begin -->
@@ -452,7 +443,7 @@ Specifies whether connected users on AADJ devices receive a Passwordless experie
 <!-- EnableWebSignIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- EnableWebSignIn-Applicability-End -->
 
 <!-- EnableWebSignIn-OmaUri-Begin -->
@@ -469,13 +460,10 @@ Specifies whether web-based sign-in is allowed for signing in to Windows.
 <!-- EnableWebSignIn-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-> [!WARNING]
-> The Web sign-in feature is intended for recovery purposes in the event a password isn't available as an authentication method. Web sign-in only supports *temporary access pass* as an authentication method for Azure Active Directory (Azure AD), unless it's used in a limited federated scope.
-
-**Web sign-in** is a modern way of signing into a Windows PC. It enables Windows sign-in support for new Azure AD credentials, like temporary access pass.
+Web sign-in is a credential provider that enables a web-based sign-in experience on Windows devices. Initially introduced in Windows 10 with support for Temporary Access Pass (TAP) only, Web sign-in expanded its capabilities starting in Windows 11, version 22H2 with KB5030310. For more information, see [Web sign-in for Windows](/windows/security/identity-protection/web-sign-in).
 
 > [!NOTE]
-> Web sign-in is only supported on Azure AD joined PCs.
+> Web sign-in is only supported on Microsoft Entra joined PCs.
 <!-- EnableWebSignIn-Editable-End -->
 
 <!-- EnableWebSignIn-DFProperties-Begin -->
@@ -510,7 +498,7 @@ Specifies whether web-based sign-in is allowed for signing in to Windows.
 <!-- PreferredAadTenantDomainName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- PreferredAadTenantDomainName-Applicability-End -->
 
 <!-- PreferredAadTenantDomainName-OmaUri-Begin -->
@@ -521,7 +509,7 @@ Specifies whether web-based sign-in is allowed for signing in to Windows.
 
 <!-- PreferredAadTenantDomainName-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the preferred domain among available domains in the AAD tenant.
+Specifies the preferred domain among available domains in the Microsoft Entra tenant.
 <!-- PreferredAadTenantDomainName-Description-End -->
 
 <!-- PreferredAadTenantDomainName-Editable-Begin -->

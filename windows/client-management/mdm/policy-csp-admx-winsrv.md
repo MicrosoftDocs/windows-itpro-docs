@@ -1,14 +1,7 @@
 ---
 title: ADMX_Winsrv Policy CSP
 description: Learn more about the ADMX_Winsrv Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -28,7 +21,7 @@ ms.topic: reference
 <!-- AllowBlockingAppsAtShutdown-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowBlockingAppsAtShutdown-Applicability-End -->
 
 <!-- AllowBlockingAppsAtShutdown-OmaUri-Begin -->
@@ -38,12 +31,7 @@ ms.topic: reference
 <!-- AllowBlockingAppsAtShutdown-OmaUri-End -->
 
 <!-- AllowBlockingAppsAtShutdown-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting specifies whether Windows will allow console applications and GUI applications without visible top-level windows to block or cancel shutdown. By default, such applications are automatically terminated if they attempt to cancel shutdown or block it indefinitely.
-
-- If you enable this setting, console applications or GUI applications without visible top-level windows that block or cancel shutdown won't be automatically terminated during shutdown.
-
-- If you disable or don't configure this setting, these applications will be automatically terminated during shutdown, helping to ensure that Windows can shut down faster and more smoothly.
+<!-- Description-Source-Not-Found -->
 <!-- AllowBlockingAppsAtShutdown-Description-End -->
 
 <!-- AllowBlockingAppsAtShutdown-Editable-Begin -->

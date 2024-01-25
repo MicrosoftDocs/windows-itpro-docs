@@ -1,23 +1,23 @@
 ---
 title: Using a proxy with Delivery Optimization
-manager: aaroncz
-description: Settings to use with various proxy configurations to allow Delivery Optimization to work
+description: Settings to use with various proxy configurations to allow Delivery Optimization to work in your environment.
 ms.prod: windows-client
-author: cmknox
-ms.localizationpriority: medium
-ms.author: carmenf
-ms.topic: article
 ms.technology: itpro-updates
-ms.date: 12/31/2017
+ms.topic: conceptual
+author: cmknox
+ms.author: carmenf
+manager: aaroncz
+ms.reviewer: mstewart
 ms.collection: tier3
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
+ms.date: 06/02/2023
 ---
 
 # Using a proxy with Delivery Optimization
-
-**Applies to:**
-
-- Windows 11
-- Windows 10
 
 When Delivery Optimization downloads content from HTTP sources, it uses the automatic proxy discovery capability of WinHttp to streamline and maximize the support for complex proxy configurations as it makes range requests from the content server. It does this by setting the **WINHTTP_ACCESS_TYPE_AUTOMATIC_PROXY** flag in all HTTP calls.
 

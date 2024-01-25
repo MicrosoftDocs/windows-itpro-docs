@@ -2,7 +2,6 @@
 title: 4624(S) An account was successfully logged on. 
 description: Describes security event 4624(S) An account was successfully logged on.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.collection: 
   - highpri
   - tier3
@@ -252,6 +250,9 @@ This event generates when a logon session is created (on destination machine). I
 - **Source Port** [Type = UnicodeString]: source port which was used for logon attempt from remote machine.
 
     - 0 for interactive logons.
+ 
+  > [!NOTE]
+  The fields for IP address/port and workstation name are populated depending on the authentication context and protocol used. LSASS will audit the information the authenticating service shares with LSASS. For example, network logons with Kerberos likely have no workstation information, and NTLM logons have no TCP/IP details.
 
 **Detailed Authentication Information:**
 

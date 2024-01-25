@@ -1,14 +1,13 @@
 ---
 title: Enable hardware-based isolation for Microsoft Edge
 description: Learn about the Microsoft Defender Application Guard modes (Standalone or Enterprise-managed), and how to install Application Guard in your enterprise.
-ms.date: 07/11/2023
+ms.date: 12/12/2023
 ms.topic: how-to
-ms.collection:
-  - highpri
-  - tier2
 ---
 
 # Prepare to install Microsoft Defender Application Guard
+
+[!INCLUDE [mdag-edge-deprecation-notice](../../../includes/mdag-edge-deprecation-notice.md)]
 
 Before you continue, review [System requirements for Microsoft Defender Application Guard](reqs-md-app-guard.md) to review the hardware and software installation requirements for Microsoft Defender Application Guard.
 
@@ -27,7 +26,8 @@ Standalone mode is applicable for:
 
 - Windows 10 Enterprise edition, version 1709 and later
 - Windows 10 Pro edition, version 1803 and later
-- Windows 11 and later
+- Windows 10 Education edition, version 1809 and later
+- Windows 11 Enterprise, Education, or Pro editions
 
 ## Enterprise-managed mode
 
@@ -36,7 +36,8 @@ You and your security department can define your corporate boundaries by explici
 Enterprise-managed mode is applicable for:
 
 - Windows 10 Enterprise edition, version 1709 and later
-- Windows 11 and later
+- Windows 10 Education edition, version 1809 and later
+- Windows 11 Enterprise or Education editions
 
 The following diagram shows the flow between the host PC and the isolated container.
 

@@ -1,10 +1,7 @@
 ---
 title: User Account Control
 description: Learn how User Account Control (UAC) helps to prevent unauthorized changes to Windows devices.
-ms.collection: 
-  - highpri
-  - tier2
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 05/24/2023
 ---
 

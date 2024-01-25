@@ -1,14 +1,7 @@
 ---
 title: SUPL CSP
 description: Learn more about the SUPL CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -89,7 +82,7 @@ The following list shows the SUPL configuration service provider nodes:
 <!-- Device-SUPL1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Applicability-End -->
 
 <!-- Device-SUPL1-OmaUri-Begin -->
@@ -128,7 +121,7 @@ Required for SUPL. Defines the account for the SUPL Enabled Terminal (SET) node.
 <!-- Device-SUPL1-Addr-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Addr-Applicability-End -->
 
 <!-- Device-SUPL1-Addr-OmaUri-Begin -->
@@ -170,7 +163,7 @@ For OMA DM, if the format for this node is incorrect the entry will be ignored a
 <!-- Device-SUPL1-AppID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-AppID-Applicability-End -->
 
 <!-- Device-SUPL1-AppID-OmaUri-Begin -->
@@ -209,7 +202,7 @@ Required. The AppID for SUPL is automatically set to "ap0004". This is a read-on
 <!-- Device-SUPL1-Ext-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-OmaUri-Begin -->
@@ -247,7 +240,7 @@ Required. The AppID for SUPL is automatically set to "ap0004". This is a read-on
 <!-- Device-SUPL1-Ext-Microsoft-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-OmaUri-Begin -->
@@ -285,7 +278,7 @@ Required. The AppID for SUPL is automatically set to "ap0004". This is a read-on
 <!-- Device-SUPL1-Ext-Microsoft-FullVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-SUPL1-Ext-Microsoft-FullVersion-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-FullVersion-OmaUri-Begin -->
@@ -326,7 +319,7 @@ Optional. Determines the full version (X. Y. Z where X, Y and Z are major versio
 <!-- Device-SUPL1-Ext-Microsoft-HighAccPositioningMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-HighAccPositioningMethod-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-HighAccPositioningMethod-OmaUri-Begin -->
@@ -381,7 +374,7 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-OmaUri-Begin -->
@@ -449,7 +442,7 @@ For OMA DM, if the format for this node is incorrect then an entry will be ignor
 <!-- Device-SUPL1-Ext-Microsoft-MCCMNCPairs-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-MCCMNCPairs-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-MCCMNCPairs-OmaUri-Begin -->
@@ -491,7 +484,7 @@ For OMA DM, if the format for this node is incorrect then an entry will be ignor
 <!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-NIDefaultTimeout-OmaUri-Begin -->
@@ -531,7 +524,7 @@ Optional. Time in seconds that the network-initiated location request is display
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-OmaUri-Begin -->
@@ -570,7 +563,7 @@ Required. Specifies the root certificate for the H-SLP server. Windows doesn't s
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Data-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Data-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Data-OmaUri-Begin -->
@@ -609,7 +602,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Name-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Name-OmaUri-Begin -->
@@ -648,7 +641,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-OmaUri-Begin -->
@@ -687,7 +680,7 @@ Specifies the root certificate for the H-SLP server.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Data-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Data-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Data-OmaUri-Begin -->
@@ -726,7 +719,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Name-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate2-Name-OmaUri-Begin -->
@@ -765,7 +758,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-OmaUri-Begin -->
@@ -804,7 +797,7 @@ Specifies the root certificate for the H-SLP server.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Data-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Data-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Data-OmaUri-Begin -->
@@ -843,7 +836,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Name-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate3-Name-OmaUri-Begin -->
@@ -882,7 +875,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-OmaUri-Begin -->
@@ -921,7 +914,7 @@ Specifies the root certificate for the H-SLP server.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Data-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Data-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Data-OmaUri-Begin -->
@@ -960,7 +953,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Name-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate4-Name-OmaUri-Begin -->
@@ -999,7 +992,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-OmaUri-Begin -->
@@ -1038,7 +1031,7 @@ Specifies the root certificate for the H-SLP server.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Data-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Data-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Data-OmaUri-Begin -->
@@ -1077,7 +1070,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Name-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate5-Name-OmaUri-Begin -->
@@ -1116,7 +1109,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-OmaUri-Begin -->
@@ -1155,7 +1148,7 @@ Specifies the root certificate for the H-SLP server.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Data-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Data-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Data-OmaUri-Begin -->
@@ -1194,7 +1187,7 @@ The base 64 encoded blob of the H-SLP root certificate.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Name-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate6-Name-OmaUri-Begin -->
@@ -1233,7 +1226,7 @@ Specifies the name of the H-SLP root certificate as a string, in the format name
 <!-- Device-SUPL1-Ext-Microsoft-ServerAccessInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-ServerAccessInterval-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-ServerAccessInterval-OmaUri-Begin -->
@@ -1273,7 +1266,7 @@ Optional. Integer. Defines the minimum interval of time in seconds between mobil
 <!-- Device-SUPL1-Ext-Microsoft-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-SUPL1-Ext-Microsoft-Version-Applicability-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-Version-OmaUri-Begin -->
@@ -1314,7 +1307,7 @@ Optional. Determines the major version of the SUPL protocol to use. For SUPL 1.0
 <!-- Device-V2UPL1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-V2UPL1-Applicability-End -->
 
 <!-- Device-V2UPL1-OmaUri-Begin -->
@@ -1353,7 +1346,7 @@ Required for V2 UPL for CDMA. Specifies the account settings for user plane loca
 <!-- Device-V2UPL1-ApplicationTypeIndicator_MR-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-V2UPL1-ApplicationTypeIndicator_MR-Applicability-End -->
 
 <!-- Device-V2UPL1-ApplicationTypeIndicator_MR-OmaUri-Begin -->
@@ -1392,7 +1385,7 @@ Required. This value must always be set to 00000011.
 <!-- Device-V2UPL1-LocMasterSwitchDependencyNII-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-V2UPL1-LocMasterSwitchDependencyNII-Applicability-End -->
 
 <!-- Device-V2UPL1-LocMasterSwitchDependencyNII-OmaUri-Begin -->
@@ -1441,7 +1434,7 @@ Optional. Boolean. Specifies whether the location toggle on the location screen 
 <!-- Device-V2UPL1-MPC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-V2UPL1-MPC-Applicability-End -->
 
 <!-- Device-V2UPL1-MPC-OmaUri-Begin -->
@@ -1480,7 +1473,7 @@ Optional. The address of the mobile positioning center (MPC), in the format ipAd
 <!-- Device-V2UPL1-NIDefaultTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-V2UPL1-NIDefaultTimeout-Applicability-End -->
 
 <!-- Device-V2UPL1-NIDefaultTimeout-OmaUri-Begin -->
@@ -1520,7 +1513,7 @@ Optional. Time in seconds that the network-initiated location request is display
 <!-- Device-V2UPL1-PDE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-V2UPL1-PDE-Applicability-End -->
 
 <!-- Device-V2UPL1-PDE-OmaUri-Begin -->
@@ -1559,7 +1552,7 @@ Optional. The address of the Position Determination Entity (PDE), in the format 
 <!-- Device-V2UPL1-PositioningMethod_MR-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-V2UPL1-PositioningMethod_MR-Applicability-End -->
 
 <!-- Device-V2UPL1-PositioningMethod_MR-OmaUri-Begin -->
@@ -1611,7 +1604,7 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 <!-- Device-V2UPL1-ServerAccessInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-V2UPL1-ServerAccessInterval-Applicability-End -->
 
 <!-- Device-V2UPL1-ServerAccessInterval-OmaUri-Begin -->

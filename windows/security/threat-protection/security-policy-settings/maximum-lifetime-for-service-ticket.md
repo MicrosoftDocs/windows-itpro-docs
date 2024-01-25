@@ -1,10 +1,9 @@
 ---
-title: Maximum lifetime for service ticket 
+title: Maximum lifetime for service ticket
 description: Describes the best practices, location, values, policy management, and security considerations for the Maximum lifetime for service ticket security policy setting.
 ms.assetid: 484bf05a-3858-47fc-bc02-6599ca860247
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Maximum lifetime for service ticket
@@ -51,13 +49,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server Type or GPO | Default Value |
 | - | - |
-| Default Domain Policy| 600 minutes| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Not applicable| 
-| DC Effective Default Settings | 600 minutes| 
-| Member Server Effective Default Settings | Not applicable| 
-| Client Computer Effective Default Settings | Not applicable| 
- 
+| Default Domain Policy| 600 minutes|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Not applicable|
+| DC Effective Default Settings | 600 minutes|
+| Member Server Effective Default Settings | Not applicable|
+| Client Computer Effective Default Settings | Not applicable|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

@@ -1,14 +1,7 @@
 ---
 title: DeliveryOptimization Policy CSP
 description: Learn more about the DeliveryOptimization Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/11/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -17,6 +10,8 @@ ms.topic: reference
 # Policy CSP - DeliveryOptimization
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- DeliveryOptimization-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -28,7 +23,7 @@ ms.topic: reference
 <!-- DOAbsoluteMaxCacheSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DOAbsoluteMaxCacheSize-Applicability-End -->
 
 <!-- DOAbsoluteMaxCacheSize-OmaUri-Begin -->
@@ -87,7 +82,7 @@ The value 0 (zero) means "unlimited" cache; Delivery Optimization will clear the
 <!-- DOAllowVPNPeerCaching-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DOAllowVPNPeerCaching-Applicability-End -->
 
 <!-- DOAllowVPNPeerCaching-OmaUri-Begin -->
@@ -150,7 +145,7 @@ Specifies whether the device is allowed to participate in Peer Caching while con
 <!-- DOCacheHost-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DOCacheHost-Applicability-End -->
 
 <!-- DOCacheHost-OmaUri-Begin -->
@@ -208,7 +203,7 @@ One or more values can be added as either fully qualified domain names (FQDN) or
 <!-- DOCacheHostSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- DOCacheHostSource-Applicability-End -->
 
 <!-- DOCacheHostSource-OmaUri-Begin -->
@@ -275,7 +270,7 @@ If this policy isn't configured, the client will attempt to automatically find a
 <!-- DODelayBackgroundDownloadFromHttp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DODelayBackgroundDownloadFromHttp-Applicability-End -->
 
 <!-- DODelayBackgroundDownloadFromHttp-OmaUri-Begin -->
@@ -336,7 +331,7 @@ The recommended value is 1 hour (3600).
 <!-- DODelayCacheServerFallbackBackground-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DODelayCacheServerFallbackBackground-Applicability-End -->
 
 <!-- DODelayCacheServerFallbackBackground-OmaUri-Begin -->
@@ -391,7 +386,7 @@ Specifies the time in seconds to delay the fallback from Cache Server to the HTT
 <!-- DODelayCacheServerFallbackForeground-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DODelayCacheServerFallbackForeground-Applicability-End -->
 
 <!-- DODelayCacheServerFallbackForeground-OmaUri-Begin -->
@@ -446,7 +441,7 @@ Specifies the time in seconds to delay the fallback from Cache Server to the HTT
 <!-- DODelayForegroundDownloadFromHttp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DODelayForegroundDownloadFromHttp-Applicability-End -->
 
 <!-- DODelayForegroundDownloadFromHttp-OmaUri-Begin -->
@@ -507,7 +502,7 @@ The recommended value is 1 minute (60).
 <!-- DODisallowCacheServerDownloadsOnVPN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2361] and later <br> ✅ Windows Insider Preview |
 <!-- DODisallowCacheServerDownloadsOnVPN-Applicability-End -->
 
 <!-- DODisallowCacheServerDownloadsOnVPN-OmaUri-Begin -->
@@ -566,7 +561,7 @@ Disallow downloads from Microsoft Connected Cache servers when the device connec
 <!-- DODownloadMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- DODownloadMode-Applicability-End -->
 
 <!-- DODownloadMode-OmaUri-Begin -->
@@ -635,7 +630,7 @@ Specifies the download method that Delivery Optimization can use in downloads of
 <!-- DOGroupId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DOGroupId-Applicability-End -->
 
 <!-- DOGroupId-OmaUri-Begin -->
@@ -692,7 +687,7 @@ Note this is a best effort optimization and shouldn't be relied on for an authen
 <!-- DOGroupIdSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DOGroupIdSource-Applicability-End -->
 
 <!-- DOGroupIdSource-OmaUri-Begin -->
@@ -703,13 +698,13 @@ Note this is a best effort optimization and shouldn't be relied on for an authen
 
 <!-- DOGroupIdSource-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Set this policy to restrict peer selection to a specific source. Available options are: 1 = AD Site, 2 = Authenticated domain SID, 3 = DHCP Option ID, 4 = DNS Suffix, 5 = AAD. When set, the Group ID will be assigned automatically from the selected source. This policy is ignored if the GroupID policy is also set. The options set in this policy only apply to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. For option 3 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID. Starting with Windows 10, version 1903, you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this, set the value of DOGroupIdSource to 5.
+Set this policy to restrict peer selection to a specific source. Available options are: 1 = AD Site, 2 = Authenticated domain SID, 3 = DHCP Option ID, 4 = DNS Suffix, 5 = Microsoft Entra ID. When set, the Group ID will be assigned automatically from the selected source. This policy is ignored if the GroupID policy is also set. The options set in this policy only apply to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. For option 3 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID. Starting with Windows 10, version 1903, you can use the Microsoft Entra tenant ID as a means to define groups. To do this, set the value of DOGroupIdSource to 5.
 <!-- DOGroupIdSource-Description-End -->
 
 <!-- DOGroupIdSource-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> The default behavior, when neither the DOGroupId or DOGroupIdSource policies are set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. If DOGroupIdSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead.
+> The default behavior, when neither the DOGroupId or DOGroupIdSource policies are set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order. If DOGroupIdSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead.
 <!-- DOGroupIdSource-Editable-End -->
 
 <!-- DOGroupIdSource-DFProperties-Begin -->
@@ -732,7 +727,7 @@ Set this policy to restrict peer selection to a specific source. Available optio
 | 2 | Authenticated domain SID. |
 | 3 | DHCP user option. |
 | 4 | DNS suffix. |
-| 5 | AAD. |
+| 5 | Microsoft Entra ID. |
 <!-- DOGroupIdSource-AllowedValues-End -->
 
 <!-- DOGroupIdSource-GpMapping-Begin -->
@@ -761,7 +756,7 @@ Set this policy to restrict peer selection to a specific source. Available optio
 <!-- DOMaxBackgroundDownloadBandwidth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- DOMaxBackgroundDownloadBandwidth-Applicability-End -->
 
 <!-- DOMaxBackgroundDownloadBandwidth-OmaUri-Begin -->
@@ -818,7 +813,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 <!-- DOMaxCacheAge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- DOMaxCacheAge-Applicability-End -->
 
 <!-- DOMaxCacheAge-OmaUri-Begin -->
@@ -873,7 +868,7 @@ Specifies the maximum time in seconds that each file is held in the Delivery Opt
 <!-- DOMaxCacheSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- DOMaxCacheSize-Applicability-End -->
 
 <!-- DOMaxCacheSize-OmaUri-Begin -->
@@ -928,7 +923,7 @@ Specifies the maximum cache size that Delivery Optimization can utilize, as a pe
 <!-- DOMaxForegroundDownloadBandwidth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- DOMaxForegroundDownloadBandwidth-Applicability-End -->
 
 <!-- DOMaxForegroundDownloadBandwidth-OmaUri-Begin -->
@@ -985,7 +980,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 <!-- DOMinBackgroundQos-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DOMinBackgroundQos-Applicability-End -->
 
 <!-- DOMinBackgroundQos-OmaUri-Begin -->
@@ -1040,7 +1035,7 @@ Specifies the minimum download QoS (Quality of Service or speed) in KiloBytes/se
 <!-- DOMinBatteryPercentageAllowedToUpload-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DOMinBatteryPercentageAllowedToUpload-Applicability-End -->
 
 <!-- DOMinBatteryPercentageAllowedToUpload-OmaUri-Begin -->
@@ -1099,7 +1094,7 @@ The value 0 means "not-limited"; The cloud service set default value will be use
 <!-- DOMinDiskSizeAllowedToPeer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DOMinDiskSizeAllowedToPeer-Applicability-End -->
 
 <!-- DOMinDiskSizeAllowedToPeer-OmaUri-Begin -->
@@ -1159,7 +1154,7 @@ Recommended values: 64 GB to 256 GB.
 <!-- DOMinFileSizeToCache-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DOMinFileSizeToCache-Applicability-End -->
 
 <!-- DOMinFileSizeToCache-OmaUri-Begin -->
@@ -1214,7 +1209,7 @@ Specifies the minimum content file size in MB enabled to use Peer Caching. Recom
 <!-- DOMinRAMAllowedToPeer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DOMinRAMAllowedToPeer-Applicability-End -->
 
 <!-- DOMinRAMAllowedToPeer-OmaUri-Begin -->
@@ -1269,7 +1264,7 @@ Specifies the minimum RAM size in GB required to use Peer Caching. For example, 
 <!-- DOModifyCacheDrive-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DOModifyCacheDrive-Applicability-End -->
 
 <!-- DOModifyCacheDrive-OmaUri-Begin -->
@@ -1324,7 +1319,7 @@ By default, %SystemDrive% is used to store the cache. The drive location can be 
 <!-- DOMonthlyUploadDataCap-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DOMonthlyUploadDataCap-Applicability-End -->
 
 <!-- DOMonthlyUploadDataCap-OmaUri-Begin -->
@@ -1379,7 +1374,7 @@ Specifies the maximum total bytes in GB that Delivery Optimization is allowed to
 <!-- DOPercentageMaxBackgroundBandwidth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DOPercentageMaxBackgroundBandwidth-Applicability-End -->
 
 <!-- DOPercentageMaxBackgroundBandwidth-OmaUri-Begin -->
@@ -1438,7 +1433,7 @@ Downloads from LAN peers won't be throttled even when this policy is set.
 <!-- DOPercentageMaxForegroundBandwidth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DOPercentageMaxForegroundBandwidth-Applicability-End -->
 
 <!-- DOPercentageMaxForegroundBandwidth-OmaUri-Begin -->
@@ -1495,7 +1490,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 <!-- DORestrictPeerSelectionBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DORestrictPeerSelectionBy-Applicability-End -->
 
 <!-- DORestrictPeerSelectionBy-OmaUri-Begin -->
@@ -1574,7 +1569,7 @@ In Windows 11 the 'Local Peer Discovery' option was introduced to restrict peer 
 <!-- DOSetHoursToLimitBackgroundDownloadBandwidth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DOSetHoursToLimitBackgroundDownloadBandwidth-Applicability-End -->
 
 <!-- DOSetHoursToLimitBackgroundDownloadBandwidth-OmaUri-Begin -->
@@ -1628,7 +1623,7 @@ Specifies the maximum background download bandwidth that Delivery Optimization u
 <!-- DOSetHoursToLimitForegroundDownloadBandwidth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DOSetHoursToLimitForegroundDownloadBandwidth-Applicability-End -->
 
 <!-- DOSetHoursToLimitForegroundDownloadBandwidth-OmaUri-Begin -->
@@ -1687,7 +1682,7 @@ This policy allows an IT Admin to define the following details:
 <!-- DOVpnKeywords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2361] and later <br> ✅ Windows Insider Preview |
 <!-- DOVpnKeywords-Applicability-End -->
 
 <!-- DOVpnKeywords-OmaUri-Begin -->
@@ -1697,8 +1692,8 @@ This policy allows an IT Admin to define the following details:
 <!-- DOVpnKeywords-OmaUri-End -->
 
 <!-- DOVpnKeywords-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy allows you to set one or more keywords used to recognize VPN connections.
+<!-- Description-Source-ADMX -->
+This policy allows you to set one or more keywords used to recognize VPN connections. To add multiple keywords, separate them with commas.
 <!-- DOVpnKeywords-Description-End -->
 
 <!-- DOVpnKeywords-Editable-Begin -->
@@ -1721,8 +1716,12 @@ This policy allows you to set one or more keywords used to recognize VPN connect
 | Name | Value |
 |:--|:--|
 | Name | VpnKeywords |
-| Path | DeliveryOptimization > AT > WindowsComponents > DeliveryOptimizationCat |
-| Element Name | VpnKeywords |
+| Friendly Name | VPN Keywords |
+| Element Name | VPN Keywords. |
+| Location | Computer Configuration |
+| Path | Windows Components > Delivery Optimization |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization |
+| ADMX File Name | DeliveryOptimization.admx |
 <!-- DOVpnKeywords-GpMapping-End -->
 
 <!-- DOVpnKeywords-Examples-Begin -->

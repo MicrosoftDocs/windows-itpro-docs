@@ -1,14 +1,7 @@
 ---
 title: RemoteWipe CSP
 description: Learn more about the RemoteWipe CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -46,7 +39,7 @@ The following list shows the RemoteWipe configuration service provider nodes:
 <!-- Device-AutomaticRedeployment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AutomaticRedeployment-Applicability-End -->
 
 <!-- Device-AutomaticRedeployment-OmaUri-Begin -->
@@ -85,7 +78,7 @@ Node for the Autopilot Reset operation.
 <!-- Device-AutomaticRedeployment-doAutomaticRedeployment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AutomaticRedeployment-doAutomaticRedeployment-Applicability-End -->
 
 <!-- Device-AutomaticRedeployment-doAutomaticRedeployment-OmaUri-Begin -->
@@ -96,7 +89,7 @@ Node for the Autopilot Reset operation.
 
 <!-- Device-AutomaticRedeployment-doAutomaticRedeployment-Description-Begin -->
 <!-- Description-Source-DDF -->
-Exec on this node triggers Autopilot Reset operation. This works like PC Reset, similar to other existing nodes in this RemoteWipe CSP, except that it keeps the device enrolled in Azure AD and MDM, keeps Wi-Fi profiles, and a few other settings like region, language, keyboard.
+Exec on this node triggers Autopilot Reset operation. This works like PC Reset, similar to other existing nodes in this RemoteWipe CSP, except that it keeps the device enrolled in Microsoft Entra ID and MDM, keeps Wi-Fi profiles, and a few other settings like region, language, keyboard.
 <!-- Device-AutomaticRedeployment-doAutomaticRedeployment-Description-End -->
 
 <!-- Device-AutomaticRedeployment-doAutomaticRedeployment-Editable-Begin -->
@@ -124,7 +117,7 @@ Exec on this node triggers Autopilot Reset operation. This works like PC Reset, 
 <!-- Device-AutomaticRedeployment-LastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AutomaticRedeployment-LastError-Applicability-End -->
 
 <!-- Device-AutomaticRedeployment-LastError-OmaUri-Begin -->
@@ -164,7 +157,7 @@ Error value, if any, associated with Automatic Redeployment operation (typically
 <!-- Device-AutomaticRedeployment-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AutomaticRedeployment-Status-Applicability-End -->
 
 <!-- Device-AutomaticRedeployment-Status-OmaUri-Begin -->
@@ -204,7 +197,7 @@ Status value indicating current state of an Automatic Redeployment operation. 0:
 <!-- Device-doWipe-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-doWipe-Applicability-End -->
 
 <!-- Device-doWipe-OmaUri-Begin -->
@@ -244,7 +237,7 @@ A remote reset is equivalent to running **Reset this PC** > **Remove everything*
 <!-- Device-doWipeCloud-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-doWipeCloud-Applicability-End -->
 
 <!-- Device-doWipeCloud-OmaUri-Begin -->
@@ -283,7 +276,7 @@ Exec on this node will perform a cloud-based remote wipe on the device. The retu
 <!-- Device-doWipeCloudPersistProvisionedData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-doWipeCloudPersistProvisionedData-Applicability-End -->
 
 <!-- Device-doWipeCloudPersistProvisionedData-OmaUri-Begin -->
@@ -322,7 +315,7 @@ Exec on this node will back up provisioning data to a persistent location and pe
 <!-- Device-doWipeCloudPersistUserData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-doWipeCloudPersistUserData-Applicability-End -->
 
 <!-- Device-doWipeCloudPersistUserData-OmaUri-Begin -->
@@ -361,7 +354,7 @@ Exec on this node will perform a cloud-based remote reset on the device and pers
 <!-- Device-doWipePersistProvisionedData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-doWipePersistProvisionedData-Applicability-End -->
 
 <!-- Device-doWipePersistProvisionedData-OmaUri-Begin -->
@@ -401,7 +394,7 @@ Provisioning packages are persisted in `%SystemDrive%\ProgramData\Microsoft\Prov
 <!-- Device-doWipePersistUserData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-doWipePersistUserData-Applicability-End -->
 
 <!-- Device-doWipePersistUserData-OmaUri-Begin -->
@@ -441,7 +434,7 @@ Exec on this node will perform a remote reset on the device and persist user acc
 <!-- Device-doWipeProtected-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-doWipeProtected-Applicability-End -->
 
 <!-- Device-doWipeProtected-OmaUri-Begin -->

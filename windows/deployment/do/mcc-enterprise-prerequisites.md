@@ -1,22 +1,22 @@
 ---
-title: Requirements for Microsoft Connected Cache (MCC) for Enterprise and Education
-manager: aaroncz
-description: Overview of requirements for Microsoft Connected Cache (MCC) for Enterprise and Education.
+title: Requirements for MCC for Enterprise and Education
+description: Overview of prerequisites and recommendations for using Microsoft Connected Cache (MCC) for Enterprise and Education.
 ms.prod: windows-client
-author: amymzhou
-ms.author: amyzhou
-ms.topic: article
-ms.date: 12/31/2017
 ms.technology: itpro-updates
+ms.topic: conceptual
+ms.author: carmenf
+author: cmknox
+manager: aaroncz
+ms.reviewer: mstewart
 ms.collection: tier3
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>
+ms.date: 11/07/2023
 ---
 
 # Requirements of Microsoft Connected Cache for Enterprise and Education (early preview)
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 > [!NOTE]
 > We're still accepting Enterprise and Education customers to join the early preview. To register your interest, fill out the survey located at [https://aka.ms/MSConnectedCacheSignup](https://aka.ms/MSConnectedCacheSignup).
@@ -34,8 +34,9 @@ ms.collection: tier3
    > Azure VMs are not currently supported. If you'd like to install your cache node on VMWare, see the [Appendix](mcc-enterprise-appendix.md) for a few additional configurations.
 
     **EFLOW requires Hyper-V support**
-    - On Windows client, enable the Hyper-V feature
-    - On Windows Server, install the Hyper-V role and create a default network switch
+    - On Windows client, enable the Hyper-V feature.
+    - On Windows Server, install the Hyper-V role and create a default network switch.
+    - For additional requirements, see [EFLOW requirements](/azure/iot-edge/iot-edge-for-linux-on-windows#prerequisites).
 
     Disk recommendations:
     - Using an SSD is recommended as cache read speed of SSD is superior to HDD

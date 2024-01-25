@@ -1,14 +1,7 @@
 ---
 title: TenantLockdown CSP
 description: To lock a device to a tenant to prevent accidental or intentional resets or wipes, use the TenantLockdown configuration service provider.
-ms.author: vinpa
-ms.topic: reference
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.date: 08/13/2018
-ms.reviewer:
-manager: aaroncz
 ---
 
 # TenantLockdown CSP
@@ -52,7 +45,7 @@ When RequireNetworkInOOBE is true, when the device goes through OOBE at first si
   -  True - Require network in OOBE.
   -  False - No network connection requirement in OOBE.
 
-Example scenario:  Henry is the IT admin at Contoso. He deploys 1000 devices successfully with RequireNetworkInOOBE set to true. When users accidentally or intentionally reset their device, they are required to connect to a network before they can proceed. Upon successful connection, users see the Contoso branded sign-in experience where they must use their Azure AD credentials. There is no option to skip the network connection and create a local account.
+Example scenario:  Henry is the IT admin at Contoso. He deploys 1000 devices successfully with RequireNetworkInOOBE set to true. When users accidentally or intentionally reset their device, they are required to connect to a network before they can proceed. Upon successful connection, users see the Contoso branded sign-in experience where they must use their Microsoft Entra credentials. There is no option to skip the network connection and create a local account.
 
 ## Related topics
 

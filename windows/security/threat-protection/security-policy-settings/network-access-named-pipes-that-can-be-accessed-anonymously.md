@@ -1,10 +1,9 @@
 ---
-title: Network access Named Pipes that can be accessed anonymously 
+title: Network access Named Pipes that can be accessed anonymously
 description: Describes best practices, security considerations and more for the security policy setting, Network access Named Pipes that can be accessed anonymously.
 ms.assetid: 8897d2a4-813e-4d2b-8518-fcee71e1cf2c
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Network access: Named Pipes that can be accessed anonymously
@@ -50,13 +48,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined | 
-| Default Domain Controller Policy | Netlogon, samr, lsarpc| 
-| Stand-Alone Server Default Settings | Null| 
-| DC Effective Default Settings | Netlogon, samr, lsarpc| 
-| Member Server Effective Default Settings | Not defined| 
-| Client Computer Effective Default Settings | Not defined| 
- 
+| Default Domain Policy | Not defined |
+| Default Domain Controller Policy | Netlogon, samr, lsarpc|
+| Stand-Alone Server Default Settings | Null|
+| DC Effective Default Settings | Netlogon, samr, lsarpc|
+| Member Server Effective Default Settings | Not defined|
+| Client Computer Effective Default Settings | Not defined|
+
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.
@@ -79,15 +77,15 @@ You can restrict access over named pipes such as COMNAP and LOCATOR to help prev
 
 | Named pipe | Purpose |
 | - | - |
-| COMNAP | SNABase named pipe. Systems network Architecture (SNA) is a collection of network protocols that were originally developed for IBM mainframe computers.| 
-| COMNODE| SNA Server named pipe.| 
-| SQL\QUERY | Default named pipe for SQL Server.| 
-| SPOOLSS | Named pipe for the Print Spooler service.| 
-| EPMAPPER | End Point Mapper named pipe.| 
-| LOCATOR | Remote Procedure Call Locator service named pipe.| 
-| TrlWks | Distributed Link Tracking Client named pipe.| 
-| TrkSvr | Distributed Link Tracking Server named pipe.| 
- 
+| COMNAP | SNABase named pipe. Systems network Architecture (SNA) is a collection of network protocols that were originally developed for IBM mainframe computers.|
+| COMNODE| SNA Server named pipe.|
+| SQL\QUERY | Default named pipe for SQL Server.|
+| SPOOLSS | Named pipe for the Print Spooler service.|
+| EPMAPPER | End Point Mapper named pipe.|
+| LOCATOR | Remote Procedure Call Locator service named pipe.|
+| TrlWks | Distributed Link Tracking Client named pipe.|
+| TrkSvr | Distributed Link Tracking Server named pipe.|
+
 ### Countermeasure
 
 Configure the **Network access: Named Pipes that can be accessed anonymously** setting to a null value (enable the setting but don't specify named pipes in the text box).

@@ -1,22 +1,22 @@
 ---
 title: Support and troubleshooting
-manager: aaroncz
-description: Troubleshooting issues for Microsoft Connected Cache for ISP
+description: Troubleshooting information for commonly encountered issues for onboarding or using Microsoft Connected Cache for ISPs.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: reference
 author: nidos
 ms.author: nidos
-ms.topic: reference
-ms.date: 12/31/2017
-ms.technology: itpro-updates
+manager: aaroncz
+ms.reviewer: mstewart
 ms.collection: tier3
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>	
+ms.date: 12/31/2017
 ---
 
 # Support and troubleshooting
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 This article provides information on how to troubleshoot common issues with Microsoft Connected Cache for ISPs.
 

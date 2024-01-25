@@ -1,23 +1,22 @@
 ---
 title: Update Windows installation media with Dynamic Update
-description: Learn how to deploy feature updates to your mission critical devices
+description: Learn how to acquire and apply Dynamic Update packages to existing Windows images prior to deployment
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
-ms.localizationpriority: medium
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
-ms.technology: itpro-updates
-ms.date: 07/17/2023
 ms.reviewer: stevedia
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server</a>
+ms.date: 12/05/2023
 ---
 
 # Update Windows installation media with Dynamic Update
-
-**Applies to**
-
--   Windows 10
--   Windows 11
 
 This article explains how to acquire and apply Dynamic Update packages to existing Windows images *prior to deployment* and includes Windows PowerShell scripts you can use to automate this process.
 
@@ -85,24 +84,24 @@ Properly updating the installation media involves a large number of actions oper
 
 This table shows the correct sequence for applying the various tasks to the files. For example, the full sequence starts with adding the servicing stack update to WinRE (1) and concludes with adding boot manager from WinPE to the new media (28).
 
-|Task                               |WinRE (winre.wim)  |WinPE (boot.wim)  |Operating system (install.wim)  | New media |
-|-----------------------------------|-------------------|------------------|--------------------------------|-----------|
-|Add servicing stack Dynamic Update | 1                 | 9                | 18                             |           | 
-|Add language pack                  | 2                 | 10               | 19                             |           |
-|Add localized optional packages    | 3                 | 11               |                                |           |
-|Add font support                   | 4                 | 12               |                                |           |
-|Add text-to-speech                 | 5                 | 13               |                                |           |
-|Update Lang.ini                    |                   | 14               |                                |           |
-|Add Features on Demand             |                   |                  | 20                             |           |
-|Add Safe OS Dynamic Update         | 6                 |                  |                                |           |
-|Add Setup Dynamic Update           |                   |                  |                                | 26        |
-|Add setup.exe from WinPE           |                   |                  |                                | 27        |
-|Add boot manager from WinPE        |                   |                  |                                | 28        |
-|Add latest cumulative update       |                   | 15               | 21                             |           |
-|Clean up the image                 | 7                 | 16               | 22                             |           |
-|Add Optional Components            |                   |                  | 23                             |           |
-|Add .NET and .NET cumulative updates |                 |                  | 24                             |           |
-|Export image                       | 8                 | 17               | 25                             |           |
+|Task                               |WinRE (winre.wim)  |Operating system (install.wim)  | WinPE (boot.wim) | New media |
+|-----------------------------------|-------------------|--------------------------------|------------------|-----------|
+|Add servicing stack Dynamic Update | 1                 | 9                              | 17               |           | 
+|Add language pack                  | 2                 | 10                             | 18               |           |
+|Add localized optional packages    | 3                 |                                | 19               |           |
+|Add font support                   | 4                 |                                | 20               |           |
+|Add text-to-speech                 | 5                 |                                | 21               |           |
+|Update Lang.ini                    |                   |                                | 22               |           |
+|Add Features on Demand             |                   | 11                             |                  |           |
+|Add Safe OS Dynamic Update         | 6                 |                                |                  |           |
+|Add Setup Dynamic Update           |                   |                                |                  | 26        |
+|Add setup.exe from WinPE           |                   |                                |                  | 27        |
+|Add boot manager from WinPE        |                   |                                |                  | 28        |
+|Add latest cumulative update       |                   | 12                             | 23               |           |
+|Clean up the image                 | 7                 | 13                             | 24               |           |
+|Add Optional Components            |                   | 14                             |                  |           |
+|Add .NET and .NET cumulative updates |                 | 15                             |                  |           |
+|Export image                       | 8                 | 16                             | 25               |           |
 
 > [!NOTE]
 > Starting in February 2021, the latest cumulative update and servicing stack update will be combined and distributed in the Microsoft Update Catalog as a new combined cumulative update. For Steps 1, 9, and 18 that require the servicing stack update for updating the installation media, you should use the combined cumulative update. For more information on the combined cumulative update, see [Servicing stack updates](./servicing-stack-updates.md).
@@ -112,13 +111,13 @@ This table shows the correct sequence for applying the various tasks to the file
 
 ### Multiple Windows editions
 
-The main operating system file (install.wim) contains multiple editions of Windows. It's possible that only an update for a given edition is required to deploy it, based on the index. Or, it might be that all editions need an update. Further, ensure that languages are installed before Features on Demand, and the latest cumulative update is always applied last.
+The main operating system file (install.wim) might contain multiple editions of Windows. It's possible that only an update for a given edition is required to deploy it, based on the index. Or, it might be that all editions need an update. Further, ensure that languages are installed before Features on Demand, and the latest cumulative update is always applied last.
 
 ### Additional languages and features
 
-You don't have to add more languages and features to the image to accomplish the updates, but it's an opportunity to customize the image with more languages, Optional Components, and Features on Demand beyond what is in your starting image. To do this, it's important to make these changes in the correct order: first apply servicing stack updates, followed by language additions, then by feature additions, and finally the latest cumulative update. The provided sample script installs a second language (in this case Japanese (ja-JP)). Since this language is backed by an lp.cab, there's no need to add a Language Experience Pack. Japanese is added to both the main operating system and to the recovery environment to allow the user to see the recovery screens in Japanese. This includes adding localized versions of the packages currently installed in the recovery image.
+You don't have to add more languages and features to the image to accomplish the updates, but it's an opportunity to customize the image with more languages, Optional Components, and Features on Demand beyond what's in your starting image. When you add more languages and features, it's important to make these changes in the correct order: first apply servicing stack updates, followed by language additions, then by feature additions, and finally the latest cumulative update. The provided sample script installs a second language (in this case Japanese (ja-JP)). Since this language is backed by an lp.cab, there's no need to add a Language Experience Pack. Japanese is added to both the main operating system and to the recovery environment to allow the user to see the recovery screens in Japanese. This includes adding localized versions of the packages currently installed in the recovery image.
 
-Optional Components, along with the .NET feature, can be installed offline, however doing so creates pending operations that require the device to restart. As a result, the call to perform image cleanup would fail. There are two options to avoid this. One option is to skip the image cleanup step, though that results in a larger install.wim. Another option is to install the .NET and Optional Components in a step after cleanup but before export. This is the option in the sample script. By doing this, you'll have to start with the original install.wim (with no pending actions) when you maintain or update the image the next time (for example, the next month).
+Optional Components, along with the .NET feature, can be installed offline, however doing so creates pending operations that require the device to restart. As a result, the call to perform image cleanup would fail. There are two options to avoid the cleanup failure. One option is to skip the image cleanup step, though that results in a larger install.wim. Another option is to install the .NET and Optional Components in a step after cleanup but before export. This is the option in the sample script. By doing this, you'll have to start with the original install.wim (with no pending actions) when you maintain or update the image the next time (for example, the next month).
 
 ## Windows PowerShell scripts to apply Dynamic Updates to an existing image
 
@@ -132,7 +131,7 @@ These examples are for illustration only, and therefore lack error handling. The
 
 ### Get started
 
-The script starts by declaring global variables and creating folders to use for mounting images. Then, make a copy of the original media, from \oldMedia to \newMedia, keeping the original media in case there's a script error and it's necessary to start over from a known state. Also, it will provide a comparison of old versus new media to evaluate changes. To ensure that the new media updates, make sure they aren't read-only.
+The script starts by declaring global variables and creating folders to use for mounting images. Then, make a copy of the original media, from \oldMedia to \newMedia, keeping the original media in case there's a script error and it's necessary to start over from a known state. Also, it provides a comparison of old versus new media to evaluate changes. To ensure that the new media updates, make sure they aren't read-only.
 
 ```powershell
 #Requires -RunAsAdministrator
@@ -196,128 +195,231 @@ Copy-Item -Path $MEDIA_OLD_PATH"\*" -Destination $MEDIA_NEW_PATH -Force -Recurse
 Get-ChildItem -Path $MEDIA_NEW_PATH -Recurse | Where-Object { -not $_.PSIsContainer -and $_.IsReadOnly } | ForEach-Object { $_.IsReadOnly = $false }
 ```
 
-### Update WinRE
+### Update WinRE and each main OS Windows edition
 
-The script assumes that only a single edition is being updated, indicated by Index = 1 (Windows 10 Education Edition). Then the script mounts the image, saves Winre.wim to the working folder, and mounts it. It then applies servicing stack Dynamic Update, since its components are used for updating other components. Since the script is optionally adding Japanese, it adds the language pack to the image, and installs the Japanese versions of all optional packages already installed in Winre.wim. Then, it applies the Safe OS Dynamic Update package.
+The script will update each edition of Windows within the main operating system file (install.wim). For each edition, the main OS image is mounted. 
 
-It finishes by cleaning and exporting the image to reduce the image size.
+For the first image, Winre.wim is copied to the working folder, and mounted. It then applies servicing stack Dynamic Update, since its components are used for updating other components. Since the script is optionally adding Japanese, it adds the language pack to the image, and installs the Japanese versions of all optional packages already installed in Winre.wim. Then, it applies the Safe OS Dynamic Update package. It finishes by cleaning and exporting the image to reduce the image size. 
+
+Next, for the mounted OS image, the script starts by applying the servicing stack Dynamic Update. Then, it adds Japanese language support and then the Japanese language features. Unlike the Dynamic Update packages, it uses `Add-WindowsCapability` to add these features. For a full list of such features, and their associated capability name, see [Available Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod). Now is the time to enable other Optional Components or add other Features on Demand. If such a feature has an associated cumulative update (for example, .NET), this is the time to apply those. The script then proceeds with applying the latest cumulative update. Finally, the script cleans and exports the image. You can install Optional Components, along with the .NET feature, offline, but that requires the device to be restarted. This is why the script installs .NET and Optional Components after cleanup and before export.
+
+This process is repeated for each edition of Windows within the main operating system file. To reduce size, the serviced Winre.wim file from the first image is saved, and used to update each subsequent Windows edition. This reduces the final size of install.wim. 
 
 
 ```powershell
-# Mount the main operating system, used throughout the script
-Write-Output "$(Get-TS): Mounting main OS"
-Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\install.wim" -Index 1 -Path $MAIN_OS_MOUNT -ErrorAction stop| Out-Null  
-
 #
-# update Windows Recovery Environment (WinRE)
+# Update each main OS Windows image including the Windows Recovery Environment (WinRE)
 #
-Copy-Item -Path $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Destination $WORKING_PATH"\winre.wim" -Force -ErrorAction stop | Out-Null
-Write-Output "$(Get-TS): Mounting WinRE"
-Mount-WindowsImage -ImagePath $WORKING_PATH"\winre.wim" -Index 1 -Path $WINRE_MOUNT -ErrorAction stop | Out-Null
 
-# Add servicing stack update (Step 1 from the table)
+# Get the list of images contained within WinPE
+$WINOS_IMAGES = Get-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\install.wim"
 
-# Depending on the Windows release that you are updating, there are 2 different approaches for updating the servicing stack
-# The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined 
-# cumulative update that includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and 
-# Windows 11, version 22H2 are examples. In these cases, the servicing stack update is not published separately; the combined 
-# cumulative update should be used for this step. However, in hopefully rare cases, there may breaking change in the combined 
-# cumulative update format, that requires a standalone servicing stack update to be published, and installed first before the 
-# combined cumulative update can be installed. 
+Foreach ($IMAGE in $WINOS_IMAGES) {
 
-# This is the code to handle the rare case that the SSU is published and required for the combined cumulative update
-# Write-Output "$(Get-TS): Adding package $SSU_PATH"
-# Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SSU_PATH | Out-Null  
+    # first mount the main OS image
+    Write-Output "$(Get-TS): Mounting main OS, image index $($IMAGE.ImageIndex)"
+    Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\install.wim" -Index $IMAGE.ImageIndex -Path $MAIN_OS_MOUNT -ErrorAction stop| Out-Null    
 
-# Now, attempt the combined cumulative update.
-# There is a known issue where the servicing stack update is installed, but the cumulative update will fail. This error should 
-# be caught and ignored, as the last step will be to apply the Safe OS update and thus the image will be left with the correct 
-# packages installed.
+    if ($IMAGE.ImageIndex -eq "1") {
 
-try
-{
-    Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $LCU_PATH | Out-Null  
-}
-Catch
-{
-    $theError = $_
-    Write-Output "$(Get-TS): $theError"
+        #
+        # update Windows Recovery Environment (WinRE) within this OS image
+        #
+        Copy-Item -Path $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Destination $WORKING_PATH"\winre.wim" -Force -ErrorAction stop | Out-Null
+        Write-Output "$(Get-TS): Mounting WinRE"
+        Mount-WindowsImage -ImagePath $WORKING_PATH"\winre.wim" -Index 1 -Path $WINRE_MOUNT -ErrorAction stop | Out-Null
+
+        # Add servicing stack update (Step 1 from the table)
+
+        # Depending on the Windows release that you are updating, there are 2 different approaches for updating the servicing stack
+        # The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined 
+        # cumulative update that includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and 
+        # Windows 11, version 22H2 are examples. In these cases, the servicing stack update is not published seperately; the combined 
+        # cumulative update should be used for this step. However, in hopefully rare cases, there may breaking change in the combined 
+        # cumulative update format, that requires a standalone servicing stack update to be published, and installed first before the 
+        # combined cumulative update can be installed. 
+
+        # This is the code to handle the rare case that the SSU is published and required for the combined cumulative update
+        # Write-Output "$(Get-TS): Adding package $SSU_PATH"
+        # Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SSU_PATH | Out-Null  
+
+        # Now, attempt the combined cumulative update.
+        # There is a known issue where the servicing stack update is installed, but the cumulative update will fail. This error should 
+        # be caught and ignored, as the last step will be to apply the Safe OS update and thus the image will be left with the correct 
+        # packages installed.
+
+        try
+        {
+            Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $LCU_PATH | Out-Null  
+        }
+        Catch
+        {
+            $theError = $_
+            Write-Output "$(Get-TS): $theError"
     
-    if ($theError.Exception -like "*0x8007007e*") {
-        Write-Output "$(Get-TS): This failure is a known issue with combined cumulative update, we can ignore."
-    }
-    else {
-        throw
-    }
-}
-
-# The second approach for Step 1 is for Windows releases that have not adopted the combined cumulative update
-# but instead continue to have a separate servicing stack update published. In this case, we'll install the SSU
-# update. This second approach is commented out below.
-
-# Write-Output "$(Get-TS): Adding package $SSU_PATH"
-# Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SSU_PATH | Out-Null  
-
-#
-# Optional: Add the language to recovery environment
-#
-# Install lp.cab cab
-Write-Output "$(Get-TS): Adding package $WINPE_OC_LP_PATH"
-Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $WINPE_OC_LP_PATH -ErrorAction stop | Out-Null  
-
-# Install language cabs for each optional package installed
-$WINRE_INSTALLED_OC = Get-WindowsPackage -Path $WINRE_MOUNT
-Foreach ($PACKAGE in $WINRE_INSTALLED_OC) {
-
-    if ( ($PACKAGE.PackageState -eq "Installed") `
-            -and ($PACKAGE.PackageName.startsWith("WinPE-")) `
-            -and ($PACKAGE.ReleaseType -eq "FeaturePack") ) {
-
-        $INDEX = $PACKAGE.PackageName.IndexOf("-Package")
-        if ($INDEX -ge 0) {
-            $OC_CAB = $PACKAGE.PackageName.Substring(0, $INDEX) + "_" + $LANG + ".cab"
-            if ($WINPE_OC_LANG_CABS.Contains($OC_CAB)) {
-                $OC_CAB_PATH = Join-Path $WINPE_OC_LANG_PATH $OC_CAB
-                Write-Output "$(Get-TS): Adding package $OC_CAB_PATH"
-                Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $OC_CAB_PATH -ErrorAction stop | Out-Null  
+            if ($theError.Exception -like "*0x8007007e*") {
+                Write-Output "$(Get-TS): This failure is a known issue with combined cumulative update, we can ignore."
+            }
+            else {
+                throw
             }
         }
+
+        # The second approach for Step 1 is for Windows releases that have not adopted the combined cumulative update
+        # but instead continue to have a seperate servicing stack update published. In this case, we'll install the SSU
+        # update. This second approach is commented out below.
+
+        # Write-Output "$(Get-TS): Adding package $SSU_PATH"
+        # Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SSU_PATH | Out-Null  
+
+        #
+        # Optional: Add the language to recovery environment
+        #
+        # Install lp.cab cab
+        Write-Output "$(Get-TS): Adding package $WINPE_OC_LP_PATH"
+        Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $WINPE_OC_LP_PATH -ErrorAction stop | Out-Null  
+
+        # Install language cabs for each optional package installed
+        $WINRE_INSTALLED_OC = Get-WindowsPackage -Path $WINRE_MOUNT
+        Foreach ($PACKAGE in $WINRE_INSTALLED_OC) {
+
+            if ( ($PACKAGE.PackageState -eq "Installed") `
+                    -and ($PACKAGE.PackageName.startsWith("WinPE-")) `
+                    -and ($PACKAGE.ReleaseType -eq "FeaturePack") ) {
+
+                $INDEX = $PACKAGE.PackageName.IndexOf("-Package")
+                if ($INDEX -ge 0) {
+                    $OC_CAB = $PACKAGE.PackageName.Substring(0, $INDEX) + "_" + $LANG + ".cab"
+                    if ($WINPE_OC_LANG_CABS.Contains($OC_CAB)) {
+                        $OC_CAB_PATH = Join-Path $WINPE_OC_LANG_PATH $OC_CAB
+                        Write-Output "$(Get-TS): Adding package $OC_CAB_PATH"
+                        Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $OC_CAB_PATH -ErrorAction stop | Out-Null  
+                    }
+                }
+            }
+        }
+
+        # Add font support for the new language
+        if ( (Test-Path -Path $WINPE_FONT_SUPPORT_PATH) ) {
+            Write-Output "$(Get-TS): Adding package $WINPE_FONT_SUPPORT_PATH"
+            Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $WINPE_FONT_SUPPORT_PATH -ErrorAction stop | Out-Null
+        }
+
+        # Add TTS support for the new language
+        if (Test-Path -Path $WINPE_SPEECH_TTS_PATH) {
+            if ( (Test-Path -Path $WINPE_SPEECH_TTS_LANG_PATH) ) {
+
+                Write-Output "$(Get-TS): Adding package $WINPE_SPEECH_TTS_PATH"
+                Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $WINPE_SPEECH_TTS_PATH -ErrorAction stop | Out-Null
+
+                Write-Output "$(Get-TS): Adding package $WINPE_SPEECH_TTS_LANG_PATH"
+                Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $WINPE_SPEECH_TTS_LANG_PATH -ErrorAction stop | Out-Null
+            }
+        }
+
+        # Add Safe OS
+        Write-Output "$(Get-TS): Adding package $SAFE_OS_DU_PATH"
+        Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SAFE_OS_DU_PATH -ErrorAction stop | Out-Null
+
+        # Perform image cleanup
+        Write-Output "$(Get-TS): Performing image cleanup on WinRE"
+        DISM /image:$WINRE_MOUNT /cleanup-image /StartComponentCleanup /ResetBase /Defer | Out-Null
+
+        # Dismount
+        Dismount-WindowsImage -Path $WINRE_MOUNT  -Save -ErrorAction stop | Out-Null
+
+        # Export
+        Write-Output "$(Get-TS): Exporting image to $WORKING_PATH\winre.wim"
+        Export-WindowsImage -SourceImagePath $WORKING_PATH"\winre.wim" -SourceIndex 1 -DestinationImagePath $WORKING_PATH"\winre2.wim" -ErrorAction stop | Out-Null
+
     }
+    
+    Copy-Item -Path $WORKING_PATH"\winre2.wim" -Destination $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Force -ErrorAction stop | Out-Null
+    
+    #
+    # update Main OS
+    #
+
+    # Add servicing stack update (Step 18 from the table)
+
+    # Depending on the Windows release that you are updating, there are 2 different approaches for updating the servicing stack
+    # The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined cumulative update that
+    # includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and Windows 11, version 22H2 are examples. In these
+    # cases, the servicing stack update is not published seperately; the combined cumulative update should be used for this step. However, in hopefully
+    # rare cases, there may breaking change in the combined cumulative update format, that requires a standalone servicing stack update to be published, 
+    # and installed first before the combined cumulative update can be installed. 
+
+    # This is the code to handle the rare case that the SSU is published and required for the combined cumulative update
+    # Write-Output "$(Get-TS): Adding package $SSU_PATH"
+    # Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $SSU_PATH | Out-Null  
+
+    # Now, attempt the combined cumulative update. Unlike WinRE and WinPE, we don't need to check for error 0x8007007e
+    Write-Output "$(Get-TS): Adding package $LCU_PATH"
+    Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $LCU_PATH | Out-Null  
+
+    # The second approach for Step 18 is for Windows releases that have not adopted the combined cumulative update
+    # but instead continue to have a seperate servicing stack update published. In this case, we'll install the SSU
+    # update. This second approach is commented out below.
+
+    # Write-Output "$(Get-TS): Adding package $SSU_PATH"
+    # Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $SSU_PATH | Out-Null  
+
+    # Optional: Add language to main OS
+    Write-Output "$(Get-TS): Adding package $OS_LP_PATH"
+    Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $OS_LP_PATH -ErrorAction stop | Out-Null  
+
+    # Optional: Add a Features on Demand to the image
+    Write-Output "$(Get-TS): Adding language FOD: Language.Fonts.Jpan~~~und-JPAN~0.0.1.0"
+    Add-WindowsCapability -Name "Language.Fonts.$LANG_FONT_CAPABILITY~~~und-$LANG_FONT_CAPABILITY~0.0.1.0" -Path $MAIN_OS_MOUNT -Source $FOD_PATH -ErrorAction stop | Out-Null
+
+    Write-Output "$(Get-TS): Adding language FOD: Language.Basic~~~$LANG~0.0.1.0"
+    Add-WindowsCapability -Name "Language.Basic~~~$LANG~0.0.1.0" -Path $MAIN_OS_MOUNT -Source $FOD_PATH -ErrorAction stop | Out-Null
+
+    Write-Output "$(Get-TS): Adding language FOD: Language.OCR~~~$LANG~0.0.1.0"
+    Add-WindowsCapability -Name "Language.OCR~~~$LANG~0.0.1.0" -Path $MAIN_OS_MOUNT -Source $FOD_PATH -ErrorAction stop | Out-Null
+
+    Write-Output "$(Get-TS): Adding language FOD: Language.Handwriting~~~$LANG~0.0.1.0"
+    Add-WindowsCapability -Name "Language.Handwriting~~~$LANG~0.0.1.0" -Path $MAIN_OS_MOUNT -Source $FOD_PATH -ErrorAction stop | Out-Null
+
+    Write-Output "$(Get-TS): Adding language FOD: Language.TextToSpeech~~~$LANG~0.0.1.0"
+    Add-WindowsCapability -Name "Language.TextToSpeech~~~$LANG~0.0.1.0" -Path $MAIN_OS_MOUNT -Source $FOD_PATH -ErrorAction stop | Out-Null
+
+    Write-Output "$(Get-TS): Adding language FOD:Language.Speech~~~$LANG~0.0.1.0"
+    Add-WindowsCapability -Name "Language.Speech~~~$LANG~0.0.1.0" -Path $MAIN_OS_MOUNT -Source $FOD_PATH -ErrorAction stop | Out-Null
+
+    # Note: If I wanted to enable additional Features on Demand, I'd add these here.
+
+    # Add latest cumulative update
+    Write-Output "$(Get-TS): Adding package $LCU_PATH"
+    Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $LCU_PATH -ErrorAction stop | Out-Null
+
+    # Perform image cleanup
+    Write-Output "$(Get-TS): Performing image cleanup on main OS"
+    DISM /image:$MAIN_OS_MOUNT /cleanup-image /StartComponentCleanup | Out-Null
+
+    #
+    # Note: If I wanted to enable additional Optional Components, I'd add these here.
+    # In addition, we'll add .NET 3.5 here as well. Both .NET and Optional Components might require
+    # the image to be booted, and thus if we tried to cleanup after installation, it would fail.
+    #
+
+    Write-Output "$(Get-TS): Adding NetFX3~~~~"
+    Add-WindowsCapability -Name "NetFX3~~~~" -Path $MAIN_OS_MOUNT -Source $FOD_PATH -ErrorAction stop | Out-Null
+
+    # Add .NET Cumulative Update
+    Write-Output "$(Get-TS): Adding package $DOTNET_CU_PATH"
+    Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $DOTNET_CU_PATH -ErrorAction stop | Out-Null
+
+    # Dismount
+    Dismount-WindowsImage -Path $MAIN_OS_MOUNT -Save -ErrorAction stop | Out-Null
+
+    # Export
+    Write-Output "$(Get-TS): Exporting image to $WORKING_PATH\install2.wim"
+    Export-WindowsImage -SourceImagePath $MEDIA_NEW_PATH"\sources\install.wim" -SourceIndex $IMAGE.ImageIndex -DestinationImagePath $WORKING_PATH"\install2.wim" -ErrorAction stop | Out-Null
+
 }
 
-# Add font support for the new language
-if ( (Test-Path -Path $WINPE_FONT_SUPPORT_PATH) ) {
-    Write-Output "$(Get-TS): Adding package $WINPE_FONT_SUPPORT_PATH"
-    Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $WINPE_FONT_SUPPORT_PATH -ErrorAction stop | Out-Null
-}
-
-# Add TTS support for the new language
-if (Test-Path -Path $WINPE_SPEECH_TTS_PATH) {
-    if ( (Test-Path -Path $WINPE_SPEECH_TTS_LANG_PATH) ) {
-
-        Write-Output "$(Get-TS): Adding package $WINPE_SPEECH_TTS_PATH"
-        Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $WINPE_SPEECH_TTS_PATH -ErrorAction stop | Out-Null
-
-        Write-Output "$(Get-TS): Adding package $WINPE_SPEECH_TTS_LANG_PATH"
-        Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $WINPE_SPEECH_TTS_LANG_PATH -ErrorAction stop | Out-Null
-    }
-}
-
-# Add Safe OS
-Write-Output "$(Get-TS): Adding package $SAFE_OS_DU_PATH"
-Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SAFE_OS_DU_PATH -ErrorAction stop | Out-Null
-
-# Perform image cleanup
-Write-Output "$(Get-TS): Performing image cleanup on WinRE"
-DISM /image:$WINRE_MOUNT /cleanup-image /StartComponentCleanup /ResetBase /Defer | Out-Null
-
-# Dismount
-Dismount-WindowsImage -Path $WINRE_MOUNT  -Save -ErrorAction stop | Out-Null
-
-# Export
-Write-Output "$(Get-TS): Exporting image to $WORKING_PATH\winre2.wim"
-Export-WindowsImage -SourceImagePath $WORKING_PATH"\winre.wim" -SourceIndex 1 -DestinationImagePath $WORKING_PATH"\winre2.wim" -ErrorAction stop | Out-Null
-Move-Item -Path $WORKING_PATH"\winre2.wim" -Destination $WORKING_PATH"\winre.wim" -Force -ErrorAction stop | Out-Null
+Move-Item -Path $WORKING_PATH"\install2.wim" -Destination $MEDIA_NEW_PATH"\sources\install.wim" -Force -ErrorAction stop | Out-Null
 ```
 
 ### Update WinPE
@@ -459,103 +561,6 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
 }
 
 Move-Item -Path $WORKING_PATH"\boot2.wim" -Destination $MEDIA_NEW_PATH"\sources\boot.wim" -Force -ErrorAction stop | Out-Null
-```
-
-### Update the main operating system
-
-For this next phase, there's no need to mount the main operating system, since it was already mounted in the previous scripts. This script starts by applying the servicing stack Dynamic Update. Then, it adds Japanese language support and then the Japanese language features. Unlike the Dynamic Update packages, it uses `Add-WindowsCapability` to add these features. For a full list of such features, and their associated capability name, see [Available Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod).
-
-Now is the time to enable other Optional Components or add other Features on Demand. If such a feature has an associated cumulative update (for example, .NET), this is the time to apply those. The script then proceeds with applying the latest cumulative update. Finally, the script cleans and exports the image.
-
-You can install Optional Components, along with the .NET feature, offline, but that requires the device to be restarted. This is why the script installs .NET and Optional Components after cleanup and before export.
-
-```powershell
-#
-# update Main OS
-#
-
-# Add servicing stack update (Step 18 from the table)
-
-# Depending on the Windows release that you are updating, there are 2 different approaches for updating the servicing stack
-# The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined cumulative update that
-# includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and Windows 11, version 22H2 are examples. In these
-# cases, the servicing stack update is not published separately; the combined cumulative update should be used for this step. However, in hopefully
-# rare cases, there may breaking change in the combined cumulative update format, that requires a standalone servicing stack update to be published, 
-# and installed first before the combined cumulative update can be installed. 
-
-# This is the code to handle the rare case that the SSU is published and required for the combined cumulative update
-# Write-Output "$(Get-TS): Adding package $SSU_PATH"
-# Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $SSU_PATH | Out-Null  
-
-# Now, attempt the combined cumulative update. Unlike WinRE and WinPE, we don't need to check for error 0x8007007e
-Write-Output "$(Get-TS): Adding package $LCU_PATH"
-Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $LCU_PATH | Out-Null  
-
-# The second approach for Step 18 is for Windows releases that have not adopted the combined cumulative update
-# but instead continue to have a separate servicing stack update published. In this case, we'll install the SSU
-# update. This second approach is commented out below.
-
-# Write-Output "$(Get-TS): Adding package $SSU_PATH"
-# Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $SSU_PATH | Out-Null  
-
-# Optional: Add language to main OS
-Write-Output "$(Get-TS): Adding package $OS_LP_PATH"
-Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $OS_LP_PATH -ErrorAction stop | Out-Null  
-
-# Optional: Add a Features on Demand to the image
-Write-Output "$(Get-TS): Adding language FOD: Language.Fonts.Jpan~~~und-JPAN~0.0.1.0"
-Add-WindowsCapability -Name "Language.Fonts.$LANG_FONT_CAPABILITY~~~und-$LANG_FONT_CAPABILITY~0.0.1.0" -Path $MAIN_OS_MOUNT -Source $FOD_PATH -ErrorAction stop | Out-Null
-
-Write-Output "$(Get-TS): Adding language FOD: Language.Basic~~~$LANG~0.0.1.0"
-Add-WindowsCapability -Name "Language.Basic~~~$LANG~0.0.1.0" -Path $MAIN_OS_MOUNT -Source $FOD_PATH -ErrorAction stop | Out-Null
-
-Write-Output "$(Get-TS): Adding language FOD: Language.OCR~~~$LANG~0.0.1.0"
-Add-WindowsCapability -Name "Language.OCR~~~$LANG~0.0.1.0" -Path $MAIN_OS_MOUNT -Source $FOD_PATH -ErrorAction stop | Out-Null
-
-Write-Output "$(Get-TS): Adding language FOD: Language.Handwriting~~~$LANG~0.0.1.0"
-Add-WindowsCapability -Name "Language.Handwriting~~~$LANG~0.0.1.0" -Path $MAIN_OS_MOUNT -Source $FOD_PATH -ErrorAction stop | Out-Null
-
-Write-Output "$(Get-TS): Adding language FOD: Language.TextToSpeech~~~$LANG~0.0.1.0"
-Add-WindowsCapability -Name "Language.TextToSpeech~~~$LANG~0.0.1.0" -Path $MAIN_OS_MOUNT -Source $FOD_PATH -ErrorAction stop | Out-Null
-
-Write-Output "$(Get-TS): Adding language FOD:Language.Speech~~~$LANG~0.0.1.0"
-Add-WindowsCapability -Name "Language.Speech~~~$LANG~0.0.1.0" -Path $MAIN_OS_MOUNT -Source $FOD_PATH -ErrorAction stop | Out-Null
-
-# Note: If I wanted to enable additional Features on Demand, I'd add these here.
-
-# Add latest cumulative update
-Write-Output "$(Get-TS): Adding package $LCU_PATH"
-Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $LCU_PATH -ErrorAction stop | Out-Null
-
-# Copy our updated recovery image from earlier into the main OS
-# Note: If I were updating more than 1 edition, I'd want to copy the same recovery image file
-# into each edition to enable single instancing
-Copy-Item -Path $WORKING_PATH"\winre.wim" -Destination $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Force -ErrorAction stop | Out-Null
-
-# Perform image cleanup
-Write-Output "$(Get-TS): Performing image cleanup on main OS"
-DISM /image:$MAIN_OS_MOUNT /cleanup-image /StartComponentCleanup | Out-Null
-
-#
-# Note: If I wanted to enable additional Optional Components, I'd add these here.
-# In addition, we'll add .NET 3.5 here as well. Both .NET and Optional Components might require
-# the image to be booted, and thus if we tried to cleanup after installation, it would fail.
-#
-
-Write-Output "$(Get-TS): Adding NetFX3~~~~"
-Add-WindowsCapability -Name "NetFX3~~~~" -Path $MAIN_OS_MOUNT -Source $FOD_PATH -ErrorAction stop | Out-Null
-
-# Add .NET Cumulative Update
-Write-Output "$(Get-TS): Adding package $DOTNET_CU_PATH"
-Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $DOTNET_CU_PATH -ErrorAction stop | Out-Null
-
-# Dismount
-Dismount-WindowsImage -Path $MAIN_OS_MOUNT -Save -ErrorAction stop | Out-Null
-
-# Export
-Write-Output "$(Get-TS): Exporting image to $WORKING_PATH\install2.wim"
-Export-WindowsImage -SourceImagePath $MEDIA_NEW_PATH"\sources\install.wim" -SourceIndex 1 -DestinationImagePath $WORKING_PATH"\install2.wim" -ErrorAction stop | Out-Null
-Move-Item -Path $WORKING_PATH"\install2.wim" -Destination $MEDIA_NEW_PATH"\sources\install.wim" -Force -ErrorAction stop | Out-Null
 ```
 
 ### Update remaining media files
