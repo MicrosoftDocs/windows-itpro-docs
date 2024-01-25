@@ -1,7 +1,6 @@
 ---
 title: Use Shell Launcher to create a Windows 10/11 kiosk (Windows 10/11)
 description: Shell Launcher lets you change the default shell that launches when a user signs in to a device.
-
 ms.topic: article
 ms.date: 12/31/2017
 ---
@@ -12,7 +11,6 @@ Using Shell Launcher, you can configure a device that runs an application as the
 
 >[!NOTE]
 >Shell Launcher controls which application the user sees as the shell after sign-in. It does not prevent the user from accessing other desktop applications and system components.
-
 >
 >Methods of controlling access to other desktop applications and system components can be used in addition to using the Shell Launcher. These methods include, but are not limited to:
 >- [Group Policy](https://www.microsoft.com/download/details.aspx?id=25250) - example: Prevent access to registry editing tools
@@ -28,6 +26,7 @@ Shell Launcher v1 replaces `explorer.exe`, the default shell, with `eshell.exe` 
 Shell Launcher v2 replaces `explorer.exe` with `customshellhost.exe`. This new executable file can launch a Windows desktop application or a UWP app.
 
 In addition to allowing you to use a UWP app for your replacement shell, Shell Launcher v2 offers additional enhancements:
+
 - You can use a custom Windows desktop application that can then launch UWP apps, such as **Settings** and **Touch Keyboard**.
 - From a custom UWP shell, you can launch secondary views and run on multiple monitors.
 - The custom shell app runs in full screen, and can run other apps in full screen on user's demand.
@@ -37,12 +36,11 @@ For sample XML configurations for the different app combinations, see [Samples f
 ## Requirements
 
 >[!WARNING]
->- Windows 10 doesn't support setting a custom shell prior to OOBE. If you do, you won't be able to deploy the resulting image.
 >
+>- Windows 10 doesn't support setting a custom shell prior to OOBE. If you do, you won't be able to deploy the resulting image.
 >- Shell Launcher doesn't support a custom shell with an application that launches a different process and exits. For example, you cannot specify **write.exe** in Shell Launcher. Shell Launcher launches a custom shell and monitors the process to identify when the custom shell exits. **Write.exe** creates a 32-bit wordpad.exe process and exits. Because Shell Launcher is not aware of the newly created wordpad.exe process, Shell Launcher will take action based on the exit code of **Write.exe**, such as restarting the custom shell.
 
 - A domain, Microsoft Entra ID, or local user account.
-
 - A Windows application that is installed for that account. The app can be your own company application or a common app like Internet Explorer.
 
 [See the technical reference for the shell launcher component.](/windows-hardware/customize/enterprise/shell-launcher)
@@ -54,9 +52,7 @@ To set a custom shell, you first turn on the Shell Launcher feature, and then yo
 **To turn on Shell Launcher in Windows features**
 
 1. Go to Control Panel &gt; **Programs and features** &gt; **Turn Windows features on or off**.
-
 1. Expand **Device Lockdown**.
-
 1. Select **Shell Launcher** and **OK**.
 
 Alternatively, you can turn on Shell Launcher using Windows Configuration Designer in a provisioning package, using `SMISettings > ShellLauncher`, or you can use the Deployment Image Servicing and Management (DISM.exe) tool.
@@ -80,19 +76,12 @@ The following XML sample works for **Shell Launcher v1**:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-
 <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration">
-
   <Profiles>
-
     <Profile ID="{24A7309204F3F-44CC-8375-53F13FE213F7}">
-
       <Shell Shell="%ProgramFiles%\Internet Explorer\iexplore.exe -k www.bing.com" />
-
     </Profile>
-
   </Profiles>
-
   <Configs>
     <!--local account-->
     <Account Name="ShellLauncherUser"/>
@@ -105,27 +94,16 @@ For **Shell Launcher v2**, you can use UWP app type for `Shell` by specifying th
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-
 <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
-
 xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
-
   <Profiles>
-
     <DefaultProfile>
-
       <Shell Shell="ShellLauncherV2DemoUwp_5d7tap497jwe8!App" v2:AppType="UWP" v2:AllAppsFullScreen="true">
-
         <DefaultAction Action="RestartShell"/>
-
       </Shell>
-
     </DefaultProfile>
-
   </Profiles>
-
   <Configs/>
-
 </ShellLauncherConfiguration>
 ```
 
@@ -163,29 +141,22 @@ using System.Runtime.InteropServices;
 static class CheckShellLauncherLicense
 {
     const int S_OK = 0;
-
     public static bool IsShellLauncherLicenseEnabled()
     {
         int enabled = 0;
-
         if (NativeMethods.SLGetWindowsInformationDWORD("EmbeddedFeature-ShellLauncher-Enabled", out enabled) != S_OK) {
             enabled = 0;
         }
-
         return (enabled != 0);
     }
-
     static class NativeMethods
     {
         [DllImport("Slc.dll")]
         internal static extern int SLGetWindowsInformationDWORD([MarshalAs(UnmanagedType.LPWStr)]string valueName, out int value);
     }
-
 }
 "@
-
     $type = Add-Type -TypeDefinition $source -PassThru
-
     return $type[0]::IsShellLauncherLicenseEnabled()
 }
 
@@ -238,7 +209,6 @@ $restart_device = 1
 $shutdown_device = 2
 
 # Examples. You can change these examples to use the program that you want to use as the shell.
-
 # This example sets the command prompt as the default shell, and restarts the device if the command prompt is closed.
 
 $ShellLauncherClass.SetDefaultShell("cmd.exe", $restart_device)
@@ -265,39 +235,36 @@ Get-WmiObject -namespace $NAMESPACE -computer $COMPUTER -class WESL_UserSetting 
 # Enable Shell Launcher
 
 $ShellLauncherClass.SetEnabled($TRUE)
-
 $IsShellLauncherEnabled = $ShellLauncherClass.IsEnabled()
-
 "`nEnabled is set to " + $IsShellLauncherEnabled.Enabled
 
 # Remove the new custom shells.
 
 $ShellLauncherClass.RemoveCustomShell($Admins_SID)
-
 $ShellLauncherClass.RemoveCustomShell($Cashier_SID)
 
 # Disable Shell Launcher
 
 $ShellLauncherClass.SetEnabled($FALSE)
-
 $IsShellLauncherEnabled = $ShellLauncherClass.IsEnabled()
-
 "`nEnabled is set to " + $IsShellLauncherEnabled.Enabled
 ```
 
 ## default action, custom action, exit code
+
 Shell launcher defines four actions to handle app exits, you can customize shell launcher and use these actions based on different exit code.
 
-Value|Description
---- | ---
-0|Restart the shell
-1|Restart the device
-2|Shut down the device
-3|Do nothing
+| Value | Description |
+|--|--|
+| 0 | Restart the shell |
+| 1 | Restart the device |
+| 2 | Shut down the device |
+| 3 | Do nothing |
 
 These actions can be used as default action, or can be mapped to a specific exit code. Refer to [Shell Launcher](/windows-hardware/customize/enterprise/wesl-usersettingsetcustomshell) to see how these codes with Shell Launcher WMI.
 
 To configure these actions with Shell Launcher CSP, use below syntax in the shell launcher configuration xml. You can specify at most four custom actions mapping to four exit codes, and one default action for all other exit codes. When app exits and if the exit code is not found in the custom action mapping, or there is no default action defined, it will be no-op, i.e. nothing happens. So it's recommended to at least define DefaultAction. [Get XML examples for different Shell Launcher v2 configurations.](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2)
+
 ``` xml
 <ReturnCodeActions>
     <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>

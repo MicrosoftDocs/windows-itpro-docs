@@ -22,7 +22,6 @@ Kiosk Browser must be downloaded for offline licensing using Microsoft Store for
 This procedure explains how to configure digital signage using Kiosk Browser on a device running Windows client that has already been set up (completed the first-run experience).
 
 1. [Get **Kiosk Browser** in Microsoft Store for Business with offline, unencoded license type.](/microsoft-store/acquire-apps-microsoft-store-for-business#acquire-apps)
-
 1. [Download the **Kiosk Browser** package, license file, and all required frameworks.](/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app)
 1. [Install Windows Configuration Designer.](~/provisioning-packages/provisioning-install-icd.md)
 1. Open Windows Configuration Designer and select **Provision kiosk devices**.
@@ -30,7 +29,6 @@ This procedure explains how to configure digital signage using Kiosk Browser on 
 1. On **Set up device**, select **Disabled**, and select **Next**.
 1. On **Set up network**, enable network setup:
     - Toggle **On** wireless network connectivity.
-
     - Enter the SSID, the network type (**Open** or **WPA2-Personal**), and (if **WPA2-Personal**) the password for the wireless network.
 1. On **Account management**, select **Disabled**, and select **Next**.
 1. On **Add applications**, select **Add an application**:
@@ -46,7 +44,6 @@ This procedure explains how to configure digital signage using Kiosk Browser on 
     - For **App type**, select **Universal Windows App**.
     - In **Enter the AUMID for the app**, enter `Microsoft.KioskBrowser_8wekyb3d8bbwe!App`.
 1. In the bottom left corner of Windows Configuration Designer, select **Switch to advanced editor**.
-
 1. Go to **Runtime settings** > **Policies** > **KioskBrowser**. Let's assume that the URL for your digital signage content is contoso.com/menu:
     - In **BlockedUrlExceptions**, enter `https://www.contoso.com/menu`.
     - In **BlockedUrl**, enter `*`.

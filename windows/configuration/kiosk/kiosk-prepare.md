@@ -1,7 +1,6 @@
 ---
 title: Prepare a device for kiosk configuration on Windows 10/11 | Microsoft Docs
 description: Learn how to prepare a device for kiosk configuration. Also, learn about the recommended kiosk configuration changes.
-
 ms.topic: article
 ms.date: 12/31/2017
 ---
@@ -29,7 +28,6 @@ For a more secure kiosk experience, we recommend that you make the following con
 - **Hide update notifications**. Starting with Windows 10 version 1809, you can hide notifications from showing on the devices. To enable this feature, you have the following options:
 
   - **Use Group policy**: `Computer Configuration\Administrative Templates\Windows Components\Windows Update\Display options for update notifications`
-
   - **Use an MDM provider**: This feature uses the [Update/UpdateNotificationLevel CSP](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel). In Intune, you can use the [Windows update settings](/mem/intune/protect/windows-update-settings) to manage this feature.
 
   - **Use the registry**:
@@ -168,27 +166,16 @@ For a more secure kiosk experience, we recommend that you make the following con
       - `\System\Logon\Turn off app notifications on the lock screen`: Select **Enabled**.
 
 - **Disable removable media**:  To enable this feature, you have the following options:
-
   - **Use Group policy**: `Computer Configuration\Administrative Templates\System\Device Installation\Device Installation Restrictions`. Review the available settings that apply to your situation.
-
     To prevent this policy from affecting a member of the Administrators group, select `Allow administrators to override Device Installation Restriction policies` > **Enabled**.
-
   - **Use an MDM provider**: In Intune, you have the following options:
-
     - [General settings in a device configuration profile](/mem/intune/configuration/device-restrictions-windows-10#general): See the **Removable storage** setting, and more settings you can manage.
-
     - [Administrative templates](/mem/intune/configuration/administrative-templates-windows): These templates are the administrative templates used in on-premises Group Policy. Configure the following settings:
-
       - `\System\Device Installation`: There are several policies you can manage, including restrictions in `\System\Device Installation\Device Installation Restrictions`.
-
         To prevent this policy from affecting a member of the Administrators group, select `Allow administrators to override Device Installation Restriction policies` > **Enabled**.
-
       When looking at settings, check the supported OS for each setting to make sure it applies.
-
     - [Settings Catalog](/mem/intune/configuration/settings-catalog): This option lists all the settings you can configure, including the administrative templates used in on-premises Group Policy. Configure the following settings:
-
       - `\Administrative Templates\System\Device Installation`: There are several policies you can manage, including restrictions in `\System\Device Installation\Device Installation Restrictions`.
-
         To prevent this policy from affecting a member of the Administrators group, select `Allow administrators to override Device Installation Restriction policies` > **Enabled**.
 
 ## Enable logging
@@ -207,7 +194,7 @@ You may also want to set up **automatic logon** for your kiosk device. When your
 > [!TIP]
 > If you use the [kiosk wizard in Windows Configuration Designer](kiosk-single-app.md) or [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) to configure your kiosk, you can set an account to sign in automatically in the wizard or XML.
 
-**How to edit the registry to have an account sign in automatically**
+How to edit the registry to have an account sign in automatically:
 
 1. Open Registry Editor (regedit.exe).
 
@@ -216,14 +203,12 @@ You may also want to set up **automatic logon** for your kiosk device. When your
 
 1. Go to
 
-   **HKEY\_LOCAL\_MACHINE\SOFTWARE\\Microsoft\Windows NT\CurrentVersion\Winlogon**
+   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon**
 
 1. Set the values for the following keys.
 
    - *AutoAdminLogon*: set value as **1**.
-
    - *DefaultUserName*: set value as the account that you want signed in.
-
    - *DefaultPassword*: set value as the password for the account.
 
      > [!NOTE]
@@ -255,18 +240,18 @@ The following table describes some features that have interoperability issues we
 
 - **Key sequences blocked by assigned access**: When in assigned access, some key combinations are blocked for assigned access users.
 
-  Alt + F4, Alt + Shift + Tab, Alt + Tab aren't blocked by Assigned Access, it's recommended you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block these key combinations.
+  <kbd>Alt</kbd> + <kbd>F4</kbd>, <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>, <kbd>Alt</kbd> + <kbd>Tab</kbd> aren't blocked by Assigned Access, it's recommended you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block these key combinations.
 
   Ctrl + Alt + Delete is the key to break out of Assigned Access. If needed, you can use Keyboard Filter to configure a different key combination to break out of assigned access by setting BreakoutKeyScanCode as described in [WEKF_Settings](/windows-hardware/customize/enterprise/wekf-settings).
 
   | Key combination | Blocked behavior for assigned access users |
   | --- | --- |
-  | Alt + Esc | Cycle through items in the reverse order from which they were opened. |
-  | Ctrl + Alt + Esc | Cycle through items in the reverse order from which they were opened. |
-  | Ctrl + Esc | Open the Start screen. |
-  | Ctrl + F4 | Close the window. |
-  | Ctrl + Shift + Esc | Open Task Manager. |
-  | Ctrl + Tab | Switch windows within the application currently open. |
+  | <kbd>Alt</kbd> + <kbd>Esc</kbd> | Cycle through items in the reverse order from which they were opened. |
+  | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Esc</kbd>  | Cycle through items in the reverse order from which they were opened. |
+  | <kbd>Ctrl</kbd> + <kbd>Esc</kbd> | Open the Start screen. |
+  | <kbd>Ctrl</kbd> + <kbd>F4</kbd> | Close the window. |
+  | <kbd>Ctrl</kbd> + <kbd>Shift</kbd  + <kbd>Esc</kbd>  | Open Task Manager. |
+  | <kbd>Ctrl</kbd> + <kbd>Tab</kbd> | Switch windows within the application currently open. |
   | LaunchApp1 | Open the app that is assigned to this key. |
   | LaunchApp2 | Open the app that is assigned to this key. On many Microsoft keyboards, the app is Calculator. |
   | LaunchMail | Open the default mail client. |
@@ -275,24 +260,16 @@ The following table describes some features that have interoperability issues we
   Keyboard Filter settings apply to other standard accounts.
 
 - **Key sequences blocked by [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter)**: If Keyboard Filter is turned ON, then some key combinations are blocked automatically without you having to explicitly block them. For more information, see the [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter).
-
   [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) is only available on Windows client Enterprise or Education.
-
 - **Power button**: Customizations for the Power button complement assigned access, letting you implement features such as removing the power button from the Welcome screen. Removing the power button ensures the user can't turn off the device when it's in assigned access.
-
   For more information on removing the power button or disabling the physical power button, see [Custom Logon](/windows-hardware/customize/enterprise/custom-logon).
-
 - **Unified Write Filter (UWF)**: UWFsettings apply to all users, including users with assigned access.
-
   For more information, see [Unified Write Filter](/windows-hardware/customize/enterprise/unified-write-filter).
-
 - **WEDL_AssignedAccess class**: You can use this class to configure and manage basic lockdown features for assigned access. It's recommended to you use the Windows PowerShell cmdlets instead.
-
   If you need to use assigned access API, see [WEDL_AssignedAccess](/windows-hardware/customize/enterprise/wedl-assignedaccess).
-
 - **Welcome Screen**: Customizations for the Welcome screen let you personalize not only how the Welcome screen looks, but for how it functions. You can disable the power or language button, or remove all user interface elements. There are many options to make the Welcome screen your own.
 
-  For more information, see [Custom Logon](/windows-hardware/customize/enterprise/custom-logon).
+For more information, see [Custom Logon](/windows-hardware/customize/enterprise/custom-logon).
 
 ## Testing your kiosk in a virtual machine (VM)
 
