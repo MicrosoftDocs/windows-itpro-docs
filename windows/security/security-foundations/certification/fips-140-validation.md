@@ -1,7 +1,7 @@
 ---
 title: Windows FIPS 140 validation
 description: Learn how Microsoft products and cryptographic modules follow the U.S. Federal government standard FIPS 140.
-ms.date: 1/2/2024
+ms.date: 1/25/2024
 ms.topic: reference
 ms.author: v-rodurff
 author: msrobertd
@@ -11,29 +11,15 @@ ms.collection: tier3
 
 # Windows FIPS 140 validation
 
-The Federal Information Processing Standard (FIPS) Publication 140 is a U.S. government standard that defines the minimum-security requirements for cryptographic modules in IT products. This topic introduces the FIPS 140 validation process for the Windows cryptographic modules. The Windows cryptographic modules are used across different Microsoft products, including Windows client operating systems, Windows Server operating systems, and Azure cloud services.
+The Federal Information Processing Standard (FIPS) Publication 140 is a U.S. government standard that defines the minimum-security requirements for cryptographic modules in IT products. This topic introduces FIPS 140 validation for the Windows cryptographic modules. The Windows cryptographic modules are used across different Microsoft products, including Windows client operating systems, Windows Server operating systems, and Azure cloud services.
 
-Microsoft maintains an active commitment to meeting the requirements of the FIPS 140 standard, having validated cryptographic modules against it since it was first established in 2001. Windows cryptographic modules are validated under the [Cryptographic Module Validation Program (CMVP)][CMVP], a joint effort between the U.S. National Institute of Standards and Technology (NIST) and the Canadian Centre for Cyber Security (CCCS). The CMVP validates cryptographic modules against the Security Requirements for Cryptographic Modules (part of FIPS 140) and related FIPS cryptography standards. The NIST Information Technology Laboratory operates related programs that validate the FIPS approved cryptographic algorithms in the modules ([Cryptographic Algorithm Validation Program, CAVP][CAVP]) as well as the entropy source used by the modules ([Entropy Validation program][ESV]).
+Microsoft maintains an active commitment to meeting the requirements of the FIPS 140 standard, having validated cryptographic modules against it since it was first established in 2001. Windows cryptographic modules are validated under the [Cryptographic Module Validation Program (CMVP)][CMVP], a joint effort between the U.S. National Institute of Standards and Technology (NIST) and the Canadian Centre for Cyber Security (CCCS). The CMVP validates cryptographic modules against the Security Requirements for Cryptographic Modules (part of FIPS 140) and related FIPS cryptography standards. The NIST Information Technology Laboratory operates related programs that Microsoft also participates in: the [Cryptographic Algorithm Validation Program (CAVP)][CAVP] certifies FIPS-approved cryptographic algorithms and the [Entropy Validation program][ESV] certifies entropy sources to the NIST SP 800-90B standard.
 
-The cadence for starting module validation aligns with the feature updates of Windows and Windows Server. As the software industry evolves, operating systems release more frequently. Microsoft completes validation work on major releases but, in between releases, seeks to minimize the changes to the cryptographic modules. The duration of each evaluation varies, depending on many factors.
+## Windows client operating systems and cryptographic modules
 
-## Validated modules used by Windows client
+The Windows client releases listed below include cryptographic modules that have completed FIPS 140 validation. Expand the release for details, including the CMVP certificate, Security Policy document, and algorithm scope for each module. When the CMVP certificate validation label includes the note When operated in FIPS mode, specific configuration and security rules outlined in the Security Policy must be followed.
 
-The Windows client releases listed below include cryptographic modules that have completed FIPS 140 validation. Click on the release for details, including the CMVP certificate, Security Policy document, and algorithm scope for each module. When the CMVP certificate validation label includes the note *When operated in FIPS mode*, specific configuration and security rules outlined in the Security Policy must be followed.
-
-### Windows 11 and Windows 10 releases
-
-<details>
-
-<summary><b>Windows 11, version 21H2</b></summary>
-
-Build: 10.0.22000. Validated Edition: Windows 11
-
-|Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
-|--- |--- |--- |
-|[Boot Manager][sp-4546]|[#3089][certificate-4546]|FIPS Approved: AES, CKG, HMAC, PBKDF, RSA, and SHS|
-
-</details>
+### Windows 10 releases
 
 <details>
 
@@ -489,26 +475,13 @@ Validated Edition: Ultimate Edition
 
 ## Validated modules used by Windows Server
 
-The Windows Server releases listed below include cryptographic modules that have completed FIPS 140 validation. Click on the release for details, including the CMVP certificate, Security Policy document, and algorithm scope for each module. When the CMVP certificate validation label includes the note *When operated in FIPS mode*, specific configuration and security rules outlined in the Security Policy must be followed.
+The Windows Server releases listed below include cryptographic modules that have completed FIPS 140 validation. Expand the release for details, including the CMVP certificate, Security Policy document, and algorithm scope for each module. When the CMVP certificate validation label includes the note When operated in FIPS mode, specific configuration and security rules outlined in the Security Policy must be followed.
 
 ### Windows Server 2019 and 2016 releases
 
 <details>
 
 <summary><b>Windows Server 2019</b></summary>
-
-Builds: 10.0.17763.10021 and 10.0.17763.10127. Validated Edition: Datacenter Core
-
-|Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
-|--- |--- |--- |
-|[BitLocker Dump Filter]|Pending [(in process)][in-process]||
-|[Boot Manager][sp-4484]|[#4484][certificate-4484]|FIPS Approved: AES, CKG, HMAC, PBKDF, RSA, and SHS|
-|[Code Integrity][sp-4602]|[#4602][certificate-4602]|FIPS Approved: RSA and SHS|
-|[Cryptographic Primitives Library]|Pending [(in process)][in-process]||
-|[Kernel Mode Cryptographic Primitives Library][sp-4670]|[#4670][certificate-4670]|AES, CKG, CVL, DRBG, DSA, ECDSA, HMAC, KAS, KBKDF, KTS, PBKDF, RSA, SHS, and Triple-DES; Other Allowed: ECDH|
-|[Secure Kernel Code Integrity][sp-4640]|[#4640][certificate-4640]|FIPS Approved: RSA and SHS|
-|[Virtual TPM]|Pending [(in process)][in-process]||
-|[Windows OS Loader][sp-4545]|[#4545][certificate-4545]|FIPS Approved: AES, RSA, and SHS; Other Allowed: NDRNG|
 
 Build: 10.0.17763.107. Validated Editions: Standard Core, Datacenter Core
 
@@ -780,7 +753,7 @@ Validated Editions: Server, Storage Server
 
 To use Windows and Windows Server in a FIPS 140 approved mode of operation, all of the specific configuration and security rules outlined in the module Security Policy documents must be followed. To view or download the Security Policy documents for a given product release, navigate to the listing of FIPS 140 validated modules for the release in the sections above and select the links to the Security Policy documents.
 
-As part of the configuration rules outlined in the Security Policy documents, Windows and Windows Server may be configured to run in a FIPS 140 approved mode of operation, commonly referred to as "FIPS mode." If you turn on FIPS mode, the Cryptographic Primitives Library (bcryptprimitives.dll) and Kernel Mode Cryptographic Primitives Library (CNG.sys) modules will run self-tests before Windows runs cryptographic operations. These self-tests meet FIPS 140 requirements and ensure that the modules are functioning properly. The Cryptographic Primitives Library and the Kernel Mode Cryptographic Primitives Library are the only modules affected by FIPS mode. FIPS mode won't prevent Windows and its subsystems from using non-FIPS validated cryptographic algorithms. FIPS mode is merely advisory for applications or components other than the Cryptographic Primitives Library and the Kernel Mode Cryptographic Primitives Library. U.S. government regulations continue to mandate FIPS mode for government devices running Windows. Other customers should research and decide for themselves if FIPS mode is right for them. There are many applications and protocols that use FIPS mode policy to determine which cryptographic functionality to run. Customers seeking to follow the FIPS 140-2 standard should research the configuration settings of their applications and protocols. This research will help ensure that they can be configured to use FIPS 140-2 validated cryptography.
+As part of the configuration rules outlined in the Security Policy documents, Windows and Windows Server may be configured to run in a FIPS 140 approved mode of operation, commonly referred to as "FIPS mode." In current versions of Windows, when you enable the FIPS mode setting, the Cryptographic Primitives Library (bcryptprimitives.dll) and Kernel Mode Cryptographic Primitives Library (CNG.sys) modules will run self-tests before Windows runs cryptographic operations. These self-tests meet FIPS 140 requirements and ensure that the modules are functioning properly. The Cryptographic Primitives Library and the Kernel Mode Cryptographic Primitives Library are the only modules that use the FIPS mode configuration setting. FIPS mode does not control which cryptographic algorithms are used. The FIPS mode setting is intended for use only by the Cryptographic Primitives Library (bcryptprimitives.dll) and Kernel Mode Cryptographic Primitives Library (CNG.sys) components in Windows.
 
 ## Determine if a Windows service or application is FIPS 140 compliant
 
