@@ -1,11 +1,8 @@
 ---
 title: DeviceFormFactor
 description: This section describes the DeviceFormFactor setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-ms.date: 04/30/2018
-
+ms.date: 01/25/2024
 ---
 
 # DeviceFormFactor (Windows Configuration Designer reference)

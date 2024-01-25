@@ -1,11 +1,8 @@
 ---
 title: HotSpot
 description: This section describes the HotSpot settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-ms.date: 12/18/2018
-
+ms.date: 01/25/2024
 ---
 
 # HotSpot (Windows Configuration Designer reference)

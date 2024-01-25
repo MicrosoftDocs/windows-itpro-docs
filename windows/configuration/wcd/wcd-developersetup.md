@@ -1,11 +1,8 @@
 ---
 title: DeveloperSetup
 description: This section describes the DeveloperSetup settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-ms.date: 09/06/2017
-
+ms.date: 01/25/2024
 ---
 
 # DeveloperSetup (Windows Configuration Designer reference)

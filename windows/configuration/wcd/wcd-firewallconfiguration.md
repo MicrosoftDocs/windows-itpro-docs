@@ -1,11 +1,8 @@
 ---
 title: FirewallConfiguration
 description: This section describes the FirewallConfiguration setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-ms.date: 09/06/2017
-
+ms.date: 01/25/2024
 ---
 
 # FirewallConfiguration (Windows Configuration Designer reference)

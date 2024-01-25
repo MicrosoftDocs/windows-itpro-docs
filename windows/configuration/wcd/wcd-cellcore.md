@@ -1,11 +1,8 @@
 ---
 title: CellCore
 description: This section describes the CellCore settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-ms.date: 10/02/2018
-
+ms.date: 01/25/2024
 ---
 
 # CellCore (Windows Configuration Designer reference)
@@ -19,26 +16,26 @@ Use to configure settings for cellular data.
 
 ## Applies to
 
-|Setting groups | Windows client | Surface Hub | HoloLens | IoT Core|
-|:---|:---:|:---:|:---:|:---:|
-|PerDevice: [CellConfigurations](#cellconfigurations)|  |  |  |  |
-|PerDevice: [CellData](#celldata) |✅|✅|  |  |
-|PerDevice: [CellUX](#cellux)| ✅ |✅| | |
-|PerDevice: [CGDual](#cgdual)|  |  |  | |
-|PerDevice: [eSim](#esim) | ✅ |  ✅  |  | |
-|PerDevice: [External](#external)  |  |   |  | |
-|PerDevice: [General](#general)  |  |  |  | |
-|PerDevice: [RCS](#rcs)|  |  |  | |
-|PerDevice: [SMS](#sms)| ✅ | ✅  |  |
-|PerDevice: [UIX](#uix)|  |  |  | |
-|PerDevice: [UTK](#utk)|  |  |  | |
-|PerIMSI: [CellData](#celldata2)|  |  |  |  |
-|PerIMSI: [CellUX](#cellux2)| | | | |
-|PerIMSI: [General](#general2)|  |  |  | |
-|PerIMSI: [RCS](#rcs2)|  |  |  |  |
-|PerIMSI: [SMS](#sms2)|✅|✅|  |  |
-|PerIMSI: [UTK](#utk2)|  |   |  |  |
-|PerIMSI: [VoLTE](#volte)|  |  |  |  |
+| Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
+|:-|:-:|:-:|:-:|:-:|
+| PerDevice: [CellConfigurations](#cellconfigurations) |  |  |  |  |
+| PerDevice: [CellData](#celldata) | ✅ | ✅ |  |  |
+| PerDevice: [CellUX](#cellux) | ✅ | ✅ |  |  |
+| PerDevice: [CGDual](#cgdual) |  |  |  |  |
+| PerDevice: [eSim](#esim) | ✅ | ✅ |  |  |
+| PerDevice: [External](#external) |  |  |  |  |
+| PerDevice: [General](#general) |  |  |  |  |
+| PerDevice: [RCS](#rcs) |  |  |  |  |
+| PerDevice: [SMS](#sms) | ✅ | ✅ |  |
+| PerDevice: [UIX](#uix) |  |  |  |  |
+| PerDevice: [UTK](#utk) |  |  |  |  |
+| PerIMSI: [CellData](#celldata2) |  |  |  |  |
+| PerIMSI: [CellUX](#cellux2) |  |  |  |  |
+| PerIMSI: [General](#general2) |  |  |  |  |
+| PerIMSI: [RCS](#rcs2) |  |  |  |  |
+| PerIMSI: [SMS](#sms2) | ✅ | ✅ |  |  |
+| PerIMSI: [UTK](#utk2) |  |  |  |  |
+| PerIMSI: [VoLTE](#volte) |  |  |  |  |
 
 ## PerDevice
 
@@ -395,7 +392,6 @@ The following table shows the scenarios supported by this customization.
 
 >[!NOTE]
 >In the Default SIM name column:
-
 >
 >- The " " in MultivariantProvisionedSPN" "1234 means that there's a space between the mobile operator name or SPN and the last 4 digits of the MSISDN.
 >- MultivariantProvisionedSPN means the value that you set for the MultivariantProvisionedSPN setting.

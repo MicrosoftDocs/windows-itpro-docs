@@ -1,11 +1,8 @@
 ---
 title: ConnectivityProfiles
 description: This section describes the ConnectivityProfile settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-ms.date: 04/30/2018
-
+ms.date: 01/25/2024
 ---
 
 # ConnectivityProfiles (Windows Configuration Designer reference)
@@ -60,22 +57,22 @@ Configure settings related to Exchange email server. These settings are related 
 1. In **Available customizations**, select the GUID that you created. The following table describes the settings you can configure. Settings in **bold** are required.
 
 | Setting | Description |
-| --- | --- |
+|--|--|
 | AccountIcon | Specify the location of the icon associated with the account.</br></br>The account icon can be used as a tile in the Start list or as an icon in the applications list under **Settings > Email & accounts**. Some icons are already provided on the device. The suggested icon for POP/IMAP or generic ActiveSync accounts is at `res://AccountSettingsSharedRes{ScreenResolution}!%s.genericmail.png`. The suggested icon for Exchange Accounts is at `res://AccountSettingsSharedRes{ScreenResolution}!%s.office.outlook.png`. Custom icons can be added if desired. |
 | **AccountName** | Enter the name that refers to the account on the device |
 | **AccountType** | Select **Exchange** |
 | **DiagnosticLogging** | Select whether to disable logging, enable basic logging, or enable advanced logging |
 | Domain | Enter the domain name of the Exchange server |
 | **EmailAddress** | Enter the email address associated with the Exchange ActiveSync account. |
-| **MailAgeFilter** | Specify the time window used for syncing email items to the device. Available values are:</br></br>- All email is synced</br>- Only email up to three days old is synced</br>-Email up to a week old is synced (default)</br>- Email up to two weeks old is synced</br>- Email up to a month old is synced  |
+| **MailAgeFilter** | Specify the time window used for syncing email items to the device. Available values are:</br></br>- All email is synced</br>- Only email up to three days old is synced</br>-Email up to a week old is synced (default)</br>- Email up to two weeks old is synced</br>- Email up to a month old is synced |
 | **Password** | Enter the password for the account |
 | **Schedule** | Specify the time until the next sync is performed, in minutes. Available values are:</br></br>- As items are received (default)</br>- Sync manually</br>- Every 15 minutes</br>- Every 30 minutes</br>- Every 60 minutes |
-| **ServerName**| Enter the server name used by the account |
+| **ServerName** | Enter the server name used by the account |
 | SyncCalendar_Enable | Enable or disable calendar sync |
 | SyncCalendar_Name | If you enable calendar sync, enter **Calendar** |
 | SyncContacts_Enable | Enable or disable contacts sync |
 | SyncContacts_Name | If you enable contacts sync, enter **Contacts** |
-| SyncEmail_Enable| Enable or disable email sync  |
+| SyncEmail_Enable | Enable or disable email sync |
 | SyncEmail_Name | If you enable email sync, enter **Email** |
 | SyncTasks_Enable | Enable or disable tasks sync |
 | SyncTasks_Name | If you enable tasks sync, enter **Tasks** |
@@ -123,22 +120,21 @@ Configure settings to change the default maximum transmission unit ([MTU](#mtu))
 
 When **ProfileType** is set to **Native**, the following extra settings are available.
 
-Setting | Description
-
---- | ---
-AuthenticationUserMethod | When you set **NativeProtocolType** to **IKEv2**, choose between **EAP** and **MSChapv2**.
-EAPConfiguration | When you set **AuthenticationUserMethod** to **EAP**, enter the HTML-encoded XML to configure EAP. For more information, see [EAP configuration](/windows/client-management/mdm/eap-configuration).
-NativeProtocolType | Choose between **PPTP**, **L2TP**, **IKEv2**, and **Automatic**.
-RoutingPolicyType | Choose between **SplitTunnel**, in which traffic can go over any interface as determined by the networking stack, and **ForceTunnel**, in which all IP traffic must go over the VPN interface.
-Server | Enter the public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm.
+| Setting | Description |
+|--|--|
+| AuthenticationUserMethod | When you set **NativeProtocolType** to **IKEv2**, choose between **EAP** and **MSChapv2**. |
+| EAPConfiguration | When you set **AuthenticationUserMethod** to **EAP**, enter the HTML-encoded XML to configure EAP. For more information, see [EAP configuration](/windows/client-management/mdm/eap-configuration). |
+| NativeProtocolType | Choose between **PPTP**, **L2TP**, **IKEv2**, and **Automatic**. |
+| RoutingPolicyType | Choose between **SplitTunnel**, in which traffic can go over any interface as determined by the networking stack, and **ForceTunnel**, in which all IP traffic must go over the VPN interface. |
+| Server | Enter the public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. |
 
 When **ProfileType** is set to **Third Party**, the following extra settings are available.
 
-Setting | Description
---- |---
-PluginProfileCustomConfiguration | Enter HTML-encoded XML for SSL-VPN plug-in specific configuration, including authentication information that is deployed to the device to make it available for SSL-VPN plug-ins. Contact the plug-in provider for format and other details. Most plug-ins can also configure values based on the server negotiations and defaults.
-PluginProfilePackageFamilyName | Choose between **Pulse Secure VPN**, **F5 VPN Client**, and **SonicWALL Mobile Connect**.
-PluginProfileServerUrlList | Enter a comma-separated list of servers in URL, hostname, or IP format.
+| Setting | Description |
+|--|--|
+| PluginProfileCustomConfiguration | Enter HTML-encoded XML for SSL-VPN plug-in specific configuration, including authentication information that is deployed to the device to make it available for SSL-VPN plug-ins. Contact the plug-in provider for format and other details. Most plug-ins can also configure values based on the server negotiations and defaults. |
+| PluginProfilePackageFamilyName | Choose between **Pulse Secure VPN**, **F5 VPN Client**, and **SonicWALL Mobile Connect**. |
+| PluginProfileServerUrlList | Enter a comma-separated list of servers in URL, hostname, or IP format. |
 
 ## WiFiSense
 

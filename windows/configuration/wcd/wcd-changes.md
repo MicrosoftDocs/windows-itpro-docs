@@ -2,7 +2,7 @@
 title: Changes to settings in Windows Configuration Designer
 description: This section describes the changes to settings in Windows Configuration Designer in Windows 10, version 1809.
 ms.topic: reference
-ms.date: 12/31/2017
+ms.date: 01/25/2024
 ---
 
 # Changes to settings in Windows Configuration Designer

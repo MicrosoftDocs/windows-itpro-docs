@@ -1,11 +1,8 @@
 ---
 title: WindowsTeamSettings
 description: This section describes the WindowsTeamSettings settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-
-ms.date: 12/31/2017
+ms.date: 01/25/2024
 ---
 
 # WindowsTeamSettings (reference)
@@ -14,10 +11,9 @@ Use WindowsTeamSettings settings to configure Surface Hub.
 
 ## Applies to
 
-| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: |
-
-| All settings |  | ✅ |  |   |
+| Setting | Windows client | Surface Hub | HoloLens | IoT Core |
+|--|:-:|:-:|:-:|:-:|
+| All settings |  | ✅ |  |  |
 
 ## Connect
 
@@ -48,8 +44,6 @@ A device account is a Microsoft Exchange account that's connected with Skype for
 ## Dot3
 
 Use these settings to configure 802.1x wired authentication. For details, see [Enable 802.1x wired authentication](/surface-hub/enable-8021x-wired-authentication).
-
-
 
 ## FriendlyName
 

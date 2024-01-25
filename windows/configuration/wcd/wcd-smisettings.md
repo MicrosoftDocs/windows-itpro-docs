@@ -1,11 +1,8 @@
 ---
 title: SMISettings
 description: This section describes the SMISettings settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
 ms.date: 03/30/2018
-
 ---
 
 # SMISettings (Windows Configuration Designer reference)

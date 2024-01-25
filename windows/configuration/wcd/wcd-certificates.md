@@ -1,11 +1,8 @@
 ---
 title: Certificates
 description: This section describes the Certificates settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-ms.date: 09/06/2017
-
+ms.date: 01/25/2024
 ---
 
 # Certificates (Windows Configuration Designer reference)
@@ -53,7 +50,6 @@ Use to deploy Root Certificate Authority (CA) certificates to devices. The follo
 
 1. In **Available customizations**, select **TrustedPeopleCertificates**, enter a friendly name for the certificate, and then click **Add**.
 1. In **Available customizations**, select the name that you created.
-
 1. In **TrustedCertificate**, browse to or enter the path to the certificate.
 
 ## TrustedProvisioners

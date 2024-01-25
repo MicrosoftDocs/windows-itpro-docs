@@ -1,10 +1,8 @@
 ---
 title: Cellular
 description: This section describes the Cellular settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-ms.date: 12/31/2017
+ms.date: 01/25/2024
 ---
 
 # Cellular (Windows Configuration Designer reference)
@@ -17,7 +15,7 @@ Use to configure settings for cellular connections.
 ## Applies to
 
 | Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: |
+|--|:-:|:-:|:-:|:-:|
 | All settings | ✅ |  |  |  |
 
 ## PerDevice

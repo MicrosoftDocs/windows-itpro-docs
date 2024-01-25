@@ -1,11 +1,8 @@
 ---
 title: DeviceManagement
 description: This section describes the DeviceManagement setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-ms.date: 04/30/2018
-
+ms.date: 01/25/2024
 ---
 
 # DeviceManagement (Windows Configuration Designer reference)

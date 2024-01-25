@@ -1,10 +1,8 @@
 ---
 title: UnifiedWriteFilter
 description: This section describes the UnifiedWriteFilter settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-ms.date: 12/31/2017
+ms.date: 01/25/2024
 ---
 
 # UnifiedWriteFilter (reference)

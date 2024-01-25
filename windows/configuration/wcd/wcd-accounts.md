@@ -1,11 +1,8 @@
 ---
 title: Accounts
 description: This section describes the account settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-ms.date: 04/30/2018
-
+ms.date: 01/25/2024
 ---
 
 # Accounts (Windows Configuration Designer reference)

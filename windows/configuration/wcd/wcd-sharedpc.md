@@ -1,11 +1,8 @@
 ---
 title: SharedPC
 description: This section describes the SharedPC settings that you can configure in provisioning packages for Windows using Windows Configuration Designer.
-
 ms.topic: reference
-
-ms.date: 10/16/2017
-
+ms.date: 01/25/2024
 ---
 
 # SharedPC (Windows Configuration Designer reference)

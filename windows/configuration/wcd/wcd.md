@@ -1,13 +1,13 @@
 ---
 title: Windows Configuration Designer provisioning settings
-description: This section describes the settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
+description: This section describes the settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.topic: reference
-ms.date: 12/31/2017
---- 
+ms.date: 01/25/2024
+---
 
 # Windows Configuration Designer provisioning settings (reference)
 
-This section describes the settings that you can configure in [provisioning packages](../provisioning-packages/provisioning-packages.md) for Windows 10 using Windows Configuration Designer.  
+This section describes the settings that you can configure in [provisioning packages](../provisioning-packages/provisioning-packages.md) for Windows 10 using Windows Configuration Designer.
 
 ## Edition that each group of settings applies to
 

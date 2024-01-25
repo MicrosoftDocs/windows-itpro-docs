@@ -1,11 +1,8 @@
 ---
 title: AssignedAccess
 description: This section describes the AssignedAccess setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-ms.date: 04/30/2018
-
+ms.date: 01/25/2024
 ---
 
 # AssignedAccess (Windows Configuration Designer reference)
@@ -15,8 +12,8 @@ Use this setting to configure single use (kiosk) devices.
 ## Applies to
 
 | Setting | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: |
-| [AssignedAccessSettings](#assignedaccesssettings)  | ✅ |  | ✅ |  |
+|--|:-:|:-:|:-:|:-:|
+| [AssignedAccessSettings](#assignedaccesssettings) | ✅ |  | ✅ |  |
 | [MultiAppAssignedAccessSettings](#multiappassignedaccesssettings) | ✅ |  | ✅ |  |
 
 ## AssignedAccessSettings

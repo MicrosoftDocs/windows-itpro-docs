@@ -1,10 +1,8 @@
 ---
 title: ProvisioningCommands
 description: This section describes the ProvisioningCommands settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-ms.date: 09/06/2017
+ms.date: 01/25/2024
 
 ---
 
@@ -19,4 +17,3 @@ Use ProvisioningCommands settings to install Windows desktop applications using 
 | All settings | ✅  |  |  |  |
 
 For instructions on adding apps to provisioning packages, see [Provision PCs with apps](../provisioning-packages/provision-pcs-with-apps.md).
-

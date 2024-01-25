@@ -1,9 +1,9 @@
 ---
 title: Workplace
-description: This section describes the Workplace settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
+description: This section describes the Workplace settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.topic: reference
-ms.date: 04/30/2018 
---- 
+ms.date: 01/25/2024
+---
 
 # Workplace (reference)
 
@@ -17,7 +17,7 @@ Use Workplace settings to configure bulk user enrollment to a mobile device mana
 
 ## Enrollments
 
-Select **Enrollments**, enter a UPN, and then select **Add** to configure the settings for the enrollment. The UPN is a unique identifier for enrollment. For bulk enrollment, this value must be a service account that's allowed to enroll multiple users. For example, use `generic-device@contoso.com`. 
+Select **Enrollments**, enter a UPN, and then select **Add** to configure the settings for the enrollment. The UPN is a unique identifier for enrollment. For bulk enrollment, this value must be a service account that's allowed to enroll multiple users. For example, use `generic-device@contoso.com`.
 
 | Settings | Value | Description |
 | --- | --- | --- |

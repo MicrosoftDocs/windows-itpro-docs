@@ -1,11 +1,8 @@
 ---
 title: ADMXIngestion
 description: This section describes the ADMXIngestion settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-ms.date: 09/06/2017
-
+ms.date: 01/25/2024
 ---
 
 # ADMXIngestion (Windows Configuration Designer reference)
@@ -22,28 +19,21 @@ Starting in Windows 10, version 1703, you can import (*ingest*) Group Policy adm
 ## Applies to
 
 | Setting groups | Windows client | Surface Hub | HoloLens | IoT Enterprise |
-| --- | :---: | :---: | :---: | :---: |
-| [ConfigADMXInstalledPolicy](#configadmxinstalledpolicy)  | ✅ |  |  | ✅ |
-| [ConfigOperations](#configoperations)  | ✅ |  |   | ✅ |
+|--|:-:|:-:|:-:|:-:|
+| [ConfigADMXInstalledPolicy](#configadmxinstalledpolicy) | ✅ |  |  | ✅ |
+| [ConfigOperations](#configoperations) | ✅ |  |  | ✅ |
 
 ## ConfigOperations
 
 Use **ConfigOperations** to import ADMX policies from an ADMX file.
 
 1. Enter an app name, and then click **Add**.
-
     This can be any name you assign, so choose something descriptive to help you identify its purpose. For example, if you are importing ADMX for Chromium Edge, enter an app name.
-
     Example, `MSEdgeEfficiencyMode`
-
 1. Select the app name in the Customizations pane, select a setting type, and then click **Add**.
-
     The choices, **Policy** and **Preference**, have no impact on the behavior of the settings, and are only provided for your convenience should you want to categorize the settings you add.
-
 1. Select the setting type in the Customizations pane. In the **AdmxFileUid** field, enter the name of the ADMX file or a unique ID for the file, and then click **Add**.
-
     The **AdmxFileUid** can be any string, but must be unique in the provisioning package. Using the name of the ADMX file will help you identify the file in the future.
-
     Example, `MSEdgeEfficiencyMode`
 
     >[!NOTE]
@@ -71,19 +61,12 @@ Use **ConfigOperations** to import ADMX policies from an ADMX file.
 In **ConfigADMXInstalledPolicy**, you provide a policy setting and value for that policy from the imported ADMX. You will need information from the ADMX that you import in **ConfigOperations** to complete **ConfigADMXInstalledPolicy**.
 
 1. Enter an area name, and then click **Add**. The structure of the area name is the following:
-
     `<AppName (from ConfigOperations)>~<SettingType>~<category name from ADMX>`
-
     See [Category and policy in ADMX](#category-and-policy-in-admx) for more information. A setting may have multiple levels of category names, as in the following example.
-
     Example: `MSEdgeEfficiencyMode~Policy~microsoft_edge~Performance`
-
 1. Select the area name in the Customization pane, enter a policy name from the ADMX, and then click **Add**.
-
     Example, `EfficiencyMode`.
-
 1. Select the policy name in the Customization pane, and then enter a value from the ADMX in the text field.
-
     Example, `<enabled/><data id="EfficiencyMode" Value="2">`.
 
 ## Category and policy in ADMX
@@ -145,6 +128,7 @@ $inputFile = "input.admx"
 ```
 
 ## Configuration Samples
+
 Example: Edge Efficiency Mode
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

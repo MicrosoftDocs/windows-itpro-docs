@@ -1,10 +1,8 @@
 ---
 title: Time
 description: This section describes the Time settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-ms.date: 12/31/2017
+ms.date: 01/25/2024
 ---
 
 # Time
@@ -28,4 +26,3 @@ Set to **False** for time zone assignment to occur when the first user signs in.
 
 >[!NOTE]
 >Do not set **Time > ProvisionSetTimeZone** to **False** and also set a time zone in **Policies > TimeLanguageSettings > ConfigureTimeZone**.
-

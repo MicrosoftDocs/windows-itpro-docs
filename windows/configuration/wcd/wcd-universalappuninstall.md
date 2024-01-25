@@ -2,7 +2,7 @@
 title: UniversalAppUninstall
 description: This section describes the UniversalAppUninstall settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.topic: reference
-ms.date: 12/31/2017
+ms.date: 01/25/2024
 ---
 
 # UniversalAppUninstall (reference)
@@ -11,10 +11,10 @@ Use UniversalAppUninstall settings to uninstall or remove Windows apps.
 
 ## Applies to
 
-| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: |
-| [RemoveProvisionedApp](#removeprovisionedapp) | ✅ |  |  |   |
-| [Uninstall](#uninstall) | ✅ | ✅ |  | ✅  |
+| Setting | Windows client | Surface Hub | HoloLens | IoT Core |
+|--|:-:|:-:|:-:|:-:|
+| [RemoveProvisionedApp](#removeprovisionedapp) | ✅ |  |  |  |
+| [Uninstall](#uninstall) | ✅ | ✅ |  | ✅ |
 
 ## RemoveProvisionedApp
 

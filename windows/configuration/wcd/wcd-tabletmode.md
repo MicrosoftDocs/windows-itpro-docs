@@ -1,9 +1,9 @@
 ---
 title: TabletMode
-description: This section describes the TabletMode settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
+description: This section describes the TabletMode settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.topic: reference
-ms.date: 04/30/2018 
---- 
+ms.date: 01/25/2024
+---
 
 # TabletMode (Windows Configuration Designer reference)
 
