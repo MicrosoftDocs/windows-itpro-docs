@@ -18,10 +18,9 @@ Use to configure settings related to various types of phone connections.
 | --- | :---: | :---: | :---: | :---: |
 | All settings  | ✅ | ✅ |  |  |
 
-
 For each setting group:
 1. In **Available customizations**, select the setting group (such as **Cellular**), enter a friendly name for the connection, and then click **Add**.
-2. In **Available customizations**, select the name that you created.
+1. In **Available customizations**, select the name that you created.
 
 ## Cellular
 

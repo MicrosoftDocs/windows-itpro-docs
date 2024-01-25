@@ -21,7 +21,6 @@ Using Shell Launcher, you can configure a device that runs an application as the
 
 You can apply a custom shell through Shell Launcher [by using PowerShell](#configure-a-custom-shell-using-powershell). Starting with Windows 10 version 1803+, you can also [use mobile device management (MDM)](#configure-a-custom-shell-in-mdm) to apply a custom shell through Shell Launcher.
 
-
 ## Differences between Shell Launcher v1 and Shell Launcher v2
 
 Shell Launcher v1 replaces `explorer.exe`, the default shell, with `eshell.exe` which can launch a Windows desktop application.
@@ -56,21 +55,20 @@ To set a custom shell, you first turn on the Shell Launcher feature, and then yo
 
 1. Go to Control Panel &gt; **Programs and features** &gt; **Turn Windows features on or off**.
 
-2. Expand **Device Lockdown**.
+1. Expand **Device Lockdown**.
 
-2. Select **Shell Launcher** and **OK**.
+1. Select **Shell Launcher** and **OK**.
 
 Alternatively, you can turn on Shell Launcher using Windows Configuration Designer in a provisioning package, using `SMISettings > ShellLauncher`, or you can use the Deployment Image Servicing and Management (DISM.exe) tool.
 
 **To turn on Shell Launcher using DISM**
 
-1.  Open a command prompt as an administrator.
-2.  Enter the following command.
+1. Open a command prompt as an administrator.
+1. Enter the following command.
 
     ```
     Dism /online /Enable-Feature /all /FeatureName:Client-EmbeddedShellLauncher
     ```
-
 
 ## Configure a custom shell in MDM
 
@@ -138,7 +136,7 @@ xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
 
 ### Custom OMA-URI setting
 
-In your MDM service, you can create a [custom OMA-URI setting](/intune/custom-settings-windows-10) to configure Shell Launcher v1 or v2. (The [XML](#xml-for-shell-launcher-configuration) that you use for your setting will determine whether you apply Shell Launcher v1 or v2.)
+In your MDM service, you can create a [custom OMA-URI setting](/intune/custom-settings-windows-10) to configure Shell Launcher v1 or v1. (The [XML](#xml-for-shell-launcher-configuration) that you use for your setting will determine whether you apply Shell Launcher v1 or v2.)
 
 The OMA-URI path is `./Device/Vendor/MSFT/AssignedAccess/ShellLauncher`.
 
@@ -173,7 +171,6 @@ static class CheckShellLauncherLicense
         if (NativeMethods.SLGetWindowsInformationDWORD("EmbeddedFeature-ShellLauncher-Enabled", out enabled) != S_OK) {
             enabled = 0;
         }
-
 
         return (enabled != 0);
     }
@@ -215,7 +212,6 @@ try {
     exit
     }
 
-
 # This well-known security identifier (SID) corresponds to the BUILTIN\Administrators group.
 
 $Admins_SID = "S-1-5-32-544"
@@ -228,7 +224,6 @@ function Get-UsernameSID($AccountName) {
     $NTUserSID = $NTUserObject.Translate([System.Security.Principal.SecurityIdentifier])
 
     return $NTUserSID.Value
-
 
 }
 

@@ -9,9 +9,7 @@ ms.date: 12/31/2017
 
 # WLAN (reference)
 
-
 Do not use at this time. Instead, use [ConnectivityProfiles > WLAN](wcd-connectivityprofiles.md#wlan)
-
 
 ## Applies to
 

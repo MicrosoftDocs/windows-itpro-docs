@@ -120,7 +120,7 @@ You're ready to run a few tests on your UE-V evaluation deployment to see how UE
 1. Open Windows Desktop and verify that the taskbar location matches that of Computer A. Verify that the default fonts match and that NotePad is set to **word wrap on**. Also verify the change you made to any Windows applications.
 1. You can change the settings in Computer B back to the original Computer A settings. Then log off Computer B and log in to Computer A to verify the changes.
 
-For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Other resources for this feature
 

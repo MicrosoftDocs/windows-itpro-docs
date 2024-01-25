@@ -42,7 +42,6 @@ Set as **True** to enable **Shared PC Mode**. This setting controls this API: [I
 
 Set as **True** to enable **Shared PC Mode**. This setting controls this API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings).
 
-
 ## PolicyCustomization
 
 Use these settings to configure additional Shared PC policies.

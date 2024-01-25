@@ -130,6 +130,7 @@ ms.date: 12/31/2017
     </Configs>
 </AssignedAccessConfiguration>
 ```
+
 ## Kiosk only sample XML
 
 ```xml
@@ -243,6 +244,7 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
 ```
 
 ## Microsoft Edge Kiosk XML Sample
+
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
@@ -329,6 +331,7 @@ This sample demonstrates that only a global profile is used, with no active user
 ```
 
 Below sample shows dedicated profile and global profile mixed usage, a user would use one profile, everyone else that's non-admin will use another profile.
+
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
@@ -414,6 +417,7 @@ Below sample shows dedicated profile and global profile mixed usage, a user woul
 ```
 
 ## Folder Access sample xml
+
 Starting with Windows 10 version 1809 +, folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all. This restriction has been redesigned for finer granularity and easier use, and is available in Windows 10 version 2009+.
 
 IT Admin now can specify user access to Downloads folder, Removable drives, or no restrictions at all. Downloads and Removable Drives can be allowed at the same time.
@@ -650,7 +654,6 @@ IT Admin now can specify user access to Downloads folder, Removable drives, or n
     </Configs>
 </AssignedAccessConfiguration>
 
-
 ```
 
 ## XSD for AssignedAccess configuration XML
@@ -749,7 +752,6 @@ The following XML schema is for AssignedAccess Configuration up to Windows 10, v
         <xs:attribute name="DesktopAppPath" type="xs:string"/>
         <xs:attributeGroup ref="autoLaunch_attributeGroup"/>
     </xs:complexType>
-
 
     <xs:attributeGroup name="autoLaunch_attributeGroup">
         <xs:attribute ref="rs5:AutoLaunch"/>
@@ -925,7 +927,6 @@ The following XML is the schema for Windows 10 version 1909+:
     <xs:complexType name="globalProfile_t">
         <xs:attribute name="Id" type="guid_t" />
     </xs:complexType>
-
 
     <xs:element name="AllowRemovableDrives"/>
     <xs:element name="NoRestriction" />

@@ -2,7 +2,6 @@
 title: AccountManagement
 description: This section describes the account management settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.topic: reference
-
 ms.date: 04/30/2018
 ---
 
@@ -23,7 +22,6 @@ Use these settings to configure the Account Manager service.
 >[!NOTE]
 >Although the AccountManagement settings are available in advanced provisioning for other editions, you should only use them for HoloLens devices.
 
-
 ## DeletionPolicy
 
 Use this setting to set a policy for deleting accounts.
@@ -35,7 +33,6 @@ Use this setting to set a policy for deleting accounts.
 ## EnableProfileManager
 
 Set as **True** to enable automatic account management. If this is not set to **True**, no automatic account management will occur.
-
 
 ## ProfileInactivityThreshold
 

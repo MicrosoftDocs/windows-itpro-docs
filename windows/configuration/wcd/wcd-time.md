@@ -29,5 +29,3 @@ Set to **False** for time zone assignment to occur when the first user signs in.
 >[!NOTE]
 >Do not set **Time > ProvisionSetTimeZone** to **False** and also set a time zone in **Policies > TimeLanguageSettings > ConfigureTimeZone**.
 
-
-

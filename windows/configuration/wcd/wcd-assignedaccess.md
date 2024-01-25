@@ -19,7 +19,6 @@ Use this setting to configure single use (kiosk) devices.
 | [AssignedAccessSettings](#assignedaccesssettings)  | ✅ |  | ✅ |  |
 | [MultiAppAssignedAccessSettings](#multiappassignedaccesssettings) | ✅ |  | ✅ |  |
 
-
 ## AssignedAccessSettings
 
 Enter the account and the application you want to use for Assigned access, using [the AUMID](../find-the-application-user-model-id-of-an-installed-app.md). When that user account signs in on the device, only the specified app will run.
@@ -36,8 +35,8 @@ Enter the account and the application you want to use for Assigned access, using
 Use this setting to configure a kiosk device that runs more than one app.
 
 1. Create an assigned access configuration XML file for multiple apps [(desktop](../lock-down-windows-10-to-specific-apps.md) or [HoloLens)](/hololens/hololens-provisioning).
-2. In Windows Configuration Designer, select **MultiAppAssignedAccessSettings**.
-3. Browse to and select the assigned access configuration XML file.
+1. In Windows Configuration Designer, select **MultiAppAssignedAccessSettings**.
+1. Browse to and select the assigned access configuration XML file.
 
 ## Related topics
 

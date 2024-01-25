@@ -1,42 +1,40 @@
 ---
 title: Certificates
-description: This section describes the Certificates settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
+description: This section describes the Certificates settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 
 ms.topic: reference
 
-ms.date: 09/06/2017 
+ms.date: 09/06/2017
 
---- 
+---
 
-# Certificates (Windows Configuration Designer reference) 
+# Certificates (Windows Configuration Designer reference)
 
-Use to deploy Root Certificate Authority (CA) certificates to devices. The following list describes the purpose of each setting group. 
+Use to deploy Root Certificate Authority (CA) certificates to devices. The following list describes the purpose of each setting group.
 
 - In [CACertificates](#cacertificates), you specify a certificate that will be added to the Intermediate CA store on the target device.
 - In [ClientCertificates](#clientcertificates), you specify a certificate that will be added to the Personal store on the target device, and provide (password, keylocation), (and configure whether the certificate can be exported).
 - In [RootCertificates](#rootcertificates), you specify a certificate that will be added to the Trusted Root CA store on the target device.
 - In [TrustedPeopleCertificates](#trustedpeoplecertificates), you specify a certificate that will be added to the Trusted People store on the target device.
-- In [TrustedProvisioners](#trustedprovisioners), you specify a certificate that allows devices to automatically trust packages from the specified publisher. 
+- In [TrustedProvisioners](#trustedprovisioners), you specify a certificate that allows devices to automatically trust packages from the specified publisher.
 
-## Applies to 
+## Applies to
 
 | Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| All setting groups | ✅ |  ✅ | ✅ | ✅ | 
+| All setting groups | ✅ |  ✅ | ✅ | ✅ |
 
-
-## CACertificates 
+## CACertificates
 
 1. In **Available customizations**, select **CACertificates**, enter a friendly name for the certificate, and then click **Add**.
-2. In **Available customizations**, select the name that you created. 
+1. In **Available customizations**, select the name that you created.
 
-3. In **CertificatePath**, browse to or enter the path to the certificate. 
+1. In **CertificatePath**, browse to or enter the path to the certificate.
 
-
-## ClientCertificates 
+## ClientCertificates
 
 1. In **Available customizations**, select **ClientCertificates**, enter a friendly name for the certificate, and then click **Add**.
-2. In **Available customizations**, select the name that you created. The following table describes the settings you can configure. Settings in **bold** are required. 
+1. In **Available customizations**, select the name that you created. The following table describes the settings you can configure. Settings in **bold** are required.
 
 | Setting | Value | Description |
 | --- | --- | ---- |
@@ -45,28 +43,26 @@ Use to deploy Root Certificate Authority (CA) certificates to devices. The follo
 | ExportCertificate | True or false | Set to **True** to allow certificate export.  |
 | **KeyLocation** | - TPM only</br>- TPM with software fallback</br>- Software only  |  |
 
-## RootCertificates 
+## RootCertificates
 
 1. In **Available customizations**, select **RootCertificates**, enter a friendly name for the certificate, and then click **Add**.
-2. In **Available customizations**, select the name that you created.
-3. In **CertificatePath**, browse to or enter the path to the certificate.
+1. In **Available customizations**, select the name that you created.
+1. In **CertificatePath**, browse to or enter the path to the certificate.
 
-## TrustedPeopleCertificates 
+## TrustedPeopleCertificates
 
 1. In **Available customizations**, select **TrustedPeopleCertificates**, enter a friendly name for the certificate, and then click **Add**.
-2. In **Available customizations**, select the name that you created. 
+1. In **Available customizations**, select the name that you created.
 
-3. In **TrustedCertificate**, browse to or enter the path to the certificate. 
+1. In **TrustedCertificate**, browse to or enter the path to the certificate.
 
-
-## TrustedProvisioners 
+## TrustedProvisioners
 
 1. In **Available customizations**, select **TrustedPprovisioners**, enter a CertificateHash, and then click **Add**.
-2. In **Available customizations**, select the name that you created. 
+1. In **Available customizations**, select the name that you created.
 
-3. In **TrustedProvisioner**, browse to or enter the path to the certificate. 
+1. In **TrustedProvisioner**, browse to or enter the path to the certificate.
 
-## Related topics 
-
+## Related topics
 
 - [RootCATrustedCertficates configuration service provider (CSP)](/windows/client-management/mdm/rootcacertificates-csp)

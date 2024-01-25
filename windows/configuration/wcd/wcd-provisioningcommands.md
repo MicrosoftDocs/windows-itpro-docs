@@ -20,6 +20,3 @@ Use ProvisioningCommands settings to install Windows desktop applications using 
 
 For instructions on adding apps to provisioning packages, see [Provision PCs with apps](../provisioning-packages/provision-pcs-with-apps.md).
 
-
-
-

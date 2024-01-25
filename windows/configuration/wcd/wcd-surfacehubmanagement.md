@@ -15,14 +15,11 @@ Use SurfaceHubManagement settings to set the administrator group that will manag
 >[!IMPORTANT]
 >These settings should be used only in provisioning packages that are applied during OOBE.
 
-
-
 ## Applies to
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
 | All settings |   | ✅ |  |   |
-
 
 ## GroupName
 

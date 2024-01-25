@@ -11,9 +11,9 @@ Before you deploy User Experience Virtualization (UE-V), review this article for
 
 ## Plan your UE-V deployment
 
-With UE-V, you can synchronize user-defined application and operating system settings across all the devices that a user works from. Use UE-V to synchronize settings for Windows applications and custom applications, such as third-party and line-of-business applications. 
+With UE-V, you can synchronize user-defined application and operating system settings across all the devices that a user works from. Use UE-V to synchronize settings for Windows applications and custom applications, such as third-party and line-of-business applications.
 
-Whether you want to synchronize settings for only default Windows applications or for both Windows and custom applications, you'll need to first deploy the features required to use UE-V.  
+Whether you want to synchronize settings for only default Windows applications or for both Windows and custom applications, you'll need to first deploy the features required to use UE-V.
 
 [Deploy required UE-V features](uev-deploy-required-features.md)
 
@@ -25,7 +25,7 @@ If you want to use UE-V to synchronize user-defined settings for custom applicat
 [Deploy UE-V for custom applications](uev-deploy-uev-for-custom-applications.md)
 
 - [Install the UE-V template generator](uev-deploy-uev-for-custom-applications.md#install-the-uev-template-generator) so you can create, edit, and validate the custom settings location templates required to synchronize custom application settings
-- [Create custom settings location templates](uev-deploy-uev-for-custom-applications.md) with the UE-V template generator 
+- [Create custom settings location templates](uev-deploy-uev-for-custom-applications.md) with the UE-V template generator
 - [Deploy a UE-V settings template catalog](uev-deploy-uev-for-custom-applications.md) to store your custom settings location templates
 
 The workflow diagram below illustrates a typical UE-V deployment and the decisions you need to be prepared to make.
@@ -336,7 +336,7 @@ The VDI template is provided with UE-V and is typically available here after ins
 
 Install the UE-V template generator on the device that is used to create custom settings location templates. This device should be able to run the applications that you want to synchronize settings for. You must be a member of the Administrators group on the device that runs the UE-V template generator software.
 
-The UE-V template generator must be installed on a device that uses an NTFS file system. The UE-V template generator software requires .NET Framework 4. For more information, see [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md).
+The UE-V template generator must be installed on a device that uses an NTFS file system. The UE-V template generator software requires .NET Framework 1. For more information, see [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md).
 
 ## Other resources for this feature
 

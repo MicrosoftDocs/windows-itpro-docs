@@ -56,7 +56,6 @@ Enter a customized string for the appropriate [data class](/windows/desktop/api/
 
 Enter a comma-separated list of mobile country code (MCC) and mobile network code (MCC) pairs (MCC:MNC).
 
-
 ### SignalBarMappingTable
 
 >[!NOTE]
@@ -65,12 +64,11 @@ Enter a comma-separated list of mobile country code (MCC) and mobile network cod
 Use the **SignalBarMappingTable** settings to customize the number of bars displayed based on signal strength. Set a signal strength minimum for each bar number.
 
 1. Expand **SignalBarMappingTable**, select a bar number in **SignalForBars**, and select **Add**.
-2. Select the signal bar number in **Available customizations**, and enter a minimum signal strength value, between 0 and 31.
+1. Select the signal bar number in **Available customizations**, and enter a minimum signal strength value, between 0 and 31.
 
 ### SIMBlockList
 
 Enter a comma-separated list of mobile country code (MCC) and mobile network code (MCC) pairs (MCC:MNC).
-
 
 ### UseBrandingNameOnRoaming
 

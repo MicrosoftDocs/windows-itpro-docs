@@ -5,17 +5,15 @@ ms.topic: whats-new
 appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 08/18/2023
---- 
+---
 
-# Changes to Group Policy settings for Windows 10 Start 
+# Changes to Group Policy settings for Windows 10 Start
 
+Windows 10 has a brand new Start experience. As a result, there are changes to the Group Policy settings that you can use to manage Start. Some policy settings are new or changed, and some old Start policy settings still apply. Other Start policy settings no longer apply and are deprecated.
 
-Windows 10 has a brand new Start experience. As a result, there are changes to the Group Policy settings that you can use to manage Start. Some policy settings are new or changed, and some old Start policy settings still apply. Other Start policy settings no longer apply and are deprecated. 
+## Start policy settings supported for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
-## Start policy settings supported for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education 
-
-
-These policy settings are available in **Administrative Templates\\Start Menu and Taskbar** under **User Configuration**. 
+These policy settings are available in **Administrative Templates\\Start Menu and Taskbar** under **User Configuration**.
 
 |Policy|Notes|
 |--- |--- |
@@ -34,11 +32,11 @@ These policy settings are available in **Administrative Templates\\Start Menu an
 |Remove pinned programs list from the Start Menu|In Windows 10, this policy removes the bottom left group of apps (by default, only File Explorer and Settings are pinned).|
 |Show "Run as different user" command on Start|This policy enables the **Run as different user** option in the right-click menu for apps.|
 |Start Layout|This policy applies a specific Start layout, and it also prevents users from changing the layout. This policy can be configured in **User Configuration** or **Computer Configuration**.|
-|Force Start to be either full screen size or menu size|This policy applies a specific size for Start.| 
+|Force Start to be either full screen size or menu size|This policy applies a specific size for Start.|
 
-## Deprecated Group Policy settings for Start 
+## Deprecated Group Policy settings for Start
 
-The Start policy settings listed in the following table don't work on Windows 10. Most of them were deprecated in Windows 8 however a few more were deprecated in Windows 10. Deprecation in this case means that the policy setting won't work on Windows 10. The "Supported on" text for a policy setting won't list Windows 10. The policy settings are still in the Group Policy Management Console and can be used on the operating systems that they apply to. 
+The Start policy settings listed in the following table don't work on Windows 1. Most of them were deprecated in Windows 8 however a few more were deprecated in Windows 1. Deprecation in this case means that the policy setting won't work on Windows 1. The "Supported on" text for a policy setting won't list Windows 1. The policy settings are still in the Group Policy Management Console and can be used on the operating systems that they apply to.
 
 | Policy                                                                           | When deprecated |
 |----------------------------------------------------------------------------------|-----------------|
@@ -67,11 +65,11 @@ The Start policy settings listed in the following table don't work on Windows 10
 | Remove Recent Items menu from Start Menu                                         | Windows 8       |
 | Remove Recorded TV link from Start Menu                                          | Windows 8       |
 | Remove user folder link from Start Menu                                          | Windows 8       |
-| Remove Videos link from Start Menu                                               | Windows 8       | 
+| Remove Videos link from Start Menu                                               | Windows 8       |
 
-  
 
-## Related topics 
+
+## Related topics
 
 - [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
 - [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)

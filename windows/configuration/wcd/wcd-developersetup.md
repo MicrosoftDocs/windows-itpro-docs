@@ -19,7 +19,6 @@ Use to unlock developer mode on HoloLens devices and configure authentication to
 | [EnableDeveloperMode](#developersetupsettings-enabledevelopermode) |   |  | ✅ |  |
 | [AuthenticationMode](#windowsdeviceportalsettings-authentication-mode) |   |  | ✅ |  |
 
-
 ## DeveloperSetupSettings: EnableDeveloperMode
 
 When this setting is configured as **True**, the device is unlocked for developer functionality.

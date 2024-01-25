@@ -74,8 +74,6 @@ The multi-app mode blocks the following hotkeys, which are not relevant for the 
 | Windows logo key  + comma (,) |    Temporarily peek at the desktop |
 | Windows logo key  + Ctrl + F |    Search for PCs (if you're on a network) |
 
-
-
 ### Locked-down Ctrl+Alt+Del screen
 
 The multi-app mode removes options (e.g. **Change a password**, **Task Manager**, **Network**) in the Ctrl+Alt+Del screen to ensure the users cannot access the functionalities that are not allowed in the lockdown experience.

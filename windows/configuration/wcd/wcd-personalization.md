@@ -4,7 +4,6 @@ description: This section describes the Personalization settings that you can co
 
 ms.topic: reference
 
-
 ms.date: 12/31/2017
 ---
 

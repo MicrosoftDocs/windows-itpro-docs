@@ -1,35 +1,35 @@
 ---
 title: DeviceFormFactor
-description: This section describes the DeviceFormFactor setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
+description: This section describes the DeviceFormFactor setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 
 ms.topic: reference
 
-ms.date: 04/30/2018 
+ms.date: 04/30/2018
 
---- 
+---
 
-# DeviceFormFactor (Windows Configuration Designer reference) 
+# DeviceFormFactor (Windows Configuration Designer reference)
 
-Use to identify the form factor of the device. 
+Use to identify the form factor of the device.
 
-## Applies to 
+## Applies to
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| DeviceForm | ✅  | ✅ |  |  | 
+| DeviceForm | ✅  | ✅ |  |  |
 
-Specifies the device form factor running Windows 10. Generally, the device form is set by the original equipment manufacturer (OEM), however you might want to change the device form based on its usage in your organization. 
+Specifies the device form factor running Windows 1. Generally, the device form is set by the original equipment manufacturer (OEM), however you might want to change the device form based on its usage in your organization.
 
-DeviceForm supports the following features or components: 
+DeviceForm supports the following features or components:
 
 - Cortana and Bing use the DeviceForm value to determine the accuracy of specific signals, such as location (GPS versus Wi-Fi versus reverse IP address lookup).
-- Windows 10 features, such as Bluetooth and camera, may require DeviceForm to be accurately configured for full functionality. 
+- Windows 10 features, such as Bluetooth and camera, may require DeviceForm to be accurately configured for full functionality.
 
-Select the appropriate form from the dropdown menu. 
+Select the appropriate form from the dropdown menu.
 
 | Device form | Description |
 | --- | --- |
-| Phone | A typical smartphone combines cellular connectivity, a touch screen, rechargeable power source, and other components into a single chassis. | 
+| Phone | A typical smartphone combines cellular connectivity, a touch screen, rechargeable power source, and other components into a single chassis. |
 | LargeScreen | Microsoft Surface Hub |
 | HMD | (Head-mounted display) A holographic computer that is untethered - no wires, phones, or connection to a PC needed. |
 | IndustryHandheld | A device screen less than 7" diagonal designed for industrial solutions. May or may not have a cellular stack.  |
@@ -58,9 +58,3 @@ Select the appropriate form from the dropdown menu.
 | AIO | An All-in-One (AIO) device is an evolution of the traditional desktop with an attached display. |
 | Stick | A device that turns your TV into a Windows computer. Plug the stick into the HDMI slot on the TV and connect a USB or Bluetooth keyboard or mouse. |
 | Puck | A small-size PC that users can use to plug in a monitor and keyboard. |
-  
-
- 
-
- 
-

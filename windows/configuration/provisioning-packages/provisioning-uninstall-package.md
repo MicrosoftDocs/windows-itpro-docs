@@ -1,95 +1,92 @@
 ---
 title: Uninstall a provisioning package - reverted settings (Windows 10/11)
 description: This article lists the settings that are reverted when you uninstall a provisioning package on Windows 10/11 desktop client devices.
-ms.topic: article 
+ms.topic: article
 ms.reviewer: gkomatsu
 ms.date: 12/31/2017
---- 
+---
 
-# Settings changed when you uninstall a provisioning package 
+# Settings changed when you uninstall a provisioning package
 
+When you uninstall a provisioning package, only certain settings are revertible. This article lists the settings that are reverted when you uninstall a provisioning package.
 
-When you uninstall a provisioning package, only certain settings are revertible. This article lists the settings that are reverted when you uninstall a provisioning package. 
+As an administrator, you can uninstall by using the **Add or remove a package for work or school** option available under **Settings** > **Accounts** > **Access work or school**.
 
+When a provisioning package is uninstalled, some of its settings are reverted, which means the value for the setting is changed to the next available or default value. Not all settings, however, are revertible.
 
-As an administrator, you can uninstall by using the **Add or remove a package for work or school** option available under **Settings** > **Accounts** > **Access work or school**. 
+Only settings in the following lists are revertible.
 
-When a provisioning package is uninstalled, some of its settings are reverted, which means the value for the setting is changed to the next available or default value. Not all settings, however, are revertible.  
+## Registry-based settings
 
-Only settings in the following lists are revertible.  
-
-## Registry-based settings 
-
-The registry-based settings that are revertible when a provisioning package is uninstalled all fall under these categories, which you can find in the  Windows Configuration Designer.  
-
+The registry-based settings that are revertible when a provisioning package is uninstalled all fall under these categories, which you can find in the  Windows Configuration Designer.
 
 - [Wi-Fi Sense](../wcd/wcd-connectivityprofiles.md#wifisense)
 - [CountryAndRegion](../wcd/wcd-countryandregion.md)
 - DeviceManagement / PGList/ LogicalProxyName
 - UniversalAppInstall / LaunchAppAtLogin
 - [Power](/previous-versions//dn953704(v=vs.85))
-- [TabletMode](../wcd/wcd-tabletmode.md) 
+- [TabletMode](../wcd/wcd-tabletmode.md)
 
-- [Maps](../wcd/wcd-maps.md) 
+- [Maps](../wcd/wcd-maps.md)
 
 - [Browser](../wcd/wcd-browser.md)
-- [DeviceFormFactor](../wcd/wcd-deviceformfactor.md) 
+- [DeviceFormFactor](../wcd/wcd-deviceformfactor.md)
 
-- [USBErrorsOEMOverride](/previous-versions/windows/hardware/previsioning-framework/mt769908(v=vs.85)) 
+- [USBErrorsOEMOverride](/previous-versions/windows/hardware/previsioning-framework/mt769908(v=vs.85))
 
-- [WeakCharger](../wcd/wcd-weakcharger.md)  
+- [WeakCharger](../wcd/wcd-weakcharger.md)
 
- 
 
-## CSP-based settings 
 
-Here is the list of revertible settings based on configuration service providers (CSPs).  
+## CSP-based settings
 
-[ActiveSync CSP](/windows/client-management/mdm/activesync-csp) 
+Here is the list of revertible settings based on configuration service providers (CSPs).
 
-[AppLocker CSP](/windows/client-management/mdm/applocker-csp)  
+[ActiveSync CSP](/windows/client-management/mdm/activesync-csp)
 
-[BrowserFavorite CSP](/windows/client-management/mdm/browserfavorite-csp)   
+[AppLocker CSP](/windows/client-management/mdm/applocker-csp)
 
-[CertificateStore CSP](/windows/client-management/mdm/certificatestore-csp) 
+[BrowserFavorite CSP](/windows/client-management/mdm/browserfavorite-csp)
 
-[ClientCertificateInstall CSP](/windows/client-management/mdm/clientcertificateinstall-csp)   
+[CertificateStore CSP](/windows/client-management/mdm/certificatestore-csp)
 
-[RootCATrustedCertificates CSP](/windows/client-management/mdm/rootcacertificates-csp)   
+[ClientCertificateInstall CSP](/windows/client-management/mdm/clientcertificateinstall-csp)
 
-[CM_CellularEntries CSP](/windows/client-management/mdm/cm-cellularentries-csp)   
+[RootCATrustedCertificates CSP](/windows/client-management/mdm/rootcacertificates-csp)
 
-[CM_ProxyEntries CSP](/windows/client-management/mdm/cm-proxyentries-csp)   
+[CM_CellularEntries CSP](/windows/client-management/mdm/cm-cellularentries-csp)
 
-[CMPolicy CSP](/windows/client-management/mdm/cmpolicy-csp)   
+[CM_ProxyEntries CSP](/windows/client-management/mdm/cm-proxyentries-csp)
 
-[CMPolicyEnterprise CSP](/windows/client-management/mdm/cmpolicyenterprise-csp)   
+[CMPolicy CSP](/windows/client-management/mdm/cmpolicy-csp)
 
-[EMAIL2 CSP](/windows/client-management/mdm/email2-csp)   
+[CMPolicyEnterprise CSP](/windows/client-management/mdm/cmpolicyenterprise-csp)
 
-[EnterpriseAPN CSP](/windows/client-management/mdm/enterpriseapn-csp)   
+[EMAIL2 CSP](/windows/client-management/mdm/email2-csp)
 
-[EnterpriseDesktopAppManagement CSP](/windows/client-management/mdm/enterprisedesktopappmanagement-csp)   
+[EnterpriseAPN CSP](/windows/client-management/mdm/enterpriseapn-csp)
 
-[EnterpriseModernAppManagement CSP](/windows/client-management/mdm/enterprisemodernappmanagement-csp)   
+[EnterpriseDesktopAppManagement CSP](/windows/client-management/mdm/enterprisedesktopappmanagement-csp)
 
-[NAP CSP](/windows/client-management/mdm/nap-csp)   
+[EnterpriseModernAppManagement CSP](/windows/client-management/mdm/enterprisemodernappmanagement-csp)
 
-[PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp)   
+[NAP CSP](/windows/client-management/mdm/nap-csp)
 
-[Provisioning CSP](/windows/client-management/mdm/provisioning-csp)   
+[PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp)
 
-[SecureAssessment CSP](/windows/client-management/mdm/secureassessment-csp)   
+[Provisioning CSP](/windows/client-management/mdm/provisioning-csp)
 
-[VPN CSP](/windows/client-management/mdm/vpn-csp)   
+[SecureAssessment CSP](/windows/client-management/mdm/secureassessment-csp)
 
-[VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)   
+[VPN CSP](/windows/client-management/mdm/vpn-csp)
 
-[WiFi CSP](/windows/client-management/mdm/wifi-csp)    
+[VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)
 
- 
+[WiFi CSP](/windows/client-management/mdm/wifi-csp)
 
-## Related articles 
+
+
+## Related articles
 
 - [Provisioning packages for Windows client](provisioning-packages.md)
 - [How provisioning works in Windows client](provisioning-how-it-works.md)

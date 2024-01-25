@@ -20,7 +20,6 @@ Use to upgrade the edition of Windows 10 on the device. [Learn about Windows 10 
 | [UpgradeEditionWithLicense](#upgradeeditionwithlicense) | ✅  |  | ✅ |  |
 | [UpgradeEditionWithProductKey](#upgradeeditionwithproductkey) | ✅  |  |  |  |
 
-
 ## ChangeProductKey
 
 Enter a product key, which will be used to update the existing product key on the device.
@@ -29,7 +28,6 @@ Enter a product key, which will be used to update the existing product key on th
 
 Browse to and select a license XML file for the edition upgrade.
 
-
 ## UpgradeEditionWithProductKey
 
 Enter a product key for an edition upgrade of Windows 10 devices.
@@ -37,7 +35,6 @@ Enter a product key for an edition upgrade of Windows 10 devices.
 If a product key is entered in a provisioning package and the user begins installation of the package, a notification is shown to the user that their system will restart to complete the package installation. Upon explicit consent from the user to proceed, the package continues installation and changepk.exe runs using the product key. The user will receive a reminder notification 30 seconds before the automatic restart.
 
 After the device restarts, the edition upgrade process completes. The user will receive a notification of the successful upgrade.
-
 
 ## Related topics
 

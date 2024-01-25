@@ -4,7 +4,6 @@ description: This section describes the Maps settings that you can configure in 
 
 ms.topic: reference
 
-
 ms.date: 12/31/2017
 ---
 
@@ -20,13 +19,11 @@ Use for settings related to Maps.
 | [UseExternalStorage](#useexternalstorage) | ✅  | ✅ |  |  |
 | [UseSmallerCache](#usesmallercache) | ✅  | ✅ |  |  |
 
-
 ## ChinaVariantWin10
 
 Use **ChinaVariantWin10** to specify that the Windows device is intended to ship in China. When set to **True**, maps approved by the State Bureau of Surveying and Mapping in China are used. These maps are obtained from a server located in China.
 
 This customization may result in different maps, servers, or other configuration changes on the device.
-
 
 ## UseExternalStorage
 

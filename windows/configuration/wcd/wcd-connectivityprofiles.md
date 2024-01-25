@@ -1,18 +1,18 @@
 ---
 title: ConnectivityProfiles
-description: This section describes the ConnectivityProfile settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
+description: This section describes the ConnectivityProfile settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 
 ms.topic: reference
 
-ms.date: 04/30/2018 
+ms.date: 04/30/2018
 
---- 
+---
 
-# ConnectivityProfiles (Windows Configuration Designer reference) 
+# ConnectivityProfiles (Windows Configuration Designer reference)
 
-Use to configure profiles that a user will connect with, such as an email account or VPN profile. 
+Use to configure profiles that a user will connect with, such as an email account or VPN profile.
 
-## Applies to 
+## Applies to
 
 | Setting groups  | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
@@ -21,14 +21,14 @@ Use to configure profiles that a user will connect with, such as an email accoun
 | [KnownAccounts](#knownaccounts) | ✅ |  ✅ |  |  |
 | [VPN](#vpn) | ✅ |  ✅ | ✅ |  |
 | [WiFiSense](#wifisense) | ✅ | ✅ |  |  |
-| [WLAN](#wlan) | ✅ | ✅ | ✅ |  | 
+| [WLAN](#wlan) | ✅ | ✅ | ✅ |  |
 
-## Email 
+## Email
 
-Specify an email account to be automatically set up on the device.  
+Specify an email account to be automatically set up on the device.
 
 1. In **Available customizations**, select **Email**, enter a friendly name for the account, and then click **Add**.
-2. In **Available customizations**, select the name that you created. The following table describes the settings you can configure for each account. Settings in **bold** are required. 
+1. In **Available customizations**, select the name that you created. The following table describes the settings you can configure for each account. Settings in **bold** are required.
 
 | Setting | Description |
 | --- | --- |
@@ -50,14 +50,14 @@ Specify an email account to be automatically set up on the device.
 | SSLIncoming | Specify whether the incoming email server uses SSL |
 | SSLOutgoing | Specify whether the outgoing email server uses SSL |
 | SyncOptions | Specify how many days' worth of emails should be downloaded from the server. Available values are:</br></br>- All mail</br>- Two weeks</br>- One month</br>- One week |
-| **UserName** | Enter the user name for the account | 
+| **UserName** | Enter the user name for the account |
 
-## Exchange 
+## Exchange
 
-Configure settings related to Exchange email server. These settings are related to the [ActiveSync configuration service provider (CSP)](/windows/client-management/mdm/activesync-csp). 
+Configure settings related to Exchange email server. These settings are related to the [ActiveSync configuration service provider (CSP)](/windows/client-management/mdm/activesync-csp).
 
 1. In **Available customizations**, select **Exchange**, enter a name for the account, and then click **Add**. A globally unique identifier (GUID) is generated for the account.
-2. In **Available customizations**, select the GUID that you created. The following table describes the settings you can configure. Settings in **bold** are required. 
+1. In **Available customizations**, select the GUID that you created. The following table describes the settings you can configure. Settings in **bold** are required.
 
 | Setting | Description |
 | --- | --- |
@@ -80,33 +80,33 @@ Configure settings related to Exchange email server. These settings are related 
 | SyncTasks_Enable | Enable or disable tasks sync |
 | SyncTasks_Name | If you enable tasks sync, enter **Tasks** |
 | **UserName** | Enter the user name for the account |
-| UseSSL | Specify whether to use Secure Sockets Layer (SSL) | 
+| UseSSL | Specify whether to use Secure Sockets Layer (SSL) |
 
-## KnownAccounts 
+## KnownAccounts
 
-Configure the settings to add more email accounts. 
+Configure the settings to add more email accounts.
 
 | Setting | Description |
 | --- | --- |
 | KnownAccountsOEM |Enter the source or file location of the KnownAccountsOEM.xml file on your development workstation. |
-| OemFilePath | Enter the name of the XML file that defines the new account to be added. The name must be KnownAccountsOEM.xml.  | 
+| OemFilePath | Enter the name of the XML file that defines the new account to be added. The name must be KnownAccountsOEM.xml.  |
 
-## VPN 
+## VPN
 
-Configure settings to change the default maximum transmission unit ([MTU](#mtu)) size settings for Point-to-Point Protocol (PPP) connections or for virtual private network (VPN) connections, or to create a [VPN profile](#vpn). 
+Configure settings to change the default maximum transmission unit ([MTU](#mtu)) size settings for Point-to-Point Protocol (PPP) connections or for virtual private network (VPN) connections, or to create a [VPN profile](#vpn).
 
-### MTU 
+### MTU
 
 | Setting | Description |
 | --- | --- |
 | PPPProtocolType  | Select **VPNPPPProtocolType**  |
 | ProtocolType | Select **VPNProtocolType** |
-| TunnelMTU | Enter the desired MTU size, between **1** and **1500** | 
+| TunnelMTU | Enter the desired MTU size, between **1** and **1500** |
 
-### VPN 
+### VPN setting
 
 1. In **Available customizations**, select **VPNSetting**, enter a friendly name for the account, and then click **Add**.
-2. In **Available customizations**, select the name that you created. The following table describes the settings you can configure. Settings in **bold** are required. 
+1. In **Available customizations**, select the name that you created. The following table describes the settings you can configure. Settings in **bold** are required.
 
 | Setting | Description |
 | --- | --- |
@@ -119,52 +119,52 @@ Configure settings to change the default maximum transmission unit ([MTU](#mtu))
 | ProxyAutoConfigUrl  | When **Proxy** is set to **Automatic**, enter the URL to automatically retrieve the proxy settings |
 | ProxyServer | When **Proxy** is set to **Manual**, enter the proxy server address as a fully qualified hostname or enter `IP address:Port` |
 | RememberCredentials | Select whether credentials should be cached |
-| TrustedNetworkDetection | Enter a comma-separated string to identify the trusted network. VPN won't connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device. | 
+| TrustedNetworkDetection | Enter a comma-separated string to identify the trusted network. VPN won't connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device. |
 
-When **ProfileType** is set to **Native**, the following extra settings are available. 
+When **ProfileType** is set to **Native**, the following extra settings are available.
 
-Setting | Description 
+Setting | Description
 
 --- | ---
 AuthenticationUserMethod | When you set **NativeProtocolType** to **IKEv2**, choose between **EAP** and **MSChapv2**.
 EAPConfiguration | When you set **AuthenticationUserMethod** to **EAP**, enter the HTML-encoded XML to configure EAP. For more information, see [EAP configuration](/windows/client-management/mdm/eap-configuration).
 NativeProtocolType | Choose between **PPTP**, **L2TP**, **IKEv2**, and **Automatic**.
 RoutingPolicyType | Choose between **SplitTunnel**, in which traffic can go over any interface as determined by the networking stack, and **ForceTunnel**, in which all IP traffic must go over the VPN interface.
-Server | Enter the public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. 
+Server | Enter the public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm.
 
-When **ProfileType** is set to **Third Party**, the following extra settings are available. 
+When **ProfileType** is set to **Third Party**, the following extra settings are available.
 
 Setting | Description
 --- |---
 PluginProfileCustomConfiguration | Enter HTML-encoded XML for SSL-VPN plug-in specific configuration, including authentication information that is deployed to the device to make it available for SSL-VPN plug-ins. Contact the plug-in provider for format and other details. Most plug-ins can also configure values based on the server negotiations and defaults.
 PluginProfilePackageFamilyName | Choose between **Pulse Secure VPN**, **F5 VPN Client**, and **SonicWALL Mobile Connect**.
-PluginProfileServerUrlList | Enter a comma-separated list of servers in URL, hostname, or IP format. 
+PluginProfileServerUrlList | Enter a comma-separated list of servers in URL, hostname, or IP format.
 
-## WiFiSense 
+## WiFiSense
 
-Configure settings related to Wi-Fi Sense.  
+Configure settings related to Wi-Fi Sense.
 
-### Config 
+### Config
 
-The **Config** settings are initial settings that can be overwritten when settings are pushed to the device by the cloud.  
+The **Config** settings are initial settings that can be overwritten when settings are pushed to the device by the cloud.
 
 | Setting | Description |
 | --- | --- |
 | WiFiSharingFacebookInitial | Enable or disable sharing of Wi-Fi networks with Facebook contacts  |
 | WiFiSharingOutlookInitial | Enable or disable sharing of Wi-Fi networks with Outlook contacts |
-| WiFiSharingSkypeInitial | Enable or disable sharing of Wi-Fi networks with Skype contacts | 
+| WiFiSharingSkypeInitial | Enable or disable sharing of Wi-Fi networks with Skype contacts |
 
-### FirstBoot  
+### FirstBoot
 
 | Setting | Description |
 | --- | --- |
 | DefaultAutoConnectOpenState | When enabled, the OOBE Wi-Fi Sense checkbox to automatically connect to open networks will be checked. |
 | DefaultAutoConnectSharedState | When enabled, the OOBE Wi-Fi Sense checkbox to share networks with contacts will be checked. |
-| WiFiSenseAllowed | Enable or disable Wi-Fi Sense. Wi-Fi Sense features include auto-connect to Wi-Fi hotspots and credential sharing. | 
+| WiFiSenseAllowed | Enable or disable Wi-Fi Sense. Wi-Fi Sense features include auto-connect to Wi-Fi hotspots and credential sharing. |
 
-### SystemCapabilities  
+### SystemCapabilities
 
-You can use these settings to configure system capabilities for Wi-Fi adapters, which is a new functionality in Windows 10. These system capabilities are added at image time to ensure that the information is at its most accurate. The capabilities allow the OS to have a better understanding of the underlying hardware that it's running on. Diagnostic data is generated by the system to provide data that can be used to diagnose both software and hardware issues.  
+You can use these settings to configure system capabilities for Wi-Fi adapters, which is a new functionality in Windows 1. These system capabilities are added at image time to ensure that the information is at its most accurate. The capabilities allow the OS to have a better understanding of the underlying hardware that it's running on. Diagnostic data is generated by the system to provide data that can be used to diagnose both software and hardware issues.
 
 | Setting | Description |
 | --- | --- |
@@ -172,24 +172,23 @@ You can use these settings to configure system capabilities for Wi-Fi adapters, 
 | NumAntennaConnected | Enter the number of antennas that are connected to the WLAN radio |
 | SimultaneousMultiChannelSupported | Enter the maximum number of channels that the Wi-Fi device can simultaneously operate on. For example, you can use this setting to specify support for Station mode and Wi-Fi Direct GO on separate channels simultaneously.  |
 | WLANFunctionLevelDeviceResetSupported | Select whether the device supports functional level device reset (FLDR). The FLDR feature in the OS checks this system capability exclusively to determine if it can run. |
-| WLANPlatformLevelDeviceResetSupported | Select whether the device supports platform level device reset (PLDR). The PLDR feature in the OS checks this system capability exclusively to determine if it can run. | 
+| WLANPlatformLevelDeviceResetSupported | Select whether the device supports platform level device reset (PLDR). The PLDR feature in the OS checks this system capability exclusively to determine if it can run. |
 
+## WLAN
 
-## WLAN 
+Configure settings for wireless connectivity.
 
-Configure settings for wireless connectivity.   
+### Profiles
 
-### Profiles 
-
-**To add a profile** 
+To add a profile:
 
 1. Create [the wireless profile XML](/windows/win32/nativewifi/wireless-profile-samples).
-2. In **WLAN > Profiles**, browse to and select the profile XML file.
-3. Click **Add**. 
+1. In **WLAN > Profiles**, browse to and select the profile XML file.
+1. Click **Add**.
 
-### WLANXmlSettings 
+### WLANXmlSettings
 
-Enter an SSID, click **Add**, and then configure the following settings for the SSID. 
+Enter an SSID, click **Add**, and then configure the following settings for the SSID.
 
 | Settings | Description |
 | --- |  --- |

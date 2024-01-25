@@ -16,7 +16,6 @@ Starting in Windows 10, version 1703, you can import (*ingest*) Group Policy adm
 
 - The settings under [ConfigOperations](#configoperations) specify the ADMX file to be imported.
 
-
 >[!IMPORTANT]
 >Only device scope policies (class="Machine" or class="Both") can be set using a provisioning package.
 
@@ -35,43 +34,34 @@ Use **ConfigOperations** to import ADMX policies from an ADMX file.
 
     This can be any name you assign, so choose something descriptive to help you identify its purpose. For example, if you are importing ADMX for Chromium Edge, enter an app name.
 
-
     Example, `MSEdgeEfficiencyMode`
 
-2. Select the app name in the Customizations pane, select a setting type, and then click **Add**.
+1. Select the app name in the Customizations pane, select a setting type, and then click **Add**.
 
     The choices, **Policy** and **Preference**, have no impact on the behavior of the settings, and are only provided for your convenience should you want to categorize the settings you add.
 
-
-
-3. Select the setting type in the Customizations pane. In the **AdmxFileUid** field, enter the name of the ADMX file or a unique ID for the file, and then click **Add**.
+1. Select the setting type in the Customizations pane. In the **AdmxFileUid** field, enter the name of the ADMX file or a unique ID for the file, and then click **Add**.
 
     The **AdmxFileUid** can be any string, but must be unique in the provisioning package. Using the name of the ADMX file will help you identify the file in the future.
-
-
 
     Example, `MSEdgeEfficiencyMode`
 
     >[!NOTE]
     >Keeping the AdmxFileUid and AppName the same will help prevent authorizing errors.
 
-4. Select the AdmxFileUid in the Customizations pane, and paste the contents of the ADMX file in the text field. Before copying the contents of the ADMX file, you must convert it to a single-line. See [Convert multi-line to single line](#convert) for instructions.
+1. Select the AdmxFileUid in the Customizations pane, and paste the contents of the ADMX file in the text field. Before copying the contents of the ADMX file, you must convert it to a single-line. See [Convert multi-line to single line](#convert) for instructions.
 
     >[!NOTE]
     >When you have a large ADMX file, you may want to only include specific settings. Instead of pasting in the entire ADMX file, you can paste just one or more specific policies (after converting them to single-line).
-
-
 
     Example, EfficiencyMode
     ```XML
     <policy class="Both" displayName="$(string.EfficiencyMode)" explainText="$(string.EfficiencyMode_Explain)" key="Software\Policies\Microsoft\Edge" name="EfficiencyMode" presentation="$(presentation.EfficiencyMode)">      <parentCategory ref="Performance"/>      <supportedOn ref="SUPPORTED_WIN7_V96"/>      <elements>        <enum id="EfficiencyMode" valueName="EfficiencyMode">          <item displayName="$(string.EfficiencyMode_AlwaysActive)">            <value>              <decimal value="0"/>            </value>          </item>          <item displayName="$(string.EfficiencyMode_NeverActive)">            <value>              <decimal value="1"/>            </value>          </item>          <item displayName="$(string.EfficiencyMode_ActiveWhenUnplugged)">            <value>              <decimal value="2"/>            </value>          </item>          <item displayName="$(string.EfficiencyMode_ActiveWhenUnpluggedBatteryLow)">            <value>              <decimal value="3"/>            </value>          </item>        </enum>      </elements>    </policy>
     ```
 
-
-5. Repeat for each ADMX, or set of ADMX policies, that you want to add, and then configure [ConfigADMXInstalledPolicy](#configadmxinstalledpolicy) for each one.
+1. Repeat for each ADMX, or set of ADMX policies, that you want to add, and then configure [ConfigADMXInstalledPolicy](#configadmxinstalledpolicy) for each one.
 
 <span id="convert"/>
-
 
 ## ConfigADMXInstalledPolicy
 
@@ -84,22 +74,17 @@ In **ConfigADMXInstalledPolicy**, you provide a policy setting and value for tha
 
     `<AppName (from ConfigOperations)>~<SettingType>~<category name from ADMX>`
 
-
     See [Category and policy in ADMX](#category-and-policy-in-admx) for more information. A setting may have multiple levels of category names, as in the following example.
-
-
 
     Example: `MSEdgeEfficiencyMode~Policy~microsoft_edge~Performance`
 
-
-2. Select the area name in the Customization pane, enter a policy name from the ADMX, and then click **Add**.
+1. Select the area name in the Customization pane, enter a policy name from the ADMX, and then click **Add**.
 
     Example, `EfficiencyMode`.
 
-3. Select the policy name in the Customization pane, and then enter a value from the ADMX in the text field.
+1. Select the policy name in the Customization pane, and then enter a value from the ADMX in the text field.
 
     Example, `<enabled/><data id="EfficiencyMode" Value="2">`.
-
 
 ## Category and policy in ADMX
 
@@ -148,7 +133,6 @@ The next sample highlights the specific policy.
     </policy>
 ```
 <!--![Snipped of ADMX shows policy setting highlighted.](../images/admx-policy.png)-->
-
 
 ## Convert multi-line to single line
 

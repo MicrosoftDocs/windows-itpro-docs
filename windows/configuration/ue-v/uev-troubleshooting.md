@@ -12,7 +12,7 @@ For information that can help with troubleshooting UE-V for Windows 10, see:
 - [UE-V: List of Microsoft Support Knowledge Base Articles](https://social.technet.microsoft.com/wiki/contents/articles/14271.ue-v-list-of-microsoft-support-knowledge-base-articles.aspx)
 - [User Experience Virtualization Release Notes](uev-release-notes-1607.md)
 - [Technical Reference for UE-V](uev-technical-reference.md)
-- [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc)
+- [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc)
 
 ## Other resources
 

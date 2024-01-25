@@ -27,16 +27,13 @@ This section describes the **Policies** settings that you can configure in [prov
 | [AllowMicrosoftAccountSigninAssistant](/windows/client-management/mdm/policy-configuration-service-provider#accounts-allowmicrosoftaccountsigninassistant) | Disable the **Microsoft Account Sign-In Assistant** (wlidsvc) NT service | ✅ |  |  |  |
 | [DomainNamesForEmailSync](/windows/client-management/mdm/policy-configuration-service-provider#accounts-domainnamesforemailsync) | List of domains that are allowed to sync email on the devices | ✅ |  |  |  |
 
-
 ## ApplicationDefaults
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: |
 | [DefaultAssociationsConfiguration](/windows/client-management/mdm/policy-configuration-service-provider#applicationdefaults-defaultassociationsconfiguration) | Set default file type and protocol associations  | ✅ |  |  |  |
 
-
 ## ApplicationManagement
-
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: |
@@ -51,9 +48,6 @@ This section describes the **Policies** settings that you can configure in [prov
 | [RestrictAppDataToSystemVolume](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-restrictappdatatosystemvolume)  | Whether app data is restricted to the system drive  | ✅  |   |   | ✅ |
 | [RestrictAppToSystemVolume](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-restrictapptosystemvolume)  | Whether the installation of apps is restricted to the system drive   | ✅  |   |   | ✅ |
 
-
-
-
 ## Authentication
 
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
@@ -63,13 +57,11 @@ This section describes the **Policies** settings that you can configure in [prov
 | [EnableWebSignin](/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin) | Enables Windows sign-in support for non-ADFS federated providers (for example, SAML). | ✅ |  ✅ |  | ✅ |
 | [PreferredAadTenantDomainName](/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname) | Specifies the preferred domain among available domains in the Azure AD tenant. | ✅ |  ✅ |  | ✅ |
 
-
 ## BitLocker
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: |
 | [EncryptionMethod](/windows/client-management/mdm/policy-configuration-service-provider#bitlocker-encryptionmethod)  | Specify BitLocker drive encryption method and cipher strength | ✅ |  |  |  |
-
 
 ## Bluetooth
 
@@ -145,13 +137,11 @@ PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Star
 | [UnlockHomeButton](/windows/client-management/mdm/policy-csp-browser#browser-unlockhomebutton)  | Specify whether users can make changes to the Home button.  | ✅  |    |   |  |
 [UseSharedFolderForBooks](/windows/client-management/mdm/policy-csp-browser#browser-usesharedfolderforbooks) | Specify whether organizations should use a folder shared across users to store books from the Books Library. | ✅  |   |   |  |
 
-
 ## Camera
 
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: |
 | [AllowCamera](/windows/client-management/mdm/policy-configuration-service-provider#camera-allowcamera) | Disable or enable the camera. | ✅ |  ✅ |  |  |
-
 
 ## Connectivity
 
@@ -264,14 +254,11 @@ PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Star
 | [MinDevicePasswordLength](/windows/client-management/mdm/policy-configuration-service-provider#devicelock-mindevicepasswordlength) | Specify the minimum number or characters required in the PIN or password. | ✅ |   | ✅ |  |
 | [ScreenTimeoutWhileLocked](/windows/client-management/mdm/policy-configuration-service-provider#devicelock-screentimeoutwhilelocked) | Specify the duration in seconds for the screen timeout while on the lock screen. |  |   |  |  |
 
-
 ## DeviceManagement
 
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: |  :---: | :---: | :---: |
 | DisableMDMEnrollment | Use this setting to prevent the device from enrolling in MDM. | ✅ |   |  |  |
-
-
 
 ## Experience
 
@@ -302,13 +289,11 @@ PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Star
 | --- | --- | :---: | :---: | :---: | :---: |
 | [ExploitProtectionSettings](/windows/client-management/mdm/policy-csp-exploitguard) | See the [explanation of ExploitProtectionSettings](/windows/client-management/mdm/policy-csp-exploitguard) in the Policy CSP for instructions. In the **ExploitProtectionSettings** field, you can enter a path (local, UNC, or URI) to the mitigation options config, or you can enter the XML for the config. | ✅ |   |  |  |
 
-
 ## Games
 
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: |  :---: | :---: | :---: |
 | [AllowAdvancedGamingServices](/windows/client-management/mdm/policy-configuration-service-provider#games-allowadvancedgamingservices) | Currently not supported. | ✅ |  |  |  |
-
 
 ## KioskBrowser
 
@@ -327,13 +312,13 @@ These settings apply to the **Kiosk Browser** app available in Microsoft Store. 
 To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in Windows Configuration Designer:
 
 1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer.
-2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18).
+1. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18).
 
-3. Insert the null character string in between each URL (e.g www.bing.com&#xF000;www.contoso.com).
+1. Insert the null character string in between each URL (e.g www.bing.com&#xF000;www.contoso.com).
 
-4. Save the XML file.
-5. Open the project again in Windows Configuration Designer.
-6. Export the package. Ensure you don't revisit the created policies under Kiosk Browser or else the null character will be removed.
+1. Save the XML file.
+1. Open the project again in Windows Configuration Designer.
+1. Export the package. Ensure you don't revisit the created policies under Kiosk Browser or else the null character will be removed.
 
 ## LocalPoliciesSecurityOptions
 
@@ -383,7 +368,6 @@ To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in
 | [AllowAutoAcceptPairingAndPrivacyConsentPrompts](/windows/client-management/mdm/policy-configuration-service-provider#privacy-allowautoacceptpairingandprivacyconsentprompts) | Allow or disallow the automatic acceptance of the pairing and privacy user consent dialog boxes when launching apps. |  |   |  |  |
 | [AllowInputPersonalization](/windows/client-management/mdm/policy-configuration-service-provider#privacy-allowinputpersonalization) | Allow the use of cloud-based speech services for Cortana, dictation, or Store apps. | ✅ |   | ✅ |  |
 
-
 ## Search
 
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
@@ -402,8 +386,6 @@ To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in
 | [PreventIndexingLowDiskSpaceMB](/windows/client-management/mdm/policy-configuration-service-provider#search-preventindexinglowdiskspacemb) | Prevent indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. | ✅ |   |  |  |
 | [PreventRemoteQueries](/windows/client-management/mdm/policy-configuration-service-provider#search-preventremotequeries) | If enabled, clients will be unable to query this device's index remotely. | ✅ |   |  |  |
 | [SafeSearchPermissions](/windows/client-management/mdm/policy-configuration-service-provider#search-safesearchpermissions) | Specify the level of safe search (filtering adult content) required. |  |   |  |  |
-
-
 
 ## Security
 
@@ -480,7 +462,6 @@ ConfigureTelemetryOptInSettingsUx | This policy setting determines whether peopl
 | [DisableOneDriveFileSync](/windows/client-management/mdm/policy-configuration-service-provider#system-disableonedrivefilesync) | Prevent apps and features from working with files on OneDrive. | ✅ | |  |  |
 | [LimitEnhancedDiagnosticDataWindowsAnalytics](/windows/client-management/mdm/policy-csp-system#system-limitenhanceddiagnosticdatawindowsanalytics) | This policy setting, in combination with the System/AllowTelemetry policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. To enable this behavior you must enable this policy setting, and set Allow Telemetry to level 2 (Enhanced). When you configure these policy settings, a basic level of diagnostic data plus other events that are required for Windows Analytics are sent to Microsoft. These events are documented in [Windows 10, version 1703 basic level Windows diagnostic events and fields](/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields). Enabling enhanced diagnostic data in the System/AllowTelemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus other enhanced level diagnostic data. This setting has no effect on computers configured to send full, basic or security level diagnostic data to Microsoft. If you disable or don't configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the System/AllowTelemetry policy.  | ✅ |  |  |  |
 
-
 ## TextInput
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
@@ -499,13 +480,11 @@ ConfigureTelemetryOptInSettingsUx | This policy setting determines whether peopl
 | [ExcludeJapaneseIMEExceptISO208andEUDC](/windows/client-management/mdm/policy-configuration-service-provider#textinput-excludejapaneseimeexceptjis0208andeudc) | Allow users to restrict character code range of conversion by setting the character filter.  | ✅ |  |  |  |
 | [ExcludeJapaneseIMEExceptShiftJIS](/windows/client-management/mdm/policy-configuration-service-provider#textinput-excludejapaneseimeexceptshiftjis) | Allow users to restrict character code range of conversion by setting the character filter. | ✅ |  |  |  |
 
-
 ## TimeLanguageSettings
 
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: |
 | [AllowSet24HourClock](/windows/client-management/mdm/policy-configuration-service-provider#timelanguagesettings-allowset24hourclock) | Configure the default clock setting to be the 24 hour format. |  |  |  |  |
-
 
 ## Update
 
@@ -575,9 +554,7 @@ ConfigureTelemetryOptInSettingsUx | This policy setting determines whether peopl
 | [AllowSuggestedAppsInWindowsInkWorkspace](/windows/client-management/mdm/policy-configuration-service-provider#windowsinkworkspace-allowsuggestedappsinwindowsinkworkspace) | Show recommended app suggestions in the ink workspace. | ✅ |  |  |  |
 | [AllowWindowsInkWorkspace](/windows/client-management/mdm/policy-configuration-service-provider#windowsinkworkspace-allowwindowsinkworkspace) | Specify whether to allow the user to access the ink workspace. | ✅ |  |  |  |
 
-
 ## WindowsLogon
-
 
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: |

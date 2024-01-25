@@ -1,21 +1,21 @@
 ---
 title: CellCore
-description: This section describes the CellCore settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
+description: This section describes the CellCore settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 
 ms.topic: reference
 
-ms.date: 10/02/2018 
+ms.date: 10/02/2018
 
---- 
+---
 
 # CellCore (Windows Configuration Designer reference)
 
->Setting documentation is provided for Windows 10, version 1803 and earlier. CellCore isn't available in Windows 10, version 1809. 
+>Setting documentation is provided for Windows 10, version 1803 and earlier. CellCore isn't available in Windows 10, version 1801.
 
-Use to configure settings for cellular data. 
+Use to configure settings for cellular data.
 
 >[!IMPORTANT]
->These settings are intended to be used only by manufacturers, mobile operators, and solution providers when configuring devices, and aren't intended for use by administrators in the enterprise. 
+>These settings are intended to be used only by manufacturers, mobile operators, and solution providers when configuring devices, and aren't intended for use by administrators in the enterprise.
 
 ## Applies to
 
@@ -29,7 +29,7 @@ Use to configure settings for cellular data.
 |PerDevice: [External](#external)  |  |   |  | |
 |PerDevice: [General](#general)  |  |  |  | |
 |PerDevice: [RCS](#rcs)|  |  |  | |
-|PerDevice: [SMS](#sms)| ✅ | ✅  |  |  
+|PerDevice: [SMS](#sms)| ✅ | ✅  |  |
 |PerDevice: [UIX](#uix)|  |  |  | |
 |PerDevice: [UTK](#utk)|  |  |  | |
 |PerIMSI: [CellData](#celldata2)|  |  |  |  |
@@ -40,30 +40,30 @@ Use to configure settings for cellular data.
 |PerIMSI: [UTK](#utk2)|  |   |  |  |
 |PerIMSI: [VoLTE](#volte)|  |  |  |  |
 
-## PerDevice 
+## PerDevice
 
-### CellConfigurations 
+### CellConfigurations
 
-1. In **CellConfiguration** > **PropertyGroups**, enter a name for the property group. 
+1. In **CellConfiguration** > **PropertyGroups**, enter a name for the property group.
 
-2. Select the **PropertyGroups** you created in the **Available customizations** pane and then enter a **PropertyName**.
-3. Select the **PropertyName** you created in the **Available customizations** pane, and then select one of the following data types for the property:
+1. Select the **PropertyGroups** you created in the **Available customizations** pane and then enter a **PropertyName**.
+1. Select the **PropertyName** you created in the **Available customizations** pane, and then select one of the following data types for the property:
     - Binary
     - Boolean
     - Integer
     - String
-4. The data type that you selected is added in **Available customizations**. Select it to enter a value for the property. 
+1. The data type that you selected is added in **Available customizations**. Select it to enter a value for the property.
 
-### CellData 
+### CellData
 
 |Setting | Description|
 |:--- |:---|
 |CellularFailover | Allow or disallow cellular data failover when in limited Wi-Fi connectivity. By default, if the phone is connected to a Wi-Fi network and the data connection to a site is unsuccessful due to limited Wi-Fi connectivity, the phone will complete the connection to the site using available cellular data networks (when possible) to provide an optimal user experience. When the customization is enabled, a user option to use or not use cellular data for limited Wi-Fi connectivity becomes visible in the **Settings** > **cellular+SIM** screen. This option is automatically set to **don't use cellular data** when the customization is enabled.|
 |MaxNumberOfPDPContexts | Set a maximum value (1 through 4, inclusive, or 0x1 through 0x4 hexadecimal) for the number of simultaneous packet data protocol (PDP) contexts for 3GPP connections. By default, the OS enforces a maximum of four (4) simultaneous packet data protocol (PDP) contexts for 3GPP connections, and one (1) PDP context for 3GPP2 connections. You can set a different maximum value if required by their mobile operator. The same maximums apply for both roaming and non-roaming scenarios. This maximum does not include packet contexts used internally by the modem.|
 |ModemProfiles > LTEAttachGuids | Set the value for LTEAttachGuid to the OemConnectionId GUID used for the LTE attach profile in the modem. The value is a GUID in the string format *XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX*.|
-|PersistAtImaging > DisableAoAc | Enable or disable Always-on/Always-connected (AoAc) on the WWAN adapter.| 
+|PersistAtImaging > DisableAoAc | Enable or disable Always-on/Always-connected (AoAc) on the WWAN adapter.|
 
-### CellUX 
+### CellUX
 
 |Setting | Description|
 |:- |:-|
@@ -116,23 +116,23 @@ Use to configure settings for cellular data.
 |ShowWifiCallingError | Select **Yes** to show Wi-Fi calling error message.|
 |SlotSelectionSim1Name | Enter text for the name of SIM 1 in slot selection UI.|
 |SlotSelectionSim2Name | Enter text for the name of SIM 2 in slot selection UI.|
-|SuppressDePersoUI | Select **Yes** to hide the Perso unlock UI.| 
+|SuppressDePersoUI | Select **Yes** to hide the Perso unlock UI.|
 
-### CGDual 
+### CGDual
 
-Use **CGDual** > **RestrictToGlobalMode** to configure settings for global mode on C+G Dual SIM phones. When the device registration changes, if the value for this setting is set, the OS changes the preferred system type to the default preferred system type for world mode. If the phone isn't camped on any network, the OS assumes the phone is on the home network and changes the network registration preference to default mode.  
+Use **CGDual** > **RestrictToGlobalMode** to configure settings for global mode on C+G Dual SIM phones. When the device registration changes, if the value for this setting is set, the OS changes the preferred system type to the default preferred system type for world mode. If the phone isn't camped on any network, the OS assumes the phone is on the home network and changes the network registration preference to default mode.
 
-Select from the following modes: 
+Select from the following modes:
 
 - RestrictToGlobalMode_Disabled: the phone isn't restricted to global mode.
 - RestrictToGlobalMobe_Home: when a slot is registered at home and supports global mode, the mode selection is restricted to global mode.
-- RestrictToGlobalMode_Always: if a slot supports global mode and this value is selected, the mode selection is restricted to global mode. 
+- RestrictToGlobalMode_Always: if a slot supports global mode and this value is selected, the mode selection is restricted to global mode.
 
-### eSim 
+### eSim
 
-Configure **FwUpdate** > **AllowedAppIdList** to list apps that are allowed to update the firmware. Obtain the app IDs from the card vendor. 
+Configure **FwUpdate** > **AllowedAppIdList** to list apps that are allowed to update the firmware. Obtain the app IDs from the card vendor.
 
-### External 
+### External
 
 |Setting |Description|
 |:--- |:---|
@@ -157,9 +157,9 @@ Configure **FwUpdate** > **AllowedAppIdList** to list apps that are allowed to u
 |ImageOnly > MTU > RoamingMTUDataSize | Customize the TCP maximum segment size (MSS) for roaming by setting the maximum transmission unit (MTU) data size if the MSS does not meet the requirements of the mobile operator network. For TCP, the default maximum transmission unit (MTU) is set to 1500 bytes, which makes the maximum segment size (MSS) 1460 bytes. In general, this value should not be changed, as the user experience will degrade if low values are set. However, if the MSS does not meet the requirements of the mobile operator network, OEMs can customize it for roaming by setting the MTU data size. This customization configures the MTU, so the size should be set to the required MSS size plus 40 bytes.|
 |ImageOnly > SuppressNwPSDetach | Configure whether to suppress reporting of network-initiated PS detach (appear attached to OS) until deregistered.|
 |SignalBarMapping Table | You can modify the percentage values used for the signal strength in the status bar per filter.|
-|SRVCCAutoToggleWmRil | Configure whether to link SRVCC to VOLTE on/off.| 
+|SRVCCAutoToggleWmRil | Configure whether to link SRVCC to VOLTE on/off.|
 
-### General 
+### General
 
 |Setting | Description|
 |:---|:---|
@@ -186,26 +186,26 @@ Configure **FwUpdate** > **AllowedAppIdList** to list apps that are allowed to u
 |OperatorPreferredForFasterRadio | Set Issuer Identification Number (IIN) or partial ICCID of preferred operator for the faster radio. For mobile operators that require more control over the system types that their phones use to connect to the mobile operators' networks, OEMs can map a partial ICCID or an Industry Identification Number (IIN) to the faster radio regardless of which SIM card is chosen for data connectivity. This setting is used only for China. OEMs should not use this setting unless required by the mobile operator. To map a partial ICCID or an IIN to the faster radio regardless of which SIM card is chosen for data connectivity, set the value of OperatorPreferredForFasterRadio to match the IIN or the ICCID, up to 7 digits, of the preferred operator.|
 |PreferredDataProviderList | OEMs can set a list of MCC/MNC pairs for the purchase order (PO) carrier or primary operator. For mobile operators that require it, OEMs can set a list of MCC/MNC pairs for the purchase order (PO) carrier or primary operator so that it can be set as the default data line for phones that have a dual SIM. When the PO SIM is inserted into the phone, the OS picks the PO SIM as the data line and shows a notification to the user that the SIM has been selected for Internet data. If two PO SIMs are inserted, the OS will choose the first PO SIM that was detected as the default data line and the mobile operator action required dialogue (ARD) is shown. If two non-PO SIMs are inserted, the user is prompted to choose the SIM to use as the default data line. Note  OEMs should not set this customization unless required by the mobile operator. To enumerate the MCC/MNC value pairs to use for data connections, set the value for **PreferredDataProviderList**. The value must be a comma-separated list of preferred MCC:MNC values. For example, the value can be 301:026,310:030 and so on.|
 |Slot2DisableAppsList | Disable specified apps from slot 2 on a C+G dual SIM phone. To disable a list of specified apps from Slot 2, set Slot2DisableAppsList to a comma-separated list of values representing the apps. For example, `4,6`.|
-|Slot2ExcludedSystemTypes | Exclude specified system types from SIM cards inserted in Slot 2. For mobile operators that require more control over the system types that their phones use to connect to the mobile operators' networks, OEMs can restrict the second slot in a dual-SIM phone regardless of what apps or executor mapping the second slot is associated with. Note  This setting is used only for China. OEMs should not use this setting unless required by the mobile operator. To allow an operator to simply restrict the second slot in a dual SIM phone regardless of what apps or executor mapping the second slot is associated with, set the value of Slot2ExcludedSystemTypes to the system types to be excluded from the SIM cards inserted in Slot 2. For example, a value of 0x8 specifies RIL_SYSTEMTYPE_UMTS (3G) while 0x10 specifies RIL_SYSTEMTYPE_LTE (4G). To exclude more than one system type, perform a bitwise OR operation on the radio technologies you want to exclude. For example, a bitwise OR operation on RIL_SYSTEMTYPE_LTE (4G) and RIL_SYSTEMTYPE_UMTS (3G) results in the value 11000 (binary) or 0x18 (hexadecimal). In this case, any SIM inserted in Slot 2 will be limited to 2G. For more information about the RIL system types, see [RILSYSTEMTYPE](/previous-versions/windows/hardware/cellular/dn931143(v=vs.85)).|
+|Slot2ExcludedSystemTypes | Exclude specified system types from SIM cards inserted in Slot 1. For mobile operators that require more control over the system types that their phones use to connect to the mobile operators' networks, OEMs can restrict the second slot in a dual-SIM phone regardless of what apps or executor mapping the second slot is associated with. Note  This setting is used only for China. OEMs should not use this setting unless required by the mobile operator. To allow an operator to simply restrict the second slot in a dual SIM phone regardless of what apps or executor mapping the second slot is associated with, set the value of Slot2ExcludedSystemTypes to the system types to be excluded from the SIM cards inserted in Slot 1. For example, a value of 0x8 specifies RIL_SYSTEMTYPE_UMTS (3G) while 0x10 specifies RIL_SYSTEMTYPE_LTE (4G). To exclude more than one system type, perform a bitwise OR operation on the radio technologies you want to exclude. For example, a bitwise OR operation on RIL_SYSTEMTYPE_LTE (4G) and RIL_SYSTEMTYPE_UMTS (3G) results in the value 11000 (binary) or 0x18 (hexadecimal). In this case, any SIM inserted in Slot 2 will be limited to 2G. For more information about the RIL system types, see [RILSYSTEMTYPE](/previous-versions/windows/hardware/cellular/dn931143(v=vs.85)).|
 |SuggestDataRoamingARD | Use to show the data roaming suggestion dialog when roaming and the data roaming setting is set to no roaming.|
 |SuggestGlobalModeARD | Define whether Global Mode is suggested on a C+G dual SIM phone.|
-|SuggestGlobalModeTimeout | To specify the number of seconds to wait for network registration before suggesting global mode, set SuggestGlobalModeTimeout to a value between 1 and 600, inclusive. For example, to set the timeout to 60 seconds, set the value to 60 (decimal) or 0x3C (hexadecimal).| 
+|SuggestGlobalModeTimeout | To specify the number of seconds to wait for network registration before suggesting global mode, set SuggestGlobalModeTimeout to a value between 1 and 600, inclusive. For example, to set the timeout to 60 seconds, set the value to 60 (decimal) or 0x3C (hexadecimal).|
 
-### RCS 
+### RCS
 
 |Setting | Description|
 |:---|:---|
 |SystemEnabled | Select **Yes** to specify that the system is RCS-enabled.|
-|UserEnabled | Select **Yes** to show the user setting if RCS is enabled on the device.| 
+|UserEnabled | Select **Yes** to show the user setting if RCS is enabled on the device.|
 
-### SMS 
+### SMS
 
 |Setting |Description|
 |:--|:--|
 |AckExpirySeconds |Set the value, in seconds, for how long to wait for a client ACK before trying to deliver. |
 |DefaultMCC |Set the default mobile country code (MCC).|
 |Encodings > GSM7BitEncodingPage |Enter the code page value for the 7-bit GSM default alphabet encoding. Values:</br></br>- Code page value: 55000 (Setting value: 0xD6D8)(Code page: default alphabet)</br>- Code page value: 55001 (Setting value: 0xD6D9)(Code page: GSM with single shift for Spanish)</br>- Code page value: 55002 (Setting value: 0xD6DA)(Code page: GSM with single shift for Portuguese)</br>- Code page value: 55003 (Setting value: 0xD6DB)(Code page: GSM with single shift for Turkish)</br>- Code page value: 55004 (Setting value: 0xD6DC)(Code page: SMS Greek Reduction)|
-|Encodings > GSM8BitEncodingPage|Enter the code page value for GSM 8-bit encoding (OEM set). OEM-created code page IDs should be in the range 55050–55099. |
+|Encodings > GSM8BitEncodingPage|Enter the code page value for GSM 8-bit encoding (OEM set). OEM-created code page IDs should be in the range 55050–55091. |
 |Encodings > OctetEncodingPage |Set the octet (binary) encoding.|
 |Encodings > SendUDHNLSS |Set the 7 bit GSM shift table encoding.|
 |Encodings > UseASCII |Set the 7 bit ASCII encoding. Used only for CDMA carriers that use 7-bit ASCII encoding instead of GSM 7-bit encoding.|
@@ -222,33 +222,33 @@ Configure **FwUpdate** > **AllowedAppIdList** to list apps that are allowed to u
 |Type3GPP > IMS > RetryEnabled |Configure whether to enable one automatic retry after failure to send over IMS.|
 |Type 3GPP > SmsUse16BitReferenceNumbers |Configure whether to use 8-bit or 16-bit message ID (reference number) in the UDH.|
 |Type3GPP2 > ErrorHandling > FriendlyErrorClass |Enter a name for ERRORCODE3GPP2, and click **Add**. Configure the error class that you added as **generic error**, **invalid recipient address**, or **network connectivity trouble**.|
-|Type3GPP2 > ErrorHandling > UseReservedAsPermanent |Set the 3GPP2 permanent error type.| 
+|Type3GPP2 > ErrorHandling > UseReservedAsPermanent |Set the 3GPP2 permanent error type.|
 
 ### UIX
 
 Setting | Description
 |:-|:--|
 SIM1ToUIM1 | Used to show UIM1 as an alternate string instead of SIM1 for the first SIM on C+G dual SIM phones.
-SIMToSIMUIM | Partners can change the string "SIM" to "SIM/UIM" to accommodate scenarios such as Dual Mode cards of SIM cards on the phone. This scenario can provide a better experience for users in some markets. Enabling this customization changes all "SIM" strings to "SIM/UIM". 
+SIMToSIMUIM | Partners can change the string "SIM" to "SIM/UIM" to accommodate scenarios such as Dual Mode cards of SIM cards on the phone. This scenario can provide a better experience for users in some markets. Enabling this customization changes all "SIM" strings to "SIM/UIM".
 
 ### UTK
 
 |Setting |Description|
 |:-|:-|
 |UIDefaultDuration |Specifies the default time, in milliseconds, that the DISPLAY TEXT, GET INKEY, PLAY TONE, or SELECT ITEM dialog should be displayed. The default value is 60000 milliseconds (60 seconds). The valid value range is 1-120000.|
-|UIGetInputDuration |Specifies the default time, in milliseconds, that the GET INPUT dialog should be displayed. The default value is 120000 milliseconds (120 seconds). The valid value range is 1-120000.| 
+|UIGetInputDuration |Specifies the default time, in milliseconds, that the GET INPUT dialog should be displayed. The default value is 120000 milliseconds (120 seconds). The valid value range is 1-120000.|
 
 ## PerIMSI
 
-Enter an IMSI, click **Add**, and then select the IMSI that you added to configure the following settings.  
+Enter an IMSI, click **Add**, and then select the IMSI that you added to configure the following settings.
 
 ### <a name="celldata2"></a> CellData
 
 |Setting |Description|
 |:--- |:---|
-|MaxNumberOfPDPContexts |OEMs can set a maximum value for the number of simultaneous packet data protocol (PDP) contexts for 3GPP connections. By default, the OS enforces a maximum of four (4) simultaneous packet data protocol (PDP) contexts for 3GPP connections, and one (1) PDP context for 3GPP2 connections. OEMs can set a different maximum value if required by their mobile operator. The same maximums apply for both roaming and non-roaming scenarios. This maximum does not include packet contexts used internally by the modem.| 
+|MaxNumberOfPDPContexts |OEMs can set a maximum value for the number of simultaneous packet data protocol (PDP) contexts for 3GPP connections. By default, the OS enforces a maximum of four (4) simultaneous packet data protocol (PDP) contexts for 3GPP connections, and one (1) PDP context for 3GPP2 connections. OEMs can set a different maximum value if required by their mobile operator. The same maximums apply for both roaming and non-roaming scenarios. This maximum does not include packet contexts used internally by the modem.|
 
-### <a name="cellux2"></a> CellUX 
+### <a name="cellux2"></a> CellUX
 
 |Setting |Description|
 |:--- |:---|
@@ -311,7 +311,7 @@ Enter an IMSI, click **Add**, and then select the IMSI that you added to configu
 |ShowWifiCallingError | Select **Yes** to show Wi-Fi calling error message.|
 |SlotSelectionSim1Name | Enter text for the name of SIM 1 in slot selection UI.  (Removed in Windows 10, version 1803.)|
 |SlotSelectionSim2Name | Enter text for the name of SIM 2 in slot selection UI.  (Removed in Windows 10, version 1803.)|
-|SuppressDePersoUI | Suppress DePerso UI to unlock Perso.  (Removed in Windows 10, version 1803.)| 
+|SuppressDePersoUI | Suppress DePerso UI to unlock Perso.  (Removed in Windows 10, version 1803.)|
 
 ### <a name="general2"></a> General
 
@@ -334,13 +334,13 @@ Enter an IMSI, click **Add**, and then select the IMSI that you added to configu
 |NitzFiltering |For mobile networks that can receive Network Identity and Time Zone (NITZ) information from multiple sources, partners can set the phone to ignore the time received from an LTE network. Time received from a CDMA network is not affected. Set the value of NitzFiltering to `0x10`.|
 |OperatorListForExcludedSystemTypes |Enter a comma-separated list of MCC and MNC (MCC:MNC) for which system types should be restricted. For mobile operators that require more control over the system types that their phones use to connect to the mobile operators' networks, OEMs can specify the MCC and MNC of other specific operators that the main mobile operator wishes to limit. If the UICC's MCC and MNC matches any of the pairs that OEMs can specify for the operator, a specified RIL system type will be removed from the UICC regardless of its app types, slot position, or executor mapping. This setting is used only for China. OEMs should not use this setting unless required by the mobile operator. Set the value of the OperatorListForExcludedSystemTypes setting a comma separated list of MCC:MNC pairs for which the system types should be restricted. For example, the value can be set to 310:026,310:030 to restrict operators with an MCC:MNC of 310:026 and 310:030. (Removed in Windows 10, version 1803.)|
 |OperatorPreferredForFasterRadio |Set Issuer Identification Number (IIN) or partial ICCID of preferred operator for the faster radio. For mobile operators that require more control over the system types that their phones use to connect to the mobile operators' networks, OEMs can map a partial ICCID or an Industry Identification Number (IIN) to the faster radio regardless of which SIM card is chosen for data connectivity. This setting is used only for China. OEMs should not use this setting unless required by the mobile operator. To map a partial ICCID or an IIN to the faster radio regardless of which SIM card is chosen for data connectivity, set the value of OperatorPreferredForFasterRadio to match the IIN or the ICCID, up to 7 digits, of the preferred operator. (Removed in Windows 10, version 1803.) |
-|SuggestDataRoamingARD |Use to show the data roaming suggestion dialog when roaming and the data roaming setting is set to no roaming. | 
+|SuggestDataRoamingARD |Use to show the data roaming suggestion dialog when roaming and the data roaming setting is set to no roaming. |
 
-## <a name="rcs2"></a> RCS 
+## <a name="rcs2"></a> RCS
 
-See descriptions in Windows Configuration Designer. 
+See descriptions in Windows Configuration Designer.
 
-## <a name="sms2"></a> SMS 
+## <a name="sms2"></a> SMS
 
 |Setting |Description|
 |:--|:--|
@@ -361,45 +361,45 @@ See descriptions in Windows Configuration Designer.
 |Type3GPP > ErrorHandling > FriendlyErrorClass |Enter a name for ERRORCODE3GPP, and click **Add**. Configure the error class that you added as **generic error**, **invalid recipient address**, or **network connectivity trouble**.|
 |Type3GPP > IMS > SmsUse16BitReferenceNumbers |Configure whether to use 8-bit or 16-bit message ID (reference number) in the UDH.|
 |Type3GPP2 > ErrorHandling > FriendlyErrorClass  |Enter a name for ERRORCODE3GPP2, and click **Add**. Configure the error class that you added as **generic error**, **invalid recipient address**, or **network connectivity trouble**.|
-| Type3GPP2 > ErrorHandling > UseReservedAsPermanent |Set the 3GPP2 permanent error type.| 
+| Type3GPP2 > ErrorHandling > UseReservedAsPermanent |Set the 3GPP2 permanent error type.|
 
-### <a name="utk2"></a> UTK 
+### <a name="utk2"></a> UTK
 
 |Setting |Description|
 |:---|:---|
 |UIDefaultDuration | Specifies the default time, in milliseconds, that the DISPLAY TEXT, GET INKEY, PLAY TONE, or SELECT ITEM dialog should be displayed. The default value is 60000 milliseconds (60 seconds). The valid value range is 1-120000. |
-|UIGetInputDuration |Specifies the default time, in milliseconds, that the GET INPUT dialog should be displayed. The default value is 120000 milliseconds (120 seconds). The valid value range is 1-120000.| 
+|UIGetInputDuration |Specifies the default time, in milliseconds, that the GET INPUT dialog should be displayed. The default value is 120000 milliseconds (120 seconds). The valid value range is 1-120000.|
 
-### VoLTE 
+### VoLTE
 
 |Setting | Description|
 |:---|:---|
 |IMSOMADMServices |Allows configuration of OMA DM Services Mask. The value is mapped directly to RIL_IMS_NW_ENABLED_FLAGS on the modem side. To configure the OMA DM services mask, set the IMSOMADMServices setting to one of the following values:</br></br>- None, Flag: 0, Bitmask: 00000</br>- OMA DM, Flag: 1, Bitmask: 00001</br>- Voice, Flag: 2, Bitmask: 00010</br>- Video, Flag: 4, Bitmask: 00100</br>- EAB presence, Flag: 8, Bitmask: 01000</br>- Enable all services, Flag: 15, Bitmask: 10000|
-|IMSServices |Identifies which IMS services are enabled (if any). The value is any combination of flags 1 (IMS), 2 (SMS over IMS), 4 (Voice over IMS) and 8 (Video Over IMS). Set the value for the IMSServices setting to any combination of the following flags or bitmasks:</br></br>- IMS, Flag: 1, Bitmask: 0001</br>- SMS over IMS, Flag: 2, Bitmask: 0010</br>- Voice over IMS, Flag: 4, Bitmask: 0100</br>Video over IMS, Flag: 8, Bitmask: 1000| 
+|IMSServices |Identifies which IMS services are enabled (if any). The value is any combination of flags 1 (IMS), 2 (SMS over IMS), 4 (Voice over IMS) and 8 (Video Over IMS). Set the value for the IMSServices setting to any combination of the following flags or bitmasks:</br></br>- IMS, Flag: 1, Bitmask: 0001</br>- SMS over IMS, Flag: 2, Bitmask: 0010</br>- Voice over IMS, Flag: 4, Bitmask: 0100</br>Video over IMS, Flag: 8, Bitmask: 1000|
 
-## <a name="errorreject"></a> Error messages for reject codes 
+## <a name="errorreject"></a> Error messages for reject codes
 
 |Reject code |Extended error message |Short error message|
 |:---|:---|:---|
 |2 (The SIM card hasn't been activated or has been deactivated) | SIM not set up MM#2 | Invalid SIM|
 |3 (The SIM card fails authentication or one of the identity check procedures. This can also happen due to a duplication of the TMSI across different MSCs.) |Can't verify SIM MM#3 |Invalid SIM|
-|6 (The device has been put on a block list, such as when the phone has been stolen or the IMEI is restricted.) | Phone not allowed MM#6 | No service| 
+|6 (The device has been put on a block list, such as when the phone has been stolen or the IMEI is restricted.) | Phone not allowed MM#6 | No service|
 
-<span id="spn" /> 
+<span id="spn" />
 
-## Values for MultivariantProvisionedSPN 
+## Values for MultivariantProvisionedSPN
 
-Set the MultivariantProvisionedSPN value to the name of the SPN or mobile operator. 
+Set the MultivariantProvisionedSPN value to the name of the SPN or mobile operator.
 
-The following table shows the scenarios supported by this customization. 
+The following table shows the scenarios supported by this customization.
 
 >[!NOTE]
->In the Default SIM name column: 
+>In the Default SIM name column:
 
 >
 >- The " " in MultivariantProvisionedSPN" "1234 means that there's a space between the mobile operator name or SPN and the last 4 digits of the MSISDN.
 >- MultivariantProvisionedSPN means the value that you set for the MultivariantProvisionedSPN setting.
->- SIM 1 or SIM 2 is the default friendly name for the SIM in slot 1 or slot 2. 
+>- SIM 1 or SIM 2 is the default friendly name for the SIM in slot 1 or slot 2.
 
 Multivariant setting set?|SPN provisioned?|MSISDN (last four digits: 1234, for example) provisioned?|Default SIM name
 --- | --- | --- | ---

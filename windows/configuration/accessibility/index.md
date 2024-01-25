@@ -4,7 +4,7 @@ description: Lists the various accessibility features available in Windows clien
 ms.date: 01/25/2024
 ms.topic: conceptual
 ms.collection: tier1
---- 
+---
 
 <!-- MAXADO-8138357 -->
 <!-- MAXADO-8138352 -->
@@ -49,7 +49,7 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 - [Use live captions to better understand audio](https://support.microsoft.com/windows/use-live-captions-to-better-understand-audio-b52da59c-14b8-4031-aeeb-f6a47e6055df). Use Windows 11, version 22H2 or later to better understand any spoken audio with real time captions.
 - Starting with Windows 11, version 22H2 with [KB5026446](https://support.microsoft.com/kb/5026446), live captions now supports additional languages.
 - [View live transcription in a Teams meeting](https://support.microsoft.com/office/view-live-transcription-in-a-teams-meeting-dc1a8f23-2e20-4684-885e-2152e06a4a8b). During any Teams meeting, view a live transcription so you don't miss what's being said.
-- [Use Teams for sign language](https://www.microsoft.com/microsoft-teams/group-chat-software). Teams is available on various platforms and devices, so you don't have to worry about whether your co-workers, friends, and family can communicate with you. 
+- [Use Teams for sign language](https://www.microsoft.com/microsoft-teams/group-chat-software). Teams is available on various platforms and devices, so you don't have to worry about whether your co-workers, friends, and family can communicate with you.
 
 - [Make Windows easier to hear](https://support.microsoft.com/windows/make-windows-easier-to-hear-9c18cfdc-63be-2d47-0f4f-5b00facfd2e1).
   - Replace audible alerts with visual alerts.
@@ -62,11 +62,11 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 
 - [Have Cortana assist you](https://support.microsoft.com/topic/what-is-cortana-953e648d-5668-e017-1341-7f26f7d0f825). Cortana can handle various tasks for you, including setting reminders, opening apps, finding facts, and sending emails and texts.
 - [Dictate text and commands](https://support.microsoft.com/windows/use-voice-recognition-in-windows-83ff75bd-63eb-0b6c-18d4-6fae94050571). Windows includes voice recognition that lets you tell it what to do.
-- [Use the On-Screen Keyboard (OSK)](https://support.microsoft.com/windows/use-the-on-screen-keyboard-osk-to-type-ecbb5e08-5b4e-d8c8-f794-81dbf896267a). Instead of relying on a physical keyboard, use the OSK to enter data and select keys with a mouse or other pointing device. It also offers word prediction and completion. 
-- [Make your mouse, keyboard, and other input devices easier to use](https://support.microsoft.com/windows/make-your-mouse-keyboard-and-other-input-devices-easier-to-use-10733da7-fa82-88be-0672-f123d4b3dcfe). 
+- [Use the On-Screen Keyboard (OSK)](https://support.microsoft.com/windows/use-the-on-screen-keyboard-osk-to-type-ecbb5e08-5b4e-d8c8-f794-81dbf896267a). Instead of relying on a physical keyboard, use the OSK to enter data and select keys with a mouse or other pointing device. It also offers word prediction and completion.
+- [Make your mouse, keyboard, and other input devices easier to use](https://support.microsoft.com/windows/make-your-mouse-keyboard-and-other-input-devices-easier-to-use-10733da7-fa82-88be-0672-f123d4b3dcfe).
 
   - If you have limited control of your hands, you can personalize your keyboard to do helpful things like ignore repeated keys.
-  - If a mouse is difficult to use, you can control the pointer by using your numeric keypad. 
+  - If a mouse is difficult to use, you can control the pointer by using your numeric keypad.
 
 ## Cognition
 
@@ -76,15 +76,15 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 
 ## Assistive technology devices built into Windows
 
-- [Hear text read aloud with Narrator](https://support.microsoft.com/windows/hear-text-read-aloud-with-narrator-040f16c1-4632-b64e-110a-da4a0ac56917). Narrator reads text on your PC screen aloud and describes events, such as notifications or calendar appointments, so you can use your PC without a display. 
-- Scripting functionality has been added to Narrator. There is store delivery of Narrator extension scripts which currently include an Outlook script and an Excel script. 
-- [Use voice recognition](https://support.microsoft.com/windows/use-voice-recognition-in-windows-83ff75bd-63eb-0b6c-18d4-6fae94050571). 
+- [Hear text read aloud with Narrator](https://support.microsoft.com/windows/hear-text-read-aloud-with-narrator-040f16c1-4632-b64e-110a-da4a0ac56917). Narrator reads text on your PC screen aloud and describes events, such as notifications or calendar appointments, so you can use your PC without a display.
+- Scripting functionality has been added to Narrator. There is store delivery of Narrator extension scripts which currently include an Outlook script and an Excel script.
+- [Use voice recognition](https://support.microsoft.com/windows/use-voice-recognition-in-windows-83ff75bd-63eb-0b6c-18d4-6fae94050571).
 
 <!-- MAXADO-8138354 -->
 - With spellings experience in voice access, you can dictate a complex or non-standard word letter-by-letter and add it to Windows dictionary. The next time you try to dictate the same word, voice access improves its recognition.
 
 - [Save time with keyboard shortcuts](https://support.microsoft.com/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec).
-- [Use voice access to control your PC and author text with your voice](https://support.microsoft.com/en-us/topic/use-voice-access-to-control-your-pc-author-text-with-your-voice-4dcd23ee-f1b9-4fd1-bacc-862ab611f55d).
+- [Use voice access to control your PC and author text with your voice](https://support.microsoft.com/topic/use-voice-access-to-control-your-pc-author-text-with-your-voice-4dcd23ee-f1b9-4fd1-bacc-862ab611f55d).
 
 ## Other resources
 

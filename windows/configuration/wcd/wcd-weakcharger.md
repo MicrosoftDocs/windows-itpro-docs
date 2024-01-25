@@ -1,26 +1,20 @@
 ---
 title: WeakCharger
 description: This section describes the WeakCharger settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
-
 ms.date: 12/31/2017
 ---
 
 # WeakCharger (reference)
 
-
 Use WeakCharger settings to configure the charger notification UI.
-
 
 ## Applies to
 
-| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: |
-| [HideWeakChargerNotifyOptionUI](#hideweakchargernotifyoptionui) | ✅ | ✅ |  |   |
-| [NotifyOnWeakCharger](#notifyonweakcharger) | ✅ | ✅ |  |   |
-
+| Setting | Windows client | Surface Hub | HoloLens | IoT Core |
+|--|:-:|:-:|:-:|:-:|
+| [HideWeakChargerNotifyOptionUI](#hideweakchargernotifyoptionui) | ✅ | ✅ |  |  |
+| [NotifyOnWeakCharger](#notifyonweakcharger) | ✅ | ✅ |  |  |
 
 ## HideWeakChargerNotifyOptionUI
 
@@ -36,10 +30,8 @@ An incompatible charging source is one that doesn't behave like one of the follo
 
 - Charging downstream port
 - Standard downstream port
-
 - Dedicated charging port
 
 The port types are defined by the USB Battery Charging Specification, Revision 1.2, available at `USB.org`.
 
 Select between **Disable Weak Charger Notifications UI** and **Enable Weak Charger Notifications UI**.
-

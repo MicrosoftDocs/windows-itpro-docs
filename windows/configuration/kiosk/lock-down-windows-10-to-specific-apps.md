@@ -3,78 +3,78 @@ title: Set up a multi-app kiosk on Windows 10
 description: Learn how to configure a kiosk device running Windows 10 so that users can only run a few specific apps.
 ms.topic: how-to
 ms.date: 11/08/2023
---- 
+---
 
-# Set up a multi-app kiosk on Windows 10 devices 
+# Set up a multi-app kiosk on Windows 10 devices
 
 > [!NOTE]
-> The use of multiple monitors isn't supported for multi-app kiosk mode in Windows 10. 
+> The use of multiple monitors isn't supported for multi-app kiosk mode in Windows 10.
 
-A [kiosk device](./kiosk-single-app.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp) was expanded to make it easy for administrators to create kiosks that run more than one app. The benefit of a kiosk that runs only one or more specified apps is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don't need to access. 
+A [kiosk device](./kiosk-single-app.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp) was expanded to make it easy for administrators to create kiosks that run more than one app. The benefit of a kiosk that runs only one or more specified apps is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don't need to access.
 
-The following table lists changes to multi-app kiosk in recent updates. 
+The following table lists changes to multi-app kiosk in recent updates.
 
 | New features and improvements |  In update |
 | --- | ---|
 | - Configure [a single-app kiosk profile](#profile) in your XML file<br><br>- Assign [group accounts to a config profile](#config-for-group-accounts)<br><br>- Configure [an account to sign in automatically](#config-for-autologon-account) | Windows 10, version 1803 |
-| - Explicitly allow [some known folders when user opens file dialog box](#fileexplorernamespacerestrictions)<br><br>- [Automatically launch an app](#allowedapps) when the user signs in<br><br>- Configure a [display name for the autologon account](#config-for-autologon-account) | Windows 10, version 1809<br><br>**Important:** To use features released in Windows 10, version 1809, make sure that [your XML file](#create-xml-file) references `https://schemas.microsoft.com/AssignedAccess/201810/config`. | 
+| - Explicitly allow [some known folders when user opens file dialog box](#fileexplorernamespacerestrictions)<br><br>- [Automatically launch an app](#allowedapps) when the user signs in<br><br>- Configure a [display name for the autologon account](#config-for-autologon-account) | Windows 10, version 1809<br><br>**Important:** To use features released in Windows 10, version 1809, make sure that [your XML file](#create-xml-file) references `https://schemas.microsoft.com/AssignedAccess/201810/config`. |
 
 > [!WARNING]
-> The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access. 
+> The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
 
-You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provisioning package](#provision). 
+You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provisioning package](#provision).
 
 > [!TIP]
-> Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk. 
+> Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
-<span id="intune"/> 
+<span id="intune"/>
 
-## Configure a kiosk in Microsoft Intune 
+## Configure a kiosk in Microsoft Intune
 
-To configure a kiosk in Microsoft Intune, see: 
+To configure a kiosk in Microsoft Intune, see:
 
 - [Windows client and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](/intune/kiosk-settings)
-- [Windows client device settings to run as a kiosk in Intune](/intune/kiosk-settings-windows) 
+- [Windows client device settings to run as a kiosk in Intune](/intune/kiosk-settings-windows)
 
-<span id="provision" /> 
+<span id="provision" />
 
-## Configure a kiosk using a provisioning package 
+## Configure a kiosk using a provisioning package
 
-Process: 
+Process:
 
 1. [Create XML file](#create-xml-file)
-2. [Add XML file to provisioning package](#add-xml)
-3. [Apply provisioning package to device](#apply-ppkg) 
+1. [Add XML file to provisioning package](#add-xml)
+1. [Apply provisioning package to device](#apply-ppkg)
 
-Watch how to use a provisioning package to configure a multi-app kiosk. 
+Watch how to use a provisioning package to configure a multi-app kiosk.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
 
-If you don't want to use a provisioning package, you can deploy the configuration XML file using [mobile device management (MDM)](#use-mdm-to-deploy-the-multi-app-configuration), or you can configure assigned access using the [MDM Bridge WMI Provider](kiosk-mdm-bridge.md). 
+If you don't want to use a provisioning package, you can deploy the configuration XML file using [mobile device management (MDM)](#use-mdm-to-deploy-the-multi-app-configuration), or you can configure assigned access using the [MDM Bridge WMI Provider](kiosk-mdm-bridge.md).
 
-### Prerequisites 
+### Prerequisites
 
 - Windows Configuration Designer (Windows 10, version 1709 or later)
-- The kiosk device must be running Windows 10 (S, Pro, Enterprise, or Education), version 1709 or later 
+- The kiosk device must be running Windows 10 (S, Pro, Enterprise, or Education), version 1709 or later
 
 > [!NOTE]
-> For devices running versions of Windows 10 earlier than version 1709, you can [create AppLocker rules](lock-down-windows-10-applocker.md) to configure a multi-app kiosk. 
+> For devices running versions of Windows 10 earlier than version 1709, you can [create AppLocker rules](lock-down-windows-10-applocker.md) to configure a multi-app kiosk.
 
-### Create XML file 
+### Create XML file
 
-Let's start by looking at the basic structure of the XML file. 
+Let's start by looking at the basic structure of the XML file.
 
-- A configuration xml can define multiple *profiles*. Each profile has a unique **Id** and defines a set of applications that are allowed to run, whether the taskbar is visible, and can include a custom Start layout. 
+- A configuration xml can define multiple *profiles*. Each profile has a unique **Id** and defines a set of applications that are allowed to run, whether the taskbar is visible, and can include a custom Start layout.
 
-- A configuration xml can have multiple *config* sections. Each config section associates a non-admin user account to a default profile **Id**. 
+- A configuration xml can have multiple *config* sections. Each config section associates a non-admin user account to a default profile **Id**.
 
-- Multiple config sections can be associated to the same profile. 
+- Multiple config sections can be associated to the same profile.
 
-- A profile has no effect if it's not associated to a config section. 
+- A profile has no effect if it's not associated to a config section.
 
-    ![profile = app and config = account.](images/profile-config.png) 
+    ![profile = app and config = account.](images/profile-config.png)
 
-You can start your file by pasting the following XML into an XML editor, and saving the file as *filename*.xml. Each section of this XML is explained in this article. You can see a full sample version in the [Assigned access XML reference.](kiosk-xml.md) 
+You can start your file by pasting the following XML into an XML editor, and saving the file as *filename*.xml. Each section of this XML is explained in this article. You can see a full sample version in the [Assigned access XML reference.](kiosk-xml.md)
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -98,71 +98,71 @@ You can start your file by pasting the following XML into an XML editor, and sav
         </Config>
     </Configs>
 </AssignedAccessConfiguration>
-``` 
+```
 
-#### Profile 
+#### Profile
 
-There are two types of profiles that you can specify in the XML: 
+There are two types of profiles that you can specify in the XML:
 
 - **Lockdown profile**: Users assigned a lockdown profile will see the desktop in tablet mode with the specific apps on the Start screen.
-- **Kiosk profile**: Starting with Windows 10 version 1803, this profile replaces the KioskModeApp node of the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp). Users assigned a kiosk profile won't see the desktop, but only the kiosk app running in full-screen mode. 
+- **Kiosk profile**: Starting with Windows 10 version 1803, this profile replaces the KioskModeApp node of the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp). Users assigned a kiosk profile won't see the desktop, but only the kiosk app running in full-screen mode.
 
-A lockdown profile section in the XML has the following entries: 
+A lockdown profile section in the XML has the following entries:
 
-- [**Id**](#id) 
+- [**Id**](#id)
 
-- [**AllowedApps**](#allowedapps) 
+- [**AllowedApps**](#allowedapps)
 
-- [**FileExplorerNamespaceRestrictions**](#fileexplorernamespacerestrictions) 
+- [**FileExplorerNamespaceRestrictions**](#fileexplorernamespacerestrictions)
 
-- [**StartLayout**](#startlayout) 
+- [**StartLayout**](#startlayout)
 
-- [**Taskbar**](#taskbar) 
+- [**Taskbar**](#taskbar)
 
-A kiosk profile in the XML has the following entries: 
+A kiosk profile in the XML has the following entries:
 
-- [**Id**](#id) 
+- [**Id**](#id)
 
-- [**KioskModeApp**](#kioskmodeapp) 
+- [**KioskModeApp**](#kioskmodeapp)
 
-##### Id 
+##### Id
 
-The profile **Id** is a GUID attribute to uniquely identify the profile. You can create a GUID using a GUID generator. The GUID just needs to be unique within this XML file. 
+The profile **Id** is a GUID attribute to uniquely identify the profile. You can create a GUID using a GUID generator. The GUID just needs to be unique within this XML file.
 
 ```xml
 <Profiles>
   <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">…</Profile>
 </Profiles>
-``` 
+```
 
-##### AllowedApps 
+##### AllowedApps
 
-**AllowedApps** is a list of applications that are allowed to run. Apps can be Universal Windows Platform (UWP) apps or Windows desktop applications. Starting with Windows 10 version 1809, you can configure a single app in the **AllowedApps** list to run automatically when the assigned access user account signs in. 
+**AllowedApps** is a list of applications that are allowed to run. Apps can be Universal Windows Platform (UWP) apps or Windows desktop applications. Starting with Windows 10 version 1809, you can configure a single app in the **AllowedApps** list to run automatically when the assigned access user account signs in.
 
 - For UWP apps, you need to provide the App User Model ID (AUMID). [Learn how to get the AUMID](./find-the-application-user-model-id-of-an-installed-app.md), or [get the AUMID from the Start Layout XML](#startlayout).
 - For desktop apps, you need to specify the full path of the executable, which can contain one or more system environment variables in the form of `%variableName%`. For example, `%systemroot%` or `%windir%`.
 - If an app has a dependency on another app, both must be included in the allowed apps list. For example, Internet Explorer 64-bit has a dependency on Internet Explorer 32-bit, so you must allow both `"C:\Program Files\internet explorer\iexplore.exe"` and `"C:\Program Files (x86)\Internet Explorer\iexplore.exe"`.
-- To configure a single app to launch automatically when the user signs in, include `rs5:AutoLaunch="true"` after the AUMID or path. You can also include arguments to be passed to the app. For an example, see [the AllowedApps sample XML](#apps-sample). 
+- To configure a single app to launch automatically when the user signs in, include `rs5:AutoLaunch="true"` after the AUMID or path. You can also include arguments to be passed to the app. For an example, see [the AllowedApps sample XML](#apps-sample).
 
-When the multi-app kiosk configuration is applied to a device, AppLocker rules will be generated to allow the apps that are listed in the configuration. Here are the predefined assigned access AppLocker rules for **UWP apps**: 
+When the multi-app kiosk configuration is applied to a device, AppLocker rules will be generated to allow the apps that are listed in the configuration. Here are the predefined assigned access AppLocker rules for **UWP apps**:
 
 1. Default rule is to allow all users to launch the signed package apps.
-2. The package app blocklist is generated at runtime when the assigned access user signs in. Based on the installed/provisioned package apps available for the user account, assigned access generates the blocklist. This list will exclude the default allowed inbox package apps, which are critical for the system to function. It then excludes the allowed packages that enterprises defined in the assigned access configuration. If there are multiple apps within the same package, all these apps will be excluded. This blocklist will be used to prevent the user from accessing the apps that are currently available for the user but not in the allowed list. 
+1. The package app blocklist is generated at runtime when the assigned access user signs in. Based on the installed/provisioned package apps available for the user account, assigned access generates the blocklist. This list will exclude the default allowed inbox package apps, which are critical for the system to function. It then excludes the allowed packages that enterprises defined in the assigned access configuration. If there are multiple apps within the same package, all these apps will be excluded. This blocklist will be used to prevent the user from accessing the apps that are currently available for the user but not in the allowed list.
 
     > [!NOTE]
     > You can't manage AppLocker rules that are generated by the multi-app kiosk configuration in [MMC snap-ins](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh994629(v=ws.11)#BKMK_Using_Snapins). Avoid creating AppLocker rules that conflict with AppLocker rules that are generated by the multi-app kiosk configuration.
     >
-    > Multi-app kiosk mode doesn't block the enterprise or the users from installing UWP apps. When a new UWP app is installed during the current assigned access user session, this app will not be in the deny list. When the user signs out and signs in again, the app will be included in the blocklist. If this is an enterprise-deployed line-of-business app and you want to allow it to run, update the assigned access configuration to include it in the allowed app list. 
+    > Multi-app kiosk mode doesn't block the enterprise or the users from installing UWP apps. When a new UWP app is installed during the current assigned access user session, this app will not be in the deny list. When the user signs out and signs in again, the app will be included in the blocklist. If this is an enterprise-deployed line-of-business app and you want to allow it to run, update the assigned access configuration to include it in the allowed app list.
 
-Here are the predefined assigned access AppLocker rules for **desktop apps**: 
+Here are the predefined assigned access AppLocker rules for **desktop apps**:
 
 1. Default rule is to allow all users to launch the desktop programs signed with Microsoft Certificate in order for the system to boot and function. The rule also allows the admin user group to launch all desktop programs.
-2. There's a predefined inbox desktop app blocklist for the assigned access user account, and this blocklist is adjusted based on the desktop app allowlist that you defined in the multi-app configuration.
-3. Enterprise-defined allowed desktop apps are added in the AppLocker allowlist. 
+1. There's a predefined inbox desktop app blocklist for the assigned access user account, and this blocklist is adjusted based on the desktop app allowlist that you defined in the multi-app configuration.
+1. Enterprise-defined allowed desktop apps are added in the AppLocker allowlist.
 
-The following example allows Groove Music, Movies & TV, Photos, Weather, Calculator, Paint, and Notepad apps to run on the device, with Notepad configured to automatically launch and create a file called `123.text` when the user signs in. 
+The following example allows Groove Music, Movies & TV, Photos, Weather, Calculator, Paint, and Notepad apps to run on the device, with Notepad configured to automatically launch and create a file called `123.text` when the user signs in.
 
-<span id="apps-sample" /> 
+<span id="apps-sample" />
 
 ```xml
 <AllAppsList>
@@ -176,16 +176,16 @@ The following example allows Groove Music, Movies & TV, Photos, Weather, Calcula
           <App DesktopAppPath="C:\Windows\System32\notepad.exe" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="123.txt">
         </AllowedApps>
 </AllAppsList>
-``` 
+```
 
-##### FileExplorerNamespaceRestrictions 
+##### FileExplorerNamespaceRestrictions
 
-Starting in Windows 10 version 1809, you can explicitly allow some known folders to be accessed when the user tries to open the file dialog box in multi-app assigned access by including **FileExplorerNamespaceRestrictions** in your XML file. Currently, **Downloads** is the only folder supported.  This behavior can also be set using Microsoft Intune. 
+Starting in Windows 10 version 1809, you can explicitly allow some known folders to be accessed when the user tries to open the file dialog box in multi-app assigned access by including **FileExplorerNamespaceRestrictions** in your XML file. Currently, **Downloads** is the only folder supported.  This behavior can also be set using Microsoft Intune.
 
-The following example shows how to allow user access to the Downloads folder in the common file dialog box. 
+The following example shows how to allow user access to the Downloads folder in the common file dialog box.
 
 > [!TIP]
-> To grant access to the Downloads folder through File Explorer, add "Explorer.exe" to the list of allowed apps, and pin a file explorer shortcut to the kiosk start menu. 
+> To grant access to the Downloads folder through File Explorer, add "Explorer.exe" to the list of allowed apps, and pin a file explorer shortcut to the kiosk start menu.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -209,34 +209,34 @@ The following example shows how to allow user access to the Downloads folder in 
         </Profile>
     </Profiles>
 </AssignedAccessConfiguration>
-``` 
+```
 
-`FileExplorerNamespaceRestriction` has been extended in current Windows 10 Prerelease for finer granularity and easier use. For more information and full samples, see [Assigned access XML reference](kiosk-xml.md). By using new elements, you can configure whether a user can access the Downloads folder or removable drives, or have no restrictions at all. 
+`FileExplorerNamespaceRestriction` has been extended in current Windows 10 Prerelease for finer granularity and easier use. For more information and full samples, see [Assigned access XML reference](kiosk-xml.md). By using new elements, you can configure whether a user can access the Downloads folder or removable drives, or have no restrictions at all.
 
 > [!NOTE]
 > - `FileExplorerNamespaceRestrictions` and `AllowedNamespace:Downloads` are available in namespace `https://schemas.microsoft.com/AssignedAccess/201810/config`.
-> - `AllowRemovableDrives` and `NoRestriction` are defined in a new namespace `https://schemas.microsoft.com/AssignedAccess/2020/config`. 
+> - `AllowRemovableDrives` and `NoRestriction` are defined in a new namespace `https://schemas.microsoft.com/AssignedAccess/2020/config`.
 
-* When `FileExplorerNamespaceRestrictions` node isn't used, or used but left empty, the user won't be able to access any folder in a common dialog. For example, **Save As** in the Microsoft Edge browser.
-* When Downloads is mentioned in allowed namespace, user will be able to access Downloads folder.
-* When `AllowRemovableDrives` is used, user will be to access removable drives.
-* When `NoRestriction` is used, no restriction will be applied to the dialog.
-* `AllowRemovableDrives` and `AllowedNamespace:Downloads` can be used at the same time. 
+- When `FileExplorerNamespaceRestrictions` node isn't used, or used but left empty, the user won't be able to access any folder in a common dialog. For example, **Save As** in the Microsoft Edge browser.
+- When Downloads is mentioned in allowed namespace, user will be able to access Downloads folder.
+- When `AllowRemovableDrives` is used, user will be to access removable drives.
+- When `NoRestriction` is used, no restriction will be applied to the dialog.
+- `AllowRemovableDrives` and `AllowedNamespace:Downloads` can be used at the same time.
 
-##### StartLayout 
+##### StartLayout
 
-After you define the list of allowed applications, you can customize the Start layout for your kiosk experience. You can choose to pin all the allowed apps on the Start screen or just a subset, depending on whether you want the end user to directly access them on the Start screen. 
+After you define the list of allowed applications, you can customize the Start layout for your kiosk experience. You can choose to pin all the allowed apps on the Start screen or just a subset, depending on whether you want the end user to directly access them on the Start screen.
 
-The easiest way to create a customized Start layout to apply to other Windows client devices is to set up the Start screen on a test device and then export the layout. For detailed steps, see [Customize and export Start layout](customize-and-export-start-layout.md). 
+The easiest way to create a customized Start layout to apply to other Windows client devices is to set up the Start screen on a test device and then export the layout. For detailed steps, see [Customize and export Start layout](../start/customize-and-export-start-layout.md).
 
-A few things to note here: 
+A few things to note here:
 
 - The test device on which you customize the Start layout should have the same OS version that is installed on the device where you plan to deploy the multi-app assigned access configuration.
 - Since the multi-app assigned access experience is intended for fixed-purpose devices, to ensure the device experiences are consistent and predictable, use the *full* Start layout option instead of the *partial* Start layout.
 - There are no apps pinned on the taskbar in the multi-app mode, and it's not supported to configure Taskbar layout using the `<CustomTaskbarLayoutCollection>` tag in a layout modification XML as part of the assigned access configuration.
-- The following example uses `DesktopApplicationLinkPath` to pin the desktop app to start. When the desktop app doesn't have a shortcut link on the target device, [learn how to provision .lnk files using Windows Configuration Designer](#lnk-files). 
+- The following example uses `DesktopApplicationLinkPath` to pin the desktop app to start. When the desktop app doesn't have a shortcut link on the target device, [learn how to provision .lnk files using Windows Configuration Designer](#lnk-files).
 
-The following example pins Groove Music, Movies & TV, Photos, Weather, Calculator, Paint, and Notepad apps on Start: 
+The following example pins Groove Music, Movies & TV, Photos, Weather, Calculator, Paint, and Notepad apps on Start:
 
 ```xml
 <StartLayout>
@@ -262,63 +262,63 @@ The following example pins Groove Music, Movies & TV, Photos, Weather, Calculato
                     </LayoutModificationTemplate>
                 ]]>
 </StartLayout>
-``` 
+```
 
 > [!NOTE]
-> If an app isn't installed for the user, but is included in the Start layout XML, the app isn't shown on the Start screen. 
+> If an app isn't installed for the user, but is included in the Start layout XML, the app isn't shown on the Start screen.
 
-![What the Start screen looks like when the XML sample is applied.](images/sample-start.png) 
+![What the Start screen looks like when the XML sample is applied.](images/sample-start.png)
 
-##### Taskbar 
+##### Taskbar
 
-Define whether you want to have the taskbar present in the kiosk device. For tablet-based or touch-enabled all-in-one kiosks, when you don't attach a keyboard and mouse, you can hide the taskbar as part of the multi-app experience if you want. 
+Define whether you want to have the taskbar present in the kiosk device. For tablet-based or touch-enabled all-in-one kiosks, when you don't attach a keyboard and mouse, you can hide the taskbar as part of the multi-app experience if you want.
 
-The following example exposes the taskbar to the end user: 
+The following example exposes the taskbar to the end user:
 
 ```xml
 <Taskbar ShowTaskbar="true"/>
-``` 
+```
 
-The following example hides the taskbar: 
+The following example hides the taskbar:
 
 ```xml
 <Taskbar ShowTaskbar="false"/>
-``` 
+```
 
 > [!NOTE]
-> This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden. 
+> This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden.
 
-##### KioskModeApp 
+##### KioskModeApp
 
-**KioskModeApp** is used for a [kiosk profile](#profile) only. Enter the AUMID for a single app. You can only specify one kiosk profile in the XML. 
+**KioskModeApp** is used for a [kiosk profile](#profile) only. Enter the AUMID for a single app. You can only specify one kiosk profile in the XML.
 
 ```xml
 <KioskModeApp AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"/>
-``` 
+```
 
 > [!IMPORTANT]
-> The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Microsoft Entra account could potentially compromise confidential information.   
+> The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Microsoft Entra account could potentially compromise confidential information.
 
-#### Configs 
+#### Configs
 
-Under **Configs**, define which user account will be associated with the profile. When this user account signs in on the device, the associated assigned access profile will be enforced. This behavior includes the allowed apps, Start layout, taskbar configuration, and other local group policies or mobile device management (MDM) policies set as part of the multi-app experience. 
+Under **Configs**, define which user account will be associated with the profile. When this user account signs in on the device, the associated assigned access profile will be enforced. This behavior includes the allowed apps, Start layout, taskbar configuration, and other local group policies or mobile device management (MDM) policies set as part of the multi-app experience.
 
-The full multi-app assigned access experience can only work for non-admin users. It's not supported to associate an admin user with the assigned access profile. Making this configuration in the XML file will result in unexpected or unsupported experiences when this admin user signs in. 
+The full multi-app assigned access experience can only work for non-admin users. It's not supported to associate an admin user with the assigned access profile. Making this configuration in the XML file will result in unexpected or unsupported experiences when this admin user signs in.
 
-You can assign: 
+You can assign:
 
 - [A local standard user account that signs in automatically](#config-for-autologon-account) (Applies to Windows 10, version 1803 only)
 - [An individual account, which can be local, domain, or Microsoft Entra ID](#config-for-individual-accounts)
-- [A group account, which can be local, Active Directory (domain), or Microsoft Entra ID](#config-for-group-accounts) (Applies to Windows 10, version 1803 only). 
+- [A group account, which can be local, Active Directory (domain), or Microsoft Entra ID](#config-for-group-accounts) (Applies to Windows 10, version 1803 only).
 
 > [!NOTE]
-> Configs that specify group accounts cannot use a kiosk profile, only a lockdown profile. If a group is configured to a kiosk profile, the CSP will reject the request. 
+> Configs that specify group accounts cannot use a kiosk profile, only a lockdown profile. If a group is configured to a kiosk profile, the CSP will reject the request.
 
-##### Config for AutoLogon Account 
+##### Config for AutoLogon Account
 
-When you use `<AutoLogonAccount>` and the configuration is applied to a device, the specified account (managed by Assigned Access) is created on the device as a local standard user account. The specified account is signed in automatically after restart. 
+When you use `<AutoLogonAccount>` and the configuration is applied to a device, the specified account (managed by Assigned Access) is created on the device as a local standard user account. The specified account is signed in automatically after restart.
 
-The following example shows how to specify an account to sign in automatically. 
+The following example shows how to specify an account to sign in automatically.
 
 ```xml
 <Configs>
@@ -327,9 +327,9 @@ The following example shows how to specify an account to sign in automatically.
     <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
   </Config>
 </Configs>
-``` 
+```
 
-Starting with Windows 10 version 1809, you can configure the display name that will be shown when the user signs in. The following example shows how to create an AutoLogon Account that shows the name "Hello World". 
+Starting with Windows 10 version 1809, you can configure the display name that will be shown when the user signs in. The following example shows how to create an AutoLogon Account that shows the name "Hello World".
 
 ```xml
 <Configs>
@@ -338,28 +338,28 @@ Starting with Windows 10 version 1809, you can configure the display name that w
     <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
   </Config>
 </Configs>
-``` 
+```
 
-On domain-joined devices, local user accounts aren't shown on the sign-in screen by default. To show the **AutoLogonAccount** on the sign-in screen, enable the following Group Policy setting: **Computer Configuration > Administrative Templates > System > Logon > Enumerate local users on domain-joined computers**. (The corresponding MDM policy setting is [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers in the Policy CSP](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-enumeratelocalusersondomainjoinedcomputers).) 
+On domain-joined devices, local user accounts aren't shown on the sign-in screen by default. To show the **AutoLogonAccount** on the sign-in screen, enable the following Group Policy setting: **Computer Configuration > Administrative Templates > System > Logon > Enumerate local users on domain-joined computers**. (The corresponding MDM policy setting is [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers in the Policy CSP](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-enumeratelocalusersondomainjoinedcomputers).)
 
 > [!IMPORTANT]
-> When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon). 
+> When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon).
 
-##### Config for individual accounts 
+##### Config for individual accounts
 
-Individual accounts are specified using `<Account>`. 
+Individual accounts are specified using `<Account>`.
 
 - Local account can be entered as `machinename\account` or `.\account` or just `account`.
 - Domain account should be entered as `domain\account`.
-- Microsoft Entra account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided _as is_, and consider it's a fixed domain name. Then follow with the Microsoft Entra ID email address. For example, `AzureAD\someone@contoso.onmicrosoft.com` 
+- Microsoft Entra account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided _as is_, and consider it's a fixed domain name. Then follow with the Microsoft Entra ID email address. For example, `AzureAD\someone@contoso.onmicrosoft.com`
 
 > [!WARNING]
-> Assigned access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account.  However, use of domain user or service accounts introduces risks that an attacker subverting the assigned access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so. 
+> Assigned access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account.  However, use of domain user or service accounts introduces risks that an attacker subverting the assigned access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
 
-Before applying the multi-app configuration, make sure the specified user account is available on the device, otherwise it will fail. 
+Before applying the multi-app configuration, make sure the specified user account is available on the device, otherwise it will fail.
 
 > [!NOTE]
-> For both domain and Microsoft Entra accounts, it's not required that target account is explicitly added to the device. As long as the device is AD-joined or Microsoft Entra joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for assigned access. 
+> For both domain and Microsoft Entra accounts, it's not required that target account is explicitly added to the device. As long as the device is AD-joined or Microsoft Entra joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for assigned access.
 
 ```xml
 <Configs>
@@ -368,54 +368,54 @@ Before applying the multi-app configuration, make sure the specified user accoun
     <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
   </Config>
 </Configs>
-``` 
+```
 
-##### Config for group accounts 
+##### Config for group accounts
 
-Group accounts are specified using `<UserGroup>`. Nested groups aren't supported. For example, if user A is member of Group 1, Group 1 is member of Group 2, and Group 2 is used in `<Config/>`, user A won't have the kiosk experience. 
+Group accounts are specified using `<UserGroup>`. Nested groups aren't supported. For example, if user A is member of Group 1, Group 1 is member of Group 2, and Group 2 is used in `<Config/>`, user A won't have the kiosk experience.
 
-- Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. Any Microsoft Entra accounts that are added to the local group won't have the kiosk settings applied. 
+- Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. Any Microsoft Entra accounts that are added to the local group won't have the kiosk settings applied.
 
   ```xml
   <Config>
     <UserGroup Type="LocalGroup" Name="mygroup" />
     <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
   </Config>
-  ``` 
+  ```
 
-- Domain group: Both security and distribution groups are supported. Specify the group type as <strong>ActiveDirectoryGroup</strong>. Use the domain name as the prefix in the name attribute. 
+- Domain group: Both security and distribution groups are supported. Specify the group type as <strong>ActiveDirectoryGroup</strong>. Use the domain name as the prefix in the name attribute.
 
   ```xml
   <Config>
     <UserGroup Type="ActiveDirectoryGroup" Name="mydomain\mygroup" />
     <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
   </Config>
-  ``` 
+  ```
 
-- Microsoft Entra group: Use the group object ID from the Azure portal to uniquely identify the group in the Name attribute. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as **AzureActiveDirectoryGroup**. The kiosk device must have internet connectivity when users that belong to the group sign-in. 
+- Microsoft Entra group: Use the group object ID from the Azure portal to uniquely identify the group in the Name attribute. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as **AzureActiveDirectoryGroup**. The kiosk device must have internet connectivity when users that belong to the group sign-in.
 
   ```xml
   <Config>
     <UserGroup Type="AzureActiveDirectoryGroup" Name="a8d36e43-4180-4ac5-a627-fb8149bba1ac" />
     <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
   </Config>
-  ``` 
+  ```
 
   > [!NOTE]
-  > If a Microsoft Entra group is configured with a lockdown profile on a device, a user in the Microsoft Entra group must change their password (after the account has been created with default password on the portal) before they can sign in to this device. If the user uses the default password to sign in to the device, the user will be immediately signed out. 
+  > If a Microsoft Entra group is configured with a lockdown profile on a device, a user in the Microsoft Entra group must change their password (after the account has been created with default password on the portal) before they can sign in to this device. If the user uses the default password to sign in to the device, the user will be immediately signed out.
 
-<span id="add-xml" /> 
+<span id="add-xml" />
 
-#### [Preview] Global profile 
+#### [Preview] Global profile
 
-Global profile is available in Windows 10. If you want everyone who signs into a specific device to be assigned as an access user, even if there's no dedicated profile for that user. Alternatively, perhaps Assigned Access couldn't identify a profile for the user and you want to have a fallback profile. Global profile is designed for these scenarios. 
+Global profile is available in Windows 1. If you want everyone who signs into a specific device to be assigned as an access user, even if there's no dedicated profile for that user. Alternatively, perhaps Assigned Access couldn't identify a profile for the user and you want to have a fallback profile. Global profile is designed for these scenarios.
 
-Usage is demonstrated below, by using the new XML namespace and specifying `GlobalProfile` from that namespace. When you configure `GlobalProfile`, a non-admin account logs in, if this user doesn't have a designated profile in Assigned Access, or Assigned Access fails to determine a profile for current user, a global profile is applied for the user. 
+Usage is demonstrated below, by using the new XML namespace and specifying `GlobalProfile` from that namespace. When you configure `GlobalProfile`, a non-admin account logs in, if this user doesn't have a designated profile in Assigned Access, or Assigned Access fails to determine a profile for current user, a global profile is applied for the user.
 
 > [!NOTE]
 > 1. `GlobalProfile` can only be a multi-app profile.
-> 2. Only one `GlobalProfile` can be used in one `AssignedAccess` configuration XML.
-> 3. `GlobalProfile` can be used as the only config, or it can be used along with regular user or group config. 
+> 1. Only one `GlobalProfile` can be used in one `AssignedAccess` configuration XML.
+> 1. `GlobalProfile` can be used as the only config, or it can be used along with regular user or group config.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -445,7 +445,7 @@ Usage is demonstrated below, by using the new XML namespace and specifying `Glob
                               <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
-                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
+                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only
 
                                    see document https://learn.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
@@ -467,9 +467,9 @@ Usage is demonstrated below, by using the new XML namespace and specifying `Glob
         <v3:GlobalProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
     </Configs>
 </AssignedAccessConfiguration>
-``` 
+```
 
-### Add XML file to provisioning package 
+### Add XML file to provisioning package
 
 Before you add the XML file to a provisioning package, you can [validate your configuration XML against the XSD](kiosk-xml.md#xsd-for-assignedaccess-configuration-xml).
 
@@ -480,102 +480,102 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 1. Open Windows Configuration Designer. By default: `%systemdrive%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe`.
 
-2. Choose **Advanced provisioning**. 
+1. Choose **Advanced provisioning**.
 
-3. Name your project, and select **Next**. 
+1. Name your project, and select **Next**.
 
-4. Choose **All Windows desktop editions** and select **Next**. 
+1. Choose **All Windows desktop editions** and select **Next**.
 
-5. On **New project**, select **Finish**. The workspace for your package opens. 
+1. On **New project**, select **Finish**. The workspace for your package opens.
 
-6. Expand **Runtime settings** &gt; **AssignedAccess** &gt; **MultiAppAssignedAccessSettings**. 
+1. Expand **Runtime settings** &gt; **AssignedAccess** &gt; **MultiAppAssignedAccessSettings**.
 
-7. In the center pane, select **Browse**. Locate and select the assigned access configuration XML file that you created. 
+1. In the center pane, select **Browse**. Locate and select the assigned access configuration XML file that you created.
 
-   ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer.](images/multiappassignedaccesssettings.png) 
+   ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer.](images/multiappassignedaccesssettings.png)
 
-8. _Optional: If you want to apply the provisioning package after device initial setup and there's an admin user already available on the kiosk device, skip this step._ Create an admin user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Provide a **UserName** and **Password**, and select **UserGroup** as **Administrators**. With this account, you can view the provisioning status and logs if needed. 
+1. _Optional: If you want to apply the provisioning package after device initial setup and there's an admin user already available on the kiosk device, skip this step._ Create an admin user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Provide a **UserName** and **Password**, and select **UserGroup** as **Administrators**. With this account, you can view the provisioning status and logs if needed.
 
-9. _Optional: If you already have a non-admin account on the kiosk device, skip this step._ Create a local standard user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Make sure the **UserName** is the same as the account that you specify in the configuration XML. Select **UserGroup** as **Standard Users**. 
+1. _Optional: If you already have a non-admin account on the kiosk device, skip this step._ Create a local standard user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Make sure the **UserName** is the same as the account that you specify in the configuration XML. Select **UserGroup** as **Standard Users**.
 
-10. On the **File** menu, select **Save.** 
+1. On the **File** menu, select **Save.**
 
-11. On the **Export** menu, select **Provisioning package**. 
+1. On the **Export** menu, select **Provisioning package**.
 
-12. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.** 
+1. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
 
-13. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing. 
+1. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
 
-    - **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen. 
+    - **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
 
-    - **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Browse** and choosing the certificate you want to use to sign the package. 
+    - **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Browse** and choosing the certificate you want to use to sign the package.
 
-14. Select **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Imaging and Configuration Designer (ICD) uses the project folder as the output location. 
+1. Select **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Imaging and Configuration Designer (ICD) uses the project folder as the output location.
 
-    Optionally, you can select **Browse** to change the default output location. 
+    Optionally, you can select **Browse** to change the default output location.
 
-15. Select **Next**. 
+1. Select **Next**.
 
-16. Select **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status. 
+1. Select **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status.
 
-    If you need to cancel the build, select **Cancel**. This action cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**. 
+    If you need to cancel the build, select **Cancel**. This action cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
 
-17. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again. 
+1. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
 
-    If your build is successful, the name of the provisioning package, output directory, and project directory will be shown. 
+    If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
 
     - If you choose, you can build the provisioning package again and pick a different path for the output package. To do this action, select **Back** to change the output package name and path, and then select **Next** to start another build.
-    - If you're done, select **Finish** to close the wizard and go back to the **Customizations Page**. 
+    - If you're done, select **Finish** to close the wizard and go back to the **Customizations Page**.
 
-18. Copy the provisioning package to the root directory of a USB drive. 
+1. Copy the provisioning package to the root directory of a USB drive.
 
-<span id="apply-ppkg" /> 
+<span id="apply-ppkg" />
 
-### Apply provisioning package to device 
+### Apply provisioning package to device
 
-Provisioning packages can be applied to a device during initial setup (out-of-box experience or "OOBE") and after ("runtime"). For more information, see [Apply a provisioning package](./provisioning-packages/provisioning-apply-package.md). 
+Provisioning packages can be applied to a device during initial setup (out-of-box experience or "OOBE") and after ("runtime"). For more information, see [Apply a provisioning package](../provisioning-packages/provisioning-apply-package.md).
 
 > [!NOTE]
-> If your provisioning package doesn't include the assigned access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device. 
+> If your provisioning package doesn't include the assigned access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device.
 
-### Use MDM to deploy the multi-app configuration 
+### Use MDM to deploy the multi-app configuration
 
-Multi-app kiosk mode is enabled by the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp). Your MDM policy can contain the assigned access configuration XML. 
+Multi-app kiosk mode is enabled by the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp). Your MDM policy can contain the assigned access configuration XML.
 
-If your device is enrolled with an MDM service that supports applying the assigned access configuration, you can use it to apply the setting remotely. 
+If your device is enrolled with an MDM service that supports applying the assigned access configuration, you can use it to apply the setting remotely.
 
-The OMA-URI for multi-app policy is `./Device/Vendor/MSFT/AssignedAccess/Configuration`. 
+The OMA-URI for multi-app policy is `./Device/Vendor/MSFT/AssignedAccess/Configuration`.
 
-## Considerations for Windows Mixed Reality immersive headsets 
+## Considerations for Windows Mixed Reality immersive headsets
 
-With the advent of [mixed reality devices (video link)](https://www.youtube.com/watch?v=u0jqNioU2Lo), you might want to create a kiosk that can run mixed reality apps. 
+With the advent of [mixed reality devices (video link)](https://www.youtube.com/watch?v=u0jqNioU2Lo), you might want to create a kiosk that can run mixed reality apps.
 
-To create a multi-app kiosk that can run mixed reality apps, you must include the following apps in the [AllowedApps list](#allowedapps): 
+To create a multi-app kiosk that can run mixed reality apps, you must include the following apps in the [AllowedApps list](#allowedapps):
 
 ```xml
 <App AppUserModelId="MixedRealityLearning_cw5n1h2txyewy!MixedRealityLearning" />
 <App AppUserModelId="HoloShell_cw5n1h2txyewy!HoloShell" />
 <App AppUserModelId="Microsoft.Windows.HolographicFirstRun_cw5n1h2txyewy!App" />
 <App AppUserModelId="Microsoft.MixedReality.Portal_8wekyb3d8bbwe!App" />
-``` 
+```
 
-These apps are in addition to any mixed reality apps that you allow. 
+These apps are in addition to any mixed reality apps that you allow.
 
-**Before your kiosk user signs in:** An admin user must sign in to the PC, connect a mixed reality device, and complete the guided setup for the Mixed Reality Portal. The first time that the Mixed Reality Portal is set up, some files and content are downloaded. A kiosk user wouldn't have permissions to download and so their setup of the Mixed Reality Portal would fail. 
+**Before your kiosk user signs in:** An admin user must sign in to the PC, connect a mixed reality device, and complete the guided setup for the Mixed Reality Portal. The first time that the Mixed Reality Portal is set up, some files and content are downloaded. A kiosk user wouldn't have permissions to download and so their setup of the Mixed Reality Portal would fail.
 
-After the admin has completed setup, the kiosk account can sign in and repeat the setup. The admin user may want to complete the kiosk user setup before providing the PC to employees or customers. 
+After the admin has completed setup, the kiosk account can sign in and repeat the setup. The admin user may want to complete the kiosk user setup before providing the PC to employees or customers.
 
-There's a difference between the mixed reality experiences for a kiosk user and other users. Typically, when a user connects a mixed reality device, they begin in the [Mixed Reality home](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home). The Mixed Reality home is a shell that runs in "silent" mode when the PC is configured as a kiosk. When a kiosk user connects a mixed reality device, they'll see only a blank display in the device, and won't have access to the features and functionality available in the home. To run a mixed reality app, the kiosk user must launch the app from the PC Start screen. 
+There's a difference between the mixed reality experiences for a kiosk user and other users. Typically, when a user connects a mixed reality device, they begin in the [Mixed Reality home](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home). The Mixed Reality home is a shell that runs in "silent" mode when the PC is configured as a kiosk. When a kiosk user connects a mixed reality device, they'll see only a blank display in the device, and won't have access to the features and functionality available in the home. To run a mixed reality app, the kiosk user must launch the app from the PC Start screen.
 
-## Policies set by multi-app kiosk configuration 
+## Policies set by multi-app kiosk configuration
 
-It's not recommended to set policies enforced in assigned access multi-app mode to different values using other channels, as the multi-app mode has been optimized to provide a locked-down experience. 
+It's not recommended to set policies enforced in assigned access multi-app mode to different values using other channels, as the multi-app mode has been optimized to provide a locked-down experience.
 
-When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will affect other users on the device. 
+When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will affect other users on the device.
 
-### Group policy 
+### Group policy
 
-The following local policies affect all **non-administrator** users on the system, regardless whether the user is configured as an assigned access user or not. This list includes local users, domain users, and Microsoft Entra users. 
+The following local policies affect all **non-administrator** users on the system, regardless whether the user is configured as an assigned access user or not. This list includes local users, domain users, and Microsoft Entra users.
 
 | Setting | Value |
 | --- | --- |
@@ -604,14 +604,14 @@ Remove Task Manager |       Enabled
 Remove Change Password option in Security Options UI |      Enabled
 Remove Sign Out option in Security Options UI    |  Enabled
 Remove All Programs list from the Start Menu     |  Enabled - Remove and disable setting
-Prevent access to drives from My Computer    |  Enabled - Restrict all drivers 
+Prevent access to drives from My Computer    |  Enabled - Restrict all drivers
 
 > [!NOTE]
-> When **Prevent access to drives from My Computer** is enabled, users can browse the directory structure in File Explorer, but they cannot open folders and access the contents. Also, they cannot use the **Run** dialog box or the **Map Network Drive** dialog box to view the directories on these drives. The icons representing the specified drives still appear in File Explorer, but if users double-click the icons, a message appears explaining that a setting prevents the action. This setting does not prevent users from using programs to access local and network drives. It does not prevent users from using the Disk Management snap-in to view and change drive characteristics. 
+> When **Prevent access to drives from My Computer** is enabled, users can browse the directory structure in File Explorer, but they cannot open folders and access the contents. Also, they cannot use the **Run** dialog box or the **Map Network Drive** dialog box to view the directories on these drives. The icons representing the specified drives still appear in File Explorer, but if users double-click the icons, a message appears explaining that a setting prevents the action. This setting does not prevent users from using programs to access local and network drives. It does not prevent users from using the Disk Management snap-in to view and change drive characteristics.
 
-### MDM policy 
+### MDM policy
 
-Some of the MDM policies based on the [Policy configuration service provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider) affect all users on the system. 
+Some of the MDM policies based on the [Policy configuration service provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider) affect all users on the system.
 
 Setting |   Value   | System-wide
  --- | --- | ---
@@ -631,30 +631,30 @@ Start/DisableContextMenus | 1 - Context menus are hidden for Start apps | No
 [Start/HideChangeAccountSettings](/windows/client-management/mdm/policy-csp-start#start-hidechangeaccountsettings)        | 1 - True (hide) | Yes
 [WindowsInkWorkspace/AllowWindowsInkWorkspace](/windows/client-management/mdm/policy-csp-windowsinkworkspace#windowsinkworkspace-allowwindowsinkworkspace)    |   0 - Access to ink workspace is disabled and the feature is turned off   |   Yes
 [Start/StartLayout](/windows/client-management/mdm/policy-csp-start#start-startlayout)    | Configuration dependent   |   No
-[WindowsLogon/DontDisplayNetworkSelectionUI](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui)   |   &lt;Enabled/&gt;    |   Yes 
+[WindowsLogon/DontDisplayNetworkSelectionUI](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui)   |   &lt;Enabled/&gt;    |   Yes
 
-<span id="lnk-files" /> 
+<span id="lnk-files" />
 
-## Provision .lnk files using Windows Configuration Designer 
+## Provision .lnk files using Windows Configuration Designer
 
-First, create your desktop app's shortcut file by installing the app on a test device, using the default installation location. Right-click the installed application, and choose **Send to** > **Desktop (create shortcut)**. Rename the shortcut to `<appName>.lnk` 
+First, create your desktop app's shortcut file by installing the app on a test device, using the default installation location. Right-click the installed application, and choose **Send to** > **Desktop (create shortcut)**. Rename the shortcut to `<appName>.lnk`
 
-Next, create a batch file with two commands. If the desktop app is already installed on the target device, skip the first command for MSI install. 
+Next, create a batch file with two commands. If the desktop app is already installed on the target device, skip the first command for MSI install.
 
 ```PowerShell
 msiexec /I "<appName>.msi" /qn /norestart
 copy <appName>.lnk "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\<appName>.lnk"
-``` 
+```
 
-In Windows Configuration Designer, under **ProvisioningCommands** > **DeviceContext**: 
+In Windows Configuration Designer, under **ProvisioningCommands** > **DeviceContext**:
 
-- Under **CommandFiles**, upload your batch file, your .lnk file, and your desktop app installation file. 
+- Under **CommandFiles**, upload your batch file, your .lnk file, and your desktop app installation file.
 
   > [!IMPORTANT]
-  > Paste the full file path to the .lnk file in the **CommandFiles** field. If you browse to and select the .lnk file, the file path will be changed to the path of the target of the .lnk. 
+  > Paste the full file path to the .lnk file in the **CommandFiles** field. If you browse to and select the .lnk file, the file path will be changed to the path of the target of the .lnk.
 
-- Under **CommandLine**, enter `cmd /c *FileName*.bat`. 
+- Under **CommandLine**, enter `cmd /c *FileName*.bat`.
 
-## Other methods 
+## Other methods
 
 Environments that use WMI can use the [MDM Bridge WMI Provider to configure a kiosk](kiosk-mdm-bridge.md).

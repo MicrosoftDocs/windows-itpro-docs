@@ -4,7 +4,6 @@ description: This section describes the NetworkProxy settings that you can confi
 
 ms.topic: reference
 
-
 ms.date: 12/31/2017
 ---
 
@@ -17,7 +16,6 @@ Use for settings related to NetworkProxy.
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
 | All settings |   | ✅ |  |  |
-
 
 ## AutoDetect
 
@@ -38,11 +36,9 @@ Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same
 | ProxyExceptions | Addresses that shouldn't use the proxy server. The system won't use the proxy server for addresses that begin with the values specified in this node. Use semicolons (;) to separate entries. |
 | UseProxyForLocalAddresses | Whether the proxy server should be used for local (intranet) addresses.</br></br>- 0 = Disabled. Don't use the proxy server for local addresses.</br>- 1 = Enabled. Use the proxy server for local addresses.  |
 
-
 ## SetupScriptUrl
 
 Address to the PAC script you want to use.
-
 
 ## Related topics
 

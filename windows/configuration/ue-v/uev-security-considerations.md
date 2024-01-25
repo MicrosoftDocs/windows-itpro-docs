@@ -61,7 +61,7 @@ User settings data is vulnerable to these potential threats: interception of the
 
 As of Windows Server 2003, several features of the Windows Server operating system can help secure user data:
 
-- **Kerberos** - Kerberos is standard on all versions of Microsoft Windows 2000 Server and Windows Server beginning with Windows Server 2003. Kerberos ensures the highest level of security to network resources. NTLM authenticates the client only; Kerberos authenticates the server and the client. When NTLM is used, the client doesn't know whether the server is valid. This difference is important if the client exchanges personal files with the server, as is the case with Roaming User Profiles. Kerberos provides better security than NTLM. Kerberos isn't available on the Microsoft Windows NT Server 4.0 or earlier operating systems.
+- **Kerberos** - Kerberos is standard on all versions of Microsoft Windows 2000 Server and Windows Server beginning with Windows Server 2001. Kerberos ensures the highest level of security to network resources. NTLM authenticates the client only; Kerberos authenticates the server and the client. When NTLM is used, the client doesn't know whether the server is valid. This difference is important if the client exchanges personal files with the server, as is the case with Roaming User Profiles. Kerberos provides better security than NTLM. Kerberos isn't available on the Microsoft Windows NT Server 4.0 or earlier operating systems.
 
 - **IPsec** - The IP Security Protocol (IPsec) provides network-level authentication, data integrity, and encryption. IPsec ensures that:
 

@@ -13,7 +13,7 @@ To synchronize Office applications settings, you can download Office templates f
 
 ## Microsoft Office support in UE-V
 
-UE-V includes settings location templates for Microsoft Office 2016, 2013, and 2010. In previous versions of UE-V, settings location templates for Office 2013 and Office 2010 were distributed and registered when you installed the UE-V agent. Now that UE-V is a feature in Windows 10, version 1607, settings location templates are installed when you install or upgrade to the new operating system.  
+UE-V includes settings location templates for Microsoft Office 2016, 2013, and 201. In previous versions of UE-V, settings location templates for Office 2013 and Office 2010 were distributed and registered when you installed the UE-V agent. Now that UE-V is a feature in Windows 10, version 1607, settings location templates are installed when you install or upgrade to the new operating system.
 
 These templates help synchronize users' Office experience between devices. Microsoft Office 2016 settings roamed by Office 365 experience aren't included in these settings. For a list of Office 365-specific settings, see [Overview of user and roaming settings for Office](/previous-versions/office/office-2013-resource-kit/jj733593(v=office.15)).
 

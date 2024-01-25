@@ -35,9 +35,9 @@ For a more secure kiosk experience, we recommend that you make the following con
   - **Use the registry**:
 
     1. Open Registry Editor (regedit).
-    2. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`.
-    3. Create a **New** > **DWORD (32-bit) Value**. Enter `SetUpdateNotificationLevel`, and set its value to `1`.
-    4. Create a **New** > **DWORD (32-bit) Value**. Enter `UpdateNotificationLevel`. For value, you can enter:
+    1. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`.
+    1. Create a **New** > **DWORD (32-bit) Value**. Enter `SetUpdateNotificationLevel`, and set its value to `1`.
+    1. Create a **New** > **DWORD (32-bit) Value**. Enter `UpdateNotificationLevel`. For value, you can enter:
         - `1`: Hides all notifications except restart warnings.
         - `2`: Hides all notifications, including restart warnings.
 
@@ -57,8 +57,8 @@ For a more secure kiosk experience, we recommend that you make the following con
 - **Replace "blue screen" with blank screen for OS errors**. To enable this feature, use the Registry Editor:
 
   1. Open Registry Editor (regedit).
-  2. Go to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl`.
-  3. Create a **New** > **DWORD (32-bit) Value**. Enter `DisplayDisabled`, and set its value to `1`.
+  1. Go to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl`.
+  1. Create a **New** > **DWORD (32-bit) Value**. Enter `DisplayDisabled`, and set its value to `1`.
 
 - **Put device in "Tablet mode"**. If you want users to use the touch screen, without using a keyboard or mouse, then turn on tablet mode using the Settings app. If users won't interact with the kiosk, such as for a digital sign, then don't turn on this setting.
 
@@ -68,12 +68,12 @@ For a more secure kiosk experience, we recommend that you make the following con
 
   - Use the **Settings** app:
     1. Open the **Settings** app.
-    2. Go to **System** > **Tablet mode**.
-    3. Configure the settings you want.
+    1. Go to **System** > **Tablet mode**.
+    1. Configure the settings you want.
 
   - Use the **Action Center**:
     1. On your device, swipe in from the left.
-    2. Select **Tablet mode**.
+    1. Select **Tablet mode**.
 
 - **Hide "Ease of access" feature on the sign-in screen**: To enable this feature, you have the following options:
 
@@ -84,9 +84,9 @@ For a more secure kiosk experience, we recommend that you make the following con
 
   - **Use the Settings app**:
     1. Open the **Settings** app.
-    2. Go to **System** > **Power & Sleep** > **Additional power settings** > **Choose what the power button does**.
-    3. Select **Do nothing**.
-    4. **Save changes**.
+    1. Go to **System** > **Power & Sleep** > **Additional power settings** > **Choose what the power button does**.
+    1. Select **Do nothing**.
+    1. **Save changes**.
 
   - **Use Group Policy**: Your options:
 
@@ -127,8 +127,8 @@ For a more secure kiosk experience, we recommend that you make the following con
   - **Use the Settings app**:
 
     1. Open the **Settings** app.
-    2. Go to **Privacy** > **Camera**.
-    3. Select **Allow apps use my camera** > **Off**.
+    1. Go to **Privacy** > **Camera**.
+    1. Select **Allow apps use my camera** > **Off**.
 
   - **Use Group Policy**: `Computer Configuration\Administrative Templates\Windows Components\Camera: Allow use of camera`: Select **Disabled**.
 
@@ -144,8 +144,8 @@ For a more secure kiosk experience, we recommend that you make the following con
   - **Use the Settings app**:
 
     1. Open the **Settings** app.
-    2. Go to **System** > **Notifications & actions**.
-    3. In **Show notifications on the lock screen**, select **Off**.
+    1. Go to **System** > **Notifications & actions**.
+    1. In **Show notifications on the lock screen**, select **Off**.
 
   - **Use Group policy**:
     - `Computer Configuration\Administrative Templates\System\Logon\Turn off app notifications on the lock screen`: Select **Enabled**.
@@ -207,7 +207,6 @@ You may also want to set up **automatic logon** for your kiosk device. When your
 > [!TIP]
 > If you use the [kiosk wizard in Windows Configuration Designer](kiosk-single-app.md#wizard) or [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) to configure your kiosk, you can set an account to sign in automatically in the wizard or XML.
 
-
 **How to edit the registry to have an account sign in automatically**
 
 1. Open Registry Editor (regedit.exe).
@@ -215,14 +214,11 @@ You may also want to set up **automatic logon** for your kiosk device. When your
    > [!NOTE]
    > If you are not familiar with Registry Editor, [learn how to modify the Windows registry](/troubleshoot/windows-server/performance/windows-registry-advanced-users).
 
-
-
-
-2. Go to
+1. Go to
 
    **HKEY\_LOCAL\_MACHINE\SOFTWARE\\Microsoft\Windows NT\CurrentVersion\Winlogon**
 
-3. Set the values for the following keys.
+1. Set the values for the following keys.
 
    - *AutoAdminLogon*: set value as **1**.
 
@@ -235,7 +231,7 @@ You may also want to set up **automatic logon** for your kiosk device. When your
 
    - *DefaultDomainName*: set value for domain, only for domain accounts. For local accounts, don't add this key.
 
-4. Close Registry Editor. The next time the computer restarts, the account will sign in automatically.
+1. Close Registry Editor. The next time the computer restarts, the account will sign in automatically.
 
 > [!TIP]
 > You can also configure automatic sign-in [using the Autologon tool from Sysinternals](/sysinternals/downloads/autologon).

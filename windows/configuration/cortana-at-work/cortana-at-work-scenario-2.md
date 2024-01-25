@@ -3,17 +3,17 @@ title: Perform a quick search with Cortana at work (Windows)
 description: This scenario is a test scenario about how to perform a quick search with Cortana at work.
 ms.date: 10/05/2017
 ms.topic: article
---- 
+---
 
 # Test scenario 2 - Perform a Bing search with Cortana
 <!--Using include for Cortana in Windows deprecation -->
-[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)] 
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
-1. Select the  **Cortana**  icon in the taskbar. 
+1. Select the  **Cortana**  icon in the taskbar.
 
-2. Type **What time is it in Hyderabad?**. 
+1. Type **What time is it in Hyderabad?**.
 
-Cortana will respond with the information from Bing. 
+Cortana will respond with the information from Bing.
 
 :::image type="content" source="images/screenshot5.png" alt-text="Screenshot: Cortana showing current time in Hyderabad":::
 

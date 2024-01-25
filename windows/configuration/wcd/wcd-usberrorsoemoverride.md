@@ -4,15 +4,12 @@ description: This section describes the UsbErrorsOEMOverride settings that you c
 
 ms.topic: reference
 
-
 ms.date: 12/31/2017
 ---
 
 # UsbErrorsOEMOverride (reference)
 
-
 Allows an OEM to hide the USB option UI in Settings and all USB device errors.
-
 
 ## Applies to
 

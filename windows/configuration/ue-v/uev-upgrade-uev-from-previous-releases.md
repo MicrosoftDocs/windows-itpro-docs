@@ -33,7 +33,7 @@ After upgrading a user device to Windows 10, version 1607, it's important to ver
 1. Type **Get-UEVTemplate** and press ENTER to check that your templates are still registered.
 
     > [!NOTE]
-    > You'll need to register the NotePad template again after you upgrade the device to Windows 10. 
+    > You'll need to register the NotePad template again after you upgrade the device to Windows 1.
 
 **To verify UE-V settings using the device's registry**
 
@@ -47,9 +47,9 @@ Template Settings Storage Path will not automatically migrate. Run Set-UEVConfig
 
 ## Enable the UE-V service on user devices
 
-The UE-V service is the client-side component that captures user-personalized application and Windows settings and saves them in settings packages. Settings packages are built, locally stored, and copied to the settings storage location. 
+The UE-V service is the client-side component that captures user-personalized application and Windows settings and saves them in settings packages. Settings packages are built, locally stored, and copied to the settings storage location.
 
-With Windows 10, version 1607 and later, the UE-V service replaces the UE-V Agent and no longer requires a separate download and installation. Enable the service on user devices to start using UE-V. You can enable the service with the Group Policy editor or with Windows PowerShell. 
+With Windows 10, version 1607 and later, the UE-V service replaces the UE-V Agent and no longer requires a separate download and installation. Enable the service on user devices to start using UE-V. You can enable the service with the Group Policy editor or with Windows PowerShell.
 
 > [!IMPORTANT]
 > The UE-V Agent used in prior releases of UE-V is replaced with the UE service. The UE-V service included with Windows 10, version 1607 and later releases, does not include the agent user interface and is configurable through cmdlets or registry settings only.

@@ -55,7 +55,6 @@ The default value is **17**, which disables all Welcome screen UI elements and t
 | 16 | Disables the Switch user button |
 | 32 | Disables the blocked shutdown resolver (BSDR) screen. Restarting or shutting down the system causes the OS to immediately force close any applications that are blocking the system shutdown. No UI is displayed, and users aren't given a chance to cancel the shutdown process. This value can result in a loss of data if any open applications have unsaved data. |
 
-
 ## CrashDumpEnabled values
 
 If the system stops unexpectedly, choose the type of information to capture in a dump (.dmp) file.
@@ -69,10 +68,9 @@ Set CrashDumpEnabled to one of the following values:
 | 1 | Records all the contents of system memory. This dump file may contain data from processes that were running when the information was collected. |
 | 2 | Records only the kernel memory. This dump file includes only memory that's allocated to the kernel, kernel-mode drivers, and other kernel-mode programs. It doesn't include unallocated memory, or any memory that's allocated to user-mode programs.</br></br> For most purposes, this kind of dump file is the most useful because it's smaller than the complete memory dump file. It also includes information that's most likely involved in the issue.</br></br> If a second problem occurs, the dump file is overwritten with new information. |
 | 3 | Records the smallest amount of useful information that may help identify why the device stopped unexpectedly. This type of dump file includes the following information:</br></br>- A list of loaded drivers</br>- The processor context (PRCB) for the processor that stopped</br>- The process information and kernel context (EPROCESS) for the process that stopped</br>- The process information and kernel context (ETHREAD) for the thread that stopped</br>- The kernel-mode call stack for the thread that stopped</br></br>This dump file can be useful when space is limited. Because of the limited information, errors that aren't directly caused by the running thread at the time of the problem may not be discovered by analyzing this file.</br></br> The date is encoded in the file name. If a second problem occurs, the previous file is preserved and the new file is given a distinct name. A list of all small memory dump files is kept in the %SystemRoot%\Minidump folder. |
-| 4 | Records the smallest amount of useful information. This value produces the same results as entering a value of 3. |
-| 7 | Records only the kernel memory. This value produces the same results as entering a value of 2. This is the default value. |
+| 4 | Records the smallest amount of useful information. This value produces the same results as entering a value of 1. |
+| 7 | Records only the kernel memory. This value produces the same results as entering a value of 1. This is the default value. |
 | Any other value | Disables crash dump and doesn't record anything. |
-
 
 ## KeyboardFilter settings
 

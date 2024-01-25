@@ -4,12 +4,10 @@ description: This section describes the UnifiedWriteFilter settings that you can
 
 ms.topic: reference
 
-
 ms.date: 12/31/2017
 ---
 
 # UnifiedWriteFilter (reference)
-
 
 Use UnifiedWriteFilter to configure settings for the Unified Write Filter (UWF). It helps protect your physical storage media, including most standard writable storage types that are supported by the OS, such as:
 
@@ -32,7 +30,6 @@ The overlay doesn't mirror the entire volume. It dynamically grows to keep track
 >UWF fully supports the NTFS system; however, during device startup, NTFS file system journal files can write to a protected volume before UWF has loaded and started protecting the volume.
 
 [Learn more about the Unified Write Filter feature.](/windows-hardware/customize/enterprise/unified-write-filter)
-
 
 ## Applies to
 

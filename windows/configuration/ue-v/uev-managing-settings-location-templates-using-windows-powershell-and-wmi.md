@@ -7,7 +7,7 @@ ms.topic: article
 
 # Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
 
-User Experience Virtualization (UE-V) uses XML settings location templates to define the settings that User Experience Virtualization captures and applies. UE-V includes a set of standard settings location templates. It also includes the UE-V template generator tool that enables you to create custom settings location templates. After you create and deploy settings location templates, you can manage those templates by using Windows PowerShell and the Windows Management Instrumentation (WMI). 
+User Experience Virtualization (UE-V) uses XML settings location templates to define the settings that User Experience Virtualization captures and applies. UE-V includes a set of standard settings location templates. It also includes the UE-V template generator tool that enables you to create custom settings location templates. After you create and deploy settings location templates, you can manage those templates by using Windows PowerShell and the Windows Management Instrumentation (WMI).
 
 > [!NOTE]
 > For a complete list of UE-V cmdlets, see [User Experience Virtualization in Windows PowerShell](/powershell/module/uev/).
@@ -68,7 +68,7 @@ The UE-V Windows PowerShell features enable you to manage a group of settings te
 
     This command unregisters all active templates on the computer.
 
-1.  Register the updated templates by typing the following command.
+1. Register the updated templates by typing the following command.
 
     ```powershell
     Register-UevTemplate <path to template folder>\*.xml
@@ -90,31 +90,31 @@ To display a list of Windows apps that can synchronize settings on a computer wi
 
 **Definitions of Get-UevAppxPackage properties**
 
-<a href="" id="packagefamilyname"></a>**PackageFamilyName** 
+<a href="" id="packagefamilyname"></a>**PackageFamilyName**
 
 The name of the package that is installed for the current user.
 
-<a href="" id="enabled"></a>**Enabled** 
+<a href="" id="enabled"></a>**Enabled**
 
 Defines whether the settings for the app are configured to synchronize.
 
-<a href="" id="enabledsource"></a>**EnabledSource** 
+<a href="" id="enabledsource"></a>**EnabledSource**
 
 The location where the configuration that enables or disables the app is set. Possible values are: *NotSet*, *LocalMachine*, *LocalUser*, *PolicyMachine*, and *PolicyUser*.
 
-<a href="" id="notset"></a>**NotSet** 
+<a href="" id="notset"></a>**NotSet**
 
 The policy is not configured to synchronize this app.
 
-<a href="" id="localmachine"></a>**LocalMachine** 
+<a href="" id="localmachine"></a>**LocalMachine**
 
 The enabled state is set in the local computer section of the registry.
 
-<a href="" id="localuser"></a>**LocalUser** 
+<a href="" id="localuser"></a>**LocalUser**
 
 The enabled state is set in the current user section of the registry.
 
-<a href="" id="policymachine"></a>**PolicyMachine** 
+<a href="" id="policymachine"></a>**PolicyMachine**
 
 The enabled state is set in the policy section of the local computer section of the registry.
 

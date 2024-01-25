@@ -5,22 +5,22 @@ appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ms.topic: article
 ms.date: 12/31/2017
---- 
+---
 
 # Use MDM Bridge WMI Provider to create a Windows client kiosk
 
-Environments that use [Windows Management Instrumentation (WMI)](/windows/win32/wmisdk/wmi-start-page) can use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to configure the MDM_AssignedAccess class. For more information about using a PowerShell script to configure AssignedAccess, see [PowerShell Scripting with WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider).  
+Environments that use [Windows Management Instrumentation (WMI)](/windows/win32/wmisdk/wmi-start-page) can use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to configure the MDM_AssignedAccess class. For more information about using a PowerShell script to configure AssignedAccess, see [PowerShell Scripting with WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider).
 
-Here's an example to set AssignedAccess configuration: 
+Here's an example to set AssignedAccess configuration:
 
-1. Download the [psexec tool](/sysinternals/downloads/psexec).  
+1. Download the [psexec tool](/sysinternals/downloads/psexec).
 
-2. Run `psexec.exe -i -s cmd.exe`.
-3. In the command prompt launched by psexec.exe, enter `powershell.exe` to open PowerShell. 
+1. Run `psexec.exe -i -s cmd.exe`.
+1. In the command prompt launched by psexec.exe, enter `powershell.exe` to open PowerShell.
 
-Step 4 is different for Windows 10 or Windows 11 
+Step 4 is different for Windows 10 or Windows 11
 
-4. Execute the following script for Windows 10: 
+1. Execute the following script for Windows 10:
 
 ```xml
 $nameSpaceName="root\cimv2\mdm\dmmap"
@@ -76,49 +76,49 @@ $obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
     </Config>
   </Configs>
 </AssignedAccessConfiguration>
-"@) 
+"@)
 
 Set-CimInstance -CimInstance $obj
 ```
-4. Execute the following script for Windows 11: 
+1. Execute the following script for Windows 11:
 
  ```xml
 $nameSpaceName="root\cimv2\mdm\dmmap"
 $className="MDM_AssignedAccess"
 $obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
 Add-Type -AssemblyName System.Web
-$obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@" 
+$obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
 
 <?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration  
+<AssignedAccessConfiguration
 
   xmlns=http://schemas.microsoft.com/AssignedAccess/2017/config xmlns:win11=http://schemas.microsoft.com/AssignedAccess/2022/config>
   <Profiles>
-    <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">       
+    <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
 
       <AllAppsList>
-        <AllowedApps> 
+        <AllowedApps>
 
-          <App AppUserModelId="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" /> 
+          <App AppUserModelId="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
 
-          <App AppUserModelId="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" /> 
+          <App AppUserModelId="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
 
-          <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" /> 
+          <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
 
-          <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" /> 
+          <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
 
-          <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" /> 
+          <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
 
-          <App DesktopAppPath="%windir%\system32\mspaint.exe" /> 
+          <App DesktopAppPath="%windir%\system32\mspaint.exe" />
 
-          <App DesktopAppPath="C:\Windows\System32\notepad.exe" /> 
+          <App DesktopAppPath="C:\Windows\System32\notepad.exe" />
 
-        </AllowedApps> 
+        </AllowedApps>
 
-      </AllAppsList> 
+      </AllAppsList>
 
       <win11:StartPins>
-        <![CDATA[  
+        <![CDATA[
 
           { "pinnedList":[
             {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
@@ -132,7 +132,7 @@ $obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
         ]]>
       </win11:StartPins>
       <Taskbar ShowTaskbar="true"/>
-    </Profile> 
+    </Profile>
 
   </Profiles>
   <Configs>
@@ -141,9 +141,9 @@ $obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
       <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
     </Config>
   </Configs>
-</AssignedAccessConfiguration>    
+</AssignedAccessConfiguration>
 
-"@) 
+"@)
 
 Set-CimInstance -CimInstance $obj
 ```

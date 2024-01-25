@@ -22,7 +22,6 @@ Use to configure browser settings that should only be set by OEMs who are part o
 | [PartnerSearchCode](#partnersearchcode)  | ✅ | ✅ |  |  |
 | [SearchProviders](#searchproviders) |   |   |  |  |
 
-
 ## AllowPrelaunch
 
 Use this setting to allow Microsoft Edge to pre-launch during Windows sign-in, when the system is idle, and each time that Microsoft Edge is closed. Pre-launch minimizes the amount of time required to start Microsoft Edge.
@@ -34,7 +33,7 @@ Select between **Prevent Pre-launching** and **Allow Pre-launching**.
 Use to add items to the Favorites Bar in Microsoft Edge.
 
 1. Enter a name for the item, and select **Add**. (The name you enter here's only used to distinguish the group of settings, and isn't shown on the device when the settings are applied.)
-2. In **Available customizations**, select the item that you added, and then configure the following settings for that item:
+1. In **Available customizations**, select the item that you added, and then configure the following settings for that item:
 
 Setting | Description
 --- | ---
@@ -50,10 +49,9 @@ To add a new item under the browser's **Favorites** list:
 
 1. In the **Name** field, enter a friendly name for the item, and then click **Add**.
 
-2. In the **Available customizations** pane, select the friendly name that you created, and in the text field, enter the URL for the item.
+1. In the **Available customizations** pane, select the friendly name that you created, and in the text field, enter the URL for the item.
 
 For example, to include the corporate Web site to the list of browser favorites, a company called Contoso can specify **Contoso** as the value for the name and `http://www.contoso.com` for the URL.
-
 
 ## PartnerSearchCode
 
@@ -63,9 +61,6 @@ For example, to include the corporate Web site to the list of browser favorites,
 Set the value to a character string that corresponds to the OEM's Partner Search Code. This identification code must match the one assigned to you by Microsoft.
 
 OEMs who are part of the program only have one PartnerSearchCode which should be used for all Windows 10 for desktop editions images.
-
-
-
 
 ## SearchProviders
 
@@ -82,15 +77,13 @@ Some countries/regions require specific, default search providers. The following
 >[!NOTE]
 >For Russia + Commonwealth of Independent States (CIS), the independent states consist of Russia, Ukraine, Georgia, The Republic of Azerbaijan, Republic Of Belarus, The Republic of Kazakhstan, The Kyrgyz Republic, The Republic of Moldova, The Republic of Tajikistan, The Republic of Armenia, Turkmenistan, The Republic of Uzbekistan, and Türkiye.
 
-
-
 ### SearchProviderList
 
 Use to specify a list of extra search providers.
 
 1. In the **Name** field, enter a name for the item, and then click **Add**.
 
-2. In the **Available customizations** pane, select the name that you created, and in the text field, enter the URL for the other search provider.
+1. In the **Available customizations** pane, select the name that you created, and in the text field, enter the URL for the other search provider.
 
 For example, to specify Yandex in Russia and Commonwealth of Independent States (CIS), set the value of URL to "https://yandex.ru/search/touch/?text={searchTerm}&clid=2234144".
 

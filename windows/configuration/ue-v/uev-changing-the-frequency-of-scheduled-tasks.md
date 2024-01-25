@@ -90,9 +90,9 @@ The following chart provides additional information about scheduled tasks for UE
 
 To find Scheduled Tasks, perform the following steps:
 
-1.  Open "Schedule Tasks" on the user computer.
-1.  Navigate to: Task Scheduler -&gt; Task Scheduler Library -&gt; Microsoft -&gt; UE-V
-1.  Select the scheduled task you wish to manage and configure in the details pane.
+1. Open "Schedule Tasks" on the user computer.
+1. Navigate to: Task Scheduler -&gt; Task Scheduler Library -&gt; Microsoft -&gt; UE-V
+1. Select the scheduled task you wish to manage and configure in the details pane.
 
 ### Additional information
 

@@ -3,7 +3,7 @@ title: Review a reminder suggested by Cortana (Windows)
 description: A test scenario on how to use Cortana with the Suggested reminders feature.
 ms.date: 10/05/2017
 ms.topic: article
---- 
+---
 
 # Test scenario 6 - Change your language and perform a quick search with Cortana
 <!--Using include for Cortana in Windows deprecation -->
@@ -13,8 +13,8 @@ Cortana can help employees in regions outside the US search for quick answers li
 
 1. Select the  **Cortana**  icon in the taskbar.
 
-2. Select the **…** menu, then select **Settings**, **Language**, then select **Español (España)**. You'll be prompted to restart the app.
+1. Select the **…** menu, then select **Settings**, **Language**, then select **Español (España)**. You'll be prompted to restart the app.
 
-3. Once the app has restarted, type or say **Convierte 100 Euros a Dólares**.
+1. Once the app has restarted, type or say **Convierte 100 Euros a Dólares**.
 
 :::image type="content" source="images/screenshot10.png" alt-text="Screenshot: Cortana showing a change your language and showing search results in Spanish":::

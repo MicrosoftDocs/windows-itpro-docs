@@ -2,40 +2,39 @@
 title: Start layout XML for desktop editions of Windows 10
 description: This article describes the options for customizing Start layout in LayoutModification.xml for Windows 10 desktop editions.
 ms.topic: article
-ms.date: 10/02/2018 
+ms.date: 10/02/2018
 appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
---- 
+---
 
-# Start layout XML for desktop editions of Windows 10 (reference) 
+# Start layout XML for desktop editions of Windows 10 (reference)
 
+>**Looking for consumer information?** See [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
->**Looking for consumer information?** See [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630) 
+On Windows 10 for desktop editions, the customized Start works by:
 
-On Windows 10 for desktop editions, the customized Start works by: 
-
-- Windows 10 checks the chosen base default layout, such as the desktop edition and whether Cortana is supported for the country/region. 
+- Windows 10 checks the chosen base default layout, such as the desktop edition and whether Cortana is supported for the country/region.
 
 - Windows 10 reads the LayoutModification.xml file and allows groups to be appended to Start. The groups have the following constraints:
     - Two groups that are six columns wide, or equivalent to the width of three medium tiles.
-    - Two medium-sized tile rows in height. Windows 10 ignores any tiles that are pinned beyond the second row. 
+    - Two medium-sized tile rows in height. Windows 10 ignores any tiles that are pinned beyond the second row.
 
-    - No limit to the number of apps that can be pinned. There's a theoretical limit of 24 tiles per group (four small tiles per medium square x 3 columns x 2 rows). 
+    - No limit to the number of apps that can be pinned. There's a theoretical limit of 24 tiles per group (four small tiles per medium square x 3 columns x 2 rows).
 
-    
+
 
 >[!NOTE]
->To use the layout modification XML to configure Start with roaming user profiles, see [Deploying Roaming User Profiles](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#step-7-optionally-specify-a-start-layout-for-windows-10-pcs). 
+>To use the layout modification XML to configure Start with roaming user profiles, see [Deploying Roaming User Profiles](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#step-7-optionally-specify-a-start-layout-for-windows-10-pcs).
 
- 
 
-## LayoutModification XML 
 
-IT admins can provision the Start layout using a LayoutModification.xml file. This file supports several mechanisms to modify or replace the default Start layout and its tiles. The easiest method for creating a LayoutModification.xml file is by using the Export-StartLayout cmdlet; see [Customize and export Start layout](customize-and-export-start-layout.md) for instructions. 
+## LayoutModification XML
 
-### Required order 
+IT admins can provision the Start layout using a LayoutModification.xml file. This file supports several mechanisms to modify or replace the default Start layout and its tiles. The easiest method for creating a LayoutModification.xml file is by using the Export-StartLayout cmdlet; see [Customize and export Start layout](customize-and-export-start-layout.md) for instructions.
 
-The XML schema for `LayoutModification.xml` requires the following order for tags directly under the LayoutModificationTemplate node: 
+### Required order
+
+The XML schema for `LayoutModification.xml` requires the following order for tags directly under the LayoutModificationTemplate node:
 
 1. LayoutOptions
 1. DefaultLayoutOverride
@@ -45,22 +44,21 @@ The XML schema for `LayoutModification.xml` requires the following order for tag
 1. TopMFUApps
 1. CustomTaskbarLayoutCollection
 1. InkWorkspaceTopApps
-1. StartLayoutCollection 
+1. StartLayoutCollection
 
-Comments are not supported in the `LayoutModification.xml` file. 
+Comments are not supported in the `LayoutModification.xml` file.
 
-
-### Supported elements and attributes 
+### Supported elements and attributes
 
 >[!NOTE]
 >To make sure the Start layout XML parser processes your file correctly, follow these guidelines when working with your LayoutModification.xml file:
 >- Do not leave spaces or white lines in between each element.
 >- Do not add comments inside the StartLayout node or any of its children elements.
->- Do not add multiple rows of comments. 
+>- Do not add multiple rows of comments.
 
 The following table lists the supported elements and attributes for the LayoutModification.xml file.
 > [!NOTE]
-> RequiredStartGroupsCollection and AppendGroup syntax only apply when the Import-StartLayout method is used for building and deploying Windows images. 
+> RequiredStartGroupsCollection and AppendGroup syntax only apply when the Import-StartLayout method is used for building and deploying Windows images.
 
 | Element | Attributes | Description |
 | --- | --- | --- |
@@ -73,27 +71,27 @@ The following table lists the supported elements and attributes for the LayoutMo
 | start:Folder<br><br>Parent:<br>start:Group | Name (in Windows 10, version 1809 and later only)<br>Size<br>Row<br>Column<br>LocalizedNameResourcetag | Use to specify a folder of icons; can include [Tile](#start-tile), [SecondaryTile](#start-secondarytile), and [DesktopApplicationTile](#start-desktopapplicationtile).  |
 | start:DesktopApplicationTile</br></br>Parent:</br>AppendGroup | DesktopApplicationID</br>DesktopApplicationLinkPath</br>Size</br>Row</br>Column | Use to specify any of the following:</br>- A Windows desktop application with a known AppUserModelID</br>- An application in a known folder with a link in a legacy Start Menu folder</br>- A Windows desktop application link in a legacy Start Menu folder</br>- A Web link tile with an associated `.url` file that is in a legacy Start Menu folder |
 | start:SecondaryTile</br></br>Parent:</br>AppendGroup | AppUserModelID</br>TileID</br>Arguments</br>DisplayName</br>Square150x150LogoUri</br>ShowNameOnSquare150x150Logo</br>ShowNameOnWide310x150Logo</br>Wide310x150LogoUri</br>BackgroundColor</br>ForegroundText</br>IsSuggestedApp</br>Size</br>Row</br>Column | Use to pin a Web link through a Microsoft Edge secondary tile. Note that AppUserModelID is case-sensitive. |
-| TopMFUApps</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add up to three default apps to the frequently used apps section in the system area.</br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1709. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |
-| Tile</br></br>Parent:</br>TopMFUApps | AppUserModelID | Use with the TopMFUApps tags to specify an app with a known AppUserModelID. </br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1709. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |
-| DesktopApplicationTile</br></br>Parent:</br>TopMFUApps | LinkFilePath | Use with the TopMFUApps tags to specify an app without a known AppUserModelID.</br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1709. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |
+| TopMFUApps</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add up to three default apps to the frequently used apps section in the system area.</br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1701. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |
+| Tile</br></br>Parent:</br>TopMFUApps | AppUserModelID | Use with the TopMFUApps tags to specify an app with a known AppUserModelID. </br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1701. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |
+| DesktopApplicationTile</br></br>Parent:</br>TopMFUApps | LinkFilePath | Use with the TopMFUApps tags to specify an app without a known AppUserModelID.</br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1701. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |
 | AppendOfficeSuite</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add the in-box installed Office suite to Start. For more information, see [Customize the Office suite of tiles](/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).</br></br>Don't use this tag with AppendDownloadOfficeTile. |
-| AppendDownloadOfficeTile</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add a specific **Download Office** tile to a specific location in Start</br></br>Do not use this tag with AppendOfficeSuite | 
+| AppendDownloadOfficeTile</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add a specific **Download Office** tile to a specific location in Start</br></br>Do not use this tag with AppendOfficeSuite |
 
-### LayoutOptions 
+### LayoutOptions
 
-New devices running Windows 10 for desktop editions will default to a Start menu with two columns of tiles unless boot to tablet mode is enabled. Devices with screens that are under 10" have boot to tablet mode enabled by default. For these devices, users see the full screen Start on the desktop. You can adjust the following features: 
+New devices running Windows 10 for desktop editions will default to a Start menu with two columns of tiles unless boot to tablet mode is enabled. Devices with screens that are under 10" have boot to tablet mode enabled by default. For these devices, users see the full screen Start on the desktop. You can adjust the following features:
 
-- Boot to tablet mode can be set on or off. 
+- Boot to tablet mode can be set on or off.
 
-- Set full screen Start on desktop to on or off. 
+- Set full screen Start on desktop to on or off.
 
-    To do this, add the LayoutOptions element in your LayoutModification.xml file and set the FullScreenStart attribute to true or false. 
+    To do this, add the LayoutOptions element in your LayoutModification.xml file and set the FullScreenStart attribute to true or false.
 
-- Specify the number of columns in the Start menu to 1 or 2. 
+- Specify the number of columns in the Start menu to 1 or 2.
 
-    To do this, add the LayoutOptions element in your LayoutModification.xml file and set the StartTileGroupsColumnCount attribute to 1 or 2.  
+    To do this, add the LayoutOptions element in your LayoutModification.xml file and set the StartTileGroupsColumnCount attribute to 1 or 2.
 
-The following example shows how to use the LayoutOptions element to specify full screen Start on the desktop and to use one column in the Start menu: 
+The following example shows how to use the LayoutOptions element to specify full screen Start on the desktop and to use one column in the Start menu:
 
 ```XML
 <LayoutModificationTemplate
@@ -106,71 +104,71 @@ The following example shows how to use the LayoutOptions element to specify full
         FullScreenStart="true"
     />
 </LayoutModificationTemplate>
-``` 
+```
 
-For devices being upgraded to Windows 10 for desktop editions: 
+For devices being upgraded to Windows 10 for desktop editions:
 
 - Devices being upgraded from Windows 7 will default to a Start menu with one column.
-- Devices being upgraded from Windows 8.1 or Windows 8.1 Upgrade will default to a Start menu with two columns. 
+- Devices being upgraded from Windows 8.1 or Windows 8.1 Upgrade will default to a Start menu with two columns.
 
-### RequiredStartGroups 
+### RequiredStartGroups
 
-The **RequiredStartGroups** tag contains **AppendGroup** tags that represent groups that you can append to the default Start layout.  
+The **RequiredStartGroups** tag contains **AppendGroup** tags that represent groups that you can append to the default Start layout.
 
 >[!IMPORTANT]
->For Windows 10 for desktop editions, you can add a maximum of two (2) **AppendGroup** tags per **RequiredStartGroups** tag.  
+>For Windows 10 for desktop editions, you can add a maximum of two (2) **AppendGroup** tags per **RequiredStartGroups** tag.
 
-You can also assign regions to the append groups in the **RequiredStartGroups** tag's using the optional **Region** attribute or you can use the multivariant capabilities in Windows provisioning. If you're using the **Region** attribute, you must use a two-letter country code to specify the country/region that the append group(s) apply to. To specify more than one country/region, use a pipe ("|") delimiter as shown in the following example:  
+You can also assign regions to the append groups in the **RequiredStartGroups** tag's using the optional **Region** attribute or you can use the multivariant capabilities in Windows provisioning. If you're using the **Region** attribute, you must use a two-letter country code to specify the country/region that the append group(s) apply to. To specify more than one country/region, use a pipe ("|") delimiter as shown in the following example:
 
 ```XML
 <RequiredStartGroups
       Region="DE|ES|FR|GB|IT|US">
-``` 
+```
 
-If the country/region setting for the Windows device matches a **RequiredStartGroups**, then the tiles laid out within the **RequiredStartGroups** is applied to Start.  
+If the country/region setting for the Windows device matches a **RequiredStartGroups**, then the tiles laid out within the **RequiredStartGroups** is applied to Start.
 
-If you specify a region-agnostic **RequiredStartGroups** (or one without the optional Region attribute), then the region-agnostic **RequiredStartGroups** is applied to Start. 
+If you specify a region-agnostic **RequiredStartGroups** (or one without the optional Region attribute), then the region-agnostic **RequiredStartGroups** is applied to Start.
 
-### AppendGroup 
+### AppendGroup
 
-**AppendGroup** tags specify a group of tiles that will be appended to Start. There is a maximum of two **AppendGroup** tags allowed per **RequiredStartGroups** tag.  
+**AppendGroup** tags specify a group of tiles that will be appended to Start. There is a maximum of two **AppendGroup** tags allowed per **RequiredStartGroups** tag.
 
-For Windows 10 for desktop editions, AppendGroup tags contain start:Tile, start:DesktopApplicationTile, or start:SecondaryTile tags.  
+For Windows 10 for desktop editions, AppendGroup tags contain start:Tile, start:DesktopApplicationTile, or start:SecondaryTile tags.
 
-You can specify any number of tiles in an **AppendGroup**, but you can't specify a tile with a **Row** attribute greater than 4. The Start layout doesn't support overlapping tiles.  
+You can specify any number of tiles in an **AppendGroup**, but you can't specify a tile with a **Row** attribute greater than 1. The Start layout doesn't support overlapping tiles.
 
-### Specify Start tiles 
+### Specify Start tiles
 
-To pin tiles to Start, partners must use the right tile depending on what you want to pin.  
+To pin tiles to Start, partners must use the right tile depending on what you want to pin.
 
-#### Tile size and coordinates 
+#### Tile size and coordinates
 
-All tile types require a size (**Size**) and coordinates (**Row** and **Column**) attributes regardless of the tile type that you use when prepinning items to Start. 
+All tile types require a size (**Size**) and coordinates (**Row** and **Column**) attributes regardless of the tile type that you use when prepinning items to Start.
 
-The following table describes the attributes that you must use to specify the size and location for the tile. 
+The following table describes the attributes that you must use to specify the size and location for the tile.
 
 | Attribute | Description |
 | --- | --- |
 | Size | Determines how large the tile will be.</br></br>- 1x1 - small tile</br>- 2x2 - medium tile</br>- 4x2 - wide tile</br>- 4x4 - large tile |
 | Row | Specifies the row where the tile will appear. |
-| Column | Specifies the column where the tile will appear. | 
+| Column | Specifies the column where the tile will appear. |
 
-For example, a tile with Size="2x2", Row="2", and Column="2" results in a tile located at (2,2) where (0,0) is the top-left corner of a group. 
+For example, a tile with Size="2x2", Row="2", and Column="2" results in a tile located at (2,2) where (0,0) is the top-left corner of a group.
 
 <span id="start-tile" />
-#### start:Tile 
+#### start:Tile
 
-You can use the **start:Tile** tag to pin any of the following apps to Start: 
+You can use the **start:Tile** tag to pin any of the following apps to Start:
 
 - A Universal Windows app
-- A Windows 8 app or Windows 8.1 app  
+- A Windows 8 app or Windows 8.1 app
 
-To specify any one of these apps, you must set the **AppUserModelID** attribute to the application user model ID that's associated with the corresponding app.  
+To specify any one of these apps, you must set the **AppUserModelID** attribute to the application user model ID that's associated with the corresponding app.
 
 >[!IMPORTANT]
->**AppUserModelID** (AUMID) is case-sensitive. 
+>**AppUserModelID** (AUMID) is case-sensitive.
 
-The following example shows how to pin the Microsoft Edge Universal Windows app: 
+The following example shows how to pin the Microsoft Edge Universal Windows app:
 
  ```XML
  <start:Tile
@@ -178,21 +176,21 @@ The following example shows how to pin the Microsoft Edge Universal Windows app:
           Size="2x2"
           Row="0"
           Column="0"/>
- ``` 
+ ```
 
 <span id="start-desktopapplicationtile" />
-#### start:DesktopApplicationTile 
+#### start:DesktopApplicationTile
 
-You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop application to Start. There are two ways you can specify a Windows desktop application:  
+You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop application to Start. There are two ways you can specify a Windows desktop application:
 
-- Use a path to a shortcut link (.lnk file) to a Windows desktop application. 
+- Use a path to a shortcut link (.lnk file) to a Windows desktop application.
 
   >[!NOTE]
-  >In Start layouts for Windows 10, version 1703, you should use **DesktopApplicationID** rather than **DesktopApplicationLinkPath** if you are using Group Policy or MDM to apply the start layout and the application was installed after the user's first sign-in. 
+  >In Start layouts for Windows 10, version 1703, you should use **DesktopApplicationID** rather than **DesktopApplicationLinkPath** if you are using Group Policy or MDM to apply the start layout and the application was installed after the user's first sign-in.
 
-  To pin a Windows desktop application through this method, you must first add the .lnk file in the specified location when the device first boots.  
+  To pin a Windows desktop application through this method, you must first add the .lnk file in the specified location when the device first boots.
 
-  The following example shows how to pin the Command Prompt: 
+  The following example shows how to pin the Command Prompt:
 
   ```XML
   <start:DesktopApplicationTile
@@ -201,20 +199,19 @@ You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop ap
           Row="0"
           Column="4"/>
   ```
-    
-
-  You must set the **DesktopApplicationLinkPath** attribute to the .lnk file that points to the Windows desktop application. The path also supports environment variables. 
-
-  If you are pointing to a third-party Windows desktop application and the layout is being applied before the first boot, you must put the .lnk file in a legacy Start Menu directory before first boot; for example, "%APPDATA%\Microsoft\Windows\Start Menu\Programs\" or the all users profile "%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\". 
-
-- Use the application's application user model ID, if this is known. If the Windows desktop application doesn't have one, use the shortcut link option. 
 
 
-  You can use the [Get-StartApps cmdlet](/powershell/module/startlayout/get-startapps) on a PC that has the application pinned to Start to obtain the app ID. 
+  You must set the **DesktopApplicationLinkPath** attribute to the .lnk file that points to the Windows desktop application. The path also supports environment variables.
 
-  To pin a Windows desktop application through this method, you must set the **DesktopApplicationID** attribute to the application user model ID that's associated with the corresponding app.  
+  If you are pointing to a third-party Windows desktop application and the layout is being applied before the first boot, you must put the .lnk file in a legacy Start Menu directory before first boot; for example, "%APPDATA%\Microsoft\Windows\Start Menu\Programs\" or the all users profile "%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\".
 
-  The following example shows how to pin the File Explorer Windows desktop application: 
+- Use the application's application user model ID, if this is known. If the Windows desktop application doesn't have one, use the shortcut link option.
+
+  You can use the [Get-StartApps cmdlet](/powershell/module/startlayout/get-startapps) on a PC that has the application pinned to Start to obtain the app ID.
+
+  To pin a Windows desktop application through this method, you must set the **DesktopApplicationID** attribute to the application user model ID that's associated with the corresponding app.
+
+  The following example shows how to pin the File Explorer Windows desktop application:
 
   ```XML
     <start:DesktopApplicationTile
@@ -223,13 +220,13 @@ You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop ap
           Row="0"
           Column="2"/>
   ```
-     
 
-You can also use the **start:DesktopApplicationTile** tag as one of the methods for pinning a Web link to Start. The other method is to use a Microsoft Edge secondary tile. 
 
-To pin a legacy `.url` shortcut to Start, you must create a `.url` file (right-click on the desktop, select **New** > **Shortcut**, and then type a Web URL). You must add this `.url` file in a legacy Start Menu directory before first boot; for example, `%APPDATA%\Microsoft\Windows\Start Menu\Programs\` or the all users profile `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\`. 
+You can also use the **start:DesktopApplicationTile** tag as one of the methods for pinning a Web link to Start. The other method is to use a Microsoft Edge secondary tile.
 
-The following example shows how to create a tile of the Web site's URL, which you can treat similarly to a Windows desktop application tile: 
+To pin a legacy `.url` shortcut to Start, you must create a `.url` file (right-click on the desktop, select **New** > **Shortcut**, and then type a Web URL). You must add this `.url` file in a legacy Start Menu directory before first boot; for example, `%APPDATA%\Microsoft\Windows\Start Menu\Programs\` or the all users profile `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\`.
+
+The following example shows how to create a tile of the Web site's URL, which you can treat similarly to a Windows desktop application tile:
 
 ```XML
 <start:DesktopApplicationTile
@@ -237,17 +234,17 @@ The following example shows how to create a tile of the Web site's URL, which yo
           Size="2x2"
           Row="0"
           Column="2"/>
-``` 
+```
 
 >[!NOTE]
->In Windows 10, version 1703, **Export-StartLayout** will use **DesktopApplicationLinkPath** for the .url shortcut. You must change **DesktopApplicationLinkPath** to **DesktopApplicationID** and provide the URL. 
+>In Windows 10, version 1703, **Export-StartLayout** will use **DesktopApplicationLinkPath** for the .url shortcut. You must change **DesktopApplicationLinkPath** to **DesktopApplicationID** and provide the URL.
 
 <span id="start-secondarytile" />
-#### start:SecondaryTile 
+#### start:SecondaryTile
 
-You can use the **start:SecondaryTile** tag to pin a Web link through a Microsoft Edge secondary tile. This method doesn't require any additional action compared to the method of using legacy `.url` shortcuts (through the start:DesktopApplicationTile tag). 
+You can use the **start:SecondaryTile** tag to pin a Web link through a Microsoft Edge secondary tile. This method doesn't require any additional action compared to the method of using legacy `.url` shortcuts (through the start:DesktopApplicationTile tag).
 
-The following example shows how to create a tile of the Web site's URL using the Microsoft Edge secondary tile: 
+The following example shows how to create a tile of the Web site's URL using the Microsoft Edge secondary tile:
 
 ```XML
 <start:SecondaryTile
@@ -255,7 +252,7 @@ The following example shows how to create a tile of the Web site's URL using the
           TileID="MyWeblinkTile"
           Arguments="http://msn.com"
           DisplayName="MySite"
-          Square150x150LogoUri="ms-appx:///Assets/MicrosoftEdgeSquare150x150.png" 
+          Square150x150LogoUri="ms-appx:///Assets/MicrosoftEdgeSquare150x150.png"
 
           Wide310x150LogoUri="ms-appx:///Assets/MicrosoftEdgeWide310x150.png"
           ShowNameOnSquare150x150Logo="true"
@@ -264,9 +261,9 @@ The following example shows how to create a tile of the Web site's URL using the
           Size="2x2"
           Row="0"
           Column="4"/>
-``` 
+```
 
-The following table describes the other attributes that you can use with the **start:SecondaryTile** tag in addition to **Size**, **Row**, and **Column**. 
+The following table describes the other attributes that you can use with the **start:SecondaryTile** tag in addition to **Size**, **Row**, and **Column**.
 
 | Attribute | Required/optional | Description |
 | --- | --- | --- |
@@ -279,23 +276,23 @@ The following table describes the other attributes that you can use with the **s
 | ShowNameOnSquare150x150Logo | Optional | Specifies whether the display name is shown on the 2x2 tile. The values you can use for this attribute are true or false. |
 | ShowNameOnWide310x150Logo | Optional | Specifies whether the display name is shown on the 4x2 tile. The values you can use for this attribute are true or false. |
 | BackgroundColor | Optional | Specifies the color of the tile. You can specify the value in ARGB hexadecimal (for example, #FF112233) or specify "transparent". |
-| ForegroundText | Optional | Specifies the color of the foreground text. Set the value to either "light" or "dark". | 
+| ForegroundText | Optional | Specifies the color of the foreground text. Set the value to either "light" or "dark". |
 
-Secondary Microsoft Edge tiles have the same size and location behavior as a Universal Windows app, Windows 8 app, or Windows 8.1 app. 
+Secondary Microsoft Edge tiles have the same size and location behavior as a Universal Windows app, Windows 8 app, or Windows 8.1 app.
 
-#### TopMFUApps 
+#### TopMFUApps
 
 >[!NOTE]
->Only applies to versions of Windows 10 earlier than version 1709. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. 
+>Only applies to versions of Windows 10 earlier than version 1701. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start.
 
-You can use the **TopMFUApps** tag to add up to 3 default apps to the frequently used apps section in the system area, which delivers system-driven lists to the user including important or frequently accessed system locations and recently installed apps.  
+You can use the **TopMFUApps** tag to add up to 3 default apps to the frequently used apps section in the system area, which delivers system-driven lists to the user including important or frequently accessed system locations and recently installed apps.
 
-You can use this tag to add: 
+You can use this tag to add:
 
 - Apps with an **AppUserModelID** attribute - This includes Windows desktop applications that have a known application user model ID. Use a **Tile** tag with the **AppUserModelID** attribute set to the app's application user model ID.
-- Apps without a **AppUserModelID** attribute - For these apps, you must create a .lnk file that points to the installed app and place the .lnk file in the `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs` directory. Use a **DesktopApplicationTile** tag with the **LinkFilePath** attribute set to the .lnk file name and path. 
+- Apps without a **AppUserModelID** attribute - For these apps, you must create a .lnk file that points to the installed app and place the .lnk file in the `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs` directory. Use a **DesktopApplicationTile** tag with the **LinkFilePath** attribute set to the .lnk file name and path.
 
-The following example shows how to modify your LayoutModification.xml file to add both kinds of apps to the system area in Start: 
+The following example shows how to modify your LayoutModification.xml file to add both kinds of apps to the system area in Start:
 
  ```XML
  <LayoutModificationTemplate
@@ -309,16 +306,16 @@ The following example shows how to modify your LayoutModification.xml file to ad
         <DesktopApplicationTile LinkFilePath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Win32App.lnk" />
   </TopMFUApps>
 </LayoutModificationTemplate>
-``` 
+```
 
-#### AppendOfficeSuite 
+#### AppendOfficeSuite
 
-You can use the **AppendOfficeSuite** tag to add the in-box installed Office suite of apps to Start. 
+You can use the **AppendOfficeSuite** tag to add the in-box installed Office suite of apps to Start.
 
 >[!NOTE]
->The OEM must have installed Office for this tag to work. 
+>The OEM must have installed Office for this tag to work.
 
-The following example shows how to add the **AppendOfficeSuite** tag to your LayoutModification.xml file to append the full Universal Office suite to Start: 
+The following example shows how to add the **AppendOfficeSuite** tag to your LayoutModification.xml file to append the full Universal Office suite to Start:
 
 ```XML
 <LayoutModificationTemplate
@@ -328,30 +325,29 @@ The following example shows how to add the **AppendOfficeSuite** tag to your Lay
     Version="1">
     <AppendOfficeSuite/>
 </LayoutModificationTemplate>
-``` 
+```
 
-#### AppendOfficeSuiteChoice 
+#### AppendOfficeSuiteChoice
 
-This tag is added in Windows 10, version 1803. You have two options in this tag: 
+This tag is added in Windows 10, version 1801. You have two options in this tag:
 
 - `<AppendOfficeSuiteChoice Choice="DesktopBridgeSubscription"/>`
-- `<AppendOfficeSuiteChoice Choice="DesktopBridge"/>` 
+- `<AppendOfficeSuiteChoice Choice="DesktopBridge"/>`
 
-Use `Choice=DesktopBridgeSubscription` on devices running Windows 10, version 1803, that have Office 365 preinstalled. This will set the heading of the Office suite of tiles to **Office 365**, to highlight the Office 365 apps that you've made available on the device. 
+Use `Choice=DesktopBridgeSubscription` on devices running Windows 10, version 1803, that have Office 365 preinstalled. This will set the heading of the Office suite of tiles to **Office 365**, to highlight the Office 365 apps that you've made available on the device.
 
-Use `Choice=DesktopBridge` on devices running versions of Windows 10 earlier than version 1803, and on devices shipping with [perpetual licenses for Office](/archive/blogs/ausoemteam/choosing-the-right-office-version-for-your-customers). This will set the heading of the Office suite of tiles to **Create**. 
+Use `Choice=DesktopBridge` on devices running versions of Windows 10 earlier than version 1803, and on devices shipping with [perpetual licenses for Office](/archive/blogs/ausoemteam/choosing-the-right-office-version-for-your-customers). This will set the heading of the Office suite of tiles to **Create**.
 
-For more information, see [Customize the Office suite of tiles](/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles). 
+For more information, see [Customize the Office suite of tiles](/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).
 
+#### AppendDownloadOfficeTile
 
-#### AppendDownloadOfficeTile 
-
-You can use the **AppendDownloadOfficeTile** tag to append the Office trial installer to Start. This tag adds the **Download Office** tile to Start and the download tile will appear at the bottom right-hand side of the second group. 
+You can use the **AppendDownloadOfficeTile** tag to append the Office trial installer to Start. This tag adds the **Download Office** tile to Start and the download tile will appear at the bottom right-hand side of the second group.
 
 >[!NOTE]
->The OEM must have installed the Office trial installer for this tag to work. 
+>The OEM must have installed the Office trial installer for this tag to work.
 
-The following example shows how to add the **AppendDownloadOfficeTile** tag to your LayoutModification.xml file: 
+The following example shows how to add the **AppendDownloadOfficeTile** tag to your LayoutModification.xml file:
 
 ```XML
 <LayoutModificationTemplate
@@ -361,11 +357,11 @@ The following example shows how to add the **AppendDownloadOfficeTile** tag to y
     Version="1">
     <AppendDownloadOfficeTile/>
 </LayoutModificationTemplate>
-``` 
+```
 
-## Sample LayoutModification.xml 
+## Sample LayoutModification.xml
 
-The following sample LayoutModification.xml shows how you can configure the Start layout for devices running Windows 10 for desktop editions: 
+The following sample LayoutModification.xml shows how you can configure the Start layout for devices running Windows 10 for desktop editions:
 
 ```XML
 <LayoutModificationTemplate
@@ -393,7 +389,7 @@ The following sample LayoutModification.xml shows how you can configure the Star
           Size="2x2"
           Row="0"
           Column="4"/>
-      </AppendGroup>      
+      </AppendGroup>
 
       <AppendGroup
         Name="Fabrikam Group 2">
@@ -433,26 +429,26 @@ The following sample LayoutModification.xml shows how you can configure the Star
           Size="2x2"
           Row="0"
           Column="2"/>
-      </AppendGroup>      
+      </AppendGroup>
 
     </RequiredStartGroups>
-  </RequiredStartGroupsCollection> 
+  </RequiredStartGroupsCollection>
 
  </LayoutModificationTemplate>
-``` 
+```
 
-## Use Windows Provisioning multivariant support 
+## Use Windows Provisioning multivariant support
 
-The Windows Provisioning multivariant capability allows you to declare target conditions that, when met, supply specific customizations for each variant condition. For Start customization, you can create specific layouts for each variant that you have. To do this, you must create a separate LayoutModification.xml file for each variant that you want to support and then include these in your provisioning package. For more information on how to do this, see [Create a provisioning package with multivariant settings](./provisioning-packages/provisioning-multivariant.md). 
+The Windows Provisioning multivariant capability allows you to declare target conditions that, when met, supply specific customizations for each variant condition. For Start customization, you can create specific layouts for each variant that you have. To do this, you must create a separate LayoutModification.xml file for each variant that you want to support and then include these in your provisioning package. For more information on how to do this, see [Create a provisioning package with multivariant settings](./provisioning-packages/provisioning-multivariant.md).
 
-The provisioning engine chooses the right customization file based on the target conditions that were met, adds the file in the location that's specified for the setting, and then uses the specific file to customize Start. To differentiate between layouts, you can add modifiers to the LayoutModification.xml filename such as "LayoutCustomization1". Regardless of the modifier that you use, the provisioning engine will always output "LayoutCustomization.xml" so that the operating system has a consistent file name to query against. 
+The provisioning engine chooses the right customization file based on the target conditions that were met, adds the file in the location that's specified for the setting, and then uses the specific file to customize Start. To differentiate between layouts, you can add modifiers to the LayoutModification.xml filename such as "LayoutCustomization1". Regardless of the modifier that you use, the provisioning engine will always output "LayoutCustomization.xml" so that the operating system has a consistent file name to query against.
 
 For example, if you want to ensure that there's a specific layout for a certain condition, you can:
 1. Create a specific layout customization file and then name it LayoutCustomization1.xml.
-2. Include the file as part of your provisioning package.
-3. Create your multivariant target and reference the XML file within the target condition in the main customization XML file. 
+1. Include the file as part of your provisioning package.
+1. Create your multivariant target and reference the XML file within the target condition in the main customization XML file.
 
-The following example shows what the overall customization file might look like with multivariant support for Start: 
+The following example shows what the overall customization file might look like with multivariant support for Start:
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -469,36 +465,36 @@ The following example shows what the overall customization file might look like 
       <Targets>
         <Target Id="Processor ABC">
           <TargetState>
-          <TargetState> 
+          <TargetState>
 
-            <Condition Name="ProcessorName" Value="Pattern:.*Celeron.*" /> 
+            <Condition Name="ProcessorName" Value="Pattern:.*Celeron.*" />
 
-            <Condition Name="ProcessorType" Value="Pattern:.*I|intel.*" /> 
+            <Condition Name="ProcessorType" Value="Pattern:.*I|intel.*" />
 
           </TargetState>
           </TargetState>
         </Target>
       </Targets>
       <Common>
-        <Settings> 
+        <Settings>
 
-          <Policies> 
+          <Policies>
 
-            <AllowBrowser>1</AllowBrowser> 
+            <AllowBrowser>1</AllowBrowser>
 
-            <AllowCamera>1</AllowCamera> 
+            <AllowCamera>1</AllowCamera>
 
-            <AllowBluetooth>1</AllowBluetooth> 
+            <AllowBluetooth>1</AllowBluetooth>
 
-          </Policies> 
+          </Policies>
 
-          <HotSpot> 
+          <HotSpot>
 
-            <Enabled>1</Enabled> 
+            <Enabled>1</Enabled>
 
-          </HotSpot> 
+          </HotSpot>
 
-        </Settings> 
+        </Settings>
 
       </Common>
       <Variant>
@@ -515,31 +511,30 @@ The following example shows what the overall customization file might look like 
     </Customizations>
   </Settings>
 </WindowsCustomizatons>
-``` 
+```
 
-When the condition is met, the provisioning engine takes the XML file and places it in the location that the operating system has set and then the Start subsystem reads the file and applies the specific customized layout. 
+When the condition is met, the provisioning engine takes the XML file and places it in the location that the operating system has set and then the Start subsystem reads the file and applies the specific customized layout.
 
-You must repeat this process for all variants that you want to support so that each variant can have a distinct layout for each of the conditions and targets that need to be supported. For example, if you add a **Language** condition, you can create a Start layout that has its own localized group. 
+You must repeat this process for all variants that you want to support so that each variant can have a distinct layout for each of the conditions and targets that need to be supported. For example, if you add a **Language** condition, you can create a Start layout that has its own localized group.
 
-## Add the LayoutModification.xml file to the device 
+## Add the LayoutModification.xml file to the device
 
-Once you have created your LayoutModification.xml file to customize devices that will run Windows 10 for desktop editions, you can use Windows ICD methods to add the XML file to the device.  
+Once you have created your LayoutModification.xml file to customize devices that will run Windows 10 for desktop editions, you can use Windows ICD methods to add the XML file to the device.
 
 1. In the **Available customizations** pane, expand **Runtime settings**, select **Start** > Select the **StartLayout** setting.
-2. In the middle pane, click **Browse** to open File Explorer.
-3. In the File Explorer window, navigate to the location where you saved your LayoutModification.xml file. 
+1. In the middle pane, click **Browse** to open File Explorer.
+1. In the File Explorer window, navigate to the location where you saved your LayoutModification.xml file.
 
-4. Select the file and then click **Open**.  
+1. Select the file and then click **Open**.
 
-This should set the value of **StartLayout**. The setting appears in the **Selected customizations** pane. 
+This should set the value of **StartLayout**. The setting appears in the **Selected customizations** pane.
 
 >[!NOTE]
->There is currently no way to add the .url and .lnk files through Windows ICD.  
+>There is currently no way to add the .url and .lnk files through Windows ICD.
 
-Once you have created the LayoutModification.xml file and it is present in the device, the system overrides the base default layout and any Unattend settings used to customize Start.  
+Once you have created the LayoutModification.xml file and it is present in the device, the system overrides the base default layout and any Unattend settings used to customize Start.
 
-
-## Related topics 
+## Related topics
 
 - [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
 - [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
