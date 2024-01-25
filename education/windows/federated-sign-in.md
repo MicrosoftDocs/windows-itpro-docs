@@ -46,7 +46,7 @@ To enable a federated sign-in experience, the following prerequisites must be me
     - PowerShell scripts that call the [Microsoft Graph API][GRAPH-1]
     - provisioning tools offered by the IdP
 
-    For more information about identity matching, see [Identity matching in Microsoft Entra ID](#identity-matching-in-azure-ad).
+    For more information about identity matching, see [Identity matching in Microsoft Entra ID](#identity-matching-in-microsoft-entra-id).
 1. Licenses assigned to the Microsoft Entra user accounts. It's recommended to assign licenses to a dynamic group: when new users are provisioned in Microsoft Entra ID, the licenses are automatically assigned. For more information, see [Assign licenses to users by group membership in Microsoft Entra ID][AZ-2]
 1. Enable Federated sign-in or Web sign-in on the Windows devices, depending if the devices are shared or assigned to a single student
 
