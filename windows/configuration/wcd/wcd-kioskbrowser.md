@@ -1,11 +1,8 @@
 ---
 title: KioskBrowser
 description: This section describes the KioskBrowser settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-
 ms.topic: reference
-
 ms.date: 10/02/2018
-
 ---
 
 # KioskBrowser (Windows Configuration Designer reference)

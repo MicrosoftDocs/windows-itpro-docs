@@ -275,5 +275,5 @@ Update-MgUser -UserId alton@example.onmicrosoft.com -UserPrincipalName alton@exa
 
 [WIN-1]: /windows/client-management/mdm/sharedpc-csp
 [WIN-2]: /windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin
-[WIN-3]: /windows/configuration/set-up-shared-or-guest-pc
+[WIN-3]: /windows/configuration/shared-pc/set-up-shared-or-guest-pc
 [WIN-4]: /windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname

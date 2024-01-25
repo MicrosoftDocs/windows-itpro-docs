@@ -24,22 +24,22 @@ To apply a provisioning package from a USB drive during initial setup:
 
 1. Start with a device on the initial setup screen. If the device has gone past this screen, reset the device to start over. To reset, go to **Settings** > **System** > [**Recovery**](ms-settings:recovery) > **Reset this PC**.
 
-   :::image type="content" source="../images/oobe.png" alt-text="The first screen when setting up a new PC.":::
+   :::image type="content" source="images/oobe.png" alt-text="The first screen when setting up a new PC.":::
 
 1. Insert the USB drive. If nothing happens when you insert the USB drive, press the Windows key five times.
 
    - If there is only one provisioning package on the USB drive, the provisioning package is applied. See step 5.
    - If there is more than one provisioning package on the USB drive, Windows setup will recognize the drive and ask how you want to provision the device. Select **Install provisioning package** and select **Next**.
 
-   :::image type="content" source="../images/provisioning-oobe-choice.png" alt-text="What would you like to do?":::
+   :::image type="content" source="images/provisioning-oobe-choice.png" alt-text="What would you like to do?":::
 
 1. Select the provisioning package (`.ppkg`) that you want to apply, and select **Yes**.
 
-    :::image type="content" source="../images/provisioning-oobe-choose-package.png" alt-text="Choose a package.":::
+    :::image type="content" source="images/provisioning-oobe-choose-package.png" alt-text="Choose a package.":::
 
 1. The selected provisioning package will install and apply to the device.
 
-   :::image type="content" source="../images/provisioning-oobe-installing.png" alt-text="Setting up your PC.":::
+   :::image type="content" source="images/provisioning-oobe-installing.png" alt-text="Setting up your PC.":::
 
 1. Wait for the device to load and begin applying the provisioning package. Once you see "You can remove your removable media now!" you can remove your USB drive. Windows will continue provisioning the device.
 
@@ -51,23 +51,23 @@ Provisioning packages can be applied after initial setup through Windows setting
 
 1. Insert the USB drive, then navigate to **Settings** > **Accounts** > [**Access work or school**](ms-settings:workplace) > **Add or remove a provisioning package** > **Add a package**.
 
-   :::image type="content" source="../images/provisioning-runtime-manage-packages.png" alt-text="Add or remove a provisioning package.":::
+   :::image type="content" source="images/provisioning-runtime-manage-packages.png" alt-text="Add or remove a provisioning package.":::
 
 1. Choose the method you want to use, such as **Removable Media**.
 
-   :::image type="content" source="../images/provisioning-runtime-choose-package.png" alt-text="Choose a method.":::
+   :::image type="content" source="images/provisioning-runtime-choose-package.png" alt-text="Choose a method.":::
 
 1. Select the provisioning package (`.ppkg`) that you want to apply, and select **Add**.
 
-   :::image type="content" source="../images/provisioning-runtime-add-package.png" alt-text="Select and add a package.":::
+   :::image type="content" source="images/provisioning-runtime-add-package.png" alt-text="Select and add a package.":::
 
 1. Provisioning packages require administrator privileges as they can modify system policies and run scripts at the system level. Ensure you trust the package you are installing before accepting the UAC prompt. Select **Yes**.
 
-   :::image type="content" source="../images/provisioning-runtime-UAC.png" alt-text="Do you want to allow changes to your device?":::
+   :::image type="content" source="images/provisioning-runtime-UAC.png" alt-text="Do you want to allow changes to your device?":::
 
 1. The provisioning runtime will ask if the package is from a source you trust. Verify that you are applying the correct package and that it is trusted. Select **Yes, add it**.
 
-   :::image type="content" source="../images/provisioning-runtime-trust.png" alt-text="Do you trust this package?":::
+   :::image type="content" source="images/provisioning-runtime-trust.png" alt-text="Do you trust this package?":::
 
 ### Apply Directly
 
@@ -75,15 +75,15 @@ To apply a provisioning package directly, such as from a USB drive, folder, netw
 
 1. Navigate to the provisioning package and double-click it to begin the installation.
 
-   :::image type="content" source="../images/provisioning-runtime-click-to-install.png" alt-text="Double-click package to being installation.":::
+   :::image type="content" source="images/provisioning-runtime-click-to-install.png" alt-text="Double-click package to being installation.":::
 
 1. Provisioning packages require administrator privileges as they can modify system policies and run scripts at the system level. Ensure you trust the package you are installing before accepting the UAC prompt. Select **Yes**.
 
-   :::image type="content" source="../images/provisioning-runtime-UAC.png" alt-text="Do you want to allow changes to your device?":::
+   :::image type="content" source="images/provisioning-runtime-UAC.png" alt-text="Do you want to allow changes to your device?":::
 
 1. The provisioning runtime will ask if the package is from a source you trust. Verify that you are applying the correct package and that it is trusted. Select **Yes, add it**.
 
-   :::image type="content" source="../images/provisioning-runtime-trust.png" alt-text="Do you trust this package?":::
+   :::image type="content" source="images/provisioning-runtime-trust.png" alt-text="Do you trust this package?":::
 
 ## Related articles
 

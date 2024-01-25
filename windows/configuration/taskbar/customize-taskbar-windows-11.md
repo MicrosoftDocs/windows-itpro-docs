@@ -23,10 +23,10 @@ This article shows you how to create the XML file, add apps to the XML, and depl
 
 ## Before you begin
 
-- There isn't a limit on the number of apps that you can pin. In the XML file, add apps using the [Application User Model ID (AUMID)](./find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path (the local path to the app).
+- There isn't a limit on the number of apps that you can pin. In the XML file, add apps using the [Application User Model ID (AUMID)](../kiosk/find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path (the local path to the app).
 - There are some situations that an app pinned in your XML file won't be pinned in the taskbar. For example, if an app isn't approved or installed for a user, then the pinned icon won't show on the taskbar.
 - The order of apps in the XML file dictates the order of pinned apps on the taskbar, from left to right, and to the right of any existing apps pinned by the user. If the OS is configured to use a right-to-left language, then the taskbar order is reversed.
-- Some classic Windows applications are packaged differently than they were in previous versions of Windows, including Notepad and File Explorer. Be sure to enter the correct AppID. For more information, see [Application User Model ID (AUMID)](./find-the-application-user-model-id-of-an-installed-app.md) and [Get the AUMID and Desktop app link path](#get-the-aumid-and-desktop-app-link-path) (in this article).
+- Some classic Windows applications are packaged differently than they were in previous versions of Windows, including Notepad and File Explorer. Be sure to enter the correct AppID. For more information, see [Application User Model ID (AUMID)](../kiosk/find-the-application-user-model-id-of-an-installed-app.md) and [Get the AUMID and Desktop app link path](#get-the-aumid-and-desktop-app-link-path) (in this article).
 - It's recommended to use a Mobile Device Management (MDM) provider. MDM providers help manage your devices, and help manage apps on your devices. You can use Microsoft Intune. Intune is a family of products that include Microsoft Intune, which is a cloud service, and Configuration Manager, which is on-premises.
 
   In this article, we mention these services. If you're not managing your devices using an MDM provider, the following resources may help you get started:
@@ -60,7 +60,7 @@ This article shows you how to create the XML file, add apps to the XML, and depl
 
 1. In the `<taskbar:TaskbarPinList>` node, add (or remove) the apps you want pinned. You can pin Universal Windows Platform (UWP) apps and desktop apps:
 
-    - `<taskbar:UWA>`: Select this option for UWP apps. Add the [AUMID](./find-the-application-user-model-id-of-an-installed-app.md) of the UWP app.
+    - `<taskbar:UWA>`: Select this option for UWP apps. Add the [AUMID](../kiosk/find-the-application-user-model-id-of-an-installed-app.md) of the UWP app.
     - `<taskbar:DesktopApp>`: Select this option for desktop apps. Add the Desktop Application Link Path of the desktop app.
 
     You can pin as many apps as you want.  Just keep adding them to the list. Remember, the app order in the list is the same order the apps are shown on the taskbar.

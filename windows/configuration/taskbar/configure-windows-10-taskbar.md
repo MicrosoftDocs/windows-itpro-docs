@@ -14,7 +14,7 @@ Starting in Windows 10, version 1607, administrators can pin more apps to the ta
 > [!NOTE]
 > The only aspect of the taskbar that can currently be configured by the layout modification XML file is the layout.
 
-You can specify different taskbar configurations based on device locale and region. There's no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](./find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path (the local path to the application).
+You can specify different taskbar configurations based on device locale and region. There's no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](../kiosk/find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path (the local path to the application).
 
 If you specify an app to be pinned that isn't provisioned for the user on the computer, the pinned icon won't appear on the taskbar.
 
@@ -34,9 +34,9 @@ The following example shows how apps will be pinned: Windows default apps to the
 1. Create the XML file.
   - If you're also [customizing the Start layout](customize-and-export-start-layout.md), use `Export-StartLayout` to create the XML, and then add the `<CustomTaskbarLayoutCollection>` section from [the following sample](#sample-taskbar-configuration-added-to-start-layout-xml-file) to the file.
   - If you're only configuring the taskbar, use [the following sample](#sample-taskbar-configuration-xml-file) to create a layout modification XML file.
-1. Edit and save the XML file. You can use [AUMID](./find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path to identify the apps to pin to the taskbar.
+1. Edit and save the XML file. You can use [AUMID](../kiosk/find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path to identify the apps to pin to the taskbar.
   - Add `xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"` to the first line of the file, before the closing \>.
-  - Use `<taskbar:UWA>` and [AUMID](./find-the-application-user-model-id-of-an-installed-app.md) to pin Universal Windows Platform apps.
+  - Use `<taskbar:UWA>` and [AUMID](../kiosk/find-the-application-user-model-id-of-an-installed-app.md) to pin Universal Windows Platform apps.
   - Use `<taskbar:DesktopApp>` and Desktop Application Link Path to pin desktop applications.
 1. Apply the layout modification XML file to devices using [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
 

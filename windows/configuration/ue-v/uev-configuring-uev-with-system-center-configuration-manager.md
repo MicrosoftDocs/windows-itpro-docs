@@ -1,11 +1,11 @@
 ---
 title: Configuring UE-V with Microsoft Configuration Manager
 description: Learn how to configure User Experience Virtualization (UE-V) with Microsoft Configuration Manager.
-ms.date: 04/19/2017
+ms.date: 1/25/2024
 ms.topic: article
 ---
 
-# Configuring UE-V with Microsoft Configuration Manager 
+# Configuring UE-V with Microsoft Configuration Manager
 
 After you deploy User Experience Virtualization (UE-V) and its required features, you can start to configure it to meet your organization's need. The UE-V Configuration Pack provides a way for administrators to use the Compliance Settings feature of Microsoft Configuration Manager to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
 
@@ -56,45 +56,45 @@ The UE-V service policy configuration item CAB file is created using the UevTemp
   ```cmd
   C:\Program Files (x86)\Windows Kits\10\Microsoft User Experience Virtualization\Management\AgentConfiguration.xml
   ```
-  
+
   The default configuration file contains five sections:
-  
+
   <a href="" id="computer-policy"></a>**Computer Policy**
-  
+
   All UE-V machine level settings. The DesiredState attribute can be
-  
+
   - **Set** to have the value assigned in the registry
   - **Clear** to remove the setting
   - **Unmanaged** to have the configuration item left at its current state
-  
+
   Don't remove lines from this section. Instead, set the DesiredState to `Unmanaged` if you don't want Configuration Manager to alter current or default values.
-  
+
   <a href="" id="currentcomputeruserpolicy"></a>**CurrentComputerUserPolicy**
-  
+
   All UE-V user level settings. These entries override the machine settings for a user. The DesiredState attribute can be
-  
+
   - **Set** to have the value assigned in the registry
   - **Clear** to remove the setting
   - **Unmanaged** to have the configuration item left at its current state
-  
+
   Don't remove lines from this section. Instead, set the DesiredState to 'Unmanaged' if you don't want Configuration Manager to alter current or default values.
-  
-  <a href="" id="services"></a>**Services** 
-  
+
+  <a href="" id="services"></a>**Services**
+
   Entries in this section control service operation. The default configuration file contains a single entry for the UevAgentService. The DesiredState attribute can be set to **Running** or **Stopped**.
-  
-  <a href="" id="windows8appscomputerpolicy"></a>**Windows8AppsComputerPolicy** 
-  
+
+  <a href="" id="windows8appscomputerpolicy"></a>**Windows8AppsComputerPolicy**
+
   All machine level Windows app synchronization settings. Each PackageFamilyName listed in this section can be assigned a DesiredState of
-  
+
   - **Enabled** to have settings roam
   - **Disabled** to prevent settings from roaming
   - **Cleared** to have the entry removed from UE-V control
-  
+
   More lines can be added to this section based on the list of installed Windows apps that can be viewed using the PowerShell cmdlet GetAppxPackage.
-  
-  <a href="" id="windows8appscurrentcomputeruserpolicy"></a>**Windows8AppsCurrentComputerUserPolicy** 
-  
+
+  <a href="" id="windows8appscurrentcomputeruserpolicy"></a>**Windows8AppsCurrentComputerUserPolicy**
+
   Identical to the Windows8AppsComputerPolicy with settings that override machine settings for an individual user.
 
 1. Edit the configuration file by changing the desired state and value fields.

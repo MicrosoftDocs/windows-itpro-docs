@@ -30,7 +30,7 @@ Three features enable Start and taskbar layout control:
     > [!NOTE]
     > To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
 
--  [You can modify the Start .xml file](configure-windows-10-taskbar.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration.
+-  [You can modify the Start .xml file](../taskbar/configure-windows-10-taskbar.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration.
 
 - In Windows Configuration Designer, you use the **Policies/Start/StartLayout** setting to provide the contents of the .xml file that defines the Start and taskbar layout.
 
@@ -118,7 +118,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 ## Related topics
 
 - [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
-- [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
+- [Configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md)
 - [Customize and export Start layout](customize-and-export-start-layout.md)
 - [Add image for secondary tiles](start-secondary-tiles.md)
 - [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)

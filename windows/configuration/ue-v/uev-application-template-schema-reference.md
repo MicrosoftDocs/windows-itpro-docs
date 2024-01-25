@@ -1,7 +1,7 @@
 ---
 title: Application Template Schema Reference for UE-V
 description: Learn details about the XML structure of the UE-V settings location templates and learn how to edit these files.
-ms.date: 04/19/2017
+ms.date: 1/25/2024
 ms.topic: article
 ---
 

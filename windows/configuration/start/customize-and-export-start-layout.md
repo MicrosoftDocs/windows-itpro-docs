@@ -27,9 +27,7 @@ When [a partial Start layout](#configure-a-partial-start-layout) is applied, the
 You can deploy the resulting .xml file to devices using one of the following methods:
 
 - [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-
 - [Windows Configuration Designer provisioning package](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-
 - [Mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
 ### Customize the Start screen on your test computer
@@ -39,25 +37,18 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 **To prepare a test computer**
 
 1. Set up a test computer on which to customize the Start layout. Your test computer should have the operating system that is installed on the users' computers (Windows 10 Pro, Enterprise, or Education). Install all apps and services that the Start layout should display.
-
 1. Create a new user account that you'll use to customize the Start layout.
 
 **To customize Start**
 
 1. Sign in to your test computer with the user account that you created.
-
 1. Customize the Start layout as you want users to see it by using the following techniques:
 
     - **Pin apps to Start**. From Start, type the name of the app. When the app appears in the search results, right-click the app, and then select **Pin to Start**.
-
         To view all apps, select **All apps** in the bottom-left corner of Start. Right-click any app, and pin or unpin it from Start.
-
     - **Unpin apps** that you don't want to display. To unpin an app, right-click the app, and then select **Unpin from Start**.
-
     - **Drag tiles** on Start to reorder or group apps.
-
     - **Resize tiles**. To resize tiles, right-click the tile and then select **Resize.**
-
     - **Create your own app groups**. Drag the apps to an empty area. To name a group, select above the group of tiles and then type the name in the **Name group** field that appears above the group.
 
 > [!IMPORTANT]
@@ -75,7 +66,6 @@ When you have the Start layout that you want your users to see, use the [Export-
 **To export the Start layout to an .xml file**
 
 1. While signed in with the same account that you used to customize Start, right-click Start, and select **Windows PowerShell**.
-
 1. On a device running Windows 10, version 1607, 1703, or 1803, at the Windows PowerShell command prompt, enter the following command:
 
     `Export-StartLayout -path <path><file name>.xml`
@@ -109,7 +99,7 @@ When you have the Start layout that you want your users to see, use the [Export-
         </LayoutModificationTemplate>
     ```
 
-1. (Optional) Edit the .xml file to add [a taskbar configuration](configure-windows-10-taskbar.md) or to [modify the exported layout](start-layout-xml-desktop.md). When you make changes to the exported layout, be aware that [the order of the elements in the .xml file is critical.](start-layout-xml-desktop.md#required-order)
+1. (Optional) Edit the .xml file to add [a taskbar configuration](../taskbar/configure-windows-10-taskbar.md) or to [modify the exported layout](start-layout-xml-desktop.md). When you make changes to the exported layout, be aware that [the order of the elements in the .xml file is critical.](start-layout-xml-desktop.md#required-order)
 
 > [!IMPORTANT]
 > If the Start layout that you export contains tiles for desktop (Win32) apps or .url links, **Export-StartLayout** will use **DesktopApplicationLinkPath** in the resulting file. Use a text or XML editor to change **DesktopApplicationLinkPath** to **DesktopApplicationID**. See [Specify Start tiles](start-layout-xml-desktop.md#specify-start-tiles) for details on using the app ID in place of the link path.
@@ -162,7 +152,7 @@ If the Start layout is applied by Group Policy or MDM, and the policy is removed
 
 [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
 
-[Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
+[Configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md)
 
 [Add image for secondary tiles](start-secondary-tiles.md)
 

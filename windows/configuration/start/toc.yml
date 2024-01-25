@@ -6,7 +6,7 @@ items:
 - name: Start layout and taskbar
   href: windows-10-start-layout-options-and-policies.md
 - name: Use XML
-  items: 
+  items:
   - name: Customize and export Start layout
     href: customize-and-export-start-layout.md
   - name: Add image for secondary Microsoft Edge tiles
@@ -21,5 +21,3 @@ items:
   href: customize-windows-10-start-screens-by-using-mobile-device-management.md
 - name: Troubleshoot Start menu errors
   href: /troubleshoot/windows-client/shell-experience/troubleshoot-start-menu-errors
-- name: Changes to Start policies in Windows 10
-  href: changes-to-start-policies-in-windows-10.md

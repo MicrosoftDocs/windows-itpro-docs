@@ -31,7 +31,7 @@ For more information, see [Customize and export Start layout](customize-and-expo
 
 For the **taskbar**, you can use the same XML file as the start screen. Or, you can create a new XML file. When you have the XML file, add this file to a group policy or a provisioning package. Using these methods, you can deploy the XML file to your devices. When the devices receive your policy, they'll use the taskbar settings you configured in the XML file.
 
-For more information, see [Configure Windows 10 taskbar](configure-windows-10-taskbar.md).
+For more information, see [Configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md).
 
 ## Use group policy
 
@@ -156,7 +156,7 @@ There are three app categories that could be pinned to a taskbar:
 - Default Windows apps pinned during the OS installation, such as Microsoft Edge, File Explorer, and Store
 - Apps pinned by your organization, such as in an unattended Windows setup
 
-  In an unattended Windows setup file, it's recommended to use the [layoutmodification.xml method](configure-windows-10-taskbar.md) to configure the taskbar options. It's not recommended to use [TaskbarLinks](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-taskbarlinks).
+  In an unattended Windows setup file, it's recommended to use the [layoutmodification.xml method](../taskbar/configure-windows-10-taskbar.md) to configure the taskbar options. It's not recommended to use [TaskbarLinks](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-taskbarlinks).
 
 The following example shows how apps are pinned. In OS configured to use a right-to-left language, the taskbar order is reversed:
 
@@ -195,7 +195,7 @@ On Windows 10 version 1607 and later, the new taskbar layout for upgrades apply 
 - If a user didn't pin the app, and the app is in the updated layout file, then the app is pinned to the right.
 - New apps specified in updated layout file are pinned to right of user's pinned apps.
 
-[Learn how to configure Windows 10 taskbar](configure-windows-10-taskbar.md).
+[Learn how to configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md).
 
 ## Start layout configuration errors
 
@@ -206,7 +206,7 @@ If your Start layout customization isn't applied as you expect, open the **Event
 
 ## Next steps
 
-- [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
+- [Configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md)
 - [Customize and export Start layout](customize-and-export-start-layout.md)
 - [Add image for secondary tiles](start-secondary-tiles.md)
 - [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)

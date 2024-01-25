@@ -19,15 +19,10 @@ For managed devices running Windows 10 Enterprise and Windows 10 Education, ente
 ## What does Windows Spotlight include?
 
 - **Background image**
-
     The Windows Spotlight displays a new image on the lock screen each day. The initial background image is included during installation. More images are downloaded on ongoing basis.
-
     ![lock screen image.](images/lockscreen.png)
-
 - **Feature suggestions, fun facts, tips**
-
     The lock screen background will occasionally make recommendations on how to enhance your productivity and enjoyment of Microsoft products including suggesting other relevant Microsoft products and services.
-
     ![fun facts.](images/funfacts.png)
 
 ## How do you turn off Windows Spotlight locally?
@@ -44,17 +39,14 @@ Windows Spotlight is enabled by default. Windows 10 provides Group Policy and mo
 >These policies are in the **User Configuration \Policies\Administrative Templates\Windows Components\Cloud Content** path in the Group Policy Management Console, and in the **User Configuration \Administrative Templates\Windows Components\Cloud Content** path in the Local Group Policy Editor.
 
 | Group Policy | MDM | Description | Applies to |
-| --- | --- | --- | --- |
+|--|--|--|--|
 | **Do not suggest third-party content in Windows spotlight** | **Experience/Allow ThirdParty Suggestions In Windows Spotlight** | Enables enterprises to restrict suggestions to Microsoft apps and services | Windows 10 Pro, Enterprise, and Education, version 1607 and later |
 | **Turn off all Windows Spotlight features** | **Experience/Allow Windows Spotlight** | Enables enterprises to completely disable all Windows Spotlight features in a single setting | Windows 10 Enterprise and Education, version 1607 and later |
 | **Configure Spotlight on lock screen** | **Experience/Configure Windows Spotlight On Lock Screen** | Specifically controls the use of the dynamic Windows Spotlight image on the lock screen, and can be enabled or disabled | Windows 10 Enterprise and Education, version 1607 and later |
-
-| **Turn off the Windows Spotlight on Action Center** | **Experience/Allow Windows Spotlight On Action Center** |  Turn off Suggestions from Microsoft that show after each clean install, upgrade, or on an on-going basis to introduce users to what is new or changed | Windows 10 Enterprise and Education, version 1703 |
+| **Turn off the Windows Spotlight on Action Center** | **Experience/Allow Windows Spotlight On Action Center** | Turn off Suggestions from Microsoft that show after each clean install, upgrade, or on an on-going basis to introduce users to what is new or changed | Windows 10 Enterprise and Education, version 1703 |
 | **Do not use diagnostic data for tailored experiences** | **Experience/Allow Tailored Experiences With Diagnostic Data** | Prevent Windows from using diagnostic data to provide tailored experiences to the user | Windows 10 Pro, Enterprise, and Education, version 1703 |
 | **Turn off the Windows Welcome Experience** | **Experience/Allow Windows Spotlight Windows Welcome Experience** | Turn off the Windows Spotlight Windows Welcome experience that helps introduce users to Windows, such as launching Microsoft Edge with a web page highlighting new features | Windows 10 Enterprise and Education, version 1703 |
-**Turn off the Windows Spotlight on Settings** | **Experience/Allow Windows Spotlight on Settings** | Turn off the Windows Spotlight in the Settings app. | Windows 10 Enterprise and Education, version 1803 |
-
-
+| **Turn off the Windows Spotlight on Settings** | **Experience/Allow Windows Spotlight on Settings** | Turn off the Windows Spotlight in the Settings app. | Windows 10 Enterprise and Education, version 1803 |
 
  In addition to the specific policy settings for Windows Spotlight, administrators can replace Windows Spotlight with a selected image using the Group Policy setting **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Force a specific default lock screen image** (Windows 10 Enterprise and Education).
 

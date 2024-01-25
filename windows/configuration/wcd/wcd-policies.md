@@ -13,156 +13,156 @@ This section describes the **Policies** settings that you can configure in [prov
 
 ## AboveLock
 
-| Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: |  :---: | :---: | :---: |
-| [AllowActionCenterNotifications](/windows/client-management/mdm/policy-configuration-service-provider#abovelock-allowactioncenternotifications)  | Allow Action Center notifications above the device lock screen. |  |   |  |  |
-| [AllowToasts](/windows/client-management/mdm/policy-configuration-service-provider#abovelock-allowtoasts)  | Allow toast notifications above the device lock screen.  | ✅  |   |   |  |
+| Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
+|--|--|:-:|:-:|:-:|:-:|
+| [AllowActionCenterNotifications](/windows/client-management/mdm/policy-configuration-service-provider#abovelock-allowactioncenternotifications) | Allow Action Center notifications above the device lock screen. |  |  |  |  |
+| [AllowToasts](/windows/client-management/mdm/policy-configuration-service-provider#abovelock-allowtoasts) | Allow toast notifications above the device lock screen. | ✅ |  |  |  |
 
 ## Accounts
 
-| Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: |
-| [AllowAddingNonMicrosoftAccountManually](/windows/client-management/mdm/policy-configuration-service-provider#accounts-allowaddingnonmicrosoftaccountsmanually) | Whether users can add non-Microsoft email accounts  | ✅ |   |  |  |
-| [AllowMicrosoftAccountConnection](/windows/client-management/mdm/policy-configuration-service-provider#accounts-allowmicrosoftaccountconnection) | Whether users can use a Microsoft account for non-email-related connection authentication and services  | ✅ |   | ✅ |  |
+| Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
+|--|--|:-:|:-:|:-:|:-:|
+| [AllowAddingNonMicrosoftAccountManually](/windows/client-management/mdm/policy-configuration-service-provider#accounts-allowaddingnonmicrosoftaccountsmanually) | Whether users can add non-Microsoft email accounts | ✅ |  |  |  |
+| [AllowMicrosoftAccountConnection](/windows/client-management/mdm/policy-configuration-service-provider#accounts-allowmicrosoftaccountconnection) | Whether users can use a Microsoft account for non-email-related connection authentication and services | ✅ |  | ✅ |  |
 | [AllowMicrosoftAccountSigninAssistant](/windows/client-management/mdm/policy-configuration-service-provider#accounts-allowmicrosoftaccountsigninassistant) | Disable the **Microsoft Account Sign-In Assistant** (wlidsvc) NT service | ✅ |  |  |  |
 | [DomainNamesForEmailSync](/windows/client-management/mdm/policy-configuration-service-provider#accounts-domainnamesforemailsync) | List of domains that are allowed to sync email on the devices | ✅ |  |  |  |
 
 ## ApplicationDefaults
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: |
-| [DefaultAssociationsConfiguration](/windows/client-management/mdm/policy-configuration-service-provider#applicationdefaults-defaultassociationsconfiguration) | Set default file type and protocol associations  | ✅ |  |  |  |
+|--|--|:-:|:-:|:-:|:-:|
+| [DefaultAssociationsConfiguration](/windows/client-management/mdm/policy-configuration-service-provider#applicationdefaults-defaultassociationsconfiguration) | Set default file type and protocol associations | ✅ |  |  |  |
 
 ## ApplicationManagement
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: |
-| [AllowAllTrustedApps](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowalltrustedapps) | Whether non-Microsoft Store apps are allowed | ✅ |   |  | ✅ |
-| [AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowappstoreautoupdate)  | Whether automatic update of apps from Microsoft Store is allowed  | ✅  |   |   | ✅ |
-| [AllowDeveloperUnlock](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowdeveloperunlock)  | Whether developer unlock of device is allowed  | ✅  | ✅  | ✅  | ✅ |
-| [AllowGameDVR](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowgamedvr)  |Whether DVR and broadcasting are allowed   | ✅  |  |   |   |
-| [AllowSharedUserAppData](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowshareduserappdata)  | Whether multiple users of the same app can share data  | ✅  |   |   |  |
-| [AllowStore](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowstore)  | Whether app store is allowed at device  |   |    |   |  |
-| [ApplicationRestrictions](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-applicationrestrictions)  | An XML blob that specifies app restrictions, such as an allowlist, disallow list, etc.  |   |   |  |  |
-| [LaunchAppAfterLogOn](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-launchappafterlogon)  |Whether to launch an app or apps when the user signs in.   | ✅  |   |   |  |
-| [RestrictAppDataToSystemVolume](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-restrictappdatatosystemvolume)  | Whether app data is restricted to the system drive  | ✅  |   |   | ✅ |
-| [RestrictAppToSystemVolume](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-restrictapptosystemvolume)  | Whether the installation of apps is restricted to the system drive   | ✅  |   |   | ✅ |
+|--|--|:-:|:-:|:-:|:-:|
+| [AllowAllTrustedApps](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowalltrustedapps) | Whether non-Microsoft Store apps are allowed | ✅ |  |  | ✅ |
+| [AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowappstoreautoupdate) | Whether automatic update of apps from Microsoft Store is allowed | ✅ |  |  | ✅ |
+| [AllowDeveloperUnlock](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowdeveloperunlock) | Whether developer unlock of device is allowed | ✅ | ✅ | ✅ | ✅ |
+| [AllowGameDVR](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowgamedvr) | Whether DVR and broadcasting are allowed | ✅ |  |  |  |
+| [AllowSharedUserAppData](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowshareduserappdata) | Whether multiple users of the same app can share data | ✅ |  |  |  |
+| [AllowStore](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowstore) | Whether app store is allowed at device |  |  |  |  |
+| [ApplicationRestrictions](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-applicationrestrictions) | An XML blob that specifies app restrictions, such as an allowlist, disallow list, etc. |  |  |  |  |
+| [LaunchAppAfterLogOn](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-launchappafterlogon) | Whether to launch an app or apps when the user signs in. | ✅ |  |  |  |
+| [RestrictAppDataToSystemVolume](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-restrictappdatatosystemvolume) | Whether app data is restricted to the system drive | ✅ |  |  | ✅ |
+| [RestrictAppToSystemVolume](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-restrictapptosystemvolume) | Whether the installation of apps is restricted to the system drive | ✅ |  |  | ✅ |
 
 ## Authentication
 
-| Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: |  :---: | :---: | :---: |
+| Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
+|--|--|:-:|:-:|:-:|:-:|
 | [AllowFastReconnect](/windows/client-management/mdm/policy-csp-authentication#authentication-allowfastreconnect) | Allows EAP Fast Reconnect from being attempted for EAP Method TLS. | ✅ | ✅ | ✅ | ✅ |
 | [EnableFastFirstSignin](/windows/client-management/mdm/policy-csp-authentication#authentication-enablefastfirstsignin) | Enables a quick first sign-in experience for a user by automatically connecting new non-admin Azure AD accounts to the pre-configured candidate local accounts. | ✅ | ✅ |  | ✅ |
-| [EnableWebSignin](/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin) | Enables Windows sign-in support for non-ADFS federated providers (for example, SAML). | ✅ |  ✅ |  | ✅ |
-| [PreferredAadTenantDomainName](/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname) | Specifies the preferred domain among available domains in the Azure AD tenant. | ✅ |  ✅ |  | ✅ |
+| [EnableWebSignin](/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin) | Enables Windows sign-in support for non-ADFS federated providers (for example, SAML). | ✅ | ✅ |  | ✅ |
+| [PreferredAadTenantDomainName](/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname) | Specifies the preferred domain among available domains in the Azure AD tenant. | ✅ | ✅ |  | ✅ |
 
 ## BitLocker
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: |
-| [EncryptionMethod](/windows/client-management/mdm/policy-configuration-service-provider#bitlocker-encryptionmethod)  | Specify BitLocker drive encryption method and cipher strength | ✅ |  |  |  |
+|--|--|:-:|:-:|:-:|:-:|
+| [EncryptionMethod](/windows/client-management/mdm/policy-configuration-service-provider#bitlocker-encryptionmethod) | Specify BitLocker drive encryption method and cipher strength | ✅ |  |  |  |
 
 ## Bluetooth
 
-| Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: |
-| [AllowAdvertising](/windows/client-management/mdm/policy-configuration-service-provider#bluetooth-allowadvertising)  | Whether the device can send out Bluetooth advertisements | ✅ | ✅ | ✅ | ✅ |
-| [AllowDiscoverableMode](/windows/client-management/mdm/policy-configuration-service-provider#bluetooth-allowdiscoverablemode)  | Whether other Bluetooth-enabled devices can discover the device  | ✅  |  ✅ | ✅ | ✅ |
-| [AllowPrepairing](/windows/client-management/mdm/policy-configuration-service-provider#bluetooth-allowprepairing)  | Whether to allow specific bundled Bluetooth peripherals to automatically pair with the host device  | ✅  | ✅ | ✅ | ✅ |
-| AllowPromptedProximalConnections | Whether Windows will prompt users when Bluetooth devices that are connectable are in range of the user's device  | ✅  |  ✅ | ✅ | ✅ |
-| [LocalDeviceName](/windows/client-management/mdm/policy-configuration-service-provider#bluetooth-localdevicename)  | Set the local Bluetooth device name  | ✅  |  ✅ | ✅ | ✅ |
-| [ServicesAllowedList](/windows/client-management/mdm/policy-configuration-service-provider#bluetooth-servicesallowedlist)  | Set a list of allowable services and profiles  | ✅  |  ✅  | ✅  | ✅ |
+| Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
+|--|--|:-:|:-:|:-:|:-:|
+| [AllowAdvertising](/windows/client-management/mdm/policy-configuration-service-provider#bluetooth-allowadvertising) | Whether the device can send out Bluetooth advertisements | ✅ | ✅ | ✅ | ✅ |
+| [AllowDiscoverableMode](/windows/client-management/mdm/policy-configuration-service-provider#bluetooth-allowdiscoverablemode) | Whether other Bluetooth-enabled devices can discover the device | ✅ | ✅ | ✅ | ✅ |
+| [AllowPrepairing](/windows/client-management/mdm/policy-configuration-service-provider#bluetooth-allowprepairing) | Whether to allow specific bundled Bluetooth peripherals to automatically pair with the host device | ✅ | ✅ | ✅ | ✅ |
+| AllowPromptedProximalConnections | Whether Windows will prompt users when Bluetooth devices that are connectable are in range of the user's device | ✅ | ✅ | ✅ | ✅ |
+| [LocalDeviceName](/windows/client-management/mdm/policy-configuration-service-provider#bluetooth-localdevicename) | Set the local Bluetooth device name | ✅ | ✅ | ✅ | ✅ |
+| [ServicesAllowedList](/windows/client-management/mdm/policy-configuration-service-provider#bluetooth-servicesallowedlist) | Set a list of allowable services and profiles | ✅ | ✅ | ✅ | ✅ |
 
 ## Browser
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: |
-| [AllowAddressBarDropdown](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowaddressbardropdown) | Specify whether to allow the address bar drop-down functionality in Microsoft Edge. If you want to minimize network connections from Microsoft Edge to Microsoft services, we recommend disabling this functionality.  | ✅ |  |  |  |
-| [AllowAutofill](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowautofill)  | Specify whether autofill on websites is allowed.  | ✅  |  ✅  |   | ✅ |
-| [AllowBrowser](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowbrowser) | Specify whether the browser is allowed on the device (for Windows 10, version 1803 and earlier only). | ✅ |   |  |  |
-[AllowConfigurationUpdateForBooksLibrary](/windows/client-management/mdm/policy-csp-browser#browser-allowconfigurationupdateforbookslibrary) | Specify whether Microsoft Edge can automatically update the configuration data for the Books Library. | ✅ |   |  |  |
-| [AllowCookies](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowcookies)  | Specify whether cookies are allowed.  | ✅  |  ✅  |   | ✅ |
+|--|--|:-:|:-:|:-:|:-:|
+| [AllowAddressBarDropdown](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowaddressbardropdown) | Specify whether to allow the address bar drop-down functionality in Microsoft Edge. If you want to minimize network connections from Microsoft Edge to Microsoft services, we recommend disabling this functionality. | ✅ |  |  |  |
+| [AllowAutofill](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowautofill) | Specify whether autofill on websites is allowed. | ✅ | ✅ |  | ✅ |
+| [AllowBrowser](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowbrowser) | Specify whether the browser is allowed on the device (for Windows 10, version 1803 and earlier only). | ✅ |  |  |  |
+| [AllowConfigurationUpdateForBooksLibrary](/windows/client-management/mdm/policy-csp-browser#browser-allowconfigurationupdateforbookslibrary) | Specify whether Microsoft Edge can automatically update the configuration data for the Books Library. | ✅ |  |  |  |
+| [AllowCookies](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowcookies) | Specify whether cookies are allowed. | ✅ | ✅ |  | ✅ |
 | [AllowDeveloperTools](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowdevelopertools) | Specify whether employees can use F12 Developer Tools on Microsoft Edge. | ✅ |  |  |  |
-| [AllowDoNotTrack](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowdonottrack)  | Specify whether Do not Track headers are allowed.  | ✅  |  ✅  |   | ✅ |
+| [AllowDoNotTrack](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowdonottrack) | Specify whether Do not Track headers are allowed. | ✅ | ✅ |  | ✅ |
 | [AllowExtensions](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowextensions) | Specify whether Microsoft Edge extensions are allowed. | ✅ |  |  |  |
-| [AllowFlash](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowflash)  | Specify whether Adobe Flash can run in Microsoft Edge.  |  ✅ |   |   |  |
+| [AllowFlash](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowflash) | Specify whether Adobe Flash can run in Microsoft Edge. | ✅ |  |  |  |
 | [AllowFlashClickToRun](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowflashclicktorun) | Specify whether users must take an action, such as clicking the content or a Click-to-Run button, before seeing content in Adobe Flash. | ✅ |  |  |  |
-| [AllowFullScreenMode](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowfullscreenmode)  | Specify whether full-screen mode is allowed.  | ✅  |  ✅  |   | ✅ |
-| [AllowInPrivate](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowinprivate)  | Specify whether InPrivate browsing is allowed on corporate networks.  | ✅  |  ✅  |   | ✅ |
-| [AllowMicrosoftCompatibilityList](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowmicrosoftcompatibilitylist) | Specify whether to use the Microsoft compatibility list in Microsoft Edge. | ✅ |  ✅ |  | ✅ |
-| [AllowPasswordManager](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowpasswordmanager)  | Specify whether saving and managing passwords locally on the device is allowed.  | ✅  |  ✅  |   | ✅ |
+| [AllowFullScreenMode](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowfullscreenmode) | Specify whether full-screen mode is allowed. | ✅ | ✅ |  | ✅ |
+| [AllowInPrivate](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowinprivate) | Specify whether InPrivate browsing is allowed on corporate networks. | ✅ | ✅ |  | ✅ |
+| [AllowMicrosoftCompatibilityList](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowmicrosoftcompatibilitylist) | Specify whether to use the Microsoft compatibility list in Microsoft Edge. | ✅ | ✅ |  | ✅ |
+| [AllowPasswordManager](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowpasswordmanager) | Specify whether saving and managing passwords locally on the device is allowed. | ✅ | ✅ |  | ✅ |
 | [AllowPopups](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowpopups) | Specify whether pop-up blocker is allowed or enabled. | ✅ |  | ✅ |  |
-| [AllowPrelaunch](/windows/client-management/mdm/policy-csp-browser#browser-allowprelaunch)  | Specify whether Microsoft Edge can pre-launch as a background process during Windows startup when the system is idle waiting to be launched by the user.   | ✅  |    |   |  |
-| [AllowPrinting](/windows/client-management/mdm/policy-csp-browser#browser-allowprinting)  | Specify whether users can print web content in Microsoft Edge.   | ✅  |   ✅ |   | ✅ |
-| [AllowSavingHistory](/windows/client-management/mdm/policy-csp-browser#browser-allowsavinghistory)  | Specify whether Microsoft Edge saves the browsing history.   | ✅  |   |   |  |
-| [AllowSearchEngineCustomization](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowsearchenginecustomization)  | Allow search engine customization for MDM-enrolled devices.  | ✅  |  ✅  |   | ✅ |
+| [AllowPrelaunch](/windows/client-management/mdm/policy-csp-browser#browser-allowprelaunch) | Specify whether Microsoft Edge can pre-launch as a background process during Windows startup when the system is idle waiting to be launched by the user. | ✅ |  |  |  |
+| [AllowPrinting](/windows/client-management/mdm/policy-csp-browser#browser-allowprinting) | Specify whether users can print web content in Microsoft Edge. | ✅ | ✅ |  | ✅ |
+| [AllowSavingHistory](/windows/client-management/mdm/policy-csp-browser#browser-allowsavinghistory) | Specify whether Microsoft Edge saves the browsing history. | ✅ |  |  |  |
+| [AllowSearchEngineCustomization](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowsearchenginecustomization) | Allow search engine customization for MDM-enrolled devices. | ✅ | ✅ |  | ✅ |
 | [AllowSearchSuggestionsinAddressBar](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowsearchsuggestionsinaddressbar) | Specify whether search suggestions are allowed in the address bar. | ✅ | ✅ |  | ✅ |
-| [AllowSideloadingOfExtensions](/windows/client-management/mdm/policy-csp-browser#browser-allowsideloadingofextensions)  | Specify whether extensions can be sideloaded in Microsoft Edge.   | ✅  |   |   |  |
-| [AllowSmartScreen](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowsmartscreen)  | Specify whether Windows Defender SmartScreen is allowed.  | ✅  | ✅  | ✅  | ✅ |
-| [AllowTabPreloading](/windows/client-management/mdm/policy-csp-browser#browser-allowtabpreloading)  | Specify whether preloading the Start and New tab pages during Windows sign-in is allowed.   | ✅  |    |   |  |
-| [AllowWebContentOnNewTabPage](/windows/client-management/mdm/policy-csp-browser#browser-allowwebcontentonnewtabpage)  | Specify whether a New tab page opens with the default content or a blank page.   | ✅  |  ✅  |   | ✅ |
-[AlwaysEnableBooksLibrary](/windows/client-management/mdm/policy-csp-browser#browser-alwaysenablebookslibrary) | Always show the Books Library in Microsoft Edge. | ✅ |   |  |  |
-| [ClearBrowsingDataOnExit](/windows/client-management/mdm/policy-configuration-service-provider#browser-clearbrowsingdataonexit) | Specify whether to clear browsing data when exiting Microsoft Edge. | ✅ |   |  |  |
-| [ConfigureAdditionalSearchEngines](/windows/client-management/mdm/policy-configuration-service-provider#browser-configureadditionalsearchengines)  | Allows you to add up to five more search engines for MDM-enrolled devices.  | ✅  |  ✅  |   | ✅ |
-| [ConfigureFavoritesBar](/windows/client-management/mdm/policy-csp-browser#browser-configurefavoritesbar)  | Specify whether the Favorites bar is shown or hidden on all pages.   | ✅  |   |   |  |
-| [ConfigureHomeButton](/windows/client-management/mdm/policy-csp-browser#browser-configurehomebutton)  | Configure whether the Home button will be shown, and what should happen when it's selected. You should also configure the [SetHomeButtonURL](/windows/client-management/mdm/policy-csp-browser#browser-sethomebuttonurl) setting. To configure this setting and also allow users to make changes to the Home button, see the [UnlockHomeButton](/windows/client-management/mdm/policy-csp-browser#browser-unlockhomebutton) setting.  | ✅  |   |   |  |
-| [ConfigureKioskMode](/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)  | Configure how Microsoft Edge operates when it's running in kiosk mode, either as a single-app kiosk or as one of multiple apps running on the kiosk device.  | ✅  |   |   |  |
-| [ConfigureKioskResetAfterIdleTimeout](/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)  | Specify the time, in minutes, after which Microsoft Edge running in kiosk mode resets to the default kiosk configuration.  | ✅  |   |   |  |
-| [ConfigureOpenMicrosoftEdgeWith](/windows/client-management/mdm/policy-csp-browser#browser-configureopenmicrosoftedgewith)  | Specify which pages should load when Microsoft Edge opens. You should also configure the [ConfigureStartPages](/windows/client-management/mdm/policy-csp-browser#browser-configurestartpages) setting and [DisableLockdownOfStartPages](/windows/client-management/mdm/policy-configuration-service-provider#browser-disablelockdownofstartpages) setting.  | ✅  |   |   |  |
-| [ConfigureTelemetryForMicrosoft365Analytics](/windows/client-management/mdm/policy-csp-browser#browser-configuretelemetryformicrosoft365analytics)  | Specify whether to send Microsoft Edge browsing history data to Microsoft 365 Analytics.  | ✅  |    |   |  |
+| [AllowSideloadingOfExtensions](/windows/client-management/mdm/policy-csp-browser#browser-allowsideloadingofextensions) | Specify whether extensions can be sideloaded in Microsoft Edge. | ✅ |  |  |  |
+| [AllowSmartScreen](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowsmartscreen) | Specify whether Windows Defender SmartScreen is allowed. | ✅ | ✅ | ✅ | ✅ |
+| [AllowTabPreloading](/windows/client-management/mdm/policy-csp-browser#browser-allowtabpreloading) | Specify whether preloading the Start and New tab pages during Windows sign-in is allowed. | ✅ |  |  |  |
+| [AllowWebContentOnNewTabPage](/windows/client-management/mdm/policy-csp-browser#browser-allowwebcontentonnewtabpage) | Specify whether a New tab page opens with the default content or a blank page. | ✅ | ✅ |  | ✅ |
+| [AlwaysEnableBooksLibrary](/windows/client-management/mdm/policy-csp-browser#browser-alwaysenablebookslibrary) | Always show the Books Library in Microsoft Edge. | ✅ |  |  |  |
+| [ClearBrowsingDataOnExit](/windows/client-management/mdm/policy-configuration-service-provider#browser-clearbrowsingdataonexit) | Specify whether to clear browsing data when exiting Microsoft Edge. | ✅ |  |  |  |
+| [ConfigureAdditionalSearchEngines](/windows/client-management/mdm/policy-configuration-service-provider#browser-configureadditionalsearchengines) | Allows you to add up to five more search engines for MDM-enrolled devices. | ✅ | ✅ |  | ✅ |
+| [ConfigureFavoritesBar](/windows/client-management/mdm/policy-csp-browser#browser-configurefavoritesbar) | Specify whether the Favorites bar is shown or hidden on all pages. | ✅ |  |  |  |
+| [ConfigureHomeButton](/windows/client-management/mdm/policy-csp-browser#browser-configurehomebutton) | Configure whether the Home button will be shown, and what should happen when it's selected. You should also configure the [SetHomeButtonURL](/windows/client-management/mdm/policy-csp-browser#browser-sethomebuttonurl) setting. To configure this setting and also allow users to make changes to the Home button, see the [UnlockHomeButton](/windows/client-management/mdm/policy-csp-browser#browser-unlockhomebutton) setting. | ✅ |  |  |  |
+| [ConfigureKioskMode](/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode) | Configure how Microsoft Edge operates when it's running in kiosk mode, either as a single-app kiosk or as one of multiple apps running on the kiosk device. | ✅ |  |  |  |
+| [ConfigureKioskResetAfterIdleTimeout](/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout) | Specify the time, in minutes, after which Microsoft Edge running in kiosk mode resets to the default kiosk configuration. | ✅ |  |  |  |
+| [ConfigureOpenMicrosoftEdgeWith](/windows/client-management/mdm/policy-csp-browser#browser-configureopenmicrosoftedgewith) | Specify which pages should load when Microsoft Edge opens. You should also configure the [ConfigureStartPages](/windows/client-management/mdm/policy-csp-browser#browser-configurestartpages) setting and [DisableLockdownOfStartPages](/windows/client-management/mdm/policy-configuration-service-provider#browser-disablelockdownofstartpages) setting. | ✅ |  |  |  |
+| [ConfigureTelemetryForMicrosoft365Analytics](/windows/client-management/mdm/policy-csp-browser#browser-configuretelemetryformicrosoft365analytics) | Specify whether to send Microsoft Edge browsing history data to Microsoft 365 Analytics. | ✅ |  |  |  |
 | [DisableLockdownOfStartPages](/windows/client-management/mdm/policy-configuration-service-provider#browser-disablelockdownofstartpages) | Specify whether the lockdown on the Start pages is disabled. | ✅ |  |  |  |
-[EnableExtendedBooksTelemetry](/windows/client-management/mdm/policy-csp-browser#browser-enableextendedbookstelemetry) | Enable this setting to send more diagnostic data, on top of the basic diagnostic data, from the Books tab.  | ✅ | ✅ |  |  |
-| [EnterpriseModeSiteList](/windows/client-management/mdm/policy-configuration-service-provider#browser-enterprisemodesitelist)  | Allow the user to specify a URL of an enterprise site list.  | ✅  |    |   |  |
+| [EnableExtendedBooksTelemetry](/windows/client-management/mdm/policy-csp-browser#browser-enableextendedbookstelemetry) | Enable this setting to send more diagnostic data, on top of the basic diagnostic data, from the Books tab. | ✅ | ✅ |  |  |
+| [EnterpriseModeSiteList](/windows/client-management/mdm/policy-configuration-service-provider#browser-enterprisemodesitelist) | Allow the user to specify a URL of an enterprise site list. | ✅ |  |  |  |
 | [EnterpriseSiteListServiceUrl](/windows/client-management/mdm/policy-csp-browser#browser-enterprisesitelistserviceurl) | This policy (introduced in Windows 10, version 1507) was deprecated in Windows 10, version 1511 by [Browser/EnterpriseModeSiteList](/windows/client-management/mdm/policy-configuration-service-provider#browser-enterprisemodesitelist). | ✅ |  |  |  |
-| [FirstRunURL](/windows/client-management/mdm/policy-configuration-service-provider#browser-firstrunurl)  | Specify the URL that Microsoft Edge will use when it's opened for the first time.  | ✅  |   |   |  |
-| [HomePages](/windows/client-management/mdm/policy-configuration-service-provider#browser-homepages) | Specify your Start pages for MDM-enrolled devices. | ✅ |   |  |  |
-[LockdownFavorites](/windows/client-management/mdm/policy-csp-browser#browser-lockdownfavorites) | Configure whether employees can add, import, sort, or edit the Favorites list in Microsoft Edge.  | ✅ |   |  |  |
-| [PreventAccessToAboutFlagsInMicrosoftEdge](/windows/client-management/mdm/policy-configuration-service-provider#browser-preventaccesstoaboutflagsinmicrosoftedge)  | Specify whether users can access the **about:flags** page, which is used to change developer settings and to enable experimental features.  | ✅  |  ✅  |   | ✅ |
-| [PreventCertErrorOverrides](/windows/client-management/mdm/policy-csp-browser#browser-preventcerterroroverrides)  | Specify whether to override security warnings about sites that have SSL errors.  | ✅  |   ✅ |   | ✅ |
+| [FirstRunURL](/windows/client-management/mdm/policy-configuration-service-provider#browser-firstrunurl) | Specify the URL that Microsoft Edge will use when it's opened for the first time. | ✅ |  |  |  |
+| [HomePages](/windows/client-management/mdm/policy-configuration-service-provider#browser-homepages) | Specify your Start pages for MDM-enrolled devices. | ✅ |  |  |  |
+| [LockdownFavorites](/windows/client-management/mdm/policy-csp-browser#browser-lockdownfavorites) | Configure whether employees can add, import, sort, or edit the Favorites list in Microsoft Edge. | ✅ |  |  |  |
+| [PreventAccessToAboutFlagsInMicrosoftEdge](/windows/client-management/mdm/policy-configuration-service-provider#browser-preventaccesstoaboutflagsinmicrosoftedge) | Specify whether users can access the **about:flags** page, which is used to change developer settings and to enable experimental features. | ✅ | ✅ |  | ✅ |
+| [PreventCertErrorOverrides](/windows/client-management/mdm/policy-csp-browser#browser-preventcerterroroverrides) | Specify whether to override security warnings about sites that have SSL errors. | ✅ | ✅ |  | ✅ |
 | [PreventFirstRunPage](/windows/client-management/mdm/policy-configuration-service-provider#browser-preventfirstrunpage) | Specify whether to enable or disable the First Run webpage. | ✅ |  |  |  |
-| [PreventLiveTileDataCollection](/windows/client-management/mdm/policy-configuration-service-provider#browser-preventlivetiledatacollection)  | Specify whether Microsoft can collect information to create a Live Tile when pinning a site to Start from Microsoft Edge.  | ✅  |  ✅  |   | ✅ |
-| [PreventSmartScreenPromptOverride](/windows/client-management/mdm/policy-configuration-service-provider#browser-preventsmartscreenpromptoverride)  | Specify whether users can override the Windows Defender SmartScreen warnings about potentially malicious websites.  | ✅  |  ✅  |   | ✅ |
-| [PreventSmartScreenPromptOverrideForFiles](/windows/client-management/mdm/policy-configuration-service-provider#browser-preventsmartscreenpromptoverrideforfiles) | Specify whether users can override the Windows Defender SmartScreen warnings about downloading unverified files. | ✅ |  ✅ |  | ✅ |
-PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Start and New Tab page at Windows startup and each time Microsoft Edge is closed. Applies to Windows 10, version 1803 and earlier only. | ✅ |  |  |  |
-| [PreventTurningOffRequiredExtensions](/windows/client-management/mdm/policy-configuration-service-provider#browser-forceenabledextensions)  | Enter a list of extensions in Microsoft Edge that users can't turn off, using a semi-colon delimited list of extension package family names.  | ✅  |   |   |  |
-| [PreventUsingLocalHostIPAddressForWebRTC](/windows/client-management/mdm/policy-configuration-service-provider#browser-preventusinglocalhostipaddressforwebrtc)  | Specify whether a user's localhost IP address is displayed while making phone calls using the WebRTC protocol.  | ✅  |  ✅  |   | ✅ |
-[ProvisionFavorites](/windows/client-management/mdm/policy-csp-browser#browser-provisionfavorites) | Configure a default set of favorites that will appear for employees. | ✅ |   |  |  |
-| [SendIntranetTraffictoInternetExplorer](/windows/client-management/mdm/policy-configuration-service-provider#browser-sendintranettraffictointernetexplorer) | Specify whether to send intranet traffic to Internet Explorer. | ✅ |   |  |  |
-| [SetDefaultSearchEngine](/windows/client-management/mdm/policy-configuration-service-provider#browser-setdefaultsearchengine) | Configure the default search engine for your employees.  | ✅  |  ✅  |   | ✅ |
-| [SetHomeButtonURL](/windows/client-management/mdm/policy-csp-browser#browser-sethomebuttonurl)  | Specify a custom URL for the Home button. You should also enable the [ConfigureHomeButton](/windows/client-management/mdm/policy-csp-browser#browser-configurehomebutton) setting and select the **Show the home button; clicking the home button loads a specific URL** option.  | ✅  |   |   |  |
-| [SetNewTabPageURL](/windows/client-management/mdm/policy-csp-browser#browser-setnewtabpageurl)  | Specify a custom URL for a New tab page.  | ✅  |   |   |  |
-| [ShowMessageWhenOpeningSitesInInternetExplorer](/windows/client-management/mdm/policy-configuration-service-provider#browser-showmessagewhenopeningsitesininternetexplorer) | Specify whether users should see a full interstitial page in Microsoft Edge when opening sites that are configured to open in Internet Explorer using the Enterprise Site list. | ✅ |   |  |  |
-| [SyncFavoritesBetweenIEAndMicrosoftEdge](/windows/client-management/mdm/policy-configuration-service-provider#browser-syncfavoritesbetweenieandmicrosoftedge)  | Specify whether favorites are kept in sync between Internet Explorer and Microsoft Edge.  | ✅  |    |   |  |
-| [UnlockHomeButton](/windows/client-management/mdm/policy-csp-browser#browser-unlockhomebutton)  | Specify whether users can make changes to the Home button.  | ✅  |    |   |  |
-[UseSharedFolderForBooks](/windows/client-management/mdm/policy-csp-browser#browser-usesharedfolderforbooks) | Specify whether organizations should use a folder shared across users to store books from the Books Library. | ✅  |   |   |  |
+| [PreventLiveTileDataCollection](/windows/client-management/mdm/policy-configuration-service-provider#browser-preventlivetiledatacollection) | Specify whether Microsoft can collect information to create a Live Tile when pinning a site to Start from Microsoft Edge. | ✅ | ✅ |  | ✅ |
+| [PreventSmartScreenPromptOverride](/windows/client-management/mdm/policy-configuration-service-provider#browser-preventsmartscreenpromptoverride) | Specify whether users can override the Windows Defender SmartScreen warnings about potentially malicious websites. | ✅ | ✅ |  | ✅ |
+| [PreventSmartScreenPromptOverrideForFiles](/windows/client-management/mdm/policy-configuration-service-provider#browser-preventsmartscreenpromptoverrideforfiles) | Specify whether users can override the Windows Defender SmartScreen warnings about downloading unverified files. | ✅ | ✅ |  | ✅ |
+| PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Start and New Tab page at Windows startup and each time Microsoft Edge is closed. Applies to Windows 10, version 1803 and earlier only. | ✅ |  |  |  |
+| [PreventTurningOffRequiredExtensions](/windows/client-management/mdm/policy-configuration-service-provider#browser-forceenabledextensions) | Enter a list of extensions in Microsoft Edge that users can't turn off, using a semi-colon delimited list of extension package family names. | ✅ |  |  |  |
+| [PreventUsingLocalHostIPAddressForWebRTC](/windows/client-management/mdm/policy-configuration-service-provider#browser-preventusinglocalhostipaddressforwebrtc) | Specify whether a user's localhost IP address is displayed while making phone calls using the WebRTC protocol. | ✅ | ✅ |  | ✅ |
+| [ProvisionFavorites](/windows/client-management/mdm/policy-csp-browser#browser-provisionfavorites) | Configure a default set of favorites that will appear for employees. | ✅ |  |  |  |
+| [SendIntranetTraffictoInternetExplorer](/windows/client-management/mdm/policy-configuration-service-provider#browser-sendintranettraffictointernetexplorer) | Specify whether to send intranet traffic to Internet Explorer. | ✅ |  |  |  |
+| [SetDefaultSearchEngine](/windows/client-management/mdm/policy-configuration-service-provider#browser-setdefaultsearchengine) | Configure the default search engine for your employees. | ✅ | ✅ |  | ✅ |
+| [SetHomeButtonURL](/windows/client-management/mdm/policy-csp-browser#browser-sethomebuttonurl) | Specify a custom URL for the Home button. You should also enable the [ConfigureHomeButton](/windows/client-management/mdm/policy-csp-browser#browser-configurehomebutton) setting and select the **Show the home button; clicking the home button loads a specific URL** option. | ✅ |  |  |  |
+| [SetNewTabPageURL](/windows/client-management/mdm/policy-csp-browser#browser-setnewtabpageurl) | Specify a custom URL for a New tab page. | ✅ |  |  |  |
+| [ShowMessageWhenOpeningSitesInInternetExplorer](/windows/client-management/mdm/policy-configuration-service-provider#browser-showmessagewhenopeningsitesininternetexplorer) | Specify whether users should see a full interstitial page in Microsoft Edge when opening sites that are configured to open in Internet Explorer using the Enterprise Site list. | ✅ |  |  |  |
+| [SyncFavoritesBetweenIEAndMicrosoftEdge](/windows/client-management/mdm/policy-configuration-service-provider#browser-syncfavoritesbetweenieandmicrosoftedge) | Specify whether favorites are kept in sync between Internet Explorer and Microsoft Edge. | ✅ |  |  |  |
+| [UnlockHomeButton](/windows/client-management/mdm/policy-csp-browser#browser-unlockhomebutton) | Specify whether users can make changes to the Home button. | ✅ |  |  |  |
+| [UseSharedFolderForBooks](/windows/client-management/mdm/policy-csp-browser#browser-usesharedfolderforbooks) | Specify whether organizations should use a folder shared across users to store books from the Books Library. | ✅ |  |  |  |
 
 ## Camera
 
-| Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: |
-| [AllowCamera](/windows/client-management/mdm/policy-configuration-service-provider#camera-allowcamera) | Disable or enable the camera. | ✅ |  ✅ |  |  |
+| Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
+|--|--|:-:|:-:|:-:|:-:|
+| [AllowCamera](/windows/client-management/mdm/policy-configuration-service-provider#camera-allowcamera) | Disable or enable the camera. | ✅ | ✅ |  |  |
 
 ## Connectivity
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: |
-| [AllowBluetooth](/windows/client-management/mdm/policy-configuration-service-provider#connectivity-allowbluetooth) | Allow the user to enable Bluetooth or restrict access. | ✅ |  ✅ | ✅ | ✅ |
+|--|--|:-:|:-:|:-:|:-:|
+| [AllowBluetooth](/windows/client-management/mdm/policy-configuration-service-provider#connectivity-allowbluetooth) | Allow the user to enable Bluetooth or restrict access. | ✅ | ✅ | ✅ | ✅ |
 | [AllowCellularData](/windows/client-management/mdm/policy-configuration-service-provider#connectivity-allowcellulardata) | Allow the cellular data channel on the device. | ✅ | ✅ |  | ✅ |
 | [AllowCellularDataRoaming](/windows/client-management/mdm/policy-configuration-service-provider#connectivity-allowcellulardataroaming) | Allow or disallow cellular data roaming on the device. | ✅ | ✅ |  | ✅ |
 | [AllowConnectedDevices](/windows/client-management/mdm/policy-configuration-service-provider#connectivity-allowconnecteddevices) | Allows IT admins the ability to disable the Connected Devices Platform component. | ✅ | ✅ |  | ✅ |
-| [AllowNFC](/windows/client-management/mdm/policy-configuration-service-provider#connectivity-allownfc) | Allow or disallow near field communication (NFC) on the device. |  |   |  | ✅ |
-| [AllowUSBConnection](/windows/client-management/mdm/policy-configuration-service-provider#connectivity-allowusbconnection) | Enable USB connection between the device and a computer to sync files with the device or to use developer tools or to deploy or debug applications. |  |   |  | ✅ |
-| [AllowVPNOverCellular](/windows/client-management/mdm/policy-configuration-service-provider#connectivity-allowvpnovercellular) | Specify what type of underlying connections VPN is allowed to use. |✅ |  ✅ |  | ✅ |
+| [AllowNFC](/windows/client-management/mdm/policy-configuration-service-provider#connectivity-allownfc) | Allow or disallow near field communication (NFC) on the device. |  |  |  | ✅ |
+| [AllowUSBConnection](/windows/client-management/mdm/policy-configuration-service-provider#connectivity-allowusbconnection) | Enable USB connection between the device and a computer to sync files with the device or to use developer tools or to deploy or debug applications. |  |  |  | ✅ |
+| [AllowVPNOverCellular](/windows/client-management/mdm/policy-configuration-service-provider#connectivity-allowvpnovercellular) | Specify what type of underlying connections VPN is allowed to use. | ✅ | ✅ |  | ✅ |
 | [AllowVPNRoamingOverCellular](/windows/client-management/mdm/policy-configuration-service-provider#connectivity-allowvpnroamingovercellular) | Prevent the device from connecting to VPN when the device roams over cellular networks. | ✅ | ✅ |  | ✅ |
 | HideCellularConnectionMode | Hide the checkbox that lets the user change the connection mode. | ✅ | ✅ |  | ✅ |
-| HideCellularRoamingOption | Hide the dropdown menu that lets the user change the roaming preferences.  | ✅ |  ✅ |  | ✅ |
+| HideCellularRoamingOption | Hide the dropdown menu that lets the user change the roaming preferences. | ✅ | ✅ |  | ✅ |
 
 ## CredentialProviders
 
-| Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: |  :---: | :---: | :---: |
-[DisableAutomaticReDeploymentCredentials](/windows/client-management/mdm/policy-csp-credentialproviders) | This setting disables the visibility of the credential provider that triggers the PC refresh on a device. This policy doesn't actually trigger the refresh. The admin user is required to authenticate to trigger the refresh on the target device. The Windows 10 Autopilot Reset feature allows admin to reset devices to a known good managed state while preserving the management enrollment. After the automatic redeployment is triggered, the devices are for ready for use by information workers or students. | ✅ |  |  |  |
+| Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
+|--|--|:-:|:-:|:-:|:-:|
+| [DisableAutomaticReDeploymentCredentials](/windows/client-management/mdm/policy-csp-credentialproviders) | This setting disables the visibility of the credential provider that triggers the PC refresh on a device. This policy doesn't actually trigger the refresh. The admin user is required to authenticate to trigger the refresh on the target device. The Windows 10 Autopilot Reset feature allows admin to reset devices to a known good managed state while preserving the management enrollment. After the automatic redeployment is triggered, the devices are for ready for use by information workers or students. | ✅ |  |  |  |
 
 ## Cryptography
 
@@ -297,7 +297,7 @@ PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Star
 
 ## KioskBrowser
 
-These settings apply to the **Kiosk Browser** app available in Microsoft Store. For more information, see [Guidelines for web browsers](../guidelines-for-assigned-access-app.md#guidelines-for-web-browsers).
+These settings apply to the **Kiosk Browser** app available in Microsoft Store. For more information, see [Guidelines for web browsers](../kiosk/guidelines-for-assigned-access-app.md#guidelines-for-web-browsers).
 
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: |
@@ -313,9 +313,7 @@ To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in
 
 1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer.
 1. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18).
-
-1. Insert the null character string in between each URL (e.g www.bing.com&#xF000;www.contoso.com).
-
+1. Insert the null character string in between each URL (e.g https://www.bing.com&#xF000;www.contoso.com).
 1. Save the XML file.
 1. Open the project again in Windows Configuration Designer.
 1. Export the package. Ensure you don't revisit the created policies under Kiosk Browser or else the null character will be removed.
@@ -370,22 +368,21 @@ To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in
 
 ## Search
 
-| Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: |
-
-[AllowCloudSearch](/windows/client-management/mdm/policy-csp-search#search-allowcloudsearch) | Allow search and Cortana to search cloud sources like OneDrive and SharePoint. T   | ✅ |   |  |  |
-[AllowCortanaInAAD](/windows/client-management/mdm/policy-csp-search#search-allowcortanainaad) | This setting specifies whether the Cortana consent page can appear in the Azure Active Directory (AAD) device out-of-box-experience (OOBE) flow.    | ✅ |   |  |  |
-| [AllowIndexingEncryptedStoresOrItems](/windows/client-management/mdm/policy-configuration-service-provider#search-allowindexingencryptedstoresoritems) | Allow or disallow the indexing of items. | ✅ |   |  |  |
-| [AllowSearchToUseLocation](/windows/client-management/mdm/policy-configuration-service-provider#search-allowsearchtouselocation) | Specify whether search can use location information. | ✅ |   | ✅ |  |
-| [AllowUsingDiacritics](/windows/client-management/mdm/policy-configuration-service-provider#search-allowusingdiacritics) | Allow the use of diacritics. | ✅ |   |  |  |
-| [AllowWindowsIndexer](/windows/client-management/mdm/policy-csp-search#search-allowwindowsindexer) | The indexer provides fast file, email, and web history search for apps and system components including Cortana, Outlook, file explorer, and Edge. To provide these features, it requires access to the file system and app data stores such as Outlook OST files.</br></br>- **Off** setting disables Windows indexer</br>- **EnterpriseSecure** setting stops the indexer from indexing encrypted files or stores, and is recommended for enterprises using Windows Information Protection (WIP)</br>- **Enterprise** setting reduces potential network loads for enterprises</br>- **Standard** setting is appropriate for consumers | ✅ |   |  |  |
+| Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
+|--|--|:-:|:-:|:-:|:-:|
+| [AllowCloudSearch](/windows/client-management/mdm/policy-csp-search#search-allowcloudsearch) | Allow search and Cortana to search cloud sources like OneDrive and SharePoint. T | ✅ |  |  |  |
+| [AllowCortanaInAAD](/windows/client-management/mdm/policy-csp-search#search-allowcortanainaad) | This setting specifies whether the Cortana consent page can appear in the Azure Active Directory (AAD) device out-of-box-experience (OOBE) flow. | ✅ |  |  |  |
+| [AllowIndexingEncryptedStoresOrItems](/windows/client-management/mdm/policy-configuration-service-provider#search-allowindexingencryptedstoresoritems) | Allow or disallow the indexing of items. | ✅ |  |  |  |
+| [AllowSearchToUseLocation](/windows/client-management/mdm/policy-configuration-service-provider#search-allowsearchtouselocation) | Specify whether search can use location information. | ✅ |  | ✅ |  |
+| [AllowUsingDiacritics](/windows/client-management/mdm/policy-configuration-service-provider#search-allowusingdiacritics) | Allow the use of diacritics. | ✅ |  |  |  |
+| [AllowWindowsIndexer](/windows/client-management/mdm/policy-csp-search#search-allowwindowsindexer) | The indexer provides fast file, email, and web history search for apps and system components including Cortana, Outlook, file explorer, and Edge. To provide these features, it requires access to the file system and app data stores such as Outlook OST files.</br></br>- **Off** setting disables Windows indexer</br>- **EnterpriseSecure** setting stops the indexer from indexing encrypted files or stores, and is recommended for enterprises using Windows Information Protection (WIP)</br>- **Enterprise** setting reduces potential network loads for enterprises</br>- **Standard** setting is appropriate for consumers | ✅ |  |  |  |
 | [AlwaysUseAutoLangDetection](/windows/client-management/mdm/policy-configuration-service-provider#search-alwaysuseautolangdetection) | Specify whether to always use automatic language detection when indexing content and properties. | ✅ |  |  |  |
-| [DoNotUseWebResults](/windows/client-management/mdm/policy-configuration-service-provider#search-donotusewebresults) | Specify whether to allow Search to perform queries on the web. | ✅ |   |  |  |
-| [DisableBackoff](/windows/client-management/mdm/policy-configuration-service-provider#search-disablebackoff) | If enabled, the search indexer backoff feature will be disabled. | ✅ |   |  |  |
-| [DisableRemovableDriveIndexing](/windows/client-management/mdm/policy-configuration-service-provider#search-disableremovabledriveindexing) | Configure whether locations on removable drives can be added to libraries. | ✅ |   |  |  |
-| [PreventIndexingLowDiskSpaceMB](/windows/client-management/mdm/policy-configuration-service-provider#search-preventindexinglowdiskspacemb) | Prevent indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. | ✅ |   |  |  |
-| [PreventRemoteQueries](/windows/client-management/mdm/policy-configuration-service-provider#search-preventremotequeries) | If enabled, clients will be unable to query this device's index remotely. | ✅ |   |  |  |
-| [SafeSearchPermissions](/windows/client-management/mdm/policy-configuration-service-provider#search-safesearchpermissions) | Specify the level of safe search (filtering adult content) required. |  |   |  |  |
+| [DoNotUseWebResults](/windows/client-management/mdm/policy-configuration-service-provider#search-donotusewebresults) | Specify whether to allow Search to perform queries on the web. | ✅ |  |  |  |
+| [DisableBackoff](/windows/client-management/mdm/policy-configuration-service-provider#search-disablebackoff) | If enabled, the search indexer backoff feature will be disabled. | ✅ |  |  |  |
+| [DisableRemovableDriveIndexing](/windows/client-management/mdm/policy-configuration-service-provider#search-disableremovabledriveindexing) | Configure whether locations on removable drives can be added to libraries. | ✅ |  |  |  |
+| [PreventIndexingLowDiskSpaceMB](/windows/client-management/mdm/policy-configuration-service-provider#search-preventindexinglowdiskspacemb) | Prevent indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. | ✅ |  |  |  |
+| [PreventRemoteQueries](/windows/client-management/mdm/policy-configuration-service-provider#search-preventremotequeries) | If enabled, clients will be unable to query this device's index remotely. | ✅ |  |  |  |
+| [SafeSearchPermissions](/windows/client-management/mdm/policy-configuration-service-provider#search-safesearchpermissions) | Specify the level of safe search (filtering adult content) required. |  |  |  |  |
 
 ## Security
 

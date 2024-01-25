@@ -75,7 +75,7 @@ The following example uses Microsoft Intune to configure an MDM policy that appl
 ## Next steps
 
 - [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
-- [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
+- [Configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md)
 - [Customize and export Start layout](customize-and-export-start-layout.md)
 - [Add image for secondary tiles](start-secondary-tiles.md)
 - [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)

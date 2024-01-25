@@ -537,7 +537,7 @@ Once you have created the LayoutModification.xml file and it is present in the d
 ## Related topics
 
 - [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
-- [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
+- [Configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md)
 - [Customize and export Start layout](customize-and-export-start-layout.md)
 - [Add image for secondary tiles](start-secondary-tiles.md)
 - [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)

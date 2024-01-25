@@ -78,7 +78,7 @@ productDirectory:
       links:
         - url: /education/windows/tutorial-school-deployment/configure-devices-overview
           text: Configure settings and applications with Microsoft Intune
-        - url: /windows/configuration/set-up-shared-or-guest-pc
+        - url: /windows/configuration/shared-pc/set-up-shared-or-guest-pc
           text: Set up a shared or guest Windows device
         - url: /education/windows/take-tests-in-windows
           text: Take tests and assessments in Windows

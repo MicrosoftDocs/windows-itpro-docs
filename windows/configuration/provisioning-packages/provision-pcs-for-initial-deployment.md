@@ -42,7 +42,7 @@ Provisioning packages can include management instructions and policies, installa
 > [!TIP]
 > Use the desktop wizard to create a package with the common settings, then switch to the advanced editor to add other settings, apps, policies, etc.
 >
-> :::image type="content" source="../images/icd-simple-edit.png" alt-text="In the desktop wizard, open the advanced editor.":::
+> :::image type="content" source="images/icd-simple-edit.png" alt-text="In the desktop wizard, open the advanced editor.":::
 
 ## Create the provisioning package
 
@@ -52,11 +52,11 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 1. Click **Provision desktop devices**.
 
-    :::image type="content" source="../images/icd-create-options-1703.png" alt-text="In Windows Configuration Designer, see the ICD start options.":::
+    :::image type="content" source="images/icd-create-options-1703.png" alt-text="In Windows Configuration Designer, see the ICD start options.":::
 
 1. Name your project and click **Finish**. The pages for desktop provisioning will walk you through the following steps.
 
-    :::image type="content" source="../images/icd-desktop-1703.png" alt-text="In Windows Configuration Designer, select Finish, and see the ICD desktop provisioning.":::
+    :::image type="content" source="images/icd-desktop-1703.png" alt-text="In Windows Configuration Designer, select Finish, and see the ICD desktop provisioning.":::
 
 
 > [!IMPORTANT]
@@ -66,7 +66,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 1. Enable device setup:
 
-    :::image type="content" source="../images/set-up-device-details-desktop.png" alt-text="In Windows Configuration Designer, enable device setup, enter the device name, the product key to upgrade, turn off shared use, and remove preinstalled software.":::
+    :::image type="content" source="images/set-up-device-details-desktop.png" alt-text="In Windows Configuration Designer, enable device setup, enter the device name, the product key to upgrade, turn off shared use, and remove preinstalled software.":::
 
     If you want to enable device setup, select **Set up device**, and configure the following settings:
 
@@ -77,7 +77,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 1. Set up the network:
 
-    :::image type="content" source="../images/set-up-network-details-desktop.png" alt-text="In Windows Configuration Designer, turn on wireless connectivity, enter the network SSID, and network type.":::
+    :::image type="content" source="images/set-up-network-details-desktop.png" alt-text="In Windows Configuration Designer, turn on wireless connectivity, enter the network SSID, and network type.":::
 
     If you want to enable network setup, select **Set up network**, and configure the following settings:
 
@@ -87,7 +87,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 1. Enable account management:
 
-    :::image type="content" source="../images/account-management-details.png" alt-text="In Windows Configuration Designer, join Active Directory, Microsoft Entra ID, or create a local admin account.":::
+    :::image type="content" source="images/account-management-details.png" alt-text="In Windows Configuration Designer, join Active Directory, Microsoft Entra ID, or create a local admin account.":::
 
     If you want to enable account management, select **Account Management**, and configure the following settings:
 
@@ -103,13 +103,13 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 1. Add applications:
 
-    :::image type="content" source="../images/add-applications-details.png" alt-text="In Windows Configuration Designer, add an application.":::
+    :::image type="content" source="images/add-applications-details.png" alt-text="In Windows Configuration Designer, add an application.":::
 
     To add applications to the devices, select **Add applications**. You can install multiple applications, including Windows desktop applications (Win32) and Universal Windows Platform (UWP) apps. The settings in this step vary depending on the application you select. For help with the settings, see [Provision PCs with apps](provision-pcs-with-apps.md).
 
 1. Add certificates:
 
-    :::image type="content" source="../images/add-certificates-details.png" alt-text="In Windows Configuration Designer, add a certificate.":::
+    :::image type="content" source="images/add-certificates-details.png" alt-text="In Windows Configuration Designer, add a certificate.":::
 
     To add a certificate to the devices, select **Add certificates**, and configure the following settings:
 
@@ -118,7 +118,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 1. Finish:
 
-    :::image type="content" source="../images/finish-details.png" alt-text="In Windows Configuration Designer, protect your package with a password.":::
+    :::image type="content" source="images/finish-details.png" alt-text="In Windows Configuration Designer, protect your package with a password.":::
 
     To complete the wizard, select **Finish**, and configure the following setting:
 
@@ -127,16 +127,3 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 After you're done, click **Create**. It only takes a few seconds. When the package is built, the location where the package is stored is displayed as a hyperlink at the bottom of the page.
 
  **Next step**: [How to apply a provisioning package](provisioning-apply-package.md)
-
-## Related articles
-
-- [Provisioning packages for Windows client](provisioning-packages.md)
-- [How provisioning works in Windows client](provisioning-how-it-works.md)
-- [Install Windows Configuration Designer](provisioning-install-icd.md)
-- [Create a provisioning package](provisioning-create-package.md)
-- [Apply a provisioning package](provisioning-apply-package.md)
-- [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
-- [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
-- [PowerShell cmdlets for provisioning Windows client (reference)](provisioning-powershell.md)
-- [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
-- [Create a provisioning package with multivariant settings](provisioning-multivariant.md)

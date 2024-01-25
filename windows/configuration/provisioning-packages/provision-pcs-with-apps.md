@@ -58,11 +58,11 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
 1. Enter a name for the first app, and then select **Add**.
 
-    ![enter name for first app.](../images/wcd-app-name.png)
+    ![enter name for first app.](images/wcd-app-name.png)
 
 1. Configure the settings for the appropriate installer type.
 
-    ![enter settings for first app.](../images/wcd-app-commands.png)
+    ![enter settings for first app.](images/wcd-app-commands.png)
 
 ## Add a universal app to your package
 

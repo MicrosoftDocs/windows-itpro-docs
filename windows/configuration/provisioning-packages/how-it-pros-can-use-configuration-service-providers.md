@@ -20,7 +20,7 @@ Each CSP provides access to specific settings. For example, the [Wi-Fi CSP](/win
 
 CSPs are behind many of the management tasks and policies for Windows client, both in Microsoft Intune and in non-Microsoft MDM service providers. For example, in Intune, the policy to allow search suggestions in the Microsoft Edge address bar uses **Browser/AllowSearchSuggestionsinAddressBar** in the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider).
 
-:::image type="content" source="../images/policytocsp.png" alt-text="How intune maps to CSP":::
+:::image type="content" source="images/policytocsp.png" alt-text="How intune maps to CSP":::
 
 CSPs receive configuration policies in the XML-based Synchronization Markup Language (SyncML) format, pushed from an MDM-compliant management server, such as Microsoft Intune. Traditional enterprise management systems, such as Microsoft Configuration Manager, can also target CSPs, by using a client-side Windows Management Instrumentation (WMI)-to-CSP Bridge.
 
@@ -46,7 +46,7 @@ You can use Windows Configuration Designer to create [provisioning packages](./p
 
 Many settings in Windows Configuration Designer will display documentation for that setting in the center pane, and will include a reference to the CSP if the setting uses one, as shown in the following image.
 
-:::image type="content" source="../images/cspinicd.png" alt-text="In Windows Configuration Designer, how help content appears in ICD.":::
+:::image type="content" source="images/cspinicd.png" alt-text="In Windows Configuration Designer, how help content appears in ICD.":::
 
 [Provisioning packages in Windows client](provisioning-packages.md) explains how to use the Windows Configuration Designer tool to create a runtime provisioning package.
 
@@ -64,7 +64,7 @@ All CSPs are documented in the [Configuration service provider reference](/windo
 
 The [CSP reference](/windows/client-management/mdm/configuration-service-provider-reference) tells you which CSPs are supported on each edition of Windows, and links to the documentation for each individual CSP.
 
-:::image type="content" source="../images/csptable.png" alt-text="The CSP reference shows the supported Windows editions":::
+:::image type="content" source="images/csptable.png" alt-text="The CSP reference shows the supported Windows editions":::
 
 The documentation for each CSP follows the same structure. After an introduction that explains the purpose of the CSP, a diagram shows the parts of the CSP in tree format.
 
@@ -72,7 +72,7 @@ The full path to a specific configuration setting is represented by its Open Mob
 
 The following example shows the diagram for the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp). The diagram maps to the XML for that CSP. Notice the different shapes in the diagram: rounded elements are nodes, and rectangular elements are settings or policies for which a value must be supplied.
 
-:::image type="content" source="../images/provisioning-csp-assignedaccess.png" alt-text="The CSP reference shows the assigned access CSP tree.":::
+:::image type="content" source="images/provisioning-csp-assignedaccess.png" alt-text="The CSP reference shows the assigned access CSP tree.":::
 
 The element in the tree diagram after the root node tells you the name of the CSP. Knowing this structure, you would recognize in XML the parts of the URI path for that CSP and, if you saw it in XML, you would know which CSP reference to look up. For example, in the following OMS-URI path for the kiosk mode app settings, you can see that it uses the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp).
 
@@ -82,7 +82,7 @@ The element in the tree diagram after the root node tells you the name of the CS
 
 When an element in the diagram uses _italic_ font, it indicates a placeholder for specific information, such as the tenant ID in the following example.
 
-:::image type="content" source="../images/csp-placeholder.png" alt-text="The placeholder in the CSP tree":::
+:::image type="content" source="images/csp-placeholder.png" alt-text="The placeholder in the CSP tree":::
 
 After the diagram, the documentation describes each element. For each policy or setting, the valid values are listed.
 

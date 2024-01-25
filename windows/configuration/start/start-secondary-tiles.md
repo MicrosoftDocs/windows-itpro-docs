@@ -221,7 +221,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 
 - [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
-- [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
+- [Configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md)
 - [Customize and export Start layout](customize-and-export-start-layout.md)
 - [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
 - [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)

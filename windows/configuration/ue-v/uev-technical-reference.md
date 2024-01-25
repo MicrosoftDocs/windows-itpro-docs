@@ -1,7 +1,7 @@
 ---
 title: Technical Reference for UE-V
 description: Use this technical reference to learn about the various features of User Experience Virtualization (UE-V).
-ms.date: 04/19/2017
+ms.date: 1/25/2024
 ms.topic: article
 ---
 

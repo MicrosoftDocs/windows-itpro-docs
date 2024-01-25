@@ -100,7 +100,7 @@ For details about the settings you can customize in provisioning packages, see [
 
 WCD, simplified common provisioning scenarios.
 
-:::image type="content" source="../images/icd.png" alt-text="Configuration Designer options":::
+:::image type="content" source="images/icd.png" alt-text="Configuration Designer options":::
 
 WCD supports the following scenarios for IT administrators:
 

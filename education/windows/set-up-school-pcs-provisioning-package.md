@@ -5,13 +5,13 @@ ms.date: 06/02/2023
 ms.topic: reference
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
----  
+---
 
 # What's in my provisioning package?
 
 The Set up School PCs app builds a specialized provisioning package with school-optimized settings.
 
-A key feature of the provisioning package is SharedPC mode. To learn about the technical framework of SharedPC mode, including the description of each setting, see the [Manage multi-user and guest Windows devices with Shared PC](/windows/configuration/shared-pc-technical) article.
+A key feature of the provisioning package is SharedPC mode. To learn about the technical framework of SharedPC mode, including the description of each setting, see the [Manage multi-user and guest Windows devices with Shared PC](/windows/configuration/shared-pc/shared-pc-technical) article.
 
 ## Shared PC Mode policies
 
@@ -23,7 +23,7 @@ The following table outlines the policies applied to devices in SharedPC mode. I
 
 In the table, *True* means that the setting is enabled, allowed, or applied. Use the **Description** column to help you understand the context for each setting.
 
-For a more detailed look at the policies, see the Windows article [Set up shared or guest PC](/windows/configuration/set-up-shared-or-guest-pc#policies-set-by-shared-pc-mode).
+For a more detailed look at the policies, see the Windows article [Set up shared or guest PC](/windows/configuration/shared-pc/set-up-shared-or-guest-pc#policies-set-by-shared-pc-mode).
 
 | Policy name | Default value | Description |
 |--|--|--|
@@ -48,7 +48,7 @@ For a more detailed look at the policies, see the Windows article [Set up shared
 
 This section lists only the MDM and local group policies that are configured uniquely for the Set up School PCs app.
 
-For a more detailed look of each policy listed, see [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider) in the Windows IT Pro Center documentation.  
+For a more detailed look of each policy listed, see [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider) in the Windows IT Pro Center documentation.
 
 | Policy name | Default value | Description |
 |--|--|--|
@@ -81,10 +81,10 @@ For a more detailed look of each policy listed, see [Policy CSP](/windows/client
 
 ## Apps uninstalled from Windows devices
 
-Set up School PCs app uses the Universal app uninstall policy. The policy identifies default apps that aren't relevant to the classroom experience, and uninstalls them from each device. The apps uninstalled from Windows devices are:  
+Set up School PCs app uses the Universal app uninstall policy. The policy identifies default apps that aren't relevant to the classroom experience, and uninstalls them from each device. The apps uninstalled from Windows devices are:
 
 - Mixed Reality Viewer
-- Weather  
+- Weather
 - Desktop App Installer
 - Tips
 - Messaging
@@ -106,11 +106,11 @@ Set up School PCs uses the Universal app install policy to install school-releva
 
 ## Provisioning time estimates
 
-The time it takes to install a package on a device depends on the:  
+The time it takes to install a package on a device depends on the:
 
 - Strength of network connection
 - Number of policies and apps within the package
-- Other configurations made to the device  
+- Other configurations made to the device
 
 Review the table below to estimate your expected provisioning time. A package that only applies Set Up School PC's default configurations will provision the fastest. A package that removes preinstalled apps, through CleanPC, will take much longer to provision.
 
