@@ -42,7 +42,7 @@ In addition, you may have unmanaged devices, or a large number of devices that y
 
 ### CSPs in Windows Configuration Designer
 
-You can use Windows Configuration Designer to create [provisioning packages](./provisioning-packages.md) to apply settings to devices during the out-of-box-experience (OOBE), and after the devices are set up. You can also use provisioning packages to configure a device's connectivity and enroll the device in MDM. Many of the runtime settings in Windows Configuration Designer are based on CSPs.
+You can use Windows Configuration Designer to create [provisioning packages](provisioning-packages.md) to apply settings to devices during the out-of-box-experience (OOBE), and after the devices are set up. You can also use provisioning packages to configure a device's connectivity and enroll the device in MDM. Many of the runtime settings in Windows Configuration Designer are based on CSPs.
 
 Many settings in Windows Configuration Designer will display documentation for that setting in the center pane, and will include a reference to the CSP if the setting uses one, as shown in the following image.
 

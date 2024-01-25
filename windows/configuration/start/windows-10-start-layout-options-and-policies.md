@@ -41,7 +41,7 @@ For more information, see [Use group policy to customize Windows 10 Start and ta
 
 ## Use provisioning packages
 
-Provisioning packages are containers that include a set of configuration settings. They're designed to configure a device quickly, without installing a new image. For more information on what provisioning packages are, and what they do, see [Provisioning packages](./provisioning-packages/provisioning-packages.md).
+Provisioning packages are containers that include a set of configuration settings. They're designed to configure a device quickly, without installing a new image. For more information on what provisioning packages are, and what they do, see [Provisioning packages](../provisioning-packages/provisioning-packages.md).
 
 Using a provisioning package, you can customize the Start and taskbar. For more information, see [Use provisioning packages to customize Windows 10 Start and taskbar](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
 
@@ -57,7 +57,7 @@ For more information, see [Use MDM to customize Windows 10 Start and taskbar](cu
 
 ![start layout sections.](images/startannotated.png)
 
-The following list includes the different Start options, and any policy or local settings. The settings in the list can also be used in a provisioning package. If you use a provisioning package, see the [Windows Configuration Designer reference](./wcd/wcd-policies.md#start).
+The following list includes the different Start options, and any policy or local settings. The settings in the list can also be used in a provisioning package. If you use a provisioning package, see the [Windows Configuration Designer reference](../wcd/wcd-policies.md#start).
 
 - **User tile**
   - **Group policy**: `User Configuration\Administrative Templates\Start Menu and Taskbar\Remove Logoff on the Start menu`
@@ -213,4 +213,4 @@ If your Start layout customization isn't applied as you expect, open the **Event
 - [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 - [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 - [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
-- [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
+- [Changes to Start policies in Windows 10](../start/changes-to-start-policies-in-windows-10.md)

@@ -130,8 +130,6 @@ In Microsoft Intune, you create a device restrictions policy to apply to device 
 
 The **export-StartLayout** and **export-StartLayoutEdgeAssets** cmdlets produce XML files. Because Windows Configuration Designer produces a customizations.xml file that contains the configuration settings, adding the Start layout and Edge assets sections to the customizations.xml file directly would result in an XML file embedded in an XML file. Before you add the Start layout and Edge assets sections to the customizations.xml file, you must replace the markup characters in your layout.xml with escape characters.
 
-
-
 1. Copy the contents of layout.xml into an online tool that escapes characters.
 
 1. Copy the contents of assets.xml into an online tool that escapes characters.
@@ -214,18 +212,4 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
     - If you're done, select **Finish** to close the wizard and go back to the **Customizations Page**.
 
 1. Copy the provisioning package to the target device.
-
 1. Double-click the ppkg file and allow it to install.
-
-## Related articles
-
-
-- [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
-- [Configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md)
-- [Customize and export Start layout](customize-and-export-start-layout.md)
-- [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
-- [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-- [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-- [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
-- [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
-
