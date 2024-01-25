@@ -7,13 +7,11 @@ ms.topic: article
 
 # Configuring UE-V with Group Policy Objects
 
-
-Some User Experience Virtualization (UE-V) Group Policy settings can be defined for computers, and other Group Policy settings can be defined for users. The Group Policy administrative templates for these settings are included in Windows 10, version 1607. 
-
+Some User Experience Virtualization (UE-V) Group Policy settings can be defined for computers, and other Group Policy settings can be defined for users. The Group Policy administrative templates for these settings are included in Windows 10, version 1607.
 
 The following policy settings can be configured for UE-V.
 
-**Group Policy settings**
+### Group Policy settings
 
 |Group Policy setting name|Target|Group Policy setting description|Configuration options|
 |--- |--- |--- |--- |
@@ -33,47 +31,36 @@ The following policy settings can be configured for UE-V.
 >[!NOTE]
 >In addition, Group Policy settings are available for many desktop applications and Windows apps. You can use these settings to enable or disable settings synchronization for specific applications.
 
-**Windows App Group Policy settings**
+### Windows App Group Policy settings
 
 |Group Policy setting name|Target|Group Policy setting description|Configuration options|
 |--- |--- |--- |--- |
 |Do not synchronize Windows Apps|Computers and Users|This Group Policy setting defines whether the UE-V service synchronizes settings for Windows apps.|The default is to synchronize Windows apps.|
-|Windows App List|Computer and User|This setting lists the family package names of the Windows apps and states expressly whether UE-V synchronizes that app’s settings.|You can use this setting to specify that settings of an app are never synchronized by UE-V, even if the settings of all other Windows apps are synchronized.|
+|Windows App List|Computer and User|This setting lists the family package names of the Windows apps and states expressly whether UE-V synchronizes that app's settings.|You can use this setting to specify that settings of an app are never synchronized by UE-V, even if the settings of all other Windows apps are synchronized.|
 |Sync Unlisted Windows Apps|Computer and User|This Group Policy setting defines the default settings sync behavior of the UE-V service for Windows apps that are not explicitly listed in the Windows app list.|By default, the UE-V service only synchronizes settings of those Windows apps that are included in the Windows app list.|
 
 For more information about synchronizing Windows apps, see [Windows App List](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md#win8applist).
 
 **To configure computer-targeted Group Policy settings**
 
-1.  Use the Group Policy Management Console (GPMC) or the Advanced Group Policy Management (AGPM) on the computer that acts as a domain controller to manage Group Policy settings for UE-V computers. Navigate to **Computer configuration**, select **Policies**, select **Administrative Templates**, click **Windows Components**, and then select **Microsoft User Experience Virtualization**.
-
-2.  Select the Group Policy setting to be edited.
+1. Use the Group Policy Management Console (GPMC) or the Advanced Group Policy Management (AGPM) on the computer that acts as a domain controller to manage Group Policy settings for UE-V computers. Navigate to **Computer configuration**, select **Policies**, select **Administrative Templates**, click **Windows Components**, and then select **Microsoft User Experience Virtualization**
+1. Select the Group Policy setting to be edited
 
 **To configure user-targeted Group Policy settings**
 
-1.  Use the Group Policy Management Console (GPMC) or the Advanced Group Policy Management (AGPM) tool in Microsoft Desktop Optimization Pack (MDOP) on the domain controller computer to manage Group Policy settings for UE-V. Navigate to **User configuration**, select **Policies**, select **Administrative Templates**, click **Windows Components**, and then select **Microsoft User Experience Virtualization**.
-
-2.  Select the edited Group Policy setting.
+1. Use the Group Policy Management Console (GPMC) or the Advanced Group Policy Management (AGPM) tool in Microsoft Desktop Optimization Pack (MDOP) on the domain controller computer to manage Group Policy settings for UE-V. Navigate to **User configuration**, select **Policies**, select **Administrative Templates**, click **Windows Components**, and then select **Microsoft User Experience Virtualization**
+1. Select the edited Group Policy setting
 
 The UE-V service uses the following order of precedence to determine synchronization.
 
 **Order of precedence for UE-V settings**
 
-1.  User-targeted settings that are managed by Group Policy settings - These configuration settings are stored in the registry key by Group Policy under `HKEY_CURRENT_USER\Software\Policies\Microsoft\Uev\Agent\Configuration`.
-
-2.  Computer-targeted settings that are managed by Group Policy settings - These configuration settings are stored in the registry key by Group Policy under `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Uev\Agent\Configuration`.
-
-3.  Configuration settings that are defined by the current user by using Windows PowerShell or Windows management Instrumentation (WMI) - These configuration settings are stored by the UE-V service under this registry location: `HKEY_CURRENT_USER\Software\Microsoft\Uev\Agent\Configuration`.
-
-4.  Configuration settings that are defined for the computer by using Windows PowerShell or WMI. These configuration settings are stored by the UE-V service under this registry location: `HKEY_LOCAL_MACHINE\Software\Microsoft\Uev\Agent\Configuration`.
-
-
-
-
+1. User-targeted settings that are managed by Group Policy settings - These configuration settings are stored in the registry key by Group Policy under `HKEY_CURRENT_USER\Software\Policies\Microsoft\Uev\Agent\Configuration`
+1. Computer-targeted settings that are managed by Group Policy settings - These configuration settings are stored in the registry key by Group Policy under `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Uev\Agent\Configuration`
+1. Configuration settings that are defined by the current user by using Windows PowerShell or Windows management Instrumentation (WMI) - These configuration settings are stored by the UE-V service under this registry location: `HKEY_CURRENT_USER\Software\Microsoft\Uev\Agent\Configuration`
+1. Configuration settings that are defined for the computer by using Windows PowerShell or WMI. These configuration settings are stored by the UE-V service under this registry location: `HKEY_LOCAL_MACHINE\Software\Microsoft\Uev\Agent\Configuration`
 
 ## Related topics
 
-
 [Administering UE-V](uev-administering-uev.md)
-
 [Manage Configurations for UE-V](uev-manage-configurations.md)

@@ -7,7 +7,6 @@ ms.topic: article
 
 # User Experience Virtualization (UE-V) Release Notes
 
-
 This topic includes information required to successfully install and use UE-V that isn't included in the User Experience Virtualization (UE-V) documentation. If there are differences between the information in this topic and other UE-V topics, the latest change should be considered authoritative.
 
 ### Company Settings Center removed in UE-V for Windows 10, version 1607
@@ -51,7 +50,7 @@ WORKAROUND: Install only one version of Office or limit which settings are synch
 
 ### Uninstallation and reinstallation of Windows 8 applications reverts settings to initial state
 
-While UE-V settings synchronization is being used for a Windows 8 application, if the user uninstalls the application and then reinstalls the application, the application’s settings revert to their default values. This result happens because the uninstall removes the local (cached) copy of the application’s settings but doesn't remove the local UE-V settings package. When the application is reinstalled and launched, UE-V gathers the application settings that were reset to the application defaults and then uploads the default settings to the central storage location. Other computers running the application then download the default settings. This behavior is identical to the behavior of desktop applications.
+While UE-V settings synchronization is being used for a Windows 8 application, if the user uninstalls the application and then reinstalls the application, the application's settings revert to their default values. This result happens because the uninstall removes the local (cached) copy of the application's settings but doesn't remove the local UE-V settings package. When the application is reinstalled and launched, UE-V gathers the application settings that were reset to the application defaults and then uploads the default settings to the central storage location. Other computers running the application then download the default settings. This behavior is identical to the behavior of desktop applications.
 
 WORKAROUND: None.
 
@@ -92,17 +91,10 @@ WORKAROUND: None
 **Additional resources for this feature**
 
 - [UE-V Registry Settings](/troubleshoot/windows-client/ue-v/ue-v-registry-settings)
-
 - [How To Enable Debug Logging in Microsoft User Experience Virtualization (UE-V)](/troubleshoot/windows-client/ue-v/enable-debug-logging)
-
 - [User Experience Virtualization](uev-for-windows.md)
-
 - [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
-
 - [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
-
 - [Administering UE-V](uev-administering-uev.md)
-
 - [Troubleshooting UE-V](uev-troubleshooting.md)
-
 - [Technical Reference for UE-V](uev-technical-reference.md)

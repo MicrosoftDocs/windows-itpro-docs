@@ -7,7 +7,6 @@ ms.topic: article
 
 # What's new in UE-V
 
-
 User Experience Virtualization (UE-V) for Windows 10, version 1607, includes these new features and capabilities compared to UE-V 2.1. For more information about the UE-V for Windows 10, version 1607 release, see [UE-V Release notes](uev-release-notes-1607.md).
 
 ## UE-V is a feature in Windows 10
@@ -17,16 +16,14 @@ With Windows 10, version 1607 and later releases, UE-V is included with Windows 
 The changes in UE-V for Windows 10, version 1607 impact already existing implementations of UE-V in the following ways:
 
 - The UE-V Agent is replaced by the UE-V service. The UE-V service is installed with Windows 10, version 1607 and no longer has to be deployed separately. Performing an in-place upgrade to Windows 10, version 1607, on user devices automatically installs the UE-V service, migrates users' UE-V configurations, and updates the settings storage path.
-
 - The UE-V template generator is available from the Windows 10 ADK. In previous releases of UE-V, the template generator was included in the Microsoft Desktop Optimization Pack. Although you'll need to use the new template generator to create new settings location templates, existing settings location templates will continue to work. 
-
 - The Company Settings Center was removed and is no longer available on user devices. Users can no longer manage their synchronized settings. 
-
 - The inbox templates such as Office 2016 and IE 10 are included as a part of Windows 10 and need to be manually registered with Powershell or Group policy before use.
 
 For more information about how to configure an existing UE-V installation after upgrading user devices to Windows 10, see [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md).
 
-> **Important**&nbsp;&nbsp;You can upgrade your existing UE-V installation to Windows 10 from UE-V versions 2.1 or 2.0 only. If you are using a previous version of UE-V, you'll need to upgrade from that version to UE-V 2.x before you upgrade to Windows 10.
+> [!IMPORTANT]
+> You can upgrade your existing UE-V installation to Windows 10 from UE-V versions 2.1 or 2.0 only. If you are using a previous version of UE-V, you'll need to upgrade from that version to UE-V 2.x before you upgrade to Windows 10.
 
 ## New UE-V template generator is available from the Windows 10 ADK
 
@@ -56,7 +53,6 @@ In hybrid cloud environments, UE-V can roam Win32 applications on-premises while
 To configure UE-V to roam Windows desktop and application data only, change the following group policies:
 
 - Disable "Roam Windows settings" group policy
-
 - Enable "Do not synchronize Windows Apps" group policy
 
 For more information about using UE-V with Enterprise State Roaming, see [Settings and data roaming FAQ](/azure/active-directory/devices/enterprise-state-roaming-faqs#what-are-the-roaming-settings-options-for-existing-windows-desktop-applications-).
@@ -64,9 +60,7 @@ For more information about using UE-V with Enterprise State Roaming, see [Settin
 Additionally, to enable Windows 10 and UE-V to work together, configure these policy settings in the Microsoft User Experience Virtualization node:
 
 - Enable "Do Not Synchronize Windows Apps"
-
 - Disable "Sync Windows Settings"
-
 
 ## Settings Synchronization Behavior Changed in UE-V for Windows 10
 
@@ -86,19 +80,17 @@ Users can now print to their saved network printers from any network device, inc
 Printer roaming in UE-V requires one of these scenarios:
 
 - The print server can download the required driver when it roams to a new device.
-
 - The driver for the roaming network printer is pre-installed on any device that needs to access that network printer.
-
 - The printer driver can be imported from Windows Update.
 
-> [!Note]
+> [!NOTE]
 > The UE-V printer roaming feature doesn't roam printer settings or preferences, such as printing double-sided.
 
 ## Office 2016 Settings Location Template
 
 UE-V for Windows 10, version 1607 includes the Microsoft Office 2016 settings location template with improved Outlook signature support. We've added synchronization of default signature settings for new, reply, and forwarded emails. Users no longer have to choose the default signature settings.
 
-> [!Note]
+> [!NOTE]
 > An Outlook profile must be created on any device on which a user wants to synchronize their Outlook signature. If the profile is not already created, the user can create one and then restart Outlook on that device to enable signature synchronization.
 
 UE-V works with Office 365 to determine whether Office 2016 settings are roamed by Office 365. If settings are roamed by Office 365, they aren't roamed by UE-V. For more information, see [Overview of user and roaming settings for Microsoft Office](/previous-versions/office/office-2013-resource-kit/jj733593(v=office.15)).
@@ -106,7 +98,6 @@ UE-V works with Office 365 to determine whether Office 2016 settings are roamed 
 To enable settings synchronization using UE-V, do one of the following steps:
 
 - Use Group Policy to disable Office 365 synchronization
-
 - Don't enable the Office 365 synchronization experience during Office 2013 installation
 
 UE-V includes Office 2016, Office 2013, and Office 2010 templates.
@@ -114,11 +105,7 @@ UE-V includes Office 2016, Office 2013, and Office 2010 templates.
 ## Related topics
 
 - [Microsoft User Experience Virtualization](uev-for-windows.md)
-
 - [Get Started with UE-V](uev-getting-started.md)
-
 - [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
-
 - [User Experience Virtualization (UE-V) Release Notes](uev-release-notes-1607.md) for Windows 10, version 1607
-
 - [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)

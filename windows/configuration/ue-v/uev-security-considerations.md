@@ -7,11 +7,9 @@ ms.topic: article
 
 # Security Considerations for UE-V
 
-
 This topic contains a brief overview of accounts and groups, log files, and other security-related considerations for User Experience Virtualization (UE-V). For more information, follow the links that are provided here.
 
 ## Security considerations for UE-V configuration
-
 
 > [!IMPORTANT]
 > When you create the settings storage share, limit the share access to users who require access.
@@ -19,19 +17,17 @@ This topic contains a brief overview of accounts and groups, log files, and othe
 Because settings packages might contain personal information, you should take care to protect them as much as possible. In general, do the following steps:
 
 - Restrict the share to only those users who require access. Create a security group for users who have redirected folders on a particular share and limit access to only those users.
-
 - When you create the share, hide the share by putting a $ after the share name. This addition hides the share from casual browsers, and the share isn't visible in My Network Places.
-
 - Only give users the minimum number of permissions that they must have. The following tables show the required permissions.
 
-1.  Set the following share-level SMB permissions for the setting storage location folder.
+1. Set the following share-level SMB permissions for the setting storage location folder.
 
     |User account|Recommended permissions|
     |--- |--- |
     |Everyone|No permissions|
     |Security group of UE-V|Full control|
 
-2.  Set the following NTFS file system permissions for the settings storage location folder.
+1. Set the following NTFS file system permissions for the settings storage location folder.
 
     |User account|Recommended permissions|Folder|
     |--- |--- |--- |
@@ -40,7 +36,7 @@ Because settings packages might contain personal information, you should take ca
     |Security group of UE-V users|List folder/read data, create folders/append data|This folder only|
     |Everyone|Remove all permissions|No permissions|
 
-3.  Set the following share-level SMB permissions for the settings template catalog folder.
+1. Set the following share-level SMB permissions for the settings template catalog folder.
 
     |User account|Recommend permissions|
     |--- |--- |
@@ -48,7 +44,7 @@ Because settings packages might contain personal information, you should take ca
     |Domain computers|Read permission Levels|
     |Administrators|Read/write permission levels|
 
-4.  Set the following NTFS permissions for the settings template catalog folder.
+1. Set the following NTFS permissions for the settings template catalog folder.
 
     |User account|Recommended permissions|Apply to|
     |--- |--- |--- |
@@ -69,11 +65,9 @@ As of Windows Server 2003, several features of the Windows Server operating syst
 
 - **IPsec** - The IP Security Protocol (IPsec) provides network-level authentication, data integrity, and encryption. IPsec ensures that:
 
-    - Roamed data is safe from data modification while data is en route.
-
-    - Roamed data is safe from interception, viewing, or copying.
-
-    - Roamed data is safe from access by unauthenticated parties.
+  - Roamed data is safe from data modification while data is en route.
+  - Roamed data is safe from interception, viewing, or copying.
+  - Roamed data is safe from access by unauthenticated parties.
 
 - **SMB Signing** - The Server Message Block (SMB) authentication protocol supports message authentication, which prevents active message and "man-in-the-middle" attacks. SMB signing provides this authentication by placing a digital signature into each SMB. The digital signature is then verified by both the client and the server. In order to use SMB signing, you must first either enable it, or you must require it on both the SMB client and the SMB server. The SMB signing imposes a performance penalty. It doesn't consume any more network bandwidth, but it uses more CPU cycles on the client and server side.
 
@@ -96,12 +90,10 @@ This permission configuration enables users to create folders for settings stora
 > [!NOTE]
 > Additional security can be configured when a Windows Server is used for the settings storage share. UE-V can be configured to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable additional security, use the following command:
 
-1.  Add the REG\_DWORD registry key RepositoryOwnerCheckEnabled to `HKEY_LOCAL_MACHINE\Software\Microsoft\UEV\Agent\Configuration`.
-
-2.  Set the registry key value to *1*.
+1. Add the REG\_DWORD registry key RepositoryOwnerCheckEnabled to `HKEY_LOCAL_MACHINE\Software\Microsoft\UEV\Agent\Configuration`.
+1. Set the registry key value to *1*.
 
 When this configuration setting is in place, the UE-V service verifies that the local Administrators group or current user is the owner of the settings package folder. If not, then the UE-V service doesn't grant access to the folder.
-
 
 If you must create folders for the users, ensure that you have the correct permissions set.
 
@@ -109,7 +101,7 @@ We strongly recommend that you don't pre-create folders. Instead, let the UE-V s
 
 ### Ensure correct permissions to store UE-V 2 settings in a home directory or custom directory
 
-If you redirect UE-V settings to a user’s home directory or a custom Active Directory (AD) directory, ensure that the permissions on the directory are set appropriately for your organization.
+If you redirect UE-V settings to a user's home directory or a custom Active Directory (AD) directory, ensure that the permissions on the directory are set appropriately for your organization.
 
 ### Review the contents of settings location templates and control access to them as needed
 
@@ -118,7 +110,6 @@ When a settings location template is being created, the UE-V generator uses a Li
 If you plan to share settings location templates with anyone outside your organization, you should review all the settings locations and ensure the settings location templates don't contain any personal or company information. You can view the contents by opening the settings location template files using any XML viewer. The following are ways you can view and remove any personal or company information from the settings location template files before sharing with anyone outside your company:
 
 - **Template Author Name** - Specify a general, non-identifying name for the template author name or exclude this data from the template.
-
 - **Template Author Email** - Specify a general, non-identifying template author email or exclude this data from the template.
 
 To remove the template author name or template author email, you can use the UE-V generator application. From the generator, select **Edit a Settings Location Template**. Select the settings location template to edit from the recently used templates or Browse to the settings template file. Select **Next** to continue. On the Properties page, remove the data from the Template author name or Template author email text fields. Save the settings location template.

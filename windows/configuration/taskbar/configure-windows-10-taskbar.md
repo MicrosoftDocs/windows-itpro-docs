@@ -7,9 +7,9 @@ appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 --- 
 
-# Configure Windows 10 taskbar 
+# Configure Windows 10 taskbar
 
-Starting in Windows 10, version 1607, administrators can pin more apps to the taskbar and remove default pinned apps from the taskbar by adding a `<TaskbarLayout>` section to a layout modification XML file. This method never removes user-pinned apps from the taskbar. 
+Starting in Windows 10, version 1607, administrators can pin more apps to the taskbar and remove default pinned apps from the taskbar by adding a `<TaskbarLayout>` section to a layout modification XML file. This method never removes user-pinned apps from the taskbar.
 
 > [!NOTE]
 > The only aspect of the taskbar that can currently be configured by the layout modification XML file is the layout. 
@@ -23,14 +23,13 @@ The order of apps in the XML file dictates the order of pinned apps on the taskb
 > [!NOTE]
 > In operating systems configured to use a right-to-left language, the taskbar order will be reversed. 
 
-The following example shows how apps will be pinned: Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using the XML file to the right (green square). 
+The following example shows how apps will be pinned: Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using the XML file to the right (green square).
 
 ![Windows left, user center, enterprise to the right.](images/taskbar-generic.png) 
 
+## Configure taskbar (general)
 
-## Configure taskbar (general) 
-
-**To configure the taskbar:** 
+**To configure the taskbar:**
 
 1. Create the XML file.
    * If you're also [customizing the Start layout](customize-and-export-start-layout.md), use `Export-StartLayout` to create the XML, and then add the `<CustomTaskbarLayoutCollection>` section from [the following sample](#sample-taskbar-configuration-added-to-start-layout-xml-file) to the file.
@@ -38,9 +37,9 @@ The following example shows how apps will be pinned: Windows default apps to the
 2. Edit and save the XML file. You can use [AUMID](./find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path to identify the apps to pin to the taskbar.
    * Add `xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"` to the first line of the file, before the closing \>.
    * Use `<taskbar:UWA>` and [AUMID](./find-the-application-user-model-id-of-an-installed-app.md) to pin Universal Windows Platform apps.
-   * Use `<taskbar:DesktopApp>` and Desktop Application Link Path to pin desktop applications. 
+   * Use `<taskbar:DesktopApp>` and Desktop Application Link Path to pin desktop applications.
 
-3. Apply the layout modification XML file to devices using [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md). 
+3. Apply the layout modification XML file to devices using [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
 
 >[!IMPORTANT]
 >If you use a provisioning package or import-startlayout to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user then unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration that allows users to make changes that will persist, apply your configuration by using Group Policy.
@@ -313,22 +312,4 @@ The resulting taskbar for computers in any other country region:
   </xsd:complexType> 
 
 </xsd:schema>
-``` 
-
-## Related topics 
-
-[Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md) 
-
-[Customize and export Start layout](customize-and-export-start-layout.md) 
-
-[Add image for secondary tiles](start-secondary-tiles.md) 
-
-[Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md) 
-
-[Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) 
-
-[Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md) 
-
-[Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md) 
-
-[Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
+```

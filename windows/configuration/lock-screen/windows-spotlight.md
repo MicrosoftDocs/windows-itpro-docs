@@ -5,37 +5,29 @@ ms.topic: article
 ms.date: 04/30/2018
 --- 
 
-# Configure Windows Spotlight on the lock screen 
-
-
-**Applies to** 
-
-- Windows 10 
-
+# Configure Windows Spotlight on the lock screen
 
 Windows Spotlight is an option for the lock screen background that displays different background images and occasionally offers suggestions on the lock screen. Windows Spotlight is available in all desktop editions of Windows 10.  
 
 For managed devices running Windows 10 Enterprise and Windows 10 Education, enterprise administrators can configure a mobile device management (MDM) or Group Policy setting to prevent users from using the Windows Spotlight background. For managed devices running Windows 10 Pro, version 1607, administrators can disable suggestions for third party apps. 
-
 
 >[!NOTE]
 >In Windows 10, version 1607, the lock screen background does not display if you disable the **Animate windows when minimizing and maximizing** setting in **This PC** > **Properties** > **Advanced system settings** > **Performance settings** > **Visual Effects**, or if you enable the Group Policy setting **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Desktop Windows Manager** > **Do not allow windows animations**.
 >
 >In Windows 10, version 1703, you can use the [Personalization CSP](/windows/client-management/mdm/personalization-csp) settings to set lock screen and desktop background images. 
 
-## What does Windows Spotlight include? 
+## What does Windows Spotlight include?
 
-
-- **Background image** 
+- **Background image**
 
     The Windows Spotlight displays a new image on the lock screen each day. The initial background image is included during installation. More images are downloaded on ongoing basis. 
 
-    ![lock screen image.](images/lockscreen.png) 
+    ![lock screen image.](images/lockscreen.png)
 
-- **Feature suggestions, fun facts, tips** 
+- **Feature suggestions, fun facts, tips**
 
     The lock screen background will occasionally make recommendations on how to enhance your productivity and enjoyment of Microsoft products including suggesting other relevant Microsoft products and services.
-    
+
 
     ![fun facts.](images/funfacts.png) 
 
@@ -86,12 +78,3 @@ A custom lock screen image created in 16:9 aspect ratio (1600x900) will scale pr
 Lock screen images created at other aspect ratios may scale and center unpredictably on your device when changing aspect ratios. 
 
 The recommendation for custom lock screen images that include text (such as a legal statement) is to create the lock screen image in 16:9 resolution with text contained in the 4:3 region, allowing the text to remain visible at any aspect ratio.  
-
-## Related topics 
-
-
-[Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md) 
-
-
- 
-
