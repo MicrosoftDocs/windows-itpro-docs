@@ -4,7 +4,6 @@ description: Describes the best practices, location, values, policy management a
 ms.assetid: 31400078-6c56-4891-a6df-6dfb403c4bc9
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 08/01/2017
-ms.technology: itpro-security
 ---
 
 # Shutdown: Clear virtual memory pagefile

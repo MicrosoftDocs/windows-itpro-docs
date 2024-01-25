@@ -4,7 +4,6 @@ description: Location, values, policy management, and security considerations fo
 ms.assetid: c46a658d-b7a4-4139-b7ea-b9268c240053
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 10/04/2021
-ms.technology: itpro-security
 ---
 
 # Network security: Allow Local System to use computer identity for NTLM

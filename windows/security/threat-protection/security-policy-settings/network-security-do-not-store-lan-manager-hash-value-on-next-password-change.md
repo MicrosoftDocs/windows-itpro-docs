@@ -4,7 +4,6 @@ description: Best practices, security considerations, and more for the security 
 ms.assetid: 6452b268-e5ba-4889-9d38-db28f919af51
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Network security: Do not store LAN Manager hash value on next password change

@@ -4,7 +4,6 @@ description: Best practices, security considerations and more for the security p
 ms.assetid: 340d6769-8f33-4067-8470-1458978d1522
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # System objects: Require case insensitivity for non-Windows subsystems
