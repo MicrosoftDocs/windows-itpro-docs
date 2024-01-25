@@ -30,16 +30,16 @@ You can deploy the resulting .xml file to devices using one of the following met
 - [Windows Configuration Designer provisioning package](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 - [Mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
-### Customize the Start screen on your test computer
+## Customize the Start screen on your test computer
 
 To prepare a Start layout for export, you simply customize the Start layout on a test computer.
 
-**To prepare a test computer**
+To prepare a test computer:
 
 1. Set up a test computer on which to customize the Start layout. Your test computer should have the operating system that is installed on the users' computers (Windows 10 Pro, Enterprise, or Education). Install all apps and services that the Start layout should display.
 1. Create a new user account that you'll use to customize the Start layout.
 
-**To customize Start**
+To customize Start:
 
 1. Sign in to your test computer with the user account that you created.
 1. Customize the Start layout as you want users to see it by using the following techniques:
@@ -63,7 +63,7 @@ When you have the Start layout that you want your users to see, use the [Export-
 > [!IMPORTANT]
 > If you include secondary Microsoft Edge tiles (tiles that link to specific websites in Microsoft Edge), see [Add custom images to Microsoft Edge secondary tiles](start-secondary-tiles.md) for instructions.
 
-**To export the Start layout to an .xml file**
+To export the Start layout to an .xml file:
 
 1. While signed in with the same account that you used to customize Start, right-click Start, and select **Windows PowerShell**.
 1. On a device running Windows 10, version 1607, 1703, or 1803, at the Windows PowerShell command prompt, enter the following command:
@@ -109,16 +109,11 @@ When you have the Start layout that you want your users to see, use the [Export-
 >
 > For scripts and application tile pins to work correctly, follow these rules:
 >
->* Executable files and scripts should be listed in \Program Files or wherever the installer of the app places them.
->
->* Shortcuts that will pinned to Start should be placed in \ProgramData\Microsoft\Windows\Start Menu\Programs.
-
->
->* If you place executable files or scripts in the \ProgramData\Microsoft\Windows\Start Menu\Programs folder, they will not pin to Start.
->
->* Start on Windows 10 does not support subfolders. We only support one folder. For example, \ProgramData\Microsoft\Windows\Start Menu\Programs\Folder. If you go any deeper than one folder, Start will compress the contents of all the subfolder to the top level.
->
->* Three additional shortcuts are pinned to the start menu after the export. These are shortcuts to %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs, %APPDATA%\Microsoft\Windows\Start Menu\Programs, and %APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\.
+>- Executable files and scripts should be listed in \Program Files or wherever the installer of the app places them.
+>- Shortcuts that will pinned to Start should be placed in \ProgramData\Microsoft\Windows\Start Menu\Programs.
+>- If you place executable files or scripts in the \ProgramData\Microsoft\Windows\Start Menu\Programs folder, they will not pin to Start.
+>- Start on Windows 10 does not support subfolders. We only support one folder. For example, \ProgramData\Microsoft\Windows\Start Menu\Programs\Folder. If you go any deeper than one folder, Start will compress the contents of all the subfolder to the top level.
+>- Three additional shortcuts are pinned to the start menu after the export. These are shortcuts to %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs, %APPDATA%\Microsoft\Windows\Start Menu\Programs, and %APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\.
 
 ### Configure a partial Start layout
 
@@ -132,10 +127,9 @@ When a partial Start layout is applied to a device that already has a StartLayou
 
 If the Start layout is applied by Group Policy or MDM, and the policy is removed, the groups remain on the devices but become unlocked.
 
-**To configure a partial Start screen layout**
+To configure a partial Start screen layout:
 
 1. [Customize the Start layout](#customize-the-start-screen-on-your-test-computer).
-
 1. [Export the Start layout](#export-the-start-layout).
 1. Open the layout .xml file. There is a `<DefaultLayoutOverride>` element. Add `LayoutCustomizationRestrictionType="OnlySpecifiedGroups"` to the **DefaultLayoutOverride** element as follows:
 

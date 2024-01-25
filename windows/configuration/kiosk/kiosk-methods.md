@@ -15,8 +15,6 @@ Some desktop devices in an enterprise serve a special purpose. For example, a PC
 
 - **A single-app kiosk**: Runs a single Universal Windows Platform (UWP) app in full screen above the lock screen. People using the kiosk can see only that app. When the kiosk account (a local standard user account) signs in, the kiosk app launches automatically, and you can configure the kiosk account to sign in automatically as well. If the kiosk app is closed, it will automatically restart.
 
-
-
   A single-app kiosk is ideal for public use. Using [Shell Launcher](kiosk-shelllauncher.md), you can configure a kiosk device that runs a Windows desktop application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on. This type of single-app kiosk doesn't run above the lock screen.
 
   ![Illustration of a full-screen kiosk experience that runs one app on a Windows client device.](images/kiosk-fullscreen.png)
@@ -41,7 +39,7 @@ There are several kiosk configuration methods that you can choose from, dependin
 
     ![icon that represents a kiosk.](images/kiosk.png)
 
-    If you want your kiosk to run a single app for anyone to see or use, consider a single-app kiosk that runs either a [Universal Windows Platform (UWP) app](#methods-for-a-single-app-kiosk-running-a-uwp-app) or a [Windows desktop application](#classic). For a kiosk that people can sign in to with their accounts or that runs more than one app, choose [a multi-app kiosk](#desktop).
+    If you want your kiosk to run a single app for anyone to see or use, consider a single-app kiosk that runs either a [Universal Windows Platform (UWP) app](#methods-for-a-single-app-kiosk-running-a-uwp-app) or a Windows desktop application. For a kiosk that people can sign in to with their accounts or that runs more than one app, choose a multi-app kiosk.
 
 - **Which edition of Windows client will the kiosk run?**
 
@@ -64,23 +62,19 @@ There are several kiosk configuration methods that you can choose from, dependin
 
 You can use this method | For this edition | For this kiosk account type
 --- | --- | ---
-[Assigned access in Settings](kiosk-single-app.md#local) | Pro, Ent, Edu | Local standard user
-[Assigned access cmdlets](kiosk-single-app.md#powershell)  | Pro, Ent, Edu | Local standard user
-[The kiosk wizard in Windows Configuration Designer](kiosk-single-app.md#wizard)  | Pro (version 1709), Ent, Edu | Local standard user, Active Directory, Microsoft Entra ID
-[Microsoft Intune or other mobile device management (MDM)](kiosk-single-app.md#mdm) | Pro (version 1709), Ent, Edu | Local standard user, Microsoft Entra ID
+[Assigned access in Settings](kiosk-single-app.md) | Pro, Ent, Edu | Local standard user
+[Assigned access cmdlets](kiosk-single-app.md)  | Pro, Ent, Edu | Local standard user
+[The kiosk wizard in Windows Configuration Designer](kiosk-single-app.md)  | Pro (version 1709), Ent, Edu | Local standard user, Active Directory, Microsoft Entra ID
+[Microsoft Intune or other mobile device management (MDM)](kiosk-single-app.md) | Pro (version 1709), Ent, Edu | Local standard user, Microsoft Entra ID
 [Shell Launcher](kiosk-shelllauncher.md) v2 | Ent, Edu | Local standard user, Active Directory, Microsoft Entra ID
-
-<span id="classic" />
 
 ## Methods for a single-app kiosk running a Windows desktop application
 
 You can use this method | For this edition | For this kiosk account type
 --- | --- | ---
-[The kiosk wizard in Windows Configuration Designer](kiosk-single-app.md#wizard) | Ent, Edu | Local standard user, Active Directory, Microsoft Entra ID
-[Microsoft Intune or other mobile device management (MDM)](kiosk-single-app.md#mdm) | Pro (version 1709), Ent, Edu | Local standard user, Microsoft Entra ID
+[The kiosk wizard in Windows Configuration Designer](kiosk-single-app.md) | Ent, Edu | Local standard user, Active Directory, Microsoft Entra ID
+[Microsoft Intune or other mobile device management (MDM)](kiosk-single-app.md) | Pro (version 1709), Ent, Edu | Local standard user, Microsoft Entra ID
 [Shell Launcher](kiosk-shelllauncher.md) v1 and v2 | Ent, Edu | Local standard user, Active Directory, Microsoft Entra ID
-
-<span id="desktop" />
 
 ## Methods for a multi-app kiosk
 
@@ -94,11 +88,11 @@ You can use this method | For this edition | For this kiosk account type
 
 Method | App type | Account type | Single-app kiosk | Multi-app kiosk
 --- | --- | --- | :---: | :---:
-[Assigned access in Settings](kiosk-single-app.md#local) | UWP | Local account | ✅  |
-[Assigned access cmdlets](kiosk-single-app.md#powershell) | UWP | Local account | ✅ |
-[The kiosk wizard in Windows Configuration Designer](kiosk-single-app.md#wizard) | UWP, Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID | ✅  |
+[Assigned access in Settings](kiosk-single-app.md) | UWP | Local account | ✅  |
+[Assigned access cmdlets](kiosk-single-app.md) | UWP | Local account | ✅ |
+[The kiosk wizard in Windows Configuration Designer](kiosk-single-app.md) | UWP, Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID | ✅  |
 [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md)  | UWP, Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID | ✅  | ✅
-Microsoft Intune or other MDM [for full-screen single-app kiosk](kiosk-single-app.md#mdm) or [for multi-app kiosk with desktop](lock-down-windows-10-to-specific-apps.md) | UWP, Windows desktop app | Local standard user, Microsoft Entra ID | ✅ | ✅
+Microsoft Intune or other MDM [for full-screen single-app kiosk](kiosk-single-app.md) or [for multi-app kiosk with desktop](lock-down-windows-10-to-specific-apps.md) | UWP, Windows desktop app | Local standard user, Microsoft Entra ID | ✅ | ✅
 [Shell Launcher](kiosk-shelllauncher.md) |Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID | ✅ |
 
 [MDM Bridge WMI Provider](kiosk-mdm-bridge.md) | UWP, Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID |  | ✅

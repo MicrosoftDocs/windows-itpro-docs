@@ -21,28 +21,28 @@ A single-app kiosk uses the Assigned Access feature to run a single app above th
 
 You have several options for configuring your single-app kiosk.
 
-- [Locally, in Settings](#local):  The **Set up a kiosk** (previously named **Set up assigned access**) option in **Settings** is a quick and easy method to set up a single device as a kiosk for a local standard user account.
+- Locally, in Settings:  The **Set up a kiosk** (previously named **Set up assigned access**) option in **Settings** is a quick and easy method to set up a single device as a kiosk for a local standard user account.
 
   This option supports:
 
   - Windows 10 Pro, Enterprise, and Education
   - Windows 11
 
-- [PowerShell](#powershell): You can use Windows PowerShell cmdlets to set up a single-app kiosk. First, you need to [create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) on the device and install the kiosk app for that account.
+- PowerShell: You can use Windows PowerShell cmdlets to set up a single-app kiosk. First, you need to [create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) on the device and install the kiosk app for that account.
 
   This option supports:
 
   - Windows 10 Pro, Enterprise, and Education
   - Windows 11
 
-- [The kiosk wizard in Windows Configuration Designer](#wizard): Windows Configuration Designer is a tool that produces a *provisioning package*. A provisioning package includes configuration settings that can be applied to one or more devices during the first-run experience (OOBE), or after OOBE is done (runtime). Using the kiosk wizard, you can also create the kiosk user account, install the kiosk app, and configure more useful settings.
+- The kiosk wizard in Windows Configuration Designer: Windows Configuration Designer is a tool that produces a *provisioning package*. A provisioning package includes configuration settings that can be applied to one or more devices during the first-run experience (OOBE), or after OOBE is done (runtime). Using the kiosk wizard, you can also create the kiosk user account, install the kiosk app, and configure more useful settings.
 
   This option supports:
 
   - Windows 10 Pro version 1709+, Enterprise, and Education
   - Windows 11
 
-- [Microsoft Intune or other mobile device management (MDM) provider](#mdm): For devices managed by your organization, you can use MDM to set up a kiosk configuration.
+- Microsoft Intune or other mobile device management (MDM) provider: For devices managed by your organization, you can use MDM to set up a kiosk configuration.
 
   This option supports:
 
@@ -55,20 +55,20 @@ You have several options for configuring your single-app kiosk.
 >
 > Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
-<span id="local"/>
-
 ## Set up a kiosk in local Settings
 
->App type:
+App type:
 
-> - UWP
->
->OS:
-> - Windows 10 Pro, Ent, Edu
-> - Windows 11
->
->Account type:
-> - Local standard user
+- UWP
+
+OS:
+
+- Windows 10 Pro, Ent, Edu
+- Windows 11
+
+Account type:
+
+- Local standard user
 
 You can use **Settings** to quickly configure one or a few devices as a kiosk.
 
@@ -109,7 +109,7 @@ When you set up a kiosk (also known as *assigned access*) in **Settings** for Wi
 
 ![The Set up assigned access page in Settings.](images/kiosk-settings.png)
 
-**To set up assigned access in PC settings**
+To set up assigned access in PC settings:
 
 1. Go to **Start** > **Settings** > **Accounts** > **Other people**.
 1. Select **Set up assigned access**.
@@ -165,8 +165,6 @@ To remove assigned access, using PowerShell, run the following cmdlet:
 ```powershell
 Clear-AssignedAccess
 ```
-
-<span id="wizard" />
 
 ## Set up a kiosk using the kiosk wizard in Windows Configuration Designer
 
@@ -293,22 +291,21 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 
 [Learn how to apply a provisioning package.](../provisioning-packages/provisioning-apply-package.md)
 
-<span id="mdm" />
-
 ## Set up a kiosk or digital sign using Microsoft Intune or other MDM service
 
->App type:
+App type:
 
-> - UWP
->
->OS:
+- UWP
 
-> - Windows 10 Pro version 1709+, Ent, Edu
-> - Windows 11
->
->Account type:
-> - Local standard user
-> - Microsoft Entra ID
+OS:
+
+- Windows 10 Pro version 1709+, Ent, Edu
+- Windows 11
+
+Account type:
+
+- Local standard user
+- Microsoft Entra ID
 
 Microsoft Intune and other MDM services enable kiosk configuration through the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp). Assigned Access has a `KioskModeApp` setting. In the `KioskModeApp` setting, you enter the user account name and the [AUMID](/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) for the app to run in kiosk mode.
 
@@ -316,8 +313,6 @@ Microsoft Intune and other MDM services enable kiosk configuration through the [
 >A ShellLauncher node has been added to the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp).
 
 To configure a kiosk in Microsoft Intune, see [Windows client and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](/intune/kiosk-settings). For other MDM services, see the documentation for your provider.
-
-
 
 ## Sign out of assigned access
 

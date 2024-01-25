@@ -28,19 +28,16 @@ The following example shows how apps will be pinned: Windows default apps to the
 ![Windows left, user center, enterprise to the right.](images/taskbar-generic.png)
 
 ## Configure taskbar (general)
-*To configure the taskbar:
+
+To configure the taskbar:
 
 1. Create the XML file
-
     - If you're also [customizing the Start layout](../start/customize-and-export-start-layout.md), use `Export-StartLayout` to create the XML, and then add the `<CustomTaskbarLayoutCollection>` section from [the following sample](#sample-taskbar-configuration-added-to-start-layout-xml-file) to the file.
     - If you're only configuring the taskbar, use [the following sample](#sample-taskbar-configuration-xml-file) to create a layout modification XML file
-
 1. Edit and save the XML file. You can use [AUMID](../kiosk/find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path to identify the apps to pin to the taskbar
-
     - Add `xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"` to the first line of the file, before the closing \>.
     - Use `<taskbar:UWA>` and [AUMID](../kiosk/find-the-application-user-model-id-of-an-installed-app.md) to pin Universal Windows Platform apps
     - Use `<taskbar:DesktopApp>` and Desktop Application Link Path to pin desktop applications
-
 1. Apply the layout modification XML file to devices using [Group Policy](../start/customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](../start/customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
 
 >[!IMPORTANT]
@@ -80,6 +77,7 @@ The easiest way to find this data for an application is to:
  </CustomTaskbarLayoutCollection>
 </LayoutModificationTemplate>
 ```
+
 ### Sample taskbar configuration added to Start layout XML file
 
 ```xml
@@ -171,6 +169,7 @@ If you only want to remove some of the default pinned apps, you would use this m
   </CustomTaskbarLayoutCollection>
 </LayoutModificationTemplate>
 ```
+
 **Before:**
 
 ![Taskbar with default apps.](images/taskbar-default.png)
@@ -259,8 +258,6 @@ The resulting taskbar for computers in any other country region:
 
 > [!NOTE]
 > [Look up country and region codes (use the ISO Short column)](/previous-versions/commerce-server/ee799297(v=cs.20))
-
-
 
 ## Layout Modification Template schema definition
 

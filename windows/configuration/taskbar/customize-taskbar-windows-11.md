@@ -142,7 +142,7 @@ Use the following steps to add your XML file to a group policy, and apply the po
 
     Your policy looks like the following policy:
 
-    :::image type="content" source="images/customize-taskbar-windows-11/start-layout-group-policy.png" alt-text="Add your taskbar layout XML file to the Start Layout policy on Windows devices.":::
+    :::image type="content" source="images/start-layout-group-policy.png" alt-text="Add your taskbar layout XML file to the Start Layout policy on Windows devices.":::
 
     The `User Configuration\Administrative Templates\Start Menu and Taskbar` policy includes other settings that control the taskbar. Some policies may not work as expected. Be sure to test your policies before broadly deploying them across your devices.
 
