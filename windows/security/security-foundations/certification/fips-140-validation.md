@@ -17,7 +17,7 @@ Microsoft maintains an active commitment to meeting the requirements of the FIPS
 
 ## Windows client operating systems and cryptographic modules
 
-The Windows client releases listed below include cryptographic modules that have completed FIPS 140 validation. Expand the release for details, including the CMVP certificate, Security Policy document, and algorithm scope for each module. When the CMVP certificate validation label includes the note When operated in FIPS mode, specific configuration and security rules outlined in the Security Policy must be followed.
+The Windows client releases listed below include cryptographic modules that have completed FIPS 140 validation. Expand the release for details, including the CMVP certificate, Security Policy document, and algorithm scope for each module. When the CMVP certificate validation label includes the note *When operated in FIPS mode*, specific configuration and security rules outlined in the Security Policy must be followed.
 
 ### Windows 10 releases
 
@@ -473,9 +473,9 @@ Validated Edition: Ultimate Edition
 
 </details>
 
-## Validated modules used by Windows Server
+## Windows Server operating systems and cryptographic modules
 
-The Windows Server releases listed below include cryptographic modules that have completed FIPS 140 validation. Expand the release for details, including the CMVP certificate, Security Policy document, and algorithm scope for each module. When the CMVP certificate validation label includes the note When operated in FIPS mode, specific configuration and security rules outlined in the Security Policy must be followed.
+The Windows Server releases listed below include cryptographic modules that have completed FIPS 140 validation. Expand the release for details, including the CMVP certificate, Security Policy document, and algorithm scope for each module. When the CMVP certificate validation label includes the note *When operated in FIPS mode*, specific configuration and security rules outlined in the Security Policy must be followed.
 
 ### Windows Server 2019 and 2016 releases
 
@@ -531,7 +531,7 @@ Build: 10.0.14393. Validated Editions: Standard, Datacenter, Storage Server.
 
 <details>
 
-<summary><b>Windows Server, version 2004 (May 2020 Update)</b></summary>
+<summary><b>Windows Server, version 2004</b></summary>
 
 Build: 10.0.19041. Validated Editions: Standard Core, Datacenter Core
 
@@ -550,7 +550,7 @@ Build: 10.0.19041. Validated Editions: Standard Core, Datacenter Core
 
 <details>
 
-<summary><b>Windows Server, version 1909 (November 2019 Update)</b></summary>
+<summary><b>Windows Server, version 1909</b></summary>
 
 Build: 10.0.18363. Validated Editions: Standard Core, Datacenter Core
 
@@ -569,7 +569,7 @@ Build: 10.0.18363. Validated Editions: Standard Core, Datacenter Core
 
 <details>
 
-<summary><b>Windows Server, version 1903 (May 2019 Update)</b></summary>
+<summary><b>Windows Server, version 1903</b></summary>
 
 Build: 10.0.18362. Validated Editions: Standard Core, Datacenter Core
 
@@ -757,7 +757,7 @@ As part of the configuration rules outlined in the Security Policy documents, Wi
 
 ## Determine if a Windows service or application is FIPS 140 compliant
 
-Microsoft validates the cryptographic modules used in Windows and other products, not individual Windows services or applications. Contact the vendor of the service or application for information on whether it calls a validated Windows cryptographic module (validated by the CMVP as meeting the FIPS 140 requirements and issued a certificate) in a FIPS compliant manner (calling for FIPS 140 validated cryptography and configured according to a defined FIPS approved mode of operation).
+Microsoft validates the cryptographic modules used in Windows and other products, not individual Windows services or applications. Contact the vendor of the service or application for information on whether it calls a validated Windows cryptographic module (i.e., a module validated by the CMVP as meeting the FIPS 140 requirements and issued a certificate) in a FIPS compliant manner (i.e., by calling for FIPS 140 validated cryptography and configured according to a defined FIPS-approved mode of operation).
 
 ## FIPS 140 and the Commercial National Security Algorithm Suite
 
