@@ -1,15 +1,13 @@
 ---
 title: Domain controller LDAP server signing requirements
 description: Describes the best practices, location, values, and security considerations for the Domain controller LDAP server signing requirements security policy setting.
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Domain controller: LDAP server signing requirements
@@ -30,7 +28,7 @@ This setting doesn't have any impact on LDAP simple bind through SSL (LDAP TCP/6
 If signing is required, then LDAP simple binds not using SSL are rejected (LDAP TCP/389).
 
 >**Caution:**  If you set the server to Require signature, you must also set the client device. Not setting the client device results in loss of connection with the server.
- 
+
 ### Possible values
 
 -   None. Data signatures aren't required to bind with the server. If the client computer requests data signing, the server supports it.
@@ -51,13 +49,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Not defined| 
-| DC Effective Default Settings | None| 
-| Member Server Effective Default Settings | None| 
-| Client Computer Effective Default Settings | None| 
- 
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Not defined|
+| DC Effective Default Settings | None|
+| Member Server Effective Default Settings | None|
+| Client Computer Effective Default Settings | None|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

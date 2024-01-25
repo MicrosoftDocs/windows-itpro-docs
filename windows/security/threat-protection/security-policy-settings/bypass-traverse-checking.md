@@ -1,10 +1,9 @@
 ---
-title: Bypass traverse checking 
+title: Bypass traverse checking
 description: Describes the best practices, location, values, policy management, and security considerations for the Bypass traverse checking security policy setting.
 ms.assetid: 1c828655-68d3-4140-aa0f-caa903a7087e
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Bypass traverse checking
@@ -53,13 +51,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not Defined | 
-| Default Domain Controller Policy | Administrators<br/>Authenticated Users<br/>Everyone<br/>Local Service<br/>Network Service<br/>Pre-Windows 2000 Compatible Access| 
-| Stand-Alone Server Default Settings | Administrators<br/>Backup Operators<br/>Users<br/>Everyone<br/>Local Service<br/>Network Service| 
-| Domain Controller Effective Default Settings | Administrators<br/>Authenticated Users<br/>Everyone<br/>Local Service<br/>Network Service<br/>Pre-Windows 2000 Compatible Access| 
-| Member Server Effective Default Settings | Administrators<br/>Backup Operators<br/>Users<br/>Everyone<br/>Local Service<br/>Network Service| 
-| Client Computer Effective Default Settings | Administrators<br/>Backup Operators<br/>Users<br/>Everyone<br/>Local Service<br/>Network Service| 
- 
+| Default Domain Policy| Not Defined |
+| Default Domain Controller Policy | Administrators<br/>Authenticated Users<br/>Everyone<br/>Local Service<br/>Network Service<br/>Pre-Windows 2000 Compatible Access|
+| Stand-Alone Server Default Settings | Administrators<br/>Backup Operators<br/>Users<br/>Everyone<br/>Local Service<br/>Network Service|
+| Domain Controller Effective Default Settings | Administrators<br/>Authenticated Users<br/>Everyone<br/>Local Service<br/>Network Service<br/>Pre-Windows 2000 Compatible Access|
+| Member Server Effective Default Settings | Administrators<br/>Backup Operators<br/>Users<br/>Everyone<br/>Local Service<br/>Network Service|
+| Client Computer Effective Default Settings | Administrators<br/>Backup Operators<br/>Users<br/>Everyone<br/>Local Service<br/>Network Service|
+
 ## Policy management
 
 Permissions to files and folders are controlled through the appropriate configuration of file system access control lists (ACLs). The ability to traverse the folder doesn't provide any Read or Write permissions to the user.
@@ -98,4 +96,4 @@ The Windows operating systems and many applications were designed with the expec
 ## Related topics
 
 - [User Rights Assignment](user-rights-assignment.md)
- 
+

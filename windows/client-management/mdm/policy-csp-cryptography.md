@@ -1,14 +1,7 @@
 ---
 title: Cryptography Policy CSP
 description: Learn more about the Cryptography Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/02/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -28,7 +21,7 @@ ms.topic: reference
 <!-- AllowFipsAlgorithmPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowFipsAlgorithmPolicy-Applicability-End -->
 
 <!-- AllowFipsAlgorithmPolicy-OmaUri-Begin -->
@@ -86,7 +79,7 @@ Allows or disallows the Federal Information Processing Standard (FIPS) policy.
 <!-- ConfigureEllipticCurveCryptography-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureEllipticCurveCryptography-Applicability-End -->
 
 <!-- ConfigureEllipticCurveCryptography-OmaUri-Begin -->
@@ -153,7 +146,7 @@ CertUtil.exe -DisplayEccCurve.
 <!-- ConfigureSystemCryptographyForceStrongKeyProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureSystemCryptographyForceStrongKeyProtection-Applicability-End -->
 
 <!-- ConfigureSystemCryptographyForceStrongKeyProtection-OmaUri-Begin -->
@@ -203,7 +196,7 @@ System cryptography: Force strong key protection for user keys stored on the com
 <!-- OverrideMinimumEnabledDTLSVersionClient-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- OverrideMinimumEnabledDTLSVersionClient-Applicability-End -->
 
 <!-- OverrideMinimumEnabledDTLSVersionClient-OmaUri-Begin -->
@@ -228,7 +221,6 @@ Override minimal enabled TLS version for client role. Last write wins.
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Default Value  | 1.0 |
 <!-- OverrideMinimumEnabledDTLSVersionClient-DFProperties-End -->
 
 <!-- OverrideMinimumEnabledDTLSVersionClient-Examples-Begin -->
@@ -243,7 +235,7 @@ Override minimal enabled TLS version for client role. Last write wins.
 <!-- OverrideMinimumEnabledDTLSVersionServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- OverrideMinimumEnabledDTLSVersionServer-Applicability-End -->
 
 <!-- OverrideMinimumEnabledDTLSVersionServer-OmaUri-Begin -->
@@ -268,7 +260,6 @@ Override minimal enabled TLS version for server role. Last write wins.
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Default Value  | 1.0 |
 <!-- OverrideMinimumEnabledDTLSVersionServer-DFProperties-End -->
 
 <!-- OverrideMinimumEnabledDTLSVersionServer-Examples-Begin -->
@@ -283,7 +274,7 @@ Override minimal enabled TLS version for server role. Last write wins.
 <!-- OverrideMinimumEnabledTLSVersionClient-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- OverrideMinimumEnabledTLSVersionClient-Applicability-End -->
 
 <!-- OverrideMinimumEnabledTLSVersionClient-OmaUri-Begin -->
@@ -308,7 +299,6 @@ Override minimal enabled TLS version for client role. Last write wins.
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Default Value  | 1.0 |
 <!-- OverrideMinimumEnabledTLSVersionClient-DFProperties-End -->
 
 <!-- OverrideMinimumEnabledTLSVersionClient-Examples-Begin -->
@@ -323,7 +313,7 @@ Override minimal enabled TLS version for client role. Last write wins.
 <!-- OverrideMinimumEnabledTLSVersionServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- OverrideMinimumEnabledTLSVersionServer-Applicability-End -->
 
 <!-- OverrideMinimumEnabledTLSVersionServer-OmaUri-Begin -->
@@ -348,7 +338,6 @@ Override minimal enabled TLS version for server role. Last write wins.
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Default Value  | 1.0 |
 <!-- OverrideMinimumEnabledTLSVersionServer-DFProperties-End -->
 
 <!-- OverrideMinimumEnabledTLSVersionServer-Examples-Begin -->
@@ -363,7 +352,7 @@ Override minimal enabled TLS version for server role. Last write wins.
 <!-- TLSCipherSuites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- TLSCipherSuites-Applicability-End -->
 
 <!-- TLSCipherSuites-OmaUri-Begin -->

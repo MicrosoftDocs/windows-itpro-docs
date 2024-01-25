@@ -6,7 +6,7 @@ ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
+manager: laurawi
 ms.date: 03/31/2017
 ms.collection: highpri
 ms.topic: reference
@@ -15,6 +15,7 @@ ms.topic: reference
 # Windows 10, version 1709 and later and Windows 11 optional diagnostic data
 
 Applies to:
+- Windows 11, version 23H2
 - Windows 11, version 22H2
 - Windows 11, version 21H2
 - Windows 10, version 22H2

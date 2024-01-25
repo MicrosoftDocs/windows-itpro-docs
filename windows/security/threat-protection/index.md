@@ -1,12 +1,10 @@
 ---
 title: Windows threat protection
 description: Describes the security capabilities in Windows client focused on threat protection
-ms.prod: windows-client
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
 ms.topic: conceptual
-ms.technology: itpro-security
 ms.date: 12/31/2017
 ---
 
@@ -26,7 +24,7 @@ See the following articles to learn more about the different areas of Windows th
 - [Network Protection](/microsoft-365/security/defender-endpoint/network-protection)
 - [Virtualization-Based Protection of Code Integrity](../hardware-security/enable-virtualization-based-protection-of-code-integrity.md)
 - [Web Protection](/microsoft-365/security/defender-endpoint/web-protection-overview)
-- [Windows Firewall](../operating-system-security/network-security/windows-firewall/windows-firewall-with-advanced-security.md)
+- [Windows Firewall](../operating-system-security/network-security/windows-firewall/index.md)
 - [Windows Sandbox](../application-security/application-isolation/windows-sandbox/windows-sandbox-overview.md)
 
 ## Next-generation protection

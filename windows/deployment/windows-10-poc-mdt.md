@@ -659,7 +659,7 @@ Deployment logs are available on the client computer in the following locations:
 
 You can review WDS events in Event Viewer at: **Applications and Services Logs > Microsoft > Windows > Deployment-Services-Diagnostics**. By default, only the **Admin** and **Operational** logs are enabled. To enable other logs, right-click the log and then select **Enable Log**.
 
-Also see [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md) for detailed troubleshooting information.
+Also see [Resolve Windows upgrade errors](upgrade/resolve-windows-upgrade-errors.md) for detailed troubleshooting information.
 
 ## Related articles
 

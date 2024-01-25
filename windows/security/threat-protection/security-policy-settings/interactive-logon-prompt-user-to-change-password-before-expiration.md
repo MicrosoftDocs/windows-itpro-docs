@@ -1,10 +1,9 @@
 ---
-title: Interactive log-on prompt user to change password before expiration 
+title: Interactive log-on prompt user to change password before expiration
 description: Best practices and security considerations for an interactive log-on prompt for users to change passwords before expiration.
 ms.assetid: 8fe94781-40f7-4fbe-8cfd-5e116e6833e9
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Interactive log on: Prompt the user to change passwords before expiration
@@ -50,13 +48,13 @@ The following table lists the default values for this policy. Default values are
 
 | Server type or Group Policy Object | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
 | Stand-Alone Server Default Settings | Five days|
-| DC Effective Default Settings | Five days | 
+| DC Effective Default Settings | Five days |
 | Member Server Effective Default Settings| Five days |
-| Client Computer Effective Default Settings | Five days| 
- 
+| Client Computer Effective Default Settings | Five days|
+
 ## Policy management
 
 This section describes features and tools that you can use to manage this policy.

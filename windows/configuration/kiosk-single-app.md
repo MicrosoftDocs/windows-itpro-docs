@@ -2,16 +2,11 @@
 title: Set up a single-app kiosk on Windows
 description: A single-use device is easy to set up in Windows Pro, Enterprise, and Education editions.
 ms.reviewer: sybruckm
-manager: aaroncz
 ms.author: lizlong
-ms.prod: windows-client
 author: lizgt2000
-ms.localizationpriority: medium
 ms.topic: article
 ms.collection:
- - highpri
  - tier1
-ms.technology: itpro-configure
 ms.date: 07/12/2023
 ---
 <!--8107263-->
@@ -85,7 +80,7 @@ You have several options for configuring your single-app kiosk.
 
 You can use **Settings** to quickly configure one or a few devices as a kiosk. 
 
-When your kiosk is a local device that isn't managed by Active Directory or Azure Active Directory, there is a default setting that enables automatic sign-in after a restart. That means that when the device restarts, the last signed-in user will be signed in automatically. If the last signed-in user is the kiosk account, the kiosk app will be launched automatically after the device restarts.
+When your kiosk is a local device that isn't managed by Active Directory or Microsoft Entra ID, there is a default setting that enables automatic sign-in after a restart. That means that when the device restarts, the last signed-in user will be signed in automatically. If the last signed-in user is the kiosk account, the kiosk app will be launched automatically after the device restarts.
 
 - If you want the kiosk account to sign in automatically, and the kiosk app launched when the device restarts, then you don't need to do anything.
 
@@ -235,17 +230,17 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 
 3. Enable account management:
 
-    :::image type="content" source="images/account-management-details.png" alt-text="In Windows Configuration Designer, join Active Directory, Azure AD, or create a local admin account.":::
+    :::image type="content" source="images/account-management-details.png" alt-text="In Windows Configuration Designer, join Active Directory, Microsoft Entra ID, or create a local admin account.":::
 
     If you want to enable account management, select **Account Management**, and configure the following settings:
 
     - **Manage organization/school accounts**: Choose how devices are enrolled. Your options:
       - **Active Directory**: Enter the credentials for a least-privileged user account to join the device to the domain.
-      - **Azure Active Directory**: Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, [set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup). In your Azure AD tenant, the **maximum number of devices per user** setting determines how many times the bulk token in the wizard can be used.
+      - **Microsoft Entra ID**: Before you use a Windows Configuration Designer wizard to configure bulk Microsoft Entra enrollment, [set up Microsoft Entra join in your organization](/azure/active-directory/active-directory-azureadjoin-setup). In your Microsoft Entra tenant, the **maximum number of devices per user** setting determines how many times the bulk token in the wizard can be used.
 
-        If you select this option, enter a friendly name for the bulk token you get using the wizard. Set an expiration date for the token. The maximum is 180 days from the date you get the token. Select **Get bulk token**. In **Let's get you signed in**, enter an account that has permissions to join a device to Azure AD, and then the password. Select **Accept** to give Windows Configuration Designer the necessary permissions.
+        If you select this option, enter a friendly name for the bulk token you get using the wizard. Set an expiration date for the token. The maximum is 180 days from the date you get the token. Select **Get bulk token**. In **Let's get you signed in**, enter an account that has permissions to join a device to Microsoft Entra ID, and then the password. Select **Accept** to give Windows Configuration Designer the necessary permissions.
 
-        You must run Windows Configuration Designer on Windows client to configure Azure AD enrollment using any of the wizards.
+        You must run Windows Configuration Designer on Windows client to configure Microsoft Entra enrollment using any of the wizards.
 
       - **Local administrator**: If you select this option, enter a user name and password. If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password isn't changed during that period, the account might be locked out, and unable to sign in.
 
@@ -323,7 +318,7 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 >
 >Account type:
 > - Local standard user
-> - Azure AD
+> - Microsoft Entra ID
 
 Microsoft Intune and other MDM services enable kiosk configuration through the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp). Assigned Access has a `KioskModeApp` setting. In the `KioskModeApp` setting, you enter the user account name and the [AUMID](/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) for the app to run in kiosk mode.
 

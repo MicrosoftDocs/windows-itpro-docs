@@ -2,11 +2,13 @@
 title: Testing scenarios with Microsoft Defender Application Guard
 description: Suggested testing scenarios for Microsoft Defender Application Guard, showing how it works in both Standalone and Enterprise-managed mode.
 ms.localizationpriority: medium
-ms.date: 07/11/2023
+ms.date: 12/12/2023
 ms.topic: conceptual
 ---
 
 # Application Guard testing scenarios
+
+[!INCLUDE [mdag-edge-deprecation-notice](../../../includes/mdag-edge-deprecation-notice.md)]
 
 We've come up with a list of scenarios that you can use to test hardware-based isolation in your organization.
 

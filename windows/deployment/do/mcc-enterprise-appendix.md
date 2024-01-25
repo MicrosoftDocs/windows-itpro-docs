@@ -1,14 +1,21 @@
 ---
-title: Appendix
-manager: aaroncz
-description: Appendix on Microsoft Connected Cache (MCC) for Enterprise and Education.
+title: Appendix for MCC for Enterprise and Education
+description: This article contains reference information for Microsoft Connected Cache (MCC) for Enterprise and Education.
 ms.prod: windows-client
-author: amymzhou
-ms.author: amyzhou
-ms.topic: article
-ms.date: 12/31/2017
 ms.technology: itpro-updates
-ms.collection: tier3
+ms.topic: reference
+ms.author: carmenf
+author: cmknox
+manager: aaroncz
+ms.reviewer: mstewart
+ms.collection:
+  - tier3
+  - must-keep
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>
+ms.date: 11/07/2023
 ---
 
 # Appendix
@@ -30,10 +37,10 @@ Most customers choose to install their cache node on a Windows Server with a nes
 
 ### Installing on VMware
 
-We've seen that Microsoft Connected Cache for Enterprise and Education can be successfully installed on VMware. To do so, there are a couple of additional configurations to be made:
+Microsoft Connected Cache for Enterprise and Education can be successfully installed on VMware. To do so, there are a couple of additional configurations to be made. Ensure the VM is turned off before making the following configuration changes:
 
 1. Ensure that you're using ESX. In the VM settings, turn on the option **Expose hardware assisted virtualization to the guest OS**.
-1. Using the Hyper-V Manager, create an external switch. For the external switch to have internet connection, ensure **"Allow promiscuous mode"**, **"Allow forged transmits"**, and **"Allow MAC changes"** are all switched to **Yes**.
+1. Using the Hyper-V Manager, create an external switch. For the external switch to have internet connection, ensure **"Allow promiscuous mode"** and **"Forged transmits"** are switched to **Yes**.
 
 ### Installing on Hyper-V
 

@@ -1,18 +1,16 @@
 ---
-title: Advanced security audit policy settings 
+title: Advanced security audit policy settings
 description: This reference for IT professionals provides information about the advanced audit policy settings that are available in Windows and the audit events that they generate.
 ms.assetid: 93b28b92-796f-4036-a53b-8b9e80f9f171
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/06/2021
-ms.technology: itpro-security
 ---
 
 # Advanced security audit policy settings (Windows 10)
@@ -26,7 +24,7 @@ The security audit policy settings under **Security Settings\\Advanced Audit Pol
 -   A group administrator has modified settings or data on servers that contain finance information.
 -   An employee within a defined group has accessed an important file.
 -   The correct system access control list (SACL) - as a verifiable safeguard against undetected access - is applied to either of the following:
-    -  every file and folder 
+    -  every file and folder
     -  registry key on a computer
     -  file share.
 
@@ -34,7 +32,7 @@ You can access these audit policy settings through the Local Security Policy sna
 
 These advanced audit policy settings allow you to select only the behaviors that you want to monitor. You can exclude audit results for the following types of behaviors:
 - That are of little or no concern to you
-- That create an excessive number of log entries. 
+- That create an excessive number of log entries.
 
 In addition, because security audit policies can be applied by using domain Group Policy Objects, audit policy settings can be modified, tested, and deployed to selected users and groups with relative simplicity.
 Audit policy settings under **Security Settings\\Advanced Audit Policy Configuration** are available in the following categories:
@@ -63,7 +61,7 @@ The security audit policy settings in this category can be used to monitor chang
 
 Detailed Tracking security policy settings and audit events can be used for the following purposes:
 - To monitor the activities of individual applications and users on that computer
-- To understand how a computer is being used. 
+- To understand how a computer is being used.
 
 This category includes the following subcategories:
 
@@ -161,12 +159,12 @@ Global Object Access Auditing policy settings allow administrators to define com
 Auditors can prove that every resource in the system is protected by an audit policy. They can do this task by viewing the contents of the Global Object Access Auditing policy settings. For example, if auditors see a policy setting called "Track all changes made by group administrators," they know that this policy is in effect.
 
 Resource SACLs are also useful for diagnostic scenarios. For example, administrators quickly identify which object in a system is denying a user access by:
-- Setting the Global Object Access Auditing policy to log all the activities for a specific user 
+- Setting the Global Object Access Auditing policy to log all the activities for a specific user
 - Enabling the policy to track "Access denied" events for the file system or registry can help
 
 > [!NOTE]
 > If a file or folder SACL and a Global Object Access Auditing policy setting (or a single registry setting SACL and a Global Object Access Auditing policy setting) are configured on a computer, the effective SACL is derived from combining the file or folder SACL and the Global Object Access Auditing policy. This means that an audit event is generated if an activity matches the file or folder SACL or the Global Object Access Auditing policy.
- 
+
 This category includes the following subcategories:
 -   [File System (Global Object Access Auditing)](file-system-global-object-access-auditing.md)
 -   [Registry (Global Object Access Auditing)](registry-global-object-access-auditing.md)

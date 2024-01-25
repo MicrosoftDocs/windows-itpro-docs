@@ -1,14 +1,7 @@
 ---
 title: ADMX_Securitycenter Policy CSP
 description: Learn more about the ADMX_Securitycenter Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/18/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -28,7 +21,7 @@ ms.topic: reference
 <!-- SecurityCenter_SecurityCenterInDomain-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SecurityCenter_SecurityCenterInDomain-Applicability-End -->
 
 <!-- SecurityCenter_SecurityCenterInDomain-OmaUri-Begin -->
@@ -48,14 +41,6 @@ Note that Security Center can only be turned off for computers that are joined t
 - If you enable this policy setting, Security Center is turned on for all users.
 
 - If you disable this policy setting, Security Center is turned off for domain members.
-
-Windows XP SP2
-----------------------
-In Windows XP SP2, the essential security settings that are monitored by Security Center include firewall, antivirus, and Automatic Updates. Note that Security Center might not be available following a change to this policy setting until after the computer is restarted for Windows XP SP2 computers.
-
-Windows Vista
----------------------
-In Windows Vista, this policy setting monitors essential security settings to include firewall, antivirus, antispyware, Internet security settings, User Account Control, and Automatic Updates. Windows Vista computers don't require a reboot for this policy setting to take effect.
 <!-- SecurityCenter_SecurityCenterInDomain-Description-End -->
 
 <!-- SecurityCenter_SecurityCenterInDomain-Editable-Begin -->

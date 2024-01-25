@@ -1,14 +1,7 @@
 ---
 title: Accounts Policy CSP
 description: Learn more about the Accounts Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -26,7 +19,7 @@ ms.topic: reference
 <!-- AllowAddingNonMicrosoftAccountsManually-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAddingNonMicrosoftAccountsManually-Applicability-End -->
 
 <!-- AllowAddingNonMicrosoftAccountsManually-OmaUri-Begin -->
@@ -78,7 +71,7 @@ Specifies whether user is allowed to add non-MSA email accounts. Most restricted
 <!-- AllowMicrosoftAccountConnection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowMicrosoftAccountConnection-Applicability-End -->
 
 <!-- AllowMicrosoftAccountConnection-OmaUri-Begin -->
@@ -127,7 +120,7 @@ Specifies whether the user is allowed to use an MSA account for non-email relate
 <!-- AllowMicrosoftAccountSignInAssistant-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowMicrosoftAccountSignInAssistant-Applicability-End -->
 
 <!-- AllowMicrosoftAccountSignInAssistant-OmaUri-Begin -->
@@ -182,7 +175,7 @@ Allows IT Admins the ability to disable the Microsoft Account Sign-In Assistant 
 <!-- DomainNamesForEmailSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DomainNamesForEmailSync-Applicability-End -->
 
 <!-- DomainNamesForEmailSync-OmaUri-Begin -->
@@ -220,7 +213,7 @@ Allows IT Admins the ability to disable the Microsoft Account Sign-In Assistant 
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-Applicability-End -->
 
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-OmaUri-Begin -->
@@ -230,7 +223,7 @@ Allows IT Admins the ability to disable the Microsoft Account Sign-In Assistant 
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-OmaUri-End -->
 
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This setting determines whether to only allow enterprise device authentication for the Microsoft Account Sign-in Assistant service (wlidsvc). By default, this setting is disabled and allows both user and device authentication. When the value is set to 1, only allow device authentication, and block user authentication.
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-Description-End -->
 
@@ -263,8 +256,13 @@ Most restricted value is 1.
 
 | Name | Value |
 |:--|:--|
-| Name | MicrosoftAccount_RestrictToDeviceAuthenticationOnly |
-| Path | MSAPolicy > AT > WindowsComponents > MicrosoftAccountCategory |
+| Name | MicrosoftAccount_RestrictToEnterpriseDeviceAuthenticationOnly |
+| Friendly Name | Only allow device authentication for the Microsoft Account Sign-In Assistant |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft account |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | EnterpriseDeviceAuthOnly |
+| ADMX File Name | MSAPolicy.admx |
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-GpMapping-End -->
 
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-Examples-Begin -->

@@ -38,15 +38,18 @@
       "ms.collection": [
         "tier2"
       ],
+      "zone_pivot_group_filename": "resources/zone-pivot-groups.json",
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Windows",
-      "ms.technology": "itpro-manage",
       "audience": "ITPro",
-      "ms.topic": "article",
+      "ms.service": "windows-client",
+      "ms.subservice": "itpro-manage",
+      "ms.topic": "conceptual",
+      "ms.author": "vinpa",
+      "author": "vinaypamnani-msft",
       "manager": "aaroncz",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
-      "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
+      "feedback_system": "Standard",
+            "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.win-client-management",
@@ -72,7 +75,21 @@
         "Windows 10"
       ]
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "appliesto": {
+        "./*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
+        ],
+        "client-tools/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
+        ]
+      },
+      "ms.topic": {
+        "mdm/*.md": "reference"
+      }
+    },
     "template": [],
     "dest": "win-client-management",
     "markdownEngineName": "markdig"

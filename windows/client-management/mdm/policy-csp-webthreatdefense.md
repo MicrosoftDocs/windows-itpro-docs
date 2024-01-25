@@ -1,22 +1,13 @@
 ---
 title: WebThreatDefense Policy CSP
 description: Learn more about the WebThreatDefense Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- WebThreatDefense-Begin -->
 # Policy CSP - WebThreatDefense
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- WebThreatDefense-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -30,7 +21,7 @@ ms.topic: reference
 <!-- AutomaticDataCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 23H2 [10.0.22631] and later |
 <!-- AutomaticDataCollection-Applicability-End -->
 
 <!-- AutomaticDataCollection-OmaUri-Begin -->
@@ -40,8 +31,14 @@ ms.topic: reference
 <!-- AutomaticDataCollection-OmaUri-End -->
 
 <!-- AutomaticDataCollection-Description-Begin -->
-<!-- Description-Source-DDF -->
-Automatically collect website or app content when additional analysis is needed to help identify security threats.
+<!-- Description-Source-ADMX -->
+This policy setting determines whether Enhanced Phishing Protection can collect additional information-such as content displayed, sounds played, and application memory-when your users enter their work or school password into a suspicious website or app. This information is used only for security purposes and helps SmartScreen determine whether the website or app is malicious.
+
+- If you enable this policy setting, Enhanced Phishing Protection may automatically collect additional content for security analysis from a suspicious website or app when your users enter their work or school password into that website or app.
+
+- If you disable this policy setting, Enhanced Phishing Protection won't collect additional content for security analysis when your users enter their work or school password into a suspicious site or app.
+
+- If this policy isn't set, Enhanced Phishing Protection automatic data collection will honor the end user's settings.
 <!-- AutomaticDataCollection-Description-End -->
 
 <!-- AutomaticDataCollection-Editable-Begin -->
@@ -73,7 +70,12 @@ Automatically collect website or app content when additional analysis is needed 
 | Name | Value |
 |:--|:--|
 | Name | AutomaticDataCollection |
-| Path | WebThreatDefense > AT > WindowsComponents > WebThreatDefense |
+| Friendly Name | Automatic Data Collection |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Defender SmartScreen > Enhanced Phishing Protection |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WTDS\Components |
+| Registry Value Name | CaptureThreatWindow |
+| ADMX File Name | WebThreatDefense.admx |
 <!-- AutomaticDataCollection-GpMapping-End -->
 
 <!-- AutomaticDataCollection-Examples-Begin -->
@@ -88,7 +90,7 @@ Automatically collect website or app content when additional analysis is needed 
 <!-- NotifyMalicious-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- NotifyMalicious-Applicability-End -->
 
 <!-- NotifyMalicious-OmaUri-Begin -->
@@ -155,7 +157,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 <!-- NotifyPasswordReuse-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- NotifyPasswordReuse-Applicability-End -->
 
 <!-- NotifyPasswordReuse-OmaUri-Begin -->
@@ -222,7 +224,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 <!-- NotifyUnsafeApp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- NotifyUnsafeApp-Applicability-End -->
 
 <!-- NotifyUnsafeApp-OmaUri-Begin -->
@@ -289,7 +291,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 <!-- ServiceEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ServiceEnabled-Applicability-End -->
 
 <!-- ServiceEnabled-OmaUri-Begin -->

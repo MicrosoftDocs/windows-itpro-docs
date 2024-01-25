@@ -1,22 +1,22 @@
 ---
-title: Create, provision, and deploy the cache node in Azure portal
-manager: aaroncz
+title: Create, provision, and deploy the cache node
 description: Instructions for creating, provisioning, and deploying Microsoft Connected Cache for ISP on Azure portal
 ms.prod: windows-client
+ms.technology: itpro-updates
+manager: aaroncz
 author: nidos
 ms.author: nidos
-ms.topic: article
-ms.date: 05/09/2023
-ms.technology: itpro-updates
+ms.reviewer: mstewart
+ms.topic: conceptual
 ms.collection: tier3
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a> 	
+ms.date: 05/09/2023
 ---
 
 # Create, configure, provision, and deploy the cache node in Azure portal
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 This article outlines how to create, provision, and deploy your Microsoft Connected Cache nodes. The creation and provisioning of your cache node takes place in Azure portal. The deployment of your cache node requires downloading an installer script that will be run on your cache server.
 
@@ -82,7 +82,7 @@ To set up and enable BGP routing for your cache node, follow the steps below:
 1. Under **Routing information**, select the routing method you would like to use. For more information, see [Client routing](#client-routing).
 
     - If you choose **Manual routing**, enter your address range/CIDR blocks.  
-    - If you choose **BGP routing**, enter the ASN and IP addresses of the neighborship.  
+    - If you choose **BGP routing**, enter the ASN and IP addresses of the neighborship. Use your ASN, the one used to sign up for MCC. MCC will be automatically assigned as the same ASN as the neighbor.
     > [!NOTE]
     > **Prefix count** and **IP Space** will stop displaying `0` when BGP is successfully established.
 

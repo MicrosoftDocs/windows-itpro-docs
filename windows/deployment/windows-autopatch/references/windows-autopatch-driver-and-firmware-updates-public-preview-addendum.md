@@ -26,4 +26,4 @@ Capitalized terms used but not defined herein have the meanings given in the Pro
 
 ## Data Handling
 
-Driver and Firmware Updates Preview integrates Customer Data from other Products, including Windows, Microsoft Intune, Azure Active Directory, and Office (collectively for purposes of this provision "Windows Autopatch Input Services"). Once Customer Data from Windows Autopatch Input Services is integrated into Driver and Firmware Updates Preview, only the Product Terms and [DPA provisions](https://www.microsoft.com/licensing/terms/product/Glossary/all) applicable to Driver and Firmware Updates Preview apply to that data.
+Driver and Firmware Updates Preview integrates Customer Data from other Products, including Windows, Microsoft Intune, Microsoft Entra ID, and Office (collectively for purposes of this provision "Windows Autopatch Input Services"). Once Customer Data from Windows Autopatch Input Services is integrated into Driver and Firmware Updates Preview, only the Product Terms and [DPA provisions](https://www.microsoft.com/licensing/terms/product/Glossary/all) applicable to Driver and Firmware Updates Preview apply to that data.

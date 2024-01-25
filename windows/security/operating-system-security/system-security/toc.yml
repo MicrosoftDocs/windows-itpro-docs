@@ -13,6 +13,8 @@ items:
   href: ../../threat-protection/security-policy-settings/security-policy-settings.md
 - name: Security auditing
   href: ../../threat-protection/auditing/security-auditing-overview.md
+- name: Assigned Access (kiosk mode) 🔗
+  href: /windows/configuration/kiosk-methods
 - name: Windows Security settings
   href: windows-defender-security-center/windows-defender-security-center.md
   items:

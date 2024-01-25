@@ -1,10 +1,9 @@
 ---
-title: Modify an object label 
+title: Modify an object label
 description: Describes the best practices, location, values, policy management, and security considerations for the Modify an object label security policy setting.
 ms.assetid: 3e5a97dd-d363-43a8-ae80-452e866ebfd5
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Modify an object label
@@ -29,7 +27,7 @@ Describes the best practices, location, values, policy management, and security 
 
 This privilege determines which user accounts can modify the integrity label of objects, such as files, registry keys, or processes owned by other users. Processes running under a user account can modify the label of an object owned by that user to a lower level without this privilege.
 
-The integrity label is used by the Windows Integrity Controls (WIC) feature, which was introduced in Windows Server 2008 and Windows Vista. WIC keeps lower integrity processes from modifying higher integrity processes by assigning one of six possible labels to objects on the system. Although 
+The integrity label is used by the Windows Integrity Controls (WIC) feature, which was introduced in Windows Server 2008 and Windows Vista. WIC keeps lower integrity processes from modifying higher integrity processes by assigning one of six possible labels to objects on the system. Although
 similar to NTFS file and folder permissions, which are discretionary controls on objects, the WIC integrity levels are mandatory controls that are put in place and enforced by the operating system. The following list describes the integrity levels from lowest to highest:
 
 -   **Untrusted**   Default assignment for processes that are logged on anonymously.
@@ -62,13 +60,13 @@ The following table lists the actual and effective default policy values for the
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Not defined| 
-| Domain Controller Effective Default Settings | Not defined| 
-| Member Server Effective Default Settings | Not defined| 
-| Client Computer Effective Default Settings | Not defined| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Not defined|
+| Domain Controller Effective Default Settings | Not defined|
+| Member Server Effective Default Settings | Not defined|
+| Client Computer Effective Default Settings | Not defined|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.
@@ -94,7 +92,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Anyone with the **Modify an object label** user right can change the integrity level of a file or process so that it becomes elevated or decreased to a point where it can be deleted by lower integrity processes. Either of these states effectively circumvents the protection that is offered by 
+Anyone with the **Modify an object label** user right can change the integrity level of a file or process so that it becomes elevated or decreased to a point where it can be deleted by lower integrity processes. Either of these states effectively circumvents the protection that is offered by
 Windows Integrity Controls and makes your system vulnerable to attacks by malicious software.
 
 If malicious software is set with an elevated integrity level such as Trusted Installer or System, administrator accounts don't have sufficient integrity levels to delete the program from the system. In that case, use of the **Modify an object label** right is mandated so that the object can be relabeled. However, the relabeling must occur by using a process that is at the same or a higher level of integrity than the object that you're attempting to relabel.

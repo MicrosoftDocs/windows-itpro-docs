@@ -1,10 +1,9 @@
 ---
-title: Accounts Administrator account status 
+title: Accounts Administrator account status
 description: Describes the best practices, location, values, and security considerations for the Accounts Administrator account status security policy setting.
 ms.assetid: 71a3bd48-1014-49e0-a936-bfe9433af23e
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 08/01/2017
-ms.technology: itpro-security
 ---
 
 # Accounts: Administrator account status
@@ -87,7 +85,7 @@ When you start a device in safe mode, the disabled administrator account is enab
 ### How to access a disabled Administrator account
 
 You can use the following methods to access a disabled Administrator account:
--   For non-domain joined computers: when all the local administrator accounts are disabled, start the device in safe mode (locally or over a network), and sign in by using the credentials for the default local administrator account on that computer. 
+-   For non-domain joined computers: when all the local administrator accounts are disabled, start the device in safe mode (locally or over a network), and sign in by using the credentials for the default local administrator account on that computer.
 -   For domain-joined computers: remotely run the command **net user administrator /active: yes** by using psexec to enable the default local administrator account.
 
 ## Security considerations

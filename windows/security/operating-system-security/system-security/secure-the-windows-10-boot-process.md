@@ -2,9 +2,8 @@
 title: Secure the Windows boot process
 description: This article describes how Windows security features help protect your PC from malware, including rootkits and other applications.
 ms.topic: conceptual
-ms.date: 03/09/2023
+ms.date: 08/11/2023
 ms.collection:
-  - highpri
   - tier1
 ---
 
@@ -16,9 +15,9 @@ Windows has multiple levels of protection for desktop apps and data, too. Window
 
 Those components are just some of the ways that Windows protects you from malware. However, those security features protect you only after Windows starts. Modern malware, and bootkits specifically, are capable of starting before Windows, completely bypassing OS security, and remaining hidden.
 
-When you run Windows 10 or Windows 11 on a PC or any PC that supports Unified Extensible Firmware Interface (UEFI), Trusted Boot protects your PC from malware from the moment you power on your PC until your anti-malware starts. In the unlikely event that malware does infect a PC, it can't remain hidden; Trusted Boot can prove the system's integrity to your infrastructure in a way that malware can't disguise. Even on PCs without UEFI, Windows provides even better startup security than previous versions of Windows.
+Running Windows 10 or Windows 11 on a PC with Unified Extensible Firmware Interface (UEFI) support ensures that Trusted Boot safeguards your PC against malware right from the moment you power it on. This protection continues until your anti-malware software takes over. If, by any chance, malware manages to infect your PC, it won't be able to stay hidden. Trusted Boot can verify the system's integrity to your infrastructure in a manner that malware can't mask. Even for PCs without UEFI, Windows offers enhanced startup security compared to earlier Windows versions.
 
-First, let's examine what rootkits are and how they work. Then, we'll show you how Windows can protect you.
+To begin, let's take a closer look at rootkits and their functioning. Following that, we'll illustrate how Windows can ensure your protection.
 
 ## The threat: rootkits
 
@@ -74,14 +73,14 @@ These requirements help protect you from rootkits while allowing you to run any 
 
 To prevent malware from abusing these options, the user must manually configure the UEFI firmware to trust a non-certified bootloader or to turn off Secure Boot. Software can't change the Secure Boot settings.
 
-The default state of Secure Boot has a wide circle of trust which can result in customers trusting boot components they may not need. Since the Microsoft 3rd Party UEFI CA certificate signs the bootloaders for all Linux distributions, trusting the Microsoft 3rd Party UEFI CA signature in the UEFI database  increase  s the attack surface of systems. A customer who intended to only trust and boot a single Linux distribution will trust all distributions – much more than their desired configuration. A vulnerability in any of the bootloaders exposes the system and places the customer at risk of exploit for a bootloader they never intended to use, as seen in recent vulnerabilities, for example [with the GRUB bootloader](https://msrc.microsoft.com/security-guidance/advisory/ADV200011) or [firmware-level rootkit]( https://www.darkreading.com/threat-intelligence/researchers-uncover-dangerous-new-firmware-level-rootkit) affecting boot components. [Secured-core PCs](/windows-hardware/design/device-experiences/OEM-highly-secure-11) require Secure Boot to be enabled and configured to distrust the Microsoft 3rd Party UEFI CA signature, by default, to provide customers with the most secure configuration of their PCs possible.
+The default state of Secure Boot has a wide circle of trust, which can result in customers trusting boot components they may not need. Since the Microsoft 3rd Party UEFI CA certificate signs the bootloaders for all Linux distributions, trusting the Microsoft 3rd Party UEFI CA signature in the UEFI database  increase  s the attack surface of systems. A customer who intended to only trust and boot a single Linux distribution will trust all distributions - much more than their desired configuration. A vulnerability in any of the bootloaders exposes the system and places the customer at risk of exploit for a bootloader they never intended to use, as seen in recent vulnerabilities, for example [with the GRUB bootloader](https://msrc.microsoft.com/security-guidance/advisory/ADV200011) or [firmware-level rootkit]( https://www.darkreading.com/threat-intelligence/researchers-uncover-dangerous-new-firmware-level-rootkit) affecting boot components. [Secured-core PCs](/windows-hardware/design/device-experiences/OEM-highly-secure-11) require Secure Boot to be enabled and configured to distrust the Microsoft 3rd Party UEFI CA signature, by default, to provide customers with the most secure configuration of their PCs possible.
 
 To trust and boot operating systems, like Linux, and components signed by the UEFI signature, Secured-core PCs can be configured in the BIOS menu to add the signature in the UEFI database by following these steps:
 
 1. Open the firmware menu, either:
     - Boot the PC, and press the manufacturer's key to open the menus. Common keys used: Esc, Delete, F1, F2, F10, F11, or F12. On tablets, common buttons are Volume up or Volume down. During startup, there's often a screen that mentions the key. If there's not one, or if the screen goes by too fast to see it, check your manufacturer's site.
     - Or, if Windows is already installed, from either the Sign on screen or the Start menu, select Power ( ) > hold Shift while selecting Restart. Select Troubleshoot > Advanced options > UEFI Firmware settings.
-2. From the firmware menu navigate to Security > Secure Boot and select the option to trust the "3rd Party CA".
+2. From the firmware menu, navigate to Security > Secure Boot and select the option to trust the "3rd Party CA".
 3. Save changes and exit.
 
 Microsoft continues to collaborate with Linux and IHV ecosystem partners to design least privileged features to help you stay secure and opt-in trust for only the publishers and components you trust.
@@ -96,7 +95,7 @@ Trusted Boot takes over where Secure Boot ends. The bootloader verifies the digi
 
 Because Secure Boot has protected the bootloader and Trusted Boot has protected the Windows kernel, the next opportunity for malware to start is by infecting a non-Microsoft boot driver. Traditional anti-malware apps don't start until after the boot drivers have been loaded, giving a rootkit disguised as a driver the opportunity to work.
 
-Early Launch Anti-Malware (ELAM) can load a Microsoft or non-Microsoft anti-malware driver before all non-Microsoft boot drivers and applications, thus continuing the chain of trust established by Secure Boot and Trusted Boot. Because the OS hasn't started yet, and because Windows needs to boot as quickly as possible, ELAM has a simple task: examine every boot driver and determine whether it is on the list of trusted drivers. If it's not trusted, Windows won't load it.
+Early Launch Anti-Malware (ELAM) can load a Microsoft or non-Microsoft anti-malware driver before all non-Microsoft boot drivers and applications, thus continuing the chain of trust established by Secure Boot and Trusted Boot. Because the OS hasn't started yet, and because Windows needs to boot as quickly as possible, ELAM has a simple task: examine every boot driver and determine whether it is on the list of trusted drivers. If it's not trusted, Windows doesn't load it.
 
 An ELAM driver isn't a full-featured anti-malware solution; that loads later in the boot process. Windows Defender (included with Windows) supports ELAM, as does several non-Microsoft anti-malware apps.
 
@@ -108,7 +107,7 @@ As a result, PCs infected with rootkits appear to be healthy, even with anti-mal
 
 Measured Boot works with the TPM and non-Microsoft software in Windows. It allows a trusted server on the network to verify the integrity of the Windows startup process. Measured Boot uses the following process:
 
-1. The PC's UEFI firmware stores in the TPM a hash of the firmware, bootloader, boot drivers, and everything that will be loaded before the anti-malware app.
+1. The PC's UEFI firmware stores in the TPM a hash of the firmware, bootloader, boot drivers, and everything that is loaded before the anti-malware app.
 2. At the end of the startup process, Windows starts the non-Microsoft remote attestation client. The trusted attestation server sends the client a unique key.
 3. The TPM uses the unique key to digitally sign the log recorded by the UEFI.
 4. The client sends the log to the server, possibly with other security information.
@@ -121,7 +120,7 @@ Figure 2 illustrates the Measured Boot and remote attestation process.
 
 *Figure 2. Measured Boot proves the PC's health to a remote server*:
 
-Windows includes the application programming interfaces to support Measured Boot, but you'll need non-Microsoft tools to implement a remote attestation client and trusted attestation server to take advantage of it. For example, see the following tools from Microsoft Research:
+Windows includes the application programming interfaces to support Measured Boot. However, to take advantage of it, you need non-Microsoft tools to implement a remote attestation client and trusted attestation server. For example, see the following tools from Microsoft Research:
 
 - [TPM Platform Crypto-Provider Toolkit](https://www.microsoft.com/download/details.aspx?id=52487)
 - [TSS.MSR](https://github.com/microsoft/TSS.MSR#tssmsr)

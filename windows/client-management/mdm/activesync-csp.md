@@ -1,14 +1,7 @@
 ---
 title: ActiveSync CSP
 description: Learn more about the ActiveSync CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 07/06/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -64,7 +57,7 @@ The following list shows the ActiveSync configuration service provider nodes:
 <!-- User-Accounts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-Applicability-End -->
 
 <!-- User-Accounts-OmaUri-Begin -->
@@ -103,7 +96,7 @@ The parent node group all active sync accounts.
 <!-- User-Accounts-{Account GUID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-OmaUri-Begin -->
@@ -163,7 +156,7 @@ For OMA DM, you must use the ASCII values of %7B and %7D for the opening and clo
 <!-- User-Accounts-{Account GUID}-AccountIcon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-AccountIcon-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-AccountIcon-OmaUri-Begin -->
@@ -203,7 +196,7 @@ The account icon can be used as a tile in the Start list or an icon in the appli
 <!-- User-Accounts-{Account GUID}-AccountName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-AccountName-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-AccountName-OmaUri-Begin -->
@@ -242,7 +235,7 @@ The name that refers to the account on the device.
 <!-- User-Accounts-{Account GUID}-AccountType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-AccountType-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-AccountType-OmaUri-Begin -->
@@ -281,7 +274,7 @@ Specify the account type. This value is entered during setup and can't be modifi
 <!-- User-Accounts-{Account GUID}-Domain-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Domain-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Domain-OmaUri-Begin -->
@@ -320,7 +313,7 @@ Domain name of the Exchange server.
 <!-- User-Accounts-{Account GUID}-EmailAddress-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-EmailAddress-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-EmailAddress-OmaUri-Begin -->
@@ -360,7 +353,7 @@ This email address is entered by the user during setup and must be in the fully 
 <!-- User-Accounts-{Account GUID}-Options-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-OmaUri-Begin -->
@@ -399,7 +392,7 @@ Specifies whether email, contacts, and calendar need to synchronize by default, 
 <!-- User-Accounts-{Account GUID}-Options-CalendarAgeFilter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-CalendarAgeFilter-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-CalendarAgeFilter-OmaUri-Begin -->
@@ -438,7 +431,7 @@ Specifies the time window used for syncing calendar items to the phone.
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-OmaUri-Begin -->
@@ -477,7 +470,7 @@ Interior node for Content Types.
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-OmaUri-Begin -->
@@ -517,7 +510,7 @@ Enables or disables syncing email, contacts, task, and calendar. Each is represe
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Enabled-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Enabled-OmaUri-Begin -->
@@ -566,7 +559,7 @@ Enables or disables Sync for Email, contacts, calendar, and Tasks.
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Name-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Name-OmaUri-Begin -->
@@ -605,7 +598,7 @@ The name of the content type.
 <!-- User-Accounts-{Account GUID}-Options-Logging-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-Logging-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-Logging-OmaUri-Begin -->
@@ -655,7 +648,7 @@ Specifies whether diagnostic logging is enabled and at what level.
 <!-- User-Accounts-{Account GUID}-Options-MailAgeFilter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-MailAgeFilter-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-MailAgeFilter-OmaUri-Begin -->
@@ -709,7 +702,7 @@ Specifies the time window used for syncing email items to the phone.
 <!-- User-Accounts-{Account GUID}-Options-MailBodyType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-MailBodyType-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-MailBodyType-OmaUri-Begin -->
@@ -760,7 +753,7 @@ Indicates format type of the Email. Supported values are 0 (none), 1 (text), 2 (
 <!-- User-Accounts-{Account GUID}-Options-MailHTMLTruncation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-MailHTMLTruncation-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-MailHTMLTruncation-OmaUri-Begin -->
@@ -799,7 +792,7 @@ This setting specifies the size beyond which HTML-formatted e-mail messages are 
 <!-- User-Accounts-{Account GUID}-Options-MailPlainTextTruncation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-MailPlainTextTruncation-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-MailPlainTextTruncation-OmaUri-Begin -->
@@ -838,7 +831,7 @@ This setting specifies the size beyond which text-formatted e-mail messages are 
 <!-- User-Accounts-{Account GUID}-Options-Schedule-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-Schedule-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-Schedule-OmaUri-Begin -->
@@ -879,7 +872,7 @@ Specifies the time until the next sync is performed in minutes. If -1 is chosen,
 <!-- User-Accounts-{Account GUID}-Options-UseSSL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-UseSSL-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-UseSSL-OmaUri-Begin -->
@@ -928,7 +921,7 @@ Specifies whether SSL is used.
 <!-- User-Accounts-{Account GUID}-Password-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Password-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Password-OmaUri-Begin -->
@@ -967,7 +960,7 @@ A character string that specifies the password for the account. For the Get comm
 <!-- User-Accounts-{Account GUID}-Policies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Policies-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Policies-OmaUri-Begin -->
@@ -1006,7 +999,7 @@ Specifies the mail body type and email age filter.
 <!-- User-Accounts-{Account GUID}-Policies-MailBodyType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Policies-MailBodyType-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Policies-MailBodyType-OmaUri-Begin -->
@@ -1054,7 +1047,7 @@ Specifies the email body type. HTML or plain.
 <!-- User-Accounts-{Account GUID}-Policies-MaxMailAgeFilter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Policies-MaxMailAgeFilter-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Policies-MaxMailAgeFilter-OmaUri-Begin -->
@@ -1093,7 +1086,7 @@ Specifies the time window used for syncing mail items to the device.
 <!-- User-Accounts-{Account GUID}-ServerName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-ServerName-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-ServerName-OmaUri-Begin -->
@@ -1132,7 +1125,7 @@ Specifies the server name used by the account.
 <!-- User-Accounts-{Account GUID}-UserName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-UserName-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-UserName-OmaUri-Begin -->

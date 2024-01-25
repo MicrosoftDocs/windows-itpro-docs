@@ -1,12 +1,14 @@
 items:
   - name: Transport layer security (TLS) 🔗
     href: /windows-server/security/tls/tls-ssl-schannel-ssp-overview
+  - name: Domain Name System (DNS) security 🔗
+    href: /windows-server/networking/dns/doh-client-support
   - name: Wi-Fi Security
     href: https://support.microsoft.com/windows/faster-and-more-secure-wi-fi-in-windows-26177a28-38ed-1a8e-7eca-66f24dc63f09
   - name: Extensible Authentication Protocol (EAP) for network access
     href: /windows-server/networking/technologies/extensible-authentication-protocol/network-access
-  - name: Windows Firewall 🔗
-    href: windows-firewall/windows-firewall-with-advanced-security.md
+  - name: Windows Firewall
+    href: windows-firewall/toc.yml
   - name: Virtual Private Network (VPN)
     href: vpn/toc.yml
   - name: Always On VPN 🔗

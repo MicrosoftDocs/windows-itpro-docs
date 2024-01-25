@@ -15,7 +15,7 @@ ms.topic: how-to
 
 **Applies to**
 
-- Windows 11 Pro, Enterprise, and Education
+- Windows 11 Pro, Enterprise, IoT Enterprise and Education
 
 > [!NOTE]
 > The use of multiple monitors is supported for multi-app kiosk mode in Windows 11.
@@ -35,8 +35,12 @@ See the table below for the different methods to configure a multi-app kiosk in 
 |Configuration Method|Availability|
 |--------------------|------------|
 |[MDM WMI Bridge Provider](#configure-a-kiosk-using-wmi-bridge) | Available May 2023|
+
+<!-- 
+Commenting out the coming soon items
 |Intune|Coming soon|
 |Provisioning Package Using Windows Configuration Designer| Coming soon|
+-->
 
 > [!NOTE]
 > For WMI Bridge/PowerShell and Provisioning package methods, you will need to create your own multi-app kiosk XML file as specified below.
@@ -203,7 +207,7 @@ The following example hides the taskbar:
 ```
 
 > [!IMPORTANT]
-> The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Azure Active Directory account could potentially compromise confidential information.  
+> The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Microsoft Entra account could potentially compromise confidential information.  
 
 #### Configs
 
@@ -214,8 +218,8 @@ The full multi-app assigned access experience can only work for non-admin users.
 You can assign:
 
 - [A local standard user account that signs in automatically](#config-for-autologon-account) (Applies to Windows 10, version 1803 only)
-- [An individual account, which can be local, domain, or Azure Active Directory (Azure AD)](#config-for-individual-accounts)
-- [A group account, which can be local, Active Directory (domain), or Azure AD](#config-for-group-accounts) (Applies to Windows 10, version 1803 only).
+- [An individual account, which can be local, domain, or Microsoft Entra ID](#config-for-individual-accounts)
+- [A group account, which can be local, Active Directory (domain), or Microsoft Entra ID](#config-for-group-accounts) (Applies to Windows 10, version 1803 only).
 
 > [!NOTE]
 > Configs that specify group accounts cannot use a kiosk profile, only a lockdown profile. If a group is configured to a kiosk profile, the CSP will reject the request.
@@ -257,7 +261,7 @@ Individual accounts are specified using `<Account>`.
 
 - Local account can be entered as `machinename\account` or `.\account` or just `account`.
 - Domain account should be entered as `domain\account`.
-- Azure AD account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided _as is_, and consider it's a fixed domain name. Then follow with the Azure AD email address. For example, `AzureAD\someone@contoso.onmicrosoft.com`
+- Microsoft Entra account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided _as is_, and consider it's a fixed domain name. Then follow with the Microsoft Entra ID email address. For example, `AzureAD\someone@contoso.onmicrosoft.com`
 
 > [!WARNING]
 > Assigned access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account.  However, use of domain user or service accounts introduces risks that an attacker subverting the assigned access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
@@ -265,7 +269,7 @@ Individual accounts are specified using `<Account>`.
 Before applying the multi-app configuration, make sure the specified user account is available on the device, otherwise it will fail.
 
 > [!NOTE]
-> For both domain and Azure AD accounts, it's not required that target account is explicitly added to the device. As long as the device is AD-joined or Azure AD-joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for assigned access.
+> For both domain and Microsoft Entra accounts, it's not required that target account is explicitly added to the device. As long as the device is AD-joined or Microsoft Entra joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for assigned access.
 
 ```xml
 <Configs>
@@ -280,7 +284,7 @@ Before applying the multi-app configuration, make sure the specified user accoun
 
 Group accounts are specified using `<UserGroup>`. Nested groups aren't supported. For example, if user A is member of Group 1, Group 1 is member of Group 2, and Group 2 is used in `<Config/>`, user A won't have the kiosk experience.
 
-- Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. Any Azure AD accounts that are added to the local group won't have the kiosk settings applied.
+- Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. Any Microsoft Entra accounts that are added to the local group won't have the kiosk settings applied.
 
   ```xml
   <Config>
@@ -298,7 +302,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups aren't supported
   </Config>
   ```
 
-- Azure AD group: Use the group object ID from the Azure portal to uniquely identify the group in the Name attribute. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as **AzureActiveDirectoryGroup**. The kiosk device must have internet connectivity when users that belong to the group sign-in.
+- Microsoft Entra group: Use the group object ID from the Azure portal to uniquely identify the group in the Name attribute. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as **AzureActiveDirectoryGroup**. The kiosk device must have internet connectivity when users that belong to the group sign-in.
 
   ```xml
   <Config>
@@ -308,7 +312,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups aren't supported
   ```
 
   > [!NOTE]
-  > If an Azure AD group is configured with a lockdown profile on a device, a user in the Azure AD group must change their password (after the account has been created with default password on the portal) before they can sign in to this device. If the user uses the default password to sign in to the device, the user will be immediately signed out.
+  > If a Microsoft Entra group is configured with a lockdown profile on a device, a user in the Microsoft Entra group must change their password (after the account has been created with default password on the portal) before they can sign in to this device. If the user uses the default password to sign in to the device, the user will be immediately signed out.
 
 <span id="add-xml" />
 
@@ -319,42 +323,69 @@ Environments that use [Windows Management Instrumentation (WMI)](/windows/win32/
 Here's an example of how to set AssignedAccess configuration:
 
 1. Download the [psexec tool](/sysinternals/downloads/psexec).  
-2. Run `psexec.exe -i -s cmd.exe`.
-3. In the command prompt launched by psexec.exe, enter `powershell.exe` to open PowerShell. 
-4. Run the following script replacing the placeholder "your XML here, with the [XML](#create-the-xml-file) you created above.
+1. Using an elevated command prompt, run `psexec.exe -i -s cmd.exe`.
+1. In the command prompt launched by psexec.exe, enter `powershell.exe` to open PowerShell.
+1. Save the following Powershell excerpt as a PowerShell script (.ps1), replacing the placeholder "your XML here" with the [Sample Assigned Access XML](#sample-assigned-access-xml) then run the script at the Powershell prompt from the previous step.
 
-```xml
-$nameSpaceName="root\cimv2\mdm\dmmap"
+```powershell
+$eventLogFilterHashTable = @{
+    ProviderName = "Microsoft-Windows-AssignedAccess";
+    StartTime    = Get-Date -Millisecond 0
+}
+
+$namespaceName="root\cimv2\mdm\dmmap"
 $className="MDM_AssignedAccess"
 $obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
-Add-Type -AssemblyName System.Web
-$obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
+$obj.Configuration = [System.Net.WebUtility]::HtmlEncode(@"
 
 <your XML here>
     
 "@)
 
-Set-CimInstance -CimInstance $obj
+$obj = Set-CimInstance -CimInstance $obj -ErrorVariable cimSetError -ErrorAction SilentlyContinue
+if($cimSetError) {
+    Write-Output "An ERROR occurred. Displaying error record and attempting to retrieve error logs...`n"
+    Write-Error -ErrorRecord $cimSetError[0]
+
+    $timeout = New-TimeSpan -Seconds 30
+    $stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
+    do{
+        $events = Get-WinEvent -FilterHashtable $eventLogFilterHashTable -ErrorAction Ignore
+    } until ($events.Count -or $stopwatch.Elapsed -gt $timeout) # wait for the log to be available
+    
+    if($events.Count) {
+        $events | ForEach-Object { 
+            Write-Output "$($_.TimeCreated) [$($_.LevelDisplayName.ToUpper())] $($_.Message -replace "`n|`r")" 
+        }
+    } else {
+        Write-Warning "Timed-out attempting to retrieve event logs..."
+    }
+
+    Exit 1
+}
+
+Write-Output "Successfully applied Assigned Access configuration"
 ```
+
 ## Sample Assigned Access XML
 
-Compare the below to your XML file to check for correct formatting. 
+This section contains a predefined XML file which can be used as a quickstart to get familiar with the Assigned Access multi-app kiosk feature on Windows 11.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration  
-  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
+  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
+  xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
   <Profiles>
     <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">       
       <AllAppsList>
         <AllowedApps> 
-          <App AppUserModelId="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" /> 
-          <App AppUserModelId="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" /> 
           <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" /> 
           <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" /> 
-          <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" /> 
-          <App DesktopAppPath="%windir%\system32\mspaint.exe" /> 
-          <App DesktopAppPath="C:\Windows\System32\notepad.exe" /> 
+          <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
+          <App DesktopAppPath="C:\Windows\system32\cmd.exe" />
+          <App DesktopAppPath="%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe" />
+          <App DesktopAppPath="%windir%\explorer.exe" /> 
         </AllowedApps> 
       </AllAppsList> 
       <win11:StartPins>
@@ -362,11 +393,10 @@ Compare the below to your XML file to check for correct formatting.
           { "pinnedList":[
             {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
             {"packagedAppId":"Microsoft.Windows.Photos_8wekyb3d8bbwe!App"},
-            {"packagedAppId":"Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic"},
-            {"packagedAppId":"Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo"},
             {"packagedAppId":"Microsoft.BingWeather_8wekyb3d8bbwe!App"},
-            {"desktopAppLink":"%ALLUSERSPROFILE%\\Microsoft\\Windows\\StartMenu\\Programs\\Accessories\\Paint.lnk"},
-            {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\StartMenu\\Programs\\Accessories\\Notepad.lnk"}
+            {"desktopAppLink":"C:\\Users\\MultiAppKioskUser\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\File Explorer.lnk"},
+            {"desktopAppLink":"C:\\Users\\MultiAppKioskUser\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Command Prompt.lnk"},
+            {"desktopAppLink":"C:\\Users\\MultiAppKioskUser\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell.lnk"}
           ] }
         ]]>
       </win11:StartPins>
@@ -379,5 +409,5 @@ Compare the below to your XML file to check for correct formatting.
       <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
     </Config>
   </Configs>
-</AssignedAccessConfiguration>
+</AssignedAccessConfiguration> 
 ```

@@ -1,19 +1,24 @@
 ---
 title: Microsoft 365 admin center software updates page
+titleSuffix: Windows Update for Business reports
 manager: aaroncz
 description: Microsoft admin center populates Windows Update for Business reports data into the software updates page.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
-ms.topic: article
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows Update for Business reports</a>	
+- ✅ <a href=https://learn.microsoft.com/microsoft-365/admin/admin-overview/admin-center-overview >Microsoft 365 admin center</a>	
 ms.date: 04/26/2023
-ms.technology: itpro-updates
 ---
 
 # Microsoft 365 admin center software updates page
 <!--37063317, 30141258, 37063041, ID2616577, ID2582518 -->
-***(Applies to: Windows 11 & Windows 10 using [Windows Update for Business reports](wufb-reports-overview.md) and the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview))***
 
 The **Software updates** page in the [Microsoft 365 admin center](https://admin.microsoft.com) displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. [Quality updates](quality-updates.md) that contain security fixes are typically released on the second Tuesday of each month. Ensuring these updates are installed is important because they help protect you from known vulnerabilities. The **Software updates** page allows you to easily determine the overall update compliance for your devices.
 

@@ -1,14 +1,7 @@
 ---
 title: Multitasking Policy CSP
 description: Learn more about the Multitasking Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -26,7 +19,7 @@ ms.topic: reference
 <!-- BrowserAltTabBlowout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BrowserAltTabBlowout-Applicability-End -->
 
 <!-- BrowserAltTabBlowout-OmaUri-Begin -->
@@ -37,9 +30,9 @@ ms.topic: reference
 
 <!-- BrowserAltTabBlowout-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting controls the inclusion of Microsoft Edge tabs into Alt+Tab.
+This setting controls the inclusion of app tabs into Alt+Tab.
 
-This can be set to show all tabs, the most recent 3 or 5 tabs, or no tabs from Microsoft Edge.
+This can be set to show the most recent 3, 5 or 20 tabs, or no tabs from apps.
 
 If this is set to show "Open windows only", the whole feature will be disabled.
 <!-- BrowserAltTabBlowout-Description-End -->
@@ -82,7 +75,7 @@ This policy only applies to the Alt+Tab switcher. When the policy isn't enabled,
 | Name | Value |
 |:--|:--|
 | Name | BrowserAltTabBlowout |
-| Friendly Name | Configure the inclusion of Microsoft Edge tabs into Alt-Tab |
+| Friendly Name | Configure the inclusion of app tabs into Alt-Tab |
 | Element Name | Pressing Alt + Tab shows. |
 | Location | User Configuration |
 | Path | Windows Components > Multitasking |

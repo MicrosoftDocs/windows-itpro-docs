@@ -8,10 +8,9 @@ ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.collection:
- - highpri
  - tier1
 ms.technology: itpro-configure
-ms.date: 12/31/2017
+ms.date: 08/17/2023
 ms.topic: article
 ---
 

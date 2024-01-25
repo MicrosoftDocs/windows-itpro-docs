@@ -2,16 +2,9 @@
 title: Provisioning packages overview
 description: With Windows 10 and Windows 11, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image. Learn about what provisioning packages, are and what they do.
 ms.reviewer: kevinsheehan
-manager: aaroncz
-ms.prod: windows-client
 author: lizgt2000
 ms.author: lizlong
 ms.topic: article
-ms.localizationpriority: medium
-ms.collection:
- - highpri
- - tier2
-ms.technology: itpro-configure
 ms.date: 12/31/2017
 ---
 
@@ -73,8 +66,8 @@ The following table describes settings that you can configure using the wizards 
 | --- | --- | --- | --- | --- |
 | Set up device | Assign device name, enter product key to upgrade Windows, configure shared use, remove pre-installed software | ✔️ | ✔️ | ✔️ |
 | Set up network | Connect to a Wi-Fi network | ✔️ | ✔️ | ✔️ |
-| Account management | Enroll device in Active Directory, enroll device in Azure Active Directory, or create a local administrator account | ✔️ | ✔️ | ✔️ |
-| Bulk Enrollment in Azure AD | Enroll device in Azure Active Directory using Bulk Token</br></br> [Set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup), before you use Windows Configuration Designer wizard to configure bulk Azure AD enrollment. | ✔️ | ✔️ | ✔️ |
+| Account management | Enroll device in Active Directory, enroll device in Microsoft Entra ID, or create a local administrator account | ✔️ | ✔️ | ✔️ |
+| Bulk Enrollment in Microsoft Entra ID | Enroll device in Microsoft Entra ID using Bulk Token</br></br> [Set up Microsoft Entra join in your organization](/azure/active-directory/active-directory-azureadjoin-setup), before you use Windows Configuration Designer wizard to configure bulk Microsoft Entra enrollment. | ✔️ | ✔️ | ✔️ |
 | Add applications | Install applications using the provisioning package.  | ✔️ | ✔️ | ❌ |
 | Add certificates | Include a certificate file in the provisioning package. | ✔️ | ✔️ | ✔️ |
 | Configure kiosk account and app | Create local account to run the kiosk mode app, specify the app to run in kiosk mode | ❌ | ✔️ | ❌ |

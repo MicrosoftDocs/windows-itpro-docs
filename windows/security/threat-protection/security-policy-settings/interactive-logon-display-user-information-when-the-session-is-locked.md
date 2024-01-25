@@ -1,10 +1,9 @@
 ---
-title: Interactive logon Display user information when the session is locked 
+title: Interactive logon Display user information when the session is locked
 description: Best practices, security considerations, and more for the security policy setting, Interactive logon Display user information when the session is locked.
 ms.assetid: 9146aa3d-9b2f-47ba-ac03-ff43efb10530
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Interactive logon: Display user information when the session is locked
@@ -66,7 +64,7 @@ This setting has these possible values:
 
     For a domain sign in only, the domain\username is displayed.
     The **Privacy** setting is automatically on and grayed out.
-    
+
 -   **Blank**
 
     Default setting.

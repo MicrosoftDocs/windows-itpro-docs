@@ -1,21 +1,23 @@
 ---
-title: Troubleshoot the Windows Update for Business deployment service
-description: Solutions to common problems with the service
+title: Troubleshoot the deployment service
+titleSuffix: Windows Update for Business deployment service
+description: Solutions to commonly encountered problems when using the Windows Update for Business deployment service.
 ms.prod: windows-client
-author: mestew
-ms.localizationpriority: medium
-ms.author: mstewart
-manager: aaroncz
-ms.topic: article
 ms.technology: itpro-updates
-ms.date: 12/31/2017
+ms.topic: troubleshooting
+ms.author: mstewart
+author: mestew
+manager: aaroncz
+ms.collection:
+  - tier1
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 02/14/2023
 ---
 
-
-
 # Troubleshoot the Windows Update for Business deployment service
-
-***(Applies to: Windows 11 & Windows 10)***
 
 This troubleshooting guide addresses the most common issues that IT administrators face when using the Windows Update for Business [deployment service](deployment-service-overview.md). For a general troubleshooting guide for Windows Update, see [Windows Update troubleshooting](/troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json).
 
@@ -25,13 +27,13 @@ This troubleshooting guide addresses the most common issues that IT administrato
 - **Feature updates only**: The device might have a safeguard hold applied for the given feature update version. For more about safeguard holds, see [Safeguard holds](safeguard-holds.md) and [Opt out of safeguard holds](safeguard-opt-out.md).
 - Check that the deployment to which the device is assigned has the state *offering*. Deployments that have the states *paused* or *scheduled* won't deploy content to devices.
 - Check that the device has scanned for updates and is scanning the Windows Update service. To learn more about scanning for updates, see [Scanning updates](how-windows-update-works.md#scanning-updates).
-- **Feature updates only**: Check that the device is successfully enrolled in feature update management by the deployment service. A device that is successfully enrolled will be represented by an Azure AD device resource with an update management enrollment for feature updates and have no Azure AD device registration errors.
+- **Feature updates only**: Check that the device is successfully enrolled in feature update management by the deployment service. A device that is successfully enrolled will be represented by a Microsoft Entra device resource with an update management enrollment for feature updates and have no Microsoft Entra device registration errors.
 -  **Expedited quality updates only**: Check that the device has the Update Health Tools installed (available for Windows 10 version 1809 or later in the update described in [KB 4023057 - Update for Windows 10 Update Service components](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a), or a more recent quality update). The Update Health Tools are required for a device to receive an expedited quality update. On a device, the program can be located at **C:\\Program Files\\Microsoft Update Health Tools**. You can verify its presence by reviewing **Add or Remove Programs** or using the following PowerShell script: `Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -match "Microsoft Update Health Tools"}`.
 
 ## The device is receiving an update that I didn't deploy
 
 - Check that the device is scanning the Windows Update service and not a different endpoint. If the device is scanning for updates from a WSUS endpoint, for example, it might receive different updates. To learn more about scanning for updates, see [Scanning updates](how-windows-update-works.md#scanning-updates).
-- **Feature updates only**: Check that the device is successfully enrolled in feature update management by the deployment service. A device that is not successfully enrolled might receive different updates according to its feature update deferral period, for example. A device that is successfully enrolled will be represented by an Azure AD device resource with an update management enrollment for feature updates and have no Azure AD device registration errors.
+- **Feature updates only**: Check that the device is successfully enrolled in feature update management by the deployment service. A device that is not successfully enrolled might receive different updates according to its feature update deferral period, for example. A device that is successfully enrolled will be represented by a Microsoft Entra device resource with an update management enrollment for feature updates and have no Microsoft Entra device registration errors.
 
 ### The device installed a newer update then the expedited update I deployed
 

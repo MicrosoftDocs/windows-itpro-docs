@@ -1,13 +1,6 @@
 ---
 title: NAP CSP
 description: Learn how the Network Access Point (NAP) configuration service provider (CSP) is used to manage and query GPRS and CDMA connections.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-ms.topic: reference
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 

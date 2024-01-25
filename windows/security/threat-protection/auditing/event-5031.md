@@ -5,13 +5,11 @@ manager: aaroncz
 ms.author: vinpa
 description: Describes security event 5031(F) The Windows Firewall Service blocked an application from accepting incoming connections on the network.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

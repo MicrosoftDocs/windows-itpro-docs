@@ -6,7 +6,7 @@ ms.prod: windows-client
 ms.author: mstewart
 author: mestew
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
   - highpri
   - tier2

@@ -1,7 +1,6 @@
 ---
 title: Interactive logon Don't display last signed-in
 description: Describes the best practices, location, values, and security considerations for the Interactive logon Don't display last user name security policy setting.
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -9,11 +8,10 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.reviewer:
 ms.author: vinpa
-ms.technology: itpro-security
 ---
 
 # Interactive logon: Don't display last signed-in

@@ -1,18 +1,9 @@
 ---
 title: Enable ADMX policies in MDM
 description: Use this step-by-step guide to configure a selected set of Group Policy administrative templates (ADMX policies) in Mobile Device Management (MDM).
-ms.author: vinpa
-ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
+ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 11/01/2017
-ms.reviewer:
-manager: aaroncz
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.date: 08/10/2023
 ---
 
 # Enable ADMX policies in MDM
@@ -41,9 +32,9 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
 
 1. Use the Group Policy Editor to determine whether you need additional information to enable the policy. Run GPEdit.msc
 
-    1. Click **Start**, then in the text box type **gpedit**.
+    1. Select **Start**, then in the text box type **gpedit**.
 
-    2. Under **Best match**, click **Edit group policy** to launch it.
+    2. Under **Best match**, select **Edit group policy** to launch it.
 
        ![GPEdit search.](images/admx-gpedit-search.png)
 
@@ -109,7 +100,7 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
 
    1. Search for GP name **Publishing_Server2_policy**.
 
-   1. Under **policy name="Publishing_Server2_Policy"** you can see the \<elements> listed. The *text id* and *enum id* represent the *data id* you need to include in the SyncML data payload. They correspond to the fields you see in the Group Policy Editor.
+   1. Under **policy name="Publishing_Server2_Policy"** you can see the `<elements>` listed. The `text id` and `enum id` represent the `data id` you need to include in the SyncML data payload. They correspond to the fields you see in the Group Policy Editor.
 
       Here's the snippet from appv.admx:
 
@@ -201,7 +192,7 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
       </policy>
       ```
 
-   1. From the **\<elements>**  tag, copy all of the *text id* and *enum id* and create an XML with *data id* and *value* fields. The *value* field contains the configuration settings that you would enter in the Group Policy Editor.
+   1. From the `<elements>`  tag, copy all of the `text id` and `enum id` and create an XML with `data id` and `value` fields. The *value* field contains the configuration settings that you would enter in the Group Policy Editor.
 
       Here's the example XML for Publishing_Server2_Policy:
 
@@ -260,7 +251,7 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
 
 ## Disable a policy
 
-The \<Data> payload is \<disabled/>. Here is an example to disable AppVirtualization/PublishingAllowServer2.
+The \<Data> payload is \<disabled/>. Here's an example to disable AppVirtualization/PublishingAllowServer2.
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">

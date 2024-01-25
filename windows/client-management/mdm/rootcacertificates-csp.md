@@ -1,14 +1,7 @@
 ---
 title: RootCATrustedCertificates CSP
 description: Learn more about the RootCATrustedCertificates CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -125,7 +118,7 @@ The following list shows the RootCATrustedCertificates configuration service pro
 <!-- Device-CA-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-Applicability-End -->
 
 <!-- Device-CA-OmaUri-Begin -->
@@ -164,7 +157,7 @@ Node for CA certificates.
 <!-- Device-CA-{CertHash}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-{CertHash}-Applicability-End -->
 
 <!-- Device-CA-{CertHash}-OmaUri-Begin -->
@@ -204,7 +197,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 <!-- Device-CA-{CertHash}-EncodedCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-{CertHash}-EncodedCertificate-Applicability-End -->
 
 <!-- Device-CA-{CertHash}-EncodedCertificate-OmaUri-Begin -->
@@ -243,7 +236,7 @@ Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string v
 <!-- Device-CA-{CertHash}-IssuedBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-{CertHash}-IssuedBy-Applicability-End -->
 
 <!-- Device-CA-{CertHash}-IssuedBy-OmaUri-Begin -->
@@ -282,7 +275,7 @@ Returns the name of the certificate issuer. This is equivalent to the Issuer mem
 <!-- Device-CA-{CertHash}-IssuedTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-{CertHash}-IssuedTo-Applicability-End -->
 
 <!-- Device-CA-{CertHash}-IssuedTo-OmaUri-Begin -->
@@ -321,7 +314,7 @@ Returns the name of the certificate subject. This is equivalent to the Subject m
 <!-- Device-CA-{CertHash}-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-{CertHash}-TemplateName-Applicability-End -->
 
 <!-- Device-CA-{CertHash}-TemplateName-OmaUri-Begin -->
@@ -360,7 +353,7 @@ Returns the certificate template name. Supported operation is Get.
 <!-- Device-CA-{CertHash}-ValidFrom-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-{CertHash}-ValidFrom-Applicability-End -->
 
 <!-- Device-CA-{CertHash}-ValidFrom-OmaUri-Begin -->
@@ -399,7 +392,7 @@ Returns the starting date of the certificate's validity. Supported operation is 
 <!-- Device-CA-{CertHash}-ValidTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-{CertHash}-ValidTo-Applicability-End -->
 
 <!-- Device-CA-{CertHash}-ValidTo-OmaUri-Begin -->
@@ -438,7 +431,7 @@ Returns the expiration date of the certificate. Supported operation is Get. This
 <!-- Device-OemEsim-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-OemEsim-Applicability-End -->
 
 <!-- Device-OemEsim-OmaUri-Begin -->
@@ -477,7 +470,7 @@ Node for OEM eSIM certificates.
 <!-- Device-OemEsim-{CertHash}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-OemEsim-{CertHash}-Applicability-End -->
 
 <!-- Device-OemEsim-{CertHash}-OmaUri-Begin -->
@@ -517,7 +510,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 <!-- Device-OemEsim-{CertHash}-EncodedCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-OemEsim-{CertHash}-EncodedCertificate-Applicability-End -->
 
 <!-- Device-OemEsim-{CertHash}-EncodedCertificate-OmaUri-Begin -->
@@ -556,7 +549,7 @@ Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string v
 <!-- Device-OemEsim-{CertHash}-IssuedBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-OemEsim-{CertHash}-IssuedBy-Applicability-End -->
 
 <!-- Device-OemEsim-{CertHash}-IssuedBy-OmaUri-Begin -->
@@ -595,7 +588,7 @@ Returns the name of the certificate issuer. This is equivalent to the Issuer mem
 <!-- Device-OemEsim-{CertHash}-IssuedTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-OemEsim-{CertHash}-IssuedTo-Applicability-End -->
 
 <!-- Device-OemEsim-{CertHash}-IssuedTo-OmaUri-Begin -->
@@ -634,7 +627,7 @@ Returns the name of the certificate subject. This is equivalent to the Subject m
 <!-- Device-OemEsim-{CertHash}-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-OemEsim-{CertHash}-TemplateName-Applicability-End -->
 
 <!-- Device-OemEsim-{CertHash}-TemplateName-OmaUri-Begin -->
@@ -673,7 +666,7 @@ Returns the certificate template name. Supported operation is Get.
 <!-- Device-OemEsim-{CertHash}-ValidFrom-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-OemEsim-{CertHash}-ValidFrom-Applicability-End -->
 
 <!-- Device-OemEsim-{CertHash}-ValidFrom-OmaUri-Begin -->
@@ -712,7 +705,7 @@ Returns the starting date of the certificate's validity. Supported operation is 
 <!-- Device-OemEsim-{CertHash}-ValidTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-OemEsim-{CertHash}-ValidTo-Applicability-End -->
 
 <!-- Device-OemEsim-{CertHash}-ValidTo-OmaUri-Begin -->
@@ -751,7 +744,7 @@ Returns the expiration date of the certificate. Supported operation is Get. This
 <!-- Device-Root-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Root-Applicability-End -->
 
 <!-- Device-Root-OmaUri-Begin -->
@@ -790,7 +783,7 @@ Defines the certificate store that contains root, or self-signed certificates, i
 <!-- Device-Root-{CertHash}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Root-{CertHash}-Applicability-End -->
 
 <!-- Device-Root-{CertHash}-OmaUri-Begin -->
@@ -829,7 +822,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 <!-- Device-Root-{CertHash}-EncodedCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Root-{CertHash}-EncodedCertificate-Applicability-End -->
 
 <!-- Device-Root-{CertHash}-EncodedCertificate-OmaUri-Begin -->
@@ -869,7 +862,7 @@ Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string v
 <!-- Device-Root-{CertHash}-IssuedBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Root-{CertHash}-IssuedBy-Applicability-End -->
 
 <!-- Device-Root-{CertHash}-IssuedBy-OmaUri-Begin -->
@@ -908,7 +901,7 @@ Returns the name of the certificate issuer. This is equivalent to the Issuer mem
 <!-- Device-Root-{CertHash}-IssuedTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Root-{CertHash}-IssuedTo-Applicability-End -->
 
 <!-- Device-Root-{CertHash}-IssuedTo-OmaUri-Begin -->
@@ -947,7 +940,7 @@ Returns the name of the certificate subject. This is equivalent to the Subject m
 <!-- Device-Root-{CertHash}-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Root-{CertHash}-TemplateName-Applicability-End -->
 
 <!-- Device-Root-{CertHash}-TemplateName-OmaUri-Begin -->
@@ -986,7 +979,7 @@ Returns the certificate template name. Supported operation is Get.
 <!-- Device-Root-{CertHash}-ValidFrom-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Root-{CertHash}-ValidFrom-Applicability-End -->
 
 <!-- Device-Root-{CertHash}-ValidFrom-OmaUri-Begin -->
@@ -1025,7 +1018,7 @@ Returns the starting date of the certificate's validity. Supported operation is 
 <!-- Device-Root-{CertHash}-ValidTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Root-{CertHash}-ValidTo-Applicability-End -->
 
 <!-- Device-Root-{CertHash}-ValidTo-OmaUri-Begin -->
@@ -1064,7 +1057,7 @@ Returns the expiration date of the certificate. Supported operation is Get. This
 <!-- Device-TrustedPeople-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-TrustedPeople-Applicability-End -->
 
 <!-- Device-TrustedPeople-OmaUri-Begin -->
@@ -1103,7 +1096,7 @@ Node for trusted people certificates.
 <!-- Device-TrustedPeople-{CertHash}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-TrustedPeople-{CertHash}-Applicability-End -->
 
 <!-- Device-TrustedPeople-{CertHash}-OmaUri-Begin -->
@@ -1143,7 +1136,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 <!-- Device-TrustedPeople-{CertHash}-EncodedCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-TrustedPeople-{CertHash}-EncodedCertificate-Applicability-End -->
 
 <!-- Device-TrustedPeople-{CertHash}-EncodedCertificate-OmaUri-Begin -->
@@ -1182,7 +1175,7 @@ Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string v
 <!-- Device-TrustedPeople-{CertHash}-IssuedBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-TrustedPeople-{CertHash}-IssuedBy-Applicability-End -->
 
 <!-- Device-TrustedPeople-{CertHash}-IssuedBy-OmaUri-Begin -->
@@ -1221,7 +1214,7 @@ Returns the name of the certificate issuer. This is equivalent to the Issuer mem
 <!-- Device-TrustedPeople-{CertHash}-IssuedTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-TrustedPeople-{CertHash}-IssuedTo-Applicability-End -->
 
 <!-- Device-TrustedPeople-{CertHash}-IssuedTo-OmaUri-Begin -->
@@ -1260,7 +1253,7 @@ Returns the name of the certificate subject. This is equivalent to the Subject m
 <!-- Device-TrustedPeople-{CertHash}-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-TrustedPeople-{CertHash}-TemplateName-Applicability-End -->
 
 <!-- Device-TrustedPeople-{CertHash}-TemplateName-OmaUri-Begin -->
@@ -1299,7 +1292,7 @@ Returns the certificate template name. Supported operation is Get.
 <!-- Device-TrustedPeople-{CertHash}-ValidFrom-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-TrustedPeople-{CertHash}-ValidFrom-Applicability-End -->
 
 <!-- Device-TrustedPeople-{CertHash}-ValidFrom-OmaUri-Begin -->
@@ -1338,7 +1331,7 @@ Returns the starting date of the certificate's validity. Supported operation is 
 <!-- Device-TrustedPeople-{CertHash}-ValidTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-TrustedPeople-{CertHash}-ValidTo-Applicability-End -->
 
 <!-- Device-TrustedPeople-{CertHash}-ValidTo-OmaUri-Begin -->
@@ -1377,7 +1370,7 @@ Returns the expiration date of the certificate. Supported operation is Get. This
 <!-- Device-TrustedPublisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-TrustedPublisher-Applicability-End -->
 
 <!-- Device-TrustedPublisher-OmaUri-Begin -->
@@ -1416,7 +1409,7 @@ Node for trusted publisher certificates.
 <!-- Device-TrustedPublisher-{CertHash}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-TrustedPublisher-{CertHash}-Applicability-End -->
 
 <!-- Device-TrustedPublisher-{CertHash}-OmaUri-Begin -->
@@ -1456,7 +1449,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 <!-- Device-TrustedPublisher-{CertHash}-EncodedCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-TrustedPublisher-{CertHash}-EncodedCertificate-Applicability-End -->
 
 <!-- Device-TrustedPublisher-{CertHash}-EncodedCertificate-OmaUri-Begin -->
@@ -1495,7 +1488,7 @@ Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string v
 <!-- Device-TrustedPublisher-{CertHash}-IssuedBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-TrustedPublisher-{CertHash}-IssuedBy-Applicability-End -->
 
 <!-- Device-TrustedPublisher-{CertHash}-IssuedBy-OmaUri-Begin -->
@@ -1534,7 +1527,7 @@ Returns the name of the certificate issuer. This is equivalent to the Issuer mem
 <!-- Device-TrustedPublisher-{CertHash}-IssuedTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-TrustedPublisher-{CertHash}-IssuedTo-Applicability-End -->
 
 <!-- Device-TrustedPublisher-{CertHash}-IssuedTo-OmaUri-Begin -->
@@ -1573,7 +1566,7 @@ Returns the name of the certificate subject. This is equivalent to the Subject m
 <!-- Device-TrustedPublisher-{CertHash}-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-TrustedPublisher-{CertHash}-TemplateName-Applicability-End -->
 
 <!-- Device-TrustedPublisher-{CertHash}-TemplateName-OmaUri-Begin -->
@@ -1612,7 +1605,7 @@ Returns the certificate template name. Supported operation is Get.
 <!-- Device-TrustedPublisher-{CertHash}-ValidFrom-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-TrustedPublisher-{CertHash}-ValidFrom-Applicability-End -->
 
 <!-- Device-TrustedPublisher-{CertHash}-ValidFrom-OmaUri-Begin -->
@@ -1651,7 +1644,7 @@ Returns the starting date of the certificate's validity. Supported operation is 
 <!-- Device-TrustedPublisher-{CertHash}-ValidTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-TrustedPublisher-{CertHash}-ValidTo-Applicability-End -->
 
 <!-- Device-TrustedPublisher-{CertHash}-ValidTo-OmaUri-Begin -->
@@ -1690,7 +1683,7 @@ Returns the expiration date of the certificate. Supported operation is Get. This
 <!-- Device-UntrustedCertificates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-UntrustedCertificates-Applicability-End -->
 
 <!-- Device-UntrustedCertificates-OmaUri-Begin -->
@@ -1729,7 +1722,7 @@ Node for certificates that aren't trusted. IT admin can use this node to immedia
 <!-- Device-UntrustedCertificates-{CertHash}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-UntrustedCertificates-{CertHash}-Applicability-End -->
 
 <!-- Device-UntrustedCertificates-{CertHash}-OmaUri-Begin -->
@@ -1769,7 +1762,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 <!-- Device-UntrustedCertificates-{CertHash}-EncodedCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-UntrustedCertificates-{CertHash}-EncodedCertificate-Applicability-End -->
 
 <!-- Device-UntrustedCertificates-{CertHash}-EncodedCertificate-OmaUri-Begin -->
@@ -1808,7 +1801,7 @@ Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string v
 <!-- Device-UntrustedCertificates-{CertHash}-IssuedBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-UntrustedCertificates-{CertHash}-IssuedBy-Applicability-End -->
 
 <!-- Device-UntrustedCertificates-{CertHash}-IssuedBy-OmaUri-Begin -->
@@ -1847,7 +1840,7 @@ Returns the name of the certificate issuer. This is equivalent to the Issuer mem
 <!-- Device-UntrustedCertificates-{CertHash}-IssuedTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-UntrustedCertificates-{CertHash}-IssuedTo-Applicability-End -->
 
 <!-- Device-UntrustedCertificates-{CertHash}-IssuedTo-OmaUri-Begin -->
@@ -1886,7 +1879,7 @@ Returns the name of the certificate subject. This is equivalent to the Subject m
 <!-- Device-UntrustedCertificates-{CertHash}-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-UntrustedCertificates-{CertHash}-TemplateName-Applicability-End -->
 
 <!-- Device-UntrustedCertificates-{CertHash}-TemplateName-OmaUri-Begin -->
@@ -1925,7 +1918,7 @@ Returns the certificate template name. Supported operation is Get.
 <!-- Device-UntrustedCertificates-{CertHash}-ValidFrom-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-UntrustedCertificates-{CertHash}-ValidFrom-Applicability-End -->
 
 <!-- Device-UntrustedCertificates-{CertHash}-ValidFrom-OmaUri-Begin -->
@@ -1964,7 +1957,7 @@ Returns the starting date of the certificate's validity. Supported operation is 
 <!-- Device-UntrustedCertificates-{CertHash}-ValidTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-UntrustedCertificates-{CertHash}-ValidTo-Applicability-End -->
 
 <!-- Device-UntrustedCertificates-{CertHash}-ValidTo-OmaUri-Begin -->
@@ -2003,7 +1996,7 @@ Returns the expiration date of the certificate. Supported operation is Get. This
 <!-- User-CA-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-CA-Applicability-End -->
 
 <!-- User-CA-OmaUri-Begin -->
@@ -2042,7 +2035,7 @@ Node for CA certificates.
 <!-- User-CA-{CertHash}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-CA-{CertHash}-Applicability-End -->
 
 <!-- User-CA-{CertHash}-OmaUri-Begin -->
@@ -2082,7 +2075,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 <!-- User-CA-{CertHash}-EncodedCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-CA-{CertHash}-EncodedCertificate-Applicability-End -->
 
 <!-- User-CA-{CertHash}-EncodedCertificate-OmaUri-Begin -->
@@ -2121,7 +2114,7 @@ Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string v
 <!-- User-CA-{CertHash}-IssuedBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-CA-{CertHash}-IssuedBy-Applicability-End -->
 
 <!-- User-CA-{CertHash}-IssuedBy-OmaUri-Begin -->
@@ -2160,7 +2153,7 @@ Returns the name of the certificate issuer. This is equivalent to the Issuer mem
 <!-- User-CA-{CertHash}-IssuedTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-CA-{CertHash}-IssuedTo-Applicability-End -->
 
 <!-- User-CA-{CertHash}-IssuedTo-OmaUri-Begin -->
@@ -2199,7 +2192,7 @@ Returns the name of the certificate subject. This is equivalent to the Subject m
 <!-- User-CA-{CertHash}-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-CA-{CertHash}-TemplateName-Applicability-End -->
 
 <!-- User-CA-{CertHash}-TemplateName-OmaUri-Begin -->
@@ -2238,7 +2231,7 @@ Returns the certificate template name. Supported operation is Get.
 <!-- User-CA-{CertHash}-ValidFrom-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-CA-{CertHash}-ValidFrom-Applicability-End -->
 
 <!-- User-CA-{CertHash}-ValidFrom-OmaUri-Begin -->
@@ -2277,7 +2270,7 @@ Returns the starting date of the certificate's validity. Supported operation is 
 <!-- User-CA-{CertHash}-ValidTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-CA-{CertHash}-ValidTo-Applicability-End -->
 
 <!-- User-CA-{CertHash}-ValidTo-OmaUri-Begin -->
@@ -2316,7 +2309,7 @@ Returns the expiration date of the certificate. Supported operation is Get. This
 <!-- User-OemEsim-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-OemEsim-Applicability-End -->
 
 <!-- User-OemEsim-OmaUri-Begin -->
@@ -2355,7 +2348,7 @@ Node for OEM eSIM certificates.
 <!-- User-OemEsim-{CertHash}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-OemEsim-{CertHash}-Applicability-End -->
 
 <!-- User-OemEsim-{CertHash}-OmaUri-Begin -->
@@ -2395,7 +2388,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 <!-- User-OemEsim-{CertHash}-EncodedCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-OemEsim-{CertHash}-EncodedCertificate-Applicability-End -->
 
 <!-- User-OemEsim-{CertHash}-EncodedCertificate-OmaUri-Begin -->
@@ -2434,7 +2427,7 @@ Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string v
 <!-- User-OemEsim-{CertHash}-IssuedBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-OemEsim-{CertHash}-IssuedBy-Applicability-End -->
 
 <!-- User-OemEsim-{CertHash}-IssuedBy-OmaUri-Begin -->
@@ -2473,7 +2466,7 @@ Returns the name of the certificate issuer. This is equivalent to the Issuer mem
 <!-- User-OemEsim-{CertHash}-IssuedTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-OemEsim-{CertHash}-IssuedTo-Applicability-End -->
 
 <!-- User-OemEsim-{CertHash}-IssuedTo-OmaUri-Begin -->
@@ -2512,7 +2505,7 @@ Returns the name of the certificate subject. This is equivalent to the Subject m
 <!-- User-OemEsim-{CertHash}-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-OemEsim-{CertHash}-TemplateName-Applicability-End -->
 
 <!-- User-OemEsim-{CertHash}-TemplateName-OmaUri-Begin -->
@@ -2551,7 +2544,7 @@ Returns the certificate template name. Supported operation is Get.
 <!-- User-OemEsim-{CertHash}-ValidFrom-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-OemEsim-{CertHash}-ValidFrom-Applicability-End -->
 
 <!-- User-OemEsim-{CertHash}-ValidFrom-OmaUri-Begin -->
@@ -2590,7 +2583,7 @@ Returns the starting date of the certificate's validity. Supported operation is 
 <!-- User-OemEsim-{CertHash}-ValidTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-OemEsim-{CertHash}-ValidTo-Applicability-End -->
 
 <!-- User-OemEsim-{CertHash}-ValidTo-OmaUri-Begin -->
@@ -2629,7 +2622,7 @@ Returns the expiration date of the certificate. Supported operation is Get. This
 <!-- User-TrustedPeople-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-TrustedPeople-Applicability-End -->
 
 <!-- User-TrustedPeople-OmaUri-Begin -->
@@ -2668,7 +2661,7 @@ Node for trusted people certificates.
 <!-- User-TrustedPeople-{CertHash}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-TrustedPeople-{CertHash}-Applicability-End -->
 
 <!-- User-TrustedPeople-{CertHash}-OmaUri-Begin -->
@@ -2708,7 +2701,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 <!-- User-TrustedPeople-{CertHash}-EncodedCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-TrustedPeople-{CertHash}-EncodedCertificate-Applicability-End -->
 
 <!-- User-TrustedPeople-{CertHash}-EncodedCertificate-OmaUri-Begin -->
@@ -2747,7 +2740,7 @@ Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string v
 <!-- User-TrustedPeople-{CertHash}-IssuedBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-TrustedPeople-{CertHash}-IssuedBy-Applicability-End -->
 
 <!-- User-TrustedPeople-{CertHash}-IssuedBy-OmaUri-Begin -->
@@ -2786,7 +2779,7 @@ Returns the name of the certificate issuer. This is equivalent to the Issuer mem
 <!-- User-TrustedPeople-{CertHash}-IssuedTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-TrustedPeople-{CertHash}-IssuedTo-Applicability-End -->
 
 <!-- User-TrustedPeople-{CertHash}-IssuedTo-OmaUri-Begin -->
@@ -2825,7 +2818,7 @@ Returns the name of the certificate subject. This is equivalent to the Subject m
 <!-- User-TrustedPeople-{CertHash}-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-TrustedPeople-{CertHash}-TemplateName-Applicability-End -->
 
 <!-- User-TrustedPeople-{CertHash}-TemplateName-OmaUri-Begin -->
@@ -2864,7 +2857,7 @@ Returns the certificate template name. Supported operation is Get.
 <!-- User-TrustedPeople-{CertHash}-ValidFrom-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-TrustedPeople-{CertHash}-ValidFrom-Applicability-End -->
 
 <!-- User-TrustedPeople-{CertHash}-ValidFrom-OmaUri-Begin -->
@@ -2903,7 +2896,7 @@ Returns the starting date of the certificate's validity. Supported operation is 
 <!-- User-TrustedPeople-{CertHash}-ValidTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-TrustedPeople-{CertHash}-ValidTo-Applicability-End -->
 
 <!-- User-TrustedPeople-{CertHash}-ValidTo-OmaUri-Begin -->
@@ -2942,7 +2935,7 @@ Returns the expiration date of the certificate. Supported operation is Get. This
 <!-- User-TrustedPublisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-TrustedPublisher-Applicability-End -->
 
 <!-- User-TrustedPublisher-OmaUri-Begin -->
@@ -2981,7 +2974,7 @@ Node for trusted publisher certificates.
 <!-- User-TrustedPublisher-{CertHash}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-TrustedPublisher-{CertHash}-Applicability-End -->
 
 <!-- User-TrustedPublisher-{CertHash}-OmaUri-Begin -->
@@ -3021,7 +3014,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 <!-- User-TrustedPublisher-{CertHash}-EncodedCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-TrustedPublisher-{CertHash}-EncodedCertificate-Applicability-End -->
 
 <!-- User-TrustedPublisher-{CertHash}-EncodedCertificate-OmaUri-Begin -->
@@ -3060,7 +3053,7 @@ Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string v
 <!-- User-TrustedPublisher-{CertHash}-IssuedBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-TrustedPublisher-{CertHash}-IssuedBy-Applicability-End -->
 
 <!-- User-TrustedPublisher-{CertHash}-IssuedBy-OmaUri-Begin -->
@@ -3099,7 +3092,7 @@ Returns the name of the certificate issuer. This is equivalent to the Issuer mem
 <!-- User-TrustedPublisher-{CertHash}-IssuedTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-TrustedPublisher-{CertHash}-IssuedTo-Applicability-End -->
 
 <!-- User-TrustedPublisher-{CertHash}-IssuedTo-OmaUri-Begin -->
@@ -3138,7 +3131,7 @@ Returns the name of the certificate subject. This is equivalent to the Subject m
 <!-- User-TrustedPublisher-{CertHash}-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-TrustedPublisher-{CertHash}-TemplateName-Applicability-End -->
 
 <!-- User-TrustedPublisher-{CertHash}-TemplateName-OmaUri-Begin -->
@@ -3177,7 +3170,7 @@ Returns the certificate template name. Supported operation is Get.
 <!-- User-TrustedPublisher-{CertHash}-ValidFrom-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-TrustedPublisher-{CertHash}-ValidFrom-Applicability-End -->
 
 <!-- User-TrustedPublisher-{CertHash}-ValidFrom-OmaUri-Begin -->
@@ -3216,7 +3209,7 @@ Returns the starting date of the certificate's validity. Supported operation is 
 <!-- User-TrustedPublisher-{CertHash}-ValidTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-TrustedPublisher-{CertHash}-ValidTo-Applicability-End -->
 
 <!-- User-TrustedPublisher-{CertHash}-ValidTo-OmaUri-Begin -->
@@ -3255,7 +3248,7 @@ Returns the expiration date of the certificate. Supported operation is Get. This
 <!-- User-UntrustedCertificates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- User-UntrustedCertificates-Applicability-End -->
 
 <!-- User-UntrustedCertificates-OmaUri-Begin -->
@@ -3294,7 +3287,7 @@ Node for certificates that aren't trusted. IT admin can use this node to immedia
 <!-- User-UntrustedCertificates-{CertHash}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- User-UntrustedCertificates-{CertHash}-Applicability-End -->
 
 <!-- User-UntrustedCertificates-{CertHash}-OmaUri-Begin -->
@@ -3334,7 +3327,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 <!-- User-UntrustedCertificates-{CertHash}-EncodedCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- User-UntrustedCertificates-{CertHash}-EncodedCertificate-Applicability-End -->
 
 <!-- User-UntrustedCertificates-{CertHash}-EncodedCertificate-OmaUri-Begin -->
@@ -3373,7 +3366,7 @@ Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string v
 <!-- User-UntrustedCertificates-{CertHash}-IssuedBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- User-UntrustedCertificates-{CertHash}-IssuedBy-Applicability-End -->
 
 <!-- User-UntrustedCertificates-{CertHash}-IssuedBy-OmaUri-Begin -->
@@ -3412,7 +3405,7 @@ Returns the name of the certificate issuer. This is equivalent to the Issuer mem
 <!-- User-UntrustedCertificates-{CertHash}-IssuedTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- User-UntrustedCertificates-{CertHash}-IssuedTo-Applicability-End -->
 
 <!-- User-UntrustedCertificates-{CertHash}-IssuedTo-OmaUri-Begin -->
@@ -3451,7 +3444,7 @@ Returns the name of the certificate subject. This is equivalent to the Subject m
 <!-- User-UntrustedCertificates-{CertHash}-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- User-UntrustedCertificates-{CertHash}-TemplateName-Applicability-End -->
 
 <!-- User-UntrustedCertificates-{CertHash}-TemplateName-OmaUri-Begin -->
@@ -3490,7 +3483,7 @@ Returns the certificate template name. Supported operation is Get.
 <!-- User-UntrustedCertificates-{CertHash}-ValidFrom-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- User-UntrustedCertificates-{CertHash}-ValidFrom-Applicability-End -->
 
 <!-- User-UntrustedCertificates-{CertHash}-ValidFrom-OmaUri-Begin -->
@@ -3529,7 +3522,7 @@ Returns the starting date of the certificate's validity. Supported operation is 
 <!-- User-UntrustedCertificates-{CertHash}-ValidTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- User-UntrustedCertificates-{CertHash}-ValidTo-Applicability-End -->
 
 <!-- User-UntrustedCertificates-{CertHash}-ValidTo-OmaUri-Begin -->

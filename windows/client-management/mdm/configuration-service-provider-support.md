@@ -1,13 +1,6 @@
 ---
 title: Configuration service provider support
 description: Learn more about configuration service provider (CSP) supported scenarios.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-ms.topic: reference
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.date: 09/18/2020
 ms.collection:
   - highpri
@@ -16,7 +9,7 @@ ms.collection:
 
 # Configuration service provider support
 
-A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. Some configuration service providers support the WAP format, some support SyncML, and some support both. SyncML is only used over–the–air for Open Mobile Alliance Device Management (OMA DM), whereas WAP can be used over–the–air for OMA Client Provisioning, or it can be included in the device image as a `.provxml` file that is installed during boot.
+A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. Some configuration service providers support the WAP format, some support SyncML, and some support both. SyncML is only used over–the–air for Open Mobile Alliance Device Management (OMA DM), whereas WAP can be used over-the-air for OMA Client Provisioning, or it can be included in the device image as a `.provxml` file that is installed during boot.
 
 - For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal).
 - For CSP DDF files, see [CSP DDF files download](configuration-service-provider-ddf.md).
@@ -999,11 +992,9 @@ A configuration service provider (CSP) is an interface to read, set, modify, or 
 <!--EndSKU-->
 <!--EndCSP-->
 
-
-<hr/>
 <!--EndCSPs-->
 
-## <a href="" id="hololens"></a>CSPs supported in HoloLens devices
+## CSPs supported in HoloLens devices
 
 The following list shows the CSPs supported in HoloLens devices:
 
@@ -1041,7 +1032,7 @@ The following list shows the CSPs supported in HoloLens devices:
 | [WindowsLicensing CSP](windowslicensing-csp.md)   | Yes | Yes       | No |
 
 
-## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
+## CSPs supported in Microsoft Surface Hub
 
 -   [Accounts CSP](accounts-csp.md)
     > [!NOTE]
@@ -1075,31 +1066,3 @@ The following list shows the CSPs supported in HoloLens devices:
 -   [Wifi-CSP](wifi-csp.md)
 -   [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
 -   [Wirednetwork-CSP](wirednetwork-csp.md)
-
-
-## <a href="" id="iotcoresupport"></a>CSPs supported in Windows 10 IoT Core
-
-- [AllJoynManagement CSP](alljoynmanagement-csp.md)
-- [Application CSP](application-csp.md)
-- [CertificateStore CSP](certificatestore-csp.md)
-- [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)
-- [CustomDeviceUI CSP](customdeviceui-csp.md)
-- [DevDetail CSP](devdetail-csp.md)
-- [DevInfo CSP](devinfo-csp.md)
-- [DiagnosticLog CSP](diagnosticlog-csp.md)
-- [DMAcc CSP](dmacc-csp.md)
-- [DMClient CSP](dmclient-csp.md)
-- [HealthAttestation CSP](healthattestation-csp.md)
-- [NetworkProxy CSP](networkproxy-csp.md)
-- [Policy CSP](policy-configuration-service-provider.md)
-- [Provisioning CSP (Provisioning only)](provisioning-csp.md)
-- [Reboot CSP](reboot-csp.md)
-- [RemoteWipe CSP](remotewipe-csp.md)
-- [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
-- [UnifiedWriteFilter CSP](unifiedwritefilter-csp.md)
-- [Update CSP](update-csp.md)
-- [VPNv2 CSP](vpnv2-csp.md)
-- [WiFi CSP](wifi-csp.md)
-
-<hr>
-

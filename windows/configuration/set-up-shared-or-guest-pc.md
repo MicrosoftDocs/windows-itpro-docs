@@ -1,16 +1,12 @@
 ---
 title: Set up a shared or guest Windows device
 description: Description of how to configured Shared PC mode, which is a Windows feature that optimizes devices for shared use scenarios.
-ms.date: 10/15/2022
+ms.date: 11/08/2023
 ms.prod: windows-client
 ms.technology: itpro-configure
-ms.topic: reference
-ms.localizationpriority: medium
+ms.topic: how-to
 author: paolomatarazzo
 ms.author: paoloma
-ms.reviewer: 
-manager: aaroncz
-ms.collection: tier2
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
@@ -105,7 +101,7 @@ For more information, see [Using PowerShell scripting with the WMI Bridge Provid
 
 ## Guidance for accounts on shared PCs
 
-- When a device is configured in *shared PC mode* with the default deletion policy, accounts will be cached automatically until disk space is low. Then, accounts will be deleted to reclaim disk space. This account management happens automatically. Both Azure AD and Active Directory domain accounts are managed in this way. Any accounts created through **Guest** and **Kiosk** will be deleted automatically at sign out.
+- When a device is configured in *shared PC mode* with the default deletion policy, accounts will be cached automatically until disk space is low. Then, accounts will be deleted to reclaim disk space. This account management happens automatically. Both Microsoft Entra ID and Active Directory domain accounts are managed in this way. Any accounts created through **Guest** and **Kiosk** will be deleted automatically at sign out.
 
 - Local accounts that already exist on a PC won't be deleted when turning on shared PC mode. New local accounts that are created using **Settings > Accounts > Other people > Add someone else to this PC** after shared PC mode is turned on won't be deleted. However, any new guest accounts created by the **Guest** and **Kiosk** options on the sign-in screen (if enabled) will automatically be deleted at sign out. To set a general policy on all local accounts, you can configure the following local Group Policy setting: **Computer Configuration** > **Administrative Templates** > **System** > **User Profiles**: **Delete User Profiles Older Than A Specified Number Of Days On System Restart**.
 

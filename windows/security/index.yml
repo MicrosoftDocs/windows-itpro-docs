@@ -6,14 +6,12 @@ brand: windows
 
 metadata:
   ms.topic: hub-page
-  ms.prod: windows-client
   ms.collection:
-    - highpri
     - tier1
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz
-  ms.date: 07/28/2023
+  ms.date: 09/18/2023
 
 highlightedContent:
   items:
@@ -23,9 +21,9 @@ highlightedContent:
   - title: Windows 11, version 22H2
     itemType: whats-new
     url: /windows/whats-new/whats-new-windows-11-version-22H2
-  - title: Windows 11, version 22H2 group policy settings reference 
-    itemType: download
-    url: https://www.microsoft.com/en-us/download/details.aspx?id=104594
+  - title: Advance your security posture with Microsoft Intune from chip to cloud
+    itemType: learn
+    url: https://learn.microsoft.com/training/modules/m365-advance-organization-security-posture/
   - title: Security features licensing and edition requirements
     itemType: overview
     url: /windows/security/licensing-and-edition-requirements
@@ -63,7 +61,7 @@ productDirectory:
         - url: /windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines
           text: Windows security baselines
         - url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/
-          text: MMicrosoft Defender SmartScreen
+          text: Microsoft Defender SmartScreen
         - url: /windows/security/operating-system-security
           text: Learn more about OS security >
 
@@ -72,14 +70,14 @@ productDirectory:
       links:
         - url: /windows/security/identity-protection/hello-for-business
           text: Windows Hello for Business
-        - url: /windows/security/identity-protection/credential-guard/credentail-guard
-          text: Windows Defender Credential Guard
-        - url: /windows-server/identity/laps/laps-overview
-          text: Windows LAPS (Local Administrator Password Solution)
+        - url: /windows/security/identity-protection/passwordless-experience
+          text: Windows passwordless experience
+        - url: /windows/security/identity-protection/web-sign-in
+          text: Web sign-in for Windows
+        - url: /windows/security/identity-protection/passkeys
+          text: Support for passkeys in Windows
         - url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection
           text: Enhanced phishing protection with SmartScreen
-        - url: /education/windows/federated-sign-in
-          text: Federated sign-in (EDU)
         - url: /windows/security/identity-protection
           text: Learn more about identity protection >
 

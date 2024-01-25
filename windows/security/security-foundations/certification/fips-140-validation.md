@@ -1,18 +1,10 @@
 ---
 title: Federal Information Processing Standard (FIPS) 140 Validation
 description: Learn how Microsoft products and cryptographic modules follow the U.S. Federal government standard FIPS 140.
-ms.prod: windows-client
-ms.date: 11/03/2022
-manager: aaroncz
+ms.date: 11/13/2023
+ms.topic: reference
 ms.author: paoloma
 author: paolomatarazzo
-ms.collection: 
-  - highpri
-  - tier3
-ms.topic: article
-ms.localizationpriority: medium
-ms.reviewer: 
-ms.technology: itpro-security
 ---
 
 # FIPS 140-2 Validation
@@ -21,7 +13,7 @@ ms.technology: itpro-security
 
 The Federal Information Processing Standard (FIPS) Publication 140-2 is a U.S. government standard. FIPS is based on Section 5131 of the Information Technology Management Reform Act of 1996. It defines the minimum security requirements for cryptographic modules in IT products.
 
-The [Cryptographic Module Validation Program (CMVP)][HTTP-1]) is a joint effort of the U.S. National Institute of Standards and Technology (NIST) and the Canadian Centre for Cyber Security (CCCS). It validates cryptographic modules against the Security Requirements for Cryptographic Modules (part of FIPS 140-2) and related FIPS cryptography standards. The FIPS 140-2 security requirements cover 11 areas related to the design and implementation of a cryptographic module. The NIST Information Technology Laboratory operates a related program that validates the FIPS approved cryptographic algorithms in the module.
+The [Cryptographic Module Validation Program (CMVP)][HTTP-1] is a joint effort of the U.S. National Institute of Standards and Technology (NIST) and the Canadian Centre for Cyber Security (CCCS). It validates cryptographic modules against the Security Requirements for Cryptographic Modules (part of FIPS 140-2) and related FIPS cryptography standards. The FIPS 140-2 security requirements cover 11 areas related to the design and implementation of a cryptographic module. The NIST Information Technology Laboratory operates a related program that validates the FIPS approved cryptographic algorithms in the module.
 
 ## Microsoft's approach to FIPS 140-2 validation
 

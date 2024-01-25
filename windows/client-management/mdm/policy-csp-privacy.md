@@ -1,14 +1,7 @@
 ---
 title: Privacy Policy CSP
 description: Learn more about the Privacy Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/02/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -28,7 +21,7 @@ ms.topic: reference
 <!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Applicability-End -->
 
 <!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-OmaUri-Begin -->
@@ -80,7 +73,7 @@ Allows or disallows the automatic acceptance of the pairing and privacy user con
 <!-- AllowCrossDeviceClipboard-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowCrossDeviceClipboard-Applicability-End -->
 
 <!-- AllowCrossDeviceClipboard-OmaUri-Begin -->
@@ -93,7 +86,7 @@ Allows or disallows the automatic acceptance of the pairing and privacy user con
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Clipboard contents can be synchronized across devices.
 
-- If you enable this policy setting, Clipboard contents are allowed to be synchronized across devices logged in under the same Microsoft account or Azure AD account.
+- If you enable this policy setting, Clipboard contents are allowed to be synchronized across devices logged in under the same Microsoft account or Microsoft Entra account.
 
 - If you disable this policy setting, Clipboard contents can't be shared to other devices.
 
@@ -151,7 +144,7 @@ Most restrictive value is `0` to not allow cross-device clipboard.
 <!-- AllowInputPersonalization-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowInputPersonalization-Applicability-End -->
 
 <!-- AllowInputPersonalization-OmaUri-Begin -->
@@ -224,7 +217,7 @@ The most restrictive value is `0` to not allow speech services.
 <!-- DisableAdvertisingId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DisableAdvertisingId-Applicability-End -->
 
 <!-- DisableAdvertisingId-OmaUri-Begin -->
@@ -292,7 +285,7 @@ This policy setting turns off the advertising ID, preventing apps from using the
 <!-- DisablePrivacyExperience-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DisablePrivacyExperience-Applicability-End -->
 
 <!-- DisablePrivacyExperience-OmaUri-Begin -->
@@ -365,7 +358,7 @@ In some managed environments, the privacy settings may be set by other policies.
 <!-- EnableActivityFeed-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- EnableActivityFeed-Applicability-End -->
 
 <!-- EnableActivityFeed-OmaUri-Begin -->
@@ -434,7 +427,7 @@ Policy change takes effect immediately.
 <!-- LetAppsAccessAccountInfo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessAccountInfo-Applicability-End -->
 
 <!-- LetAppsAccessAccountInfo-OmaUri-Begin -->
@@ -512,7 +505,7 @@ The most restrictive value is `2` to deny apps access to account information.
 <!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-OmaUri-Begin -->
@@ -577,7 +570,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-OmaUri-Begin -->
@@ -642,7 +635,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -707,7 +700,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessBackgroundSpatialPerception-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- LetAppsAccessBackgroundSpatialPerception-Applicability-End -->
 
 <!-- LetAppsAccessBackgroundSpatialPerception-OmaUri-Begin -->
@@ -759,7 +752,7 @@ This policy setting specifies whether Windows apps can access the movement of th
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-OmaUri-Begin -->
@@ -801,7 +794,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-OmaUri-Begin -->
@@ -844,7 +837,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 <!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -887,7 +880,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. The use
 <!-- LetAppsAccessCalendar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCalendar-Applicability-End -->
 
 <!-- LetAppsAccessCalendar-OmaUri-Begin -->
@@ -965,7 +958,7 @@ The most restrictive value is `2` to deny apps access to the calendar.
 <!-- LetAppsAccessCalendar_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCalendar_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCalendar_ForceAllowTheseApps-OmaUri-Begin -->
@@ -1030,7 +1023,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCalendar_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCalendar_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCalendar_ForceDenyTheseApps-OmaUri-Begin -->
@@ -1095,7 +1088,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCalendar_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -1160,7 +1153,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCallHistory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCallHistory-Applicability-End -->
 
 <!-- LetAppsAccessCallHistory-OmaUri-Begin -->
@@ -1238,7 +1231,7 @@ The most restrictive value is `2` to deny apps access to call history.
 <!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCallHistory_ForceAllowTheseApps-OmaUri-Begin -->
@@ -1303,7 +1296,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCallHistory_ForceDenyTheseApps-OmaUri-Begin -->
@@ -1368,7 +1361,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -1433,7 +1426,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCamera-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCamera-Applicability-End -->
 
 <!-- LetAppsAccessCamera-OmaUri-Begin -->
@@ -1511,7 +1504,7 @@ The most restrictive value is `2` to deny apps access to the camera.
 <!-- LetAppsAccessCamera_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCamera_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCamera_ForceAllowTheseApps-OmaUri-Begin -->
@@ -1576,7 +1569,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCamera_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCamera_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCamera_ForceDenyTheseApps-OmaUri-Begin -->
@@ -1641,7 +1634,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCamera_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCamera_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCamera_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -1706,7 +1699,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessContacts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessContacts-Applicability-End -->
 
 <!-- LetAppsAccessContacts-OmaUri-Begin -->
@@ -1784,7 +1777,7 @@ The most restrictive value is `2` to deny apps access to contacts.
 <!-- LetAppsAccessContacts_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessContacts_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessContacts_ForceAllowTheseApps-OmaUri-Begin -->
@@ -1849,7 +1842,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessContacts_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessContacts_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessContacts_ForceDenyTheseApps-OmaUri-Begin -->
@@ -1914,7 +1907,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessContacts_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessContacts_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessContacts_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -1979,7 +1972,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessEmail-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessEmail-Applicability-End -->
 
 <!-- LetAppsAccessEmail-OmaUri-Begin -->
@@ -2057,7 +2050,7 @@ The most restrictive value is `2` to deny apps access to email.
 <!-- LetAppsAccessEmail_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessEmail_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessEmail_ForceAllowTheseApps-OmaUri-Begin -->
@@ -2122,7 +2115,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessEmail_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessEmail_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessEmail_ForceDenyTheseApps-OmaUri-Begin -->
@@ -2187,7 +2180,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessEmail_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessEmail_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessEmail_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -2252,7 +2245,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessGazeInput-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- LetAppsAccessGazeInput-Applicability-End -->
 
 <!-- LetAppsAccessGazeInput-OmaUri-Begin -->
@@ -2293,7 +2286,7 @@ This policy setting specifies whether Windows apps can access the eye tracker.
 <!-- LetAppsAccessGazeInput_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- LetAppsAccessGazeInput_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGazeInput_ForceAllowTheseApps-OmaUri-Begin -->
@@ -2333,7 +2326,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 <!-- LetAppsAccessGazeInput_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- LetAppsAccessGazeInput_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGazeInput_ForceDenyTheseApps-OmaUri-Begin -->
@@ -2373,7 +2366,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 <!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -2413,7 +2406,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. The use
 <!-- LetAppsAccessGraphicsCaptureProgrammatic-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LetAppsAccessGraphicsCaptureProgrammatic-Applicability-End -->
 
 <!-- LetAppsAccessGraphicsCaptureProgrammatic-OmaUri-Begin -->
@@ -2479,7 +2472,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-OmaUri-Begin -->
@@ -2544,7 +2537,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-OmaUri-Begin -->
@@ -2609,7 +2602,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -2674,7 +2667,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder-Applicability-End -->
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder-OmaUri-Begin -->
@@ -2741,7 +2734,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-OmaUri-Begin -->
@@ -2806,7 +2799,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-OmaUri-Begin -->
@@ -2871,7 +2864,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -2936,7 +2929,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessHumanPresence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25000] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25000] |
 <!-- LetAppsAccessHumanPresence-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence-OmaUri-Begin -->
@@ -2946,8 +2939,20 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessHumanPresence-OmaUri-End -->
 
 <!-- LetAppsAccessHumanPresence-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting specifies whether Windows apps can access the human presence sensor.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access presence sensing.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access presence sensing by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access presence sensing and employees in your organization can't change it.
+
+If you choose the "Force Deny" option, Windows apps aren't allowed to access presence sensing and employees in your organization can't change it.
+
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access presence sensing by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessHumanPresence-Description-End -->
 
 <!-- LetAppsAccessHumanPresence-Editable-Begin -->
@@ -2980,8 +2985,12 @@ This policy setting specifies whether Windows apps can access the human presence
 | Name | Value |
 |:--|:--|
 | Name | LetAppsAccessHumanPresence |
-| Path | AppPrivacy > AT > WindowsComponents > AppPrivacy |
-| Element Name | LetAppsAccessHumanPresence_Enum |
+| Friendly Name | Let Windows apps access presence sensing |
+| Element Name | Default for all apps. |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
 <!-- LetAppsAccessHumanPresence-GpMapping-End -->
 
 <!-- LetAppsAccessHumanPresence-Examples-Begin -->
@@ -2996,7 +3005,7 @@ This policy setting specifies whether Windows apps can access the human presence
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25000] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25000] |
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-OmaUri-Begin -->
@@ -3006,8 +3015,20 @@ This policy setting specifies whether Windows apps can access the human presence
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the human presence sensor. This setting overrides the default LetAppsAccessHumanPresence policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access presence sensing.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access presence sensing by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access presence sensing and employees in your organization can't change it.
+
+If you choose the "Force Deny" option, Windows apps aren't allowed to access presence sensing and employees in your organization can't change it.
+
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access presence sensing by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Editable-Begin -->
@@ -3030,8 +3051,11 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 | Name | Value |
 |:--|:--|
 | Name | LetAppsAccessHumanPresence |
-| Path | AppPrivacy > AT > WindowsComponents > AppPrivacy |
-| Element Name | LetAppsAccessHumanPresence_ForceAllowTheseApps_List |
+| Friendly Name | Let Windows apps access presence sensing |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-GpMapping-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Examples-Begin -->
@@ -3046,7 +3070,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25000] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25000] |
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-OmaUri-Begin -->
@@ -3056,8 +3080,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the human presence sensor. This setting overrides the default LetAppsAccessHumanPresence policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access presence sensing.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access presence sensing by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access presence sensing and employees in your organization can't change it.
+
+If you choose the "Force Deny" option, Windows apps aren't allowed to access presence sensing and employees in your organization can't change it.
+
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access presence sensing by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Editable-Begin -->
@@ -3080,8 +3116,11 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 | Name | Value |
 |:--|:--|
 | Name | LetAppsAccessHumanPresence |
-| Path | AppPrivacy > AT > WindowsComponents > AppPrivacy |
-| Element Name | LetAppsAccessHumanPresence_ForceDenyTheseApps_List |
+| Friendly Name | Let Windows apps access presence sensing |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-GpMapping-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Examples-Begin -->
@@ -3096,7 +3135,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25000] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25000] |
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -3106,8 +3145,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the human presence privacy setting for the listed apps. This setting overrides the default LetAppsAccessHumanPresence policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access presence sensing.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access presence sensing by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access presence sensing and employees in your organization can't change it.
+
+If you choose the "Force Deny" option, Windows apps aren't allowed to access presence sensing and employees in your organization can't change it.
+
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access presence sensing by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Editable-Begin -->
@@ -3130,8 +3181,11 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 | Name | Value |
 |:--|:--|
 | Name | LetAppsAccessHumanPresence |
-| Path | AppPrivacy > AT > WindowsComponents > AppPrivacy |
-| Element Name | LetAppsAccessHumanPresence_UserInControlOfTheseApps_List |
+| Friendly Name | Let Windows apps access presence sensing |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-GpMapping-End -->
 
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Examples-Begin -->
@@ -3146,7 +3200,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- LetAppsAccessLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessLocation-Applicability-End -->
 
 <!-- LetAppsAccessLocation-OmaUri-Begin -->
@@ -3224,7 +3278,7 @@ The most restrictive value is `2` to deny apps access to the device's location.
 <!-- LetAppsAccessLocation_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessLocation_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessLocation_ForceAllowTheseApps-OmaUri-Begin -->
@@ -3289,7 +3343,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessLocation_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessLocation_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessLocation_ForceDenyTheseApps-OmaUri-Begin -->
@@ -3354,7 +3408,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessLocation_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessLocation_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessLocation_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -3419,7 +3473,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMessaging-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMessaging-Applicability-End -->
 
 <!-- LetAppsAccessMessaging-OmaUri-Begin -->
@@ -3497,7 +3551,7 @@ The most restrictive value is `2` to deny apps access to messaging.
 <!-- LetAppsAccessMessaging_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMessaging_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMessaging_ForceAllowTheseApps-OmaUri-Begin -->
@@ -3562,7 +3616,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMessaging_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMessaging_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMessaging_ForceDenyTheseApps-OmaUri-Begin -->
@@ -3627,7 +3681,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMessaging_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -3692,7 +3746,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMicrophone-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMicrophone-Applicability-End -->
 
 <!-- LetAppsAccessMicrophone-OmaUri-Begin -->
@@ -3770,7 +3824,7 @@ The most restrictive value is `2` to deny apps access to the microphone.
 <!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMicrophone_ForceAllowTheseApps-OmaUri-Begin -->
@@ -3835,7 +3889,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMicrophone_ForceDenyTheseApps-OmaUri-Begin -->
@@ -3900,7 +3954,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -3965,7 +4019,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMotion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMotion-Applicability-End -->
 
 <!-- LetAppsAccessMotion-OmaUri-Begin -->
@@ -4043,7 +4097,7 @@ The most restrictive value is `2` to deny apps access to motion data.
 <!-- LetAppsAccessMotion_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMotion_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMotion_ForceAllowTheseApps-OmaUri-Begin -->
@@ -4108,7 +4162,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMotion_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMotion_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMotion_ForceDenyTheseApps-OmaUri-Begin -->
@@ -4173,7 +4227,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMotion_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMotion_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMotion_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -4238,7 +4292,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsAccessNotifications-Applicability-End -->
 
 <!-- LetAppsAccessNotifications-OmaUri-Begin -->
@@ -4316,7 +4370,7 @@ The most restrictive value is `2` to deny apps access to notifications.
 <!-- LetAppsAccessNotifications_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsAccessNotifications_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessNotifications_ForceAllowTheseApps-OmaUri-Begin -->
@@ -4381,7 +4435,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessNotifications_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsAccessNotifications_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessNotifications_ForceDenyTheseApps-OmaUri-Begin -->
@@ -4446,7 +4500,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessNotifications_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -4511,7 +4565,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessPhone-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessPhone-Applicability-End -->
 
 <!-- LetAppsAccessPhone-OmaUri-Begin -->
@@ -4589,7 +4643,7 @@ The most restrictive value is `2` to deny apps access to make phone calls.
 <!-- LetAppsAccessPhone_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessPhone_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessPhone_ForceAllowTheseApps-OmaUri-Begin -->
@@ -4654,7 +4708,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessPhone_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessPhone_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessPhone_ForceDenyTheseApps-OmaUri-Begin -->
@@ -4719,7 +4773,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessPhone_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessPhone_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessPhone_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -4784,7 +4838,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessRadios-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessRadios-Applicability-End -->
 
 <!-- LetAppsAccessRadios-OmaUri-Begin -->
@@ -4862,7 +4916,7 @@ The most restrictive value is `2` to deny apps access to control radios.
 <!-- LetAppsAccessRadios_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessRadios_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessRadios_ForceAllowTheseApps-OmaUri-Begin -->
@@ -4927,7 +4981,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessRadios_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessRadios_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessRadios_ForceDenyTheseApps-OmaUri-Begin -->
@@ -4992,7 +5046,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessRadios_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessRadios_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessRadios_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -5057,7 +5111,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessTasks-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsAccessTasks-Applicability-End -->
 
 <!-- LetAppsAccessTasks-OmaUri-Begin -->
@@ -5124,7 +5178,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessTasks_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsAccessTasks_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessTasks_ForceAllowTheseApps-OmaUri-Begin -->
@@ -5189,7 +5243,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessTasks_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsAccessTasks_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessTasks_ForceDenyTheseApps-OmaUri-Begin -->
@@ -5254,7 +5308,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessTasks_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsAccessTasks_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessTasks_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -5319,7 +5373,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessTrustedDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessTrustedDevices-Applicability-End -->
 
 <!-- LetAppsAccessTrustedDevices-OmaUri-Begin -->
@@ -5397,7 +5451,7 @@ The most restrictive value is `2` to deny apps access trusted devices.
 <!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-OmaUri-Begin -->
@@ -5462,7 +5516,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-OmaUri-Begin -->
@@ -5527,7 +5581,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -5592,7 +5646,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsActivateWithVoice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- LetAppsActivateWithVoice-Applicability-End -->
 
 <!-- LetAppsActivateWithVoice-OmaUri-Begin -->
@@ -5666,7 +5720,7 @@ This policy is applied to Windows apps and Cortana.
 <!-- LetAppsActivateWithVoiceAboveLock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- LetAppsActivateWithVoiceAboveLock-Applicability-End -->
 
 <!-- LetAppsActivateWithVoiceAboveLock-OmaUri-Begin -->
@@ -5740,7 +5794,7 @@ This policy is applied to Windows apps and Cortana. It takes precedence of the "
 <!-- LetAppsGetDiagnosticInfo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsGetDiagnosticInfo-Applicability-End -->
 
 <!-- LetAppsGetDiagnosticInfo-OmaUri-Begin -->
@@ -5818,7 +5872,7 @@ The most restrictive value is `2` to deny apps access to diagnostic data.
 <!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-OmaUri-Begin -->
@@ -5883,7 +5937,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-OmaUri-Begin -->
@@ -5948,7 +6002,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -6013,7 +6067,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsRunInBackground-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsRunInBackground-Applicability-End -->
 
 <!-- LetAppsRunInBackground-OmaUri-Begin -->
@@ -6093,7 +6147,7 @@ The most restrictive value is `2` to deny apps from running in the background.
 <!-- LetAppsRunInBackground_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsRunInBackground_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsRunInBackground_ForceAllowTheseApps-OmaUri-Begin -->
@@ -6158,7 +6212,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsRunInBackground_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsRunInBackground_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsRunInBackground_ForceDenyTheseApps-OmaUri-Begin -->
@@ -6223,7 +6277,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsRunInBackground_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsRunInBackground_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsRunInBackground_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -6288,7 +6342,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsSyncWithDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsSyncWithDevices-Applicability-End -->
 
 <!-- LetAppsSyncWithDevices-OmaUri-Begin -->
@@ -6366,7 +6420,7 @@ The most restrictive value is `2` to deny apps syncing with devices.
 <!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsSyncWithDevices_ForceAllowTheseApps-OmaUri-Begin -->
@@ -6431,7 +6485,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsSyncWithDevices_ForceDenyTheseApps-OmaUri-Begin -->
@@ -6496,7 +6550,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -6561,7 +6615,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- PublishUserActivities-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- PublishUserActivities-Applicability-End -->
 
 <!-- PublishUserActivities-OmaUri-Begin -->
@@ -6632,7 +6686,7 @@ For more information, see [Windows activity history and your privacy](https://su
 <!-- UploadUserActivities-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- UploadUserActivities-Applicability-End -->
 
 <!-- UploadUserActivities-OmaUri-Begin -->

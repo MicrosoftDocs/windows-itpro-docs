@@ -2,22 +2,22 @@
 title: WDAC and AppLocker Overview
 description: Compare Windows application control technologies.
 ms.localizationpriority: medium
-ms.date: 04/04/2023
+ms.date: 12/19/2023
 ms.topic: article
 ---
 
 # Windows Defender Application Control and AppLocker Overview
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [WDAC feature availability](feature-availability.md).
 
 Windows 10 and Windows 11 include two technologies that can be used for application control, depending on your organization's specific scenarios and requirements: Windows Defender Application Control (WDAC) and AppLocker.
 
 ## Windows Defender Application Control
 
-Windows Defender Application Control was introduced with Windows 10 and allows organizations to control which drivers and applications are allowed to run on their Windows clients. It was designed as a security feature under the [servicing criteria](https://www.microsoft.com/msrc/windows-security-servicing-criteria), defined by the Microsoft Security Response Center (MSRC).
+WDAC was introduced with Windows 10 and allows organizations to control which drivers and applications are allowed to run on their Windows clients. It was designed as a security feature under the [servicing criteria](https://www.microsoft.com/msrc/windows-security-servicing-criteria), defined by the Microsoft Security Response Center (MSRC).
 
-Windows Defender Application Control policies apply to the managed computer as a whole and affects all users of the device. WDAC rules can be defined based on:
+WDAC policies apply to the managed computer as a whole and affects all users of the device. WDAC rules can be defined based on:
 
 - Attributes of the codesigning certificate(s) used to sign an app and its binaries
 - Attributes of the app's binaries that come from the signed metadata for the files, such as Original Filename and version, or the hash of the file
@@ -31,7 +31,7 @@ Windows Defender Application Control policies apply to the managed computer as a
 
 ### WDAC System Requirements
 
-Windows Defender Application Control (WDAC) policies can be created and applied on any client edition of Windows 10 or Windows 11, or on Windows Server 2016 and higher. WDAC policies can be deployed via a Mobile Device Management (MDM) solution, for example, Intune; a management interface such as Configuration Manager; or a script host such as PowerShell. Group Policy can also be used to deploy WDAC policies, but is limited to single-policy format policies that work on Windows Server 2016 and 2019.
+WDAC policies can be created and applied on any client edition of Windows 10 or Windows 11, or on Windows Server 2016 and higher. WDAC policies can be deployed via a Mobile Device Management (MDM) solution, for example, Intune; a management interface such as Configuration Manager; or a script host such as PowerShell. Group Policy can also be used to deploy WDAC policies, but is limited to single-policy format policies that work on Windows Server 2016 and 2019.
 
 For more information on which individual WDAC features are available on specific WDAC builds, see [WDAC feature availability](feature-availability.md).
 
@@ -45,6 +45,8 @@ AppLocker policies can apply to all users on a computer, or to individual users 
 - Attributes of the app's binaries that come from the signed metadata for the files, such as Original Filename and version, or the hash of the file.
 - The path from which the app or file is launched.
 
+AppLocker is also used by some features of WDAC, including [managed installer](/windows/security/application-security/application-control/windows-defender-application-control/design/configure-authorized-apps-deployed-with-a-managed-installer) and the [Intelligent Security Graph](/windows/security/application-security/application-control/windows-defender-application-control/design/use-wdac-with-intelligent-security-graph).
+
 ### AppLocker System Requirements
 
 AppLocker policies can only be configured on and applied to devices that are running on the supported versions and editions of the Windows operating system. For more info, see [Requirements to Use AppLocker](applocker/requirements-to-use-applocker.md).
@@ -52,13 +54,12 @@ AppLocker policies can be deployed using Group Policy or MDM.
 
 ## Choose when to use WDAC or AppLocker
 
-Generally, it's recommended that customers, who are able to implement application control using Windows Defender Application Control rather than AppLocker, do so. WDAC is undergoing continual improvements, and is getting added support from Microsoft management platforms. Although AppLocker continues to receive security fixes, it isn't getting new feature improvements.
+Generally, customers who are able to implement application control using WDAC, rather than AppLocker, should do so. WDAC is undergoing continual improvements, and is getting added support from Microsoft management platforms. Although AppLocker continues to receive security fixes, it isn't getting new feature improvements.
 
-However, in some cases, AppLocker may be the more appropriate technology for your organization. AppLocker is best when:
+However, in some cases, AppLocker might be the more appropriate technology for your organization. AppLocker is best when:
 
 - You have a mixed Windows operating system (OS) environment and need to apply the same policy controls to Windows 10 and earlier versions of the OS.
 - You need to apply different policies for different users or groups on shared computers.
 - You don't want to enforce application control on application files such as DLLs or drivers.
 
-AppLocker can also be deployed as a complement to Windows Defender Application Control (WDAC) to add user or group-specific rules for shared device scenarios, where it's important to prevent some users from running specific apps.
-As a best practice, you should enforce WDAC at the most restrictive level possible for your organization, and then you can use AppLocker to further fine-tune the restrictions.
+AppLocker can also be deployed as a complement to WDAC to add user or group-specific rules for shared device scenarios, where it's important to prevent some users from running specific apps. As a best practice, you should enforce WDAC at the most restrictive level possible for your organization, and then you can use AppLocker to further fine-tune the restrictions.

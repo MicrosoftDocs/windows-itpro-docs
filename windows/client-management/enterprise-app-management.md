@@ -1,22 +1,13 @@
 ---
 title: Enterprise app management
 description: This article covers one of the key mobile device management (MDM) features for managing the lifecycle of apps across Windows devices.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 04/13/2023
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.topic: conceptual
+ms.date: 08/10/2023
 ---
 
 # Enterprise app management
 
-This article will discuss one of the key features of Windows' Mobile Device Management (MDM) capabilities: the ability to manage apps' lifecycle on all Windows devices. This includes both Store and non-Store apps, which can be managed natively through MDM.
+This article discusses one of the key features of Windows' Mobile Device Management (MDM) capabilities: the ability to manage apps' lifecycle on all Windows devices. This includes both Store and non-Store apps, which can be managed natively through MDM.
 
 By using Windows MDM to manage app lifecycles, administrators can deploy and manage updates, remove outdated or unused apps, and ensure that all devices have the necessary apps installed to meet the organization's needs. This feature streamlines the app management process and saves time and effort for IT professionals.
 
@@ -38,18 +29,18 @@ Windows offers the ability for management servers to:
 Windows lets you inventory all apps deployed to a user, and inventory all apps for all users of a Windows device. The [EnterpriseModernAppManagement](mdm/enterprisemodernappmanagement-csp.md) configuration service provider (CSP) inventories packaged apps and doesn't include traditional Win32 apps installed via MSI or executables. When the apps are inventoried, they're separated based on the following app classifications:
 
 - **Store**: Apps that have been acquired from the Microsoft Store, either directly or delivered with the enterprise from the Store for Business.
-- **nonStore**: Apps that were not acquired from the Microsoft Store.
-- **System**: Apps that are part of the operating system and cannot be uninstalled. This classification is read-only and can only be inventoried.
+- **nonStore**: Apps that weren't acquired from the Microsoft Store.
+- **System**: Apps that are part of the operating system and can't be uninstalled. This classification is read-only and can only be inventoried.
 
 Each app is identified by one package family name and one or more package full names, and the apps are grouped based on their origin. The EnterpriseModernAppManagement CSP displays these classifications as nodes.
 
 Inventory can be run recursively at any level from the AppManagement node through the package full name. You can also choose to inventory specific attributes only. The inventory is specific to the package full name and lists bundled and resource packs as applicable under the package family name.
 
-For more information on each node, refer to the detailed descriptions provided in the [EnterpriseModernAppManagement CSP](mdm/enterprisemodernappmanagement-csp.md).
+For more information on each node, see the detailed descriptions provided in the [EnterpriseModernAppManagement CSP](mdm/enterprisemodernappmanagement-csp.md).
 
 ### App inventory
 
-You can use the EnterpriseModernAppManagement CSP to query for all apps installed for a user or device. The query returns all apps, even if they were installed using MDM or other methods. Inventory can run at the user or device level. Inventory at the device level will return information for all users on the device.
+You can use the EnterpriseModernAppManagement CSP to query for all apps installed for a user or device. The query returns all apps, even if they were installed using MDM or other methods. Inventory can run at the user or device level. Inventory at the device level returns information for all users on the device.
 
 Doing a full inventory of a device can be resource-intensive based on the hardware and number of apps that are installed. The data returned can also be large. You may want to chunk these requests to reduce the impact to clients and network traffic.
 
@@ -83,7 +74,7 @@ Doing a full inventory of a device can be resource-intensive based on the hardwa
 
 ### Store license inventory
 
-You can use the EnterpriseModernAppManagement CSP to query for all app licenses installed for a user or device. The query returns all app licenses, event if they were installed via MDM or other methods. Inventory can run at the user or device level. Inventory at the device level will return information for all users on the device.
+You can use the EnterpriseModernAppManagement CSP to query for all app licenses installed for a user or device. The query returns all app licenses, event if they were installed via MDM or other methods. Inventory can run at the user or device level. Inventory at the device level returns information for all users on the device.
 
 For detailed descriptions of each node, see [EnterpriseModernAppManagement CSP](mdm/enterprisemodernappmanagement-csp.md).
 
@@ -209,10 +200,10 @@ If you purchased an app from the Store for Business and the app is specified for
 
 Here are the requirements for this scenario:
 
-- The app is assigned to a user Azure Active Directory (Azure AD) identity in the Store for Business. You can assign directly in the Store for Business or through a management server.
+- The app is assigned to a user Microsoft Entra identity in the Store for Business. You can assign directly in the Store for Business or through a management server.
 - The device requires connectivity to the Microsoft Store.
 - Microsoft Store services must be enabled on the device. The UI for the Microsoft Store can be disabled by the enterprise admin.
-- The user must be signed in with their Azure AD identity.
+- The user must be signed in with their Microsoft Entra identity.
 
 Here's an example:
 
@@ -237,8 +228,8 @@ Here are the changes from the previous release:
 
 1. The `{CatID}` reference should be updated to `{ProductID}`. This value is acquired as a part of the Store for Business management tool.
 1. The value for flags can be 0 or 1.
-   - When using "0", the management tool calls back to the Store for Business sync to assign a user a seat of an application.
-   - When using "1", the management tool doesn't call back in to the Store for Business sync to assign a user a seat of an application. The CSP will claim a seat if one is available.
+   - **0**: The management tool calls back to the Store for Business sync to assign a user a seat of an application.
+   - **1**: The management tool doesn't call back in to the Store for Business sync to assign a user a seat of an application. The CSP claims a seat if one is available.
 1. The `skuid` is a new parameter that is required. This value is acquired as a part of the Store for Business to management tool sync.
 
 ### Deploy an offline license to a user
@@ -276,7 +267,7 @@ Here are the requirements for this scenario:
 - The location of the app can be a local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (`https://contoso.com/app1.appx`).
 - The user must have permission to access the content location. For HTTPs, you can use server authentication or certificate authentication using a certificate associated with the enrollment. HTTP locations are supported, but not recommended because of lack of authentication requirements.
 - The device doesn't need to have connectivity to the Microsoft Store, store services, or have the Microsoft Store UI be enabled.
-- The user must be logged in, but association with Azure AD identity isn't required.
+- The user must be logged in, but association with Microsoft Entra identity isn't required.
 
 > [!NOTE]
 > You must unlock the device to deploy nonStore apps or you must deploy the app license before deploying the offline apps. For details, see [Deploy an offline license to a user](#deploy-an-offline-license-to-a-user).
@@ -386,14 +377,14 @@ The Add command for the package family name is required to ensure proper removal
 
 ### Provision apps for all users of a device
 
-Provisioning allows you to stage the app to the device and all users of the device can have the app registered on their next login. This feature is only supported for app purchased from the Store for Business, and the app is specified for an offline license or the app is a non-Store app. The app must be offered from a hosted location. The app is installed as a local system. To install to a local file share, the 'local system' of the device must have access to the share.
+Provisioning allows you to stage the app to the device and all users of the device can have the app registered on their next sign in. This feature is only supported for app purchased from the Store for Business, and the app is specified for an offline license or the app is a non-Store app. The app must be offered from a hosted location. The app is installed as a local system. To install to a local file share, the 'local system' of the device must have access to the share.
 
 Here are the requirements for this scenario:
 
 - The location of the app can be the local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (`https://contoso.com/app1.appx\`)
 - The user must have permission to access the content location. For HTTPs, you can use server authentication or certificate authentication using a certificate associated with the enrollment. HTTP locations are supported, but not recommended because of lack of authentication requirements.
 - The device doesn't need to have connectivity to the Microsoft Store, or store services enabled.
-- The device doesn't need any Azure AD identity or domain membership.
+- The device doesn't need any Microsoft Entra identity or domain membership.
 - For nonStore app, your device must be unlocked.
 - For Store offline apps, the required licenses must be deployed before deploying the apps.
 
@@ -432,7 +423,7 @@ To provision app for all users of a device from a hosted location, the managemen
   The HostedInstall Exec command contains a Data node that requires an embedded XML. Here are the requirements for the data XML:
 
   - Application node has a required parameter, PackageURI, which can be a local file location, UNC, or HTTPS location.
-  - Dependencies can be specified if required to be installed with the package. This is optional.
+  - Dependencies can be specified if necessary to be installed with the package. This is optional.
 
   The DeploymentOptions parameter is only available in the user context.
 
@@ -583,7 +574,7 @@ To uninstall an app, you delete it under the origin node, package family name, a
 
 ### Removed provisioned apps from a device
 
-You can remove provisioned apps from a device for a specific version, or for all versions of a package family. When a provisioned app is removed, it isn't available to future users for the device. Logged in users who have the app registered to them will continue to have access to the app. If you want to remove the app for those users, you must explicitly uninstall the app for those users.
+You can remove provisioned apps from a device for a specific version, or for all versions of a package family. When a provisioned app is removed, it isn't available to future users for the device. Logged in users who have the app registered to them continue to have access to the app. If you want to remove the app for those users, you must explicitly uninstall the app for those users.
 
 > [!NOTE]
 > You can only remove an app that has an inventory value IsProvisioned = 1.
@@ -755,7 +746,7 @@ The Universal Windows app can share application data between the users of the de
 
 The [ApplicationManagement/AllowSharedUserAppData](mdm/policy-csp-applicationmanagement.md) policy enables or disables app packages to share data between app packages when there are multiple users. If you enable this policy, applications can share data between packages in their package family. Data can be shared through ShareLocal folder for that package family and local machine. This folder is available through the Windows.Storage API.
 
-If you disable this policy, applications can't share user application data among multiple users. However, pre-written shared data will persist. The clean pre-written shared data, use DISM ((`/Get-ProvisionedAppxPackage` to detect if there's any shared data, and `/Remove-SharedAppxData` to remove it).
+If you disable this policy, applications can't share user application data among multiple users. However, prewritten shared data persists. To clean prewritten shared data, use DISM (`/Get-ProvisionedAppxPackage` to detect if there's any shared data, and `/Remove-SharedAppxData` to remove it).
 
 The valid values are 0 (off, default value) and 1 (on).
 
