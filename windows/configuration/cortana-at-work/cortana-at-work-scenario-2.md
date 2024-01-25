@@ -15,7 +15,7 @@ ms.topic: article
 
 Cortana will respond with the information from Bing. 
 
-:::image type="content" source="../screenshot5.png" alt-text="Screenshot: Cortana showing current time in Hyderabad"::: 
+:::image type="content" source="images/screenshot5.png" alt-text="Screenshot: Cortana showing current time in Hyderabad":::
 
 >[!NOTE]
 >This scenario requires Bing Answers to be enabled. To learn more, see [Set up and configure the Bing Answers feature](./set-up-and-test-cortana-in-windows-10.md#set-up-and-configure-the-bing-answers-feature).

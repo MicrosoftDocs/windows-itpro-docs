@@ -3,7 +3,6 @@ title: OOBE
 description: This section describes the OOBE settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
 
 ms.topic: reference
-appliesto: 
 
 ms.date: 12/31/2017
 --- 
@@ -15,8 +14,7 @@ Use to configure settings for the [Out Of Box Experience (OOBE)](/windows-hardwa
 ## Applies to 
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | 
-
+| --- | :---: | :---: | :---: | :---: |
 | [Desktop > EnableCortanaVoice](#enablecortanavoice) | ✅  |  |  |  |
 | [Desktop > HideOobe](#hideoobe-for-desktop) | ✅  |  |  |  | 
 

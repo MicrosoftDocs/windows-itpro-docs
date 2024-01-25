@@ -3,7 +3,6 @@ title: FirstExperience
 description: This section describes the FirstExperience settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
 
 ms.topic: reference
-appliesto: 
 
 ms.date: 08/08/2018 
 

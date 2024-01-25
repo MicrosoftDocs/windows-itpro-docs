@@ -9,13 +9,6 @@ ms.date: 12/31/2017
 
 # Create a provisioning package with multivariant settings 
 
-
-**Applies to** 
-
-- Windows 10
-- Windows 11 
-
-
 In your organization, you might have different configuration requirements for devices that you manage. You can create separate provisioning packages for each group of devices in your organization that have different requirements. Or, you can create a multivariant provisioning package, a single provisioning package that can work for multiple conditions. For example, in a single provisioning package, you can define one set of customization settings that will apply to devices set up for French and a different set of customization settings for devices set up for Japanese.  
 
 To provision multivariant settings, you use Windows Configuration Designer to create a provisioning package that contains all of the customization settings that you want to apply to any of your devices. Next, you manually edit the .XML file for that project to define each set of devices (a **Target**). For each **Target**, you specify at least one **Condition** with a value, which identifies the devices to receive the configuration. Finally, for each **Target**, you provide the customization settings to be applied to those devices. 
@@ -35,13 +28,13 @@ The following information describes the logic for the target definition:
 
 - When all **Condition** elements are TRUE, **TargetState** is TRUE: 
 
-  :::image type="content" source="../images/icd-multi-targetstate-true.png" alt-text="Target state is true when all conditions are true."::: 
+  :::image type="content" source="../images/icd-multi-targetstate-true.png" alt-text="Target state is true when all conditions are true.":::
 
-- If any of the **TargetState** elements is TRUE, **Target** is TRUE, and the **ID** can be used for setting customizations: 
+- If any of the **TargetState** elements is TRUE, **Target** is TRUE, and the **ID** can be used for setting customizations:
 
-  :::image type="content" source="../images/icd-multi-target-true.png" alt-text="Target is true if any target state is true"::: 
+  :::image type="content" source="../images/icd-multi-target-true.png" alt-text="Target is true if any target state is true":::
 
-### Conditions 
+### Conditions
 
 The following table shows the conditions supported in Windows client provisioning for a **TargetState**: 
 
@@ -55,7 +48,6 @@ The following table shows the conditions supported in Windows client provisionin
 | GID1 | P0 | Supported | Digit string | Use to target settings based on the Group Identifier (level 1) value. |
 | ICCID | P0 | Supported | Digit string | Use to target settings based on the Integrated Circuit Card Identifier (ICCID) value. |
 | Roaming | P0 | N/A | Boolean | Use to specify roaming. Set the value to **1** (roaming) or **0** (non-roaming). | 
-
 | UICC | P0 | N/A | Enumeration | Use to specify the Universal Integrated Circuit Card (UICC) state. Set the value to one of the following:</br></br></br>- 0 - Empty</br>- 1 - Ready</br>- 2 - Locked |
 | UICCSLOT | P0 | N/A | Digit string | Use to specify the UICC slot. Set the value one of the following:</br></br></br>- 0 - Slot 0</br>- 1 - Slot 1 |
 | ProcessorType | P1 | Supported | String | Use to target settings based on the processor type. |
@@ -292,8 +284,7 @@ When you install the multivariant provisioning package on a Windows client devic
 The following events trigger provisioning on Windows client devices: 
 
 | Event | Windows client for desktop editions |
-| --- | --- | 
-
+| --- | --- |
 | System boot | Supported |
 | Operating system update | Planned |
 | Package installation during device first run experience | Supported |

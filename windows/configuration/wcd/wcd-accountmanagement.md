@@ -2,7 +2,6 @@
 title: AccountManagement
 description: This section describes the account management settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
 ms.topic: reference
-appliesto: 
 
 ms.date: 04/30/2018 
 --- 

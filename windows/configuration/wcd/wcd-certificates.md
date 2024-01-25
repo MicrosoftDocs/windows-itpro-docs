@@ -3,7 +3,6 @@ title: Certificates
 description: This section describes the Certificates settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
 
 ms.topic: reference
-appliesto: 
 
 ms.date: 09/06/2017 
 
@@ -39,21 +38,18 @@ Use to deploy Root Certificate Authority (CA) certificates to devices. The follo
 1. In **Available customizations**, select **ClientCertificates**, enter a friendly name for the certificate, and then click **Add**.
 2. In **Available customizations**, select the name that you created. The following table describes the settings you can configure. Settings in **bold** are required. 
 
-| Setting | Value | Description | 
-
-| --- | --- | ---- | 
-
+| Setting | Value | Description |
+| --- | --- | ---- |
 | **CertificatePassword** | |  |
 | **CertificatePath** |  | Adds the selected certificate to the Personal store on the target device. |
 | ExportCertificate | True or false | Set to **True** to allow certificate export.  |
-| **KeyLocation** | - TPM only</br>- TPM with software fallback</br>- Software only  |  | 
+| **KeyLocation** | - TPM only</br>- TPM with software fallback</br>- Software only  |  |
 
 ## RootCertificates 
 
 1. In **Available customizations**, select **RootCertificates**, enter a friendly name for the certificate, and then click **Add**.
-2. In **Available customizations**, select the name that you created. 
-
-3. In **CertificatePath**, browse to or enter the path to the certificate. 
+2. In **Available customizations**, select the name that you created.
+3. In **CertificatePath**, browse to or enter the path to the certificate.
 
 ## TrustedPeopleCertificates 
 

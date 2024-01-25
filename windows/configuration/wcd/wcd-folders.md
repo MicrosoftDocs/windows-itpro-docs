@@ -3,7 +3,6 @@ title: Folders
 description: This section describes the Folders settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
 
 ms.topic: reference
-appliesto: 
 
 ms.date: 04/30/2018 
 

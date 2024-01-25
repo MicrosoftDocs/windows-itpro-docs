@@ -7,14 +7,12 @@ metadata:
   title: Configure Windows client # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Find out how to apply custom configurations to Windows client devices. # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: landing-page # Required
-  ms.prod: windows-client
   ms.collection:
     - tier1
   author: aczechowski
   ms.author: aaroncz
   manager: aaroncz
   ms.date: 12/20/2023
-  localization_priority: medium
     
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new 

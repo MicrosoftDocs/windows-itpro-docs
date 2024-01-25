@@ -22,7 +22,7 @@ ms.topic: article
 
    When you say **Cortana**, Cortana will open in listening mode to acknowledge the wake word. 
 
-   :::image type="content" source="../screenshot4.png" alt-text="Screenshot: Cortana listening mode"::: 
+   :::image type="content" source="images/screenshot4.png" alt-text="Screenshot: Cortana listening mode"::: 
 
    Once you finish saying your query, Cortana will open with the result. 
 

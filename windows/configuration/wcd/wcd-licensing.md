@@ -3,7 +3,6 @@ title: Licensing
 description: This section describes the Licensing settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
 
 ms.topic: reference
-appliesto: 
 
 ms.date: 09/06/2017 
 

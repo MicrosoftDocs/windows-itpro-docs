@@ -3,7 +3,6 @@ title: UniversalAppInstall
 description: This section describes the UniversalAppInstall settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
 
 ms.topic: reference
-appliesto: 
  
 
 ms.date: 12/31/2017
@@ -17,18 +16,17 @@ Use UniversalAppInstall settings to install Windows apps from the Microsoft Stor
 >[!NOTE]
 >You can only use the Windows provisioning settings and provisioning packages for apps where you have the available installation files, namely with sideloaded apps that have an offline license. [Learn more about offline app distribution.](/microsoft-store/distribute-offline-apps) 
 
-## Applies to 
+## Applies to
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | 
-
+| --- | :---: | :---: | :---: | :---: |
 | [DeviceContextApp](#devicecontextapp) | ✅ | ✅ |  |   |
 | [DeviceContextAppLicense](#devicecontextapplicense) | ✅ | ✅ |  |   |
 | [StoreInstall](#storeinstall) | ✅ |  ✅ |  | ✅  |
 | [UserContextApp](#usercontextapp) | ✅ |  ✅ |  | ✅  |
-| [UserContextAppLicense](#usercontextapplicense) | ✅ | ✅ |  | ✅  | 
+| [UserContextAppLicense](#usercontextapplicense) | ✅ | ✅ |  | ✅  |
 
-## DeviceContextApp 
+## DeviceContextApp
 
 Enter an app package family name to install an app for all device users. You can use the [Get-AppxPackage cmdlet](/powershell/module/appx/get-appxpackage) to get the package family name for an installed app. 
 

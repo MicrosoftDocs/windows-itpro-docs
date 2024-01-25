@@ -3,7 +3,6 @@ title: Cellular
 description: This section describes the Cellular settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
 
 ms.topic: reference
-appliesto: 
 
 ms.date: 12/31/2017
 --- 

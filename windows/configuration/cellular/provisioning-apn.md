@@ -9,7 +9,7 @@ ms.date: 04/13/2018
 
 >**Looking for consumer information?** See [Cellular settings in Windows 10](https://support.microsoft.com/help/10739/windows-10-cellular-settings) 
 
-Enterprises can configure cellular settings for tablets and PC that have built-in cellular modems or plug-in USB modem dongles and apply the settings in a [provisioning package](provisioning-packages/provisioning-packages.md). After the devices are configured, users are automatically connected using the access point name (APN) defined by the enterprise without needing to manually connect. 
+Enterprises can configure cellular settings for tablets and PC that have built-in cellular modems or plug-in USB modem dongles and apply the settings in a [provisioning package](../provisioning-packages/provisioning-packages.md). After the devices are configured, users are automatically connected using the access point name (APN) defined by the enterprise without needing to manually connect. 
 
 For users who work in different locations, you can configure one APN to connect when the users are at work and a different APN when the users are traveling. 
 
@@ -17,12 +17,12 @@ For users who work in different locations, you can configure one APN to connect 
 
 - Windows 10, version 1703, desktop editions (Home, Pro, Enterprise, Education)
 - Tablet or PC with built-in cellular modem or plug-in USB modem dongle
-- [Windows Configuration Designer](provisioning-packages/provisioning-install-icd.md)
+- [Windows Configuration Designer](../provisioning-packages/provisioning-install-icd.md)
 - APN (the address that your PC uses to connect to the Internet when using the cellular data connection) 
 
 ## How to configure cellular settings in a provisioning package 
 
-1. In Windows Configuration Designer, [start a new project](provisioning-packages/provisioning-create-package.md) using the **Advanced provisioning** option.
+1. In Windows Configuration Designer, [start a new project](../provisioning-packages/provisioning-create-package.md) using the **Advanced provisioning** option.
 2. Enter a name for your project, and then click **Next**.
 3. Select **All Windows desktop editions**, click **Next**, and then click **Finish**.
 4. Go to **Runtime settings > Connections > EnterpriseAPN**.
@@ -50,8 +50,8 @@ For users who work in different locations, you can configure one APN to connect 
     | Roaming | Select the behavior that you want when the device is roaming. The options are:</br></br>-Disallowed</br>-Allowed (default)</br>-DomesticRoaming</br>-Use OnlyForDomesticRoaming</br>-UseOnlyForNonDomesticRoaming</br>-UseOnlyForRoaming   |
     | UserName | If you select PAP, CHAP, or MSCHAPv2 authentication, enter a user name.  | 
 
-8. After you configure the connection settings, [build the provisioning package](provisioning-packages/provisioning-create-package.md#build-package).
-9. [Apply the package to devices.](provisioning-packages/provisioning-apply-package.md) 
+8. After you configure the connection settings, [build the provisioning package](../provisioning-packages/provisioning-create-package.md#build-package).
+9. [Apply the package to devices.](../provisioning-packages/provisioning-apply-package.md) 
 
 ## Confirm the settings 
 

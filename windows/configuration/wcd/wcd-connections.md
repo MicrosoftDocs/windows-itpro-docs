@@ -3,7 +3,6 @@ title: Connections
 description: This section describes the Connections settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
 
 ms.topic: reference
-appliesto: 
 
 ms.date: 04/30/2018 
 
@@ -31,7 +30,7 @@ See [CM_CellularEntries configuration service provider (CSP)](/windows/client-ma
 
 ## EnterpriseAPN 
 
-See [Configure cellular settings for tablets and PCs](../provisioning-apn.md) and 
+See [Configure cellular settings for tablets and PCs](../cellular/provisioning-apn.md) and 
 
 [EnterpriseAPN CSP](/windows/client-management/mdm/enterpriseapn-csp) for settings and values. 
 

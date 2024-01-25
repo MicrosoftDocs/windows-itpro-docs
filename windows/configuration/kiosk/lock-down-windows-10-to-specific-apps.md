@@ -477,14 +477,14 @@ Usage is demonstrated below, by using the new XML namespace and specifying `Glob
 
 ### Add XML file to provisioning package 
 
-Before you add the XML file to a provisioning package, you can [validate your configuration XML against the XSD](kiosk-xml.md#xsd-for-assignedaccess-configuration-xml). 
+Before you add the XML file to a provisioning package, you can [validate your configuration XML against the XSD](kiosk-xml.md#xsd-for-assignedaccess-configuration-xml).
 
-Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](provisioning-packages/provisioning-install-icd.md) 
+Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](../provisioning-packages/provisioning-install-icd.md).
 
 > [!IMPORTANT]
-> When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed. 
+> When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-1. Open Windows Configuration Designer. By default: `%systemdrive%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe`. 
+1. Open Windows Configuration Designer. By default: `%systemdrive%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe`.
 
 2. Choose **Advanced provisioning**. 
 

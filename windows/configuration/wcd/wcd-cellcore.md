@@ -3,13 +3,12 @@ title: CellCore
 description: This section describes the CellCore settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
 
 ms.topic: reference
-appliesto: 
 
 ms.date: 10/02/2018 
 
 --- 
 
-# CellCore (Windows Configuration Designer reference) 
+# CellCore (Windows Configuration Designer reference)
 
 >Setting documentation is provided for Windows 10, version 1803 and earlier. CellCore isn't available in Windows 10, version 1809. 
 
@@ -19,9 +18,9 @@ Use to configure settings for cellular data.
 >These settings are intended to be used only by manufacturers, mobile operators, and solution providers when configuring devices, and aren't intended for use by administrators in the enterprise. 
 
 ## Applies to
-|Setting groups | Windows client | Surface Hub | HoloLens | IoT Core|
-|:---|:---:|:---:|:---:|:---:| 
 
+|Setting groups | Windows client | Surface Hub | HoloLens | IoT Core|
+|:---|:---:|:---:|:---:|:---:|
 |PerDevice: [CellConfigurations](#cellconfigurations)|  |  |  |  |
 |PerDevice: [CellData](#celldata) |✅|✅|  |  |
 |PerDevice: [CellUX](#cellux)| ✅ |✅| | |
@@ -31,17 +30,15 @@ Use to configure settings for cellular data.
 |PerDevice: [General](#general)  |  |  |  | |
 |PerDevice: [RCS](#rcs)|  |  |  | |
 |PerDevice: [SMS](#sms)| ✅ | ✅  |  |  
-
 |PerDevice: [UIX](#uix)|  |  |  | |
 |PerDevice: [UTK](#utk)|  |  |  | |
 |PerIMSI: [CellData](#celldata2)|  |  |  |  |
 |PerIMSI: [CellUX](#cellux2)| | | | |
 |PerIMSI: [General](#general2)|  |  |  | |
 |PerIMSI: [RCS](#rcs2)|  |  |  |  |
-|PerIMSI: [SMS](#sms2)|✅|✅|  |  | 
-
+|PerIMSI: [SMS](#sms2)|✅|✅|  |  |
 |PerIMSI: [UTK](#utk2)|  |   |  |  |
-|PerIMSI: [VoLTE](#volte)|  |  |  |  | 
+|PerIMSI: [VoLTE](#volte)|  |  |  |  |
 
 ## PerDevice 
 
@@ -61,7 +58,7 @@ Use to configure settings for cellular data.
 
 |Setting | Description|
 |:--- |:---|
-|CellularFailover | Allow or disallow cellular data failover when in limited Wi-Fi connectivity. By default, if the phone is connected to a Wi-Fi network and the data connection to a site is unsuccessful due to limited Wi-Fi connectivity, the phone will complete the connection to the site using available cellular data networks (when possible) to provide an optimal user experience. When the customization is enabled, a user option to use or not use cellular data for limited Wi-Fi connectivity becomes visible in the **Settings** > **cellular+SIM** screen. This option is automatically set to **don’t use cellular data** when the customization is enabled.|
+|CellularFailover | Allow or disallow cellular data failover when in limited Wi-Fi connectivity. By default, if the phone is connected to a Wi-Fi network and the data connection to a site is unsuccessful due to limited Wi-Fi connectivity, the phone will complete the connection to the site using available cellular data networks (when possible) to provide an optimal user experience. When the customization is enabled, a user option to use or not use cellular data for limited Wi-Fi connectivity becomes visible in the **Settings** > **cellular+SIM** screen. This option is automatically set to **don't use cellular data** when the customization is enabled.|
 |MaxNumberOfPDPContexts | Set a maximum value (1 through 4, inclusive, or 0x1 through 0x4 hexadecimal) for the number of simultaneous packet data protocol (PDP) contexts for 3GPP connections. By default, the OS enforces a maximum of four (4) simultaneous packet data protocol (PDP) contexts for 3GPP connections, and one (1) PDP context for 3GPP2 connections. You can set a different maximum value if required by their mobile operator. The same maximums apply for both roaming and non-roaming scenarios. This maximum does not include packet contexts used internally by the modem.|
 |ModemProfiles > LTEAttachGuids | Set the value for LTEAttachGuid to the OemConnectionId GUID used for the LTE attach profile in the modem. The value is a GUID in the string format *XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX*.|
 |PersistAtImaging > DisableAoAc | Enable or disable Always-on/Always-connected (AoAc) on the WWAN adapter.| 
@@ -105,11 +102,11 @@ Use to configure settings for cellular data.
 |HighestSpeed4G3GOnly | You can customize the listed names of the connection speeds with their own character codes. To modify "4G or 3G Only" to another character code, change the value of HighestSpeed4G3GOnly. Although there is no limit to the number of characters you can use, if the character code is too long, it will be truncated in the UI.|
 |HighestSpeed4GOnly | You can customize the listed names of the connection speeds with their own character codes. To modify "4G Only" to another character code, change the value of HighestSpeed4GOnly. Although there is no limit to the number of characters you can use, if the character code is too long, it will be truncated in the UI.|
 |HighestSpeedTitle | You can customize the **Highest connection speed** drop-down label in the **Settings** > **Cellular+SIM** > **SIM** settings page. To change the Highest connection speed drop-down label, set HighestSpeedTitle to another string. For example, you can set this to "Preferred connection speed".|
-|IsATTSpecific | Control the roaming text for AT&T devices. AT&T requires the phone to show a particular roaming text to meet their legal and marketing guidelines. By default, if the user chooses **roam** under **Data roaming options** in the **Settings** > **Cellular+SIM** screen, they will see the following text: *Depending on your service agreement, you might pay more when using data roaming.* If you set IsATTSpecific to **Yes**, the following roaming text will be displayed instead: *International data roaming charges apply for data usage outside the United States, Puerto Rico, and United States Virgin Islands. Don’t allow roaming to avoid international data roaming charges.*|
+|IsATTSpecific | Control the roaming text for AT&T devices. AT&T requires the phone to show a particular roaming text to meet their legal and marketing guidelines. By default, if the user chooses **roam** under **Data roaming options** in the **Settings** > **Cellular+SIM** screen, they will see the following text: *Depending on your service agreement, you might pay more when using data roaming.* If you set IsATTSpecific to **Yes**, the following roaming text will be displayed instead: *International data roaming charges apply for data usage outside the United States, Puerto Rico, and United States Virgin Islands. Don't allow roaming to avoid international data roaming charges.*|
 |LTEAttachGUID | Set the value for LTEAttachGuid to the OemConnectionId GUID used for the LTE attach profile in the modem. The value is a GUID in the string format *XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX*.|
 |MMSAPNAuthTypeDefault | Select between **Pap** and **Chap** for default MMS APN authentication type.|
 |MMSAPNIPTypeIfHidden | Select between **IPV4**, **IPV6**, **IPV4V6**, and **IPV4V6XLAT** for default MMS APN IP type.|
-|ShowExtendedRejectCodes | When a reject code is sent by the network, partners can specify that extended error messages should be displayed instead of the standard simple error messages. This customization is only intended for use when required by the mobile operator’s network. The short versions of the extended reject message are shown in the following screens:</br></br>- Phone tile in Start</br></br>- Call History screen</br></br>- Dialer</br></br>- Call Progress screen</br></br>- Incoming Call screen</br></br>- As the status string under Settings > cellular+SIM</br></br></br>The long version of the extended reject message is shown under the Active Network label in **Settings** > **cellular+SIM**. Select **Yes** to show the extended error message. Select **No** to hide the extended error message. See [Error messages for reject codes](#errorreject) to see the versions of the message.|
+|ShowExtendedRejectCodes | When a reject code is sent by the network, partners can specify that extended error messages should be displayed instead of the standard simple error messages. This customization is only intended for use when required by the mobile operator's network. The short versions of the extended reject message are shown in the following screens:</br></br>- Phone tile in Start</br></br>- Call History screen</br></br>- Dialer</br></br>- Call Progress screen</br></br>- Incoming Call screen</br></br>- As the status string under Settings > cellular+SIM</br></br></br>The long version of the extended reject message is shown under the Active Network label in **Settings** > **cellular+SIM**. Select **Yes** to show the extended error message. Select **No** to hide the extended error message. See [Error messages for reject codes](#errorreject) to see the versions of the message.|
 |ShowHighestSpeed3GPreferred | Select **Yes** to show the **3G Preferred** option in the **Highest connection speed** drop-down menu. Select **No** to hide **3G Preferred**.|
 |ShowManualAvoidance | Select **Yes** to show the **Switch to next network manually** button in SIM settings when Mode Selection is CDMA on a C+G dual SIM phone. Select **No** to hide the **Switch to next network manually** button.|
 |ShowPreferredPLMNPage | Select **Yes** to show the preferred public land mobile network (PLMN) page in SIM settings.|
@@ -227,26 +224,25 @@ Configure **FwUpdate** > **AllowedAppIdList** to list apps that are allowed to u
 |Type3GPP2 > ErrorHandling > FriendlyErrorClass |Enter a name for ERRORCODE3GPP2, and click **Add**. Configure the error class that you added as **generic error**, **invalid recipient address**, or **network connectivity trouble**.|
 |Type3GPP2 > ErrorHandling > UseReservedAsPermanent |Set the 3GPP2 permanent error type.| 
 
-### UIX 
+### UIX
 
 Setting | Description
 |:-|:--|
 SIM1ToUIM1 | Used to show UIM1 as an alternate string instead of SIM1 for the first SIM on C+G dual SIM phones.
 SIMToSIMUIM | Partners can change the string "SIM" to "SIM/UIM" to accommodate scenarios such as Dual Mode cards of SIM cards on the phone. This scenario can provide a better experience for users in some markets. Enabling this customization changes all "SIM" strings to "SIM/UIM". 
 
-
-### UTK 
+### UTK
 
 |Setting |Description|
 |:-|:-|
 |UIDefaultDuration |Specifies the default time, in milliseconds, that the DISPLAY TEXT, GET INKEY, PLAY TONE, or SELECT ITEM dialog should be displayed. The default value is 60000 milliseconds (60 seconds). The valid value range is 1-120000.|
 |UIGetInputDuration |Specifies the default time, in milliseconds, that the GET INPUT dialog should be displayed. The default value is 120000 milliseconds (120 seconds). The valid value range is 1-120000.| 
 
-## PerIMSI 
+## PerIMSI
 
 Enter an IMSI, click **Add**, and then select the IMSI that you added to configure the following settings.  
 
-### <a name="celldata2"></a> CellData 
+### <a name="celldata2"></a> CellData
 
 |Setting |Description|
 |:--- |:---|
@@ -302,10 +298,10 @@ Enter an IMSI, click **Add**, and then select the IMSI that you added to configu
 |HighestSpeed4G3GOnly | You can customize the listed names of the connection speeds with their own character codes. To modify "4G or 3G Only" to another character code, change the value of HighestSpeed4G3GOnly. Although there is no limit to the number of characters you can use, if the character code is too long, it will be truncated in the UI.|
 |HighestSpeed4GOnly | You can customize the listed names of the connection speeds with their own character codes. To modify "4G Only" to another character code, change the value of HighestSpeed4GOnly. Although there is no limit to the number of characters you can use, if the character code is too long, it will be truncated in the UI.|
 |HighestSpeedTitle | You can customize the **Highest connection speed** drop-down label in the **Settings** > **Cellular+SIM** > **SIM** settings page. To change the Highest connection speed drop-down label, set HighestSpeedTitle to another string. For example, you can set this to "Preferred connection speed".|
-|IsATTSpecific | Control the roaming text for AT&T devices. AT&T requires the phone to show a particular roaming text to meet their legal and marketing guidelines. By default, if the user chooses **roam** under **Data roaming options** in the **Settings** > **Cellular+SIM** screen, they will see the following text: *Depending on your service agreement, you might pay more when using data roaming.* If you set IsATTSpecific to **Yes**, the following roaming text will be displayed instead: *International data roaming charges apply for data usage outside the United States, Puerto Rico, and United States Virgin Islands. Don’t allow roaming to avoid international data roaming charges.*|
+|IsATTSpecific | Control the roaming text for AT&T devices. AT&T requires the phone to show a particular roaming text to meet their legal and marketing guidelines. By default, if the user chooses **roam** under **Data roaming options** in the **Settings** > **Cellular+SIM** screen, they will see the following text: *Depending on your service agreement, you might pay more when using data roaming.* If you set IsATTSpecific to **Yes**, the following roaming text will be displayed instead: *International data roaming charges apply for data usage outside the United States, Puerto Rico, and United States Virgin Islands. Don't allow roaming to avoid international data roaming charges.*|
 |LTEAttachGUID | Set the value for LTEAttachGuid to the OemConnectionId GUID used for the LTE attach profile in the modem. The value is a GUID in the string format *XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX*.|
 |MMSAPNIPTypeIfHidden | Select between **IPV4**, **IPV6**, **IPV4V6**, and **IPV4V6XLAT** for default MMS APN IP type.|
-|ShowExtendedRejectCodes | When a reject code is sent by the network, partners can specify that extended error messages should be displayed instead of the standard simple error messages. This customization is only intended for use when required by the mobile operator’s network. The short versions of the extended reject message are shown in the following screens:</br></br>- Phone tile in Start</br></br>- Call History screen</br></br>- Dialer</br></br>- Call Progress screen</br></br>- Incoming Call screen</br></br>- As the status string under Settings > cellular+SIM</br></br></br>The long version of the extended reject message is shown under the Active Network label in **Settings** > **cellular+SIM**. Select **Yes** to show the extended error message. Select **No** to hide the extended error message. See [Error messages for reject codes](#errorreject) to see the versions of the message.|
+|ShowExtendedRejectCodes | When a reject code is sent by the network, partners can specify that extended error messages should be displayed instead of the standard simple error messages. This customization is only intended for use when required by the mobile operator's network. The short versions of the extended reject message are shown in the following screens:</br></br>- Phone tile in Start</br></br>- Call History screen</br></br>- Dialer</br></br>- Call Progress screen</br></br>- Incoming Call screen</br></br>- As the status string under Settings > cellular+SIM</br></br></br>The long version of the extended reject message is shown under the Active Network label in **Settings** > **cellular+SIM**. Select **Yes** to show the extended error message. Select **No** to hide the extended error message. See [Error messages for reject codes](#errorreject) to see the versions of the message.|
 |ShowHighestSpeed3GPreferred | Select **Yes** to show the **3G Preferred** option in the **Highest connection speed** drop-down menu. Select **No** to hide **3G Preferred**.|
 |ShowManualAvoidance | Select **Yes** to show the **Switch to next network manually** button in SIM settings when Mode Selection is CDMA on a C+G dual SIM phone. Select **No** to hide the **Switch to next network manually** button.|
 |ShowPreferredPLMNPage | Select **Yes** to show the preferred public land mobile network (PLMN) page in SIM settings.|
@@ -317,7 +313,7 @@ Enter an IMSI, click **Add**, and then select the IMSI that you added to configu
 |SlotSelectionSim2Name | Enter text for the name of SIM 2 in slot selection UI.  (Removed in Windows 10, version 1803.)|
 |SuppressDePersoUI | Suppress DePerso UI to unlock Perso.  (Removed in Windows 10, version 1803.)| 
 
-### <a name="general2"></a> General 
+### <a name="general2"></a> General
 
 |Setting |Description|
 |:--|:--|

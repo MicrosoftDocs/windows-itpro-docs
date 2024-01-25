@@ -3,7 +3,6 @@ title: DeviceManagement
 description: This section describes the DeviceManagement setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
 
 ms.topic: reference
-appliesto: 
 
 ms.date: 04/30/2018 
 
@@ -27,8 +26,7 @@ Use to configure device management settings.
 1. In **Available customizations**, select **Accounts**, enter a friendly name for the account, and then click **Add**.
 2. In **Available customizations**, select the account that you created. The following table describes the settings you can configure. Settings in **bold** are required. 
 
-| Setting | Description | 
-
+| Setting | Description |
 | --- | --- |
 | **Address** | Enter the OMA DM server address  |
 | **AddressType** | Choose between **IPv4** and **URI** for the type of OMA DM server address. The default value of **URI** specifies that the OMA DM account address is a URI address. A value of **IPv4** specifies that the OMA DM account address is an IP address. |
@@ -60,8 +58,7 @@ Use to configure device management settings.
 2. In **Available customizations**, select the LogicalProxyName that you created, and then select **PhysicalProxies**.
 3. Enter a PhysicalProxyName, and then click **Add**. The following table describes the settings you can configure for the physical proxy and for **Trust**.  
 
-| Setting | Description | 
-
+| Setting | Description |
 | --- | --- |
 | Address | Enter the address of the physical proxy |
 | AddressType | Select between **E164**, **IPV4**, and **IPV^** for the format and protocol of the PXADDR element for a physical proxy |

@@ -53,7 +53,7 @@ The **Export-StartLayout** cmdlet produces an XML file. Because Windows Configur
 ## <a href="" id="bkmk-domaingpodeployment"></a>Create a provisioning package that contains a customized Start layout 
 
 
-Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](provisioning-packages/provisioning-install-icd.md) 
+Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](../provisioning-packages/provisioning-install-icd.md) 
 
 > [!IMPORTANT]
 > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed. 

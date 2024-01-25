@@ -1,10 +1,7 @@
 ---
 title: Diagnose Provisioning Packages
 description: Diagnose general failures in provisioning.
-ms.author: lizlong 
-
 ms.topic: article
-ms.technology: itpro-manage
 ms.date: 01/18/2023
 --- 
 

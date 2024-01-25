@@ -210,7 +210,7 @@ Clear-AssignedAccess
 
 When you use the **Provision kiosk devices** wizard in Windows Configuration Designer, you can configure the kiosk to run either a Universal Windows app or a Windows desktop application. 
 
-[Install Windows Configuration Designer](provisioning-packages/provisioning-install-icd.md), then open Windows Configuration Designer and select **Provision kiosk devices**. After you name your project, and select **Next**, configure the following settings: 
+[Install Windows Configuration Designer](../provisioning-packages/provisioning-install-icd.md), then open Windows Configuration Designer and select **Provision kiosk devices**. After you name your project, and select **Next**, configure the following settings: 
 
 1. Enable device setup: 
 
@@ -253,7 +253,7 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 
     :::image type="content" source="images/add-applications-details.png" alt-text="In Windows Configuration Designer, add an application that will run in kiosk mode."::: 
 
-    To add applications to the devices, select **Add applications**. You can install multiple applications in a provisioning package, including Windows desktop applications (Win32) and Universal Windows Platform (UWP) apps. The settings in this step vary depending on the application you select. For help with the settings, see [Provision PCs with apps](provisioning-packages/provision-pcs-with-apps.md). 
+    To add applications to the devices, select **Add applications**. You can install multiple applications in a provisioning package, including Windows desktop applications (Win32) and Universal Windows Platform (UWP) apps. The settings in this step vary depending on the application you select. For help with the settings, see [Provision PCs with apps](../provisioning-packages/provision-pcs-with-apps.md). 
 
     > [!WARNING]
     > If you select the plus button to add an application, you must enter an application for the provisioning package to validate. If you select the plus button by mistake, then:
@@ -303,12 +303,12 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
     - **Protect your package**: Select **Yes** to password protect your provisioning package. When you apply the provisioning package to a device, you must enter this password. 
 
 >[!NOTE]
->If you want to use [the advanced editor in Windows Configuration Designer](provisioning-packages/provisioning-create-package.md#configure-settings), specify the user account and app (by AUMID) in **Runtime settings** > **AssignedAccess** > **AssignedAccessSettings** 
+>If you want to use [the advanced editor in Windows Configuration Designer](../provisioning-packages/provisioning-create-package.md#configure-settings), specify the user account and app (by AUMID) in **Runtime settings** > **AssignedAccess** > **AssignedAccessSettings** 
 
 >[!IMPORTANT]
 >When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed. 
 
-[Learn how to apply a provisioning package.](provisioning-packages/provisioning-apply-package.md) 
+[Learn how to apply a provisioning package.](../provisioning-packages/provisioning-apply-package.md) 
 
 <span id="mdm" /> 
 

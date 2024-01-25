@@ -11,7 +11,7 @@ ms.topic: article
 ## Before you begin 
 
 - If your enterprise had previously disabled Cortana for your employees using the **Computer Configuration\Administrative Templates\Windows Components\Search\Allow Cortana** Group Policy or the **Experience\AllowCortana** MDM setting but want to enable it now that Cortana is part of Microsoft 365, you'll need to re-enable it at least for Windows 10, version 2004 and later, or Windows 11.
-- **Cortana is regularly updated through the Microsoft Store.** Beginning with Windows 10, version 2004, Cortana is an appx preinstalled with Windows and is regularly updated through the Microsoft Store. To receive the latest updates to Cortana, you'll need to [enable updates through the Microsoft Store](../stop-employees-from-using-microsoft-store.md). 
+- **Cortana is regularly updated through the Microsoft Store.** Beginning with Windows 10, version 2004, Cortana is an appx preinstalled with Windows and is regularly updated through the Microsoft Store. To receive the latest updates to Cortana, you'll need to [enable updates through the Microsoft Store](../store/stop-employees-from-using-microsoft-store.md). 
 
 ## Set up and configure the Bing Answers feature
 Bing Answers provides fast, authoritative results to search queries based on search terms. When the Bing Answers feature is enabled, users will be able to ask Cortana web-related questions in the Cortana in Windows app, such as &quot;What&#39;s the current weather?&quot; or &quot;Who is the president of the U.S.?,&quot; and get a response, based on public results from Bing.com. 
@@ -28,7 +28,7 @@ Sign in to the [Office Configuration Admin tool](https://config.office.com/).
 
 Follow the steps [here](/deployoffice/overview-office-cloud-policy-service#steps-for-creating-a-policy-configuration) to create this policy configuration. Once completed, the policy will look as shown below: 
 
-:::image type="content" source="../screenshot3.png" alt-text="Screenshot: Bing policy example"::: 
+:::image type="content" source="images/screenshot3.png" alt-text="Screenshot: Bing policy example"::: 
 
 ## How does Microsoft handle customer data for Bing Answers? 
 
