@@ -93,6 +93,10 @@
         "ue-v//**/*.md": "aaroncz",
         "ue-v//**/*.yml": "aaroncz"
       },
+      "ms.reviewer":{
+        "kiosk//**/*.md": "sybruckm",
+        "start//**/*.md": "ericpapa"
+      },
       "ms.collection":{
         "cortana-at-work//**/*.md": "tier3",
         "wcd//**/*.md": "must-keep",

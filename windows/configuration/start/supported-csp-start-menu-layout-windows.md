@@ -1,18 +1,13 @@
 ---
 title: Supported CSP policies to customize Start menu on Windows 11 | Microsoft Docs
 description: See a list of the Policy CSP - Start items that are supported on Windows 11 to customize the Start menu.
-ms.reviewer: ericpapa 
-
 ms.date: 12/31/2017
 ms.topic: article
+appliesto:
+- ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 --- 
 
 # Supported configuration service provider (CSP) policies for Windows 11 Start menu 
-
-**Applies to**: 
-
-- Windows 11
-- Windows 11, version 22H2 
 
 The Windows OS exposes CSPs that are used by MDM providers, like [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). In an MDM policy, these CSPs are settings that you configure in a policy. When the policy is ready, you deploy the policy to your devices. 
 

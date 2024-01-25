@@ -3,16 +3,11 @@ title: Configuration service providers for IT pros (Windows 10/11)
 description: Describes how IT pros and system administrators can use configuration service providers (CSPs) to configure devices.
 ms.reviewer: gkomatsu
 ms.topic: article 
-
 ms.date: 12/31/2017
 --- 
 
-# Configuration service providers for IT pros 
+# Configuration service providers for IT pros
 
-**Applies to** 
-
-- Windows 10
-- Windows 11 
 
 This article explains how IT pros and system administrators can take advantage of many settings available through configuration service providers (CSPs) to configure devices running Windows client in their organizations. CSPs expose device configuration settings in Windows client. The CSPs are used by mobile device management (MDM) service providers and are documented in the [Hardware Dev Center](/windows/client-management/mdm/configuration-service-provider-reference). 
 
@@ -74,7 +69,7 @@ The [CSP reference](/windows/client-management/mdm/configuration-service-provide
 
 The documentation for each CSP follows the same structure. After an introduction that explains the purpose of the CSP, a diagram shows the parts of the CSP in tree format. 
 
-The full path to a specific configuration setting is represented by its Open Mobile Alliance - Uniform Resource Identifier (OMA-URI). The URI is relative to the devices’ root node (MSFT, for example). Features supported by a particular CSP can be set by addressing the complete OMA-URI path. 
+The full path to a specific configuration setting is represented by its Open Mobile Alliance - Uniform Resource Identifier (OMA-URI). The URI is relative to the devices' root node (MSFT, for example). Features supported by a particular CSP can be set by addressing the complete OMA-URI path. 
 
 The following example shows the diagram for the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp). The diagram maps to the XML for that CSP. Notice the different shapes in the diagram: rounded elements are nodes, and rectangular elements are settings or policies for which a value must be supplied. 
 

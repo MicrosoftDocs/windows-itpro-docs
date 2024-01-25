@@ -1,23 +1,23 @@
 ---
 title: Location
-description: This section describes the Location settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
+description: This section describes the Location settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 
 ms.topic: reference
- 
+
 
 ms.date: 12/31/2017
---- 
+---
 
-# Location (Windows Configuration Designer reference) 
+# Location (Windows Configuration Designer reference)
 
-Use Location settings to configure location services. 
+Use Location settings to configure location services.
 
-## Applies to 
+## Applies to
 
 | Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| [EnableLocation](#enablelocation) |  |  |  | ✅ | 
+| [EnableLocation](#enablelocation) |  |  |  | ✅ |
 
-## EnableLocation 
+## EnableLocation
 
 Use this setting to enable or disable location services for the device.

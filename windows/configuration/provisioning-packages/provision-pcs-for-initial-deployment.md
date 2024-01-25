@@ -3,34 +3,25 @@ title: Provision PCs with common settings (Windows 10/11)
 description: Create a provisioning package to apply common settings to a PC running Windows 10.
 ms.reviewer: gkomatsu
 ms.topic: article 
-
 ms.date: 12/31/2017
 --- 
 
 # Provision PCs with common settings for initial deployment (desktop wizard) 
-
-
-**Applies to** 
-
-- Windows 10
-- Windows 11 
 
 This topic explains how to create and apply a provisioning package that contains common enterprise settings to a device running all desktop editions of Windows client except Home. 
 
 You can apply a provisioning package on a USB drive to off-the-shelf devices during setup, making it fast and easy to configure new devices.  
 
 ## Advantages
-- You can configure new devices without reimaging. 
 
-- Works on desktop devices. 
-
-- No network connectivity required. 
-
-- Simple to apply. 
+- You can configure new devices without reimaging
+- Works on desktop devices
+- No network connectivity required
+- Simple to apply
 
 [Learn more about the benefits and uses of provisioning packages.](provisioning-packages.md) 
 
-## What does the desktop wizard do? 
+## What does the desktop wizard do?
 
 The desktop wizard helps you configure the following settings in a provisioning package: 
 
@@ -38,13 +29,10 @@ The desktop wizard helps you configure the following settings in a provisioning 
 - Upgrade product edition
 - Configure the device for shared use
 - Remove pre-installed software
-- Configure Wi-Fi network 
-
-- Enroll device in Active Directory or Microsoft Entra ID 
-
-- Create local administrator account 
-
-- Add applications and certificates 
+- Configure Wi-Fi network
+- Enroll device in Active Directory or Microsoft Entra ID
+- Create local administrator account
+- Add applications and certificates
 
 >[!WARNING]
 >You must run Windows Configuration Designer on Windows client to configure Microsoft Entra enrollment using any of the wizards. 

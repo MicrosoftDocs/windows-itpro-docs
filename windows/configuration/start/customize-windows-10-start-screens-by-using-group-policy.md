@@ -2,14 +2,11 @@
 title: Customize Windows 10 Start and taskbar with group policy
 description: In Windows 10, you can use a Group Policy Object (GPO) to deploy a customized Start layout to users in a domain.
 ms.date: 12/31/2017
+appliesto:
+- ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 --- 
 
 # Customize Windows 10 Start and taskbar with Group Policy 
-
-
-**Applies to** 
-
-- Windows 10 
 
 >**Looking for consumer information?** See [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630) 
 

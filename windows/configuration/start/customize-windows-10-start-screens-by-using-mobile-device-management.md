@@ -2,17 +2,12 @@
 title: Change the Windows 10 Start and taskbar using mobile device management | Microsoft Docs
 description: In Windows 10, you can use a mobile device management (MDM) policy to deploy a customized Start and taskbar layout to users. For example, use Microsoft Intune to configure the start menu layout and taskbar, and deploy the policy to your devices.
 ms.topic: article 
-
+appliesto:
+- ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 08/05/2021
 --- 
 
 # Customize Windows 10 Start and taskbar with mobile device management (MDM) 
-
-
-**Applies to** 
-
-- Windows 10 
-
 
 >**Looking for consumer information?** [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630) 
 

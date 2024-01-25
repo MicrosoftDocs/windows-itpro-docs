@@ -1,18 +1,11 @@
 ---
-title: Set up digital signs on Windows 10/11
+title: Set up digital signs on Windows
 description: A single-use device such as a digital sign is easy to set up in Windows 10 and Windows 11 (Pro, Enterprise, and Education).
-ms.reviewer: sybruckm 
-
 ms.date: 09/20/2021
 ms.topic: article
 --- 
 
-# Set up digital signs on Windows 10/11 
-
-**Applies to** 
-
-- Windows 10 Pro, Enterprise, and Education
-- Windows 11 
+# Set up digital signs
 
 Digital signage can be a useful and exciting business tool. Use digital signs to showcase your products and services, to display testimonials, or to advertise promotions and campaigns. A digital sign can be a static display, such as a building directory or menu, or it can be dynamic, such as repeating videos or a social media feed.  
 

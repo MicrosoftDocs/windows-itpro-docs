@@ -1,20 +1,20 @@
 ---
 title: StartupBackgroundTasks
-description: This section describes the StartupBackgroundTasks settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
+description: This section describes the StartupBackgroundTasks settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 
 ms.topic: reference
 
-ms.date: 09/06/2017 
+ms.date: 09/06/2017
 
---- 
+---
 
-# StartupBackgroundTasks (Windows Configuration Designer reference) 
+# StartupBackgroundTasks (Windows Configuration Designer reference)
 
-Documentation not available at this time. 
+Documentation not available at this time.
 
-## Applies to 
+## Applies to
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| All settings |  |  |  |  ✅ | 
+| All settings |  |  |  |  ✅ |
 

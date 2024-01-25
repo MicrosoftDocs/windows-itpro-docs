@@ -1,20 +1,12 @@
 ---
-title: Provision PCs with apps  (Windows 10/11)
+title: Provision PCs with apps
 description: Learn how to install multiple Universal Windows Platform (UWP) apps and Windows desktop applications (Win32) in a provisioning package. 
-
 ms.topic: article
 ms.reviewer: gkomatsu
 ms.date: 12/31/2017
 --- 
 
 # Provision PCs with apps  
-
-
-**Applies to** 
-
-- Windows 10
-- Windows 11 
-
 
 You can install multiple Universal Windows Platform (UWP) apps and Windows desktop applications (Win32) in a provisioning package. This article explains the various settings in [Windows Configuration Designer](provisioning-install-icd.md) for app install. 
 
@@ -27,7 +19,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
 - **License Path**: Specify the license file if it is an app from the Microsoft Store. This is optional if you have a certificate for the app.  
 
-- **Package family name**: Specify the package family name if you don’t specify a license. This field will be autopopulated after you specify a license.  
+- **Package family name**: Specify the package family name if you don't specify a license. This field will be autopopulated after you specify a license.  
 
 - **Required appx dependencies**: Specify the appx dependency packages that are required for the installation of the app  
 

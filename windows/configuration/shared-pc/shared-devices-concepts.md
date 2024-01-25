@@ -3,13 +3,6 @@ title: Manage multi-user and guest Windows devices
 description: options to optimize Windows devices used in shared scenarios, such touchdown spaces in an enterprise, temporary customer use in retail or shared devices in a school.
 ms.date: 11/08/2023
 ms.topic: concept-article
-author: paolomatarazzo
-ms.author: paoloma
-appliesto: 
-
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows 11 SE</b>
 --- 
 
 # Manage multi-user and guest Windows devices with Shared PC 

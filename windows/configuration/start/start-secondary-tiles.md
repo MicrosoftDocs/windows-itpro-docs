@@ -1,24 +1,18 @@
 ---
 title: Add image for secondary Microsoft Edge tiles
 description: Add app tiles on Windows 10 that's a secondary tile. 
-
 ms.topic: article 
-
 ms.date: 12/31/2017
 --- 
 
 # Add image for secondary Microsoft Edge tiles  
-
-**Applies to** 
-
-- Windows 10 
 
 App tiles are the Start screen tiles that represent and launch an app. A tile that allows a user to go to a specific location in an app is a *secondary tile*. Some examples of secondary tiles include: 
 
 - Weather updates for a specific city in a weather app
 - A summary of upcoming events in a calendar app
 - Status and updates from an important contact in a social app
-- A website in Microsoft Edge 
+- A website in Microsoft Edge
 
 In a Start layout for Windows 10, version 1703, you can include secondary tiles for Microsoft Edge that display a custom image, rather than a tile with the standard Microsoft Edge logo.  
 
@@ -78,7 +72,7 @@ In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutE
 
     Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](/powershell/module/startlayout/export-startlayout) cmdlet doesn't append the file name extension, and the policy settings require the extension. 
 
-3. If you’d like to change the image for a secondary tile to your own custom image, open the layout.xml file, and look for the images that the tile references.
+3. If you'd like to change the image for a secondary tile to your own custom image, open the layout.xml file, and look for the images that the tile references.
    - For example, your layout.xml contains `Square150x150LogoUri="ms-appdata:///local/PinnedTiles/21581260870/hires.png" Wide310x150LogoUri="ms-appx:///"` 
 
    - Open `C:\Users\<username>\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState\PinnedTiles\21581260870\` and replace those images with your customized images. 

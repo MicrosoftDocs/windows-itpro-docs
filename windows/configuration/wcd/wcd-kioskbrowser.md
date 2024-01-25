@@ -1,25 +1,25 @@
 ---
 title: KioskBrowser
-description: This section describes the KioskBrowser settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
+description: This section describes the KioskBrowser settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 
 ms.topic: reference
 
-ms.date: 10/02/2018 
+ms.date: 10/02/2018
 
---- 
+---
 
-# KioskBrowser (Windows Configuration Designer reference) 
+# KioskBrowser (Windows Configuration Designer reference)
 
-Use KioskBrowser settings to configure Internet sharing. 
+Use KioskBrowser settings to configure Internet sharing.
 
-## Applies to 
+## Applies to
 
 | Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| All settings |  |  |  | ✅ | 
+| All settings |  |  |  | ✅ |
 
 >[!NOTE]
->To configure Kiosk Browser settings for Windows client, go to [Policies > KioskBrowser](wcd-policies.md#kioskbrowser). 
+>To configure Kiosk Browser settings for Windows client, go to [Policies > KioskBrowser](wcd-policies.md#kioskbrowser).
 
 Kiosk Browser settings | Use this setting to
 --- | ---
@@ -28,16 +28,16 @@ Blocked URLs | Specify URLs that people can't navigate to. You can use wildcards
 Default URL | Specify the URL that Kiosk Browser will open with. **Tip!** Make sure your blocked URLs don't include your default URL.
 Enable Home Button | Show a Home button in Kiosk Browser. Home will return the browser to the default URL.
 Enable Navigation Buttons | Show forward and back buttons in Kiosk Browser.
-Restart on Idle Time | Specify when Kiosk Browser should restart in a fresh state after an amount of idle time since the last user interaction. 
+Restart on Idle Time | Specify when Kiosk Browser should restart in a fresh state after an amount of idle time since the last user interaction.
 
 > [!IMPORTANT]
 > To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in Windows Configuration Designer:
-> 
+>
 
 > 1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer.
-> 2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18). 
+> 2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18).
 
-> 3. Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com). 
+> 3. Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com).
 
 > 4. Save the XML file.
 > 5. Open the project again in Windows Configuration Designer.

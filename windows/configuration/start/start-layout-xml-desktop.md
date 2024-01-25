@@ -3,15 +3,12 @@ title: Start layout XML for desktop editions of Windows 10
 description: This article describes the options for customizing Start layout in LayoutModification.xml for Windows 10 desktop editions.
 ms.topic: article
 ms.date: 10/02/2018 
-
+appliesto:
+- ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 --- 
 
 # Start layout XML for desktop editions of Windows 10 (reference) 
 
-
-**Applies to** 
-
-- Windows 10 
 
 >**Looking for consumer information?** See [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630) 
 
@@ -379,7 +376,7 @@ The following sample LayoutModification.xml shows how you can configure the Star
   <RequiredStartGroupsCollection>
     <RequiredStartGroups
       Region="DE|ES|FR|GB|IT|US">
-	  <AppendGroup
+      <AppendGroup
         Name="Fabrikam Group 1">
         <start:Tile
           AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word"
@@ -396,7 +393,7 @@ The following sample LayoutModification.xml shows how you can configure the Star
           Size="2x2"
           Row="0"
           Column="4"/>
-      </AppendGroup>	  
+      </AppendGroup>      
 
       <AppendGroup
         Name="Fabrikam Group 2">
@@ -425,18 +422,18 @@ The following sample LayoutModification.xml shows how you can configure the Star
           Size="2x2"
           Row="0"
           Column="0"/>
-		<start:SecondaryTile
+        <start:SecondaryTile
           AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
           TileID="FabrikamWeblinkTile"
           Arguments="http://www.fabrikam.com"
           DisplayName="Fabrikam"
           Square150x150LogoUri="ms-appx:///Assets/MicrosoftEdgeSquare150x150.png"
           ShowNameOnSquare150x150Logo="true"
-		  BackgroundColor="#FF112233"
-		  Size="2x2"
+          BackgroundColor="#FF112233"
+          Size="2x2"
           Row="0"
           Column="2"/>
-      </AppendGroup>	  
+      </AppendGroup>      
 
     </RequiredStartGroups>
   </RequiredStartGroupsCollection> 

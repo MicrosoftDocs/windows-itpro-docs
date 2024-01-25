@@ -1,28 +1,21 @@
 ---
 title: Assigned Access configuration kiosk XML reference (Windows 10/11)
 description: Learn about the assigned access configuration (kiosk) for XML and XSD for kiosk device configuration in Windows 10/11.
-ms.reviewer: sybruckm 
 
 ms.topic: article
 ms.date: 12/31/2017
---- 
+---
 
-# Assigned Access configuration (kiosk) XML reference 
+# Assigned Access configuration (kiosk) XML reference
 
-
-**Applies to** 
-
-- Windows 10
-- Windows 11 
-
-## Full XML sample 
+## Full XML sample
 
 >[!NOTE]
->Updated for Windows 10, version 1903, 1909, and 2004. 
+>Updated for Windows 10, version 1903, 1909, and 2004.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration 
+<AssignedAccessConfiguration
 
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
@@ -56,7 +49,7 @@ ms.date: 12/31/2017
                               <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
-                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
+                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only
 
                                    see document https://learn.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
@@ -137,7 +130,7 @@ ms.date: 12/31/2017
     </Configs>
 </AssignedAccessConfiguration>
 ```
-## Kiosk only sample XML 
+## Kiosk only sample XML
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -157,11 +150,11 @@ ms.date: 12/31/2017
         </Config>
     </Configs>
 </AssignedAccessConfiguration>
-``` 
+```
 
-## Auto Launch Sample XML 
+## Auto Launch Sample XML
 
-This sample demonstrates that both UWP and Win32 apps can be configured to automatically launch, when assigned access account logs in. One profile can have at most one app configured for auto launch. AutoLaunchArguments are passed to the apps as is and the app needs to handle the arguments explicitly. 
+This sample demonstrates that both UWP and Win32 apps can be configured to automatically launch, when assigned access account logs in. One profile can have at most one app configured for auto launch. AutoLaunchArguments are passed to the apps as is and the app needs to handle the arguments explicitly.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -190,7 +183,7 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
                               <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
-                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
+                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only
 
                                    see document https://learn.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
@@ -245,9 +238,9 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
             <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
         </Config>
     </Configs>
-</AssignedAccessConfiguration> 
+</AssignedAccessConfiguration>
 
-``` 
+```
 
 ## Microsoft Edge Kiosk XML Sample
 ```xml
@@ -257,7 +250,7 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
   xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
   >
   <Profiles>
-    <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">      
+    <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
 
         <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" v4:ClassicAppArguments="--no-first-run --kiosk-idle-timeout-minutes=5 --kiosk www.bing.com" />
         <v4:BreakoutSequence Key="Ctrl+A"/>
@@ -270,18 +263,18 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
     </Config>
   </Configs>
 </AssignedAccessConfiguration>
-``` 
+```
 
-## Global Profile Sample XML 
+## Global Profile Sample XML
 
-Global Profile is supported on: 
+Global Profile is supported on:
 
 - Windows 11
-- Windows 10, version 2004 and later 
+- Windows 10, version 2004 and later
 
-Global Profile is designed for scenarios where a user doesn't have a designated profile, yet you still want the user to run in lockdown mode. It's also used as mitigation when a profile can't be determined for a user. 
+Global Profile is designed for scenarios where a user doesn't have a designated profile, yet you still want the user to run in lockdown mode. It's also used as mitigation when a profile can't be determined for a user.
 
-This sample demonstrates that only a global profile is used, with no active user configured. Global Profile will be applied when every non-admin account signs in. 
+This sample demonstrates that only a global profile is used, with no active user configured. Global Profile will be applied when every non-admin account signs in.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -311,7 +304,7 @@ This sample demonstrates that only a global profile is used, with no active user
                               <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
-                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
+                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only
 
                                    see document https://learn.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
@@ -333,7 +326,7 @@ This sample demonstrates that only a global profile is used, with no active user
         <v3:GlobalProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
     </Configs>
 </AssignedAccessConfiguration>
-``` 
+```
 
 Below sample shows dedicated profile and global profile mixed usage, a user would use one profile, everyone else that's non-admin will use another profile.
 ```xml
@@ -364,7 +357,7 @@ Below sample shows dedicated profile and global profile mixed usage, a user woul
                               <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
-                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
+                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only
 
                                    see document https://learn.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
@@ -416,14 +409,14 @@ Below sample shows dedicated profile and global profile mixed usage, a user woul
             <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
         </Config>
     </Configs>
-</AssignedAccessConfiguration> 
+</AssignedAccessConfiguration>
 
-``` 
+```
 
 ## Folder Access sample xml
-Starting with Windows 10 version 1809 +, folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all. This restriction has been redesigned for finer granularity and easier use, and is available in Windows 10 version 2009+. 
+Starting with Windows 10 version 1809 +, folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all. This restriction has been redesigned for finer granularity and easier use, and is available in Windows 10 version 2009+.
 
-IT Admin now can specify user access to Downloads folder, Removable drives, or no restrictions at all. Downloads and Removable Drives can be allowed at the same time. 
+IT Admin now can specify user access to Downloads folder, Removable drives, or no restrictions at all. Downloads and Removable Drives can be allowed at the same time.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -655,17 +648,17 @@ IT Admin now can specify user access to Downloads folder, Removable drives, or n
             <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C28}"/>
         </Config>
     </Configs>
-</AssignedAccessConfiguration> 
+</AssignedAccessConfiguration>
 
 
-``` 
+```
 
-## XSD for AssignedAccess configuration XML 
+## XSD for AssignedAccess configuration XML
 
 > [!NOTE]
-> Updated for Windows 10, version 1903 and later. 
+> Updated for Windows 10, version 1903 and later.
 
-The following XML schema is for AssignedAccess Configuration up to Windows 10, version 1803 release: 
+The following XML schema is for AssignedAccess Configuration up to Windows 10, version 1803 release:
 
 ```xml
 <xs:schema
@@ -677,27 +670,27 @@ The following XML schema is for AssignedAccess Configuration up to Windows 10, v
     xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
     xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
     targetNamespace="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    > 
+    >
 
     <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/201810/config"/>
     <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2020/config"/>
-    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2021/config"/> 
+    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2021/config"/>
 
     <xs:complexType name="profile_list_t">
         <xs:sequence minOccurs="1" >
             <xs:element name="Profile" type="profile_t" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
-    </xs:complexType> 
+    </xs:complexType>
 
     <xs:complexType name="kioskmodeapp_t">
         <xs:attribute name="AppUserModelId" type="xs:string"/>
         <xs:attributeGroup ref="ClassicApp_attributeGroup"/>
-    </xs:complexType> 
+    </xs:complexType>
 
     <xs:attributeGroup name="ClassicApp_attributeGroup">
         <xs:attribute ref="v4:ClassicAppPath"/>
         <xs:attribute ref="v4:ClassicAppArguments" use="optional"/>
-    </xs:attributeGroup> 
+    </xs:attributeGroup>
 
     <xs:complexType name="profile_t">
         <xs:choice>
@@ -723,7 +716,7 @@ The following XML schema is for AssignedAccess Configuration up to Windows 10, v
         </xs:choice>
         <xs:attribute name="Id" type="guid_t" use="required"/>
         <xs:attribute name="Name" type="xs:string" use="optional"/>
-    </xs:complexType> 
+    </xs:complexType>
 
     <xs:complexType name="allappslist_t">
         <xs:sequence minOccurs="1" >
@@ -738,7 +731,7 @@ The following XML schema is for AssignedAccess Configuration up to Windows 10, v
                 </xs:unique>
             </xs:element>
         </xs:sequence>
-    </xs:complexType> 
+    </xs:complexType>
 
     <xs:complexType name="allowedapps_t">
         <xs:sequence minOccurs="1" maxOccurs="1">
@@ -749,40 +742,40 @@ The following XML schema is for AssignedAccess Configuration up to Windows 10, v
                 </xs:key>
             </xs:element>
         </xs:sequence>
-    </xs:complexType> 
+    </xs:complexType>
 
     <xs:complexType name="app_t">
         <xs:attribute name="AppUserModelId" type="xs:string"/>
         <xs:attribute name="DesktopAppPath" type="xs:string"/>
         <xs:attributeGroup ref="autoLaunch_attributeGroup"/>
     </xs:complexType>
-    
+
 
     <xs:attributeGroup name="autoLaunch_attributeGroup">
         <xs:attribute ref="rs5:AutoLaunch"/>
         <xs:attribute ref="rs5:AutoLaunchArguments" use="optional"/>
-    </xs:attributeGroup> 
+    </xs:attributeGroup>
 
     <xs:complexType name="taskbar_t">
         <xs:attribute name="ShowTaskbar" type="xs:boolean" use="required"/>
-    </xs:complexType> 
+    </xs:complexType>
 
     <xs:complexType name="profileId_t">
         <xs:attribute name="Id" type="guid_t" use="required"/>
-    </xs:complexType> 
+    </xs:complexType>
 
     <xs:simpleType name="guid_t">
         <xs:restriction base="xs:string">
             <xs:pattern value="\{[0-9a-fA-F]{8}\-([0-9a-fA-F]{4}\-){3}[0-9a-fA-F]{12}\}"/>
         </xs:restriction>
-    </xs:simpleType> 
+    </xs:simpleType>
 
     <xs:complexType name="config_list_t">
         <xs:sequence minOccurs="1" >
             <xs:element ref="v3:GlobalProfile" minOccurs="0" maxOccurs="1"/>
             <xs:element name="Config" type="config_t" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
-    </xs:complexType> 
+    </xs:complexType>
 
     <xs:complexType name="config_t">
         <xs:sequence minOccurs="1" maxOccurs="1">
@@ -794,21 +787,21 @@ The following XML schema is for AssignedAccess Configuration up to Windows 10, v
             </xs:choice>
             <xs:element name="DefaultProfile" type="profileId_t" minOccurs="1" maxOccurs="1"/>
         </xs:sequence>
-    </xs:complexType> 
+    </xs:complexType>
 
     <xs:complexType name="autologon_account_t">
         <xs:attribute name="HiddenId" type="guid_t" fixed="{74331115-F68A-4DF9-8D2C-52BA2CE2ADB1}"/>
         <xs:attribute ref="rs5:DisplayName" use="optional" />
-    </xs:complexType> 
+    </xs:complexType>
 
     <xs:complexType name="group_t">
         <xs:attribute name="Name" type="xs:string" use="required"/>
         <xs:attribute name="Type" type="groupType_t" use="required"/>
-    </xs:complexType> 
+    </xs:complexType>
 
     <xs:complexType name="specialGroup_t">
         <xs:attribute name="Name" type="specialGroupType_t" use="required"/>
-    </xs:complexType> 
+    </xs:complexType>
 
     <xs:simpleType name="groupType_t">
         <xs:restriction base="xs:string">
@@ -816,30 +809,30 @@ The following XML schema is for AssignedAccess Configuration up to Windows 10, v
             <xs:enumeration value="ActiveDirectoryGroup"/>
             <xs:enumeration value="AzureActiveDirectoryGroup"/>
         </xs:restriction>
-    </xs:simpleType> 
+    </xs:simpleType>
 
     <xs:simpleType name="specialGroupType_t">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Visitor"/>
             <xs:enumeration value="DeviceOwner"/>
         </xs:restriction>
-    </xs:simpleType> 
+    </xs:simpleType>
 
     <xs:complexType name="fileExplorerNamespaceRestrictions_t">
         <xs:sequence minOccurs="1">
             <xs:element name="AllowedNamespace" type="allowedFileExplorerNamespace_t"/>
         </xs:sequence>
-    </xs:complexType> 
+    </xs:complexType>
 
     <xs:complexType name="allowedFileExplorerNamespace_t">
         <xs:attribute name="Name" type="allowedFileExplorerNamespaceValues_t"/>
-    </xs:complexType> 
+    </xs:complexType>
 
     <xs:simpleType name="allowedFileExplorerNamespaceValues_t">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Downloads"/>
         </xs:restriction>
-    </xs:simpleType> 
+    </xs:simpleType>
 
     <!--below is the definition of the config xml content-->
     <xs:element name="AssignedAccessConfiguration">
@@ -861,9 +854,9 @@ The following XML schema is for AssignedAccess Configuration up to Windows 10, v
         </xs:complexType>
     </xs:element>
 </xs:schema>
-``` 
+```
 
-The following XML is the schema for new features introduced in Windows 10 1809 release: 
+The following XML is the schema for new features introduced in Windows 10 1809 release:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -874,9 +867,9 @@ The following XML is the schema for new features introduced in Windows 10 1809 r
     xmlns:default="http://schemas.microsoft.com/AssignedAccess/201810/config"
     xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
     targetNamespace="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    > 
+    >
 
-    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2020/config"/> 
+    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2020/config"/>
 
     <xs:complexType name="fileExplorerNamespaceRestrictions_t">
         <xs:choice>
@@ -886,30 +879,30 @@ The following XML is the schema for new features introduced in Windows 10 1809 r
             </xs:sequence>
             <xs:element ref="v3:NoRestriction" minOccurs="0" maxOccurs="1" />
         </xs:choice>
-    </xs:complexType> 
+    </xs:complexType>
 
     <xs:complexType name="allowedFileExplorerNamespace_t">
         <xs:attribute name="Name" type="allowedFileExplorerNamespaceValues_t" use="required"/>
-    </xs:complexType> 
+    </xs:complexType>
 
     <xs:simpleType name="allowedFileExplorerNamespaceValues_t">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Downloads"/>
         </xs:restriction>
-    </xs:simpleType> 
+    </xs:simpleType>
 
-    <xs:element name="FileExplorerNamespaceRestrictions" type="fileExplorerNamespaceRestrictions_t" /> 
+    <xs:element name="FileExplorerNamespaceRestrictions" type="fileExplorerNamespaceRestrictions_t" />
 
-    <xs:attribute name="AutoLaunch" type="xs:boolean"/> 
+    <xs:attribute name="AutoLaunch" type="xs:boolean"/>
 
-    <xs:attribute name="AutoLaunchArguments" type="xs:string"/> 
+    <xs:attribute name="AutoLaunchArguments" type="xs:string"/>
 
-    <xs:attribute name="DisplayName" type="xs:string"/> 
+    <xs:attribute name="DisplayName" type="xs:string"/>
 
 </xs:schema>
-``` 
+```
 
-The following XML is the schema for Windows 10 version 1909+: 
+The following XML is the schema for Windows 10 version 1909+:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -921,29 +914,29 @@ The following XML is the schema for Windows 10 version 1909+:
     xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
     vc:minVersion="1.1"
     targetNamespace="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    > 
+    >
 
     <xs:simpleType name="guid_t">
         <xs:restriction base="xs:string">
             <xs:pattern value="\{[0-9a-fA-F]{8}\-([0-9a-fA-F]{4}\-){3}[0-9a-fA-F]{12}\}"/>
         </xs:restriction>
-    </xs:simpleType> 
+    </xs:simpleType>
 
     <xs:complexType name="globalProfile_t">
         <xs:attribute name="Id" type="guid_t" />
     </xs:complexType>
-  
+
 
     <xs:element name="AllowRemovableDrives"/>
     <xs:element name="NoRestriction" />
-    <xs:element name="GlobalProfile" type="globalProfile_t" /> 
+    <xs:element name="GlobalProfile" type="globalProfile_t" />
 
 </xs:schema>
-``` 
+```
 
-To authorize a compatible configuration XML that includes elements and attributes from Windows 10 version 1809 or newer / Windows 11, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. 
+To authorize a compatible configuration XML that includes elements and attributes from Windows 10 version 1809 or newer / Windows 11, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias.
 
-For example, to configure the autolaunch feature that was added in Windows 10 version 1809 / Windows 11, use the following sample. Notice an alias r1809 is given to the 201810 namespace for Windows 10 version 1809 / Windows 11, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline. 
+For example, to configure the autolaunch feature that was added in Windows 10 version 1809 / Windows 11, use the following sample. Notice an alias r1809 is given to the 201810 namespace for Windows 10 version 1809 / Windows 11, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
 
 ```xml
 <AssignedAccessConfiguration

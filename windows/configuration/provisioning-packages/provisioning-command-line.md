@@ -2,18 +2,11 @@
 title: Windows Configuration Designer command-line interface (Windows 10/11)
 description: Learn more about the ICD syntax, switches, and arguments that you can use in the Windows Configuration Designer command-line interface for Windows10/11 client devices.
 ms.topic: article 
-
 ms.reviewer: gkomatsu
 ms.date: 12/31/2017
 --- 
 
 # Windows Configuration Designer command-line interface (reference) 
-
-
-**Applies to** 
-
-- Windows 10
-- Windows 11 
 
 You can use the Windows Configuration Designer command-line interface (CLI) to automate the building of provisioning packages.  
 

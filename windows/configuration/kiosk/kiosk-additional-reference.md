@@ -1,22 +1,14 @@
 ---
 title: More kiosk methods and reference information (Windows 10/11)
 description: Find more information for configuring, validating, and troubleshooting kiosk configuration.
-ms.reviewer: sybruckm 
 
 ms.topic: reference
 ms.date: 12/31/2017
 --- 
 
-# More kiosk methods and reference information 
+# More kiosk methods and reference information
 
-
-**Applies to** 
-
-- Windows 10 Pro, Enterprise, and Education
-- Windows 11 
-
-
-## In this section 
+## In this section
 
 Topic | Description
 --- | ---

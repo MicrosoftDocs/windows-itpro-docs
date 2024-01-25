@@ -2,18 +2,10 @@
 title: Guidelines for choosing an app for assigned access
 description: The following guidelines may help you choose an appropriate Windows app for your assigned access experience.
 ms.topic: article
-ms.reviewer: sybruckm
 ms.date: 12/31/2017
 --- 
 
 # Guidelines for choosing an app for assigned access (kiosk mode) 
-
-
-**Applies to** 
-
-- Windows 10
-- Windows 11 
-
 
 You can use assigned access to restrict customers at your business to using only one Windows app so your device acts like a kiosk.  Administrators can use assigned access to restrict a selected user account to access a single Windows app. You can choose almost any Windows app for assigned access; however, some apps may not provide a good user experience. 
 

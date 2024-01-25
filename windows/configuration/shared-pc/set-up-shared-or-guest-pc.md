@@ -3,13 +3,6 @@ title: Set up a shared or guest Windows device
 description: Description of how to configured Shared PC mode, which is a Windows feature that optimizes devices for shared use scenarios.
 ms.date: 11/08/2023
 ms.topic: how-to
-author: paolomatarazzo
-ms.author: paoloma
-appliesto: 
-
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows 11 SE</b>
 --- 
 
 # Set up a shared or guest Windows device 

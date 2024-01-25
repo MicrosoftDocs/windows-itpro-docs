@@ -7,14 +7,14 @@ ms.topic: article
 
 # Test scenario 6 - Change your language and perform a quick search with Cortana
 <!--Using include for Cortana in Windows deprecation -->
-[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)] 
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
-Cortana can help employees in regions outside the US search for quick answers like currency conversions, time zone conversions, or weather in their location. 
+Cortana can help employees in regions outside the US search for quick answers like currency conversions, time zone conversions, or weather in their location.
 
-1. Select the  **Cortana**  icon in the taskbar. 
+1. Select the  **Cortana**  icon in the taskbar.
 
-2. Select the **…** menu, then select **Settings**, **Language**, then select **Español (España)**. You'll be prompted to restart the app. 
+2. Select the **…** menu, then select **Settings**, **Language**, then select **Español (España)**. You'll be prompted to restart the app.
 
-3. Once the app has restarted, type or say **Convierte 100 Euros a Dólares**. 
+3. Once the app has restarted, type or say **Convierte 100 Euros a Dólares**.
 
 :::image type="content" source="images/screenshot10.png" alt-text="Screenshot: Cortana showing a change your language and showing search results in Spanish":::

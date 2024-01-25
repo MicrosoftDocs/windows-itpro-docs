@@ -5,13 +5,7 @@ ms.topic: article
 ms.date: 08/05/2021
 --- 
 
-# Customize the Start menu and taskbar layout on Windows 10 and later devices 
-
-**Applies to**: 
-
-- Windows 10 version 1607 and later
-- Windows Server 2016 with Desktop Experience
-- Windows Server 2019 with Desktop Experience 
+# Customize the Start menu and taskbar layout on Windows 10 and later devices
 
 > **Looking for consumer information?** [See what's on the Start menu](https://support.microsoft.com/help/17195/windows-10-see-whats-on-the-menu)
 >

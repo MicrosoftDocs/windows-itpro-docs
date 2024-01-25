@@ -2,24 +2,17 @@
 title: Use a script to install a desktop app in provisioning packages (Windows 10/11)
 description: With Windows 10/11, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 ms.topic: article 
-
 ms.reviewer: gkomatsu
 ms.date: 12/31/2017
 --- 
 
 # Use a script to install a desktop app in provisioning packages 
 
-
-**Applies to** 
-
-- Windows 10
-- Windows 11 
-
 This walkthrough describes how to include scripts in a Windows client provisioning package to install Win32 applications. Scripted operations other than installing apps can also be performed. However, some care is needed to avoid unintended behavior during script execution (see [Remarks](#remarks) below). 
 
 ## Assemble the application assets 
 
-1. On the device where you’re authoring the package, place all of your assets in a known location. Each asset must have a unique filename, because all files will be copied to the same temp directory on the device. It’s common for many apps to have an installer called ‘install.exe’ or similar, and there may be name overlap because of that. To fix this, you can use the technique described in the next step to include a complete directory structure that is then expanded into the temp directory on the device. The most common use for this would be to include a subdirectory for each application.  
+1. On the device where you're authoring the package, place all of your assets in a known location. Each asset must have a unique filename, because all files will be copied to the same temp directory on the device. It's common for many apps to have an installer called 'install.exe' or similar, and there may be name overlap because of that. To fix this, you can use the technique described in the next step to include a complete directory structure that is then expanded into the temp directory on the device. The most common use for this would be to include a subdirectory for each application.  
 
 2. If you need to include a directory structure of files, you will need to cab the assets for easy inclusion in the provisioning packages. 
 
@@ -108,7 +101,7 @@ This walkthrough describes how to include scripts in a Windows client provisioni
 
 Create a script to perform whatever work is needed to install the application(s). The following examples are provided to help get started authoring the orchestrator script that will execute the required installers. In practice, the orchestrator script may reference many more assets than those in these examples. 
 
-You don’t need to create an orchestrator script. You can have one command line per app. If necessary, you can create a script that logs the output per app, as mentioned below (rather than one orchestrator script for the entire provisioning package).  
+You don't need to create an orchestrator script. You can have one command line per app. If necessary, you can create a script that logs the output per app, as mentioned below (rather than one orchestrator script for the entire provisioning package).  
 
 >[!NOTE]
 >All actions performed by the script must happen silently, showing no UI and requiring no user interaction.
@@ -117,7 +110,7 @@ You don’t need to create an orchestrator script. You can have one command line
 
 ### Debugging example  
 
-Granular logging is not built in, so the logging must be built into the script itself. Here is an example script that logs ‘Hello World’ to a logfile. When run on the device, the logfile will be available after provisioning is completed. As you will see in the following examples, it’s recommended that you log each action that your script performs. 
+Granular logging is not built in, so the logging must be built into the script itself. Here is an example script that logs 'Hello World' to a logfile. When run on the device, the logfile will be available after provisioning is completed. As you will see in the following examples, it's recommended that you log each action that your script performs. 
 
 ```log
 set LOGFILE=%SystemDrive%\HelloWorld.log
@@ -181,7 +174,7 @@ Your provisioning package can include multiple **CommandFiles**.
 
 You are allowed one **CommandLine** per provisioning package. The batch files shown above are orchestrator scripts that manage the installation and call any other scripts included in the provisioning package. The orchestrator script is what should be invoked from the **CommandLine** specified in the package.  
 
-Here’s a table describing this relationship, using the PowerShell example from above: 
+Here's a table describing this relationship, using the PowerShell example from above: 
 
  
 
@@ -233,7 +226,7 @@ When you are done, [build the package](provisioning-create-package.md#build-pack
     2. For packages added by double-clicking on an already deployed device, this will be in the temp folder for the user executing the provisioning package: `%TMP%\ProvisioningPkgTmp\<{PackageIdGuid}>\Commands\0` 
 
 5. The command line will be executed with the directory the CommandFiles were deployed to as the working directory. This means you do not need to specific the full path to assets in the command line or from within any script.
-6. The runtime provisioning component will attempt to run the scripts from the provisioning package at the earliest point possible, depending on the stage when the PPKG was added. For example, if the package was added during the Out-of-Box Experience, it will be run immediately after the package is applied, while the out of box experience is still happening. This is before the user account configuration options are presented to the user. A spinning progress dialog will appear and “please wait” will be displayed on the screen.  
+6. The runtime provisioning component will attempt to run the scripts from the provisioning package at the earliest point possible, depending on the stage when the PPKG was added. For example, if the package was added during the Out-of-Box Experience, it will be run immediately after the package is applied, while the out of box experience is still happening. This is before the user account configuration options are presented to the user. A spinning progress dialog will appear and "please wait" will be displayed on the screen.  
 
     >[!NOTE]
     >There is a timeout of 30 minutes for the provisioning process at this point. All scripts and installs need to complete within this time. 

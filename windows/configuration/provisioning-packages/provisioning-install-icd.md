@@ -8,12 +8,6 @@ ms.date: 12/31/2017
 
 # Install Windows Configuration Designer, and learn about any limitations 
 
-
-**Applies to** 
-
-- Windows 10
-- Windows 11 
-
 Use the Windows Configuration Designer tool to create provisioning packages to easily configure devices running Windows client. Windows Configuration Designer is primarily used by IT departments for business and educational institutions who need to provision bring-your-own-device (BYOD) and business-supplied devices. 
 
 ## Supported platforms 

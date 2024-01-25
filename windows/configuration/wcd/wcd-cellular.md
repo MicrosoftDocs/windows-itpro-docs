@@ -1,77 +1,77 @@
 ---
 title: Cellular
-description: This section describes the Cellular settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
+description: This section describes the Cellular settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 
 ms.topic: reference
 
 ms.date: 12/31/2017
---- 
+---
 
-# Cellular (Windows Configuration Designer reference) 
+# Cellular (Windows Configuration Designer reference)
 
-Use to configure settings for cellular connections. 
+Use to configure settings for cellular connections.
 
 >[!IMPORTANT]
->These settings are intended to be used only by manufacturers, mobile operators, and solution providers when configuring devices, and are not intended for use by administrators in the enterprise. 
+>These settings are intended to be used only by manufacturers, mobile operators, and solution providers when configuring devices, and are not intended for use by administrators in the enterprise.
 
-## Applies to 
+## Applies to
 
 | Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| All settings | ✅ |  |  |  | 
+| All settings | ✅ |  |  |  |
 
-## PerDevice 
+## PerDevice
 
-See [SignalBarMappingTable](#signalbarmappingtable) 
+See [SignalBarMappingTable](#signalbarmappingtable)
 
-## PerSimSettings 
+## PerSimSettings
 
-To begin, enter a SIM integrated circuit card identifier (**SimIccid**), and click **Add**. In the **Customizations** pane, select the SimIccid that you just entered and configure the following settings for it. 
+To begin, enter a SIM integrated circuit card identifier (**SimIccid**), and click **Add**. In the **Customizations** pane, select the SimIccid that you just entered and configure the following settings for it.
 
-### AccountExperienceURL 
+### AccountExperienceURL
 
-Enter the URL for the mobile operator's web page. 
+Enter the URL for the mobile operator's web page.
 
-### AppID 
+### AppID
 
-Enter the AppID for the mobile operator's app in Microsoft Store. 
+Enter the AppID for the mobile operator's app in Microsoft Store.
 
-### BrandingIcon 
+### BrandingIcon
 
-Browse to and select an .ico file. 
+Browse to and select an .ico file.
 
-### BrandingIconPath 
+### BrandingIconPath
 
-Enter the destination path for the BrandingIcon .ico file. 
+Enter the destination path for the BrandingIcon .ico file.
 
-### BrandingName 
+### BrandingName
 
-Enter the service provider name for the mobile operator. 
+Enter the service provider name for the mobile operator.
 
-### DataClassMappingTable 
+### DataClassMappingTable
 
-Enter a customized string for the appropriate [data class](/windows/desktop/api/mbnapi/ne-mbnapi-mbn_data_class). 
+Enter a customized string for the appropriate [data class](/windows/desktop/api/mbnapi/ne-mbnapi-mbn_data_class).
 
-### NetworkBlockList 
+### NetworkBlockList
 
-Enter a comma-separated list of mobile country code (MCC) and mobile network code (MCC) pairs (MCC:MNC). 
+Enter a comma-separated list of mobile country code (MCC) and mobile network code (MCC) pairs (MCC:MNC).
 
 
-### SignalBarMappingTable 
+### SignalBarMappingTable
 
 >[!NOTE]
->SignalBarMappingTable can be configured per device or per sim. 
+>SignalBarMappingTable can be configured per device or per sim.
 
-Use the **SignalBarMappingTable** settings to customize the number of bars displayed based on signal strength. Set a signal strength minimum for each bar number. 
+Use the **SignalBarMappingTable** settings to customize the number of bars displayed based on signal strength. Set a signal strength minimum for each bar number.
 
 1. Expand **SignalBarMappingTable**, select a bar number in **SignalForBars**, and select **Add**.
-2. Select the signal bar number in **Available customizations**, and enter a minimum signal strength value, between 0 and 31. 
+2. Select the signal bar number in **Available customizations**, and enter a minimum signal strength value, between 0 and 31.
 
-### SIMBlockList 
+### SIMBlockList
 
-Enter a comma-separated list of mobile country code (MCC) and mobile network code (MCC) pairs (MCC:MNC). 
+Enter a comma-separated list of mobile country code (MCC) and mobile network code (MCC) pairs (MCC:MNC).
 
 
-### UseBrandingNameOnRoaming 
+### UseBrandingNameOnRoaming
 
 Select an option for displaying the BrandingName when the device is roaming.

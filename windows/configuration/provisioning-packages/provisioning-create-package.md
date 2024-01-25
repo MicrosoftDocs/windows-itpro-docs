@@ -2,18 +2,12 @@
 title: Create a provisioning package (Windows 10/11)
 description: Learn how to create a provisioning package for Windows 10/11, which lets you quickly configure a device without having to install a new image.
 ms.topic: article 
-
 ms.reviewer: gkomatsu
 ms.date: 12/31/2017
 --- 
 
 # Create a provisioning package 
 
-
-**Applies to** 
-
-- Windows 10
-- Windows 11 
 
 You can use Windows Configuration Designer to create a provisioning package (`.ppkg`) that contains customization settings, and then apply the provisioning package to a device running Windows client. 
 

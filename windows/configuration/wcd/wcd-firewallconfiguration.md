@@ -1,25 +1,25 @@
 ---
 title: FirewallConfiguration
-description: This section describes the FirewallConfiguration setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
+description: This section describes the FirewallConfiguration setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 
 ms.topic: reference
 
-ms.date: 09/06/2017 
+ms.date: 09/06/2017
 
---- 
+---
 
-# FirewallConfiguration (Windows Configuration Designer reference) 
+# FirewallConfiguration (Windows Configuration Designer reference)
 
-Use to enable AllJoyn router to work on public networks. 
+Use to enable AllJoyn router to work on public networks.
 
-## Applies to 
+## Applies to
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| EnableAllJoynOnPublicNetwork |   |  |  | ✅ | 
+| EnableAllJoynOnPublicNetwork |   |  |  | ✅ |
 
-Set to **True** or **False**. 
+Set to **True** or **False**.
 
-## Related topics 
+## Related topics
 
 - [AllJoyn - Wikipedia](https://wikipedia.org/wiki/AllJoyn)

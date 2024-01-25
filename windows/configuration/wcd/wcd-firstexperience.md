@@ -1,23 +1,22 @@
 ---
 title: FirstExperience
-description: This section describes the FirstExperience settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
+description: This section describes the FirstExperience settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 
 ms.topic: reference
 
-ms.date: 08/08/2018 
+ms.date: 08/08/2018
 
---- 
+---
 
-# FirstExperience (Windows Configuration Designer reference) 
+# FirstExperience (Windows Configuration Designer reference)
 
-Use these settings to configure the out-of-box experience (OOBE) to set up HoloLens. 
+Use these settings to configure the out-of-box experience (OOBE) to set up HoloLens.
 
-## Applies to 
+## Applies to
 
 | Setting | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| All settings |   |  | X |  | 
-
+| All settings |   |  | X |  |
 | Setting | Description |
 | --- | --- |
 | PreferredRegion | Enter the [geographical location identifier](/windows/win32/intl/table-of-geographical-locations) for the region. |

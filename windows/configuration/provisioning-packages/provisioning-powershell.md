@@ -9,12 +9,6 @@ ms.date: 12/31/2017
 
 # PowerShell cmdlets for provisioning Windows client (reference) 
 
-
-**Applies to** 
-
-- Windows 10
-- Windows 11 
-
 Windows client includes Provisioning PowerShell cmdlets. These cmdlets make it easy to script the following functions. 
 
 ## cmdlets 

@@ -2,18 +2,11 @@
 title: How provisioning works in Windows 10/11
 description: Learn more about how provisioning package work on Windows client devices. A provisioning package (.ppkg) is a container for a collection of configuration settings.
 ms.topic: article 
-
 ms.reviewer: gkomatsu
 ms.date: 12/31/2017
 --- 
 
 # How provisioning works in Windows 
-
-
-**Applies to** 
-
-- Windows 10
-- Windows 11 
 
 Provisioning packages in Windows client provide IT administrators with a simplified way to apply configuration settings to Windows client devices. Windows Configuration Designer is a tool that makes it easy to create a provisioning package. Windows Configuration Designer can be installed from <!-- the [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) or through the --> Microsoft Store. 
 

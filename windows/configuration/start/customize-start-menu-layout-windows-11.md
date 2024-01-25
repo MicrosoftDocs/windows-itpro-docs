@@ -1,16 +1,13 @@
 ---
 title: Add or remove pinned apps on the Start menu in Windows 11
 description: Export Start layout to LayoutModification.json with pinned apps, and add or remove pinned apps. Use the JSON text in an MDM policy to deploy a custom Start menu layout to Windows 11 devices.
-ms.reviewer: ericpapa
 ms.date: 01/10/2023
 ms.topic: article
+appliesto:
+- ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 --- 
 
-# Customize the Start menu layout on Windows 11 
-
-**Applies to**: 
-
-- Windows 11 
+# Customize the Start menu layout on Windows 11
 
 > **Looking for OEM information?** See [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar) and [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu). 
 

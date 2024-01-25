@@ -1,15 +1,15 @@
 ---
 title: Changes to settings in Windows Configuration Designer
-description: This section describes the changes to settings in Windows Configuration Designer in Windows 10, version 1809. 
+description: This section describes the changes to settings in Windows Configuration Designer in Windows 10, version 1809.
 
 ms.topic: reference
 
 ms.date: 12/31/2017
---- 
+---
 
-# Changes to settings in Windows Configuration Designer 
+# Changes to settings in Windows Configuration Designer
 
-## Settings added in Windows 10, version 1903 
+## Settings added in Windows 10, version 1903
 
 - [DeviceUpdateCenter](wcd-deviceupdatecenter.md)
 - [Privacy](wcd-privacy.md)
@@ -18,13 +18,13 @@ ms.date: 12/31/2017
 - [OOBE > EnableCortanaVoice](wcd-oobe.md#enablecortanavoice)
 - [Policies > LocalPoliciesSecurityOptions](wcd-policies.md#localpoliciessecurityoptions)
 - [Policies > Power](wcd-policies.md#power)
-- [StorageD3InModernStandby](wcd-storaged3inmodernstandby.md) 
+- [StorageD3InModernStandby](wcd-storaged3inmodernstandby.md)
 
-## Settings removed in Windows 10, version 1903 
+## Settings removed in Windows 10, version 1903
 
-- [WLAN](wcd-wlan.md) 
+- [WLAN](wcd-wlan.md)
 
-## Settings added in Windows 10, version 1809 
+## Settings added in Windows 10, version 1809
 
 
 - [Browser > AllowPrelaunch](wcd-browser.md#allowprelaunch)
@@ -52,7 +52,7 @@ ms.date: 12/31/2017
     - ConfigureOpenMicrosoftEdgeWith
     - ConfigureTelemetryForMicrosoft365
     - FirstRunURL
-    - PreventCertErrorOverrides 
+    - PreventCertErrorOverrides
 
     - PreventTurningOffRequiredExtensions
     - SetHomeButtonURL
@@ -83,13 +83,13 @@ ms.date: 12/31/2017
     - UpdateNotificationLevel
 - [UnifiedWriteFilter > OverlayFlags](wcd-unifiedwritefilter.md#overlayflags)
 - [UnifiedWriteFilter > ResetPersistentState](wcd-unifiedwritefilter.md#resetpersistentstate)
-- [WindowsHelloForBusiness](wcd-windowshelloforbusiness.md) 
+- [WindowsHelloForBusiness](wcd-windowshelloforbusiness.md)
 
 
-## Settings removed in Windows 10, version 1809 
+## Settings removed in Windows 10, version 1809
 
 - [CellCore](wcd-cellcore.md)
 - [Policies > Browser:](wcd-policies.md#browser)
     - AllowBrowser
-    - PreventTabReloading 
+    - PreventTabReloading
 

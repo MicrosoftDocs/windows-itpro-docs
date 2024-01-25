@@ -6,12 +6,7 @@ ms.topic: article
 ms.date: 12/31/2017
 --- 
 
-# Provisioning packages for Windows 
-
-**Applies to** 
-
-- Windows 10
-- Windows 11 
+# Provisioning packages for Windows
 
 Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. When you use Windows provisioning, an IT administrator can easily specify the desired configuration and settings required to enroll the devices into management. Then, apply that configuration to target devices in a matter of minutes. It's best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers.  
 
@@ -63,15 +58,15 @@ The following table describes settings that you can configure using the wizards 
 
 | Step | Description | Desktop wizard | Kiosk wizard | HoloLens wizard |
 | --- | --- | --- | --- | --- |
-| Set up device | Assign device name, enter product key to upgrade Windows, configure shared use, remove pre-installed software | ✔️ | ✔️ | ✔️ |
-| Set up network | Connect to a Wi-Fi network | ✔️ | ✔️ | ✔️ |
-| Account management | Enroll device in Active Directory, enroll device in Microsoft Entra ID, or create a local administrator account | ✔️ | ✔️ | ✔️ |
-| Bulk Enrollment in Microsoft Entra ID | Enroll device in Microsoft Entra ID using Bulk Token</br></br> [Set up Microsoft Entra join in your organization](/azure/active-directory/active-directory-azureadjoin-setup), before you use Windows Configuration Designer wizard to configure bulk Microsoft Entra enrollment. | ✔️ | ✔️ | ✔️ |
-| Add applications | Install applications using the provisioning package.  | ✔️ | ✔️ | ❌ |
-| Add certificates | Include a certificate file in the provisioning package. | ✔️ | ✔️ | ✔️ |
-| Configure kiosk account and app | Create local account to run the kiosk mode app, specify the app to run in kiosk mode | ❌ | ✔️ | ❌ |
-| Configure kiosk common settings | Set tablet mode, configure welcome and shutdown screens, turn off timeout settings | ❌ | ✔️ | ❌ |
-| Developer Setup | Enable Developer Mode  | ❌ | ❌ | ✔️ | 
+| Set up device | Assign device name, enter product key to upgrade Windows, configure shared use, remove pre-installed software | ✅ | ✅ | ✅ |
+| Set up network | Connect to a Wi-Fi network | ✅ | ✅ | ✅ |
+| Account management | Enroll device in Active Directory, enroll device in Microsoft Entra ID, or create a local administrator account | ✅ | ✅ | ✅ |
+| Bulk Enrollment in Microsoft Entra ID | Enroll device in Microsoft Entra ID using Bulk Token</br></br> [Set up Microsoft Entra join in your organization](/azure/active-directory/active-directory-azureadjoin-setup), before you use Windows Configuration Designer wizard to configure bulk Microsoft Entra enrollment. | ✅ | ✅ | ✅ |
+| Add applications | Install applications using the provisioning package.  | ✅ | ✅ | ❌ |
+| Add certificates | Include a certificate file in the provisioning package. | ✅ | ✅ | ✅ |
+| Configure kiosk account and app | Create local account to run the kiosk mode app, specify the app to run in kiosk mode | ❌ | ✅ | ❌ |
+| Configure kiosk common settings | Set tablet mode, configure welcome and shutdown screens, turn off timeout settings | ❌ | ✅ | ❌ |
+| Developer Setup | Enable Developer Mode  | ❌ | ❌ | ✅ | 
 
 - [Instructions for the desktop wizard](provision-pcs-for-initial-deployment.md)
 - [Instructions for the kiosk wizard](../kiosk-single-app.md#wizard)
