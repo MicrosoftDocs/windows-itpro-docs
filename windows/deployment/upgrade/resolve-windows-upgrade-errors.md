@@ -6,8 +6,8 @@ description: Resolve Windows upgrade errors for ITPros. Technical information fo
 author: frankroj
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.service: windows-client
+ms.subservice: itpro-deploy
 ms.date: 01/18/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
