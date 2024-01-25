@@ -439,11 +439,12 @@ The following sample LayoutModification.xml shows how you can configure the Star
 
 ## Use Windows Provisioning multivariant support
 
-The Windows Provisioning multivariant capability allows you to declare target conditions that, when met, supply specific customizations for each variant condition. For Start customization, you can create specific layouts for each variant that you have. To do this, you must create a separate LayoutModification.xml file for each variant that you want to support and then include these in your provisioning package. For more information on how to do this, see [Create a provisioning package with multivariant settings](./provisioning-packages/provisioning-multivariant.md).
+The Windows Provisioning multivariant capability allows you to declare target conditions that, when met, supply specific customizations for each variant condition. For Start customization, you can create specific layouts for each variant that you have. To do this, you must create a separate LayoutModification.xml file for each variant that you want to support and then include these in your provisioning package. For more information on how to do this, see [Create a provisioning package with multivariant settings](../provisioning-packages/provisioning-multivariant.md).
 
 The provisioning engine chooses the right customization file based on the target conditions that were met, adds the file in the location that's specified for the setting, and then uses the specific file to customize Start. To differentiate between layouts, you can add modifiers to the LayoutModification.xml filename such as "LayoutCustomization1". Regardless of the modifier that you use, the provisioning engine will always output "LayoutCustomization.xml" so that the operating system has a consistent file name to query against.
 
 For example, if you want to ensure that there's a specific layout for a certain condition, you can:
+
 1. Create a specific layout customization file and then name it LayoutCustomization1.xml.
 1. Include the file as part of your provisioning package.
 1. Create your multivariant target and reference the XML file within the target condition in the main customization XML file.
@@ -533,14 +534,3 @@ This should set the value of **StartLayout**. The setting appears in the **Selec
 >There is currently no way to add the .url and .lnk files through Windows ICD.
 
 Once you have created the LayoutModification.xml file and it is present in the device, the system overrides the base default layout and any Unattend settings used to customize Start.
-
-## Related topics
-
-- [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
-- [Configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md)
-- [Customize and export Start layout](customize-and-export-start-layout.md)
-- [Add image for secondary tiles](start-secondary-tiles.md)
-- [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-- [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-- [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
-- [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)

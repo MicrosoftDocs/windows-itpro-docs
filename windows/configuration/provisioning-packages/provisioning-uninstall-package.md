@@ -26,75 +26,34 @@ The registry-based settings that are revertible when a provisioning package is u
 - UniversalAppInstall / LaunchAppAtLogin
 - [Power](/previous-versions//dn953704(v=vs.85))
 - [TabletMode](../wcd/wcd-tabletmode.md)
-
 - [Maps](../wcd/wcd-maps.md)
-
 - [Browser](../wcd/wcd-browser.md)
 - [DeviceFormFactor](../wcd/wcd-deviceformfactor.md)
-
 - [USBErrorsOEMOverride](/previous-versions/windows/hardware/previsioning-framework/mt769908(v=vs.85))
-
 - [WeakCharger](../wcd/wcd-weakcharger.md)
-
-
 
 ## CSP-based settings
 
 Here is the list of revertible settings based on configuration service providers (CSPs).
 
 [ActiveSync CSP](/windows/client-management/mdm/activesync-csp)
-
 [AppLocker CSP](/windows/client-management/mdm/applocker-csp)
-
 [BrowserFavorite CSP](/windows/client-management/mdm/browserfavorite-csp)
-
 [CertificateStore CSP](/windows/client-management/mdm/certificatestore-csp)
-
 [ClientCertificateInstall CSP](/windows/client-management/mdm/clientcertificateinstall-csp)
-
 [RootCATrustedCertificates CSP](/windows/client-management/mdm/rootcacertificates-csp)
-
 [CM_CellularEntries CSP](/windows/client-management/mdm/cm-cellularentries-csp)
-
 [CM_ProxyEntries CSP](/windows/client-management/mdm/cm-proxyentries-csp)
-
 [CMPolicy CSP](/windows/client-management/mdm/cmpolicy-csp)
-
 [CMPolicyEnterprise CSP](/windows/client-management/mdm/cmpolicyenterprise-csp)
-
 [EMAIL2 CSP](/windows/client-management/mdm/email2-csp)
-
 [EnterpriseAPN CSP](/windows/client-management/mdm/enterpriseapn-csp)
-
 [EnterpriseDesktopAppManagement CSP](/windows/client-management/mdm/enterprisedesktopappmanagement-csp)
-
 [EnterpriseModernAppManagement CSP](/windows/client-management/mdm/enterprisemodernappmanagement-csp)
-
 [NAP CSP](/windows/client-management/mdm/nap-csp)
-
 [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp)
-
 [Provisioning CSP](/windows/client-management/mdm/provisioning-csp)
-
 [SecureAssessment CSP](/windows/client-management/mdm/secureassessment-csp)
-
 [VPN CSP](/windows/client-management/mdm/vpn-csp)
-
 [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)
-
 [WiFi CSP](/windows/client-management/mdm/wifi-csp)
-
-
-
-## Related articles
-
-- [Provisioning packages for Windows client](provisioning-packages.md)
-- [How provisioning works in Windows client](provisioning-how-it-works.md)
-- [Install Windows Configuration Designer](provisioning-install-icd.md)
-- [Create a provisioning package](provisioning-create-package.md)
-- [Apply a provisioning package](provisioning-apply-package.md)
-- [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
-- [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
-- [PowerShell cmdlets for provisioning Windows client (reference)](provisioning-powershell.md)
-- [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
-- [Create a provisioning package with multivariant settings](provisioning-multivariant.md)

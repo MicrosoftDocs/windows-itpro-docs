@@ -112,16 +112,4 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
     - If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
 
 1. Copy the provisioning package to the target device.
-
 1. Double-click the ppkg file and allow it to install.
-
-## Related topics
-
-- [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
-- [Configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md)
-- [Customize and export Start layout](customize-and-export-start-layout.md)
-- [Add image for secondary tiles](start-secondary-tiles.md)
-- [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
-- [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-- [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
-- [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)

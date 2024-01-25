@@ -13,7 +13,6 @@ Use SharedPC settings to optimize Windows devices for shared use scenarios, such
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-
 | All settings | ✅  |  |  |  |
 
 ## AccountManagement

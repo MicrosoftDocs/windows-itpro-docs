@@ -18,9 +18,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 ## Settings for UWP apps
 
 - **License Path**: Specify the license file if it is an app from the Microsoft Store. This is optional if you have a certificate for the app.
-
 - **Package family name**: Specify the package family name if you don't specify a license. This field will be autopopulated after you specify a license.
-
 - **Required appx dependencies**: Specify the appx dependency packages that are required for the installation of the app
 
 ## Settings for Windows desktop applications

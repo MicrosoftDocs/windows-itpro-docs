@@ -22,73 +22,28 @@ This walkthrough describes how to include scripts in a Windows client provisioni
 
     ```ddf
     ;*** MSDN Sample Source Code MakeCAB Directive file example
-
-
     ;
-
-
     .OPTION EXPLICIT  ; Generate errors on variable typos
-
-
     .set DiskDirectoryTemplate=CDROM  ; All cabinets go in a single directory
-
-
     .Set MaxDiskFileCount=1000; Limit file count per cabinet, so that
-
-
     ; scanning is not too slow
-
-
     .Set FolderSizeThreshold=200000   ; Aim for ~200K per folder
-
-
     .Set CompressionType=MSZIP
-
-
     ;** All files are compressed in cabinet files
-
-
     .Set Cabinet=on
-
-
     .Set Compress=on
-
-
     ;-------------------------------------------------------------------
-
-
     ;** CabinetNameTemplate = name of cab
-
-
     ;** DiskDirectory1 = output directory where cab will be created
-
-
     ;-------------------------------------------------------------------
-
-
     .Set CabinetNameTemplate=tt.cab
-
-
     .Set DiskDirectory1=.
-
-
     ;-------------------------------------------------------------------
-
-
     ; Replace <file> with actual files you want to package
-
-
     ;-------------------------------------------------------------------
-
-
     <file1>
-
-
     <file2>
-
-
     ;*** <the end>
-
     ```
 
 1. Use makecab to create the cab files.
@@ -115,7 +70,6 @@ Granular logging is not built in, so the logging must be built into the script i
 ```log
 set LOGFILE=%SystemDrive%\HelloWorld.log
 echo Hello, World >> %LOGFILE%
-
 ```
 
 ### .exe example
@@ -176,8 +130,6 @@ You are allowed one **CommandLine** per provisioning package. The batch files sh
 
 Here's a table describing this relationship, using the PowerShell example from above:
 
-
-
 |ICD Setting | Value  | Description |
 | --- | --- | --- |
 | ProvisioningCommands/DeviceContext/CommandLine | cmd /c PowerShell_Example.bat | The command line needed to invoke the orchestrator script. |
@@ -206,14 +158,14 @@ In Windows Configuration Designer, that is done by adding files under the `Provi
 
 When you are done, [build the package](provisioning-create-package.md#build-package).
 
-
-
 ### Remarks
 
 1. No user interaction or console output is supported via ProvisioningCommands. All work needs to be silent. If your script attempts to do any of the following it will cause undefined behavior, and could put the device in an unrecoverable state if executed during setup or the Out of Box Experience:
-    a. Echo to console
-    b. Display anything on the screen
-    c. Prompt the user with a dialog or install wizard
+
+    1. Echo to console
+    1. Display anything on the screen
+    1. Prompt the user with a dialog or install wizard
+
 1. When applied at first boot, provisioning runs early in the boot sequence and before a user context has been established; care must be taken to only include installers that can run at this time. Other installers can be provisioned via a management tool.
 1. If the device is put into an unrecoverable state because of a bad script, you can reset it using [recovery options in Windows client](https://support.microsoft.com/help/12415/windows-10-recovery-options).
 1. The CommandFile assets are deployed on the device to a temporary folder unique to each package.
@@ -244,4 +196,3 @@ When you are done, [build the package](provisioning-create-package.md#build-pack
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [PowerShell cmdlets for provisioning Windows client (reference)](provisioning-powershell.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
-

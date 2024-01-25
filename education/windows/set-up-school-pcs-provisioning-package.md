@@ -11,7 +11,7 @@ appliesto:
 
 The Set up School PCs app builds a specialized provisioning package with school-optimized settings.
 
-A key feature of the provisioning package is SharedPC mode. To learn about the technical framework of SharedPC mode, including the description of each setting, see the [Manage multi-user and guest Windows devices with Shared PC](/windows/configuration/shared-pc/shared-pc-technical) article.
+A key feature of the provisioning package is SharedPC mode. To learn about the technical framework of SharedPC mode, including the description of each setting, see the [Manage multi-user and guest Windows devices with Shared PC](/windows/configuration/shared-pc-technical) article.
 
 ## Shared PC Mode policies
 
@@ -23,7 +23,7 @@ The following table outlines the policies applied to devices in SharedPC mode. I
 
 In the table, *True* means that the setting is enabled, allowed, or applied. Use the **Description** column to help you understand the context for each setting.
 
-For a more detailed look at the policies, see the Windows article [Set up shared or guest PC](/windows/configuration/shared-pc/set-up-shared-or-guest-pc#policies-set-by-shared-pc-mode).
+For a more detailed look at the policies, see the Windows article [Set up shared or guest PC](/windows/configuration/set-up-shared-or-guest-pc#policies-set-by-shared-pc-mode).
 
 | Policy name | Default value | Description |
 |--|--|--|

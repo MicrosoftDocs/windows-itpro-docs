@@ -112,35 +112,26 @@ When you set up a kiosk (also known as *assigned access*) in **Settings** for Wi
 **To set up assigned access in PC settings**
 
 1. Go to **Start** > **Settings** > **Accounts** > **Other people**.
-
 1. Select **Set up assigned access**.
-
 1. Choose an account.
-
 1. Choose an app. Only apps that can run above the lock screen will be available in the list of apps to choose from. For more information, see [Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md).
-
 1. Close **Settings** - your choices are saved automatically, and will be applied the next time that user account signs in.
-
 To remove assigned access, choose **Turn off assigned access and sign out of the selected account**.
-
-<span id="powershell"/>
 
 ## Set up a kiosk using Windows PowerShell
 
+App type:
 
+- UWP
 
->App type:
+OS:
 
-> - UWP
->
->OS:
+- Windows 10 Pro, Ent, Edu
+- Windows 11
 
-> - Windows 10 Pro, Ent, Edu
-> - Windows 11
->
->Account type:
+Account type:
 
-> - Local standard user
+- Local standard user
 
 ![PowerShell windows displaying Set-AssignedAccess cmdlet.](images/set-assignedaccess.png)
 
@@ -179,19 +170,21 @@ Clear-AssignedAccess
 
 ## Set up a kiosk using the kiosk wizard in Windows Configuration Designer
 
->App type:
-> - UWP
+App type:
 
-> - Windows desktop application
->
->OS:
-> - Windows 10 Pro version 1709+ for UWP only
-> - Windows 10 Ent, Edu for UWP and Windows desktop applications
-> - Windows 11
->
->Account type:
-> - Local standard user
-> - Active Directory
+- UWP
+- Windows desktop application
+
+OS:
+
+- Windows 10 Pro version 1709+ for UWP only
+- Windows 10 Ent, Edu for UWP and Windows desktop applications
+- Windows 11
+
+Account type:
+
+- Local standard user
+- Active Directory
 
 ![Kiosk wizard option in Windows Configuration Designer.](images/kiosk-wizard.png)
 

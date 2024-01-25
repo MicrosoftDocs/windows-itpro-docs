@@ -203,14 +203,3 @@ If your Start layout customization isn't applied as you expect, open the **Event
 
 - **Event 22**: The XML is malformed. The specified file isn't valid XML. This event can happen if the file has extra spaces or unexpected characters. Or, if the file isn't saved in the UTF8 format.
 - **Event 64**: The XML is valid, and has unexpected values. This event can happen when the configuration isn't understood, elements aren't in [the required order](start-layout-xml-desktop.md#required-order), or source isn't found, such as a missing or misspelled `.lnk`.
-
-## Next steps
-
-- [Configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md)
-- [Customize and export Start layout](customize-and-export-start-layout.md)
-- [Add image for secondary tiles](start-secondary-tiles.md)
-- [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
-- [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-- [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-- [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
-- [Changes to Start policies in Windows 10](../start/changes-to-start-policies-in-windows-10.md)

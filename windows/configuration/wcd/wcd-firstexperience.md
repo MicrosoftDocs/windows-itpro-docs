@@ -13,7 +13,8 @@ Use these settings to configure the out-of-box experience (OOBE) to set up HoloL
 
 | Setting | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| All settings |   |  | X |  |
+| All settings |   |  | ✅ |  |
+
 | Setting | Description |
 | --- | --- |
 | PreferredRegion | Enter the [geographical location identifier](/windows/win32/intl/table-of-geographical-locations) for the region. |

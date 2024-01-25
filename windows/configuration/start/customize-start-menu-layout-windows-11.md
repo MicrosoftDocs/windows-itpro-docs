@@ -37,7 +37,7 @@ This article shows you how to export an existing Start menu layout, and use the 
 
 In Windows 11, the Start menu is redesigned with a simplified set of apps that are arranged in a grid of pages. There aren't folders, groups, or different-sized app icons:
 
-:::image type="content" source="./images/customize-start-menu-layout-windows-11/start-menu-layout.png" alt-text="Sample start menu layout on Windows 11 devices that shows pinned apps, access to all apps, and shows recommended files.":::
+:::image type="content" source="./images/start-menu-layout.png" alt-text="Sample start menu layout on Windows 11 devices that shows pinned apps, access to all apps, and shows recommended files.":::
 
 Start has the following areas:
 
@@ -91,31 +91,22 @@ If you're familiar with creating JSON files, you can create your own `LayoutModi
 
     ```json
     {
-
       "pinnedList": [
-
         { "desktopAppId": "MSEdge" },
-
         { "desktopAppId": "Microsoft.Office.WINWORD.EXE.15" },
-
         { "packagedAppId": "Microsoft.WindowsStore_8wekyb3d8bbwe!App" },
-
         { "packagedAppId": "Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" }
-
       ]
-
     }
-
     ```
 
 1. Starting with Windows 11, the **ConfigureStartPins** policy is available. This policy uses the `LayoutModification.json` file to add apps to the Pinned section. In your JSON file, you can add more apps to this section using the following keys:
 
-    ---
-    | Key | Description |
-    | --- | --- |
-    | packagedAppID | Use this option for Universal Windows Platform apps. To pin a UWP app, use the app's AUMID.|
-    | desktopAppID | Use this option for unpackaged Win32 apps. To pin a Win32 app, use the app's AUMID. If the app doesn't have an AUMID, then enter the `desktopAppLink` instead. |
-    | desktopAppLink | Use this option for unpackaged Win32 apps that don't have an associated AUMID. To pin this type of app, use the path to the `.lnk` shortcut that points to the app. |
+| Key | Description |
+|--|--|
+| packagedAppID | Use this option for Universal Windows Platform apps. To pin a UWP app, use the app's AUMID. |
+| desktopAppID | Use this option for unpackaged Win32 apps. To pin a Win32 app, use the app's AUMID. If the app doesn't have an AUMID, then enter the `desktopAppLink` instead. |
+| desktopAppLink | Use this option for unpackaged Win32 apps that don't have an associated AUMID. To pin this type of app, use the path to the `.lnk` shortcut that points to the app. |
 
 ## Use MDM to create and deploy a pinned list policy
 
@@ -153,26 +144,18 @@ To deploy this policy, the devices must be enrolled, and managed by your organiz
 
       ```json
       {
-
         "pinnedList": [
-
           { "desktopAppId": "MSEdge" },
-
           { "desktopAppId": "Microsoft.Office.WINWORD.EXE.15" },
-
           { "packagedAppId": "Microsoft.WindowsStore_8wekyb3d8bbwe!App" },
-
           { "packagedAppId": "Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" }
-
         ]
-
       }
-
       ```
 
     Your settings look similar to the following settings:
 
-    :::image type="content" source="./images/customize-start-menu-layout-windows-11/endpoint-manager-admin-center-custom-oma-uri-start-layout.png" alt-text="Custom OMA-URI settings to customize Start menu layout using pinnedList":::
+    :::image type="content" source="./images/endpoint-manager-admin-center-custom-oma-uri-start-layout.png" alt-text="Custom OMA-URI settings to customize Start menu layout using pinnedList":::
 
 1. Select **Save** > **Next** to save your changes.
 1. Configure the rest of the policy settings. For more specific information, see [Create a profile with custom settings](/mem/intune/configuration/custom-settings-configure).

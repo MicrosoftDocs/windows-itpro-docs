@@ -21,8 +21,6 @@ In Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, you can use 
 >[!WARNING]
 >When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
 
-
-
 ## <a href="" id="bkmk-howstartscreencontrolworks"></a>How Start layout control works
 
 Two features enable Start layout control:
@@ -31,8 +29,6 @@ Two features enable Start layout control:
 
     >[!NOTE]
     >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
-
-
 
 - In Microsoft Intune, you select the Start layout XML file and add it to a device configuration profile.
 
@@ -71,14 +67,3 @@ The following example uses Microsoft Intune to configure an MDM policy that appl
 
 > [!NOTE]
 > For third party partner MDM solutions, you may need to use an OMA-URI setting for Start layout, based on the [Policy configuration service provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider). The OMA-URI setting is `./User/Vendor/MSFT/Policy/Config/Start/StartLayout`.
-
-## Next steps
-
-- [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
-- [Configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md)
-- [Customize and export Start layout](customize-and-export-start-layout.md)
-- [Add image for secondary tiles](start-secondary-tiles.md)
-- [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
-- [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-- [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-- [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)

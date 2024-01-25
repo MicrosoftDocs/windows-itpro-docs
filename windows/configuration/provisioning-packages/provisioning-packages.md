@@ -33,21 +33,15 @@ Windows Configuration Designer is available as an [app in the Microsoft Store](h
 Provisioning packages let you:
 
 - Quickly configure a new device without going through the process of installing a new image.
-
 - Save time by configuring multiple devices using one provisioning package.
-
 - Quickly configure employee-owned devices in an organization without a mobile device management (MDM) infrastructure.
-
 - Set up a device without the device having network connectivity.
 
 Provisioning packages can be:
 
 - Installed using removable media such as an SD card or USB flash drive.
-
 - Attached to an email.
-
 - Downloaded from a network share.
-
 - Deployed in NFC tags or barcodes.
 
 ## What you can configure
@@ -104,20 +98,17 @@ WCD, simplified common provisioning scenarios.
 
 WCD supports the following scenarios for IT administrators:
 
-* **Simple provisioning** - Enables IT administrators to define a desired configuration in WCD and then apply that configuration on target devices. The simple provisioning wizard makes the entire process quick and easy by guiding an IT administrator through common configuration settings in a step-by-step manner.
+- **Simple provisioning** - Enables IT administrators to define a desired configuration in WCD and then apply that configuration on target devices. The simple provisioning wizard makes the entire process quick and easy by guiding an IT administrator through common configuration settings in a step-by-step manner.
 
   [Learn how to use simple provisioning to configure Windows computers.](provision-pcs-for-initial-deployment.md)
 
-* **Advanced provisioning (deployment of classic (Win32) and Universal Windows Platform (UWP) apps, and certificates)** - Allows an IT administrator to use WCD to open provisioning packages in the advanced settings editor and include apps for deployment on end-user devices.
+- **Advanced provisioning (deployment of classic (Win32) and Universal Windows Platform (UWP) apps, and certificates)** - Allows an IT administrator to use WCD to open provisioning packages in the advanced settings editor and include apps for deployment on end-user devices.
 
-* **Mobile device enrollment into management** - Enables IT administrators to purchase off-the-shelf retail Windows devices and enroll them into mobile device management (MDM) before handing them to end users in the organization. IT administrators can use WCD to specify the management endpoint and apply the configuration on target devices by connecting them to a Windows PC (tethered deployment) or through an SD card. Supported management end-points include:
+- **Mobile device enrollment into management** - Enables IT administrators to purchase off-the-shelf retail Windows devices and enroll them into mobile device management (MDM) before handing them to end users in the organization. IT administrators can use WCD to specify the management endpoint and apply the configuration on target devices by connecting them to a Windows PC (tethered deployment) or through an SD card. Supported management end-points include:
 
   - Microsoft Intune (certificate-based enrollment)
-
   - AirWatch (password-string based enrollment)
-
   - MobileIron (password-string based enrollment)
-
   - Other MDMs (cert-based enrollment)
 
 <!--  > [!NOTE] -->

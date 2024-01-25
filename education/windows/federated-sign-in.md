@@ -201,16 +201,12 @@ The following issues are known to affect student shared devices:
 
 For student shared devices, it's recommended to configure the account management policies to automatically delete the user profiles after a certain period of inactivity or disk levels. For more information, see [Set up a shared or guest Windows device][WIN-3].
 
-<a name='preferred-azure-ad-tenant-name'></a>
-
 ### Preferred Microsoft Entra tenant name
 
 To improve the user experience, you can configure the *preferred Microsoft Entra tenant name* feature.\
 When using preferred Microsoft Entra tenant name, the users bypass the disambiguation page and are redirected to the identity provider sign-in page. This configuration can be especially useful for student shared devices, where the disambiguation page is always shown.
 
 For more information about preferred tenant name, see [Authentication CSP - PreferredAadTenantDomainName][WIN-4].
-
-<a name='identity-matching-in-azure-ad'></a>
 
 ### Identity matching in Microsoft Entra ID
 
@@ -275,5 +271,5 @@ Update-MgUser -UserId alton@example.onmicrosoft.com -UserPrincipalName alton@exa
 
 [WIN-1]: /windows/client-management/mdm/sharedpc-csp
 [WIN-2]: /windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin
-[WIN-3]: /windows/configuration/shared-pc/set-up-shared-or-guest-pc
+[WIN-3]: /windows/configuration/set-up-shared-or-guest-pc
 [WIN-4]: /windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname

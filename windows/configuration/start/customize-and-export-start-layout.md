@@ -147,21 +147,3 @@ If the Start layout is applied by Group Policy or MDM, and the policy is removed
 
 > [!NOTE]
 > Office 2019 tiles might be removed from the Start menu when you upgrade Office 201. This only occurs if Office 2019 app tiles are in a custom group in the Start menu and only contains the Office 2019 app tiles. To avoid this problem, place another app tile in the Office 2019 group prior to the upgrade. For example, add Notepad.exe or calc.exe to the group. This issue occurs because Office 2019 removes and reinstalls the apps when they are upgraded. Start removes empty groups when it detects that all apps for that group have been removed.
-
-## Related articles
-
-[Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
-
-[Configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md)
-
-[Add image for secondary tiles](start-secondary-tiles.md)
-
-[Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
-
-[Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-
-[Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-
-[Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
-
-[Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
