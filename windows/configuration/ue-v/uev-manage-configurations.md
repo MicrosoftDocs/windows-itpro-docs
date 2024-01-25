@@ -1,23 +1,12 @@
 ---
 title: Manage Configurations for UE-V
 description: Learn to manage the configuration of the User Experience Virtualization (UE-V) service and also learn to manage storage locations for UE-V resources.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Manage Configurations for UE-V
 
-**Applies to**
--   Windows 10, version 1607
 
 In the course of the User Experience Virtualization (UE-V) lifecycle, you have to manage the configuration of the UE-V service and also manage storage locations for resources such as settings package files. The following topics provide guidance for managing these UE-V resources.
 
@@ -29,7 +18,7 @@ You can use Group Policy Objects to modify the settings that define how UE-V syn
 
 ## Configuring UE-V with Microsoft Configuration Manager
 
-You can use Microsoft Endpoint Configuration Manager to manage the UE-V service by using the UE-V Configuration Pack.
+You can use Microsoft Endpoint Configuration Manager to manage the UE-V service by using the UE-V Configuration Pack.
 
 [Configuring UE-V with Microsoft Configuration Manager](uev-configuring-uev-with-system-center-configuration-manager.md)
 
@@ -43,23 +32,23 @@ UE-V provides Windows PowerShell cmdlets, which can help administrators perform 
 
 Here are some examples of UE-V configuration settings:
 
--   **Settings Storage Path:** Specifies the location of the file share that stores the UE-V settings.
+- **Settings Storage Path:** Specifies the location of the file share that stores the UE-V settings.
 
--   **Settings Template Catalog Path:** Specifies the Universal Naming Convention (UNC) path that defines the location that was checked for new settings location templates.
+- **Settings Template Catalog Path:** Specifies the Universal Naming Convention (UNC) path that defines the location that was checked for new settings location templates.
 
--   **Register Microsoft Templates:** Specifies whether the default Microsoft templates should be registered during installation.
+- **Register Microsoft Templates:** Specifies whether the default Microsoft templates should be registered during installation.
 
--   **Synchronization Method:** Specifies whether UE-V uses the sync provider or "none". The "SyncProvider" supports computers that are disconnected from the network. "None" applies when the computer is always connected to the network. For more information about the Sync Method, see [Sync Methods for UE-V](uev-sync-methods.md).
+- **Synchronization Method:** Specifies whether UE-V uses the sync provider or "none". The "SyncProvider" supports computers that are disconnected from the network. "None" applies when the computer is always connected to the network. For more information about the Sync Method, see [Sync Methods for UE-V](uev-sync-methods.md).
 
--   **Synchronization Timeout:** Specifies the number of milliseconds that the computer waits before time-out when it retrieves the user settings from the settings storage location.
+- **Synchronization Timeout:** Specifies the number of milliseconds that the computer waits before time-out when it retrieves the user settings from the settings storage location.
 
--   **Synchronization Enable:** Specifies whether the UE-V settings synchronization is enabled or disabled.
+- **Synchronization Enable:** Specifies whether the UE-V settings synchronization is enabled or disabled.
 
--   **Maximum Package Size:** Specifies a settings package file threshold size in bytes at which the UE-V service reports a warning.
+- **Maximum Package Size:** Specifies a settings package file threshold size in bytes at which the UE-V service reports a warning.
 
--   **Don’t Sync Windows App Settings:** Specifies that UE-V should not synchronize Windows apps.
+- **Don’t Sync Windows App Settings:** Specifies that UE-V should not synchronize Windows apps.
 
--   **Enable/Disable First Use Notification:** Specifies whether UE-V displays a dialog box the first time that the UE-V service runs on a user’s computer.
+- **Enable/Disable First Use Notification:** Specifies whether UE-V displays a dialog box the first time that the UE-V service runs on a user’s computer.
 
 
 

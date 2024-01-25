@@ -1,23 +1,12 @@
 ---
 title: Application Template Schema Reference for UE-V
 description: Learn details about the XML structure of the UE-V settings location templates and learn how to edit these files.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Application Template Schema Reference for UE-V
 
-**Applies to**
--   Windows 10, version 1607
 
 User Experience Virtualization (UE-V) uses XML settings location templates to define the desktop application settings and Windows settings that are captured and applied by UE-V. UE-V includes a set of default settings location templates. You can also create custom settings location templates with the UE-V template generator.
 
@@ -30,29 +19,29 @@ This section details the XML structure of the UE-V settings location template an
 
 ### In This Section
 
--   [XML Declaration and Encoding Attribute](#xml21)
+- [XML Declaration and Encoding Attribute](#xml21)
 
--   [Namespace and Root Element](#namespace21)
+- [Namespace and Root Element](#namespace21)
 
--   [Data types](#data21)
+- [Data types](#data21)
 
--   [Name Element](#name21)
+- [Name Element](#name21)
 
--   [ID Element](#id21)
+- [ID Element](#id21)
 
--   [Version Element](#version21)
+- [Version Element](#version21)
 
--   [Author Element](#author21)
+- [Author Element](#author21)
 
--   [Processes and Process Element](#processes21)
+- [Processes and Process Element](#processes21)
 
--   [Application Element](#application21)
+- [Application Element](#application21)
 
--   [Common Element](#common21)
+- [Common Element](#common21)
 
--   [SettingsLocationTemplate Element](#settingslocationtemplate21)
+- [SettingsLocationTemplate Element](#settingslocationtemplate21)
 
--   [Appendix: SettingsLocationTemplate.xsd](#appendix21)
+- [Appendix: SettingsLocationTemplate.xsd](#appendix21)
 
 ### <a href="" id="xml21"></a>XML Declaration and Encoding Attribute
 
@@ -144,7 +133,7 @@ Settings is a container for all the settings that apply to a particular template
 |Element|Description|
 |--- |--- |
 |Asynchronous|Asynchronous settings packages are applied without blocking the application startup so that the application start proceeds while the settings are still being applied. This element is useful for settings that can be applied asynchronously, such as those settings get/set through an API, like SystemParameterSetting.|
-|PreventOverlappingSynchronization|By default, UE-V only saves settings for an application when the last instance of an application using the template is closed. When this element is set to ‘false’, UE-V exports the settings even if other instances of an application are running. Suited templates – those templates that include a Common element section– that are shipped with UE-V use this flag to enable shared settings to always export on application close, while preventing application-specific settings from exporting until the last instance is closed.|
+|PreventOverlappingSynchronization|By default, UE-V only saves settings for an application when the last instance of an application using the template is closed. When this element is set to ‘false’, UE-V exports the settings even if other instances of an application are running. Suited templates - those templates that include a Common element section– that are shipped with UE-V use this flag to enable shared settings to always export on application close, while preventing application-specific settings from exporting until the last instance is closed.|
 |AlwaysApplySettings|This parameter forces an imported settings package to be applied even if there are no differences between the package and the current state of the application. This parameter should be used only in special cases since it can slow down settings import.|
 
 ### <a href="" id="name21"></a>Name Element
@@ -200,11 +189,11 @@ Version identifies the version of the settings location template for administrat
 > [!IMPORTANT]
 > This value is queried to determine if a new version of a template should be applied to an existing template in these instances:
 
--   When the scheduled Template Auto Update task executes
+- When the scheduled Template Auto Update task executes
 
--   When the Update-UevTemplate PowerShell cmdlet is executed
+- When the Update-UevTemplate PowerShell cmdlet is executed
 
--   When the microsoft\\uev:SettingsLocationTemplate Update method is called through WMI
+- When the microsoft\\uev:SettingsLocationTemplate Update method is called through WMI
 
  
 
@@ -262,13 +251,13 @@ Valid filenames must not match the regular expression \[^\\\\\\?\\\*\\|&lt;&gt;/
 
 A value of **True** indicates that the string contains illegal characters. Here are some examples of illegal values:
 
--   \\\\server\\share\\program.exe
+- \\\\server\\share\\program.exe
 
--   Program\*.exe
+- Program\*.exe
 
--   Pro?ram.exe
+- Pro?ram.exe
 
--   Program&lt;1&gt;.exe
+- Program&lt;1&gt;.exe
 
 > [!NOTE]
 > The UE-V template generator encodes the greater than and less than characters as &gt; and &lt; respectively.

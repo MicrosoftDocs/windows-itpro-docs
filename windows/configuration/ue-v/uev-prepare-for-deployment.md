@@ -1,23 +1,12 @@
 ---
 title: Prepare a UE-V Deployment
 description: Learn about the types of User Experience Virtualization (UE-V) deployment you can execute and what preparations you can make beforehand to be successful.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Prepare a UE-V Deployment
 
-**Applies to**
--   Windows 10, version 1607
 
 Before you deploy User Experience Virtualization (UE-V), review this article for important information about the type of deployment you're planning and for preparations you can make beforehand so that your deployment is successful. If you leave this page, be sure to come back and read through the planning information in this article.
 
@@ -29,9 +18,9 @@ Whether you want to synchronize settings for only default Windows applications o
 
 [Deploy required UE-V features](uev-deploy-required-features.md)
 
--   [Define a settings storage location](uev-deploy-required-features.md)
+- [Define a settings storage location](uev-deploy-required-features.md)
 
--   [Enable the UE-V service](uev-deploy-required-features.md#enable-the-ue-v-service) on user computers
+- [Enable the UE-V service](uev-deploy-required-features.md#enable-the-ue-v-service) on user computers
 
 If you want to use UE-V to synchronize user-defined settings for custom applications (third-party or line-of-business), you’ll need to install and configure these optional extra UE-V features:
 
@@ -55,17 +44,17 @@ The workflow diagram below illustrates a typical UE-V deployment and the decisio
 
 Review the following articles to determine which UE-V components you'll be deploying.
 
--   [Decide whether to synchronize settings for custom applications](#decide-whether-to-synchronize-settings-for-custom-applications)
+- [Decide whether to synchronize settings for custom applications](#decide-whether-to-synchronize-settings-for-custom-applications)
 
     If you want to synchronize settings for custom applications, you'll need to install the UE-V template generator. Use the generator to create custom settings location templates, which involve the following tasks:
 
-    -   Review the [settings that are synchronized automatically in a UE-V deployment](#settings-automatically-synchronized-in-a-ue-v-deployment).
+    - Review the [settings that are synchronized automatically in a UE-V deployment](#settings-automatically-synchronized-in-a-ue-v-deployment).
 
-    -   [Determine whether you need settings synchronized for other applications](#determine-whether-you-need-settings-synchronized-for-other-applications).
+    - [Determine whether you need settings synchronized for other applications](#determine-whether-you-need-settings-synchronized-for-other-applications).
 
--   Review [other considerations for deploying UE-V](#other-considerations-when-preparing-a-ue-v-deployment), including high availability and capacity planning.
+- Review [other considerations for deploying UE-V](#other-considerations-when-preparing-a-ue-v-deployment), including high availability and capacity planning.
 
--   [Confirm prerequisites and supported configurations for UE-V](#confirm-prerequisites-and-supported-configurations-for-ue-v)
+- [Confirm prerequisites and supported configurations for UE-V](#confirm-prerequisites-and-supported-configurations-for-ue-v)
 
 ## Decide whether to synchronize settings for custom applications
 
@@ -77,11 +66,11 @@ Deciding if you want UE-V to synchronize settings for custom applications is an 
 
 This section explains which settings are synchronized by default in UE-V, including:
 
--   Desktop applications that are synchronized by default
+- Desktop applications that are synchronized by default
 
--   Windows desktop settings that are synchronized by default
+- Windows desktop settings that are synchronized by default
 
--   A statement of support for Windows applications setting synchronization
+- A statement of support for Windows applications setting synchronization
 
 For downloadable UE-V templates, see: [User Experience Virtualization (UE-V) settings templates for Microsoft Office](https://www.microsoft.com/download/details.aspx?id=46367)
 
@@ -99,7 +88,8 @@ When you enable the UE-V service on user devices, it registers a default group o
 
 > [!NOTE]
 > - An Outlook profile must be created for any device on which a user wants to sync their Outlook signature. If the profile is not already created, the user can create one and then restart Outlook on that device to enable signature synchronization.
-> 
+>
+
 > - UE-V doesn't synchronize settings between the Microsoft Calculator in Windows 10 and the Microsoft Calculator in previous operating systems.
 
 ### Windows settings synchronized by default
@@ -139,11 +129,11 @@ Users can print to their saved network printers, including their default network
 
 Printer roaming in UE-V requires one of these scenarios:
 
--   The print server can download the required driver when it roams to a new device.
+- The print server can download the required driver when it roams to a new device.
 
--   The driver for the roaming network printer is pre-installed on any device that needs to access that network printer.
+- The driver for the roaming network printer is pre-installed on any device that needs to access that network printer.
 
--   The printer driver can be imported from Windows Update.
+- The printer driver can be imported from Windows Update.
 
 > [!NOTE]
 > The UE-V printer roaming feature doesn't roam printer settings or preferences, such as printing double-sided.
@@ -156,11 +146,11 @@ As an administrator, when you consider which desktop applications to include in 
 
 In general, you can synchronize settings that meet the following criteria:
 
--   Settings that are stored in user-accessible locations. For example, don't synchronize settings that are stored in System32 or outside the HKEY\_CURRENT\_USER (HKCU) section of the registry.
+- Settings that are stored in user-accessible locations. For example, don't synchronize settings that are stored in System32 or outside the HKEY\_CURRENT\_USER (HKCU) section of the registry.
 
--   Settings that aren't specific to the particular device. For example, exclude network shortcuts or hardware configurations.
+- Settings that aren't specific to the particular device. For example, exclude network shortcuts or hardware configurations.
 
--   Settings that can be synchronized between computers without risk of corrupted data. For example, don't use settings that are stored in a database file.
+- Settings that can be synchronized between computers without risk of corrupted data. For example, don't use settings that are stored in a database file.
 
 ### Checklist for evaluating custom applications
 
@@ -180,19 +170,19 @@ If you've decided that you need to synchronize settings for custom applications,
 
 You should also consider these things when you're preparing to deploy UE-V:
 
--   [Managing credentials synchronization](#managing-credentials-synchronization-in-ue-v)
+- [Managing credentials synchronization](#managing-credentials-synchronization-in-ue-v)
 
--   [Windows applications settings synchronization](#windows-applications-settings-synchronization)
+- [Windows applications settings synchronization](#windows-applications-settings-synchronization)
 
--   [Custom UE-V settings location templates](#custom-ue-v-settings-location-templates)
+- [Custom UE-V settings location templates](#custom-ue-v-settings-location-templates)
 
--   [Unintentional user settings configurations](#prevent-unintentional-user-settings-configuration)
+- [Unintentional user settings configurations](#prevent-unintentional-user-settings-configuration)
 
--   [Performance and capacity](#performance-and-capacity-planning)
+- [Performance and capacity](#performance-and-capacity-planning)
 
--   [High availability](#high-availability-for-ue-v)
+- [High availability](#high-availability-for-ue-v)
 
--   [Computer clock synchronization](#synchronize-computer-clocks-for-ue-v-settings-synchronization)
+- [Computer clock synchronization](#synchronize-computer-clocks-for-ue-v-settings-synchronization)
 
 ### Managing credentials synchronization in UE-V 
 
@@ -242,13 +232,13 @@ Copy
 
 Credential files saved by applications into the following locations are synchronized:
 
--   %UserProfile%\\AppData\\Roaming\\Microsoft\\Credentials\\
+- %UserProfile%\\AppData\\Roaming\\Microsoft\\Credentials\\
 
--   %UserProfile%\\AppData\\Roaming\\Microsoft\\Crypto\\
+- %UserProfile%\\AppData\\Roaming\\Microsoft\\Crypto\\
 
--   %UserProfile%\\AppData\\Roaming\\Microsoft\\Protect\\
+- %UserProfile%\\AppData\\Roaming\\Microsoft\\Protect\\
 
--   %UserProfile%\\AppData\\Roaming\\Microsoft\\SystemCertificates\\
+- %UserProfile%\\AppData\\Roaming\\Microsoft\\SystemCertificates\\
 
 Credentials saved to other locations aren't synchronized by UE-V.
 
@@ -256,11 +246,11 @@ Credentials saved to other locations aren't synchronized by UE-V.
 
 UE-V manages Windows application settings synchronization in three ways:
 
--   **Sync Windows applications:** Allow or deny any Windows application synchronization
+- **Sync Windows applications:** Allow or deny any Windows application synchronization
 
--   **Windows applications list:** Synchronize a list of Windows applications
+- **Windows applications list:** Synchronize a list of Windows applications
 
--   **Unlisted default sync behavior:** Determine the synchronization behavior of Windows applications that aren't in the Windows applications list.
+- **Unlisted default sync behavior:** Determine the synchronization behavior of Windows applications that aren't in the Windows applications list.
 
 For more information, see the [Windows Application List](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md#win8applist).
 
@@ -276,15 +266,15 @@ For more information about custom settings location templates, see [Deploy UE-V 
 
 UE-V downloads new user settings information from a settings storage location and applies the settings to the local device in these instances:
 
--   Each time an application is started that has a registered UE-V template
+- Each time an application is started that has a registered UE-V template
 
--   When a user signs in to a device
+- When a user signs in to a device
 
--   When a user unlocks a device
+- When a user unlocks a device
 
--   When a connection is made to a remote desktop device running UE-V
+- When a connection is made to a remote desktop device running UE-V
 
--   When the Sync Controller Application scheduled task is run
+- When the Sync Controller Application scheduled task is run
 
 If UE-V is installed on computer A and computer B, and the settings that you want for the application are on computer A, then computer A should open and close the application first. If the application is opened and closed on computer B first, then the application settings on computer A are configured to the application settings on computer B. Settings are synchronized between computers on per-application basis. Over time, settings become consistent between computers as they're opened and closed with preferred settings.
 
@@ -306,21 +296,22 @@ By default, UE-V synchronization times out after 2 seconds to prevent excessive 
 
 The UE-V settings storage location and settings template catalog support storing user data on any writable share. To ensure high availability, follow these criteria:
 
--   Format the storage volume with an NTFS file system.
+- Format the storage volume with an NTFS file system.
 
--   The share can use Distributed File System (DFS) replication, but Distributed File System Replication (DFSR) isn't supported. Distributed File System Namespaces (DFSN) are supported. For detailed information, see:
+- The share can use Distributed File System (DFS) replication, but Distributed File System Replication (DFSR) isn't supported. Distributed File System Namespaces (DFSN) are supported. For detailed information, see:
 
     - [Deploying Roaming User Profiles](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles)
-    
+   
+
     - [Information about Microsoft support policy for a DFS-R and DFS-N deployment scenario](/troubleshoot/windows-server/networking/support-policy-for-dfsr-dfsn-deployment)
 
     In addition, because SYSVOL uses DFSR for replication, SYSVOL can't be used for UE-V data file replication.
 
--   Configure the share permissions and NTFS access control lists (ACLs) as specified in [Deploying the settings storage location for UE-V](uev-deploy-required-features.md).
+- Configure the share permissions and NTFS access control lists (ACLs) as specified in [Deploying the settings storage location for UE-V](uev-deploy-required-features.md).
 
--   Use file server clustering along with the UE-V service to provide access to copies of user state data if communications failures occur.
+- Use file server clustering along with the UE-V service to provide access to copies of user state data if communications failures occur.
 
--   You can store the settings storage path data (user data) and settings template catalog templates on clustered shares, on DFSN shares, or on both.
+- You can store the settings storage path data (user data) and settings template catalog templates on clustered shares, on DFSN shares, or on both.
 
 ### Synchronize computer clocks for UE-V settings synchronization
 
@@ -338,7 +329,8 @@ Before you proceed, ensure that your environment meets these requirements for us
 
 > [!NOTE]
 > - Windows Server 2012 operating systems come with .NET Framework 4.5 installed. The Windows 10 operating system comes with .NET Framework 4.6 installed.
-> 
+>
+
 > - The “Delete Roaming Cache” policy for mandatory profiles isn't supported with UE-V and shouldn't be used.
 
 There are no special random access memory (RAM) requirements specific to UE-V.
@@ -347,13 +339,13 @@ There are no special random access memory (RAM) requirements specific to UE-V.
 
 Sync Provider is the default setting for users and synchronizes a local cache with the settings storage location in these instances:
 
--   Log on/log off
+- Log on/log off
 
--   Lock/unlock
+- Lock/unlock
 
--   Remote desktop connect/disconnect
+- Remote desktop connect/disconnect
 
--   Application open/close
+- Application open/close
 
 A scheduled task manages this synchronization of settings every 30 minutes or through trigger events for certain applications. For more information, see [Changing the frequency of UE-V scheduled tasks](uev-changing-the-frequency-of-scheduled-tasks.md).
 
@@ -397,14 +389,14 @@ The UE-V template generator must be installed on a device that uses an NTFS file
 
 ## Other resources for this feature
 
--   [User Experience Virtualization overview](uev-for-windows.md)
+- [User Experience Virtualization overview](uev-for-windows.md)
 
--   [Get started with UE-V](uev-getting-started.md)
+- [Get started with UE-V](uev-getting-started.md)
 
--   [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
+- [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
 
--   [Administering UE-V](uev-administering-uev.md)
+- [Administering UE-V](uev-administering-uev.md)
 
--   [Troubleshooting UE-V](uev-troubleshooting.md)
+- [Troubleshooting UE-V](uev-troubleshooting.md)
 
--   [Technical Reference for UE-V](uev-technical-reference.md)
+- [Technical Reference for UE-V](uev-technical-reference.md)

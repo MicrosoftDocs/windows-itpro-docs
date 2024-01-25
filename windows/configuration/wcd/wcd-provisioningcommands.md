@@ -1,30 +1,27 @@
 ---
-title: ProvisioningCommands (Windows 10)
-description: This section describes the ProvisioningCommands settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
+title: ProvisioningCommands
+description: This section describes the ProvisioningCommands settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
+
 ms.topic: reference
-ms.collection: must-keep
-ms.date: 09/06/2017
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
----
+appliesto: 
 
-# ProvisioningCommands (Windows Configuration Designer reference)
+ms.date: 09/06/2017 
 
-Use ProvisioningCommands settings to install Windows desktop applications using a provisioning package. 
+--- 
 
-## Applies to
+# ProvisioningCommands (Windows Configuration Designer reference) 
+
+Use ProvisioningCommands settings to install Windows desktop applications using a provisioning package.  
+
+## Applies to 
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | 
-| All settings | ✔️  |  |  |  |  
 
-For instructions on adding apps to provisioning packages, see [Provision PCs with apps](../provisioning-packages/provision-pcs-with-apps.md).
+| All settings | ✅  |  |  |  |   
 
+For instructions on adding apps to provisioning packages, see [Provision PCs with apps](../provisioning-packages/provision-pcs-with-apps.md). 
 
+ 
 
 

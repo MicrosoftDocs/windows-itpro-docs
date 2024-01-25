@@ -1,24 +1,13 @@
 ---
 title: Using UE-V with Application Virtualization applications
 description: Learn how to use User Experience Virtualization (UE-V) with Microsoft Application Virtualization (App-V).
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 
 # Using UE-V with Application Virtualization applications
 
-**Applies to**
--   Windows 10, version 1607
 
 User Experience Virtualization (UE-V) supports Microsoft Application Virtualization (App-V) applications without any required modifications to either the App-V package or the UE-V template. However, another step is required because you can't run the UE-V template generator directly on a virtualized App-V application. Instead, you must install the application locally, generate the template, and then apply the template to the virtualized application. UE-V supports App-V for Windows 10 packages and App-V 5.0 packages.
 

@@ -1,23 +1,12 @@
 ---
 title: Upgrade to UE-V for Windows 10
-description: Use these few adjustments to upgrade from User Experience Virtualization (UE-V) 2.x to the latest version of UE-V.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
+description: Use these few adjustments to upgrade from User Experience Virtualization (UE-V) 2.x to the latest version of UE-V.
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Upgrade to UE-V for Windows 10
 
-**Applies to**
--   Windows 10, version 1607
 
 If you’re already using UE-V 2.x and you’re planning to upgrade user devices to Windows 10, version 1607 or later releases, you need to make only a few adjustments to your existing environment. These steps are explained in more detail below.
 
@@ -103,7 +92,8 @@ The UE-V template generator is included in the Windows Assessment and Deployment
 2. Select the **Get Windows ADK for Windows 10** button on this page to start the ADK installer. On the screen pictured below, select **Microsoft User Experience Virtualization (UE-V) Template Generator** and then select **Install**.
 
     ![Selecting UE-V features in ADK.](images/uev-adk-select-uev-feature.png)
- 
+
+
 3. To open the generator, open the **Start** menu and navigate to **Windows Kits** > **Microsoft User Experience Virtualization (UE-V) Template Generator**. 
 
 
@@ -112,12 +102,12 @@ The UE-V template generator is included in the Windows Assessment and Deployment
 
 ## Other resources for this feature
 
--   [UE-V Release Notes](uev-release-notes-1607.md)
+- [UE-V Release Notes](uev-release-notes-1607.md)
 
--   [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
+- [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
 
--   [Administer UE-V](uev-administering-uev.md)
+- [Administer UE-V](uev-administering-uev.md)
 
--   [Migrating settings packages](uev-migrating-settings-packages.md)
+- [Migrating settings packages](uev-migrating-settings-packages.md)
 
--   [Technical Reference for UE-V](uev-technical-reference.md)
+- [Technical Reference for UE-V](uev-technical-reference.md)

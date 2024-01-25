@@ -22,6 +22,7 @@
           href: windows-10-start-layout-options-and-policies.md
         - name: Use XML
           items: 
+
           - name: Customize and export Start layout
             href: customize-and-export-start-layout.md
           - name: Customize the taskbar
@@ -53,7 +54,7 @@
          - name: Configure cellular settings for tablets and PCs
            href: provisioning-apn.md
          - name: Lockdown features from Windows Embedded 8.1 Industry
-           href: lockdown-features-windows-10.md
+           href: lockdown-features-windows-10.md 
 
 
 - name: Configure kiosks and digital signs
@@ -91,16 +92,17 @@
         - name: Use MDM Bridge WMI Provider to create a Windows client kiosk
           href: kiosk-mdm-bridge.md
         - name: Troubleshoot kiosk mode issues
-          href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
+          href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting 
 
 - name: Configure multi-user and guest devices 
+
   items:
     - name: Shared devices concepts
       href: shared-devices-concepts.md
     - name: Configure shared devices with Shared PC
       href: set-up-shared-or-guest-pc.md
     - name: Shared PC technical reference
-      href: shared-pc-technical.md
+      href: shared-pc-technical.md 
 
 - name: Use provisioning packages
   items:
@@ -131,7 +133,7 @@
     - name: Diagnose provisioning packages
       href: provisioning-packages/diagnose-provisioning-packages.md
     - name: Windows Configuration Designer command-line interface (reference)
-      href: provisioning-packages/provisioning-command-line.md
+      href: provisioning-packages/provisioning-command-line.md 
 
 - name: Configure Cortana
   items:
@@ -176,12 +178,12 @@
         - name: Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email
           href: cortana-at-work/test-scenario-6.md
         - name: Test scenario 7 - Use Cortana and Windows Information Protection (WIP) to help protect your organization’s data on a device
-          href: cortana-at-work/cortana-at-work-scenario-7.md
+          href: cortana-at-work/cortana-at-work-scenario-7.md 
 
     - name: Set up and test custom voice commands in Cortana for your organization
       href: cortana-at-work/cortana-at-work-voice-commands.md
     - name: Use Group Policy and mobile device management (MDM) settings to configure Cortana in your organization
-      href: cortana-at-work/cortana-at-work-policy-settings.md
+      href: cortana-at-work/cortana-at-work-policy-settings.md 
 
 
 - name: Reference
@@ -196,108 +198,151 @@
           href: wcd/wcd-accountmanagement.md
         - name: Accounts
           href: wcd/wcd-accounts.md 
+
         - name: ADMXIngestion
           href: wcd/wcd-admxingestion.md 
+
         - name: AssignedAccess
           href: wcd/wcd-assignedaccess.md 
+
         - name: Browser
           href: wcd/wcd-browser.md 
+
         - name: CellCore
           href: wcd/wcd-cellcore.md
         - name: Cellular
           href: wcd/wcd-cellular.md     
+
         - name: Certificates
           href: wcd/wcd-certificates.md 
+
         - name: CleanPC
           href: wcd/wcd-cleanpc.md     
+
         - name: Connections
           href: wcd/wcd-connections.md 
+
         - name: ConnectivityProfiles
           href: wcd/wcd-connectivityprofiles.md 
+
         - name: CountryAndRegion
           href: wcd/wcd-countryandregion.md 
+
         - name: DesktopBackgroundAndColors
           href: wcd/wcd-desktopbackgroundandcolors.md     
+
         - name: DeveloperSetup
           href: wcd/wcd-developersetup.md     
+
         - name: DeviceFormFactor
           href: wcd/wcd-deviceformfactor.md  
+
         - name: DeviceManagement
           href: wcd/wcd-devicemanagement.md  
+
         - name: DeviceUpdateCenter
           href: wcd/wcd-deviceupdatecenter.md
         - name: DMClient
           href: wcd/wcd-dmclient.md 
+
         - name: EditionUpgrade
           href: wcd/wcd-editionupgrade.md    
+
         - name: FirewallConfiguration
           href: wcd/wcd-firewallconfiguration.md     
+
         - name: FirstExperience
           href: wcd/wcd-firstexperience.md     
+
         - name: Folders
           href: wcd/wcd-folders.md  
+
         - name: HotSpot
           href: wcd/wcd-hotspot.md
         - name: KioskBrowser
           href: wcd/wcd-kioskbrowser.md      
+
         - name: Licensing
           href: wcd/wcd-licensing.md 
+
         - name: Location
           href: wcd/wcd-location.md      
+
         - name: Maps
           href: wcd/wcd-maps.md 
+
         - name: NetworkProxy
           href: wcd/wcd-networkproxy.md     
+
         - name: NetworkQOSPolicy
           href: wcd/wcd-networkqospolicy.md 
+
         - name: OOBE
           href: wcd/wcd-oobe.md 
+
         - name: Personalization
           href: wcd/wcd-personalization.md     
+
         - name: Policies
           href: wcd/wcd-policies.md 
+
         - name: Privacy
           href: wcd/wcd-privacy.md  
+
         - name: ProvisioningCommands
           href: wcd/wcd-provisioningcommands.md
         - name: SharedPC
           href: wcd/wcd-sharedpc.md 
+
         - name: SMISettings
           href: wcd/wcd-smisettings.md     
+
         - name: Start
           href: wcd/wcd-start.md    
+
         - name: StartupApp
           href: wcd/wcd-startupapp.md     
+
         - name: StartupBackgroundTasks
           href: wcd/wcd-startupbackgroundtasks.md 
+
         - name: StorageD3InModernStandby
           href: wcd/wcd-storaged3inmodernstandby.md
         - name: SurfaceHubManagement
           href: wcd/wcd-surfacehubmanagement.md    
+
         - name: TabletMode
           href: wcd/wcd-tabletmode.md  
+
         - name: TakeATest
           href: wcd/wcd-takeatest.md
         - name: Time
           href: wcd/wcd-time.md    
+
         - name: UnifiedWriteFilter
           href: wcd/wcd-unifiedwritefilter.md     
+
         - name: UniversalAppInstall
           href: wcd/wcd-universalappinstall.md 
+
         - name: UniversalAppUninstall
           href: wcd/wcd-universalappuninstall.md 
+
         - name: UsbErrorsOEMOverride
           href: wcd/wcd-usberrorsoemoverride.md
         - name: WeakCharger
           href: wcd/wcd-weakcharger.md  
+
         - name: WindowsHelloForBusiness
           href: wcd/wcd-windowshelloforbusiness.md
         - name: WindowsTeamSettings
           href: wcd/wcd-windowsteamsettings.md     
+
         - name: WLAN
           href: wcd/wcd-wlan.md     
+
         - name: Workplace
-          href: wcd/wcd-workplace.md  
+          href: wcd/wcd-workplace.md   
 
     - name: User Experience Virtualization (UE-V)
       items:

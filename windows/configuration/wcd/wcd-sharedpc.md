@@ -1,31 +1,28 @@
 ---
 title: SharedPC
-description: This section describes the SharedPC settings that you can configure in provisioning packages for Windows using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
+description: This section describes the SharedPC settings that you can configure in provisioning packages for Windows using Windows Configuration Designer. 
+
 ms.topic: reference
-ms.collection: must-keep
-ms.date: 10/16/2017
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
----
+appliesto: 
 
-# SharedPC (Windows Configuration Designer reference)
+ms.date: 10/16/2017 
 
-Use SharedPC settings to optimize Windows devices for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail.
+--- 
 
-## Applies to
+# SharedPC (Windows Configuration Designer reference) 
+
+Use SharedPC settings to optimize Windows devices for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. 
+
+## Applies to 
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | 
-| All settings | ✔️  |  |  |  |
 
-## AccountManagement
+| All settings | ✅  |  |  |  | 
 
-Use these settings to configure settings for accounts allowed on the shared PC.
+## AccountManagement 
+
+Use these settings to configure settings for accounts allowed on the shared PC. 
 
 | Setting | Value | Description |
 | --- | --- | --- |
@@ -36,20 +33,20 @@ Use these settings to configure settings for accounts allowed on the shared PC.
 | EnableAccountManager  | True or false  | Set as **True** to enable automatic account management. When set to **False**, no automatic account management will be done.  |
 | InactiveThreshold  | Number  | If you set **DeletionPolicy** to **Delete at disk space threshold and inactive threshold**, set the number of days after which an account that hasn't signed in will be deleted.  |
 | KioskModeAUMID  | String  | Set an Application User Model ID (AUMID) to enable the kiosk account on the sign in screen. A new account will be created and will use assigned access to only run the app specified by the AUMID. The app must be installed on the PC. Set the name of the account using **KioskModeUserTileDisplayText**, or a default name will be used. [Find the Application User Model ID of an installed app](/previous-versions/windows/embedded/dn449300(v=winembedded.82))  |
-| KioskModeUserTileDisplayText  | String  | Sets the display text on the kiosk account if **KioskModeAUMID** has been set.  |
+| KioskModeUserTileDisplayText  | String  | Sets the display text on the kiosk account if **KioskModeAUMID** has been set.  | 
 
-## EnableSharedPCMode
+## EnableSharedPCMode 
 
-Set as **True** to enable **Shared PC Mode**. This setting controls this API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings).
+Set as **True** to enable **Shared PC Mode**. This setting controls this API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings). 
 
-## EnableSharedPCModeWithOneDriveSync
+## EnableSharedPCModeWithOneDriveSync 
 
-Set as **True** to enable **Shared PC Mode**. This setting controls this API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings).
+Set as **True** to enable **Shared PC Mode**. This setting controls this API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings). 
 
 
-## PolicyCustomization
+## PolicyCustomization 
 
-Use these settings to configure additional Shared PC policies.
+Use these settings to configure additional Shared PC policies. 
 
 | Setting | Value | Description |
 | --- | --- | --- |
@@ -59,8 +56,8 @@ Use these settings to configure additional Shared PC policies.
 | SetEduPolicies  | True or false  | Set to **True** for PCs that will be used in a school. For more information, see [Windows 10 configuration recommendations for education customers](/education/windows/configure-windows-for-education). This setting controls this API: [IsEducationEnvironment](/uwp/api/windows.system.profile.educationsettings)  |
 | SetPowerPolicies  | True or false  | When set as **True**:</br></br>- Prevents users from changing power settings</br>- Turns off hibernate</br>- Overrides all power state transitions to sleep, such as a lid close.  |
 | SignInOnResume  | True or false  | This setting specifies if the user is required to sign in with a password when the PC wakes from sleep.  |
-| SleepTimeout  | Number  | Specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.  |
+| SleepTimeout  | Number  | Specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.  | 
 
-## Related articles
+## Related articles 
 
 - [Set up shared or guest PC](../set-up-shared-or-guest-pc.md)

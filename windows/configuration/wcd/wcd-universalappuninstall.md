@@ -1,43 +1,40 @@
 ---
-title: UniversalAppUninstall (Windows 10)
-description: This section describes the UniversalAppUninstall settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
+title: UniversalAppUninstall
+description: This section describes the UniversalAppUninstall settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
+
 ms.topic: reference
-ms.collection: must-keep
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
+appliesto: 
+ 
+
 ms.date: 12/31/2017
----
+--- 
 
-# UniversalAppUninstall (reference)
-
-
-Use UniversalAppUninstall settings to uninstall or remove Windows apps.
+# UniversalAppUninstall (reference) 
 
 
-## Applies to
+Use UniversalAppUninstall settings to uninstall or remove Windows apps. 
+
+
+## Applies to 
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | 
-| [RemoveProvisionedApp](#removeprovisionedapp) | ✔️ |  |  |   |
-| [Uninstall](#uninstall) | ✔️ | ✔️ |  | ✔️  |
 
-## RemoveProvisionedApp
+| [RemoveProvisionedApp](#removeprovisionedapp) | ✅ |  |  |   |
+| [Uninstall](#uninstall) | ✅ | ✅ |  | ✅  | 
 
-Universal apps can be *provisioned*. Provisioned means that they're available on the device for installation in user context. When a user runs the provisioned app, the app is then installed for that user. 
+## RemoveProvisionedApp 
 
-Use **RemoveProvisionedApp** to remove app packages that are available on the device. Any instances of the app that have already been installed by a user aren't uninstalled. To uninstall provisioned apps that have been installed by a user, use the [Uninstall](#uninstall) setting.
+Universal apps can be *provisioned*. Provisioned means that they're available on the device for installation in user context. When a user runs the provisioned app, the app is then installed for that user.  
+
+Use **RemoveProvisionedApp** to remove app packages that are available on the device. Any instances of the app that have already been installed by a user aren't uninstalled. To uninstall provisioned apps that have been installed by a user, use the [Uninstall](#uninstall) setting. 
 
 1. Enter the PackageFamilyName for the app package, and then select **Add**.
-2. Select the PackageFamilyName in the Available Customizations pane, and then select **RemoveProvisionedApp**.
+2. Select the PackageFamilyName in the Available Customizations pane, and then select **RemoveProvisionedApp**. 
 
-## Uninstall
+## Uninstall 
 
-Use **Uninstall** to remove provisioned apps that have been installed by a user.
+Use **Uninstall** to remove provisioned apps that have been installed by a user. 
 
 1. Enter the PackageFamilyName for the app package, and then select **Add**.
 2. Select the PackageFamilyName in the Available Customizations pane, and then select **Uninstall**.

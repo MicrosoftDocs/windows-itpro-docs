@@ -1,23 +1,12 @@
 ---
 title: Security Considerations for UE-V
 description: Learn about accounts and groups, log files, and other security-related considerations for User Experience Virtualization (UE-V).
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Security Considerations for UE-V
 
-**Applies to**
--   Windows 10, version 1607
 
 This topic contains a brief overview of accounts and groups, log files, and other security-related considerations for User Experience Virtualization (UE-V). For more information, follow the links that are provided here.
 
@@ -29,11 +18,11 @@ This topic contains a brief overview of accounts and groups, log files, and othe
 
 Because settings packages might contain personal information, you should take care to protect them as much as possible. In general, do the following steps:
 
--   Restrict the share to only those users who require access. Create a security group for users who have redirected folders on a particular share and limit access to only those users.
+- Restrict the share to only those users who require access. Create a security group for users who have redirected folders on a particular share and limit access to only those users.
 
--   When you create the share, hide the share by putting a $ after the share name. This addition hides the share from casual browsers, and the share isn't visible in My Network Places.
+- When you create the share, hide the share by putting a $ after the share name. This addition hides the share from casual browsers, and the share isn't visible in My Network Places.
 
--   Only give users the minimum number of permissions that they must have. The following tables show the required permissions.
+- Only give users the minimum number of permissions that they must have. The following tables show the required permissions.
 
 1.  Set the following share-level SMB permissions for the setting storage location folder.
 
@@ -68,25 +57,25 @@ Because settings packages might contain personal information, you should take ca
     |Everyone|No permissions|No permissions|
     |Administrators|Full Control|This folder, subfolders, and files|
 
-### Use Windows Server as of Windows Server 2003 to host redirected file shares
+### Use Windows Server as of Windows Server 2003 to host redirected file shares
 
 User settings package files contain personal information that is transferred between the client computer and the server that stores the settings packages. Because of this process, you should ensure that the data is protected while it travels over the network.
 
 User settings data is vulnerable to these potential threats: interception of the data as it passes over the network, tampering with the data as it passes over the network, and spoofing of the server that hosts the data.
 
-As of Windows Server 2003, several features of the Windows Server operating system can help secure user data:
+As of Windows Server 2003, several features of the Windows Server operating system can help secure user data:
 
--   **Kerberos** - Kerberos is standard on all versions of Microsoft Windows 2000 Server and Windows Server beginning with Windows Server 2003. Kerberos ensures the highest level of security to network resources. NTLM authenticates the client only; Kerberos authenticates the server and the client. When NTLM is used, the client doesn't know whether the server is valid. This difference is important if the client exchanges personal files with the server, as is the case with Roaming User Profiles. Kerberos provides better security than NTLM. Kerberos isn't available on the Microsoft Windows NT Server 4.0 or earlier operating systems.
+- **Kerberos** - Kerberos is standard on all versions of Microsoft Windows 2000 Server and Windows Server beginning with Windows Server 2003. Kerberos ensures the highest level of security to network resources. NTLM authenticates the client only; Kerberos authenticates the server and the client. When NTLM is used, the client doesn't know whether the server is valid. This difference is important if the client exchanges personal files with the server, as is the case with Roaming User Profiles. Kerberos provides better security than NTLM. Kerberos isn't available on the Microsoft Windows NT Server 4.0 or earlier operating systems.
 
--   **IPsec** - The IP Security Protocol (IPsec) provides network-level authentication, data integrity, and encryption. IPsec ensures that:
+- **IPsec** - The IP Security Protocol (IPsec) provides network-level authentication, data integrity, and encryption. IPsec ensures that:
 
-    -   Roamed data is safe from data modification while data is en route.
+    - Roamed data is safe from data modification while data is en route.
 
-    -   Roamed data is safe from interception, viewing, or copying.
+    - Roamed data is safe from interception, viewing, or copying.
 
-    -   Roamed data is safe from access by unauthenticated parties.
+    - Roamed data is safe from access by unauthenticated parties.
 
--   **SMB Signing** - The Server Message Block (SMB) authentication protocol supports message authentication, which prevents active message and "man-in-the-middle" attacks. SMB signing provides this authentication by placing a digital signature into each SMB. The digital signature is then verified by both the client and the server. In order to use SMB signing, you must first either enable it, or you must require it on both the SMB client and the SMB server. The SMB signing imposes a performance penalty. It doesn't consume any more network bandwidth, but it uses more CPU cycles on the client and server side.
+- **SMB Signing** - The Server Message Block (SMB) authentication protocol supports message authentication, which prevents active message and "man-in-the-middle" attacks. SMB signing provides this authentication by placing a digital signature into each SMB. The digital signature is then verified by both the client and the server. In order to use SMB signing, you must first either enable it, or you must require it on both the SMB client and the SMB server. The SMB signing imposes a performance penalty. It doesn't consume any more network bandwidth, but it uses more CPU cycles on the client and server side.
 
 ### Always use the NTFS file system for volumes that hold user data
 
@@ -128,9 +117,9 @@ When a settings location template is being created, the UE-V generator uses a Li
 
 If you plan to share settings location templates with anyone outside your organization, you should review all the settings locations and ensure the settings location templates don't contain any personal or company information. You can view the contents by opening the settings location template files using any XML viewer. The following are ways you can view and remove any personal or company information from the settings location template files before sharing with anyone outside your company:
 
--   **Template Author Name** – Specify a general, non-identifying name for the template author name or exclude this data from the template.
+- **Template Author Name** - Specify a general, non-identifying name for the template author name or exclude this data from the template.
 
--   **Template Author Email** – Specify a general, non-identifying template author email or exclude this data from the template.
+- **Template Author Email** - Specify a general, non-identifying template author email or exclude this data from the template.
 
 To remove the template author name or template author email, you can use the UE-V generator application. From the generator, select **Edit a Settings Location Template**. Select the settings location template to edit from the recently used templates or Browse to the settings template file. Select **Next** to continue. On the Properties page, remove the data from the Template author name or Template author email text fields. Save the settings location template.
 

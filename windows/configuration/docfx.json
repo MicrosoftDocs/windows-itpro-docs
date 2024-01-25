@@ -41,9 +41,8 @@
       "zone_pivot_group_filename": "resources/zone-pivot-groups.json",
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Windows",
-      "ms.technology": "itpro-configure",
-      "ms.topic": "article",
-      "ms.prod": "windows-client",
+      "ms.subservice": "itpro-configure",
+      "ms.service": "windows-client",
       "manager": "aaroncz",
       "feedback_system": "Standard",
             "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
@@ -73,10 +72,48 @@
       "feedback_system": {
         "ue-v/**/*.*": "None",
         "cortana-at-work/**/*.*": "None"
+      },
+      "author":{
+        "*//**/*.md": "paolomatarazzo",
+        "*//**/*.yml": "paolomatarazzo",
+        "cortana-at-work//**/*.md": "aczechowski",
+        "cortana-at-work//**/*.yml": "aczechowski",
+        "wcd//**/*.md": "aczechowski",
+        "wcd//**/*.yml": "aczechowski",
+        "ue-v//**/*.md": "aczechowski",
+        "ue-v//**/*.yml": "aczechowski"
+      },
+      "ms.author":{
+        "*//**/*.md": "paoloma",
+        "*//**/*.yml": "paoloma",
+        "cortana-at-work//**/*.md": "aaroncz",
+        "cortana-at-work//**/*.yml": "aaroncz",
+        "wcd//**/*.md": "aaroncz",
+        "wcd//**/*.yml": "aaroncz",
+        "ue-v//**/*.md": "aaroncz",
+        "ue-v//**/*.yml": "aaroncz"
+      },
+      "ms.collection":{
+        "cortana-at-work//**/*.md": "tier3",
+        "wcd//**/*.md": "must-keep",
+        "ue-v//**/*.md": [
+          "must-keep",
+          "tier3"
+        ]
+      },
+      "appliesto": {
+        "*/**/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
+        ],
+        "wcd//**/*.md": "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
       }
     },
     "template": [],
     "dest": "win-configuration",
     "markdownEngineName": "markdig"
   }
-}
+} 
+
+
+

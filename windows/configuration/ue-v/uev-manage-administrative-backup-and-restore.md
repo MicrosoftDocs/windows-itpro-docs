@@ -1,23 +1,12 @@
 ---
 title: Manage Administrative Backup and Restore in UE-V
 description: Learn how an administrator of User Experience Virtualization (UE-V) can back up and restore application and Windows settings to their original state.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Manage Administrative Backup and Restore in UE-V
 
-**Applies to**
--   Windows 10, version 1607
 
 As an administrator of User Experience Virtualization (UE-V), you can restore application and Windows settings to their original state. You can also restore more settings when a user adopts a new device.
 
@@ -30,9 +19,9 @@ To restore settings when a user adopts a new device, you can put a settings loca
 Set-UevTemplateProfile -ID <TemplateID> -Profile <backup>
 ```
 
--   &lt;TemplateID&gt; is the UE-V Template ID
+- &lt;TemplateID&gt; is the UE-V Template ID
 
--   &lt;backup&gt; can either be Backup or Roaming
+- &lt;backup&gt; can either be Backup or Roaming
 
 When a user’s device is being replaced, UE-V automatically restores settings if the user’s domain, username, and device name all match. All synchronized and any backup data is restored on the device automatically.
 
@@ -52,23 +41,23 @@ As part of the Backup/Restore feature, UE-V added **last known good (LKG)** to t
 
 Here are the key backup and restore components of UE-V:
 
--   Template profiles
+- Template profiles
 
--   Settings packages location within the Settings Storage Location template
+- Settings packages location within the Settings Storage Location template
 
--   Backup trigger
+- Backup trigger
 
--   How settings are restored
+- How settings are restored
 
 **Template Profiles**
 
 A UE-V template profile is defined when the template is registered on the device or post registration through the PowerShell/WMI configuration utility. The profile types include:
 
--   Roaming (default)
+- Roaming (default)
 
--   Backup
+- Backup
 
--   BackupOnly
+- BackupOnly
 
 All templates are included in the roaming profile when registered unless otherwise specified. These templates synchronize settings to all UE-V enabled devices with the corresponding template enabled.
 
@@ -88,16 +77,17 @@ Backup is triggered by the same events that trigger a UE-V synchronization.
 
 Restoring a user’s device restores the currently registered Template’s settings from another device’s backup folder and all synchronized settings to the current machine. Settings are restored in these two ways:
 
--   **Automatic restore**
+- **Automatic restore**
 
     If the user’s UE-V settings storage path, domain, and Computer name match the current user then all of the settings for that user are synchronized, with only the latest settings applied. If a user signs in to a new device for the first time and these criteria are met, the settings data is applied to that device.
 
-    **Note**  
+    **Note** 
+
     Accessibility and Windows Desktop settings require the user to sign in again to Windows to be applied.
 
 
 
--   **Manual Restore**
+- **Manual Restore**
 
     If you want to assist users by restoring a device during a refresh, you can choose to use the Restore-UevBackup cmdlet. This command ensures that the user’s current settings become the current state on the Settings Storage Location.
 
@@ -115,7 +105,8 @@ WMI and Windows PowerShell commands let you restore application and Windows sett
      |**Windows PowerShell cmdlet**|**Description**|
      |--- |--- |
      |`Restore-UevUserSetting -<TemplateID>` |Restores the user settings for an application or restores a group of Windows settings.|
-   
+  
+
 **To restore application settings and Windows settings with WMI**
 
 1.  Open a Windows PowerShell window.

@@ -1,50 +1,48 @@
 ---
-title: Connections (Windows 10)
-description: This section describes the Connections settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
+title: Connections
+description: This section describes the Connections settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer. 
+
 ms.topic: reference
-ms.collection: must-keep
-ms.date: 04/30/2018
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
----
+appliesto: 
 
-# Connections (Windows Configuration Designer reference)
+ms.date: 04/30/2018 
 
-Use to configure settings related to various types of phone connections.
+--- 
 
-## Applies to
+# Connections (Windows Configuration Designer reference) 
+
+Use to configure settings related to various types of phone connections. 
+
+## Applies to 
 
 | Setting groups  | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | 
-| All settings  | ✔️ | ✔️ |  |  |
+
+| All settings  | ✅ | ✅ |  |  | 
 
 
 For each setting group:
 1. In **Available customizations**, select the setting group (such as **Cellular**), enter a friendly name for the connection, and then click **Add**.
-2. In **Available customizations**, select the name that you created. 
+2. In **Available customizations**, select the name that you created.  
 
-## Cellular
+## Cellular 
 
-See [CM_CellularEntries configuration service provider (CSP)](/windows/client-management/mdm/cm-cellularentries-csp) for settings and values.
+See [CM_CellularEntries configuration service provider (CSP)](/windows/client-management/mdm/cm-cellularentries-csp) for settings and values. 
 
-## EnterpriseAPN
+## EnterpriseAPN 
 
 See [Configure cellular settings for tablets and PCs](../provisioning-apn.md) and 
-[EnterpriseAPN CSP](/windows/client-management/mdm/enterpriseapn-csp) for settings and values.
 
-## General
+[EnterpriseAPN CSP](/windows/client-management/mdm/enterpriseapn-csp) for settings and values. 
 
-Use **General > DataRoam** to set the default value for the **Default roaming options** option in the **Settings > cellular + SIM** area on the device. Select between **DoNotRoam**, **DomesticRoaming**, or **InternationalRoaming**. 
+## General 
 
-## Policies
+Use **General > DataRoam** to set the default value for the **Default roaming options** option in the **Settings > cellular + SIM** area on the device. Select between **DoNotRoam**, **DomesticRoaming**, or **InternationalRoaming**.  
 
-See [CMPolicy CSP](/windows/client-management/mdm/cmpolicy-csp) for settings and values.
+## Policies 
 
-## Proxies
+See [CMPolicy CSP](/windows/client-management/mdm/cmpolicy-csp) for settings and values. 
+
+## Proxies 
 
 See [CM_ProxyEntries CSP](/windows/client-management/mdm/cm-proxyentries-csp) for settings and values.

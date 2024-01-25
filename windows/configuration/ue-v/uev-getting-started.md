@@ -1,22 +1,11 @@
 ---
 title: Get Started with UE-V
 description: Use the steps in this article to deploy User Experience Virtualization (UE-V) for the first time in a test environment.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 03/08/2018
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
-ms.technology: itpro-configure
 ---
 
 # Get Started with UE-V
 
-**Applies to**
--   Windows 10, version 1607
 
 >[!NOTE]
 >This documentation is for the most recent version of UE-V. If you're looking for information about UE-V 2.x, which was included in the Microsoft Desktop Optimization Pack (MDOP), see [Get Started with UE-V 2.x](/microsoft-desktop-optimization-pack/uev-v2/get-started-with-ue-v-2x-new-uevv2).
@@ -28,15 +17,15 @@ Follow the steps in this topic to deploy User Experience Virtualization (UE-V) f
 
 The standard installation of UE-V synchronizes the default Microsoft Windows and Office settings and many Windows applications settings. For best results, ensure that your test environment includes two or more user computers that share network access.
 
--   [Step 1: Confirm prerequisites](#step-1-confirm-prerequisites). Review the supported configurations in this section to verify that your environment is able to run UE-V.
+- [Step 1: Confirm prerequisites](#step-1-confirm-prerequisites). Review the supported configurations in this section to verify that your environment is able to run UE-V.
 
--   [Step 2: Deploy the settings storage location](#step-2-deploy-the-settings-storage-location). Explains how to deploy a settings storage location. All UE-V deployments require a location to store settings packages that contain the synchronized setting values.
+- [Step 2: Deploy the settings storage location](#step-2-deploy-the-settings-storage-location). Explains how to deploy a settings storage location. All UE-V deployments require a location to store settings packages that contain the synchronized setting values.
 
--   [Step 3: Enable and configure the UE-V service](#step-3-enable-and-configure-the-ue-v-service-on-user-devices). Explains how to enable to UE-V service on user devices and configure the storage path. To synchronize settings using UE-V, devices must have the UE-V service enabled and running.
+- [Step 3: Enable and configure the UE-V service](#step-3-enable-and-configure-the-ue-v-service-on-user-devices). Explains how to enable to UE-V service on user devices and configure the storage path. To synchronize settings using UE-V, devices must have the UE-V service enabled and running.
 
--   [Step 4: Test Your UE-V evaluation deployment](#step-4-test-your-ue-v-evaluation-deployment). Run a few tests on two computers with the UE-V service enabled to see how UE-V works and if it meets your organization’s needs.
+- [Step 4: Test Your UE-V evaluation deployment](#step-4-test-your-ue-v-evaluation-deployment). Run a few tests on two computers with the UE-V service enabled to see how UE-V works and if it meets your organization’s needs.
 
--   Step 5: Deploy UE-V for custom applications (optional). If you want to evaluate how your third-party and line-of-business applications work with UE-V, follow the steps in [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md). Following this link takes you to another topic. Use your browser’s **Back** button to return to this topic.
+- Step 5: Deploy UE-V for custom applications (optional). If you want to evaluate how your third-party and line-of-business applications work with UE-V, follow the steps in [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md). Following this link takes you to another topic. Use your browser’s **Back** button to return to this topic.
 
 ## Step 1: Confirm prerequisites
 
@@ -137,15 +126,15 @@ You’re ready to run a few tests on your UE-V evaluation deployment to see how 
 
 1.  On the first device (Computer A), make one or more of these changes:
 
-    -   Open Windows Desktop and move the taskbar to a different location in the window.
+    - Open Windows Desktop and move the taskbar to a different location in the window.
 
-    -   Change the default fonts.
+    - Change the default fonts.
 
-    -   Open Notepad and set format -&gt; word wrap **on**.
+    - Open Notepad and set format -&gt; word wrap **on**.
 
-    -   Change the behavior of any Windows application, as detailed in [Managing UE-V settings location templates using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).
+    - Change the behavior of any Windows application, as detailed in [Managing UE-V settings location templates using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).
 
-    -   Disable Microsoft Account settings synchronization and roaming profiles.
+    - Disable Microsoft Account settings synchronization and roaming profiles.
 
 2.  Log off Computer A. Settings are saved in a UE-V settings package when users lock, logoff, exit an application, or when the sync provider runs (every 30 minutes by default).
 
@@ -161,14 +150,14 @@ For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.c
 
 ## Other resources for this feature
 
--   [User Experience Virtualization overview](uev-for-windows.md)
+- [User Experience Virtualization overview](uev-for-windows.md)
 
--   [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
+- [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
 
--   [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
+- [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
 
--   [Administering UE-V](uev-administering-uev.md)
+- [Administering UE-V](uev-administering-uev.md)
 
--   [Troubleshooting UE-V](uev-troubleshooting.md)
+- [Troubleshooting UE-V](uev-troubleshooting.md)
 
--   [Technical Reference for UE-V](uev-technical-reference.md)
+- [Technical Reference for UE-V](uev-technical-reference.md)

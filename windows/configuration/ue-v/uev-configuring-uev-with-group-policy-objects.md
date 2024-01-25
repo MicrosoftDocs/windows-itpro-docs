@@ -1,23 +1,12 @@
 ---
 title: Configuring UE-V with Group Policy Objects
 description: In this article, learn how to configure User Experience Virtualization (UE-V) with Group Policy objects.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Configuring UE-V with Group Policy Objects
 
-**Applies to**
--   Windows 10, version 1607
 
 Some User Experience Virtualization (UE-V) Group Policy settings can be defined for computers, and other Group Policy settings can be defined for users. The Group Policy administrative templates for these settings are included in Windows 10, version 1607. 
 

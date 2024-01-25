@@ -1,23 +1,12 @@
 ---
 title: Administering UE-V
 description: Learn how to perform administrative tasks for User Experience Virtualization (UE-V). These tasks include configuring the UE-V service and recovering lost settings.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Administering UE-V
 
-**Applies to**
--   Windows 10, version 1607
 
 After you finish deploying User Experience Virtualization (UE-V), you'll perform ongoing administrative tasks, such as managing the configuration of the UE-V service and recovering lost settings. These tasks are explained in the following sections.
 
@@ -66,15 +55,15 @@ You can use UE-V with Microsoft Application Virtualization (App-V) to share sett
 ## Other resources for this feature
 
 
--   [User Experience Virtualization for Windows overview](uev-for-windows.md)
+- [User Experience Virtualization for Windows overview](uev-for-windows.md)
 
--   [Get Started with UE-V](uev-getting-started.md)
+- [Get Started with UE-V](uev-getting-started.md)
 
--   [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
+- [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
 
--   [Troubleshooting UE-V](uev-troubleshooting.md)
+- [Troubleshooting UE-V](uev-troubleshooting.md)
 
--   [Technical Reference for UE-V](uev-technical-reference.md)
+- [Technical Reference for UE-V](uev-technical-reference.md)
 
 
 

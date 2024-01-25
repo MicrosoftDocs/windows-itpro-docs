@@ -1,23 +1,12 @@
 ---
 title: User Experience Virtualization for Windows 10, version 1607
 description: Overview of User Experience Virtualization for Windows 10, version 1607
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 05/02/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # User Experience Virtualization (UE-V) for Windows 10 overview
 
-**Applies to**
--   Windows 10, version 1607
 
 Many users customize their settings for Windows and for specific applications. Customizable Windows settings include Microsoft Store appearance, language, background picture, font size, and accent colors. Customizable application settings include language, appearance, behavior, and user interface options. 
 
@@ -25,13 +14,13 @@ With User Experience Virtualization (UE-V), you can capture user-customized Wind
 
 **With UE-V you can…**
 
--   Specify which application and Windows settings synchronize across user devices
+- Specify which application and Windows settings synchronize across user devices
 
--   Deliver the settings anytime and anywhere users work throughout the enterprise
+- Deliver the settings anytime and anywhere users work throughout the enterprise
 
--   Create custom templates for your third-party or line-of-business applications
+- Create custom templates for your third-party or line-of-business applications
 
--   Recover settings after hardware replacement or upgrade, or after re-imaging a virtual machine to its initial state
+- Recover settings after hardware replacement or upgrade, or after re-imaging a virtual machine to its initial state
 
 With the release of Windows 10, version 1607, UE-V is included with the Windows 10 for Enterprise edition. If you are new to Windows 10 and UE-V or upgrading from a previous version of UE-V, you’ll need to download, activate, and install server- and client-side components to start synchronizing user-customized settings across devices.
 
@@ -72,32 +61,32 @@ Use these UE-V components to create and manage custom templates for your third-p
 
 UE-V synchronizes settings for these applications by default. For a complete list and more detailed information, see [Settings that are automatically synchronized in a UE-V deployment](uev-prepare-for-deployment.md).
 
--   Microsoft Office 2016, 2013, and 2010
+- Microsoft Office 2016, 2013, and 2010
 
--   Internet Explorer 11 and 10
+- Internet Explorer 11 and 10
 
--   Many Windows applications, such as Xbox
+- Many Windows applications, such as Xbox
 
--   Many Windows desktop applications, such as Notepad
+- Many Windows desktop applications, such as Notepad
 
--   Many Windows settings, such as desktop background or wallpaper
+- Many Windows settings, such as desktop background or wallpaper
 
 >**Note**
 You can also [customize UE-V to synchronize settings](uev-deploy-uev-for-custom-applications.md) for applications other than those synchronized by default.
 
 ## Other resources for this feature
 
--   [Get Started with UE-V for Windows 10](uev-getting-started.md)
+- [Get Started with UE-V for Windows 10](uev-getting-started.md)
 
--   [UE-V for Windows 10 Release Notes](uev-release-notes-1607.md)
+- [UE-V for Windows 10 Release Notes](uev-release-notes-1607.md)
 
--   [Prepare to deploy UE-V for Windows 10](uev-prepare-for-deployment.md)
+- [Prepare to deploy UE-V for Windows 10](uev-prepare-for-deployment.md)
 
--   [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
+- [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
 
--   [Administer UE-V for Windows 10](uev-administering-uev.md)
+- [Administer UE-V for Windows 10](uev-administering-uev.md)
 
--   [Technical Reference for UE-V for Windows 10](uev-technical-reference.md)
+- [Technical Reference for UE-V for Windows 10](uev-technical-reference.md)
 
 
 

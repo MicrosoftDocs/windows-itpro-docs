@@ -1,33 +1,24 @@
 ---
 title: Working with Custom UE-V Templates and the UE-V Template Generator
 description: Create your own custom settings location templates by working with Custom User Experience Virtualization (UE-V) Templates and the UE-V Template Generator.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 
 # Working with custom UE-V templates and the UE-V template generator
 
 **Applies to**
--   Windows 10
+- Windows 10
 
 User Experience Virtualization (UE-V) uses XML files called ***settings location templates*** to monitor and synchronize application settings and Windows settings between user devices. By default, some settings location templates are included in UE-V. However, if you want to synchronize settings for desktop applications other than those settings included in the default templates, you can create your own custom settings location templates with the UE-V template generator. You can also edit or validate custom settings location templates with the UE-V template generator.
 
 Use the UE-V template generator to monitor, discover, and capture the locations where Win32 applications store settings. The template generator doesn't create settings location templates for the following types of applications:
 
--   Virtualized applications
--   Applications that are offered through Terminal Services
--   Java applications
--   Windows applications
+- Virtualized applications
+- Applications that are offered through Terminal Services
+- Java applications
+- Windows applications
 
 ## Standard and non-standard settings locations
 
@@ -37,23 +28,23 @@ Discovered settings are grouped into two categories: **Standard** and **Non-stan
 
 The UE-V template generator opens the application as part of the discovery process. The generator can capture settings in the following locations:
 
--   **Registry Settings** - Registry locations under **HKEY\_CURRENT\_USER**
+- **Registry Settings** - Registry locations under **HKEY\_CURRENT\_USER**
 
--   **Application Settings Files** - Files that are stored under \\ **Users** \\ \[User name\] \\ **AppData** \\ **Roaming**
+- **Application Settings Files** - Files that are stored under \\ **Users** \\ \[User name\] \\ **AppData** \\ **Roaming**
 
 The UE-V template generator excludes locations, which commonly store application software files, but don't synchronize well between user computers or environments. The UE-V template generator excludes these locations. Excluded locations are as follows:
 
--   HKEY\_CURRENT\_USER registry keys and files to which the logged-on user can't write values
+- HKEY\_CURRENT\_USER registry keys and files to which the logged-on user can't write values
 
--   HKEY\_CURRENT\_USER registry keys and files that are associated with the core functionality of the Windows operating system
+- HKEY\_CURRENT\_USER registry keys and files that are associated with the core functionality of the Windows operating system
 
--   All registry keys that are located in the HKEY\_LOCAL\_MACHINE hive, which requires administrator rights and might require to set a User Account Control (UAC) agreement
+- All registry keys that are located in the HKEY\_LOCAL\_MACHINE hive, which requires administrator rights and might require to set a User Account Control (UAC) agreement
 
--   Files that are located in Program Files directories, which requires administrator rights and might require to set a UAC agreement
+- Files that are located in Program Files directories, which requires administrator rights and might require to set a UAC agreement
 
--   Files that are located under Users \\ \[User name\] \\ AppData \\ LocalLow
+- Files that are located under Users \\ \[User name\] \\ AppData \\ LocalLow
 
--   Windows operating system files that are located in %Systemroot%, which requires administrator rights and might require to set a UAC agreement
+- Windows operating system files that are located in %Systemroot%, which requires administrator rights and might require to set a UAC agreement
 
 If registry keys and files that are stored in these locations are required to synchronize application settings, you can manually add the excluded locations to the settings location template during the template creation process.
 
@@ -71,23 +62,23 @@ Use the UE-V template generator to edit settings location templates. When the re
 
 4.  Review the **Properties**, **Registry** locations, and **Files** locations for the settings template. Edit as required.
 
-    -   On the **Properties** tab, you can view and edit the following properties:
+    - On the **Properties** tab, you can view and edit the following properties:
 
-        -   **Application name** The application name that is written in the description of the program file properties.
+        - **Application name** The application name that is written in the description of the program file properties.
 
-        -   **Program name** The name of the program that is taken from the program file properties. This name usually has the .exe file name extension.
+        - **Program name** The name of the program that is taken from the program file properties. This name usually has the .exe file name extension.
 
-        -   **Product version** The product version number of the .exe file of the application. This property, together with the **File version**, helps determine which applications are targeted by the settings location template. This property accepts a major version number. If this property is empty, then the settings location template applies to all versions of the product.
+        - **Product version** The product version number of the .exe file of the application. This property, together with the **File version**, helps determine which applications are targeted by the settings location template. This property accepts a major version number. If this property is empty, then the settings location template applies to all versions of the product.
 
-        -   **File version** The file version number of the .exe file of the application. This property, along with the **Product version**, helps determine which applications are targeted by the settings location template. This property accepts a major version number. If this property is empty, the settings location template applies to all versions of the program.
+        - **File version** The file version number of the .exe file of the application. This property, along with the **Product version**, helps determine which applications are targeted by the settings location template. This property accepts a major version number. If this property is empty, the settings location template applies to all versions of the program.
 
-        -   **Template author name** (optional) The name of the settings template author.
+        - **Template author name** (optional) The name of the settings template author.
 
-        -   **Template author email** (optional) The email address of the settings location template author.
+        - **Template author email** (optional) The email address of the settings location template author.
 
-    -   The **Registry** tab lists the **Key** and **Scope** of the registry locations that are included in the settings location template. You can edit the registry locations by using the **Tasks** drop-down menu. In the Tasks menu, you can add new keys, edit the name or scope of existing keys, delete keys, and browse the registry in which the keys are located. When you define the scope for the registry, you can use the **All Settings** scope to include all the registry settings under the specified key. Use **All Settings** and **Subkeys** to include all the registry settings under the specified key, subkeys, and subkey settings.
+    - The **Registry** tab lists the **Key** and **Scope** of the registry locations that are included in the settings location template. You can edit the registry locations by using the **Tasks** drop-down menu. In the Tasks menu, you can add new keys, edit the name or scope of existing keys, delete keys, and browse the registry in which the keys are located. When you define the scope for the registry, you can use the **All Settings** scope to include all the registry settings under the specified key. Use **All Settings** and **Subkeys** to include all the registry settings under the specified key, subkeys, and subkey settings.
 
-    -   The **Files** tab lists the file path and file mask of the file locations that are included in the settings location template. You can edit the file locations by using the **Tasks** drop-down menu. In the **Tasks** menu for file locations, you can add new files or folder locations, edit the scope of existing files or folders, delete files or folders, and open the selected location in Windows Explorer. To include all files in the specified folder, leave the file mask empty.
+    - The **Files** tab lists the file path and file mask of the file locations that are included in the settings location template. You can edit the file locations by using the **Tasks** drop-down menu. In the **Tasks** menu for file locations, you can add new files or folder locations, edit the scope of existing files or folders, delete files or folders, and open the selected location in Windows Explorer. To include all files in the specified folder, leave the file mask empty.
 
 5.  Click **Save** to save the changes to the settings location template.
 
@@ -101,7 +92,8 @@ Use the UE-V template generator to edit settings location templates. When the re
 
     > [!NOTE]
     > A settings location template is unique because of the template **ID**. If you copy the template and rename the .xml file, template registration fails because UE-V reads the template **ID** tag in the .xml file to determine the name, not the file name of the .xml file. UE-V also reads the **Version** number to know if anything has changed. If the version number is higher, UE-V updates the template.
-     
+    
+
 2.  Open the settings location template file with an XML editor.
 
 3.  Edit the settings location template file. All changes must conform to the UE-V schema file that is defined in [SettingsLocationTempate.xsd](uev-application-template-schema-reference.md). By default, a copy of the .xsd file is located in \\ProgramData\\Microsoft\\UEV\\Templates.
@@ -140,9 +132,9 @@ The [User Experience Virtualization Template Gallery](https://gallery.technet.mi
 
 Before you share a settings location template on the UE-V template gallery, ensure it doesn't contain any personal or company information. You can use any XML viewer to open and view the contents of a settings location template file. The following template values should be reviewed before you share a template with anyone outside your company.
 
--   Template Author Name – Specify a general, non-identifying name for the template author name or exclude this data from the template.
+- Template Author Name - Specify a general, non-identifying name for the template author name or exclude this data from the template.
 
--   Template Author Email – Specify a general, non-identifying template author email or exclude this data from the template.
+- Template Author Email - Specify a general, non-identifying template author email or exclude this data from the template.
 
 Before you deploy any settings location template that you've downloaded from the UE-V gallery, you should first test the template to ensure that the application settings synchronize settings correctly in a test environment.
 

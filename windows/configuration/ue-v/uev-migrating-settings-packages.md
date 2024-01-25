@@ -1,29 +1,18 @@
 ---
 title: Migrating UE-V settings packages
 description: Learn to relocate User Experience Virtualization (UE-V) user settings packages either when you migrate to a new server or when you perform backups.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Migrating UE-V settings packages
 
-**Applies to**
--   Windows 10, version 1607
 
 In the lifecycle of a User Experience Virtualization (UE-V) deployment, you might have to relocate the user settings packages either when you migrate to a new server or when you perform backups. Settings packages might have to be migrated in the following scenarios:
 
--   Upgrade of existing server hardware to a more modern server
+- Upgrade of existing server hardware to a more modern server
 
--   Migration of a settings storage location share from a test server to a production server
+- Migration of a settings storage location share from a test server to a production server
 
 Simply copying the files and folders doesn't preserve the security settings and permissions. The following steps describe how to correctly copy the settings package along with their NTFS file system permissions to a new share.
 
@@ -39,7 +28,8 @@ Simply copying the files and folders doesn't preserve the security settings and 
     C:\start robocopy "\\servername\E$\MySettings" "\\servername\E$\MySettings" /b /sec /secfix /e /LOG:D:\Robocopylogs\MySettings.txt
     ```
 
-    **Note**  
+    **Note** 
+
     To monitor the copy progress, open MySettings.txt with a log viewer such as Trace32.
 
      

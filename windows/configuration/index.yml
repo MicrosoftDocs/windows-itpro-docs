@@ -1,7 +1,7 @@
-### YamlMime:Landing
+### YamlMime:Landing 
 
 title: Configure Windows client # < 60 chars
-summary: Find out how to apply custom configurations to Windows client devices. # < 160 chars
+summary: Find out how to apply custom configurations to Windows client devices. # < 160 chars 
 
 metadata:
   title: Configure Windows client # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -16,7 +16,8 @@ metadata:
   ms.date: 12/20/2023
   localization_priority: medium
     
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new 
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
@@ -33,7 +34,7 @@ landingContent:
           - text: Configure Windows Spotlight on the lock screen
             url: windows-spotlight.md
           - text: Accessibility information for IT pros
-            url: windows-accessibility-for-itpros.md
+            url: windows-accessibility-for-itpros.md 
 
 
   # Card (optional)
@@ -48,7 +49,7 @@ landingContent:
           - text: Set up a multi-app kiosk for Windows 11
             url: lock-down-windows-11-to-specific-apps.md
           - text: Manage multi-user and guest devices
-            url: shared-devices-concepts.md
+            url: shared-devices-concepts.md 
 
 
   # Card (optional)
@@ -63,7 +64,7 @@ landingContent:
           - text: Create a provisioning package
             url: provisioning-packages/provisioning-create-package.md
           - text: Apply a provisioning package
-            url: provisioning-packages/provisioning-apply-package.md
+            url: provisioning-packages/provisioning-apply-package.md 
 
   # Card (optional)
   - title: Use Windows Configuration Designer (WCD)
@@ -77,7 +78,7 @@ landingContent:
           - text: ProvisioningCommands
             url: wcd/wcd-provisioningcommands.md
           - text:  Accounts
-            url: wcd/wcd-accounts.md
+            url: wcd/wcd-accounts.md 
 
   # Card (optional)
   - title: Configure Cortana in Windows client
@@ -87,7 +88,8 @@ landingContent:
           - text: Configure Cortana in Windows 10
             url: cortana-at-work/cortana-at-work-overview.md
           - text: Custom voice commands in Cortana 
-            url: cortana-at-work/cortana-at-work-voice-commands.md
+
+            url: cortana-at-work/cortana-at-work-voice-commands.md 
 
   # Card (optional)
   - title: User Experience Virtualization (UE-V) for Windows client

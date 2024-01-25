@@ -1,23 +1,12 @@
 ---
 title: Sync Trigger Events for UE-V
 description: Learn how User Experience Virtualization (UE-V) lets you synchronize your application and Windows settings across all your domain-joined devices.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Sync Trigger Events for UE-V
 
-**Applies to**
--   Windows 10, version 1607
 
 User Experience Virtualization (UE-V) lets you synchronize your application and Windows settings across all your domain-joined devices. *Sync trigger events* define when the UE-V service synchronizes those settings with the settings storage location. For more information about Sync Method configuration, see [Sync Methods for UE-V](uev-sync-methods.md).
 

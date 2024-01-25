@@ -1,23 +1,12 @@
 ---
 title: Troubleshooting UE-V
 description: Use this technical reference to find resources for troubleshooting User Experience Virtualization (UE-V) for Windows 10.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Troubleshooting UE-V
 
-**Applies to**
--   Windows 10, version 1607
 
 
 For information that can help with troubleshooting UE-V for Windows 10, see:
@@ -34,13 +23,13 @@ For information that can help with troubleshooting UE-V for Windows 10, see:
 
 ## Other resources
 
--   [User Experience Virtualization overview](uev-for-windows.md)
+- [User Experience Virtualization overview](uev-for-windows.md)
 
--   [Get Started with UE-V](uev-getting-started.md)
+- [Get Started with UE-V](uev-getting-started.md)
 
--   [Prepare a UE-V deployment](uev-prepare-for-deployment.md)
+- [Prepare a UE-V deployment](uev-prepare-for-deployment.md)
 
--   [Administering UE-V](uev-administering-uev.md)
+- [Administering UE-V](uev-administering-uev.md)
 
 
 

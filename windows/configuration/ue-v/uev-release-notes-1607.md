@@ -1,23 +1,12 @@
 ---
 title: User Experience Virtualization (UE-V) Release Notes
 description: Read the latest information required to successfully install and use User Experience Virtualization (UE-V) that isn't included in the UE-V documentation.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # User Experience Virtualization (UE-V) Release Notes
 
-**Applies to**
--   Windows 10, version 1607
 
 This topic includes information required to successfully install and use UE-V that isn't included in the User Experience Virtualization (UE-V) documentation. If there are differences between the information in this topic and other UE-V topics, the latest change should be considered authoritative.
 
@@ -106,14 +95,14 @@ WORKAROUND: None
 
 - [How To Enable Debug Logging in Microsoft User Experience Virtualization (UE-V)](/troubleshoot/windows-client/ue-v/enable-debug-logging)
 
--   [User Experience Virtualization](uev-for-windows.md)
+- [User Experience Virtualization](uev-for-windows.md)
 
--   [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
+- [Prepare a UE-V Deployment](uev-prepare-for-deployment.md)
 
--   [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
+- [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
 
--   [Administering UE-V](uev-administering-uev.md)
+- [Administering UE-V](uev-administering-uev.md)
 
--   [Troubleshooting UE-V](uev-troubleshooting.md)
+- [Troubleshooting UE-V](uev-troubleshooting.md)
 
--   [Technical Reference for UE-V](uev-technical-reference.md)
+- [Technical Reference for UE-V](uev-technical-reference.md)

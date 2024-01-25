@@ -1,33 +1,22 @@
 ---
 title: Changing the Frequency of UE-V Scheduled Tasks
 description: Learn how to create a script that uses the Schtasks.exe command-line options so you can change the frequency of UE-V scheduled tasks.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Changing the Frequency of UE-V Scheduled Tasks
 
-**Applies to**
--   Windows 10, version 1607
 
 When the User Experience Virtualization (UE-V) service is enabled, it creates the following scheduled tasks:
 
--   [Monitor Application Settings](#monitor-application-settings)
+- [Monitor Application Settings](#monitor-application-settings)
 
--   [Sync Controller Application](#sync-controller-application)
+- [Sync Controller Application](#sync-controller-application)
 
--   [Synchronize Settings at Logoff](#synchronize-settings-at-logoff)
+- [Synchronize Settings at Logoff](#synchronize-settings-at-logoff)
 
--   [Template Auto Update](#template-auto-update)
+- [Template Auto Update](#template-auto-update)
 
 > [!NOTE]
 > These tasks must remain enabled, because UE-V cannot function without them.
@@ -99,11 +88,11 @@ The following chart provides additional information about scheduled tasks for UE
 
 **Legend**
 
--   **Power Toggle** – Task Scheduler will optimize power consumption when not connected to AC power. The task might stop running if the computer switches to battery power.
+- **Power Toggle** - Task Scheduler will optimize power consumption when not connected to AC power. The task might stop running if the computer switches to battery power.
 
--   **Idle Only** – The task will stop running if the computer ceases to be idle. By default the task won't restart when the computer is idle again. Instead the task will begin again on the next task trigger.
+- **Idle Only** - The task will stop running if the computer ceases to be idle. By default the task won't restart when the computer is idle again. Instead the task will begin again on the next task trigger.
 
--   **Network Connection** – Tasks marked “Yes” only run if the computer has a network connection available. Tasks marked “N/A” run regardless of network connectivity.
+- **Network Connection** - Tasks marked “Yes” only run if the computer has a network connection available. Tasks marked “N/A” run regardless of network connectivity.
 
 ### How to Manage Scheduled Tasks
 
@@ -119,13 +108,13 @@ To find Scheduled Tasks, perform the following steps:
 
 The following additional information applies to UE-V scheduled tasks:
 
--   All task sequence programs are located in the UE-V Agent installation folder, `%programFiles%\Microsoft User Experience Virtualization\Agent\[architecture]\`, by default.
+- All task sequence programs are located in the UE-V Agent installation folder, `%programFiles%\Microsoft User Experience Virtualization\Agent\[architecture]\`, by default.
 
--   The Sync Controller Application Scheduled task is the crucial component when the UE-V SyncMethod is set to “SyncProvider” (UE-V default configuration). This scheduled task keeps the SettingsSToragePath synchronized with the locally cached versions of the settings package files. If users complain that settings don't synchronize often enough, then you can reduce the scheduled task setting to as little as 1 minute.  You can also increase the 30-min default to a higher amount if necessary.
+- The Sync Controller Application Scheduled task is the crucial component when the UE-V SyncMethod is set to “SyncProvider” (UE-V default configuration). This scheduled task keeps the SettingsSToragePath synchronized with the locally cached versions of the settings package files. If users complain that settings don't synchronize often enough, then you can reduce the scheduled task setting to as little as 1 minute.  You can also increase the 30-min default to a higher amount if necessary.
 
--   You don't need to disable the Template Auto Update scheduled task if you use another method to keep the clients’ templates in sync (that is, Group Policy or Configuration Manager Baselines). Leaving the SettingsTemplateCatalog property value blank prevents UE-V from checking the settings catalog for custom templates. This scheduled task runs ApplySettingsCatalog.exe and will essentially return immediately.
+- You don't need to disable the Template Auto Update scheduled task if you use another method to keep the clients’ templates in sync (that is, Group Policy or Configuration Manager Baselines). Leaving the SettingsTemplateCatalog property value blank prevents UE-V from checking the settings catalog for custom templates. This scheduled task runs ApplySettingsCatalog.exe and will essentially return immediately.
 
--   The Monitor Application Settings scheduled task will update Windows app (AppX) settings in real time, based on Windows app program setting triggers built into each app.
+- The Monitor Application Settings scheduled task will update Windows app (AppX) settings in real time, based on Windows app program setting triggers built into each app.
 
 
 

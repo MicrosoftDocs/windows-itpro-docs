@@ -640,7 +640,7 @@ SCEP enrolled cert doesn’t support TPM PIN protection. </Description>
                 <Replace />
               </AccessType>
               <DefaultValue>5</DefaultValue>
-              <Description>Optional. When the SCEP server sends pending status, specify device retry waiting time in minutes. 
+              <Description>Optional. When the SCEP server sends pending status, specify device retry waiting time in minutes.
 
 Default value is: 5
 The min value is 1. </Description>
@@ -764,7 +764,7 @@ Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.</D
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Required for enrollment. Hash algorithm family (SHA-1, SHA-2, SHA-3) specified by MDM server. If multiple hash algorithm families are specified, they must be separated via +. 
+              <Description>Required for enrollment. Hash algorithm family (SHA-1, SHA-2, SHA-3) specified by MDM server. If multiple hash algorithm families are specified, they must be separated via +.
 
 For NGC, only SHA256 is supported as the supported algorithm</Description>
               <DFFormat>
@@ -1723,7 +1723,7 @@ SCEP enrolled cert doesn’t support TPM PIN protection. </Description>
                 <Replace />
               </AccessType>
               <DefaultValue>5</DefaultValue>
-              <Description>Optional. When the SCEP server sends pending status, specify device retry waiting time in minutes. 
+              <Description>Optional. When the SCEP server sends pending status, specify device retry waiting time in minutes.
 
 Default value is: 5
 The min value is 1. </Description>
@@ -1847,7 +1847,7 @@ Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.</D
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Required for enrollment. Hash algorithm family (SHA-1, SHA-2, SHA-3) specified by MDM server. If multiple hash algorithm families are specified, they must be separated via +. 
+              <Description>Required for enrollment. Hash algorithm family (SHA-1, SHA-2, SHA-3) specified by MDM server. If multiple hash algorithm families are specified, they must be separated via +.
 
 For NGC, only SHA256 is supported as the supported algorithm</Description>
               <DFFormat>

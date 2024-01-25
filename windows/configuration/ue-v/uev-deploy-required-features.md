@@ -1,35 +1,24 @@
 ---
 title: Deploy required UE-V features
 description: Learn how to install and configure User Experience Virtualization (UE-V) features, for example, a network share that stores and retrieves user settings.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Deploy required UE-V features
 
-**Applies to**
--   Windows 10, version 1607
 
 To get up and running with User Experience Virtualization (UE-V), install and configure the following features.
 
--   [Deploy a settings storage location](#deploy-a-ue-v-settings-storage-location) that is accessible to end users.
+- [Deploy a settings storage location](#deploy-a-ue-v-settings-storage-location) that is accessible to end users.
 
     This feature is a standard network share that stores and retrieves user settings.
 
--   [Choose the configuration method for UE-V](#choose-the-configuration-method-for-ue-v)
+- [Choose the configuration method for UE-V](#choose-the-configuration-method-for-ue-v)
 
     You can deploy and configure UE-V with common management tools including group policy, Configuration Manager, or Windows Management Infrastructure and PowerShell.
 
--   [Enable the UE-V service](#enable-the-ue-v-service) on user devices.
+- [Enable the UE-V service](#enable-the-ue-v-service) on user devices.
 
     With Windows 10, version 1607, UE-V is installed automatically. You need to enable the UE-V service on each user device you want to include in your UE-V environment.
 
@@ -39,9 +28,9 @@ The articles in this section describe how to deploy these features.
 
 UE-V requires a location in which to store user settings in settings package files. You can configure this settings storage location in one of these ways:
 
--   Create your own settings storage location
+- Create your own settings storage location
 
--   Use existing Active Directory for your settings storage location
+- Use existing Active Directory for your settings storage location
 
 > **Note**&nbsp;&nbsp; As a matter of [performance and capacity planning](uev-prepare-for-deployment.md#performance-and-capacity-planning) and to reduce problems with network latency, create settings storage locations on the same local networks where the users’ devices reside. We recommend 20 MB of disk space per user for the settings storage location.
 
@@ -51,17 +40,17 @@ Before you define the settings storage location, you must create a root director
 
 The settings storage location is defined by setting the SettingsStoragePath configuration option, which you can configure by using one of these methods:
 
--   Through [Group Policy](uev-configuring-uev-with-group-policy-objects.md) settings
+- Through [Group Policy](uev-configuring-uev-with-group-policy-objects.md) settings
 
--   With the [Configuration Manager Pack](uev-configuring-uev-with-system-center-configuration-manager.md) for UE-V
+- With the [Configuration Manager Pack](uev-configuring-uev-with-system-center-configuration-manager.md) for UE-V
 
--   With [Windows PowerShell or Windows Management Instrumentation (WMI)](uev-administering-uev-with-windows-powershell-and-wmi.md)
+- With [Windows PowerShell or Windows Management Instrumentation (WMI)](uev-administering-uev-with-windows-powershell-and-wmi.md)
 
     The path must be in a universal naming convention (UNC) path of the server and share. For example, **\\\\Server\\Settingsshare\\**. This configuration option supports the use of variables to enable specific synchronization scenarios. For example, you can use the %username%\\%computername% variables to preserve the end user settings experience in these scenarios:
 
--   End users that use multiple physical devices in your enterprise
+- End users that use multiple physical devices in your enterprise
 
--   Enterprise computers that are used by multiple end users
+- Enterprise computers that are used by multiple end users
 
 The UE-V service dynamically creates a user-specific settings storage path, with a hidden system folder named **SettingsPackages**, based on the configuration setting of **SettingsStoragePath**. The service reads and writes settings to this location as defined by the registered UE-V settings location templates.
 
@@ -108,7 +97,7 @@ You’ll need to decide which configuration method you'll use to manage UE-V aft
 
 You can configure UE-V before, during, or after you enable the UE-V service on user devices, depending on the configuration method that you use.
 
--   [**Group Policy**](uev-configuring-uev-with-group-policy-objects.md) You can use your existing Group Policy infrastructure to configure UE-V before or after you enable the UE-V service. The UE-V Group Policy ADMX template enables the central management of common UE-V service configuration options and includes settings to configure UE-V synchronization.
+- [**Group Policy**](uev-configuring-uev-with-group-policy-objects.md) You can use your existing Group Policy infrastructure to configure UE-V before or after you enable the UE-V service. The UE-V Group Policy ADMX template enables the central management of common UE-V service configuration options and includes settings to configure UE-V synchronization.
 
     >**Note**  Starting with Windows 10, version 1607, UE-V ADMX templates are installed automatically.
 
@@ -118,9 +107,9 @@ You can configure UE-V before, during, or after you enable the UE-V service on u
 
     Windows Server 2012 and Windows Server 2012 R2
 
--   [**Configuration Manager**](uev-configuring-uev-with-system-center-configuration-manager.md) The UE-V Configuration Pack lets you use the Compliance Settings feature of Microsoft Configuration Manager to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
+- [**Configuration Manager**](uev-configuring-uev-with-system-center-configuration-manager.md) The UE-V Configuration Pack lets you use the Compliance Settings feature of Microsoft Configuration Manager to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
 
--   [**Windows PowerShell and WMI**](uev-administering-uev-with-windows-powershell-and-wmi.md) You can use scripted commands for Windows PowerShell and Windows Management Instrumentation (WMI) to modify the configuration of the UE-V service.
+- [**Windows PowerShell and WMI**](uev-administering-uev-with-windows-powershell-and-wmi.md) You can use scripted commands for Windows PowerShell and Windows Management Instrumentation (WMI) to modify the configuration of the UE-V service.
 
 >**Note**
 Registry modification can result in data loss, or the computer becomes unresponsive. We recommend that you use other configuration methods.

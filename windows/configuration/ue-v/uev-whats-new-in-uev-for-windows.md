@@ -1,23 +1,12 @@
 ---
 title: What's New in UE-V for Windows 10, version 1607
 description: Learn about what's new in User Experience Virtualization (UE-V) for Windows 10, including new features and capabilities.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # What's new in UE-V
 
-**Applies to**
--   Windows 10, version 1607
 
 User Experience Virtualization (UE-V) for Windows 10, version 1607, includes these new features and capabilities compared to UE-V 2.1. For more information about the UE-V for Windows 10, version 1607 release, see [UE-V Release notes](uev-release-notes-1607.md).
 
@@ -41,7 +30,7 @@ For more information about how to configure an existing UE-V installation after 
 
 ## New UE-V template generator is available from the Windows 10 ADK
 
-UE-V for Windows 10 includes a new template generator, available from a new location. If you're upgrading from an existing UE-V installation, you’ll need to use the new generator to create settings location templates. The UE-V for Windows 10 template generator is now available in the [Windows 10 Assessment and Deployment Kit](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) (Windows ADK).
+UE-V for Windows 10 includes a new template generator, available from a new location. If you're upgrading from an existing UE-V installation, you'll need to use the new generator to create settings location templates. The UE-V for Windows 10 template generator is now available in the [Windows 10 Assessment and Deployment Kit](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) (Windows ADK).
 
 ## Company Settings Center removed in UE-V for Windows 10, version 1607
 
@@ -54,9 +43,9 @@ Administrators can still define which user-customized application settings can s
 >[!Note]
 >With the removal of the Company Settings Center, the following group policies are no longer applicable:
 
--   Contact IT Link Text
--   Contact IT URL
--   Tray Icon
+- Contact IT Link Text
+- Contact IT URL
+- Tray Icon
 
 ## Compatibility with Microsoft Enterprise State Roaming
 
@@ -66,17 +55,17 @@ In hybrid cloud environments, UE-V can roam Win32 applications on-premises while
 
 To configure UE-V to roam Windows desktop and application data only, change the following group policies:
 
--   Disable "Roam Windows settings" group policy
+- Disable "Roam Windows settings" group policy
 
--   Enable "Do not synchronize Windows Apps" group policy
+- Enable "Do not synchronize Windows Apps" group policy
 
 For more information about using UE-V with Enterprise State Roaming, see [Settings and data roaming FAQ](/azure/active-directory/devices/enterprise-state-roaming-faqs#what-are-the-roaming-settings-options-for-existing-windows-desktop-applications-).
 
 Additionally, to enable Windows 10 and UE-V to work together, configure these policy settings in the Microsoft User Experience Virtualization node:
 
--   Enable "Do Not Synchronize Windows Apps"
+- Enable "Do Not Synchronize Windows Apps"
 
--   Disable "Sync Windows Settings"
+- Disable "Sync Windows Settings"
 
 
 ## Settings Synchronization Behavior Changed in UE-V for Windows 10
@@ -96,11 +85,11 @@ Users can now print to their saved network printers from any network device, inc
 
 Printer roaming in UE-V requires one of these scenarios:
 
--   The print server can download the required driver when it roams to a new device.
+- The print server can download the required driver when it roams to a new device.
 
--   The driver for the roaming network printer is pre-installed on any device that needs to access that network printer.
+- The driver for the roaming network printer is pre-installed on any device that needs to access that network printer.
 
--   The printer driver can be imported from Windows Update.
+- The printer driver can be imported from Windows Update.
 
 > [!Note]
 > The UE-V printer roaming feature doesn't roam printer settings or preferences, such as printing double-sided.
@@ -116,9 +105,9 @@ UE-V works with Office 365 to determine whether Office 2016 settings are roamed 
 
 To enable settings synchronization using UE-V, do one of the following steps:
 
--   Use Group Policy to disable Office 365 synchronization
+- Use Group Policy to disable Office 365 synchronization
 
--   Don't enable the Office 365 synchronization experience during Office 2013 installation
+- Don't enable the Office 365 synchronization experience during Office 2013 installation
 
 UE-V includes Office 2016, Office 2013, and Office 2010 templates.
 
