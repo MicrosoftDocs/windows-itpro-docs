@@ -13,10 +13,9 @@ Environments that use [Windows Management Instrumentation (WMI)](/windows/win32/
 
 Here's an example to set AssignedAccess configuration:
 
-1. Download the [psexec tool](/sysinternals/downloads/psexec).
-1. Run `psexec.exe -i -s cmd.exe`.
-1. In the command prompt launched by psexec.exe, enter `powershell.exe` to open PowerShell.
-1. Execute the following script:
+1. Download the [psexec tool](/sysinternals/downloads/psexec)
+1. Open an elevated command prompt and run: `psexec.exe -i -s powershell.exe`
+1. In the PowerShell session launched by `psexec.exe`, execute the following script:
 
 ::: zone pivot="windows-10"
 
@@ -136,3 +135,9 @@ Set-CimInstance -CimInstance $obj
 ```
 
 ::: zone-end
+
+For more information, see [Using PowerShell scripting with the WMI Bridge Provider][WIN-1].
+
+<!--links-->
+
+[WIN-1]: /windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider
