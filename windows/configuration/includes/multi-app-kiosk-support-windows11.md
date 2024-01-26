@@ -4,7 +4,7 @@ ms.author: aaroncz
 ms.date: 09/21/2021
 ms.reviewer: 
 manager: aaroncz
-ms.prod: w10
+ms.service: windows-client
 ms.topic: include
 ---
 
