@@ -4,6 +4,7 @@ description: Environments that use Windows Management Instrumentation (WMI) can 
 ms.topic: article
 ms.date: 1/26/2024
 zone_pivot_groups: windows-versions-11-10
+appliesto:
 ---
 
 # Use MDM Bridge WMI Provider to create a Windows client kiosk
