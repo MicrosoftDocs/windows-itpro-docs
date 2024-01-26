@@ -59,9 +59,9 @@ Copilot is a consumer experience and has a daily limit on the number of chat que
    - Microsoft 365 E3 or E5
    - Microsoft 365 F3 <!--8681080, 8681034-->
    - Microsoft 365 A1, A3, or A5 <!--8681034-->
-       - Copilot with comercial data protection is limited to faculty and s higher education students over 18 years of age
+       - Copilot with comercial data protection is limited to faculty and higher education students over 18 years of age
    - Office 365 A1, A3, or A5 <!--8681034-->
-       - Copilot with comercial data protection is limited to faculty and  higher education students over 18 years of age
+       - Copilot with comercial data protection is limited to faculty and higher education students over 18 years of age
    - Microsoft 365 Business Standard
    - Microsoft 365 Business Premium
 
