@@ -13,7 +13,7 @@ Environments that use [Windows Management Instrumentation (WMI)](/windows/win32/
 
 Here's an example to set AssignedAccess configuration:
 
-1. Download the [psexec tool](/sysinternals/downloads/psexec)
+1. [Download PsTools][PSTools]
 1. Open an elevated command prompt and run: `psexec.exe -i -s powershell.exe`
 1. In the PowerShell session launched by `psexec.exe`, execute the following script:
 
@@ -92,18 +92,18 @@ Add-Type -AssemblyName System.Web
 $obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
-  xmlns=http://schemas.microsoft.com/AssignedAccess/2017/config xmlns:win11=http://schemas.microsoft.com/AssignedAccess/2022/config>
+  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+  xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
   <Profiles>
     <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
       <AllAppsList>
         <AllowedApps>
-          <App AppUserModelId="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
-          <App AppUserModelId="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
           <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
           <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
           <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
-          <App DesktopAppPath="%windir%\system32\mspaint.exe" />
-          <App DesktopAppPath="C:\Windows\System32\notepad.exe" />
+          <App DesktopAppPath="C:\Windows\system32\cmd.exe" />
+          <App DesktopAppPath="%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe" />
+          <App DesktopAppPath="%windir%\explorer.exe" />
         </AllowedApps>
       </AllAppsList>
       <win11:StartPins>
@@ -111,11 +111,10 @@ $obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
           { "pinnedList":[
             {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
             {"packagedAppId":"Microsoft.Windows.Photos_8wekyb3d8bbwe!App"},
-            {"packagedAppId":"Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic"},
-            {"packagedAppId":"Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo"},
             {"packagedAppId":"Microsoft.BingWeather_8wekyb3d8bbwe!App"},
-            {"desktopAppLink":"%ALLUSERSPROFILE%\\Microsoft\\Windows\\StartMenu\\Programs\\Accessories\\Paint.lnk"},
-            {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\StartMenu\\Programs\\Accessories\\Notepad.lnk"}
+            {"desktopAppLink":"C:\\Users\\MultiAppKioskUser\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\File Explorer.lnk"},
+            {"desktopAppLink":"C:\\Users\\MultiAppKioskUser\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Command Prompt.lnk"},
+            {"desktopAppLink":"C:\\Users\\MultiAppKioskUser\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell.lnk"}
           ] }
         ]]>
       </win11:StartPins>
@@ -141,3 +140,4 @@ For more information, see [Using PowerShell scripting with the WMI Bridge Provid
 <!--links-->
 
 [WIN-1]: /windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider
+[PsTools]: https://download.sysinternals.com/files/PSTools.zip

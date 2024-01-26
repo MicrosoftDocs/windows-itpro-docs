@@ -85,17 +85,13 @@ There are two types of profiles that you can specify in the XML:
 A lockdown profile section in the XML has the following entries:
 
 - [**Id**](#id)
-
 - [**AllowedApps**](#allowedapps)
-
 - [**StartPins**](#startpins)
-
 - [**Taskbar**](#taskbar)
 
 A kiosk profile in the XML has the following entries:
 
 - [**Id**](#id)
-
 - [**KioskModeApp**](#kioskmodeapp)
 
 ##### Id
@@ -254,7 +250,7 @@ Individual accounts are specified using `<Account>`.
 
 - Local account can be entered as `machinename\account` or `.\account` or just `account`.
 - Domain account should be entered as `domain\account`.
-- Microsoft Entra account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided _as is_, and consider it's a fixed domain name. Then follow with the Microsoft Entra ID email address. For example, `AzureAD\someone@contoso.onmicrosoft.com`
+- Microsoft Entra account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided *as is*, and consider it's a fixed domain name. Then follow with the Microsoft Entra ID email address. For example, `AzureAD\someone@contoso.onmicrosoft.com`
 
 > [!WARNING]
 > Assigned access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account.  However, use of domain user or service accounts introduces risks that an attacker subverting the assigned access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
@@ -370,32 +366,22 @@ This section contains a predefined XML file which can be used as a quickstart to
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
-
   xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-
   xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
   <Profiles>
     <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
-
       <AllAppsList>
         <AllowedApps>
-
           <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
-
           <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-
           <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
           <App DesktopAppPath="C:\Windows\system32\cmd.exe" />
           <App DesktopAppPath="%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe" />
           <App DesktopAppPath="%windir%\explorer.exe" />
-
         </AllowedApps>
-
       </AllAppsList>
-
       <win11:StartPins>
         <![CDATA[
-
           { "pinnedList":[
             {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
             {"packagedAppId":"Microsoft.Windows.Photos_8wekyb3d8bbwe!App"},
@@ -408,7 +394,6 @@ This section contains a predefined XML file which can be used as a quickstart to
       </win11:StartPins>
       <Taskbar ShowTaskbar="true"/>
     </Profile>
-
   </Profiles>
   <Configs>
     <Config>
@@ -417,5 +402,4 @@ This section contains a predefined XML file which can be used as a quickstart to
     </Config>
   </Configs>
 </AssignedAccessConfiguration>
-
 ```
