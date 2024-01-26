@@ -22,15 +22,6 @@ The product releases below are currently certified against the cited *Protection
 - The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration
 - The *Certification Report or Validation Report* documents the results of the evaluation by the validation team, with the *Assurance Activity Report* providing details on the evaluator's actions
 
-### Windows 11 (version 22H2), Windows 10 (version 22H2), Windows Server 2022, Windows Server Datacenter: Azure Edition, Azure Stack HCIv2 version 22H2, Azure Stack Hub and Edge
-
-Certified against the Protection Profile for General Purpose Operating Systems (4.2.1), the PP-Module for VPN Client (2.4), the PP-Module for Wireless Local Area Network Client (1.0) and the PP-Module for Bluetooth (1.0)
-
-- [Security Target](TBD)
-- [Administrative Guide](TBD)
-- [Assurance Activity Report](TBD)
-- [Validation Report](TBD)
-
 ### Windows 11, Windows 10 (version  20H2, 21H1, 21H2), Windows Server, Windows Server 2022, Azure Stack HCIv2 version 21H2, Azure Stack Hub and Edge
 
 Certified against the Protection Profile for General Purpose Operating Systems, including the Extended Package for Wireless Local Area Network Clients and the Module for Virtual Private Network Clients
