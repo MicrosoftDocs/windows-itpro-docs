@@ -7,29 +7,25 @@ ms.date: 12/31/2017
 
 # Guidelines for choosing an app for assigned access (kiosk mode)
 
-You can use assigned access to restrict customers at your business to using only one Windows app so your device acts like a kiosk.  Administrators can use assigned access to restrict a selected user account to access a single Windows app. You can choose almost any Windows app for assigned access; however, some apps may not provide a good user experience.
+Use assigned access to restrict users to use only one application, so that the device acts like a kiosk. Administrators can use assigned access to restrict a selected user account to access a single Windows app. You can choose almost any Windows app for assigned access; however, some apps may not provide a good user experience.
 
 The following guidelines may help you choose an appropriate Windows app for your assigned access experience.
 
 ## General guidelines
 
 - Windows apps must be provisioned or installed for the assigned access account before they can be selected as the assigned access app. [Learn how to provision and install apps](/windows/client-management/mdm/enterprise-app-management#install_your_apps).
-
 - Updating a Windows app can sometimes change the Application User Model ID (AUMID) of the app. If this change happens, you must update the assigned access settings to launch the updated app, because assigned access uses the AUMID to determine which app to launch.
-
 - Apps that are generated using the [Desktop App Converter (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) can't be used as kiosk apps.
-
-
 
 ## Guidelines for Windows apps that launch other apps
 
-Some Windows apps can launch other apps. Assigned access prevents Windows apps from launching other apps.
+Some apps can launch other apps. Assigned access prevents Windows apps from launching other apps.
 
 Avoid selecting Windows apps that are designed to launch other apps as part of their core functionality.
 
 ## Guidelines for web browsers
 
-Starting with Windows 10 version 1809+, Microsoft Edge includes support for kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode.](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy)
+Microsoft Edge includes support for kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode.](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy)
 
 In Windows client, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure more settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren't allowed to go to a competitor's website.
 
@@ -49,34 +45,29 @@ In Windows client, you can install the **Kiosk Browser** app from Microsoft to u
 
 ### Kiosk Browser settings
 
-Kiosk Browser settings | Use this setting to
---- | ---
-Blocked URL Exceptions | Specify URLs that people can navigate to, even though the URL is in your blocked URL list. You can use wildcards. <br><br>For example, if you want people to be limited to `http://contoso.com` only, you would add `.contoso.com` to blocked URL exception list and then block all other URLs.
-Blocked URLs | Specify URLs that people can't navigate to. You can use wildcards. <br><br>If you want to limit people to a specific site, add `https://*` to the blocked URL list, and then specify the site to be allowed in the blocked URL exceptions list.
-Default URL | Specify the URL that Kiosk Browser will open with. **Tip!** Make sure your blocked URLs don't include your default URL.
-Enable End Session Button | Show a button in Kiosk Browser that people can use to reset the browser. End Session will clear all browsing data and navigate back to the default URL.
-Enable Home Button | Show a Home button in Kiosk Browser. Home will return the browser to the default URL.
-Enable Navigation Buttons | Show forward and back buttons in Kiosk Browser.
-Restart on Idle Time | Specify when Kiosk Browser should restart in a fresh state after an amount of idle time since the last user interaction.
+| Kiosk Browser settings | Use this setting to |
+|--|--|
+| Blocked URL Exceptions | Specify URLs that people can navigate to, even though the URL is in your blocked URL list. You can use wildcards. <br><br>For example, if you want people to be limited to `http://contoso.com` only, you would add `.contoso.com` to blocked URL exception list and then block all other URLs. |
+| Blocked URLs | Specify URLs that people can't navigate to. You can use wildcards. <br><br>If you want to limit people to a specific site, add `https://*` to the blocked URL list, and then specify the site to be allowed in the blocked URL exceptions list. |
+| Default URL | Specify the URL that Kiosk Browser will open with. **Tip!** Make sure your blocked URLs don't include your default URL. |
+| Enable End Session Button | Show a button in Kiosk Browser that people can use to reset the browser. End Session will clear all browsing data and navigate back to the default URL. |
+| Enable Home Button | Show a Home button in Kiosk Browser. Home will return the browser to the default URL. |
+| Enable Navigation Buttons | Show forward and back buttons in Kiosk Browser. |
+| Restart on Idle Time | Specify when Kiosk Browser should restart in a fresh state after an amount of idle time since the last user interaction. |
 
-> [!IMPORTANT]
-> To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in Windows Configuration Designer:
->
+To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in Windows Configuration Designer:
 
-> 1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer.
-> 1. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18).
-
-> 1. Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com).
-
-> 1. Save the XML file.
-> 1. Open the project again in Windows Configuration Designer.
-> 1. Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.
->
-
->
+1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer
+1. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18)
+1. Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com)
+1. Save the XML file
+1. Open the project again in Windows Configuration Designer
+1. Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed
 
 > [!TIP]
+>
 > To enable the **End Session** button for Kiosk Browser in Intune, you must [create a custom OMA-URI policy](/intune/custom-settings-windows-10) with the following information:
+>
 > - OMA-URI: ./Vendor/MSFT/Policy/Config/KioskBrowser/EnableEndSessionButton
 > - Data type: Integer
 > - Value: 1
@@ -86,56 +77,53 @@ Restart on Idle Time | Specify when Kiosk Browser should restart in a fresh stat
 Kiosk Browser filtering rules are based on the [Chromium Project](https://www.chromium.org/Home).
 
 URLs can include:
+
 - A valid port value from 1 to 65,535.
 - The path to the resource.
 - Query parameters.
 
 More guidelines for URLs:
 
-- If a period precedes the host, the policy filters exact host matches only.
-- You can't use user:pass fields.
-- When both blocked URL and blocked URL exceptions apply with the same path length, the exception takes precedence.
-- The policy searches wildcards (*) last.
-- The optional query is a set of key-value and key-only tokens delimited by '&'.
-- Key-value tokens are separated by '='.
-- A query token can optionally end with a '*' to indicate prefix match. Token order is ignored during matching.
+- If a period precedes the host, the policy filters exact host matches only
+- You can't use user:pass fields
+- When both blocked URL and blocked URL exceptions apply with the same path length, the exception takes precedence
+- The policy searches wildcards (*) last
+- The optional query is a set of key-value and key-only tokens delimited by '&'
+- Key-value tokens are separated by '='
+- A query token can optionally end with a '*' to indicate prefix match. Token order is ignored during matching
 
 ### Examples of blocked URLs and exceptions
 
 The following table describes the results for different combinations of blocked URLs and blocked URL exceptions.
 
-Blocked URL rule |  Block URL exception rule | Result
---- | --- | ---
-`*` | `contoso.com`<br>`fabrikam.com` | All requests are blocked unless it's to contoso.com, fabrikam.com, or any of their subdomains.
-`contoso.com` | `mail.contoso.com`<br>`.contoso.com`<br>`.www.contoso.com` | Block all requests to contoso.com, except for the main page and its mail subdomain.
-`youtube.com` | `youtube.com/watch?v=v1`<br>`youtube.com/watch?v=v2` | Blocks all access to youtube.com except for the specified videos (v1 and v2).
+| Blocked URL rule | Block URL exception rule | Result |
+|--|--|--|
+| `*` | `contoso.com`<br>`fabrikam.com` | All requests are blocked unless it's to contoso.com, fabrikam.com, or any of their subdomains. |
+| `contoso.com` | `mail.contoso.com`<br>`.contoso.com`<br>`.www.contoso.com` | Block all requests to contoso.com, except for the main page and its mail subdomain. |
+| `youtube.com` | `youtube.com/watch?v=v1`<br>`youtube.com/watch?v=v2` | Blocks all access to youtube.com except for the specified videos (v1 and v2). |
 
 The following table gives examples for blocked URLs.
 
-|          Entry           |                                    Result                                     |
-|--------------------------|-------------------------------------------------------------------------------|
-|      `contoso.com`       | Blocks all requests to contoso.com, www.contoso.com, and sub.www.contoso.com  |
-|       `https://*`        |                   Blocks all HTTPS requests to any domain.                    |
-|    `mail.contoso.com`    | Blocks requests to mail.contoso.com but not to www.contoso.com or contoso.com |
-|      `.contoso.com`      |    Blocks contoso.com but not its subdomains, like subdomain.contoso.com.     |
-|    `.www.contoso.com`    |                Blocks www.contoso.com but not its subdomains.                 |
-|           `*`            |    Blocks all requests except for URLs in the Blocked URL Exceptions list.    |
-|         `*:8080`         |                       Blocks all requests to port 8080.                       |
-|   `contoso.com/stuff`    |         Blocks all requests to contoso.com/stuff and its subdomains.          |
-|      `192.168.1.2`       |                        Blocks requests to 192.168.1.1.                       |
-| `youtube.com/watch?v=V1` |                       Blocks YouTube video with id V1.                       |
+| Entry | Result |
+|--|--|
+| `contoso.com` | Blocks all requests to contoso.com, www.contoso.com, and sub.www.contoso.com |
+| `https://*` | Blocks all HTTPS requests to any domain. |
+| `mail.contoso.com` | Blocks requests to mail.contoso.com but not to www.contoso.com or contoso.com |
+| `.contoso.com` | Blocks contoso.com but not its subdomains, like subdomain.contoso.com. |
+| `.www.contoso.com` | Blocks www.contoso.com but not its subdomains. |
+| `*` | Blocks all requests except for URLs in the Blocked URL Exceptions list. |
+| `*:8080` | Blocks all requests to port 8080. |
+| `contoso.com/stuff` | Blocks all requests to contoso.com/stuff and its subdomains. |
+| `192.168.1.2` | Blocks requests to 192.168.1.1. |
+| `youtube.com/watch?v=V1` | Blocks YouTube video with id V1. |
 
 ### Other browsers
 
-
-
 You can create your own web browser Windows app by using the WebView class. Learn more about developing your own web browser app:
-- [Creating your own browser with HTML and JavaScript](https://blogs.windows.com/msedgedev/2015/08/27/creating-your-own-browser-with-html-and-javascript/)
 
+- [Creating your own browser with HTML and JavaScript](https://blogs.windows.com/msedgedev/2015/08/27/creating-your-own-browser-with-html-and-javascript/)
 - [WebView class](/uwp/api/Windows.UI.Xaml.Controls.WebView)
 - [A web browser built with JavaScript as a Windows app](https://github.com/MicrosoftEdge/JSBrowser/tree/v1.0)
-
-
 
 ## Secure your information
 

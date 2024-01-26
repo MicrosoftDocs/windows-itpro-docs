@@ -1,10 +1,9 @@
 ---
-title: Use MDM Bridge WMI Provider to create a Windows 10/11 kiosk (Windows 10/11)
+title: Use MDM Bridge WMI Provider to create a Windows kiosk
 description: Environments that use Windows Management Instrumentation (WMI) can use the MDM Bridge WMI Provider to configure the MDM_AssignedAccess class.
-appliesto:
-- ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ms.topic: article
-ms.date: 12/31/2017
+ms.date: 1/26/2024
+zone_pivot_groups: windows-versions-11-10
 ---
 
 # Use MDM Bridge WMI Provider to create a Windows client kiosk
@@ -14,13 +13,12 @@ Environments that use [Windows Management Instrumentation (WMI)](/windows/win32/
 Here's an example to set AssignedAccess configuration:
 
 1. Download the [psexec tool](/sysinternals/downloads/psexec).
-
 1. Run `psexec.exe -i -s cmd.exe`.
 1. In the command prompt launched by psexec.exe, enter `powershell.exe` to open PowerShell.
+    Step 4 is different for Windows 10 or Windows 11
+1. Execute the following script:
 
-Step 4 is different for Windows 10 or Windows 11
-
-1. Execute the following script for Windows 10:
+::: zone pivot="windows-10"
 
 ```xml
 $nameSpaceName="root\cimv2\mdm\dmmap"
@@ -80,9 +78,11 @@ $obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
 
 Set-CimInstance -CimInstance $obj
 ```
-1. Execute the following script for Windows 11:
+::: zone-end
 
- ```xml
+::: zone pivot="windows-11"
+
+ ```PowerShell
 $nameSpaceName="root\cimv2\mdm\dmmap"
 $className="MDM_AssignedAccess"
 $obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
@@ -147,3 +147,4 @@ $obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
 
 Set-CimInstance -CimInstance $obj
 ```
+::: zone-end

@@ -4,6 +4,7 @@ description: To configure assigned access (kiosk mode), you need the Application
 ms.topic: article
 ms.date: 12/31/2017
 ---
+
 # Find the Application User Model ID of an installed app
 
 To configure assigned access (kiosk mode), you need the Application User Model ID (AUMID) of apps installed on a device. You can find the AUMID by using Windows PowerShell, File Explorer, or the registry.
@@ -40,9 +41,7 @@ You can add the `-user <username>` or the `-allusers` parameters to the **Get-Ap
 To get the names and AUMIDs for all apps installed for the current user, perform the following steps:
 
 1. Open **Run**, enter **shell:Appsfolder**, and select **OK**.
-
 1. A File Explorer window opens. Press **Alt** > **View** > **Choose details**.
-
 1. In the **Choose Details** window, select **AppUserModelId**, and then select **OK**. (You might need to change the **View** setting from **Tiles** to **Details**.)
 
 ![Image of the Choose Details options.](images/aumid-file-explorer.png)
@@ -53,7 +52,9 @@ Querying the registry can only return information about Microsoft Store apps tha
 
 At a command prompt, type the following command:
 
-`reg query HKEY_CURRENT_USER\Software\Classes\ActivatableClasses\Package /s /f AppUserModelID | find "REG_SZ"`
+```cmd
+reg query HKEY_CURRENT_USER\Software\Classes\ActivatableClasses\Package /s /f AppUserModelID | find "REG_SZ"
+```
 
 ### Example to get AUMIDs of the installed apps for the specified user
 
