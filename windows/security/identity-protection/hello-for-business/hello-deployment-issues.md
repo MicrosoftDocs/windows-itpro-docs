@@ -4,6 +4,7 @@ description: This article is a troubleshooting guide for known Windows Hello for
 ms.date: 06/02/2023
 ms.topic: troubleshooting
 ---
+
 # Windows Hello for Business known deployment issues
 
 The content of this article is to help troubleshoot known deployment issues for Windows Hello for Business.
@@ -67,10 +68,10 @@ The issue can be identified using network traces or Kerberos logging from the cl
 Log Name:      Microsoft-Windows-Kerberos/Operational
 Source:        Microsoft-Windows-Security-Kerberos
 Event ID:      107
-GUID:          {98e6cfcb-ee0a-41e0-a57b-622d4e1b30b1} 
+GUID:          {98e6cfcb-ee0a-41e0-a57b-622d4e1b30b1}
 Task Category: None
 Level:         Error
-Keywords:      
+Keywords:
 User:          SYSTEM
 Description:
 
@@ -133,7 +134,7 @@ Date:          <Date and time>
 Event ID:      362
 Task Category: None
 Level:         Warning
-Keywords:     
+Keywords:
 User:          <User SID>
 Computer:      <Computer name>
 Description:
@@ -146,7 +147,7 @@ Local computer meets Windows hello for business hardware requirements: Yes
 User is not connected to the machine via Remote Desktop: Yes
 User certificate for on premise auth policy is enabled: Yes
 Enterprise user logon certificate enrollment endpoint is ready: Not Tested
-Enterprise user logon certificate template is : No ( 1 : StateNoPolicy ) 
+Enterprise user logon certificate template is : No ( 1 : StateNoPolicy )
 User has successfully authenticated to the enterprise STS: No
 Certificate enrollment method: enrollment authority
 See https://go.microsoft.com/fwlink/?linkid=832647 for more details.

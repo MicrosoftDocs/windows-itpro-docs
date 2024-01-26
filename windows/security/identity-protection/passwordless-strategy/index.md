@@ -140,7 +140,7 @@ The journey to password freedom is to take each work persona through each step o
 - Awareness campaign and user education
 - Include remaining users who fit the work persona
 - Validate that **none of the users** of the work personas need passwords
-- Configure user accounts to disallow password authentication
+- Configure user accounts to prevent password authentication
    :::column-end:::
 :::row-end:::
 

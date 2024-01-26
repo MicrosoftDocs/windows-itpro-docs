@@ -2,7 +2,7 @@
 title: Reduce the user-visible password surface area
 description: Learn about how to reduce the user-visible password surface area, the second step of the Microsoft passwordless journey.
 ms.topic: concept-article
-ms.date: 12/13/2023
+ms.date: 01/26/2024
 ---
 
 # Reduce the user-visible password surface area
@@ -26,13 +26,13 @@ ms.date: 12/13/2023
 
 Now is the time to learn more about the targeted work persona. You should have a list of applications they use, but you don't know what, why, when, and how frequently. This information is important as you further your progress through step 2. Test users create the workflows associated with the targeted work persona. Their initial goal is to do one simple task: document password usage. This list isn't a comprehensive one, but it gives you an idea of the type of information you want. The goal is to learn about all the scenarios in which that work persona encounters a password. A good approach is to ask yourself the following set of questions:
 
-| :ballot_box_with_check: | Question |
+| | Question |
 |--|--|
-| :black_square_button: | *What's the name of the application that asked for a password?* |
-| :black_square_button: | *Why do they use the application that asked for a password? For example, is there more than one application that can do the same thing?* |
-| :black_square_button: | *What part of their workflow makes them use the application? Try to be as specific as possible. For example, "I use application x to issue credit card refunds for amounts over y."* |
-| :black_square_button: | *How frequently do you use the application in a given day or week?* |
-| :black_square_button: | *Is the password you type into the application the same as the password you use to sign-in to Windows?* |
+| **🔲** | *What's the name of the application that asked for a password?* |
+| **🔲** | *Why do they use the application that asked for a password? For example, is there more than one application that can do the same thing?* |
+| **🔲** | *What part of their workflow makes them use the application? Try to be as specific as possible. For example, "I use application x to issue credit card refunds for amounts over y."* |
+| **🔲** | *How frequently do you use the application in a given day or week?* |
+| **🔲** | *Is the password you type into the application the same as the password you use to sign-in to Windows?* |
 
 Some organizations will empower their users to write this information while some may insist on having a member of the IT department shadow them. An objective viewer may notice a password prompt that the user overlooks simply because of muscle memory. As previously mentioned, this information is critical. You could miss one password prompt that could delay the transition to being passwordless.
 
@@ -82,7 +82,7 @@ To learn more, see [Windows passwordless experience](../passwordless-experience/
 The *Exclude credential providers* policy setting can be used to disable the password credentail provider. When configured, Windows disables the possibility to uyse passwords for *all accounts*, including local accounts. It also prevents the use of passwords for RDP and *Run as* authentication scenarios. This policy setting might impact support scenarios, such as when a user needs to sign in with a local account to troubleshoot a problem. For this reason, carefully evaluate all scenarios before enabling it.
 
 - GPO: **Computer Configuration** > **Administrative Templates** > **System** > **Logon** > **Exclude credential providers**
-- CSP: ``./Device/Vendor/MSFT/Policy/Config/ADMX_CredentialProviders/`[ExcludedCredentialProviders](/windows/client-management/mdm/policy-csp-admx-credentialproviders#excludedcredentialproviders)
+- CSP: `./Device/Vendor/MSFT/Policy/Config/ADMX_CredentialProviders/`[ExcludedCredentialProviders](/windows/client-management/mdm/policy-csp-admx-credentialproviders#excludedcredentialproviders)
 
 The value to enter in the policy to hide the password credential provider is `{60b78e88-ead8-445c-9cfd-0b87f74ea6cd}`.
 
@@ -100,6 +100,6 @@ This stage is the significant moment. You have identified password usage, develo
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Congratulations! You're ready to transition one or more portions of your organization to a passwordless deployment. You've validated that the targeted work persona is ready to go where the user no longer needs to know or use their password. You're just a few steps away from declaring success.
+> You're ready to transition one or more portions of your organization to a passwordless deployment. You've validated that the targeted work persona is ready to go where the user no longer needs to know or use their password. You're just a few steps away from declaring success.
 >
 > [Step 3: transition into a passwordless deployment >](journey-step-3.md)
