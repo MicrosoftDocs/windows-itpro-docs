@@ -6,8 +6,8 @@ description: Resolve Windows upgrade errors for ITPros. Technical information fo
 author: frankroj
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.service: windows-client
+ms.subservice: itpro-deploy
 ms.date: 01/18/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -37,7 +37,7 @@ See the following articles in this section:
 
 - [Quick fixes](/troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json): \Level 100\ Steps to take to eliminate many Windows upgrade errors.
 - [SetupDiag](setupdiag.md): \Level 300\ SetupDiag is a new tool to help isolate the root cause of an upgrade failure.
-- [Troubleshooting upgrade errors](/troubleshoot/windows-client/deployment/windows-upgrade-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json): \Level 300\ General advice and techniques for troubleshooting Windows upgrade errors, and an explanation of phases used during the upgrade process.
+- [Troubleshooting upgrade errors](/troubleshoot/windows-client/deployment/windows-10-upgrade-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json): \Level 300\ General advice and techniques for troubleshooting Windows upgrade errors, and an explanation of phases used during the upgrade process.
 - [Windows Error Reporting](windows-error-reporting.md): \Level 300\ How to use Event Viewer to review details about a Windows upgrade.
 - [Upgrade error codes](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json): \Level 400\ The components of an error code are explained.
   - [Result codes](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#result-codes): Information about result codes.
