@@ -53,7 +53,7 @@ To configure devices using Intune for Education, follow these steps:
 
 ### Configure Take a Test with a custom policy
 
-[!INCLUDE [intune-custom-settings-1](../../includes/configure/intune-custom-settings-1.md)]
+[!INCLUDE [intune-custom-settings-1](../../../includes/configure/intune-custom-settings-1.md)]
 
 | Setting |
 |--------|
@@ -67,8 +67,8 @@ To configure devices using Intune for Education, follow these steps:
 
 :::image type="content" source="./images/takeatest/intune-take-a-test-custom-profile.png" alt-text="Intune portal - creation of a custom policy to configure Take a Test." lightbox="./images/takeatest/intune-take-a-test-custom-profile.png" border="true":::
 
-[!INCLUDE [intune-custom-settings-2](../../includes/configure/intune-custom-settings-2.md)]
-[!INCLUDE [intune-custom-settings-info](../../includes/configure/intune-custom-settings-info.md)]
+[!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
+[!INCLUDE [intune-custom-settings-info](../../../includes/configure/intune-custom-settings-info.md)]
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -189,7 +189,7 @@ To create a local account, and configure Take a Test in kiosk mode using the Set
 1. Under **Test taking settings** select the options you want to enable during the test
    - To enable printing, select **Require printing**
 
-      > [!NOTE]  
+      > [!NOTE]
       > Make sure a printer is pre-configured on the Take a Test account if you're enabling this option.
 
    - To enable teachers to monitor screens, select **Allow screen monitoring**
@@ -198,7 +198,7 @@ To create a local account, and configure Take a Test in kiosk mode using the Set
 1. To take the test, a student must sign in using the test-taking account selected in step 4
    :::image type="content" source="./images/takeatest/login-screen-take-a-test-single-pc.png" alt-text="Windows 11 SE login screen with the take a test account." border="true":::
 
-   > [!NOTE]  
+   > [!NOTE]
    > To sign-in with a local account on a device that is joined to Microsoft Entra ID or Active Directory, you must prefix the username with either `<computername>\` or `.\`.
 
 ---
