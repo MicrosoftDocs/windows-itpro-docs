@@ -18,9 +18,18 @@ Microsoft is committed to optimizing the security of its products and services. 
 
 The product releases below are currently certified against the cited *Protection Profile*, as listed on the [Common Criteria Portal](https://www.commoncriteriaportal.org/products/):
 
-- The *Security Target* describes the product edition(s) in scope, the security functionality in the product, and the assurance measures from the *Protection Profile* used as part of the evaluation
-- The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration
-- The *Certification Report or Validation Report* documents the results of the evaluation by the validation team, with the *Assurance Activity Report* providing details on the evaluator's actions
+- The *Security Target* describes the product edition(s) in scope, the security functionality in the product, and the assurance measures from the *Protection Profile* used as part of the evaluation.
+- The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration.
+- The *Certification Report or Validation Report* documents the results of the evaluation by the validation team, with the *Assurance Activity Report* providing details on the evaluator's actions.
+
+### Windows 11 (version 22H2), Windows 10 (version 22H2), Windows Server 2022, Windows Server Datacenter: Azure Edition, Azure Stack HCIv2 version 22H2, Azure Stack Hub and Edge
+
+Certified against the Protection Profile for General Purpose Operating Systems (4.2.1), the PP-Module for VPN Client (2.4), the PP-Module for Wireless Local Area Network Client (1.0) and the PP-Module for Bluetooth (1.0)
+
+- [Security Target](https://download.microsoft.com/download/2/6/c/26c2c205-db9f-474b-9ac7-bd8bf6ae463c/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Security%20Target%20(22H2).pdf)
+- [Administrative Guide](https://download.microsoft.com/download/c/8/3/c83090c7-d299-4d26-a1c3-fb2bf2d77a7b/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Administrative%20Guide%20(22H2).pdf)
+- [Assurance Activity Report](https://download.microsoft.com/download/1/7/f/17fac352-5c93-4e4b-9866-3c0df4080164/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Public%20Assurance%20Activity%20Report%20(22H2).pdf)
+- [Certification Report](https://download.microsoft.com/download/6/9/1/69101f35-1373-4262-8c5b-75e08bc2e365/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Validation%20Report%20(22H2).pdf)
 
 ### Windows 11, Windows 10 (version  20H2, 21H1, 21H2), Windows Server, Windows Server 2022, Azure Stack HCIv2 version 21H2, Azure Stack Hub and Edge
 
@@ -29,7 +38,7 @@ Certified against the Protection Profile for General Purpose Operating Systems, 
 - [Security Target](https://download.microsoft.com/download/c/5/9/c59832ff-414b-4f15-8273-d0c349a0b154/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Security%20Target%20(21H2%20et%20al).pdf)
 - [Administrative Guide](https://download.microsoft.com/download/9/1/7/9178ce6a-8117-42e7-be0d-186fc4a89ca6/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Administrative%20Guide%20(21H2%20et%20al).pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/4/1/6/416151fe-63e7-48c0-a485-1d87148c71fe/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Assurance%20Activity%20Report%20(21H2%20et%20al).pdf)
-- [Validation Report](https://download.microsoft.com/download/e/3/7/e374af1a-3c5d-42ee-8e19-df47d2c0e3d6/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Validation%20Report%20(21H2%20et%20al).pdf)
+- [Certification Report](https://download.microsoft.com/download/e/3/7/e374af1a-3c5d-42ee-8e19-df47d2c0e3d6/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Validation%20Report%20(21H2%20et%20al).pdf)
 
 ### Windows 10, version 2004, Windows Server, version 2004, Windows Server Core Datacenter (Azure Fabric Controller), Windows Server Core Datacenter (Azure Stack)
 
@@ -37,7 +46,7 @@ Certified against the Protection Profile for General Purpose Operating Systems, 
 
 - [Security Target](https://download.microsoft.com/download/a/5/6/a5650848-e86a-4554-bb13-1ad6ff2d45d2/Windows%2010%202004%20GP%20OS%20Security%20Target.pdf)
 - [Administrative Guide](https://download.microsoft.com/download/4/a/6/4a66a459-3c73-4c34-84bb-92cb20301206/Windows%2010%202004%20GP%20OS%20Administrative%20Guide.pdf)
-- [Validation Report](https://download.microsoft.com/download/1/c/b/1cb65e32-f87d-41dd-bc29-88dc943fad9d/Windows%2010%202004%20GP%20OS%20Validation%20Reports.pdf)
+- [Certification Report](https://download.microsoft.com/download/1/c/b/1cb65e32-f87d-41dd-bc29-88dc943fad9d/Windows%2010%202004%20GP%20OS%20Validation%20Reports.pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/3/2/4/324562b6-0917-4708-8f9d-8d2d12859839/Windows%2010%202004%20GP%20OS%20Assurance%20Activity%20Report-Public%20.pdf)
 
 ### Windows 10, version 1909, Windows Server, version 1909, Windows Server 2019, version 1809 Hyper-V
