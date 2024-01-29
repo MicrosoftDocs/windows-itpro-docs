@@ -2,7 +2,7 @@
 title: Transition into a passwordless deployment
 description: Learn about how to transition into a passwordless deployment, the third step of the Microsoft passwordless journey.
 ms.topic: concept-article
-ms.date: 12/13/2023
+ms.date: 01/29/2024
 ---
 
 # Transition into a passwordless deployment
@@ -33,11 +33,11 @@ An awareness campaign introduces the users to the new way of authenticating to t
 
 ## Include remaining users that fit the work persona
 
-You've implemented the awareness campaign for the targeted users. These users are informed and ready to transition to being passwordless. Add the remaining users that match the targeted work persona to your deployment.
+You implemented the awareness campaign for the targeted users. These users are informed and ready to transition to being passwordless. Add the remaining users that match the targeted work persona to your deployment.
 
 ## Validate that none of the users of the work personas need passwords
 
-You've successfully transitioned all users for the targeted work persona to being passwordless. Monitor the users within the work persona to ensure they don't encounter any issues while working in a passwordless environment.
+You successfully transitioned all users for the targeted work persona to being passwordless. Monitor the users within the work persona to ensure they don't encounter any issues while working in a passwordless environment.
 
 Track all reported issues. Set priority and severity to each reported issue and have your team triage the issues appropriately. As you triage issues, consider the following questions:
 
@@ -48,13 +48,13 @@ Track all reported issues. Set priority and severity to each reported issue and 
 | **🔲** | *Is the outage a result of a misconfiguration?* |
 | **🔲** | *Is the outage an overlooked gap from step 2?* |
 
-Each organization's priority and severity will differ. However, most organizations consider work stoppages to be fairly significant. Your team should predefine levels of priority and severity. With each of these levels, create service level agreements (SLAs) for each combination of severity and priority, and hold everyone accountable to those agreements. Reactive planning enables people to spend more time on the issue and resolving it, and less time on the process.
+Each organization's priority and severity differ. However, most organizations consider work stoppages to be fairly significant. Your team should predefine levels of priority and severity. With each of these levels, create service level agreements (SLAs) for each combination of severity and priority, and hold everyone accountable to those agreements. Reactive planning enables people to spend more time on the issue and resolving it, and less time on the process.
 
-Resolve the issues per your service level agreements. Higher severity items may require returning some or all of the user's password surface. Clearly this outcome isn't the end goal, but don't let it slow down your momentum towards becoming passwordless. Refer to how you reduced the user's password surface in step 2 and progress forward to a solution, deploying that solution and validating it.
+Resolve the issues per your service level agreements. Higher severity items might require returning some or all of the user's password surface. Clearly this outcome isn't the end goal, but don't let it slow down your momentum towards becoming passwordless. Refer to how you reduced the user's password surface in step 2, and progress forward to a solution, deploying that solution and validating it.
 
 ## Configure user accounts to prevent password authentication
 
-You transitioned all the users for the targeted work persona to a passwordless environment and you've successfully validated all their workflows. The last step to complete the passwordless transition is to remove the user's knowledge of the password.
+You transitioned all the users for the targeted work persona to a passwordless environment and validated all their workflows. The last step to complete the passwordless transition is to remove the user's knowledge of the password.
 
 ### Password scrambling
 
@@ -63,7 +63,7 @@ While you can't completely remove the password from the user's account, you can 
 > [!TIP]
 > Enable [Microsoft Entra self-service password reset (SSPR)](/entra/identity/authentication/tutorial-enable-sspr) to allow the users to reset their password. Once implemented, users can sign in to their Windows devices using Windows Hello for Business or a FIDO2 security key, and reset their password from https://aka.ms/sspr. Combine it with [password writeback](/entra/identity/authentication/tutorial-enable-cloud-sync-sspr-writeback) to have the password reset synchronized to your on-premises Active Directory.
 
-The following sample PowerShell script generates a random password of 64 characters and sets it for the user specified in the variable name $userId agains Microsoft Entra ID.
+The following sample PowerShell script generates a random password of 64 characters and sets it for the user specified in the variable name $userId against Microsoft Entra ID.
 Modify the **userId** variable of the script to match your environment (first line), and then run it in a PowerShell session. When prompted to authenticate to Microsoft Entra ID, use the credentials of an account with a role capable of resetting passwords.
 
 ```azurepowershell-interactive
@@ -127,8 +127,8 @@ If your organizational policies allow it, you can configure the randomized passw
 
 ### Password rotation
 
-Consider implementing automation to rotate the user's password on a regular basis. This approach ensures that the user's password is always randomized and prevents the user from knowing the password.
+Consider implementing automation to rotate the user's password regularly. This approach ensures that the user's password is always randomized and prevents the user from knowing the password.
 
 ## Next steps
 
-Microsoft is working hard to make the passwordless journey easier for you. We're working on new features and capabilities to help you transition to a passwordless environment, and to achieves the long-term security promise of a truly passwordless environment. Check back often to see what's new.
+Microsoft is working hard to make the passwordless journey easier for you. We're working on new features and capabilities to help you transition to a passwordless environment, and to achieve the long-term security promise of a truly passwordless environment. Check back often to see what's new.
