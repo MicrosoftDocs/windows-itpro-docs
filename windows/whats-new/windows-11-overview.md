@@ -79,8 +79,6 @@ For more information on the security features you can configure, manage, and enf
 
   For more information, see [Getting started with Power Automate in Windows 11](/power-automate/desktop-flows/getting-started-windows-11).
 
-  Users can manage preinstalled apps using the **Settings** app > **Apps** > **Apps & Features**. Admins can [create a policy that pins apps, or removes the default pinned apps from the Taskbar](/windows/configuration/customize-taskbar-windows-11).
-
 ## Customize the desktop experience
 
 - **Snap Layouts, Snap Groups**: When you open an app, hover your mouse over the minimize or maximize option. When you do, you can select a different layout for the app:
