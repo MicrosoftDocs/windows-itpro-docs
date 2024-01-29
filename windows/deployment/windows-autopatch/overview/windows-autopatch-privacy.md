@@ -13,6 +13,7 @@ ms.reviewer: hathind
 ms.collection:
   - highpri
   - tier1
+  - essentials-privacy
 ---
 
 # Privacy

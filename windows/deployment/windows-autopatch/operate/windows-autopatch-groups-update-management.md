@@ -13,6 +13,7 @@ ms.reviewer: andredm7
 ms.collection:
   - highpri
   - tier1
+  - essentials-manage
 ---
 
 # Software update management
