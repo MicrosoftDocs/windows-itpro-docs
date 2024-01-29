@@ -36,6 +36,8 @@ To access the Windows Update for Business reports workbook:
 1. When the gallery opens, select the **Windows Update for Business reports** workbook. If needed, you can filter workbooks by name in the gallery.
 1. When the workbook opens, you may need to specify which **Subscription** and **Workspace** you used when [enabling Windows Update for Business reports](wufb-reports-enable.md).
 
+> [!Important]
+> Don't pin the Windows Update for Business reports workbook to an Azure dashboard. Using a pinned report loads an older copy of the report and it won't display any updates to the report template. <!--8689121-->
 
 ## Summary tab
 
