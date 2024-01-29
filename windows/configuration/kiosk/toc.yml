@@ -1,6 +1,12 @@
 items:
 - name: Configure kiosks and digital signs on Windows desktop editions
   href: kiosk-methods.md
+- name: Quickstarts
+  items:
+    - name: Configure a single-app kiosk
+      href: quickstart-single-app.md
+    - name: Configure a multi-app kiosk
+      href: quickstart-multi-app.md
 - name: Prepare a device for kiosk configuration
   href: kiosk-prepare.md
 - name: Set up digital signs
@@ -32,6 +38,6 @@ items:
     - name: Use MDM Bridge WMI Provider to create a Windows client kiosk
       href: kiosk-mdm-bridge.md
     - name: Troubleshoot kiosk mode issues
-      href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting 
+      href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
 - name: Lockdown features from Windows Embedded 8.1 Industry
-  href: lockdown-features-windows-10.md 
+  href: lockdown-features-windows-10.md
