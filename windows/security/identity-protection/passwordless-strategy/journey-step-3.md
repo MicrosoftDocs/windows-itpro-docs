@@ -125,6 +125,9 @@ Set-ADAccountPassword -identity $userId -NewPassword $NewPassword -Reset
 
 If your organizational policies allow it, you can configure the randomized passwords to never expire, or use a long expiration period. This configuration prevents the user from being prompted to change their password.
 
+> [!CAUTION]
+> Execute the script only from a secure and trusted environment, and ensure that the script is not logged. Treat the host where the script is executed as a privileged host, with the same level of security as a domain controller.
+
 ### Password rotation
 
 Consider implementing automation to rotate the user's password regularly. This approach ensures that the user's password is always randomized and prevents the user from knowing the password.

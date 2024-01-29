@@ -41,9 +41,9 @@ Some organizations empower their users to write this information, while some mig
 Your test users provided you valuable with information that describes how, what, why, and when they use a password. It's now time for your team to identify each of these password use cases and understand why the user must use a password.\
 Create a list of the scenarios. Each scenario should have a clear problem statement. Name the scenario with a one-sentence summary of the problem statement. Include in the scenario the results of your team's investigation as to why the user is asked to provide a password. Include relevant, but accurate details. If the scenario is policy or procedure-driven, then include the name and section of the policy that dictates why the workflow uses a password.
 
-Your test users won't uncover all scenarios, therefore you must force on some uncommon scenarios. Remember to include the following:
+Your test users won't uncover all scenarios, therefore you must force on them some uncommon scenarios. Remember to include the following:
 
-- Provision a new user without a password
+- Provision a new user with an unknown password
 - Users who forget the PIN or other remediation flows when the strong credential is unusable
 
 Next, review your list of scenarios. You can start with the workflows that are dictated by process or policy, or you can begin with workflows that need technical solutions, whichever of the two is easier or quicker. This choice varies by organization.
