@@ -63,8 +63,6 @@ While you can't completely remove the password from the user's account, you can 
 > [!TIP]
 > Enable [Microsoft Entra self-service password reset (SSPR)](/entra/identity/authentication/tutorial-enable-sspr) to allow the users to reset their password. Once implemented, users can sign in to their Windows devices using Windows Hello for Business or a FIDO2 security key, and reset their password from https://aka.ms/sspr. Combine it with [password writeback](/entra/identity/authentication/tutorial-enable-cloud-sync-sspr-writeback) to have the password reset synchronized to your on-premises Active Directory.
 
-If your organizational policies allow it, you can configure the randomized passwords to never expire, or use a long expiration period. This configuration prevents the user from being prompted to change their password.
-
 The following sample PowerShell script generates a random password of 64 characters and sets it for the user specified in the variable name $userId agains Microsoft Entra ID.
 Modify the **userId** variable of the script to match your environment (first line), and then run it in a PowerShell session. When prompted to authenticate to Microsoft Entra ID, use the credentials of an account with a role capable of resetting passwords.
 
@@ -124,6 +122,8 @@ $NewPassword = ConvertTo-SecureString -String (Generate-RandomPassword) -AsPlain
 
 Set-ADAccountPassword -identity $userId -NewPassword $NewPassword -Reset
 ```
+
+If your organizational policies allow it, you can configure the randomized passwords to never expire, or use a long expiration period. This configuration prevents the user from being prompted to change their password.
 
 ### Password rotation
 
