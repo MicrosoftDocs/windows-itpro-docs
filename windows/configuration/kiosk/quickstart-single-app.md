@@ -1,11 +1,11 @@
 ---
-title: Configure Take a Test in kiosk mode
-description: Learn how to configure Windows to execute the Take a Test app in kiosk mode, using Intune and provisioning packages.
+title: "Quickstart: configure a single-app kiosk"
+description: Learn how to configure a single-app kiosk using Windows Configuration Designer, Microsoft Intune, PowerShell or GPO.
 ms.date: 11/08/2023
 ms.topic: how-to
 ---
 
-# Configure Take a Test in kiosk mode
+# Quickstart: configure a single-app kiosk
 
 Executing Take a Test in kiosk mode is the recommended option for high stakes assessments, such as mid-term exams. In this mode, Windows will execute Take a Test in a lock-down mode, preventing the execution of any applications other than Take a Test. Students must sign in using a test-taking account.
 
@@ -70,7 +70,7 @@ To configure devices using Intune for Education, follow these steps:
 [!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
 [!INCLUDE [intune-custom-settings-info](../../../includes/configure/intune-custom-settings-info.md)]
 
-#### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+#### [:::image type="icon" source="../../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
 To create a provisioning package, you can either use Set up School PCs or Windows Configuration Designer:
 
