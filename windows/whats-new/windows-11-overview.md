@@ -5,7 +5,7 @@ manager: aaroncz
 author: mestew
 ms.author: mstewart
 ms.prod: windows-client
-ms.date: 01/08/2024
+ms.date: 01/31/2024
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
 ms.topic: overview
@@ -22,7 +22,7 @@ Windows 11 is a client operating system and includes features that organizations
 
 Windows 11 offers innovations focused on enhancing end-user productivity, and is designed to support today's hybrid work environment.
 
-Your investments in update and device management are carried forward. For example, many of the same apps and tools can be used in Windows 11. Many of the same security settings and policies can be applied to Windows 11 devices, including PCs. You can use Windows Autopilot with a zero touch deployment to enroll your Windows devices in Microsoft Intune. You can also use newer features, such as Azure Virtual Desktop and Windows 365 on your Windows 11 devices.
+Your investments in updates and device management are carried forward. For example, many of the same apps and tools can be used in Windows 11. Many of the same security settings and policies can be applied to Windows 11 devices, including PCs. You can use Windows Autopilot with a zero touch deployment to enroll your Windows devices in Microsoft Intune. You can also use newer features, such as Azure Virtual Desktop and Windows 365 on your Windows 11 devices.
 
 This article lists what's new, and some of the features & improvements. For more information on what's new for OEMs, see [What's new in manufacturing, customization, and design](/windows-hardware/get-started/what-s-new-in-windows).
 
@@ -46,7 +46,7 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
   - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
   - [Enforce compliance for Microsoft Defender for Endpoint](/mem/intune/protect/advanced-threat-protection)
 
-- The Application Security features help prevent unwanted or malicious code from running, isolate untrusted websites & untrusted Office files, protect against phishing or malware websites, and more.
+- The application security features help prevent unwanted or malicious code from running, isolate untrusted websites & untrusted Office files, protect against phishing or malware websites, and more.
   
   For more information, see  [Windows application security](/windows/security/apps).
 
@@ -68,23 +68,18 @@ For more information on the security features you can configure, manage, and enf
 
   For more information, see [What is Windows 365 Enterprise?](/windows-365/overview).
 
-- **Microsoft Teams** is included with the OS, and is automatically available on the taskbar. Users select the chat icon, sign in with their personal Microsoft account, and start a call:
-
-  :::image type="content" source="./images/windows-11-whats-new/windows-11-taskbar-microsoft-teams.png" alt-text="On the Windows 11 taskbar, select the camera chat icon to start a Microsoft Teams call.":::
-
-  This version of Microsoft Teams is for personal accounts. For organization accounts, such as `user@contoso.com`, you can deploy the Microsoft Teams app using MDM policy, such as Intune. For more information, see:
+- **Microsoft 365 Apps** can be installed on Windows 11 clients using the device management tools you're already familiar with:
 
   - [What is Intune?](/mem/intune/fundamentals/what-is-intune)
   - [Add Microsoft 365 apps to Windows 10 devices with Microsoft Intune](/mem/intune/apps/apps-add-office365)
-  - [Install Microsoft Teams using Microsoft Configuration Manager](/microsoftteams/msi-deployment)
+  - [What is Microsoft Configuration Manager?](/mem/configmgr/core/understand/introduction)
+  - [Deploy Microsoft 365 Apps with Microsoft Configuration Manager](/deployoffice/deploy-microsoft-365-apps-configuration-manager)
 
-  Users can manage preinstalled apps using the **Settings** app > **Apps** > **Apps & Features**. Admins can [create a policy that pins apps, or removes the default pinned apps from the Taskbar](/windows/configuration/customize-taskbar-windows-11).
-
-- **Power Automate for desktop** is included with the OS. Your users can create flows with this low-code app to help them with everyday tasks. For example, users can create flows that save a message to OneNote, notify a team when there's a new Forms response, get notified when a file is added to SharePoint, and more.
+- **Power Automate for desktop** allows your users to create flows in a low-code app to help them with everyday tasks. For example, users can create flows that save a message to OneNote, notify a team when there's a new Forms response, get notified when a file is added to SharePoint, and more.
 
   For more information, see [Getting started with Power Automate in Windows 11](/power-automate/desktop-flows/getting-started-windows-11).
 
-  Users can manage preinstalled apps using the **Settings** app > **Apps** > **Apps & Features**.
+  Users can manage preinstalled apps using the **Settings** app > **Apps** > **Apps & Features**. Admins can [create a policy that pins apps, or removes the default pinned apps from the Taskbar](/windows/configuration/customize-taskbar-windows-11).
 
 ## Customize the desktop experience
 
@@ -98,7 +93,7 @@ For more information on the security features you can configure, manage, and enf
 
   Users can manage some snap features using the **Settings** app > **System** > **Multitasking**. For more information on the end-user experience, see [Snap your windows](https://support.microsoft.com/windows/snap-your-windows-885a9b1e-a983-a3b1-16cd-c531795e6241).
 
-  You can also add Snap Layouts to apps your organization creates. For more information, see [Support snap layouts for desktop apps on Windows 11](/windows/apps/desktop/modernize/apply-snap-layout-menu).
+  You can also add Snap Layouts to apps your organization creates. For more information, see [Support snap layouts for desktop apps on Windows 11](/windows/apps/desktop/modernize/apply-snap-layout-menu). 
 
   Starting in Windows 11, version 22H2, you can also activate snap layouts by dragging a window to the top of the screen. The feature is available for both mouse and touch.<!-- MAX 6294246, OS 32513582 -->
 
@@ -125,7 +120,9 @@ For more information on the security features you can configure, manage, and enf
 
   :::image type="content" source="./images/windows-11-whats-new/windows-11-taskbar-widgets.png" alt-text="On the Windows 11 taskbar, select the widgets icon to open and see the available widgets.":::
 
-  You can enable/disable this feature using the `Computer Configuration\Administrative Templates\Windows Components\widgets` Group Policy. You can also deploy a customized Taskbar to devices in your organization. For more information, see [Customize the Taskbar on Windows 11](/windows/configuration/customize-taskbar-windows-11).
+  You can enable or disable this feature using the following policy:
+    - **Group Policy**: Computer Configuration\Administrative Templates\Windows Components\widgets
+     - **MDM**: ./Device/Vendor/MSFT/Policy/Config/NewsAndInterests/[AllowNewsAndInterests](/windows/client-management/mdm/policy-csp-newsandinterests)
 
   For information on the end-user experience, see [Stay up to date with widgets](https://support.microsoft.com/windows/stay-up-to-date-with-widgets-7ba79aaa-dac6-4687-b460-ad16a06be6e4).
 
@@ -164,7 +161,7 @@ For more information on the security features you can configure, manage, and enf
 
 - **Windows Terminal app**: This app is included with the OS. On previous Windows versions, it's a separate download in the Microsoft Store. For more information, see [What is Windows Terminal?](/windows/terminal/).
 
-  This app combines Windows PowerShell, a command prompt, and Azure Cloud Shell all within the same terminal window. You don't need to open separate apps to use these command-line applications. It has tabs. And when you open a new tab, you can choose your command-line application:
+  This app combines Windows PowerShell, a command prompt, and Azure Cloud Shell all within the same terminal window. You don't need to open separate apps to use these command-line applications. It has tabs. When you open a new tab, you can choose your command-line application:
 
     :::image type="content" source="./images/windows-11-whats-new/windows-terminal-app.png" alt-text="On Windows 11, open the Windows Terminal app to use Windows PowerShell, the command prompt, or Azure Cloud Shell to run commands.":::
 
@@ -177,7 +174,7 @@ For more information on the security features you can configure, manage, and enf
   - [Get updates for apps and games in Microsoft Store](https://support.microsoft.com/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f)
   - [How to open Microsoft Store on Windows](https://support.microsoft.com/account-billing/how-to-open-microsoft-store-on-windows-10-e080b85a-7c9e-46a7-8d8b-3e9a42e32de6)
 
-- The **Microsoft Edge** browser is included with the OS, and is the default browser. Internet Explorer (IE) isn't available in Windows 11. In Microsoft Edge, you can use IE Mode if a website needs Internet Explorer. Open Microsoft Edge, and enter `edge://settings/defaultBrowser` in the URL.
+- The **Microsoft Edge** browser is included with the OS. Internet Explorer (IE) isn't available in Windows 11. In Microsoft Edge, you can use IE Mode if a website needs Internet Explorer. Open Microsoft Edge, and enter `edge://settings/defaultBrowser` in the URL.
 
   To save system resources, Microsoft Edge uses sleeping tabs. Users can configure these settings, and more, in `edge://settings/system`.
 
@@ -185,7 +182,7 @@ For more information on the security features you can configure, manage, and enf
 
 ## Deployment and servicing
 
-- **Install Windows 11**: The same methods you use to install Windows 10 can also be used to install Windows 11. For example, you can deploy Windows to your devices using Windows Autopilot, Microsoft Deployment Toolkit (MDT), Configuration Manager, and more. Windows 11 is delivered as an upgrade to eligible devices running Windows 10.
+- **Install Windows 11**: The same methods you use to install Windows 10 can also be used to install Windows 11. For example, you can deploy Windows to your devices using Windows Autopilot, Configuration Manager, and other methods. Windows 11 is delivered as an upgrade to eligible devices running Windows 10.
 
   For more information on getting started, see [Windows client deployment resources and documentation](/windows/deployment/) and [Plan for Windows 11](windows-11-plan.md).
 
@@ -216,7 +213,7 @@ For more information on the security features you can configure, manage, and enf
 
 ## Education and apps
 
-Windows 11 SE is a new edition of Windows that's designed for education. It runs on low-cost devices, and runs essential apps, including Microsoft 365. For more information, see [Windows 11 SE for Education](/education/windows/windows-11-se-overview).
+Windows 11 SE is a new edition of Windows designed for education. It runs on low-cost devices, and runs essential apps, including Microsoft 365. For more information, see [Windows 11 SE for Education](/education/windows/windows-11-se-overview).
 
 ## Next steps
 
