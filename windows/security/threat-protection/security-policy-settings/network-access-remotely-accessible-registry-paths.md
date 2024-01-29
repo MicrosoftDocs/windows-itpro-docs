@@ -4,7 +4,6 @@ description: Best practices, location, values, policy management and security co
 ms.assetid: 977f86ea-864f-4f1b-9756-22220efce0bd
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Network access: Remotely accessible registry paths

@@ -4,7 +4,6 @@ description: Determines whether to audit each event of account management on a d
 ms.assetid: 369197E1-7E0E-45A4-89EA-16D91EF01689
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 09/06/2021
-ms.technology: itpro-security
 ---
 
 # Audit account management

@@ -1,7 +1,7 @@
 ---
 title: WMI providers supported in Windows
 description: Manage settings and applications on devices that subscribe to the Mobile Device Management (MDM) service with Windows Management Infrastructure (WMI).
-ms.topic: article
+ms.topic: conceptual
 ms.date: 08/10/2023
 ---
 

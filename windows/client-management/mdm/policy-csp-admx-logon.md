@@ -1,14 +1,7 @@
 ---
 title: ADMX_Logon Policy CSP
 description: Learn more about the ADMX_Logon Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -97,12 +90,7 @@ This policy prevents the user from showing account details (email address or use
 <!-- DisableAcrylicBackgroundOnLogon-OmaUri-End -->
 
 <!-- DisableAcrylicBackgroundOnLogon-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting disables the acrylic blur effect on logon background image.
-
-- If you enable this policy, the logon background image shows without blur.
-
-- If you disable or don't configure this policy, the logon background image adopts the acrylic blur effect.
+<!-- Description-Source-Not-Found -->
 <!-- DisableAcrylicBackgroundOnLogon-Description-End -->
 
 <!-- DisableAcrylicBackgroundOnLogon-Editable-Begin -->
