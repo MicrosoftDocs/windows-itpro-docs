@@ -1682,12 +1682,12 @@
     },
     {
       "source_path": "windows/deploy/assign-applications-using-roles-in-mdt.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/assign-applications-using-roles-in-mdt",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/assign-applications-using-roles-in-mdt",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deploy/build-a-distributed-environment-for-windows-10-deployment.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment",
       "redirect_document_id": false
     },
     {
@@ -1717,17 +1717,17 @@
     },
     {
       "source_path": "windows/deploy/configure-mdt-deployment-share-rules.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/configure-mdt-deployment-share-rules",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/configure-mdt-deployment-share-rules",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deploy/configure-mdt-for-userexit-scripts.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/configure-mdt-for-userexit-scripts",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/configure-mdt-for-userexit-scripts",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deploy/configure-mdt-settings.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/configure-mdt-settings",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/configure-mdt-settings",
       "redirect_document_id": false
     },
     {
@@ -1742,7 +1742,7 @@
     },
     {
       "source_path": "windows/deploy/create-a-windows-10-reference-image.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/create-a-windows-10-reference-image",
       "redirect_document_id": false
     },
     {
@@ -1752,7 +1752,7 @@
     },
     {
       "source_path": "windows/deploy/deploy-a-windows-10-image-using-mdt.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt",
       "redirect_document_id": false
     },
     {
@@ -1787,7 +1787,7 @@
     },
     {
       "source_path": "windows/deploy/get-started-with-the-microsoft-deployment-toolkit.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit",
       "redirect_document_id": false
     },
     {
@@ -1927,7 +1927,7 @@
     },
     {
       "source_path": "windows/deploy/prepare-for-windows-deployment-with-mdt.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt",
       "redirect_document_id": false
     },
     {
@@ -2007,7 +2007,7 @@
     },
     {
       "source_path": "windows/deploy/refresh-a-windows-7-computer-with-windows-10.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10",
       "redirect_document_id": false
     },
     {
@@ -2022,7 +2022,7 @@
     },
     {
       "source_path": "windows/deploy/replace-a-windows-7-computer-with-a-windows-10-computer.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer",
       "redirect_document_id": false
     },
     {
@@ -2052,7 +2052,7 @@
     },
     {
       "source_path": "windows/deploy/set-up-mdt-for-bitlocker.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/set-up-mdt-for-bitlocker",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/set-up-mdt-for-bitlocker",
       "redirect_document_id": false
     },
     {
@@ -2062,7 +2062,7 @@
     },
     {
       "source_path": "windows/deploy/simulate-a-windows-10-deployment-in-a-test-environment.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/simulate-a-windows-10-deployment-in-a-test-environment",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/simulate-a-windows-10-deployment-in-a-test-environment",
       "redirect_document_id": false
     },
     {
@@ -2212,7 +2212,7 @@
     },
     {
       "source_path": "windows/deploy/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md",
-      "redirect_url": "/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit",
       "redirect_document_id": false
     },
     {
@@ -2222,12 +2222,12 @@
     },
     {
       "source_path": "windows/deploy/use-orchestrator-runbooks-with-mdt.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/use-orchestrator-runbooks-with-mdt",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/use-orchestrator-runbooks-with-mdt",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deploy/use-the-mdt-database-to-stage-windows-10-deployment-information.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/use-the-mdt-database-to-stage-windows-10-deployment-information",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/use-the-mdt-database-to-stage-windows-10-deployment-information",
       "redirect_document_id": false
     },
     {
@@ -2257,7 +2257,7 @@
     },
     {
       "source_path": "windows/deploy/use-web-services-in-mdt.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/use-web-services-in-mdt",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/use-web-services-in-mdt",
       "redirect_document_id": false
     },
     {
@@ -2537,7 +2537,7 @@
     },
     {
       "source_path": "windows/deploy/windows-10-poc-mdt.md",
-      "redirect_url": "/windows/deployment/windows-10-poc-mdt",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-10-poc-mdt",
       "redirect_document_id": false
     },
     {
@@ -12768,6 +12768,101 @@
     {
       "source_path": "windows/deployment/windows-10-media.md",
       "redirect_url": "/licensing/",
+      "redirect_document_id": false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/assign-applications-using-roles-in-mdt.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/assign-applications-using-roles-in-mdt",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/configure-mdt-deployment-share-rules.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/configure-mdt-deployment-share-rules",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/configure-mdt-for-userexit-scripts.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/configure-mdt-for-userexit-scripts",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/configure-mdt-settings.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/configure-mdt-settings",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/create-a-windows-10-reference-image",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/set-up-mdt-for-bitlocker.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/set-up-mdt-for-bitlocker",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/simulate-a-windows-10-deployment-in-a-test-environment.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/simulate-a-windows-10-deployment-in-a-test-environment",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/use-orchestrator-runbooks-with-mdt.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/use-orchestrator-runbooks-with-mdt",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/use-the-mdt-database-to-stage-windows-10-deployment-information.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/use-the-mdt-database-to-stage-windows-10-deployment-information",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/deploy-windows-mdt/use-web-services-in-mdt.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/use-web-services-in-mdt",
+     "redirect_document_id":  false
+    },
+    {
+     "source_path":  "windows/deployment/windows-10-poc-mdt.md",
+     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/windows-10-poc-mdt",
+     "redirect_document_id":  false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/resolve-windows-10-upgrade-errors.md",
+      "redirect_url": "/windows/deployment/upgrade/resolve-windows-upgrade-errors",
       "redirect_document_id": false
     }
   ]
