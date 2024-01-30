@@ -9,6 +9,7 @@ ms.author: danbrown
 manager: laurawi
 ms.date: 05/20/2019
 ms.topic: conceptual
+ms.collection: essentials-compliance
 ---
 
 # Windows Privacy Compliance:<br />A Guide for IT and Compliance Professionals
