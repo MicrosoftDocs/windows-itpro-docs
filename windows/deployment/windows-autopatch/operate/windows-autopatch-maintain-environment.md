@@ -13,6 +13,7 @@ ms.reviewer: smithcharles
 ms.collection:
   - highpri
   - tier1
+  - essentials-manage
 ---
 
 # Maintain the Windows Autopatch environment

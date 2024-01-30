@@ -9,7 +9,9 @@ metadata:
   description: Learn about how privacy is managed in Windows.
   ms.prod: windows-client
   ms.topic: hub-page # Required
-  ms.collection: highpri
+  ms.collection: 
+  - highpri
+  - essentials-privacy
   author: DHB-MSFT
   ms.author: danbrown
   manager: laurawi
