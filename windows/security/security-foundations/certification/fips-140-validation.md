@@ -21,40 +21,40 @@ The Windows client releases listed below include cryptographic modules that have
 
 ### Windows 10 releases
 
-[Windows 10, version 2004 (May 2020 Update)](validations/fips-140-windows10.md#windows-10-version-2004-may-2020-update)
-[Windows 10, version 1909 (November 2019 Update)](validations/fips-140-windows10.md#windows-10-version-1909-november-2019-update)
-[Windows 10, version 1903 (May 2019 Update)](validations/fips-140-windows10.md#windows-10-version-1903-may-2019-update)
-[Windows 10, version 1809 (October 2018 Update)](validations/fips-140-windows10.md#windows-10-version-1809-october-2018-update)
-[Windows 10, version 1803 (April 2018 Update)](validations/fips-140-windows10.md#windows-10-version-1803-april-2018-update)
-[Windows 10, version 1709 (Fall Creators Update)](validations/fips-140-windows10.md#windows-10-version-1709-fall-creators-update)
-[Windows 10, version 1703 (Creators Update)](validations/fips-140-windows10.md#windows-10-version-1703-creators-update)
-[Windows 10, version 1607 (Anniversary Update)](validations/fips-140-windows10.md#windows-10-version-1607-anniversary-update)
-[Windows 10, version 1511 (November Update)](validations/fips-140-windows10.md#windows-10-version-1511-november-update)
-[Windows 10, version 1507](validations/fips-140-windows10.md#windows-10-version-1507)
+- [Windows 10, version 2004 (May 2020 Update)](validations/fips-140-windows10.md#windows-10-version-2004-may-2020-update)
+- [Windows 10, version 1909 (November 2019 Update)](validations/fips-140-windows10.md#windows-10-version-1909-november-2019-update)
+- [Windows 10, version 1903 (May 2019 Update)](validations/fips-140-windows10.md#windows-10-version-1903-may-2019-update)
+- [Windows 10, version 1809 (October 2018 Update)](validations/fips-140-windows10.md#windows-10-version-1809-october-2018-update)
+- [Windows 10, version 1803 (April 2018 Update)](validations/fips-140-windows10.md#windows-10-version-1803-april-2018-update)
+- [Windows 10, version 1709 (Fall Creators Update)](validations/fips-140-windows10.md#windows-10-version-1709-fall-creators-update)
+- [Windows 10, version 1703 (Creators Update)](validations/fips-140-windows10.md#windows-10-version-1703-creators-update)
+- [Windows 10, version 1607 (Anniversary Update)](validations/fips-140-windows10.md#windows-10-version-1607-anniversary-update)
+- [Windows 10, version 1511 (November Update)](validations/fips-140-windows10.md#windows-10-version-1511-november-update)
+- [Windows 10, version 1507](validations/fips-140-windows10.md#windows-10-version-1507)
 
 ### Previous Windows releases
 
-[Windows 8.1](validations/fips-140-windows-previous.md#windows-81)
-[Windows 8](validations/fips-140-windows-previous.md#windows-8)
-[Windows 7](validations/fips-140-windows-previous.md#windows-7)
-[Windows Vista SP1](validations/fips-140-windows-previous.md#windows-vista-sp1)
-[Windows Vista](validations/fips-140-windows-previous.md#windows-vista)
-[Windows XP SP3](validations/fips-140-windows-previous.md#windows-xp-sp3)
-[Windows XP SP2](validations/fips-140-windows-previous.md#windows-xp-sp2)
-[Windows XP SP1](validations/fips-140-windows-previous.md#windows-xp-sp1)
-[Windows XP](validations/fips-140-windows-previous.md#windows-xp)
-[Windows 2000 SP3](validations/fips-140-windows-previous.md#windows-2000-sp3)
-[Windows 2000 SP2](validations/fips-140-windows-previous.md#windows-2000-sp2)
-[Windows 2000 SP1](validations/fips-140-windows-previous.md#windows-2000-sp1)
-[Windows 2000](validations/fips-140-windows-previous.md#windows-2000)
-[Windows 95 and Windows 98](validations/fips-140-windows-previous.md#windows-95-and-windows-98)
-[Windows NT 4.0](validations/fips-140-windows-previous.md#windows-nt-40)
+- [Windows 8.1](validations/fips-140-windows-previous.md#windows-81)
+- [Windows 8](validations/fips-140-windows-previous.md#windows-8)
+- [Windows 7](validations/fips-140-windows-previous.md#windows-7)
+- [Windows Vista SP1](validations/fips-140-windows-previous.md#windows-vista-sp1)
+- [Windows Vista](validations/fips-140-windows-previous.md#windows-vista)
+- [Windows XP SP3](validations/fips-140-windows-previous.md#windows-xp-sp3)
+- [Windows XP SP2](validations/fips-140-windows-previous.md#windows-xp-sp2)
+- [Windows XP SP1](validations/fips-140-windows-previous.md#windows-xp-sp1)
+- [Windows XP](validations/fips-140-windows-previous.md#windows-xp)
+- [Windows 2000 SP3](validations/fips-140-windows-previous.md#windows-2000-sp3)
+- [Windows 2000 SP2](validations/fips-140-windows-previous.md#windows-2000-sp2)
+- [Windows 2000 SP1](validations/fips-140-windows-previous.md#windows-2000-sp1)
+- [Windows 2000](validations/fips-140-windows-previous.md#windows-2000)
+- [Windows 95 and Windows 98](validations/fips-140-windows-previous.md#windows-95-and-windows-98)
+- [Windows NT 4.0](validations/fips-140-windows-previous.md#windows-nt-40)
 
 ### Related products
 
-[Windows Embedded Compact 7 and Windows Embedded Compact 8](validations/fips-140-other-products.md#windows-embedded-compact-7-and-windows-embedded-compact-8)
-[Windows CE 6.0 and Windows Embedded Compact 7](validations/fips-140-other-products.md#windows-ce-60-and-windows-embedded-compact-7)
-[Outlook Cryptographic Provider](validations/fips-140-other-products.md#outlook-cryptographic-provider)
+- [Windows Embedded Compact 7 and Windows Embedded Compact 8](validations/fips-140-other-products.md#windows-embedded-compact-7-and-windows-embedded-compact-8)
+- [Windows CE 6.0 and Windows Embedded Compact 7](validations/fips-140-other-products.md#windows-ce-60-and-windows-embedded-compact-7)
+- [Outlook Cryptographic Provider](validations/fips-140-other-products.md#outlook-cryptographic-provider)
 
 ## Windows Server operating systems and cryptographic modules
 
@@ -62,27 +62,27 @@ The Windows Server releases listed below include cryptographic modules that have
 
 ### Windows Server 2019 and 2016 releases
 
-[Windows Server 2019](validations/fips-140-windows-server-2019.md#windows-server-2019)
-[Windows Server 2016](validations/fips-140-windows-server-2016.md#windows-server-2016)
+- [Windows Server 2019](validations/fips-140-windows-server-2019.md#windows-server-2019)
+- [Windows Server 2016](validations/fips-140-windows-server-2016.md#windows-server-2016)
 
 ### Windows Server semi-annual releases
 
-[Windows Server, version 2004](validations/fips-140-windows-server-semi-annual.md#windows-server-version-2004-may-2020-update)
-[Windows Server, version 1909](validations/fips-140-windows-server-semi-annual.md#windows-server-version-1909-november-2019-update)
-[Windows Server, version 1903](validations/fips-140-windows-server-semi-annual.md#windows-server-version-1903-may-2019-update)
-[Windows Server, version 1809](validations/fips-140-windows-server-semi-annual.md#windows-server-version-1809)
-[Windows Server, version 1803](validations/fips-140-windows-server-semi-annual.md#windows-server-version-1803)
-[Windows Server, version 1709](validations/fips-140-windows-server-semi-annual.md#windows-server-version-1709)
+- [Windows Server, version 2004](validations/fips-140-windows-server-semi-annual.md#windows-server-version-2004-may-2020-update)
+- [Windows Server, version 1909](validations/fips-140-windows-server-semi-annual.md#windows-server-version-1909-november-2019-update)
+- [Windows Server, version 1903](validations/fips-140-windows-server-semi-annual.md#windows-server-version-1903-may-2019-update)
+- [Windows Server, version 1809](validations/fips-140-windows-server-semi-annual.md#windows-server-version-1809)
+- [Windows Server, version 1803](validations/fips-140-windows-server-semi-annual.md#windows-server-version-1803)
+- [Windows Server, version 1709](validations/fips-140-windows-server-semi-annual.md#windows-server-version-1709)
 
 ### Previous Windows Server releases
 
-[Windows Server 2012 R2](validations/fips-140-windows-server-previous.md#windows-server-2012-r2)
-[Windows Server 2012](validations/fips-140-windows-server-previous.md#windows-server-2012)
-[Windows Server 2008 R2](validations/fips-140-windows-server-previous.md#windows-server-2008-r2)
-[Windows Server 2008](validations/fips-140-windows-server-previous.md#windows-server-2008)
-[Windows Server 2003 SP2](validations/fips-140-windows-server-previous.md#windows-server-2003-sp2)
-[Windows Server 2003 SP1](validations/fips-140-windows-server-previous.md#windows-server-2003-sp1)
-[Windows Server 2003](validations/fips-140-windows-server-previous.md#windows-server-2003)
+- [Windows Server 2012 R2](validations/fips-140-windows-server-previous.md#windows-server-2012-r2)
+- [Windows Server 2012](validations/fips-140-windows-server-previous.md#windows-server-2012)
+- [Windows Server 2008 R2](validations/fips-140-windows-server-previous.md#windows-server-2008-r2)
+- [Windows Server 2008](validations/fips-140-windows-server-previous.md#windows-server-2008)
+- [Windows Server 2003 SP2](validations/fips-140-windows-server-previous.md#windows-server-2003-sp2)
+- [Windows Server 2003 SP1](validations/fips-140-windows-server-previous.md#windows-server-2003-sp1)
+- [Windows Server 2003](validations/fips-140-windows-server-previous.md#windows-server-2003)
 
 ## Use Windows in a FIPS approved mode of operation
 
