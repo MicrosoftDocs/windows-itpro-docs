@@ -12,6 +12,7 @@ manager: dougeby
 ms.collection:
   - highpri
   - tier1
+  - essentials-overview
 ms.reviewer: hathind
 ---
 
