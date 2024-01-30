@@ -11,7 +11,7 @@ manager: aaroncz
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 06/23/2023
+ms.date: 1/26/2024
 ---
 
 # Windows Update for Business reports workbook
@@ -36,6 +36,8 @@ To access the Windows Update for Business reports workbook:
 1. When the gallery opens, select the **Windows Update for Business reports** workbook. If needed, you can filter workbooks by name in the gallery.
 1. When the workbook opens, you may need to specify which **Subscription** and **Workspace** you used when [enabling Windows Update for Business reports](wufb-reports-enable.md).
 
+> [!Important]
+> Don't pin the Windows Update for Business reports workbook to an Azure dashboard. Using a pinned report loads an older copy of the report and it won't display any updates to the report template. <!--8689121-->
 
 ## Summary tab
 

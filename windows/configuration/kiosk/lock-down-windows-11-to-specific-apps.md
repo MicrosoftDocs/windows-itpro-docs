@@ -139,7 +139,7 @@ The following example allows Photos, Weather, Calculator, Paint, and Notepad app
           <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
           <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
           <App DesktopAppPath="%windir%\system32\mspaint.exe" />
-          <App DesktopAppPath="C:\Windows\System32\notepad.exe" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="123.txt">
+          <App DesktopAppPath="C:\Windows\System32\notepad.exe" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="123.txt" />
         </AllowedApps>
 </AllAppsList>
 ```

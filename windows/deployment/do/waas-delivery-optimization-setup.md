@@ -8,7 +8,9 @@ author: cmknox
 ms.author: carmenf
 ms.reviewer: mstewart
 manager: aaroncz
-ms.collection: tier3
+ms.collection: 
+  - tier3
+  - essentials-get-started
 ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
