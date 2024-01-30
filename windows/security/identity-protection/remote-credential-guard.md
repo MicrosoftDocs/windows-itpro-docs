@@ -1,9 +1,9 @@
 ---
-title: Remote Credential Guard 
+title: Remote Credential Guard
 description: Learn how Remote Credential Guard helps to secure Remote Desktop credentials by never sending them to the target device.
 ms.topic: how-to
 ms.date: 12/08/2023
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
@@ -36,7 +36,7 @@ The security benefits of Remote Credential Guard include:
 - During the remote session, you can connect to other systems using SSO
 - An attacker can act on behalf of the user only when the session is ongoing
 
-The security benefits of [Restricted Admin mode][TECH-1] include:
+The security benefits of Restricted Admin mode include:
 
 - Credentials aren't sent to the remote host
 - The Remote Desktop session connects to other resources as the remote host's identity
@@ -224,5 +224,4 @@ Here are some considerations for Remote Credential Guard:
 [CSP-2]: /windows/client-management/mdm/policy-csp-admx-credssp
 [INT-3]: /mem/intune/configuration/settings-catalog
 [LEARN-1]: /windows-server/identity/laps/laps-overview
-[TECH-1]: https://social.technet.microsoft.com/wiki/contents/articles/32905.how-to-enable-restricted-admin-mode-for-remote-desktop.aspx
 [PTH-1]: https://download.microsoft.com/download/7/7/A/77ABC5BD-8320-41AF-863C-6ECFB10CB4B9/Mitigating-Pass-the-Hash-Attacks-and-Other-Credential-Theft-Version-2.pdf
