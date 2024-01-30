@@ -19,7 +19,7 @@ Microsoft maintains an active commitment to meeting the requirements of the FIPS
 
 The Windows client releases listed below include cryptographic modules that have completed FIPS 140 validation. Click on the release for details, including the CMVP certificate, Security Policy document, and algorithm scope for each module. When the CMVP certificate validation label includes the note *When operated in FIPS mode*, specific configuration and security rules outlined in the Security Policy must be followed.
 
-### Windows 10 releases
+#### Windows 10 releases
 
 - [Windows 10, version 2004 (May 2020 Update)](validations/fips-140-windows10.md#windows-10-version-2004-may-2020-update)
 - [Windows 10, version 1909 (November 2019 Update)](validations/fips-140-windows10.md#windows-10-version-1909-november-2019-update)
@@ -32,7 +32,7 @@ The Windows client releases listed below include cryptographic modules that have
 - [Windows 10, version 1511 (November Update)](validations/fips-140-windows10.md#windows-10-version-1511-november-update)
 - [Windows 10, version 1507](validations/fips-140-windows10.md#windows-10-version-1507)
 
-### Previous Windows releases
+#### Previous Windows releases
 
 - [Windows 8.1](validations/fips-140-windows-previous.md#windows-81)
 - [Windows 8](validations/fips-140-windows-previous.md#windows-8)
@@ -50,7 +50,7 @@ The Windows client releases listed below include cryptographic modules that have
 - [Windows 95 and Windows 98](validations/fips-140-windows-previous.md#windows-95-and-windows-98)
 - [Windows NT 4.0](validations/fips-140-windows-previous.md#windows-nt-40)
 
-### Related products
+#### Related products
 
 - [Windows Embedded Compact 7 and Windows Embedded Compact 8](validations/fips-140-other-products.md#windows-embedded-compact-7-and-windows-embedded-compact-8)
 - [Windows CE 6.0 and Windows Embedded Compact 7](validations/fips-140-other-products.md#windows-ce-60-and-windows-embedded-compact-7)
@@ -60,12 +60,12 @@ The Windows client releases listed below include cryptographic modules that have
 
 The Windows Server releases listed below include cryptographic modules that have completed FIPS 140 validation. Click on the release for details, including the CMVP certificate, Security Policy document, and algorithm scope for each module. When the CMVP certificate validation label includes the note *When operated in FIPS mode*, specific configuration and security rules outlined in the Security Policy must be followed.
 
-### Windows Server 2019 and 2016 releases
+#### Windows Server 2019 and 2016 releases
 
 - [Windows Server 2019](validations/fips-140-windows-server-2019.md#windows-server-2019)
 - [Windows Server 2016](validations/fips-140-windows-server-2016.md#windows-server-2016)
 
-### Windows Server semi-annual releases
+#### Windows Server semi-annual releases
 
 - [Windows Server, version 2004](validations/fips-140-windows-server-semi-annual.md#windows-server-version-2004-may-2020-update)
 - [Windows Server, version 1909](validations/fips-140-windows-server-semi-annual.md#windows-server-version-1909-november-2019-update)
@@ -74,7 +74,7 @@ The Windows Server releases listed below include cryptographic modules that have
 - [Windows Server, version 1803](validations/fips-140-windows-server-semi-annual.md#windows-server-version-1803)
 - [Windows Server, version 1709](validations/fips-140-windows-server-semi-annual.md#windows-server-version-1709)
 
-### Previous Windows Server releases
+#### Previous Windows Server releases
 
 - [Windows Server 2012 R2](validations/fips-140-windows-server-previous.md#windows-server-2012-r2)
 - [Windows Server 2012](validations/fips-140-windows-server-previous.md#windows-server-2012)
