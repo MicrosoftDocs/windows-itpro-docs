@@ -305,7 +305,7 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e
 
 ## Readiness test for expediting updates
 <!--8705528-->
-You can verify the readiness of cl
+You can verify the readiness of clients to receive expedited updates by using [isReadinessTest](/graph/api/resources/windowsupdates-expeditesettings). Create a deployment that specifies  it's an expedite readiness test, then add members to the deployment audience. The service will check to see if the clients meet the prerequisites for expediting updates. The results of the test are displayed in the [Windows Update for Business reports workbook](wufb-reports-workbook.md#quality-updates-tab). Under the **Quality updates** tab, select the **Expedite status** tile, which opens a flyout with a **Readiness** tab with the readiness test results. 
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
@@ -330,7 +330,7 @@ content-type: application/json
 }
 ```
 
-The truncated response displays that **isReadinessTest** is set to `true` and gives you a **DeploymentID** of `de910e12-3456-7890-abcd-ef1234567890`. You can then [add members to the deployment audience](#add-members-to-the-deployment-audience) to have the service check that the devices meet the preresquites.
+The truncated response displays that **isReadinessTest** is set to `true` and gives you a **DeploymentID** of `de910e12-3456-7890-abcd-ef1234567890`. You can then [add members to the deployment audience](#add-members-to-the-deployment-audience) to have the service check that the devices meet the preresquites then review the results in the [Windows Update for Business reports workbook](wufb-reports-workbook.md#quality-updates-tab).
 
 ```json
         "expedite": {
