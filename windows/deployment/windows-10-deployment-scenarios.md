@@ -94,7 +94,7 @@ There are some situations where you can't use in-place upgrade; in these situati
 
 - Changing from Windows 7, Windows 8, or Windows 8.1 x86 to Windows 10 x64. The upgrade process can't change from a 32-bit operating system to a 64-bit operating system, because of possible complications with installed applications and drivers.
 
-- Windows To Go and Boot from VHD installations. The upgrade process is unable to upgrade these installations. Instead, new installations would need to be performed.
+- Boot from VHD installations. The upgrade process is unable to upgrade these installations. Instead, new installations would need to be performed.
 
 - Updating existing images. It can be tempting to try to upgrade existing Windows 7, Windows 8, or Windows 8.1 images to Windows 10 by installing the old image, upgrading it, and then recapturing the new Windows 10 image. But, it's not supported. Preparing an upgraded OS via `Sysprep.exe` before capturing an image isn't supported and won't work. When `Sysprep.exe` detects the upgraded OS, it will fail.
 
