@@ -1,5 +1,5 @@
 ---
-ms.date: 12/15/2023
+ms.date: 01/03/2024
 ms.topic: include
 ---
 
@@ -29,4 +29,3 @@ Sign in to domain controller or management workstations with *Domain Administrat
 1. In the navigation pane, expand the domain and expand the node with the Active Directory domain name. Right-click the **Domain Controllers** organizational unit and select **Link an existing GPO…**
 1. In the **Select GPO** dialog box, select *Domain Controller Auto Certificate Enrollment* or the name of the domain controller certificate enrollment Group Policy object you previously created
 1. Select **OK**
-

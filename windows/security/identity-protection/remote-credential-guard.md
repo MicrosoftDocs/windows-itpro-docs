@@ -84,7 +84,7 @@ To enable delegation of nonexportable credentials on the remote hosts, you can u
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../images/icons/intune.svg" border="false"::: **Intune/MDM**](#tab/intune)
+#### [:::image type="icon" source="../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
 
 [!INCLUDE [intune-settings-catalog-1](../../../includes/configure/intune-settings-catalog-1.md)]
 
@@ -100,7 +100,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 |--------|
 | - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials`<br>- **Data type:** string<br>- **Value:** `<enabled/>`|
 
-#### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+#### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
 [!INCLUDE [gpo-settings-1](../../../includes/configure/gpo-settings-1.md)]
 
@@ -109,7 +109,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 | **Computer Configuration\Administrative Templates\System\Credentials Delegation** | Remote host allows delegation of nonexportable credentials | Enabled |
 
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
-#### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+#### [:::image type="icon" source="../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
 To configure devices using the registry, use the following settings:
 
@@ -155,7 +155,7 @@ To configure your clients, you can use:
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../images/icons/intune.svg" border="false"::: **Intune/MDM**](#tab/intune)
+#### [:::image type="icon" source="../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
 
 [!INCLUDE [intune-settings-catalog-1](../../../includes/configure/intune-settings-catalog-1.md)]
 
@@ -171,7 +171,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 |--|
 |- **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration`<br>- **Data type:** string<br>- **Value:** `<enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>`<br><br>Possible values for `RestrictedRemoteAdministrationDrop` are:<br>- `0`: Disabled<br>- `1`: Require Restricted Admin<br>- `2`: Require Remote Credential Guard<br>- `3`: Restrict credential delegation |
 
-#### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+#### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
 [!INCLUDE [gpo-settings-1](../../../includes/configure/gpo-settings-1.md)]
 
@@ -181,7 +181,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
 
-#### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+#### [:::image type="icon" source="../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
 Not documented.
 
