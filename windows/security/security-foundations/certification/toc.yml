@@ -1,5 +1,19 @@
 items:
 - name: FIPS 140 validation
   href: fips-140-validation.md
+- name: Completed FIPS validations
+  items:
+  - name: Windows 10 releases
+    href: validations/fips-140-windows10.md
+  - name: Previous Windows releases
+    href: validations/fips-140-windows-previous.md
+  - name: Windows Server 2019
+    href: validations/fips-140-windows-server-2019.md
+  - name: Windows Server 2016
+    href: validations/fips-140-windows-server-2016.md
+  - name: Windows Server semi-annual releases
+    href: validations/fips-140-windows-server-semi-annual.md
+  - name: Previous Windows Server releases
+    href: validations/fips-140-windows-server-previous.md
 - name: Common Criteria certification
   href: windows-platform-common-criteria.md
