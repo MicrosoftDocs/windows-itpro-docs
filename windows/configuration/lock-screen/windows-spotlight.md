@@ -1,20 +1,18 @@
 ---
-title: Configure Windows Spotlight on the lock screen
-description: Windows Spotlight is an option for the lock screen background that displays different background images on the lock screen.
-ms.topic: article
+title: Configure Windows Spotlight
+description: Learn how to configure Windows Spotlight, a Windows lock screen feature that displays different images.
+ms.topic: how-to
 ms.date: 04/30/2018
 ---
 
-# Configure Windows Spotlight on the lock screen
+# Configure Windows Spotlight
 
-Windows Spotlight is an option for the lock screen background that displays different background images and occasionally offers suggestions on the lock screen. Windows Spotlight is available in all desktop editions of Windows 10.
+Windows Spotlight is a Windows feature that displays different background images and occasionally offers suggestions on the lock screen. Windows Spotlight is available in all desktop editions of Windows 10.
 
 For managed devices running Windows 10 Enterprise and Windows 10 Education, enterprise administrators can configure a mobile device management (MDM) or Group Policy setting to prevent users from using the Windows Spotlight background. For managed devices running Windows 10 Pro, version 1607, administrators can disable suggestions for third party apps.
 
 >[!NOTE]
->In Windows 10, version 1607, the lock screen background does not display if you disable the **Animate windows when minimizing and maximizing** setting in **This PC** > **Properties** > **Advanced system settings** > **Performance settings** > **Visual Effects**, or if you enable the Group Policy setting **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Desktop Windows Manager** > **Do not allow windows animations**.
->
->In Windows 10, version 1703, you can use the [Personalization CSP](/windows/client-management/mdm/personalization-csp) settings to set lock screen and desktop background images.
+>You can use the [Personalization CSP](/windows/client-management/mdm/personalization-csp) settings to set lock screen and desktop background images.
 
 ## What does Windows Spotlight include?
 
