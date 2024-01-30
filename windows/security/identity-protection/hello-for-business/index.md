@@ -58,6 +58,9 @@ Windows stores biometric data that is used to implement Windows Hello securely o
 
 [!INCLUDE [windows-hello-for-business](../../../../includes/licensing/windows-hello-for-business.md)]
 
+> [!NOTE]
+> Windows Hello for Business doesn't work with [Microsoft Entra Domain Services](/entra/identity/domain-services/overview).
+
 ## Hardware requirements
 
 Microsoft collaborates with manufacturers to help ensuring a high-level of performance and protection is met by each sensor and device, based on the following requirements:

@@ -52,6 +52,9 @@ Each organization's priority and severity differ. However, most organizations co
 
 Resolve the issues per your service level agreements. Higher severity items might require returning some or all of the user's password surface. Clearly this outcome isn't the end goal, but don't let it slow down your momentum towards becoming passwordless. Refer to how you reduced the user's password surface in step 2, and progress forward to a solution, deploying that solution and validating it.
 
+> [!TIP]
+> Monitor your domain controllers for password authentication events. This helps to proactively identify users who are still using passwords, and to reach out to them.
+
 ## Configure user accounts to prevent password authentication
 
 You transitioned all the users for the targeted work persona to a passwordless environment and validated all their workflows. The last step to complete the passwordless transition is to remove the user's knowledge of the password.
@@ -128,9 +131,13 @@ If your organizational policies allow it, you can configure the randomized passw
 > [!CAUTION]
 > Execute the script only from a secure and trusted environment, and ensure that the script is not logged. Treat the host where the script is executed as a privileged host, with the same level of security as a domain controller.
 
-### Password rotation
+### Password age and password rotation
 
-Consider implementing automation to rotate the user's password regularly. This approach ensures that the user's password is always randomized and prevents the user from knowing the password.
+If your organization doesn't have password rotation requirements, it's recommended to disable password age.
+
+If your organization has a password rotation policy, consider implementing automation to rotate the user's password regularly. This approach ensures that the user's password is always randomized and prevents the user from knowing the password.
+
+For more password-related guidance, see the whitepaper [Password Guidance](https://aka.ms/PasswordGuidance).
 
 ## Next steps
 
