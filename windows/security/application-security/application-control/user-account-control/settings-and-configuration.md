@@ -35,7 +35,7 @@ To configure UAC, you can use:
 The following instructions provide details how to configure your devices. Select the option that best suits your needs.
 
 
-#### [:::image type="icon" source="../../../images/icons/intune.svg" border="false"::: **Intune/MDM**](#tab/intune)
+#### [:::image type="icon" source="../../../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
 
 ### Configure UAC with a Settings catalog policy
 
@@ -61,7 +61,7 @@ The policy settings are located under: `./Device/Vendor/MSFT/Policy/Config/Local
 | **Setting name**: Switch to the secure desktop when prompting for elevation<br>**Policy CSP name**: `UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation`|
 | **Setting name**: Virtualize file and registry write failures to per-user locations<br>**Policy CSP name**: `UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations`|
 
-#### [:::image type="icon" source="../../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+#### [:::image type="icon" source="../../../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
 You can use security policies to configure how User Account Control works in your organization. The policies can be configured locally by using the Local Security Policy snap-in (`secpol.msc`) or configured for the domain, OU, or specific groups by group policy.
 
@@ -80,7 +80,7 @@ The policy settings are located under: `Computer Configuration\Windows Settings\
 |User Account Control: Switch to the secure desktop when prompting for elevation |  Enabled |
 |User Account Control: Virtualize file and registry write failures to per-user locations | Enabled |
 
-#### [:::image type="icon" source="../../../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+#### [:::image type="icon" source="../../../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
 The registry keys are found under the key: `HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System`.
 
