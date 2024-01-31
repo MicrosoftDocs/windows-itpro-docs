@@ -12864,6 +12864,16 @@
       "source_path": "windows/deployment/upgrade/resolve-windows-10-upgrade-errors.md",
       "redirect_url": "/windows/deployment/upgrade/resolve-windows-upgrade-errors",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-deployment-scenarios.md",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-subscription-activation.md",
+      "redirect_url": "/windows/deployment/windows-subscription-activation.md",
+      "redirect_document_id": false
     }
   ]
 }
