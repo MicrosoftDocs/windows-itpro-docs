@@ -1,8 +1,8 @@
 ---
 description: Learn more about the Windows 11 diagnostic data gathered at the basic level.
 title: Required diagnostic events and fields for Windows 11, version 21H2
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
