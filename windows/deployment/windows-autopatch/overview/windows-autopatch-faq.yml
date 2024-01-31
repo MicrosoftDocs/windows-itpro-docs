@@ -2,7 +2,7 @@
 metadata:
   title: Windows Autopatch - Frequently Asked Questions (FAQ)
   description: Answers to frequently asked questions about Windows Autopatch.
-  ms.prod: windows-client
+  ms.service: windows-client
   ms.topic: faq
   ms.date: 12/04/2023
   audience: itpro
@@ -11,7 +11,7 @@ metadata:
   author: tiaraquan
   ms.author: tiaraquan
   ms.reviwer: hathind
-  ms.technology: itpro-updates
+  ms.subservice: itpro-updates
 title: Frequently Asked Questions about Windows Autopatch
 summary: This article answers frequently asked questions about Windows Autopatch.
 sections:
