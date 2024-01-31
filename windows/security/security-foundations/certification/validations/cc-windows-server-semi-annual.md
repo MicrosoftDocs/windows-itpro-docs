@@ -11,9 +11,9 @@ ms.collection: tier3
 
 # Windows Server semi-annual Common Criteria certifications
 
-The following tables list the completed Common Criteria certifications for Windows Server semi-annual releases and provide links to certification documents, organized by major release of the operating system. The *Security Target* describes the product editions in scope, the security functionality in the product, and the assurance measures from the *Protection Profile* used as part of the evaluation. The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration. The *Certification Report* or *Validation Report* documents the results of the evaluation, with the *Assurance Activity Report* providing details on the evaluator's actions.
+The following tables list the completed Common Criteria certifications for Windows Server semi-annual releases and provide links to certification documents, organized by major release of the operating system. The *Security Target* describes the product editions in scope, the security functionality in the product, and the assurance measures from the Protection Profile used as part of the evaluation. The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration. The *Certification Report* or *Validation Report* documents the results of the evaluation, with the *Assurance Activity Report* providing details on the evaluator's actions.
 
-## Windows Server, version 20H2
+## Windows Server, version 20H2 (October 2020 Update)
 
 |Product details  |Date  |Scope  |Documents  |
 |---------|---------|---------|---------|

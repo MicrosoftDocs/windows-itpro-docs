@@ -11,11 +11,11 @@ ms.collection: tier3
 
 # Common Criteria certifications
 
-Microsoft is committed to optimizing the security of its products and services. As part of that commitment, Microsoft supports the *Common Criteria for Information Technology Security Evaluation* program, ensures that products incorporate the features and functions required by relevant Common Criteria *Protection Profiles*, and completes Common Criteria certifications of Microsoft Windows products. This topic lists the current and archived certified Windows products, together with documentation from each certification.
+Microsoft is committed to optimizing the security of its products and services. As part of that commitment, Microsoft supports the *Common Criteria for Information Technology Security Evaluation* program, ensures that products incorporate the features and functions required by relevant Common Criteria *Protection Profiles*, and completes Common Criteria certifications of Microsoft Windows products. This topic lists the Windows products certified against the Common Criteria (current and archived), together with documentation from each certification.
 
 ## Windows client operating systems
 
-The Windows client releases listed below have been certified against one or more *Protection Profiles*, as listed on the [Common Criteria Portal](https://www.commoncriteriaportal.org/products/). Click on a release for its CC certification details, including links to certification documents. The *Security Target* describes the product editions in scope, the security functionality in the product, and the assurance measures from the *Protection Profile* used as part of the evaluation. The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration. The *Certification Report* or *Validation Report* documents the results of the evaluation, with the *Assurance Activity Report* (when available) providing details on the evaluator's actions.
+The Windows client releases listed below have been certified against one or more Protection Profiles, as listed on the [Common Criteria Portal](https://commoncriteriaportal.org/pps/index.cfm). Click on a release for its certification details, including links to certification documents. The *Security Target* describes the product editions in scope, the security functionality in the product, and the assurance measures from the Protection Profile used as part of the evaluation. The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration. The *Certification Report* or *Validation Report* documents the results of the evaluation, with the *Assurance Activity Report* (when available) providing details on the evaluator's actions.
 
 #### Windows 11 releases
 
@@ -47,7 +47,7 @@ The Windows client releases listed below have been certified against one or more
 
 ## Windows Server operating systems
 
-The Windows Server releases listed below have been certified against one or more *Protection Profiles*, as listed on the [Common Criteria Portal](https://www.commoncriteriaportal.org/products/). Click on a release for its CC certification details, including links to certification documents. The *Security Target* describes the product editions in scope, the security functionality in the product, and the assurance measures from the *Protection Profile* used as part of the evaluation. The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration. The *Certification Report* or *Validation Report* documents the results of the evaluation, with the *Assurance Activity Report* providing details on the evaluator's actions.
+The Windows Server releases listed below have been certified against one or more Protection Profiles, as listed on the [Common Criteria Portal](https://commoncriteriaportal.org/pps/index.cfm). Click on a release for its certification details, including links to certification documents. The *Security Target* describes the product editions in scope, the security functionality in the product, and the assurance measures from the Protection Profile used as part of the evaluation. The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration. The *Certification Report* or *Validation Report* documents the results of the evaluation, with the *Assurance Activity Report* providing details on the evaluator's actions.
 
 #### Windows Server 2022, 2019, and 2016 releases
 
@@ -57,7 +57,7 @@ The Windows Server releases listed below have been certified against one or more
 
 #### Windows Server semi-annual releases
 
-- [Windows Server, version 20H2](validations/cc-windows-server-semi-annual.md#windows-server-version-20h2)
+- [Windows Server, version 20H2 (October 2020 Update)](validations/cc-windows-server-semi-annual.md#windows-server-version-20h2-october-2020-update)
 - [Windows Server, version 2004 (May 2020 Update)](validations/cc-windows-server-semi-annual.md#windows-server-version-2004-may-2020-update)
 - [Windows Server, version 1909 (November 2019 Update)](validations/cc-windows-server-semi-annual.md#windows-server-version-1909-november-2019-update)
 - [Windows Server, version 1903 (May 2019 Update)](validations/cc-windows-server-semi-annual.md#windows-server-version-1903-may-2019-update)

@@ -11,7 +11,7 @@ ms.collection: tier3
 
 # Common Criteria certifications for previous Windows Server releases
 
-The following tables list the completed Common Criteria certifications for Windows Server releases before Windows Server 2016 and provide links to certification documents, organized by major release of the operating system. The *Security Target* describes the product editions in scope, the security functionality in the product, and the assurance measures from the *Protection Profile* used as part of the evaluation. The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration. The *Certification Report* or *Validation Report* documents the results of the evaluation, with the *Assurance Activity Report* (when available) providing details on the evaluator's actions.
+The following tables list the completed Common Criteria certifications for Windows Server releases before Windows Server 2016 and provide links to certification documents, organized by major release of the operating system. The *Security Target* describes the product editions in scope, the security functionality in the product, and the assurance measures from the Protection Profile used as part of the evaluation. The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration. The *Certification Report* or *Validation Report* documents the results of the evaluation, with the *Assurance Activity Report* (when available) providing details on the evaluator's actions.
 
 ## Windows Server 2012 R2
 
