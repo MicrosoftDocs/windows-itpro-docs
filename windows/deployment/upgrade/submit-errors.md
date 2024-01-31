@@ -3,11 +3,11 @@ title: Submit Windows upgrade errors using Feedback Hub
 manager: aaroncz
 ms.author: frankroj
 description: Download the Feedback Hub app, and then submit Windows upgrade errors for diagnosis using feedback hub.
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.localizationpriority: medium
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ms.date: 01/18/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

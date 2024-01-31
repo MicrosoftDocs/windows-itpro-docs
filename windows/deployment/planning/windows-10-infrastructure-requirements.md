@@ -3,11 +3,11 @@ title: Windows 10 infrastructure requirements (Windows 10)
 description: Review the infrastructure requirements for deployment and management of Windows 10,  prior to significant Windows 10 deployments within your organization.
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ms.date: 10/28/2022
 ---
 

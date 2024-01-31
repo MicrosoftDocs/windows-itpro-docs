@@ -2,8 +2,8 @@
 title: Prerequisites
 description: This article details the prerequisites needed for Windows Autopatch
 ms.date: 01/11/2024
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan

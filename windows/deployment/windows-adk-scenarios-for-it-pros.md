@@ -4,11 +4,11 @@ description: The Windows Assessment and Deployment Kit (Windows ADK) contains to
 author: frankroj
 ms.author: frankroj
 manager: aaroncz
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 ms.date: 11/23/2022
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ---
 
 # Windows ADK for Windows 10 scenarios for IT Pros
