@@ -32,7 +32,11 @@ In this article, you will:
 
 ## Prerequisites
 
-All of the [prerequisites for the Windows Update for Business deployment service](deployment-service-prerequisites.md) must be met.
+All of the [prerequisites for the Windows Update for Business deployment service](deployment-service-prerequisites.md) must be met, including ensuring that the *Update Health Tools* is installed on the clients.
+- The *Update Health Tools* are installed starting with [KB4023057](https://support.microsoft.com/kb/4023057). To confirm the presence of the Update Health Tools on a device, use one of the following methods:
+  - Run a [readiness test for expedited updates](#readiness-test-for-expediting-updates)
+  - Look for the folder **C:\Program Files\Microsoft Update Health Tools** or review *Add Remove Programs* for **Microsoft Update Health Tools**.
+  - Example PowerShell script to verify tools installation: `Get-CimInstance -ClassName Win32_Product \| Where-Object {$_.Name -match "Microsoft Update Health Tools"}`
 
 ### Permissions
 
@@ -213,8 +217,8 @@ The request returns a 201 Created response code and a [deployment](/graph/api/re
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deployments/$entity",
     "id": "de910e12-3456-7890-abcd-ef1234567890",
-    "createdDateTime": "2023-02-09T22:55:04.8547517Z",
-    "lastModifiedDateTime": "2023-02-09T22:55:04.8547524Z",
+    "createdDateTime": "2024-01-30T19:43:37.1672634Z",
+    "lastModifiedDateTime": "2024-01-30T19:43:37.1672644Z",
     "state": {
         "effectiveValue": "offering",
         "requestedValue": "none",
@@ -222,15 +226,19 @@ The request returns a 201 Created response code and a [deployment](/graph/api/re
     },
     "content": {
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
-        "catalogEntry@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deployments('de910e12-3456-7890-abcd-ef1234567890')/content/microsoft.graph.windowsUpdates.catalogContent/catalogEntry/$entity",
+        "catalogEntry@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deployments('073fb534-5cdd-4326-8aa2-a4d29037b60f')/content/microsoft.graph.windowsUpdates.catalogContent/catalogEntry/$entity",
         "catalogEntry": {
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
-            "id": "693fafea03c24cca819b3a15123a8880f217b96a878b6d6a61be021d476cc432",
+            "id": "e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5",
             "displayName": null,
             "deployableUntilDateTime": null,
-            "releaseDateTime": "2023-01-10T00:00:00Z",
+            "releaseDateTime": "2023-08-08T00:00:00Z",
             "isExpeditable": false,
-            "qualityUpdateClassification": "security"
+            "qualityUpdateClassification": "security",
+            "catalogName": null,
+            "shortName": null,
+            "qualityUpdateCadence": "monthly",
+            "cveSeverityInformation": null
         }
     },
     "settings": {
@@ -238,10 +246,12 @@ The request returns a 201 Created response code and a [deployment](/graph/api/re
         "monitoring": null,
         "contentApplicability": null,
         "userExperience": {
-            "daysUntilForcedReboot": 2
+            "daysUntilForcedReboot": 2,
+            "offerAsOptional": null
         },
         "expedite": {
-            "isExpedited": true
+            "isExpedited": true,
+            "isReadinessTest": false
         }
     },
     "audience@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deployments('de910e12-3456-7890-abcd-ef1234567890')/audience/$entity",
@@ -293,6 +303,48 @@ The following example deletes the deployment with a **Deployment ID** of `de910e
 DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-3456-7890-abcd-ef1234567890
 ```
 
+## Readiness test for expediting updates
+<!--8705528-->
+You can verify the readiness of clients to receive expedited updates by using [isReadinessTest](/graph/api/resources/windowsupdates-expeditesettings). Create a deployment that specifies  it's an expedite readiness test, then add members to the deployment audience. The service will check to see if the clients meet the prerequisites for expediting updates. The results of the test are displayed in the [Windows Update for Business reports workbook](wufb-reports-workbook.md#quality-updates-tab). Under the **Quality updates** tab, select the **Expedite status** tile, which opens a flyout with a **Readiness** tab with the readiness test results. 
+
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
+content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
+    "content": {
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        "catalogEntry": {
+            "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
+            "id": "317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5"
+        }
+    },
+    "settings": {
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "expedite": {
+            "isExpedited": true,
+            "isReadinessTest": true
+        }
+    }
+}
+```
+
+The truncated response displays that **isReadinessTest** is set to `true` and gives you a **DeploymentID** of `de910e12-3456-7890-abcd-ef1234567890`. You can then [add members to the deployment audience](#add-members-to-the-deployment-audience) to have the service check that the devices meet the preresquites then review the results in the [Windows Update for Business reports workbook](wufb-reports-workbook.md#quality-updates-tab).
+
+```json
+        "expedite": {
+            "isExpedited": true,
+            "isReadinessTest": true
+        }
+    },
+    "audience@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deployments('6a6c03b5-008e-4b4d-8acd-48144208f179_Readiness')/audience/$entity",
+    "audience": {
+        "id": "de910e12-3456-7890-abcd-ef1234567890",
+        "applicableContent": []
+    }
+
+```
 
 <!--Using include for Update Health Tools log location-->
 [!INCLUDE [Windows Update for Business deployment service permissions using Graph Explorer](./includes/wufb-deployment-update-health-tools-logs.md)]
