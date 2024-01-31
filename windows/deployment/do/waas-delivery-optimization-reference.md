@@ -1,8 +1,8 @@
 ---
 title: Delivery Optimization reference
 description: This article provides a summary of references and descriptions for all of the Delivery Optimization settings.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 author: cmknox
 ms.author: carmenf

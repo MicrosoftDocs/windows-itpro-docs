@@ -1,8 +1,8 @@
 ---
 title: Microsoft Connected Cache for ISPs
 description: This article contains details about the early preview for Microsoft Connected Cache (MCC) for Internet Service Providers (ISPs).
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.author: carmenf
 author: cmknox

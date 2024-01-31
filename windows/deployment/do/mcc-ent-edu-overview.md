@@ -1,8 +1,8 @@
 ---
 title: MCC for Enterprise and Education Overview
 description: Overview, supported scenarios, and content types for Microsoft Connected Cache (MCC) for Enterprise and Education.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.author: carmenf
 author: cmknox
