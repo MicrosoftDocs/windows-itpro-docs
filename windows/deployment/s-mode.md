@@ -2,13 +2,13 @@
 title: Windows Pro in S mode
 description: Overview of Windows Pro and Enterprise in S mode.
 ms.localizationpriority: high
-ms.prod: windows-client
+ms.service: windows-client
 manager: aaroncz
 author: frankroj
 ms.author: frankroj
 ms.topic: conceptual
 ms.date: 04/26/2023
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ---
 
 # Windows Pro in S mode

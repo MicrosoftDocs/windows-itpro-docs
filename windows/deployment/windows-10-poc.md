@@ -4,8 +4,8 @@ description: Learn about concepts and procedures for deploying Windows 10 in a p
 manager: aaroncz
 ms.author: frankroj
 author: frankroj
-ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.service: windows-client
+ms.subservice: itpro-deploy
 ms.localizationpriority: medium
 ms.topic: tutorial
 ms.date: 11/23/2022
