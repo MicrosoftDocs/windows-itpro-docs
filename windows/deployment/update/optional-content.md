@@ -1,8 +1,8 @@
 ---
 title: Migrating and acquiring optional Windows content
 description: How to keep language resources and Features on Demand during operating system updates for your organization.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart

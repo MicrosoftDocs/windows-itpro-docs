@@ -4,9 +4,9 @@ description: Learn more about Windows 11. Read about the features IT professiona
 manager: aaroncz
 author: mestew
 ms.author: mstewart
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 01/31/2024
-ms.technology: itpro-fundamentals
+ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
 ms.topic: overview
 ms.collection:

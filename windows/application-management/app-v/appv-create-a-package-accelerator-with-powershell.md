@@ -2,14 +2,14 @@
 title: How to create a package accelerator by using Windows PowerShell (Windows 10/11)
 description: Learn how to create an App-v Package Accelerator by using Windows PowerShell. App-V Package Accelerators automatically sequence large, complex applications.
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 07/10/2018
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.topic: article
-ms.technology: itpro-apps
+ms.subservice: itpro-apps
 ---
 # How to create a package accelerator by using Windows PowerShell
 

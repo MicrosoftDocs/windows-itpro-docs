@@ -2,8 +2,8 @@
 title: Customize Windows Update settings Autopatch groups experience
 description: How to customize Windows Updates with Autopatch groups
 ms.date: 07/25/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan

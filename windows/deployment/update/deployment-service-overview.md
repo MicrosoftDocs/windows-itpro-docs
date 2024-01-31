@@ -2,8 +2,8 @@
 title: Overview of the deployment service
 titleSuffix: Windows Update for Business deployment service
 description: Overview of deployment service to control approval, scheduling, and safeguarding of Windows updates with the deployment service.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.author: mstewart
 author: mestew

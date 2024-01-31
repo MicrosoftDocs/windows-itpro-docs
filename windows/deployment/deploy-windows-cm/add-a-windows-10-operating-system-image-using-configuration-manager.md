@@ -3,11 +3,11 @@ title: Add a Windows 10 operating system image using Configuration Manager
 description: Operating system images are typically the production image used for deployment throughout the organization.
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ms.date: 10/27/2022
 ---
 
