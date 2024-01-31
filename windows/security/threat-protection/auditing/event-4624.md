@@ -1,5 +1,5 @@
 ---
-title: 4624(S) An account was successfully logged on. 
+title: 4624(S) An account was successfully logged on.
 description: Describes security event 4624(S) An account was successfully logged on.
 ms.pagetype: security
 ms.mktglfcycl: deploy
@@ -7,12 +7,10 @@ ms.sitesec: library
 ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.collection: 
-  - highpri
-  - tier3
+ms.collection: tier3
 ms.topic: reference
 ---
 
@@ -97,7 +95,7 @@ This event generates when a logon session is created (on destination machine). I
 
   - Added "Impersonation Level" field.
 
-- 2 – Windows 10.
+- 2 - Windows 10.
 
     - Added "Logon Information:" section.
 
@@ -250,9 +248,9 @@ This event generates when a logon session is created (on destination machine). I
 - **Source Port** [Type = UnicodeString]: source port which was used for logon attempt from remote machine.
 
     - 0 for interactive logons.
- 
-  > [!NOTE]
-  The fields for IP address/port and workstation name are populated depending on the authentication context and protocol used. LSASS will audit the information the authenticating service shares with LSASS. For example, network logons with Kerberos likely have no workstation information, and NTLM logons have no TCP/IP details.
+
+> [!NOTE]
+> The fields for IP address/port and workstation name are populated depending on the authentication context and protocol used. LSASS will audit the information the authenticating service shares with LSASS. For example, network logons with Kerberos likely have no workstation information, and NTLM logons have no TCP/IP details.
 
 **Detailed Authentication Information:**
 
@@ -260,13 +258,13 @@ This event generates when a logon session is created (on destination machine). I
 
 - **Authentication Package** [Type = UnicodeString]**:** The name of the authentication package which was used for the logon authentication process. Default packages loaded on LSA startup are located in "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\OSConfig" registry key. Other packages can be loaded at runtime. When a new package is loaded a "[4610](event-4610.md): An authentication package has been loaded by the Local Security Authority" (typically for NTLM) or "[4622](event-4622.md): A security package has been loaded by the Local Security Authority" (typically for Kerberos) event is logged to indicate that a new package has been loaded along with the package name. The most common authentication packages are:
 
-    - **NTLM** – NTLM-family Authentication
+    - **NTLM** - NTLM-family Authentication
 
-    - **Kerberos** – Kerberos authentication.
+    - **Kerberos** - Kerberos authentication.
 
-    - **Negotiate** – the Negotiate security package selects between Kerberos and NTLM protocols. Negotiate selects Kerberos unless it cannot be used by one of the systems involved in the authentication or the calling application did not provide sufficient information to use Kerberos.
+    - **Negotiate** - the Negotiate security package selects between Kerberos and NTLM protocols. Negotiate selects Kerberos unless it cannot be used by one of the systems involved in the authentication or the calling application did not provide sufficient information to use Kerberos.
 
-- **Transited Services** [Type = UnicodeString] [Kerberos-only]**:** the list of transmitted services. Transmitted services are populated if the logon was a result of a S4U (Service For User) logon process. S4U is a Microsoft extension to the Kerberos Protocol to allow an application service to obtain a Kerberos service ticket on behalf of a user – most commonly done by a front-end website to access an internal resource on behalf of a user. For more information about S4U, see <https://msdn.microsoft.com/library/cc246072.aspx>
+- **Transited Services** [Type = UnicodeString] [Kerberos-only]**:** the list of transmitted services. Transmitted services are populated if the logon was a result of a S4U (Service For User) logon process. S4U is a Microsoft extension to the Kerberos Protocol to allow an application service to obtain a Kerberos service ticket on behalf of a user - most commonly done by a front-end website to access an internal resource on behalf of a user. For more information about S4U, see <https://msdn.microsoft.com/library/cc246072.aspx>
 
 - **Package Name (NTLM only)** [Type = UnicodeString]**:** The name of the LAN Manager sub-package ([NTLM-family](/openspecs/windows_protocols/ms-nlmp/c50a85f0-5940-42d8-9e82-ed206902e919) protocol name) that was used during logon. Possible values are:
 
