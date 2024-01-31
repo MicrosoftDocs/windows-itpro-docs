@@ -1,8 +1,8 @@
 ---
 title: Extended Security Updates (ESU) program for Windows 10 
 description: Learn about the Extended Security Updates (ESU) program for Windows 10. The ESU program gives customers the option to receive security updates for Windows 10.
-ms.prod: windows-client
-ms.technology: itpro-fundamentals
+ms.service: windows-client
+ms.subservice: itpro-fundamentals
 ms.author: mstewart
 author: mestew
 manager: aaroncz

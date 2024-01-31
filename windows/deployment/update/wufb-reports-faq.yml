@@ -3,8 +3,8 @@ metadata:
   title: Frequently Asked Questions (FAQ)
   titleSuffix: Windows Update for Business reports
   description: Answers to frequently asked questions about Windows Update for Business reports.
-  ms.prod: windows-client
-  ms.technology: itpro-updates
+  ms.service: windows-client
+  ms.subservice: itpro-updates
   ms.topic: faq
   manager: aaroncz
   author: mestew

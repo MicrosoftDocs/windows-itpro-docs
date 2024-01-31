@@ -2,8 +2,8 @@
 title: Verify cache node functionality and monitor health
 titleSuffix: Microsoft Connected Cache for ISPs
 description: How to verify the functionality of a cache node, monitor health and performance, and review metrics.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.author: carmenf
 author: cmknox

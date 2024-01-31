@@ -1,7 +1,7 @@
 ---
 title: Windows upgrade paths 
 description: Upgrade to current versions of Windows from a previous version of Windows
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
 manager: aaroncz
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.collection:
   - highpri
   - tier2
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ms.date: 10/02/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>

@@ -4,11 +4,11 @@ description: In this article, learn about the product key and system requieremen
 ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.date: 11/07/2022
 ms.topic: article
-ms.technology: itpro-fundamentals
+ms.subservice: itpro-fundamentals
 ---
 
 # VAMT requirements

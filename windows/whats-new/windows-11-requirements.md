@@ -4,13 +4,13 @@ description: Hardware requirements to deploy Windows 11.
 manager: aaroncz
 author: mestew
 ms.author: mstewart
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.collection:
   - highpri
   - tier1
-ms.technology: itpro-fundamentals
+ms.subservice: itpro-fundamentals
 ms.date: 02/13/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

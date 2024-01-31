@@ -2,8 +2,8 @@
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer actively developing in Windows 10 and Windows 11.
 ms.date: 01/26/2024
-ms.prod: windows-client
-ms.technology: itpro-fundamentals
+ms.service: windows-client
+ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
 author: mestew
 ms.author: mstewart

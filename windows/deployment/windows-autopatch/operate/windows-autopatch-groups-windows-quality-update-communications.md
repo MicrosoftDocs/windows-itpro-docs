@@ -2,8 +2,8 @@
 title: Windows quality update communications for Autopatch groups
 description: This article explains Windows quality update communications for Autopatch groups
 ms.date: 07/25/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
