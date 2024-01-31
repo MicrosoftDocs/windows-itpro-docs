@@ -4,11 +4,11 @@ description: Understand the different ways Windows 10 operating system can be de
 manager: aaroncz
 ms.author: frankroj
 author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 ms.topic: article
 ms.date: 11/23/2022
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ---
 
 # Windows 10 deployment scenarios

@@ -2,8 +2,8 @@
 title: What's new in Windows client deployment
 description: Use this article to learn about new solutions and online content related to deploying Windows in your organization.
 ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.service: windows-client
+ms.subservice: itpro-deploy
 author: frankroj
 manager: aaroncz
 ms.author: frankroj
