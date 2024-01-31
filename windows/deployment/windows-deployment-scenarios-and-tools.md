@@ -4,10 +4,10 @@ description: Learn about the tools you can use to deploy Windows 10 and related 
 manager: aaroncz
 ms.author: frankroj
 author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 ms.topic: article
 ms.date: 11/23/2022
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ---
 
 # Windows 10 deployment scenarios and tools

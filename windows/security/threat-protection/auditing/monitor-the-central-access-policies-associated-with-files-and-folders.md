@@ -4,7 +4,6 @@ description: Monitor changes to central access policies associated with files an
 ms.assetid: 2ea8fc23-b3ac-432f-87b0-6a16506e8eed
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 09/09/2021
-ms.technology: itpro-security
 ---
 
 # Monitor the central access policies associated with files and folders

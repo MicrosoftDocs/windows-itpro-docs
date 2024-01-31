@@ -4,7 +4,6 @@ description: Best practices and more for the security policy setting, DCOM Machi
 ms.assetid: 4b95d45f-dd62-4c34-ba32-43954528dabe
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # DCOM: Machine Launch Restrictions in Security Descriptor Definition Language (SDDL) syntax

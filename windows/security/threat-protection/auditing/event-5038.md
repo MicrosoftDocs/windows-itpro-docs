@@ -2,7 +2,6 @@
 title: 5038(F) Code integrity determined that the image hash of a file is not valid. 
 description: Describes security event 5038(F) Code integrity determined that the image hash of a file isn't valid.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/08/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

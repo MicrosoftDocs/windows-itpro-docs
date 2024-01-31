@@ -2,13 +2,13 @@
 title: Evaluating App-V (Windows 10/11)
 description: Learn how to evaluate App-V for Windows 10/11 in a lab environment before deploying into a production environment.
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
-ms.technology: itpro-apps
+ms.subservice: itpro-apps
 ---
 
 # Evaluating App-V

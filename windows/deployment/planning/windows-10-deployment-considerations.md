@@ -3,11 +3,11 @@ title: Windows 10 deployment considerations (Windows 10)
 description: There are new deployment options in Windows 10 that help you simplify the deployment process and automate migration of existing settings and applications.
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ms.date: 10/28/2022
 ---
 

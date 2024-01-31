@@ -3,11 +3,11 @@ title: Compatibility Fixes for Windows 10, Windows 8, Windows 7, & Windows Vista
 description: Find compatibility fixes for all Windows operating systems that have been released from Windows Vista through Windows 10.
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.date: 10/28/2022
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ---
 
 # Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista

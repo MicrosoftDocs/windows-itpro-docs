@@ -1,8 +1,8 @@
 ---
 title: Enterprise feature control in Windows 11
 description: Learn about the Windows 11 features behind temporary enterprise feature control and permanent feature control.
-ms.prod: windows-client
-ms.technology: itpro-fundamentals
+ms.service: windows-client
+ms.subservice: itpro-fundamentals
 ms.author: mstewart
 author: mestew
 manager: aaroncz

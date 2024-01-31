@@ -1,35 +1,46 @@
 ---
-title: Delivery Optimization client-service communication
-description: Details of how Delivery Optimization communicates with the server when content is requested to download.
-ms.prod: windows-client
-ms.technology: itpro-updates
+title: Delivery Optimization workflow, privacy, security, and endpoints
+description: Details of how Delivery Optimization communicates with the server when content is requested to download including privacy, security, and endpoints.
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: cmknox
 ms.author: carmenf
 manager: aaroncz
 ms.reviewer: mstewart
-ms.collection: tier3
+ms.collection: 
+  - tier3
+  - essentials-privacy
+  - essentials-security
 ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>	
-ms.date: 12/31/2017
+ms.date: 01/18/2024
 ---
 
-# Delivery Optimization client-service communication explained
+# Delivery Optimization workflow, privacy, security, and endpoints
 
-Delivery Optimization is a cloud-managed solution that uses peer-to-peer (P2P) and local caching to deliver software updates and apps to Windows clients across your network. This article describes details of how Delivery Optimization communicates with the server when content is requested to download.
-## Download request workflow
+Delivery Optimization is a cloud-managed solution that uses peer-to-peer (P2P) and local caching to deliver software updates and apps to Windows clients across your network. This article describes details of how Delivery Optimization communicates with the server when content is requested to download and contains information about privacy, security, and endpoints.
 
-This workflow allows Delivery Optimization to securely and efficiently deliver requested content to the calling device. Delivery Optimization uses content metadata to verify the content and to determine all available locations to pull content from.
+## How we help keep your data safe
+
+Delivery Optimization can't be used to download or send personal content. Delivery Optimization doesn't access personal files or folders, and it doesn't change any files on the device.
+
+Delivery Optimization downloads the same updates and apps that you would get through [Windows Update](../update/windows-update-security.md), Microsoft Store apps, and other Microsoft updates using the same security measures. To make sure you're getting authentic updates, Delivery Optimization gets information securely from Microsoft to check the authenticity of each part of an update or app that it downloads from other PCs. The authenticity of the downloads is checked again before installing it. <!--8658744-->
+
+## Download request workflow  
+
+This workflow allows Delivery Optimization to securely and efficiently deliver requested content to the calling device and explains client-service communication. Delivery Optimization uses content metadata to verify the content and to determine all available locations to pull content from.
 
 1. When a download starts, the Delivery Optimization client attempts to get its content metadata. This content metadata is a hash file containing the SHA-256 block-level hashes of each piece in the file (typically one piece = 1 MB).
 2. The authenticity of the content metadata file itself is verified prior to any content being downloaded using a hash that is obtained via an SSL channel from the Delivery Optimization service. The same channel is used to ensure the content is curated and authorized to use peer-to-peer.
 3. When Delivery Optimization pulls a certain piece of the hash from another peer, it verifies the hash against the known hash in the content metadata file.
 4. If a peer provides an invalid piece, that piece is discarded. When a peer sends multiple bad pieces, it's banned and will no longer be used as a source by the Delivery Optimization client performing the download.
-5. If Delivery Optimization is unable to obtain the content metadata file, or if the verification of the hash file itself fails, the download will fall back to "simple mode”. Simple mode will only pull content from the HTTP source and peer-to-peer won't be allowed.
+5. If Delivery Optimization is unable to obtain the content metadata file, or if the verification of the hash file itself fails, the download will fall back to simple mode. Simple mode will only pull content from the HTTP source and peer-to-peer won't be allowed.
 6. Once downloading is complete, Delivery Optimization uses all retrieved pieces of the content to put the file together. At that point, the Delivery Optimization caller (for example, Windows Update) checks the entire file to verify the signature prior to installing it.
+
 
 ## Delivery Optimization service endpoint and data information
 

@@ -33,6 +33,8 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "ms.subservice": "itpro-security",
+      "ms.service": "windows-client",
       "recommendations": true,
       "adobe-target": true,
       "ms.collection": [
@@ -42,8 +44,6 @@
       "zone_pivot_group_filename": "resources/zone-pivot-groups.json",
       "uhfHeaderId": "MSDocsHeader-Windows",
       "ms.localizationpriority": "medium",
-      "ms.prod": "windows-client",
-      "ms.technology": "itpro-security",
       "manager": "aaroncz",
       "feedback_system": "Standard",
             "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",

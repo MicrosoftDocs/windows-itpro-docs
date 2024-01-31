@@ -2,8 +2,8 @@
 title: Windows Update security
 manager: aaroncz
 description: Overview of the security for Windows Update including security for the metadata exchange and content download.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart

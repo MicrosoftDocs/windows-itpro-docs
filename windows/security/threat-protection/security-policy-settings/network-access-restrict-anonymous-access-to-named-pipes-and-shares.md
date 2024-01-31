@@ -4,7 +4,6 @@ description: Best practices, security considerations, and more for the security 
 ms.assetid: e66cd708-7322-4d49-9b57-1bf8ec7a4c10
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Network access: Restrict anonymous access to Named Pipes and Shares

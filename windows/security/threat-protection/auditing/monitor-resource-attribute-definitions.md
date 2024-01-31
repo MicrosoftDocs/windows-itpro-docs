@@ -4,7 +4,6 @@ description: Learn how to monitor changes to resource attribute definitions when
 ms.assetid: aace34b0-123a-4b83-9e09-f269220e79de
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 09/09/2021
-ms.technology: itpro-security
 ---
 
 # Monitor resource attribute definitions

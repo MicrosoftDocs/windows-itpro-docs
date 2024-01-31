@@ -4,7 +4,6 @@ description: Describes the best practices, location, values, management, and sec
 ms.assetid: 7065b4a9-0d52-41d5-afc4-5aedfc4162b5
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +16,6 @@ ms.collection:
   - tier3
 ms.topic: reference
 ms.date: 09/18/2018
-ms.technology: itpro-security
 ---
 
 # Interactive logon: Machine inactivity limit

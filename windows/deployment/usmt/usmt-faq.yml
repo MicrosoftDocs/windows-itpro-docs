@@ -3,15 +3,15 @@ metadata:
   title: 'USMT Frequently Asked Questions'
   description: 'Learn about frequently asked questions and recommended solutions for migrations using User State Migration Tool (USMT).'
   ms.assetid: 813c13a7-6818-4e6e-9284-7ee49493241b
-  ms.prod: windows-client
-  ms.technology: itpro-deploy
+  ms.service: windows-client
+  ms.subservice: itpro-deploy
   author: frankroj
   ms.author: frankroj
   manager: aaroncz
   ms.mktglfcycl: deploy
   ms.sitesec: library
   audience: itpro
-  ms.date: 01/03/2024
+  ms.date: 01/09/2024
   ms.topic: faq
 title: Frequently Asked Questions
 summary: |

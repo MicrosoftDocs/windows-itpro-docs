@@ -1,12 +1,13 @@
 ---
 title: Recognized environment variables
 description: Learn how to use environment variables to identify folders that can be different on different computers.
-ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.service: windows-client
+ms.subservice: itpro-deploy
+ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
 author: frankroj
-ms.date: 01/03/2024
+ms.date: 01/09/2024
 ms.topic: conceptual
 ms.collection:
   - highpri

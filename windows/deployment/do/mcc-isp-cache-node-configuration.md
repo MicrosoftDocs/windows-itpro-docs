@@ -2,8 +2,8 @@
 title: Cache node configuration settings
 manager: aaroncz
 description: List of options that are available while configuring a cache node for your environment from the Azure portal.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 ms.author: carmenf
 author: cmknox

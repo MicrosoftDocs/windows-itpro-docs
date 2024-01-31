@@ -2,8 +2,8 @@
 title: What's new in Windows client deployment
 description: Use this article to learn about new solutions and online content related to deploying Windows in your organization.
 ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.service: windows-client
+ms.subservice: itpro-deploy
 author: frankroj
 manager: aaroncz
 ms.author: frankroj
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.collection:
   - highpri
   - tier2
-ms.date: 11/17/2023
+ms.date: 01/18/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -21,7 +21,7 @@ appliesto:
 
 This article provides an overview of new solutions and online content related to deploying Windows client in your organization.
 
-- For an all-up overview of new features in Windows 10, see [What's new in Windows 10](/windows/whats-new/index).
+- For an all-up overview of new features in Windows, see [What's new in Windows](/windows/whats-new/).
 
 ## [Preview] Windows Autopilot diagnostics page
 
@@ -88,9 +88,9 @@ The following Delivery Optimization policies are removed in the Windows 10, vers
 
 - **Intune console updates**: target version is now available allowing you to specify which supported version of Windows you want devices to move to. Additionally, this capability enables you to keep devices on their current version until they reach end of service. Check it out in Intune, also available as a Group Policy and Configuration Service Provider (CSP) policy.
 
-- **Validation improvements**: To ensure devices and end users stay productive and protected, Microsoft blocks devices from updating when there are known issues that would impact that device. Also, to better enable IT administrators to validate on the latest release, a new policy is available that enables admins to opt devices out of the built-in safeguard holds.
+- **Validation improvements**: To ensure devices and end users stay productive and protected, Microsoft blocks devices from updating when there are known issues affect that device. Also, to better enable IT administrators to validate on the latest release, a new policy is available that enables admins to opt devices out of the built-in safeguard holds.
 
-- [**Automatic Restart Sign-on (ARSO)**](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-): Windows automatically signs in as the user and locks their device in order to complete the update. This automatic sign-on ensures that when the user returns and unlocks the device, the update is completed.
+- [**Automatic Restart Sign-on (ARSO)**](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-): Windows automatically signs in as the user and locks their device in order to complete the update. Automatic sign-on ensures that when the user returns and unlocks the device, the update is completed.
 
 - [**Windows Update for Business**](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523): There's now a single, common start date for phased deployments (no more SAC-T designation). In addition, there's a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period.
 
@@ -106,7 +106,7 @@ The following Delivery Optimization policies are removed in the Windows 10, vers
 
 Microsoft previously announced that we're [extending support](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop) for Windows 10 Enterprise and Windows 10 Education editions to 30 months from the version release date. These editions include all past versions and future versions that are targeted for release in September (versions ending in 09, ex: 1809). Future releases that are targeted for release in March (versions ending in 03, ex: 1903) will continue to be supported for 18 months from their release date. All releases of Windows 10 Home, Windows 10 Pro, and Microsoft 365 Apps for enterprise will continue to be supported for 18 months (there's no change for these editions).  These support policies are summarized in the following table:
 
-![Support lifecycle.](images/support-cycle.png)
+:::image type="content" alt-text="Support lifecycle." source="images/support-cycle.png":::
 
 ## Windows 10 Enterprise upgrade
 
@@ -158,8 +158,8 @@ Input from the community heavily influenced the development of Upgrade Readiness
 
 For more information about Upgrade Readiness, see the following articles:
 
-- [Windows Analytics blog](https://aka.ms/blog/WindowsAnalytics/)
-- [Manage Windows upgrades with Upgrade Readiness](/mem/configmgr/desktop-analytics/overview)
+- [Windows Analytics blog](https://aka.ms/blog/WindowsAnalytics/).
+- [Manage Windows upgrades with Upgrade Readiness](/mem/configmgr/desktop-analytics/overview).
 
 ### Update Compliance
 
@@ -215,7 +215,7 @@ For more information, see the following guides:
 
 ## Troubleshooting guidance
 
-[Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md) was published in October of 2016 and continues to be updated with new fixes. The article provides a detailed explanation of the Windows upgrade process and instructions on how to locate, interpret, and resolve specific errors that can be encountered during the upgrade process.
+[Resolve Windows upgrade errors](upgrade/resolve-windows-upgrade-errors.md) was published in October of 2016 and continues to be updated with new fixes. The article provides a detailed explanation of the Windows upgrade process and instructions on how to locate, interpret, and resolve specific errors that can be encountered during the upgrade process.
 
 ## Related articles
 

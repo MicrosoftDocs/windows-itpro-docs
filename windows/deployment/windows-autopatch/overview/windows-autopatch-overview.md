@@ -2,8 +2,8 @@
 title: What is Windows Autopatch?
 description: Details what the service is and shortcuts to articles.
 ms.date: 08/08/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
@@ -12,6 +12,7 @@ manager: dougeby
 ms.collection:
   - highpri
   - tier1
+  - essentials-overview
 ms.reviewer: hathind
 ---
 

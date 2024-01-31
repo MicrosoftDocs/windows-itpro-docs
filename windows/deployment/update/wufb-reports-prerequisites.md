@@ -2,8 +2,8 @@
 title: Prerequisites for Windows Update for Business reports
 titleSuffix: Windows Update for Business reports
 description: List of prerequisites for enabling and using Windows Update for Business reports in your organization.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart

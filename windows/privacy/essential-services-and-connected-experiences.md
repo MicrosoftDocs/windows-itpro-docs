@@ -1,8 +1,8 @@
 ---
 title: Essential services and connected experiences for Windows
 description: Explains what the essential services and connected experiences are for Windows
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown

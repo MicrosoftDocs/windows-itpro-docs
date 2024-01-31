@@ -335,8 +335,8 @@
       items:
       - name: Resolve upgrade errors
         items:
-        - name: Resolve Windows client upgrade errors
-          href: upgrade/resolve-windows-10-upgrade-errors.md
+        - name: Resolve Windows upgrade errors
+          href: upgrade/resolve-windows-upgrade-errors.md
         - name: Quick fixes
           href: /troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: SetupDiag
@@ -406,22 +406,6 @@
                   href: configure-a-pxe-server-to-load-windows-pe.md
                 - name: Windows ADK for Windows 10 scenarios for IT Pros
                   href: windows-adk-scenarios-for-it-pros.md
-                - name: Windows To Go
-                  items:
-                    - name: Deploy Windows To Go in your organization
-                      href: deploy-windows-to-go.md
-                    - name: "Windows To Go: feature overview"
-                      href: planning/windows-to-go-overview.md
-                    - name: Best practice recommendations for Windows To Go
-                      href: planning/best-practice-recommendations-for-windows-to-go.md
-                    - name: Deployment considerations for Windows To Go
-                      href: planning/deployment-considerations-for-windows-to-go.md
-                    - name: Prepare your organization for Windows To Go
-                      href: planning/prepare-your-organization-for-windows-to-go.md
-                    - name: Security and data protection considerations for Windows To Go
-                      href: planning/security-and-data-protection-considerations-for-windows-to-go.md
-                    - name: "Windows To Go: frequently asked questions"
-                      href: planning/windows-to-go-frequently-asked-questions.yml
                 - name: User State Migration Tool (USMT) technical reference
                   items:
                     - name: USMT overview articles

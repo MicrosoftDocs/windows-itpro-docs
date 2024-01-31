@@ -3,14 +3,14 @@ title: Windows edition upgrade
 description: With Windows, you can quickly upgrade from one edition of Windows to another, provided the upgrade path is supported.
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
 ms.topic: conceptual
 ms.collection:
   - highpri
   - tier2
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ms.date: 10/02/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>

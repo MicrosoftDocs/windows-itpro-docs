@@ -4,7 +4,6 @@ description: Best practices, security considerations, and more for the security 
 ms.assetid: 2cd23cd9-0e44-4d0b-a1f1-39fc29303826
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Audit: Shut down system immediately if unable to log security audits
