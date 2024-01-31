@@ -1,7 +1,7 @@
 ---
 title: Preparing Your Environment for App-V (Windows 10/11)
 description: Use this info to prepare for deployment configurations and prerequisites for Microsoft Application Virtualization (App-V).
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
 author: aczechowski
@@ -9,7 +9,7 @@ manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.topic: article
-ms.technology: itpro-apps
+ms.subservice: itpro-apps
 ---
 
 # Preparing your environment for App-V

@@ -2,14 +2,14 @@
 title: Create and apply an App-V project template to a sequenced App-V package (Windows 10/11)
 description: Steps for how to create and apply an App-V project template (.appvt) to a sequenced App-V package.
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 07/10/2018
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.topic: article
-ms.technology: itpro-apps
+ms.subservice: itpro-apps
 ---
 
 # Create and apply an App-V project template to a sequenced App-V package
