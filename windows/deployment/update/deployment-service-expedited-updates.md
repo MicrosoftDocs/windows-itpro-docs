@@ -317,7 +317,7 @@ content-type: application/json
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
         "catalogEntry": {
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
-            "id": ""
+            "id": "317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5"
         }
     },
     "settings": {
