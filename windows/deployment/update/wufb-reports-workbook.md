@@ -2,8 +2,8 @@
 title: Use the workbook for Windows Update for Business reports
 titleSuffix: Windows Update for Business reports
 description: How to use the Windows Update for Business reports workbook from the Azure portal.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart
