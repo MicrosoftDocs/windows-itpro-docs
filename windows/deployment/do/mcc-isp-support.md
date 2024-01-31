@@ -1,8 +1,8 @@
 ---
 title: Support and troubleshooting
 description: Troubleshooting information for commonly encountered issues for onboarding or using Microsoft Connected Cache for ISPs.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 author: nidos
 ms.author: nidos
