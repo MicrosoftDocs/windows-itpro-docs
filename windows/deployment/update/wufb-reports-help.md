@@ -2,8 +2,8 @@
 title: Feedback, support, and troubleshooting
 titleSuffix: Windows Update for Business reports
 description: Windows Update for Business reports support, feedback, and troubleshooting information.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: article
 author: mestew
 ms.author: mstewart

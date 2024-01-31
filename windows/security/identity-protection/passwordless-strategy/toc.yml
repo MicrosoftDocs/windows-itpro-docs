@@ -1,0 +1,9 @@
+items:
+- name: Overview
+  href: index.md
+- name: 1. Deploy password replacement options
+  href: journey-step-1.md
+- name: 2. Reduce the password surface area
+  href: journey-step-2.md
+- name: 3. Transition into a passwordless deployment
+  href: journey-step-3.md

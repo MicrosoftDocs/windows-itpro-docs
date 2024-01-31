@@ -1,8 +1,8 @@
 ---
 title: Testing Delivery Optimization
 description: Explanation of Delivery Optimization distributed cache and high-level design. Demonstrate how Delivery Optimization peer-to-peer works in different scenarios.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 author: cmknox
 ms.author: carmenf

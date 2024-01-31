@@ -2,14 +2,14 @@
 title: Deploying the App-V Sequencer and configuring the client (Windows 10/11)
 description: Learn how to deploy the App-V Sequencer and configure the client by using the ADMX template and Group Policy.
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.topic: article
-ms.technology: itpro-apps
+ms.subservice: itpro-apps
 ---
 
 # Deploying the App-V Sequencer and configuring the client

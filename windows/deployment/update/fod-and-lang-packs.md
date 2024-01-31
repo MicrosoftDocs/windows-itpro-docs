@@ -1,8 +1,8 @@
 ---
 title: FoD and language packs for WSUS and Configuration Manager
 description: Learn how to make FoD and language packs available to clients when you're using WSUS or Configuration Manager.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.author: mstewart
 author: mestew

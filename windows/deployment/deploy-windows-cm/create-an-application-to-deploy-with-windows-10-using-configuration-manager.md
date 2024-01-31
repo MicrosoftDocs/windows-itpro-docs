@@ -3,11 +3,11 @@ title: Create an app to deploy with Windows 10 using Configuration Manager
 description: Microsoft Configuration Manager supports deploying applications as part of the Windows 10 deployment process.
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ms.date: 10/27/2022
 ---
 

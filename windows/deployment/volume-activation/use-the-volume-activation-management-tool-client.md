@@ -4,12 +4,12 @@ description: The Volume Activation Management Tool (VAMT) provides several usefu
 ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.localizationpriority: medium
 ms.date: 11/07/2022
 ms.topic: article
-ms.technology: itpro-fundamentals
+ms.subservice: itpro-fundamentals
 ---
 
 # Use the Volume Activation Management Tool

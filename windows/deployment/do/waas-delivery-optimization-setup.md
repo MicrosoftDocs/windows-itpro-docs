@@ -1,14 +1,16 @@
 ---
 title: Set up Delivery Optimization
 description: In this article, learn how to set up Delivery Optimization for use by Windows clients in your organization.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 author: cmknox
 ms.author: carmenf
 ms.reviewer: mstewart
 manager: aaroncz
-ms.collection: tier3
+ms.collection: 
+  - tier3
+  - essentials-get-started
 ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>

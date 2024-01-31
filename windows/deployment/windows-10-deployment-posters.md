@@ -4,8 +4,8 @@ description: View and download Windows 10 deployment process flows for Microsoft
 manager: aaroncz
 author: frankroj
 ms.author: frankroj
-ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.service: windows-client
+ms.subservice: itpro-deploy
 ms.localizationpriority: medium
 ms.topic: reference
 ms.date: 11/23/2022
