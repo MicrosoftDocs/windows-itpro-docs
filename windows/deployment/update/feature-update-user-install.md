@@ -1,8 +1,8 @@
 ---
 title: Best practices - user-initiated feature update installation
 description: Learn recommendations and best practices for manually deploying a feature update for a user-initiated installation.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: best-practice
 author: mestew
 ms.author: mstewart

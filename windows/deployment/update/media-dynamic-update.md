@@ -1,8 +1,8 @@
 ---
 title: Update Windows installation media with Dynamic Update
 description: Learn how to acquire and apply Dynamic Update packages to existing Windows images prior to deployment
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart

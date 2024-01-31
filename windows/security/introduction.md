@@ -4,6 +4,9 @@ description: System security book.
 ms.date: 09/01/2023
 ms.topic: tutorial
 ms.author: paoloma
+ms.collection: 
+  - essentials-security
+  - essentials-overview
 content_well_notification: 
   - AI-contribution
 author: paolomatarazzo

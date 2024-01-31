@@ -3,10 +3,10 @@ title: Searching for Installed Compatibility Fixes with the Query Tool in Compat
 description: You can access the Query tool from within Compatibility Administrator. The Query tool provides the same functionality as using the Search feature.
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ms.date: 10/28/2022
 ---
 
