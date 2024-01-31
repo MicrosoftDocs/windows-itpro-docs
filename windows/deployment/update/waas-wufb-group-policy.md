@@ -1,8 +1,8 @@
 ---
 title: Configure Windows Update for Business via Group Policy
 description: Walk through of how to configure Windows Update for Business settings using Group Policy to update devices.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 manager: aaroncz
 ms.topic: conceptual
 author: mestew

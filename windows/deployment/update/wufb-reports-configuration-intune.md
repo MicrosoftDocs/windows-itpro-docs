@@ -2,8 +2,8 @@
 title: Configure devices using Microsoft Intune
 titleSuffix: Windows Update for Business reports
 description: How to configure devices to use Windows Update for Business reports from Microsoft Intune.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart
