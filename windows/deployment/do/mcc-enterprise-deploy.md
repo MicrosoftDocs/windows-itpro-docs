@@ -1,8 +1,8 @@
 ---
 title: Deploying your cache node
 description: How to deploy a Microsoft Connected Cache (MCC) for Enterprise and Education cache node from the Auzre portal.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.author: carmenf
 author: cmknox

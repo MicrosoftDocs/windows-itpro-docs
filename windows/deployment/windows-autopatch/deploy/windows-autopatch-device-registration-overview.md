@@ -2,8 +2,8 @@
 title: Device registration overview
 description: This article provides an overview on how to register devices in Autopatch
 ms.date: 07/25/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan

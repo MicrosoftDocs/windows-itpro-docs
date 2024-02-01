@@ -3,7 +3,7 @@ title: Optimize AppLocker performance
 description: This article for IT professionals describes how to optimize AppLocker policy enforcement.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/19/2023
+ms.date: 01/03/2024
 ---
 
 # Optimize AppLocker performance

@@ -3,11 +3,11 @@ title: Using the Sdbinst.exe Command-Line Tool (Windows 10)
 description: Learn how to deploy customized database (.sdb) files using the Sdbinst.exe Command-Line Tool. Review a list of command-line options.
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.date: 10/28/2022
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ---
 
 # Using the Sdbinst.exe Command-Line Tool

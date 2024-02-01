@@ -1,8 +1,8 @@
 ---
 title: Uninstall MCC for Enterprise and Education
 description: Details on how to uninstall Microsoft Connected Cache (MCC) for Enterprise and Education for your environment.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.author: carmenf
 author: cmknox

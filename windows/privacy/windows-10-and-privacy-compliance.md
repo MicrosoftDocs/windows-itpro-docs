@@ -1,14 +1,15 @@
 ---
 title: Windows Privacy Compliance Guide
 description: This article provides information to help IT and compliance professionals understand the personal data policies as related to Windows.
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
 ms.date: 05/20/2019
 ms.topic: conceptual
+ms.collection: essentials-compliance
 ---
 
 # Windows Privacy Compliance:<br />A Guide for IT and Compliance Professionals

@@ -2,8 +2,8 @@
 title: Enable Windows Update for Business reports
 titleSuffix: Windows Update for Business reports
 description: How to enable the Windows Update for Business reports service through the Azure portal or the Microsoft 365 admin center.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart

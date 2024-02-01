@@ -2,8 +2,8 @@
 title: Feature update trending report
 description: Provides a visual representation of Windows OS upgrade trends for all devices over the last 90 days.
 ms.date: 07/25/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan

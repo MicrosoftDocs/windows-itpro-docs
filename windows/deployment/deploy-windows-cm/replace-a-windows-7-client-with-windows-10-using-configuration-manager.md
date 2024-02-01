@@ -3,11 +3,11 @@ title: Replace a Windows 7 SP1 client with Windows 10 using Configuration Manage
 description: In this article, you'll learn how to replace a Windows 7 SP1 computer using Microsoft Configuration Manager.
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ms.date: 10/27/2022
 ---
 
