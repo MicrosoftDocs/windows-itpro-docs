@@ -1,14 +1,15 @@
 ---
 description: Learn more about the Windows 10, version 1809 diagnostic data gathered at the basic level.
 title: Windows 10, version 1809 basic diagnostic events and fields (Windows 10)
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 09/26/2023
+ms.date: 02/27/2024
 ms.topic: reference
+ms.collection: privacy-windows
 ---
 
 
