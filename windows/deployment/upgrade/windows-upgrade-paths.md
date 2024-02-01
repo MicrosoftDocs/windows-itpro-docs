@@ -1,5 +1,5 @@
 ---
-title: Windows upgrade paths 
+title: Windows upgrade paths
 description: Upgrade to current versions of Windows from a previous version of Windows
 ms.service: windows-client
 ms.localizationpriority: medium
@@ -11,7 +11,7 @@ ms.collection:
   - highpri
   - tier2
 ms.subservice: itpro-deploy
-ms.date: 10/02/2023
+ms.date: 02/01/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -30,13 +30,13 @@ This article provides a summary of available upgrade paths to currently supporte
 - **Windows version upgrade**: You can directly upgrade any General Availability Channel version of Windows to a newer, supported General Availability Channel version of Windows, even if it involves skipping versions. Work with your account representative if your current version of Windows is out of support. See the [Windows lifecycle fact sheet](/lifecycle/faq/windows) for availability and service information.
 
 - **Upgrade from Windows LTSC to Windows General Availability Channel**: Upgrade from Windows LTSC to Windows General Availability Channel is available when upgrading to the same or a newer build version. For example, Windows 10 Enterprise 2016 LTSB can be upgraded to Windows 10 Enterprise 22H2. Upgrade is supported using the in-place upgrade process using Windows setup. The Product Key switch needs to be used if apps need to be kept. If the switch isn't used, the option **Keep personal files and apps** option is grayed out. The command line to perform the upgrade is:
-  
+
   ```cmd
   setup.exe /pkey xxxxx-xxxxx-xxxxx-xxxxx-xxxxx
   ```
 
   where **xxxxx-xxxxx-xxxxx-xxxxx-xxxxx** is the Windows General Availability Channel product key. For example, if using a KMS, the command line for Windows Enterprise would be:
-  
+
   ```cmd
   setup.exe /pkey NPPR9-FWDCX-D2C8J-H872K-2YT43
   ```
@@ -66,6 +66,6 @@ This article provides a summary of available upgrade paths to currently supporte
 
 ## Related articles
 
-- [Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)
-- [Windows upgrade and migration considerations](windows-upgrade-and-migration-considerations.md)
-- [Windows edition upgrade](windows-edition-upgrades.md)
+- [Windows 10 deployment scenarios](../windows-deployment-scenarios.md).
+- [Windows upgrade and migration considerations](windows-upgrade-and-migration-considerations.md).
+- [Windows edition upgrade](windows-edition-upgrades.md).

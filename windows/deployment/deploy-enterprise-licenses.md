@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.collection:
   - highpri
   - tier2
-ms.date: 01/31/2024
+ms.date: 02/01/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -19,7 +19,7 @@ appliesto:
 
 # Deploy Windows Enterprise licenses
 
-This article describes how to deploy Windows Enterprise E3 or E5 licenses with [subscription activation](windows-10-subscription-activation.md) or [Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md) and Microsoft Entra ID.
+This article describes how to deploy Windows Enterprise E3 or E5 licenses with [subscription activation](windows-subscription-activation.md) or [Enterprise E3 in CSP](windows-enterprise-e3-overview.md) and Microsoft Entra ID.
 
 These activation features require a supported and licensed version of Windows Pro:
 

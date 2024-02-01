@@ -154,5 +154,5 @@ On **PC0004**:
 
 ## Related articles
 
-[Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)<br>
-[Configuration Manager Team blog](https://techcommunity.microsoft.com/t5/configuration-manager-blog/bg-p/ConfigurationManagerBlog)
+- [Windows 10 deployment scenarios](../windows-deployment-scenarios.md).
+- [Configuration Manager Team blog](https://techcommunity.microsoft.com/t5/configuration-manager-blog/bg-p/ConfigurationManagerBlog).

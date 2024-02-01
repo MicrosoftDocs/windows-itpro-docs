@@ -7,7 +7,7 @@ author: frankroj
 ms.service: windows-client
 ms.localizationpriority: medium
 ms.topic: article
-ms.date: 01/31/2024
+ms.date: 02/01/2024
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -43,7 +43,7 @@ The following tables summarize various Windows deployment scenarios. The scenari
 
 |Scenario|Description|More information|
 |--- |--- |--- |
-|[Subscription Activation](#windows-subscription-activation)|Switch from Windows Pro to Enterprise when a subscribed user signs in.|[Windows Subscription Activation](/windows/deployment/windows-enterprise-subscription-activation)|
+|[Subscription Activation](#windows-subscription-activation)|Switch from Windows Pro to Enterprise when a subscribed user signs in.|[Windows Subscription Activation](/windows/deployment/windows-subscription-activation)|
 |[Microsoft Entra ID / MDM](#dynamic-provisioning)|The device is automatically joined to Microsoft Entra ID and configured by MDM.|[Microsoft Entra integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)|
 |[Provisioning packages](#dynamic-provisioning)|Using the Windows Imaging and Configuration Designer tool, create provisioning packages that can be applied to devices.|[Configure devices without MDM](/windows/configuration/configure-devices-without-mdm)|
 
@@ -115,7 +115,7 @@ The goal of dynamic provisioning is to take a new PC out of the box, turn it on,
 
 ### Windows Subscription Activation
 
-Windows Subscription Activation is a dynamic deployment method that enables changing the edition of Windows from Pro to Enterprise. Windows Subscription Activation requires no keys and no reboots. For more information about Subscription Activation, see [Windows Subscription Activation](/windows/deployment/windows-enterprise-subscription-activation).
+Windows Subscription Activation is a dynamic deployment method that enables changing the edition of Windows from Pro to Enterprise. Windows Subscription Activation requires no keys and no reboots. For more information about Subscription Activation, see [Windows Subscription Activation](/windows/deployment/windows-subscription-activation).
 
 ### Microsoft Entra join with automatic mobile device management (MDM) enrollment
 

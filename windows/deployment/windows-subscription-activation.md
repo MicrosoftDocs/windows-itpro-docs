@@ -11,7 +11,7 @@ ms.collection:
   - highpri
   - tier2
 ms.topic: conceptual
-ms.date: 01/31/2024
+ms.date: 02/01/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -122,7 +122,7 @@ For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & 
 - Microsoft Entra available for identity management.
 - Devices must be Microsoft Entra joined or Microsoft Entra hybrid joined. Workgroup-joined or Microsoft Entra registered devices aren't supported.
 
-For Microsoft customers that don't have EA or MPSA, Windows Enterprise E3/E5 or A3/A5 licenses can be obtained through a cloud solution provider (CSP). Identity management and device requirements are the same when using CSP to manage licenses. For more information about getting Windows Enterprise E3 through a CSP, see [Windows Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md).
+For Microsoft customers that don't have EA or MPSA, Windows Enterprise E3/E5 or A3/A5 licenses can be obtained through a cloud solution provider (CSP). Identity management and device requirements are the same when using CSP to manage licenses. For more information about getting Windows Enterprise E3 through a CSP, see [Windows Enterprise E3 in CSP](windows-enterprise-e3-overview.md).
 
 ### Windows Education requirements
 
