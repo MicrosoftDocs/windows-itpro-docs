@@ -1,7 +1,7 @@
 ---
 title: FIPS 140 validated modules for Windows 10
 description: This topic lists the completed FIPS 140 cryptographic module validations for Windows 10.
-ms.date: 1/30/2024
+ms.date: 2/1/2024
 ms.topic: reference
 ms.author: v-rodurff
 author: msrobertd
@@ -199,6 +199,8 @@ Build: 10.0.10240. Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, M
 
 <!-- Links -->
 
+<!-- CMVP Certificates -->
+
 [certificate-2600]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2600
 [certificate-2601]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2601
 [certificate-2602]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2602
@@ -259,6 +261,8 @@ Build: 10.0.10240. Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, M
 [certificate-4536]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4536
 [certificate-4537]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4537
 [certificate-4538]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4538
+
+<!-- Security Policies -->
 
 [sp-2600]: https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2600.pdf
 [sp-2601]: https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2601.pdf

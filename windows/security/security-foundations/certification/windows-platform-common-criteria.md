@@ -1,7 +1,7 @@
 ---
 title: Windows Common Criteria certifications
 description: Learn how Microsoft products are certified under the Common Criteria for Information Technology Security Evaluation program.
-ms.date: 1/30/2024
+ms.date: 2/1/2024
 ms.topic: reference
 ms.author: v-rodurff
 author: msrobertd
@@ -15,7 +15,7 @@ Microsoft is committed to optimizing the security of its products and services. 
 
 ## Windows client operating systems
 
-The Windows client releases listed below have been certified against one or more Protection Profiles, as listed on the [Common Criteria Portal](https://commoncriteriaportal.org/pps/index.cfm). Click on a release for its certification details, including links to certification documents. The *Security Target* describes the product editions in scope, the security functionality in the product, and the assurance measures from the Protection Profile used as part of the evaluation. The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration. The *Certification Report* or *Validation Report* documents the results of the evaluation, with the *Assurance Activity Report* (when available) providing details on the evaluator's actions.
+The Windows client releases listed below have been certified against one or more Protection Profiles, as listed on the [Common Criteria Portal](https://commoncriteriaportal.org/pps/index.cfm). Click on a release for its certification details, including links to certification documents. The *Security Target* describes the product editions in scope, the security functionality in the product, and the assurance measures from the Protection Profile used as part of the evaluation. The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration. The *Certification Report* or *Validation Report* documents the results of the evaluation, with the *Assurance Activity Report* (where available) providing details on the evaluator's actions.
 
 #### Windows 11 releases
 
@@ -47,7 +47,7 @@ The Windows client releases listed below have been certified against one or more
 
 ## Windows Server operating systems
 
-The Windows Server releases listed below have been certified against one or more Protection Profiles, as listed on the [Common Criteria Portal](https://commoncriteriaportal.org/pps/index.cfm). Click on a release for its certification details, including links to certification documents. The *Security Target* describes the product editions in scope, the security functionality in the product, and the assurance measures from the Protection Profile used as part of the evaluation. The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration. The *Certification Report* or *Validation Report* documents the results of the evaluation, with the *Assurance Activity Report* providing details on the evaluator's actions.
+The Windows Server releases listed below have been certified against one or more Protection Profiles, as listed on the [Common Criteria Portal](https://commoncriteriaportal.org/pps/index.cfm). Click on a release for its certification details, including links to certification documents. The *Security Target* describes the product editions in scope, the security functionality in the product, and the assurance measures from the Protection Profile used as part of the evaluation. The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration. The *Certification Report* or *Validation Report* documents the results of the evaluation, with the *Assurance Activity Report* (where available) providing details on the evaluator's actions.
 
 #### Windows Server 2022, 2019, and 2016 releases
 

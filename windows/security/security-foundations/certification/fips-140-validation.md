@@ -1,7 +1,7 @@
 ---
 title: Windows FIPS 140 validation
 description: Learn how Microsoft products and cryptographic modules follow the U.S. Federal government standard FIPS 140.
-ms.date: 1/30/2024
+ms.date: 2/1/2024
 ms.topic: reference
 ms.author: v-rodurff
 author: msrobertd
@@ -18,6 +18,10 @@ Microsoft maintains an active commitment to meeting the requirements of the FIPS
 ## Windows client operating systems and cryptographic modules
 
 The Windows client releases listed below include cryptographic modules that have completed FIPS 140 validation. Click on the release for details, including the CMVP certificate, Security Policy document, and algorithm scope for each module. When the CMVP certificate validation label includes the note *When operated in FIPS mode*, specific configuration and security rules outlined in the Security Policy must be followed.
+
+#### Windows 11 releases
+
+- [Windows 11, version 21H2](validations/fips-140-windows11.md#windows-11-version-21h2)
 
 #### Windows 10 releases
 
@@ -96,7 +100,7 @@ Microsoft validates the cryptographic modules used in Windows and other products
 
 ## FIPS 140 and the Commercial National Security Algorithm Suite
 
-The *Commercial National Security Algorithm* (CNSA) suite is a set of cryptographic algorithms promulgated by the National Security Agency as a replacement for NSA Suite B cryptographic algorithms. Many CNSA cryptographic algorithms are also approved under the FIPS 140 standard. To determine whether a CNSA algorithm was included in the scope of CAVP validated algorithms used in a Microsoft product, choose a product from the drop-down menus at the top of this topic and reference the algorithm scope listed for each validated module.
+The *Commercial National Security Algorithm* (CNSA) suite is a set of cryptographic algorithms promulgated by the National Security Agency as a replacement for NSA Suite B cryptographic algorithms. Many CNSA cryptographic algorithms are also approved under the FIPS 140 standard. To determine whether a CNSA algorithm was included in the scope of CAVP validated algorithms used in a Microsoft product, navigate to the listing of FIPS 140 validated modules for the product in the sections above and reference the algorithm scope listed for each validated module. Further algorithm details are available in each module Security Policy document.
 
 ## FIPS 140 and Common Criteria certifications
 

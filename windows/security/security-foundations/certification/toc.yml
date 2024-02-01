@@ -3,6 +3,8 @@ items:
   href: fips-140-validation.md
 - name: Completed FIPS validations
   items:
+  - name: Windows 11
+    href: validations/fips-140-windows11.md
   - name: Windows 10
     href: validations/fips-140-windows10.md
   - name: Previous Windows releases

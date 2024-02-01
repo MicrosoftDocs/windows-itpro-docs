@@ -1,7 +1,7 @@
 ---
 title: FIPS 140 validated modules for previous Windows Server versions
 description: This topic lists the completed FIPS 140 cryptographic module validations for versions of Windows Server prior to Windows Server 2016.
-ms.date: 1/30/2024
+ms.date: 2/1/2024
 ms.topic: reference
 ms.author: v-rodurff
 author: msrobertd
@@ -95,6 +95,8 @@ Validated Editions: Server, Storage Server
 
 <!-- Links -->
 
+<!-- CMVP Certificates -->
+
 [certificate-381]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/381
 [certificate-382]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/382
 [certificate-405]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/405
@@ -123,6 +125,8 @@ Validated Editions: Server, Storage Server
 [certificate-2355]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2355
 [certificate-2356]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2356
 [certificate-2357]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2357
+
+<!-- Security Policies -->
 
 [sp-381]: https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp381.pdf
 [sp-382]: https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp382.pdf

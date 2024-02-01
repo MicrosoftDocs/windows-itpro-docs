@@ -1,7 +1,7 @@
 ---
 title: FIPS 140 validated modules for other products
 description: This topic lists the completed FIPS 140 cryptographic module validations for products other than Windows and Windows Server that leverage the Windows cryptographic modules.
-ms.date: 1/30/2024
+ms.date: 2/1/2024
 ms.topic: reference
 ms.author: v-rodurff
 author: msrobertd
@@ -35,10 +35,14 @@ The following tables list the completed FIPS 140 validations in products other t
 
 <!-- Links -->
 
+<!-- CMVP Certificates -->
+
 [certificate-110]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/110
 [certificate-825]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/825
 [certificate-2956]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2956
 [certificate-2957]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2957
+
+<!-- Security Policies -->
 
 [sp-110]: https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp110.pdf
 [sp-825]: https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp825.pdf

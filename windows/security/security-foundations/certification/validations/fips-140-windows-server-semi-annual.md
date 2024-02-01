@@ -1,7 +1,7 @@
 ---
 title: FIPS 140 validated modules for Windows Server Semi-Annual Releases
 description: This topic lists the completed FIPS 140 cryptographic module validations for Windows Server semi-annual releases.
-ms.date: 1/30/2024
+ms.date: 2/1/2024
 ms.topic: reference
 ms.author: v-rodurff
 author: msrobertd
@@ -105,6 +105,8 @@ Build: 10.0.16299. Validated Editions: Standard Core, Datacenter Core
 
 <!-- Links -->
 
+<!-- CMVP Certificates -->
+
 [certificate-3089]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3089
 [certificate-3092]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3092
 [certificate-3096]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3096
@@ -125,6 +127,8 @@ Build: 10.0.16299. Validated Editions: Standard Core, Datacenter Core
 [certificate-4536]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4536
 [certificate-4537]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4537
 [certificate-4538]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4538
+
+<!-- Security Policies -->
 
 [sp-3089]: https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3089.pdf
 [sp-3092]: https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3092.pdf

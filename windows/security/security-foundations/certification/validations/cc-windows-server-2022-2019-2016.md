@@ -1,7 +1,7 @@
 ---
 title: Common Criteria certifications for Windows Server 2022, 2019, and 2016
 description: Learn about the completed Common Criteria certifications for Windows Server 2022, 2019, and 2016.
-ms.date: 1/30/2024
+ms.date: 2/1/2024
 ms.topic: reference
 ms.author: v-rodurff
 author: msrobertd

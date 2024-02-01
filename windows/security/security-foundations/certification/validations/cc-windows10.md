@@ -1,7 +1,7 @@
 ---
 title: Common Criteria certifications for Windows 10
 description: Learn about the completed Common Criteria certifications for Windows 10.
-ms.date: 1/30/2024
+ms.date: 2/1/2024
 ms.topic: reference
 ms.author: v-rodurff
 author: msrobertd
@@ -17,7 +17,7 @@ The following tables list the completed Windows 10 Common Criteria certification
 
 |Product details  |Date  |Scope  |Documents  |
 |---------|---------|---------|---------|
-|Build: 10.0.19045.2006. Validated editions: Pro, Enterprise. |January 17, 2024 |Certified against the Protection Profile for General Purpose Operating Systems (4.2.1), the PP-Module for VPN Client (2.4), the PP-Module for Wireless Local Area Network Client (1.0) and the PP-Module for Bluetooth (1.0). |[Security Target][security-target-january-2024]; [Administrative Guide][admin-guide-january-2024]; [Assurance Activity Report][assurance-report-january-2024]; [Certification Report][certification-report-january-2024] |
+|Build: 10.0.19045.2006. Validated editions: Pro, Enterprise. |January 17, 2024 |Certified against the Protection Profile for General Purpose Operating Systems, the PP-Module for VPN Client, the PP-Module for Wireless Local Area Network Client and the PP-Module for Bluetooth. |[Security Target][security-target-january-2024]; [Administrative Guide][admin-guide-january-2024]; [Assurance Activity Report][assurance-report-january-2024]; [Certification Report][certification-report-january-2024] |
 
 ## Windows 10, version 21H2 (November 2021 Update)
 
