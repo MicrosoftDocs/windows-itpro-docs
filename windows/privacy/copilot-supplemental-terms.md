@@ -1,8 +1,8 @@
 ---
 title: COPILOT IN WINDOWS (PREVIEW) SUPPLEMENTAL TERMS 
 description: The Supplemental Terms for Copilot in Windows (Preview)
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: medium
 author: DHB-MSFT
 ms.author: danbrown

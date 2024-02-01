@@ -2,8 +2,8 @@
 title: Windows quality updates overview with Autopatch groups experience
 description: This article explains how Windows quality updates are managed with Autopatch groups
 ms.date: 01/22/2024
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan

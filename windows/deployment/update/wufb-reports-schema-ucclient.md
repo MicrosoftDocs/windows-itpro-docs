@@ -2,8 +2,8 @@
 title: UCClient data schema
 titleSuffix: Windows Update for Business reports
 description: UCClient schema for Windows Update for Business reports. UCClient acts as an individual device's record.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart

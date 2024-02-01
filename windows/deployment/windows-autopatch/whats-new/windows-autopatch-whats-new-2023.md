@@ -2,8 +2,8 @@
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
 ms.date: 12/14/2023 
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: whats-new
 ms.localizationpriority: medium
 author: tiaraquan 

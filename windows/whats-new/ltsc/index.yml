@@ -6,8 +6,8 @@ summary: Find out about new features and capabilities in the latest release of W
 metadata:
   title: What's new in Windows 10 Enterprise LTSC
   description: Find out about new features and capabilities in the latest release of Windows 10 Enterprise LTSC for IT professionals.
-  ms.prod: windows-client
-  ms.technology: itpro-fundamentals
+  ms.service: windows-client
+  ms.subservice: itpro-fundamentals
   ms.topic: landing-page
   ms.collection:
     - highpri

@@ -2,8 +2,8 @@
 title: UCClientReadinessStatus data schema
 titleSuffix: Windows Update for Business reports
 description: UCClientReadinessStatus schema for Windows Update for Business reports. UCClientReadinessStatus is an individual device's record about Windows 11 readiness.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart

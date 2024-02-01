@@ -1,7 +1,7 @@
 ---
 title: PIN reset
 description: Learn how Microsoft PIN reset service enables your users to recover a forgotten Windows Hello for Business PIN, and how to configure it.
-ms.date: 12/12/2023
+ms.date: 01/03/2024
 ms.topic: how-to
 ---
 
@@ -37,8 +37,6 @@ The following table compares destructive and nondestructive PIN reset:
 |**On Premises**|If AD FS is used for on premises deployments, users must have a corporate network connectivity to federation services. |The PIN reset service relies on Microsoft Entra identities, so it's only available for Microsoft Entra hybrid joined and Microsoft Entra joined devices.|
 |**Additional configuration required**|Supported by default and doesn't require configuration|Deploy the Microsoft PIN reset service and client policy to enable the PIN recovery feature.|
 |**MSA/Enterprise**|MSA and Enterprise|Enterprise only.|
-
-<a name='enable-the-microsoft-pin-reset-service-in-your-azure-ad-tenant'></a>
 
 ## Enable the Microsoft PIN Reset Service in your Microsoft Entra tenant
 
@@ -175,8 +173,6 @@ The _PIN reset_ configuration can be viewed by running [**dsregcmd /status**](/a
 
 +----------------------------------------------------------------------+
 ```
-
-<a name='configure-allowed-urls-for-federated-identity-providers-on-azure-ad-joined-devices'></a>
 
 ## Configure allowed URLs for federated identity providers on Microsoft Entra joined devices
 
