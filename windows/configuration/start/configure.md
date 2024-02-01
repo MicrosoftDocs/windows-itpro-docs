@@ -28,7 +28,7 @@ Select one of the tabs to see the list of available settings:
 #### [:::image type="icon" source=""::: **Common settings**](#tab/common)
 
 The following table lists the Start policy settings, indicating if they're applicable via configuration service provider (CSP) and/or group policy (GPO). Select the setting name for more details.
-
+<!--
 |Policy name| CSP | GPO |
 |-|-|-|
 |[Allow standard user encryption](#allow-standard-user-encryption)|✅|❌|
@@ -50,7 +50,7 @@ The following table lists the Start policy settings, indicating if they're appli
 [!INCLUDE [provide-the-unique-identifiers-for-your-organization](includes/provide-the-unique-identifiers-for-your-organization.md)]
 [!INCLUDE [require-device-encryption](includes/require-device-encryption.md)]
 [!INCLUDE [validate-smart-card-certificate-usage-rule-compliance](includes/validate-smart-card-certificate-usage-rule-compliance.md)]
-
+-->
 #### [:::image type="icon" source="images/os-drive.svg"::: **Other**](#tab/os)
 
 ---
