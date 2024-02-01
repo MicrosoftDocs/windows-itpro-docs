@@ -1,14 +1,14 @@
 ---
 title: Customize Windows PE boot images
 description: This article describes how to customize a Windows PE (WinPE) boot image including updating with the latest cumulative update, adding drivers, and adding optional components.
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
 manager: aaroncz
 ms.author: frankroj
 ms.topic: article
 ms.date: 09/05/2023
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>

@@ -2,8 +2,8 @@
 title: Delivery Optimization data in reports
 titleSuffix: Windows Update for Business reports
 description: This article provides information about Delivery Optimization data in Windows Update for Business reports. 
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart

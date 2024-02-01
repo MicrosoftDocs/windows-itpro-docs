@@ -2,14 +2,14 @@
 title: Planning to Use Folder Redirection with App-V (Windows 10/11)
 description: Learn about folder redirection with App-V. Folder redirection enables users and administrators to redirect the path of a folder to a new location.
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.topic: article
-ms.technology: itpro-apps
+ms.subservice: itpro-apps
 ---
 
 # Planning to Use Folder Redirection with App-V

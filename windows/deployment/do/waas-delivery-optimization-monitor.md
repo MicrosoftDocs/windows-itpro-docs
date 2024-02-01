@@ -1,8 +1,8 @@
 ---
 title: Monitor Delivery Optimization
 description: How to monitor Delivery Optimization using either the Windows Update for Business Delivery Optimization Report or Windows PowerShell cmdlets
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 ms.author: carmenf
 author: cmknox

@@ -1,7 +1,7 @@
 ---
 title: Windows Autopilot EULA dismissal – important information
 description: A notice about EULA dismissal through Windows Autopilot
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 ms.date: 11/23/2022
 author: frankroj
@@ -9,7 +9,7 @@ ms.author: frankroj
 manager: aaroncz
 ROBOTS: NOINDEX
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ---
 # Windows Autopilot EULA dismissal – important information
 

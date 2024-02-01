@@ -2,8 +2,8 @@
 title: UCDeviceAlert data schema
 titleSuffix: Windows Update for Business reports
 description: UCDeviceAlert schema for Windows Update for Business reports. UCDeviceAlert is an individual device's record about an alert.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart

@@ -1,8 +1,8 @@
 ---
 title: Using a proxy with Delivery Optimization
 description: Settings to use with various proxy configurations to allow Delivery Optimization to work in your environment.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: cmknox
 ms.author: carmenf
