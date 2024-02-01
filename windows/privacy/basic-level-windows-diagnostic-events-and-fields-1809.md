@@ -1740,7 +1740,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.SystemProcessorNxStartSync
 
-This event  indicates that a new set of SystemProcessorNxAdd events will be sent. The data collected with this event is used to help keep Windows up to date.
+This event indicates that a new set of SystemProcessorNxAdd events will be sent. The data collected with this event is used to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -1765,6 +1765,7 @@ The following fields are available:
 ### Microsoft.Windows.Appraiser.General.SystemProcessorPopCntStartSync
 
 The SystemProcessorPopCntStartSync event indicates that a new set of SystemProcessorPopCntAdd events will be sent. This event is used to understand if the system supports the PopCnt CPU requirement for newer versions of Windows.
+
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -4761,7 +4762,6 @@ The following fields are available:
 
 - **InventoryVersion**  The version of the inventory file generating the events.
 
-
 ### Microsoft.Windows.Inventory.Core.InventoryDeviceInterfaceAdd
 
 This event retrieves information about what sensor interfaces are available on the device. The data collected with this event is used to keep Windows performing properly.
@@ -5805,6 +5805,94 @@ The following fields are available:
 
 ## Other events
 
+### GarrisonAppInstaller.Deeplink
+
+No content is currently available.
+
+The following fields are available:
+
+- **context**  No content is currently available.
+- **productId**  No content is currently available.
+
+
+### GarrisonAppInstaller.ExceptionThrown
+
+No content is currently available.
+
+The following fields are available:
+
+- **exceptionType**  No content is currently available.
+- **HResult**  No content is currently available.
+- **innerExceptionHResult**  No content is currently available.
+- **message**  No content is currently available.
+- **source**  No content is currently available.
+- **stackTrace**  No content is currently available.
+
+
+### GarrisonAppInstaller.InstallComplete
+
+No content is currently available.
+
+The following fields are available:
+
+- **garrisonInstallTime**  No content is currently available.
+- **grtsInstallTime**  No content is currently available.
+- **installedAfterOsUpdate**  No content is currently available.
+- **timeInMilliseconds**  No content is currently available.
+
+
+### GarrisonAppInstaller.InstallerClosed
+
+No content is currently available.
+
+The following fields are available:
+
+- **activePage**  No content is currently available.
+
+
+### GarrisonAppInstaller.InstallEvent
+
+No content is currently available.
+
+The following fields are available:
+
+- **eventName**  No content is currently available.
+- **hresult**  No content is currently available.
+- **productId**  No content is currently available.
+- **retries**  No content is currently available.
+- **serviceDependencies**  No content is currently available.
+
+
+### GarrisonAppInstaller.InstallTime
+
+No content is currently available.
+
+The following fields are available:
+
+- **installTime**  No content is currently available.
+- **productId**  No content is currently available.
+
+
+### GarrisonAppInstaller.PageAction
+
+No content is currently available.
+
+The following fields are available:
+
+- **destination**  No content is currently available.
+- **navigationDirection**  No content is currently available.
+- **source**  No content is currently available.
+
+
+### GarrisonAppInstaller.UserAction
+
+No content is currently available.
+
+The following fields are available:
+
+- **userAction**  No content is currently available.
+
+
 ### Microsoft.Windows.Defender.Engine.Maps.Heartbeat
 
 Heartbeat is sent once a day to indicate Defender is running and functional. Event includes necessary information to understand health of Defender on the device.
@@ -5839,6 +5927,58 @@ Information about Secure Boot configuration including the PK, KEKs, DB and DBX f
 The following fields are available:
 
 - **SecureBootUEFIEncoding**  Information about the PK, KEKs, DB and DBX files on the device.
+
+
+### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateStarted
+
+No content is currently available.
+
+The following fields are available:
+
+- **AvailableUpdates**  No content is currently available.
+- **SecureBootUpdateCaller**  No content is currently available.
+
+
+### Microsoft.Windows.Shell.StateCapture.TrayStateCapture
+
+No content is currently available.
+
+The following fields are available:
+
+- **autoHideDesktop**  No content is currently available.
+- **autoHideTablet**  No content is currently available.
+- **cortanaButtonState**  No content is currently available.
+- **decoupledCortanaButtonState**  No content is currently available.
+- **firstPartyToolbarsInUse**  No content is currently available.
+- **lockedMoveTaskbar**  No content is currently available.
+- **lockedSizeTaskbar**  No content is currently available.
+- **monitorCount**  No content is currently available.
+- **multiDisplayButtonPlacement**  No content is currently available.
+- **multiDisplayTaskbar**  No content is currently available.
+- **overflowAllowed**  No content is currently available.
+- **overflowItemCount**  No content is currently available.
+- **peekToPreviewDesktop**  No content is currently available.
+- **showAppsInTablet**  No content is currently available.
+- **showClock**  No content is currently available.
+- **showInkWorkspace**  No content is currently available.
+- **showInputIndicator**  No content is currently available.
+- **showLocation**  No content is currently available.
+- **showMicrophone**  No content is currently available.
+- **showNetwork**  No content is currently available.
+- **showNotificationCenter**  No content is currently available.
+- **showPower**  No content is currently available.
+- **showVolume**  No content is currently available.
+- **smallIcons**  No content is currently available.
+- **taskbarBadging**  No content is currently available.
+- **taskViewButtonState**  No content is currently available.
+- **thirdPartyToolbarsInUse**  No content is currently available.
+- **toolbarsCount**  No content is currently available.
+- **toolbarsShowing**  No content is currently available.
+- **toolbarsThirdPartyDefined**  No content is currently available.
+- **touchKeyboardDesktop**  No content is currently available.
+- **touchKeyboardTablet**  No content is currently available.
+- **triggerType**  No content is currently available.
+- **usePowershell**  No content is currently available.
 
 
 ## Privacy consent logging events
@@ -10183,3 +10323,6 @@ The following fields are available:
 - **LicenseXuid**  If the license type is 1 (User), this field contains the XUID (Xbox User ID) of the registered owner of the license.
 - **ProductGuid**  The Xbox product GUID (Globally-Unique ID) of the application.
 - **UserId**  The XUID (Xbox User ID) of the current user.
+
+
+
