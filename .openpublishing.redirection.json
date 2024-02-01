@@ -12867,12 +12867,17 @@
     },
     {
       "source_path": "windows/deployment/windows-10-deployment-scenarios.md",
-      "redirect_url": "/windows/deployment/windows-deployment-scenarios.md",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/windows-10-subscription-activation.md",
-      "redirect_url": "/windows/deployment/windows-subscription-activation.md",
+      "redirect_url": "/windows/deployment/windows-subscription-activation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-enterprise-e3-overview.md",
+      "redirect_url": "/windows/deployment/windows-enterprise-e3-overview",
       "redirect_document_id": false
     }
   ]

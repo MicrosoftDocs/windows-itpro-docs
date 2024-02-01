@@ -4,11 +4,11 @@ description: Understand the different ways Windows operating system can be deplo
 manager: aaroncz
 ms.author: frankroj
 author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 ms.topic: article
 ms.date: 01/31/2024
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -101,7 +101,7 @@ There are some situations where an in-place upgrade can't be used. In these situ
 
 - Changing from an x86 version of Windows 10 to an x64 version of Windows. Versions of Windows newer than Windows 10 are only x64 and don't have an x86 version. The upgrade process can't change from a 32-bit operating system to a 64-bit operating system, because of possible complications with installed applications and drivers.
 
-- Windows To Go and Boot from VHD installations. The upgrade process is unable to upgrade these installations. Instead, new installations would need to be performed.
+- Boot from VHD installations. The upgrade process is unable to upgrade these installations. Instead, new installations would need to be performed.
 
 - Updating existing images. It can be tempting to try to upgrade existing Windows images to a newer version of Windows by installing the old image, upgrading it, and then recapturing the new Windows image. However, this scenario isn't supported. Preparing an upgraded OS via `Sysprep.exe` before capturing an image isn't supported and doesn't work. When `Sysprep.exe` detects the upgraded OS, it fails.
 
@@ -125,7 +125,7 @@ In this scenario, the organization member just needs to provide their work or sc
 
 With the [Windows Imaging and Configuration Designer (ICD)](/windows/configuration/provisioning-packages/provisioning-install-icd), IT administrators can create a self-contained package that contains all of the configuration, settings, and apps that need to be applied to a device. These packages can then be deployed to new PCs through various means, typically by IT professionals. For more information, see [Provisioning packages for Windows](/windows/configuration/provisioning-packages/provisioning-packages).
 
-These scenarios can be used to enable "Choose Your Own Device" (CYOD) programs. With these programs, an organization's users can pick their own PC. They aren't restricted to a small list of approved or certified models. These programs are difficult to implement using traditional deployment scenarios.
+These scenarios can be used to enable "Bring Your Own Device" (BYOD) or "Choose Your Own Device" (CYOD) programs. With these programs, an organization's users can pick their own PC. They aren't restricted to a small list of approved or certified models. These programs are difficult to implement using traditional deployment scenarios.
 
 While Windows includes various provisioning settings and deployment mechanisms, provisioning settings and deployment mechanisms continue to be enhanced and extended based on feedback from organizations. As with all Windows features, organizations can submit suggestions for more features through the Windows Feedback app or through their Microsoft Support contacts.
 
