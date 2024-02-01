@@ -1,14 +1,14 @@
 ---
 description: Learn more about the Windows 11 diagnostic data gathered at the basic level.
 title: Required diagnostic events and fields for Windows 11, version 21H2
-ms.prod: windows-client
-ms.technology: itpro-privacy
-localizationpriority: high
+ms.service: windows-client
+ms.subservice: itpro-privacy
+ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 09/26/2023
-ms.collection: highpri
+ms.date: 02/27/2024
+ms.collection: privacy-windows
 ms.topic: reference
 ---
 
@@ -2988,7 +2988,6 @@ The following fields are available:
 - **PreviousExecutionState**  Windows Mixed Reality Portal app prior execution state.
 - **wilActivity**  Windows Mixed Reality Portal app wilActivity ID.
 
-
 ### Microsoft.Windows.Shell.HolographicFirstRun.AppLifecycleService_Resuming
 
 This event indicates Windows Mixed Reality Portal app resuming. This event is also used to count WMR device. The data collected with this event is used to keep Windows performing properly.
@@ -3963,6 +3962,297 @@ The following fields are available:
 
 ## Other events
 
+### GarrisonAppInstaller.ExceptionThrown
+
+No content is currently available.
+
+The following fields are available:
+
+- **exceptionType**  No content is currently available.
+- **HResult**  No content is currently available.
+- **innerExceptionHResult**  No content is currently available.
+- **message**  No content is currently available.
+- **source**  No content is currently available.
+- **stackTrace**  No content is currently available.
+
+
+### GarrisonAppInstaller.InstallComplete
+
+No content is currently available.
+
+The following fields are available:
+
+- **garrisonInstallTime**  No content is currently available.
+- **grtsInstallTime**  No content is currently available.
+- **installedAfterOsUpdate**  No content is currently available.
+- **timeInMilliseconds**  No content is currently available.
+
+
+### GarrisonAppInstaller.InstallerClosed
+
+No content is currently available.
+
+The following fields are available:
+
+- **activePage**  No content is currently available.
+
+
+### GarrisonAppInstaller.InstallTime
+
+No content is currently available.
+
+The following fields are available:
+
+- **installTime**  No content is currently available.
+- **productId**  No content is currently available.
+
+
+### GarrisonAppInstaller.PageAction
+
+No content is currently available.
+
+The following fields are available:
+
+- **destination**  No content is currently available.
+- **source**  No content is currently available.
+
+
+### GarrisonAppInstaller.UserAction
+
+No content is currently available.
+
+The following fields are available:
+
+- **userAction**  No content is currently available.
+
+
+### Microsoft.Gaming.DevicesApp.Error
+
+No content is currently available.
+
+The following fields are available:
+
+- **callStack**  No content is currently available.
+- **customAttributes**  No content is currently available.
+- **errorCode**  No content is currently available.
+- **extendedData**  No content is currently available.
+- **featureName**  No content is currently available.
+- **identifier**  No content is currently available.
+- **message**  No content is currently available.
+- **properties**  No content is currently available.
+
+
+### Microsoft.Gaming.Install.MinecraftMigration
+
+Minecraft specific event to track updates from one app version to another.
+
+The following fields are available:
+
+- **FailurePhase**  Failure phase.
+- **MigrationHr**  Migration HResult.
+- **TimeTakenMs**  Total migration time in milliseconds.
+- **UWPPackageFullName**  Full name of the UWP package.
+
+
+### Microsoft.Gaming.PurchaseExperience.Error
+
+Event fired when an error is encountered during the Purchase Experience.
+
+The following fields are available:
+
+- **callstack**  The callstack where the error occurred.
+- **customAttributes**  GTL custom attributes section for each app to add its own additional data.
+- **errorCode**  errorCode indicating the error.
+- **extendedData**  GTL extended data section for each app to add its own extensions.
+- **identifier**  error identifier.
+- **message**  error message.
+
+
+### Microsoft.Gaming.PurchaseExperience.PageAction
+
+Event fired when the user interacts with any CTAs during the Purchase Experience.
+
+This event includes fields from [PageActionData](#pageactiondata).
+
+The following fields are available:
+
+- **countsAsFeatureUsage**  GTL flag to help attribute page action to a feature.
+- **customAttributes**  GTL custom attributes section for each app to add its own additional data.
+- **extendedData**  GTL extended data section for each app to add its own extensions.
+- **timeToActionMs**  Time in MS for this Page Action.
+
+
+### Microsoft.Gaming.Xbox.VisualStudio.AttachStart
+
+No content is currently available.
+
+The following fields are available:
+
+- **ClientVersion**  No content is currently available.
+- **ConsoleId**  No content is currently available.
+- **hResult**  No content is currently available.
+- **Source**  No content is currently available.
+
+
+### Microsoft.Gaming.Xbox.VisualStudio.DebugEnd
+
+Generated when an input device connects
+
+The following fields are available:
+
+- **ClientVersion**  No content is currently available.
+- **ConsoleId**  No content is currently available.
+- **hResult**  No content is currently available.
+- **Source**  No content is currently available.
+
+
+### Microsoft.Gaming.Xbox.VisualStudio.DebugStart
+
+Generated when an input device connects.
+
+The following fields are available:
+
+- **ClientVersion**  No content is currently available.
+- **ConsoleId**  No content is currently available.
+- **hResult**  No content is currently available.
+- **Mode**  No content is currently available.
+- **Source**  No content is currently available.
+
+
+### Microsoft.Gaming.Xbox.VisualStudio.Launch
+
+Generated when an input device connects.
+
+The following fields are available:
+
+- **ClientVersion**  No content is currently available.
+- **ConsoleId**  No content is currently available.
+- **hResult**  No content is currently available.
+- **Mode**  No content is currently available.
+- **Source**  No content is currently available.
+
+
+### Microsoft.Gaming.XboxPC.ConsentStatusChanged
+
+No content is currently available.
+
+The following fields are available:
+
+- **extendedData**  No content is currently available.
+- **gamingConsentEnabled**  No content is currently available.
+- **optionalDataCollectionEnabled**  No content is currently available.
+
+
+### Microsoft.Gaming.XboxPC.HttpReliability
+
+No content is currently available.
+
+The following fields are available:
+
+- **currentRoute**  No content is currently available.
+- **extendedData**  No content is currently available.
+- **featureArea**  No content is currently available.
+- **reliabilityReport**  No content is currently available.
+
+
+### Microsoft.Gaming.XboxPC.Performance
+
+No content is currently available.
+
+The following fields are available:
+
+- **children**  No content is currently available.
+- **currentRoute**  No content is currently available.
+- **endTimestamp**  No content is currently available.
+- **extendedData**  No content is currently available.
+- **featureArea**  No content is currently available.
+- **metadata**  No content is currently available. See [metadata](#metadata).
+- **scenarioName**  No content is currently available.
+- **startTimestamp**  No content is currently available.
+
+
+### Microsoft.Gaming.XboxPC.Reliability
+
+No content is currently available.
+
+The following fields are available:
+
+- **extendedData**  No content is currently available.
+- **featureArea**  No content is currently available.
+- **scenarioName**  No content is currently available.
+
+
+### Microsoft.Gaming.XboxPC.SessionStarted
+
+No content is currently available.
+
+The following fields are available:
+
+- **extendedData**  No content is currently available.
+
+
+### Microsoft.Gaming.XboxPcAppFT.Error
+
+No content is currently available.
+
+The following fields are available:
+
+- **callStack**  No content is currently available.
+- **customAttributes**  No content is currently available.
+- **errorCode**  No content is currently available.
+- **extendedData**  No content is currently available.
+- **featureName**  No content is currently available.
+- **identifier**  No content is currently available.
+- **message**  No content is currently available.
+- **properties**  No content is currently available.
+
+
+### Microsoft.Gaming.Xvdd.ContentUpdate
+
+No content is currently available.
+
+The following fields are available:
+
+- **ApplyEndTime**  No content is currently available.
+- **ApplyStartTime**  No content is currently available.
+- **CalculateEndTime**  No content is currently available.
+- **CalculateStartTime**  No content is currently available.
+- **ContentPath**  No content is currently available.
+- **ContentUpdateVersion**  No content is currently available.
+- **DiagnosticCode**  No content is currently available.
+- **DiagnosticParam1**  No content is currently available.
+- **DiagnosticParam2**  No content is currently available.
+- **DiagnosticParam3**  No content is currently available.
+- **EndTime**  No content is currently available.
+- **ErrorSource**  No content is currently available.
+- **ExtentsPostUpdate**  No content is currently available.
+- **ExtentsPreUpdate**  No content is currently available.
+- **Flags**  No content is currently available.
+- **FragmentCount**  No content is currently available.
+- **FragmentedAllocations**  No content is currently available.
+- **FreeSpace**  No content is currently available.
+- **NewPackageVersion**  No content is currently available.
+- **NewXvcPath**  No content is currently available.
+- **OldPackageVersion**  No content is currently available.
+- **OldXvcPath**  No content is currently available.
+- **ReturnCode**  No content is currently available.
+- **StartTime**  No content is currently available.
+- **UpdateSize**  No content is currently available.
+- **UpdateSizeV1**  No content is currently available.
+- **UpdatesPerformed**  No content is currently available.
+
+
+### Microsoft.Surface.Mcu.Prod.CriticalLog
+
+No content is currently available.
+
+The following fields are available:
+
+- **CUtility::GetTargetNameA(target)**  No content is currently available.
+- **productId**  No content is currently available.
+- **uniqueId**  No content is currently available.
+
+
 ### Microsoft.Windows.Defender.Engine.Maps.Heartbeat
 
 Heartbeat is sent once a day to indicate Defender is running and functional. Event includes necessary information to understand health of Defender on the device.
@@ -3987,6 +4277,161 @@ The following fields are available:
 - **ShouldHashIds**  Do we have ISO Compliance requirement to hash IDs for e5
 - **SignatureRing**  Signature ring used for deployments
 - **SigVersion**  Version of signature VDMs
+
+
+### Microsoft.Windows.SecureBootTelemetry.SecureBootEncodeUEFI
+
+No content is currently available.
+
+The following fields are available:
+
+- **SecureBootUEFIEncoding**  No content is currently available.
+
+
+### Microsoft.Xbox.Multiplayer.Bumblelion.ErrorStats
+
+No content is currently available.
+
+The following fields are available:
+
+- **ClientInstanceId**  No content is currently available.
+- **DurationInMs**  No content is currently available.
+- **ErrorData**  No content is currently available.
+
+
+### Microsoft.Xbox.Multiplayer.Bumblelion.InitializeSucceeded
+
+No content is currently available.
+
+The following fields are available:
+
+- **BuildId**  No content is currently available.
+- **BuildPlatformType**  No content is currently available.
+- **ClientInstanceId**  No content is currently available.
+- **IsUsingCustomMemoryCallbacks**  No content is currently available.
+- **TitleId**  No content is currently available.
+- **XboxLiveSandboxId**  No content is currently available.
+- **XboxTitleId**  No content is currently available.
+
+
+### Microsoft.Xbox.Multiplayer.Bumblelion.OnAuthenticateLocalUserCompleted
+
+No content is currently available.
+
+The following fields are available:
+
+- **AuthDurationInMs**  No content is currently available.
+- **ClientInstanceId**  No content is currently available.
+- **ErrorDetail**  No content is currently available.
+- **FirstNetworkIdentifier**  No content is currently available.
+- **LocalConnectionId**  No content is currently available.
+- **NetworkIdentifier**  No content is currently available.
+- **Result**  No content is currently available.
+- **TotalDurationInMs**  No content is currently available.
+
+
+### Microsoft.Xbox.Multiplayer.Bumblelion.OnDeviceJoinWithDirectPeerConnectivityCompleted
+
+No content is currently available.
+
+The following fields are available:
+
+- **ClientInstanceId**  No content is currently available.
+- **DirectPeerConnectionLatency**  No content is currently available.
+- **ErrorCode**  No content is currently available.
+- **IsInitiator**  No content is currently available.
+- **NetworkIdentifier**  No content is currently available.
+- **RelayRoundTripLatency**  No content is currently available.
+- **RelaySaidToUseDirectPeerConnectivity**  No content is currently available.
+- **RemoteClientInstanceId**  No content is currently available.
+- **TimeToReceiveJoinCompletion**  No content is currently available.
+- **TimeToReportEstablishingLinkCompleted**  No content is currently available.
+- **TimeToReportReadyToAcceptInboundConnection**  No content is currently available.
+
+
+### Microsoft.Xbox.Multiplayer.Bumblelion.OnMigrationCompleted
+
+No content is currently available.
+
+The following fields are available:
+
+- **ClientInstanceId**  No content is currently available.
+- **ErrorDetail**  No content is currently available.
+- **LocalConnectionId**  No content is currently available.
+- **NewHostname**  No content is currently available.
+- **NewNetworkIdentifier**  No content is currently available.
+- **NewPort**  No content is currently available.
+- **NewRegionName**  No content is currently available.
+- **OldHostname**  No content is currently available.
+- **OldNetworkIdentifier**  No content is currently available.
+- **OldPort**  No content is currently available.
+- **OldRegionName**  No content is currently available.
+- **QueuedSendByteCountOnNewLink**  No content is currently available.
+- **QueuedSendCountOnNewLink**  No content is currently available.
+- **SplitSendByteCount**  No content is currently available.
+- **SplitSendCount**  No content is currently available.
+- **StalledSendDataDurationHighWaterMarkMs**  No content is currently available.
+- **StateBeforeDestroy**  No content is currently available.
+- **TimeSpentInAuthenticatedStateInMs**  No content is currently available.
+- **TimeSpentInConnectingStateInMs**  No content is currently available.
+- **TimeSpentInDeauthenticatingStateInMs**  No content is currently available.
+- **TimeSpentInLeavingStateInMs**  No content is currently available.
+- **TimeSpentInNewConnectingPhaseStateMs**  No content is currently available.
+- **TimeSpentInNewDeprecatedPhaseStateMs**  No content is currently available.
+- **TimeSpentInNewDeprecatingPhaseStateMs**  No content is currently available.
+- **TimeSpentInNewDrainingPhaseStateMs**  No content is currently available.
+- **TimeSpentInNewStateInMs**  No content is currently available.
+- **TimeSpentInOldConnectingPhaseStateMs**  No content is currently available.
+- **TimeSpentInOldDeprecatingPhaseStateMs**  No content is currently available.
+- **TimeSpentInReadyStateInMs**  No content is currently available.
+- **TimeSpentInUnauthenticatedStateInMs**  No content is currently available.
+
+
+### Microsoft.Xbox.Multiplayer.BumblelionXboxLive.PartyXblInitializeSucceeded
+
+No content is currently available.
+
+The following fields are available:
+
+- **BuildId**  No content is currently available.
+- **BuildPlatformType**  No content is currently available.
+- **ClientInstanceId**  No content is currently available.
+- **TitleId**  No content is currently available.
+
+
+### Microsoft.Xbox.Multiplayer.PubSub.InitializeSucceeded
+
+No content is currently available.
+
+The following fields are available:
+
+- **BuildId**  No content is currently available.
+- **BuildPlatformType**  No content is currently available.
+- **ClientInstanceId**  No content is currently available.
+- **IsUsingCustomMemoryCallbacks**  No content is currently available.
+- **TitleId**  No content is currently available.
+
+
+### XboxSystemFlightRecorder.GDdr6EdcCounts
+
+No content is currently available.
+
+The following fields are available:
+
+- **ReadCount**  No content is currently available.
+- **ReadEdcCount**  No content is currently available.
+- **WriteCount**  No content is currently available.
+- **WriteEdcCount**  No content is currently available.
+
+
+### XboxSystemFlightRecorder.SmcErrorLog
+
+This event collects critical log files related to Xbox hardware failures.
+
+The following fields are available:
+
+- **SmcerrLog**  Binary payload of the error log from the Xbox console.
+
 
 ## Privacy consent logging events
 
@@ -5707,6 +6152,17 @@ The following fields are available:
 - **WUContentId**  The Windows Update content ID.
 
 
+### Microsoft.Windows.StoreAgent.Telemetry.BeginGetFreeEntitlement
+
+No content is currently available.
+
+The following fields are available:
+
+- **CampaignId**  No content is currently available.
+- **StoreId**  No content is currently available.
+- **UseDeviceId**  No content is currently available.
+
+
 ### Microsoft.Windows.StoreAgent.Telemetry.BeginGetInstalledContentIds
 
 This event is sent when an inventory of the apps installed is started to determine whether updates for those apps are available. It's used to help keep Windows up-to-date and secure.
@@ -5794,6 +6250,18 @@ This event is sent when an app update requires an updated Framework package and 
 The following fields are available:
 
 - **HResult**  The result code of the last action performed before this operation.
+
+
+### Microsoft.Windows.StoreAgent.Telemetry.EndGetFreeEntitlement
+
+No content is currently available.
+
+The following fields are available:
+
+- **CampaignId**  No content is currently available.
+- **HResult**  No content is currently available.
+- **StoreId**  No content is currently available.
+- **UseDeviceId**  No content is currently available.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.EndGetInstalledContentIds
@@ -6754,3 +7222,6 @@ The following fields are available:
 - **Flags**  The flags passed to the hard reserve adjustment function.
 - **PendingHardReserveAdjustment**  The final change to the hard reserve size.
 - **UpdateType**  Indicates whether the change is an increase or decrease in the size of the hard reserve.
+
+
+
