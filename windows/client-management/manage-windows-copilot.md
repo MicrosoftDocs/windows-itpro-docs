@@ -3,7 +3,7 @@ title: Manage Copilot in Windows
 description: Learn how to manage Copilot in Windows for commercial environments using MDM and group policy. Learn about the chat providers available to Copilot in Windows.
 ms.topic: conceptual
 ms.subservice: windows-copilot
-ms.date: 01/22/2024
+ms.date: 02/01/2024
 ms.author: mstewart
 author: mestew
 appliesto:
@@ -57,7 +57,11 @@ Copilot is a consumer experience and has a daily limit on the number of chat que
 - User and organizational data is protected, chat data isn't saved, and your data isn't used to train the underlying large language models. Because of this protection, chat history, 3rd-party plugins, and the Bing app for iOS or Android aren't currently supported. Copilot with commercial data protection is accessible from mobile browsers, including Edge mobile on iOS and Android. Review the Copilot with commercial data protection [privacy statement](/copilot/privacy-and-protections).
 - Copilot with commercial data protection is available, at no additional cost, for the following licenses:
    - Microsoft 365 E3 or E5
-   - Microsoft 365 A3 or A5 for faculty
+   - Microsoft 365 F3 <!--8681080, 8681034-->
+   - Microsoft 365 A1, A3, or A5 <!--8681034-->
+       - Copilot with comercial data protection is limited to faculty and higher education students over 18 years of age
+   - Office 365 A1, A3, or A5 <!--8681034-->
+       - Copilot with comercial data protection is limited to faculty and higher education students over 18 years of age
    - Microsoft 365 Business Standard
    - Microsoft 365 Business Premium
 
@@ -84,8 +88,11 @@ To verify that Copilot with commercial data protection is enabled for the user a
 1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com/).
 1. In the admin center, select  **Users** > **Active users** and verify that users are assigned a license that includes **Copilot**. Copilot with commercial data protection is included and enabled by default for users that are assigned one of the following licenses:
    - Microsoft 365 E3 or E5
-   - Microsoft 365 A3 or A5 for faculty
-     - Currently, Microsoft 365 A3 and A5 for faculty requires additional configuration. For more information, see [Manage Copilot](/copilot/manage).
+   - Microsoft 365 F3 <!--8681080, 8681034-->
+   - Microsoft 365 A1, A3, or A5 
+     - Copilot with comercial data protection is limited to faculty and higher education students over 18 years of age <!--8681034-->
+   - Office 365 A1, A3, or A5 <!--8681034-->
+      - Copilot with comercial data protection is limited to faculty and higher education students over 18 years of age <!--8681034-->
    - Microsoft 365 Business Standard
    - Microsoft 365 Business Premium
 1. To verify that commercial data protection is enabled for the user, select the user's **Display name** to open the flyout menu.
