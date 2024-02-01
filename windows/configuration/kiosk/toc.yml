@@ -1,5 +1,5 @@
 items:
-- name: Configure kiosks and restricted user experience
+- name: Overview
   href: kiosk-methods.md
 - name: Quickstarts
   items:
