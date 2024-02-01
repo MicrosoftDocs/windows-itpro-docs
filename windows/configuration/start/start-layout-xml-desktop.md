@@ -14,19 +14,13 @@ appliesto:
 On Windows 10 for desktop editions, the customized Start works by:
 
 - Windows 10 checks the chosen base default layout, such as the desktop edition and whether Cortana is supported for the country/region.
-
 - Windows 10 reads the LayoutModification.xml file and allows groups to be appended to Start. The groups have the following constraints:
-    - Two groups that are six columns wide, or equivalent to the width of three medium tiles.
-    - Two medium-sized tile rows in height. Windows 10 ignores any tiles that are pinned beyond the second row.
-
-    - No limit to the number of apps that can be pinned. There's a theoretical limit of 24 tiles per group (four small tiles per medium square x 3 columns x 2 rows).
-
-
+  - Two groups that are six columns wide, or equivalent to the width of three medium tiles.
+  - Two medium-sized tile rows in height. Windows 10 ignores any tiles that are pinned beyond the second row.
+  - No limit to the number of apps that can be pinned. There's a theoretical limit of 24 tiles per group (four small tiles per medium square x 3 columns x 2 rows).
 
 >[!NOTE]
 >To use the layout modification XML to configure Start with roaming user profiles, see [Deploying Roaming User Profiles](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#step-7-optionally-specify-a-start-layout-for-windows-10-pcs).
-
-
 
 ## LayoutModification XML
 
@@ -39,7 +33,7 @@ The XML schema for `LayoutModification.xml` requires the following order for tag
 1. LayoutOptions
 1. DefaultLayoutOverride
 1. RequiredStartGroupsCollection
-1. AppendDownloadOfficeTile –OR– AppendOfficeSuite (only one Office option can be used at a time)
+1. AppendDownloadOfficeTile - OR - AppendOfficeSuite (only one Office option can be used at a time)
 1. AppendOfficeSuiteChoice
 1. TopMFUApps
 1. CustomTaskbarLayoutCollection
@@ -52,11 +46,13 @@ Comments are not supported in the `LayoutModification.xml` file.
 
 >[!NOTE]
 >To make sure the Start layout XML parser processes your file correctly, follow these guidelines when working with your LayoutModification.xml file:
+>
 >- Do not leave spaces or white lines in between each element.
 >- Do not add comments inside the StartLayout node or any of its children elements.
 >- Do not add multiple rows of comments.
 
 The following table lists the supported elements and attributes for the LayoutModification.xml file.
+
 > [!NOTE]
 > RequiredStartGroupsCollection and AppendGroup syntax only apply when the Import-StartLayout method is used for building and deploying Windows images.
 
@@ -81,15 +77,11 @@ The following table lists the supported elements and attributes for the LayoutMo
 
 New devices running Windows 10 for desktop editions will default to a Start menu with two columns of tiles unless boot to tablet mode is enabled. Devices with screens that are under 10" have boot to tablet mode enabled by default. For these devices, users see the full screen Start on the desktop. You can adjust the following features:
 
-- Boot to tablet mode can be set on or off.
-
-- Set full screen Start on desktop to on or off.
-
-    To do this, add the LayoutOptions element in your LayoutModification.xml file and set the FullScreenStart attribute to true or false.
-
-- Specify the number of columns in the Start menu to 1 or 2.
-
-    To do this, add the LayoutOptions element in your LayoutModification.xml file and set the StartTileGroupsColumnCount attribute to 1 or 2.
+- Boot to tablet mode can be set on or off
+- Set full screen Start on desktop to on or off
+  To do this, add the LayoutOptions element in your LayoutModification.xml file and set the FullScreenStart attribute to true or false
+- Specify the number of columns in the Start menu to 1 or 2
+  To do this, add the LayoutOptions element in your LayoutModification.xml file and set the StartTileGroupsColumnCount attribute to 1 or 2
 
 The following example shows how to use the LayoutOptions element to specify full screen Start on the desktop and to use one column in the Start menu:
 
@@ -220,7 +212,6 @@ You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop ap
           Row="0"
           Column="2"/>
   ```
-
 
 You can also use the **start:DesktopApplicationTile** tag as one of the methods for pinning a Web link to Start. The other method is to use a Microsoft Edge secondary tile.
 

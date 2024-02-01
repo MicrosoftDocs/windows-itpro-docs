@@ -1,13 +1,13 @@
 ---
-title: Use Shell Launcher to create a Windows 10/11 kiosk (Windows 10/11)
-description: Shell Launcher lets you change the default shell that launches when a user signs in to a device.
-ms.topic: article
+title: Use Shell Launcher to create a kiosk experience
+description: Learn how to configure Shell Launcher to change the default Windows shell when a user signs in to a device.
+ms.topic: how-to
 ms.date: 12/31/2017
 ---
 
 # Use Shell Launcher to create a Windows client kiosk
 
-Using Shell Launcher, you can configure a device that runs an application as the user interface, replacing the default shell (explorer.exe). In **Shell Launcher v1**, available in Windows client, you can only specify a Windows desktop application as the replacement shell. In **Shell Launcher v2**, available in Windows 10 version 1809+ / Windows 11, you can also specify a UWP app as the replacement shell. To use **Shell Launcher v2** in Windows 10 version 1809, you need to install the [KB4551853](https://support.microsoft.com/help/4551853) update.
+Shell Launcher is a Windows feature that can enable a device to execute an application as the user interface, replacing the default shell (`explorer.exe`).
 
 >[!NOTE]
 >Shell Launcher controls which application the user sees as the shell after sign-in. It does not prevent the user from accessing other desktop applications and system components.

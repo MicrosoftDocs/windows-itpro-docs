@@ -3,7 +3,7 @@ title: Policies enforced on kiosk devices (Windows 10/11)
 description: Learn about the policies enforced on a device when you configure it as a kiosk.
 ms.topic: article
 ms.date: 12/31/2017
---- 
+---
 
 # Policies enforced on kiosk devices
 
@@ -59,3 +59,40 @@ Some of the MDM policies based on the [Policy configuration service provider (CS
 | [WindowsInkWorkspace/AllowWindowsInkWorkspace](/windows/client-management/mdm/policy-csp-windowsinkworkspace#windowsinkworkspace-allowwindowsinkworkspace) | 0 - Access to ink workspace is disabled and the feature is turned off | Yes |
 | [Start/StartLayout](/windows/client-management/mdm/policy-csp-start#start-startlayout) | Configuration dependent | No |
 | [WindowsLogon/DontDisplayNetworkSelectionUI](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui) | &lt;Enabled/&gt; | Yes |
+
+
+<!--
+## Start Menu
+
+Remove access to the context menus for the task bar
+Clear history of recently opened documents on exit
+Prevent users from customizing their Start Screen
+Prevent users from uninstalling applications from Start
+Remove All Programs list from the Start menu
+Remove Run menu from Start Menu
+
+## Desktop
+
+Hide and disable all items on the desktop
+
+## Task bar
+
+Disable showing balloon notificationss as toast
+Do not allow pinning items in Jump Lists
+Do not allow pinning programs to the Taskbar
+Do not display or track items in Jump Lists from remote locations
+Remove Notification Center
+Remove Control Center
+Lock all taskbar settings
+Lock the Taskbar
+Prevent users from adding or removing toolbars
+Prevent users from moving taskbar to another screen dock location
+Prevent users from rearranging toolbars
+Prevent users from resizing the taskbar
+Remove frequent programs list from the Start Menu
+Remove the Security and Maintenance icon
+Turn off all balloon notifications
+Turn off feature advertisement balloon notifications
+Hide the Task View button
+
+-->

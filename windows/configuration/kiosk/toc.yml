@@ -1,11 +1,11 @@
 items:
-- name: Configure kiosks and digital signs on Windows desktop editions
+- name: Configure kiosks and restricted user experience
   href: kiosk-methods.md
 - name: Quickstarts
   items:
-    - name: Configure a single-app kiosk
+    - name: Configure a kiosk experience
       href: quickstart-single-app.md
-    - name: Configure a multi-app kiosk
+    - name: Configure a restricted user experience
       href: quickstart-multi-app.md
 - name: Prepare a device for kiosk configuration
   href: kiosk-prepare.md
