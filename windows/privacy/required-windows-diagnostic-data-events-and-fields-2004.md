@@ -5724,7 +5724,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **ModelData**  No content is currently available. See [ModelData](#modeldata).
+- **ModelData**  No content is currently available.
 - **ModelIndex**  No content is currently available.
 - **smlsVersion**  No content is currently available.
 - **SmlsVersion**  No content is currently available.
@@ -10048,7 +10048,7 @@ The following fields are available:
 - **callStack**  No content is currently available.
 - **customAttributes**  No content is currently available.
 - **errorCode**  No content is currently available.
-- **extendedData**  No content is currently available. See [extendedData](#extendeddata).
+- **extendedData**  No content is currently available.
 - **featureName**  No content is currently available.
 - **identifier**  No content is currently available.
 - **message**  No content is currently available.
@@ -10259,7 +10259,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **extendedData**  No content is currently available. See [extendedData](#extendeddata).
+- **extendedData**  No content is currently available.
 - **featureArea**  No content is currently available.
 - **gamingConsentEnabled**  No content is currently available.
 - **optionalDataCollectionEnabled**  No content is currently available.
@@ -10271,9 +10271,9 @@ No content is currently available.
 
 The following fields are available:
 
-- **customAttributes**  No content is currently available. See [customAttributes](#customattributes).
+- **customAttributes**  No content is currently available.
 - **errorCode**  No content is currently available.
-- **extendedData**  No content is currently available. See [extendedData](#extendeddata).
+- **extendedData**  No content is currently available.
 - **featureName**  No content is currently available.
 - **identifier**  No content is currently available.
 - **properties**  No content is currently available.
@@ -10286,9 +10286,9 @@ No content is currently available.
 The following fields are available:
 
 - **currentRoute**  No content is currently available.
-- **extendedData**  No content is currently available. See [extendedData](#extendeddata).
+- **extendedData**  No content is currently available.
 - **featureArea**  No content is currently available.
-- **reliabilityReport**  No content is currently available. See [reliabilityReport](#reliabilityreport).
+- **reliabilityReport**  No content is currently available.
 
 
 ### Microsoft.Gaming.XboxPC.Performance
@@ -10314,7 +10314,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **extendedData**  No content is currently available. See [extendedData](#extendeddata).
+- **extendedData**  No content is currently available.
 - **featureArea**  No content is currently available.
 - **scenarioName**  No content is currently available.
 
@@ -10325,7 +10325,7 @@ No content is currently available.
 
 The following fields are available:
 
-- **extendedData**  No content is currently available. See [extendedData](#extendeddata).
+- **extendedData**  No content is currently available.
 
 
 ### Microsoft.Gaming.XboxPcAppFT.Error
@@ -10337,7 +10337,7 @@ The following fields are available:
 - **callStack**  No content is currently available.
 - **customAttributes**  No content is currently available.
 - **errorCode**  No content is currently available.
-- **extendedData**  No content is currently available. See [extendedData](#extendeddata).
+- **extendedData**  No content is currently available.
 - **featureName**  No content is currently available.
 - **identifier**  No content is currently available.
 - **message**  No content is currently available.
