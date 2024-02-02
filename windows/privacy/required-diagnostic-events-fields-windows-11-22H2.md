@@ -2,14 +2,15 @@
 description: Learn more about the diagnostic data gathered for Windows 11, versions 23H2 and 22H2.
 title: Required diagnostic events and fields for Windows 11, versions 23H2 and 22H2
 keywords: privacy, telemetry
-ms.prod: windows-client
-ms.technology: itpro-privacy
-localizationpriority: high
+ms.service: windows-client
+ms.subservice: itpro-privacy
+ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 10/31/2023
+ms.date: 02/27/2024
 ms.topic: reference
+ms.collection: privacy-windows
 ---
 
 # Required diagnostic events and fields for Windows 11, versions 23H2 and 22H2
@@ -129,7 +130,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser binary generating the events.
-
 
 ### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileRemove
 
@@ -783,7 +783,6 @@ The following fields are available:
 
 - **AppraiserVersion**  Appraiser version.
 
-
 ### Microsoft.Windows.Appraiser.General.SystemProcessorPrefetchWAdd
 
 This event sends data indicating whether the system supports the PrefetchW CPU requirement, to help keep Windows up to date.
@@ -1327,6 +1326,7 @@ The following fields are available:
 - **objectInstanceId**  Object identity which is unique within the device scope.
 - **objectType**  Indicates the object type that the event applies to.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
+
 
 ## Component-based servicing events
 
@@ -2163,6 +2163,7 @@ The following fields are available:
 - **SystemStateTransition**  State transition information.
 - **Watchdog**  Watchdog information.
 
+
 ## Microsoft Edge events
 
 ### Aria.af397ef28e484961ba48646a5d38cf54.Microsoft.WebBrowser.Installer.EdgeUpdate.Ping
@@ -2275,6 +2276,102 @@ The following fields are available:
 
 ## Other events
 
+### BumblelionXboxLive.XblOnPlayFabError
+
+No content is currently available.
+
+The following fields are available:
+
+- **ClientInstanceId**  No content is currently available.
+- **ErrorCode**  No content is currently available.
+- **ErrorMessage**  No content is currently available.
+- **ErrorName**  No content is currently available.
+- **HttpStatusCode**  No content is currently available.
+- **HttpStatusString**  No content is currently available.
+- **RequestId**  No content is currently available.
+- **RequestType**  No content is currently available.
+
+
+### GarrisonAppInstaller.ExceptionThrown
+
+No content is currently available.
+
+The following fields are available:
+
+- **exceptionType**  No content is currently available.
+- **HResult**  No content is currently available.
+- **innerExceptionHResult**  No content is currently available.
+- **isInstallFailure**  No content is currently available.
+- **message**  No content is currently available.
+- **source**  No content is currently available.
+- **stackTrace**  No content is currently available.
+
+
+### GarrisonAppInstaller.InstallComplete
+
+No content is currently available.
+
+The following fields are available:
+
+- **garrisonInstallTime**  No content is currently available.
+- **grtsInstallTime**  No content is currently available.
+- **installedAfterOsUpdate**  No content is currently available.
+- **timeInMilliseconds**  No content is currently available.
+
+
+### GarrisonAppInstaller.InstallerClosed
+
+No content is currently available.
+
+The following fields are available:
+
+- **activePage**  No content is currently available.
+- **displayedProgress**  No content is currently available.
+- **realProgress**  No content is currently available.
+
+
+### GarrisonAppInstaller.InstallEvent
+
+No content is currently available.
+
+The following fields are available:
+
+- **eventName**  No content is currently available.
+- **hresult**  No content is currently available.
+- **productId**  No content is currently available.
+- **retries**  No content is currently available.
+- **serviceDependencies**  No content is currently available.
+
+
+### GarrisonAppInstaller.InstallTime
+
+No content is currently available.
+
+The following fields are available:
+
+- **installTime**  No content is currently available.
+- **productId**  No content is currently available.
+
+
+### GarrisonAppInstaller.PageAction
+
+No content is currently available.
+
+The following fields are available:
+
+- **destination**  No content is currently available.
+- **source**  No content is currently available.
+
+
+### GarrisonAppInstaller.UserAction
+
+No content is currently available.
+
+The following fields are available:
+
+- **userAction**  No content is currently available.
+
+
 ### Microsoft.Edge.Crashpad.HangEvent
 
 This event sends simple Product and Service Performance data on a hanging/frozen Microsoft Edge browser process to help mitigate future instances of the hang.
@@ -2289,6 +2386,525 @@ The following fields are available:
 - **hang_source**  Identifies how the hang was detected.
 - **process_type**  The type of the hanging browser process, for example, gpu-process, renderer, etc.
 - **stack_hash**  A hash of the hanging stack. Currently not used or set to zero.
+
+
+### Microsoft.Gaming.Critical.Error
+
+Common error event used by the Gaming Telemetry Library to provide centralized monitoring for critical errors logged by callers using the library.
+
+The following fields are available:
+
+- **callStack**  List of active subroutines running during error occurrence.
+- **componentName**  Friendly name meant to represent what feature area this error should be attributed to. Used for aggregations and pivots of data.
+- **customAttributes**  List of custom attributes. See [customAttributes](#customattributes).
+- **errorCode**  Error code.
+- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
+- **featureName**  Friendly name meant to represent which feature this should be attributed to.
+- **identifier**  Error identifier.
+- **message**  Error message.
+- **properties**  List of properties attributed to the error.
+
+
+### Microsoft.Gaming.Critical.ProviderRegistered
+
+Indicates that a telemetry provider has been registered with the Gaming Telemetry Library.
+
+The following fields are available:
+
+- **providerNamespace**  The telemetry Namespace for the registered provider.
+
+
+### Microsoft.Gaming.Critical.SessionStopped
+
+No content is currently available.
+
+The following fields are available:
+
+- **componentName**  Name meant to help identify which calling code base generated this error.
+- **customAttributes**  A JSON string containing additional diagnostics data not represented in the error schema. See [customAttributes](#customattributes).
+- **duration**  Value representing how long the session was active for.
+- **endStatus**  The result code representing the end state of this session.
+- **errorSummary**  No content is currently available.
+- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
+- **failed**  No content is currently available.
+- **featureUsage**  No content is currently available.
+- **providerNamespace**  No content is currently available.
+- **sessionDuration**  No content is currently available.
+- **state**  The reason this session was ended.
+- **totalErrorCount**  A count of all the error events that occurred while this session was active.
+
+
+### Microsoft.Gaming.GameLaunch.LaunchSummary
+
+No content is currently available.
+
+The following fields are available:
+
+- **activationDuration**  No content is currently available.
+- **bootStrapperCancelState**  No content is currently available.
+- **bootStrapperDuration**  No content is currently available.
+- **bootStrapperExited**  No content is currently available.
+- **callerVersion**  No content is currently available.
+- **executable**  No content is currently available.
+- **grtsVersion**  No content is currently available.
+- **hr**  No content is currently available.
+- **isDevLaunch**  No content is currently available.
+- **isFlatFileStreamed**  No content is currently available.
+- **lastFailureLine**  No content is currently available.
+- **launchArguments**  No content is currently available.
+- **launchDuration**  No content is currently available.
+- **launchType**  No content is currently available.
+- **packageFullName**  No content is currently available.
+- **titleId**  No content is currently available.
+- **usedBootStrapper**  No content is currently available.
+
+
+### Microsoft.Gaming.GRTS.Initialize
+
+No content is currently available.
+
+The following fields are available:
+
+- **AppSessionGuid**  No content is currently available.
+- **gameConfigVersion**  No content is currently available.
+- **grtsMajorBuildNumber**  No content is currently available.
+- **grtsMajorVersion**  No content is currently available.
+- **grtsMinorBuildNumber**  No content is currently available.
+- **grtsMinorVersion**  No content is currently available.
+- **GRTSVersion**  No content is currently available.
+- **hr**  No content is currently available.
+- **libBuildMajorVersion**  No content is currently available.
+- **libBuildMinorVersion**  No content is currently available.
+- **libMajorVersion**  No content is currently available.
+- **libMinorVersion**  No content is currently available.
+- **msaAppId**  No content is currently available.
+- **pfn**  No content is currently available.
+- **storeId**  No content is currently available.
+- **titleId**  No content is currently available.
+
+
+### Microsoft.Gaming.Guide.XCommsDiagnostic
+
+No content is currently available.
+
+The following fields are available:
+
+- **EventName**  No content is currently available.
+- **extendedData**  No content is currently available.
+- **Locator**  No content is currently available.
+- **NetworkIdentifier**  No content is currently available.
+- **PartyId**  No content is currently available.
+- **Reason**  No content is currently available.
+
+
+### Microsoft.Gaming.Install.GamingServicesStartup
+
+No content is currently available.
+
+The following fields are available:
+
+- **PackageVersion**  No content is currently available.
+
+
+### Microsoft.Gaming.Install.MinecraftMigration
+
+deny
+
+The following fields are available:
+
+- **FailurePhase**  Failure phase.
+- **MigrationHr**  Migration HResult.
+- **TimeTakenMs**  Total migration time in milliseconds.
+- **UWPPackageFullName**  Full name of the UWP package.
+
+
+### Microsoft.Gaming.Install.PackageRemediated
+
+No content is currently available.
+
+The following fields are available:
+
+- **InstanceId**  No content is currently available.
+- **PackageFullName**  No content is currently available.
+- **Result**  No content is currently available.
+
+
+### Microsoft.Gaming.NetworkTroubleshooter.ActiveUserUpdated
+
+No content is currently available.
+
+The following fields are available:
+
+- **extendedData**  No content is currently available.
+
+
+### Microsoft.Gaming.NetworkTroubleshooter.CaptivePortalCompletion
+
+No content is currently available.
+
+The following fields are available:
+
+- **connectionErrorType**  No content is currently available.
+- **extendedData**  No content is currently available.
+
+
+### Microsoft.Gaming.NetworkTroubleshooter.CompleteHomeStreamingResults
+
+No content is currently available.
+
+The following fields are available:
+
+- **bandwidthSpeed**  No content is currently available.
+- **bandwidthStatus**  No content is currently available.
+- **connectionTypeStatus**  No content is currently available.
+- **consolePowerStatus**  No content is currently available.
+- **controllerBluetoothStatus**  No content is currently available.
+- **controllerFirmwareStatus**  No content is currently available.
+- **controllerFirmwareVersion**  No content is currently available.
+- **controllerID**  No content is currently available.
+- **controllerPID**  No content is currently available.
+- **controllerVID**  No content is currently available.
+- **extendedData**  No content is currently available.
+- **finalTestResult**  No content is currently available.
+- **initialHomeStreamingValue**  No content is currently available.
+- **latencySpeed**  No content is currently available.
+- **latencyStatus**  No content is currently available.
+- **natType**  No content is currently available.
+- **natTypeStatus**  No content is currently available.
+- **outboundPortStatus**  No content is currently available.
+- **testModeType**  No content is currently available.
+
+
+### Microsoft.Gaming.NetworkTroubleshooter.Error
+
+No content is currently available.
+
+The following fields are available:
+
+- **callStack**  No content is currently available.
+- **customAttributes**  No content is currently available.
+- **errorCode**  No content is currently available.
+- **extendedData**  No content is currently available.
+- **featureName**  No content is currently available.
+- **identifier**  No content is currently available.
+- **message**  No content is currently available.
+- **properties**  No content is currently available.
+
+
+### Microsoft.Gaming.NetworkTroubleshooter.NTSChange
+
+No content is currently available.
+
+The following fields are available:
+
+- **extendedData**  No content is currently available.
+- **newValue**  No content is currently available.
+- **oldValue**  No content is currently available.
+
+
+### Microsoft.Gaming.NetworkTroubleshooter.SettingChanged
+
+No content is currently available.
+
+The following fields are available:
+
+- **extendedData**  No content is currently available.
+- **newValue**  No content is currently available.
+- **pageName**  No content is currently available.
+- **previousValue**  No content is currently available.
+- **settingName**  No content is currently available.
+
+
+### Microsoft.Gaming.OOBE.Error
+
+No content is currently available.
+
+The following fields are available:
+
+- **callStack**  No content is currently available.
+- **customAttributes**  No content is currently available.
+- **errorCode**  No content is currently available.
+- **extendedData**  No content is currently available.
+- **featureName**  No content is currently available.
+- **identifier**  No content is currently available.
+- **message**  No content is currently available.
+- **properties**  No content is currently available.
+
+
+### Microsoft.Gaming.OOBE.HDDBackup
+
+This event describes whether an External HDD back up has been found.
+
+The following fields are available:
+
+- **backupVersion**  version number of backup.
+- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
+- **hasConsoleSettings**  Indicates whether the console settings stored.
+- **hasUserSettings**  Indicates whether the user settings stored.
+- **hasWirelessProfile**  Indicates whether the wireless profile stored.
+- **hddBackupFound**  Indicates whether hdd backup is found.
+- **osVersion**  Operating system version.
+
+
+### Microsoft.Gaming.OOBE.MOOBEPhoneConnection
+
+No content is currently available.
+
+The following fields are available:
+
+- **extendedData**  No content is currently available.
+- **isConnected**  No content is currently available.
+
+
+### Microsoft.Gaming.OOBE.OobeComplete
+
+This event is triggered when OOBE activation is complete.
+
+The following fields are available:
+
+- **allowAutoUpdate**  Allows auto update.
+- **allowAutoUpdateApps**  Allows auto update for apps.
+- **appliedTransferToken**  Applied transfer token.
+- **connectionType**  Connection type.
+- **curSessionId**  Current session id.
+- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
+- **instantOn**  Instant on.
+- **moobeAcceptedState**  Moobe accepted state.
+- **phaseOneElapsedTimeMs**  Total elapsed time in milliseconds for phase 1.
+- **phaseOneVersion**  Version of phase 1.
+- **phaseTwoElapsedTimeMs**  Total elapsed time in milliseconds for phase 2.
+- **phaseTwoVersion**  Version of phase 2.
+- **systemUpdateRequired**  Indicates whether a system update required.
+- **totalElapsedTimeMs**  Total elapsed time in milliseconds of all phases.
+- **usedCloudBackup**  Indicates whether cloud backup is used.
+- **usedHDDBackup**  Indicates whether HDD backup is used.
+- **usedOffConsole**  Indicates whether off console is used.
+
+
+### Microsoft.Gaming.OOBE.SessionStarted
+
+This event is sent at the start of OOBE session.
+
+The following fields are available:
+
+- **customAttributes**  customAttributes.
+- **extendedData**  extendedData.
+
+
+### Microsoft.Gaming.PlatformServices.LaunchSummary
+
+No content is currently available.
+
+The following fields are available:
+
+- **hr**  No content is currently available.
+- **source**  No content is currently available.
+
+
+### Microsoft.Gaming.Settings.Error
+
+No content is currently available.
+
+The following fields are available:
+
+- **callStack**  No content is currently available.
+- **customAttributes**  No content is currently available.
+- **errorCode**  No content is currently available.
+- **extendedData**  No content is currently available.
+- **featureName**  No content is currently available.
+- **identifier**  No content is currently available.
+- **message**  No content is currently available.
+- **properties**  No content is currently available.
+- **relatedCv**  No content is currently available.
+
+
+### Microsoft.Gaming.SignIn.SessionStopped
+
+No content is currently available.
+
+The following fields are available:
+
+- **customAttributes**  No content is currently available.
+- **duration**  No content is currently available.
+- **endStatus**  No content is currently available.
+- **errorSummary**  No content is currently available.
+- **extendedData**  No content is currently available.
+- **featureUsageSummary**  No content is currently available.
+- **state**  No content is currently available.
+- **totalErrorCount**  No content is currently available.
+
+
+### Microsoft.Gaming.SystemUpdate.DDSCreateResponse
+
+No content is currently available.
+
+The following fields are available:
+
+- **extendedData**  No content is currently available.
+- **responseCode**  No content is currently available.
+- **responseText**  No content is currently available.
+
+
+### Microsoft.Gaming.SystemUpdate.OffConsoleOOBEInvite
+
+No content is currently available.
+
+The following fields are available:
+
+- **curSessionId**  No content is currently available.
+- **extendedData**  No content is currently available.
+- **flags**  No content is currently available.
+
+
+### Microsoft.Gaming.Xbox.VisualStudio.DebugStart
+
+Generated when an input device connects.
+
+The following fields are available:
+
+- **ClientVersion**  No content is currently available.
+- **ConsoleId**  No content is currently available.
+- **hResult**  No content is currently available.
+- **Mode**  No content is currently available.
+- **Source**  No content is currently available.
+
+
+### Microsoft.Gaming.Xbox.VisualStudio.Deploy
+
+No content is currently available.
+
+The following fields are available:
+
+- **ClientVersion**  No content is currently available.
+- **ConsoleId**  No content is currently available.
+- **hResult**  No content is currently available.
+- **Mode**  No content is currently available.
+- **Source**  No content is currently available.
+
+
+### Microsoft.Gaming.Xbox.VisualStudio.Launch
+
+Generated when an input device connects.
+
+The following fields are available:
+
+- **ClientVersion**  No content is currently available.
+- **ConsoleId**  No content is currently available.
+- **hResult**  No content is currently available.
+- **Mode**  No content is currently available.
+- **Source**  No content is currently available.
+
+
+### Microsoft.Gaming.XboxPC.ConsentStatusChanged
+
+No content is currently available.
+
+The following fields are available:
+
+- **extendedData**  No content is currently available.
+- **featureArea**  No content is currently available.
+- **gamingConsentEnabled**  No content is currently available.
+- **optionalDataCollectionEnabled**  No content is currently available.
+
+
+### Microsoft.Gaming.XboxPC.HttpReliability
+
+No content is currently available.
+
+The following fields are available:
+
+- **currentRoute**  No content is currently available.
+- **extendedData**  No content is currently available.
+- **featureArea**  No content is currently available.
+- **reliabilityReport**  No content is currently available.
+
+
+### Microsoft.Gaming.XboxPC.Performance
+
+No content is currently available.
+
+The following fields are available:
+
+- **children**  No content is currently available.
+- **currentRoute**  No content is currently available.
+- **endTimestamp**  No content is currently available.
+- **extendedData**  No content is currently available.
+- **featureArea**  No content is currently available.
+- **metadata**  No content is currently available.
+- **scenarioName**  No content is currently available.
+- **startTimestamp**  No content is currently available.
+
+
+### Microsoft.Gaming.XboxPC.Reliability
+
+No content is currently available.
+
+The following fields are available:
+
+- **extendedData**  No content is currently available.
+- **featureArea**  No content is currently available.
+- **scenarioName**  No content is currently available.
+
+
+### Microsoft.Gaming.XboxPC.SessionStarted
+
+No content is currently available.
+
+The following fields are available:
+
+- **extendedData**  No content is currently available.
+
+
+### Microsoft.Gaming.Xvdd.ContentUpdate
+
+No content is currently available.
+
+The following fields are available:
+
+- **ApplyEndTime**  No content is currently available.
+- **ApplyStartTime**  No content is currently available.
+- **CalculateEndTime**  No content is currently available.
+- **CalculateStartTime**  No content is currently available.
+- **ContentPath**  No content is currently available.
+- **ContentUpdateVersion**  No content is currently available.
+- **DiagnosticCode**  No content is currently available.
+- **DiagnosticParam1**  No content is currently available.
+- **DiagnosticParam2**  No content is currently available.
+- **DiagnosticParam3**  No content is currently available.
+- **DiagnosticParam4**  No content is currently available.
+- **DiagnosticParam5**  No content is currently available.
+- **EndTime**  No content is currently available.
+- **ErrorSource**  No content is currently available.
+- **ExtentsPostUpdate**  No content is currently available.
+- **ExtentsPreUpdate**  No content is currently available.
+- **Flags**  No content is currently available.
+- **FragmentCount**  No content is currently available.
+- **FragmentedAllocations**  No content is currently available.
+- **FreeSpace**  No content is currently available.
+- **NewPackageVersion**  No content is currently available.
+- **NewXvcPath**  No content is currently available.
+- **OldPackageVersion**  No content is currently available.
+- **OldXvcPath**  No content is currently available.
+- **ReturnCode**  No content is currently available.
+- **StartTime**  No content is currently available.
+- **UpdateSize**  No content is currently available.
+- **UpdateSizeV1**  No content is currently available.
+- **UpdatesPerformed**  No content is currently available.
+
+
+### Microsoft.Surface.Mcu.Prod.CriticalLog
+
+No content is currently available.
+
+The following fields are available:
+
+- **CrashLog**  No content is currently available.
+- **criticalLogSize**  No content is currently available.
+- **CUtility::GetTargetNameA(target)**  No content is currently available.
+- **CUtility::GetTargetNameA(Target)**  No content is currently available.
+- **productId**  No content is currently available.
+- **uniqueId**  No content is currently available.
+
 
 ### Microsoft.Windows.Defender.Engine.Maps.Heartbeat
 
@@ -2315,6 +2931,47 @@ The following fields are available:
 - **SignatureRing**  Signature ring used for deployments
 - **SigVersion**  Version of signature VDMs
 
+
+### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateFveAction
+
+No content is currently available.
+
+The following fields are available:
+
+- **Action**  No content is currently available.
+- **hr**  No content is currently available.
+
+
+### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateStarted
+
+No content is currently available.
+
+The following fields are available:
+
+- **AvailableUpdates**  No content is currently available.
+- **SecureBootUpdateCaller**  No content is currently available.
+
+
+### Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.GetUserAccountState
+
+No content is currently available.
+
+The following fields are available:
+
+- **CassService**  No content is currently available.
+- **componentName**  No content is currently available.
+- **correlationVector**  No content is currently available.
+- **currentPageGroupId**  No content is currently available.
+- **currentPageId**  No content is currently available.
+- **experienceId**  No content is currently available.
+- **experienceVersion**  No content is currently available.
+- **isExperienceInbox**  No content is currently available.
+- **pageId**  No content is currently available.
+- **pageSessionId**  No content is currently available.
+- **processSessionId**  No content is currently available.
+- **state**  No content is currently available.
+
+
 ### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantStartState
 
 This event marks the start of an Update Assistant State. The data collected with this event is used to help keep Windows up to date.
@@ -2331,10 +2988,622 @@ The following fields are available:
 - **UpdateAssistantVersion**  Current package version of UpdateAssistant.
 
 
+### Microsoft.Windows.Xbox.GIP.DeviceDisconnected
+
+No content is currently available.
+
+The following fields are available:
+
+- **ActiveVM**  No content is currently available.
+- **AttachedDeviceId**  No content is currently available.
+- **BatteryLevel**  No content is currently available.
+- **ConnectionDuration**  No content is currently available.
+- **ConnectionType**  No content is currently available.
+- **CurrentChannel**  No content is currently available.
+- **DawnTerminationCode**  No content is currently available.
+- **Enable2Dot4GHz**  No content is currently available.
+- **EventSequence**  No content is currently available.
+- **FlightingFlags**  No content is currently available.
+- **FWVersionBuild**  No content is currently available.
+- **FWVersionMajor**  No content is currently available.
+- **FWVersionMinor**  No content is currently available.
+- **FWVersionRevision**  No content is currently available.
+- **HWVersionMajor**  No content is currently available.
+- **HWVersionMinor**  No content is currently available.
+- **MainDeviceId**  No content is currently available.
+- **NumWirelessDevices**  No content is currently available.
+- **PDescription**  No content is currently available.
+- **PDriverBuild**  No content is currently available.
+- **PDriverMajor**  No content is currently available.
+- **PDriverMinor**  No content is currently available.
+- **PDriverRevision**  No content is currently available.
+- **PFirmwareBuild**  No content is currently available.
+- **PFirmwareMajor**  No content is currently available.
+- **PFirmwareMinor**  No content is currently available.
+- **PFirmwareRevision**  No content is currently available.
+- **PID**  No content is currently available.
+- **Reason**  No content is currently available.
+- **Region**  No content is currently available.
+- **SessionId**  No content is currently available.
+- **VID**  No content is currently available.
+- **WFDChannel**  No content is currently available.
+- **WiFiChannel**  No content is currently available.
+
+
+### Microsoft.Xbox.Multiplayer.Bumblelion.ErrorStats
+
+No content is currently available.
+
+The following fields are available:
+
+- **ClientInstanceId**  No content is currently available.
+- **DurationInMs**  No content is currently available.
+- **ErrorData**  No content is currently available.
+
+
+### Microsoft.Xbox.Multiplayer.Bumblelion.InitializeSucceeded
+
+No content is currently available.
+
+The following fields are available:
+
+- **BuildId**  No content is currently available.
+- **BuildPlatformType**  No content is currently available.
+- **ClientInstanceId**  No content is currently available.
+- **IsUsingCustomMemoryCallbacks**  No content is currently available.
+- **TitleId**  No content is currently available.
+
+
+### Microsoft.Xbox.Multiplayer.Bumblelion.OnQosCompleted
+
+No content is currently available.
+
+The following fields are available:
+
+- **ClientInstanceId**  The client-generated globally unique identifier of this instance of Bumblelion.
+- **ErrorDetail**  The PartyError detail code provided to the game as a result of the QoS operation.
+- **Hostnames**  A semicolon-delimited list of QoS server hostNames.
+- **IpAddresses**  A semicolon-delimited list of QoS server IP addresses.
+- **LatenciesInMilliseconds**  A semicolon-delimited list of median latencies across all pings to a given QoS server, in milliseconds.
+- **PingErrorCodes**  A semicolon-delimited list of the last error code encountered while pinging each QoS server.
+- **PingFailureCounts**  A semicolon-delimited list of failed ping counts to each QoS server.
+- **PingFailureDueToTimeoutCounts**  A semicolon-delimited list of timed-out ping counts to each QoS server.
+- **PingSuccessCounts**  A semicolon-delimited list of successful ping counts to each QoS server.
+- **RegionCount**  The number of regions.
+- **RegionNames**  A semicolon-delimited list of region names.
+- **StateChangeResult**  The PartyStateChangeResult provided to the game as a result of the QoS operation.
+- **TimeToGetRegionListInMilliseconds**  The time it took to get the region list, in milliseconds.
+- **TimeToMeasureLatencyInMilliseconds**  The time it took to measure latency to all regions, in milliseconds.
+
+
+### Microsoft.Xbox.Multiplayer.PlayFabMultiplayer.InitializeSucceeded
+
+No content is currently available.
+
+The following fields are available:
+
+- **BuildId**  No content is currently available.
+- **BuildPlatformType**  No content is currently available.
+- **ClientInstanceId**  No content is currently available.
+- **IsUsingCustomMemoryCallbacks**  No content is currently available.
+- **PlayFabTitleId**  No content is currently available.
+- **XboxLiveSandboxId**  No content is currently available.
+- **XboxTitleId**  No content is currently available.
+
+
+### Microsoft.Xbox.Shell.ShellUiService.Purchase_BigIdFromXboxOfferTokenNotFound
+
+No content is currently available.
+
+The following fields are available:
+
+- **error**  No content is currently available.
+- **signedOffer**  No content is currently available.
+- **xboxOfferToken**  No content is currently available.
+
+
 ### MicrosoftWindowsCodeIntegrityTraceLoggingProvider.CodeIntegrityHvciSysprepHvciAlreadyEnabled
 
 This event fires when HVCI is already enabled so no need to continue auto-enablement.
 
+
+
+### SFR.DeviceAccWirelessReset
+
+No content is currently available.
+
+The following fields are available:
+
+- **FailedToRecover**  No content is currently available.
+- **ResetCount**  No content is currently available.
+
+
+### SFR.DeviceDataCapture
+
+No content is currently available.
+
+The following fields are available:
+
+- **Data**  No content is currently available.
+- **EventSequence**  No content is currently available.
+- **MainDeviceId**  No content is currently available.
+- **SessionID**  No content is currently available.
+
+
+### SFR.DeviceDisconnected
+
+No content is currently available.
+
+The following fields are available:
+
+- **ActiveVM**  No content is currently available.
+- **AttachedDeviceId**  No content is currently available.
+- **BatteryLevel**  No content is currently available.
+- **ConnectionDuration**  No content is currently available.
+- **ConnectionType**  No content is currently available.
+- **CurrentChannel**  No content is currently available.
+- **DawnTerminationCode**  No content is currently available.
+- **EventSequence**  No content is currently available.
+- **FlightingFlags**  No content is currently available.
+- **FWVersionBuild**  No content is currently available.
+- **FWVersionMajor**  No content is currently available.
+- **FWVersionMinor**  No content is currently available.
+- **FWVersionRevision**  No content is currently available.
+- **HWVersionMajor**  No content is currently available.
+- **HWVersionMinor**  No content is currently available.
+- **MainDeviceId**  No content is currently available.
+- **NumWirelessDevices**  No content is currently available.
+- **PDescription**  No content is currently available.
+- **PDriverBuild**  No content is currently available.
+- **PDriverMajor**  No content is currently available.
+- **PDriverMinor**  No content is currently available.
+- **PDriverRevision**  No content is currently available.
+- **PFirmwareBuild**  No content is currently available.
+- **PFirmwareMajor**  No content is currently available.
+- **PFirmwareMinor**  No content is currently available.
+- **PFirmwareRevision**  No content is currently available.
+- **PID**  No content is currently available.
+- **Reason**  No content is currently available.
+- **Region**  No content is currently available.
+- **SessionId**  No content is currently available.
+- **TitleId**  No content is currently available.
+- **VID**  No content is currently available.
+- **WFDChannel**  No content is currently available.
+- **WiFiChannel**  No content is currently available.
+
+
+### SFR.DeviceExtendedStatus
+
+No content is currently available.
+
+The following fields are available:
+
+- **EventSequence**  No content is currently available.
+- **MainDeviceID**  No content is currently available.
+- **Payload**  No content is currently available.
+- **SessionID**  No content is currently available.
+- **StatusType**  No content is currently available.
+
+
+### SFR.DeviceFirmwareUpdate
+
+No content is currently available.
+
+The following fields are available:
+
+- **AttachedDeviceId**  No content is currently available.
+- **AttachedHwVersionMajor**  No content is currently available.
+- **AttachedHwVersionMinor**  No content is currently available.
+- **AttachedPID**  No content is currently available.
+- **AttachedVersionBuild**  No content is currently available.
+- **AttachedVersionMajor**  No content is currently available.
+- **AttachedVersionMinor**  No content is currently available.
+- **AttachedVersionRevision**  No content is currently available.
+- **AttachedVID**  No content is currently available.
+- **BytesRead**  No content is currently available.
+- **BytesWritten**  No content is currently available.
+- **ComponentsAvailableMask**  No content is currently available.
+- **ComponentsUpdatedMask**  No content is currently available.
+- **ComponentsUpToDateMask**  No content is currently available.
+- **ConnectionType**  No content is currently available.
+- **EventSequence**  No content is currently available.
+- **FailedComponentId**  No content is currently available.
+- **FailureLineUfu**  No content is currently available.
+- **GipRemoveReason**  No content is currently available.
+- **LasGipToLibResponse**  No content is currently available.
+- **LastAddress**  No content is currently available.
+- **LastLibToGipCmd**  No content is currently available.
+- **LastProgress**  No content is currently available.
+- **LastUfuCommand**  No content is currently available.
+- **LastUfuResponse**  No content is currently available.
+- **LastWin32Error**  No content is currently available.
+- **MainDeviceId**  No content is currently available.
+- **MainDeviceUpdate**  No content is currently available.
+- **MainHwVersionMajor**  No content is currently available.
+- **MainHwVersionMinor**  No content is currently available.
+- **MainPID**  No content is currently available.
+- **MainVersionBuild**  No content is currently available.
+- **MainVersionMajor**  No content is currently available.
+- **MainVersionMinor**  No content is currently available.
+- **MainVersionRevision**  No content is currently available.
+- **MainVID**  No content is currently available.
+- **MaxWaitForHelloAfterReset**  No content is currently available.
+- **MaxWaitForReset**  No content is currently available.
+- **SessionId**  No content is currently available.
+- **TargetVersionBuild**  No content is currently available.
+- **TargetVersionMajor**  No content is currently available.
+- **TargetVersionMinor**  No content is currently available.
+- **TargetVersionRevision**  No content is currently available.
+- **TotalBytes**  No content is currently available.
+- **UnexpectedDisconnects**  No content is currently available.
+- **UnexpectedHellos**  No content is currently available.
+- **UpdateDuration**  No content is currently available.
+- **UpdateProtocolVersion**  No content is currently available.
+- **UpdateStatus**  No content is currently available.
+
+
+### SFR.DeviceSecurity
+
+No content is currently available.
+
+The following fields are available:
+
+- **AuthDuration**  No content is currently available.
+- **AuthLeadTime**  No content is currently available.
+- **DevAuthClass**  No content is currently available.
+- **DevAuthProtocolVersion**  No content is currently available.
+- **DevAuthSubClass**  No content is currently available.
+- **DevAuthVersion**  No content is currently available.
+- **DevAuthVersionSpecificData**  No content is currently available.
+- **EventSequence**  No content is currently available.
+- **MainDeviceId**  No content is currently available.
+- **SecurityIterations**  No content is currently available.
+- **SecurityPass**  No content is currently available.
+- **SessionId**  No content is currently available.
+
+
+### SFR.DeviceSerialNumber
+
+No content is currently available.
+
+The following fields are available:
+
+- **EventSequence**  No content is currently available.
+- **MainDeviceId**  No content is currently available.
+- **OriginalSize**  No content is currently available.
+- **PID**  No content is currently available.
+- **SerialNumber**  No content is currently available.
+- **SessionId**  No content is currently available.
+- **Truncated**  No content is currently available.
+- **VID**  No content is currently available.
+
+
+### SFR.DisplayUnderflow
+
+No content is currently available.
+
+The following fields are available:
+
+- **NumLogs**  No content is currently available.
+- **UnderflowLogs**  No content is currently available.
+- **Version**  No content is currently available.
+
+
+### SFR.HardwareInfo
+
+No content is currently available.
+
+The following fields are available:
+
+- **IsNoOddSku**  No content is currently available.
+- **IsServerSku**  No content is currently available.
+- **SmcFirmwareId**  No content is currently available.
+- **SocConfigId**  No content is currently available.
+- **SocFamily**  No content is currently available.
+- **SocModel**  No content is currently available.
+- **SystemType**  No content is currently available.
+
+
+### SFR.HardwareTelemetry
+
+No content is currently available.
+
+The following fields are available:
+
+- **FanSpeed**  No content is currently available.
+- **FanTach**  No content is currently available.
+- **MemIoPower**  No content is currently available.
+- **MemPhyPower**  No content is currently available.
+- **NbCorePower**  No content is currently available.
+- **PStateCPU**  No content is currently available.
+- **PStateGPU**  No content is currently available.
+- **PStateNB**  No content is currently available.
+- **SbRawTemp**  No content is currently available.
+- **SraCurrentAppId**  No content is currently available.
+- **Temperature00**  No content is currently available.
+- **Temperature01**  No content is currently available.
+- **Temperature02**  No content is currently available.
+- **Temperature03**  No content is currently available.
+- **Temperature04**  No content is currently available.
+- **Temperature05**  No content is currently available.
+- **Temperature06**  No content is currently available.
+- **Temperature07**  No content is currently available.
+- **Temperature08**  No content is currently available.
+- **Temperature09**  No content is currently available.
+- **Temperature10**  No content is currently available.
+- **Temperature11**  No content is currently available.
+- **Temperature12**  No content is currently available.
+- **Temperature13**  No content is currently available.
+- **Temperature14**  No content is currently available.
+- **Temperature15**  No content is currently available.
+- **Temperature16**  No content is currently available.
+- **Temperature17**  No content is currently available.
+- **Temperature18**  No content is currently available.
+- **Temperature19**  No content is currently available.
+- **Temperature20**  No content is currently available.
+- **Temperature21**  No content is currently available.
+- **Temperature22**  No content is currently available.
+- **Temperature23**  No content is currently available.
+- **Temperature24**  No content is currently available.
+- **Temperature25**  No content is currently available.
+- **Temperature26**  No content is currently available.
+- **Temperature27**  No content is currently available.
+- **Temperature28**  No content is currently available.
+- **Temperature29**  No content is currently available.
+- **Temperature30**  No content is currently available.
+- **Temperature31**  No content is currently available.
+- **TitleConstrained**  No content is currently available.
+- **TitleId**  No content is currently available.
+- **TitleRunning**  No content is currently available.
+- **VCpuCorePower**  No content is currently available.
+- **VCpuGfxTemp**  No content is currently available.
+- **VGfxCorePower**  No content is currently available.
+- **VMemIoPhyTemp**  No content is currently available.
+
+
+### SFR.HardwareTelemetryXCOS
+
+No content is currently available.
+
+The following fields are available:
+
+- **Core0Mhz**  No content is currently available.
+- **Core0Temp**  No content is currently available.
+- **Core1Mhz**  No content is currently available.
+- **Core1Temp**  No content is currently available.
+- **CurrentEnergy**  No content is currently available.
+- **FanRpm**  No content is currently available.
+- **GraphicsTemp**  No content is currently available.
+- **MaxTemp**  No content is currently available.
+- **MinTemp**  No content is currently available.
+- **PackagePower**  No content is currently available.
+- **PackageTemp**  No content is currently available.
+- **SraCurrentAppId**  No content is currently available.
+- **ThermalMargin**  No content is currently available.
+- **TjMaxTccOffset**  No content is currently available.
+
+
+### SFR.HostOutOfMemory
+
+This event is logged by various host components when a low resource failure is encountered.
+
+The following fields are available:
+
+- **AllocationFailures**  Count of pool allocation failures in the host.
+- **AvailablePages**  Pages available in the host.
+- **Identifier**  Location specific identifier.
+- **Location**  Identifies the location of the failure - 0 is XVDD IO.
+- **NumAllocs1**  Number of allocations for highest pool consumer.
+- **NumAllocs2**  Number of allocations for second highest pool consumer.
+- **NumAllocs3**  Number of allocations for third highest pool consumer.
+- **NumAllocs4**  Number of allocations for fourth highest pool consumer.
+- **NumAllocs5**  Number of allocations for fifth highest pool consumer.
+- **NumAllocs6**  Number of allocations for sixth highest pool consumer.
+- **NumBytes1**  Number of bytes allocated for highest pool consumer.
+- **NumBytes2**  Number of bytes allocated for second highest pool consumer.
+- **NumBytes3**  Number of bytes allocated for third highest pool consumer.
+- **NumBytes4**  Number of bytes allocated for fourth highest pool consumer.
+- **NumBytes5**  Number of bytes allocated for fifth highest pool consumer.
+- **NumBytes6**  Number of bytes allocated for sixth highest pool consumer.
+- **PoolTag1**  Tag for highest pool consumer.
+- **PoolTag2**  Tag for second highest pool consumer.
+- **PoolTag3**  Tag for third highest pool consumer.
+- **PoolTag4**  Tag for fourth highest pool consumer.
+- **PoolTag5**  Tag for fifth highest pool consumer.
+- **PoolTag6**  Tag for sixth highest pool consumer.
+
+
+### SFR.NandDefragFailed
+
+No content is currently available.
+
+The following fields are available:
+
+- **Context**  No content is currently available.
+- **CrdPath**  No content is currently available.
+- **FailureCount**  No content is currently available.
+- **PackageVersion**  No content is currently available.
+- **PrimaryStatus**  No content is currently available.
+- **RegionId**  No content is currently available.
+- **RegionOffset**  No content is currently available.
+- **RegionSize**  No content is currently available.
+- **SecondaryStatus**  No content is currently available.
+
+
+### SFR.NandDefragSubmitFailed
+
+Fires when the XVDD driver fails to submit a NAND defrag request to the NVMe driver. Event includes failure details.
+
+The following fields are available:
+
+- **CrdPath**  The CRD path of the XVC being defragmented.
+- **DiagnosticCode**  Diagnostic information for this failure.
+- **DiagnosticParam1**  Diagnostic information for this failure.
+- **DiagnosticParam2**  Diagnostic information for this failure.
+- **DiagnosticParam3**  Diagnostic information for this failure.
+- **FailureCount**  The number of defrag failures encountered for the region.
+- **PackageVersion**  The package version number of the XVC being defragmented.
+- **RegionId**  The ID of the region.
+- **RegionOffset**  The byte offset of the region within the XVC.
+- **RegionSize**  The size in bytes of the region.
+- **Status**  The NTSTATUS of the submit attempt.
+
+
+### SFR.SmcPersistStats
+
+No content is currently available.
+
+The following fields are available:
+
+- **BootRetries**  No content is currently available.
+- **ErrorCountCecRxAckCollision**  No content is currently available.
+- **ErrorCountCecRxMaxCycErr**  No content is currently available.
+- **ErrorCountCecRxMinCycErr**  No content is currently available.
+- **ErrorCountCecRxOverrun**  No content is currently available.
+- **ErrorCountCecRxWaveForm**  No content is currently available.
+- **ErrorCountCecTxAckErr**  No content is currently available.
+- **ErrorCountCecTxArbLost**  No content is currently available.
+- **ErrorCountCecTxUnderrun**  No content is currently available.
+- **ErrorCountFatal**  No content is currently available.
+- **ErrorCountOsTherm**  No content is currently available.
+- **ErrorCountPspFatal**  No content is currently available.
+- **ErrorCountPspFatalThermal**  No content is currently available.
+- **ErrorCountPspUnexpectedBootAck**  No content is currently available.
+- **ErrorCountSmcBoot**  No content is currently available.
+- **ErrorCountSmcRuntime**  No content is currently available.
+- **ErrorCountSmcThermActive**  No content is currently available.
+- **ErrorCountSmcThermQuiet**  No content is currently available.
+- **ErrorCountSmcThermVreg**  No content is currently available.
+- **ErrorCountSocThermTrip**  No content is currently available.
+- **ErrorCountSyncFlood**  No content is currently available.
+- **ErrorCountThermal**  No content is currently available.
+- **HspTdr0**  No content is currently available.
+- **HspTdr1**  No content is currently available.
+- **HspTdr2**  No content is currently available.
+- **InitialBootEntries**  No content is currently available.
+- **InitialBootRetries**  No content is currently available.
+- **NormalBootTerminate**  No content is currently available.
+- **PsdSleep**  No content is currently available.
+- **PsdStandby**  No content is currently available.
+- **PsdUiActive**  No content is currently available.
+- **PsdUiInactive**  No content is currently available.
+- **PstResetCold**  No content is currently available.
+- **PstSmcPowerOnReset**  No content is currently available.
+- **PstSmcReload**  No content is currently available.
+- **PstSmcWatchdogTimer**  No content is currently available.
+- **PstUiActiveEntries**  No content is currently available.
+- **SmcReloadsSkipped**  No content is currently available.
+
+
+### SFR.SpatialAudioAutoLicense
+
+No content is currently available.
+
+The following fields are available:
+
+- **MainDeviceId**  No content is currently available.
+- **SessionId**  No content is currently available.
+- **SpatialAudioAutoLicenseKey**  No content is currently available.
+
+
+### SFR.VmCrash
+
+No content is currently available.
+
+The following fields are available:
+
+- **BugcheckCode**  No content is currently available.
+- **BugcheckParameter0**  No content is currently available.
+- **BugcheckParameter1**  No content is currently available.
+- **BugcheckParameter2**  No content is currently available.
+- **BugcheckParameter3**  No content is currently available.
+- **TitleId**  No content is currently available.
+
+
+### SFR.Xdump
+
+No content is currently available.
+
+The following fields are available:
+
+- **BugCheckCode**  No content is currently available.
+- **BugCheckParameter1**  No content is currently available.
+- **BugCheckParameter2**  No content is currently available.
+- **BugCheckParameter3**  No content is currently available.
+- **BugCheckParameter4**  No content is currently available.
+- **Capabilities0**  No content is currently available.
+- **Capabilities1**  No content is currently available.
+- **CrashOsBuildMachine**  No content is currently available.
+- **CrashOsFlavor**  No content is currently available.
+- **CrashOsId**  No content is currently available.
+- **CrashTime**  No content is currently available.
+- **CurrentAppTitleId**  No content is currently available.
+- **DumpData**  No content is currently available.
+- **DumpInformation**  No content is currently available.
+- **DumpProgressSummary**  No content is currently available.
+- **DumpStatus**  No content is currently available.
+- **ExportSymbol**  No content is currently available.
+- **Flags**  No content is currently available.
+- **HostMemoryAvailable**  No content is currently available.
+- **HostOsBuildMachine**  No content is currently available.
+- **HostOsFlavor**  No content is currently available.
+- **HostOsId**  No content is currently available.
+- **HostPoolAllocationFailures**  No content is currently available.
+- **HvMemoryAvailable**  No content is currently available.
+- **ModuleName**  No content is currently available.
+- **PowerButtonHandlerPressed**  No content is currently available.
+- **PowerButtonHandlerReady**  No content is currently available.
+- **PowerState**  No content is currently available.
+- **SuspendResumeState**  No content is currently available.
+- **SystemType**  No content is currently available.
+- **Uptime**  No content is currently available.
+- **VmId**  No content is currently available.
+
+
+### SFR.XhvCrash
+
+No content is currently available.
+
+The following fields are available:
+
+- **BugcheckCode**  No content is currently available.
+- **BugcheckParameter0**  No content is currently available.
+- **BugcheckParameter1**  No content is currently available.
+- **BugcheckParameter2**  No content is currently available.
+- **BugcheckParameter3**  No content is currently available.
+- **ProgramCounter**  No content is currently available.
+
+
+### SFR.XvdStreamingStart
+
+This event indicates that the XVDD streaming engine encountered an error when attempting to start streaming.
+
+The following fields are available:
+
+- **CachePath**  Path of the streaming cache source.
+- **DiagnosticCode**  Additional code used for diagnosing StreamingStart failures.
+- **DiagnosticParam1**  Additional diagnostic data. Value depends on the diagnostic code.
+- **DiagnosticParam2**  Additional diagnostic data. Value depends on the diagnostic code.
+- **DiagnosticParam3**  Additional diagnostic data. Value depends on the diagnostic code.
+- **DstPath**  Path of the streaming destination.
+- **SrcPath**  Path of the streaming source.
+- **Status**  Status code result of the operation.
+
+
+### SFR.XvdStreamingStats
+
+No content is currently available.
+
+The following fields are available:
+
+- **CrdPath**  No content is currently available.
+- **FsDefragBytes**  No content is currently available.
+- **FsDefragDuration**  No content is currently available.
+- **NandDefragBytes**  No content is currently available.
+- **NandDefragDuration**  No content is currently available.
+- **StreamedBytes**  No content is currently available.
+- **StreamedRegions**  No content is currently available.
+- **StreamingDuration**  No content is currently available.
 
 
 ### ShellWNSRegistration.SLSChannelRegistrationFailed
@@ -2384,6 +3653,72 @@ The following fields are available:
 - **RetryAttempt**  The retry attempt number for attempting to open and register the channel.
 - **RetryTimeInMilliseconds**  The amount of time taken to retry the channel request in milliseconds.
 
+
+### SocialNotifications.OpenChannelFail
+
+No content is currently available.
+
+The following fields are available:
+
+- **AppId**  No content is currently available.
+- **baseData**  No content is currently available.
+- **baseType**  No content is currently available.
+- **ErrorContext**  No content is currently available.
+- **ErrorTitle**  No content is currently available.
+- **HResult**  No content is currently available.
+- **IsDisplayed**  No content is currently available.
+
+
+### SocialNotifications.OpenChannelSuccess
+
+No content is currently available.
+
+The following fields are available:
+
+- **AUMID**  No content is currently available.
+
+
+### SystemUI.PurchaseFlowErrorTracker
+
+No content is currently available.
+
+The following fields are available:
+
+- **baseData**  No content is currently available.
+- **baseType**  No content is currently available.
+
+
+### WindowsXboxTVDeviceLookup.IRHardwareActivation
+
+No content is currently available.
+
+The following fields are available:
+
+- **baseData**  No content is currently available.
+- **baseType**  No content is currently available.
+
+
+### XboxSystemFlightRecorder.SmcErrorLog
+
+This event collects critical log files related to Xbox hardware failures.
+
+The following fields are available:
+
+- **PartAReplace_Time**  No content is currently available.
+- **SmcerrLog**  Binary payload of the error log from the Xbox console.
+
+
+### XboxUpdate.NewSystemBoot
+
+This event indicates a new first boot into the system OS.
+
+The following fields are available:
+
+- **BuildMachineTagEx**  No content is currently available.
+- **CurrentInstallId**  No content is currently available.
+- **CurrentUpdateId**  No content is currently available.
+- **IntendedInstallId**  No content is currently available.
+- **PreviousCommittedInstallId**  No content is currently available.
 
 
 ## Privacy consent logging events
@@ -3592,6 +4927,8 @@ The following fields are available:
 
 Ensures Windows Updates are secure and complete. Event helps to identify whether update content has been tampered with and protects against man-in-the-middle attack.
 
+The following fields are available:
+
 - **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
 - **EndpointUrl**  Ensures Windows Updates are secure and complete. Event helps to identify whether update content has been tampered with and protects against man-in-the-middle attack.
 - **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode wasn't specific enough.
@@ -3656,3 +4993,6 @@ The following fields are available:
 - **SessionId**  The UpdateAgent “SessionId” value.
 - **UpdateId**  Unique identifier for the Update.
 - **WuId**  Unique identifier for the Windows Update client.
+
+
+
