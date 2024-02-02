@@ -1,12 +1,6 @@
 items:
 - name: Overview
   href: kiosk-methods.md
-- name: Quickstarts
-  items:
-    - name: Configure a kiosk experience
-      href: quickstart-single-app.md
-    - name: Configure a restricted user experience
-      href: quickstart-multi-app.md
 - name: Prepare a device for kiosk configuration
   href: kiosk-prepare.md
 - name: Set up digital signs

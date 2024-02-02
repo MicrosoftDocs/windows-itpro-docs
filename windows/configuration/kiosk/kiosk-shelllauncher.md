@@ -7,10 +7,10 @@ ms.date: 12/31/2017
 
 # Use Shell Launcher to create a Windows client kiosk
 
-Shell Launcher is a Windows feature that can enable a device to execute an application as the user interface, replacing the default shell (`explorer.exe`).
+Shell Launcher is a Windows feature that executes an application as the user interface, replacing the default Windows Explorer (`explorer.exe`).
 
 >[!NOTE]
->Shell Launcher controls which application the user sees as the shell after sign-in. It does not prevent the user from accessing other desktop applications and system components.
+>Shell Launcher controls which application the user sees as the shell after sign-in. It doesn't prevent the user from accessing other desktop applications and system components.
 >
 >Methods of controlling access to other desktop applications and system components can be used in addition to using the Shell Launcher. These methods include, but are not limited to:
 >- [Group Policy](https://www.microsoft.com/download/details.aspx?id=25250) - example: Prevent access to registry editing tools
@@ -19,11 +19,7 @@ Shell Launcher is a Windows feature that can enable a device to execute an appli
 
 You can apply a custom shell through Shell Launcher [by using PowerShell](#configure-a-custom-shell-using-powershell). Starting with Windows 10 version 1803+, you can also [use mobile device management (MDM)](#configure-a-custom-shell-in-mdm) to apply a custom shell through Shell Launcher.
 
-## Differences between Shell Launcher v1 and Shell Launcher v2
-
-Shell Launcher v1 replaces `explorer.exe`, the default shell, with `eshell.exe` which can launch a Windows desktop application.
-
-Shell Launcher v2 replaces `explorer.exe` with `customshellhost.exe`. This new executable file can launch a Windows desktop application or a UWP app.
+Shell Launcher replaces `explorer.exe` with `customshellhost.exe`. This executable file can launch a Windows desktop application or a UWP app.
 
 In addition to allowing you to use a UWP app for your replacement shell, Shell Launcher v2 offers additional enhancements:
 
