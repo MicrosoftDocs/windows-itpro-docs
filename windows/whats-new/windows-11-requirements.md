@@ -52,7 +52,10 @@ For more information about tools to evaluate readiness, see [Determine eligibili
 
 ## OS requirements
 
-Eligible Windows 10 devices must be on version 2004 or later, and have installed the September 14, 2021 security update or later, to upgrade directly to Windows 11.
+To upgrade directly to Windows 11, eligible Windows 10 devices must meet both of the following criteria:
+
+- Running Windows 10, version 2004 or later.
+- Installed the September 14, 2021 security update or later.
 
 > [!NOTE]
 >
@@ -68,7 +71,6 @@ Some features in Windows 11 have requirements beyond the minimum [hardware requi
 - **Auto HDR**: requires an HDR monitor.
 - **BitLocker to Go**: requires a USB flash drive. This feature is available in Windows Pro and above editions.
 - **Client Hyper-V**: requires a processor with second-level address translation (SLAT) capabilities. This feature is available in Windows Pro editions and greater.
-- **Cortana**: requires a microphone and speaker and is currently available on Windows 11 for Australia, Brazil, Canada, China, France, Germany, India, Italy, Japan, Mexico, Spain, United Kingdom, and United States.
 - **DirectStorage**: requires an NVMe SSD to store and run games that use the Standard NVM Express Controller driver and a DirectX12 GPU with Shader Model 6.0 support.
 - **DirectX 12 Ultimate**: available with supported games and graphics chips.
 - **Presence**: requires sensor that can detect human distance from device or intent to interact with device.

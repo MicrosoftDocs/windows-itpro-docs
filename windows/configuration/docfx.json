@@ -55,10 +55,10 @@
       },
       "titleSuffix": "Configure Windows",
       "contributors_to_exclude": [
-        "rjagiewich", 
-        "traya1", 
-        "rmca14", 
-        "claydetels19", 
+        "rjagiewich",
+        "traya1",
+        "rmca14",
+        "claydetels19",
         "jborsecnik",
         "tiburd",
         "garycentric",
@@ -71,8 +71,7 @@
     },
     "fileMetadata": {
       "feedback_system": {
-        "ue-v/**/*.*": "None",
-        "cortana-at-work/**/*.*": "None"
+        "ue-v/**/*.*": "None"
       }
     },
     "template": [],

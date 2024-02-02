@@ -229,7 +229,7 @@ An issue, known as _SMBLoris_, which could result in denial of service, has been
 
 Windows Defender Security Center is now called **Windows Security Center**.
 
-You can still get to the app in all the usual ways. Ask Cortana to open Windows Security Center(WSC) or interact with the taskbar icon. WSC lets you manage all your security needs, including **Microsoft Defender Antivirus** and **Windows Defender Firewall**.
+You can still get to the app in all the usual ways. WSC lets you manage all your security needs, including **Microsoft Defender Antivirus** and **Windows Defender Firewall**.
 
 The WSC service now requires antivirus products to run as a protected process to register. Products that haven't yet implemented this functionality won't appear in the Windows Security Center user interface, and Microsoft Defender Antivirus will remain enabled side-by-side with these products.
 
