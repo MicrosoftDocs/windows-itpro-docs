@@ -281,109 +281,109 @@
       "redirect_document_id": false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/cortana-at-work-feedback.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-feedback",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/cortana-at-work-feedback.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-feedback",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/cortana-at-work-o365.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-o365",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/cortana-at-work-o365.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-o365",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/cortana-at-work-overview.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-overview",
-     "redirect_document_id":false
-    },
-    { 
-     "source_path":"windows/configuration/cortana-at-work/cortana-at-work-policy-settings.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-policy-settings",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/cortana-at-work-overview.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-overview",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/cortana-at-work-scenario-1.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-scenario-1",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/cortana-at-work-policy-settings.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-policy-settings",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/cortana-at-work-scenario-2.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-scenario-2",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/cortana-at-work-scenario-1.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-scenario-1",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/cortana-at-work-scenario-3.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-scenario-3",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/cortana-at-work-scenario-2.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-scenario-2",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/cortana-at-work-scenario-4.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-scenario-4",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/cortana-at-work-scenario-3.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-scenario-3",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/cortana-at-work-scenario-5.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-scenario-5",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/cortana-at-work-scenario-4.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-scenario-4",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/cortana-at-work-scenario-6.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-scenario-6",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/cortana-at-work-scenario-5.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-scenario-5",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/cortana-at-work-scenario-7.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-scenario-7",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/cortana-at-work-scenario-6.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-scenario-6",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/cortana-at-work-testing-scenarios.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-testing-scenarios",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/cortana-at-work-scenario-7.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-scenario-7",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/cortana-at-work-voice-commands.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-voice-commands",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/cortana-at-work-testing-scenarios.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-testing-scenarios",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/set-up-and-test-cortana-in-windows-10.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/set-up-and-test-cortana-in-windows-10",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/cortana-at-work-voice-commands.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/cortana-at-work-voice-commands",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/testing-scenarios-using-cortana-in-business-org.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/testing-scenarios-using-cortana-in-business-org",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/set-up-and-test-cortana-in-windows-10.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/set-up-and-test-cortana-in-windows-10",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/test-scenario-1.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/test-scenario-1",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/testing-scenarios-using-cortana-in-business-org.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/testing-scenarios-using-cortana-in-business-org",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/test-scenario-2.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/test-scenario-2",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/test-scenario-1.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/test-scenario-1",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/test-scenario-3.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/test-scenario-3",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/test-scenario-2.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/test-scenario-2",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/test-scenario-4.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/test-scenario-4",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/test-scenario-3.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/test-scenario-3",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/test-scenario-5.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/test-scenario-5",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/test-scenario-4.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/test-scenario-4",
+      "redirect_document_id":false
     },
     {
-     "source_path":"windows/configuration/cortana-at-work/test-scenario-6.md",
-     "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/test-scenario-6",
-     "redirect_document_id":false
+      "source_path":"windows/configuration/cortana-at-work/test-scenario-5.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/test-scenario-5",
+      "redirect_document_id":false
+    },
+    {
+      "source_path":"windows/configuration/cortana-at-work/test-scenario-6.md",
+      "redirect_url":"/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/test-scenario-6",
+      "redirect_document_id":false
     },
     {
       "source_path": "windows/configuration/windows-diagnostic-data.md",
