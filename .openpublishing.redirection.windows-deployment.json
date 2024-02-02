@@ -187,7 +187,7 @@
     },
     {
       "source_path": "windows/deployment/update/change-history-for-update-windows-10.md",
-      "redirect_url": "/windows/deployment/deploy-whats-new",
+      "redirect_url": "/windows/deployment/",
       "redirect_document_id": false
     },
     {
@@ -754,7 +754,7 @@
       "source_path": "windows/deployment/do/mcc-enterprise-portal-deploy.md",
       "redirect_url": "/windows/deployment/do/mcc-enterprise-deploy",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows/deployment/windows-autopatch/deploy/index.md",
       "redirect_url": "/windows/deployment/windows-autopatch/deploy/windows-autopatch-admin-contacts",
@@ -1113,6 +1113,11 @@
     {
       "source_path": "windows/deployment/windows-autopilot/windows-autopilot.md",
       "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-whats-new.md",
+      "redirect_url": "/windows/deployment/",
       "redirect_document_id": false
     }
   ]
