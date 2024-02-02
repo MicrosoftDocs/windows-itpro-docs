@@ -56,8 +56,9 @@ You can start your file by pasting the following XML into an XML editor, and sav
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
-
-  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
+  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+  xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+  xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
     <Profiles>
         <Profile Id="">
             <AllAppsList>
