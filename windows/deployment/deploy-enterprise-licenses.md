@@ -71,8 +71,6 @@ To update contact information and resend the activation email, use the following
 
 For more information, see [Review requirements on devices](#review-requirements-on-devices), later in this article.
 
-<a name='active-directory-synchronization-with-azure-ad'></a>
-
 ### Active Directory synchronization with Microsoft Entra ID
 
 If there is an on-premises Active Directory Domain Services (AD DS) domain, identities in the on-premises AD DS domain need to be synchronized with Microsoft Entra ID. This synchronization is required for users to have a _single identity_ that they can use to access their on-premises apps and cloud services that use Microsoft Entra ID. An example of a cloud service is Windows Enterprise E3 or E5.
@@ -90,21 +88,13 @@ For more information about integrating on-premises AD DS domains with Microsoft 
 
 ## Assigning licenses to users
 
-After the Windows subscription is ordered, an email is sent with guidance on how to use Windows as an online service:
-
-:::image type="content" source="images/al01.png" alt-text="An example email from Microsoft to complete the profile after purchasing Online Services through Microsoft Volume Licensing.":::
-
-The following methods are available to assign licenses:
+After the Windows subscription is ordered, an email is sent with guidance on how to use Windows as an online service. The following methods are available to assign licenses:
 
 - When the required Microsoft Entra subscription is available, [group-based licensing](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) is the preferred method to assign Enterprise E3 or E5 licenses to users.
 
-- Licenses can be manually assigned by signing into the Microsoft 365 admin center:
-
-    :::image type="content" source="images/al02.png" alt-text="A screenshot of the admin center, showing assignment of the Windows Enterprise E3 product license to a specific user.":::
-
-- Licenses can also be assigned by uploading a spreadsheet.
-
-- [Assign Microsoft 365 licenses to user accounts with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
+- Licenses can be manually assigned by signing into the [Microsoft 365 admin center](https://admin.microsoft.com/).
+- Licenses can be assigned by uploading a spreadsheet.
+- Licenses can be assigned via [PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
 
 ## Explore the upgrade experience
 
@@ -114,13 +104,9 @@ Now that a subscription is established and licenses are assigned to users, devic
 >
 > The following experiences are specific to Windows 10. The general concepts also apply to Windows 11.
 
-<a name='step-1-join-windows-pro-devices-to-azure-ad'></a>
-
 ### Step 1: Join Windows Pro devices to Microsoft Entra ID
 
 The first time the device starts, a Windows Pro device can join Microsoft Entra ID during setup. Existing devices can also join Microsoft Entra ID.
-
-<a name='join-a-device-to-azure-ad-the-first-time-the-device-is-started'></a>
 
 #### Join a device to Microsoft Entra ID the first time the device is started
 
@@ -143,8 +129,6 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
     Figure 4: The "Let's get you signed in" page in initial Windows 10 setup.
 
 Now the device is Microsoft Entra joined to the organization's subscription.
-
-<a name='join-a-device-to-azure-ad-when-the-device-is-already-set-up-with-windows-10-pro'></a>
 
 #### Join a device to Microsoft Entra ID when the device is already set up with Windows 10 Pro
 
@@ -175,8 +159,6 @@ Now the device is Microsoft Entra joined to the organization's subscription.
 ### Step 2: Pro edition activation
 
 If the device is running a supported version of Windows, it automatically activates Windows Enterprise edition using the firmware-embedded activation key.
-
-<a name='step-3-sign-in-using-azure-ad-account'></a>
 
 ### Step 3: Sign in using Microsoft Entra account
 
@@ -270,8 +252,6 @@ To determine if the computer has a firmware-embedded activation key, enter the f
 ```
 
 If the device has a firmware-embedded activation key, it's displayed in the output. If the output is blank, the device doesn't have a firmware embedded activation key. Most OEM-provided devices designed to run currently supported versions of Windows have a firmware-embedded key.
-
-<a name='determine-if-a-device-is-azure-ad-joined'></a>
 
 #### Determine if a device is Microsoft Entra joined
 

@@ -114,7 +114,7 @@ Windows 10 version 1703 includes a Windows 10 Enterprise E3 and E5 benefit to Mi
 
 Windows 10 Enterprise E3 launched in the Cloud Solution Provider (CSP) channel on September 1, 2016. Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Enterprise to their users. With Windows 10 Enterprise E3 in CSP, small and medium-sized organizations can more easily take advantage of Windows 10 Enterprise features.
 
-For more information, see [Windows 10 Enterprise E3 in CSP](windows-enterprise-e3-overview.md).
+For more information, see [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md).
 
 ## Deployment solutions and tools
 
