@@ -1119,6 +1119,11 @@
       "source_path": "windows/deployment/deploy-whats-new.md",
       "redirect_url": "/windows/deployment/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/Windows-AutoPilot-EULA-note.md",
+      "redirect_url": "/legal/windows/windows-autopilot-eula-note",
+      "redirect_document_id": false
     }
   ]
 }
