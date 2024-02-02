@@ -3962,69 +3962,6 @@ The following fields are available:
 
 ## Other events
 
-### GarrisonAppInstaller.ExceptionThrown
-
-No content is currently available.
-
-The following fields are available:
-
-- **exceptionType**  No content is currently available.
-- **HResult**  No content is currently available.
-- **innerExceptionHResult**  No content is currently available.
-- **message**  No content is currently available.
-- **source**  No content is currently available.
-- **stackTrace**  No content is currently available.
-
-
-### GarrisonAppInstaller.InstallComplete
-
-No content is currently available.
-
-The following fields are available:
-
-- **garrisonInstallTime**  No content is currently available.
-- **grtsInstallTime**  No content is currently available.
-- **installedAfterOsUpdate**  No content is currently available.
-- **timeInMilliseconds**  No content is currently available.
-
-
-### GarrisonAppInstaller.InstallerClosed
-
-No content is currently available.
-
-The following fields are available:
-
-- **activePage**  No content is currently available.
-
-
-### GarrisonAppInstaller.InstallTime
-
-No content is currently available.
-
-The following fields are available:
-
-- **installTime**  No content is currently available.
-- **productId**  No content is currently available.
-
-
-### GarrisonAppInstaller.PageAction
-
-No content is currently available.
-
-The following fields are available:
-
-- **destination**  No content is currently available.
-- **source**  No content is currently available.
-
-
-### GarrisonAppInstaller.UserAction
-
-No content is currently available.
-
-The following fields are available:
-
-- **userAction**  No content is currently available.
-
 
 ### Microsoft.Gaming.DevicesApp.Error
 
