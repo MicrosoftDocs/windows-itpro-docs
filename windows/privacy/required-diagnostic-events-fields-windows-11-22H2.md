@@ -2366,16 +2366,15 @@ The following fields are available:
 
 ### Microsoft.Surface.Mcu.Prod.CriticalLog
 
-No content is currently available.
+Error information from Surface device firmware.
 
 The following fields are available:
 
-- **CrashLog**  No content is currently available.
-- **criticalLogSize**  No content is currently available.
-- **CUtility::GetTargetNameA(target)**  No content is currently available.
-- **CUtility::GetTargetNameA(Target)**  No content is currently available.
-- **productId**  No content is currently available.
-- **uniqueId**  No content is currently available.
+- **CrashLog**  MCU crash log
+- **criticalLogSize** Log size
+- **CUtility::GetTargetNameA(target)**  Product identifier.
+- **productId**  Product identifier
+- **uniqueId**  Correlation ID that can be used with Watson to get more details about the failure.
 
 
 ### Microsoft.Windows.Defender.Engine.Maps.Heartbeat
@@ -2406,42 +2405,21 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateFveAction
 
-No content is currently available.
+Event that indicates BitLocker TPM reseal action was triggered during Secure boot update
 
 The following fields are available:
 
-- **Action**  No content is currently available.
-- **hr**  No content is currently available.
-
+- **Action**  Action string indicating place of failure
+- **hr**  Return HRESULT code
 
 ### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateStarted
 
-No content is currently available.
+Event that indicates secure boot update has started.
 
 The following fields are available:
 
-- **AvailableUpdates**  No content is currently available.
-- **SecureBootUpdateCaller**  No content is currently available.
-
-
-### Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.GetUserAccountState
-
-No content is currently available.
-
-The following fields are available:
-
-- **CassService**  No content is currently available.
-- **componentName**  No content is currently available.
-- **correlationVector**  No content is currently available.
-- **currentPageGroupId**  No content is currently available.
-- **currentPageId**  No content is currently available.
-- **experienceId**  No content is currently available.
-- **experienceVersion**  No content is currently available.
-- **isExperienceInbox**  No content is currently available.
-- **pageId**  No content is currently available.
-- **pageSessionId**  No content is currently available.
-- **processSessionId**  No content is currently available.
-- **state**  No content is currently available.
+- **AvailableUpdates**  Number of available secure boot updates.
+- **SecureBootUpdateCaller**  Enum value indicating if this is a servicing or an upgrade.
 
 
 ### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantStartState
