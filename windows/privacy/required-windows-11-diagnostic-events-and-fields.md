@@ -4072,8 +4072,6 @@ The following fields are available:
 
 Event fired when the user interacts with any CTAs during the Purchase Experience.
 
-This event includes fields from [PageActionData](#pageactiondata).
-
 The following fields are available:
 
 - **countsAsFeatureUsage**  GTL flag to help attribute page action to a feature.
@@ -4166,7 +4164,7 @@ The following fields are available:
 - **endTimestamp**  No content is currently available.
 - **extendedData**  No content is currently available.
 - **featureArea**  No content is currently available.
-- **metadata**  No content is currently available. See [metadata](#metadata).
+- **metadata**  No content is currently available.
 - **scenarioName**  No content is currently available.
 - **startTimestamp**  No content is currently available.
 
