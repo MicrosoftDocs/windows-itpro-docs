@@ -2396,7 +2396,7 @@ The following fields are available:
 
 - **callStack**  List of active subroutines running during error occurrence.
 - **componentName**  Friendly name meant to represent what feature area this error should be attributed to. Used for aggregations and pivots of data.
-- **customAttributes**  List of custom attributes. See [customAttributes](#customattributes).
+- **customAttributes**  List of custom attributes.
 - **errorCode**  Error code.
 - **extendedData**  JSON blob representing additional, provider-level properties common to the component.
 - **featureName**  Friendly name meant to represent which feature this should be attributed to.
@@ -2421,7 +2421,7 @@ No content is currently available.
 The following fields are available:
 
 - **componentName**  Name meant to help identify which calling code base generated this error.
-- **customAttributes**  A JSON string containing additional diagnostics data not represented in the error schema. See [customAttributes](#customattributes).
+- **customAttributes**  A JSON string containing additional diagnostics data not represented in the error schema.
 - **duration**  Value representing how long the session was active for.
 - **endStatus**  The result code representing the end state of this session.
 - **errorSummary**  No content is currently available.
