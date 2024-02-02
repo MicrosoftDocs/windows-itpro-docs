@@ -5844,54 +5844,54 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateStarted
 
-No content is currently available.
+Event that indicates secure boot update has started.
 
 The following fields are available:
 
-- **AvailableUpdates**  No content is currently available.
-- **SecureBootUpdateCaller**  No content is currently available.
-
+- **AvailableUpdates**  Number of available secure boot updates.
+- **SecureBootUpdateCaller**  Enum value indicating if this is a servicing or an upgrade.
+- 
 
 ### Microsoft.Windows.Shell.StateCapture.TrayStateCapture
 
-No content is currently available.
+Captures numerous global settings and state involving how user has configured their Taskbar.
 
 The following fields are available:
 
-- **autoHideDesktop**  No content is currently available.
-- **autoHideTablet**  No content is currently available.
-- **cortanaButtonState**  No content is currently available.
-- **decoupledCortanaButtonState**  No content is currently available.
-- **firstPartyToolbarsInUse**  No content is currently available.
-- **lockedMoveTaskbar**  No content is currently available.
-- **lockedSizeTaskbar**  No content is currently available.
-- **monitorCount**  No content is currently available.
-- **multiDisplayButtonPlacement**  No content is currently available.
-- **multiDisplayTaskbar**  No content is currently available.
-- **overflowAllowed**  No content is currently available.
-- **overflowItemCount**  No content is currently available.
-- **peekToPreviewDesktop**  No content is currently available.
-- **showAppsInTablet**  No content is currently available.
-- **showClock**  No content is currently available.
-- **showInkWorkspace**  No content is currently available.
-- **showInputIndicator**  No content is currently available.
-- **showLocation**  No content is currently available.
-- **showMicrophone**  No content is currently available.
-- **showNetwork**  No content is currently available.
-- **showNotificationCenter**  No content is currently available.
-- **showPower**  No content is currently available.
-- **showVolume**  No content is currently available.
-- **smallIcons**  No content is currently available.
-- **taskbarBadging**  No content is currently available.
-- **taskViewButtonState**  No content is currently available.
-- **thirdPartyToolbarsInUse**  No content is currently available.
-- **toolbarsCount**  No content is currently available.
-- **toolbarsShowing**  No content is currently available.
-- **toolbarsThirdPartyDefined**  No content is currently available.
-- **touchKeyboardDesktop**  No content is currently available.
-- **touchKeyboardTablet**  No content is currently available.
-- **triggerType**  No content is currently available.
-- **usePowershell**  No content is currently available.
+- **autoHideDesktop**  Auto Hide Desktop
+- **autoHideTablet**  Auto Hide Tablet
+- **cortanaButtonState**  Cortana button state
+- **decoupledCortanaButtonState**  Decoupled Cortana button state
+- **firstPartyToolbarsInUse**  First Party toolbars in Use
+- **lockedMoveTaskbar**  Locked Move Taskbar
+- **lockedSizeTaskbar**  Locked Size Taskbar
+- **monitorCount**  Monitor count
+- **multiDisplayButtonPlacement**  Multi display button placement
+- **multiDisplayTaskbar**  Multi display taskbar
+- **overflowAllowed**  Overflow allowed
+- **overflowItemCount**  Overflow item content
+- **peekToPreviewDesktop** Peek to Preview Desktop
+- **showAppsInTablet**  Shows apps in tablet
+- **showClock**  Show Clock
+- **showInkWorkspace**  Show Ink workspace
+- **showInputIndicator** Show Input indicator  
+- **showLocation**  Show Location
+- **showMicrophone** Show Microphone  
+- **showNetwork**  Show Network
+- **showNotificationCenter**  
+- **showPower**  Show Power
+- **showVolume**  Show Volume
+- **smallIcons**  Small icons
+- **taskbarBadging**  Taskbar badging
+- **taskViewButtonState**  Task View button state
+- **thirdPartyToolbarsInUse**  Third part toolbars in use
+- **toolbarsCount**  Toolbars count
+- **toolbarsShowing**  Toolbars showing
+- **toolbarsThirdPartyDefined**  Toolbars third party defined
+- **touchKeyboardDesktop**  Touch keyboard desktop
+- **touchKeyboardTablet**  Touch keyboard tablet
+- **triggerType**  Trigger type
+- **usePowershell**  Use PowerShell
 
 
 ## Privacy consent logging events
