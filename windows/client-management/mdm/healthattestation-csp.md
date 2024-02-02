@@ -1,13 +1,15 @@
 ---
 title: HealthAttestation CSP
 description: Learn more about the HealthAttestation CSP.
-ms.date: 01/18/2024
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- HealthAttestation-Begin -->
 # HealthAttestation CSP
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- HealthAttestation-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -25,6 +27,7 @@ The following list is a description of the functions performed by the Device Hea
 The following list shows the HealthAttestation configuration service provider nodes:
 
 - ./Vendor/MSFT/HealthAttestation
+  - [AttestErrorMessage](#attesterrormessage)
   - [AttestStatus](#atteststatus)
   - [Certificate](#certificate)
   - [CorrelationID](#correlationid)
@@ -41,6 +44,45 @@ The following list shows the HealthAttestation configuration service provider no
   - [TriggerAttestation](#triggerattestation)
   - [VerifyHealth](#verifyhealth)
 <!-- HealthAttestation-Tree-End -->
+
+<!-- Device-AttestErrorMessage-Begin -->
+## AttestErrorMessage
+
+<!-- Device-AttestErrorMessage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-AttestErrorMessage-Applicability-End -->
+
+<!-- Device-AttestErrorMessage-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/HealthAttestation/AttestErrorMessage
+```
+<!-- Device-AttestErrorMessage-OmaUri-End -->
+
+<!-- Device-AttestErrorMessage-Description-Begin -->
+<!-- Description-Source-DDF -->
+AttestErrorMessage maintains the error message for the last attestation session, if returned by the attestation service.
+<!-- Device-AttestErrorMessage-Description-End -->
+
+<!-- Device-AttestErrorMessage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-AttestErrorMessage-Editable-End -->
+
+<!-- Device-AttestErrorMessage-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get |
+<!-- Device-AttestErrorMessage-DFProperties-End -->
+
+<!-- Device-AttestErrorMessage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-AttestErrorMessage-Examples-End -->
+
+<!-- Device-AttestErrorMessage-End -->
 
 <!-- Device-AttestStatus-Begin -->
 ## AttestStatus
