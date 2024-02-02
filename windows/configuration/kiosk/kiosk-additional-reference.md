@@ -1,5 +1,5 @@
 ---
-title: More kiosk methods and reference information (Windows 10/11)
+title: More kiosk methods and reference information
 description: Find more information for configuring, validating, and troubleshooting kiosk configuration.
 ms.topic: reference
 ms.date: 12/31/2017

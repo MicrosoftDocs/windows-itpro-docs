@@ -2,7 +2,6 @@
 title: Provision PCs with apps
 description: Learn how to install multiple Universal Windows Platform (UWP) apps and Windows desktop applications (Win32) in a provisioning package.
 ms.topic: article
-ms.reviewer: gkomatsu
 ms.date: 12/31/2017
 ---
 

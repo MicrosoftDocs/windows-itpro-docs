@@ -1,31 +1,30 @@
 ---
-title: Windows Configuration Designer command-line interface (Windows 10/11)
+title: Windows Configuration Designer command-line interface
 description: Learn more about the ICD syntax, switches, and arguments that you can use in the Windows Configuration Designer command-line interface for Windows10/11 client devices.
-ms.topic: article 
-ms.reviewer: gkomatsu
+ms.topic: article
 ms.date: 12/31/2017
---- 
+---
 
-# Windows Configuration Designer command-line interface (reference) 
+# Windows Configuration Designer command-line interface (reference)
 
-You can use the Windows Configuration Designer command-line interface (CLI) to automate the building of provisioning packages.  
+You can use the Windows Configuration Designer command-line interface (CLI) to automate the building of provisioning packages.
 
-- IT pros can use the Windows Configuration Designer CLI to require less retooling of existing processes. You must run the Windows Configuration Designer CLI from a command window with administrator privileges. 
+- IT pros can use the Windows Configuration Designer CLI to require less retooling of existing processes. You must run the Windows Configuration Designer CLI from a command window with administrator privileges.
 
-- You must use the Windows Configuration Designer CLI and edit the customizations.xml sources to create a provisioning package with multivariant support. You need the customizations.xml file as one of the inputs to the Windows Configuration Designer CLI to build a provisioning package. For more information, see [Create a provisioning package with multivariant settings](provisioning-multivariant.md).  
+- You must use the Windows Configuration Designer CLI and edit the customizations.xml sources to create a provisioning package with multivariant support. You need the customizations.xml file as one of the inputs to the Windows Configuration Designer CLI to build a provisioning package. For more information, see [Create a provisioning package with multivariant settings](provisioning-multivariant.md).
 
- 
 
-## Syntax 
+
+## Syntax
 
 ``` cmd
-icd.exe /Build-ProvisioningPackage /CustomizationXML:<path_to_xml> /PackagePath:<path_to_ppkg> 
+icd.exe /Build-ProvisioningPackage /CustomizationXML:<path_to_xml> /PackagePath:<path_to_ppkg>
 
 [/StoreFile:<path_to_storefile>]  [/MSPackageRoot:<path_to_mspackage_directory>]  [/OEMInputXML:<path_to_xml>]
 [/ProductName:<product_name>]  [/Variables:<name>:<value>] [[+|-]Encrypted] [[+|-]Overwrite] [/?]
-``` 
+```
 
-## Switches and arguments 
+## Switches and arguments
 
 | Switch | Required? | Arguments |
 | --- | --- | --- |
@@ -36,9 +35,9 @@ icd.exe /Build-ProvisioningPackage /CustomizationXML:<path_to_xml> /PackagePath:
 | Encrypted | No | Denotes whether the provisioning package should be built with encryption. Windows Configuration Designer autogenerates the decryption password and includes this information in the output.</br></br></br>Precede with `+` for encryption, or `-` for no encryption. The default is no encryption. |
 | Overwrite | No | Denotes whether to overwrite an existing provisioning package.</br></br></br>Precede with + to overwrite an existing package or - if you don't want to overwrite an existing package. The default is false (don't overwrite). |
 | /? | No | Lists the switches and their descriptions for the command-line tool or for certain commands. |
- 
 
-## Related articles 
+
+## Related articles
 
 - [Provisioning packages for Windows client](provisioning-packages.md)
 - [How provisioning works in Windows client](provisioning-how-it-works.md)
@@ -50,5 +49,5 @@ icd.exe /Build-ProvisioningPackage /CustomizationXML:<path_to_xml> /PackagePath:
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
 - [PowerShell cmdlets for provisioning Windows client (reference)](provisioning-powershell.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
- 
+
 

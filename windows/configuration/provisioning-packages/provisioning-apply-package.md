@@ -1,8 +1,7 @@
 ---
-title: Apply a provisioning package (Windows 10/11)
+title: Apply a provisioning package
 description: Provisioning packages can be applied to a device during initial setup (OOBE) and after (runtime).
 ms.topic: article
-ms.reviewer: gkomatsu
 ms.date: 12/31/2017
 ---
 
@@ -28,8 +27,8 @@ To apply a provisioning package from a USB drive during initial setup:
 
 1. Insert the USB drive. If nothing happens when you insert the USB drive, press the Windows key five times.
 
-   - If there is only one provisioning package on the USB drive, the provisioning package is applied. See step 5.
-   - If there is more than one provisioning package on the USB drive, Windows setup will recognize the drive and ask how you want to provision the device. Select **Install provisioning package** and select **Next**.
+   - If there's only one provisioning package on the USB drive, the provisioning package is applied. See step 5.
+   - If there's more than one provisioning package on the USB drive, Windows setup recognizes the drive and ask how you want to provision the device. Select **Install provisioning package** and select **Next**.
 
    :::image type="content" source="images/provisioning-oobe-choice.png" alt-text="What would you like to do?":::
 
@@ -45,7 +44,7 @@ To apply a provisioning package from a USB drive during initial setup:
 
 ## After initial setup
 
-Provisioning packages can be applied after initial setup through Windows settings or by simply double-clicking a provisioning package.
+Provisioning packages can be applied after initial setup through Windows settings or by double-clicking a provisioning package.
 
 ### Windows Settings
 
@@ -61,11 +60,11 @@ Provisioning packages can be applied after initial setup through Windows setting
 
    :::image type="content" source="images/provisioning-runtime-add-package.png" alt-text="Select and add a package.":::
 
-1. Provisioning packages require administrator privileges as they can modify system policies and run scripts at the system level. Ensure you trust the package you are installing before accepting the UAC prompt. Select **Yes**.
+1. Provisioning packages require administrator privileges as they can modify system policies and run scripts at the system level. Ensure you trust the package you're installing before accepting the UAC prompt. Select **Yes**.
 
    :::image type="content" source="images/provisioning-runtime-UAC.png" alt-text="Do you want to allow changes to your device?":::
 
-1. The provisioning runtime will ask if the package is from a source you trust. Verify that you are applying the correct package and that it is trusted. Select **Yes, add it**.
+1. The provisioning runtime asks if the package is from a source you trust. Verify that you're applying the correct package and that it's trusted. Select **Yes, add it**.
 
    :::image type="content" source="images/provisioning-runtime-trust.png" alt-text="Do you trust this package?":::
 
@@ -77,11 +76,11 @@ To apply a provisioning package directly, such as from a USB drive, folder, netw
 
    :::image type="content" source="images/provisioning-runtime-click-to-install.png" alt-text="Double-click package to being installation.":::
 
-1. Provisioning packages require administrator privileges as they can modify system policies and run scripts at the system level. Ensure you trust the package you are installing before accepting the UAC prompt. Select **Yes**.
+1. Provisioning packages require administrator privileges as they can modify system policies and run scripts at the system level. Ensure you trust the package you're installing before accepting the UAC prompt. Select **Yes**.
 
    :::image type="content" source="images/provisioning-runtime-UAC.png" alt-text="Do you want to allow changes to your device?":::
 
-1. The provisioning runtime will ask if the package is from a source you trust. Verify that you are applying the correct package and that it is trusted. Select **Yes, add it**.
+1. The provisioning runtime asks if the package is from a source you trust. Verify that you're applying the correct package and that it's trusted. Select **Yes, add it**.
 
    :::image type="content" source="images/provisioning-runtime-trust.png" alt-text="Do you trust this package?":::
 

@@ -1,8 +1,7 @@
 ---
-title: Use a script to install a desktop app in provisioning packages (Windows 10/11)
+title: Use a script to install a desktop app in provisioning packages
 description: With Windows 10/11, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 ms.topic: article
-ms.reviewer: gkomatsu
 ms.date: 12/31/2017
 ---
 
@@ -14,7 +13,7 @@ This walkthrough describes how to include scripts in a Windows client provisioni
 
 1. On the device where you're authoring the package, place all of your assets in a known location. Each asset must have a unique filename, because all files will be copied to the same temp directory on the device. It's common for many apps to have an installer called 'install.exe' or similar, and there may be name overlap because of that. To fix this, you can use the technique described in the next step to include a complete directory structure that is then expanded into the temp directory on the device. The most common use for this would be to include a subdirectory for each application.
 
-1. If you need to include a directory structure of files, you will need to cab the assets for easy inclusion in the provisioning packages.
+1. If you need to include a directory structure of files, you'll need to cab the assets for easy inclusion in the provisioning packages.
 
 ## Cab the application assets
 
@@ -65,7 +64,7 @@ You don't need to create an orchestrator script. You can have one command line p
 
 ### Debugging example
 
-Granular logging is not built in, so the logging must be built into the script itself. Here is an example script that logs 'Hello World' to a logfile. When run on the device, the logfile will be available after provisioning is completed. As you will see in the following examples, it's recommended that you log each action that your script performs.
+Granular logging isn't built in, so the logging must be built into the script itself. Here's an example script that logs 'Hello World' to a logfile. When run on the device, the logfile will be available after provisioning is completed. As you'll see in the following examples, it's recommended that you log each action that your script performs.
 
 ```log
 set LOGFILE=%SystemDrive%\HelloWorld.log
@@ -126,7 +125,7 @@ echo result: %ERRORLEVEL% >> %LOGFILE%
 
 Your provisioning package can include multiple **CommandFiles**.
 
-You are allowed one **CommandLine** per provisioning package. The batch files shown above are orchestrator scripts that manage the installation and call any other scripts included in the provisioning package. The orchestrator script is what should be invoked from the **CommandLine** specified in the package.
+You're allowed one **CommandLine** per provisioning package. The batch files shown above are orchestrator scripts that manage the installation and call any other scripts included in the provisioning package. The orchestrator script is what should be invoked from the **CommandLine** specified in the package.
 
 Here's a table describing this relationship, using the PowerShell example from above:
 
@@ -134,7 +133,7 @@ Here's a table describing this relationship, using the PowerShell example from a
 | --- | --- | --- |
 | ProvisioningCommands/DeviceContext/CommandLine | cmd /c PowerShell_Example.bat | The command line needed to invoke the orchestrator script. |
 | ProvisioningCommands/DeviceContext/CommandFiles | PowerShell_Example.bat | The single orchestrator script referenced by the command line that handles calling into the required installers or performing any other actions such as expanding cab files. This script must do the required logging. |
-| ProvisioningCommands/DeviceContext/CommandFiles | my_powershell_script.ps1 | Other assets referenced by the orchestrator script. In this example, there is only one, but there could be many assets referenced here. One common use case is using the orchestrator to call a series of install.exe or setup.exe installers to install several applications. Each of those installers must be included as an asset here. |
+| ProvisioningCommands/DeviceContext/CommandFiles | my_powershell_script.ps1 | Other assets referenced by the orchestrator script. In this example, there's only one, but there could be many assets referenced here. One common use case is using the orchestrator to call a series of install.exe or setup.exe installers to install several applications. Each of those installers must be included as an asset here. |
 
 ### Add script to provisioning package
 
@@ -156,11 +155,11 @@ In Windows Configuration Designer, that is done by adding files under the `Provi
 
 ![Command files in Selected customizations.](images/icd-script2.png)
 
-When you are done, [build the package](provisioning-create-package.md#build-package).
+When you're done, [build the package](provisioning-create-package.md#build-package).
 
 ### Remarks
 
-1. No user interaction or console output is supported via ProvisioningCommands. All work needs to be silent. If your script attempts to do any of the following it will cause undefined behavior, and could put the device in an unrecoverable state if executed during setup or the Out of Box Experience:
+1. No user interaction or console output is supported via ProvisioningCommands. All work needs to be silent. If your script attempts to do any of the following it causes undefined behavior, and could put the device in an unrecoverable state if executed during setup or the Out of Box Experience:
 
     1. Echo to console
     1. Display anything on the screen
@@ -182,7 +181,7 @@ When you are done, [build the package](provisioning-create-package.md#build-pack
     >[!NOTE]
     >There is a timeout of 30 minutes for the provisioning process at this point. All scripts and installs need to complete within this time.
 
-1. The scripts are executed in the background as the rest of provisioning continues to run. For packages added on existing systems using the double-click to install, there is no notification that provisioning or script execution has completed
+1. The scripts are executed in the background as the rest of provisioning continues to run. For packages added on existing systems using the double-click to install, there's no notification that provisioning or script execution has completed
 
 ## Related articles
 
