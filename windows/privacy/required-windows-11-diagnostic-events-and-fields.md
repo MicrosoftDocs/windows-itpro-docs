@@ -4002,13 +4002,13 @@ The following fields are available:
 
 ### Microsoft.Surface.Mcu.Prod.CriticalLog
 
-No content is currently available.
+Error information from Surface device firmware.
 
 The following fields are available:
 
-- **CUtility::GetTargetNameA(target)**  No content is currently available.
-- **productId**  No content is currently available.
-- **uniqueId**  No content is currently available.
+- **CUtility::GetTargetNameA(target)**  Product identifier.
+- **productId**  Product identifier
+- **uniqueId**  Correlation ID that can be used with Watson to get more details about the failure.
 
 
 ### Microsoft.Windows.Defender.Engine.Maps.Heartbeat
@@ -4039,11 +4039,11 @@ The following fields are available:
 
 ### Microsoft.Windows.SecureBootTelemetry.SecureBootEncodeUEFI
 
-No content is currently available.
+Information about Secure Boot configuration including the PK, KEKs, DB and DBX files on the device.
 
 The following fields are available:
 
-- **SecureBootUEFIEncoding**  No content is currently available.
+- **SecureBootUEFIEncoding**  Information about the PK, KEKs, DB and DBX files on the device.
 
 
 ### XboxSystemFlightRecorder.SmcErrorLog
@@ -5776,13 +5776,13 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.BeginGetFreeEntitlement
 
-No content is currently available.
+Tracks the beginning of the call to get a free app entitlement.
 
 The following fields are available:
 
-- **CampaignId**  No content is currently available.
-- **StoreId**  No content is currently available.
-- **UseDeviceId**  No content is currently available.
+- **CampaignId**  Marketing Campaign Identifier.
+- **StoreId**  App Store Catalog Id.
+- **UseDeviceId**  Boolean value to select whether the entitlement should be a device versus a user entitlement.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.BeginGetInstalledContentIds
@@ -5876,14 +5876,14 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.EndGetFreeEntitlement
 
-No content is currently available.
+Telemetry is fired at the end of the call to request an free app entitlement, which will make a server call to get the entitlement.
 
 The following fields are available:
 
-- **CampaignId**  No content is currently available.
-- **HResult**  No content is currently available.
-- **StoreId**  No content is currently available.
-- **UseDeviceId**  No content is currently available.
+- **CampaignId**  Campaign marketing Id.
+- **HResult**  Error result.
+- **StoreId**  Store Catalog Id of item requesting ownership.
+- **UseDeviceId**  Boolean value to select whether the entitlement should be a device versus a user entitlement.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.EndGetInstalledContentIds
