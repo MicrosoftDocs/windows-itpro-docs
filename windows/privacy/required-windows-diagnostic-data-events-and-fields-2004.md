@@ -1,14 +1,14 @@
 ---
 description: Learn more about the required Windows 10 diagnostic data gathered.
 title: Required diagnostic events and fields for Windows 10 (versions 22H2, 21H2, 21H1, 20H2, and 2004)
-ms.prod: windows-client
-ms.technology: itpro-privacy
-localizationpriority: high
+ms.service: windows-client
+ms.subservice: itpro-privacy
+ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 09/26/2023
-ms.collection: highpri
+ms.date: 02/27/2024
+ms.collection: privacy-windows
 ms.topic: reference
 ---
 
@@ -2483,7 +2483,6 @@ The following fields are available:
 - **IsRecommended**  Denotes whether all compatibility checks have passed and, if so, returns true. Otherwise returns false.
 - **Issues**  If compatibility checks failed, provides bit indexed indicators of issues detected. Table located here: [Check results of HVCI default enablement](/windows-hardware/design/device-experiences/oem-hvci-enablement#check-results-of-hvci-default-enablement).
 
-
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.Enabled
 
 Fires when auto-enablement is successful and HVCI is being enabled on the device.
@@ -4340,7 +4339,6 @@ The following fields are available:
 
 - **InventoryVersion**  The version of the inventory binary generating the events.
 
-
 ### Microsoft.Windows.Inventory.Core.InventoryAcpiPhatHealthRecordAdd
 
 This event sends basic metadata about ACPI PHAT Health Record structure on the machine. The data collected with this event is used to help keep Windows up to date.
@@ -4614,7 +4612,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **InventoryVersion**  The version of the inventory file generating the events.
-
 
 ### Microsoft.Windows.Inventory.Core.InventoryDevicePnpAdd
 
@@ -5616,6 +5613,40 @@ The following fields are available:
 
 ## Other events
 
+### Microsoft.Surface.Mcu.Prod.CriticalLog
+
+Error information from Surface device firmware.
+
+The following fields are available:
+
+- **CrashLog**  MCU crash log
+- **criticalLogSize** Log size
+- **CUtility::GetTargetNameA(target)**  Product identifier.
+- **productId**  Product identifier
+- **uniqueId**  Correlation ID that can be used with Watson to get more details about the failure.
+
+
+### Microsoft.Surface.SMLS.Pcc.PccTelemetry
+
+Surface SMLS telemetry data
+
+The following fields are available:
+
+- **ModelData**  Surface SMLS Telemetry data
+- **ModelIndex**  Machine Learning Model number
+- **smlsVersion**  SMLS (Surface Machine Learning Service) version
+- **Time**  DateTime of event
+
+
+### Microsoft.Surface.SystemInfo.Prod.OsImageName
+
+This event sends information about the Operating System image name to Microsoft. It enables the Surface team to improve our customer's experience.
+
+The following fields are available:
+
+- **szOsImageName**  This is the image name that is running on the device.
+
+
 ### Microsoft.Windows.Defender.Engine.Maps.Heartbeat
 
 Heartbeat is sent once a day to indicate Defender is running and functional. Event includes necessary information to understand health of Defender on the device.
@@ -5664,6 +5695,64 @@ The following fields are available:
 - **SecureBootUpdateCaller**  Scenario in which function was called. Could be Update or Upgrade
 - **UpdateType**  Indicates if it is DB or DBX update
 - **WillResealSucceed**  Indicates if TPM reseal operation is expected to succeed
+
+### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateStarted
+
+Event that indicates secure boot update has started.
+
+The following fields are available:
+
+- **AvailableUpdates**  Number of available secure boot updates.
+- **SecureBootUpdateCaller**  Enum value indicating if this is a servicing or an upgrade.
+
+
+### Microsoft.Windows.Shell.StateCapture.TrayStateCapture
+
+Captures numerous global settings and state involving how user has configured their Taskbar.
+
+The following fields are available:
+
+- **autoHideDesktop**  Auto Hide Desktop
+- **autoHideTablet**  Auto Hide Tablet
+- **cortanaButtonState**  Cortana button state
+- **decoupledCortanaButtonState**  Decoupled Cortana button state
+- **feedsDisabledReason**  Feeds disabled reason
+- **feedsState**  Feeds state
+- **firstPartyToolbarsInUse**  First Party toolbars in Use
+- **lockedMoveTaskbar**  Locked Move Taskbar
+- **lockedSizeTaskbar**  Locked Size Taskbar
+- **monitorCount**  Monitor count
+- **multiDisplayButtonPlacement**  Multi display button placement
+- **multiDisplayTaskbar**  Multi display taskbar
+- **overflowAllowed**  Overflow allowed
+- **overflowItemCount**  Overflow item content
+- **peekToPreviewDesktop** Peek to Preview Desktop
+- **shellFeedsHoverMode**  ShellFeeds Hover mode
+- **shellFeedsTaskbarDisplayMode**  ShellFeeds Taskbar Display mode
+- **shellFeedsUpdateMode** ShellFeeds Update mode
+- **showAppsInTablet**  Shows apps in tablet
+- **showClock**  Show Clock
+- **showInkWorkspace**  Show Ink workspace
+- **showInputIndicator** Show Input indicator  
+- **showLocation**  Show Location
+- **showMeetNow**  Show Meet Now
+- **showMicrophone** Show Microphone  
+- **showNetwork**  Show Network
+- **showNotificationCenter**  Show Notification Center
+- **showPower**  Show Power
+- **showVolume**  Show Volume
+- **smallIcons**  Small icons
+- **taskbarBadging**  Taskbar badging
+- **taskViewButtonState**  Task View button state
+- **thirdPartyToolbarsInUse**  Third part toolbars in use
+- **toolbarsCount**  Toolbars count
+- **toolbarsShowing**  Toolbars showing
+- **toolbarsThirdPartyDefined**  Toolbars third party defined
+- **touchKeyboardDesktop**  Touch keyboard desktop
+- **touchKeyboardTablet**  Touch keyboard tablet
+- **triggerType**  Trigger type
+- **usePowershell**  Use PowerShell
+
 
 
 ## Privacy consent logging events
@@ -8032,6 +8121,17 @@ The following fields are available:
 - **WUContentId**  The Windows Update content ID.
 
 
+### Microsoft.Windows.StoreAgent.Telemetry.BeginGetFreeEntitlement
+
+Tracks the beginning of the call to get a free app entitlement.
+
+The following fields are available:
+
+- **CampaignId**  Marketing Campaign Identifier.
+- **StoreId**  App Store Catalog Id.
+- **UseDeviceId**  Boolean value to select whether the entitlement should be a device versus a user entitlement.
+
+
 ### Microsoft.Windows.StoreAgent.Telemetry.BeginGetInstalledContentIds
 
 This event is sent when an inventory of the apps installed is started to determine whether updates for those apps are available. It's used to help keep Windows up-to-date and secure.
@@ -8119,6 +8219,18 @@ This event is sent when an app update requires an updated Framework package and 
 The following fields are available:
 
 - **HResult**  The result code of the last action performed before this operation.
+
+
+### Microsoft.Windows.StoreAgent.Telemetry.EndGetFreeEntitlement
+
+Telemetry is fired at the end of the call to request an free app entitlement, which will make a server call to get the entitlement.
+
+The following fields are available:
+
+- **CampaignId**  Campaign marketing Id.
+- **HResult**  Error result.
+- **StoreId**  Store Catalog Id of item requesting ownership.
+- **UseDeviceId**  Boolean value to select whether the entitlement should be a device versus a user entitlement.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.EndGetInstalledContentIds
@@ -9275,6 +9387,19 @@ The following fields are available:
 - **update**  Update for which EULA has been accepted.
 
 
+### Microsoft.Windows.Update.PolicyReader.GPPolicyRefresh
+
+This event enables us to harden the accuracy of the Windows update Group Policies configured by better tracking policy changes.
+
+The following fields are available:
+
+- **ExecutionTimeMs**  This is the execution time in milliseconds
+- **PoliciesConfigured**  This shows if the Windows update policies are configured.
+- **PolicyHashChanged**  This shows if a policy hash has changed.
+- **RefreshedPolicies**  This is a list of all of the policies that changed since the last configuration.
+- **StatusCode**  This is the status of the overall group policy refresh.
+
+
 ### Microsoft.Windows.Update.Ux.MusNotification.EnhancedEngagedRebootUxState
 
 This event sends information about the configuration of Enhanced Direct-to-Engaged (eDTE), which includes values for the timing of how eDTE will progress through each phase of the reboot. The data collected with this event is used to help keep Windows secure and up to date.
@@ -9831,7 +9956,6 @@ The following fields are available:
 - **pfn**  A package full name.
 - **reasonNumber**  A number associated with reason.
 
-
 ### Microsoft.Xbox.XceBridge.CS.1.0.0.9.0.1.SFR.XvdStreamingStart
 
 This event indicates that the XVDD streaming engine encountered an error when attempting to start streaming.
@@ -9900,3 +10024,6 @@ The following fields are available:
 - **virtualMachineName**  VM name.
 - **waitForClientConnection**  True if we should wait for client connection.
 - **wp81NetworkStackDisabled**  WP 8.1 networking stack disabled.
+
+
+
