@@ -3,8 +3,6 @@
   items:
     - name: Get started
       items:
-        - name: What's new
-          href: deploy-whats-new.md
         - name: Windows client deployment scenarios
           href: windows-deployment-scenarios.md
         - name: Quick guide to Windows as a service

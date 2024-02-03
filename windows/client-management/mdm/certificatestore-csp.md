@@ -1,7 +1,7 @@
 ---
 title: CertificateStore CSP
 description: Learn more about the CertificateStore CSP.
-ms.date: 01/18/2024
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -2384,6 +2384,7 @@ Optional. Notify the client whether enrollment server supports ROBO auto certifi
 | Value | Description |
 |:--|:--|
 | true (Default) | True. |
+| false | False. |
 <!-- Device-MY-WSTEP-Renew-ROBOSupport-AllowedValues-End -->
 
 <!-- Device-MY-WSTEP-Renew-ROBOSupport-Examples-Begin -->
