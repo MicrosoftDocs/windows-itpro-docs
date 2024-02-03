@@ -1,14 +1,15 @@
 ---
 description: Learn more about the Windows 10, version 1809 diagnostic data gathered at the basic level.
 title: Windows 10, version 1809 basic diagnostic events and fields (Windows 10)
-ms.prod: windows-client
-ms.technology: itpro-privacy
-localizationpriority: high
+ms.service: windows-client
+ms.subservice: itpro-privacy
+ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 09/26/2023
+ms.date: 02/27/2024
 ms.topic: reference
+ms.collection: privacy-windows
 ---
 
 
@@ -1740,7 +1741,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.SystemProcessorNxStartSync
 
-This event  indicates that a new set of SystemProcessorNxAdd events will be sent. The data collected with this event is used to help keep Windows up to date.
+This event indicates that a new set of SystemProcessorNxAdd events will be sent. The data collected with this event is used to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -1765,6 +1766,7 @@ The following fields are available:
 ### Microsoft.Windows.Appraiser.General.SystemProcessorPopCntStartSync
 
 The SystemProcessorPopCntStartSync event indicates that a new set of SystemProcessorPopCntAdd events will be sent. This event is used to understand if the system supports the PopCnt CPU requirement for newer versions of Windows.
+
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -4761,7 +4763,6 @@ The following fields are available:
 
 - **InventoryVersion**  The version of the inventory file generating the events.
 
-
 ### Microsoft.Windows.Inventory.Core.InventoryDeviceInterfaceAdd
 
 This event retrieves information about what sensor interfaces are available on the device. The data collected with this event is used to keep Windows performing properly.
@@ -5839,6 +5840,58 @@ Information about Secure Boot configuration including the PK, KEKs, DB and DBX f
 The following fields are available:
 
 - **SecureBootUEFIEncoding**  Information about the PK, KEKs, DB and DBX files on the device.
+
+
+### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateStarted
+
+Event that indicates secure boot update has started.
+
+The following fields are available:
+
+- **AvailableUpdates**  Number of available secure boot updates.
+- **SecureBootUpdateCaller**  Enum value indicating if this is a servicing or an upgrade.
+
+
+### Microsoft.Windows.Shell.StateCapture.TrayStateCapture
+
+Captures numerous global settings and state involving how user has configured their Taskbar.
+
+The following fields are available:
+
+- **autoHideDesktop**  Auto Hide Desktop
+- **autoHideTablet**  Auto Hide Tablet
+- **cortanaButtonState**  Cortana button state
+- **decoupledCortanaButtonState**  Decoupled Cortana button state
+- **firstPartyToolbarsInUse**  First Party toolbars in Use
+- **lockedMoveTaskbar**  Locked Move Taskbar
+- **lockedSizeTaskbar**  Locked Size Taskbar
+- **monitorCount**  Monitor count
+- **multiDisplayButtonPlacement**  Multi display button placement
+- **multiDisplayTaskbar**  Multi display taskbar
+- **overflowAllowed**  Overflow allowed
+- **overflowItemCount**  Overflow item content
+- **peekToPreviewDesktop** Peek to Preview Desktop
+- **showAppsInTablet**  Shows apps in tablet
+- **showClock**  Show Clock
+- **showInkWorkspace**  Show Ink workspace
+- **showInputIndicator** Show Input indicator  
+- **showLocation**  Show Location
+- **showMicrophone** Show Microphone  
+- **showNetwork**  Show Network
+- **showNotificationCenter** Show Notification Center
+- **showPower**  Show Power
+- **showVolume**  Show Volume
+- **smallIcons**  Small icons
+- **taskbarBadging**  Taskbar badging
+- **taskViewButtonState**  Task View button state
+- **thirdPartyToolbarsInUse**  Third part toolbars in use
+- **toolbarsCount**  Toolbars count
+- **toolbarsShowing**  Toolbars showing
+- **toolbarsThirdPartyDefined**  Toolbars third party defined
+- **touchKeyboardDesktop**  Touch keyboard desktop
+- **touchKeyboardTablet**  Touch keyboard tablet
+- **triggerType**  Trigger type
+- **usePowershell**  Use PowerShell
 
 
 ## Privacy consent logging events
@@ -10183,3 +10236,6 @@ The following fields are available:
 - **LicenseXuid**  If the license type is 1 (User), this field contains the XUID (Xbox User ID) of the registered owner of the license.
 - **ProductGuid**  The Xbox product GUID (Globally-Unique ID) of the application.
 - **UserId**  The XUID (Xbox User ID) of the current user.
+
+
+
