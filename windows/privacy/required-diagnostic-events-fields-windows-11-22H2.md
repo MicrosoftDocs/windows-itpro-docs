@@ -2,14 +2,15 @@
 description: Learn more about the diagnostic data gathered for Windows 11, versions 23H2 and 22H2.
 title: Required diagnostic events and fields for Windows 11, versions 23H2 and 22H2
 keywords: privacy, telemetry
-ms.prod: windows-client
-ms.technology: itpro-privacy
-localizationpriority: high
+ms.service: windows-client
+ms.subservice: itpro-privacy
+ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 10/31/2023
+ms.date: 02/27/2024
 ms.topic: reference
+ms.collection: privacy-windows
 ---
 
 # Required diagnostic events and fields for Windows 11, versions 23H2 and 22H2
@@ -129,7 +130,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser binary generating the events.
-
 
 ### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileRemove
 
@@ -783,7 +783,6 @@ The following fields are available:
 
 - **AppraiserVersion**  Appraiser version.
 
-
 ### Microsoft.Windows.Appraiser.General.SystemProcessorPrefetchWAdd
 
 This event sends data indicating whether the system supports the PrefetchW CPU requirement, to help keep Windows up to date.
@@ -1327,6 +1326,7 @@ The following fields are available:
 - **objectInstanceId**  Object identity which is unique within the device scope.
 - **objectType**  Indicates the object type that the event applies to.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
+
 
 ## Component-based servicing events
 
@@ -2163,6 +2163,7 @@ The following fields are available:
 - **SystemStateTransition**  State transition information.
 - **Watchdog**  Watchdog information.
 
+
 ## Microsoft Edge events
 
 ### Aria.af397ef28e484961ba48646a5d38cf54.Microsoft.WebBrowser.Installer.EdgeUpdate.Ping
@@ -2290,6 +2291,92 @@ The following fields are available:
 - **process_type**  The type of the hanging browser process, for example, gpu-process, renderer, etc.
 - **stack_hash**  A hash of the hanging stack. Currently not used or set to zero.
 
+
+### Microsoft.Gaming.Critical.Error
+
+Common error event used by the Gaming Telemetry Library to provide centralized monitoring for critical errors logged by callers using the library.
+
+The following fields are available:
+
+- **callStack**  List of active subroutines running during error occurrence.
+- **componentName**  Friendly name meant to represent what feature area this error should be attributed to. Used for aggregations and pivots of data.
+- **customAttributes**  List of custom attributes.
+- **errorCode**  Error code.
+- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
+- **featureName**  Friendly name meant to represent which feature this should be attributed to.
+- **identifier**  Error identifier.
+- **message**  Error message.
+- **properties**  List of properties attributed to the error.
+
+### Microsoft.Gaming.Critical.ProviderRegistered
+
+Indicates that a telemetry provider has been registered with the Gaming Telemetry Library.
+
+The following fields are available:
+
+- **providerNamespace**  The telemetry Namespace for the registered provider.
+
+### Microsoft.Gaming.OOBE.HDDBackup
+
+This event describes whether an External HDD back up has been found.
+
+The following fields are available:
+
+- **backupVersion**  version number of backup.
+- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
+- **hasConsoleSettings**  Indicates whether the console settings stored.
+- **hasUserSettings**  Indicates whether the user settings stored.
+- **hasWirelessProfile**  Indicates whether the wireless profile stored.
+- **hddBackupFound**  Indicates whether hdd backup is found.
+- **osVersion**  Operating system version.
+
+### Microsoft.Gaming.OOBE.OobeComplete
+
+This event is triggered when OOBE activation is complete.
+
+The following fields are available:
+
+- **allowAutoUpdate**  Allows auto update.
+- **allowAutoUpdateApps**  Allows auto update for apps.
+- **appliedTransferToken**  Applied transfer token.
+- **connectionType**  Connection type.
+- **curSessionId**  Current session id.
+- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
+- **instantOn**  Instant on.
+- **moobeAcceptedState**  Moobe accepted state.
+- **phaseOneElapsedTimeMs**  Total elapsed time in milliseconds for phase 1.
+- **phaseOneVersion**  Version of phase 1.
+- **phaseTwoElapsedTimeMs**  Total elapsed time in milliseconds for phase 2.
+- **phaseTwoVersion**  Version of phase 2.
+- **systemUpdateRequired**  Indicates whether a system update required.
+- **totalElapsedTimeMs**  Total elapsed time in milliseconds of all phases.
+- **usedCloudBackup**  Indicates whether cloud backup is used.
+- **usedHDDBackup**  Indicates whether HDD backup is used.
+- **usedOffConsole**  Indicates whether off console is used.
+
+
+### Microsoft.Gaming.OOBE.SessionStarted
+
+This event is sent at the start of OOBE session.
+
+The following fields are available:
+
+- **customAttributes**  customAttributes.
+- **extendedData**  extendedData.
+
+### Microsoft.Surface.Mcu.Prod.CriticalLog
+
+Error information from Surface device firmware.
+
+The following fields are available:
+
+- **CrashLog**  MCU crash log
+- **criticalLogSize** Log size
+- **CUtility::GetTargetNameA(target)**  Product identifier.
+- **productId**  Product identifier
+- **uniqueId**  Correlation ID that can be used with Watson to get more details about the failure.
+
+
 ### Microsoft.Windows.Defender.Engine.Maps.Heartbeat
 
 Heartbeat is sent once a day to indicate Defender is running and functional. Event includes necessary information to understand health of Defender on the device.
@@ -2315,6 +2402,26 @@ The following fields are available:
 - **SignatureRing**  Signature ring used for deployments
 - **SigVersion**  Version of signature VDMs
 
+
+### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateFveAction
+
+Event that indicates BitLocker TPM reseal action was triggered during Secure boot update
+
+The following fields are available:
+
+- **Action**  Action string indicating place of failure
+- **hr**  Return HRESULT code
+
+### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateStarted
+
+Event that indicates secure boot update has started.
+
+The following fields are available:
+
+- **AvailableUpdates**  Number of available secure boot updates.
+- **SecureBootUpdateCaller**  Enum value indicating if this is a servicing or an upgrade.
+
+
 ### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantStartState
 
 This event marks the start of an Update Assistant State. The data collected with this event is used to help keep Windows up to date.
@@ -2334,8 +2441,6 @@ The following fields are available:
 ### MicrosoftWindowsCodeIntegrityTraceLoggingProvider.CodeIntegrityHvciSysprepHvciAlreadyEnabled
 
 This event fires when HVCI is already enabled so no need to continue auto-enablement.
-
-
 
 ### ShellWNSRegistration.SLSChannelRegistrationFailed
 
@@ -2383,8 +2488,6 @@ The following fields are available:
 - **ChannelUri**  Channel URI returned by WNS.
 - **RetryAttempt**  The retry attempt number for attempting to open and register the channel.
 - **RetryTimeInMilliseconds**  The amount of time taken to retry the channel request in milliseconds.
-
-
 
 ## Privacy consent logging events
 
@@ -3592,6 +3695,8 @@ The following fields are available:
 
 Ensures Windows Updates are secure and complete. Event helps to identify whether update content has been tampered with and protects against man-in-the-middle attack.
 
+The following fields are available:
+
 - **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
 - **EndpointUrl**  Ensures Windows Updates are secure and complete. Event helps to identify whether update content has been tampered with and protects against man-in-the-middle attack.
 - **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode wasn't specific enough.
@@ -3656,3 +3761,6 @@ The following fields are available:
 - **SessionId**  The UpdateAgent “SessionId” value.
 - **UpdateId**  Unique identifier for the Update.
 - **WuId**  Unique identifier for the Windows Update client.
+
+
+
