@@ -110,6 +110,32 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 #### Join a device to Microsoft Entra ID the first time the device is started
 
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10)
+
+1. During the initial setup, on the **Who owns this PC?** page, select **My organization**, and then select **Next**.
+
+1. On the **Choose how you'll connect** page, select **Join Microsoft Entra ID**, and then select **Next**.
+
+1. On the **Let's get you signed in** page, enter the Microsoft Entra credentials, and then select **Sign in**.
+
+Now the device is Microsoft Entra joined to the organization's subscription.
+
+### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11)
+
+1. During the initial setup, on the **Who owns this PC?** page, select **My organization**, and then select **Next**.
+
+1. On the **Choose how you'll connect** page, select **Join Microsoft Entra ID**, and then select **Next**.
+
+1. On the **Let's get you signed in** page, enter the Microsoft Entra credentials, and then select **Sign in**.
+
+Now the device is Microsoft Entra joined to the organization's subscription.
+
+### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/autopilot)
+
+For the Autopilot experience when joining Microsoft Entra ID, see [User-driven Microsoft Entra join: Deploy the device](/autopilot/tutorial/user-driven/azure-ad-join-deploy-device).
+
+---
+
 1. During the initial setup, on the **Who owns this PC?** page, select **My organization**, and then select **Next**.
 
     :::image type="content" source="images/enterprise-e3-who-owns.png" alt-text="A screenshot of the 'Who owns this PC?' page in Windows 10 setup.":::
@@ -131,6 +157,36 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 Now the device is Microsoft Entra joined to the organization's subscription.
 
 #### Join a device to Microsoft Entra ID when the device is already set up with Windows 10 Pro
+
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10)
+
+> [!IMPORTANT]
+>
+> Make sure that the user signing in isn't the **BUILTIN/Administrator** account. That user can't use the `+ Connect` action to join a work or school account.
+
+1. Go to **Settings**, select **Accounts**, and select **Access work or school**.
+
+1. In **Set up a work or school account**, select **Join this device to Microsoft Entra ID**.
+
+1. On the **Let's get you signed in** page, enter the Microsoft Entra credentials, and then select **Sign in**.
+
+Now the device is Microsoft Entra joined to the organization's subscription.
+
+### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11)
+
+> [!IMPORTANT]
+>
+> Make sure that the user signing in isn't the **BUILTIN/Administrator** account. That user can't use the `+ Connect` action to join a work or school account.
+
+1. Go to **Settings**, select **Accounts**, and select **Access work or school**.
+
+1. In **Set up a work or school account**, select **Join this device to Microsoft Entra ID**.
+
+1. On the **Let's get you signed in** page, enter the Microsoft Entra credentials, and then select **Sign in**.
+
+Now the device is Microsoft Entra joined to the organization's subscription.
+
+---
 
 > [!IMPORTANT]
 >
@@ -169,6 +225,20 @@ Once the device is joined to Microsoft Entra ID, users sign in with their Micros
 Figure 8: Sign in to Windows 10 with a Microsoft Entra account.
 
 ### Step 4: Verify that Enterprise edition is enabled
+
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10)
+
+To verify the Windows Enterprise E3 or E5 subscription, go to **Settings**, select **Update & Security**, and select **Activation**.
+
+If there are any problems with the Windows Enterprise E3 or E5 license or the activation of the license, the **Activation** panel displays the appropriate error message or status. This information can be used to help diagnose the licensing and activation process.
+
+### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11)
+
+To verify the Windows Enterprise E3 or E5 subscription, go to **Settings**, select **Update & Security**, and select **Activation**.
+
+If there are any problems with the Windows Enterprise E3 or E5 license or the activation of the license, the **Activation** panel displays the appropriate error message or status. This information can be used to help diagnose the licensing and activation process.
+
+---
 
 To verify the Windows Enterprise E3 or E5 subscription, go to **Settings**, select **Update & Security**, and select **Activation**.
 
