@@ -5878,7 +5878,7 @@ The following fields are available:
 - **showLocation**  Show Location
 - **showMicrophone** Show Microphone  
 - **showNetwork**  Show Network
-- **showNotificationCenter**  
+- **showNotificationCenter** Show Notification Center
 - **showPower**  Show Power
 - **showVolume**  Show Volume
 - **smallIcons**  Small icons
