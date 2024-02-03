@@ -9,7 +9,7 @@ ms.topic: article
 
 Digital signage can be a useful and exciting business tool. Use digital signs to showcase your products and services, to display testimonials, or to advertise promotions and campaigns. A digital sign can be a static display, such as a building directory or menu, or it can be dynamic, such as repeating videos or a social media feed.
 
-For digital signage, simply select a digital sign player as your kiosk app. You can also use [Microsoft Edge in kiosk mode](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy) or the Kiosk Browser app, and configure it to show your online content.
+For digital signage, simply select a digital sign player as your kiosk app. You can also use [Microsoft Edge in kiosk mode](/DeployEdge/microsoft-edge-configure-kiosk-mode) or the Kiosk Browser app, and configure it to show your online content.
 
 >[!TIP]
 >Kiosk Browser can also be used in [single-app kiosks](kiosk-single-app.md) and [multi-app kiosk](lock-down-windows-10-to-specific-apps.md) as a web browser. For more information, see [Guidelines for web browsers](guidelines-for-assigned-access-app.md#guidelines-for-web-browsers).

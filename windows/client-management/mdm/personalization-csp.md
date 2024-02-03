@@ -1,7 +1,7 @@
 ---
 title: Personalization CSP
 description: Learn more about the Personalization CSP.
-ms.date: 01/18/2024
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -127,7 +127,7 @@ An http or https Url to a jpg, jpeg or png image that needs to be downloaded and
 
 <!-- Device-CompanyName-Description-Begin -->
 <!-- Description-Source-DDF -->
-The name of the company to be displayed on the sign-in screen. This setting is currently available for boot to cloud shared pc mode only.
+This represents the name of the company. It can be at most 30 characters long. This setting is currently available only for boot to cloud shared pc mode to display the company name on sign-in screen.
 <!-- Device-CompanyName-Description-End -->
 
 <!-- Device-CompanyName-Editable-Begin -->
