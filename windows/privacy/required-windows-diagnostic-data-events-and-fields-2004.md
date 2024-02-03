@@ -5705,39 +5705,36 @@ The following fields are available:
 
 ### Microsoft.Surface.Mcu.Prod.CriticalLog
 
-No content is currently available.
+Error information from Surface device firmware.
 
 The following fields are available:
 
-- **CrashLog**  No content is currently available.
-- **criticalLogSize**  No content is currently available.
-- **CUtility::GetTargetNameA(target)**  No content is currently available.
-- **CUtility::GetTargetNameA(Target)**  No content is currently available.
-- **GetTargetNameA(target)**  No content is currently available.
-- **productId**  No content is currently available.
-- **uniqueId**  No content is currently available.
+- **CrashLog**  MCU crash log
+- **criticalLogSize** Log size
+- **CUtility::GetTargetNameA(target)**  Product identifier.
+- **productId**  Product identifier
+- **uniqueId**  Correlation ID that can be used with Watson to get more details about the failure.
 
 
 ### Microsoft.Surface.SMLS.Pcc.PccTelemetry
 
-No content is currently available.
+Surface SMLS telemetry data
 
 The following fields are available:
 
-- **ModelData**  No content is currently available.
-- **ModelIndex**  No content is currently available.
-- **smlsVersion**  No content is currently available.
-- **SmlsVersion**  No content is currently available.
-- **Time**  No content is currently available.
+- **ModelData**  Surface SMLS Telemetry data
+- **ModelIndex**  Machine Learning Model number
+- **smlsVersion**  SMLS (Surface Machine Learning Service) version
+- **Time**  DateTime of event
 
 
 ### Microsoft.Surface.SystemInfo.Prod.OsImageName
 
-No content is currently available.
+This event sends information about the Operating System image name to Microsoft. It enables the Surface team to improve our customer's experience.
 
 The following fields are available:
 
-- **szOsImageName**  No content is currently available.
+- **szOsImageName**  This is the image name that is running on the device.
 
 
 ### Microsoft.Windows.Defender.Engine.Maps.Heartbeat
@@ -5791,60 +5788,61 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateStarted
 
-No content is currently available.
+Event that indicates secure boot update has started.
 
 The following fields are available:
 
-- **AvailableUpdates**  No content is currently available.
-- **SecureBootUpdateCaller**  No content is currently available.
+- **AvailableUpdates**  Number of available secure boot updates.
+- **SecureBootUpdateCaller**  Enum value indicating if this is a servicing or an upgrade.
 
 
 ### Microsoft.Windows.Shell.StateCapture.TrayStateCapture
 
-No content is currently available.
+Captures numerous global settings and state involving how user has configured their Taskbar.
 
 The following fields are available:
 
-- **autoHideDesktop**  No content is currently available.
-- **autoHideTablet**  No content is currently available.
-- **cortanaButtonState**  No content is currently available.
-- **decoupledCortanaButtonState**  No content is currently available.
-- **feedsDisabledReason**  No content is currently available.
-- **feedsState**  No content is currently available.
-- **firstPartyToolbarsInUse**  No content is currently available.
-- **lockedMoveTaskbar**  No content is currently available.
-- **lockedSizeTaskbar**  No content is currently available.
-- **monitorCount**  No content is currently available.
-- **multiDisplayButtonPlacement**  No content is currently available.
-- **multiDisplayTaskbar**  No content is currently available.
-- **overflowAllowed**  No content is currently available.
-- **overflowItemCount**  No content is currently available.
-- **peekToPreviewDesktop**  No content is currently available.
-- **shellFeedsHoverMode**  No content is currently available.
-- **shellFeedsTaskbarDisplayMode**  No content is currently available.
-- **shellFeedsUpdateMode**  No content is currently available.
-- **showAppsInTablet**  No content is currently available.
-- **showClock**  No content is currently available.
-- **showInkWorkspace**  No content is currently available.
-- **showInputIndicator**  No content is currently available.
-- **showLocation**  No content is currently available.
-- **showMeetNow**  No content is currently available.
-- **showMicrophone**  No content is currently available.
-- **showNetwork**  No content is currently available.
-- **showNotificationCenter**  No content is currently available.
-- **showPower**  No content is currently available.
-- **showVolume**  No content is currently available.
-- **smallIcons**  No content is currently available.
-- **taskbarBadging**  No content is currently available.
-- **taskViewButtonState**  No content is currently available.
-- **thirdPartyToolbarsInUse**  No content is currently available.
-- **toolbarsCount**  No content is currently available.
-- **toolbarsShowing**  No content is currently available.
-- **toolbarsThirdPartyDefined**  No content is currently available.
-- **touchKeyboardDesktop**  No content is currently available.
-- **touchKeyboardTablet**  No content is currently available.
-- **triggerType**  No content is currently available.
-- **usePowershell**  No content is currently available.
+- **autoHideDesktop**  Auto Hide Desktop
+- **autoHideTablet**  Auto Hide Tablet
+- **cortanaButtonState**  Cortana button state
+- **decoupledCortanaButtonState**  Decoupled Cortana button state
+- **feedsDisabledReason**  Feeds disabled reason
+- **feedsState**  Feeds state
+- **firstPartyToolbarsInUse**  First Party toolbars in Use
+- **lockedMoveTaskbar**  Locked Move Taskbar
+- **lockedSizeTaskbar**  Locked Size Taskbar
+- **monitorCount**  Monitor count
+- **multiDisplayButtonPlacement**  Multi display button placement
+- **multiDisplayTaskbar**  Multi display taskbar
+- **overflowAllowed**  Overflow allowed
+- **overflowItemCount**  Overflow item content
+- **peekToPreviewDesktop** Peek to Preview Desktop
+- **shellFeedsHoverMode**  ShellFeeds Hover mode
+- **shellFeedsTaskbarDisplayMode**  ShellFeeds Taskbar Display mode
+- **shellFeedsUpdateMode** ShellFeeds Update mode
+- **showAppsInTablet**  Shows apps in tablet
+- **showClock**  Show Clock
+- **showInkWorkspace**  Show Ink workspace
+- **showInputIndicator** Show Input indicator  
+- **showLocation**  Show Location
+- **showMeetNow**  Show Meet Now
+- **showMicrophone** Show Microphone  
+- **showNetwork**  Show Network
+- **showNotificationCenter**  Show Notification Center
+- **showPower**  Show Power
+- **showVolume**  Show Volume
+- **smallIcons**  Small icons
+- **taskbarBadging**  Taskbar badging
+- **taskViewButtonState**  Task View button state
+- **thirdPartyToolbarsInUse**  Third part toolbars in use
+- **toolbarsCount**  Toolbars count
+- **toolbarsShowing**  Toolbars showing
+- **toolbarsThirdPartyDefined**  Toolbars third party defined
+- **touchKeyboardDesktop**  Touch keyboard desktop
+- **touchKeyboardTablet**  Touch keyboard tablet
+- **triggerType**  Trigger type
+- **usePowershell**  Use PowerShell
+
 
 
 ## Privacy consent logging events
@@ -8215,13 +8213,13 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.BeginGetFreeEntitlement
 
-No content is currently available.
+Tracks the beginning of the call to get a free app entitlement.
 
 The following fields are available:
 
-- **CampaignId**  No content is currently available.
-- **StoreId**  No content is currently available.
-- **UseDeviceId**  No content is currently available.
+- **CampaignId**  Marketing Campaign Identifier.
+- **StoreId**  App Store Catalog Id.
+- **UseDeviceId**  Boolean value to select whether the entitlement should be a device versus a user entitlement.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.BeginGetInstalledContentIds
@@ -8315,14 +8313,14 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.EndGetFreeEntitlement
 
-No content is currently available.
+Telemetry is fired at the end of the call to request an free app entitlement, which will make a server call to get the entitlement.
 
 The following fields are available:
 
-- **CampaignId**  No content is currently available.
-- **HResult**  No content is currently available.
-- **StoreId**  No content is currently available.
-- **UseDeviceId**  No content is currently available.
+- **CampaignId**  Campaign marketing Id.
+- **HResult**  Error result.
+- **StoreId**  Store Catalog Id of item requesting ownership.
+- **UseDeviceId**  Boolean value to select whether the entitlement should be a device versus a user entitlement.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.EndGetInstalledContentIds
@@ -9481,15 +9479,15 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.PolicyReader.GPPolicyRefresh
 
-No content is currently available.
+This event enables us to harden the accuracy of the Windows update Group Policies configured by better tracking policy changes.
 
 The following fields are available:
 
-- **ExecutionTimeMs**  No content is currently available.
-- **PoliciesConfigured**  No content is currently available.
-- **PolicyHashChanged**  No content is currently available.
-- **RefreshedPolicies**  No content is currently available.
-- **StatusCode**  No content is currently available.
+- **ExecutionTimeMs**  This is the execution time in milliseconds
+- **PoliciesConfigured**  This shows if the Windows update policies are configured.
+- **PolicyHashChanged**  This shows if a policy hash has changed.
+- **RefreshedPolicies**  This is a list of all of the policies that changed since the last configuration.
+- **StatusCode**  This is the status of the overall group policy refresh.
 
 
 ### Microsoft.Windows.Update.Ux.MusNotification.EnhancedEngagedRebootUxState
