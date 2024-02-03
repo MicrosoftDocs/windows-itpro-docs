@@ -1,14 +1,14 @@
 ---
 description: Learn more about the Windows 11 diagnostic data gathered at the basic level.
 title: Required diagnostic events and fields for Windows 11, version 21H2
-ms.prod: windows-client
-ms.technology: itpro-privacy
-localizationpriority: high
+ms.service: windows-client
+ms.subservice: itpro-privacy
+ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 09/26/2023
-ms.collection: highpri
+ms.date: 02/27/2024
+ms.collection: privacy-windows
 ms.topic: reference
 ---
 
@@ -2988,7 +2988,6 @@ The following fields are available:
 - **PreviousExecutionState**  Windows Mixed Reality Portal app prior execution state.
 - **wilActivity**  Windows Mixed Reality Portal app wilActivity ID.
 
-
 ### Microsoft.Windows.Shell.HolographicFirstRun.AppLifecycleService_Resuming
 
 This event indicates Windows Mixed Reality Portal app resuming. This event is also used to count WMR device. The data collected with this event is used to keep Windows performing properly.
@@ -3963,6 +3962,55 @@ The following fields are available:
 
 ## Other events
 
+### Microsoft.Gaming.Install.MinecraftMigration
+
+Minecraft specific event to track updates from one app version to another.
+
+The following fields are available:
+
+- **FailurePhase**  Failure phase.
+- **MigrationHr**  Migration HResult.
+- **TimeTakenMs**  Total migration time in milliseconds.
+- **UWPPackageFullName**  Full name of the UWP package.
+
+
+### Microsoft.Gaming.PurchaseExperience.Error
+
+Event fired when an error is encountered during the Purchase Experience.
+
+The following fields are available:
+
+- **callstack**  The callstack where the error occurred.
+- **customAttributes**  GTL custom attributes section for each app to add its own additional data.
+- **errorCode**  errorCode indicating the error.
+- **extendedData**  GTL extended data section for each app to add its own extensions.
+- **identifier**  error identifier.
+- **message**  error message.
+
+
+### Microsoft.Gaming.PurchaseExperience.PageAction
+
+Event fired when the user interacts with any CTAs during the Purchase Experience.
+
+The following fields are available:
+
+- **countsAsFeatureUsage**  GTL flag to help attribute page action to a feature.
+- **customAttributes**  GTL custom attributes section for each app to add its own additional data.
+- **extendedData**  GTL extended data section for each app to add its own extensions.
+- **timeToActionMs**  Time in MS for this Page Action.
+
+
+### Microsoft.Surface.Mcu.Prod.CriticalLog
+
+Error information from Surface device firmware.
+
+The following fields are available:
+
+- **CUtility::GetTargetNameA(target)**  Product identifier.
+- **productId**  Product identifier
+- **uniqueId**  Correlation ID that can be used with Watson to get more details about the failure.
+
+
 ### Microsoft.Windows.Defender.Engine.Maps.Heartbeat
 
 Heartbeat is sent once a day to indicate Defender is running and functional. Event includes necessary information to understand health of Defender on the device.
@@ -3987,6 +4035,25 @@ The following fields are available:
 - **ShouldHashIds**  Do we have ISO Compliance requirement to hash IDs for e5
 - **SignatureRing**  Signature ring used for deployments
 - **SigVersion**  Version of signature VDMs
+
+
+### Microsoft.Windows.SecureBootTelemetry.SecureBootEncodeUEFI
+
+Information about Secure Boot configuration including the PK, KEKs, DB and DBX files on the device.
+
+The following fields are available:
+
+- **SecureBootUEFIEncoding**  Information about the PK, KEKs, DB and DBX files on the device.
+
+
+### XboxSystemFlightRecorder.SmcErrorLog
+
+This event collects critical log files related to Xbox hardware failures.
+
+The following fields are available:
+
+- **SmcerrLog**  Binary payload of the error log from the Xbox console.
+
 
 ## Privacy consent logging events
 
@@ -5707,6 +5774,17 @@ The following fields are available:
 - **WUContentId**  The Windows Update content ID.
 
 
+### Microsoft.Windows.StoreAgent.Telemetry.BeginGetFreeEntitlement
+
+Tracks the beginning of the call to get a free app entitlement.
+
+The following fields are available:
+
+- **CampaignId**  Marketing Campaign Identifier.
+- **StoreId**  App Store Catalog Id.
+- **UseDeviceId**  Boolean value to select whether the entitlement should be a device versus a user entitlement.
+
+
 ### Microsoft.Windows.StoreAgent.Telemetry.BeginGetInstalledContentIds
 
 This event is sent when an inventory of the apps installed is started to determine whether updates for those apps are available. It's used to help keep Windows up-to-date and secure.
@@ -5794,6 +5872,18 @@ This event is sent when an app update requires an updated Framework package and 
 The following fields are available:
 
 - **HResult**  The result code of the last action performed before this operation.
+
+
+### Microsoft.Windows.StoreAgent.Telemetry.EndGetFreeEntitlement
+
+Telemetry is fired at the end of the call to request an free app entitlement, which will make a server call to get the entitlement.
+
+The following fields are available:
+
+- **CampaignId**  Campaign marketing Id.
+- **HResult**  Error result.
+- **StoreId**  Store Catalog Id of item requesting ownership.
+- **UseDeviceId**  Boolean value to select whether the entitlement should be a device versus a user entitlement.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.EndGetInstalledContentIds
@@ -6754,3 +6844,6 @@ The following fields are available:
 - **Flags**  The flags passed to the hard reserve adjustment function.
 - **PendingHardReserveAdjustment**  The final change to the hard reserve size.
 - **UpdateType**  Indicates whether the change is an increase or decrease in the size of the hard reserve.
+
+
+
