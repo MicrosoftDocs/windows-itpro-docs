@@ -5850,7 +5850,7 @@ The following fields are available:
 
 - **AvailableUpdates**  Number of available secure boot updates.
 - **SecureBootUpdateCaller**  Enum value indicating if this is a servicing or an upgrade.
-- 
+
 
 ### Microsoft.Windows.Shell.StateCapture.TrayStateCapture
 
