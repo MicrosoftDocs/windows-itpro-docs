@@ -13,6 +13,8 @@ A restricted user experience allows you to control which applications are allowe
 
 The examples describe the steps using Windows Configuration Designer, Microsoft Intune, PowerShell, and group policy.
 
+:::image type="content" source="images/quickstart-restricted-experience.png" alt-text="Screenshot of the Windows desktop used for the quickstart.":::
+
 ## Prerequisites
 
 <!-- Required: Prerequisites - H2
