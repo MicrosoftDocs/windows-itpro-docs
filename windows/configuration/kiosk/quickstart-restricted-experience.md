@@ -15,11 +15,12 @@ This quickstart provides practical examples of how to configure a restricted use
 
 ## Prerequisites
 
-To complete this quickstart, you need:
+Here's a list of requirements to complete this quickstart:
 
 - A Windows 11 device
-- Microsoft Intune, or third-party MDM solution, if you want to configure the settings using MDM
+- Microsoft Intune, or a third-party MDM solution, if you want to configure the settings using MDM
 - Windows Configuration Designer, if you want to configure the settings using a provisioning package
+- Access to the [psexec tool](/sysinternals/downloads/psexec), if you want to test the configuration using Windows PowerShell
 
 ## Configure a restricted user experience
 
