@@ -2,14 +2,14 @@
 title: "Quickstart: Configure a restricted user experience"
 description: Learn how to configure a restricted user experience using Windows Configuration Designer, Microsoft Intune, PowerShell or GPO.
 ms.topic: quickstart
-ms.date: 01/29/2024
+ms.date: 02/05/2024
 appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ---
 
 # Quickstart: Configure a restricted user experience
 
-With a *restricted user experience* you can control the applications allowed in a locked down Windows desktop.
+With a *restricted user experience*, you can control the applications allowed in a locked down Windows desktop.
 
 This quickstart provides practical examples of how to configure a restricted user experience on Windows 11. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
 

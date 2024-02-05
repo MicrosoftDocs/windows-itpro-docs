@@ -9,11 +9,11 @@ items:
   href: kiosk-prepare.md
 - name: Configure digital signs
   href: setup-digital-signage.md
-- name: Configure a single-app kiosk
+- name: Configure a kiosk
   href: kiosk-single-app.md
-- name: Configure a multi-app kiosk for Windows 10
+- name: Configure a restricted user experience for Windows 10
   href: lock-down-windows-10-to-specific-apps.md
-- name: Configure a multi-app kiosk for Windows 11
+- name: Configure a restricted user experience for Windows 11
   href: lock-down-windows-11-to-specific-apps.md
 - name: Kiosk reference information
   items:
