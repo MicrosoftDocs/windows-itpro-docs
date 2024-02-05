@@ -10,8 +10,9 @@ Configure your devices using PowerShell scripts via the [MDM Bridge WMI Provider
 
 > [!IMPORTANT]
 > For all device settings, the WMI Bridge client must be executed as SYSTEM (LocalSystem) account.
->
-> To test a PowerShell script, you can:
-> 1. [Download the psexec tool](/sysinternals/downloads/psexec)
-> 1. Open an elevated command prompt and run: `psexec.exe -i -s powershell.exe`
-> 1. Run the script in the PowerShell session
+
+To test the PowerShell script, you can:
+
+1. [Download the psexec tool](/sysinternals/downloads/psexec)
+1. Open an elevated command prompt and run: `psexec.exe -i -s powershell.exe`
+1. Run the script in the PowerShell session
