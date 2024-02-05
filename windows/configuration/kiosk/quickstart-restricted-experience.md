@@ -165,9 +165,9 @@ After the settings are applied, reboot the device. A user account named `Library
 ## Next steps
 
 > [!div class="nextstepaction"]
-> To learn more about how to configure Windows to execute as a kiosk or as a restricted user experience see:
+> Learn more how to configure Windows to execute as a restricted user experience:
 >
-> [Configure a multi-app kiosk >](lock-down-windows-11-to-specific-apps.md)
+> [Configure a restricted user experience >](lock-down-windows-11-to-specific-apps.md)
 
 <!--links-->
 
