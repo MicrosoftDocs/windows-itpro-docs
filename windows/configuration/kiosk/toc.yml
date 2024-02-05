@@ -37,5 +37,3 @@ items:
       href: kiosk-mdm-bridge.md
     - name: Troubleshoot kiosk mode issues
       href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
-- name: Lockdown features from Windows Embedded 8.1 Industry
-  href: lockdown-features-windows-10.md

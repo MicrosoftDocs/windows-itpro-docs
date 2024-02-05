@@ -78,11 +78,12 @@ Start.Run… shell:appsfolder to open File Explorer on the AppsFolder.
 
 To get the names and AUMIDs for all apps installed for the current user, perform the following steps:
 
-1. Open **Run**, enter **shell:Appsfolder**, and select **OK**.
-1. A File Explorer window opens. Press **Alt** > **View** > **Choose details**.
-1. In the **Choose Details** window, select **AppUserModelId**, and then select **OK**. (You might need to change the **View** setting from **Tiles** to **Details**.)
+1. Select **Start** > **Run**, enter `shell:Appsfolder`, and select **OK**
+1. A File Explorer window opens. Press <kbd>Alt</kbd>+<kbd>V</kbd> > **Choose details**
+1. In the **Choose Details** window, select **AppUserModelId**, and then select **OK**. (You might need to c
+1. Change the **View** setting from **Tiles** to **Details**
 
-![Image of the Choose Details options.](images/aumid-file-explorer.png)
+:::image type="content" source="images/aumid-file-explorer.png" alt-text="Screenshot of the File Explorer showing the AUMID details." border="false":::
 
 #### [:::image type="icon" source="../images/icons/registry.svg"::: **Registry**](#tab/registry)
 
