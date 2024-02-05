@@ -167,7 +167,7 @@ After the settings are applied, reboot the device. A user account named `Library
 > [!div class="nextstepaction"]
 > Learn more how to configure Windows to execute as a restricted user experience:
 >
-> [Configure a restricted user experience >](lock-down-windows-11-to-specific-apps.md)
+> [Configure a restricted user experience](lock-down-windows-11-to-specific-apps.md)
 
 <!--links-->
 
