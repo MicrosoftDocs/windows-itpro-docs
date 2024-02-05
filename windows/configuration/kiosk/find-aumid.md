@@ -2,7 +2,7 @@
 title: Find the Application User Model ID of an installed app
 description: Learn how to find the Application User Model ID (AUMID) of the appications installed on a Windows device.
 ms.topic: how-to
-ms.date: 12/31/2017
+ms.date: 02/05/2023
 ---
 
 # Find the Application User Model ID of an installed app
@@ -14,7 +14,9 @@ To configure Assigned Access, you must use the AUMID of the apps installed on a 
 
 ## How to find the AUMID
 
-You can find the AUMID by using Windows PowerShell, File Explorer, or the registry.
+You can find an application's AUMID by using Windows PowerShell, File Explorer, or the registry.
+
+Follow the instructions to retrieve AUMIDs, selecting the tool of your choice.
 
 #### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 

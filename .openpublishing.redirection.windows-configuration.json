@@ -579,6 +579,11 @@
       "source_path": "windows/configuration/kiosk/lockdown-features-windows-10.md",
       "redirect_url": "/previous-versions/windows/it-pro/windows-10/configuration/kiosk/lockdown-features-windows-10",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/find-the-application-user-model-id-of-an-installed-app.md",
+      "redirect_url": "/windows/configuration/kiosk/find-aumid",
+      "redirect_document_id": false
     }
   ]
 }
