@@ -7,7 +7,7 @@ ms.collection:
  - tier3
  - must-keep
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: aaroncz
 ms.topic: article
@@ -31,7 +31,7 @@ Use the UE-V template generator to monitor, discover, and capture the locations 
 
 ## Standard and non-standard settings locations
 
-The UE-V template generator helps you identify where applications search for settings files and registry settings that applications use to store settings information. The generator discovers settings only in locations that are accessible to a standard user. Settings that are stored in other locations are excluded. 
+The UE-V template generator helps you identify where applications search for settings files and registry settings that applications use to store settings information. The generator discovers settings only in locations that are accessible to a standard user. Settings that are stored in other locations are excluded.
 
 Discovered settings are grouped into two categories: **Standard** and **Non-standard**. Standard settings are recommended for synchronization, and UE-V can readily capture and apply them. Non-standard settings can potentially synchronize settings but, because of the rules that UE-V uses, these settings might not consistently or dependably synchronize settings. These settings might depend on temporary files, result in unreliable synchronization, or might not be useful. These settings locations are presented in the UE-V template generator. You can choose to include or exclude them on a case-by-case basis.
 
@@ -101,7 +101,7 @@ Use the UE-V template generator to edit settings location templates. When the re
 
     > [!NOTE]
     > A settings location template is unique because of the template **ID**. If you copy the template and rename the .xml file, template registration fails because UE-V reads the template **ID** tag in the .xml file to determine the name, not the file name of the .xml file. UE-V also reads the **Version** number to know if anything has changed. If the version number is higher, UE-V updates the template.
-     
+
 2.  Open the settings location template file with an XML editor.
 
 3.  Edit the settings location template file. All changes must conform to the UE-V schema file that is defined in [SettingsLocationTempate.xsd](uev-application-template-schema-reference.md). By default, a copy of the .xsd file is located in \\ProgramData\\Microsoft\\UEV\\Templates.
@@ -131,21 +131,6 @@ To validate a UE-V settings location template with the UE-V template generator:
 5.  Click **Close** to close the Settings Template Wizard. Exit the UE-V template generator application.
 
     After you validate the settings location template for an application, you should test the template. Deploy the template in a lab environment before you put it into a production environment in enterprise.
-
-## Next steps
-
-## <a href="" id="share"></a>Share settings location templates with the Template Gallery
-
-The [User Experience Virtualization Template Gallery](https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=UE-V&f%5B0%5D.Text=UE-V) enables administrators to share their UE-V settings location templates. Upload your settings location templates to the gallery for other users to use, and download templates that other users have created.
-
-Before you share a settings location template on the UE-V template gallery, ensure it doesn't contain any personal or company information. You can use any XML viewer to open and view the contents of a settings location template file. The following template values should be reviewed before you share a template with anyone outside your company.
-
--   Template Author Name – Specify a general, non-identifying name for the template author name or exclude this data from the template.
-
--   Template Author Email – Specify a general, non-identifying template author email or exclude this data from the template.
-
-Before you deploy any settings location template that you've downloaded from the UE-V gallery, you should first test the template to ensure that the application settings synchronize settings correctly in a test environment.
-
 
 ## Related topics
 
