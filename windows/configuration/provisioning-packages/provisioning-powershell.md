@@ -1,24 +1,12 @@
 ---
-title: PowerShell cmdlets for provisioning Windows 10/11 (Windows 10/11)
+title: PowerShell cmdlets for provisioning Windows 10/11
 description: Learn more about the Windows PowerShell cmdlets that you can use with Provisioning packages on Windows10/11 client desktop devices.
-ms.prod: windows-client
-author: lizgt2000
-ms.author: lizlong
 ms.topic: article
-ms.localizationpriority: medium
-ms.reviewer: gkomatsu
-manager: aaroncz
-ms.technology: itpro-configure
+
 ms.date: 12/31/2017
 ---
 
 # PowerShell cmdlets for provisioning Windows client (reference)
-
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 Windows client includes Provisioning PowerShell cmdlets. These cmdlets make it easy to script the following functions.
 
@@ -59,7 +47,7 @@ Windows client includes Provisioning PowerShell cmdlets. These cmdlets make it e
 
   - `Install-TrustedProvisioningCertificate <path to local certificate file on disk>`
 
-- **Get-TrustedProvisioningCertificate**: Lists all installed trusted provisioning certificates. Use this cmdlet to get the certificate thumbprint to use with the `Uninstall-TrustedProvisioningCertificate` cmdlet. 
+- **Get-TrustedProvisioningCertificate**: Lists all installed trusted provisioning certificates. Use this cmdlet to get the certificate thumbprint to use with the `Uninstall-TrustedProvisioningCertificate` cmdlet.
 
   Syntax:
 
@@ -74,7 +62,7 @@ Windows client includes Provisioning PowerShell cmdlets. These cmdlets make it e
 >[!NOTE]
 > You can use Get-Help to get usage help on any command. For example: `Get-Help Add-ProvisioningPackage`
 
-Trace logs are captured when using cmdlets. The following logs are available in the logs folder after the cmdlet completes: 
+Trace logs are captured when using cmdlets. The following logs are available in the logs folder after the cmdlet completes:
 
 - ProvTrace.&lt;timestamp&gt;.ETL - ETL trace file, unfiltered
 - ProvTrace.&lt;timestamp&gt;.XML - ETL trace file converted into raw trace events, unfiltered
@@ -85,7 +73,6 @@ Trace logs are captured when using cmdlets. The following logs are available in 
 
 >[!NOTE]
 >When applying provisioning packages using Powershell cmdlets, the default behavior is to suppress the prompt that appears when applying an unsigned provisioning package. This is by design so that provisioning packages can be applied as part of existing scripts.
-
 
 ## Related articles
 

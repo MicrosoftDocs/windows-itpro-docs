@@ -9,7 +9,7 @@ items:
   - name: Deploy applications to Windows 11 SE
     href: tutorial-deploy-apps-winse/toc.yml
 - name: Concepts
-  items: 
+  items:
     - name: Windows 11 SE
       items:
       - name: Overview
@@ -47,7 +47,7 @@ items:
       - name: Configure federation between Google Workspace and Microsoft Entra ID
         href: configure-aad-google-trust.md
     - name: Configure Shared PC
-      href: /windows/configuration/set-up-shared-or-guest-pc?context=/education/context/context
+      href: /windows/configuration/shared-pc/set-up-shared-or-guest-pc?context=/education/context/context
     - name: Get and deploy Minecraft Education
       href: get-minecraft-for-education.md
     - name: Use the Set up School PCs app
@@ -65,6 +65,6 @@ items:
     - name: Take a Test technical reference
       href: take-a-test-app-technical.md
     - name: Shared PC technical reference
-      href: /windows/configuration/shared-pc-technical?context=/education/context/context
+      href: /windows/configuration/shared-pc/shared-pc-technical?context=/education/context/context
 
-      
+
