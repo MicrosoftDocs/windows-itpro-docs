@@ -7,33 +7,21 @@ ms.date: 01/29/2024
 
 # Quickstart: Configure a restricted user experience
 
-This quickstart provides practical examples of how to configure a restricted user experience on Windows.
-
 A restricted user experience allows you to control which applications are allowed to be executed in a locked down Windows desktop.
 
-The examples describe the steps using Windows Configuration Designer, Microsoft Intune, PowerShell, and group policy.
-
-:::image type="content" source="images/quickstart-restricted-experience.png" alt-text="Screenshot of the Windows desktop used for the quickstart.":::
+This quickstart provides practical examples of how to configure a restricted user experience on Windows. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell.
 
 ## Prerequisites
 
-<!-- Required: Prerequisites - H2
+To complete this quickstart, you need:
 
-"Prerequisites" must be the first H2 in the article.
+- A Windows 11 device
+- Access to Microsoft Intune
+- Windows Configuration Designer
 
-List any items that are needed for the quickstart,
-such as permissions or software.
+## Configure a restricted user experience
 
-If the user needs to sign in to a portal to do
-the quickstart, provide instructions and a link.
-
-If there aren't any prerequisites, in a new paragraph
-under the "Prerequisites" H2, enter "None" in plain text
-(not as a bulleted list item).
-
--->
-
-## Open [Cloud Shell, Azure CLI, or PowerShell]
+Select one of the tabs:
 
 #### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune**](#tab/intune)
 
@@ -102,7 +90,7 @@ Content-Type: application/json
 
 Follow the steps in [Apply a provisioning package][WIN-2] to apply the package that you created.
 
-#### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PowerShell**](#tab/ps)
+#### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 
 Configure your devices using PowerShell scripts via the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal). For more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider).
 
@@ -208,10 +196,17 @@ Write-Output "Successfully applied Assigned Access configuration"
 
 ---
 
+## User experience
+
+After the settings are applied, reboot the device. A user account names `Library Kiosk` is automatically signed in, with access to a limited set of applications, which are pinned to the Start menu.
+
+:::image type="content" source="images/quickstart-restricted-experience.png" alt-text="Screenshot of the Windows desktop used for the quickstart.":::
+
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Next sequential article title](link.md)
+> To learn more about how to configure Windows to execute as a kiosk or as a restricted user experience see:
+> [Overview](link.md)
 
 <!--links-->
 
