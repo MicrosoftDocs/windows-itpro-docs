@@ -158,7 +158,7 @@ Write-Output "Successfully applied Assigned Access configuration"
 
 ## User experience
 
-After the settings are applied, reboot the device. A user account names `Library Kiosk` is automatically signed in, with access to a limited set of applications, which are pinned to the Start menu.
+After the settings are applied, reboot the device. A user account named `Library Kiosk` is automatically signed in, with access to a limited set of applications, which are pinned to the Start menu.
 
 :::image type="content" source="images/quickstart-restricted-experience.png" alt-text="Screenshot of the Windows desktop used for the quickstart." border="false":::
 
