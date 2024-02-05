@@ -34,8 +34,8 @@
         "education",
         "tier2"
       ],
-      "ms.prod": "windows-client",
-      "ms.technology": "itpro-edu",
+      "ms.subservice": "itpro-edu",
+      "ms.service": "windows-client",
       "author": "paolomatarazzo",
       "ms.author": "paoloma",
       "manager": "aaroncz",
@@ -51,10 +51,10 @@
         }
       },
       "titleSuffix": "Windows Education",
-      "contributors_to_exclude": [ 
-        "rjagiewich", 
-        "traya1", 
-        "rmca14", 
+      "contributors_to_exclude": [
+        "rjagiewich",
+        "traya1",
+        "rmca14",
         "claydetels19",
         "Kellylorenebaker",
         "jborsecnik",
