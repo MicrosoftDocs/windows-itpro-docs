@@ -1,26 +1,19 @@
 ---
-title: Time (Windows 10)
+title: Time
 description: This section describes the Time settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
-manager: aaroncz
 ms.topic: reference
-ms.collection: must-keep
-ms.technology: itpro-configure
-ms.date: 12/31/2017
+ms.date: 01/25/2024
 ---
 
 # Time
 
-Use **Time** to configure settings for time zone setup for Windows 10, version (TBD) and later. 
+Use **Time** to configure settings for time zone setup for Windows 10, version (TBD) and later.
 
 ## Applies to
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| [ProvisionSetTimeZone](#provisionsettimezone) | ✔️ |  |  |  |
+| [ProvisionSetTimeZone](#provisionsettimezone) | ✅ |  |  |  |
 
 ## ProvisionSetTimeZone
 
@@ -33,6 +26,3 @@ Set to **False** for time zone assignment to occur when the first user signs in.
 
 >[!NOTE]
 >Do not set **Time > ProvisionSetTimeZone** to **False** and also set a time zone in **Policies > TimeLanguageSettings > ConfigureTimeZone**.
-
-
-

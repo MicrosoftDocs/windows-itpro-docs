@@ -46,7 +46,7 @@ To enable a federated sign-in experience, the following prerequisites must be me
     - PowerShell scripts that call the [Microsoft Graph API][GRAPH-1]
     - provisioning tools offered by the IdP
 
-    For more information about identity matching, see [Identity matching in Microsoft Entra ID](#identity-matching-in-azure-ad).
+    For more information about identity matching, see [Identity matching in Microsoft Entra ID](#identity-matching-in-microsoft-entra-id).
 1. Licenses assigned to the Microsoft Entra user accounts. It's recommended to assign licenses to a dynamic group: when new users are provisioned in Microsoft Entra ID, the licenses are automatically assigned. For more information, see [Assign licenses to users by group membership in Microsoft Entra ID][AZ-2]
 1. Enable Federated sign-in or Web sign-in on the Windows devices, depending if the devices are shared or assigned to a single student
 
@@ -201,16 +201,12 @@ The following issues are known to affect student shared devices:
 
 For student shared devices, it's recommended to configure the account management policies to automatically delete the user profiles after a certain period of inactivity or disk levels. For more information, see [Set up a shared or guest Windows device][WIN-3].
 
-<a name='preferred-azure-ad-tenant-name'></a>
-
 ### Preferred Microsoft Entra tenant name
 
 To improve the user experience, you can configure the *preferred Microsoft Entra tenant name* feature.\
 When using preferred Microsoft Entra tenant name, the users bypass the disambiguation page and are redirected to the identity provider sign-in page. This configuration can be especially useful for student shared devices, where the disambiguation page is always shown.
 
 For more information about preferred tenant name, see [Authentication CSP - PreferredAadTenantDomainName][WIN-4].
-
-<a name='identity-matching-in-azure-ad'></a>
 
 ### Identity matching in Microsoft Entra ID
 
