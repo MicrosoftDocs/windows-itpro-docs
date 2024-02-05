@@ -7,7 +7,7 @@ ms.date: 01/11/2024
 
 :::row:::
 :::column span="1":::
-:::image type="content" source="../images/insider.png" alt-text="Logo of Windows Insider." border="false":::
+:::image type="content" source="insider.png" alt-text="Logo of Windows Insider." border="false":::
 :::column-end:::
 :::column span="3":::
 > [!IMPORTANT]

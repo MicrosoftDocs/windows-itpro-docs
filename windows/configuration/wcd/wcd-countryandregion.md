@@ -1,16 +1,8 @@
 ---
-title: CountryAndRegion (Windows 10)
+title: CountryAndRegion
 description: This section describes the CountryAndRegion settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
 ms.topic: reference
-ms.collection: must-keep
-ms.date: 04/30/2018
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
+ms.date: 01/25/2024
 ---
 
 # CountryAndRegion (Windows Configuration Designer reference)
@@ -19,8 +11,8 @@ Use to configure a setting that partners must customize to ship Windows devices 
 
 ## Applies to
 
-| Setting groups  | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: |
-| CountryCodeForExtendedCapabilityPrompts | ✔️  | ✔️ |  |  |
+| Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
+|--|:-:|:-:|:-:|:-:|
+| CountryCodeForExtendedCapabilityPrompts | ✅ | ✅ |  |  |
 
-You can set the **CountryCodeForExtendedCapabilityPrompts** setting for **China** to enable additional capability prompts when apps use privacy-sensitive features (such as Contacts or Microphone). 
+You can set the **CountryCodeForExtendedCapabilityPrompts** setting for **China** to enable additional capability prompts when apps use privacy-sensitive features (such as Contacts or Microphone).
