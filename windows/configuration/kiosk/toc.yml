@@ -7,33 +7,39 @@ items:
       href: quickstart-restricted-experience.md
 - name: Prepare a device for kiosk configuration
   href: kiosk-prepare.md
-- name: Configure digital signs
-  href: setup-digital-signage.md
-- name: Configure a kiosk
-  href: kiosk-single-app.md
-- name: Configure a restricted user experience for Windows 10
-  href: lock-down-windows-10-to-specific-apps.md
-- name: Configure a restricted user experience for Windows 11
-  href: lock-down-windows-11-to-specific-apps.md
-- name: Kiosk reference information
+- name: Deployment guides
+  items:
+  - name: Configure digital signs
+    href: setup-digital-signage.md
+  - name: Configure a kiosk
+    href: kiosk-single-app.md
+  - name: Configure a restricted user experience for Windows 10
+    href: lock-down-windows-10-to-specific-apps.md
+  - name: Configure a restricted user experience for Windows 11
+    href: lock-down-windows-11-to-specific-apps.md
+- name: How-to guides
+  items:
+    - name: Find the AUMID of an installed app
+      href: find-aumid.md
+    - name: Use MDM Bridge WMI Provider to create a Windows client kiosk
+      href: kiosk-mdm-bridge.md
+    - name: Use AppLocker to create a Windows 10 kiosk
+      href: lock-down-windows-10-applocker.md
+    - name: Use Shell Launcher to create a Windows client kiosk
+      href: kiosk-shelllauncher.md
+- name: Troubleshooting
+  items:
+    - name: Validate your kiosk configuration
+      href: kiosk-validate.md
+    - name: Troubleshoot kiosk mode issues
+      href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
+- name: Rreference
   items:
     - name: More kiosk methods and reference information
       href: kiosk-additional-reference.md
-    - name: Find the Application User Model ID of an installed app
-      href: find-the-application-user-model-id-of-an-installed-app.md
-    - name: Validate your kiosk configuration
-      href: kiosk-validate.md
-    - name: Guidelines for choosing an app for assigned access (kiosk mode)
+    - name: Guidelines for choosing an app for assigned access
       href: guidelines-for-assigned-access-app.md
     - name: Policies enforced on kiosk devices
       href: kiosk-policies.md
     - name: Assigned access XML reference
       href: kiosk-xml.md
-    - name: Use AppLocker to create a Windows 10 kiosk
-      href: lock-down-windows-10-applocker.md
-    - name: Use Shell Launcher to create a Windows client kiosk
-      href: kiosk-shelllauncher.md
-    - name: Use MDM Bridge WMI Provider to create a Windows client kiosk
-      href: kiosk-mdm-bridge.md
-    - name: Troubleshoot kiosk mode issues
-      href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
