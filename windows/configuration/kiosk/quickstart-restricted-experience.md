@@ -30,8 +30,6 @@ To complete this quickstart, you need:
 >
 > When using this call, authenticate to your tenant in the Graph Explorer window. If it's the first time using Graph Explorer, you may need to authorize the application to access your tenant or to modify the existing permissions. This graph call requires *DeviceManagementConfiguration.ReadWrite.All* permissions.
 
-[!INCLUDE [intune-custom-settings-1](../../../includes/configure/intune-custom-settings-1.md)]
-
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-Type: application/json
@@ -41,10 +39,10 @@ Content-Type: application/json
 
 [!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][MEM-1] with the [AssignedAccess CSP][WIN-3].\
+Alternatively, you can configure devices using a [custom policy][MEM-1] with the [AssignedAccess CSP][WIN-3].
 
-Setting: `./Vendor/MSFT/AssignedAccess/Configuration`
-Value:
+- **Setting:** `./Vendor/MSFT/AssignedAccess/Configuration`
+- **Value:**
 
 [!INCLUDE [quickstart-restricted-experience-xml](includes/quickstart-restricted-experience-xml.md)]
 
@@ -52,8 +50,8 @@ Value:
 
 [!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
 
-Path: `AssignedAccess/MultiAppAssignedAccessSettings`
-Value:
+- **Path:** `AssignedAccess/MultiAppAssignedAccessSettings`
+- **Value:**
 
 [!INCLUDE [quickstart-restricted-experience-xml](includes/quickstart-restricted-experience-xml.md)]
 
@@ -157,7 +155,7 @@ Write-Output "Successfully applied Assigned Access configuration"
 
 After the settings are applied, reboot the device. A user account names `Library Kiosk` is automatically signed in, with access to a limited set of applications, which are pinned to the Start menu.
 
-:::image type="content" source="images/quickstart-restricted-experience.png" alt-text="Screenshot of the Windows desktop used for the quickstart.":::
+:::image type="content" source="images/quickstart-restricted-experience.png" alt-text="Screenshot of the Windows desktop used for the quickstart." border="false":::
 
 ## Next steps
 
