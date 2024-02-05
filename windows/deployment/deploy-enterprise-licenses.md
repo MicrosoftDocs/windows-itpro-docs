@@ -130,31 +130,11 @@ Now the device is Microsoft Entra joined to the organization's subscription.
 
 Now the device is Microsoft Entra joined to the organization's subscription.
 
-### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/autopilot)
+### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Autopilot**](#tab/autopilot)
 
 For the Autopilot experience when joining Microsoft Entra ID, see [User-driven Microsoft Entra join: Deploy the device](/autopilot/tutorial/user-driven/azure-ad-join-deploy-device).
 
 ---
-
-1. During the initial setup, on the **Who owns this PC?** page, select **My organization**, and then select **Next**.
-
-    :::image type="content" source="images/enterprise-e3-who-owns.png" alt-text="A screenshot of the 'Who owns this PC?' page in Windows 10 setup.":::
-
-    Figure 2: The "Who owns this PC?" page in initial Windows 10 setup.
-
-1. On the **Choose how you'll connect** page, select **Join Microsoft Entra ID**, and then select **Next**.
-
-    :::image type="content" source="images/enterprise-e3-choose-how.png" alt-text="A screenshot of the 'Choose how you'll connect' page in Windows 10 setup.":::
-
-    Figure 3: The "Choose how you'll connect" page in initial Windows 10 setup.
-
-1. On the **Let's get you signed in** page, enter the Microsoft Entra credentials, and then select **Sign in**.
-
-    :::image type="content" source="images/enterprise-e3-lets-get.png" alt-text="A screenshot of the 'Let's get you signed in' page in Windows 10 setup.":::
-
-    Figure 4: The "Let's get you signed in" page in initial Windows 10 setup.
-
-Now the device is Microsoft Entra joined to the organization's subscription.
 
 #### Join a device to Microsoft Entra ID when the device is already set up with Windows 10 Pro
 
@@ -186,31 +166,11 @@ Now the device is Microsoft Entra joined to the organization's subscription.
 
 Now the device is Microsoft Entra joined to the organization's subscription.
 
+### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Autopilot**](#tab/autopilot)
+
+For the Autopilot experience when joining Microsoft Entra ID, see [User-driven Microsoft Entra join: Deploy the device](/autopilot/tutorial/user-driven/azure-ad-join-deploy-device).
+
 ---
-
-> [!IMPORTANT]
->
-> Make sure that the user signing in isn't the **BUILTIN/Administrator** account. That user can't use the `+ Connect` action to join a work or school account.
-
-1. Go to **Settings**, select **Accounts**, and select **Access work or school**.
-
-    :::image type="content" source="images/enterprise-e3-connect-to-work-or-school.png" alt-text="A screenshot of the 'Connect to work or school' settings page.":::
-
-    Figure 5: "Connect to work or school" configuration in Settings.
-
-1. In **Set up a work or school account**, select **Join this device to Microsoft Entra ID**.
-
-    :::image type="content" source="images/enterprise-e3-set-up-work-or-school.png" alt-text="A screenshot of the 'Set up a work or school account' wizard.":::
-
-    Figure 6: Set up a work or school account.
-
-1. On the **Let's get you signed in** page, enter the Microsoft Entra credentials, and then select **Sign in**.
-
-    :::image type="content" source="images/enterprise-e3-lets-get-2.png" alt-text="A screenshot of the 'Let's get you signed in' window.":::
-
-    Figure 7: The "Let's get you signed in" window.
-
-Now the device is Microsoft Entra joined to the organization's subscription.
 
 ### Step 2: Pro edition activation
 
@@ -238,15 +198,11 @@ To verify the Windows Enterprise E3 or E5 subscription, go to **Settings**, sele
 
 If there are any problems with the Windows Enterprise E3 or E5 license or the activation of the license, the **Activation** panel displays the appropriate error message or status. This information can be used to help diagnose the licensing and activation process.
 
+### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Autopilot**](#tab/autopilot)
+
+For the Autopilot experience when joining Microsoft Entra ID, see [User-driven Microsoft Entra join: Deploy the device](/autopilot/tutorial/user-driven/azure-ad-join-deploy-device).
+
 ---
-
-To verify the Windows Enterprise E3 or E5 subscription, go to **Settings**, select **Update & Security**, and select **Activation**.
-
-:::image type="content" source="images/enterprise-e3-win-10-activated-enterprise-subscription-active.png" alt-text="A screenshot of verifying Windows Enterprise activation in Settings.":::
-
-Figure 9: Verify Windows 10 Enterprise subscription in Settings.
-
-If there are any problems with the Windows Enterprise E3 or E5 license or the activation of the license, the **Activation** panel displays the appropriate error message or status. This information can be used to help diagnose the licensing and activation process.
 
 > [!NOTE]
 >
