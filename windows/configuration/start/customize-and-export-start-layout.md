@@ -21,9 +21,6 @@ When a full Start layout is applied, the users can't pin, unpin, or uninstall ap
 
 When [a partial Start layout](#configure-a-partial-start-layout) is applied, the contents of the specified tile groups can't be changed, but users can move those groups, and can also create and customize their own groups.
 
-> [!NOTE]
-> Partial Start layout is only supported on Windows 10, version 1511 and later.
-
 You can deploy the resulting .xml file to devices using one of the following methods:
 
 - [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
@@ -52,9 +49,7 @@ To customize Start:
     - **Create your own app groups**. Drag the apps to an empty area. To name a group, select above the group of tiles and then type the name in the **Name group** field that appears above the group.
 
 > [!IMPORTANT]
-> In Windows 10, version 1703, if the Start layout includes tiles for apps that are not installed on the device that the layout is later applied to, the tiles for those apps will be blank. The blank tiles will persist until the next time the user signs in, at which time the blank tiles are removed. Some system events may cause the blank tiles to be removed before the next sign-in.
->
-> In earlier versions of Windows 10, no tile would be pinned.
+> If the Start layout includes tiles for apps that are not installed on the device that the layout is later applied to, the tiles for those apps will be blank. The blank tiles will persist until the next time the user signs in, at which time the blank tiles are removed. Some system events may cause the blank tiles to be removed before the next sign-in.
 
 ### Export the Start layout
 
@@ -66,17 +61,13 @@ When you have the Start layout that you want your users to see, use the [Export-
 To export the Start layout to an .xml file:
 
 1. While signed in with the same account that you used to customize Start, right-click Start, and select **Windows PowerShell**.
-1. On a device running Windows 10, version 1607, 1703, or 1803, at the Windows PowerShell command prompt, enter the following command:
-
-    `Export-StartLayout -path <path><file name>.xml`
-
-    On a device running Windows 10, version 1809 or higher, run the **Export-StartLayout** with the switch **-UseDesktopApplicationID**. For example:
+1. Run `Export-StartLayout` with the switch `-UseDesktopApplicationID`. For example:
 
     ```PowerShell
     Export-StartLayout -UseDesktopApplicationID -Path layout.xml
     ```
 
-    In the previous command, `-path` is a required parameter that specifies the path and file name for the export file. You can specify a local path or a UNC path (for example, \\\\FileServer01\\StartLayouts\\StartLayoutMarketing.xml).
+    In the previous command, `-path` is a required parameter that specifies the path and file name for the export file. You can specify a local path or a UNC path (for example, `\\FileServer01\StartLayouts\StartLayoutMarketing.xml`).
 
     Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](/powershell/module/startlayout/export-startlayout) cmdlet doesn't append the file name extension, and the policy settings require the extension.
 

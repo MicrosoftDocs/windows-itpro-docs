@@ -1,5 +1,5 @@
 items:
-- name: Customizethe Start menu in Windows 11
+- name: Customize the Start menu in Windows 11
   href: customize-start-menu-layout-windows-11.md
 - name: Supported Start menu CSPs
   href: supported-csp-start-menu-layout-windows.md
