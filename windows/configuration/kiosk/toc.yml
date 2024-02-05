@@ -5,8 +5,10 @@ items:
   items:
     - name: Configure a restricted user experience
       href: quickstart-restricted-experience.md
-- name: Prepare a device for kiosk configuration
-  href: kiosk-prepare.md
+- name: Concepts
+  items:
+    - name: Prepare a device for kiosk configuration
+      href: kiosk-prepare.md
 - name: Deployment guides
   items:
   - name: Configure digital signs
@@ -27,7 +29,7 @@ items:
       href: lock-down-windows-10-applocker.md
     - name: Use Shell Launcher to create a Windows client kiosk
       href: kiosk-shelllauncher.md
-- name: Troubleshooting
+- name: Troubleshoot
   items:
     - name: Validate your kiosk configuration
       href: kiosk-validate.md
@@ -35,7 +37,7 @@ items:
       href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
 - name: Rreference
   items:
-    - name: More kiosk methods and reference information
+    - name: Kiosk methods and reference information
       href: kiosk-additional-reference.md
     - name: Guidelines for choosing an app for assigned access
       href: guidelines-for-assigned-access-app.md
