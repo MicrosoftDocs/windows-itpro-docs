@@ -2,6 +2,8 @@
 title: Set up a multi-app kiosk on Windows 11
 description: Learn how to configure a kiosk device running Windows 11 so that users can only run a few specific apps.
 ms.date: 05/12/2023
+appliesto:
+- ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 
 ms.topic: how-to
 ---

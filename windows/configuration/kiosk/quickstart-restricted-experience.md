@@ -161,11 +161,10 @@ After the settings are applied, reboot the device. A user account names `Library
 
 > [!div class="nextstepaction"]
 > To learn more about how to configure Windows to execute as a kiosk or as a restricted user experience see:
-> [Overview](link.md)
+>
+> [Configure a multi-app kiosk >](lock-down-windows-11-to-specific-apps.md)
 
 <!--links-->
 
-[WIN-1]: /windows/configuration/provisioning-packages/provisioning-create-package
-[WIN-2]: /windows/configuration/provisioning-packages/provisioning-apply-package
 [WIN-3]: /windows/client-management/mdm/assignedaccess-csp
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10

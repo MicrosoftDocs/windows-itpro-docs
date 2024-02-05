@@ -3,19 +3,17 @@ items:
   href: kiosk-methods.md
 - name: Quickstarts
   items:
-    - name: Configure a kiosk experience
-      href: quickstart-kiosk.md
     - name: Configure a restricted user experience
       href: quickstart-restricted-experience.md
 - name: Prepare a device for kiosk configuration
   href: kiosk-prepare.md
-- name: Set up digital signs
+- name: Configure digital signs
   href: setup-digital-signage.md
-- name: Set up a single-app kiosk
+- name: Configure a single-app kiosk
   href: kiosk-single-app.md
-- name: Set up a multi-app kiosk for Windows 10
+- name: Configure a multi-app kiosk for Windows 10
   href: lock-down-windows-10-to-specific-apps.md
-- name: Set up a multi-app kiosk for Windows 11
+- name: Configure a multi-app kiosk for Windows 11
   href: lock-down-windows-11-to-specific-apps.md
 - name: Kiosk reference information
   items:
