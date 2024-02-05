@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: andredm7
 ms.collection:
   - highpri
@@ -17,7 +17,7 @@ ms.collection:
 
 # Feature update status report
 
-The Feature update status report provides a per device view of the current Windows OS upgrade status for all devices registered with Windows Autopatch.  
+The Feature update status report provides a per device view of the current Windows OS upgrade status for all devices registered with Windows Autopatch. 
 
 **To view the Feature update status report:**
 
