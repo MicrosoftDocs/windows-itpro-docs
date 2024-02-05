@@ -37,18 +37,18 @@ sections:
           Anytime key material is generated, it must be protected against attack. The most robust way to do this is through specialized hardware. There's a long history of using hardware security modules (HSMs) to generate, store, and process keys for security-critical applications. Smart cards are a special type of HSM, as are devices that are compliant with the Trusted Computing Group TPM standard. Wherever possible, the Windows Hello for Business implementation takes advantage of onboard TPM hardware to generate and protect keys. Administrators can choose to allow key operations in software, but it's recommended the use of TPM hardware. The TPM protects against a variety of known and potential attacks, including PIN brute-force attacks. The TPM provides an additional layer of protection after an account lockout, too. When the TPM has locked the key material, the user will have to reset the PIN (which means the user will have to use MFA to reauthenticate to the IdP before the IdP allows re-registration). Resetting the PIN means that all keys and certificates encrypted with the old key material will be removed.
       - question: How does PIN caching work with Windows Hello for Business?
         answer: |
-          Windows Hello for Business provides a PIN caching user experience by using a ticketing system. Rather than caching a PIN, processes cache a ticket they can use to request private key operations. Microsoft Entra ID and Active Directory sign-in keys are cached under lock. This means the keys remain available for use without prompting, as long as the user is interactively signed-in. Microsoft Account sign-in keys are transactional keys, which means the user is always prompted when accessing the key. 
-          
-          Windows Hello for Business used as a smart card (smart card emulation that is enabled by default) provides the same user experience of default smart card PIN caching. Each process requesting a private key operation prompts the user for the PIN on first use. Subsequent private key operations won't prompt the user for the PIN. 
-          
+          Windows Hello for Business provides a PIN caching user experience by using a ticketing system. Rather than caching a PIN, processes cache a ticket they can use to request private key operations. Microsoft Entra ID and Active Directory sign-in keys are cached under lock. This means the keys remain available for use without prompting, as long as the user is interactively signed-in. Microsoft Account sign-in keys are transactional keys, which means the user is always prompted when accessing the key.
+
+          Windows Hello for Business used as a smart card (smart card emulation that is enabled by default) provides the same user experience of default smart card PIN caching. Each process requesting a private key operation prompts the user for the PIN on first use. Subsequent private key operations won't prompt the user for the PIN.
+
           The smart card emulation feature of Windows Hello for Business verifies the PIN and then discards the PIN in exchange for a ticket. The process doesn't receive the PIN, but rather the ticket that grants them private key operations. There isn't a policy setting to adjust the caching.
       - question: Where is Windows Hello biometrics data stored?
         answer: |
             When you enroll in Windows Hello, a representation of your biometrics, called an enrollment profile, is created more information can be found on [Windows Hello face authentication](/windows-hardware/design/device-experiences/windows-hello-face-authentication). This enrollment profile biometrics data is device specific, is stored locally on the device, and does not leave the device or roam with the user. Some external fingerprint sensors store biometric data on the fingerprint module itself rather than on Windows device. Even in this case, the biometrics data is stored locally on those modules, is device specific, doesn't roam, never leaves the module, and is never sent to Microsoft cloud or external server. For more details, see [Windows Hello biometrics in the enterprise](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored).
       - question: What is the format used to store Windows Hello biometrics data on the device?
         answer: |
-          Windows Hello biometrics data is stored on the device as an encrypted template database. The data from the biometrics sensor (like face camera or fingerprint reader) creates a data representation—or graph—that is then encrypted before it's stored on the device. Each biometrics sensor on the device which is used by Windows Hello (face or fingerprint) will have its own biometric database file where template data is stored. Each biometrics database file is encrypted with unique, randomly generated key that is encrypted to the system using AES encryption producing an SHA256 hash. 
-      - question: Who has access on Windows Hello biometrics data? 
+          Windows Hello biometrics data is stored on the device as an encrypted template database. The data from the biometrics sensor (like face camera or fingerprint reader) creates a data representation—or graph—that is then encrypted before it's stored on the device. Each biometrics sensor on the device which is used by Windows Hello (face or fingerprint) will have its own biometric database file where template data is stored. Each biometrics database file is encrypted with unique, randomly generated key that is encrypted to the system using AES encryption producing an SHA256 hash.
+      - question: Who has access on Windows Hello biometrics data?
         answer: |
           Since Windows Hello biometrics data is stored in encrypted format, no user, or any process other than Windows Hello has access to it.
       - question: When is Windows Hello biometrics database file created? How is a user enrolled into Windows Hello face or fingerprint authentication?
@@ -59,17 +59,17 @@ sections:
             To remove Windows Hello and any associated biometric identification data from the device, open **Start > Settings > Accounts > Sign-in options**. Select the Windows Hello biometrics authentication method you want to remove, and then select **Remove**. The action unenrolls from Windows Hello biometrics authentication and deletes the associated biometrics template database file. For more details, see [Windows sign-in options and account protection (microsoft.com)](https://support.microsoft.com/windows/windows-sign-in-options-and-account-protection-7b34d4cf-794f-f6bd-ddcc-e73cdf1a6fbf#bkmk_helloandprivacy).
 
   - name: Management and operations
-    questions:  
+    questions:
       - question: Can I deploy and manage Windows Hello for Business by using Microsoft Configuration Manager?
         answer: |
           Starting in Configuration Manager, version 2203, Windows Hello for Business deployments using Configuration Manager are no longer supported.
       - question: How do I delete a Windows Hello for Business container on a device?
-        answer: |  
-          You can delete the Windows Hello for Business container by executing the command `certutil.exe -deleteHelloContainer`.          
+        answer: |
+          You can delete the Windows Hello for Business container by executing the command `certutil.exe -deleteHelloContainer`.
       - question: What happens when a user forgets their PIN?
         answer: |
           If the user can sign in with a password, they can reset their PIN by selecting the *I forgot my PIN* link in the Settings app or from the lock screen, by selecting the *I forgot my PIN* link on the PIN credential provider.
-          
+
           For on-premises deployments, devices must be connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs. Hybrid deployments can onboard their Microsoft Entra tenant to use the *Windows Hello for Business PIN reset service* to reset their PINs. Non-destructive PIN reset works without access to the corporate network. Destructive PIN reset requires access to the corporate network. For more details about destructive and non-destructive PIN reset, see [PIN reset](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset).
       - question: Does Windows Hello for Business prevent the use of simple PINs?
         answer: |
@@ -84,7 +84,7 @@ sections:
           - The PIN 7036 has a constant delta of (3,3,3), so it isn't allowed
           - The PIN 1231 doesn't have a constant delta (1,1,2), so it's allowed
           - The PIN 1872 doesn't have a constant delta (7,9,5), so it's allowed
-          
+
           This check prevents repeating numbers, sequential numbers, and simple patterns. It always results in a list of 100 disallowed PINs (independent of the PIN length). This algorithm doesn't apply to alphanumeric PINs.
       - question: Which diagnostic data is collected when Windows Hello for Business is enabled?
         answer: |
@@ -92,7 +92,7 @@ sections:
           - Data about whether people sign in with their face, iris, fingerprint, or PIN
           - The number of times they use it
           - Whether it works or not
-          All this is valuable information that helps Microsoft building a better product. The data is pseudonymized, does not include biometric information, and is encrypted before it is transmitted to Microsoft. You can choose to stop sending diagnostic data to Microsoft at any time. [Learn more about diagnostic data in Windows](https://support.microsoft.com/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319). 
+          All this is valuable information that helps Microsoft building a better product. The data is pseudonymized, does not include biometric information, and is encrypted before it is transmitted to Microsoft. You can choose to stop sending diagnostic data to Microsoft at any time. [Learn more about diagnostic data in Windows](https://support.microsoft.com/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319).
       - question: Can I disable the PIN while using Windows Hello for Business?
         answer: |
           No. The movement away from passwords is accomplished by gradually reducing the use of the password. In situations where you can't authenticate by using biometrics, you need a fallback mechanism that isn't a password. The PIN is the fallback mechanism. Disabling or hiding the PIN credential provider will disable the use of biometrics.
@@ -102,7 +102,7 @@ sections:
 
           If the user attempts to unlock the device by entering random PINs, after three unsuccessful attempts the credential provider will display the following message: **You've entered an incorrect PIN several times. To try again, enter A1B2C3 below**.
           Upon entering the challenge phrase *A1B2C3*, the user will be granted one more opportunity to enter the PIN. If unsuccessful, the provider will be disabled, leaving the user with the only option to reboot the device. Following the reboot, the aforementioned pattern repeats.
-          
+
           If unsuccessful attempts continue, the device will enter a lockout state, lasting for 1 minute after the first reboot, 2 minutes after the fourth reboot, and 10 minutes after the fifth reboot. The duration of each lockout increases accordingly. This behavior is a result of the TPM 2.0 anti-hammering feature.
           For more information about the TPM anti-hammering feature, see [TPM 2.0 anti-hammering](/windows/security/information-protection/tpm/tpm-fundamentals#tpm-20-anti-hammering).
 
@@ -110,7 +110,7 @@ sections:
     questions:
       - question: Can Windows Hello for Business work in air-gapped environments?
         answer: |
-          Yes. You can use the on-premises Windows Hello for Business deployment and combine it with a third-party MFA provider that doesn't require internet connectivity to achieve an air-gapped Windows Hello for Business deployment.
+          Yes. You can use the on-premises Windows Hello for Business deployment and combine it with a non-Microsoft MFA provider that doesn't require internet connectivity to achieve an air-gapped Windows Hello for Business deployment.
       - question: How many users can enroll for Windows Hello for Business on a single Windows device?
         answer: |
           The maximum number of supported enrollments on a single device is 10. This lets 10 users each enroll their face and up to 10 fingerprints. For devices with more than 10 users, or for users that sign-in to many devices (for example, a support technician), it's recommended the use of FIDO2 security keys.
@@ -120,17 +120,17 @@ sections:
       - question: What attributes are synchronized by Microsoft Entra Connect with Windows Hello for Business?
         answer: |
           Review [Microsoft Entra Connect Sync: Attributes synchronized to Microsoft Entra ID](/entra/identity/hybrid/connect/reference-connect-sync-attributes-synchronized) for a list of attributes that sync based on scenarios. The base scenarios that include Windows Hello for Business are the [Windows 10](/entra/identity/hybrid/connect/reference-connect-sync-attributes-synchronized#windows-10) scenario and the [Device writeback](/entra/identity/hybrid/connect/reference-connect-sync-attributes-synchronized#device-writeback) scenario. Your environment may include other attributes.
-      - question: Can I use third-party MFA providers with Windows Hello for Business?
+      - question: Can I use non-Microsoft MFA providers with Windows Hello for Business?
         answer: |
-          Yes, if you're using federated hybrid deployment, you can use any third-party that provides an AD FS MFA adapter. A list of third-party MFA adapters can be found [here](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods).
-      - question: Does Windows Hello for Business work with third-party federation servers?
+          Yes, if you're using federated hybrid deployment, you can use any non-Microsoft that provides an AD FS MFA adapter. A list of non-Microsoft MFA adapters can be found [here](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods).
+      - question: Does Windows Hello for Business work with non-Microsoft federation servers?
         answer: |
-          Windows Hello for Business works with any third-party federation servers that support the protocols used during the provisioning experience.<br><br>
-          
+          Windows Hello for Business works with any non-Microsoft federation servers that support the protocols used during the provisioning experience.<br><br>
+
           | Protocol | Description |
           | :--- | :--- |
           | [[MS-KPP]: Key Provisioning Protocol](/openspecs/windows_protocols/ms-kpp/25ff7bd8-50e3-4769-af23-bcfd0b4d4567) | Specifies the Key Provisioning Protocol, which defines a mechanism for a client to register a set of cryptographic keys on a user and device pair. |
-          | [[MS-OAPX]: OAuth 2.0 Protocol Extensions](/openspecs/windows_protocols/ms-oapx/7612efd4-f4c8-43c3-aed6-f5c5ce359da2)| Specifies the OAuth 2.0 Protocol Extensions, which are used to extend the OAuth 2.0 Authorization Framework. These extensions enable authorization features such as resource specification, request identifiers, and log in hints. |  
+          | [[MS-OAPX]: OAuth 2.0 Protocol Extensions](/openspecs/windows_protocols/ms-oapx/7612efd4-f4c8-43c3-aed6-f5c5ce359da2)| Specifies the OAuth 2.0 Protocol Extensions, which are used to extend the OAuth 2.0 Authorization Framework. These extensions enable authorization features such as resource specification, request identifiers, and log in hints. |
           | [[MS-OAPXBC]: OAuth 2.0 Protocol Extensions for Broker Clients](/openspecs/windows_protocols/ms-oapxbc/2f7d8875-0383-4058-956d-2fb216b44706) | Specifies the OAuth 2.0 Protocol Extensions for Broker Clients, extensions to RFC6749 (the OAuth 2.0 Authorization Framework) that allow a broker client to obtain access tokens on behalf of calling clients. |
           | [[MS-OIDCE]: OpenID Connect 1.0 Protocol Extensions](/openspecs/windows_protocols/ms-oidce/718379cf-8bc1-487e-962d-208aeb8e70ee) | Specifies the OpenID Connect 1.0 Protocol Extensions. These extensions define other claims to carry information about the user, including the user principal name, a locally unique identifier, a time for password expiration, and a URL for password change. These extensions also define more provider meta-data that enables the discovery of the issuer of access tokens and gives additional information about provider capabilities. |
       - question: Can I enroll local Windows accounts in Windows Hello for Business?
@@ -146,9 +146,9 @@ sections:
         answer: |
           A user will be prompted to set up a Windows Hello for Business key on a Microsoft Entra registered devices if the feature is enabled by policy. If the user has an existing Windows Hello container, the Windows Hello for Business key will be enrolled in that container and will be protected using existing gestures.
 
-          If a user has signed into their Microsoft Entra registered device with Windows Hello, their Windows Hello for Business key will be used to authenticate the user's work identity when they try to use Microsoft Entra resources. The Windows Hello for Business key meets Microsoft Entra multifactor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources. 
+          If a user has signed into their Microsoft Entra registered device with Windows Hello, their Windows Hello for Business key will be used to authenticate the user's work identity when they try to use Microsoft Entra resources. The Windows Hello for Business key meets Microsoft Entra multifactor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources.
 
-          It's possible to Microsoft Entra register a domain joined device. If the domain joined device has a convenience PIN, sign in with the convenience PIN will no longer work. This configuration isn't supported by Windows Hello for Business. 
+          It's possible to Microsoft Entra register a domain joined device. If the domain joined device has a convenience PIN, sign in with the convenience PIN will no longer work. This configuration isn't supported by Windows Hello for Business.
 
           For more information, see [Microsoft Entra registered devices](/azure/active-directory/devices/concept-azure-ad-register).
       - question: Does Windows Hello for Business work with non-Windows operating systems?
@@ -181,11 +181,11 @@ sections:
       - question: What URLs do I need to allow for a hybrid deployment?
         answer: |
           For a list of required URLs, see [Microsoft 365 Common and Office Online](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#microsoft-365-common-and-office-online).
-                    
+
           If your environment uses Microsoft Intune, see [Network endpoints for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints).
 
   - name: Features
-    questions:      
+    questions:
       - question: Can I use an external Windows Hello compatible camera when my computer has a built-in Windows Hello compatible camera?
         answer: |
           Yes, you can use an external Windows Hello compatible camera if a device has an internal Windows Hello camera. When both cameras are present, the external camera is used for face authentication. For more information, see [IT tools to support Windows 10, version 21H1](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/it-tools-to-support-windows-10-version-21h1/ba-p/2365103). If ESS is enabled, see [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security).

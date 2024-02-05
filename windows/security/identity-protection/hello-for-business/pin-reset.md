@@ -179,7 +179,7 @@ The _PIN reset_ configuration can be viewed by running [**dsregcmd /status**](/a
 **Applies to:** Microsoft Entra joined devices
 
 PIN reset on Microsoft Entra joined devices uses a flow called *web sign-in* to authenticate users in the lock screen. Web sign-in only allows navigation to specific domains. If web sign-in attempts to navigate to a domain that isn't allowed, it displays a page with the error message: *We can't open that page right now*.\
-If you have a federated environment and authentication is handled using AD FS or a third-party identity provider, then you must configure your devices with a policy to allow a list of domains that can be reached during PIN reset flows. When set, it ensures that authentication pages from that identity provider can be used during Microsoft Entra joined PIN reset.
+If you have a federated environment and authentication is handled using AD FS or a non-Microsoft identity provider, then you must configure your devices with a policy to allow a list of domains that can be reached during PIN reset flows. When set, it ensures that authentication pages from that identity provider can be used during Microsoft Entra joined PIN reset.
 
 [!INCLUDE [intune-settings-catalog-1](../../../../includes/configure/intune-settings-catalog-1.md)]
 

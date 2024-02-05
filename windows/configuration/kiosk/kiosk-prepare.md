@@ -250,7 +250,7 @@ The following table describes some features that have interoperability issues we
   | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Esc</kbd>  | Cycle through items in the reverse order from which they were opened. |
   | <kbd>Ctrl</kbd> + <kbd>Esc</kbd> | Open the Start screen. |
   | <kbd>Ctrl</kbd> + <kbd>F4</kbd> | Close the window. |
-  | <kbd>Ctrl</kbd> + <kbd>Shift</kbd  + <kbd>Esc</kbd>  | Open Task Manager. |
+  | <kbd>Ctrl</kbd> + <kbd>Shift</kbd>  + <kbd>Esc</kbd>  | Open Task Manager. |
   | <kbd>Ctrl</kbd> + <kbd>Tab</kbd> | Switch windows within the application currently open. |
   | LaunchApp1 | Open the app that is assigned to this key. |
   | LaunchApp2 | Open the app that is assigned to this key. On many Microsoft keyboards, the app is Calculator. |
@@ -260,16 +260,16 @@ The following table describes some features that have interoperability issues we
   Keyboard Filter settings apply to other standard accounts.
 
 - **Key sequences blocked by [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter)**: If Keyboard Filter is turned ON, then some key combinations are blocked automatically without you having to explicitly block them. For more information, see the [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter).
-  [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) is only available on Windows client Enterprise or Education.
-- **Power button**: Customizations for the Power button complement assigned access, letting you implement features such as removing the power button from the Welcome screen. Removing the power button ensures the user can't turn off the device when it's in assigned access.
-  For more information on removing the power button or disabling the physical power button, see [Custom Logon](/windows-hardware/customize/enterprise/custom-logon).
-- **Unified Write Filter (UWF)**: UWFsettings apply to all users, including users with assigned access.
-  For more information, see [Unified Write Filter](/windows-hardware/customize/enterprise/unified-write-filter).
+  [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) is only available on Windows client Enterprise or Education
+- **Power button**: Customizations for the Power button complement assigned access, letting you implement features such as removing the power button from the Welcome screen. Removing the power button ensures the user can't turn off the device when it's in assigned access
+  For more information on removing the power button or disabling the physical power button, see [Custom Logon][WHW-1]
+- **Unified Write Filter (UWF)**: UWFsettings apply to all users, including users with assigned access
+  For more information, see [Unified Write Filter][WHW-2]
 - **WEDL_AssignedAccess class**: You can use this class to configure and manage basic lockdown features for assigned access. It's recommended to you use the Windows PowerShell cmdlets instead.
-  If you need to use assigned access API, see [WEDL_AssignedAccess](/windows-hardware/customize/enterprise/wedl-assignedaccess).
-- **Welcome Screen**: Customizations for the Welcome screen let you personalize not only how the Welcome screen looks, but for how it functions. You can disable the power or language button, or remove all user interface elements. There are many options to make the Welcome screen your own.
+  If you need to use assigned access API, see [WEDL_AssignedAccess][WHW-3]
+- **Welcome Screen**: Customizations for the Welcome screen let you personalize not only how the Welcome screen looks, but for how it functions. You can disable the power or language button, or remove all user interface elements. There are many options to make the Welcome screen your own
 
-For more information, see [Custom Logon](/windows-hardware/customize/enterprise/custom-logon).
+For more information, see [Custom Logon][WHW-1].
 
 ## Testing your kiosk in a virtual machine (VM)
 
@@ -277,10 +277,13 @@ Customers sometimes use virtual machines (VMs) to test configurations before dep
 
 A single-app kiosk configuration runs an app above the lock screen. It doesn't work when it's accessed remotely, which includes *enhanced* sessions in Hyper-V.
 
-When you connect to a VM configured as a single-app kiosk, you need a *basic* session rather than an enhanced session. In the following image, notice that **Enhanced session** isn't selected in the **View** menu; that means it's a basic session.
+> [!NOTE]
+> When you connect to a VM configured as a single-app kiosk, you must use a *basic session* rather than an *enhanced session*. For more information, see [Check session type][VIR-1].
 
-:::image type="content" source="images/vm-kiosk.png" alt-text="Use a basic session to connect a virtual machine. In the View menu, Extended session isn't selected, which means basic is used.":::
+<!--links-->
 
-To connect to a VM in a basic session, don't select **Connect** in the connection dialog, as shown in the following image, but instead, select the **X** button in the upper-right corner to cancel the dialog:
+[VIR-1]: /virtualization/hyper-v-on-windows/user-guide/enhanced-session-mode#check-session-type
+[WHW-1]: /windows-hardware/customize/enterprise/custom-logon
+[WHW-2]: /windows-hardware/customize/enterprise/unified-write-filter
+[WHW-3]: /windows-hardware/customize/enterprise/wedl-assignedaccess
 
-:::image type="content" source="images/vm-kiosk-connect.png" alt-text="Don't select the connect button. Use the close X in the top corner to connect to a VM in basic session.":::

@@ -71,7 +71,7 @@ For errors listed in this table, contact Microsoft Support for assistance.
 | 0x80072F8F  | A mismatch happens between the system's clock and the activation server's clock when attempting to activate Windows.|
 | 0x80090010  | NTE_PERM |
 | 0x80090020  | NTE_FAIL |
-| 0x80090027  | Caller provided a wrong parameter. If third-party code receives this error, they must change their code. |
+| 0x80090027  | Caller provided a wrong parameter. If non-Microsoft code receives this error, they must change their code. |
 | 0x8009002D  | NTE_INTERNAL_ERROR |
 | 0x801C0001  | ADRS server response is not in a valid format. |
 | 0x801C0002  | Server failed to authenticate the user. |

@@ -14,7 +14,7 @@ ms.topic: article
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
-Microsoft has strict requirements for code running in kernel. So, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers. When vulnerabilities in drivers are found, we work with our partners to ensure they're quickly patched and rolled out to the ecosystem. The vulnerable driver blocklist is designed to help harden systems against third party-developed drivers across the Windows ecosystem with any of the following attributes:
+Microsoft has strict requirements for code running in kernel. So, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers. When vulnerabilities in drivers are found, we work with our partners to ensure they're quickly patched and rolled out to the ecosystem. The vulnerable driver blocklist is designed to help harden systems against non-Microsoft-developed drivers across the Windows ecosystem with any of the following attributes:
 
 - Known security vulnerabilities that can be exploited by attackers to elevate privileges in the Windows kernel
 - Malicious behaviors (malware) or certificates used to sign malware
@@ -1071,7 +1071,7 @@ The following recommended blocklist xml policy file can also be downloaded from 
     <Deny ID="ID_DENY_NVOCLOCK_17" FriendlyName="nvoclock\87b4c5b7f653b47c9c3bed833f4d65648db22481e9fc54aa4a8c6549fa31712b Hash Sha1" Hash="8546586F7825C49876F2E0C52BA55F545B4E03BD" />
     <Deny ID="ID_DENY_NVOCLOCK_18" FriendlyName="nvoclock\87b4c5b7f653b47c9c3bed833f4d65648db22481e9fc54aa4a8c6549fa31712b Hash Sha256" Hash="7C8D7BB3A272AFE7FB737BD165FE9BD8F8187F1835289EB66D471CDCED74E950" />
     <Deny ID="ID_DENY_NVOCLOCK_19" FriendlyName="nvoclock\d7c90cf3fdbbd2f40fe6a39ad0bb2a9a97a0416354ea84db3aeff6d925d14df8 Hash Sha1" Hash="FE761BEE648D4A1C9FD8C1646323A692DF957C42" />
-    <Deny ID="ID_DENY_NVOCLOCK_20" FriendlyName="nvoclock\d7c90cf3fdbbd2f40fe6a39ad0bb2a9a97a0416354ea84db3aeff6d925d14df8 Hash Sha256" Hash="B3183D87A902DB1BBDAECB37291B9D37C032CE9DFACBE4B36CC3032F5A643AB4" /> 
+    <Deny ID="ID_DENY_NVOCLOCK_20" FriendlyName="nvoclock\d7c90cf3fdbbd2f40fe6a39ad0bb2a9a97a0416354ea84db3aeff6d925d14df8 Hash Sha256" Hash="B3183D87A902DB1BBDAECB37291B9D37C032CE9DFACBE4B36CC3032F5A643AB4" />
     <Deny ID="ID_DENY_OTIPCIBUS_1" FriendlyName="otipcibus.sys\4e3eb5b9bce2fd9f6878ae36288211f0997f6149aa8c290ed91228ba4cdfae80 Hash Sha1" Hash="FD172C7F8BDC81988FCF1642881078A8CA8415F6" />
     <Deny ID="ID_DENY_OTIPCIBUS_2" FriendlyName="otipcibus.sys\4e3eb5b9bce2fd9f6878ae36288211f0997f6149aa8c290ed91228ba4cdfae80 Hash Sha256" Hash="1CDA1A6E33D14D5DD06344425102BF840F8149E817ECFB01C59A2190D3367024" />
     <Deny ID="ID_DENY_OTIPCIBUS_3" FriendlyName="otipcibus.sys\4e3eb5b9bce2fd9f6878ae36288211f0997f6149aa8c290ed91228ba4cdfae80 Hash Page Sha1" Hash="8DFBFD888C9A420AC7F3371E5443C26A2852E539" />
@@ -1929,7 +1929,7 @@ The following recommended blocklist xml policy file can also be downloaded from 
       <CertRoot Type="TBS" Value="A08E79C386083D875014C409C13D144E0A24386132980DF11FF59737C8489EB1" />
       <FileAttribRef RuleID="ID_FILEATTRIB_AMD_RYZEN" />
       <FileAttribRef RuleID="ID_FILEATTRIB_AMDPP" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_ASWSP" />      
+      <FileAttribRef RuleID="ID_FILEATTRIB_ASWSP" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ATLACCESS" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LGCORETEMP" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTIF" />
@@ -1938,10 +1938,10 @@ The following recommended blocklist xml policy file can also be downloaded from 
     </Signer>
     <Signer ID="ID_SIGNER_SYMANTEC_CLASS_3_EV" Name="Symantec Class 3 Extended Validation Code Signing CA - G2">
       <CertRoot Type="TBS" Value="B3C925B4048C3F7C444D248A2B101186B57CBA39596EB5DCE0E17A4EE4B32F19"/>
-      <FileAttribRef RuleID="ID_FILEATTRIB_CP2X72C_1"/>    
-      <FileAttribRef RuleID="ID_FILEATTRIB_CP2X72C_2"/>    
+      <FileAttribRef RuleID="ID_FILEATTRIB_CP2X72C_1"/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_CP2X72C_2"/>
       <FileAttribRef RuleID="ID_FILEATTRIB_FPCIE"/>
-      <FileAttribRef RuleID="ID_FILEATTRIB_WIRWADRV"/>    
+      <FileAttribRef RuleID="ID_FILEATTRIB_WIRWADRV"/>
     </Signer>
     <Signer ID="ID_SIGNER_VERISIGN_AMD" Name="VeriSign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
@@ -2234,7 +2234,7 @@ The following recommended blocklist xml policy file can also be downloaded from 
       <FileAttribRef RuleID="ID_FILEATTRIB_EELAM" />
       <FileAttribRef RuleID="ID_FILEATTRIB_SYMELAM" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TMEL" />
-      
+
     </Signer>
     <Signer ID="ID_SIGNER_AVGELAM_1" Name="DigiCert High Assurance Code Signing CA-1">
       <CertRoot Type="TBS" Value="1D7E838ACCD498C2E5BA9373AF819EC097BB955C" />
@@ -3312,7 +3312,7 @@ The following recommended blocklist xml policy file can also be downloaded from 
           <FileRuleRef RuleID="ID_DENY_EIO64_7" />
           <FileRuleRef RuleID="ID_DENY_EIO64_8" />
           <FileRuleRef RuleID="ID_DENY_FH_ETHER_1" />
-          <FileRuleRef RuleID="ID_DENY_FH_ETHER_2" />  
+          <FileRuleRef RuleID="ID_DENY_FH_ETHER_2" />
           <FileRuleRef RuleID="ID_DENY_GEDEVDRV_1" />
           <FileRuleRef RuleID="ID_DENY_GEDEVDRV_2" />
           <FileRuleRef RuleID="ID_DENY_GEDEVDRV_3" />

@@ -15,7 +15,7 @@ With this policy you can disable all notification for encryption, warning prompt
 This policy takes effect only if [Require device encryption](../configure.md?tabs=os#require-device-encryption) policy is enabled.
 
 > [!WARNING]
-> When you enable BitLocker on a device with third party encryption, it may render the device unusable and will require reinstallation of Windows.
+> When you enable BitLocker on a device with non-Microsoft encryption, it may render the device unusable and will require reinstallation of Windows.
 
 The expected values for this policy are:
 

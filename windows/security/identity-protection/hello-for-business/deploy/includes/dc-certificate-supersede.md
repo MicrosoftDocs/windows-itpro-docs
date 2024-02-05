@@ -26,7 +26,7 @@ The certificate template is configured to supersede all the certificate template
 However, the certificate template and the superseding of certificate templates isn't active until the template is published to one or more certificate authorities.
 
 > [!NOTE]
-> The domain controller's certificate must chain to a root in the NTAuth store. By default, the Active Directory Certificate Authority's root certificate is added to the NTAuth store. If you are using a third-party CA, this may not be done by default. If the domain controller certificate does not chain to a root in the NTAuth store, user authentication will fail.
+> The domain controller's certificate must chain to a root in the NTAuth store. By default, the Active Directory Certificate Authority's root certificate is added to the NTAuth store. If you are using a non-Microsoft CA, this may not be done by default. If the domain controller certificate does not chain to a root in the NTAuth store, user authentication will fail.
 >To see all certificates in the NTAuth store, use the following command:
 >
 > `Certutil -viewstore -enterprise NTAuth`
