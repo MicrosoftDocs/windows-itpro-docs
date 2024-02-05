@@ -21,7 +21,7 @@ To complete this quickstart, you need:
 
 ## Configure a restricted user experience
 
-[!INCLUDE [tab-intro](../includes/tab-intro.md)]
+[!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
 #### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
@@ -61,16 +61,7 @@ Value:
 
 #### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 
-Configure your devices using PowerShell scripts via the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal).
-
-> [!IMPORTANT]
-> For all device settings, the WMI Bridge client must be executed as SYSTEM (LocalSystem) account.
->
-> To test a PowerShell script, you can:
->
-> 1. [Download the psexec tool](/sysinternals/downloads/psexec)
-> 1. Open an elevated command prompt and run: `psexec.exe -i -s powershell.exe`
-> 1. Run the script in the PowerShell session
+[!INCLUDE [powershell-wmi-bridge-1](../../../includes/configure/powershell-wmi-bridge-1.md)]
 
 ```powershell
 $eventLogFilterHashTable = @{
@@ -158,7 +149,7 @@ if($cimSetError) {
 Write-Output "Successfully applied Assigned Access configuration"
 ```
 
-For more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider).
+[!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
 
 ---
 
