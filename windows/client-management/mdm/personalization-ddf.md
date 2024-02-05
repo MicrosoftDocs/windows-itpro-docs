@@ -1,7 +1,7 @@
 ---
 title: Personalization DDF file
 description: View the XML file containing the device description framework (DDF) for the Personalization configuration service provider.
-ms.date: 01/18/2024
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -42,7 +42,7 @@ The following XML file contains the device description framework (DDF) for the P
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -203,7 +203,7 @@ The following XML file contains the device description framework (DDF) for the P
           <Get />
           <Replace />
         </AccessType>
-        <Description>The name of the company to be displayed on the sign-in screen. This setting is currently available for boot to cloud shared pc mode only.</Description>
+        <Description>This represents the name of the company. It can be at most 30 characters long. This setting is currently available only for boot to cloud shared pc mode to display the company name on sign-in screen.</Description>
         <DFFormat>
           <chr />
         </DFFormat>

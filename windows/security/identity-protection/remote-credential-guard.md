@@ -1,9 +1,9 @@
 ---
-title: Remote Credential Guard 
+title: Remote Credential Guard
 description: Learn how Remote Credential Guard helps to secure Remote Desktop credentials by never sending them to the target device.
 ms.topic: how-to
 ms.date: 12/08/2023
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
@@ -36,7 +36,7 @@ The security benefits of Remote Credential Guard include:
 - During the remote session, you can connect to other systems using SSO
 - An attacker can act on behalf of the user only when the session is ongoing
 
-The security benefits of [Restricted Admin mode][TECH-1] include:
+The security benefits of Restricted Admin mode include:
 
 - Credentials aren't sent to the remote host
 - The Remote Desktop session connects to other resources as the remote host's identity
@@ -84,7 +84,7 @@ To enable delegation of nonexportable credentials on the remote hosts, you can u
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../images/icons/intune.svg" border="false"::: **Intune/MDM**](#tab/intune)
+#### [:::image type="icon" source="../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
 
 [!INCLUDE [intune-settings-catalog-1](../../../includes/configure/intune-settings-catalog-1.md)]
 
@@ -100,7 +100,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 |--------|
 | - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials`<br>- **Data type:** string<br>- **Value:** `<enabled/>`|
 
-#### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+#### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
 [!INCLUDE [gpo-settings-1](../../../includes/configure/gpo-settings-1.md)]
 
@@ -109,7 +109,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 | **Computer Configuration\Administrative Templates\System\Credentials Delegation** | Remote host allows delegation of nonexportable credentials | Enabled |
 
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
-#### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+#### [:::image type="icon" source="../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
 To configure devices using the registry, use the following settings:
 
@@ -155,7 +155,7 @@ To configure your clients, you can use:
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../images/icons/intune.svg" border="false"::: **Intune/MDM**](#tab/intune)
+#### [:::image type="icon" source="../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
 
 [!INCLUDE [intune-settings-catalog-1](../../../includes/configure/intune-settings-catalog-1.md)]
 
@@ -171,7 +171,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 |--|
 |- **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration`<br>- **Data type:** string<br>- **Value:** `<enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>`<br><br>Possible values for `RestrictedRemoteAdministrationDrop` are:<br>- `0`: Disabled<br>- `1`: Require Restricted Admin<br>- `2`: Require Remote Credential Guard<br>- `3`: Restrict credential delegation |
 
-#### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+#### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
 [!INCLUDE [gpo-settings-1](../../../includes/configure/gpo-settings-1.md)]
 
@@ -181,7 +181,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
 
-#### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+#### [:::image type="icon" source="../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
 Not documented.
 
@@ -224,5 +224,4 @@ Here are some considerations for Remote Credential Guard:
 [CSP-2]: /windows/client-management/mdm/policy-csp-admx-credssp
 [INT-3]: /mem/intune/configuration/settings-catalog
 [LEARN-1]: /windows-server/identity/laps/laps-overview
-[TECH-1]: https://social.technet.microsoft.com/wiki/contents/articles/32905.how-to-enable-restricted-admin-mode-for-remote-desktop.aspx
 [PTH-1]: https://download.microsoft.com/download/7/7/A/77ABC5BD-8320-41AF-863C-6ECFB10CB4B9/Mitigating-Pass-the-Hash-Attacks-and-Other-Credential-Theft-Version-2.pdf

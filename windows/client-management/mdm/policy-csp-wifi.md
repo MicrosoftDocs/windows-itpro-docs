@@ -1,13 +1,15 @@
 ---
 title: Wifi Policy CSP
 description: Learn more about the Wifi Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- Wifi-Begin -->
 # Policy CSP - Wifi
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Wifi-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -227,7 +229,7 @@ Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks. 
 <!-- AllowWFAQosManagementDSCPToUPMapping-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- AllowWFAQosManagementDSCPToUPMapping-Applicability-End -->
 
 <!-- AllowWFAQosManagementDSCPToUPMapping-OmaUri-Begin -->
@@ -277,7 +279,7 @@ Allow or disallow the device to use the DSCP to UP Mapping feature from the Wi-F
 <!-- AllowWFAQosManagementMSCS-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- AllowWFAQosManagementMSCS-Applicability-End -->
 
 <!-- AllowWFAQosManagementMSCS-OmaUri-Begin -->

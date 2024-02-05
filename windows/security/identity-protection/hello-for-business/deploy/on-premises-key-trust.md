@@ -1,35 +1,86 @@
 ---
-title: Windows Hello for Business deployment guide for the on-premises key trust model
-description: Learn how to deploy Windows Hello for Business in an on-premises, key trust model.
-ms.date: 12/12/2022
+title: Windows Hello for Business on-premises key trust deployment guide
+description: Learn how to deploy Windows Hello for Business in an on-premises, key trust scenario.
+ms.date: 01/03/2024
 ms.topic: tutorial
 ---
 
-# Deployment guide overview - on-premises key trust
+# On-premises key trust deployment guide
 
 [!INCLUDE [apply-to-on-premises-key-trust](includes/apply-to-on-premises-key-trust.md)]
 
-Windows Hello for Business replaces username and password authentication to Windows with an asymmetric key pair. This deployment guide provides the information to deploy Windows Hello for Business in an on-premises environment:
+[!INCLUDE [requirements](includes/requirements.md)]
 
-1. [Validate and configure a PKI](on-premises-key-trust-pki.md)
-1. [Prepare and deploy AD FS](on-premises-key-trust-adfs.md)
-1. [Validate and deploy multifactor authentication (MFA)](on-premises-key-trust-mfa.md)
-1. [Configure Windows Hello for Business Policy settings](on-premises-key-trust-enroll.md)
+> [!div class="checklist"]
+>
+> - [Public Key Infrastructure](index.md#pki-requirements)
+> - [Authentication](index.md#authentication-to-microsoft-entra-id)
+> - [Device configuration](index.md#device-configuration-options)
+> - [Licensing for cloud services](index.md#licensing-for-cloud-services-requirements)
+> - [Windows requirements](index.md#windows-requirements)
+> - [Windows Server requirements](index.md#windows-server-requirements)
+> - [Prepare users to use Windows Hello](prepare-users.md)
 
-## Create the Windows Hello for Business Users security group
+## Deployment steps
 
-While this isn't a required step, it's recommended to create a security group to simplify the deployment.
+Once the prerequisites are met, deploying Windows Hello for Business consists of the following steps:
 
-The *Windows Hello for Business Users* group is used to make it easy to deploy Windows Hello for Business in phases. You assign Group Policy permissions to this group to simplify the deployment by adding the users to the group. This provides users with the proper permissions to provision Windows Hello for Business.
+> [!div class="checklist"]
+>
+> - [Configure and validate the Public Key Infrastructure](#configure-and-validate-the-public-key-infrastructure)
+> - [Prepare and deploy AD FS with MFA](on-premises-key-trust-adfs.md)
+> - [Configure and enroll in Windows Hello for Business](on-premises-key-trust-enroll.md)
 
-Sign-in to a domain controller or to a management workstation with a *Domain Administrator* equivalent credentials.
+## Configure and validate the Public Key Infrastructure
 
-1. Open **Active Directory Users and Computers**
-1. Select **View > Advanced Features**
-1. Expand the domain node from the navigation pane
-1. Right-click the **Users** container. Select **New > Group**
-1. Type *Windows Hello for Business Users* in the **Group Name**
-1. Select **OK**
+Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* or *certificate trust* models. The domain controllers must have a certificate, which serves as a root of trust for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
+
+[!INCLUDE [lab-based-pki-deploy](includes/lab-based-pki-deploy.md)]
+
+## Configure the enterprise PKI
+
+[!INCLUDE [dc-certificate-template](includes/certificate-template-dc.md)]
+
+[!INCLUDE [dc-certificate-template-supersede](includes/dc-certificate-supersede.md)]
+
+[!INCLUDE [web-server-certificate-template](includes/certificate-template-web-server.md)]
+
+[!INCLUDE [unpublish-superseded-templates](includes/unpublish-superseded-templates.md)]
+
+### Publish certificate templates to the CA
+
+A certification authority can only issue certificates for certificate templates that are published to it. If you have more than one CA, and you want more CAs to issue certificates based on the certificate template, then you must publish the certificate template to them.
+
+Sign in to the CA or management workstations with **Enterprise Admin** equivalent credentials.
+
+1. Open the **Certification Authority** management console
+1. Expand the parent node from the navigation pane
+1. Select **Certificate Templates** in the navigation pane
+1. Right-click the **Certificate Templates** node. Select **New > Certificate Template** to issue
+1. In the **Enable Certificates Templates** window, select the *Domain Controller Authentication (Kerberos)*, and *Internal Web Server* templates you created in the previous steps. Select **OK** to publish the selected certificate templates to the certification authority
+1. If you published the *Domain Controller Authentication (Kerberos)* certificate template, then unpublish the certificate templates you included in the superseded templates list
+   - To unpublish a certificate template, right-click the certificate template you want to unpublish and select **Delete**. Select **Yes** to confirm the operation
+1. Close the console
+
+## Configure and deploy certificates to domain controllers
+
+[!INCLUDE [dc-certificate-deployment](includes/dc-certificate-deployment.md)]
+
+## Validate the configuration
+
+[!INCLUDE [dc-certificate-validate](includes/dc-certificate-validate.md)]
+
+## Section review and next steps
+
+> [!div class="checklist"]
+> Before moving to the next section, ensure the following steps are complete:
+>
+> - Configure domain controller and web server certificate templates
+> - Supersede existing domain controller certificates
+> - Unpublish superseded certificate templates
+> - Publish the certificate templates to the CA
+> - Deploy certificates to the domain controllers
+> - Validate the domain controllers configuration
 
 > [!div class="nextstepaction"]
-> [Next: validate and configure PKI >](on-premises-key-trust-pki.md)
+> [Next: prepare and deploy AD FS >](on-premises-key-trust-adfs.md)

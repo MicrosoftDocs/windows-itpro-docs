@@ -1,7 +1,7 @@
 ---
 title: Log files and resolving upgrade errors
 description: Learn how to interpret and analyze the log files that are generated during the Windows upgrade process.
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 manager: aaroncz
 ms.author: frankroj
@@ -10,7 +10,7 @@ ms.topic: troubleshooting
 ms.collection:
   - highpri
   - tier2
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ms.date: 01/18/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

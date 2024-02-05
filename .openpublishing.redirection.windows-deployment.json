@@ -12,7 +12,7 @@
     },
     {
       "source_path": "windows/deployment/deploy-windows-mdt/deploy-a-windows-11-image-using-mdt.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt",
       "redirect_document_id": false
     },
     {
@@ -22,17 +22,17 @@
     },
     {
       "source_path": "windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/deploy-windows-mdt/key-features-in-mdt.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit#key-features-in-mdt",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit#key-features-in-mdt",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/deploy-windows-mdt/mdt-lite-touch-components.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit#mdt-lite-touch-components",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit#mdt-lite-touch-components",
       "redirect_document_id": false
     },
     {
@@ -187,7 +187,7 @@
     },
     {
       "source_path": "windows/deployment/update/change-history-for-update-windows-10.md",
-      "redirect_url": "/windows/deployment/deploy-whats-new",
+      "redirect_url": "/windows/deployment/",
       "redirect_document_id": false
     },
     {
@@ -692,7 +692,7 @@
     },
     {
       "source_path": "windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit",
       "redirect_document_id": false
     },
     {
@@ -754,7 +754,7 @@
       "source_path": "windows/deployment/do/mcc-enterprise-portal-deploy.md",
       "redirect_url": "/windows/deployment/do/mcc-enterprise-deploy",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows/deployment/windows-autopatch/deploy/index.md",
       "redirect_url": "/windows/deployment/windows-autopatch/deploy/windows-autopatch-admin-contacts",
@@ -1113,6 +1113,16 @@
     {
       "source_path": "windows/deployment/windows-autopilot/windows-autopilot.md",
       "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-whats-new.md",
+      "redirect_url": "/windows/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/Windows-AutoPilot-EULA-note.md",
+      "redirect_url": "/legal/windows/windows-autopilot-eula-note",
       "redirect_document_id": false
     }
   ]

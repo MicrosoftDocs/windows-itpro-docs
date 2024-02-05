@@ -1,8 +1,8 @@
 ---
 description: Learn more about the required Windows 10 diagnostic data gathered.
 title: Required diagnostic events and fields for Windows 10 (versions 22H2, 21H2, 21H1, 20H2, and 2004)
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown

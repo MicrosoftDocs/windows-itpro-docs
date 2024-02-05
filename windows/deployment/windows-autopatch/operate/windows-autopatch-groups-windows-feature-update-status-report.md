@@ -2,8 +2,8 @@
 title: Feature update status report
 description: Provides a per device view of the current Windows OS upgrade status for all devices registered with Windows Autopatch.
 ms.date: 07/25/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
