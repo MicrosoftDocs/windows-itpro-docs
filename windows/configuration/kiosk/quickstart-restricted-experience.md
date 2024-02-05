@@ -9,16 +9,18 @@ appliesto:
 
 # Quickstart: Configure a restricted user experience
 
-A restricted user experience allows you to control which applications are allowed to be executed in a locked down Windows desktop.
+With a *restricted user experience* you can control the applications allowed in a locked down Windows desktop.
 
-This quickstart provides practical examples of how to configure a restricted user experience on Windows. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell.
+This quickstart provides practical examples of how to configure a restricted user experience on Windows 11. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
+
+The examples can be modified to fit your specific requirements. For example, you can add or remove applications from the list of allowed apps, or change the name of the user that automatically signs in to Windows.
 
 ## Prerequisites
 
 Here's a list of requirements to complete this quickstart:
 
 - A Windows 11 device
-- Microsoft Intune, or a third-party MDM solution, if you want to configure the settings using MDM
+- Microsoft Intune, or a non-Microsoft MDM solution, if you want to configure the settings using MDM
 - Windows Configuration Designer, if you want to configure the settings using a provisioning package
 - Access to the [psexec tool](/sysinternals/downloads/psexec), if you want to test the configuration using Windows PowerShell
 
