@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: hathind
 ms.collection:
   - tier2
@@ -41,6 +41,6 @@ Your admin contacts will receive notifications about support request updates and
 1. Under **Tenant administration** in the **Windows Autopatch** section, select **Admin contacts**.
 1. Select **+Add**.
 1. Enter the contact details including name, email, phone number and preferred language. For a support ticket, the ticket's primary contact's preferred language will determine the language used for email communications.
-1. Select an [Area of focus](#area-of-focus) and enter details of the contact's knowledge and authority in the specified area of focus.  
+1. Select an [Area of focus](#area-of-focus) and enter details of the contact's knowledge and authority in the specified area of focus.
 1. Select **Save** to add the contact.
 1. Repeat for each area of focus.

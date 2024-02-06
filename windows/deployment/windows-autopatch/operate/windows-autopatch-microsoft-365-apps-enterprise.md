@@ -1,14 +1,14 @@
 ---
 title: Microsoft 365 Apps for enterprise
 description: This article explains how Windows Autopatch manages Microsoft 365 Apps for enterprise updates
-ms.date: 10/27/2023 
+ms.date: 10/27/2023
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: hathind
 ms.collection:
   - highpri
@@ -31,7 +31,7 @@ Microsoft 365 Apps deployed on the [Monthly Enterprise Channel](/deployoffice/ov
 
 ## Device eligibility
 
-For a device to be eligible for Microsoft 365 Apps for enterprise updates (both 32-bit and 64-bit versions), as a part of Windows Autopatch, they must meet the following criteria:  
+For a device to be eligible for Microsoft 365 Apps for enterprise updates (both 32-bit and 64-bit versions), as a part of Windows Autopatch, they must meet the following criteria:
 
 - The device must be turned on and have an internet connection.
 - The device must be able to access the [required network endpoints](../prepare/windows-autopatch-configure-network.md#required-microsoft-product-endpoints) to reach the Office Content Delivery Network (CDN).
@@ -43,7 +43,7 @@ For a device to be eligible for Microsoft 365 Apps for enterprise updates (both 
 
 All devices registered for Windows Autopatch receive updates from the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview). This practice provides your users with new features each month, and they receive just one update per month on a predictable release schedule. Updates are released on the second Tuesday of the month; these updates can include feature, security, and quality updates. These updates occur automatically and pulled directly from the Office Content Delivery Network (CDN).
 
-Unlike Windows update, the Office CDN doesn't make the update available to all devices at once. Over the course of the release, the Office CDN gradually makes the update available to the whole population of devices. Windows Autopatch doesn't control the order in which updates are offered to devices across your estate. After the update downloads, there's a seven day [update deadline](../references/windows-autopatch-microsoft-365-policies.md) that specifies how long the user has until the user must apply the update.  
+Unlike Windows update, the Office CDN doesn't make the update available to all devices at once. Over the course of the release, the Office CDN gradually makes the update available to the whole population of devices. Windows Autopatch doesn't control the order in which updates are offered to devices across your estate. After the update downloads, there's a seven day [update deadline](../references/windows-autopatch-microsoft-365-policies.md) that specifies how long the user has until the user must apply the update.
 
 ## Deployment rings
 
@@ -68,16 +68,16 @@ Updates are only applied when Microsoft 365 Apps aren't running. Therefore, [end
 
 ### Office client app configuration
 
-To ensure that users are receiving automatic updates, Windows Autopatch prevents the user from opting out of automatic updates.  
+To ensure that users are receiving automatic updates, Windows Autopatch prevents the user from opting out of automatic updates.
 
 ## Microsoft 365 Apps for enterprise update controls
 
-Windows Autopatch doesn't allow you to pause or roll back an update in the Microsoft Intune admin center.  
+Windows Autopatch doesn't allow you to pause or roll back an update in the Microsoft Intune admin center.
 
 [Submit a support request](../operate/windows-autopatch-support-request.md) to the Windows Autopatch Service Engineering Team to pause or roll back an update when needed.
 
 > [!NOTE]
-> Updates are bundled together into a single release in the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview). Therefore, we can't roll back only a portion of the update for Microsoft 365 Apps for enterprise.  
+> Updates are bundled together into a single release in the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview). Therefore, we can't roll back only a portion of the update for Microsoft 365 Apps for enterprise.
 
 ## Allow or block Microsoft 365 App updates
 

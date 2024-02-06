@@ -1,16 +1,8 @@
 ---
-title: Personalization (Windows 10)
+title: Personalization
 description: This section describes the Personalization settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
 ms.topic: reference
-ms.collection: must-keep
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
-ms.date: 12/31/2017
+ms.date: 01/25/2024
 ---
 
 # Personalization (Windows Configuration Designer reference)
@@ -21,16 +13,16 @@ Use to configure settings to personalize a PC.
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| [DeployDesktopImage](#deploydesktopimage) | ✔️  |  |  |  |
-| [DeployLockScreenImage](#deploylockscreenimage) | ✔️  |  |  |  |
-| [DesktopImageUrl](#desktopimageurl) | ✔️  |  |  |  |
-| [LockScreenImageUrl](#lockscreenimageurl) | ✔️  |  |  |  |
+| [DeployDesktopImage](#deploydesktopimage) | ✅  |  |  |  |
+| [DeployLockScreenImage](#deploylockscreenimage) | ✅  |  |  |  |
+| [DesktopImageUrl](#desktopimageurl) | ✅  |  |  |  |
+| [LockScreenImageUrl](#lockscreenimageurl) | ✅  |  |  |  |
 
 ## DeployDesktopImage
 
 Deploy a .jpg, .jpeg, or .png image to the device to be used as a desktop image. If you have a local file and want to embed it into the package being deployed, you configure this setting and [DesktopImageUrl](#desktopimageurl).
 
-When using **DeployDesktopImage** and [DeployLockScreenImageFile](#deploylockscreenimage, the file names need to be different. 
+When using **DeployDesktopImage** and [DeployLockScreenImageFile](#deploylockscreenimage, the file names need to be different.
 
 ## DeployLockScreenImage
 

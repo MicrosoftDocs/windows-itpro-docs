@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: adnich
 ms.collection:
   - tier2
@@ -57,7 +57,7 @@ The following policies contain settings that apply to both Windows quality and f
 
 ## Windows feature update policies
 
-The service deploys policies using Microsoft Intune to control how Windows feature updates are deployed to devices.  
+The service deploys policies using Microsoft Intune to control how Windows feature updates are deployed to devices.
 
 ### Windows feature updates for Windows 10 and later
 

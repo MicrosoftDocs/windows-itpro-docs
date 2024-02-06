@@ -1,0 +1,7 @@
+items:
+- name: Shared devices concepts
+  href: shared-devices-concepts.md
+- name: Configure shared devices with Shared PC
+  href: set-up-shared-or-guest-pc.md
+- name: Shared PC technical reference
+  href: shared-pc-technical.md

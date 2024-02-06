@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: hathind
 ms.collection:
   - highpri
@@ -17,14 +17,14 @@ ms.collection:
 
 # Microsoft Edge
 
-Windows Autopatch uses the [Stable Channel](/deployedge/microsoft-edge-channels#stable-channel) of Microsoft Edge.  
+Windows Autopatch uses the [Stable Channel](/deployedge/microsoft-edge-channels#stable-channel) of Microsoft Edge.
 
 ## Device eligibility
 
-For a device to be eligible for Microsoft Edge updates as a part of Windows Autopatch, they must meet the following criteria:  
+For a device to be eligible for Microsoft Edge updates as a part of Windows Autopatch, they must meet the following criteria:
 
-- The device must be powered on and have an internet connection.  
-- There are no policy conflicts between Windows Autopatch policies and customer policies.  
+- The device must be powered on and have an internet connection.
+- There are no policy conflicts between Windows Autopatch policies and customer policies.
 - The device must be able to access the required network endpoints to reach the Microsoft Edge update service.
 - If Microsoft Edge is open, it must restart for the update process to complete.
 

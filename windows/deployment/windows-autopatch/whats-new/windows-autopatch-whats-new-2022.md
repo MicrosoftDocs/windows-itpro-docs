@@ -8,7 +8,7 @@ ms.topic: whats-new
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: hathind
 ---
 

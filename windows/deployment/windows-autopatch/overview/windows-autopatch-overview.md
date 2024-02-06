@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.collection:
   - highpri
   - tier1
@@ -27,8 +27,8 @@ Rather than maintaining complex digital infrastructure, businesses want to focus
 - **Close the security gap**: Windows Autopatch keeps software current, there are fewer vulnerabilities and threats to your devices.
 - **Close the productivity gap**: Windows Autopatch adopts features as they're made available. End users get the latest tools to amplify their collaboration and work.
 - **Optimize your IT admin resources**: Windows Autopatch automates routine endpoint updates. IT pros have more time to create value.
-- **On-premises infrastructure**: Transitioning to the world of software as a service (SaaS) allows you to minimize your investment in on-premises hardware since updates are delivered from the cloud.  
-- **Onboard new services**: Windows Autopatch makes it easy to enroll and minimizes the time required from your IT Admins to get started.  
+- **On-premises infrastructure**: Transitioning to the world of software as a service (SaaS) allows you to minimize your investment in on-premises hardware since updates are delivered from the cloud.
+- **Onboard new services**: Windows Autopatch makes it easy to enroll and minimizes the time required from your IT Admins to get started.
 - **Minimize end user disruption**: Windows Autopatch releases updates in sequential deployment rings, and responding to reliability and compatibility signals, user disruptions due to updates are minimized.
 
 Windows Autopatch helps you minimize the involvement of your scarce IT resources in the planning and deployment of updates for Windows, Microsoft 365 Apps, Microsoft Edge or Teams. Windows Autopatch uses careful rollout sequences and communicates with you throughout the release, allowing your IT Admins can focus on other activities and tasks.

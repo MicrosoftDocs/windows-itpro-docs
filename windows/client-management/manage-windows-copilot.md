@@ -3,7 +3,7 @@ title: Manage Copilot in Windows
 description: Learn how to manage Copilot in Windows for commercial environments using MDM and group policy. Learn about the chat providers available to Copilot in Windows.
 ms.topic: conceptual
 ms.subservice: windows-copilot
-ms.date: 02/01/2024
+ms.date: 02/05/2024
 ms.author: mstewart
 author: mestew
 appliesto:
@@ -40,7 +40,7 @@ Organizations that aren't ready to use Copilot in Windows can disable it until t
 
 ## Chat provider platforms for Copilot in Windows
 
-Copilot in Windows can use either Microsoft Copilot or Copilot with commercial data protection as its chat provider platform. The chat provider platform is the underlying service that Copilot in Windows uses to communicate with the user. The chat provider platform is important because it's possible for users to copy and paste sensitive information into the chat. Each chat provider platform has different privacy and security protections.
+Copilot in Windows can use either Microsoft Copilot, Copilot with commercial data protection, or Copilot with Graph-grounded chat as its chat provider platform. The chat provider platform is the underlying service that Copilot in Windows uses to communicate with the user. The chat provider platform is important because it's possible for users to copy and paste sensitive information into the chat. Each chat provider platform has different privacy and security protections.
 
 ### Copilot
 
@@ -49,24 +49,35 @@ Copilot is a consumer experience and has a daily limit on the number of chat que
 - [Copilot in Windows: Your data and privacy](https://support.microsoft.com/windows/3e265e82-fc76-4d0a-afc0-4a0de528b73a)
 - The privacy statement for using Copilot follows the [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) including the product specific guidance in the Microsoft privacy statement for **Bing** under the **Search, Microsoft Edge, and artificial intelligence** section.
 
+  > [!Note]
+  > Copilot doesn't have access to Microsoft 365 Apps data, such as email, calendar, or files using Microsoft Graph, unlike [Microsoft Copilot with Graph-grounded chat](#microsoft-copilot-with-graph-grounded-chat).
 
 ### Copilot with commercial data protection
 
 [Copilot with commercial data protection](/copilot/overview) is intended for commercial use scenarios and offers commercial data protection. The following privacy and security protections apply for Copilot with commercial data protection:
 
-- User and organizational data is protected, chat data isn't saved, and your data isn't used to train the underlying large language models. Because of this protection, chat history, 3rd-party plugins, and the Bing app for iOS or Android aren't currently supported. Copilot with commercial data protection is accessible from mobile browsers, including Edge mobile on iOS and Android. Review the Copilot with commercial data protection [privacy statement](/copilot/privacy-and-protections).
+- User and organizational data is protected, chat data isn't saved, and your data isn't used to train the underlying large language models (LLMs). Because of this protection, chat history, 3rd-party plugins, and the Bing app for iOS or Android aren't currently supported. Copilot with commercial data protection is accessible from mobile browsers, including Edge mobile on iOS and Android. Review the Copilot with commercial data protection [privacy statement](/copilot/privacy-and-protections).
 - Copilot with commercial data protection is available, at no additional cost, for the following licenses:
    - Microsoft 365 E3 or E5
    - Microsoft 365 F3 <!--8681080, 8681034-->
    - Microsoft 365 A1, A3, or A5 <!--8681034-->
-       - Copilot with comercial data protection is limited to faculty and higher education students over 18 years of age
+       - Copilot with commercial data protection is limited to faculty and higher education students over 18 years of age
    - Office 365 A1, A3, or A5 <!--8681034-->
-       - Copilot with comercial data protection is limited to faculty and higher education students over 18 years of age
+       - Copilot with commercial data protection is limited to faculty and higher education students over 18 years of age
    - Microsoft 365 Business Standard
    - Microsoft 365 Business Premium
 
   > [!Note]
-  > Copilot doesn't have access to Microsoft 365 Apps data, such as email, calendar, or files using Microsoft Graph, unlike [Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-overview) which can be used in the Microsoft 365 apps.
+  > Copilot with commercial data protection doesn't have access to Microsoft 365 Apps data, such as email, calendar, or files using Microsoft Graph, unlike [Microsoft Copilot with Graph-grounded chat](#microsoft-copilot-with-graph-grounded-chat).
+
+### Microsoft Copilot with Graph-grounded chat
+<!---8639813-->
+Copilot with Graph-grounded chat enables you to use your work content and context in Copilot for Windows. With Graph-grounded chat, you can draft content and get answers to questions, all securely grounded in your Microsoft Graph data such as user documents, emails, calendar, chats, meetings, and contacts. When you use the **Work** toggle in Copilot in Windows to query Graph-grounded chat, the following high-level privacy and security protections apply:
+
+- Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundational LLMs.
+- It only surfaces organizational data to which individual users have at least view permissions.
+- The information contained within your prompts, the data retrieved, and the generated responses remain within your tenant's service boundary. For more information about privacy and security for Graph-grounded chat, see [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-privacy)
+- Copilot with Graph-grounded chat is part of Copilot for Microsoft 365. Copilot for Microsoft 365 is an add-on plan. For more information about prerequisites and license requirements, see [Microsoft Copilot for Microsoft 365 requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements#license-requirements).
 
 ## Configure the chat provider platform that Copilot in Windows uses
 
@@ -90,9 +101,9 @@ To verify that Copilot with commercial data protection is enabled for the user a
    - Microsoft 365 E3 or E5
    - Microsoft 365 F3 <!--8681080, 8681034-->
    - Microsoft 365 A1, A3, or A5 
-     - Copilot with comercial data protection is limited to faculty and higher education students over 18 years of age <!--8681034-->
+     - Copilot with commercial data protection is limited to faculty and higher education students over 18 years of age <!--8681034-->
    - Office 365 A1, A3, or A5 <!--8681034-->
-      - Copilot with comercial data protection is limited to faculty and higher education students over 18 years of age <!--8681034-->
+      - Copilot with commercial data protection is limited to faculty and higher education students over 18 years of age <!--8681034-->
    - Microsoft 365 Business Standard
    - Microsoft 365 Business Premium
 1. To verify that commercial data protection is enabled for the user, select the user's **Display name** to open the flyout menu.
@@ -126,7 +137,15 @@ $users | Where-Object { -not $_.AssignedPlans -or ($_.AssignedPlans.Service -eq 
 
 When Copilot with commercial data protection is the chat provider platform, the user experience clearly states that **Your personal and company data are protected in this chat**. There's also a shield symbol labeled **Protected** at the top of the Copilot in Windows sidebar and the provider is listed under the Copilot logo when the sidebar is first opened. The following image shows the message that's displayed in this scenario:
 
-:::image type="content" source="images/bing-chat-enterprise-chat-provider.png" alt-text="Screenshot of the Copilot in Windows user experience when Copilot with commercial data protection is the chat provider." lightbox="images/bing-chat-enterprise-chat-provider.png":::
+:::image type="content" source="images/copilot-commercial-data-protection-chat-provider.png" alt-text="Screenshot of the Copilot in Windows user experience when Copilot with commercial data protection is the chat provider." lightbox="images/copilot-commercial-data-protection-chat-provider.png":::
+
+
+### Copilot with Graph-grounded chat as the chat provider platform 
+<!---8639813-->
+
+When users are assigned [Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-setup) licenses, they're automatically presented with a **Work** toggle in Copilot for Windows. When **Work** is selected, Copilot with Graph-grounded chat is the chat provider platform used by Copilot in Windows. When using Graph-grounded chat, user prompts can securely access Microsoft Graph content, such as emails, chats, and documents.  
+
+:::image type="content" source="images/work-toggle-graph-grounded-chat.png" alt-text="Screenshot of the Copilot in Windows user experience when the work toggle is selected and the chart provider is Copilot with Graph-grounded chat." lightbox="images/work-toggle-graph-grounded-chat.png":::
 
 ## Ensure the Copilot in Windows user experience is enabled
 

@@ -1,0 +1,37 @@
+items:
+- name: Overview
+  href: kiosk-methods.md
+- name: Prepare a device for kiosk configuration
+  href: kiosk-prepare.md
+- name: Set up digital signs
+  href: setup-digital-signage.md
+- name: Set up a single-app kiosk
+  href: kiosk-single-app.md
+- name: Set up a multi-app kiosk for Windows 10
+  href: lock-down-windows-10-to-specific-apps.md
+- name: Set up a multi-app kiosk for Windows 11
+  href: lock-down-windows-11-to-specific-apps.md
+- name: Kiosk reference information
+  items:
+    - name: More kiosk methods and reference information
+      href: kiosk-additional-reference.md
+    - name: Find the Application User Model ID of an installed app
+      href: find-the-application-user-model-id-of-an-installed-app.md
+    - name: Validate your kiosk configuration
+      href: kiosk-validate.md
+    - name: Guidelines for choosing an app for assigned access (kiosk mode)
+      href: guidelines-for-assigned-access-app.md
+    - name: Policies enforced on kiosk devices
+      href: kiosk-policies.md
+    - name: Assigned access XML reference
+      href: kiosk-xml.md
+    - name: Use AppLocker to create a Windows 10 kiosk
+      href: lock-down-windows-10-applocker.md
+    - name: Use Shell Launcher to create a Windows client kiosk
+      href: kiosk-shelllauncher.md
+    - name: Use MDM Bridge WMI Provider to create a Windows client kiosk
+      href: kiosk-mdm-bridge.md
+    - name: Troubleshoot kiosk mode issues
+      href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
+- name: Lockdown features from Windows Embedded 8.1 Industry
+  href: lockdown-features-windows-10.md

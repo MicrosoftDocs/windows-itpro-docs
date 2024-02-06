@@ -1,6 +1,6 @@
 ---
 title: Device alerts
-description: Provide notifications and information about the necessary steps to keep your devices up to date. 
+description: Provide notifications and information about the necessary steps to keep your devices up to date.
 ms.date: 08/01/2023
 ms.service: windows-client
 ms.subservice: itpro-updates
@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: adnich
 ms.collection:
   - highpri
