@@ -100,9 +100,9 @@ After the Windows subscription is ordered, an email is sent with guidance on how
 
 Now that a subscription is established and licenses are assigned to users, devices running supported versions of Windows Pro can be upgraded to Enterprise edition.
 
-> [!NOTE]
+> [!TIP]
 >
-> The following experiences are specific to Windows 10. The general concepts also apply to Windows 11.
+> This upgrade experience walkthrough assumes Autopilot isn't being used. For the Autopilot experience when joining Microsoft Entra ID, see [User-driven Microsoft Entra join: Deploy the device](/autopilot/tutorial/user-driven/azure-ad-join-deploy-device).
 
 ### Step 1: Join Windows Pro devices to Microsoft Entra ID
 
@@ -112,29 +112,59 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10)
 
-1. During the initial setup, on the **Who owns this PC?** page, select **My organization**, and then select **Next**.
+1. Power on the device for the first time to initiate Windows Setup.
 
-1. On the **Choose how you'll connect** page, select **Join Microsoft Entra ID**, and then select **Next**.
+1. In the **Let's start with region. Is this right?** screen, select the desired country/region and then select the **Yes** button.
 
-1. On the **Let's get you signed in** page, enter the Microsoft Entra credentials, and then select **Sign in**.
+1. In the **Is this the right keyboard layout?** screen, select the desired keyboard/input methods and then select the **Yes** button.
 
-Now the device is Microsoft Entra joined to the organization's subscription.
+1. In the **Want to add a second keyboard layout?** screen, if desired add additional keyboard/input methods by selecting the **Add layout** button. Otherwise select the **Skip** button.
+
+1. If no network connection is detected, the **Let's connect you to a network** screen appears. Connect to a wireless or wired network that has Internet access, and then select the **Next** button.
+
+1. At this point, updates for Windows Setup might be installed. If updates are installed, the device reboots to finish installing the updates.
+
+1. In Windows 10 Pro editions, the **How would you like to set up?** screen appears. Select **Set up for an organization** and then select the **Next** button.
+
+1. In the **Sign in with Microsoft** screen, in the **someone@example.com** text box, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username will be in the email format of user@domain.com.
+
+1. In the **Enter your password** screen, in the **Password** text box, enter the password for the Microsoft Entra user account, and then select the **Next** button.
+
+1. The device proceeds with the rest of the Windows setup including configuration of organization specific settings.
+
+1. In the **Choose privacy settings for your device** screen, configure privacy settings as desired. Once complete, select the **Accept** button.
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11)
 
-1. During the initial setup, on the **Who owns this PC?** page, select **My organization**, and then select **Next**.
+1. Power on the device for the first time to initiate Windows Setup.
 
-1. On the **Choose how you'll connect** page, select **Join Microsoft Entra ID**, and then select **Next**.
+1. In the **Is this the right country or region?** screen, select the desired country/region and then select the **Yes** button.
 
-1. On the **Let's get you signed in** page, enter the Microsoft Entra credentials, and then select **Sign in**.
+1. In the **Is this the right keyboard layout or input method?** screen, select the desired keyboard/input methods and then select the **Yes** button.
 
-Now the device is Microsoft Entra joined to the organization's subscription.
+1. In the **Want to add a second keyboard layout?** screen, if desired add additional keyboard/input methods by selecting **Add layout**. Otherwise select the **Skip** button.
 
-### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Autopilot**](#tab/autopilot)
+1. If no network connection is detected, the **Let's connect you to a network** screen appears. Connect to a wireless or wired network that has Internet access, and then select the **Next** button.
 
-For the Autopilot experience when joining Microsoft Entra ID, see [User-driven Microsoft Entra join: Deploy the device](/autopilot/tutorial/user-driven/azure-ad-join-deploy-device).
+1. At this point, updates for Windows Setup might be installed. If updates are installed, the device reboots to finish installing the updates.
+
+1. In Windows 11 Pro editions, the **Let's name your device** screen appears. Give the device a name and then select the **Next** button. After giving the device a name, the device might reboot.
+
+1. In Windows 11 Pro editions, the **How would you like to set up this device?** screen appears. Select **Set up for work or school** and then select the **Next** button.
+
+1. In the **Let's set things up for your work or school** screen:
+
+    1. In the text **someone@example.com** box under **Sign in**, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username will be in the email format of user@domain.com.
+
+    1. In the **Password** text box under **Enter password**, enter the password for the Microsoft Entra user account, and then select the **Sign in** button.
+
+1. The device proceeds with the rest of the Windows setup including configuration of organization specific settings.
+
+1. In the **Choose privacy settings for your device** screen, configure privacy settings as desired, using the **Next** button to go between settings. Once complete, select the **Accept** button.
 
 ---
+
+Once Windows Setup finishes, the user is automatically signed in and the device is Microsoft Entra joined to the organization's subscription.
 
 #### Join a device to Microsoft Entra ID when the device is already set up with Windows 10 Pro
 
@@ -166,9 +196,9 @@ Now the device is Microsoft Entra joined to the organization's subscription.
 
 Now the device is Microsoft Entra joined to the organization's subscription.
 
-### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Autopilot**](#tab/autopilot)
-
-For the Autopilot experience when joining Microsoft Entra ID, see [User-driven Microsoft Entra join: Deploy the device](/autopilot/tutorial/user-driven/azure-ad-join-deploy-device).
+> [!TIP]
+>
+> Autopilot is only applicable during the first start of Windows when Windows undergoes Windows Setup. For the Autopilot experience when joining Microsoft Entra ID during Windows Setup, see [User-driven Microsoft Entra join: Deploy the device](/autopilot/tutorial/user-driven/azure-ad-join-deploy-device).
 
 ---
 
@@ -197,10 +227,6 @@ If there are any problems with the Windows Enterprise E3 or E5 license or the ac
 To verify the Windows Enterprise E3 or E5 subscription, go to **Settings**, select **Update & Security**, and select **Activation**.
 
 If there are any problems with the Windows Enterprise E3 or E5 license or the activation of the license, the **Activation** panel displays the appropriate error message or status. This information can be used to help diagnose the licensing and activation process.
-
-### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Autopilot**](#tab/autopilot)
-
-For the Autopilot experience when joining Microsoft Entra ID, see [User-driven Microsoft Entra join: Deploy the device](/autopilot/tutorial/user-driven/azure-ad-join-deploy-device).
 
 ---
 
