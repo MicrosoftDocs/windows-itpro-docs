@@ -1,14 +1,7 @@
 ---
 title: DeliveryOptimization Policy CSP
 description: Learn more about the DeliveryOptimization Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -17,6 +10,8 @@ ms.topic: reference
 # Policy CSP - DeliveryOptimization
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- DeliveryOptimization-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -507,7 +502,7 @@ The recommended value is 1 minute (60).
 <!-- DODisallowCacheServerDownloadsOnVPN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2361] and later <br> ✅ Windows Insider Preview |
 <!-- DODisallowCacheServerDownloadsOnVPN-Applicability-End -->
 
 <!-- DODisallowCacheServerDownloadsOnVPN-OmaUri-Begin -->
@@ -1687,7 +1682,7 @@ This policy allows an IT Admin to define the following details:
 <!-- DOVpnKeywords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2361] and later <br> ✅ Windows Insider Preview |
 <!-- DOVpnKeywords-Applicability-End -->
 
 <!-- DOVpnKeywords-OmaUri-Begin -->
@@ -1697,8 +1692,8 @@ This policy allows an IT Admin to define the following details:
 <!-- DOVpnKeywords-OmaUri-End -->
 
 <!-- DOVpnKeywords-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy allows you to set one or more keywords used to recognize VPN connections.
+<!-- Description-Source-ADMX -->
+This policy allows you to set one or more keywords used to recognize VPN connections. To add multiple keywords, separate them with commas.
 <!-- DOVpnKeywords-Description-End -->
 
 <!-- DOVpnKeywords-Editable-Begin -->
@@ -1721,8 +1716,12 @@ This policy allows you to set one or more keywords used to recognize VPN connect
 | Name | Value |
 |:--|:--|
 | Name | VpnKeywords |
-| Path | DeliveryOptimization > AT > WindowsComponents > DeliveryOptimizationCat |
-| Element Name | VpnKeywords |
+| Friendly Name | VPN Keywords |
+| Element Name | VPN Keywords. |
+| Location | Computer Configuration |
+| Path | Windows Components > Delivery Optimization |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization |
+| ADMX File Name | DeliveryOptimization.admx |
 <!-- DOVpnKeywords-GpMapping-End -->
 
 <!-- DOVpnKeywords-Examples-Begin -->

@@ -1,8 +1,8 @@
 ---
 title: Changes to Windows diagnostic data collection
 description: This article provides information on changes to Windows diagnostic data collection Windows 10 and Windows 11.
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
@@ -75,7 +75,7 @@ Customers who use services that depend on Windows diagnostic data, such as [Micr
 > [!NOTE]
 > The information in this section applies to the following versions of Windows:
 > - Windows 10, versions 20H2, 21H2, 22H2, and newer
-> - Windows 11, versions 21H2, 22H2, and newer
+> - Windows 11, versions 21H2, 22H2, 23H2, and newer
 
 Previously, IT admins could use policies (for example, the “Allow commercial data pipeline” policy) at the individual device level to enroll devices in the Windows diagnostic data processor configuration.
 

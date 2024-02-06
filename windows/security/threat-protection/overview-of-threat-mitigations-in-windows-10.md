@@ -1,12 +1,10 @@
 ---
 title: Mitigate threats by using Windows 10 security features
 description: An overview of software and firmware threats faced in the current security landscape, and the mitigations that Windows 10 offers in response to these threats.
-ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.technology: itpro-security
 ms.date: 12/31/2017
 ms.topic: article
 ---

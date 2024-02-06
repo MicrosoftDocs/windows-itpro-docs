@@ -2,8 +2,8 @@
 metadata:
   title: Delivery Optimization Frequently Asked Questions
   description: List of frequently asked questions for Delivery Optimization.
-  ms.prod: windows-client
-  ms.technology: itpro-updates
+  ms.service: windows-client
+  ms.subservice: itpro-updates
   ms.topic: faq
   author: cmknox
   ms.author: carmenf

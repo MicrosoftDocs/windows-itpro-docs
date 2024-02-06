@@ -2,7 +2,6 @@
 title: 4648(S) A logon was attempted using explicit credentials. 
 description: Describes security event 4648(S) A logon was attempted using explicit credentials.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

@@ -1,14 +1,7 @@
 ---
 title: Personalization CSP
 description: Learn more about the Personalization CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -16,23 +9,146 @@ ms.topic: reference
 <!-- Personalization-Begin -->
 # Personalization CSP
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+
 <!-- Personalization-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-The Personalization CSP can set the lock screen and desktop background images. Setting these policies also prevents the user from changing the image. You can also use the Personalization settings in a provisioning package.
+The Personalization CSP can set the lock screen, desktop background images and company branding on sign-in screen ([BootToCloud mode](policy-csp-clouddesktop.md#boottocloudmode) only). Setting these policies also prevents the user from changing the image. You can also use the Personalization settings in a provisioning package.
 
 > [!IMPORTANT]
-> Personalization CSP is supported in Windows Enterprise and Education SKUs. It works in Windows Professional only when SetEduPolicies in [SharedPC CSP](sharedpc-csp.md) is set.
+> Personalization CSP is supported in Windows Enterprise and Education SKUs. It works in Windows Professional only when SetEduPolicies in [SharedPC CSP](sharedpc-csp.md) is set, or when the device is configured in [Shared PC mode with BootToCloudPCEnhanced policy](clouddesktop-csp.md#boottocloudpcenhanced).
 <!-- Personalization-Editable-End -->
 
 <!-- Personalization-Tree-Begin -->
 The following list shows the Personalization configuration service provider nodes:
 
 - ./Vendor/MSFT/Personalization
+  - [CompanyLogoStatus](#companylogostatus)
+  - [CompanyLogoUrl](#companylogourl)
+  - [CompanyName](#companyname)
   - [DesktopImageStatus](#desktopimagestatus)
   - [DesktopImageUrl](#desktopimageurl)
   - [LockScreenImageStatus](#lockscreenimagestatus)
   - [LockScreenImageUrl](#lockscreenimageurl)
 <!-- Personalization-Tree-End -->
+
+<!-- Device-CompanyLogoStatus-Begin -->
+## CompanyLogoStatus
+
+<!-- Device-CompanyLogoStatus-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-CompanyLogoStatus-Applicability-End -->
+
+<!-- Device-CompanyLogoStatus-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/Personalization/CompanyLogoStatus
+```
+<!-- Device-CompanyLogoStatus-OmaUri-End -->
+
+<!-- Device-CompanyLogoStatus-Description-Begin -->
+<!-- Description-Source-DDF -->
+This represents the status of the Company Logo. 1 - Successfully downloaded or copied. 2 - Download/Copy in progress. 3 - Download/Copy failed. 4 - Unknown file type. 5 - Unsupported Url scheme. 6 - Max retry failed. This setting is currently available for boot to cloud shared pc mode only.
+<!-- Device-CompanyLogoStatus-Description-End -->
+
+<!-- Device-CompanyLogoStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-CompanyLogoStatus-Editable-End -->
+
+<!-- Device-CompanyLogoStatus-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get |
+<!-- Device-CompanyLogoStatus-DFProperties-End -->
+
+<!-- Device-CompanyLogoStatus-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-CompanyLogoStatus-Examples-End -->
+
+<!-- Device-CompanyLogoStatus-End -->
+
+<!-- Device-CompanyLogoUrl-Begin -->
+## CompanyLogoUrl
+
+<!-- Device-CompanyLogoUrl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-CompanyLogoUrl-Applicability-End -->
+
+<!-- Device-CompanyLogoUrl-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/Personalization/CompanyLogoUrl
+```
+<!-- Device-CompanyLogoUrl-OmaUri-End -->
+
+<!-- Device-CompanyLogoUrl-Description-Begin -->
+<!-- Description-Source-DDF -->
+An http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Company Logo or a file Url to a local image on the file system that needs to be used as the Company Logo. This setting is currently available for boot to cloud shared pc mode only.
+<!-- Device-CompanyLogoUrl-Description-End -->
+
+<!-- Device-CompanyLogoUrl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-CompanyLogoUrl-Editable-End -->
+
+<!-- Device-CompanyLogoUrl-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-CompanyLogoUrl-DFProperties-End -->
+
+<!-- Device-CompanyLogoUrl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-CompanyLogoUrl-Examples-End -->
+
+<!-- Device-CompanyLogoUrl-End -->
+
+<!-- Device-CompanyName-Begin -->
+## CompanyName
+
+<!-- Device-CompanyName-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-CompanyName-Applicability-End -->
+
+<!-- Device-CompanyName-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/Personalization/CompanyName
+```
+<!-- Device-CompanyName-OmaUri-End -->
+
+<!-- Device-CompanyName-Description-Begin -->
+<!-- Description-Source-DDF -->
+This represents the name of the company. It can be at most 30 characters long. This setting is currently available only for boot to cloud shared pc mode to display the company name on sign-in screen.
+<!-- Device-CompanyName-Description-End -->
+
+<!-- Device-CompanyName-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-CompanyName-Editable-End -->
+
+<!-- Device-CompanyName-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Regular Expression: `^.{1,30}$` |
+<!-- Device-CompanyName-DFProperties-End -->
+
+<!-- Device-CompanyName-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-CompanyName-Examples-End -->
+
+<!-- Device-CompanyName-End -->
 
 <!-- Device-DesktopImageStatus-Begin -->
 ## DesktopImageStatus
@@ -90,7 +206,7 @@ This represents the status of the DesktopImage. 1 - Successfully downloaded or c
 
 <!-- Device-DesktopImageUrl-Description-Begin -->
 <!-- Description-Source-DDF -->
-A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to be used as the Desktop Image.
+An http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to be used as the Desktop Image.
 <!-- Device-DesktopImageUrl-Description-End -->
 
 <!-- Device-DesktopImageUrl-Editable-Begin -->
@@ -168,7 +284,7 @@ This represents the status of the LockScreenImage. 1 - Successfully downloaded o
 
 <!-- Device-LockScreenImageUrl-Description-Begin -->
 <!-- Description-Source-DDF -->
-A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.
+An http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.
 <!-- Device-LockScreenImageUrl-Description-End -->
 
 <!-- Device-LockScreenImageUrl-Editable-Begin -->

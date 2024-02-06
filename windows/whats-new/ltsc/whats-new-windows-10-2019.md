@@ -3,12 +3,12 @@ title: What's new in Windows 10 Enterprise LTSC 2019
 manager: aaroncz
 ms.author: mstewart
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2019 (also known as Windows 10 Enterprise 2019 LTSB).
-ms.prod: windows-client
+ms.service: windows-client
 author: mestew
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.technology: itpro-fundamentals
-ms.date: 04/05/2023
+ms.subservice: itpro-fundamentals
+ms.date: 12/18/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2019</a>
 ---
@@ -17,8 +17,8 @@ appliesto:
 
 This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2019, compared to Windows 10 Enterprise LTSC 2016 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](overview.md).
 
->[!NOTE]
->Features in Windows 10 Enterprise LTSC 2019 are equivalent to Windows 10, version 1809.
+> [!NOTE]
+> Windows 10 Enterprise LTSC 2019 was first available on November 13, 2018. Features in Windows 10 Enterprise LTSC 2019 are equivalent to Windows 10, version 1809.
 
 Windows 10 Enterprise LTSC 2019 builds on Windows 10 Pro, version 1809 adding premium features designed to address the needs of large and mid-size organizations (including large academic institutions), such as:
 
@@ -30,11 +30,12 @@ Windows 10 Enterprise LTSC 2019 builds on Windows 10 Pro, version 1809 adding pr
 The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC users because it includes the cumulative enhancements provided in Windows 10 versions 1703, 1709, 1803, and 1809. Details about these enhancements are provided below.
 
 >[!IMPORTANT]
->The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the General Availability Channel release of Windows 10 might be limited.
+>The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the general availability channel release of Windows 10 might be limited.
 
 ## Microsoft Intune
 
 Microsoft Intune supports Windows 10 Enterprise LTSC 2019 with the following exception:
+
 - [Update rings](/mem/intune/protect/windows-10-update-rings) can't be used for feature updates since Windows 10 LTSC versions don't receive feature updates. Update rings can be used for quality updates for Windows 10 Enterprise LTSC 2019 clients.
 
 ## Security
@@ -49,7 +50,7 @@ The [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/
 
 ##### Attack surface reduction
 
-Attack surface reduction includes host-based intrusion prevention systems such as [controlled folder access]/microsoft-365/security/defender-endpoint/enable-controlled-folders).
+Attack surface reduction includes host-based intrusion prevention systems such as [controlled folder access](/microsoft-365/security/defender-endpoint/enable-controlled-folders).
 
 - This feature can help prevent ransomware and other destructive malware from changing your personal files. In some cases, apps that you normally use might be blocked from making changes to common folders like **Documents** and **Pictures**. We've made it easier for you to add apps that were recently blocked so you can keep using your device without turning off the feature altogether.
 
@@ -74,7 +75,7 @@ But these protections can also be configured separately. And, unlike HVCI, code 
 
 Endpoint detection and response are improved. Enterprise customers can now take advantage of the entire Windows security stack with Microsoft Defender Antivirus **detections** and Device Guard **blocks** being surfaced in the Microsoft Defender for Endpoint portal.
 
-Windows Defender is now called Microsoft Defender Antivirus and now shares detection status between Microsoft 365 services and interoperates with Microsoft Defender for Endpoint.  Other policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/microsoft-365/security/defender-endpoint/cloud-protection-microsoft-defender-antivirus).
+Windows Defender is now called Microsoft Defender Antivirus and now shares detection status between Microsoft 365 services and interoperates with Microsoft Defender for Endpoint.  Other policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/microsoft-365/security/defender-endpoint/cloud-protection-microsoft-defender-antivirus).
 
 We've also [increased the breadth of the documentation library for enterprise security admins](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows). The new library includes information on:
 
@@ -143,12 +144,7 @@ We've also added a new assessment for the Windows time service to the **Device p
 
 We're continuing to work on how other security apps you've installed show up in the **Windows Security** app. There's a new page called **Security providers** that you can find in the **Settings** section of the app. Select **Manage providers** to see a list of all the other security providers (including antivirus, firewall, and web protection) that are running on your device. Here you can easily open the providers' apps or get more information on how to resolve issues reported to you through **Windows Security**.
 
-This improvement also means you'll see more links to other security apps within **Windows Security**. For example, if you open the **Firewall & network protection** section, you'll see the firewall apps that are running on your device under each firewall type, which includes domain, private, and public networks).
-
-You can read more about ransomware mitigations and detection capability at:
-
-- [Averting ransomware epidemics in corporate networks with Microsoft Defender for Endpoint](https://www.microsoft.com/security/blog/2017/01/30/averting-ransomware-epidemics-in-corporate-networks-with-windows-defender-atp/)
-- [Microsoft Malware Protection Center blog](https://www.microsoft.com/security/blog/category/research/ransomware/)
+This improvement also means you'll see more links to other security apps within **Windows Security**. For example, if you open the **Firewall & network protection** section, you'll see the firewall apps that are running on your device under each firewall type, which includes domain, private, and public networks.
 
 Also see [New capabilities of Microsoft Defender for Endpoint further maximizing the effectiveness and robustness of endpoint security](https://blogs.windows.com/business/2018/04/17/new-capabilities-of-windows-defender-atp-further-maximizing-the-effectiveness-and-robustness-of-endpoint-security/#62FUJ3LuMXLQidVE.97)
 
@@ -170,11 +166,11 @@ This release enables support for WIP with Files on Demand, allows file encryptio
 
 ### BitLocker
 
-The minimum PIN length is being changed from 6 to 4, with a default of 6. For more information, see [BitLocker Group Policy settings](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#configure-minimum-pin-length-for-startup).
+The minimum PIN length is being changed from 6 to 4, with a default of 6. For more information, see [BitLocker Group Policy settings](/windows/security/operating-system-security/data-protection/bitlocker/configure#bitlocker-policy-settings).
 
 #### Silent enforcement on fixed drives
 
-Through a Modern Device Management (MDM) policy, BitLocker can be enabled silently for standard Azure Active Directory (Azure AD) joined users. In Windows 10, version 1803 automatic BitLocker encryption was enabled for standard Azure AD users, but this still required modern hardware that passed the Hardware Security Test Interface (HSTI). This new functionality enables BitLocker via policy even on devices that don't pass the HSTI.
+Through a modern device management (MDM) policy, BitLocker can be enabled silently for standard Microsoft Entra ID joined users. In Windows 10, version 1803 automatic BitLocker encryption was enabled for standard Entra ID users, but this still required modern hardware that passed the Hardware Security Test Interface (HSTI). This new functionality enables BitLocker via policy even on devices that don't pass the HSTI.
 
 This change is an update to the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp) and used by Intune and others.
 
@@ -192,7 +188,7 @@ New features in [Windows Hello for Business](/windows/security/identity-protecti
 
 - For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**. For more information, see [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset).
 
-Windows Hello for Business now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in [Kiosk configuration](#kiosk-configuration). 
+Windows Hello for Business now supports FIDO 2.0 authentication for Entra ID-joined Windows 10 devices and has enhanced support for shared devices, as described in [Kiosk configuration](#kiosk-configuration).
 
 - Windows Hello is now password-less on S-mode.
 
@@ -212,18 +208,18 @@ For more information, see: [Windows Hello and FIDO2 Security Keys enable secure 
 
 Credential Guard is a security service in Windows 10 built to protect Active Directory (AD) domain credentials so that they can't be stolen or misused by malware on a user's machine. It's designed to protect against well-known threats such as Pass-the-Hash and credential harvesting.
 
-Credential Guard has always been an optional feature, but Windows 10 in S mode turns on this functionality by default when the machine has been Azure Active Directory-joined. This feature provides an added level of security when connecting to domain resources not normally present on devices running Windows 10 in S mode.
+Credential Guard has always been an optional feature, but Windows 10 in S mode turns on this functionality by default when the machine has been Entra ID-joined. This feature provides an added level of security when connecting to domain resources not normally present on devices running Windows 10 in S mode.
 
 > [!NOTE]
 > Credential Guard is available only to S mode devices or Enterprise and Education Editions.
 
-For more information, see [Credential Guard Security Considerations](/windows/security/identity-protection/credential-guard/credential-guard-requirements#security-considerations).
+For more information, see [Credential Guard overview](/windows/security/identity-protection/credential-guard/credential-guard-requirements).
 
 ### Other security improvements
 
 #### Windows security baselines
 
-Microsoft has released new [Windows security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines) for Windows Server and Windows 10. A security baseline is a group of Microsoft-recommended configuration settings with an explanation of their security effect. For more information, and to download the Policy Analyzer tool, see [Microsoft Security Compliance Toolkit 1.0](/windows/security/threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10).
+Microsoft has released new [Windows security baselines](/windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines) for Windows Server and Windows 10. A security baseline is a group of Microsoft-recommended configuration settings with an explanation of their security effect. For more information, and to download the Policy Analyzer tool, see [Microsoft Security Compliance Toolkit 1.0](/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10).
 
 #### SMBLoris vulnerability
 
@@ -233,7 +229,7 @@ An issue, known as _SMBLoris_, which could result in denial of service, has been
 
 Windows Defender Security Center is now called **Windows Security Center**.
 
-You can still get to the app in all the usual ways. Ask Cortana to open Windows Security Center(WSC) or interact with the taskbar icon. WSC lets you manage all your security needs, including **Microsoft Defender Antivirus** and **Windows Defender Firewall**.
+You can still get to the app in all the usual ways. WSC lets you manage all your security needs, including **Microsoft Defender Antivirus** and **Windows Defender Firewall**.
 
 The WSC service now requires antivirus products to run as a protected process to register. Products that haven't yet implemented this functionality won't appear in the Windows Security Center user interface, and Microsoft Defender Antivirus will remain enabled side-by-side with these products.
 
@@ -250,9 +246,9 @@ A new security policy setting
 
 #### Windows 10 in S mode
 
-We've continued to work on the **Current threats** area in  [Virus & threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection), which now displays all threats that need action. You can quickly take action on threats from this screen:
+We've continued to work on the **Current threats** area in  [Virus & threat protection](/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-virus-threat-protection), which now displays all threats that need action. You can quickly take action on threats from this screen:
 
-:::image type="content" source="../images/virus-and-threat-protection.png" alt-text="Screenshot of the Virus & threat protection settings in Windows.":::
+:::image type="content" source="../images/virus-and-threat-protection.png" alt-text="Screenshot of the Virus & threat protection settings in Windows 10 Enterprise LTSC 2019.":::
 
 ## Deployment
 
@@ -295,7 +291,7 @@ It's also now possible to run a script if the user rolls back their version of W
 
 `/PostRollback<location> [\setuprollback.cmd] [/postrollback {system / admin}]`
 
-For more information, see [Windows Setup Command-Line Options](/windows-hardware/manufacture/desktop/windows-setup-command-line-options#postrollback).
+For more information, see [Windows Setup command-line options](/windows-hardware/manufacture/desktop/windows-setup-command-line-options#postrollback).
 
 New command-line switches are also available to control BitLocker:
 
@@ -309,7 +305,7 @@ For more information, see [Windows Setup Command-Line Options](/windows-hardware
 
 ### Feature update improvements
 
-Portions of the work done during the offline phases of a Windows update have been moved to the online phase. This change results in a significant reduction of offline time when installing updates. For more information, see [We're listening to you](https://insider.windows.com/articles/were-listening-to-you/).
+Portions of the work done during the offline phases of a Windows update have been moved to the online phase. This change results in a significant reduction of offline time when installing updates.
 
 ### SetupDiag
 
@@ -331,7 +327,7 @@ If you have shared devices deployed in your work place, **Fast sign-in** enables
 
 3. Sign-in to a shared PC with your account.
 
-    :::image type="content" source="../images/fastsignin.png" alt-text="An animated image that demonstrates the fast sign-in feature.":::
+    :::image type="content" source="../images/fastsignin.png" alt-text="An animated image that demonstrates the fast sign-in feature in Windows 10 Enterprise LTSC 2019.":::
 
 ### Web sign-in to Windows 10
 
@@ -339,7 +335,7 @@ Until now, Windows sign-in only supported the use of identities federated to ADF
 
 #### Try out web sign-in
 
-1. Azure AD Join your Windows 10 PC. (Web sign-in is only supported on Azure AD Joined PCs).
+1. Entra ID join your Windows 10 PC. (Web sign-in is only supported on Entra ID-joined PCs).
 
 2. Set the Policy CSP, and the Authentication and EnableWebSignIn policies to enable web sign-in.
 
@@ -347,7 +343,7 @@ Until now, Windows sign-in only supported the use of identities federated to ADF
 
 4. Select "Sign in" to continue.
 
-    :::image type="content" source="../images/websignin.png" alt-text="A screenshot of the Windows sign-in screen that highlights the web sign-in feature.":::
+    :::image type="content" source="../images/websignin.png" alt-text="A screenshot of the Windows 10 sign-in screen that highlights the web sign-in feature.":::
 
 ## Update Compliance
 
@@ -356,8 +352,6 @@ Update Compliance helps you to keep Windows 10 devices in your organization secu
 Update Compliance is a solution built using OMS Log Analytics that provides information about installation status of monthly quality and feature updates. Details are provided about the deployment progress of existing updates and the status of future updates. Information is also provided about devices that might need attention to resolve issues.
 
 New capabilities in Update Compliance let you monitor Windows Defender protection status, compare compliance with industry peers, and optimize bandwidth for deploying updates.
-
-For more information about Update Compliance, see [Monitor Windows Updates with Update Compliance](/windows/deployment/update/update-compliance-monitor).
 
 ## Accessibility and privacy
 
@@ -377,11 +371,11 @@ The new chromium-based Microsoft Edge has many improvements targeted to kiosks. 
 
 Internet Explorer is included in Windows 10 LTSC releases as its feature set isn't changing, and it will continue to get security fixes for the life of a Windows 10 LTSC release.
 
-If you wish to take advantage of [Kiosk capabilities in Microsoft Edge](/previous-versions/windows/edge-legacy/microsoft-edge-kiosk-mode-deploy), consider [Kiosk mode](/windows/configuration/kiosk-methods) with a semi-annual release channel.
+If you wish to take advantage of kiosk capabilities in Microsoft Edge, consider [Kiosk mode](/windows/configuration/kiosk-methods) with a semi-annual release channel.
 
 ### Co-management
 
-Intune and Microsoft Configuration Manager policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
+Intune and Microsoft Configuration Manager policies have been added to enable hybrid Entra ID-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
 
 For more information, see [What's New in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management).
 
@@ -389,9 +383,9 @@ For more information, see [What's New in MDM enrollment and management](/windows
 
 The OS uninstall period is a length of time that users are given when they can optionally roll back a Windows 10 update.  With this release, administrators can use Intune or [DISM](#dism) to customize the length of the OS uninstall period.
 
-### Azure Active Directory join in bulk
+### Microsoft Entra ID join in bulk
 
-Using the new wizards in Windows Configuration Designer, you can [create provisioning packages to enroll devices in Azure Active Directory](/windows/configuration/provisioning-packages/provisioning-packages#configuration-designer-wizards). Azure AD join in bulk is available in the desktop, mobile, kiosk, and Surface Hub wizards.
+Using the new wizards in Windows Configuration Designer, you can [create provisioning packages to enroll devices in Entra ID](/windows/configuration/provisioning-packages/provisioning-packages#configuration-designer-wizards). Entra ID join in bulk is available in the desktop, mobile, kiosk, and Surface Hub wizards.
 
 ### Windows Spotlight
 
@@ -419,9 +413,9 @@ Previously, the customized taskbar could only be deployed using Group Policy or 
 
 ### Windows Insider for Business
 
-We recently added the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (Azure AD). By enrolling devices in Azure AD, you increase the visibility of feedback submitted by users in your organization - especially on features that support your specific business needs. For details, see [Windows Insider Program for Business](https://insider.windows.com/for-business).
+We recently added the option to download Windows 10 Insider Preview builds using your corporate credentials in Microsoft Entra ID. By enrolling devices in Entra ID, you increase the visibility of feedback submitted by users in your organization - especially on features that support your specific business needs. For details, see [Windows Insider Program for Business](https://www.microsoft.com/windowsinsider/for-business).
 
-You can now register your Azure AD domains to the Windows Insider Program. For more information, see [Windows Insider Program for Business](https://insider.windows.com/for-business).
+You can now register your Entra ID domains to the Windows Insider Program. For more information, see [Windows Insider Program for Business](https://www.microsoft.com/windowsinsider/for-business).
 
 ### Optimize update delivery
 
@@ -470,7 +464,7 @@ Some of the other new CSPs are:
 
 For more information, see [What's new in mobile device enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management).
 
-MDM has been expanded to include domain joined devices with Azure Active Directory registration. Group policy can be used with Active Directory-joined devices to trigger auto-enrollment to MDM. For more information, see [Enroll a Windows 10 device automatically using Group Policy](/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy).
+MDM has been expanded to include domain joined devices with Microsoft Entra ID registration. Group policy can be used with Active Directory-joined devices to trigger auto-enrollment to MDM. For more information, see [Enroll a Windows 10 device automatically using Group Policy](/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy).
 
 Multiple new configuration items are also added. For more information, see [What's new in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management).
 
@@ -556,11 +550,11 @@ If you have a device that has been updated to Windows 10 Enterprise LTSC 2019, t
 
 We added a dropdown that displays while you type to help complete the next part of the path. You can also press **Ctrl + Backspace** to delete the last word, and **Ctrl + Delete** to delete the next word.
 
-:::image type="content" source="../images/regeditor.png" alt-text="Screenshot of Registry Editor showing list of path completion.":::
+:::image type="content" source="../images/regeditor.png" alt-text="Screenshot of Registry Editor in Windows 10 showing list of path completion.":::
 
 ## Remote Desktop with Biometrics
 
-Azure Active Directory and Active Directory users using Windows Hello for Business can use biometrics to authenticate to a remote desktop session.
+Microsoft Entra ID and Active Directory users using Windows Hello for Business can use biometrics to authenticate to a remote desktop session.
 
 To get started, sign into your device using Windows Hello for Business. Bring up **Remote Desktop Connection** (mstsc.exe), type the name of the computer you want to connect to, and select **Connect**.
 

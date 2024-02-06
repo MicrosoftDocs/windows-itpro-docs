@@ -1,8 +1,8 @@
 ---
 title: COPILOT IN WINDOWS (PREVIEW) SUPPLEMENTAL TERMS 
 description: The Supplemental Terms for Copilot in Windows (Preview)
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: medium
 author: DHB-MSFT
 ms.author: danbrown
@@ -35,9 +35,9 @@ Copilot in Windows is your AI companion that brings productivity to your fingert
 
 3. Bing Chat
 
-    a. Your Copilot in Windows experiences powered by Bing Chat are subject to [Bing Chat’s terms of use](https://go.microsoft.com/fwlink/p/?linkid=2247757).  
+    a. Your Copilot in Windows experiences powered by Bing Chat are subject to [Bing Chat’s terms of use](https://www.bing.com/new/termsofuse).  
 
-    b. If your organization is allowing you to use Bing Chat Enterprise, your Copilot in Windows experiences will be powered by Bing Chat Enterprise and will be subject to [Bing Chat Enterprise’s terms of use](https://go.microsoft.com/fwlink/p/?linkid=2247908).
+    b. If your organization is allowing you to use Bing Chat Enterprise, your Copilot in Windows experiences will be powered by Bing Chat Enterprise and will be subject to [Bing Chat Enterprise’s terms of use](/bing-chat-enterprise/terms-of-use).
 
 4. Using Copilot in Windows
 

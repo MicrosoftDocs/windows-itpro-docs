@@ -1,10 +1,9 @@
 ---
-title: Monitor resource attribute definitions 
+title: Monitor resource attribute definitions
 description: Learn how to monitor changes to resource attribute definitions when you're using advanced security auditing options to monitor dynamic access control objects.
 ms.assetid: aace34b0-123a-4b83-9e09-f269220e79de
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/09/2021
-ms.technology: itpro-security
 ---
 
 # Monitor resource attribute definitions
@@ -28,7 +26,7 @@ For information about monitoring changes to the resource attributes that apply t
 Use the following procedures to configure settings to monitor changes to resource attribute definitions in AD DS and to verify the changes. These procedures assume that you have configured and deployed Dynamic Access Control, including central access policies, claims, and other components, in your network. If you haven't yet deployed Dynamic Access Control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](/windows-server/identity/solution-guides/deploy-a-central-access-policy--demonstration-steps-).
 
 >**Note:**  Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
- 
+
 **To configure settings to monitor changes to resource attributes**
 
 1.  Sign in to your domain controller by using domain administrator credentials.

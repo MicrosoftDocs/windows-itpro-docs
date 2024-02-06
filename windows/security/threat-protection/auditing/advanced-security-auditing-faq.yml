@@ -2,13 +2,11 @@
 metadata:
   title: Advanced security auditing FAQ
   description: This article lists common questions and answers about understanding, deploying, and managing security audit policies.
-  ms.prod: windows-client
   author: vinaypamnani-msft
   ms.author: vinpa
   manager: aaroncz
   ms.topic: faq
   ms.date: 05/24/2022
-  ms.technology: itpro-security
 
 title: Advanced security auditing FAQ
 

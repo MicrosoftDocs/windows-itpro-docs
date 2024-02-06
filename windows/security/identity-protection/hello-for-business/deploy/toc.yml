@@ -1,0 +1,60 @@
+items:
+- name: Plan a Windows Hello for Business Deployment
+  href: index.md
+- name: Cloud-only deployment
+  href: cloud-only.md
+- name: Hybrid deployments
+  items:
+  - name: Cloud Kerberos trust deployment
+    href: hybrid-cloud-kerberos-trust.md
+  - name: Key trust deployment
+    items: 
+    - name: Requirements and validation
+      href: hybrid-key-trust.md
+      displayName: key trust
+    - name: Configure and enroll in Windows Hello for Business
+      href: hybrid-key-trust-enroll.md
+      displayName: key trust
+    - name: Configure SSO for Microsoft Entra joined devices
+      href: ../hello-hybrid-aadj-sso.md
+      displayName: key trust
+  - name: Certificate trust deployment
+    items: 
+    - name: Requirements and validation
+      href: hybrid-cert-trust.md
+      displayName: certificate trust
+    - name: Configure and validate Public Key Infrastructure (PKI)
+      href: hybrid-cert-trust-pki.md
+      displayName: certificate trust
+    - name: Configure AD FS
+      href: hybrid-cert-trust-adfs.md
+      displayName: certificate trust
+    - name: Configure and enroll in Windows Hello for Business
+      href: hybrid-cert-trust-enroll.md
+      displayName: certificate trust
+    - name: Configure SSO for Microsoft Entra joined devices
+      href: ../hello-hybrid-aadj-sso.md
+      displayName: certificate trust
+    - name: Deploy certificates to Microsoft Entra joined devices
+      href: ../hello-hybrid-aadj-sso-cert.md
+      displayName: certificate trust
+- name: On-premises deployments
+  items:
+  - name: Key trust deployment
+    items: 
+    - name: Requirements and validation
+      href: on-premises-key-trust.md
+    - name: Prepare and deploy Active Directory Federation Services (AD FS)
+      href: on-premises-key-trust-adfs.md
+    - name: Configure and enroll in Windows Hello for Business
+      href: on-premises-key-trust-enroll.md
+  - name: Certificate trust deployment
+    items: 
+    - name: Requirements and validation
+      href: on-premises-cert-trust.md
+    - name: Prepare and Deploy Active Directory Federation Services (AD FS)
+      href: on-premises-cert-trust-adfs.md
+    - name: Configure and enroll in Windows Hello for Business
+      href: on-premises-cert-trust-enroll.md
+- name: Prepare users to provision and use Hello
+  href: prepare-users.md

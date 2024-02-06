@@ -11,10 +11,10 @@ metadata:
   manager: aaroncz
   ms.date: 08/18/2023
   ms.topic: landing-page
-  ms.prod: windows-client
+  ms.service: windows-client
+  ms.subservice: itpro-apps
   ms.collection:
     - tier1
-    - highpri
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -41,7 +41,7 @@ landingContent:
           - text: Changes to Service Host grouping in Windows 10
             url: svchost-service-refactoring.md
 
-  - title: Application Virtualization (App-V) 
+  - title: Application Virtualization (App-V)
     linkLists:
       - linkListType: overview
         links:

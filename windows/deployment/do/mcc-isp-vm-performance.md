@@ -2,8 +2,8 @@
 title: Enhancing cache performance
 titleSuffix: Microsoft Connected Cache for ISPs
 description: This article explains how to enhance performance on a virtual machine used with Microsoft Connected Cache for ISPs
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 ms.author: carmenf
 author: cmknox

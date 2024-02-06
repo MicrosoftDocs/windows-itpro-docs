@@ -1,10 +1,9 @@
 ---
-title: Back up files and directories - security policy setting 
+title: Back up files and directories - security policy setting
 description: Describes the recommended practices, location, values, policy management, and security considerations for the Back up files and directories security policy setting.
 ms.assetid: 1cd6bdd5-1501-41f4-98b9-acf29ac173ae
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Back up files and directories - security policy setting
@@ -78,7 +76,7 @@ The following table lists the actual and effective default policy values for the
 | Domain Controller Effective Default Settings | Administrators<br>Backup Operators<br>Server Operators|
 | Member Server Effective Default Settings | Administrators<br>Backup Operators|
 | Client Computer Effective Default Settings | Administrators<br>Backup Operators|
- 
+
 ## Policy management
 
 A restart of the device isn't required for this policy setting to be effective.
@@ -115,5 +113,5 @@ Changes in the membership of the groups that have the user right to back up file
 ## Related topics
 
 - [User Rights Assignment](user-rights-assignment.md)
- 
- 
+
+

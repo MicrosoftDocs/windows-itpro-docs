@@ -1,14 +1,7 @@
 ---
 title: LocalPoliciesSecurityOptions Policy CSP
 description: Learn more about the LocalPoliciesSecurityOptions Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 10/03/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -373,7 +366,7 @@ Accounts: Rename guest account This security setting determines whether a differ
 <!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-Applicability-End -->
 
 <!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-OmaUri-Begin -->
@@ -402,6 +395,7 @@ Audit: Audit the use of Backup and Restore privilege This security setting deter
 | Format | `b64` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: ``) |
+| Default Value  | 00 |
 <!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-DFProperties-End -->
 
 <!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-Examples-Begin -->
@@ -416,7 +410,7 @@ Audit: Audit the use of Backup and Restore privilege This security setting deter
 <!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-Applicability-End -->
 
 <!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-OmaUri-Begin -->
@@ -457,7 +451,7 @@ Audit: Force audit policy subcategory settings (Windows Vista or later) to overr
 <!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-Applicability-End -->
 
 <!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-OmaUri-Begin -->
@@ -722,7 +716,7 @@ Devices: Restrict CD-ROM access to locally logged-on user only This security set
 <!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-Applicability-End -->
 
 <!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-OmaUri-Begin -->
@@ -771,7 +765,7 @@ Devices: Restrict floppy access to locally logged-on user only This security set
 <!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-Applicability-End -->
 
 <!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-OmaUri-Begin -->
@@ -824,7 +818,7 @@ Domain member: Digitally encrypt or sign secure channel data (always) This secur
 <!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-Applicability-End -->
 
 <!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-OmaUri-Begin -->
@@ -880,7 +874,7 @@ Domain member: Digitally encrypt secure channel data (when possible) This securi
 <!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-Applicability-End -->
 
 <!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-OmaUri-Begin -->
@@ -930,7 +924,7 @@ Domain member: Digitally sign secure channel data (when possible) This security 
 <!-- DomainMember_DisableMachineAccountPasswordChanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- DomainMember_DisableMachineAccountPasswordChanges-Applicability-End -->
 
 <!-- DomainMember_DisableMachineAccountPasswordChanges-OmaUri-Begin -->
@@ -987,7 +981,7 @@ Domain member: Disable machine account password changes Determines whether a dom
 <!-- DomainMember_MaximumMachineAccountPasswordAge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- DomainMember_MaximumMachineAccountPasswordAge-Applicability-End -->
 
 <!-- DomainMember_MaximumMachineAccountPasswordAge-OmaUri-Begin -->
@@ -1040,7 +1034,7 @@ Domain member: Maximum machine account password age This security setting determ
 <!-- DomainMember_RequireStrongSessionKey-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- DomainMember_RequireStrongSessionKey-Applicability-End -->
 
 <!-- DomainMember_RequireStrongSessionKey-OmaUri-Begin -->
@@ -1325,31 +1319,31 @@ Interactive logon: Don't require CTRL+ALT+DEL This security setting determines w
 
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-End -->
 
-<!-- InteractiveLogon_MachineAccountThreshold-Begin -->
-## InteractiveLogon_MachineAccountThreshold
+<!-- InteractiveLogon_MachineAccountLockoutThreshold-Begin -->
+## InteractiveLogon_MachineAccountLockoutThreshold
 
-<!-- InteractiveLogon_MachineAccountThreshold-Applicability-Begin -->
+<!-- InteractiveLogon_MachineAccountLockoutThreshold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
-<!-- InteractiveLogon_MachineAccountThreshold-Applicability-End -->
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- InteractiveLogon_MachineAccountLockoutThreshold-Applicability-End -->
 
-<!-- InteractiveLogon_MachineAccountThreshold-OmaUri-Begin -->
+<!-- InteractiveLogon_MachineAccountLockoutThreshold-OmaUri-Begin -->
 ```Device
-./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/InteractiveLogon_MachineAccountThreshold
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/InteractiveLogon_MachineAccountLockoutThreshold
 ```
-<!-- InteractiveLogon_MachineAccountThreshold-OmaUri-End -->
+<!-- InteractiveLogon_MachineAccountLockoutThreshold-OmaUri-End -->
 
-<!-- InteractiveLogon_MachineAccountThreshold-Description-Begin -->
+<!-- InteractiveLogon_MachineAccountLockoutThreshold-Description-Begin -->
 <!-- Description-Source-DDF -->
 Interactive logon: Machine account threshold. The machine lockout policy is enforced only on those machines that have BitLocker enabled for protecting OS volumes. Please ensure that appropriate recovery password backup policies are enabled. This security setting determines the number of failed logon attempts that causes the machine to be locked out. A locked out machine can only be recovered by providing recovery key at console. You can set the value between 1 and 999 failed logon attempts. If you set the value to 0, the machine will never be locked out. Values from 1 to 3 will be interpreted as 4. Failed password attempts against workstations or member servers that have been locked using either CTRL+ALT+DELETE or password protected screen savers counts as failed logon attempts. The machine lockout policy is enforced only on those machines that have BitLocker enabled for protecting OS volumes. Please ensure that the appropriate recovery password backup policies are enabled. Default: 0.
-<!-- InteractiveLogon_MachineAccountThreshold-Description-End -->
+<!-- InteractiveLogon_MachineAccountLockoutThreshold-Description-End -->
 
-<!-- InteractiveLogon_MachineAccountThreshold-Editable-Begin -->
+<!-- InteractiveLogon_MachineAccountLockoutThreshold-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- InteractiveLogon_MachineAccountThreshold-Editable-End -->
+<!-- InteractiveLogon_MachineAccountLockoutThreshold-Editable-End -->
 
-<!-- InteractiveLogon_MachineAccountThreshold-DFProperties-Begin -->
+<!-- InteractiveLogon_MachineAccountLockoutThreshold-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
@@ -1358,22 +1352,22 @@ Interactive logon: Machine account threshold. The machine lockout policy is enfo
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-999]` |
 | Default Value  | 0 |
-<!-- InteractiveLogon_MachineAccountThreshold-DFProperties-End -->
+<!-- InteractiveLogon_MachineAccountLockoutThreshold-DFProperties-End -->
 
-<!-- InteractiveLogon_MachineAccountThreshold-GpMapping-Begin -->
+<!-- InteractiveLogon_MachineAccountLockoutThreshold-GpMapping-Begin -->
 **Group policy mapping**:
 
 | Name | Value |
 |:--|:--|
 | Name | Interactive logon: Machine account lockout threshold |
 | Path | Windows Settings > Security Settings > Local Policies > Security Options |
-<!-- InteractiveLogon_MachineAccountThreshold-GpMapping-End -->
+<!-- InteractiveLogon_MachineAccountLockoutThreshold-GpMapping-End -->
 
-<!-- InteractiveLogon_MachineAccountThreshold-Examples-Begin -->
+<!-- InteractiveLogon_MachineAccountLockoutThreshold-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- InteractiveLogon_MachineAccountThreshold-Examples-End -->
+<!-- InteractiveLogon_MachineAccountLockoutThreshold-Examples-End -->
 
-<!-- InteractiveLogon_MachineAccountThreshold-End -->
+<!-- InteractiveLogon_MachineAccountLockoutThreshold-End -->
 
 <!-- InteractiveLogon_MachineInactivityLimit-Begin -->
 ## InteractiveLogon_MachineInactivityLimit
@@ -1531,7 +1525,7 @@ Interactive logon: Message title for users attempting to log on This security se
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Applicability-End -->
 
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-OmaUri-Begin -->
@@ -1571,7 +1565,7 @@ Interactive logon: Number of previous logons to cache (in case domain controller
 <!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-Applicability-End -->
 
 <!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-OmaUri-Begin -->
@@ -1866,7 +1860,7 @@ Microsoft network client: Send unencrypted password to connect to third-party SM
 <!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-Applicability-End -->
 
 <!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-OmaUri-Begin -->
@@ -1891,8 +1885,8 @@ Microsoft network server: Amount of idle time required before suspending a sessi
 |:--|:--|
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-15]` |
-| Default Value  | 15 |
+| Allowed Values | Range: `[0-99999]` |
+| Default Value  | 99999 |
 <!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-DFProperties-End -->
 
 <!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-GpMapping-Begin -->
@@ -2049,7 +2043,7 @@ Microsoft network server: Digitally sign communications (if client agrees) This 
 <!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-Applicability-End -->
 
 <!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-OmaUri-Begin -->
@@ -2090,7 +2084,7 @@ Microsoft network server: Disconnect clients when logon hours expire This securi
 <!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-Applicability-End -->
 
 <!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-OmaUri-Begin -->
@@ -2312,7 +2306,7 @@ Network access: Don't allow anonymous enumeration of SAM accounts and shares Thi
 <!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-Applicability-End -->
 
 <!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-OmaUri-Begin -->
@@ -2360,7 +2354,7 @@ Network access: Don't allow storage of passwords and credentials for network aut
 <!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-Applicability-End -->
 
 <!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-OmaUri-Begin -->
@@ -2410,7 +2404,7 @@ Network access: Let Everyone permissions apply to anonymous users This security 
 <!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-Applicability-End -->
 
 <!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-OmaUri-Begin -->
@@ -2435,6 +2429,7 @@ Network access: Named pipes that can be accessed anonymously This security setti
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `,`) |
 <!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-DFProperties-End -->
 
 <!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-Examples-Begin -->
@@ -2449,7 +2444,7 @@ Network access: Named pipes that can be accessed anonymously This security setti
 <!-- NetworkAccess_RemotelyAccessibleRegistryPaths-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- NetworkAccess_RemotelyAccessibleRegistryPaths-Applicability-End -->
 
 <!-- NetworkAccess_RemotelyAccessibleRegistryPaths-OmaUri-Begin -->
@@ -2477,6 +2472,7 @@ Network access: Remotely accessible registry paths This security setting determi
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `,`) |
 <!-- NetworkAccess_RemotelyAccessibleRegistryPaths-DFProperties-End -->
 
 <!-- NetworkAccess_RemotelyAccessibleRegistryPaths-Examples-Begin -->
@@ -2491,7 +2487,7 @@ Network access: Remotely accessible registry paths This security setting determi
 <!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-Applicability-End -->
 
 <!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-OmaUri-Begin -->
@@ -2519,6 +2515,7 @@ Network access: Remotely accessible registry paths and subpaths This security se
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `,`) |
 <!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-DFProperties-End -->
 
 <!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-Examples-Begin -->
@@ -2639,7 +2636,7 @@ Network access: Restrict clients allowed to make remote calls to SAM This policy
 <!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-Applicability-End -->
 
 <!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-OmaUri-Begin -->
@@ -2664,6 +2661,7 @@ Network access: Shares that can be accessed anonymously This security setting de
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `,`) |
 <!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-DFProperties-End -->
 
 <!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-Examples-Begin -->
@@ -2678,7 +2676,7 @@ Network access: Shares that can be accessed anonymously This security setting de
 <!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-Applicability-End -->
 
 <!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-OmaUri-Begin -->
@@ -2722,7 +2720,7 @@ Network access: Sharing and security model for local accounts This security sett
 <!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-Applicability-End -->
 
 <!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-OmaUri-Begin -->
@@ -2980,7 +2978,7 @@ Network security: Force logoff when logon hours expire This security setting det
 |:--|:--|
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
+| Default Value  | 1 |
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-DFProperties-End -->
 
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-AllowedValues-Begin -->
@@ -2988,8 +2986,8 @@ Network security: Force logoff when logon hours expire This security setting det
 
 | Value | Description |
 |:--|:--|
-| 1 | Enable. |
-| 0 (Default) | Disable. |
+| 1 (Default) | Enable. |
+| 0 | Disable. |
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-AllowedValues-End -->
 
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-GpMapping-Begin -->
@@ -3078,7 +3076,7 @@ Network security LAN Manager authentication level This security setting determin
 <!-- NetworkSecurity_LDAPClientSigningRequirements-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- NetworkSecurity_LDAPClientSigningRequirements-Applicability-End -->
 
 <!-- NetworkSecurity_LDAPClientSigningRequirements-OmaUri-Begin -->
@@ -3110,7 +3108,7 @@ Network security: LDAP client signing requirements This security setting determi
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-2]` |
-| Default Value  | 0 |
+| Default Value  | 1 |
 <!-- NetworkSecurity_LDAPClientSigningRequirements-DFProperties-End -->
 
 <!-- NetworkSecurity_LDAPClientSigningRequirements-Examples-Begin -->
@@ -3484,7 +3482,7 @@ Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers This po
 <!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-Applicability-End -->
 
 <!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-OmaUri-Begin -->
@@ -3534,7 +3532,7 @@ Recovery console: Allow automatic administrative logon This security setting det
 <!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-Applicability-End -->
 
 <!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-OmaUri-Begin -->
@@ -3691,7 +3689,7 @@ Shutdown: Clear virtual memory pagefile This security setting determines whether
 <!-- SystemCryptography_ForceStrongKeyProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- SystemCryptography_ForceStrongKeyProtection-Applicability-End -->
 
 <!-- SystemCryptography_ForceStrongKeyProtection-OmaUri-Begin -->
@@ -3732,7 +3730,7 @@ System Cryptography: Force strong key protection for user keys stored on the com
 <!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-Applicability-End -->
 
 <!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-OmaUri-Begin -->
@@ -3782,7 +3780,7 @@ System objects: Require case insensitivity for non-Windows subsystems This secur
 <!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-Applicability-End -->
 
 <!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-OmaUri-Begin -->
@@ -3939,6 +3937,64 @@ User Account Control: Behavior of the elevation prompt for administrators in Adm
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-Examples-End -->
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-End -->
+
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-Begin -->
+## UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators
+
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-Applicability-End -->
+
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators
+```
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-OmaUri-End -->
+
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-Description-Begin -->
+<!-- Description-Source-DDF -->
+User Account Control: Behavior of the elevation prompt for administrators running with enhanced privilege protection. This policy setting controls the behavior of the elevation prompt for administrators. The options are: - Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege. - Prompt for consent on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-Description-End -->
+
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-Editable-End -->
+
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 2 |
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-DFProperties-End -->
+
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 | Prompt for credentials on the secure desktop. |
+| 2 (Default) | Prompt for consent on the secure desktop. |
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-AllowedValues-End -->
+
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | User Account Control: Behavior of the elevation prompt for administrators running with enhanced privilege protection |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-GpMapping-End -->
+
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-Examples-End -->
+
+<!-- UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators-End -->
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-Begin -->
 ## UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers
@@ -4132,7 +4188,7 @@ User Account Control: Only elevate executable files that are signed and validate
 
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Only elevate UIAccess applications that are installed in secure locations This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following: - ...\Program Files\, including subfolders - ...\Windows\system32\ - ...\Program Files (x86)\, including subfolders for 64-bit versions of Windows Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting. The options are: - Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity. - Disabled: An application runs with UIAccess integrity even if it doesn't reside in a secure location in the file system.
+User Account Control: Only elevate UIAccess applications that are installed in secure locations This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following: - ..\Program Files\, including subfolders - ..\Windows\system32\ - ..\Program Files (x86)\, including subfolders for 64-bit versions of Windows Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting. The options are: - Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity. - Disabled: An application runs with UIAccess integrity even if it doesn't reside in a secure location in the file system.
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Description-End -->
 
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Editable-Begin -->
@@ -4291,6 +4347,64 @@ User Account Control: Switch to the secure desktop when prompting for elevation 
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-Examples-End -->
 
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-End -->
+
+<!-- UserAccountControl_TypeOfAdminApprovalMode-Begin -->
+## UserAccountControl_TypeOfAdminApprovalMode
+
+<!-- UserAccountControl_TypeOfAdminApprovalMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- UserAccountControl_TypeOfAdminApprovalMode-Applicability-End -->
+
+<!-- UserAccountControl_TypeOfAdminApprovalMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_TypeOfAdminApprovalMode
+```
+<!-- UserAccountControl_TypeOfAdminApprovalMode-OmaUri-End -->
+
+<!-- UserAccountControl_TypeOfAdminApprovalMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+User Account Control: Configure type of Admin Approval Mode. This policy setting controls whether enhanced privilege protection is applied to admin approval mode elevations. If you change this policy setting, you must restart your computer. This policy is only supported on Windows Desktop, not Server. The options are: - Admin Approval Mode is running in legacy mode (default). - Admin Approval Mode is running with enhanced privilege protection.
+<!-- UserAccountControl_TypeOfAdminApprovalMode-Description-End -->
+
+<!-- UserAccountControl_TypeOfAdminApprovalMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- UserAccountControl_TypeOfAdminApprovalMode-Editable-End -->
+
+<!-- UserAccountControl_TypeOfAdminApprovalMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- UserAccountControl_TypeOfAdminApprovalMode-DFProperties-End -->
+
+<!-- UserAccountControl_TypeOfAdminApprovalMode-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 (Default) | Legacy Admin Approval Mode. |
+| 2 | Admin Approval Mode with enhanced privilege protection. |
+<!-- UserAccountControl_TypeOfAdminApprovalMode-AllowedValues-End -->
+
+<!-- UserAccountControl_TypeOfAdminApprovalMode-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | User Account Control: Configure type of Admin Approval Mode |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- UserAccountControl_TypeOfAdminApprovalMode-GpMapping-End -->
+
+<!-- UserAccountControl_TypeOfAdminApprovalMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- UserAccountControl_TypeOfAdminApprovalMode-Examples-End -->
+
+<!-- UserAccountControl_TypeOfAdminApprovalMode-End -->
 
 <!-- UserAccountControl_UseAdminApprovalMode-Begin -->
 ## UserAccountControl_UseAdminApprovalMode

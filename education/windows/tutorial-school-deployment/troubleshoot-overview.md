@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot Windows devices
 description: Learn how to troubleshoot Windows devices from Intune and contact Microsoft Support for issues related to Intune and other services.
-ms.date: 08/31/2022
+ms.date: 11/09/2023
 ms.topic: tutorial
 ---
 
@@ -25,10 +25,9 @@ Here's a collection of resources to help you troubleshoot Windows devices manage
 
 Microsoft provides global technical, pre-sales, billing, and subscription support for cloud-based device management services. This support includes Microsoft Intune, Configuration Manager, Windows 365, and Microsoft Managed Desktop.
 
-Follow these steps to obtain support in Microsoft Intune provides many tools that can help you troubleshoot Windows devices.
-:
+Follow these steps to obtain support in Microsoft Intune provides many tools that can help you troubleshoot Windows devices:
 
-- Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+- Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
 - Select **Troubleshooting + support** > **Help and support**
     :::image type="content" source="images/advanced-support.png" alt-text="Screenshot that shows how to obtain support from Microsoft Intune." lightbox="images/advanced-support.png":::
 - Select the required support scenario: Configuration Manager, Intune, Co-management, or Windows 365

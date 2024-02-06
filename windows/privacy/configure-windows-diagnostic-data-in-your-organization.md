@@ -1,8 +1,8 @@
 ---
 description: Use this article to make informed decisions about how you can configure Windows diagnostic data in your organization.
 title: Configure Windows diagnostic data in your organization (Windows 10 and Windows 11)
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
@@ -336,7 +336,7 @@ Tenants with billing addresses in countries or regions in the Middle East and Af
 > [!NOTE]
 > The information in this section applies to the following versions of Windows:
 > - Windows 10, versions 20H2, 21H2, 22H2, and newer
-> - Windows 11, versions 21H2, 22H2, and newer
+> - Windows 11, versions 21H2, 22H2, 23H2, and newer
 
 Starting with the January 2023 preview cumulative update, how you enable the processor configuration option depends on the billing address of the Azure AD tenant to which your devices are joined.
 

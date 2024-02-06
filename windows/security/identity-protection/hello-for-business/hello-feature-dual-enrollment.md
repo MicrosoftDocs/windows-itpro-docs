@@ -2,7 +2,7 @@
 title: Dual Enrollment
 description: Learn how to configure Windows Hello for Business dual enrollment and how to configure Active Directory to support Domain Administrator enrollment.
 ms.date: 07/05/2023
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Dual Enrollment

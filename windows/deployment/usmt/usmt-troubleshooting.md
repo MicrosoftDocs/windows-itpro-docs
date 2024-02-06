@@ -1,18 +1,22 @@
 ---
-title: User State Migration Tool (USMT) Troubleshooting (Windows 10)
-description: Learn about topics that address common User State Migration Tool (USMT) 10.0 issues and questions to help troubleshooting.
+title: User State Migration Tool (USMT) Troubleshooting
+description: Learn about articles that address common User State Migration Tool (USMT) issues and questions to help troubleshooting.
+ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 01/09/2024
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # User State Migration Tool (USMT) troubleshooting
 
-The following table describes articles that address common User State Migration Tool (USMT) 10.0 issues and questions. These articles describe tools that you can use to troubleshoot issues that arise during your migration.
+The following table describes articles that address common User State Migration Tool (USMT) issues and questions. These articles describe tools that can be used to troubleshoot issues that arise during the migration.
 
 ## In this section
 
@@ -20,16 +24,13 @@ The following table describes articles that address common User State Migration 
 |--- |--- |
 |[Common Issues](/troubleshoot/windows-client/deployment/usmt-common-issues)|Find troubleshooting solutions for common problems in USMT.|
 |[Frequently Asked Questions](usmt-faq.yml)|Find answers to questions about how to use USMT.|
-|[Log Files](usmt-log-files.md)|Learn how to enable logging to help you troubleshoot issues in USMT.|
+|[Log Files](usmt-log-files.md)|Learn how to enable logging to help troubleshoot issues in USMT.|
 |[Return Codes](/troubleshoot/windows-client/deployment/usmt-return-codes)|Learn how to use return codes to identify problems in USMT.|
 |[USMT Resources](usmt-resources.md)|Find more information and support for using USMT.|
 
 ## Related articles
 
-[USMT best practices](usmt-best-practices.md)
-
-[User State Migration Tool (USMT) overview topics](usmt-topics.md)
-
-[User State Migration Tool (USMT) how-to topics](usmt-how-to.md)
-
-[User State Migration Toolkit (USMT) reference](usmt-reference.md)
+- [USMT best practices](usmt-best-practices.md).
+- [User State Migration Tool (USMT) overview articles](usmt-topics.md).
+- [User State Migration Tool (USMT) how-to articles](usmt-how-to.md).
+- [User State Migration Toolkit (USMT) reference](usmt-reference.md).

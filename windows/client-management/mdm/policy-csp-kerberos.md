@@ -1,14 +1,7 @@
 ---
 title: Kerberos Policy CSP
 description: Learn more about the Kerberos Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 10/23/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -323,7 +316,7 @@ If you don't configure this policy, the SHA1 algorithm will assume the **Default
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
-| Dependency [PKINIT_Hash_Algorithm_Configuration_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfigurationEnabled` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+| Dependency [PKINIT_Hash_Algorithm_Configuration_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfiguration` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- PKInitHashAlgorithmSHA1-DFProperties-End -->
 
 <!-- PKInitHashAlgorithmSHA1-AllowedValues-Begin -->
@@ -396,7 +389,7 @@ If you don't configure this policy, the SHA256 algorithm will assume the **Defau
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
-| Dependency [PKINIT_Hash_Algorithm_Configuration_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfigurationEnabled` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+| Dependency [PKINIT_Hash_Algorithm_Configuration_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfiguration` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- PKInitHashAlgorithmSHA256-DFProperties-End -->
 
 <!-- PKInitHashAlgorithmSHA256-AllowedValues-Begin -->
@@ -469,7 +462,7 @@ If you don't configure this policy, the SHA384 algorithm will assume the **Defau
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
-| Dependency [PKINIT_Hash_Algorithm_Configuration_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfigurationEnabled` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+| Dependency [PKINIT_Hash_Algorithm_Configuration_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfiguration` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- PKInitHashAlgorithmSHA384-DFProperties-End -->
 
 <!-- PKInitHashAlgorithmSHA384-AllowedValues-Begin -->
@@ -542,7 +535,7 @@ If you don't configure this policy, the SHA512 algorithm will assume the **Defau
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
-| Dependency [PKINIT_Hash_Algorithm_Configuration_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfigurationEnabled` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+| Dependency [PKINIT_Hash_Algorithm_Configuration_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfiguration` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- PKInitHashAlgorithmSHA512-DFProperties-End -->
 
 <!-- PKInitHashAlgorithmSHA512-AllowedValues-Begin -->

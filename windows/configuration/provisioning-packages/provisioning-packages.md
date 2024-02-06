@@ -2,34 +2,21 @@
 title: Provisioning packages overview
 description: With Windows 10 and Windows 11, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image. Learn about what provisioning packages, are and what they do.
 ms.reviewer: kevinsheehan
-manager: aaroncz
-ms.prod: windows-client
-author: lizgt2000
-ms.author: lizlong
 ms.topic: article
-ms.localizationpriority: medium
-ms.collection:
- - highpri
- - tier2
-ms.technology: itpro-configure
 ms.date: 12/31/2017
 ---
 
 # Provisioning packages for Windows
 
-**Applies to**
-
-- Windows 10
-- Windows 11
-
-Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. When you use Windows provisioning, an IT administrator can easily specify the desired configuration and settings required to enroll the devices into management. Then, apply that configuration to target devices in a matter of minutes. It's best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers. 
+Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. When you use Windows provisioning, an IT administrator can easily specify the desired configuration and settings required to enroll the devices into management. Then, apply that configuration to target devices in a matter of minutes. It's best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers.
 
 A provisioning package (.ppkg) is a container for a collection of configuration settings. With Windows client, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 
 Provisioning packages are simple enough that with a short set of written instructions, a student, or non-technical employee can use them to configure their device. It can result in a significant reduction in the time required to configure multiple devices in your organization.
 
-<!-- The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) includes the Windows Configuration Designer, a tool for configuring provisioning packages.--> 
-Windows Configuration Designer is available as an [app in the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). 
+<!-- The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) includes the Windows Configuration Designer, a tool for configuring provisioning packages.-->
+
+Windows Configuration Designer is available as an [app in the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22).
 
 <!--## New in Windows 10, version 1703-->
 
@@ -46,21 +33,15 @@ Windows Configuration Designer is available as an [app in the Microsoft Store](h
 Provisioning packages let you:
 
 - Quickly configure a new device without going through the process of installing a new image.
-
 - Save time by configuring multiple devices using one provisioning package.
-
 - Quickly configure employee-owned devices in an organization without a mobile device management (MDM) infrastructure.
-
 - Set up a device without the device having network connectivity.
 
 Provisioning packages can be:
 
 - Installed using removable media such as an SD card or USB flash drive.
-
 - Attached to an email.
-
 - Downloaded from a network share.
-
 - Deployed in NFC tags or barcodes.
 
 ## What you can configure
@@ -71,22 +52,22 @@ The following table describes settings that you can configure using the wizards 
 
 | Step | Description | Desktop wizard | Kiosk wizard | HoloLens wizard |
 | --- | --- | --- | --- | --- |
-| Set up device | Assign device name, enter product key to upgrade Windows, configure shared use, remove pre-installed software | ✔️ | ✔️ | ✔️ |
-| Set up network | Connect to a Wi-Fi network | ✔️ | ✔️ | ✔️ |
-| Account management | Enroll device in Active Directory, enroll device in Microsoft Entra ID, or create a local administrator account | ✔️ | ✔️ | ✔️ |
-| Bulk Enrollment in Microsoft Entra ID | Enroll device in Microsoft Entra ID using Bulk Token</br></br> [Set up Microsoft Entra join in your organization](/azure/active-directory/active-directory-azureadjoin-setup), before you use Windows Configuration Designer wizard to configure bulk Microsoft Entra enrollment. | ✔️ | ✔️ | ✔️ |
-| Add applications | Install applications using the provisioning package.  | ✔️ | ✔️ | ❌ |
-| Add certificates | Include a certificate file in the provisioning package. | ✔️ | ✔️ | ✔️ |
-| Configure kiosk account and app | Create local account to run the kiosk mode app, specify the app to run in kiosk mode | ❌ | ✔️ | ❌ |
-| Configure kiosk common settings | Set tablet mode, configure welcome and shutdown screens, turn off timeout settings | ❌ | ✔️ | ❌ |
-| Developer Setup | Enable Developer Mode  | ❌ | ❌ | ✔️ |
+| Set up device | Assign device name, enter product key to upgrade Windows, configure shared use, remove pre-installed software | ✅ | ✅ | ✅ |
+| Set up network | Connect to a Wi-Fi network | ✅ | ✅ | ✅ |
+| Account management | Enroll device in Active Directory, enroll device in Microsoft Entra ID, or create a local administrator account | ✅ | ✅ | ✅ |
+| Bulk Enrollment in Microsoft Entra ID | Enroll device in Microsoft Entra ID using Bulk Token</br></br> [Set up Microsoft Entra join in your organization](/azure/active-directory/active-directory-azureadjoin-setup), before you use Windows Configuration Designer wizard to configure bulk Microsoft Entra enrollment. | ✅ | ✅ | ✅ |
+| Add applications | Install applications using the provisioning package.  | ✅ | ✅ | ❌ |
+| Add certificates | Include a certificate file in the provisioning package. | ✅ | ✅ | ✅ |
+| Configure kiosk account and app | Create local account to run the kiosk mode app, specify the app to run in kiosk mode | ❌ | ✅ | ❌ |
+| Configure kiosk common settings | Set tablet mode, configure welcome and shutdown screens, turn off timeout settings | ❌ | ✅ | ❌ |
+| Developer Setup | Enable Developer Mode  | ❌ | ❌ | ✅ |
 
 - [Instructions for the desktop wizard](provision-pcs-for-initial-deployment.md)
 - [Instructions for the kiosk wizard](../kiosk-single-app.md#wizard)
 - [Instructions for the HoloLens wizard](/hololens/hololens-provisioning#wizard)
 
 >[!NOTE]
->After you start a project using a Windows Configuration Designer wizard, you can switch to the advanced editor to configure additional settings in the provisioning package. 
+>After you start a project using a Windows Configuration Designer wizard, you can switch to the advanced editor to configure additional settings in the provisioning package.
 
 ### Configuration Designer advanced editor
 
@@ -109,26 +90,26 @@ For details about the settings you can customize in provisioning packages, see [
 <!-- ## Changes to provisioning in Windows 10, version 1607 -->
 
 <!-- > [!NOTE] -->
-<!-- > This section is retained for customers using Windows 10, version 1607, on the Current Branch for Business. Some of this information is not applicable in Windows 10, version 1703. -->
+<!-- > This section is retained for customers using Windows 10, version 1607, on the Current Branch for Business. Some of this information is not applicable in Windows 10, version 1701. -->
 
-WCD, simplified common provisioning scenarios. 
+WCD, simplified common provisioning scenarios.
 
-:::image type="content" source="../images/icd.png" alt-text="Configuration Designer options":::
+:::image type="content" source="images/icd.png" alt-text="Configuration Designer options":::
 
 WCD supports the following scenarios for IT administrators:
 
-* **Simple provisioning** – Enables IT administrators to define a desired configuration in WCD and then apply that configuration on target devices. The simple provisioning wizard makes the entire process quick and easy by guiding an IT administrator through common configuration settings in a step-by-step manner. 
+- **Simple provisioning** - Enables IT administrators to define a desired configuration in WCD and then apply that configuration on target devices. The simple provisioning wizard makes the entire process quick and easy by guiding an IT administrator through common configuration settings in a step-by-step manner.
 
   [Learn how to use simple provisioning to configure Windows computers.](provision-pcs-for-initial-deployment.md)
 
-* **Advanced provisioning (deployment of classic (Win32) and Universal Windows Platform (UWP) apps, and certificates)** – Allows an IT administrator to use WCD to open provisioning packages in the advanced settings editor and include apps for deployment on end-user devices. 
+- **Advanced provisioning (deployment of classic (Win32) and Universal Windows Platform (UWP) apps, and certificates)** - Allows an IT administrator to use WCD to open provisioning packages in the advanced settings editor and include apps for deployment on end-user devices.
 
-* **Mobile device enrollment into management** - Enables IT administrators to purchase off-the-shelf retail Windows devices and enroll them into mobile device management (MDM) before handing them to end users in the organization. IT administrators can use WCD to specify the management endpoint and apply the configuration on target devices by connecting them to a Windows PC (tethered deployment) or through an SD card. Supported management end-points include: 
+- **Mobile device enrollment into management** - Enables IT administrators to purchase off-the-shelf retail Windows devices and enroll them into mobile device management (MDM) before handing them to end users in the organization. IT administrators can use WCD to specify the management endpoint and apply the configuration on target devices by connecting them to a Windows PC (tethered deployment) or through an SD card. Supported management end-points include:
 
-  - Microsoft Intune (certificate-based enrollment) 
-  - AirWatch (password-string based enrollment) 
-  - MobileIron (password-string based enrollment) 
-  - Other MDMs (cert-based enrollment) 
+  - Microsoft Intune (certificate-based enrollment)
+  - AirWatch (password-string based enrollment)
+  - MobileIron (password-string based enrollment)
+  - Other MDMs (cert-based enrollment)
 
 <!--  > [!NOTE] -->
 <!--  > Windows ICD in Windows 10, version 1607, also provided a wizard to create provisioning packages for school PCs. To learn more, see [Set up students' PCs to join domain](/education/windows/). -->

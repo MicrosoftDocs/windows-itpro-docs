@@ -6,16 +6,14 @@ brand: windows
 
 metadata:
   ms.topic: hub-page
-  ms.prod: windows-client
-  ms.technology: itpro-edu
   ms.collection:
     - education
-    - highpri
     - tier1
+    - essentials-navigation
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz
-  ms.date: 08/07/2023
+  ms.date: 10/30/2023
 
 highlightedContent:
   items:

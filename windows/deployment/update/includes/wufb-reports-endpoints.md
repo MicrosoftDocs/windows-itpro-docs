@@ -2,13 +2,14 @@
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.technology: itpro-updates
-ms.prod: windows-client
+ms.subservice: itpro-updates
+ms.service: windows-client
 ms.topic: include
-ms.date: 08/21/2023
+ms.date: 12/15/2023
 ms.localizationpriority: medium
 ---
-<!--This file is shared by updates/wufb-reports-prerequisites.md and the update/update-compliance-configuration-manual.md articles. Headings are driven by article context.  -->
+
+<!-- This file is shared by update/wufb-reports-prerequisites.md and update/wufb-reports-configuration-manual.md articles. Headings are driven by article context. -->
 
 Devices must be able to contact the following endpoints in order to authenticate and send diagnostic data: 
 
@@ -20,5 +21,5 @@ Devices must be able to contact the following endpoints in order to authenticate
 | `settings-win.data.microsoft.com` | Used by Windows components and applications to dynamically update their configuration. Required for Windows Update functionality. |
 | `adl.windows.com` | Required for Windows Update functionality. |
 | `oca.telemetry.microsoft.com`  | Online Crash Analysis, used to provide device-specific recommendations and detailed errors if there are certain crashes. |
-| `login.live.com` | This endpoint facilitates your Microsoft account access and is required to create the primary identifier we use for devices. Without this service, devices won't be visible in the solution. The Microsoft Account Sign-in Assistant service must also be running (wlidsvc). |
-| `*.blob.core.windows.net` | Azure blob data storage.|
+| `login.live.com` | This endpoint facilitates your Microsoft account access and is required to create the primary identifier we use for devices. Without this service, devices aren't visible in the solution. The Microsoft Account Sign-in Assistant service must also be running (wlidsvc). |
+| `ceuswatcab01.blob.core.windows.net` <br> `ceuswatcab02.blob.core.windows.net` <br> `eaus2watcab01.blob.core.windows.net` <br> `eaus2watcab02.blob.core.windows.net` <br> `weus2watcab01.blob.core.windows.net` <br> `weus2watcab02.blob.core.windows.net` | Azure blob data storage. <!-- 8603508 --> |

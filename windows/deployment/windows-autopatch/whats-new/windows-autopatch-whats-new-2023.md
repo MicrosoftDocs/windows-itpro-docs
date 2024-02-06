@@ -1,14 +1,14 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 10/27/2023 
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.date: 12/14/2023
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: whats-new
 ms.localizationpriority: medium
-author: tiaraquan 
+author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby 
+manager: aaroncz
 ms.reviewer: hathind
 ms.collection:
   - highpri
@@ -20,6 +20,27 @@ ms.collection:
 This article lists new and updated feature releases, and service releases, with their corresponding Message center post numbers (if applicable).
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
+
+## December 2023
+
+### December feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Prerequisites](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) | Added F SKU licenses to the [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) section. Also see [FAQ](../overview/windows-autopatch-faq.yml)<ul><li>[MC690609](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+
+## December service release
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC697414](https://admin.microsoft.com/adminportal/home#/MessageCenter) | New Feature: Alerts for Windows Autopatch policy conflicts Public Preview announcement |
+| [MC695483](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned Maintenance: Windows Autopatch configuration update – December 2023 |
+
+## November service release
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC689492](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned Maintenance: Service maintenance to improve Windows Autopatch performance |
 
 ## October 2023
 

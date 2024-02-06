@@ -2,8 +2,8 @@
 title: Windows Update for Business reports data schema
 titleSuffix: Windows Update for Business reports
 description: An overview of Windows Update for Business reports data schema to power additional dashboards and data analysis tools.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart
@@ -11,7 +11,7 @@ manager: aaroncz
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 11/15/2022
+ms.date: 12/06/2023
 ---
 
 # Windows Update for Business reports schema

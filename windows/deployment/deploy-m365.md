@@ -3,12 +3,12 @@ title: Deploy Windows 10 with Microsoft 365
 manager: aaroncz
 ms.author: frankroj
 description: Learn about deploying Windows 10 with Microsoft 365 and how to use a free 90-day trial account to review some of the benefits of Microsoft 365.
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
 ms.topic: article
 ms.date: 11/23/2022
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ---
 
 # Deploy Windows 10 with Microsoft 365

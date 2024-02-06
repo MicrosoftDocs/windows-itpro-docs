@@ -1,10 +1,9 @@
 ---
-title: Allow log on through Remote Desktop Services 
+title: Allow log on through Remote Desktop Services
 description: Best practices, location, values, policy management, and security considerations for the security policy setting. Allow a sign-in through Remote Desktop Services.
 ms.assetid: 6267c376-8199-4f2b-ae56-9c5424e76798
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Allow log on through Remote Desktop Services
@@ -55,11 +53,11 @@ The following table lists the actual and effective default policy values. Defaul
 | Default Domain Policy | Not Defined |
 | Default Domain Controller Policy | Not Defined |
 | Domain Controller Local Security Policy | Administrators |
-| Stand-Alone Server Default Settings | Administrators<br>Remote Desktop Users | 
-| Domain Controller Effective Default Settings | Administrators | 
+| Stand-Alone Server Default Settings | Administrators<br>Remote Desktop Users |
+| Domain Controller Effective Default Settings | Administrators |
 | Member Server Effective Default Settings | Administrators<br>Remote Desktop Users |
 | Client Computer Effective Default Settings | Administrators<br>Remote Desktop Users |
- 
+
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.
@@ -96,7 +94,7 @@ Any account with the **Allow log on through Remote Desktop Services** user right
 For domain controllers, assign the **Allow log on through Remote Desktop Services** user right only to the Administrators group. For other server roles and devices, add the Remote Desktop Users group. For servers that have the Remote Desktop (RD) Session Host role service enabled and don't run in Application Server mode, ensure that only authorized IT personnel who must manage the computers remotely belong to these groups.
 
 > **Caution:**  For RD Session Host servers that run in Application Server mode, ensure that only users who require access to the server have accounts that belong to the Remote Desktop Users group because this built-in group has this logon right by default.
- 
+
 Alternatively, you can assign the **Deny log on through Remote Desktop Services** user right to groups such as Account Operators, Server Operators, and Guests. However, be careful when you use this method because you could block access to legitimate administrators who also belong to a group that has the **Deny log on through Remote Desktop Services** user right.
 
 ### Potential impact
@@ -106,5 +104,5 @@ Removal of the **Allow log on through Remote Desktop Services** user right from 
 ## Related topics
 
 - [User Rights Assignment](user-rights-assignment.md)
- 
- 
+
+

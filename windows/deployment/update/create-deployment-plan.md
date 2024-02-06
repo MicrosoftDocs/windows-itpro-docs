@@ -1,8 +1,8 @@
 ---
 title: Create a deployment plan
 description: Devise the number of deployment rings you need and how you want to populate each of the deployment rings.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart
@@ -18,9 +18,9 @@ ms.date: 12/31/2017
 
 # Create a deployment plan
 
-A "service management" mindset means that the devices in your organization fall into a continuum, with the software update process being constantly planned, deployed, monitored, and optimized. And once you use this process for feature updates, quality updates become a lightweight procedure that is simple and fast to execute, ultimately increasing velocity.
+A "service management" mindset means that the devices in your organization fall into a continuum, with the software update process being constantly planned, deployed, monitored, and optimized. Once you use this process for feature updates, quality updates become a lightweight procedure that is simple and fast to execute, ultimately increasing velocity.
 
-When you move to a service management model, you need effective ways of rolling out updates to representative groups of devices. We've found that a ring-based deployment works well for us at Microsoft and many other organizations across the globe. Deployment rings in Windows client are similar to the deployment groups most organizations constructed for previous major revision upgrades. They're simply a method to separate devices into a deployment timeline.
+When you move to a service management model, you need effective ways of rolling out updates to representative groups of devices. We've found that a ring-based deployment works well for us at Microsoft and many other organizations across the globe. Deployment rings in Windows clients are similar to the deployment groups most organizations constructed for previous major revision upgrades. They're simply a method to separate devices into a deployment timeline.
 
 At the highest level, each ring comprises a group of users or devices that receive a particular update concurrently. For each ring, IT administrators set criteria to control deferral time or adoption (completion) that should be met before deployment to the next broader ring of devices or users can occur.
 
@@ -43,10 +43,10 @@ There are no definite rules for exactly how many rings to have for your deployme
 
 ## Advancing between rings
 
-There are basically two strategies for moving deployments from one ring to the next. One is service-based, the other project based.
+There are basically two strategies for moving deployments from one ring to the next. One is service-based, the other project-based.
 
-- "Red button" (service based): Assumes that content is good until proven bad. Content flows until an issue is discovered, at which point the IT administrator presses the "red button" to stop further distribution.
-- Green button (project based): Assumes that content is bad until proven good. Once all validation has passed, the IT administrator presses the "green button" to push the content to the next ring.
+- "Red button" (service-based): Assumes that content is good until proven bad. Content flows until an issue is discovered, at which point the IT administrator presses the "red button" to stop further distribution.
+- "Green button" (project-based): Assumes that content is bad until proven good. Once all validation has passed, the IT administrator presses the "green button" to push the content to the next ring.
 
 When it comes to deployments, having manual steps in the process usually impedes update velocity. A "red button" strategy is better when that is your goal. 
 
@@ -60,9 +60,9 @@ The purpose of the Preview ring is to evaluate the new features of the update. I
 
 ### Who goes in the Preview ring?
 
-The Preview ring users are the most tech savvy and resilient people, who won't lose productivity if something goes wrong. In general, these users are IT pros, and perhaps a few people in the business organization.
+The Preview ring users are the most tech-savvy and resilient people, who won't lose productivity if something goes wrong. In general, these users are IT pros, and perhaps a few people in the business organization.
 
-During your plan and prepare phases, you should focus on the following activities:
+During your plan and preparation phases, you should focus on the following activities:
 
 - Work with Windows Insider Preview builds.
 - Identify the features and functionality your organization can or wants to use.
@@ -87,7 +87,7 @@ Analytics can help with defining a good Limited ring of representative devices a
 The most important part of this phase is finding a representative sample of devices and applications across your network. If possible, all hardware and all applications should be represented. It's important that the people selected for this ring are using their devices regularly to generate the data you'll need to make a decision for broader deployment across your organization. The IT department, lab devices, and users with the most cutting-edge hardware usually don't have the applications or device drivers that are truly a representative sample of your network.
 
 
-During your pilot and validate phases, you should focus on the following activities:
+During your pilot and validation phases, you should focus on the following activities:
 
 - Deploy new innovations.
 - Assess and act if issues are encountered.
@@ -104,7 +104,7 @@ Once the devices in the Limited ring have had a sufficient stabilization period,
 In most businesses, the Broad ring includes the rest of your organization. Because of the work in the previous ring to vet stability and minimize disruption (with diagnostic data to support your decision), a broad deployment can occur relatively quickly.
 
 > [!NOTE]
-> In some instances, you might hold back on mission-critical devices (such as medical devices) until deployment in the Broad ring is complete. Get best practices and recommendations for deploying Windows client feature updates to mission critical-devices.
+> In some instances, you might hold back on mission-critical devices (such as medical devices) until deployment in the Broad ring is complete. Get best practices and recommendations for deploying Windows client feature updates to mission-critical devices.
 
 During the broad deployment phase, you should focus on the following activities:
 

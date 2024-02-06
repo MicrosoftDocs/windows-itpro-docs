@@ -2,13 +2,13 @@
 title: Manage Windows feature update releases
 description: This article explains how you can manage Windows feature updates with Autopatch groups
 ms.date: 07/25/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: andredm7
 ms.collection:
   - highpri
@@ -42,7 +42,7 @@ The following table explains the auto-populating assignment of your deployments 
 | Phase 3 | Ring2 | Ring2 |
 | Phase 4 | Last | Ring3 |
 
-If the Autopatch groups are edited after a release is created (Active status), the changes to the Autopatch group won’t be reflected unless you create a new custom release.  
+If the Autopatch groups are edited after a release is created (Active status), the changes to the Autopatch group won’t be reflected unless you create a new custom release.
 
 If you wish to change the auto-populating assignment of your deployment rings to release phases, you can do so by adding, removing, or editing the auto-populated phases.
 
@@ -110,7 +110,7 @@ A phase is made of one or more Autopatch group deployment rings. Each phase repo
 
 #### Details about Windows feature update policies
 
-Windows Autopatch creates one Windows feature update policy per phase using the following naming convention:  
+Windows Autopatch creates one Windows feature update policy per phase using the following naming convention:
 
 `Windows Autopatch – DSS policy – <Release Name> – Phase <Phase Number>`
 
@@ -195,12 +195,12 @@ The following table is an example of the Windows feature update policies that we
 > [!IMPORTANT]
 > You can only cancel a release under the Scheduled status. You cannot cancel a release under the **Active**, **Inactive** or **Paused** statuses.
 
-**To cancel a release:**  
+**To cancel a release:**
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** from the left navigation menu.
 1. Under the **Windows Autopatch** section, select **Release management**.
-1. In the **Release schedule** tab, select **Windows feature updates**.  
+1. In the **Release schedule** tab, select **Windows feature updates**.
 1. In the **Windows feature updates** blade, select the **horizontal ellipses (…)** > **Cancel** to cancel your feature updates release.
 1. Select a reason for cancellation from the dropdown menu.
 1. Optional. Enter details about why you're pausing or resuming the selected update.

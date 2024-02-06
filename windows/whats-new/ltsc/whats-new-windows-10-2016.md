@@ -2,29 +2,29 @@
 title: What's new in Windows 10 Enterprise LTSC 2016
 manager: aaroncz
 ms.author: mstewart
-description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2016 (also known as Windows 10 Enterprise 2016 LTSB).
-ms.prod: windows-client
+description: New and updated IT pro content about new features in Windows 10 Enterprise LTSC 2016 (also known as Windows 10 Enterprise 2016 LTSB).
+ms.service: windows-client
 author: mestew
 ms.localizationpriority: low
-ms.topic: article
-ms.technology: itpro-fundamentals
-ms.date: 12/31/2017
+ms.topic: conceptual
+ms.subservice: itpro-fundamentals
+ms.date: 12/18/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2016</a>
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2016
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2016 (LTSB), compared to Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](overview.md).
+This article lists new and updated features and content that are of interest to IT pros for Windows 10 Enterprise LTSC 2016 (LTSB), compared to Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](overview.md).
 
->[!NOTE]
->Features in Windows 10 Enterprise LTSC 2016 are equivalent to Windows 10, version 1607.
+> [!NOTE]
+> Windows 10 Enterprise LTSC 2016 was first available on August 2, 2016. Features in Windows 10 Enterprise LTSC 2016 are equivalent to Windows 10, version 1607.
 
 ## Deployment
 
 ### Windows Imaging and Configuration Designer (ICD)
 
-In previous versions of the Windows 10 Assessment and Deployment Kit (ADK), you had to install more features for Windows ICD to run. Starting in this version of Windows 10, you can install just the configuration designer component independent of the rest of the imaging components. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
+In previous versions of the Windows 10 Assessment and Deployment Kit (ADK), you had to install more features for Windows ICD to run. Starting in this version of Windows 10, you can install just the configuration designer component independent of the rest of the imaging components. [Install the ADK](/windows-hardware/get-started/adk-install).
 
 Windows ICD now includes simplified workflows for creating provisioning packages:
 
@@ -39,7 +39,7 @@ Windows ICD now includes simplified workflows for creating provisioning packages
 >[!IMPORTANT]
 >Upgrade Readiness will not allow you to assess an upgrade to an LTSC release (LTSC builds are not available as target versions). However, you can enroll devices running LTSC to plan for an upgrade to a General Availability Channel release.
 
-Microsoft developed Upgrade Readiness in response to demand from enterprise customers looking for more direction and details about upgrading to Windows 10. Upgrade Readiness was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10. 
+Microsoft developed Upgrade Readiness in response to demand from enterprise customers looking for more direction and details about upgrading to Windows 10. Upgrade Readiness was built taking into account multiple channels of customer feedback, testing, and Microsoft's experience upgrading millions of devices to Windows 10. 
 
 With Windows diagnostic data enabled, Upgrade Readiness collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they're known to Microsoft.
 
@@ -69,11 +69,11 @@ When Windows 10 was first shipped, it included Microsoft Passport and Windows He
 
 Other changes for Windows Hello in Windows 10 Enterprise LTSC 2016:
 
-- Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys.
+- Personal (Microsoft account) and corporate (Active Directory or Entra ID) accounts use a single container for keys.
 - Group Policy settings for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**.
 - Beginning in this version of Windows 10, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN, enable the Group Policy setting **Turn on convenience PIN sign-in**. 
 
-[Learn more about Windows Hello for Business.](/windows/access-protection/hello-for-business/hello-identity-verification)
+[Learn more about Windows Hello for Business.](/windows/security/identity-protection/hello-for-business/deploy/requirements)
 
 ### BitLocker
 
@@ -101,7 +101,7 @@ Other changes for Windows Hello in Windows 10 Enterprise LTSC 2016:
 
 ### Windows Information Protection (WIP), formerly known as enterprise data protection (EDP)
 
-With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leak through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control. For example, when an employee sends the latest engineering pictures from their personal email account, copies and pastes product info into a tweet, or saves an in-progress sales report to their public cloud storage.
+With the increase of employee-owned devices in the enterprise, there's also an increasing risk of accidental data leak through apps and services, like email, social media, and the public cloud, which are outside of the enterprise's control. For example, when an employee sends the latest engineering pictures from their personal email account, copies and pastes product info into a tweet, or saves an in-progress sales report to their public cloud storage.
 
 Windows Information Protection (WIP) helps to protect against this potential data leakage without otherwise interfering with the employee experience. WIP also helps to protect enterprise apps and data against accidental data leak on enterprise-owned devices and personal devices that employees bring to work without requiring changes to your environment or other apps.
 
@@ -125,20 +125,20 @@ Several new features and management options have been added to Windows Defender 
 
 With the growing threat from more sophisticated targeted attacks, a new security solution is imperative in securing an increasingly complex network ecosystem. Microsoft Defender for Endpoint is a security service, built into Windows 10 that enables enterprise customers detect, investigate, and respond to advanced threats on their networks.
 
-[Learn more about Microsoft Defender for Endpoint](/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
+[Learn more about Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/).
 
 ### VPN security
 
-- The VPN client can integrate with the Conditional Access Framework, a cloud-based policy engine built into Azure Active Directory, to provide a device compliance option for remote clients.
+- The VPN client can integrate with the Conditional Access Framework, a cloud-based policy engine built into Microsoft Entra ID, to provide a device compliance option for remote clients.
 - The VPN client can integrate with Windows Information Protection (WIP) policy to provide extra security. [Learn more about Windows Information Protection](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip), previously known as Enterprise Data Protection.
-- New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [What's new in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew_1607)
+- New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)
 - Microsoft Intune: *VPN* profile template includes support for native VPN plug-ins. For more information, see [Create VPN profiles to connect to VPN servers in Intune](/mem/intune/configuration/vpn-settings-configure).
 
 ## Management
 
-### Use Remote Desktop Connection for PCs joined to Azure Active Directory
+### Use Remote Desktop Connection for PCs joined to Microsoft Entra ID
 
-From its release, Windows 10 has supported remote connections to PCs that are joined to Active Directory. Starting in this version of Windows 10, you can also connect to a remote PC that is joined to Azure Active Directory (Azure AD). [Learn about the requirements and supported configurations.](/windows/client-management/connect-to-remote-aadj-pc)
+From its release, Windows 10 has supported remote connections to PCs that are joined to Active Directory. Starting in this version of Windows 10, you can also connect to a remote PC that is joined to Microsoft Entra ID. [Learn about the requirements and supported configurations.](/windows/client-management/connect-to-remote-aadj-pc)
 
 ### Taskbar configuration
 
@@ -146,7 +146,7 @@ Enterprise administrators can add and remove pinned apps from the taskbar. Users
 
 ### Mobile device management and configuration service providers (CSPs)
 
-Numerous settings have been added to the Windows 10 CSPs to expand MDM capabilities for managing devices. To learn more about the specific changes in MDM policies for this version of Windows 10, see [What's new in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew_1607).
+Numerous settings have been added to the Windows 10 CSPs to expand MDM capabilities for managing devices. To learn more about the specific changes in MDM policies for this version of Windows 10, see [What's new in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management).
 
 ### Shared PC mode
 
@@ -154,9 +154,9 @@ This version of Windows 10, introduces shared PC mode, which optimizes Windows 1
 
 ### Application Virtualization (App-V) for Windows 10
 
-Application Virtualization (App-V) enables organizations to deliver Win32 applications to users as virtual applications. Virtual applications are installed on centrally managed servers and delivered to users as a service – in real time and on as as-needed basis. Users launch virtual applications from familiar access points, including the Microsoft Store, and interact with them as if they were installed locally.
+Application Virtualization (App-V) enables organizations to deliver Win32 applications to users as virtual applications. Virtual applications are installed on centrally managed servers and delivered to users as a service - in real time and on as as-needed basis. Users launch virtual applications from familiar access points, including the Microsoft Store, and interact with them as if they were installed locally.
 
-With the release of this version of Windows 10, App-V is included with the Windows 10 for Enterprise edition. If you're new to Windows 10 and App-V or if you're upgrading from a previous version of App-V, you’ll need to download, activate, and install server- and client-side components to start delivering virtual applications to users. 
+With the release of this version of Windows 10, App-V is included with the Windows 10 for Enterprise edition. If you're new to Windows 10 and App-V or if you're upgrading from a previous version of App-V, you'll need to download, activate, and install server- and client-side components to start delivering virtual applications to users. 
 
 [Learn how to deliver virtual applications with App-V.](/windows/application-management/app-v/appv-getting-started)
 
@@ -166,13 +166,13 @@ Many users customize their settings for Windows and for specific applications. C
 
 With User Experience Virtualization (UE-V), you can capture user-customized Windows and application settings and store them on a centrally managed network file share. When users sign in, their personalized settings are applied to their work session, regardless of which device or virtual desktop infrastructure (VDI) sessions they sign in to.
 
-With the release of this version of Windows 10, UE-V is included with the Windows 10 for Enterprise edition. If you're new to Windows 10 and UE-V or upgrading from a previous version of UE-V, you’ll need to download, activate, and install server- and client-side components to start synchronizing user-customized settings across devices. 
+With the release of this version of Windows 10, UE-V is included with the Windows 10 for Enterprise edition. If you're new to Windows 10 and UE-V or upgrading from a previous version of UE-V, you'll need to download, activate, and install server- and client-side components to start synchronizing user-customized settings across devices. 
 
 [Learn how to synchronize user-customized settings with UE-V.](/windows/configuration/ue-v/uev-for-windows)
 
 ## Microsoft Edge
 
-The new chromium-based Microsoft Edge isn't included in the LTSC release of Windows 10.  However, you can download and install it separately [here](https://www.microsoft.com/edge/business/download).
+The new chromium-based Microsoft Edge isn't included in the LTSC release of Windows 10.  However, you can download and install it separately. For more information, see [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download).
 
 ## See Also
 

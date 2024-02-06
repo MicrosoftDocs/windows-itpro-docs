@@ -1,8 +1,8 @@
 ---
 title: Requirements for MCC for Enterprise and Education
 description: Overview of prerequisites and recommendations for using Microsoft Connected Cache (MCC) for Enterprise and Education.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.author: carmenf
 author: cmknox
@@ -13,7 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>
-ms.date: 05/01/2023
+ms.date: 11/07/2023
 ---
 
 # Requirements of Microsoft Connected Cache for Enterprise and Education (early preview)
@@ -34,8 +34,9 @@ ms.date: 05/01/2023
    > Azure VMs are not currently supported. If you'd like to install your cache node on VMWare, see the [Appendix](mcc-enterprise-appendix.md) for a few additional configurations.
 
     **EFLOW requires Hyper-V support**
-    - On Windows client, enable the Hyper-V feature
-    - On Windows Server, install the Hyper-V role and create a default network switch
+    - On Windows client, enable the Hyper-V feature.
+    - On Windows Server, install the Hyper-V role and create a default network switch.
+    - For additional requirements, see [EFLOW requirements](/azure/iot-edge/iot-edge-for-linux-on-windows#prerequisites).
 
     Disk recommendations:
     - Using an SSD is recommended as cache read speed of SSD is superior to HDD

@@ -1,10 +1,9 @@
 ---
-title: Log on as a batch job 
+title: Log on as a batch job
 description: Describes the best practices, location, values, policy management, and security considerations for the Log on as a batch job security policy setting.
 ms.assetid: 4eaddb51-0a18-470e-9d3d-5e7cd7970b41
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,12 +11,11 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: 
+ms.collection:
   - highpri
   - tier3
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Log on as a batch job
@@ -56,13 +54,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Administrators<br/>Backup Operators<br/>Performance Log Users| 
-| Stand-Alone Server Default Settings | Administrators<br/>Backup Operators<br/>Performance Log Users| 
-| Domain Controller Effective Default Settings | Administrators<br/>Backup Operators<br/>Performance Log Users| 
-| Member Server Effective Default Settings | Administrators<br/>Backup Operators<br/>Performance Log Users| 
-| Client Computer Effective Default Settings | Administrators| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Administrators<br/>Backup Operators<br/>Performance Log Users|
+| Stand-Alone Server Default Settings | Administrators<br/>Backup Operators<br/>Performance Log Users|
+| Domain Controller Effective Default Settings | Administrators<br/>Backup Operators<br/>Performance Log Users|
+| Member Server Effective Default Settings | Administrators<br/>Backup Operators<br/>Performance Log Users|
+| Client Computer Effective Default Settings | Administrators|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

@@ -1,13 +1,6 @@
 ---
 title: Reporting DDF file
 description: View the OMA DM device description framework (DDF) for the Reporting configuration service provider.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-ms.topic: reference
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 

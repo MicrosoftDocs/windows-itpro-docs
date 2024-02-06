@@ -3,10 +3,11 @@ title: Windows Tools/Administrative Tools
 description: The folders for Windows Tools and Administrative Tools are folders in the Control Panel that contain tools for system administrators and advanced users.
 ms.localizationpriority: medium
 ms.date: 08/10/2023
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - highpri
 - tier2
+- essentials-manage
 ---
 
 # Windows Tools/Administrative Tools

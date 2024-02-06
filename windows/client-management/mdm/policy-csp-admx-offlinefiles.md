@@ -1,14 +1,7 @@
 ---
 title: ADMX_OfflineFiles Policy CSP
 description: Learn more about the ADMX_OfflineFiles Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 10/23/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1939,7 +1932,7 @@ Reminder balloons appear when the user's connection to a network file is lost or
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 > [!TIP]
-> To set reminder balloon frequency without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, and then click the Offline Files tab. This setting corresponds to the "Display reminder balloons every ... minutes" option.
+> To set reminder balloon frequency without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, and then click the Offline Files tab. This setting corresponds to the "Display reminder balloons every .. minutes" option.
 <!-- Pol_ReminderFreq_1-Description-End -->
 
 <!-- Pol_ReminderFreq_1-Editable-Begin -->
@@ -2002,7 +1995,7 @@ Reminder balloons appear when the user's connection to a network file is lost or
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 > [!TIP]
-> To set reminder balloon frequency without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, and then click the Offline Files tab. This setting corresponds to the "Display reminder balloons every ... minutes" option.
+> To set reminder balloon frequency without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, and then click the Offline Files tab. This setting corresponds to the "Display reminder balloons every .. minutes" option.
 <!-- Pol_ReminderFreq_2-Description-End -->
 
 <!-- Pol_ReminderFreq_2-Editable-Begin -->

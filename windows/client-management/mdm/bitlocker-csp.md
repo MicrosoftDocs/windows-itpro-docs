@@ -1,14 +1,7 @@
 ---
 title: BitLocker CSP
 description: Learn more about the BitLocker CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 10/23/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -17,8 +10,6 @@ ms.topic: reference
 # BitLocker CSP
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- BitLocker-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -39,7 +30,6 @@ The following list shows the BitLocker configuration service provider nodes:
 
 - ./Device/Vendor/MSFT/BitLocker
   - [AllowStandardUserEncryption](#allowstandarduserencryption)
-  - [AllowSuspensionOfBitLockerProtection](#allowsuspensionofbitlockerprotection)
   - [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption)
   - [ConfigureRecoveryPasswordRotation](#configurerecoverypasswordrotation)
   - [EncryptionMethodByDriveType](#encryptionmethodbydrivetype)
@@ -147,64 +137,6 @@ To disable this policy, use the following SyncML:
 <!-- Device-AllowStandardUserEncryption-Examples-End -->
 
 <!-- Device-AllowStandardUserEncryption-End -->
-
-<!-- Device-AllowSuspensionOfBitLockerProtection-Begin -->
-## AllowSuspensionOfBitLockerProtection
-
-<!-- Device-AllowSuspensionOfBitLockerProtection-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-AllowSuspensionOfBitLockerProtection-Applicability-End -->
-
-<!-- Device-AllowSuspensionOfBitLockerProtection-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/BitLocker/AllowSuspensionOfBitLockerProtection
-```
-<!-- Device-AllowSuspensionOfBitLockerProtection-OmaUri-End -->
-
-<!-- Device-AllowSuspensionOfBitLockerProtection-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting allows suspending protection for BitLocker Drive Encryption when enabled and prevents suspending protection when disabled.
-
-> [!WARNING]
-> When policy is disabled, some scenarios will be blocked and prevent those scenarios from behaving normally.
-
-The expected values for this policy are:
-
-0 = Prevent BitLocker Drive Encryption protection from being suspended.
-
-1 = This is the default, when the policy isn't set. Allows suspending BitLocker Drive Encryption protection.
-<!-- Device-AllowSuspensionOfBitLockerProtection-Description-End -->
-
-<!-- Device-AllowSuspensionOfBitLockerProtection-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-AllowSuspensionOfBitLockerProtection-Editable-End -->
-
-<!-- Device-AllowSuspensionOfBitLockerProtection-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `int` |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 1 |
-<!-- Device-AllowSuspensionOfBitLockerProtection-DFProperties-End -->
-
-<!-- Device-AllowSuspensionOfBitLockerProtection-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 | Prevent BitLocker Drive Encryption protection from being suspended. |
-| 1 (Default) | This is the default, when the policy isn't set. Allows suspending BitLocker Drive Encryption protection. |
-<!-- Device-AllowSuspensionOfBitLockerProtection-AllowedValues-End -->
-
-<!-- Device-AllowSuspensionOfBitLockerProtection-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-AllowSuspensionOfBitLockerProtection-Examples-End -->
-
-<!-- Device-AllowSuspensionOfBitLockerProtection-End -->
 
 <!-- Device-AllowWarningForOtherDiskEncryption-Begin -->
 ## AllowWarningForOtherDiskEncryption

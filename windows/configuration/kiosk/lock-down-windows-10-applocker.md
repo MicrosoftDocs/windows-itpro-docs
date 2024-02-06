@@ -1,0 +1,97 @@
+---
+title: Use AppLocker to create a Windows 10 kiosk that runs multiple apps
+description: Learn how to use AppLocker to configure a kiosk device running Windows 10 Enterprise or Windows 10 Education so that users can only run a few specific apps.
+appliesto:
+- ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 07/30/2018
+ms.topic: article
+---
+
+# Use AppLocker to create a Windows 10 kiosk that runs multiple apps
+
+Learn how to configure a device running Windows 10 Enterprise or Windows 10 Education, version 1703 and earlier, so that users can only run a few specific apps. The result is similar to [a kiosk device](./kiosk-methods.md), but with multiple apps available. For example, you might set up a library computer so that users can search the catalog and browse the Internet, but can't run any other apps or change computer settings.
+
+>[!NOTE]
+>For devices running Windows 10, version 1709, we recommend the [multi-app kiosk method](lock-down-windows-10-to-specific-apps.md).
+
+You can restrict users to a specific set of apps on a device running Windows 10 Enterprise or Windows 10 Education by using [AppLocker](/windows/device-security/applocker/applocker-overview). AppLocker rules specify which apps are allowed to run on the device.
+
+AppLocker rules are organized into collections based on file format. If no AppLocker rules for a specific rule collection exist, all files with that file format are allowed to run. However, when an AppLocker rule for a specific rule collection is created, only the files explicitly allowed in a rule are permitted to run. For more information, see [How AppLocker works](/windows/device-security/applocker/how-applocker-works-techref).
+
+This topic describes how to lock down apps on a local device. You can also use AppLocker to set rules for applications in a domain by using Group Policy.
+
+![install create lockdown customize.](images/lockdownapps.png)
+
+## Install apps
+
+First, install the desired apps on the device for the target user account(s). This works for both Unified Windows Platform (UWP) apps and Windows desktop apps. For UWP apps, you must log on as that user for the app to install. For desktop apps, you can install an app for all users without logging on to the particular account.
+
+## Use AppLocker to set rules for apps
+
+After you install the desired apps, set up AppLocker rules to only allow specific apps, and block everything else.
+
+1. Run Local Security Policy (secpol.msc) as an administrator.
+1. Go to **Security Settings** &gt; **Application Control Policies** &gt; **AppLocker**, and select **Configure rule enforcement**.
+
+    ![configure rule enforcement.](images/apprule.png)
+
+1. Check **Configured** under **Executable rules**, and then click **OK**.
+1. Right-click **Executable Rules** and then click **Automatically generate rules**.
+
+    ![automatically generate rules.](images/genrule.png)
+
+1. Select the folder that contains the apps that you want to permit, or select C:\\ to analyze all apps.
+1. Type a name to identify this set of rules, and then click **Next**.
+1. On the **Rule Preferences** page, click **Next**. Be patient, it might take awhile to generate the rules.
+1. On the **Review Rules** page, click **Create**. The wizard will now create a set of rules allowing the installed set of apps.
+1. Read the message and click **Yes**.
+
+    ![default rules warning.](images/appwarning.png)
+
+1. (optional) If you want a rule to apply to a specific set of users, right-click on the rule and select **Properties**. Then use the dialog to choose a different user or group of users.
+1. (optional) If rules were generated for apps that should not be run, you can delete them by right-clicking on the rule and selecting **Delete**.
+1. Before AppLocker will enforce rules, the **Application Identity** service must be turned on. To force the Application Identity service to automatically start on reset, open a command prompt and run:
+
+    ``` syntax
+    sc config appidsvc start=auto
+    ```
+
+1. Restart the device.
+
+## Other settings to lock down
+
+In addition to specifying the apps that users can run, you should also restrict some settings and functions on the device. For a more secure experience, we recommend that you make the following configuration changes to the device:
+
+- Remove **All apps**.
+
+    Go to **Group Policy Editor** &gt; **User Configuration** &gt; **Administrative Templates\\Start Menu and Taskbar\\Remove All Programs list from the Start menu**.
+
+- Hide **Ease of access** feature on the logon screen.
+
+    Go to **Control Panel** &gt; **Ease of Access** &gt; **Ease of Access Center**, and turn off all accessibility tools.
+
+- Disable the hardware power button.
+
+    Go to **Power Options** &gt; **Choose what the power button does**, change the setting to **Do nothing**, and then **Save changes**.
+
+- Disable the camera.
+
+    Go to **Settings** &gt; **Privacy** &gt; **Camera**, and turn off **Let apps use my camera**.
+
+- Turn off app notifications on the lock screen.
+
+    Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Logon\\Turn off app notifications on the lock screen**.
+
+- Disable removable media.
+
+    Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Device Installation\\Device Installation Restrictions**. Review the policy settings available in **Device Installation Restrictions** for the settings applicable to your situation.
+
+    **Note**
+
+    To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**.
+
+To learn more about locking down features, see [Customizations for Windows 10 Enterprise](/windows-hardware/customize/enterprise/enterprise-custom-portal).
+
+## Customize Start screen layout for the device (recommended)
+
+Configure the Start menu on the device to only show tiles for the permitted apps. You will make the changes manually, export the layout to an .xml file, and then apply that file to devices to prevent users from making changes. For instructions, see [Manage Windows 10 Start layout options](../start/windows-10-start-layout-options-and-policies.md).

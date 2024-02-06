@@ -7,15 +7,16 @@ metadata:
   title: Delivery Optimization # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about using peer to peer downloads on Windows clients and learn about Microsoft Connected Cache. # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: landing-page
-  ms.prod: windows-client
-  ms.technology: itpro-updates
+  ms.service: windows-client
+  ms.subservice: itpro-updates
   ms.collection:
     - highpri
     - tier3
+    - essentials-navigation
   author: aczechowski
   ms.author: aaroncz
   manager: aaroncz
-  ms.date: 03/07/2022 #Required; mm/dd/yyyy format.
+  ms.date: 12/22/2023 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new

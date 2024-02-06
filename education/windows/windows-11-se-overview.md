@@ -2,18 +2,17 @@
 title: Windows 11 SE Overview
 description: Learn about Windows 11 SE, and the apps that are included with the operating system.
 ms.topic: overview
-ms.date: 08/03/2023
+ms.date: 01/09/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ms.collection:
-  - highpri
   - education
   - tier1
 ---
 
 # Windows 11 SE Overview
 
-Windows 11 SE is an edition of Windows that's designed for education. Windows SE runs on web-first devices that use essential education apps, and it comes with Microsoft Office 365 preinstalled (subscription sold separately).
+Windows 11 SE is an edition of Windows designed for education. Windows SE runs on web-first devices that use essential education apps, and it comes with Microsoft Office 365 preinstalled (subscription sold separately).
 
 For education customers seeking cost-effective devices, Microsoft Windows 11 SE is a great choice. Windows 11 SE includes the following benefits:
 
@@ -35,8 +34,8 @@ The following table lists the different application types available in Windows o
 | --- | --- | :---: | ---|
 |Progressive Web Apps (PWAs) | PWAs are web-based applications that can run in a browser and that can be installed as standalone apps. |✅|PWAs are enabled by default in Windows 11 SE.|
 | Web apps | Web apps are web-based applications that run in a browser. | ✅ | Web apps are enabled by default in Windows 11 SE. |
-|`Win32`| `Win32` applications are Windows classic applications that may require installation |⛔| If users try to install or execute `Win32` applications that haven't been allowed to run, they fail.|
-|Universal Windows Platform (UWP)/Store apps |UWP apps are commonly obtained from the Microsoft Store and may require installation |⛔|If users try to install or execute UWP applications that haven't been allowed to run, they fail.|
+|`Win32`| `Win32` applications are Windows classic applications that might require installation |⛔| If users try to install or execute `Win32` applications that aren't allowed to run, they fail.|
+|Universal Windows Platform (UWP)/Store apps |UWP apps are commonly obtained from the Microsoft Store and might require installation |⛔|If users try to install or execute UWP applications that haven't been allowed to run, they fail.|
 
 > [!IMPORTANT]
 > If there are specific `Win32` or UWP applications that you want to allow, work with Microsoft to get them enabled. For more information, see [Add your own applications](#add-your-own-applications).
@@ -48,33 +47,33 @@ The following table lists all the applications included in Windows 11 SE and the
 | App name                     | App type | Pinned to Start? | Pinned to taskbar? |
 |:-----------------------------|:--------:|:----------------:|:------------------:|
 | Alarm & Clock                | UWP      |                  |                    |
-| Calculator                   | UWP      | ✅              |                    |
-| Camera                       | UWP      | ✅              |                    |
-| Microsoft Edge               | `Win32`    | ✅              | ✅                 |
-| Excel                        | `Win32`    | ✅              |                    |
+| Calculator                   | UWP      | ✅               |                    |
+| Camera                       | UWP      | ✅               |                    |
+| Microsoft Edge               | `Win32`  | ✅               | ✅                  |
+| Excel                        | `Win32`  | ✅               |                    |
 | Feedback Hub                 | UWP      |                  |                    |
-| File Explorer                | `Win32`    |                  | ✅                |
+| File Explorer                | `Win32`  |                  | ✅                 |
 | FlipGrid                     | PWA      |                  |                    |
 | Get Help                     | UWP      |                  |                    |
-| Media Player                 | UWP      | ✅              |                    |
+| Media Player                 | UWP      | ✅               |                    |
 | Maps                         | UWP      |                  |                    |
 | Minecraft: Education Edition | UWP      |                  |                    |
 | Movies & TV                  | UWP      |                  |                    |
 | News                         | UWP      |                  |                    |
-| Notepad                      | `Win32`    |                  |                    |
-| OneDrive                     | `Win32`    |                  |                    |
-| OneNote                      | `Win32`    | ✅              |                    |
-| Outlook                      | PWA      | ✅              |                    |
-| Paint                        | `Win32`    | ✅              |                    |
+| Notepad                      | `Win32`  |                  |                    |
+| OneDrive                     | `Win32`  |                  |                    |
+| OneNote                      | `Win32`  | ✅               |                    |
+| Outlook                      | PWA      | ✅               |                    |
+| Paint                        | `Win32`  | ✅               |                    |
 | Photos                       | UWP      |                  |                    |
-| PowerPoint                   | `Win32`    | ✅              |                    |
-| Settings                     | UWP      | ✅              |                    |
+| PowerPoint                   | `Win32`  | ✅               |                    |
+| Settings                     | UWP      | ✅               |                    |
 | Snip & Sketch                | UWP      |                  |                    |
 | Sticky Notes                 | UWP      |                  |                    |
-| Teams                        | `Win32`    | ✅              |                    |
+| Teams                        | `Win32`  | ✅               |                    |
 | To Do                        | UWP      |                  |                    |
-| Whiteboard                   | UWP      | ✅              |                    |
-| Word                         | `Win32`    | ✅              |                    |
+| Whiteboard                   | UWP      | ✅               |                    |
+| Word                         | `Win32`  | ✅               |                    |
 
 ## Available applications
 
@@ -89,6 +88,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `AristotleK12 Borderless Classroom `      | 3.0.11.           | `Win32`    | `Sergeant Laboratories`                   |
 | `AristotleK12 Analytics `                 | 10.0.6            | `Win32`    | `Sergeant Laboratories`                   |
 | `AristotleK12 Network filter`             | 3.1.10            | `Win32`    | `Sergeant Laboratories`                   |
+| `Bluebook`                                | 0.9.203            | `Win32`    | `Collegeboard`                           |
 | `Brave Browser`                           | 106.0.5249.119    | `Win32`    | `Brave`                                   |
 | `Bulb Digital Portfolio`                  | 0.0.7.0           | `Store`  | `Bulb`                                    |
 | `CA Secure Browser`                       | 15.0.0            | `Win32`    | `Cambium Development`                     |
@@ -102,8 +102,9 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `ContentKeeper Cloud`                     | 9.01.45           | `Win32`    | `ContentKeeper Technologies`              |
 | `DigiExam`                                | 14.1.0            | `Win32`    | `Digiexam`                                |
 | `Digital Secure testing browser`          | 15.0.0            | `Win32`    | `Digiexam`                                |
+| `Dolphin Guide Connect`                   | 1.25              | `Win32`    | `Dolphin Guide Connect`                   |
 | `Dragon Professional Individual`          | 15.00.100         | `Win32`    | `Nuance Communications`                   |
-| `DRC INSIGHT Online Assessments`          | 13.0.0.0          | `Store`  | `Data recognition Corporation`            |
+| `DRC INSIGHT Online Assessments`          | 14.0.0.0          | `Store`  | `Data recognition Corporation`              |
 | `Duo from Cisco`                          | 3.0.0             | `Win32`    | `Cisco`                                   |
 | `Dyknow`                                  | 7.9.13.7          | `Win32`    | `Dyknow`                                  |
 | `e-Speaking Voice and Speech recognition` | 4.4.0.11          | `Win32`    | `e-speaking`                              |
@@ -126,9 +127,9 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Impero Backdrop Client`                  | 5.0.151           | `Win32`    | `Impero Software`                         |
 | `IMT Lazarus`                             | 2.86.0            | `Win32`    | `IMTLazarus`                              |
 | `Inspiration 10`                          | 10.11             | `Win32`    | `TechEdology Ltd`                         |
-| `JAWS for Windows`                        | 2022.2112.24      | `Win32`    | `Freedom Scientific`                      |
+| `JAWS for Windows`                        | 2023.2307.37      | `Win32`    | `Freedom Scientific`                      |
 | `Kite Student Portal`                     | 9.0.0.0           | `Win32`    | `Dynamic Learning Maps`                   |
-| `Keyman`                                  | 16.0.141          | `Win32`    | `SIL International`                       |
+| `Keyman`                                  | 16.0.142          | `Win32`    | `SIL International`                       |
 | `Kortext`                                 | 2.3.433.0         | `Store`  | `Kortext`                                 |
 | `Kurzweil 3000 Assistive Learning`        | 20.13.0000        | `Win32`    | `Kurzweil Educational Systems`            |
 | `LanSchool Classic`                       | 9.1.0.46          | `Win32`    | `Stoneware, Inc.`                         |
@@ -136,10 +137,13 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Lexibar`                                 | 3.07.02           | `Win32`    | `Lexibar`                                 |
 | `LGfL HomeProtect`                        | 8.3.44.11         | `Win32`    | `LGFL`                                    |
 | `Lightspeed Smart Agent`                  | 1.9.1             | `Win32`    | `Lightspeed Systems`                      |
-| `Lightspeed Filter Agent`                 | 2.3.4             | `Win32`    | `Lightspeed Systems`                      |
+| `Lightspeed Classroom`                    | 3.4.5.0           | `Win32`    | `Lightspeed Systems`                      |
+| `Lightspeed Filter Agent`                 | 2.5.2             | `Win32`    | `Lightspeed Systems`                      |
 | `Lightspeed Digital`                      | 3.12.3.11         | `Win32`    | `Lightspeed Systems`                      |
+| `Linewize Authentication agent `          |1.4.1              | `Win32`    | `Linewize`                                |
 | `MetaMoJi ClassRoom`                      | 3.12.4.0          | `Store`    | `MetaMoJi Corporation`                    |
 | `Microsoft Connect`                       | 10.0.22000.1      | `Store`    | `Microsoft`                               |
+| `Mind+ Desktop`                           | 1.8.0             | `Win32`    | `Mind+Desktop`                            |
 | `Mozilla Firefox`                         | 116.0.2           | `Win32`    | `Mozilla`                                 |
 | `Mobile Plans`                            | 5.1911.3171.0     | `Store`    | `Microsoft Corporation`                   |
 | `Musescore`                               | 4.1.1.232071203   | `Win32`    | `Musescore`                               |
@@ -158,19 +162,20 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `PaperCut`                                | 22.0.6            | `Win32`    | `PaperCut Software International Pty Ltd` |
 | `Pearson TestNav`                         | 1.11.3            | `Store`    | `Pearson`                                 |
 | `Project Monarch Outlook`                 | 1.2023.831.400    | `Store`    | `Microsoft`                               |
-| `Questar Secure Browser`                  | 5.0.1.456         | `Win32`    | `Questar, Inc`                            |
+| `Questar Secure Browser`                  | 5.0.5.536         | `Win32`    | `Questar, Inc`                            |
 | `ReadAndWriteForWindows`                  | 12.0.78           | `Win32`    | `Texthelp Ltd.`                           |
 | `Remote Desktop client (MSRDC)`           | 1.2.4487.0        | `Win32`    | `Microsoft`                               |
-| `Remote Help`                             | 4.0.1.13          | `Win32`    | `Microsoft`                               |
+| `Remote Help`                             | 5.0.1311.0        | `Win32`    | `Microsoft`                               |
 | `Respondus Lockdown Browser`              | 2.0.9.03          | `Win32`    | `Respondus`                               |
 | `Safe Exam Browser`                       | 3.5.0.544         | `Win32`    | `Safe Exam Browser`                       |
-|`SchoolYear`                               | 3.5.4             | `Win32`    |`SchoolYear`                              |
-|`School Manager`                           | 3.6.8.1109        | `Win32`    |`School Manager`                           |
+|`SchoolYear`                               | 3.5.4             | `Win32`    |`SchoolYear`                               |
+|`School Manager`                           | 3.6.10-1149       | `Win32`    |`Linewize`                                 |
+|`Schoolnet Secure Tester`                  |  2.1.0            | `Win32`    |`School Net`                               |
 |`Scratch`                                  | 3.0               | `Win32`    |`MIT`                                      |
-| `Senso.Cloud`                             | 2021.11.15.0      | `Win32`    | `Senso.Cloud`                             |
+| `Senso.Cloud`                             |2021.11.15.0       | `Win32`    | `Senso.Cloud`                             |
 | `Skoolnext`                               | 2.19              | `Win32`    | `Skool.net`                               |
 | `Smoothwall Monitor`                      | 2.9.2             | `Win32`    | `Smoothwall Ltd`                          |
-| `SuperNova Magnifier & Screen Reader`     | 22.02             | `Win32`    | `Dolphin Computer Access`                 |
+| `SuperNova Magnifier & Screen Reader`     | 22.03             | `Win32`    | `Dolphin Computer Access`                 |
 | `SuperNova Magnifier & Speech`            | 21.03             | `Win32`    | `Dolphin Computer Access`                 |
 |`TX Secure Browser`                        | 15.0.0            | `Win32`    | `Cambium Development`                     |
 | `VitalSourceBookShelf`                    | 10.2.26.0         | `Win32`    | `VitalSource Technologies Inc`            |

@@ -1,14 +1,7 @@
 ---
 title: DeclaredConfiguration DDF file
 description: View the XML file containing the device description framework (DDF) for the DeclaredConfiguration configuration service provider.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 09/27/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -47,7 +40,7 @@ The following XML file contains the device description framework (DDF) for the D
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
         <MSFT:CspVersion>9.9</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -80,7 +73,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Delete />
             <Get />
           </AccessType>
-          <Description>This internal node indicates that the configuration has discrete settings values and is self-contained with complete setting and value pairs that do not contain placeholders that the need to be resolved later with additional data. The request is ready to be processed as is.</Description>
+          <Description>This internal node indicates that the configuration has discrete settings values and is self-contained with complete setting and value pairs that do not contain placeholders that need to be resolved later with additional data. The request is ready to be processed as is.</Description>
           <DFFormat>
             <node />
           </DFFormat>

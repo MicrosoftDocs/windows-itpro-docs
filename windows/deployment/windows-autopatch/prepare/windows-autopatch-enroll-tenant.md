@@ -2,13 +2,13 @@
 title: Enroll your tenant
 description: This article details how to enroll your tenant
 ms.date: 09/15/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: hathind
 ms.collection:
   - highpri
@@ -22,7 +22,7 @@ Before you enroll in Windows Autopatch, there are settings, and other parameters
 > [!IMPORTANT]
 > You must be a Global Administrator to enroll your tenant.
 
-The Readiness assessment tool, accessed in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), checks management or configuration-related settings. This tool allows you to check the relevant settings, and details steps to fix any settings that aren't configured properly for Windows Autopatch.  
+The Readiness assessment tool, accessed in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), checks management or configuration-related settings. This tool allows you to check the relevant settings, and details steps to fix any settings that aren't configured properly for Windows Autopatch.
 
 ## Step 1: Review all prerequisites
 
@@ -69,7 +69,7 @@ The following are the Microsoft Entra settings:
 
 ### Check results
 
-For each check, the tool reports one of four possible results:  
+For each check, the tool reports one of four possible results:
 
 | Result | Meaning |
 | ----- | ----- |
@@ -80,7 +80,7 @@ For each check, the tool reports one of four possible results:
 
 ## Step 3: Fix issues with your tenant
 
-If the Readiness assessment tool is displaying issues with your tenant, see [Fix issues found by the Readiness assessment tool](../prepare/windows-autopatch-fix-issues.md) for more information on how to remediate.  
+If the Readiness assessment tool is displaying issues with your tenant, see [Fix issues found by the Readiness assessment tool](../prepare/windows-autopatch-fix-issues.md) for more information on how to remediate.
 
 ## Step 4: Enroll your tenant
 

@@ -2,8 +2,8 @@
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.technology: itpro-updates
-ms.prod: windows-client
+ms.subservice: itpro-updates
+ms.service: windows-client
 ms.topic: include
 ms.date: 08/18/2022
 ms.localizationpriority: medium

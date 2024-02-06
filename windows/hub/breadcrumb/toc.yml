@@ -1,3 +1,27 @@
-- name: Windows
-  tocHref: /windows/
-  topicHref: /windows/index
+items:
+  - name: Docs
+    tocHref: /
+    topicHref: /
+    items:
+      - name: Windows
+        tocHref: /windows/
+        topicHref: /windows/resources/
+        items:
+          - name: What's new
+            tocHref: /windows/whats-new/
+            topicHref: /windows/whats-new/
+          - name: Configuration
+            tocHref: /windows/configuration/
+            topicHref: /windows/configuration/
+          - name: Deployment
+            tocHref: /windows/deployment/
+            topicHref: /windows/deployment/
+          - name: Client management
+            tocHref: /windows/client-management/
+            topicHref: /windows/client-management/
+          - name: Privacy
+            tocHref: /windows/privacy/
+            topicHref: /windows/privacy/
+          - name: Security
+            tocHref: /windows/security/
+            topicHref: /windows/security/

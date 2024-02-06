@@ -1,14 +1,7 @@
 ---
 title: ADMX_MSI Policy CSP
 description: Learn more about the ADMX_MSI Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -668,11 +661,13 @@ Also, see the "Enable user to patch elevated products" policy setting.
 <!-- Description-Source-ADMX -->
 This policy setting prohibits Windows Installer from generating and saving the files it needs to reverse an interrupted or unsuccessful installation.
 
-If you enable this policy setting, Windows Installer is prevented from recording the original state of the system and sequence of changes it makes during installation. It also prevents Windows Installer from retaining files it intends to delete later. As a result, Windows Installer can't restore the computer to its original state if the installation doesn't complete.
+- If you enable this policy setting, Windows Installer is prevented from recording the original state of the system and sequence of changes it makes during installation. It also prevents Windows Installer from retaining files it intends to delete later. As a result, Windows Installer can't restore the computer to its original state if the installation doesn't complete.
 
 This policy setting is designed to reduce the amount of temporary disk space required to install programs. Also, it prevents malicious users from interrupting an installation to gather data about the internal state of the computer or to search secure system files. However, because an incomplete installation can render the system or a program inoperable, don't use this policy setting unless it's essential.
 
-This policy setting appears in the Computer Configuration and User Configuration folders. If the policy setting is enabled in either folder, it's considered be enabled, even if it's explicitly disabled in the other folder.
+This policy setting appears in the Computer Configuration and User Configuration folders.
+
+- If the policy setting is enabled in either folder, it's considered be enabled, even if it's explicitly disabled in the other folder.
 <!-- DisableRollback_1-Description-End -->
 
 <!-- DisableRollback_1-Editable-Begin -->
@@ -729,11 +724,13 @@ This policy setting appears in the Computer Configuration and User Configuration
 <!-- Description-Source-ADMX -->
 This policy setting prohibits Windows Installer from generating and saving the files it needs to reverse an interrupted or unsuccessful installation.
 
-If you enable this policy setting, Windows Installer is prevented from recording the original state of the system and sequence of changes it makes during installation. It also prevents Windows Installer from retaining files it intends to delete later. As a result, Windows Installer can't restore the computer to its original state if the installation doesn't complete.
+- If you enable this policy setting, Windows Installer is prevented from recording the original state of the system and sequence of changes it makes during installation. It also prevents Windows Installer from retaining files it intends to delete later. As a result, Windows Installer can't restore the computer to its original state if the installation doesn't complete.
 
 This policy setting is designed to reduce the amount of temporary disk space required to install programs. Also, it prevents malicious users from interrupting an installation to gather data about the internal state of the computer or to search secure system files. However, because an incomplete installation can render the system or a program inoperable, don't use this policy setting unless it's essential.
 
-This policy setting appears in the Computer Configuration and User Configuration folders. If the policy setting is enabled in either folder, it's considered be enabled, even if it's explicitly disabled in the other folder.
+This policy setting appears in the Computer Configuration and User Configuration folders.
+
+- If the policy setting is enabled in either folder, it's considered be enabled, even if it's explicitly disabled in the other folder.
 <!-- DisableRollback_2-Description-End -->
 
 <!-- DisableRollback_2-Editable-Begin -->

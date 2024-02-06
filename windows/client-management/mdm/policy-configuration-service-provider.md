@@ -1,14 +1,7 @@
 ---
 title: Policy CSP
 description: Learn more about the Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/29/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1162,6 +1155,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 - [Start](policy-csp-start.md)
 - [Stickers](policy-csp-stickers.md)
 - [Storage](policy-csp-storage.md)
+- [Sudo](policy-csp-sudo.md)
 - [System](policy-csp-system.md)
 - [SystemServices](policy-csp-systemservices.md)
 - [TaskManager](policy-csp-taskmanager.md)

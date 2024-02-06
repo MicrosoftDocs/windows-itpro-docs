@@ -1,14 +1,7 @@
 ---
 title: Defender CSP
 description: Learn more about the Defender CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/29/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -31,7 +24,20 @@ The following list shows the Defender configuration service provider nodes:
     - [AllowNetworkProtectionDownLevel](#configurationallownetworkprotectiondownlevel)
     - [AllowNetworkProtectionOnWinServer](#configurationallownetworkprotectiononwinserver)
     - [AllowSwitchToAsyncInspection](#configurationallowswitchtoasyncinspection)
+    - [ArchiveMaxDepth](#configurationarchivemaxdepth)
+    - [ArchiveMaxSize](#configurationarchivemaxsize)
     - [ASROnlyPerRuleExclusions](#configurationasronlyperruleexclusions)
+    - [BehavioralNetworkBlocks](#configurationbehavioralnetworkblocks)
+      - [BruteForceProtection](#configurationbehavioralnetworkblocksbruteforceprotection)
+        - [BruteForceProtectionAggressiveness](#configurationbehavioralnetworkblocksbruteforceprotectionbruteforceprotectionaggressiveness)
+        - [BruteForceProtectionConfiguredState](#configurationbehavioralnetworkblocksbruteforceprotectionbruteforceprotectionconfiguredstate)
+        - [BruteForceProtectionExclusions](#configurationbehavioralnetworkblocksbruteforceprotectionbruteforceprotectionexclusions)
+        - [BruteForceProtectionMaxBlockTime](#configurationbehavioralnetworkblocksbruteforceprotectionbruteforceprotectionmaxblocktime)
+      - [RemoteEncryptionProtection](#configurationbehavioralnetworkblocksremoteencryptionprotection)
+        - [RemoteEncryptionProtectionAggressiveness](#configurationbehavioralnetworkblocksremoteencryptionprotectionremoteencryptionprotectionaggressiveness)
+        - [RemoteEncryptionProtectionConfiguredState](#configurationbehavioralnetworkblocksremoteencryptionprotectionremoteencryptionprotectionconfiguredstate)
+        - [RemoteEncryptionProtectionExclusions](#configurationbehavioralnetworkblocksremoteencryptionprotectionremoteencryptionprotectionexclusions)
+        - [RemoteEncryptionProtectionMaxBlockTime](#configurationbehavioralnetworkblocksremoteencryptionprotectionremoteencryptionprotectionmaxblocktime)
     - [DataDuplicationDirectory](#configurationdataduplicationdirectory)
     - [DataDuplicationLocalRetentionPeriod](#configurationdataduplicationlocalretentionperiod)
     - [DataDuplicationMaximumQuota](#configurationdataduplicationmaximumquota)
@@ -71,13 +77,17 @@ The following list shows the Defender configuration service provider nodes:
     - [HideExclusionsFromLocalUsers](#configurationhideexclusionsfromlocalusers)
     - [IntelTDTEnabled](#configurationinteltdtenabled)
     - [MeteredConnectionUpdates](#configurationmeteredconnectionupdates)
+    - [NetworkProtectionReputationMode](#configurationnetworkprotectionreputationmode)
     - [OobeEnableRtpAndSigUpdate](#configurationoobeenablertpandsigupdate)
     - [PassiveRemediation](#configurationpassiveremediation)
     - [PerformanceModeStatus](#configurationperformancemodestatus)
     - [PlatformUpdatesChannel](#configurationplatformupdateschannel)
+    - [QuickScanIncludeExclusions](#configurationquickscanincludeexclusions)
     - [RandomizeScheduleTaskTimes](#configurationrandomizescheduletasktimes)
     - [ScanOnlyIfIdleEnabled](#configurationscanonlyifidleenabled)
     - [SchedulerRandomizationTime](#configurationschedulerrandomizationtime)
+    - [ScheduleSecurityIntelligenceUpdateDay](#configurationschedulesecurityintelligenceupdateday)
+    - [ScheduleSecurityIntelligenceUpdateTime](#configurationschedulesecurityintelligenceupdatetime)
     - [SecuredDevicesConfiguration](#configurationsecureddevicesconfiguration)
     - [SecurityIntelligenceLocationUpdateAtScheduledTimeOnly](#configurationsecurityintelligencelocationupdateatscheduledtimeonly)
     - [SecurityIntelligenceUpdatesChannel](#configurationsecurityintelligenceupdateschannel)
@@ -99,6 +109,8 @@ The following list shows the Defender configuration service provider nodes:
     - [ComputerState](#healthcomputerstate)
     - [DefenderEnabled](#healthdefenderenabled)
     - [DefenderVersion](#healthdefenderversion)
+    - [DeviceControl](#healthdevicecontrol)
+      - [State](#healthdevicecontrolstate)
     - [EngineVersion](#healthengineversion)
     - [FullScanOverdue](#healthfullscanoverdue)
     - [FullScanRequired](#healthfullscanrequired)
@@ -357,6 +369,88 @@ Control whether network protection can improve performance by switching from rea
 
 <!-- Device-Configuration-AllowSwitchToAsyncInspection-End -->
 
+<!-- Device-Configuration-ArchiveMaxDepth-Begin -->
+### Configuration/ArchiveMaxDepth
+
+<!-- Device-Configuration-ArchiveMaxDepth-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-ArchiveMaxDepth-Applicability-End -->
+
+<!-- Device-Configuration-ArchiveMaxDepth-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/ArchiveMaxDepth
+```
+<!-- Device-Configuration-ArchiveMaxDepth-OmaUri-End -->
+
+<!-- Device-Configuration-ArchiveMaxDepth-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specify the maximum folder depth to extract from archive files for scanning. If this configuration is off or not set, the default value (0) is applied, and all archives are extracted up to the deepest folder for scanning.
+<!-- Device-Configuration-ArchiveMaxDepth-Description-End -->
+
+<!-- Device-Configuration-ArchiveMaxDepth-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-ArchiveMaxDepth-Editable-End -->
+
+<!-- Device-Configuration-ArchiveMaxDepth-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-4294967295]` |
+| Default Value  | 0 |
+<!-- Device-Configuration-ArchiveMaxDepth-DFProperties-End -->
+
+<!-- Device-Configuration-ArchiveMaxDepth-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-ArchiveMaxDepth-Examples-End -->
+
+<!-- Device-Configuration-ArchiveMaxDepth-End -->
+
+<!-- Device-Configuration-ArchiveMaxSize-Begin -->
+### Configuration/ArchiveMaxSize
+
+<!-- Device-Configuration-ArchiveMaxSize-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-ArchiveMaxSize-Applicability-End -->
+
+<!-- Device-Configuration-ArchiveMaxSize-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/ArchiveMaxSize
+```
+<!-- Device-Configuration-ArchiveMaxSize-OmaUri-End -->
+
+<!-- Device-Configuration-ArchiveMaxSize-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specify the maximum size, in KB, of archive files to be extracted and scanned. If this configuration is off or not set, the default value (0) is applied, and all archives are extracted and scanned regardless of size.
+<!-- Device-Configuration-ArchiveMaxSize-Description-End -->
+
+<!-- Device-Configuration-ArchiveMaxSize-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-ArchiveMaxSize-Editable-End -->
+
+<!-- Device-Configuration-ArchiveMaxSize-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-4294967295]` |
+| Default Value  | 0 |
+<!-- Device-Configuration-ArchiveMaxSize-DFProperties-End -->
+
+<!-- Device-Configuration-ArchiveMaxSize-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-ArchiveMaxSize-Examples-End -->
+
+<!-- Device-Configuration-ArchiveMaxSize-End -->
+
 <!-- Device-Configuration-ASROnlyPerRuleExclusions-Begin -->
 ### Configuration/ASROnlyPerRuleExclusions
 
@@ -395,6 +489,485 @@ Apply ASR only per rule exclusions.
 <!-- Device-Configuration-ASROnlyPerRuleExclusions-Examples-End -->
 
 <!-- Device-Configuration-ASROnlyPerRuleExclusions-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-Begin -->
+### Configuration/BehavioralNetworkBlocks
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-BehavioralNetworkBlocks-Applicability-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/BehavioralNetworkBlocks
+```
+<!-- Device-Configuration-BehavioralNetworkBlocks-OmaUri-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-Description-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-Editable-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-Configuration-BehavioralNetworkBlocks-DFProperties-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-Examples-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-Begin -->
+#### Configuration/BehavioralNetworkBlocks/BruteForceProtection
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-Applicability-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/BehavioralNetworkBlocks/BruteForceProtection
+```
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-OmaUri-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-Description-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-Editable-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-DFProperties-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-Examples-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionAggressiveness-Begin -->
+##### Configuration/BehavioralNetworkBlocks/BruteForceProtection/BruteForceProtectionAggressiveness
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionAggressiveness-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionAggressiveness-Applicability-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionAggressiveness-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/BehavioralNetworkBlocks/BruteForceProtection/BruteForceProtectionAggressiveness
+```
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionAggressiveness-OmaUri-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionAggressiveness-Description-Begin -->
+<!-- Description-Source-DDF -->
+Set the criteria for when Brute-Force Protection blocks IP addresses.
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionAggressiveness-Description-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionAggressiveness-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionAggressiveness-Editable-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionAggressiveness-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionAggressiveness-DFProperties-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionAggressiveness-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Low: Only IP addresses that are 100% confidence malicious (default). |
+| 1 | Medium: Use cloud aggregation to block IP addresses that are over 99% likely malicious. |
+| 2 | High: Block IP addresses identified using client intelligence and context to block IP addresses that are over 90% likely malicious. |
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionAggressiveness-AllowedValues-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionAggressiveness-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionAggressiveness-Examples-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionAggressiveness-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionConfiguredState-Begin -->
+##### Configuration/BehavioralNetworkBlocks/BruteForceProtection/BruteForceProtectionConfiguredState
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionConfiguredState-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionConfiguredState-Applicability-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionConfiguredState-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/BehavioralNetworkBlocks/BruteForceProtection/BruteForceProtectionConfiguredState
+```
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionConfiguredState-OmaUri-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionConfiguredState-Description-Begin -->
+<!-- Description-Source-DDF -->
+Brute-Force Protection in Microsoft Defender Antivirus detects and blocks attempts to forcibly sign in and initiate sessions.
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionConfiguredState-Description-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionConfiguredState-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionConfiguredState-Editable-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionConfiguredState-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionConfiguredState-DFProperties-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionConfiguredState-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not configured: Apply defaults set by the antivirus engine and platform. |
+| 1 | Block: Prevent suspicious and malicious behaviors. |
+| 2 | Audit: Generate EDR detections without blocking. |
+| 4 | Off: Feature is disabled with no performance impact. |
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionConfiguredState-AllowedValues-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionConfiguredState-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionConfiguredState-Examples-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionConfiguredState-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionExclusions-Begin -->
+##### Configuration/BehavioralNetworkBlocks/BruteForceProtection/BruteForceProtectionExclusions
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionExclusions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionExclusions-Applicability-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionExclusions-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/BehavioralNetworkBlocks/BruteForceProtection/BruteForceProtectionExclusions
+```
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionExclusions-OmaUri-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionExclusions-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specify IP addresses, subnets, or workstation names to exclude from being blocked by Brute-Force Protection. Note that attackers can spoof excluded addresses and names to bypass protection.
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionExclusions-Description-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionExclusions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionExclusions-Editable-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionExclusions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `|`) |
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionExclusions-DFProperties-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionExclusions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionExclusions-Examples-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionExclusions-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionMaxBlockTime-Begin -->
+##### Configuration/BehavioralNetworkBlocks/BruteForceProtection/BruteForceProtectionMaxBlockTime
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionMaxBlockTime-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionMaxBlockTime-Applicability-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionMaxBlockTime-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/BehavioralNetworkBlocks/BruteForceProtection/BruteForceProtectionMaxBlockTime
+```
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionMaxBlockTime-OmaUri-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionMaxBlockTime-Description-Begin -->
+<!-- Description-Source-DDF -->
+Set the maximum time an IP address is blocked by Brute-Force Protection. After this time, blocked IP addresses will be able to sign-in and initiate sessions. If set to 0, internal feature logic will determine blocking time.
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionMaxBlockTime-Description-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionMaxBlockTime-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionMaxBlockTime-Editable-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionMaxBlockTime-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-4294967295]` |
+| Default Value  | 0 |
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionMaxBlockTime-DFProperties-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionMaxBlockTime-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionMaxBlockTime-Examples-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-BruteForceProtection-BruteForceProtectionMaxBlockTime-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-Begin -->
+#### Configuration/BehavioralNetworkBlocks/RemoteEncryptionProtection
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-Applicability-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/BehavioralNetworkBlocks/RemoteEncryptionProtection
+```
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-OmaUri-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-Description-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-Editable-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-DFProperties-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-Examples-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionAggressiveness-Begin -->
+##### Configuration/BehavioralNetworkBlocks/RemoteEncryptionProtection/RemoteEncryptionProtectionAggressiveness
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionAggressiveness-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionAggressiveness-Applicability-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionAggressiveness-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/BehavioralNetworkBlocks/RemoteEncryptionProtection/RemoteEncryptionProtectionAggressiveness
+```
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionAggressiveness-OmaUri-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionAggressiveness-Description-Begin -->
+<!-- Description-Source-DDF -->
+Set the criteria for when Remote Encryption Protection blocks IP addresses.
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionAggressiveness-Description-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionAggressiveness-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionAggressiveness-Editable-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionAggressiveness-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionAggressiveness-DFProperties-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionAggressiveness-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Low: Block only when confidence level is 100% (Default). |
+| 1 | Medium: Use cloud aggregation and block when confidence level is above 99%. |
+| 2 | High: Use cloud intel and context, and block when confidence level is above 90%. |
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionAggressiveness-AllowedValues-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionAggressiveness-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionAggressiveness-Examples-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionAggressiveness-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionConfiguredState-Begin -->
+##### Configuration/BehavioralNetworkBlocks/RemoteEncryptionProtection/RemoteEncryptionProtectionConfiguredState
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionConfiguredState-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionConfiguredState-Applicability-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionConfiguredState-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/BehavioralNetworkBlocks/RemoteEncryptionProtection/RemoteEncryptionProtectionConfiguredState
+```
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionConfiguredState-OmaUri-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionConfiguredState-Description-Begin -->
+<!-- Description-Source-DDF -->
+Remote Encryption Protection in Microsoft Defender Antivirus detects and blocks attempts to replace local files with encrypted versions from another device.
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionConfiguredState-Description-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionConfiguredState-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionConfiguredState-Editable-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionConfiguredState-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionConfiguredState-DFProperties-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionConfiguredState-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not configured: Apply defaults set for the antivirus engine and platform. |
+| 1 | Block: Prevent suspicious and malicious behaviors. |
+| 2 | Audit: Generate EDR detections without blocking. |
+| 4 | Off: Feature is off with no performance impact. |
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionConfiguredState-AllowedValues-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionConfiguredState-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionConfiguredState-Examples-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionConfiguredState-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionExclusions-Begin -->
+##### Configuration/BehavioralNetworkBlocks/RemoteEncryptionProtection/RemoteEncryptionProtectionExclusions
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionExclusions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionExclusions-Applicability-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionExclusions-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/BehavioralNetworkBlocks/RemoteEncryptionProtection/RemoteEncryptionProtectionExclusions
+```
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionExclusions-OmaUri-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionExclusions-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specify IP addresses, subnets, or workstation names to exclude from being blocked by Remote Encryption Protection. Note that attackers can spoof excluded addresses and names to bypass protection.
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionExclusions-Description-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionExclusions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionExclusions-Editable-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionExclusions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `|`) |
+| Default Value  | 0 |
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionExclusions-DFProperties-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionExclusions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionExclusions-Examples-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionExclusions-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionMaxBlockTime-Begin -->
+##### Configuration/BehavioralNetworkBlocks/RemoteEncryptionProtection/RemoteEncryptionProtectionMaxBlockTime
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionMaxBlockTime-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionMaxBlockTime-Applicability-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionMaxBlockTime-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/BehavioralNetworkBlocks/RemoteEncryptionProtection/RemoteEncryptionProtectionMaxBlockTime
+```
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionMaxBlockTime-OmaUri-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionMaxBlockTime-Description-Begin -->
+<!-- Description-Source-DDF -->
+Set the maximum time an IP address is blocked by Remote Encryption Protection. After this time, blocked IP addresses will be able to reinitiate connections. If set to 0, internal feature logic will determine blocking time.
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionMaxBlockTime-Description-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionMaxBlockTime-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionMaxBlockTime-Editable-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionMaxBlockTime-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-4294967295]` |
+| Default Value  | 0 |
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionMaxBlockTime-DFProperties-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionMaxBlockTime-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionMaxBlockTime-Examples-End -->
+
+<!-- Device-Configuration-BehavioralNetworkBlocks-RemoteEncryptionProtection-RemoteEncryptionProtectionMaxBlockTime-End -->
 
 <!-- Device-Configuration-DataDuplicationDirectory-Begin -->
 ### Configuration/DataDuplicationDirectory
@@ -464,7 +1037,7 @@ Define the retention period in days of how much time the evidence data will be k
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-120]` |
 | Default Value  | 60 |
@@ -534,7 +1107,7 @@ Defines the maximum data duplication quota in MB that can be collected. When the
 
 <!-- Device-Configuration-DataDuplicationRemoteLocation-Description-Begin -->
 <!-- Description-Source-DDF -->
-Define data duplication remote location for device control.
+Define data duplication remote location for Device Control. When configuring this setting, ensure that Device Control is Enabled and that the provided path is a remote path the user can access.
 <!-- Device-Configuration-DataDuplicationRemoteLocation-Description-End -->
 
 <!-- Device-Configuration-DataDuplicationRemoteLocation-Editable-Begin -->
@@ -953,8 +1526,8 @@ Control Device Control feature.
 
 | Value | Description |
 |:--|:--|
-| 1 | . |
-| 0 (Default) | . |
+| 1 | Device Control is enabled. |
+| 0 (Default) | Device Control is disabled. |
 <!-- Device-Configuration-DeviceControlEnabled-AllowedValues-End -->
 
 <!-- Device-Configuration-DeviceControlEnabled-Examples-Begin -->
@@ -1835,8 +2408,8 @@ This setting enables the DNS Sinkhole feature for Network Protection, respecting
 
 | Value | Description |
 |:--|:--|
-| 1 (Default) | DNS Sinkhole is disabled. |
-| 0 | DNS Sinkhole is enabled. |
+| 0 | DNS Sinkhole is disabled. |
+| 1 (Default) | DNS Sinkhole is enabled. |
 <!-- Device-Configuration-EnableDnsSinkhole-AllowedValues-End -->
 
 <!-- Device-Configuration-EnableDnsSinkhole-Examples-Begin -->
@@ -1978,7 +2551,7 @@ Allows an administrator to explicitly disable network packet inspection made by 
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | List (Delimiter: `|`) |
+| Allowed Values | Regular Expression: `^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$|^(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$|^(?:[0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}$|^(?:[0-9a-fA-F]{1,4}:){1,5}(?::[0-9a-fA-F]{1,4}){1,2}$|^(?:[0-9a-fA-F]{1,4}:){1,4}(?::[0-9a-fA-F]{1,4}){1,3}$|^(?:[0-9a-fA-F]{1,4}:){1,3}(?::[0-9a-fA-F]{1,4}){1,4}$|^(?:[0-9a-fA-F]{1,4}:){1,2}(?::[0-9a-fA-F]{1,4}){1,5}$|^[0-9a-fA-F]{1,4}(?::[0-9a-fA-F]{1,4}){1,6}$|^::1$|^::$` |
 <!-- Device-Configuration-ExcludedIpAddresses-DFProperties-End -->
 
 <!-- Device-Configuration-ExcludedIpAddresses-Examples-Begin -->
@@ -2186,6 +2759,55 @@ Allow managed devices to update through metered connections. Default is 0 - not 
 
 <!-- Device-Configuration-MeteredConnectionUpdates-End -->
 
+<!-- Device-Configuration-NetworkProtectionReputationMode-Begin -->
+### Configuration/NetworkProtectionReputationMode
+
+<!-- Device-Configuration-NetworkProtectionReputationMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-NetworkProtectionReputationMode-Applicability-End -->
+
+<!-- Device-Configuration-NetworkProtectionReputationMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/NetworkProtectionReputationMode
+```
+<!-- Device-Configuration-NetworkProtectionReputationMode-OmaUri-End -->
+
+<!-- Device-Configuration-NetworkProtectionReputationMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+This sets the reputation mode engine for Network Protection.
+<!-- Device-Configuration-NetworkProtectionReputationMode-Description-End -->
+
+<!-- Device-Configuration-NetworkProtectionReputationMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-NetworkProtectionReputationMode-Editable-End -->
+
+<!-- Device-Configuration-NetworkProtectionReputationMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-NetworkProtectionReputationMode-DFProperties-End -->
+
+<!-- Device-Configuration-NetworkProtectionReputationMode-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Use standard reputation engine. |
+| 1 | Use ESP reputation engine. |
+<!-- Device-Configuration-NetworkProtectionReputationMode-AllowedValues-End -->
+
+<!-- Device-Configuration-NetworkProtectionReputationMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-NetworkProtectionReputationMode-Examples-End -->
+
+<!-- Device-Configuration-NetworkProtectionReputationMode-End -->
+
 <!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Begin -->
 ### Configuration/OobeEnableRtpAndSigUpdate
 
@@ -2325,8 +2947,8 @@ This setting allows IT admins to configure performance mode in either enabled or
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Performance mode is enabled (default). A service restart is required after changing this value. |
-| 1 | Performance mode is disabled. A service restart is required after changing this value. |
+| 0 (Default) | Performance mode is enabled (default). |
+| 1 | Performance mode is disabled. |
 <!-- Device-Configuration-PerformanceModeStatus-AllowedValues-End -->
 
 <!-- Device-Configuration-PerformanceModeStatus-Examples-Begin -->
@@ -2387,6 +3009,55 @@ Enable this policy to specify when devices receive Microsoft Defender platform u
 <!-- Device-Configuration-PlatformUpdatesChannel-Examples-End -->
 
 <!-- Device-Configuration-PlatformUpdatesChannel-End -->
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-Begin -->
+### Configuration/QuickScanIncludeExclusions
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-QuickScanIncludeExclusions-Applicability-End -->
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/QuickScanIncludeExclusions
+```
+<!-- Device-Configuration-QuickScanIncludeExclusions-OmaUri-End -->
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting allows you to scan excluded files and directories during quick scans.
+<!-- Device-Configuration-QuickScanIncludeExclusions-Description-End -->
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-QuickScanIncludeExclusions-Editable-End -->
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-QuickScanIncludeExclusions-DFProperties-End -->
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | If you set this setting to 0 or don't configure it, exclusions aren't scanned during quick scans. |
+| 1 | If you set this setting to 1, all files and directories that are excluded from real-time protection using contextual exclusions are scanned during a quick scan. |
+<!-- Device-Configuration-QuickScanIncludeExclusions-AllowedValues-End -->
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-QuickScanIncludeExclusions-Examples-End -->
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-End -->
 
 <!-- Device-Configuration-RandomizeScheduleTaskTimes-Begin -->
 ### Configuration/RandomizeScheduleTaskTimes
@@ -2527,6 +3198,103 @@ This setting allows you to configure the scheduler randomization in hours. The r
 
 <!-- Device-Configuration-SchedulerRandomizationTime-End -->
 
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Begin -->
+### Configuration/ScheduleSecurityIntelligenceUpdateDay
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Applicability-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/ScheduleSecurityIntelligenceUpdateDay
+```
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-OmaUri-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting allows you to specify the day of the week on which to check for security intelligence updates. By default, this setting is configured to never check for security intelligence updates.
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Description-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Editable-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 8 |
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-DFProperties-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Daily. |
+| 1 | Sunday. |
+| 2 | Monday. |
+| 3 | Tuesday. |
+| 4 | Wednesday. |
+| 5 | Thursday. |
+| 6 | Friday. |
+| 7 | Saturday. |
+| 8 (Default) | Never. |
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-AllowedValues-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-Examples-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateDay-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Begin -->
+### Configuration/ScheduleSecurityIntelligenceUpdateTime
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Applicability-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/ScheduleSecurityIntelligenceUpdateTime
+```
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-OmaUri-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting allows you to specify the time of day at which to check for security intelligence updates. The time value is represented as the number of minutes past midnight (00:00). For example, 120 is equivalent to 02:00 AM. By default, this setting is configured to check for security intelligence updates 15 minutes before the scheduled scan time. The schedule is based on local time on the computer where the check is occurring.
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Description-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Editable-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1439]` |
+| Default Value  | 105 |
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-DFProperties-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-Examples-End -->
+
+<!-- Device-Configuration-ScheduleSecurityIntelligenceUpdateTime-End -->
+
 <!-- Device-Configuration-SecuredDevicesConfiguration-Begin -->
 ### Configuration/SecuredDevicesConfiguration
 
@@ -2544,7 +3312,7 @@ This setting allows you to configure the scheduler randomization in hours. The r
 
 <!-- Device-Configuration-SecuredDevicesConfiguration-Description-Begin -->
 <!-- Description-Source-DDF -->
-Defines what are the devices primary ids that should be secured by Defender Device Control. The primary id values should be pipe (|) separated. Example: RemovableMediaDevices|CdRomDevices. If this configuration isn't set the default value will be applied, meaning all of the supported devices will be secured.
+Defines which device's primary ids should be secured by Defender Device Control. The primary id values should be pipe (|) separated. Example: RemovableMediaDevices|CdRomDevices. If this configuration isn't set the default value will be applied, meaning all supported devices will be secured. Currently supported primary ids are: RemovableMediaDevices, CdRomDevices, WpdDevices, PrinterDevices.
 <!-- Device-Configuration-SecuredDevicesConfiguration-Description-End -->
 
 <!-- Device-Configuration-SecuredDevicesConfiguration-Editable-Begin -->
@@ -2558,8 +3326,18 @@ Defines what are the devices primary ids that should be secured by Defender Devi
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | List (Delimiter: `|`) |
 <!-- Device-Configuration-SecuredDevicesConfiguration-DFProperties-End -->
+
+<!-- Device-Configuration-SecuredDevicesConfiguration-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| RemovableMediaDevices | RemovableMediaDevices. |
+| CdRomDevices | CdRomDevices. |
+| WpdDevices | WpdDevices. |
+| PrinterDevices | PrinterDevices. |
+<!-- Device-Configuration-SecuredDevicesConfiguration-AllowedValues-End -->
 
 <!-- Device-Configuration-SecuredDevicesConfiguration-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
@@ -3553,6 +4331,84 @@ Version number of Windows Defender on the device.
 <!-- Device-Health-DefenderVersion-Examples-End -->
 
 <!-- Device-Health-DefenderVersion-End -->
+
+<!-- Device-Health-DeviceControl-Begin -->
+### Health/DeviceControl
+
+<!-- Device-Health-DeviceControl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-Health-DeviceControl-Applicability-End -->
+
+<!-- Device-Health-DeviceControl-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Health/DeviceControl
+```
+<!-- Device-Health-DeviceControl-OmaUri-End -->
+
+<!-- Device-Health-DeviceControl-Description-Begin -->
+<!-- Description-Source-DDF -->
+An interior node to group information about Device Cotrol health status.
+<!-- Device-Health-DeviceControl-Description-End -->
+
+<!-- Device-Health-DeviceControl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Health-DeviceControl-Editable-End -->
+
+<!-- Device-Health-DeviceControl-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get |
+<!-- Device-Health-DeviceControl-DFProperties-End -->
+
+<!-- Device-Health-DeviceControl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Health-DeviceControl-Examples-End -->
+
+<!-- Device-Health-DeviceControl-End -->
+
+<!-- Device-Health-DeviceControl-State-Begin -->
+#### Health/DeviceControl/State
+
+<!-- Device-Health-DeviceControl-State-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- Device-Health-DeviceControl-State-Applicability-End -->
+
+<!-- Device-Health-DeviceControl-State-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Health/DeviceControl/State
+```
+<!-- Device-Health-DeviceControl-State-OmaUri-End -->
+
+<!-- Device-Health-DeviceControl-State-Description-Begin -->
+<!-- Description-Source-DDF -->
+Provide the current state of the Device Control.
+<!-- Device-Health-DeviceControl-State-Description-End -->
+
+<!-- Device-Health-DeviceControl-State-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Health-DeviceControl-State-Editable-End -->
+
+<!-- Device-Health-DeviceControl-State-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get |
+<!-- Device-Health-DeviceControl-State-DFProperties-End -->
+
+<!-- Device-Health-DeviceControl-State-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Health-DeviceControl-State-Examples-End -->
+
+<!-- Device-Health-DeviceControl-State-End -->
 
 <!-- Device-Health-EngineVersion-Begin -->
 ### Health/EngineVersion

@@ -3,9 +3,10 @@ title: Application Control for Windows
 description: Application Control restricts which applications users are allowed to run and the code that runs in the system core.
 ms.localizationpriority: medium
 ms.collection:
-- highpri
 - tier3
 - must-keep
+- essentials-navigation
+- essentials-overview
 ms.date: 08/30/2023
 ms.topic: article
 ---

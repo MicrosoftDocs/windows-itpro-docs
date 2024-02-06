@@ -2,9 +2,6 @@
 title: Configure Credential Guard 
 description: Learn how to configure Credential Guard using MDM, Group Policy, or the registry.
 ms.date: 08/31/2023
-ms.collection:
-  - highpri
-  - tier2
 ms.topic: how-to
 ---
 
@@ -40,7 +37,7 @@ To enable Credential Guard, you can use:
 
 [!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Intune/MDM**](#tab/intune)
+#### [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
 
 ### Configure Credential Guard with Intune
 
@@ -67,7 +64,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 Once the policy is applied, restart the device.
 
-#### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+#### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
 ### Configure Credential Guard with group policy
 
@@ -84,7 +81,7 @@ Once the policy is applied, restart the device.
 
 Once the policy is applied, restart the device.
 
-#### [:::image type="icon" source="../../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+#### [:::image type="icon" source="../../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
 ### Configure Credential Guard with registry settings
 
@@ -235,7 +232,7 @@ There are different options to disable Credential Guard. The option you choose d
 
 [!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Intune/MDM**](#tab/intune)
+#### [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
 
 ### Disable Credential Guard with Intune
 
@@ -257,7 +254,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 Once the policy is applied, restart the device.
 
-#### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+#### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
 ### Disable  Credential Guard with group policy
 
@@ -273,7 +270,7 @@ If Credential Guard is enabled via Group Policy and without UEFI Lock, disabling
 
 Once the policy is applied, restart the device.
 
-#### [:::image type="icon" source="../../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+#### [:::image type="icon" source="../../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
 ### Disable Credential Guard with registry settings
 
@@ -339,7 +336,7 @@ Use one of the following options to disable VBS:
 
 [!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Intune/MDM**](#tab/intune)
+#### [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
 
 ### Disable VBS with Intune
 
@@ -361,7 +358,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 Once the policy is applied, restart the device.
 
-#### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+#### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
 ### Disable  VBS with group policy
 
@@ -377,7 +374,7 @@ Configure the policy used to enable VBS to **Disabled**.
 
 Once the policy is applied, restart the device
 
-#### [:::image type="icon" source="../../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+#### [:::image type="icon" source="../../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
 ### Disable VBS with registry settings
 

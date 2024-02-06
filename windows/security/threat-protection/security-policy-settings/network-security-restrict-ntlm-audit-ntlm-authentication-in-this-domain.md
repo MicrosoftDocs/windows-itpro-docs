@@ -1,15 +1,13 @@
 ---
 title: Network security Restrict NTLM Audit NTLM authentication in this domain
 description: Best practices, security considerations, and more for the security policy setting, Network Security Restrict NTLM Audit NTLM authentication in this domain.
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Network security: Restrict NTLM: Audit NTLM authentication in this domain
@@ -46,7 +44,7 @@ When you enable this audit policy, it functions in the same way as the **Network
     The domain controller will log events for NTLM authentication requests to all servers in the domain when NTLM authentication would be denied because the **Network security: Restrict NTLM: NTLM authentication in this domain** policy setting is set to **Deny for domain servers**.
 
 - **Enable all**
-    
+
     The domain controller on which this policy is set will log all events for incoming NTLM traffic.
 
 ### Best practices
@@ -61,13 +59,13 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 | Server type or GPO | Default value |
 | - | - |
-| Default domain policy| Not defined| 
-| Default domain controller policy | Not defined| 
-| Stand-alone server default settings | Not defined| 
-| Domain controller effective default settings | Not defined| 
-| Member server effective default settings | Not defined| 
-| Client computer effective default settings | Not defined| 
- 
+| Default domain policy| Not defined|
+| Default domain controller policy | Not defined|
+| Stand-alone server default settings | Not defined|
+| Domain controller effective default settings | Not defined|
+| Member server effective default settings | Not defined|
+| Client computer effective default settings | Not defined|
+
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.
@@ -90,7 +88,7 @@ There are no security audit event policies that can be configured to view output
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
-NTLM and NTLMv2 authentication is vulnerable to various malicious attacks, including SMB relay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the 
+NTLM and NTLMv2 authentication is vulnerable to various malicious attacks, including SMB relay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the
 Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
 
 ### Vulnerability

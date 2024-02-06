@@ -2,8 +2,8 @@
 title: UCDOAggregatedStatus data schema
 titleSuffix: Windows Update for Business reports
 description: UCDOAggregatedStatus schema for Windows Update for Business reports. UCDOAggregatedStatus is an aggregation of all UDDOStatus records across the tenant.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart
@@ -12,7 +12,7 @@ ms.reviewer: carmenf
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 11/17/2022
+ms.date: 12/06/2023
 ---
 
 # UCDOAggregatedStatus

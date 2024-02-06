@@ -1,10 +1,9 @@
 ---
-title: Accounts Rename guest account - security policy setting 
+title: Accounts Rename guest account - security policy setting
 description: Describes the best practices, location, values, and security considerations for the Accounts Rename guest account security policy setting.
 ms.assetid: 9b8052b4-bbb9-4cc1-bfee-ce25390db707
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Accounts: Rename guest account - security policy setting
@@ -55,7 +53,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Guest |
 | Member Server Effective Default Settings | Guest |
 | Client Computer Effective Default Settings | *User-defined text* |
- 
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -78,7 +76,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-The guest account exists in all Windows server and client operating system versions beginning with Windows Server 2003 and Windows XP Professional. Because the account name is well known, it provides a vector for a malicious user to get access to network resources and attempt to elevate privileges 
+The guest account exists in all Windows server and client operating system versions beginning with Windows Server 2003 and Windows XP Professional. Because the account name is well known, it provides a vector for a malicious user to get access to network resources and attempt to elevate privileges
 or install software that could be used for a later attack on your system.
 
 ### Countermeasure
@@ -92,5 +90,5 @@ There should be little impact because the Guest account is disabled by default i
 ## Related topics
 
 [Security Options](security-options.md)
- 
- 
+
+

@@ -1,14 +1,7 @@
 ---
 title: RemoteDesktopServices Policy CSP
 description: Learn more about the RemoteDesktopServices Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -17,6 +10,8 @@ ms.topic: reference
 # Policy CSP - RemoteDesktopServices
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- RemoteDesktopServices-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -154,6 +149,106 @@ FIPS compliance can be configured through the System cryptography. Use FIPS comp
 <!-- ClientConnectionEncryptionLevel-Examples-End -->
 
 <!-- ClientConnectionEncryptionLevel-End -->
+
+<!-- DisconnectOnLockBasicAuthn-Begin -->
+## DisconnectOnLockBasicAuthn
+
+<!-- DisconnectOnLockBasicAuthn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisconnectOnLockBasicAuthn-Applicability-End -->
+
+<!-- DisconnectOnLockBasicAuthn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/DisconnectOnLockBasicAuthn
+```
+<!-- DisconnectOnLockBasicAuthn-OmaUri-End -->
+
+<!-- DisconnectOnLockBasicAuthn-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- DisconnectOnLockBasicAuthn-Description-End -->
+
+<!-- DisconnectOnLockBasicAuthn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisconnectOnLockBasicAuthn-Editable-End -->
+
+<!-- DisconnectOnLockBasicAuthn-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisconnectOnLockBasicAuthn-DFProperties-End -->
+
+<!-- DisconnectOnLockBasicAuthn-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_DISCONNECT_ON_LOCK_POLICY |
+| ADMX File Name | terminalserver.admx |
+<!-- DisconnectOnLockBasicAuthn-AdmxBacked-End -->
+
+<!-- DisconnectOnLockBasicAuthn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisconnectOnLockBasicAuthn-Examples-End -->
+
+<!-- DisconnectOnLockBasicAuthn-End -->
+
+<!-- DisconnectOnLockWebAccountAuthn-Begin -->
+## DisconnectOnLockWebAccountAuthn
+
+<!-- DisconnectOnLockWebAccountAuthn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisconnectOnLockWebAccountAuthn-Applicability-End -->
+
+<!-- DisconnectOnLockWebAccountAuthn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/DisconnectOnLockWebAccountAuthn
+```
+<!-- DisconnectOnLockWebAccountAuthn-OmaUri-End -->
+
+<!-- DisconnectOnLockWebAccountAuthn-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- DisconnectOnLockWebAccountAuthn-Description-End -->
+
+<!-- DisconnectOnLockWebAccountAuthn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisconnectOnLockWebAccountAuthn-Editable-End -->
+
+<!-- DisconnectOnLockWebAccountAuthn-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisconnectOnLockWebAccountAuthn-DFProperties-End -->
+
+<!-- DisconnectOnLockWebAccountAuthn-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_DISCONNECT_ON_LOCK_AAD_POLICY |
+| ADMX File Name | terminalserver.admx |
+<!-- DisconnectOnLockWebAccountAuthn-AdmxBacked-End -->
+
+<!-- DisconnectOnLockWebAccountAuthn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisconnectOnLockWebAccountAuthn-Examples-End -->
+
+<!-- DisconnectOnLockWebAccountAuthn-End -->
 
 <!-- DoNotAllowDriveRedirection-Begin -->
 ## DoNotAllowDriveRedirection
@@ -337,6 +432,114 @@ By default, Remote Desktop allows redirection of WebAuthn requests.
 <!-- DoNotAllowWebAuthnRedirection-Examples-End -->
 
 <!-- DoNotAllowWebAuthnRedirection-End -->
+
+<!-- LimitClientToServerClipboardRedirection-Begin -->
+## LimitClientToServerClipboardRedirection
+
+<!-- LimitClientToServerClipboardRedirection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- LimitClientToServerClipboardRedirection-Applicability-End -->
+
+<!-- LimitClientToServerClipboardRedirection-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/RemoteDesktopServices/LimitClientToServerClipboardRedirection
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/LimitClientToServerClipboardRedirection
+```
+<!-- LimitClientToServerClipboardRedirection-OmaUri-End -->
+
+<!-- LimitClientToServerClipboardRedirection-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- LimitClientToServerClipboardRedirection-Description-End -->
+
+<!-- LimitClientToServerClipboardRedirection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LimitClientToServerClipboardRedirection-Editable-End -->
+
+<!-- LimitClientToServerClipboardRedirection-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LimitClientToServerClipboardRedirection-DFProperties-End -->
+
+<!-- LimitClientToServerClipboardRedirection-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_CLIENT_CLIPBOARDRESTRICTION_CS |
+| ADMX File Name | terminalserver.admx |
+<!-- LimitClientToServerClipboardRedirection-AdmxBacked-End -->
+
+<!-- LimitClientToServerClipboardRedirection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LimitClientToServerClipboardRedirection-Examples-End -->
+
+<!-- LimitClientToServerClipboardRedirection-End -->
+
+<!-- LimitServerToClientClipboardRedirection-Begin -->
+## LimitServerToClientClipboardRedirection
+
+<!-- LimitServerToClientClipboardRedirection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- LimitServerToClientClipboardRedirection-Applicability-End -->
+
+<!-- LimitServerToClientClipboardRedirection-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/RemoteDesktopServices/LimitServerToClientClipboardRedirection
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/LimitServerToClientClipboardRedirection
+```
+<!-- LimitServerToClientClipboardRedirection-OmaUri-End -->
+
+<!-- LimitServerToClientClipboardRedirection-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- LimitServerToClientClipboardRedirection-Description-End -->
+
+<!-- LimitServerToClientClipboardRedirection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LimitServerToClientClipboardRedirection-Editable-End -->
+
+<!-- LimitServerToClientClipboardRedirection-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LimitServerToClientClipboardRedirection-DFProperties-End -->
+
+<!-- LimitServerToClientClipboardRedirection-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_CLIENT_CLIPBOARDRESTRICTION_SC |
+| ADMX File Name | terminalserver.admx |
+<!-- LimitServerToClientClipboardRedirection-AdmxBacked-End -->
+
+<!-- LimitServerToClientClipboardRedirection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LimitServerToClientClipboardRedirection-Examples-End -->
+
+<!-- LimitServerToClientClipboardRedirection-End -->
 
 <!-- PromptForPasswordUponConnection-Begin -->
 ## PromptForPasswordUponConnection

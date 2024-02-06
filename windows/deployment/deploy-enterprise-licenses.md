@@ -4,8 +4,8 @@ description: Steps to deploy Windows 10 Enterprise or Windows 11 Enterprise lice
 author: frankroj
 ms.author: frankroj
 manager: aaroncz
-ms.prod: windows-client
-ms.technology: itpro-fundamentals
+ms.service: windows-client
+ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.collection:
@@ -14,7 +14,7 @@ ms.collection:
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
-ms.date: 11/23/2022
+ms.date: 11/14/2023
 ---
 
 # Deploy Windows Enterprise licenses
@@ -306,6 +306,6 @@ If a device isn't able to connect to Windows Update, it can lose activation stat
 
 ## Virtual Desktop Access (VDA)
 
-Subscriptions to Windows Enterprise are also available for virtualized clients. Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Azure or in another [qualified multitenant hoster](https://download.microsoft.com/download/3/D/4/3D445779-2870-4E3D-AFCB-D35D2E1BC095/QMTH%20Authorized%20Partner%20List.pdf) (PDF download).
+Subscriptions to Windows Enterprise are also available for virtualized clients. Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Azure or in another qualified multitenant hoster.
 
 Virtual machines (VMs) must be configured to enable Windows Enterprise subscriptions for VDA. Active Directory-joined and Microsoft Entra joined clients are supported. For more information, see [Enable VDA for Enterprise subscription activation](vda-subscription-activation.md).

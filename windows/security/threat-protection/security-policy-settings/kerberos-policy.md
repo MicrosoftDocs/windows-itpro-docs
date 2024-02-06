@@ -1,10 +1,9 @@
 ---
-title: Kerberos Policy 
+title: Kerberos Policy
 description: Describes the Kerberos Policy settings and provides links to policy setting descriptions.
 ms.assetid: 94017dd9-b1a3-4624-af9f-b29161b4bf38
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Kerberos Policy
@@ -28,7 +26,7 @@ The Kerberos version 5 authentication protocol provides the default mechanism f
 
 These policy settings are located in **\\Computer Configuration\\Windows Settings\\Security Settings\\Account Policies\\Kerberos Policy**.
 
-The following topics provide a discussion of implementation and best practices considerations, policy location, default values for the server type or GPO, relevant differences in operating system versions, security considerations (including the possible settings vulnerabilities of each setting), 
+The following topics provide a discussion of implementation and best practices considerations, policy location, default values for the server type or GPO, relevant differences in operating system versions, security considerations (including the possible settings vulnerabilities of each setting),
 countermeasures you can take, and the potential impact for each setting.
 
 ## In this section
@@ -40,7 +38,7 @@ countermeasures you can take, and the potential impact for each setting.
 |                     [Maximum lifetime for user ticket](maximum-lifetime-for-user-ticket.md)                     |         Describes the best practices, location, values, policy management, and security considerations for the **Maximum lifetime for user ticket** policy setting.          |
 |             [Maximum lifetime for user ticket renewal](maximum-lifetime-for-user-ticket-renewal.md)             | Describes the best practices, location, values, policy management, and security considerations for the **Maximum lifetime for user ticket renewal** security policy setting. |
 | [Maximum tolerance for computer clock synchronization](maximum-tolerance-for-computer-clock-synchronization.md) |   Describes the best practices, location, values, policy management, and security considerations for the **Maximum tolerance for computer clock synchronization** security   |
- 
+
 ## Related topics
 
 - [Configure security policy settings](how-to-configure-security-policy-settings.md)
