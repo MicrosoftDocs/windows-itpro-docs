@@ -3,7 +3,7 @@ title: Manage Copilot in Windows
 description: Learn how to manage Copilot in Windows for commercial environments using MDM and group policy. Learn about the chat providers available to Copilot in Windows.
 ms.topic: conceptual
 ms.subservice: windows-copilot
-ms.date: 02/07/2024
+ms.date: 02/15/2024
 ms.author: mstewart
 author: mestew
 appliesto:
