@@ -1,16 +1,8 @@
 ---
-title: TakeATest (Windows 10)
+title: TakeATest
 description: This section describes the TakeATest settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
 ms.topic: reference
-ms.collection: must-keep
-ms.date: 09/06/2017
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
+ms.date: 01/25/2024
 ---
 
 # TakeATest (Windows Configuration Designer reference)
@@ -21,7 +13,7 @@ Use TakeATest to configure the Take A Test app, a secure browser for test-taking
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| All settings | ✔️ |  |  |   |
+| All settings | ✅ |  |  |   |
 
 ## AllowScreenMonitoring
 
