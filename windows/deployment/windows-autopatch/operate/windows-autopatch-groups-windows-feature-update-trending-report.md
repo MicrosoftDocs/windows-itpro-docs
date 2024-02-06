@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: andredm7
 ms.collection:
   - highpri

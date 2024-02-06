@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: adnich
 ms.collection:
   - highpri
@@ -17,7 +17,7 @@ ms.collection:
 
 # Windows quality update end user experience
 
-## User notifications  
+## User notifications
 
 In this section we'll review what an end user would see in the following three scenarios:
 
@@ -58,7 +58,7 @@ The deadline specified in the update policy is five days. Therefore, once this d
 
 In the following example, the user is on holiday and the device is offline beyond the quality update deadline. The user then returns to work and the device is turned back on.
 
-Since the deadline has already passed, the device is granted a two-day grace period to install the update and restart. The user will be notified of a pending installation and given options to choose from. Once the two-day grace period has expired, the user is forced to restart with a 15-minute warning notification.  
+Since the deadline has already passed, the device is granted a two-day grace period to install the update and restart. The user will be notified of a pending installation and given options to choose from. Once the two-day grace period has expired, the user is forced to restart with a 15-minute warning notification.
 
 :::image type="content" source="../media/windows-quality-update-grace-period.png" alt-text="Windows quality update grace period" lightbox="../media/windows-quality-update-grace-period.png":::
 
@@ -66,4 +66,4 @@ Since the deadline has already passed, the device is granted a two-day grace per
 
 Windows Autopatch understands the importance of not disrupting end users but also updating the devices quickly. To achieve this goal, updates are automatically downloaded and installed at an optimal time determined by the device. By default, [Active hours](/windows/client-management/mdm/policy-csp-update#activehoursstart) are configured dynamically based on device usage patterns. Device restarts occur outside of active hours until the deadline is reached.
 
-Windows Autopatch understands the importance of not disrupting critical devices but also updating the devices quickly. If you wish to configure a specific installation time or [Active hours](/windows/client-management/mdm/policy-csp-update#activehoursstart), use the [Customize Windows Update settings](../operate/windows-autopatch-groups-windows-update.md), and select the [**ScheduledInstall**](../operate/windows-autopatch-groups-windows-update.md#scheduled-install) option. Using this option removes the deadline enforced for a device restart. Devices with this configuration will also **not** be counted towards the [service level objective](../operate/windows-autopatch-groups-windows-quality-update-overview.md#service-level-objective).  
+Windows Autopatch understands the importance of not disrupting critical devices but also updating the devices quickly. If you wish to configure a specific installation time or [Active hours](/windows/client-management/mdm/policy-csp-update#activehoursstart), use the [Customize Windows Update settings](../operate/windows-autopatch-groups-windows-update.md), and select the [**ScheduledInstall**](../operate/windows-autopatch-groups-windows-update.md#scheduled-install) option. Using this option removes the deadline enforced for a device restart. Devices with this configuration will also **not** be counted towards the [service level objective](../operate/windows-autopatch-groups-windows-quality-update-overview.md#service-level-objective).
