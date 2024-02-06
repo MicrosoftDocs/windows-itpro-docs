@@ -34,14 +34,63 @@ During sign-up, we verify the information you provide against what is present in
 
 During sign-up, a verification code is sent to your NOC email address present in [Peering DB](https://www.peeringdb.com/). This code expires in 24 hours. If it's expired, you'll need to request a new verification code to complete the sign-up.  
 
+#### Unable to re-sign up
+
+Please delete any MCC resource that you are using before you resign up for the service. Deleting any existing MCC resource will unlock your ASN which will allow you to successfully sign up.
+
+
+
 ### Cache Node Errors  
 
-#### Cannot find my cache node
+#### Network connectivity issues
+	
+ Updating Docker’s DNS can help resolve some connectivity issues.
+ Please try the following Docker DNS updates until one solves your connectivity problem. 
+ Once connectivity is established, there is no need to continue updating Docker’s DNS.
+	 
+##### Update Docker’s DNS to use the Google DNS resolver
+		 
+	nano /etc/docker/daemon.json
+		 
+  Update the contents of this file to match (below) which includes the public Google DNS resolver 
+		 
+		 
+  	 
+	
+	 "log-driver": "json-file", "log-opts": {"max-size": "10m","max-file": "3"},"dns":["8.8.8.8", "8.8.4.4"]
+  
+		 
+Save and close using the command CTRL-X and then Y(es) to save
+		 
+Restart Docker for this change to take effect
+	
+	systemctl restart docker
+		 
+Rerun the IoT Edge Check command to validate proper connectivity
+	
+	 iotedge check –verbose
 
-Did you previously had access to your cache nodes but it's now no longer accessible? If so, it may be because you had a trial subscription, and its trial period ended. To resolve this issue, complete the following two steps:
 
-1. Create a new Azure Pay-As-You-Go subscription  
-1. Recreate the cache nodes using the new subscription
+##### Update Docker’s DNS to use your company’s DNS resolver
+		 
+	nano /etc/docker/daemon.json
+		 
+Update the contents of this file to match (below) which includes the public Google DNS resolver 
+	
+	 "log-driver": "json-file", "log-opts": {"max-size": "10m","max-file": "3"},"dns":["<Your companies DNS Resolver IP Address>”]
+
+		 
+Save and close using the command CTRL-X and then Y(es) to save
+		 
+Restart Docker for this change to take effect
+	
+	systemctl restart docker
+		 
+Rerun the IoT Edge Check command to validate proper connectivity
+	   	
+	 iotedge check –verbose
+
+
 
 ## Diagnose and Solve Problems
 
