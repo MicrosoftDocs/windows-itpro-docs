@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: hathind
 ms.collection:
   - highpri
@@ -36,12 +36,12 @@ Updates undergo vigorous internal testing and are first released to members of T
 
 ## End user experience
 
-Teams will check for updates every few hours behind the scenes, download the updates, and then will wait for the computer to be idle for at least 40 minutes before automatically installing the update.  
+Teams will check for updates every few hours behind the scenes, download the updates, and then will wait for the computer to be idle for at least 40 minutes before automatically installing the update.
 
-When an update is available, the following are required to be able to download the update:  
+When an update is available, the following are required to be able to download the update:
 
 - The user must be signed into both the device and Teams.
-- The device must have an internet connection.  
+- The device must have an internet connection.
 - The device must be able to access the required network endpoints to reach the Teams update service.
 
 > [!NOTE]

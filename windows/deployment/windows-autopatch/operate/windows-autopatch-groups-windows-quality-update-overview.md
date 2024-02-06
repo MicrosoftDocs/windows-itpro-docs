@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: andredm7
 ms.collection:
   - highpri
@@ -68,7 +68,7 @@ The service level objective for each of these states is calculated as:
 > [!IMPORTANT]
 > This feature is in **public preview**. It's being actively developed, and might not be complete.
 
-You can import your organization’s existing Intune Update rings for Windows 10 and later into Windows Autopatch. Importing your organization’s Update rings provides the benefits of the Windows Autopatch's reporting and device readiness without the need to redeploy, or change your organization’s existing update rings.  
+You can import your organization’s existing Intune Update rings for Windows 10 and later into Windows Autopatch. Importing your organization’s Update rings provides the benefits of the Windows Autopatch's reporting and device readiness without the need to redeploy, or change your organization’s existing update rings. 
 
 Imported rings automatically register all targeted devices into Windows Autopatch. For more information about device registration, see the [device registration workflow diagram](../deploy/windows-autopatch-device-registration-overview.md#detailed-device-registration-workflow-diagram).
 
@@ -82,32 +82,32 @@ Imported rings automatically register all targeted devices into Windows Autopatc
 
 **To import Update rings for Windows 10 and later:**
 
-1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).  
-2. Select **Devices** from the left navigation menu.  
-3. Under the **Windows Autopatch** section, select **Release management**.  
-4. In the **Release management** blade, go to the **Release schedule** tab and select **Windows quality updates**.  
-5. Select **Import Update rings for Windows 10 and later**.  
-6. Select the existing rings you would like to import.  
+1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431). 
+2. Select **Devices** from the left navigation menu. 
+3. Under the **Windows Autopatch** section, select **Release management**. 
+4. In the **Release management** blade, go to the **Release schedule** tab and select **Windows quality updates**. 
+5. Select **Import Update rings for Windows 10 and later**. 
+6. Select the existing rings you would like to import. 
 7. Select **Import**.
 
 ### Remove an imported Update ring for Windows 10 and later
 
 **To remove an Imported Update rings for Windows 10 and later:**
 
-1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).  
-2. Select **Devices** from the left navigation menu.  
-3. Under the **Windows Autopatch** section, select **Release management**.  
-4. In the **Release management** blade, go to the **Release schedule** tab and select **Windows quality updates**.  
-5. Select the Update rings for Windows 10 and later you would like to remove.  
+1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431). 
+2. Select **Devices** from the left navigation menu. 
+3. Under the **Windows Autopatch** section, select **Release management**. 
+4. In the **Release management** blade, go to the **Release schedule** tab and select **Windows quality updates**. 
+5. Select the Update rings for Windows 10 and later you would like to remove. 
 6. Select the **horizontal ellipses (...)** and select **Remove**.
 
 ### Known limitations
 
-The following Windows Autopatch features aren't available with imported Intune Update rings:  
+The following Windows Autopatch features aren't available with imported Intune Update rings: 
 
-- Autopatch groups and features dependent on Autopatch groups  
+- Autopatch groups and features dependent on Autopatch groups 
 - Moving devices in between deployment rings in devices
-- Automated deployment ring remediation functions  
+- Automated deployment ring remediation functions 
 - Policy health and remediation
 
 ## Release management
