@@ -26,7 +26,7 @@ The other options allow you to configure Take a Test in kiosk mode using a local
 
 Follow the instructions below to configure your devices, selecting the option that best suits your needs.
 
-#### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
+# [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
 You can use Intune for Education or a custom profile in Microsoft Intune:
 
@@ -69,7 +69,7 @@ To configure devices using Intune for Education, follow these steps:
 
 [!INCLUDE [intune-custom-settings-2](../../includes/configure/intune-custom-settings-2.md)]
 
-#### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+# [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
 To create a provisioning package, you can either use Set up School PCs or Windows Configuration Designer:
 
@@ -100,7 +100,7 @@ Create a provisioning package using the Set up School PCs app, configuring the s
 
 [!INCLUDE [provisioning-package-2](../../includes/configure/provisioning-package-2.md)]
 
-#### [:::image type="icon" source="images/icons/powershell.svg"::: **PowerShell**](#tab/powershell)
+# [:::image type="icon" source="images/icons/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 [!INCLUDE [powershell-wmi-bridge-1](../../includes/configure/powershell-wmi-bridge-1.md)]
 
@@ -161,7 +161,7 @@ Set-CimInstance -CimInstance $cimObject
 
 [!INCLUDE [powershell-wmi-bridge-2](../../includes/configure/powershell-wmi-bridge-2.md)]
 
-#### [:::image type="icon" source="images/icons/settings.svg"::: **Settings app**](#tab/settings)
+# [:::image type="icon" source="images/icons/settings.svg"::: **Settings app**](#tab/settings)
 
 To create a local account, and configure Take a Test in kiosk mode using the Settings app:
 
