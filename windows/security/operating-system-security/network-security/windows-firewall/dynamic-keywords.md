@@ -82,7 +82,6 @@ The following are requirements for the FQDN feature:
   - [Chrome][HTTP-1]
   - [Firefox][HTTP-2]
 - The device's default DNS resolution settings apply. This feature doesn't provide DNS security or functionality changes
-  - For Microsoft Edge version 109 and later, configure the browser to use the default system DNS through [this policy][EDGE-2]. For more information, see [Configure Microsoft Edge policy settings on Windows devices][EDGE-3]
     > [!TIP]
     > You can also download the ADMX file from there, follow the directions, and configure it via gpedit.msc for local testing.
 
@@ -136,7 +135,7 @@ Get-NetFirewallDynamicKeywordAddress -AllAutoResolve
 
 ### Hydrate FQDN rules
 
-The following sample scripts read the current Windows Firewall configuration, extract FQDN-based rules, and perform DNS resolution on each domain. The result is that the IP addresses for those rules get populated.
+The following sample scripts read the current Windows Firewall configuration, extract FQDN-based rules, and perform DNS resolution on each domain. The result is that the IP addresses for those rules get "prehydrated."
 
 ```PowerShell
 Get-NetFirewallDynamicKeywordAddress -AllAutoResolve |`
