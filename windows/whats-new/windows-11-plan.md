@@ -42,7 +42,7 @@ Enterprise organizations looking to evaluate device readiness in their environme
 
 ## Windows 11 availability
 
-The availability of **Windows 11** will vary according to a device's hardware and whether the device receives updates directly, or from a management solution that is maintained by an IT administrator. 
+The availability of Windows 11 will vary according to a device's hardware and whether the device receives updates directly, or from a management solution that is maintained by an IT administrator. 
 
 ##### Managed devices
 
