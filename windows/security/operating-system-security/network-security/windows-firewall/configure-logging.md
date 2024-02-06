@@ -74,7 +74,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 Here are some recommendations for configuring Windows Firewall logging:
 
-- Change the logging size to at least **20,480 KB (20 MB)** to ensure that the log file doesn't fill up too quickly. The maximum log size is 32,768 KB (32 MB)
+- Change the logging size to at least **20,480 KB (20 MB)** to ensure that the log file doesn't fill up too quickly. The maximum log size is 32,767 KB (32 MB)
 - For each profile (Domain, Private, and Public) change the default log file name from `%windir%\system32\logfiles\firewall\pfirewall.log` to:
   - `%windir%\system32\logfiles\firewall\pfirewall_Domain.log`
   - `%windir%\system32\logfiles\firewall\pfirewall_Private.log`
