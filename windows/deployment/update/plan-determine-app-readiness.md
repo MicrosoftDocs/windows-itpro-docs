@@ -1,8 +1,8 @@
 ---
 title: Determine application readiness
 description: How to test your apps to identify which need attention prior to deploying an update in your organization.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.author: mstewart
 author: mestew

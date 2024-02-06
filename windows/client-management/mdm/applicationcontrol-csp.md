@@ -1,14 +1,7 @@
 ---
 title: ApplicationControl CSP
 description: Learn more about the ApplicationControl CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -31,12 +24,14 @@ The following list shows the ApplicationControl configuration service provider n
     - [{Policy GUID}](#policiespolicy-guid)
       - [Policy](#policiespolicy-guidpolicy)
       - [PolicyInfo](#policiespolicy-guidpolicyinfo)
+        - [BasePolicyId](#policiespolicy-guidpolicyinfobasepolicyid)
         - [FriendlyName](#policiespolicy-guidpolicyinfofriendlyname)
         - [IsAuthorized](#policiespolicy-guidpolicyinfoisauthorized)
         - [IsBasePolicy](#policiespolicy-guidpolicyinfoisbasepolicy)
         - [IsDeployed](#policiespolicy-guidpolicyinfoisdeployed)
         - [IsEffective](#policiespolicy-guidpolicyinfoiseffective)
         - [IsSystemPolicy](#policiespolicy-guidpolicyinfoissystempolicy)
+        - [PolicyOptions](#policiespolicy-guidpolicyinfopolicyoptions)
         - [Status](#policiespolicy-guidpolicyinfostatus)
         - [Version](#policiespolicy-guidpolicyinfoversion)
   - [Tokens](#tokens)
@@ -206,6 +201,45 @@ Information Describing the Policy indicated by the GUID.
 <!-- Device-Policies-{Policy GUID}-PolicyInfo-Examples-End -->
 
 <!-- Device-Policies-{Policy GUID}-PolicyInfo-End -->
+
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-BasePolicyId-Begin -->
+##### Policies/{Policy GUID}/PolicyInfo/BasePolicyId
+
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-BasePolicyId-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-BasePolicyId-Applicability-End -->
+
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-BasePolicyId-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/ApplicationControl/Policies/{Policy GUID}/PolicyInfo/BasePolicyId
+```
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-BasePolicyId-OmaUri-End -->
+
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-BasePolicyId-Description-Begin -->
+<!-- Description-Source-DDF -->
+The BasePolicyId of the Policy Indicated by the Policy GUID.
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-BasePolicyId-Description-End -->
+
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-BasePolicyId-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-BasePolicyId-Editable-End -->
+
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-BasePolicyId-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get |
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-BasePolicyId-DFProperties-End -->
+
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-BasePolicyId-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-BasePolicyId-Examples-End -->
+
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-BasePolicyId-End -->
 
 <!-- Device-Policies-{Policy GUID}-PolicyInfo-FriendlyName-Begin -->
 ##### Policies/{Policy GUID}/PolicyInfo/FriendlyName
@@ -452,6 +486,45 @@ TRUE/FALSE if the Policy is a System Policy, that's a policy managed by Microsof
 <!-- Device-Policies-{Policy GUID}-PolicyInfo-IsSystemPolicy-Examples-End -->
 
 <!-- Device-Policies-{Policy GUID}-PolicyInfo-IsSystemPolicy-End -->
+
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-PolicyOptions-Begin -->
+##### Policies/{Policy GUID}/PolicyInfo/PolicyOptions
+
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-PolicyOptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-PolicyOptions-Applicability-End -->
+
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-PolicyOptions-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/ApplicationControl/Policies/{Policy GUID}/PolicyInfo/PolicyOptions
+```
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-PolicyOptions-OmaUri-End -->
+
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-PolicyOptions-Description-Begin -->
+<!-- Description-Source-DDF -->
+The PolicyOptions of the Policy Indicated by the Policy GUID.
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-PolicyOptions-Description-End -->
+
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-PolicyOptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-PolicyOptions-Editable-End -->
+
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-PolicyOptions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get |
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-PolicyOptions-DFProperties-End -->
+
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-PolicyOptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-PolicyOptions-Examples-End -->
+
+<!-- Device-Policies-{Policy GUID}-PolicyInfo-PolicyOptions-End -->
 
 <!-- Device-Policies-{Policy GUID}-PolicyInfo-Status-Begin -->
 ##### Policies/{Policy GUID}/PolicyInfo/Status

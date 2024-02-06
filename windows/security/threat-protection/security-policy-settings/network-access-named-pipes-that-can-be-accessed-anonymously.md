@@ -4,7 +4,6 @@ description: Describes best practices, security considerations and more for the 
 ms.assetid: 8897d2a4-813e-4d2b-8518-fcee71e1cf2c
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Network access: Named Pipes that can be accessed anonymously

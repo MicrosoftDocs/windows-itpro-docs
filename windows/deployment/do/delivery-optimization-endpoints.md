@@ -1,8 +1,8 @@
 ---
 title: Microsoft Connected Cache content and services endpoints
 description: List of fully qualified domain names, ports, and associated content used by Microsoft Connected Cache.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 author: cmknox
 ms.author: carmenf

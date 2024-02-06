@@ -2,13 +2,13 @@
 title: Post-device registration readiness checks
 description: This article details how post-device registration readiness checks are performed in Windows Autopatch
 ms.date: 09/16/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: andredm7
 ms.collection:
   - highpri
@@ -20,7 +20,7 @@ ms.collection:
 > [!IMPORTANT]
 > This feature is in "public preview". It is being actively developed, and may not be complete. They're made available on a “Preview” basis. You can test and use these features in production environments and scenarios, and provide feedback.
 
-One of the most expensive aspects of the software update management process is to make sure devices are always healthy to receive and report software updates for each software update release cycle.  
+One of the most expensive aspects of the software update management process is to make sure devices are always healthy to receive and report software updates for each software update release cycle.
 
 Having a way of measuring, quickly detecting and remediating when something goes wrong with on-going change management processes is important; it helps mitigate high Helpdesk ticket volumes, reduces cost, and improves overall update management results.
 

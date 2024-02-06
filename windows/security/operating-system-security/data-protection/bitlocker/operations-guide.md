@@ -230,7 +230,7 @@ Add the desired protectors prior to encrypting the volume. The following example
 ```powershell
 $pw = Read-Host -AsSecureString
 <user inputs password>
-Enable-BitLockerKeyProtector E: -PasswordProtector -Password $pw
+Add-BitLockerKeyProtector E: -PasswordProtector -Password $pw
 ```
 
 > [!NOTE]

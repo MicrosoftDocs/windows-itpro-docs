@@ -1,8 +1,8 @@
 ---
 title: Operator sign up and service onboarding
 description: Instructions on how to go through the service onboarding process for Microsoft Connected Cache for ISPs.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 manager: aaroncz
 author: nidos

@@ -1,14 +1,7 @@
 ---
 title: ControlPolicyConflict Policy CSP
 description: Learn more about the ControlPolicyConflict Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -44,7 +37,7 @@ If set to 1 then any MDM policy that's set that has an equivalent GP policy will
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 > [!NOTE]
-> MDMWinsOverGP only applies to policies in Policy CSP. MDM policies win over Group Policies where applicable; not all Group Policies are available via MDM or CSP. It does not apply to other MDM settings with equivalent GP settings that are defined in other CSPs such as the [Defender CSP](defender-csp.md). Nor does it apply to the [Update Policy CSP](policy-csp-update.md) for managing Windows updates. 
+> MDMWinsOverGP only applies to policies in Policy CSP. MDM policies win over Group Policies where applicable; not all Group Policies are available via MDM or CSP. It does not apply to other MDM settings with equivalent GP settings that are defined in other CSPs such as the [Defender CSP](defender-csp.md). Nor does it apply to the [Update Policy CSP](policy-csp-update.md) for managing Windows updates.
 
 This policy is used to ensure that MDM policy wins over GP when policy is configured on MDM channel. The default value is 0. The MDM policies in Policy CSP will behave as described if this policy value is set 1.
 

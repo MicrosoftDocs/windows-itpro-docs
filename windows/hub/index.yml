@@ -8,9 +8,10 @@ metadata:
   title: Windows client documentation
   description: Learn how to deploy, secure, and manage Windows clients for your organization.
   ms.topic: hub-page
-  ms.prod: windows-client
+  ms.service: windows-client
   ms.collection:
     - tier1
+    - essentials-navigation
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz

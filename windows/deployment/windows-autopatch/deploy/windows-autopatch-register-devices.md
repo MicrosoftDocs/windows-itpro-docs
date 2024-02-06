@@ -2,13 +2,13 @@
 title: Register your devices
 description: This article details how to register devices in Autopatch
 ms.date: 07/25/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: andredm7
 ms.collection:
   - highpri
@@ -31,7 +31,7 @@ Windows Autopatch can take over software update management control of devices th
 
 ### Windows Autopatch groups device registration
 
-When you either create/edit a [Custom Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-custom-autopatch-groups) or edit the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group) to add or remove deployment rings, the device-based Microsoft Entra groups you use when setting up your deployment rings are scanned to see if devices need to be registered with the Windows Autopatch service.  
+When you either create/edit a [Custom Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-custom-autopatch-groups) or edit the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group) to add or remove deployment rings, the device-based Microsoft Entra groups you use when setting up your deployment rings are scanned to see if devices need to be registered with the Windows Autopatch service.
 
 If devices aren’t registered, Autopatch groups starts the device registration process by using your existing device-based Microsoft Entra groups instead of the Windows Autopatch Device Registration group.
 
@@ -152,7 +152,7 @@ Windows 365 Enterprise gives IT admins the option to register devices with the W
 1. In the left pane, select **Devices**.
 1. Navigate to Provisioning > **Windows 365**.
 1. Select Provisioning policies > **Create policy**.
-1. Provide a policy name and select **Join Type**. For more information, see [Device join types](/windows-365/enterprise/identity-authentication#device-join-types).  
+1. Provide a policy name and select **Join Type**. For more information, see [Device join types](/windows-365/enterprise/identity-authentication#device-join-types).
 1. Select **Next**.
 1. Choose the desired image and select **Next**.
 1. Under the **Microsoft managed services** section, select **Windows Autopatch**. Then, select **Next**. If the *Windows Autopatch (preview) can't manage your Cloud PCs until a Global Admin has finished setting it up.* message appears, you must [enroll your tenant](../prepare/windows-autopatch-enroll-tenant.md) to continue.
@@ -200,7 +200,7 @@ Support is available either through Windows 365, or the Windows Autopatch Servic
 
 - For Windows 365 support, see [Get support](/mem/get-support).
 - For Azure Virtual Desktop support, see [Get support](https://azure.microsoft.com/support/create-ticket/).
-- For Windows Autopatch support, see [Submit a support request](/windows/deployment/windows-autopatch/operate/windows-autopatch-support-request).  
+- For Windows Autopatch support, see [Submit a support request](/windows/deployment/windows-autopatch/operate/windows-autopatch-support-request).
 
 ## Device management lifecycle scenarios
 

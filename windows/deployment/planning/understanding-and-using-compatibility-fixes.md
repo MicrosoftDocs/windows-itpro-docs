@@ -3,10 +3,10 @@ title: Understanding and Using Compatibility Fixes (Windows 10)
 description: As the Windows operating system evolves to support new technology and functionality, the implementations of some functions may change.
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ms.date: 10/28/2022
 ---
 

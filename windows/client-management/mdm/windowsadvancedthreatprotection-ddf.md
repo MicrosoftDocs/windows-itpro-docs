@@ -2,13 +2,6 @@
 title: WindowsAdvancedThreatProtection DDF file
 description: Learn about the OMA DM device description framework (DDF) for the WindowsAdvancedThreatProtection configuration service provider (CSP).
 ms.assetid: 0C62A790-4351-48AF-89FD-7D46C42D13E0
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-ms.topic: reference
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 

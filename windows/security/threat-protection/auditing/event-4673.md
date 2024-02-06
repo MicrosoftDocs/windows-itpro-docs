@@ -2,7 +2,6 @@
 title: 4673(S, F) A privileged service was called. 
 description: Describes security event 4673(S, F) A privileged service was called. This event is generated for an attempt to perform privileged system service operations.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

@@ -3,11 +3,11 @@ title: What's new in Windows 10 Enterprise LTSC 2021
 manager: aaroncz
 ms.author: mstewart
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2021.
-ms.prod: windows-client
+ms.service: windows-client
 author: mestew
 ms.localizationpriority: high
 ms.topic: conceptual
-ms.technology: itpro-fundamentals
+ms.subservice: itpro-fundamentals
 ms.date: 12/18/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2021</a>

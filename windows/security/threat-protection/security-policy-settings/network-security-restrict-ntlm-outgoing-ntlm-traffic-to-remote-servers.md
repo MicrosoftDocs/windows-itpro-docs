@@ -4,7 +4,6 @@ description: Learn about best practices, security considerations and more for th
 ms.assetid: 63437a90-764b-4f06-aed8-a4a26cf81bd1
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 06/15/2022
-ms.technology: itpro-security
 ---
 
 # Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers

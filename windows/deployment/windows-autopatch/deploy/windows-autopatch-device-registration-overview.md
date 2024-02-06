@@ -2,13 +2,13 @@
 title: Device registration overview
 description: This article provides an overview on how to register devices in Autopatch
 ms.date: 07/25/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: andredm7
 ms.collection:
   - highpri
@@ -67,7 +67,7 @@ As described in **step #4** in the previous [Detailed device registration workfl
 During the tenant enrollment process, Windows Autopatch creates two different deployment ring sets:
 
 - [Service-based deployment ring set](../deploy/windows-autopatch-groups-overview.md#service-based-deployment-rings)
-- [Software update-based deployment ring set](../deploy/windows-autopatch-groups-overview.md#software-based-deployment-rings)  
+- [Software update-based deployment ring set](../deploy/windows-autopatch-groups-overview.md#software-based-deployment-rings)
 
 The following four Microsoft Entra ID assigned groups are used to organize devices for the service-based deployment ring set:
 

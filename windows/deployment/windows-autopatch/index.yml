@@ -10,13 +10,14 @@ metadata:
   ms.topic: landing-page # Required
   author: tiaraquan #Required; your GitHub user alias, with correct capitalization.
   ms.author: tiaraquan #Required; microsoft alias of author; optional team alias.
-  manager: dougeby
+  manager: aaroncz
   ms.date: 05/30/2022 #Required; mm/dd/yyyy format.
-  ms.prod: windows-client
-  ms.technology: itpro-updates
+  ms.service: windows-client
+  ms.subservice: itpro-updates
   ms.collection:
     - highpri
     - tier2
+    - essentials-navigation
 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -33,7 +34,7 @@ landingContent:
             url: ./overview/windows-autopatch-overview.md
           - text: Windows Autopatch FAQ
             url: ./overview/windows-autopatch-faq.yml
-  
+
   # Card (optional)
   - title: Articles and blog posts
     linkLists:
