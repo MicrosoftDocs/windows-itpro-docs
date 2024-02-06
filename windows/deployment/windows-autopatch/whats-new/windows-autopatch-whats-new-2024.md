@@ -6,9 +6,9 @@ ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: whats-new
 ms.localizationpriority: medium
-author: tiaraquan 
+author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby 
+manager: aaroncz
 ms.reviewer: hathind
 ms.collection:
   - highpri

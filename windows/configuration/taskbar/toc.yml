@@ -1,0 +1,7 @@
+items:
+- name: Customize the Taskbar in Windows 11
+  href: customize-taskbar-windows-11.md
+- name: Supported Taskbar CSPs
+  href: supported-csp-taskbar-windows.md
+- name: Customize the Taskbar in Windows 10
+  href: configure-windows-10-taskbar.md

@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/04/2023
   audience: itpro
   ms.localizationpriority: medium
-  manager: dougeby
+  manager: aaroncz
   author: tiaraquan
   ms.author: tiaraquan
   ms.reviwer: hathind
@@ -28,9 +28,9 @@ sections:
           Windows Autopatch supports Windows 365 for Enterprise. Windows 365 for Business isn't supported.
       - question: Does Windows Autopatch support Windows Education (A3/A5) or Windows Front Line Worker (F3) licensing?
         answer: |
-          Autopatch isn't available for 'A'. Windows Autopatch supports some 'F' series licensing. For more information, see [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses). 
+          Autopatch isn't available for 'A'. Windows Autopatch supports some 'F' series licensing. For more information, see [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses).
       - question: Will Windows Autopatch support local domain join Windows 10?
-        answer: | 
+        answer: |
           Windows Autopatch doesn't support local (on-premises) domain join. Windows Autopatch supports [Hybrid AD join](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or pure [Microsoft Entra join](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
       - question: Will Windows Autopatch be available for state and local government customers?
         answer: |
@@ -46,8 +46,8 @@ sections:
           - [Azure Active Directory (Azure AD) Premium](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses)
           - [Hybrid Azure AD-Joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Azure AD-joined only](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
           - [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune)
-          
-          Additional prerequisites for devices managed by Configuration Manager: 
+
+          Additional prerequisites for devices managed by Configuration Manager:
 
           - [Configuration Manager Co-management requirements](../prepare/windows-autopatch-prerequisites.md#configuration-manager-co-management-requirements)
           - [A supported version of Configuration Manager](/mem/configmgr/core/servers/manage/updates#supported-versions)
@@ -77,11 +77,11 @@ sections:
       - question: Can you change the policies and configurations created by Windows Autopatch?
         answer: |
           No. Don't change, edit, add to, or remove any of the configurations. Doing so might cause unintended configuration conflicts and impact the Windows Autopatch service. For more information about policies and configurations, see [Changes made at tenant enrollment](/windows/deployment/windows-autopatch/references/windows-autopatch-changes-to-tenant).
-      - question: How can I represent our organizational structure with our own deployment cadence? 
+      - question: How can I represent our organizational structure with our own deployment cadence?
         answer: |
           [Windows Autopatch groups](../deploy/windows-autopatch-groups-overview.md) helps you manage updates in a way that makes sense for your businesses. For more information, see [Windows Autopatch groups overview](../deploy/windows-autopatch-groups-overview.md) and [Manage Windows Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md).
   - name: Update management
-    questions: 
+    questions:
       - question: What systems does Windows Autopatch update?
         answer: |
           - Windows 10/11 quality updates: Windows Autopatch manages all aspects of deployment rings.

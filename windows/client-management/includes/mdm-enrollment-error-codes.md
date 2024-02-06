@@ -1,7 +1,7 @@
 ---
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.prod: windows
+ms.service: windows-client
 ms.topic: include
 ms.date: 04/06/2023
 ---

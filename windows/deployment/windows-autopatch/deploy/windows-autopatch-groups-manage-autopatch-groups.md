@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: andredm7
 ms.collection:
   - highpri
@@ -123,7 +123,7 @@ You **can’t** rename the Default Autopatch group. However, you can rename a Cu
 
 ## Delete a Custom Autopatch group
 
-You **can’t** delete the Default Autopatch group. However, you can delete a Custom Autopatch group.  
+You **can’t** delete the Default Autopatch group. However, you can delete a Custom Autopatch group.
 
 **To delete a Custom Autopatch group:**
 
