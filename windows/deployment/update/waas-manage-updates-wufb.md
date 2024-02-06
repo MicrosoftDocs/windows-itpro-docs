@@ -2,7 +2,8 @@
 title: Windows Update for Business
 manager: aaroncz
 description: Learn how Windows Update for Business lets you manage when devices receive updates from Windows Update.
-ms.prod: windows-client
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: overview
 author: mestew
 ms.author: mstewart
@@ -10,9 +11,9 @@ ms.collection:
   - highpri
   - tier2
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 11/07/2023
 ---
 
@@ -27,7 +28,7 @@ Windows Update for Business is a free service that is available for the followin
 - Enterprise, including Enterprise LTSC, IoT Enterprise, and IoT Enterprise LTSC
 
 Windows Update for Business enables IT administrators to keep their organization's Windows client devices always up to date with the latest security updates  and Windows features by directly connecting these systems to the Windows Update service. You can use Group Policy or Mobile Device Management (MDM) solutions, such as Microsoft Intune, to configure the Windows Update for Business settings that control how and when devices are updated.
-  
+
 Specifically, Windows Update for Business lets you control update offerings and experiences to allow for reliability and performance testing on a subset of devices before deploying updates across the organization. It also provides a positive update experience for people in your organization.
 
 ## What can I do with Windows Update for Business?
@@ -85,7 +86,7 @@ An administrator can defer the installation of both feature and quality updates 
 |Nondeferrable     |   none      |
 
 <!--Example: Using deferrals to deploy in waves
-      [Insert graphic with the deferrals set to different values showing a feature update rollout)--> 
+      [Insert graphic with the deferrals set to different values showing a feature update rollout)-->
 
 #### Pause an update
 
@@ -98,7 +99,7 @@ When updating from Windows Update, you get the added benefits of built-in compat
 
 ### Recommendations
 
-For the best experience with Windows Update, follow these guidelines: 
+For the best experience with Windows Update, follow these guidelines:
 
 - Use devices for at least 6 hours per month, including at least 2 hours of continuous use.
 - Keep devices regularly charged. Plugging in devices overnight enables them to automatically update outside of active hours.
