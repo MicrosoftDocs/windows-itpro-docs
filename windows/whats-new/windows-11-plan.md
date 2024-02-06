@@ -11,7 +11,7 @@ ms.collection:
   - highpri
   - tier1
 ms.technology: itpro-fundamentals
-ms.date: 08/11/2023
+ms.date: 02/06/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
