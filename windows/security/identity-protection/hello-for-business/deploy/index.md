@@ -112,11 +112,11 @@ Users can authenticate to Microsoft Entra ID using federated authentication or c
 |  | Deployment model | Trust type | Authentication to Microsoft Entra ID | Requirements |
 |--|--|--|--|--|
 | **🔲** | **Cloud-only** | n/a | Cloud authentication | n/a |
-| **🔲** | **Cloud-only** | n/a | Federated authentication | Third-party federation service |
+| **🔲** | **Cloud-only** | n/a | Federated authentication | Non-Microsoft federation service |
 | **🔲** | **Hybrid** | Cloud Kerberos trust | Cloud authentication | Password hash sync (PHS) or Pass-through authentication (PTA) |
-| **🔲** | **Hybrid** | Cloud Kerberos trust | Federated authentication | AD FS or third-party federation service |
+| **🔲** | **Hybrid** | Cloud Kerberos trust | Federated authentication | AD FS or non-Microsoft federation service |
 | **🔲** | **Hybrid** | Key trust | Cloud authentication | Password hash sync (PHS) or Pass-through authentication (PTA) |
-| **🔲** | **Hybrid** | Key trust | Federated authentication | AD FS or third-party federation service |
+| **🔲** | **Hybrid** | Key trust | Federated authentication | AD FS or non-Microsoft federation service |
 | **🔲** | **Hybrid** | Certificate trust | Federated authentication | This deployment model doesn't support PTA or PHS. Active Directory must be federated with Microsoft Entra ID using AD FS|
 
 To learn more:
@@ -143,7 +143,7 @@ For on-premises deployments, the server running the Active Directory Federation 
 The goal of Windows Hello for Business is to move organizations away from passwords by providing them with a *strong credential* that enables easy two-factor authentication. The built-in provisioning experience accepts the user's weak credentials (username and password) as the first factor authentication. However, the user must provide a second factor of authentication before Windows provisions a strong credential:
 
 - For cloud-only and hybrid deployments, there are different choices for multifactor authentication, including [Microsoft Entra MFA][ENTRA-1]
-- On-premises deployments must use a multifactor option that can integrate as an AD FS multifactor adapter. Organizations can choose from third-party options that offer an AD FS MFA adapter. For more information, see [Microsoft and third-party additional authentication methods][SER-2]
+- On-premises deployments must use a multifactor option that can integrate as an AD FS multifactor adapter. Organizations can choose from non-Microsoft options that offer an AD FS MFA adapter. For more information, see [Microsoft and non-Microsoft additional authentication methods][SER-2]
 
 > [!IMPORTANT]
 > As of July 1, 2019, Microsoft doesn't offer MFA Server for new deployments. New deployments that require multifactor authentication should use cloud-based Microsoft Entra multifactor authentication. Existing deployment where the MFA Server was activated prior to July 1, 2019 can download the latest version, future updates, and generate activation credentials. For more information, see [Getting started with the Azure Multi-Factor Authentication Server][ENTRA-2].
@@ -151,9 +151,9 @@ The goal of Windows Hello for Business is to move organizations away from passwo
 || Deployment model | MFA options |
 |--|--|--|
 | **🔲** | **Cloud-only** | Microsoft Entra MFA |
-| **🔲** | **Cloud-only** | Third-party MFA via Microsoft Entra ID custom controls or federation |
+| **🔲** | **Cloud-only** | Non-Microsoft MFA via Microsoft Entra ID custom controls or federation |
 | **🔲** | **Hybrid** | Microsoft Entra MFA |
-| **🔲** | **Hybrid** | Third-party MFA via Microsoft Entra ID custom controls or federation|
+| **🔲** | **Hybrid** | Non-Microsoft MFA via Microsoft Entra ID custom controls or federation|
 | **🔲** | **On-premises** | AD FS MFA adapter |
 
 For more information how to configure Microsoft Entra multifactor authentication, see [Configure Microsoft Entra multifactor authentication settings][ENTRA-4].
@@ -224,7 +224,7 @@ Windows Hello for Business provides a rich set of granular policy settings. Ther
 Here are some considerations regarding licensing requirements for cloud services:
 
 - Windows Hello for Business doesn't require a Microsoft Entra ID P1 or P2 subscription. However, some dependencies, such as [MDM automatic enrollment][MEM-1] and [Conditional Access][ENTRA-8] do
-  - Devices managed via MDM don't require a Microsoft Entra ID P1 or P2 subscription. By forgoing the subscription, users must manually enroll devices in the MDM solution, such as Microsoft Intune or a supported third-party MDM
+  - Devices managed via MDM don't require a Microsoft Entra ID P1 or P2 subscription. By forgoing the subscription, users must manually enroll devices in the MDM solution, such as Microsoft Intune or a supported non-Microsoft MDM
 - You can deploy Windows Hello for Business using the Microsoft Entra ID Free tier. All Microsoft Entra ID Free accounts can use Microsoft Entra multifactor authentication for the Windows passwordless features
   - Some Microsoft Entra multifactor authentication features require a license. For more information, see [Features and licenses for Microsoft Entra multifactor authentication][ENTRA-9].
 - Enrolling a certificate using the AD FS registration authority requires devices to authenticate to the AD FS server, which requires device write-back, a Microsoft Entra ID P1 or P2 feature

@@ -36,7 +36,7 @@ Windows Hello for Business works exclusively with the Active Directory Federatio
 > [!div class="checklist"]
 > Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 >
-> - Record the information about the AD FS certificate, and set a renewal reminder at least six weeks before it expires. Relevant information includes: certificate serial number, thumbprint, common name, subject alternate name, name of the physical host server, the issued date, the expiration date, and issuing CA vendor (if a third-party certificate)
+> - Record the information about the AD FS certificate, and set a renewal reminder at least six weeks before it expires. Relevant information includes: certificate serial number, thumbprint, common name, subject alternate name, name of the physical host server, the issued date, the expiration date, and issuing CA vendor (if a non-Microsoft certificate)
 > - Confirm you added the AD FS service account to the KeyAdmins group
 > - Confirm you enabled the Device Registration service
 

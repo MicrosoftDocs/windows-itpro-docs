@@ -22,9 +22,9 @@ For WiFi and VPN connections, it's recommended to move from MSCHAPv2-based conne
 When you enable Credential Guard, you can no longer use Kerberos unconstrained delegation or DES encryption. Unconstrained delegation could allow attackers to extract Kerberos keys from the isolated LSA process.\
 Use constrained or resource-based Kerberos delegation instead.
 
-## Third party Security Support Providers considerations
+## Non-Microsoft Security Support Providers considerations
 
-Some third party Security Support Providers (SSPs and APs) might not be compatible with Credential Guard because it doesn't allow third-party SSPs to ask for password hashes from LSA. However, SSPs and APs still get notified of the password when a user logs on and/or changes their password. Any use of undocumented APIs within custom SSPs and APs aren't supported.\
+Some non-Microsoft Security Support Providers (SSPs and APs) might not be compatible with Credential Guard because it doesn't allow non-Microsoft SSPs to ask for password hashes from LSA. However, SSPs and APs still get notified of the password when a user logs on and/or changes their password. Any use of undocumented APIs within custom SSPs and APs aren't supported.\
 It's recommended that custom implementations of SSPs/APs are tested with Credential Guard. SSPs and APs that depend on any undocumented or unsupported behaviors fail. For example, using the KerbQuerySupplementalCredentialsMessage API isn't supported. Replacing the NTLM or Kerberos SSPs with custom SSPs and APs.
 
 For more information, see [Restrictions around Registering and Installing a Security Package](/windows/win32/secauthn/restrictions-around-registering-and-installing-a-security-package).
@@ -110,15 +110,15 @@ Credential Guard blocks certain authentication capabilities. Applications that r
 
 This article describes known issues when Credential Guard is enabled.
 
-### Single sign-on for Network services breaks after upgrading to Windows 11, version 22H2  
+### Single sign-on for Network services breaks after upgrading to Windows 11, version 22H2
 
-Devices that use 802.1x wireless or wired network, RDP, or VPN connections that rely on insecure protocols with password-based authentication are unable to use SSO to sign in and are forced to manually re-authenticate in every new Windows session when Credential Guard is running.  
+Devices that use 802.1x wireless or wired network, RDP, or VPN connections that rely on insecure protocols with password-based authentication are unable to use SSO to sign in and are forced to manually re-authenticate in every new Windows session when Credential Guard is running.
 
 #### Affected devices
 
 Any device with Credential Guard enabled may encounter the issue. As part of the Windows 11, version 22H2 update, eligible devices that didn't disable Credential Guard, have it enabled by default. This affected all devices on Enterprise (E3 and E5) and Education licenses, as well as some Pro licenses, as long as they met the [minimum hardware requirements](index.md#hardware-and-software-requirements).
-  
-All Windows Pro devices that previously ran Credential Guard on an eligible license and later downgraded to Pro, and which still meet the [minimum hardware requirements](index.md#hardware-and-software-requirements), will receive default enablement.  
+
+All Windows Pro devices that previously ran Credential Guard on an eligible license and later downgraded to Pro, and which still meet the [minimum hardware requirements](index.md#hardware-and-software-requirements), will receive default enablement.
 
 > [!TIP]
 > To determine if a Windows Pro device receives default enablement when upgraded to **Windows 11, version 22H2**, check if the registry key `IsolatedCredentialsRootSecret` is present in `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0`.
@@ -188,16 +188,16 @@ MS-CHAP and NTLMv1 are relevant to the SSO breakage after the Windows 11, versio
 
 #### How to fix the issue
 
-We recommend moving away from MSCHAPv2-based connections, such as PEAP-MSCHAPv2 and EAP-MSCHAPv2, to certificate-based authentication, like PEAP-TLS or EAP-TLS. Credential Guard doesn't block certificate-based authentication.  
+We recommend moving away from MSCHAPv2-based connections, such as PEAP-MSCHAPv2 and EAP-MSCHAPv2, to certificate-based authentication, like PEAP-TLS or EAP-TLS. Credential Guard doesn't block certificate-based authentication.
 
 For a more immediate, but less secure fix, [disable Credential Guard](configure.md#disable-credential-guard). Credential Guard doesn't have per-protocol or per-application policies, and it can either be turned on or off. If you disable Credential Guard, you leave stored domain credentials vulnerable to theft.
 
 > [!TIP]
 > To prevent default enablement, configure your devices [to disable Credential Guard](configure.md#disable-credential-guard) before updating to Windows 11, version 22H2. If the setting is not configured (which is the default state) and if the device is eligible, the device automatically enable Credential Guard after the update.
 >
-> If Credential Guard is explicitly disabled, the device won't automatically enable Credential Guard after the update.  
+> If Credential Guard is explicitly disabled, the device won't automatically enable Credential Guard after the update.
 
-### Issues with third-party applications
+### Issues with non-Microsoft applications
 
 The following issue affects MSCHAPv2:
 

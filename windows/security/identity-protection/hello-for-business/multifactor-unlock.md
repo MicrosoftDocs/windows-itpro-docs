@@ -39,13 +39,13 @@ Supported credential providers include:
 
 |Credential Provider| GUID|
 |:------------------|:----|
-|PIN| `{D6886603-9D2F-4EB2-B667-1971041FA96B}`|  
+|PIN| `{D6886603-9D2F-4EB2-B667-1971041FA96B}`|
 |Fingerprint| `{BEC09223-B018-416D-A0AC-523971B639F5}`|
 |Facial Recognition| `{8AF662BF-65A0-4D0A-A540-A338A999D36F}`|
 |Trusted Signal<br>(Phone proximity, Network location) | `{27FBDB57-B613-4AF2-9D7E-4FA7A66C21AD}`|
 
 > [!NOTE]
-> Multifactor unlock does not support third-party credential providers or credential providers not listed in the above table.
+> Multifactor unlock does not support non-Microsoft credential providers or credential providers not listed in the above table.
 
 The default credential providers for the **First unlock factor credential provider** include:
 
@@ -121,7 +121,7 @@ The **classofDevice** attribute defaults to Phone and uses the values from the f
 |Health|2304|
 |Uncategorized|7936|
 
-The **rssiMin** attribute value signal indicates the strength needed for the device to be considered "in-range". The default value of **-10** enables a user to move about an average size office or cubicle without triggering Windows to lock the device. The **rssiMaxDelta** has a default value of **-10**, which instruct Windows to lock the device once the signal strength weakens by more than measurement of 10. 
+The **rssiMin** attribute value signal indicates the strength needed for the device to be considered "in-range". The default value of **-10** enables a user to move about an average size office or cubicle without triggering Windows to lock the device. The **rssiMaxDelta** has a default value of **-10**, which instruct Windows to lock the device once the signal strength weakens by more than measurement of 10.
 
 RSSI measurements are relative, and lower as the bluetooth signals between the two paired devices reduces. A measurement of 0 is stronger than -10. A measurement of -10 is stronger than -60, and indicates that the devices are moving further apart from each other.
 
@@ -169,7 +169,7 @@ The IPv4 DNS server represented in Internet standard dotted-decimal notation. A 
 
 ##### IPv6Prefix
 
-The IPv6 network prefix represented in IPv6 network using Internet standard hexadecimal encoding. A network prefix in CIDR notation is required as part of the network string. A network port or scope ID must not be present in the network string. A **signal** element may only contain one **ipv6Prefix** element. For example: 
+The IPv6 network prefix represented in IPv6 network using Internet standard hexadecimal encoding. A network prefix in CIDR notation is required as part of the network string. A network port or scope ID must not be present in the network string. A **signal** element may only contain one **ipv6Prefix** element. For example:
 
 ```xml
 <ipv6Prefix>21DA:D3::/48</ipv6Prefix>
@@ -243,7 +243,7 @@ Contains the type of security the client uses when connecting to the wireless ne
 For example:
 
 ```xml
-<security>WPA2-Enterprise</security> 
+<security>WPA2-Enterprise</security>
 ```
 
 #### TrustedRootCA
@@ -273,13 +273,13 @@ For example:
 The following example configures an **IPConfig** signal type using **Ipv4Prefix**, **Ipv4DnsServer**, and **DnsSuffix** elements.
 
 ```xml
-<rule schemaVersion="1.0"> 
-    <signal type="ipConfig"> 
+<rule schemaVersion="1.0">
+    <signal type="ipConfig">
         <ipv4Prefix>10.10.10.0/24</ipv4Prefix>
         <ipv4DnsServer>10.10.0.1</ipv4DnsServer>
         <ipv4DnsServer>10.10.0.2</ipv4DnsServer>
-        <dnsSuffix>corp.contoso.com</dnsSuffix> 
-    </signal> 
+        <dnsSuffix>corp.contoso.com</dnsSuffix>
+    </signal>
 </rule>
 ```
 
@@ -291,10 +291,10 @@ The following example configures an **IpConfig** signal type using a **dnsSuffix
 >Separate each rule element using a comma.
 
 ```xml
-<rule schemaVersion="1.0"> 
-    <signal type="ipConfig"> 
-        <dnsSuffix>corp.contoso.com</dnsSuffix> 
-    </signal> 
+<rule schemaVersion="1.0">
+    <signal type="ipConfig">
+        <dnsSuffix>corp.contoso.com</dnsSuffix>
+    </signal>
 </rule>,
 <rule schemaVersion="1.0">
     <signal type="bluetooth" scenario="Authentication" classOfDevice="512" rssiMin="-10" rssiMaxDelta="-10"/>
@@ -310,7 +310,7 @@ The following example configures the same as example 2 using compounding `and` e
 <and>
   <signal type="ipConfig">
    <dnsSuffix>corp.microsoft.com</dnsSuffix>
-  </signal> 
+  </signal>
   <signal type="bluetooth" scenario="Authentication" classOfDevice="512" rssiMin="-10" rssiMaxDelta="-10"/>
 </and>
 </rule>
@@ -382,7 +382,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 ---
 
 >[!IMPORTANT]
->You should remove all third party credential providers to ensure users cannot unlock their devices if they do not have the required factors. The fall back options are to use passwords or smart cards (both of which could be disabled as needed).
+>You should remove all non-Microsoft credential providers to ensure users cannot unlock their devices if they do not have the required factors. The fall back options are to use passwords or smart cards (both of which could be disabled as needed).
 
 ## User experience
 

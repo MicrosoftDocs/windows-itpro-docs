@@ -7,7 +7,7 @@ ms.topic: article
 
 # Firewall and network protection
 
-The **Firewall & network protection** section contains information about the firewalls and network connections used by the machine, including the status of Windows Defender Firewall and any other third-party firewalls. IT administrators and IT pros can get configuration guidance from the [Windows Defender Firewall with Advanced Security documentation library](../../network-security/windows-firewall/index.md).
+The **Firewall & network protection** section contains information about the firewalls and network connections used by the machine, including the status of Windows Defender Firewall and any other non-Microsoft firewalls. IT administrators and IT pros can get configuration guidance from the [Windows Defender Firewall with Advanced Security documentation library](../../network-security/windows-firewall/index.md).
 
 This section can be hidden from users of the machine. This information is useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
 

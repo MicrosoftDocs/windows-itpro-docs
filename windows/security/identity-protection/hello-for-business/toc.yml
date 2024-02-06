@@ -3,7 +3,7 @@ items:
   href: index.md
 - name: How Windows Hello for Business works
   items:
-    - name: Core concepts 
+    - name: Core concepts
       href: how-it-works.md
     - name: How device registration works 🔗
       href: /entra/identity/devices/device-registration-how-it-works
@@ -15,12 +15,12 @@ items:
   href: configure.md
 - name: Deployment guides
   href: deploy/toc.yml
-- name: How-to-guides
+- name: How-to guides
   items:
   - name: Configure PIN reset
     href: pin-reset.md
   - name: Configure dual enrollment
-    href: hello-feature-dual-enrollment.md  
+    href: hello-feature-dual-enrollment.md
   - name: Configure dynamic lock
     href: hello-feature-dynamic-lock.md
   - name: Configure multi-factor unlock
@@ -42,4 +42,4 @@ items:
   - name: Windows Hello Enhanced Security Sign-in (ESS) 🔗
     href: /windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security
   - name: Frequently Asked Questions (FAQ)
-    href: faq.yml    
+    href: faq.yml

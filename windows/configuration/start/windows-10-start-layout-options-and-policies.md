@@ -3,6 +3,8 @@ title: Customize and manage the Windows 10 Start and taskbar layout
 description: On Windows devices, customize the start menu layout and taskbar using XML, group policy, provisioning package, or MDM policy. You can add pinned folders, add a start menu size, pin apps to the taskbar, and more.
 ms.topic: article
 ms.date: 08/05/2021
+appliesto:
+- ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ---
 
 # Customize the Start menu and taskbar layout on Windows 10 and later devices
@@ -183,19 +185,6 @@ In a clean install, if you apply a taskbar layout, only the following apps are p
 - Any default apps you don't remove
 
 After the layout is applied, users can pin more apps to the taskbar.
-
-### Taskbar configuration applied to Windows 10 upgrades
-
-When a device is upgraded to Windows 10, apps are already pinned to the taskbar. Some apps may have been pinned to the taskbar by a user, by a customized base image, or by using Windows unattended setup.
-
-On Windows 10 version 1607 and later, the new taskbar layout for upgrades apply the following behavior:
-
-- If users pinned apps to the taskbar, then those pinned apps remain. New apps are added to the right.
-- If users didn't pin any apps (they're pinned during installation or by policy), and the apps aren't in an updated layout file, then the apps are unpinned.
-- If a user didn't pin the app, and the app is in the updated layout file, then the app is pinned to the right.
-- New apps specified in updated layout file are pinned to right of user's pinned apps.
-
-[Learn how to configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md).
 
 ## Start layout configuration errors
 

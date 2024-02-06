@@ -14,17 +14,11 @@ App tiles are the Start screen tiles that represent and launch an app. A tile th
 - Status and updates from an important contact in a social app
 - A website in Microsoft Edge
 
-In a Start layout for Windows 10, version 1703, you can include secondary tiles for Microsoft Edge that display a custom image, rather than a tile with the standard Microsoft Edge logo.
-
 Suppose that the [Start layout that you export](customize-and-export-start-layout.md) had two secondary tiles, such as in the following image:
 
 ![tile for MSN and for a SharePoint site.](images/edge-with-logo.png)
 
-In prior versions of Windows 10, when you applied the Start layout to a device, the tiles would display as shown in the following image:
-
-![tile for MSN and for a SharePoint site with no logos.](images/edge-without-logo.png)
-
-In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutEdgeAssets` and the policy setting `ImportEdgeAssets`, the tiles will now display the same as they did on the device from which you exported the Start layout.
+By using the PowerShell cmdlet `export-StartLayoutEdgeAssets` and the policy setting `ImportEdgeAssets`, the tiles display the same as they did on the device from which you exported the Start layout.
 
 ![tile for MSN and for a SharePoint site.](images/edge-with-logo.png)
 
@@ -77,7 +71,6 @@ In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutE
    - Open `C:\Users\<username>\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState\PinnedTiles\21581260870\` and replace those images with your customized images.
 
 1. In Windows PowerShell, enter the following command:
-
 
     ```powershell
     Export-StartLayoutEdgeAssets assets.xml
@@ -137,7 +130,6 @@ The **export-StartLayout** and **export-StartLayoutEdgeAssets** cmdlets produce 
 1. When you create a provisioning package, you'll copy the text with the escape characters and paste it in the customizations.xml file for your project.
 
 #### Create a provisioning package that contains a customized Start layout
-
 
 
 Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](../provisioning-packages/provisioning-install-icd.md)
