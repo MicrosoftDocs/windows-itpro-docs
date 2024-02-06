@@ -84,8 +84,6 @@
         "ue-v//**/*.yml": "aczechowski"
       },
       "ms.author":{
-        "cortana-at-work//**/*.md": "aaroncz",
-        "cortana-at-work//**/*.yml": "aaroncz",
         "wcd//**/*.md": "aaroncz",
         "wcd//**/*.yml": "aaroncz",
         "ue-v//**/*.md": "aaroncz",
@@ -96,7 +94,6 @@
         "start//**/*.md": "ericpapa"
       },
       "ms.collection":{
-        "cortana-at-work//**/*.md": "tier3",
         "wcd//**/*.md": "must-keep",
         "ue-v//**/*.md": [
           "must-keep",
@@ -109,7 +106,6 @@
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
         ],
         "ue-v//**/*.md": "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
-        "cortana-at-work//**/*.md": "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
         "wcd//**/*.md": ""
       }
     },
