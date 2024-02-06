@@ -72,9 +72,12 @@
     },
     "fileMetadata": {
       "feedback_system": {
-        "ue-v/**/*.*": "None"
+        "ue-v/**/*.*": "None",
+        "cortana-at-work/**/*.*": "None"
       },
       "author":{
+        "cortana-at-work//**/*.md": "aczechowski",
+        "cortana-at-work//**/*.yml": "aczechowski",
         "wcd//**/*.md": "aczechowski",
         "wcd//**/*.yml": "aczechowski",
         "ue-v//**/*.md": "aczechowski",
@@ -102,7 +105,9 @@
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
         ],
-        "ue-v//**/*.md": "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
+        "ue-v//**/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
+        ],
         "wcd//**/*.md": ""
       }
     },
