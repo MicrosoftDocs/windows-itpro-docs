@@ -47,7 +47,7 @@ The grace period for both quality and feature updates starts its countdown from 
 
 > [!NOTE]
 > - When **Specify deadlines for automatic updates and restarts** is used, updates will be downloaded and installed as soon as they are offered. 
-> When **Specify deadlines for automatic updates and restarts** is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored.
+> - When **Specify deadlines for automatic updates and restarts** is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored.
 
 ## Policy setting overview for clients running Windows 11, version 21H2 and earlier
 
