@@ -50,7 +50,7 @@ Copilot is a consumer experience and has a daily limit on the number of chat que
 - The privacy statement for using Copilot follows the [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) including the product specific guidance in the Microsoft privacy statement for **Bing** under the **Search, Microsoft Edge, and artificial intelligence** section.
 
   > [!Note]
-  > Copilot doesn't have access to Microsoft 365 Apps data, such as email, calendar, or files using Microsoft Graph, unlike [Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-overview) which can be used in the Microsoft 365 apps.
+  > Copilot doesn't have access to Microsoft 365 Apps data, such as email, calendar, or files using Microsoft Graph, unlike [Microsoft Copilot with Graph-grounded chat](#microsoft-copilot-with-graph-grounded-chat).
 
 ### Copilot with commercial data protection
 
@@ -63,12 +63,12 @@ Copilot is a consumer experience and has a daily limit on the number of chat que
    - Microsoft 365 A1, A3, or A5 <!--8681034-->
        - Copilot with commercial data protection is limited to faculty and higher education students over 18 years of age
    - Office 365 A1, A3, or A5 <!--8681034-->
-       - Copilot with comercial data protection is limited to faculty and higher education students over 18 years of age
+       - Copilot with commercial data protection is limited to faculty and higher education students over 18 years of age
    - Microsoft 365 Business Standard
    - Microsoft 365 Business Premium
 
   > [!Note]
-  > Copilot with commercial data protection doesn't have access to Microsoft 365 Apps data, such as email, calendar, or files using Microsoft Graph, unlike [Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-overview) which can be used in the Microsoft 365 apps.
+  > Copilot with commercial data protection doesn't have access to Microsoft 365 Apps data, such as email, calendar, or files using Microsoft Graph, unlike [Microsoft Copilot with Graph-grounded chat](#microsoft-copilot-with-graph-grounded-chat).
 
 ### Microsoft Copilot with Graph-grounded chat
 <!---8639813-->
@@ -101,9 +101,9 @@ To verify that Copilot with commercial data protection is enabled for the user a
    - Microsoft 365 E3 or E5
    - Microsoft 365 F3 <!--8681080, 8681034-->
    - Microsoft 365 A1, A3, or A5 
-     - Copilot with comercial data protection is limited to faculty and higher education students over 18 years of age <!--8681034-->
+     - Copilot with commercial data protection is limited to faculty and higher education students over 18 years of age <!--8681034-->
    - Office 365 A1, A3, or A5 <!--8681034-->
-      - Copilot with comercial data protection is limited to faculty and higher education students over 18 years of age <!--8681034-->
+      - Copilot with commercial data protection is limited to faculty and higher education students over 18 years of age <!--8681034-->
    - Microsoft 365 Business Standard
    - Microsoft 365 Business Premium
 1. To verify that commercial data protection is enabled for the user, select the user's **Display name** to open the flyout menu.
