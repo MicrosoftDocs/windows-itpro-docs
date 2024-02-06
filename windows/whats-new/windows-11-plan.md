@@ -38,7 +38,7 @@ As a first step, you'll need to know which of your current devices meet the Wind
 
 Microsoft is currently developing analysis tools to help you evaluate your devices against the Windows 11 hardware requirements. When Windows 11 reaches general availability, users running Windows 10 Home, Pro, and Pro for Workstations will be able to use the [PC Health Check](https://www.microsoft.com/windows/windows-11#pchealthcheck) app to determine their eligibility for Windows 11. Users running Windows 10 Enterprise and Education editions should rely on their IT administrators to let them know when they're eligible for the upgrade.  
  
-**Enterprise organizations** looking to evaluate device readiness in their environments can expect this capability to be integrated into existing Microsoft tools, such as Endpoint analytics and Update Compliance. This capability will be available when Windows 11 is generally available. Microsoft is also working with software publishing partners to facilitate adding Windows 11 device support into their solutions. 
+Enterprise organizations looking to evaluate device readiness in their environments can expect this capability to be integrated into existing Microsoft tools, such as Endpoint analytics and Update Compliance. This capability will be available when Windows 11 is generally available. Microsoft is also working with software publishing partners to facilitate adding Windows 11 device support into their solutions. 
 
 ## Windows 11 availability
 
