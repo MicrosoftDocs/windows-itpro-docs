@@ -1,37 +1,27 @@
 ---
-title: Maps (Windows 10)
+title: Maps
 description: This section describes the Maps settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
 ms.topic: reference
-ms.collection: must-keep
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
-ms.date: 12/31/2017
+ms.date: 01/25/2024
 ---
 
 # Maps (Windows Configuration Designer reference)
 
-Use for settings related to Maps. 
+Use for settings related to Maps.
 
 ## Applies to
 
-| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: |
-| [ChinaVariantWin10](#chinavariantwin10) | ✔️  | ✔️ |  |  |
-| [UseExternalStorage](#useexternalstorage) | ✔️  | ✔️ |  |  |
-| [UseSmallerCache](#usesmallercache) | ✔️  | ✔️ |  |  |
-
+| Setting | Windows client | Surface Hub | HoloLens | IoT Core |
+|--|:-:|:-:|:-:|:-:|
+| [ChinaVariantWin10](#chinavariantwin10) | ✅ | ✅ |  |  |
+| [UseExternalStorage](#useexternalstorage) | ✅ | ✅ |  |  |
+| [UseSmallerCache](#usesmallercache) | ✅ | ✅ |  |  |
 
 ## ChinaVariantWin10
 
 Use **ChinaVariantWin10** to specify that the Windows device is intended to ship in China. When set to **True**, maps approved by the State Bureau of Surveying and Mapping in China are used. These maps are obtained from a server located in China.
 
 This customization may result in different maps, servers, or other configuration changes on the device.
-
 
 ## UseExternalStorage
 

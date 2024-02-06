@@ -267,7 +267,7 @@ Resource URI for which access is being requested by the Mopria discovery client 
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This policy must target ./User, otherwise it fails.
 
-The default value is an empty string. Otherwise, the value should contain a URL. 
+The default value is an empty string. Otherwise, the value should contain a URL.
 
 **Example**:
 

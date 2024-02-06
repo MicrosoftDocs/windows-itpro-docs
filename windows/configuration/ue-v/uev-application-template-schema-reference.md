@@ -1,23 +1,11 @@
 ---
 title: Application Template Schema Reference for UE-V
 description: Learn details about the XML structure of the UE-V settings location templates and learn how to edit these files.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
-ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
+ms.date: 1/25/2024
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Application Template Schema Reference for UE-V
-
-**Applies to**
--   Windows 10, version 1607
 
 User Experience Virtualization (UE-V) uses XML settings location templates to define the desktop application settings and Windows settings that are captured and applied by UE-V. UE-V includes a set of default settings location templates. You can also create custom settings location templates with the UE-V template generator.
 
@@ -25,39 +13,26 @@ An advanced user can customize the XML file for a settings location template. Th
 
 ## UE-V Application Template Schema Reference
 
-
 This section details the XML structure of the UE-V settings location template and provides guidance for editing this file.
 
 ### In This Section
 
--   [XML Declaration and Encoding Attribute](#xml21)
-
--   [Namespace and Root Element](#namespace21)
-
--   [Data types](#data21)
-
--   [Name Element](#name21)
-
--   [ID Element](#id21)
-
--   [Version Element](#version21)
-
--   [Author Element](#author21)
-
--   [Processes and Process Element](#processes21)
-
--   [Application Element](#application21)
-
--   [Common Element](#common21)
-
--   [SettingsLocationTemplate Element](#settingslocationtemplate21)
-
--   [Appendix: SettingsLocationTemplate.xsd](#appendix21)
+- [XML Declaration and Encoding Attribute](#xml21)
+- [Namespace and Root Element](#namespace21)
+- [Data types](#data21)
+- [Name Element](#name21)
+- [ID Element](#id21)
+- [Version Element](#version21)
+- [Author Element](#author21)
+- [Processes and Process Element](#processes21)
+- [Application Element](#application21)
+- [Common Element](#common21)
+- [SettingsLocationTemplate Element](#settingslocationtemplate21)
+- [Appendix: SettingsLocationTemplate.xsd](#appendix21)
 
 ### <a href="" id="xml21"></a>XML Declaration and Encoding Attribute
 
 **Mandatory: True**
-
 **Type: String**
 
 The XML declaration must specify the XML version 1.0 attribute (&lt;?xml version="1.0"&gt;). Settings location templates created by the UE-V template generator are saved in UTF-8 encoding, although the encoding isn't explicitly specified. We recommend that you include the encoding="UTF-8" attribute in this element as a best practice. All templates included with the product specify this tag as well (see the documents in %ProgramFiles%\\Microsoft User Experience Virtualization\\Templates for reference). For example:
@@ -67,7 +42,6 @@ The XML declaration must specify the XML version 1.0 attribute (&lt;?xml version
 ### <a href="" id="namespace21"></a>Namespace and Root Element
 
 **Mandatory: True**
-
 **Type: String**
 
 UE-V uses the `https://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate` namespace for all applications. SettingsLocationTemplate is the root element and contains all other elements. Reference SettingsLocationTemplate in all templates using this tag:
@@ -127,7 +101,7 @@ Path is consumed by RegistrySetting and FileSetting to refer to registry and fil
 
 Recursive indicates that the path and all subfolders are included for file settings or that all child registry keys are included for registry settings. In both cases, all items at the current level are included in the data captured. For a FileSettings object, all files within the specified folder are included in the data captured by UE-V but folders aren't included. For registry paths, all values in the current path are captured but child registry keys aren't captured. In both cases, care should be taken to avoid capturing large data sets or large numbers of items.
 
-The DeleteIfNotFound attribute removes the setting from the user’s settings storage path data. This removal may be desirable in cases where removing these settings from the package will save a large amount of disk space on the settings storage path file server.
+The DeleteIfNotFound attribute removes the setting from the user's settings storage path data. This removal may be desirable in cases where removing these settings from the package will save a large amount of disk space on the settings storage path file server.
 
 <a href="" id="filemask"></a>**FileMask**
 FileMask specifies only certain file types for the folder that is defined by Path. For example, Path might be `C:\users\username\files` and FileMask could be `*.txt` to include only text files.
@@ -144,28 +118,24 @@ Settings is a container for all the settings that apply to a particular template
 |Element|Description|
 |--- |--- |
 |Asynchronous|Asynchronous settings packages are applied without blocking the application startup so that the application start proceeds while the settings are still being applied. This element is useful for settings that can be applied asynchronously, such as those settings get/set through an API, like SystemParameterSetting.|
-|PreventOverlappingSynchronization|By default, UE-V only saves settings for an application when the last instance of an application using the template is closed. When this element is set to ‘false’, UE-V exports the settings even if other instances of an application are running. Suited templates – those templates that include a Common element section– that are shipped with UE-V use this flag to enable shared settings to always export on application close, while preventing application-specific settings from exporting until the last instance is closed.|
+|PreventOverlappingSynchronization|By default, UE-V only saves settings for an application when the last instance of an application using the template is closed. When this element is set to 'false', UE-V exports the settings even if other instances of an application are running. Suited templates - those templates that include a Common element section– that are shipped with UE-V use this flag to enable shared settings to always export on application close, while preventing application-specific settings from exporting until the last instance is closed.|
 |AlwaysApplySettings|This parameter forces an imported settings package to be applied even if there are no differences between the package and the current state of the application. This parameter should be used only in special cases since it can slow down settings import.|
 
 ### <a href="" id="name21"></a>Name Element
 
 **Mandatory: True**
-
 **Type: String**
 
 Name specifies a unique name for the settings location template. This name is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. In general, avoid referencing version information, as this referencing can be objected from the ProductVersion element. For example, specify `<Name>My Application</Name>` rather than `<Name>My Application 1.1</Name>`.
 
 > [!NOTE]
-> UE-V does not reference external DTDs, so it's not possible to use named entities in a settings location template. For example, do not use &reg; to refer to the registered trade mark sign ®. Instead, use canonical numbered references to include these types of special characters, for example, &\#174 for the ® character. This rule applies to all string values in this document.
+> UE-V does not reference external DTDs, so it's not possible to use named entities in a settings location template. For example, do not use &reg; to refer to the registered trade mark sign &reg;. Instead, use canonical numbered references to include these types of special characters, for example, &\#174 for the &reg; character. This rule applies to all string values in this document.
 
 See <http://www.w3.org/TR/xhtml1/dtds.html> for a complete list of character entities. UTF-8-encoded documents may include the Unicode characters directly. Saving templates through the UE-V template generator converts character entities to their Unicode representations automatically.
-
- 
 
 ### <a href="" id="id21"></a>ID Element
 
 **Mandatory: True**
-
 **Type: String**
 
 ID populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V service uses to reference the template at runtime (for example, see the output of the Get-UevTemplate and Get-UevTemplateProgram PowerShell cmdlets). By convention, this tag shouldn't contain any spaces, which simplifies scripting. Version numbers of applications should be specified in this element to allow for easy identification of the template, such as `<ID>MicrosoftOffice2016Win64</ID>`.
@@ -173,11 +143,8 @@ ID populates a unique identifier for a particular template. This tag becomes the
 ### <a href="" id="version21"></a>Version Element
 
 **Mandatory: True**
-
 **Type: Integer**
-
 **Minimum Value: 0**
-
 **Maximum Value: 2147483647**
 
 Version identifies the version of the settings location template for administrative tracking of changes. The UE-V template generator automatically increments this number by one each time the template is saved. Notice that this field must be a whole number integer; fractional values, such as `<Version>2.5</Version>` aren't allowed.
@@ -200,18 +167,13 @@ Version identifies the version of the settings location template for administrat
 > [!IMPORTANT]
 > This value is queried to determine if a new version of a template should be applied to an existing template in these instances:
 
--   When the scheduled Template Auto Update task executes
-
--   When the Update-UevTemplate PowerShell cmdlet is executed
-
--   When the microsoft\\uev:SettingsLocationTemplate Update method is called through WMI
-
- 
+- When the scheduled Template Auto Update task executes
+- When the Update-UevTemplate PowerShell cmdlet is executed
+- When the microsoft\\uev:SettingsLocationTemplate Update method is called through WMI
 
 ### <a href="" id="author21"></a>Author Element
 
 **Mandatory: False**
-
 **Type: String**
 
 Author identifies the creator of the settings location template. Two optional child elements are supported: **Name** and **Email**. Both attributes are optional, but, if the Email child element is specified, it must be accompanied by the Name element. Author refers to the full name of the contact for the settings location template, and email should refer to an email address for the author. We recommend that you include this information in templates published publicly.
@@ -219,7 +181,6 @@ Author identifies the creator of the settings location template. Two optional ch
 ### <a href="" id="processes21"></a>Processes and Process Element
 
 **Mandatory: True**
-
 **Type: Element**
 
 Processes contain at least one `<Process>` element, which in turn contains the following child elements: **Filename**, **Architecture**, **ProductName**, **FileDescription**, **ProductVersion**, and **FileVersion**. The Filename child element is mandatory and the others are optional. A fully populated element contains tags similar to this example:
@@ -231,16 +192,16 @@ Processes contain at least one `<Process>` element, which in turn contains the f
   <ProductName> MyApplication </ProductName>
   <FileDescription>MyApplication.exe</FileDescription>
   <ProductVersion>
-	<Major Minimum="2" Maximum="2" />
-	<Minor Minimum="0" Maximum="0" />
-	<Build Minimum="0" Maximum="0" />
-	<Patch Minimum="5" Maximum="5" />
+    <Major Minimum="2" Maximum="2" />
+    <Minor Minimum="0" Maximum="0" />
+    <Build Minimum="0" Maximum="0" />
+    <Patch Minimum="5" Maximum="5" />
   </ProductVersion>
   <FileVersion>
-	<Major Minimum="2" Maximum="2" />
-	<Minor Minimum="0" Maximum="0" />
-	<Build Minimum="0" Maximum="0" />
-	<Patch Minimum="5" Maximum="5" />
+    <Major Minimum="2" Maximum="2" />
+    <Minor Minimum="0" Maximum="0" />
+    <Build Minimum="0" Maximum="0" />
+    <Patch Minimum="5" Maximum="5" />
   </FileVersion>
 </Process>
 ```
@@ -248,7 +209,6 @@ Processes contain at least one `<Process>` element, which in turn contains the f
 ### Filename
 
 **Mandatory: True**
-
 **Type: String**
 
 Filename refers to the actual file name of the executable as it appears in the file system. This element specifies the primary criterion that UE-V uses to evaluate whether a template applies to a process or not. This element must be specified in the settings location template XML.
@@ -262,40 +222,31 @@ Valid filenames must not match the regular expression \[^\\\\\\?\\\*\\|&lt;&gt;/
 
 A value of **True** indicates that the string contains illegal characters. Here are some examples of illegal values:
 
--   \\\\server\\share\\program.exe
-
--   Program\*.exe
-
--   Pro?ram.exe
-
--   Program&lt;1&gt;.exe
+- \\\\server\\share\\program.exe
+- Program\*.exe
+- Pro?ram.exe
+- Program&lt;1&gt;.exe
 
 > [!NOTE]
 > The UE-V template generator encodes the greater than and less than characters as &gt; and &lt; respectively.
 
- 
-
-In rare circumstances, the FileName value won't necessarily include the .exe extension, but it should be specified as part of the value. For example, `<Filename>MyApplication.exe</Filename>` should be specified instead of `<Filename>MyApplication</Filename>`. The second example won't apply the template to the process if the actual name of the executable file is “MyApplication.exe”.
+In rare circumstances, the FileName value won't necessarily include the .exe extension, but it should be specified as part of the value. For example, `<Filename>MyApplication.exe</Filename>` should be specified instead of `<Filename>MyApplication</Filename>`. The second example won't apply the template to the process if the actual name of the executable file is "MyApplication.exe".
 
 ### Architecture
 
 **Mandatory: False**
-
 **Type: Architecture (String)**
 
 Architecture refers to the processor architecture for which the target executable was compiled. Valid values are Win32 for 32-bit applications or Win64 for 64-bit applications. If present, this tag limits the applicability of the settings location template to a particular application architecture. For an example of this applicability restriction, compare the %ProgramFiles%\\Microsoft User Experience Virtualization\\templates\\ MicrosoftOffice2016Win32.xml and MicrosoftOffice2016Win64.xml files included with UE-V. This applicability restriction is useful when relative paths change between different versions of an executable or if settings have been added or removed when moving from one processor architecture to another.
 
-If this element is absent, the settings location template ignores the process’ architecture and applies to both 32-bit and 64-bit processes if the file name and other attributes apply.
+If this element is absent, the settings location template ignores the process' architecture and applies to both 32-bit and 64-bit processes if the file name and other attributes apply.
 
 > [!NOTE]
 > UE-V does not support ARM processors in this version.
 
- 
-
 ### ProductName
 
 **Mandatory: False**
-
 **Type: String**
 
 ProductName is an optional element used to identify a product for administrative purposes or reporting. ProductName differs from Filename in that there are no regular expression restrictions on its value. This flexibility allows for more easily understood descriptions of a process where the executable name may not be obvious. For example:
@@ -305,7 +256,7 @@ ProductName is an optional element used to identify a product for administrative
   <Filename>MyApplication.exe</Filename>
   <ProductName>My Application 6.x by Contoso.com</ProductName>
   <ProductVersion>
-	<Major Minimum="6" Maximum="6" />
+    <Major Minimum="6" Maximum="6" />
   </ProductVersion>
 </Process>
 ```
@@ -313,7 +264,6 @@ ProductName is an optional element used to identify a product for administrative
 ### FileDescription
 
 **Mandatory: False**
-
 **Type: String**
 
 FileDescription is an optional tag that allows for an administrative description of the executable file. This tag is a free text field and can be useful in distinguishing multiple executables within a software package where there's a need to identify the function of the executable.
@@ -343,7 +293,6 @@ For example, in a suited application, it might be useful to provide reminders ab
 ### ProductVersion
 
 **Mandatory: False**
-
 **Type: String**
 
 ProductVersion refers to the major and minor product versions of a file, as well as a build and patch level. ProductVersion is an optional element, but if specified, it must contain at least the Major child element. The value must express a range in the form Minimum="X" Maximum="Y" where X and Y are integers. The Minimum and Maximum values can be identical.
@@ -397,7 +346,6 @@ Only the Minor element is present. Major must be included as well.
 ### FileVersion
 
 **Mandatory: False**
-
 **Type: String**
 
 FileVersion differentiates between the release version of a published application and the internal build details of a component executable. For most of the commercial applications, these numbers are identical. Where they vary, the product version of a file indicates a generic version identification of a file, while file version indicates a specific build of a file (as in the example of a hotfix or update). This file version uniquely identifies files without breaking detection logic.
@@ -436,11 +384,10 @@ Application is a container for settings that apply to a particular application. 
 |LocalizedDescriptions|An optional template description localized by a language locale.|
 |Version|Identifies the version of the settings location template for administrative tracking of changes. For more information, see [Version](#version21).|
 |DeferToMSAccount|Controls whether this template is enabled in conjunction with a Microsoft account or not. If MSA syncing is enabled for a user on a machine, then this template will automatically be disabled.|
-|DeferToOffice365|Similar to MSA, this type controls whether this template is enabled in conjunction with Office365. If Office 365 is being used to sync settings, this template will automatically be disabled.|
+|DeferToOffice365|Similar to MSA, this type controls whether this template is enabled in conjunction with Office361. If Office 365 is being used to sync settings, this template will automatically be disabled.|
 |FixedProfile|Specifies that this template can only be associated with the profile specified within this element, and can't be changed via WMI or PowerShell.|
 |Processes|A container for a collection of one or more Process elements. For more information, see [Processes](#processes21).|
 |Settings|A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see **Settings** in [Data types](#data21)".|
-
 
 ### <a href="" id="common21"></a>Common Element
 
@@ -455,7 +402,7 @@ Common is similar to an Application element, but it's always associated with two
 |LocalizedDescriptions|An optional template description localized by a language locale.|
 |Version|Identifies the version of the settings location template for administrative tracking of changes. For more information, see [Version](#version21).|
 |DeferToMSAccount|Controls whether this template is enabled in conjunction with a Microsoft account or not. If MSA syncing is enabled for a user on a machine, then this template will automatically be disabled.|
-|DeferToOffice365|Similar to MSA, this type controls whether this template is enabled in conjunction with Office365. If Office 365 is being used to sync settings, this template will automatically be disabled.|
+|DeferToOffice365|Similar to MSA, this type controls whether this template is enabled in conjunction with Office361. If Office 365 is being used to sync settings, this template will automatically be disabled.|
 |FixedProfile|Specifies that this template can only be associated with the profile specified within this element, and can't be changed via WMI or PowerShell.|
 |Settings|A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see **Settings** in [Data types](#data21).|
 
@@ -470,7 +417,6 @@ This element defines the settings for a single application or a suite of applica
 |Description|An optional description of the template.|
 |LocalizedNames|An optional name displayed in the UI, localized by a language locale.|
 |LocalizedDescriptions|An optional template description localized by a language locale.|
-
 
 ### <a href="" id="appendix21"></a>Appendix: SettingsLocationTemplate.xsd
 
@@ -749,7 +695,6 @@ Here's the SettingsLocationTemplate.xsd file showing its elements, child element
         </xs:sequence>
     </xs:complexType>
 
-
     <xs:element name="SettingsLocationTemplate">
         <xs:complexType>
             <xs:sequence>
@@ -793,12 +738,7 @@ Here's the SettingsLocationTemplate.xsd file showing its elements, child element
 </xs:schema>
 ```
 
-
-
-
-
 ## Related topics
 
 [Working with Custom UE-V Templates and the UE-V Template Generator](uev-working-with-custom-templates-and-the-uev-generator.md)
-
 [Technical Reference for UE-V](uev-technical-reference.md)
