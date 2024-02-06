@@ -98,17 +98,6 @@ To validate a UE-V settings location template with the UE-V template generator:
 
     After you validate the settings location template for an application, you should test the template. Deploy the template in a lab environment before you put it into a production environment in enterprise.
 
-## Next steps
-
-## <a href="" id="share"></a>Share settings location templates with the Template Gallery
-
-Before you share a settings location template on the UE-V template gallery, ensure it doesn't contain any personal or company information. You can use any XML viewer to open and view the contents of a settings location template file. The following template values should be reviewed before you share a template with anyone outside your company.
-
-- Template Author Name - Specify a general, non-identifying name for the template author name or exclude this data from the template.
-- Template Author Email - Specify a general, non-identifying template author email or exclude this data from the template.
-
-Before you deploy any settings location template that you've downloaded from the UE-V gallery, you should first test the template to ensure that the application settings synchronize settings correctly in a test environment.
-
 ## Related topics
 
 [Administering UE-V](uev-administering-uev.md)
