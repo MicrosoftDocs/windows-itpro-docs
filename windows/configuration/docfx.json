@@ -72,12 +72,9 @@
     },
     "fileMetadata": {
       "feedback_system": {
-        "ue-v/**/*.*": "None",
-        "cortana-at-work/**/*.*": "None"
+        "ue-v/**/*.*": "None"
       },
       "author":{
-        "cortana-at-work//**/*.md": "aczechowski",
-        "cortana-at-work//**/*.yml": "aczechowski",
         "wcd//**/*.md": "aczechowski",
         "wcd//**/*.yml": "aczechowski",
         "ue-v//**/*.md": "aczechowski",
