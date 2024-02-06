@@ -46,6 +46,7 @@ The deadline calculation for both quality and feature updates is based off the t
 The grace period for both quality and feature updates starts its countdown from the time of a pending restart after the installation is complete. As soon as installation is complete and the device reaches pending restart, users are able to schedule restarts during the grace period and Windows can still automatically restart outside of active hours if users choose not to schedule restarts. Once the *effective deadline* is reached, the device tries to restart during active hours. (The effective deadline is whichever is the later of the restart pending date plus the specified deadline or the restart pending date plus the grace period.) Grace periods are useful for users who may be coming back from vacation, or other extended time away from their device, to ensure a forced reboot doesn't occur immediately after they return.
 
 > [!NOTE]
+> When **Specify deadlines for automatic updates and restarts** is used, update will be downloaded and installed as soon as they are offered. 
 > When **Specify deadlines for automatic updates and restarts** is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored.
 
 ## Policy setting overview for clients running Windows 11, version 21H2 and earlier
