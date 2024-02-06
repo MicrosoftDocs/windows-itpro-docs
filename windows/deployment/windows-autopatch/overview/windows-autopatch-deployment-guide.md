@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: hathind
 ms.collection:
   - tier2
@@ -35,7 +35,7 @@ This guide:
 
 ## Determine your objectives
 
-This section details some common objectives when using Windows Autopatch.  
+This section details some common objectives when using Windows Autopatch.
 
 Once an organization is onboarded, Windows Autopatch automatically creates multiple progressive deployment rings and applies the latest updates according to Windows Autopatch recommended practices and your organization's custom configuration. While there are options to adjust configurations such as quality update cadence, the service provides you with a baseline to begin establishing your update objectives.
 
@@ -46,7 +46,7 @@ Use Windows Autopatch to solve the following challenges:
 - Achieving a consistent update success rate
 - Standardize and optimize the configuration for devices, policies, tools and versions across their environment
 - Transition to modern update management by configuring Intune and Windows Update for Business
-- Make update processes more efficient and less reliant on IT admin resources  
+- Make update processes more efficient and less reliant on IT admin resources
 - Address vulnerabilities and Windows quality updates as soon as possible to improve security
 - Assist with compliance to align with industry standards
 - Invest more time on value-add IT projects rather than monthly updates
@@ -112,7 +112,7 @@ If you're an existing Windows Update for Business (WUfB) or Configuration Manage
 
 Customers who are using Windows Update for Business (WUfB) or Configuration Manager can quickly adopt Windows Autopatch and take advantage of the key benefits that Windows Autopatch provides.
 
-When moving from Windows Update for Business (WUfB) or Configuration Manager to Windows Autopatch, you can enhance and optimize the update experience that you're already familiar with.  
+When moving from Windows Update for Business (WUfB) or Configuration Manager to Windows Autopatch, you can enhance and optimize the update experience that you're already familiar with.
 
 Once migrated, there are several configuration tasks that you no longer need to carry out:
 
@@ -180,7 +180,7 @@ When you migrate from Configuration Manager to Windows Autopatch, the fastest pa
 | **1** | Turn on co-management | If you're using co-management across Configuration Manager and your managed devices, you meet the key requirements to use Windows Autopatch.<br><br>If you don't have co-management, see [How to use co-management in Configuration Manager](/mem/configmgr/comanage/how-to-enable) |
 | **2** | Use required co-management workloads | Using Windows Autopatch requires that your managed devices use the following three co-management workloads:<ul><li>Windows Update policies workload</li><li>Device configuration workload</li><li>Office Click-to-Run apps workload</li></ul><br>If you have these workloads configured, you meet the key requirements to use Windows Autopatch. If you don't have these workloads configured, review [How to switch Configuration Manager workloads to Intune](/mem/configmgr/comanage/how-to-switch-workloads) |
 | **3** | Prepare your policies | You should consider any existing policy configurations in your Configuration Manager (or on-premises) environment that could impact your deployment of Windows Autopatch. For more information, review [General considerations](#general-considerations) |
-| **4** | Ensure Configuration Manager collections or Microsoft Entra device groups readiness | To move devices to Windows Autopatch, you must register devices with the Windows Autopatch service. To do so, use either Microsoft Entra device groups, or Configuration Manager collections. Ensure you have either Microsoft Entra device groups or Configuration Manager collections that allow you to evaluate, pilot and then migrate to the Windows Autopatch service. For more information, see [Register your devices](../deploy/windows-autopatch-register-devices.md#before-you-begin). |  
+| **4** | Ensure Configuration Manager collections or Microsoft Entra device groups readiness | To move devices to Windows Autopatch, you must register devices with the Windows Autopatch service. To do so, use either Microsoft Entra device groups, or Configuration Manager collections. Ensure you have either Microsoft Entra device groups or Configuration Manager collections that allow you to evaluate, pilot and then migrate to the Windows Autopatch service. For more information, see [Register your devices](../deploy/windows-autopatch-register-devices.md#before-you-begin). |
 
 ### Optimized deployment path: Configuration Manager to Windows Autopatch
 
@@ -196,7 +196,7 @@ Once you have assessed your readiness state to ensure you're aligned to Windows 
 
 ## General considerations
 
-As part of your planning process, you should consider any existing enterprise configurations in your environment that could affect your deployment of Windows Autopatch.  
+As part of your planning process, you should consider any existing enterprise configurations in your environment that could affect your deployment of Windows Autopatch.
 
 Many organizations have existing policies and device management infrastructure, for example:
 
@@ -271,7 +271,7 @@ For example, Configuration Manager Software Update Policy settings exclude Autop
 
 #### Servicing profiles for Microsoft 365 Apps for enterprise
 
-You can use automation to deliver monthly updates to Microsoft 365 Apps for enterprise directly from the Office Content Delivery Network (CDN) using [Servicing profiles](/windows/deployment/windows-autopatch/operate/windows-autopatch-microsoft-365-apps-enterprise#compatibility-with-servicing-profiles). A servicing profile takes precedence over other policies, such as a Microsoft Intune policy or the Office Deployment Tool. The servicing profile affects all devices that meet the [device eligibility requirements](/windows/deployment/windows-autopatch/operate/windows-autopatch-microsoft-365-apps-enterprise#device-eligibility) regardless of existing management tools in your environment.  
+You can use automation to deliver monthly updates to Microsoft 365 Apps for enterprise directly from the Office Content Delivery Network (CDN) using [Servicing profiles](/windows/deployment/windows-autopatch/operate/windows-autopatch-microsoft-365-apps-enterprise#compatibility-with-servicing-profiles). A servicing profile takes precedence over other policies, such as a Microsoft Intune policy or the Office Deployment Tool. The servicing profile affects all devices that meet the [device eligibility requirements](/windows/deployment/windows-autopatch/operate/windows-autopatch-microsoft-365-apps-enterprise#device-eligibility) regardless of existing management tools in your environment.
 
 You can consider retargeting servicing profiles to non-Windows Autopatch devices or if you plan to continue using them, you can [block Windows Autopatch delivered Microsoft 365 App updates](/windows/deployment/windows-autopatch/operate/windows-autopatch-microsoft-365-apps-enterprise#allow-or-block-microsoft-365-app-updates) for Windows Autopatch-enrolled devices.
 
@@ -286,14 +286,14 @@ Part of your planning might require articulating the business benefits of moving
 
 ## Stakeholder communications
 
-Change management relies on clear and helpful communication about upcoming changes. The best way to have a smooth deployment is to make sure end users and stakeholders are aware of all changes and disruptions. Your rollout communication plan should include all pertinent information, how to notify users, and when to communicate.  
+Change management relies on clear and helpful communication about upcoming changes. The best way to have a smooth deployment is to make sure end users and stakeholders are aware of all changes and disruptions. Your rollout communication plan should include all pertinent information, how to notify users, and when to communicate.
 
 - Identify groups impacted by the Autopatch deployment
 - Identify key stakeholders in the impacted groups
 - Determine the types of communications needed
 - Develop your messaging based on the [Recommended deployment steps](#recommended-deployment-steps)
 - Create your stakeholder and communication plan schedule based on the [Recommended deployment steps](#recommended-deployment-steps)
-- Have communications drafted and reviewed, and consider your delivery channels such as:  
+- Have communications drafted and reviewed, and consider your delivery channels such as:
     - Social media posts
     - Internal messaging app (for example, Microsoft Teams)
     - Internal team site
@@ -319,7 +319,7 @@ If you need assistance with your Windows Autopatch deployment journey, you have 
     - [Tenant enrollment support request](../prepare/windows-autopatch-enrollment-support-request.md)
     - [General support request](../operate/windows-autopatch-support-request.md)
 
-First contact your Microsoft Account team who can work with you to establish any guidance or support you might need. If you don't have a Microsoft Account Team contact or wish to explore other routes, Microsoft FastTrack offers Microsoft 365 deployment guidance for customers with 150 or more licenses of an eligible subscription at no additional cost. Finally, you can also log a support request with the Windows Autopatch Service Engineering Team.  
+First contact your Microsoft Account team who can work with you to establish any guidance or support you might need. If you don't have a Microsoft Account Team contact or wish to explore other routes, Microsoft FastTrack offers Microsoft 365 deployment guidance for customers with 150 or more licenses of an eligible subscription at no additional cost. Finally, you can also log a support request with the Windows Autopatch Service Engineering Team.
 
 ### Windows Autopatch Private Community (APC)
 
@@ -333,6 +333,6 @@ Once you're underway with your deployment, consider joining the [Windows Autopat
     - Teams discussions
     - Previews
 
-### Windows Autopatch Technology Adoption Program (TAP)  
+### Windows Autopatch Technology Adoption Program (TAP)
 
 If you have at least 500 devices enrolled in the service, and will test and give Microsoft feedback at least once a year, consider signing up to the [Windows Autopatch Technology Adoption Program (TAP)](https://aka.ms/JoinWindowsAutopatchTAP) to try out new and upcoming Windows Autopatch features.
