@@ -63,32 +63,20 @@ After you install the desired apps, set up AppLocker rules to only allow specifi
 In addition to specifying the apps that users can run, you should also restrict some settings and functions on the device. For a more secure experience, we recommend that you make the following configuration changes to the device:
 
 - Remove **All apps**.
-
     Go to **Group Policy Editor** &gt; **User Configuration** &gt; **Administrative Templates\\Start Menu and Taskbar\\Remove All Programs list from the Start menu**.
-
 - Hide **Ease of access** feature on the logon screen.
-
     Go to **Control Panel** &gt; **Ease of Access** &gt; **Ease of Access Center**, and turn off all accessibility tools.
-
 - Disable the hardware power button.
-
     Go to **Power Options** &gt; **Choose what the power button does**, change the setting to **Do nothing**, and then **Save changes**.
-
 - Disable the camera.
-
     Go to **Settings** &gt; **Privacy** &gt; **Camera**, and turn off **Let apps use my camera**.
-
 - Turn off app notifications on the lock screen.
-
     Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Logon\\Turn off app notifications on the lock screen**.
-
 - Disable removable media.
-
     Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Device Installation\\Device Installation Restrictions**. Review the policy settings available in **Device Installation Restrictions** for the settings applicable to your situation.
 
-    **Note**
-
-    To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**.
+    > [!NOTE]
+    > To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**.
 
 To learn more about locking down features, see [Customizations for Windows 10 Enterprise](/windows-hardware/customize/enterprise/enterprise-custom-portal).
 
