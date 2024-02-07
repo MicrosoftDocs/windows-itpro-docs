@@ -154,7 +154,7 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 1. In the **Let's set things up for your work or school** screen:
 
-    1. In the text **someone@example.com** box under **Sign in**, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username will be in the email format of user@domain.com.
+    1. In the **someone@example.com** text box under **Sign in**, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username will be in the email format of user@domain.com.
 
     1. In the **Password** text box under **Enter password**, enter the password for the Microsoft Entra user account, and then select the **Sign in** button.
 
@@ -166,41 +166,63 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 Once Windows Setup finishes, the user is automatically signed in and the device is Microsoft Entra joined to the organization's subscription.
 
-#### Join a device to Microsoft Entra ID when the device is already set up with Windows 10 Pro
+#### Join a device to Microsoft Entra ID when the device is already set up with Windows
+
+> [!IMPORTANT]
+>
+> Make sure that the user signing in isn't the **BUILTIN/Administrator** account. That user can't use the `+ Connect` action to join a work or school account.
 
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10)
 
-> [!IMPORTANT]
->
-> Make sure that the user signing in isn't the **BUILTIN/Administrator** account. That user can't use the `+ Connect` action to join a work or school account.
+1. Right click on the Start menu and select **Settings**.
 
-1. Go to **Settings**, select **Accounts**, and select **Access work or school**.
+1. In the **Settings** app, select **Accounts**.
 
-1. In **Set up a work or school account**, select **Join this device to Microsoft Entra ID**.
+1. In the left hand pane, select **Access work or school**.
 
-1. On the **Let's get you signed in** page, enter the Microsoft Entra credentials, and then select **Sign in**.
+1. **Access work or school** pane, select the **+** button next to **Connect**.
 
-Now the device is Microsoft Entra joined to the organization's subscription.
+1. In the **Microsoft account** window that opens:
+
+    1. In the **Set up a work or school account** page, select **Join this device to Microsoft Entra ID**.
+
+    1. In the **Email or phone** text box of the **Sign in** page, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username will be in the email format of user@domain.com.
+
+    1. In the **Password** text box of the **Enter password** page, enter the password for the Microsoft Entra user account, and then select the **Sign in** button.
+
+    1. When the **Make sure this is your organization** window opens, confirm the information is correct and then select the **Join** button.
+
+    1. The device will join the organization's Microsoft Entra subscription. Once complete, the **You're all set!** page is displayed. Select the **Done** button to complete the process.
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11)
 
-> [!IMPORTANT]
->
-> Make sure that the user signing in isn't the **BUILTIN/Administrator** account. That user can't use the `+ Connect` action to join a work or school account.
+1. Right click on the Start menu and select **Settings**.
 
-1. Go to **Settings**, select **Accounts**, and select **Access work or school**.
+1. In the **Settings** app, select **Accounts** in the left hand pane.
 
-1. In **Set up a work or school account**, select **Join this device to Microsoft Entra ID**.
+1. In the **Accounts** pane, select **Access work or school**.
 
-1. On the **Let's get you signed in** page, enter the Microsoft Entra credentials, and then select **Sign in**.
+1. In the **Accounts > Access work or school** pane, next to **Add a work or school account**, select the **Connect** button.
 
-Now the device is Microsoft Entra joined to the organization's subscription.
+1. In the **Microsoft account** window that opens:
+
+    1. In the **Set up a work or school account** page, select **Join this device to Microsoft Entra ID**.
+
+    1. In the **Email or phone** text box of the **Sign in** page, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username will be in the email format of user@domain.com.
+
+    1. In the **Password** text box of the **Enter password** page, enter the password for the Microsoft Entra user account, and then select the **Sign in** button.
+
+    1. When the **Make sure this is your organization** window opens, confirm the information is correct and then select the **Join** button.
+
+    1. The device will join the organization's Microsoft Entra ID subscription. Once complete, the **You're all set!** page is displayed. Select the **Done** button to complete the process.
+
+---
+
+The device is now Microsoft Entra joined to the organization's subscription.
 
 > [!TIP]
 >
 > Autopilot is only applicable during the first start of Windows when Windows undergoes Windows Setup. For the Autopilot experience when joining Microsoft Entra ID during Windows Setup, see [User-driven Microsoft Entra join: Deploy the device](/autopilot/tutorial/user-driven/azure-ad-join-deploy-device).
-
----
 
 ### Step 2: Pro edition activation
 
