@@ -112,19 +112,3 @@ reg query HKEY_CURRENT_USER\Software\Classes\ActivatableClasses\Package /s /f Ap
 ```
 
 ---
-
-## Second part
-
-[!INCLUDE [registry](../../../includes/tabs/registry.md)]
-
-test1
-
-[!INCLUDE [explorer](../../../includes/tabs/explorer.md)]
-
-test2
-
-[!INCLUDE [powershell](../../../includes/tabs/powershell.md)]
-
-test3
-
----
