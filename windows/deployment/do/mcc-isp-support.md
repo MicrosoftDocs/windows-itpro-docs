@@ -39,7 +39,6 @@ During sign-up, a verification code is sent to your NOC email address present in
 Delete any MCC resource that you're using before you resign up for the service. Deleting any existing MCC resource unlocks your ASN, which allows you to successfully sign up.
 
 
-
 ### Cache Node Errors  
 
 #### Network connectivity issues
