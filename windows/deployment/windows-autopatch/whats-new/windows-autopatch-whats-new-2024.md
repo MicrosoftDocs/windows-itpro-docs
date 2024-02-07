@@ -23,6 +23,8 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 ## February 2024
 
+## February service releases
+
 | Message center post number | Description |
 | ----- | ----- |
 | [MC713365](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned Maintenance: Service Improvements  |
