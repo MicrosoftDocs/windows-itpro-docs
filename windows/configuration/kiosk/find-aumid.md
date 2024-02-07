@@ -29,7 +29,7 @@ Get-StartApps
 >[!NOTE]
 >Applications that are not listed in the Start menu will not appear in the output of the **Get-StartApps** cmdlet.
 
-To get the names and AUMIDs for Windows Store apps installed for the current user, open a Windows PowerShell command prompt and enter the following commands:
+To get the names and AUMIDs for Microsoft Store apps installed for the current user, open a Windows PowerShell command prompt and enter the following commands:
 
 ```powershell
 $installedapps = Get-AppxPackage
@@ -110,5 +110,21 @@ At a command prompt, type the following command:
 ```cmd
 reg query HKEY_CURRENT_USER\Software\Classes\ActivatableClasses\Package /s /f AppUserModelID | find "REG_SZ"
 ```
+
+---
+
+## Second part
+
+[!INCLUDE [registry](../../../includes/tabs/registry.md)]
+
+test1
+
+[!INCLUDE [explorer](../../../includes/tabs/explorer.md)]
+
+test2
+
+[!INCLUDE [powershell](../../../includes/tabs/powershell.md)]
+
+test3
 
 ---
