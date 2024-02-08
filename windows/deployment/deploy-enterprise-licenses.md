@@ -111,8 +111,6 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 #### Join a device to Microsoft Entra ID the first time the device is started
 
-<!-- ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11) -->
-
 ::: zone pivot="windows-11"
 
 1. Power on the device for the first time to initiate Windows Setup.
@@ -143,8 +141,6 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 ::: zone-end
 
-<!-- ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10) -->
-
 ::: zone pivot="windows-10"
 
 1. Power on the device for the first time to initiate Windows Setup.
@@ -171,8 +167,6 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 ::: zone-end
 
-<!-- --- -->
-
 Once Windows Setup finishes, the user is automatically signed in and the device is Microsoft Entra joined to the organization's subscription.
 
 #### Join a device to Microsoft Entra ID when the device is already set up with Windows
@@ -180,8 +174,6 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 > [!IMPORTANT]
 >
 > Make sure that the user signing in isn't the **BUILTIN/Administrator** account. That user can't use the `+ Connect` action to join a work or school account.
-
-<!-- ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11) -->
 
 ::: zone pivot="windows-11"
 
@@ -207,8 +199,6 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 
 ::: zone-end
 
-<!-- ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10) -->
-
 ::: zone pivot="windows-10"
 
 1. Right click on the Start menu and select **Settings**.
@@ -233,8 +223,6 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 
 ::: zone-end
 
-<!-- --- -->
-
 The device is now Microsoft Entra joined to the organization's subscription.
 
 ### Step 2: Pro edition activation
@@ -247,11 +235,9 @@ Once the device is joined to Microsoft Entra ID, users sign in with their Micros
 
 ### Step 4: Verify that Enterprise edition is enabled
 
-<!-- ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11) -->
+To verify the Windows Enterprise E3 or E5 subscription:
 
 ::: zone pivot="windows-11"
-
-To verify the Windows Enterprise E3 or E5 subscription:
 
 1. Right click on the Start menu and select **Settings**.
 
@@ -259,17 +245,23 @@ To verify the Windows Enterprise E3 or E5 subscription:
 
 1. In the **System** pane, **Activation**.
 
-1. In the **System > Activation** pane, expand **Activation state** to see full details of the activation state and status.
+1. In the **System > Activation** pane, expand **Activation state** and **Subscription** to see full details of the activation state and status:
 
-1. Verify that both the Enterprise subscription is active and that Windows is activated.
+    1. Under **Activation state**, verify that Windows is activated. It should display the message:
+
+      `Windows is activated with a digital license`
+
+    1. Under **Subscription**, verify that the Windows 11 Enterprise subscription is active. It should display the message:
+
+      `Windows 11 Enterprise subscription is active`
+
+      > [!NOTE]
+      >
+      > If the Windows Enterprise subscription hasn't yet been applied, the **Subscription** pane isn't displayed.
 
 ::: zone-end
 
-<!-- ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10) -->
-
 ::: zone pivot="windows-10"
-
-To verify the Windows Enterprise E3 or E5 subscription:
 
 1. Right click on the Start menu and select **Settings**.
 
@@ -279,15 +271,21 @@ To verify the Windows Enterprise E3 or E5 subscription:
 
 1. In the **Activation** pane:
 
-    1. Next to **Subscription**, verify that the Enterprise subscription is active.
+    1. Next to **Subscription**, verify that the Windows 10 Enterprise subscription is active. It should display the message:
 
-    1. Next to **Activation**, make sure that Windows is activate.
+      `Windows Enterprise 10 subscription is active`
+
+      > [!NOTE]
+      >
+      > If the Windows Enterprise subscription hasn't yet been applied, the **Subscription** field isn't displayed.
+
+    1. Next to **Activation**, verify that Windows is activated. It should display the message:
+
+      `Windows is activated with a digital license`
 
 ::: zone-end
 
-<!-- --- -->
-
-If there are any problems with the Windows Enterprise E3 or E5 license or the activation of the license, the **Activation** pane displays the appropriate error message or status. This information can be used to help diagnose the licensing and activation process.
+Devices where both the subscription and activation are active are considered healthy. If there are any problems with the Windows Enterprise E3 or E5 license or the activation of the license, the **Activation** pane displays the appropriate error message or status. This information can be used to help diagnose the licensing and activation process.
 
 > [!NOTE]
 >
@@ -303,40 +301,42 @@ If there are any problems with the Windows Enterprise E3 or E5 license or the ac
 
 In some instances, users might experience problems with the Windows Enterprise E3 or E5 subscription. The most common problems that users might experience are the following issues:
 
-- The Windows Enterprise E3 or E5 subscription is lapsed or removed.
-- An earlier version of Windows Pro isn't activated.
+- The Windows Enterprise E3 or E5 subscription lapsed, was removed, or hasn't been applied.
+- Windows Pro was never activated activated.
 
-### Troubleshoot common problems in the Activation pane
+### Common problems in the Activation pane
 
 Use the following figures to help troubleshoot when users experience common problems:
 
-#### Device in healthy state
+#### Windows Pro isn't activated
 
-A device where Windows Pro is active and the Windows Enterprise subscription is active will display:
-
-1. Next to **Subscription**:
-
-  `Windows Enterprise subscription is active`
-
-1. Next to **Activation**
-
-  `Windows is activated with a digital license`
-
-#### Device that's not activated
-
-When Windows Pro isn't activated on a device, the following message is displayed next to **Activation**:
+When Windows Pro isn't activated on a device, the following message is displayed next to **Activation** in the Activation pane:
 
 `Windows is not activated`
 
-Under **Activation**, the following message is displayed:
+Additionally, under **Activation**, the following message might be displayed:
 
 `We can't activate Windows on this device right now. You can try activating again later or go to the Store to buy genuine Windows. Error code: 0xC004F034.`
 
-#### Device that's without an Enterprise subscription
+This problem can also occur if the starting edition of Windows wasn't Windows Pro. For example, the starting edition of Windows was Windows Home.
 
-When a device has a Windows Enterprise subscription that's lapsed or removed, the following message is displayed next to **Subscription**:
+#### Windows Enterprise subscription isn't active
+
+When a device has a Windows Enterprise subscription that's lapsed or removed, the following message is displayed next to **Subscription** in the Activation pane:
 
 `Windows Enterprise subscription isn't valid.`
+
+::: zone pivot="windows-11"
+
+If the Windows Enterprise subscription has never been applied, the **Subscription** pane isn't displayed.
+
+::: zone-end
+
+::: zone pivot="windows-10"
+
+If the Windows Enterprise subscription has never been applied, the **Subscription** field isn't displayed.
+
+::: zone-end
 
 ### Review requirements on devices
 
