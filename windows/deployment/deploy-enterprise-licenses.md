@@ -110,7 +110,9 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 #### Join a device to Microsoft Entra ID the first time the device is started
 
-### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11)
+<!-- ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11) -->
+
+::: zone pivot="windows-11"
 
 1. Power on the device for the first time to initiate Windows Setup.
 
@@ -138,7 +140,11 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 1. In the **Choose privacy settings for your device** screen, configure privacy settings as desired, using the **Next** button to go between settings. Once complete, select the **Accept** button.
 
-### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10)
+::: zone-end
+
+<!-- ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10) -->
+
+::: zone pivot="windows-10"
 
 1. Power on the device for the first time to initiate Windows Setup.
 
@@ -162,7 +168,9 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 1. In the **Choose privacy settings for your device** screen, configure privacy settings as desired. Once complete, select the **Accept** button.
 
----
+::: zone-end
+
+<!-- --- -->
 
 Once Windows Setup finishes, the user is automatically signed in and the device is Microsoft Entra joined to the organization's subscription.
 
@@ -172,7 +180,9 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 >
 > Make sure that the user signing in isn't the **BUILTIN/Administrator** account. That user can't use the `+ Connect` action to join a work or school account.
 
-### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11)
+<!-- ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11) -->
+
+::: zone pivot="windows-11"
 
 1. Right click on the Start menu and select **Settings**.
 
@@ -194,7 +204,11 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 
     1. The device will join the organization's Microsoft Entra ID subscription. Once complete, the **You're all set!** page is displayed. Select the **Done** button to complete the process.
 
-### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10)
+::: zone-end
+
+<!-- ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10) -->
+
+::: zone pivot="windows-10"
 
 1. Right click on the Start menu and select **Settings**.
 
@@ -216,7 +230,9 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 
     1. The device will join the organization's Microsoft Entra subscription. Once complete, the **You're all set!** page is displayed. Select the **Done** button to complete the process.
 
----
+::: zone-end
+
+<!-- --- -->
 
 The device is now Microsoft Entra joined to the organization's subscription.
 
@@ -230,7 +246,9 @@ Once the device is joined to Microsoft Entra ID, users sign in with their Micros
 
 ### Step 4: Verify that Enterprise edition is enabled
 
-### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11)
+<!-- ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11) -->
+
+::: zone pivot="windows-11"
 
 To verify the Windows Enterprise E3 or E5 subscription:
 
@@ -244,7 +262,11 @@ To verify the Windows Enterprise E3 or E5 subscription:
 
 1. Verify that both the Enterprise subscription is active and that Windows is activated.
 
-### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10)
+::: zone-end
+
+<!-- ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10) -->
+
+::: zone pivot="windows-10"
 
 To verify the Windows Enterprise E3 or E5 subscription:
 
@@ -260,7 +282,9 @@ To verify the Windows Enterprise E3 or E5 subscription:
 
     1. Next to **Activation**, make sure that Windows is activate.
 
----
+::: zone-end
+
+<!-- --- -->
 
 If there are any problems with the Windows Enterprise E3 or E5 license or the activation of the license, the **Activation** pane displays the appropriate error message or status. This information can be used to help diagnose the licensing and activation process.
 
