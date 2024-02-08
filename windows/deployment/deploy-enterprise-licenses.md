@@ -12,6 +12,7 @@ ms.collection:
   - highpri
   - tier2
 ms.date: 02/01/2024
+zone_pivot_groups: windows-versions-11-10
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
