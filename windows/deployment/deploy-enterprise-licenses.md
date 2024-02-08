@@ -110,30 +110,6 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 #### Join a device to Microsoft Entra ID the first time the device is started
 
-### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10)
-
-1. Power on the device for the first time to initiate Windows Setup.
-
-1. In the **Let's start with region. Is this right?** screen, select the desired country/region and then select the **Yes** button.
-
-1. In the **Is this the right keyboard layout?** screen, select the desired keyboard/input methods and then select the **Yes** button.
-
-1. In the **Want to add a second keyboard layout?** screen, if desired add additional keyboard/input methods by selecting the **Add layout** button. Otherwise select the **Skip** button.
-
-1. If no network connection is detected, the **Let's connect you to a network** screen appears. Connect to a wireless or wired network that has Internet access, and then select the **Next** button.
-
-1. At this point, updates for Windows Setup might be installed. If updates are installed, the device reboots to finish installing the updates.
-
-1. In Windows 10 Pro editions, the **How would you like to set up?** screen appears. Select **Set up for an organization** and then select the **Next** button.
-
-1. In the **Sign in with Microsoft** screen, in the **someone@example.com** text box, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username will be in the email format of user@domain.com.
-
-1. In the **Enter your password** screen, in the **Password** text box, enter the password for the Microsoft Entra user account, and then select the **Next** button.
-
-1. The device proceeds with the rest of the Windows setup including configuration of organization specific settings.
-
-1. In the **Choose privacy settings for your device** screen, configure privacy settings as desired. Once complete, select the **Accept** button.
-
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11)
 
 1. Power on the device for the first time to initiate Windows Setup.
@@ -162,6 +138,30 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 1. In the **Choose privacy settings for your device** screen, configure privacy settings as desired, using the **Next** button to go between settings. Once complete, select the **Accept** button.
 
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10)
+
+1. Power on the device for the first time to initiate Windows Setup.
+
+1. In the **Let's start with region. Is this right?** screen, select the desired country/region and then select the **Yes** button.
+
+1. In the **Is this the right keyboard layout?** screen, select the desired keyboard/input methods and then select the **Yes** button.
+
+1. In the **Want to add a second keyboard layout?** screen, if desired add additional keyboard/input methods by selecting the **Add layout** button. Otherwise select the **Skip** button.
+
+1. If no network connection is detected, the **Let's connect you to a network** screen appears. Connect to a wireless or wired network that has Internet access, and then select the **Next** button.
+
+1. At this point, updates for Windows Setup might be installed. If updates are installed, the device reboots to finish installing the updates.
+
+1. In Windows 10 Pro editions, the **How would you like to set up?** screen appears. Select **Set up for an organization** and then select the **Next** button.
+
+1. In the **Sign in with Microsoft** screen, in the **someone@example.com** text box, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username will be in the email format of user@domain.com.
+
+1. In the **Enter your password** screen, in the **Password** text box, enter the password for the Microsoft Entra user account, and then select the **Next** button.
+
+1. The device proceeds with the rest of the Windows setup including configuration of organization specific settings.
+
+1. In the **Choose privacy settings for your device** screen, configure privacy settings as desired. Once complete, select the **Accept** button.
+
 ---
 
 Once Windows Setup finishes, the user is automatically signed in and the device is Microsoft Entra joined to the organization's subscription.
@@ -171,28 +171,6 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 > [!IMPORTANT]
 >
 > Make sure that the user signing in isn't the **BUILTIN/Administrator** account. That user can't use the `+ Connect` action to join a work or school account.
-
-### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10)
-
-1. Right click on the Start menu and select **Settings**.
-
-1. In the **Settings** app, select **Accounts**.
-
-1. In the left hand pane, select **Access work or school**.
-
-1. **Access work or school** pane, select the **+** button next to **Connect**.
-
-1. In the **Microsoft account** window that opens:
-
-    1. In the **Set up a work or school account** page, select **Join this device to Microsoft Entra ID**.
-
-    1. In the **Email or phone** text box of the **Sign in** page, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username will be in the email format of user@domain.com.
-
-    1. In the **Password** text box of the **Enter password** page, enter the password for the Microsoft Entra user account, and then select the **Sign in** button.
-
-    1. When the **Make sure this is your organization** window opens, confirm the information is correct and then select the **Join** button.
-
-    1. The device will join the organization's Microsoft Entra subscription. Once complete, the **You're all set!** page is displayed. Select the **Done** button to complete the process.
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11)
 
@@ -206,7 +184,7 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 
 1. In the **Microsoft account** window that opens:
 
-    1. In the **Set up a work or school account** page, select **Join this device to Microsoft Entra ID**.
+    1. In the **Set up a work or school account** page, under **Alternate actions:**, select **Join this device to Microsoft Entra ID**.
 
     1. In the **Email or phone** text box of the **Sign in** page, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username will be in the email format of user@domain.com.
 
@@ -216,41 +194,75 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 
     1. The device will join the organization's Microsoft Entra ID subscription. Once complete, the **You're all set!** page is displayed. Select the **Done** button to complete the process.
 
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10)
+
+1. Right click on the Start menu and select **Settings**.
+
+1. In the **Settings** app, select **Accounts**.
+
+1. In the left hand pane, select **Access work or school**.
+
+1. In the **Access work or school** pane, select the **+** button next to **Connect**.
+
+1. In the **Microsoft account** window that opens:
+
+    1. In the **Set up a work or school account** page, under **Alternate actions:**, select **Join this device to Microsoft Entra ID**.
+
+    1. In the **Email or phone** text box of the **Sign in** page, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username will be in the email format of user@domain.com.
+
+    1. In the **Password** text box of the **Enter password** page, enter the password for the Microsoft Entra user account, and then select the **Sign in** button.
+
+    1. When the **Make sure this is your organization** window opens, confirm the information is correct and then select the **Join** button.
+
+    1. The device will join the organization's Microsoft Entra subscription. Once complete, the **You're all set!** page is displayed. Select the **Done** button to complete the process.
+
 ---
 
 The device is now Microsoft Entra joined to the organization's subscription.
 
-> [!TIP]
->
-> Autopilot is only applicable during the first start of Windows when Windows undergoes Windows Setup. For the Autopilot experience when joining Microsoft Entra ID during Windows Setup, see [User-driven Microsoft Entra join: Deploy the device](/autopilot/tutorial/user-driven/azure-ad-join-deploy-device).
-
 ### Step 2: Pro edition activation
 
-If the device is running a supported version of Windows, it automatically activates Windows Enterprise edition using the firmware-embedded activation key.
+If the device is running a currently supported version of Windows, most modern devices automatically activates Windows Pro edition using the firmware-embedded activation key.
 
 ### Step 3: Sign in using Microsoft Entra account
 
-Once the device is joined to Microsoft Entra ID, users sign in with their Microsoft Entra account, as illustrated in **Figure 8**. The Windows Enterprise E3 or E5 license associated with the user enables Windows Enterprise edition capabilities on the device.
-
-:::image type="content" source="images/enterprise-e3-sign-in.png" alt-text="A screenshot of signing in to Windows as a Microsoft Entra user.":::
-
-Figure 8: Sign in to Windows 10 with a Microsoft Entra account.
+Once the device is joined to Microsoft Entra ID, users sign in with their Microsoft Entra account. The Windows Enterprise E3 or E5 license associated with the user enables Windows Enterprise edition capabilities on the device.
 
 ### Step 4: Verify that Enterprise edition is enabled
 
-### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10)
-
-To verify the Windows Enterprise E3 or E5 subscription, go to **Settings**, select **Update & Security**, and select **Activation**.
-
-If there are any problems with the Windows Enterprise E3 or E5 license or the activation of the license, the **Activation** panel displays the appropriate error message or status. This information can be used to help diagnose the licensing and activation process.
-
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Windows 11**](#tab/windows11)
 
-To verify the Windows Enterprise E3 or E5 subscription, go to **Settings**, select **Update & Security**, and select **Activation**.
+To verify the Windows Enterprise E3 or E5 subscription:
 
-If there are any problems with the Windows Enterprise E3 or E5 license or the activation of the license, the **Activation** panel displays the appropriate error message or status. This information can be used to help diagnose the licensing and activation process.
+1. Right click on the Start menu and select **Settings**.
+
+1. In the **Settings** app, select **System** in the left hand pane.
+
+1. In the **System** pane, **Activation**.
+
+1. In the **System > Activation** pane, expand **Activation state** to see full details of the activation state and status.
+
+1. Verify that both the Enterprise subscription is active and that Windows is activated.
+
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **Windows 10**](#tab/windows10)
+
+To verify the Windows Enterprise E3 or E5 subscription:
+
+1. Right click on the Start menu and select **Settings**.
+
+1. In the **Settings** app, select **Update & Security**.
+
+1. In the left hand pane, select **Activation**.
+
+1. In the **Activation** pane:
+
+    1. Next to **Subscription**, verify that the Enterprise subscription is active.
+
+    1. Next to **Activation**, make sure that Windows is activate.
 
 ---
+
+If there are any problems with the Windows Enterprise E3 or E5 license or the activation of the license, the **Activation** pane displays the appropriate error message or status. This information can be used to help diagnose the licensing and activation process.
 
 > [!NOTE]
 >
@@ -275,86 +287,94 @@ Use the following figures to help troubleshoot when users experience common prob
 
 #### Device in healthy state
 
-The following image illustrates a device in a healthy state, where Windows 10 Pro is activated and the Windows 10 Enterprise subscription is active.
+A device where Windows Pro is active and the Windows Enterprise subscription is active will display:
 
-:::image type="content" source="images/enterprise-e3-win-10-activated-enterprise-subscription-active.png" alt-text="A screenshot of Windows 10 Enterprise activation in Settings that's healthy and successfully activated.":::
+1. Next to **Subscription**:
 
-#### Device that's not activated with active subscription
+  `Windows Enterprise subscription is active`
 
-Figure 10 illustrates a device on which the Windows 10 Pro isn't activated, but the Windows 10 Enterprise subscription is active.
+1. Next to **Activation**
 
-:::image type="content" source="images/enterprise-e3-win-10-not-activated-enterprise-subscription-active.png" alt-text="A screenshot of Windows 10 Enterprise activation in Settings that isn't activated but the subscription is active.":::
+  `Windows is activated with a digital license`
 
-Figure 10: Windows 10 Pro, version 1703 edition not activated in Settings.
+#### Device that's not activated
 
-It displays the following error: "We can't activate Windows on this device right now. You can try activating again later or go to the Store to buy genuine Windows. Error code: 0xC004F034."
+When Windows Pro isn't activated on a device, the following message is displayed next to **Activation**:
 
-#### Device that's activated without an Enterprise subscription
+`Windows is not activated`
 
-Figure 11 illustrates a device on which the Windows 10 Pro is activated, but the Windows 10 Enterprise subscription is lapsed or removed.
+Under **Activation**, the following message is displayed:
 
-:::image type="content" source="images/enterprise-e3-win-10-activated-enterprise-subscription-not-active.png" alt-text="A screenshot of Windows 10 Enterprise activation in Settings that's activated but the subscription isn't active.":::
+`We can't activate Windows on this device right now. You can try activating again later or go to the Store to buy genuine Windows. Error code: 0xC004F034.`
 
-Figure 11: Windows 10 Enterprise subscription lapsed or removed in Settings.
+#### Device that's without an Enterprise subscription
 
-It displays the following error: "Windows 10 Enterprise subscription isn't valid."
+When a device has a Windows Enterprise subscription that's lapsed or removed, the following message is displayed next to **Subscription**:
 
-#### Device that's not activated and without an Enterprise subscription
-
-Figure 12 illustrates a device on which the Windows 10 Pro license isn't activated and the Windows 10 Enterprise subscription is lapsed or removed.
-
-:::image type="content" source="images/enterprise-e3-win-10-not-activated-enterprise-subscription-not-active.png" alt-text="A screenshot of Windows 10 Enterprise activation in Settings that's not activated and the subscription isn't active.":::
-
-Figure 12: Windows 10 Pro, version 1703 edition not activated and Windows 10 Enterprise subscription lapsed or removed in Settings.
-
-It displays both of the previously mentioned error messages.
+`Windows Enterprise subscription isn't valid.`
 
 ### Review requirements on devices
 
-Devices must be running a supported version of Windows 10 Pro or Windows 11 Pro. Earlier versions of Windows 10, such as version 1703, don't support this feature.
+Devices must be running a currently supported version of Windows Pro. Versions of Windows Pro that are out support don't support this feature.
 
 Devices must also be joined to Microsoft Entra ID, or hybrid domain joined with Microsoft Entra Connect. Customers who are federated with Microsoft Entra ID are also eligible.
 
-Use the following procedures to review whether a particular device meets these requirements.
+Use the following procedures to review whether a particular device meets these requirements:
 
-#### Firmware-embedded activation key
+- Firmware-embedded activation key.
 
-To determine if the computer has a firmware-embedded activation key, enter the following command at an elevated Windows PowerShell prompt:
+  To determine if the computer has a firmware-embedded activation key:
 
-```powershell
-(Get-CimInstance -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey
-```
+  1. Open an elevated Windows PowerShell command prompt.
 
-If the device has a firmware-embedded activation key, it's displayed in the output. If the output is blank, the device doesn't have a firmware embedded activation key. Most OEM-provided devices designed to run currently supported versions of Windows have a firmware-embedded key.
+  1. In the elevated Windows PowerShell command prompt, enter:
 
-#### Determine if a device is Microsoft Entra joined
+    ```powershell
+    (Get-CimInstance -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey
+    ```
 
-1. Open a command prompt and enter `dsregcmd /status`.
+  1. If the device has a firmware-embedded activation key, it's displayed in the output. If the output is blank, the device doesn't have a firmware embedded activation key. Most modern OEM-provided devices designed to run currently supported versions of Windows have a firmware-embedded key.
 
-1. Review the output in the **Device State** section. If the **AzureAdJoined** value is **YES**, the device is joined to Microsoft Entra ID.
+- Determine if a device is Microsoft Entra joined.
 
-#### Determine the version of Windows
+  1. Open a command prompt.
 
-1. Open a command prompt and enter `winver`.
+  1. In the command prompt, enter:
 
-1. The **About Windows** window displays the OS version and build information.
+    ```cmd
+    dsregcmd /status
+    ```
 
-1. Compare this information again the Windows support lifecycle:
+  1. Review the output in the **Device State** section. If the **AzureAdJoined** value is **YES**, the device is joined to Microsoft Entra ID.
 
-    - [Windows 10 release information](/windows/release-health/release-information)
-    - [Windows 11 release information](/windows/release-health/windows11-release-information)
+- Determine the version of Windows.
+
+  1. Open a command prompt and enter `winver`.
+
+  1. The **About Windows** window displays the OS version and build information.
+
+  1. Compare this information again the Windows support lifecycle:
+
+      - [Windows 10 release information](/windows/release-health/release-information).
+      - [Windows 11 release information](/windows/release-health/windows11-release-information).
 
 ### Delay in the activation of Enterprise license of Windows
 
-This delay is by design. Windows uses a built-in cache when determining upgrade eligibility. This behavior includes processing responses that indicate that the device isn't eligible for an upgrade. It can take up to four days after a qualifying purchase before the upgrade eligibility is enabled and the cache expires.
+There might be a delay in the activation of the Enterprise license in Windows. This delay is by design. Windows uses a built-in cache when determining upgrade eligibility. This behavior includes processing responses that indicate that the device isn't eligible for an upgrade. It can take up to four days after a qualifying purchase before the upgrade eligibility is enabled and the cache expires.
 
 ## Known issues
 
 If a device isn't able to connect to Windows Update, it can lose activation status or be blocked from upgrading to Windows Enterprise. To work around this issue:
 
-- Make sure that the device doesn't have the following registry value: `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations = 1 (REG_DWORD)`. If this registry value exists, it must be set to `0`.
+- Make sure that the device doesn't have the following registry value:
 
-- Make sure that the following group policy setting is **disabled**: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Don't connect to any Windows Update Internet locations.
+  `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations = 1 (REG_DWORD)`.
+
+  If this registry value exists, it must be set to `0`.
+
+- Make sure that the following group policy setting is **disabled**:
+
+  **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Don't connect to any Windows Update Internet locations**
 
 ## Virtual Desktop Access (VDA)
 
