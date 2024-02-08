@@ -1,14 +1,14 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 08/08/2023 
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.date: 12/14/2023
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: whats-new
 ms.localizationpriority: medium
-author: tiaraquan 
+author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby 
+manager: aaroncz
 ms.reviewer: hathind
 ms.collection:
   - highpri
@@ -21,14 +21,76 @@ This article lists new and updated feature releases, and service releases, with 
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
 
+## December 2023
+
+### December feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Prerequisites](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) | Added F SKU licenses to the [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) section. Also see [FAQ](../overview/windows-autopatch-faq.yml)<ul><li>[MC690609](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+
+## December service release
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC697414](https://admin.microsoft.com/adminportal/home#/MessageCenter) | New Feature: Alerts for Windows Autopatch policy conflicts Public Preview announcement |
+| [MC695483](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned Maintenance: Windows Autopatch configuration update – December 2023 |
+
+## November service release
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC689492](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned Maintenance: Service maintenance to improve Windows Autopatch performance |
+
+## October 2023
+
+### October feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#microsoft-365-apps-for-enterprise-update-controls) | Added more information about the Allow setting in the [Microsoft 365 Apps for enterprise update controls](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#microsoft-365-apps-for-enterprise-update-controls) section |
+
+## October service release
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC680344](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned Maintenance: Service Improvements |
+
+## September 2023
+
+### September feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Conflicting configurations](../references/windows-autopatch-conflicting-configurations.md) | New feature. This article explains how to remediate conflicting configurations<ul><li>[MC671811](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+
+### September service releases
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC678305](https://admin.microsoft.com/adminportal/home#/MessageCenter) | September 2023 Windows Autopatch baseline configuration update |
+| [MC678303](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Windows Autopatch availability within Microsoft Intune Admin Center |
+| [MC674422](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Public Preview: Windows Autopatch Reliability Report |
+| [MC672750](https://admin.microsoft.com/adminportal/home#/MessageCenter) | August 2023 Windows Autopatch baseline configuration update |
+
 ## August 2023
 
 ### August feature releases or updates
 
 | Article | Description |
 | ----- | ----- |
-| [Exclude a device](../operate/windows-autopatch-exclude-device.md) | Renamed Deregister a device to [Exclude a device](../operate/windows-autopatch-exclude-device.md). Added the [Restore device](../operate/windows-autopatch-exclude-device.md#restore-a-device-or-multiple-devices-previously-excluded) feature |
+| [Deployment guide](../overview/windows-autopatch-deployment-guide.md) | New guide. This guide explains how to successfully deploy Windows Autopatch in your environment |
+| [Windows quality updates](../operate/windows-autopatch-groups-windows-quality-update-overview.md) | Added the **This pause is related to Windows Update** option to the [Pause and resume a release feature](../operate/windows-autopatch-groups-windows-quality-update-overview.md#pause-and-resume-a-release) |
+| [Manage driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md)| Added [policy settings](../operate/windows-autopatch-manage-driver-and-firmware-updates.md#view-driver-and-firmware-policies-created-by-windows-autopatch) for all deployment rings |
+| [Manage driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md) | General Availability<ul><li>[MC661218](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Exclude a device](../operate/windows-autopatch-exclude-device.md) | Renamed Deregister a device to [Exclude a device](../operate/windows-autopatch-exclude-device.md). Added the [Restore device](../operate/windows-autopatch-exclude-device.md#restore-a-device-or-multiple-devices-previously-excluded) feature <ul><li>[MC667662](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
 | [Device alerts](../operate/windows-autopatch-device-alerts.md) | Added `'InstallSetupBlock'` to the [Alert resolutions section](../operate/windows-autopatch-device-alerts.md#alert-resolutions) |
+
+### August service releases
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC671811](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Windows Autopatch Service Improvements |
 
 ## July 2023
 

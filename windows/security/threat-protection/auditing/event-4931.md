@@ -2,7 +2,6 @@
 title: 4931(S, F) An Active Directory replica destination naming context was modified. 
 description: Describes security event 4931(S, F) An Active Directory replica destination naming context was modified.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/08/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

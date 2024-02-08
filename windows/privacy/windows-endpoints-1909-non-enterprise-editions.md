@@ -1,12 +1,12 @@
 ---
 title: Windows 10, version 1909, connection endpoints for non-Enterprise editions
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 1909.
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
+manager: laurawi
 ms.date: 07/20/2020
 ms.topic: reference
 ---
@@ -70,7 +70,6 @@ The following methodology was used to derive the network endpoints:
 |outlook.office365.com|HTTP|Used to connect to the Microsoft 365 admin center's shared infrastructure, including Office in a browser
 |ocsp.digicert.com|HTTP|Used by the Automatic Root Certificates Update component to automatically check the list of trusted authorities on Windows Update to see if an update is available
 |oneclient.sfx.ms|HTTPS|Used by OneDrive for Business to download and verify app updates
-|pti.store.microsoft.com/*|HTTP|Used to communicate with Microsoft Store
 |img-prod-cms-rt-microsoft-com.akamaized.net|HTTP|Used to communicate with Microsoft Store
 |manage.devcenter.microsoft.com|HTTP/TLS v1.2|Used to get Microsoft Store analytics
 |ris.api.iris.microsoft.com|HTTPS|Used to retrieve Windows Spotlight metadata that describes content
@@ -139,7 +138,6 @@ The following methodology was used to derive the network endpoints:
 |ocsp.msocsp.com|HTTP|Used by the Automatic Root Certificates Update component to automatically check the list of trusted authorities on Windows Update to see if an update is available
 |oneclient.sfx.ms|HTTPS|Used by OneDrive for Business to download and verify app updates
 |mobile.pipe.aria.microsoft.com|HTTP|Office Telemetry
-|pti.store.microsoft.com/*|HTTP|Used to communicate with Microsoft Store
 |ris.api.iris.microsoft.com|TLS v1.2|Windows Spotlight
 |settings-win.data.microsoft.com|HTTPS/TLS v1.2|Used for Windows apps to dynamically update their configuration
 |spo-ring.msedge.net|TLSv1.2|Cortana and Live Tiles
@@ -189,7 +187,6 @@ The following methodology was used to derive the network endpoints:
 |iecvlist.microsoft.com|HTTP|Microsoft Edge
 |download.windowsupdate.com|HTTP|Windows Update
 |checkappexec.microsoft.com|HTTPS|Windows Defender
-|pti.store.microsoft.com/*|HTTP|Microsoft Store
 |emdl.ws.microsoft.com|HTTP|Windows Update
 |evoke-windowsservices-tas.msedge.net|HTTPS/TLS v1.2|Photos app
 |g.live.com|TLS v1.2|OneDrive

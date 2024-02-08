@@ -4,7 +4,6 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: 98b24b03-95fe-4edc-8e97-cbdaa8e314fd
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Interactive logon: Don't display username at sign-in

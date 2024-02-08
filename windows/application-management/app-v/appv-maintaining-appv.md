@@ -2,13 +2,14 @@
 title: Maintaining App-V (Windows 10/11)
 description: After you have deployed App-V for Windows 10/11, you can use the following information to maintain the App-V infrastructure.
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 09/27/2018
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
+ms.collection: must-keep
 ms.topic: article
-ms.technology: itpro-apps
+ms.subservice: itpro-apps
 ---
 
 # Maintaining App-V

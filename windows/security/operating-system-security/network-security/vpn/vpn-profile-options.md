@@ -2,7 +2,7 @@
 title: VPN profile options 
 description: Windows adds Virtual Private Network (VPN) profile options to help manage how users connect. VPNs give users secure remote access to the company network.
 ms.date: 08/03/2023
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # VPN profile options

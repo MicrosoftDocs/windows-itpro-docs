@@ -1,10 +1,9 @@
 ---
-title: Impersonate a client after authentication 
+title: Impersonate a client after authentication
 description: Describes the best practices, location, values, policy management, and security considerations for the Impersonate a client after authentication security policy setting.
 ms.assetid: 4cd241e2-c680-4b43-8ed0-3b391925cec5
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Impersonate a client after authentication
@@ -65,12 +63,12 @@ The following table lists the actual and effective default policy values. Defaul
 | Server type or GPO | Default value |
 | - | - |
 | Default Domain Policy| Not defined |
-| Default Domain Controller Policy| Administrators<br/>Local Service<br/>Network Service<br/>Service| 
-| Stand-Alone Server Default Settings | Administrators<br/>Local Service<br/>Network Service<br/>Service| 
-| Domain Controller Effective Default Settings | Administrators<br/>Local Service<br/>Network Service<br/>Service| 
-| Member Server Effective Default Settings | Administrators<br/>Local Service<br/>Network Service<br/>Service| 
-| Client Computer Effective Default Settings | Administrators<br/>Local Service<br/>Network Service<br/>Service| 
- 
+| Default Domain Controller Policy| Administrators<br/>Local Service<br/>Network Service<br/>Service|
+| Stand-Alone Server Default Settings | Administrators<br/>Local Service<br/>Network Service<br/>Service|
+| Domain Controller Effective Default Settings | Administrators<br/>Local Service<br/>Network Service<br/>Service|
+| Member Server Effective Default Settings | Administrators<br/>Local Service<br/>Network Service<br/>Service|
+| Client Computer Effective Default Settings | Administrators<br/>Local Service<br/>Network Service<br/>Service|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

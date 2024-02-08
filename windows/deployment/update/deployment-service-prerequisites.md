@@ -1,28 +1,34 @@
 ---
-title: Prerequisites for the Windows Update for Business deployment service
-description: Prerequisites for using the Windows Update for Business deployment service. 
-ms.prod: windows-client
-author: mestew
-ms.localizationpriority: medium
+title: Prerequisites for the deployment service
+titleSuffix: Windows Update for Business deployment service
+description: Prerequisites for using the Windows Update for Business deployment service for updating devices in your organization. 
+ms.service: windows-client
+ms.subservice: itpro-updates
+ms.topic: conceptual
 ms.author: mstewart
+author: mestew
 manager: aaroncz
-ms.topic: article
-ms.technology: itpro-updates
-ms.date: 02/14/2023
+ms.collection:
+  - tier1
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 01/29/2024
 ---
 
 # Windows Update for Business deployment service prerequisites
 <!--7512398-->
-***(Applies to: Windows 11 & Windows 10)***
-
 Before you begin the process of deploying updates with Windows Update for Business deployment service, ensure you meet the prerequisites.
 
-## Azure and Azure Active Directory
+<a name='azure-and-azure-active-directory'></a>
 
-- An Azure subscription with [Azure Active Directory](/azure/active-directory/)
-- Devices must be Azure Active Directory-joined and meet the below OSrequirements.
-  - Devices can be [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
-  - Devices that are [Azure AD registered](/azure/active-directory/devices/concept-azure-ad-register) only (Workplace joined) aren't supported with Windows Update for Business
+## Azure and Microsoft Entra ID
+
+- An Azure subscription with [Microsoft Entra ID](/azure/active-directory/)
+- Devices must be Microsoft Entra joined and meet the below OSrequirements.
+  - Devices can be [Microsoft Entra joined](/azure/active-directory/devices/concept-azure-ad-join) or [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+  - Devices that are [Microsoft Entra registered](/azure/active-directory/devices/concept-azure-ad-register) only (Workplace joined) aren't supported with Windows Update for Business
 
 ## Licensing
 
@@ -42,9 +48,9 @@ Windows Update for Business deployment service supports Windows client devices o
 
 ### Windows operating system updates
 
-- Expediting updates requires the *Update Health Tools* on the clients. The tools are installed starting with [KB 4023057](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a). To confirm the presence of the Update Health Tools on a device:
+- Expediting updates requires the *Update Health Tools* on the clients. The tools are installed starting with [KB4023057](https://support.microsoft.com/kb/4023057). To confirm the presence of the Update Health Tools on a device:
   - Look for the folder **C:\Program Files\Microsoft Update Health Tools** or review *Add Remove Programs* for **Microsoft Update Health Tools**.
-  - As an Admin, run the following PowerShell script:  `Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -match "Microsoft Update Health Tools"}`
+  - As an Admin, run the following PowerShell script:  `Get-CimInstance -ClassName Win32_Product | Where-Object {$_.Name -match "Microsoft Update Health Tools"}`
 
 - For [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#services-that-rely-on-enhanced-diagnostic-data), installing the January 2023 release preview cumulative update, or a later equivalent update, is recommended
 

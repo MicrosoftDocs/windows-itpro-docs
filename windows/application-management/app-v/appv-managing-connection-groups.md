@@ -2,12 +2,13 @@
 title: Managing Connection Groups (Windows 10/11)
 description: Connection groups can allow administrators to manage packages independently and avoid having to add the same application multiple times to a client computer.
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
-ms.technology: itpro-apps
+ms.collection: must-keep
+ms.subservice: itpro-apps
 ---
 
 # Managing Connection Groups

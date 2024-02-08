@@ -1,14 +1,14 @@
 ---
 title: Device alerts
-description: Provide notifications and information about the necessary steps to keep your devices up to date. 
+description: Provide notifications and information about the necessary steps to keep your devices up to date.
 ms.date: 08/01/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: adnich
 ms.collection:
   - highpri
@@ -54,7 +54,7 @@ Alert resolutions are provided through the Windows Update service and provide th
 | `CancelledByUser` | User canceled the update | The Windows Update service has reported the update was canceled by the user.<p>It's recommended to work with the end user to allow updates to execute as scheduled.</p> |
 | `DamagedMedia` | The update file or hard drive is damaged | The Windows Update service has indicated the update payload might be damaged or corrupt. <p>It's recommended to run `Chkdsk /F` on the device with administrator privileges, then retry the update. For more information, see [chkdsk](/windows-server/administration/windows-commands/chkdsk?tabs=event-viewer).</p> |
 | `DeploymentConflict` | Device is in more than one deployment of the same update type. Only the first deployment assigned is effective. | The Windows Update service has reported a policy conflict.<p>For more information, see the [Windows Autopatch Policy Health dashboard](../operate/windows-autopatch-policy-health-and-remediation.md).</p><p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
-| `DeviceRegistrationInvalidAzureADDeviceId` | The device isn't able to register or authenticate properly with Windows Update because of an invalid Azure AD Device ID. | The Windows Update service has reported a device registration issue.<p>For more information, see [Windows Autopatch post-device registration readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md).</p><p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
+| `DeviceRegistrationInvalidAzureADDeviceId` | The device isn't able to register or authenticate properly with Windows Update because of an invalid Microsoft Entra Device ID. | The Windows Update service has reported a device registration issue.<p>For more information, see [Windows Autopatch post-device registration readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md).</p><p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
 | `DeviceRegistrationInvalidGlobalDeviceId` | The device isn't able to register or authenticate properly with Windows Update because of an invalid Global Device ID. |The Windows Update service has reported that the MSA Service may be disabled preventing Global Device ID assignment.<p>Check that the MSA Service is running or able to run on device.</p><p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
 | `DeviceRegistrationIssue` | The device isn't able to register or authenticate properly with Windows Update. | The Windows Update service has reported a device registration issue.<p>For more information, see [Windows Autopatch post-device registration readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md).</p><p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
 | `DeviceRegistrationNoTrustType` | The device isn't able to register or authenticate properly with Windows Update because it can't establish Trust. | The Windows Update service has reported a device registration issue.<p>For more information, see [Windows Autopatch post-device registration readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md).</p><p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |

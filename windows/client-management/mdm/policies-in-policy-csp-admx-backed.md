@@ -1,14 +1,7 @@
 ---
 title: ADMX-backed policies in Policy CSP
 description: Learn about the ADMX-backed policies in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/07/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -546,6 +539,8 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [HelpQualifiedRootDir_Comp](policy-csp-admx-help.md)
 - [RestrictRunFromHelp_Comp](policy-csp-admx-help.md)
 - [DisableHHDEP](policy-csp-admx-help.md)
+- [AllowChildProcesses](policy-csp-admx-help.md)
+- [HideChildProcessMessageBox](policy-csp-admx-help.md)
 
 ## ADMX_HelpAndSupport
 
@@ -2144,6 +2139,8 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [EnableAdditionalSources](policy-csp-desktopappinstaller.md)
 - [EnableAllowedSources](policy-csp-desktopappinstaller.md)
 - [EnableMSAppInstallerProtocol](policy-csp-desktopappinstaller.md)
+- [EnableWindowsPackageManagerCommandLineInterfaces](policy-csp-desktopappinstaller.md)
+- [EnableWindowsPackageManagerConfiguration](policy-csp-desktopappinstaller.md)
 
 ## DeviceInstallation
 
@@ -2181,6 +2178,11 @@ This article lists the ADMX-backed policies in Policy CSP.
 
 - [TurnOffDataExecutionPreventionForExplorer](policy-csp-fileexplorer.md)
 - [TurnOffHeapTerminationOnCorruption](policy-csp-fileexplorer.md)
+
+## FileSystem
+
+- [EnableDevDrive](policy-csp-filesystem.md)
+- [DevDriveAttachPolicy](policy-csp-filesystem.md)
 
 ## InternetExplorer
 
@@ -2411,7 +2413,10 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [InternetZoneLaunchingApplicationsAndFilesInIFRAME](policy-csp-internetexplorer.md)
 - [RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME](policy-csp-internetexplorer.md)
 - [InternetZoneLogonOptions](policy-csp-internetexplorer.md)
+- [IntranetZoneLogonOptions](policy-csp-internetexplorer.md)
+- [TrustedSitesZoneLogonOptions](policy-csp-internetexplorer.md)
 - [RestrictedSitesZoneLogonOptions](policy-csp-internetexplorer.md)
+- [LocalMachineZoneLogonOptions](policy-csp-internetexplorer.md)
 - [DisableDeletingUserVisitedWebsites](policy-csp-internetexplorer.md)
 - [DisableIgnoringCertificateErrors](policy-csp-internetexplorer.md)
 - [PreventPerUserInstallationOfActiveXControls](policy-csp-internetexplorer.md)
@@ -2466,11 +2471,12 @@ This article lists the ADMX-backed policies in Policy CSP.
 ## MSSecurityGuide
 
 - [ApplyUACRestrictionsToLocalAccountsOnNetworkLogon](policy-csp-mssecurityguide.md)
-- [ConfigureSMBV1Server](policy-csp-mssecurityguide.md)
 - [ConfigureSMBV1ClientDriver](policy-csp-mssecurityguide.md)
+- [ConfigureSMBV1Server](policy-csp-mssecurityguide.md)
 - [EnableStructuredExceptionHandlingOverwriteProtection](policy-csp-mssecurityguide.md)
-- [WDigestAuthentication](policy-csp-mssecurityguide.md)
+- [NetBTNodeTypeConfiguration](policy-csp-mssecurityguide.md)
 - [TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications](policy-csp-mssecurityguide.md)
+- [WDigestAuthentication](policy-csp-mssecurityguide.md)
 
 ## MSSLegacy
 
@@ -2511,6 +2517,7 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [ConfigureRpcAuthnLevelPrivacyEnabled](policy-csp-printers.md)
 - [ConfigureIppPageCountsPolicy](policy-csp-printers.md)
 - [ConfigureRedirectionGuardPolicy](policy-csp-printers.md)
+- [ConfigureWindowsProtectedPrint](policy-csp-printers.md)
 
 ## RemoteAssistance
 
@@ -2521,6 +2528,8 @@ This article lists the ADMX-backed policies in Policy CSP.
 
 ## RemoteDesktopServices
 
+- [LimitServerToClientClipboardRedirection](policy-csp-remotedesktopservices.md)
+- [LimitClientToServerClipboardRedirection](policy-csp-remotedesktopservices.md)
 - [DoNotAllowPasswordSaving](policy-csp-remotedesktopservices.md)
 - [AllowUsersToConnectRemotely](policy-csp-remotedesktopservices.md)
 - [DoNotAllowDriveRedirection](policy-csp-remotedesktopservices.md)
@@ -2528,6 +2537,8 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [RequireSecureRPCCommunication](policy-csp-remotedesktopservices.md)
 - [ClientConnectionEncryptionLevel](policy-csp-remotedesktopservices.md)
 - [DoNotAllowWebAuthnRedirection](policy-csp-remotedesktopservices.md)
+- [DisconnectOnLockBasicAuthn](policy-csp-remotedesktopservices.md)
+- [DisconnectOnLockWebAccountAuthn](policy-csp-remotedesktopservices.md)
 
 ## RemoteManagement
 
@@ -2578,6 +2589,10 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [EnhancedStorageDevices](policy-csp-storage.md)
 - [WPDDevicesDenyReadAccessPerDevice](policy-csp-storage.md)
 - [WPDDevicesDenyWriteAccessPerDevice](policy-csp-storage.md)
+
+## Sudo
+
+- [EnableSudo](policy-csp-sudo.md)
 
 ## System
 

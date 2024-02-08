@@ -1,12 +1,12 @@
 ---
 title: Diagnostic Data Viewer for PowerShell Overview (Windows 10)
 description: Use this article to use the Diagnostic Data Viewer for PowerShell to review the diagnostic data sent to Microsoft by your device.
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
+manager: laurawi
 ms.date: 12/13/2018
 ms.topic: how-to
 ---

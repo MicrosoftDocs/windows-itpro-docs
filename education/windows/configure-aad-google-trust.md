@@ -1,60 +1,62 @@
 ---
-title: Configure federation between Google Workspace and Azure AD
-description: Configuration of a federated trust between Google Workspace and Azure AD, with Google Workspace acting as an identity provider (IdP) for Azure AD.
-ms.date: 04/04/2023
+title: Configure federation between Google Workspace and Microsoft Entra ID
+description: Configuration of a federated trust between Google Workspace and Microsoft Entra ID, with Google Workspace acting as an identity provider (IdP) for Microsoft Entra ID.
+ms.date: 09/11/2023
 ms.topic: how-to
 appliesto:
 ---
 
-# Configure federation between Google Workspace and Azure AD
+# Configure federation between Google Workspace and Microsoft Entra ID
 
 This article describes the steps required to configure Google Workspace as an identity provider (IdP) for Azure AD.\
-Once configured, users will be able to sign in to Azure AD with their Google Workspace credentials.
+Once configured, users will be able to sign in to Microsoft Entra ID with their Google Workspace credentials.
 
 ## Prerequisites
 
-To configure Google Workspace as an IdP for Azure AD, the following prerequisites must be met:
+To configure Google Workspace as an IdP for Microsoft Entra ID, the following prerequisites must be met:
 
-1. An Azure AD tenant, with one or multiple custom DNS domains (that is, domains that aren't in the format \**.onmicrosoft.com*)
-    - If the federated domain hasn't yet been added to Azure AD, you must have access to the DNS domain to create a DNS record. This is required to verify the ownership of the DNS namespace
-    - Learn how to [Add your custom domain name using the Azure Active Directory portal](/azure/active-directory/fundamentals/add-custom-domain)
-1. Access to Azure AD with an account with the *Global Administrator* role
+1. A Microsoft Entra tenant, with one or multiple custom DNS domains (that is, domains that aren't in the format \**.onmicrosoft.com*)
+    - If the federated domain hasn't yet been added to Microsoft Entra ID, you must have access to the DNS domain to create a DNS record. This is required to verify the ownership of the DNS namespace
+    - Learn how to [Add your custom domain name using the Microsoft Entra admin center](/azure/active-directory/fundamentals/add-custom-domain)
+1. Access to Microsoft Entra ID with an account with the *Global Administrator* role
 1. Access to Google Workspace with an account with *super admin* privileges
 
 To test federation, the following prerequisites must be met:
 
 1. A Google Workspace environment, with users already created
     > [!IMPORTANT]
-    > Users require an email address defined in Google Workspace, which is used to match the users in Azure AD.
-    > For more information about identity matching, see [Identity matching in Azure AD](federated-sign-in.md#identity-matching-in-azure-ad).
-1. Individual Azure AD accounts already created: each Google Workspace user will require a matching account defined in Azure AD. These accounts are commonly created through automated solutions, for example:
+    > Users require an email address defined in Google Workspace, which is used to match the users in Microsoft Entra ID.
+    > For more information about identity matching, see [Identity matching in Microsoft Entra ID](federated-sign-in.md#identity-matching-in-microsoft-entra-id).
+1. Individual Microsoft Entra accounts already created: each Google Workspace user will require a matching account defined in Microsoft Entra ID. These accounts are commonly created through automated solutions, for example:
     - School Data Sync (SDS)
-    - Azure AD Connect sync for environment with on-premises AD DS
+    - Microsoft Entra Connect Sync for environment with on-premises AD DS
     - PowerShell scripts that call the Microsoft Graph API
     - Provisioning tools offered by the IdP - this capability is offered by Google Workspace through [auto-provisioning](https://support.google.com/a/answer/7365072)
 
-## Configure Google Workspace as an IdP for Azure AD
+<a name='configure-google-workspace-as-an-idp-for-azure-ad'></a>
+
+## Configure Google Workspace as an IdP for Microsoft Entra ID
 
 1. Sign in to the [Google Workspace Admin Console](https://admin.google.com) with an account with *super admin* privileges
 1. Select **Apps > Web and mobile apps**
 1. Select **Add app > Search for apps** and search for *microsoft*
 1. In the search results page, hover over the *Microsoft Office 365 - Web (SAML)* app and select **Select**
    :::image type="content" source="images/google/google-admin-search-app.png" alt-text="Screenshot showing Google Workspace and the search button for Microsoft Office 365 SAML app.":::
-1. On the **Google Identity Provider details** page, select **Download Metadata** and take note of the location where the **IdP metadata** - *GoogleIDPMetadata.xml* - file is saved, as it will be used to setup Azure AD later
-1. On the **Service provider detail*s** page
+1. On the **Google Identity Provider details** page, select **Download Metadata** and take note of the location where the **IdP metadata** - *GoogleIDPMetadata.xml* - file is saved, as it will be used to setup Microsoft Entra ID later
+1. On the **Service provider detail's** page
       - Select the option **Signed response**
       - Verify that the Name ID format is set to **PERSISTENT**
-      - Depending on how the Azure AD users have been provisioned in Azure AD, you may need to adjust the **Name ID** mapping.\
+      - Depending on how the Microsoft Entra users have been provisioned in Microsoft Entra ID, you may need to adjust the **Name ID** mapping.\
         If using Google auto-provisioning, select **Basic Information > Primary email**
       - Select **Continue**
-1. On the **Attribute mapping** page, map the Google attributes to the Azure AD attributes
+1. On the **Attribute mapping** page, map the Google attributes to the Microsoft Entra attributes
 
-    |Google Directory attributes|Azure AD attributes|
+    |Google Directory attributes|Microsoft Entra attributes|
     |-|-|
     |Basic Information: Primary Email|App attributes: IDPEmail|
 
     > [!IMPORTANT]
-    > You must ensure that your the Azure AD user accounts email match those in your Google Workspace.
+    > You must ensure that your the Microsoft Entra user accounts email match those in your Google Workspace.
 
 1. Select **Finish**
 
@@ -66,10 +68,12 @@ Now that the app is configured, you must enable it for the users in Google Works
 1. Select **User access**
 1. Select **ON for everyone > Save**
 
-## Configure Azure AD as a Service Provider (SP) for Google Workspace
+<a name='configure-azure-ad-as-a-service-provider-sp-for-google-workspace'></a>
 
-The configuration of Azure AD consists of changing the authentication method for the custom DNS domains. This configuration can be done using PowerShell.\
-Using the **IdP metadata** XML file downloaded from Google Workspace, modify the *$DomainName* variable of the following script to match your environment, and then run it in a PowerShell session. When prompted to authenticate to Azure AD, use the credentials of an account with the *Global Administrator* role.
+## Configure Microsoft Entra ID as a Service Provider (SP) for Google Workspace
+
+The configuration of Microsoft Entra ID consists of changing the authentication method for the custom DNS domains. This configuration can be done using PowerShell.\
+Using the **IdP metadata** XML file downloaded from Google Workspace, modify the *$DomainName* variable of the following script to match your environment, and then run it in a PowerShell session. When prompted to authenticate to Microsoft Entra ID, use the credentials of an account with the *Global Administrator* role.
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
@@ -125,12 +129,14 @@ SigningCertificate                    : <BASE64 encoded certificate>
 AdditionalProperties                  : {}
 ```
 
-## Verify federated authentication between Google Workspace and Azure AD
+<a name='verify-federated-authentication-between-google-workspace-and-azure-ad'></a>
+
+## Verify federated authentication between Google Workspace and Microsoft Entra ID
 
 From a private browser session, navigate to https://portal.azure.com and sign in with a Google Workspace account:
 
 1. As username, use the email as defined in Google Workspace
 1. The user will be redirected to Google Workspace to sign in
-1. After Google Workspace authentication, the user will be redirected back to Azure AD and signed in
+1. After Google Workspace authentication, the user will be redirected back to Microsoft Entra ID and signed in
 
 :::image type="content" source="images/google/google-sso.gif" alt-text="A GIF that shows the user authenticating the Azure portal using a Google Workspace federated identity.":::

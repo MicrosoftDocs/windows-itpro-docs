@@ -5,11 +5,11 @@ ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
 author: frankroj
-ms.prod: windows-client
-ms.technology: itpro-fundamentals
+ms.service: windows-client
+ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.date: 11/23/2022
+ms.date: 11/14/2023
 ---
 
 # Configure VDA for Windows subscription activation
@@ -24,14 +24,14 @@ This document describes how to configure virtual machines (VMs) to enable [Windo
 Deployment instructions are provided for the following scenarios:
 
 1. [Active Directory-joined VMs](#active-directory-joined-vms)
-2. [Azure Active Directory-joined VMs](#azure-active-directory-joined-vms)
+2. [Microsoft Entra joined VMs](#azure-active-directory-joined-vms)
 3. [Azure Gallery VMs](#azure-gallery-vms)
 
 ## Requirements
 
 - VMs must be running a supported version of Windows Pro edition.
-- VMs must be joined to Active Directory or Azure Active Directory (Azure AD).
-- VMs must be hosted by a Qualified Multitenant Hoster (QMTH). For more information, download the PDF that describes the [Qualified Multitenant Hoster Program](https://download.microsoft.com/download/3/D/4/3D445779-2870-4E3D-AFCB-D35D2E1BC095/QMTH%20Authorized%20Partner%20List.pdf).
+- VMs must be joined to Active Directory or Microsoft Entra ID.
+- VMs must be hosted by a Qualified Multitenant Hoster (QMTH).
 
 ## Activation
 
@@ -40,13 +40,13 @@ Deployment instructions are provided for the following scenarios:
 - The VM is running a supported version of Windows.
 - The VM is hosted in Azure, an authorized outsourcer, or another Qualified Multitenant Hoster (QMTH).
 
-    When a user with VDA rights signs in to the VM using their Azure AD credentials, the VM is automatically stepped-up to Enterprise and activated. There's no need to do Windows Pro activation. This functionality eliminates the need to maintain KMS or MAK in the qualifying cloud infrastructure.
+    When a user with VDA rights signs in to the VM using their Microsoft Entra credentials, the VM is automatically stepped-up to Enterprise and activated. There's no need to do Windows Pro activation. This functionality eliminates the need to maintain KMS or MAK in the qualifying cloud infrastructure.
 
 ### Scenario 2
 
 - The Hyper-V host and the VM are both running a supported version of Windows.
 
-    [Inherited Activation](./windows-10-subscription-activation.md#inherited-activation) is enabled. All VMs created by a user with a Windows E3 or E5 license are automatically activated independent of whether a user signs in with a local account or using an Azure AD account.
+    [Inherited Activation](./windows-10-subscription-activation.md#inherited-activation) is enabled. All VMs created by a user with a Windows E3 or E5 license are automatically activated independent of whether a user signs in with a local account or using a Microsoft Entra account.
 
 ### Scenario 3
 
@@ -91,7 +91,7 @@ For examples of activation issues, see [Troubleshoot the user experience](./depl
     6. On the Account Management page, choose **Enroll into Active Directory** and then enter the account details.
 
         > [!NOTE]
-        > This step is different for [Azure AD-joined VMs](#azure-active-directory-joined-vms).
+        > This step is different for [Microsoft Entra joined VMs](#azure-active-directory-joined-vms).
 
     7. On the Add applications page, add applications if desired. This step is optional.
 
@@ -111,16 +111,18 @@ For examples of activation issues, see [Troubleshoot the user experience](./depl
 
 8. See the instructions at [Upload and create VM from generalized VHD](/azure/virtual-machines/windows/upload-generalized-managed#upload-the-vhd) to sign in to Azure, get your storage account details, upload the VHD, and create a managed image.
 
-## Azure Active Directory-joined VMs
+<a name='azure-active-directory-joined-vms'></a>
+
+## Microsoft Entra joined VMs
 
 > [!IMPORTANT]
-> Azure AD provisioning packages have a 180 day limit on bulk token usage. After 180 days, you'll need to update the provisioning package and re-inject it into the image. Existing virtual machines that are Azure AD-joined and deployed won't need to be recreated.
+> Microsoft Entra provisioning packages have a 180 day limit on bulk token usage. After 180 days, you'll need to update the provisioning package and re-inject it into the image. Existing virtual machines that are Microsoft Entra joined and deployed won't need to be recreated.
 
-For Azure AD-joined VMs, follow the same instructions as for [Active Directory-joined VMs](#active-directory-joined-vms) with the following exceptions:
+For Microsoft Entra joined VMs, follow the same instructions as for [Active Directory-joined VMs](#active-directory-joined-vms) with the following exceptions:
 
 - During setup with Windows Configuration Designer, under **Name**, enter a name for the project that indicates it isn't for Active Directory-joined VMs, such as **Desktop Bulk Enrollment Token Pro GVLK**.
 
-- During setup with Windows Configuration Designer, on the Account Management page, instead of enrolling in Active Directory, choose **Enroll in Azure AD**, select **Get Bulk Token**, sign in, and add the bulk token using your organization's credentials.
+- During setup with Windows Configuration Designer, on the Account Management page, instead of enrolling in Active Directory, choose **Enroll in Microsoft Entra ID**, select **Get Bulk Token**, sign in, and add the bulk token using your organization's credentials.
 
 - When entering the PackagePath, use the project name you previously entered. For example, **Desktop Bulk Enrollment Token Pro GVLK.ppkg**
 
@@ -154,7 +156,7 @@ For Azure AD-joined VMs, follow the same instructions as for [Active Directory-j
 
 9. On the Set up network page, choose **Off**.
 
-10. On the Account Management page, choose **Enroll in Azure AD**, select **Get Bulk Token**, sign in, and add the bulk token using your organizations credentials.
+10. On the Account Management page, choose **Enroll in Microsoft Entra ID**, select **Get Bulk Token**, sign in, and add the bulk token using your organizations credentials.
 
 11. On the Add applications page, add applications if desired. This step is optional.
 
@@ -186,7 +188,7 @@ For Azure AD-joined VMs, follow the same instructions as for [Active Directory-j
 
     The values `enablecredsspsupport` and `authentication level` should each appear only once in the file.
 
-6. Save your changes, and then use this custom RDP file with your Azure AD credentials to connect to the Azure VM.
+6. Save your changes, and then use this custom RDP file with your Microsoft Entra credentials to connect to the Azure VM.
 
 ## Related articles
 

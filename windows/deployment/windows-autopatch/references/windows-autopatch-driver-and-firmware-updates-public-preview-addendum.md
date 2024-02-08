@@ -1,14 +1,14 @@
 ---
 title: Driver and firmware updates for Windows Autopatch Public Preview Addendum
 description:  This article explains how driver and firmware updates are managed in Autopatch
-ms.date: 06/26/2023 
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.date: 06/26/2023
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 msreviewer: hathind
 ---
 
@@ -26,4 +26,4 @@ Capitalized terms used but not defined herein have the meanings given in the Pro
 
 ## Data Handling
 
-Driver and Firmware Updates Preview integrates Customer Data from other Products, including Windows, Microsoft Intune, Azure Active Directory, and Office (collectively for purposes of this provision "Windows Autopatch Input Services"). Once Customer Data from Windows Autopatch Input Services is integrated into Driver and Firmware Updates Preview, only the Product Terms and [DPA provisions](https://www.microsoft.com/licensing/terms/product/Glossary/all) applicable to Driver and Firmware Updates Preview apply to that data.
+Driver and Firmware Updates Preview integrates Customer Data from other Products, including Windows, Microsoft Intune, Microsoft Entra ID, and Office (collectively for purposes of this provision "Windows Autopatch Input Services"). Once Customer Data from Windows Autopatch Input Services is integrated into Driver and Firmware Updates Preview, only the Product Terms and [DPA provisions](https://www.microsoft.com/licensing/terms/product/Glossary/all) applicable to Driver and Firmware Updates Preview apply to that data.

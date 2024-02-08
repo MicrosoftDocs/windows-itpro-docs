@@ -2,13 +2,14 @@
 title: How to connect to the Management Console (Windows 10/11)
 description: In this article, learn the procedure for connecting to the App-V Management Console through your web browser.
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 06/25/2018
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
+ms.collection: must-keep
 ms.topic: article
-ms.technology: itpro-apps
+ms.subservice: itpro-apps
 ---
 
 # How to connect to the Management Console

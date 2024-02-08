@@ -3,18 +3,22 @@ items:
   href: index.yml
 - name: Application management
   items:
-    - name: Common app types
-      href: apps-in-windows-10.md
-    - name: Add features in Windows client
+    - name: Overview of apps in Windows
+      href: overview-windows-apps.md
+    - name: Add or hide Windows features
       href: add-apps-and-features.md
-    - name: Sideload apps
-      href: sideload-apps-in-windows-10.md
+    - name: Sideload line of business (LOB) apps
+      href: sideload-apps-in-windows.md
     - name: Private app repo on Windows 11
       href: private-app-repository-mdm-company-portal-windows-11.md
     - name: Remove background task resource restrictions
       href: enterprise-background-activity-controls.md
-    - name: Enable or block Windows Mixed Reality apps in the enterprise
-      href: /windows/mixed-reality/enthusiast-guide/manage-windows-mixed-reality
+    - name: Service host grouping in Windows 10
+      href: svchost-service-refactoring.md
+    - name: Per-user services in Windows
+      href: per-user-services-in-windows.md
+    - name: Keep removed apps from returning during an update
+      href: remove-provisioned-apps-during-update.md
 - name: Application Virtualization (App-V)
   items: 
     - name: App-V for Windows overview
@@ -251,14 +255,3 @@ items:
               href: app-v/appv-viewing-appv-server-publishing-metadata.md
             - name: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
               href: app-v/appv-running-locally-installed-applications-inside-a-virtual-environment.md
-
-- name: Reference
-  items: 
-    - name: Service Host process refactoring
-      href: svchost-service-refactoring.md
-    - name: Per-user services in Windows
-      href: per-user-services-in-windows.md
-    - name: Disabling System Services in Windows Server
-      href: /windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server
-    - name: How to keep apps removed from Windows from returning during an update
-      href: remove-provisioned-apps-during-update.md

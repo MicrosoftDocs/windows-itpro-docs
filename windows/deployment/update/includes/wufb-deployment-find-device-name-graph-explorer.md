@@ -2,8 +2,8 @@
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.technology: itpro-updates
-ms.prod: windows-client
+ms.subservice: itpro-updates
+ms.service: windows-client
 ms.topic: include
 ms.date: 02/14/2023
 ms.localizationpriority: medium
@@ -27,7 +27,7 @@ Use the [device](/graph/api/resources/device) resource type to find clients to e
 
 ### Add a request header for advanced queries
 
-For the next requests, set the **ConsistencyLevel** header to `eventual`. For more information about advanced query parameters, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+For the next requests, set the **ConsistencyLevel** header to `eventual`. For more information about advanced query parameters, see [Advanced query capabilities on Microsoft Entra directory objects](/graph/aad-advanced-queries).
 
 1. In Graph Explorer, select the **Request headers** tab.
 1. For **Key** type in `ConsistencyLevel` and for **Value**, type `eventual`.
@@ -49,6 +49,6 @@ For the next requests, set the **ConsistencyLevel** header to `eventual`. For mo
 
 > [!Tip]
 > Requests using the [device](/graph/api/resources/device) resource type typically have both an `id` and a `deviceid`:
-> - The `deviceid` is the **Azure AD Device ID** and will be used in this article.
+> - The `deviceid` is the **Microsoft Entra Device ID** and will be used in this article.
 >    - Later in this article, this `deviceid` will be used as an `id` when you make certain requests such as adding a device to a deployment audience.
-> - The `id` from the [device](/graph/api/resources/device) resource type is usually the Azure AD Object ID, which won't be used in this article.
+> - The `id` from the [device](/graph/api/resources/device) resource type is usually the Microsoft Entra Object ID, which won't be used in this article.

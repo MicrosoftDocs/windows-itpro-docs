@@ -2,13 +2,13 @@
 title: Windows Autopatch groups overview
 description: This article explains what Autopatch groups are
 ms.date: 07/20/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: andredm7
 ms.collection:
   - highpri
@@ -21,7 +21,7 @@ As organizations move to a managed-service model where Microsoft manages update 
 
 ## What are Windows Autopatch groups?
 
-Autopatch groups is a logical container or unit that groups several [Azure AD groups](/azure/active-directory/fundamentals/active-directory-groups-view-azure-portal), and software update policies, such as [Update rings policy for Windows 10 and later](/mem/intune/protect/windows-10-update-rings) and [feature updates for Windows 10 and later policies](/mem/intune/protect/windows-10-feature-updates).
+Autopatch groups is a logical container or unit that groups several [Microsoft Entra groups](/azure/active-directory/fundamentals/active-directory-groups-view-azure-portal), and software update policies, such as [Update rings policy for Windows 10 and later](/mem/intune/protect/windows-10-update-rings) and [feature updates for Windows 10 and later policies](/mem/intune/protect/windows-10-feature-updates).
 
 ## Key benefits
 
@@ -29,9 +29,9 @@ Autopatch groups help Microsoft Cloud-Managed services meet organizations where 
 
 | Benefit | Description |
 | ----- | ----- |
-| Replicating your organizational structure | You can set up Autopatch groups to replicate your organizational structures represented by your existing device-based Azure AD group targeting logic. |
+| Replicating your organizational structure | You can set up Autopatch groups to replicate your organizational structures represented by your existing device-based Microsoft Entra group targeting logic. |
 | Having a flexible number of deployments | Autopatch groups give you the flexibility of having the right number of deployment rings that work within your organization. You can set up to 15 deployment rings per Autopatch group. |
-| Deciding which device(s) belong to deployment rings | Along with using your existing device-based Azure AD groups and choosing the number of deployment rings, you can also decide which devices belong to deployment rings during the device registration process when setting up Autopatch groups. |
+| Deciding which device(s) belong to deployment rings | Along with using your existing device-based Microsoft Entra groups and choosing the number of deployment rings, you can also decide which devices belong to deployment rings during the device registration process when setting up Autopatch groups. |
 | Choosing the deployment cadence | You choose the right software update deployment cadence for your business. |
 
 ## High-level architecture diagram overview
@@ -43,8 +43,8 @@ Autopatch groups is a function app that is part of the device registration micro
 | Step | Description |
 | ----- | ----- |
 | Step 1: Create an Autopatch group | Create an Autopatch group. |
-| Step 2: Windows Autopatch uses Microsoft Graph to create Azure AD and policy assignments | Windows Autopatch service uses Microsoft Graph to coordinate the creation of:<ul><li>Azure AD groups</li><li>Software update policy assignments with other Microsoft services, such as Azure AD, Intune, and Windows Update for Business (WUfB) based on IT admin choices when you create or edit an Autopatch group.</li></ul> |
-| Step 3: Intune assigns software update policies | Once Azure AD groups are created in the Azure AD service, Intune is used to assign the software update policies to these groups and provide the number of devices that need the software update policies to the Windows Update for Business (WUfB) service. |
+| Step 2: Windows Autopatch uses Microsoft Graph to create Microsoft Entra ID and policy assignments | Windows Autopatch service uses Microsoft Graph to coordinate the creation of:<ul><li>Microsoft Entra groups</li><li>Software update policy assignments with other Microsoft services, such as Microsoft Entra ID, Intune, and Windows Update for Business (WUfB) based on IT admin choices when you create or edit an Autopatch group.</li></ul> |
+| Step 3: Intune assigns software update policies | Once Microsoft Entra groups are created in the Microsoft Entra service, Intune is used to assign the software update policies to these groups and provide the number of devices that need the software update policies to the Windows Update for Business (WUfB) service. |
 | Step 4: Windows Update for Business responsibilities | Windows Update for Business (WUfB) is the service responsible for:<ul><li>Delivering those update policies</li><li>Retrieving update deployment statuses back from devices</li><li>Sending back the status information to Microsoft Intune, and then to the Windows Autopatch service</li></ul> |
 
 ## Key concepts
@@ -70,7 +70,7 @@ The Default Autopatch group **can’t** be deleted or renamed. However, you can 
 
 #### Default deployment ring composition
 
-By default, the following [software update-based deployment rings](#software-based-deployment-rings), represented by Azure AD assigned groups, are used:
+By default, the following [software update-based deployment rings](#software-based-deployment-rings), represented by Microsoft Entra ID assigned groups, are used:
 
 - Windows Autopatch – Test
 - Windows Autopatch – Ring1
@@ -84,7 +84,7 @@ By default, the following [software update-based deployment rings](#software-bas
 > For more information about the differences between **Assigned** and **Dynamic** deployment ring distribution types, see [about deployment rings](#about-deployment-rings). Only deployment rings that are placed in between the **Test** and the **Last** deployment rings can be used with the **Dynamic** deployment ring distributions.
 
 > [!CAUTION]
-> These and other Azure AD assigned groups created by Autopatch groups **can't** be missing in your tenant, otherwise, Autopatch groups might not function properly.
+> These and other Microsoft Entra ID assigned groups created by Autopatch groups **can't** be missing in your tenant, otherwise, Autopatch groups might not function properly.
 
 The **Last** deployment ring, the fifth deployment ring in the Default Autopatch group, is intended to provide coverage for scenarios where a group of specialized devices and/or VIP/Executive users. They must receive software update deployments after the organization’s general population to mitigate disruptions to your organization’s critical businesses.
 
@@ -96,7 +96,7 @@ The Default Autopatch group provides a default update deployment cadence for its
 
 Autopatch groups set up the [Update rings policy for Windows 10 and later](/mem/intune/protect/windows-10-update-rings) for each of its deployment rings in the Default Autopatch group. See the following default policy values:
 
-| Policy name | Azure AD group assignment | Quality updates deferral in days | Feature updates deferral in days | Feature updates uninstall window in days | Deadline for quality updates in days | Deadline for feature updates in days | Grace period | Auto restart before deadline |
+| Policy name | Microsoft Entra group assignment | Quality updates deferral in days | Feature updates deferral in days | Feature updates uninstall window in days | Deadline for quality updates in days | Deadline for feature updates in days | Grace period | Auto restart before deadline |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | Windows Autopatch Update Policy - default - Test | Windows Autopatch - Test | 0 | 0 | 30 | 0 | 5 | 0 | Yes |
 | Windows Autopatch Update Policy - default - Ring1 | Windows Autopatch - Ring1 | 1 | 0 | 30 | 2 | 5 |2 | Yes |
@@ -108,7 +108,7 @@ Autopatch groups set up the [Update rings policy for Windows 10 and later](/mem/
 
 Autopatch groups set up the [feature updates for Windows 10 and later policies](/mem/intune/protect/windows-10-feature-updates) for each of its deployment rings in the Default Autopatch group, see the following default policy values:
 
-| Policy name | Azure AD group assignment |Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
+| Policy name | Microsoft Entra group assignment |Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | Windows Autopatch - DSS Policy [Test] | Windows Autopatch - Test | Windows 10 21H2 | Make update available as soon as possible | N/A | N/A | N/A | June 11, 2024; 1:00AM |
 | Windows Autopatch - DSS Policy [Ring1] | Windows Autopatch - Ring1 | Windows 10 21H2 | Make update available as soon as possible | N/A | N/A | N/A | June 11, 2024; 1:00AM |
@@ -129,12 +129,12 @@ By default, a Custom Autopatch group has the Test and Last deployment rings auto
 
 Deployment rings make it possible for an Autopatch group to have software update deployments sequentially delivered in a gradual rollout within the Autopatch group.
 
-Windows Autopatch aligns with Azure AD and Intune terminology for device group management. There are two types of deployment ring group distribution in Autopatch groups:
+Windows Autopatch aligns with Microsoft Entra ID and Intune terminology for device group management. There are two types of deployment ring group distribution in Autopatch groups:
 
 | Deployment ring distribution | Description |
 | ----- | ----- |
-| Dynamic | You can use one or more device-based Azure AD groups, either dynamic query-based or assigned to use in your deployment ring composition.<p>Azure AD groups that are used with the Dynamic distribution type can be used to distribute devices across several deployment rings based on percentage values that can be customized.</p> |
-| Assigned | You can use one single device-based Azure AD group, either dynamic query-based, or assigned to use in your deployment ring composition. |
+| Dynamic | You can use one or more device-based Microsoft Entra groups, either dynamic query-based or assigned to use in your deployment ring composition.<p>Microsoft Entra groups that are used with the Dynamic distribution type can be used to distribute devices across several deployment rings based on percentage values that can be customized.</p> |
+| Assigned | You can use one single device-based Microsoft Entra group, either dynamic query-based, or assigned to use in your deployment ring composition. |
 | Combination of Dynamic and Assigned | To provide a greater level of flexibility when working on deployment ring compositions, you can combine both device distribution types in Autopatch groups.<p>The combination of Dynamic and Assigned device distribution is **not** supported for the Test and Last deployment ring in Autopatch groups.</p> |
 
 #### About the Test and Last deployment rings
@@ -147,7 +147,7 @@ If you only keep Test and Last deployment rings in your Default Autopatch group,
 > Both the **Test** and **Last** deployment rings **can't** be removed or renamed from the Default or Custom Autopatch groups. Autopatch groups don't support the use of one single deployment ring as part of its deployment ring composition because you need at least two deployment rings for their gradual rollout. If you must implement a specific scenario with a single deployment ring, and gradual rollout isn’t required, consider managing these devices outside Windows Autopatch.
 
 > [!TIP]
-> Both the **Test** and **Last** deployment rings only support one single Azure AD group assignment at a time. If you need to assign more than one Azure AD group, you can nest the other Azure AD groups under the ones you plan to use with the **Test** and **Last** deployment rings. Only one level of Azure AD group nesting is supported.
+> Both the **Test** and **Last** deployment rings only support one single Microsoft Entra group assignment at a time. If you need to assign more than one Microsoft Entra group, you can nest the other Microsoft Entra groups under the ones you plan to use with the **Test** and **Last** deployment rings. Only one level of Microsoft Entra group nesting is supported.
 
 #### Service-based versus software update-based deployment rings
 
@@ -160,7 +160,7 @@ Autopatch groups creates two different layers. Each layer contains its own deplo
 
 The service-based deployment ring set is exclusively used to keep Windows Autopatch updated with both service and device-level configuration policies, apps and APIs needed for core functions of the service.
 
-The following are the Azure AD assigned groups that represent the service-based deployment rings. These groups can't be deleted or renamed:
+The following are the Microsoft Entra ID assigned groups that represent the service-based deployment rings. These groups can't be deleted or renamed:
 
 - Modern Workplace Devices-Windows Autopatch-Test
 - Modern Workplace Devices-Windows Autopatch-First
@@ -168,13 +168,13 @@ The following are the Azure AD assigned groups that represent the service-based 
 - Modern Workplace Devices-Windows Autopatch-Broad
 
 > [!CAUTION]
-> **Don’t** modify the Azure AD group membership types (Assigned and Dynamic). Otherwise, the Windows Autopatch service won’t be able to read the device group membership from these groups, and causes the Autopatch groups feature and other service-related operations to not work properly. <p>Additionally, it's **not** supported to have Configuration Manager collections directly synced to any Azure AD group created by Autopatch groups.</p>
+> **Don’t** modify the Microsoft Entra group membership types (Assigned and Dynamic). Otherwise, the Windows Autopatch service won’t be able to read the device group membership from these groups, and causes the Autopatch groups feature and other service-related operations to not work properly. <p>Additionally, it's **not** supported to have Configuration Manager collections directly synced to any Microsoft Entra group created by Autopatch groups.</p>
 
 ##### Software-based deployment rings
 
 The software-based deployment ring set is exclusively used with software update management policies, such as the Windows update ring and feature update policies, in the Default Windows Autopatch group.
 
-The following are the Azure AD assigned groups that represent the software updates-based deployment rings. These groups can't be deleted or renamed:
+The following are the Microsoft Entra ID assigned groups that represent the software updates-based deployment rings. These groups can't be deleted or renamed:
 
 - Windows Autopatch - Test
 - Windows Autopatch – Ring1
@@ -183,14 +183,14 @@ The following are the Azure AD assigned groups that represent the software updat
 - Windows Autopatch – Last
 
 > [!IMPORTANT]
-> Additional Azure AD assigned groups are created and added to list when you add more deployment rings to the Default Autopatch group.
+> Additional Microsoft Entra ID assigned groups are created and added to list when you add more deployment rings to the Default Autopatch group.
 
 > [!CAUTION]
-> **Don’t** modify the Azure AD group membership types (Assigned and Dynamic). Otherwise, the Windows Autopatch service won’t be able to read the device group membership from these groups, and causes the Autopatch groups feature and other service-related operations to not work properly. <p>Additionally, it's **not** supported to have Configuration Manager collections directly synced to any Azure AD group created by Autopatch groups.</p>
+> **Don’t** modify the Microsoft Entra group membership types (Assigned and Dynamic). Otherwise, the Windows Autopatch service won’t be able to read the device group membership from these groups, and causes the Autopatch groups feature and other service-related operations to not work properly. <p>Additionally, it's **not** supported to have Configuration Manager collections directly synced to any Microsoft Entra group created by Autopatch groups.</p>
 
 ### About device registration
 
-Autopatch groups register devices with the Windows Autopatch service when you either [create](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#create-a-custom-autopatch-group) or [edit a Custom Autopatch group](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group), and/or when you [edit the Default Autopatch group](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group) to use your existing Azure AD groups instead of the Windows Autopatch Device Registration group provided by the service.
+Autopatch groups register devices with the Windows Autopatch service when you either [create](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#create-a-custom-autopatch-group) or [edit a Custom Autopatch group](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group), and/or when you [edit the Default Autopatch group](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group) to use your existing Microsoft Entra groups instead of the Windows Autopatch Device Registration group provided by the service.
 
 ## Common ways to use Autopatch groups
 

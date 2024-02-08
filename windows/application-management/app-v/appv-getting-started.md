@@ -2,13 +2,14 @@
 title: Getting Started with App-V (Windows 10/11)
 description: Get started with Microsoft Application Virtualization (App-V) for Windows 10/11. App-V for Windows client devices delivers Win32 applications to users as virtual applications.
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
+ms.collection: must-keep
 ms.topic: article
-ms.technology: itpro-apps
+ms.subservice: itpro-apps
 ---
 
 # Getting started with App-V for Windows client

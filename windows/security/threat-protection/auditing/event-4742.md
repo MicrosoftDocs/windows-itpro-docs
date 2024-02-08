@@ -2,7 +2,6 @@
 title: 4742(S) A computer account was changed. 
 description: Describes security event 4742(S) A computer account was changed. This event is generated every time a computer object is changed.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 
@@ -197,43 +195,9 @@ Typical **Primary Group** values for computer accounts:
   > [!NOTE]
   > **Service Principal Name (SPN)** is the name by which a client uniquely identifies an instance of a service. If you install multiple instances of a service on computers throughout a forest, each instance must have its own SPN. A given service instance can have multiple SPNs if there are multiple names that clients might use for authentication. For example, an SPN always includes the name of the host computer on which the service instance is running, so a service instance might register an SPN for each name or alias of its host.
 
--   **Old UAC Value** \[Type = UnicodeString\]: specifies flags that control password, lockout, disable/enable, script, and other behavior for the user or computer account. This parameter contains the previous value of **userAccountControl** attribute of computer object.
+-   **Old UAC Value** [Type = UnicodeString]: specifies flags that control password, lockout, disable/enable, script, and other behavior for the user or computer account. This parameter contains the previous value of the SAM implementation of account flags (definition differs from userAccountControl in AD).
 
--   **New UAC Value** \[Type = UnicodeString\]: specifies flags that control password, lockout, disable/enable, script, and other behavior for the user or computer account. If the value of **userAccountControl** attribute of computer object was changed, you will see the new value here.
-
-To decode this value, you can go through the property value definitions in the “Table 7. User’s or Computer’s account UAC flags.” from largest to smallest. Compare each property value to the flags value in the event. If the flags value in the event is greater than or equal to the property value, then the property is "set" and applies to that event. Subtract the property value from the flags value in the event and note that the flag applies and then go on to the next flag.
-
-Here's an example: Flags value from event: 0x15
-
-Decoding:
-
-• PASSWD\_NOTREQD 0x0020
-
-• LOCKOUT 0x0010
-
-• HOMEDIR\_REQUIRED 0x0008
-
-• (undeclared) 0x0004
-
-• ACCOUNTDISABLE 0x0002
-
-• SCRIPT 0x0001
-
-0x0020 &gt; 0x15, so PASSWD\_NOTREQD does not apply to this event
-
-0x10 &lt; 0x15, so LOCKOUT applies to this event. 0x15 - 0x10 = 0x5
-
-0x4 &lt; 0x5, so the undeclared value is set. We'll pretend it doesn't mean anything. 0x5 - 0x4 = 0x1
-
-0x2 &gt; 0x1, so ACCOUNTDISABLE does not apply to this event
-
-0x1 = 0x1, so SCRIPT applies to this event. 0x1 - 0x1 = 0x0, we're done.
-
-So this UAC flags value decodes to: LOCKOUT and SCRIPT
-
--   **User Account Control** \[Type = UnicodeString\]**:** shows the list of changes in **userAccountControl** attribute. You will see a line of text for each change. See possible values in here: “Table 7. User’s or Computer’s account UAC flags.”. In the “User Account Control field text” column, you can see text that will be displayed in the **User Account Control** field in 4742 event.
-
-<!-- -->
+-   **New UAC Value** [Type = UnicodeString]: specifies flags that control password, lockout, disable/enable, script, and other behavior for the user or computer account. This parameter contains the value of the SAM implementation of account flags (definition differs from userAccountControl in AD). If the value was changed, you will see the new value here. For a list of account flags you may see here, refer to [[MS-SAMR]: USER_ACCOUNT Codes](/openspecs/windows_protocols/ms-samr/b10cfda1-f24f-441b-8f43-80cb93e786ec).
 
 -   **User Parameters** \[Type = UnicodeString\]: if you change any setting using Active Directory Users and Computers management console in Dial-in tab of computer’s account properties, then you will see `<value changed, but not displayed>` in this field.
 

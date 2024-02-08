@@ -2,13 +2,14 @@
 title: Planning for High Availability with App-V Server
 description: Learn what you need to know so you can plan for high availability with Application Virtualization (App-V) server.
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
+ms.collection: must-keep
 ms.topic: article
-ms.technology: itpro-apps
+ms.subservice: itpro-apps
 ---
 
 # Planning for high availability with App-V Server

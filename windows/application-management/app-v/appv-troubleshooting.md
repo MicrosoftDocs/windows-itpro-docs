@@ -2,12 +2,13 @@
 title: Troubleshooting App-V (Windows 10/11)
 description: Learn how to find information about troubleshooting Application Virtualization (App-V) and information about other App-V articles.
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
-ms.technology: itpro-apps
+ms.collection: must-keep
+ms.subservice: itpro-apps
 ---
 
 # Troubleshooting App-V

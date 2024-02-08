@@ -2,13 +2,14 @@
 title: How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help (Windows 10/11)
 description: How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 09/27/2018
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
+ms.collection: must-keep
 ms.topic: article
-ms.technology: itpro-apps
+ms.subservice: itpro-apps
 ---
 
 # How to load the Windows PowerShell cmdlets for App-V and get cmdlet help

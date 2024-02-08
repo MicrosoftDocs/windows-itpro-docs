@@ -1,20 +1,15 @@
 ---
 title: HealthAttestation CSP
 description: Learn more about the HealthAttestation CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- HealthAttestation-Begin -->
 # HealthAttestation CSP
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- HealthAttestation-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -32,6 +27,7 @@ The following list is a description of the functions performed by the Device Hea
 The following list shows the HealthAttestation configuration service provider nodes:
 
 - ./Vendor/MSFT/HealthAttestation
+  - [AttestErrorMessage](#attesterrormessage)
   - [AttestStatus](#atteststatus)
   - [Certificate](#certificate)
   - [CorrelationID](#correlationid)
@@ -49,13 +45,52 @@ The following list shows the HealthAttestation configuration service provider no
   - [VerifyHealth](#verifyhealth)
 <!-- HealthAttestation-Tree-End -->
 
+<!-- Device-AttestErrorMessage-Begin -->
+## AttestErrorMessage
+
+<!-- Device-AttestErrorMessage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-AttestErrorMessage-Applicability-End -->
+
+<!-- Device-AttestErrorMessage-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/HealthAttestation/AttestErrorMessage
+```
+<!-- Device-AttestErrorMessage-OmaUri-End -->
+
+<!-- Device-AttestErrorMessage-Description-Begin -->
+<!-- Description-Source-DDF -->
+AttestErrorMessage maintains the error message for the last attestation session, if returned by the attestation service.
+<!-- Device-AttestErrorMessage-Description-End -->
+
+<!-- Device-AttestErrorMessage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-AttestErrorMessage-Editable-End -->
+
+<!-- Device-AttestErrorMessage-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get |
+<!-- Device-AttestErrorMessage-DFProperties-End -->
+
+<!-- Device-AttestErrorMessage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-AttestErrorMessage-Examples-End -->
+
+<!-- Device-AttestErrorMessage-End -->
+
 <!-- Device-AttestStatus-Begin -->
 ## AttestStatus
 
 <!-- Device-AttestStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AttestStatus-Applicability-End -->
 
 <!-- Device-AttestStatus-OmaUri-Begin -->
@@ -122,7 +157,7 @@ The status is always cleared prior to making the attest service call.
 <!-- Device-Certificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Certificate-Applicability-End -->
 
 <!-- Device-Certificate-OmaUri-Begin -->
@@ -162,7 +197,7 @@ Value type is a base64 string.
 <!-- Device-CorrelationID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CorrelationID-Applicability-End -->
 
 <!-- Device-CorrelationID-OmaUri-Begin -->
@@ -201,7 +236,7 @@ Identifies a unique device health attestation session. CorrelationId is used to 
 <!-- Device-CurrentProtocolVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-CurrentProtocolVersion-Applicability-End -->
 
 <!-- Device-CurrentProtocolVersion-OmaUri-Begin -->
@@ -240,7 +275,7 @@ Provides the current protocol version that the client is using to communicate wi
 <!-- Device-ForceRetrieve-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ForceRetrieve-Applicability-End -->
 
 <!-- Device-ForceRetrieve-OmaUri-Begin -->
@@ -289,7 +324,7 @@ Instructs the client to initiate a new request to DHA-Service, and get a new DHA
 <!-- Device-GetAttestReport-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-GetAttestReport-Applicability-End -->
 
 <!-- Device-GetAttestReport-OmaUri-Begin -->
@@ -357,7 +392,7 @@ The report is stored in a registry key in the respective MDM enrollment store.
 <!-- Device-GetServiceCorrelationIDs-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-GetServiceCorrelationIDs-Applicability-End -->
 
 <!-- Device-GetServiceCorrelationIDs-OmaUri-Begin -->
@@ -426,7 +461,7 @@ If there's more than one correlation ID, they're separated by ";" in the string.
 <!-- Device-HASEndpoint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-HASEndpoint-Applicability-End -->
 
 <!-- Device-HASEndpoint-OmaUri-Begin -->
@@ -466,7 +501,7 @@ Identifies the fully qualified domain name (FQDN) of the DHA-Service that's assi
 <!-- Device-MaxSupportedProtocolVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MaxSupportedProtocolVersion-Applicability-End -->
 
 <!-- Device-MaxSupportedProtocolVersion-OmaUri-Begin -->
@@ -505,7 +540,7 @@ Returns the maximum protocol version that this client can support.
 <!-- Device-Nonce-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Nonce-Applicability-End -->
 
 <!-- Device-Nonce-OmaUri-Begin -->
@@ -545,7 +580,7 @@ Enables MDMs to protect the device health attestation communications from man-in
 <!-- Device-PreferredMaxProtocolVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-PreferredMaxProtocolVersion-Applicability-End -->
 
 <!-- Device-PreferredMaxProtocolVersion-OmaUri-Begin -->
@@ -585,7 +620,7 @@ Provides the maximum preferred protocol version that the client is configured to
 <!-- Device-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Status-Applicability-End -->
 
 <!-- Device-Status-OmaUri-Begin -->
@@ -624,7 +659,7 @@ Provides the current status of the device health request. For the complete list 
 <!-- Device-TpmReadyStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-TpmReadyStatus-Applicability-End -->
 
 <!-- Device-TpmReadyStatus-OmaUri-Begin -->
@@ -663,7 +698,7 @@ Returns a bitmask of information describing the state of TPM. It indicates wheth
 <!-- Device-TriggerAttestation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-TriggerAttestation-Applicability-End -->
 
 <!-- Device-TriggerAttestation-OmaUri-Begin -->
@@ -726,7 +761,7 @@ If the attestation process is launched successfully, this node will return code 
   - rpID (Relying Party Identifier): This field contains an identifier that can be used to help determine the caller.
   - serviceEndpoint : This field contains the complete URL of the Microsoft Azure Attestation provider instance to be used for evaluation.
   - nonce: This field contains an arbitrary number that can be used only once in a cryptographic communication. It's often a random or pseudo-random number issued in an authentication protocol to ensure that old communications can't be reused in replay attacks.
-  - aadToken: The Azure Active Directory token to be used for authentication against the Microsoft Azure Attestation service.
+  - aadToken: The Microsoft Entra token to be used for authentication against the Microsoft Azure Attestation service.
   - cv: This field contains an identifier(Correlation Vector) that will be passed in to the service call, and that can be used for diagnostics purposes.
 
 - Sample `<Data>`:
@@ -750,7 +785,7 @@ If the attestation process is launched successfully, this node will return code 
 <!-- Device-VerifyHealth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-VerifyHealth-Applicability-End -->
 
 <!-- Device-VerifyHealth-OmaUri-Begin -->

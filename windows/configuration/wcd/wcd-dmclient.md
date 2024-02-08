@@ -1,15 +1,8 @@
 ---
-title: DMClient (Windows 10)
+title: DMClient
 description: This section describes the DMClient setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
-ms.topic: article
-ms.date: 04/30/2018
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
+ms.topic: reference
+ms.date: 01/25/2024
 ---
 
 # DMClient (Windows Configuration Designer reference)
@@ -20,9 +13,9 @@ Use to specify enterprise-specific mobile device management configuration settin
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| UpdateManagementServiceAddress | ✔️  | ✔️ |  | ✔️ |
+| UpdateManagementServiceAddress | ✅  | ✅ |  | ✅ |
 
-For the **UpdateManagementServiceAddress** setting, enter a list of servers. The first server in the semi-colon delimited list is the server that will be used to instantiate MDM sessions. 
+For the **UpdateManagementServiceAddress** setting, enter a list of servers. The first server in the semi-colon delimited list is the server that will be used to instantiate MDM sessions.
 
 ## Related topics
 

@@ -1,14 +1,7 @@
 ---
 title: MixedReality Policy CSP
 description: Learn more about the MixedReality Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/02/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -31,7 +24,7 @@ These policies are only supported on [Microsoft HoloLens 2](/hololens/hololens2-
 <!-- AADGroupMembershipCacheValidityInDays-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AADGroupMembershipCacheValidityInDays-Applicability-End -->
 
 <!-- AADGroupMembershipCacheValidityInDays-OmaUri-Begin -->
@@ -42,24 +35,24 @@ These policies are only supported on [Microsoft HoloLens 2](/hololens/hololens2-
 
 <!-- AADGroupMembershipCacheValidityInDays-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy controls for how many days, AAD group membership cache is allowed to be used for Assigned Access configurations targeting AAD groups for signed in user. Once this policy is set only then cache is used otherwise not. In order for this policy to take effect, user must sign-out and sign-in with Internet available at least once before the cache can be used for subsequent 'disconnected' sessions.
+This policy controls for how many days, Microsoft Entra group membership cache is allowed to be used for Assigned Access configurations targeting Microsoft Entra groups for signed in user. Once this policy is set only then cache is used otherwise not. In order for this policy to take effect, user must sign-out and sign-in with Internet available at least once before the cache can be used for subsequent 'disconnected' sessions.
 <!-- AADGroupMembershipCacheValidityInDays-Description-End -->
 
 <!-- AADGroupMembershipCacheValidityInDays-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Steps to use this policy correctly:
 
-1. Create a device configuration profile for kiosk, which targets Azure AD groups. Assign it to the HoloLens devices.
+1. Create a device configuration profile for kiosk, which targets Microsoft Entra groups. Assign it to the HoloLens devices.
 1. Create a custom OMA URI-based device configuration. Set this policy value to the chosen number of days greater than zero (`0`). Then assign the configuration to the HoloLens devices.
     - The URI value should be entered in OMA-URI text box as `./Device/Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays`
     - The value can be any integer in the allowed range.
 1. Enroll the HoloLens devices. Verify that both configurations apply to the device.
-1. When internet is available, sign in as an Azure AD user. Once the user signs-in, and Azure AD group membership is confirmed successfully, the cache will be created.
+1. When internet is available, sign in as a Microsoft Entra user. Once the user signs-in, and Microsoft Entra group membership is confirmed successfully, the cache will be created.
 1. You can now take the HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days.
-1. Steps 4 and 5 can be repeated for any other Azure AD user. The key point is that any Azure AD user must sign-in at least once to a device while on the internet. Then we can determine that they're a member of an Azure AD group to which the kiosk configuration is targeted.
+1. Steps 4 and 5 can be repeated for any other Microsoft Entra user. The key point is that any Microsoft Entra user must sign-in at least once to a device while on the internet. Then we can determine that they're a member of a Microsoft Entra group to which the kiosk configuration is targeted.
 
 > [!NOTE]
-> Until you do step 4 for an Azure AD user, the user will experience failure behavior similar to a disconnected environment.
+> Until you do step 4 for a Microsoft Entra user, the user will experience failure behavior similar to a disconnected environment.
 <!-- AADGroupMembershipCacheValidityInDays-Editable-End -->
 
 <!-- AADGroupMembershipCacheValidityInDays-DFProperties-Begin -->
@@ -85,7 +78,7 @@ Steps to use this policy correctly:
 <!-- AllowCaptivePortalBeforeLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- AllowCaptivePortalBeforeLogon-Applicability-End -->
 
 <!-- AllowCaptivePortalBeforeLogon-OmaUri-Begin -->
@@ -135,7 +128,7 @@ This opt-in policy can help with the setup of new devices in new areas or new us
 <!-- AllowLaunchUriInSingleAppKiosk-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- AllowLaunchUriInSingleAppKiosk-Applicability-End -->
 
 <!-- AllowLaunchUriInSingleAppKiosk-OmaUri-Begin -->
@@ -187,7 +180,7 @@ For more information on the Launcher API, see [Launcher Class (Windows.System) -
 <!-- AutoLogonUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- AutoLogonUser-Applicability-End -->
 
 <!-- AutoLogonUser-OmaUri-Begin -->
@@ -212,7 +205,7 @@ On a device where you configure this policy, the user specified in the policy ne
 > [!NOTE]
 >
 > - Some events such as major OS updates may require the specified user to sign in to the device again to resume auto-logon behavior.
-> - Auto-logon is only supported for Microsoft accounts and Azure Active Directory (Azure AD) users.
+> - Auto-logon is only supported for Microsoft accounts and Microsoft Entra users.
 <!-- AutoLogonUser-Editable-End -->
 
 <!-- AutoLogonUser-DFProperties-Begin -->
@@ -236,7 +229,7 @@ On a device where you configure this policy, the user specified in the policy ne
 <!-- AutomaticDisplayAdjustment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AutomaticDisplayAdjustment-Applicability-End -->
 
 <!-- AutomaticDisplayAdjustment-OmaUri-Begin -->
@@ -285,7 +278,7 @@ This policy controls if the HoloLens displays will be automatically adjusted for
 <!-- BrightnessButtonDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- BrightnessButtonDisabled-Applicability-End -->
 
 <!-- BrightnessButtonDisabled-OmaUri-Begin -->
@@ -328,13 +321,104 @@ This policy setting controls if pressing the brightness button changes the brigh
 
 <!-- BrightnessButtonDisabled-End -->
 
+<!-- ConfigureDeviceStandbyAction-Begin -->
+## ConfigureDeviceStandbyAction
+
+<!-- ConfigureDeviceStandbyAction-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ConfigureDeviceStandbyAction-Applicability-End -->
+
+<!-- ConfigureDeviceStandbyAction-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureDeviceStandbyAction
+```
+<!-- ConfigureDeviceStandbyAction-OmaUri-End -->
+
+<!-- ConfigureDeviceStandbyAction-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting controls device maintenance action during standby.
+<!-- ConfigureDeviceStandbyAction-Description-End -->
+
+<!-- ConfigureDeviceStandbyAction-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureDeviceStandbyAction-Editable-End -->
+
+<!-- ConfigureDeviceStandbyAction-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ConfigureDeviceStandbyAction-DFProperties-End -->
+
+<!-- ConfigureDeviceStandbyAction-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not configured. |
+| 1 | Logoff users. |
+| 2 | Reboot device. |
+<!-- ConfigureDeviceStandbyAction-AllowedValues-End -->
+
+<!-- ConfigureDeviceStandbyAction-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureDeviceStandbyAction-Examples-End -->
+
+<!-- ConfigureDeviceStandbyAction-End -->
+
+<!-- ConfigureDeviceStandbyActionTimeout-Begin -->
+## ConfigureDeviceStandbyActionTimeout
+
+<!-- ConfigureDeviceStandbyActionTimeout-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ConfigureDeviceStandbyActionTimeout-Applicability-End -->
+
+<!-- ConfigureDeviceStandbyActionTimeout-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureDeviceStandbyActionTimeout
+```
+<!-- ConfigureDeviceStandbyActionTimeout-OmaUri-End -->
+
+<!-- ConfigureDeviceStandbyActionTimeout-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting controls when to start maintenance action after device enters standby. The timeout value is in hours.
+<!-- ConfigureDeviceStandbyActionTimeout-Description-End -->
+
+<!-- ConfigureDeviceStandbyActionTimeout-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureDeviceStandbyActionTimeout-Editable-End -->
+
+<!-- ConfigureDeviceStandbyActionTimeout-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[1-168]` |
+| Default Value  | 8 |
+<!-- ConfigureDeviceStandbyActionTimeout-DFProperties-End -->
+
+<!-- ConfigureDeviceStandbyActionTimeout-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureDeviceStandbyActionTimeout-Examples-End -->
+
+<!-- ConfigureDeviceStandbyActionTimeout-End -->
+
 <!-- ConfigureMovingPlatform-Begin -->
 ## ConfigureMovingPlatform
 
 <!-- ConfigureMovingPlatform-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- ConfigureMovingPlatform-Applicability-End -->
 
 <!-- ConfigureMovingPlatform-OmaUri-Begin -->
@@ -385,7 +469,7 @@ For more information, see [Moving platform mode on low dynamic motion moving pla
 <!-- ConfigureNtpClient-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- ConfigureNtpClient-Applicability-End -->
 
 <!-- ConfigureNtpClient-OmaUri-Begin -->
@@ -490,13 +574,117 @@ The following XML string is an example of the value for this policy:
 
 <!-- ConfigureNtpClient-End -->
 
+<!-- ConfigureSharedAccount-Begin -->
+## ConfigureSharedAccount
+
+<!-- ConfigureSharedAccount-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ConfigureSharedAccount-Applicability-End -->
+
+<!-- ConfigureSharedAccount-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureSharedAccount
+```
+<!-- ConfigureSharedAccount-OmaUri-End -->
+
+<!-- ConfigureSharedAccount-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy specifies the configuration for Shared Accounts on the device. Shared Accounts are Microsoft Entra accounts that are deployed to the device by an IT admin and can be used by anyone with physical access to the device. These accounts excel in deployments where the HoloLens device is used like a tool shared between multiple people and it doesn't matter which account is used to access Microsoft Entra resources. Because these accounts can be signed in without requiring the user to provide credentials, you should ensure that these devices are physically secure, with access granted only to authorized personnel. You should also lock down these accounts to only have access to the required resources.
+<!-- ConfigureSharedAccount-Description-End -->
+
+<!-- ConfigureSharedAccount-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureSharedAccount-Editable-End -->
+
+<!-- ConfigureSharedAccount-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ConfigureSharedAccount-DFProperties-End -->
+
+<!-- ConfigureSharedAccount-AllowedValues-Begin -->
+**Allowed values**:
+
+<br>
+<details>
+  <summary>Expand to see schema XML</summary>
+
+```xml
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="SharedAccountConfiguration">
+    <xsd:complexType mixed="true">
+      <xsd:sequence>
+        <xsd:element minOccurs="1" maxOccurs="1" name="SharedAccount">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:choice>
+                <xsd:element name="IssuerThumbprint">
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="40" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="IssuerName">
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="512" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:element minOccurs="0" maxOccurs="1" name="EkuOidRequirements">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element maxOccurs="5" name="Oid">
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:maxLength value="100" />
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element minOccurs="0" maxOccurs="1" name="AutoLogon">
+                <xsd:complexType>
+                  <xsd:simpleContent>
+                    <xsd:extension base="xsd:string">
+                      <xsd:attribute name="forced" type="xsd:boolean" />
+                    </xsd:extension>
+                  </xsd:simpleContent>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
+```
+
+</details>
+<!-- ConfigureSharedAccount-AllowedValues-End -->
+
+<!-- ConfigureSharedAccount-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureSharedAccount-Examples-End -->
+
+<!-- ConfigureSharedAccount-End -->
+
 <!-- DisallowNetworkConnectivityPassivePolling-Begin -->
 ## DisallowNetworkConnectivityPassivePolling
 
 <!-- DisallowNetworkConnectivityPassivePolling-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- DisallowNetworkConnectivityPassivePolling-Applicability-End -->
 
 <!-- DisallowNetworkConnectivityPassivePolling-OmaUri-Begin -->
@@ -546,7 +734,7 @@ Windows Network Connectivity Status Indicator may get a false positive internet-
 <!-- EnableStartMenuSingleHandGesture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableStartMenuSingleHandGesture-Applicability-End -->
 
 <!-- EnableStartMenuSingleHandGesture-OmaUri-Begin -->
@@ -595,7 +783,7 @@ This policy setting controls if pinching your thumb and index finger, while look
 <!-- EnableStartMenuVoiceCommand-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableStartMenuVoiceCommand-Applicability-End -->
 
 <!-- EnableStartMenuVoiceCommand-OmaUri-Begin -->
@@ -644,7 +832,7 @@ This policy setting controls if using voice commands to open the Start menu is e
 <!-- EnableStartMenuWristTap-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableStartMenuWristTap-Applicability-End -->
 
 <!-- EnableStartMenuWristTap-OmaUri-Begin -->
@@ -693,7 +881,7 @@ This policy setting controls if tapping the Star icon on your wrist to open the 
 <!-- EyeTrackingCalibrationPrompt-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- EyeTrackingCalibrationPrompt-Applicability-End -->
 
 <!-- EyeTrackingCalibrationPrompt-OmaUri-Begin -->
@@ -742,7 +930,7 @@ This policy controls when a new person uses HoloLens device, if HoloLens should 
 <!-- FallbackDiagnostics-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- FallbackDiagnostics-Applicability-End -->
 
 <!-- FallbackDiagnostics-OmaUri-Begin -->
@@ -792,7 +980,7 @@ This policy setting controls, when and if diagnostic logs can be collected using
 <!-- HeadTrackingMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- HeadTrackingMode-Applicability-End -->
 
 <!-- HeadTrackingMode-OmaUri-Begin -->
@@ -839,7 +1027,7 @@ This policy configures behavior of HUP to determine, which algorithm to use for 
 <!-- ManualDownDirectionDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- ManualDownDirectionDisabled-Applicability-End -->
 
 <!-- ManualDownDirectionDisabled-OmaUri-Begin -->
@@ -889,7 +1077,7 @@ When the system automatically determines the down direction, it's using the meas
 <!-- MicrophoneDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- MicrophoneDisabled-Applicability-End -->
 
 <!-- MicrophoneDisabled-OmaUri-Begin -->
@@ -938,7 +1126,7 @@ This policy setting controls whether microphone on HoloLens 2 is disabled or not
 <!-- NtpClientEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- NtpClientEnabled-Applicability-End -->
 
 <!-- NtpClientEnabled-OmaUri-Begin -->
@@ -1007,7 +1195,7 @@ The following example XML string shows the value to enable this policy:
 <!-- PreferLogonAsOtherUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- PreferLogonAsOtherUser-Applicability-End -->
 
 <!-- PreferLogonAsOtherUser-OmaUri-Begin -->
@@ -1056,7 +1244,7 @@ This policy configures whether the Sign-In App should prefer showing Other User 
 <!-- RequireStartIconHold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- RequireStartIconHold-Applicability-End -->
 
 <!-- RequireStartIconHold-OmaUri-Begin -->
@@ -1105,7 +1293,7 @@ This policy setting controls if it's require that the Start icon to be pressed f
 <!-- RequireStartIconVisible-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- RequireStartIconVisible-Applicability-End -->
 
 <!-- RequireStartIconVisible-OmaUri-Begin -->
@@ -1154,7 +1342,7 @@ This policy setting controls if it's required that the Start icon to be looked a
 <!-- SkipCalibrationDuringSetup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- SkipCalibrationDuringSetup-Applicability-End -->
 
 <!-- SkipCalibrationDuringSetup-OmaUri-Begin -->
@@ -1205,7 +1393,7 @@ This policy configures whether the device will take the user through the eye tra
 <!-- SkipTrainingDuringSetup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- SkipTrainingDuringSetup-Applicability-End -->
 
 <!-- SkipTrainingDuringSetup-OmaUri-Begin -->
@@ -1255,7 +1443,7 @@ It skips the training experience of interactions with the hummingbird and Start 
 <!-- VisitorAutoLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- VisitorAutoLogon-Applicability-End -->
 
 <!-- VisitorAutoLogon-OmaUri-Begin -->
@@ -1304,7 +1492,7 @@ This policy controls whether a visitor user will be automatically logged in. Vis
 <!-- VolumeButtonDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- VolumeButtonDisabled-Applicability-End -->
 
 <!-- VolumeButtonDisabled-OmaUri-Begin -->

@@ -1,7 +1,7 @@
 ---
 title: Configure Take a Test in kiosk mode
 description: Learn how to configure Windows to execute the Take a Test app in kiosk mode, using Intune and provisioning packages.
-ms.date: 09/30/2022
+ms.date: 11/08/2023
 ms.topic: how-to
 ---
 
@@ -53,7 +53,7 @@ To configure devices using Intune for Education, follow these steps:
 
 ### Configure Take a Test with a custom policy
 
-[!INCLUDE [intune-custom-settings-1](includes/intune-custom-settings-1.md)]
+[!INCLUDE [intune-custom-settings-1](../../includes/configure/intune-custom-settings-1.md)]
 
 | Setting |
 |--------|
@@ -67,8 +67,8 @@ To configure devices using Intune for Education, follow these steps:
 
 :::image type="content" source="./images/takeatest/intune-take-a-test-custom-profile.png" alt-text="Intune portal - creation of a custom policy to configure Take a Test." lightbox="./images/takeatest/intune-take-a-test-custom-profile.png" border="true":::
 
-[!INCLUDE [intune-custom-settings-2](includes/intune-custom-settings-2.md)]
-[!INCLUDE [intune-custom-settings-info](includes/intune-custom-settings-info.md)]
+[!INCLUDE [intune-custom-settings-2](../../includes/configure/intune-custom-settings-2.md)]
+[!INCLUDE [intune-custom-settings-info](../../includes/configure/intune-custom-settings-info.md)]
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -171,7 +171,7 @@ $cimObject.HideFastUserSwitching = 1
 Set-CimInstance -CimInstance $cimObject
 ```
 
-#### [:::image type="icon" source="images/icons/windows-os.svg"::: **Settings app**](#tab/win)
+#### [:::image type="icon" source="images/icons/settings.svg"::: **Settings app**](#tab/settings)
 
 To create a local account, and configure Take a Test in kiosk mode using the Settings app:
 
@@ -189,7 +189,7 @@ To create a local account, and configure Take a Test in kiosk mode using the Set
 1. Under **Test taking settings** select the options you want to enable during the test
    - To enable printing, select **Require printing**
 
-      > [!NOTE]  
+      > [!NOTE]
       > Make sure a printer is pre-configured on the Take a Test account if you're enabling this option.
 
    - To enable teachers to monitor screens, select **Allow screen monitoring**
@@ -198,8 +198,8 @@ To create a local account, and configure Take a Test in kiosk mode using the Set
 1. To take the test, a student must sign in using the test-taking account selected in step 4
    :::image type="content" source="./images/takeatest/login-screen-take-a-test-single-pc.png" alt-text="Windows 11 SE login screen with the take a test account." border="true":::
 
-   > [!NOTE]  
-   > To sign-in with a local account on a device that is joined to Azure AD or Active Directory, you must prefix the username with either `<computername>\` or `.\`.
+   > [!NOTE]
+   > To sign-in with a local account on a device that is joined to Microsoft Entra ID or Active Directory, you must prefix the username with either `<computername>\` or `.\`.
 
 ---
 

@@ -1,17 +1,8 @@
 ---
 title: Server requirements for using OMA DM to manage Windows devices
 description: Learn about the general server requirements for using OMA DM to manage Windows devices, including the supported versions of OMA DM.
-ms.reviewer: 
-manager: aaroncz
-ms.author: vinpa
-ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 06/26/2017
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.topic: conceptual
+ms.date: 08/10/2023
 ---
 
 # Server requirements for using OMA DM to manage Windows devices
@@ -20,7 +11,7 @@ The following list shows the general server requirements for using OMA DM to man
 
 - The OMA DM server must support the OMA DM v1.1.2 or later protocol.
 
-- Secure Sockets Layer (SSL) must be on the OMA DM server, and it must provide server certificate-based authentication, data integrity check, and data encryption. If the certificate isn't issued by a commercial Certification Authority whose root certificate is pre-installed in the device, you must provision the enterprise root certificate in the device's Root store.
+- Secure Sockets Layer (TLS/SSL) must be on the OMA DM server, and it must provide server certificate-based authentication, data integrity check, and data encryption. If the certificate isn't issued by a commercial Certification Authority whose root certificate is preinstalled in the device, you must provision the enterprise root certificate in the device's Root store.
 
 - To authenticate the client at the application level, you must use either Basic or MD5 client authentication.
 

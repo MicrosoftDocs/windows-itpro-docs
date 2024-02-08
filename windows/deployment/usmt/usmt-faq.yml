@@ -1,21 +1,26 @@
 ### YamlMime:FAQ
 metadata:
-  title: 'Frequently Asked Questions (Windows 10)'
-  description: 'Learn about frequently asked questions and recommended solutions for migrations using User State Migration Tool (USMT) 10.0.'
+  title: 'USMT Frequently Asked Questions'
+  description: 'Learn about frequently asked questions and recommended solutions for migrations using User State Migration Tool (USMT).'
   ms.assetid: 813c13a7-6818-4e6e-9284-7ee49493241b
-  ms.prod: windows-client
-  ms.technology: itpro-deploy
+  ms.service: windows-client
+  ms.subservice: itpro-deploy
   author: frankroj
   ms.author: frankroj
   manager: aaroncz
   ms.mktglfcycl: deploy
   ms.sitesec: library
   audience: itpro
-  ms.date: 11/01/2022
+  ms.date: 01/09/2024
   ms.topic: faq
 title: Frequently Asked Questions
 summary: |
-  The following sections provide frequently asked questions and recommended solutions for migrations using User State Migration Tool (USMT) 10.0.
+  **Applies to:**
+  
+  - Windows 11
+  - Windows 10
+
+  The following sections provide frequently asked questions and recommended solutions for migrations using User State Migration Tool (USMT).
 
 
 sections:
@@ -33,54 +38,66 @@ sections:
           -   Uncompressed store
           
       - question: |
-          Can I store the files and settings directly on the destination computer or do I need a server?
+          Can the files and settings be stored directly on the destination computer or is a server needed?
         answer: |
-          You don't need to save the files to a server. If you're moving the user state to a new computer, you can create the store on a shared folder, on media that you can remove, such as a USB flash drive (UFD), or you can store it directly on the destination computer, as in the following steps:
+          Files don't need to be saved to a server. If moving the user state to a new computer, the store can be created on:
+
+          - A shared folder.
+          - On removable media, such as a USB flash drive (UFD).
+          - Directly on the destination computer.
+
+          To store it directly on the destination computer:
           
           1.  Create and share the directory `C:\store` on the destination computer.
           
-          2.  Run the **ScanState** tool on the source computer and save the files and settings to `\\<DestinationComputerName>\store`
+          1.  Run the **ScanState** tool on the source computer and save the files and settings to `\\<DestinationComputerName>\store`
           
-          3.  Run the **LoadState** tool on the destination computer and specify `C:\store` as the store location.
+          1.  Run the **LoadState** tool on the destination computer and specify `C:\store` as the store location.
           
       - question: |
-          Can I migrate data between operating systems with different languages?
+          Can data be migrated between operating systems with different languages?
         answer: |
           No. USMT doesn't support migrating data between operating systems with different languages; the source computer's operating-system language must match the destination computer's operating-system language.
 
       - question: |
-          Can I change the location of the temporary directory on the destination computer?
+          Can the location of the temporary directory on the destination computer be changed?
         answer: |
           Yes. The environment variable `USMT\_WORKING\_DIR` can be changed to an alternative temporary directory. There are some offline migration scenarios where changing the temporary directory is necessary, for example, when the USMT binaries are located on read-only Windows Preinstallation Environment (WinPE) boot media.
 
       - question: |
-          How do I install USMT?
+          How is USMT installed?
         answer: |
-          Because USMT is included in Windows Assessment and Deployment Kit (Windows ADK), you need to install the Windows ADK package on at least one computer in your environment. The USMT binaries can then be copied from the USMT directory located on the original computer where the Windows ADK was installed to additional client computers.
+          Because USMT is included in Windows Assessment and Deployment Kit (Windows ADK), the Windows ADK package needs to be installed on at least one computer in the environment. The USMT binaries can then be copied from the USMT directory located on the original computer where the Windows ADK was installed to additional client computers.
 
       - question: |
-          How do I uninstall USMT?
+          How is USMT uninstalled?
         answer: |
-          If you've installed the Windows ADK on the computer, uninstalling Windows ADK will uninstall USMT. For client computers that don't have the Windows ADK installed, you can delete the USMT directory to uninstall USMT.
+          For computers that have the Windows ADK installed, uninstalling the Windows ADK from the computer uninstalls USMT. For client computers that don't have the Windows ADK installed, the USMT directory can be deleted to uninstall USMT.
 
   - name: Files and Settings
     questions:
       - question: |
-          How can I exclude a folder or a certain type of file from the migration?
+          How can a folder or a certain type of file be excluded from the migration?
         answer: |
-          You can use the **&lt;unconditionalExclude&gt;** element to globally exclude data from the migration. For example, you can use this element to exclude all MP3 files on the computer or to exclude all files from `C:\UserData`. This element excludes objects regardless of any other **&lt;include&gt;** rules that are in the .xml files. For an example, see **&lt;unconditionalExclude&gt;** in the [Exclude files and settings](usmt-exclude-files-and-settings.md) article. For the syntax of this element, see [XML elements library](usmt-xml-elements-library.md).
+          The **\<unconditionalExclude\>** element can be used to globally exclude data from the migration. For example, this element can be used to exclude all MP3 files on the computer or to exclude all files from `C:\UserData`. This element excludes objects regardless of any other **\<include\>** rules that are in the **.xml** files. For an example, see **\<unconditionalExclude\>** in the [Exclude files and settings](usmt-exclude-files-and-settings.md) article. For the syntax of this element, see [XML elements library](usmt-xml-elements-library.md).
           
       - question: |
           What happens to files that were located on a drive that don't exist on the destination computer?
         answer: |
-          USMT migrates the files to the `%SystemDrive%` while maintaining the correct folder hierarchy. For example, if `E:\data\File.pst` is on the source computer, but the destination computer doesn't have an E:\\ drive, the file will be migrated to `C:\data\File.pst`, if C:\\ is the system drive. This behavior holds true even when **&lt;locationModify&gt;** rules attempt to move data to a drive that doesn't exist on the destination computer.
+          USMT migrates the files to the `%SystemDrive%` while maintaining the correct folder hierarchy. For example:
+
+          - `E:\data\File.pst` is on the source computer.
+          - Destination computer doesn't have an E:\\ drive.
+          - C:\\ is the system drive on the destination computer.
+
+          the file is migrated to `C:\data\File.pst`. This behavior holds true even when **\<locationModify\>** rules attempt to move data to a drive that doesn't exist on the destination computer.
           
   - name: USMT .xml Files
     questions:
       - question: |
-          Where can I get examples of USMT .xml files?
+          Where are there examples of USMT **.xml** files?
         answer: |
-          The following articles include examples of USMT .xml files:
+          The following articles include examples of USMT **.xml** files:
           
           -   [Exclude files and settings](usmt-exclude-files-and-settings.md)
           
@@ -91,37 +108,37 @@ sections:
           -   [Custom XML examples](usmt-custom-xml-examples.md)
           
       - question: |
-          Can I use custom .xml files that were written for USMT 5.0?
+          Can custom **.xml** files that were written for USMT 5.0 be used?
         answer: |
-          Yes. You can use custom .xml files that were written for USMT 5.0 with USMT for Windows 10. However, in order to use new USMT functionality, you must revisit your custom USMT files and refresh them to include the new command-line options and XML elements.
+          Yes. Custom **.xml** files that were written for USMT 5.0 can be used with newer versions of USMT. However, in order to use new USMT functionality, the custom USMT files must be revisited and refreshed to include the new command-line options and XML elements.
 
       - question: |
-          How can I validate the .xml files?
+          How can the **.xml** files be validated?
         answer: |
-          You can use the USMT XML Schema (`MigXML.xsd`) to write and validate migration .xml files.
+          The USMT XML Schema (`MigXML.xsd`) can be used to write and validate migration **.xml** files.
 
       - question: |
-          Why must I list the .xml files with both the `ScanState.exe` and `LoadState.exe` commands?
+          Why must the **.xml** files be included with both the `ScanState.exe` and `LoadState.exe` commands?
         answer: |
-          The .xml files aren't copied to the store as in previous versions of USMT. Because the **ScanState** and **LoadState** tools need the .xml files to control the migration, you must specify the same set of .xml files for the `ScanState.exe` and `LoadState.exe` commands. If you used a particular set of mig\*.xml files in the **ScanState** tool, either called through the `/auto` option, or individually through the `/i` option, then you should use same option to call the exact same mig\*.xml files in the **LoadState** tool. However, you don't have to specify the `Config.xml` file, unless you want to exclude some of the files and settings that you migrated to the store. For example, you might want to migrate the **My Documents** folder to the store, but not to the destination computer. To do this type of migration, modify the `Config.xml` file and specify the updated file with the `LoadState.exe` command. **LoadState** will migrate only the files and settings that you want to migrate.
+          The **.xml** files aren't copied to the store as in previous versions of USMT. Because the **ScanState** and **LoadState** tools need the **.xml** files to control the migration, the same set of **.xml** files must be specified for the `ScanState.exe` and `LoadState.exe` commands. If a particular set of mig\*.xml files were used in the **ScanState** tool, either called through the `/auto` option, or individually through the `/i` option, then the same option should be used to call the exact same mig\*.xml files in the **LoadState** tool. However, the `Config.xml` file doesn't need to be specified, unless files and settings that were migrated to the store need to be excluded. For example, the **Documents** folder might be migrated to the store, but not to the destination computer. To do this type of migration, modify the `Config.xml` file and specify the updated file with the `LoadState.exe` command. **LoadState** migrates only the desired files and settings.
           
-          If you exclude an .xml file from the `LoadState.exe` command, then all of the data that is in the store that was migrated with the missing .xml files will be migrated. However, the migration rules that were specified for the `ScanState.exe` command won't apply. For example, if you exclude a `MigApp.xml` file that has a rerouting rule such as `MigsysHelperFunction.RelativeMove("c:\data", "%CSIDL_PERSONAL%")`, USMT won't reroute the files. Instead, it will migrate them to `C:\data`.
+          If an **.xml** file is excluded from the `LoadState.exe` command, then all of the data in the store that was migrated with the missing **.xml** files are migrated. However, the migration rules that were specified for the `ScanState.exe` command don't apply. For example, if a `MigApp.xml` file that has a rerouting rule such as `MigsysHelperFunction.RelativeMove("c:\data", "%CSIDL_PERSONAL%")` is excluded, USMT doesn't reroute the files. Instead, it migrates them to `C:\data`.
           
       - question: |
-          Which files can I modify and specify on the command line?
+          Which files can be modified and specified on the command line?
         answer: |
-          You can specify the `MigUser.xml` and `MigApp.xml` files on the command line. You can modify each of these files. The migration of operating system settings is controlled by the manifests, which you can't modify. If you want to exclude certain operating-system settings or any other components, create and modify the `Config.xml` file.
+          The `MigUser.xml`, `MigApp.xml`, and `MigDocs.xml` files can be specified on the command line. Each of these files can be modified. Manifests control the migration of operating system settings. Manifests can't be modified. To exclude certain operating-system settings or any other components, create and modify the `Config.xml` file.
 
       - question: |
-          What happens if I don't specify the .xml files on the command line?
+          What happens if the **.xml** files aren't specified on the command line?
         answer: |
           -   **ScanState**
           
-              If you don't specify any files with the `ScanState.exe` command, all user accounts and default operating system components are migrated.
+              If no files are specified with the `ScanState.exe` command, all user accounts and default operating system components are migrated.
           
           -   **LoadState**
           
-              If you don't specify any files with the `LoadState.exe` command, all data that is in the store is migrated. However, any target-specific migration rules that were specified in .xml files with the `ScanState.exe` command won't apply. For example, if you exclude a `MigApp.xml` file that has a rerouting rule such as `MigsysHelperFunction.RelativeMove("c:\data", "%CSIDL_PERSONAL%")`, USMT won't reroute the files. Instead, it will migrate them to `C:\data`.
+              If no files are specified with the `LoadState.exe` command, all data that is in the store is migrated. However, any target-specific migration rules that were specified in **.xml** files with the `ScanState.exe` command doesn't apply. For example, if a `MigApp.xml` file that has a rerouting rule such as `MigsysHelperFunction.RelativeMove("c:\data", "%CSIDL_PERSONAL%")` is excluded, USMT doesn't reroute the files. Instead, it migrates them to `C:\data`.
           
   - name: Conflicts and Precedence
     questions:
@@ -135,8 +152,6 @@ additionalContent: |
 
   ## Related topics
 
-  [User State Migration Tool (USMT) Troubleshooting](usmt-troubleshooting.md)
-
-  [Extract files from a compressed USMT migration store](usmt-extract-files-from-a-compressed-migration-store.md)
-
-  [Verify the condition of a compressed migration store](verify-the-condition-of-a-compressed-migration-store.md)
+  - [User State Migration Tool (USMT) Troubleshooting](usmt-troubleshooting.md).
+  - [Extract files from a compressed USMT migration store](usmt-extract-files-from-a-compressed-migration-store.md).
+  - [Verify the condition of a compressed migration store](verify-the-condition-of-a-compressed-migration-store.md).

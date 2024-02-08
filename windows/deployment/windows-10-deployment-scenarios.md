@@ -4,11 +4,11 @@ description: Understand the different ways Windows 10 operating system can be de
 manager: aaroncz
 ms.author: frankroj
 author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 ms.topic: article
 ms.date: 11/23/2022
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ---
 
 # Windows 10 deployment scenarios
@@ -44,7 +44,7 @@ The following tables summarize various Windows 10 deployment scenarios. The scen
 |Scenario|Description|More information|
 |--- |--- |--- |
 |[Subscription Activation](#windows-10-subscription-activation)|Switch from Windows 10 Pro to Enterprise when a subscribed user signs in.|[Windows 10 Subscription Activation](/windows/deployment/windows-10-enterprise-subscription-activation)|
-|[Azure Active Directory / MDM](#dynamic-provisioning)|The device is automatically joined to Azure Active Directory and configured by MDM.|[Azure Active Directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)|
+|[Microsoft Entra ID / MDM](#dynamic-provisioning)|The device is automatically joined to Microsoft Entra ID and configured by MDM.|[Microsoft Entra integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)|
 |[Provisioning packages](#dynamic-provisioning)|Using the Windows Imaging and Configuration Designer tool, create provisioning packages that can be applied to devices.|[Configure devices without MDM](/windows/configuration/configure-devices-without-mdm)|
 
 ### Traditional
@@ -94,7 +94,7 @@ There are some situations where you can't use in-place upgrade; in these situati
 
 - Changing from Windows 7, Windows 8, or Windows 8.1 x86 to Windows 10 x64. The upgrade process can't change from a 32-bit operating system to a 64-bit operating system, because of possible complications with installed applications and drivers.
 
-- Windows To Go and Boot from VHD installations. The upgrade process is unable to upgrade these installations. Instead, new installations would need to be performed.
+- Boot from VHD installations. The upgrade process is unable to upgrade these installations. Instead, new installations would need to be performed.
 
 - Updating existing images. It can be tempting to try to upgrade existing Windows 7, Windows 8, or Windows 8.1 images to Windows 10 by installing the old image, upgrading it, and then recapturing the new Windows 10 image. But, it's not supported. Preparing an upgraded OS via `Sysprep.exe` before capturing an image isn't supported and won't work. When `Sysprep.exe` detects the upgraded OS, it will fail.
 
@@ -110,9 +110,11 @@ The goal of dynamic provisioning is to take a new PC out of the box, turn it on,
 
 Windows 10 Subscription Activation is a dynamic deployment method that enables you to change the SKU from Pro to Enterprise with no keys and no reboots. For more information about Subscription Activation, see [Windows 10 Subscription Activation](/windows/deployment/windows-10-enterprise-subscription-activation).
 
-### Azure Active Directory (Azure AD) join with automatic mobile device management (MDM) enrollment
+<a name='azure-active-directory-azure-ad-join-with-automatic-mobile-device-management-mdm-enrollment'></a>
 
-In this scenario, the organization member just needs to provide their work or school user ID and password. The device can then be automatically joined to Azure Active Directory and enrolled in a mobile device management (MDM) solution with no other user interaction. Once done, the MDM solution can finish configuring the device as needed. For more information, see [Azure Active Directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm).
+### Microsoft Entra join with automatic mobile device management (MDM) enrollment
+
+In this scenario, the organization member just needs to provide their work or school user ID and password. The device can then be automatically joined to Microsoft Entra ID and enrolled in a mobile device management (MDM) solution with no other user interaction. Once done, the MDM solution can finish configuring the device as needed. For more information, see [Microsoft Entra integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm).
 
 ### Provisioning package configuration
 

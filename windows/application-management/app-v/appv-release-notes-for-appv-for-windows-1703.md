@@ -2,12 +2,13 @@
 title: Release Notes for App-V for Windows 10 version 1703 (Windows 10/11)
 description: A list of known issues and workarounds for App-V running on Windows 10 version 1703 and Windows 11.
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
-ms.technology: itpro-apps
+ms.collection: must-keep
+ms.subservice: itpro-apps
 ---
 
 # Release Notes for App-V for Windows 10 version 1703 and later

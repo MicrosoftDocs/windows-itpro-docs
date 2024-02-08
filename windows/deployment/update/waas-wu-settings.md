@@ -1,22 +1,23 @@
 ---
 title: Manage additional Windows Update settings
-description: In this article, learn about additional settings to control the behavior of Windows Update.
-ms.prod: windows-client
-ms.localizationpriority: medium
+description: In this article, learn about additional settings to control the behavior of Windows Update in your organization.
+ms.service: windows-client
+ms.subservice: itpro-updates
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.topic: how-to
 ms.collection:
   - highpri
   - tier2
-ms.technology: itpro-updates
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 04/25/2023
 ---
 
 # Manage additional Windows Update settings
-
-***(Applies to: Windows 11 & Windows 10)***
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
@@ -34,7 +35,7 @@ You can use Group Policy settings or mobile device management (MDM) to configure
 | [Allow signed updates from an intranet Microsoft update service location](#allow-signed-updates-from-an-intranet-microsoft-update-service-location) | [AllowNonMicrosoftSignedUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate) | All |
 | [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) | [ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-excludewudriversinqualityupdate) | 1607 |
 | [Configure Automatic Updates](#configure-automatic-updates) | [AllowAutoUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate) | All |
-| |  [Windows Update notifications display organization name](#display-organization-name-in-windows-update-notifications) </br></br> *Organization name is displayed by default. A registry value can disable this behavior. | Windows 11 devices that are Azure Active Directory joined or registered <!--6286260-->|
+| |  [Windows Update notifications display organization name](#display-organization-name-in-windows-update-notifications) </br></br> *Organization name is displayed by default. A registry value can disable this behavior. | Windows 11 devices that are Microsoft Entra joined or registered <!--6286260-->|
 | | [Allow Windows updates to install before initial user sign-in](#allow-windows-updates-to-install-before-initial-user-sign-in) (registry only)| Windows 11 version 22H2 with 2023-04 Cumulative Update Preview, or a later cumulative update <!--7679187-->|
 
 
@@ -256,12 +257,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\
 
 ## Display organization name in Windows Update notifications
 <!--6286260-->
-When Windows 11 clients are associated with an Azure AD tenant, the organization name appears in the Windows Update notifications. For instance, when you have a compliance deadline configured for Windows Update for Business, the user notification will display a message similar to **Contoso requires important updates to be installed**. The organization name will also display on the **Windows Update** page in the **Settings** for Windows 11.  
+When Windows 11 clients are associated with a Microsoft Entra tenant, the organization name appears in the Windows Update notifications. For instance, when you have a compliance deadline configured for Windows Update for Business, the user notification will display a message similar to **Contoso requires important updates to be installed**. The organization name will also display on the **Windows Update** page in the **Settings** for Windows 11.  
   
-The organization name appears automatically for Windows 11 clients that are associated with Azure AD in any of the following ways:
-- [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) 
-- [Azure AD registered](/azure/active-directory/devices/concept-azure-ad-register)
-- [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+The organization name appears automatically for Windows 11 clients that are associated with Microsoft Entra ID in any of the following ways:
+- [Microsoft Entra joined](/azure/active-directory/devices/concept-azure-ad-join) 
+- [Microsoft Entra registered](/azure/active-directory/devices/concept-azure-ad-register)
+- [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
 
 To disable displaying the organization name in Windows Update notifications, add or modify the following in the registry:
 

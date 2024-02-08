@@ -1,15 +1,8 @@
 ---
-title: AssignedAccess (Windows 10)
+title: AssignedAccess
 description: This section describes the AssignedAccess setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
-ms.topic: article
-ms.date: 04/30/2018
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
+ms.topic: reference
+ms.date: 01/25/2024
 ---
 
 # AssignedAccess (Windows Configuration Designer reference)
@@ -19,14 +12,13 @@ Use this setting to configure single use (kiosk) devices.
 ## Applies to
 
 | Setting | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: |
-| [AssignedAccessSettings](#assignedaccesssettings)  | ✔️ |  | ✔️ |  |
-| [MultiAppAssignedAccessSettings](#multiappassignedaccesssettings) | ✔️ |  | ✔️ |  |
-
+|--|:-:|:-:|:-:|:-:|
+| [AssignedAccessSettings](#assignedaccesssettings) | ✅ |  | ✅ |  |
+| [MultiAppAssignedAccessSettings](#multiappassignedaccesssettings) | ✅ |  | ✅ |  |
 
 ## AssignedAccessSettings
 
-Enter the account and the application you want to use for Assigned access, using [the AUMID](../find-the-application-user-model-id-of-an-installed-app.md). When that user account signs in on the device, only the specified app will run. 
+Enter the account and the application you want to use for Assigned access, using [the AUMID](../find-the-application-user-model-id-of-an-installed-app.md). When that user account signs in on the device, only the specified app will run.
 
 **Example**:
 
@@ -40,8 +32,8 @@ Enter the account and the application you want to use for Assigned access, using
 Use this setting to configure a kiosk device that runs more than one app.
 
 1. Create an assigned access configuration XML file for multiple apps [(desktop](../lock-down-windows-10-to-specific-apps.md) or [HoloLens)](/hololens/hololens-provisioning).
-2. In Windows Configuration Designer, select **MultiAppAssignedAccessSettings**.
-3. Browse to and select the assigned access configuration XML file.
+1. In Windows Configuration Designer, select **MultiAppAssignedAccessSettings**.
+1. Browse to and select the assigned access configuration XML file.
 
 ## Related topics
 

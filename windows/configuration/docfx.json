@@ -38,13 +38,16 @@
       "ms.collection": [
         "tier2"
       ],
+      "zone_pivot_group_filename": "resources/zone-pivot-groups.json",
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Windows",
-      "ms.technology": "itpro-configure",
-      "ms.topic": "article",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
-      "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
+      "ms.subservice": "itpro-configure",
+      "ms.service": "windows-client",
+      "ms.author": "paoloma",
+      "author": "paolomatarazzo",
+      "manager": "aaroncz",
+      "feedback_system": "Standard",
+            "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.win-configuration",
@@ -53,21 +56,56 @@
       },
       "titleSuffix": "Configure Windows",
       "contributors_to_exclude": [
-        "rjagiewich", 
-        "traya1", 
-        "rmca14", 
-        "claydetels19", 
+        "rjagiewich",
+        "traya1",
+        "rmca14",
+        "claydetels19",
         "jborsecnik",
         "tiburd",
         "garycentric",
-        "beccarobins"
+        "beccarobins",
+        "Stacyrch140",
+        "v-stsavell",
+        "American-Dipper"
       ],
       "searchScope": ["Windows 10"]
     },
     "fileMetadata": {
       "feedback_system": {
-        "ue-v/**/*.*": "None",
-        "cortana-at-work/**/*.*": "None"
+        "ue-v/**/*.*": "None"
+      },
+      "author":{
+        "wcd//**/*.md": "aczechowski",
+        "wcd//**/*.yml": "aczechowski",
+        "ue-v//**/*.md": "aczechowski",
+        "ue-v//**/*.yml": "aczechowski"
+      },
+      "ms.author":{
+        "wcd//**/*.md": "aaroncz",
+        "wcd//**/*.yml": "aaroncz",
+        "ue-v//**/*.md": "aaroncz",
+        "ue-v//**/*.yml": "aaroncz"
+      },
+      "ms.reviewer":{
+        "kiosk//**/*.md": "sybruckm",
+        "start//**/*.md": "ericpapa"
+      },
+      "ms.collection":{
+        "wcd//**/*.md": "must-keep",
+        "ue-v//**/*.md": [
+          "must-keep",
+          "tier3"
+        ]
+      },
+      "appliesto": {
+        "*/**/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
+        ],
+        "ue-v//**/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
+        ],
+        "wcd//**/*.md": ""
       }
     },
     "template": [],
@@ -75,3 +113,4 @@
     "markdownEngineName": "markdig"
   }
 }
+

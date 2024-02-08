@@ -1,17 +1,8 @@
 ---
 title: Known issues in MDM
 description: Learn about known issues for Windows devices in MDM
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 04/12/2023
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.topic: conceptual
+ms.date: 08/10/2023
 ---
 
 # Known issues
@@ -36,17 +27,17 @@ The certificate setting under "SSL Settings" in the IIS server for SCEP must be 
 
 ## MDM enrollment fails on the Windows device when traffic is going through proxy
 
-When the Windows device is configured to use a proxy that requires authentication, the enrollment will fail. To work around this issue, the user can use a proxy that doesn't require authentication or remove the proxy setting from the connected network.
+When the Windows device is configured to use a proxy that requires authentication, the enrollment fails. To work around this issue, the user can use a proxy that doesn't require authentication or remove the proxy setting from the connected network.
 
 ## Server-initiated unenrollment failure
 
 Server-initiated unenrollment for a device enrolled by adding a work account silently fails to leave the MDM account active. MDM policies and resources are still in place and the client can continue to sync with the server.
 
-Remote server unenrollment is disabled for mobile devices enrolled via Azure Active Directory Join. It returns an error message to the server. The only way to remove enrollment for a mobile device that is Azure AD joined is by remotely wiping the device.
+Remote server unenrollment is disabled for mobile devices enrolled via Microsoft Entra join. It returns an error message to the server. The only way to remove enrollment for a mobile device that is Microsoft Entra joined is by remotely wiping the device.
 
 ## Certificates causing issues with Wi-Fi and VPN
 
-When using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This dual installation may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We're working to fix this issue.
+When using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store also gets installed in the user store. This dual installation may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We're working to fix this issue.
 
 ## Version information for Windows 11
 
@@ -65,7 +56,7 @@ A production ready deployment must have the appropriate certificate details as p
 
 EAP XML must be updated with relevant information for your environment. This task can be done either manually by editing the XML sample below, or by using the step by step UI guide. After the EAP XML is updated, refer to instructions from your MDM to deploy the updated configuration as follows:
 
-- For Wi-Fi, look for the &lt;EAPConfig&gt; section of your current WLAN Profile XML (This detail is what you specify for the WLanXml node in the Wi-Fi CSP). Within these tags, you'll find the complete EAP configuration. Replace the section under &lt;EAPConfig&gt; with your updated XML and update your Wi-Fi profile. You might need to refer to your MDM's guidance on how to deploy a new Wi-Fi profile.
+- For Wi-Fi, look for the &lt;EAPConfig&gt; section of your current WLAN Profile XML (This detail is what you specify for the WLanXml node in the Wi-Fi CSP). Within these tags, you can find the complete EAP configuration. Replace the section under &lt;EAPConfig&gt; with your updated XML and update your Wi-Fi profile. You might need to refer to your MDM's guidance on how to deploy a new Wi-Fi profile.
 - For VPN, EAP Configuration is a separate field in the MDM Configuration. Work with your MDM provider to identify and update the appropriate Field.
 
 For information about EAP Settings, see [Extensible Authentication Protocol (EAP) for network access](/windows-server/networking/technologies/extensible-authentication-protocol/network-access).
@@ -208,7 +199,7 @@ Alternatively you can use the following procedure to create an EAP Configuration
     > [!NOTE]
     > For PEAP or TTLS, select the appropriate method and continue following this procedure.
 
-1. Click the **Properties** button underneath the drop-down menu.
+1. Select the **Properties** button underneath the drop-down menu.
 
 1. In the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
 
@@ -218,7 +209,7 @@ Alternatively you can use the following procedure to create an EAP Configuration
 
     :::image type="content" alt-text="configure certificate selection window." source="images/certfiltering3.png":::
 
-1. Click **OK** to close the windows to get back to the main `rasphone.exe` dialog box.
+1. Select **OK** to close the windows to get back to the main `rasphone.exe` dialog box.
 
 1. Close the rasphone dialog box.
 
@@ -231,9 +222,11 @@ Alternatively you can use the following procedure to create an EAP Configuration
 
 After the MDM client automatically renews the WNS channel URI, the MDM client will immediately check in with the MDM server. Henceforth, for every MDM client check-in, the MDM server should send a GET request for "ProviderID/Push/ChannelURI" to retrieve the latest channel URI and compare it with the existing channel URI; then update the channel URI if necessary.
 
-## User provisioning failure in Azure Active Directory-joined devices
+<a name='user-provisioning-failure-in-azure-active-directory-joined-devices'></a>
 
-For Azure AD joined devices, provisioning `.\User` resources fails when the user isn't logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, ensure to sign out and sign in with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
+## User provisioning failure in Microsoft Entra joined devices
+
+For Microsoft Entra joined devices, provisioning `.\User` resources fails when the user isn't logged in as a Microsoft Entra user. If you attempt to join Microsoft Entra ID from **Settings** &gt; **System** &gt; **About** user interface, ensure to sign out and sign in with Microsoft Entra credentials to get your organizational configuration from your MDM server. This behavior is by design.
 
 ## Requirements to note for VPN certificates also used for Kerberos Authentication
 

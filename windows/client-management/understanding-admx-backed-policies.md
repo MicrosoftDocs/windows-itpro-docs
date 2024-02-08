@@ -1,17 +1,8 @@
 ---
 title: Understanding ADMX policies
 description: You can use ADMX policies for Windows mobile device management (MDM) across Windows devices.
-ms.author: vinpa
-ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 03/23/2020
-ms.reviewer:
-manager: aaroncz
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.topic: conceptual
+ms.date: 08/10/2023
 ---
 
 # Understanding ADMX policies
@@ -32,9 +23,9 @@ Depending on the specific category of the settings that they control (OS or appl
 
 In a domain controller/Group Policy ecosystem, Group Policies are automatically added to the registry of the client computer or user profile by the Administrative Templates Client Side Extension (CSE) whenever the client computer processes a Group Policy. Conversely, in an MDM-managed client, ADMX files are applied to define policies independent of Group Policies. Therefore, in an MDM-managed client, a Group Policy infrastructure, including the Group Policy Service (gpsvc.exe), isn't required.
 
-An ADMX file can either be shipped with Windows (located at `%SystemRoot%\policydefinitions`) or it can be ingested to a device through the Policy CSP URI (`./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`). Inbox ADMX files are processed into MDM policies at OS-build time. ADMX files that are ingested are processed into MDM policies post-OS shipment through the Policy CSP. Because the Policy CSP doesn't rely upon any aspect of the Group Policy client stack, including the PC's Group Policy Service (GPSvc), the policy handlers that are ingested to the device are able to react to policies that are set by the MDM.
+An ADMX file can either be shipped with Windows (located at `%SystemRoot%\policydefinitions`) or it can be ingested to a device through the Policy CSP URI (`./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`). Inbox ADMX files are processed into MDM policies at OS-build time. ADMX files that are ingested are processed into MDM policies post-OS shipment through the Policy CSP. Because the Policy CSP doesn't rely upon any aspect of the Group Policy client stack, including the PC's Group Policy Service (GPSvc), the policy handlers that are ingested to the device are able to react to policies set by the MDM.
 
-Windows maps the name and category path of a Group Policy to an MDM policy area and policy name by parsing the associated ADMX file, finding the specified Group Policy, and storing the definition (metadata) in the MDM Policy CSP client store. When the MDM policy is referenced by a SyncML command and the Policy CSP URI, `.\[device|user]\vendor\msft\policy\[config|result]\<area>\<policy>`, this metadata is referenced and determines which registry keys are set or removed. For a list of ADMX policies supported by MDM, see [Policy CSP - ADMX policies](mdm/policy-configuration-service-provider.md).
+Windows maps the name and category path of a Group Policy to an MDM policy area and policy name by parsing the associated ADMX file, finding the specified Group Policy, and storing the definition (metadata) in the MDM Policy CSP client store. When the MDM policy contains a SyncML command and the Policy CSP URI, `.\[device|user]\vendor\msft\policy\[config|result]\<area>\<policy>`, this metadata is referenced and determines which registry keys are set or removed. For a list of ADMX policies supported by MDM, see [Policy CSP - ADMX policies](mdm/policy-configuration-service-provider.md).
 
 <!-- [!TIP] -->
 <!-- Intune has added a number of ADMX administrative templates in public preview. Check if the policy settings you need are available in a template before using the SyncML method described below. [Learn more about Intune's administrative templates.](/intune/administrative-templates-windows) -->
@@ -47,15 +38,15 @@ The ADMX file that the MDM ISV uses to determine what UI to display to the IT ad
 
 Group Policy option button setting:
 
-- If **Enabled** is selected, the necessary data entry controls are displayed for the user in the UI. When IT administrator enters the data and clicks **Apply**, the following events occur:
+- If **Enabled** is selected, the necessary data entry controls are displayed for the user in the UI. When IT administrator enters the data and select **Apply**, the following events occur:
   - The MDM ISV server sets up a Replace SyncML command with a payload that contains the user-entered data.
   - The MDM client stack receives this data, which causes the Policy CSP to update the device's registry per the ADMX policy definition.
 
-- If **Disabled** is selected and you click **Apply**, the following events occur:
+- If **Disabled** is selected and you select **Apply**, the following events occur:
   - The MDM ISV server sets up a Replace SyncML command with a payload set to `<disabled\>`.
   - The MDM client stack receives this command, which causes the Policy CSP to either delete the device's registry settings, set the registry keys, or both, per the state change directed by the ADMX policy definition.
 
-- If **Not Configured** is selected and you click **Apply**, the following events occur:
+- If **Not Configured** is selected and you select **Apply**, the following events occur:
   - MDM ISV server sets up a Delete SyncML command.
   - The MDM client stack receives this command, which causes the Policy CSP to delete the device's registry settings per the ADMX policy definition.
 
@@ -245,7 +236,7 @@ This section describes sample SyncML for the various ADMX elements like Text, Mu
 
 ### How a Group Policy policy category path and name are mapped to an MDM area and policy name
 
-Below is the internal OS mapping of a Group Policy to an MDM area and name. This mapping is part of a set of Windows manifest that when compiled parses out the associated ADMX file, finds the specified Group Policy policy and stores that definition (metadata) in the MDM Policy CSP client store.  ADMX backed policies are organized hierarchically. Their scope can be **machine**, **user**, or have a scope of **both**. When the MDM policy is referred to through a SyncML command and the Policy CSP URI, as shown below, this metadata is referenced and determines what registry keys are set or removed. Machine-scope policies are referenced via .\Device and the user scope policies via .\User.
+Here's the internal OS mapping of a Group Policy to an MDM area and name. This mapping is part of a set of Windows manifest that when compiled parses out the associated ADMX file, finds the specified Group Policy policy and stores that definition (metadata) in the MDM Policy CSP client store.  ADMX backed policies are organized hierarchically. Their scope can be **machine**, **user**, or have a scope of **both**. When the MDM policy is referred to through a SyncML command and the Policy CSP URI, as shown, this metadata is referenced and determines what registry keys are set or removed. Machine-scope policies are referenced via .\Device and the user scope policies via .\User.
 
 `./[Device|User]/Vendor/MSFT/Policy/Config/[config|result]/<area>/<policy>`
 
@@ -270,7 +261,7 @@ The **LocURI** for the above GP policy is:
 
 `./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer2`
 
-To construct SyncML for your area/policy using the samples below, you need to update the **data id** and the **value** in the `<Data>` section of the SyncML. The items prefixed with an '&' character are the escape characters needed and can be retained as shown.
+To construct SyncML for your area/policy using the following samples, you need to update the **data id** and the **value** in the `<Data>` section of the SyncML. The items prefixed with an '&' character are the escape characters needed and can be retained as shown.
 
 ### Text Element
 
@@ -355,12 +346,12 @@ The `multiText` element simply corresponds to a REG_MULTISZ registry string and 
 
 ### List Element (and its variations)
 
-The `list` element simply corresponds to a hive of REG_SZ registry strings and correspondingly to a grid to enter multiple strings in a policy panel display by gpedit.msc. How this element is represented in SyncML is as a string containing pairs of strings. Each pair is a REG_SZ name/value key. It's best to apply the policy through gpedit.msc (run as Administrator) and go to the registry hive location and see how the list values are stored. This location will give you an idea of the way the name/value pairs are stored to express it through SyncML.
+The `list` element simply corresponds to a hive of REG_SZ registry strings and correspondingly to a grid to enter multiple strings in a policy panel display by gpedit.msc. How this element is represented in SyncML is as a string containing pairs of strings. Each pair is a REG_SZ name/value key. It's best to apply the policy through gpedit.msc (run as Administrator) and go to the registry hive location and see how the list values are stored. This location gives you an idea of the way the name/value pairs are stored to express it through SyncML.
 
 > [!NOTE]
 > It's expected that each string in the SyncML is to be separated by the Unicode character 0xF000 (encoded version: `&#xF000;`).
 
-Variations of the `list` element are dictated by attributes. These attributes are ignored by the Policy Manager runtime. It's expected that the MDM server manages the name/value pairs. See below for a simple write-up of Group Policy List.
+Variations of the `list` element are dictated by attributes. These attributes are ignored by the Policy Manager runtime. It's expected that the MDM server manages the name/value pairs. Here are some samples for the Group Policy List.
 
 **ADMX file: inetres.admx**:
 

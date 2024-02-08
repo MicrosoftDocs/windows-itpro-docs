@@ -1,14 +1,7 @@
 ---
 title: Troubleshooting Policy CSP
 description: Learn more about the Troubleshooting Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/11/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -26,7 +19,7 @@ ms.topic: reference
 <!-- AllowRecommendations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowRecommendations-Applicability-End -->
 
 <!-- AllowRecommendations-OmaUri-Begin -->
@@ -61,15 +54,15 @@ After setting this policy, you can use the following instructions to check devic
 
 rem The following batch script triggers Recommended Troubleshooting schtasks /run /TN "\Microsoft\Windows\Diagnosis\RecommendedTroubleshootingScanner".
 
-2. To create a new immediate task, navigate to the Group Policy Management Editor > Computer Configuration > Preferences and select Control Panel Settings.
+1. To create a new immediate task, navigate to the Group Policy Management Editor > Computer Configuration > Preferences and select Control Panel Settings.
 
-3. Under Control Panel settings, right-click on Scheduled Tasks and select New. Select Immediate Task (At least Windows 7).
+1. Under Control Panel settings, right-click on Scheduled Tasks and select New. Select Immediate Task (At least Windows 7).
 
-4. Provide name and description as appropriate, then under Security Options set the user account to System and select the Run with highest privileges checkbox.
+1. Provide name and description as appropriate, then under Security Options set the user account to System and select the Run with highest privileges checkbox.
 
-5. In the Actions tab, create a new action, select Start a Program as its type, then enter the file created in step 1.
+1. In the Actions tab, create a new action, select Start a Program as its type, then enter the file created in step 1.
 
-6. Configure the task to deploy to your domain.
+1. Configure the task to deploy to your domain.
 <!-- AllowRecommendations-Description-End -->
 
 <!-- AllowRecommendations-Editable-Begin -->

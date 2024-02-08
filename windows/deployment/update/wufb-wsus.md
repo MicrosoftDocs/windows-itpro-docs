@@ -1,22 +1,20 @@
 ---
 title: Use Windows Update for Business and Windows Server Update Services (WSUS) together
 description: Learn how to use Windows Update for Business and WSUS together using the new scan source policy.
-ms.prod: windows-client
+ms.service: windows-client
+ms.subservice: itpro-updates
+ms.topic: conceptual
 author: mestew
-ms.localizationpriority: medium
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
-ms.technology: itpro-updates
-ms.date: 12/31/2017
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+ms.date: 01/13/2022
 ---
 
 # Use Windows Update for Business and WSUS together
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
@@ -70,13 +68,10 @@ The policy can be configured using the following two methods:
 2. Configuration Service Provider (CSP) Policies: **SetPolicyDrivenUpdateSourceFor&lt;Update Type>**:
 
 > [!NOTE]
-> You should configure **all** of these policies if you are using CSPs.
+> - You should configure **all** of these policies if you are using CSPs.
+> - Editing the registry to change the behavior of update policies isn't recommended. Use Group Policy or the Configuration Service Provider (CSP) policy instead of directly writing to the registry. However, if you choose to edit the registry, ensure you've configured the `UseUpdateClassPolicySource` registry key too, or the scan source won't be altered. 
 
 - [Update/SetPolicyDrivenUpdateSourceForDriverUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourcefordriver)
 - [Update/SetPolicyDrivenUpdateSourceForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourceforfeature)
 - [Update/SetPolicyDrivenUpdateSourceForOtherUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourceforother)
 - [Update/SetPolicyDrivenUpdateSourceForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourceforquality)
-
-
-> [!NOTE]
-> Editing the registry to change the behavior of update policies isn't recommended. Use Group Policy or the Configuration Service Provider (CSP) policy instead of directly writing to the registry. However, if you choose to edit the registry, ensure you've configured the `UseUpdateClassPolicySource` registry key too, or the scan source won't be alterred. 

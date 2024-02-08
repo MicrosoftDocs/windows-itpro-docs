@@ -1,85 +1,116 @@
 ---
-title: Install VAMT (Windows 10)
-description: Learn how to install Volume Activation Management Tool (VAMT) as part of the Windows Assessment and Deployment Kit (ADK) for Windows 10.
+title: Install VAMT
+description: Learn how to install Volume Activation Management Tool (VAMT) as part of the Windows Assessment and Deployment Kit (ADK) for Windows.
 ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.localizationpriority: medium
-ms.date: 11/07/2022
+ms.date: 10/13/2023
 ms.topic: article
-ms.technology: itpro-fundamentals
+ms.subservice: itpro-fundamentals
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2022</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2019</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016</a>
 ---
 
 # Install VAMT
 
-This article describes how to install the Volume Activation Management Tool (VAMT).
-
-## Installing VAMT
-
-You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for Windows 10.
+This article describes how to install the Volume Activation Management Tool (VAMT). VAMT is installed as part of the Windows Assessment and Deployment Kit (ADK) for Windows.
 
 >[!IMPORTANT]
->VAMT requires local administrator privileges on all managed computers in order to deposit confirmation IDs (CIDs), get the client products' license status, and install product keys. If VAMT is being used to manage products and product keys on the local host computer and you do not have administrator privileges, start VAMT with elevated privileges. For best results when using Active Directory-based activation, we recommend running VAMT while logged on as a domain administrator.
+>
+> VAMT requires local administrator privileges on all managed computers in order to deposit confirmation IDs (CIDs), get the client products' license status, and install product keys. If VAMT is being used to manage products and product keys on the local host computer and you don't have administrator privileges, start VAMT with elevated privileges. For best results when using Active Directory-based activation, we recommend running VAMT while logged on as a domain administrator.
 
 >[!NOTE]
->The VAMT Microsoft Management Console snap-in ships as an x86 package.
+>
+> The VAMT Microsoft Management Console snap-in ships as an x86 package.
 
-### Requirements
+## Requirements
 
-- [Windows Server with Desktop Experience](/windows-server/get-started/getting-started-with-server-with-desktop-experience), with internet access (for the main VAMT console) and all updates applied
+- [Windows Server with Desktop Experience](/windows-server/get-started/getting-started-with-server-with-desktop-experience), with internet access (for the main VAMT console) and all updates applied.
 
-- Latest version of the [Windows 10 ADK](/windows-hardware/get-started/adk-install)
+- Latest version of the [Windows ADK](/windows-hardware/get-started/adk-install).
 
-- Any supported [SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express) version, the latest is recommended
+- Any supported [SQL Server Express](https://www.microsoft.com/sql-server/sql-server-downloads) version. The latest is recommended.
 
-- Alternatively, any supported **full** SQL instance
+- Alternatively, any supported **full** SQL instance.
 
-### Install SQL Server Express / alternatively use any full SQL instance
+## Install SQL Server Express / alternatively use any full SQL instance
 
-1. Download and open the [SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express) package.
+1. Download and open the [SQL Server Express](https://aka.ms/sqlexpress) package.
 
-2. Select **Basic**.
+1. For **Select an installation type:**, select **Basic**.
 
-3. Accept the license terms.
+1. In the **Microsoft SQL Server Server License Terms** screen, accept the license terms by selecting the **Accept** button.
 
-4. Enter an install location or use the default path, and then select **Install**.
+1. In the **Specify SQL Server install location** screen under **INSTALL LOCATION \*:**, specify an install location or use the default path, and then select the **Install** button.
 
-5. On the completion page, note the instance name for your installation, select **Close**, and then select **Yes**.
+1. Once the installation is complete, in the **Installation Has completed successfully!** page, under **INSTANCE NAME**, note the instance name for the installation. The instance name will be used later in the [Configure VAMT to connect to SQL Server Express or full SQL Server](#configure-vamt-to-connect-to-sql-server-express-or-full-sql-server) section.
 
-    ![In this example, the instance name is SQLEXPRESS01.](images/sql-instance.png)
+1. Once the instance name has been noted, select the **Close** button, and then select the **Yes** button to confirm exiting the installer.
 
-### Install VAMT using the ADK
+## Install VAMT using the ADK
 
-1. Download the latest version of [Windows 10 ADK](/windows-hardware/get-started/adk-install).
+1. Download the latest version of [Windows ADK](/windows-hardware/get-started/adk-install).
 
-   If an older version is already installed, it's recommended to uninstall the older ADK and install the latest version. Existing VAMT data is maintained in the VAMT database.
+   If an older version is already installed, it's recommended to first uninstall the older ADK before installing the latest version. Existing VAMT data is maintained in the VAMT database.
 
-2. Enter an install location or use the default path, and then select **Next**.
+1. Open the ADK installer that was downloaded in the previous step. The **Windows Assessment and Deployment Kit** window opens.
 
-3. Select a privacy setting, and then select **Next**.
+1. In the **Windows Assessment and Deployment Kit** window:
 
-4. Accept the license terms.
+   1. At the **Specify Location** page, under **Install Path:**, enter an install location or use the default path. It's recommended to install at the default path. Once done, select the **Next** button.
 
-5. On the **Select the features you want to install** page, select **Volume Activation Management Tool (VAMT)**, and then select **Install**. If desired, you can select additional features to install as well.
+   1. In the **Windows Kits Privacy** page, select a privacy setting, and then select the **Next** button.
 
-6. On the completion page, select **Close**.
+   1. In the **License Agreement** page, accept the license terms by selecting the **Accept** button.
 
-### Configure VAMT to connect to SQL Server Express or full SQL Server
+   1. In the **Select the features you want to install** page, select **Volume Activation Management Tool (VAMT)**. If desired, select any additional features to install. Once done, select the **Install** button.
 
-1. Open **Volume Active Management Tool 3.1** from the Start menu.
+   1. Once installation is complete, the **Welcome to the Windows Assessment and Deployment Kit!** page is displayed. Select the **Close** button.
 
-2. Enter the server instance name (for a remote SQL use the FQDN) and a name for the database, select **Connect**, and then select **Yes** to create the database. See the following image for an example for SQL.
+## Configure VAMT to connect to SQL Server Express or full SQL Server
 
-   ![Server name is .\SQLEXPRESS and database name is VAMT.](images/vamt-db.png)
+1. In the Start Menu under **Windows Kits**, select **Volume Active Management Tool 3.1**. The **Database Connection Settings** window opens.
 
-   For remote SQL Server, use `servername.yourdomain.com`.
+1. In the **Database Connection Settings** window:
+
+   1. Next to **Server:**, enter the server instance name as determined in the [Install SQL Server Express / alternatively use any full SQL instance](#install-sql-server-express--alternatively-use-any-full-sql-instance) section. If SQL is remote, make sure to use the FQDN.
+
+   1. Next to **Database:**, add a name for the database.
+
+   1. Once the database server and database names have been entered, select the **Connect** button.
+
+   1. Select the **Yes** button to create the database.
 
 ## Uninstall VAMT
 
-To uninstall VAMT using the **Programs and Features** Control Panel:
+To uninstall VAMT:
 
-1. Open **Control Panel** and select **Programs and Features**.
+1. Right-click on the Start Menu and select **Settings**.
 
-2. Select **Assessment and Deployment Kit** from the list of installed programs and select **Change**. Follow the instructions in the Windows ADK installer to remove VAMT.
+1. Select **Apps** in the left hand pane.
+
+1. In the right hand pane under **Apps**, select **Installed apps**.
+
+   Alternatively, select the following link to automatically open the **Settings** app to the **Installed apps** page:
+
+   > [!div class="nextstepaction"]
+   > [Installed apps](ms-settings:appsfeatures)
+
+1. Scroll through the list of installed apps and find **Windows Assessment and Deployment Kit**.
+
+1. Select the three dots **...** next to **Windows Assessment and Deployment Kit** and then select **Modify**. The **Windows Assessment and Deployment Kit** window opens.
+
+1. In the **Windows Assessment and Deployment Kit** window:
+
+   1. In the **Maintain your Windows Assessment and Deployment Kit features** page, select **Change**, and then select the **Next** button.
+
+   1. In the **Select the features you want to change** page, uncheck **Volume Activation Management Tool (VAMT)**, and then select the **Change** button.
+
+   1. Once the uninstall is complete, the **Change is complete.** page is displayed. Select the **Close** button.

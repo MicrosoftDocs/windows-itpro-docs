@@ -1,10 +1,9 @@
 ---
-title: Network security Restrict NTLM Audit incoming NTLM traffic 
+title: Network security Restrict NTLM Audit incoming NTLM traffic
 description: Best practices, security considerations and more for the security policy setting, Network Security Restrict NTLM Audit incoming NTLM traffic.
 ms.assetid: 37e380c2-22e1-44cd-9993-e12815b845cf
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Network security: Restrict NTLM: Audit incoming NTLM traffic
@@ -33,7 +31,7 @@ When this audit policy is enabled within Group Policy, it's enforced on any serv
 
 When you enable this policy on a server, only authentication traffic to that server will be logged.
 
-When you enable this audit policy, it functions in the same way as the [Network Security: Restrict NTLM: Incoming NTLM traffic](network-security-restrict-ntlm-incoming-ntlm-traffic.md) policy, but it doesn't actually block any traffic. Therefore, you can use it effectively to understand the 
+When you enable this audit policy, it functions in the same way as the [Network Security: Restrict NTLM: Incoming NTLM traffic](network-security-restrict-ntlm-incoming-ntlm-traffic.md) policy, but it doesn't actually block any traffic. Therefore, you can use it effectively to understand the
 authentication traffic in your environment, and when you're ready to block that traffic, you can enable the Network Security: Restrict NTLM: Incoming NTLM traffic policy setting and select **Deny all accounts** or **Deny all domain accounts**.
 
 ### Possible values
@@ -66,13 +64,13 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 | Server type or GPO | Default value |
 | - | - |
-| Default domain policy| Not defined| 
-| Default domain controller policy | Not defined| 
-| Stand-alone server default settings | Not defined| 
-| Domain controller effective default settings | Not defined| 
-| Member server effective default settings | Not defined| 
-| Client computer effective default settings | Not defined| 
- 
+| Default domain policy| Not defined|
+| Default domain controller policy | Not defined|
+| Stand-alone server default settings | Not defined|
+| Domain controller effective default settings | Not defined|
+| Member server effective default settings | Not defined|
+| Client computer effective default settings | Not defined|
+
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.

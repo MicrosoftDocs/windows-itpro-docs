@@ -1,14 +1,7 @@
 ---
 title: ADMX_Help Policy CSP
 description: Learn more about the ADMX_Help Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -18,9 +11,61 @@ ms.topic: reference
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+
 <!-- ADMX_Help-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- ADMX_Help-Editable-End -->
+
+<!-- AllowChildProcesses-Begin -->
+## AllowChildProcesses
+
+<!-- AllowChildProcesses-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AllowChildProcesses-Applicability-End -->
+
+<!-- AllowChildProcesses-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Help/AllowChildProcesses
+```
+<!-- AllowChildProcesses-OmaUri-End -->
+
+<!-- AllowChildProcesses-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- AllowChildProcesses-Description-End -->
+
+<!-- AllowChildProcesses-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowChildProcesses-Editable-End -->
+
+<!-- AllowChildProcesses-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowChildProcesses-DFProperties-End -->
+
+<!-- AllowChildProcesses-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowChildProcesses |
+| ADMX File Name | Help.admx |
+<!-- AllowChildProcesses-AdmxBacked-End -->
+
+<!-- AllowChildProcesses-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowChildProcesses-Examples-End -->
+
+<!-- AllowChildProcesses-End -->
 
 <!-- DisableHHDEP-Begin -->
 ## DisableHHDEP
@@ -28,7 +73,7 @@ ms.topic: reference
 <!-- DisableHHDEP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableHHDEP-Applicability-End -->
 
 <!-- DisableHHDEP-OmaUri-Begin -->
@@ -89,7 +134,7 @@ Data Execution Prevention (DEP) is designed to block malicious code that takes a
 <!-- HelpQualifiedRootDir_Comp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- HelpQualifiedRootDir_Comp-Applicability-End -->
 
 <!-- HelpQualifiedRootDir_Comp-OmaUri-Begin -->
@@ -155,13 +200,63 @@ For additional options, see the "Restrict these programs from being launched fro
 
 <!-- HelpQualifiedRootDir_Comp-End -->
 
+<!-- HideChildProcessMessageBox-Begin -->
+## HideChildProcessMessageBox
+
+<!-- HideChildProcessMessageBox-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- HideChildProcessMessageBox-Applicability-End -->
+
+<!-- HideChildProcessMessageBox-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Help/HideChildProcessMessageBox
+```
+<!-- HideChildProcessMessageBox-OmaUri-End -->
+
+<!-- HideChildProcessMessageBox-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- HideChildProcessMessageBox-Description-End -->
+
+<!-- HideChildProcessMessageBox-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideChildProcessMessageBox-Editable-End -->
+
+<!-- HideChildProcessMessageBox-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HideChildProcessMessageBox-DFProperties-End -->
+
+<!-- HideChildProcessMessageBox-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | HideChildProcessMessageBox |
+| ADMX File Name | Help.admx |
+<!-- HideChildProcessMessageBox-AdmxBacked-End -->
+
+<!-- HideChildProcessMessageBox-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideChildProcessMessageBox-Examples-End -->
+
+<!-- HideChildProcessMessageBox-End -->
+
 <!-- RestrictRunFromHelp-Begin -->
 ## RestrictRunFromHelp
 
 <!-- RestrictRunFromHelp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RestrictRunFromHelp-Applicability-End -->
 
 <!-- RestrictRunFromHelp-OmaUri-Begin -->
@@ -225,7 +320,7 @@ This policy setting allows you to restrict programs from being run from online H
 <!-- RestrictRunFromHelp_Comp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RestrictRunFromHelp_Comp-Applicability-End -->
 
 <!-- RestrictRunFromHelp_Comp-OmaUri-Begin -->

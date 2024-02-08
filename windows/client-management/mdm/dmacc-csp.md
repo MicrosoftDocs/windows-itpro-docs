@@ -1,14 +1,7 @@
 ---
 title: DMAcc CSP
 description: Learn more about the DMAcc CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/11/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -73,7 +66,7 @@ The following list shows the DMAcc configuration service provider nodes:
 <!-- Device-{AccountUID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-Applicability-End -->
 
 <!-- Device-{AccountUID}-OmaUri-Begin -->
@@ -114,7 +107,7 @@ node is generated from the 256-bit version of SHA-2 hash of the w7 PROVIDER-ID p
 <!-- Device-{AccountUID}-AAuthPref-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-AAuthPref-Applicability-End -->
 
 <!-- Device-{AccountUID}-AAuthPref-OmaUri-Begin -->
@@ -162,7 +155,7 @@ Specifies the application authentication preference. Supported values: BASIC, DI
 <!-- Device-{AccountUID}-AppAddr-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-AppAddr-Applicability-End -->
 
 <!-- Device-{AccountUID}-AppAddr-OmaUri-Begin -->
@@ -201,7 +194,7 @@ Interior node for DM server address.
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-Applicability-End -->
 
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-OmaUri-Begin -->
@@ -241,7 +234,7 @@ Defines the OMA DM server address. Only one server address can be configured. Wh
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-Addr-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-Addr-Applicability-End -->
 
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-Addr-OmaUri-Begin -->
@@ -280,7 +273,7 @@ Specifies the address of the OMA DM account. The type of address stored is speci
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-AddrType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-AddrType-Applicability-End -->
 
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-AddrType-OmaUri-Begin -->
@@ -329,7 +322,7 @@ Specifies the format and interpretation of the Addr node value. The default is "
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-Port-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-Port-Applicability-End -->
 
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-Port-OmaUri-Begin -->
@@ -368,7 +361,7 @@ Interior node for port information.
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-Port-{ObjectName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-Port-{ObjectName}-Applicability-End -->
 
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-Port-{ObjectName}-OmaUri-Begin -->
@@ -408,7 +401,7 @@ Only one port number can be configured. When mapping the [w7 APPLICATION](w7-app
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-Port-{ObjectName}-PortNbr-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-Port-{ObjectName}-PortNbr-Applicability-End -->
 
 <!-- Device-{AccountUID}-AppAddr-{ObjectName}-Port-{ObjectName}-PortNbr-OmaUri-Begin -->
@@ -447,7 +440,7 @@ Specifies the port number of the OMA MD account address. This must be a decimal 
 <!-- Device-{AccountUID}-AppAuth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-AppAuth-Applicability-End -->
 
 <!-- Device-{AccountUID}-AppAuth-OmaUri-Begin -->
@@ -486,7 +479,7 @@ Defines authentication settings.
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-Applicability-End -->
 
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-OmaUri-Begin -->
@@ -526,7 +519,7 @@ Defines one set of authentication settings. When mapping the [w7 APPLICATION](w7
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthData-Applicability-End -->
 
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthData-OmaUri-Begin -->
@@ -565,7 +558,7 @@ Specifies the next nonce used for authentication. "Nonce" refers to a number use
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthLevel-Applicability-End -->
 
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthLevel-OmaUri-Begin -->
@@ -613,7 +606,7 @@ Specifies the application authentication level. A value of "CLCRED" indicates th
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthName-Applicability-End -->
 
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthName-OmaUri-Begin -->
@@ -652,7 +645,7 @@ Specifies the authentication name.
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthSecret-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthSecret-Applicability-End -->
 
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthSecret-OmaUri-Begin -->
@@ -691,7 +684,7 @@ Specifies the password or secret used for authentication.
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthType-Applicability-End -->
 
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthType-OmaUri-Begin -->
@@ -716,7 +709,7 @@ Specifies the authentication type. If AAuthLevel is CLCRED, the supported types 
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Get, Replace |
-| Dependency [AAuthlevelDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/DMAcc/[AccountUID]/AppAuth/[ObjectName]/AAuthLevel` <br> Dependency Allowed Value: `SRVCRED` <br> Dependency Allowed Value Type: `ENUM` <br>  |
+| Dependency [AAuthlevelDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Syncml/DMAcc/[AccountUID]/AppAuth/[ObjectName]/AAuthLevel` <br> Dependency Allowed Value: `SRVCRED` <br> Dependency Allowed Value Type: `ENUM` <br>  |
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthType-DFProperties-End -->
 
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthType-AllowedValues-Begin -->
@@ -740,7 +733,7 @@ Specifies the authentication type. If AAuthLevel is CLCRED, the supported types 
 <!-- Device-{AccountUID}-AppID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-AppID-Applicability-End -->
 
 <!-- Device-{AccountUID}-AppID-OmaUri-Begin -->
@@ -751,7 +744,7 @@ Specifies the authentication type. If AAuthLevel is CLCRED, the supported types 
 
 <!-- Device-{AccountUID}-AppID-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the application identifier for the OMA DM account.. The only supported value is w7.
+Specifies the application identifier for the OMA DM account. The only supported value is w7.
 <!-- Device-{AccountUID}-AppID-Description-End -->
 
 <!-- Device-{AccountUID}-AppID-Editable-Begin -->
@@ -788,7 +781,7 @@ Specifies the application identifier for the OMA DM account.. The only supported
 <!-- Device-{AccountUID}-Ext-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-Ext-Applicability-End -->
 
 <!-- Device-{AccountUID}-Ext-OmaUri-Begin -->
@@ -827,7 +820,7 @@ Defines a set of extended parameters. This element holds vendor-specific informa
 <!-- Device-{AccountUID}-Ext-Microsoft-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-Ext-Microsoft-Applicability-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-OmaUri-Begin -->
@@ -866,7 +859,7 @@ Defines a set of Microsoft-specific extended parameters. This element is created
 <!-- Device-{AccountUID}-Ext-Microsoft-BackCompatRetryDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-Ext-Microsoft-BackCompatRetryDisabled-Applicability-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-BackCompatRetryDisabled-OmaUri-Begin -->
@@ -919,7 +912,7 @@ false (default) -- Compatibility with down-level servers is enabled true -- Comp
 <!-- Device-{AccountUID}-Ext-Microsoft-ConnRetryFreq-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-Ext-Microsoft-ConnRetryFreq-Applicability-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-ConnRetryFreq-OmaUri-Begin -->
@@ -959,7 +952,7 @@ This node specifies how many times DM client will retry a connection to the serv
 <!-- Device-{AccountUID}-Ext-Microsoft-CRLCheck-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-Ext-Microsoft-CRLCheck-Applicability-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-CRLCheck-OmaUri-Begin -->
@@ -1007,7 +1000,7 @@ Allows connection to the DM server to check the Certificate Revocation List (CRL
 <!-- Device-{AccountUID}-Ext-Microsoft-DefaultEncoding-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-Ext-Microsoft-DefaultEncoding-Applicability-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-DefaultEncoding-OmaUri-Begin -->
@@ -1056,7 +1049,7 @@ This node specifies the encoding that the OMA-DM client will use to encode its f
 <!-- Device-{AccountUID}-Ext-Microsoft-DisableOnRoaming-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-Ext-Microsoft-DisableOnRoaming-Applicability-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-DisableOnRoaming-OmaUri-Begin -->
@@ -1104,7 +1097,7 @@ Determines whether the OMA DM client should be launched when roaming.
 <!-- Device-{AccountUID}-Ext-Microsoft-InitialBackOffTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-Ext-Microsoft-InitialBackOffTime-Applicability-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-InitialBackOffTime-OmaUri-Begin -->
@@ -1145,7 +1138,7 @@ time grows exponentially. The default value is 16000 milliseconds.
 <!-- Device-{AccountUID}-Ext-Microsoft-InitiateSession-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-{AccountUID}-Ext-Microsoft-InitiateSession-Applicability-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-InitiateSession-OmaUri-Begin -->
@@ -1184,7 +1177,7 @@ When this node is added, a session is started with the MDM server.
 <!-- Device-{AccountUID}-Ext-Microsoft-MaxBackOffTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-Ext-Microsoft-MaxBackOffTime-Applicability-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-MaxBackOffTime-OmaUri-Begin -->
@@ -1224,7 +1217,7 @@ This node specifies the maximum number of milliseconds to wait before attempting
 <!-- Device-{AccountUID}-Ext-Microsoft-ProtoVer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-Ext-Microsoft-ProtoVer-Applicability-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-ProtoVer-OmaUri-Begin -->
@@ -1274,7 +1267,7 @@ The protocol version set by this element will match the protocol version that th
 <!-- Device-{AccountUID}-Ext-Microsoft-Role-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-Ext-Microsoft-Role-Applicability-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-Role-OmaUri-Begin -->
@@ -1326,7 +1319,7 @@ The acceptable access roles for this node can't be more than the roles assigned 
 <!-- Device-{AccountUID}-Ext-Microsoft-SSLCLIENTCERTSEARCHCRITERIA-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-Ext-Microsoft-SSLCLIENTCERTSEARCHCRITERIA-Applicability-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-SSLCLIENTCERTSEARCHCRITERIA-OmaUri-Begin -->
@@ -1369,7 +1362,7 @@ The SSLCLIENTCERTSEARCHCRITERIA parameter is used to specify the client certific
 <!-- Device-{AccountUID}-Ext-Microsoft-UseHwDevID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-Ext-Microsoft-UseHwDevID-Applicability-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-UseHwDevID-OmaUri-Begin -->
@@ -1420,7 +1413,7 @@ the UUID of the device.
 <!-- Device-{AccountUID}-Ext-Microsoft-UseNonceResync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-Ext-Microsoft-UseNonceResync-Applicability-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-UseNonceResync-OmaUri-Begin -->
@@ -1476,7 +1469,7 @@ true: Nonce resynchronization is enabled.
 <!-- Device-{AccountUID}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-Name-Applicability-End -->
 
 <!-- Device-{AccountUID}-Name-OmaUri-Begin -->
@@ -1515,7 +1508,7 @@ Specifies the display name of the application.
 <!-- Device-{AccountUID}-PrefConRef-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-PrefConRef-Applicability-End -->
 
 <!-- Device-{AccountUID}-PrefConRef-OmaUri-Begin -->
@@ -1555,7 +1548,7 @@ will use the default connection provided by connection manager.
 <!-- Device-{AccountUID}-ServerID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{AccountUID}-ServerID-Applicability-End -->
 
 <!-- Device-{AccountUID}-ServerID-OmaUri-Begin -->

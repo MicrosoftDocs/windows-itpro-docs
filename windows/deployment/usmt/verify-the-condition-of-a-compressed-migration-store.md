@@ -1,18 +1,22 @@
 ---
-title: Verify the Condition of a Compressed Migration Store (Windows 10)
+title: Verify the Condition of a Compressed Migration Store
 description: Use these tips and tricks to verify the condition of a compressed migration store when using User State Migration Tool (USMT).
+ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 01/09/2024
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Verify the condition of a compressed migration store
 
-When you migrate files and settings during a typical PC-refresh migration, the user state is usually stored in a compressed folder on the intermediate store. This compressed folder, also called the compressed migration store, is a single image file that contains:
+When files and settings are migrated during a typical PC-refresh migration, the user state is normally stored in a compressed folder on the intermediate store. This compressed folder, also called the compressed migration store, is a single image file that contains:
 
 - All of the files being migrated.
 
@@ -20,9 +24,9 @@ When you migrate files and settings during a typical PC-refresh migration, the u
 
 - A catalog file that contains metadata for all files in the migration store.
 
-When you run the `LoadState.exe` command to load the data from these files to the destination computer, **LoadState** requires a valid catalog file in order to open the migration store. You can run the `UsmtUtils.exe` command with the `/verify` option to determine whether the compressed migration store is intact, or whether it contains corrupted files or a corrupted catalog. You should run the `/verify` option on the migration store before you overwrite the original user-state files and settings.
+When the `LoadState.exe` command is run to load the data from these files to the destination computer, **LoadState** requires a valid catalog file in order to open the migration store. The `UsmtUtils.exe` command can be run with the `/verify` option to determine whether the compressed migration store is intact, or whether it contains corrupted files or a corrupted catalog. The `/verify` option should be run on the migration store before overwriting the original user-state files and settings.
 
-When you use the `/verify` option, you can specify what type of information to report in the **UsmtUtils** log file. These report types are:
+When the `/verify` option is used, what type of information to report in the **UsmtUtils** log file can be specified. These report types are:
 
 - **Catalog**: Displays the status of only the catalog file.
 
@@ -36,23 +40,23 @@ The following sections demonstrate how to run the `UsmtUtils.exe` command with t
 
 To verify the condition of a compressed migration store, use the following UsmtUtils syntax:
 
-> UsmtUtils.exe /verify\[:&lt;*reportType*&gt;\] &lt;*filePath*&gt; \[/l:&lt;*logfile*&gt;\] \[/decrypt \[:&lt;*AlgID*&gt;\] {/key:&lt;*keystring*&gt; | /keyfile:&lt;*filename*&gt;}\]
+> UsmtUtils.exe /verify\[:\<*reportType*\>\] \<*filePath*\> \[/l:\<*logfile*\>\] \[/decrypt \[:\<*AlgID*\>\] {/key:\<*keystring*\> | /keyfile:\<*filename*\>}\]
 
 Where the placeholders have the following values:
 
-- *&lt;USMTpath&gt;* is the location where you've saved the USMT files and tools.
+- *\<USMTpath\>* is the location where the USMT files and tools are saved.
 
-- *&lt;reportType&gt;* specifies whether to report on all files, corrupted files only, or the status of the catalog.
+- *\<reportType\>* specifies whether to report on all files, corrupted files only, or the status of the catalog.
 
-- *&lt;filePath&gt;* is the location of the compressed migration store.
+- *\<filePath\>* is the location of the compressed migration store.
 
-- *&lt;logfile&gt;* is the location and name of the log file.
+- *\<logfile\>* is the location and name of the log file.
 
-- *&lt;AlgID&gt;* is the cryptographic algorithm that was used to create the migration store on the `ScanState.exe` command line.
+- *\<AlgID\>* is the cryptographic algorithm that was used to create the migration store on the `ScanState.exe` command line.
 
-- *&lt;keystring&gt;* is the encryption key that was used to encrypt the migration store.
+- *\<keystring\>* is the encryption key that was used to encrypt the migration store.
 
-- *&lt;filename&gt;* is the location and name of the text file that contains the encryption key.
+- *\<filename\>* is the location and name of the text file that contains the encryption key.
 
 ## To verify that the migration store is intact
 
@@ -84,7 +88,7 @@ In addition to verifying the status of all files, this example decrypts the file
 
 ## To verify the status of the files and return only the corrupted files
 
-In this example, the log file will only list the files that became corrupted during the **ScanState** process. This list will include the catalog file if it's also corrupted.
+In this example, the log file only lists the files that became corrupted during the **ScanState** process. This list includes the catalog file if the catalog file is also corrupted.
 
 ```cmd
 UsmtUtils.exe /verify:failureonly D:\MyMigrationStore\USMT\store.mig /decrypt:AES_192 /keyfile:D:\encryptionKey.txt
@@ -94,10 +98,9 @@ This example also decrypts the files by specifying the cryptographic algorithm a
 
 ## Next steps
 
-If the `/verify` option indicates that there are corrupted files in the migration store, you can use the `/extract` option in the **UsmtUtils** tool to recover data from some corrupted stores. For more information, see [Extract files from a compressed USMT migration store](usmt-extract-files-from-a-compressed-migration-store.md).
+If the `/verify` option indicates that there are corrupted files in the migration store, the `/extract` option in the **UsmtUtils** tool can be used to recover data from some corrupted stores. For more information, see [Extract files from a compressed USMT migration store](usmt-extract-files-from-a-compressed-migration-store.md).
 
 ## Related articles
 
-[UsmtUtils syntax](usmt-utilities.md)
-
-[Return codes](/troubleshoot/windows-client/deployment/usmt-return-codes)
+- [UsmtUtils syntax](usmt-utilities.md).
+- [Return codes](/troubleshoot/windows-client/deployment/usmt-return-codes).

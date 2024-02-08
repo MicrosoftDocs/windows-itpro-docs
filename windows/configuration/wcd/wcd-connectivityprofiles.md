@@ -1,15 +1,8 @@
 ---
-title: ConnectivityProfiles (Windows 10)
+title: ConnectivityProfiles
 description: This section describes the ConnectivityProfile settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
-ms.topic: article
-ms.date: 04/30/2018
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
+ms.topic: reference
+ms.date: 01/25/2024
 ---
 
 # ConnectivityProfiles (Windows Configuration Designer reference)
@@ -20,21 +13,21 @@ Use to configure profiles that a user will connect with, such as an email accoun
 
 | Setting groups  | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| [Email](#email)  | ✔️ |  ✔️ |  |  |
-| [Exchange](#exchange) | ✔️ |  ✔️ |  |  |
-| [KnownAccounts](#knownaccounts) | ✔️ |  ✔️ |  |  |
-| [VPN](#vpn) | ✔️ |  ✔️ | ✔️ |  |
-| [WiFiSense](#wifisense) | ✔️ | ✔️ |  |  |
-| [WLAN](#wlan) | ✔️ | ✔️ | ✔️ |  |
+| [Email](#email)  | ✅ |  ✅ |  |  |
+| [Exchange](#exchange) | ✅ |  ✅ |  |  |
+| [KnownAccounts](#knownaccounts) | ✅ |  ✅ |  |  |
+| [VPN](#vpn) | ✅ |  ✅ | ✅ |  |
+| [WiFiSense](#wifisense) | ✅ | ✅ |  |  |
+| [WLAN](#wlan) | ✅ | ✅ | ✅ |  |
 
 ## Email
 
-Specify an email account to be automatically set up on the device. 
+Specify an email account to be automatically set up on the device.
 
 1. In **Available customizations**, select **Email**, enter a friendly name for the account, and then click **Add**.
-2. In **Available customizations**, select the name that you created. The following table describes the settings you can configure for each account. Settings in **bold** are required.
+1. In **Available customizations**, select the name that you created. The following table describes the settings you can configure for each account. Settings in **bold** are required.
 
-| Setting | Description | 
+| Setting | Description |
 | --- | --- |
 | **AccountType** | Select between **Normal email** and **Visual voice mail** |
 | AuthForOutgoingMail | Set to **True** if the outgoing server requires authentication |
@@ -60,27 +53,26 @@ Specify an email account to be automatically set up on the device.
 
 Configure settings related to Exchange email server. These settings are related to the [ActiveSync configuration service provider (CSP)](/windows/client-management/mdm/activesync-csp).
 
-
 1. In **Available customizations**, select **Exchange**, enter a name for the account, and then click **Add**. A globally unique identifier (GUID) is generated for the account.
-2. In **Available customizations**, select the GUID that you created. The following table describes the settings you can configure. Settings in **bold** are required.
+1. In **Available customizations**, select the GUID that you created. The following table describes the settings you can configure. Settings in **bold** are required.
 
-| Setting | Description | 
-| --- | --- |
+| Setting | Description |
+|--|--|
 | AccountIcon | Specify the location of the icon associated with the account.</br></br>The account icon can be used as a tile in the Start list or as an icon in the applications list under **Settings > Email & accounts**. Some icons are already provided on the device. The suggested icon for POP/IMAP or generic ActiveSync accounts is at `res://AccountSettingsSharedRes{ScreenResolution}!%s.genericmail.png`. The suggested icon for Exchange Accounts is at `res://AccountSettingsSharedRes{ScreenResolution}!%s.office.outlook.png`. Custom icons can be added if desired. |
 | **AccountName** | Enter the name that refers to the account on the device |
 | **AccountType** | Select **Exchange** |
 | **DiagnosticLogging** | Select whether to disable logging, enable basic logging, or enable advanced logging |
 | Domain | Enter the domain name of the Exchange server |
 | **EmailAddress** | Enter the email address associated with the Exchange ActiveSync account. |
-| **MailAgeFilter** | Specify the time window used for syncing email items to the device. Available values are:</br></br>- All email is synced</br>- Only email up to three days old is synced</br>-Email up to a week old is synced (default)</br>- Email up to two weeks old is synced</br>- Email up to a month old is synced  |
+| **MailAgeFilter** | Specify the time window used for syncing email items to the device. Available values are:</br></br>- All email is synced</br>- Only email up to three days old is synced</br>-Email up to a week old is synced (default)</br>- Email up to two weeks old is synced</br>- Email up to a month old is synced |
 | **Password** | Enter the password for the account |
 | **Schedule** | Specify the time until the next sync is performed, in minutes. Available values are:</br></br>- As items are received (default)</br>- Sync manually</br>- Every 15 minutes</br>- Every 30 minutes</br>- Every 60 minutes |
-| **ServerName**| Enter the server name used by the account |
+| **ServerName** | Enter the server name used by the account |
 | SyncCalendar_Enable | Enable or disable calendar sync |
 | SyncCalendar_Name | If you enable calendar sync, enter **Calendar** |
 | SyncContacts_Enable | Enable or disable contacts sync |
 | SyncContacts_Name | If you enable contacts sync, enter **Contacts** |
-| SyncEmail_Enable| Enable or disable email sync  |
+| SyncEmail_Enable | Enable or disable email sync |
 | SyncEmail_Name | If you enable email sync, enter **Email** |
 | SyncTasks_Enable | Enable or disable tasks sync |
 | SyncTasks_Name | If you enable tasks sync, enter **Tasks** |
@@ -108,10 +100,10 @@ Configure settings to change the default maximum transmission unit ([MTU](#mtu))
 | ProtocolType | Select **VPNProtocolType** |
 | TunnelMTU | Enter the desired MTU size, between **1** and **1500** |
 
-### VPN
+### VPN setting
 
 1. In **Available customizations**, select **VPNSetting**, enter a friendly name for the account, and then click **Add**.
-2. In **Available customizations**, select the name that you created. The following table describes the settings you can configure. Settings in **bold** are required.
+1. In **Available customizations**, select the name that you created. The following table describes the settings you can configure. Settings in **bold** are required.
 
 | Setting | Description |
 | --- | --- |
@@ -128,29 +120,29 @@ Configure settings to change the default maximum transmission unit ([MTU](#mtu))
 
 When **ProfileType** is set to **Native**, the following extra settings are available.
 
-Setting | Description 
---- | ---
-AuthenticationUserMethod | When you set **NativeProtocolType** to **IKEv2**, choose between **EAP** and **MSChapv2**.
-EAPConfiguration | When you set **AuthenticationUserMethod** to **EAP**, enter the HTML-encoded XML to configure EAP. For more information, see [EAP configuration](/windows/client-management/mdm/eap-configuration).
-NativeProtocolType | Choose between **PPTP**, **L2TP**, **IKEv2**, and **Automatic**.
-RoutingPolicyType | Choose between **SplitTunnel**, in which traffic can go over any interface as determined by the networking stack, and **ForceTunnel**, in which all IP traffic must go over the VPN interface.
-Server | Enter the public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm.
+| Setting | Description |
+|--|--|
+| AuthenticationUserMethod | When you set **NativeProtocolType** to **IKEv2**, choose between **EAP** and **MSChapv2**. |
+| EAPConfiguration | When you set **AuthenticationUserMethod** to **EAP**, enter the HTML-encoded XML to configure EAP. For more information, see [EAP configuration](/windows/client-management/mdm/eap-configuration). |
+| NativeProtocolType | Choose between **PPTP**, **L2TP**, **IKEv2**, and **Automatic**. |
+| RoutingPolicyType | Choose between **SplitTunnel**, in which traffic can go over any interface as determined by the networking stack, and **ForceTunnel**, in which all IP traffic must go over the VPN interface. |
+| Server | Enter the public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. |
 
 When **ProfileType** is set to **Third Party**, the following extra settings are available.
 
-Setting | Description
---- |---
-PluginProfileCustomConfiguration | Enter HTML-encoded XML for SSL-VPN plug-in specific configuration, including authentication information that is deployed to the device to make it available for SSL-VPN plug-ins. Contact the plug-in provider for format and other details. Most plug-ins can also configure values based on the server negotiations and defaults.
-PluginProfilePackageFamilyName | Choose between **Pulse Secure VPN**, **F5 VPN Client**, and **SonicWALL Mobile Connect**.
-PluginProfileServerUrlList | Enter a comma-separated list of servers in URL, hostname, or IP format.
+| Setting | Description |
+|--|--|
+| PluginProfileCustomConfiguration | Enter HTML-encoded XML for SSL-VPN plug-in specific configuration, including authentication information that is deployed to the device to make it available for SSL-VPN plug-ins. Contact the plug-in provider for format and other details. Most plug-ins can also configure values based on the server negotiations and defaults. |
+| PluginProfilePackageFamilyName | Choose between **Pulse Secure VPN**, **F5 VPN Client**, and **SonicWALL Mobile Connect**. |
+| PluginProfileServerUrlList | Enter a comma-separated list of servers in URL, hostname, or IP format. |
 
 ## WiFiSense
 
-Configure settings related to Wi-Fi Sense. 
+Configure settings related to Wi-Fi Sense.
 
 ### Config
 
-The **Config** settings are initial settings that can be overwritten when settings are pushed to the device by the cloud. 
+The **Config** settings are initial settings that can be overwritten when settings are pushed to the device by the cloud.
 
 | Setting | Description |
 | --- | --- |
@@ -158,7 +150,7 @@ The **Config** settings are initial settings that can be overwritten when settin
 | WiFiSharingOutlookInitial | Enable or disable sharing of Wi-Fi networks with Outlook contacts |
 | WiFiSharingSkypeInitial | Enable or disable sharing of Wi-Fi networks with Skype contacts |
 
-### FirstBoot 
+### FirstBoot
 
 | Setting | Description |
 | --- | --- |
@@ -166,11 +158,11 @@ The **Config** settings are initial settings that can be overwritten when settin
 | DefaultAutoConnectSharedState | When enabled, the OOBE Wi-Fi Sense checkbox to share networks with contacts will be checked. |
 | WiFiSenseAllowed | Enable or disable Wi-Fi Sense. Wi-Fi Sense features include auto-connect to Wi-Fi hotspots and credential sharing. |
 
-### SystemCapabilities 
+### SystemCapabilities
 
-You can use these settings to configure system capabilities for Wi-Fi adapters, which is a new functionality in Windows 10. These system capabilities are added at image time to ensure that the information is at its most accurate. The capabilities allow the OS to have a better understanding of the underlying hardware that it's running on. Diagnostic data is generated by the system to provide data that can be used to diagnose both software and hardware issues. 
+You can use these settings to configure system capabilities for Wi-Fi adapters, which is a new functionality in Windows 1. These system capabilities are added at image time to ensure that the information is at its most accurate. The capabilities allow the OS to have a better understanding of the underlying hardware that it's running on. Diagnostic data is generated by the system to provide data that can be used to diagnose both software and hardware issues.
 
-| Setting | Description | 
+| Setting | Description |
 | --- | --- |
 | CoexistenceSupport | Specify the type of co-existence that's supported on the device:</br></br>- **Both**: Both Wi-Fi and Bluetooth work at the same performance level during co-existence</br>- **Wi-Fi reduced**: On a 2X2 system, Wi-Fi performance is reduced to 1X1 level</br>- **Bluetooth centered**: When co-existing, Bluetooth has priority and restricts Wi-Fi performance</br>- **One**: Either Wi-Fi or Bluetooth will stop working  |
 | NumAntennaConnected | Enter the number of antennas that are connected to the WLAN radio |
@@ -178,18 +170,17 @@ You can use these settings to configure system capabilities for Wi-Fi adapters, 
 | WLANFunctionLevelDeviceResetSupported | Select whether the device supports functional level device reset (FLDR). The FLDR feature in the OS checks this system capability exclusively to determine if it can run. |
 | WLANPlatformLevelDeviceResetSupported | Select whether the device supports platform level device reset (PLDR). The PLDR feature in the OS checks this system capability exclusively to determine if it can run. |
 
-
 ## WLAN
 
-Configure settings for wireless connectivity.  
+Configure settings for wireless connectivity.
 
 ### Profiles
 
-**To add a profile**
+To add a profile:
 
 1. Create [the wireless profile XML](/windows/win32/nativewifi/wireless-profile-samples).
-2. In **WLAN > Profiles**, browse to and select the profile XML file.
-3. Click **Add**.
+1. In **WLAN > Profiles**, browse to and select the profile XML file.
+1. Click **Add**.
 
 ### WLANXmlSettings
 

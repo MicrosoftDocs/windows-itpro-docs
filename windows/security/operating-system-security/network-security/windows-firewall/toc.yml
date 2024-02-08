@@ -1,0 +1,27 @@
+items:
+  - name: Overview
+    href: index.md
+  - name: Firewall rules concepts
+    href: rules.md
+  - name: Configure and manage Windows Firewall
+    items: 
+    - name: Configuration tools
+      href: tools.md
+    - name: Configure with Microsoft Intune 🔗
+      href: /mem/intune/protect/endpoint-security-firewall-policy
+    - name: Configure with group policy
+      href: configure.md
+    - name: Configure with command line tools
+      href: configure-with-command-line.md
+  - name: Hyper-V firewall
+    href: hyper-v-firewall.md
+  - name: Troubleshoot
+    items:
+      - name: Configure Windows Firewall logging
+        href: configure-logging.md
+      - name: Troubleshoot UWP app connectivity issues in Windows Firewall
+        href: troubleshooting-uwp-firewall.md
+      - name: Filter origin audit log improvements
+        href: filter-origin-documentation.md
+      - name: Quarantine behavior
+        href: quarantine.md

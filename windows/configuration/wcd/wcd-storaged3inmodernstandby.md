@@ -1,14 +1,8 @@
 ---
-title: StorageD3InModernStandby (Windows 10)
+title: StorageD3InModernStandby
 description: This section describes the StorageD3InModernStandby settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
-ms.topic: article
-manager: aaroncz
-ms.technology: itpro-configure
-ms.date: 12/31/2017
+ms.topic: reference
+ms.date: 01/25/2024
 ---
 
 # StorageD3InModernStandby (Windows Configuration Designer reference)
@@ -23,5 +17,5 @@ Use **StorageD3InModernStandby** to enable or disable low-power state (D3) durin
 ## Applies to
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | 
-| All settings | ✔️  | ✔️ |  | ✔️ |
+| --- | :---: | :---: | :---: | :---: |
+| All settings | ✅  | ✅ |  | ✅ |

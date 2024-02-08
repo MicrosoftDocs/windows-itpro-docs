@@ -1,10 +1,9 @@
 ---
-title: System cryptography Force strong key protection for user keys stored on the computer 
+title: System cryptography Force strong key protection for user keys stored on the computer
 description: Best practices, security considerations, and more for the policy setting, System cryptography Force strong key protection for user keys stored on the computer.
 ms.assetid: 8cbff267-881e-4bf6-920d-b583a5ff7de0
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # System cryptography: Force strong key protection for user keys stored on the computer
@@ -52,13 +50,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Not defined| 
-| DC Effective Default Settings | Not defined| 
-| Member Server Effective Default Settings | Not defined| 
-| Client Computer Effective Default Settings| Not defined| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Not defined|
+| DC Effective Default Settings | Not defined|
+| Member Server Effective Default Settings | Not defined|
+| Client Computer Effective Default Settings| Not defined|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

@@ -1,125 +1,32 @@
 items:
 - name: Overview
   href: index.md
-- name: Concepts
-  expanded: true
+- name: How Windows Hello for Business works
   items:
-  - name: Passwordless strategy
-    href: passwordless-strategy.md
-  - name: Why a PIN is better than a password
-    href: hello-why-pin-is-better-than-password.md
-  - name: Windows Hello biometrics in the enterprise
-    href: hello-biometrics-in-enterprise.md
-  - name: How Windows Hello for Business works
-    href: hello-how-it-works.md
+    - name: Core concepts 
+      href: how-it-works.md
+    - name: How device registration works 🔗
+      href: /entra/identity/devices/device-registration-how-it-works
+    - name: How provisioning works
+      href: how-it-works-provisioning.md
+    - name: How authentication works
+      href: how-it-works-authentication.md
+- name: Configure Windows Hello for Business
+  href: configure.md
 - name: Deployment guides
+  href: deploy/toc.yml
+- name: How-to-guides
   items:
-  - name: Windows Hello for Business deployment overview
-    href: hello-deployment-guide.md
-  - name: Planning a Windows Hello for Business deployment
-    href: hello-planning-guide.md
-  - name: Deployment prerequisite overview
-    href: hello-identity-verification.md
-  - name: Cloud-only deployment
-    href: hello-aad-join-cloud-only-deploy.md
-  - name: Hybrid deployments
-    items:
-    - name: Cloud Kerberos trust deployment
-      items:
-        - name: Overview
-          href: hello-hybrid-cloud-kerberos-trust.md
-          displayName: cloud Kerberos trust
-        - name: Configure and provision Windows Hello for Business
-          href: hello-hybrid-cloud-kerberos-trust-provision.md
-          displayName: cloud Kerberos trust
-    - name: Key trust deployment
-      items: 
-      - name: Overview
-        href: hello-hybrid-key-trust.md
-        displayName: key trust
-      - name: Configure and validate the PKI
-        href: hello-hybrid-key-trust-validate-pki.md
-        displayName: key trust
-      - name: Configure and provision Windows Hello for Business
-        href: hello-hybrid-key-trust-provision.md
-        displayName: key trust
-      - name: Configure SSO for Azure AD joined devices
-        href: hello-hybrid-aadj-sso.md
-        displayName: key trust
-    - name: Certificate trust deployment
-      items: 
-      - name: Overview
-        href: hello-hybrid-cert-trust.md
-        displayName: certificate trust
-      - name: Configure and validate the PKI
-        href: hello-hybrid-cert-trust-validate-pki.md
-        displayName: certificate trust
-      - name: Configure AD FS
-        href: hello-hybrid-cert-whfb-settings-adfs.md
-        displayName: certificate trust
-      - name: Configure and provision Windows Hello for Business
-        href: hello-hybrid-cert-whfb-provision.md
-        displayName: certificate trust
-      - name: Configure SSO for Azure AD joined devices
-        href: hello-hybrid-aadj-sso.md
-        displayName: certificate trust
-      - name: Deploy certificates to Azure AD joined devices
-        href: hello-hybrid-aadj-sso-cert.md
-        displayName: certificate trust
-  - name: On-premises deployments
-    items:
-    - name: Key trust deployment
-      items: 
-      - name: Overview
-        href: hello-deployment-key-trust.md
-      - name: Validate Active Directory prerequisites
-        href: hello-key-trust-validate-ad-prereq.md
-      - name: Configure and validate the PKI
-        href: hello-key-trust-validate-pki.md
-      - name: Prepare and deploy Active Directory Federation Services (AD FS)
-        href: hello-key-trust-adfs.md
-      - name: Validate and deploy multi-factor authentication (MFA) services
-        href: hello-key-trust-validate-deploy-mfa.md
-      - name: Configure Windows Hello for Business policy settings
-        href: hello-key-trust-policy-settings.md
-    - name: Certificate trust deployment
-      items: 
-      - name: Overview
-        href: hello-deployment-cert-trust.md
-      - name: Validate Active Directory prerequisites
-        href: hello-cert-trust-validate-ad-prereq.md
-      - name: Configure and validate Public Key Infrastructure (PKI)
-        href: hello-cert-trust-validate-pki.md
-      - name: Prepare and Deploy Active Directory Federation Services (AD FS)
-        href: hello-cert-trust-adfs.md
-      - name: Validate and deploy multi-factor authentication (MFA) services
-        href: hello-cert-trust-validate-deploy-mfa.md
-      - name: Configure Windows Hello for Business policy settings
-        href: hello-cert-trust-policy-settings.md
-  - name: Planning for Domain Controller load
-    href: hello-adequate-domain-controllers.md
-  - name: Deploy certificates for remote desktop (RDP) sign-in
-    href: hello-deployment-rdp-certs.md
-- name: How-to Guides
-  items:
-  - name: Prepare people to use Windows Hello
-    href: hello-prepare-people-to-use.md
-  - name: Manage Windows Hello for Business in your organization
-    href: hello-manage-in-organization.md
-  - name: Windows Hello and password changes
-    href: hello-and-password-changes.md
-- name: Windows Hello for Business features
-  items:
-  - name: PIN Reset
-    href: hello-feature-pin-reset.md
-  - name: Dual Enrollment
+  - name: Configure PIN reset
+    href: pin-reset.md
+  - name: Configure dual enrollment
     href: hello-feature-dual-enrollment.md  
-  - name: Dynamic Lock
+  - name: Configure dynamic lock
     href: hello-feature-dynamic-lock.md
-  - name: Multi-factor Unlock
-    href: feature-multifactor-unlock.md
-  - name: Remote desktop (RDP) sign-in
-    href: hello-feature-remote-desktop.md
+  - name: Configure multi-factor unlock
+    href: multifactor-unlock.md
+  - name: Configure remote desktop (RDP) sign-in
+    href: rdp-sign-in.md
 - name: Troubleshooting
   items:
   - name: Known deployment issues
@@ -128,16 +35,11 @@ items:
     href: hello-errors-during-pin-creation.md
 - name: Reference
   items:
-  - name: How Windows Hello for Business provisioning works
-    href: hello-how-it-works-provisioning.md
-  - name: How Windows Hello for Business authentication works
-    href: hello-how-it-works-authentication.md
+  - name: Windows Hello for Business policy settings
+    href: policy-settings.md
   - name: WebAuthn APIs
     href: webauthn-apis.md
-  - name: Technology and terminology
-    href: hello-how-it-works-technology.md
+  - name: Windows Hello Enhanced Security Sign-in (ESS) 🔗
+    href: /windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security
   - name: Frequently Asked Questions (FAQ)
-    href: hello-faq.yml
-  - name: Windows Hello for Business videos
-    href: hello-videos.md
-    
+    href: faq.yml    

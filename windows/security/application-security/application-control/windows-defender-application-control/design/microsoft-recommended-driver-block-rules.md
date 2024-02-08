@@ -3,9 +3,9 @@ title: Microsoft recommended driver block rules
 description: View a list of recommended block rules to block vulnerable third-party drivers discovered by Microsoft and the security research community.
 ms.localizationpriority: medium
 ms.collection:
-- highpri
 - tier3
-ms.date: 06/06/2023
+- must-keep
+ms.date: 01/24/2024
 ms.topic: article
 ---
 
@@ -20,7 +20,7 @@ Microsoft has strict requirements for code running in kernel. So, malicious acto
 - Malicious behaviors (malware) or certificates used to sign malware
 - Behaviors that aren't malicious but circumvent the Windows Security Model and can be exploited by attackers to elevate privileges in the Windows kernel
 
-Drivers can be submitted to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission). For more information about driver submission, see [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/). To report an issue or request a change to the vulnerable driver blocklist, including updating a block rule once a driver vulnerability has been patched, visit the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi) or submit feedback on this article.
+Drivers can be submitted to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission). For more information about driver submission, see [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/). To report an issue or request a change to the blocklist, including updating a block rule once a driver has been fixed, visit the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi) or submit feedback on this article.
 
 > [!NOTE]
 > Blocking drivers can cause devices or software to malfunction, and in rare cases, lead to blue screen. The vulnerable driver blocklist is not guaranteed to block every driver found to have vulnerabilities. Microsoft attempts to balance the security risks from vulnerable drivers with the potential impact on compatibility and reliability to produce the blocklist. As always, Microsoft recommends using an explicit allow list approach to security wherever possible.
@@ -39,9 +39,7 @@ With Windows 11 2022 update, the vulnerable driver blocklist  is enabled by defa
 
 The blocklist is updated with each new major release of Windows, typically 1-2 times per year, including most recently with the Windows 11 2022 update released in September 2022. The most current blocklist is now also available for Windows 10 20H2 and Windows 11 21H2 users as an optional update from Windows Update. Microsoft will occasionally publish future updates through regular Windows servicing.
 
-Customers who always want the most up-to-date driver blocklist can also use Windows Defender Application Control (WDAC) to apply the latest recommended driver blocklist contained in this article. For your convenience, we've provided a download of the most up-to-date vulnerable driver blocklist along with instructions to apply it on your computer at the end of this article. Otherwise, you can use the XML provided below to create your own custom WDAC policies.
-
-[!INCLUDE [microsoft-vulnerable-driver-blocklist](../../../../../../includes/licensing/microsoft-vulnerable-driver-blocklist.md)]
+Customers who always want the most up-to-date driver blocklist can also use Windows Defender Application Control (WDAC) to apply the latest recommended driver blocklist contained in this article. For your convenience, we provide a download of the most up-to-date vulnerable driver blocklist along with instructions to apply it on your computer at the end of this article. Otherwise, use the following XML to create your own custom WDAC policies.
 
 ## Blocking vulnerable drivers using WDAC
 
@@ -74,15 +72,17 @@ To check that the policy was successfully applied on your computer:
 ## Vulnerable driver blocklist XML
 
 > [!IMPORTANT]
-> The policy listed below contains **Allow All** rules. If your version of Windows supports WDAC multiple policies, we recommend deploying this policy alongside any existing WDAC policies. If you do plan to merge this policy with another policy, you may need to remove the **Allow All** rules before merging it if the other policy applies an explicit allow list. For more information, see [Create a WDAC Deny Policy](/windows/security/threat-protection/windows-defender-application-control/create-wdac-deny-policy#single-policy-considerations).
+> The following policy contains **Allow All** rules. If your version of Windows supports WDAC multiple policies, we recommend deploying this policy alongside any existing WDAC policies. If you do plan to merge this policy with another policy, you may need to remove the **Allow All** rules before merging it if the other policy applies an explicit allow list. For more information, see [Create a WDAC Deny Policy](/windows/security/threat-protection/windows-defender-application-control/create-wdac-deny-policy#single-policy-considerations).
 
 > [!NOTE]
 > To use this policy with Windows Server 2016, you must convert the policy XML on a device running a newer operating system.
 
+The following recommended blocklist xml policy file can also be downloaded from the [Microsoft Download Center](https://aka.ms/VulnerableDriverBlockList).
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
-  <VersionEx>10.0.25880.0</VersionEx>
+  <VersionEx>10.0.26025.0</VersionEx>
   <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
   <Rules>
     <Rule>
@@ -517,18 +517,6 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_BSHWMIO64_SHA256_1" FriendlyName="BS_HWMIo64.sys\6dafd15ee2fbce87fef1279312660fc399c4168f55b6e6d463bf680f1979adcf Hash Sha256" Hash="7EA9B2420483183CF7B25D6577848F2DFE2AE064A61D931D6B8B65B31A1B2685" />
     <Deny ID="ID_DENY_BSHWMIO64_SHA1_PAGE_1" FriendlyName="BS_HWMIo64.sys\6dafd15ee2fbce87fef1279312660fc399c4168f55b6e6d463bf680f1979adcf Hash Page Sha1" Hash="7E21A9D03BCB6DD7597AD70B59CBD1F5930FFBF1" />
     <Deny ID="ID_DENY_BSHWMIO64_SHA256_PAGE_1" FriendlyName="BS_HWMIo64.sys\6dafd15ee2fbce87fef1279312660fc399c4168f55b6e6d463bf680f1979adcf Hash Page Sha256" Hash="74C425BFDDD93700379E677F5CED47FC0FB4FFFC8B2E416A5247D91E5F2704E3" />
-    <Deny ID="ID_DENY_DHKERNEL_1" FriendlyName="YY_DhKernel\80cbba9f404df3e642f22c476664d63d7c229d45d34f5cd0e19c65eb41becec3 Hash Sha1" Hash="B92959042D232605ABBA254BC0368B87EC047079" />
-    <Deny ID="ID_DENY_DHKERNEL_2" FriendlyName="YY_DhKernel\80cbba9f404df3e642f22c476664d63d7c229d45d34f5cd0e19c65eb41becec3 Hash Sha256" Hash="C786F3CA229DA18B2806AF4D57ECAD603859EE548549B19F71A623F477FC740E" />
-    <Deny ID="ID_DENY_DHKERNEL_3" FriendlyName="YY_DhKernel\80cbba9f404df3e642f22c476664d63d7c229d45d34f5cd0e19c65eb41becec3 Hash Page Sha1" Hash="CFE049C9BAB44EDD22D135330F7825063F1307B4" />
-    <Deny ID="ID_DENY_DHKERNEL_4" FriendlyName="YY_DhKernel\80cbba9f404df3e642f22c476664d63d7c229d45d34f5cd0e19c65eb41becec3 Hash Page Sha256" Hash="8146C482151930412A3A648CEFE80643FB1016214117BFF256153E52D01E4ED2" />
-    <Deny ID="ID_DENY_DHKERNEL_5" FriendlyName="YY_DhKernel\bb50818a07b0eb1bd317467139b7eb4bad6cd89053fecdabfeae111689825955 Hash Sha1" Hash="508C1A26486188AA1268D6C23C65E57B8EFE71F6" />
-    <Deny ID="ID_DENY_DHKERNEL_6" FriendlyName="YY_DhKernel\bb50818a07b0eb1bd317467139b7eb4bad6cd89053fecdabfeae111689825955 Hash Sha256" Hash="F5215F83138901CA7ADE60C2222446FA3DD7E8900A745BD339F8A596CB29356C" />
-    <Deny ID="ID_DENY_DHKERNEL_8" FriendlyName="YY_DhKernel\bb50818a07b0eb1bd317467139b7eb4bad6cd89053fecdabfeae111689825955 Hash Page Sha1" Hash="475E1306D823702264DB8451D8A1D3512E7CA260" />
-    <Deny ID="ID_DENY_DHKERNEL_9" FriendlyName="YY_DhKernel\bb50818a07b0eb1bd317467139b7eb4bad6cd89053fecdabfeae111689825955 Hash Page Sha256" Hash="2BF083DCADC1CAE99AD5C5901317130C1230A228208F37DCB4DF341394442299" />
-    <Deny ID="ID_DENY_DHKERNEL_10" FriendlyName="YY_DhKernel\dcd026fd2ff8d517e2779d67b3d2d5f9a7aa39f19c66fa8ff2cab66d5c6461c6 Hash Sha1" Hash="39ED8A86F91A548AE05E71E9C1C337ED4FAD8EE4" />
-    <Deny ID="ID_DENY_DHKERNEL_11" FriendlyName="YY_DhKernel\dcd026fd2ff8d517e2779d67b3d2d5f9a7aa39f19c66fa8ff2cab66d5c6461c6 Hash Sha256" Hash="8BCE2AFD04EC073143A2A4BA51671992451C8E747A84852458321F2D275B5433" />
-    <Deny ID="ID_DENY_DHKERNEL_12" FriendlyName="YY_DhKernel\dcd026fd2ff8d517e2779d67b3d2d5f9a7aa39f19c66fa8ff2cab66d5c6461c6 Hash Page Sha1" Hash="890A839069A81D76EB8FB53C9D18F8BE09C101F2" />
-    <Deny ID="ID_DENY_DHKERNEL_13" FriendlyName="YY_DhKernel\dcd026fd2ff8d517e2779d67b3d2d5f9a7aa39f19c66fa8ff2cab66d5c6461c6 Hash Page Sha256" Hash="F7365B2ECAD159FFD61261F114333765FD73E3039270F51837EB24A63455AE9A" />
     <Deny ID="ID_DENY_BS_RCIO_08" FriendlyName="BS_RCIO\1d0105b5e41fe0280f66d7a24eb00a04c03caaec Hash Sha1" Hash="1D0105B5E41FE0280F66D7A24EB00A04C03CAAEC" />
     <Deny ID="ID_DENY_BS_RCIO_09" FriendlyName="BS_RCIO\d9111b2bedf78a769bb0799b964663cd119edaa8 Hash Sha1" Hash="D9111B2BEDF78A769BB0799B964663CD119EDAA8" />
     <Deny ID="ID_DENY_BS_RCIO_10" FriendlyName="BS_RCIO\362c4f3dadc9c393682664a139d65d80e32caa2a97b6e0361dfd713a73267ecc Hash Sha1" Hash="3311E4E94E8A6DD81859719FBE0FCBF187F0BD8A" />
@@ -551,6 +539,38 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_BS_RCIO_21" FriendlyName="BS_RCIO\e9e711056fada8681f3eb5578a0d449b68568bc812e29dfcc0b92b9a9e481202 Hash Sha256" Hash="30591EA53FBA8BAD22A017CF5A268211790706B7863F007CE20A77F2E3459170" />
     <Deny ID="ID_DENY_BS_RCIO_22" FriendlyName="BS_RCIO\e9e711056fada8681f3eb5578a0d449b68568bc812e29dfcc0b92b9a9e481202 Hash Page Sha1" Hash="AF5B84A2456E2621F920D61130DDAAD32CD4729F" />
     <Deny ID="ID_DENY_BS_RCIO_23" FriendlyName="BS_RCIO\e9e711056fada8681f3eb5578a0d449b68568bc812e29dfcc0b92b9a9e481202 Hash Page Sha256" Hash="6F698A9123CC763F0F035CF50177BF5690B4644802746C8C2F06F59CFC0D9F81" />
+    <Deny ID="ID_DENY_DELLBIOS_1" FriendlyName="DellBIOS.sys\163912dfa4ad141e689e1625e994ab7c1f335410ebff0ade86bda3b7cdf6e065 Hash Sha1" Hash="A5F8E8044E4ADD00FEF7F43725C8E6E121BA0E6A"/>
+    <Deny ID="ID_DENY_DELLBIOS_2" FriendlyName="DellBIOS.sys\163912dfa4ad141e689e1625e994ab7c1f335410ebff0ade86bda3b7cdf6e065 Hash Sha256" Hash="E2B6350E17E9B24B7140EED743B4AE0B01453BBB8CB73B091B51E2306017D80F"/>
+    <Deny ID="ID_DENY_DELLBIOS_3" FriendlyName="DellBIOS.sys\163912dfa4ad141e689e1625e994ab7c1f335410ebff0ade86bda3b7cdf6e065 Hash Page Sha1" Hash="BC93DBE8834352583E15F5D4A41D166EB2680660"/>
+    <Deny ID="ID_DENY_DELLBIOS_4" FriendlyName="DellBIOS.sys\163912dfa4ad141e689e1625e994ab7c1f335410ebff0ade86bda3b7cdf6e065 Hash Page Sha256" Hash="DF3B9926DD1F23BEC0B0D6DFF834904F126C5A8734F936178D2259F22042E1CB"/>
+    <Deny ID="ID_DENY_DELLBIOS_5" FriendlyName="DellBIOS.sys\3678ba63d62efd3b706d1b661d631ded801485c08b5eb9a3ef38380c6cff319a Hash Sha1" Hash="280FCEDFE4013A14BF122A917AE2FA469142714C"/>
+    <Deny ID="ID_DENY_DELLBIOS_6" FriendlyName="DellBIOS.sys\3678ba63d62efd3b706d1b661d631ded801485c08b5eb9a3ef38380c6cff319a Hash Sha256" Hash="EE067313BD75ACAE24E1661CB6807ED6148F9AF34542ED77578144B21F5C8DA1"/>
+    <Deny ID="ID_DENY_DELLBIOS_7" FriendlyName="DellBIOS.sys\3678ba63d62efd3b706d1b661d631ded801485c08b5eb9a3ef38380c6cff319a Hash Page Sha1" Hash="E6B426504312BCDD63191AD35FE6B464EB1CB1B5"/>
+    <Deny ID="ID_DENY_DELLBIOS_8" FriendlyName="DellBIOS.sys\3678ba63d62efd3b706d1b661d631ded801485c08b5eb9a3ef38380c6cff319a Hash Page Sha256" Hash="0E2D9FA6D1B4E5CC73CCCB5FAB712531D3DB89F552183356077665EF5C0E119A"/>
+    <Deny ID="ID_DENY_DELLBIOS_9" FriendlyName="DellBIOS.sys\5bf3985644308662ebfa2fbcc11fb4d3e2a0c817ad3da1a791020f8c8589ebc8 Hash Sha1" Hash="808B0DE6F644D48C4ED0C9B607A17362EC3DF083"/>
+    <Deny ID="ID_DENY_DELLBIOS_10" FriendlyName="DellBIOS.sys\5bf3985644308662ebfa2fbcc11fb4d3e2a0c817ad3da1a791020f8c8589ebc8 Hash Sha256" Hash="B8E047A7C96A94EB7CF0416253ECA48FA7BA66914B684EE75E81651C83C7AC30"/>
+    <Deny ID="ID_DENY_DELLBIOS_11" FriendlyName="DellBIOS.sys\5bf3985644308662ebfa2fbcc11fb4d3e2a0c817ad3da1a791020f8c8589ebc8 Hash Page Sha1" Hash="7E06EB584FB8815553A0A63295193DCC8E57CE47"/>
+    <Deny ID="ID_DENY_DELLBIOS_12" FriendlyName="DellBIOS.sys\5bf3985644308662ebfa2fbcc11fb4d3e2a0c817ad3da1a791020f8c8589ebc8 Hash Page Sha256" Hash="F47BE8407E6D9AD6D938EE55CDC45BAB6F02A99711B99F110FE5CDA93F27A2FD"/>
+    <Deny ID="ID_DENY_DELLBIOS_13" FriendlyName="DellBIOS.sys\6575ea9b319beb3845d43ce2c70ea55f0414da2055fa82eec324c4cebdefe893 Hash Sha1" Hash="AC1D5F3691326940BB3CB471097296FF7D21DC9B"/>
+    <Deny ID="ID_DENY_DELLBIOS_14" FriendlyName="DellBIOS.sys\6575ea9b319beb3845d43ce2c70ea55f0414da2055fa82eec324c4cebdefe893 Hash Sha256" Hash="419B5BCA6D43650893D5E044E785C0AD87CBE1185DE0D3FEAA9F681C6E7F50B4"/>
+    <Deny ID="ID_DENY_DELLBIOS_15" FriendlyName="DellBIOS.sys\6575ea9b319beb3845d43ce2c70ea55f0414da2055fa82eec324c4cebdefe893 Hash Page Sha1" Hash="8322FD18133859C11F6BFF906678BAFDF7DD2C32"/>
+    <Deny ID="ID_DENY_DELLBIOS_16" FriendlyName="DellBIOS.sys\6575ea9b319beb3845d43ce2c70ea55f0414da2055fa82eec324c4cebdefe893 Hash Page Sha256" Hash="661A1CD445C0D43465F3AB44AA68F407CE1C873469AD74AA8C28109AA67F07C3"/>
+    <Deny ID="ID_DENY_DELLBIOS_17" FriendlyName="DellBIOS.sys\700b9839fde53e91f0847053b4d2eb8d9bd3aca098844510f1fa3bab6a37eb24 Hash Sha1" Hash="03952B6DDCDFC4A2AB375DCE0475CEA07113AD36"/>
+    <Deny ID="ID_DENY_DELLBIOS_18" FriendlyName="DellBIOS.sys\700b9839fde53e91f0847053b4d2eb8d9bd3aca098844510f1fa3bab6a37eb24 Hash Sha256" Hash="7C62A659A4F8FDECFD5A64F4F4391852996DB564D123FC5D20E3F3DFB11ED62C"/>
+    <Deny ID="ID_DENY_DELLBIOS_19" FriendlyName="DellBIOS.sys\700b9839fde53e91f0847053b4d2eb8d9bd3aca098844510f1fa3bab6a37eb24 Hash Page Sha1" Hash="1C6165E7E1F075C95DE654261634AD6758DA1599"/>
+    <Deny ID="ID_DENY_DELLBIOS_20" FriendlyName="DellBIOS.sys\700b9839fde53e91f0847053b4d2eb8d9bd3aca098844510f1fa3bab6a37eb24 Hash Page Sha256" Hash="DD4C3666BF9205F21709F33E51AB072F5D0857B29D02A1A6401B9079998D17E2"/>
+    <Deny ID="ID_DENY_DHKERNEL_1" FriendlyName="YY_DhKernel\80cbba9f404df3e642f22c476664d63d7c229d45d34f5cd0e19c65eb41becec3 Hash Sha1" Hash="B92959042D232605ABBA254BC0368B87EC047079" />
+    <Deny ID="ID_DENY_DHKERNEL_2" FriendlyName="YY_DhKernel\80cbba9f404df3e642f22c476664d63d7c229d45d34f5cd0e19c65eb41becec3 Hash Sha256" Hash="C786F3CA229DA18B2806AF4D57ECAD603859EE548549B19F71A623F477FC740E" />
+    <Deny ID="ID_DENY_DHKERNEL_3" FriendlyName="YY_DhKernel\80cbba9f404df3e642f22c476664d63d7c229d45d34f5cd0e19c65eb41becec3 Hash Page Sha1" Hash="CFE049C9BAB44EDD22D135330F7825063F1307B4" />
+    <Deny ID="ID_DENY_DHKERNEL_4" FriendlyName="YY_DhKernel\80cbba9f404df3e642f22c476664d63d7c229d45d34f5cd0e19c65eb41becec3 Hash Page Sha256" Hash="8146C482151930412A3A648CEFE80643FB1016214117BFF256153E52D01E4ED2" />
+    <Deny ID="ID_DENY_DHKERNEL_5" FriendlyName="YY_DhKernel\bb50818a07b0eb1bd317467139b7eb4bad6cd89053fecdabfeae111689825955 Hash Sha1" Hash="508C1A26486188AA1268D6C23C65E57B8EFE71F6" />
+    <Deny ID="ID_DENY_DHKERNEL_6" FriendlyName="YY_DhKernel\bb50818a07b0eb1bd317467139b7eb4bad6cd89053fecdabfeae111689825955 Hash Sha256" Hash="F5215F83138901CA7ADE60C2222446FA3DD7E8900A745BD339F8A596CB29356C" />
+    <Deny ID="ID_DENY_DHKERNEL_8" FriendlyName="YY_DhKernel\bb50818a07b0eb1bd317467139b7eb4bad6cd89053fecdabfeae111689825955 Hash Page Sha1" Hash="475E1306D823702264DB8451D8A1D3512E7CA260" />
+    <Deny ID="ID_DENY_DHKERNEL_9" FriendlyName="YY_DhKernel\bb50818a07b0eb1bd317467139b7eb4bad6cd89053fecdabfeae111689825955 Hash Page Sha256" Hash="2BF083DCADC1CAE99AD5C5901317130C1230A228208F37DCB4DF341394442299" />
+    <Deny ID="ID_DENY_DHKERNEL_10" FriendlyName="YY_DhKernel\dcd026fd2ff8d517e2779d67b3d2d5f9a7aa39f19c66fa8ff2cab66d5c6461c6 Hash Sha1" Hash="39ED8A86F91A548AE05E71E9C1C337ED4FAD8EE4" />
+    <Deny ID="ID_DENY_DHKERNEL_11" FriendlyName="YY_DhKernel\dcd026fd2ff8d517e2779d67b3d2d5f9a7aa39f19c66fa8ff2cab66d5c6461c6 Hash Sha256" Hash="8BCE2AFD04EC073143A2A4BA51671992451C8E747A84852458321F2D275B5433" />
+    <Deny ID="ID_DENY_DHKERNEL_12" FriendlyName="YY_DhKernel\dcd026fd2ff8d517e2779d67b3d2d5f9a7aa39f19c66fa8ff2cab66d5c6461c6 Hash Page Sha1" Hash="890A839069A81D76EB8FB53C9D18F8BE09C101F2" />
+    <Deny ID="ID_DENY_DHKERNEL_13" FriendlyName="YY_DhKernel\dcd026fd2ff8d517e2779d67b3d2d5f9a7aa39f19c66fa8ff2cab66d5c6461c6 Hash Page Sha256" Hash="F7365B2ECAD159FFD61261F114333765FD73E3039270F51837EB24A63455AE9A" />
     <Deny ID="ID_DENY_DIRECTIO_12" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="E8F7E20061F9CC20583DCAB3B16054D106B8AA83" />
     <Deny ID="ID_DENY_DIRECTIO_13" FriendlyName="PassMark DirectIo.sys Hash Sha256" Hash="B8BF3BD441EBC5814C5D39D053FDCB263E8E58476CBDEE4B1226903305F547B6" />
     <Deny ID="ID_DENY_DIRECTIO_14" FriendlyName="PassMark DirectIo.sys Hash Page Sha1" Hash="36875A862D1E762E6CC75595EF37EA7460A1E1DF" />
@@ -643,6 +663,22 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_DIRECTIO_71" FriendlyName="DirectIO32\fac102ef0a36d2d7b4390776a9c3edded72e01e7316949179e6fbe23495121fb Hash Sha256" Hash="A9EB36FB737735DFF8245E1AA599054C0214FB9DE0CBA371357ED59FDE451308" />
     <Deny ID="ID_DENY_DIRECTIO_72" FriendlyName="DirectIO32\fac102ef0a36d2d7b4390776a9c3edded72e01e7316949179e6fbe23495121fb Hash Page Sha1" Hash="BCC1292F68AA179DA3EDFF5D5D6D1D991BEA7EB5" />
     <Deny ID="ID_DENY_DIRECTIO_73" FriendlyName="DirectIO32\fac102ef0a36d2d7b4390776a9c3edded72e01e7316949179e6fbe23495121fb Hash Page Sha256" Hash="AC8A4EE171C6E4905B370F7E01F6C11F7669BE4613E8DACACB5428B5E87DB390" />
+    <Deny ID="ID_DENY_ECHO_1" FriendlyName="Inspect EchoDriver\a41e9bb037cf1dc2237659b1158f0ed4e49b752b2f9dae4cc310933a9d1f1e47 Hash Sha1" Hash="503901E0DA00E491F28389F17CAFD1F1D5243C60" />
+    <Deny ID="ID_DENY_ECHO_2" FriendlyName="Inspect EchoDriver\a41e9bb037cf1dc2237659b1158f0ed4e49b752b2f9dae4cc310933a9d1f1e47 Hash Sha256" Hash="48DC7FD16AACDC8792F8BAD1B1F7CA9D675DDAC7767E957EA8C4227150D64E2D" />
+    <Deny ID="ID_DENY_ECHO_3" FriendlyName="Inspect EchoDriver\a41e9bb037cf1dc2237659b1158f0ed4e49b752b2f9dae4cc310933a9d1f1e47 Hash Page Sha1" Hash="0CE7E3B661DB16FBCFE93376127DC37EA23313A5" />
+    <Deny ID="ID_DENY_ECHO_4" FriendlyName="Inspect EchoDriver\a41e9bb037cf1dc2237659b1158f0ed4e49b752b2f9dae4cc310933a9d1f1e47 Hash Page Sha256" Hash="23C062104693B80CEC745DEC40B433D0D0B683C63496740B943CCB0D22F7361B" />
+    <Deny ID="ID_DENY_ECHO_5" FriendlyName="Inspect EchoDriver\ada2b855757c9062231f5ed4e80365b8d8094e9adbce8f26d1ff5ea0b7a70c77 Hash Sha1" Hash="18CD81740893FA24F1AFBB9D187A60AF9C5B2902" />
+    <Deny ID="ID_DENY_ECHO_6" FriendlyName="Inspect EchoDriver\ada2b855757c9062231f5ed4e80365b8d8094e9adbce8f26d1ff5ea0b7a70c77 Hash Sha256" Hash="4160DAE22484062CCC3750CC9CAC8F929D8701694160A3B508715610814AA28D" />
+    <Deny ID="ID_DENY_ECHO_7" FriendlyName="Inspect EchoDriver\ada2b855757c9062231f5ed4e80365b8d8094e9adbce8f26d1ff5ea0b7a70c77 Hash Page Sha1" Hash="2EFC7864E1E8AA87EFFEB13A2A3402CDC64FB6D2" />
+    <Deny ID="ID_DENY_ECHO_8" FriendlyName="Inspect EchoDriver\ada2b855757c9062231f5ed4e80365b8d8094e9adbce8f26d1ff5ea0b7a70c77 Hash Page Sha256" Hash="3709D170C4F5A7668C9180AFBDB8A4F6E9EE6E6A6C048B55D34FEA9DAA253127" />
+    <Deny ID="ID_DENY_ECHO_9" FriendlyName="Inspect EchoDriver\ea3c5569405ed02ec24298534a983bcb5de113c18bc3fd01a4dd0b5839cd17b9 Hash Sha1" Hash="678620A9CC9E7FFE179BC5CDA0A2DD0597E231EE" />
+    <Deny ID="ID_DENY_ECHO_A" FriendlyName="Inspect EchoDriver\ea3c5569405ed02ec24298534a983bcb5de113c18bc3fd01a4dd0b5839cd17b9 Hash Sha256" Hash="92F9D73CEC5AB3352C4B3CBF4574D13B2E506CBA24CC74580E19E941063EAF7D" />
+    <Deny ID="ID_DENY_ECHO_B" FriendlyName="Inspect EchoDriver\ea3c5569405ed02ec24298534a983bcb5de113c18bc3fd01a4dd0b5839cd17b9 Hash Page Sha1" Hash="832832028D40A3CFD08D364554FCE0B4F37317FF" />
+    <Deny ID="ID_DENY_ECHO_C" FriendlyName="Inspect EchoDriver\ea3c5569405ed02ec24298534a983bcb5de113c18bc3fd01a4dd0b5839cd17b9 Hash Page Sha256" Hash="49ED19D5E1E122936035A48EA99FFD68CA4915578107888D5C2B0BB9E30E67C0" />
+    <Deny ID="ID_DENY_ECSIODRV_1" FriendlyName="EliteGroup ECSioDriver\14edfdc13aeb98db50d597367f132443b086df0728f4fdb8c3bb5d47a8a0cd4a Hash Sha1" Hash="CAAC3986D305A606B7B4764FD4537E2BF6650DF6"/>
+    <Deny ID="ID_DENY_ECSIODRV_2" FriendlyName="EliteGroup ECSioDriver\14edfdc13aeb98db50d597367f132443b086df0728f4fdb8c3bb5d47a8a0cd4a Hash Sha256" Hash="FBDDB3EE9221EBAC892DC19BE3971AFF3707748130C3A30A000EC8D208CF5797"/>
+    <Deny ID="ID_DENY_ECSIODRV_3" FriendlyName="EliteGroup ECSioDriver\14edfdc13aeb98db50d597367f132443b086df0728f4fdb8c3bb5d47a8a0cd4a Hash Page Sha1" Hash="42BBD404E2262306FAD4F0D8DCF9D485D8DECBB3"/>
+    <Deny ID="ID_DENY_ECSIODRV_4" FriendlyName="EliteGroup ECSioDriver\14edfdc13aeb98db50d597367f132443b086df0728f4fdb8c3bb5d47a8a0cd4a Hash Page Sha256" Hash="96DE51B575F95A3E13C649502544C50D1309CB41C06DB8629D2627909331EAEE"/>
     <Deny ID="ID_DENY_EIO64_1" FriendlyName="Asus EIO64\b17507a3246020fa0052a172485d7b3567e0161747927f2edf27c40e310852e0 Hash Sha1" Hash="200BE5A696990EE97B4C3176234CDE46C3EBC2CE" />
     <Deny ID="ID_DENY_EIO64_2" FriendlyName="Asus EIO64\b17507a3246020fa0052a172485d7b3567e0161747927f2edf27c40e310852e0 Hash Sha256" Hash="72B36C64F0B349D7816C8E5E2D1A7F59807DE0C87D3F071A04DBC56BEC9C00DB" />
     <Deny ID="ID_DENY_EIO64_3" FriendlyName="Asus EIO64\b17507a3246020fa0052a172485d7b3567e0161747927f2edf27c40e310852e0 Hash Page Sha1" Hash="DB88BFE5F3DE4E3CC778FE456B542EC4135433A4" />
@@ -651,6 +687,28 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_EIO64_6" FriendlyName="Asus EIO64\cf69704755ec2643dfd245ae1d4e15d77f306aeb1a576ffa159453de1a7345cb Hash Sha256" Hash="D4E7335A177E47688D68AD89940C272F82728C882623F1630E7FD2E03E16F003" />
     <Deny ID="ID_DENY_EIO64_7" FriendlyName="Asus EIO64\cf69704755ec2643dfd245ae1d4e15d77f306aeb1a576ffa159453de1a7345cb Hash Page Sha1" Hash="D1AAAAF1EEA34073BAF39C7494E646C5AD2475F5" />
     <Deny ID="ID_DENY_EIO64_8" FriendlyName="Asus EIO64\cf69704755ec2643dfd245ae1d4e15d77f306aeb1a576ffa159453de1a7345cb Hash Page Sha256" Hash="796BEC283155309F2DF0B1779CABC78A3B2161FFCED9F521DB231550DCB376A1" />
+    <Deny ID="ID_DENY_FH_ETHER_1" FriendlyName="Omron FH-Ether\ae71f40f06edda422efcd16f3a48f5b795b34dd6d9bb19c9c8f2e083f0850eb7 Hash Sha1" Hash="364F53ED52E121182BE0E0A21C17C2254894713D"/>
+    <Deny ID="ID_DENY_FH_ETHER_2" FriendlyName="Omron FH-Ether\ae71f40f06edda422efcd16f3a48f5b795b34dd6d9bb19c9c8f2e083f0850eb7 Hash Sha256" Hash="5E7B92E6A1F656A70ED56EF2A190FCE6BB3F12063B891FBFD722CA4E951DE15F"/>
+    <Deny ID="ID_DENY_GEDEVDRV_1" FriendlyName="GEDevDrv.sys\51145a3fa8258aac106f65f34159d23c54b48b6d54ec0421748b3939ab6778eb Hash Sha1" Hash="ED3F9E742B37A81DB447D9D398F3EA26235E05AA"/>
+    <Deny ID="ID_DENY_GEDEVDRV_2" FriendlyName="GEDevDrv.sys\51145a3fa8258aac106f65f34159d23c54b48b6d54ec0421748b3939ab6778eb Hash Sha256" Hash="33494ED37D4BE23B7DE493D5F2C9C31A83A7A834C79A5FD7C2A93C1054F583B1"/>
+    <Deny ID="ID_DENY_GEDEVDRV_3" FriendlyName="GEDevDrv.sys\51145a3fa8258aac106f65f34159d23c54b48b6d54ec0421748b3939ab6778eb Hash Page Sha1" Hash="707E8CF8ADE1B63188DF4B8CDC9E784D8E003708"/>
+    <Deny ID="ID_DENY_GEDEVDRV_4" FriendlyName="GEDevDrv.sys\51145a3fa8258aac106f65f34159d23c54b48b6d54ec0421748b3939ab6778eb Hash Page Sha256" Hash="ED4B6AED3BF9CF1F02086EB3C21B6779F9EA1921BFBCDEAA0BD308EC5420789D"/>
+    <Deny ID="ID_DENY_GEDEVDRV_5" FriendlyName="GEDevDrv.sys\a369942ce8d4b70ebf664981e12c736ec980dbe5a74585dd826553c4723b1bce Hash Sha1" Hash="9F5EAAB353BF93697EEC55B9FAC8479968F17E7C"/>
+    <Deny ID="ID_DENY_GEDEVDRV_6" FriendlyName="GEDevDrv.sys\a369942ce8d4b70ebf664981e12c736ec980dbe5a74585dd826553c4723b1bce Hash Sha256" Hash="8A228C751D1664B362F10DC7083C223995B976B264DA8B7380C51157BED66FBE"/>
+    <Deny ID="ID_DENY_GEDEVDRV_7" FriendlyName="GEDevDrv.sys\a369942ce8d4b70ebf664981e12c736ec980dbe5a74585dd826553c4723b1bce Hash Page Sha1" Hash="3CA7CA0CD75C7EB9AE1D388513615009B5FA9311"/>
+    <Deny ID="ID_DENY_GEDEVDRV_8" FriendlyName="GEDevDrv.sys\a369942ce8d4b70ebf664981e12c736ec980dbe5a74585dd826553c4723b1bce Hash Page Sha256" Hash="719AB50DF883025F8170886B5A3801C1A6919FF23C741E64AC4A0C3C3B6AE076"/>
+    <Deny ID="ID_DENY_GEDEVDRV_9" FriendlyName="GEDevDrv.sys\ae73dd357e5950face9c956570088f334d18464cd49f00c56420e3d6ff47e8dc Hash Sha1" Hash="A236F58A6E3C596360078B96966416A1C66C87D7"/>
+    <Deny ID="ID_DENY_GEDEVDRV_10" FriendlyName="GEDevDrv.sys\ae73dd357e5950face9c956570088f334d18464cd49f00c56420e3d6ff47e8dc Hash Sha256" Hash="D9CBDFC10BA743D5229F7DBB6507B9864012FB58CB253DA92962DC611603A73C"/>
+    <Deny ID="ID_DENY_GEDEVDRV_11" FriendlyName="GEDevDrv.sys\ae73dd357e5950face9c956570088f334d18464cd49f00c56420e3d6ff47e8dc Hash Page Sha1" Hash="3485F18E38A52B5D2E26C40AB53F5CB09618A5C0"/>
+    <Deny ID="ID_DENY_GEDEVDRV_12" FriendlyName="GEDevDrv.sys\ae73dd357e5950face9c956570088f334d18464cd49f00c56420e3d6ff47e8dc Hash Page Sha256" Hash="EF0FDBFEAC16565C63E3B959557F5B26CB76BA57957F67FD7DDA6CC7D51DFD49"/>
+    <Deny ID="ID_DENY_GEDEVDRV_13" FriendlyName="GEDevDrv.sys\cac5dc7c3da69b682097144f12a816530091d4708ca432a7ce39f6abe6616461 Hash Sha1" Hash="30D5627753948F533EF45636A0A845D1ACCD82E3"/>
+    <Deny ID="ID_DENY_GEDEVDRV_14" FriendlyName="GEDevDrv.sys\cac5dc7c3da69b682097144f12a816530091d4708ca432a7ce39f6abe6616461 Hash Sha256" Hash="1DCDD1EFAB9ABC25F4227B37F76DA295A6DC4CF810875BA34EE1D465EB709B70"/>
+    <Deny ID="ID_DENY_GEDEVDRV_15" FriendlyName="GEDevDrv.sys\cac5dc7c3da69b682097144f12a816530091d4708ca432a7ce39f6abe6616461 Hash Page Sha1" Hash="C4B3B9D7BEBBA05B681E3B6D1C834BD2022640DE"/>
+    <Deny ID="ID_DENY_GEDEVDRV_16" FriendlyName="GEDevDrv.sys\cac5dc7c3da69b682097144f12a816530091d4708ca432a7ce39f6abe6616461 Hash Page Sha256" Hash="E68E8803E296F48BE72170FD05DB99C881E8A8DA51D47D96062C159CE37CC47E"/>
+    <Deny ID="ID_DENY_GVCIDRV_1" FriendlyName="Gigabyte gvcidrv\42f0b036687cbd7717c9efed6991c00d4e3e7b032dc965a2556c02177dfdad0f Hash Sha1" Hash="4EAE38E9DC262EB7B6EDE4B3D3F4AD068933845E" />
+    <Deny ID="ID_DENY_GVCIDRV_2" FriendlyName="Gigabyte gvcidrv\42f0b036687cbd7717c9efed6991c00d4e3e7b032dc965a2556c02177dfdad0f Hash Sha256" Hash="2FF09BB919A9909068166C30322C4E904BEFEBA5429E9A11D011297FB8A73C07" />
+    <Deny ID="ID_DENY_GVCIDRV_3" FriendlyName="Gigabyte gvcidrv\42f0b036687cbd7717c9efed6991c00d4e3e7b032dc965a2556c02177dfdad0f Hash Page Sha1" Hash="6980122AEF4E2D5D7A6DDDB6DA76A166C460E0A1" />
+    <Deny ID="ID_DENY_GVCIDRV_4" FriendlyName="Gigabyte gvcidrv\42f0b036687cbd7717c9efed6991c00d4e3e7b032dc965a2556c02177dfdad0f Hash Page Sha256" Hash="A69247025DD32DC15E06FEE362B494BCC6105D34B8D7091F7EC3D9000BD71501" />
     <Deny ID="ID_DENY_HW_22" FriendlyName="hw_sys\b8fcc8ef2b27c0c0622d069981e39f112d3b3b0dbede053340bc157ba1316eab Hash Sha1" Hash="924A088149D6EE89551E15D45E7BC847B9561196" />
     <Deny ID="ID_DENY_HW_23" FriendlyName="hw_sys\b8fcc8ef2b27c0c0622d069981e39f112d3b3b0dbede053340bc157ba1316eab Hash Sha256" Hash="5E1E1489A1A01CFB466B527543D9D25112A83792BDE443DE9E34E4D3ADA697E3" />
     <Deny ID="ID_DENY_HW_24" FriendlyName="hw_sys\b8fcc8ef2b27c0c0622d069981e39f112d3b3b0dbede053340bc157ba1316eab Hash Page Sha1" Hash="ADB70331BE7B68359C3EC3065C045349EA5B2EE2" />
@@ -680,6 +738,90 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_INPOUTX_21" FriendlyName="inpoutx\d5cc046c2ae9ba6fe54def699f1c4fa92d3226304321bbf45cc33883ce131138 Hash Sha256" Hash="D5CC046C2AE9BA6FE54DEF699F1C4FA92D3226304321BBF45CC33883CE131138" />
     <Deny ID="ID_DENY_INPOUTX_22" FriendlyName="inpoutx\e2c531a771b0df1585518a22427798e86611e6be3d357024797871a1b3876e9c Hash Sha1" Hash="CCE8ED3969E52080B32BCC59E2EC174CA9C578EC" />
     <Deny ID="ID_DENY_INPOUTX_23" FriendlyName="inpoutx\e2c531a771b0df1585518a22427798e86611e6be3d357024797871a1b3876e9c Hash Sha256" Hash="E2C531A771B0DF1585518A22427798E86611E6BE3D357024797871A1B3876E9C" />
+    <Deny ID="ID_DENY_IREC_1" FriendlyName="IREC.sys\irec32--1.sys Hash Sha1" Hash="B715B8030FC28346C97B5F5FB901C390ED5C97B6" />
+    <Deny ID="ID_DENY_IREC_2" FriendlyName="IREC.sys\irec32--1.sys Hash Sha256" Hash="2E8E61DAA45061AE04AABEE086371A6D56F0D517AA584E1B70C8423C8E469310" />
+    <Deny ID="ID_DENY_IREC_3" FriendlyName="IREC.sys\irec32--1.sys Hash Page Sha1" Hash="9DF591D3672885C5BAA454413C75D974386B9F14" />
+    <Deny ID="ID_DENY_IREC_4" FriendlyName="IREC.sys\irec32--1.sys Hash Page Sha256" Hash="883602C2C622E270F91E6391FE5E4B156CB68ED6B41A2F5694EFB93774579FFF" />
+    <Deny ID="ID_DENY_IREC_5" FriendlyName="IREC.sys\irec32--10.sys Hash Sha1" Hash="BCA37BCC2AEE3383F43D0126E30E07893E40F452" />
+    <Deny ID="ID_DENY_IREC_6" FriendlyName="IREC.sys\irec32--10.sys Hash Sha256" Hash="B431CBD247F1D229CA2A90256063973A8B4129A154926026366766677AB740F6" />
+    <Deny ID="ID_DENY_IREC_7" FriendlyName="IREC.sys\irec32--10.sys Hash Page Sha1" Hash="4B2582568EC84D1711D3EDCBE53730F32D9EA4F5" />
+    <Deny ID="ID_DENY_IREC_8" FriendlyName="IREC.sys\irec32--10.sys Hash Page Sha256" Hash="6D94B06210D7946DD9F4EC83D2E804FC6EA0083E95CBACA0E62D84891C9DA51C" />
+    <Deny ID="ID_DENY_IREC_9" FriendlyName="IREC.sys\irec32--11.sys Hash Sha1" Hash="EAA1C906B44925B71D4F67A29F125158CF58FBA1" />
+    <Deny ID="ID_DENY_IREC_A" FriendlyName="IREC.sys\irec32--11.sys Hash Sha256" Hash="EBFF008864CE631BCD44328DF0E72901EA08B83EA25EB6949FC8D61335E6A149" />
+    <Deny ID="ID_DENY_IREC_B" FriendlyName="IREC.sys\irec32--11.sys Hash Page Sha1" Hash="86777AF3C0E74138EF70C3DC02D98E3938F244BA" />
+    <Deny ID="ID_DENY_IREC_C" FriendlyName="IREC.sys\irec32--11.sys Hash Page Sha256" Hash="968D1E5440BA5F42E5E50C33ECFEE253FC6217F58F0475EC881DF9A65F254584" />
+    <Deny ID="ID_DENY_IREC_D" FriendlyName="IREC.sys\irec32--2.sys Hash Sha1" Hash="BC47F6F4A03B944A2C9BADA25275D5ED35A00946" />
+    <Deny ID="ID_DENY_IREC_E" FriendlyName="IREC.sys\irec32--2.sys Hash Sha256" Hash="E04C028FA5D0343A10C1D526ADD23B5C98834B252A87732CF69F4D482A7DAB94" />
+    <Deny ID="ID_DENY_IREC_F" FriendlyName="IREC.sys\irec32--2.sys Hash Page Sha1" Hash="F2F9BC79B1CF1FC2C4F9C3B59C53F5A8949CC987" />
+    <Deny ID="ID_DENY_IREC_10" FriendlyName="IREC.sys\irec32--2.sys Hash Page Sha256" Hash="5ECD5D7679504C22300263889CC3B48F1724EC5276CA24C06BABED595C3501AF" />
+    <Deny ID="ID_DENY_IREC_11" FriendlyName="IREC.sys\irec32--3.sys Hash Sha1" Hash="94881B8F8C0BD3EC9B4F8C44D74CD774AAEF77CA" />
+    <Deny ID="ID_DENY_IREC_12" FriendlyName="IREC.sys\irec32--3.sys Hash Sha256" Hash="A026FADABEB628EAD4399CA3FB3369224983E311CF927EAC7826B230CB774B67" />
+    <Deny ID="ID_DENY_IREC_13" FriendlyName="IREC.sys\irec32--3.sys Hash Page Sha1" Hash="3DEF49B1C6095AD5A5CACB5ED24958070C872925" />
+    <Deny ID="ID_DENY_IREC_14" FriendlyName="IREC.sys\irec32--3.sys Hash Page Sha256" Hash="00A813073AED7A5C795C35BF239536962683A73BB315C774DBA9838144131DEF" />
+    <Deny ID="ID_DENY_IREC_15" FriendlyName="IREC.sys\irec32--5.sys Hash Sha1" Hash="7C1B5F25BBA93877FA3D5626F3FF08FC865FC062" />
+    <Deny ID="ID_DENY_IREC_16" FriendlyName="IREC.sys\irec32--5.sys Hash Sha256" Hash="BB02A566FFE392BA15F3DD0FA0F2B08AE684462D41FE2141D98E9E8F416BC339" />
+    <Deny ID="ID_DENY_IREC_17" FriendlyName="IREC.sys\irec32--5.sys Hash Page Sha1" Hash="A987A4E8B23A90EC582C18CCB6A4FC075BBBE564" />
+    <Deny ID="ID_DENY_IREC_18" FriendlyName="IREC.sys\irec32--5.sys Hash Page Sha256" Hash="2ABA330D66FA4FA0348B52C068B8C754C18565D55059FF02D114C52A00946996" />
+    <Deny ID="ID_DENY_IREC_19" FriendlyName="IREC.sys\irec32--7.sys Hash Sha1" Hash="EF221C26D16FDFC16B6B416666AC27C67A123EDB" />
+    <Deny ID="ID_DENY_IREC_1A" FriendlyName="IREC.sys\irec32--7.sys Hash Sha256" Hash="2E5C4332A9EC895818F3F5EB3C101D2E55F4C588A57E4DAAD0544F5F3E434DD6" />
+    <Deny ID="ID_DENY_IREC_1B" FriendlyName="IREC.sys\irec32--7.sys Hash Page Sha1" Hash="98C5D52418EF0D4489EAD7341D4C80337E5438F4" />
+    <Deny ID="ID_DENY_IREC_1C" FriendlyName="IREC.sys\irec32--7.sys Hash Page Sha256" Hash="48AB3B361354812A7353F902491B4814268325AC53D79B81B3938A66A294E219" />
+    <Deny ID="ID_DENY_IREC_1D" FriendlyName="IREC.sys\irec32--8.sys Hash Sha1" Hash="4432DB3BCB9B8F14F1D8CBA0292985A206A624B5" />
+    <Deny ID="ID_DENY_IREC_1E" FriendlyName="IREC.sys\irec32--8.sys Hash Sha256" Hash="5B942A0686EE8772E0CC5070F9A023067410A7FC2F17EE902A380592EFF9DF98" />
+    <Deny ID="ID_DENY_IREC_1F" FriendlyName="IREC.sys\irec32--8.sys Hash Page Sha1" Hash="504DADC23313231D3670E0D60AB12CC9D3F8F366" />
+    <Deny ID="ID_DENY_IREC_20" FriendlyName="IREC.sys\irec32--8.sys Hash Page Sha256" Hash="83A28797DF3C1134FD2CF3BB3E1967C8BE2CF9D1BA13DEDB1367CE9E1E8FE84A" />
+    <Deny ID="ID_DENY_IREC_21" FriendlyName="IREC.sys\irec32--9.sys Hash Sha1" Hash="E388275F8874F95E4484F52742FCFB3751B33FF9" />
+    <Deny ID="ID_DENY_IREC_22" FriendlyName="IREC.sys\irec32--9.sys Hash Sha256" Hash="C9488EDE76B64E13E625D7EAEAFE5CE0C1B180CA6FB429B8C4C8DF5089DEEAF5" />
+    <Deny ID="ID_DENY_IREC_23" FriendlyName="IREC.sys\irec32--9.sys Hash Page Sha1" Hash="A4C243D53D69FBA0539949D7966E2DF67C4010CE" />
+    <Deny ID="ID_DENY_IREC_24" FriendlyName="IREC.sys\irec32--9.sys Hash Page Sha256" Hash="D6818FA421D57D961BD54625C2BDD0FB0C1E16CF00E404DBF37F1BC86DB48C20" />
+    <Deny ID="ID_DENY_IREC_25" FriendlyName="IREC.sys\irec64--16.sys Hash Sha1" Hash="169DD93FD4A637E452B148309C2E187880534E12" />
+    <Deny ID="ID_DENY_IREC_26" FriendlyName="IREC.sys\irec64--16.sys Hash Sha256" Hash="43BF704522A5E01030A9B5CDFBDD7B226E93B40B5AF62581495E66407F365B10" />
+    <Deny ID="ID_DENY_IREC_27" FriendlyName="IREC.sys\irec64--16.sys Hash Page Sha1" Hash="A9D9D7FF0D091A63491D43B4E9FB3852BC1BD5B1" />
+    <Deny ID="ID_DENY_IREC_28" FriendlyName="IREC.sys\irec64--16.sys Hash Page Sha256" Hash="1356FD71998471A795A4CBFDACED2D86879F05CEE383918B516BCF14ACAF547D" />
+    <Deny ID="ID_DENY_IREC_29" FriendlyName="IREC.sys\irec64--17.sys Hash Sha1" Hash="8E5B173D15C5E940D8D2D1985810D5EB2118AFAD" />
+    <Deny ID="ID_DENY_IREC_2A" FriendlyName="IREC.sys\irec64--17.sys Hash Sha256" Hash="06A136B23ADE23C02509A896A05CF6D99DF93E774A10583B796B61E3F643A858" />
+    <Deny ID="ID_DENY_IREC_2B" FriendlyName="IREC.sys\irec64--17.sys Hash Page Sha1" Hash="BC95CB78F67C3F98380CB53FE1EB3A495BF53B8B" />
+    <Deny ID="ID_DENY_IREC_2C" FriendlyName="IREC.sys\irec64--17.sys Hash Page Sha256" Hash="F563312E01F7C88293CC4374C97737EDAED22A6FD26E0106CB6A30CE68C3BD45" />
+    <Deny ID="ID_DENY_IREC_2D" FriendlyName="IREC.sys\irec64--18.sys Hash Sha1" Hash="90EBE947F9DAEF1ABEE0BCC2241069E061AE24ED" />
+    <Deny ID="ID_DENY_IREC_2E" FriendlyName="IREC.sys\irec64--18.sys Hash Sha256" Hash="9A6E8BD410BA51574B773B98C6488FC332F445DA0E94E78F693B9A76E86DFBCC" />
+    <Deny ID="ID_DENY_IREC_2F" FriendlyName="IREC.sys\irec64--18.sys Hash Page Sha1" Hash="B8FC6F0E07F898268E43652C0CCB650405CCD68C" />
+    <Deny ID="ID_DENY_IREC_30" FriendlyName="IREC.sys\irec64--18.sys Hash Page Sha256" Hash="BA7317A12A431DA55E53778C9EC0D58DB701E88B89D03A9EDD7C5C1012E66A14" />
+    <Deny ID="ID_DENY_IREC_31" FriendlyName="IREC.sys\irec64--19.sys Hash Sha1" Hash="719F659300BA463EFEEAB5916F0378C64FC1AD4A" />
+    <Deny ID="ID_DENY_IREC_32" FriendlyName="IREC.sys\irec64--19.sys Hash Sha256" Hash="457E2EB5EE1DEF0E336463B7F62DCC02FDDE307B817CF750907A5F5465C4DCB7" />
+    <Deny ID="ID_DENY_IREC_33" FriendlyName="IREC.sys\irec64--19.sys Hash Page Sha1" Hash="F7FEA2BE8FF65DBB89BAF39EF8E0D80DAB81CB8E" />
+    <Deny ID="ID_DENY_IREC_34" FriendlyName="IREC.sys\irec64--19.sys Hash Page Sha256" Hash="5FEB045C2452FD280BA1CAD5FC9B4F0DE7FC95EABDCE19FA2CD1F632891F3B1A" />
+    <Deny ID="ID_DENY_IREC_35" FriendlyName="IREC.sys\irec64--21.sys Hash Sha1" Hash="37486D0CA79CF2924D8540B00E84FF4F9C86F574" />
+    <Deny ID="ID_DENY_IREC_36" FriendlyName="IREC.sys\irec64--21.sys Hash Sha256" Hash="87F01D8BF8424D801D4B47273918FB817DA2E59F517BA1FC1C038FB3C4E91A17" />
+    <Deny ID="ID_DENY_IREC_37" FriendlyName="IREC.sys\irec64--21.sys Hash Page Sha1" Hash="54CBAEDB10F2AFAA73E4C209ECD6E76B3912AF6F" />
+    <Deny ID="ID_DENY_IREC_38" FriendlyName="IREC.sys\irec64--21.sys Hash Page Sha256" Hash="09516642395221D25006D8E604D7FC519DE102453875D6DD325D02A80A4D30CE" />
+    <Deny ID="ID_DENY_IREC_39" FriendlyName="IREC.sys\irec64--23.sys Hash Sha1" Hash="E4496961589BB0C03F05016AA3242B2D1ACD5E3F" />
+    <Deny ID="ID_DENY_IREC_3A" FriendlyName="IREC.sys\irec64--23.sys Hash Sha256" Hash="D62B9E6BC56E042C1CE7CB6493AB7FD1B58F716D1C4DC9E56DDFDBDB79B4F3E4" />
+    <Deny ID="ID_DENY_IREC_3B" FriendlyName="IREC.sys\irec64--23.sys Hash Page Sha1" Hash="0F11543D227EB822C9FBB3F4B9E497E1831BFAA9" />
+    <Deny ID="ID_DENY_IREC_3C" FriendlyName="IREC.sys\irec64--23.sys Hash Page Sha256" Hash="A28B1BD5B1C5D3C91029CAEAE0FB71AFD3485A5D6701DF812D9181B429E605F1" />
+    <Deny ID="ID_DENY_IREC_3D" FriendlyName="IREC.sys\irec64--24.sys Hash Sha1" Hash="288AA5926A9382D34AF147B142BCDD02C06B39BD" />
+    <Deny ID="ID_DENY_IREC_3E" FriendlyName="IREC.sys\irec64--24.sys Hash Sha256" Hash="66A751B6168A4D9F2F5F5D8D18BEF25F1494E0E20A31360E0F72E498096DE23F" />
+    <Deny ID="ID_DENY_IREC_3F" FriendlyName="IREC.sys\irec64--24.sys Hash Page Sha1" Hash="D71E1AA8124D6E634D2F8C9C08E6D1BFC29F0E3A" />
+    <Deny ID="ID_DENY_IREC_40" FriendlyName="IREC.sys\irec64--24.sys Hash Page Sha256" Hash="66D06BE183B3AE3F51798A4FCFAB56CAD3B92135429620F5EC1589258F799326" />
+    <Deny ID="ID_DENY_IREC_41" FriendlyName="IREC.sys\irec64--25.sys Hash Sha1" Hash="8BBB803E9F79196590FC33E4FB216D556E318F86" />
+    <Deny ID="ID_DENY_IREC_42" FriendlyName="IREC.sys\irec64--25.sys Hash Sha256" Hash="9C709B73D67AC049C391EB398A08056422AA677801B2AF924CF3BBACD3D484D2" />
+    <Deny ID="ID_DENY_IREC_43" FriendlyName="IREC.sys\irec64--25.sys Hash Page Sha1" Hash="0D28D548B2E5C5CBB279061A32CC46297A1F531C" />
+    <Deny ID="ID_DENY_IREC_44" FriendlyName="IREC.sys\irec64--25.sys Hash Page Sha256" Hash="924DF2032B3B70CD9D9ACC3AC28D0924E8D9EAA24CD406688E2DC0E3BFC3F70A" />
+    <Deny ID="ID_DENY_IREC_45" FriendlyName="IREC.sys\irec64--26.sys Hash Sha1" Hash="63DC0951A2D8FD32F62E7ECBB34B917EDB855E27" />
+    <Deny ID="ID_DENY_IREC_46" FriendlyName="IREC.sys\irec64--26.sys Hash Sha256" Hash="D48B16426AD15C2FCD570F68893BDDFC16E61BF47E86575D17B7CBDED71F9937" />
+    <Deny ID="ID_DENY_IREC_47" FriendlyName="IREC.sys\irec64--26.sys Hash Page Sha1" Hash="798CF0D31E7DE95236D32526D98B1B9F398EF451" />
+    <Deny ID="ID_DENY_IREC_48" FriendlyName="IREC.sys\irec64--26.sys Hash Page Sha256" Hash="679ECD06D16A6E5D647E955DC8DB480F2799868C1C8F2334DAF11B095DCE9DCB" />
+    <Deny ID="ID_DENY_IREC_49" FriendlyName="IREC.sys\irec64--27.sys Hash Sha1" Hash="EFE0B7278B60880F2A7EE6FE6F7EC274995C8D0E" />
+    <Deny ID="ID_DENY_IREC_4A" FriendlyName="IREC.sys\irec64--27.sys Hash Sha256" Hash="F2F3907897D349B6263C1FBC16BF12534886DB847E98BFFE786025C16E2796C1" />
+    <Deny ID="ID_DENY_IREC_4B" FriendlyName="IREC.sys\irec64--27.sys Hash Page Sha1" Hash="CA64B7A0BEA9C46986C9CCC869F66DB49FC82CDA" />
+    <Deny ID="ID_DENY_IREC_4C" FriendlyName="IREC.sys\irec64--27.sys Hash Page Sha256" Hash="6789CA368EC8D5D01FD8D379A119CEAA677798BA0763BEBBE65C9FA5E581A160" />
+    <Deny ID="ID_DENY_IREC_4D" FriendlyName="IREC.sys\irec64--28.sys Hash Sha1" Hash="8B8D832E9F39281A454CE6D6A876338B8931075F" />
+    <Deny ID="ID_DENY_IREC_4E" FriendlyName="IREC.sys\irec64--28.sys Hash Sha256" Hash="7CCCD8D23FDABF6F6AC6725521EF99B6CB90BA5045FC13540EC6B9BB69F71AB0" />
+    <Deny ID="ID_DENY_IREC_4F" FriendlyName="IREC.sys\irec64--28.sys Hash Page Sha1" Hash="CC1696378EC427350B8AF1327113DC18FFE8433C" />
+    <Deny ID="ID_DENY_IREC_50" FriendlyName="IREC.sys\irec64--28.sys Hash Page Sha256" Hash="8248A91E24E4DE42B0690268C781938095D1C4F89750A66D8E05DBE5DD709864" />
+    <Deny ID="ID_DENY_IREC_51" FriendlyName="IREC.sys\irecARM64--45.sys Hash Sha1" Hash="F89D40FA04E040EF2B6170CAA7E7BDF52A40B2E6" />
+    <Deny ID="ID_DENY_IREC_52" FriendlyName="IREC.sys\irecARM64--45.sys Hash Sha256" Hash="7883DDEBE413E3D18E93FE73CA293322235A6EF6AEF5AD7030B743A4ECED83A3" />
+    <Deny ID="ID_DENY_IREC_53" FriendlyName="IREC.sys\irecARM64--45.sys Hash Page Sha1" Hash="2C8F603F5420AC349DAD3051C6DD820DC1D34C8E" />
+    <Deny ID="ID_DENY_IREC_54" FriendlyName="IREC.sys\irecARM64--45.sys Hash Page Sha256" Hash="8154EA793FC5DA34AAA7B14D24F462D1E6838AA7DE44CF3E5F332A8C66191DF2" />
     <Deny ID="ID_DENY_LGCORETEMP_1" FriendlyName="lgcoretemp\e0cb07a0624ddfacaa882af49e3783ae02c9fbd0ab232541a05a95b4a8abd8ef Hash Sha1" Hash="BF20C99129A768B3D2D5C621AB50375984AB9351" />
     <Deny ID="ID_DENY_LGCORETEMP_2" FriendlyName="lgcoretemp\e0cb07a0624ddfacaa882af49e3783ae02c9fbd0ab232541a05a95b4a8abd8ef Hash Sha256" Hash="9C4DB6EE983FD4FA74F8212031ADE343A1B9ABDB258D05BEF1AABD7AB49FBC16" />
     <Deny ID="ID_DENY_LGCORETEMP_3" FriendlyName="lgcoretemp\e0cb07a0624ddfacaa882af49e3783ae02c9fbd0ab232541a05a95b4a8abd8ef Hash Page Sha1" Hash="4DD5A5D9B4AF0708902DF52C6C42921DE296CC21" />
@@ -762,6 +904,46 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_MSIO_10" FriendlyName="MsIo.sys Hash Sha256" Hash="BE0AF245444321E51F4DD8A90A19A0ABE05A060CBAD93701E23A02DF307957AE" />
     <Deny ID="ID_DENY_MSIO_11" FriendlyName="MsIo.sys Hash Sha1" Hash="B2CD3A63D04EAE427BEDE6C6FE8FACBA91ECECBF" />
     <Deny ID="ID_DENY_MSIO_12" FriendlyName="MsIo.sys Hash Sha256" Hash="D86D6732AC4D1CB41A2DCE40436B839C0DFDCEF9BA306CE5D0F97C0522ABFAC8" />
+    <Deny ID="ID_DENY_MSR_1" FriendlyName="Datapath msr.sys\6c6a4d07e95ab4212c2afefcb0ce37dc485fa56120b0419b636bd8bd326038c1.sys Hash Sha1" Hash="381CC2B974D440EDEA0BBC010C4BEF4CDC2169B7" />
+    <Deny ID="ID_DENY_MSR_2" FriendlyName="Datapath msr.sys\6c6a4d07e95ab4212c2afefcb0ce37dc485fa56120b0419b636bd8bd326038c1.sys Hash Sha256" Hash="D23F28169D6E5C09A89E5136A4FF899A3B6F886535BB0254A27DD00A2753C412" />
+    <Deny ID="ID_DENY_MSR_3" FriendlyName="Datapath msr.sys\6c6a4d07e95ab4212c2afefcb0ce37dc485fa56120b0419b636bd8bd326038c1.sys Hash Page Sha1" Hash="5CB0D5676E465F6F389BED975B426705AC30DBC6" />
+    <Deny ID="ID_DENY_MSR_4" FriendlyName="Datapath msr.sys\6c6a4d07e95ab4212c2afefcb0ce37dc485fa56120b0419b636bd8bd326038c1.sys Hash Page Sha256" Hash="F05027D011C6123FA6EFB78AEA60528568FC80F6D9FD5CD1232F9B79B4216D3B" />
+    <Deny ID="ID_DENY_MSR_5" FriendlyName="Datapath msr.sys\ede9a3858a12d5ddea21a310e5721bf86c2248539f42c9e0c3c29ae5b0148ba5 Hash Sha1" Hash="2146BF058139453C0447786D6F6D5FC454AB955F" />
+    <Deny ID="ID_DENY_MSR_6" FriendlyName="Datapath msr.sys\ede9a3858a12d5ddea21a310e5721bf86c2248539f42c9e0c3c29ae5b0148ba5 Hash Sha256" Hash="1F8812611CF7120E89E769CC908FABC0C9E49B27FDED8DDE6A3DE51D9CE34F09" />
+    <Deny ID="ID_DENY_MSR_7" FriendlyName="Datapath msr.sys\ede9a3858a12d5ddea21a310e5721bf86c2248539f42c9e0c3c29ae5b0148ba5 Hash Page Sha1" Hash="81DE92B2555D9A29C5E48CB4893ADF0131EAD233" />
+    <Deny ID="ID_DENY_MSR_8" FriendlyName="Datapath msr.sys\ede9a3858a12d5ddea21a310e5721bf86c2248539f42c9e0c3c29ae5b0148ba5 Hash Page Sha256" Hash="CA90FFB147D600E7F42E8790CBD9FE7D69C7463DE88B08723E210750E1E272BD" />
+    <Deny ID="ID_DENY_MSRHOOK_1" FriendlyName="IDTech MSRHook\10397e0ebd622b20412fcfcd28f832ee562181931192a58cc19dfd45a98e684f Hash Sha1" Hash="87512948E8B0F3F29F12E9841A48E1D01D67228A"/>
+    <Deny ID="ID_DENY_MSRHOOK_2" FriendlyName="IDTech MSRHook\10397e0ebd622b20412fcfcd28f832ee562181931192a58cc19dfd45a98e684f Hash Sha256" Hash="74B3623FBC8416822A98ACE6A2C69EE45C2B6794A3EB4E1181C5BE7319CFB43A"/>
+    <Deny ID="ID_DENY_MSRHOOK_3" FriendlyName="IDTech MSRHook\10397e0ebd622b20412fcfcd28f832ee562181931192a58cc19dfd45a98e684f Hash Page Sha1" Hash="6E9170D40B6811BCA4F931E79E0B2621AB0190CC"/>
+    <Deny ID="ID_DENY_MSRHOOK_4" FriendlyName="IDTech MSRHook\10397e0ebd622b20412fcfcd28f832ee562181931192a58cc19dfd45a98e684f Hash Page Sha256" Hash="9670241406BB54134387EEC1DC6F3A65474359D444BAA1473310521598CC4F71"/>
+    <Deny ID="ID_DENY_MSRHOOK_5" FriendlyName="IDTech MSRHook\4e4dcb68457b4615e38e8c3148d4303e98c166e56b4aa9fae2dee8d24d3e93e9 Hash Sha1" Hash="48F0AABB935C7F87DBD678950EA85A5A8D1D38E9"/>
+    <Deny ID="ID_DENY_MSRHOOK_6" FriendlyName="IDTech MSRHook\4e4dcb68457b4615e38e8c3148d4303e98c166e56b4aa9fae2dee8d24d3e93e9 Hash Sha256" Hash="0510F28DF28ECBADB39E8D5086E8138780CB887BCEC9ADD2EED1CE48B119C4B5"/>
+    <Deny ID="ID_DENY_MSRHOOK_7" FriendlyName="IDTech MSRHook\4e4dcb68457b4615e38e8c3148d4303e98c166e56b4aa9fae2dee8d24d3e93e9 Hash Page Sha1" Hash="BD571AB72760CF250B9180DE455C0D4D4F6480E3"/>
+    <Deny ID="ID_DENY_MSRHOOK_8" FriendlyName="IDTech MSRHook\4e4dcb68457b4615e38e8c3148d4303e98c166e56b4aa9fae2dee8d24d3e93e9 Hash Page Sha256" Hash="B49CEDF7844A48997D9CD9F722780A7ACE0653CACB0988DC9BF78E4892C47372"/>
+    <Deny ID="ID_DENY_MSRHOOK_9" FriendlyName="IDTech MSRHook\6a374d023813382fb79b447c05f3382f9d0bbb13f8ab0c1f8e8168f4a23d5ffe Hash Sha1" Hash="56B7D5E3D0EF800AF285E6766B2E89DD536966BD"/>
+    <Deny ID="ID_DENY_MSRHOOK_10" FriendlyName="IDTech MSRHook\6a374d023813382fb79b447c05f3382f9d0bbb13f8ab0c1f8e8168f4a23d5ffe Hash Sha256" Hash="98198A7E6E6613C4D39C38205029E437469A70CE3D2B0B731A2A681202477F5D"/>
+    <Deny ID="ID_DENY_MSRHOOK_11" FriendlyName="IDTech MSRHook\6a374d023813382fb79b447c05f3382f9d0bbb13f8ab0c1f8e8168f4a23d5ffe Hash Page Sha1" Hash="EB090562DB6F2AA96C22003F83683F0DE86C8A47"/>
+    <Deny ID="ID_DENY_MSRHOOK_12" FriendlyName="IDTech MSRHook\6a374d023813382fb79b447c05f3382f9d0bbb13f8ab0c1f8e8168f4a23d5ffe Hash Page Sha256" Hash="9B2AF543F278A3648FC2F86AA2DCF06447411E696492AECD3732928991C3BB9F"/>
+    <Deny ID="ID_DENY_MSRHOOK_13" FriendlyName="IDTech MSRHook\79c14ffa8e8d28b78a9a2f0618052a64e83c98acc4aeec27178c0002f9c91dae Hash Sha1" Hash="F33DDD5D0A22CBB269BF9BD2E0905ABDE25DDD50"/>
+    <Deny ID="ID_DENY_MSRHOOK_14" FriendlyName="IDTech MSRHook\79c14ffa8e8d28b78a9a2f0618052a64e83c98acc4aeec27178c0002f9c91dae Hash Sha256" Hash="04B318E35B734F63D43754EE4ECFF808808CF2B6C68DDD5E1D9E39EFC41CFB8B"/>
+    <Deny ID="ID_DENY_MSRHOOK_15" FriendlyName="IDTech MSRHook\79c14ffa8e8d28b78a9a2f0618052a64e83c98acc4aeec27178c0002f9c91dae Hash Page Sha1" Hash="B2DE7BC9D08E706970A47E34BA8056D97F425840"/>
+    <Deny ID="ID_DENY_MSRHOOK_16" FriendlyName="IDTech MSRHook\79c14ffa8e8d28b78a9a2f0618052a64e83c98acc4aeec27178c0002f9c91dae Hash Page Sha256" Hash="E2F7CEFBAC7960977797AF12A84AB536D5815CF4410BF527E291DF8738DB4136"/>
+    <Deny ID="ID_DENY_MSRHOOK_17" FriendlyName="IDTech MSRHook\a0ba1c981dcf3930680c97664efce6142679bd84604c38eb8b8368f6c1bde3c9 Hash Sha1" Hash="622A9B34788204D4F8EE2AD770AEC818FD7FBF10"/>
+    <Deny ID="ID_DENY_MSRHOOK_18" FriendlyName="IDTech MSRHook\a0ba1c981dcf3930680c97664efce6142679bd84604c38eb8b8368f6c1bde3c9 Hash Sha256" Hash="BCBB079252FD5C4A6A5121C287C00FC6D8E0C7F57EF243D37DCD9B8F319AF99A"/>
+    <Deny ID="ID_DENY_MSRHOOK_19" FriendlyName="IDTech MSRHook\a0ba1c981dcf3930680c97664efce6142679bd84604c38eb8b8368f6c1bde3c9 Hash Page Sha1" Hash="1E824C0B47BC1CD163FADFF54CBF6EDB11CEDFCE"/>
+    <Deny ID="ID_DENY_MSRHOOK_20" FriendlyName="IDTech MSRHook\a0ba1c981dcf3930680c97664efce6142679bd84604c38eb8b8368f6c1bde3c9 Hash Page Sha256" Hash="62EA60E39D25E1A12BF5A123DAE9DD8C0199A93C4C1592F5D314DF85142B1971"/>
+    <Deny ID="ID_DENY_MSRHOOK_21" FriendlyName="IDTech MSRHook\d0b65b4277ab975c7e0579839153dfb8febeaf8ca3aa621bc710cd7bcaaa8ad1 Hash Sha1" Hash="ED426D5987AE02488A35D7D149176F6C654B4CFA"/>
+    <Deny ID="ID_DENY_MSRHOOK_22" FriendlyName="IDTech MSRHook\d0b65b4277ab975c7e0579839153dfb8febeaf8ca3aa621bc710cd7bcaaa8ad1 Hash Sha256" Hash="00573981F5478DBEC6704FB77131AD92E91F00178CCCCCAEB2F70763E927F2D7"/>
+    <Deny ID="ID_DENY_MSRHOOK_23" FriendlyName="IDTech MSRHook\d0b65b4277ab975c7e0579839153dfb8febeaf8ca3aa621bc710cd7bcaaa8ad1 Hash Page Sha1" Hash="B018A92B0BF220B462993EE8602F5C978D799AA9"/>
+    <Deny ID="ID_DENY_MSRHOOK_24" FriendlyName="IDTech MSRHook\d0b65b4277ab975c7e0579839153dfb8febeaf8ca3aa621bc710cd7bcaaa8ad1 Hash Page Sha256" Hash="819912254620E94E715C0AB9FAAD96869D72C3F3F23C7659639DDEF4D31ACB74"/>
+    <Deny ID="ID_DENY_MSRHOOK_25" FriendlyName="IDTech MSRHook\f4b447891887806b4712986f00e10612f8d9dbda1cb1ec1de032fb4c34199428 Hash Sha1" Hash="D09D43621878AD4014835DF83599B574ACB2CC29"/>
+    <Deny ID="ID_DENY_MSRHOOK_26" FriendlyName="IDTech MSRHook\f4b447891887806b4712986f00e10612f8d9dbda1cb1ec1de032fb4c34199428 Hash Sha256" Hash="4D7B24FB69EB1A0906E3B6D78082CB62D7F713ABA79A85DA0F5E512725A680FF"/>
+    <Deny ID="ID_DENY_MSRHOOK_27" FriendlyName="IDTech MSRHook\f4b447891887806b4712986f00e10612f8d9dbda1cb1ec1de032fb4c34199428 Hash Page Sha1" Hash="C0C2626B922973EBA185D79D795730FB73D99871"/>
+    <Deny ID="ID_DENY_MSRHOOK_28" FriendlyName="IDTech MSRHook\f4b447891887806b4712986f00e10612f8d9dbda1cb1ec1de032fb4c34199428 Hash Page Sha256" Hash="D6D5971984033399A065674BE53669B7B9D7BA445E105AE6A78AC5E68C7871B2"/>
+    <Deny ID="ID_DENY_MSRHOOK_29" FriendlyName="IDTech MSRHook\fc6d327b8af44b6adeffc4c3c00ba9edda41d40dae3ff2e1449125e3eb08e15c Hash Sha1" Hash="72064C3BE3AD234A5B5E801BC36458F343078374"/>
+    <Deny ID="ID_DENY_MSRHOOK_30" FriendlyName="IDTech MSRHook\fc6d327b8af44b6adeffc4c3c00ba9edda41d40dae3ff2e1449125e3eb08e15c Hash Sha256" Hash="84383018957DEC043ABA44D5A3243038EC2686BB05BAC5EB39FA854CA4AB2C8A"/>
+    <Deny ID="ID_DENY_MSRHOOK_31" FriendlyName="IDTech MSRHook\fc6d327b8af44b6adeffc4c3c00ba9edda41d40dae3ff2e1449125e3eb08e15c Hash Page Sha1" Hash="969B242ED4F904609EEBF25D26DC6CBC295F6647"/>
+    <Deny ID="ID_DENY_MSRHOOK_32" FriendlyName="IDTech MSRHook\fc6d327b8af44b6adeffc4c3c00ba9edda41d40dae3ff2e1449125e3eb08e15c Hash Page Sha256" Hash="9B6D8C42212266900865753362038FED8A7DE6369BF0E2B6B9B94A6E2B0DAD67"/>
     <Deny ID="ID_DENY_NVFLASH_1" FriendlyName="nvflash.sys\0a89a6ab2fca486480b6e3dacf392d6ce0c59a5bdb4bcd18d672feb4ebb0543c Hash Sha1" Hash="213C4EC78132D6C0FDFDD7B640107E0CE4990A0E" />
     <Deny ID="ID_DENY_NVFLASH_2" FriendlyName="nvflash.sys\0a89a6ab2fca486480b6e3dacf392d6ce0c59a5bdb4bcd18d672feb4ebb0543c Hash Sha256" Hash="91EE89520105CCBCECA6EE0E34070F28C8DC5A3D73EC65F384DA5DA4F2A36DC0" />
     <Deny ID="ID_DENY_NVFLASH_3" FriendlyName="nvflash.sys\0a89a6ab2fca486480b6e3dacf392d6ce0c59a5bdb4bcd18d672feb4ebb0543c Hash Page Sha1" Hash="C24D6F9132486AF1EB2937D9366275126A5A35E1" />
@@ -870,6 +1052,26 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_NVFLASH_6A" FriendlyName="nvflash.sys\ffd1aef19646ffed09b56a2ace4fc8cdf5b2f714fcca1e7ffb82256264c94b18 Hash Sha256" Hash="157CE9AE0D09766CFA3E5BE8F90E2AC510F0CE3A0BB7CD97E3A5F9AA20C76661" />
     <Deny ID="ID_DENY_NVFLASH_6B" FriendlyName="nvflash.sys\ffd1aef19646ffed09b56a2ace4fc8cdf5b2f714fcca1e7ffb82256264c94b18 Hash Page Sha1" Hash="C1DC399DF098A44F569BA80ECCFE0B5724362B16" />
     <Deny ID="ID_DENY_NVFLASH_6C" FriendlyName="nvflash.sys\ffd1aef19646ffed09b56a2ace4fc8cdf5b2f714fcca1e7ffb82256264c94b18 Hash Page Sha256" Hash="D6E111744E51D167F040AC43D426D852013241C717C557ECC8C8FCEAA0F01BBC" />
+    <Deny ID="ID_DENY_NVOCLOCK_1" FriendlyName="nvoclock\2203bd4731a8fdc2a1c60e975fd79fd5985369e98a117df7ee43c528d3c85958 Hash Sha1" Hash="0380CE3467B97AA19CA6AB3177651B22A77D9C0E" />
+    <Deny ID="ID_DENY_NVOCLOCK_2" FriendlyName="nvoclock\2203bd4731a8fdc2a1c60e975fd79fd5985369e98a117df7ee43c528d3c85958 Hash Sha256" Hash="717242AD6A3AFB6F236890CAA44501A4BE8D0AB019F028BA2C74D3455F065804" />
+    <Deny ID="ID_DENY_NVOCLOCK_3" FriendlyName="nvoclock\2203bd4731a8fdc2a1c60e975fd79fd5985369e98a117df7ee43c528d3c85958 Hash Page Sha1" Hash="B80FECC3E055CE1952E0C9F491B9BBC4EDD3591A" />
+    <Deny ID="ID_DENY_NVOCLOCK_4" FriendlyName="nvoclock\2203bd4731a8fdc2a1c60e975fd79fd5985369e98a117df7ee43c528d3c85958 Hash Page Sha256" Hash="D1CC7B5CED135FC9CF1170C78F6B3FD789962A73D84114C3ACC93FFBABA59C77" />
+    <Deny ID="ID_DENY_NVOCLOCK_5" FriendlyName="nvoclock\29f449fca0a41deccef5b0dccd22af18259222f69ed6389beafe8d5168c59e36 Hash Sha1" Hash="E7F478393A69EC3FE0A026584DDC26FD336DC4F0" />
+    <Deny ID="ID_DENY_NVOCLOCK_6" FriendlyName="nvoclock\29f449fca0a41deccef5b0dccd22af18259222f69ed6389beafe8d5168c59e36 Hash Sha256" Hash="73664268A737D071F2C3C67503002DB08432953F14771317835B6F080D3DAEFF" />
+    <Deny ID="ID_DENY_NVOCLOCK_7" FriendlyName="nvoclock\3cb111fdedc32f2f253aacde4372b710035c8652eb3586553652477a521c9284 Hash Sha1" Hash="1E4FDFE6750A04756332CC5A5896CD5763C923C7" />
+    <Deny ID="ID_DENY_NVOCLOCK_8" FriendlyName="nvoclock\3cb111fdedc32f2f253aacde4372b710035c8652eb3586553652477a521c9284 Hash Sha256" Hash="1848CB34D16559E3C8232C369D89FC12B5720B58300D8C4C21DADE6E3EA8D585" />
+    <Deny ID="ID_DENY_NVOCLOCK_9" FriendlyName="nvoclock\4d777a9e2c61e8b55b3c34c5265b301454bb080abe7ffb373e7800bd6a498f8d Hash Sha1" Hash="FB6958D7D53E63EDEB4CCEEBAB4D12CA70202109" />
+    <Deny ID="ID_DENY_NVOCLOCK_10" FriendlyName="nvoclock\4d777a9e2c61e8b55b3c34c5265b301454bb080abe7ffb373e7800bd6a498f8d Hash Sha256" Hash="F72DBB2A818BA47CA03FFBE50D211050210699C25CAEC3B97CA960D7286D4B6A" />
+    <Deny ID="ID_DENY_NVOCLOCK_11" FriendlyName="nvoclock\64a8e00570c68574b091ebdd5734b87f544fa59b75a4377966c661d0475d69a5 Hash Sha1" Hash="2D63276EB232457770188F2DF6FC67EB41FAACD1" />
+    <Deny ID="ID_DENY_NVOCLOCK_12" FriendlyName="nvoclock\64a8e00570c68574b091ebdd5734b87f544fa59b75a4377966c661d0475d69a5 Hash Sha256" Hash="ABBF92203A31C93B8E719CDABFF1C681921EDBAF43CD34DA79C86CB5A806757F" />
+    <Deny ID="ID_DENY_NVOCLOCK_13" FriendlyName="nvoclock\64a8e00570c68574b091ebdd5734b87f544fa59b75a4377966c661d0475d69a5 Hash Page Sha1" Hash="6687A30E8887A18CBCC962E2BDE118BA66310F15" />
+    <Deny ID="ID_DENY_NVOCLOCK_14" FriendlyName="nvoclock\64a8e00570c68574b091ebdd5734b87f544fa59b75a4377966c661d0475d69a5 Hash Page Sha256" Hash="1FE5977A8C891E29444E1364EB91C82A606E39E842D80FE0DBA126261376E751" />
+    <Deny ID="ID_DENY_NVOCLOCK_15" FriendlyName="nvoclock\77da3e8c5d70978b287d433ae1e1236c895b530a8e1475a9a190cdcc06711d2f Hash Sha1" Hash="FDDCB8952F5F44DDAE6201B08DDAA94537470669" />
+    <Deny ID="ID_DENY_NVOCLOCK_16" FriendlyName="nvoclock\77da3e8c5d70978b287d433ae1e1236c895b530a8e1475a9a190cdcc06711d2f Hash Sha256" Hash="CEC5964D7E32C52439D5EB660FA97827B619A7DA9F3264F0C9FA4B69E3CB7CC1" />
+    <Deny ID="ID_DENY_NVOCLOCK_17" FriendlyName="nvoclock\87b4c5b7f653b47c9c3bed833f4d65648db22481e9fc54aa4a8c6549fa31712b Hash Sha1" Hash="8546586F7825C49876F2E0C52BA55F545B4E03BD" />
+    <Deny ID="ID_DENY_NVOCLOCK_18" FriendlyName="nvoclock\87b4c5b7f653b47c9c3bed833f4d65648db22481e9fc54aa4a8c6549fa31712b Hash Sha256" Hash="7C8D7BB3A272AFE7FB737BD165FE9BD8F8187F1835289EB66D471CDCED74E950" />
+    <Deny ID="ID_DENY_NVOCLOCK_19" FriendlyName="nvoclock\d7c90cf3fdbbd2f40fe6a39ad0bb2a9a97a0416354ea84db3aeff6d925d14df8 Hash Sha1" Hash="FE761BEE648D4A1C9FD8C1646323A692DF957C42" />
+    <Deny ID="ID_DENY_NVOCLOCK_20" FriendlyName="nvoclock\d7c90cf3fdbbd2f40fe6a39ad0bb2a9a97a0416354ea84db3aeff6d925d14df8 Hash Sha256" Hash="B3183D87A902DB1BBDAECB37291B9D37C032CE9DFACBE4B36CC3032F5A643AB4" /> 
     <Deny ID="ID_DENY_OTIPCIBUS_1" FriendlyName="otipcibus.sys\4e3eb5b9bce2fd9f6878ae36288211f0997f6149aa8c290ed91228ba4cdfae80 Hash Sha1" Hash="FD172C7F8BDC81988FCF1642881078A8CA8415F6" />
     <Deny ID="ID_DENY_OTIPCIBUS_2" FriendlyName="otipcibus.sys\4e3eb5b9bce2fd9f6878ae36288211f0997f6149aa8c290ed91228ba4cdfae80 Hash Sha256" Hash="1CDA1A6E33D14D5DD06344425102BF840F8149E817ECFB01C59A2190D3367024" />
     <Deny ID="ID_DENY_OTIPCIBUS_3" FriendlyName="otipcibus.sys\4e3eb5b9bce2fd9f6878ae36288211f0997f6149aa8c290ed91228ba4cdfae80 Hash Page Sha1" Hash="8DFBFD888C9A420AC7F3371E5443C26A2852E539" />
@@ -896,6 +1098,34 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_PHYMEMX64_SHA256" FriendlyName="phymemx64 Hash Sha256" Hash="A6AE7364FD188C10D6B5A729A7FF58A3EB11E7FEB0D107D18F9133655C11FB66" />
     <Deny ID="ID_DENY_PHYMEMX64_SHA1_PAGE" FriendlyName="phymemx64 Hash Page Sha1" Hash="6E7D8ABF7F81A2433F27B052B3952EFC4B9CC0B1" />
     <Deny ID="ID_DENY_PHYMEMX64_SHA256_PAGE" FriendlyName="phymemx64 Hash Page Sha256" Hash="B7113B9A68E17428E2107B19BA099571AAFFC854B8FB9CBCEB79EF9E3FD1CC62" />
+    <Deny ID="ID_DENY_QMBSEC_0" FriendlyName="qmbsec.sys\0c801d381292e0476fb435fcc450b7a8970054cc47230c3123f3b6930d8ad799 Hash Sha1" Hash="129ABA97A7EB768AE0ED28D0C9A496F3C60DB314" />
+    <Deny ID="ID_DENY_QMBSEC_1" FriendlyName="qmbsec.sys\0c801d381292e0476fb435fcc450b7a8970054cc47230c3123f3b6930d8ad799 Hash Sha256" Hash="AF55DE92D14CF69D19B2FCB6DB4FBE272C2E04E5F62F7519BD368C173A05CE1F" />
+    <Deny ID="ID_DENY_QMBSEC_2" FriendlyName="qmbsec.sys\0c801d381292e0476fb435fcc450b7a8970054cc47230c3123f3b6930d8ad799 Hash Page Sha1" Hash="416895E001A9C3721999048941CD9B79BB9BF9BB" />
+    <Deny ID="ID_DENY_QMBSEC_3" FriendlyName="qmbsec.sys\0c801d381292e0476fb435fcc450b7a8970054cc47230c3123f3b6930d8ad799 Hash Page Sha256" Hash="50A1719C23DD141ACC867D0935A0EB1A8349F3D7CF1186FA037E829D1788FB34" />
+    <Deny ID="ID_DENY_QMBSEC_4" FriendlyName="qmbsec.sys\494cf30f87274942694e1d6a5700466382cf1398ff62a64a654b2e396fff43f4 Hash Sha1" Hash="7DC5480689591EE8FE778641807CB7B54263E04F" />
+    <Deny ID="ID_DENY_QMBSEC_5" FriendlyName="qmbsec.sys\494cf30f87274942694e1d6a5700466382cf1398ff62a64a654b2e396fff43f4 Hash Sha256" Hash="C8AF285696916F5E503E1F6445BE1CAA23B10178F261E4893DFB0F93A2AA9211" />
+    <Deny ID="ID_DENY_QMBSEC_6" FriendlyName="qmbsec.sys\494cf30f87274942694e1d6a5700466382cf1398ff62a64a654b2e396fff43f4 Hash Page Sha1" Hash="AF20947C135C4497FB6D1B51180DC07AAABEEA00" />
+    <Deny ID="ID_DENY_QMBSEC_7" FriendlyName="qmbsec.sys\494cf30f87274942694e1d6a5700466382cf1398ff62a64a654b2e396fff43f4 Hash Page Sha256" Hash="FB361D34A0D7C633817DDABEFD0CE66F9F5BC1E8F2B301DCCE657BADD2F06FB3" />
+    <Deny ID="ID_DENY_QMBSEC_8" FriendlyName="qmbsec.sys\51745c658c506484ed79e2d71862b36351bac95a897ddc41aaeb9ba5bdfb2a37 Hash Sha1" Hash="6C3434976D859889FA4E91FCF370764A48056B73" />
+    <Deny ID="ID_DENY_QMBSEC_9" FriendlyName="qmbsec.sys\51745c658c506484ed79e2d71862b36351bac95a897ddc41aaeb9ba5bdfb2a37 Hash Sha256" Hash="46141E13ADBADCDB42E0E96AC9F71D3E88E5FA6EFB42F658E216078424FE57A0" />
+    <Deny ID="ID_DENY_QMBSEC_A" FriendlyName="qmbsec.sys\51745c658c506484ed79e2d71862b36351bac95a897ddc41aaeb9ba5bdfb2a37 Hash Page Sha1" Hash="BAB8C0DAC93E72E13F7F2014F44C5EDF1EFCAE17" />
+    <Deny ID="ID_DENY_QMBSEC_B" FriendlyName="qmbsec.sys\51745c658c506484ed79e2d71862b36351bac95a897ddc41aaeb9ba5bdfb2a37 Hash Page Sha256" Hash="6980D97D602100054B8F9F2206E29705E79EC86464915B2212ECEC08C548A291" />
+    <Deny ID="ID_DENY_QMBSEC_C" FriendlyName="qmbsec.sys\be6c3af76d43d6200a387eab9b57791c87dc3a3e21636b3df68bb34e24eebf89 Hash Sha1" Hash="82879A316D5A212C95E8F6DC2734BFDA3DD84DE4" />
+    <Deny ID="ID_DENY_QMBSEC_D" FriendlyName="qmbsec.sys\be6c3af76d43d6200a387eab9b57791c87dc3a3e21636b3df68bb34e24eebf89 Hash Sha256" Hash="B083BB2B298FA14F2E7CC65341337209DF5DE7C53B8CE5DAB5FA830DD29FE2A5" />
+    <Deny ID="ID_DENY_QMBSEC_E" FriendlyName="qmbsec.sys\be6c3af76d43d6200a387eab9b57791c87dc3a3e21636b3df68bb34e24eebf89 Hash Page Sha1" Hash="96516702799451093DB85802491D70F20382DFDE" />
+    <Deny ID="ID_DENY_QMBSEC_F" FriendlyName="qmbsec.sys\be6c3af76d43d6200a387eab9b57791c87dc3a3e21636b3df68bb34e24eebf89 Hash Page Sha256" Hash="0915820FC684225C54BBE9C0727E5E592EE7F10272C3BD8FCE055742C188305C" />
+    <Deny ID="ID_DENY_RENTDRV_1" FriendlyName="Hangzhou RentDrv.sys\1aed62a63b4802e599bbd33162319129501d603cceeb5e1eb22fd4733b3018a3 Hash Sha1" Hash="3653D167FFA47DA551267C179A4B4F23430271B7"/>
+    <Deny ID="ID_DENY_RENTDRV_2" FriendlyName="Hangzhou RentDrv.sys\1aed62a63b4802e599bbd33162319129501d603cceeb5e1eb22fd4733b3018a3 Hash Sha256" Hash="2E100AA891445F18F4805DCED7C4055AA5BEE6C65995DAA42A438349CCAD6C3C"/>
+    <Deny ID="ID_DENY_RENTDRV_3" FriendlyName="Hangzhou RentDrv.sys\1aed62a63b4802e599bbd33162319129501d603cceeb5e1eb22fd4733b3018a3 Hash Page Sha1" Hash="264A830F335ABFC477538DC749F0DDCD3F9ED165"/>
+    <Deny ID="ID_DENY_RENTDRV_4" FriendlyName="Hangzhou RentDrv.sys\1aed62a63b4802e599bbd33162319129501d603cceeb5e1eb22fd4733b3018a3 Hash Page Sha256" Hash="C19365E56D640188311894175ABBA8A2CC82C969D3B19E6885C78014C11BA51D"/>
+    <Deny ID="ID_DENY_RENTDRV_5" FriendlyName="Hangzhou RentDrv.sys\39c128ceabfb170ef5fdbe7f7740de48a9d9119df2e01763c25995cea1097785 Hash Sha1" Hash="BEC0A0E7BCE966828B95329E2883ECCFFE9491F0"/>
+    <Deny ID="ID_DENY_RENTDRV_6" FriendlyName="Hangzhou RentDrv.sys\39c128ceabfb170ef5fdbe7f7740de48a9d9119df2e01763c25995cea1097785 Hash Sha256" Hash="7200C1614E328E730DFC51CFCB915AB6CD3084328BD3792A77BCE91D04E11688"/>
+    <Deny ID="ID_DENY_RENTDRV_7" FriendlyName="Hangzhou RentDrv.sys\39c128ceabfb170ef5fdbe7f7740de48a9d9119df2e01763c25995cea1097785 Hash Page Sha1" Hash="05B25426B0EAB1EA4D4AE40F81EEF45B48BAB190"/>
+    <Deny ID="ID_DENY_RENTDRV_8" FriendlyName="Hangzhou RentDrv.sys\39c128ceabfb170ef5fdbe7f7740de48a9d9119df2e01763c25995cea1097785 Hash Page Sha256" Hash="FEB676B961305CBAB0011A6E48DFD1E0105C534CEBEC69CFCC7D2715C3802594"/>
+    <Deny ID="ID_DENY_RENTDRV_9" FriendlyName="Hangzhou RentDrv.sys\9165d4f3036919a96b86d24b64d75d692802c7513f2b3054b20be40c212240a5 Hash Sha1" Hash="CEBE563DE888EE2055BA03051010A40705E778C8"/>
+    <Deny ID="ID_DENY_RENTDRV_10" FriendlyName="Hangzhou RentDrv.sys\9165d4f3036919a96b86d24b64d75d692802c7513f2b3054b20be40c212240a5 Hash Sha256" Hash="B3C9AF8C4BE8F62D25B955F92D2A4E9EBD34F7FA787580454EF54241102E7B30"/>
+    <Deny ID="ID_DENY_RENTDRV_11" FriendlyName="Hangzhou RentDrv.sys\9165d4f3036919a96b86d24b64d75d692802c7513f2b3054b20be40c212240a5 Hash Page Sha1" Hash="193888C0CD24636D69F65558DD2CBFE38E9E257F"/>
+    <Deny ID="ID_DENY_RENTDRV_12" FriendlyName="Hangzhou RentDrv.sys\9165d4f3036919a96b86d24b64d75d692802c7513f2b3054b20be40c212240a5 Hash Page Sha256" Hash="AFE7279865E62826437419D9348AF60810E00A9FC36823B87267B22C0A9B6DB6"/>
     <Deny ID="ID_DENY_RETLIFTEN_SHA1_1" FriendlyName="80.sys Hash Sha1" Hash="BC2F3850C7B858340D7ED27B90E63B036881FD6C" />
     <Deny ID="ID_DENY_RETLIFTEN_SHA1_2" FriendlyName="netfilterdrv.sys Hash Sha1" Hash="E74B6DDA8BC53BC687FC21218BD34062A78D8467" />
     <Deny ID="ID_DENY_RETLIFTEN_SHA1_3" FriendlyName="netfilterdrv.sys Hash Sha1" Hash="2C27ABBBBCF10DFB75AD79557E30ACE5ED314DF8" />
@@ -1040,42 +1270,98 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_RETLIFTEN_SHA256_70" FriendlyName="b.sys Hash Sha256" Hash="84DF20B1D9D87E305C92E5FFAE21B10B325609D59D835A954DBD8750EF5DABF4" />
     <Deny ID="ID_DENY_RETLIFTEN_SHA256_71" FriendlyName="nt4.sys Hash Sha256" Hash="D7BC7306CB489FE4C285BBEDDC6D1A09E814EF55CF30BD5B8DAF87A52396F102" />
     <Deny ID="ID_DENY_RETLIFTEN_SHA256_72" FriendlyName="d3.sys Hash Sha256" Hash="36875562E747136313EC5DB58174E5FAB870997A054CA8D3987D181599C7DB6A" />
-    <Deny ID="ID_DENY_RTCORE_29" FriendlyName="RTCore\01aa278b07b58dc46c84bd0b1b5c8e9ee4e62ea0bf7a695862444af32e87f1fd Hash Sha1" Hash="4A68C2D7A4C471E062A32C83A36EEDB45A619683" />
-    <Deny ID="ID_DENY_RTCORE_2A" FriendlyName="RTCore\01aa278b07b58dc46c84bd0b1b5c8e9ee4e62ea0bf7a695862444af32e87f1fd Hash Sha256" Hash="478C36F8AF7844A80E24C1822507BEEF6314519185717EC7AE224A0E04B2F330" />
-    <Deny ID="ID_DENY_RTCORE_2B" FriendlyName="RTCore\01aa278b07b58dc46c84bd0b1b5c8e9ee4e62ea0bf7a695862444af32e87f1fd Hash Page Sha1" Hash="84152FA241C3808F8C7752964589C957E440403F" />
-    <Deny ID="ID_DENY_RTCORE_2C" FriendlyName="RTCore\01aa278b07b58dc46c84bd0b1b5c8e9ee4e62ea0bf7a695862444af32e87f1fd Hash Page Sha256" Hash="A807532037A3549AE3E046F183D782BCB78B6193163EA448098140563CF857CB" />
-    <Deny ID="ID_DENY_RTCORE_2D" FriendlyName="RTCore\077aa8ff5e01747723b6d24cc8af460a7a00f30cd3bc80e41cc245ceb8305356 Hash Sha1" Hash="DA1BD3AD4A8FE1E28C1DE28A7BF66AD82DA0DD29" />
-    <Deny ID="ID_DENY_RTCORE_2E" FriendlyName="RTCore\077aa8ff5e01747723b6d24cc8af460a7a00f30cd3bc80e41cc245ceb8305356 Hash Sha256" Hash="61A1F530A5D47339275657D7883911D64F64909569CF13D2E6868DF01A2A72CB" />
-    <Deny ID="ID_DENY_RTCORE_2F" FriendlyName="RTCore\077aa8ff5e01747723b6d24cc8af460a7a00f30cd3bc80e41cc245ceb8305356 Hash Page Sha1" Hash="BD2340853235FE2757829E7F899CE25BD65C5434" />
-    <Deny ID="ID_DENY_RTCORE_30" FriendlyName="RTCore\077aa8ff5e01747723b6d24cc8af460a7a00f30cd3bc80e41cc245ceb8305356 Hash Page Sha256" Hash="74860E5563D3993635DC41E47BB34837C8B53ECBFF539244E1EC608E7B53D42D" />
-    <Deny ID="ID_DENY_RTCORE_31" FriendlyName="RTCore\08828990218ebb4415c1bb33fa2b0a009efd0784b18b3f7ecd3bc078343f7208 Hash Sha1" Hash="38B353D8480885DE5DCF299DECA99CE4F26A1D20" />
-    <Deny ID="ID_DENY_RTCORE_32" FriendlyName="RTCore\08828990218ebb4415c1bb33fa2b0a009efd0784b18b3f7ecd3bc078343f7208 Hash Sha256" Hash="5182CAF10DE9CEC0740ECDE5A081C21CDC100D7EB328FFE6F3F63183889FEC6B" />
-    <Deny ID="ID_DENY_RTCORE_33" FriendlyName="RTCore\08828990218ebb4415c1bb33fa2b0a009efd0784b18b3f7ecd3bc078343f7208 Hash Page Sha1" Hash="1A4F647C27D093675A674E5A8D83063A83231D28" />
-    <Deny ID="ID_DENY_RTCORE_34" FriendlyName="RTCore\08828990218ebb4415c1bb33fa2b0a009efd0784b18b3f7ecd3bc078343f7208 Hash Page Sha256" Hash="46D4A0CE75FA97837C7B6869D29AF9D6068F9023346E9D34C0E26E41198CDB80" />
-    <Deny ID="ID_DENY_RTCORE_35" FriendlyName="RTCore\0aca4447ee54d635f76b941f6100b829dc8b2e0df27bdf584acb90f15f12fbda Hash Sha1" Hash="5717BF3E520ACCFFF5AD9943E53A3B118FB67F2E" />
-    <Deny ID="ID_DENY_RTCORE_36" FriendlyName="RTCore\0aca4447ee54d635f76b941f6100b829dc8b2e0df27bdf584acb90f15f12fbda Hash Sha256" Hash="918D2E68A724B58D37443AEA159E70BF8B1B5EBB089C395CAD1D62745ECDAA19" />
-    <Deny ID="ID_DENY_RTCORE_37" FriendlyName="RTCore\0aca4447ee54d635f76b941f6100b829dc8b2e0df27bdf584acb90f15f12fbda Hash Page Sha1" Hash="03E1FB2499B9361141E2AC4FCCB9CCE2A48A0342" />
-    <Deny ID="ID_DENY_RTCORE_38" FriendlyName="RTCore\0aca4447ee54d635f76b941f6100b829dc8b2e0df27bdf584acb90f15f12fbda Hash Page Sha256" Hash="556B8ACD6EFF7D5A2A0320CD22CAD122254ABDEDCBBD749DB14CD8D314D609BE" />
-    <Deny ID="ID_DENY_RTCORE_39" FriendlyName="RTCore\1c425793a8ce87be916969d6d7e9dd0687b181565c3b483ce53ad1ec6fb72a17 Hash Sha1" Hash="43D3A3C1F7B14CFCC051CAE2534DBBBB4C7FC120" />
-    <Deny ID="ID_DENY_RTCORE_3A" FriendlyName="RTCore\1c425793a8ce87be916969d6d7e9dd0687b181565c3b483ce53ad1ec6fb72a17 Hash Sha256" Hash="B8EB26B6F79020AE988E4FB752DC06E1B6779749BF4F8DF2872FC2B92BAB8020" />
-    <Deny ID="ID_DENY_RTCORE_3B" FriendlyName="RTCore\1c425793a8ce87be916969d6d7e9dd0687b181565c3b483ce53ad1ec6fb72a17 Hash Page Sha1" Hash="6AE84C64765F9271C4758D387AD1E07B64F7966D" />
-    <Deny ID="ID_DENY_RTCORE_3C" FriendlyName="RTCore\1c425793a8ce87be916969d6d7e9dd0687b181565c3b483ce53ad1ec6fb72a17 Hash Page Sha256" Hash="AA60FC20276D6779BBEA2A629C2FBAA3CE60ED2C2AD26230101FFF01A6E79A24" />
-    <Deny ID="ID_DENY_RTCORE_3D" FriendlyName="RTCore\3ff50c67d51553c08dcb7c98342f68a0f54ad6658c5346c428bdcd1f185569f6 Hash Sha1" Hash="B3249BACDA6E43AA2C46C2AF802C9EE0B7E2FD7B" />
-    <Deny ID="ID_DENY_RTCORE_3E" FriendlyName="RTCore\3ff50c67d51553c08dcb7c98342f68a0f54ad6658c5346c428bdcd1f185569f6 Hash Sha256" Hash="3C9829A16EB85272B0E1A2917FEFFAAB8DDB23E633B168B389669339A0CEE0B5" />
-    <Deny ID="ID_DENY_RTCORE_3F" FriendlyName="RTCore\3ff50c67d51553c08dcb7c98342f68a0f54ad6658c5346c428bdcd1f185569f6 Hash Page Sha1" Hash="060C4D64F67F9300F2DBD09F68B4B591AAAFA698" />
-    <Deny ID="ID_DENY_RTCORE_40" FriendlyName="RTCore\3ff50c67d51553c08dcb7c98342f68a0f54ad6658c5346c428bdcd1f185569f6 Hash Page Sha256" Hash="BF0439DB3DCC00355291FEFF1D31F5B48CD1334DBBA3DAEB761E7084335D40E7" />
-    <Deny ID="ID_DENY_RTCORE_41" FriendlyName="RTCore\40061b30b1243be76d5283cbc8abfe007e148097d4de7337670ff1536c4c7ba1 Hash Sha1" Hash="8498265D4CA81B83EC1454D9EC013D7A9C0C87BF" />
-    <Deny ID="ID_DENY_RTCORE_42" FriendlyName="RTCore\40061b30b1243be76d5283cbc8abfe007e148097d4de7337670ff1536c4c7ba1 Hash Sha256" Hash="606BECED7746CDB684D3A44F41E48713C6BBE5BFB1486C52B5CCA815E99D31B4" />
-    <Deny ID="ID_DENY_RTCORE_43" FriendlyName="RTCore\40061b30b1243be76d5283cbc8abfe007e148097d4de7337670ff1536c4c7ba1 Hash Page Sha1" Hash="3B05785D8AD770E4356BC8041606B08BDAB56C99" />
-    <Deny ID="ID_DENY_RTCORE_44" FriendlyName="RTCore\40061b30b1243be76d5283cbc8abfe007e148097d4de7337670ff1536c4c7ba1 Hash Page Sha256" Hash="2DC771BED765E9FE8E79171A851BA158B8E84034FE0518A619F47F3450FFA2BC" />
-    <Deny ID="ID_DENY_RTCORE_45" FriendlyName="RTCore\bea8c6728d57d4b075f372ac82b8134ac8044fe13f533696a58e8864fa3efee3 Hash Sha1" Hash="A7CE1394D10DCFDE7B8A1C90667826DA68933673" />
-    <Deny ID="ID_DENY_RTCORE_46" FriendlyName="RTCore\bea8c6728d57d4b075f372ac82b8134ac8044fe13f533696a58e8864fa3efee3 Hash Sha256" Hash="6279821BF9ECCED596F474C8FC547DAB0BDDBB3AB972390596BD4C5C7B85C685" />
-    <Deny ID="ID_DENY_RTCORE_47" FriendlyName="RTCore\bea8c6728d57d4b075f372ac82b8134ac8044fe13f533696a58e8864fa3efee3 Hash Page Sha1" Hash="9E504DB591D321F1F8CEA62A5A111DA0EFB26447" />
-    <Deny ID="ID_DENY_RTCORE_48" FriendlyName="RTCore\bea8c6728d57d4b075f372ac82b8134ac8044fe13f533696a58e8864fa3efee3 Hash Page Sha256" Hash="BEDC7276543DAAFC11D44F5F603F8AA48C61837F7C4C9446F10FA522F3275D17" />
+    <Deny ID="ID_DENY_RTCORE_1" FriendlyName="RTCore\01aa278b07b58dc46c84bd0b1b5c8e9ee4e62ea0bf7a695862444af32e87f1fd Hash Sha1" Hash="4A68C2D7A4C471E062A32C83A36EEDB45A619683" />
+    <Deny ID="ID_DENY_RTCORE_2" FriendlyName="RTCore\01aa278b07b58dc46c84bd0b1b5c8e9ee4e62ea0bf7a695862444af32e87f1fd Hash Sha256" Hash="478C36F8AF7844A80E24C1822507BEEF6314519185717EC7AE224A0E04B2F330" />
+    <Deny ID="ID_DENY_RTCORE_3" FriendlyName="RTCore\01aa278b07b58dc46c84bd0b1b5c8e9ee4e62ea0bf7a695862444af32e87f1fd Hash Page Sha1" Hash="84152FA241C3808F8C7752964589C957E440403F" />
+    <Deny ID="ID_DENY_RTCORE_4" FriendlyName="RTCore\01aa278b07b58dc46c84bd0b1b5c8e9ee4e62ea0bf7a695862444af32e87f1fd Hash Page Sha256" Hash="A807532037A3549AE3E046F183D782BCB78B6193163EA448098140563CF857CB" />
+    <Deny ID="ID_DENY_RTCORE_5" FriendlyName="RTCore\077aa8ff5e01747723b6d24cc8af460a7a00f30cd3bc80e41cc245ceb8305356 Hash Sha1" Hash="DA1BD3AD4A8FE1E28C1DE28A7BF66AD82DA0DD29" />
+    <Deny ID="ID_DENY_RTCORE_6" FriendlyName="RTCore\077aa8ff5e01747723b6d24cc8af460a7a00f30cd3bc80e41cc245ceb8305356 Hash Sha256" Hash="61A1F530A5D47339275657D7883911D64F64909569CF13D2E6868DF01A2A72CB" />
+    <Deny ID="ID_DENY_RTCORE_7" FriendlyName="RTCore\077aa8ff5e01747723b6d24cc8af460a7a00f30cd3bc80e41cc245ceb8305356 Hash Page Sha1" Hash="BD2340853235FE2757829E7F899CE25BD65C5434" />
+    <Deny ID="ID_DENY_RTCORE_8" FriendlyName="RTCore\077aa8ff5e01747723b6d24cc8af460a7a00f30cd3bc80e41cc245ceb8305356 Hash Page Sha256" Hash="74860E5563D3993635DC41E47BB34837C8B53ECBFF539244E1EC608E7B53D42D" />
+    <Deny ID="ID_DENY_RTCORE_9" FriendlyName="RTCore\08828990218ebb4415c1bb33fa2b0a009efd0784b18b3f7ecd3bc078343f7208 Hash Sha1" Hash="38B353D8480885DE5DCF299DECA99CE4F26A1D20" />
+    <Deny ID="ID_DENY_RTCORE_10" FriendlyName="RTCore\08828990218ebb4415c1bb33fa2b0a009efd0784b18b3f7ecd3bc078343f7208 Hash Sha256" Hash="5182CAF10DE9CEC0740ECDE5A081C21CDC100D7EB328FFE6F3F63183889FEC6B" />
+    <Deny ID="ID_DENY_RTCORE_11" FriendlyName="RTCore\08828990218ebb4415c1bb33fa2b0a009efd0784b18b3f7ecd3bc078343f7208 Hash Page Sha1" Hash="1A4F647C27D093675A674E5A8D83063A83231D28" />
+    <Deny ID="ID_DENY_RTCORE_12" FriendlyName="RTCore\08828990218ebb4415c1bb33fa2b0a009efd0784b18b3f7ecd3bc078343f7208 Hash Page Sha256" Hash="46D4A0CE75FA97837C7B6869D29AF9D6068F9023346E9D34C0E26E41198CDB80" />
+    <Deny ID="ID_DENY_RTCORE_13" FriendlyName="RTCore\0aca4447ee54d635f76b941f6100b829dc8b2e0df27bdf584acb90f15f12fbda Hash Sha1" Hash="5717BF3E520ACCFFF5AD9943E53A3B118FB67F2E" />
+    <Deny ID="ID_DENY_RTCORE_14" FriendlyName="RTCore\0aca4447ee54d635f76b941f6100b829dc8b2e0df27bdf584acb90f15f12fbda Hash Sha256" Hash="918D2E68A724B58D37443AEA159E70BF8B1B5EBB089C395CAD1D62745ECDAA19" />
+    <Deny ID="ID_DENY_RTCORE_15" FriendlyName="RTCore\0aca4447ee54d635f76b941f6100b829dc8b2e0df27bdf584acb90f15f12fbda Hash Page Sha1" Hash="03E1FB2499B9361141E2AC4FCCB9CCE2A48A0342" />
+    <Deny ID="ID_DENY_RTCORE_16" FriendlyName="RTCore\0aca4447ee54d635f76b941f6100b829dc8b2e0df27bdf584acb90f15f12fbda Hash Page Sha256" Hash="556B8ACD6EFF7D5A2A0320CD22CAD122254ABDEDCBBD749DB14CD8D314D609BE" />
+    <Deny ID="ID_DENY_RTCORE_17" FriendlyName="RTCore\1c425793a8ce87be916969d6d7e9dd0687b181565c3b483ce53ad1ec6fb72a17 Hash Sha1" Hash="43D3A3C1F7B14CFCC051CAE2534DBBBB4C7FC120" />
+    <Deny ID="ID_DENY_RTCORE_18" FriendlyName="RTCore\1c425793a8ce87be916969d6d7e9dd0687b181565c3b483ce53ad1ec6fb72a17 Hash Sha256" Hash="B8EB26B6F79020AE988E4FB752DC06E1B6779749BF4F8DF2872FC2B92BAB8020" />
+    <Deny ID="ID_DENY_RTCORE_19" FriendlyName="RTCore\1c425793a8ce87be916969d6d7e9dd0687b181565c3b483ce53ad1ec6fb72a17 Hash Page Sha1" Hash="6AE84C64765F9271C4758D387AD1E07B64F7966D" />
+    <Deny ID="ID_DENY_RTCORE_20" FriendlyName="RTCore\1c425793a8ce87be916969d6d7e9dd0687b181565c3b483ce53ad1ec6fb72a17 Hash Page Sha256" Hash="AA60FC20276D6779BBEA2A629C2FBAA3CE60ED2C2AD26230101FFF01A6E79A24" />
+    <Deny ID="ID_DENY_RTCORE_21" FriendlyName="RTCore\3ff50c67d51553c08dcb7c98342f68a0f54ad6658c5346c428bdcd1f185569f6 Hash Sha1" Hash="B3249BACDA6E43AA2C46C2AF802C9EE0B7E2FD7B" />
+    <Deny ID="ID_DENY_RTCORE_22" FriendlyName="RTCore\3ff50c67d51553c08dcb7c98342f68a0f54ad6658c5346c428bdcd1f185569f6 Hash Sha256" Hash="3C9829A16EB85272B0E1A2917FEFFAAB8DDB23E633B168B389669339A0CEE0B5" />
+    <Deny ID="ID_DENY_RTCORE_23" FriendlyName="RTCore\3ff50c67d51553c08dcb7c98342f68a0f54ad6658c5346c428bdcd1f185569f6 Hash Page Sha1" Hash="060C4D64F67F9300F2DBD09F68B4B591AAAFA698" />
+    <Deny ID="ID_DENY_RTCORE_24" FriendlyName="RTCore\3ff50c67d51553c08dcb7c98342f68a0f54ad6658c5346c428bdcd1f185569f6 Hash Page Sha256" Hash="BF0439DB3DCC00355291FEFF1D31F5B48CD1334DBBA3DAEB761E7084335D40E7" />
+    <Deny ID="ID_DENY_RTCORE_25" FriendlyName="RTCore\40061b30b1243be76d5283cbc8abfe007e148097d4de7337670ff1536c4c7ba1 Hash Sha1" Hash="8498265D4CA81B83EC1454D9EC013D7A9C0C87BF" />
+    <Deny ID="ID_DENY_RTCORE_26" FriendlyName="RTCore\40061b30b1243be76d5283cbc8abfe007e148097d4de7337670ff1536c4c7ba1 Hash Sha256" Hash="606BECED7746CDB684D3A44F41E48713C6BBE5BFB1486C52B5CCA815E99D31B4" />
+    <Deny ID="ID_DENY_RTCORE_27" FriendlyName="RTCore\40061b30b1243be76d5283cbc8abfe007e148097d4de7337670ff1536c4c7ba1 Hash Page Sha1" Hash="3B05785D8AD770E4356BC8041606B08BDAB56C99" />
+    <Deny ID="ID_DENY_RTCORE_28" FriendlyName="RTCore\40061b30b1243be76d5283cbc8abfe007e148097d4de7337670ff1536c4c7ba1 Hash Page Sha256" Hash="2DC771BED765E9FE8E79171A851BA158B8E84034FE0518A619F47F3450FFA2BC" />
+    <Deny ID="ID_DENY_RTCORE_29" FriendlyName="RTCore\bea8c6728d57d4b075f372ac82b8134ac8044fe13f533696a58e8864fa3efee3 Hash Sha1" Hash="A7CE1394D10DCFDE7B8A1C90667826DA68933673" />
+    <Deny ID="ID_DENY_RTCORE_30" FriendlyName="RTCore\bea8c6728d57d4b075f372ac82b8134ac8044fe13f533696a58e8864fa3efee3 Hash Sha256" Hash="6279821BF9ECCED596F474C8FC547DAB0BDDBB3AB972390596BD4C5C7B85C685" />
+    <Deny ID="ID_DENY_RTCORE_31" FriendlyName="RTCore\bea8c6728d57d4b075f372ac82b8134ac8044fe13f533696a58e8864fa3efee3 Hash Page Sha1" Hash="9E504DB591D321F1F8CEA62A5A111DA0EFB26447" />
+    <Deny ID="ID_DENY_RTCORE_32" FriendlyName="RTCore\bea8c6728d57d4b075f372ac82b8134ac8044fe13f533696a58e8864fa3efee3 Hash Page Sha256" Hash="BEDC7276543DAAFC11D44F5F603F8AA48C61837F7C4C9446F10FA522F3275D17" />
+    <Deny ID="ID_DENY_RTPORT_1" FriendlyName="Realtek rtport\6f806a9de79ac2886613c20758546f7e9597db5a20744f7dd82d310b7d6457d0 Hash Sha1" Hash="803ACF5CCBE22E7483AA0AB66BDEB191D94CED71"/>
+    <Deny ID="ID_DENY_RTPORT_2" FriendlyName="Realtek rtport\6f806a9de79ac2886613c20758546f7e9597db5a20744f7dd82d310b7d6457d0 Hash Sha256" Hash="9A873E9D66FC509F51317A6D73A75D97A05B56DA38F0DBA90F74ACFDE262BA3D"/>
+    <Deny ID="ID_DENY_RTPORT_3" FriendlyName="Realtek rtport\74e05c6674f48089c617d66d8231cc5271c94430e80bc346cea0dfee44741476 Hash Sha1" Hash="991953AE95747735ACC492C40373944BB843D8AF"/>
+    <Deny ID="ID_DENY_RTPORT_4" FriendlyName="Realtek rtport\74e05c6674f48089c617d66d8231cc5271c94430e80bc346cea0dfee44741476 Hash Sha256" Hash="74E05C6674F48089C617D66D8231CC5271C94430E80BC346CEA0DFEE44741476"/>
+    <Deny ID="ID_DENY_RTPORT_5" FriendlyName="Realtek rtport\8fe429c46fedbab8f06e5396056adabbb84a31efef7f9523eb745fc60144db65 Hash Sha1" Hash="C613B7797A6C1F31271F8F5DCED8515D8E4F5732"/>
+    <Deny ID="ID_DENY_RTPORT_6" FriendlyName="Realtek rtport\8fe429c46fedbab8f06e5396056adabbb84a31efef7f9523eb745fc60144db65 Hash Sha256" Hash="489C02D8102FC401010793D7388B59DC944A2E77CF4179424015CD863701B19B"/>
+    <Deny ID="ID_DENY_RTPORT_7" FriendlyName="Realtek rtport\8fe429c46fedbab8f06e5396056adabbb84a31efef7f9523eb745fc60144db65 Hash Page Sha1" Hash="51D1765FA0740BB71DD588FBABAC5C077FBBE569"/>
+    <Deny ID="ID_DENY_RTPORT_8" FriendlyName="Realtek rtport\8fe429c46fedbab8f06e5396056adabbb84a31efef7f9523eb745fc60144db65 Hash Page Sha256" Hash="68000CAA66F5CE231142C6BC93CEA1768D97394F53E048AB74F6B038F12649C8"/>
+    <Deny ID="ID_DENY_RTPORT_9" FriendlyName="Realtek rtport\a29093d4d708185ba8be35709113fb42e402bbfbf2960d3e00fd7c759ef0b94e Hash Sha1" Hash="37960129FD53D546A6C419DDDE1204DD4B517F6D"/>
+    <Deny ID="ID_DENY_RTPORT_10" FriendlyName="Realtek rtport\a29093d4d708185ba8be35709113fb42e402bbfbf2960d3e00fd7c759ef0b94e Hash Sha256" Hash="7A04DB5C3E8691943EC36AC7CBE4C5FF1CE6781936D084363AC3CBC46727D115"/>
+    <Deny ID="ID_DENY_RTPORT_11" FriendlyName="Realtek rtport\c490d6c0844f59fdb4aa850a06e283fbf5e5b6ac20ff42ead03d549d8ae1c01b Hash Sha1" Hash="C2308FF02A8A05D7B20E59D7734B90FE950D15BC"/>
+    <Deny ID="ID_DENY_RTPORT_12" FriendlyName="Realtek rtport\c490d6c0844f59fdb4aa850a06e283fbf5e5b6ac20ff42ead03d549d8ae1c01b Hash Sha256" Hash="74264CE2E0ED67730B0F3C719AEE37664D4688F872875322A64022CD68E060BB"/>
+    <Deny ID="ID_DENY_RTPORT_13" FriendlyName="Realtek rtport\e3dbafce5ad2bf17446d0f853aeedf58cc25aa1080ab97e22375a1022d6acb16 Hash Sha1" Hash="5599900B51571F6557C862F5D82B8F6706A21A9D"/>
+    <Deny ID="ID_DENY_RTPORT_14" FriendlyName="Realtek rtport\e3dbafce5ad2bf17446d0f853aeedf58cc25aa1080ab97e22375a1022d6acb16 Hash Sha256" Hash="353A36D445E4FF60396702AD7B22B5F30BDCE52AA05126E2701714A3F11A11C7"/>
+    <Deny ID="ID_DENY_RTPORT_15" FriendlyName="Realtek rtport\ff322cd0cc30976f9dbdb7a3681529aeab0de7b7f5c5763362b02c15da9657a1 Hash Sha1" Hash="B2D78E9010D84F2FDB68B15667AF177809F015EA"/>
+    <Deny ID="ID_DENY_RTPORT_16" FriendlyName="Realtek rtport\ff322cd0cc30976f9dbdb7a3681529aeab0de7b7f5c5763362b02c15da9657a1 Hash Sha256" Hash="0CB26201B95CA0015A8B0370D5BC12D38AB8C74D8A24864A8B5D9E8BE1DD1EDF"/>
     <Deny ID="ID_DENY_SEMAV6MSR64_SHA1" FriendlyName="semav6msr64.sys Hash Sha1" Hash="E3DBE2AA03847DF621591A4CAD69A5609DE5C237" />
     <Deny ID="ID_DENY_SEMAV6MSR64_SHA256" FriendlyName="semav6msr64.sys Hash Sha256" Hash="EB71A8ECEF692E74AE356E8CB734029B233185EE5C2CCB6CC87CC6B36BEA65CF" />
     <Deny ID="ID_DENY_SEMAV6MSR64_SHA1_PAGE" FriendlyName="semav6msr64.sys Hash Page Sha1" Hash="F3821EC0AEF270F749DF9F44FBA91AFA5C8C38E8" />
     <Deny ID="ID_DENY_SEMAV6MSR64_SHA256_PAGE" FriendlyName="semav6msr64.sys Hash Page Sha256" Hash="4F12EE563E7496E7105D67BF64AF6B436902BE4332033AF0B5A242B206372CB7" />
+    <Deny ID="ID_DENY_SEPDRV3_1" FriendlyName="sepdrv3.sys\11cf5a8c3a2cdd8df81e8c3e477bb84b25fb92becb41f35a5d675acaa1466890 Hash Sha1" Hash="E5EBDE06493D4556083C6F1B5699E3DE7E19F00A"/>
+    <Deny ID="ID_DENY_SEPDRV3_2" FriendlyName="sepdrv3.sys\11cf5a8c3a2cdd8df81e8c3e477bb84b25fb92becb41f35a5d675acaa1466890 Hash Sha256" Hash="999B7B31DE4B29CC9645083247EDF150DDA59DD1B67D8A309D6086DAE56C5C8B"/>
+    <Deny ID="ID_DENY_SEPDRV3_3" FriendlyName="sepdrv3.sys\11cf5a8c3a2cdd8df81e8c3e477bb84b25fb92becb41f35a5d675acaa1466890 Hash Page Sha1" Hash="96A8FC40C0C4CEC694D6EAC90D00ABFAE9C574F4"/>
+    <Deny ID="ID_DENY_SEPDRV3_4" FriendlyName="sepdrv3.sys\11cf5a8c3a2cdd8df81e8c3e477bb84b25fb92becb41f35a5d675acaa1466890 Hash Page Sha256" Hash="F80CBBDE4E2363504CB01FA79EA65DAC6867BB381360C8757DC253D4328C16CD"/>
+    <Deny ID="ID_DENY_SEPDRV3_5" FriendlyName="sepdrv3.sys\17f19350ea6715ce94ca2014bce92a5c07fd752fd06647a8200db6b052468810 Hash Sha1" Hash="A7B5CABA6CD70B7AFE67E56A3E440EE6FEE75146"/>
+    <Deny ID="ID_DENY_SEPDRV3_6" FriendlyName="sepdrv3.sys\17f19350ea6715ce94ca2014bce92a5c07fd752fd06647a8200db6b052468810 Hash Sha256" Hash="D6EEE72899BC9115301FCE63D8B6550F5401C2BC9C249F1CC14652B0902C743F"/>
+    <Deny ID="ID_DENY_SEPDRV3_7" FriendlyName="sepdrv3.sys\17f19350ea6715ce94ca2014bce92a5c07fd752fd06647a8200db6b052468810 Hash Page Sha1" Hash="033ECCCAD06DBCD70E929386EA225E46010E2D1C"/>
+    <Deny ID="ID_DENY_SEPDRV3_8" FriendlyName="sepdrv3.sys\17f19350ea6715ce94ca2014bce92a5c07fd752fd06647a8200db6b052468810 Hash Page Sha256" Hash="91AD7CB148D7F16167E0BC3ECA78DAA714664E7BC1825A7CB62762307709CCAE"/>
+    <Deny ID="ID_DENY_SEPDRV3_9" FriendlyName="sepdrv3.sys\1b83be686572c6f0f7d214af7a135978bf5a342e4aafbb01c1a0cf5f6e054863 Hash Sha1" Hash="2D9B4019214135DAD5AA5ABD6D54C73E0F38FB2E"/>
+    <Deny ID="ID_DENY_SEPDRV3_10" FriendlyName="sepdrv3.sys\1b83be686572c6f0f7d214af7a135978bf5a342e4aafbb01c1a0cf5f6e054863 Hash Sha256" Hash="6860735F703F2287B7C1906FA14F819E1CFBC0E4D332FA811673921CAC9CA451"/>
+    <Deny ID="ID_DENY_SEPDRV3_11" FriendlyName="sepdrv3.sys\1b83be686572c6f0f7d214af7a135978bf5a342e4aafbb01c1a0cf5f6e054863 Hash Page Sha1" Hash="569A3823C3E6A38C9D91E3691E38EE226B46E8C6"/>
+    <Deny ID="ID_DENY_SEPDRV3_12" FriendlyName="sepdrv3.sys\1b83be686572c6f0f7d214af7a135978bf5a342e4aafbb01c1a0cf5f6e054863 Hash Page Sha256" Hash="167C1661E6AA46E4A06C02B35786A3B0B35B76E7CE32BC013893A480D174C242"/>
+    <Deny ID="ID_DENY_SEPDRV3_13" FriendlyName="sepdrv3.sys\321104460942bf98c5c248f660e068e5170c16ae8eedfa7acc5bf98471042a4e Hash Sha1" Hash="5FD9BDE1FF9C91BADE322EAA2C83ACC6E2751351"/>
+    <Deny ID="ID_DENY_SEPDRV3_14" FriendlyName="sepdrv3.sys\321104460942bf98c5c248f660e068e5170c16ae8eedfa7acc5bf98471042a4e Hash Sha256" Hash="8971D8B30721EDFAB149FA3D2C201C0BB134F33F03D22AA6C90164A4AAF630CD"/>
+    <Deny ID="ID_DENY_SEPDRV3_15" FriendlyName="sepdrv3.sys\321104460942bf98c5c248f660e068e5170c16ae8eedfa7acc5bf98471042a4e Hash Page Sha1" Hash="07CD7EE875F911B657A395038DA04ED2BCA98E98"/>
+    <Deny ID="ID_DENY_SEPDRV3_16" FriendlyName="sepdrv3.sys\321104460942bf98c5c248f660e068e5170c16ae8eedfa7acc5bf98471042a4e Hash Page Sha256" Hash="7A7EEE720CC27C30B1A52D9459F75635C68DE46F583A5A71792F8B6EE0E8E39E"/>
+    <Deny ID="ID_DENY_SEPDRV3_17" FriendlyName="sepdrv3.sys\398853920c10c4d3c685d4222b067e2d7f6b2430adb70577d4e448078de5c64c Hash Sha1" Hash="854708A1E286D377C85C7AE6386509F6AD6E250D"/>
+    <Deny ID="ID_DENY_SEPDRV3_18" FriendlyName="sepdrv3.sys\398853920c10c4d3c685d4222b067e2d7f6b2430adb70577d4e448078de5c64c Hash Sha256" Hash="C2742A2FAD0061A9D7664A8EFBD99C9C8E8E1FB489DE5FA29DFBFB591DB240A4"/>
+    <Deny ID="ID_DENY_SEPDRV3_19" FriendlyName="sepdrv3.sys\398853920c10c4d3c685d4222b067e2d7f6b2430adb70577d4e448078de5c64c Hash Page Sha1" Hash="E1A1423FB686F65ED1D0AC5B8BD12C64A7AB895F"/>
+    <Deny ID="ID_DENY_SEPDRV3_20" FriendlyName="sepdrv3.sys\398853920c10c4d3c685d4222b067e2d7f6b2430adb70577d4e448078de5c64c Hash Page Sha256" Hash="5A17C00F920FE49725BAE0594D1326A3E15A0A069DD1E2DBB07C4C32C0F43151"/>
+    <Deny ID="ID_DENY_SEPDRV3_21" FriendlyName="sepdrv3.sys\3fd6a8623394db4eaeabfb7a6e75d8af6f998409de4537045db06391d82b37c8 Hash Sha1" Hash="970D8ADF83D9DCD3DB8F69C2B3EE77B01F480FE5"/>
+    <Deny ID="ID_DENY_SEPDRV3_22" FriendlyName="sepdrv3.sys\3fd6a8623394db4eaeabfb7a6e75d8af6f998409de4537045db06391d82b37c8 Hash Sha256" Hash="34FDC85DF0AC6B7BE6C8B36163BE1E4FFB68C89B6A640B9A74C8A9E6DDE6E7A7"/>
+    <Deny ID="ID_DENY_SEPDRV3_23" FriendlyName="sepdrv3.sys\3fd6a8623394db4eaeabfb7a6e75d8af6f998409de4537045db06391d82b37c8 Hash Page Sha1" Hash="898E91D2DF5D93CD43A18399B25CCC620A4246E5"/>
+    <Deny ID="ID_DENY_SEPDRV3_24" FriendlyName="sepdrv3.sys\3fd6a8623394db4eaeabfb7a6e75d8af6f998409de4537045db06391d82b37c8 Hash Page Sha256" Hash="EA0E3A51B7C901108FC95366C25E9093DF6709A7E0BDE3D031BEDBFC73B488CA"/>
+    <Deny ID="ID_DENY_SEPDRV3_25" FriendlyName="sepdrv3.sys\54fc3cad3fc4d45eaf43b96b175a65879761c996c4e26880064170811b0a11ff Hash Sha1" Hash="16F2B2F44FC257ABB1E69DD7FB0BA1E98FB89702"/>
+    <Deny ID="ID_DENY_SEPDRV3_26" FriendlyName="sepdrv3.sys\54fc3cad3fc4d45eaf43b96b175a65879761c996c4e26880064170811b0a11ff Hash Sha256" Hash="2C12AF21CEB317375E644E0388385DD11C5B005472C09A8710EC7E905AAB7E77"/>
+    <Deny ID="ID_DENY_SEPDRV3_27" FriendlyName="sepdrv3.sys\54fc3cad3fc4d45eaf43b96b175a65879761c996c4e26880064170811b0a11ff Hash Page Sha1" Hash="F6FBF8FB8ECE412AFEDFE5B93C0DEC6DC5672C96"/>
+    <Deny ID="ID_DENY_SEPDRV3_28" FriendlyName="sepdrv3.sys\54fc3cad3fc4d45eaf43b96b175a65879761c996c4e26880064170811b0a11ff Hash Page Sha256" Hash="0BFA3751E7449E4C0F945E881AF6E6577B4FCA51681F097F0B45E7A31240B8F0"/>
+    <Deny ID="ID_DENY_SEPDRV3_29" FriendlyName="sepdrv3.sys\94ef5e5188b675da304ac1724655072ec4abc2d48ca545daa7ccfc52ded2d7ae Hash Sha1" Hash="C77D060AD181E3B61E2A41CDEDD09DC2ABD64492"/>
+    <Deny ID="ID_DENY_SEPDRV3_30" FriendlyName="sepdrv3.sys\94ef5e5188b675da304ac1724655072ec4abc2d48ca545daa7ccfc52ded2d7ae Hash Sha256" Hash="51044D01CE2BE5EC9D8E339E39FC5CA4636E4F3203B2810AB0A4030E948AFF0D"/>
+    <Deny ID="ID_DENY_SEPDRV3_31" FriendlyName="sepdrv3.sys\94ef5e5188b675da304ac1724655072ec4abc2d48ca545daa7ccfc52ded2d7ae Hash Page Sha1" Hash="9CE4E2C3217F2BF1D2F4F4CFC7108F336D92E56E"/>
+    <Deny ID="ID_DENY_SEPDRV3_32" FriendlyName="sepdrv3.sys\94ef5e5188b675da304ac1724655072ec4abc2d48ca545daa7ccfc52ded2d7ae Hash Page Sha256" Hash="F8640E7A6DFFB61C4BBCB5416EB97D21EBC5153B16ADB8E9B17BFA44377C8602"/>
+    <Deny ID="ID_DENY_SEPDRV3_33" FriendlyName="sepdrv3.sys\b96ba5c469591f9e545bef4af1719a831c73b71207fad79efd84335c1519f71a Hash Sha1" Hash="8B6315FF84C9724EE0FE120DC04B058273310C15"/>
+    <Deny ID="ID_DENY_SEPDRV3_34" FriendlyName="sepdrv3.sys\b96ba5c469591f9e545bef4af1719a831c73b71207fad79efd84335c1519f71a Hash Sha256" Hash="FCAE0263D0172388BA503EADF89DCBE2788E3C9A93A2AC5D1492194671DEC9AC"/>
+    <Deny ID="ID_DENY_SEPDRV3_35" FriendlyName="sepdrv3.sys\b96ba5c469591f9e545bef4af1719a831c73b71207fad79efd84335c1519f71a Hash Page Sha1" Hash="186B696A6D491CC1EDAA4EB470D77FE63740643E"/>
+    <Deny ID="ID_DENY_SEPDRV3_36" FriendlyName="sepdrv3.sys\b96ba5c469591f9e545bef4af1719a831c73b71207fad79efd84335c1519f71a Hash Page Sha256" Hash="06E02324268E647EC77C63B81D06DAF2AE58BBD5BFA6F3DC78EFC2FAF632062D"/>
+    <Deny ID="ID_DENY_SEPDRV3_37" FriendlyName="sepdrv3.sys\f7cb042aaddd24d867c2ac3a5386d736be91f65c47752fef7e93ce4c0e2b8e1e Hash Sha1" Hash="4367680C86115B001DD5D9F63DA7B3755596D500"/>
+    <Deny ID="ID_DENY_SEPDRV3_38" FriendlyName="sepdrv3.sys\f7cb042aaddd24d867c2ac3a5386d736be91f65c47752fef7e93ce4c0e2b8e1e Hash Sha256" Hash="5C421BB2DC2B155FB8DEFF8A5E7E09D903341C729A27B509A8CDBBB54D8352C9"/>
+    <Deny ID="ID_DENY_SEPDRV3_39" FriendlyName="sepdrv3.sys\f7cb042aaddd24d867c2ac3a5386d736be91f65c47752fef7e93ce4c0e2b8e1e Hash Page Sha1" Hash="A79BB06F44FA71D9D08E9A94C9B2E1ED522A5F78"/>
+    <Deny ID="ID_DENY_SEPDRV3_40" FriendlyName="sepdrv3.sys\f7cb042aaddd24d867c2ac3a5386d736be91f65c47752fef7e93ce4c0e2b8e1e Hash Page Sha256" Hash="F1C7B0C250297DD5BC5D5B75E3DB77FCE5E2F2AF93B7C3CC78BAE4608BD505CE"/>
     <Deny ID="ID_DENY_SUPERBMC_2" FriendlyName="superbmc.sys\1d804efc9a1a012e1f68288c0a2833b13d00eecd4a6e93258ba100aa07e3406f Hash Sha1" Hash="989BDDC6B7076947277AB6EB7F002AB6731AAEAE" />
     <Deny ID="ID_DENY_SUPERBMC_3" FriendlyName="superbmc.sys\1d804efc9a1a012e1f68288c0a2833b13d00eecd4a6e93258ba100aa07e3406f Hash Sha256" Hash="5147B0F2CA9D0BDE1F9FCEB382C05F7FA9C333709D7BF081D6C00A4132D914AF" />
     <Deny ID="ID_DENY_SUPERBMC_4" FriendlyName="superbmc.sys\1d804efc9a1a012e1f68288c0a2833b13d00eecd4a6e93258ba100aa07e3406f Hash Page Sha1" Hash="4378B656A1C94CD885323B6D6E36038E8522E6CC" />
@@ -1098,6 +1384,26 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_SUPERBMC_15" FriendlyName="superbmc.sys\ee6bfdf5748fbbf579d6176026626ef39a0673e307c2029f5633e80f0babef54 Hash Sha256" Hash="976C015B28197CCD15F807B776F705BDF612FC622FB0A4B9901B90F180BF2F8A" />
     <Deny ID="ID_DENY_SUPERBMC_16" FriendlyName="superbmc.sys\ee6bfdf5748fbbf579d6176026626ef39a0673e307c2029f5633e80f0babef54 Hash Page Sha1" Hash="2303BEAB201455CC543E0CCE9D4D8698338787EB" />
     <Deny ID="ID_DENY_SUPERBMC_17" FriendlyName="superbmc.sys\ee6bfdf5748fbbf579d6176026626ef39a0673e307c2029f5633e80f0babef54 Hash Page Sha256" Hash="161DC4F7ED741397F6BD6C2B012DBDF6E397CF02212C7DAAF303338206B1E3A7" />
+    <Deny ID="ID_DENY_SYSCONP_1" FriendlyName="IBM sysconp.sys\dba8db472e51edd59f0bbaf4e09df71613d4dd26fd05f14a9bc7e3fc217a78aa Hash Sha1" Hash="7D7BBE8F7C7445B98B02D0AC4DA109B6275331BF"/>
+    <Deny ID="ID_DENY_SYSCONP_2" FriendlyName="IBM sysconp.sys\dba8db472e51edd59f0bbaf4e09df71613d4dd26fd05f14a9bc7e3fc217a78aa Hash Sha256" Hash="42446592B42E34BF569A631265BCAF2A2192D424531A343A7680F52199B88462"/>
+    <Deny ID="ID_DENY_SYSCONP_3" FriendlyName="IBM sysconp.sys\dba8db472e51edd59f0bbaf4e09df71613d4dd26fd05f14a9bc7e3fc217a78aa Hash Page Sha1" Hash="FC9033ACD7454A12EA9AEB7F27A04A2A6D26EEA0"/>
+    <Deny ID="ID_DENY_SYSCONP_4" FriendlyName="IBM sysconp.sys\dba8db472e51edd59f0bbaf4e09df71613d4dd26fd05f14a9bc7e3fc217a78aa Hash Page Sha256" Hash="460D48855B3390A01AD549BA866FD7567CDFAFBAF6CC3BD199CD3DE36BCCC4C7"/>
+    <Deny ID="ID_DENY_SYSCONP_5" FriendlyName="IBM sysconp.sys\df4c02beb039d15ff0c691bbc3595c9edfc1d24e783c8538a859bc5ea537188d Hash Sha1" Hash="F02835C1C4E0D69F9ED80E97345EE6F2258C601C"/>
+    <Deny ID="ID_DENY_SYSCONP_6" FriendlyName="IBM sysconp.sys\df4c02beb039d15ff0c691bbc3595c9edfc1d24e783c8538a859bc5ea537188d Hash Sha256" Hash="9303894EE50D95911CCD4583B2AA5484DB63DE0D8F799B14854577E15914DF2D"/>
+    <Deny ID="ID_DENY_SYSCONP_7" FriendlyName="IBM sysconp.sys\df4c02beb039d15ff0c691bbc3595c9edfc1d24e783c8538a859bc5ea537188d Hash Page Sha1" Hash="7464301A7E4A828105E4EF4CB16209575B93FF29"/>
+    <Deny ID="ID_DENY_SYSCONP_8" FriendlyName="IBM sysconp.sys\df4c02beb039d15ff0c691bbc3595c9edfc1d24e783c8538a859bc5ea537188d Hash Page Sha256" Hash="DEB2CC7E586188EC475BD024F0DEAD6E321B6196D5B3179FD0521682160C4F81"/>
+    <Deny ID="ID_DENY_SYSDRV3S_1" FriendlyName="CodeSys SysDrv3S\0dd9daf0852a5b1b436199e9f2bf318f641f43173ab0dc22ad8c7e9cbaee9ad3 Hash Sha1" Hash="3AA0ABAF4EA1F90D1B5D2F26ABE7FE9F0BB14A76" />
+    <Deny ID="ID_DENY_SYSDRV3S_2" FriendlyName="CodeSys SysDrv3S\0dd9daf0852a5b1b436199e9f2bf318f641f43173ab0dc22ad8c7e9cbaee9ad3 Hash Sha256" Hash="8A4E6D1A5E0309EAD41B11CEB479C6A874CF6E57F2B416C12025E1B485009F37" />
+    <Deny ID="ID_DENY_SYSDRV3S_3" FriendlyName="CodeSys SysDrv3S\0dd9daf0852a5b1b436199e9f2bf318f641f43173ab0dc22ad8c7e9cbaee9ad3 Hash Page Sha1" Hash="F4C12BA9B5B73C159EB920060B8E4CEE9D729187" />
+    <Deny ID="ID_DENY_SYSDRV3S_4" FriendlyName="CodeSys SysDrv3S\0dd9daf0852a5b1b436199e9f2bf318f641f43173ab0dc22ad8c7e9cbaee9ad3 Hash Page Sha256" Hash="841C8C6B5D9779B98FB3DB2B90695469FED42885E8F5A81983F35C6B470CCC8F" />
+    <Deny ID="ID_DENY_SYSDRV3S_5" FriendlyName="CodeSys SysDrv3S\161a50482380727ffa0dd94e193a023f4445dddd3a05340fe2db07fc3ec5b5f3 Hash Sha1" Hash="80D203BB42A5D58D87C82481238BFF1A01ECAC6D" />
+    <Deny ID="ID_DENY_SYSDRV3S_6" FriendlyName="CodeSys SysDrv3S\161a50482380727ffa0dd94e193a023f4445dddd3a05340fe2db07fc3ec5b5f3 Hash Sha256" Hash="7A15788A9942659E061E0A51F806E564B2A49ADB7BCB8F6A3548EDD4528426A0" />
+    <Deny ID="ID_DENY_SYSDRV3S_7" FriendlyName="CodeSys SysDrv3S\161a50482380727ffa0dd94e193a023f4445dddd3a05340fe2db07fc3ec5b5f3 Hash Page Sha1" Hash="B1723ED6AD1808E932C3040B5F4744BB9C85DD9F" />
+    <Deny ID="ID_DENY_SYSDRV3S_8" FriendlyName="CodeSys SysDrv3S\161a50482380727ffa0dd94e193a023f4445dddd3a05340fe2db07fc3ec5b5f3 Hash Page Sha256" Hash="20D30D12CAF158058ECDED6BE4282838CA1E328F777DE67D62681891B58E0A13" />
+    <Deny ID="ID_DENY_SYSDRV3S_9" FriendlyName="CodeSys SysDrv3S\cf4efec43474c5aacf4b0971d44eaf8dd6357e594cdb1390085a5070a0df51d4 Hash Sha1" Hash="43D91E7B7B2E65263E40FC2E29F517552A1D2C41" />
+    <Deny ID="ID_DENY_SYSDRV3S_A" FriendlyName="CodeSys SysDrv3S\cf4efec43474c5aacf4b0971d44eaf8dd6357e594cdb1390085a5070a0df51d4 Hash Sha256" Hash="327DD7D2115ED486AD66181E3A0C86AD64F41A6D28943D3E76B1BDE937EAB628" />
+    <Deny ID="ID_DENY_SYSDRV3S_B" FriendlyName="CodeSys SysDrv3S\cf4efec43474c5aacf4b0971d44eaf8dd6357e594cdb1390085a5070a0df51d4 Hash Page Sha1" Hash="1A38DD65ED3E011409F6146ECD6C513E4312D409" />
+    <Deny ID="ID_DENY_SYSDRV3S_C" FriendlyName="CodeSys SysDrv3S\cf4efec43474c5aacf4b0971d44eaf8dd6357e594cdb1390085a5070a0df51d4 Hash Page Sha256" Hash="65D44B0B174524208204C1BCD08A9628B851FB49E22719FF0BA9C05473CCC273" />
     <Deny ID="ID_DENY_SYSINFO_1" FriendlyName="Noriyuki Miyazaki SysInfo\4fea15aabc4fc63a3e991412caf17283bbd257172ef7e255f40f5e22e0286902 Hash Sha1" Hash="E833F4E364DC5EFBABF1570DA86D1FA3E55804A7" />
     <Deny ID="ID_DENY_SYSINFO_2" FriendlyName="Noriyuki Miyazaki SysInfo\4fea15aabc4fc63a3e991412caf17283bbd257172ef7e255f40f5e22e0286902 Hash Sha256" Hash="0122CDCF450F03B95B04560F77C2BB4643F379FBD903B07EA1300F9B974D32A3" />
     <Deny ID="ID_DENY_SYSINFO_3" FriendlyName="Noriyuki Miyazaki SysInfo\7049f3c939efe76a5556c2a2c04386db51daf61d56b679f4868bb0983c996ebb Hash Sha1" Hash="CA88F321631C1552E3E0BCD1F26AD3435CC9F1AE" />
@@ -1106,6 +1412,18 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_SYSINFO_6" FriendlyName="Noriyuki Miyazaki SysInfo\7049f3c939efe76a5556c2a2c04386db51daf61d56b679f4868bb0983c996ebb Hash Page Sha256" Hash="954CCDEAB26CE6555FCD780AD646620DE11F32F2E8347E12C6C95CF6C14DF6CC" />
     <Deny ID="ID_DENY_SYSINFO_7" FriendlyName="Noriyuki Miyazaki SysInfo\b85e9b69ad23bfb37452fe0b67dfa71e5980a8e4310b021bc6f8c36f893bc625 Hash Sha1" Hash="D6E675670E57B3758C1D9F04F51F0C0C46956805" />
     <Deny ID="ID_DENY_SYSINFO_8" FriendlyName="Noriyuki Miyazaki SysInfo\b85e9b69ad23bfb37452fe0b67dfa71e5980a8e4310b021bc6f8c36f893bc625 Hash Sha256" Hash="6EE124F31A765CDBBB27831B8F3297F844A5F375E408A5953693B2E65F20165B" />
+    <Deny ID="ID_DENY_TDEIO_1" FriendlyName="Tdeio.sys\1076504a145810dfe331324007569b95d0310ac1e08951077ac3baf668b2a486 Hash Sha1" Hash="4CAC09246C22324368F367E03550734A281471C5"/>
+    <Deny ID="ID_DENY_TDEIO_2" FriendlyName="Tdeio.sys\1076504a145810dfe331324007569b95d0310ac1e08951077ac3baf668b2a486 Hash Sha256" Hash="C8A34012C22A650972B9ECAD988D346C8670BCD51EA2DD3AB7FE4562E117F1B9"/>
+    <Deny ID="ID_DENY_TDEIO_3" FriendlyName="Tdeio.sys\1076504a145810dfe331324007569b95d0310ac1e08951077ac3baf668b2a486 Hash Page Sha1" Hash="89ECEE8145F24A563B9A839EEF3408D18A1A8822"/>
+    <Deny ID="ID_DENY_TDEIO_4" FriendlyName="Tdeio.sys\1076504a145810dfe331324007569b95d0310ac1e08951077ac3baf668b2a486 Hash Page Sha256" Hash="E7CAB1DFD41C8690382715257ADF36DA6F7B3603420135E24DB161319ABC2FAC"/>
+    <Deny ID="ID_DENY_TDEIO_5" FriendlyName="Tdeio.sys\aa282c3b989a0eca78023347b7b1e1feef7e42edf9fd2bef5d55c66000c99911 Hash Sha1" Hash="56A8604B2A5752E6D06F312A0B858BF3B949121B"/>
+    <Deny ID="ID_DENY_TDEIO_6" FriendlyName="Tdeio.sys\aa282c3b989a0eca78023347b7b1e1feef7e42edf9fd2bef5d55c66000c99911 Hash Sha256" Hash="EE06212E22AE7E892F09AE75CB39587237F5A115BF3CE4AE7493A8E82C180CAE"/>
+    <Deny ID="ID_DENY_TDEIO_7" FriendlyName="Tdeio.sys\aa282c3b989a0eca78023347b7b1e1feef7e42edf9fd2bef5d55c66000c99911 Hash Page Sha1" Hash="6F4018933D98EFEF97CC2EA9EA55018B9497592D"/>
+    <Deny ID="ID_DENY_TDEIO_8" FriendlyName="Tdeio.sys\aa282c3b989a0eca78023347b7b1e1feef7e42edf9fd2bef5d55c66000c99911 Hash Page Sha256" Hash="5379AD6B8A4B6669DEFD907B9D1D2030F31D9F00559F32935629765A75F6B601"/>
+    <Deny ID="ID_DENY_WFSHBR_1" FriendlyName="HyperTech wfshbr64\89698cad598a56f9e45efffd15d1841e494a2409cc12279150a03842cd6bb7f3 Hash Sha1" Hash="0122F7A57784F2AC460D175687450D8940CACE6E"/>
+    <Deny ID="ID_DENY_WFSHBR_2" FriendlyName="HyperTech wfshbr64\89698cad598a56f9e45efffd15d1841e494a2409cc12279150a03842cd6bb7f3 Hash Sha256" Hash="D16A59CD7C52D1D32BB43670CDCA739AADB19BA15996BAC62071845E1BFBDB95"/>
+    <Deny ID="ID_DENY_WFSHBR_3" FriendlyName="HyperTech wfshbr64\89698cad598a56f9e45efffd15d1841e494a2409cc12279150a03842cd6bb7f3 Hash Page Sha1" Hash="59621ADDE6C6353397F1D7E5C1F8A887AC9931E6"/>
+    <Deny ID="ID_DENY_WFSHBR_4" FriendlyName="HyperTech wfshbr64\89698cad598a56f9e45efffd15d1841e494a2409cc12279150a03842cd6bb7f3 Hash Page Sha256" Hash="C374004CD00D779F028638E03F611C270FCA020AA413BE9BB6852E875B848E42"/>
     <Deny ID="ID_DENY_WINIO_1" FriendlyName="PartnerTech WinIo64A.sys\0c74d09da7baf7c05360346e4c3512d0cd433d59 Hash Sha1" Hash="0C74D09DA7BAF7C05360346E4C3512D0CD433D59" />
     <Deny ID="ID_DENY_WINIO_2" FriendlyName="PartnerTech WinIo64B.sys\f18e669127c041431cde8f2d03b15cfc20696056 Hash Sha1" Hash="F18E669127C041431CDE8F2D03B15CFC20696056" />
     <Deny ID="ID_DENY_WINIO_3" FriendlyName="PartnerTech WinIO32B.sys\f1c8c3926d0370459a1b7f0cf3d17b22ff9d0c7f Hash Sha1" Hash="F1C8C3926D0370459A1B7F0CF3D17B22FF9D0C7F" />
@@ -1140,6 +1458,56 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_WINIO_32" FriendlyName="PartnerTech WinIO\dc2b92f59fd8d059a58cc0761212f788d7041f708f4bd717d1738de909b4f781 Hash Sha256" Hash="5B6C10E103D42B17E5DDD6BEEC295BBF51CE56547134CE8D675A008A8243F615" />
     <Deny ID="ID_DENY_WINIO_33" FriendlyName="PartnerTech WinIO\dc2b92f59fd8d059a58cc0761212f788d7041f708f4bd717d1738de909b4f781 Hash Page Sha1" Hash="746414A878978FA039A6521F392167913CEA7C8D" />
     <Deny ID="ID_DENY_WINIO_34" FriendlyName="PartnerTech WinIO\dc2b92f59fd8d059a58cc0761212f788d7041f708f4bd717d1738de909b4f781 Hash Page Sha256" Hash="45DFA3B42C2789A741C5F29862A8CFC5998D889F96C5783C1A27AC03DE1A407A" />
+    <Deny ID="ID_DENY_WINIO_35" FriendlyName="WinIO\0bfcf39a3e63bb6ef8afec67965103df1b9803bca31d221a7fd4233972be9e05 Hash Sha1" Hash="664F7E5EF393507A259362E6D7337407E44A3EDB" />
+    <Deny ID="ID_DENY_WINIO_36" FriendlyName="WinIO\0bfcf39a3e63bb6ef8afec67965103df1b9803bca31d221a7fd4233972be9e05 Hash Sha256" Hash="2DCED5FB3F68F8E33D2454798FCDC5AFCB00EBD1BBB8968CAF274B8D9A3A1DFE" />
+    <Deny ID="ID_DENY_WINIO_37" FriendlyName="WinIO\0bfcf39a3e63bb6ef8afec67965103df1b9803bca31d221a7fd4233972be9e05 Hash Page Sha1" Hash="CF3DF8311C7F241C56F4640D2C6A4A9BB20CD674" />
+    <Deny ID="ID_DENY_WINIO_38" FriendlyName="WinIO\0bfcf39a3e63bb6ef8afec67965103df1b9803bca31d221a7fd4233972be9e05 Hash Page Sha256" Hash="CA87FD00ACDAA7FE36496C1EBD81F6F608ADBB60F41F9B02C6815580F4CE42AC" />
+    <Deny ID="ID_DENY_WINIO_39" FriendlyName="WinIO\13a38c92606de7bc61960606deb59e1db125fb4efbb8b29ba732e5d3c2dc169c Hash Sha1" Hash="1769C1E75D4131047771350AAF84AEA0A631A53C" />
+    <Deny ID="ID_DENY_WINIO_40" FriendlyName="WinIO\13a38c92606de7bc61960606deb59e1db125fb4efbb8b29ba732e5d3c2dc169c Hash Sha256" Hash="E9E8061F8E2C68C6F3E4A4D284CE9E8195140E531981C54F68ED7445D259B4DA" />
+    <Deny ID="ID_DENY_WINIO_41" FriendlyName="WinIO\13a38c92606de7bc61960606deb59e1db125fb4efbb8b29ba732e5d3c2dc169c Hash Page Sha1" Hash="50B55723B63BFECD05DBEB4C19C36AC8F9BEBD25" />
+    <Deny ID="ID_DENY_WINIO_42" FriendlyName="WinIO\13a38c92606de7bc61960606deb59e1db125fb4efbb8b29ba732e5d3c2dc169c Hash Page Sha256" Hash="14F25296EA3C6AE183BDAE04A0029BE2BB4D679089680FB2695904708A778CB2" />
+    <Deny ID="ID_DENY_WINIO_43" FriendlyName="WinIO\1f868677f2e6afd63b974908f793307a91329a6a413cfd726e85185507401afb Hash Sha1" Hash="67A8DF0F5962D4C93D4463BF79185F23502B8CEA" />
+    <Deny ID="ID_DENY_WINIO_44" FriendlyName="WinIO\1f868677f2e6afd63b974908f793307a91329a6a413cfd726e85185507401afb Hash Sha256" Hash="1E93ACD7C0ACCE3C39AC6303A8D914B5F8556C7C1E10EFDBBA18CCF75A41F36E" />
+    <Deny ID="ID_DENY_WINIO_45" FriendlyName="WinIO\2e8c28298890f1684be3827bcdb0746a124a0ffe58d1c9a4c361c2e8b13cf735 Hash Sha1" Hash="7BCF1C28DEED9ECAD5DFBEC3A111297673C33AA7" />
+    <Deny ID="ID_DENY_WINIO_46" FriendlyName="WinIO\2e8c28298890f1684be3827bcdb0746a124a0ffe58d1c9a4c361c2e8b13cf735 Hash Sha256" Hash="6A4E037EE84F83D3A4E84C35F09AE26D42F347FEC8ECF525553962EC24CEB2BE" />
+    <Deny ID="ID_DENY_WINIO_47" FriendlyName="WinIO\2e8c28298890f1684be3827bcdb0746a124a0ffe58d1c9a4c361c2e8b13cf735 Hash Page Sha1" Hash="B23D319DBE769BF8DB0D5217A3523553072830E3" />
+    <Deny ID="ID_DENY_WINIO_48" FriendlyName="WinIO\2e8c28298890f1684be3827bcdb0746a124a0ffe58d1c9a4c361c2e8b13cf735 Hash Page Sha256" Hash="F0158C28986F4A806F127DB70720462D8EF07F8EB7A7B8DE698896993365B517" />
+    <Deny ID="ID_DENY_WINIO_49" FriendlyName="WinIO\385660a65e69b3bf9ac5c2ae4cadbb1e07f366e1807979bf7a915e40e9480f8b Hash Sha1" Hash="FDF79660BAE9C9DD54509FEC6C9F0E0A9BB2C1D5" />
+    <Deny ID="ID_DENY_WINIO_50" FriendlyName="WinIO\385660a65e69b3bf9ac5c2ae4cadbb1e07f366e1807979bf7a915e40e9480f8b Hash Sha256" Hash="FF40D6714AC9C59A6D0E3A155586D6C51A3457F77BA1E2858D9804A0318178E7" />
+    <Deny ID="ID_DENY_WINIO_51" FriendlyName="WinIO\385660a65e69b3bf9ac5c2ae4cadbb1e07f366e1807979bf7a915e40e9480f8b Hash Page Sha1" Hash="65EC6A3DB695FCD94DF5C8B41EEF67DE02031C96" />
+    <Deny ID="ID_DENY_WINIO_52" FriendlyName="WinIO\385660a65e69b3bf9ac5c2ae4cadbb1e07f366e1807979bf7a915e40e9480f8b Hash Page Sha256" Hash="F74C91893BE76BE735CDBCA522405D0AE055326AE7D7082907FE1447FA196F2C" />
+    <Deny ID="ID_DENY_WINIO_53" FriendlyName="WinIO\42322b59f75f3ee3f66d080433c01fe024ca9ce5cbd3acac8a98394ac2a0d659 Hash Sha1" Hash="8E93E37A72A13DAC1C4C0BC1DA6BDFB8BA8D9CB3" />
+    <Deny ID="ID_DENY_WINIO_54" FriendlyName="WinIO\42322b59f75f3ee3f66d080433c01fe024ca9ce5cbd3acac8a98394ac2a0d659 Hash Sha256" Hash="5B6C10E103D42B17E5DDD6BEEC295BBF51CE56547134CE8D675A008A8243F615" />
+    <Deny ID="ID_DENY_WINIO_55" FriendlyName="WinIO\42322b59f75f3ee3f66d080433c01fe024ca9ce5cbd3acac8a98394ac2a0d659 Hash Page Sha1" Hash="746414A878978FA039A6521F392167913CEA7C8D" />
+    <Deny ID="ID_DENY_WINIO_56" FriendlyName="WinIO\42322b59f75f3ee3f66d080433c01fe024ca9ce5cbd3acac8a98394ac2a0d659 Hash Page Sha256" Hash="45DFA3B42C2789A741C5F29862A8CFC5998D889F96C5783C1A27AC03DE1A407A" />
+    <Deny ID="ID_DENY_WINIO_57" FriendlyName="WinIO\8d5466ccce64de5beccc373e0c878ca3e624ed78d359f76aae32de4df5afce18 Hash Sha1" Hash="DB70C4C4BE791955F33977D85B30D9624E9270E3" />
+    <Deny ID="ID_DENY_WINIO_58" FriendlyName="WinIO\8d5466ccce64de5beccc373e0c878ca3e624ed78d359f76aae32de4df5afce18 Hash Sha256" Hash="9F44E5C897EE06D92E7BEDC713DD369D85E084959C69CEEC25663A599FF5D5F8" />
+    <Deny ID="ID_DENY_WINIO_59" FriendlyName="WinIO\8d5466ccce64de5beccc373e0c878ca3e624ed78d359f76aae32de4df5afce18 Hash Page Sha1" Hash="AAB02F7A7931442D2F46330E069ABF9B59DB3F3D" />
+    <Deny ID="ID_DENY_WINIO_60" FriendlyName="WinIO\8d5466ccce64de5beccc373e0c878ca3e624ed78d359f76aae32de4df5afce18 Hash Page Sha256" Hash="9185576B594D33290237E72841F56D36A4F0D6668EC9094FB45C1F3957DF6A0C" />
+    <Deny ID="ID_DENY_WINIO_61" FriendlyName="WinIO\9ef6eb93e504351d710b88fd5ec68ef2e0b757ea364341e715b0076dc559b54a Hash Sha1" Hash="789C851AF232506F62BE108799065219427861C2" />
+    <Deny ID="ID_DENY_WINIO_62" FriendlyName="WinIO\9ef6eb93e504351d710b88fd5ec68ef2e0b757ea364341e715b0076dc559b54a Hash Sha256" Hash="D6399E43E24E4D2348008645F6E2176AEB2F0244A5E17028C152D87617E7BD0D" />
+    <Deny ID="ID_DENY_WINIO_63" FriendlyName="WinIO\9ef6eb93e504351d710b88fd5ec68ef2e0b757ea364341e715b0076dc559b54a Hash Page Sha1" Hash="5E699DF6F458A11CD8C2D59D083D2CA38A25F876" />
+    <Deny ID="ID_DENY_WINIO_64" FriendlyName="WinIO\9ef6eb93e504351d710b88fd5ec68ef2e0b757ea364341e715b0076dc559b54a Hash Page Sha256" Hash="E6E5B6C064338FBB222221EF3A8DEBE60E4ED0AAECCB5B03FECD0DC595AB3FC9" />
+    <Deny ID="ID_DENY_WINIO_65" FriendlyName="WinIO\9fc29480407e5179aa8ea41682409b4ea33f1a42026277613d6484e5419de374 Hash Sha1" Hash="651B953CB03928E41424AD59F21D4978D6F4952E" />
+    <Deny ID="ID_DENY_WINIO_66" FriendlyName="WinIO\9fc29480407e5179aa8ea41682409b4ea33f1a42026277613d6484e5419de374 Hash Sha256" Hash="EBBAA44277A3EC6E20AD3F6AEF5399FDC398306EB4C13AA96E45C9A281820A12" />
+    <Deny ID="ID_DENY_WINIO_67" FriendlyName="WinIO\9fc29480407e5179aa8ea41682409b4ea33f1a42026277613d6484e5419de374 Hash Page Sha1" Hash="3727D824713E733558A20DE9876AABF1059D3158" />
+    <Deny ID="ID_DENY_WINIO_68" FriendlyName="WinIO\9fc29480407e5179aa8ea41682409b4ea33f1a42026277613d6484e5419de374 Hash Page Sha256" Hash="88C83F618C8F4069DED87C409A8446C5A30E22A303E64AAFF1C5BE6302ADEDB4" />
+    <Deny ID="ID_DENY_WINIO_69" FriendlyName="WinIO\be929ae99015fafa0ab55cb475035e8c1359db1b61e00507defc1919a3538385 Hash Sha1" Hash="8522BD30B4028C43B747C96665F60AB920F341EA" />
+    <Deny ID="ID_DENY_WINIO_70" FriendlyName="WinIO\be929ae99015fafa0ab55cb475035e8c1359db1b61e00507defc1919a3538385 Hash Sha256" Hash="48EC0783D0A2AAF4956102479BA4DDFE9F760066D00E1C5B7F022A084951DC73" />
+    <Deny ID="ID_DENY_WINIO_71" FriendlyName="WinIO\be929ae99015fafa0ab55cb475035e8c1359db1b61e00507defc1919a3538385 Hash Page Sha1" Hash="9808DE8670677522E87FFEF1593D220E3619C7B9" />
+    <Deny ID="ID_DENY_WINIO_72" FriendlyName="WinIO\be929ae99015fafa0ab55cb475035e8c1359db1b61e00507defc1919a3538385 Hash Page Sha256" Hash="BC54AF722F57C3BD11EDAEDBF5979AA8D8A388A2D94E80E9E26311B61A11529A" />
+    <Deny ID="ID_DENY_WINIO_73" FriendlyName="WinIO\d6518cb6dc0cfdfefb9e2210e3de18867748a77153fa11bc7263cdbc58919815 Hash Sha1" Hash="660DC4007F3C667BA97736C3C9A5E038CB473EE0" />
+    <Deny ID="ID_DENY_WINIO_74" FriendlyName="WinIO\d6518cb6dc0cfdfefb9e2210e3de18867748a77153fa11bc7263cdbc58919815 Hash Sha256" Hash="669FF9649C66B4C61BD97EC4A83D6EBC8DA7736C039B2741D4E2D8310039977A" />
+    <Deny ID="ID_DENY_WINIO_75" FriendlyName="WinIO\d6518cb6dc0cfdfefb9e2210e3de18867748a77153fa11bc7263cdbc58919815 Hash Page Sha1" Hash="118777DD5E34BDCE01B2A0C6720A4EB9DC4FEFFF" />
+    <Deny ID="ID_DENY_WINIO_76" FriendlyName="WinIO\d6518cb6dc0cfdfefb9e2210e3de18867748a77153fa11bc7263cdbc58919815 Hash Page Sha256" Hash="E686804D2FF9ACEAD443A0B66DACD1780E4041A0ACAEDB3A78B91F52DCFF4824" />
+    <Deny ID="ID_DENY_WINIO_77" FriendlyName="WinIO\db4a5b87db97167c70e98014a12ac324866cf643cee65d3b3cda0b33add34d2f Hash Sha1" Hash="4AF05BCCDD9A1FFCF3DAF4DFE4A00FE6F1F257BE" />
+    <Deny ID="ID_DENY_WINIO_78" FriendlyName="WinIO\db4a5b87db97167c70e98014a12ac324866cf643cee65d3b3cda0b33add34d2f Hash Sha256" Hash="059EFDB03556258C34B6CB26FF4679DC7CD4CB797190FDDDF373B3F701EE55B7" />
+    <Deny ID="ID_DENY_WINIO_79" FriendlyName="WinIO\db4a5b87db97167c70e98014a12ac324866cf643cee65d3b3cda0b33add34d2f Hash Page Sha1" Hash="468B16FD87C346A1F5B11BDE450673F1D8866619" />
+    <Deny ID="ID_DENY_WINIO_80" FriendlyName="WinIO\db4a5b87db97167c70e98014a12ac324866cf643cee65d3b3cda0b33add34d2f Hash Page Sha256" Hash="186D287B669D813A727CBAAACDAA291FA1F16B1599122BA869622AE0C920F6B9" />
+    <Deny ID="ID_DENY_WINIO_81" FriendlyName="WinIO\f4acfebd83a351029dd812a0e40b44f5362f31ae80b6ae0b2fa2241687d34912 Hash Sha1" Hash="7B3DB7D11456209A266F077F8E2D2B90E4F9118D" />
+    <Deny ID="ID_DENY_WINIO_82" FriendlyName="WinIO\f4acfebd83a351029dd812a0e40b44f5362f31ae80b6ae0b2fa2241687d34912 Hash Sha256" Hash="2EBB1FE5DCEF9EC8629D56D30DDBA27D112C2CBFCED936D235FCDF078846DDC6" />
+    <Deny ID="ID_DENY_WINIO_83" FriendlyName="WinIO\f4acfebd83a351029dd812a0e40b44f5362f31ae80b6ae0b2fa2241687d34912 Hash Page Sha1" Hash="929749666A53B35CC75A21B19C65E54671CC751E" />
+    <Deny ID="ID_DENY_WINIO_84" FriendlyName="WinIO\f4acfebd83a351029dd812a0e40b44f5362f31ae80b6ae0b2fa2241687d34912 Hash Page Sha256" Hash="C39AB8DC5E4DA02FA2309B83FF4FDF63AEF20F33018DFDEFB7B0B12B92CFE86E" />
     <Deny ID="ID_DENY_WINRING0_SHA1" FriendlyName="WinRing0.sys Hash Sha1" Hash="12EB825418A932B1E4C6697DC7647E89AE52CF3F" />
     <Deny ID="ID_DENY_WINRING0_SHA256" FriendlyName="WinRing0.sys Hash Sha256" Hash="4582ADB2E67EEBAFF755AE740C1F24BC3AF78E0F28E8E8DECB99F86BF155AB23" />
     <Deny ID="ID_DENY_WINRING0_SHA1_PAGE" FriendlyName="WinRing0.sys Hash Page Sha1" Hash="497AFEB0D5B97D4B863704A2F77FFEF31220402D" />
@@ -1156,40 +1524,55 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_PCHUNTER_1" FriendlyName="PCHunter Driver" FileName="PCHunter.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_PCHUNTER_2" FriendlyName="PCHunter Driver" FileName="安全专用" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_PHYMEMX_64" FriendlyName="Phymemx64 Memory Mapping Driver" FileName="phymemx64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_ALSYSIO" FriendlyName="ALSysIO\01af9b2e49907308312be623a125a4cd71da9e626a54dfa746336e5d69c0a70a FileAttribute" FileName="ALSysIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.0.10.65535" />
     <FileAttrib ID="ID_FILEATTRIB_AMD_RYZEN" FriendlyName="amdryzenmaster.sys" FileName="AMDRyzenMasterDriver.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.5.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_AMDPP" FriendlyName="AMDPowerProfiler.sys FileAttribute" FileName="AMDPowerProfiler.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.1.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ASHITIO" FriendlyName="Asus AsHitIo_Drv FileAttribute" FileName="AsHitIo_Drv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="27.0.0.0"/>
     <FileAttrib ID="ID_FILEATTRIB_ASR_AUTOCHECK_1" FriendlyName="ASRAutoCheck\2aa1b08f47fbb1e2bd2e4a492f5d616968e703e1359a921f62b38b8e4662f0c4 FileAttribute" FileName="AsrAutoChkUpdDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_ASR_AUTOCHECK_2" FriendlyName="ASRAutoCheck\4ae42c1f11a98dee07a0d7199f611699511f1fb95120fabc4c3c349c485467fe FileAttribute" FileName="AsrAutoChkUpdDrv_1_0_32.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_ASWARPOT" FriendlyName="Avast aswArpot FileAttribute" FileName="aswArPot.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="21.4.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_ASWSP" FriendlyName="Avast aswSP.sys\1dccd1e13da17bd541a66b48d62e914df390818c15f5f599c636d42c05996ace FileAttribute" FileName="aswSP.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="20.8.0.0"/>
     <FileAttrib ID="ID_FILEATTRIB_ASWSNX" FriendlyName="Aswsnx FileAttribute" FileName="aswSnx.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="17.1.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_ATILLK" FriendlyName="atillk64 FileAttribute" FileName="atillk64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_ATLACCESS" FriendlyName="atlAccess\0b57569aaa0f4789d9642dd2189b0a82466b80ad32ff35f88127210ed105fe57 FileAttribute" FileName="atlAccess.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_ATSZIO" FriendlyName="ATSZIO.sys FileAttribute" FileName="ATSZIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_AVALUEIO" FriendlyName="Avalue Avalueio.sys\a5a4a3c3d3d5a79f3ed703fc56d45011c21f9913001fcbcc43a3f7572cff44ec FileAttribute" FileName="AVALUEIO.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_AVGELAM" FriendlyName="Avast aswElam/avgElam Overpermissive ELAM FileAttribute" FileName="aswElam.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="21.6.400.65535" />
     <FileAttrib ID="ID_FILEATTRIB_BS_DEF" FriendlyName="Bs_Def64 FileAttribute" FileName="Bs_Def64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_BS_DEF_64" FriendlyName="Bs_Def FileAttribute" FileName="Bs_Def.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_BS_HWMIO64" FriendlyName="" FileName="BS_HWMIO64_W10.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.1806.2200" />
     <FileAttrib ID="ID_FILEATTRIB_BS_I2CIO" FriendlyName="" FileName="BS_I2cIo.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.1.0.0" />
-    <FileAttrib ID="ID_FILEATTRIB_BS_RCIO" FriendlyName="BS_RCIO.sys FileAttribute" FileName="BS_RCIO64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.0.1" />
-    <FileAttrib ID="ID_FILEATTRIB_BS_RCIO_W10" FriendlyName="BS_RCIO\7c6f16af074c3f1c74fc69734f1c8b8a03b0594ac2085d5a0c582fc8cc378858 FileAttribute" FileName="BS_RCIO64_W10.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_BS_MEM" FriendlyName="BSMEM64_W10 FileAttribute" FileName="BSMEM64_W10.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.1806.2201" />
+    <FileAttrib ID="ID_FILEATTRIB_BS_RCIO" FriendlyName="BS_RCIO\d205286bffdf09bc033c09e95c519c1c267b40c2ee8bab703c6a2d86741ccd3e FileAttribute" FileName="BS_RCIO64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_BS_RCIO_W10" FriendlyName="BS_RCIO\7c6f16af074c3f1c74fc69734f1c8b8a03b0594ac2085d5a0c582fc8cc378858 FileAttribute" FileName="BS_RCIO64_W10.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_BSMI" FriendlyName="" FileName="BSMI.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.3" />
-    <FileAttrib ID="ID_FILEATTRIB_CPUZ_DRIVER" FriendlyName="" FileName="cpuz.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.4.3" />
+    <FileAttrib ID="ID_FILEATTRIB_CGWIN" FriendlyName="Sangoma cg6kwin2k.sys\223f61c3f443c5047d1aeb905b0551005a426f084b7a50384905e7e4ecb761a1 FileAttribute" FileName="cg6kwin2k.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
+    <FileAttrib ID="ID_FILEATTRIB_COMPUTERZ" FriendlyName="Chengdu Qiying ComputerZ.sys\07d0090c76155318e78a676e2f8af1500c20aaa1e84f047c674d5f990f5a09c8 FileAttribute" FileName="ComputerZ.Sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
+    <FileAttrib ID="ID_FILEATTRIB_CORSAIRLLACCESS" FriendlyName="CorsairLLAccess\000547560fea0dd4b477eb28bf781ea67bf83c748945ce8923f90fdd14eb7a4b FileAttribute" FileName="Corsair LL Access" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.23.65535" />
     <FileAttrib ID="ID_FILEATTRIB_CTIIO" FriendlyName="MicSys CtiIo\2121a2bb8ebbf2e6e82c782b6f3c6b7904f686aa495def25cf1cf52a42e16109 FileAttribute" FileName="CtiIo64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.1.23.0405" />
+    <FileAttrib ID="ID_FILEATTRIB_CP2X72C_1" FriendlyName="Interace CP2X72C.sys\05c15a75d183301382a082f6d76bf3ab4c520bf158abca4433d9881134461686 FileAttribute" FileName="CP2X72C.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
+    <FileAttrib ID="ID_FILEATTRIB_CP2X72C_2" FriendlyName="Interace CP2X72C.sys\11832c345e9898c4f74d3bf8f126cf84b4b1a66ad36135e15d103dbf2ac17359 FileAttribute" FileName="CP2X72C" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
+    <FileAttrib ID="ID_FILEATTRIB_CPUZ_DRIVER" FriendlyName="" FileName="cpuz.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.4.3" />
     <FileAttrib ID="ID_FILEATTRIB_DRIVER7" FriendlyName="Asus driver7.sys\1beb15c90dcf7a5234ed077833a0a3e900969b60be1d04fcebce0a9f8994bdbb FileAttribute" FileName="Driver7" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
+    <FileAttrib ID="ID_FILEATTRIB_ECSIODRV" FriendlyName="EliteGroup ECSioDriver\270547552060c6f4f5b2ebd57a636d5e71d5f8a9d4305c2b0fe5db0aa2f389cc FileAttribute" FileName="ECSIoDriver.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_EIO64" FriendlyName="ASUS EIO64.sys\1fac3fab8ea2137a7e81a26de121187bf72e7d16ffa3e9aec3886e2376d3c718 FileAttribute" FileName="EIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_EELAM" FriendlyName="ESET eelam Overpermissive ELAM FileAttribute" FileName="eelam.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.16.0" />
     <FileAttrib ID="ID_FILEATTRIB_ELBY_DRIVER" FriendlyName="" FileName="ElbyCDIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.0.3.2" />
+    <FileAttrib ID="ID_FILEATTRIB_ETDSUPPORT" FriendlyName="HP EtdSupport\0d383e469d0e27ebb713770f01f7f1a57068a7d30478221e6f2276125048d1c9 FileAttribute" FileName="etdsupp.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="20.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_FAIRPLAY" FriendlyName="Deny FairplayKD.sys MTA San Andreas Versions 367.*" ProductName="MTA San Andreas" MinimumFileVersion="367.0.0.0" MaximumFileVersion="367.65535.65535.65535"/>
+    <FileAttrib ID="ID_FILEATTRIB_FPCIE" FriendlyName="Feature Integration FPCIE2COM.sys\17942865680bd3d6e6633c90cc4bd692ae0951a8589dbe103c1e293b3067344d FileAttribute" FileName="FPCIE2COM.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_GMER" FriendlyName="GMEREK gmer64 FileAttribute" FileName="gmer64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-    <FileAttrib ID="ID_FILEATTRIB_HAXM" FriendlyName="haXM.sys FileAttribute" FileName="HaXM.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_HAXM" FriendlyName="haXM.sys FileAttribute" FileName="HaXM.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_HPPORTIOX64" FriendlyName="HpPortIox64.sys" FileName="HpPortIox64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.2.0.9" />
     <FileAttrib ID="ID_FILEATTRIB_HW" FriendlyName="hw_sys\4880f40f2e557cff38100620b9aa1a3a753cb693af16cd3d95841583edcb57a8 FileAttribute" FileName="HW.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="4.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_HWDETECTNG" FriendlyName="Hwdetectng\2f8b68de1e541093f2d4525a0d02f36d361cd69ee8b1db18e6dd064af3856f4f FileAttribute" FileName="hwdetectng.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_HWINFO_1" FriendlyName="REALiX_HWiNFO32 FileAttribute" FileName="HWiNFO32.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="8.98.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_HWINFO_2" FriendlyName="REALiX_HWiNFO64A FileAttribute" FileName="HWiNFO64A.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="8.98.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_HWINFO_3" FriendlyName="REALiX_HWiNFO64I FileAttribute" FileName="HWiNFO64I.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="8.98.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_HWRWDRV" FriendlyName="HwRwDrv FileAttribute" FileName="HwRwDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_IOBITUNLOCKER" FriendlyName="IObitUnlocker FileAttribute" FileName="IObitUnlocker.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.3.0.0" />
-    <FileAttrib ID="ID_FILEATTRIB_IQVW64" FriendlyName="IQVW64.sys FileAttribute" FileName="iQVW64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.4.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_IOMEM" FriendlyName="DT Research iomem\2b507e0ad4515d9d47fb7f0bfa1f1eb11de25db4fca49fc1417ea991dc33b6bf FileAttribute" FileName="iomem.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
+    <FileAttrib ID="ID_FILEATTRIB_IQVW64" FriendlyName="IQVW64.sys FileAttribute" FileName="iQVW64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.4.0.21" />
     <FileAttrib ID="ID_FILEATTRIB_KEVP64" FriendlyName="kevp64.sys FileAttribute" FileName="kEvP64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_LGCORETEMP" FriendlyName="LogiTech LgCoreTemp\93b266f38c3c3eaab475d81597abbd7cc07943035068bb6fd670dbbe15de0131 FileAttribute" FileName="LgCoreTemp.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_LHA" FriendlyName="LHA.sys FileAttribute" FileName="LHA.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
@@ -1197,14 +1580,17 @@ To check that the policy was successfully applied on your computer:
     <FileAttrib ID="ID_FILEATTRIB_LV_DIAG" FriendlyName="LenovoDiagnosticsDriver FileAttribute" FileName="LenovoDiagnosticsDriver.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.0.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_LV561V64" FriendlyName="LV561V64 LogiTech FileAttribute" FileName="Lv561av.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_MONITOR" FriendlyName="IOBit Monitor.sys FileAttribute" FileName="Monitor.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="15.0.0.2" />
-    <FileAttrib ID="ID_FILEATTRIB_MSIO" FriendlyName="MicSys MSIO\0f035948848432bc243704041739e49b528f35c82a5be922d9e3b8a4c44398ff FileAttribute" FileName="MsIo64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.3.23.0405" />
+    <FileAttrib ID="ID_FILEATTRIB_MSIO" FriendlyName="MicSys MSIO\0f035948848432bc243704041739e49b528f35c82a5be922d9e3b8a4c44398ff FileAttribute" FileName="MsIo64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_MSRHOOK" FriendlyName="IDTech MSRHook\87ece1b3b8446517dd9696a1b2c62f82a80220956618485efbdf5671f2676616 FileAttribute" FileName="Keyboard Filter Driver" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.1.0.0"/>
     <FileAttrib ID="ID_FILEATTRIB_MTCBSV64" FriendlyName="mtcBSv64.sys FileAttribute" FileName="mtcBSv64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="21.2.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_MYDRIVERS" FriendlyName="mydrivers.sys FileAttribute" FileName="mydrivers.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_NCHGBIOS2X64" FriendlyName="" FileName="NCHGBIOS2x64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="4.2.4.0" />
     <FileAttrib ID="ID_FILEATTRIB_NCPL_DRIVER" FriendlyName="" FileName="NCPL.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.11.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NGIODRIVER" FriendlyName="Avast ngiodriver\1072beb3ff6b191b3df1a339e3a8c87a8dc5eae727f2b993ea51b448e837636a FileAttribute" FileName="ngiodriver.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_NICM_DRIVER" FriendlyName="" FileName="NICM.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.11.0" />
     <FileAttrib ID="ID_FILEATTRIB_NSCM_DRIVER" FriendlyName="" FileName="nscm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.11.0" />
     <FileAttrib ID="ID_FILEATTRIB_NTIOLIB" FriendlyName="" FileName="NTIOLib.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NVOCLOCK" FriendlyName="Nvidia nvoclock\29f449fca0a41deccef5b0dccd22af18259222f69ed6389beafe8d5168c59e36 FileAttribute" FileName="nvoclock.sys" MinimumFileVersion="7.0.0.32" />
     <FileAttrib ID="ID_FILEATTRIB_NVFLASH" FriendlyName="Nvidia NVFlash FileAttribute" FileName="nvflash.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.9.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_OPENLIBSYS" FriendlyName="OpenLibSys\91314768da140999e682d2a290d48b78bb25a35525ea12c1b1f9634d14602b2c FileAttribute" FileName="OpenLibSys.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_PANIO_1" FriendlyName="PanIOx64\6b830ea0db6546a044c9900d3f335e7820c2a80e147b0751641899d1a5aa8f74 FileAttribute" FileName="PanIOx64.sys" MinimumFileVersion="1.0.0.1" />
@@ -1215,25 +1601,39 @@ To check that the policy was successfully applied on your computer:
     <FileAttrib ID="ID_FILEATTRIB_PHYMEM" FriendlyName="Phymem FileAttribute" FileName="phymem.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_PHYSMEM" FriendlyName="Physmem.sys FileAttribute" FileName="physmem.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_PROCEXP" FriendlyName="Sysinternals Process Explorer FileAttribute" FileName="procexp.Sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="16.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RADHWMGR" FriendlyName="NCR RadHwMgr\00c3e86952eebb113d91d118629077b3370ebc41eeacb419762d2de30a43c09c FileAttribute" FileName="RadHwMgr.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
+    <FileAttrib ID="ID_FILEATTRIB_RTIF" FriendlyName="TenAsys rtif.sys\0d133ced666c798ea63b6d8026ec507d429e834daa7c74e4e091e462e5815180 FileAttribute" FileName="rtif.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_RTKIO_DRIVER" FriendlyName="" FileName="rtkio.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_RTKIO64_DRIVER" FriendlyName="" FileName="rtkio64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-    <FileAttrib ID="ID_FILEATTRIB_RTKIOW10X64_DRIVER" FriendlyName="" FileName="rtkiow10x64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_RTKIOW8X64_DRIVER" FriendlyName="" FileName="rtkiow8x64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RTKIOW10X64_DRIVER" FriendlyName="" FileName="rtkiow10x64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RTPORT" FriendlyName="Realtek rtport\3c0a36990f7eef89b2d5f454b6452b6df1304609903f31f475502e4050241dd8 FileAttribute" FileName="rtport.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_RWDRV_DRIVER" FriendlyName="" FileName="RwDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_RZPNK" FriendlyName="Razer rzpnk.sys FileAttribute" FileName="Rzpnk.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-    <FileAttrib ID="ID_FILEATTRIB_SANDBOX" FriendlyName="Agnitum sandbox FileAttribute" FileName="sandbox.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_SANDBOX_1" FriendlyName="Agnitum sandbox FileAttribute" FileName="sandbox.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_SANDBOX_2" FriendlyName="Agnitum SandBox FileAttribute" FileName="SandBox.sys"  MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_SANDRA" FriendlyName="" FileName="SANDRA" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.12.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_SANDRA_DRIVER" FriendlyName="" FileName="sandra.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.12.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_SBIOS" FriendlyName="Samsung sbios\1e24c45ce2672ee403db34077c88e8b7d7797d113c6fd161906dce3784da627d FileAttribute" FileName="SBIOSIO64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_SEGWINDRVX64" FriendlyName="segwindrvx64.sys FileAttribute" FileName="segwindrvx64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="100.0.7.2" />
+    <FileAttrib ID="ID_FILEATTRIB_SFDRVX32" FriendlyName="sfdrvx32\0bd1523a68900b80ed1bccb967643525cca55d4ff4622d0128913690e6bb619e FileAttribute" FileName="sfdrvx32.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="4.43.4.0"/>
+    <FileAttrib ID="ID_FILEATTRIB_SMARTEIO" FriendlyName="EVGA smarteio.sys\3c95ebf3f1a87f67d2861dbd1c85dc26c118610af0c9fbf4180428e653ac3e50 FileAttribute" FileName="SMARTEIO64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
+    <FileAttrib ID="ID_FILEATTRIB_STDCDRV" FriendlyName="Intel Stdcdrv.sys\37022838c4327e2a5805e8479330d8ff6f8cd3495079905e867811906c98ea20 FileAttribute" FileName="stdcdrv64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_SUPERBMC" FriendlyName="Superbmc FileAttribute" FileName="superbmc.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.2.1.0" />
+    <FileAttrib ID="ID_FILEATTRIB_SYMELAM" FriendlyName="SymELAM\021badff5a3c84ee422d9fa40a842f89b1c60e0164eabd58da7374327ea99d3c FileAttribute" FileName="SymELAM.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.4.0.83" />
+    <FileAttrib ID="ID_FILEATTRIB_SYSDETECTOR" FriendlyName="SysInfoDetector.sys\083ff41609e2c0402f20cc00da1110a0cb80c515ca1c2f551606ecc94986cff9 FileAttribute" FileName="SysInfoDetector.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
+    <FileAttrib ID="ID_FILEATTRIB_SYSDRV3S" FriendlyName="SysDrv3s\0dd9daf0852a5b1b436199e9f2bf318f641f43173ab0dc22ad8c7e9cbaee9ad3 FileAttribute" FileName="SysDrv3S.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.6.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_TMEL" FriendlyName="TrendMicro TMEL Overpermissive ELAM FileAttribute" FileName="Tmel.sys" MinimumFileVersion="1.6.0.1002" MaximumFileVersion="1.6.0.1004" />
     <FileAttrib ID="ID_FILEATTRIB_TREND_MICRO" FriendlyName="TmComm.sys" FileName="TmComm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="8.0.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_VBOX" FriendlyName="VBoxDrv.sys FileAttribute" FileName="VBoxDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.0.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_TRUESIGHT" FriendlyName="Adlice Truesight.sys\3807e9a1bc159b9e8fc0c7caad10d7213ff8ed8ad1cea9ea552b093c81bf624b FileAttribute" FileName="Truesight" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.3.0.0"/>
+    <FileAttrib ID="ID_FILEATTRIB_VDBSV" FriendlyName="VdBSv64.sys\8dba0ab11ce9f9df5c8fb9fff18bbe9c8c654864053c8b0c4f175ec7203a2e51 FileAttribute" FileName="VdBSv64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_VIRAGT" FriendlyName="viragt.sys 32-bit" FileName="viragt.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.80.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_VIRAGT64" FriendlyName="viragt64.sys" FileName="viragt64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.11" />
     <FileAttrib ID="ID_FILEATTRIB_VMDRV" FriendlyName="vmdrv.sys FileAttribute" FileName="vmdrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10011.16384" />
     <FileAttrib ID="ID_FILEATTRIB_WCPU" FriendlyName="WCPU\159e7c5a12157af92e0d14a0d3ea116f91c09e21a9831486e6dc592c93c10980 FileAttribute" FileName="CPU Driver" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_WINRING0" FriendlyName="WinRing0.sys" FileName="WinRing0.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.0.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_WIRWADRV" FriendlyName="Winstron wirwadrv\d8fc8e3a1348393c5d7c3a84bcbae383d85a4721a751ad7afac5428e5e579b4e FileAttribute" FileName="WiRwaDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_WISEUNLO" FriendlyName="WiseUnlo FileAttribute" FileName="WiseUnlo.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_ZEMANA_1" FriendlyName="Zemana Antilog\05ece4f6bda72e7fd61fa950e80b811d3dbe0b4b1d53b0532d8df051d1ff074c FileAttribute" FileName="AntiLog32.sys" MinimumFileVersion="1.9.5.600" />
     <FileAttrib ID="ID_FILEATTRIB_ZEMANA_2" FriendlyName="Zemana Zam\40b62ba97ba2edd3e01ed62d26ae8c09f36144ab33db18b42e5f1ccf82db1754 FileAttribute" FileName="ZAM.exe" MinimumFileVersion="2.74.0.259" />
@@ -1245,22 +1645,34 @@ To check that the policy was successfully applied on your computer:
     <Signer ID="ID_SIGNER_VERISIGN_2010" Name="VeriSign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
       <FileAttribRef RuleID="ID_FILEATTRIB_AMDPP" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ASWSP" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ASR_AUTOCHECK_1" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ASR_AUTOCHECK_2" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ASWSNX" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ATSZIO" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_AVALUEIO" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CP2X72C_1" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CP2X72C_2" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_DRIVER7" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ETDSUPPORT" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_IOMEM" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_KEVP64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LHA" />
       <FileAttribRef RuleID="ID_FILEATTRIB_MONITOR" />
       <FileAttribRef RuleID="ID_FILEATTRIB_MTCBSV64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RADHWMGR" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RTIF" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO64_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RWDRV_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RZPNK" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SBIOS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SFDRVX32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SYSDETECTOR" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VDBSV" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZEMANA_1" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZEMANA_2" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZEMANA_3" />
@@ -1291,6 +1703,7 @@ To check that the policy was successfully applied on your computer:
     </Signer>
     <Signer ID="ID_SIGNER_DIGICERT_EV" Name="DigiCert EV Code Signing CA (SHA2)">
       <CertRoot Type="TBS" Value="EEC58131DC11CD7F512501B15FDBC6074C603B68CA91F7162D5A042054EDB0CF" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ASHITIO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_EIO64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_PCDOC" />
@@ -1310,11 +1723,14 @@ To check that the policy was successfully applied on your computer:
       <FileAttribRef RuleID="ID_FILEATTRIB_DRIVER7" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LIBNICM_DRIVER" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_NICM_DRIVER" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_NSCM_DRIVER" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NCHGBIOS2X64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NCPL_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NICM_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NSCM_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NVOCLOCK" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RTIF" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SFDRVX32" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZEMANA_1" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZEMANA_2" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZEMANA_3" />
@@ -1375,26 +1791,35 @@ To check that the policy was successfully applied on your computer:
       <FileAttribRef RuleID="ID_FILEATTRIB_AMD_RYZEN" />
       <FileAttribRef RuleID="ID_FILEATTRIB_AMDPP" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ASWSNX" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ASWSP" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ETDSUPPORT" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_FPCIE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HPPORTIOX64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_HWRWDRV" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_HPPORTIOX64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LV_DIAG" />
       <FileAttribRef RuleID="ID_FILEATTRIB_MTCBSV64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_PCDOC" />
       <FileAttribRef RuleID="ID_FILEATTRIB_PROCEXP" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO64_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_STDCDRV" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TRUESIGHT"/>
       <FileAttribRef RuleID="ID_FILEATTRIB_WINRING0" />
     </Signer>
     <Signer ID="ID_SIGNER_WINDOWS_3RD_PARTY_2014" Name="Microsoft Windows Third Party Component CA 2014">
       <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE" />
       <CertPublisher Value="Microsoft Windows Hardware Compatibility Publisher" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ALSYSIO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ASWSNX" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ASHITIO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_BS_HWMIO64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_BS_MEM" />
       <FileAttribRef RuleID="ID_FILEATTRIB_BS_RCIO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_BS_RCIO_W10" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CGWIN" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CORSAIRLLACCESS" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CTIIO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_HAXM" />
@@ -1410,9 +1835,12 @@ To check that the policy was successfully applied on your computer:
       <FileAttribRef RuleID="ID_FILEATTRIB_NSCM_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NVFLASH" />
       <FileAttribRef RuleID="ID_FILEATTRIB_PCDOC" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RADHWMGR" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIOW10X64_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RZPNK" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_STDCDRV" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SYSDRV3S" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VIRAGT" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VIRAGT64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VMDRV" />
@@ -1426,10 +1854,17 @@ To check that the policy was successfully applied on your computer:
     </Signer>
     <Signer ID="ID_SIGNER_VERISIGN_2004" Name="VeriSign Class 3 Code Signing 2004 CA">
       <CertRoot Type="TBS" Value="C7FC1727F5B75A6421A1F95C73BBDB23580C48E5" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ALSYSIO" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CP2X72C_1" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CP2X72C_2" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_MTCBSV64" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NVOCLOCK" />
       <FileAttribRef RuleID="ID_FILEATTRIB_PCDOC" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RTPORT" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SMARTEIO" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VDBSV" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZEMANA_1" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZEMANA_2" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZEMANA_3" />
@@ -1494,9 +1929,19 @@ To check that the policy was successfully applied on your computer:
       <CertRoot Type="TBS" Value="A08E79C386083D875014C409C13D144E0A24386132980DF11FF59737C8489EB1" />
       <FileAttribRef RuleID="ID_FILEATTRIB_AMD_RYZEN" />
       <FileAttribRef RuleID="ID_FILEATTRIB_AMDPP" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ASWSP" />      
+      <FileAttribRef RuleID="ID_FILEATTRIB_ATLACCESS" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LGCORETEMP" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RTIF" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RZPNK" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
+    </Signer>
+    <Signer ID="ID_SIGNER_SYMANTEC_CLASS_3_EV" Name="Symantec Class 3 Extended Validation Code Signing CA - G2">
+      <CertRoot Type="TBS" Value="B3C925B4048C3F7C444D248A2B101186B57CBA39596EB5DCE0E17A4EE4B32F19"/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_CP2X72C_1"/>    
+      <FileAttribRef RuleID="ID_FILEATTRIB_CP2X72C_2"/>    
+      <FileAttribRef RuleID="ID_FILEATTRIB_FPCIE"/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_WIRWADRV"/>    
     </Signer>
     <Signer ID="ID_SIGNER_VERISIGN_AMD" Name="VeriSign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
@@ -1551,6 +1996,7 @@ To check that the policy was successfully applied on your computer:
     <Signer ID="ID_SIGNER_COMODO_IQVW" Name="COMODO RSA Certification Authority">
       <CertRoot Type="TBS" Value="7CE102D63C57CB48F80A65D1A5E9B350A7A618482AA5A36775323CA933DDFCB00DEF83796A6340DEC5EBF7596CFD8E5D" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_STDCDRV" />
     </Signer>
     <Signer ID="ID_SIGNER_AMDPP" Name="USERTrust RSA Certification Authority">
       <CertRoot Type="TBS" Value="13BAA039635F1C5292A8C2F36AAE7E1D25C025202E9092F5B0F53F5F752DFA9C71B3D1B8D9A6358FCEE6EC75622FABF9" />
@@ -1560,22 +2006,26 @@ To check that the policy was successfully applied on your computer:
     <Signer ID="ID_SIGNER_AGNITUM_2004" Name="VeriSign Class 3 Code Signing 2004 CA">
       <CertRoot Type="TBS" Value="C7FC1727F5B75A6421A1F95C73BBDB23580C48E5" />
       <CertPublisher Value="Agnitum Ltd." />
-      <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX_1" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX_2" />
     </Signer>
     <Signer ID="ID_SIGNER_AGNITUM_2009" Name="VeriSign Class 3 Code Signing 2009-2 CA">
       <CertRoot Type="TBS" Value="4CDC38C800761463749C3CBD94A12F32E49877BF" />
       <CertPublisher Value="Agnitum Ltd." />
-      <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX_1" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX_2" />
     </Signer>
     <Signer ID="ID_SIGNER_AGNITUM_2010" Name="VeriSign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
       <CertPublisher Value="Agnitum Ltd." />
-      <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX_1" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX_2" />
     </Signer>
     <Signer ID="ID_SIGNER_AGNITUM_2010_1" Name="VeriSign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="4678C6E4A8787A8E6ED2BCE8792B122F6C08AFD8" />
       <CertPublisher Value="Agnitum Ltd." />
-      <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX_1" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX_2" />
     </Signer>
     <Signer ID="ID_SIGNER_PHYMEM" Name="VeriSign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
@@ -1740,11 +2190,13 @@ To check that the policy was successfully applied on your computer:
       <CertRoot Type="TBS" Value="E767799478F64A34B3F53FF3BB9057FE1768F4AB178041B0DCC0FF1E210CBA65" />
       <CertPublisher Value="Avast Software s.r.o." />
       <FileAttribRef RuleID="ID_FILEATTRIB_ASWARPOT" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ASWSP" />
     </Signer>
     <Signer ID="ID_SIGNER_ASWARPOT_5" Name="DigiCert High Assurance Code Signing CA-1">
       <CertRoot Type="TBS" Value="1D7E838ACCD498C2E5BA9373AF819EC097BB955C" />
       <CertPublisher Value="AVAST Software s.r.o." />
       <FileAttribRef RuleID="ID_FILEATTRIB_ASWARPOT" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ASWSP" />
     </Signer>
     <Signer ID="ID_SIGNER_ASWARPOT_6" Name="DigiCert SHA2 Assured ID Code Signing CA">
       <CertRoot Type="TBS" Value="E767799478F64A34B3F53FF3BB9057FE1768F4AB178041B0DCC0FF1E210CBA65" />
@@ -1774,12 +2226,15 @@ To check that the policy was successfully applied on your computer:
       <FileAttribRef RuleID="ID_FILEATTRIB_AVGELAM" />
       <FileAttribRef RuleID="ID_FILEATTRIB_EELAM" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TMEL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SYMELAM" />
     </Signer>
     <Signer ID="ID_SIGNER_MS_ELAM_1" Name="Microsoft Code Signing PCA 2010">
       <CertRoot Type="TBS" Value="121AF4B922A74247EA49DF50DE37609CC1451A1FE06B2CB7E1E079B492BD8195" />
       <FileAttribRef RuleID="ID_FILEATTRIB_AVGELAM" />
       <FileAttribRef RuleID="ID_FILEATTRIB_EELAM" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SYMELAM" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TMEL" />
+      
     </Signer>
     <Signer ID="ID_SIGNER_AVGELAM_1" Name="DigiCert High Assurance Code Signing CA-1">
       <CertRoot Type="TBS" Value="1D7E838ACCD498C2E5BA9373AF819EC097BB955C" />
@@ -1788,8 +2243,14 @@ To check that the policy was successfully applied on your computer:
     </Signer>
     <Signer ID="ID_SIGNER_AVGELAM_2" Name="DigiCert SHA2 Assured ID Code Signing CA">
       <CertRoot Type="TBS" Value="E767799478F64A34B3F53FF3BB9057FE1768F4AB178041B0DCC0FF1E210CBA65" />
+      <CertPublisher Value="AVAST Software s.r.o." />
       <FileAttribRef RuleID="ID_FILEATTRIB_AVGELAM" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ASWSNX" />
+    </Signer>
+    <Signer ID="ID_SIGNER_NGIODRIVER" Name="DigiCert High Assurance Code Signing CA-1">
+      <CertRoot Type="TBS" Value="1D7E838ACCD498C2E5BA9373AF819EC097BB955C"/>
+      <CertPublisher Value="AVAST Software a.s."/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_NGIODRIVER"/>
     </Signer>
     <Signer ID="ID_SIGNER_GMEREK" Name="GlobalSign CodeSigning CA - G2">
       <CertRoot Type="TBS" Value="589A7D4DF869395601BA7538A65AFAE8C4616385" />
@@ -1911,6 +2372,101 @@ To check that the policy was successfully applied on your computer:
       <CertPublisher Value="PC-Doctor, Inc." />
       <FileAttribRef RuleID="ID_FILEATTRIB_PCDOC" />
     </Signer>
+    <Signer ID="ID_SIGNER_SYSDRV3S" Name="GlobalSign 3S-Smart">
+      <CertRoot Type="TBS" Value="BD1765C56594221373893EF26D97F88C144FB0E5A0111215B45D7239C3444DF7" />
+      <CertPublisher Value="3S-Smart Software Solutions GmbH" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SYSDRV3S" />
+    </Signer>
+    <Signer ID="ID_SIGNER_PAVEL_Y_1" Name="DigiCert SHA2 Assured ID Code Signing CA">
+      <CertRoot Type="TBS" Value="E767799478F64A34B3F53FF3BB9057FE1768F4AB178041B0DCC0FF1E210CBA65" />
+      <CertPublisher Value="Pavel Yosifovich" />
+    </Signer>
+    <Signer ID="ID_SIGNER_PAVEL_Y_2" Name="DigiCert SHA2 High Assurance Code Signing CA">
+      <CertRoot Type="TBS" Value="0BF095B845B69928B5D7DFD1C42AE4F90FEB8DC97F7830598C93E848877021FB" />
+      <CertPublisher Value="Pavel Yosifovich" />
+    </Signer>
+    <Signer ID="ID_SIGNER_ALSYSIO_1" Name="COMODO RSA Code Signing CA">
+      <CertRoot Type="TBS" Value="4805A7E23D6C8FF5E149F197B744BCB2346E73F19A48835A2F64129183981109256B75EA371A331746D01FD4E135AB6E" />
+      <CertPublisher Value="ALCPU" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ALSYSIO" />
+    </Signer>
+    <Signer ID="ID_SIGNER_ALSYSIO_2" Name="UTN-USERFirst-Object">
+      <CertRoot Type="TBS" Value="C45627B5584BF62327DF60D6185744A2D2F2BCBF" />
+      <CertPublisher Value="ALCPU" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ALSYSIO" />
+    </Signer>
+    <Signer ID="ID_SIGNER_MICKS" Name="Microsoft Windows Third Party Component CA 2014">
+      <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE" />
+      <CertOemID Value="Micks Auto Transport" />
+    </Signer>
+    <Signer ID="ID_SIGNER_ETDSUPPORT" Name="DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1">
+      <CertRoot Type="TBS" Value="65B1D4076A89AE273F57E6EEEDECB3EAE129B4168F76FA7671914CDF461D542255C59D9B85B916AE0CA6FC0FCF7A8E64" />
+      <CertPublisher Value="HP Inc." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ETDSUPPORT" />
+    </Signer>
+    <Signer ID="ID_SIGNER_NVOCLOCK" Name="GeoTrust TrustCenter CodeSigning CA I">
+      <CertRoot Type="TBS" Value="172F39BCA3DDA7C6D5169C96B34A5FE7E96FF0BD" />
+      <CertPublisher Value="Micro-Star Int'l Co., Ltd." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NVOCLOCK" />
+    </Signer>
+    <Signer ID="ID_SIGNER_CPUZ_1" Name="DigiCert EV Code Signing CA">
+      <CertRoot Type="TBS" Value="2D54C16A8F8B69CCDEA48D0603C132F547A5CF75" />
+      <CertPublisher Value="CPUID S.A.R.L.U." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
+    </Signer>
+    <Signer ID="ID_SIGNER_CPUZ_2" Name="Certum Extended Validation Code Signing 2021 CA">
+      <CertRoot Type="TBS" Value="56F431D13FD6F7974905196A6367D252A955C5FE34DB1E48CFA3EB569707809D63DE4A0FF8FEF57BE69C23284D9144EA" />
+      <CertPublisher Value="CPUID" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
+    </Signer>
+    <Signer ID="ID_SIGNER_MSIO32" Name="DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1">
+      <CertRoot Type="TBS" Value="65B1D4076A89AE273F57E6EEEDECB3EAE129B4168F76FA7671914CDF461D542255C59D9B85B916AE0CA6FC0FCF7A8E64"/>
+      <CertPublisher Value="Creative Technology Innovation Co., Ltd."/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_MSIO"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_TRUESIGHT_1" Name="Sectigo Public Code Signing Root R46">
+      <CertRoot Type="TBS" Value="A229D2722BC6091D73B1D979B81088C977CB028A6F7CBF264BB81D5CC8F099F87D7C296E48BF09D7EBE275F5498661A4"/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_TRUESIGHT"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_TRUESIGHT_2" Name="DigiCert SHA2 High Assurance Code Signing CA">
+      <CertRoot Type="TBS" Value="0BF095B845B69928B5D7DFD1C42AE4F90FEB8DC97F7830598C93E848877021FB"/>
+      <CertPublisher Value="Adlice"/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_TRUESIGHT"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_HWDETECTNG" Name="GlobalSign Primary Object Publishing CA">
+      <CertRoot Type="TBS" Value="041750993D7C9E063F02DFE74699598640911AAB"/>
+      <CertPublisher Value="iNFERRE"/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_HWDETECTNG"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_RENTDRV" Name="Microsoft Windows Third Party Component CA 2014">
+      <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE"/>
+      <CertOemID Value="Hangzhou Shunwang Technology Co.,Ltd"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_MSRHOOK" Name="Microsoft Windows Third Party Component CA 2012">
+      <CertRoot Type="TBS" Value="CEC1AFD0E310C55C1DCC601AB8E172917706AA32FB5EAF826813547FDF02DD46"/>
+      <CertOemID Value="ID TECH"/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_MSRHOOK"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_SFDRVX32" Name="GlobalSign CodeSigning CA - G2">
+      <CertRoot Type="TBS" Value="589A7D4DF869395601BA7538A65AFAE8C4616385"/>
+      <CertPublisher Value="SOKNO S.R.L."/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_SFDRVX32"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_COMPUTERZ_1" Name="VeriSign Class 3 Code Signing 2009-2 CA">
+      <CertRoot Type="TBS" Value="4CDC38C800761463749C3CBD94A12F32E49877BF"/>
+      <CertPublisher Value="Chengdu Qiying Technology Co.,Ltd."/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_COMPUTERZ"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_COMPUTERZ_2" Name="VeriSign Class 3 Code Signing 2010 CA">
+      <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D"/>
+      <CertPublisher Value="Chengdu Qiying Technology Co.,Ltd."/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_COMPUTERZ"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_ECSIODRV" Name="GlobalSign Primary Object Publishing CA">
+      <CertRoot Type="TBS" Value="879269F3F467A6D59641960A62FE9CB419355FF6"/>
+      <CertPublisher Value="ELITEGROUP COMPUTER SYSTEMS CO"/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_ECSIODRV"/>
+    </Signer>
     <Signer ID="ID_SIGNER_BAOJI" Name="VeriSign Class 3 Code Signing 2010 CA - Baoji zhihengtaiye co.,ltd">
       <CertRoot Type="TBS" Value="ED37AD43BC52426943019F77F35ED1A6B063B5B7" />
     </Signer>
@@ -2013,6 +2569,8 @@ To check that the policy was successfully applied on your computer:
           <DeniedSigner SignerId="ID_SIGNER_AGNITUM_2009" />
           <DeniedSigner SignerId="ID_SIGNER_AGNITUM_2010" />
           <DeniedSigner SignerId="ID_SIGNER_AGNITUM_2010_1" />
+          <DeniedSigner SignerId="ID_SIGNER_ALSYSIO_1" />
+          <DeniedSigner SignerId="ID_SIGNER_ALSYSIO_2" />
           <DeniedSigner SignerId="ID_SIGNER_AMDPP" />
           <DeniedSigner SignerId="ID_SIGNER_ATILLK" />
           <DeniedSigner SignerId="ID_SIGNER_ASROCK_RWDRV" />
@@ -2033,10 +2591,16 @@ To check that the policy was successfully applied on your computer:
           <DeniedSigner SignerId="ID_SIGNER_BEIJING_VSK" />
           <DeniedSigner SignerId="ID_SIGNER_CAPCOM" />
           <DeniedSigner SignerId="ID_SIGNER_CHEAT_ENGINE" />
+          <DeniedSigner SignerId="ID_SIGNER_COMPUTERZ_1" />
+          <DeniedSigner SignerId="ID_SIGNER_COMPUTERZ_2" />
           <DeniedSigner SignerId="ID_SIGNER_COMODO_IQVW" />
+          <DeniedSigner SignerId="ID_SIGNER_CPUZ_1" />
+          <DeniedSigner SignerId="ID_SIGNER_CPUZ_2" />
           <DeniedSigner SignerId="ID_SIGNER_DIGICERT_EV" />
+          <DeniedSigner SignerId="ID_SIGNER_ECSIODRV" />
           <DeniedSigner SignerId="ID_SIGNER_ELBY" />
           <DeniedSigner SignerId="ID_SIGNER_ENE" />
+          <DeniedSigner SignerId="ID_SIGNER_ETDSUPPORT" />
           <DeniedSigner SignerId="ID_SIGNER_FAIRPLAY_1" />
           <DeniedSigner SignerId="ID_SIGNER_FAIRPLAY_2" />
           <DeniedSigner SignerId="ID_SIGNER_FAIRPLAY_3" />
@@ -2063,6 +2627,7 @@ To check that the policy was successfully applied on your computer:
           <DeniedSigner SignerId="ID_SIGNER_HW_B" />
           <DeniedSigner SignerId="ID_SIGNER_HW_C" />
           <DeniedSigner SignerId="ID_SIGNER_HW_D" />
+          <DeniedSigner SignerId="ID_SIGNER_HWDETECTNG" />
           <DeniedSigner SignerId="ID_SIGNER_HWINFO_1" />
           <DeniedSigner SignerId="ID_SIGNER_HWINFO_2" />
           <DeniedSigner SignerId="ID_SIGNER_HWINFO_3" />
@@ -2072,6 +2637,10 @@ To check that the policy was successfully applied on your computer:
           <DeniedSigner SignerId="ID_SIGNER_HWRWDRV_1" />
           <DeniedSigner SignerId="ID_SIGNER_HWRWDRV_2" />
           <DeniedSigner SignerId="ID_SIGNER_INTEL_IQVW" />
+          <DeniedSigner SignerId="ID_SIGNER_IOBITUNLOCKER_1" />
+          <DeniedSigner SignerId="ID_SIGNER_IOBITUNLOCKER_2" />
+          <DeniedSigner SignerId="ID_SIGNER_IOBITUNLOCKER_3" />
+          <DeniedSigner SignerId="ID_SIGNER_IOBITUNLOCKER_4" />
           <DeniedSigner SignerId="ID_SIGNER_JCOS_1" />
           <DeniedSigner SignerId="ID_SIGNER_JCOS_2" />
           <DeniedSigner SignerId="ID_SIGNER_JEROMIN_CODY_ERIC" />
@@ -2080,20 +2649,27 @@ To check that the policy was successfully applied on your computer:
           <DeniedSigner SignerId="ID_SIGNER_LV_LOGITECH" />
           <DeniedSigner SignerId="ID_SIGNER_MAN_MUS" />
           <DeniedSigner SignerId="ID_SIGNER_MB_RB_HACKS" />
+          <DeniedSigner SignerId="ID_SIGNER_MICKS" />
           <DeniedSigner SignerId="ID_SIGNER_MIMIKATZ_KERNEL" />
           <DeniedSigner SignerId="ID_SIGNER_MIMIKATZ_KERNEL_SHA2" />
           <DeniedSigner SignerId="ID_SIGNER_MIMIKATZ_USER" />
           <DeniedSigner SignerId="ID_SIGNER_MS_ELAM" />
           <DeniedSigner SignerId="ID_SIGNER_MS_ELAM_1" />
+          <DeniedSigner SignerId="ID_SIGNER_MSIO32" />
+          <DeniedSigner SignerId="ID_SIGNER_MSRHOOK" />
           <DeniedSigner SignerId="ID_SIGNER_MYDRIVERS_1" />
           <DeniedSigner SignerId="ID_SIGNER_MYDRIVERS_2" />
           <DeniedSigner SignerId="ID_SIGNER_MYDRIVERS_3" />
           <DeniedSigner SignerId="ID_SIGNER_NANJING" />
+          <DeniedSigner SignerId="ID_SIGNER_NGIODRIVER" />
           <DeniedSigner SignerId="ID_SIGNER_NVFLASH" />
           <DeniedSigner SignerId="ID_SIGNER_NVFLASH_2" />
           <DeniedSigner SignerId="ID_SIGNER_NVFLASH_3" />
+          <DeniedSigner SignerId="ID_SIGNER_NVOCLOCK" />
           <DeniedSigner SignerId="ID_SIGNER_OPENLIBSYS"/>
           <DeniedSigner SignerId="ID_SIGNER_PAN" />
+          <DeniedSigner SignerId="ID_SIGNER_PAVEL_Y_1" />
+          <DeniedSigner SignerId="ID_SIGNER_PAVEL_Y_2" />
           <DeniedSigner SignerId="ID_SIGNER_PHYSMEM" />
           <DeniedSigner SignerId="ID_SIGNER_PCDOC"/>
           <DeniedSigner SignerId="ID_SIGNER_PROCEXP_1" />
@@ -2102,16 +2678,22 @@ To check that the policy was successfully applied on your computer:
           <DeniedSigner SignerId="ID_SIGNER_PROCEXP_4" />
           <DeniedSigner SignerId="ID_SIGNER_PROCEXP_5" />
           <DeniedSigner SignerId="ID_SIGNER_REALTEK" />
+          <DeniedSigner SignerId="ID_SIGNER_RENTDRV" />
           <DeniedSigner SignerId="ID_SIGNER_RWEVERY" />
           <DeniedSigner SignerId="ID_SIGNER_SAASAME" />
           <DeniedSigner SignerId="ID_SIGNER_SANDRA" />
           <DeniedSigner SignerId="ID_SIGNER_SANDRA_THAWTE" />
           <DeniedSigner SignerId="ID_SIGNER_SPEEDFAN" />
+          <DeniedSigner SignerId="ID_SIGNER_SFDRVX32" />
+          <DeniedSigner SignerId="ID_SIGNER_SYSDRV3S" />
           <DeniedSigner SignerId="ID_SIGNER_PHYMEM" />
           <DeniedSigner SignerId="ID_SIGNER_PHYMEM_1" />
           <DeniedSigner SignerId="ID_SIGNER_PHYMEM_2" />
           <DeniedSigner SignerId="ID_SIGNER_SYMANTEC_CLASS_3" />
+          <DeniedSigner SignerId="ID_SIGNER_SYMANTEC_CLASS_3_EV" />
           <DeniedSigner SignerId="ID_SIGNER_TRUST_ASIA" />
+          <DeniedSigner SignerId="ID_SIGNER_TRUESIGHT_1" />
+          <DeniedSigner SignerId="ID_SIGNER_TRUESIGHT_2" />
           <DeniedSigner SignerId="ID_SIGNER_VBOX" />
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2004" />
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2004_BIOSTAR" />
@@ -2148,1055 +2730,1427 @@ To check that the policy was successfully applied on your computer:
           <DeniedSigner SignerId="ID_SIGNER_ZEMANA_3" />
         </DeniedSigners>
         <FileRulesRef>
-            <FileRuleRef RuleID="ID_ALLOW_ALL_1" />
-            <FileRuleRef RuleID="ID_DENY_AGENT64_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_AGENT64_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_AGENT64_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_AGENT64_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA1_1" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA256_1" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA1_PAGE_1" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA256_PAGE_1" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA1_2" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA256_2" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA1_PAGE_2" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA256_PAGE_2" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA1_1" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA256_1" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA1_PAGE_1" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA256_PAGE_1" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA1_2" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA256_2" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA1_PAGE_2" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA256_PAGE_2" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV10_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV10_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV10_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV10_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV101_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV101_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV101_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV101_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV102_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV102_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV102_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV102_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV103_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV103_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV103_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV103_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV104_5A" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV104_5B" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV104_5C" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV104_5D" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV104_5E" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV104_5F" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV104_60" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV104_61" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV104_62" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV104_63" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV104_64" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV104_65" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV104_66" />
-            <FileRuleRef RuleID="ID_DENY_ASRDRV104_67" />
-            <FileRuleRef RuleID="ID_DENY_ASRSETUPDRV103_39" />
-            <FileRuleRef RuleID="ID_DENY_ASRSETUPDRV103_3A" />
-            <FileRuleRef RuleID="ID_DENY_ASRSETUPDRV103_3B" />
-            <FileRuleRef RuleID="ID_DENY_ASRSETUPDRV103_3C" />
-            <FileRuleRef RuleID="ID_DENY_ASRSETUPDRV103_3D" />
-            <FileRuleRef RuleID="ID_DENY_ASRSETUPDRV103_3E" />
-            <FileRuleRef RuleID="ID_DENY_ASRSETUPDRV103_3F" />
-            <FileRuleRef RuleID="ID_DENY_ASRSETUPDRV103_40" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_2" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_3" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_4" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_5" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_6" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_7" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_8" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_9" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_A" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_B" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_C" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_D" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_E" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_F" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_10" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_11" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_12" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_13" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_14" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_15" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_16" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_17" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_18" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_19" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_1A" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_1B" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_1C" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_1D" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_1E" />
-            <FileRuleRef RuleID="ID_DENY_ATILLK_1F" />
-            <FileRuleRef RuleID="ID_DENY_BANDAI_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_BANDAI_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_BANDAI_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_BANDAI_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO64_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO64_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO64_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO64_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_2" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_3" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_4" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_5" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_6" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_7" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_8" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_9" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_A" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_B" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_C" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_D" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_E" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_F" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_10" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_11" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_12" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_13" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_14" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_15" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_16" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_17" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_18" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_19" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_1A" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_1B" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_1C" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_1D" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_1E" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_1F" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_20" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_21" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_22" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_23" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_24" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_25" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_26" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_27" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_28" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_29" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_2A" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_2B" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_2C" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_2D" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_2E" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_2F" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_30" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_31" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_32" />
-            <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_33" />
-            <FileRuleRef RuleID="ID_DENY_CAPCOM_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_CAPCOM_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_CAPCOM_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_CAPCOM_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_DBUTIL_32_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_DBUTIL_32_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_DBUTIL_32_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_DBUTIL_32_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_DBUTIL_64_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_DBUTIL_64_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_DBUTIL_64_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_DBUTIL_64_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_FIDDRV_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_FIDDRV_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_FIDDRV_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_FIDDRV_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_FIDDRV64_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_FIDDRV64_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_FIDDRV64_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_FIDDRV64_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_FIDPCIDRV_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_FIDPCIDRV_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_FIDPCIDRV_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_FIDPCIDRV_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_FIDPCIDRV64_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_FIDPCIDRV64_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_FIDPCIDRV64_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_FIDPCIDRV64_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_GLCKIO2_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_GLCKIO2_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_GLCKIO2_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_GLCKIO2_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_GMER_1" />
-            <FileRuleRef RuleID="ID_DENY_GMER_2" />
-            <FileRuleRef RuleID="ID_DENY_GMER_3" />
-            <FileRuleRef RuleID="ID_DENY_GMER_4" />
-            <FileRuleRef RuleID="ID_DENY_GMER_5" />
-            <FileRuleRef RuleID="ID_DENY_GMER_6" />
-            <FileRuleRef RuleID="ID_DENY_GVCIDRV64_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_GVCIDRV64_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_GVCIDRV64_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_GVCIDRV64_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_WINFLASH64_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_WINFLASH64_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_WINFLASH64_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_WINFLASH64_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_1" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_2" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_3" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_4" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_5" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_6" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_7" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_8" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_9" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_A" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_B" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_C" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_11" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_12" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_13" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_14" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_15" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_16" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_17" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_18" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_19" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_1A" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_1B" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_1C" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_1D" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_1E" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_1F" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_20" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_21" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_22" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_23" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_24" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_25" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_26" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_27" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_28" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_29" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_2A" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_2B" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_2C" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_2D" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_2E" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_2F" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_30" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_31" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_32" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_33" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_34" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_35" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_36" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_37" />
-            <FileRuleRef RuleID="ID_DENY_AMIFLDRV_38" />
-            <FileRuleRef RuleID="ID_DENY_ASIO_1"/>
-            <FileRuleRef RuleID="ID_DENY_ASIO_2"/>
-            <FileRuleRef RuleID="ID_DENY_ASIO_3"/>
-            <FileRuleRef RuleID="ID_DENY_ASIO_4"/>
-            <FileRuleRef RuleID="ID_DENY_ASIO_5"/>
-            <FileRuleRef RuleID="ID_DENY_ASIO_6"/>
-            <FileRuleRef RuleID="ID_DENY_ASUPIO64_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_ASUPIO64_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_ASUPIO64_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_ASUPIO64_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_22" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_23" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_24" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_25" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_26" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_27" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_28" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_29" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_2A" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_2B" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_2C" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_2D" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_2E" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_2F" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_30" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_31" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_32" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_33" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_34" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_35" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_36" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_37" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_38" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_39" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_3A" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_3B" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_3C" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_3D" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_3E" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_3F" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_40" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_41" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_42" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_43" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_44" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_45" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_46" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_47" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_48" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_49" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_4A" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_4B" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_4C" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_4D" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_4E" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_4F" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_50" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_51" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_52" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_53" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_54" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_55" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_56" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_57" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_58" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_59" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_5A" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_5B" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_5C" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_5D" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_5E" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_5F" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_60" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_61" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_62" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_63" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_64" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_65" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_66" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_67" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_68" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_69" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_6A" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_6B" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_6C" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_6D" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_6E" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_6F" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_70" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_71" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_72" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_73" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_74" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_75" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_76" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_77" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_78" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_79" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_7A" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_7B" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_7C" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_7D" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_7E" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_7F" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_80" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_81" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_82" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_83" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_84" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_85" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_86" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_87" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_88" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_89" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_8A" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_8B" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_8C" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_8D" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_8E" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_8F" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_90" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_91" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_92" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_93" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_94" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_95" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_96" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_97" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_98" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_99" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_9A" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_9B" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_9C" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_9D" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_9E" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_9F" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_A0" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_A1" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_A2" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_A3" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_A4" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_A5" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_A6" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_A7" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_A8" />
-            <FileRuleRef RuleID="ID_DENY_BEDAISY_A9" />
-            <FileRuleRef RuleID="ID_DENY_BSFLASH64_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_BSFLASH64_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_BSFLASH64_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_BSFLASH64_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA1_1" />
-            <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA256_1" />
-            <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA1_PAGE_1" />
-            <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA256_PAGE_1" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_08" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_09" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_10" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_11" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_12" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_13" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_14" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_15" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_16" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_17" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_18" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_19" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_1A" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_1B" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_1C" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_1D" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_1E" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_1F" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_20" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_21" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_22" />
-            <FileRuleRef RuleID="ID_DENY_BS_RCIO_23" />
-            <FileRuleRef RuleID="ID_DENY_DHKERNEL_1" />
-            <FileRuleRef RuleID="ID_DENY_DHKERNEL_2" />
-            <FileRuleRef RuleID="ID_DENY_DHKERNEL_3" />
-            <FileRuleRef RuleID="ID_DENY_DHKERNEL_4" />
-            <FileRuleRef RuleID="ID_DENY_DHKERNEL_5" />
-            <FileRuleRef RuleID="ID_DENY_DHKERNEL_6" />
-            <FileRuleRef RuleID="ID_DENY_DHKERNEL_8" />
-            <FileRuleRef RuleID="ID_DENY_DHKERNEL_9" />
-            <FileRuleRef RuleID="ID_DENY_DHKERNEL_10"/>
-            <FileRuleRef RuleID="ID_DENY_DHKERNEL_11" />
-            <FileRuleRef RuleID="ID_DENY_DHKERNEL_12" />
-            <FileRuleRef RuleID="ID_DENY_DHKERNEL_13" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_12" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_13" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_14" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_15" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_16" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_17" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_18" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_19" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_1A" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_1B" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_1C" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_1D" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_1E" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_1F" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_20" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_21" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_22" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_23" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_24" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_25" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_26" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_27" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_28" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_29" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_2A" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_2B" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_2C" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_2D" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_2E" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_2F" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_30" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_31" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_32" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_33" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_34" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_35" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_36" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_37" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_38" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_39" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_3A" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_3B" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_42" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_43" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_44" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_45" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_46" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_47" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_48" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_49" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_4A" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_4B" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_4C" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_4D" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_4E" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_4F" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_50" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_51" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_52" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_53" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_54" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_55" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_56" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_57" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_58" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_59" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_5A" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_5B" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_5C" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_5D" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_5E" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_5F" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_60" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_61" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_62" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_63" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_64" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_65" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_66" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_67" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_68" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_69" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_6A" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_6B" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_6C" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_6D" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_6E" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_6F" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_70" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_71" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_72" />
-            <FileRuleRef RuleID="ID_DENY_DIRECTIO_73" />
-            <FileRuleRef RuleID="ID_DENY_EIO64_1" />
-            <FileRuleRef RuleID="ID_DENY_EIO64_2" />
-            <FileRuleRef RuleID="ID_DENY_EIO64_3" />
-            <FileRuleRef RuleID="ID_DENY_EIO64_4" />
-            <FileRuleRef RuleID="ID_DENY_EIO64_5" />
-            <FileRuleRef RuleID="ID_DENY_EIO64_6" />
-            <FileRuleRef RuleID="ID_DENY_EIO64_7" />
-            <FileRuleRef RuleID="ID_DENY_EIO64_8" />
-            <FileRuleRef RuleID="ID_DENY_HW_22" />
-            <FileRuleRef RuleID="ID_DENY_HW_23" />
-            <FileRuleRef RuleID="ID_DENY_HW_24" />
-            <FileRuleRef RuleID="ID_DENY_HW_25" />
-            <FileRuleRef RuleID="ID_DENY_HWRWDRV_2" />
-            <FileRuleRef RuleID="ID_DENY_HWRWDRV_3" />
-            <FileRuleRef RuleID="ID_DENY_HWRWDRV_4" />
-            <FileRuleRef RuleID="ID_DENY_HWRWDRV_5" />
-            <FileRuleRef RuleID="ID_DENY_HWRWDRV_6" />
-            <FileRuleRef RuleID="ID_DENY_HWRWDRV_7" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_11" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_12" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_13" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_14" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_15" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_16" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_17" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_18" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_19" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_1A" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_1B" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_1C" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_1D" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_1E" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_1F" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_20" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_21" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_22" />
-            <FileRuleRef RuleID="ID_DENY_INPOUTX_23" />
-            <FileRuleRef RuleID="ID_DENY_KLMD" />
-            <FileRuleRef RuleID="ID_DENY_LGCORETEMP_1" />
-            <FileRuleRef RuleID="ID_DENY_LGCORETEMP_2" />
-            <FileRuleRef RuleID="ID_DENY_LGCORETEMP_3" />
-            <FileRuleRef RuleID="ID_DENY_LGCORETEMP_4" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_1" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_2" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_3" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_4" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_5" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_6" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_7" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_8" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_9" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_A" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_B" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_C" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_D" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_E" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_F" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_10" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_11" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_12" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_13" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_14" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_15" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_16" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_17" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_18" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_19" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_1A" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_1B" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT2_1C" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_11" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_12" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_13" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_14" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_15" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_16" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_17" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_18" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_19" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_1A" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_1B" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_1C" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_1D" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_1E" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_1F" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_20" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_21" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROT3_22" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTECT_1" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTECT_2" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTECT_3" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTECT_4" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTECT_5" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTECT_6" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTECT_7" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTECT_8" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTNAP_1" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTNAP_2" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTNAP_3" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTNAP_4" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTRG_1" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTRG_2" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTRG_3" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTRG_4" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTRG_5" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTRG_6" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTRG_7" />
-            <FileRuleRef RuleID="ID_DENY_MHYPROTRG_8" />
-            <FileRuleRef RuleID="ID_DENY_MSIO_1" />
-            <FileRuleRef RuleID="ID_DENY_MSIO_2" />
-            <FileRuleRef RuleID="ID_DENY_MSIO_3" />
-            <FileRuleRef RuleID="ID_DENY_MSIO_4" />
-            <FileRuleRef RuleID="ID_DENY_MSIO_5" />
-            <FileRuleRef RuleID="ID_DENY_MSIO_6" />
-            <FileRuleRef RuleID="ID_DENY_MSIO_7" />
-            <FileRuleRef RuleID="ID_DENY_MSIO_8" />
-            <FileRuleRef RuleID="ID_DENY_MSIO_9" />
-            <FileRuleRef RuleID="ID_DENY_MSIO_10" />
-            <FileRuleRef RuleID="ID_DENY_MSIO_11" />
-            <FileRuleRef RuleID="ID_DENY_MSIO_12" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_1" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_2" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_3" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_4" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_5" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_6" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_7" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_8" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_9" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_A" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_B" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_C" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_D" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_E" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_F" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_10" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_11" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_12" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_13" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_14" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_15" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_16" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_17" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_18" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_19" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_1A" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_1B" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_1C" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_1D" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_1E" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_1F" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_20" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_21" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_22" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_23" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_24" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_25" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_26" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_27" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_28" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_29" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_2A" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_2B" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_2C" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_2D" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_2E" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_2F" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_30" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_31" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_32" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_33" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_34" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_35" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_36" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_37" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_38" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_39" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_3A" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_3B" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_3C" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_3D" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_3E" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_3F" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_40" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_41" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_42" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_43" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_44" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_45" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_46" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_47" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_48" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_49" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_4A" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_4B" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_4C" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_4D" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_4E" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_4F" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_50" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_51" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_52" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_53" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_54" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_55" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_56" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_57" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_58" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_59" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_5A" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_5B" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_5C" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_5D" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_5E" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_5F" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_60" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_61" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_62" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_63" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_64" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_65" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_66" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_67" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_68" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_69" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_6A" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_6B" />
-            <FileRuleRef RuleID="ID_DENY_NVFLASH_6C" />
-            <FileRuleRef RuleID="ID_DENY_OTIPCIBUS_1" />
-            <FileRuleRef RuleID="ID_DENY_OTIPCIBUS_2" />
-            <FileRuleRef RuleID="ID_DENY_OTIPCIBUS_3" />
-            <FileRuleRef RuleID="ID_DENY_OTIPCIBUS_4" />
-            <FileRuleRef RuleID="ID_DENY_PCHUNTER_3" />
-            <FileRuleRef RuleID="ID_DENY_PCHUNTER_4" />
-            <FileRuleRef RuleID="ID_DENY_PCHUNTER_5" />
-            <FileRuleRef RuleID="ID_DENY_PCHUNTER_6" />
-            <FileRuleRef RuleID="ID_DENY_PIDDRV_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_PIDDRV_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_PIDDRV_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_PIDDRV_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_PIDDRV64_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_PIDDRV64_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_PIDDRV64_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_PIDDRV64_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_PHYDMACC_1" />
-            <FileRuleRef RuleID="ID_DENY_PHYDMACC_2" />
-            <FileRuleRef RuleID="ID_DENY_PHYDMACC_3" />
-            <FileRuleRef RuleID="ID_DENY_PHYDMACC_4" />
-            <FileRuleRef RuleID="ID_DENY_PHYDMACC_5" />
-            <FileRuleRef RuleID="ID_DENY_PHYDMACC_6" />
-            <FileRuleRef RuleID="ID_DENY_PHYMEMX64_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_PHYMEMX64_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_PHYMEMX64_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_PHYMEMX64_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_WINRING0_SHA1" />
-            <FileRuleRef RuleID="ID_DENY_WINRING0_SHA256" />
-            <FileRuleRef RuleID="ID_DENY_WINRING0_SHA1_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_WINRING0_SHA256_PAGE" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_1" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_2" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_3" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_4" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_5" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_6" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_7" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_8" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_9" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_10" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_11" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_12" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_13" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_14" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_15" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_16" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_17" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_18" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_19" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_20" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_21" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_22" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_23" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_24" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_25" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_26" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_27" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_28" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_29" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_30" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_31" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_32" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_33" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_34" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_35" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_36" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_37" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_38" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_39" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_40" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_41" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_42" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_43" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_44" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_45" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_46" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_47" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_48" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_49" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_50" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_51" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_52" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_53" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_54" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_55" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_56" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_57" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_58" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_59" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_60" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_61" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_62" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_63" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_64" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_65" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_66" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_67" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_68" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_69" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_70" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_71" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_72" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_1" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_2" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_3" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_4" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_5" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_6" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_7" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_8" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_9" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_10" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_11" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_12" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_13" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_14" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_15" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_16" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_17" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_18" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_19" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_20" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_21" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_22" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_23" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_24" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_25" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_26" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_27" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_28" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_29" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_30" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_31" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_32" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_33" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_34" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_35" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_36" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_37" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_38" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_39" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_40" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_41" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_42" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_43" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_44" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_45" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_46" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_47" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_48" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_49" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_50" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_51" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_52" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_53" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_54" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_55" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_56" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_57" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_58" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_59" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_60" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_61" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_62" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_63" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_64" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_65" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_66" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_67" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_68" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_69" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_70" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_71" />
-            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_72" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_29" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_2A" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_2B" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_2C" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_2D" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_2E" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_2F" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_30" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_31" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_32" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_33" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_34" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_35" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_36" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_37" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_38" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_39" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_3A" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_3B" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_3C" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_3D" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_3E" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_3F" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_40" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_41" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_42" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_43" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_44" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_45" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_46" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_47" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_48" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_2" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_3" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_4" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_5" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_6" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_7" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_8" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_9" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_A" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_B" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_C" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_D" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_E" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_F" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_10" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_11" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_12" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_13" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_14" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_15" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_16" />
-            <FileRuleRef RuleID="ID_DENY_SUPERBMC_17" />
-            <FileRuleRef RuleID="ID_DENY_SYSINFO_1" />
-            <FileRuleRef RuleID="ID_DENY_SYSINFO_2" />
-            <FileRuleRef RuleID="ID_DENY_SYSINFO_3" />
-            <FileRuleRef RuleID="ID_DENY_SYSINFO_4" />
-            <FileRuleRef RuleID="ID_DENY_SYSINFO_5" />
-            <FileRuleRef RuleID="ID_DENY_SYSINFO_6" />
-            <FileRuleRef RuleID="ID_DENY_SYSINFO_7" />
-            <FileRuleRef RuleID="ID_DENY_SYSINFO_8" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_1" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_2" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_3" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_4" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_5" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_6" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_7" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_8" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_9" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_10" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_11" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_12" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_13" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_14" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_15" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_16" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_17" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_18" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_19" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_20" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_21" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_22" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_23" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_24" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_25" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_26" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_27" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_28" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_29" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_30" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_31" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_32" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_33" />
-            <FileRuleRef RuleID="ID_DENY_WINIO_34" />
-            <FileRuleRef RuleID="ID_DENY_PROCESSHACKER" />
-            <FileRuleRef RuleID="ID_DENY_AMP" />
-            <FileRuleRef RuleID="ID_DENY_ASMMAP" />
-            <FileRuleRef RuleID="ID_DENY_ASMMAP_64" />
-            <FileRuleRef RuleID="ID_DENY_DBK_32" />
-            <FileRuleRef RuleID="ID_DENY_DBK_64" />
-            <FileRuleRef RuleID="ID_DENY_GDRV" />
-            <FileRuleRef RuleID="ID_DENY_PCHUNTER_1" />
-            <FileRuleRef RuleID="ID_DENY_PCHUNTER_2" />
-            <FileRuleRef RuleID="ID_DENY_PHYMEMX_64" />
+          <FileRuleRef RuleID="ID_ALLOW_ALL_1" />
+          <FileRuleRef RuleID="ID_DENY_AGENT64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_AGENT64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_AGENT64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_AGENT64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA1_1" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA256_1" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA1_PAGE_1" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA256_PAGE_1" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA1_2" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA256_2" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA1_PAGE_2" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA256_PAGE_2" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA1_1" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA256_1" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA1_PAGE_1" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA256_PAGE_1" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA1_2" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA256_2" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA1_PAGE_2" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_64_SHA256_PAGE_2" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV10_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV10_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV10_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV10_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV101_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV101_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV101_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV101_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV102_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV102_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV102_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV102_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV103_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV103_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV103_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV103_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV104_5A" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV104_5B" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV104_5C" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV104_5D" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV104_5E" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV104_5F" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV104_60" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV104_61" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV104_62" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV104_63" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV104_64" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV104_65" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV104_66" />
+          <FileRuleRef RuleID="ID_DENY_ASRDRV104_67" />
+          <FileRuleRef RuleID="ID_DENY_ASRSETUPDRV103_39" />
+          <FileRuleRef RuleID="ID_DENY_ASRSETUPDRV103_3A" />
+          <FileRuleRef RuleID="ID_DENY_ASRSETUPDRV103_3B" />
+          <FileRuleRef RuleID="ID_DENY_ASRSETUPDRV103_3C" />
+          <FileRuleRef RuleID="ID_DENY_ASRSETUPDRV103_3D" />
+          <FileRuleRef RuleID="ID_DENY_ASRSETUPDRV103_3E" />
+          <FileRuleRef RuleID="ID_DENY_ASRSETUPDRV103_3F" />
+          <FileRuleRef RuleID="ID_DENY_ASRSETUPDRV103_40" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_2" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_3" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_4" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_5" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_6" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_7" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_8" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_9" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_A" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_B" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_C" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_D" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_E" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_F" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_10" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_11" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_12" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_13" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_14" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_15" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_16" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_17" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_18" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_19" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_1A" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_1B" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_1C" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_1D" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_1E" />
+          <FileRuleRef RuleID="ID_DENY_ATILLK_1F" />
+          <FileRuleRef RuleID="ID_DENY_BANDAI_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_BANDAI_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_BANDAI_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_BANDAI_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_2" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_3" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_4" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_5" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_6" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_7" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_8" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_9" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_A" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_B" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_C" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_D" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_E" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_F" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_10" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_11" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_12" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_13" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_14" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_15" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_16" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_17" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_18" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_19" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_1A" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_1B" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_1C" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_1D" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_1E" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_1F" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_20" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_21" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_22" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_23" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_24" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_25" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_26" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_27" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_28" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_29" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_2A" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_2B" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_2C" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_2D" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_2E" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_2F" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_30" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_31" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_32" />
+          <FileRuleRef RuleID="ID_DENY_IOBITUNLOCKER_33" />
+          <FileRuleRef RuleID="ID_DENY_CAPCOM_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_CAPCOM_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_CAPCOM_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_CAPCOM_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_DBUTIL_32_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_DBUTIL_32_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_DBUTIL_32_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_DBUTIL_32_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_DBUTIL_64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_DBUTIL_64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_DBUTIL_64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_DBUTIL_64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_FIDDRV_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_FIDDRV_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_FIDDRV_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_FIDDRV_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_FIDDRV64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_FIDDRV64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_FIDDRV64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_FIDDRV64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_FIDPCIDRV_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_FIDPCIDRV_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_FIDPCIDRV_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_FIDPCIDRV_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_FIDPCIDRV64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_FIDPCIDRV64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_FIDPCIDRV64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_FIDPCIDRV64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_GLCKIO2_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_GLCKIO2_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_GLCKIO2_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_GLCKIO2_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_GMER_1" />
+          <FileRuleRef RuleID="ID_DENY_GMER_2" />
+          <FileRuleRef RuleID="ID_DENY_GMER_3" />
+          <FileRuleRef RuleID="ID_DENY_GMER_4" />
+          <FileRuleRef RuleID="ID_DENY_GMER_5" />
+          <FileRuleRef RuleID="ID_DENY_GMER_6" />
+          <FileRuleRef RuleID="ID_DENY_GVCIDRV64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_GVCIDRV64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_GVCIDRV64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_GVCIDRV64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_WINFLASH64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_WINFLASH64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_WINFLASH64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_WINFLASH64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_1" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_2" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_3" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_4" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_5" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_6" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_7" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_8" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_9" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_A" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_B" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_C" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_11" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_12" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_13" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_14" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_15" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_16" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_17" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_18" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_19" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_1A" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_1B" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_1C" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_1D" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_1E" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_1F" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_20" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_21" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_22" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_23" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_24" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_25" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_26" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_27" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_28" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_29" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_2A" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_2B" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_2C" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_2D" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_2E" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_2F" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_30" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_31" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_32" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_33" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_34" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_35" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_36" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_37" />
+          <FileRuleRef RuleID="ID_DENY_AMIFLDRV_38" />
+          <FileRuleRef RuleID="ID_DENY_ASIO_1"/>
+          <FileRuleRef RuleID="ID_DENY_ASIO_2"/>
+          <FileRuleRef RuleID="ID_DENY_ASIO_3"/>
+          <FileRuleRef RuleID="ID_DENY_ASIO_4"/>
+          <FileRuleRef RuleID="ID_DENY_ASIO_5"/>
+          <FileRuleRef RuleID="ID_DENY_ASIO_6"/>
+          <FileRuleRef RuleID="ID_DENY_ASUPIO64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_ASUPIO64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_ASUPIO64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_ASUPIO64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_22" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_23" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_24" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_25" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_26" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_27" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_28" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_29" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_2A" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_2B" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_2C" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_2D" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_2E" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_2F" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_30" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_31" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_32" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_33" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_34" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_35" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_36" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_37" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_38" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_39" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_3A" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_3B" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_3C" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_3D" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_3E" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_3F" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_40" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_41" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_42" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_43" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_44" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_45" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_46" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_47" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_48" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_49" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_4A" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_4B" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_4C" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_4D" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_4E" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_4F" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_50" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_51" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_52" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_53" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_54" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_55" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_56" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_57" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_58" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_59" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_5A" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_5B" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_5C" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_5D" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_5E" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_5F" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_60" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_61" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_62" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_63" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_64" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_65" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_66" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_67" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_68" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_69" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_6A" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_6B" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_6C" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_6D" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_6E" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_6F" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_70" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_71" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_72" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_73" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_74" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_75" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_76" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_77" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_78" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_79" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_7A" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_7B" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_7C" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_7D" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_7E" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_7F" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_80" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_81" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_82" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_83" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_84" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_85" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_86" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_87" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_88" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_89" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_8A" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_8B" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_8C" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_8D" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_8E" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_8F" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_90" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_91" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_92" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_93" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_94" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_95" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_96" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_97" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_98" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_99" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_9A" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_9B" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_9C" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_9D" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_9E" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_9F" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_A0" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_A1" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_A2" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_A3" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_A4" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_A5" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_A6" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_A7" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_A8" />
+          <FileRuleRef RuleID="ID_DENY_BEDAISY_A9" />
+          <FileRuleRef RuleID="ID_DENY_BSFLASH64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_BSFLASH64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_BSFLASH64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_BSFLASH64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA1_1" />
+          <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA256_1" />
+          <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA1_PAGE_1" />
+          <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA256_PAGE_1" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_08" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_09" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_10" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_11" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_12" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_13" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_14" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_15" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_16" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_17" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_18" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_19" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_1A" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_1B" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_1C" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_1D" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_1E" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_1F" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_20" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_21" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_22" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO_23" />
+          <FileRuleRef RuleID="ID_DENY_DHKERNEL_1" />
+          <FileRuleRef RuleID="ID_DENY_DHKERNEL_2" />
+          <FileRuleRef RuleID="ID_DENY_DHKERNEL_3" />
+          <FileRuleRef RuleID="ID_DENY_DHKERNEL_4" />
+          <FileRuleRef RuleID="ID_DENY_DHKERNEL_5" />
+          <FileRuleRef RuleID="ID_DENY_DHKERNEL_6" />
+          <FileRuleRef RuleID="ID_DENY_DHKERNEL_8" />
+          <FileRuleRef RuleID="ID_DENY_DHKERNEL_9" />
+          <FileRuleRef RuleID="ID_DENY_DHKERNEL_10"/>
+          <FileRuleRef RuleID="ID_DENY_DHKERNEL_11" />
+          <FileRuleRef RuleID="ID_DENY_DHKERNEL_12" />
+          <FileRuleRef RuleID="ID_DENY_DHKERNEL_13" />
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_1" />
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_2" />
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_3" />
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_4" />
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_5" />
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_6" />
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_7" />
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_8" />
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_9" />
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_10"/>
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_11"/>
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_12"/>
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_13"/>
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_14"/>
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_15"/>
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_16"/>
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_17"/>
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_18"/>
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_19"/>
+          <FileRuleRef RuleID="ID_DENY_DELLBIOS_20"/>
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_12" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_13" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_14" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_15" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_16" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_17" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_18" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_19" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_1A" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_1B" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_1C" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_1D" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_1E" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_1F" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_20" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_21" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_22" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_23" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_24" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_25" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_26" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_27" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_28" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_29" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_2A" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_2B" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_2C" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_2D" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_2E" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_2F" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_30" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_31" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_32" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_33" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_34" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_35" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_36" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_37" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_38" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_39" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_3A" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_3B" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_42" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_43" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_44" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_45" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_46" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_47" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_48" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_49" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_4A" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_4B" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_4C" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_4D" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_4E" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_4F" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_50" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_51" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_52" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_53" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_54" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_55" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_56" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_57" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_58" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_59" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_5A" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_5B" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_5C" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_5D" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_5E" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_5F" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_60" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_61" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_62" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_63" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_64" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_65" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_66" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_67" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_68" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_69" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_6A" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_6B" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_6C" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_6D" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_6E" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_6F" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_70" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_71" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_72" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_73" />
+          <FileRuleRef RuleID="ID_DENY_ECHO_1" />
+          <FileRuleRef RuleID="ID_DENY_ECHO_2" />
+          <FileRuleRef RuleID="ID_DENY_ECHO_3" />
+          <FileRuleRef RuleID="ID_DENY_ECHO_4" />
+          <FileRuleRef RuleID="ID_DENY_ECHO_5" />
+          <FileRuleRef RuleID="ID_DENY_ECHO_6" />
+          <FileRuleRef RuleID="ID_DENY_ECHO_7" />
+          <FileRuleRef RuleID="ID_DENY_ECHO_8" />
+          <FileRuleRef RuleID="ID_DENY_ECHO_9" />
+          <FileRuleRef RuleID="ID_DENY_ECHO_A" />
+          <FileRuleRef RuleID="ID_DENY_ECHO_B" />
+          <FileRuleRef RuleID="ID_DENY_ECHO_C" />
+          <FileRuleRef RuleID="ID_DENY_ECSIODRV_1" />
+          <FileRuleRef RuleID="ID_DENY_ECSIODRV_2" />
+          <FileRuleRef RuleID="ID_DENY_ECSIODRV_3" />
+          <FileRuleRef RuleID="ID_DENY_ECSIODRV_4" />
+          <FileRuleRef RuleID="ID_DENY_EIO64_1" />
+          <FileRuleRef RuleID="ID_DENY_EIO64_2" />
+          <FileRuleRef RuleID="ID_DENY_EIO64_3" />
+          <FileRuleRef RuleID="ID_DENY_EIO64_4" />
+          <FileRuleRef RuleID="ID_DENY_EIO64_5" />
+          <FileRuleRef RuleID="ID_DENY_EIO64_6" />
+          <FileRuleRef RuleID="ID_DENY_EIO64_7" />
+          <FileRuleRef RuleID="ID_DENY_EIO64_8" />
+          <FileRuleRef RuleID="ID_DENY_FH_ETHER_1" />
+          <FileRuleRef RuleID="ID_DENY_FH_ETHER_2" />  
+          <FileRuleRef RuleID="ID_DENY_GEDEVDRV_1" />
+          <FileRuleRef RuleID="ID_DENY_GEDEVDRV_2" />
+          <FileRuleRef RuleID="ID_DENY_GEDEVDRV_3" />
+          <FileRuleRef RuleID="ID_DENY_GEDEVDRV_4" />
+          <FileRuleRef RuleID="ID_DENY_GEDEVDRV_5" />
+          <FileRuleRef RuleID="ID_DENY_GEDEVDRV_6" />
+          <FileRuleRef RuleID="ID_DENY_GEDEVDRV_7" />
+          <FileRuleRef RuleID="ID_DENY_GEDEVDRV_8" />
+          <FileRuleRef RuleID="ID_DENY_GEDEVDRV_9" />
+          <FileRuleRef RuleID="ID_DENY_GEDEVDRV_10"/>
+          <FileRuleRef RuleID="ID_DENY_GEDEVDRV_11"/>
+          <FileRuleRef RuleID="ID_DENY_GEDEVDRV_12"/>
+          <FileRuleRef RuleID="ID_DENY_GEDEVDRV_13"/>
+          <FileRuleRef RuleID="ID_DENY_GEDEVDRV_14"/>
+          <FileRuleRef RuleID="ID_DENY_GEDEVDRV_15"/>
+          <FileRuleRef RuleID="ID_DENY_GEDEVDRV_16"/>
+          <FileRuleRef RuleID="ID_DENY_GVCIDRV_1" />
+          <FileRuleRef RuleID="ID_DENY_GVCIDRV_2" />
+          <FileRuleRef RuleID="ID_DENY_GVCIDRV_3" />
+          <FileRuleRef RuleID="ID_DENY_GVCIDRV_4" />
+          <FileRuleRef RuleID="ID_DENY_HW_22" />
+          <FileRuleRef RuleID="ID_DENY_HW_23" />
+          <FileRuleRef RuleID="ID_DENY_HW_24" />
+          <FileRuleRef RuleID="ID_DENY_HW_25" />
+          <FileRuleRef RuleID="ID_DENY_HWRWDRV_2" />
+          <FileRuleRef RuleID="ID_DENY_HWRWDRV_3" />
+          <FileRuleRef RuleID="ID_DENY_HWRWDRV_4" />
+          <FileRuleRef RuleID="ID_DENY_HWRWDRV_5" />
+          <FileRuleRef RuleID="ID_DENY_HWRWDRV_6" />
+          <FileRuleRef RuleID="ID_DENY_HWRWDRV_7" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_11" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_12" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_13" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_14" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_15" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_16" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_17" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_18" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_19" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_1A" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_1B" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_1C" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_1D" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_1E" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_1F" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_20" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_21" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_22" />
+          <FileRuleRef RuleID="ID_DENY_INPOUTX_23" />
+          <FileRuleRef RuleID="ID_DENY_IREC_1" />
+          <FileRuleRef RuleID="ID_DENY_IREC_2" />
+          <FileRuleRef RuleID="ID_DENY_IREC_3" />
+          <FileRuleRef RuleID="ID_DENY_IREC_4" />
+          <FileRuleRef RuleID="ID_DENY_IREC_5" />
+          <FileRuleRef RuleID="ID_DENY_IREC_6" />
+          <FileRuleRef RuleID="ID_DENY_IREC_7" />
+          <FileRuleRef RuleID="ID_DENY_IREC_8" />
+          <FileRuleRef RuleID="ID_DENY_IREC_9" />
+          <FileRuleRef RuleID="ID_DENY_IREC_A" />
+          <FileRuleRef RuleID="ID_DENY_IREC_B" />
+          <FileRuleRef RuleID="ID_DENY_IREC_C" />
+          <FileRuleRef RuleID="ID_DENY_IREC_D" />
+          <FileRuleRef RuleID="ID_DENY_IREC_E" />
+          <FileRuleRef RuleID="ID_DENY_IREC_F" />
+          <FileRuleRef RuleID="ID_DENY_IREC_10" />
+          <FileRuleRef RuleID="ID_DENY_IREC_11" />
+          <FileRuleRef RuleID="ID_DENY_IREC_12" />
+          <FileRuleRef RuleID="ID_DENY_IREC_13" />
+          <FileRuleRef RuleID="ID_DENY_IREC_14" />
+          <FileRuleRef RuleID="ID_DENY_IREC_15" />
+          <FileRuleRef RuleID="ID_DENY_IREC_16" />
+          <FileRuleRef RuleID="ID_DENY_IREC_17" />
+          <FileRuleRef RuleID="ID_DENY_IREC_18" />
+          <FileRuleRef RuleID="ID_DENY_IREC_19" />
+          <FileRuleRef RuleID="ID_DENY_IREC_1A" />
+          <FileRuleRef RuleID="ID_DENY_IREC_1B" />
+          <FileRuleRef RuleID="ID_DENY_IREC_1C" />
+          <FileRuleRef RuleID="ID_DENY_IREC_1D" />
+          <FileRuleRef RuleID="ID_DENY_IREC_1E" />
+          <FileRuleRef RuleID="ID_DENY_IREC_1F" />
+          <FileRuleRef RuleID="ID_DENY_IREC_20" />
+          <FileRuleRef RuleID="ID_DENY_IREC_21" />
+          <FileRuleRef RuleID="ID_DENY_IREC_22" />
+          <FileRuleRef RuleID="ID_DENY_IREC_23" />
+          <FileRuleRef RuleID="ID_DENY_IREC_24" />
+          <FileRuleRef RuleID="ID_DENY_IREC_25" />
+          <FileRuleRef RuleID="ID_DENY_IREC_26" />
+          <FileRuleRef RuleID="ID_DENY_IREC_27" />
+          <FileRuleRef RuleID="ID_DENY_IREC_28" />
+          <FileRuleRef RuleID="ID_DENY_IREC_29" />
+          <FileRuleRef RuleID="ID_DENY_IREC_2A" />
+          <FileRuleRef RuleID="ID_DENY_IREC_2B" />
+          <FileRuleRef RuleID="ID_DENY_IREC_2C" />
+          <FileRuleRef RuleID="ID_DENY_IREC_2D" />
+          <FileRuleRef RuleID="ID_DENY_IREC_2E" />
+          <FileRuleRef RuleID="ID_DENY_IREC_2F" />
+          <FileRuleRef RuleID="ID_DENY_IREC_30" />
+          <FileRuleRef RuleID="ID_DENY_IREC_31" />
+          <FileRuleRef RuleID="ID_DENY_IREC_32" />
+          <FileRuleRef RuleID="ID_DENY_IREC_33" />
+          <FileRuleRef RuleID="ID_DENY_IREC_34" />
+          <FileRuleRef RuleID="ID_DENY_IREC_35" />
+          <FileRuleRef RuleID="ID_DENY_IREC_36" />
+          <FileRuleRef RuleID="ID_DENY_IREC_37" />
+          <FileRuleRef RuleID="ID_DENY_IREC_38" />
+          <FileRuleRef RuleID="ID_DENY_IREC_39" />
+          <FileRuleRef RuleID="ID_DENY_IREC_3A" />
+          <FileRuleRef RuleID="ID_DENY_IREC_3B" />
+          <FileRuleRef RuleID="ID_DENY_IREC_3C" />
+          <FileRuleRef RuleID="ID_DENY_IREC_3D" />
+          <FileRuleRef RuleID="ID_DENY_IREC_3E" />
+          <FileRuleRef RuleID="ID_DENY_IREC_3F" />
+          <FileRuleRef RuleID="ID_DENY_IREC_40" />
+          <FileRuleRef RuleID="ID_DENY_IREC_41" />
+          <FileRuleRef RuleID="ID_DENY_IREC_42" />
+          <FileRuleRef RuleID="ID_DENY_IREC_43" />
+          <FileRuleRef RuleID="ID_DENY_IREC_44" />
+          <FileRuleRef RuleID="ID_DENY_IREC_45" />
+          <FileRuleRef RuleID="ID_DENY_IREC_46" />
+          <FileRuleRef RuleID="ID_DENY_IREC_47" />
+          <FileRuleRef RuleID="ID_DENY_IREC_48" />
+          <FileRuleRef RuleID="ID_DENY_IREC_49" />
+          <FileRuleRef RuleID="ID_DENY_IREC_4A" />
+          <FileRuleRef RuleID="ID_DENY_IREC_4B" />
+          <FileRuleRef RuleID="ID_DENY_IREC_4C" />
+          <FileRuleRef RuleID="ID_DENY_IREC_4D" />
+          <FileRuleRef RuleID="ID_DENY_IREC_4E" />
+          <FileRuleRef RuleID="ID_DENY_IREC_4F" />
+          <FileRuleRef RuleID="ID_DENY_IREC_50" />
+          <FileRuleRef RuleID="ID_DENY_IREC_51" />
+          <FileRuleRef RuleID="ID_DENY_IREC_52" />
+          <FileRuleRef RuleID="ID_DENY_IREC_53" />
+          <FileRuleRef RuleID="ID_DENY_IREC_54" />
+          <FileRuleRef RuleID="ID_DENY_KLMD" />
+          <FileRuleRef RuleID="ID_DENY_LGCORETEMP_1" />
+          <FileRuleRef RuleID="ID_DENY_LGCORETEMP_2" />
+          <FileRuleRef RuleID="ID_DENY_LGCORETEMP_3" />
+          <FileRuleRef RuleID="ID_DENY_LGCORETEMP_4" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_1" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_2" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_3" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_4" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_5" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_6" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_7" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_8" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_9" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_A" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_B" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_C" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_D" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_E" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_F" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_10" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_11" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_12" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_13" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_14" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_15" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_16" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_17" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_18" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_19" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_1A" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_1B" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_1C" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_11" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_12" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_13" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_14" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_15" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_16" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_17" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_18" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_19" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_1A" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_1B" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_1C" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_1D" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_1E" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_1F" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_20" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_21" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT3_22" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTECT_1" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTECT_2" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTECT_3" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTECT_4" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTECT_5" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTECT_6" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTECT_7" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTECT_8" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTNAP_1" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTNAP_2" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTNAP_3" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTNAP_4" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTRG_1" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTRG_2" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTRG_3" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTRG_4" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTRG_5" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTRG_6" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTRG_7" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROTRG_8" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_1" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_2" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_3" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_4" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_5" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_6" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_7" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_8" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_9" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_10" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_11" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_12" />
+          <FileRuleRef RuleID="ID_DENY_MSR_1" />
+          <FileRuleRef RuleID="ID_DENY_MSR_2" />
+          <FileRuleRef RuleID="ID_DENY_MSR_3" />
+          <FileRuleRef RuleID="ID_DENY_MSR_4" />
+          <FileRuleRef RuleID="ID_DENY_MSR_5" />
+          <FileRuleRef RuleID="ID_DENY_MSR_6" />
+          <FileRuleRef RuleID="ID_DENY_MSR_7" />
+          <FileRuleRef RuleID="ID_DENY_MSR_8" />
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_1" />
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_2" />
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_3" />
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_4" />
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_5" />
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_6" />
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_7" />
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_8" />
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_9" />
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_10"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_11"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_12"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_13"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_14"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_15"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_16"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_17"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_18"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_19"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_20"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_21"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_22"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_23"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_24"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_25"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_26"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_27"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_28"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_29"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_30"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_31"/>
+          <FileRuleRef RuleID="ID_DENY_MSRHOOK_32"/>
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_1" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_2" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_3" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_4" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_5" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_6" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_7" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_8" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_9" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_A" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_B" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_C" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_D" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_E" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_F" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_10" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_11" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_12" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_13" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_14" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_15" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_16" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_17" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_18" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_19" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_1A" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_1B" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_1C" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_1D" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_1E" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_1F" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_20" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_21" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_22" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_23" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_24" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_25" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_26" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_27" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_28" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_29" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_2A" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_2B" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_2C" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_2D" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_2E" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_2F" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_30" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_31" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_32" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_33" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_34" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_35" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_36" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_37" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_38" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_39" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_3A" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_3B" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_3C" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_3D" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_3E" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_3F" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_40" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_41" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_42" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_43" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_44" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_45" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_46" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_47" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_48" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_49" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_4A" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_4B" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_4C" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_4D" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_4E" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_4F" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_50" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_51" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_52" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_53" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_54" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_55" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_56" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_57" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_58" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_59" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_5A" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_5B" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_5C" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_5D" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_5E" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_5F" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_60" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_61" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_62" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_63" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_64" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_65" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_66" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_67" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_68" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_69" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_6A" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_6B" />
+          <FileRuleRef RuleID="ID_DENY_NVFLASH_6C" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_1" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_2" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_3" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_4" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_5" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_6" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_7" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_8" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_9" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_10" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_11" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_12" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_13" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_14" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_15" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_16" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_17" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_18" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_19" />
+          <FileRuleRef RuleID="ID_DENY_NVOCLOCK_20" />
+          <FileRuleRef RuleID="ID_DENY_OTIPCIBUS_1" />
+          <FileRuleRef RuleID="ID_DENY_OTIPCIBUS_2" />
+          <FileRuleRef RuleID="ID_DENY_OTIPCIBUS_3" />
+          <FileRuleRef RuleID="ID_DENY_OTIPCIBUS_4" />
+          <FileRuleRef RuleID="ID_DENY_PCHUNTER_3" />
+          <FileRuleRef RuleID="ID_DENY_PCHUNTER_4" />
+          <FileRuleRef RuleID="ID_DENY_PCHUNTER_5" />
+          <FileRuleRef RuleID="ID_DENY_PCHUNTER_6" />
+          <FileRuleRef RuleID="ID_DENY_PIDDRV_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_PIDDRV_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_PIDDRV_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_PIDDRV_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_PIDDRV64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_PIDDRV64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_PIDDRV64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_PIDDRV64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_PHYDMACC_1" />
+          <FileRuleRef RuleID="ID_DENY_PHYDMACC_2" />
+          <FileRuleRef RuleID="ID_DENY_PHYDMACC_3" />
+          <FileRuleRef RuleID="ID_DENY_PHYDMACC_4" />
+          <FileRuleRef RuleID="ID_DENY_PHYDMACC_5" />
+          <FileRuleRef RuleID="ID_DENY_PHYDMACC_6" />
+          <FileRuleRef RuleID="ID_DENY_PHYMEMX64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_PHYMEMX64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_PHYMEMX64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_PHYMEMX64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_QMBSEC_0" />
+          <FileRuleRef RuleID="ID_DENY_QMBSEC_1" />
+          <FileRuleRef RuleID="ID_DENY_QMBSEC_2" />
+          <FileRuleRef RuleID="ID_DENY_QMBSEC_3" />
+          <FileRuleRef RuleID="ID_DENY_QMBSEC_4" />
+          <FileRuleRef RuleID="ID_DENY_QMBSEC_5" />
+          <FileRuleRef RuleID="ID_DENY_QMBSEC_6" />
+          <FileRuleRef RuleID="ID_DENY_QMBSEC_7" />
+          <FileRuleRef RuleID="ID_DENY_QMBSEC_8" />
+          <FileRuleRef RuleID="ID_DENY_QMBSEC_9" />
+          <FileRuleRef RuleID="ID_DENY_QMBSEC_A" />
+          <FileRuleRef RuleID="ID_DENY_QMBSEC_B" />
+          <FileRuleRef RuleID="ID_DENY_QMBSEC_C" />
+          <FileRuleRef RuleID="ID_DENY_QMBSEC_D" />
+          <FileRuleRef RuleID="ID_DENY_QMBSEC_E" />
+          <FileRuleRef RuleID="ID_DENY_QMBSEC_F" />
+          <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_RENTDRV_1" />
+          <FileRuleRef RuleID="ID_DENY_RENTDRV_2" />
+          <FileRuleRef RuleID="ID_DENY_RENTDRV_3" />
+          <FileRuleRef RuleID="ID_DENY_RENTDRV_4" />
+          <FileRuleRef RuleID="ID_DENY_RENTDRV_5" />
+          <FileRuleRef RuleID="ID_DENY_RENTDRV_6" />
+          <FileRuleRef RuleID="ID_DENY_RENTDRV_7" />
+          <FileRuleRef RuleID="ID_DENY_RENTDRV_8" />
+          <FileRuleRef RuleID="ID_DENY_RENTDRV_9" />
+          <FileRuleRef RuleID="ID_DENY_RENTDRV_10"/>
+          <FileRuleRef RuleID="ID_DENY_RENTDRV_11"/>
+          <FileRuleRef RuleID="ID_DENY_RENTDRV_12"/>
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_1" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_2" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_3" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_4" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_5" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_6" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_7" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_8" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_9" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_10" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_11" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_12" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_13" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_14" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_15" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_16" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_17" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_18" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_19" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_20" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_21" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_22" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_23" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_24" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_25" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_26" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_27" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_28" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_29" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_30" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_31" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_32" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_33" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_34" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_35" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_36" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_37" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_38" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_39" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_40" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_41" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_42" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_43" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_44" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_45" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_46" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_47" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_48" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_49" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_50" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_51" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_52" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_53" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_54" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_55" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_56" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_57" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_58" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_59" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_60" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_61" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_62" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_63" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_64" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_65" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_66" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_67" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_68" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_69" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_70" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_71" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_72" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_1" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_2" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_3" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_4" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_5" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_6" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_7" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_8" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_9" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_10" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_11" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_12" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_13" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_14" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_15" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_16" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_17" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_18" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_19" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_20" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_21" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_22" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_23" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_24" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_25" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_26" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_27" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_28" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_29" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_30" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_31" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_32" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_33" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_34" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_35" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_36" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_37" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_38" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_39" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_40" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_41" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_42" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_43" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_44" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_45" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_46" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_47" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_48" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_49" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_50" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_51" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_52" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_53" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_54" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_55" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_56" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_57" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_58" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_59" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_60" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_61" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_62" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_63" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_64" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_65" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_66" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_67" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_68" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_69" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_70" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_71" />
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_72" />
+          <FileRuleRef RuleID="ID_DENY_RTCORE_1"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_2"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_3"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_4"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_5"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_6"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_7"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_8"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_9"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_10"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_11"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_12"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_13"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_14"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_15"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_16"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_17"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_18"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_19"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_20"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_21"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_22"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_23"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_24"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_25"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_26"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_27"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_28"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_29"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_30"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_31"/>
+          <FileRuleRef RuleID="ID_DENY_RTCORE_32"/>
+          <FileRuleRef RuleID="ID_DENY_RTPORT_1"/>
+          <FileRuleRef RuleID="ID_DENY_RTPORT_2"/>
+          <FileRuleRef RuleID="ID_DENY_RTPORT_3"/>
+          <FileRuleRef RuleID="ID_DENY_RTPORT_4"/>
+          <FileRuleRef RuleID="ID_DENY_RTPORT_5"/>
+          <FileRuleRef RuleID="ID_DENY_RTPORT_6"/>
+          <FileRuleRef RuleID="ID_DENY_RTPORT_7"/>
+          <FileRuleRef RuleID="ID_DENY_RTPORT_8"/>
+          <FileRuleRef RuleID="ID_DENY_RTPORT_9"/>
+          <FileRuleRef RuleID="ID_DENY_RTPORT_10"/>
+          <FileRuleRef RuleID="ID_DENY_RTPORT_11"/>
+          <FileRuleRef RuleID="ID_DENY_RTPORT_12"/>
+          <FileRuleRef RuleID="ID_DENY_RTPORT_13"/>
+          <FileRuleRef RuleID="ID_DENY_RTPORT_14"/>
+          <FileRuleRef RuleID="ID_DENY_RTPORT_15"/>
+          <FileRuleRef RuleID="ID_DENY_RTPORT_16"/>
+          <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_1" />
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_2" />
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_3" />
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_4" />
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_5" />
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_6" />
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_7" />
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_8" />
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_9" />
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_10"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_11"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_12"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_13"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_14"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_15"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_16"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_17"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_18"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_19"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_20"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_21"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_22"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_23"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_24"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_25"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_26"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_27"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_28"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_29"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_30"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_31"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_32"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_33"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_34"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_35"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_36"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_37"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_38"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_39"/>
+          <FileRuleRef RuleID="ID_DENY_SEPDRV3_40"/>
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_2" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_3" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_4" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_5" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_6" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_7" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_8" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_9" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_A" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_B" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_C" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_D" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_E" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_F" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_10" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_11" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_12" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_13" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_14" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_15" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_16" />
+          <FileRuleRef RuleID="ID_DENY_SUPERBMC_17" />
+          <FileRuleRef RuleID="ID_DENY_SYSCONP_1"/>
+          <FileRuleRef RuleID="ID_DENY_SYSCONP_2"/>
+          <FileRuleRef RuleID="ID_DENY_SYSCONP_3"/>
+          <FileRuleRef RuleID="ID_DENY_SYSCONP_4"/>
+          <FileRuleRef RuleID="ID_DENY_SYSCONP_5"/>
+          <FileRuleRef RuleID="ID_DENY_SYSCONP_6"/>
+          <FileRuleRef RuleID="ID_DENY_SYSCONP_7"/>
+          <FileRuleRef RuleID="ID_DENY_SYSCONP_8"/>
+          <FileRuleRef RuleID="ID_DENY_SYSDRV3S_1" />
+          <FileRuleRef RuleID="ID_DENY_SYSDRV3S_2" />
+          <FileRuleRef RuleID="ID_DENY_SYSDRV3S_3" />
+          <FileRuleRef RuleID="ID_DENY_SYSDRV3S_4" />
+          <FileRuleRef RuleID="ID_DENY_SYSDRV3S_5" />
+          <FileRuleRef RuleID="ID_DENY_SYSDRV3S_6" />
+          <FileRuleRef RuleID="ID_DENY_SYSDRV3S_7" />
+          <FileRuleRef RuleID="ID_DENY_SYSDRV3S_8" />
+          <FileRuleRef RuleID="ID_DENY_SYSDRV3S_9" />
+          <FileRuleRef RuleID="ID_DENY_SYSDRV3S_A" />
+          <FileRuleRef RuleID="ID_DENY_SYSDRV3S_B" />
+          <FileRuleRef RuleID="ID_DENY_SYSDRV3S_C" />
+          <FileRuleRef RuleID="ID_DENY_SYSINFO_1" />
+          <FileRuleRef RuleID="ID_DENY_SYSINFO_2" />
+          <FileRuleRef RuleID="ID_DENY_SYSINFO_3" />
+          <FileRuleRef RuleID="ID_DENY_SYSINFO_4" />
+          <FileRuleRef RuleID="ID_DENY_SYSINFO_5" />
+          <FileRuleRef RuleID="ID_DENY_SYSINFO_6" />
+          <FileRuleRef RuleID="ID_DENY_SYSINFO_7" />
+          <FileRuleRef RuleID="ID_DENY_SYSINFO_8" />
+          <FileRuleRef RuleID="ID_DENY_TDEIO_1"/>
+          <FileRuleRef RuleID="ID_DENY_TDEIO_2"/>
+          <FileRuleRef RuleID="ID_DENY_TDEIO_3"/>
+          <FileRuleRef RuleID="ID_DENY_TDEIO_4"/>
+          <FileRuleRef RuleID="ID_DENY_TDEIO_5"/>
+          <FileRuleRef RuleID="ID_DENY_TDEIO_6"/>
+          <FileRuleRef RuleID="ID_DENY_TDEIO_7"/>
+          <FileRuleRef RuleID="ID_DENY_TDEIO_8"/>
+          <FileRuleRef RuleID="ID_DENY_WFSHBR_1" />
+          <FileRuleRef RuleID="ID_DENY_WFSHBR_2" />
+          <FileRuleRef RuleID="ID_DENY_WFSHBR_3" />
+          <FileRuleRef RuleID="ID_DENY_WFSHBR_4" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_1" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_2" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_3" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_4" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_5" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_6" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_7" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_8" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_9" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_10" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_11" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_12" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_13" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_14" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_15" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_16" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_17" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_18" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_19" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_20" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_21" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_22" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_23" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_24" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_25" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_26" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_27" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_28" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_29" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_30" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_31" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_32" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_33" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_34" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_35" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_36" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_37" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_38" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_39" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_40" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_41" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_42" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_43" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_44" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_45" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_46" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_47" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_48" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_49" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_50" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_51" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_52" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_53" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_54" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_55" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_56" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_57" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_58" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_59" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_60" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_61" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_62" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_63" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_64" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_65" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_66" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_67" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_68" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_69" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_70" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_71" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_72" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_73" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_74" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_75" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_76" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_77" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_78" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_79" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_80" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_81" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_82" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_83" />
+          <FileRuleRef RuleID="ID_DENY_WINIO_84" />
+          <FileRuleRef RuleID="ID_DENY_WINRING0_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_WINRING0_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_WINRING0_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_WINRING0_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_PROCESSHACKER" />
+          <FileRuleRef RuleID="ID_DENY_AMP" />
+          <FileRuleRef RuleID="ID_DENY_ASMMAP" />
+          <FileRuleRef RuleID="ID_DENY_ASMMAP_64" />
+          <FileRuleRef RuleID="ID_DENY_DBK_32" />
+          <FileRuleRef RuleID="ID_DENY_DBK_64" />
+          <FileRuleRef RuleID="ID_DENY_GDRV" />
+          <FileRuleRef RuleID="ID_DENY_PCHUNTER_1" />
+          <FileRuleRef RuleID="ID_DENY_PCHUNTER_2" />
+          <FileRuleRef RuleID="ID_DENY_PHYMEMX_64" />
         </FileRulesRef>
       </ProductSigners>
     </SigningScenario>
@@ -3219,7 +4173,7 @@ To check that the policy was successfully applied on your computer:
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
-        <String>10.0.25880.0</String>
+        <String>10.0.26025.0</String>
       </Value>
     </Setting>
   </Settings>

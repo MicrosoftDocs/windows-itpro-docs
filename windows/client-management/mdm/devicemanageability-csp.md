@@ -1,14 +1,7 @@
 ---
 title: DeviceManageability CSP
 description: Learn more about the DeviceManageability CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -42,7 +35,7 @@ The following list shows the DeviceManageability configuration service provider 
 <!-- Device-Capabilities-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Capabilities-Applicability-End -->
 
 <!-- Device-Capabilities-OmaUri-Begin -->
@@ -80,7 +73,7 @@ The following list shows the DeviceManageability configuration service provider 
 <!-- Device-Capabilities-CSPVersions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Capabilities-CSPVersions-Applicability-End -->
 
 <!-- Device-Capabilities-CSPVersions-OmaUri-Begin -->
@@ -119,7 +112,7 @@ Returns the versions of all configuration service providers (CSP) for MDM.
 <!-- Device-Provider-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Provider-Applicability-End -->
 
 <!-- Device-Provider-OmaUri-Begin -->
@@ -157,7 +150,7 @@ Returns the versions of all configuration service providers (CSP) for MDM.
 <!-- Device-Provider-{ProviderID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Provider-{ProviderID}-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-OmaUri-Begin -->
@@ -198,7 +191,7 @@ Provider ID should be unique among the different config sources.
 <!-- Device-Provider-{ProviderID}-ConfigInfo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Provider-{ProviderID}-ConfigInfo-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigInfo-OmaUri-Begin -->
@@ -237,7 +230,7 @@ Configuration Info string value set by the config source. Recommended to be used
 <!-- Device-Provider-{ProviderID}-EnrollmentInfo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Provider-{ProviderID}-EnrollmentInfo-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-EnrollmentInfo-OmaUri-Begin -->
@@ -276,7 +269,7 @@ Enrollment Info string value set by the config source. Recommended to sent to se
 <!-- Device-Provider-{ProviderID}-PayloadTransfer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-PayloadTransfer-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-PayloadTransfer-OmaUri-Begin -->

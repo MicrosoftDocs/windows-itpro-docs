@@ -1,15 +1,8 @@
 ---
-title: TakeATest (Windows 10)
+title: TakeATest
 description: This section describes the TakeATest settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
-ms.topic: article
-ms.date: 09/06/2017
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
+ms.topic: reference
+ms.date: 01/25/2024
 ---
 
 # TakeATest (Windows Configuration Designer reference)
@@ -20,7 +13,7 @@ Use TakeATest to configure the Take A Test app, a secure browser for test-taking
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| All settings | ✔️ |  |  |   |
+| All settings | ✅ |  |  |   |
 
 ## AllowScreenMonitoring
 
@@ -42,7 +35,7 @@ When set to True, students can print in the Take A Test app.
 
 Enter the account to use when taking a test.
 
-To specify a domain account, enter **domain\user**. To specify an Azure AD account, enter `username@tenant.com`. To specify a local account, enter the username.
+To specify a domain account, enter **domain\user**. To specify a Microsoft Entra account, enter `username@tenant.com`. To specify a local account, enter the username.
 
 ## Related articles
 

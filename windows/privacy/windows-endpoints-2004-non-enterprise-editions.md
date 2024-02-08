@@ -1,12 +1,12 @@
 ---
 title: Windows 10, version 2004, connection endpoints for non-Enterprise editions
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 2004.
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
+manager: laurawi
 ms.date: 05/11/2020
 ms.topic: reference
 ---

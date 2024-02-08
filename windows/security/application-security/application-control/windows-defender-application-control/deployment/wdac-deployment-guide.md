@@ -4,6 +4,7 @@ description: Learn how to plan and implement a WDAC deployment.
 ms.localizationpriority: medium
 ms.date: 01/23/2023
 ms.topic: overview
+ms.collection: essentials-get-started
 ---
 
 # Deploying Windows Defender Application Control (WDAC) policies

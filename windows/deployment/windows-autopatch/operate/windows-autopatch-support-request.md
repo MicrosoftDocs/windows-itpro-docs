@@ -1,14 +1,14 @@
 ---
 title: Submit a support request
 description: Details how to contact the Windows Autopatch Service Engineering Team and submit support requests
-ms.date: 01/06/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.date: 09/06/2023
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: hathind
 ms.collection:
   - highpri

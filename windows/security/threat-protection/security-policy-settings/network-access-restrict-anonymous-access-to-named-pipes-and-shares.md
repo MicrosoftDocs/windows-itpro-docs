@@ -1,10 +1,9 @@
 ---
-title: Network access Restrict anonymous access to Named Pipes and Shares 
+title: Network access Restrict anonymous access to Named Pipes and Shares
 description: Best practices, security considerations, and more for the security policy setting, Network access Restrict anonymous access to Named Pipes and Shares.
 ms.assetid: e66cd708-7322-4d49-9b57-1bf8ec7a4c10
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Network access: Restrict anonymous access to Named Pipes and Shares
@@ -32,7 +30,7 @@ Describes the best practices, location, values, policy management and security c
 
 ## Reference
 
-This policy setting enables or disables the restriction of anonymous access to only those shared folders and pipes that are named in the **Network access: Named pipes that can be accessed anonymously** and [Network access: Shares that can be accessed anonymously](network-access-shares-that-can-be-accessed-anonymously.md) settings. The setting controls null session access to shared folders on your computers by adding RestrictNullSessAccess with the value 1 in the registry key 
+This policy setting enables or disables the restriction of anonymous access to only those shared folders and pipes that are named in the **Network access: Named pipes that can be accessed anonymously** and [Network access: Shares that can be accessed anonymously](network-access-shares-that-can-be-accessed-anonymously.md) settings. The setting controls null session access to shared folders on your computers by adding RestrictNullSessAccess with the value 1 in the registry key
 **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\LanManServer\\Parameters**. This registry value toggles null session shared folders on or off to control whether the Server service restricts unauthenticated clients' access to named resources.
 
 Null sessions are a weakness that can be exploited through the various shared folders on the devices in your environment.
@@ -57,13 +55,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Enabled| 
-| DC Effective Default Settings | Enabled| 
-| Member Server Effective Default Settings | Enabled| 
-| Client Computer Effective Default Settings| Enabled| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Enabled|
+| DC Effective Default Settings | Enabled|
+| Member Server Effective Default Settings | Enabled|
+| Client Computer Effective Default Settings| Enabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

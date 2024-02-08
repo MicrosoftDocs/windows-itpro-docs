@@ -2,7 +2,7 @@
 title: What's new in Windows 11, version 22H2 for IT pros
 description: Learn more about what's new in Windows 11 version 21H2, including servicing updates, Windows Subsystem for Linux, the latest CSPs, and more.
 manager: aaroncz
-ms.prod: windows-client
+ms.service: windows-client
 ms.author: mstewart
 author: mestew
 ms.localizationpriority: medium
@@ -10,8 +10,8 @@ ms.topic: conceptual
 ms.collection:
   - highpri
   - tier2
-ms.technology: itpro-fundamentals
-ms.date: 12/31/2017
+ms.subservice: itpro-fundamentals
+ms.date: 08/11/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2</a>
 ---
@@ -50,9 +50,9 @@ For more information, see [Smart App Control](/windows/security/threat-protectio
 
 ## Credential Guard
 <!--6289166-->
-Compatible Windows 11 Enterprise version 22H2 devices will have **Windows Defender Credential Guard** turned on by default. This changes the default state of the feature in Windows, though system administrators can still modify this enablement state.
+Compatible Windows 11 Enterprise version 22H2 devices will have **Credential Guard** turned on by default. This changes the default state of the feature in Windows, though system administrators can still modify this enablement state.
 
-For more information, see [Manage Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage).
+For more information, see [Manage Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage).
 
 ## Malicious and vulnerable driver blocking
 <!--6286432-->

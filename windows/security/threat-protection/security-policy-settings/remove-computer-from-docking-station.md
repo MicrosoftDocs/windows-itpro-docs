@@ -1,10 +1,9 @@
 ---
-title: Remove computer from docking station - security policy setting 
+title: Remove computer from docking station - security policy setting
 description: Describes the best practices, location, values, policy management, and security considerations for the Remove computer from docking station security policy setting.
 ms.assetid: 229a385a-a862-4973-899a-413b1b5b6c30
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Remove computer from docking station - security policy setting
@@ -54,13 +52,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Administrators| 
-| Stand-Alone Server Default Settings | Administrators| 
-| Domain Controller Effective Default Settings | Administrators| 
-| Member Server Effective Default Settings | Administrators| 
-| Client Computer Effective Default Settings | Administrators| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Administrators|
+| Stand-Alone Server Default Settings | Administrators|
+| Domain Controller Effective Default Settings | Administrators|
+| Member Server Effective Default Settings | Administrators|
+| Client Computer Effective Default Settings | Administrators|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

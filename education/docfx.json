@@ -34,17 +34,16 @@
         "education",
         "tier2"
       ],
-      "ms.prod": "windows-client",
-      "ms.technology": "itpro-edu",
+      "ms.subservice": "itpro-edu",
+      "ms.service": "windows-client",
       "author": "paolomatarazzo",
       "ms.author": "paoloma",
       "manager": "aaroncz",
       "ms.localizationpriority": "medium",
       "breadcrumb_path": "/education/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Windows",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
-      "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
+      "feedback_system": "Standard",
+            "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "Win.education",
@@ -52,10 +51,10 @@
         }
       },
       "titleSuffix": "Windows Education",
-      "contributors_to_exclude": [ 
-        "rjagiewich", 
-        "traya1", 
-        "rmca14", 
+      "contributors_to_exclude": [
+        "rjagiewich",
+        "traya1",
+        "rmca14",
         "claydetels19",
         "Kellylorenebaker",
         "jborsecnik",
@@ -66,7 +65,8 @@
         "garycentric",
         "v-stsavell",
         "beccarobins",
-        "v-stchambers"
+        "Stacyrch140",
+        "American-Dipper"
       ]
     },
     "fileMetadata": {

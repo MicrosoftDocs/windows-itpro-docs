@@ -1,14 +1,8 @@
 ---
-title: Privacy (Windows 10)
+title: Privacy
 description: This section describes the Privacy settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
-manager: aaroncz
-ms.topic: article
-ms.technology: itpro-configure
-ms.date: 12/31/2017
+ms.topic: reference
+ms.date: 01/25/2024
 ---
 
 # Privacy (Windows Configuration Designer reference)
@@ -19,7 +13,7 @@ Use **Privacy** to configure settings for app activation with voice.
 
 | Setting   | Windows client |  Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| All settings | ✔️  |  ✔️ |  | ✔️ |
+| All settings | ✅  |  ✅ |  | ✅ |
 
 ## LetAppsActivateWithVoice
 

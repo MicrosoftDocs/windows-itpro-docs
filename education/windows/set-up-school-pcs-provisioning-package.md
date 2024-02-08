@@ -5,7 +5,7 @@ ms.date: 06/02/2023
 ms.topic: reference
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
----  
+---
 
 # What's in my provisioning package?
 
@@ -48,12 +48,12 @@ For a more detailed look at the policies, see the Windows article [Set up shared
 
 This section lists only the MDM and local group policies that are configured uniquely for the Set up School PCs app.
 
-For a more detailed look of each policy listed, see [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider) in the Windows IT Pro Center documentation.  
+For a more detailed look of each policy listed, see [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider) in the Windows IT Pro Center documentation.
 
 | Policy name | Default value | Description |
 |--|--|--|
-| Authority | User-defined | Authenticates the admin user. Value is set automatically when signed in to Azure AD. |
-| BPRT | User-defined | Value is set automatically when signed in to Azure AD. Allows you to create the provisioning package. |
+| Authority | User-defined | Authenticates the admin user. Value is set automatically when signed in to Microsoft Entra ID. |
+| BPRT | User-defined | Value is set automatically when signed in to Microsoft Entra ID. Allows you to create the provisioning package. |
 | WLAN Setting | XML is generated from the Wi-Fi profile in the Set up School PCs app. | Configures settings for wireless connectivity. |
 | Hide OOBE for desktop | True | Hides the interactive OOBE flow for Windows 10. |
 | Download Mode | 1 - HTTP blended with peering behind the same NAT | Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps, and App updates |
@@ -81,10 +81,10 @@ For a more detailed look of each policy listed, see [Policy CSP](/windows/client
 
 ## Apps uninstalled from Windows devices
 
-Set up School PCs app uses the Universal app uninstall policy. The policy identifies default apps that aren't relevant to the classroom experience, and uninstalls them from each device. The apps uninstalled from Windows devices are:  
+Set up School PCs app uses the Universal app uninstall policy. The policy identifies default apps that aren't relevant to the classroom experience, and uninstalls them from each device. The apps uninstalled from Windows devices are:
 
 - Mixed Reality Viewer
-- Weather  
+- Weather
 - Desktop App Installer
 - Tips
 - Messaging
@@ -106,11 +106,11 @@ Set up School PCs uses the Universal app install policy to install school-releva
 
 ## Provisioning time estimates
 
-The time it takes to install a package on a device depends on the:  
+The time it takes to install a package on a device depends on the:
 
 - Strength of network connection
 - Number of policies and apps within the package
-- Other configurations made to the device  
+- Other configurations made to the device
 
 Review the table below to estimate your expected provisioning time. A package that only applies Set Up School PC's default configurations will provision the fastest. A package that removes preinstalled apps, through CleanPC, will take much longer to provision.
 
@@ -125,7 +125,7 @@ Review the table below to estimate your expected provisioning time. A package th
 
 Learn more about setting up devices with the Set up School PCs app.
 
-- [Azure AD Join with Set up School PCs](set-up-school-pcs-azure-ad-join.md)
+- [Microsoft Entra join with Set up School PCs](set-up-school-pcs-azure-ad-join.md)
 - [Set up School PCs technical reference](set-up-school-pcs-technical.md)
 - [Set up Windows 10 devices for education](set-up-windows-10.md)
 

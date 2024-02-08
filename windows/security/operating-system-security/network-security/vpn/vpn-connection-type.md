@@ -2,7 +2,7 @@
 title: VPN connection types
 description: Learn about Windows VPN platform clients and the VPN connection-type features that can be configured.
 ms.date: 08/03/2023
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # VPN connection types

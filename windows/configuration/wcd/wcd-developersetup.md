@@ -1,15 +1,8 @@
 ---
-title: DeveloperSetup (Windows 10)
+title: DeveloperSetup
 description: This section describes the DeveloperSetup settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
-ms.topic: article
-ms.date: 09/06/2017
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
+ms.topic: reference
+ms.date: 01/25/2024
 ---
 
 # DeveloperSetup (Windows Configuration Designer reference)
@@ -20,9 +13,8 @@ Use to unlock developer mode on HoloLens devices and configure authentication to
 
 | Setting groups  | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| [EnableDeveloperMode](#developersetupsettings-enabledevelopermode) |   |  | ✔️ |  |
-| [AuthenticationMode](#windowsdeviceportalsettings-authentication-mode) |   |  | ✔️ |  |
-
+| [EnableDeveloperMode](#developersetupsettings-enabledevelopermode) |   |  | ✅ |  |
+| [AuthenticationMode](#windowsdeviceportalsettings-authentication-mode) |   |  | ✅ |  |
 
 ## DeveloperSetupSettings: EnableDeveloperMode
 

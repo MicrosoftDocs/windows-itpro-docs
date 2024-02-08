@@ -2,13 +2,13 @@
 title: Quality update status report
 description: Provides a per device view of the current update status for all Windows Autopatch enrolled devices with Autopatch groups.
 ms.date: 07/25/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: adnich
 ms.collection:
   - highpri
@@ -51,7 +51,7 @@ The following information is available as optional columns in the Quality update
 
 | Column name | Description |
 | ----- | ----- |
-| Azure Active Directory (AD) device ID | The current Azure AD recorded device ID for the device |
+| Microsoft Entra device ID | The current Microsoft Entra ID recorded device ID for the device |
 | Serial number | The current Intune recorded serial number for the device |
 | Intune last check in time | The last time the device checked in to Intune |
 | Service State | The Service State provided from Windows Update |
@@ -75,7 +75,7 @@ The following options are available:
 
 | Option | Description |
 | ----- | ----- |
-| Search | Use to search by device name, Azure AD device ID or serial number |
+| Search | Use to search by device name, Microsoft Entra device ID or serial number |
 | Sort | Select the **column headings** to sort the report data in ascending and descending order. |
 | Export | Select **Export devices** at the top of the page to export data from this report into a CSV file. |
 | Filter | Select either the **Add filters** or at the top of the report to filter the results. |

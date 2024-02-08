@@ -1,20 +1,24 @@
 ---
-title: Deploy expedited updates with Windows Update for Business deployment service
-description: Use Windows Update for Business deployment service to deploy expedited updates.
-ms.prod: windows-client
-author: mestew
-ms.localizationpriority: medium
+title: Deploy expedited updates
+titleSuffix: Windows Update for Business deployment service
+description: Learn how to use Windows Update for Business deployment service to deploy expedited updates to devices in your organization. 
+ms.service: windows-client
+ms.subservice: itpro-updates
+ms.topic: conceptual
 ms.author: mstewart
+author: mestew
 manager: aaroncz
-ms.topic: article
-ms.technology: itpro-updates
-ms.date: 02/14/2023
+ms.collection:
+  - tier1
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 08/29/2023
 ---
 
 # Deploy expedited updates with Windows Update for Business deployment service
-
 <!--7512398-->
-***(Applies to: Windows 11 & Windows 10)***
 
 In this article, you will:
 > [!div class="checklist"]
@@ -28,7 +32,11 @@ In this article, you will:
 
 ## Prerequisites
 
-All of the [prerequisites for the Windows Update for Business deployment service](deployment-service-prerequisites.md) must be met.
+All of the [prerequisites for the Windows Update for Business deployment service](deployment-service-prerequisites.md) must be met, including ensuring that the *Update Health Tools* is installed on the clients.
+- The *Update Health Tools* are installed starting with [KB4023057](https://support.microsoft.com/kb/4023057). To confirm the presence of the Update Health Tools on a device, use one of the following methods:
+  - Run a [readiness test for expedited updates](#readiness-test-for-expediting-updates)
+  - Look for the folder **C:\Program Files\Microsoft Update Health Tools** or review *Add Remove Programs* for **Microsoft Update Health Tools**.
+  - Example PowerShell script to verify tools installation: `Get-CimInstance -ClassName Win32_Product \| Where-Object {$_.Name -match "Microsoft Update Health Tools"}`
 
 ### Permissions
 
@@ -47,13 +55,13 @@ All of the [prerequisites for the Windows Update for Business deployment service
 
 ## List catalog entries for expedited updates
 
-Each update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). You can query the catalog to find updates that can be expedited. The `id` returned is the **Catalog ID** and is used to create a deployment. The following query lists all security updates that can be deployed as expedited updates by the deployment service. Using `$top=3` and ordering by `ReleaseDateTimeshows` displays the three most recent updates.
+Each update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). You can query the catalog to find updates that can be expedited. The `id` returned is the **Catalog ID** and is used to create a deployment. The following query lists all security updates that can be deployed as expedited updates by the deployment service. Using `$top=1` and ordering by `ReleaseDateTimeshows` displays the most recent update that can be deployed as expedited.
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true&$orderby=releaseDateTime desc&$top=3
+GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true&$orderby=releaseDateTime desc&$top=1
 ```
 
-The following truncated response displays a **Catalog ID** of  `693fafea03c24cca819b3a15123a8880f217b96a878b6d6a61be021d476cc432` for the `01/10/2023 - 2023.01 B Security Updates for Windows 10 and later` security update:
+The following truncated response displays a **Catalog ID** of  `e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5` for the `08/08/2023 - 2023.08 B SecurityUpdate for Windows 10 and later` security update:
 
 ```json
 {
@@ -61,21 +69,119 @@ The following truncated response displays a **Catalog ID** of  `693fafea03c24cca
     "value": [
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
-            "id": "693fafea03c24cca819b3a15123a8880f217b96a878b6d6a61be021d476cc432",
-            "displayName": "01/10/2023 - 2023.01 B Security Updates for Windows 10 and later",
+            "id": "e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5",
+            "displayName": "08/08/2023 - 2023.08 B SecurityUpdate for Windows 10 and later",
             "deployableUntilDateTime": null,
-            "releaseDateTime": "2023-01-10T00:00:00Z",
+            "releaseDateTime": "2023-08-08T00:00:00Z",
             "isExpeditable": true,
-            "qualityUpdateClassification": "security"
-        },
-        ...
+            "qualityUpdateClassification": "security",
+            "catalogName": "2023-08 Cumulative Update for Windows 10 and later",
+            "shortName": "2023.08 B",
+            "qualityUpdateCadence": "monthly",
+            "cveSeverityInformation": {
+                "maxSeverity": "critical",
+                "maxBaseScore": 9.8,
+                "exploitedCves@odata.context": "https://graph.microsoft.com/$metadata#admin/windows/updates/catalog/entries('e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5')/microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/cveSeverityInformation/exploitedCves",
+                "exploitedCves": [
+                    {
+                        "number": "ADV230003",
+                        "url": "https://msrc.microsoft.com/update-guide/vulnerability/ADV230003"
+                    },
+                    {
+                        "number": "CVE-2023-38180",
+                        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-38180"
+                    }
+                ]
+            }
+        }
     ]
 }
 ```
 
+The deployment service can display more information about updates that were released on or after January 2023. Using [product revision](/graph/api/resources/windowsupdates-productrevision) gives you additional information about the updates, such as the KB numbers, and the `MajorVersion.MinorVersion.BuildNumber.UpdateBuildRevision`. Windows 10 and 11 share the same major and minor versions, but have different build numbers. 
+<!--8092737-->
+Use the following to display the product revision information for the most recent quality update:
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions&$orderby=releaseDateTime desc&$top=1
+```
+
+
+The following truncated response displays information about KB5029244 for Windows 10, version 22H2, and KB5029263 for Windows 11, version 22H2:
+
+```json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/catalog/entries(microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions())",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
+            "id": "e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5",
+            "displayName": "08/08/2023 - 2023.08 B SecurityUpdate for Windows 10 and later",
+            "deployableUntilDateTime": null,
+            "releaseDateTime": "2023-08-08T00:00:00Z",
+            "isExpeditable": true,
+            "qualityUpdateClassification": "security",
+            "catalogName": "2023-08 Cumulative Update for Windows 10 and later",
+            "shortName": "2023.08 B",
+            "qualityUpdateCadence": "monthly",
+            "cveSeverityInformation": {
+                "maxSeverity": "critical",
+                "maxBaseScore": 9.8,
+                "exploitedCves@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/catalog/entries('e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5')/microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/cveSeverityInformation/exploitedCves",
+                "exploitedCves": [
+                    {
+                        "number": "ADV230003",
+                        "url": "https://msrc.microsoft.com/update-guide/vulnerability/ADV230003"
+                    },
+                    {
+                        "number": "CVE-2023-38180",
+                        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-38180"
+                    }
+                ]
+            },
+            "productRevisions@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/catalog/entries('e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5')/microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions",
+            "productRevisions": [
+                {
+                    "id": "10.0.19045.3324",
+                    "displayName": "Windows 10, version 22H2, build 19045.3324",
+                    "releaseDateTime": "2023-08-08T00:00:00Z",
+                    "version": "22H2",
+                    "product": "Windows 10",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 19045,
+                        "updateBuildRevision": 3324
+                    },
+                    "knowledgeBaseArticle@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/catalog/entries('e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5')/microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions('10.0.19045.3324')/knowledgeBaseArticle/$entity",
+                    "knowledgeBaseArticle": {
+                        "id": "KB5029244",
+                        "url": "https://support.microsoft.com/help/5029244"
+                    }
+                },
+                {
+                    "id": "10.0.22621.2134",
+                    "displayName": "Windows 11, version 22H2, build 22621.2134",
+                    "releaseDateTime": "2023-08-08T00:00:00Z",
+                    "version": "22H2",
+                    "product": "Windows 11",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 22621,
+                        "updateBuildRevision": 2134
+                    },
+                    "knowledgeBaseArticle@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/catalog/entries('e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5')/microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions('10.0.22621.2134')/knowledgeBaseArticle/$entity",
+                    "knowledgeBaseArticle": {
+                        "id": "KB5029263",
+                        "url": "https://support.microsoft.com/help/5029263"
+                    }
+                },
+```
+
 ## Create a deployment
 
-When creating a deployment, there are [multiple options](/graph/api/resources/windowsupdates-deploymentsettings) available to define how the deployment behaves. The following example creates a deployment for the `01/10/2023 - 2023.01 B Security Updates for Windows 10 and later` security update with catalog entry ID `693fafea03c24cca819b3a15123a8880f217b96a878b6d6a61be021d476cc432`, and defines the `expedite` and `userExperience` deployment options in the request body.
+When creating a deployment, there are [multiple options](/graph/api/resources/windowsupdates-deploymentsettings) available to define how the deployment behaves. The following example creates a deployment for the `08/08/2023 - 2023.08 B SecurityUpdate for Windows 10 and later` security update with catalog entry ID `e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5`, and defines the `expedite` and `userExperience` deployment options in the request body.
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
@@ -87,7 +193,7 @@ content-type: application/json
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
         "catalogEntry": {
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
-            "id": "693fafea03c24cca819b3a15123a8880f217b96a878b6d6a61be021d476cc432"
+            "id": "e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5"
         }
     },
     "settings": {
@@ -111,8 +217,8 @@ The request returns a 201 Created response code and a [deployment](/graph/api/re
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deployments/$entity",
     "id": "de910e12-3456-7890-abcd-ef1234567890",
-    "createdDateTime": "2023-02-09T22:55:04.8547517Z",
-    "lastModifiedDateTime": "2023-02-09T22:55:04.8547524Z",
+    "createdDateTime": "2024-01-30T19:43:37.1672634Z",
+    "lastModifiedDateTime": "2024-01-30T19:43:37.1672644Z",
     "state": {
         "effectiveValue": "offering",
         "requestedValue": "none",
@@ -120,15 +226,19 @@ The request returns a 201 Created response code and a [deployment](/graph/api/re
     },
     "content": {
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
-        "catalogEntry@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deployments('de910e12-3456-7890-abcd-ef1234567890')/content/microsoft.graph.windowsUpdates.catalogContent/catalogEntry/$entity",
+        "catalogEntry@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deployments('073fb534-5cdd-4326-8aa2-a4d29037b60f')/content/microsoft.graph.windowsUpdates.catalogContent/catalogEntry/$entity",
         "catalogEntry": {
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
-            "id": "693fafea03c24cca819b3a15123a8880f217b96a878b6d6a61be021d476cc432",
+            "id": "e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5",
             "displayName": null,
             "deployableUntilDateTime": null,
-            "releaseDateTime": "2023-01-10T00:00:00Z",
+            "releaseDateTime": "2023-08-08T00:00:00Z",
             "isExpeditable": false,
-            "qualityUpdateClassification": "security"
+            "qualityUpdateClassification": "security",
+            "catalogName": null,
+            "shortName": null,
+            "qualityUpdateCadence": "monthly",
+            "cveSeverityInformation": null
         }
     },
     "settings": {
@@ -136,10 +246,12 @@ The request returns a 201 Created response code and a [deployment](/graph/api/re
         "monitoring": null,
         "contentApplicability": null,
         "userExperience": {
-            "daysUntilForcedReboot": 2
+            "daysUntilForcedReboot": 2,
+            "offerAsOptional": null
         },
         "expedite": {
-            "isExpedited": true
+            "isExpedited": true,
+            "isReadinessTest": false
         }
     },
     "audience@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deployments('de910e12-3456-7890-abcd-ef1234567890')/audience/$entity",
@@ -154,7 +266,7 @@ The request returns a 201 Created response code and a [deployment](/graph/api/re
 
 The **Audience ID**, `d39ad1ce-0123-4567-89ab-cdef01234567`, was created when the deployment was created. The **Audience ID** is used to add members to the deployment audience. After the deployment audience is updated, Windows Update starts offering the update to the devices according to the deployment settings. As long as the deployment exists and the device is in the audience, the update will be expedited.
 
-The following example adds two devices to the deployment audience using the **Azure AD ID** for each device:
+The following example adds two devices to the deployment audience using the **Microsoft Entra ID** for each device:
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/updateAudience
@@ -191,6 +303,48 @@ The following example deletes the deployment with a **Deployment ID** of `de910e
 DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e12-3456-7890-abcd-ef1234567890
 ```
 
+## Readiness test for expediting updates
+<!--8705528-->
+You can verify the readiness of clients to receive expedited updates by using [isReadinessTest](/graph/api/resources/windowsupdates-expeditesettings). Create a deployment that specifies  it's an expedite readiness test, then add members to the deployment audience. The service will check to see if the clients meet the prerequisites for expediting updates. The results of the test are displayed in the [Windows Update for Business reports workbook](wufb-reports-workbook.md#quality-updates-tab). Under the **Quality updates** tab, select the **Expedite status** tile, which opens a flyout with a **Readiness** tab with the readiness test results. 
+
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
+content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
+    "content": {
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        "catalogEntry": {
+            "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
+            "id": "317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5"
+        }
+    },
+    "settings": {
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
+        "expedite": {
+            "isExpedited": true,
+            "isReadinessTest": true
+        }
+    }
+}
+```
+
+The truncated response displays that **isReadinessTest** is set to `true` and gives you a **DeploymentID** of `de910e12-3456-7890-abcd-ef1234567890`. You can then [add members to the deployment audience](#add-members-to-the-deployment-audience) to have the service check that the devices meet the preresquites then review the results in the [Windows Update for Business reports workbook](wufb-reports-workbook.md#quality-updates-tab).
+
+```json
+        "expedite": {
+            "isExpedited": true,
+            "isReadinessTest": true
+        }
+    },
+    "audience@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/deployments('6a6c03b5-008e-4b4d-8acd-48144208f179_Readiness')/audience/$entity",
+    "audience": {
+        "id": "de910e12-3456-7890-abcd-ef1234567890",
+        "applicableContent": []
+    }
+
+```
 
 <!--Using include for Update Health Tools log location-->
 [!INCLUDE [Windows Update for Business deployment service permissions using Graph Explorer](./includes/wufb-deployment-update-health-tools-logs.md)]

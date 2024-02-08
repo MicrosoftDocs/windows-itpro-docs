@@ -1,14 +1,12 @@
 ---
 title: Network security Restrict NTLM in this domain
 description: Learn about best practices, security considerations and more for the security policy setting, Network Security Restrict NTLM NTLM authentication in this domain.
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-ms.topic: conceptual
-ms.technology: itpro-security
+ms.topic: reference
 ms.date: 12/31/2017
 ---
 
@@ -63,13 +61,13 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 | Server type or GPO | Default value |
 | - | - |
-| Default domain policy| Not configured| 
-| Default domain controller policy | Not configured| 
+| Default domain policy| Not configured|
+| Default domain controller policy | Not configured|
 | Stand-alone server default settings | Not configured|
-| Domain controller effective default settings | Not configured| 
-| Member server effective default settings | Not configured | 
-| Client computer effective default settings | Not configured| 
- 
+| Domain controller effective default settings | Not configured|
+| Member server effective default settings | Not configured |
+| Client computer effective default settings | Not configured|
+
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.
@@ -100,7 +98,7 @@ Malicious attacks on NTLM authentication traffic resulting in a compromised serv
 
 ### Countermeasure
 
-When it has been determined that the NTLM authentication protocol shouldn't be used within a network because you're required to use a more secure protocol such as the Kerberos protocol, then you can select one of several options that this security policy setting offers to restrict NTLM usage 
+When it has been determined that the NTLM authentication protocol shouldn't be used within a network because you're required to use a more secure protocol such as the Kerberos protocol, then you can select one of several options that this security policy setting offers to restrict NTLM usage
 within the domain.
 
 ### Potential impact

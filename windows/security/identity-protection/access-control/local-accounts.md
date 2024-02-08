@@ -1,8 +1,8 @@
 ---
-ms.date: 08/03/2023
+ms.date: 11/07/2023
 title: Local Accounts
 description: Learn how to secure and manage access to the resources on a standalone or member server for services or users.
-ms.topic: conceptual
+ms.topic: concept-article
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -99,7 +99,7 @@ For details about the HelpAssistant account attributes, see the following table.
 |Type|User|
 |Default container|`CN=Users, DC=<domain>`|
 |Default members|None|
-|Default member of|Domain Guests<br/><br/>Guests|
+|Default member of|Domain Guests<br><br>Guests|
 |Protected by ADMINSDHOLDER?|No|
 |Safe to move out of default container?|Can be moved out, but we don't recommend it.|
 |Safe to delegate management of this group to non-Service admins?|No|
@@ -114,7 +114,7 @@ The DSMA has a well-known RID of `503`. The security identifier (SID) of the DSM
 
 The DSMA is a member of the well-known group **System Managed Accounts Group**, which has a well-known SID of `S-1-5-32-581`.
 
-The DSMA alias can be granted access to resources during offline staging even before the account itself has been created. The account and the group are created during first boot of the machine within the Security Accounts Manager (SAM).
+The DSMA alias can be granted access to resources during offline staging even before the account itself is created. The account and the group are created during first boot of the machine within the Security Accounts Manager (SAM).
 
 #### How Windows uses the DefaultAccount
 
@@ -133,10 +133,10 @@ Similarly, Phone auto logs in as a *DefApps* account, which is akin to the stand
 In the converged user model, the multi-user-aware apps and multi-user-aware brokers will need to run in a context different from that of the users.
 For this purpose, the system creates DSMA.
 
-#### How the DefaultAccount gets created on domain controllers
+#### How the DefaultAccount is created on domain controllers
 
-If the domain was created with domain controllers running Windows Server 2016, the DefaultAccount will exist on all domain controllers in the domain.
-If the domain was created with domain controllers running an earlier version of Windows Server, the DefaultAccount will be created after the PDC Emulator role is transferred to a domain controller that runs Windows Server 2016. The DefaultAccount will then be replicated to all other domain controllers in the domain.
+If the domain was created with domain controllers running Windows Server 2016, the DefaultAccount exists on all domain controllers in the domain.
+If the domain was created with domain controllers running an earlier version of Windows Server, the DefaultAccount is created after the PDC Emulator role is transferred to a domain controller that runs Windows Server 2016. The DefaultAccount is then replicated to all other domain controllers in the domain.
 
 #### Recommendations for managing the Default Account (DSMA)
 
@@ -195,7 +195,7 @@ Each of these approaches is described in the following sections.
 
 User Account Control (UAC) is a security feature that informs you when a program makes a change that requires administrative permissions. UAC works by adjusting the permission level of your user account. By default, UAC is set to notify you when applications try to make changes to your computer, but you can change when UAC notifies you.
 
-UAC makes it possible for an account with administrative rights to be treated as a standard user non-administrator account until full rights, also called elevation, is requested and approved. For example, UAC lets an administrator enter credentials during a non-administrator's user session to perform occasional administrative tasks without having to switch users, sign out, or use the *Run as* command.
+UAC makes it possible for an account with administrative rights to be treated as a standard user nonadministrator account until full rights, also called elevation, is requested and approved. For example, UAC lets an administrator enter credentials during a nonadministrator's user session to perform occasional administrative tasks without having to switch users, sign out, or use the *Run as* command.
 
 In addition, UAC can require administrators to specifically approve applications that make system-wide changes before those applications are granted permission to run, even in the administrator's user session.
 

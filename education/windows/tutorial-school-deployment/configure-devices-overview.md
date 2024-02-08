@@ -1,21 +1,24 @@
 ---
 title: Configure devices with Microsoft Intune
 description: Learn how to configure policies and applications in preparation for device deployment.
-ms.date: 08/31/2022
+ms.date: 11/09/2023
 ms.topic: tutorial
+ms.collection: essentials-manage
 ---
 
 # Configure settings and applications with Microsoft Intune
 
 Before distributing devices to your users, you must ensure that the devices will be configured with the required policies, settings, and applications as they get enrolled in Intune.
-Microsoft Intune uses Azure AD groups to assign policies and applications to devices.
+Microsoft Intune uses Microsoft Entra groups to assign policies and applications to devices.
 With Microsoft Intune for Education, you can conveniently create groups and assign policies and applications to them.
 
-In this section you will:
+
 > [!div class="checklist"]
-> * Create groups
-> * Create and assign policies to groups
-> * Create and assign applications to groups
+>In this section you will:
+>
+> - Create groups
+> - Create and assign policies to groups
+> - Create and assign applications to groups
 
 ## Create groups
 

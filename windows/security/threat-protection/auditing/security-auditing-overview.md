@@ -1,10 +1,9 @@
 ---
-title: Security auditing 
+title: Security auditing
 description: Learn about security auditing features in Windows, and how your organization can benefit from using them to make your network more secure and easily managed.
 ms.assetid: 2d9b8142-49bd-4a33-b246-3f0c2a5f32d4
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/09/2021
-ms.technology: itpro-security
 ---
 
 # Security auditing

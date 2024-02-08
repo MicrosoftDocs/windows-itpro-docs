@@ -29,6 +29,15 @@ items:
       href: ../structure-of-oma-dm-provisioning-files.md
     - name: Server requirements for OMA DM
       href: ../server-requirements-windows-mdm.md
+  - name: Declared Configuration protocol
+    href: ../declared-configuration.md
+    items:
+    - name: Declared Configuration extensibility
+      href: ../declared-configuration-extensibility.md
+    - name: DeclaredConfiguration CSP
+      href: declaredconfiguration-csp.md
+    - name: DMClient CSP
+      href: dmclient-csp.md
   - name: Configuration service providers (CSPs)
     expanded: true
     items:
@@ -440,6 +449,8 @@ items:
           href: policy-csp-feeds.md
         - name: FileExplorer
           href: policy-csp-fileexplorer.md
+        - name: FileSystem
+          href: policy-csp-filesystem.md
         - name: Games
           href: policy-csp-games.md
         - name: Handwriting
@@ -526,6 +537,8 @@ items:
           href: policy-csp-stickers.md
         - name: Storage
           href: policy-csp-storage.md
+        - name: Sudo
+          href: policy-csp-sudo.md
         - name: System
           href: policy-csp-system.md
         - name: SystemServices
@@ -554,6 +567,8 @@ items:
           href: policy-csp-webthreatdefense.md
         - name: Wifi
           href: policy-csp-wifi.md
+        - name: WindowsAI
+          href: policy-csp-windowsai.md
         - name: WindowsAutopilot
           href: policy-csp-windowsautopilot.md
         - name: WindowsConnectionManager
@@ -648,6 +663,11 @@ items:
       items:
       - name: CustomDeviceUI DDF file
         href: customdeviceui-ddf.md
+    - name: DeclaredConfiguration
+      href: declaredconfiguration-csp.md
+      items:
+      - name: DeclaredConfiguration DDF file
+        href: declaredconfiguration-ddf-file.md
     - name: Defender
       href: defender-csp.md
       items:

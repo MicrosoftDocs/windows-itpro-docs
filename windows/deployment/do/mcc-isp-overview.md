@@ -1,22 +1,22 @@
 ---
 title: MCC for ISPs Overview
+description: Overview of Microsoft Connected Cache for ISPs. Learn about how MCC works, supported scenarios, and supported content.
+ms.service: windows-client
+ms.subservice: itpro-updates
+ms.topic: overview
 manager: aaroncz
-description: Overview for Microsoft Connected Cache for ISPs
-ms.prod: windows-client
-author: amymzhou
-ms.author: amyzhou
-ms.topic: article
-ms.date: 07/27/2023
-ms.technology: itpro-updates
+ms.author: carmenf
+author: cmknox
+ms.reviewer: mstewart
 ms.collection: tier3
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>	
+ms.date: 07/27/2023
 ---
 
-# Microsoft Connected Cache for ISPs Overview
-
-**Applies to**
-
-- Windows 10
-- Windows 11
+# Microsoft Connected Cache for ISPs overview
 
 Microsoft Connected Cache (MCC) for Internet Service Providers (preview) is a free software-only caching solution that delivers Microsoft content. MCC can be deployed free of charge to as many bare-metal servers or VMs as needed and is managed from a cloud portal. When deployed, MCC can help to reduce your network bandwidth usage for Microsoft software content and updates. Cache nodes are created in the cloud portal and are configured to deliver traffic to customers by manual CIDR or BGP routing.
 
@@ -31,9 +31,9 @@ Microsoft Connected Cache (preview) supports the following scenarios:
 
 Microsoft Connected Cache uses Delivery Optimization as the backbone for Microsoft content delivery. Microsoft Connected Cache caches the following types:
 
-- Windows Update for Business: Windows feature and quality updates
+- Windows updates: Windows feature and quality updates
 - Office Click-to-Run apps: Microsoft 365 Apps and updates
-- Client apps: Microsoft Store apps and updates
+- Client apps: Intune, store apps, and updates
 - Endpoint protection: Windows Defender definition updates
 - Xbox: Xbox Game Pass (PC only)
 

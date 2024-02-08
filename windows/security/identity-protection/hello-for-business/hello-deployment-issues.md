@@ -4,17 +4,18 @@ description: This article is a troubleshooting guide for known Windows Hello for
 ms.date: 06/02/2023
 ms.topic: troubleshooting
 ---
+
 # Windows Hello for Business known deployment issues
 
 The content of this article is to help troubleshoot known deployment issues for Windows Hello for Business.
 
-## PIN reset on Azure AD join devices fails with *We can't open that page right now* error
+## PIN reset on Microsoft Entra join devices fails with *We can't open that page right now* error
 
-PIN reset on Azure AD-joined devices uses a flow called *web sign-in* to authenticate the user above lock. Web sign in only allows navigation to specific domains. If web sign-in attempts to navigate to a domain that isn't allowed, it displays a page with the error message *We can't open that page right now*.
+PIN reset on Microsoft Entra joined devices uses a flow called *web sign-in* to authenticate the user above lock. Web sign in only allows navigation to specific domains. If web sign-in attempts to navigate to a domain that isn't allowed, it displays a page with the error message *We can't open that page right now*.
 
 ### Identify PIN Reset allowed domains issue
 
-The user can launch the PIN reset flow from the lock screen using the *I forgot my PIN* link in the PIN credential provider. Selecting the link launches a full screen UI for the PIN experience on Azure AD Join devices. Typically, the UI displays an Azure authentication page, where the user authenticates using Azure AD credentials and completes MFA.
+The user can launch the PIN reset flow from the lock screen using the *I forgot my PIN* link in the PIN credential provider. Selecting the link launches a full screen UI for the PIN experience on Microsoft Entra join devices. Typically, the UI displays an Azure authentication page, where the user authenticates using Microsoft Entra credentials and completes MFA.
 
 In federated environments, authentication may be configured to route to AD FS or a third-party identity provider. If the PIN reset flow is launched and attempts to navigate to a federated identity provider server page, it fails and displays the *We can't open that page right now* error, if the domain for the server page isn't included in an allowlist.
 
@@ -22,7 +23,7 @@ If you're a customer of *Azure US Government* cloud, PIN reset also attempts to 
 
 ### Resolve PIN Reset allowed domains issue
 
-To resolve the error, you can configure a list of allowed domains for PIN reset using the [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy. For information on how to configure the policy, see [PIN Reset - Configure Web Sign-in Allowed URLs for Third Party Identity Providers on Azure AD Joined Devices](hello-feature-pin-reset.md#configure-web-sign-in-allowed-urls-for-third-party-identity-providers-on-azure-ad-joined-devices).
+To resolve the error, you can configure a list of allowed domains for PIN reset using the [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy. For information on how to configure the policy, see [Configure allowed URLs for federated identity providers on Microsoft Entra joined devices](hello-feature-pin-reset.md#configure-allowed-urls-for-federated-identity-providers-on-azure-ad-joined-devices).
 
 ## Hybrid key trust sign in broken due to user public key deletion
 
@@ -32,11 +33,11 @@ Applies to:
 - Windows Server 2016, builds 14393.3930 to 14393.4048
 - Windows Server 2019, builds 17763.1457 to 17763.1613
 
-In Hybrid key trust deployments with domain controllers running certain builds of Windows Server 2016 and Windows Server 2019, the user's Windows Hello for Business key is deleted after they sign-in. Subsequent sign-ins will fail until the user's key is synced during the next Azure AD Connect delta sync cycle.
+In Hybrid key trust deployments with domain controllers running certain builds of Windows Server 2016 and Windows Server 2019, the user's Windows Hello for Business key is deleted after they sign-in. Subsequent sign-ins will fail until the user's key is synced during the next Microsoft Entra Connect delta sync cycle.
 
 ### Identify user public key deletion issue
 
-After the user provisions a Windows Hello for Business credential in a hybrid key trust environment, the key must sync from Azure AD to AD during an Azure AD Connect sync cycle. The user's public key is written to the `msDS-KeyCredentialLink` attribute of the user object.
+After the user provisions a Windows Hello for Business credential in a hybrid key trust environment, the key must sync from Microsoft Entra ID to Active Directory during a Microsoft Entra Connect Sync cycle. The user's public key is written to the `msDS-KeyCredentialLink` attribute of the user object.
 
 Before the user's Windows Hello for Business key syncs, sign-ins with Windows Hello for Business fail with the error message *That option is temporarily unavailable. For now, please use a different method to sign in.* After the key syncs successfully, the user can sign in and unlock with their PIN or enrolled biometrics.
 
@@ -48,14 +49,14 @@ After the initial sign-in attempt, the user's Windows Hello for Business public 
 
 To resolve the issue, update Windows Server 2016 and 2019 domain controllers with the latest patches. For Windows Server 2016, the behavior is fixed in build *14393.4104* ([KB4593226](https://support.microsoft.com/help/4593226)) and later. For Windows Server 2019, the behavior is fixed in build *17763.1637* ([KB4592440](https://support.microsoft.com/help/4592440)).
 
-## Azure AD joined device access to on-premises resources using key trust and third-party Certificate Authority (CA)
+## Microsoft Entra joined device access to on-premises resources using key trust and third-party Certificate Authority (CA)
 
 Applies to:
 
-- Azure AD joined key trust deployments
+- Microsoft Entra joined key trust deployments
 - Third-party certificate authority (CA) issuing domain controller certificates
 
-Windows Hello for Business uses smart-card based authentication for many operations. This type of authentication has special guidelines when using a third-party CA for certificate issuance, some of which apply to the domain controllers. Not all Windows Hello for Business deployment types require these configurations. Accessing on-premises resources from an Azure AD Joined device does require special configuration when using a third-party CA to issue domain controller certificates.
+Windows Hello for Business uses smart-card based authentication for many operations. This type of authentication has special guidelines when using a third-party CA for certificate issuance, some of which apply to the domain controllers. Not all Windows Hello for Business deployment types require these configurations. Accessing on-premises resources from a Microsoft Entra joined device does require special configuration when using a third-party CA to issue domain controller certificates.
 
 For more information, read [Guidelines for enabling smart card sign in with third-party certification authorities](/troubleshoot/windows-server/windows-security/enabling-smart-card-logon-third-party-certification-authorities).
 
@@ -67,10 +68,10 @@ The issue can be identified using network traces or Kerberos logging from the cl
 Log Name:      Microsoft-Windows-Kerberos/Operational
 Source:        Microsoft-Windows-Security-Kerberos
 Event ID:      107
-GUID:          {98e6cfcb-ee0a-41e0-a57b-622d4e1b30b1} 
+GUID:          {98e6cfcb-ee0a-41e0-a57b-622d4e1b30b1}
 Task Category: None
 Level:         Error
-Keywords:      
+Keywords:
 User:          SYSTEM
 Description:
 
@@ -104,7 +105,7 @@ Domain controllers running early versions of Windows Server 2019 have an issue t
 
 On the client, authentication with Windows Hello for Business fails with the error message, *That option is temporarily unavailable. For now, please use a different method to sign in.*
 
-The error is presented on hybrid Azure AD-joined devices in key trust deployments after Windows Hello for Business is provisioned, but before a user's key is synced from Azure AD to AD. If a user's key isn't synced from Azure AD and the `msDS-keycredentiallink` attribute on the user object in AD is populated for NGC, then it's possible that the error occurs.
+The error is presented on Microsoft Entra hybrid joined devices in key trust deployments after Windows Hello for Business is provisioned, but before a user's key is synced from Microsoft Entra ID to Active Directory. If a user's key isn't synced from Microsoft Entra ID and the `msDS-keycredentiallink` attribute on the user object in AD is populated for NGC, then it's possible that the error occurs.
 
 Another indicator of the failure can be identified using network traces. If you capture network traces for a key trust sign-in event, the traces show Kerberos failing with the error *KDC_ERR_CLIENT_NAME_MISMATCH*.
 
@@ -133,7 +134,7 @@ Date:          <Date and time>
 Event ID:      362
 Task Category: None
 Level:         Warning
-Keywords:     
+Keywords:
 User:          <User SID>
 Computer:      <Computer name>
 Description:
@@ -146,7 +147,7 @@ Local computer meets Windows hello for business hardware requirements: Yes
 User is not connected to the machine via Remote Desktop: Yes
 User certificate for on premise auth policy is enabled: Yes
 Enterprise user logon certificate enrollment endpoint is ready: Not Tested
-Enterprise user logon certificate template is : No ( 1 : StateNoPolicy ) 
+Enterprise user logon certificate template is : No ( 1 : StateNoPolicy )
 User has successfully authenticated to the enterprise STS: No
 Certificate enrollment method: enrollment authority
 See https://go.microsoft.com/fwlink/?linkid=832647 for more details.

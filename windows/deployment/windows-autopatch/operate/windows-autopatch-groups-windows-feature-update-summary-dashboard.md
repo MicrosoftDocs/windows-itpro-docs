@@ -1,14 +1,14 @@
 ---
 title: Windows feature update summary dashboard
 description: Provides a broader view of the current Windows OS upgrade status for all devices registered with Windows Autopatch.
-ms.date: 07/25/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.date: 10/11/2023
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: andredm7
 ms.collection:
   - highpri
@@ -17,19 +17,19 @@ ms.collection:
 
 # Windows feature update summary dashboard
 
-The summary dashboard provides a broader view of the current Windows OS update status for all devices registered with Windows Autopatch.
+The Summary dashboard provides a broader view of the current Windows OS update status for all devices registered with Windows Autopatch.
 
-The first part of the summary dashboard provides you with an all-devices trend report where you can follow the deployment trends within your organization. You can view if updates were successfully installed, failing, in progress, not ready or have their Windows feature update paused.
+The first part of the Summary dashboard provides you with an all-devices trend report where you can follow the deployment trends within your organization. You can view if updates were successfully installed, failing, in progress, not ready or have their Windows feature update paused.
 
-**To view a generated summary dashboard for your Windows feature update deployments:**
+**To view a generated Summary dashboard for your Windows feature update deployments:**
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Reports** from the left navigation menu.
-1. Under the **Windows Autopatch** section, select **Windows feature updates (preview)**.
+1. Under the **Windows Autopatch** section, select **Windows feature updates**.
 
 ## Report information
 
-The following information is available in the summary dashboard:
+The following information is available in the Summary dashboard:
 
 | Column name | Description |
 | ----- | ----- |
@@ -48,5 +48,5 @@ The following options are available:
 
 | Option | Description |
 | ----- | ----- |
-| Refresh | The option to **Refresh** the summary dashboard is available at the top of the page. This process will ensure that the summary dashboard view is updated to the latest available dataset from within the last 24-hour period. |
+| Refresh | The option to **Refresh** the Summary dashboard is available at the top of the page. This process ensures that the Summary dashboard view is updated to the latest available dataset from within the last 24-hour period. |
 | Summary links | Each column represents the summary of included devices. Select the hyperlinked number to produce a filtered report in a new browser tab. |

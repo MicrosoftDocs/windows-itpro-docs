@@ -1,24 +1,23 @@
 ---
 title: Microsoft Connected Cache content and services endpoints
-description: List of fully qualified domain names, ports, and associated content types to use Delivery Optimization and Microsoft Connected Cache.
-ms.date: 03/31/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+description: List of fully qualified domain names, ports, and associated content used by Microsoft Connected Cache.
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
-ms.localizationpriority: medium
 author: cmknox
 ms.author: carmenf
 ms.reviewer: mstewart
 manager: aaroncz
 ms.collection: tier3
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>
+- ✅ <a href=https://learn.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache target=_blank>Connected Cache on a Configuration Manager distribution point</a>		
+ms.date: 03/31/2023
 ---
 
 # Microsoft Connected Cache content and services endpoints
-
-_Applies to:_
-
-- Windows 11
-- Windows 10
 
 > [!NOTE]
 > All ports are outbound.

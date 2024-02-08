@@ -1,25 +1,25 @@
 ---
 title: Delivery Optimization reference
-manager: aaroncz
 description: This article provides a summary of references and descriptions for all of the Delivery Optimization settings.
-ms.prod: windows-client
-author: cmknox
-ms.localizationpriority: medium
-ms.author: carmenf
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
-ms.technology: itpro-updates
-ms.date: 07/31/2023
+author: cmknox
+ms.author: carmenf
+manager: aaroncz
+ms.reviewer: mstewart
 ms.collection: tier3
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
+ms.date: 07/31/2023
 ---
 
 # Delivery Optimization reference
 
-**Applies to**
-
-- Windows 10
-- Windows 11
-
-> **Looking for Group Policy objects?** See [Delivery Optimization reference](waas-delivery-optimization-reference.md) or the master spreadsheet available at the Download Center [for Windows 11](https://www.microsoft.com/en-us/download/details.aspx?id=104594) or [for Windows 10](https://www.microsoft.com/en-us/download/details.aspx?id=104678).
+> **Looking for Group Policy objects?** See [Delivery Optimization reference](waas-delivery-optimization-reference.md) or the main spreadsheet available at the Download Center [for Windows 11](https://www.microsoft.com/en-us/download/details.aspx?id=104594) or [for Windows 10](https://www.microsoft.com/en-us/download/details.aspx?id=104678).
 
 There are many configuration options you can set in Delivery Optimization to customize the content delivery experience specific to your environment needs. This article summarizes those configurations for your reference. If you just need an overview of Delivery Optimization, see [What is Delivery Optimization](waas-delivery-optimization.md). If you need information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization for Windows](waas-delivery-optimization-setup.md).
 
@@ -34,9 +34,9 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 
 | Group Policy setting | MDM setting | Supported from version | Notes |
 | --- | --- | --- | ------- |
-| [Download mode](#download-mode) | DODownloadMode | 1511 | Default is set to LAN(1). The Group [Download mode](#download-mode) (2) combined with [Group ID](#group-id), enables administrators to create custom device groups that will share content between devices in the group.|
-| [Group ID](#group-id)  | DOGroupID | 1511 | Used with Group [Download mode](#download-mode). If not set, check [GroupIDSource](#select-the-source-of-group-ids). When GroupID or GroupIDSource policies aren't set, the GroupID is defined as the AD Site (1), Authenticated domain SID (2) or Azure AD Tenant ID (5), in that order.  |
-| [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 | If not set, check [Group ID](#group-id). When the GroupID or GroupIDSource policies aren't set, the Group is defined as the AD Site (1), Authenticated domain SID (2) or Azure AD Tenant ID (5), in that order. |
+| [Download mode](#download-mode) | DODownloadMode | 1511 | Default is set to LAN(1). The Group [Download mode](#download-mode) (2) combined with [Group ID](#group-id), enables administrators to create custom device groups that share content between devices in the group.|
+| [Group ID](#group-id)  | DOGroupID | 1511 | Used with Group [Download mode](#download-mode). If not set, check [GroupIDSource](#select-the-source-of-group-ids). When GroupID or GroupIDSource policies aren't set, the GroupID is defined as the AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order.  |
+| [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 | If not set, check [Group ID](#group-id). When the GroupID or GroupIDSource policies aren't set, the Group is defined as the AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order. |
 | [Select a method to restrict peer selection](#select-a-method-to-restrict-peer-selection) | DORestrictPeerSelectionBy | 1803 | Starting in Windows 11, a new option to use 'Local discovery (DNS-SD)' is available to set via this policy. |
 | [Minimum RAM (inclusive) allowed to use peer caching](#minimum-ram-inclusive-allowed-to-use-peer-caching) | DOMinRAMAllowedToPeer | 1703 | Default value is 4 GB. |
 | [Minimum disk size allowed to use peer caching](#minimum-disk-size-allowed-to-use-peer-caching) | DOMinDiskSizeAllowedToPeer | 1703 | Default value is 32 GB. |
@@ -48,6 +48,8 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Monthly upload data cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 | Default value is 20 GB. |
 | [Minimum background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 | Recommend setting this to 500 KB/s. Default value is 2500 KB/s. |
 | [Enable peer caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1709 | Default is to not allow peering while on VPN. |
+| [VPN Keywords](#vpn-keywords) | DOVpnKeywords | 22H2 September Moment | Allows you to set one or more keywords used to recognize VPN connections. |
+| [Disallow Cache Server Downloads from VPN](#disallow-cache-server-downloads-on-vpn) | DODisallowCacheServerDownloadsOnVPN | 22H2 September Moment | Disallow downloads from Microsoft Connected Cache servers when the device connects via VPN. By default, the device is allowed to download from Microsoft Connected Cache when connected via VPN. |
 | [Allow uploads while the device is on battery while under set battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1709 | Default is to not allow peering while on battery.  |
 | [Maximum foreground download bandwidth (percentage)](#maximum-foreground-download-bandwidth) | DOPercentageMaxForegroundBandwidth | 1803 | Default is '0' which will dynamically adjust. |
 | [Maximum background download bandwidth (percentage)](#maximum-background-download-bandwidth) | DOPercentageMaxBackgroundBandwidth | 1803 | Default is '0' which will dynamically adjust. |
@@ -133,7 +135,7 @@ Download mode dictates which download sources clients are allowed to use when do
 | Bypass (100) | Starting in Windows 11, this option is deprecated. Don't set **Download mode** to '100' (Bypass), which can cause some content to fail to download. If you want to disable peer-to-peer functionality, set DownloadMode to (0). If your device doesn't have internet access, set Download Mode to (99). When you set Bypass (100), the download bypasses Delivery Optimization and uses BITS instead. You don't need to set this option if you're using Configuration Manager. |
 
 > [!NOTE]
-> When you use Azure Active Directory tenant, AD Site, or AD Domain as the source of group IDs, the association of devices participating in the group should not be relied on for an authentication of identity of those devices.
+> When you use Microsoft Entra tenant, AD Site, or AD Domain as the source of group IDs, the association of devices participating in the group should not be relied on for an authentication of identity of those devices.
 
 ### Group ID
 
@@ -157,9 +159,9 @@ Starting in Windows 10, version 1803, set this policy to restrict peer selection
 - 2 = Authenticated domain SID
 - 3 = DHCP Option ID (with this option, the client queries DHCP Option ID 234 and use the returned GUID value as the Group ID)
 - 4 = DNS Suffix
-- 5 = Starting with Windows 10, version 1903, you can use the Azure AD Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
+- 5 = Starting with Windows 10, version 1903, you can use the Microsoft Entra tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
-When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy is ignored. The default behavior, when the GroupID or GroupIDSource policies aren't set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or Azure AD Tenant ID (5), in that order. If GroupIDSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.  
+When set, the Group ID will be assigned automatically from the selected source. This policy is ignored if the GroupID policy is also set. The default behavior, when the GroupID or GroupIDSource policies aren't set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order. If GroupIDSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.  
 
 ### Minimum RAM (inclusive) allowed to use Peer Caching  
 
@@ -174,19 +176,19 @@ MDM Setting: **DOMinDiskSizeAllowedToPeer**
 This setting specifies the required minimum disk size (capacity in GB) for the device to use Peer Caching. The recommended values are 64 to 256, and **the default value is 32 GB**.
 
 >[!NOTE]
->If the [Modify Cache Drive](#modify-cache-drive) policy is set, the disk size check will apply to the new working directory specified by this policy.
+>If the [Modify Cache Drive](#modify-cache-drive) policy is set, the disk size check applies to the new working directory specified by this policy.
 
 ### Max Cache Age
 
 MDM Setting: **DOMaxCacheAge**
 
-In environments configured for Delivery Optimization, you might want to set an expiration on cached updates and Windows application installation files. If so, this setting defines the maximum number of seconds each file can be held in the Delivery Optimization cache on each Windows 10 client device. Alternatively, organizations might choose to set this value to "0" which means "unlimited" to avoid peers redownloading content. When "Unlimited" value is set, Delivery Optimization holds the files in the cache longer and will clean up the cache as needed (for example when the cache size exceeded the maximum space allowed). **The default value is 259,200 seconds (three days)**.
+In environments configured for Delivery Optimization, you might want to set an expiration on cached updates and Windows application installation files. If so, this setting defines the maximum number of seconds each file can be held in the Delivery Optimization cache on each Windows 10 client device. Alternatively, organizations might choose to set this value to "0" which means "unlimited" to avoid peers redownloading content. When "Unlimited" value is set, Delivery Optimization holds the files in the cache longer and cleans up the cache as needed (for example when the cache size exceeded the maximum space allowed). **The default value is 259,200 seconds (three days)**.
 
 ### Max Cache Size
 
 MDM Setting: **DOMaxCacheSize**
 
-This setting limits the maximum amount of space the Delivery Optimization cache can use as a percentage of the available drive space, from 1 to 100. For example, if you set this value to 10 on a Windows client device that has 100 GB of available drive space, then Delivery Optimization uses up to 10 GB of that space. Delivery Optimization will constantly assess the available drive space and automatically clear the cache to keep the maximum cache size under the set percentage. **The default value is 20%**.
+This setting limits the maximum amount of space the Delivery Optimization cache can use as a percentage of the available drive space, from 1 to 100. For example, if you set this value to 10 on a Windows client device that has 100 GB of available drive space, then Delivery Optimization uses up to 10 GB of that space. Delivery Optimization constantly assesses the available drive space and automatically clear the cache to keep the maximum cache size under the set percentage. **The default value is 20%**.
 
 ### Absolute Max Cache Size
 
@@ -202,10 +204,10 @@ This setting specifies the minimum content file size in MB enabled to use Peer C
 
 ### Maximum Download Bandwidth
 
-MDM Setting: **DOMaxUploadBandwidth**
+MDM Setting: **DOMaxDownloadBandwidth**
 
 Deprecated in Windows 10, version 2004.
-This setting specifies the maximum download bandwidth that can be used across all concurrent Delivery Optimization downloads in kilobytes per second (KB/s). **A default value of "0"** means that Delivery Optimization will dynamically adjust and optimize the maximum bandwidth used.
+This setting specifies the maximum download bandwidth that can be used across all concurrent Delivery Optimization downloads in kilobytes per second (KB/s). **A default value of "0"** means that Delivery Optimization dynamically adjusts and optimize the maximum bandwidth used.
 
 
 ### Maximum Foreground Download Bandwidth
@@ -255,9 +257,9 @@ MDM Setting: **DORestrictPeerSelectionBy**
 
 Starting in Windows 10, version 1803, set this policy to restrict peer selection via selected option. In Windows 11, the 'Local Peer Discovery' option was introduced to restrict peer discovery to the local network. Currently the available options include: 0 = NAT, 1 = Subnet mask, and 2 = Local Peer Discovery. These options apply to both Download Modes LAN (1) and Group (2) and therefore means there's no peering between subnets.
 
-If Group mode is set, Delivery Optimization will connect to locally discovered peers that are also part of the same Group (have the same Group ID).
+If Group mode is set, Delivery Optimization connects to locally discovered peers that are also part of the same Group (have the same Group ID).
 
-The Local Peer Discovery (DNS-SD) option can only be set via MDM delivered policies on Windows 11 builds. This feature can be enabled in supported Windows 10 builds by setting the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization\DORestrictPeerSelectionBy` value to **2**.
+In Windows 11, the Local Peer Discovery (DNS-SD) option can be set via MDM or Group Policy. However, in Windows 10, this feature can be enabled by setting the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization\DORestrictPeerSelectionBy` value to **2**.
 
 ### Delay background download from HTTP (in secs)
 
@@ -275,9 +277,7 @@ Starting in Windows 10, version 1803, allows you to delay the use of an HTTP sou
 
 MDM Setting: **DelayCacheServerFallbackForeground**
 
-Starting in Windows 10, version 1903, allows you to delay the fallback from cache server to the HTTP source for foreground content download by X seconds. If the 'Delay foreground download from HTTP' policy is set, it will apply first (to allow downloads from peers) and then this policy will be applied. **By default, this policy isn't set.**
-
-By default this policy isn't set. So,
+Starting in Windows 10, version 1903, allows you to delay the fallback from cache server to the HTTP source for foreground content download by X seconds. If the 'Delay foreground download from HTTP policy is set, it will apply first (to allow downloads from peers) and then this policy will be applied. **By default, this policy isn't set.**
 
 ### Delay Background Download Cache Server Fallback (in secs)
 
@@ -303,11 +303,23 @@ MDM Setting: **DOMonthlyUploadDataCap**
 
 This setting specifies the total amount of data in gigabytes that a Delivery Optimization client can upload to Internet peers per month. A value of "0" means that an unlimited amount of data can be uploaded. **The default value for this setting is 20 GB.**
 
-### Enable Peer Caching while the device connects via VPN
+### Enable peer caching while the device connects via VPN
 
 MDM Setting: **DOAllowVPNPeerCaching**
 
 This setting determines whether a device will be allowed to participate in Peer Caching while connected to VPN. **By default, if a VPN connection is detected, peering isn't allowed, except when the 'Local Discovery' (DNS-SD) option is chosen.** Specify "true" to allow the device to participate in Peer Caching while connected via VPN to the domain network. The device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
+
+### VPN Keywords
+
+MDM Setting: **DOVpnKeywords**
+
+This policy allows you to set one or more comma-separated keywords used to recognize VPN connections. **By default, this policy is not set so if a VPN is detected, the device will not use peering.** Delivery Optimization automatically detects a VPN connection by looking at the network adapter's 'Description' and 'FriendlyName' strings using the default keyword list including: “VPN”, “Secure”, and “Virtual Private Network” (ex: “MSFTVPN” matches the “VPN” keyword). As the number of VPNs grow it’s difficult to support an ever-changing list of VPN names. To address this, we’ve introduced this new setting to set unique VPN names to meet the needs of individual environments.
+
+### Disallow cache server downloads on VPN
+
+MDM Setting: **DODisallowCacheServerDownloadsOnVPN**
+
+This policy disallows downloads from Connected Cache servers when the device connects via VPN. **By default, the device is allowed to download from Connected Cache when connected via VPN.** Set this policy if you prefer devices to download directly from the Internet when connected remotely (via VPN) instead of pulling from a Microsoft Connected Cache server deployed on your corporate network.
 
 ### Allow uploads while the device is on battery while under set Battery level
 
@@ -323,7 +335,7 @@ The device can download from peers while on battery regardless of this policy.
 
 MDM Setting: **DOCacheHost**
 
-Set this policy to designate one or more Microsoft Connected Cache servers to be used by Delivery Optimization. You can set one or more FQDNs or IP Addresses that are comma-separated, for example: myhost.somerandomhost.com,myhost2.somerandomhost.com,10.10.1.7. **By default, this policy has no value.**
+Set this policy to designate one or more Microsoft Connected Cache servers to be used by Delivery Optimization. You can set one or more FQDNs or IP Addresses that are comma-separated, for example: myhost.somerandomhost.com,myhost2.somerandomhost.com,10.10.1.7. **By default, this policy has no value.** Delivery Optimization client will connect to the listed Microsoft Connected Cache servers in the order as they are listed. When multiple FQDNs or IP Addresses are listed, the Microsoft Connected Cache server priority order is determined based on the order as they are listed. If the first server fails, it will move the next one. When the last server fails, it will fallback to the CDN.
 
 >[!IMPORTANT]
 > Any value will signify that the policy is set. For example, an empty string ("") isn't considered empty.

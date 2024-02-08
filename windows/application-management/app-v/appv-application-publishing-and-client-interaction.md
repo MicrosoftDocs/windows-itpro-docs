@@ -2,13 +2,14 @@
 title: Application Publishing and Client Interaction (Windows 10/11)
 description: Learn technical information about common App-V Client operations and their integration with the local operating system.
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 06/08/2018
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
+ms.collection: must-keep
 ms.topic: article
-ms.technology: itpro-apps
+ms.subservice: itpro-apps
 ---
 # Application publishing and client interaction
 

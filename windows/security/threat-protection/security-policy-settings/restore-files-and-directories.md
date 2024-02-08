@@ -1,10 +1,9 @@
 ---
-title: Restore files and directories - security policy setting 
+title: Restore files and directories - security policy setting
 description: Describes the best practices, location, values, policy management, and security considerations for the Restore files and directories security policy setting.
 ms.assetid: c673c0fa-6f49-4edd-8c1f-c5e8513f701d
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +11,8 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Restore files and directories - security policy setting
@@ -58,13 +56,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or Group Policy Object (GPO) | Default value |
 | - | - |
-|Default Domain Policy | |  
-| Default Domain Controller Policy| Administrators<br/>Backup Operators<br/>Server Operators| 
-| Stand-Alone Server Default Settings | Administrators<br/>Backup Operators| 
-| Domain Controller Effective Default Settings | Administrators<br/>Backup Operators<br/>Server Operators| 
-| Member Server Effective Default Settings | Administrators<br/>Backup Operators| 
-| Client Computer Effective Default Settings | Administrators<br/>Backup Operators| 
- 
+|Default Domain Policy | |
+| Default Domain Controller Policy| Administrators<br/>Backup Operators<br/>Server Operators|
+| Stand-Alone Server Default Settings | Administrators<br/>Backup Operators|
+| Domain Controller Effective Default Settings | Administrators<br/>Backup Operators<br/>Server Operators|
+| Member Server Effective Default Settings | Administrators<br/>Backup Operators|
+| Client Computer Effective Default Settings | Administrators<br/>Backup Operators|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.
@@ -93,7 +91,7 @@ This section describes how an attacker might exploit a feature or its configurat
 An attacker with the **Restore files and directories** user right could restore sensitive data to a computer and overwrite data that is more recent, which could lead to loss of important data, data corruption, or a denial-of-service condition. Attackers could overwrite executable files that are used by legitimate administrators or system services with versions that include malicious software to grant themselves elevated privileges, compromise data, or install programs that provide continued access to the device
 
 >**Note:**  Even if the following countermeasure is configured, an attacker could restore data to a computer in a domain that is controlled by the attacker. Therefore, it is critical that organizations carefully protect the media that are used to back up data.
- 
+
 ### Countermeasure
 
 Ensure that only the local Administrators group is assigned the **Restore files and directories** user right unless your organization has clearly defined roles for backup and for restore personnel.

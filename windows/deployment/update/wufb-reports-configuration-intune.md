@@ -1,20 +1,21 @@
 ---
-title: Configuring Microsoft Intune devices for Windows Update for Business reports
-manager: aaroncz
-description: Configuring devices that are enrolled in Microsoft Intune for Windows Update for Business reports
-ms.prod: windows-client
+title: Configure devices using Microsoft Intune
+titleSuffix: Windows Update for Business reports
+description: How to configure devices to use Windows Update for Business reports from Microsoft Intune.
+ms.service: windows-client
+ms.subservice: itpro-updates
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: medium
-ms.topic: article
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11 and Windows 10</a> devices managed by <a href=https://learn.microsoft.com/mem/intune/fundamentals/what-is-intune target=_blank>Microsoft Intune</a>
 ms.date: 03/08/2023
-ms.technology: itpro-updates
 ---
 
 # Configuring Microsoft Intune devices for Windows Update for Business reports
 <!--37063317, 30141258, 37063041-->
-***(Applies to: Windows 11 & Windows 10 managed by [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)***
-
 
 This article is targeted at configuring devices enrolled to [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) for Windows Update for Business reports, within Microsoft Intune itself. Configuring devices for Windows Update for Business reports in Microsoft Intune breaks down to the following steps:
 

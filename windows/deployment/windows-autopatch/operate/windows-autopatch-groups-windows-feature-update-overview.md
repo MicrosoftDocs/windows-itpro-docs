@@ -2,13 +2,13 @@
 title: Windows feature updates overview
 description: This article explains how Windows feature updates are managed with Autopatch groups
 ms.date: 07/25/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: andredm7
 ms.collection:
   - highpri
@@ -64,7 +64,7 @@ Windows Autopatch’s default Windows feature update release is a service-driven
 > [!TIP]
 > Windows Autopatch allows you to [create custom Windows feature update releases](../operate/windows-autopatch-groups-manage-windows-feature-update-release.md#create-a-custom-release).
 
-When devices are registered by manually adding them to the Windows Autopatch Device Registration Azure AD assigned group, devices are assigned to deployment rings as part of the default Autopatch group. Each deployment ring has its own Windows feature update policy assigned to them. This is intended to minimize unexpected Windows OS upgrades once new devices register with the service.
+When devices are registered by manually adding them to the Windows Autopatch Device Registration Microsoft Entra ID assigned group, devices are assigned to deployment rings as part of the default Autopatch group. Each deployment ring has its own Windows feature update policy assigned to them. This is intended to minimize unexpected Windows OS upgrades once new devices register with the service.
 
 The policies:
 
@@ -98,7 +98,7 @@ There are two scenarios that the Global release is used:
 
 | Scenario | Description |
 | ----- | ----- |
-| Scenario #1 | You assign Azure AD groups to be used with the deployment ring (Last) or you add additional deployment rings when you customize the [Default Autopatch group](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group).<p>A global Windows feature update policy is automatically assigned behind the scenes to the newly added deployment rings or when you assigned Azure AD groups to the deployment ring (Last) in the Default Autopatch group.</p> |
+| Scenario #1 | You assign Microsoft Entra groups to be used with the deployment ring (Last) or you add additional deployment rings when you customize the [Default Autopatch group](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group).<p>A global Windows feature update policy is automatically assigned behind the scenes to the newly added deployment rings or when you assigned Microsoft Entra groups to the deployment ring (Last) in the Default Autopatch group.</p> |
 | Scenario #2 | You create new [Custom Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#create-a-custom-autopatch-group).<p>The global Windows feature policy is automatically assigned behind the scenes to all deployment rings as part of the Custom Autopatch groups you create.</p> |
 
 > [!NOTE]
@@ -142,7 +142,7 @@ Feature update policies work with Windows Update rings policies. Windows Update 
 
 The following table details the default Windows Update rings policy values that affect either the default or custom Windows feature updates releases:
 
-| Policy name | Azure AD group assignment | Quality updates deferral in days | Feature updates deferral in days | Feature updates uninstall window in days | Deadline for quality updates in days | Deadline for feature updates in days | Grace period | Auto restart before deadline |
+| Policy name | Microsoft Entra group assignment | Quality updates deferral in days | Feature updates deferral in days | Feature updates uninstall window in days | Deadline for quality updates in days | Deadline for feature updates in days | Grace period | Auto restart before deadline |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | Windows Autopatch Update Policy - default - Test | Windows Autopatch - Test | 0 | 0 | 30 | 0 | 5 | 0 | Yes |
 | Windows Autopatch Update Policy - default - Ring1 | Windows Autopatch - Ring1 | 1 | 0 | 30 | 2 | 5 |2 | Yes |

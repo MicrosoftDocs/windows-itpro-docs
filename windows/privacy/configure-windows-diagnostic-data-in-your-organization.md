@@ -1,12 +1,12 @@
 ---
 description: Use this article to make informed decisions about how you can configure Windows diagnostic data in your organization.
 title: Configure Windows diagnostic data in your organization (Windows 10 and Windows 11)
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
+manager: laurawi
 ms.date: 03/11/2016
 ms.collection: highpri
 ms.topic: conceptual
@@ -321,9 +321,11 @@ For the best experience, use the most current build of any operating system spec
 The diagnostic data setting on the device should be set to Required diagnostic data or higher, and the following endpoints need to be reachable:
 
 - us-v10c.events.data.microsoft.com (eu-v10c.events.data.microsoft.com for tenants with billing address in the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations))
-- umwatsonc.events.data.microsoft.com (eu-watsonc.events.data.microsoft.com for tenants with billing address in the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations))
+- watsonc.events.data.microsoft.com (eu-watsonc.events.data.microsoft.com for tenants with billing address in the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations))
 - settings-win.data.microsoft.com
 - *.blob.core.windows.net
+
+Tenants with billing addresses in countries or regions in the Middle East and Africa, as well as European countries or regions not in the EU, also use the eu-v10c.events.data.microsoft.com and eu-watsonc.events.data.microsoft.com endpoints. Their diagnostic data is processed initially in Europe, but those tenants aren't considered part of the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn).
 
 >[!Note]
 > - Windows diagnostic data collected from a device before it was enabled with Windows diagnostic data processor configuration will be deleted when this configuration is enabled.
@@ -334,7 +336,7 @@ The diagnostic data setting on the device should be set to Required diagnostic d
 > [!NOTE]
 > The information in this section applies to the following versions of Windows:
 > - Windows 10, versions 20H2, 21H2, 22H2, and newer
-> - Windows 11, versions 21H2, 22H2, and newer
+> - Windows 11, versions 21H2, 22H2, 23H2, and newer
 
 Starting with the January 2023 preview cumulative update, how you enable the processor configuration option depends on the billing address of the Azure AD tenant to which your devices are joined.
 
@@ -342,20 +344,16 @@ Starting with the January 2023 preview cumulative update, how you enable the pro
 
 For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) in the EU or EFTA, the Windows diagnostic data for that device will be automatically configured for the processor option. The Windows diagnostic data for those devices will be processed in Europe.
 
-> [!NOTE]
-> The Windows diagnostic data processor configuration has components for which work is in progress to be included in the EU Data Boundary, but completion of this work is delayed beyond January 1, 2023. These components will be included in the EU Data Boundary in the coming months. In the meantime, Microsoft will temporarily transfer data out of the EU Data Boundary as part of service operations to ensure uninterrupted operation of the services customers signed up for.
-
 From a compliance standpoint, this change means that Microsoft will be the processor and the organization will be the controller of the Windows diagnostic data. IT admins for those organizations will become responsible for responding to their users’ [data subject requests](/compliance/regulatory/gdpr-dsr-windows).
 
 #### Devices in Azure AD tenants with a billing address outside of the EU and EFTA
 
 For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) outside of the EU and EFTA, to enable the processor configuration option, the organization must sign up for any of the following enterprise services, which rely on diagnostic data:
 
-- [Update Compliance](/windows/deployment/update/update-compliance-monitor)
 - [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview)
 - [Windows Update for Business deployment service](/windows/deployment/update/deployment-service-overview)
-- [Microsoft Managed Desktop](/managed-desktop/intro/)
-- [Endpoint analytics (in Microsoft Intune)](/mem/analytics/overview)
+- [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview)
+- [Windows updates reports (in Microsoft Intune)](/mem/intune/protect/data-enable-windows-data#windows-data)
 
 *(Additional licensing requirements may apply to use these services.)*
 

@@ -1,23 +1,13 @@
 ---
 title: Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
 description: Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
-author: aczechowski
-ms.prod: windows-client
-ms.collection: tier3
-ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
+ms.date: 1/25/2024
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
 
-**Applies to**
--   Windows 10, version 1607
-
-User Experience Virtualization (UE-V) uses XML settings location templates to define the settings that User Experience Virtualization captures and applies. UE-V includes a set of standard settings location templates. It also includes the UE-V template generator tool that enables you to create custom settings location templates. After you create and deploy settings location templates, you can manage those templates by using Windows PowerShell and the Windows Management Instrumentation (WMI). 
+User Experience Virtualization (UE-V) uses XML settings location templates to define the settings that User Experience Virtualization captures and applies. UE-V includes a set of standard settings location templates. It also includes the UE-V template generator tool that enables you to create custom settings location templates. After you create and deploy settings location templates, you can manage those templates by using Windows PowerShell and the Windows Management Instrumentation (WMI).
 
 > [!NOTE]
 > For a complete list of UE-V cmdlets, see [User Experience Virtualization in Windows PowerShell](/powershell/module/uev/).
@@ -30,10 +20,9 @@ You must have administrator permissions to update, register, or unregister a set
 
 **To manage settings location templates by using Windows PowerShell**
 
-1.  Use an account with administrator rights to open a Windows PowerShell command prompt.
+1. Use an account with administrator rights to open a Windows PowerShell command prompt.
+1. Use the following Windows PowerShell cmdlets to register and manage the UE-V settings location templates.
 
-2.  Use the following Windows PowerShell cmdlets to register and manage the UE-V settings location templates.
-    
     |Windows PowerShell command|Description|
     |--- |--- |
     |`Get-UevTemplate`|Lists all the settings location templates that are registered on the computer.|
@@ -63,18 +52,15 @@ You must have administrator permissions to update, register, or unregister a set
     |`Enable-UevAppXPackage [-CurrentComputerUser] [-PackageFamilyName] <package family name>[,<package family name>]`|Enables one or more Windows apps in the current user Windows app list.|
     |`Test-UevTemplate [-Path] <template file path>[,<template file path>]`|Determines whether one or more settings location templates comply with its XML schema. Can use relative paths and wildcard characters.|
     |`Test-UevTemplate -LiteralPath <template file path>[,<template file path>]`|Determines whether one or more settings location templates comply with its XML schema. The path must be a full path to the template file, but does not include wildcard characters.|
-    
+
 The UE-V Windows PowerShell features enable you to manage a group of settings templates that are deployed in your enterprise. Use the following procedure to manage a group of templates by using Windows PowerShell.
-    
+
 **To manage a group of settings location templates by using Windows PowerShell**
 
-1.  Modify or update the desired settings location templates.
-
-2.  If you want to modify or update the settings location templates, deploy those settings location templates to a folder that is accessible to the local computer.
-
-3.  On the local computer, open a Windows PowerShell window with administrator rights.
-
-4.  Unregister all the previously registered versions of the templates by typing the following command.
+1. Modify or update the desired settings location templates.
+1. If you want to modify or update the settings location templates, deploy those settings location templates to a folder that is accessible to the local computer.
+1. On the local computer, open a Windows PowerShell window with administrator rights.
+1. Unregister all the previously registered versions of the templates by typing the following command.
 
     ```powershell
     Unregister-UevTemplate -All
@@ -82,7 +68,7 @@ The UE-V Windows PowerShell features enable you to manage a group of settings te
 
     This command unregisters all active templates on the computer.
 
-5.  Register the updated templates by typing the following command.
+1. Register the updated templates by typing the following command.
 
     ```powershell
     Register-UevTemplate <path to template folder>\*.xml
@@ -104,25 +90,32 @@ To display a list of Windows apps that can synchronize settings on a computer wi
 
 **Definitions of Get-UevAppxPackage properties**
 
-<a href="" id="packagefamilyname"></a>**PackageFamilyName**  
+<a href="" id="packagefamilyname"></a>**PackageFamilyName**
+
 The name of the package that is installed for the current user.
 
-<a href="" id="enabled"></a>**Enabled**  
+<a href="" id="enabled"></a>**Enabled**
+
 Defines whether the settings for the app are configured to synchronize.
 
-<a href="" id="enabledsource"></a>**EnabledSource**  
+<a href="" id="enabledsource"></a>**EnabledSource**
+
 The location where the configuration that enables or disables the app is set. Possible values are: *NotSet*, *LocalMachine*, *LocalUser*, *PolicyMachine*, and *PolicyUser*.
 
-<a href="" id="notset"></a>**NotSet**  
+<a href="" id="notset"></a>**NotSet**
+
 The policy is not configured to synchronize this app.
 
-<a href="" id="localmachine"></a>**LocalMachine**  
+<a href="" id="localmachine"></a>**LocalMachine**
+
 The enabled state is set in the local computer section of the registry.
 
-<a href="" id="localuser"></a>**LocalUser**  
+<a href="" id="localuser"></a>**LocalUser**
+
 The enabled state is set in the current user section of the registry.
 
-<a href="" id="policymachine"></a>**PolicyMachine**  
+<a href="" id="policymachine"></a>**PolicyMachine**
+
 The enabled state is set in the policy section of the local computer section of the registry.
 
 To get the user-configured list of Windows apps, at the Windows PowerShell command prompt, enter: `Get-UevAppxPackage -CurrentComputerUser`
@@ -133,13 +126,16 @@ For either parameter, CurrentComputerUser or Computer, the cmdlet returns a list
 
 **Definitions of properties**
 
-<a href="" id="packagefamilyname"></a>**PackageFamilyName**  
+<a href="" id="packagefamilyname"></a>**PackageFamilyName**
+
 The name of the package that is installed for the current user.
 
-<a href="" id="enabled"></a>**Enabled**  
+<a href="" id="enabled"></a>**Enabled**
+
 Defines whether the settings for the app are configured to synchronize for the specified switch, that is, **user** or **computer**.
 
-<a href="" id="installed"></a>**Installed**  
+<a href="" id="installed"></a>**Installed**
+
 True if the app, that is, the PackageFamilyName is installed for the current user.
 
 ### Manage UE-V settings location templates by using WMI
@@ -148,9 +144,9 @@ User Experience Virtualization provides the following set of WMI commands. Admin
 
 **To manage settings location templates by using WMI**
 
-1.  Use an account with administrator rights to open a Windows PowerShell window.
+1. Use an account with administrator rights to open a Windows PowerShell window.
 
-2.  Use the following WMI commands to register and manage the UE-V settings location templates.
+1. Use the following WMI commands to register and manage the UE-V settings location templates.
 
     |`Windows PowerShell command`|Description|
     |--- |--- |
@@ -178,7 +174,5 @@ User Experience Virtualization provides the following set of WMI commands. Admin
 ## Related topics
 
 [Administering UE-V with Windows PowerShell and WMI](uev-administering-uev-with-windows-powershell-and-wmi.md)
-
 [Administering UE-V](uev-administering-uev.md)
-
 [User Experience Virtualization in Windows PowerShell](/powershell/module/uev/)

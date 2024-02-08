@@ -1,20 +1,13 @@
 ---
 title: Windows Tools/Administrative Tools
 description: The folders for Windows Tools and Administrative Tools are folders in the Control Panel that contain tools for system administrators and advanced users.
-ms.prod: windows-client
-author: vinaypamnani-msft
-ms.author: vinpa
-manager: aaroncz
 ms.localizationpriority: medium
-ms.date: 04/11/2023
-ms.topic: article
+ms.date: 08/10/2023
+ms.topic: conceptual
 ms.collection:
 - highpri
 - tier2
-ms.technology: itpro-manage
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+- essentials-manage
 ---
 
 # Windows Tools/Administrative Tools
@@ -70,6 +63,6 @@ These tools were included in previous versions of Windows. The associated docume
 > [!TIP]
 > If the linked content in this list doesn't provide the information you need to use that tool, send feedback with the **This page** link in the **Feedback** section at the bottom of this article.
 
-## Related topics
+## Related articles
 
 [Diagnostic data viewer](/windows/privacy/diagnostic-data-viewer-overview)

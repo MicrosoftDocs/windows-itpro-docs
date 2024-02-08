@@ -1,14 +1,14 @@
 ---
 title: Windows update policies
 description: This article explains Windows update policies in Windows Autopatch
-ms.date: 12/02/2022
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.date: 09/02/2023
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: adnich
 ms.collection:
   - tier2
@@ -57,7 +57,7 @@ The following policies contain settings that apply to both Windows quality and f
 
 ## Windows feature update policies
 
-The service deploys policies using Microsoft Intune to control how Windows feature updates are deployed to devices.  
+The service deploys policies using Microsoft Intune to control how Windows feature updates are deployed to devices.
 
 ### Windows feature updates for Windows 10 and later
 

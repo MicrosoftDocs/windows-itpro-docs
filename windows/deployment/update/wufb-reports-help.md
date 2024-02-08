@@ -1,20 +1,21 @@
 ---
-title: Windows Update for Business reports feedback, support, and troubleshooting
-manager: aaroncz
-description: Windows Update for Business reports support information.
-ms.prod: windows-client
+title: Feedback, support, and troubleshooting
+titleSuffix: Windows Update for Business reports
+description: Windows Update for Business reports support, feedback, and troubleshooting information.
+ms.service: windows-client
+ms.subservice: itpro-updates
+ms.topic: article
 author: mestew
 ms.author: mstewart
-ms.topic: article
+manager: aaroncz
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 02/10/2023
-ms.technology: itpro-updates
 ---
 
 # Windows Update for Business reports feedback, support, and troubleshooting
-
 <!-- MAX6325272, OS33771278 -->
-***(Applies to: Windows 11 & Windows 10)***
-
 There are several resources that you can use to find help with Windows Update for Business reports. Whether you're just getting started or an experienced administrator, use the following resources when you need help with Windows Update for Business reports:
 
 - Send [product feedback about Windows Update for Business reports](#send-product-feedback)

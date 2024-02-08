@@ -1,14 +1,7 @@
 ---
 title: ADMX_ExternalBoot Policy CSP
 description: Learn more about the ADMX_ExternalBoot Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -28,7 +21,7 @@ ms.topic: reference
 <!-- PortableOperatingSystem_Hibernate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PortableOperatingSystem_Hibernate-Applicability-End -->
 
 <!-- PortableOperatingSystem_Hibernate-OmaUri-Begin -->
@@ -48,6 +41,8 @@ Specifies whether the PC can use the hibernation sleep state (S4) when started f
 
 <!-- PortableOperatingSystem_Hibernate-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!IMPORTANT]
+> Windows To Go was announced as deprecated in Windows 10, version 1903, and was removed in version 2004. For more information, see [Features and functionality removed in Windows](/windows/whats-new/removed-features).
 <!-- PortableOperatingSystem_Hibernate-Editable-End -->
 
 <!-- PortableOperatingSystem_Hibernate-DFProperties-Begin -->
@@ -87,7 +82,7 @@ Specifies whether the PC can use the hibernation sleep state (S4) when started f
 <!-- PortableOperatingSystem_Launcher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PortableOperatingSystem_Launcher-Applicability-End -->
 
 <!-- PortableOperatingSystem_Launcher-OmaUri-Begin -->
@@ -109,6 +104,8 @@ This policy setting controls whether the PC will boot to Windows To Go if a USB 
 
 <!-- PortableOperatingSystem_Launcher-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!IMPORTANT]
+> Windows To Go was announced as deprecated in Windows 10, version 1903, and was removed in version 2004. For more information, see [Features and functionality removed in Windows](/windows/whats-new/removed-features).
 <!-- PortableOperatingSystem_Launcher-Editable-End -->
 
 <!-- PortableOperatingSystem_Launcher-DFProperties-Begin -->
@@ -148,7 +145,7 @@ This policy setting controls whether the PC will boot to Windows To Go if a USB 
 <!-- PortableOperatingSystem_Sleep-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PortableOperatingSystem_Sleep-Applicability-End -->
 
 <!-- PortableOperatingSystem_Sleep-OmaUri-Begin -->
@@ -168,6 +165,8 @@ Specifies whether the PC can use standby sleep states (S1-S3) when starting from
 
 <!-- PortableOperatingSystem_Sleep-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!IMPORTANT]
+> Windows To Go was announced as deprecated in Windows 10, version 1903, and was removed in version 2004. For more information, see [Features and functionality removed in Windows](/windows/whats-new/removed-features).
 <!-- PortableOperatingSystem_Sleep-Editable-End -->
 
 <!-- PortableOperatingSystem_Sleep-DFProperties-Begin -->

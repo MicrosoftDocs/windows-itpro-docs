@@ -3,10 +3,10 @@ title: Windows Upgrade and Migration Considerations (Windows 10)
 description: Discover the Microsoft tools you can use to move files and settings between installations including special considerations for performing an upgrade or migration.
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ms.date: 08/09/2023
 ---
 
@@ -37,7 +37,7 @@ You can use USMT to automate migration during large deployments of the Windows o
 
 > [!IMPORTANT]
 >
-> USMT only supports devices that are joined to a local Active Directory domain. USMT doesn't support Azure AD joined devices. 
+> USMT only supports devices that are joined to a local Active Directory domain. USMT doesn't support Microsoft Entra joined devices. 
 
 ## Upgrade and migration considerations
 Whether you're upgrading or migrating to a new version of Windows, you must be aware of the following issues and considerations:

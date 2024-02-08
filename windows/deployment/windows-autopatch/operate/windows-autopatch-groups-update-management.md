@@ -2,17 +2,18 @@
 title: Software update management for Autopatch groups
 description: This article provides an overview of how updates are handled with Autopatch groups
 ms.date: 07/25/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: overview
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: andredm7
 ms.collection:
   - highpri
   - tier1
+  - essentials-manage
 ---
 
 # Software update management
@@ -32,9 +33,9 @@ Keeping your devices up to date is a balance of speed and stability. Windows Aut
 
 ## Autopatch groups
 
-Autopatch groups help Microsoft Cloud-Managed services meet all organizations where they are at in their update management journey.  
+Autopatch groups help Microsoft Cloud-Managed services meet all organizations where they are at in their update management journey.
 
-Autopatch groups is a logical container that groups several [Azure AD groups](/azure/active-directory/fundamentals/active-directory-groups-view-azure-portal), and software update policies, such as Windows Update rings and feature update policies, together.
+Autopatch groups is a logical container that groups several [Microsoft Entra groups](/azure/active-directory/fundamentals/active-directory-groups-view-azure-portal), and software update policies, such as Windows Update rings and feature update policies, together.
 
 For more information on key benefits and how to use Autopatch groups, see [Autopatch groups overview](../deploy/windows-autopatch-groups-overview.md).
 
