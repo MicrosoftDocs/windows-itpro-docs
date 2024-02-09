@@ -74,7 +74,7 @@ For more information, see [Review requirements on devices](#review-requirements-
 
 ### Active Directory synchronization with Microsoft Entra ID
 
-If there is an on-premises Active Directory Domain Services (AD DS) domain, identities in the on-premises AD DS domain need to be synchronized with Microsoft Entra ID. This synchronization is required for users to have a _single identity_ that they can use to access their on-premises apps and cloud services that use Microsoft Entra ID. An example of a cloud service is Windows Enterprise E3 or E5.
+If there's an on-premises Active Directory Domain Services (AD DS) domain, identities in the on-premises AD DS domain need to be synchronized with Microsoft Entra ID. This synchronization is required for users to have a _single identity_ that they can use to access their on-premises apps and cloud services that use Microsoft Entra ID. An example of a cloud service is Windows Enterprise E3 or E5.
 
 **Figure 1** illustrates the integration between the on-premises AD DS domain with Microsoft Entra ID. Microsoft Entra Connect is responsible for synchronization of identities between the on-premises AD DS domain and Microsoft Entra ID. Microsoft Entra Connect is a service that can be installed on-premises or in a virtual machine in Azure.
 
@@ -125,13 +125,13 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 1. At this point, updates for Windows Setup might be installed. If updates are installed, the device reboots to finish installing the updates.
 
-1. In Windows 11 Pro editions, the **Let's name your device** screen appears. Give the device a name and then select the **Next** button. After giving the device a name, the device might reboot.
+1. In Windows 11 Pro editions, the **Let's name your device** screen appears. Give the device a name and then select the **Next** button. After the device is given a name, the device might reboot.
 
 1. In Windows 11 Pro editions, the **How would you like to set up this device?** screen appears. Select **Set up for work or school** and then select the **Next** button.
 
 1. In the **Let's set things up for your work or school** screen:
 
-    1. In the **someone@example.com** text box under **Sign in**, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username will be in the email format of user@domain.com.
+    1. In the **someone@example.com** text box under **Sign in**, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username is in the email format of user@domain.com.
 
     1. In the **Password** text box under **Enter password**, enter the password for the Microsoft Entra user account, and then select the **Sign in** button.
 
@@ -157,7 +157,7 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 1. In Windows 10 Pro editions, the **How would you like to set up?** screen appears. Select **Set up for an organization** and then select the **Next** button.
 
-1. In the **Sign in with Microsoft** screen, in the **someone@example.com** text box, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username will be in the email format of user@domain.com.
+1. In the **Sign in with Microsoft** screen, in the **someone@example.com** text box, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username is in the email format of user@domain.com.
 
 1. In the **Enter your password** screen, in the **Password** text box, enter the password for the Microsoft Entra user account, and then select the **Next** button.
 
@@ -177,7 +177,7 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 
 ::: zone pivot="windows-11"
 
-1. Right click on the Start menu and select **Settings**.
+1. Right-click on the Start menu and select **Settings**.
 
 1. In the **Settings** app, select **Accounts** in the left hand pane.
 
@@ -189,19 +189,19 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 
     1. In the **Set up a work or school account** page, under **Alternate actions:**, select **Join this device to Microsoft Entra ID**.
 
-    1. In the **Email or phone** text box of the **Sign in** page, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username will be in the email format of user@domain.com.
+    1. In the **Email or phone** text box of the **Sign in** page, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username is in the email format of user@domain.com.
 
     1. In the **Password** text box of the **Enter password** page, enter the password for the Microsoft Entra user account, and then select the **Sign in** button.
 
     1. When the **Make sure this is your organization** window opens, confirm the information is correct and then select the **Join** button.
 
-    1. The device will join the organization's Microsoft Entra ID subscription. Once complete, the **You're all set!** page is displayed. Select the **Done** button to complete the process.
+    1. The device joins the organization's Microsoft Entra ID subscription. Once complete, the **You're all set!** page is displayed. Select the **Done** button to complete the process.
 
 ::: zone-end
 
 ::: zone pivot="windows-10"
 
-1. Right click on the Start menu and select **Settings**.
+1. Right-click on the Start menu and select **Settings**.
 
 1. In the **Settings** app, select **Accounts**.
 
@@ -213,13 +213,13 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 
     1. In the **Set up a work or school account** page, under **Alternate actions:**, select **Join this device to Microsoft Entra ID**.
 
-    1. In the **Email or phone** text box of the **Sign in** page, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username will be in the email format of user@domain.com.
+    1. In the **Email or phone** text box of the **Sign in** page, enter the username for the Microsoft Entra user account, and then select the **Next** button. The username is in the email format of user@domain.com.
 
     1. In the **Password** text box of the **Enter password** page, enter the password for the Microsoft Entra user account, and then select the **Sign in** button.
 
     1. When the **Make sure this is your organization** window opens, confirm the information is correct and then select the **Join** button.
 
-    1. The device will join the organization's Microsoft Entra subscription. Once complete, the **You're all set!** page is displayed. Select the **Done** button to complete the process.
+    1. The device joins the organization's Microsoft Entra subscription. Once complete, the **You're all set!** page is displayed. Select the **Done** button to complete the process.
 
 ::: zone-end
 
@@ -239,7 +239,7 @@ To verify the Windows Enterprise E3 or E5 subscription:
 
 ::: zone pivot="windows-11"
 
-1. Right click on the Start menu and select **Settings**.
+1. Right-click on the Start menu and select **Settings**.
 
 1. In the **Settings** app, select **System** in the left hand pane.
 
@@ -263,7 +263,7 @@ To verify the Windows Enterprise E3 or E5 subscription:
 
 ::: zone pivot="windows-10"
 
-1. Right click on the Start menu and select **Settings**.
+1. Right-click on the Start menu and select **Settings**.
 
 1. In the **Settings** app, select **Update & Security**.
 
@@ -285,7 +285,7 @@ To verify the Windows Enterprise E3 or E5 subscription:
 
 ::: zone-end
 
-Devices where both the subscription and activation are active are considered healthy. If there are any problems with the Windows Enterprise E3 or E5 license or the activation of the license, the **Activation** pane displays the appropriate error message or status. This information can be used to help diagnose the licensing and activation process.
+A device is healthy when both the subscription and activation are active. If there are any problems with the Windows Enterprise E3 or E5 license or the activation of the license, the **Activation** pane displays the appropriate error message or status. This information can be used to help diagnose the licensing and activation process.
 
 > [!NOTE]
 >
@@ -301,8 +301,8 @@ Devices where both the subscription and activation are active are considered hea
 
 In some instances, users might experience problems with the Windows Enterprise E3 or E5 subscription. The most common problems that users might experience are the following issues:
 
-- The Windows Enterprise E3 or E5 subscription lapsed, was removed, or hasn't been applied.
-- Windows Pro was never activated activated.
+- The Windows Enterprise E3 or E5 subscription has lapsed, was removed, or isn't applied.
+- Windows Pro was never activated.
 
 ### Activation pane errors
 
@@ -322,7 +322,7 @@ The following are errors that can occur in the Activation pane with Windows Ente
 
 - **Windows Enterprise subscription isn't active**
 
-  When a device has a Windows Enterprise subscription that's lapsed or removed, the following message is displayed next to **Subscription** in the Activation pane:
+  When a device a Windows Enterprise subscription has lapsed or has been removed, the following message is displayed next to **Subscription** in the Activation pane:
 
   `Windows Enterprise subscription isn't valid.`
 
@@ -362,7 +362,7 @@ Use the following procedures to review whether a particular device meets these r
     (Get-CimInstance -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey
     ```
 
-  1. If the device has a firmware-embedded activation key, it's displayed in the output. If the output is blank, the device doesn't have a firmware embedded activation key. Most modern OEM-provided devices designed to run currently supported versions of Windows have a firmware-embedded key.
+  1. If the device has a firmware-embedded activation key, the key is displayed in the output. If the output is blank, the device doesn't have a firmware embedded activation key. Most modern OEM-provided devices designed to run currently supported versions of Windows have a firmware-embedded key.
 
 - **Determine if a device is Microsoft Entra joined**
 
