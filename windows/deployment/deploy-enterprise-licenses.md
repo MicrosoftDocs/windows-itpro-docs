@@ -358,9 +358,9 @@ Use the following procedures to review whether a particular device meets these r
 
   1. In the elevated Windows PowerShell command prompt, enter:
 
-    ```powershell
-    (Get-CimInstance -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey
-    ```
+      ```powershell
+      (Get-CimInstance -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey
+      ```
 
   1. If the device has a firmware-embedded activation key, the key is displayed in the output. If the output is blank, the device doesn't have a firmware embedded activation key. Most modern OEM-provided devices designed to run currently supported versions of Windows have a firmware-embedded key.
 
@@ -372,23 +372,23 @@ Use the following procedures to review whether a particular device meets these r
 
   1. In the command prompt window, enter:
 
-    ```cmd
-    dsregcmd /status
-    ```
+      ```cmd
+      dsregcmd.exe /status
+      ```
 
   1. Review the output. Under the first section called **Device State**, verify that the value of **AzureAdJoined** is **YES**. If the value is **YES**,  the device is joined to Microsoft Entra ID.
 
-    ```console
-    +----------------------------------------------------------------------+
-    | Device State                                                         |
-    +----------------------------------------------------------------------+
+      ```console
+      +----------------------------------------------------------------------+
+      | Device State                                                         |
+      +----------------------------------------------------------------------+
 
-             AzureAdJoined : YES
-          EnterpriseJoined : NO
-              DomainJoined : NO
-           Virtual Desktop : NOT SET
-               Device Name : Demo-PC
-    ```
+               AzureAdJoined : YES
+            EnterpriseJoined : NO
+                DomainJoined : NO
+             Virtual Desktop : NOT SET
+                 Device Name : Demo-PC
+      ```
 
 - **Determine if the version of Windows is currently supported**
 
@@ -398,9 +398,9 @@ Use the following procedures to review whether a particular device meets these r
 
   1. In the command prompt window, enter:
 
-    ```cmd
-    winver.exe
-    ```
+      ```cmd
+      winver.exe
+      ```
 
   1. The **About Windows** window opens and displays both the OS version and the build information of Windows.
 
@@ -445,10 +445,14 @@ There might be a delay in the activation of the Enterprise license in Windows. T
 
     > [!NOTE]
     >
-    > Make sure to first check what the group policy of **Do not connect to any Windows Update Internet locations** is set to. If this policy is **Enabled**, then this registry key will eventually be reset back to `1` even after it's manually set to `0` via `reg.exe`. Setting the policy of **Do not connect to any Windows Update Internet locations** to **Disabled** or **Not Configured** will make sure the registry value remains as `0`.
+    > Make sure to first check the group policy of **Do not connect to any Windows Update Internet locations**. If the policy is **Enabled**, then this registry key will eventually be reset back to `1` even after it's manually set to `0` via `reg.exe`. Setting the policy of **Do not connect to any Windows Update Internet locations** to **Disabled** or **Not Configured** will make sure the registry value remains as `0`.
 
 ## Virtual Desktop Access (VDA)
 
 Subscriptions to Windows Enterprise are also available for virtualized clients. Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Azure or in another qualified multitenant host.
 
 Virtual machines (VMs) must be configured to enable Windows Enterprise subscriptions for VDA. Active Directory-joined and Microsoft Entra joined clients are supported. For more information, see [Enable VDA for Enterprise subscription activation](vda-subscription-activation.md).
+
+## Related articles
+
+- [MDM enrollment of Windows devices](/windows/client-management/mdm-enrollment-of-windows-devices).
