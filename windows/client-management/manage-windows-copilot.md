@@ -3,7 +3,7 @@ title: Manage Copilot in Windows
 description: Learn how to manage Copilot in Windows for commercial environments using MDM and group policy. Learn about the chat providers available to Copilot in Windows.
 ms.topic: conceptual
 ms.subservice: windows-copilot
-ms.date: 02/05/2024
+ms.date: 02/09/2024
 ms.author: mstewart
 author: mestew
 appliesto:
@@ -19,7 +19,7 @@ Copilot in Windows provides centralized generative AI assistance to your users r
 
 > [!Note]
 > - Copilot in Windows is currently available as a preview. We will continue to experiment with new ideas and methods using your feedback.
-> - Copilot in Windows is being released in preview to select global markets as part of our latest update to Windows 11. The initial markets for the Copilot in Windows preview include North America and parts of Asia and South America. It is our intention to add additional markets over time.
+> - Copilot in Windows (in preview) is available in select global markets and will be rolled out to additional markets over time. [Learn more](https://www.microsoft.com/windows/copilot-ai-features#faq). <!--8737645-->
 
 ## Configure Copilot in Windows for commercial environments
 
