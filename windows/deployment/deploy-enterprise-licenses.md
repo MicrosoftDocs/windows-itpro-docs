@@ -304,9 +304,9 @@ In some instances, users might experience problems with the Windows Enterprise E
 - The Windows Enterprise E3 or E5 subscription lapsed, was removed, or hasn't been applied.
 - Windows Pro was never activated activated.
 
-### Common problems with Activation
+### Activation pane errors
 
-The following are common issues experiences with Windows Enterprise E3 or E5 subscription:
+The following are errors that can occur in the Activation pane with Windows Enterprise E3 or E5 subscriptions:
 
 - **Windows Pro isn't activated**
 
@@ -350,9 +350,9 @@ Devices must also be joined to Microsoft Entra ID, or hybrid domain joined with 
 
 Use the following procedures to review whether a particular device meets these requirements:
 
-- Firmware-embedded activation key.
+- **Determine if devices has a firmware-embedded activation key**
 
-  To determine if the computer has a firmware-embedded activation key:
+  To determine if the device has a firmware-embedded activation key:
 
   1. Open an elevated Windows PowerShell command prompt.
 
@@ -364,28 +364,50 @@ Use the following procedures to review whether a particular device meets these r
 
   1. If the device has a firmware-embedded activation key, it's displayed in the output. If the output is blank, the device doesn't have a firmware embedded activation key. Most modern OEM-provided devices designed to run currently supported versions of Windows have a firmware-embedded key.
 
-- Determine if a device is Microsoft Entra joined.
+- **Determine if a device is Microsoft Entra joined**
+
+  To determine if a device is Microsoft Entra joined:
 
   1. Open a command prompt.
 
-  1. In the command prompt, enter:
+  1. In the command prompt window, enter:
 
     ```cmd
     dsregcmd /status
     ```
 
-  1. Review the output in the **Device State** section. If the **AzureAdJoined** value is **YES**, the device is joined to Microsoft Entra ID.
+  1. Review the output. Under the first section called **Device State**, verify that the value of **AzureAdJoined** is **YES**. If the value is **YES**,  the device is joined to Microsoft Entra ID.
 
-- Determine the version of Windows.
+    ```console
+    +----------------------------------------------------------------------+
+    | Device State                                                         |
+    +----------------------------------------------------------------------+
 
-  1. Open a command prompt and enter `winver`.
+             AzureAdJoined : YES
+          EnterpriseJoined : NO
+              DomainJoined : NO
+           Virtual Desktop : NOT SET
+               Device Name : Demo-PC
+    ```
 
-  1. The **About Windows** window displays the OS version and build information.
+- **Determine if the version of Windows is currently supported**
 
-  1. Compare this information again the Windows support lifecycle:
+  To determine if the version of Windows is currently supported:
 
-      - [Windows 10 release information](/windows/release-health/release-information).
+  1. Open a command prompt
+
+  1. In the command prompt window, enter:
+
+    ```cmd
+    winver.exe
+    ```
+
+  1. The **About Windows** window opens and displays both the OS version and the build information of Windows.
+
+  1. Compare the information from the **About Windows** window against the Windows support lifecycle:
+
       - [Windows 11 release information](/windows/release-health/windows11-release-information).
+      - [Windows 10 release information](/windows/release-health/release-information).
 
 ### Delay in the activation of Enterprise license of Windows
 
@@ -393,17 +415,37 @@ There might be a delay in the activation of the Enterprise license in Windows. T
 
 ## Known issues
 
-If a device isn't able to connect to Windows Update, it can lose activation status or be blocked from upgrading to Windows Enterprise. To work around this issue:
+- If a device isn't able to connect to Windows Update, it can lose activation status or be blocked from upgrading to Windows Enterprise. Make sure that Windows Update isn't blocked on the device:
 
-- Make sure that the device doesn't have the following registry value:
+  - Make sure that the following group policy setting is set to **Disabled** or **Not Configured**:
 
-  `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations = 1 (REG_DWORD)`.
+    ::: zone pivot="windows-11"
 
-  If this registry value exists, it must be set to `0`.
+    **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Manage updates offered from Windows Server Update Service** > **Do not connect to any Windows Update Internet locations**
 
-- Make sure that the following group policy setting is **disabled**:
+    ::: zone-end
 
-  **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Don't connect to any Windows Update Internet locations**
+    ::: zone pivot="windows-10"
+
+    **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Do not connect to any Windows Update Internet locations**
+
+    ::: zone-end
+
+    If this policy is set to **Enabled**, it must be changed to **Disabled** or **Not Configured**.
+
+  - In the following registry key:
+
+    `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`
+
+    check if the value `DoNotConnectToWindowsUpdateInternetLocations` exists. If the value does exist, verify that it has a REG_DWORD value of  `0`. If the value is instead set to `1`, it must be changed to `0`. The value can be changed by running the following command from an elevated command prompt:
+
+    ```cmd
+    reg.exe add HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate /v DoNotConnectToWindowsUpdateInternetLocations /t REG_DWORD /d 1 /f
+    ```
+
+    > [!NOTE]
+    >
+    > Make sure to first check what the group policy of **Do not connect to any Windows Update Internet locations** is set to. If this policy is **Enabled**, then this registry key will eventually be reset back to `1` even after it's manually set to `0` via `reg.exe`. Setting the policy of **Do not connect to any Windows Update Internet locations** to **Disabled** or **Not Configured** will make sure the registry value remains as `0`.
 
 ## Virtual Desktop Access (VDA)
 
