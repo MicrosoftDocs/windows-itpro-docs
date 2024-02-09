@@ -1,16 +1,8 @@
 ---
-title: DeviceFormFactor (Windows 10)
+title: DeviceFormFactor
 description: This section describes the DeviceFormFactor setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
 ms.topic: reference
-ms.collection: must-keep
-ms.date: 04/30/2018
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
+ms.date: 01/25/2024
 ---
 
 # DeviceFormFactor (Windows Configuration Designer reference)
@@ -21,9 +13,9 @@ Use to identify the form factor of the device.
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| DeviceForm | ✔️  | ✔️ |  |  |
+| DeviceForm | ✅  | ✅ |  |  |
 
-Specifies the device form factor running Windows 10. Generally, the device form is set by the original equipment manufacturer (OEM), however you might want to change the device form based on its usage in your organization.
+Specifies the device form factor running Windows 1. Generally, the device form is set by the original equipment manufacturer (OEM), however you might want to change the device form based on its usage in your organization.
 
 DeviceForm supports the following features or components:
 
@@ -34,11 +26,11 @@ Select the appropriate form from the dropdown menu.
 
 | Device form | Description |
 | --- | --- |
-| Phone | A typical smartphone combines cellular connectivity, a touch screen, rechargeable power source, and other components into a single chassis. | 
+| Phone | A typical smartphone combines cellular connectivity, a touch screen, rechargeable power source, and other components into a single chassis. |
 | LargeScreen | Microsoft Surface Hub |
 | HMD | (Head-mounted display) A holographic computer that is untethered - no wires, phones, or connection to a PC needed. |
-| IndustryHandheld | A device screen less than 7” diagonal designed for industrial solutions. May or may not have a cellular stack.  |
-| IndustryTablet | A device with an integrated screen greater than 7” diagonal and no attached keyboard designed for industrial solutions as opposed to consumer personal computer. May or may not have a cellular stack. |
+| IndustryHandheld | A device screen less than 7" diagonal designed for industrial solutions. May or may not have a cellular stack.  |
+| IndustryTablet | A device with an integrated screen greater than 7" diagonal and no attached keyboard designed for industrial solutions as opposed to consumer personal computer. May or may not have a cellular stack. |
 | Banking | A machine at a bank branch or another location that enables customers to perform basic banking activities including withdrawing money and checking one's bank balance. |
 | BuildingAutomation | A controller for industrial environments that can include the scheduling and automatic operation of certain systems such as conferencing, heating and air conditioning, and lighting. |
 | DigitalSignage | A computer or playback device that's connected to a large digital screen and displays video or multimedia content for informational or advertising purposes. |
@@ -63,8 +55,3 @@ Select the appropriate form from the dropdown menu.
 | AIO | An All-in-One (AIO) device is an evolution of the traditional desktop with an attached display. |
 | Stick | A device that turns your TV into a Windows computer. Plug the stick into the HDMI slot on the TV and connect a USB or Bluetooth keyboard or mouse. |
 | Puck | A small-size PC that users can use to plug in a monitor and keyboard. |
- 
-
-
-
- 

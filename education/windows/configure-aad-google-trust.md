@@ -26,7 +26,7 @@ To test federation, the following prerequisites must be met:
 1. A Google Workspace environment, with users already created
     > [!IMPORTANT]
     > Users require an email address defined in Google Workspace, which is used to match the users in Microsoft Entra ID.
-    > For more information about identity matching, see [Identity matching in Microsoft Entra ID](federated-sign-in.md#identity-matching-in-azure-ad).
+    > For more information about identity matching, see [Identity matching in Microsoft Entra ID](federated-sign-in.md#identity-matching-in-microsoft-entra-id).
 1. Individual Microsoft Entra accounts already created: each Google Workspace user will require a matching account defined in Microsoft Entra ID. These accounts are commonly created through automated solutions, for example:
     - School Data Sync (SDS)
     - Microsoft Entra Connect Sync for environment with on-premises AD DS

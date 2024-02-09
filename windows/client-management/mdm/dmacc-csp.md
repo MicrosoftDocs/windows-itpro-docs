@@ -1,7 +1,7 @@
 ---
 title: DMAcc CSP
 description: Learn more about the DMAcc CSP.
-ms.date: 01/18/2024
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -709,7 +709,7 @@ Specifies the authentication type. If AAuthLevel is CLCRED, the supported types 
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Get, Replace |
-| Dependency [AAuthlevelDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/DMAcc/[AccountUID]/AppAuth/[ObjectName]/AAuthLevel` <br> Dependency Allowed Value: `SRVCRED` <br> Dependency Allowed Value Type: `ENUM` <br>  |
+| Dependency [AAuthlevelDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Syncml/DMAcc/[AccountUID]/AppAuth/[ObjectName]/AAuthLevel` <br> Dependency Allowed Value: `SRVCRED` <br> Dependency Allowed Value Type: `ENUM` <br>  |
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthType-DFProperties-End -->
 
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthType-AllowedValues-Begin -->

@@ -2,8 +2,8 @@
 title: # ARTICLE TITLE in 55 chars or less, most important for SEO. Best to match H1 and TOC, but doesn't have to.
 description: # A summary of the content. 75-300 characters. Used in site search. Sometimes used on a search engine results page for improved SEO. Always end with period.
 ms.date: mm/dd/yyyy
-ms.prod: windows-client
-ms.technology: itpro-fundamentals # itpro-deploy itpro-updates itpro-apps itpro-manage itpro-configure itpro-security itpro-privacy itpro-edu
+ms.service: windows-client
+ms.subservice: itpro-fundamentals # itpro-deploy itpro-updates itpro-apps itpro-manage itpro-configure itpro-security itpro-privacy itpro-edu
 ms.topic: conceptual #reference troubleshooting how-to end-user-help overview (more in contrib guide)
 ms.localizationpriority: medium #high null
 author: # GitHub username (aczechowski)
@@ -13,6 +13,7 @@ manager: # MS alias of manager (dougeby/aaroncz)
 ms.collection: # optional
 - # highpri - high priority, strategic, important, current, etc. articles (confirm with manager prior to use)
 - # education - part of M365 for Education vertical
+- # tier1 tier2 tier3
 ---
 
 # Metadata and Markdown Template

@@ -2,6 +2,14 @@
 
 
 
+## Week of January 29, 2024
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/30/2024 | [Microsoft 365 Education Documentation](/education/index) | modified |
+
+
 ## Week of January 15, 2024
 
 

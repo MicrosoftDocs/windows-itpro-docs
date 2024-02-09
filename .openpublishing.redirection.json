@@ -1757,7 +1757,7 @@
     },
     {
       "source_path": "windows/deploy/deploy-whats-new.md",
-      "redirect_url": "/windows/deployment/deploy-whats-new",
+      "redirect_url": "/windows/deployment/",
       "redirect_document_id": false
     },
     {

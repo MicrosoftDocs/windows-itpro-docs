@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: smithcharles
 ms.collection:
   - highpri
@@ -65,7 +65,7 @@ The type of banner that appears depends on the severity of the action. Currently
 > [!NOTE]
 > Only the Windows Autopatch sections of your tenant will be marked as **inactive**.
 
-When Windows Autopatch is **inactive**, you're alerted with banners on all Windows Autopatch blades. You only have access to the Tenant management and Support requests blades. All other blades return an error message and redirect you to Tenant management blade.  
+When Windows Autopatch is **inactive**, you're alerted with banners on all Windows Autopatch blades. You only have access to the Tenant management and Support requests blades. All other blades return an error message and redirect you to Tenant management blade.
 
 To be taken out of the **inactive** status, you must [resolve any critical actions shown in the Tenant management blade](#critical-actions).
 
