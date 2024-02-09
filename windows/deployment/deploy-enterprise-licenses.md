@@ -304,39 +304,43 @@ In some instances, users might experience problems with the Windows Enterprise E
 - The Windows Enterprise E3 or E5 subscription lapsed, was removed, or hasn't been applied.
 - Windows Pro was never activated activated.
 
-### Common problems in the Activation pane
+### Common problems with Activation
 
-Use the following figures to help troubleshoot when users experience common problems:
+The following are common issues experiences with Windows Enterprise E3 or E5 subscription:
 
-#### Windows Pro isn't activated
+- **Windows Pro isn't activated**
 
-When Windows Pro isn't activated on a device, the following message is displayed next to **Activation** in the Activation pane:
+  When Windows Pro isn't activated on a device, the following message is displayed next to **Activation** in the Activation pane:
 
-`Windows is not activated`
+  `Windows is not activated`
 
-Additionally, under **Activation**, the following message might be displayed:
+  Additionally, under **Activation**, the following message might be displayed:
 
-`We can't activate Windows on this device right now. You can try activating again later or go to the Store to buy genuine Windows. Error code: 0xC004F034.`
+  `We can't activate Windows on this device right now. You can try activating again later or go to the Store to buy genuine Windows. Error code: 0xC004F034.`
 
-This problem can also occur if the starting edition of Windows wasn't Windows Pro. For example, the starting edition of Windows was Windows Home.
+  This problem can also occur if the starting edition of Windows wasn't Windows Pro. For example, the starting edition of Windows was Windows Home.
 
-#### Windows Enterprise subscription isn't active
+- **Windows Enterprise subscription isn't active**
 
-When a device has a Windows Enterprise subscription that's lapsed or removed, the following message is displayed next to **Subscription** in the Activation pane:
+  When a device has a Windows Enterprise subscription that's lapsed or removed, the following message is displayed next to **Subscription** in the Activation pane:
 
-`Windows Enterprise subscription isn't valid.`
+  `Windows Enterprise subscription isn't valid.`
 
-::: zone pivot="windows-11"
+  ::: zone pivot="windows-11"
 
-If the Windows Enterprise subscription has never been applied, the **Subscription** pane isn't displayed.
+  > [!NOTE]
+  >
+  > If the Windows Enterprise subscription has never been applied, the **Subscription** pane isn't displayed.
 
-::: zone-end
+  ::: zone-end
 
-::: zone pivot="windows-10"
+  ::: zone pivot="windows-10"
 
-If the Windows Enterprise subscription has never been applied, the **Subscription** field isn't displayed.
+  > [!NOTE]
+  >
+  > If the Windows Enterprise subscription has never been applied, the **Subscription** field isn't displayed.
 
-::: zone-end
+  ::: zone-end
 
 ### Review requirements on devices
 
