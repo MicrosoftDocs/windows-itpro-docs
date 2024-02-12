@@ -4,6 +4,7 @@ description: Learn how to create an XML file to configure a kiosk device.
 ms.date: 02/12/2024
 ms.topic: how-to
 zone_pivot_groups: windows-versions-11-10
+appliesto:
 ---
 
 # Create an Assigned Access configuration XML file
@@ -17,6 +18,8 @@ Let's start by looking at the basic structure of the XML file.
 - A profile has no effect if it's not associated to a user account
 
 You can start your file by pasting the following XML code into a text editor, and saving the file as `filename.xml`.
+
+::: zone pivot="windows-11"
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -44,6 +47,38 @@ You can start your file by pasting the following XML code into a text editor, an
     </Configs>
 </AssignedAccessConfiguration>
 ```
+
+::: zone-end
+
+::: zone pivot="windows-10"
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config"
+    <Profiles>
+        <Profile Id="">
+            <AllAppsList>
+                <AllowedApps/>
+            </AllAppsList>
+            <StartLayout/>
+            <Taskbar/>
+        </Profile>
+    </Profiles>
+    <Configs>
+        <Config>
+            <Account/>
+            <DefaultProfile Id=""/>
+        </Config>
+    </Configs>
+</AssignedAccessConfiguration>
+```
+
+::: zone-end
 
 ## Profiles node
 
