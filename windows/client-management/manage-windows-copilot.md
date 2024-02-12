@@ -113,7 +113,7 @@ To verify that Copilot with commercial data protection is enabled for the user a
 1. Copilot with commercial data protection is used as the chat provider platform for users when the following conditions are met:
    - Users have an eligible license, commercial data protection in Copilot is enabled, and the [Copilot in Windows user experience is enabled](#enable-the-copilot-in-windows-user-experience-for-windows-11-version-22h2-clients).
    - Users are signed in with their Microsoft Entra ID (work accounts)
-      - Users can sign into Windows with their MIcrosoft Entra ID
+      - Users can sign into Windows with their Microsoft Entra ID
       - For Active Directory users on Windows 11, a Microsoft Entra ID in the Web Account Manager (WAM) authentication broker can be used. Entra IDs in Microsoft Edge profiles and Microsoft 365 Apps would both be in WAM. <!--8470699-->
 
 The following sample PowerShell script connects to Microsoft Graph and lists which users that have Copilot with commercial data protection enabled and disabled:
