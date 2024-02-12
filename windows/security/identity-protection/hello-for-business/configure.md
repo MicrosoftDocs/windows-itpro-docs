@@ -22,14 +22,14 @@ Some of the Windows Hello for Business policies are available for both computer 
 
 - *User policies* take precedence over *computer policies*. If a user policy is set, the corresponded computer policy is ignored. If a user policy isn't set, the computer policy is used
 - Windows Hello for Business policy settings are enforced using the following hierarchy:
-  - User GPO
-  - Computer GPO
-  - User MDM (PassportForWork CSP)
-  - Device MDM (PassportForWork CSP)
-  - Exchange Active Sync (DeviceLock CSP)
+  - User - GPO
+  - Computer - GPO
+  - User - PassportForWork CSP
+  - Device - PassportForWork CSP
+  - Exchange Active Sync - [DeviceLock CSP](/windows/client-management/mdm/policy-csp-devicelock)
 
 >[!IMPORTANT]
->If you configure password length and complexity settings defined by the [DeviceLock CSP](/windows/client-management/mdm/policy-csp-devicelock), and PIN length and complexity settings defined by the PassportForWork CSP, Windows enforces the strictest policy out of the set of governing policies.
+>If you configure password length and complexity settings defined by the DeviceLock CSP, and PIN length and complexity settings defined by the PassportForWork CSP, Windows enforces the strictest policy out of the set of governing policies.
 >
 >The DeviceLock CSP utilizes the Exchange ActiveSync Policy (EAS) engine. For more information, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn282287(v=ws.11)).
 
