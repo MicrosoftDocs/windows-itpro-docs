@@ -139,6 +139,8 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 1. In the **Choose privacy settings for your device** screen, configure privacy settings as desired, using the **Next** button to go between settings. Once complete, select the **Accept** button.
 
+1. Additional screens appear depending on the device and the configuration of organization specific settings. For example, the **Windows Hello** screen might appear.
+
 ::: zone-end
 
 ::: zone pivot="windows-10"
@@ -165,6 +167,8 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 1. In the **Choose privacy settings for your device** screen, configure privacy settings as desired. Once complete, select the **Accept** button.
 
+1. Additional screens appear depending on the device and the configuration of organization specific settings. For example, the **Windows Hello** screen might appear.
+
 ::: zone-end
 
 Once Windows Setup finishes, the user is automatically signed in and the device is Microsoft Entra joined to the organization's subscription.
@@ -177,7 +181,7 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 
 ::: zone pivot="windows-11"
 
-1. Right-click on the Start menu and select **Settings**.
+1. Right-click on the **Start** menu and select **Settings**.
 
 1. In the **Settings** app, select **Accounts** in the left hand pane.
 
@@ -201,7 +205,7 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 
 ::: zone pivot="windows-10"
 
-1. Right-click on the Start menu and select **Settings**.
+1. Right-click on the **Start** menu and select **Settings**.
 
 1. In the **Settings** app, select **Accounts**.
 
@@ -237,13 +241,20 @@ Once the device is joined to Microsoft Entra ID, users sign in with their Micros
 
 To verify the Windows Enterprise E3 or E5 subscription:
 
+
+
+> [!div class="nextstepaction"]
+> [Activation](ms-settings:activation)
+
+1. Right click on the **Start** menu and select **Run**.
+
+1. In the **Run** window, next to **Open**, enter
+
+   `ms-settings:activation`
+
+   and then select **OK**.
+
 ::: zone pivot="windows-11"
-
-1. Right-click on the Start menu and select **Settings**.
-
-1. In the **Settings** app, select **System** in the left hand pane.
-
-1. In the **System** pane, **Activation**.
 
 1. In the **System > Activation** pane, expand **Activation state** and **Subscription** to see full details of the activation state and status:
 
@@ -259,15 +270,17 @@ To verify the Windows Enterprise E3 or E5 subscription:
       >
       > If the Windows Enterprise subscription hasn't yet been applied, the **Subscription** pane isn't displayed.
 
+The **System > Activation** pane can also be navigated to with the following steps:
+
+1. Right-click on the **Start** menu and select **Settings**.
+
+1. In the **Settings** app, select **System** in the left hand pane.
+
+1. In the **System** pane, **Activation**.
+
 ::: zone-end
 
 ::: zone pivot="windows-10"
-
-1. Right-click on the Start menu and select **Settings**.
-
-1. In the **Settings** app, select **Update & Security**.
-
-1. In the left hand pane, select **Activation**.
 
 1. In the **Activation** pane:
 
@@ -283,19 +296,49 @@ To verify the Windows Enterprise E3 or E5 subscription:
 
       `Windows is activated with a digital license`
 
+The **Activation** pane can also be navigated to with the following steps:
+
+1. Right-click on the **Start** menu and select **Settings**.
+
+1. In the **Settings** app, select **Update & Security**.
+
+1. In the left hand pane, select **Activation**.
+
 ::: zone-end
+
+or by selecting the following link:
+
+> [!div class="nextstepaction"]
+> [Activation](ms-settings:activation)
 
 A device is healthy when both the subscription and activation are active. If there are any problems with the Windows Enterprise E3 or E5 license or the activation of the license, the **Activation** pane displays the appropriate error message or status. This information can be used to help diagnose the licensing and activation process.
 
-> [!NOTE]
->
-> If the `slmgr /dli` or `slmgr /dlv` commands are used to get the activation information for the E3 or E5 license, the license information displayed is similar to the following output:
->
-> ```console
-> Name: Windows(R), Professional edition
-> Description: Windows(R) Operating System, RETAIL channel
-> Partial Product Key: 3V66T
-> ```
+#### Verify that Enterprise edition is enabled with slmgr
+
+**Slmgr** can also be used to verify the activation information:
+
+1. Open a command prompt.
+
+1. In the command prompt window, to get basic licensing information run the command:
+
+  ```cmd
+  slmgr /dli
+  ```
+
+  A window with output similar to the following opens:
+
+  ```console
+  Name: Windows(R), Professional edition
+  Description: Windows(R) Operating System, RETAIL channel
+  Partial Product Key: 3V66T
+  License Status: Licensed
+  ```
+
+  To get detailed licensing information, run the following command instead:
+
+  ```cmd
+  slmgr /dlv
+  ```
 
 ## Troubleshoot the user experience
 

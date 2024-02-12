@@ -78,32 +78,6 @@ Inherited activation allows Windows virtual machines to inherit activation state
 
 To support inherited activation, both the host computer and the VM must be running a currently supported version of Windows. The hypervisor platform must also be Windows Hyper-V.
 
-## The evolution of deployment
-
-The following list illustrates the evolution of deploying Windows client with each release:
-
-- **Windows 7** required redeploying the operating system using a full wipe-and-load process to change from Windows 7 Professional to Windows 10 Enterprise.
-
-- **Windows 8.1** added support for a Windows 8.1 Pro to Windows 8.1 Enterprise in-place upgrade. This process was considered a "repair upgrade", because the OS version was the same before and after. This upgrade was a lot easier than wipe-and-load, but it was still time-consuming.
-
-- **Windows 10, version 1507** added the ability to install a new product key using a provisioning package or using MDM to change the edition. This process required a reboot, which would install the new OS components, and took several minutes to complete. However, it was a lot quicker than in-place upgrade.
-
-- **Windows 10, version 1607** made a large leap forward. The product key could just be changed and the edition instantly changed from Windows 10 Pro to Windows 10 Enterprise. In addition to provisioning packages and MDM, a key can be injected using `slmgr.vbs`, which injects the key into WMI. It became trivial to do this process using a command line.
-
-- **Windows 10, version 1703** made the step-up from Windows 10 Pro to Windows 10 Enterprise automatic for devices that subscribed to Windows 10 Enterprise E3 or E5 via the CSP program.
-
-- **Windows 10, version 1709** added support for Windows 10 subscription activation, similar to the CSP support but for large enterprises. This feature enabled the use of Microsoft Entra ID for assigning licenses to users. When users sign in to a device joined to Active Directory or Microsoft Entra ID, it automatically steps up from Windows 10 Pro to Windows 10 Enterprise.
-
-- **Windows 10, version 1803** updated Windows 10 subscription activation to enable pulling activation keys directly from firmware for devices that support firmware-embedded keys. It was no longer necessary to run a script to activate Windows 10 Pro before activating Enterprise. For virtual machines and hosts running Windows 10, version 1803, [inherited activation](#inherited-activation) was also enabled.
-
-- **Windows 10, version 1903** updated Windows 10 subscription activation to enable step-up from Windows 10 Pro Education to Windows 10 Education for devices with a qualifying Windows 10 or Microsoft 365 subscription.
-
-- **Windows 11, version 21H2** updated subscription activation to work on both Windows 10 and Windows 11 devices.
-
-    > [!IMPORTANT]
-    >
-    > Subscription activation doesn't update a device to a newer version of Windows. Only the edition is updated.
-
 ## Requirements
 
 ### Windows Enterprise requirements
