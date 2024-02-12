@@ -27,16 +27,12 @@ You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provi
 > [!TIP]
 > Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
-<span id="intune"/>
-
 ## Configure a kiosk in Microsoft Intune
 
 To configure a kiosk in Microsoft Intune, see:
 
 - [Windows client and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](/intune/kiosk-settings)
 - [Windows client device settings to run as a kiosk in Intune](/intune/kiosk-settings-windows)
-
-<span id="provision" />
 
 ## Configure a kiosk using a provisioning package
 

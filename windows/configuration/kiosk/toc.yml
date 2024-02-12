@@ -15,10 +15,6 @@ items:
     href: setup-digital-signage.md
   - name: Configure a kiosk
     href: kiosk-single-app.md
-  - name: Configure a restricted user experience for Windows 10
-    href: lock-down-windows-10-to-specific-apps.md
-  - name: Configure a restricted user experience for Windows 11
-    href: lock-down-windows-11-to-specific-apps.md
 - name: How-to guides
   items:
     - name: Create an Assigned Access XML file
@@ -27,8 +23,6 @@ items:
       href: find-aumid.md
     - name: Use MDM Bridge WMI Provider to create a Windows client kiosk
       href: kiosk-mdm-bridge.md
-    - name: Use AppLocker to create a Windows 10 kiosk
-      href: lock-down-windows-10-applocker.md
     - name: Use Shell Launcher to create a Windows client kiosk
       href: kiosk-shelllauncher.md
 - name: Troubleshoot

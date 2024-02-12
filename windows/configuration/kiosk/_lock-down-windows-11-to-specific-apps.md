@@ -20,24 +20,6 @@ An assigned access multi-app kiosk runs one or more apps from the desktop. Peopl
 > [!TIP]
 > Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
-## Configure a Multi-App Kiosk
-
-See the table below for the different methods to configure a multi-app kiosk in Windows 11.
-
-|Configuration Method|Availability|
-|--------------------|------------|
-|[MDM WMI Bridge Provider](#configure-a-kiosk-using-wmi-bridge) | Available May 2023|
-
-<!--
-
-Commenting out the coming soon items
-|Intune|Coming soon|
-|Provisioning Package Using Windows Configuration Designer| Coming soon|
--->
-
-> [!NOTE]
-> For WMI Bridge/PowerShell and Provisioning package methods, you will need to create your own multi-app kiosk XML file as specified below.
-
 ## Create the XML file
 
 Let's start by looking at the basic structure of the XML file.

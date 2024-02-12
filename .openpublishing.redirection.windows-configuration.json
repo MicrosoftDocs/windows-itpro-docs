@@ -584,6 +584,21 @@
       "source_path": "windows/configuration/kiosk/find-the-application-user-model-id-of-an-installed-app.md",
       "redirect_url": "/windows/configuration/kiosk/find-aumid",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/lock-down-windows-10-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/lock-down-windows-10-to-specific-apps.md",
+      "redirect_url": "/windows/configuration/kiosk/create-xml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/lock-down-windows-11-to-specific-apps.md",
+      "redirect_url": "/windows/configuration/kiosk/create-xml",
+      "redirect_document_id": false
     }
   ]
 }
