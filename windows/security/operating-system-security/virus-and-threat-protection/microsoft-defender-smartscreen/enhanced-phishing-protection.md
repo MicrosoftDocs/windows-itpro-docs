@@ -71,7 +71,7 @@ Enhanced Phishing Protection can be configured using the following group policy 
 - Notify Password Reuse
 - Notify Unsafe App
 
-#### [:::image type="icon" source="images/icons/windows-os.svg"::: **CSP**](#tab/csp)
+#### [:::image type="icon" source="images/icons/gear.svg"::: **CSP**](#tab/csp)
 
 Enhanced Phishing Protection can be configured using the [WebThreatDefense CSP][WIN-1].
 
