@@ -24,12 +24,19 @@ Some of the Windows Hello for Business policies are available for both computer 
 - Windows Hello for Business policy settings are enforced using the following hierarchy:
   - User GPO
   - Computer GPO
-  - User MDM
-  - Device MDM
-  - Device Lock policy
+  - User MDM (PassportForWork CSP)
+  - Device MDM (PassportForWork CSP)
+  - Exchange Active Sync (DeviceLock CSP)
 
 >[!IMPORTANT]
 >All devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
+
+<!--
+>[!IMPORTANT]
+>If you configure password lenght and complexity settings that are part of the [DeviceLock CSP](/windows/client-management/mdm/policy-csp-devicelock), and PIN lenght and complexity settings defined by the PassportForWork CSP, Windows enforces the strictest policy out of the set of governing policies.
+>
+>The DeviceLock CSP utilizes the Exchange ActiveSync Policy Engine. For more information, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn282287).
+-->
 
 >[!NOTE]
 > If a policy isn't explicitly configured to require letters or special characters, users can optionally set an alphanumeric PIN.
@@ -71,8 +78,6 @@ There are different ways to enable and configure Windows Hello for Business in I
   - [Custom policy][MEM-3], via the [PassportForWork CSP][MEM-4]
   - [Account protection policy][MEM-5]
   - [Identity protection policy template][MEM-6]
-
-[!INCLUDE [note-devicelock-csp](includes/note-devicelock-csp.md)]
 
 ### Verify the tenant-wide policy
 
