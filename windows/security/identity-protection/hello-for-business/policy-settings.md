@@ -38,6 +38,8 @@ Select one of the tabs to see the list of available settings:
 
 # [:::image type="icon" source="images/pin.svg"::: **PIN settings**](#tab/pin)
 
+[!INCLUDE [note-devicelock-csp](includes/note-devicelock-csp.md)]
+
 |Setting Name|CSP|GPO|
 |-|-|-|-|
 |[Expiration](#expiration)|✅|✅|

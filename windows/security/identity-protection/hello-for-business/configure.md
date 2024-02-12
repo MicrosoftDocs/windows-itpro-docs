@@ -72,6 +72,8 @@ There are different ways to enable and configure Windows Hello for Business in I
   - [Account protection policy][MEM-5]
   - [Identity protection policy template][MEM-6]
 
+[!INCLUDE [note-devicelock-csp](includes/note-devicelock-csp.md)]
+
 ### Verify the tenant-wide policy
 
 To check the Windows Hello for Business policy settings applied at enrollment time:
