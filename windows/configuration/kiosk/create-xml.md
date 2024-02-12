@@ -201,6 +201,7 @@ The following example pins Calculator, Photos, Weather, Calculator, Command Prom
 
 ::: zone pivot="windows-11"
 
+```xml
 <win11:StartPins>
 <![CDATA[
     {
@@ -217,10 +218,9 @@ The following example pins Calculator, Photos, Weather, Calculator, Command Prom
     }
 ]]>
 </win11:StartPins>
+```
 
 ::: zone-end
-
-
 
 ### Taskbar
 
@@ -239,6 +239,8 @@ This is different from the Automatically hide the taskbar option in tablet mode,
 ## Configs
 
 ## Full XML example
+
+::: zone pivot="windows-11"
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -288,3 +290,4 @@ This is different from the Automatically hide the taskbar option in tablet mode,
     </Configs>
 </AssignedAccessConfiguration>
 ```
+::: zone-end

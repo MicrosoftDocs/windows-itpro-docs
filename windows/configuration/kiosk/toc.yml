@@ -21,6 +21,8 @@ items:
     href: lock-down-windows-11-to-specific-apps.md
 - name: How-to guides
   items:
+    - name: Create an Assigned Access XML file
+      href: create-xml.md
     - name: Find the AUMID of an installed app
       href: find-aumid.md
     - name: Use MDM Bridge WMI Provider to create a Windows client kiosk
