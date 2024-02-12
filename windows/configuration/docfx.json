@@ -75,14 +75,18 @@
         "ue-v/**/*.*": "None"
       },
       "author":{
-        "wcd//**/*.md": "aczechowski",
-        "wcd//**/*.yml": "aczechowski",
+        "wcd//**/*.md": "vinaypamnani-msft",
+        "wcd//**/*.yml": "vinaypamnani-msft",
+        "provisioning-packages//**/*.md": "vinaypamnani-msft",
+        "provisioning-packages//**/*.yml": "vinaypamnani-msft",
         "ue-v//**/*.md": "aczechowski",
         "ue-v//**/*.yml": "aczechowski"
       },
       "ms.author":{
-        "wcd//**/*.md": "aaroncz",
-        "wcd//**/*.yml": "aaroncz",
+        "wcd//**/*.md": "vinpa",
+        "wcd//**/*.yml": "vinpa",
+        "provisioning-packages//**/*.md": "vinpa",
+        "provisioning-packages//**/*.yml": "vinpa",
         "ue-v//**/*.md": "aaroncz",
         "ue-v//**/*.yml": "aaroncz"
       },
