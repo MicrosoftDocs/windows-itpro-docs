@@ -6,7 +6,7 @@ ms.author: frankroj
 manager: aaroncz
 ms.service: windows-client
 ms.localizationpriority: medium
-ms.date: 02/01/2024
+ms.date: 02/13/2024
 ms.topic: article
 ms.subservice: itpro-deploy
 appliesto:
