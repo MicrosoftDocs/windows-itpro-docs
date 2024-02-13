@@ -55,8 +55,7 @@ The following is a list of other Microsoft products that might be updated:
 - MSRC
 - Office 2016 (MSI versions of Office) 
 - PlayReady
-- Project Honolulu
-- SCOM/SCVMM
+- Windows Admin Center
 - SEGDR
 - Silverlight
 - Skype for Business
