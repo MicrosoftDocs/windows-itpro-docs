@@ -28,7 +28,7 @@ This article contians a list of other Microsoft products that might be updated w
 
 ## List of other Microsoft products
 
-The following 
+The following is a list of other Microsoft products that might be updated:
 
 
 - Active Directory Rights Management Service

@@ -386,6 +386,8 @@
           href: /windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: Additional Windows Update settings
           href: update/waas-wu-settings.md
+        - name: Update other Microsoft products
+          href: update/update-other-microsoft-products.md          
         - name: Delivery Optimization reference
           href: do/waas-delivery-optimization-reference.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: Windows client in S mode
