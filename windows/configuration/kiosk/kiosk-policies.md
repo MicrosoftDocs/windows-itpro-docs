@@ -69,7 +69,7 @@ Some of the MDM policies based on the [Policy configuration service provider (CS
 | [Start/HideChangeAccountSettings](/windows/client-management/mdm/policy-csp-start#start-hidechangeaccountsettings) | 1 - True (hide) | Yes |
 | [WindowsInkWorkspace/AllowWindowsInkWorkspace](/windows/client-management/mdm/policy-csp-windowsinkworkspace#windowsinkworkspace-allowwindowsinkworkspace) | 0 - Access to ink workspace is disabled and the feature is turned off | Yes |
 | [Start/StartLayout](/windows/client-management/mdm/policy-csp-start#start-startlayout) | Configuration dependent | No |
-| [WindowsLogon/DontDisplayNetworkSelectionUI](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui) | &lt;Enabled/&gt; | Yes |
+| [WindowsLogon/DontDisplayNetworkSelectionUI](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui) | &lt;Enabled/> | Yes |
 
 <!--
 ## Start Menu

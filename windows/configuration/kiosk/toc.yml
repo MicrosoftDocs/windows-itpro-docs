@@ -3,6 +3,8 @@ items:
   href: kiosk-methods.md
 - name: Quickstarts
   items:
+    - name: Configure a kiosk device
+      href: quickstart-restricted-experience.md
     - name: Configure a restricted user experience
       href: quickstart-restricted-experience.md
 - name: Concepts
@@ -17,8 +19,10 @@ items:
     href: kiosk-single-app.md
 - name: How-to guides
   items:
-    - name: Create an Assigned Access XML file
-      href: create-xml.md
+    - name: Create an Assigned Access configuration file
+      href: create-assigned-access-configuration.md
+    - name: Create a Shell Launcher configuration file
+      href: create-shell-launcher-configuration.md
     - name: Find the AUMID of an installed app
       href: find-aumid.md
     - name: Use MDM Bridge WMI Provider to create a Windows client kiosk
@@ -33,15 +37,13 @@ items:
       href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
 - name: Reference
   items:
-    - name: Kiosk methods and reference information
-      href: kiosk-additional-reference.md
     - name: Guidelines for choosing an app for assigned access
       href: guidelines-for-assigned-access-app.md
     - name: Policies enforced on kiosk devices
       href: kiosk-policies.md
     - name: Assigned access XML reference
       href: kiosk-xml.md
-- name: On the way to ☠️
+- name: On the way to 🪦
   items:
     - name: _lock-down-windows-10-to-specific-apps
       href: _lock-down-windows-10-to-specific-apps.md

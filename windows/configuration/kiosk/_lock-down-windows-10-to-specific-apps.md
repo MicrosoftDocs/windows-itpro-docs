@@ -7,25 +7,9 @@ ms.date: 11/08/2023
 
 # Set up a multi-app kiosk on Windows 10 devices
 
-> [!NOTE]
-> The use of multiple monitors isn't supported for multi-app kiosk mode in Windows 10.
+A kiosk device typically runs a single application, and users are prevented from accessing any features or functions on the device outside of the app.
 
-A [kiosk device](./kiosk-single-app.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp) was expanded to make it easy for administrators to create kiosks that run more than one app. The benefit of a kiosk that runs only one or more specified apps is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don't need to access.
-
-The following table lists changes to multi-app kiosk in recent updates.
-
-| New features and improvements |  In update |
-| --- | ---|
-| - Configure [a single-app kiosk profile](#profile) in your XML file<br><br>- Assign [group accounts to a config profile](#config-for-group-accounts)<br><br>- Configure [an account to sign in automatically](#config-for-autologon-account) | Windows 10, version 1803 |
-| - Explicitly allow [some known folders when user opens file dialog box](#fileexplorernamespacerestrictions)<br><br>- [Automatically launch an app](#allowedapps) when the user signs in<br><br>- Configure a [display name for the autologon account](#config-for-autologon-account) | Windows 10, version 1809<br><br>**Important:** To use features released in Windows 10, version 1809, make sure that [your XML file](#create-xml-file) references `https://schemas.microsoft.com/AssignedAccess/201810/config`. |
-
-> [!WARNING]
-> The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
-
-You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provisioning package](#provision).
-
-> [!TIP]
-> Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
+The assigned access feature is intended for dedicated devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, impacting other users on the device. Deleting the kiosk configuration removes the assigned access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, the Start layout). To clear all the policy settings enforced by Assigned Access, you must reset Windows.
 
 ## Configure a kiosk in Microsoft Intune
 
@@ -46,55 +30,7 @@ Watch how to use a provisioning package to configure a multi-app kiosk.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
 
-If you don't want to use a provisioning package, you can deploy the configuration XML file using [mobile device management (MDM)](#use-mdm-to-deploy-the-multi-app-configuration), or you can configure assigned access using the [MDM Bridge WMI Provider](kiosk-mdm-bridge.md).
-
-### Prerequisites
-
-- Windows Configuration Designer (Windows 10, version 1709 or later)
-- The kiosk device must be running Windows 10 (S, Pro, Enterprise, or Education), version 1709 or later
-
-> [!NOTE]
-> For devices running versions of Windows 10 earlier than version 1709, you can [create AppLocker rules](lock-down-windows-10-applocker.md) to configure a multi-app kiosk.
-
 ### Create XML file
-
-<!--
-Let's start by looking at the basic structure of the XML file.
-
-- A configuration xml can define multiple *profiles*. Each profile has a unique **Id** and defines a set of applications that are allowed to run, whether the taskbar is visible, and can include a custom Start layout.
-
-- A configuration xml can have multiple *config* sections. Each config section associates a non-admin user account to a default profile **Id**.
-
-- Multiple config sections can be associated to the same profile.
-
-- A profile has no effect if it's not associated to a config section.
-
-You can start your file by pasting the following XML into an XML editor, and saving the file as *filename*.xml. Each section of this XML is explained in this article. You can see a full sample version in the [Assigned access XML reference.](kiosk-xml.md)
-
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="https://schemas.microsoft.com/AssignedAccess/201810/config"
-    >
-    <Profiles>
-        <Profile Id="">
-            <AllAppsList>
-                <AllowedApps/>
-            </AllAppsList>
-            <StartLayout/>
-            <Taskbar/>
-        </Profile>
-    </Profiles>
-    <Configs>
-        <Config>
-            <Account/>
-            <DefaultProfile Id=""/>
-        </Config>
-    </Configs>
-</AssignedAccessConfiguration>
-```
--->
 
 #### Profile
 
@@ -477,15 +413,15 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 1. On **New project**, select **Finish**. The workspace for your package opens.
 
-1. Expand **Runtime settings** &gt; **AssignedAccess** &gt; **MultiAppAssignedAccessSettings**.
+1. Expand **Runtime settings** > **AssignedAccess** > **MultiAppAssignedAccessSettings**.
 
 1. In the center pane, select **Browse**. Locate and select the assigned access configuration XML file that you created.
 
    ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer.](images/multiappassignedaccesssettings.png)
 
-1. _Optional: If you want to apply the provisioning package after device initial setup and there's an admin user already available on the kiosk device, skip this step._ Create an admin user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Provide a **UserName** and **Password**, and select **UserGroup** as **Administrators**. With this account, you can view the provisioning status and logs if needed.
+1. _Optional: If you want to apply the provisioning package after device initial setup and there's an admin user already available on the kiosk device, skip this step._ Create an admin user account in **Runtime settings** > **Accounts** > **Users**. Provide a **UserName** and **Password**, and select **UserGroup** as **Administrators**. With this account, you can view the provisioning status and logs if needed.
 
-1. _Optional: If you already have a non-admin account on the kiosk device, skip this step._ Create a local standard user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Make sure the **UserName** is the same as the account that you specify in the configuration XML. Select **UserGroup** as **Standard Users**.
+1. _Optional: If you already have a non-admin account on the kiosk device, skip this step._ Create a local standard user account in **Runtime settings** > **Accounts** > **Users**. Make sure the **UserName** is the same as the account that you specify in the configuration XML. Select **UserGroup** as **Standard Users**.
 
 1. On the **File** menu, select **Save.**
 
@@ -620,7 +556,7 @@ Start/DisableContextMenus | 1 - Context menus are hidden for Start apps | No
 [Start/HideChangeAccountSettings](/windows/client-management/mdm/policy-csp-start#start-hidechangeaccountsettings)        | 1 - True (hide) | Yes
 [WindowsInkWorkspace/AllowWindowsInkWorkspace](/windows/client-management/mdm/policy-csp-windowsinkworkspace#windowsinkworkspace-allowwindowsinkworkspace)    |   0 - Access to ink workspace is disabled and the feature is turned off   |   Yes
 [Start/StartLayout](/windows/client-management/mdm/policy-csp-start#start-startlayout)    | Configuration dependent   |   No
-[WindowsLogon/DontDisplayNetworkSelectionUI](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui)   |   &lt;Enabled/&gt;    |   Yes
+[WindowsLogon/DontDisplayNetworkSelectionUI](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui)   |   &lt;Enabled/>    |   Yes
 
 -->
 

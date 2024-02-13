@@ -1,0 +1,36 @@
+---
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 02/05/2024
+ms.topic: include
+ms.prod: windows-client
+---
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ShellLauncherConfiguration
+xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
+xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
+    <Profiles>
+        <DefaultProfile>
+            <Shell Shell="%SystemRoot%\explorer.exe"/>
+        </DefaultProfile>
+        <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
+            <Shell Shell="Microsoft.BingWeather_8wekyb3d8bbwe!App" v2:AppType="UWP" v2:AllAppsFullScreen="true">
+                <ReturnCodeActions>
+                    <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
+                    <ReturnCodeAction ReturnCode="-1" Action="RestartDevice"/>
+                    <ReturnCodeAction ReturnCode="255" Action="ShutdownDevice"/>
+                </ReturnCodeActions>
+                <DefaultAction Action="RestartShell"/>
+            </Shell>
+        </Profile>
+    </Profiles>
+    <Configs>
+        <Config>
+            <AutoLogonAccount/>
+            <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}"/>
+        </Config>
+    </Configs>
+</ShellLauncherConfiguration>
+```

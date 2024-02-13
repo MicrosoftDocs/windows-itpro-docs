@@ -7,7 +7,7 @@ ms.date: 12/31/2017
 
 # Use Shell Launcher to create a Windows client kiosk
 
-Shell Launcher is a Windows feature that executes an application as the user interface, replacing the default Windows Explorer (`explorer.exe`).
+Shell Launcher is an Assigned Access configuration that replaces the default Windows Explorer shell (`explorer.exe`) with the `CustomShellHost.exe` application. CustomShellHost can launch a Windows desktop application or a UWP app.
 
 >[!NOTE]
 >Shell Launcher controls which application the user sees as the shell after sign-in. It doesn't prevent the user from accessing other desktop applications and system components.
@@ -17,15 +17,13 @@ Shell Launcher is a Windows feature that executes an application as the user int
 >- [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview) - Application control policies
 >- [Mobile Device Management](/windows/client-management/mdm) - Enterprise management of device security policies
 
-You can apply a custom shell through Shell Launcher [by using PowerShell](#configure-a-custom-shell-using-powershell). Starting with Windows 10 version 1803+, you can also [use mobile device management (MDM)](#configure-a-custom-shell-in-mdm) to apply a custom shell through Shell Launcher.
+You can configure Shell Launcher via [PowerShell](#configure-a-custom-shell-using-powershell) and [CSP](#configure-a-custom-shell-in-mdm).
 
-Shell Launcher replaces `explorer.exe` with `customshellhost.exe`. This executable file can launch a Windows desktop application or a UWP app.
+Shell Launcher offers the following features:
 
-In addition to allowing you to use a UWP app for your replacement shell, Shell Launcher v2 offers additional enhancements:
-
-- You can use a custom Windows desktop application that can then launch UWP apps, such as **Settings** and **Touch Keyboard**.
-- From a custom UWP shell, you can launch secondary views and run on multiple monitors.
-- The custom shell app runs in full screen, and can run other apps in full screen on user's demand.
+- You can use a custom Windows desktop application that can then launch UWP apps, such as *Settings* or *Touch Keyboard*
+- From a custom UWP shell, you can launch secondary views displayed on multiple monitors
+- The custom shell app runs in full screen, and can run other apps in full screen on user's demand
 
 For sample XML configurations for the different app combinations, see [Samples for Shell Launcher v2](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2).
 
@@ -47,9 +45,9 @@ To set a custom shell, you first turn on the Shell Launcher feature, and then yo
 
 **To turn on Shell Launcher in Windows features**
 
-1. Go to Control Panel &gt; **Programs and features** &gt; **Turn Windows features on or off**.
-1. Expand **Device Lockdown**.
-1. Select **Shell Launcher** and **OK**.
+1. Go to Control Panel > **Programs and features** > **Turn Windows features on or off**
+1. Expand **Device Lockdown**
+1. Select **Shell Launcher** and **OK**
 
 Alternatively, you can turn on Shell Launcher using Windows Configuration Designer in a provisioning package, using `SMISettings > ShellLauncher`, or you can use the Deployment Image Servicing and Management (DISM.exe) tool.
 
@@ -90,11 +88,12 @@ For **Shell Launcher v2**, you can use UWP app type for `Shell` by specifying th
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
+<ShellLauncherConfiguration
+xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
 xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
   <Profiles>
     <DefaultProfile>
-      <Shell Shell="ShellLauncherV2DemoUwp_5d7tap497jwe8!App" v2:AppType="UWP" v2:AllAppsFullScreen="true">
+      <Shell Shell="Microsoft.BingWeather_8wekyb3d8bbwe!App" v2:AppType="UWP" v2:AllAppsFullScreen="true">
         <DefaultAction Action="RestartShell"/>
       </Shell>
     </DefaultProfile>

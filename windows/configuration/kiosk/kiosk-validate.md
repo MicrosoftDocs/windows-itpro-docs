@@ -56,23 +56,23 @@ If the applied multi-app configuration enables taskbar, when the assigned access
 The multi-app mode blocks the following hotkeys, which are not relevant for the lockdown experience.
 
 | Hotkey | Action |
-| --- | --- |
-| Windows logo key  + A     | Open Action center |
-| Windows logo key  + Shift + C |    Open Cortana in listening mode |
-| Windows logo key  + D    | Display and hide the desktop |
-| Windows logo key  + Alt + D    | Display and hide the date and time on the desktop |
-| Windows logo key  + E    | Open File Explorer |
-| Windows logo key  + F |    Open Feedback Hub |
-| Windows logo key  + G    | Open Game bar when a game is open |
-| Windows logo key  + I    | Open Settings |
-| Windows logo key  + J |    Set focus to a Windows tip when one is available. |
-| Windows logo key  + O    | Lock device orientation |
-| Windows logo key  + Q     | Open search |
-| Windows logo key  + R    | Open the Run dialog box |
-| Windows logo key  + S    | Open search |
-| Windows logo key  + X    | Open the Quick Link menu |
-| Windows logo key  + comma (,) |    Temporarily peek at the desktop |
-| Windows logo key  + Ctrl + F |    Search for PCs (if you're on a network) |
+|--|--|
+| <kbd>WIN</kbd> + <kbd>A</kbd> | Open Action center |
+| <kbd>WIN</kbd> + <kbd>Shift</kbd>  + <kbd> C</kbd> | Open Cortana in listening mode |
+| <kbd>WIN</kbd> + <kbd>D</kbd> | Display and hide the desktop |
+| <kbd>WIN</kbd> + <kbd>Alt</kbd>  + <kbd> D</kbd> | Display and hide the date and time on the desktop |
+| <kbd>WIN</kbd> + <kbd>E</kbd> | Open File Explorer |
+| <kbd>WIN</kbd> + <kbd>F</kbd> | Open Feedback Hub |
+| <kbd>WIN</kbd> + <kbd>G</kbd> | Open Game bar when a game is open |
+| <kbd>WIN</kbd> + <kbd>I</kbd> | Open Settings |
+| <kbd>WIN</kbd> + <kbd>J</kbd> | Set focus to a Windows tip when one is available. |
+| <kbd>WIN</kbd> + <kbd>O</kbd> | Lock device orientation |
+| <kbd>WIN</kbd> + <kbd>Q</kbd> | Open search |
+| <kbd>WIN</kbd> + <kbd>R</kbd> | Open the Run dialog box |
+| <kbd>WIN</kbd> + <kbd>S</kbd> | Open search |
+| <kbd>WIN</kbd> + <kbd>X</kbd> | Open the Quick Link menu |
+| <kbd>WIN</kbd> + <kbd>, (comma)</kbd> | Temporarily peek at the desktop |
+| <kbd>WIN</kbd> + <kbd>Ctrl</kbd>  + <kbd> F</kbd> | Search for PCs (if you're on a network) |
 
 ### Locked-down Ctrl+Alt+Del screen
 
@@ -80,4 +80,4 @@ The multi-app mode removes options (e.g. **Change a password**, **Task Manager**
 
 ### Auto-trigger touch keyboard
 
-In the multi-app mode, the touch keyboard will be automatically triggered when there is an input needed and no physical keyboard is attached on touch-enabled devices. You don't need to configure any other setting to enforce this behavior.
+In the multi-app mode, the touch keyboard i automatically triggered when there is an input needed and no physical keyboard is attached on touch-enabled devices. You don't need to configure any other setting to enforce this behavior.
