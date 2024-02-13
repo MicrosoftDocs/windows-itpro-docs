@@ -58,6 +58,7 @@ If you don't want to use a provisioning package, you can deploy the configuratio
 
 ### Create XML file
 
+<!--
 Let's start by looking at the basic structure of the XML file.
 
 - A configuration xml can define multiple *profiles*. Each profile has a unique **Id** and defines a set of applications that are allowed to run, whether the taskbar is visible, and can include a custom Start layout.
@@ -67,8 +68,6 @@ Let's start by looking at the basic structure of the XML file.
 - Multiple config sections can be associated to the same profile.
 
 - A profile has no effect if it's not associated to a config section.
-
-    ![profile = app and config = account.](images/profile-config.png)
 
 You can start your file by pasting the following XML into an XML editor, and saving the file as *filename*.xml. Each section of this XML is explained in this article. You can see a full sample version in the [Assigned access XML reference.](kiosk-xml.md)
 
@@ -95,6 +94,7 @@ You can start your file by pasting the following XML into an XML editor, and sav
     </Configs>
 </AssignedAccessConfiguration>
 ```
+-->
 
 #### Profile
 
@@ -106,19 +106,14 @@ There are two types of profiles that you can specify in the XML:
 A lockdown profile section in the XML has the following entries:
 
 - [**Id**](#id)
-
 - [**AllowedApps**](#allowedapps)
-
 - [**FileExplorerNamespaceRestrictions**](#fileexplorernamespacerestrictions)
-
 - [**StartLayout**](#startlayout)
-
 - [**Taskbar**](#taskbar)
 
 A kiosk profile in the XML has the following entries:
 
 - [**Id**](#id)
-
 - [**KioskModeApp**](#kioskmodeapp)
 
 ##### Id
@@ -157,8 +152,6 @@ Here are the predefined assigned access AppLocker rules for **desktop apps**:
 1. Enterprise-defined allowed desktop apps are added in the AppLocker allowlist.
 
 The following example allows Groove Music, Movies & TV, Photos, Weather, Calculator, Paint, and Notepad apps to run on the device, with Notepad configured to automatically launch and create a file called `123.text` when the user signs in.
-
-<span id="apps-sample" />
 
 ```xml
 <AllAppsList>

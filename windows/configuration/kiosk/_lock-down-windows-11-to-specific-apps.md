@@ -20,6 +20,7 @@ An assigned access multi-app kiosk runs one or more apps from the desktop. Peopl
 > [!TIP]
 > Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
+<!--
 ## Create the XML file
 
 Let's start by looking at the basic structure of the XML file.
@@ -60,6 +61,8 @@ You can start your file by pasting the following XML into an XML editor, and sav
     </Configs>
 </AssignedAccessConfiguration>
 ```
+-->
+
 #### Profile
 
 There are two types of profiles that you can specify in the XML:
@@ -115,8 +118,6 @@ Here are the predefined assigned access AppLocker rules for **desktop apps**:
 
 The following example allows Photos, Weather, Calculator, Paint, and Notepad apps to run on the device, with Notepad configured to automatically launch and create a file called `123.text` when the user signs in.
 
-<span id="apps-sample" />
-
 ```xml
 <AllAppsList>
         <AllowedApps>
@@ -128,6 +129,8 @@ The following example allows Photos, Weather, Calculator, Paint, and Notepad app
         </AllowedApps>
 </AllAppsList>
 ```
+
+<!--
 
 ##### StartPins
 
@@ -153,6 +156,8 @@ Add your pinnedList JSON into the StartPins tag in your XML file.
 > [!NOTE]
 > If an app isn't installed for the user, but is included in the Start layout XML, the app isn't shown on the Start screen.
 
+
+
 ##### Taskbar
 
 Define whether you want to have the taskbar present in the kiosk device. For tablet-based or touch-enabled all-in-one kiosks, when you don't attach a keyboard and mouse, you can hide the taskbar as part of the multi-app experience if you want.
@@ -171,7 +176,7 @@ The following example hides the taskbar:
 
 > [!NOTE]
 > This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden.
-
+-->
 ##### KioskModeApp
 
 **KioskModeApp** is used for a [kiosk profile](#profile) only. Enter the AUMID for a single app. You can only specify one kiosk profile in the XML.

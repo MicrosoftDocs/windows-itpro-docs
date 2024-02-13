@@ -120,7 +120,9 @@ Based on the purpose of the kiosk device, define the list of applications that a
 
 - For UWP apps, you must provide the App User Model ID (AUMID)
   - [Learn how to get the AUMID]()
-- For desktop apps, specify the AUMID or the full path of the executable, which can contain one or more system environment variables in the form of %variableName%
+- For desktop apps, specify the AUMID or the full path of the executable, which can contain one or more system environment variables in the form of %variableName%. For example, `%systemroot%` or `%windir%`.
+- If an app has a dependency on another app, both must be included in the allowed apps list. For example, Internet Explorer 64-bit has a dependency on Internet Explorer 32-bit, so you must allow both `"C:\Program Files\internet explorer\iexplore.exe"` and `"C:\Program Files (x86)\Internet Explorer\iexplore.exe"`
+- To configure a single app to launch automatically when the user signs in, include `rs5:AutoLaunch="true"` after the AUMID or path. You can also include arguments to be passed to the app
 
 <!-->
 Here are the predefined assigned access AppLocker rules:
@@ -151,8 +153,11 @@ The following example allows Calculator, Photos, Weather, Calculator, Command Pr
     <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
     <App DesktopAppPath="C:\Windows\system32\cmd.exe" />
     <App DesktopAppPath="%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe" />
+    <App DesktopAppPath="C:\Windows\System32\notepad.exe" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="%windir%\setuperr.log" />
 </AllowedApps>
 ```
+
+::: zone pivot="windows-10"
 
 ### StartLayout node
 
@@ -166,7 +171,6 @@ The easiest way to create a customized Start layout is to configure the Start me
 
 The following example pins Calculator, Photos, Weather, Calculator, Command Prompt, and Windows PowerShell apps to the Start menu.
 
-::: zone pivot="windows-10"
 
 ```xml
 <StartLayout>
@@ -201,6 +205,12 @@ The following example pins Calculator, Photos, Weather, Calculator, Command Prom
 
 ::: zone pivot="windows-11"
 
+### StartPins node
+
+After you define the list of allowed applications, you can customize the Start layout for your kiosk experience. The easiest way to create a customized Start layout to apply to other Windows client devices is to set up the Start screen on a test device and then export the layout. Once you've decided, you can get the JSON needed for your kiosk configuration by following the steps to [Get the pinnedList JSON](../start/customize-and-export-start-layout.md). If you opt to do this using the PowerShell command, make sure that the system you run the command on has the same file structure as the device on which you will apply the kiosk (the path to the allowed apps must be the same). At the end of this step, you should have a JSON pinnedList that looks something like the below.
+
+Add your pinnedList JSON into the StartPins tag in your XML file.
+
 ```xml
 <win11:StartPins>
 <![CDATA[
@@ -220,6 +230,9 @@ The following example pins Calculator, Photos, Weather, Calculator, Command Prom
 </win11:StartPins>
 ```
 
+> [!NOTE]
+> If an app isn't installed for the user, but is included in the Start layout XML, the app isn't shown on the Start screen.
+
 ::: zone-end
 
 ### Taskbar
@@ -234,7 +247,8 @@ The following example hides the taskbar:
 
 <Taskbar ShowTaskbar="false"/>
 
-This is different from the Automatically hide the taskbar option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting ShowTaskbar as false will always keep the taskbar hidden.
+> [!NOTE]
+> This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden.
 
 ## Configs
 
@@ -305,15 +319,15 @@ This is different from the Automatically hide the taskbar option in tablet mode,
     :::column span="1":::
     **Scenario**
     :::column-end:::
-    :::column:::
+    :::column span="3":::
     **Sample Xml**
     :::column-end:::
 :::row-end:::
 :::row:::
-    :::column:::
+    :::column span="1":::
     **Block everything**
     :::column-end:::
-    :::column:::
+    :::column span="3":::
     Either don't use the node or leave it empty
 
     ```xml
@@ -326,7 +340,7 @@ This is different from the Automatically hide the taskbar option in tablet mode,
     :::column span="1":::
     **Only allow downloads**
     :::column-end:::
-    :::column:::
+    :::column span="3":::
     ```xml
     <v2:FileExplorerNamespaceRestrictions>
         <v2:AllowedNamespace Name="Downloads"/>
@@ -339,7 +353,7 @@ This is different from the Automatically hide the taskbar option in tablet mode,
     :::column span="1":::
     **Only allow removable drives**
     :::column-end:::
-    :::column:::
+    :::column span="3":::
     ```xml
     <v2:FileExplorerNamespaceRestrictions>
         <v3:AllowRemovableDrives />
@@ -352,7 +366,7 @@ This is different from the Automatically hide the taskbar option in tablet mode,
     :::column span="1":::
     **Allow both Downloads, and removable drives**
     :::column-end:::
-    :::column:::
+    :::column span="3":::
     ```xml
     <v2:FileExplorerNamespaceRestrictions>
         <v2:AllowedNamespace Name="Downloads"/>
@@ -366,7 +380,7 @@ This is different from the Automatically hide the taskbar option in tablet mode,
     :::column span="1":::
     **No restrictions, all locations are allowed**
     :::column-end:::
-    :::column:::
+    :::column span="3":::
     ```xml
     <v2:FileExplorerNamespaceRestrictions>
         <v3:NoRestriction />
