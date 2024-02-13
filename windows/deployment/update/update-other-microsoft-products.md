@@ -11,7 +11,7 @@ manager: aaroncz
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date:02/14/2024
+ms.date: 02/14/2024
 ---
 
 # Update other Microsoft products
