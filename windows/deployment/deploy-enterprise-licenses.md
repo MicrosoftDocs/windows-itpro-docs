@@ -343,7 +343,7 @@ A device is healthy when both the subscription and activation are active. If the
 
 1. Open a command prompt.
 
-1. In the command prompt window, to get basic licensing information run the command:
+1. To get basic licensing information, run the following command at the command prompt:
 
   ```cmd
   slmgr /dli
@@ -358,7 +358,7 @@ A device is healthy when both the subscription and activation are active. If the
   License Status: Licensed
   ```
 
-  To get detailed licensing information, run the following command instead:
+  To instead get detailed licensing information, run the following command:
 
   ```cmd
   slmgr /dlv
@@ -375,24 +375,24 @@ When there are problems with Windows Enterprise E3 or E5 subscription activation
 
 - **Windows Pro isn't activated**
 
-  When Windows Pro isn't activated on a device, the following message is displayed next to **Activation** in the [Activation](ms-settings:activation) pane:
+  When Windows Pro isn't activated on a device, the following message is displayed for **Activation** in the [Activation](ms-settings:activation) pane:
 
   `Windows is not activated`
 
-  Additionally, under **Activation**, the following message might be displayed:
+  Additionally, the following message might be displayed:
 
   `We can't activate Windows on this device right now. You can try activating again later or go to the Store to buy genuine Windows. Error code: 0xC004F034.`
 
   Examples where this problem can occur include:
 
-  - The device doesn't have a firmware-embedded activation key
+  - The device doesn't have a firmware-embedded activation key.
   - The starting edition of Windows wasn't Windows Pro. For example, the starting edition of Windows was Windows Home.
 
-  In these case, a Windows Pro key might need to be manually entered.
+  In these cases, a Windows Pro key might need to be manually entered.
 
 - **Windows Enterprise subscription isn't active**
 
-  When a device with a Windows Enterprise subscription has lapsed or has been removed, the following message is displayed next to **Subscription** in the [Activation](ms-settings:activation) pane:
+  When a device with a Windows Enterprise subscription has lapsed or has been removed, the following message is displayed for **Subscription** in the [Activation](ms-settings:activation) pane:
 
   `Windows Enterprise subscription isn't valid.`
 
@@ -424,7 +424,7 @@ When there are Windows Enterprise E3 or E5 license activation issues on a device
 
 Use the following guides to verify each one of these requirements:
 
-- **Determine if the version of Windows is currently supported**
+- **Determine if the version of Windows is currently supported**.
 
   To determine if the version of Windows is currently supported:
 
@@ -443,7 +443,7 @@ Use the following guides to verify each one of these requirements:
       - [Windows 11 release information](/windows/release-health/windows11-release-information).
       - [Windows 10 release information](/windows/release-health/release-information).
 
-- **Determine if a device is Microsoft Entra joined**
+- **Determine if a device is Microsoft Entra joined**.
 
   To determine if a device is Microsoft Entra joined:
 
@@ -469,7 +469,7 @@ Use the following guides to verify each one of these requirements:
                  Device Name : Demo-PC
       ```
 
-- **Determine if devices has a firmware-embedded activation key**
+- **Determine if devices has a firmware-embedded activation key**.
 
   To determine if the device has a firmware-embedded activation key:
 
@@ -483,7 +483,7 @@ Use the following guides to verify each one of these requirements:
 
   1. If the device has a firmware-embedded activation key, the key is displayed in the output. If the output is blank, the device doesn't have a firmware embedded activation key. Most modern OEM-provided devices designed to run currently supported versions of Windows have a firmware-embedded key.
 
-- **Make sure the Microsoft Entra user has been assigned a license**
+- **Make sure the Microsoft Entra user has been assigned a license**.
 
   For more information, see [Assigning licenses to users](#assigning-licenses-to-users).
 
