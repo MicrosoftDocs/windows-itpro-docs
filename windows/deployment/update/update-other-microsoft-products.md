@@ -18,18 +18,17 @@ ms.date: 02/14/2024
 <!--8743531-->
 This article contians a list of other Microsoft products that might be updated when the following policy is used:
 
-
-- Group policy: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage end user experience: Install updates for other Microsoft products element under Configure Automatic Updates. 
-- MDM: [Update/AllowMUUpdateService](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#update-allowmuupdateservice).
+- **Group policy**: Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\Configure Automatic Updates
+    - `Install updates for other Microsoft products` element under Configure Automatic Updates
+- **MDM**: ./Device/Vendor/MSFT/Policy/Config/Update/[AllowMUUpdateService](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowmuupdateservice).
 
 > [!Note]
-> This policy includes drivers. If you need to exclude drivers, use [ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-csp-update&bc=/windows/deployment/breadcrumb/toc.json#update-excludewudriversinqualityupdate).
+> This policy includes drivers. If you need to exclude drivers, use [ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-csp-update&bc=/windows/deployment/breadcrumb/toc.json#excludewudriversinqualityupdate).
 
 
 ## List of other Microsoft products
 
 The following is a list of other Microsoft products that might be updated:
-
 
 - Active Directory Rights Management Service
 - AppFabric
@@ -56,7 +55,6 @@ The following is a list of other Microsoft products that might be updated:
 - Office 2016 (MSI versions of Office) 
 - PlayReady
 - Windows Admin Center
-- SEGDR
 - Silverlight
 - Skype for Business
 - SQL
