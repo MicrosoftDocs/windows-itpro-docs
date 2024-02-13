@@ -4,7 +4,7 @@ items:
 - name: Quickstarts
   items:
     - name: Configure a kiosk device
-      href: quickstart-restricted-experience.md
+      href: quickstart-kiosk.md
     - name: Configure a restricted user experience
       href: quickstart-restricted-experience.md
 - name: Concepts
