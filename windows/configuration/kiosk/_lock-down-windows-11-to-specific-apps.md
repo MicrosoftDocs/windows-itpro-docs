@@ -293,6 +293,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups aren't supported
   > [!NOTE]
   > If a Microsoft Entra group is configured with a lockdown profile on a device, a user in the Microsoft Entra group must change their password (after the account has been created with default password on the portal) before they can sign in to this device. If the user uses the default password to sign in to the device, the user will be immediately signed out.
 
+<!--
 ## Configure a kiosk using WMI Bridge
 
 Environments that use [Windows Management Instrumentation (WMI)](/windows/win32/wmisdk/wmi-start-page) can use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to configure the MDM_AssignedAccess class.
@@ -347,6 +348,8 @@ if($cimSetError) {
 Write-Output "Successfully applied Assigned Access configuration"
 ```
 
+
+
 ## Sample Assigned Access XML
 
 This section contains a predefined XML file which can be used as a quickstart to get familiar with the Assigned Access multi-app kiosk feature on Windows 11.
@@ -391,3 +394,5 @@ This section contains a predefined XML file which can be used as a quickstart to
   </Configs>
 </AssignedAccessConfiguration>
 ```
+
+-->

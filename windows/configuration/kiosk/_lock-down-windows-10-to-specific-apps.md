@@ -622,8 +622,6 @@ Start/DisableContextMenus | 1 - Context menus are hidden for Start apps | No
 [Start/StartLayout](/windows/client-management/mdm/policy-csp-start#start-startlayout)    | Configuration dependent   |   No
 [WindowsLogon/DontDisplayNetworkSelectionUI](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui)   |   &lt;Enabled/&gt;    |   Yes
 
-<span id="lnk-files" />
-
 ## Provision .lnk files using Windows Configuration Designer
 
 First, create your desktop app's shortcut file by installing the app on a test device, using the default installation location. Right-click the installed application, and choose **Send to** > **Desktop (create shortcut)**. Rename the shortcut to `<appName>.lnk`

@@ -31,7 +31,7 @@ items:
       href: kiosk-validate.md
     - name: Troubleshoot kiosk mode issues
       href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
-- name: Rreference
+- name: Reference
   items:
     - name: Kiosk methods and reference information
       href: kiosk-additional-reference.md
@@ -41,3 +41,9 @@ items:
       href: kiosk-policies.md
     - name: Assigned access XML reference
       href: kiosk-xml.md
+- name: On the way to ☠️
+  items:
+    - name: _lock-down-windows-10-to-specific-apps
+      href: _lock-down-windows-10-to-specific-apps.md
+    - name: _lock-down-windows-11-to-specific-apps
+      href: _lock-down-windows-11-to-specific-apps.md
