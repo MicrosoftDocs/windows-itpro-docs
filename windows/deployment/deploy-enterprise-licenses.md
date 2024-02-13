@@ -76,14 +76,9 @@ For more information, see [Review requirements on devices](#review-requirements-
 
 If there's an on-premises Active Directory Domain Services (AD DS) domain, identities in the on-premises AD DS domain need to be synchronized with Microsoft Entra ID. This synchronization is required for users to have a _single identity_ that they can use to access their on-premises apps and cloud services that use Microsoft Entra ID. An example of a cloud service is Windows Enterprise E3 or E5.
 
-**Figure 1** illustrates the integration between the on-premises AD DS domain with Microsoft Entra ID. Microsoft Entra Connect is responsible for synchronization of identities between the on-premises AD DS domain and Microsoft Entra ID. Microsoft Entra Connect is a service that can be installed on-premises or in a virtual machine in Azure.
-
-:::image type="content" source="images/enterprise-e3-ad-connect.png" alt-text="Figure 1 illustrates the integration between the on-premises AD DS domain with Microsoft Entra ID.":::
-
-Figure 1: On-premises AD DS integrated with Microsoft Entra ID
-
 For more information about integrating on-premises AD DS domains with Microsoft Entra ID, see the following resources:
 
+- [Configure Microsoft Entra hybrid join](/entra/identity/devices/how-to-hybrid-join)
 - [What is hybrid identity with Microsoft Entra ID?](/azure/active-directory/hybrid/whatis-hybrid-identity)
 - [Microsoft Entra Connect and Microsoft Entra Connect Health installation roadmap](/azure/active-directory/hybrid/how-to-connect-install-roadmap)
 
