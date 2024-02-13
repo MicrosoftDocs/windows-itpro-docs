@@ -291,3 +291,87 @@ This is different from the Automatically hide the taskbar option in tablet mode,
 </AssignedAccessConfiguration>
 ```
 ::: zone-end
+
+
+
+
+
+
+
+
+
+
+:::row:::
+    :::column:::
+    **Scenario**
+    :::column-end:::
+    :::column:::
+    **Sample Xml**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    **Block everything**
+    :::column-end:::
+    :::column:::
+    Either use empty node
+
+    ```xml
+    <v2:FileExplorerNamespaceRestrictions> </v2:FileExplorerNamespaceRestrictions>
+    ```
+
+    Or don't use the node
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    **Only allow downloads**
+    :::column-end:::
+    :::column:::
+    ```xml
+    <v2:FileExplorerNamespaceRestrictions>
+        <v2:AllowedNamespace Name="Downloads"/>
+    </v2:FileExplorerNamespaceRestrictions>
+    ```
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+    **Only allow removable drives**
+    :::column-end:::
+    :::column:::
+    ```xml
+    <v2:FileExplorerNamespaceRestrictions>
+        <v3:AllowRemovableDrives />
+    </v2:FileExplorerNamespaceRestrictions>
+    ```
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+    **Allow both Downloads, and removable drives**
+    :::column-end:::
+    :::column:::
+    ```xml
+    <v2:FileExplorerNamespaceRestrictions>
+        <v2:AllowedNamespace Name="Downloads"/>
+        <v3:AllowRemovableDrives/>
+    </v2:FileExplorerNamespaceRestrictions>
+    ```
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+    **No restrictions, all locations are allowed**
+    :::column-end:::
+    :::column:::
+    ```xml
+    <v2:FileExplorerNamespaceRestrictions>
+        <v3:NoRestriction />
+    </v2:FileExplorerNamespaceRestrictions>
+    ```
+    :::column-end:::
+:::row-end:::
