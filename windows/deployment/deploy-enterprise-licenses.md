@@ -139,7 +139,7 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 1. In the **Choose privacy settings for your device** screen, configure privacy settings as desired, using the **Next** button to go between settings. Once complete, select the **Accept** button.
 
-1. Additional screens appear depending on the device and the configuration of organization specific settings. For example, the **Windows Hello** screen might appear.
+1. Depending on the device and the configuration of organization specific settings, additional screens might appear. For example, the **Windows Hello** screen might appear.
 
 ::: zone-end
 
@@ -167,7 +167,7 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 1. In the **Choose privacy settings for your device** screen, configure privacy settings as desired. Once complete, select the **Accept** button.
 
-1. Additional screens appear depending on the device and the configuration of organization specific settings. For example, the **Windows Hello** screen might appear.
+1. Depending on the device and the configuration of organization specific settings, additional screens might appear. For example, the **Windows Hello** screen might appear.
 
 ::: zone-end
 
@@ -186,7 +186,7 @@ Open the **Accounts** > **Access work or school** pane in the **Settings** app b
 
 or
 
-1. Right click on the **Start** menu and select **Run**.
+1. Right-click on the **Start** menu and select **Run**.
 
 1. In the **Run** window, next to **Open:**, enter:
 
@@ -254,11 +254,11 @@ The device is now Microsoft Entra joined to the organization's subscription.
 
 ### Step 2: Pro edition activation
 
-If the device is running a currently supported version of Windows, most modern devices automatically activates Windows Pro edition using the firmware-embedded activation key.
+Windows Pro has to be activated on the device. However, if the device is running a currently supported version of Windows, most modern devices automatically activates Windows Pro edition using the firmware-embedded activation key.
 
 ### Step 3: Sign in using Microsoft Entra account
 
-Once the device is joined to Microsoft Entra ID, users sign in with their Microsoft Entra account. The Windows Enterprise E3 or E5 license associated with the user enables Windows Enterprise edition capabilities on the device.
+Once the device is joined to Microsoft Entra ID and Windows Setup/OOBE completes, the user signs in with their Microsoft Entra account. Once the user signs in with their Microsoft Entra account, the Windows Enterprise E3 or E5 license associated with the user enables Windows Enterprise edition capabilities on the device.
 
 ### Step 4: Verify that Enterprise edition is enabled
 
@@ -271,9 +271,9 @@ Open the **Activation** pane in the **Settings** app by selecting the following 
 
 or
 
-1. Right click on the **Start** menu and select **Run**.
+1. Right-click on the **Start** menu and select **Run**.
 
-1. In the **Run** window, next to **Open**, enter:
+1. In the **Run** window, next to **Open:**, enter:
 
    ```console
    ms-settings:activation
@@ -366,18 +366,16 @@ A device is healthy when both the subscription and activation are active. If the
 
 ## Troubleshoot the user experience
 
-In some instances, users might experience problems with the Windows Enterprise E3 or E5 subscription. The most common problems that users might experience are the following issues:
+In some instances, users might experience problems with activation of the Windows Enterprise E3 or E5 subscription. The most common problems that users might experience are the following issues:
 
 - The Windows Enterprise E3 or E5 subscription has lapsed, was removed, or isn't applied.
 - Windows Pro was never activated.
 
-### Activation pane errors
-
-The following are errors that can occur in the Activation pane with Windows Enterprise E3 or E5 subscriptions:
+When there are problems with Windows Enterprise E3 or E5 subscription activation, the following are errors can occur in the [Activation](ms-settings:activation) pane:
 
 - **Windows Pro isn't activated**
 
-  When Windows Pro isn't activated on a device, the following message is displayed next to **Activation** in the Activation pane:
+  When Windows Pro isn't activated on a device, the following message is displayed next to **Activation** in the [Activation](ms-settings:activation) pane:
 
   `Windows is not activated`
 
@@ -385,11 +383,16 @@ The following are errors that can occur in the Activation pane with Windows Ente
 
   `We can't activate Windows on this device right now. You can try activating again later or go to the Store to buy genuine Windows. Error code: 0xC004F034.`
 
-  This problem can also occur if the starting edition of Windows wasn't Windows Pro. For example, the starting edition of Windows was Windows Home.
+  Examples where this problem can occur include:
+
+  - The device doesn't have a firmware-embedded activation key
+  - The starting edition of Windows wasn't Windows Pro. For example, the starting edition of Windows was Windows Home.
+
+  In these case, a Windows Pro key might need to be manually entered.
 
 - **Windows Enterprise subscription isn't active**
 
-  When a device a Windows Enterprise subscription has lapsed or has been removed, the following message is displayed next to **Subscription** in the Activation pane:
+  When a device with a Windows Enterprise subscription has lapsed or has been removed, the following message is displayed next to **Subscription** in the [Activation](ms-settings:activation) pane:
 
   `Windows Enterprise subscription isn't valid.`
 
@@ -411,25 +414,34 @@ The following are errors that can occur in the Activation pane with Windows Ente
 
 ### Review requirements on devices
 
-Devices must be running a currently supported version of Windows Pro. Versions of Windows Pro that are out support don't support this feature.
+When there are Windows Enterprise E3 or E5 license activation issues on a device, verify that it meets all of the requirements:
 
-Devices must also be joined to Microsoft Entra ID, or hybrid domain joined with Microsoft Entra Connect. Customers who are federated with Microsoft Entra ID are also eligible.
+- Devices must be running a currently supported version of Windows Pro. Versions of Windows Pro that are out support don't support this feature.
 
-Use the following procedures to review whether a particular device meets these requirements:
+- Devices must be joined to Microsoft Entra ID, or hybrid domain joined with Microsoft Entra Connect. Customers who are federated with Microsoft Entra ID are also eligible.
 
-- **Determine if devices has a firmware-embedded activation key**
+- For automatic activation of Windows Pro, the device must have a firmware-embedded activation key.
 
-  To determine if the device has a firmware-embedded activation key:
+Use the following guides to verify each one of these requirements:
 
-  1. Open an elevated Windows PowerShell command prompt.
+- **Determine if the version of Windows is currently supported**
 
-  1. In the elevated Windows PowerShell command prompt, enter:
+  To determine if the version of Windows is currently supported:
 
-      ```powershell
-      (Get-CimInstance -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey
+  1. Open a command prompt
+
+  1. In the command prompt window, enter:
+
+      ```cmd
+      winver.exe
       ```
 
-  1. If the device has a firmware-embedded activation key, the key is displayed in the output. If the output is blank, the device doesn't have a firmware embedded activation key. Most modern OEM-provided devices designed to run currently supported versions of Windows have a firmware-embedded key.
+  1. The **About Windows** window opens and displays both the OS version and the build information of Windows.
+
+  1. Compare the information from the **About Windows** window against the Windows support lifecycle:
+
+      - [Windows 11 release information](/windows/release-health/windows11-release-information).
+      - [Windows 10 release information](/windows/release-health/release-information).
 
 - **Determine if a device is Microsoft Entra joined**
 
@@ -457,24 +469,23 @@ Use the following procedures to review whether a particular device meets these r
                  Device Name : Demo-PC
       ```
 
-- **Determine if the version of Windows is currently supported**
+- **Determine if devices has a firmware-embedded activation key**
 
-  To determine if the version of Windows is currently supported:
+  To determine if the device has a firmware-embedded activation key:
 
-  1. Open a command prompt
+  1. Open an elevated Windows PowerShell command prompt.
 
-  1. In the command prompt window, enter:
+  1. In the elevated Windows PowerShell command prompt, enter:
 
-      ```cmd
-      winver.exe
+      ```powershell
+      (Get-CimInstance -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey
       ```
 
-  1. The **About Windows** window opens and displays both the OS version and the build information of Windows.
+  1. If the device has a firmware-embedded activation key, the key is displayed in the output. If the output is blank, the device doesn't have a firmware embedded activation key. Most modern OEM-provided devices designed to run currently supported versions of Windows have a firmware-embedded key.
 
-  1. Compare the information from the **About Windows** window against the Windows support lifecycle:
+- **Make sure the Microsoft Entra user has been assigned a license**
 
-      - [Windows 11 release information](/windows/release-health/windows11-release-information).
-      - [Windows 10 release information](/windows/release-health/release-information).
+  For more information, see [Assigning licenses to users](#assigning-licenses-to-users).
 
 ### Delay in the activation of Enterprise license of Windows
 
@@ -484,7 +495,7 @@ There might be a delay in the activation of the Enterprise license in Windows. T
 
 - If a device isn't able to connect to Windows Update, it can lose activation status or be blocked from upgrading to Windows Enterprise. Make sure that Windows Update isn't blocked on the device:
 
-  - Make sure that the following group policy setting is set to **Disabled** or **Not Configured**:
+  - Using `gpedit.msc` or group policy editor in the domain, make sure that the following group policy setting is set to **Disabled** or **Not Configured**:
 
     ::: zone pivot="windows-11"
 
