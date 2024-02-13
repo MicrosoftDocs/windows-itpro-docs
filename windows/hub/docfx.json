@@ -44,7 +44,6 @@
       "uhfHeaderId": "MSDocsHeader-Windows",
       "ms.service": "windows-client",
       "ms.subservice": "itpro-fundamentals",
-      "ms.topic": "article",
       "feedback_system": "Standard",
             "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
@@ -55,10 +54,10 @@
       },
       "titleSuffix": "Windows for IT Pros",
       "contributors_to_exclude": [
-        "rjagiewich", 
-        "traya1", 
-        "rmca14", 
-        "claydetels19", 
+        "rjagiewich",
+        "traya1",
+        "rmca14",
+        "claydetels19",
         "jborsecnik",
         "tiburd",
         "garycentric",

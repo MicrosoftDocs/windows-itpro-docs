@@ -13,23 +13,25 @@ This article describes the options to configure Windows Hello for Business in an
 
 You can configure Windows Hello for Business by using the following options:
 
-- Configuration Service Provider (CSP): commonly used for devices managed by a Mobile Device Management (MDM) solution, like Microsoft Intune. CSPs can also be configured with [provisioning packages](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers#csps-in-windows-configuration-designer), which are usually used at deployment time or for unamanged devices. To configure Windows Hello for Business, use the [PassportForWork CSP][CSP-2]
+- Configuration Service Provider (CSP): commonly used for devices managed by a Mobile Device Management (MDM) solution, like Microsoft Intune. CSPs can also be configured with [provisioning packages](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers#csps-in-windows-configuration-designer), which are usually used at deployment time or for unmanaged devices. To configure Windows Hello for Business, use the [PassportForWork CSP][CSP-2]
 - Group policy (GPO): used for devices that are Active Directory joined or Microsoft Entra hybrid joined, and aren't managed by a device management solution
 
 ## Policy precedence
 
 Some of the Windows Hello for Business policies are available for both computer and user configuration. The following list describes the policy precedence for Windows Hello for Business:
 
-- *User policies* take precedence over *computer policies*. If a user policy is set, the corresponded computer policy is ignored. If a user policy is not set, the computer policy is used
+- *User policies* take precedence over *computer policies*. If a user policy is set, the corresponded computer policy is ignored. If a user policy isn't set, the computer policy is used
 - Windows Hello for Business policy settings are enforced using the following hierarchy:
-  - User GPO
-  - Computer GPO
-  - User MDM
-  - Device MDM
-  - Device Lock policy
+  - User - GPO
+  - Computer - GPO
+  - User - PassportForWork CSP
+  - Device - PassportForWork CSP
+  - Exchange Active Sync - [DeviceLock CSP](/windows/client-management/mdm/policy-csp-devicelock)
 
 >[!IMPORTANT]
->All devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
+>If you configure password length and complexity settings defined by the DeviceLock CSP, and PIN length and complexity settings defined by the PassportForWork CSP, Windows enforces the strictest policy out of the set of governing policies.
+>
+>The DeviceLock CSP utilizes the Exchange ActiveSync Policy (EAS) engine. For more information, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn282287(v=ws.11)).
 
 >[!NOTE]
 > If a policy isn't explicitly configured to require letters or special characters, users can optionally set an alphanumeric PIN.
@@ -63,9 +65,9 @@ For Microsoft Entra joined devices and Microsoft Entra hybrid joined devices enr
 There are different ways to enable and configure Windows Hello for Business in Intune:
 
 - Using a policy applied at the tenant level. The tenant policy:
-  - Is only applied at enrollment time, and any changes to its configuration won't apply to devices already enrolled in Intune
+  - Is only applied at enrollment time, and any changes to its configuration doesn't apply to devices already enrolled in Intune
   - It applies to *all devices* getting enrolled in Intune. For this reason, the policy is usually disabled and Windows Hello for Business is enabled using a policy targeted to a security group
-- A device configuration policy that is applied *after* device enrollment. Any changes to the policy will be applied to the devices during regular policy refresh intervals. There are different policy types to choose from:
+- A device configuration policy that is applied *after* device enrollment. Any changes to the policy are applied to the devices during regular policy refresh intervals. There are different policy types to choose from:
   - [Settings catalog][MEM-1]
   - [Security baselines][MEM-2]
   - [Custom policy][MEM-3], via the [PassportForWork CSP][MEM-4]
@@ -76,16 +78,16 @@ There are different ways to enable and configure Windows Hello for Business in I
 
 To check the Windows Hello for Business policy settings applied at enrollment time:
 
-1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
 1. Select **Devices** > **Windows** > **Windows Enrollment**
 1. Select **Windows Hello for Business**
-1. Verify the status of **Configure Windows Hello for Business** and any settings that may be configured
+1. Verify the status of **Configure Windows Hello for Business** and any settings that might be configured
 
 :::image type="content" source="deploy/images/whfb-intune-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Intune admin center." lightbox="deploy/images/whfb-intune-disable.png":::
 
 ## Policy conflicts from multiple policy sources
 
-Windows Hello for Business is designed to be managed by group policy or MDM, but not a combination of both. Avoid mixing group policy and MDM policy settings for Windows Hello for Business. If you mix group policy and MDM policy settings, the MDM settings are ignored until all group policy settings are cleared.
+Windows Hello for Business can be configured by GPO or CSP, but not a combination of both. Avoid mixing GPO and CSP policy settings for Windows Hello for Business. If you mix GPO and CSP policy settings, the CSP settings are ignored until all group policy settings are cleared.
 
 > [!IMPORTANT]
 > The [*MDMWinsOverGP*](/windows/client-management/mdm/policy-csp-controlpolicyconflict#mdmwinsovergp) policy setting doesn't apply to Windows Hello for Business. MDMWinsOverGP only applies to policies in the *Policy CSP*, while the Windows Hello for Business policies are in the *PassportForWork CSP*.
