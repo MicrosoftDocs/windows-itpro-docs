@@ -109,11 +109,11 @@ Now that a subscription is established and licenses are assigned to users, devic
 
 The first time the device starts, a Windows Pro device can join Microsoft Entra ID during setup. Existing devices can also join Microsoft Entra ID.
 
-#### Join a device to Microsoft Entra ID the first time the device is started
+#### Join a device to Microsoft Entra ID during OOBE when the device is started for the first time
 
 ::: zone pivot="windows-11"
 
-1. Power on the device for the first time to initiate Windows Setup.
+1. Power on the device for the first time to initiate Windows Setup and the Out of Box experience (OOBE).
 
 1. In the **Is this the right country or region?** screen, select the desired country/region and then select the **Yes** button.
 
@@ -145,7 +145,7 @@ The first time the device starts, a Windows Pro device can join Microsoft Entra 
 
 ::: zone pivot="windows-10"
 
-1. Power on the device for the first time to initiate Windows Setup.
+1. Power on the device for the first time to initiate Windows Setup and the Out of Box experience (OOBE).
 
 1. In the **Let's start with region. Is this right?** screen, select the desired country/region and then select the **Yes** button.
 
@@ -179,13 +179,34 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 >
 > Make sure that the user signing in isn't the **BUILTIN/Administrator** account. That user can't use the `+ Connect` action to join a work or school account.
 
+Select the following link to open **Accounts** > **Access work or school** pane in the **Settings** app:
+
+> [!div class="nextstepaction"]
+> [Activation](ms-settings:workplace)
+
+or
+
+1. Right click on the **Start** menu and select **Run**.
+
+1. In the **Run** window, next to **Open**, enter:
+
+   ```console
+   ms-settings:workplace
+   ```
+
+   and then select **OK**.
+
 ::: zone pivot="windows-11"
+
+The **Accounts > Access work or school** pane can also be opened by navigating to it using the following steps:
 
 1. Right-click on the **Start** menu and select **Settings**.
 
 1. In the **Settings** app, select **Accounts** in the left hand pane.
 
 1. In the **Accounts** pane, select **Access work or school**.
+
+Once the **Accounts > Access work or school** pane is open:
 
 1. In the **Accounts > Access work or school** pane, next to **Add a work or school account**, select the **Connect** button.
 
@@ -205,11 +226,15 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 
 ::: zone pivot="windows-10"
 
+The **Access work or school** pane can also be opened by navigating to it using the following steps:
+
 1. Right-click on the **Start** menu and select **Settings**.
 
 1. In the **Settings** app, select **Accounts**.
 
 1. In the left hand pane, select **Access work or school**.
+
+Once the **Access work or school** pane is open:
 
 1. In the **Access work or school** pane, select the **+** button next to **Connect**.
 
@@ -241,20 +266,34 @@ Once the device is joined to Microsoft Entra ID, users sign in with their Micros
 
 To verify the Windows Enterprise E3 or E5 subscription:
 
-
+Select the following link to open **Activation** in the **Settings** app:
 
 > [!div class="nextstepaction"]
 > [Activation](ms-settings:activation)
 
+or
+
 1. Right click on the **Start** menu and select **Run**.
 
-1. In the **Run** window, next to **Open**, enter
+1. In the **Run** window, next to **Open**, enter:
 
-   `ms-settings:activation`
+   ```console
+   ms-settings:activation
+   ```
 
    and then select **OK**.
 
 ::: zone pivot="windows-11"
+
+The **System > Activation** pane can also be opened by navigating to it using the following steps:
+
+1. Right-click on the **Start** menu and select **Settings**.
+
+1. In the **Settings** app, select **System** in the left hand pane.
+
+1. In the **System** pane, **Activation**.
+
+Once the **System > Activation** pane is open:
 
 1. In the **System > Activation** pane, expand **Activation state** and **Subscription** to see full details of the activation state and status:
 
@@ -270,17 +309,19 @@ To verify the Windows Enterprise E3 or E5 subscription:
       >
       > If the Windows Enterprise subscription hasn't yet been applied, the **Subscription** pane isn't displayed.
 
-The **System > Activation** pane can also be navigated to with the following steps:
-
-1. Right-click on the **Start** menu and select **Settings**.
-
-1. In the **Settings** app, select **System** in the left hand pane.
-
-1. In the **System** pane, **Activation**.
-
 ::: zone-end
 
 ::: zone pivot="windows-10"
+
+The **Activation** pane can also be opened by navigating to it using the following steps:
+
+1. Right-click on the **Start** menu and select **Settings**.
+
+1. In the **Settings** app, select **Update & Security**.
+
+1. In the left hand pane, select **Activation**.
+
+Once the **Activation** pane is open:
 
 1. In the **Activation** pane:
 
@@ -296,20 +337,7 @@ The **System > Activation** pane can also be navigated to with the following ste
 
       `Windows is activated with a digital license`
 
-The **Activation** pane can also be navigated to with the following steps:
-
-1. Right-click on the **Start** menu and select **Settings**.
-
-1. In the **Settings** app, select **Update & Security**.
-
-1. In the left hand pane, select **Activation**.
-
 ::: zone-end
-
-or by selecting the following link:
-
-> [!div class="nextstepaction"]
-> [Activation](ms-settings:activation)
 
 A device is healthy when both the subscription and activation are active. If there are any problems with the Windows Enterprise E3 or E5 license or the activation of the license, the **Activation** pane displays the appropriate error message or status. This information can be used to help diagnose the licensing and activation process.
 

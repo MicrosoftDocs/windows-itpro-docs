@@ -31,17 +31,6 @@ The subscription activation feature eliminates the need to manually deploy Enter
 - Entering Generic Volume License Keys (GVLKs).
 - Rebooting client devices.
 
-This article covers the following information:
-
-- [Subscription activation](#subscription-activation-for-enterprise): An introduction to subscription activation for Windows Enterprise.
-- [Subscription activation for Education](#subscription-activation-for-education): Information about subscription activation for Windows Education.
-- [Inherited activation](#inherited-activation): Allow virtual machines to inherit activation state from their Windows client host.
-- [The evolution of deployment](#the-evolution-of-deployment): A short history of Windows deployment.
-- [Requirements](#requirements): Prerequisites to use the Windows subscription activation model.
-- [Benefits](#benefits): Advantages of subscription-based licensing.
-- [How it works](#how-it-works): A summary of the subscription-based licensing option.
-- [Virtual Desktop Access (VDA)](#virtual-desktop-access-vda): How to enable Windows subscription activation for VMs in the cloud.
-
 For more information on how to deploy Enterprise licenses, see [Deploy Windows Enterprise licenses](deploy-enterprise-licenses.md).
 
 > [!NOTE]
