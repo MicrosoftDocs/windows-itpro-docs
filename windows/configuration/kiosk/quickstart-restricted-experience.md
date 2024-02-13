@@ -68,15 +68,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 [!INCLUDE [powershell-wmi-bridge-1](../../../includes/configure/powershell-wmi-bridge-1.md)]
 
 ```powershell
-$eventLogFilterHashTable = @{
-    ProviderName = "Microsoft-Windows-AssignedAccess";
-    StartTime    = Get-Date -Millisecond 0
-}
-
-$namespaceName="root\cimv2\mdm\dmmap"
-$className="MDM_AssignedAccess"
-$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
-$obj.Configuration = [System.Net.WebUtility]::HtmlEncode(@"
+$assignedAccessConfiguration = @"
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
@@ -126,8 +118,17 @@ $obj.Configuration = [System.Net.WebUtility]::HtmlEncode(@"
         </Config>
     </Configs>
 </AssignedAccessConfiguration>
-"@)
+"@
 
+$eventLogFilterHashTable = @{
+    ProviderName = "Microsoft-Windows-AssignedAccess";
+    StartTime    = Get-Date -Millisecond 0
+}
+
+$namespaceName="root\cimv2\mdm\dmmap"
+$className="MDM_AssignedAccess"
+$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
+$obj.Configuration = [System.Net.WebUtility]::HtmlEncode($assignedAccessConfiguration)
 $obj = Set-CimInstance -CimInstance $obj -ErrorVariable cimSetError -ErrorAction SilentlyContinue
 if($cimSetError) {
     Write-Output "An ERROR occurred. Displaying error record and attempting to retrieve error logs...`n"
