@@ -17,7 +17,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
-ms.date: 11/30/2023
+ms.date: 02/14/2024
 ---
 
 # Walkthrough: Use Group Policy to configure Windows Update for Business
@@ -65,7 +65,7 @@ You can control when updates are applied, for example by deferring when an updat
 
 Both feature and quality updates are automatically offered to devices that are connected to Windows Update using Windows Update for Business policies. However, you can choose whether you want the devices to additionally receive other Microsoft Updates or drivers that are applicable to that device.
 
-To enable Microsoft Updates, use the Group Policy Management Console go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates**  and select **Install updates for other Microsoft products**.
+To enable Microsoft Updates, use the Group Policy Management Console go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates**  and select **Install updates for other Microsoft products**. For a list of other Microsoft products that might be updated, see [Update other Microsoft products](update-other-microsoft-products.md).
 
 Drivers are automatically enabled because they're beneficial to device systems. We recommend that you allow the driver policy to allow drivers to update on devices (the default), but you can turn off this setting if you prefer to manage drivers manually. If you want to disable driver updates for some reason, use the Group Policy Management Console to go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Do not include drivers with Windows Updates** and enable the policy.
 

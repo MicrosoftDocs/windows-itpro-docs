@@ -16,7 +16,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
-ms.date: 11/30/2023
+ms.date: 02/14/2024
 ---
 
 # Configure Windows Update for Business
@@ -127,7 +127,7 @@ Starting with Windows 10, version 1703, using Settings to control the pause beha
 
 Quality updates are typically published on the second Tuesday of every month, although they can be released at any time. You can define if, and for how long, you would like to defer receiving quality updates following their availability. You can defer receiving these quality updates for a period of up to 30 days from their release by setting the **DeferQualityUpdatesPeriodinDays** value.  
 
-You can set your system to receive updates for other Microsoft products—known as Microsoft updates (such as Microsoft Office, Visual Studio)—along with Windows updates by setting the **AllowMUUpdateService** policy. When you do this, these Microsoft updates will follow the same deferral and pause rules as all other quality updates.
+You can set your system to receive updates for other Microsoft products—known as Microsoft updates (such as Microsoft Office, Visual Studio)—along with Windows updates by setting the **AllowMUUpdateService** policy. When you do this, these Microsoft updates will follow the same deferral and pause rules as all other quality updates. For a list of other Microsoft products that might be updated, see [Update other Microsoft products](update-other-microsoft-products.md).
 
 **Policy settings for deferring quality updates**
 

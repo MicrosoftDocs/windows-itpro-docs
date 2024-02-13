@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 12/31/2017
+ms.date: 02/14/2024
 ---
 
 # Integrate Windows Update for Business with management solutions
@@ -68,6 +68,7 @@ For Windows 10, version 1607 and later, devices can be configured to receive upd
 
 - Device is configured to defer quality updates using Windows Update for Business and to be managed by WSUS
 - Device is configured to **receive updates for other Microsoft products** along with updates to Windows (**Update/AllowMUUpdateService** = enabled)
+   - For a list of other Microsoft products that might be updated, see [Update other Microsoft products](update-other-microsoft-products.md).
 - Admin has also placed Microsoft Update, non-Microsoft, and locally published update content on the WSUS server
 
 In this example, the deferral behavior for updates to Office and other non-Windows products is slightly different than if WSUS weren't enabled. 
