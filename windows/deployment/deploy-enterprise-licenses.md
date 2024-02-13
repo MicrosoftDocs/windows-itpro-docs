@@ -179,7 +179,7 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 >
 > Make sure that the user signing in isn't the **BUILTIN/Administrator** account. That user can't use the `+ Connect` action to join a work or school account.
 
-Select the following link to open **Accounts** > **Access work or school** pane in the **Settings** app:
+Open the **Accounts** > **Access work or school** pane in the **Settings** app by selecting the following link:
 
 > [!div class="nextstepaction"]
 > [Activation](ms-settings:workplace)
@@ -188,7 +188,7 @@ or
 
 1. Right click on the **Start** menu and select **Run**.
 
-1. In the **Run** window, next to **Open**, enter:
+1. In the **Run** window, next to **Open:**, enter:
 
    ```console
    ms-settings:workplace
@@ -196,9 +196,9 @@ or
 
    and then select **OK**.
 
-::: zone pivot="windows-11"
+or
 
-The **Accounts > Access work or school** pane can also be opened by navigating to it using the following steps:
+::: zone pivot="windows-11"
 
 1. Right-click on the **Start** menu and select **Settings**.
 
@@ -225,8 +225,6 @@ Once the **Accounts > Access work or school** pane is open:
 ::: zone-end
 
 ::: zone pivot="windows-10"
-
-The **Access work or school** pane can also be opened by navigating to it using the following steps:
 
 1. Right-click on the **Start** menu and select **Settings**.
 
@@ -266,7 +264,7 @@ Once the device is joined to Microsoft Entra ID, users sign in with their Micros
 
 To verify the Windows Enterprise E3 or E5 subscription:
 
-Select the following link to open **Activation** in the **Settings** app:
+Open the **Activation** pane in the **Settings** app by selecting the following link:
 
 > [!div class="nextstepaction"]
 > [Activation](ms-settings:activation)
@@ -283,9 +281,9 @@ or
 
    and then select **OK**.
 
-::: zone pivot="windows-11"
+or
 
-The **System > Activation** pane can also be opened by navigating to it using the following steps:
+::: zone pivot="windows-11"
 
 1. Right-click on the **Start** menu and select **Settings**.
 
@@ -312,8 +310,6 @@ Once the **System > Activation** pane is open:
 ::: zone-end
 
 ::: zone pivot="windows-10"
-
-The **Activation** pane can also be opened by navigating to it using the following steps:
 
 1. Right-click on the **Start** menu and select **Settings**.
 
