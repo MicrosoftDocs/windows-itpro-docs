@@ -302,7 +302,7 @@ This is different from the Automatically hide the taskbar option in tablet mode,
 
 
 :::row:::
-    :::column:::
+    :::column span="1":::
     **Scenario**
     :::column-end:::
     :::column:::
@@ -314,17 +314,16 @@ This is different from the Automatically hide the taskbar option in tablet mode,
     **Block everything**
     :::column-end:::
     :::column:::
-    Either use empty node
+    Either don't use the node or leave it empty
 
     ```xml
-    <v2:FileExplorerNamespaceRestrictions> </v2:FileExplorerNamespaceRestrictions>
+    <v2:FileExplorerNamespaceRestrictions>
+    </v2:FileExplorerNamespaceRestrictions>
     ```
-
-    Or don't use the node
     :::column-end:::
 :::row-end:::
 :::row:::
-    :::column:::
+    :::column span="1":::
     **Only allow downloads**
     :::column-end:::
     :::column:::
@@ -337,7 +336,7 @@ This is different from the Automatically hide the taskbar option in tablet mode,
 :::row-end:::
 
 :::row:::
-    :::column:::
+    :::column span="1":::
     **Only allow removable drives**
     :::column-end:::
     :::column:::
@@ -350,7 +349,7 @@ This is different from the Automatically hide the taskbar option in tablet mode,
 :::row-end:::
 
 :::row:::
-    :::column:::
+    :::column span="1":::
     **Allow both Downloads, and removable drives**
     :::column-end:::
     :::column:::
@@ -364,7 +363,7 @@ This is different from the Automatically hide the taskbar option in tablet mode,
 :::row-end:::
 
 :::row:::
-    :::column:::
+    :::column span="1":::
     **No restrictions, all locations are allowed**
     :::column-end:::
     :::column:::
@@ -375,3 +374,24 @@ This is different from the Automatically hide the taskbar option in tablet mode,
     ```
     :::column-end:::
 :::row-end:::
+
+<!--troubleshooting
+Event Viewer
+Run "eventvwr.msc"
+Navigate to "Applications and Services Logs"
+There are 2 areas of your interests:
+"Microsoft-Windows-AssignedAccess"
+"Microsoft-Windows-AssignedAccessBroker"
+Before any repro, it's recommended to enable "Operational" channel to get the most of logs.
+TraceLogging
+<TBD>
+
+Registry Key
+These locations contain the latest Assigned Access Configuration:
+
+HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration
+HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessCsp
+These locations contain the latest "evaluated" configuration for each sign-in user:
+
+"HKCU\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration" (If it doesn't exist, it means no Assigned Access to be enforced for this user.)
+-->
