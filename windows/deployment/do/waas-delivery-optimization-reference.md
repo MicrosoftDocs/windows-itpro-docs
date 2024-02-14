@@ -207,7 +207,7 @@ This setting specifies the minimum content file size in MB enabled to use Peer C
 MDM Setting: **DOMaxDownloadBandwidth**
 
 Deprecated in Windows 10, version 2004.
-This setting specifies the maximum download bandwidth that can be used across all concurrent Delivery Optimization downloads in kilobytes per second (KB/s). **A default value of "0"** means that Delivery Optimization dynamically adjusts and optimize the maximum bandwidth used.
+This setting specifies the maximum download bandwidth that can be used across all concurrent Delivery Optimization downloads in kilobytes per second (KB/s). **A default value of "0"** means that Delivery Optimization dynamically adjusts and optimizes the maximum bandwidth used.
 
 
 ### Maximum Foreground Download Bandwidth
