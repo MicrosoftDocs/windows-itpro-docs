@@ -1,15 +1,15 @@
 ---
-title: "Quickstart: Configure a restricted user experience"
-description: Learn how to configure a restricted user experience using Windows Configuration Designer, Microsoft Intune, PowerShell or GPO.
+title: "Quickstart: configure a kiosk experience with Shell Launcher"
+description: Learn how to configure a kiosk experience with Shell Launcher, using Windows Configuration Designer, Microsoft Intune, or PowerShell.
 ms.topic: quickstart
 ms.date: 02/05/2024
 appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ---
 
-# Quickstart: Configure a kiosk device
+# Quickstart: configure a kiosk experience with Shell Launcher
 
-Add intro about single-use device and shell launcher
+This quickstart provides the information to configure a kiosk experience with Shell Launcher, using Windows Configuration Designer, Microsoft Intune, or PowerShell.
 
 ## Prerequisites
 
@@ -61,7 +61,7 @@ xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
             <Shell Shell="%SystemRoot%\explorer.exe"/>
         </DefaultProfile>
         <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
-            <Shell Shell="Microsoft.BingWeather_8wekyb3d8bbwe!App" v2:AppType="UWP" v2:AllAppsFullScreen="true">
+            <Shell Shell="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe --kiosk https://maps.heathrow.com --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2" v2:AppType="Desktop" v2:AllAppsFullScreen="true">
                 <ReturnCodeActions>
                     <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
                     <ReturnCodeAction ReturnCode="-1" Action="RestartDevice"/>
@@ -84,7 +84,8 @@ $namespaceName="root\cimv2\mdm\dmmap"
 $className="MDM_AssignedAccess"
 $obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
 $obj.ShellLauncher = [System.Net.WebUtility]::HtmlEncode($shellLauncherConfiguration)
-$obj = Set-CimInstance -CimInstance $obj -ErrorVariable cimSetError -ErrorAction SilentlyContinue
+$obj = Set-CimInstance -CimInstance $obj
+
 
 ```
 
@@ -94,7 +95,7 @@ $obj = Set-CimInstance -CimInstance $obj -ErrorVariable cimSetError -ErrorAction
 
 ## User experience
 
-After the settings are applied, reboot the device. A local account is automatically signed in, and the Weather app starts automatically in full screen.
+After the settings are applied, reboot the device. A local account is automatically signed in, and Microsoft Edge app starts automatically in full screen, opening the London Heathrow airport map.
 
 ## Next steps
 

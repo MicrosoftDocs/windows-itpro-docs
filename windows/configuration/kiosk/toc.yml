@@ -3,10 +3,12 @@ items:
   href: kiosk-methods.md
 - name: Quickstarts
   items:
-    - name: Configure a kiosk device
-      href: quickstart-kiosk.md
-    - name: Configure a restricted user experience
-      href: quickstart-restricted-experience.md
+    - name: Configure a kiosk experience with Assigned Access
+      href: quickstart-assigned-access-kiosk.md
+    - name: Configure a restricted user experience with Assigned Access
+      href: quickstart-assigned-access-restricted-experience.md
+    - name: Configure a kiosk experience with Shell Launcher
+      href: quickstart-shell-launcher-kiosk.md
 - name: Concepts
   items:
     - name: Prepare a device for kiosk configuration

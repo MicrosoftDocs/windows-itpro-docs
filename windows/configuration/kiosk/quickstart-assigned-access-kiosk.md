@@ -1,13 +1,13 @@
 ---
-title: "Quickstart: Configure a restricted user experience"
-description: Learn how to configure a restricted user experience using Windows Configuration Designer, Microsoft Intune, PowerShell or GPO.
+title: "Quickstart: Configure a kiosk experience with Assigned Access"
+description: Learn how to configure a kiosk experience with Assigned Access, using Windows Configuration Designer, Microsoft Intune, PowerShell or GPO.
 ms.topic: quickstart
 ms.date: 02/05/2024
 appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ---
 
-# Quickstart: Configure a restricted user experience
+# Quickstart: Configure a kiosk experience with Assigned Access"
 
 With a *restricted user experience*, you can control the applications allowed in a locked down Windows desktop.
 
@@ -70,12 +70,12 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 ```powershell
 $assignedAccessConfiguration = @"
 <?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+<AssignedAccessConfiguration
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
     xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
     xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config"
-    xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
+    >
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
             <AllAppsList>
@@ -83,7 +83,7 @@ $assignedAccessConfiguration = @"
                     <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
                     <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
                     <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App DesktopAppPath="C:\Windows\system32\cmd.exe" />
+                    <App DesktopAppPath="%windir%\System32\cmd.exe" />
                     <App DesktopAppPath="%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe" />
                     <App DesktopAppPath="%windir%\explorer.exe" />
                     <App AppUserModelId="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
@@ -94,7 +94,7 @@ $assignedAccessConfiguration = @"
                 <rs5:AllowedNamespace Name="Downloads"/>
                 <v3:AllowRemovableDrives/>
             </rs5:FileExplorerNamespaceRestrictions>
-            <win11:StartPins>
+            <v5:StartPins>
                 <![CDATA[{
                     "pinnedList":[
                         {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
@@ -107,7 +107,7 @@ $assignedAccessConfiguration = @"
                         {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk"}
                     ]
                 }]]>
-            </win11:StartPins>
+            </v5:StartPins>
             <Taskbar ShowTaskbar="true"/>
         </Profile>
     </Profiles>
