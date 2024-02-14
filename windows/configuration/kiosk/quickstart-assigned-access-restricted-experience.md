@@ -1,5 +1,5 @@
 ---
-title: "Quickstart: Configure a restricted user experience"
+title: "Quickstart: Configure a restricted user experience with Assigned Access"
 description: Learn how to configure a restricted user experience using Windows Configuration Designer, Microsoft Intune, PowerShell or GPO.
 ms.topic: quickstart
 ms.date: 02/05/2024
@@ -7,7 +7,7 @@ appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ---
 
-# Quickstart: Configure a restricted user experience
+# Quickstart: Configure a restricted user experience with Assigned Access
 
 With a *restricted user experience*, you can control the applications allowed in a locked down Windows desktop.
 

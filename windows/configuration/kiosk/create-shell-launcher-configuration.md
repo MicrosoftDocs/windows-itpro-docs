@@ -3,66 +3,41 @@ title: Create an Shell Launcher configuration file
 description: Learn how to create an XML file to configure a device with Shell Launcher.
 ms.date: 02/12/2024
 ms.topic: how-to
-zone_pivot_groups: windows-versions-11-10
-appliesto:
 ---
 
 # Create an Shell Launcher configuration file
 
 ## Full XML example
 
-::: zone pivot="windows-11"
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config"
-    xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
+<?xml version="1.0" encoding="utf-8"?>
+<ShellLauncherConfiguration
+xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
+xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
     <Profiles>
-        <Profile Id="{6954c40a-45dd-4176-a2e3-ecaf5c97f425}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App DesktopAppPath="C:\Windows\system32\cmd.exe" />
-                    <App DesktopAppPath="%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe" />
-                </AllowedApps>
-            </AllAppsList>
-            <rs5:FileExplorerNamespaceRestrictions>
-                <rs5:AllowedNamespace Name="Downloads"/>
-                <v3:AllowRemovableDrives/>
-            </rs5:FileExplorerNamespaceRestrictions>
-            <win11:StartPins>
-                <![CDATA[{
-                    "pinnedList":[
-                        {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
-                        {"packagedAppId":"Microsoft.Windows.Photos_8wekyb3d8bbwe!App"},
-                        {"packagedAppId":"Microsoft.BingWeather_8wekyb3d8bbwe!App"},
-                        {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Command Prompt.lnk"},
-                        {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell.lnk"},
-                        {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\File Explorer.lnk"},
-                        {"packagedAppId": "windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel"},
-                        {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk"}
-                    ]
-                }]]>
-            </win11:StartPins>
-            <Taskbar ShowTaskbar="true"/>
+        <DefaultProfile>
+            <Shell Shell="%SystemRoot%\explorer.exe"/>
+        </DefaultProfile>
+        <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
+            <Shell Shell="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe --kiosk https://maps.heathrow.com --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2" v2:AppType="Desktop" v2:AllAppsFullScreen="true">
+                <ReturnCodeActions>
+                    <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
+                    <ReturnCodeAction ReturnCode="-1" Action="RestartDevice"/>
+                    <ReturnCodeAction ReturnCode="255" Action="ShutdownDevice"/>
+                </ReturnCodeActions>
+                <DefaultAction Action="RestartShell"/>
+            </Shell>
         </Profile>
     </Profiles>
     <Configs>
         <Config>
-            <AutoLogonAccount rs5:DisplayName="Library Kiosk"/>
-            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+            <AutoLogonAccount/>
+            <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}"/>
         </Config>
     </Configs>
-</AssignedAccessConfiguration>
+</ShellLauncherConfiguration>
 ```
-::: zone-end
-
 
 :::row:::
     :::column span="1":::

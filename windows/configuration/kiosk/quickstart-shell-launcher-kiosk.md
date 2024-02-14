@@ -44,7 +44,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 - **Setting:** `./Vendor/MSFT/AssignedAccess/ShellLauncher`
 - **Value:**
 
-[!INCLUDE [quickstart-kiosk-xml](includes/quickstart-kiosk-xml.md)]
+[!INCLUDE [quickstart-shell-launcher-xml](includes/quickstart-shell-launcher-xml.md)]
 
 #### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 

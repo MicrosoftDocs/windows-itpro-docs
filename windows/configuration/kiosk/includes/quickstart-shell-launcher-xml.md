@@ -16,7 +16,7 @@ xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
             <Shell Shell="%SystemRoot%\explorer.exe"/>
         </DefaultProfile>
         <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
-            <Shell Shell="Microsoft.BingWeather_8wekyb3d8bbwe!App" v2:AppType="UWP" v2:AllAppsFullScreen="true">
+            <Shell Shell="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe --kiosk https://maps.heathrow.com --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2" v2:AppType="Desktop" v2:AllAppsFullScreen="true">
                 <ReturnCodeActions>
                     <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
                     <ReturnCodeAction ReturnCode="-1" Action="RestartDevice"/>
