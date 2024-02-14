@@ -1046,4 +1046,4 @@ Use the following procedures to verify that the PoC environment is configured pr
 
 ## Next steps
 
-[Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
+- [Windows 10 deployment scenarios](windows-deployment-scenarios.md).

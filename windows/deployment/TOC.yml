@@ -4,7 +4,7 @@
     - name: Get started
       items:
         - name: Windows client deployment scenarios
-          href: windows-10-deployment-scenarios.md
+          href: windows-deployment-scenarios.md
         - name: Quick guide to Windows as a service
           href: update/waas-quick-start.md
         - name: Windows as a service overview
@@ -175,9 +175,9 @@
     - name: Activate
       items:
       - name: Windows subscription activation
-        href: windows-10-subscription-activation.md
+        href: windows-subscription-activation.md
       - name: Windows Enterprise E3 in CSP
-        href: windows-10-enterprise-e3-overview.md
+        href: windows-enterprise-e3-overview.md
       - name: Configure VDA for subscription activation
         href: vda-subscription-activation.md
       - name: Deploy Windows Enterprise licenses
