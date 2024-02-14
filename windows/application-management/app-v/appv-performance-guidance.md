@@ -4,11 +4,12 @@ description: Learn how to configure App-V for optimal performance, optimize virt
 author: aczechowski
 ms.service: windows-client
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.subservice: itpro-apps
+ms.topic: article
 ---
 
 # Performance Guidance for Application Virtualization
@@ -16,7 +17,7 @@ ms.subservice: itpro-apps
 **Applies to**:
 
 - Windows 7 SP1
-- Windows 10 
+- Windows 10
 - Windows 11
 - Server 2012 R2
 - Server 2016
@@ -103,7 +104,7 @@ The following information displays the required steps to prepare the base image 
 
 #### Prepare the Base Image
 
-- **Performance**: 
+- **Performance**:
 
   - Enable the App-V client as described in [Enable the App-V in-box client](appv-enable-the-app-v-desktop-client.md).
   - Enable UE-V and download the App-V Settings Template from the UE-V template Gallery, see the following steps.
@@ -120,7 +121,7 @@ The following information displays the required steps to prepare the base image 
       - `AppData\Local\Microsoft\AppV\Client\VFS`
       - `AppData\Roaming\Microsoft\AppV\Client\VFS`
 
-- **Storage**: 
+- **Storage**:
 
   - Enable the App-V client as described in [Enable the App-V in-box client](appv-enable-the-app-v-desktop-client.md).
   - Enable UE-V and download the App-V Settings Template from the UE-V template Gallery, see the following steps.
@@ -144,7 +145,7 @@ For critical App-V Client configurations and for a little more context and how-t
 - **PreserveUserIntegrationsOnLogin**: If you have not pre-configured (**Add-AppvClientPackage**) a specific package and this setting isn't configured, the App-V Client will de-integrate* the persisted user integrations, then reintegrate*.
 
   For every package that meets the above conditions, effectively twice the work will be done during publishing/refresh.
-  
+
   If you don't plan to pre-configure every available user package in the base image, use this setting.
 
   - Configure in the Registry under `HKEY_LOCAL_MACHINE\Software\Microsoft\AppV\Client\Integration`.
@@ -181,7 +182,7 @@ UE-V will only support removing the .lnk file type from the exclusion list in th
 -   If a user has an application installed on one device but not another with .lnk files enabled.
 
 > [!Important]
-> This topic describes how to change the Windows registry by using Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. You should make a backup copy of the registry files (System.dat and User.dat) before you change the registry. Microsoft cannot guarantee that the problems that might occur when you change the registry can be resolved. Change the registry at your own risk. 
+> This topic describes how to change the Windows registry by using Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. You should make a backup copy of the registry files (System.dat and User.dat) before you change the registry. Microsoft cannot guarantee that the problems that might occur when you change the registry can be resolved. Change the registry at your own risk.
 
 Using the Microsoft Registry Editor (regedit.exe), navigate to `HKEY\_LOCAL\_MACHINE\Software\Microsoft\UEV\Agent\Configuration\ExcludedFileTypes` and remove `.lnk` from the excluded file types.
 
@@ -200,10 +201,10 @@ To enable an optimized sign-in experience, for example the App-V approach for th
 -   Attaching and detaching a user profile disk (UPD) or similar technology that contains the user integrations.
 
   > [!Note]
-  > 
+  >
   > App-V is supported when using UPD only when the entire profile is stored on the user profile disk.
-  > 
-  > App-V packages are not supported when using UPD with selected folders stored in the user profile disk. The Copy on Write driver doesn't handle UPD selected folders.     
+  >
+  > App-V packages are not supported when using UPD with selected folders stored in the user profile disk. The Copy on Write driver doesn't handle UPD selected folders.
 
 -   Capturing changes to the locations, which constitute the user integrations, prior to session sign out.
 
@@ -246,50 +247,50 @@ Registry – HKEY\_CURRENT\_USER
 This following process is a step-by-step walk-through of the App-V and UPM operations, and the users' expectations.
 
 - **Performance**: After implementing this approach in the VDI/RDSH environment, on first login,
-  - (Operation) A user-publishing/refresh is initiated. 
+  - (Operation) A user-publishing/refresh is initiated.
 
     (Expectation) If it's the first time that a user has published virtual applications (for example, non-persistent), this operation will take the usual duration of a publishing/refresh.
 
 - (Operation) After the publishing/refresh, the UPM solution captures the user integrations.
 
     (Expectation) Depending on how the UPM solution is configured, this capture may occur as part of the sign-out process. This result will incur the same/similar overhead as persisting the user state.
- 
+
   **On subsequent logins**:
 
   - (Operation) UPM solution applies the user integrations to the system prior to publishing/refresh.
 
     (Expectation) There will be shortcuts present on the desktop, or in the start menu, which work immediately. When the publishing/refresh completes (that is, package entitlements change), some may go away.
 
-  - (Operation) Publishing/refresh will process unpublish and publish operations for changes in user package entitlements. 
- 
+  - (Operation) Publishing/refresh will process unpublish and publish operations for changes in user package entitlements.
+
     (Expectation) If there are no entitlement changes, publishing will complete in seconds. Otherwise, the publishing/refresh will increase relative to the number and complexity of virtual applications
 
-    The publishing operation (**Publish-AppVClientPackage**) adds entries to the user catalog, maps entitlement to the user, identifies the local store, and finishes by completing any integration steps.  
-  
+    The publishing operation (**Publish-AppVClientPackage**) adds entries to the user catalog, maps entitlement to the user, identifies the local store, and finishes by completing any integration steps.
+
   - (Operation) UPM solution will capture user integrations again at sign off.
- 
+
      (Expectation) Same as previous.
 
-  **Outcome**: 
+  **Outcome**:
 
   - Because the user integrations are entirely preserved, there will be no work for example, integration for the publishing/refresh to complete. All virtual applications will be available within seconds of sign in.
   - The publishing/refresh will process changes to the users-entitled virtual applications, which impacts the experience.
 
 - **Storage**: After implementing this approach in the VDI/RDSH environment, on first login
 
-  - (Operation) A user-publishing/refresh is initiated. 
+  - (Operation) A user-publishing/refresh is initiated.
 
     (Expectation):
 
     - If this instance is the first time a user has published virtual applications (for example, non-persistent), this will take the usual duration of a publishing/refresh.
     - First and subsequent logins will be impacted by pre-configuring of packages (add/refresh).
- 
+
   - (Operation) After the publishing/refresh, the UPM solution captures the user integrations.
 
-    (Expectation) Depending on how the UPM solution is configured, this capture may occur as part of the sign-off process. This result will incur the same/similar overhead as persisting the user state. 
- 
+    (Expectation) Depending on how the UPM solution is configured, this capture may occur as part of the sign-off process. This result will incur the same/similar overhead as persisting the user state.
+
   **On subsequent logins**:
- 
+
   - (Operation) UPM solution applies the user integrations to the system prior to publishing/refresh.
   - (Operation) Add/refresh must pre-configure all user targeted applications.
 
@@ -300,7 +301,7 @@ This following process is a step-by-step walk-through of the App-V and UPM opera
    - (Operation) Publishing/refresh will process unpublish and publish operations for changes to user package entitlements.
 
   **Outcome**: Because the add/refresh must reconfigure all the virtual applications to the VM, the publishing refresh time on every login will be extended.
- 
+
 ### <a href="" id="bkmk-plc"></a>Impact to Package Life Cycle
 
 Upgrading a package is a crucial aspect of the package lifecycle. To help guarantee users have access to the appropriate upgraded (published) or downgraded (unpublished) virtual application packages, it's recommended you update the base image to reflect these changes. To understand why review the following section:
@@ -380,7 +381,7 @@ Removing FB1 doesn't require the original application installer. After completin
     "C:\\UpgradedPackages"
 
     > [!Note]
-    > This cmdlet requires an executable (.exe) or batch file (.bat). You must provide an empty (does nothing) executable or batch file.  
+    > This cmdlet requires an executable (.exe) or batch file (.bat). You must provide an empty (does nothing) executable or batch file.
 
 |Step|Considerations|Benefits|Tradeoffs|
 |--- |--- |--- |--- |
@@ -398,7 +399,7 @@ When publishing a virtual application package, the App-V Client will detect if a
 |Step|Considerations|Benefits|Tradeoffs|
 |--- |--- |--- |--- |
 |Selectively Employ Dynamic Configuration files|The App-V client must parse and process these Dynamic Configuration files. <br> <br>Be conscious of size and complexity (script execution, VREG inclusions/exclusions) of the file.<br> <br>Numerous virtual application packages may already have User- or computer–specific dynamic configurations files.|Publishing times will improve if these files are used selectively or not at all.|Virtual application packages would need to be reconfigured individually or via the App-V server management console to remove associated Dynamic Configuration files.|
- 
+
 
 ### Disabling a Dynamic Configuration by using Windows PowerShell
 
