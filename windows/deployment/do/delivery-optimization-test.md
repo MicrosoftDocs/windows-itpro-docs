@@ -10,9 +10,9 @@ ms.reviewer: mstewart
 manager: aaroncz
 ms.collection: tier3
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
 ms.date: 11/08/2022
 ---
@@ -25,15 +25,15 @@ Delivery Optimization is a powerful and useful tool to help enterprises manage b
 
 ## Monitoring The Results
 
-Since Delivery Optimization is on by default, you'll be able to monitor the value either through the Windows Settings for ‘Delivery Optimization’, using Delivery Optimization PowerShell [cmdlets.](waas-delivery-optimization-setup.md), and/or via the [Windows Update for Business Report.](../update/wufb-reports-workbook.md) experience in Azure.
+Since Delivery Optimization is on by default, you'll be able to monitor the value either through the Windows Settings for 'Delivery Optimization', using Delivery Optimization PowerShell [cmdlets.](waas-delivery-optimization-setup.md), and/or via the [Windows Update for Business Report.](../update/wufb-reports-workbook.md) experience in Azure.
 
-In the case where Delivery Optimization isn't working in your environment, it's important to investigate to get to the root of the problem. We recommend a test environment be created to easily evaluate typical devices to ensure Delivery Optimization is working properly. For starters, ‘Scenario 1: Basic Setup’ should be created to test the use of Delivery Optimization between two machines. This scenario is designed to eliminate any noise in the environment to ensure there's nothing preventing Delivery Optimization from working on the devices. Once you have a baseline, you can expand the test environment for more sophisticated tests.
+In the case where Delivery Optimization isn't working in your environment, it's important to investigate to get to the root of the problem. We recommend a test environment be created to easily evaluate typical devices to ensure Delivery Optimization is working properly. For starters, 'Scenario 1: Basic Setup' should be created to test the use of Delivery Optimization between two machines. This scenario is designed to eliminate any noise in the environment to ensure there's nothing preventing Delivery Optimization from working on the devices. Once you have a baseline, you can expand the test environment for more sophisticated tests.
 
 ## Expectations and Goals
 
 The focus of the testing scenarios in this article is primarily centered on demonstrating the Delivery Optimization policies centered around the successful downloading of bytes using P2P. More specifically, the goal will be to show peer to peer is working as expected, using the following criteria:
 
-* Peers can find each other (for example on the same LAN / subnet / Group – matching your 'Download Mode' policy).
+* Peers can find each other (for example on the same LAN / subnet / Group - matching your 'Download Mode' policy).
 * Files are downloading in the expected 'Download Mode' policy setting (validates connectivity to DO cloud, HTTP, and local configs).
 * At least some downloads happening via P2P (validates connectivity between peers).
 
@@ -45,7 +45,7 @@ Several elements that influence overall peering, using Delivery Optimization. Th
 
 ### Delivery Optimization is a Hybrid P2P Platform
 
-* Delivery Optimization’s hybrid approach to downloading from multiple sources (HTTP and peer) in parallel is especially critical for large-scale environments, constantly assessing the optimal source from which to deliver the content. In conjunction, the distribution of content cache, across participating devices, contributes to Delivery Optimization’s ability to find bandwidth savings as more peers become available.
+* Delivery Optimization's hybrid approach to downloading from multiple sources (HTTP and peer) in parallel is especially critical for large-scale environments, constantly assessing the optimal source from which to deliver the content. In conjunction, the distribution of content cache, across participating devices, contributes to Delivery Optimization's ability to find bandwidth savings as more peers become available.
 
 * At the point a download is initiated, the DO client starts downloading from the HTTP source and discovering peers simultaneously. With a smaller file, most of the bytes could be downloaded from an HTTP source before connecting to a peer, even though peers are available. With a larger file and quality LAN peers, it might reduce the HTTP request rate to near zero, but only after making those initial requests from HTTP.
 
@@ -74,7 +74,7 @@ Machine 1 will download zero bytes from peers and Machine 2 will download 50-99%
 |Pause Windows Updates | This controls the test environment so no other content is made available during the test, and potentially altering the outcome of the test. If there are problems and no peering happens, use 'Get-DeliveryOptimizationStatus' on the first machine to return a real-time list of the connected peers. |
 |Ensure all Store apps are up to date | This will help prevent any new, unexpected updates to download during testing. |
 |Delivery Optimization 'Download Mode' Policy | 2 (Group)(set on each machine) |
-|Delivery Optimization 'GroupID' Policy | Set the *same* 'GUID' on each test machine. A GUID is a required value, which can be generated using PowerShell, ‘[[guid]::NewGuid().](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)’. |
+|Delivery Optimization 'GroupID' Policy | Set the *same* 'GUID' on each test machine. A GUID is a required value, which can be generated using PowerShell, '[[guid]::NewGuid().](https://devblogs.microsoft.com/scripting/powertip-create-a-new-guid-by-using-powershell/)'. |
 |**Required on Windows 11 devices only** set Delivery Optimization 'Restrict Peer Selection' policy | 0-NAT (set on each machine). The default behavior in Windows 11 is set to '2-Local Peer Discovery'. For testing purposes, this needs to be scoped to the NAT. |
 
 #### Test Instructions
@@ -126,7 +126,7 @@ Machine 1 will download zero bytes from peers and Machine 2 will find peers and 
 |Disk size | 127 GB |
 |Network | Connected to same network, one that is representative of the corporate network. |
 |Delivery Optimization 'Download Mode' Policy| 2 (Group)(set on each machine) |
-|Delivery Optimization 'Group ID' Policy| Set the *same* 'GUID' on each test machine. A GUID is required value, which can be generated using PowerShell, '[guid]::NewGuid().](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)'. |
+|Delivery Optimization 'Group ID' Policy| Set the *same* 'GUID' on each test machine. A GUID is required value, which can be generated using PowerShell, '[guid]::NewGuid().](https://devblogs.microsoft.com/scripting/powertip-create-a-new-guid-by-using-powershell/)'. |
 |Delivery Optimization 'Delay background download from http' Policy | 60 (set on each machine) |
 |Delivery Optimization 'Delay foreground download from http Policy |60 (set on each machine) |
 
@@ -134,13 +134,13 @@ Machine 1 will download zero bytes from peers and Machine 2 will find peers and 
 
 The following set of instructions will be used for each machine:
 
-1. Clear the DO cache: ‘Delete-DeliveryOptimizationCache’.
+1. Clear the DO cache: 'Delete-DeliveryOptimizationCache'.
 2. Open MS Store and search for 'Asphalt Legends 9'. Select *Get* to initiate the download of the content (content size: ~3.4 GB).
 3. Open PowerShell console as Administrator. Run 'Get-DeliveryOptimizationStatus'.
 
 **On machine #1:**
 
-* Run ‘Test Instructions’
+* Run 'Test Instructions'
 
 **Output: Windows 10 (21H2)**
 
@@ -149,14 +149,14 @@ The following set of instructions will be used for each machine:
 **Observations**
 
 * The first download in the group of devices shows all bytes coming from HTTP, 'BytesFromHttp'.
-* Download is in the ‘Foreground’ because the Store app is doing the download and in the foreground on the device because it is initiated by the user in the Store app.
+* Download is in the 'Foreground' because the Store app is doing the download and in the foreground on the device because it is initiated by the user in the Store app.
 * No peers are found.
 
 *Wait 5 minutes*.
 
 **On machine #2:**
 
-* Run ‘Test Instructions’
+* Run 'Test Instructions'
 
 **Output** Windows 10 (21H2)
 
@@ -171,7 +171,7 @@ The following set of instructions will be used for each machine:
 
 **On machine #3:**
 
-* Run ‘Test Instructions’
+* Run 'Test Instructions'
 
 **Output:** Windows 10 (21H2)
 
@@ -185,8 +185,8 @@ The following set of instructions will be used for each machine:
 
 ## Peer sourcing observations for all machines in the test group
 
-The distributed nature of the Delivery Optimization technology is obvious when you rerun the ‘Get-DeliveryOptimizationStatus’ cmdlet on each of the test machines. For each, there's a new value populated for the ‘BytesToLanPeers’ field. This demonstrates that as more peers become available, the requests to download bytes are distributed across the peering group and act as the source for the peering content. Each peer plays a role in servicing the other.
-  
+The distributed nature of the Delivery Optimization technology is obvious when you rerun the 'Get-DeliveryOptimizationStatus' cmdlet on each of the test machines. For each, there's a new value populated for the 'BytesToLanPeers' field. This demonstrates that as more peers become available, the requests to download bytes are distributed across the peering group and act as the source for the peering content. Each peer plays a role in servicing the other.
+
 **Output:** Machine 1
 
 'BytesToPeers' sourced from Machine 1 are '5704426044'. This represents the total number of bytes downloaded by the two peers in the group.

@@ -118,8 +118,6 @@ The two Windows Server VMs can be combined into a single VM to conserve RAM and 
 
 ### Verify support and install Hyper-V
 
-Starting with Windows 8, the host computer's microprocessor must support second level address translation (SLAT) to install Hyper-V. See [Hyper-V: List of SLAT-Capable CPUs for Hosts](https://social.technet.microsoft.com/wiki/contents/articles/1401.hyper-v-list-of-slat-capable-cpus-for-hosts.aspx) for more information.
-
 1. To verify your computer supports SLAT, open an administrator command prompt,  type **systeminfo**, press ENTER, and review the section displayed at the bottom of the output, next to Hyper-V Requirements. See the following example:
 
     ```cmd

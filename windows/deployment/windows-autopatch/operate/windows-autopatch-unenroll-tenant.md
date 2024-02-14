@@ -35,15 +35,15 @@ Unenrolling from Windows Autopatch requires manual actions from both you and fro
 
 | Responsibility | Description |
 | ----- | ----- |
-| Windows Autopatch data | Windows Autopatch will delete user data that is within the Windows Autopatch service. We won’t make changes to any other data. For more information about how data is used in Windows Autopatch, see [Privacy](../overview/windows-autopatch-privacy.md). |
+| Windows Autopatch data | Windows Autopatch will delete user data that is within the Windows Autopatch service. We won't make changes to any other data. For more information about how data is used in Windows Autopatch, see [Privacy](../overview/windows-autopatch-privacy.md). |
 | Excluding devices | Windows Autopatch will exclude all devices previously registered with the service. Only the Windows Autopatch device record is deleted. We won't delete Microsoft Intune and/or Microsoft Entra device records. For more information, see [Exclude a device](../operate/windows-autopatch-exclude-device.md). |
 
 ## Your responsibilities after unenrolling your tenant
 
 | Responsibility | Description |
 | ----- | ----- |
-| Updates | After the Windows Autopatch service is unenrolled, we’ll no longer provide updates to your devices.  You must ensure that your devices continue to receive updates through your own policies to ensure they're secure and up to date. |
-| Optional Windows Autopatch configuration | Windows Autopatch won’t remove the configuration policies or groups used to enable updates on your devices. You're responsible for these policies following tenant unenrollment. If you don’t wish to use these policies for your devices after unenrollment, you may safely delete them. For more information, see [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md). |
+| Updates | After the Windows Autopatch service is unenrolled, we'll no longer provide updates to your devices.  You must ensure that your devices continue to receive updates through your own policies to ensure they're secure and up to date. |
+| Optional Windows Autopatch configuration | Windows Autopatch won't remove the configuration policies or groups used to enable updates on your devices. You're responsible for these policies following tenant unenrollment. If you don't wish to use these policies for your devices after unenrollment, you may safely delete them. For more information, see [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md). |
 | Microsoft Intune roles | After unenrollment, you may safely remove the Modern Workplace Intune Admin role. |
 
 ## Unenroll from Windows Autopatch
@@ -56,4 +56,4 @@ Unenrolling from Windows Autopatch requires manual actions from both you and fro
     2. The Windows Autopatch Service Engineering Team can proceed sooner than 14 days if your confirmation arrives sooner.
 1. The Windows Autopatch Service Engineering Team proceeds with the removal of all items listed under [Microsoft's responsibilities during unenrollment](#microsofts-responsibilities-during-unenrollment).
 1. The Windows Autopatch Service Engineering Team informs you when unenrollment is complete.
-1. You’re responsible for the items listed under [Your responsibilities after unenrolling your tenant](#your-responsibilities-after-unenrolling-your-tenant).
+1. You're responsible for the items listed under [Your responsibilities after unenrolling your tenant](#your-responsibilities-after-unenrolling-your-tenant).

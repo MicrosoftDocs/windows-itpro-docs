@@ -34,7 +34,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | Message center post number | Description |
 | ----- | ----- |
 | [MC697414](https://admin.microsoft.com/adminportal/home#/MessageCenter) | New Feature: Alerts for Windows Autopatch policy conflicts Public Preview announcement |
-| [MC695483](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned Maintenance: Windows Autopatch configuration update – December 2023 |
+| [MC695483](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned Maintenance: Windows Autopatch configuration update - December 2023 |
 
 ## November service release
 
