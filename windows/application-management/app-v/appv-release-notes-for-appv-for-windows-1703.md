@@ -4,11 +4,12 @@ description: A list of known issues and workarounds for App-V running on Windows
 author: aczechowski
 ms.service: windows-client
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.subservice: itpro-apps
+ms.topic: article
 ---
 
 # Release Notes for App-V for Windows 10 version 1703 and later

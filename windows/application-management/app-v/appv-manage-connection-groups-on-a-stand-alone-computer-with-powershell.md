@@ -4,11 +4,12 @@ description: How to Manage Connection Groups on a Stand-alone Computer by Using 
 author: aczechowski
 ms.service: windows-client
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.subservice: itpro-apps
+ms.topic: article
 ---
 
 # How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell
