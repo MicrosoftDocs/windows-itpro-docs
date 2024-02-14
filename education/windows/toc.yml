@@ -30,6 +30,22 @@ items:
       href: /windows/configuration/shared-devices-concepts?context=/education/context/context
     - name: Windows 10 configuration recommendations for education customers
       href: configure-windows-for-education.md
+    - name: Recommendations for Windows devices
+      items:
+      - name: Overview
+        href: recommendations/overview.md
+      - name: Microsoft Edge
+        href: recommendations/edge.md
+      - name: Windows Update
+        href: recommendations/windows-update.md
+      - name: Defender Antivirus
+        href: recommendations/defender-antivirus.md
+      - name: Windows Hello
+        href: recommendations/windows-hello.md
+      - name: Windows Updates
+        href: recommendations/windows-updates.md
+      - name: UI customizations
+        href: recommendations/ui-customizations.md
     - name: Take tests and assessments in Windows
       href: take-tests-in-windows.md
 - name: How-to-guides
