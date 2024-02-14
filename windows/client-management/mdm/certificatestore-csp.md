@@ -1,14 +1,7 @@
 ---
 title: CertificateStore CSP
 description: Learn more about the CertificateStore CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -2391,6 +2384,7 @@ Optional. Notify the client whether enrollment server supports ROBO auto certifi
 | Value | Description |
 |:--|:--|
 | true (Default) | True. |
+| false | False. |
 <!-- Device-MY-WSTEP-Renew-ROBOSupport-AllowedValues-End -->
 
 <!-- Device-MY-WSTEP-Renew-ROBOSupport-Examples-Begin -->

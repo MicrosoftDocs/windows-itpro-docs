@@ -2,13 +2,13 @@
 title: Unenroll your tenant
 description: This article explains what unenrollment means for your organization and what actions you must take.
 ms.date: 08/08/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: hathind
 ms.collection:
   - highpri
@@ -22,7 +22,7 @@ If you're looking to unenroll your tenant from Windows Autopatch, this article d
 > [!IMPORTANT]
 > You must be a Global Administrator to unenroll your tenant.
 
-Unenrolling from Windows Autopatch requires manual actions from both you and from the Windows Autopatch Service Engineering Team. The Windows Autopatch Service Engineering Team will:  
+Unenrolling from Windows Autopatch requires manual actions from both you and from the Windows Autopatch Service Engineering Team. The Windows Autopatch Service Engineering Team will:
 
 - Remove Windows Autopatch access to your tenant.
 - Exclude your devices from the Windows Autopatch service. Excluding your devices from Windows Autopatch won't remove your devices from Intune, Microsoft Entra ID or Configuration Manager. The Windows Autopatch Service Engineering Team follows the same process and principles as laid out in [Exclude a device](../operate/windows-autopatch-exclude-device.md).
@@ -51,7 +51,7 @@ Unenrolling from Windows Autopatch requires manual actions from both you and fro
 **To unenroll from Windows Autopatch:**
 
 1. [Submit a support request](../operate/windows-autopatch-support-request.md) and request to unenroll from the Windows Autopatch service.
-1. The Windows Autopatch Service Engineering Team communicates with your IT Administrator to confirm your intent to unenroll from the service.  
+1. The Windows Autopatch Service Engineering Team communicates with your IT Administrator to confirm your intent to unenroll from the service.
     1. You have 14 days to review and confirm the communication sent by the Windows Autopatch Service Engineering Team.
     2. The Windows Autopatch Service Engineering Team can proceed sooner than 14 days if your confirmation arrives sooner.
 1. The Windows Autopatch Service Engineering Team proceeds with the removal of all items listed under [Microsoft's responsibilities during unenrollment](#microsofts-responsibilities-during-unenrollment).

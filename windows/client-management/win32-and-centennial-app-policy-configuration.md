@@ -1,7 +1,7 @@
 ---
 title: Win32 and Desktop Bridge app ADMX policy Ingestion
 description: Ingest ADMX files and set ADMX policies for Win32 and Desktop Bridge apps.
-ms.topic: article
+ms.topic: conceptual
 ms.date: 08/10/2023
 ---
 

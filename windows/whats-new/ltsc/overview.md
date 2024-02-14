@@ -1,13 +1,13 @@
 ---
 title: Windows 10 Enterprise LTSC overview
 description: An overview of the Windows 10 long-term servicing channel (LTSC).
-ms.prod: windows-client
+ms.service: windows-client
 author: mestew
 ms.author: mstewart
 manager: aaroncz
 ms.localizationpriority: low
 ms.topic: overview
-ms.technology: itpro-fundamentals
+ms.subservice: itpro-fundamentals
 ms.date: 12/18/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 Enterprise LTSC</a>

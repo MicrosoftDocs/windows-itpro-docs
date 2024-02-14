@@ -1,8 +1,9 @@
 ---
 title: Configure and secure devices with Microsoft Intune
 description: Learn how to configure policies with Microsoft Intune in preparation for device deployment.
-ms.date: 11/09/2023
+ms.date: 01/16/2024
 ms.topic: tutorial
+ms.collection: essentials-manage
 ---
 
 # Configure and secure devices with Microsoft Intune
@@ -23,12 +24,14 @@ There are two ways to manage settings in Intune for Education:
 > [!NOTE]
 > Express Configuration is ideal when you are getting started. Settings are pre-configured to Microsoft-recommended values, but can be changed to fit your school's needs. It is recommended to use Express Configuration to initially set up your Windows devices.
 
-In this section you will:
+
 > [!div class="checklist"]
-> * Configure settings with Express Configuration
-> * Configure group settings
-> * Create Windows Update policies
-> * Configure security policies
+>In this section you will:
+>
+> - Configure settings with Express Configuration
+> - Configure group settings
+> - Create Windows Update policies
+> - Configure security policies
 
 ## Configure settings with Express Configuration
 

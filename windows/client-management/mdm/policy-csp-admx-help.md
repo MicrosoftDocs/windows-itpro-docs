@@ -1,14 +1,7 @@
 ---
 title: ADMX_Help Policy CSP
 description: Learn more about the ADMX_Help Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -18,9 +11,61 @@ ms.topic: reference
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+
 <!-- ADMX_Help-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- ADMX_Help-Editable-End -->
+
+<!-- AllowChildProcesses-Begin -->
+## AllowChildProcesses
+
+<!-- AllowChildProcesses-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AllowChildProcesses-Applicability-End -->
+
+<!-- AllowChildProcesses-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Help/AllowChildProcesses
+```
+<!-- AllowChildProcesses-OmaUri-End -->
+
+<!-- AllowChildProcesses-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- AllowChildProcesses-Description-End -->
+
+<!-- AllowChildProcesses-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowChildProcesses-Editable-End -->
+
+<!-- AllowChildProcesses-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowChildProcesses-DFProperties-End -->
+
+<!-- AllowChildProcesses-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowChildProcesses |
+| ADMX File Name | Help.admx |
+<!-- AllowChildProcesses-AdmxBacked-End -->
+
+<!-- AllowChildProcesses-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowChildProcesses-Examples-End -->
+
+<!-- AllowChildProcesses-End -->
 
 <!-- DisableHHDEP-Begin -->
 ## DisableHHDEP
@@ -154,6 +199,56 @@ For additional options, see the "Restrict these programs from being launched fro
 <!-- HelpQualifiedRootDir_Comp-Examples-End -->
 
 <!-- HelpQualifiedRootDir_Comp-End -->
+
+<!-- HideChildProcessMessageBox-Begin -->
+## HideChildProcessMessageBox
+
+<!-- HideChildProcessMessageBox-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- HideChildProcessMessageBox-Applicability-End -->
+
+<!-- HideChildProcessMessageBox-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Help/HideChildProcessMessageBox
+```
+<!-- HideChildProcessMessageBox-OmaUri-End -->
+
+<!-- HideChildProcessMessageBox-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- HideChildProcessMessageBox-Description-End -->
+
+<!-- HideChildProcessMessageBox-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideChildProcessMessageBox-Editable-End -->
+
+<!-- HideChildProcessMessageBox-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HideChildProcessMessageBox-DFProperties-End -->
+
+<!-- HideChildProcessMessageBox-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | HideChildProcessMessageBox |
+| ADMX File Name | Help.admx |
+<!-- HideChildProcessMessageBox-AdmxBacked-End -->
+
+<!-- HideChildProcessMessageBox-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideChildProcessMessageBox-Examples-End -->
+
+<!-- HideChildProcessMessageBox-End -->
 
 <!-- RestrictRunFromHelp-Begin -->
 ## RestrictRunFromHelp

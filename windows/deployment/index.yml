@@ -7,15 +7,15 @@ metadata:
   title: Windows client deployment documentation # Required; browser tab title displayed in search results. Include the brand. < 60 chars.
   description: Learn about deploying and updating Windows client devices in your organization. # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: hub-page
-  ms.prod: windows-client
-  ms.technology: itpro-deploy
+  ms.service: windows-client
+  ms.subservice: itpro-deploy
   ms.collection:
     - highpri
     - tier1
   author: aczechowski
   ms.author: aaroncz
   manager: aaroncz
-  ms.date: 12/20/2023
+  ms.date: 01/18/2024
   localization_priority: medium
 
 # common graphics: https://review.learn.microsoft.com/content-production-service/internal/image-gallery?branch=main
@@ -129,7 +129,7 @@ additionalContent:
           - text: Convert a disk from MBR to GPT
             url: mbr-to-gpt.md
           - text: Resolve Windows upgrade errors
-            url: upgrade/resolve-windows-10-upgrade-errors.md
+            url: upgrade/resolve-windows-upgrade-errors.md
 
       - title: Licensing and activation
         links:

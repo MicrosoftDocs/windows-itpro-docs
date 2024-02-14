@@ -2,13 +2,13 @@
 title: Conflicting configurations
 description: This article explains how to remediate conflicting configurations affecting the Windows Autopatch service.
 ms.date: 09/05/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: adnich
 ms.collection:
   - highpri
@@ -20,16 +20,16 @@ ms.collection:
 > [!IMPORTANT]
 > This feature is in **public preview**. The feature is being actively developed and might not be complete.
 
-During Readiness checks, if there are devices with conflicting registry configurations, notifications are listed in the **Not ready** tab. The notifications include a list of alerts that explain why the device isn't ready for updates. Instructions are provided on how to resolve the issue(s). You can review any device marked as **Not ready** and remediate them to a **Ready** state.  
+During Readiness checks, if there are devices with conflicting registry configurations, notifications are listed in the **Not ready** tab. The notifications include a list of alerts that explain why the device isn't ready for updates. Instructions are provided on how to resolve the issue(s). You can review any device marked as **Not ready** and remediate them to a **Ready** state.
 
-Windows Autopatch monitors conflicting configurations. You’re notified of the specific registry values that prevent Windows from updating properly. These registry keys should be removed to resolve the conflict. However, it’s possible that other services write back the registry keys. It’s recommended that you review common sources for conflicting configurations to ensure your devices continue to receive Windows Updates.  
+Windows Autopatch monitors conflicting configurations. You’re notified of the specific registry values that prevent Windows from updating properly. These registry keys should be removed to resolve the conflict. However, it’s possible that other services write back the registry keys. It’s recommended that you review common sources for conflicting configurations to ensure your devices continue to receive Windows Updates.
 
 The most common sources of conflicting configurations include:
 
 - Active Directory Group Policy (GPO)
 - Configuration Manager Device client settings
 - Windows Update for Business (WUfB) policies
-- Manual registry updates  
+- Manual registry updates
 - Local Group Policy settings applied during imaging (LGPO)
 
 ## Registry keys inspected by Autopatch
@@ -51,18 +51,18 @@ Windows Autopatch recommends removing the conflicting configurations. The follow
 
 ### Intune Remediation
 
-Navigate to Intune Remediations and create a remediation using the following examples. It’s recommended to create a single remediation per value to understand if the value persists after removal.  
+Navigate to Intune Remediations and create a remediation using the following examples. It’s recommended to create a single remediation per value to understand if the value persists after removal.
 
 If you use either [**Detect**](#detect) and/or [**Remediate**](#remediate) actions, ensure to update the appropriate **Path** and **Value** called out in the Alert. For more information, see [Remediations](/mem/intune/fundamentals/remediations).
 
 #### Detect
 
 ```powershell
-if((Get-ItemProperty HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate).PSObject.Properties.Name -contains 'DoNotConnectToWindowsUpdateInternetLocations') {  
-    Exit 1 
-} else { 
-    exit 0 
-} 
+if((Get-ItemProperty HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate).PSObject.Properties.Name -contains 'DoNotConnectToWindowsUpdateInternetLocations') {
+    Exit 1
+} else {
+    exit 0
+}
 ```
 
 | Alert details | Description |
@@ -73,9 +73,9 @@ if((Get-ItemProperty HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate).PS
 #### Remediate
 
 ```powershell
-if((Get-ItemProperty HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate).PSObject.Properties.Name -contains 'DoNotConnectToWindowsUpdateInternetLocations') { 
-    Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" -Name "DoNotConnectToWindowsUpdateInternetLocations" 
-} 
+if((Get-ItemProperty HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate).PSObject.Properties.Name -contains 'DoNotConnectToWindowsUpdateInternetLocations') {
+    Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" -Name "DoNotConnectToWindowsUpdateInternetLocations"
+}
 ```
 
 | Alert details | Description |
@@ -121,7 +121,7 @@ Windows Registry Editor Version 5.00
 "DoNotConnectToWindowsUpdateInternetLocations"=-
 "DisableWindowsUpdateAccess"=-
 "WUServer"=-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU] 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
 "UseWUServer"=-
 "NoAutoUpdate"=-
 ```
@@ -145,7 +145,7 @@ Group Policy management is the most popular client configuration tool in most or
 Configuration Manager is a common enterprise management tool that, among many things, can help manage Windows Updates. For this reason, we see many environments misconfigured when moving to either a 100% cloud or co-managed workloads even when the workloads are configured correctly. The client settings are often missed. For more information, see [About client settings and software updates](/mem/configmgr/core/clients/deploy/about-client-settings#software-updates).
 
 1. Go the **Microsoft Endpoint Configuration Manager Console**.
-1. Navigate to **Administration** > **Overview** > **Client Settings**.  
+1. Navigate to **Administration** > **Overview** > **Client Settings**.
 1. Ensure **Software Updates** isn’t configured. If configured, it’s recommended to remove these settings to prevent conflicts with Windows Autopatch.
 
 ## Third-party solutions

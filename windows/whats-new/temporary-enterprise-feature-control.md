@@ -1,8 +1,8 @@
 ---
 title: Enterprise feature control in Windows 11
 description: Learn about the Windows 11 features behind temporary enterprise feature control and permanent feature control.
-ms.prod: windows-client
-ms.technology: itpro-fundamentals
+ms.service: windows-client
+ms.subservice: itpro-fundamentals
 ms.author: mstewart
 author: mestew
 manager: aaroncz
@@ -35,11 +35,11 @@ Features that are behind temporary enterprise control will be enabled when one o
 
 - The device installs the annual feature update that enables the new features by default
 - The device receives a policy that enables features behind temporary enterprise control
-  - When the policy is enabled, all features on the device behind temporary control are turned on when the device next restarts.
+  - When the policy is enabled, all features on the device behind temporary control are turned on when the device restarts.
 
 ### Policy settings for temporary enterprise feature control
 
-You can use a policy to enable features that are behind temporary enterprise feature control. When this policy is enabled, all features that were disabled behind temporary enterprise feature control are turned on when the device next reboots. The following polices apply to Windows 11, version 22H2 with [KB5022845](https://support.microsoft.com/kb/5022845) and later:
+You can use a policy to enable features that are behind temporary enterprise feature control. When this policy is enabled, all features that were disabled behind temporary enterprise feature control are turned on when the device reboots. The following policies apply to Windows 11, version 22H2 with [KB5022845](https://support.microsoft.com/kb/5022845) and later:
 
 - **Group Policy:** Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\\**Enable features introduced via servicing that are off by default**
 

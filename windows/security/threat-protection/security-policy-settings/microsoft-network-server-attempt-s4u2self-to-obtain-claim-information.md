@@ -4,7 +4,6 @@ description: Learn about the security policy setting, Microsoft network server A
 ms.assetid: e4508387-35ed-4a3f-a47c-27f8396adbba
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # Microsoft network server: Attempt S4U2Self to obtain claim information

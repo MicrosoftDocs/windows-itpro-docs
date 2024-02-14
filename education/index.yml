@@ -14,7 +14,7 @@ productDirectory:
   title: For IT admins
   summary: This guide is designed for IT admins looking for the simplest way to move their platform to the cloud. It does not capture all the necessary steps for large scale or complex deployments.
   items:
-    # Card    
+    # Card
     - title: Phase 1 - Cloud deployment
       imageSrc: ./images/EDU-Deploy.svg
       summary: Create your Microsoft 365 tenant, secure and configure your environment, sync your Active Directory and SIS, and license users.
@@ -24,12 +24,12 @@ productDirectory:
       imageSrc: ./images/EDU-Device-Mgmt.svg
       summary: Get started with Windows for Education, set up and enroll devices in Intune.
       url: /microsoft-365/education/deploy/set-up-windows-10-education-devices
-    # Card    
+    # Card
     - title: Phase 3 - Apps management
       imageSrc: ./images/EDU-Apps-Mgmt.svg
       summary: Configure admin settings, set up Teams for Education, install apps and install Minecraft.
       url: /microsoft-365/education/deploy/configure-admin-settings
-    # Card    
+    # Card
     - title: Phase 4 - Complete your deployment
       # imageSrc should be square in ratio with no whitespace
       imageSrc: ./images/EDU-Tasks.svg
@@ -51,7 +51,7 @@ productDirectory:
           text: Microsoft Purview compliance
         - url: https://social.technet.microsoft.com/wiki/contents/articles/35748.office-365-what-is-customer-lockbox-and-how-to-enable-it.aspx
           text: Deploying Lockbox
-    # Card    
+    # Card
     - title: Analytics & insights
       imageSrc: ./images/EDU-Education.svg
       links:
@@ -59,7 +59,7 @@ productDirectory:
           text: Power BI for IT admins
         - url: /dynamics365/
           text: Dynamics 365
-    # Card    
+    # Card
     - title: Find deployment help and other support resources
       imageSrc: ./images/EDU-Teachers.svg
       links:
@@ -69,14 +69,6 @@ productDirectory:
           text: Education help center
         - url: /training/educator-center/
           text: Teacher training packs
-    # Card    
-    - title: Check out our education journey
-      imageSrc: ./images/EDU-ITJourney.svg
-      links:
-        - url: https://edujourney.microsoft.com/k-12/
-          text: K-12
-        - url: https://edujourney.microsoft.com/hed/
-          text: Higher education
 
 additionalContent:
   sections:

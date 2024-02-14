@@ -1,8 +1,8 @@
 ---
 title: Steps to deploy Windows 10 with Configuration Manager
 description: Learn how to deploy Windows 10 in a test lab using Microsoft Configuration Manager.
-ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.service: windows-client
+ms.subservice: itpro-deploy
 ms.localizationpriority: medium
 manager: aaroncz
 ms.author: frankroj

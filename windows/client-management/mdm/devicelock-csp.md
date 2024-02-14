@@ -1,13 +1,6 @@
 ---
 title: DeviceLock CSP
 description: Learn how the DeviceLock configuration service provider (CSP) is used by the enterprise management server to configure device lock related policies.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-ms.topic: reference
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 

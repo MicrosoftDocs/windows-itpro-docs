@@ -1,7 +1,7 @@
 ---
 title: Enterprise settings and policy management
 description: The DM client manages the interaction between a device and a server. Learn more about the client-server management workflow.
-ms.topic: article
+ms.topic: conceptual
 ms.date: 08/10/2023
 ---
 

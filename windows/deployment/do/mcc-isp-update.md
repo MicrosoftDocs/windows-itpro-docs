@@ -1,8 +1,8 @@
 ---
 title: Update or uninstall your cache node
 description: This article contains information on how to update or uninstall your cache node for Microsoft Connected Cache for ISPs.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.author: carmenf
 author: cmknox

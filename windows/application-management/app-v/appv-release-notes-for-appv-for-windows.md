@@ -2,13 +2,13 @@
 title: Release Notes for App-V for Windows 10, version 1607 (Windows 10)
 description: A list of known issues and workarounds for App-V running on Windows 10, version 1607.
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
-ms.technology: itpro-apps
+ms.subservice: itpro-apps
 ---
 
 # Release Notes for App-V for Windows 10, version 1607

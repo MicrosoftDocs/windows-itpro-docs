@@ -1,12 +1,7 @@
 ---
 title: Diagnose Provisioning Packages
 description: Diagnose general failures in provisioning.
-manager: aaroncz
-ms.author: lizlong 
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: lizgt2000
 ms.date: 01/18/2023
 ---
 

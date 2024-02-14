@@ -1,16 +1,14 @@
 - name: Deploy and update Windows client
   href: index.yml
-  items: 
+  items:
     - name: Get started
-      items: 
-        - name: What's new
-          href: deploy-whats-new.md
+      items:
         - name: Windows client deployment scenarios
-          href: windows-10-deployment-scenarios.md
+          href: windows-deployment-scenarios.md
         - name: Quick guide to Windows as a service
-          href: update/waas-quick-start.md        
+          href: update/waas-quick-start.md
         - name: Windows as a service overview
-          href: update/waas-overview.md      
+          href: update/waas-overview.md
         - name: Update release cycle
           href: update/release-cycle.md
         - name: Basics of Windows updates, channels, and tools
@@ -18,7 +16,7 @@
         - name: Prepare servicing strategy for Windows client updates
           href: update/waas-servicing-strategy-windows-10-updates.md
         - name: Deployment proof of concept
-          items: 
+          items:
             - name: Deploy Windows 10 with MDT and Configuration Manager
               items:
                 - name: 'Step by step guide: Configure a test lab to deploy Windows 10'
@@ -26,9 +24,9 @@
                 - name: Deploy Windows 10 in a test lab using MDT
                   href: windows-10-poc-mdt.md
                 - name: Deploy Windows 10 in a test lab using Configuration Manager
-                  href: windows-10-poc-sc-config-mgr.md 
+                  href: windows-10-poc-sc-config-mgr.md
         - name: Deployment process posters
-          href: windows-10-deployment-posters.md      
+          href: windows-10-deployment-posters.md
 
     - name: Plan
       items:
@@ -41,7 +39,7 @@
         - name: Evaluate infrastructure and tools
           href: update/eval-infra-tools.md
         - name: Determine application readiness
-          href: update/plan-determine-app-readiness.md 
+          href: update/plan-determine-app-readiness.md
         - name: Define your servicing strategy
           href: update/plan-define-strategy.md
         - name: Delivery Optimization for Windows client updates
@@ -64,11 +62,11 @@
             - name: Deprecated features
               href: /windows/whats-new/deprecated-features?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
             - name: Resources for deprecated features
-              href: /windows/whats-new/deprecated-features-resources?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json              
+              href: /windows/whats-new/deprecated-features-resources?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
             - name: Removed features
-              href: /windows/whats-new/removed-features?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json   
+              href: /windows/whats-new/removed-features?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
     - name: Prepare
-      items: 
+      items:
         - name: Prepare for Windows 11
           href: /windows/whats-new/windows-11-prepare?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: Prepare to deploy Windows client updates
@@ -97,7 +95,7 @@
               href: update/waas-manage-updates-wsus.md
 
     - name: Deploy
-      items: 
+      items:
         - name: Deploy Windows client
           items:
             - name: Deploy Windows client with Autopilot
@@ -139,11 +137,11 @@
             - name: Safeguard holds
               href: update/safeguard-holds.md
             - name: Manage the Windows client update experience
-              items:              
+              items:
                 - name: Manage device restarts after updates
                   href: update/waas-restart.md
                 - name: Manage additional Windows Update settings
-                  href: update/waas-wu-settings.md      
+                  href: update/waas-wu-settings.md
         - name: Use Windows Update for Business
           items:
             - name: What is Windows Update for Business?
@@ -151,7 +149,7 @@
             - name: Configure Windows Update for Business
               href: update/waas-configure-wufb.md
             - name: Use Windows Update for Business and WSUS
-              href: update/wufb-wsus.md    
+              href: update/wufb-wsus.md
             - name: Enforcing compliance deadlines for updates
               href: update/wufb-compliancedeadlines.md
             - name: Integrate Windows Update for Business with management solutions
@@ -165,7 +163,7 @@
           - name: Prerequisites for Windows Update for Business deployment service
             href: update/deployment-service-prerequisites.md
           - name: Deploy updates with the deployment service
-            items:            
+            items:
             - name: Deploy feature updates using Graph Explorer
               href: update/deployment-service-feature-updates.md
             - name: Deploy expedited updates using Graph Explorer
@@ -177,28 +175,28 @@
     - name: Activate
       items:
       - name: Windows subscription activation
-        href: windows-10-subscription-activation.md
+        href: windows-subscription-activation.md
       - name: Windows Enterprise E3 in CSP
-        href: windows-10-enterprise-e3-overview.md
+        href: windows-enterprise-e3-overview.md
       - name: Configure VDA for subscription activation
         href: vda-subscription-activation.md
       - name: Deploy Windows Enterprise licenses
         href: deploy-enterprise-licenses.md
-      - name: Volume Activation 
+      - name: Volume Activation
         items:
         - name: Overview
           href: volume-activation/volume-activation-windows-10.md
-        - name: Plan for volume activation 
+        - name: Plan for volume activation
           href: volume-activation/plan-for-volume-activation-client.md
-        - name: Activate using Key Management Service 
+        - name: Activate using Key Management Service
           href: volume-activation/activate-using-key-management-service-vamt.md
-        - name: Activate using Active Directory-based activation 
+        - name: Activate using Active Directory-based activation
           href: volume-activation/activate-using-active-directory-based-activation-client.md
         - name: Activate clients running Windows 10
           href: volume-activation/activate-windows-10-clients-vamt.md
-        - name: Monitor activation 
+        - name: Monitor activation
           href: volume-activation/monitor-activation-client.md
-        - name: Use the Volume Activation Management Tool 
+        - name: Use the Volume Activation Management Tool
           href: volume-activation/use-the-volume-activation-management-tool-client.md
         href: volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
       - name: Volume Activation Management Tool (VAMT)
@@ -282,19 +280,19 @@
       - name: Windows Update for Business reports
         items:
         - name: Windows Update for Business reports overview
-          href: update/wufb-reports-overview.md     
+          href: update/wufb-reports-overview.md
         - name: Enable Windows Update for Business reports
-          items: 
+          items:
           - name: Windows Update for Business reports prerequisites
             href: update/wufb-reports-prerequisites.md
           - name: Enable Windows Update for Business reports
-            href: update/wufb-reports-enable.md                                
+            href: update/wufb-reports-enable.md
           - name: Configure clients with a script
             href: update/wufb-reports-configuration-script.md
           - name: Configure clients manually
             href: update/wufb-reports-configuration-manual.md
           - name: Configure clients with Microsoft Intune
-            href: update/wufb-reports-configuration-intune.md 
+            href: update/wufb-reports-configuration-intune.md
         - name: Use Windows Update for Business reports
           items:
           - name: Windows Update for Business reports workbook
@@ -302,13 +300,13 @@
           - name: Delivery Optimization data in reports
             href: update/wufb-reports-do.md
           - name: Software updates in the Microsoft 365 admin center
-            href: update/wufb-reports-admin-center.md                                
+            href: update/wufb-reports-admin-center.md
           - name: Use Windows Update for Business reports data
             href: update/wufb-reports-use.md
           - name: FAQ for Windows Update for Business reports
-            href: update/wufb-reports-faq.yml                                            
-          - name: Feedback and support 
-            href: update/wufb-reports-help.md                                               
+            href: update/wufb-reports-faq.yml
+          - name: Feedback and support
+            href: update/wufb-reports-help.md
         - name: Windows Update for Business reports schema reference
           items:
           - name: Windows Update for Business reports schema reference
@@ -316,27 +314,27 @@
           - name: UCClient
             href: update/wufb-reports-schema-ucclient.md
           - name: UCClientReadinessStatus
-            href: update/wufb-reports-schema-ucclientreadinessstatus.md               
+            href: update/wufb-reports-schema-ucclientreadinessstatus.md
           - name: UCClientUpdateStatus
             href: update/wufb-reports-schema-ucclientupdatestatus.md
           - name: UCDeviceAlert
             href: update/wufb-reports-schema-ucdevicealert.md
           - name: UCDOAggregatedStatus
-            href: update/wufb-reports-schema-ucdoaggregatedstatus.md      
+            href: update/wufb-reports-schema-ucdoaggregatedstatus.md
           - name: UCDOStatus
-            href: update/wufb-reports-schema-ucdostatus.md                              
+            href: update/wufb-reports-schema-ucdostatus.md
           - name: UCServiceUpdateStatus
             href: update/wufb-reports-schema-ucserviceupdatestatus.md
           - name: UCUpdateAlert
             href: update/wufb-reports-schema-ucupdatealert.md
           - name: Enumerated types
-            href: update/wufb-reports-schema-enumerated-types.md                                                                                       
+            href: update/wufb-reports-schema-enumerated-types.md
     - name: Troubleshooting
       items:
       - name: Resolve upgrade errors
         items:
-        - name: Resolve Windows client upgrade errors
-          href: upgrade/resolve-windows-10-upgrade-errors.md
+        - name: Resolve Windows upgrade errors
+          href: upgrade/resolve-windows-upgrade-errors.md
         - name: Quick fixes
           href: /troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: SetupDiag
@@ -362,7 +360,7 @@
         - name: Determine the source of Windows Updates
           href: ./update/how-windows-update-works.md
         - name: Windows Update security
-          href: ./update/windows-update-security.md                  
+          href: ./update/windows-update-security.md
         - name: Common Windows Update errors
           href: /troubleshoot/windows-client/deployment/common-windows-update-errors?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: Windows Update error code reference
@@ -385,7 +383,7 @@
         - name: Servicing stack updates
           href: update/servicing-stack-updates.md
         - name: Update CSP policies
-          href: /windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json  
+          href: /windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: Additional Windows Update settings
           href: update/waas-wu-settings.md
         - name: Delivery Optimization reference
@@ -406,22 +404,6 @@
                   href: configure-a-pxe-server-to-load-windows-pe.md
                 - name: Windows ADK for Windows 10 scenarios for IT Pros
                   href: windows-adk-scenarios-for-it-pros.md
-                - name: Windows To Go
-                  items:
-                    - name: Deploy Windows To Go in your organization
-                      href: deploy-windows-to-go.md
-                    - name: "Windows To Go: feature overview"
-                      href: planning/windows-to-go-overview.md
-                    - name: Best practice recommendations for Windows To Go
-                      href: planning/best-practice-recommendations-for-windows-to-go.md
-                    - name: Deployment considerations for Windows To Go
-                      href: planning/deployment-considerations-for-windows-to-go.md
-                    - name: Prepare your organization for Windows To Go
-                      href: planning/prepare-your-organization-for-windows-to-go.md
-                    - name: Security and data protection considerations for Windows To Go
-                      href: planning/security-and-data-protection-considerations-for-windows-to-go.md
-                    - name: "Windows To Go: frequently asked questions"
-                      href: planning/windows-to-go-frequently-asked-questions.yml
                 - name: User State Migration Tool (USMT) technical reference
                   items:
                     - name: USMT overview articles
@@ -450,7 +432,7 @@
                           href: usmt/usmt-reroute-files-and-settings.md
                         - name: Verify the Condition of a Compressed Migration Store
                           href: usmt/verify-the-condition-of-a-compressed-migration-store.md
-        
+
                     - name: USMT Reference
                       items:
                         - name: USMT Requirements

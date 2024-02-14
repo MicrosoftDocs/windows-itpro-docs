@@ -4,7 +4,6 @@ description: Describes the best practices, location, values, policy management, 
 ms.assetid: 3d22eb9a-859a-4b6f-82f5-c270c427e17e
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,7 +16,6 @@ ms.collection:
   - tier3
 ms.topic: reference
 ms.date: 03/30/2022
-ms.technology: itpro-security
 ---
 
 # Minimum password length

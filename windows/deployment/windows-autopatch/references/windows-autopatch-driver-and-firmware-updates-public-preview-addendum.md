@@ -1,14 +1,14 @@
 ---
 title: Driver and firmware updates for Windows Autopatch Public Preview Addendum
 description:  This article explains how driver and firmware updates are managed in Autopatch
-ms.date: 06/26/2023 
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.date: 06/26/2023
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 msreviewer: hathind
 ---
 

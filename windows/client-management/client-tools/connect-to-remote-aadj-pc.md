@@ -3,7 +3,7 @@ title: Connect to remote Microsoft Entra joined device
 description: Learn how to use Remote Desktop Connection to connect to a Microsoft Entra joined device.
 ms.localizationpriority: medium
 ms.date: 08/10/2023
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - highpri
 - tier2

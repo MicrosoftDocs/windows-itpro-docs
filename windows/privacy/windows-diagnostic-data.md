@@ -1,8 +1,8 @@
 ---
 title: Windows 10, version 1709 and Windows 11 and later optional diagnostic data (Windows 10)
 description: Use this article to learn about the types of optional diagnostic data that is collected.
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown

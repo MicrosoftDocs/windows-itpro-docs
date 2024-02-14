@@ -2,13 +2,13 @@
 title: Windows quality and feature update reports overview
 description: This article details the types of reports available and info about update device eligibility, device update health, device update trends in Windows Autopatch groups
 ms.date: 07/25/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: adnich
 ms.collection:
   - highpri
@@ -36,7 +36,7 @@ The Windows quality report types are organized into the following focus areas:
 
 ## Windows feature update reports
 
-The Windows feature update reports monitor the health and activity of your deployments and help you understand if your devices are maintaining update compliance targets.  
+The Windows feature update reports monitor the health and activity of your deployments and help you understand if your devices are maintaining update compliance targets.
 
 If update deployments aren’t successful, Windows Autopatch provides information on update deployment failures and who needs to remediate. Certain update deployment failures might require either Windows Autopatch to act on your behalf or you to fix the issue.
 

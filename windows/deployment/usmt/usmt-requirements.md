@@ -4,11 +4,11 @@ description: While the User State Migration Tool (USMT) doesn't have many requir
 ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
-ms.date: 01/09/2024
+ms.date: 01/18/2024
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -38,6 +38,9 @@ The following table lists the operating systems supported in USMT.
 ## Unsupported scenarios
 
 - USMT doesn't support any of the Windows Server operating systems.
+- USMT doesn't support Microsoft Entra joined devices as either a source or destination device.
+- USMT might work with Microsoft Entra hybrid joined devices, but it's not a tested scenario so therefore unsupported.
+- USMT doesn't support migrating settings for Microsoft Store apps.
 - USMT shouldn't be used for migrating between previous versions of Windows. USMT is only meant to:
   - Migrate to a currently supported version of Windows
   - Migrate between currently supported versions of Windows, assuming the version of Windows being migrated to is newer or the same as the previous version of Windows being migrated from.

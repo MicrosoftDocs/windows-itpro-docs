@@ -2,7 +2,6 @@
 title: 5148(F) The Windows Filtering Platform has detected a DoS attack and entered a defensive mode; packets associated with this attack will be discarded. 
 description: Details on Security event 5148(F), The Windows Filtering Platform has detected a DoS attack and entered a defensive mode.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/08/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

@@ -1,14 +1,7 @@
 ---
 title: BitLocker DDF file
 description: View the XML file containing the device description framework (DDF) for the BitLocker configuration service provider.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 12/06/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -149,7 +142,7 @@ The following XML file contains the device description framework (DDF) for the B
                          If you disable or do not configure this policy setting, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by any setup script.”
                          The format is string.
                          Sample value for this node to enable this policy and set the encryption methods is:
-                         
+                       
 
                          EncryptionMethodWithXtsOsDropDown_Name = Select the encryption method for operating system drives.
                          EncryptionMethodWithXtsFdvDropDown_Name = Select the encryption method for fixed data drives.
@@ -201,7 +194,7 @@ The following XML file contains the device description framework (DDF) for the B
                          Note: If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool manage-bde instead of the BitLocker Drive Encryption setup wizard.
                          The format is string.
                          Sample value for this node to enable this policy is:
-                         
+                       
 
                          ConfigureNonTPMStartupKeyUsage_Name = Allow BitLocker without a compatible TPM (requires a password or a startup key on a USB flash drive)
                          All of the below settings are for computers with a TPM.
@@ -257,7 +250,7 @@ The following XML file contains the device description framework (DDF) for the B
                          NOTE: If minimum PIN length is set below 6 digits, Windows will attempt to update the TPM 2.0 lockout period to be greater than the default when a PIN is changed. If successful, Windows will only reset the TPM lockout period back to default if the TPM is reset.
                          The format is string.
                          Sample value for this node to enable this policy is:
-                         
+                       
 
                          Disabling the policy will let the system choose the default behaviors.
                          If you want to disable this policy use the following SyncML:
@@ -298,7 +291,7 @@ The following XML file contains the device description framework (DDF) for the B
                          Note: Not all characters and languages are supported in pre-boot. It is strongly recommended that you test that the characters you use for the custom message or URL appear correctly on the pre-boot recovery screen.
                          The format is string.
                          Sample value for this node to enable this policy is:
-                         
+                       
 
                          The possible values for 'xx' are:
                          0 = Empty
@@ -351,7 +344,7 @@ The following XML file contains the device description framework (DDF) for the B
                          If this policy setting is disabled or not configured, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information is not backed up to AD DS.
                          The format is string.
                          Sample value for this node to enable this policy is:
-                         
+                       
 
                          The possible values for 'xx' are:
                          true = Explicitly allow
@@ -409,7 +402,7 @@ The following XML file contains the device description framework (DDF) for the B
                          If you enable this policy setting, you can control the methods available to users to recover data from BitLocker-protected fixed data drives.
                          The format is string.
                          Sample value for this node to enable this policy is:
-                         
+                       
 
                          The possible values for 'xx' are:
                          true = Explicitly allow
@@ -461,7 +454,7 @@ The following XML file contains the device description framework (DDF) for the B
                          If you disable or do not configure this policy setting, all fixed data drives on the computer will be mounted with read and write access.
                          The format is string.
                          Sample value for this node to enable this policy is:
-                         
+                       
 
                          Disabling the policy will let the system choose the default behaviors.
                          If you want to disable this policy use the following SyncML:
@@ -502,7 +495,7 @@ The following XML file contains the device description framework (DDF) for the B
                          Note: This policy setting can be overridden by the group policy settings under User Configuration\Administrative Templates\System\Removable Storage Access. If the "Removable Disks: Deny write access" group policy setting is enabled this policy setting will be ignored.
                          The format is string.
                          Sample value for this node to enable this policy is:
-                         
+                       
 
                          The possible values for 'xx' are:
                          true = Explicitly allow
@@ -582,7 +575,7 @@ The following XML file contains the device description framework (DDF) for the B
                          require reinstallation of Windows.
                          Note: This policy takes effect only if "RequireDeviceEncryption" policy is set to 1.
                          The format is integer.
-                         The expected values for this policy are: 
+                         The expected values for this policy are:
 
                          1 = This is the default, when the policy is not set. Warning prompt and encryption notification is allowed.
                          0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update, 
@@ -630,7 +623,7 @@ The following XML file contains the device description framework (DDF) for the B
                          If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDeviceEncryption" policy will not try to encrypt drive(s) if a standard user
                          is the current logged on user in the system.
 
-                         The expected values for this policy are: 
+                         The expected values for this policy are:
 
                          1 = "RequireDeviceEncryption" policy will try to enable encryption on all fixed drives even if a current logged in user is standard user.
                          0 = This is the default, when the policy is not set. If current logged on user is a standard user, "RequireDeviceEncryption" policy
@@ -748,7 +741,7 @@ The policy only comes into effect when Active Directory backup for a recovery pa
                               
 * status\RotateRecoveryPasswordsStatus 
                               * status\RotateRecoveryPasswordsRequestID
-                          
+                        
 
                           
 Supported Values: String form of request ID. Example format of request ID is GUID. Server can choose the format as needed according to the management tools.\

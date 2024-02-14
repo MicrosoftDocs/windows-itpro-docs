@@ -2,7 +2,6 @@
 title: 5027(F) The Windows Firewall Service was unable to retrieve the security policy from the local storage. The service will continue enforcing the current policy. 
 description: Details on security event 5027(F) The Windows Firewall Service was unable to retrieve the security policy from the local storage.
 ms.pagetype: security
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: low
@@ -11,7 +10,6 @@ ms.date: 09/08/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: itpro-security
 ms.topic: reference
 ---
 

@@ -1,8 +1,8 @@
 ---
 description: Learn more about the Windows 10, version 1709 diagnostic data gathered at the basic level.
 title: Windows 10, version 1709 basic diagnostic events and fields (Windows 10)
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 localizationpriority: medium
 author: DHB-MSFT
 ms.author: danbrown

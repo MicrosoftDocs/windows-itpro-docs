@@ -38,6 +38,7 @@
       "ms.collection": [
         "tier2"
       ],
+      "zone_pivot_group_filename": "resources/zone-pivot-groups.json",
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Windows",
       "feedback_system": "Standard",
@@ -50,10 +51,10 @@
       },
       "titleSuffix": "Windows Deployment",
       "contributors_to_exclude": [
-        "rjagiewich", 
-        "traya1", 
-        "rmca14", 
-        "claydetels19", 
+        "rjagiewich",
+        "traya1",
+        "rmca14",
+        "claydetels19",
         "jborsecnik",
         "tiburd",
         "garycentric",

@@ -7,7 +7,6 @@ appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ms.author: paoloma
 author: paolomatarazzo
-ms.prod: windows-client
 ---
 
 # Windows security features licensing and edition requirements
@@ -16,11 +15,11 @@ This article lists the security features that are available in Windows.
 
 Select one of the two tabs to learn about licensing requirements to use the security features, or to learn about the Windows edition requirements that support them:
 
-#### [:::image type="icon" source="images/icons/certificate.svg" border="false"::: **Licensing requirements**](#tab/licensing)
+#### [:::image type="icon" source="images/icons/subscription.svg" border="false"::: **Licensing requirements**](#tab/licensing)
 
 [!INCLUDE [licensing-requirements](../../includes/licensing/_licensing-requirements.md)]
 
-#### [:::image type="icon" source="images/icons/windows-os.svg" border="false"::: **Edition requirements**](#tab/edition)
+#### [:::image type="icon" source="images/icons/activation.svg" border="false"::: **Edition requirements**](#tab/edition)
 
 [!INCLUDE [_edition-requirements](../../includes/licensing/_edition-requirements.md)]
 

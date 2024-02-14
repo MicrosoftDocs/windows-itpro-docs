@@ -1,7 +1,7 @@
 ---
 title: Plan for Windows 11
 description: Windows 11 deployment planning, IT Pro content.
-ms.prod: windows-client
+ms.service: windows-client
 author: mestew
 ms.author: mstewart
 manager: aaroncz
@@ -10,8 +10,8 @@ ms.topic: conceptual
 ms.collection:
   - highpri
   - tier1
-ms.technology: itpro-fundamentals
-ms.date: 08/11/2023
+ms.subservice: itpro-fundamentals
+ms.date: 02/06/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
@@ -46,7 +46,7 @@ The availability of Windows 11 will vary according to a device's hardware and wh
 
 ##### Managed devices
 
-Managed devices are devices that are under organization control. Managed devices include those devices managed by Microsoft Intune, Microsoft Configuration Manager, or other endpoint management solutions. 
+Managed devices are devices that are under organizational control. Managed devices include those devices managed by Microsoft Intune, Microsoft Configuration Manager, or other endpoint management solutions. 
 
 If you manage devices on behalf of your organization, you'll be able to upgrade eligible devices to Windows 11 using your existing deployment and management tools at no cost when the upgrade reaches general availability. Organizations that use Windows Update for Business will have added benefits, such as:  
 
@@ -64,7 +64,7 @@ Windows 11 will be offered to eligible Windows 10 devices beginning later in the
 
 The Windows 11 upgrade will be available initially on eligible, unmanaged devices to users who manually seek the upgrade through Windows Update. As with all Windows Update managed devices, the **Windows Update Settings** page will confirm when a device is eligible, and users can upgrade if they choose to.
 
-Just like Windows 10, the machine learning based [intelligent rollout](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/using-machine-learning-to-improve-the-windows-10-update/ba-p/877860) process will be used when rolling out upgrades. Machine learning uses a combination of testing, close partner engagement, feedback, diagnostic data, and real-life insights to manage quality. This process improves the update experience, and ensures that devices first nominated for updates are the devices likely to have a seamless experience. Devices that might have compatibility issues with the upgrade get the benefit of resolving these issues before the upgrade is offered. 
+Just like Windows 10, the machine learning-based [intelligent rollout](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/using-machine-learning-to-improve-the-windows-10-update/ba-p/877860) process will be used when rolling out upgrades. Machine learning uses a combination of testing, close partner engagement, feedback, diagnostic data, and real-life insights to manage quality. This process improves the update experience and ensures that devices first nominated for updates are the devices likely to have a seamless experience. Devices that might have compatibility issues with the upgrade get the benefit of resolving these issues before the upgrade is offered. 
 
 ## Windows 11 readiness considerations 
 
@@ -91,7 +91,7 @@ Along with user experience and security improvements, Windows 11 introduces enha
 - Home, Pro, Pro for Workstations, and Pro for Education editions of Windows 11 will receive 24 months of support from the general availability date. 
 - Enterprise and Education editions of Windows 11 will be supported for 36 months from the general availability date.
 
-When Windows 11 reaches general availability, a consolidated Windows 11 update history will be available on support.microsoft.com, similar to what is [available today for Windows 10](https://support.microsoft.com/topic/windows-10-update-history-1b6aac92-bf01-42b5-b158-f80c6d93eb11). Similarly, the [Windows release health](/windows/release-health/) hub will offer quick access to Windows 11 servicing announcements, known issues, and safeguard holds. 
+When Windows 11 reaches general availability, a consolidated [Windows 11 update history](https://support.microsoft.com/topic/59875222-b990-4bd9-932f-91a5954de434) is available, similar to what is [available today for Windows 10](https://support.microsoft.com/topic/windows-10-update-history-1b6aac92-bf01-42b5-b158-f80c6d93eb11). Similarly, the [Windows release health](/windows/release-health/) hub will offer quick access to Windows 11 servicing announcements, known issues, and safeguard holds. 
 
 It's important that organizations have adequate time to plan for Windows 11. Microsoft also recognizes that many organizations will have a mix of Windows 11 and Windows 10 devices across their ecosystem. Devices on in-service versions of Windows 10 will continue to receive monthly Windows 10 security updates through 2025, and incremental improvements to Windows 10 to support ongoing Microsoft 365 deployments. For more information, see the [Windows 10 release information](/windows/release-health/release-information) page, which offers information about the Windows 10 General Availability Channel and Long-term Servicing Channel (LTSC) releases. 
 

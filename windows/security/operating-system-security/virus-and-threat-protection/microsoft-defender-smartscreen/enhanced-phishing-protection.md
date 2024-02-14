@@ -49,7 +49,7 @@ Enhanced Phishing Protection can be configured via Microsoft Intune, Group Polic
 
 Follow these instructions to configure your devices using either Microsoft Intune, GPO or CSP.
 
-#### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
+#### [:::image type="icon" source="../../../images/icons/intune.svg"::: **Intune**](#tab/intune)
 
 To configure devices using Microsoft Intune, create a [**Settings catalog** policy][MEM-2], and use the settings listed under the category **`SmartScreen > Enhanced Phishing Protection`**:
 
@@ -61,7 +61,7 @@ To configure devices using Microsoft Intune, create a [**Settings catalog** poli
 
 Assign the policy to a security group that contains as members the devices or users that you want to configure.
 
-#### [:::image type="icon" source="images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
+#### [:::image type="icon" source="../../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
 Enhanced Phishing Protection can be configured using the following group policy settings found under **Administrative Templates > Windows Components > Windows Defender SmartScreen > Enhanced Phishing Protection**:
 
@@ -71,7 +71,7 @@ Enhanced Phishing Protection can be configured using the following group policy 
 - Notify Password Reuse
 - Notify Unsafe App
 
-#### [:::image type="icon" source="images/icons/windows-os.svg"::: **CSP**](#tab/csp)
+#### [:::image type="icon" source="../../../images/icons/gear.svg"::: **CSP**](#tab/csp)
 
 Enhanced Phishing Protection can be configured using the [WebThreatDefense CSP][WIN-1].
 
@@ -107,7 +107,7 @@ To better help you protect your organization, we recommend turning on and using 
 | Notify Password Reuse     | **Disabled**                                                                                               | **Enabled**: Turns on Enhanced Phishing Protection notifications when users reuse their work or school password and encourages them to change their password.                                                                                                        |
 | Notify Unsafe App         | **Disabled**                                                                                               | **Enabled**: Turns on Enhanced Phishing Protection notifications when users type their work or school passwords in Notepad and Microsoft 365 Office Apps.                                                                                                            |
 
-#### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
+#### [:::image type="icon" source="../../../images/icons/intune.svg"::: **Intune**](#tab/intune)
 
 | Settings catalog element  | Recommended value |
 |---------------------------|-------------------|
@@ -117,7 +117,7 @@ To better help you protect your organization, we recommend turning on and using 
 | Notify Password Reuse     | **Enabled**       |
 | Notify Unsafe App         | **Enabled**       |
 
-#### [:::image type="icon" source="images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
+#### [:::image type="icon" source="../../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
 | Group Policy setting      | Recommended value |
 |---------------------------|-------------------|
@@ -127,7 +127,7 @@ To better help you protect your organization, we recommend turning on and using 
 | Notify Password Reuse     | **Enabled**       |
 | Notify Unsafe App         | **Enabled**       |
 
-#### [:::image type="icon" source="images/icons/windows-os.svg"::: **CSP**](#tab/csp)
+#### [:::image type="icon" source="../../../images/icons/gear.svg"::: **CSP**](#tab/csp)
 
 | MDM setting             | Recommended value |
 |-------------------------|-------------------|

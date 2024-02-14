@@ -4,7 +4,6 @@ description: This reference topic for the IT professional describes which versio
 ms.assetid: 87c71cc5-522d-4771-ac78-34a2a0825f31
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 09/09/2021
-ms.technology: itpro-security
 ---
 
 # Which editions of Windows support advanced audit policy configuration

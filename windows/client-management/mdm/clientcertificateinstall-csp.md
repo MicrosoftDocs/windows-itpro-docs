@@ -1,14 +1,7 @@
 ---
 title: ClientCertificateInstall CSP
 description: Learn more about the ClientCertificateInstall CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 10/24/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -399,7 +392,7 @@ When a value of "2" is contained in PFXCertPasswordEncryptionType, specify the s
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Get, Replace |
-| Dependency [EncryptionTypeDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/PFXCertPasswordEncryptionType` <br> Dependency Allowed Value: `[2]` <br> Dependency Allowed Value Type: `Range` <br>  |
+| Dependency [EncryptionTypeDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/PFXCertPasswordEncryptionType` <br> Dependency Allowed Value: `[2]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-DFProperties-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Examples-Begin -->
@@ -499,7 +492,7 @@ The PFX isn't exportable when it's installed to TPM.
 | Format | `bool` |
 | Access Type | Add, Get, Replace |
 | Default Value  | true |
-| Dependency [KeyLocationDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/KeyLocation` <br> Dependency Allowed Value: `[3]` <br> Dependency Allowed Value Type: `Range` <br>  |
+| Dependency [KeyLocationDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/KeyLocation` <br> Dependency Allowed Value: `[3]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- Device-PFXCertInstall-{UniqueID}-PFXKeyExportable-DFProperties-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXKeyExportable-AllowedValues-Begin -->
@@ -1975,7 +1968,7 @@ When a value of "2" is contained in PFXCertPasswordEncryptionType, specify the s
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Get, Replace |
-| Dependency [EncryptionTypeDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/PFXCertPasswordEncryptionType` <br> Dependency Allowed Value: `[2]` <br> Dependency Allowed Value Type: `Range` <br>  |
+| Dependency [EncryptionTypeDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/PFXCertPasswordEncryptionType` <br> Dependency Allowed Value: `[2]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-DFProperties-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Examples-Begin -->
@@ -2073,7 +2066,7 @@ Optional. Used to specify if the private key installed is exportable (can be exp
 | Format | `bool` |
 | Access Type | Add, Get, Replace |
 | Default Value  | true |
-| Dependency [KeyLocationDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/KeyLocation` <br> Dependency Allowed Value: `[3]` <br> Dependency Allowed Value Type: `Range` <br>  |
+| Dependency [KeyLocationDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/KeyLocation` <br> Dependency Allowed Value: `[3]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- User-PFXCertInstall-{UniqueID}-PFXKeyExportable-DFProperties-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-PFXKeyExportable-AllowedValues-Begin -->

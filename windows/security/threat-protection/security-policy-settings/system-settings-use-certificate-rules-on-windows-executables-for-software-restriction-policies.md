@@ -4,7 +4,6 @@ description: Best practices and more for the security policy setting, System set
 ms.assetid: 2380d93b-b553-4e56-a0c0-d1ef740d089c
 ms.reviewer:
 ms.author: vinpa
-ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +13,6 @@ manager: aaroncz
 audience: ITPro
 ms.topic: reference
 ms.date: 04/19/2017
-ms.technology: itpro-security
 ---
 
 # System settings: Use certificate rules on Windows executables for Software Restriction Policies
