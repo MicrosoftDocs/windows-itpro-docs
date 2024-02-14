@@ -1,5 +1,5 @@
 ---
-title: Windows 10 upgrade paths (Windows 10)
+title: Windows 10 upgrade paths
 description: You can upgrade to Windows 10 from a previous version of Windows if the upgrade path is supported.
 ms.service: windows-client
 ms.localizationpriority: medium
@@ -11,7 +11,7 @@ ms.collection:
   - highpri
   - tier2
 ms.subservice: itpro-deploy
-ms.date: 10/02/2023
+ms.date: 02/13/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
@@ -32,7 +32,7 @@ appliesto:
 
 This article provides a summary of available upgrade paths to Windows 10. You can upgrade to Windows 10 from Windows 7 or a later operating system. Paths include upgrading from one release of Windows 10 to later release of Windows 10. Migrating from one edition of Windows 10 to a different edition of the same release is also supported.
 
-If you're also migrating to a different edition of Windows, see [Windows 10 edition upgrade](windows-10-edition-upgrades.md). Methods and supported paths are described on this page to change the edition of Windows. These methods require that you input a license or product key for the new Windows edition prior to starting the upgrade process. Edition downgrade is also supported for some paths. However, applications and settings aren't maintained when the Windows edition is downgraded.
+If you're also migrating to a different edition of Windows, see [Windows edition upgrade](windows-edition-upgrades.md). Methods and supported paths are described on this page to change the edition of Windows. These methods require that you input a license or product key for the new Windows edition prior to starting the upgrade process. Edition downgrade is also supported for some paths. However, applications and settings aren't maintained when the Windows edition is downgraded.
 
 - **Windows 10 version upgrade**: You can directly upgrade any General Availability Channel version of Windows 10 to a newer, supported General Availability Channel version of Windows 10, even if it involves skipping versions. Work with your account representative if your current version of Windows is out of support. See the [Windows lifecycle fact sheet](/lifecycle/faq/windows) for availability and service information.
 
@@ -99,8 +99,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
 
 ## Related articles
 
-[Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)
-
-[Windows upgrade and migration considerations](windows-upgrade-and-migration-considerations.md)
-
-[Windows 10 edition upgrade](windows-10-edition-upgrades.md)
+- [Windows 10 deployment scenarios](../windows-deployment-scenarios.md).
+- [Windows upgrade and migration considerations](windows-upgrade-and-migration-considerations.md).
+- [Windows 10 edition upgrade](windows-edition-upgrades.md).
