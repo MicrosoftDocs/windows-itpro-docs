@@ -17,7 +17,7 @@ ms.collection:
 
 # Windows feature updates overview
 
-Microsoft provides robust mobile device management (MDM) solutions such as Microsoft Intune, Windows Update for Business, Configuration Manager etc. However, the administration of these solutions to keep Windows devices up to date with the latest Windows feature releases rests on your organization’s IT admins. The Windows feature update process is considered one of the most expensive and time consuming tasks for IT since it requires incremental rollout and validation.
+Microsoft provides robust mobile device management (MDM) solutions such as Microsoft Intune, Windows Update for Business, Configuration Manager etc. However, the administration of these solutions to keep Windows devices up to date with the latest Windows feature releases rests on your organization's IT admins. The Windows feature update process is considered one of the most expensive and time consuming tasks for IT since it requires incremental rollout and validation.
 
 Windows feature updates consist of:
 
@@ -28,11 +28,11 @@ Windows Autopatch makes it easier and less expensive for you to keep your Window
 
 ## Service level objective
 
-Windows Autopatch’s service level objective for Windows feature updates aims to keep **95%** of eligible devices on the targeted Windows OS version [currently serviced](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2) for its default and global releases maintained by the service, and custom releases created and managed by you.
+Windows Autopatch's service level objective for Windows feature updates aims to keep **95%** of eligible devices on the targeted Windows OS version [currently serviced](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2) for its default and global releases maintained by the service, and custom releases created and managed by you.
 
 ## Device eligibility criteria
 
-Windows Autopatch’s device eligibility criteria for Windows feature updates aligns with [Windows Update for Business and Microsoft Intune’s device eligibility criteria](/mem/intune/protect/windows-10-feature-updates#prerequisites).
+Windows Autopatch's device eligibility criteria for Windows feature updates aligns with [Windows Update for Business and Microsoft Intune's device eligibility criteria](/mem/intune/protect/windows-10-feature-updates#prerequisites).
 
 > [!IMPORTANT]
 > Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
@@ -40,7 +40,7 @@ Windows Autopatch’s device eligibility criteria for Windows feature updates al
 ## Key benefits
 
 - Windows Autopatch makes it easier and less expensive for you to keep your Windows devices up to date. You can focus on running your core businesses while Windows Autopatch runs update management on your behalf.
-- You’re in control of telling Windows Autopatch when your organization is ready to move to the next Windows OS version.
+- You're in control of telling Windows Autopatch when your organization is ready to move to the next Windows OS version.
 	- Combined with custom releases, Autopatch Groups gives your organization great control and flexibility to help you plan your gradual rollout in a way that works for your organization.
 - Simplified end-user experience with rich controls for gradual rollouts, deployment cadence and speed.
 - No need to manually modify the default Windows feature update policies (default release) to be on the Windows OS version your organization is currently ready for.
@@ -59,7 +59,7 @@ Windows Autopatch’s device eligibility criteria for Windows feature updates al
 
 ### Default release
 
-Windows Autopatch’s default Windows feature update release is a service-driven release that enforces the minimum Windows OS version currently serviced by the Windows servicing channels for the deployment rings in the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group).
+Windows Autopatch's default Windows feature update release is a service-driven release that enforces the minimum Windows OS version currently serviced by the Windows servicing channels for the deployment rings in the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group).
 
 > [!TIP]
 > Windows Autopatch allows you to [create custom Windows feature update releases](../operate/windows-autopatch-groups-manage-windows-feature-update-release.md#create-a-custom-release).
@@ -82,17 +82,17 @@ If your tenant is enrolled with Windows Autopatch, you can see the following def
 
 | Policy name | Phase mapping | Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Windows Autopatch – DSS Policy [Test] | Phase 1 | Windows 10 21H2 | Make update available as soon as possible | May 9, 2023  | N/A | N/A | June 11, 2024 |
-| Windows Autopatch – DSS Policy [First] | Phase 2 | Windows 10 21H2 | Make update available as soon as possible | May 16, 2023  | N/A | N/A | June 11, 2024 |
-| Windows Autopatch – DSS Policy [Fast] | Phase 3 | Windows 10 21H2 | Make update available as soon as possible | May 23, 2023  | N/A | N/A | June 11, 2024 |
-| Windows Autopatch – DSS Policy [Broad] | Phase 4 | Windows 10 21H2 | Make update available as soon as possible | May 30, 2023  | N/A | N/A | June 11, 2024 |
+| Windows Autopatch - DSS Policy [Test] | Phase 1 | Windows 10 21H2 | Make update available as soon as possible | May 9, 2023  | N/A | N/A | June 11, 2024 |
+| Windows Autopatch - DSS Policy [First] | Phase 2 | Windows 10 21H2 | Make update available as soon as possible | May 16, 2023  | N/A | N/A | June 11, 2024 |
+| Windows Autopatch - DSS Policy [Fast] | Phase 3 | Windows 10 21H2 | Make update available as soon as possible | May 23, 2023  | N/A | N/A | June 11, 2024 |
+| Windows Autopatch - DSS Policy [Broad] | Phase 4 | Windows 10 21H2 | Make update available as soon as possible | May 30, 2023  | N/A | N/A | June 11, 2024 |
 
 > [!NOTE]
 > Gradual rollout settings aren't configured in the default Windows Update feature policy. If the date of the final group availability is changed to a past date, all remaining devices are offered the update as soon as possible. For more information, see [rollout options for Windows Updates in Microsoft Intune](/mem/intune/protect/windows-update-rollout-options#make-updates-available-gradually).
 
 ### Global release
 
-Windows Autopatch’s global Windows feature update release is a service-driven release. Like the [default release](#default-release), the Global release enforces the [minimum Windows OS version currently serviced by the Windows servicing channels](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2).
+Windows Autopatch's global Windows feature update release is a service-driven release. Like the [default release](#default-release), the Global release enforces the [minimum Windows OS version currently serviced by the Windows servicing channels](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2).
 
 There are two scenarios that the Global release is used:
 
@@ -110,7 +110,7 @@ See the following table on how Windows Autopatch configures the values for its g
 
 | Policy name | Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Windows Autopatch – Global DSS Policy [Test] | Windows 10 21H2 | Make update available as soon as possible | N/A  | N/A | N/A | June 11, 2024 |
+| Windows Autopatch - Global DSS Policy [Test] | Windows 10 21H2 | Make update available as soon as possible | N/A  | N/A | N/A | June 11, 2024 |
 
 > [!NOTE]
 > Gradual rollout settings aren't configured in the default Windows Update feature policy. If the date of the final group availability is changed to be a past date, all remaining devices are offered the update as soon as possible. For more information, see [rollout options for Windows Updates in Microsoft Intune](/mem/intune/protect/windows-update-rollout-options#make-updates-available-gradually).
@@ -118,7 +118,7 @@ See the following table on how Windows Autopatch configures the values for its g
 ### Differences between the default and global Windows feature update policies
 
 > [!IMPORTANT]
-> Once you create a custom Windows feature update release, both the global and the default Windows feature update policies are unassigned from Autopatch group’s deployment rings behind the scenes.
+> Once you create a custom Windows feature update release, both the global and the default Windows feature update policies are unassigned from Autopatch group's deployment rings behind the scenes.
 
 The differences in between the global and the default Windows feature update policy values are:
 
@@ -138,7 +138,7 @@ For more information on how to create a custom release, see [Manage Windows feat
 
 ### About Windows Update rings policies
 
-Feature update policies work with Windows Update rings policies. Windows Update rings policies are created for each deployment ring for the [Default or a Custom Autopatch group](../deploy/windows-autopatch-groups-overview.md#key-concepts) based on the deployment settings you define. The policy name convention is `Windows Autopatch Update Policy – <Autopatch group name> – <Deployment group name>`.
+Feature update policies work with Windows Update rings policies. Windows Update rings policies are created for each deployment ring for the [Default or a Custom Autopatch group](../deploy/windows-autopatch-groups-overview.md#key-concepts) based on the deployment settings you define. The policy name convention is `Windows Autopatch Update Policy - <Autopatch group name> - <Deployment group name>`.
 
 The following table details the default Windows Update rings policy values that affect either the default or custom Windows feature updates releases:
 
@@ -151,7 +151,7 @@ The following table details the default Windows Update rings policy values that 
 | Windows Autopatch Update Policy - default - Last | Windows Autopatch - Last | 11 | 0 | 30 | 3 | 5 | 2 | Yes |
 
 > [!IMPORTANT]
-> When you create a custom Windows feature update release, new Windows feature update policies are:<ul><li>Created corresponding to the settings you defined while creating the release.</li><li>Assigned to the Autopatch group’s deployment rings you select to be included in the release.</li></ul>
+> When you create a custom Windows feature update release, new Windows feature update policies are:<ul><li>Created corresponding to the settings you defined while creating the release.</li><li>Assigned to the Autopatch group's deployment rings you select to be included in the release.</li></ul>
 
 ## Common ways to manage releases
 
@@ -159,7 +159,7 @@ The following table details the default Windows Update rings policy values that 
 
 | Scenario | Solution |
 | ----- | ----- |
-| You’re working as the IT admin at Contoso Ltd., and you need to gradually rollout of Windows 11’s latest version to several business units across your organization. | Custom Windows feature update releases deliver OS upgrades horizontally, through phases, to one or more Autopatch groups.<br>Phases:<ul><li>Set your organization’s deployment cadence.</li><li>Work like deployment rings on top of Autopatch group’s deployment rings. Phases group one or more deployment rings across one or more Autopatch groups.</li></ul><br>See the following visual for a representation of Phases with custom releases. |
+| You're working as the IT admin at Contoso Ltd., and you need to gradually rollout of Windows 11's latest version to several business units across your organization. | Custom Windows feature update releases deliver OS upgrades horizontally, through phases, to one or more Autopatch groups.<br>Phases:<ul><li>Set your organization's deployment cadence.</li><li>Work like deployment rings on top of Autopatch group's deployment rings. Phases group one or more deployment rings across one or more Autopatch groups.</li></ul><br>See the following visual for a representation of Phases with custom releases. |
 
 :::image type="content" source="../media/autopatch-groups-manage-feature-release-case-1.png" alt-text="Manage Windows feature update release use case one" lightbox="../media/autopatch-groups-manage-feature-release-case-1.png":::
 
@@ -167,6 +167,6 @@ The following table details the default Windows Update rings policy values that 
 
 | Scenario | Solution |
 | ----- | ----- |
-| You’re working as the IT admin at Contoso Ltd. and your organization isn’t ready to upgrade its devices to either Windows 11 or the newest Windows 10 OS versions due to conflicting project priorities within your organization.<p>However, you want to keep Windows Autopatch managed devices supported and receiving monthly updates that are critical to security and the health of the Windows ecosystem.</p> | Default Windows feature update releases deliver the minimum Windows OS upgrade vertically to each Windows Autopatch group (either [Default](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group) or [Custom](../deploy/windows-autopatch-groups-overview.md#about-custom-autopatch-groups)). The Default Windows Autopatch group is pre-configured with the [default Windows feature update release](#default-release) and no additional configuration is required from IT admins as Autopatch manages the default release on your behalf.<p>If you decide to edit the default Windows Autopatch group to add additional deployment rings, these rings receive a [global Windows feature update policy](#global-release) set to offer the minimum Windows OS version [currently serviced](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2) to devices. Every custom Autopatch group you create gets a [global Windows feature update policy](#global-release) that enforces the minimum Windows OS version [currently serviced](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2).</p><p>See the following visual for a representation of default releases.</p>|
+| You're working as the IT admin at Contoso Ltd. and your organization isn't ready to upgrade its devices to either Windows 11 or the newest Windows 10 OS versions due to conflicting project priorities within your organization.<p>However, you want to keep Windows Autopatch managed devices supported and receiving monthly updates that are critical to security and the health of the Windows ecosystem.</p> | Default Windows feature update releases deliver the minimum Windows OS upgrade vertically to each Windows Autopatch group (either [Default](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group) or [Custom](../deploy/windows-autopatch-groups-overview.md#about-custom-autopatch-groups)). The Default Windows Autopatch group is pre-configured with the [default Windows feature update release](#default-release) and no additional configuration is required from IT admins as Autopatch manages the default release on your behalf.<p>If you decide to edit the default Windows Autopatch group to add additional deployment rings, these rings receive a [global Windows feature update policy](#global-release) set to offer the minimum Windows OS version [currently serviced](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2) to devices. Every custom Autopatch group you create gets a [global Windows feature update policy](#global-release) that enforces the minimum Windows OS version [currently serviced](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2).</p><p>See the following visual for a representation of default releases.</p>|
 
 :::image type="content" source="../media/autopatch-groups-manage-feature-release-case-2.png" alt-text="Manage Windows feature update release use case two" lightbox="../media/autopatch-groups-manage-feature-release-case-2.png":::

@@ -22,7 +22,7 @@ ms.collection:
 
 During Readiness checks, if there are devices with conflicting registry configurations, notifications are listed in the **Not ready** tab. The notifications include a list of alerts that explain why the device isn't ready for updates. Instructions are provided on how to resolve the issue(s). You can review any device marked as **Not ready** and remediate them to a **Ready** state.
 
-Windows Autopatch monitors conflicting configurations. You’re notified of the specific registry values that prevent Windows from updating properly. These registry keys should be removed to resolve the conflict. However, it’s possible that other services write back the registry keys. It’s recommended that you review common sources for conflicting configurations to ensure your devices continue to receive Windows Updates.
+Windows Autopatch monitors conflicting configurations. You're notified of the specific registry values that prevent Windows from updating properly. These registry keys should be removed to resolve the conflict. However, it's possible that other services write back the registry keys. It's recommended that you review common sources for conflicting configurations to ensure your devices continue to receive Windows Updates.
 
 The most common sources of conflicting configurations include:
 
@@ -47,11 +47,11 @@ Location= HKLM:SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU\NoAutoUpdate
 Windows Autopatch recommends removing the conflicting configurations. The following remediation examples can be used to remove conflicting settings and registry keys when targeted at Autopatch-managed clients.
 
 > [!IMPORTANT]
-> **It’s recommended to only target devices with conflicting configuration alerts**. The following remediation examples can affect devices that aren’t managed by Windows Autopatch, be sure to target accordingly.
+> **It's recommended to only target devices with conflicting configuration alerts**. The following remediation examples can affect devices that aren't managed by Windows Autopatch, be sure to target accordingly.
 
 ### Intune Remediation
 
-Navigate to Intune Remediations and create a remediation using the following examples. It’s recommended to create a single remediation per value to understand if the value persists after removal.
+Navigate to Intune Remediations and create a remediation using the following examples. It's recommended to create a single remediation per value to understand if the value persists after removal.
 
 If you use either [**Detect**](#detect) and/or [**Remediate**](#remediate) actions, ensure to update the appropriate **Path** and **Value** called out in the Alert. For more information, see [Remediations](/mem/intune/fundamentals/remediations).
 
@@ -97,7 +97,7 @@ Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpda
 
 ### Batch file
 
-Copy and paste the following code into a text editor, and save it with a `.cmd` extension, and execute against affected devices. This command removes registry keys that affect the Windows Autopatch service. For more information, see [Using batch files: Scripting; Management Services](/previous-versions/windows/it-pro/windows-server-2003/cc758944(v=ws.10)?redirectedfrom=MSDN).
+Copy and paste the following code into a text editor, and save it with a `.cmd` extension, and execute against affected devices. This command removes registry keys that affect the Windows Autopatch service.
 
 ```cmd
 @echo off
@@ -128,15 +128,15 @@ Windows Registry Editor Version 5.00
 
 ## Common sources of conflicting configurations
 
-The following examples can be used to validate if the configuration is persistent from one of the following services. The list isn’t an exhaustive, and Admins should be aware that changes can affect devices not managed by Windows Autopatch and should plan accordingly.
+The following examples can be used to validate if the configuration is persistent from one of the following services. The list isn't an exhaustive, and Admins should be aware that changes can affect devices not managed by Windows Autopatch and should plan accordingly.
 
 ### Group Policy management
 
-Group Policy management is the most popular client configuration tool in most organizations. For this reason, it’s most often the source of conflicting configurations. Use Result Set of Policy (RSOP) on an affected client can quickly identify if configured policies conflict with Windows Autopatch. For more information, see Use Resultant Set of Policy to Manage Group Policy.
+Group Policy management is the most popular client configuration tool in most organizations. For this reason, it's most often the source of conflicting configurations. Use Result Set of Policy (RSOP) on an affected client can quickly identify if configured policies conflict with Windows Autopatch. For more information, see Use Resultant Set of Policy to Manage Group Policy.
 
 1. Launch an Elevated Command Prompt and enter `RSOP`.
 1. Navigate to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Update**
-1. If a Policy **doesn’t exist** in Windows Update, then it appears to not be Group Policy.
+1. If a Policy **doesn't exist** in Windows Update, then it appears to not be Group Policy.
 1. If a Policy **exists** in Windows Update is present, modify or limit the target of the conflicting policy to resolve the Alert.
 1. If the **Policy name** is labeled **Local Group Policy**, these settings could have been applied during imaging or by Configuration Manager.
 
@@ -146,7 +146,7 @@ Configuration Manager is a common enterprise management tool that, among many th
 
 1. Go the **Microsoft Endpoint Configuration Manager Console**.
 1. Navigate to **Administration** > **Overview** > **Client Settings**.
-1. Ensure **Software Updates** isn’t configured. If configured, it’s recommended to remove these settings to prevent conflicts with Windows Autopatch.
+1. Ensure **Software Updates** isn't configured. If configured, it's recommended to remove these settings to prevent conflicts with Windows Autopatch.
 
 ## Third-party solutions
 
