@@ -30,7 +30,7 @@ sections:
       - question: |
           What are the system requirements?
         answer: |
-          For details, see [Windows 10 Enterprise system requirements](/windows/windows-10-specifications#areaheading-uid09f4).
+          For details, see [Windows 10 Enterprise system requirements](https://www.microsoft.com/windows/Windows-10-specifications#areaheading-uid09f4).
 
       - question: |
           What are the hardware requirements for Windows 10?
