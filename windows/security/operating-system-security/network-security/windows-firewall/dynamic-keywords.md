@@ -7,9 +7,12 @@ ms.date: 01/16/2024
 
 # Windows Firewall dynamic keywords
 
+> [!IMPORTANT]
+>This article describes features or settings that are in preview. The content is subject to change and may have dependencies on other features or services in preview.
+
 Windows Firewall includes a functionality called *dynamic keywords*, which simplifies the configuration and management of Windows Firewall.
 
-With dynamic keywords, you can define a set of IP address ranges, fully qualified domain names (FQDNs), and autoresolution options, to which one or more Firewall rules can refer.
+With dynamic keywords, you can define a set of IP address ranges, fully qualified domain names (FQDNs), and **autoresolution** options, to which one or more Firewall rules can refer.
 
 ## Configure dynamic keywords
 
@@ -59,16 +62,6 @@ The Windows Firewall FQDN feature uses the Network Protection external callout d
   - On occasion a component might not have retry logic on initial connection fail. Which is solved in two ways:
     - The user can hit *refresh* in the application they're using, and it should connect successfully
     - Administrators can use the *prehydration* scripts tactfully, where this condition is occurring in their environment
-<!-- MDE keywords in the FQDN feature are case sensitive-->
-
-### Order of operations
-
-The following list is the order of operations for the FQDN feature:
-
-1. Windows Firewall publishes the list of FQDNs to Network Protection
-1. Network Protection listens for DNS queries where FQDNs match the definition from Windows Firewall
-1. Network Protection listens for the DNS response. Once UDP packets are received, Network Protection parses the packets and sends the information to Windows Firewall
-1. Windows Firewall updates the corresponding firewall rules with the resolved IP(s)
 
 ### FQDN Feature requirements
 
@@ -141,7 +134,7 @@ The following sample scripts read the current Windows Firewall configuration, ex
 ```PowerShell
 Get-NetFirewallDynamicKeywordAddress -AllAutoResolve |`
 ForEach-Object {
-  if(!$_.Keyword.Contains("*")) { 
+  if(!$_.Keyword.Contains("*")) {
     Write-Host "Getting" $_.Keyword
     resolve-dnsname -Name $_.Keyword -DNSOnly | out-null
   }
