@@ -4,11 +4,12 @@ description: Learn how to evaluate App-V for Windows 10/11 in a lab environment 
 author: aczechowski
 ms.service: windows-client
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.subservice: itpro-apps
+ms.topic: article
 ---
 
 # Evaluating App-V

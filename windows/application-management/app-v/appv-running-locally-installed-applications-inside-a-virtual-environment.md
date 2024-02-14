@@ -4,11 +4,12 @@ description: Running a Locally Installed Application Inside a Virtual Environmen
 author: aczechowski
 ms.service: windows-client
 ms.date: 03/08/2018
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.subservice: itpro-apps
+ms.topic: article
 ---
 
 # Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
@@ -81,10 +82,10 @@ Starting with App-V 5.0 SP3, when using RunVirtual, you can publish packages glo
     The application in the previous example would produce a registry export file (.reg file) like the following example:
 
     ```registry
-    Windows Registry Editor Version 5.00 
-    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual] 
-    @="" 
-    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual\MyApp.exe] 
+    Windows Registry Editor Version 5.00
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual]
+    @=""
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual\MyApp.exe]
     @="aaaaaaaa-bbbb-cccc-dddd-eeeeeeee_11111111-2222-3333-4444-555555555
     ```
 

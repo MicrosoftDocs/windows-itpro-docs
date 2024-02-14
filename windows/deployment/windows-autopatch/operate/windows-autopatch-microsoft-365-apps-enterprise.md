@@ -97,10 +97,10 @@ For organizations seeking greater control, you can allow or block Microsoft 365 
 2. Navigate to the **Devices** > **Release Management** > **Release settings**.
 3. Go to the **Microsoft 365 apps updates** section. By default, the **Allow/Block** toggle is set to **Allow**.
 4. Turn off the **Allow** toggle to opt out of Microsoft 365 App update policies. You'll see the notification: *Update in process. This setting will be unavailable until the update is complete.*
-5. Once the update is complete, you’ll receive the notification: *This setting is updated.*
+5. Once the update is complete, you'll receive the notification: *This setting is updated.*
 
 > [!NOTE]
-> If the notification: *This setting couldn’t be updated. Please try again or submit a support request.* appears, use the following steps:<ol><li>Refresh your page.</li><li>Please repeat the same steps in To block Windows Autopatch Microsoft 365 apps updates.</li><li>If the issue persists, [submit a support request](../operate/windows-autopatch-support-request.md).</li>
+> If the notification: *This setting couldn't be updated. Please try again or submit a support request.* appears, use the following steps:<ol><li>Refresh your page.</li><li>Please repeat the same steps in To block Windows Autopatch Microsoft 365 apps updates.</li><li>If the issue persists, [submit a support request](../operate/windows-autopatch-support-request.md).</li>
 
 **To verify if the Microsoft 365 App update setting is set to Allow:**
 
@@ -117,7 +117,7 @@ For organizations seeking greater control, you can allow or block Microsoft 365 
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Navigate to **Devices** > **Configuration profiles** > **Profiles**.
-3. The following **five** profiles should be removed from your list of profiles and no longer visible/active. Use the Search with the keywords “Office Configuration”. The result should return *0 profiles filtered*.
+3. The following **five** profiles should be removed from your list of profiles and no longer visible/active. Use the Search with the keywords "Office Configuration". The result should return *0 profiles filtered*.
     1. Windows Autopatch - Office Configuration
     2. Windows Autopatch - Office Update Configuration [Test]
     3. Windows Autopatch - Office Update Configuration [First]

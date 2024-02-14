@@ -33,7 +33,7 @@ Windows Autopatch can take over software update management control of devices th
 
 When you either create/edit a [Custom Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-custom-autopatch-groups) or edit the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group) to add or remove deployment rings, the device-based Microsoft Entra groups you use when setting up your deployment rings are scanned to see if devices need to be registered with the Windows Autopatch service.
 
-If devices aren’t registered, Autopatch groups starts the device registration process by using your existing device-based Microsoft Entra groups instead of the Windows Autopatch Device Registration group.
+If devices aren't registered, Autopatch groups starts the device registration process by using your existing device-based Microsoft Entra groups instead of the Windows Autopatch Device Registration group.
 
 For more information, see [create Custom Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#create-a-custom-autopatch-group) and [edit Autopatch group](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group) to register devices using the Autopatch groups device registration method.
 
@@ -178,7 +178,7 @@ The service supports:
 
 - Personal persistent virtual machines
 
-The following Azure Virtual Desktop features aren’t supported:
+The following Azure Virtual Desktop features aren't supported:
 
 - Multi-session hosts
 - Pooled non persistent virtual machines

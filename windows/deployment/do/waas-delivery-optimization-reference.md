@@ -10,9 +10,9 @@ manager: aaroncz
 ms.reviewer: mstewart
 ms.collection: tier3
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
 ms.date: 02/14/2024
 ---
@@ -144,7 +144,7 @@ MDM Setting: **DOGroupID**
 By default, peer sharing on clients using the Group download mode (option 2) is limited to the same domain in Windows 10, version 1511, and the same domain and Active Directory Domain Services site in Windows 10, version 1607. By using the Group ID setting, you can optionally create a custom group that contains devices that should participate in Delivery Optimization but don't fall within those domain or Active Directory Domain Services site boundaries, including devices in another domain. Using Group ID, you can further restrict the default group (for example, you could create a subgroup representing an office building), or extend the group beyond the domain, allowing devices in multiple domains in your organization to be peers. This setting requires the custom group to be specified as a GUID on each device that participates in the custom group.
 
 >[!NOTE]
->To generate a GUID using Powershell, use [```[guid]::NewGuid()```](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)
+>To generate a GUID using Powershell, use [```[guid]::NewGuid()```](https://devblogs.microsoft.com/scripting/powertip-create-a-new-guid-by-using-powershell/)
 >
 >This configuration is optional and not required for most implementations of Delivery Optimization.
 
@@ -161,9 +161,9 @@ Starting in Windows 10, version 1803, set this policy to restrict peer selection
 - 4 = DNS Suffix
 - 5 = Starting with Windows 10, version 1903, you can use the Microsoft Entra tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
-When set, the Group ID will be assigned automatically from the selected source. This policy is ignored if the GroupID policy is also set. The default behavior, when the GroupID or GroupIDSource policies aren't set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order. If GroupIDSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.  
+When set, the Group ID will be assigned automatically from the selected source. This policy is ignored if the GroupID policy is also set. The default behavior, when the GroupID or GroupIDSource policies aren't set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order. If GroupIDSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.
 
-### Minimum RAM (inclusive) allowed to use Peer Caching  
+### Minimum RAM (inclusive) allowed to use Peer Caching
 
 MDM Setting: **DOMinRAMAllowedToPeer**
 
@@ -313,7 +313,7 @@ This setting determines whether a device will be allowed to participate in Peer 
 
 MDM Setting: **DOVpnKeywords**
 
-This policy allows you to set one or more comma-separated keywords used to recognize VPN connections. **By default, this policy is not set so if a VPN is detected, the device will not use peering.** Delivery Optimization automatically detects a VPN connection by looking at the network adapter's 'Description' and 'FriendlyName' strings using the default keyword list including: “VPN”, “Secure”, and “Virtual Private Network” (ex: “MSFTVPN” matches the “VPN” keyword). As the number of VPNs grow it’s difficult to support an ever-changing list of VPN names. To address this, we’ve introduced this new setting to set unique VPN names to meet the needs of individual environments.
+This policy allows you to set one or more comma-separated keywords used to recognize VPN connections. **By default, this policy is not set so if a VPN is detected, the device will not use peering.** Delivery Optimization automatically detects a VPN connection by looking at the network adapter's 'Description' and 'FriendlyName' strings using the default keyword list including: "VPN", "Secure", and "Virtual Private Network" (ex: "MSFTVPN" matches the "VPN" keyword). As the number of VPNs grow it's difficult to support an ever-changing list of VPN names. To address this, we've introduced this new setting to set unique VPN names to meet the needs of individual environments.
 
 ### Disallow cache server downloads on VPN
 
@@ -335,7 +335,7 @@ The device can download from peers while on battery regardless of this policy.
 
 MDM Setting: **DOCacheHost**
 
-Set this policy to designate one or more Microsoft Connected Cache servers to be used by Delivery Optimization. You can set one or more FQDNs or IP Addresses that are comma-separated, for example: myhost.somerandomhost.com,myhost2.somerandomhost.com,10.10.1.7. **By default, this policy has no value.** Delivery Optimization client will connect to the listed Microsoft Connected Cache servers in the order as they are listed. When multiple FQDNs or IP Addresses are listed. Fallback to the CDN occurs immediately after the first failure in downloading from a cache server, unless the [DelayCacheServerFallbackBackground](#delay-background-download-cache-server-fallback-in-secs) or [DelayCacheServerFallbackForeground}(#delay-foreground-download-cache-server-fallback-in-secs) policies are set. When these delay policies are set, the fallback occurs only after the configured delay time and the client continues to attempt connecting to the cache servers in round robin order before the delay time expires.
+Set this policy to designate one or more Microsoft Connected Cache servers to be used by Delivery Optimization. You can set one or more FQDNs or IP Addresses that are comma-separated, for example: myhost.somerandomhost.com,myhost2.somerandomhost.com,10.10.1.7. **By default, this policy has no value.** Delivery Optimization client will connect to the listed Microsoft Connected Cache servers in the order as they are listed. When multiple FQDNs or IP Addresses are listed, fallback to the CDN occurs immediately after the first failure in downloading from a cache server, unless the [DelayCacheServerFallbackBackground](#delay-background-download-cache-server-fallback-in-secs) or [DelayCacheServerFallbackForeground](#delay-foreground-download-cache-server-fallback-in-secs) policies are set. When these delay policies are set, the fallback occurs only after the configured delay time and the client continues to attempt connecting to the cache servers in round robin order before the delay time expires.
 
 >[!IMPORTANT]
 > Any value will signify that the policy is set. For example, an empty string ("") isn't considered empty.

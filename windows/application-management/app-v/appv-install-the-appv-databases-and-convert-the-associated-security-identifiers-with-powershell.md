@@ -4,11 +4,12 @@ description: How to Install the App-V Databases and Convert the Associated Secur
 author: aczechowski
 ms.service: windows-client
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.subservice: itpro-apps
+ms.topic: article
 ---
 
 
@@ -79,14 +80,14 @@ Before attempting this procedure, you should read and understand the information
                    "  Pass the account(s) as space separated command line parameters. (For example 'ConvertToSID.exe DOMAIN\\Account1 DOMAIN\\Account2 ...'){0}" +
                    "  The output is written to the console in the format 'Account name    SID as string   SID as hexadecimal'{0}" +
                    "  And can be written out to a file using standard Windows PowerShell redirection{0}" +
-                   "  Please specify user accounts in the format 'DOMAIN\username'{0}" + 
+                   "  Please specify user accounts in the format 'DOMAIN\username'{0}" +
                    "  Please specify machine accounts in the format 'DOMAIN\machinename$'{0}" +
-                   "  For more help content, please run 'Get-Help ConvertToSID.ps1'{0}" + 
+                   "  For more help content, please run 'Get-Help ConvertToSID.ps1'{0}" +
                    "{0}====== Arguments ======{0}" +
-                   "{0}  /?    Show this help message", [Environment]::NewLine) 
+                   "{0}  /?    Show this help message", [Environment]::NewLine)
     {
     else
-    {  
+    { 
         #If an array was passed in, try to split it
         if($myArgs.Length -eq 1)
         {
@@ -95,7 +96,7 @@ Before attempting this procedure, you should read and understand the information
 
         #Parse the arguments for account names
         foreach($accountName in $myArgs)
-        {    
+        {   
             [string[]] $splitString = $accountName.Split('\')  # We're looking for the format "DOMAIN\Account" so anything that does not match, we reject
             if($splitString.Length -ne 2)
             {

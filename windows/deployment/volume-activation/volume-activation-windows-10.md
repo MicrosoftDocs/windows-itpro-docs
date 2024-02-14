@@ -37,7 +37,7 @@ ms.subservice: itpro-fundamentals
 
 This guide is designed to help organizations that are planning to use volume activation to deploy and activate Windows 10, including organizations that have used volume activation for earlier versions of Windows.
 
-*Volume activation* is the process that Microsoft volume licensing customers use to automate and manage the activation of Windows operating systems, Microsoft Office, and other Microsoft products across large organizations. Volume licensing is available to customers who purchase software under various volume programs (such as [Open](https://www.microsoft.com/Licensing/licensing-programs/open-license) and [Select](https://www.microsoft.com/Licensing/licensing-programs/select)) and to participants in programs such as the [Microsoft Partner Program](https://partner.microsoft.com/) and [MSDN Subscriptions](https://visualstudio.microsoft.com/msdn-platforms/).
+*Volume activation* is the process that Microsoft volume licensing customers use to automate and manage the activation of Windows operating systems, Microsoft Office, and other Microsoft products across large organizations. Volume licensing is available to customers who purchase software under various volume programs (such as [Open](https://www.microsoft.com/Licensing/licensing-programs/open-license) and [Select](https://www.microsoft.com/Licensing/licensing-programs/select)) and to participants in programs such as the [Microsoft Partner Program](https://partner.microsoft.com/) and [Visual Studio Online](https://visualstudio.microsoft.com/msdn-platforms/).
 
 Volume activation is a configurable solution that helps automate and manage the product activation process on computers running Windows operating systems that have been licensed under a volume licensing program. Volume activation is also used with other software from Microsoft (most notably the Office suites) that are sold under volume licensing agreements and that support volume activation.
 
@@ -47,7 +47,7 @@ Because most organizations won't immediately switch all computers to Windows 10,
 
 Volume activation -and the need for activation itself- isn't new, and this guide doesn't review all of its concepts and history. You can find additional background in the appendices of this guide. For more information, see [Volume Activation Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831612(v=ws.11)).
 
-If you would like additional information about planning a volume activation deployment specifically for Windows 7 and Windows Server 2008 R2, see the [Volume Activation Planning Guide for Windows 7](/previous-versions/tn-archive/dd878528(v=technet.10)).
+If you would like additional information about planning a volume activation deployment specifically for Windows 7 and Windows Server 2008 R2, see the [Volume Activation Planning Guide](/previous-versions/tn-archive/dd878528(v=technet.10)).
 
 To successfully plan and implement a volume activation strategy, you must:
 
