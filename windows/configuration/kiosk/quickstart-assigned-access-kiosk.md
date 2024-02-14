@@ -7,7 +7,7 @@ appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ---
 
-# Quickstart: Configure a kiosk experience with Assigned Access"
+# Quickstart: Configure a kiosk experience with Assigned Access
 
 With a *restricted user experience*, you can control the applications allowed in a locked down Windows desktop.
 
