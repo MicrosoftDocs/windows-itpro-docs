@@ -4,11 +4,11 @@ items:
 - name: Quickstarts
   items:
     - name: Configure a kiosk with Assigned Access
-      href: quickstart-assigned-access-kiosk.md
+      href: assigned-access-quickstart-kiosk.md
     - name: Configure a restricted user experience with Assigned Access
-      href: quickstart-assigned-access-restricted-experience.md
+      href: assigned-access-quickstart-restricted-experience.md
     - name: Configure a kiosk with Shell Launcher
-      href: quickstart-shell-launcher-kiosk.md
+      href: shell-launcher-quickstart-kiosk.md
 - name: Concepts
   items:
     - name: Prepare a device for kiosk configuration

@@ -210,43 +210,50 @@ The following is the XSD for Assigned Access in Windows 11:
 </xs:schema>
 ```
 
-## Windows 10, version 1809 XSD additions
+## Windows 11 additions
 
-The following is the XSD for Assigned Access features added in Windows 10, version 1809:
+The following is the XSD for Assigned Access features added in Windows 11:
 
 ```xml
-<xs:schema elementFormDefault="qualified"
+<xs:schema
+    elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" targetNamespace="http://schemas.microsoft.com/AssignedAccess/201810/config">
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    vc:minVersion="1.1"
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2022/config"
+    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2022/config"
+    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2022/config"
+    >
 
-    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2020/config"/>
+    <xs:element name = "StartPins" type = "xs:string"/>
+    <xs:element name = "TaskbarLayout" type="xs:string"/>
+</xs:schema>
+```
 
-    <xs:complexType name="fileExplorerNamespaceRestrictions_t">
-        <xs:choice>
-            <xs:sequence minOccurs="0">
-                <xs:element name="AllowedNamespace" type="allowedFileExplorerNamespace_t" minOccurs="0"/>
-                <xs:element ref="v3:AllowRemovableDrives" minOccurs="0" maxOccurs="1"/>
-            </xs:sequence>
-            <xs:element ref="v3:NoRestriction" minOccurs="0" maxOccurs="1" />
-        </xs:choice>
+## Windows 10, version 21H2 additions
+
+The following is the XSD for Assigned Access features added in Windows 10, version 21H2:
+
+```xml
+<xs:schema
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    vc:minVersion="1.1"
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2021/config"
+    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2021/config"
+    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2021/config"
+    >
+
+    <xs:attribute name="ClassicAppPath" type="xs:string"/>
+    <xs:attribute name="ClassicAppArguments" type="xs:string"/>
+
+    <xs:element name="BreakoutSequence" type="BreakoutSequence_t" />
+
+    <xs:complexType name="BreakoutSequence_t">
+        <xs:attribute name="Key" type="xs:string" use="required"/>
     </xs:complexType>
 
-    <xs:complexType name="allowedFileExplorerNamespace_t">
-        <xs:attribute name="Name" type="allowedFileExplorerNamespaceValues_t" use="required"/>
-    </xs:complexType>
-
-    <xs:simpleType name="allowedFileExplorerNamespaceValues_t">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="Downloads"/>
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:element name="FileExplorerNamespaceRestrictions" type="fileExplorerNamespaceRestrictions_t" />
-    <xs:attribute name="AutoLaunch" type="xs:boolean"/>
-    <xs:attribute name="AutoLaunchArguments" type="xs:string"/>
-    <xs:attribute name="DisplayName" type="xs:string"/>
 </xs:schema>
 ```
 
@@ -284,49 +291,42 @@ The following is the XSD for Assigned Access features added in Windows 10, versi
 </xs:schema>
 ```
 
-## Windows 10, version 21H2 additions
+## Windows 10, version 1809 additions
 
-The following is the XSD for Assigned Access features added in Windows 10, version 21H2:
+The following is the XSD for Assigned Access features added in Windows 10, version 1809:
 
 ```xml
-<xs:schema
-    elementFormDefault="qualified"
+<xs:schema elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-    vc:minVersion="1.1"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2021/config"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2021/config"
-    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2021/config"
-    >
+    xmlns="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:default="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" targetNamespace="http://schemas.microsoft.com/AssignedAccess/201810/config">
 
-    <xs:attribute name="ClassicAppPath" type="xs:string"/>
-    <xs:attribute name="ClassicAppArguments" type="xs:string"/>
+    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2020/config"/>
 
-    <xs:element name="BreakoutSequence" type="BreakoutSequence_t" />
-
-    <xs:complexType name="BreakoutSequence_t">
-        <xs:attribute name="Key" type="xs:string" use="required"/>
+    <xs:complexType name="fileExplorerNamespaceRestrictions_t">
+        <xs:choice>
+            <xs:sequence minOccurs="0">
+                <xs:element name="AllowedNamespace" type="allowedFileExplorerNamespace_t" minOccurs="0"/>
+                <xs:element ref="v3:AllowRemovableDrives" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:element ref="v3:NoRestriction" minOccurs="0" maxOccurs="1" />
+        </xs:choice>
     </xs:complexType>
 
-</xs:schema>
-```
+    <xs:complexType name="allowedFileExplorerNamespace_t">
+        <xs:attribute name="Name" type="allowedFileExplorerNamespaceValues_t" use="required"/>
+    </xs:complexType>
 
-## Windows 11 additions
+    <xs:simpleType name="allowedFileExplorerNamespaceValues_t">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Downloads"/>
+        </xs:restriction>
+    </xs:simpleType>
 
-The following is the XSD for Assigned Access features added in Windows 11:
-
-```xml
-<xs:schema
-    elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-    vc:minVersion="1.1"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2022/config"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2022/config"
-    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2022/config"
-    >
-
-    <xs:element name = "StartPins" type = "xs:string"/>
-    <xs:element name = "TaskbarLayout" type="xs:string"/>
+    <xs:element name="FileExplorerNamespaceRestrictions" type="fileExplorerNamespaceRestrictions_t" />
+    <xs:attribute name="AutoLaunch" type="xs:boolean"/>
+    <xs:attribute name="AutoLaunchArguments" type="xs:string"/>
+    <xs:attribute name="DisplayName" type="xs:string"/>
 </xs:schema>
 ```
