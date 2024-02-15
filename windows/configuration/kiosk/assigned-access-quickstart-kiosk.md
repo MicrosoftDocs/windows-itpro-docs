@@ -36,12 +36,7 @@ Arguments: --no-first-run --kiosk https://maps.cltairport.com/ --kiosk-idle-time
 >
 > When using this call, authenticate to your tenant in the Graph Explorer window. If it's the first time using Graph Explorer, you may need to authorize the application to access your tenant or to modify the existing permissions. This graph call requires *DeviceManagementConfiguration.ReadWrite.All* permissions.
 
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
-Content-Type: application/json
-
-{ "id": "00-0000-0000-0000-000000000000", "displayName": "_MSLearn_Example", "description": "Collection of settings for Assigned Access", "roleScopeTagIds": [ "0" ], "@odata.type": "#microsoft.graph.windows10CustomConfiguration", "omaSettings": [ { "@odata.type": "#microsoft.graph.omaSettingString", "displayName": "AssignedAccess_Configuration", "description": null, "omaUri": "./Vendor/MSFT/AssignedAccess/Configuration", "secretReferenceValueId": null, "isEncrypted": true, "value": "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<AssignedAccessConfiguration xmlns=\"http://schemas.microsoft.com/AssignedAccess/2017/config\"\n    xmlns:rs5=\"http://schemas.microsoft.com/AssignedAccess/201810/config\"\n    xmlns:rs5=\"http://schemas.microsoft.com/AssignedAccess/201810/config\"\n    xmlns:v3=\"http://schemas.microsoft.com/AssignedAccess/2020/config\"\n    xmlns:v5=\"http://schemas.microsoft.com/AssignedAccess/2022/config\"\n    xmlns:v5=\"http://schemas.microsoft.com/AssignedAccess/2022/config\"\n    >\n    <Profiles>\n        <Profile Id=\"{9A2A490F-10F6-4764-974A-43B19E722C23}\">\n            <AllAppsList>\n                <AllowedApps>\n                    <App AppUserModelId=\"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App\" />\n                    <App AppUserModelId=\"Microsoft.Windows.Photos_8wekyb3d8bbwe!App\" />\n                    <App AppUserModelId=\"Microsoft.BingWeather_8wekyb3d8bbwe!App\" />\n                    <App DesktopAppPath=\"C:\\Windows\\system32\\cmd.exe\" />\n                    <App DesktopAppPath=\"%windir%\\System32\\WindowsPowerShell\\v1.0\\Powershell.exe\" />\n                    <App DesktopAppPath=\"%windir%\\explorer.exe\" />\n                    <App AppUserModelId=\"windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel\" />\n                    <App AppUserModelId=\"%ProgramFiles(x86)%\\Microsoft\\Edge\\Application\\msedge.exe\" />\n                </AllowedApps>\n            </AllAppsList>\n            <rs5:FileExplorerNamespaceRestrictions>\n                <rs5:AllowedNamespace Name=\"Downloads\"/>\n                <v3:AllowRemovableDrives/>\n            </rs5:FileExplorerNamespaceRestrictions>\n            <v5:StartPins>\n                <![CDATA[{\n                    \"pinnedList\":[\n                        {\"packagedAppId\":\"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App\"},\n                        {\"packagedAppId\":\"Microsoft.Windows.Photos_8wekyb3d8bbwe!App\"},\n                        {\"packagedAppId\":\"Microsoft.BingWeather_8wekyb3d8bbwe!App\"},\n                        {\"desktopAppLink\":\"%APPDATA%\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\System Tools\\\\Command Prompt.lnk\"},\n                        {\"desktopAppLink\":\"%APPDATA%\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\Windows PowerShell\\\\Windows PowerShell.lnk\"},\n                        {\"desktopAppLink\":\"%APPDATA%\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\File Explorer.lnk\"},\n                        {\"packagedAppId\": \"windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel\"},\n                        {\"desktopAppLink\": \"%ALLUSERSPROFILE%\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\Microsoft Edge.lnk\"}\n                    ]\n                }]]>\n            </v5:StartPins>\n            <Taskbar ShowTaskbar=\"true\"/>\n        </Profile>\n    </Profiles>\n    <Configs>\n        <Config>\n            <AutoLogonAccount rs5:DisplayName=\"Library Kiosk\"/>\n            <DefaultProfile Id=\"{9A2A490F-10F6-4764-974A-43B19E722C23}\"/>\n        </Config>\n    </Configs>\n</AssignedAccessConfiguration>" } ] }
-```
+[!INCLUDE [assigned-access-quickstart-kiosk-intune](includes/assigned-access-quickstart-kiosk-intune.md)]
 
 [!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
 
@@ -50,7 +45,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 - **Setting:** `./Vendor/MSFT/AssignedAccess/Configuration`
 - **Value:**
 
-[!INCLUDE [quickstart-restricted-experience-xml](includes/quickstart-restricted-experience-xml.md)]
+[!INCLUDE [assigned-access-quickstart-kiosk-xml](includes/assigned-access-quickstart-kiosk-xml.md)]
 
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -59,7 +54,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 - **Path:** `AssignedAccess/MultiAppAssignedAccessSettings`
 - **Value:**
 
-[!INCLUDE [quickstart-restricted-experience-xml](includes/quickstart-restricted-experience-xml.md)]
+[!INCLUDE [assigned-access-quickstart-kiosk-xmll](includes/assigned-access-quickstart-kiosk-xml.md)]
 
 [!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
@@ -67,62 +62,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 [!INCLUDE [powershell-wmi-bridge-1](../../../includes/configure/powershell-wmi-bridge-1.md)]
 
-```powershell
-$assignedAccessConfiguration = @"
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
-    >
-    <Profiles>
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
-            <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" v4:ClassicAppArguments="--kiosk https://maps.cltairport.com/ --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2" />
-            <v4:BreakoutSequence Key="Ctrl+A"/>
-        </Profile>
-    </Profiles>
-    <Configs>
-        <Config>
-            <AutoLogonAccount rs5:DisplayName="Airport Kiosk"/>
-            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-        </Config>
-    </Configs>
-</AssignedAccessConfiguration>
-"@
-
-$eventLogFilterHashTable = @{
-    ProviderName = "Microsoft-Windows-AssignedAccess";
-    StartTime    = Get-Date -Millisecond 0
-}
-
-$namespaceName="root\cimv2\mdm\dmmap"
-$className="MDM_AssignedAccess"
-$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
-$obj.Configuration = [System.Net.WebUtility]::HtmlEncode($assignedAccessConfiguration)
-$obj = Set-CimInstance -CimInstance $obj -ErrorVariable cimSetError -ErrorAction SilentlyContinue
-if($cimSetError) {
-    Write-Output "An ERROR occurred. Displaying error record and attempting to retrieve error logs...`n"
-    Write-Error -ErrorRecord $cimSetError[0]
-
-    $timeout = New-TimeSpan -Seconds 30
-    $stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
-    do{
-        $events = Get-WinEvent -FilterHashtable $eventLogFilterHashTable -ErrorAction Ignore
-    } until ($events.Count -or $stopwatch.Elapsed -gt $timeout) # wait for the log to be available
-
-    if($events.Count) {
-        $events | ForEach-Object {
-            Write-Output "$($_.TimeCreated) [$($_.LevelDisplayName.ToUpper())] $($_.Message -replace "`n|`r")"
-        }
-    } else {
-        Write-Warning "Timed-out attempting to retrieve event logs..."
-    }
-
-    Exit 1
-}
-
-Write-Output "Successfully applied Assigned Access configuration"
-```
+[!INCLUDE [assigned-access-quickstart-kiosk-ps](includes/assigned-access-quickstart-kiosk-ps.md)]
 
 [!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
 
@@ -130,9 +70,7 @@ Write-Output "Successfully applied Assigned Access configuration"
 
 ## User experience
 
-After the settings are applied, reboot the device. A user account named `Library Kiosk` is automatically signed in, with access to a limited set of applications, which are pinned to the Start menu.
-
-:::image type="content" source="images/quickstart-restricted-experience.png" alt-text="Screenshot of the Windows desktop used for the quickstart." border="false":::
+After the settings are applied, reboot the device. A user account named `Airport Kiosk` is automatically signed in, opening Microsoft Edge with an airport map.
 
 ## Next steps
 
