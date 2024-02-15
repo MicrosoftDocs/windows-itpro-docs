@@ -181,7 +181,7 @@ With a Microsoft Entra subscription, group-based licensing is the preferred meth
 
 ### Existing Enterprise deployments
 
-With currently supported version of Windows, subscription activation automatically pulls the firmware-embedded Windows activation key and activates the underlying Pro license. The license then steps up to Enterprise using subscription activation. This behavior automatically migrates devices from KMS or MAK activated Enterprise to subscription activated Enterprise.
+With currently supported versions of Windows, subscription activation automatically pulls the firmware-embedded Windows activation key and activates the underlying Pro license. The license then steps up to Enterprise using subscription activation. This behavior automatically migrates devices from KMS or MAK activated Enterprise to subscription activated Enterprise.
 
 Subscription activation doesn't remove the need to activate the underlying OS. This requirement still exists for running a genuine installation of Windows.
 
@@ -223,8 +223,9 @@ Subscriptions to Windows Enterprise are also available for virtualized clients. 
 
 Virtual machines (VMs) must be configured to enable Windows Enterprise subscriptions for VDA. Active Directory-joined and Microsoft Entra joined clients are supported. See [Enable VDA for Subscription Activation](vda-subscription-activation.md).
 
-## Related sites
+## Related articles
 
-- Connect domain-joined devices to Microsoft Entra ID for Windows experiences. For more information, see [Plan your Microsoft Entra hybrid join implementation](/entra/identity/devices/hybrid-join-plan).
+- [Deploy Windows Enterprise licenses](deploy-enterprise-licenses.md).
+- [Plan your Microsoft Entra hybrid join implementation](/entra/identity/devices/hybrid-join-plan).
 - [Compare Windows editions](https://www.microsoft.com/windows/business/compare-windows-11).
 - [Windows for business](https://www.microsoft.com/windows/business).

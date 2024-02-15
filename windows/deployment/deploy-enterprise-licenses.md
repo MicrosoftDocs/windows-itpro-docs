@@ -530,4 +530,5 @@ Virtual machines (VMs) must be configured to enable Windows Enterprise subscript
 
 ## Related articles
 
+- [Windows subscription activation](windows-subscription-activation.md).
 - [MDM enrollment of Windows devices](/windows/client-management/mdm-enrollment-of-windows-devices).
