@@ -1,6 +1,6 @@
 ---
 title: Register your devices
-description: This article details how to register devices in Autopatch
+description: This article details how to register devices in Autopatch.
 ms.date: 02/15/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
