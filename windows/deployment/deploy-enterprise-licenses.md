@@ -177,7 +177,7 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 Open the **Accounts** > **Access work or school** pane in the **Settings** app by selecting the following link:
 
 > [!div class="nextstepaction"]
-> [Activation](ms-settings:workplace)
+> [Acccess work or school](ms-settings:workplace)
 
 or
 
