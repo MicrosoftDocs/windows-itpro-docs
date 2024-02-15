@@ -11,7 +11,8 @@ ms.collection:
   - highpri
   - tier2
 ms.topic: conceptual
-ms.date: 02/13/2024
+zone_pivot_groups: windows-versions-11-10
+ms.date: 02/15/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -73,7 +74,7 @@ To support inherited activation, both the host computer and the VM must be runni
 
 > [!NOTE]
 >
-> The following requirements don't apply to general Windows client activation on Azure. Azure activation requires a connection to Azure KMS only. It supports workgroup, hybrid, and Microsoft Entra joined VMs. In most scenarios, activation of Azure VMs happens automatically. For more information, see [Understanding Azure KMS endpoints for Windows product activation of Azure virtual machines](/troubleshoot/azure/virtual-machines/troubleshoot-activation-problems#understanding-azure-kms-endpoints-for-windows-product-activation-of-azure-virtual-machines).
+> The following requirements don't apply to general Windows client activation on Azure. Azure activation requires a connection to Azure KMS only. Azure KMS supports workgroup, hybrid, and Microsoft Entra joined VMs. In most scenarios, activation of Azure VMs happens automatically. For more information, see [Understanding Azure KMS endpoints for Windows product activation of Azure virtual machines](/troubleshoot/azure/virtual-machines/troubleshoot-activation-problems#understanding-azure-kms-endpoints-for-windows-product-activation-of-azure-virtual-machines).
 
 > [!IMPORTANT]
 >
@@ -90,8 +91,21 @@ For Microsoft customers that don't have EA or MPSA, Windows Enterprise E3/E5 or 
 ### Windows Education requirements
 
 - A supported version of Windows Pro Education installed on the devices to be upgraded.
-- A device with a Windows Pro Education digital license. This information can be confirmed under **Settings > System > Activation** or under **Settings > Update & Security > Activation**.
+
+::: zone pivot="windows-11"
+
+- A device with a Windows Pro Education digital license. This information can be confirmed in the [**Activation**](ms-settings:activation)pane of the **Settings** app under **Settings > System > Activation**.
+
+::: zone-end
+
+::: zone pivot="windows-10"
+
+- A device with a Windows Pro Education digital license. This information can be confirmed in the [**Activation**](ms-settings:activation)pane of the **Settings** app under **Settings > Update & Security > Activation**.
+
+::: zone-end
+
 - The Education tenant must have an active subscription to Microsoft 365 with a Windows Enterprise license, or a Windows Enterprise or Education subscription.
+
 - Devices must be Microsoft Entra joined or Microsoft Entra hybrid joined. Workgroup-joined or Microsoft Entra registered devices aren't supported.
 
 > [!IMPORTANT]
@@ -121,7 +135,7 @@ Benefits of moving to Windows as an online service include:
 
 ## How it works
 
-The device is Microsoft Entra joined, for example from **Settings** > **Accounts** > **Access work or school**.
+The device is Microsoft Entra joined, for example from the [Access work or school](ms-settings:workplace) pane in the **Settings** app which can be found under **Settings** > **Accounts** > **Access work or school**.
 
 Windows Enterprise is assigned to a user, for example through the Microsoft 365 admin center. When a licensed user signs in to a device that meets requirements using their Microsoft Entra credentials, Windows steps up from Pro edition to Enterprise, or from Pro Education to Education. Once the edition is stepped up, Enterprise/Education features are unlocked. When a user's subscription expires or is transferred to another user, the device reverts seamlessly to Windows Pro or Windows Pro Education edition, once the current subscription validity expires.
 

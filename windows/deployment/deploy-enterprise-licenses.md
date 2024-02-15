@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.collection:
   - highpri
   - tier2
-ms.date: 02/13/2024
+ms.date: 02/15/2024
 zone_pivot_groups: windows-versions-11-10
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -368,11 +368,11 @@ In some instances, users might experience problems with activation of the Window
 - The Windows Enterprise E3 or E5 subscription has lapsed, was removed, or isn't applied.
 - Windows Pro was never activated.
 
-When there are problems with Windows Enterprise E3 or E5 subscription activation, the following are errors can occur in the [Activation](ms-settings:activation) pane:
+When there are problems with Windows Enterprise E3 or E5 subscription activation, the following are errors can occur in the [**Activation**](ms-settings:activation) pane:
 
 - **Windows Pro isn't activated**
 
-  When Windows Pro isn't activated on a device, the following message is displayed for **Activation** in the [Activation](ms-settings:activation) pane:
+  When Windows Pro isn't activated on a device, the following message is displayed for **Activation** in the [**Activation**](ms-settings:activation) pane:
 
   `Windows is not activated`
 
@@ -389,7 +389,7 @@ When there are problems with Windows Enterprise E3 or E5 subscription activation
 
 - **Windows Enterprise subscription isn't active**
 
-  When a device with a Windows Enterprise subscription has lapsed or has been removed, the following message is displayed for **Subscription** in the [Activation](ms-settings:activation) pane:
+  When a device with a Windows Enterprise subscription has lapsed or has been removed, the following message is displayed for **Subscription** in the [**Activation**](ms-settings:activation) pane:
 
   `Windows Enterprise subscription isn't valid.`
 
