@@ -31,12 +31,7 @@ This quickstart provides the information to configure a kiosk experience with Sh
 >
 > When using this call, authenticate to your tenant in the Graph Explorer window. If it's the first time using Graph Explorer, you may need to authorize the application to access your tenant or to modify the existing permissions. This graph call requires *DeviceManagementConfiguration.ReadWrite.All* permissions.
 
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
-Content-Type: application/json
-
-{ "id": "00-0000-0000-0000-000000000000", "displayName": "_MSLearn_Example_Kiosk - Shell Launcher", "description": "This is a sample policy created from an article on learn.microsoft.com.", "roleScopeTagIds": [ "0" ], "@odata.type": "#microsoft.graph.windows10CustomConfiguration", "omaSettings": [ { "@odata.type": "#microsoft.graph.omaSettingString", "displayName": "ShellLauncher", "description": null, "omaUri": "./Vendor/MSFT/AssignedAccess/ShellLauncher", "secretReferenceValueId": null, "isEncrypted": true, "value": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<ShellLauncherConfiguration\nxmlns=\"http://schemas.microsoft.com/ShellLauncher/2018/Configuration\"\nxmlns:rs5=\"http://schemas.microsoft.com/ShellLauncher/2019/Configuration\">\n    <Profiles>\n        <DefaultProfile>\n            <Shell Shell=\"%SystemRoot%\\explorer.exe\"/>\n        </DefaultProfile>\n        <Profile Id=\"{EDB3036B-780D-487D-A375-69369D8A8F78}\">\n            <Shell Shell=\"%ProgramFiles(x86)%\\Microsoft\\Edge\\Application\\msedge.exe --kiosk https://maps.heathrow.com --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2\" rs5:AppType=\"Desktop\" rs5:AllAppsFullScreen=\"true\">\n                <ReturnCodeActions>\n                    <ReturnCodeAction ReturnCode=\"0\" Action=\"RestartShell\"/>\n                    <ReturnCodeAction ReturnCode=\"-1\" Action=\"RestartDevice\"/>\n                    <ReturnCodeAction ReturnCode=\"255\" Action=\"ShutdownDevice\"/>\n                </ReturnCodeActions>\n                <DefaultAction Action=\"RestartShell\"/>\n            </Shell>\n        </Profile>\n    </Profiles>\n    <Configs>\n        <Config>\n            <AutoLogonAccount/>\n            <Profile Id=\"{EDB3036B-780D-487D-A375-69369D8A8F78}\"/>\n        </Config>\n    </Configs>\n</ShellLauncherConfiguration>" } ], }
-```
+[!INCLUDE [shell-launcher-quickstart-intune](includes/shell-launcher-quickstart-intune.md)]
 
 [!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
 
@@ -51,44 +46,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 [!INCLUDE [powershell-wmi-bridge-1](../../../includes/configure/powershell-wmi-bridge-1.md)]
 
-```PowerShell
-$shellLauncherConfiguration = @"
-<?xml version="1.0" encoding="utf-8"?>
-<ShellLauncherConfiguration
-xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
-xmlns:rs5="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
-    <Profiles>
-        <DefaultProfile>
-            <Shell Shell="%SystemRoot%\explorer.exe"/>
-        </DefaultProfile>
-        <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
-            <Shell Shell="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe --kiosk https://maps.heathrow.com --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2" rs5:AppType="Desktop" rs5:AllAppsFullScreen="true">
-                <ReturnCodeActions>
-                    <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
-                    <ReturnCodeAction ReturnCode="-1" Action="RestartDevice"/>
-                    <ReturnCodeAction ReturnCode="255" Action="ShutdownDevice"/>
-                </ReturnCodeActions>
-                <DefaultAction Action="RestartShell"/>
-            </Shell>
-        </Profile>
-    </Profiles>
-    <Configs>
-        <Config>
-            <AutoLogonAccount/>
-            <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}"/>
-        </Config>
-    </Configs>
-</ShellLauncherConfiguration>
-"@
-
-$namespaceName="root\cimv2\mdm\dmmap"
-$className="MDM_AssignedAccess"
-$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
-$obj.ShellLauncher = [System.Net.WebUtility]::HtmlEncode($shellLauncherConfiguration)
-$obj = Set-CimInstance -CimInstance $obj
-
-
-```
+[!INCLUDE [shell-launcher-quickstart-ps](includes/shell-launcher-quickstart-ps.md)]
 
 [!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
 
@@ -96,7 +54,7 @@ $obj = Set-CimInstance -CimInstance $obj
 
 ## User experience
 
-After the settings are applied, reboot the device. A local account is automatically signed in, and Microsoft Edge app starts automatically in full screen, opening the London Heathrow airport map.
+After the settings are applied, reboot the device. A local user account named `Airport Kiosk` is automatically signed in, opening Microsoft Edge with an airport map.
 
 ## Next steps
 

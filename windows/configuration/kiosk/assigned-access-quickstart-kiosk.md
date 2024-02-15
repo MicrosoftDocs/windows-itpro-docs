@@ -70,7 +70,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 ## User experience
 
-After the settings are applied, reboot the device. A user account named `Airport Kiosk` is automatically signed in, opening Microsoft Edge with an airport map.
+After the settings are applied, reboot the device. A local user account named `Airport Kiosk` is automatically signed in, opening Microsoft Edge with an airport map.
 
 ## Next steps
 
