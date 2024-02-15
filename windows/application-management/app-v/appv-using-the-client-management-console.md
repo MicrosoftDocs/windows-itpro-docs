@@ -4,11 +4,12 @@ description: Learn how to use the Application Virtualization (App-V) client mana
 author: aczechowski
 ms.service: windows-client
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.subservice: itpro-apps
+ms.topic: article
 ---
 
 # Using the App-V Client Management Console
@@ -25,7 +26,7 @@ The App-V client has associated settings that can be configured to determine how
 
 - [How to Modify Client Configuration by Using Windows PowerShell](appv-modify-client-configuration-with-powershell.md)
 
-- [How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server](appv-configure-the-client-to-receive-updates-from-the-publishing-server.md) 
+- [How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server](appv-configure-the-client-to-receive-updates-from-the-publishing-server.md)
 
 ## <a href="" id="the-app-v-5-1-client-management-console-"></a>The App-V client management console
 

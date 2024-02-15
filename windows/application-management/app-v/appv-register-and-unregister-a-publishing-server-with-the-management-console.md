@@ -4,11 +4,12 @@ description: How to Register and Unregister a Publishing Server by Using the Man
 author: aczechowski
 ms.service: windows-client
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.subservice: itpro-apps
+ms.topic: article
 ---
 
 # How to Register and Unregister a Publishing Server by Using the Management Console

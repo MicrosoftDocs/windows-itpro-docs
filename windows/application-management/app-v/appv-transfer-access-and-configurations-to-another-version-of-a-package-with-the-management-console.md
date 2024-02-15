@@ -4,11 +4,12 @@ description: How to Transfer Access and Configurations to Another Version of a P
 author: aczechowski
 ms.service: windows-client
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.subservice: itpro-apps
+ms.topic: article
 ---
 
 # How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console

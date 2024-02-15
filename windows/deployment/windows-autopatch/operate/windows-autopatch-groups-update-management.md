@@ -47,7 +47,7 @@ To release updates to devices in a gradual manner, Windows Autopatch deploys a s
 
 ## Windows feature updates
 
-You’re in control of telling Windows Autopatch when your organization is ready to move to the next Windows OS version.
+You're in control of telling Windows Autopatch when your organization is ready to move to the next Windows OS version.
 
 The Window feature update release management experience makes it easier and less expensive for you to keep your Windows devices up to date. You can focus on running your core businesses while Windows Autopatch runs update management on your behalf.
 

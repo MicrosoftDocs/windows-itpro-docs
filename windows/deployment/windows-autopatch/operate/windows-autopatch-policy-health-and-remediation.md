@@ -36,7 +36,7 @@ With this feature, IT admins can:
 - Initiate action for the Autopatch service to restore the deployment rings without having to raise an incident.
 
 > [!NOTE]
-> You can rename your policies to meet your organization’s requirements. Do **not** rename the underlying Autopatch deployment groups.
+> You can rename your policies to meet your organization's requirements. Do **not** rename the underlying Autopatch deployment groups.
 
 ## Check policy health
 

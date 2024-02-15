@@ -4,18 +4,19 @@ description: Learn how to migrate to Microsoft Application Virtualization (App-V
 author: aczechowski
 ms.service: windows-client
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.subservice: itpro-apps
+ms.topic: article
 ---
 
 # Migrating to App-V from previous versions
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
-To migrate from App-V 4.x to App-V for Windows 10/11, you must upgrade to App-V 5.x first. 
+To migrate from App-V 4.x to App-V for Windows 10/11, you must upgrade to App-V 5.x first.
 
 ## <a href="" id="bkmk-pkgconvimprove"></a>Improvements to the App-V Package Converter
 
@@ -51,7 +52,7 @@ To understand the new process, review the following example `ConvertFrom-AppvLeg
 **And you run this command:**
 
 ``` syntax
-ConvertFrom-AppvLegacyPackage –SourcePath \\OldPkgStore\ContosoApp\ 
+ConvertFrom-AppvLegacyPackage –SourcePath \\OldPkgStore\ContosoApp\
 -DestinationPath \\NewPkgStore\ContosoApp\
 -OSDsToIncludeInPackage X.osd,Y.osd
 ```
@@ -88,7 +89,7 @@ Use the package converter utility to upgrade virtual application packages create
 **Important**  
 After you convert an existing package you should test the package prior to deploying the package to ensure the conversion process was successful.
 
- 
+
 
 **What to know before you convert existing packages**
 
