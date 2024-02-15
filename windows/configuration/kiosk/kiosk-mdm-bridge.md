@@ -93,7 +93,7 @@ $obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
   xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-  xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
+  xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
   <Profiles>
     <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
       <AllAppsList>
@@ -106,7 +106,7 @@ $obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
           <App DesktopAppPath="%windir%\explorer.exe" />
         </AllowedApps>
       </AllAppsList>
-      <win11:StartPins>
+      <v5:StartPins>
         <![CDATA[
           { "pinnedList":[
             {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
@@ -117,7 +117,7 @@ $obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
             {"desktopAppLink":"C:\\Users\\MultiAppKioskUser\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell.lnk"}
           ] }
         ]]>
-      </win11:StartPins>
+      </v5:StartPins>
       <Taskbar ShowTaskbar="true"/>
     </Profile>
   </Profiles>

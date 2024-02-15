@@ -13,6 +13,8 @@ items:
   items:
     - name: Prepare a device for kiosk configuration
       href: kiosk-prepare.md
+    - name: Guidelines for choosing an app for assigned access
+      href: guidelines-for-assigned-access-app.md
 - name: Deployment guides
   items:
   - name: Configure digital signs
@@ -39,12 +41,14 @@ items:
       href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
 - name: Reference
   items:
-    - name: Guidelines for choosing an app for assigned access
-      href: guidelines-for-assigned-access-app.md
+    - name: Assigned Access XSD
+      href: assigned-access-xsd.md
+    - name: Shell Launcher XSD
+      href: shell-launcher-xsd.md
     - name: Policies enforced on kiosk devices
       href: kiosk-policies.md
-    - name: Assigned access XML reference
-      href: kiosk-xml.md
+    - name: Assigned access XML examples
+      href: assigned-access-examples.md
 - name: On the way to 🪦
   items:
     - name: _lock-down-windows-10-to-specific-apps

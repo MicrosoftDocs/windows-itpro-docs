@@ -43,13 +43,13 @@ You can start your file by pasting the following XML into an XML editor, and sav
 <AssignedAccessConfiguration
   xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
   xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-  xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
+  xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
     <Profiles>
         <Profile Id="">
             <AllAppsList>
                 <AllowedApps/>
             </AllAppsList>
-            <win11:StartPins/>
+            <v5:StartPins/>
             <Taskbar/>
         </Profile>
     </Profiles>
@@ -139,7 +139,7 @@ After you define the list of allowed applications, you can customize the Start l
 Add your pinnedList JSON into the StartPins tag in your XML file.
 
 ```xml
-<win11:StartPins>
+<v5:StartPins>
         <![CDATA[
 
           { "pinnedList":[
@@ -150,7 +150,7 @@ Add your pinnedList JSON into the StartPins tag in your XML file.
             {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\StartMenu\\Programs\\Accessories\\Notepad.lnk"}
           ] }
         ]]>
-      </win11:StartPins>
+      </v5:StartPins>
 ```
 
 > [!NOTE]
@@ -358,7 +358,7 @@ This section contains a predefined XML file which can be used as a quickstart to
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
   xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-  xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
+  xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
   <Profiles>
     <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
       <AllAppsList>
@@ -371,7 +371,7 @@ This section contains a predefined XML file which can be used as a quickstart to
           <App DesktopAppPath="%windir%\explorer.exe" />
         </AllowedApps>
       </AllAppsList>
-      <win11:StartPins>
+      <v5:StartPins>
         <![CDATA[
           { "pinnedList":[
             {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
@@ -382,7 +382,7 @@ This section contains a predefined XML file which can be used as a quickstart to
             {"desktopAppLink":"C:\\Users\\MultiAppKioskUser\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell.lnk"}
           ] }
         ]]>
-      </win11:StartPins>
+      </v5:StartPins>
       <Taskbar ShowTaskbar="true"/>
     </Profile>
   </Profiles>

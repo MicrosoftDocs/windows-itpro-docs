@@ -26,10 +26,8 @@ You can start your file by pasting the following XML code into a text editor, an
 <AssignedAccessConfiguration
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
     xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config"
-    xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
+    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
     <Profiles>
         <Profile Id="">
             <AllAppsList>
@@ -57,7 +55,6 @@ You can start your file by pasting the following XML code into a text editor, an
 <AssignedAccessConfiguration
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
     xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
     xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config"
     <Profiles>
@@ -212,7 +209,7 @@ After you define the list of allowed applications, you can customize the Start l
 Add your pinnedList JSON into the StartPins tag in your XML file.
 
 ```xml
-<win11:StartPins>
+<v5:StartPins>
 <![CDATA[
     {
         "pinnedList":[
@@ -227,7 +224,7 @@ Add your pinnedList JSON into the StartPins tag in your XML file.
         ]
     }
 ]]>
-</win11:StartPins>
+</v5:StartPins>
 ```
 
 > [!NOTE]
@@ -260,10 +257,8 @@ The following example hides the taskbar:
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
     xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config"
-    xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
+    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
     <Profiles>
         <Profile Id="{6954c40a-45dd-4176-a2e3-ecaf5c97f425}">
             <AllAppsList>
@@ -279,7 +274,7 @@ The following example hides the taskbar:
                 <rs5:AllowedNamespace Name="Downloads"/>
                 <v3:AllowRemovableDrives/>
             </rs5:FileExplorerNamespaceRestrictions>
-            <win11:StartPins>
+            <v5:StartPins>
                 <![CDATA[{
                     "pinnedList":[
                         {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
@@ -292,7 +287,7 @@ The following example hides the taskbar:
                         {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk"}
                     ]
                 }]]>
-            </win11:StartPins>
+            </v5:StartPins>
             <Taskbar ShowTaskbar="true"/>
         </Profile>
     </Profiles>
@@ -331,8 +326,8 @@ The following example hides the taskbar:
     Either don't use the node or leave it empty
 
     ```xml
-    <v2:FileExplorerNamespaceRestrictions>
-    </v2:FileExplorerNamespaceRestrictions>
+    <rs5:FileExplorerNamespaceRestrictions>
+    </rs5:FileExplorerNamespaceRestrictions>
     ```
     :::column-end:::
 :::row-end:::
@@ -342,9 +337,9 @@ The following example hides the taskbar:
     :::column-end:::
     :::column span="3":::
     ```xml
-    <v2:FileExplorerNamespaceRestrictions>
-        <v2:AllowedNamespace Name="Downloads"/>
-    </v2:FileExplorerNamespaceRestrictions>
+    <rs5:FileExplorerNamespaceRestrictions>
+        <rs5:AllowedNamespace Name="Downloads"/>
+    </rs5:FileExplorerNamespaceRestrictions>
     ```
     :::column-end:::
 :::row-end:::
@@ -355,9 +350,9 @@ The following example hides the taskbar:
     :::column-end:::
     :::column span="3":::
     ```xml
-    <v2:FileExplorerNamespaceRestrictions>
+    <rs5:FileExplorerNamespaceRestrictions>
         <v3:AllowRemovableDrives />
-    </v2:FileExplorerNamespaceRestrictions>
+    </rs5:FileExplorerNamespaceRestrictions>
     ```
     :::column-end:::
 :::row-end:::
@@ -368,10 +363,10 @@ The following example hides the taskbar:
     :::column-end:::
     :::column span="3":::
     ```xml
-    <v2:FileExplorerNamespaceRestrictions>
-        <v2:AllowedNamespace Name="Downloads"/>
+    <rs5:FileExplorerNamespaceRestrictions>
+        <rs5:AllowedNamespace Name="Downloads"/>
         <v3:AllowRemovableDrives/>
-    </v2:FileExplorerNamespaceRestrictions>
+    </rs5:FileExplorerNamespaceRestrictions>
     ```
     :::column-end:::
 :::row-end:::
@@ -382,9 +377,9 @@ The following example hides the taskbar:
     :::column-end:::
     :::column span="3":::
     ```xml
-    <v2:FileExplorerNamespaceRestrictions>
+    <rs5:FileExplorerNamespaceRestrictions>
         <v3:NoRestriction />
-    </v2:FileExplorerNamespaceRestrictions>
+    </rs5:FileExplorerNamespaceRestrictions>
     ```
     :::column-end:::
 :::row-end:::

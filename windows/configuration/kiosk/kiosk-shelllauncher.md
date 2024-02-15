@@ -84,16 +84,16 @@ The following XML sample works for **Shell Launcher v1**:
 </ShellLauncherConfiguration>
 ```
 
-For **Shell Launcher v2**, you can use UWP app type for `Shell` by specifying the v2 namespace, and use `v2:AppType` to specify the type, as shown in the following example. If `v2:AppType` isn't specified, it implies the shell is Win32 app.
+For **Shell Launcher v2**, you can use UWP app type for `Shell` by specifying the v2 namespace, and use `rs5:AppType` to specify the type, as shown in the following example. If `rs5:AppType` isn't specified, it implies the shell is Win32 app.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ShellLauncherConfiguration
 xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
-xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
+xmlns:rs5="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
   <Profiles>
     <DefaultProfile>
-      <Shell Shell="Microsoft.BingWeather_8wekyb3d8bbwe!App" v2:AppType="UWP" v2:AllAppsFullScreen="true">
+      <Shell Shell="Microsoft.BingWeather_8wekyb3d8bbwe!App" rs5:AppType="UWP" rs5:AllAppsFullScreen="true">
         <DefaultAction Action="RestartShell"/>
       </Shell>
     </DefaultProfile>

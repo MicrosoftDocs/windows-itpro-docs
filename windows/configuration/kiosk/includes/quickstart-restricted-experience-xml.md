@@ -8,12 +8,14 @@ ms.prod: windows-client
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+<AssignedAccessConfiguration
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
     xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config"
-    xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
+    xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
+    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
             <AllAppsList>
@@ -32,7 +34,7 @@ ms.prod: windows-client
                 <rs5:AllowedNamespace Name="Downloads"/>
                 <v3:AllowRemovableDrives/>
             </rs5:FileExplorerNamespaceRestrictions>
-            <win11:StartPins>
+            <v5:StartPins>
                 <![CDATA[{
                     "pinnedList":[
                         {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
@@ -45,7 +47,7 @@ ms.prod: windows-client
                         {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk"}
                     ]
                 }]]>
-            </win11:StartPins>
+            </v5:StartPins>
             <Taskbar ShowTaskbar="true"/>
         </Profile>
     </Profiles>

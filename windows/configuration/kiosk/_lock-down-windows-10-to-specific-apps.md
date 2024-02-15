@@ -331,68 +331,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups aren't supported
 
 <span id="add-xml" />
 
-#### [Preview] Global profile
 
-Global profile is available in Windows 1. If you want everyone who signs into a specific device to be assigned as an access user, even if there's no dedicated profile for that user. Alternatively, perhaps Assigned Access couldn't identify a profile for the user and you want to have a fallback profile. Global profile is designed for these scenarios.
-
-Usage is demonstrated below, by using the new XML namespace and specifying `GlobalProfile` from that namespace. When you configure `GlobalProfile`, a non-admin account logs in, if this user doesn't have a designated profile in Assigned Access, or Assigned Access fails to determine a profile for current user, a global profile is applied for the user.
-
-> [!NOTE]
-> 1. `GlobalProfile` can only be a multi-app profile.
-> 1. Only one `GlobalProfile` can be used in one `AssignedAccess` configuration XML.
-> 1. `GlobalProfile` can be used as the only config, or it can be used along with regular user or group config.
-
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:v2="https://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="https://schemas.microsoft.com/AssignedAccess/2020/config"
->
-    <Profiles>
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" v2:AutoLaunch="true" v2:AutoLaunchArguments="123"/>
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
-                </AllowedApps>
-            </AllAppsList>
-            <StartLayout>
-                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
-                      <LayoutOptions StartTileGroupCellWidth="6" />
-                      <DefaultLayoutOverride>
-                        <StartLayoutCollection>
-                          <defaultlayout:StartLayout GroupCellWidth="6">
-                            <start:Group Name="Life at a glance">
-                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowsLive.calendar" />
-                              <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
-                              <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
-                                   "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
-                                   "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only
-
-                                   see document https://learn.microsoft.com/windows/configuration/start-layout-xml-desktop
-                              -->
-                              <!-- for inbox desktop applications, a link file might already exist and can be used directly -->
-                              <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\Accessories\paint.lnk" />
-                              <!-- for 3rd party desktop application, place the link file under appropriate folder -->
-                              <start:DesktopApplicationTile Size="2x2" Column="4" Row="0" DesktopApplicationLinkPath="%AppData%\Microsoft\Windows\Start Menu\Programs\MyLOB.lnk" />
-                            </start:Group>
-                          </defaultlayout:StartLayout>
-                        </StartLayoutCollection>
-                      </DefaultLayoutOverride>
-                    </LayoutModificationTemplate>
-                ]]>
-            </StartLayout>
-            <Taskbar ShowTaskbar="true"/>
-        </Profile>
-    </Profiles>
-    <Configs>
-        <v3:GlobalProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-    </Configs>
-</AssignedAccessConfiguration>
-```
 
 ### Add XML file to provisioning package
 

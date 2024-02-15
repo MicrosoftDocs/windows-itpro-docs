@@ -14,13 +14,13 @@ ms.topic: how-to
 <?xml version="1.0" encoding="utf-8"?>
 <ShellLauncherConfiguration
 xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
-xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
+xmlns:rs5="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
     <Profiles>
         <DefaultProfile>
             <Shell Shell="%SystemRoot%\explorer.exe"/>
         </DefaultProfile>
         <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
-            <Shell Shell="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe --kiosk https://maps.heathrow.com --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2" v2:AppType="Desktop" v2:AllAppsFullScreen="true">
+            <Shell Shell="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe --kiosk https://maps.heathrow.com --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2" rs5:AppType="Desktop" rs5:AllAppsFullScreen="true">
                 <ReturnCodeActions>
                     <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
                     <ReturnCodeAction ReturnCode="-1" Action="RestartDevice"/>
@@ -55,8 +55,8 @@ xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
     Either don't use the node or leave it empty
 
     ```xml
-    <v2:FileExplorerNamespaceRestrictions>
-    </v2:FileExplorerNamespaceRestrictions>
+    <rs5:FileExplorerNamespaceRestrictions>
+    </rs5:FileExplorerNamespaceRestrictions>
     ```
     :::column-end:::
 :::row-end:::
@@ -66,9 +66,9 @@ xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
     :::column-end:::
     :::column span="3":::
     ```xml
-    <v2:FileExplorerNamespaceRestrictions>
-        <v2:AllowedNamespace Name="Downloads"/>
-    </v2:FileExplorerNamespaceRestrictions>
+    <rs5:FileExplorerNamespaceRestrictions>
+        <rs5:AllowedNamespace Name="Downloads"/>
+    </rs5:FileExplorerNamespaceRestrictions>
     ```
     :::column-end:::
 :::row-end:::
@@ -79,9 +79,9 @@ xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
     :::column-end:::
     :::column span="3":::
     ```xml
-    <v2:FileExplorerNamespaceRestrictions>
+    <rs5:FileExplorerNamespaceRestrictions>
         <v3:AllowRemovableDrives />
-    </v2:FileExplorerNamespaceRestrictions>
+    </rs5:FileExplorerNamespaceRestrictions>
     ```
     :::column-end:::
 :::row-end:::
@@ -92,10 +92,10 @@ xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
     :::column-end:::
     :::column span="3":::
     ```xml
-    <v2:FileExplorerNamespaceRestrictions>
-        <v2:AllowedNamespace Name="Downloads"/>
+    <rs5:FileExplorerNamespaceRestrictions>
+        <rs5:AllowedNamespace Name="Downloads"/>
         <v3:AllowRemovableDrives/>
-    </v2:FileExplorerNamespaceRestrictions>
+    </rs5:FileExplorerNamespaceRestrictions>
     ```
     :::column-end:::
 :::row-end:::
@@ -106,9 +106,9 @@ xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
     :::column-end:::
     :::column span="3":::
     ```xml
-    <v2:FileExplorerNamespaceRestrictions>
+    <rs5:FileExplorerNamespaceRestrictions>
         <v3:NoRestriction />
-    </v2:FileExplorerNamespaceRestrictions>
+    </rs5:FileExplorerNamespaceRestrictions>
     ```
     :::column-end:::
 :::row-end:::
