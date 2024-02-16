@@ -19,8 +19,8 @@ items:
   href: lock-screen/windows-spotlight.md
 - name: Cellular settings
   href: cellular/provisioning-apn.md
-- name: Kiosks and restricted user experience
-  href: kiosk/toc.yml
+- name: Kiosks and restricted user experiences
+  href: assigned-access/toc.yml
 - name: Multi-user and guest devices
   href: shared-pc/toc.yml
 - name: Use provisioning packages

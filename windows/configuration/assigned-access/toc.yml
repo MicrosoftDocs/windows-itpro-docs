@@ -1,6 +1,6 @@
 items:
 - name: Overview
-  href: kiosk-methods.md
+  href: index.md
 - name: Quickstarts
   items:
     - name: Configure a kiosk with Assigned Access
