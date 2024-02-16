@@ -34,7 +34,7 @@ summary: |
   - [Which ports does Delivery Optimization use?](#which-ports-does-delivery-optimization-use)
   - [What are the requirements if I use a proxy?](#what-are-the-requirements-if-i-use-a-proxy)
   - [What hostnames should I allow through my firewall to support Delivery Optimization?](#what-hostnames-should-i-allow-through-my-firewall-to-support-delivery-optimization)
-  - [How do I configure it to download content with Delivery Optimization?](#how-do-i-configure-it-to-download-content-with-)
+  - [My firewall requires IP addresses and can't process FQDNs. How do I configure it to download content with Delivery Optimization?How do I configure it to download content with Delivery Optimization?](#my-firewall-requires-ip-addresses-and-can-t-process-fqdns--how-do-i-configure-it-to-download-content-with-delivery-optimization)
   - [How does Delivery Optimization deal with congestion on the router from peer-to-peer activity on the LAN?](#how-does-delivery-optimization-deal-with-congestion-on-the-router-from-peer-to-peer-activity-on-the-lan)
   - [How does Delivery Optimization handle VPNs?](#how-does-delivery-optimization-handle-vpns)
   - [How does Delivery Optimization handle networks where a public IP address is used in place of a private IP address?](#how-does-delivery-optimization-handle-networks-where-a-public-ip-address-is-used-in-place-of-a-private-ip-address)
