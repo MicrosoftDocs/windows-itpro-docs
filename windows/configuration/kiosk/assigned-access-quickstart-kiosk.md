@@ -7,7 +7,7 @@ appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ---
 
-# Quickstart: Configure a kiosk experience with Assigned Access
+# Quickstart: Configure a kiosk with Assigned Access
 
 ## Prerequisites
 
@@ -19,15 +19,34 @@ appliesto:
 >- Windows Configuration Designer, if you want to configure the settings using a provisioning package
 >- Access to the [psexec tool](/sysinternals/downloads/psexec), if you want to test the configuration using Windows PowerShell
 
-## Configure a restricted user experience
-
-When using Settings:
-
-AppId: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Arguments: --no-first-run --kiosk https://maps.cltairport.com/ --kiosk-idle-timeout-minutes=5 --edge-kiosk-type=public-browsing
-
+## Configure a kiosk
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
+
+#### [:::image type="icon" source="../images/icons/settings.svg"::: **Settings**](#tab/settings)
+
+Here are the steps to configure a kiosk using the Settings app:
+
+1. Open the Settings app to view and configure a device as a kiosk. Go to **Settings > Accounts > Other Users**, or use the following shortcut:
+
+    > [!div class="nextstepaction"]
+    >
+    > [Other Users](ms-settings:otherusers)
+
+1. Under **Set up a kiosk**, select **Get Started**
+1. In the **Create an account** dialog, enter the account name and select **Next**
+    >[!NOTE]
+    >If there are any local standard user accounts already, the **Create an account** dialog offers the option to **Choose an existing account**
+
+1. Choose the application to run when the kiosk account signs in. Only apps that can run above the lock screen will be available in the list of apps to choose from. For more information, see [Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md). If you select **Microsoft Edge** as the kiosk app, you configure the following options:
+
+    - Whether Microsoft Edge should display your website full-screen (digital sign) or with some browser controls available (public browser)
+    - Which URL should be open when the kiosk accounts signs in
+    - When Microsoft Edge should restart after a period of inactivity (if you select to run as a public browser)
+
+    :::image type="content" source="images/settings-choose-app.png" alt-text="Screenshot of the dialog box asking to select an app.":::
+
+1. Select **Close**
 
 #### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
@@ -70,7 +89,9 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 ## User experience
 
-After the settings are applied, reboot the device. A local user account named `Airport Kiosk` is automatically signed in, opening Microsoft Edge with an airport map.
+If you used the Settings app to configure the kiosk, sign out and sign in with the account you chose to use as a kiosk. The kiosk application is automatically launched.
+
+If you used the other options to configure the kiosk, reboot the device. A local user account named `Airport Kiosk` is automatically signed in, opening Microsoft Edge with an airport map.
 
 ## Next steps
 

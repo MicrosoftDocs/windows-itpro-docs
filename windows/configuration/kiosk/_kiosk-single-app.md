@@ -77,44 +77,6 @@ When your kiosk is a local device that isn't managed by Active Directory or Micr
 
   ![Screenshot of automatic sign-in setting.](images/auto-signin.png)
 
-### Windows 10 version 1809+ / Windows 11
-
-When you set up a kiosk (also known as *assigned access*) in **Settings** for Windows client, you create the kiosk user account at the same time. To set up assigned access in PC settings:
-
-Open the **Settings** app > **Accounts**. Select **Other users** or **Family and other users**.
-
-1. Select **Set up a kiosk > Assigned access**, and then select **Get started**.
-
-1. Enter a name for the new account.
-
-    >[!NOTE]
-    >If there are any local standard user accounts on the device already, the **Create an account** page will offer the option to **Choose an existing account**.
-
-1. Choose the app that will run when the kiosk account signs in. Only apps that can run above the lock screen will be available in the list of apps to choose from. For more information, see [Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md). If you select **Microsoft Edge** as the kiosk app, you configure the following options:
-
-    - Whether Microsoft Edge should display your website full-screen (digital sign) or with some browser controls available (public browser)
-    - Which URL should be displayed when the kiosk accounts signs in
-    - When Microsoft Edge should restart after a period of inactivity (if you select to run as a public browser)
-
-1. Select **Close**.
-
-To remove assigned access, select the account tile on the **Set up a kiosk** page, and then select **Remove kiosk**.
-
-### Windows 10 version 1803 and earlier
-
-When you set up a kiosk (also known as *assigned access*) in **Settings** for Windows 10 version 1803 and earlier, you must select an existing local standard user account. [Learn how to create a local standard user account.](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10)
-
-![The Set up assigned access page in Settings.](images/kiosk-settings.png)
-
-To set up assigned access in PC settings:
-
-1. Go to **Start** > **Settings** > **Accounts** > **Other people**.
-1. Select **Set up assigned access**.
-1. Choose an account.
-1. Choose an app. Only apps that can run above the lock screen will be available in the list of apps to choose from. For more information, see [Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md).
-1. Close **Settings** - your choices are saved automatically, and will be applied the next time that user account signs in.
-To remove assigned access, choose **Turn off assigned access and sign out of the selected account**.
-
 ## Set up a kiosk using Windows PowerShell
 
 App type:

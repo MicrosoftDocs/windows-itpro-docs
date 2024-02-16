@@ -23,8 +23,6 @@ items:
       href: create-shell-launcher-configuration.md
     - name: Find the AUMID of an installed app
       href: find-aumid.md
-    - name: Use MDM Bridge WMI Provider to create a Windows client kiosk
-      href: kiosk-mdm-bridge.md
     - name: Use Shell Launcher to create a Windows client kiosk
       href: kiosk-shelllauncher.md
 - name: Troubleshoot
