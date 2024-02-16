@@ -49,6 +49,8 @@ Enhanced Phishing Protection can be configured via Microsoft Intune, Group Polic
 
 Follow these instructions to configure your devices using either Microsoft Intune, GPO or CSP.
 
+Enhanced Phishing Protection allows enterprises to add their custom identity provider sign-in URL as a recognized URL so that Enhanced Phishing Protection does not consider Microsoft passwords typed into an internal identity provider as unknown or password reuse. Without knowledge of an enterprise’s custom IDP URL, SmartScreen may not have enough information about the URL and, if UX warning dialogs are configured for Enhanced Phishing Protection, may show an unsafe password usage dialog to the user entering their Microsoft password into the URL.
+To add your enterprise's custom sign-in URL to Enhanced Phishing Protection, configure the EnableWebSignIn policy described here: [Authentication Policy CSP - Windows Client Management | Microsoft Learn](/windows/client-management/mdm/policy-csp-authentication"https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-authentication#enablewebsignin"). Learn more about Web Sign-in for Windows here: [Web sign-in for Windows - Windows Security | Microsoft Learn](/windows/security/identity-protection/web-sign-in/?tabs=intune"https://learn.microsoft.com/en-us/windows/security/identity-protection/web-sign-in/?tabs=intune")_._
 #### [:::image type="icon" source="../../../images/icons/intune.svg"::: **Intune**](#tab/intune)
 
 To configure devices using Microsoft Intune, create a [**Settings catalog** policy][MEM-2], and use the settings listed under the category **`SmartScreen > Enhanced Phishing Protection`**:
