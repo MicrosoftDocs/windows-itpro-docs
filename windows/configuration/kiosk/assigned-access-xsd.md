@@ -210,7 +210,7 @@ The following is the XSD for Assigned Access in Windows 11:
 </xs:schema>
 ```
 
-## Windows 11 additions
+## Windows 11, version 22H2 additions
 
 The following is the XSD for Assigned Access features added in Windows 11:
 
@@ -230,7 +230,7 @@ The following is the XSD for Assigned Access features added in Windows 11:
 </xs:schema>
 ```
 
-## Windows 10, version 21H2 additions
+## Windows 11, version 21H2 additions
 
 The following is the XSD for Assigned Access features added in Windows 10, version 21H2:
 

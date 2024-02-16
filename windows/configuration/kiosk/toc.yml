@@ -15,12 +15,6 @@ items:
       href: kiosk-prepare.md
     - name: Guidelines for choosing an app for assigned access
       href: guidelines-for-assigned-access-app.md
-- name: Deployment guides
-  items:
-  - name: Configure digital signs
-    href: setup-digital-signage.md
-  - name: Configure a kiosk
-    href: kiosk-single-app.md
 - name: How-to guides
   items:
     - name: Create an Assigned Access configuration file
@@ -55,3 +49,7 @@ items:
       href: _lock-down-windows-10-to-specific-apps.md
     - name: _lock-down-windows-11-to-specific-apps
       href: _lock-down-windows-11-to-specific-apps.md
+    - name: _setup-digital-signage
+      href: _setup-digital-signage.md
+    - name: _kiosk-single-app
+      href: _kiosk-single-app.md
