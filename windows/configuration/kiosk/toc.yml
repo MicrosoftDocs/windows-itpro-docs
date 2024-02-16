@@ -35,21 +35,11 @@ items:
       href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
 - name: Reference
   items:
+    - name: Assigned Access CSP
+      href: /windows/client-management/mdm/assignedaccess-csp
     - name: Assigned Access XSD
       href: assigned-access-xsd.md
     - name: Shell Launcher XSD
       href: shell-launcher-xsd.md
     - name: Policies enforced on kiosk devices
       href: kiosk-policies.md
-    - name: Assigned access XML examples
-      href: assigned-access-examples.md
-- name: On the way to 🪦
-  items:
-    - name: _lock-down-windows-10-to-specific-apps
-      href: _lock-down-windows-10-to-specific-apps.md
-    - name: _lock-down-windows-11-to-specific-apps
-      href: _lock-down-windows-11-to-specific-apps.md
-    - name: _setup-digital-signage
-      href: _setup-digital-signage.md
-    - name: _kiosk-single-app
-      href: _kiosk-single-app.md
