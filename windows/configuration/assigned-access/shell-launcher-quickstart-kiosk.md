@@ -7,7 +7,11 @@ ms.date: 02/05/2024
 
 # Quickstart: configure a kiosk experience with Shell Launcher
 
-This quickstart provides the information to configure a kiosk experience with Shell Launcher, using Windows Configuration Designer, Microsoft Intune, or PowerShell.
+When you configure Windows as a *kisok*, you assign a single application to run above the lock screen. This is useful for public-facing scenarios, such as a digital sign or a public browser.
+
+This quickstart provides practical examples of how to configure a kiosk experience on Windows with Shell Launcher. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, and PowerShell. While different solutions are used, the configuration settings and results are the same.
+
+The examples can be modified to fit your specific requirements. For example, you can change the app used, the URL specified when opening Microsoft Edge, or change the name of the user that automatically signs in to Windows.
 
 ## Prerequisites
 
