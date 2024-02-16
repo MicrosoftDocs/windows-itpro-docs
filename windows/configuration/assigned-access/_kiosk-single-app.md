@@ -266,12 +266,6 @@ Account type:
 - Local standard user
 - Microsoft Entra ID
 
-Microsoft Intune and other MDM services enable kiosk configuration through the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp). Assigned Access has a `KioskModeApp` setting. In the `KioskModeApp` setting, you enter the user account name and the [AUMID](/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) for the app to run in kiosk mode.
-
->[!TIP]
->A ShellLauncher node has been added to the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp).
-
-To configure a kiosk in Microsoft Intune, see [Windows client and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](/intune/kiosk-settings). For other MDM services, see the documentation for your provider.
 
 ## Sign out of assigned access
 

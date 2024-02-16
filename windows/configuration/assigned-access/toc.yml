@@ -39,5 +39,5 @@ items:
       href: assigned-access-xsd.md
     - name: Shell Launcher XSD
       href: shell-launcher-xsd.md
-    - name: Policies enforced on kiosk devices
+    - name: Policies enforced by Assigned Access
       href: kiosk-policies.md

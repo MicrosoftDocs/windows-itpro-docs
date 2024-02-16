@@ -3,11 +3,15 @@ title: "Quickstart: Configure a kiosk experience with Assigned Access"
 description: Learn how to configure a kiosk experience with Assigned Access, using Windows Configuration Designer, Microsoft Intune, PowerShell or GPO.
 ms.topic: quickstart
 ms.date: 02/05/2024
-appliesto:
-- ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ---
 
 # Quickstart: Configure a kiosk with Assigned Access
+
+When you configure Windows as a *kiok*, you assign a single application to run above the lock screen. This is useful for public-facing scenarios, such as a digital sign or a public browser.
+
+This quickstart provides practical examples of how to configure a kiosk experience on Windows. The examples describe the steps using the Settings app, a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
+
+The examples can be modified to fit your specific requirements. For example, you can change the app used, the URL specified when opening Microsoft Edge, or change the name of the user that automatically signs in to Windows.
 
 ## Prerequisites
 
@@ -44,7 +48,7 @@ Here are the steps to configure a kiosk using the Settings app:
     - Which URL should be open when the kiosk accounts signs in
     - When Microsoft Edge should restart after a period of inactivity (if you select to run as a public browser)
 
-    :::image type="content" source="images/settings-choose-app.png" alt-text="Screenshot of the dialog box asking to select an app.":::
+    :::image type="content" source="images/settings-choose-app.png" alt-text="Screenshot of the dialog box asking to select an app." border="false":::
 
 1. Select **Close**
 
@@ -89,16 +93,14 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 ## User experience
 
-If you used the Settings app to configure the kiosk, sign out and sign in with the account you chose to use as a kiosk. The kiosk application is automatically launched.
-
-If you used the other options to configure the kiosk, reboot the device. A local user account named `Airport Kiosk` is automatically signed in, opening Microsoft Edge with an airport map.
+After the settings are applied, reboot the device. A local user account is automatically signed in, opening Microsoft Edge with an airport map.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Learn more how to configure Windows to execute as a restricted user experience:
+> Learn more how to configure Windows to run a single app or multiple apps with Assigned Access:
 >
-> [Configure a restricted user experience](lock-down-windows-11-to-specific-apps.md)
+> [Create an Assigned Access configuration file](create-assigned-access-configuration.md)
 
 <!--links-->
 

@@ -4,14 +4,14 @@ description: Learn how to configure a restricted user experience using Windows C
 ms.topic: quickstart
 ms.date: 02/05/2024
 appliesto:
-- ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+zone_pivot_groups: windows-versions-11-10
 ---
 
 # Quickstart: Configure a restricted user experience with Assigned Access
 
-With a *restricted user experience*, you can control the applications allowed in a locked down Windows desktop.
+With a *restricted user experience*, you can configure Windows to run a limited set of applications in a locked down desktop. This is useful for scenarios where you want to provide a limited set of apps to a user, such as a library catalog, a school device, or a museum guide.
 
-This quickstart provides practical examples of how to configure a restricted user experience on Windows 11. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
+This quickstart provides practical examples of how to configure a restricted user experience on Windows. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
 
 The examples can be modified to fit your specific requirements. For example, you can add or remove applications from the list of allowed apps, or change the name of the user that automatically signs in to Windows.
 
@@ -20,7 +20,7 @@ The examples can be modified to fit your specific requirements. For example, you
 >[!div class="checklist"]
 >Here's a list of requirements to complete this quickstart:
 >
->- A Windows 11 device
+>- A Windows device
 >- Microsoft Intune, or a non-Microsoft MDM solution, if you want to configure the settings using MDM
 >- Windows Configuration Designer, if you want to configure the settings using a provisioning package
 >- Access to the [psexec tool](/sysinternals/downloads/psexec), if you want to test the configuration using Windows PowerShell
@@ -70,16 +70,24 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 ## User experience
 
-After the settings are applied, reboot the device. A user account named `Library Kiosk` is automatically signed in, with access to a limited set of applications, which are pinned to the Start menu.
+After the settings are applied, reboot the device. A local user account is automatically signed in, with access to a limited set of applications, which are pinned to the Start menu.
 
-:::image type="content" source="images/quickstart-restricted-experience.png" alt-text="Screenshot of the Windows desktop used for the quickstart." border="false":::
+::: zone pivot="windows-11"
+:::image type="content" source="images/restricted-user-experience-windows-11.png" alt-text="Screenshot of the Windows 11 desktop used for the quickstart." border="false":::
+
+::: zone-end
+
+::: zone pivot="windows-10"
+:::image type="content" source="images/restricted-user-experience-windows-10.png" alt-text="Screenshot of the Windows 10 desktop used for the quickstart." border="false":::
+
+::: zone-end
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Learn more how to configure Windows to execute as a restricted user experience:
+> Learn more how to configure Windows to run a single app or multiple apps with Assigned Access:
 >
-> [Configure a restricted user experience](lock-down-windows-11-to-specific-apps.md)
+> [Create an Assigned Access configuration file](create-assigned-access-configuration.md)
 
 <!--links-->
 
