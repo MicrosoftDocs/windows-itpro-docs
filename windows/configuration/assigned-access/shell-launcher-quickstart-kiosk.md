@@ -3,8 +3,6 @@ title: "Quickstart: configure a kiosk experience with Shell Launcher"
 description: Learn how to configure a kiosk experience with Shell Launcher, using Windows Configuration Designer, Microsoft Intune, or PowerShell.
 ms.topic: quickstart
 ms.date: 02/05/2024
-appliesto:
-- ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ---
 
 # Quickstart: configure a kiosk experience with Shell Launcher
