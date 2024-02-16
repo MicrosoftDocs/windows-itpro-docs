@@ -13,9 +13,7 @@ ms.prod: windows-client
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
-    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
+    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config">
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
             <AllAppsList>
