@@ -16,13 +16,40 @@ metadata:
     - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
     - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
     - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>	
-  ms.date: 07/31/2023
+  ms.date: 02/16/2024
 title: Delivery Optimization Frequently Asked Questions
 summary: |
   Frequently Asked Questions for Delivery Optimization
+
+  **General questions**:
+
+ - [What Delivery Optimization settings are available?](#what-delivery-optimization-settings-are-available) 
+ - [Does Delivery Optimization work with WSUS?](#does-delivery-optimization-work-with-wsus)
+ - [Does Delivery Optimization use multicast?](#does-delivery-optimization-use-multicast)
+ - [How are downloads initiated by Delivery Optimization?](#how-are-downloads-initiated-by-delivery-optimization)
+ - [How do I turn off Delivery Optimization?](#how-do-i-turn-off-delivery-optimization)
+
+  **Network environment related questions**:
+ 
+ - [Which ports does Delivery Optimization use?](#which-ports-does-delivery-optimization-use)
+ - [What are the requirements if I use a proxy?](#what-are-the-requirements-if-i-use-a-proxy)
+ - [What hostnames should I allow through my firewall to support Delivery Optimization?](#what-hostnames-should-i-allow-through-my-firewall-to-support-delivery-optimization)
+ - [My firewall requires IP addresses and can't process FQDNs. How do I configure it to download content with Delivery Optimization?](#my-firewall-requires-ip-addresses-and-cant-process-fqdns-how-do-i-configure-it-to-download-content-with-delivery-optimization)
+ - [How does Delivery Optimization deal with congestion on the router from peer-to-peer activity on the LAN?](#how-does-delivery-optimization-deal-with-congestion-on-the-router-from-peer-to-peer-activity-on-the-lan)
+ - [How does Delivery Optimization handle VPNs?](#how-does-delivery-optimization-handle-vpns)
+ - [How does Delivery Optimization handle networks where a public IP address is used in place of a private IP address?](#how-does-delivery-optimization-handle-networks-where-a-public-ip-address-is-used-in-place-of-a-private-ip-address)
+ - [What is the recommended configuration for Delivery Optimization used with cloud proxies (for example, Zscaler)?](#what-is-the-recommended-configuration-for-delivery-optimization-used-with-cloud-proxies-for-example-zscaler)
+ 
+  **Downloading content related questions**: 
+
+ - [Delivery Optimization is downloading Windows content on my devices directly from an IP Address, is it expected?](#delivery-optimization-is-downloading-windows-content-on-my-devices-directly-from-an-ip-address-is-it-expected)
+ - [How does Delivery Optimization determine which content is available for peering?](#how-does-delivery-optimization-determine-which-content-is-available-for-peering)
+
+ ** Device resources questions**:
+ - [Delivery Optimization is using device resources and I can't tell why?](#delivery-optimization-is-using-device-resources-and-i-cant-tell-why)
   
 
-sections:
+sections: 
   - name: Ignored
     questions:
       - question: Does Delivery Optimization work with WSUS?
