@@ -177,7 +177,7 @@ Once Windows Setup finishes, the user is automatically signed in and the device 
 Open the **Accounts** > **Access work or school** pane in the **Settings** app by selecting the following link:
 
 > [!div class="nextstepaction"]
-> [Activation](ms-settings:workplace)
+> [Access work or school](ms-settings:workplace)
 
 or
 
@@ -359,6 +359,8 @@ A device is healthy when both the subscription and activation are active. If the
   slmgr /dlv
   ```
 
+For more information on **Slmgr**, see [Slmgr.vbs options for obtaining volume activation information](/windows-server/get-started/activation-slmgr-vbs-options).
+
 ## Troubleshoot the user experience
 
 In some instances, users might experience problems with activation of the Windows Enterprise E3 or E5 subscription. The most common problems that users might experience are the following issues:
@@ -482,10 +484,6 @@ Use the following guides to verify each one of these requirements:
 
   For more information, see [Assigning licenses to users](#assigning-licenses-to-users).
 
-### Delay in the activation of Enterprise license of Windows
-
-There might be a delay in the activation of the Enterprise license in Windows. This delay is by design. Windows uses a built-in cache when determining upgrade eligibility. This behavior includes processing responses that indicate that the device isn't eligible for an upgrade. It can take up to four days after a qualifying purchase before the upgrade eligibility is enabled and the cache expires.
-
 ## Known issues
 
 - If a device isn't able to connect to Windows Update, it can lose activation status or be blocked from upgrading to Windows Enterprise. Make sure that Windows Update isn't blocked on the device:
@@ -519,6 +517,10 @@ There might be a delay in the activation of the Enterprise license in Windows. T
     > [!NOTE]
     >
     > Make sure to first check the group policy of **Do not connect to any Windows Update Internet locations**. If the policy is **Enabled**, then this registry key will eventually be reset back to `1` even after it's manually set to `0` via `reg.exe`. Setting the policy of **Do not connect to any Windows Update Internet locations** to **Disabled** or **Not Configured** will make sure the registry value remains as `0`.
+
+- Delay in the activation of Enterprise license of Windows.
+
+  There might be a delay in the activation of the Enterprise license in Windows. This delay is by design. Windows uses a built-in cache when determining upgrade eligibility. This behavior includes processing responses that indicate that the device isn't eligible for an upgrade. It can take up to four days after a qualifying purchase before the upgrade eligibility is enabled and the cache expires.
 
 ## Virtual Desktop Access (VDA)
 
