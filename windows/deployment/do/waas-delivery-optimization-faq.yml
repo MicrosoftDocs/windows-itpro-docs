@@ -73,6 +73,7 @@ sections:
           > Disabling Delivery Optimization won't prevent content from downloading to your devices. If you're looking to pause updates, you need to set policies for the relevant components such as Windows Update, Windows Store or Microsoft Edge browser.  If you're looking to reduce the load on your network, look into using Delivery Optimization Peer-to-Peer, Microsoft Connected Cache or apply the [network throttling policies](waas-delivery-optimization-reference.md#maximum-download-bandwidth) available for Delivery Optimization.
   
   - name: Network related configuration questions
+    questions:
       - question: Which ports does Delivery Optimization use?
         answer: | 
           Delivery Optimization listens on port 7680 for requests from other peers by using TCP/IP. The service registers and opens this port on the device. The port must be set to accept inbound traffic through your firewall. If you don't allow inbound traffic over port 7680, you can't use the peer-to-peer functionality of Delivery Optimization. However, devices can still successfully download by using HTTP or HTTPS traffic over port 80 (such as for default Windows Update data).
@@ -115,6 +116,7 @@ sections:
           If allowing direct Internet access isn't an option, try using Group Download Mode '2' to define the peering group. [Learn more](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) about using Group Download mode.
           
     - name: Peer-to-Peer related questions
+      questions:
       - question: How does Delivery Optimization determine which content is available for peering?
         answer: |
           Delivery Optimization uses the cache content on the device to determine what's available for peering. For the upload source device, there's a limited number (4) of slots for cached content that's available for peering at a given time. Delivery Optimization contains logic that rotates the cached content in those slots.
@@ -157,7 +159,7 @@ sections:
           > If you use public IP addresses instead of private in LAN mode, the bytes downloaded from or uploaded to LAN peers with public IP addresses might be reported as coming from Internet peers.
 
     - name: Device resources questions
-
+      questions:
       - question: Delivery Optimization is using device resources and I can't tell why?
         answer: |
           Delivery Optimization is used by most content providers from Microsoft. A complete list can be found [here](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization). Often customers may not realize the vast application of Delivery Optimization and how it's used across different apps. Content providers have the option to run downloads in the foreground or background. It's good to check any apps running in the background to see what is running. Also note that depending on the app, closing the app may not necessarily stop the download.
