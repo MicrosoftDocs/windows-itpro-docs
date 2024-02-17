@@ -50,26 +50,19 @@ summary: |
   - [Delivery Optimization is using device resources and I can't tell why?](#delivery-optimization-is-using-device-resources-and-i-can-t-tell-why)
   
 sections: 
-  - name: Ignored
+  - name: General questions
     questions:
-
-        <!--- General questions -->
-
       - question: What Delivery Optimization settings are available?
         answer: |
           There are many different Delivery Optimization [settings](waas-delivery-optimization-reference.md) available. These settings allow you to effectively manage how Delivery Optimization is used within your environment with control s on bandwidth, time of day, etc. 
-
       - question: Does Delivery Optimization work with WSUS?
         answer: Yes. Devices obtain the update payloads from the WSUS server, but must also have an internet connection as they communicate with the Delivery Optimization cloud service for coordination.
-            
       - question: How are downloads initiated by Delivery Optimization?
         answer: |
           Delivery Optimization only starts when an application or service that's integrated with Delivery Optimization starts a download. For example, the Microsoft Edge browser. For more information about Delivery Optimization callers, see [Types of download content supported by Delivery Optimization](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization).
-      
       - question: Delivery Optimization is downloading Windows content on my devices directly from an IP Address, is it expected? 
         answer: | 
           When Delivery Optimization downloads from a [Microsoft Connected Cache](waas-microsoft-connected-cache.md) server that is hosted by your Internet Service Provider, the download will be pulled directly from the IP Address of that server. If the Microsoft Connected cache isn't available, the download will fall back seamlessly to the CDN instead. Delivery Optimization Peers are used in parallel if available. 
-
       - question: How do I turn off Delivery Optimization?
         answer: |
           Delivery Optimization is an HTTP downloader used by most content providers from Microsoft. When a device is configured to use Delivery Optimization peering (on by default), it does so with the HTTP downloader capabilities to optimize bandwidth usage. 
@@ -78,9 +71,8 @@ sections:
 
           > [!NOTE]
           > Disabling Delivery Optimization won't prevent content from downloading to your devices. If you're looking to pause updates, you need to set policies for the relevant components such as Windows Update, Windows Store or Microsoft Edge browser.  If you're looking to reduce the load on your network, look into using Delivery Optimization Peer-to-Peer, Microsoft Connected Cache or apply the [network throttling policies](waas-delivery-optimization-reference.md#maximum-download-bandwidth) available for Delivery Optimization.
-      
-        <!--- Network related configuration questions -->
-
+  
+  - name: Network related configuration questions
       - question: Which ports does Delivery Optimization use?
         answer: | 
           Delivery Optimization listens on port 7680 for requests from other peers by using TCP/IP. The service registers and opens this port on the device. The port must be set to accept inbound traffic through your firewall. If you don't allow inbound traffic over port 7680, you can't use the peer-to-peer functionality of Delivery Optimization. However, devices can still successfully download by using HTTP or HTTPS traffic over port 80 (such as for default Windows Update data).
@@ -88,10 +80,8 @@ sections:
           Delivery Optimization uses Teredo to create peer groups, which include devices across NATs (or any form of internal subnet that uses gateways or firewalls between subnets). To enable this scenario, you must allow inbound TCP/IP traffic over port 3544. Look for a "NAT traversal" setting in your firewall to set this up.
 
           Delivery Optimization also communicates with its cloud service by using HTTP/HTTPS over port 80.
-
       - question: What are the requirements if I use a proxy?
         answer: For Delivery Optimization to successfully use the proxy, you should set up the proxy by using Windows proxy settings or Internet Explorer proxy settings. For details see [Using a proxy with Delivery Optimization](../do/delivery-optimization-proxy.md). Most content downloaded with Delivery Optimization uses byte range requests. Make sure your proxy allows byte range requests. For more information, see [Proxy requirements for Windows Update](/windows/deployment/update/windows-update-troubleshooting).
-
       - question: What hostnames should I allow through my firewall to support Delivery Optimization?
         answer: | 
           **For communication between clients and the Delivery Optimization cloud service**:
@@ -111,12 +101,10 @@ sections:
           - `win1910.ipv6.microsoft.com`
 
           For more information, see [Endpoints for Delivery Optimization and Microsoft Connected Cache](../do/delivery-optimization-endpoints.md) for a list of all content endpoints needed.
-
       - question: My firewall requires IP addresses and can't process FQDNs. How do I configure it to download content with Delivery Optimization?
         answer: | 
           Microsoft content, such as Windows updates, are hosted and delivered globally via Content Delivery Networks (CDNs) and [Microsoft Connected Cache](waas-microsoft-connected-cache.md) (MCC) servers, which are hosted within Internet Service Provider (ISP) networks. 
-          The network of CDNs and MCCs allows Microsoft to reach the scale required to meet the demand of the Windows user base. Given this delivery infrastructure changes dynamically, providing an exhaustive list of IPs and keeping it up to date isn't feasible. 
-      
+          The network of CDNs and MCCs allows Microsoft to reach the scale required to meet the demand of the Windows user base. Given this delivery infrastructure changes dynamically, providing an exhaustive list of IPs and keeping it up to date isn't feasible.  
       - question: What is the recommended configuration for Delivery Optimization used with cloud proxies?
         answer: |
           The recommended configuration for Delivery Optimization Peer-to-Peer to work most efficiently along with cloud proxy solutions (for example, Zscaler) is to allow traffic to the Delivery Optimization services to go directly to the internet and not through the cloud proxy.
@@ -126,19 +114,15 @@ sections:
 
           If allowing direct Internet access isn't an option, try using Group Download Mode '2' to define the peering group. [Learn more](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) about using Group Download mode.
           
-      <!-- Peer-to-Peer related questions -->
-
+    - name: Peer-to-Peer related questions
       - question: How does Delivery Optimization determine which content is available for peering?
         answer: |
           Delivery Optimization uses the cache content on the device to determine what's available for peering. For the upload source device, there's a limited number (4) of slots for cached content that's available for peering at a given time. Delivery Optimization contains logic that rotates the cached content in those slots.
-      
       - question: Does Delivery Optimization use multicast?
-        answer: No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.
-          
+        answer: No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.    
       - question: How does Delivery Optimization deal with congestion on the router from peer-to-peer activity on the LAN?
         answer: Starting in Windows 10, version 1903, Delivery Optimization uses LEDBAT to relieve such congestion. For more information, see this post on the [Networking Blog](https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-Transport-converges-on-two-Congestion-Providers-Cubic/ba-p/339819).
-   
-   - question: How does Delivery Optimization handle VPNs?
+      - question: How does Delivery Optimization handle VPNs?
         answer: |
           Delivery Optimization attempts to identify VPNs by checking the network adapter type and details. A connection is treated as a VPN if the adapter description contains certain keywords, such as "VPN" or "secure."
 
@@ -165,7 +149,6 @@ sections:
           - `https://tsfe.trafficshaping.dsp.mp.microsoft.com`
 
           For more information about remote work if you're using Configuration Manager, see this post on the [Configuration Manager blog](https://techcommunity.microsoft.com/t5/configuration-manager-blog/managing-patch-tuesday-with-configuration-manager-in-a-remote/ba-p/1269444).
-
       - question: How does Delivery Optimization handle networks where a public IP address is used in place of a private IP address?
         answer: |
           Starting with Windows 10, version 1903 or later, Delivery Optimization no longer restricts connections between LAN peers to those using private IP addresses. If you use public IP addresses instead of private IP addresses, you can use Delivery Optimization in LAN mode.
@@ -173,7 +156,7 @@ sections:
           > [!NOTE]
           > If you use public IP addresses instead of private in LAN mode, the bytes downloaded from or uploaded to LAN peers with public IP addresses might be reported as coming from Internet peers.
 
-      <!-- Device resources questions -->
+    - name: Device resources questions
 
       - question: Delivery Optimization is using device resources and I can't tell why?
         answer: |
