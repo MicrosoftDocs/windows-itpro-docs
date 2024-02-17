@@ -117,15 +117,15 @@ sections:
           
     - name: Peer-to-Peer related questions
       questions:
-      - question: How does Delivery Optimization determine which content is available for peering?
-        answer: |
+        - question: How does Delivery Optimization determine which content is available for peering?
+          answer: |
           Delivery Optimization uses the cache content on the device to determine what's available for peering. For the upload source device, there's a limited number (4) of slots for cached content that's available for peering at a given time. Delivery Optimization contains logic that rotates the cached content in those slots.
-      - question: Does Delivery Optimization use multicast?
-        answer: No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.    
-      - question: How does Delivery Optimization deal with congestion on the router from peer-to-peer activity on the LAN?
-        answer: Starting in Windows 10, version 1903, Delivery Optimization uses LEDBAT to relieve such congestion. For more information, see this post on the [Networking Blog](https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-Transport-converges-on-two-Congestion-Providers-Cubic/ba-p/339819).
-      - question: How does Delivery Optimization handle VPNs?
-        answer: |
+        - question: Does Delivery Optimization use multicast?
+          answer: No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.    
+        - question: How does Delivery Optimization deal with congestion on the router from peer-to-peer activity on the LAN?
+          answer: Starting in Windows 10, version 1903, Delivery Optimization uses LEDBAT to relieve such congestion. For more information, see this post on the [Networking Blog](https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-Transport-converges-on-two-Congestion-Providers-Cubic/ba-p/339819).
+        - question: How does Delivery Optimization handle VPNs?
+          answer: |
           Delivery Optimization attempts to identify VPNs by checking the network adapter type and details. A connection is treated as a VPN if the adapter description contains certain keywords, such as "VPN" or "secure."
 
           If the connection is identified as a VPN, Delivery Optimization suspends uploads to other peers. However, you can allow uploads over a VPN by using the [Enable Peer Caching while the device connects via VPN](../do/waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy.
@@ -151,8 +151,8 @@ sections:
           - `https://tsfe.trafficshaping.dsp.mp.microsoft.com`
 
           For more information about remote work if you're using Configuration Manager, see this post on the [Configuration Manager blog](https://techcommunity.microsoft.com/t5/configuration-manager-blog/managing-patch-tuesday-with-configuration-manager-in-a-remote/ba-p/1269444).
-      - question: How does Delivery Optimization handle networks where a public IP address is used in place of a private IP address?
-        answer: |
+        - question: How does Delivery Optimization handle networks where a public IP address is used in place of a private IP address?
+          answer: |
           Starting with Windows 10, version 1903 or later, Delivery Optimization no longer restricts connections between LAN peers to those using private IP addresses. If you use public IP addresses instead of private IP addresses, you can use Delivery Optimization in LAN mode.
 
           > [!NOTE]
@@ -160,6 +160,6 @@ sections:
 
     - name: Device resources questions
       questions:
-      - question: Delivery Optimization is using device resources and I can't tell why?
-        answer: |
+        - question: Delivery Optimization is using device resources and I can't tell why?
+          answer: |
           Delivery Optimization is used by most content providers from Microsoft. A complete list can be found [here](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization). Often customers may not realize the vast application of Delivery Optimization and how it's used across different apps. Content providers have the option to run downloads in the foreground or background. It's good to check any apps running in the background to see what is running. Also note that depending on the app, closing the app may not necessarily stop the download.
