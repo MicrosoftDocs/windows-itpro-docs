@@ -54,7 +54,7 @@ sections:
     questions:
       - question: What Delivery Optimization settings are available?
         answer: |
-          There are many different Delivery Optimization [settings](waas-delivery-optimization-reference.md) available. These settings allow you to effectively manage how Delivery Optimization is used within your environment with control s on bandwidth, time of day, etc. 
+          There are many different Delivery Optimization [settings](waas-delivery-optimization-reference.md) available. These settings allow you to effectively manage how Delivery Optimization is used within your environment with controls on bandwidth, time of day, etc. 
       - question: Does Delivery Optimization work with WSUS?
         answer: Yes. Devices obtain the update payloads from the WSUS server, but must also have an internet connection as they communicate with the Delivery Optimization cloud service for coordination.
       - question: How are downloads initiated by Delivery Optimization?
