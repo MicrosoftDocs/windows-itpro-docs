@@ -60,9 +60,9 @@ sections:
       - question: How are downloads initiated by Delivery Optimization?
         answer: |
           Delivery Optimization only starts when an application or service that's integrated with Delivery Optimization starts a download. For example, the Microsoft Edge browser. For more information about Delivery Optimization callers, see [Types of download content supported by Delivery Optimization](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization).
-      - question: Delivery Optimization is downloading Windows content on my devices directly from an IP Address, is it expected? 
+      - question: Delivery Optimization is downloading Windows content on my devices directly from an IP address, is it expected? 
         answer: | 
-          When Delivery Optimization downloads from a [Microsoft Connected Cache](waas-microsoft-connected-cache.md) server that is hosted by your Internet Service Provider, the download will be pulled directly from the IP Address of that server. If the Microsoft Connected cache isn't available, the download will fall back seamlessly to the CDN instead. Delivery Optimization Peers are used in parallel if available. 
+          When Delivery Optimization downloads from a [Microsoft Connected Cache](waas-microsoft-connected-cache.md) server that is hosted by your internet service provider, the download will be pulled directly from the IP address of that server. If the Microsoft Connected cache isn't available, the download will fall back seamlessly to the CDN instead. Delivery Optimization Peers are used in parallel if available. 
       - question: How do I turn off Delivery Optimization?
         answer: |
           Delivery Optimization is an HTTP downloader used by most content providers from Microsoft. When a device is configured to use Delivery Optimization peering (on by default), it does so with the HTTP downloader capabilities to optimize bandwidth usage. 
@@ -82,7 +82,8 @@ sections:
 
           Delivery Optimization also communicates with its cloud service by using HTTP/HTTPS over port 80.
       - question: What are the requirements if I use a proxy?
-        answer: For Delivery Optimization to successfully use the proxy, you should set up the proxy by using Windows proxy settings or Internet Explorer proxy settings. For details see [Using a proxy with Delivery Optimization](../do/delivery-optimization-proxy.md). Most content downloaded with Delivery Optimization uses byte range requests. Make sure your proxy allows byte range requests. For more information, see [Proxy requirements for Windows Update](/windows/deployment/update/windows-update-troubleshooting).
+        answer: |
+        For Delivery Optimization to successfully use the proxy, you should set up the proxy by using Windows proxy settings or Internet Explorer proxy settings. For details see [Using a proxy with Delivery Optimization](../do/delivery-optimization-proxy.md). Most content downloaded with Delivery Optimization uses byte range requests. Make sure your proxy allows byte range requests. For more information, see [Proxy requirements for Windows Update](/windows/deployment/update/windows-update-troubleshooting).
       - question: What hostnames should I allow through my firewall to support Delivery Optimization?
         answer: | 
           **For communication between clients and the Delivery Optimization cloud service**:
@@ -108,12 +109,12 @@ sections:
           The network of CDNs and MCCs allows Microsoft to reach the scale required to meet the demand of the Windows user base. Given this delivery infrastructure changes dynamically, providing an exhaustive list of IPs and keeping it up to date isn't feasible.  
       - question: What is the recommended configuration for Delivery Optimization used with cloud proxies?
         answer: |
-          The recommended configuration for Delivery Optimization Peer-to-Peer to work most efficiently along with cloud proxy solutions (for example, Zscaler) is to allow traffic to the Delivery Optimization services to go directly to the internet and not through the cloud proxy.
-          At a minimum, the following FQDN that is used for communication between clients and the Delivery Optimization service should be allowed with direct Internet access and bypass the cloud proxy service: 
+          The recommended configuration for Delivery Optimization peer-to-peer to work most efficiently along with cloud proxy solutions (for example, Zscaler) is to allow traffic to the Delivery Optimization services to go directly to the internet and not through the cloud proxy.
+          At a minimum, the following FQDN that is used for communication between clients and the Delivery Optimization service should be allowed with direct internet access and bypass the cloud proxy service: 
 
             - `*.prod.do.dsp.mp.microsoft.com`
 
-          If allowing direct Internet access isn't an option, try using Group Download Mode '2' to define the peering group. [Learn more](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) about using Group Download mode.
+          If allowing direct internet access isn't an option, try using Group Download Mode '2' to define the peering group. [Learn more](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) about using Group Download mode.
           
   - name: Peer-to-Peer related questions
     questions:
@@ -121,16 +122,18 @@ sections:
         answer: |
           Delivery Optimization uses the cache content on the device to determine what's available for peering. For the upload source device, there's a limited number (4) of slots for cached content that's available for peering at a given time. Delivery Optimization contains logic that rotates the cached content in those slots.
       - question: Does Delivery Optimization use multicast?
-        answer: No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.    
+        answer: |
+        No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.    
       - question: How does Delivery Optimization deal with congestion on the router from peer-to-peer activity on the LAN?
-        answer: Starting in Windows 10, version 1903, Delivery Optimization uses LEDBAT to relieve such congestion. For more information, see this post on the [Networking Blog](https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-Transport-converges-on-two-Congestion-Providers-Cubic/ba-p/339819).
+        answer: |
+        Starting in Windows 10, version 1903, Delivery Optimization uses LEDBAT to relieve such congestion. For more information, see this post on the [Networking Blog](https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-Transport-converges-on-two-Congestion-Providers-Cubic/ba-p/339819).
       - question: How does Delivery Optimization handle VPNs?
         answer: |
           Delivery Optimization attempts to identify VPNs by checking the network adapter type and details. A connection is treated as a VPN if the adapter description contains certain keywords, such as "VPN" or "secure."
 
-          If the connection is identified as a VPN, Delivery Optimization suspends uploads to other peers. However, you can allow uploads over a VPN by using the [Enable Peer Caching while the device connects via VPN](../do/waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy.
+          If the connection is identified as a VPN, Delivery Optimization suspends uploads to other peers. However, you can allow uploads over a VPN by using the [Enable peer caching while the device connects via VPN](../do/waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy.
 
-          If you have defined a boundary group in Configuration Manager for VPN IP ranges, you can set the [DownloadMode](../do/waas-delivery-optimization-reference.md#download-mode) policy to 0 for that boundary group, to ensure that there's no peer-to-peer activity over the VPN. When the device isn't connected using a VPN, it can still use peer-to-peer with the default of LAN.
+          If you have defined a boundary group in Microsoft Configuration Manager for VPN IP ranges, you can set the [DownloadMode](../do/waas-delivery-optimization-reference.md#download-mode) policy to 0 for that boundary group, to ensure that there's no peer-to-peer activity over the VPN. When the device isn't connected using a VPN, it can still use peer-to-peer with the default of LAN.
 
           With split tunneling, make sure to allow direct access to these endpoints:
 
