@@ -1,7 +1,7 @@
 ---
 title: MixedReality Policy CSP
 description: Learn more about the MixedReality Area in Policy CSP.
-ms.date: 01/31/2024
+ms.date: 02/20/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -271,6 +271,59 @@ This policy controls if the HoloLens displays will be automatically adjusted for
 <!-- AutomaticDisplayAdjustment-Examples-End -->
 
 <!-- AutomaticDisplayAdjustment-End -->
+
+<!-- AutoUnlock-Begin -->
+## AutoUnlock
+
+<!-- AutoUnlock-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AutoUnlock-Applicability-End -->
+
+<!-- AutoUnlock-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/MixedReality/AutoUnlock
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoUnlock
+```
+<!-- AutoUnlock-OmaUri-End -->
+
+<!-- AutoUnlock-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy controls whether a signed-in user will be prompted for credentials when returning to the device after the device has entered suspended state. This policy is available both for the device as well as the user scope. When enabled for the device scope, auto unlock will be enabled for all users on the device. When enabled for the user scope, only the specific user will have auto unlock enabled.
+<!-- AutoUnlock-Description-End -->
+
+<!-- AutoUnlock-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AutoUnlock-Editable-End -->
+
+<!-- AutoUnlock-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AutoUnlock-DFProperties-End -->
+
+<!-- AutoUnlock-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User will be prompted for credentials. |
+| 1 | User won't be prompted for credentials. |
+<!-- AutoUnlock-AllowedValues-End -->
+
+<!-- AutoUnlock-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AutoUnlock-Examples-End -->
+
+<!-- AutoUnlock-End -->
 
 <!-- BrightnessButtonDisabled-Begin -->
 ## BrightnessButtonDisabled
