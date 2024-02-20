@@ -14554,6 +14554,11 @@
       "source_path": "windows/security/threat-protection/auditing/which-editions-of-windows-support-advanced-audit-policy-configuration.md",
       "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/which-editions-of-windows-support-advanced-audit-policy-configuration",
       "redirect_document_id": false
+    },
+    {
+      "source_path": " windows/security/threat-protection/auditing/advanced-security-auditing-faq.yml",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/advanced-security-auditing-faq",
+      "redirect_document_id": false
     }
   ]
 }
