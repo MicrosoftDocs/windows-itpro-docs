@@ -1359,9 +1359,9 @@ The following XML file contains the device description framework (DDF) for the C
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>How long after the enrollment cert has expiried to keep trying to renew</Description>
+              <Description>How long (in days) after the enrollment cert has expiried to keep trying to renew</Description>
               <DFFormat>
-                <time />
+                <int />
               </DFFormat>
               <Occurrence>
                 <One />

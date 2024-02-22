@@ -2277,7 +2277,7 @@ The default value is 42 and the valid values are 1-1000.
 
 <!-- Device-MY-WSTEP-Renew-RetryAfterExpiryInterval-Description-Begin -->
 <!-- Description-Source-DDF -->
-How long after the enrollment cert has expiried to keep trying to renew.
+How long (in days) after the enrollment cert has expiried to keep trying to renew.
 <!-- Device-MY-WSTEP-Renew-RetryAfterExpiryInterval-Description-End -->
 
 <!-- Device-MY-WSTEP-Renew-RetryAfterExpiryInterval-Editable-Begin -->
@@ -2289,7 +2289,7 @@ How long after the enrollment cert has expiried to keep trying to renew.
 
 | Property name | Property value |
 |:--|:--|
-| Format | `time` |
+| Format | `int` |
 | Access Type | Add, Get, Replace |
 <!-- Device-MY-WSTEP-Renew-RetryAfterExpiryInterval-DFProperties-End -->
 
