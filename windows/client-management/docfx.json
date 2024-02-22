@@ -49,7 +49,7 @@
       "author": "vinaypamnani-msft",
       "manager": "aaroncz",
       "feedback_system": "Standard",
-            "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
+      "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.win-client-management",
@@ -69,7 +69,8 @@
         "american-dipper",
         "angelamotherofdragons",
         "v-stsavell",
-        "stacyrch140"
+        "stacyrch140",
+        "shdyas"
       ],
       "searchScope": [
         "Windows 10"
