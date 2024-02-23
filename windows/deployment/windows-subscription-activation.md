@@ -35,6 +35,19 @@ The subscription activation feature eliminates the need to manually deploy Enter
 
 For more information on how to deploy Enterprise licenses, see [Deploy Windows Enterprise licenses](deploy-enterprise-licenses.md).
 
+## Subscription activation for Enterprise
+
+Windows Enterprise E3 and E5 are available as online services via subscription. Windows Enterprise can be deployed in an organization without keys and reboots.
+
+- Devices with a current Windows Pro edition license can be seamlessly upgraded to Windows Enterprise.
+- Product key-based Windows Enterprise software licenses can be transitioned to Windows Enterprise subscriptions.
+
+Organizations that have an enterprise agreement can also benefit from the service, using traditional Active Directory-joined devices. In this scenario, the Active Directory user that signs in on their device must be synchronized with Microsoft Entra ID using [Microsoft Entra Connect Sync](/azure/active-directory/hybrid/how-to-connect-sync-whatis).
+
+> [!NOTE]
+>
+> Subscription activation is available for qualifying devices running currently supported versions of Windows. Subscription activation can't be used to upgrade to a newer version of Windows.
+
 Organizations that use the Subscription Activation feature to enable users to upgrade from one version of Windows to another and use Conditional Access policies to control access need to exclude one of the following cloud apps from their Conditional Access policies using **Select Excluded Cloud Apps**:
 
 - [Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
@@ -49,19 +62,6 @@ For more information about configuring exclusions in Conditional Access policies
 When a device has been offline for an extended period of time, the device might not reactive automatically if these Conditional Access policies aren't in place. Setting this Conditional Access policy ensures that Subscription Activation continues to work seamlessly.
 
 Starting with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later, users are prompted for authentication with a toast notification when Subscription Activation needs to reactivate. The prompt for authentication usually occurs when a device has been offline for an extended period of time. This change eliminates the need for the Conditional Access policy for Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later. A Conditional Access policy can still be used with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later if the prompt for user authentication via a toast notification isn't desired.
-
-## Subscription activation for Enterprise
-
-Windows Enterprise E3 and E5 are available as online services via subscription. Windows Enterprise can be deployed in an organization without keys and reboots.
-
-- Devices with a current Windows Pro edition license can be seamlessly upgraded to Windows Enterprise.
-- Product key-based Windows Enterprise software licenses can be transitioned to Windows Enterprise subscriptions.
-
-Organizations that have an enterprise agreement can also benefit from the service, using traditional Active Directory-joined devices. In this scenario, the Active Directory user that signs in on their device must be synchronized with Microsoft Entra ID using [Microsoft Entra Connect Sync](/azure/active-directory/hybrid/how-to-connect-sync-whatis).
-
-> [!NOTE]
->
-> Subscription activation is available for qualifying devices running currently supported versions of Windows. Subscription activation can't be used to upgrade to a newer version of Windows.
 
 ## Subscription activation for Education
 
