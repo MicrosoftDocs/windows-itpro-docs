@@ -1,7 +1,7 @@
 ---
 title: Windows quality and feature update reports overview
 description: This article details the types of reports available and info about update device eligibility, device update health, device update trends in Windows Autopatch.
-ms.date: 02/26/2024
+ms.date: 02/26/2024 
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
