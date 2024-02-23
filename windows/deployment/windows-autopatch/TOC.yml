@@ -90,6 +90,8 @@
                   href: operate/windows-autopatch-groups-windows-quality-update-status-report.md
                 - name: Quality update trending report
                   href: operate/windows-autopatch-groups-windows-quality-update-trending-report.md
+                - name: Reliability report
+                  href: operate/windows-autopatch-reliability-report.md
             - name: Windows feature update reports
               href:
               items:
