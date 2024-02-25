@@ -17,12 +17,14 @@ items:
       href: guidelines-for-assigned-access-app.md
 - name: How-to guides
   items:
+    - name: Configure devices with Assigned Access
+      href: assigned-access-configure.md
     - name: Create an Assigned Access configuration file
       href: create-assigned-access-configuration.md
+    - name: Configure devices with Shell Launcher
+      href: shell-launcher-configure.md
     - name: Create a Shell Launcher configuration file
       href: create-shell-launcher-configuration.md
-    - name: Configure devices
-      href: configure.md
     - name: Find the AUMID of an installed app
       href: find-aumid.md
     - name: Use Shell Launcher to create a Windows client kiosk

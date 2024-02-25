@@ -61,9 +61,9 @@ After the settings are applied, reboot the device. A local user account named `A
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Learn more how to configure Windows to execute as a restricted user experience:
+> Learn more how to create a Shell Launcher configuration file:
 >
-> [Configure a shell launcher configuration](create-shell-launcher-configuration.md)
+> [Create a shell launcher configuration file](create-shell-launcher-configuration.md)
 
 <!--links-->
 

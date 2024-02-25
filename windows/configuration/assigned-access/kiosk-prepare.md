@@ -13,14 +13,6 @@ ms.date: 12/31/2017
 - Kiosk mode isn't supported over a remote desktop connection. Your kiosk users must sign in on the physical device that's set up as a kiosk.
 - For kiosks in public-facing environments with auto sign-in enabled, you should use a user account with the least privileges, such as a local standard user account.
 
-  Assigned access can be configured using Windows Management Instrumentation (WMI) or configuration service provider (CSP). Assigned access runs an application using a domain user or service account, not a local account. Using a domain user or service accounts has risks, and might allow an attacker to gain access to domain resources that are accessible to any domain account. When using domain accounts with assigned access, proceed with caution. Consider the domain resources potentially exposed by using a domain account.
-
-- MDM providers, such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), use the configuration service providers (CSP) exposed by the Windows OS to manage settings on devices. In this article, we mention these services. If you're not managing your devices using an MDM provider, the following resources may help you get started:
-
-  - [Endpoint Management at Microsoft](/mem/endpoint-manager-getting-started)
-  - [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Intune planning guide](/mem/intune/fundamentals/intune-planning-guide)
-  - [What is Configuration Manager?](/mem/configmgr/core/understand/introduction)
-
 ## Configuration recommendations
 
 For a more secure kiosk experience, we recommend that you make the following configuration changes to the device before you configure it as a kiosk:
@@ -271,19 +263,8 @@ The following table describes some features that have interoperability issues we
 
 For more information, see [Custom Logon][WHW-1].
 
-## Testing your kiosk in a virtual machine (VM)
-
-Customers sometimes use virtual machines (VMs) to test configurations before deploying those configurations to physical devices. If you use a VM to test your single-app kiosk configuration, you need to know how to connect to the VM properly.
-
-A single-app kiosk configuration runs an app above the lock screen. It doesn't work when it's accessed remotely, which includes *enhanced* sessions in Hyper-V.
-
-> [!NOTE]
-> When you connect to a VM configured as a single-app kiosk, you must use a *basic session* rather than an *enhanced session*. For more information, see [Check session type][VIR-1].
-
 <!--links-->
 
-[VIR-1]: /virtualization/hyper-v-on-windows/user-guide/enhanced-session-mode#check-session-type
 [WHW-1]: /windows-hardware/customize/enterprise/custom-logon
 [WHW-2]: /windows-hardware/customize/enterprise/unified-write-filter
 [WHW-3]: /windows-hardware/customize/enterprise/wedl-assignedaccess
-

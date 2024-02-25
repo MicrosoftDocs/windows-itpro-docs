@@ -1,11 +1,11 @@
 ---
-title: Use Shell Launcher to create a kiosk experience
-description: Learn how to configure Shell Launcher to change the default Windows shell when a user signs in to a device.
+title: Configure devices with Shell Launcher
+description: Learn how to configure devices with Shell Launcher.
+ms.date: 05/12/2023
 ms.topic: how-to
-ms.date: 12/31/2017
 ---
 
-# Use Shell Launcher to create a Windows client kiosk
+## Configure devices with Shell Launcher
 
 Shell Launcher is an Assigned Access configuration that replaces the default Windows Explorer shell (`explorer.exe`) with the `CustomShellHost.exe` application. CustomShellHost can launch a Windows desktop application or a UWP app.
 

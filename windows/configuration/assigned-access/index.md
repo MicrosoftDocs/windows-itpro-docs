@@ -34,33 +34,7 @@ There are several kiosk configuration methods that you can choose from, dependin
 
 [!INCLUDE [assigned-access-kiosk-mode](../../../includes/licensing/assigned-access-kiosk-mode.md)]
 
-## Methods for a single-app kiosk running a UWP app
-
-| You can use this method | For this edition | For this kiosk account type |
-|--|--|--|
-| [Assigned access in Settings](kiosk-single-app.md) | Pro, Ent, Edu | Local standard user |
-| [Assigned access cmdlets](kiosk-single-app.md) | Pro, Ent, Edu | Local standard user |
-| [The kiosk wizard in Windows Configuration Designer](kiosk-single-app.md) | Pro (version 1709), Ent, Edu | Local standard user, Active Directory, Microsoft Entra ID |
-| [Microsoft Intune or other mobile device management (MDM)](kiosk-single-app.md) | Pro (version 1709), Ent, Edu | Local standard user, Microsoft Entra ID |
-| [Shell Launcher](kiosk-shelllauncher.md) v2 | Ent, Edu | Local standard user, Active Directory, Microsoft Entra ID |
-
-## Methods for a single-app kiosk running a Windows desktop application
-
-| You can use this method | For this edition | For this kiosk account type |
-|--|--|--|
-| [The kiosk wizard in Windows Configuration Designer](kiosk-single-app.md) | Ent, Edu | Local standard user, Active Directory, Microsoft Entra ID |
-| [Microsoft Intune or other mobile device management (MDM)](kiosk-single-app.md) | Pro (version 1709), Ent, Edu | Local standard user, Microsoft Entra ID |
-| [Shell Launcher](kiosk-shelllauncher.md) v1 and v2 | Ent, Edu | Local standard user, Active Directory, Microsoft Entra ID |
-
-## Methods for a multi-app kiosk
-
-| You can use this method | For this edition | For this kiosk account type |
-|--|--|--|
-| [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) | Pro, Ent, Edu | Local standard user, Active Directory, Microsoft Entra ID |
-| [Microsoft Intune or other MDM](lock-down-windows-10-to-specific-apps.md) | Pro, Ent, Edu | Local standard user, Microsoft Entra ID |
-| [MDM WMI Bridge Provider](kiosk-mdm-bridge.md) | Pro, Ent, Edu | Local standard user, Active Directory, Microsoft Entra ID |
-
-## Summary of kiosk configuration methods
+## Summary of configuration methods
 
 | Method | App type | Account type | Single-app kiosk | Multi-app kiosk |
 |--|--|--|:-:|:-:|
@@ -69,7 +43,7 @@ There are several kiosk configuration methods that you can choose from, dependin
 | [The kiosk wizard in Windows Configuration Designer](kiosk-single-app.md) | UWP, Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID | ✅ |
 | [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) | UWP, Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID | ✅ | ✅ |
 | Microsoft Intune or other MDM [for full-screen single-app kiosk](kiosk-single-app.md) or [for multi-app kiosk with desktop](lock-down-windows-10-to-specific-apps.md) | UWP, Windows desktop app | Local standard user, Microsoft Entra ID | ✅ | ✅ |
-| [Shell Launcher](kiosk-shelllauncher.md) | Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID | ✅ |
+| [Shell Launcher](kiosk-shelllauncher.md) | UWP, Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID | ✅ |
 | [MDM Bridge WMI Provider](kiosk-mdm-bridge.md) | UWP, Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID |  | ✅ |
 
 >[!NOTE]
