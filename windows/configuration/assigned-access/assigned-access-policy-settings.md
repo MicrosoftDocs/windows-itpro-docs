@@ -1,11 +1,11 @@
 ---
-title: Policy settings enforced by Assigned Access
+title: Assigned Access policy settings
 description: Learn about the policy settings enforced on a device configured with Assigned Access.
 ms.topic: reference
 ms.date: 02/25/2024
 ---
 
-# Policy settings enforced by Assigned Access
+# Assigned Access policy settings
 
 When the Assigned Access configuration is applied on a device, certain policy settings are enforced, impacting other users using the device. The policy settings are appllied using a combination of configuration service provider (CSP) and group policy (GPO) settings.
 

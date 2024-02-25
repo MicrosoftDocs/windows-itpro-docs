@@ -27,12 +27,6 @@ items:
       href: find-aumid.md
     - name: Use Shell Launcher to create a Windows client kiosk
       href: kiosk-shelllauncher.md
-- name: Troubleshoot
-  items:
-    - name: Validate your kiosk configuration
-      href: kiosk-validate.md
-    - name: Troubleshoot kiosk mode issues
-      href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
 - name: Reference
   items:
     - name: Assigned Access CSP
@@ -41,5 +35,7 @@ items:
       href: assigned-access-xsd.md
     - name: Shell Launcher XSD
       href: shell-launcher-xsd.md
-    - name: Policy settings enforced by Assigned Access
-      href: kiosk-policies.md
+    - name: Assigned Access policy settings
+      href: assigned-access-policy-settings.md
+- name: Troubleshoot
+  href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
