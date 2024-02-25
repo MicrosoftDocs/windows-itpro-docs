@@ -9,9 +9,9 @@ ms.date: 02/15/2024
 
 This reference article contains the latest Assigned Access XML schema definition (XSD) and the XSD additions for each version of Windows.
 
-## Windows 11
+## Assigned Access XSD
 
-The following is the XSD for Assigned Access in Windows 11:
+The following is the latest Assigned Access XSD, introduced in Windows 11:
 
 ```xml
 <xs:schema

@@ -244,12 +244,17 @@ Add your pinnedList JSON into the StartPins tag in your XML file.
 </v5:StartPins>
 ```
 
+### TaskbarLayout node
+
+
 ::: zone-end
 
 > [!NOTE]
 > If an app isn't installed for the user, but is included in the Start layout XML, the app isn't shown on the Start screen.
 
-#### Taskbar
+::: zone pivot="windows-10"
+
+### Taskbar
 
 Define whether you want to have the taskbar present in the kiosk device. For tablet-based or touch-enabled All-In-One kiosks, when you don't attach a keyboard and mouse, you can hide the taskbar as part of the multi-app experience if you want.
 
@@ -263,6 +268,8 @@ The following example hides the taskbar:
 
 > [!NOTE]
 > This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden.
+
+::: zone-end
 
 ### KioskModeApp
 

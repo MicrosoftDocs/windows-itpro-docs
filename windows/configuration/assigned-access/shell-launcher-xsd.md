@@ -7,9 +7,11 @@ ms.date: 02/15/2024
 
 # Shell Launcher XML Schema Definition (XSD)
 
-This reference article contains the XML schema definitions (XSD) for Shell Launcher and Shell Launcher v2.
+This reference article contains the latest Shell Launcher XML schema definition (XSD) and the XSD additions for each version of Windows.
 
 ## Shell Launcher XSD
+
+The following is the latest Shell Launcher XSD:
 
 ```xml
 <xs:schema
@@ -163,7 +165,11 @@ This reference article contains the XML schema definitions (XSD) for Shell Launc
 </xs:schema>
 ```
 
-## Shell Launcher v2 XSD
+## Windows 10, version 1903 additions
+
+In Windows 10, version 1903, Shell Launcher introduced the support of both UWP and Win32 apps as the custom shell.
+
+The following is the XSD for Shell Launcher features added in Windows 10, version 1903:
 
 ```xml
 <xs:schema
