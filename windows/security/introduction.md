@@ -12,6 +12,7 @@ content_well_notification:
 author: paolomatarazzo
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+ai-usage: ai-assisted
 ---
 
 # Introduction to Windows security
