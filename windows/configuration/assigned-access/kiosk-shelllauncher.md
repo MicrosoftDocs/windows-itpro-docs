@@ -39,27 +39,6 @@ For sample XML configurations for the different app combinations, see [Samples f
 
 [See the technical reference for the shell launcher component.](/windows-hardware/customize/enterprise/shell-launcher)
 
-## Enable Shell Launcher feature
-
-To set a custom shell, you first turn on the Shell Launcher feature, and then you can set your custom shell as the default using PowerShell or MDM.
-
-**To turn on Shell Launcher in Windows features**
-
-1. Go to Control Panel > **Programs and features** > **Turn Windows features on or off**
-1. Expand **Device Lockdown**
-1. Select **Shell Launcher** and **OK**
-
-Alternatively, you can turn on Shell Launcher using Windows Configuration Designer in a provisioning package, using `SMISettings > ShellLauncher`, or you can use the Deployment Image Servicing and Management (DISM.exe) tool.
-
-**To turn on Shell Launcher using DISM**
-
-1. Open a command prompt as an administrator.
-1. Enter the following command.
-
-    ```
-    Dism /online /Enable-Feature /all /FeatureName:Client-EmbeddedShellLauncher
-    ```
-
 ## Configure a custom shell in MDM
 
 You can use XML and a [custom OMA-URI setting](#custom-oma-uri-setting) to configure Shell Launcher in MDM.

@@ -79,6 +79,23 @@ You can start your file by pasting the following XML code into a text editor, an
 
 ## Profiles node
 
+There are two types of profiles that you can specify in the XML:
+
+- **Lockdown profile**: Users assigned a lockdown profile will see the desktop in tablet mode with the specific apps on the Start screen.
+- **Kiosk profile**: Starting with Windows 10 version 1803, this profile replaces the KioskModeApp node of the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp). Users assigned a kiosk profile won't see the desktop, but only the kiosk app running in full-screen mode.
+
+A lockdown profile section in the XML has the following entries:
+
+- [**Id**](#id)
+- [**AllowedApps**](#allowedapps)
+- [**StartPins**](#startpins)
+- [**Taskbar**](#taskbar)
+
+A kiosk profile in the XML has the following entries:
+
+- [**Id**](#id)
+- [**KioskModeApp**](#kioskmodeapp)
+
 In the XML file, you define each profile with a globally unique identifier (GUID), which must be unique within the XML file.
 
 > [!TIP]
@@ -122,7 +139,7 @@ Based on the purpose of the kiosk device, define the list of applications that a
 - To configure a single app to launch automatically when the user signs in, include `rs5:AutoLaunch="true"` after the AUMID or path. You can also include arguments to be passed to the app
 
 <!-->
-Here are the predefined assigned access AppLocker rules:
+When the multi-app kiosk configuration is applied to a device, AppLocker rules will be generated to allow the apps that are listed in the configuration. Here are the predefined assigned access AppLocker rules
 
 For UWP apps,
 
@@ -227,12 +244,12 @@ Add your pinnedList JSON into the StartPins tag in your XML file.
 </v5:StartPins>
 ```
 
+::: zone-end
+
 > [!NOTE]
 > If an app isn't installed for the user, but is included in the Start layout XML, the app isn't shown on the Start screen.
 
-::: zone-end
-
-### Taskbar
+#### Taskbar
 
 Define whether you want to have the taskbar present in the kiosk device. For tablet-based or touch-enabled All-In-One kiosks, when you don't attach a keyboard and mouse, you can hide the taskbar as part of the multi-app experience if you want.
 
@@ -247,7 +264,122 @@ The following example hides the taskbar:
 > [!NOTE]
 > This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden.
 
+### KioskModeApp
+
+**KioskModeApp** is used for a [kiosk profile](#profile) only. Enter the AUMID for a single app. You can only specify one kiosk profile in the XML.
+
+```xml
+<KioskModeApp AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"/>
+```
+
+> [!IMPORTANT]
+> The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Microsoft Entra account could potentially compromise confidential information.
+
 ## Configs
+
+Under `Configs`, define one or more user accounts and their association with a profile.
+
+When the user account signs in on the device, the associated Assigned Access profile is enforced along with policy settings that are part of the restricted user experience.
+
+You can assign:
+
+- A standard user account, which can be local, domain, or Microsoft Entra ID
+- A group account, which can be local, Active Directory (domain), or Microsoft Entra ID
+
+Limitations:
+
+- Configs that specify group accounts cannot use a kiosk profile, only a restricted ser experience profile
+- Apply the restrcited user experience to standard users only. It's not supported to associate an admin user with an Assigned Access profile
+
+:::row:::
+    :::column:::
+        ### AutoLogon Account
+    :::column-end:::
+    :::column:::
+        With `<AutoLogonAccount>` you can configure an account created and managed by Assigned Access, to automatically sign in after a device restart. The account is a local standard user.
+
+        The following example shows how to specify an account to sign in automatically, and the optional display name shown during sign-in:
+
+        ```xml
+        <Configs>
+          <Config>
+            <AutoLogonAccount rs5:DisplayName="Hello World"/>
+            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+          </Config>
+        </Configs>
+        ```
+
+        >[!NOTE]
+        > On Microsoft Entra joined and domain-joined devices, local user accounts aren't disaplyed on the sign-in screen by default. To show the **AutoLogonAccount** on the sign-in screen, enable the policy setting:
+        >
+        >- GPO: **Computer Configuration > Administrative Templates > System > Logon > Enumerate local users on domain-joined computers**
+        >- CSP: `WindowsLogon/`[EnumerateLocalUsersOnDomainJoinedComputers](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-enumeratelocalusersondomainjoinedcomputers)
+
+        >[!IMPORTANT]
+        >When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature doesn't work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon).
+
+    :::column-end:::
+:::row-end:::
+
+### Config for individual accounts
+
+Individual accounts are specified using `<Account>`.
+
+- Local account can be entered as `machinename\account` or `.\account` or just `account`.
+- Domain account should be entered as `domain\account`.
+- Microsoft Entra account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided *as is*, and consider it's a fixed domain name. Then follow with the Microsoft Entra ID email address. For example, `AzureAD\someone@contoso.onmicrosoft.com`
+
+> [!WARNING]
+> Assigned access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account.  However, use of domain user or service accounts introduces risks that an attacker subverting the assigned access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
+
+Before applying the multi-app configuration, make sure the specified user account is available on the device, otherwise it will fail.
+
+> [!NOTE]
+> For both domain and Microsoft Entra accounts, it's not required that target account is explicitly added to the device. As long as the device is AD-joined or Microsoft Entra joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for assigned access.
+
+```xml
+<Configs>
+  <Config>
+    <Account>MultiAppKioskUser</Account>
+    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+  </Config>
+</Configs>
+```
+
+### Config for group accounts
+
+Group accounts are specified using `<UserGroup>`. Nested groups aren't supported. For example, if user A is member of Group 1, Group 1 is member of Group 2, and Group 2 is used in `<Config/>`, user A won't have the kiosk experience.
+
+- Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. Any Microsoft Entra accounts that are added to the local group won't have the kiosk settings applied.
+
+  ```xml
+  <Config>
+    <UserGroup Type="LocalGroup" Name="mygroup" />
+    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+  </Config>
+  ```
+
+- Domain group: Both security and distribution groups are supported. Specify the group type as <strong>ActiveDirectoryGroup</strong>. Use the domain name as the prefix in the name attribute.
+
+  ```xml
+  <Config>
+    <UserGroup Type="ActiveDirectoryGroup" Name="mydomain\mygroup" />
+    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+  </Config>
+  ```
+
+- Microsoft Entra group: Use the group object ID from the Azure portal to uniquely identify the group in the Name attribute. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as **AzureActiveDirectoryGroup**. The kiosk device must have internet connectivity when users that belong to the group sign-in.
+
+  ```xml
+  <Config>
+    <UserGroup Type="AzureActiveDirectoryGroup" Name="a8d36e43-4180-4ac5-a627-fb8149bba1ac" />
+    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+  </Config>
+  ```
+
+  > [!NOTE]
+  > If a Microsoft Entra group is configured with a lockdown profile on a device, a user in the Microsoft Entra group must change their password (after the account has been created with default password on the portal) before they can sign in to this device. If the user uses the default password to sign in to the device, the user will be immediately signed out.
+
 
 ## Full XML example
 
@@ -303,12 +435,49 @@ The following example hides the taskbar:
 
 
 
+### FileExplorerNamespaceRestrictions
+
+Starting in Windows 10 version 1809, you can explicitly allow some known folders to be accessed when the user tries to open the file dialog box in multi-app assigned access by including **FileExplorerNamespaceRestrictions** in your XML file. Currently, **Downloads** is the only folder supported.  This behavior can also be set using Microsoft Intune.
+
+The following example shows how to allow user access to the Downloads folder in the common file dialog box.
+
+> [!TIP]
+> To grant access to the Downloads folder through File Explorer, add "Explorer.exe" to the list of allowed apps, and pin a file explorer shortcut to the kiosk start menu.
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration
+    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:rs5="https://schemas.microsoft.com/AssignedAccess/201810/config"
+>     <Profiles>
+        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
+            <AllAppsList>
+                <AllowedApps>
+                    ...
+                </AllowedApps>
+            </AllAppsList>
+            <rs5:FileExplorerNamespaceRestrictions>
+                <rs5:AllowedNamespace Name="Downloads"/>
+            </rs5:FileExplorerNamespaceRestrictions>
+            <StartLayout>
+                ...
+            </StartLayout>
+            <Taskbar ShowTaskbar="true"/>
+        </Profile>
+    </Profiles>
+</AssignedAccessConfiguration>
+```
 
 
+> [!NOTE]
+> - `FileExplorerNamespaceRestrictions` and `AllowedNamespace:Downloads` are available in namespace `https://schemas.microsoft.com/AssignedAccess/201810/config`.
+> - `AllowRemovableDrives` and `NoRestriction` are defined in a new namespace `https://schemas.microsoft.com/AssignedAccess/2020/config`.
 
-
-
-
+- When `FileExplorerNamespaceRestrictions` node isn't used, or used but left empty, the user won't be able to access any folder in a common dialog. For example, **Save As** in the Microsoft Edge browser.
+- When Downloads is mentioned in allowed namespace, user will be able to access Downloads folder.
+- When `AllowRemovableDrives` is used, user will be to access removable drives.
+- When `NoRestriction` is used, no restriction will be applied to the dialog.
+- `AllowRemovableDrives` and `AllowedNamespace:Downloads` can be used at the same time.
 
 :::row:::
     :::column span="1":::
@@ -771,3 +940,7 @@ IT Admin now can specify user access to Downloads folder, Removable drives, or n
 To authorize a compatible configuration XML that includes elements and attributes from Windows 10 version 1809 or newer / Windows 11, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias.
 
 For example, to configure the autolaunch feature that was added in Windows 10 version 1809 / Windows 11, use the following sample. Notice an alias r1809 is given to the 201810 namespace for Windows 10 version 1809 / Windows 11, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
+
+## Single app Assigned Access XML example
+
+## Multi-app Assigned Access XML example

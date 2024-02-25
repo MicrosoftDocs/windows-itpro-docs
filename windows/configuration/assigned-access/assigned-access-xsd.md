@@ -14,8 +14,8 @@ This reference article contains the latest Assigned Access XML schema definition
 The following is the XSD for Assigned Access in Windows 11:
 
 ```xml
-<xs:schema elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+<xs:schema
+    elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
@@ -262,7 +262,8 @@ The following is the XSD for Assigned Access features added in Windows 10, versi
 The following is the XSD for Assigned Access features added in Windows 10, version 1909:
 
 ```xml
-<xs:schema elementFormDefault="qualified"
+<xs:schema
+    elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns="http://schemas.microsoft.com/AssignedAccess/2020/config"
     xmlns:default="http://schemas.microsoft.com/AssignedAccess/2020/config"
@@ -296,7 +297,8 @@ The following is the XSD for Assigned Access features added in Windows 10, versi
 The following is the XSD for Assigned Access features added in Windows 10, version 1809:
 
 ```xml
-<xs:schema elementFormDefault="qualified"
+<xs:schema
+    elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns="http://schemas.microsoft.com/AssignedAccess/201810/config"
     xmlns:default="http://schemas.microsoft.com/AssignedAccess/201810/config"

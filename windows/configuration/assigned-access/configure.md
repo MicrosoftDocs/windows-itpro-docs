@@ -1,15 +1,119 @@
 ---
-title: Set up a single-app kiosk on Windows
-description: A single-use device is easy to set up in Windows Pro, Enterprise, and Education editions.
-ms.topic: article
-ms.date: 07/12/2023
+title: Configure Assigned Access
+description: Learn how to configure devices with Assigned Access.
+ms.date: 05/12/2023
+ms.topic: how-to
 ---
 
-# Set up a single-app kiosk
+## Configure Assigned Access
+
+## Configure a kiosk in Microsoft Intune
+
+To configure a kiosk in Microsoft Intune, see:
+
+- [Windows client and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](/intune/kiosk-settings)
+- [Windows client device settings to run as a kiosk in Intune](/intune/kiosk-settings-windows)
+
+## Configure a kiosk using a provisioning package
+
+Process:
+
+1. [Create XML file](#create-xml-file)
+1. [Add XML file to provisioning package](#add-xml)
+1. [Apply provisioning package to device](#apply-ppkg)
+
+Watch how to use a provisioning package to configure a multi-app kiosk.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
+
+An assigned access multi-app kiosk runs one or more apps from the desktop. People using the kiosk see a customized Start that shows only the apps that are allowed. With this approach, you can configure a locked-down experience for different account types. A multi-app kiosk is appropriate for devices that are shared by multiple people. Here's a guide on how to set up a multi-app kiosk.
+
+> [!WARNING]
+> The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
+
+> [!TIP]
+> Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
+
+### Provisioning package
+
+Before you add the XML file to a provisioning package, you can [validate your configuration XML against the XSD](kiosk-xml.md#xsd-for-assignedaccess-configuration-xml).
+
+Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](../provisioning-packages/provisioning-install-icd.md).
+
+> [!IMPORTANT]
+> When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+
+1. Open Windows Configuration Designer. By default: `%systemdrive%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe`.
+
+1. Choose **Advanced provisioning**.
+
+1. Name your project, and select **Next**.
+
+1. Choose **All Windows desktop editions** and select **Next**.
+
+1. On **New project**, select **Finish**. The workspace for your package opens.
+
+1. Expand **Runtime settings** > **AssignedAccess** > **MultiAppAssignedAccessSettings**.
+
+1. In the center pane, select **Browse**. Locate and select the assigned access configuration XML file that you created.
+
+   ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer.](images/multiappassignedaccesssettings.png)
+
+1. _Optional: If you want to apply the provisioning package after device initial setup and there's an admin user already available on the kiosk device, skip this step._ Create an admin user account in **Runtime settings** > **Accounts** > **Users**. Provide a **UserName** and **Password**, and select **UserGroup** as **Administrators**. With this account, you can view the provisioning status and logs if needed.
+
+1. _Optional: If you already have a non-admin account on the kiosk device, skip this step._ Create a local standard user account in **Runtime settings** > **Accounts** > **Users**. Make sure the **UserName** is the same as the account that you specify in the configuration XML. Select **UserGroup** as **Standard Users**.
+
+1. On the **File** menu, select **Save.**
+
+1. On the **Export** menu, select **Provisioning package**.
+
+1. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
+
+1. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
+
+    - **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
+
+    - **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Browse** and choosing the certificate you want to use to sign the package.
+
+1. Select **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Imaging and Configuration Designer (ICD) uses the project folder as the output location.
+
+    Optionally, you can select **Browse** to change the default output location.
+
+1. Select **Next**.
+
+1. Select **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status.
+
+    If you need to cancel the build, select **Cancel**. This action cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
+
+1. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
+
+    If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
+
+    - If you choose, you can build the provisioning package again and pick a different path for the output package. To do this action, select **Back** to change the output package name and path, and then select **Next** to start another build.
+    - If you're done, select **Finish** to close the wizard and go back to the **Customizations Page**.
+
+1. Copy the provisioning package to the root directory of a USB drive.
+
+<span id="apply-ppkg" />
+
+### Apply provisioning package to device
+
+Provisioning packages can be applied to a device during initial setup (out-of-box experience or "OOBE") and after ("runtime"). For more information, see [Apply a provisioning package](../provisioning-packages/provisioning-apply-package.md).
+
+> [!NOTE]
+> If your provisioning package doesn't include the assigned access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device.
+
+### Use MDM to deploy the multi-app configuration
+
+Multi-app kiosk mode is enabled by the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp). Your MDM policy can contain the assigned access configuration XML.
+
+If your device is enrolled with an MDM service that supports applying the assigned access configuration, you can use it to apply the setting remotely.
+
+The OMA-URI for multi-app policy is `./Device/Vendor/MSFT/AssignedAccess/Configuration`.
+
+## Set up a single-app kiosk
 
 A single-app kiosk uses the Assigned Access feature to run a single app above the lock screen. When the kiosk account signs in, the app is launched automatically. The person using the kiosk cannot do anything on the device outside of the kiosk app.
-
-![Illustration of a single-app kiosk experience.](images/kiosk-fullscreen-sm.png)
 
 >[!IMPORTANT]
 >[User account control (UAC)](/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable kiosk mode.
@@ -75,49 +179,41 @@ When your kiosk is a local device that isn't managed by Active Directory or Micr
 
 - If you don't want the kiosk account to sign in automatically when the device restarts, then you must change the default setting before you configure the device as a kiosk. Sign in with the account that you will assign as the kiosk account. Open the **Settings** app > **Accounts** > **Sign-in options**. Set the **Use my sign-in info to automatically finish setting up my device after an update or restart** setting to **Off**. After you change the setting, you can apply the kiosk configuration to the device.
 
-  ![Screenshot of automatic sign-in setting.](images/auto-signin.png)
+## Configure a kiosk experience with Assigned Access using PowerShell cmdlets
 
-## Set up a kiosk using Windows PowerShell
+| App Type | OS| Account type|
+|-|-|
+|UWP| Windows Pro/Pro Edu and Ent/Edu|Local standard user|
 
-App type:
+To configure a device using the Windows PowerShell cmdlet:
 
-- UWP
+1. Sign in as administrator
+1. [Create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) for Assigned Access
+1. Sign in as the Assigned Access user account
+1. Install the required UWP app
+1. Sign out as the Assigned Access user account
+1. Sign in as administrator and from an elevated PowerShell prompt use one of the following commands:
 
-OS:
+    ```PowerShell
+    #Configure assigned access by AppUserModelID and user name
+    Set-AssignedAccess -AppUserModelId <AUMID> -UserName <username>
 
-- Windows 10 Pro, Ent, Edu
-- Windows 11
+    #Configure assigned access by AppUserModelID and user SID
+    Set-AssignedAccess -AppUserModelId <AUMID> -UserSID <usersid>
 
-Account type:
+    #Configure assigned access by app name and user name
+    Set-AssignedAccess -AppName <CustomApp> -UserName <username>
 
-- Local standard user
-
-![PowerShell windows displaying Set-AssignedAccess cmdlet.](images/set-assignedaccess.png)
-
-You can use any of the following PowerShell cmdlets to set up assigned access on multiple devices.
-
-Before you run the cmdlet:
-
-1. Sign in as administrator.
-1. [Create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) for Assigned Access.
-1. Sign in as the Assigned Access user account.
-1. Install the Universal Windows app that follows the assigned access/above the lock guidelines.
-1. Sign out as the Assigned Access user account.
-1. Sign in as administrator.
-
-To open PowerShell on Windows client, search for PowerShell, and find **Windows PowerShell Desktop app** in the results. Run PowerShell as administrator.
-
-- **Configure assigned access by AppUserModelID and user name**: `Set-AssignedAccess -AppUserModelId <AUMID> -UserName <username>`
-- **Configure assigned access by AppUserModelID and user SID**: `Set-AssignedAccess -AppUserModelId <AUMID> -UserSID <usersid>`
-- **Configure assigned access by app name and user name**: `Set-AssignedAccess -AppName <CustomApp> -UserName <username>`
-- **Configure assigned access by app name and user SID**: `Set-AssignedAccess -AppName <CustomApp> -UserSID <usersid>`
+    #Configure assigned access by app name and user SID**:
+    Set-AssignedAccess -AppName <CustomApp> -UserSID <usersid>
 
 > [!NOTE]
 > To set up assigned access using `-AppName`, the user account that you enter for assigned access must have signed in at least once.
 
-[Learn how to get the AUMID](./find-the-application-user-model-id-of-an-installed-app.md).
+For more innformation:
 
-[Learn how to get the AppName](/powershell/module/assignedaccess/set-assignedaccess) (see **Parameters**).
+- [Learn how to get the AUMID](./find-the-application-user-model-id-of-an-installed-app.md)
+- [Learn how to get the AppName](/powershell/module/assignedaccess/set-assignedaccess)
 
 To remove assigned access, using PowerShell, run the following cmdlet:
 
@@ -125,7 +221,7 @@ To remove assigned access, using PowerShell, run the following cmdlet:
 Clear-AssignedAccess
 ```
 
-## Set up a kiosk using the kiosk wizard in Windows Configuration Designer
+## Configure a kiosk experience using the kiosk wizard in Windows Configuration Designer
 
 App type:
 
@@ -281,3 +377,64 @@ To change the default time for assigned access to resume, add *IdleTimeOut* (DWO
 > **IdleTimeOut** doesn't apply to the new Microsoft Edge kiosk mode.
 
 The Breakout Sequence of **Ctrl + Alt + Del** is the default, but this sequence can be configured to be a different sequence of keys. The breakout sequence uses the format **modifiers + keys**. An example breakout sequence would look something like **Shift + Alt + a**, where **Shift** and **Alt** are the modifiers and **a** is the key value. For more information, see [Microsoft Edge kiosk XML sample](/windows/configuration/kiosk-xml#microsoft-edge-kiosk-xml-sample).
+
+<!--
+# Set up digital signs
+
+Digital signage can be a useful and exciting business tool. Use digital signs to showcase your products and services, to display testimonials, or to advertise promotions and campaigns. A digital sign can be a static display, such as a building directory or menu, or it can be dynamic, such as repeating videos or a social media feed.
+
+For digital signage, simply select a digital sign player as your kiosk app. You can also use [Microsoft Edge in kiosk mode](/DeployEdge/microsoft-edge-configure-kiosk-mode) or the Kiosk Browser app, and configure it to show your online content.
+
+>[!TIP]
+>Kiosk Browser can also be used in [single-app kiosks](kiosk-single-app.md) and [multi-app kiosk](lock-down-windows-10-to-specific-apps.md) as a web browser. For more information, see [Guidelines for web browsers](guidelines-for-assigned-access-app.md#guidelines-for-web-browsers).
+
+Kiosk Browser must be downloaded for offline licensing using Microsoft Store for Business. You can deploy Kiosk Browser to devices running Windows 11, and Windows 10 version 1803+.
+
+>[!NOTE]
+>If you haven't set up your Microsoft Store for Business yet, check out [the prerequisites](/microsoft-store/prerequisites-microsoft-store-for-business) and then [sign up](/microsoft-store/sign-up-microsoft-store-for-business).
+
+This procedure explains how to configure digital signage using Kiosk Browser on a device running Windows client that has already been set up (completed the first-run experience).
+
+1. [Get **Kiosk Browser** in Microsoft Store for Business with offline, unencoded license type.](/microsoft-store/acquire-apps-microsoft-store-for-business#acquire-apps)
+1. [Download the **Kiosk Browser** package, license file, and all required frameworks.](/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app)
+1. [Install Windows Configuration Designer.](~/provisioning-packages/provisioning-install-icd.md)
+1. Open Windows Configuration Designer and select **Provision kiosk devices**.
+1. Enter a friendly name for the project, and select **Finish**.
+1. On **Set up device**, select **Disabled**, and select **Next**.
+1. On **Set up network**, enable network setup:
+    - Toggle **On** wireless network connectivity.
+    - Enter the SSID, the network type (**Open** or **WPA2-Personal**), and (if **WPA2-Personal**) the password for the wireless network.
+1. On **Account management**, select **Disabled**, and select **Next**.
+1. On **Add applications**, select **Add an application**:
+    - For **Application name**, enter `Kiosk Browser`.
+    - For **Installer path**, browse to and select the AppxBundle that you downloaded from Microsoft Store for Business. After you select the package, additional fields are displayed.
+    - For **License file path**, browse to and select the XML license file that you downloaded from Microsoft Store for Business.
+    - The **Package family name** is populated automatically.
+    - Select **Next**.
+1. On **Add certificates**, select **Next**.
+1. On **Configure kiosk account and app**, toggle **Yes** to create a local user account for your digital signage:
+    - Enter a user name and password, and toggle **Auto sign-in** to **Yes**.
+    - Under **Configure the kiosk mode app**, enter the user name for the account that you're creating.
+    - For **App type**, select **Universal Windows App**.
+    - In **Enter the AUMID for the app**, enter `Microsoft.KioskBrowser_8wekyb3d8bbwe!App`.
+1. In the bottom left corner of Windows Configuration Designer, select **Switch to advanced editor**.
+1. Go to **Runtime settings** > **Policies** > **KioskBrowser**. Let's assume that the URL for your digital signage content is contoso.com/menu:
+    - In **BlockedUrlExceptions**, enter `https://www.contoso.com/menu`.
+    - In **BlockedUrl**, enter `*`.
+    - In **DefaultUrl**, enter `https://www.contoso.com/menu`.
+    - Set **EnableEndSessionButton**, **EnableHomeButton**, and **EnableNavigationButtons** to **No**.
+
+    >[!TIP]
+    >For more information on kiosk browser settings, see [Guidelines for web browsers](guidelines-for-assigned-access-app.md#guidelines-for-web-browsers).
+
+1. On the **File** menu, select **Save**, and select **OK** in the **Keep your info secure** dialog box.
+1. On the **Export** menu, select **Provisioning package**.
+1. Change the **Owner** to **IT Admin**, and select **Next**.
+1. On **Select security details for the provisioning package**, select **Next**.
+1. On **Select where to save the provisioning package**, select **Next**.
+1. On **Build the provisioning package**, select **Build**.
+1. On the **All done!** screen, click the **Output location**.
+1. Copy the .ppkg file to a USB drive.
+1. Attach the USB drive to the device that you want to use for your digital sign.
+1. Go to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package on the USB drive.
+-->

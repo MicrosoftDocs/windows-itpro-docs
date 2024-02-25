@@ -7,7 +7,7 @@ ms.date: 02/05/2024
 
 # Quickstart: configure a kiosk experience with Shell Launcher
 
-When you configure Windows as a *kisok*, you assign a single application to run above the lock screen. This is useful for public-facing scenarios, such as a digital sign or a public browser.
+When you configure Windows as a *kiosk* with Shell Launcher, you configure an application to replace the default shell (`explorer.exe`). This is useful for public-facing scenarios, such as a point of sale or a business critical application.
 
 This quickstart provides practical examples of how to configure a kiosk experience on Windows with Shell Launcher. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, and PowerShell. While different solutions are used, the configuration settings and results are the same.
 

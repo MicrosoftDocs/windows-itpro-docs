@@ -12,7 +12,8 @@ This reference article contains the XML schema definitions (XSD) for Shell Launc
 ## Shell Launcher XSD
 
 ```xml
-<xs:schema elementFormDefault="qualified"
+<xs:schema
+    elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
     xmlns:default="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
@@ -165,7 +166,8 @@ This reference article contains the XML schema definitions (XSD) for Shell Launc
 ## Shell Launcher v2 XSD
 
 ```xml
-<xs:schema elementFormDefault="qualified"
+<xs:schema
+    elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"
     xmlns:default="http://schemas.microsoft.com/ShellLauncher/2019/Configuration" targetNamespace="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">

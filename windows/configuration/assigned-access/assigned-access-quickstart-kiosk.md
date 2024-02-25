@@ -7,7 +7,7 @@ ms.date: 02/05/2024
 
 # Quickstart: Configure a kiosk with Assigned Access
 
-When you configure Windows as a *kisok*, you assign a single application to run above the lock screen. This is useful for public-facing scenarios, such as a digital sign or a public browser.
+When you configure Windows as a *kiosk* with Assigned Access, you configure a single application to run above the Windows lock screen. This is useful for public-facing scenarios, such as a digital sign or a public browser.
 
 This quickstart provides practical examples of how to configure a kiosk experience on Windows with Assigne Access. The examples describe the steps using the Settings app, a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
 

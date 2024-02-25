@@ -74,3 +74,15 @@ There are several kiosk configuration methods that you can choose from, dependin
 
 >[!NOTE]
 >For devices running Windows client Enterprise and Education, you can also use [Windows Defender Application Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) or [AppLocker](lock-down-windows-10-applocker.md) to lock down a device to specific apps.
+
+<!--
+
+> [!NOTE]
+> The use of multiple monitors is supported for multi-app kiosk mode in Windows 11.
+
+
+
+A kiosk device typically runs a single application, and users are prevented from accessing any features or functions on the device outside of the app.
+
+The assigned access feature is intended for dedicated devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, impacting other users on the device. Deleting the kiosk configuration removes the assigned access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, the Start layout). To clear all the policy settings enforced by Assigned Access, you must reset Windows.
+

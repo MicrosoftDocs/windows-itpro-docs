@@ -1,46 +1,29 @@
 ---
-title: Policies enforced on kiosk devices
-description: Learn about the policies enforced on a device when you configure it as a kiosk.
-ms.topic: article
-ms.date: 12/31/2017
+title: Policy settings enforced by Assigned Access
+description: Learn about the policy settings enforced on a device configured with Assigned Access.
+ms.topic: reference
+ms.date: 02/26/2024
 ---
 
-# Policies enforced on kiosk devices
+# Policy settings enforced by Assigned Access
 
-It isn't recommended to set policies enforced in assigned access kiosk mode to different values using other channels, as the kiosk mode has been optimized to provide a locked-down experience.
+When the Assigned Access configuration is applied on a device, certain policy settings are enforced, impacting other users using the device.
 
-When the assigned access kiosk configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device.
+This reference article lists the policy settings applied by Assigned Access.
 
-## Group Policy
+
+
+## Group policy
 
 The following local policies affect all **non-administrator** users on the system, regardless whether the user is configured as an assigned access user or not.  These users include local users, domain users, and Microsoft Entra users.
 
 | Setting | Value |
 |--|--|
-| Remove access to the context menus for the task bar | Enabled |
-| Clear history of recently opened documents on exit | Enabled |
-| Prevent users from customizing their Start Screen | Enabled |
-| Prevent users from uninstalling applications from Start | Enabled |
-| Remove Run menu from Start Menu | Enabled |
-| Disable showing balloon notifications as toast | Enabled |
-| Do not allow pinning items in Jump Lists | Enabled |
-| Do not allow pinning programs to the Taskbar | Enabled |
-| Do not display or track items in Jump Lists from remote locations | Enabled |
-| Remove Notifications and Action Center | Enabled |
-| Lock all taskbar settings | Enabled |
-| Lock the Taskbar | Enabled |
-| Prevent users from adding or removing toolbars | Enabled |
-| Prevent users from resizing the taskbar | Enabled |
-| Remove frequent programs list from the Start Menu | Enabled |
 | Remove Pinned programs from the taskbar | Enabled |
-| Remove the Security and Maintenance icon | Enabled |
-| Turn off all balloon notifications | Enabled |
-| Turn off feature advertisement balloon notifications | Enabled |
 | Turn off toast notifications | Enabled |
 | Remove Task Manager | Enabled |
 | Remove Change Password option in Security Options UI | Enabled |
 | Remove Sign Out option in Security Options UI | Enabled |
-| Remove All Programs list from the Start Menu | Enabled - Remove and disable setting |
 | Prevent access to drives from My Computer | Enabled - Restrict all drives |
 
 >[!NOTE]
@@ -48,38 +31,32 @@ The following local policies affect all **non-administrator** users on the syste
 
 ## MDM policy
 
-
-Some of the MDM policies based on the [Policy configuration service provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider) affect all users on the system.
-
-| Setting | Value | System-wide |
-|--|--|--|
-| [Experience/AllowCortana](/windows/client-management/mdm/policy-csp-experience#experience-allowcortana) | 0 - Not allowed | Yes |
-| [Start/AllowPinnedFolderDocuments](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdocuments) | 0 - Shortcut is hidden and disables the setting in the Settings app | Yes |
-| [Start/AllowPinnedFolderDownloads](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdownloads) | 0 - Shortcut is hidden and disables the setting in the Settings app | Yes |
-| [Start/AllowPinnedFolderFileExplorer](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderfileexplorer) | 0 - Shortcut is hidden and disables the setting in the Settings app | Yes |
-| [Start/AllowPinnedFolderHomeGroup](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderhomegroup) | 0 - Shortcut is hidden and disables the setting in the Settings app | Yes |
-| [Start/AllowPinnedFolderMusic](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldermusic) | 0 - Shortcut is hidden and disables the setting in the Settings app | Yes |
-| [Start/AllowPinnedFolderNetwork](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldernetwork) | 0 - Shortcut is hidden and disables the setting in the Settings app | Yes |
-| [Start/AllowPinnedFolderPersonalFolder](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpersonalfolder) | 0 - Shortcut is hidden and disables the setting in the Settings app | Yes |
-| [Start/AllowPinnedFolderPictures](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpictures) | 0 - Shortcut is hidden and disables the setting in the Settings app | Yes |
-| [Start/AllowPinnedFolderSettings](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldersettings) | 0 - Shortcut is hidden and disables the setting in the Settings app | Yes |
-| [Start/AllowPinnedFolderVideos](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldervideos) | 0 - Shortcut is hidden and disables the setting in the Settings app | Yes |
-| Start/DisableContextMenus | 1 - Context menus are hidden for Start apps | No |
-| [Start/HidePeopleBar](/windows/client-management/mdm/policy-csp-start#start-hidepeoplebar) | 1 - True (hide) | No |
-| [Start/HideChangeAccountSettings](/windows/client-management/mdm/policy-csp-start#start-hidechangeaccountsettings) | 1 - True (hide) | Yes |
-| [WindowsInkWorkspace/AllowWindowsInkWorkspace](/windows/client-management/mdm/policy-csp-windowsinkworkspace#windowsinkworkspace-allowwindowsinkworkspace) | 0 - Access to ink workspace is disabled and the feature is turned off | Yes |
-| [Start/StartLayout](/windows/client-management/mdm/policy-csp-start#start-startlayout) | Configuration dependent | No |
-| [WindowsLogon/DontDisplayNetworkSelectionUI](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui) | &lt;Enabled/> | Yes |
+Start/AllowPinnedFolderDocuments
+Start/AllowPinnedFolderDownloads
+Start/AllowPinnedFolderFileExplorer
+Start/AllowPinnedFolderHomeGroup
+Start/AllowPinnedFolderMusic
+Start/AllowPinnedFolderNetwork
+Start/AllowPinnedFolderPersonalFolder
+Start/AllowPinnedFolderPictures
+Start/AllowPinnedFolderSettings
+Start/AllowPinnedFolderVideos
+Start/DisableContextMenus
+Start/HidePeopleBar (hide)
+Start/HideChangeAccountSettings (hide)
+AllowWindowsInkWorkspace (disabled and the feature is turned off)
+StartLayout
+DontDisplayNetworkSelectionUI
 
 <!--
 ## Start Menu
 
-Remove access to the context menus for the task bar
-Clear history of recently opened documents on exit
-Prevent users from customizing their Start Screen
-Prevent users from uninstalling applications from Start
-Remove All Programs list from the Start menu
-Remove Run menu from Start Menu
+*Remove access to the context menus for the task bar
+*Clear history of recently opened documents on exit
+*Prevent users from customizing their Start Screen
+*Prevent users from uninstalling applications from Start
+*Remove All Programs list from the Start menu
+*Remove Run menu from Start Menu
 
 ## Desktop
 
@@ -87,22 +64,25 @@ Hide and disable all items on the desktop
 
 ## Task bar
 
-Disable showing balloon notificationss as toast
-Do not allow pinning items in Jump Lists
-Do not allow pinning programs to the Taskbar
-Do not display or track items in Jump Lists from remote locations
-Remove Notification Center
-Remove Control Center
-Lock all taskbar settings
-Lock the Taskbar
-Prevent users from adding or removing toolbars
-Prevent users from moving taskbar to another screen dock location
-Prevent users from rearranging toolbars
-Prevent users from resizing the taskbar
-Remove frequent programs list from the Start Menu
-Remove the Security and Maintenance icon
-Turn off all balloon notifications
-Turn off feature advertisement balloon notifications
-Hide the Task View button
+*Disable showing balloon notificationss as toast
+*Do not allow pinning items in Jump Lists
+*Do not allow pinning programs to the Taskbar
+*Do not display or track items in Jump Lists from remote locations
+*Remove Notification Center
+*Remove Control Center (What is it? is it action center perhaps?)
+*Lock all Taskbar settings
+*Lock the Taskbar
+*Prevent users from adding or removing toolbars
+**Prevent users from moving taskbar to another screen dock location
+**Prevent users from rearranging toolbars
+*Prevent users from resizing the taskbar
+*Remove frequent programs list from the Start Menu
+*Remove the Security and Maintenance icon
+*Turn off all balloon notifications
+*Turn off feature advertisement balloon notifications
+**Hide the Task View button
 
 -->
+
+>[!NOTE]
+>It's not recommended to configure policy settings enforced by Assigned Access to different values using other channels. Assigned Access is optimized to provide a locked-down experience.
