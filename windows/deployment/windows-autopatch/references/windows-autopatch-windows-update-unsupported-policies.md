@@ -20,7 +20,7 @@ ms.collection:
 
 The following policies contain settings that apply to both Windows quality and feature updates. After onboarding there will be four of these policies in your tenant with the following naming convention:
 
-**Modern Workplace Update Policy [ring name] – [Windows Autopatch]**
+**Modern Workplace Update Policy [ring name] - [Windows Autopatch]**
 
 ### Windows 10 and later update settings
 
@@ -52,7 +52,7 @@ The following policies contain settings that apply to both Windows quality and f
 
 | Setting name | Test | First | Fast | Broad |
 | ----- | ----- | ----- | ----- | ----- |
-| Included groups | Modern Workplace Devices–Windows Autopatch-Test | Modern Workplace Devices–Windows Autopatch-First | Modern Workplace Devices–Windows Autopatch-Fast | Modern Workplace Devices–Windows Autopatch-Broad |
+| Included groups | Modern Workplace Devices-Windows Autopatch-Test | Modern Workplace Devices-Windows Autopatch-First | Modern Workplace Devices-Windows Autopatch-Fast | Modern Workplace Devices-Windows Autopatch-Broad |
 | Excluded groups | None | None | None | None |
 
 ## Windows feature update policies
@@ -76,8 +76,8 @@ These policies control the minimum target version of Windows that a device is me
 
 | Setting name | Test | First | Fast | Broad |
 | ----- | ----- | ----- | ----- | ----- |
-| Included groups | Modern Workplace Devices–Windows Autopatch-Test  | Modern Workplace Devices–Windows Autopatch-First | Modern Workplace Devices–Windows Autopatch-Fast | Modern Workplace Devices–Windows Autopatch-Broad |
-| Excluded groups | Modern Workplace – Windows 11 Pre-Release Test Devices | Modern Workplace – Windows 11 Pre-Release Test Devices | Modern Workplace – Windows 11 Pre-Release Test Devices | Modern Workplace – Windows 11 Pre-Release Test Devices |
+| Included groups | Modern Workplace Devices-Windows Autopatch-Test  | Modern Workplace Devices-Windows Autopatch-First | Modern Workplace Devices-Windows Autopatch-Fast | Modern Workplace Devices-Windows Autopatch-Broad |
+| Excluded groups | Modern Workplace - Windows 11 Pre-Release Test Devices | Modern Workplace - Windows 11 Pre-Release Test Devices | Modern Workplace - Windows 11 Pre-Release Test Devices | Modern Workplace - Windows 11 Pre-Release Test Devices |
 
 #### Windows 11 testing
 
@@ -94,7 +94,7 @@ To allow customers to test Windows 11 in their environment, there's a separate D
 
 | Setting name | Test |
 | ----- | ----- |
-| Included groups | Modern Workplace – Windows 11 Pre-Release Test Devices |
+| Included groups | Modern Workplace - Windows 11 Pre-Release Test Devices |
 | Excluded groups | None |
 
 ## Conflicting and unsupported policies

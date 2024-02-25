@@ -12771,98 +12771,1793 @@
       "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/assign-applications-using-roles-in-mdt.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/assign-applications-using-roles-in-mdt",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/assign-applications-using-roles-in-mdt.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/assign-applications-using-roles-in-mdt",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/configure-mdt-deployment-share-rules.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/configure-mdt-deployment-share-rules",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/configure-mdt-deployment-share-rules.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/configure-mdt-deployment-share-rules",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/configure-mdt-for-userexit-scripts.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/configure-mdt-for-userexit-scripts",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/configure-mdt-for-userexit-scripts.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/configure-mdt-for-userexit-scripts",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/configure-mdt-settings.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/configure-mdt-settings",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/configure-mdt-settings.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/configure-mdt-settings",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/create-a-windows-10-reference-image",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/create-a-windows-10-reference-image",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/set-up-mdt-for-bitlocker.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/set-up-mdt-for-bitlocker",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/set-up-mdt-for-bitlocker.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/set-up-mdt-for-bitlocker",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/simulate-a-windows-10-deployment-in-a-test-environment.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/simulate-a-windows-10-deployment-in-a-test-environment",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/simulate-a-windows-10-deployment-in-a-test-environment.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/simulate-a-windows-10-deployment-in-a-test-environment",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/use-orchestrator-runbooks-with-mdt.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/use-orchestrator-runbooks-with-mdt",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/use-orchestrator-runbooks-with-mdt.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/use-orchestrator-runbooks-with-mdt",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/use-the-mdt-database-to-stage-windows-10-deployment-information.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/use-the-mdt-database-to-stage-windows-10-deployment-information",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/use-the-mdt-database-to-stage-windows-10-deployment-information.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/use-the-mdt-database-to-stage-windows-10-deployment-information",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/deploy-windows-mdt/use-web-services-in-mdt.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/use-web-services-in-mdt",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/deploy-windows-mdt/use-web-services-in-mdt.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/use-web-services-in-mdt",
+      "redirect_document_id": false
     },
     {
-     "source_path":  "windows/deployment/windows-10-poc-mdt.md",
-     "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/windows-10-poc-mdt",
-     "redirect_document_id":  false
+      "source_path": "windows/deployment/windows-10-poc-mdt.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/windows-10-poc-mdt",
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/upgrade/resolve-windows-10-upgrade-errors.md",
       "redirect_url": "/windows/deployment/upgrade/resolve-windows-upgrade-errors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-deployment-scenarios.md",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-subscription-activation.md",
+      "redirect_url": "/windows/deployment/windows-subscription-activation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-enterprise-e3-overview.md",
+      "redirect_url": "/windows/deployment/windows-enterprise-e3-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/advanced-security-audit-policy-settings.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/advanced-security-audit-policy-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/advanced-security-auditing.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/advanced-security-auditing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/appendix-a-security-monitoring-recommendations-for-many-audit-events.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/appendix-a-security-monitoring-recommendations-for-many-audit-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-account-lockout.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-account-lockout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-application-generated.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-application-generated",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-application-group-management.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-application-group-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-audit-policy-change.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-audit-policy-change",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-authentication-policy-change.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-authentication-policy-change",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-authorization-policy-change.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-authorization-policy-change",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-central-access-policy-staging.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-central-access-policy-staging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-certification-services.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-certification-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-computer-account-management.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-computer-account-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-credential-validation.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-credential-validation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-detailed-directory-service-replication.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-detailed-directory-service-replication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-detailed-file-share.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-detailed-file-share",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-directory-service-access.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-directory-service-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-directory-service-changes.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-directory-service-changes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-directory-service-replication.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-directory-service-replication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-distribution-group-management.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-distribution-group-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-dpapi-activity.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-dpapi-activity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-file-share.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-file-share",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-file-system.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-file-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-filtering-platform-connection.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-filtering-platform-connection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-filtering-platform-packet-drop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-filtering-platform-policy-change.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-filtering-platform-policy-change",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-group-membership.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-group-membership",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-handle-manipulation.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-handle-manipulation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-ipsec-driver.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-ipsec-driver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-ipsec-extended-mode.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-ipsec-extended-mode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-ipsec-main-mode.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-ipsec-main-mode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-ipsec-quick-mode.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-ipsec-quick-mode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-kerberos-authentication-service.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-kerberos-authentication-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-kerberos-service-ticket-operations.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-kerberos-service-ticket-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-kernel-object.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-kernel-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-logoff.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-logoff",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-logon.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-logon",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-mpssvc-rule-level-policy-change.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-mpssvc-rule-level-policy-change",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-network-policy-server.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-network-policy-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-non-sensitive-privilege-use.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-non-sensitive-privilege-use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-other-account-logon-events.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-other-account-logon-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-other-account-management-events.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-other-account-management-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-other-logonlogoff-events.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-other-logonlogoff-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-other-object-access-events.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-other-object-access-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-other-policy-change-events.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-other-policy-change-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-other-privilege-use-events.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-other-privilege-use-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-other-system-events.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-other-system-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-pnp-activity.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-pnp-activity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-process-creation.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-process-creation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-process-termination.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-process-termination",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-registry.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-registry",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-removable-storage.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-removable-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-rpc-events.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-rpc-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-sam.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-sam",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-security-group-management.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-security-group-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-security-state-change.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-security-state-change",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-security-system-extension.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-security-system-extension",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-sensitive-privilege-use.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-sensitive-privilege-use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-special-logon.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-special-logon",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-system-integrity.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-system-integrity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-token-right-adjusted.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-token-right-adjusted",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-user-account-management.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-user-account-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/audit-user-device-claims.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/audit-user-device-claims",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/basic-audit-account-logon-events.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/basic-audit-account-logon-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/basic-audit-account-management.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/basic-audit-account-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/basic-audit-directory-service-access.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/basic-audit-directory-service-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/basic-audit-logon-events.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/basic-audit-logon-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/basic-audit-object-access.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/basic-audit-object-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/basic-audit-policy-change.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/basic-audit-policy-change",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/basic-audit-privilege-use.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/basic-audit-privilege-use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/basic-audit-process-tracking.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/basic-audit-process-tracking",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/basic-audit-system-events.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/basic-audit-system-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/basic-security-audit-policies.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/basic-security-audit-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/basic-security-audit-policy-settings.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/basic-security-audit-policy-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/create-a-basic-audit-policy-settings-for-an-event-category.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/create-a-basic-audit-policy-settings-for-an-event-category",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-1100.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-1100",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-1102.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-1102",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-1104.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-1104",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-1105.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-1105",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-1108.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-1108",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4608.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4608",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4610.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4610",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4611.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4611",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4612.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4612",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4614.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4614",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4615.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4615",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4616.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4616",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4618.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4618",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4621.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4621",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4622.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4622",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4624.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4624",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4625.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4626.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4626",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4627.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4627",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4634.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4634",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4647.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4647",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4648.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4648",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4649.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4649",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4656.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4656",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4657.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4657",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4658.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4658",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4660.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4660",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4661.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4661",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4662.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4662",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4663.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4663",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4664.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4664",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4670.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4670",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4671.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4671",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4672.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4672",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4673.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4673",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4674.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4675.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4675",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4688.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4688",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4689.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4689",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4690.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4690",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4691.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4691",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4692.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4692",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4693.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4693",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4694.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4694",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4695.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4695",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4696.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4696",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4697.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4697",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4698.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4698",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4699.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4699",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4700.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4700",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4701.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4701",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4702.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4702",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4703.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4703",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4704.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4704",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4705.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4705",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4706.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4706",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4707.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4707",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4713.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4713",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4714.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4714",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4715.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4715",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4716.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4716",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4717.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4717",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4718.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4718",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4719.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4719",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4720.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4720",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4722.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4722",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4723.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4723",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4724.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4724",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4725.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4725",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4726.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4726",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4731.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4731",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4732.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4732",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4733.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4733",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4734.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4734",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4735.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4735",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4738.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4738",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4739.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4739",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4740.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4740",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4741.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4741",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4742.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4742",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4743.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4743",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4749.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4749",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4750.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4750",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4751.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4751",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4752.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4752",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4753.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4753",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4764.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4764",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4765.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4765",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4766.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4766",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4767.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4767",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4768.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4768",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4769.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4769",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4770.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4770",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4771.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4771",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4772.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4772",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4773.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4773",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4774.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4774",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4775.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4775",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4776.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4776",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4777.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4777",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4778.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4778",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4779.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4779",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4780.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4780",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4781.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4781",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4782.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4782",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4793.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4793",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4794.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4794",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4798.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4798",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4799.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4799",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4800.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4800",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4801.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4801",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4802.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4802",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4803.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4803",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4816.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4816",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4817.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4817",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4818.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4818",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4819.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4819",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4826.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4826",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4864.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4864",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4865.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4865",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4866.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4866",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4867.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4867",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4902.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4902",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4904.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4904",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4905.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4905",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4906.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4906",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4907.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4907",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4908.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4908",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4909.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4909",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4910.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4910",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4911.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4911",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4912.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4912",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4913.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4913",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4928.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4928",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4929.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4929",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4930.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4930",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4931.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4931",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4932.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4932",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4933.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4933",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4934.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4934",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4935.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4935",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4936.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4936",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4937.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4937",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4944.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4944",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4945.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4945",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4946.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4946",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4947.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4947",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4948.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4948",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4949.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4949",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4950.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4950",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4951.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4951",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4952.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4952",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4953.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4953",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4954.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4954",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4956.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4956",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4957.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4957",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4958.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4958",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4964.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4964",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-4985.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4985",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5024.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5024",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5025.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5025",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5027.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5027",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5028.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5028",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5029.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5029",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5030.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5030",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5031.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5031",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5032.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5032",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5033.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5033",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5034.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5034",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5035.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5035",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5037.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5037",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5038.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5038",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5039.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5039",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5051.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5051",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5056.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5056",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5057.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5057",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5058.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5058",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5059.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5059",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5060.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5060",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5061.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5061",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5062.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5062",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5063.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5063",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5064.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5064",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5065.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5065",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5066.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5066",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5067.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5067",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5068.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5068",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5069.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5069",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5070.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5070",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5136.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5136",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5137.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5137",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5138.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5138",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5139.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5139",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5140.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5140",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5141.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5141",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5142.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5142",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5143.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5143",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5144.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5144",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5145.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5145",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5148.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5148",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5149.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5149",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5150.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5150",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5151.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5151",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5152.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5152",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5153.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5153",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5154.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5154",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5155.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5155",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5156.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5156",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5157.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5157",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5158.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5158",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5159.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5159",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5168.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5168",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5376.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5376",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5377.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5377",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5378.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5378",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5447.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5447",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5632.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5632",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5633.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5633",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5712.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5712",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5888.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5888",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5889.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5889",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-5890.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-5890",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6144.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6144",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6145.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6145",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6281.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6281",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6400.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6400",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6401.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6401",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6402.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6402",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6403.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6403",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6404.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6404",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6405.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6405",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6406.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6406",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6407.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6407",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6408.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6408",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6409.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6409",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6410.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6410",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6416.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6416",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6419.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6419",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6420.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6420",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6421.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6421",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6422.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6422",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6423.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6423",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/event-6424.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-6424",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/file-system-global-object-access-auditing.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/file-system-global-object-access-auditing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/how-to-list-xml-elements-in-eventdata.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/how-to-list-xml-elements-in-eventdata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/monitor-central-access-policy-and-rule-definitions.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/monitor-central-access-policy-and-rule-definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/monitor-claim-types.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/monitor-claim-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/monitor-resource-attribute-definitions.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/monitor-resource-attribute-definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/monitor-the-central-access-policies-associated-with-files-and-folders.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/monitor-the-central-access-policies-associated-with-files-and-folders",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/monitor-the-central-access-policies-that-apply-on-a-file-server.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/monitor-the-central-access-policies-that-apply-on-a-file-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/monitor-the-resource-attributes-on-files-and-folders.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/monitor-the-resource-attributes-on-files-and-folders",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/monitor-the-use-of-removable-storage-devices.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/monitor-the-use-of-removable-storage-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/monitor-user-and-device-claims-during-sign-in.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/monitor-user-and-device-claims-during-sign-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/other-events.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/other-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/planning-and-deploying-advanced-security-audit-policies.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/planning-and-deploying-advanced-security-audit-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/registry-global-object-access-auditing.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/registry-global-object-access-auditing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/security-auditing-overview.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/security-auditing-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/view-the-security-event-log.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/view-the-security-event-log",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/which-editions-of-windows-support-advanced-audit-policy-configuration.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/which-editions-of-windows-support-advanced-audit-policy-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/auditing/advanced-security-auditing-faq.yml",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/advanced-security-auditing-faq",
       "redirect_document_id": false
     }
   ]

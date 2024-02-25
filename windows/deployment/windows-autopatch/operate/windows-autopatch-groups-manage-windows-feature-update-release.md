@@ -23,7 +23,7 @@ You can create custom releases for Windows feature update deployments in Windows
 
 Before you start managing custom Windows feature update releases, consider the following:
 
-- If you’re planning on using either the [Default or Custom Autopatch groups](../deploy/windows-autopatch-groups-overview.md#key-concepts) ensure:
+- If you're planning on using either the [Default or Custom Autopatch groups](../deploy/windows-autopatch-groups-overview.md#key-concepts) ensure:
     - The Default Autopatch group has all deployment rings and deployment cadences you need.
     - You have created all your Custom Autopatch groups prior to creating custom releases.
 - Review [Windows feature update prerequisites](/mem/intune/protect/windows-10-feature-updates#prerequisites).
@@ -42,7 +42,7 @@ The following table explains the auto-populating assignment of your deployments 
 | Phase 3 | Ring2 | Ring2 |
 | Phase 4 | Last | Ring3 |
 
-If the Autopatch groups are edited after a release is created (Active status), the changes to the Autopatch group won’t be reflected unless you create a new custom release.
+If the Autopatch groups are edited after a release is created (Active status), the changes to the Autopatch group won't be reflected unless you create a new custom release.
 
 If you wish to change the auto-populating assignment of your deployment rings to release phases, you can do so by adding, removing, or editing the auto-populated phases.
 
@@ -50,7 +50,7 @@ If you wish to change the auto-populating assignment of your deployment rings to
 
 The goal completion date of a phase is calculated using the following formula:
 
-`<First Deployment Date> + (<Number of gradual rollout groups> – 1) * Days in between groups (7) + Deadline for feature updates (5 days) + Grace Period (2 days).`
+`<First Deployment Date> + (<Number of gradual rollout groups> - 1) * Days in between groups (7) + Deadline for feature updates (5 days) + Grace Period (2 days).`
 
 This formula is only applicable for **Deadline-driven** not for Scheduled-driven deployment cadences. For more information, see [Customize Windows Update settings](../operate/windows-autopatch-groups-windows-update.md).
 
@@ -102,7 +102,7 @@ A phase is made of one or more Autopatch group deployment rings. Each phase repo
 
 | Phase status | Definition |
 | ----- | ----- |
-| Scheduled | The phase is scheduled but hasn’t reached its first deployment date yet. The Windows feature update policy hasn’t been created for the respective phase yet. |
+| Scheduled | The phase is scheduled but hasn't reached its first deployment date yet. The Windows feature update policy hasn't been created for the respective phase yet. |
 | Active | The first deployment date has been reached. The Windows feature update policy has been created for the respective phase. |
 | Inactive | All Autopatch groups within the phase were re-assigned to a new release. All Windows feature update policies were unassigned from the Autopatch groups. |
 | Paused | Phase is paused. You must resume the phase. |
@@ -112,7 +112,7 @@ A phase is made of one or more Autopatch group deployment rings. Each phase repo
 
 Windows Autopatch creates one Windows feature update policy per phase using the following naming convention:
 
-`Windows Autopatch – DSS policy – <Release Name> – Phase <Phase Number>`
+`Windows Autopatch - DSS policy - <Release Name> - Phase <Phase Number>`
 
 These policies can be viewed in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
@@ -120,11 +120,11 @@ The following table is an example of the Windows feature update policies that we
 
 | Policy name | Feature update version | Rollout options | First deployment date| Final deployment date availability | Day between groups | Support end date |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Windows Autopatch - DSS Policy - My feature update release – Phase 1  | Windows 10 21H2 | Make update available as soon as possible | April 24, 2023 | April 24, 2023 | N/A | June 11, 2024 |
-| Windows Autopatch - DSS Policy - My feature update release – Phase 2  | Windows 10 21H2 | Make update available as soon as possible | June 26, 2023 | July 17, 2023 | 7 | June 11, 2024 |
-| Windows Autopatch - DSS Policy - My feature update release – Phase 3 | Windows 10 21H2 | Make update available as soon as possible | July 24, 2023 | August 14, 2023 | 7 | June 11, 2024 |
-| Windows Autopatch - DSS Policy - My feature update release – Phase 4  | Windows 10 21H2 | Make update available as soon as possible | August 28, 2023 | September 10, 2023 | 7 | June 11, 2024 |
-| Windows Autopatch - DSS Policy - My feature update release – Phase 5  | Windows 10 21H2 | Make update available as soon as possible | September 25, 2023 | October 16, 2023 | 7 | June 11, 2024 |
+| Windows Autopatch - DSS Policy - My feature update release - Phase 1  | Windows 10 21H2 | Make update available as soon as possible | April 24, 2023 | April 24, 2023 | N/A | June 11, 2024 |
+| Windows Autopatch - DSS Policy - My feature update release - Phase 2  | Windows 10 21H2 | Make update available as soon as possible | June 26, 2023 | July 17, 2023 | 7 | June 11, 2024 |
+| Windows Autopatch - DSS Policy - My feature update release - Phase 3 | Windows 10 21H2 | Make update available as soon as possible | July 24, 2023 | August 14, 2023 | 7 | June 11, 2024 |
+| Windows Autopatch - DSS Policy - My feature update release - Phase 4  | Windows 10 21H2 | Make update available as soon as possible | August 28, 2023 | September 10, 2023 | 7 | June 11, 2024 |
+| Windows Autopatch - DSS Policy - My feature update release - Phase 5  | Windows 10 21H2 | Make update available as soon as possible | September 25, 2023 | October 16, 2023 | 7 | June 11, 2024 |
 
 ## Create a custom release
 
@@ -142,11 +142,11 @@ The following table is an example of the Windows feature update policies that we
     4. Select **Next**.
 1. In the **Autopatch groups** page, choose one or more existing Autopatch groups you want to include in the custom release, then select Next.
 1. You can't choose Autopatch groups that are already part of an existing custom release. Select **Autopatch groups assigned to other releases** to review existing assignments.
-1. In the Release phases page, review the number of auto-populated phases. You can Edit, Delete and Add phase based on your needs. Once you’re ready, select **Next**. **Before you proceed to the next step**, all deployment rings must be assigned to a phase, and all phases must have deployment rings assigned.
-1. In the **Release schedule** page, choose **First deployment date**, and the number of **Gradual rollout groups**, then select **Next**. **You can only select the next day**, not the current day, as the first deployment date. The service creates feature update policy for Windows 10 and later twice a day at 4:00AM and 4:00PM (UTC) and can’t guarantee that the release will start at the current day given the UTC variance across the globe.
+1. In the Release phases page, review the number of auto-populated phases. You can Edit, Delete and Add phase based on your needs. Once you're ready, select **Next**. **Before you proceed to the next step**, all deployment rings must be assigned to a phase, and all phases must have deployment rings assigned.
+1. In the **Release schedule** page, choose **First deployment date**, and the number of **Gradual rollout groups**, then select **Next**. **You can only select the next day**, not the current day, as the first deployment date. The service creates feature update policy for Windows 10 and later twice a day at 4:00AM and 4:00PM (UTC) and can't guarantee that the release will start at the current day given the UTC variance across the globe.
     1. The **Goal completion date** only applies to the [Deadline-driven deployment cadence type](../operate/windows-autopatch-groups-windows-update.md#deadline-driven). The Deadline-drive deployment cadence type can be specified when you configure the Windows Updates settings during the Autopatch group creation/editing flow.
-    2. Additionally, the formula for the goal completion date is `<First Deployment Date> + (<Number of gradual rollout groups> – 1) * Days in between groups (7) + Deadline for feature updates (5 days) + Grace Period (2 days)`.
-1. In the **Review + create** page, review all settings. Once you’re ready, select **Create**.
+    2. Additionally, the formula for the goal completion date is `<First Deployment Date> + (<Number of gradual rollout groups> - 1) * Days in between groups (7) + Deadline for feature updates (5 days) + Grace Period (2 days)`.
+1. In the **Review + create** page, review all settings. Once you're ready, select **Create**.
 
 > [!NOTE]
 > Custom releases can't be deleted from the Windows feature updates release management blade. The custom release record serves as a historical record for auditing purposes when needed.
@@ -209,10 +209,10 @@ The following table is an example of the Windows feature update policies that we
 ## Roll back a release
 
 > [!CAUTION]
-> Do **not** use Microsoft Intune’s end-user flows to rollback Windows feature update deployments for Windows Autopatch managed devices. If you need assistance with rolling back deployments, [submit a support request](../operate/windows-autopatch-support-request.md).
+> Do **not** use Microsoft Intune's end-user flows to rollback Windows feature update deployments for Windows Autopatch managed devices. If you need assistance with rolling back deployments, [submit a support request](../operate/windows-autopatch-support-request.md).
 
-Windows Autopatch **doesn’t** support the rollback of Windows feature updates through its end-user experience flows.
+Windows Autopatch **doesn't** support the rollback of Windows feature updates through its end-user experience flows.
 
 ## Contact support
 
-If you’re experiencing issues related to Windows feature update deployments, [submit a support request](../operate/windows-autopatch-support-request.md).
+If you're experiencing issues related to Windows feature update deployments, [submit a support request](../operate/windows-autopatch-support-request.md).

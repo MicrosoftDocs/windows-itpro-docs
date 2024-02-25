@@ -13,6 +13,8 @@ items:
       href: configure.md
     - name: Configure with command line tools
       href: configure-with-command-line.md
+    - name: Dynamic keywords
+      href: dynamic-keywords.md
   - name: Hyper-V firewall
     href: hyper-v-firewall.md
   - name: Troubleshoot

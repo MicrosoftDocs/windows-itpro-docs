@@ -17,7 +17,7 @@ ms.collection:
 
 # Windows Autopatch groups overview
 
-As organizations move to a managed-service model where Microsoft manages update processes on their behalf, they’re challenged with having the right representation of their organizational structures followed by their own deployment cadence. Windows Autopatch groups help organizations manage updates in a way that makes sense for their businesses with no extra cost or unplanned disruptions.
+As organizations move to a managed-service model where Microsoft manages update processes on their behalf, they're challenged with having the right representation of their organizational structures followed by their own deployment cadence. Windows Autopatch groups help organizations manage updates in a way that makes sense for their businesses with no extra cost or unplanned disruptions.
 
 ## What are Windows Autopatch groups?
 
@@ -56,7 +56,7 @@ There are a few key concepts to be familiar with before using Autopatch groups.
 > [!NOTE]
 > The Default Autopatch group is recommended for organizations that can meet their business needs using the pre-configured five deployment ring composition.
 
-The Default Autopatch group uses Windows Autopatch’s default update management process recommendation. The Default Autopatch group contains:
+The Default Autopatch group uses Windows Autopatch's default update management process recommendation. The Default Autopatch group contains:
 
 - A set of **[five deployment rings](#default-deployment-ring-composition)**
 - A default update deployment cadence for both [Windows quality](../operate/windows-autopatch-groups-windows-quality-update-overview.md) and [feature updates](../operate/windows-autopatch-groups-windows-feature-update-overview.md).
@@ -64,21 +64,21 @@ The Default Autopatch group uses Windows Autopatch’s default update management
 The Default Autopatch group is intended to serve organizations that are looking to:
 
 - Enroll into the service
-- Align to Windows Autopatch’s default update management process without requiring more customizations.
+- Align to Windows Autopatch's default update management process without requiring more customizations.
 
-The Default Autopatch group **can’t** be deleted or renamed. However, you can customize its deployment ring composition to add and/or remove deployment rings, and you can also customize the update deployment cadences for each deployment ring within it.
+The Default Autopatch group **can't** be deleted or renamed. However, you can customize its deployment ring composition to add and/or remove deployment rings, and you can also customize the update deployment cadences for each deployment ring within it.
 
 #### Default deployment ring composition
 
 By default, the following [software update-based deployment rings](#software-based-deployment-rings), represented by Microsoft Entra ID assigned groups, are used:
 
-- Windows Autopatch – Test
-- Windows Autopatch – Ring1
-- Windows Autopatch – Ring2
-- Windows Autopatch – Ring3
-- Windows Autopatch – Last
+- Windows Autopatch - Test
+- Windows Autopatch - Ring1
+- Windows Autopatch - Ring2
+- Windows Autopatch - Ring3
+- Windows Autopatch - Last
 
-**Windows Autopatch – Test** and **Last** can be only used as **Assigned** device distributions. **Windows Autopatch – Ring1**, **Ring2** and **Ring3** can be used with either **Assigned** or **Dynamic** device distributions, or have a combination of both device distribution types.
+**Windows Autopatch - Test** and **Last** can be only used as **Assigned** device distributions. **Windows Autopatch - Ring1**, **Ring2** and **Ring3** can be used with either **Assigned** or **Dynamic** device distributions, or have a combination of both device distribution types.
 
 > [!TIP]
 > For more information about the differences between **Assigned** and **Dynamic** deployment ring distribution types, see [about deployment rings](#about-deployment-rings). Only deployment rings that are placed in between the **Test** and the **Last** deployment rings can be used with the **Dynamic** deployment ring distributions.
@@ -86,7 +86,7 @@ By default, the following [software update-based deployment rings](#software-bas
 > [!CAUTION]
 > These and other Microsoft Entra ID assigned groups created by Autopatch groups **can't** be missing in your tenant, otherwise, Autopatch groups might not function properly.
 
-The **Last** deployment ring, the fifth deployment ring in the Default Autopatch group, is intended to provide coverage for scenarios where a group of specialized devices and/or VIP/Executive users. They must receive software update deployments after the organization’s general population to mitigate disruptions to your organization’s critical businesses.
+The **Last** deployment ring, the fifth deployment ring in the Default Autopatch group, is intended to provide coverage for scenarios where a group of specialized devices and/or VIP/Executive users. They must receive software update deployments after the organization's general population to mitigate disruptions to your organization's critical businesses.
 
 #### Default update deployment cadences
 
@@ -144,7 +144,7 @@ Both the **Test** and **Last** deployment rings are default deployment rings tha
 If you only keep Test and Last deployment rings in your Default Autopatch group, or you don't add more deployment rings when creating a Custom Autopatch group, the Test deployment ring can be used as the pilot deployment ring and Last can be used as the production deployment ring.
 
 > [!IMPORTANT]
-> Both the **Test** and **Last** deployment rings **can't** be removed or renamed from the Default or Custom Autopatch groups. Autopatch groups don't support the use of one single deployment ring as part of its deployment ring composition because you need at least two deployment rings for their gradual rollout. If you must implement a specific scenario with a single deployment ring, and gradual rollout isn’t required, consider managing these devices outside Windows Autopatch.
+> Both the **Test** and **Last** deployment rings **can't** be removed or renamed from the Default or Custom Autopatch groups. Autopatch groups don't support the use of one single deployment ring as part of its deployment ring composition because you need at least two deployment rings for their gradual rollout. If you must implement a specific scenario with a single deployment ring, and gradual rollout isn't required, consider managing these devices outside Windows Autopatch.
 
 > [!TIP]
 > Both the **Test** and **Last** deployment rings only support one single Microsoft Entra group assignment at a time. If you need to assign more than one Microsoft Entra group, you can nest the other Microsoft Entra groups under the ones you plan to use with the **Test** and **Last** deployment rings. Only one level of Microsoft Entra group nesting is supported.
@@ -168,7 +168,7 @@ The following are the Microsoft Entra ID assigned groups that represent the serv
 - Modern Workplace Devices-Windows Autopatch-Broad
 
 > [!CAUTION]
-> **Don’t** modify the Microsoft Entra group membership types (Assigned and Dynamic). Otherwise, the Windows Autopatch service won’t be able to read the device group membership from these groups, and causes the Autopatch groups feature and other service-related operations to not work properly. <p>Additionally, it's **not** supported to have Configuration Manager collections directly synced to any Microsoft Entra group created by Autopatch groups.</p>
+> **Don't** modify the Microsoft Entra group membership types (Assigned and Dynamic). Otherwise, the Windows Autopatch service won't be able to read the device group membership from these groups, and causes the Autopatch groups feature and other service-related operations to not work properly. <p>Additionally, it's **not** supported to have Configuration Manager collections directly synced to any Microsoft Entra group created by Autopatch groups.</p>
 
 ##### Software-based deployment rings
 
@@ -177,16 +177,16 @@ The software-based deployment ring set is exclusively used with software update 
 The following are the Microsoft Entra ID assigned groups that represent the software updates-based deployment rings. These groups can't be deleted or renamed:
 
 - Windows Autopatch - Test
-- Windows Autopatch – Ring1
-- Windows Autopatch – Ring2
-- Windows Autopatch – Ring3
-- Windows Autopatch – Last
+- Windows Autopatch - Ring1
+- Windows Autopatch - Ring2
+- Windows Autopatch - Ring3
+- Windows Autopatch - Last
 
 > [!IMPORTANT]
 > Additional Microsoft Entra ID assigned groups are created and added to list when you add more deployment rings to the Default Autopatch group.
 
 > [!CAUTION]
-> **Don’t** modify the Microsoft Entra group membership types (Assigned and Dynamic). Otherwise, the Windows Autopatch service won’t be able to read the device group membership from these groups, and causes the Autopatch groups feature and other service-related operations to not work properly. <p>Additionally, it's **not** supported to have Configuration Manager collections directly synced to any Microsoft Entra group created by Autopatch groups.</p>
+> **Don't** modify the Microsoft Entra group membership types (Assigned and Dynamic). Otherwise, the Windows Autopatch service won't be able to read the device group membership from these groups, and causes the Autopatch groups feature and other service-related operations to not work properly. <p>Additionally, it's **not** supported to have Configuration Manager collections directly synced to any Microsoft Entra group created by Autopatch groups.</p>
 
 ### About device registration
 
@@ -203,7 +203,7 @@ The following are three common uses for using Autopatch groups.
 
 | Scenario | Solution |
 | ----- | ----- |
-| You’re working as the IT admin at Contoso Ltd. And manage several Microsoft and non-Microsoft cloud services. You don’t have extra time to spend setting up and managing several Autopatch groups.<p>Your organization currently operates its update management by using five deployment rings, but there’s an opportunity to have flexible deployment cadences if it’s precommunicated to your end-users.</p> | If you don’t have thousands of devices to manage, use the Default Autopatch group for your organization. You can edit the Default Autopatch group to include additional deployment rings and/or slightly modify some of its default deployment cadences.<p>The Default Autopatch group is preconfigured and doesn’t require extra configurations when registering devices with the Windows Autopatch service.</p><p>The following is a visual representation of a gradual rollout for the Default Autopatch group preconfigured and fully managed by the Windows Autopatch service.</p> |
+| You're working as the IT admin at Contoso Ltd. And manage several Microsoft and non-Microsoft cloud services. You don't have extra time to spend setting up and managing several Autopatch groups.<p>Your organization currently operates its update management by using five deployment rings, but there's an opportunity to have flexible deployment cadences if it's precommunicated to your end-users.</p> | If you don't have thousands of devices to manage, use the Default Autopatch group for your organization. You can edit the Default Autopatch group to include additional deployment rings and/or slightly modify some of its default deployment cadences.<p>The Default Autopatch group is preconfigured and doesn't require extra configurations when registering devices with the Windows Autopatch service.</p><p>The following is a visual representation of a gradual rollout for the Default Autopatch group preconfigured and fully managed by the Windows Autopatch service.</p> |
 
 :::image type="content" source="../media/autopatch-groups-default-autopatch-group.png" alt-text="Default Autopatch group" lightbox="../media/autopatch-groups-default-autopatch-group.png":::
 
@@ -211,7 +211,7 @@ The following are three common uses for using Autopatch groups.
 
 | Scenario | Solution |
 | ----- | ----- |
-| You’re working as the IT admin at Contoso Ltd. Your organization needs to plan a gradual rollout of software updates within specific critical business units or departments to help mitigate the risk of end-user disruption. | You can create a Custom Autopatch group for each of your business units. For example, you can create a Custom Autopatch group for the finance department and breakdown the deployment ring composition per the different user personas or based on how critical certain user groups can be for the department and then for the business.<p>The following is a visual representation of a gradual rollout for Contoso’s Finance department.</p> |
+| You're working as the IT admin at Contoso Ltd. Your organization needs to plan a gradual rollout of software updates within specific critical business units or departments to help mitigate the risk of end-user disruption. | You can create a Custom Autopatch group for each of your business units. For example, you can create a Custom Autopatch group for the finance department and breakdown the deployment ring composition per the different user personas or based on how critical certain user groups can be for the department and then for the business.<p>The following is a visual representation of a gradual rollout for Contoso's Finance department.</p> |
 
 :::image type="content" source="../media/autopatch-groups-finance-department-example.png" alt-text="Finance department example" lightbox="../media/autopatch-groups-finance-department-example.png":::
 
@@ -222,7 +222,7 @@ The following are three common uses for using Autopatch groups.
 
 | Scenario | Solution |
 | ----- | ----- |
-| You’re working as the IT admin at Contoso Ltd. Your branch location in Chicago needs to plan a gradual rollout of software updates within specific departments to make sure the Chicago office doesn’t experience disruptions in its operations. | You can create a Custom Autopatch group for the branch location in Chicago and breakdown the deployment ring composition per the departments within the branch location.<p>The following is a visual representation of a gradual rollout for the Contoso Chicago branch location.</p> |
+| You're working as the IT admin at Contoso Ltd. Your branch location in Chicago needs to plan a gradual rollout of software updates within specific departments to make sure the Chicago office doesn't experience disruptions in its operations. | You can create a Custom Autopatch group for the branch location in Chicago and breakdown the deployment ring composition per the departments within the branch location.<p>The following is a visual representation of a gradual rollout for the Contoso Chicago branch location.</p> |
 
 :::image type="content" source="../media/autopatch-groups-contoso-chicago-example.png" alt-text="Contoso Chicago example" lightbox="../media/autopatch-groups-contoso-chicago-example.png":::
 

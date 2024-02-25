@@ -45,7 +45,7 @@
       "ms.service": "windows-client",
       "manager": "aaroncz",
       "feedback_system": "Standard",
-            "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
+      "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.win-configuration",
@@ -64,9 +64,12 @@
         "beccarobins",
         "Stacyrch140",
         "v-stsavell",
-        "American-Dipper"
+        "American-Dipper",
+        "shdyas"
       ],
-      "searchScope": ["Windows 10"]
+      "searchScope": [
+        "Windows 10"
+      ]
     },
     "fileMetadata": {
       "feedback_system": {
@@ -124,11 +127,11 @@
         "wcd//**/*.md": "vinpa",
         "wcd//**/*.yml": "vinpa"
       },
-      "ms.reviewer":{
+      "ms.reviewer": {
         "kiosk//**/*.md": "sybruckm",
         "start//**/*.md": "ericpapa"
       },
-      "ms.collection":{
+      "ms.collection": {
         "wcd//**/*.md": "must-keep",
         "ue-v//**/*.md": [
           "must-keep",
@@ -151,4 +154,3 @@
     "markdownEngineName": "markdig"
   }
 }
-
