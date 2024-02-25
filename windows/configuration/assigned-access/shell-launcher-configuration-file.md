@@ -5,7 +5,7 @@ ms.date: 02/12/2024
 ms.topic: how-to
 ---
 
-# Shell Launcher configuration XML examples
+# Create an Shell Launcher configuration file
 
 This article provides practical examples of Shell Launcher XML configuration files.
 

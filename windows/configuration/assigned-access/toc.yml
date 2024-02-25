@@ -20,11 +20,11 @@ items:
     - name: Configure devices with Assigned Access
       href: assigned-access-configure.md
     - name: Create an Assigned Access configuration file
-      href: create-assigned-access-configuration.md
+      href: assigned-access-configuration-file.md
     - name: Configure devices with Shell Launcher
       href: shell-launcher-configure.md
     - name: Create a Shell Launcher configuration file
-      href: create-shell-launcher-configuration.md
+      href: shell-launcher-configuration-file.md
     - name: Find the AUMID of an installed app
       href: find-aumid.md
     - name: Use Shell Launcher to create a Windows client kiosk

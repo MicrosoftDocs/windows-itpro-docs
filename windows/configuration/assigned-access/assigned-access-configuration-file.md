@@ -17,7 +17,7 @@ Let's start by looking at the basic structure of the XML file.
 - A configuration xml can have multiple `configs`. Each config associates a non-admin user account to a default profile Id
 - A profile has no effect if it's not associated to a user account
 
-You can start your file by pasting the following XML code into a text editor, and saving the file as `filename.xml`.
+You can start your file by pasting the following XML code into a text editor, and saving the file with an xml extension. For example, `kiosk.xml`.
 
 ::: zone pivot="windows-11"
 
@@ -56,7 +56,7 @@ You can start your file by pasting the following XML code into a text editor, an
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
     xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config"
+    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
     <Profiles>
         <Profile Id="">
             <AllAppsList>
@@ -79,35 +79,71 @@ You can start your file by pasting the following XML code into a text editor, an
 
 ## Profiles node
 
+An Assigned Access configuration file can contain one or more profiles. Each profile is identified by a unique identified `Profile Id`, for example:
+
+```xml
+<Profiles>
+    <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
+        ...
+    </Profile>
+</Profiles>
+```
+
 There are two types of profiles that you can specify in the XML:
 
-- **Lockdown profile**: Users assigned a lockdown profile will see the desktop in tablet mode with the specific apps on the Start screen.
-- **Kiosk profile**: Starting with Windows 10 version 1803, this profile replaces the KioskModeApp node of the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp). Users assigned a kiosk profile won't see the desktop, but only the kiosk app running in full-screen mode.
+- `AllAppList` is used to configure a restricted user experience. Users assigned this profile access the desktop with the specific apps on the Start menu
+- `KioskModeApp`: is used to configure a kiosk experience. Users assigned this profile don't access the desktop, but only the UWP application or Microsoft Edge running in full-screen
 
-A lockdown profile section in the XML has the following entries:
+### AllAppList profile
 
-- [**Id**](#id)
-- [**AllowedApps**](#allowedapps)
-- [**StartPins**](#startpins)
-- [**Taskbar**](#taskbar)
+An `AllAppList` profile has the following properties:
 
-A kiosk profile in the XML has the following entries:
+::: zone pivot="windows-11"
 
-- [**Id**](#id)
-- [**KioskModeApp**](#kioskmodeapp)
+- `Id` (required)
+- `Name` (optional)
+- `AllowedApps`
+- `StartPins`
+- `TaskbarLayout`
+
+::: zone-end
+
+::: zone pivot="windows-10"
+
+- `Id` (required)
+- `Name` (optional)
+- `AllowedApps`
+- `StartLayout`
+- `Taskbar`
+- `FileExplorerNamespaceRestrictions`
+
+::: zone-end
+
+### KioskModeApp profile
+
+A `KioskModeApp` profile contains the following properties:
+
+- `Id` (required)
+- `Name` (optional)
+- `KioskModeApp` (required)
+
+Example:
+
+```xml
+<Profiles>
+    <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" Name="Microsoft Learn example">
+        <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" v4:ClassicAppArguments="--kiosk https://maps.cltairport.com/ --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2" />
+        <v4:BreakoutSequence Key="Ctrl+A"/>
+    </Profile>
+</Profiles>
+```
 
 In the XML file, you define each profile with a globally unique identifier (GUID), which must be unique within the XML file.
 
 > [!TIP]
 > You can generate a GUID with the PowerShell cmdlet `New-Guid`.
 
-```xml
-<Profiles>
-    <Profile Id="6954c40a-45dd-4176-a2e3-ecaf5c97f425">
-        ...
-    </Profile>
-</Profiles>
-```
+
 
 A *profile node* contains the following properties:
 
