@@ -18,7 +18,7 @@ The examples can be modified to fit your specific requirements. For example, you
 >[!div class="checklist"]
 >Here's a list of requirements to complete this quickstart:
 >
->- A Windows 11 device
+>- A Windows device
 >- Microsoft Intune, or a non-Microsoft MDM solution, if you want to configure the settings using MDM
 >- Windows Configuration Designer, if you want to configure the settings using a provisioning package
 >- Access to the [psexec tool](/sysinternals/downloads/psexec), if you want to test the configuration using Windows PowerShell

@@ -474,8 +474,8 @@ Group accounts are specified using `<UserGroup>`. Nested groups aren't supported
     </Configs>
 </AssignedAccessConfiguration>
 ```
-::: zone-end
 
+::: zone-end
 
 
 ### FileExplorerNamespaceRestrictions
@@ -856,9 +856,9 @@ Below sample shows dedicated profile and global profile mixed usage, a user woul
 
 ## Folder Access sample xml
 
-Starting with Windows 10 version 1809 +, folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all. This restriction has been redesigned for finer granularity and easier use, and is available in Windows 10 version 2009+.
+Folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all.
 
-IT Admin now can specify user access to Downloads folder, Removable drives, or no restrictions at all. Downloads and Removable Drives can be allowed at the same time.
+You can specify user access to Downloads folder, Removable drives, or no restrictions at all. Downloads and Removable Drives can be allowed at the same time.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

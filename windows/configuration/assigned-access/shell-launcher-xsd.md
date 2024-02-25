@@ -167,7 +167,7 @@ The following is the latest Shell Launcher XSD:
 
 ## Windows 10, version 1903 additions
 
-In Windows 10, version 1903, Shell Launcher introduced the support of both UWP and Win32 apps as the custom shell.
+In Windows 10, version 1903, Shell Launcher introduced the support of both UWP and desktop apps as the custom shell.
 
 The following is the XSD for Shell Launcher features added in Windows 10, version 1903:
 
