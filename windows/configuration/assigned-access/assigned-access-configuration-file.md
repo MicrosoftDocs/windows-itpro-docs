@@ -477,10 +477,11 @@ Group accounts are specified using `<UserGroup>`. Nested groups aren't supported
 
 ::: zone-end
 
+::: zone pivot="windows-10"
 
 ### FileExplorerNamespaceRestrictions
 
-Starting in Windows 10 version 1809, you can explicitly allow some known folders to be accessed when the user tries to open the file dialog box in multi-app assigned access by including **FileExplorerNamespaceRestrictions** in your XML file. Currently, **Downloads** is the only folder supported.  This behavior can also be set using Microsoft Intune.
+You can explicitly allow access to known folders when the user tries to open the file dialog box in a restricted user experience by including the `FileExplorerNamespaceRestrictions` node.
 
 The following example shows how to allow user access to the Downloads folder in the common file dialog box.
 
@@ -595,6 +596,8 @@ The following example shows how to allow user access to the Downloads folder in 
     ```
     :::column-end:::
 :::row-end:::
+
+::: zone-end
 
 <!--troubleshooting
 Event Viewer
@@ -853,6 +856,43 @@ Below sample shows dedicated profile and global profile mixed usage, a user woul
 </AssignedAccessConfiguration>
 
 ```
+
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
+    >
+    <Profiles>
+        <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F79}">
+            <AllAppsList>
+                <AllowedApps>
+                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" rs5:AutoLaunch="true" />
+                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe"/>
+                </AllowedApps>
+            </AllAppsList>
+            <Taskbar ShowTaskbar="false"/>
+        </Profile>
+        <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
+            <KioskModeApp AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+        </Profile>
+    </Profiles>
+    <Configs>
+        <v3:GlobalProfile Id="{EDB3036B-780D-487D-A375-69369D8A8F79}"/>
+        <Config>
+            <AutoLogonAccount rs5:DisplayName="Airport Kiosk"/>
+            <DefaultProfile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}"/>
+        </Config>
+    </Configs>
+</AssignedAccessConfiguration>
+```
+
+
+
 
 ## Folder Access sample xml
 
