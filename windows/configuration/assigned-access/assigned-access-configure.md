@@ -57,8 +57,6 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 1. In the center pane, select **Browse**. Locate and select the Assigned Access configuration XML file that you created.
 
-   ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer.](images/multiappassignedaccesssettings.png)
-
 1. _Optional: If you want to apply the provisioning package after device initial setup and there's an admin user already available on the kiosk device, skip this step._ Create an admin user account in **Runtime settings** > **Accounts** > **Users**. Provide a **UserName** and **Password**, and select **UserGroup** as **Administrators**. With this account, you can view the provisioning status and logs if needed.
 
 1. _Optional: If you already have a non-admin account on the kiosk device, skip this step._ Create a local standard user account in **Runtime settings** > **Accounts** > **Users**. Make sure the **UserName** is the same as the account that you specify in the configuration XML. Select **UserGroup** as **Standard Users**.
@@ -234,8 +232,6 @@ Account type:
 - Local standard user
 - Active Directory
 
-![Kiosk wizard option in Windows Configuration Designer.](images/kiosk-wizard.png)
-
 >[!IMPORTANT]
 >When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon).
 
@@ -244,8 +240,6 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 [Install Windows Configuration Designer](../provisioning-packages/provisioning-install-icd.md), then open Windows Configuration Designer and select **Provision kiosk devices**. After you name your project, and select **Next**, configure the following settings:
 
 1. Enable device setup:
-
-    :::image type="content" source="images/set-up-device-details.png" alt-text="In Windows Configuration Designer, enable device setup, enter the device name, the product key to upgrade, turn off shared use, and remove preinstalled software.":::
 
     If you want to enable device setup, select **Set up device**, and configure the following settings:
 
@@ -256,8 +250,6 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 
 1. Set up the network:
 
-    :::image type="content" source="images/set-up-network-details.png" alt-text="In Windows Configuration Designer, turn on wireless connectivity, enter the network SSID, and network type.":::
-
     If you want to enable network setup, select **Set up network**, and configure the following settings:
 
     - **Set up network**: To enable wireless connectivity, select **On**.
@@ -265,8 +257,6 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
     - **Network type**: Select **Open** or **WPA2-Personal**. If you select **WPA2-Personal**, enter the password for the wireless network.
 
 1. Enable account management:
-
-    :::image type="content" source="images/account-management-details.png" alt-text="In Windows Configuration Designer, join Active Directory, Microsoft Entra ID, or create a local admin account.":::
 
     If you want to enable account management, select **Account Management**, and configure the following settings:
 
@@ -282,8 +272,6 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 
 1. Add applications:
 
-    :::image type="content" source="images/add-applications-details.png" alt-text="In Windows Configuration Designer, add an application that will run in kiosk mode.":::
-
     To add applications to the devices, select **Add applications**. You can install multiple applications in a provisioning package, including Windows desktop applications (Win32) and Universal Windows Platform (UWP) apps. The settings in this step vary depending on the application you select. For help with the settings, see [Provision PCs with apps](../provisioning-packages/provision-pcs-with-apps.md).
 
     > [!WARNING]
@@ -296,7 +284,6 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 
 1. Add certificates:
 
-    :::image type="content" source="images/add-certificates-details.png" alt-text="In Windows Configuration Designer, add a certificate.":::
 
     To add a certificate to the devices, select **Add certificates**, and configure the following settings:
 
@@ -304,8 +291,6 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
     - **Certificate path**: Browse and select the certificate you want to add.
 
 1. Configure the kiosk account, and the kiosk mode app:
-
-    :::image type="content" source="images/kiosk-account-details.png" alt-text="In Windows Configuration Designer, the Configure kiosk common settings button is shown when provisioning a kiosk device.":::
 
     To add the account that runs the app and choose the app type, select **Configure kiosk account and app**, and configure the following settings:
 
@@ -317,8 +302,6 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 
 1. Configure kiosk common settings:
 
-    :::image type="content" source="images/kiosk-common-details.png" alt-text="In Windows Configuration Designer, set tablet mode, configure the welcome and shutdown screens, and turn off the power timeout settings.":::
-
     To configure the tablet mode, configure welcome and shutdown screens, and set the power settings, select **Configure kiosk common settings**, and configure the following settings:
 
     - **Set tablet mode**
@@ -326,8 +309,6 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
     - **Configure power settings**
 
 1. Finish:
-
-    :::image type="content" source="images/finish-details.png" alt-text="In Windows Configuration Designer, protect your package with a password.":::
 
     To complete the wizard, select **Finish**, and configure the following setting:
 
