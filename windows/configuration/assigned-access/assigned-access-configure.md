@@ -5,7 +5,7 @@ ms.date: 05/12/2023
 ms.topic: how-to
 ---
 
-## Configure Assigned Access
+# Configure Assigned Access
 
 ## Configure a kiosk in Microsoft Intune
 
@@ -18,9 +18,9 @@ To configure a kiosk in Microsoft Intune, see:
 
 Process:
 
-1. [Create XML file](#create-xml-file)
-1. [Add XML file to provisioning package](#add-xml)
-1. [Apply provisioning package to device](#apply-ppkg)
+1. Create XML file
+1. Add XML file to provisioning package
+1. Apply provisioning package to device
 
 Watch how to use a provisioning package to configure a multi-app kiosk.
 
@@ -29,14 +29,14 @@ Watch how to use a provisioning package to configure a multi-app kiosk.
 An assigned access multi-app kiosk runs one or more apps from the desktop. People using the kiosk see a customized Start that shows only the apps that are allowed. With this approach, you can configure a locked-down experience for different account types. A multi-app kiosk is appropriate for devices that are shared by multiple people. Here's a guide on how to set up a multi-app kiosk.
 
 > [!WARNING]
-> The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
+> The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policy settings](assigned-access-policy-settings.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
 
 > [!TIP]
 > Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
 ### Provisioning package
 
-Before you add the XML file to a provisioning package, you can [validate your configuration XML against the XSD](kiosk-xml.md#xsd-for-assignedaccess-configuration-xml).
+Before you add the XML file to a provisioning package, you can [validate your configuration XML against the XSD](assigned-access-xsd.md).
 
 Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](../provisioning-packages/provisioning-install-icd.md).
 
@@ -150,11 +150,6 @@ You have several options for configuring your single-app kiosk.
   - Windows 10 Pro version 1709+, Enterprise, and Education
   - Windows 11
 
-> [!TIP]
-> You can also configure a kiosk account and app for single-app kiosk within [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) by using a [kiosk profile](lock-down-windows-10-to-specific-apps.md#profile).
-
->
-> Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
 ## Set up a kiosk in local Settings
 
@@ -212,8 +207,8 @@ To configure a device using the Windows PowerShell cmdlet:
 
 For more innformation:
 
-- [Learn how to get the AUMID](./find-the-application-user-model-id-of-an-installed-app.md)
-- [Learn how to get the AppName](/powershell/module/assignedaccess/set-assignedaccess)
+- [Find the Application User Model ID of an installed app](./find-aumid.md)
+- [Set-AssignedAccess](/powershell/module/assignedaccess/set-assignedaccess)
 
 To remove assigned access, using PowerShell, run the following cmdlet:
 

@@ -1,5 +1,5 @@
 ---
-title: Assigned Access XML Schema Definition (XSD)
+title: Shell Launcher XML Schema Definition (XSD)
 description: Shell Launcher XSD reference article.
 ms.topic: reference
 ms.date: 02/15/2024

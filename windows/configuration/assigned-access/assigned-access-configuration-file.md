@@ -1,7 +1,7 @@
 ---
 title: Create an Assigned Access configuration file
 description: Learn how to create an XML file to configure a kiosk device.
-ms.date: 02/12/2024
+ms.date: 02/26/2024
 ms.topic: how-to
 zone_pivot_groups: windows-versions-11-10
 appliesto:
@@ -217,7 +217,7 @@ The easiest way to create a customized Start layout is to configure the Start me
 
 > [!NOTE]
 > - The test device on which you customize the Start layout should have the same OS version that is installed on the device where you plan to deploy the Assigned Access configuration
-> - There are no apps pinned on the taskbar in the multi-app mode, and it's not supported to configure Taskbar layout using the <CustomTaskbarLayoutCollection> tag in a layout modification XML as part of the Assigned Access configuration
+> - There are no apps pinned on the taskbar in the multi-app mode, and it's not supported to configure Taskbar layout using the `<CustomTaskbarLayoutCollection>` tag in a layout modification XML as part of the Assigned Access configuration
 
 The following example pins Calculator, Photos, Weather, Calculator, Command Prompt, and Windows PowerShell apps to the Start menu.
 
@@ -296,11 +296,15 @@ Define whether you want to have the taskbar present in the kiosk device. For tab
 
 The following example exposes the taskbar to the end user:
 
+```xml
 <Taskbar ShowTaskbar="true"/>
+```
 
 The following example hides the taskbar:
 
+```xml
 <Taskbar ShowTaskbar="false"/>
+```
 
 > [!NOTE]
 > This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden.
@@ -309,7 +313,7 @@ The following example hides the taskbar:
 
 ### KioskModeApp
 
-**KioskModeApp** is used for a [kiosk profile](#profile) only. Enter the AUMID for a single app. You can only specify one kiosk profile in the XML.
+**KioskModeApp** is used for a kiosk profile only. Enter the AUMID for a single app. You can only specify one kiosk profile in the XML.
 
 ```xml
 <KioskModeApp AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"/>

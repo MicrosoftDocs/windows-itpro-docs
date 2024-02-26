@@ -100,7 +100,7 @@ After the settings are applied, reboot the device. A local user account is autom
 > [!div class="nextstepaction"]
 > Learn more how to configure Windows to run a single app or multiple apps with Assigned Access:
 >
-> [Create an Assigned Access configuration file](create-assigned-access-configuration.md)
+> [Configure Assigned Access](assigned-access-configure.md)
 
 <!--links-->
 
