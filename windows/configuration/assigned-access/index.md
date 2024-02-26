@@ -1,11 +1,11 @@
 ---
-title: Configure kiosks and digital signs on Windows 10/11 desktop editions
-description: In this article, learn about the methods for configuring kiosks and digital signs on Windows 10 or Windows 11 desktop editions.
-ms.topic: article
-ms.date: 12/31/2017
+title: Configure kiosks and restricted user experiences
+description: Learn about the options available in Windows to configure kiosks and restricted user experiences.
+ms.topic: overview
+ms.date: 02/26/2024
 ---
 
-# Configure kiosks and digital signs on Windows desktop editions
+# Configure kiosks and restricted user experiences
 
 Organization may want to set up special purpose devices, such as a device in the lobby that customers can use to view product catalogs, or a device displaying visual content as a digital sign. Windows client offers two different locked-down experiences for public or specialized use:
 

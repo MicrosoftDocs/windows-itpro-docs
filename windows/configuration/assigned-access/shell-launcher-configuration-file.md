@@ -11,11 +11,70 @@ This article provides practical examples of Shell Launcher XML configuration fil
 
 Let's start by looking at the basic structure of the XML file.
 
-- A configuration xml can define multiple `profiles`. Each profile has a *profile Id* and defines a set of applications that are allowed to run
-- A configuration xml can have multiple `configs`. Each config associates a non-admin user account to a default profile Id
-- A profile has no effect if it's not associated to a user account
+- A configuration xml can define one or multiple `Profiles`
+  - Each profile has a unique `Profile Id` and defines a `Shell` elemnt, which is the application that executes when the user signs in
+  - A profile can define a default action to be taken when the application exits and may define actions to be taken when the application exits with a specific return code
+  - A profile must be associated to a user account to have an effect
+  - You can define a `Default profile` that is used when no other profile is associated to a user account
+- A configuration xml can define one or multiple `configs`
+  - Each config associates a user account to a `profile Id`
+  - A profile has no effect if it's not associated to a user account
 
 You can start your file by pasting the following XML code into a text editor, and saving the file with an xml extension. For example, `kiosk.xml`.
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<ShellLauncherConfiguration
+    xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
+    xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
+    <Profiles>
+        ...
+    </Profiles>
+    <Configs>
+        ...
+    </Configs>
+</ShellLauncherConfiguration>
+```
+
+## Profiles node
+
+If you want to define a default profile, you can use the `DefaultProfile` element:
+
+```xml
+<Profiles>
+    <DefaultProfile>
+        ...
+    </DefaultProfile>
+</Profiles>
+```
+
+Each profile is identified by a unique identifier `Profile Id`, for example:
+
+```xml
+<Profiles>
+    <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
+        ...
+    </Profile>
+</Profiles>
+```
+
+### Shell node
+
+The `Shell` node defines the application that executes when the user signs in:
+
+- The `Shell` attribute is the path to the application
+- The `V2:AppType` attribute defines the type of application
+- The `V2:AllAppsFullScreen` attribute is a boolean value that defines if all applications are executed in full screen
+
+```xml
+<Shell Shell="" V2:AppType="" V2:AllAppsFullScreen="">
+    <ReturnCodeActions>
+        <ReturnCodeAction ReturnCode="" Action=""/>
+    </ReturnCodeActions>
+    <DefaultAction Action=""/>
+</Shell>
+```
+
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -44,17 +103,6 @@ You can start your file by pasting the following XML code into a text editor, an
 </ShellLauncherConfiguration>
 ```
 
-## Profiles node
-
-An Shell Launcher configuration file can contain one or more profiles. Each profile is identified by a unique identified `Profile Id`, for example:
-
-```xml
-<Profiles>
-    <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
-        ...
-    </Profile>
-</Profiles>
-```
 
 ### AppType
 
