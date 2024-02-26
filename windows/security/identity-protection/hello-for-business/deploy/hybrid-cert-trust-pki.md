@@ -1,20 +1,15 @@
 ---
 title: Configure and validate the PKI in an hybrid certificate trust model
 description: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in a hybrid certificate trust model.
-ms.date: 12/15/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
+ms.date: 01/03/2024
 ms.topic: tutorial
 ---
+
 # Configure and validate the PKI in a hybrid certificate trust model
 
 [!INCLUDE [apply-to-hybrid-cert-trust](includes/apply-to-hybrid-cert-trust.md)]
 
-Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* or *certificate trust* models. The domain controllers must have a certificate, which serves as a *root of trust* for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
+Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *certificate trust* models. The domain controllers must have a certificate, which serves as a *root of trust* for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
 
 Hybrid certificate trust deployments issue users a sign-in certificate, enabling them to authenticate to Active Directory using Windows Hello for Business credentials. Additionally, hybrid certificate trust deployments issue certificates to registration authorities to provide defense-in-depth security when issuing user authentication certificates.
 
@@ -22,22 +17,15 @@ Hybrid certificate trust deployments issue users a sign-in certificate, enabling
 
 ## Configure the enterprise PKI
 
-[!INCLUDE [dc-certificate-template](includes/dc-certificate-template.md)]
+[!INCLUDE [dc-certificate-template](includes/certificate-template-dc.md)]
 
-> [!NOTE]
-> Inclusion of the *KDC Authentication* OID in domain controller certificate is not required for Microsoft Entra hybrid joined devices. The OID is required for enabling authentication with Windows Hello for Business to on-premises resources by Microsoft Entra joined devices.
-
-> [!IMPORTANT]
-> For Microsoft Entra joined devices to authenticate to on-premises resources, ensure to:
->
-> - Install the root CA certificate in the device's trusted root certificate store. See [how to deploy a trusted certificate profile](/mem/intune/protect/certificates-trusted-root#to-create-a-trusted-certificate-profile) via Intune
-> - Publish your certificate revocation list to a location that is available to Microsoft Entra joined devices, such as a web-based URL
+[!INCLUDE [dc-certificate-template-dc-hybrid-notes](includes/certificate-template-dc-hybrid-notes.md)]
 
 [!INCLUDE [dc-certificate-template-supersede](includes/dc-certificate-supersede.md)]
 
-[!INCLUDE [enrollment-agent-certificate-template](includes/enrollment-agent-certificate-template.md)]
+[!INCLUDE [enrollment-agent-certificate-template](includes/certificate-template-enrollment-agent.md)]
 
-[!INCLUDE [auth-certificate-template](includes/auth-certificate-template.md)]
+[!INCLUDE [auth-certificate-template](includes/certificate-template-auth.md)]
 
 [!INCLUDE [unpublish-superseded-templates](includes/unpublish-superseded-templates.md)]
 

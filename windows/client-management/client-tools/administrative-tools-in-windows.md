@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.collection:
 - highpri
 - tier2
+- essentials-manage
 ---
 
 # Windows Tools/Administrative Tools

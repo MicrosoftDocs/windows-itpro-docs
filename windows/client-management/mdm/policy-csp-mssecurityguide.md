@@ -1,7 +1,7 @@
 ---
 title: MSSecurityGuide Policy CSP
 description: Learn more about the MSSecurityGuide Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -10,6 +10,8 @@ ms.date: 01/18/2024
 # Policy CSP - MSSecurityGuide
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- MSSecurityGuide-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -221,7 +223,7 @@ ms.date: 01/18/2024
 <!-- NetBTNodeTypeConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- NetBTNodeTypeConfiguration-Applicability-End -->
 
 <!-- NetBTNodeTypeConfiguration-OmaUri-Begin -->

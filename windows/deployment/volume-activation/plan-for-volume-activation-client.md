@@ -4,11 +4,11 @@ description: Product activation is the process of validating software with the m
 ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.localizationpriority: medium
 ms.topic: article
-ms.technology: itpro-fundamentals
+ms.subservice: itpro-fundamentals
 ms.date: 11/07/2022
 ---
 
@@ -62,7 +62,8 @@ Volume licensing offers customized programs that are tailored to the size and pu
 - Purchase a fully packaged retail product
 
 The licenses that are provided through volume licensing programs such as Open License, Select License, and Enterprise Agreements cover upgrades to Windows client operating systems only. An existing retail or OEM operating system license is needed for each computer running Windows 10, Windows 8.1 Pro, Windows 8 Pro, Windows 7 Professional or Ultimate, or Windows XP Professional before the upgrade rights obtained through volume licensing can be exercised.
-Volume licensing is also available through certain subscription or membership programs, such as the Microsoft Partner Network and MSDN. These volume licenses may contain specific restrictions or other changes to the general terms applicable to volume licensing.
+
+Volume licensing is also available through certain subscription or membership programs, such as the Microsoft Partner Network and Visual Studio Online. These volume licenses may contain specific restrictions or other changes to the general terms applicable to volume licensing.
 
 > [!NOTE]
 > Some editions of the operating system, such as Windows 10 Enterprise, and some editions of application software are available only through volume licensing agreements or subscriptions.

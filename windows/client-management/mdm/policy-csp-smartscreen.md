@@ -1,7 +1,7 @@
 ---
 title: SmartScreen Policy CSP
 description: Learn more about the SmartScreen Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -70,6 +70,8 @@ App Install Control is a feature of Windows Defender SmartScreen that helps prot
 |:--|:--|
 | 0 (Default) | Turns off Application Installation Control, allowing users to download and install files from anywhere on the web. |
 | 1 | Turns on Application Installation Control, allowing users to only install apps from the Store. |
+| 2 | Turns on Application Installation Control, letting users know that there's a comparable app in the Store. |
+| 3 | Turns on Application Installation Control, warning users before installing apps from outside the Store. |
 <!-- EnableAppInstallControl-AllowedValues-End -->
 
 <!-- EnableAppInstallControl-GpMapping-Begin -->

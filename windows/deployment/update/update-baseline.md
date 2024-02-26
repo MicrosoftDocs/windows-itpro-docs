@@ -1,8 +1,8 @@
 ---
 title: Windows 10 Update Baseline
 description: Use an update baseline to optimize user experience and meet monthly update goals in your organization.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart

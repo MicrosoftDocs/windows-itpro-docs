@@ -1,8 +1,8 @@
 ---
 title: Manage additional Windows Update settings
 description: In this article, learn about additional settings to control the behavior of Windows Update in your organization.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart

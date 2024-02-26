@@ -1,16 +1,8 @@
 ---
-title: OOBE (Windows 10)
-ms.reviewer: 
-manager: aaroncz
+title: OOBE
 description: This section describes the OOBE settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
 ms.topic: reference
-ms.collection: must-keep
-ms.technology: itpro-configure
-ms.date: 12/31/2017
+ms.date: 01/25/2024
 ---
 
 # OOBE (Windows Configuration Designer reference)
@@ -19,10 +11,10 @@ Use to configure settings for the [Out Of Box Experience (OOBE)](/windows-hardwa
 
 ## Applies to
 
-| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | 
-| [Desktop > EnableCortanaVoice](#enablecortanavoice) | ✔️  |  |  |  |
-| [Desktop > HideOobe](#hideoobe-for-desktop) | ✔️  |  |  |  |
+| Setting | Windows client | Surface Hub | HoloLens | IoT Core |
+|--|:-:|:-:|:-:|:-:|
+| [Desktop > EnableCortanaVoice](#enablecortanavoice) | ✅ |  |  |  |
+| [Desktop > HideOobe](#hideoobe-for-desktop) | ✅ |  |  |  |
 
 ## EnableCortanaVoice
 
@@ -30,10 +22,9 @@ Use this setting to control whether Cortana voice-over is enabled during OOBE. T
 
 ## HideOobe for desktop
 
-When set to **True**, it hides the interactive OOBE flow for Windows 10.
+When set to **True**, it hides the interactive OOBE flow for Windows 1.
 
 > [!NOTE]
 > You must create a user account if you set the value to true or the device will not be usable.
 
 When set to **False**, the OOBE screens are displayed.
-

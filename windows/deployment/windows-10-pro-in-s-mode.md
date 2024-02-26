@@ -5,10 +5,10 @@ author: frankroj
 ms.author: frankroj
 manager: aaroncz
 ms.localizationpriority: medium
-ms.prod: windows-client
+ms.service: windows-client
 ms.topic: article
 ms.date: 11/23/2022
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ---
 
 # Switch to Windows 10 Pro or Enterprise from S mode

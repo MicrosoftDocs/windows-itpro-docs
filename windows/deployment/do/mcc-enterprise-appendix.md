@@ -1,8 +1,8 @@
 ---
 title: Appendix for MCC for Enterprise and Education
 description: This article contains reference information for Microsoft Connected Cache (MCC) for Enterprise and Education.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 ms.author: carmenf
 author: cmknox

@@ -1,5 +1,5 @@
 ---
-ms.date: 12/15/2023
+ms.date: 01/03/2024
 ms.topic: include
 ---
 
@@ -11,14 +11,14 @@ Confirm your domain controllers enroll the correct certificates and not any supe
 
 Sign in to domain controller or management workstations with *Domain Administrator* equivalent credentials.
 
-1. Using the Event Viewer, navigate to the **Application and Services > Microsoft > Windows > CertificateServices-Lifecycles-System** event log
+1. Using the Event Viewer, navigate to the **Application and Services** > **Microsoft** > **Windows** > **CertificateServices-Lifecycles-System** event log
 1. Look for an event indicating a new certificate enrollment (autoenrollment):
    - The details of the event include the certificate template on which the certificate was issued
    - The name of the certificate template used to issue the certificate should match the certificate template name included in the event
    - The certificate thumbprint and EKUs for the certificate are also included in the event
    - The EKU needed for proper Windows Hello for Business authentication is Kerberos Authentication, in addition to other EKUs provide by the certificate template
 
-Certificates superseded by your new domain controller certificate generate an archive event in the event log. The archive event contains the certificate template name and thumbprint of the certificate that was superseded by the new certificate.
+Certificates superseded by your new domain controller certificate generate an *archive event* in the Event Log. The archive event contains the certificate template name and thumbprint of the certificate that was superseded by the new certificate.
 
 ### Certificate Manager
 
@@ -26,9 +26,17 @@ You can use the Certificate Manager console to validate the domain controller ha
 
 ### Certutil.exe
 
-You can use `certutil.exe` command to view enrolled certificates in the local computer. Certutil shows enrolled and archived certificates for the local computer. From an elevated command prompt, run `certutil.exe -q -store my` to view locally enrolled certificates.
+You can use `certutil.exe` command to view enrolled certificates in the local computer. Certutil shows enrolled and archived certificates for the local computer. From an elevated command prompt, run the following command:
 
-To view detailed information about each certificate in the store, use `certutil.exe -q -v -store my` to validate automatic certificate enrollment enrolled the proper certificates.
+```cmd
+certutil.exe -q -store my
+```
+
+To view detailed information about each certificate in the store, and to validate automatic certificate enrollment enrolled the proper certificates, use the following command:
+
+```cmd
+certutil.exe -q -v -store my
+```
 
 ### Troubleshooting
 
@@ -36,4 +44,4 @@ Windows triggers automatic certificate enrollment for the computer during boot, 
 
 Alternatively, you can forcefully trigger automatic certificate enrollment using `certreq.exe -autoenroll -q` from an elevated command prompt.
 
-Use the event logs to monitor certificate enrollment and archive. Review the configuration, such as publishing certificate templates to issuing certification authority and the allow auto enrollment permissions.
+Use the event logs to monitor certificate enrollment and archive. Review the configuration, such as publishing certificate templates to issuing certification authority and the *allow* auto enrollment permissions.

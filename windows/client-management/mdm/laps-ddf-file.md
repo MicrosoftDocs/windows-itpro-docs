@@ -1,7 +1,7 @@
 ---
 title: LAPS DDF file
 description: View the XML file containing the device description framework (DDF) for the LAPS configuration service provider.
-ms.date: 01/18/2024
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -194,8 +194,14 @@ The allowable settings are:
 2=Large letters + small letters
 3=Large letters + small letters + numbers
 4=Large letters + small letters + numbers + special characters
+5=Large letters + small letters + numbers + special characters (improved readability)
+6=Passphrase (long words)
+7=Passphrase (short words)
+8=Passphrase (short words with unique prefixes)
 
-If not specified, this setting will default to 4.</Description>
+If not specified, this setting will default to 4.
+
+Passphrase list taken from "Deep Dive: EFF's New Wordlists for Random Passphrases" by Electronic Frontier Foundation, and is used under a CC-BY-3.0 Attribution license. See https://go.microsoft.com/fwlink/?linkid=2255471 for more information.</Description>
           <DFFormat>
             <int />
           </DFFormat>
@@ -224,6 +230,22 @@ If not specified, this setting will default to 4.</Description>
             <MSFT:Enum>
               <MSFT:Value>4</MSFT:Value>
               <MSFT:ValueDescription>Large letters + small letters + numbers + special characters</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>5</MSFT:Value>
+              <MSFT:ValueDescription>Large letters + small letters + numbers + special characters (improved readability)</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>6</MSFT:Value>
+              <MSFT:ValueDescription>Passphrase (long words)</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>7</MSFT:Value>
+              <MSFT:ValueDescription>Passphrase (short words)</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>8</MSFT:Value>
+              <MSFT:ValueDescription>Passphrase (short words with unique prefixes)</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>
@@ -260,6 +282,70 @@ This setting has a maximum allowed value of 64 characters.</Description>
           <MSFT:AllowedValues ValueType="Range">
             <MSFT:Value>[8-64]</MSFT:Value>
           </MSFT:AllowedValues>
+          <MSFT:DependencyBehavior>
+            <MSFT:DependencyGroup FriendlyId="PasswordComplexity">
+              <MSFT:Dependency Type="DependsOn">
+                <MSFT:DependencyUri>Vendor/MSFT/LAPS/Policies/PasswordComplexity</MSFT:DependencyUri>
+                <MSFT:DependencyAllowedValue ValueType="Range">
+                  <MSFT:Enum>
+                    <MSFT:Value>[1-5]</MSFT:Value>
+                    <MSFT:ValueDescription>PasswordComplexity configured to generate a password</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:DependencyAllowedValue>
+              </MSFT:Dependency>
+            </MSFT:DependencyGroup>
+          </MSFT:DependencyBehavior>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>PassphraseLength</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>6</DefaultValue>
+          <Description>Use this setting to configure the number of passphrase words.
+
+If not specified, this setting will default to 6 words
+
+This setting has a minimum allowed value of 3 words.
+
+This setting has a maximum allowed value of 10 words.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.9999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.1</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="Range">
+            <MSFT:Value>[3-10]</MSFT:Value>
+          </MSFT:AllowedValues>
+          <MSFT:DependencyBehavior>
+            <MSFT:DependencyGroup FriendlyId="PasswordComplexity">
+              <MSFT:Dependency Type="DependsOn">
+                <MSFT:DependencyUri>Vendor/MSFT/LAPS/Policies/PasswordComplexity</MSFT:DependencyUri>
+                <MSFT:DependencyAllowedValue ValueType="Range">
+                  <MSFT:Enum>
+                    <MSFT:Value>[6-8]</MSFT:Value>
+                    <MSFT:ValueDescription>PasswordComplexity configured to generate a passphrase</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:DependencyAllowedValue>
+              </MSFT:Dependency>
+            </MSFT:DependencyGroup>
+          </MSFT:DependencyBehavior>
         </DFProperties>
       </Node>
       <Node>
@@ -567,7 +653,276 @@ If not specified, this setting will default to 3 (Reset the password and logoff 
               <MSFT:Value>5</MSFT:Value>
               <MSFT:ValueDescription>Reset the password and reboot: upon expiry of the grace period, the managed account password will be reset and the managed device will be immediately rebooted.</MSFT:ValueDescription>
             </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>11</MSFT:Value>
+              <MSFT:ValueDescription>Reset the password, logoff the managed account, and terminate any remaining processes: upon expiration of the grace period, the managed account password is reset, any interactive logon sessions using the managed account are logged off, and any remaining processes are terminated.</MSFT:ValueDescription>
+            </MSFT:Enum>
           </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>AutomaticAccountManagementEnabled</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>False</DefaultValue>
+          <Description>Use this setting to specify whether automatic account management is enabled.
+
+If this setting is enabled, the target account will be automatically managed.
+
+If this setting is disabled, the target account will not be automatically managed.
+
+If not specified, this setting defaults to False.</Description>
+          <DFFormat>
+            <bool />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.9999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.1</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>false</MSFT:Value>
+              <MSFT:ValueDescription>The target account will not be automatically managed</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>true</MSFT:Value>
+              <MSFT:ValueDescription>The target account will be automatically managed</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>AutomaticAccountManagementTarget</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>1</DefaultValue>
+          <Description>Use this setting to configure which account is automatically managed.
+
+The allowable settings are:
+
+0=The builtin administrator account will be managed.
+1=A new account created by Windows LAPS will be managed.
+
+If not specified, this setting will default to 1.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.9999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.1</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>Manage the built-in administrator account</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>Manage a new custom administrator account</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+          <MSFT:DependencyBehavior>
+            <MSFT:DependencyGroup FriendlyId="AutomaticAccountManagementEnabled">
+              <MSFT:Dependency Type="DependsOn">
+                <MSFT:DependencyUri>Vendor/MSFT/LAPS/Policies/AutomaticAccountManagementEnabled</MSFT:DependencyUri>
+                <MSFT:DependencyAllowedValue ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>true</MSFT:Value>
+                    <MSFT:ValueDescription>AutomaticAccountManagementEnabled enabled</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:DependencyAllowedValue>
+              </MSFT:Dependency>
+            </MSFT:DependencyGroup>
+          </MSFT:DependencyBehavior>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>AutomaticAccountManagementNameOrPrefix</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <Description>Use this setting to configure the name or prefix of the managed local administrator account.
+
+If specified, the value will be used as the name or name prefix of the managed account.
+
+If not specified, this setting will default to "WLapsAdmin".</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.9999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.1</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:DependencyBehavior>
+            <MSFT:DependencyGroup FriendlyId="AutomaticAccountManagementEnabled">
+              <MSFT:Dependency Type="DependsOn">
+                <MSFT:DependencyUri>Vendor/MSFT/LAPS/Policies/AutomaticAccountManagementEnabled</MSFT:DependencyUri>
+                <MSFT:DependencyAllowedValue ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>true</MSFT:Value>
+                    <MSFT:ValueDescription>AutomaticAccountManagementEnabled enabled</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:DependencyAllowedValue>
+              </MSFT:Dependency>
+            </MSFT:DependencyGroup>
+          </MSFT:DependencyBehavior>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>AutomaticAccountManagementEnableAccount</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>False</DefaultValue>
+          <Description>Use this setting to configure whether the automatically managed account is enabled or disabled.
+
+If this setting is enabled, the target account will be enabled.
+
+If this setting is disabled, the target account will be disabled.
+
+If not specified, this setting defaults to False.</Description>
+          <DFFormat>
+            <bool />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.9999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.1</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>False</MSFT:Value>
+              <MSFT:ValueDescription>The target account will be disabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>True</MSFT:Value>
+              <MSFT:ValueDescription>The target account will be enabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+          <MSFT:DependencyBehavior>
+            <MSFT:DependencyGroup FriendlyId="AutomaticAccountManagementEnabled">
+              <MSFT:Dependency Type="DependsOn">
+                <MSFT:DependencyUri>Vendor/MSFT/LAPS/Policies/AutomaticAccountManagementEnabled</MSFT:DependencyUri>
+                <MSFT:DependencyAllowedValue ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>true</MSFT:Value>
+                    <MSFT:ValueDescription>AutomaticAccountManagementEnabled enabled</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:DependencyAllowedValue>
+              </MSFT:Dependency>
+            </MSFT:DependencyGroup>
+          </MSFT:DependencyBehavior>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>AutomaticAccountManagementRandomizeName</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>False</DefaultValue>
+          <Description>Use this setting to configure whether the name of the automatically managed account uses a random numeric suffix each time the password is rotated.
+
+If this setting is enabled, the name of the target account will use a random numeric suffix.
+
+If this setting is disbled, the name of the target account will not use a random numeric suffix..
+
+If not specified, this setting defaults to False.</Description>
+          <DFFormat>
+            <bool />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.9999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.1</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>False</MSFT:Value>
+              <MSFT:ValueDescription>The name of the target account will not use a random numeric suffix.</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>True</MSFT:Value>
+              <MSFT:ValueDescription>The name of the target account will use a random numeric suffix.</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+          <MSFT:DependencyBehavior>
+            <MSFT:DependencyGroup FriendlyId="AutomaticAccountManagementEnabled">
+              <MSFT:Dependency Type="DependsOn">
+                <MSFT:DependencyUri>Vendor/MSFT/LAPS/Policies/AutomaticAccountManagementEnabled</MSFT:DependencyUri>
+                <MSFT:DependencyAllowedValue ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>true</MSFT:Value>
+                    <MSFT:ValueDescription>AutomaticAccountManagementEnabled enabled</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:DependencyAllowedValue>
+              </MSFT:Dependency>
+            </MSFT:DependencyGroup>
+          </MSFT:DependencyBehavior>
         </DFProperties>
       </Node>
     </Node>

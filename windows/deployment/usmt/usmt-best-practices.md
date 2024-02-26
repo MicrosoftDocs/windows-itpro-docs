@@ -4,11 +4,11 @@ description: This article discusses general and security-related best practices 
 ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.date: 01/09/2024
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -46,7 +46,7 @@ This article discusses general and security-related best practices when using Us
 
 - **Chkdsk.exe.**
 
-  Microsoft recommends running **Chkdsk.exe** before running the **ScanState** and **LoadState** tools. **Chkdsk.exe** creates a status report for a hard disk drive and lists and corrects common errors. For more information about the **Chkdsk.exe** tool, see [Chkdsk](/previous-versions/windows/it-pro/windows-xp/bb490876(v=technet.10)).
+  Microsoft recommends running **Chkdsk.exe** before running the **ScanState** and **LoadState** tools. **Chkdsk.exe** creates a status report for a hard disk drive and lists and corrects common errors. For more information about the **Chkdsk.exe** tool, see [Chkdsk](/windows-server/administration/windows-commands/chkdsk).
 
 - **Migrate in groups.**
 
@@ -112,7 +112,7 @@ As the authorized administrator, it's the responsibility to protect the privacy 
   The migration performance can be affected when the **\<context\>** element is used with the **\<component\>** element. For example, when encapsulating logical units of file- or path-based **\<include\>** and **\<exclude\>** rules.
 
   In the **User** context, a rule is processed one time for each user on the system.
-  
+
   In the **System** context, a rule is processed one time for the system.
 
   In the **UserAndSystem** context, a rule is processed one time for each user on the system and one time for the system.

@@ -16,7 +16,7 @@ If you plan to use certificates for on-premises single-sign on, then follow thes
 
 Steps you'll perform include:
 
-- [Prepare Microsoft Entra Connect](#prepare-azure-ad-connect)
+- [Prepare Microsoft Entra Connect](#prepare-microsoft-entra-connect)
 - [Prepare the Network Device Enrollment Services Service Account](#prepare-the-network-device-enrollment-services-ndes-service-account)
 - [Prepare Active Directory Certificate Services](#prepare-active-directory-certificate-authority)
 - [Install the Network Device Enrollment Services Role](#install-and-configure-the-ndes-role)
@@ -49,8 +49,6 @@ If you need to deploy more than three types of certificates to the Microsoft Ent
 
 All communication occurs securely over port 443.
 
-<a name='prepare-azure-ad-connect'></a>
-
 ## Prepare Microsoft Entra Connect
 
 Successful authentication to on-premises resources using a certificate requires the certificate to provide a hint about the on-premises domain.  The hint can be the user's Active Directory distinguished name as the subject of the certificate, or the hint can be the user's user principal name where the suffix matches the Active Directory domain name.
@@ -58,8 +56,6 @@ Successful authentication to on-premises resources using a certificate requires 
 Most environments change the user principal name suffix to match the organization's external domain name (or vanity domain), which prevents the user principal name as a hint to locate a domain controller.  Therefore, the certificate needs the user's on-premises distinguished name in the subject to properly locate a domain controller.
 
 To include the on-premises distinguished name in the certificate's subject, Microsoft Entra Connect must replicate the Active Directory **distinguishedName** attribute to the Microsoft Entra ID **onPremisesDistinguishedName** attribute.  Microsoft Entra Connect version 1.1.819 includes the proper synchronization rules needed for these attributes.
-
-<a name='verify-azure-active-directory-connect-version'></a>
 
 ### Verify Microsoft Entra Connect version
 
@@ -286,8 +282,6 @@ Sign-in to the issuing certificate authority or management workstations with _Do
 10. Select **NDES server** from the **Group or users names** list. In the **Permissions for** section, select the **Allow** check box for the **Enroll** permission. Clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes aren't already cleared. Select **OK**.
 
 11. Select on the **Apply** to save changes and close the console.
-
-<a name='create-an-azure-ad-joined-windows-hello-for-business-authentication-certificate-template'></a>
 
 ### Create a Microsoft Entra joined Windows Hello for Business authentication certificate template
 

@@ -7,8 +7,8 @@ metadata:
   title: Windows client deployment documentation # Required; browser tab title displayed in search results. Include the brand. < 60 chars.
   description: Learn about deploying and updating Windows client devices in your organization. # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: hub-page
-  ms.prod: windows-client
-  ms.technology: itpro-deploy
+  ms.service: windows-client
+  ms.subservice: itpro-deploy
   ms.collection:
     - highpri
     - tier1

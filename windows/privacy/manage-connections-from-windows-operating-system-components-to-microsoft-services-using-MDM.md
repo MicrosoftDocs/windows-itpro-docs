@@ -1,8 +1,8 @@
 ---
 title: Manage connections from Windows operating system components to Microsoft services using Microsoft Intune MDM Server
 description: Use MDM CSPs to minimize connections from Windows to Microsoft services, or to configure particular privacy settings.
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown

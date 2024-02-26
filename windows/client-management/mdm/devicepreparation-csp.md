@@ -1,7 +1,7 @@
 ---
 title: DevicePreparation CSP
 description: Learn more about the DevicePreparation CSP.
-ms.date: 01/18/2024
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -26,6 +26,9 @@ The following list shows the DevicePreparation configuration service provider no
     - [Progress](#mdmproviderprogress)
     - [RebootRequired](#mdmproviderrebootrequired)
   - [PageEnabled](#pageenabled)
+  - [PageErrorCode](#pageerrorcode)
+  - [PageErrorDetails](#pageerrordetails)
+  - [PageErrorPhase](#pageerrorphase)
   - [PageSettings](#pagesettings)
   - [PageStatus](#pagestatus)
 <!-- DevicePreparation-Tree-End -->
@@ -305,6 +308,133 @@ This node determines whether to show the Device Preparation page during OOBE.
 <!-- Device-PageEnabled-Examples-End -->
 
 <!-- Device-PageEnabled-End -->
+
+<!-- Device-PageErrorCode-Begin -->
+## PageErrorCode
+
+<!-- Device-PageErrorCode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-PageErrorCode-Applicability-End -->
+
+<!-- Device-PageErrorCode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DevicePreparation/PageErrorCode
+```
+<!-- Device-PageErrorCode-OmaUri-End -->
+
+<!-- Device-PageErrorCode-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node provides specific overall HRESULT causing a fatal error on the Device Preparation page. This node is valid only if the PageErrorPhase node's value isn't Unknown.
+<!-- Device-PageErrorCode-Description-End -->
+
+<!-- Device-PageErrorCode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-PageErrorCode-Editable-End -->
+
+<!-- Device-PageErrorCode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get |
+<!-- Device-PageErrorCode-DFProperties-End -->
+
+<!-- Device-PageErrorCode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-PageErrorCode-Examples-End -->
+
+<!-- Device-PageErrorCode-End -->
+
+<!-- Device-PageErrorDetails-Begin -->
+## PageErrorDetails
+
+<!-- Device-PageErrorDetails-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-PageErrorDetails-Applicability-End -->
+
+<!-- Device-PageErrorDetails-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DevicePreparation/PageErrorDetails
+```
+<!-- Device-PageErrorDetails-OmaUri-End -->
+
+<!-- Device-PageErrorDetails-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node provides optional details for any fatal error on the Device Preparation page. This node is valid only if the PageErrorPhase node's value isn't Unknown, but not all errors will have details.
+<!-- Device-PageErrorDetails-Description-End -->
+
+<!-- Device-PageErrorDetails-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-PageErrorDetails-Editable-End -->
+
+<!-- Device-PageErrorDetails-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get |
+<!-- Device-PageErrorDetails-DFProperties-End -->
+
+<!-- Device-PageErrorDetails-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-PageErrorDetails-Examples-End -->
+
+<!-- Device-PageErrorDetails-End -->
+
+<!-- Device-PageErrorPhase-Begin -->
+## PageErrorPhase
+
+<!-- Device-PageErrorPhase-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-PageErrorPhase-Applicability-End -->
+
+<!-- Device-PageErrorPhase-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DevicePreparation/PageErrorPhase
+```
+<!-- Device-PageErrorPhase-OmaUri-End -->
+
+<!-- Device-PageErrorPhase-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node provides the specific phase that failed during the Device Preparation page. Values are an enum: 0 = Unknown; 1 = AgentDownload; 2 = AgentProgress.
+<!-- Device-PageErrorPhase-Description-End -->
+
+<!-- Device-PageErrorPhase-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-PageErrorPhase-Editable-End -->
+
+<!-- Device-PageErrorPhase-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get |
+<!-- Device-PageErrorPhase-DFProperties-End -->
+
+<!-- Device-PageErrorPhase-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Unknown. |
+| 1 | AgentDownload. |
+| 2 | AgentProgress. |
+<!-- Device-PageErrorPhase-AllowedValues-End -->
+
+<!-- Device-PageErrorPhase-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-PageErrorPhase-Examples-End -->
+
+<!-- Device-PageErrorPhase-End -->
 
 <!-- Device-PageSettings-Begin -->
 ## PageSettings

@@ -3,6 +3,7 @@ title: Introduction to the tutorial deploy and manage Windows devices in a schoo
 description: Introduction to deployment and management of Windows devices in education environments.
 ms.date: 11/09/2023
 ms.topic: tutorial
+ms.collection: essentials-get-started
 ---
 
 # Tutorial: deploy and manage Windows devices in a school

@@ -1,8 +1,8 @@
 ---
 title: Enhanced diagnostic data required by Windows Analytics (Windows 10)
 description: Use this article to learn more about the limit enhanced diagnostic data events policy used by Desktop Analytics
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown

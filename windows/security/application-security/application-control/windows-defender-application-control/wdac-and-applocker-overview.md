@@ -2,7 +2,7 @@
 title: WDAC and AppLocker Overview
 description: Compare Windows application control technologies.
 ms.localizationpriority: medium
-ms.date: 12/19/2023
+ms.date: 01/03/2024
 ms.topic: article
 ---
 

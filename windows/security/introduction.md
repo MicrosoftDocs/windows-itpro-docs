@@ -4,11 +4,15 @@ description: System security book.
 ms.date: 09/01/2023
 ms.topic: tutorial
 ms.author: paoloma
+ms.collection: 
+  - essentials-security
+  - essentials-overview
 content_well_notification: 
   - AI-contribution
 author: paolomatarazzo
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+ai-usage: ai-assisted
 ---
 
 # Introduction to Windows security

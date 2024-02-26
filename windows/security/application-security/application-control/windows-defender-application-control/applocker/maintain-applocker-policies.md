@@ -3,7 +3,7 @@ title: Maintain AppLocker policies
 description: Learn how to maintain rules within AppLocker policies. View common AppLocker maintenance scenarios and see the methods to use to maintain AppLocker policies.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/19/2023
+ms.date: 01/03/2024
 ---
 
 # Maintain AppLocker policies

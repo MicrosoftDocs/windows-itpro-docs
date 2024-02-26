@@ -2,8 +2,8 @@
 title: Manually configure devices to send data
 titleSuffix: Windows Update for Business reports
 description: How to manually configure devices for Windows Update for Business reports using a PowerShell script.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 author: mestew
 ms.author: mstewart

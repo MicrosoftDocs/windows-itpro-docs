@@ -2,8 +2,8 @@
 title: Use the Windows Update for Business reports data
 titleSuffix: Windows Update for Business reports
 description: How to use the Windows Update for Business reports data for custom solutions using tools like Azure Monitor Logs.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart

@@ -1,13 +1,15 @@
 ---
 title: NetworkListManager Policy CSP
 description: Learn more about the NetworkListManager Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- NetworkListManager-Begin -->
 # Policy CSP - NetworkListManager
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- NetworkListManager-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -19,7 +21,7 @@ ms.date: 01/18/2024
 <!-- AllNetworks_NetworkIcon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- AllNetworks_NetworkIcon-Applicability-End -->
 
 <!-- AllNetworks_NetworkIcon-OmaUri-Begin -->
@@ -68,7 +70,7 @@ This policy setting allows you to specify whether users can change the network i
 <!-- AllNetworks_NetworkLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- AllNetworks_NetworkLocation-Applicability-End -->
 
 <!-- AllNetworks_NetworkLocation-OmaUri-Begin -->
@@ -117,7 +119,7 @@ This policy setting allows you to specify whether users can change the network l
 <!-- AllNetworks_NetworkName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- AllNetworks_NetworkName-Applicability-End -->
 
 <!-- AllNetworks_NetworkName-OmaUri-Begin -->
@@ -260,7 +262,7 @@ This policy setting provides the string that names a network. If this setting is
 <!-- IdentifyingNetworks_LocationType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- IdentifyingNetworks_LocationType-Applicability-End -->
 
 <!-- IdentifyingNetworks_LocationType-OmaUri-Begin -->
@@ -309,7 +311,7 @@ This policy setting allows you to configure the Network Location for networks th
 <!-- UnidentifiedNetworks_LocationType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- UnidentifiedNetworks_LocationType-Applicability-End -->
 
 <!-- UnidentifiedNetworks_LocationType-OmaUri-Begin -->
@@ -358,7 +360,7 @@ This policy setting allows you to configure the Network Location type for networ
 <!-- UnidentifiedNetworks_UserPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- UnidentifiedNetworks_UserPermissions-Applicability-End -->
 
 <!-- UnidentifiedNetworks_UserPermissions-OmaUri-Begin -->

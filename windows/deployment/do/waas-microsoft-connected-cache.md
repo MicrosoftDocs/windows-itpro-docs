@@ -1,8 +1,8 @@
 ---
 title: Microsoft Connected Cache overview
 description: This article provides information about Microsoft Connected Cache (MCC), a software-only caching solution.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: overview
 author: cmknox
 ms.author: carmenf

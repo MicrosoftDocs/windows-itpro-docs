@@ -2,8 +2,8 @@
 title: UCUpdateAlert data schema
 titleSuffix: Windows Update for Business reports
 description: UCUpdateAlert schema for Windows Update for Business reports. UCUpdateAlert is an alert for both client and service updates.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart

@@ -2,7 +2,7 @@
 title: What's new in Windows 10, version 21H2 for IT pros
 description: Learn more about what's new in Windows 10 version 21H2, including servicing updates, Windows Subsystem for Linux, the latest CSPs, and more.
 manager: aaroncz
-ms.prod: windows-client
+ms.service: windows-client
 ms.author: mstewart
 author: mestew
 ms.localizationpriority: medium
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.collection:
   - highpri
   - tier2
-ms.technology: itpro-fundamentals
+ms.subservice: itpro-fundamentals
 ms.date: 12/31/2017
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10, version 21H2</a>

@@ -2,7 +2,7 @@
 title: Windows Hello errors during PIN creation
 description: When you set up Windows Hello, you may get an error during the Create a work PIN step.
 ms.topic: troubleshooting
-ms.date: 04/24/2023
+ms.date: 01/26/2024
 ---
 
 # Windows Hello errors during PIN creation
@@ -13,7 +13,7 @@ When you set up Windows Hello in Windows client, you may get an error during the
 
 The following image shows an example of an error during **Create a PIN**.
 
-![PIN error.](images/pinerror.png)
+![PIN error.](images/provisioning-error.png)
 
 ## Error mitigations
 
@@ -28,12 +28,12 @@ If the error occurs again, check the error code against the following table to s
 
 | Hex        | Cause                                                              | Mitigation                                  |
 | :--------- | :----------------------------------------------------------------- | :------------------------------------------ |
-| 0x80090005 | NTE\_BAD\_DATA                                                     | Unjoin the device from Microsoft Entra ID and rejoin. |
+| 0x80090005 | NTE_BAD_DATA                                                     | Unjoin the device from Microsoft Entra ID and rejoin. |
 | 0x8009000F | The container or key already exists.                               | Unjoin the device from Microsoft Entra ID and rejoin. |
 | 0x80090011 | The container or key was not found.                                | Unjoin the device from Microsoft Entra ID and rejoin. |
 | 0x80090029 | TPM is not set up.                                                 | Sign on with an administrator account. Select **Start**, type `tpm.msc`, and select **tpm.msc Microsoft Common Console Document**. In the **Actions** pane, select **Prepare the TPM**. |
-| 0x8009002A | NTE\_NO\_MEMORY                                                    | Close programs which are taking up memory and try again. |
-| 0x80090031 | NTE\_AUTHENTICATION\_IGNORED                                       | Reboot the device. If the error occurs again after rebooting, [reset the TPM](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd851452(v=ws.11)) or run [Clear-TPM](/powershell/module/trustedplatformmodule/clear-tpm). |
+| 0x8009002A | NTE_NO_MEMORY                                                    | Close programs which are taking up memory and try again. |
+| 0x80090031 | NTE_AUTHENTICATION_IGNORED                                       | Reboot the device. If the error occurs again after rebooting, [reset the TPM](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd851452(v=ws.11)) or run [Clear-TPM](/powershell/module/trustedplatformmodule/clear-tpm). |
 | 0x80090035 | Policy requires TPM and the device does not have TPM.              | Change the Windows Hello for Business policy to not require a TPM. |
 | 0x80090036 | User canceled an interactive dialog.                               | User will be asked to try again. |
 | 0x801C0003 | User is not authorized to enroll.                                  | Check if the user has permission to perform the operation​. |
@@ -53,11 +53,11 @@ If the error occurs again, check the error code against the following table to s
 | 0x801C03ED | Multi-factor authentication is required for a 'ProvisionKey' operation, but was not performed. <br><br> -or- <br><br> Token was not found in the Authorization header. <br><br> -or- <br><br> Failed to read one or more objects. <br><br> -or- <br><br> The request sent to the server was invalid. <br><br> -or- <br><br> User does not have permissions to join to Microsoft Entra ID. | Sign out and then sign in again. If that doesn't resolve the issue, unjoin the device from Azure  AD and rejoin. <br> Allow user(s) to join to Microsoft Entra ID under Microsoft Entra Device settings.
 | 0x801C03EE | Attestation failed.                                                | Sign out and then sign in again. |
 | 0x801C03EF | The AIK certificate is no longer valid.                            | Sign out and then sign in again. |
-| 0x801C03F2 | Windows Hello key registration failed.                             | ERROR\_BAD\_DIRECTORY\_REQUEST. Another object with the same value for property proxyAddresses already exists. To resolve the issue, refer to [Duplicate Attributes Prevent Dirsync](/office365/troubleshoot/administration/duplicate-attributes-prevent-dirsync). Also, if no sync conflict exists, please verify that the "Mail/Email address" in Microsoft Entra ID and the Primary SMTP address are the same in the proxy address.
+| 0x801C03F2 | Windows Hello key registration failed.                             | ERROR_BAD_DIRECTORY_REQUEST. Another object with the same value for property proxyAddresses already exists. To resolve the issue, refer to [Duplicate Attributes Prevent Dirsync](/office365/troubleshoot/administration/duplicate-attributes-prevent-dirsync). Also, if no sync conflict exists, please verify that the "Mail/Email address" in Microsoft Entra ID and the Primary SMTP address are the same in the proxy address.
 | 0x801C044D | Authorization token does not contain device ID.                    | Unjoin the device from Microsoft Entra ID and rejoin. |
 |            | Unable to obtain user token.                                       | Sign out and then sign in again. Check network and credentials. |
 | 0x801C044E | Failed to receive user credentials input.                          | Sign out and then sign in again. |
-| 0x801C0451 | User token switch account. | Delete the Web Account Manager token broker files located in `%LOCALAPPDATA%\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\AC\TokenBroker\Accounts\*.*\` and reboot.| 
+| 0x801C0451 | User token switch account. | Delete the Web Account Manager token broker files located in `%LOCALAPPDATA%\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\AC\TokenBroker\Accounts\*.*\` and reboot.|
 | 0xC00000BB | Your PIN or this option is temporarily unavailable.                | The destination domain controller doesn't support the login method. Most often the KDC service doesn't have the proper certificate to support the login. Another common cause can be the client cannot verify the KDC certificate CRL. Use a different login method.|
 
 ## Errors with unknown mitigation
@@ -70,9 +70,9 @@ For errors listed in this table, contact Microsoft Support for assistance.
 | 0X80072F0C  | Unknown |
 | 0x80072F8F  | A mismatch happens between the system's clock and the activation server's clock when attempting to activate Windows.|
 | 0x80090010  | NTE_PERM |
-| 0x80090020  | NTE\_FAIL |
+| 0x80090020  | NTE_FAIL |
 | 0x80090027  | Caller provided a wrong parameter. If third-party code receives this error, they must change their code. |
-| 0x8009002D  | NTE\_INTERNAL\_ERROR |
+| 0x8009002D  | NTE_INTERNAL_ERROR |
 | 0x801C0001  | ADRS server response is not in a valid format. |
 | 0x801C0002  | Server failed to authenticate the user. |
 | 0x801C0006  | Unhandled exception from server. |

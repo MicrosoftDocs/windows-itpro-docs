@@ -1,8 +1,8 @@
 ---
 title: Windows 11 connection endpoints for non-Enterprise editions
 description: Explains what Windows 11 endpoints are used in non-Enterprise editions. Specific to Windows 11.
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown

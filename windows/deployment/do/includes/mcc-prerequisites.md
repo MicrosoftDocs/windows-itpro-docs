@@ -3,8 +3,8 @@ ms.author: carmenf
 author: cmknox
 ms.reviewer: mstewart
 manager: aaroncz
-ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.service: windows-client
+ms.subservice: itpro-deploy
 ms.topic: include
 ms.date: 11/09/2022
 ms.localizationpriority: medium
