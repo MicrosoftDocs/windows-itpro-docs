@@ -11,7 +11,7 @@ This reference article contains the latest Shell Launcher XML schema definition 
 
 ## Shell Launcher XSD
 
-The following is the latest Shell Launcher XSD:
+Here's the latest Shell Launcher XSD, introduced in Windows 11:
 
 ```xml
 <xs:schema
@@ -169,7 +169,7 @@ The following is the latest Shell Launcher XSD:
 
 In Windows 10, version 1903, Shell Launcher introduced the support of both UWP and desktop apps as the custom shell.
 
-The following is the XSD for Shell Launcher features added in Windows 10, version 1903:
+Here's the Shell Launcher XSD for the features added in Windows 10, version 1903:
 
 ```xml
 <xs:schema

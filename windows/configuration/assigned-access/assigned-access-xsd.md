@@ -11,7 +11,7 @@ This reference article contains the latest Assigned Access XML schema definition
 
 ## Assigned Access XSD
 
-The following is the latest Assigned Access XSD, introduced in Windows 11:
+Here's the latest Assigned Access XSD, introduced in Windows 11:
 
 ```xml
 <xs:schema
@@ -212,7 +212,7 @@ The following is the latest Assigned Access XSD, introduced in Windows 11:
 
 ## Windows 11, version 22H2 additions
 
-The following is the XSD for Assigned Access features added in Windows 11:
+Here's the Assigned Access XSD for the features added in Windows 11:
 
 ```xml
 <xs:schema
@@ -232,7 +232,7 @@ The following is the XSD for Assigned Access features added in Windows 11:
 
 ## Windows 11, version 21H2 additions
 
-The following is the XSD for Assigned Access features added in Windows 10, version 21H2:
+Here's the Assigned Access XSD for the features added in Windows 10, version 21H2:
 
 ```xml
 <xs:schema
@@ -259,7 +259,7 @@ The following is the XSD for Assigned Access features added in Windows 10, versi
 
 ## Windows 10, version 1909 additions
 
-The following is the XSD for Assigned Access features added in Windows 10, version 1909:
+Here's the Assigned Access XSD for the features added in Windows 10, version 1909:
 
 ```xml
 <xs:schema
@@ -294,7 +294,7 @@ The following is the XSD for Assigned Access features added in Windows 10, versi
 
 ## Windows 10, version 1809 additions
 
-The following is the XSD for Assigned Access features added in Windows 10, version 1809:
+Here's the Assigned Access XSD for the features added in Windows 10, version 1809:
 
 ```xml
 <xs:schema
