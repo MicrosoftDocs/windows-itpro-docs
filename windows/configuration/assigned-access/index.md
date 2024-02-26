@@ -11,7 +11,7 @@ Organization may want to set up special purpose devices, such as a device in the
 
 :::row:::
     :::column span="1":::
-    :::image type="content" source="images/kiosk.png"" alt-text="Icon representing a kiosk." border="false":::
+    :::image type="content" source="images/kiosk.png" alt-text="Icon representing a kiosk." border="false":::
     :::column-end:::
     :::column span="3":::
     #### Kiosk
