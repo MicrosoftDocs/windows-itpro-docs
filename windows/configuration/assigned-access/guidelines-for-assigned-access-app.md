@@ -1,20 +1,20 @@
 ---
 title: Guidelines for choosing an app for assigned access
-description: The following guidelines may help you choose an appropriate Windows app for your assigned access experience.
-ms.topic: article
-ms.date: 12/31/2017
+description: The following guidelines may help you choose an appropriate Windows app for your Assigned Access experience.
+ms.topic: concept-article
+ms.date: 02/26/2024
 ---
 
-# Guidelines for choosing an app for assigned access (kiosk mode)
+# Guidelines for choosing an app for Assigned Access (kiosk experience)
 
-Use assigned access to restrict users to use only one application, so that the device acts like a kiosk. Administrators can use assigned access to restrict a selected user account to access a single Windows app. You can choose almost any Windows app for assigned access; however, some apps may not provide a good user experience.
+Use Assigned Access to restrict users to use only one application, so that the device acts like a kiosk. Administrators can use Assigned Access to restrict a selected user account to access a single Windows app. You can choose almost any Windows app for assigned access; however, some apps may not provide a good user experience.
 
-The following guidelines may help you choose an appropriate Windows app for your assigned access experience.
+The following guidelines may help you choose an appropriate Windows app for your Assigned Access experience.
 
 ## General guidelines
 
-- Windows apps must be provisioned or installed for the assigned access account before they can be selected as the assigned access app. [Learn how to provision and install apps](/windows/client-management/mdm/enterprise-app-management#install_your_apps).
-- Updating a Windows app can sometimes change the Application User Model ID (AUMID) of the app. If this change happens, you must update the assigned access settings to launch the updated app, because assigned access uses the AUMID to determine which app to launch.
+- Windows apps must be provisioned or installed for the Assigned Access account before they can be selected as the Assigned Access app. [Learn how to provision and install apps](/windows/client-management/mdm/enterprise-app-management#install_your_apps).
+- Updating a Windows app can sometimes change the Application User Model ID (AUMID) of the app. If this change happens, you must update the Assigned Access settings to launch the updated app, because Assigned Access uses the AUMID to determine which app to launch.
 - Apps that are generated using the [Desktop App Converter (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) can't be used as kiosk apps.
 
 ## Guidelines for Windows apps that launch other apps
@@ -131,16 +131,16 @@ Avoid selecting Windows apps that may expose the information you don't want to s
 
 ## App configuration
 
-Some apps may require more configurations before they can be used appropriately in assigned access. For example, Microsoft OneNote requires you to set up a Microsoft account for the assigned access user account before OneNote will open in assigned access.
+Some apps may require more configurations before they can be used appropriately in assigned access. For example, Microsoft OneNote requires you to set up a Microsoft account for the Assigned Access user account before OneNote will open in assigned access.
 
 Check the guidelines published by your selected app and set up accordingly.
 
 ## Develop your kiosk app
 
-Assigned access in Windows client uses the new lock framework. When an assigned access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an above lock screen app.
+Assigned access in Windows client uses the new lock framework. When an Assigned Access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an above lock screen app.
 
 Follow the [best practices guidance for developing a kiosk app for assigned access](/windows-hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access).
 
-## Test your assigned access experience
+## Test your Assigned Access experience
 
-The above guidelines may help you select or develop an appropriate Windows app for your assigned access experience. Once you've selected your app, we recommend that you thoroughly test the assigned access experience to ensure that your device provides a good customer experience.
+The above guidelines may help you select or develop an appropriate Windows app for your Assigned Access experience. Once you've selected your app, we recommend that you thoroughly test the Assigned Access experience to ensure that your device provides a good customer experience.

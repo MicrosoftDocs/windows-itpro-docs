@@ -29,7 +29,7 @@ items:
       href: find-aumid.md
 - name: Reference
   items:
-    - name: Assigned Access CSP
+    - name: Assigned Access CSP 🔗
       href: /windows/client-management/mdm/assignedaccess-csp
     - name: Assigned Access XSD
       href: assigned-access-xsd.md
@@ -37,5 +37,5 @@ items:
       href: shell-launcher-xsd.md
     - name: Assigned Access policy settings
       href: assigned-access-policy-settings.md
-- name: Troubleshoot
+- name: Troubleshoot 🔗
   href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting

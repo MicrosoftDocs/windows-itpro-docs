@@ -51,10 +51,10 @@ There are several kiosk configuration methods that you can choose from, dependin
 
 ## User experience
 
-To test the kiosk, sign in with the assigned access user account you specified in the configuration to check out the multi-app experience.
+To test the kiosk, sign in with the Assigned Access user account you specified in the configuration to check out the multi-app experience.
 
 >[!NOTE]
->The kiosk configuration setting will take effect the next time the assigned access user signs in. If that user account is signed in when you apply the configuration, make sure the user signs out and signs back in to validate the experience.
+>The kiosk configuration setting will take effect the next time the Assigned Access user signs in. If that user account is signed in when you apply the configuration, make sure the user signs out and signs back in to validate the experience.
 
 When Assigned Access is configured, different policy settings are applied to the device to provide a secured, locked-down experience. For more information, see [assigned-access-policy-settings](assigned-access-policy-settings.md).
 
@@ -65,29 +65,6 @@ Optionally, run Event Viewer (eventvwr.exe) and look through logs under **Applic
 In the multi-app mode, to maximize the user productivity and streamline the experience, an app will be always launched in full screen when the users click the tile on the Start. The users can minimize and close the app, but cannot resize the app window.
 
 The users can switch apps just as they do today in Windows. They can use the Task View button, Alt + Tab hotkey, and the swipe in from the left gesture to view all the open apps in task view. They can click the Windows button to show Start, from which they can open apps, and they can switch to an opened app by clicking it on the taskbar.
-
-### Blocked hotkeys
-
-When using Assigned Access with a restricted user experience, the following hotkeys are blocked:
-
-| Hotkey | Action |
-|--|--|
-| <kbd>WIN</kbd> + <kbd>A</kbd> | Open Action center |
-| <kbd>WIN</kbd> + <kbd>Shift</kbd>  + <kbd> C</kbd> | Open Cortana in listening mode |
-| <kbd>WIN</kbd> + <kbd>D</kbd> | Display and hide the desktop |
-| <kbd>WIN</kbd> + <kbd>Alt</kbd>  + <kbd> D</kbd> | Display and hide the date and time on the desktop |
-| <kbd>WIN</kbd> + <kbd>E</kbd> | Open File Explorer |
-| <kbd>WIN</kbd> + <kbd>F</kbd> | Open Feedback Hub |
-| <kbd>WIN</kbd> + <kbd>G</kbd> | Open Game bar when a game is open |
-| <kbd>WIN</kbd> + <kbd>I</kbd> | Open Settings |
-| <kbd>WIN</kbd> + <kbd>J</kbd> | Set focus to a Windows tip when one is available. |
-| <kbd>WIN</kbd> + <kbd>O</kbd> | Lock device orientation |
-| <kbd>WIN</kbd> + <kbd>Q</kbd> | Open search |
-| <kbd>WIN</kbd> + <kbd>R</kbd> | Open the Run dialog box |
-| <kbd>WIN</kbd> + <kbd>S</kbd> | Open search |
-| <kbd>WIN</kbd> + <kbd>X</kbd> | Open the Quick Link menu |
-| <kbd>WIN</kbd> + <kbd>, (comma)</kbd> | Temporarily peek at the desktop |
-| <kbd>WIN</kbd> + <kbd>Ctrl</kbd>  + <kbd> F</kbd> | Search for PCs (if you're on a network) |
 
 ### Auto-trigger touch keyboard
 
@@ -103,5 +80,5 @@ The touch keyboard is automatically triggered when there's an input needed and n
 
 A kiosk device typically runs a single application, and users are prevented from accessing any features or functions on the device outside of the app.
 
-The assigned access feature is intended for dedicated devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, impacting other users on the device. Deleting the kiosk configuration removes the assigned access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, the Start layout). To clear all the policy settings enforced by Assigned Access, you must reset Windows.
+The Assigned Access feature is intended for dedicated devices, like kiosks. When the multi-app Assigned Access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, impacting other users on the device. Deleting the kiosk configuration removes the Assigned Access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, the Start layout). To clear all the policy settings enforced by Assigned Access, you must reset Windows.
 

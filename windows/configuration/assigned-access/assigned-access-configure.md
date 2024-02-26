@@ -26,10 +26,10 @@ Watch how to use a provisioning package to configure a multi-app kiosk.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
 
-An assigned access multi-app kiosk runs one or more apps from the desktop. People using the kiosk see a customized Start that shows only the apps that are allowed. With this approach, you can configure a locked-down experience for different account types. A multi-app kiosk is appropriate for devices that are shared by multiple people. Here's a guide on how to set up a multi-app kiosk.
+An Assigned Access multi-app kiosk runs one or more apps from the desktop. People using the kiosk see a customized Start that shows only the apps that are allowed. With this approach, you can configure a locked-down experience for different account types. A multi-app kiosk is appropriate for devices that are shared by multiple people. Here's a guide on how to set up a multi-app kiosk.
 
 > [!WARNING]
-> The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policy settings](assigned-access-policy-settings.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
+> The Assigned Access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app Assigned Access configuration is applied on the device, [certain policy settings](assigned-access-policy-settings.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the Assigned Access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
 
 > [!TIP]
 > Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
@@ -55,7 +55,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 1. Expand **Runtime settings** > **AssignedAccess** > **MultiAppAssignedAccessSettings**.
 
-1. In the center pane, select **Browse**. Locate and select the assigned access configuration XML file that you created.
+1. In the center pane, select **Browse**. Locate and select the Assigned Access configuration XML file that you created.
 
    ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer.](images/multiappassignedaccesssettings.png)
 
@@ -101,13 +101,13 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 Provisioning packages can be applied to a device during initial setup (out-of-box experience or "OOBE") and after ("runtime"). For more information, see [Apply a provisioning package](../provisioning-packages/provisioning-apply-package.md).
 
 > [!NOTE]
-> If your provisioning package doesn't include the assigned access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device.
+> If your provisioning package doesn't include the Assigned Access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device.
 
 ### Use MDM to deploy the multi-app configuration
 
-Multi-app kiosk mode is enabled by the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp). Your MDM policy can contain the assigned access configuration XML.
+Multi-app kiosk mode is enabled by the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp). Your MDM policy can contain the Assigned Access configuration XML.
 
-If your device is enrolled with an MDM service that supports applying the assigned access configuration, you can use it to apply the setting remotely.
+If your device is enrolled with an MDM service that supports applying the Assigned Access configuration, you can use it to apply the setting remotely.
 
 The OMA-URI for multi-app policy is `./Device/Vendor/MSFT/AssignedAccess/Configuration`.
 
@@ -190,20 +190,20 @@ To configure a device using the Windows PowerShell cmdlet:
 1. Sign in as administrator and from an elevated PowerShell prompt use one of the following commands:
 
     ```PowerShell
-    #Configure assigned access by AppUserModelID and user name
+    #Configure Assigned Access by AppUserModelID and user name
     Set-AssignedAccess -AppUserModelId <AUMID> -UserName <username>
 
-    #Configure assigned access by AppUserModelID and user SID
+    #Configure Assigned Access by AppUserModelID and user SID
     Set-AssignedAccess -AppUserModelId <AUMID> -UserSID <usersid>
 
-    #Configure assigned access by app name and user name
+    #Configure Assigned Access by app name and user name
     Set-AssignedAccess -AppName <CustomApp> -UserName <username>
 
-    #Configure assigned access by app name and user SID**:
+    #Configure Assigned Access by app name and user SID**:
     Set-AssignedAccess -AppName <CustomApp> -UserSID <usersid>
 
 > [!NOTE]
-> To set up assigned access using `-AppName`, the user account that you enter for assigned access must have signed in at least once.
+> To set up Assigned Access using `-AppName`, the user account that you enter for Assigned Access must have signed in at least once.
 
 For more innformation:
 
@@ -360,13 +360,13 @@ Account type:
 
 ## Sign out of assigned access
 
-To exit the assigned access (kiosk) app, press **Ctrl + Alt + Del**, and then sign in using another account. When you press **Ctrl + Alt + Del** to sign out of assigned access, the kiosk app will exit automatically. If you sign in again as the assigned access account or wait for the sign in screen timeout, the kiosk app relaunches. The assigned access user will remain signed in until an admin account opens **Task Manager** > **Users** and signs out the user account.
+To exit the Assigned Access (kiosk) app, press **Ctrl + Alt + Del**, and then sign in using another account. When you press **Ctrl + Alt + Del** to sign out of assigned access, the kiosk app will exit automatically. If you sign in again as the Assigned Access account or wait for the sign in screen timeout, the kiosk app relaunches. The Assigned Access user will remain signed in until an admin account opens **Task Manager** > **Users** and signs out the user account.
 
-If you press **Ctrl + Alt + Del** and do not sign in to another account, after a set time, assigned access will resume. The default time is 30 seconds, but you can change that in the following registry key:
+If you press **Ctrl + Alt + Del** and do not sign in to another account, after a set time, Assigned Access will resume. The default time is 30 seconds, but you can change that in the following registry key:
 
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI`
 
-To change the default time for assigned access to resume, add *IdleTimeOut* (DWORD) and enter the value data as milliseconds in hexadecimal.
+To change the default time for Assigned Access to resume, add *IdleTimeOut* (DWORD) and enter the value data as milliseconds in hexadecimal.
 
 > [!NOTE]
 > **IdleTimeOut** doesn't apply to the new Microsoft Edge kiosk mode.

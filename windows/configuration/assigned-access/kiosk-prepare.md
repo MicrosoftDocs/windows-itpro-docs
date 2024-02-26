@@ -178,7 +178,7 @@ Logs can help you [troubleshoot issues](/troubleshoot/windows-client/shell-exper
 
 ## Automatic logon
 
-You may also want to set up **automatic logon** for your kiosk device. When your kiosk device restarts, from an update or power outage, you can sign in the assigned access account manually. Or, you can configure the device to sign in to the assigned access account automatically. Make sure that Group Policy settings applied to the device don't prevent automatic sign in.
+You may also want to set up **automatic logon** for your kiosk device. When your kiosk device restarts, from an update or power outage, you can sign in the Assigned Access account manually. Or, you can configure the device to sign in to the Assigned Access account automatically. Make sure that Group Policy settings applied to the device don't prevent automatic sign in.
 
 > [!NOTE]
 > If you are using a Windows client device restriction CSP to set "Preferred Microsoft Entra tenant domain", this will break the "User logon type" auto-login feature of the Kiosk profile.
@@ -230,13 +230,13 @@ The following table describes some features that have interoperability issues we
 
 - **Assigned access Windows PowerShell cmdlets**: In addition to using the Windows UI, you can use the Windows PowerShell cmdlets to set or clear assigned access. For more information, see [Assigned access Windows PowerShell reference](/powershell/module/assignedaccess/)
 
-- **Key sequences blocked by assigned access**: When in assigned access, some key combinations are blocked for assigned access users.
+- **Key sequences blocked by assigned access**: When in assigned access, some key combinations are blocked for Assigned Access users.
 
   <kbd>Alt</kbd> + <kbd>F4</kbd>, <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>, <kbd>Alt</kbd> + <kbd>Tab</kbd> aren't blocked by Assigned Access, it's recommended you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block these key combinations.
 
-  Ctrl + Alt + Delete is the key to break out of Assigned Access. If needed, you can use Keyboard Filter to configure a different key combination to break out of assigned access by setting BreakoutKeyScanCode as described in [WEKF_Settings](/windows-hardware/customize/enterprise/wekf-settings).
+  Ctrl + Alt + Delete is the key to break out of Assigned Access. If needed, you can use Keyboard Filter to configure a different key combination to break out of Assigned Access by setting BreakoutKeyScanCode as described in [WEKF_Settings](/windows-hardware/customize/enterprise/wekf-settings).
 
-  | Key combination | Blocked behavior for assigned access users |
+  | Key combination | Blocked behavior for Assigned Access users |
   | --- | --- |
   | <kbd>Alt</kbd> + <kbd>Esc</kbd> | Cycle through items in the reverse order from which they were opened. |
   | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Esc</kbd>  | Cycle through items in the reverse order from which they were opened. |
@@ -258,7 +258,7 @@ The following table describes some features that have interoperability issues we
 - **Unified Write Filter (UWF)**: UWFsettings apply to all users, including users with assigned access
   For more information, see [Unified Write Filter][WHW-2]
 - **WEDL_AssignedAccess class**: You can use this class to configure and manage basic lockdown features for assigned access. It's recommended to you use the Windows PowerShell cmdlets instead.
-  If you need to use assigned access API, see [WEDL_AssignedAccess][WHW-3]
+  If you need to use Assigned Access API, see [WEDL_AssignedAccess][WHW-3]
 - **Welcome Screen**: Customizations for the Welcome screen let you personalize not only how the Welcome screen looks, but for how it functions. You can disable the power or language button, or remove all user interface elements. There are many options to make the Welcome screen your own
 
 For more information, see [Custom Logon][WHW-1].
