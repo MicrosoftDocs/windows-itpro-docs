@@ -78,26 +78,3 @@ The following policy settings are applied to any nonadministrator account access
 | **GPO** | User Configuration\Administrative Templates\System\Ctrl+Alt+Del Options          | Remove Task Manager                                               |
 | **GPO** | User Configuration\Administrative Templates\Windows Components\File Explorer     | Remove *Map network drive* and *Disconnect Network Drive*         |
 | **GPO** | User Configuration\Administrative Templates\Windows Components\File Explorer     | Remove File Explorer's default context menu                       |
-
-### Keyboard shortcuts
-
-The following keyboard shortcuts are blocked for any nonadministrator account when using Assigned Access:
-
-| Hotkey | Action |
-|--|--|
-| <kbd>WIN</kbd> + <kbd>A</kbd> | Open Action center |
-| <kbd>WIN</kbd> + <kbd>Shift</kbd>  + <kbd> C</kbd> | Open Cortana in listening mode |
-| <kbd>WIN</kbd> + <kbd>D</kbd> | Display and hide the desktop |
-| <kbd>WIN</kbd> + <kbd>Alt</kbd>  + <kbd> D</kbd> | Display and hide the date and time on the desktop |
-| <kbd>WIN</kbd> + <kbd>E</kbd> | Open File Explorer |
-| <kbd>WIN</kbd> + <kbd>F</kbd> | Open Feedback Hub |
-| <kbd>WIN</kbd> + <kbd>G</kbd> | Open Game bar when a game is open |
-| <kbd>WIN</kbd> + <kbd>I</kbd> | Open Settings |
-| <kbd>WIN</kbd> + <kbd>J</kbd> | Set focus to a Windows tip when one is available. |
-| <kbd>WIN</kbd> + <kbd>O</kbd> | Lock device orientation |
-| <kbd>WIN</kbd> + <kbd>Q</kbd> | Open search |
-| <kbd>WIN</kbd> + <kbd>R</kbd> | Open the Run dialog box |
-| <kbd>WIN</kbd> + <kbd>S</kbd> | Open search |
-| <kbd>WIN</kbd> + <kbd>X</kbd> | Open the Quick Link menu |
-| <kbd>WIN</kbd> + <kbd>, (comma)</kbd> | Temporarily peek at the desktop |
-| <kbd>WIN</kbd> + <kbd>Ctrl</kbd>  + <kbd> F</kbd> | Search for PCs (if you're on a network) |

@@ -220,36 +220,56 @@ How to edit the registry to have an account sign in automatically:
 
 The following table describes some features that have interoperability issues we recommend that you consider when running assigned access.
 
-- **Accessibility**: Assigned access doesn't change Ease of Access settings. We recommend that you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block the following key combinations that bring up accessibility features:
+### Accessibility
+
+Assigned access doesn't change accessibility settings. We recommend that you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block the following key combinations that open accessibility features:
 
   | Key combination | Blocked behavior |
   | --- | --- |
-  | Left Alt + Left Shift + Print Screen | Open High Contrast dialog box. |
-  | Left Alt + Left Shift + Num Lock | Open Mouse Keys dialog box. |
-  | Windows logo key + U | Open Ease of Access Center. |
+  | <kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>Print Screen</kbd> | Open High Contrast dialog box |
+  | <kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>Num Lock</kbd> | Open Mouse Keys dialog box |
+  | <kbd>WIN</kbd> + <kbd>U</kbd> | Open the Settings app accessibility panel |
 
-- **Assigned access Windows PowerShell cmdlets**: In addition to using the Windows UI, you can use the Windows PowerShell cmdlets to set or clear assigned access. For more information, see [Assigned access Windows PowerShell reference](/powershell/module/assignedaccess/)
+### Keyboard shortcuts
 
-- **Key sequences blocked by assigned access**: When in assigned access, some key combinations are blocked for Assigned Access users.
+The following keyboard shortcuts are blocked for any user account with Assigned Access:
 
-  <kbd>Alt</kbd> + <kbd>F4</kbd>, <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>, <kbd>Alt</kbd> + <kbd>Tab</kbd> aren't blocked by Assigned Access, it's recommended you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block these key combinations.
+| Keyboard shortcut | Action |
+|--|--|
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd>  + <kbd>Esc</kbd>  | Open Task Manager |
+| <kbd>WIN</kbd> + <kbd>, (comma)</kbd> | Temporarily peek at the desktop |
+| <kbd>WIN</kbd> + <kbd>A</kbd> | Open Action center |
+| <kbd>WIN</kbd> + <kbd>Alt</kbd>  + <kbd> D</kbd> | Display and hide the date and time on the desktop |
+| <kbd>WIN</kbd> + <kbd>Ctrl</kbd>  + <kbd> F</kbd> | Find computer objects in Active Directory |
+| <kbd>WIN</kbd> + <kbd>D</kbd> | Display and hide the desktop |
+| <kbd>WIN</kbd> + <kbd>E</kbd> | Open File Explorer |
+| <kbd>WIN</kbd> + <kbd>F</kbd> | Open Feedback Hub |
+| <kbd>WIN</kbd> + <kbd>G</kbd> | Open Game bar when a game is open |
+| <kbd>WIN</kbd> + <kbd>I</kbd> | Open Settings |
+| <kbd>WIN</kbd> + <kbd>J</kbd> | Set focus to a Windows tip when one is available |
+| <kbd>WIN</kbd> + <kbd>O</kbd> | Lock device orientation |
+| <kbd>WIN</kbd> + <kbd>Q</kbd> | Open search |
+| <kbd>WIN</kbd> + <kbd>R</kbd> | Open the Run dialog box |
+| <kbd>WIN</kbd> + <kbd>S</kbd> | Open search |
+| <kbd>WIN</kbd> + <kbd>Shift</kbd>  + <kbd> C</kbd> | Open Cortana in listening mode |
+| <kbd>WIN</kbd> + <kbd>X</kbd> | Open the Quick Link menu |
+| LaunchApp1 | Open the app that is assigned to this key |
+| LaunchApp2 | Open the app that is assigned to this key. On many Microsoft keyboards, the app is Calculator |
+| LaunchMail | Open the default mail client |
 
-  Ctrl + Alt + Delete is the key to break out of Assigned Access. If needed, you can use Keyboard Filter to configure a different key combination to break out of Assigned Access by setting BreakoutKeyScanCode as described in [WEKF_Settings](/windows-hardware/customize/enterprise/wekf-settings).
+The following keyboard shortcuts are't blocked for any user account with Assigned Access. You can use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block these key combinations:
 
-  | Key combination | Blocked behavior for Assigned Access users |
-  | --- | --- |
-  | <kbd>Alt</kbd> + <kbd>Esc</kbd> | Cycle through items in the reverse order from which they were opened. |
-  | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Esc</kbd>  | Cycle through items in the reverse order from which they were opened. |
-  | <kbd>Ctrl</kbd> + <kbd>Esc</kbd> | Open the Start screen. |
-  | <kbd>Ctrl</kbd> + <kbd>F4</kbd> | Close the window. |
-  | <kbd>Ctrl</kbd> + <kbd>Shift</kbd>  + <kbd>Esc</kbd>  | Open Task Manager. |
-  | <kbd>Ctrl</kbd> + <kbd>Tab</kbd> | Switch windows within the application currently open. |
-  | LaunchApp1 | Open the app that is assigned to this key. |
-  | LaunchApp2 | Open the app that is assigned to this key. On many Microsoft keyboards, the app is Calculator. |
-  | LaunchMail | Open the default mail client. |
-  | Windows logo key | Open the Start screen. |
+| Keyboard shortcut | Action |
+|--|--|
+|<kbd>Alt</kbd> + <kbd>F4</kbd>||
+|<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>||
+|<kbd>Alt</kbd> + <kbd>Tab</kbd>||
 
-  Keyboard Filter settings apply to other standard accounts.
+> [!NOTE]
+> <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> is the default keyboard shortcut to break out of Assigned Access. You can use *Keyboard Filter* to configure a different key combination to break out of Assigned Access by setting *BreakoutKeyScanCode* as described in [WEKF_Settings](/windows-hardware/customize/enterprise/wekf-settings).
+
+> [!CAUTION]
+> Keyboard Filter settings apply to other standard accounts.
 
 - **Key sequences blocked by [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter)**: If Keyboard Filter is turned ON, then some key combinations are blocked automatically without you having to explicitly block them. For more information, see the [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter).
   [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) is only available on Windows client Enterprise or Education

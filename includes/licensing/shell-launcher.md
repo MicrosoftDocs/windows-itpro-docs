@@ -7,16 +7,16 @@ ms.topic: include
 
 ## Windows edition and licensing requirements
 
-The following table lists the Windows editions that support Assigned Access (kiosk mode):
+The following table lists the Windows editions that support Shell Launcher:
 
 |Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:---:|:---:|:---:|:---:|
-|Yes|Yes|Yes|Yes|
+|No|Yes|No|Yes|
 
-Assigned Access (kiosk mode) license entitlements are granted by the following licenses:
+Shell Launcher license entitlements are granted by the following licenses:
 
 |Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|
-|Yes|Yes|Yes|Yes|Yes|
+|No|Yes|Yes|Yes|Yes|
 
 For more information about Windows licensing, see [Windows licensing overview](/windows/whats-new/windows-licensing).

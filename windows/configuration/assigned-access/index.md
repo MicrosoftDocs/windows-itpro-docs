@@ -9,8 +9,25 @@ ms.date: 02/26/2024
 
 Organization may want to set up special purpose devices, such as a device in the lobby that customers can use to view product catalogs, or a device displaying visual content as a digital sign. Windows client offers two different locked-down experiences for public or specialized use:
 
-- Single-app kiosk: runs a single Universal Windows Platform (UWP) application in full screen above the lock screen. People using the kiosk can see only that app. When the kiosk account (a local standard user account) signs in, the kiosk app launches automatically. If the kiosk app is closed, it will automatically restart
-- Multi-app kiosk: runs one or more applications from the desktop. People using the kiosk see a customized Start menu that shows only the apps that are allowed to execute. With this approach, you can configure a locked-down experience for different account types
+:::row:::
+    :::column:::
+    :::image type="content" source="images/kiosk.png" alt-text="logo":::
+    :::column-end:::
+    :::column:::
+    ### Kiosk
+    Runs a single Universal Windows Platform (UWP) application in full screen above the lock screen. People using the kiosk can see only that app. When the kiosk account (a local standard user account) signs in, the kiosk app launches automatically. If the kiosk app is closed, it will automatically restart
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    :::image type="content" source="images/restricted-user-experience.png" alt-text="logo":::
+    :::column-end:::
+    :::column:::
+    ### Restricted user experience
+    runs one or more applications from the desktop. People using the kiosk see a customized Start menu that shows only the apps that are allowed to execute. With this approach, you can configure a locked-down experience for different account types
+    :::column-end:::
+:::row-end:::
+
 
 A single-app kiosk is ideal for public use. Using [Shell Launcher](kiosk-shelllauncher.md), you can configure a kiosk device that runs a Windows desktop application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user signs in. This type of single-app kiosk doesn't run above the lock screen.
 
@@ -32,7 +49,8 @@ There are several kiosk configuration methods that you can choose from, dependin
 >[!IMPORTANT]
 >Single-app kiosk mode isn't supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk.
 
-[!INCLUDE [assigned-access-kiosk-mode](../../../includes/licensing/assigned-access-kiosk-mode.md)]
+[!INCLUDE [assigned-access-kiosk-mode](../../../includes/licensing/assigned-access.md)]
+[!INCLUDE [assigned-access-kiosk-mode](../../../includes/licensing/shell-launcher.md)]
 
 ## Summary of configuration methods
 
