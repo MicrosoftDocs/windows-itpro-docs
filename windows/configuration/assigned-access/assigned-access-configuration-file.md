@@ -355,6 +355,8 @@ Limitations:
           </Config>
         </Configs>
         ```
+    :::column-end:::
+:::row-end:::
 
         >[!NOTE]
         > On Microsoft Entra joined and domain-joined devices, local user accounts aren't disaplyed on the sign-in screen by default. To show the **AutoLogonAccount** on the sign-in screen, enable the policy setting:
@@ -365,8 +367,7 @@ Limitations:
         >[!IMPORTANT]
         >When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature doesn't work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon).
 
-    :::column-end:::
-:::row-end:::
+
 
 ### Config for individual accounts
 
@@ -399,19 +400,19 @@ Group accounts are specified using `<UserGroup>`. Nested groups aren't supported
 
 
 :::row:::
-:::column span="1":::
+:::column span="2":::
 **Scenario**
 :::column-end:::
-:::column span="3":::
+:::column span="2":::
 **XML snippet**
 :::column-end:::
 :::row-end:::
 :::row:::
-:::column span="1":::
+:::column span="2":::
 **Local group**
-:::column-end:::
-:::column span="3":::
 Specify the group type as **LocalGroup** and put the group name in Name attribute. Any Microsoft Entra accounts that are added to the local group won't have the kiosk settings applied.
+:::column-end:::
+:::column span="2":::
 ```xml
 <Config>
   <UserGroup Type="LocalGroup" Name="groupname" />
@@ -421,11 +422,11 @@ Specify the group type as **LocalGroup** and put the group name in Name attribut
 :::column-end:::
 :::row-end:::
 :::row:::
-:::column span="1":::
+:::column span="2":::
 **Active Directory group**
-:::column-end:::
-:::column span="3":::
 Both security and distribution groups are supported. Specify the group type as <strong>ActiveDirectoryGroup</strong>. Use the domain name as the prefix in the name attribute.
+:::column-end:::
+:::column span="2":::
 ```xml
 <Config>
   <UserGroup Type="ActiveDirectoryGroup" Name="contoso\groupname" />
@@ -435,11 +436,11 @@ Both security and distribution groups are supported. Specify the group type as <
 :::column-end:::
 :::row-end:::
 :::row:::
-:::column span="1":::
+:::column span="2":::
 **Microsoft Entra group**
-:::column-end:::
-:::column span="3":::
 Use the object ID of the Microsoft Entra group. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as `AzureActiveDirectoryGroup`. The kiosk device must have internet connectivity when users that belong to the group sign-in.
+:::column-end:::
+:::column span="2":::
 ```xml
 <Config>
   <UserGroup Type="AzureActiveDirectoryGroup" Name="Group_GUID" />
@@ -527,19 +528,20 @@ You can specify user access to Downloads folder, Removable drives, or no restric
 |`NoRestriction`|`https://schemas.microsoft.com/AssignedAccess/2020/config` (v3)|
 
 :::row:::
-:::column span="1":::
+:::column span="2":::
 **Scenario**
 :::column-end:::
-:::column span="3":::
+:::column span="2":::
 **XML snippet**
 :::column-end:::
 :::row-end:::
 :::row:::
-:::column span="1":::
+:::column span="2":::
 **Block everything**
+Either don't use the node or leave it empty
 :::column-end:::
-:::column span="3":::
-Either don't use the node or leave it empty:
+:::column span="2":::
+
 ```xml
 <rs5:FileExplorerNamespaceRestrictions>
 </rs5:FileExplorerNamespaceRestrictions>
@@ -547,10 +549,10 @@ Either don't use the node or leave it empty:
 :::column-end:::
 :::row-end:::
 :::row:::
-:::column span="1":::
+:::column span="2":::
 **Only allow downloads**
 :::column-end:::
-:::column span="3":::
+:::column span="2":::
 ```xml
 <rs5:FileExplorerNamespaceRestrictions>
     <rs5:AllowedNamespace Name="Downloads"/>
@@ -559,10 +561,10 @@ Either don't use the node or leave it empty:
 :::column-end:::
 :::row-end:::
 :::row:::
-:::column span="1":::
+:::column span="2":::
 **Only allow removable drives**
 :::column-end:::
-:::column span="3":::
+:::column span="2":::
 ```xml
 <rs5:FileExplorerNamespaceRestrictions>
     <v3:AllowRemovableDrives />
@@ -571,10 +573,10 @@ Either don't use the node or leave it empty:
 :::column-end:::
 :::row-end:::
 :::row:::
-:::column span="1":::
+:::column span="2":::
 **Allow both Downloads, and removable drives**
 :::column-end:::
-:::column span="3":::
+:::column span="2":::
 ```xml
 <rs5:FileExplorerNamespaceRestrictions>
     <rs5:AllowedNamespace Name="Downloads"/>
@@ -584,7 +586,7 @@ Either don't use the node or leave it empty:
 :::column-end:::
 :::row-end:::
 :::row:::
-:::column span="1":::
+:::column span="2":::
 **No restrictions, all locations are allowed**
 :::column-end:::
 :::column span="3":::
