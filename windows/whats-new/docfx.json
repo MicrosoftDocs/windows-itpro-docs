@@ -52,17 +52,16 @@
       "titleSuffix": "What's new in Windows",
       "contributors_to_exclude": [
         "rjagiewich",
-        "traya1",
-        "rmca14",
         "claydetels19",
         "jborsecnik",
-        "tiburd",
         "garycentric",
         "beccarobins",
         "Stacyrch140",
         "v-stsavell",
         "American-Dipper",
-        "shdyas"
+        "shdyas",
+        "alekyaj",
+        "rmca14"
       ],
       "searchScope": [
         "Windows 10"
