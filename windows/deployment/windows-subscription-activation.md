@@ -59,7 +59,7 @@ For more information about configuring exclusions in Conditional Access policies
 
 <!-- 8605089 -->
 
-When a device has been offline for an extended period of time, the device might not reactive automatically if these Conditional Access policies aren't in place. Setting this Conditional Access policy ensures that Subscription Activation continues to work seamlessly.
+When a device has been offline for an extended period of time, the device might not reactivate automatically if these Conditional Access exclusions aren't in place. Setting this Conditional Access exclusions ensures that Subscription Activation continues to work seamlessly.
 
 Starting with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later, users are prompted for authentication with a toast notification when Subscription Activation needs to reactivate. The prompt for authentication usually occurs when a device has been offline for an extended period of time. This change eliminates the need for an exclusion in the Conditional Access policy for Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later. A Conditional Access policy can still be used with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later if the prompt for user authentication via a toast notification isn't desired.
 

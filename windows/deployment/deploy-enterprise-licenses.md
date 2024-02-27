@@ -487,7 +487,7 @@ Use the following guides to verify each one of these requirements:
 
 ## Known issues
 
-- When a device has been offline for an extended period of time, the Subscription Activation might not reactive automatically on the device. To resolve this issue, use Conditional Access policies to control access need to exclude one of the following cloud apps from their Conditional Access policies using **Select Excluded Cloud Apps**:
+- When a device has been offline for an extended period of time, the Subscription Activation might not reactivate automatically on the device. To resolve this issue, use Conditional Access policies to control access by excluding one of the following cloud apps from their Conditional Access policies using **Select Excluded Cloud Apps**:
 
   - [Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
   - [Windows Store for Business, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
