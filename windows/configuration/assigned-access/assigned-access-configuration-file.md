@@ -338,36 +338,29 @@ Limitations:
 - Configs that specify group accounts can't use a kiosk profile, only a restricted user experience profile
 - Apply the restricted user experience to standard users only. It's not supported to associate an admin user with an Assigned Access profile
 
-:::row:::
-    :::column:::
-        ### AutoLogon Account
-    :::column-end:::
-    :::column:::
-        With `<AutoLogonAccount>` you can configure an account created and managed by Assigned Access, to automatically sign in after a device restart. The account is a local standard user.
+### AutoLogon Account
 
-        The following example shows how to specify an account to sign in automatically, and the optional display name shown during sign-in:
+With `<AutoLogonAccount>`, Assigned Access creates and manages an user account to automatically sign in after a device restarts. The account is a local standard user.
 
-        ```xml
-        <Configs>
-          <Config>
-            <AutoLogonAccount rs5:DisplayName="Hello World"/>
-            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-          </Config>
-        </Configs>
-        ```
-    :::column-end:::
-:::row-end:::
+The following example shows how to specify an account to sign in automatically, and the optional display name for the account on the sign-in screen:
 
-        >[!NOTE]
-        > On Microsoft Entra joined and domain-joined devices, local user accounts aren't disaplyed on the sign-in screen by default. To show the **AutoLogonAccount** on the sign-in screen, enable the policy setting:
-        >
-        >- GPO: **Computer Configuration > Administrative Templates > System > Logon > Enumerate local users on domain-joined computers**
-        >- CSP: `WindowsLogon/`[EnumerateLocalUsersOnDomainJoinedComputers](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-enumeratelocalusersondomainjoinedcomputers)
+```xml
+<Configs>
+  <Config>
+    <AutoLogonAccount rs5:DisplayName="Hello World"/>
+    <DefaultProfile Id="{GUID}"/>
+  </Config>
+</Configs>
+```
 
-        >[!IMPORTANT]
-        >When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature doesn't work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon).
+>[!NOTE]
+> On Microsoft Entra joined and domain joined devices, local user accounts aren't disaplyed on the sign-in screen by default. To display the local accounts on the sign-in screen, enable the policy setting:
+>
+>- GPO: **Computer Configuration** > **Administrative Templates** > **System** > **Logon** > **Enumerate local users on domain-joined computers**
+>- CSP: `./Device/Vendor/MSFT/Policy/Config/WindowsLogon/`[`EnumerateLocalUsersOnDomainJoinedComputers`](/windows/client-management/mdm/policy-csp-windowslogon#enumeratelocalusersondomainjoinedcomputers)
 
-
+>[!IMPORTANT]
+>When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature doesn't work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon).
 
 ### Config for individual accounts
 
@@ -398,13 +391,12 @@ Before applying the multi-app configuration, make sure the specified user accoun
 
 Group accounts are specified using `<UserGroup>`. Nested groups aren't supported. For example, if *User A* is member of *Group A*, *Group A* is member of *Group B*, and *Group B* is used in `<Config/>`, *User A* doesn't have the kiosk experience.
 
-
 :::row:::
 :::column span="2":::
-**Scenario**
+#### Scenario
 :::column-end:::
 :::column span="2":::
-**XML snippet**
+#### XML snippet
 :::column-end:::
 :::row-end:::
 :::row:::
@@ -532,10 +524,10 @@ You can specify user access to Downloads folder, Removable drives, or no restric
 
 :::row:::
 :::column span="2":::
-**Scenario**
+#### Scenario
 :::column-end:::
 :::column span="2":::
-**XML snippet**
+#### XML snippet
 :::column-end:::
 :::row-end:::
 :::row:::
