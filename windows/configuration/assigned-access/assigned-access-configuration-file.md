@@ -595,10 +595,8 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
->
+<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config">
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
             <AllAppsList>
@@ -646,6 +644,12 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
 
 With `GlobalProfile` you can define an Assigned Access profile that is applied to every non-admin account that signs in. This can be useful in scenarios like front line workers or student devices, where you want to ensure that every user has a consistent experience.
 
+```xml
+<Configs>
+  <v3:GlobalProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+</Configs>
+```
+
 The following configuration demonstrates that only a global profile is used, with no user configured.
 
 [!INCLUDE [assigned-access-example-global-profile](includes/assigned-access-example-global-profile.md)]
@@ -658,86 +662,9 @@ The following configuration demonstrates that only a global profile is used, wit
 
 ## File Explorer restrictions
 
-When using Assigned Access, folder browsing is locked down. You can explicitly allow access to known folders when the user tries to open the file dialog box in a restricted user experience by including the `FileExplorerNamespaceRestrictions` node.
+When using Assigned Access, folder browsing is locked down. You can explicitly allow access to known folders when the user tries to open the file dialog box by including the `FileExplorerNamespaceRestrictions` node.
 
 You can specify user access to Downloads folder, Removable drives, or no restrictions at all. Downloads and Removable Drives can be allowed at the same time.
-
-:::row:::
-    :::column span="1":::
-    **Scenario**
-    :::column-end:::
-    :::column span="3":::
-    **XML snippet**
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-    **Block everything**
-    :::column-end:::
-    :::column span="3":::
-    Either don't use the node or leave it empty
-
-    ```xml
-    <rs5:FileExplorerNamespaceRestrictions>
-    </rs5:FileExplorerNamespaceRestrictions>
-    ```
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-    **Only allow downloads**
-    :::column-end:::
-    :::column span="3":::
-    ```xml
-    <rs5:FileExplorerNamespaceRestrictions>
-        <rs5:AllowedNamespace Name="Downloads"/>
-    </rs5:FileExplorerNamespaceRestrictions>
-    ```
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column span="1":::
-    **Only allow removable drives**
-    :::column-end:::
-    :::column span="3":::
-    ```xml
-    <rs5:FileExplorerNamespaceRestrictions>
-        <v3:AllowRemovableDrives />
-    </rs5:FileExplorerNamespaceRestrictions>
-    ```
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column span="1":::
-    **Allow both Downloads, and removable drives**
-    :::column-end:::
-    :::column span="3":::
-    ```xml
-    <rs5:FileExplorerNamespaceRestrictions>
-        <rs5:AllowedNamespace Name="Downloads"/>
-        <v3:AllowRemovableDrives/>
-    </rs5:FileExplorerNamespaceRestrictions>
-    ```
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column span="1":::
-    **No restrictions, all locations are allowed**
-    :::column-end:::
-    :::column span="3":::
-    ```xml
-    <rs5:FileExplorerNamespaceRestrictions>
-        <v3:NoRestriction />
-    </rs5:FileExplorerNamespaceRestrictions>
-    ```
-    :::column-end:::
-:::row-end:::
-
-> [!TIP]
-> To grant access to the Downloads folder through File Explorer, add `Explorer.exe` to the list of allowed apps, and pin a file explorer shortcut to the Start menu.
 
 | Property | XML namespace (alias) |
 |-|-|
@@ -746,7 +673,78 @@ You can specify user access to Downloads folder, Removable drives, or no restric
 |`AllowRemovableDrives`|`https://schemas.microsoft.com/AssignedAccess/2020/config` (v3)|
 |`NoRestriction`|`https://schemas.microsoft.com/AssignedAccess/2020/config` (v3)|
 
-### Example
+:::row:::
+:::column span="1":::
+**Scenario**
+:::column-end:::
+:::column span="3":::
+**XML snippet**
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="1":::
+**Block everything**
+:::column-end:::
+:::column span="3":::
+Either don't use the node or leave it empty:
+```xml
+<rs5:FileExplorerNamespaceRestrictions>
+</rs5:FileExplorerNamespaceRestrictions>
+```
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="1":::
+**Only allow downloads**
+:::column-end:::
+:::column span="3":::
+```xml
+<rs5:FileExplorerNamespaceRestrictions>
+    <rs5:AllowedNamespace Name="Downloads"/>
+</rs5:FileExplorerNamespaceRestrictions>
+```
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="1":::
+**Only allow removable drives**
+:::column-end:::
+:::column span="3":::
+```xml
+<rs5:FileExplorerNamespaceRestrictions>
+    <v3:AllowRemovableDrives />
+</rs5:FileExplorerNamespaceRestrictions>
+```
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="1":::
+**Allow both Downloads, and removable drives**
+:::column-end:::
+:::column span="3":::
+```xml
+<rs5:FileExplorerNamespaceRestrictions>
+    <rs5:AllowedNamespace Name="Downloads"/>
+    <v3:AllowRemovableDrives/>
+</rs5:FileExplorerNamespaceRestrictions>
+```
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="1":::
+**No restrictions, all locations are allowed**
+:::column-end:::
+:::column span="3":::
+```xml
+<rs5:FileExplorerNamespaceRestrictions>
+    <v3:NoRestriction />
+</rs5:FileExplorerNamespaceRestrictions>
+```
+:::column-end:::
+:::row-end:::
+
+> [!TIP]
+> To grant access to File Explorer in a restricted user experience, add `Explorer.exe` to the list of allowed apps, and pin a shortcut to the Start menu.
 
 [!INCLUDE [assigned-access-example-file-explorer-restrictions](includes/assigned-access-example-file-explorer-restrictions.md)]
 
