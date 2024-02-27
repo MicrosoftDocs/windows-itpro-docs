@@ -397,199 +397,61 @@ Before applying the multi-app configuration, make sure the specified user accoun
 
 Group accounts are specified using `<UserGroup>`. Nested groups aren't supported. For example, if user A is member of Group 1, Group 1 is member of Group 2, and Group 2 is used in `<Config/>`, user A won't have the kiosk experience.
 
-- Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. Any Microsoft Entra accounts that are added to the local group won't have the kiosk settings applied.
 
-  ```xml
-  <Config>
-    <UserGroup Type="LocalGroup" Name="mygroup" />
-    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-  </Config>
-  ```
-
-- Domain group: Both security and distribution groups are supported. Specify the group type as <strong>ActiveDirectoryGroup</strong>. Use the domain name as the prefix in the name attribute.
-
-  ```xml
-  <Config>
-    <UserGroup Type="ActiveDirectoryGroup" Name="mydomain\mygroup" />
-    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-  </Config>
-  ```
-
-- Microsoft Entra group: Use the group object ID from the Azure portal to uniquely identify the group in the Name attribute. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as **AzureActiveDirectoryGroup**. The kiosk device must have internet connectivity when users that belong to the group sign-in.
-
-  ```xml
-  <Config>
-    <UserGroup Type="AzureActiveDirectoryGroup" Name="a8d36e43-4180-4ac5-a627-fb8149bba1ac" />
-    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-  </Config>
-  ```
-
-  > [!NOTE]
-  > If a Microsoft Entra group is configured with a lockdown profile on a device, a user in the Microsoft Entra group must change their password (after the account has been created with default password on the portal) before they can sign in to this device. If the user uses the default password to sign in to the device, the user will be immediately signed out.
-
-
-## Full XML example
-
-::: zone pivot="windows-11"
-
+:::row:::
+:::column span="1":::
+**Scenario**
+:::column-end:::
+:::column span="3":::
+**XML snippet**
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="1":::
+**Local group**
+:::column-end:::
+:::column span="3":::
+Specify the group type as **LocalGroup** and put the group name in Name attribute. Any Microsoft Entra accounts that are added to the local group won't have the kiosk settings applied.
 ```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
-    <Profiles>
-        <Profile Id="{6954c40a-45dd-4176-a2e3-ecaf5c97f425}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App DesktopAppPath="C:\Windows\system32\cmd.exe" />
-                    <App DesktopAppPath="%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe" />
-                </AllowedApps>
-            </AllAppsList>
-            <rs5:FileExplorerNamespaceRestrictions>
-                <rs5:AllowedNamespace Name="Downloads"/>
-                <v3:AllowRemovableDrives/>
-            </rs5:FileExplorerNamespaceRestrictions>
-            <v5:StartPins>
-                <![CDATA[{
-                    "pinnedList":[
-                        {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
-                        {"packagedAppId":"Microsoft.Windows.Photos_8wekyb3d8bbwe!App"},
-                        {"packagedAppId":"Microsoft.BingWeather_8wekyb3d8bbwe!App"},
-                        {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Command Prompt.lnk"},
-                        {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell.lnk"},
-                        {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\File Explorer.lnk"},
-                        {"packagedAppId": "windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel"},
-                        {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk"}
-                    ]
-                }]]>
-            </v5:StartPins>
-            <Taskbar ShowTaskbar="true"/>
-        </Profile>
-    </Profiles>
-    <Configs>
-        <Config>
-            <AutoLogonAccount rs5:DisplayName="Library Kiosk"/>
-            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-        </Config>
-    </Configs>
-</AssignedAccessConfiguration>
+<Config>
+  <UserGroup Type="LocalGroup" Name="groupname" />
+  <DefaultProfile Id="{GUID}"/>
+</Config>
 ```
-
-::: zone-end
-
-
-<!--troubleshooting
-Event Viewer
-Run "eventvwr.msc"
-Navigate to "Applications and Services Logs"
-There are 2 areas of your interests:
-"Microsoft-Windows-AssignedAccess"
-"Microsoft-Windows-AssignedAccessBroker"
-Before any repro, it's recommended to enable "Operational" channel to get the most of logs.
-TraceLogging
-<TBD>
-
-Registry Key
-These locations contain the latest Assigned Access Configuration:
-
-HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration
-HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessCsp
-These locations contain the latest "evaluated" configuration for each sign-in user:
-
-"HKCU\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration" (If it doesn't exist, it means no Assigned Access to be enforced for this user.)
--->
-
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="1":::
+**Active Directory group**
+:::column-end:::
+:::column span="3":::
+Both security and distribution groups are supported. Specify the group type as <strong>ActiveDirectoryGroup</strong>. Use the domain name as the prefix in the name attribute.
+```xml
+<Config>
+  <UserGroup Type="ActiveDirectoryGroup" Name="contoso\groupname" />
+  <DefaultProfile Id="{GUID}"/>
+</Config>
+```
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="1":::
+**Microsoft Entra group**
+:::column-end:::
+:::column span="3":::
+Use the object ID of the Microsoft Entra group. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as `AzureActiveDirectoryGroup`. The kiosk device must have internet connectivity when users that belong to the group sign-in.
+```xml
+<Config>
+  <UserGroup Type="AzureActiveDirectoryGroup" Name="Group_GUID" />
+  <DefaultProfile Id="{GUID}"/>
+</Config>
+```
+:::column-end:::
+:::row-end:::
 
 ## Assigned Access configuration XML examples
 
-This article provides practical examples of Assigned Access XML configuration files.
-
-For more details, review the Assigned Access XSD reference article.
-
-## Kiosk example 1
-
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    >
-    <Profiles>
-        <Profile Id="{GUID}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="" />
-                    <App DesktopAppPath="" rs5:AutoLaunch="" rs5:AutoLaunchArguments=""/>
-                </AllowedApps>
-            </AllAppsList>
-            <StartLayout>
-                ...
-            </StartLayout>
-            <Taskbar ShowTaskbar=""/>
-        </Profile>
-    </Profiles>
-
-    <Configs>
-        <Config>
-            <Account>domain\account</Account>
-            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-        </Config>
-        <Config>
-            <Account>AzureAD\john@contoso.onmicrosoft.com</Account>
-            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-        </Config>
-        <Config>
-            <Account>localaccount</Account>
-            <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
-        </Config>
-        <Config>
-            <AutoLogonAccount rs5:DisplayName="Hello World"/>
-            <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
-        </Config>
-        <Config>
-            <UserGroup Type="LocalGroup" Name="mygroup" />
-            <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
-        </Config>
-        <Config>
-            <UserGroup Type="ActiveDirectoryGroup" Name="redmond\somegroup" />
-            <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
-        </Config>
-        <Config>
-            <UserGroup Type="AzureActiveDirectoryGroup" Name="a8d36e43-4180-4ac5-a627-fb8149bba1ac" />
-            <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
-        </Config>
-    </Configs>
-</AssignedAccessConfiguration>
-```
-
-## Kiosk only sample XML
-
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    >
-    <Profiles>
-        <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
-            <KioskModeApp AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"/>
-        </Profile>
-    </Profiles>
-    <Configs>
-        <Config>
-            <Account>singleappuser</Account>
-            <DefaultProfile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}"/>
-        </Config>
-    </Configs>
-</AssignedAccessConfiguration>
-```
-
-## Auto Launch Sample XML
+### Auto Launch
 
 This sample demonstrates that both UWP and Win32 apps can be configured to automatically launch, when Assigned Access account logs in. One profile can have at most one app configured for auto launch. AutoLaunchArguments are passed to the apps as is and the app needs to handle the arguments explicitly.
 
@@ -634,13 +496,9 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
 
 ```
 
-## Examples
+## Configs
 
-### Kiosk - Microsoft Edge
-
-[!INCLUDE [assigned-access-example-kiosk-edge](includes/assigned-access-example-kiosk-edge.md)]
-
-### Kiosk - Global profile
+### Global profile
 
 With `GlobalProfile` you can define an Assigned Access profile that is applied to every non-admin account that signs in. This can be useful in scenarios like front line workers or student devices, where you want to ensure that every user has a consistent experience.
 
@@ -650,13 +508,8 @@ With `GlobalProfile` you can define an Assigned Access profile that is applied t
 </Configs>
 ```
 
-The following configuration demonstrates that only a global profile is used, with no user configured.
-
-[!INCLUDE [assigned-access-example-global-profile](includes/assigned-access-example-global-profile.md)]
-
 > [!NOTE]
 > You can combine a global profile with other profiles. If you assign a user a non-global profile, the global profile won't be applied to that user.
-
 
 ::: zone pivot="windows-10"
 
@@ -746,6 +599,36 @@ Either don't use the node or leave it empty:
 > [!TIP]
 > To grant access to File Explorer in a restricted user experience, add `Explorer.exe` to the list of allowed apps, and pin a shortcut to the Start menu.
 
+::: zone-end
+
+---
+
+## Practical examples
+
+### Kiosk experience with Microsoft Edge example
+
+[!INCLUDE [assigned-access-example-kiosk-edge](includes/assigned-access-example-kiosk-edge.md)]
+
+### Kiosk experience with UWP app example
+
+[!INCLUDE [assigned-access-example-kiosk-uwp](includes/assigned-access-example-kiosk-uwp.md)]
+
+::: zone pivot="windows-10"
+
+### File Explorer restrictions example
+
 [!INCLUDE [assigned-access-example-file-explorer-restrictions](includes/assigned-access-example-file-explorer-restrictions.md)]
 
 ::: zone-end
+
+### Global Profile example
+
+The following configuration demonstrates that only a global profile is used, with no user configured.
+
+[!INCLUDE [assigned-access-example-global-profile](includes/assigned-access-example-global-profile.md)]
+
+### User Group example
+
+The following configuration demonstrates how to assign profiles to different users and groups, including a user configured to automatically sign in.
+
+[!INCLUDE [assigned-access-example-usergroup](includes/assigned-access-example-usergroup.md)]

@@ -113,3 +113,23 @@ A kiosk device typically runs a single application, and users are prevented from
 
 The Assigned Access feature is intended for dedicated devices, like kiosks. When the multi-app Assigned Access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, impacting other users on the device. Deleting the kiosk configuration removes the Assigned Access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, the Start layout). To clear all the policy settings enforced by Assigned Access, you must reset Windows.
 
+<!--troubleshooting
+Event Viewer
+Run "eventvwr.msc"
+Navigate to "Applications and Services Logs"
+There are 2 areas of your interests:
+"Microsoft-Windows-AssignedAccess"
+"Microsoft-Windows-AssignedAccessBroker"
+Before any repro, it's recommended to enable "Operational" channel to get the most of logs.
+TraceLogging
+<TBD>
+
+Registry Key
+These locations contain the latest Assigned Access Configuration:
+
+HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration
+HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessCsp
+These locations contain the latest "evaluated" configuration for each sign-in user:
+
+"HKCU\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration" (If it doesn't exist, it means no Assigned Access to be enforced for this user.)
+-->
