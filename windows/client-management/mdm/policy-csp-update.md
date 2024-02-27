@@ -1,7 +1,7 @@
 ---
 title: Update Policy CSP
 description: Learn more about the Update Area in Policy CSP.
-ms.date: 01/31/2024
+ms.date: 02/14/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -2287,7 +2287,8 @@ Allows the IT admin to manage whether to scan for app updates from Microsoft Upd
 <!-- AllowMUUpdateService-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Setting this policy back to 0 or Not configured doesn't revert the configuration to receive updates from Microsoft Update automatically. In order to revert the configuration, you can run the PowerShell commands that are listed below to remove the Microsoft Update service:
+> - For a list of other Microsoft products that might be updated, see [Update other Microsoft products](/windows/deployment/update/update-other-microsoft-products).
+> - Setting this policy back to 0 or Not configured doesn't revert the configuration to receive updates from Microsoft Update automatically. In order to revert the configuration, you can run the PowerShell commands that are listed below to remove the Microsoft Update service:
 >
 > ```powershell
 > $MUSM = New-Object -ComObject "Microsoft.Update.ServiceManager"
