@@ -18,7 +18,7 @@ ms.collection:
 # Post-device registration readiness checks (public preview)
 
 > [!IMPORTANT]
-> This feature is in "public preview". It is being actively developed, and may not be complete. They're made available on a “Preview” basis. You can test and use these features in production environments and scenarios, and provide feedback.
+> This feature is in "public preview". It is being actively developed, and may not be complete. They're made available on a "Preview" basis. You can test and use these features in production environments and scenarios, and provide feedback.
 
 One of the most expensive aspects of the software update management process is to make sure devices are always healthy to receive and report software updates for each software update release cycle.
 
@@ -41,7 +41,7 @@ Device readiness in Windows Autopatch is divided into two different scenarios:
 | ----- | ----- |
 | <ul><li>Windows OS (build, architecture and edition)</li></li><li>Managed by either Intune or ConfigMgr co-management</li><li>ConfigMgr co-management workloads</li><li>Last communication with Intune</li><li>Personal or non-Windows devices</li></ul> | <ul><li>Windows OS (build, architecture and edition)</li><li>Windows updates & Office Group Policy Object (GPO) versus Intune mobile device management (MDM) policy conflict</li><li>Bind network endpoints (Microsoft Defender, Microsoft Teams, Microsoft Edge, Microsoft Office)</li><li>Internet connectivity</li></ul> |
 
-The status of each post-device registration readiness check is shown in the Windows Autopatch’s Devices blade under the **Not ready** tab. You can take appropriate action(s) on devices that aren't ready to be fully managed by the Windows Autopatch service.
+The status of each post-device registration readiness check is shown in the Windows Autopatch's Devices blade under the **Not ready** tab. You can take appropriate action(s) on devices that aren't ready to be fully managed by the Windows Autopatch service.
 
 ## About the three tabs in the Devices blade
 
@@ -57,8 +57,8 @@ Windows Autopatch has three tabs within its Devices blade. Each tab is designed 
 | Tab | Description |
 | ----- | ----- |
 | Ready | This tab only lists devices with the **Active** status. Devices with the **Active** status successfully:<ul><li>Passed the prerequisite checks.</li><li>Registered with Windows Autopatch.</li></ul>This tab also lists devices that have passed all postdevice registration readiness checks. |
-| Not ready | This tab only lists devices with the **Readiness failed** and **Inactive** status.<ul><li>**Readiness failed status**: Devices that didn’t pass one or more post-device registration readiness checks.</li><li>**Inactive**: Devices that haven't communicated with the Microsoft Intune service in the last 28 days.</li></ul> |
-| Not registered | Only lists devices with the **Prerequisite failed** status in it. Devices with the **Prerequisite failed** status didn’t pass one or more prerequisite checks during the device registration process. |
+| Not ready | This tab only lists devices with the **Readiness failed** and **Inactive** status.<ul><li>**Readiness failed status**: Devices that didn't pass one or more post-device registration readiness checks.</li><li>**Inactive**: Devices that haven't communicated with the Microsoft Intune service in the last 28 days.</li></ul> |
+| Not registered | Only lists devices with the **Prerequisite failed** status in it. Devices with the **Prerequisite failed** status didn't pass one or more prerequisite checks during the device registration process. |
 
 ## Details about the post-device registration readiness checks
 
@@ -76,12 +76,12 @@ The following list of post-device registration readiness checks is performed in 
 | ----- | ----- |
 | **Windows OS build, architecture, and edition** | Checks to see if devices support Windows 1809+ build (10.0.17763), 64-bit architecture and either Pro or Enterprise SKUs. |
 | **Windows update policies managed via Microsoft Intune** | Checks to see if devices have Windows Updates policies managed via Microsoft Intune (MDM). |
-| **Windows update policies managed via Group Policy Object (GPO)** | Checks to see if devices have Windows update policies managed via GPO. Windows Autopatch doesn’t support Windows update policies managed via GPOs. Windows update must be managed via Microsoft Intune. |
-| **Microsoft Office update policy managed via Group Policy Object (GPO)** | Checks to see if devices have Microsoft Office updates policies managed via GPO. Windows Autopatch doesn’t support Microsoft Office update policies managed via GPOs. Office updates must be managed via Microsoft Intune or another Microsoft Office policy management method where Office update bits are downloaded directly from the Office Content Delivery Network (CDN). |
+| **Windows update policies managed via Group Policy Object (GPO)** | Checks to see if devices have Windows update policies managed via GPO. Windows Autopatch doesn't support Windows update policies managed via GPOs. Windows update must be managed via Microsoft Intune. |
+| **Microsoft Office update policy managed via Group Policy Object (GPO)** | Checks to see if devices have Microsoft Office updates policies managed via GPO. Windows Autopatch doesn't support Microsoft Office update policies managed via GPOs. Office updates must be managed via Microsoft Intune or another Microsoft Office policy management method where Office update bits are downloaded directly from the Office Content Delivery Network (CDN). |
 | **Windows Autopatch network endpoints** | There's a set of [network endpoints](../prepare/windows-autopatch-configure-network.md) that Windows Autopatch services must be able to reach for the various aspects of the Windows Autopatch service. |
 | **Microsoft Teams network endpoints** | There's a set of [network endpoints](../prepare/windows-autopatch-configure-network.md) that devices with Microsoft Teams must be able to reach for software updates management. |
 | **Microsoft Edge network endpoints** | There's a set of [network endpoints](../prepare/windows-autopatch-configure-network.md) that devices with Microsoft Edge must be able to reach for software updates management. |
-| **Internet connectivity** | Checks to see if a device has internet connectivity to communicate with Microsoft cloud services. Windows Autopatch uses the PingReply class. Windows Autopatch tries to ping at least three different Microsoft’s public URLs two times each, to confirm that ping results aren't coming from the device’s cache. |
+| **Internet connectivity** | Checks to see if a device has internet connectivity to communicate with Microsoft cloud services. Windows Autopatch uses the PingReply class. Windows Autopatch tries to ping at least three different Microsoft's public URLs two times each, to confirm that ping results aren't coming from the device's cache. |
 
 ## Post-device registration readiness checks workflow
 
@@ -93,8 +93,8 @@ See the following diagram for the post-device registration readiness checks work
 | ----- | ----- |
 | **Steps 1-7** | For more information, see the [Device registration overview diagram](windows-autopatch-device-registration-overview.md).|
 | **Step 8: Perform readiness checks** |<ol><li>Once devices are successfully registered with Windows Autopatch, the devices are added to the **Ready** tab.</li><li>The Microsoft Cloud Managed Desktop Extension agent performs readiness checks against devices in the **Ready** tab every 24 hours.</li></ol> |
-| **Step 9: Check readiness status** |<ol><li>The Microsoft Cloud Managed Desktop Extension service evaluates the readiness results gathered by its agent.</li><li>The readiness results are sent from the Microsoft Cloud Managed Desktop Extension service component to the Device Readiness component within the Windows Autopatch’s service.</li></ol>|
-| **Step 10: Add devices to the Not ready** | When devices don’t pass one or more readiness checks, even if they’re registered with Windows Autopatch, they’re added to the **Not ready** tab so IT admins can remediate devices based on Windows Autopatch recommendations. |
+| **Step 9: Check readiness status** |<ol><li>The Microsoft Cloud Managed Desktop Extension service evaluates the readiness results gathered by its agent.</li><li>The readiness results are sent from the Microsoft Cloud Managed Desktop Extension service component to the Device Readiness component within the Windows Autopatch's service.</li></ol>|
+| **Step 10: Add devices to the Not ready** | When devices don't pass one or more readiness checks, even if they're registered with Windows Autopatch, they're added to the **Not ready** tab so IT admins can remediate devices based on Windows Autopatch recommendations. |
 | **Step 11: IT admin understands what the issue is and remediates** | The IT admin checks and remediates issues in the Devices blade (**Not ready** tab). It can take up to 24 hours for devices to show back up into the **Ready** tab. |
 
 ## FAQ
@@ -102,7 +102,7 @@ See the following diagram for the post-device registration readiness checks work
 | Question | Answer |
 | ----- | ----- |
 | **How frequent are the post-device registration readiness checks performed?** |<ul><li>The **Microsoft Cloud Managed Desktop Extension** agent collects device readiness statuses when it runs (once a day).</li><li>Once the agent collects results for the post-device registration readiness checks, it generates readiness results in the device in the `%programdata%\Microsoft\CMDExtension\Plugins\DeviceReadinessPlugin\Logs\DRCResults.json.log`.</li><li>The readiness results are sent over to the **Microsoft Cloud Managed Desktop Extension service**.</li><li>The **Microsoft Cloud Managed Desktop Extension** service component sends the readiness results to the Device Readiness component. The results appear in the Windows Autopatch Devices blade (**Not ready** tab).</li></ul>|
-| **What to expect when one or more checks fail?** | Devices are automatically sent to the **Ready** tab once they're successfully registered with Windows Autopatch. When devices don’t meet one or more post-device registration readiness checks, the devices are moved to the **Not ready** tab. IT admins can learn about these devices and take appropriate actions to remediate them. Windows Autopatch will provide information about the failure and how to potentially remediate devices.<p>Once devices are remediated, it can take up to **24 hours** to show up in the **Ready** tab.</p>|
+| **What to expect when one or more checks fail?** | Devices are automatically sent to the **Ready** tab once they're successfully registered with Windows Autopatch. When devices don't meet one or more post-device registration readiness checks, the devices are moved to the **Not ready** tab. IT admins can learn about these devices and take appropriate actions to remediate them. Windows Autopatch will provide information about the failure and how to potentially remediate devices.<p>Once devices are remediated, it can take up to **24 hours** to show up in the **Ready** tab.</p>|
 
 ## Additional resources
 

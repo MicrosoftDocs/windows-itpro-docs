@@ -23,7 +23,7 @@ Autopatch groups is a logical container or unit that groups several [Microsoft E
 
 ## Autopatch groups prerequisites
 
-Before you start managing Autopatch groups, ensure you’ve met the following prerequisites:
+Before you start managing Autopatch groups, ensure you've met the following prerequisites:
 
 - Review [Windows Autopatch groups overview documentation](../deploy/windows-autopatch-groups-overview.md) to understand [key benefits](../deploy/windows-autopatch-groups-overview.md#key-benefits), [concepts](../deploy/windows-autopatch-groups-overview.md#key-concepts) and [common ways to use Autopatch groups](../deploy/windows-autopatch-groups-overview.md#common-ways-to-use-autopatch-groups) within your organization.
 - Ensure the following [update rings for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-update-rings) are created in your tenant:
@@ -32,23 +32,23 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 	- Modern Workplace Update Policy [Fast]-[Windows Autopatch]
 	- Modern Workplace Update Policy [Broad]-[Windows Autopatch]
 - Ensure the following [feature updates for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-feature-updates) are created in your tenant:
-	- Windows Autopatch – DSS Policy [Test]
-	- Windows Autopatch – DSS Policy [First]
-	- Windows Autopatch – DSS Policy [Fast]
-	- Windows Autopatch – DSS Policy [Broad]
-- Ensure the following Microsoft Entra ID assigned groups are in your tenant before using Autopatch groups. **Don’t** modify the Microsoft Entra group membership types (Assigned or Dynamic). Otherwise, the Windows Autopatch service won’t be able to read the device group membership from these groups and causes the Autopatch groups feature and other service-related operations to not work properly.
+	- Windows Autopatch - DSS Policy [Test]
+	- Windows Autopatch - DSS Policy [First]
+	- Windows Autopatch - DSS Policy [Fast]
+	- Windows Autopatch - DSS Policy [Broad]
+- Ensure the following Microsoft Entra ID assigned groups are in your tenant before using Autopatch groups. **Don't** modify the Microsoft Entra group membership types (Assigned or Dynamic). Otherwise, the Windows Autopatch service won't be able to read the device group membership from these groups and causes the Autopatch groups feature and other service-related operations to not work properly.
     - Modern Workplace Devices-Windows Autopatch-Test
     - Modern Workplace Devices-Windows Autopatch-First
     - Modern Workplace Devices-Windows Autopatch-Fast
     - Modern Workplace Devices-Windows Autopatch-Broad
-    - Windows Autopatch – Test
-    - Windows Autopatch – Ring1
-    - Windows Autopatch – Ring2
-    - Windows Autopatch – Ring3
-    - Windows Autopatch – Last
+    - Windows Autopatch - Test
+    - Windows Autopatch - Ring1
+    - Windows Autopatch - Ring2
+    - Windows Autopatch - Ring3
+    - Windows Autopatch - Last
 - Additionally, **don't** modify the Microsoft Entra group ownership of any of the groups above otherwise, Autopatch groups device registration process won't be able to add devices into these groups. If the ownership is modified, you must add the **Modern Workplace Management** enterprise application as the owner of these groups.
 	- For more information, see [assign an owner or member of a group in Microsoft Entra ID](/azure/active-directory/privileged-identity-management/groups-assign-member-owner#assign-an-owner-or-member-of-a-group) for steps on how to add owners to Azure Microsoft Entra groups.
-- Make sure you have [app-only auth turned on in your Windows Autopatch tenant](../operate/windows-autopatch-maintain-environment.md#windows-autopatch-tenant-actions). Otherwise, the Autopatch groups functionality won’t work properly. Autopatch uses app-only auth to:
+- Make sure you have [app-only auth turned on in your Windows Autopatch tenant](../operate/windows-autopatch-maintain-environment.md#windows-autopatch-tenant-actions). Otherwise, the Autopatch groups functionality won't work properly. Autopatch uses app-only auth to:
     - Read device attributes to successfully register devices.
     - Manage all configurations related to the operation of the service.
 - Make sure that all device-based Microsoft Entra groups you intend to use with Autopatch groups are created prior to using the feature.
@@ -86,7 +86,7 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 1. Once the review is done, select **Create** to save your custom Autopatch group.
 
 > [!CAUTION]
-> A device-based Microsoft Entra group can only be used with one deployment ring in an Autopatch group at a time. This applies to deployment rings within the same Autopatch group and across different deployment rings across different Autopatch groups. If you try to create or edit an Autopatch group to use a device-based Microsoft Entra group that’s been already used, you'll receive an error that prevents you from finish creating or editing the Autopatch group (Default or Custom).
+> A device-based Microsoft Entra group can only be used with one deployment ring in an Autopatch group at a time. This applies to deployment rings within the same Autopatch group and across different deployment rings across different Autopatch groups. If you try to create or edit an Autopatch group to use a device-based Microsoft Entra group that's been already used, you'll receive an error that prevents you from finish creating or editing the Autopatch group (Default or Custom).
 
 > [!IMPORTANT]
 > Windows Autopatch creates the device-based Microsoft Entra ID assigned groups based on the choices made in the deployment ring composition page. Additionally, the service assigns the update ring policies for each deployment ring created in the Autopatch group based on the choices made in the Windows Update settings page as part of the Autopatch group guided end-user experience.
@@ -94,13 +94,13 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 ## Edit the Default or a Custom Autopatch group
 
 > [!TIP]
-> You can't edit an Autopatch group when there's one or more Windows feature update releases targeted to it. If you try to edit an Autopatch group with one or more ongoing Windows feature update releases targeted to it, you get the following informational banner message: "**Some settings are not allowed to be modified as there’s one or more on-going Windows feature update release targeted to this Autopatch group.**"
+> You can't edit an Autopatch group when there's one or more Windows feature update releases targeted to it. If you try to edit an Autopatch group with one or more ongoing Windows feature update releases targeted to it, you get the following informational banner message: "**Some settings are not allowed to be modified as there's one or more on-going Windows feature update release targeted to this Autopatch group.**"
 > See [Manage Windows feature update releases](../operate/windows-autopatch-groups-manage-windows-feature-update-release.md) for more information on release and phase statuses.
 
 **To edit either the Default or a Custom Autopatch group:**
 
 1. Select the **horizontal ellipses (…)** > **Edit** for the Autopatch group you want to edit.
-1. You can only modify the **description** of the Default or a Custom Autopatch group. You **can’t** modify the name. Once the description is modified, select **Next: Deployment rings**.
+1. You can only modify the **description** of the Default or a Custom Autopatch group. You **can't** modify the name. Once the description is modified, select **Next: Deployment rings**.
 1. Make the necessary changes in the **Deployment rings** page, then select **Next: Windows Update settings**.
 1. Make the necessary changes in the **Windows Update settings** page, then select **Next: Review + save**.
 1. Select **Review + create** to review all changes made.
@@ -111,7 +111,7 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 
 ## Rename a Custom Autopatch group
 
-You **can’t** rename the Default Autopatch group. However, you can rename a Custom Autopatch group.
+You **can't** rename the Default Autopatch group. However, you can rename a Custom Autopatch group.
 
 **To rename a Custom Autopatch group:**
 
@@ -123,7 +123,7 @@ You **can’t** rename the Default Autopatch group. However, you can rename a Cu
 
 ## Delete a Custom Autopatch group
 
-You **can’t** delete the Default Autopatch group. However, you can delete a Custom Autopatch group.
+You **can't** delete the Default Autopatch group. However, you can delete a Custom Autopatch group.
 
 **To delete a Custom Autopatch group:**
 
@@ -131,7 +131,7 @@ You **can’t** delete the Default Autopatch group. However, you can delete a Cu
 1. Select **Yes** to confirm you want to delete the Custom Autopatch group.
 
 > [!CAUTION]
-> You can’t delete a Custom Autopatch group when it’s being used as part of one or more active or paused feature update releases. However, you can delete a Custom Autopatch group when the release for either Windows quality or feature updates have either the **Scheduled** or **Paused** statuses.
+> You can't delete a Custom Autopatch group when it's being used as part of one or more active or paused feature update releases. However, you can delete a Custom Autopatch group when the release for either Windows quality or feature updates have either the **Scheduled** or **Paused** statuses.
 
 ## Manage device conflict scenarios when using Autopatch groups
 
@@ -140,7 +140,7 @@ Overlap in device membership is a common scenario when working with device-based
 Since Autopatch groups allow you to use your existing Microsoft Entra groups to create your own deployment ring composition, the service takes on the responsibility of monitoring and automatically solving some of the device conflict scenarios that may occur.
 
 > [!CAUTION]
-> A device-based Microsoft Entra group can only be used with one deployment ring in an Autopatch group at a time. This applies to deployment rings within the same Autopatch group and across different deployment rings across different Autopatch groups. If you try to create or edit an Autopatch group to use a device-based Microsoft Entra group that’s been already used, you'll receive an error that prevents you from creating or editing the Autopatch group (Default or Custom).
+> A device-based Microsoft Entra group can only be used with one deployment ring in an Autopatch group at a time. This applies to deployment rings within the same Autopatch group and across different deployment rings across different Autopatch groups. If you try to create or edit an Autopatch group to use a device-based Microsoft Entra group that's been already used, you'll receive an error that prevents you from creating or editing the Autopatch group (Default or Custom).
 
 ### Device conflict in deployment rings within an Autopatch group
 
@@ -162,21 +162,21 @@ Device conflict across different deployment rings in different Autopatch groups 
 
 | Conflict scenario | Conflict resolution |
 | -----  | ----- |
-| You, the IT admin at Contoso Ltd., starts using only the Default Autopatch group, but later decides to create an Autopatch group called “Marketing”.<p>However, you notice that the same devices that belong to the deployment rings in the Default Autopatch group are now also part of the new deployment rings in the Marketing Autopatch group.</p> | Autopatch groups automatically resolve this conflict on your behalf.<p>In this example, devices that belong to the deployment rings as part of the “Marketing” Autopatch group take precedence over devices that belong to the deployment ring in the Default Autopatch group, because you, the IT admin, demonstrated clear intent on managing deployment rings using a Custom Autopatch group outside the Default Autopatch group.</p> |
+| You, the IT admin at Contoso Ltd., starts using only the Default Autopatch group, but later decides to create an Autopatch group called "Marketing".<p>However, you notice that the same devices that belong to the deployment rings in the Default Autopatch group are now also part of the new deployment rings in the Marketing Autopatch group.</p> | Autopatch groups automatically resolve this conflict on your behalf.<p>In this example, devices that belong to the deployment rings as part of the "Marketing" Autopatch group take precedence over devices that belong to the deployment ring in the Default Autopatch group, because you, the IT admin, demonstrated clear intent on managing deployment rings using a Custom Autopatch group outside the Default Autopatch group.</p> |
 
 #### Custom to Custom Autopatch group device conflict
 
 | Conflict scenario | Conflict resolution |
 | -----  | ----- |
-| You, the IT admin at Contoso Ltd., are using several Custom Autopatch groups. While navigating through devices in the Windows Autopatch Devices blade (**Not ready** tab), you notice that the same device is part of different deployment rings across several different Custom Autopatch groups. | You must resolve this conflict.<p>Autopatch groups informs you about the device conflict in the **Devices** > **Not ready** tab. You’re required to manually indicate which of the existing Custom Autopatch groups the device should exclusively belong to.</p> |
+| You, the IT admin at Contoso Ltd., are using several Custom Autopatch groups. While navigating through devices in the Windows Autopatch Devices blade (**Not ready** tab), you notice that the same device is part of different deployment rings across several different Custom Autopatch groups. | You must resolve this conflict.<p>Autopatch groups informs you about the device conflict in the **Devices** > **Not ready** tab. You're required to manually indicate which of the existing Custom Autopatch groups the device should exclusively belong to.</p> |
 
 #### Device conflict prior to device registration
 
-When you create or edit the Custom or Default Autopatch group, Windows Autopatch checks if the devices that are part of the Microsoft Entra groups, used in Autopatch groups’ deployment rings, are registered with the service.
+When you create or edit the Custom or Default Autopatch group, Windows Autopatch checks if the devices that are part of the Microsoft Entra groups, used in Autopatch groups' deployment rings, are registered with the service.
 
 | Conflict scenario | Conflict resolution |
 | -----  | ----- |
-| Devices are in the Custom-to-Custom Autopatch group device conflict scenario | You must resolve this conflict.<p>Devices will fail to register with the service and will be sent to the **Not registered** tab. You’re required to make sure the Microsoft Entra groups that are used with the Custom Autopatch groups don’t have device membership overlaps.</p> |
+| Devices are in the Custom-to-Custom Autopatch group device conflict scenario | You must resolve this conflict.<p>Devices will fail to register with the service and will be sent to the **Not registered** tab. You're required to make sure the Microsoft Entra groups that are used with the Custom Autopatch groups don't have device membership overlaps.</p> |
 
 #### Device conflict post device registration
 

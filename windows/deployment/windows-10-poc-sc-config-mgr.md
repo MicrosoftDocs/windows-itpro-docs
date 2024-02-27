@@ -157,7 +157,7 @@ The procedures in this guide are summarized in the following table. An estimate 
 
     You can also verify WMI using the WMI console by typing **wmimgmt.msc**, right-clicking **WMI Control (Local)** in the console tree, and then clicking **Properties**.
 
-    If the WMI service isn't started, attempt to start it or reboot the computer.  If WMI is running but errors are present, see [WMIDiag](https://blogs.technet.microsoft.com/askperf/2015/05/12/wmidiag-2-2-is-here/) for troubleshooting information.
+    If the WMI service isn't started, attempt to start it or reboot the computer.  If WMI is running but errors are present, see [winmgmt](/windows/win32/wmisdk/winmgmt) for troubleshooting information.
 
 5. To extend the Active Directory schema, enter the following command at an elevated Windows PowerShell prompt:
 
@@ -230,15 +230,9 @@ The procedures in this guide are summarized in the following table. An estimate 
 ## Download MDOP and install DaRT
 
 > [!IMPORTANT]
-> This step requires an MSDN subscription or volume licence agreement. For more information, see [Ready for Windows 10: MDOP 2015 and more tools are now available](https://blogs.technet.microsoft.com/windowsitpro/2015/08/17/ready-for-windows-10-mdop-2015-and-more-tools-are-now-available/).
-<!--
+> This step requires a Visual Studio subscription or volume license agreement. For more information, see [MDOP information experience](/microsoft-desktop-optimization-pack/).
 
-THE LINK REFERENCED IN THE BELOW URL IS DEAD SO COMMENTING OUT
-
-> If your organization qualifies and does not already have an MSDN subscription, you can obtain a [free MSDN subscription with BizSpark](/archive/blogs/zainnab/bizspark-free-msdn-subscription-for-start-up-companies/).
--->
-
-1. Download the [Microsoft Desktop Optimization Pack 2015](https://msdn.microsoft.com/subscriptions/downloads/#ProductFamilyId=597) to the Hyper-V host using an MSDN subscription. Download the .ISO file (mu_microsoft_desktop_optimization_pack_2015_x86_x64_dvd_5975282.iso, 2.79 GB) to the C:\VHD directory on the Hyper-V host.
+1. Download the Microsoft Desktop Optimization Pack 2015 to the Hyper-V host from Visual Studio Online or from the [Microsoft Volume Licensing website (MVLS)](https://go.microsoft.com/fwlink/p/?LinkId=166331) site. Download the .ISO file (mu_microsoft_desktop_optimization_pack_2015_x86_x64_dvd_5975282.iso, 2.79 GB) to the C:\VHD directory on the Hyper-V host.
 
 2. Enter the following command at an elevated Windows PowerShell prompt on the Hyper-V host to mount the MDOP file on SRV1:
 
@@ -780,7 +774,7 @@ If you've already completed steps in [Deploy Windows 10 in a test lab using Micr
     [Settings]
     Priority=Default
     Properties=OSDMigrateConfigFiles,OSDMigrateMode
-    
+
     [Default]
     DoCapture=NO
     ComputerBackupLocation=NONE
@@ -1092,7 +1086,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
     - Select Resources > Value: Select the computername associated with the PC1 VM (GREGLIN-PC1 in this example).
     - Select **Next** twice and then select **Close** in both windows.
 
-3. Select **Device Collections** and then double-click **USMT Backup (Replace)**. Verify that the computer name/hostname associated with PC1 is displayed in the collection. Don't proceed until this name is displayed.  
+3. Select **Device Collections** and then double-click **USMT Backup (Replace)**. Verify that the computer name/hostname associated with PC1 is displayed in the collection. Don't proceed until this name is displayed.
 
 ### Create a new deployment
 

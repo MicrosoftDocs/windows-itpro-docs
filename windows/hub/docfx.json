@@ -45,7 +45,7 @@
       "ms.service": "windows-client",
       "ms.subservice": "itpro-fundamentals",
       "feedback_system": "Standard",
-            "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
+      "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.windows-hub",
@@ -64,7 +64,8 @@
         "beccarobins",
         "Stacyrch140",
         "v-stsavell",
-        "American-Dipper"
+        "American-Dipper",
+        "shdyas"
       ]
     },
     "fileMetadata": {},

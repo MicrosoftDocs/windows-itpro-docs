@@ -8,11 +8,11 @@ author: cmknox
 ms.author: carmenf
 ms.reviewer: mstewart
 manager: aaroncz
-ms.collection: 
+ms.collection:
   - tier3
   - essentials-get-started
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
@@ -119,9 +119,9 @@ This section summarizes common problems and some solutions to try.
 
 If you don't see any bytes coming from peers the cause might be one of the following issues:
 
-- Clients aren’t able to reach the Delivery Optimization cloud services.
-- The cloud service doesn’t see other peers on the network.
-- Clients aren’t able to connect to peers that are offered back from the cloud service.
+- Clients aren't able to reach the Delivery Optimization cloud services.
+- The cloud service doesn't see other peers on the network.
+- Clients aren't able to connect to peers that are offered back from the cloud service.
 - None of the computers on the network are getting updates from peers.
 
 ### Clients aren't able to reach the Delivery Optimization cloud services
@@ -136,10 +136,10 @@ Try these steps:
 
 Try these steps:
 
-1. Download the same app on two different devices on the same network, waiting 10 – 15 minutes between downloads.
+1. Download the same app on two different devices on the same network, waiting 10 - 15 minutes between downloads.
 2. Run `Get-DeliveryOptimizationStatus` from an elevated PowerShell window and ensure that **[DODownloadMode](waas-delivery-optimization-reference.md#download-mode)** is 1 or 2 on both devices.
 3. Run `Get-DeliveryOptimizationPerfSnap` from an elevated PowerShell window on the second device. The **NumberOfPeers** field should be nonzero.
-4. If the number of peers is zero and **[DODownloadMode](waas-delivery-optimization-reference.md#download-mode)** is 1, ensure that both devices are using the same public IP address to reach the internet (you can easily do this by opening a browser window and do a search for “what is my IP”). In the case where devices aren't reporting the same public IP address, configure **[DODownloadMode](waas-delivery-optimization-reference.md#download-mode)** to 2 (Group) and use a custom **[DOGroupID (Guid)](waas-delivery-optimization-reference.md#group-id)**.
+4. If the number of peers is zero and **[DODownloadMode](waas-delivery-optimization-reference.md#download-mode)** is 1, ensure that both devices are using the same public IP address to reach the internet (you can easily do this by opening a browser window and do a search for "what is my IP"). In the case where devices aren't reporting the same public IP address, configure **[DODownloadMode](waas-delivery-optimization-reference.md#download-mode)** to 2 (Group) and use a custom **[DOGroupID (Guid)](waas-delivery-optimization-reference.md#group-id)**.
 
 > [!NOTE]
 > Starting in Windows 10, version 2004, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of potential peers per file, including which peers are successfully connected and the total bytes sent or received from each peer.
