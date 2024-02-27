@@ -774,6 +774,9 @@ The following configuration demonstrates that only a global profile is used, wit
 > [!NOTE]
 > You can combine a global profile with other profiles. If you assign a user a non-global profile, the global profile won't be applied to that user.
 
+
+::: zone pivot="windows-10"
+
 ## File Explorer restrictions
 
 Folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all.
@@ -782,3 +785,4 @@ You can specify user access to Downloads folder, Removable drives, or no restric
 
 [!INCLUDE [assigned-access-example-file-explorer-restrictions](includes/assigned-access-example-file-explorer-restrictions.md)]
 
+::: zone-end
