@@ -14,6 +14,9 @@ ms.date: 01/18/2024
 <!-- DMClient-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The DMClient configuration service provider (CSP) has more enterprise-specific mobile device management (MDM) configuration settings. These settings identify the device in the enterprise domain, include security mitigation for certificate renewal, and are used for server-triggered enterprise unenrollment.
+
+> [!IMPORTANT]
+> The DMClient CSP nodes are intended to be configured by the MDM server to manage device configuration and security features. Custom URI settings for this CSP are not supported for IT admin management scenarios due to the complexity of the settings.
 <!-- DMClient-Editable-End -->
 
 <!-- DMClient-Tree-Begin -->
