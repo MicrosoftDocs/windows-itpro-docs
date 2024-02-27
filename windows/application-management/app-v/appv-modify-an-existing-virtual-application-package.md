@@ -4,11 +4,12 @@ description: Learn how to modify an existing virtual application package and add
 author: aczechowski
 ms.service: windows-client
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.subservice: itpro-apps
+ms.topic: article
 ---
 
 # How to Modify an Existing Virtual Application Package

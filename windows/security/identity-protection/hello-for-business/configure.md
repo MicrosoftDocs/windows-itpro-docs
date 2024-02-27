@@ -87,7 +87,7 @@ To check the Windows Hello for Business policy settings applied at enrollment ti
 
 ## Policy conflicts from multiple policy sources
 
-Windows Hello for Business can be configured by GPO or CSP, but not a combination of both. Avoid mixing GPO and CSP policy settings for Windows Hello for Business. If you mix GPO and CSP policy settings, the CSP settings are ignored until all group policy settings are cleared.
+Windows Hello for Business can be configured by GPO or CSP, but not a combination of both. Avoid mixing GPO and CSP policy settings for Windows Hello for Business, as it can lead to unexpected results. If you mix GPO and CSP policy settings, the conflicting CSP settings aren't applied until the group policy settings are cleared.
 
 > [!IMPORTANT]
 > The [*MDMWinsOverGP*](/windows/client-management/mdm/policy-csp-controlpolicyconflict#mdmwinsovergp) policy setting doesn't apply to Windows Hello for Business. MDMWinsOverGP only applies to policies in the *Policy CSP*, while the Windows Hello for Business policies are in the *PassportForWork CSP*.

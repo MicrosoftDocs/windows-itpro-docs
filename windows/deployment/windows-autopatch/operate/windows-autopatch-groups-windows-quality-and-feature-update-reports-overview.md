@@ -38,7 +38,7 @@ The Windows quality report types are organized into the following focus areas:
 
 The Windows feature update reports monitor the health and activity of your deployments and help you understand if your devices are maintaining update compliance targets.
 
-If update deployments aren’t successful, Windows Autopatch provides information on update deployment failures and who needs to remediate. Certain update deployment failures might require either Windows Autopatch to act on your behalf or you to fix the issue.
+If update deployments aren't successful, Windows Autopatch provides information on update deployment failures and who needs to remediate. Certain update deployment failures might require either Windows Autopatch to act on your behalf or you to fix the issue.
 
 The Windows feature update report types are organized into the following focus areas:
 
@@ -82,7 +82,7 @@ Up to date devices are devices that meet all of the following prerequisites:
 - Have applied the current monthly cumulative updates
 
 > [!NOTE]
-> [Up to Date devices](#up-to-date-devices) will remain with the **In Progress** status for the 21-day service level objective period until the device either applies the current monthly cumulative update or receives an [alert](../operate/windows-autopatch-device-alerts.md). If the device receives an alert, the device’s status will change to [Not up to Date](#not-up-to-date-devices).
+> [Up to Date devices](#up-to-date-devices) will remain with the **In Progress** status for the 21-day service level objective period until the device either applies the current monthly cumulative update or receives an [alert](../operate/windows-autopatch-device-alerts.md). If the device receives an alert, the device's status will change to [Not up to Date](#not-up-to-date-devices).
 
 #### Up to Date sub statuses
 
@@ -93,7 +93,7 @@ Up to date devices are devices that meet all of the following prerequisites:
 
 ### Not up to Date devices
 
-Not Up to Date means a device isn’t up to date when the:
+Not Up to Date means a device isn't up to date when the:
 
 - Quality or feature update is out of date, or the device is on the previous update.
 - Device is more than 21 days overdue from the last release.

@@ -4,11 +4,12 @@ description: Use this procedure to view App-V Server publishing metadata, which 
 author: aczechowski
 ms.service: windows-client
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.subservice: itpro-apps
+ms.topic: article
 ---
 
 # Viewing App-V Server Publishing Metadata

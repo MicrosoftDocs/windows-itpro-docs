@@ -99,4 +99,4 @@ For more information and assistance with preparing for your Windows Autopatch de
 | Review and respond to Windows Autopatch management alerts<ul><li>[Tenant management alerts](../operate/windows-autopatch-maintain-environment.md#windows-autopatch-tenant-actions)</li><li>[Policy health and remediation](../operate/windows-autopatch-policy-health-and-remediation.md)</li></ul> | :heavy_check_mark: | :x: |
 | [Raise and respond to support requests](../operate/windows-autopatch-support-request.md) | :heavy_check_mark: | :x: |
 | [Manage and respond to support requests](../operate/windows-autopatch-support-request.md#manage-an-active-support-request) | :x: | :heavy_check_mark: |
-| Review the [What’s new](../whats-new/windows-autopatch-whats-new-2022.md) section to stay up to date with updated feature and service releases | :heavy_check_mark: | :x: |
+| Review the [What's new](../whats-new/windows-autopatch-whats-new-2022.md) section to stay up to date with updated feature and service releases | :heavy_check_mark: | :x: |
