@@ -59,18 +59,15 @@
       "titleSuffix": "Windows Client Management",
       "contributors_to_exclude": [
         "rjagiewich",
-        "traya1",
-        "rmca14",
         "claydetels19",
         "jborsecnik",
-        "tiburd",
         "garycentric",
         "beccarobins",
         "american-dipper",
-        "angelamotherofdragons",
         "v-stsavell",
         "stacyrch140",
-        "shdyas"
+        "shdyas",
+        "alekyaj"
       ],
       "searchScope": [
         "Windows 10"
