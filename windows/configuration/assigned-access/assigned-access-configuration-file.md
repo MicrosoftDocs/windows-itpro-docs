@@ -399,56 +399,39 @@ The following example shows how to specify an account to sign in automatically, 
 
 Individual accounts are specified using `<Account>`.
 
-:::row:::
-:::column span="2":::
-#### Scenario
-:::column-end:::
-:::column span="2":::
-#### XML snippet
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="2":::
-**Local user**
+
+#### Local user
 
 Local account can be entered as `devicename\user`, `.\user`, or just `user`.
 
-:::column-end:::
-:::column span="2":::
 ```xml
 <Config>
   <Account>user</Account>
   <DefaultProfile Id="{GUID}"/>
 </Config>
 ```
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="2":::
-**Active Directory user**
 
-Domain accounts should be entered as `domain\samAccountName`.
-:::column-end:::
-:::column span="2":::
+#### Active Directory user
+
+Domain accounts must be entered using the format `domain\samAccountName`.
+
 ```xml
 <Config>
   <Account>contoso\user</Account>
   <DefaultProfile Id="{GUID}"/>
 </Config>
 ```
-:::column-end:::
-:::row-end:::
-:::column span="2":::
-**Microsoft Entra user**
 
-Microsoft Entra account must be specified with the format: `AzureAD\{UPN}`. `AzureAD` must be provided *as is*, then follow with the Microsoft Entra user principal name (UPN). For example, **AzureAD\user@contoso.onmicrosoft.com**.
-:::column-end:::
-:::column span="2":::
+#### Microsoft Entra user
+
+Microsoft Entra accounts must be specified with the format: `AzureAD\{UPN}`. `AzureAD` must be provided *as is*, then follow with the Microsoft Entra user principal name (UPN).
+
 ```xml
-<?xml version="1.0" encoding="utf-8"?><Config><Account>AzureAD\john@contoso.onmicrosoft.com</Account><DefaultProfile Id="{GUID}" /></Config>
+<Config>
+  <Account>AzureAD\user@contoso.onmicrosoft.com</Account>
+  <DefaultProfile Id="{GUID}"/>
+</Config>
 ```
-:::column-end:::
-:::row-end:::
 
 > [!IMPORTANT]
 > Before applying the Assigned Access configuration, make sure the specified user account is available on the device, otherwise it fails.
