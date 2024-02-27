@@ -322,6 +322,39 @@ The following example hides the taskbar:
 > [!IMPORTANT]
 > The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Microsoft Entra account could potentially compromise confidential information.
 
+### Auto Launch
+
+This sample demonstrates that both UWP and Win32 apps can be configured to automatically launch, when Assigned Access account logs in. One profile can have at most one app configured for auto launch. AutoLaunchArguments are passed to the apps as is and the app needs to handle the arguments explicitly.
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config">
+    <Profiles>
+        <Profile Id="{GUID}">
+            <AllAppsList>
+                <AllowedApps>
+                    <App AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" rs5:AutoLaunch="true"/>
+                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
+                </AllowedApps>
+            </AllAppsList>
+            <Taskbar ShowTaskbar="true"/>
+        </Profile>
+        <Profile Id="{GUID}">
+            <AllAppsList>
+                <AllowedApps>
+                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="1.txt"/>
+                </AllowedApps>
+            </AllAppsList>
+            <Taskbar ShowTaskbar="false"/>
+        </Profile>
+    </Profiles>
+```
+
 ## Configs
 
 Under `Configs`, define one or more user accounts and their association with a profile.
@@ -338,7 +371,7 @@ Limitations:
 - Configs that specify group accounts can't use a kiosk profile, only a restricted user experience profile
 - Apply the restricted user experience to standard users only. It's not supported to associate an admin user with an Assigned Access profile
 
-### AutoLogon Account
+### AutoLogon account
 
 With `<AutoLogonAccount>`, Assigned Access creates and manages an user account to automatically sign in after a device restarts. The account is a local standard user.
 
@@ -362,32 +395,70 @@ The following example shows how to specify an account to sign in automatically, 
 >[!IMPORTANT]
 >When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature doesn't work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon).
 
-### Config for individual accounts
+### User accounts
 
 Individual accounts are specified using `<Account>`.
 
-- Local account can be entered as `machinename\account` or `.\account` or just `account`.
-- Domain account should be entered as `domain\account`.
-- Microsoft Entra account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided *as is*, and consider it's a fixed domain name. Then follow with the Microsoft Entra ID email address. For example, `AzureAD\someone@contoso.onmicrosoft.com`
+:::row:::
+:::column span="2":::
+#### Scenario
+:::column-end:::
+:::column span="2":::
+#### XML snippet
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="2":::
+**Local user**
 
-> [!WARNING]
-> Assigned access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account.  However, use of domain user or service accounts introduces risks that an attacker subverting the Assigned Access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
+Local account can be entered as `machinename\account`, `.\account`, or just `account`.
 
-Before applying the multi-app configuration, make sure the specified user account is available on the device, otherwise it fails.
-
-> [!NOTE]
-> For both domain and Microsoft Entra accounts, it's not required that target account is explicitly added to the device. As long as the device is AD-joined or Microsoft Entra joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for assigned access.
-
+:::column-end:::
+:::column span="2":::
 ```xml
-<Configs>
-  <Config>
-    <Account>MultiAppKioskUser</Account>
-    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-  </Config>
-</Configs>
+<Config>
+  <Account>localaccount</Account>
+  <DefaultProfile Id="{GUID}"/>
+</Config>
 ```
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="2":::
+**Active Directory user**
 
-### Config for group accounts
+Domain accounts should be entered as `domain\account`.
+:::column-end:::
+:::column span="2":::
+```xml
+<Config>
+  <Account>domain\account</Account>
+  <DefaultProfile Id="{GUID}"/>
+</Config>
+```
+:::column-end:::
+:::row-end:::
+:::column span="2":::
+**Microsoft Entra ID user**
+
+Microsoft Entra account must be specified with the format: `AzureAD\{UPN}`. `AzureAD` must be provided *as is*, then follow with the Microsoft Entra ID user principal name (UPN). For example, **AzureAD\user@contoso.onmicrosoft.com**.
+:::column-end:::
+:::column span="2":::
+```xml
+<Config>
+  <Account>AzureAD\john@contoso.onmicrosoft.com</Account>
+  <DefaultProfile Id="{GUID}"/>
+</Config>
+```
+:::column-end:::
+:::row-end:::
+
+> [!IMPORTANT]
+> Before applying the Assigned Access configuration, make sure the specified user account is available on the device, otherwise it fails.
+>
+> For both domain and Microsoft Entra accounts, as long as the device is Active Directory joined or Microsoft Entra joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for assigned access.
+
+### Group accounts
 
 Group accounts are specified using `<UserGroup>`. Nested groups aren't supported. For example, if *User A* is member of *Group A*, *Group A* is member of *Group B*, and *Group B* is used in `<Config/>`, *User A* doesn't have the kiosk experience.
 
@@ -403,7 +474,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups aren't supported
 :::column span="2":::
 **Local group**
 
-Specify the group type as **LocalGroup** and put the group name in Name attribute. Any Microsoft Entra accounts that are added to the local group won't have the kiosk settings applied.
+Specify the group type as `LocalGroup` and add the group name in the `Name` attribute.
 :::column-end:::
 :::column span="2":::
 ```xml
@@ -431,7 +502,7 @@ Both security and distribution groups are supported. Specify the group type as <
 :::row-end:::
 :::row:::
 :::column span="2":::
-**Microsoft Entra group**
+**Microsoft Entra ID group**
 
 Use the object ID of the Microsoft Entra group. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as `AzureActiveDirectoryGroup`. The kiosk device must have internet connectivity when users that belong to the group sign-in.
 :::column-end:::
@@ -445,62 +516,13 @@ Use the object ID of the Microsoft Entra group. You can find the object ID on th
 :::column-end:::
 :::row-end:::
 
-## Assigned Access configuration XML examples
-
-### Auto Launch
-
-This sample demonstrates that both UWP and Win32 apps can be configured to automatically launch, when Assigned Access account logs in. One profile can have at most one app configured for auto launch. AutoLaunchArguments are passed to the apps as is and the app needs to handle the arguments explicitly.
-
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config">
-    <Profiles>
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" rs5:AutoLaunch="true"/>
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
-                </AllowedApps>
-            </AllAppsList>
-            <Taskbar ShowTaskbar="true"/>
-        </Profile>
-        <Profile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="1.txt"/>
-                </AllowedApps>
-            </AllAppsList>
-            <Taskbar ShowTaskbar="false"/>
-        </Profile>
-    </Profiles>
-    <Configs>
-        <Config>
-            <Account>aauser1</Account>
-            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-        </Config>
-        <Config>
-            <Account>aauser2</Account>
-            <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
-        </Config>
-    </Configs>
-</AssignedAccessConfiguration>
-
-```
-
-## Configs
-
 ### Global profile
 
 With `GlobalProfile` you can define an Assigned Access profile that is applied to every non-admin account that signs in. This can be useful in scenarios like frontline workers or student devices, where you want to ensure that every user has a consistent experience.
 
 ```xml
 <Configs>
-  <v3:GlobalProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+  <v3:GlobalProfile Id="{GUID}"/>
 </Configs>
 ```
 
