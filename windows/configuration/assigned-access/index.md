@@ -7,33 +7,42 @@ ms.date: 02/26/2024
 
 # Configure kiosks and restricted user experiences
 
-Organization may want to set up special purpose devices, such as a device in the lobby that customers can use to view product catalogs, or a device displaying visual content as a digital sign. Windows client offers two different locked-down experiences for public or specialized use:
+Organization may want to set up special purpose devices, such as a device in the lobby that customers can use to view product catalogs, or a device displaying visual content as a digital sign. Windows client offers two different experiences for public or specialized use:
 
 :::row:::
     :::column span="1":::
     :::image type="content" source="images/kiosk.png" alt-text="Icon representing a kiosk." border="false":::
     :::column-end:::
     :::column span="3":::
-    #### Kiosk
+    #### Kiosk experience
     :::column-end:::
 :::row-end:::
 
-Runs a single Universal Windows Platform (UWP) application in full screen above the lock screen. People using the kiosk can see only that app. When the kiosk account (a local standard user account) signs in, the kiosk app launches automatically. If the kiosk app is closed, it will automatically restart
+This experience runs a single application in full screen, and people using the device can only use that app. When the designated kiosk account signs in, the kiosk app launches automatically. If the kiosk app is closed, it will automatically restart. This experience is sometimes referred to as *single-app kiosk*.
+
+Windows offers two different features to configure a kiosk experience:
+
+- **Assigned Access**: used to execute a single Universal Windows Platform (UWP) app or Microsoft Edge in full screen above the lock screen. When the kiosk account signs in, the kiosk app launches automatically. If the UWP app is closed, it will automatically restart
+- **Shell Launcher**: used to configure a device to execure a Windows desktop application as the user interface. The application that you specify replaces the default Windows shell (`Explorer.exe`) that usually runs when a user signs in. This type of single-app kiosk doesn't run above the lock screen.
 
 :::row:::
     :::column span="1":::
     :::image type="content" source="images/restricted-user-experience.png" alt-text="Icon representing a restricted user experience." border="false":::
     :::column-end:::
     :::column span="3":::
-    #### Restrictedd user experience
+    #### Restricted user experience
     :::column-end:::
 :::row-end:::
 
-Runs one or more applications from the desktop. People using the kiosk see a customized Start menu that shows only the apps that are allowed to execute. With this approach, you can configure a locked-down experience for different account types.
+This experience loads the Windows desktop, but it only allows to run a defined set of applications. When the designated user signs in, the user can only run the apps that are allowed. This experience is sometimes referred to as *multi-app kiosk*. The Start menu is customized to show only the apps that are allowed to execute. With this approach, you can configure a locked-down experience for different account types.
 
-## Kiosk
+To configure a restricted user experience you use a feature called **Assgined Access**.
 
-A single-app kiosk is ideal for public use. Using [Shell Launcher](kiosk-shelllauncher.md), you can configure a kiosk device that runs a Windows desktop application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user signs in. This type of single-app kiosk doesn't run above the lock screen.
+## Choose the right experience
+
+
+
+
 
 A multi-app kiosk is appropriate for devices that are shared by multiple people. When you configure a multi-app kiosk, [specific policies are enforced](kiosk-policies.md) that affects **all** non-administrator users on the device.
 

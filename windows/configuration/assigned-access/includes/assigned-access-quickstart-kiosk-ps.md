@@ -3,7 +3,6 @@ author: paolomatarazzo
 ms.author: paoloma
 ms.date: 02/05/2024
 ms.topic: include
-ms.prod: windows-client
 ---
 
 ```powershell

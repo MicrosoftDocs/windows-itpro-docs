@@ -718,115 +718,13 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:r1809="http://schemas.microsoft.com/AssignedAccess/201810/config"
->
-    <Profiles>
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" r1809:AutoLaunch="true"/>
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
-                </AllowedApps>
-            </AllAppsList>
-            <Taskbar ShowTaskbar="true"/>
-        </Profile>
-        <Profile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" r1809:AutoLaunch="true" r1809:AutoLaunchArguments="1.txt"/>
-                </AllowedApps>
-            </AllAppsList>
-            <Taskbar ShowTaskbar="false"/>
-        </Profile>
-    </Profiles>
-    <Configs>
-        <Config>
-            <Account>aauser1</Account>
-            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-        </Config>
-        <Config>
-            <Account>aauser2</Account>
-            <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
-        </Config>
-    </Configs>
-</AssignedAccessConfiguration>
-
-```
-
-## Microsoft Edge Kiosk XML Sample
-
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-  xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
-  >
-  <Profiles>
-    <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
-
-        <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" v4:ClassicAppArguments="--no-first-run --kiosk-idle-timeout-minutes=5 --kiosk www.bing.com" />
-        <v4:BreakoutSequence Key="Ctrl+A"/>
-    </Profile>
-  </Profiles>
-  <Configs>
-    <Config>
-      <Account>EdgeKioskUser</Account>
-      <DefaultProfile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}"/>
-    </Config>
-  </Configs>
-</AssignedAccessConfiguration>
-```
-
-## `GlobalProfile`
-
-With `GlobalProfile` you can define a profile that will be applied to every non-admin account that signs in. This can be useful in scenarios like front line workers or student devices, where you want to ensure that every user has a consistent experience.
-
-This sample demonstrates that only a global profile is used, with no active user configured. Global Profile will be applied when every non-admin account signs in.
-
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
 >
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
             <AllAppsList>
                 <AllowedApps>
-                    <App AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="123"/>
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
-                </AllowedApps>
-            </AllAppsList>
-            <Taskbar ShowTaskbar="true"/>
-        </Profile>
-    </Profiles>
-    <Configs>
-        <v3:GlobalProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-    </Configs>
-</AssignedAccessConfiguration>
-```
-
-Below sample shows dedicated profile and global profile mixed usage, a user would use one profile, everyone else that's non-admin will use another profile.
-
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
->
-    <Profiles>
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="123"/>
+                    <App AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" rs5:AutoLaunch="true"/>
                     <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
                     <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
                     <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
@@ -846,9 +744,12 @@ Below sample shows dedicated profile and global profile mixed usage, a user woul
         </Profile>
     </Profiles>
     <Configs>
-        <v3:GlobalProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
         <Config>
-            <Account>aauser</Account>
+            <Account>aauser1</Account>
+            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+        </Config>
+        <Config>
+            <Account>aauser2</Account>
             <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
         </Config>
     </Configs>
@@ -856,173 +757,28 @@ Below sample shows dedicated profile and global profile mixed usage, a user woul
 
 ```
 
+## Examples
 
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
-    >
-    <Profiles>
-        <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F79}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" rs5:AutoLaunch="true" />
-                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe"/>
-                </AllowedApps>
-            </AllAppsList>
-            <Taskbar ShowTaskbar="false"/>
-        </Profile>
-        <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
-            <KioskModeApp AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-        </Profile>
-    </Profiles>
-    <Configs>
-        <v3:GlobalProfile Id="{EDB3036B-780D-487D-A375-69369D8A8F79}"/>
-        <Config>
-            <AutoLogonAccount rs5:DisplayName="Airport Kiosk"/>
-            <DefaultProfile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}"/>
-        </Config>
-    </Configs>
-</AssignedAccessConfiguration>
-```
+### Kiosk - Microsoft Edge
 
+[!INCLUDE [assigned-access-example-kiosk-edge](includes/assigned-access-example-kiosk-edge.md)]
 
+### Kiosk - Global profile
 
+With `GlobalProfile` you can define an Assigned Access profile that is applied to every non-admin account that signs in. This can be useful in scenarios like front line workers or student devices, where you want to ensure that every user has a consistent experience.
 
-## Folder Access sample xml
+The following configuration demonstrates that only a global profile is used, with no user configured.
+
+[!INCLUDE [assigned-access-example-global-profile](includes/assigned-access-example-global-profile.md)]
+
+> [!NOTE]
+> You can combine a global profile with other profiles. If you assign a user a non-global profile, the global profile won't be applied to that user.
+
+## File Explorer restrictions
 
 Folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all.
 
 You can specify user access to Downloads folder, Removable drives, or no restrictions at all. Downloads and Removable Drives can be allowed at the same time.
 
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
->
-    <Profiles>
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" />
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
-                </AllowedApps>
-            </AllAppsList>
-            <Taskbar ShowTaskbar="true"/>
-        </Profile>
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C24}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" />
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
-                </AllowedApps>
-            </AllAppsList>
-            <rs5:FileExplorerNamespaceRestrictions>
-            </rs5:FileExplorerNamespaceRestrictions>
-            <Taskbar ShowTaskbar="true"/>
-        </Profile>
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C25}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" />
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
-                </AllowedApps>
-            </AllAppsList>
-            <rs5:FileExplorerNamespaceRestrictions>
-                <rs5:AllowedNamespace Name="Downloads"/>
-            </rs5:FileExplorerNamespaceRestrictions>
-            <Taskbar ShowTaskbar="true"/>
-        </Profile>
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C26}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" />
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
-                </AllowedApps>
-            </AllAppsList>
-            <rs5:FileExplorerNamespaceRestrictions>
-                <v3:AllowRemovableDrives />
-            </rs5:FileExplorerNamespaceRestrictions>
-            <Taskbar ShowTaskbar="true"/>
-        </Profile>
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C27}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" />
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
-                </AllowedApps>
-            </AllAppsList>
-            <rs5:FileExplorerNamespaceRestrictions>
-                <rs5:AllowedNamespace Name="Downloads"/>
-                <v3:AllowRemovableDrives/>
-            </rs5:FileExplorerNamespaceRestrictions>
-            <Taskbar ShowTaskbar="true"/>
-        </Profile>
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C28}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" />
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
-                </AllowedApps>
-            </AllAppsList>
-            <rs5:FileExplorerNamespaceRestrictions>
-                <v3:NoRestriction />
-            </rs5:FileExplorerNamespaceRestrictions>
-            <Taskbar ShowTaskbar="true"/>
-        </Profile>
-    </Profiles>
-    <Configs>
-        <Config>
-            <Account>multi1</Account>
-            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-        </Config>
-        <Config>
-            <Account>multi2</Account>
-            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C24}"/>
-        </Config>
-        <Config>
-            <Account>multi3</Account>
-            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C25}"/>
-        </Config>
-        <Config>
-            <Account>multi4</Account>
-            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C26}"/>
-        </Config>
-        <Config>
-            <Account>multi5</Account>
-            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C27}"/>
-        </Config>
-        <Config>
-            <Account>multi6</Account>
-            <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C28}"/>
-        </Config>
-    </Configs>
-</AssignedAccessConfiguration>
+[!INCLUDE [assigned-access-example-file-explorer-restrictions](includes/assigned-access-example-file-explorer-restrictions.md)]
 
-```
-
-To authorize a compatible configuration XML that includes elements and attributes from Windows 10 version 1809 or newer / Windows 11, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias.
-
-For example, to configure the autolaunch feature that was added in Windows 10 version 1809 / Windows 11, use the following sample. Notice an alias r1809 is given to the 201810 namespace for Windows 10 version 1809 / Windows 11, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
-
-## Single app Assigned Access XML example
-
-## Multi-app Assigned Access XML example
