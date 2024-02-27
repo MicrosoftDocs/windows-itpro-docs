@@ -410,6 +410,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups aren't supported
 :::row:::
 :::column span="2":::
 **Local group**
+
 Specify the group type as **LocalGroup** and put the group name in Name attribute. Any Microsoft Entra accounts that are added to the local group won't have the kiosk settings applied.
 :::column-end:::
 :::column span="2":::
@@ -424,6 +425,7 @@ Specify the group type as **LocalGroup** and put the group name in Name attribut
 :::row:::
 :::column span="2":::
 **Active Directory group**
+
 Both security and distribution groups are supported. Specify the group type as <strong>ActiveDirectoryGroup</strong>. Use the domain name as the prefix in the name attribute.
 :::column-end:::
 :::column span="2":::
@@ -438,6 +440,7 @@ Both security and distribution groups are supported. Specify the group type as <
 :::row:::
 :::column span="2":::
 **Microsoft Entra group**
+
 Use the object ID of the Microsoft Entra group. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as `AzureActiveDirectoryGroup`. The kiosk device must have internet connectivity when users that belong to the group sign-in.
 :::column-end:::
 :::column span="2":::
@@ -538,6 +541,7 @@ You can specify user access to Downloads folder, Removable drives, or no restric
 :::row:::
 :::column span="2":::
 **Block everything**
+
 Either don't use the node or leave it empty
 :::column-end:::
 :::column span="2":::
@@ -589,7 +593,7 @@ Either don't use the node or leave it empty
 :::column span="2":::
 **No restrictions, all locations are allowed**
 :::column-end:::
-:::column span="3":::
+:::column span="2":::
 ```xml
 <rs5:FileExplorerNamespaceRestrictions>
     <v3:NoRestriction />
@@ -603,34 +607,9 @@ Either don't use the node or leave it empty
 
 ::: zone-end
 
----
+## Next steps
 
-## Practical examples
-
-### Kiosk experience with Microsoft Edge example
-
-[!INCLUDE [assigned-access-example-kiosk-edge](includes/assigned-access-example-kiosk-edge.md)]
-
-### Kiosk experience with UWP app example
-
-[!INCLUDE [assigned-access-example-kiosk-uwp](includes/assigned-access-example-kiosk-uwp.md)]
-
-::: zone pivot="windows-10"
-
-### File Explorer restrictions example
-
-[!INCLUDE [assigned-access-example-file-explorer-restrictions](includes/assigned-access-example-file-explorer-restrictions.md)]
-
-::: zone-end
-
-### Global Profile example
-
-The following configuration demonstrates that only a global profile is used, with no user configured.
-
-[!INCLUDE [assigned-access-example-global-profile](includes/assigned-access-example-global-profile.md)]
-
-### User Group example
-
-The following configuration demonstrates how to assign profiles to different users and groups, including a user configured to automatically sign in.
-
-[!INCLUDE [assigned-access-example-usergroup](includes/assigned-access-example-usergroup.md)]
+> [!div class="nextstepaction"]
+> Review some practical examples of Assigned Access XML configurations:
+>
+> [Assigned Access examples](assigned-access-examples.md)

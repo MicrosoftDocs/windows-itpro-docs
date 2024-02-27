@@ -33,6 +33,8 @@ items:
       href: /windows/client-management/mdm/assignedaccess-csp
     - name: Assigned Access XSD
       href: assigned-access-xsd.md
+    - name: Assigned Access XML examples
+      href: assigned-access-examples.md
     - name: Shell Launcher XSD
       href: shell-launcher-xsd.md
     - name: Assigned Access policy settings
