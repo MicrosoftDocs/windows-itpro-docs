@@ -26,6 +26,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - csi.exe
 - dbghost.exe
 - dbgsvc.exe
+- dbgsrv.exe
 - dnx.exe
 - dotnet.exe
 - fsi.exe
@@ -57,7 +58,6 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - wsl.exe
 - wslconfig.exe
 - wslhost.exe
-- dbgsrv.exe
 
 <sup>1</sup> A vulnerability in bginfo.exe was fixed in version 4.22. If you use BGInfo, for security, make sure to download and run the latest version of [BGInfo](/sysinternals/downloads/bginfo). BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
 
@@ -137,7 +137,6 @@ The blocklist policy that follows includes "Allow all" rules for both kernel and
     <Deny ID="ID_DENY_ADDINPROCESS32" FriendlyName="AddInProcess32.exe" FileName="AddInProcess32.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_ADDINUTIL" FriendlyName="AddInUtil.exe" FileName="AddInUtil.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_ASPNET" FriendlyName="aspnet_compiler.exe" FileName="aspnet_compiler.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
-    <Deny ID="ID_DENY_dbgsrv" FriendlyName="dbgsrv.exe" FileName="dbgsrv.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_BASH" FriendlyName="bash.exe" FileName="bash.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_BGINFO" FriendlyName="bginfo.exe" FileName="BGINFO.Exe" MinimumFileVersion="4.21.0.0" />
     <Deny ID="ID_DENY_CBD" FriendlyName="cdb.exe" FileName="CDB.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
@@ -145,6 +144,7 @@ The blocklist policy that follows includes "Allow all" rules for both kernel and
     <Deny ID="ID_DENY_CSCRIPT" FriendlyName="cscript.exe" FileName="cscript.exe" MinimumFileVersion="5.812.10240.0" />
     <Deny ID="ID_DENY_DBGHOST" FriendlyName="dbghost.exe" FileName="DBGHOST.Exe" MinimumFileVersion="2.3.0.0" />
     <Deny ID="ID_DENY_DBGSVC" FriendlyName="dbgsvc.exe" FileName="DBGSVC.Exe" MinimumFileVersion="2.3.0.0" />
+    <Deny ID="ID_DENY_DBGSRV" FriendlyName="dbgsrv.exe" FileName="dbgsrv.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_DNX" FriendlyName="dnx.exe" FileName="dnx.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_DOTNET" FriendlyName="dotnet.exe" FileName="dotnet.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_FSI" FriendlyName="fsi.exe" FileName="fsi.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
@@ -856,6 +856,7 @@ The blocklist policy that follows includes "Allow all" rules for both kernel and
           <FileRuleRef RuleID="ID_DENY_CSCRIPT" />
           <FileRuleRef RuleID="ID_DENY_DBGHOST" />
           <FileRuleRef RuleID="ID_DENY_DBGSVC" />
+          <FileRuleRef RuleID="ID_DENY_DBGSRV" />
           <FileRuleRef RuleID="ID_DENY_DNX" />
           <FileRuleRef RuleID="ID_DENY_DOTNET" />
           <FileRuleRef RuleID="ID_DENY_FSI" />
