@@ -481,127 +481,6 @@ Group accounts are specified using `<UserGroup>`. Nested groups aren't supported
 
 ::: zone-end
 
-::: zone pivot="windows-10"
-
-### FileExplorerNamespaceRestrictions
-
-You can explicitly allow access to known folders when the user tries to open the file dialog box in a restricted user experience by including the `FileExplorerNamespaceRestrictions` node.
-
-The following example shows how to allow user access to the Downloads folder in the common file dialog box.
-
-> [!TIP]
-> To grant access to the Downloads folder through File Explorer, add "Explorer.exe" to the list of allowed apps, and pin a file explorer shortcut to the kiosk start menu.
-
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-    xmlns="https://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="https://schemas.microsoft.com/AssignedAccess/201810/config"
->     <Profiles>
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
-            <AllAppsList>
-                <AllowedApps>
-                    ...
-                </AllowedApps>
-            </AllAppsList>
-            <rs5:FileExplorerNamespaceRestrictions>
-                <rs5:AllowedNamespace Name="Downloads"/>
-            </rs5:FileExplorerNamespaceRestrictions>
-            <StartLayout>
-                ...
-            </StartLayout>
-            <Taskbar ShowTaskbar="true"/>
-        </Profile>
-    </Profiles>
-</AssignedAccessConfiguration>
-```
-
-
-> [!NOTE]
-> - `FileExplorerNamespaceRestrictions` and `AllowedNamespace:Downloads` are available in namespace `https://schemas.microsoft.com/AssignedAccess/201810/config`.
-> - `AllowRemovableDrives` and `NoRestriction` are defined in a new namespace `https://schemas.microsoft.com/AssignedAccess/2020/config`.
-
-- When `FileExplorerNamespaceRestrictions` node isn't used, or used but left empty, the user won't be able to access any folder in a common dialog. For example, **Save As** in the Microsoft Edge browser.
-- When Downloads is mentioned in allowed namespace, user will be able to access Downloads folder.
-- When `AllowRemovableDrives` is used, user will be to access removable drives.
-- When `NoRestriction` is used, no restriction will be applied to the dialog.
-- `AllowRemovableDrives` and `AllowedNamespace:Downloads` can be used at the same time.
-
-:::row:::
-    :::column span="1":::
-    **Scenario**
-    :::column-end:::
-    :::column span="3":::
-    **Sample Xml**
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-    **Block everything**
-    :::column-end:::
-    :::column span="3":::
-    Either don't use the node or leave it empty
-
-    ```xml
-    <rs5:FileExplorerNamespaceRestrictions>
-    </rs5:FileExplorerNamespaceRestrictions>
-    ```
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-    **Only allow downloads**
-    :::column-end:::
-    :::column span="3":::
-    ```xml
-    <rs5:FileExplorerNamespaceRestrictions>
-        <rs5:AllowedNamespace Name="Downloads"/>
-    </rs5:FileExplorerNamespaceRestrictions>
-    ```
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column span="1":::
-    **Only allow removable drives**
-    :::column-end:::
-    :::column span="3":::
-    ```xml
-    <rs5:FileExplorerNamespaceRestrictions>
-        <v3:AllowRemovableDrives />
-    </rs5:FileExplorerNamespaceRestrictions>
-    ```
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column span="1":::
-    **Allow both Downloads, and removable drives**
-    :::column-end:::
-    :::column span="3":::
-    ```xml
-    <rs5:FileExplorerNamespaceRestrictions>
-        <rs5:AllowedNamespace Name="Downloads"/>
-        <v3:AllowRemovableDrives/>
-    </rs5:FileExplorerNamespaceRestrictions>
-    ```
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column span="1":::
-    **No restrictions, all locations are allowed**
-    :::column-end:::
-    :::column span="3":::
-    ```xml
-    <rs5:FileExplorerNamespaceRestrictions>
-        <v3:NoRestriction />
-    </rs5:FileExplorerNamespaceRestrictions>
-    ```
-    :::column-end:::
-:::row-end:::
-
-::: zone-end
 
 <!--troubleshooting
 Event Viewer
@@ -779,9 +658,95 @@ The following configuration demonstrates that only a global profile is used, wit
 
 ## File Explorer restrictions
 
-Folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all.
+When using Assigned Access, folder browsing is locked down. You can explicitly allow access to known folders when the user tries to open the file dialog box in a restricted user experience by including the `FileExplorerNamespaceRestrictions` node.
 
 You can specify user access to Downloads folder, Removable drives, or no restrictions at all. Downloads and Removable Drives can be allowed at the same time.
+
+:::row:::
+    :::column span="1":::
+    **Scenario**
+    :::column-end:::
+    :::column span="3":::
+    **XML snippet**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+    **Block everything**
+    :::column-end:::
+    :::column span="3":::
+    Either don't use the node or leave it empty
+
+    ```xml
+    <rs5:FileExplorerNamespaceRestrictions>
+    </rs5:FileExplorerNamespaceRestrictions>
+    ```
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+    **Only allow downloads**
+    :::column-end:::
+    :::column span="3":::
+    ```xml
+    <rs5:FileExplorerNamespaceRestrictions>
+        <rs5:AllowedNamespace Name="Downloads"/>
+    </rs5:FileExplorerNamespaceRestrictions>
+    ```
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column span="1":::
+    **Only allow removable drives**
+    :::column-end:::
+    :::column span="3":::
+    ```xml
+    <rs5:FileExplorerNamespaceRestrictions>
+        <v3:AllowRemovableDrives />
+    </rs5:FileExplorerNamespaceRestrictions>
+    ```
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column span="1":::
+    **Allow both Downloads, and removable drives**
+    :::column-end:::
+    :::column span="3":::
+    ```xml
+    <rs5:FileExplorerNamespaceRestrictions>
+        <rs5:AllowedNamespace Name="Downloads"/>
+        <v3:AllowRemovableDrives/>
+    </rs5:FileExplorerNamespaceRestrictions>
+    ```
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column span="1":::
+    **No restrictions, all locations are allowed**
+    :::column-end:::
+    :::column span="3":::
+    ```xml
+    <rs5:FileExplorerNamespaceRestrictions>
+        <v3:NoRestriction />
+    </rs5:FileExplorerNamespaceRestrictions>
+    ```
+    :::column-end:::
+:::row-end:::
+
+> [!TIP]
+> To grant access to the Downloads folder through File Explorer, add `Explorer.exe` to the list of allowed apps, and pin a file explorer shortcut to the Start menu.
+
+| Property | XML namespace (alias) |
+|-|-|
+|`FileExplorerNamespaceRestrictions`|`https://schemas.microsoft.com/AssignedAccess/201810/config` (rs5)|
+|`AllowedNamespace:Downloads`|`https://schemas.microsoft.com/AssignedAccess/201810/config` (rs5)|
+|`AllowRemovableDrives`|`https://schemas.microsoft.com/AssignedAccess/2020/config` (v3)|
+|`NoRestriction`|`https://schemas.microsoft.com/AssignedAccess/2020/config` (v3)|
+
+### Example
 
 [!INCLUDE [assigned-access-example-file-explorer-restrictions](includes/assigned-access-example-file-explorer-restrictions.md)]
 
