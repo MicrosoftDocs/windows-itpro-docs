@@ -18,15 +18,15 @@ ms.topic: include
 
     <Configs>
         <Config>
-            <Account>domain\account</Account>
+            <Account>contoso\user</Account>
             <DefaultProfile Id="{GUID}"/>
         </Config>
         <Config>
-            <Account>AzureAD\john@contoso.onmicrosoft.com</Account>
+            <Account>AzureAD\user@contoso.onmicrosoft.com</Account>
             <DefaultProfile Id="{GUID}"/>
         </Config>
         <Config>
-            <Account>localaccount</Account>
+            <Account>user</Account>
             <DefaultProfile Id="{GUID}"/>
         </Config>
         <Config>

@@ -411,13 +411,13 @@ Individual accounts are specified using `<Account>`.
 :::column span="2":::
 **Local user**
 
-Local account can be entered as `machinename\account`, `.\account`, or just `account`.
+Local account can be entered as `devicename\user`, `.\user`, or just `user`.
 
 :::column-end:::
 :::column span="2":::
 ```xml
 <Config>
-  <Account>localaccount</Account>
+  <Account>user</Account>
   <DefaultProfile Id="{GUID}"/>
 </Config>
 ```
@@ -427,28 +427,25 @@ Local account can be entered as `machinename\account`, `.\account`, or just `acc
 :::column span="2":::
 **Active Directory user**
 
-Domain accounts should be entered as `domain\account`.
+Domain accounts should be entered as `domain\samAccountName`.
 :::column-end:::
 :::column span="2":::
 ```xml
 <Config>
-  <Account>domain\account</Account>
+  <Account>contoso\user</Account>
   <DefaultProfile Id="{GUID}"/>
 </Config>
 ```
 :::column-end:::
 :::row-end:::
 :::column span="2":::
-**Microsoft Entra ID user**
+**Microsoft Entra user**
 
-Microsoft Entra account must be specified with the format: `AzureAD\{UPN}`. `AzureAD` must be provided *as is*, then follow with the Microsoft Entra ID user principal name (UPN). For example, **AzureAD\user@contoso.onmicrosoft.com**.
+Microsoft Entra account must be specified with the format: `AzureAD\{UPN}`. `AzureAD` must be provided *as is*, then follow with the Microsoft Entra user principal name (UPN). For example, **AzureAD\user@contoso.onmicrosoft.com**.
 :::column-end:::
 :::column span="2":::
 ```xml
-<Config>
-  <Account>AzureAD\john@contoso.onmicrosoft.com</Account>
-  <DefaultProfile Id="{GUID}"/>
-</Config>
+<?xml version="1.0" encoding="utf-8"?><Config><Account>AzureAD\john@contoso.onmicrosoft.com</Account><DefaultProfile Id="{GUID}" /></Config>
 ```
 :::column-end:::
 :::row-end:::
@@ -502,7 +499,7 @@ Both security and distribution groups are supported. Specify the group type as <
 :::row-end:::
 :::row:::
 :::column span="2":::
-**Microsoft Entra ID group**
+**Microsoft Entra group**
 
 Use the object ID of the Microsoft Entra group. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as `AzureActiveDirectoryGroup`. The kiosk device must have internet connectivity when users that belong to the group sign-in.
 :::column-end:::
