@@ -35,6 +35,7 @@ You can start your file by pasting the following XML code into a text editor, an
             </AllAppsList>
             <StartLayout/>
             <Taskbar/>
+            <v5:TaskbarLayout>
         </Profile>
     </Profiles>
     <Configs>

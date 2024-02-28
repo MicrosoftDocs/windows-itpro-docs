@@ -36,18 +36,7 @@ The examples can be modified to fit your specific requirements. For example, you
 >
 > When using this call, authenticate to your tenant in the Graph Explorer window. If it's the first time using Graph Explorer, you may need to authorize the application to access your tenant or to modify the existing permissions. This graph call requires *DeviceManagementConfiguration.ReadWrite.All* permissions.
 
-<!--
-::: zone pivot="windows-11"
-[!INCLUDE [assigned-access-quickstart-restricted-experience-intune-11.md](includes/assigned-access-quickstart-restricted-experience-intune-11.md)]
-::: zone-end
-
-::: zone pivot="windows-10"
-[!INCLUDE [assigned-access-quickstart-restricted-experience-intune-10.md](includes/assigned-access-quickstart-restricted-experience-intune-10.md)]
-::: zone-end
--->
-
 [!INCLUDE [assigned-access-quickstart-restricted-experience-intune.md](includes/assigned-access-quickstart-restricted-experience-intune.md)]
-
 
 [!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
 
@@ -56,13 +45,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 - **Setting:** `./Vendor/MSFT/AssignedAccess/Configuration`
 - **Value:**
 
-::: zone pivot="windows-11"
-[!INCLUDE [assigned-access-quickstart-restricted-experience-xml-11.md](includes/assigned-access-quickstart-restricted-experience-xml-11.md)]
-::: zone-end
-
-::: zone pivot="windows-10"
-[!INCLUDE [assigned-access-quickstart-restricted-experience-xml-10.md](includes/assigned-access-quickstart-restricted-experience-xml-10.md)]
-::: zone-end
+[!INCLUDE [assigned-access-quickstart-restricted-experience-xml.md](includes/assigned-access-quickstart-restricted-experience-xml.md)]
 
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -71,13 +54,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 - **Path:** `AssignedAccess/MultiAppAssignedAccessSettings`
 - **Value:**
 
-::: zone pivot="windows-11"
-[!INCLUDE [assigned-access-quickstart-restricted-experience-xml-11.md](includes/assigned-access-quickstart-restricted-experience-xml-11.md)]
-::: zone-end
-
-::: zone pivot="windows-10"
-[!INCLUDE [assigned-access-quickstart-restricted-experience-xml-10.md](includes/assigned-access-quickstart-restricted-experience-xml-10.md)]
-::: zone-end
+[!INCLUDE [assigned-access-quickstart-restricted-experience-xml.md](includes/assigned-access-quickstart-restricted-experience-xml.md)]
 
 [!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
@@ -85,13 +62,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 [!INCLUDE [powershell-wmi-bridge-1](../../../includes/configure/powershell-wmi-bridge-1.md)]
 
-::: zone pivot="windows-11"
-[!INCLUDE [assigned-access-quickstart-restricted-experience-ps-11.md](includes/assigned-access-quickstart-restricted-experience-ps-11.md)]
-::: zone-end
-
-::: zone pivot="windows-10"
-[!INCLUDE [assigned-access-quickstart-restricted-experience-ps-10.md](includes/assigned-access-quickstart-restricted-experience-ps-10.md)]
-::: zone-end
+[!INCLUDE [assigned-access-quickstart-restricted-experience-ps.md](includes/assigned-access-quickstart-restricted-experience-ps.md)]
 
 [!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
 
