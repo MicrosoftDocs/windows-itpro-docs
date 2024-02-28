@@ -7,7 +7,12 @@ ms.topic: how-to
 
 # Configure devices with Shell Launcher
 
-Shell Launcher is an Assigned Access configuration that replaces the default Windows Explorer shell (`explorer.exe`) with the `CustomShellHost.exe` application. CustomShellHost can launch a Windows desktop application or a UWP app.
+Shell Launcher is a Windows feature that you can use to replace the default Windows Explorer shell (`explorer.exe`) with the `CustomShellHost.exe` application. CustomShellHost can launch a Windows desktop application or a UWP app.
+
+Practical examples include:
+
+- Public kiosks
+- ATMs
 
 Shell Launcher controls which application the user sees as the shell after sign-in. It doesn't prevent the user from accessing other desktop applications and system components. From a custom shell, you can launch secondary views displayed on multiple monitors, or launch other apps in full screen on user's demand.
 

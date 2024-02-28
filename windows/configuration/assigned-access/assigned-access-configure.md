@@ -7,6 +7,38 @@ ms.topic: how-to
 
 # Configure Assigned Access
 
+Assigned Access is a Windows feature that you can use to configure a device as a kiosk or restricted user experience.
+
+:::row:::
+    :::column span="1":::
+    :::image type="content" source="images/kiosk.png" alt-text="Icon representing a kiosk." border="false":::
+    :::column-end:::
+    :::column span="3":::
+    #### Kiosk experience
+
+    A single UWP application or Microsoft Edge is executed in full screen, above the lock screen. Users can only use that application. If the kiosk app is closed, it will automatically restart. Practical examples include:
+
+    - Digital signs
+    - Public web browsing kiosks
+
+    This experience is sometimes referred to as *single-app kiosk*.
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+    :::image type="content" source="images/restricted-user-experience.png" alt-text="Icon representing a restricted user experience." border="false":::
+    :::column-end:::
+    :::column span="3":::
+    #### Restricted user experience
+    Users can execute a defined list of applications, with a custom and locked down Start menu and Taskbar. Practical examples include:
+    - Frontline worker devices
+    - Student devices
+    - Lab devices
+    :::column-end:::
+:::row-end:::
+
+Assigned Access profiles only apply to non-admin accounts. When an administrator signs in, the Assigned Access restrictions don't apply.
+
 ## Configure a kiosk in Microsoft Intune
 
 To configure a kiosk in Microsoft Intune, see:

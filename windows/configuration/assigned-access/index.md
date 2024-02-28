@@ -18,6 +18,15 @@ Organization may want to set up special purpose devices, such as a device in the
     :::column-end:::
 :::row-end:::
 
+:::row:::
+    :::column span="1":::
+    :::image type="content" source="images/restricted-user-experience.png" alt-text="Icon representing a restricted user experience." border="false":::
+    :::column-end:::
+    :::column span="3":::
+    #### Restricted user experience
+    :::column-end:::
+:::row-end:::
+
 This experience runs a single application in full screen, and people using the device can only use that app. When the designated kiosk account signs in, the kiosk app launches automatically. If the kiosk app is closed, it will automatically restart. This experience is sometimes referred to as *single-app kiosk*.
 
 Windows offers two different features to configure a kiosk experience:
@@ -40,9 +49,8 @@ To configure a restricted user experience you use a feature called **Assgined Ac
 
 ## Choose the right experience
 
-
-
-
+Carefully evaluate all applications that users should use. If applications require user authentication, don't use a local or generic
+user account. Rather, target the group of users within the Assigned Access configuration file.
 
 A multi-app kiosk is appropriate for devices that are shared by multiple people. When you configure a multi-app kiosk, [specific policies are enforced](kiosk-policies.md) that affects **all** non-administrator users on the device.
 
