@@ -21,10 +21,7 @@ ms.topic: include
           ...
         </AllowedApps>
       </AllAppsList>
-      <v5:StartPins>
-        ...
-      </v5:StartPins>
-      <Taskbar ShowTaskbar="true"/>
+      ...
     </Profile>
   </Profiles>
   <Configs>

@@ -133,7 +133,7 @@ Example:
 ```xml
 <Profiles>
     <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" Name="Microsoft Learn example">
-        <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" v4:ClassicAppArguments="--kiosk https://maps.cltairport.com/ --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2" />
+        <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" v4:ClassicAppArguments="--kiosk https://www.contoso.com/ --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2" />
         <v4:BreakoutSequence Key="Ctrl+A"/>
     </Profile>
 </Profiles>

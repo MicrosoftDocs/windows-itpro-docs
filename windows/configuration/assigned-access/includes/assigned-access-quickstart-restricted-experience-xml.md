@@ -61,7 +61,7 @@ ms.topic: include
     </Profiles>
     <Configs>
         <Config>
-            <AutoLogonAccount rs5:DisplayName="Library Kiosk"/>
+            <AutoLogonAccount rs5:DisplayName="MS Learn Example"/>
             <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
         </Config>
     </Configs>
@@ -118,7 +118,7 @@ ms.topic: include
     </Profiles>
     <Configs>
         <Config>
-            <AutoLogonAccount rs5:DisplayName="Library Kiosk"/>
+            <AutoLogonAccount rs5:DisplayName="MS Learn Example"/>
             <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
         </Config>
     </Configs>
