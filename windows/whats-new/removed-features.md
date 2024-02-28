@@ -8,7 +8,7 @@ ms.author: mstewart
 manager: aaroncz
 ms.topic: conceptual
 ms.subservice: itpro-fundamentals
-ms.date: 02/29/2024
+ms.date: 02/28/2024
 ms.collection:
   - highpri
   - tier1
