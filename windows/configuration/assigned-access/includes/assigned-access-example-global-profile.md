@@ -14,7 +14,7 @@ ms.topic: include
     xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
-          ...
+          <!-- Add configuration here -->
         </Profile>
     </Profiles>
     <Configs>

@@ -28,10 +28,10 @@ You can start your file by pasting the following XML code into a text editor, an
     xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
     xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
     <Profiles>
-        ...
+        <!-- Add configuration here as needed -->
     </Profiles>
     <Configs>
-        ...
+        <!-- Add configuration here as needed -->
     </Configs>
 </ShellLauncherConfiguration>
 ```
@@ -43,7 +43,7 @@ If you want to define a default profile, you can use the `DefaultProfile` elemen
 ```xml
 <Profiles>
     <DefaultProfile>
-        ...
+        <!-- Add configuration here as needed -->
     </DefaultProfile>
 </Profiles>
 ```
@@ -53,7 +53,7 @@ Each profile is identified by a unique identifier `Profile Id`, for example:
 ```xml
 <Profiles>
     <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
-        ...
+        <!-- Add configuration here as needed -->
     </Profile>
 </Profiles>
 ```

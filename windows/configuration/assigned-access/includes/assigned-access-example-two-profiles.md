@@ -18,10 +18,10 @@ ms.topic: include
     <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
       <AllAppsList>
         <AllowedApps>
-          ...
+          <!-- Add configuration here as needed -->
         </AllowedApps>
       </AllAppsList>
-      ...
+      <!-- Add configuration here as needed -->
     </Profile>
   </Profiles>
   <Configs>

@@ -20,15 +20,6 @@ Let's start by looking at the basic structure of the XML file. An Assigned Acces
 > [!NOTE]
 > A profile has no effect if it's not associated to a user account.
 
-```text
-Assigned Access
-|___ Profiles
-|   |___ Profile
-|       |___ KioskApp
-|       |___ TaskBar
-|___ Configs
-```
-
 Here's a basic example of an Assigned Access configuration file, with one profile and one config:
 
 ```xml
@@ -36,12 +27,12 @@ Here's a basic example of an Assigned Access configuration file, with one profil
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
     <Profiles>
         <Profile Id="GUID">
-            ...
+            <!-- Add configuration here as needed -->
         </Profile>
     </Profiles>
     <Configs>
         <Config>
-            ...
+            <!-- Add configuration here as needed -->
         </Config>
     </Configs>
 </AssignedAccessConfiguration>
@@ -54,7 +45,7 @@ A configuration file can contain one or more profiles. Each profile is identifie
 ```xml
 <Profiles>
     <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
-        ...
+        <!-- Add configuration here as needed -->
     </Profile>
 </Profiles>
 ```
@@ -106,13 +97,13 @@ Restricted user experience example:
     <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" Name="Microsoft Learn example">
         <AllAppsList>
             <AllowedApps>
-                [...]
+                <!-- Add configuration here as needed -->
             </AllowedApps>
         </AllAppsList>
         <StartPins>
         </StartPins>
         <TaskbarLayout>
-            [...]
+            <!-- Add configuration here as needed -->
         </TaskbarLayout>
     </Profile>
 </Profiles>
@@ -129,11 +120,11 @@ Restricted user experience example:
     <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" Name="Microsoft Learn example">
         <AllAppsList>
             <AllowedApps>
-                [...]
+                <!-- Add configuration here as needed -->
             </AllowedApps>
         </AllAppsList>
         <rs5:FileExplorerNamespaceRestrictions>
-            [...]
+            <!-- Add configuration here as needed -->
         </rs5:FileExplorerNamespaceRestrictions>
         <StartLayout>
         </StartLayout>
@@ -450,59 +441,38 @@ Microsoft Entra accounts must be specified with the format: `AzureAD\{UPN}`. `Az
 
 Group accounts are specified using `<UserGroup>`. Nested groups aren't supported. For example, if *User A* is member of *Group A*, *Group A* is member of *Group B*, and *Group B* is used in `<Config/>`, *User A* doesn't have the kiosk experience.
 
-:::row:::
-:::column span="2":::
-#### Scenario
-:::column-end:::
-:::column span="2":::
-#### XML snippet
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="2":::
-**Local group**
+##### Local group
 
 Specify the group type as `LocalGroup` and add the group name in the `Name` attribute.
-:::column-end:::
-:::column span="2":::
+
 ```xml
 <Config>
   <UserGroup Type="LocalGroup" Name="groupname" />
   <DefaultProfile Id="{GUID}"/>
 </Config>
 ```
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="2":::
-**Active Directory group**
+
+#### Active Directory group
 
 Both security and distribution groups are supported. Specify the group type as <strong>ActiveDirectoryGroup</strong>. Use the domain name as the prefix in the name attribute.
-:::column-end:::
-:::column span="2":::
+
 ```xml
 <Config>
   <UserGroup Type="ActiveDirectoryGroup" Name="contoso\groupname" />
   <DefaultProfile Id="{GUID}"/>
 </Config>
 ```
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="2":::
-**Microsoft Entra group**
+
+#### Microsoft Entra group
 
 Use the object ID of the Microsoft Entra group. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as `AzureActiveDirectoryGroup`. The kiosk device must have internet connectivity when users that belong to the group sign-in.
-:::column-end:::
-:::column span="2":::
+
 ```xml
 <Config>
   <UserGroup Type="AzureActiveDirectoryGroup" Name="Group_GUID" />
   <DefaultProfile Id="{GUID}"/>
 </Config>
 ```
-:::column-end:::
-:::row-end:::
 
 ### Global profile
 

@@ -13,7 +13,7 @@ ms.topic: include
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config">
 
     <Profiles>
-        ...
+        <!-- Add configuration here as needed -->
     </Profiles>
 
     <Configs>

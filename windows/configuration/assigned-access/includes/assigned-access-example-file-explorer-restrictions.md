@@ -14,12 +14,12 @@ ms.topic: include
     xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config">
     <Profiles>
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
-            ...
+            <!-- Add configuration here -->
             <rs5:FileExplorerNamespaceRestrictions>
                 <rs5:AllowedNamespace Name="Downloads"/>
                 <v3:AllowRemovableDrives/>
             </rs5:FileExplorerNamespaceRestrictions>
-            ...
+            <!-- Add configuration here -->
         </Profile>
     </Profiles>
     <Configs>
