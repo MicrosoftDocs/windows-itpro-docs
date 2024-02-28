@@ -20,6 +20,15 @@ Let's start by looking at the basic structure of the XML file. An Assigned Acces
 > [!NOTE]
 > A profile has no effect if it's not associated to a user account.
 
+```text
+Assigned Access
+|___ Profiles
+|   |___ Profile
+|       |___ KioskApp
+|       |___ TaskBar
+|___ Configs
+```
+
 Here's a basic example of an Assigned Access configuration file, with one profile and one config:
 
 ```xml
