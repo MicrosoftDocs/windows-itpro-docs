@@ -26,7 +26,7 @@ Here's a basic example of an Assigned Access configuration file, with one profil
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
     <Profiles>
-        <Profile Id="GUID">
+        <Profile Id="{GUID}">
             <!-- Add configuration here as needed -->
         </Profile>
     </Profiles>
@@ -386,10 +386,10 @@ The following example shows how to specify an account to sign in automatically, 
 ```
 
 >[!NOTE]
-> On Microsoft Entra joined and domain joined devices, local user accounts aren't disaplyed on the sign-in screen by default. To display the local accounts on the sign-in screen, enable the policy setting:
+> On Microsoft Entra joined and domain joined devices, local user accounts aren't displayed on the sign-in screen by default. To display the local accounts on the sign-in screen, enable the policy setting:
 >
 >- GPO: **Computer Configuration** > **Administrative Templates** > **System** > **Logon** > **Enumerate local users on domain-joined computers**
->- CSP: `./Device/Vendor/MSFT/Policy/Config/WindowsLogon/`[`EnumerateLocalUsersOnDomainJoinedComputers`](/windows/client-management/mdm/policy-csp-windowslogon#enumeratelocalusersondomainjoinedcomputers)
+>- CSP: `./Device/Vendor/MSFT/Policy/Config/WindowsLogon/`[EnumerateLocalUsersOnDomainJoinedComputers](/windows/client-management/mdm/policy-csp-windowslogon#enumeratelocalusersondomainjoinedcomputers)
 
 >[!IMPORTANT]
 >When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature doesn't work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon).
@@ -398,6 +398,10 @@ The following example shows how to specify an account to sign in automatically, 
 
 Individual accounts are specified using `<Account>`.
 
+> [!IMPORTANT]
+> Before applying the Assigned Access configuration, make sure the specified user account is available on the device, otherwise it fails.
+>
+> For both domain and Microsoft Entra accounts, as long as the device is Active Directory joined or Microsoft Entra joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for assigned access.
 
 #### Local user
 
@@ -431,11 +435,6 @@ Microsoft Entra accounts must be specified with the format: `AzureAD\{UPN}`. `Az
   <DefaultProfile Id="{GUID}"/>
 </Config>
 ```
-
-> [!IMPORTANT]
-> Before applying the Assigned Access configuration, make sure the specified user account is available on the device, otherwise it fails.
->
-> For both domain and Microsoft Entra accounts, as long as the device is Active Directory joined or Microsoft Entra joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for assigned access.
 
 ### Group accounts
 

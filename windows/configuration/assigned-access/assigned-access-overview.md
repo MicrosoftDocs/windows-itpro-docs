@@ -354,22 +354,27 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 
 [Learn how to apply a provisioning package.](../provisioning-packages/provisioning-apply-package.md)
 
-## Set up a kiosk or digital sign using Microsoft Intune or other MDM service
 
-App type:
+## User experience
 
-- UWP
+To test the kiosk, sign in with the Assigned Access user account you specified in the configuration to check out the multi-app experience.
 
-OS:
+>[!NOTE]
+>The kiosk configuration setting will take effect the next time the Assigned Access user signs in. If that user account is signed in when you apply the configuration, make sure the user signs out and signs back in to validate the experience.
 
-- Windows 10 Pro version 1709+, Ent, Edu
-- Windows 11
+When Assigned Access is configured, different policy settings are applied to the device to provide a secured, locked-down experience. For more information, see [assigned-access-policy-settings](assigned-access-policy-settings.md).
 
-Account type:
+Optionally, run Event Viewer (eventvwr.exe) and look through logs under **Applications and Services Logs** > **Microsoft** > **Windows** > **Provisioning-Diagnostics-Provider** > **Admin**.
 
-- Local standard user
-- Microsoft Entra ID
+### App launching and switching experience
 
+In the multi-app mode, to maximize the user productivity and streamline the experience, an app will be always launched in full screen when the users click the tile on the Start. The users can minimize and close the app, but cannot resize the app window.
+
+The users can switch apps just as they do today in Windows. They can use the Task View button, Alt + Tab hotkey, and the swipe in from the left gesture to view all the open apps in task view. They can click the Windows button to show Start, from which they can open apps, and they can switch to an opened app by clicking it on the taskbar.
+
+### Auto-trigger touch keyboard
+
+The touch keyboard is automatically triggered when there's an input needed and no physical keyboard is attached on touch-enabled devices. You don't need to configure any other setting to enforce this behavior.
 
 ## Sign out of assigned access
 
@@ -393,13 +398,6 @@ Digital signage can be a useful and exciting business tool. Use digital signs to
 
 For digital signage, simply select a digital sign player as your kiosk app. You can also use [Microsoft Edge in kiosk mode](/DeployEdge/microsoft-edge-configure-kiosk-mode) or the Kiosk Browser app, and configure it to show your online content.
 
->[!TIP]
->Kiosk Browser can also be used in [single-app kiosks](kiosk-single-app.md) and [multi-app kiosk](lock-down-windows-10-to-specific-apps.md) as a web browser. For more information, see [Guidelines for web browsers](guidelines-for-assigned-access-app.md#guidelines-for-web-browsers).
-
-Kiosk Browser must be downloaded for offline licensing using Microsoft Store for Business. You can deploy Kiosk Browser to devices running Windows 11, and Windows 10 version 1803+.
-
->[!NOTE]
->If you haven't set up your Microsoft Store for Business yet, check out [the prerequisites](/microsoft-store/prerequisites-microsoft-store-for-business) and then [sign up](/microsoft-store/sign-up-microsoft-store-for-business).
 
 This procedure explains how to configure digital signage using Kiosk Browser on a device running Windows client that has already been set up (completed the first-run experience).
 

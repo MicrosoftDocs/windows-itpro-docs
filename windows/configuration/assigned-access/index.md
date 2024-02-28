@@ -18,15 +18,6 @@ Organization may want to set up special purpose devices, such as a device in the
     :::column-end:::
 :::row-end:::
 
-:::row:::
-    :::column span="1":::
-    :::image type="content" source="images/restricted-user-experience.png" alt-text="Icon representing a restricted user experience." border="false":::
-    :::column-end:::
-    :::column span="3":::
-    #### Restricted user experience
-    :::column-end:::
-:::row-end:::
-
 This experience runs a single application in full screen, and people using the device can only use that app. When the designated kiosk account signs in, the kiosk app launches automatically. If the kiosk app is closed, it will automatically restart. This experience is sometimes referred to as *single-app kiosk*.
 
 Windows offers two different features to configure a kiosk experience:
@@ -86,27 +77,6 @@ There are several kiosk configuration methods that you can choose from, dependin
 
 >[!NOTE]
 >For devices running Windows client Enterprise and Education, you can also use [Windows Defender Application Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) or [AppLocker](lock-down-windows-10-applocker.md) to lock down a device to specific apps.
-
-## User experience
-
-To test the kiosk, sign in with the Assigned Access user account you specified in the configuration to check out the multi-app experience.
-
->[!NOTE]
->The kiosk configuration setting will take effect the next time the Assigned Access user signs in. If that user account is signed in when you apply the configuration, make sure the user signs out and signs back in to validate the experience.
-
-When Assigned Access is configured, different policy settings are applied to the device to provide a secured, locked-down experience. For more information, see [assigned-access-policy-settings](assigned-access-policy-settings.md).
-
-Optionally, run Event Viewer (eventvwr.exe) and look through logs under **Applications and Services Logs** > **Microsoft** > **Windows** > **Provisioning-Diagnostics-Provider** > **Admin**.
-
-### App launching and switching experience
-
-In the multi-app mode, to maximize the user productivity and streamline the experience, an app will be always launched in full screen when the users click the tile on the Start. The users can minimize and close the app, but cannot resize the app window.
-
-The users can switch apps just as they do today in Windows. They can use the Task View button, Alt + Tab hotkey, and the swipe in from the left gesture to view all the open apps in task view. They can click the Windows button to show Start, from which they can open apps, and they can switch to an opened app by clicking it on the taskbar.
-
-### Auto-trigger touch keyboard
-
-The touch keyboard is automatically triggered when there's an input needed and no physical keyboard is attached on touch-enabled devices. You don't need to configure any other setting to enforce this behavior.
 
 
 <!--
