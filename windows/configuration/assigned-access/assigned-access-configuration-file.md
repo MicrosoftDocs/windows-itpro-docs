@@ -1,7 +1,6 @@
 ---
 title: Create an Assigned Access configuration file
-description: Learn how to create an XML file to configure a kiosk device.
-ms.date: 02/26/2024
+description: Learn how to create an XML file to configure Assigned Access.
 ms.topic: how-to
 zone_pivot_groups: windows-versions-11-10
 appliesto:
@@ -9,78 +8,39 @@ appliesto:
 
 # Create an Assigned Access configuration XML file
 
-The multi-app kiosk experience is defined in an Assigned Access Configuration XML file. In this section, we will go through the process to create a XML file that contains all the lockdown entries available for customization.
+To configure Assigned Access, you must create and apply a configuration XML file to your devices. The configuration file must conform to a *schema*, as defined in [Assigned Access XML Schema Definition (XSD)](assigned-access-xsd.md).
 
-Let's start by looking at the basic structure of the XML file.
+This article describes how to configure an Assigned Access configuration file, including practical examples.
 
-- A configuration xml can define multiple `profiles`. Each profile has a *profile Id* and defines a set of applications that are allowed to run
-- A configuration xml can have multiple `configs`. Each config associates a non-admin user account to a default profile Id
-- A profile has no effect if it's not associated to a user account
+Let's start by looking at the basic structure of the XML file. An Assigned Access configuration file contains:
 
-You can start your file by pasting the following XML code into a text editor, and saving the file with an xml extension. For example, `kiosk.xml`.
+- One or multiple `profiles`. Each `profile` defines a set of applications that are allowed to run
+- One or multiple `configs`. Each `config` associates a non-admin user account to a `profile`
 
-::: zone pivot="windows-11"
+> [!NOTE]
+> A profile has no effect if it's not associated to a user account.
+
+Here's a basic example of an Assigned Access configuration file, with one profile and one config:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
+<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
     <Profiles>
-        <Profile Id="">
-            <AllAppsList>
-                <AllowedApps/>
-            </AllAppsList>
-            <StartLayout/>
-            <Taskbar/>
-            <v5:TaskbarLayout>
+        <Profile Id="GUID">
+            ...
         </Profile>
     </Profiles>
     <Configs>
         <Config>
-            <Account/>
-            <DefaultProfile Id=""/>
+            ...
         </Config>
     </Configs>
 </AssignedAccessConfiguration>
 ```
 
-::: zone-end
+## Profiles
 
-::: zone pivot="windows-10"
-
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
-    <Profiles>
-        <Profile Id="">
-            <AllAppsList>
-                <AllowedApps/>
-            </AllAppsList>
-            <StartLayout/>
-            <Taskbar/>
-        </Profile>
-    </Profiles>
-    <Configs>
-        <Config>
-            <Account/>
-            <DefaultProfile Id=""/>
-        </Config>
-    </Configs>
-</AssignedAccessConfiguration>
-```
-
-::: zone-end
-
-## Profiles node
-
-An Assigned Access configuration file can contain one or more profiles. Each profile is identified by a unique identified `Profile Id`, for example:
+An configuration file can contain one or more profiles. Each profile is identified by a unique identified `Profile Id`, for example:
 
 ```xml
 <Profiles>
@@ -90,61 +50,90 @@ An Assigned Access configuration file can contain one or more profiles. Each pro
 </Profiles>
 ```
 
-There are two types of profiles that you can specify in the XML:
+> [!TIP]
+> The `Profile Id` must be unique within the XML file. You can generate a GUID with the PowerShell cmdlet `New-Guid`.
+
+A profile is also identified by a `Type` attribute, which can be `AllAppList` or `KioskModeApp`.
 
 - `AllAppList` is used to configure a restricted user experience. Users assigned this profile access the desktop with the specific apps on the Start menu
-- `KioskModeApp`: is used to configure a kiosk experience. Users assigned this profile don't access the desktop, but only the UWP application or Microsoft Edge running in full-screen
+- `KioskModeApp`: is used to configure a kiosk experience. Users assigned this profile don't access the desktop, but only the UWP application or Microsoft Edge running in full-screen aove the Lock screen
 
-### AllAppList profile
-
-An `AllAppList` profile has the following properties:
+The following table describes the profile types and their properties:
 
 ::: zone pivot="windows-11"
 
-- `Id` (required)
-- `Name` (optional)
-- `AllowedApps`
-- `StartPins`
-- `TaskbarLayout`
+| Profile type | Properties|
+|-|-|
+|`AllAppList`| -`Id` (required)<br>- `Name` (optional)<br>- `AllowedApps`<br>- `StartPins`<br>- `TaskbarLayout`|
+|`KioskModeApp`| -`Id` (required)<br>- `Name` (optional)<br>- `KioskModeApp` (required)|
 
 ::: zone-end
 
 ::: zone pivot="windows-10"
 
-- `Id` (required)
-- `Name` (optional)
-- `AllowedApps`
-- `StartLayout`
-- `Taskbar`
-- `FileExplorerNamespaceRestrictions`
+| Profile type | Properties|
+|-|-|
+|`AllAppList`| - `Id` (required)<br>- `Name` (optional)<br>- `AllowedApps`<br>- `StartLayout`<br>- `Taskbar`<br>-`FileExplorerNamespaceRestrictions`|
+|`KioskModeApp`| -`Id` (required)<br>- `Name` (optional)<br>- `KioskModeApp` (required)|
 
 ::: zone-end
 
-### KioskModeApp profile
-
-A `KioskModeApp` profile contains the following properties:
-
-- `Id` (required)
-- `Name` (optional)
-- `KioskModeApp` (required)
-
-Example:
+Kiosk example:
 
 ```xml
 <Profiles>
     <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" Name="Microsoft Learn example">
-        <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" v4:ClassicAppArguments="--kiosk https://www.contoso.com/ --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2" />
-        <v4:BreakoutSequence Key="Ctrl+A"/>
+        <KioskModeApp ... />
     </Profile>
 </Profiles>
 ```
 
-In the XML file, you define each profile with a globally unique identifier (GUID), which must be unique within the XML file.
+::: zone pivot="windows-11"
 
-> [!TIP]
-> You can generate a GUID with the PowerShell cmdlet `New-Guid`.
+Restricted user experience example:
 
+```xml
+<Profiles>
+    <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" Name="Microsoft Learn example">
+        <AllAppsList>
+            <AllowedApps>
+                [...]
+            </AllowedApps>
+        </AllAppsList>
+        <StartPins>
+        </StartPins>
+        <TaskbarLayout>
+            [...]
+        </TaskbarLayout>
+    </Profile>
+</Profiles>
+```
 
+::: zone-end
+
+::: zone pivot="windows-10"
+
+Restricted user experience example:
+
+```xml
+<Profiles>
+    <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" Name="Microsoft Learn example">
+        <AllAppsList>
+            <AllowedApps>
+                [...]
+            </AllowedApps>
+        </AllAppsList>
+        <rs5:FileExplorerNamespaceRestrictions>
+            [...]
+        </rs5:FileExplorerNamespaceRestrictions>
+        <StartLayout>
+        </StartLayout>
+        <Taskbar [...]/>
+    </Profile>
+</Profiles>
+```
+
+::: zone-end
 
 A *profile node* contains the following properties:
 
