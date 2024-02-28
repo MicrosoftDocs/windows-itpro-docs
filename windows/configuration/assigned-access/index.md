@@ -62,8 +62,7 @@ There are several kiosk configuration methods that you can choose from, dependin
 >[!IMPORTANT]
 >Single-app kiosk mode isn't supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk.
 
-[!INCLUDE [assigned-access-kiosk-mode](../../../includes/licensing/assigned-access.md)]
-[!INCLUDE [assigned-access-kiosk-mode](../../../includes/licensing/shell-launcher.md)]
+[!INCLUDE [assigned-access](../../../includes/licensing/assigned-access.md)]
 
 ## Summary of configuration methods
 

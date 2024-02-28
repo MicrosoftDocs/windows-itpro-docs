@@ -103,6 +103,34 @@ The `Shell` node defines the application that executes when the user signs in:
 </ShellLauncherConfiguration>
 ```
 
+## Default action, custom action, exit code
+
+Shell Launcher defines four actions to handle app exits. You can customize Shell Launcher and use the actions based on different exit code.
+
+| Value | Description |
+|--|--|
+| 0 | Restart the shell |
+| 1 | Restart the device |
+| 2 | Shut down the device |
+| 3 | Do nothing |
+
+These actions can be used as default action, or can be mapped to a specific exit code. Refer to [Shell Launcher](/windows-hardware/customize/enterprise/wesl-usersettingsetcustomshell) to see how these codes with Shell Launcher WMI.
+
+To configure these actions with Shell Launcher CSP, use below syntax in the Shell Launcher configuration xml. You can specify at most four custom actions mapping to four exit codes, and one default action for all other exit codes. When app exits and if the exit code is not found in the custom action mapping, or there is no default action defined, it will be no-op, i.e. nothing happens. So it's recommended to at least define DefaultAction. [Get XML examples for different Shell Launcher v2 configurations.](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2)
+
+``` xml
+<ReturnCodeActions>
+    <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
+    <ReturnCodeAction ReturnCode="-1" Action="RestartDevice"/>
+    <ReturnCodeAction ReturnCode="255" Action="ShutdownDevice"/>
+    <ReturnCodeAction ReturnCode="1" Action="DoNothing"/>
+</ReturnCodeActions>
+<DefaultAction Action="RestartDevice"/>
+```
+
+## AllAppsFullScreen
+
+In the XML for Shell Launcher v2, note the **AllAppsFullScreen** attribute. When set to **True**, Shell Launcher will run every app in full screen, or maximized for desktop apps. When this attribute is set to **False** or not set, only the custom shell app runs in full screen; other apps launched by the user will run in windowed mode.
 
 ### AppType
 
