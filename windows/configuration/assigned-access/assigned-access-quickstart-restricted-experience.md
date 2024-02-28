@@ -36,6 +36,7 @@ The examples can be modified to fit your specific requirements. For example, you
 >
 > When using this call, authenticate to your tenant in the Graph Explorer window. If it's the first time using Graph Explorer, you may need to authorize the application to access your tenant or to modify the existing permissions. This graph call requires *DeviceManagementConfiguration.ReadWrite.All* permissions.
 
+<!--
 ::: zone pivot="windows-11"
 [!INCLUDE [assigned-access-quickstart-restricted-experience-intune-11.md](includes/assigned-access-quickstart-restricted-experience-intune-11.md)]
 ::: zone-end
@@ -43,6 +44,10 @@ The examples can be modified to fit your specific requirements. For example, you
 ::: zone pivot="windows-10"
 [!INCLUDE [assigned-access-quickstart-restricted-experience-intune-10.md](includes/assigned-access-quickstart-restricted-experience-intune-10.md)]
 ::: zone-end
+-->
+
+[!INCLUDE [assigned-access-quickstart-restricted-experience-intune.md](includes/assigned-access-quickstart-restricted-experience-intune.md)]
+
 
 [!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
 
