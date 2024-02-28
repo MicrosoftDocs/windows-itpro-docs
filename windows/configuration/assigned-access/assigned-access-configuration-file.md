@@ -207,20 +207,15 @@ The following example allows Calculator, Photos, Weather, Calculator, Command Pr
 </AllowedApps>
 ```
 
+### Start menu customizations
+
+After the definition of allowed applications, customize the Start layout for the kiosk experience. You can choose to pin all the allowed applications on the Start menu, or a subset. The easiest way to create a customized Start layout is to configure the Start menu on a test device and then export the layout.
+
 ::: zone pivot="windows-10"
 
-### StartLayout node
+To learn more, see [Customize the Start menu](../start/customize-and-export-start-layout.md)
 
-After the definition of allowed applications, customize the Start layout for the kiosk experience. You can choose to pin all the allowed applications on the Start menu, or a subset.
-
-The easiest way to create a customized Start layout is to configure the Start menu on a test device and then export the layout. For detailed steps, refer to Customize and export Start layout.
-
-> [!NOTE]
-> - The test device on which you customize the Start layout should have the same OS version that is installed on the device where you plan to deploy the Assigned Access configuration
-> - There are no apps pinned on the taskbar in the multi-app mode, and it's not supported to configure Taskbar layout using the `<CustomTaskbarLayoutCollection>` tag in a layout modification XML as part of the Assigned Access configuration
-
-The following example pins Calculator, Photos, Weather, Calculator, Command Prompt, and Windows PowerShell apps to the Start menu.
-
+The following example pins a few apps to the Start menu:
 
 ```xml
 <StartLayout>
@@ -255,11 +250,9 @@ The following example pins Calculator, Photos, Weather, Calculator, Command Prom
 
 ::: zone pivot="windows-11"
 
-### StartPins node
+To learn more, see [Customize the Start menu](../start/customize-start-menu-layout-windows-11.md)
 
-After you define the list of allowed applications, you can customize the Start layout for your kiosk experience. The easiest way to create a customized Start layout to apply to other Windows client devices is to set up the Start screen on a test device and then export the layout. Once you've decided, you can get the JSON needed for your kiosk configuration by following the steps to [Get the pinnedList JSON](../start/customize-and-export-start-layout.md). If you opt to do this using the PowerShell command, make sure that the system you run the command on has the same file structure as the device on which you'll apply the kiosk (the path to the allowed apps must be the same). At the end of this step, you should have a JSON pinnedList that looks something like the below.
-
-Add your pinnedList JSON into the StartPins tag in your XML file.
+The following example pins a few apps to the Start menu:
 
 ```xml
 <v5:StartPins>
@@ -280,21 +273,19 @@ Add your pinnedList JSON into the StartPins tag in your XML file.
 </v5:StartPins>
 ```
 
-### TaskbarLayout node
-
+Add your pinnedList JSON into the StartPins tag in your XML file.
 
 ::: zone-end
 
-> [!NOTE]
-> If an app isn't installed for the user, but is included in the Start layout XML, the app isn't shown on the Start screen.
+### Taskbar customizations
 
 ::: zone pivot="windows-10"
 
-### Taskbar
+You can't pin apps on the taskbar in a restricted user experience, and it's not supported to configure a Taskbar layout using the `<CustomTaskbarLayoutCollection>` tag in a layout modification XML as part of the Assigned Access configuration.
 
-Define whether you want to have the taskbar present in the kiosk device. For tablet-based or touch-enabled All-In-One kiosks, when you don't attach a keyboard and mouse, you can hide the taskbar as part of the multi-app experience if you want.
+The only Taskbar customization available in Windows 10 is the possiblity to show or hide it, using the `ShowTaskbar` boolean attribute.
 
-The following example exposes the taskbar to the end user:
+The following example exposes the taskbar:
 
 ```xml
 <Taskbar ShowTaskbar="true"/>
@@ -307,9 +298,49 @@ The following example hides the taskbar:
 ```
 
 > [!NOTE]
-> This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden.
+> This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting `ShowTaskbar` as `false` hides the taskbar permanently.
 
 ::: zone-end
+
+::: zone pivot="windows-11"
+
+You can customize the Taskbar by creating a custom layout and adding it to your XML file. To learn more, see [Customize the Taskbar](../taskbar/customize-taskbar-windows-11.md).
+
+> [!NOTE]
+> In Windows 11, the `ShowTaskbar` attribute is no-op. Configure it with a value of `true`.
+
+Here's an example of a custom Taskbar with a few apps pinned:
+
+```xml
+<Taskbar ShowTaskbar="true" />
+<v5:TaskbarLayout><![CDATA[
+  <?xml version="1.0" encoding="utf-8"?>
+  <LayoutModificationTemplate
+      xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+      xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+      xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+      xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+      Version="1">
+  <CustomTaskbarLayoutCollection>
+      <defaultlayout:TaskbarLayout>
+      <taskbar:TaskbarPinList>
+          <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer" />
+          <taskbar:DesktopApp DesktopApplicationID="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
+          <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk"/>
+      </taskbar:TaskbarPinList>
+      </defaultlayout:TaskbarLayout>
+  </CustomTaskbarLayoutCollection>
+  </LayoutModificationTemplate>
+  ]]>
+</v5:TaskbarLayout>
+```
+
+::: zone-end
+
+> [!NOTE]
+> If an app isn't installed for the user, but is included in the Start layout XML, the app isn't shown on the Start screen.
+
+::: zone pivot="windows-10"
 
 ### KioskModeApp
 
@@ -511,7 +542,7 @@ With `GlobalProfile` you can define an Assigned Access profile that is applied t
 
 ::: zone pivot="windows-10"
 
-## File Explorer restrictions
+### File Explorer restrictions
 
 When using Assigned Access, folder browsing is locked down. You can explicitly allow access to known folders when the user tries to open the file dialog box by including the `FileExplorerNamespaceRestrictions` node.
 
