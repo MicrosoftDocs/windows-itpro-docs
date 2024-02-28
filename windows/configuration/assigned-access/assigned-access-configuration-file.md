@@ -335,12 +335,10 @@ Here's an example of a custom Taskbar with a few apps pinned:
 </v5:TaskbarLayout>
 ```
 
-::: zone-end
-
 > [!NOTE]
 > If an app isn't installed for the user, but is included in the Start layout XML, the app isn't shown on the Start screen.
 
-::: zone pivot="windows-10"
+::: zone-end
 
 ### KioskModeApp
 
