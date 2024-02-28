@@ -237,7 +237,7 @@ To configure a device using the Windows PowerShell cmdlet:
 
 For more innformation:
 
-- [Find the Application User Model ID of an installed app](./find-aumid.md)
+- [Find the Application User Model ID of an installed app](../store/find-aumid.md)
 - [Set-AssignedAccess](/powershell/module/assignedaccess/set-assignedaccess)
 
 To remove assigned access, using PowerShell, run the following cmdlet:

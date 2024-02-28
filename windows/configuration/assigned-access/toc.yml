@@ -39,8 +39,6 @@ items:
     href: shell-launcher-configuration-file.md
   - name: Shell Launcher XSD
     href: shell-launcher-xsd.md
-- name: Find the AUMID of an installed app
-  href: find-aumid.md
 - name: Assigned Access CSP 🔗
   href: /windows/client-management/mdm/assignedaccess-csp
 - name: Troubleshoot 🔗

@@ -13,6 +13,8 @@ items:
   items:
   - name: Configure access to the Microsoft Store
     href: store/stop-employees-from-using-microsoft-store.md
+  - name: Find the AUMID of an installed app
+    href: store/find-aumid.md
   - name: Manage Microsoft Store tips, "fun facts", and suggestions
     href: tips/manage-tips-and-suggestions.md
 - name: Windows Spotlight
