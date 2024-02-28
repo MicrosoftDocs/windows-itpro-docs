@@ -1,11 +1,11 @@
 ---
-title: Configure Assigned Access
+title: What is Assigned Access?
 description: Learn how to configure devices with Assigned Access.
 ms.date: 05/12/2023
 ms.topic: how-to
 ---
 
-# Configure Assigned Access
+# What is Assigned Access?
 
 Assigned Access is a Windows feature that you can use to configure a device as a kiosk or restricted user experience.
 

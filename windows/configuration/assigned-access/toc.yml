@@ -3,6 +3,8 @@ items:
   href: index.md
 - name: Assigned Access
   items:
+  - name: What is Assigned Access?
+    href: assigned-access-overview.md
   - name: Quickstarts
     items:
       - name: Configure a kiosk with Assigned Access
@@ -11,16 +13,14 @@ items:
         href: assigned-access-quickstart-restricted-experience.md
   - name: Concepts
     items:
-      - name: Prepare a device for kiosk configuration
-        href: kiosk-prepare.md
       - name: Guidelines for choosing an app for assigned access
         href: guidelines-for-assigned-access-app.md
   - name: How-to guides
     items:
-      - name: Configure devices with Assigned Access
-        href: assigned-access-configure.md
       - name: Create an Assigned Access configuration file
         href: assigned-access-configuration-file.md
+      - name: Prepare a device for kiosk configuration
+        href: kiosk-prepare.md
   - name: Reference
     items:
       - name: Assigned Access XSD
@@ -31,14 +31,12 @@ items:
         href: assigned-access-policy-settings.md
 - name: Shell Launcher
   items:
+  - name: What is Shell Launcher?
+    href: shell-launcher-overview.md
   - name: "Quickstart: Configure a kiosk with Shell Launcher"
     href: shell-launcher-quickstart-kiosk.md
-  - name: How-to guides
-    items:
-    - name: Configure devices with Shell Launcher
-      href: shell-launcher-configure.md
-    - name: Create a Shell Launcher configuration file
-      href: shell-launcher-configuration-file.md
+  - name: Create a Shell Launcher configuration file
+    href: shell-launcher-configuration-file.md
   - name: Shell Launcher XSD
     href: shell-launcher-xsd.md
 - name: Find the AUMID of an installed app

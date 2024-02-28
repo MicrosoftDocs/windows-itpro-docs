@@ -1,11 +1,11 @@
 ---
-title: Configure devices with Shell Launcher
+title: What is Shell Launcher?
 description: Learn how to configure devices with Shell Launcher.
 ms.date: 05/12/2023
-ms.topic: how-to
+ms.topic: overview
 ---
 
-# Configure devices with Shell Launcher
+# What is Shell Launcher?
 
 Shell Launcher is a Windows feature that you can use to replace the default Windows Explorer shell (`explorer.exe`) with the `CustomShellHost.exe` application. CustomShellHost can launch a Windows desktop application or a UWP app.
 
