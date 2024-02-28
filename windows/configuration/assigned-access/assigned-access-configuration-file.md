@@ -40,7 +40,7 @@ Here's a basic example of an Assigned Access configuration file, with one profil
 
 ## Profiles
 
-An configuration file can contain one or more profiles. Each profile is identified by a unique identified `Profile Id`, for example:
+A configuration file can contain one or more profiles. Each profile is identified by a unique identified `Profile Id`, for example:
 
 ```xml
 <Profiles>
@@ -56,7 +56,7 @@ An configuration file can contain one or more profiles. Each profile is identifi
 A profile is also identified by a `Type` attribute, which can be `AllAppList` or `KioskModeApp`.
 
 - `AllAppList` is used to configure a restricted user experience. Users assigned this profile access the desktop with the specific apps on the Start menu
-- `KioskModeApp`: is used to configure a kiosk experience. Users assigned this profile don't access the desktop, but only the UWP application or Microsoft Edge running in full-screen aove the Lock screen
+- `KioskModeApp`: is used to configure a kiosk experience. Users assigned this profile don't access the desktop, but only the UWP application or Microsoft Edge running in full-screen above the Lock screen
 
 The following table describes the profile types and their properties:
 
@@ -163,26 +163,6 @@ Based on the purpose of the kiosk device, define the list of applications that a
 - For desktop apps, specify the AUMID or the full path of the executable, which can contain one or more system environment variables in the form of %variableName%. For example, `%systemroot%` or `%windir%`.
 - If an app has a dependency on another app, both must be included in the allowed apps list. For example, Internet Explorer 64-bit has a dependency on Internet Explorer 32-bit, so you must allow both `"C:\Program Files\internet explorer\iexplore.exe"` and `"C:\Program Files (x86)\Internet Explorer\iexplore.exe"`
 - To configure a single app to launch automatically when the user signs in, include `rs5:AutoLaunch="true"` after the AUMID or path. You can also include arguments to be passed to the app
-
-<!-->
-When the multi-app kiosk configuration is applied to a device, AppLocker rules are generated to allow the apps that are listed in the configuration. Here are the predefined Assigned Access AppLocker rules
-
-For UWP apps,
-
-1. Default rule is to allow all users to launch the signed package apps.
-
-2. The package app deny list is generated at runtime when the Assigned Access user signs in. Based on the installed/provisioned package apps available for the user account, Assigned Access generates the deny list. This list will exclude the default allowed inbox package apps which are critical for the system to function, and then exclude the allowed packages that enterprises defined in the Assigned Access configuration. If there are multiple apps within the same package, all these apps are excluded. This deny list is used to prevent the user from accessing the apps, which are currently available for the user but not in the allowed list.
-
-Note:
-
-Assigned access multi-app mode doesn't block the enterprises or the users from installing UWP apps. When a new UWP app is installed during the current Assigned Access user session, this app won't be in the deny list. When the user signs out and signs in back next time, it will be included in the deny list. If this is an enterprise-deployed line-of-business app and you want to allow it to run, update the Assigned Access configuration to include it in the allowed app list.
-
-For desktop apps,
-
-1. Default rule is to allow all users to launch the desktop programs signed with Microsoft Certificate in order for the system to boot and function. The rule also allows the admin user group to launch all desktop programs. 2. There's a predefined inbox desktop app deny list for the Assigned Access user account, and this deny list is adjusted based on the desktop app allow list that you defined in the multi-app configuration.
-
-3. Enterprise-defined allowed desktop apps are added in the AppLocker allow list.
--->
 
 The following example allows Calculator, Photos, Weather, Calculator, Command Prompt, and Windows PowerShell apps to run on the device.
 
