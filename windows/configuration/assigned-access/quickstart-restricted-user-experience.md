@@ -36,7 +36,7 @@ The examples can be modified to fit your specific requirements. For example, you
 >
 > When using this call, authenticate to your tenant in the Graph Explorer window. If it's the first time using Graph Explorer, you may need to authorize the application to access your tenant or to modify the existing permissions. This graph call requires *DeviceManagementConfiguration.ReadWrite.All* permissions.
 
-[!INCLUDE [assigned-access-quickstart-restricted-experience-intune.md](includes/assigned-access-quickstart-restricted-experience-intune.md)]
+[!INCLUDE [quickstart-restricted-experience-intune.md](includes/quickstart-restricted-experience-intune.md)]
 
 [!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
 
@@ -45,7 +45,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 - **Setting:** `./Vendor/MSFT/AssignedAccess/Configuration`
 - **Value:**
 
-[!INCLUDE [assigned-access-quickstart-restricted-experience-xml.md](includes/assigned-access-quickstart-restricted-experience-xml.md)]
+[!INCLUDE [quickstart-restricted-experience-xml.md](includes/quickstart-restricted-experience-xml.md)]
 
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -54,7 +54,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 - **Path:** `AssignedAccess/MultiAppAssignedAccessSettings`
 - **Value:**
 
-[!INCLUDE [assigned-access-quickstart-restricted-experience-xml.md](includes/assigned-access-quickstart-restricted-experience-xml.md)]
+[!INCLUDE [quickstart-restricted-experience-xml.md](includes/quickstart-restricted-experience-xml.md)]
 
 [!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
@@ -62,7 +62,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 [!INCLUDE [powershell-wmi-bridge-1](../../../includes/configure/powershell-wmi-bridge-1.md)]
 
-[!INCLUDE [assigned-access-quickstart-restricted-experience-ps.md](includes/assigned-access-quickstart-restricted-experience-ps.md)]
+[!INCLUDE [quickstart-restricted-experience-ps.md](includes/quickstart-restricted-experience-ps.md)]
 
 [!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
 
@@ -85,9 +85,9 @@ After the settings are applied, reboot the device. A local user account is autom
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Learn more how to configure Windows to run a single app or multiple apps with Assigned Access:
+> Learn more about Assigned Access and how to configure it:
 >
-> [Configure Assigned Access](assigned-access-configure.md)
+> [Assigned Access overview](overview.md)
 
 <!--links-->
 

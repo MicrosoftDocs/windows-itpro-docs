@@ -8,7 +8,7 @@ appliesto:
 
 # Create an Assigned Access configuration XML file
 
-To configure Assigned Access, you must create and apply a configuration XML file to your devices. The configuration file must conform to a *schema*, as defined in [Assigned Access XML Schema Definition (XSD)](assigned-access-xsd.md).
+To configure Assigned Access, you must create and apply a configuration XML file to your devices. The configuration file must conform to a *schema*, as defined in [Assigned Access XML Schema Definition (XSD)](xsd.md).
 
 This article describes how to configure an Assigned Access configuration file, including practical examples.
 
@@ -583,4 +583,4 @@ Either don't use the node or leave it empty
 > [!div class="nextstepaction"]
 > Review some practical examples of Assigned Access XML configurations:
 >
-> [Assigned Access examples](assigned-access-examples.md)
+> [Assigned Access examples](examples.md)

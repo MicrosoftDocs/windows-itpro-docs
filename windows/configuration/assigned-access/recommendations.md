@@ -1,11 +1,11 @@
 ---
-title: Prepare a device for kiosk configuration
-description: Learn how to prepare a device for kiosk configuration. Also, learn about the recommended kiosk configuration changes.
+title: Assigned Access recommendations
+description: Learn about the recommended kiosk and restricted useer experience configuration options.
 ms.topic: article
-ms.date: 12/31/2017
+ms.date: 2/29/2024
 ---
 
-# Prepare a device for kiosk configuration
+# Assigned Access recommendations
 
 ## Before you begin
 
@@ -174,7 +174,7 @@ For a more secure kiosk experience, we recommend that you make the following con
 
 Logs can help you [troubleshoot issues](/troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting) kiosk issues. Logs about configuration and runtime issues can be obtained by enabling the **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational** channel, which is disabled by default.
 
-:::image type="content" source="images/enable-assigned-access-log.png" alt-text="On Windows client, open Event Viewer, right-click Operational, select enable log to turn on logging to help troubleshoot.":::
+:::image type="content" source="images/enable-log.png" alt-text="On Windows client, open Event Viewer, right-click Operational, select enable log to turn on logging to help troubleshoot.":::
 
 ## Automatic logon
 

@@ -43,14 +43,14 @@ To configure a restricted user experience you use a feature called **Assgined Ac
 Carefully evaluate all applications that users should use. If applications require user authentication, don't use a local or generic
 user account. Rather, target the group of users within the Assigned Access configuration file.
 
-A multi-app kiosk is appropriate for devices that are shared by multiple people. When you configure a multi-app kiosk, [specific policies are enforced](kiosk-policies.md) that affects **all** non-administrator users on the device.
+A multi-app kiosk is appropriate for devices that are shared by multiple people. When you configure a multi-app kiosk, certain policy settings that affects **all** non-administrator users on the device. For a list of these policies, see [Assigned Access policy settings](policy-settings.md)
 
 Kiosk configurations are based on **Assigned Access**, a feature in Windows client that allows an administrator to manage the user's experience by limiting the application entry points exposed to the user.
 
 There are several kiosk configuration methods that you can choose from, depending on your answers to the following questions.
 
 - **Which type of app will your kiosk run?**
-  Your kiosk can run a Universal Windows Platform (UWP) app or a Windows desktop application. For [digital signage](setup-digital-signage.md), select a digital sign player as your kiosk app. [Check out the guidelines for kiosk apps.](guidelines-for-assigned-access-app.md)
+  Your kiosk can run a Universal Windows Platform (UWP) app or a Windows desktop application. For [digital signage](setup-digital-signage.md), select a digital sign player as your kiosk app. [Check out the guidelines for kiosk apps.](guidelines-for-app.md)
 - **Which type of kiosk do you need?**
   If you want your kiosk to run a single app for anyone to see or use, consider a single-app kiosk that runs either a [Universal Windows Platform (UWP) app](#methods-for-a-single-app-kiosk-running-a-uwp-app) or a Windows desktop application. For a kiosk that people can sign in to with their accounts or that runs more than one app, choose a multi-app kiosk
 - **Which edition of Windows client will the kiosk run?**

@@ -747,57 +747,57 @@
     },
     {
       "source_path": "windows/configuration/kiosk/lock-down-windows-10-to-specific-apps.md",
-      "redirect_url": "/windows/configuration/kiosk/create-xml",
+      "redirect_url": "/windows/configuration/assigned-access/configuration-file",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/kiosk/lock-down-windows-11-to-specific-apps.md",
-      "redirect_url": "/windows/configuration/kiosk/create-xml",
+      "redirect_url": "/windows/configuration/assigned-access/create-xml",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/kiosk/kiosk-additional-reference.md",
-      "redirect_url": "/windows/configuration/kiosk",
+      "redirect_url": "/windows/configuration/assigned-access",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/kiosk/kiosk-mdm-bridge.md",
-      "redirect_url": "/windows/configuration/kiosk/assigned-access-quickstart-kiosk",
+      "redirect_url": "/windows/configuration/assigned-access/quickstart-kiosk",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/kiosk/kiosk-policies.md",
-      "redirect_url": "/windows/configuration/kiosk/assigned-access-policy-settings",
+      "redirect_url": "/windows/configuration/assigned-access/policy-settings",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/kiosk/kiosk-shelllauncher.md",
-      "redirect_url": "/windows/configuration/kiosk/shell-launcher-configure",
+      "redirect_url": "/windows/configuration/assigned-access/shell-launcher",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/kiosk/kiosk-validate.md",
-      "redirect_url": "/windows/configuration/kiosk",
+      "redirect_url": "/windows/configuration/assigned-access/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/kiosk/kiosk-xml.md",
-      "redirect_url": "/windows/configuration/kiosk/assigned-access-configuration-file",
+      "redirect_url": "/windows/configuration/assigned-access/configuration-file",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/kiosk/setup-digital-signage.md",
-      "redirect_url": "/windows/configuration/kiosk/assigned-access-configure",
+      "redirect_url": "/windows/configuration/assigned-access/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/kiosk/kiosk-single-app.md",
-      "redirect_url": "/windows/configuration/kiosk/assigned-access-configure",
+      "redirect_url": "/windows/configuration/assigned-access/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/kiosk/kiosk-methods.md",
-      "redirect_url": "/windows/configuration/kiosk",
+      "redirect_url": "/windows/configuration/assigned-access",
       "redirect_document_id": false
     }
   ]

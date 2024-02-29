@@ -22,13 +22,7 @@ Methods of controlling access to other desktop applications and system component
 - Group policy (GPO)
 - [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)
 
-## Windows edition requirements
-
-The following table lists the Windows editions that support Shell Launcher:
-
-|Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
-|:---:|:---:|:---:|:---:|
-|No|Yes|No|Yes|
+[!INCLUDE [shell-launcher](../../../..includes/licensing/shell-launcher.md)]
 
 ## Limitations
 
@@ -39,7 +33,7 @@ Here are some limitations to consider when using Shell Launcher:
 
 ## Configure a device with Shell Launcher
 
-[!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
+[!INCLUDE [tab-intro](../../../..includes/configure/tab-intro.md)]
 
 #### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 

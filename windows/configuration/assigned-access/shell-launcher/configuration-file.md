@@ -191,7 +191,7 @@ Allowed values are `Desktop` and `UWP`.
 
 ## Kiosk example
 
-[!INCLUDE [shell-launcher-quickstart-xml](includes/shell-launcher-quickstart-xml.md)]
+[!INCLUDE [quickstart-xml](..includes/quickstart-xml.md)]
 
 
 

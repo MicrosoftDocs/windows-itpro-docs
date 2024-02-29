@@ -13,22 +13,22 @@ This artcile contains examples of XML files to configure a device with Assigned 
 
 To learn more:
 
-- [Create an Assigned Access configuration XML file](assigned-access-configuration-file.md).
-- [Assigned Access XML Schema Definition (XSD)](assigned-access-xsd.md).
+- [Create an Assigned Access configuration XML file](configuration-file.md).
+- [Assigned Access XML Schema Definition (XSD)](xsd.md).
 
 ## Kiosk experience with Microsoft Edge example
 
-[!INCLUDE [assigned-access-example-kiosk-edge](includes/assigned-access-example-kiosk-edge.md)]
+[!INCLUDE [example-kiosk-edge](includes/example-kiosk-edge.md)]
 
 ## Kiosk experience with UWP app example
 
-[!INCLUDE [assigned-access-example-kiosk-uwp](includes/assigned-access-example-kiosk-uwp.md)]
+[!INCLUDE [example-kiosk-uwp](includes/example-kiosk-uwp.md)]
 
 ::: zone pivot="windows-10"
 
 ## File Explorer restrictions example
 
-[!INCLUDE [assigned-access-example-file-explorer-restrictions](includes/assigned-access-example-file-explorer-restrictions.md)]
+[!INCLUDE [example-file-explorer-restrictions](includes/example-file-explorer-restrictions.md)]
 
 ::: zone-end
 
@@ -36,10 +36,10 @@ To learn more:
 
 The following configuration demonstrates that only a global profile is used, with no user configured.
 
-[!INCLUDE [assigned-access-example-global-profile](includes/assigned-access-example-global-profile.md)]
+[!INCLUDE [example-global-profile](includes/example-global-profile.md)]
 
 ## User Group example
 
 The following configuration demonstrates how to assign profiles to different users and groups, including a user configured to automatically sign in.
 
-[!INCLUDE [assigned-access-example-usergroup](includes/assigned-access-example-usergroup.md)]
+[!INCLUDE [example-usergroup](includes/example-usergroup.md)]
