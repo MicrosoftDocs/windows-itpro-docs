@@ -174,7 +174,7 @@ For a more secure kiosk experience, we recommend that you make the following con
 
 Logs can help you [troubleshoot issues](/troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting) kiosk issues. Logs about configuration and runtime issues can be obtained by enabling the **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational** channel, which is disabled by default.
 
-:::image type="content" source="images/enable-log.png" alt-text="On Windows client, open Event Viewer, right-click Operational, select enable log to turn on logging to help troubleshoot.":::
+:::image type="content" source="images/enable-assigned-access-log.png" alt-text="On Windows client, open Event Viewer, right-click Operational, select enable log to turn on logging to help troubleshoot.":::
 
 ## Automatic logon
 
@@ -182,9 +182,6 @@ You may also want to set up **automatic logon** for your kiosk device. When your
 
 > [!NOTE]
 > If you are using a Windows client device restriction CSP to set "Preferred Microsoft Entra tenant domain", this will break the "User logon type" auto-login feature of the Kiosk profile.
-
-> [!TIP]
-> If you use the [kiosk wizard in Windows Configuration Designer](kiosk-single-app.md) or [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) to configure your kiosk, you can set an account to sign in automatically in the wizard or XML.
 
 How to edit the registry to have an account sign in automatically:
 

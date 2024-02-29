@@ -16,7 +16,7 @@ items:
       - name: Create an Assigned Access configuration file
         href: configuration-file.md
       - name: Prepare a device for kiosk configuration
-        href: kiosk-prepare.md
+        href: recommendations.md
   - name: Reference
     items:
       - name: Assigned Access XSD

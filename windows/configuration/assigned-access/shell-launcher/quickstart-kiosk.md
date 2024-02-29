@@ -63,7 +63,7 @@ After the settings are applied, reboot the device. A local user account is autom
 > [!div class="nextstepaction"]
 > Learn more how to create a Shell Launcher configuration file:
 >
-> [Create a Shell Launcher configuration file](create-configuration.md)
+> [Create a Shell Launcher configuration file](configuration-file.md)
 
 <!--links-->
 

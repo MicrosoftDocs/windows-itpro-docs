@@ -347,7 +347,7 @@
     },
     {
       "source_path": "windows/configuration/kiosk-prepare.md",
-      "redirect_url": "/windows/configuration/kiosk/kiosk-prepare",
+      "redirect_url": "/windows/configuration/kiosk/recommendations",
       "redirect_document_id": false
     },
     {
@@ -798,6 +798,11 @@
     {
       "source_path": "windows/configuration/kiosk/kiosk-methods.md",
       "redirect_url": "/windows/configuration/assigned-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/guidelines-for-assigned-access-app.md",
+      "redirect_url": "/windows/configuration/assigned-access/overview",
       "redirect_document_id": false
     }
   ]

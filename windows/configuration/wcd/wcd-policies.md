@@ -295,7 +295,7 @@ This section describes the **Policies** settings that you can configure in [prov
 
 ## KioskBrowser
 
-These settings apply to the **Kiosk Browser** app available in Microsoft Store. For more information, see [Guidelines for web browsers](../kiosk/guidelines-for-assigned-access-app.md#guidelines-for-web-browsers).
+These settings apply to the **Kiosk Browser** app available in Microsoft Store.
 
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: |

@@ -72,7 +72,7 @@ Here are the steps to configure a kiosk using the Settings app:
     >[!NOTE]
     >If there are any local standard user accounts already, the **Create an account** dialog offers the option to **Choose an existing account**
 
-1. Choose the application to run when the kiosk account signs in. Only apps that can run above the lock screen will be available in the list of apps to choose from. For more information, see [Guidelines for choosing an app for assigned access](guidelines-for-app.md). If you select **Microsoft Edge** as the kiosk app, you configure the following options:
+1. Choose the application to run when the kiosk account signs in. Only apps that can run above the lock screen will be available in the list of apps to choose from. If you select **Microsoft Edge** as the kiosk app, you configure the following options:
 
     - Whether Microsoft Edge should display your website full-screen (digital sign) or with some browser controls available (public browser)
     - Which URL should be open when the kiosk accounts signs in
@@ -290,9 +290,6 @@ An Assigned Access multi-app kiosk runs one or more apps from the desktop. Peopl
 
 > [!WARNING]
 > The Assigned Access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app Assigned Access configuration is applied on the device, [certain policy settings](policy-settings.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the Assigned Access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
-
-> [!TIP]
-> Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
 ### Provisioning package
 

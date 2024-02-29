@@ -42,7 +42,7 @@ Here are the steps to configure a kiosk using the Settings app:
     >[!NOTE]
     >If there are any local standard user accounts already, the **Create an account** dialog offers the option to **Choose an existing account**
 
-1. Choose the application to run when the kiosk account signs in. Only apps that can run above the lock screen will be available in the list of apps to choose from. For more information, see [Guidelines for choosing an app for assigned access](guidelines-for-app.md). If you select **Microsoft Edge** as the kiosk app, you configure the following options:
+1. Choose the application to run when the kiosk account signs in. Only apps that can run above the lock screen will be available in the list of apps to choose from. If you select **Microsoft Edge** as the kiosk app, you configure the following options:
 
     - Whether Microsoft Edge should display your website full-screen (digital sign) or with some browser controls available (public browser)
     - Which URL should be open when the kiosk accounts signs in
