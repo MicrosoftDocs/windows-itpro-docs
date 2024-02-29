@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.collection:
   - highpri
   - tier2
-ms.date: 02/13/2024
+ms.date: 02/29/2024
 zone_pivot_groups: windows-versions-11-10
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -65,7 +65,7 @@ To update contact information and resend the activation email, use the following
 
 1. Update the contact information, then select **Update Contact Details**. This action triggers a new email.
 
-## Preparing for deployment: reviewing requirements
+## Prepare for deployment: reviewing requirements
 
 - Devices must be running a supported version of Windows Pro.
 - Microsoft Entra joined, or hybrid domain joined with Microsoft Entra Connect. Customers who are federated with Microsoft Entra ID are also eligible.
@@ -82,7 +82,7 @@ For more information about integrating on-premises AD DS domains with Microsoft 
 - [What is hybrid identity with Microsoft Entra ID?](/azure/active-directory/hybrid/whatis-hybrid-identity)
 - [Microsoft Entra Connect and Microsoft Entra Connect Health installation roadmap](/azure/active-directory/hybrid/how-to-connect-install-roadmap)
 
-## Assigning licenses to users
+## Assign licenses to users
 
 After the Windows subscription is ordered, an email is sent with guidance on how to use Windows as an online service. The following methods are available to assign licenses:
 
@@ -368,11 +368,11 @@ In some instances, users might experience problems with activation of the Window
 - The Windows Enterprise E3 or E5 subscription has lapsed, was removed, or isn't applied.
 - Windows Pro was never activated.
 
-When there are problems with Windows Enterprise E3 or E5 subscription activation, the following are errors can occur in the [Activation](ms-settings:activation) pane:
+When there are problems with Windows Enterprise E3 or E5 subscription activation, the following are errors can occur in the [**Activation**](ms-settings:activation) pane:
 
 - **Windows Pro isn't activated**
 
-  When Windows Pro isn't activated on a device, the following message is displayed for **Activation** in the [Activation](ms-settings:activation) pane:
+  When Windows Pro isn't activated on a device, the following message is displayed for **Activation** in the [**Activation**](ms-settings:activation) pane:
 
   `Windows is not activated`
 
@@ -389,7 +389,7 @@ When there are problems with Windows Enterprise E3 or E5 subscription activation
 
 - **Windows Enterprise subscription isn't active**
 
-  When a device with a Windows Enterprise subscription has lapsed or has been removed, the following message is displayed for **Subscription** in the [Activation](ms-settings:activation) pane:
+  When a device with a Windows Enterprise subscription has lapsed or has been removed, the following message is displayed for **Subscription** in the [**Activation**](ms-settings:activation) pane:
 
   `Windows Enterprise subscription isn't valid.`
 
@@ -482,9 +482,24 @@ Use the following guides to verify each one of these requirements:
 
 - **Make sure the Microsoft Entra user has been assigned a license**.
 
-  For more information, see [Assigning licenses to users](#assigning-licenses-to-users).
+  For more information, see [Assigning licenses to users](#assign-licenses-to-users).
 
 ## Known issues
+
+- When a device has been offline for an extended period of time, the Subscription Activation might not reactivate automatically on the device. To resolve this issue, use Conditional Access policies to control access by excluding one of the following cloud apps from their Conditional Access policies using **Select Excluded Cloud Apps**:
+
+  - [Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
+  - [Windows Store for Business, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
+
+  Although the app ID is the same in both instances, the name of the cloud app depends on the tenant.
+
+  For more information about configuring exclusions in Conditional Access policies, see [Application exclusions](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa#application-exclusions).
+
+  <!-- 8605089 -->
+
+  Setting this Conditional Access policy ensures that Subscription Activation continues to work seamlessly.
+
+  Starting with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later, users are prompted for authentication with a toast notification when Subscription Activation needs to reactivate. The prompt for authentication usually occurs when a device has been offline for an extended period of time. This change eliminates the need for an exclusion in the Conditional Access policy for Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later. A Conditional Access policy can still be used with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later if the prompt for user authentication via a toast notification isn't desired.
 
 - If a device isn't able to connect to Windows Update, it can lose activation status or be blocked from upgrading to Windows Enterprise. Make sure that Windows Update isn't blocked on the device:
 
@@ -528,6 +543,7 @@ Subscriptions to Windows Enterprise are also available for virtualized clients. 
 
 Virtual machines (VMs) must be configured to enable Windows Enterprise subscriptions for VDA. Active Directory-joined and Microsoft Entra joined clients are supported. For more information, see [Enable VDA for Enterprise subscription activation](vda-subscription-activation.md).
 
-## Related articles
+## Related content
 
+- [Windows subscription activation](windows-subscription-activation.md).
 - [MDM enrollment of Windows devices](/windows/client-management/mdm-enrollment-of-windows-devices).
