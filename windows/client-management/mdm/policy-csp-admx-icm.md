@@ -1,7 +1,7 @@
 ---
 title: ADMX_ICM Policy CSP
 description: Learn more about the ADMX_ICM Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 02/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -843,7 +843,7 @@ Also see the "Configure Error Reporting", "Display Error Notification" and "Disa
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove access to Windows Update.
 
-- If you enable this policy setting, all Windows Update features are removed. This includes blocking access to the Windows Update website at <https://windowsupdate.microsoft.com>, from the Windows Update hyperlink on the Start menu, and also on the Tools menu in Internet Explorer. Windows automatic updating is also disabled; you'll neither be notified about nor will you receive critical updates from Windows Update. This policy setting also prevents Device Manager from automatically installing driver updates from the Windows Update website.
+- If you enable this policy setting, all Windows Update features are removed. This includes blocking access to the Windows Update website at `https://windowsupdate.microsoft.com`, from the Windows Update hyperlink on the Start menu, and also on the Tools menu in Internet Explorer. Windows automatic updating is also disabled; you'll neither be notified about nor will you receive critical updates from Windows Update. This policy setting also prevents Device Manager from automatically installing driver updates from the Windows Update website.
 
 - If you disable or don't configure this policy setting, users can access the Windows Update website and enable automatic updating to receive notifications and critical updates from Windows Update.
 
