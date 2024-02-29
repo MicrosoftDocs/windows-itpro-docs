@@ -35,7 +35,7 @@ The examples can be modified to fit your specific requirements. For example, you
 
 [!INCLUDE [quickstart-intune](includes/quickstart-intune.md)]
 
-[!INCLUDE [intune-custom-settings-2](../../../../includes/configure/intune-custom-settings-2.md)]
+Assign the policy to a group that contains as members the devices that you want to configure.
 
 Alternatively, you can configure devices using a [custom policy][MEM-1] with the [AssignedAccess CSP][WIN-3].
 

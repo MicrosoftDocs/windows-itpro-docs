@@ -53,6 +53,8 @@ You can configure devices using a [custom policy][MEM-1] with the [AssignedAcces
 - **Setting:** `./Vendor/MSFT/AssignedAccess/ShellLauncher`
 - **Value:** content of the XML configuration file
 
+Assign the policy to a group that contains as members the devices that you want to configure.
+
 #### [:::image type="icon" source="../../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
 [!INCLUDE [provisioning-package-1](../../../../includes/configure/provisioning-package-1.md)]
@@ -93,6 +95,10 @@ Depending on your configuration, you can have a user to automatically sign in to
 ## Next steps
 
 > [!div class="nextstepaction"]
-> To learn how to configure the Shell Launcher XML file:
+> Learn how to configure the Shell Launcher XML file:
 >
 > [Create a Shell Launcher configuration file](configuration-file.md)
+
+<!--links-->
+
+[MEM-1]: /mem/intune/configuration/custom-settings-windows-10

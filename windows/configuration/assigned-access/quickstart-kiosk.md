@@ -61,14 +61,14 @@ Here are the steps to configure a kiosk using the Settings app:
 
 [!INCLUDE [quickstart-kiosk-intune](includes/quickstart-kiosk-intune.md)]
 
-[!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
-
 Alternatively, you can configure devices using a [custom policy][MEM-1] with the [AssignedAccess CSP][WIN-3].
 
 - **Setting:** `./Vendor/MSFT/AssignedAccess/Configuration`
 - **Value:**
 
 [!INCLUDE [quickstart-kiosk-xml](includes/quickstart-kiosk-xml.md)]
+
+Assign the policy to a group that contains as members the devices that you want to configure.
 
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -102,7 +102,7 @@ After the settings are applied, reboot the device. A local user account is autom
 >
 > [Assigned Access overview](overview.md)
 
-<!--links-->
+
 
 [WIN-3]: /windows/client-management/mdm/assignedaccess-csp
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
