@@ -358,7 +358,7 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
 
 Under `Configs`, define one or more user accounts and their association with a profile.
 
-When the user account signs in on the device, the associated Assigned Access profile is enforced along with policy settings that are part of the restricted user experience.
+When the user account signs in, the associated Assigned Access profile is enforced along with policy settings that are part of the restricted user experience.
 
 You can assign:
 

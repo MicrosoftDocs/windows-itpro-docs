@@ -109,4 +109,5 @@ HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessCsp
 These locations contain the latest "evaluated" configuration for each sign-in user:
 
 "HKCU\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration" (If it doesn't exist, it means no Assigned Access to be enforced for this user.)
+
 -->
