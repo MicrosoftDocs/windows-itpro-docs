@@ -18,8 +18,8 @@ Assigned Access is a Windows feature that you can use to configure a device as a
 
     A single UWP application or Microsoft Edge is executed in full screen, above the lock screen. Users can only use that application. If the kiosk app is closed, it will automatically restart. Practical examples include:
 
-    - Digital signs
-    - Public web browsing kiosks
+    - Public browsing
+    - Interactive digital signage
 
     This experience is sometimes referred to as *single-app kiosk*.
     :::column-end:::
@@ -30,12 +30,14 @@ Assigned Access is a Windows feature that you can use to configure a device as a
     :::column-end:::
     :::column span="3":::
     #### Restricted user experience
-    Users can execute a defined list of applications, with a custom and locked down Start menu and Taskbar. Practical examples include:
+    Users can execute a defined list of applications, with a custom Start menu and Taskbar. Practical examples include:
     - Frontline worker devices
     - Student devices
     - Lab devices
     :::column-end:::
 :::row-end:::
+
+When applying an Assigned Access configuration to a device, different policy settings are enforced, creating a locked down experience to the users.
 
 Assigned Access profiles only apply to non-admin accounts. When an administrator signs in, the Assigned Access restrictions don't apply.
 

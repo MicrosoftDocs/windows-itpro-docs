@@ -36,7 +36,7 @@ Here are some limitations to consider when using Shell Launcher:
 
 ## Configure a device with Shell Launcher
 
-To configure Shell Launcher, you must use the [Assigned Access CSP](/windows/client-management/mdm/assignedaccess-csp#shelllauncher). The configuration of Shell Launcher is done using an XML file. The XML file is then applied to the device via the Assigned Access CSP, using one of the following options:
+The configuration of Shell Launcher is done using an XML file. The XML file is applied to the device via the [Assigned Access CSP](/windows/client-management/mdm/assignedaccess-csp#shelllauncher), using one of the following options:
 
 - A Mobile Device Management (MDM) solution, like Microsoft Intune
 - Provisioning packages
