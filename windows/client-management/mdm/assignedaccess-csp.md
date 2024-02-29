@@ -821,10 +821,6 @@ Here's the Assigned Access XSD reference article: [Assigned Access XML Schema De
 
 For practical examples of Assigned Access configuration files, see [Assigned Access examples](/windows/configuration/assigned-access/examples).
 
-## Windows Holographic for Business edition example
-
-This example configures the following apps: Skype, Learning, Feedback Hub, and Calibration, for first line workers. Use this XML in a provisioning package using Windows Configuration Designer. For instructions, see [Configure HoloLens using a provisioning package](/hololens/hololens-provisioning).
-
 ## Handling XML in Configuration
 
 XML encoding (escaped) and CDATA of the XML in the Data node will both ensure that DM client can properly interpret the SyncML and send the configuration xml as string (in original format, unescaped) to AssignedAccess CSP to handle.
