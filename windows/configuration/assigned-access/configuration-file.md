@@ -379,7 +379,7 @@ The following example shows how to specify an account to sign in automatically, 
 ```xml
 <Configs>
   <Config>
-    <AutoLogonAccount rs5:DisplayName="Hello World"/>
+    <AutoLogonAccount rs5:DisplayName="Microsoft Learn example"/>
     <DefaultProfile Id="{GUID}"/>
   </Config>
 </Configs>
@@ -440,7 +440,7 @@ Microsoft Entra accounts must be specified with the format: `AzureAD\{UPN}`. `Az
 
 Group accounts are specified using `<UserGroup>`. Nested groups aren't supported. For example, if *User A* is member of *Group A*, *Group A* is member of *Group B*, and *Group B* is used in `<Config/>`, *User A* doesn't have the kiosk experience.
 
-##### Local group
+#### Local group
 
 Specify the group type as `LocalGroup` and add the group name in the `Name` attribute.
 

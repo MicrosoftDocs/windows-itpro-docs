@@ -15,7 +15,7 @@ Let's start by looking at the basic structure of the XML file. A Shell Launcher 
 
 - One or multiple `profiles`. Each `profile` defines:
   - the application that replaces the standard Windows shell (`Explorer.exe`), which is executed when a user signs in
-  - default action to be taken when the application exits, and actions to be taken when the application exits with a specific return code
+  - the default action to take when the application exits, and actions when the application exits with a specific return code
 - One or multiple `configs`. Each `config` associates a user account to a `profile`
 
 > [!NOTE]
@@ -137,7 +137,6 @@ In this example, Microsoft Edge is executed in full screen, opening a website. T
 </Profile>
 ```
 
-
 **UWP application**
 
 In this example, the Weather app is executed in full screen.
@@ -161,19 +160,107 @@ xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
 
 Under `Configs`, define one or more user accounts and their association with a profile.
 
-You can specify a name, SID or AutologonAccount
+Individual accounts are specified using `<Account Name=""/>`.
+
+> [!IMPORTANT]
+> Before applying the Shell Launcher configuration, make sure the specified user account is available on the device, otherwise it fails.
+>
+> For both domain and Microsoft Entra accounts, as long as the device is Active Directory joined or Microsoft Entra joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for Shell Launcher.
+
+#### Local user
+
+Local account can be entered as `devicename\user`, `.\user`, or just `user`.
+
+```xml
+<Config>
+  <Account Name="Learn Example"/>
+  <Profile Id="{GUID}"/>
+</Config>
+```
+
+#### Active Directory user
+
+Domain accounts must be entered using the format `domain\samAccountName`.
+
+```xml
+<Config>
+  <Account Name="contoso\user"/>
+  <Profile Id="{GUID}"/>
+</Config>
+```
+
+#### Microsoft Entra user
+
+Microsoft Entra accounts must be specified with the format: `AzureAD\{UPN}`. `AzureAD` must be provided *as is*, then follow with the Microsoft Entra user principal name (UPN).
+
+```xml
+<Config>
+  <Account Name="azuread\user@contoso.onmicrosoft.com"/>
+  <Profile Id="{GUID}"/>
+</Config>
+```
 
 When the user account signs in, the associated Shell Launcher profile is applied, loading the application specified in the profile.
 
 ```xml
 <Configs>
   <Config>
+    <!--account managed by Shell Launcher-->
     <AutoLogonAccount/>
-    <Profile Id=""/>
+    <Profile Id="{GUID}"/>
   </Config>
+  <Configs>
+    <!--local account-->
+    <Account Name="Learn Example"/>
+    <Profile ID="{GUID}"/>
+  </Configs>
+  <Configs>
+    <!--Microsoft Entra account-->
+    <Account Name="azuread\kiosk@contoso.com"/>
+    <Profile ID="{GUID}"/>
+  </Configs>
 </Configs>
 ```
 
 ## Example
 
-[!INCLUDE [quickstart-xml](includes/quickstart-xml.md)]
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
+  xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
+  <Profiles>
+    <DefaultProfile>
+      <Shell Shell="%SystemRoot%\explorer.exe" />
+    </DefaultProfile>
+    <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F79}">
+      <Shell Shell="Microsoft.BingWeather_8wekyb3d8bbwe!App" V2:AppType="UWP">
+        <DefaultAction Action="RestartShell" />
+      </Shell>
+    </Profile>
+    <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
+      <Shell Shell="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe --kiosk https://www.contoso.com --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2" V2:AppType="Desktop" V2:AllAppsFullScreen="true">
+        <ReturnCodeActions>
+          <ReturnCodeAction ReturnCode="0" Action="RestartShell" />
+          <ReturnCodeAction ReturnCode="-1" Action="RestartDevice" />
+          <ReturnCodeAction ReturnCode="255" Action="ShutdownDevice" />
+        </ReturnCodeActions>
+        <DefaultAction Action="RestartShell" />
+      </Shell>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+      <AutoLogonAccount/>
+      <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" />
+    </Config>
+    <Config>
+      <Account Name="Learn Example" />
+      <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F79}" />
+    </Config>
+    <Config>
+      <Account Name="azuread\kiosk@contoso.com" />
+      <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F79}" />
+    </Config>
+  </Configs>
+</ShellLauncherConfiguration>
+```
