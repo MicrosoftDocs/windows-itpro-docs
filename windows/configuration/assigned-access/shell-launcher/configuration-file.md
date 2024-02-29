@@ -43,7 +43,7 @@ Here's a basic example of a Shell Launcher configuration file, with one profile 
 
 ## Profiles
 
-A configuration file can contain one or more profiles. Each profile is identified by a unique identified `Profile Id` and, optionally, a `Name`. For example:
+A configuration file can contain one or more profiles. Each profile has a unique identifier `Profile Id` and, optionally, a `Name`. For example:
 
 ```xml
 <Profiles>
@@ -72,9 +72,9 @@ Each profile defines a `Shell` element, which contains details about the applica
 
 | Property| Description | Details |
 |-|-|-|
-|`Shell`| Application that is used as a Windows shell. |- For UWP apps, you must provide the App User Model ID (AUMID). Learn how to [Find the Application User Model ID of an installed app](../store/find-aumid.md).<br>- For desktop apps, specify the full path of the executable, which can contain system environment variables in the form of %variableName%. You can also specify any parameters that the app might require. |
+|`Shell`| Application that is used as a Windows shell. |- For Universal Windows Platform (UWP) apps, you must provide the App User Model ID (AUMID). Learn how to [Find the Application User Model ID of an installed app](../store/find-aumid.md).<br>- For desktop apps, specify the full path of the executable, which can contain system environment variables in the form of %variableName%. You can also specify any parameters that the app might require. |
 |`V2:AppType`| Defines the type of application. |Allowed values are `Desktop` and `UWP`.|
-|`V2:AllAppsFullScreen` | Boolean value that defines if all applications are executed in full screen. |- When set to `True`, Shell Launcher will runs every app in full screen, or maximized for desktop apps<br>- When set to `False` or not set, only the custom shell app runs in full screen; other apps launched by the user run in windowed mode.|
+|`V2:AllAppsFullScreen` | Boolean value that defines if all applications are executed in full screen. |- When set to `True`, Shell Launcher runs every app in full screen, or maximized for desktop apps.<br>- When set to `False` or not set, only the custom shell app runs in full screen; other apps launched by the user run in windowed mode.|
 
 Example:
 
@@ -108,11 +108,6 @@ In the next example, Microsoft Edge is executed in full screen, opening a websit
 ```xml
 <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
     <Shell Shell="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe --kiosk https://www.contoso.com --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2" V2:AppType="Desktop" V2:AllAppsFullScreen="true">
-        <ReturnCodeActions>
-            <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
-            <ReturnCodeAction ReturnCode="-1" Action="RestartDevice"/>
-            <ReturnCodeAction ReturnCode="255" Action="ShutdownDevice"/>
-        </ReturnCodeActions>
         <DefaultAction Action="RestartShell"/>
     </Shell>
 </Profile>
@@ -129,9 +124,9 @@ Shell Launcher defines four actions to handle app exits. You can customize Shell
 | `2` | Shut down the device |
 | `3` | Do nothing |
 
-These actions can be used as default action, or can be mapped to a specific exit code. Refer to [Shell Launcher](/windows-hardware/customize/enterprise/wesl-usersettingsetcustomshell) to see how use these codes with Shell Launcher WMI.
+These actions can be used as default action, or can be mapped to a specific exit code. Refer to [Shell Launcher](/windows-hardware/customize/enterprise/wesl-usersettingsetcustomshell) to learn how to use these codes with Shell Launcher WMI.
 
-To configure these actions with Shell Launcher CSP, use below syntax in the Shell Launcher configuration xml. You can specify at most four custom actions mapping to four exit codes, and one default action for all other exit codes. When app exits and if the exit code is not found in the custom action mapping, or there is no default action defined, it will be no-op, i.e. nothing happens. So it's recommended to at least define DefaultAction. [Get XML examples for different Shell Launcher v2 configurations.](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2)
+You can specify at most four custom actions mapping to four exit codes, and one default action for all other exit codes. When an app exits, and if the exit code isn't found in the custom action mapping, or there's no default action defined, nothing happens. For this reason, you should at least define `DefaultAction`.
 
 Example:
 
@@ -195,6 +190,12 @@ Microsoft Entra accounts must be specified with the format: `AzureAD\{UPN}`. `Az
 
 When the user account signs in, the associated Shell Launcher profile is applied, loading the application specified in the profile.
 
+### Auto logon account
+
+With `<AutoLogonAccount>`, Shell Launcher creates and manages a user account to automatically sign in after a device restarts. The account is a local standard user named `Kiosk`.
+
+Example:
+
 ```xml
 <Configs>
   <Config>
@@ -220,44 +221,41 @@ When the user account signs in, the associated Shell Launcher profile is applied
 Here's a complete example of a Shell Launcher configuration file, with two profiles and three configs:
 
 ```xml
-$shellLauncherConfiguration = @"
 <?xml version="1.0" encoding="utf-8"?>
-<ShellLauncherConfiguration
-xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
-xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
-    <Profiles>
-        <DefaultProfile>
-            <Shell Shell="%SystemRoot%\explorer.exe"/>
-        </DefaultProfile>
-        <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F79}" Name="Weather">
-           <Shell Shell="Microsoft.BingWeather_8wekyb3d8bbwe!App" V2:AppType="UWP">
-            <DefaultAction Action="RestartShell"/>
-            </Shell>
-        </Profile>
-        <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" Name="Edge">
-            <Shell Shell="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe --kiosk https://www.contoso.com --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2" V2:AppType="Desktop" V2:AllAppsFullScreen="true">
-                <ReturnCodeActions>
-                    <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
-                    <ReturnCodeAction ReturnCode="-1" Action="RestartDevice"/>
-                    <ReturnCodeAction ReturnCode="255" Action="ShutdownDevice"/>
-                </ReturnCodeActions>
-                <DefaultAction Action="RestartShell"/>
-            </Shell>
-        </Profile>
-    </Profiles>
-    <Configs>
-        <Config>
-            <AutoLogonAccount/>
-            <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}"/>
-        </Config>
-        <Config>
-      <Account Name="azuread\kiosk1@contoso.onmicrosoft.com"/>
-          <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F79}"/>
-        </Config>
-        <Config>
-      <Account Name="azuread\kiosk2@contoso.onmicrosoft.com"/>
-          <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}"/>
-        </Config>
-    </Configs>
+<ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration" xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
+  <Profiles>
+    <DefaultProfile>
+      <Shell Shell="%SystemRoot%\explorer.exe" />
+    </DefaultProfile>
+    <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F79}" Name="Weather">
+      <Shell Shell="Microsoft.BingWeather_8wekyb3d8bbwe!App" V2:AppType="UWP">
+        <DefaultAction Action="RestartShell" />
+      </Shell>
+    </Profile>
+    <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" Name="Edge">
+      <Shell Shell="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe --kiosk https://www.contoso.com --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2" V2:AppType="Desktop" V2:AllAppsFullScreen="true">
+        <ReturnCodeActions>
+          <ReturnCodeAction ReturnCode="0" Action="RestartShell" />
+          <ReturnCodeAction ReturnCode="-1" Action="RestartDevice" />
+          <ReturnCodeAction ReturnCode="255" Action="ShutdownDevice" />
+        </ReturnCodeActions>
+        <DefaultAction Action="RestartShell" />
+      </Shell>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+      <AutoLogonAccount />
+      <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" />
+    </Config>
+    <Config>
+      <Account Name="azuread\kiosk1@contoso.onmicrosoft.com" />
+      <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F79}" />
+    </Config>
+    <Config>
+      <Account Name="azuread\kiosk2@contoso.onmicrosoft.com" />
+      <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" />
+    </Config>
+  </Configs>
 </ShellLauncherConfiguration>
 ```

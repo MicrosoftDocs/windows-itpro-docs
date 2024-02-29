@@ -47,4 +47,3 @@ You can configure devices using a [custom policy][MEM-1] with the [AssignedAcces
 ---
 
 Depending on your configuration method, you can have a user to automatically sign in to the device.
-
