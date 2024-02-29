@@ -55,19 +55,17 @@
         }
       },
       "contributors_to_exclude": [
-        "rjagiewich",
-        "claydetels19",
-        "Kellylorenebaker",
-        "jborsecnik",
-        "dstrome",
-        "garycentric",
-        "v-stsavell",
-        "beccarobins",
-        "Stacyrch140",
+        "dstrome2",
+        "rjagiewich",  
         "American-Dipper",
+        "claydetels19", 
+        "jborsecnik",
+        "v-stchambers",
         "shdyas",
-        "alekyaj",
-        "rmca14"
+        "Stacyrch140",
+        "garycentric",
+        "dstrome",
+        "alekyaj" 
       ]
     },
     "fileMetadata": {},
