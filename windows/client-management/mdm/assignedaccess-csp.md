@@ -11,7 +11,7 @@ ms.date: 02/29/2024
 
 <!-- AssignedAccess-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-The AssignedAccess configuration service provider (CSP) is used to configure a kiosk or restricted user experience. Once the CSP is executed, the next user login that is associated with the kiosk profile puts the device into the kiosk mode specified in the CSP configuration.
+The AssignedAccess configuration service provider (CSP) is used to configure a kiosk or restricted user experience. Once the CSP is executed, the next user login that is associated with the Assigned Access profile puts the device into the kiosk mode specified in the CSP configuration.
 
 To learn more about how to configure Assigned Access, see [Configure kiosks and restricted user experiences](/windows/configuration/assigned-access).
 <!-- AssignedAccess-Editable-End -->
@@ -829,7 +829,7 @@ This example configures the following apps: Skype, Learning, Feedback Hub, and C
 
 XML encoding (escaped) and CDATA of the XML in the Data node will both ensure that DM client can properly interpret the SyncML and send the configuration xml as string (in original format, unescaped) to AssignedAccess CSP to handle.
 
-Similarly, the StartLayout xml inside the configuration xml is using the same format, xml inside xml as string. In the sample Configuration xml provided above, CDATA is used to embed the StartLayout xml. If you use CDATA to embed configuration xml in SyncML as well, you'll have nested CDATA, so pay attention to how CDATA is used in the provided CDATA sample. With that being said, when the Configuration xml is being constructed, MDM server can either escape start layout xml or put startlayout xml inside CDATA, when MDM server puts configuration xml inside SyncML, MDM server can also either escape it or wrap with CDATA.
+Similarly, the StartLayout xml inside the configuration xml is using the same format, xml inside xml as string. In the sample Configuration xml provided above, CDATA is used to embed the StartLayout xml. If you use CDATA to embed configuration xml in SyncML as well, you have nested CDATA, so pay attention to how CDATA is used in the provided CDATA sample. With that being said, when the Configuration xml is being constructed, MDM server can either escape start layout xml or put startlayout xml inside CDATA, when MDM server puts configuration xml inside SyncML, MDM server can also either escape it or wrap with CDATA.
 
 Escape and CDATA are mechanisms used when handling xml in xml. Consider that it's a transportation channel to send the configuration xml as payload from server to client. It's transparent to both, the end user who configures the CSP and to our CSP. Both the customer on the server side and our CSP must only see the original configuration XML.
 
