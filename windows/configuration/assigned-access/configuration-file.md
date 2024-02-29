@@ -158,9 +158,8 @@ A *profile node* contains the following properties:
 
 Based on the purpose of the kiosk device, define the list of applications that are allowed to run. This list can contain both UWP apps and desktop apps. When the mult-app kiosk configuration is applied to a device, AppLocker rules are generated to allow the apps that are listed in the configuration.
 
-- For UWP apps, you must provide the App User Model ID (AUMID)
-  - [Learn how to get the AUMID]()
-- For desktop apps, specify the AUMID or the full path of the executable, which can contain one or more system environment variables in the form of %variableName%. For example, `%systemroot%` or `%windir%`.
+- For UWP apps, you must provide the App User Model ID (AUMID). Learn how to [Find the Application User Model ID of an installed app](../store/find-aumid.md)
+- For desktop apps, specify the AUMID or the full path of the executable, which can contain system environment variables in the form of %variableName%. For example, `%systemroot%` or `%windir%`.
 - If an app has a dependency on another app, both must be included in the allowed apps list. For example, Internet Explorer 64-bit has a dependency on Internet Explorer 32-bit, so you must allow both `"C:\Program Files\internet explorer\iexplore.exe"` and `"C:\Program Files (x86)\Internet Explorer\iexplore.exe"`
 - To configure a single app to launch automatically when the user signs in, include `rs5:AutoLaunch="true"` after the AUMID or path. You can also include arguments to be passed to the app
 
