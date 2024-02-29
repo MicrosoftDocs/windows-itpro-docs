@@ -35,14 +35,14 @@ Here are some limitations to consider when using Shell Launcher:
 
 [!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
+#### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
 You can configure devices using a [custom policy][MEM-1] with the [AssignedAccess CSP][WIN-3].
 
 - **Setting:** `./Vendor/MSFT/AssignedAccess/ShellLauncher`
 - **Value:** content of the XML configuration file
 
-#### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
+#### [:::image type="icon" source="../../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 
 ---
 
