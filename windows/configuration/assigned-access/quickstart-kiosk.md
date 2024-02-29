@@ -77,7 +77,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 - **Path:** `AssignedAccess/MultiAppAssignedAccessSettings`
 - **Value:**
 
-[!INCLUDE [quickstart-kiosk-xmll](includes/quickstart-kiosk-xml.md)]
+[!INCLUDE [quickstart-kiosk-xml](includes/quickstart-kiosk-xml.md)]
 
 [!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
