@@ -55,13 +55,15 @@
       },
       "titleSuffix": "Windows Security",
       "contributors_to_exclude": [
-        "rjagiewich",
+        "alekyaj",
+        "alexbuckgit",
+        "American-Dipper",
+        "AngelaMotherofDragons",
+        "beccarobins",
         "claydetels19",
-        "jborsecnik",
         "dstrome",
+        "dstrome2",
         "garycentric",
-        "dstrome",
-        "alekyaj"
         "jborsecnik",
         "rjagiewich",
         "rmca14",
@@ -70,6 +72,7 @@
         "tiburd",
         "traya1",
         "v-dihans",
+        "v-stchambers",
         "v-stsavell"
       ],
       "searchScope": [
