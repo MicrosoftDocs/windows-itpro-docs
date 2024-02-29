@@ -31,3 +31,5 @@ items:
   href: /windows/client-management/mdm/assignedaccess-csp
 - name: Troubleshoot 🔗
   href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
+- name: Configure Microsoft Edge kiosk mode 🔗
+  href: /deployedge/microsoft-edge-configure-kiosk-mode

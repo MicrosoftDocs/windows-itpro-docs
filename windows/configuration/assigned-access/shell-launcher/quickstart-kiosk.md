@@ -24,7 +24,7 @@ The examples can be modified to fit your specific requirements. For example, you
 
 ## Configure a kiosk device
 
-[!INCLUDE [tab-intro](../../../..includes/configure/tab-intro.md)]
+[!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
 
 #### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
@@ -33,24 +33,24 @@ The examples can be modified to fit your specific requirements. For example, you
 >
 > When using this call, authenticate to your tenant in the Graph Explorer window. If it's the first time using Graph Explorer, you may need to authorize the application to access your tenant or to modify the existing permissions. This graph call requires *DeviceManagementConfiguration.ReadWrite.All* permissions.
 
-[!INCLUDE [quickstart-intune](..includes/quickstart-intune.md)]
+[!INCLUDE [quickstart-intune](../includes/quickstart-intune.md)]
 
-[!INCLUDE [intune-custom-settings-2](../../../..includes/configure/intune-custom-settings-2.md)]
+[!INCLUDE [intune-custom-settings-2](../../../../includes/configure/intune-custom-settings-2.md)]
 
 Alternatively, you can configure devices using a [custom policy][MEM-1] with the [AssignedAccess CSP][WIN-3].
 
 - **Setting:** `./Vendor/MSFT/AssignedAccess/ShellLauncher`
 - **Value:**
 
-[!INCLUDE [quickstart-xml](..includes/quickstart-xml.md)]
+[!INCLUDE [quickstart-xml](../includes/quickstart-xml.md)]
 
 #### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 
-[!INCLUDE [powershell-wmi-bridge-1](../../../..includes/configure/powershell-wmi-bridge-1.md)]
+[!INCLUDE [powershell-wmi-bridge-1](../../../../includes/configure/powershell-wmi-bridge-1.md)]
 
-[!INCLUDE [quickstart-ps](..includes/quickstart-ps.md)]
+[!INCLUDE [quickstart-ps](../includes/quickstart-ps.md)]
 
-[!INCLUDE [powershell-wmi-bridge-2](../../../..includes/configure/powershell-wmi-bridge-2.md)]
+[!INCLUDE [powershell-wmi-bridge-2](../../../../includes/configure/powershell-wmi-bridge-2.md)]
 
 ---
 
