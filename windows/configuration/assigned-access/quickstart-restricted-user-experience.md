@@ -9,9 +9,7 @@ zone_pivot_groups: windows-versions-11-10
 
 # Quickstart: Configure a restricted user experience with Assigned Access
 
-With a *restricted user experience*, you can configure Windows to run a limited set of applications in a locked down desktop. This is useful for scenarios where you want to provide a limited set of apps to a user, such as a library catalog, a school device, or a museum guide.
-
-This quickstart provides practical examples of how to configure a restricted user experience on Windows. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
+This quickstart provides practical examples of how to configure a *restricted user experience* on Windows. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
 
 The examples can be modified to fit your specific requirements. For example, you can add or remove applications from the list of allowed apps, or change the name of the user that automatically signs in to Windows.
 

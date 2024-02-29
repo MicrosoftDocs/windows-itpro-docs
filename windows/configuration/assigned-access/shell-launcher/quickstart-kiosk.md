@@ -7,9 +7,7 @@ ms.date: 02/05/2024
 
 # Quickstart: configure a kiosk experience with Shell Launcher
 
-When you configure Windows as a *kiosk* with Shell Launcher, you configure an application to replace the default shell (`explorer.exe`). This is useful for public-facing scenarios, such as a point of sale or a business critical application.
-
-This quickstart provides practical examples of how to configure a kiosk experience on Windows with Shell Launcher. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, and PowerShell. While different solutions are used, the configuration settings and results are the same.
+This quickstart provides practical examples of how to configure a *kiosk experience* on Windows with Shell Launcher. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, and PowerShell. While different solutions are used, the configuration settings and results are the same.
 
 The examples can be modified to fit your specific requirements. For example, you can change the app used, the URL specified when opening Microsoft Edge, or change the name of the user that automatically signs in to Windows.
 
