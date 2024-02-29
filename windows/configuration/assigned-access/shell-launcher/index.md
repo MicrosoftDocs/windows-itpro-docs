@@ -60,7 +60,7 @@ You can configure devices using a [custom policy][MEM-1] with the [AssignedAcces
 - **Path:** `SMISettings/ShellLauncher`
 - **Value:** depends on specific settings
 
-[!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
+[!INCLUDE [provisioning-package-2](../../../../includes/configure/provisioning-package-2.md)]
 
 #### [:::image type="icon" source="../../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 
