@@ -47,7 +47,7 @@ The Shell Launcher configuration XML is versioned. The version is defined in the
 
 | Version | Alias | Namespace |
 |-|-|-|
-|Windows 10|V2|http://schemas.microsoft.com/ShellLauncher/2019/Configuration|
+|Windows 10|`V2`|http://schemas.microsoft.com/ShellLauncher/2019/Configuration|
 |Windows 10|default|http://schemas.microsoft.com/ShellLauncher/2018/Configuration|
 
 To authorize a compatible configuration XML that includes version-specific elements and attributes, always include the namespace of the add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the kiosk application to execute in full screen, use the below example. Notice the alias `V2` associated to `http://schemas.microsoft.com/ShellLauncher/2019/Configuration` namespace, and the alias is tagged on the `AppType` and `AllAppsFullScreen` properties inline.
@@ -104,7 +104,7 @@ Each profile defines a `Shell` element, which contains details about the applica
 
 | Property| Description | Details |
 |-|-|-|
-|`Shell`| Application that is used as a Windows shell. |- For Universal Windows Platform (UWP) apps, you must provide the App User Model ID (AUMID). Learn how to [Find the Application User Model ID of an installed app](../../store/find-aumid.md).<br>- For desktop apps, specify the full path of the executable, which can contain system environment variables in the form of %variableName%. You can also specify any parameters that the app might require. |
+|`Shell`| Application that is used as a Windows shell. |- For Universal Windows Platform (UWP) apps, you must provide the App User Model ID (AUMID). Learn how to [Find the Application User Model ID of an installed app](../../store/find-aumid.md).<br>- For desktop apps, specify the full path of the executable, which can contain system environment variables in the form of `%variableName%`. You can also specify any parameters that the app might require. |
 |`V2:AppType`| Defines the type of application. |Allowed values are `Desktop` and `UWP`.|
 |`V2:AllAppsFullScreen` | Boolean value that defines if all applications are executed in full screen. |- When set to `True`, Shell Launcher runs every app in full screen, or maximized for desktop apps.<br>- When set to `False` or not set, only the custom shell app runs in full screen; other apps launched by the user run in windowed mode.|
 

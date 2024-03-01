@@ -44,11 +44,11 @@ The Assigned Access configuration XML is versioned. The version is defined in th
 
 | Version | Alias | Namespace |
 |-|-|-|
-|Windows 11, version 22H2|v5|http://schemas.microsoft.com/AssignedAccess/2022/config|
-|Windows 11, version 21H2|v4|http://schemas.microsoft.com/AssignedAccess/2021/config|
-|Windows 10|v5|http://schemas.microsoft.com/AssignedAccess/202010/config|
-|Windows 10|v3|http://schemas.microsoft.com/AssignedAccess/2020/config|
-|Windows 10|rs5|http://schemas.microsoft.com/AssignedAccess/201810/config|
+|Windows 11, version 22H2|`v5`|http://schemas.microsoft.com/AssignedAccess/2022/config|
+|Windows 11, version 21H2|`v4`|http://schemas.microsoft.com/AssignedAccess/2021/config|
+|Windows 10|`v5`|http://schemas.microsoft.com/AssignedAccess/202010/config|
+|Windows 10|`v3`|http://schemas.microsoft.com/AssignedAccess/2020/config|
+|Windows 10|`rs5`|http://schemas.microsoft.com/AssignedAccess/201810/config|
 |Windows 10|default|http://schemas.microsoft.com/AssignedAccess/2017/config|
 
 To authorize a compatible configuration XML that includes version-specific elements and attributes, always include the namespace of the add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the `StartPins` feature that was added in Windows 11, version 22H2, use the below example. Notice the alias `v5` associated to the `http://schemas.microsoft.com/AssignedAccess/2022/config` namespace for 22H2 release, and the alias is tagged on `StartPins` inline.
@@ -77,53 +77,242 @@ Here you can find the Assigned Access XML schema definitions: [Assigned Access X
 
 ## Profiles
 
-A configuration file can contain one or more profiles. Each profile is identified by a unique identified `Profile Id`, for example:
+A configuration file can contain one or more profiles. Each profile is identified by a unique identified `Profile Id` and, optionally, a `Name`. For example:
 
 ```xml
 <Profiles>
-    <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
-        <!-- Add configuration here as needed -->
-    </Profile>
+  <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" Name="Microsoft Learn example">
+    <!-- Add configuration here as needed -->
+  </Profile>
 </Profiles>
 ```
 
 > [!TIP]
 > The `Profile Id` must be unique within the XML file. You can generate a GUID with the PowerShell cmdlet `New-Guid`.
 
-A profile is also identified by a `Type` attribute, which can be `AllAppList` or `KioskModeApp`.
+A profile can be one of two types:
 
-- `AllAppList` is used to configure a restricted user experience. Users assigned this profile access the desktop with the specific apps on the Start menu
 - `KioskModeApp`: is used to configure a kiosk experience. Users assigned this profile don't access the desktop, but only the UWP application or Microsoft Edge running in full-screen above the Lock screen
+- `AllAppList` is used to configure a restricted user experience. Users assigned this profile access the desktop with the specific apps on the Start menu
 
-The following table describes the profile types and their properties:
+### KioskModeApp
+
+The properties of a `KioskModeApp` profile are:
+
+| Property| Description | Details |
+|-|-|-|
+|`AppUserModelId`|The Application User Model ID (AUMID) of the UWP app.|Learn how to [Find the Application User Model ID of an installed app](../../store/find-aumid.md).|
+|`v4:ClassicAppPath`|The full path to a desktop app executable.|This is the path to the desktop app that will be used in the kiosk mode. The path can contain system environment variables in the form of `%variableName%`.|
+|`v4:ClassicAppArguments`|The arguments to be passed to the desktop app.|This property is optional.|
+
+By default, you can use the <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>DEL</kbd> sequence to exit kiosk mode. You can define a `BreakoutSequence` element to change the default sequence. The `Key` attribute is a string that represents the key combination.
+
+Example of two profiles, a desktop app and a UWP app:
+
+```xml
+<Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">
+  <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" v4:ClassicAppArguments="--kiosk https://www.contoso.com/ --edge-kiosk-type=fullscreen --kiosk-idle-timeout-minutes=2" />
+  <v4:BreakoutSequence Key="Ctrl+A"/>
+</Profile>
+<Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F79}">
+  <KioskModeApp AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+</Profile>
+```
+
+### AllAppList
+
+Based on the purpose of the kiosk device, define the list of applications that are allowed to run. This list can contain both UWP apps and desktop apps. When the mult-app kiosk configuration is applied to a device, AppLocker rules are generated to allow the apps that are listed in the configuration.
+
+> [!NOTE]
+> If an app has a dependency on another app, both must be included in the allowed apps list.
+
+Within the `AllAppList` node you define a list of applications that are allowed execute. Each `App` element has the following properties:
+
+| Property| Description | Details |
+|-|-|-|
+|`AppUserModelId`|The Application User Model ID (AUMID) of the UWP app.|Learn how to [Find the Application User Model ID of an installed app](../../store/find-aumid.md).|
+|`DesktopAppPath`|The full path to a desktop app executable.|This is the path to the desktop app that will be used in the kiosk mode. The path can contain system environment variables in the form of `%variableName%`.|
+|`rs5:AutoLaunch="true"`|A Boolean attribute to indicate whether to launch the app automatically when the user signs in.|This property is optional. Only one application is allowed to be auto-launched.|
+|`rs5:AutoLaunchArguments`|The arguments to be passed to the app that is configured with `AutoLaunch`.|This property is optional.|
+
+Example:
+
+```xml
+<AllAppsList>
+  <AllowedApps>
+    <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
+    <App DesktopAppPath="C:\Windows\system32\cmd.exe" />
+    <App DesktopAppPath="%windir%\explorer.exe" />
+    <App AppUserModelId="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" />
+    <App DesktopAppPath="C:\Windows\System32\notepad.exe" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="%windir%\setuperr.log" />
+  </AllowedApps>
+</AllAppsList>  
+```
+
+### Start menu customizations
+
+For a restricted user experience profile, you must define the Start layout. The Start layout contains a list of applications that are pinned to the Start menu. You can choose to pin all the allowed applications to the Start menu, or a subset. The easiest way to create a customized Start layout is to configure the Start menu on a test device and then export the layout.
+
+::: zone pivot="windows-10"
+
+To learn more, see [Customize the Start menu](../start/customize-and-export-start-layout.md)
+
+With the exported Start menu configuration, use the `StartLayout` element and add the content of the XML file. For example:
+
+```xml
+<StartLayout>
+  <![CDATA[
+    <!-- Add your exported Start menu XML configuration file here -->
+  ]]>
+</StartLayout>
+```
+
+Example with some apps pinned:
+
+```xml
+<StartLayout>
+  <![CDATA[
+    <LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1"
+    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+      <LayoutOptions StartTileGroupCellWidth="6" />
+      <DefaultLayoutOverride>
+        <StartLayoutCollection>
+          <defaultlayout:StartLayout GroupCellWidth="6">
+            <start:Group Name="Group1">
+              <start:Tile Size="4x4" Column="0" Row="0" AppUserModelID="Microsoft.  ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
+              <start:Tile Size="2x2" Column="4" Row="2" AppUserModelID="Microsoft.  ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
+            </start:Group>
+            <start:Group Name="Group2">
+              <start:DesktopApplicationTile Size="2x2" Column="2" Row="0"   DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start   Menu\Programs\Accessories\Paint.lnk" />
+              <start:DesktopApplicationTile Size="2x2" Column="0" Row="0"   DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Accessories\Notepad.  lnk" />
+            </start:Group>
+          </defaultlayout:StartLayout>
+        </StartLayoutCollection>
+      </DefaultLayoutOverride>
+    </LayoutModificationTemplate>
+  ]]>
+</StartLayout>
+```
+
+> [!NOTE]
+> If an app isn't installed for the user, but is included in the Start layout XML, the app isn't shown on the Start screen.
+
+::: zone-end
 
 ::: zone pivot="windows-11"
 
-| Profile type | Properties|
-|-|-|
-|`AllAppList`| -`Id` (required)<br>- `Name` (optional)<br>- `AllowedApps`<br>- `StartPins`<br>- `TaskbarLayout`|
-|`KioskModeApp`| -`Id` (required)<br>- `Name` (optional)<br>- `KioskModeApp` (required)|
+To learn more, see [Customize the Start menu](../start/customize-start-menu-layout-windows-11.md)
+
+With the exported Start menu configuration, use the `v5:StartPins` element and add the content of the JSON file. For example:
+
+```xml
+<v5:StartPins>
+  <![CDATA[
+      <!-- Add your exported Start menu XML configuration file here -->
+  ]]>
+</v5:StartPins>
+```
+
+Example with some apps pinned:
+
+<v5:StartPins>
+  <![CDATA[
+    {
+      "pinnedList":[
+        {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
+        {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\File Explorer.lnk"},
+        {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk"}
+      ]
+    }
+  ]]>
+</v5:StartPins>
+
+::: zone-end
+
+### Taskbar customizations
+
+::: zone pivot="windows-10"
+
+You can't pin apps on the taskbar in a restricted user experience, and it's not supported to configure a Taskbar layout using the `<CustomTaskbarLayoutCollection>` tag in a layout modification XML as part of the Assigned Access configuration.
+
+The only Taskbar customization available in Windows 10 is the possiblity to show or hide it, using the `ShowTaskbar` boolean attribute.
+
+The following example exposes the taskbar:
+
+```xml
+<Taskbar ShowTaskbar="true"/>
+```
+
+The following example hides the taskbar:
+
+```xml
+<Taskbar ShowTaskbar="false"/>
+```
+
+> [!NOTE]
+> This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting `ShowTaskbar` as `false` hides the taskbar permanently.
+
+::: zone-end
+
+::: zone pivot="windows-11"
+
+You can customize the Taskbar by creating a custom layout and adding it to your XML file. To learn more, see [Customize the Taskbar](../taskbar/customize-taskbar-windows-11.md).
+
+> [!NOTE]
+> In Windows 11, the `ShowTaskbar` attribute is no-op. Configure it with a value of `true`.
+
+Here's an example of a custom Taskbar with a few apps pinned:
+
+```xml
+<Taskbar ShowTaskbar="true" />
+<v5:TaskbarLayout><![CDATA[
+  <?xml version="1.0" encoding="utf-8"?>
+  <LayoutModificationTemplate
+      xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+      xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+      xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+      xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+      Version="1">
+  <CustomTaskbarLayoutCollection>
+    <defaultlayout:TaskbarLayout>
+    <taskbar:TaskbarPinList>
+        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer" />
+        <taskbar:DesktopApp DesktopApplicationID="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
+        <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk"/>
+    </taskbar:TaskbarPinList>
+    </defaultlayout:TaskbarLayout>
+  </CustomTaskbarLayoutCollection>
+  </LayoutModificationTemplate>
+  ]]>
+</v5:TaskbarLayout>
+```
+
+::: zone-end
+
+<!-- I'm here -->
+
+::: zone pivot="windows-11"
+
+### StartPins
+
+### TaskbarLayout
+
+### Taskbar
 
 ::: zone-end
 
 ::: zone pivot="windows-10"
 
-| Profile type | Properties|
-|-|-|
-|`AllAppList`| - `Id` (required)<br>- `Name` (optional)<br>- `AllowedApps`<br>- `StartLayout`<br>- `Taskbar`<br>-`FileExplorerNamespaceRestrictions`|
-|`KioskModeApp`| -`Id` (required)<br>- `Name` (optional)<br>- `KioskModeApp` (required)|
+### StartLayout
+
+### Taskbar
+
+### FileExplorerNamespaceRestrictions
 
 ::: zone-end
 
-Kiosk example:
 
-```xml
-<Profiles>
-    <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" Name="Microsoft Learn example">
-        <KioskModeApp ... />
-    </Profile>
-</Profiles>
-```
 
 ::: zone pivot="windows-11"
 
@@ -191,160 +380,6 @@ A *profile node* contains the following properties:
 </Profile>
 ```
 
-### AllowedApps node
-
-Based on the purpose of the kiosk device, define the list of applications that are allowed to run. This list can contain both UWP apps and desktop apps. When the mult-app kiosk configuration is applied to a device, AppLocker rules are generated to allow the apps that are listed in the configuration.
-
-- For UWP apps, you must provide the App User Model ID (AUMID). Learn how to [Find the Application User Model ID of an installed app](../store/find-aumid.md)
-- For desktop apps, specify the AUMID or the full path of the executable, which can contain system environment variables in the form of %variableName%. For example, `%systemroot%` or `%windir%`.
-- If an app has a dependency on another app, both must be included in the allowed apps list. For example, Internet Explorer 64-bit has a dependency on Internet Explorer 32-bit, so you must allow both `"C:\Program Files\internet explorer\iexplore.exe"` and `"C:\Program Files (x86)\Internet Explorer\iexplore.exe"`
-- To configure a single app to launch automatically when the user signs in, include `rs5:AutoLaunch="true"` after the AUMID or path. You can also include arguments to be passed to the app
-
-The following example allows Calculator, Photos, Weather, Calculator, Command Prompt, and Windows PowerShell apps to run on the device.
-
-```xml
-<AllowedApps>
-    <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
-    <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
-    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-    <App DesktopAppPath="C:\Windows\system32\cmd.exe" />
-    <App DesktopAppPath="%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe" />
-    <App DesktopAppPath="C:\Windows\System32\notepad.exe" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="%windir%\setuperr.log" />
-</AllowedApps>
-```
-
-### Start menu customizations
-
-After the definition of allowed applications, customize the Start layout for the kiosk experience. You can choose to pin all the allowed applications on the Start menu, or a subset. The easiest way to create a customized Start layout is to configure the Start menu on a test device and then export the layout.
-
-::: zone pivot="windows-10"
-
-To learn more, see [Customize the Start menu](../start/customize-and-export-start-layout.md)
-
-The following example pins a few apps to the Start menu:
-
-```xml
-<StartLayout>
-<![CDATA[
-<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1"
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
-    <LayoutOptions StartTileGroupCellWidth="6" />
-    <DefaultLayoutOverride>
-        <StartLayoutCollection>
-            <defaultlayout:StartLayout GroupCellWidth="6">
-                <start:Group Name="Group1">
-                    <start:Tile Size="4x4" Column="0" Row="0" AppUserModelID="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
-                    <start:Tile Size="2x2" Column="4" Row="2" AppUserModelID="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
-                    <start:Tile Size="2x2" Column="4" Row="0" AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
-                    <start:Tile Size="2x2" Column="4" Row="4" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
-                </start:Group>
-                <start:Group Name="Group2">
-                    <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk" />
-                    <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Accessories\Notepad.lnk" />
-                </start:Group>
-            </defaultlayout:StartLayout>
-        </StartLayoutCollection>
-    </DefaultLayoutOverride>
-</LayoutModificationTemplate>
-]]>
-</StartLayout>
-```
-
-::: zone-end
-
-::: zone pivot="windows-11"
-
-To learn more, see [Customize the Start menu](../start/customize-start-menu-layout-windows-11.md)
-
-The following example pins a few apps to the Start menu:
-
-```xml
-<v5:StartPins>
-<![CDATA[
-    {
-        "pinnedList":[
-            {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
-            {"packagedAppId":"Microsoft.Windows.Photos_8wekyb3d8bbwe!App"},
-            {"packagedAppId":"Microsoft.BingWeather_8wekyb3d8bbwe!App"},
-            {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Command Prompt.lnk"},
-            {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell.lnk"},
-            {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\File Explorer.lnk"},
-            {"packagedAppId": "windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel"},
-            {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk"}
-        ]
-    }
-]]>
-</v5:StartPins>
-```
-
-Add your pinnedList JSON into the StartPins tag in your XML file.
-
-::: zone-end
-
-### Taskbar customizations
-
-::: zone pivot="windows-10"
-
-You can't pin apps on the taskbar in a restricted user experience, and it's not supported to configure a Taskbar layout using the `<CustomTaskbarLayoutCollection>` tag in a layout modification XML as part of the Assigned Access configuration.
-
-The only Taskbar customization available in Windows 10 is the possiblity to show or hide it, using the `ShowTaskbar` boolean attribute.
-
-The following example exposes the taskbar:
-
-```xml
-<Taskbar ShowTaskbar="true"/>
-```
-
-The following example hides the taskbar:
-
-```xml
-<Taskbar ShowTaskbar="false"/>
-```
-
-> [!NOTE]
-> This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting `ShowTaskbar` as `false` hides the taskbar permanently.
-
-::: zone-end
-
-::: zone pivot="windows-11"
-
-You can customize the Taskbar by creating a custom layout and adding it to your XML file. To learn more, see [Customize the Taskbar](../taskbar/customize-taskbar-windows-11.md).
-
-> [!NOTE]
-> In Windows 11, the `ShowTaskbar` attribute is no-op. Configure it with a value of `true`.
-
-Here's an example of a custom Taskbar with a few apps pinned:
-
-```xml
-<Taskbar ShowTaskbar="true" />
-<v5:TaskbarLayout><![CDATA[
-  <?xml version="1.0" encoding="utf-8"?>
-  <LayoutModificationTemplate
-      xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-      xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-      xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-      xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
-      Version="1">
-  <CustomTaskbarLayoutCollection>
-      <defaultlayout:TaskbarLayout>
-      <taskbar:TaskbarPinList>
-          <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer" />
-          <taskbar:DesktopApp DesktopApplicationID="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
-          <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk"/>
-      </taskbar:TaskbarPinList>
-      </defaultlayout:TaskbarLayout>
-  </CustomTaskbarLayoutCollection>
-  </LayoutModificationTemplate>
-  ]]>
-</v5:TaskbarLayout>
-```
-
-> [!NOTE]
-> If an app isn't installed for the user, but is included in the Start layout XML, the app isn't shown on the Start screen.
-
-::: zone-end
 
 ### KioskModeApp
 
