@@ -35,7 +35,7 @@ Copilot in Windows is your AI companion that brings productivity to your fingert
 
     a. Your Copilot in Windows experiences powered by Microsoft Copilot are subject to [Microsoft Copilot’s terms of use](https://www.bing.com/new/termsofuse).  
 
-    b. If your organization is allowing you to use Microsoft Copilot with commercial data protection, your Copilot in Windows experiences may be powered by Microsoft Copilot with commercial data protection and subject to [Microsoft Copilot with commercial data protection’s terms of use](/bing-chat-enterprise/terms-of-use).
+    b. If your organization is allowing you to use Microsoft Copilot with commercial data protection, your Copilot in Windows experiences may be powered by Microsoft Copilot with commercial data protection and subject to [Microsoft Copilot with commercial data protection’s terms of use](/copilot/terms-of-use).
 
     c. If your organization is allowing you to use Microsoft Copilot for Microsoft 365, your Copilot in Windows experiences may be powered by Microsoft Copilot for Microsoft 365 and subject to [Microsoft's Product Terms](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all).
 
