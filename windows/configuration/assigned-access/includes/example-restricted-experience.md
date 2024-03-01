@@ -10,13 +10,8 @@ ms.topic: include
 ::: zone pivot="windows-10"
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-  xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-  xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config"
-  xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-  xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config">
+<?xml version="1.0" encoding="utf-8"?>
+<AssignedAccessConfiguration xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config" xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config" xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config">
   <Profiles>
     <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
       <AllAppsList>
@@ -32,11 +27,10 @@ ms.topic: include
         </AllowedApps>
       </AllAppsList>
       <rs5:FileExplorerNamespaceRestrictions>
-        <rs5:AllowedNamespace Name="Downloads"/>
-        <v3:AllowRemovableDrives/>
+        <rs5:AllowedNamespace Name="Downloads" />
+        <v3:AllowRemovableDrives />
       </rs5:FileExplorerNamespaceRestrictions>
-      <StartLayout>
-        <![CDATA[
+      <StartLayout><![CDATA[
           <LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
             <LayoutOptions StartTileGroupCellWidth="6" />
             <DefaultLayoutOverride>
@@ -56,15 +50,14 @@ ms.topic: include
             </StartLayoutCollection>
             </DefaultLayoutOverride>
           </LayoutModificationTemplate>
-        ]]>
-      </StartLayout>
-      <Taskbar ShowTaskbar="true"/>
+        ]]></StartLayout>
+      <Taskbar ShowTaskbar="true" />
     </Profile>
   </Profiles>
   <Configs>
     <Config>
-      <AutoLogonAccount rs5:DisplayName="MS Learn Example"/>
-      <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+      <AutoLogonAccount rs5:DisplayName="MS Learn Example" />
+      <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}" />
     </Config>
   </Configs>
 </AssignedAccessConfiguration>
@@ -75,14 +68,8 @@ ms.topic: include
 ::: zone pivot="windows-11"
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration
-  xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-  xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config"
-  xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-  xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-  xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
+<?xml version="1.0" encoding="utf-8"?>
+<AssignedAccessConfiguration xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config" xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config" xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
   <Profiles>
     <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
       <AllAppsList>
@@ -98,11 +85,10 @@ ms.topic: include
         </AllowedApps>
       </AllAppsList>
       <rs5:FileExplorerNamespaceRestrictions>
-        <rs5:AllowedNamespace Name="Downloads"/>
-        <v3:AllowRemovableDrives/>
+        <rs5:AllowedNamespace Name="Downloads" />
+        <v3:AllowRemovableDrives />
       </rs5:FileExplorerNamespaceRestrictions>
-      <v5:StartPins>
-        <![CDATA[{
+      <v5:StartPins><![CDATA[{
           "pinnedList":[
             {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
             {"packagedAppId":"Microsoft.Windows.Photos_8wekyb3d8bbwe!App"},
@@ -113,15 +99,14 @@ ms.topic: include
             {"packagedAppId": "windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel"},
             {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk"}
           ]
-        }]]>
-      </v5:StartPins>
-      <Taskbar ShowTaskbar="true"/>
+        }]]></v5:StartPins>
+      <Taskbar ShowTaskbar="true" />
     </Profile>
   </Profiles>
   <Configs>
     <Config>
-      <AutoLogonAccount rs5:DisplayName="MS Learn Example"/>
-      <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+      <AutoLogonAccount rs5:DisplayName="MS Learn Example" />
+      <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}" />
     </Config>
   </Configs>
 </AssignedAccessConfiguration>
