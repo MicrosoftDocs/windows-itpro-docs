@@ -1,6 +1,6 @@
 ---
 title: Windows subscription activation
-description: Learn how to step up from Windows Pro to  a Windows Enterprise subscription or from Windows Eduction Pro to a Windows Education subscription.
+description: Learn how to step up from Windows Pro to a Windows Enterprise subscription or from Windows Eduction Pro to a Windows Education subscription.
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ ms.collection:
   - tier2
 ms.topic: concept-article
 zone_pivot_groups: windows-versions-11-10
-ms.date: 03/01/2024
+ms.date: 03/04/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
