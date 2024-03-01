@@ -13,7 +13,7 @@ ms.date: 02/29/2024
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The AssignedAccess configuration service provider (CSP) is used to configure a kiosk or restricted user experience. Once the CSP is executed, the next user login that is associated with the Assigned Access profile puts the device into the kiosk mode specified in the CSP configuration.
 
-To learn more about how to configure Assigned Access, see [Configure kiosks and restricted user experiences](/windows/configuration/assigned-access/index.md).
+To learn more about how to configure Assigned Access, see [Configure kiosks and restricted user experiences](/windows/configuration/assigned-access).
 <!-- AssignedAccess-Editable-End -->
 
 <!-- AssignedAccess-Tree-Begin -->
@@ -49,7 +49,7 @@ This node accepts an AssignedAccessConfiguration xml as input.
 
 <!-- Device-Configuration-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-To learn how to configure xml file, see [Create an Assigned Access configuration XML file](/windows/configuration/assigned-access/configuration-file.md)
+To learn how to configure xml file, see [Create an Assigned Access configuration XML file](/windows/configuration/assigned-access/configuration-file)
 
 <!-- Device-Configuration-Editable-End -->
 
@@ -143,7 +143,7 @@ This node supports Add, Delete, Replace and Get methods. When there's no configu
 >
 > This applies to both `domain\user`, `AzureAD\someone@contoso.onmicrosoft.com`, as long as a `\` is used in JSON string.
 
-- For more information about how to get the AUMID, see [Find the Application User Model ID of an installed app](/windows/configuration/store/find-aumid.md)
+- For more information about how to get the AUMID, see [Find the Application User Model ID of an installed app](/windows/configuration/store/find-aumid)
 
 > [!IMPORTANT]
 >
@@ -271,7 +271,7 @@ This node accepts a ShellLauncherConfiguration xml as input.
 <!-- Device-ShellLauncher-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-To learn about Shell Launcher, see [What is Shell Launcher?](/windows/configuration/assigned-access/shell-launcher/index.md).
+To learn about Shell Launcher, see [What is Shell Launcher?](/windows/configuration/assigned-access/shell-launcher).
 
 > [!IMPORTANT]
 > You can't set both ShellLauncher and KioskModeApp at the same time on the device.
@@ -294,7 +294,7 @@ To learn about Shell Launcher, see [What is Shell Launcher?](/windows/configurat
 <!-- Device-ShellLauncher-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 
-Here's the Shell Launcher XSD reference article: [Shell Launcher XML Schema Definition (XSD)](/windows/configuration/assigned-access/shell-launcher/xsd.md).
+Here's the Shell Launcher XSD reference article: [Shell Launcher XML Schema Definition (XSD)](/windows/configuration/assigned-access/shell-launcher/xsd).
 
 **Examples**:
 
@@ -664,9 +664,9 @@ By default, the StatusConfiguration node doesn't exist, and it implies this feat
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
 ## AssignedAccessConfiguration XSD
 
-Here's the Assigned Access XSD reference article: [Assigned Access XML Schema Definition (XSD)](/windows/configuration/assigned-access/xsd.md).
+Here's the Assigned Access XSD reference article: [Assigned Access XML Schema Definition (XSD)](/windows/configuration/assigned-access/xsd).
 
-For practical examples of Assigned Access configuration files, see [Assigned Access examples](/windows/configuration/assigned-access/examples.md).
+For practical examples of Assigned Access configuration files, see [Assigned Access examples](/windows/configuration/assigned-access/examples).
 
 ## Handling XML in Configuration
 
