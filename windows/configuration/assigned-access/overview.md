@@ -565,6 +565,8 @@ Follow the [best practices guidance for developing a kiosk app for assigned acce
 
 The above guidelines may help you select or develop an appropriate Windows app for your Assigned Access experience. Once you've selected your app, we recommend that you thoroughly test the Assigned Access experience to ensure that your device provides a good customer experience.
 
-
 > [!NOTE]
 > Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, Start Layout).
+
+> [!IMPORTANT]
+> The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Microsoft Entra account could potentially compromise confidential information.

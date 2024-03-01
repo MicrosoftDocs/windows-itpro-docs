@@ -110,14 +110,7 @@ These locations contain the latest "evaluated" configuration for each sign-in us
 
 "HKCU\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration" (If it doesn't exist, it means no Assigned Access to be enforced for this user.)
 
-
-> [!WARNING]
-> You can only assign one single app kiosk profile to an individual user account on a device. The single app profile does not support domain groups.
-
 > [!NOTE]
 > If the application calls `KeyCredentialManager.IsSupportedAsync` when it is running in assigned access mode and it returns false on the first run, invoke the settings screen and select an appropriate PIN to use with Windows Hello. This is the settings screen that is hidden by the application running in assigned access mode. You can only use Windows Hello if you first leave assigned access mode, select your convenience pin, and then go back into assigned access mode again.
-
-
-
 
 -->

@@ -51,7 +51,7 @@ The Assigned Access configuration XML is versioned. The version is defined in th
 |Windows 10|`rs5`|`http://schemas.microsoft.com/AssignedAccess/201810/config`|
 |Windows 10|default|`http://schemas.microsoft.com/AssignedAccess/2017/config`|
 
-To authorize a compatible configuration XML that includes version-specific elements and attributes, always include the namespace of the add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the `StartPins` feature that was added in Windows 11, version 22H2, use the below example. Notice the alias `v5` associated to the `http://schemas.microsoft.com/AssignedAccess/2022/config` namespace for 22H2 release, and the alias is tagged on `StartPins` inline.
+To authorize a compatible configuration XML that includes version-specific elements and attributes, always include the namespace of the add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the `StartPins` feature that was added in Windows 11, version 22H2, use the below example. Note the alias `v5` associated to the `http://schemas.microsoft.com/AssignedAccess/2022/config` namespace for 22H2 release, and the alias is tagged on `StartPins` inline.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -77,7 +77,7 @@ Here you can find the Assigned Access XML schema definitions: [Assigned Access X
 
 ## Profiles
 
-A configuration file can contain one or more profiles. Each profile is identified by a unique identified `Profile Id` and, optionally, a `Name`. For example:
+A configuration file can contain one or more profiles. Each profile is identified by a unique identifier `Profile Id` and, optionally, a `Name`. For example:
 
 ```xml
 <Profiles>
@@ -132,8 +132,8 @@ Within the `AllAppList` node you define a list of applications that are allowed 
 |-|-|-|
 |`AppUserModelId`|The Application User Model ID (AUMID) of the UWP app.|Learn how to [Find the Application User Model ID of an installed app](../store/find-aumid.md).|
 |`DesktopAppPath`|The full path to a desktop app executable.|This is the path to the desktop app that will be used in the kiosk mode. The path can contain system environment variables in the form of `%variableName%`.|
-|`rs5:AutoLaunch="true"`|A Boolean attribute to indicate whether to launch the app automatically when the user signs in.|This property is optional. Only one application is allowed to be auto-launched.|
-|`rs5:AutoLaunchArguments`|The arguments to be passed to the app that is configured with `AutoLaunch`.|This property is optional.|
+|`rs5:AutoLaunch`|A Boolean attribute to indicate whether to launch the app (either desktop or UWP app) automatically when the user signs in.|This property is optional. Only one application is allowed to be auto-launched.|
+|`rs5:AutoLaunchArguments`|The arguments to be passed to the app that is configured with `AutoLaunch`.|AutoLaunchArguments are passed to the apps as is and the app needs to handle the arguments explicitly. This property is optional.|
 
 Example:
 
@@ -148,6 +148,79 @@ Example:
   </AllowedApps>
 </AllAppsList>
 ```
+
+::: zone pivot="windows-10"
+
+### File Explorer restrictions
+
+In a restricted user experience (`AllAppList`), folder browsing is locked down by default. You can explicitly allow access to known folders by including the `FileExplorerNamespaceRestrictions` node.
+
+You can specify user access to Downloads folder, Removable drives, or no restrictions at all. Downloads and Removable Drives can be allowed at the same time.
+
+```xml
+<Profiles>
+    <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" Name="Microsoft Learn example">
+        <AllAppsList>
+            <AllowedApps>
+                <!-- Add configuration here as needed -->
+            </AllowedApps>
+        </AllAppsList>
+        <rs5:FileExplorerNamespaceRestrictions>
+            <!-- Add configuration here as needed -->
+        </rs5:FileExplorerNamespaceRestrictions>
+        <!-- Add configuration here as needed -->
+    </Profile>
+</Profiles>
+```
+
+Here are some practical examples.
+
+#### Block everything
+
+Either don't use the node or leave it empty
+
+```xml
+<rs5:FileExplorerNamespaceRestrictions>
+</rs5:FileExplorerNamespaceRestrictions>
+```
+
+#### Only allow downloads
+
+```xml
+<rs5:FileExplorerNamespaceRestrictions>
+    <rs5:AllowedNamespace Name="Downloads"/>
+</rs5:FileExplorerNamespaceRestrictions>
+```
+
+#### Only allow removable drives
+
+```xml
+<rs5:FileExplorerNamespaceRestrictions>
+    <v3:AllowRemovableDrives />
+</rs5:FileExplorerNamespaceRestrictions>
+```
+
+#### Allow both Downloads, and removable drives
+
+```xml
+<rs5:FileExplorerNamespaceRestrictions>
+    <rs5:AllowedNamespace Name="Downloads"/>
+    <v3:AllowRemovableDrives/>
+</rs5:FileExplorerNamespaceRestrictions>
+```
+
+#### No restrictions, all locations are allowed
+
+```xml
+<rs5:FileExplorerNamespaceRestrictions>
+    <v3:NoRestriction />
+</rs5:FileExplorerNamespaceRestrictions>
+```
+
+> [!TIP]
+> To grant access to File Explorer in a restricted user experience, add `Explorer.exe` to the list of allowed apps, and pin a shortcut to the Start menu.
+
+::: zone-end
 
 ### Start menu customizations
 
@@ -195,23 +268,18 @@ Example with some apps pinned:
 </StartLayout>
 ```
 
-> [!NOTE]
-> If an app isn't installed for the user, but is included in the Start layout XML, the app isn't shown on the Start screen.
-
 ::: zone-end
 
 ::: zone pivot="windows-11"
 
 To learn how to customize and export a Start menu configuration, see [Customize the Start menu](../start/customize-start-menu-layout-windows-11.md).
 
-### StartPins
-
-With the exported Start menu configuration, use the `v5:StartPins` element and add the content of the JSON file. For example:
+With the exported Start menu configuration, use the `v5:StartPins` element and add the content of the exported JSON file. For example:
 
 ```xml
 <v5:StartPins>
   <![CDATA[
-      <!-- Add your exported Start menu XML configuration file here -->
+      <!-- Add your exported Start menu JSON configuration file here -->
   ]]>
 </v5:StartPins>
 ```
@@ -231,6 +299,9 @@ Example with some apps pinned:
 </v5:StartPins>
 
 ::: zone-end
+
+> [!NOTE]
+> If an app isn't installed for the user, but is included in the Start layout XML, the app isn't shown on the Start screen.
 
 ### Taskbar customizations
 
@@ -261,10 +332,18 @@ The following example hides the taskbar:
 
 You can customize the Taskbar by creating a custom layout and adding it to your XML file. To learn how to customize and export the Taskbar configuration, see [Customize the Taskbar](../taskbar/customize-taskbar-windows-11.md).
 
-With the exported Taskbar configuration, use the `v5:TaskbarLayout` element and add the content of the XML file. For example:
-
 > [!NOTE]
 > In Windows 11, the `ShowTaskbar` attribute is no-op. Configure it with a value of `true`.
+
+With the exported Taskbar configuration, use the `v5:TaskbarLayout` element and add the content of the XML file. For example:
+
+```xml
+<Taskbar ShowTaskbar="true" />
+<v5:TaskbarLayout><![CDATA[
+  <!-- Add your exported Taskbar XML configuration file here -->
+  ]]>
+</v5:TaskbarLayout>
+```
 
 Here's an example of a custom Taskbar with a few apps pinned:
 
@@ -294,136 +373,7 @@ Here's an example of a custom Taskbar with a few apps pinned:
 
 ::: zone-end
 
-
-
-::: zone pivot="windows-11"
-
-
-
-::: zone-end
-
-::: zone pivot="windows-10"
-
-### StartLayout
-
-### Taskbar
-
-### FileExplorerNamespaceRestrictions
-
-::: zone-end
-
-
-
-::: zone pivot="windows-11"
-
-Restricted user experience example:
-
-```xml
-<Profiles>
-    <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" Name="Microsoft Learn example">
-        <AllAppsList>
-            <AllowedApps>
-                <!-- Add configuration here as needed -->
-            </AllowedApps>
-        </AllAppsList>
-        <StartPins>
-        </StartPins>
-        <TaskbarLayout>
-            <!-- Add configuration here as needed -->
-        </TaskbarLayout>
-    </Profile>
-</Profiles>
-```
-
-::: zone-end
-
-::: zone pivot="windows-10"
-
-Restricted user experience example:
-
-```xml
-<Profiles>
-    <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}" Name="Microsoft Learn example">
-        <AllAppsList>
-            <AllowedApps>
-                <!-- Add configuration here as needed -->
-            </AllowedApps>
-        </AllAppsList>
-        <rs5:FileExplorerNamespaceRestrictions>
-            <!-- Add configuration here as needed -->
-        </rs5:FileExplorerNamespaceRestrictions>
-        <StartLayout>
-        </StartLayout>
-        <Taskbar [...]/>
-    </Profile>
-</Profiles>
-```
-
-::: zone-end
-
-A *profile node* contains the following properties:
-
-|Property|Description|
-|-|-|
-|Id|a GUID attribute to uniquely identify the profile|
-|AllowedApps|a node with a list of applications that are allowed to run. Apps can be Universal Windows Platform (UWP) apps or Classic Windows desktop apps|
-|StartLayout|a node for startlayout policy xml|
-|Taskbar|a node with a Boolean attribute ShowTaskbar to indicate whether to show the taskbar|
-
-```xml
-<Profile Id="6954c40a-45dd-4176-a2e3-ecaf5c97f425">
-    <AllAppsList>
-        <AllowedApps/>
-    </AllAppsList>
-    <StartLayout/>
-    <Taskbar/>
-</Profile>
-```
-
-
-### KioskModeApp
-
-**KioskModeApp** is used for a kiosk profile only. Enter the AUMID for a single app. You can only specify one kiosk profile in the XML.
-
-```xml
-<KioskModeApp AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"/>
-```
-
-> [!IMPORTANT]
-> The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Microsoft Entra account could potentially compromise confidential information.
-
-### Auto Launch
-
-This sample demonstrates that both UWP and Win32 apps can be configured to automatically launch, when Assigned Access account logs in. One profile can have at most one app configured for auto launch. AutoLaunchArguments are passed to the apps as is and the app needs to handle the arguments explicitly.
-
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config">
-    <Profiles>
-        <Profile Id="{GUID}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.Microsoft3DViewer_8wekyb3d8bbwe!Microsoft.Microsoft3DViewer" rs5:AutoLaunch="true"/>
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
-                </AllowedApps>
-            </AllAppsList>
-            <Taskbar ShowTaskbar="true"/>
-        </Profile>
-        <Profile Id="{GUID}">
-            <AllAppsList>
-                <AllowedApps>
-                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="1.txt"/>
-                </AllowedApps>
-            </AllAppsList>
-            <Taskbar ShowTaskbar="false"/>
-        </Profile>
-    </Profiles>
-```
+<!--here-->
 
 ## Configs
 
@@ -557,97 +507,7 @@ With `GlobalProfile` you can define an Assigned Access profile that is applied t
 > [!NOTE]
 > You can combine a global profile with other profiles. If you assign a user a non-global profile, the global profile won't be applied to that user.
 
-::: zone pivot="windows-10"
 
-### File Explorer restrictions
-
-When using Assigned Access, folder browsing is locked down. You can explicitly allow access to known folders when the user tries to open the file dialog box by including the `FileExplorerNamespaceRestrictions` node.
-
-You can specify user access to Downloads folder, Removable drives, or no restrictions at all. Downloads and Removable Drives can be allowed at the same time.
-
-| Property | XML namespace (alias) |
-|-|-|
-|`FileExplorerNamespaceRestrictions`|`https://schemas.microsoft.com/AssignedAccess/201810/config` (rs5)|
-|`AllowedNamespace:Downloads`|`https://schemas.microsoft.com/AssignedAccess/201810/config` (rs5)|
-|`AllowRemovableDrives`|`https://schemas.microsoft.com/AssignedAccess/2020/config` (v3)|
-|`NoRestriction`|`https://schemas.microsoft.com/AssignedAccess/2020/config` (v3)|
-
-:::row:::
-:::column span="2":::
-#### Scenario
-:::column-end:::
-:::column span="2":::
-#### XML snippet
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="2":::
-**Block everything**
-
-Either don't use the node or leave it empty
-:::column-end:::
-:::column span="2":::
-
-```xml
-<rs5:FileExplorerNamespaceRestrictions>
-</rs5:FileExplorerNamespaceRestrictions>
-```
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="2":::
-**Only allow downloads**
-:::column-end:::
-:::column span="2":::
-```xml
-<rs5:FileExplorerNamespaceRestrictions>
-    <rs5:AllowedNamespace Name="Downloads"/>
-</rs5:FileExplorerNamespaceRestrictions>
-```
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="2":::
-**Only allow removable drives**
-:::column-end:::
-:::column span="2":::
-```xml
-<rs5:FileExplorerNamespaceRestrictions>
-    <v3:AllowRemovableDrives />
-</rs5:FileExplorerNamespaceRestrictions>
-```
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="2":::
-**Allow both Downloads, and removable drives**
-:::column-end:::
-:::column span="2":::
-```xml
-<rs5:FileExplorerNamespaceRestrictions>
-    <rs5:AllowedNamespace Name="Downloads"/>
-    <v3:AllowRemovableDrives/>
-</rs5:FileExplorerNamespaceRestrictions>
-```
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column span="2":::
-**No restrictions, all locations are allowed**
-:::column-end:::
-:::column span="2":::
-```xml
-<rs5:FileExplorerNamespaceRestrictions>
-    <v3:NoRestriction />
-</rs5:FileExplorerNamespaceRestrictions>
-```
-:::column-end:::
-:::row-end:::
-
-> [!TIP]
-> To grant access to File Explorer in a restricted user experience, add `Explorer.exe` to the list of allowed apps, and pin a shortcut to the Start menu.
-
-::: zone-end
 
 ## Next steps
 

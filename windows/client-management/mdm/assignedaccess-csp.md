@@ -15,7 +15,6 @@ The AssignedAccess configuration service provider (CSP) is used to configure a k
 
 To learn more about how to configure Assigned Access, see [Configure kiosks and restricted user experiences](/windows/configuration/assigned-access).
 
-Test relative link: [Configure kiosks and restricted user experiences](../../configuration/assigned-access/index.md)
 <!-- AssignedAccess-Editable-End -->
 
 <!-- AssignedAccess-Tree-Begin -->

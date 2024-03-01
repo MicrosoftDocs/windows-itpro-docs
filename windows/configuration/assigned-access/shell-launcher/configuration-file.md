@@ -50,7 +50,7 @@ The Shell Launcher configuration XML is versioned. The version is defined in the
 |Windows 10|`V2`|http://schemas.microsoft.com/ShellLauncher/2019/Configuration|
 |Windows 10|default|http://schemas.microsoft.com/ShellLauncher/2018/Configuration|
 
-To authorize a compatible configuration XML that includes version-specific elements and attributes, always include the namespace of the add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the kiosk application to execute in full screen, use the below example. Notice the alias `V2` associated to `http://schemas.microsoft.com/ShellLauncher/2019/Configuration` namespace, and the alias is tagged on the `AppType` and `AllAppsFullScreen` properties inline.
+To authorize a compatible configuration XML that includes version-specific elements and attributes, always include the namespace of the add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the kiosk application to execute in full screen, use the below example. Note the alias `V2` associated to `http://schemas.microsoft.com/ShellLauncher/2019/Configuration` namespace, and the alias is tagged on the `AppType` and `AllAppsFullScreen` properties inline.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
