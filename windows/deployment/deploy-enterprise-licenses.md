@@ -484,68 +484,73 @@ Use the following guides to verify each one of these requirements:
 
   For more information, see [Assigning licenses to users](#assign-licenses-to-users).
 
-## Known issues
+## Recommended practices
 
-- When a device has been offline for an extended period of time, the Subscription Activation might not reactivate automatically on the device. To resolve this issue, use Conditional Access policies to control access by excluding one of the following cloud apps from their Conditional Access policies using **Select Excluded Cloud Apps**: \
+### Adding Conditional Access policy
 
-  - [Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
-  - [Windows Store for Business, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
+When a device has been offline for an extended period of time, the Subscription Activation might not reactivate automatically on the device. To resolve this issue, use Conditional Access policies to control access by excluding one of the following cloud apps from their Conditional Access policies using **Select Excluded Cloud Apps**:
 
-  Although the app ID is the same in both instances, the name of the cloud app depends on the tenant.
+- [Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
 
-  For more information about configuring exclusions in Conditional Access policies, see [Application exclusions](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa#application-exclusions).
+- [Windows Store for Business, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
 
-  <!-- 8605089 -->
+Although the app ID is the same in both instances, the name of the cloud app depends on the tenant.
 
-  Setting this Conditional Access policy ensures that Subscription Activation continues to work seamlessly.
+For more information about configuring exclusions in Conditional Access policies, see [Application exclusions](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa#application-exclusions).
 
-  Starting with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later, users are prompted for authentication with a toast notification when Subscription Activation needs to reactivate. The toast notification will show the following message:
+<!-- 8605089 -->
 
-  > **Your account requires authentication**
+Setting this Conditional Access policy ensures that Subscription Activation continues to work seamlessly.
+
+Starting with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later, users are prompted for authentication with a toast notification when Subscription Activation needs to reactivate. The toast notification will show the following message:
+
+> **Your account requires authentication**
+>
+> **Please sign in to your work or school account to verify your information.**
+
+Additionally, in the [**Activation**](ms-settings:activation) pane, the following message might appear:
+
+> **Please sign in to your work or school account to verify your information.**
+
+The prompt for authentication usually occurs when a device has been offline for an extended period of time. This change eliminates the need for an exclusion in the Conditional Access policy for Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later. A Conditional Access policy can still be used with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later if the prompt for user authentication via a toast notification isn't desired.
+
+### Make sure Windows Update isn't blocked
+
+If a device isn't able to connect to Windows Update, it can lose activation status or be blocked from upgrading to Windows Enterprise. Make sure that Windows Update isn't blocked on the device:
+
+- Using `gpedit.msc` or group policy editor in the domain, make sure that the following group policy setting is set to **Disabled** or **Not Configured**:
+
+  ::: zone pivot="windows-11"
+
+  > **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Manage updates offered from Windows Server Update Service** > **Do not connect to any Windows Update Internet locations**
+
+  ::: zone-end
+
+  ::: zone pivot="windows-10"
+
+  > **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Do not connect to any Windows Update Internet locations**
+
+  ::: zone-end
+
+  If this policy is set to **Enabled**, it must be changed to **Disabled** or **Not Configured**.
+
+- In the following registry key of the registry:
+
+  > `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`
+
+  check if the value `DoNotConnectToWindowsUpdateInternetLocations` exists. If the value does exist, verify that it has a REG_DWORD value of  `0`. If the value is instead set to `1`, it must be changed to `0`. The value can be changed by running the following command from an elevated command prompt:
+
+  ```cmd
+  reg.exe add HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate /v DoNotConnectToWindowsUpdateInternetLocations /t REG_DWORD /d 1 /f
+  ```
+
+  > [!NOTE]
   >
-  > **Please sign in to your work or school account to verify your information.**
+  > Make sure to first check the group policy of **Do not connect to any Windows Update Internet locations**. If the policy is **Enabled**, then this registry key will eventually be reset back to `1` even after it's manually set to `0` via `reg.exe`. Setting the policy of **Do not connect to any Windows Update Internet locations** to **Disabled** or **Not Configured** will make sure the registry value remains as `0`.
 
-  Additionally, in the [**Activation**](ms-settings:activation) pane, the following message might appear:
+### Delay in the activation of Enterprise license of Windows
 
-  > **Please sign in to your work or school account to verify your information.**
-
-  The prompt for authentication usually occurs when a device has been offline for an extended period of time. This change eliminates the need for an exclusion in the Conditional Access policy for Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later. A Conditional Access policy can still be used with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later if the prompt for user authentication via a toast notification isn't desired.
-
-- If a device isn't able to connect to Windows Update, it can lose activation status or be blocked from upgrading to Windows Enterprise. Make sure that Windows Update isn't blocked on the device:
-
-  - Using `gpedit.msc` or group policy editor in the domain, make sure that the following group policy setting is set to **Disabled** or **Not Configured**:
-
-    ::: zone pivot="windows-11"
-
-    **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Manage updates offered from Windows Server Update Service** > **Do not connect to any Windows Update Internet locations**
-
-    ::: zone-end
-
-    ::: zone pivot="windows-10"
-
-    **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Do not connect to any Windows Update Internet locations**
-
-    ::: zone-end
-
-    If this policy is set to **Enabled**, it must be changed to **Disabled** or **Not Configured**.
-
-  - In the following registry key:
-
-    `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`
-
-    check if the value `DoNotConnectToWindowsUpdateInternetLocations` exists. If the value does exist, verify that it has a REG_DWORD value of  `0`. If the value is instead set to `1`, it must be changed to `0`. The value can be changed by running the following command from an elevated command prompt:
-
-    ```cmd
-    reg.exe add HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate /v DoNotConnectToWindowsUpdateInternetLocations /t REG_DWORD /d 1 /f
-    ```
-
-    > [!NOTE]
-    >
-    > Make sure to first check the group policy of **Do not connect to any Windows Update Internet locations**. If the policy is **Enabled**, then this registry key will eventually be reset back to `1` even after it's manually set to `0` via `reg.exe`. Setting the policy of **Do not connect to any Windows Update Internet locations** to **Disabled** or **Not Configured** will make sure the registry value remains as `0`.
-
-- Delay in the activation of Enterprise license of Windows.
-
-  There might be a delay in the activation of the Enterprise license in Windows. This delay is by design. Windows uses a built-in cache when determining upgrade eligibility. This behavior includes processing responses that indicate that the device isn't eligible for an upgrade. It can take up to four days after a qualifying purchase before the upgrade eligibility is enabled and the cache expires.
+There might be a delay in the activation of the Enterprise license in Windows. This delay is by design. Windows uses a built-in cache when determining upgrade eligibility. This behavior includes processing responses that indicate that the device isn't eligible for an upgrade. It can take up to four days after a qualifying purchase before the upgrade eligibility is enabled and the cache expires.
 
 ## Virtual Desktop Access (VDA)
 
