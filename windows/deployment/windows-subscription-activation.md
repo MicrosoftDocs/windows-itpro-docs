@@ -12,7 +12,7 @@ ms.collection:
   - tier2
 ms.topic: concept-article
 zone_pivot_groups: windows-versions-11-10
-ms.date: 02/29/2024
+ms.date: 03/01/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -46,6 +46,8 @@ Organizations that have an enterprise agreement can also benefit from the servic
 > [!NOTE]
 >
 > Subscription activation is available for qualifying devices running currently supported versions of Windows. Subscription activation can't be used to upgrade to a newer version of Windows.
+
+### Adding Conditional Access policy
 
 Organizations that use the Subscription Activation feature to enable users to "step-up" from one version of Windows to another and use Conditional Access policies to control access need to exclude one of the following cloud apps from their Conditional Access policies using **Select Excluded Cloud Apps**:
 
