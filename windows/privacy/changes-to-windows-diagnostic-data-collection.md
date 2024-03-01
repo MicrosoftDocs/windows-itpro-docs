@@ -9,6 +9,7 @@ ms.author: danbrown
 manager: laurawi
 ms.date: 06/04/2020
 ms.topic: conceptual
+ms.collection: privacy-windows
 ---
 
 # Changes to Windows diagnostic data collection
@@ -84,3 +85,12 @@ Starting with the January 2023 preview cumulative update, how you enable the pro
 We made this change to help ensure the diagnostic data for all devices in an organization is processed in a consistent way and in the same geographic region, and to help us implement our plan to [store and process EU Data for European enterprise customers in the EU](/privacy/eudb/eu-data-boundary-learn).
 
 For more information, see [Enable Windows diagnostic data processor configuration](configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration).
+
+## Data collection changes
+
+> [!NOTE]
+> The information in this section applies to the following versions of Windows:
+> - Windows 10, versions 22H2 and newer
+> - Windows 11, versions 23H2 and newer
+
+As of March 6, 2024, Microsoft Edge diagnostic data is collected separately from Windows diagnostic data on Windows 10 and Windows 11 devices in the European Economic Area. The collection of Microsoft Edge diagnostic data is subject to its own settings. For more information related to this change, see [Microsoft Edge, browsing data, and privacy](https://support.microsoft.com/windows/bb8174ba-9d73-dcf2-9b4a-c582b4e640dd).
