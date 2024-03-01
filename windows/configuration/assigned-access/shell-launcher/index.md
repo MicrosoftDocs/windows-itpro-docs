@@ -17,13 +17,13 @@ Practical examples include:
 
 Shell Launcher controls which application the user sees as the shell after sign-in. It doesn't prevent the user from accessing other desktop applications and system components. From a custom shell, you can launch secondary views displayed on multiple monitors, or launch other apps in full screen on user's demand.
 
-Methods of controlling access to other desktop applications and system components can be used with Shell Launcher. These methods include, but are not limited to:
+With Shell Launcher you can use features and methods to control access to other applications or system components. These methods include, but are not limited to:
 
 - Configuration Service Provider (CSP): you can use a Mobile Device Management (MDM) solution like Microsoft Intune
 - Group policy (GPO)
 - [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)
 
-Shell Launcher is part of the [Assigned Access](../overview.md) feature, which you can use to set up a kiosk device or a restricted user experience. To learn about the differences between Shell Launcher and the other options offered by Assigned Access, see [Configure kiosks and restricted user experiences](../index.md).
+Shell Launcher is part of the [Assigned Access](../overview.md) feature, which allows you to configure kiosks or a restricted user experiences. To learn about the differences between Shell Launcher and the other options offered by Assigned Access, see [Configure kiosks and restricted user experiences](../index.md).
 
 [!INCLUDE [shell-launcher](../../../../includes/licensing/shell-launcher.md)]
 

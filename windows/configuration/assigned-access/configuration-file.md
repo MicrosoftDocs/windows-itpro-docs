@@ -38,6 +38,43 @@ Here's a basic example of an Assigned Access configuration file, with one profil
 </AssignedAccessConfiguration>
 ```
 
+## Versioning
+
+The Assigned Access configuration XML is versioned. The version is defined in the XML root element, and it's used to determine which schema to use to validate the XML file. The version is also used to determine which features are available for the configuration. Here's a table of the versions, aliases used in the documentation examples, and namespaces:
+
+| Version | Alias | Namespace |
+|-|-|-|
+|Windows 11, version 22H2|v5|http://schemas.microsoft.com/AssignedAccess/2022/config|
+|Windows 11, version 21H2|v4|http://schemas.microsoft.com/AssignedAccess/2021/config|
+|Windows 10|v5|http://schemas.microsoft.com/AssignedAccess/202010/config|
+|Windows 10|v3|http://schemas.microsoft.com/AssignedAccess/2020/config|
+|Windows 10|rs5|http://schemas.microsoft.com/AssignedAccess/201810/config|
+|Windows 10|default|http://schemas.microsoft.com/AssignedAccess/2017/config|
+
+To authorize a compatible configuration XML that includes version-specific elements and attributes, always include the namespace of the add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the `StartPins` feature that was added in Windows 11, version 22H2, use the below example. Notice the alias `v5` associated to the `http://schemas.microsoft.com/AssignedAccess/2022/config` namespace for 22H2 release, and the alias is tagged on `StartPins` inline.
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
+    <Profiles>
+        <Profile Id="{GUID}">
+            <!-- Add configuration here as needed -->
+            <v5:StartPins>
+              <!-- Add StartPins configuration here -->
+            </v5:StartPins>
+        </Profile>
+    </Profiles>
+    <Configs>
+        <Config>
+            <!-- Add configuration here as needed -->
+        </Config>
+    </Configs>
+</AssignedAccessConfiguration>
+```
+
+Here you can find the Assigned Access XML schema definitions: [Assigned Access XML Schema Definition (XSD)](xsd.md).
+
 ## Profiles
 
 A configuration file can contain one or more profiles. Each profile is identified by a unique identified `Profile Id`, for example:
@@ -583,3 +620,8 @@ Either don't use the node or leave it empty
 > Review some practical examples of Assigned Access XML configurations:
 >
 > [Assigned Access examples](examples.md)
+
+
+<!--
+> [!IMPORTANT]
+> - You can't set both KioskModeApp and ShellLauncher at the same time on the device.

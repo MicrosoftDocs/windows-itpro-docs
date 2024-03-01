@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Create a Shell Launcher configuration file
 
-To configure Shell Launcher, you must create and apply a configuration XML file to your devices. The configuration file must conform to a schema, as defined in [Shell Launcher XML Schema Definition (XSD)](xsd.md).
+To configure Shell Launcher, you must create and apply a configuration XML file to your devices. The configuration file must conform to a *schema*, as defined in [Shell Launcher XML Schema Definition (XSD)](xsd.md).
 
 This article describes how to configure a Shell Launcher configuration file, including practical examples.
 
@@ -40,6 +40,38 @@ Here's a basic example of a Shell Launcher configuration file, with one profile 
   </Configs>
 </ShellLauncherConfiguration>
 ```
+
+## Versioning
+
+The Shell Launcher configuration XML is versioned. The version is defined in the XML root element, and it's used to determine which schema to use to validate the XML file. The version is also used to determine which features are available for the configuration. Here's a table of the versions, aliases used in the documentation examples, and namespaces:
+
+| Version | Alias | Namespace |
+|-|-|-|
+|Windows 10|V2|http://schemas.microsoft.com/ShellLauncher/2019/Configuration|
+|Windows 10|default|http://schemas.microsoft.com/ShellLauncher/2018/Configuration|
+
+To authorize a compatible configuration XML that includes version-specific elements and attributes, always include the namespace of the add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the kiosk application to execute in full screen, use the below example. Notice the alias `V2` associated to `http://schemas.microsoft.com/ShellLauncher/2019/Configuration` namespace, and the alias is tagged on the `AppType` and `AllAppsFullScreen` properties inline.
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<ShellLauncherConfiguration
+  xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
+  xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
+  <Profiles>
+    <Profile Id="{GUID}">
+      <!-- Add configuration here as needed -->
+      <Shell Shell="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" V2:AppType="Desktop" V2:AllAppsFullScreen="true">
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+      <!-- Add configuration here as needed -->
+    </Config>
+  </Configs>
+</ShellLauncherConfiguration>
+```
+
+Here you can find the [Shell Launcher XML Schema Definitions (XSDs)](xsd.md).
 
 ## Profiles
 
@@ -115,16 +147,14 @@ In the next example, Microsoft Edge is executed in full screen, opening a websit
 
 #### ReturnCodeActions
 
-Shell Launcher defines four actions to handle app exits. You can customize Shell Launcher and use the actions based on different exit code.
+Shell Launcher defines four actions to handle app exits. You can customize Shell Launcher and use the actions based on different exit code. Here are the `ReturnCodeActions` enums:
 
-| Value | Description |
-|--|--|
-| `0` | Restart the shell |
-| `1` | Restart the device |
-| `2` | Shut down the device |
-| `3` | Do nothing |
+- `RestartShell`
+- `RestartDevice`
+- `ShutdownDevice`
+- `DoNothing`
 
-These actions can be used as default action, or can be mapped to a specific exit code. Refer to [Shell Launcher](/windows-hardware/customize/enterprise/wesl-usersettingsetcustomshell) to learn how to use these codes with Shell Launcher WMI.
+The actions can be used as default action, or mapped to a specific exit code. Refer to [Shell Launcher](/windows-hardware/customize/enterprise/wesl-usersettingsetcustomshell) to learn how to use exit codes with Shell Launcher WMI.
 
 You can specify at most four custom actions mapping to four exit codes, and one default action for all other exit codes. When an app exits, and if the exit code isn't found in the custom action mapping, or there's no default action defined, nothing happens. For this reason, you should at least define `DefaultAction`.
 

@@ -146,7 +146,6 @@ $assignedAccessConfiguration = @"
                         {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk"}
                     ]
                 }]]>
-            </v5:StartPins>
             <Taskbar ShowTaskbar="true"/>
         </Profile>
     </Profiles>
