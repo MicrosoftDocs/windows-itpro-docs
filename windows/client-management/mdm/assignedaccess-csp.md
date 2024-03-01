@@ -314,160 +314,7 @@ Here's the Shell Launcher XSD reference article: [Shell Launcher XML Schema Defi
             </Meta>
             <Data>
             <![CDATA[
-            <?xml version="1.0" encoding="utf-8"?>
-            <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration">
-                <Profiles>
-                    <!--default profile defines default shell and action for general purposes, should NOT be bound to any account-->
-                    <DefaultProfile>
-                        <Shell Shell="%SystemRoot%\explorer.exe">
-                            <!--DefaultAction is optional; if not defined, the pre-defined default action is "restart shell"-->
-                            <DefaultAction Action="RestartShell"/>
-                        </Shell>
-                    </DefaultProfile>
-                    <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}">
-                        <Shell Shell="%ProgramFiles%\Internet Explorer\iexplore.exe -k www.bing.com">
-                            <!--ReturnCodeActions is optional, when none is provided, will always execute default action-->
-                            <ReturnCodeActions>
-                                <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
-                                <ReturnCodeAction ReturnCode="-1" Action="RestartDevice"/>
-                                <ReturnCodeAction ReturnCode="255" Action="ShutdownDevice"/>
-                            </ReturnCodeActions>
-                            <!--restart device after shell exits, if its return code does not match any of the above-->
-                            <DefaultAction Action="RestartDevice"/>
-                        </Shell>
-                    </Profile>
-                    <Profile Id="{24A73092-4F3F-44CC-8375-53F13FE213F7}">
-                        <Shell Shell="%SystemRoot%\System32\cmd.exe"/>
-                        <!--DefaultAction is optional, if none is supplied, will use DefaultAction defined in DefaultProfile-->
-                    </Profile>
-                </Profiles>
-                <Configs>
-                    <Config>
-                        <!--AutoLogon account-->
-                        <AutoLogonAccount/>
-                        <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}"/>
-                    </Config>
-                    <Config>
-                        <!--BUILTIN\Administrators SID-->
-                        <Account Sid="S-1-5-32-544"/>
-                        <Profile Id="{24A73092-4F3F-44CC-8375-53F13FE213F7}"/>
-                    </Config>
-                    <Config>
-                        <!--local account-->
-                        <Account Name="sluser1"/>
-                        <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}"/>
-                    </Config>
-                </Configs>
-            </ShellLauncherConfiguration>
-            ]]>
-            </Data>
-          </Item>
-        </Add>
-        <Final />
-      </SyncBody>
-    </SyncML>
-    ```
-
-- Add AutoLogon
-
-    This function creates an auto-logon account on your behalf. It's a standard user with no password. The auto-logon account is managed by AssignedAccessCSP, so the account name isn't exposed.
-
-    > [!NOTE]
-    > The auto-logon function is designed to be used after OOBE with provisioning packages.
-
-    ```xml
-    <SyncML xmlns='SYNCML:SYNCML1.2'>
-      <SyncBody>
-        <Add>
-          <CmdID>2</CmdID>
-          <Item>
-            <Target>
-              <LocURI>./Device/Vendor/MSFT/AssignedAccess/ShellLauncher</LocURI>
-            </Target>
-            <Meta>
-              <Format xmlns="syncml:metinf">chr</Format>
-            </Meta>
-            <Data>
-            <![CDATA[
-            <?xml version="1.0" encoding="utf-8"?>
-            <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration">
-                <Profiles>
-                    <DefaultProfile>
-                        <Shell Shell="%SystemRoot%\explorer.exe"/>
-                    </DefaultProfile>
-                    <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}">
-                        <Shell Shell="%ProgramFiles%\Internet Explorer\iexplore.exe -k www.bing.com">
-                            <ReturnCodeActions>
-                                <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
-                                <ReturnCodeAction ReturnCode="-1" Action="RestartDevice"/>
-                                <ReturnCodeAction ReturnCode="255" Action="ShutdownDevice"/>
-                            </ReturnCodeActions>
-                            <DefaultAction Action="RestartDevice"/>
-                        </Shell>
-                    </Profile>
-                </Profiles>
-                <Configs>
-                    <Config>
-                        <AutoLogonAccount/>
-                        <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}"/>
-                    </Config>
-                </Configs>
-            </ShellLauncherConfiguration>
-            ]]>
-            </Data>
-          </Item>
-        </Add>
-        <Final />
-      </SyncBody>
-    </SyncML>
-    ```
-
-- V2 Add
-
-    ```xml
-    <SyncML xmlns='SYNCML:SYNCML1.2'>
-      <SyncBody>
-        <Add>
-          <CmdID>2</CmdID>
-          <Item>
-            <Target>
-              <LocURI>./Device/Vendor/MSFT/AssignedAccess/ShellLauncher</LocURI>
-            </Target>
-            <Meta>
-              <Format xmlns="syncml:metinf">chr</Format>
-            </Meta>
-            <Data>
-            <![CDATA[
-            <?xml version="1.0" encoding="utf-8"?>
-            <!--Using the http://schemas.microsoft.com/ShellLauncher/2019/Configuration namespace will opt-in to customshellhost.exe experience which can run win32 and UWP apps-->
-            <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
-    xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
-                <Profiles>
-                    <DefaultProfile>
-                        <Shell Shell="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" V2:AppType="UWP" V2:AllAppsFullScreen="true">
-                            <!--DefaultAction is optional; if not defined, the pre-defined default action is "restart shell"-->
-                            <DefaultAction Action="RestartShell"/>
-                        </Shell>
-                    </DefaultProfile>
-                    <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}">
-                        <Shell Shell="%SystemRoot%\System32\notepad.exe" V2:AllAppsFullScreen="true">
-                            <ReturnCodeActions>
-                                <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
-                                <ReturnCodeAction ReturnCode="-1" Action="RestartDevice"/>
-                                <ReturnCodeAction ReturnCode="255" Action="ShutdownDevice"/>
-                                <ReturnCodeAction ReturnCode="1" Action="DoNothing"/>
-                            </ReturnCodeActions>
-                            <DefaultAction Action="RestartShell"/>
-                        </Shell>
-                    </Profile>
-                </Profiles>
-                <Configs>
-                    <Config>
-                        <Account Name="sluser1"/>
-                        <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}"/>
-                    </Config>
-                </Configs>
-            </ShellLauncherConfiguration>
+            <!-- Add your XML configuration. For more information, see the Shell Launcher XSD reference article. -->
             ]]>
             </Data>
           </Item>
@@ -850,12 +697,6 @@ Escape and CDATA are mechanisms used when handling xml in xml. Consider that it'
             &lt;Profile Id=&quot;{9A2A490F-10F6-4764-974A-43B19E722C23}&quot;&gt;
                 &lt;AllAppsList&gt;
                     &lt;AllowedApps&gt;
-                        &lt;App AppUserModelId=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
-                        &lt;App AppUserModelId=&quot;Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo&quot; /&gt;
-                        &lt;App AppUserModelId=&quot;Microsoft.Windows.Photos_8wekyb3d8bbwe!App&quot; /&gt;
-                        &lt;App AppUserModelId=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
-                        &lt;App AppUserModelId=&quot;Microsoft.WindowsCalculator_8wekyb3d8bbwe!App&quot; /&gt;
-                        &lt;App DesktopAppPath=&quot;%windir%\system32\mspaint.exe&quot; /&gt;
                         &lt;App DesktopAppPath=&quot;C:\Windows\System32\notepad.exe&quot; /&gt;
                     &lt;/AllowedApps&gt;
                 &lt;/AllAppsList&gt;
@@ -867,14 +708,6 @@ Escape and CDATA are mechanisms used when handling xml in xml. Consider that it'
                               &lt;defaultlayout:StartLayout GroupCellWidth=&quot;6&quot;&gt;
                                 &lt;start:Group Name=&quot;Group1&quot;&gt;
                                   &lt;start:Tile Size=&quot;4x4&quot; Column=&quot;0&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
-                                  &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;2&quot; AppUserModelID=&quot;Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo&quot; /&gt;
-                                  &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.Windows.Photos_8wekyb3d8bbwe!App&quot; /&gt;
-                                  &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;4&quot; AppUserModelID=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
-                                  &lt;start:Tile Size=&quot;4x2&quot; Column=&quot;0&quot; Row=&quot;4&quot; AppUserModelID=&quot;Microsoft.WindowsCalculator_8wekyb3d8bbwe!App&quot; /&gt;
-                                &lt;/start:Group&gt;
-                                &lt;start:Group Name=&quot;Group2&quot;&gt;
-                                  &lt;start:DesktopApplicationTile Size=&quot;2x2&quot; Column=&quot;2&quot; Row=&quot;0&quot; DesktopApplicationID=&quot;{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\mspaint.exe&quot; /&gt;
-                                  &lt;start:DesktopApplicationTile Size=&quot;2x2&quot; Column=&quot;0&quot; Row=&quot;0&quot; DesktopApplicationID=&quot;{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\notepad.exe&quot; /&gt;
                                 &lt;/start:Group&gt;
                               &lt;/defaultlayout:StartLayout&gt;
                             &lt;/StartLayoutCollection&gt;
@@ -924,12 +757,6 @@ Escape and CDATA are mechanisms used when handling xml in xml. Consider that it'
         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
           <AllAppsList>
             <AllowedApps>
-              <App AppUserModelId="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
-              <App AppUserModelId="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
-              <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
-              <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-              <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
-              <App DesktopAppPath="%windir%\system32\mspaint.exe" />
               <App DesktopAppPath="C:\Windows\System32\notepad.exe" />
             </AllowedApps>
           </AllAppsList>
@@ -941,10 +768,6 @@ Escape and CDATA are mechanisms used when handling xml in xml. Consider that it'
                               <defaultlayout:StartLayout GroupCellWidth="6">
                                 <start:Group Name="Group1">
                                   <start:Tile Size="4x4" Column="0" Row="0" AppUserModelID="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
-                                  <start:Tile Size="2x2" Column="4" Row="2" AppUserModelID="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
-                                  <start:Tile Size="2x2" Column="4" Row="0" AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
-                                  <start:Tile Size="2x2" Column="4" Row="4" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                                  <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
                                 </start:Group>
                                 <start:Group Name="Group2">
                                   <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\mspaint.exe" />

@@ -101,7 +101,7 @@ The properties of a `KioskModeApp` profile are:
 
 | Property| Description | Details |
 |-|-|-|
-|`AppUserModelId`|The Application User Model ID (AUMID) of the UWP app.|Learn how to [Find the Application User Model ID of an installed app](../../store/find-aumid.md).|
+|`AppUserModelId`|The Application User Model ID (AUMID) of the UWP app.|Learn how to [Find the Application User Model ID of an installed app](../store/find-aumid.md).|
 |`v4:ClassicAppPath`|The full path to a desktop app executable.|This is the path to the desktop app that will be used in the kiosk mode. The path can contain system environment variables in the form of `%variableName%`.|
 |`v4:ClassicAppArguments`|The arguments to be passed to the desktop app.|This property is optional.|
 
@@ -130,7 +130,7 @@ Within the `AllAppList` node you define a list of applications that are allowed 
 
 | Property| Description | Details |
 |-|-|-|
-|`AppUserModelId`|The Application User Model ID (AUMID) of the UWP app.|Learn how to [Find the Application User Model ID of an installed app](../../store/find-aumid.md).|
+|`AppUserModelId`|The Application User Model ID (AUMID) of the UWP app.|Learn how to [Find the Application User Model ID of an installed app](../store/find-aumid.md).|
 |`DesktopAppPath`|The full path to a desktop app executable.|This is the path to the desktop app that will be used in the kiosk mode. The path can contain system environment variables in the form of `%variableName%`.|
 |`rs5:AutoLaunch="true"`|A Boolean attribute to indicate whether to launch the app automatically when the user signs in.|This property is optional. Only one application is allowed to be auto-launched.|
 |`rs5:AutoLaunchArguments`|The arguments to be passed to the app that is configured with `AutoLaunch`.|This property is optional.|
