@@ -14,6 +14,8 @@ ms.date: 02/29/2024
 The AssignedAccess configuration service provider (CSP) is used to configure a kiosk or restricted user experience. Once the CSP is executed, the next user login that is associated with the Assigned Access profile puts the device into the kiosk mode specified in the CSP configuration.
 
 To learn more about how to configure Assigned Access, see [Configure kiosks and restricted user experiences](/windows/configuration/assigned-access).
+
+Test relative link: [Configure kiosks and restricted user experiences](../../configuration/assigned-access/index.md)
 <!-- AssignedAccess-Editable-End -->
 
 <!-- AssignedAccess-Tree-Begin -->

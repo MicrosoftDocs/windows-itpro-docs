@@ -151,11 +151,11 @@ Example:
 
 ### Start menu customizations
 
-For a restricted user experience profile, you must define the Start layout. The Start layout contains a list of applications that are pinned to the Start menu. You can choose to pin all the allowed applications to the Start menu, or a subset. The easiest way to create a customized Start layout is to configure the Start menu on a test device and then export the layout.
+For a restricted user experience profile (`AllAppList`), you must define the Start layout. The Start layout contains a list of applications that are pinned to the Start menu. You can choose to pin all the allowed applications to the Start menu, or a subset. The easiest way to create a customized Start layout is to configure the Start menu on a test device and then export the layout.
 
 ::: zone pivot="windows-10"
 
-To learn more, see [Customize the Start menu](../start/customize-and-export-start-layout.md)
+To learn how to customize and export a Start menu configuration, see [Customize the Start menu](../start/customize-and-export-start-layout.md).
 
 With the exported Start menu configuration, use the `StartLayout` element and add the content of the XML file. For example:
 
@@ -202,7 +202,9 @@ Example with some apps pinned:
 
 ::: zone pivot="windows-11"
 
-To learn more, see [Customize the Start menu](../start/customize-start-menu-layout-windows-11.md)
+To learn how to customize and export a Start menu configuration, see [Customize the Start menu](../start/customize-start-menu-layout-windows-11.md).
+
+### StartPins
 
 With the exported Start menu configuration, use the `v5:StartPins` element and add the content of the JSON file. For example:
 
@@ -236,7 +238,7 @@ Example with some apps pinned:
 
 You can't pin apps on the taskbar in a restricted user experience, and it's not supported to configure a Taskbar layout using the `<CustomTaskbarLayoutCollection>` tag in a layout modification XML as part of the Assigned Access configuration.
 
-The only Taskbar customization available in Windows 10 is the possiblity to show or hide it, using the `ShowTaskbar` boolean attribute.
+The only Taskbar customization available is the possiblity to show or hide it, using the `ShowTaskbar` boolean attribute.
 
 The following example exposes the taskbar:
 
@@ -257,7 +259,9 @@ The following example hides the taskbar:
 
 ::: zone pivot="windows-11"
 
-You can customize the Taskbar by creating a custom layout and adding it to your XML file. To learn more, see [Customize the Taskbar](../taskbar/customize-taskbar-windows-11.md).
+You can customize the Taskbar by creating a custom layout and adding it to your XML file. To learn how to customize and export the Taskbar configuration, see [Customize the Taskbar](../taskbar/customize-taskbar-windows-11.md).
+
+With the exported Taskbar configuration, use the `v5:TaskbarLayout` element and add the content of the XML file. For example:
 
 > [!NOTE]
 > In Windows 11, the `ShowTaskbar` attribute is no-op. Configure it with a value of `true`.
@@ -290,15 +294,11 @@ Here's an example of a custom Taskbar with a few apps pinned:
 
 ::: zone-end
 
-<!-- I'm here -->
+
 
 ::: zone pivot="windows-11"
 
-### StartPins
 
-### TaskbarLayout
-
-### Taskbar
 
 ::: zone-end
 
