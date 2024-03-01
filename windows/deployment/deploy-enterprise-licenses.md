@@ -501,13 +501,13 @@ Use the following guides to verify each one of these requirements:
 
   Starting with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later, users are prompted for authentication with a toast notification when Subscription Activation needs to reactivate. The toast notification will show the following message:
 
-  **Your account requires authentication
-
-  Please sign in to your work or school account to verify your information.**
+  > **Your account requires authentication**
+  >
+  > **Please sign in to your work or school account to verify your information.**
 
   Additionally, in the [**Activation**](ms-settings:activation) pane, the following message might appear:
 
-  **Please sign in to your work or school account to verify your information.**
+  > **Please sign in to your work or school account to verify your information.**
 
   The prompt for authentication usually occurs when a device has been offline for an extended period of time. This change eliminates the need for an exclusion in the Conditional Access policy for Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later. A Conditional Access policy can still be used with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later if the prompt for user authentication via a toast notification isn't desired.
 
