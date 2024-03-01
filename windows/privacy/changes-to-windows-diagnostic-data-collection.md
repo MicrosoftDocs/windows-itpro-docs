@@ -90,7 +90,7 @@ For more information, see [Enable Windows diagnostic data processor configuratio
 
 > [!NOTE]
 > The information in this section applies to the following versions of Windows:
-> - Windows 10, versions 22H2 and newer
-> - Windows 11, versions 23H2 and newer
+> - Windows 10, version 22H2 and newer
+> - Windows 11, version 23H2 and newer
 
 As of March 6, 2024, Microsoft Edge diagnostic data is collected separately from Windows diagnostic data on Windows 10 and Windows 11 devices in the European Economic Area. The collection of Microsoft Edge diagnostic data is subject to its own settings. For more information related to this change, see [Microsoft Edge, browsing data, and privacy](https://support.microsoft.com/windows/bb8174ba-9d73-dcf2-9b4a-c582b4e640dd).
