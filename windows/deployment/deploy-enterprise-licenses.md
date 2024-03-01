@@ -522,13 +522,13 @@ If a device isn't able to connect to Windows Update, it can lose activation stat
 
   ::: zone pivot="windows-11"
 
-  > **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Manage updates offered from Windows Server Update Service** > **Do not connect to any Windows Update Internet locations**
+  **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Manage updates offered from Windows Server Update Service** > **Do not connect to any Windows Update Internet locations**
 
   ::: zone-end
 
   ::: zone pivot="windows-10"
 
-  > **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Do not connect to any Windows Update Internet locations**
+  **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Do not connect to any Windows Update Internet locations**
 
   ::: zone-end
 
@@ -536,7 +536,7 @@ If a device isn't able to connect to Windows Update, it can lose activation stat
 
 - In the following registry key of the registry:
 
-  > `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`
+  `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`
 
   check if the value `DoNotConnectToWindowsUpdateInternetLocations` exists. If the value does exist, verify that it has a REG_DWORD value of  `0`. If the value is instead set to `1`, it must be changed to `0`. The value can be changed by running the following command from an elevated command prompt:
 
