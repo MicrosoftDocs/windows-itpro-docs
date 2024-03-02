@@ -17,7 +17,7 @@ feedback_system: None
 
 # COPILOT IN WINDOWS (PREVIEW) SUPPLEMENTAL TERMS
 
-Copilot in Windows is your AI companion that brings productivity to your fingertips. Leveraging Microsoft Copilot (previously named Bing Chat) or Microsoft Copilot with commercial data protection (previously named Bing Chat Enterprise), Copilot in Windows accelerates your tasks, reduces friction, saves you time and provides you with personalized answers, inspiration, and task assistance. Your use of Copilot in Windows is subject to these supplemental terms of use (“Terms”). By using Copilot in Windows, you agree to be bound by these Terms.
+Copilot in Windows is your AI companion that brings productivity to your fingertips by leveraging Microsoft Copilot (previously named Bing Chat), Microsoft Copilot with commercial data protection (previously named Bing Chat Enterprise), or Microsoft Copilot for Microsoft 365. Copilot in Windows accelerates your tasks, reduces friction, saves you time and provides you with personalized answers, inspiration, and task assistance. Your use of Copilot in Windows is subject to these supplemental terms of use (“Terms”). By using Copilot in Windows, you agree to be bound by these Terms.
 
 1. Preview
 
