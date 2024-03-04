@@ -63,7 +63,7 @@ This procedure adds the customized Start and taskbar layout to the user configur
 **To configure Start Layout policy settings in Local Group Policy Editor**
 
 1. On the test computer, press the Windows key, type **gpedit**, and then select **Edit group policy (Control panel)**.
-1. Go to **User Configuration** or **Computer Configuration** &gt; **Administrative Templates** &gt;**Start Menu and Taskbar**.
+1. Go to **User Configuration** or **Computer Configuration** > **Administrative Templates** >**Start Menu and Taskbar**.
    ![start screen layout policy settings.](images/starttemplate.jpg)
 1. Right-click **Start Layout** in the right pane, and click **Edit**.
    This opens the **Start Layout** policy settings.

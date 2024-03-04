@@ -1,14 +1,12 @@
 items:
-- name: Customize the Start menu in Windows 11
-  href: customize-start-menu-layout-windows-11.md
+- name: Customize and export the Start layout
+  href: customize-and-export-start-layout.md
 - name: Supported Start menu CSPs
   href: supported-csp-start-menu-layout-windows.md
 - name: Start layout and taskbar
   href: windows-10-start-layout-options-and-policies.md
 - name: Use XML
   items:
-  - name: Customize and export Start layout
-    href: customize-and-export-start-layout.md
   - name: Add image for secondary Microsoft Edge tiles
     href: start-secondary-tiles.md
   - name: Start layout XML for Windows 10 desktop editions (reference)

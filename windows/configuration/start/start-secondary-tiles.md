@@ -147,7 +147,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 1. On **New project**, select **Finish**. The workspace for your package opens.
 
-1. Expand **Runtime settings** &gt; **Policies** &gt; **Start**, and select **StartLayout**.
+1. Expand **Runtime settings** > **Policies** > **Start**, and select **StartLayout**.
 
    >[!TIP]
    >If **Start** is not listed, check the type of settings you selected in step 1. You must create the project using settings for **All Windows desktop editions**.
@@ -162,7 +162,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 1. In File Explorer, open the project's directory. (The default location is C:\Users\\*user name*\Documents\Windows Imaging and Configuration Designer (WICD)\\*project name*)
 
-1. Open the customizations.xml file in a text editor. The **&lt;Customizations&gt;** section will look like this:
+1. Open the customizations.xml file in a text editor. The **<Customizations>** section will look like this:
 
      ![Customizations file with the placeholder text to replace highlighted.](images/customization-start-edge.png)
 

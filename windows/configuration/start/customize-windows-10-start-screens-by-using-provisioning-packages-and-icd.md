@@ -30,7 +30,7 @@ Three features enable Start and taskbar layout control:
     > [!NOTE]
     > To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
 
--  [You can modify the Start .xml file](../taskbar/configure-windows-10-taskbar.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration.
+- [You can modify the Start .xml file](../taskbar/configure-windows-10-taskbar.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration.
 
 - In Windows Configuration Designer, you use the **Policies/Start/StartLayout** setting to provide the contents of the .xml file that defines the Start and taskbar layout.
 
@@ -61,7 +61,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 1. On **New project**, click **Finish**. The workspace for your package opens.
 
-1. Expand **Runtime settings** &gt; **Policies** &gt; **Start**, and click **StartLayout**.
+1. Expand **Runtime settings** > **Policies** > **Start**, and click **StartLayout**.
 
    > [!TIP]
    > If **Start** is not listed, check the type of settings you selected in step 1. You must create the project using settings for **All Windows desktop editions**.
@@ -72,7 +72,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 1. In File Explorer, open the project's directory. (The default location is C:\Users\\*user name*\Documents\Windows Imaging and Configuration Designer (WICD)\\*project name*)
 
-1. Open the customizations.xml file in a text editor. The **&lt;Customizations&gt;** section will look like this:
+1. Open the customizations.xml file in a text editor. The **<Customizations>** section will look like this:
 
     ![Customizations file with the placeholder text to replace highlighted.](images/customization-start.png)
 
