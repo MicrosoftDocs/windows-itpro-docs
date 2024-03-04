@@ -46,8 +46,6 @@ Here are the steps to configure a kiosk using the Settings app:
     - Which URL should be open when the kiosk accounts signs in
     - When Microsoft Edge should restart after a period of inactivity (if you select to run as a public browser)
 
-    :::image type="content" source="images/settings-choose-app.png" alt-text="Screenshot of the dialog box asking to select an app." border="false":::
-
 1. Select **Close**
 
 - UWP
