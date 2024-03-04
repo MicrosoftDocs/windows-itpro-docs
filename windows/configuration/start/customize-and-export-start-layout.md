@@ -10,10 +10,9 @@ ms.collection:
 
 # Customize and export the Start layout
 
-::: zone pivot="windows-11"
-
-
 > **Looking for OEM information?** See [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar) and [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
+
+::: zone pivot="windows-11"
 
 Your organization can deploy a customized Start layout to your Windows 11 devices. Customizing the Start layout is common when you have similar devices used by many users, or you want to pin specific apps.
 
@@ -175,8 +174,6 @@ For more information and guidance on assigning policies to devices in your organ
 ::: zone-end
 
 ::: zone pivot="windows-10"
-
->**Looking for consumer information?** See [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
 The easiest method for creating a customized Start layout to apply to other Windows 10 devices is to set up the Start screen on a test computer and then export the layout.
 
