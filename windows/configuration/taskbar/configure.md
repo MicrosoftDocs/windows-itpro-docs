@@ -4,7 +4,7 @@ description: Administrators can pin more apps to the taskbar and remove default 
 ms.topic: how-to
 ms.date: 08/18/2023
 appliesto:
-- ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+zone_pivot_groups: windows-versions-11-10
 ---
 
 # Configure Windows Taskbar
