@@ -292,15 +292,15 @@ Once the **System > Activation** pane is open:
 
     1. Under **Activation state**, verify that Windows is activated. It should display the message:
 
-      `Windows is activated with a digital license`
+       `Windows is activated with a digital license`
 
     1. Under **Subscription**, verify that the Windows 11 Enterprise subscription is active. It should display the message:
 
-      `Windows 11 Enterprise subscription is active`
+       `Windows 11 Enterprise subscription is active`
 
-      > [!NOTE]
-      >
-      > If the Windows Enterprise subscription hasn't yet been applied, the **Subscription** pane isn't displayed.
+       > [!NOTE]
+       >
+       > If the Windows Enterprise subscription hasn't yet been applied, the **Subscription** pane isn't displayed.
 
 ::: zone-end
 
@@ -340,24 +340,24 @@ A device is healthy when both the subscription and activation are active. If the
 
 1. To get basic licensing information, run the following command at the command prompt:
 
-  ```cmd
-  slmgr /dli
-  ```
+   ```cmd
+   slmgr /dli
+   ```
 
-  A window with output similar to the following opens:
+   A window with output similar to the following opens:
 
-  ```console
-  Name: Windows(R), Professional edition
-  Description: Windows(R) Operating System, RETAIL channel
-  Partial Product Key: 3V66T
-  License Status: Licensed
-  ```
+   ```console
+   Name: Windows(R), Professional edition
+   Description: Windows(R) Operating System, RETAIL channel
+   Partial Product Key: 3V66T
+   License Status: Licensed
+   ```
 
-  To instead get detailed licensing information, run the following command:
+To instead get detailed licensing information, run the following command:
 
-  ```cmd
-  slmgr /dlv
-  ```
+```cmd
+slmgr /dlv
+```
 
 For more information on **Slmgr**, see [Slmgr.vbs options for obtaining volume activation information](/windows-server/get-started/activation-slmgr-vbs-options).
 
