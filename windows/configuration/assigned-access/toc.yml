@@ -13,6 +13,8 @@ items:
         href: quickstart-restricted-user-experience.md
   - name: How-to guides
     items:
+      - name: Configure Assigned Access
+        href: configure.md
       - name: Create an Assigned Access configuration file
         href: configuration-file.md
       - name: Prepare a device for kiosk configuration
