@@ -13,7 +13,7 @@ ms.date: 08/05/2021
 
 In Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, you can use a mobile device management (MDM) policy to deploy a customized Start and taskbar layout to users. No reimaging is required. The layout can be updated simply by overwriting the `.xml` file that contains the layout. This feature enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
 
-**Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md) for desktop editions (also works for taskbar customization).
+**Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md).
 
 >[!WARNING]
 >When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.

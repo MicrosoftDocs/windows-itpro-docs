@@ -22,9 +22,9 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Customize the Windows Start menu layout
-            url: start/customize-start-menu-layout-windows-11.md
+            url: start/customize-and-export-start-layout.md
           - text: Customize the Windows taskbar
-            url: taskbar/customize-taskbar-windows-11.md
+            url: taskbar/configure.md
           - text: Configure Windows Spotlight on the lock screen
             url: lock-screen/windows-spotlight.md
           - text: Accessibility information for IT pros
@@ -34,14 +34,14 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Configure kiosks and digital signs
-            url: kiosk/kiosk-methods.md
-          - text: Set up a single-app kiosk
-            url: kiosk/kiosk-single-app.md
-          - text: Set up a multi-app kiosk for Windows 11
-            url: kiosk/lock-down-windows-11-to-specific-apps.md
-          - text: Manage multi-user and guest devices
-            url: shared-devices-concepts.md
+          - text: Configure kiosks and restricted user experiences
+            url: assigned-access/index.md
+          - text: What is Assigned Access?
+            url: assigned-access/overview.md
+          - text: What is Shell Launcher?
+            url: assigned-access/shell-launcher/index.md
+          - text: "Quickstart: Configure a kiosk with Assigned Access"
+            url: assigned-access/quickstart-kiosk.md
 
   - title: Configure shared devices
     linkLists:

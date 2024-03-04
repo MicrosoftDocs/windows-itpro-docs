@@ -278,7 +278,7 @@ Example with some apps pinned:
 
 ::: zone pivot="windows-11"
 
-To learn how to customize and export a Start menu configuration, see [Customize the Start menu](../start/customize-start-menu-layout-windows-11.md).
+To learn how to customize and export a Start menu configuration, see [Customize the Start menu](../start/customize-and-export-start-layout.md).
 
 With the exported Start menu configuration, use the `v5:StartPins` element and add the content of the exported JSON file. For example:
 
@@ -336,7 +336,7 @@ The following example hides the taskbar:
 
 ::: zone pivot="windows-11"
 
-You can customize the Taskbar by creating a custom layout and adding it to your XML file. To learn how to customize and export the Taskbar configuration, see [Customize the Taskbar](../taskbar/customize-taskbar-windows-11.md).
+You can customize the Taskbar by creating a custom layout and adding it to your XML file. To learn how to customize and export the Taskbar configuration, see [Customize the Taskbar](../taskbar/configure.md).
 
 > [!NOTE]
 > In Windows 11, the `ShowTaskbar` attribute is no-op. Configure it with a value of `true`.

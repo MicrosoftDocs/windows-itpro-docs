@@ -50,9 +50,9 @@ Kiosk configurations are based on **Assigned Access**, a feature in Windows clie
 There are several kiosk configuration methods that you can choose from, depending on your answers to the following questions.
 
 - **Which type of app will your kiosk run?**
-  Your kiosk can run a Universal Windows Platform (UWP) app or a Windows desktop application. For [digital signage](setup-digital-signage.md), select a digital sign player as your kiosk app. [Check out the guidelines for kiosk apps.](guidelines-for-app.md)
+  Your kiosk can run a Universal Windows Platform (UWP) app or a Windows desktop application
 - **Which type of kiosk do you need?**
-  If you want your kiosk to run a single app for anyone to see or use, consider a single-app kiosk that runs either a [Universal Windows Platform (UWP) app](#methods-for-a-single-app-kiosk-running-a-uwp-app) or a Windows desktop application. For a kiosk that people can sign in to with their accounts or that runs more than one app, choose a multi-app kiosk
+  If you want your kiosk to run a single app for anyone to see or use, consider a single-app kiosk that runs either a Universal Windows Platform (UWP) app or a Windows desktop application. For a kiosk that people can sign in to with their accounts or that runs more than one app, choose a multi-app kiosk
 - **Which edition of Windows client will the kiosk run?**
   All of the configuration methods work for Windows client Enterprise and Education; some of the methods work for Windows Pro. Kiosk mode isn't available on Windows Home
 - **Which type of user account will be the kiosk account?**
@@ -65,13 +65,11 @@ There are several kiosk configuration methods that you can choose from, dependin
 
 | Method | App type | Account type | Single-app kiosk | Multi-app kiosk |
 |--|--|--|:-:|:-:|
-| [Assigned access in Settings](kiosk-single-app.md) | UWP | Local account | ✅ |
-| [Assigned access cmdlets](kiosk-single-app.md) | UWP | Local account | ✅ |
-| [The kiosk wizard in Windows Configuration Designer](kiosk-single-app.md) | UWP, Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID | ✅ |
-| [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) | UWP, Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID | ✅ | ✅ |
-| Microsoft Intune or other MDM [for full-screen single-app kiosk](kiosk-single-app.md) or [for multi-app kiosk with desktop](lock-down-windows-10-to-specific-apps.md) | UWP, Windows desktop app | Local standard user, Microsoft Entra ID | ✅ | ✅ |
-| [Shell Launcher](kiosk-shelllauncher.md) | UWP, Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID | ✅ |
-| [MDM Bridge WMI Provider](kiosk-mdm-bridge.md) | UWP, Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID |  | ✅ |
+| Assigned access in Settings | UWP | Local account | ✅ |
+| Assigned access cmdlets | UWP | Local account | ✅ |
+| The kiosk wizard in Windows Configuration Designer | UWP, Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID | ✅ |
+| XML in a provisioning package | UWP, Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID | ✅ | ✅ |
+| Microsoft Intune or other MDM | UWP, Windows desktop app | Local standard user, Microsoft Entra ID | ✅ | ✅ |
+| Shell Launcher| UWP, Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID | ✅ |
+| MDM Bridge WMI Provider | UWP, Windows desktop app | Local standard user, Active Directory, Microsoft Entra ID |  | ✅ |
 
->[!NOTE]
->For devices running Windows client Enterprise and Education, you can also use [Windows Defender Application Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) or [AppLocker](lock-down-windows-10-applocker.md) to lock down a device to specific apps.

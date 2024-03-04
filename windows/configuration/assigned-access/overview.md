@@ -9,7 +9,7 @@ ms.topic: how-to
 
 Assigned Access is a Windows feature that you can use to configure a device as a kiosk or restricted user experience.
 
-Multi-app kiosk mode allows an IT admin to pre-select the apps and functionality available to a user to create a tailored and immersive device experience. Ideal for shared devices, multi-app kiosk mode can create different configurations for different users, ensuring they have access to only what is needed to use the device as intended. The locked down configurations present users with the Windows desktop with which they are already familiar, while limiting their access to reduce distractions and potential for inadvertent uses.
+Multi-app kiosk mode allows an IT admin to pre-select the apps and functionality available to a user to create a tailored and immersive device experience. Ideal for shared devices, multi-app kiosk mode can create different configurations for different users, ensuring they have access to only what is needed to use the device as intended. The locked down configurations present users with the Windows desktop with which they're already familiar, while limiting their access to reduce distractions and potential for inadvertent uses.
 
 :::row:::
     :::column span="1":::
@@ -20,7 +20,7 @@ Multi-app kiosk mode allows an IT admin to pre-select the apps and functionality
     :::column-end:::
 :::row-end:::
 
-A single UWP application or Microsoft Edge is executed in full screen, above the lock screen. Users can only use that application. If the kiosk app is closed, it will utomatically restart. Practical examples include:
+A single UWP application or Microsoft Edge is executed in full screen, above the lock screen. Users can only use that application. If the kiosk app is closed, it will automatically restart. Practical examples include:
 
 - Public browsing
 - Interactive digital signage
@@ -49,13 +49,13 @@ When applying an Assigned Access configuration to a device, different policy set
 
 [!INCLUDE [assigned-access](../../../includes/licensing/assigned-access.md)]
 
-When the multi-app kiosk configuration is applied to a device, AppLocker rules are generated to allow the apps that are listed in the configuration. Here are the predefined Assigned Access AppLocker rules
+When the multi-app kiosk configuration is applied to a device, AppLocker rules are generated to allow the apps that are listed in the configuration. Here are the predefined Assigned Access AppLocker rules.
 
 For UWP apps,
 
 1. Default rule is to allow all users to launch the signed package apps
-1. The package app deny list is generated at runtime when the Assigned Access user signs in. Based on the installed/provisioned package apps available for the user account, Assigned Access generates the deny list. This list will exclude the default allowed inbox package apps which are critical for the system to function, and then exclude the allowed packages that enterprises
-1.  defined in the Assigned Access configuration. If there are multiple apps within the same package, all these apps are excluded. This deny list is used to prevent the user from accessing the apps, which are currently available for the user but not in the allowed list.
+1. The package app deny list is generated at runtime when the Assigned Access user signs in. Based on the installed/provisioned package apps available for the user account, Assigned Access generates the deny list. This list excludes the default allowed inbox package apps, which are critical for the system to function, and then exclude the allowed packages that enterprises
+1. defined in the Assigned Access configuration. If there are multiple apps within the same package, all these apps are excluded. This deny list is used to prevent the user from accessing the apps, which are currently available for the user but not in the allowed list
 
 > [!NOTE]
 > Assigned access multi-app mode doesn't block the enterprises or the users from installing UWP apps. When a new UWP app is installed during the current Assigned Access user session, this app won't be in the deny list. When the user signs out and signs in back next time, it will be included in the deny list. If this is an enterprise-deployed line-of-business app and you want to allow it to run, update the Assigned Access configuration to include it in the allowed app list.
@@ -86,12 +86,12 @@ Assigned Access uses the *Lock framework*. When an Assigned Access user signs in
 
 ## Test your Assigned Access experience
 
-It's recommended to thoroughly test the Assigned Access kiosk configuration, ensuring that your devices provide a good user experience.
+Thoroughly test the Assigned Access kiosk configuration, ensuring that your devices provide a good user experience.
 
 > [!NOTE]
 > The use of multiple monitors is supported for multi-app kiosk mode in Windows 11.
 
-The Assigned Access feature is intended for dedicated devices, like kiosks. When the multi-app Assigned Access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, impacting other users on the device. Deleting the kiosk configuration removes the Assigned Access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, the Start layout). To clear all the policy settings enforced by Assigned Access, you must reset Windows.
+The Assigned Access feature is intended for dedicated devices, like kiosks. When the multi-app Assigned Access configuration is applied on the device, [certain policies](policies-settings.md) are enforced system-wide, impacting other users on the device. Deleting the kiosk configuration removes the Assigned Access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, the Start layout). To clear all the policy settings enforced by Assigned Access, you must reset Windows.
 
 ## Troubleshooting
 
