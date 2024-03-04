@@ -15,10 +15,7 @@ This article describes how to configure an Assigned Access configuration file, i
 Let's start by looking at the basic structure of the XML file. An Assigned Access configuration file contains:
 
 - One or multiple `profiles`. Each `profile` defines a set of applications that are allowed to run
-- One or multiple `configs`. Each `config` associates a non-admin user account to a `profile`
-
-> [!NOTE]
-> A profile has no effect if it's not associated to a user account.
+- One or multiple `configs`. Each `config` associates a user account or a group to a `profile`
 
 Here's a basic example of an Assigned Access configuration file, with one profile and one config:
 
@@ -95,6 +92,11 @@ A profile can be one of two types:
 - `KioskModeApp`: is used to configure a kiosk experience. Users assigned this profile don't access the desktop, but only the UWP application or Microsoft Edge running in full-screen above the Lock screen
 - `AllAppList` is used to configure a restricted user experience. Users assigned this profile access the desktop with the specific apps on the Start menu
 
+> [!IMPORTANT]
+>
+> - You can't set both `KioskModeApp` and `ShellLauncher` at the same time on the device
+> - A configuration file can contain only one `KioskModeApp` profile, but it can contain multiple `AllAppList` profiles.
+
 ### KioskModeApp
 
 The properties of a `KioskModeApp` profile are:
@@ -118,6 +120,9 @@ Example of two profiles, a desktop app and a UWP app:
   <KioskModeApp AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
 </Profile>
 ```
+
+> [!NOTE]
+> You can only assign a `KioskModeApp` profile to users, not to groups.
 
 ### AllAppList
 
@@ -377,7 +382,7 @@ Here's an example of a custom Taskbar with a few apps pinned:
 
 ## Configs
 
-Under `Configs`, define one or more user accounts and their association with a profile.
+Under `Configs`, define one or more user accounts, or groups, and their association with a profile.
 
 When the user account signs in, the associated Assigned Access profile is enforced along with policy settings that are part of the restricted user experience.
 
@@ -390,6 +395,13 @@ Limitations:
 
 - Configs that specify group accounts can't use a kiosk profile, only a restricted user experience profile
 - Apply the restricted user experience to standard users only. It's not supported to associate an admin user with an Assigned Access profile
+- Don't apply the profile to users or groups that are targeted by conditional access policies that require user interaction. For example, multi-factor authentication (MFA), or Terms of Use (TOU). For more information, see [Users can't log on to Windows if a multi-app kiosk profile is assigned](/troubleshoot/mem/intune/device-configuration/users-cannot-logon-windows-multi-app-kiosk)
+
+>[!NOTE]
+> On Microsoft Entra joined and domain joined devices, local user accounts aren't displayed on the sign-in screen by default. To display the local accounts on the sign-in screen, enable the policy setting:
+>
+>- GPO: **Computer Configuration** > **Administrative Templates** > **System** > **Logon** > **Enumerate local users on domain-joined computers**
+>- CSP: `./Device/Vendor/MSFT/Policy/Config/WindowsLogon/`[EnumerateLocalUsersOnDomainJoinedComputers](/windows/client-management/mdm/policy-csp-windowslogon#enumeratelocalusersondomainjoinedcomputers)
 
 ### AutoLogon account
 
@@ -406,14 +418,21 @@ The following example shows how to specify an account to sign in automatically, 
 </Configs>
 ```
 
->[!NOTE]
-> On Microsoft Entra joined and domain joined devices, local user accounts aren't displayed on the sign-in screen by default. To display the local accounts on the sign-in screen, enable the policy setting:
->
->- GPO: **Computer Configuration** > **Administrative Templates** > **System** > **Logon** > **Enumerate local users on domain-joined computers**
->- CSP: `./Device/Vendor/MSFT/Policy/Config/WindowsLogon/`[EnumerateLocalUsersOnDomainJoinedComputers](/windows/client-management/mdm/policy-csp-windowslogon#enumeratelocalusersondomainjoinedcomputers)
-
 >[!IMPORTANT]
 >When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature doesn't work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon).
+
+### Global profile
+
+With `GlobalProfile` you can define an Assigned Access profile that is applied to every non-admin account that signs in. This can be useful in scenarios like frontline workers or student devices, where you want to ensure that every user has a consistent experience.
+
+```xml
+<Configs>
+  <v3:GlobalProfile Id="{GUID}"/>
+</Configs>
+```
+
+> [!NOTE]
+> You can combine a global profile with other profiles. If you assign a user a non-global profile, the global profile won't be applied to that user.
 
 ### User accounts
 
@@ -474,7 +493,7 @@ Specify the group type as `LocalGroup` and add the group name in the `Name` attr
 
 #### Active Directory group
 
-Both security and distribution groups are supported. Specify the group type as <strong>ActiveDirectoryGroup</strong>. Use the domain name as the prefix in the name attribute.
+Both security and distribution groups are supported. Specify the group type as `ActiveDirectoryGroup`. Use the domain name as the prefix in the name attribute.
 
 ```xml
 <Config>
@@ -485,7 +504,7 @@ Both security and distribution groups are supported. Specify the group type as <
 
 #### Microsoft Entra group
 
-Use the object ID of the Microsoft Entra group. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as `AzureActiveDirectoryGroup`. The kiosk device must have internet connectivity when users that belong to the group sign-in.
+Use the object ID of the Microsoft Entra group. You can find the object ID on the overview page for the group by signing in to the Microsoft Entra admin center and browsing to **Identity** > **Groups** > **All groups**. Specify the group type as `AzureActiveDirectoryGroup`. The kiosk device must have internet connectivity when users that belong to the group sign-in.
 
 ```xml
 <Config>
@@ -494,29 +513,9 @@ Use the object ID of the Microsoft Entra group. You can find the object ID on th
 </Config>
 ```
 
-### Global profile
-
-With `GlobalProfile` you can define an Assigned Access profile that is applied to every non-admin account that signs in. This can be useful in scenarios like frontline workers or student devices, where you want to ensure that every user has a consistent experience.
-
-```xml
-<Configs>
-  <v3:GlobalProfile Id="{GUID}"/>
-</Configs>
-```
-
-> [!NOTE]
-> You can combine a global profile with other profiles. If you assign a user a non-global profile, the global profile won't be applied to that user.
-
-
-
 ## Next steps
 
 > [!div class="nextstepaction"]
 > Review some practical examples of Assigned Access XML configurations:
 >
 > [Assigned Access examples](examples.md)
-
-
-<!--
-> [!IMPORTANT]
-> - You can't set both KioskModeApp and ShellLauncher at the same time on the device.
