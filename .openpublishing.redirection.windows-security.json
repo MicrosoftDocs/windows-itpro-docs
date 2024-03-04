@@ -1452,7 +1452,7 @@
     },
     {
       "source_path": "windows/security/threat-protection/intelligence/av-tests.md",
-      "redirect_url": "/windows/security/defender/top-scoring-industry-antivirus-tests",
+      "redirect_url": "/microsoft-365/security/defender//top-scoring-industry-antivirus-tests",
       "redirect_document_id": false
     },
     {
@@ -1467,12 +1467,12 @@
     },
     {
       "source_path": "windows/security/threat-protection/intelligence/criteria.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/malware/criteria",
+      "redirect_url": "/microsoft-365/security/defender/criteria",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/intelligence/cybersecurity-industry-partners.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/malware/cybersecurity-industry-partners",
+      "redirect_url": "/microsoft-365/security/defender/virus-initiative-criteria",
       "redirect_document_id": false
     },
     {
@@ -1497,7 +1497,7 @@
     },
     {
       "source_path": "windows/security/threat-protection/intelligence/macro-malware.md",
-      "redirect_url": "/microsoft-365/security/intdefender-endpoint/malwareelligence/macro-malware",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/malware/macro-malware",
       "redirect_document_id": false
     },
     {
