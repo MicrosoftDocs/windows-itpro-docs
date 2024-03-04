@@ -1,7 +1,7 @@
 ---
 title: Configure Assigned Access
 description: Learn how to configure devices with Assigned Access.
-ms.date: 05/12/2023
+ms.date: 03/04/2024
 ms.topic: how-to
 ---
 
@@ -256,63 +256,32 @@ An Assigned Access multi-app kiosk runs one or more apps from the desktop. Peopl
 
 ### Provisioning package
 
-Before you add the XML file to a provisioning package, you can [validate your configuration XML against the XSD](xsd.md).
-
 Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](../provisioning-packages/provisioning-install-icd.md).
 
-> [!IMPORTANT]
-> When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
-
-1. Open Windows Configuration Designer. By default: `%systemdrive%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe`.
-
-1. Choose **Advanced provisioning**.
-
-1. Name your project, and select **Next**.
-
-1. Choose **All Windows desktop editions** and select **Next**.
-
-1. On **New project**, select **Finish**. The workspace for your package opens.
-
-1. Expand **Runtime settings** > **AssignedAccess** > **MultiAppAssignedAccessSettings**.
-
-1. In the center pane, select **Browse**. Locate and select the Assigned Access configuration XML file that you created.
-
-1. _Optional: If you want to apply the provisioning package after device initial setup and there's an admin user already available on the kiosk device, skip this step._ Create an admin user account in **Runtime settings** > **Accounts** > **Users**. Provide a **UserName** and **Password**, and select **UserGroup** as **Administrators**. With this account, you can view the provisioning status and logs if needed.
-
-1. _Optional: If you already have a non-admin account on the kiosk device, skip this step._ Create a local standard user account in **Runtime settings** > **Accounts** > **Users**. Make sure the **UserName** is the same as the account that you specify in the configuration XML. Select **UserGroup** as **Standard Users**.
-
+1. Open Windows Configuration Designer
+1. Choose **Advanced provisioning**
+1. Name your project, and select **Next**
+1. Choose **All Windows desktop editions** and select **Next**
+1. On **New project**, select **Finish**. The workspace for your package opens
+1. Expand **Runtime settings** > **AssignedAccess** > **MultiAppAssignedAccessSettings**
+1. In the center pane, select **Browse**. Locate and select the Assigned Access configuration XML file that you created
+1. *Optional: If you want to apply the provisioning package after device initial setup and there's an admin user already available on the kiosk device, skip this step.* Create an admin user account in **Runtime settings** > **Accounts** > **Users**. Provide a **UserName** and **Password**, and select **UserGroup** as **Administrators**. With this account, you can view the provisioning status and logs if needed.
+1. *Optional: If you already have a non-admin account on the kiosk device, skip this step.* Create a local standard user account in **Runtime settings** > **Accounts** > **Users**. Make sure the **UserName** is the same as the account that you specify in the configuration XML. Select **UserGroup** as **Standard Users**
 1. On the **File** menu, select **Save.**
-
-1. On the **Export** menu, select **Provisioning package**.
-
+1. On the **Export** menu, select **Provisioning package**
 1. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
-
 1. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
-
     - **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
-
     - **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Browse** and choosing the certificate you want to use to sign the package.
-
-1. Select **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Imaging and Configuration Designer (ICD) uses the project folder as the output location.
-
-    Optionally, you can select **Browse** to change the default output location.
-
-1. Select **Next**.
-
-1. Select **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status.
-
-    If you need to cancel the build, select **Cancel**. This action cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
-
-1. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
-
+1. Select **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Imaging and Configuration Designer (ICD) uses the project folder as the output location
+    Optionally, you can select **Browse** to change the default output location
+1. Select **Next**
+1. Select **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status
+1. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again
     If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
-
     - If you choose, you can build the provisioning package again and pick a different path for the output package. To do this action, select **Back** to change the output package name and path, and then select **Next** to start another build.
     - If you're done, select **Finish** to close the wizard and go back to the **Customizations Page**.
-
 1. Copy the provisioning package to the root directory of a USB drive.
-
-<span id="apply-ppkg" />
 
 ### Apply provisioning package to device
 
@@ -320,6 +289,7 @@ Provisioning packages can be applied to a device during initial setup (out-of-bo
 
 > [!NOTE]
 > If your provisioning package doesn't include the Assigned Access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device.
+
 #### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 
 ---
@@ -359,3 +329,7 @@ To change the default time for Assigned Access to resume, add *IdleTimeOut* (DWO
 > **IdleTimeOut** doesn't apply to the new Microsoft Edge kiosk mode.
 
 The Breakout Sequence of **Ctrl + Alt + Del** is the default, but this sequence can be configured to be a different sequence of keys. The breakout sequence uses the format **modifiers + keys**. An example breakout sequence would look something like **Shift + Alt + a**, where **Shift** and **Alt** are the modifiers and **a** is the key value. For more information, see [Microsoft Edge kiosk XML sample](/windows/configuration/kiosk-xml#microsoft-edge-kiosk-xml-sample).
+
+## Remove Assigned Access
+
+Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, Start Layout).

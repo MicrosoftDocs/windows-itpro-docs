@@ -2,7 +2,7 @@
 title: Configure kiosks and restricted user experiences
 description: Learn about the options available in Windows to configure kiosks and restricted user experiences.
 ms.topic: overview
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # Configure kiosks and restricted user experiences

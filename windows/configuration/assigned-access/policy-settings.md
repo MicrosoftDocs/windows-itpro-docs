@@ -2,7 +2,7 @@
 title: Assigned Access policy settings
 description: Learn about the policy settings enforced on a device configured with Assigned Access.
 ms.topic: reference
-ms.date: 02/25/2024
+ms.date: 03/04/2024
 ---
 
 # Assigned Access policy settings

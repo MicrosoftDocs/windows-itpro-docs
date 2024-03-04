@@ -3,6 +3,7 @@ title: Create an Assigned Access configuration file
 description: Learn how to create an XML file to configure Assigned Access.
 ms.topic: how-to
 zone_pivot_groups: windows-versions-11-10
+ms.date: 03/04/2024
 appliesto:
 ---
 

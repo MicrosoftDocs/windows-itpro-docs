@@ -2,7 +2,7 @@
 title: "Quickstart: Configure a kiosk experience with Assigned Access"
 description: Learn how to configure a kiosk experience with Assigned Access, using Windows Configuration Designer, Microsoft Intune, PowerShell or GPO.
 ms.topic: quickstart
-ms.date: 02/05/2024
+ms.date: 03/04/2024
 ---
 
 # Quickstart: Configure a kiosk with Assigned Access
