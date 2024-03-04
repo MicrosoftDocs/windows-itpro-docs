@@ -9,39 +9,45 @@ ms.topic: how-to
 
 Assigned Access is a Windows feature that you can use to configure a device as a kiosk or restricted user experience.
 
+
+Multi-app kiosk mode allows an IT admin to pre-select the apps and functionality available to a user to create a tailored and immersive device experience. Ideal for shared devices, multi-app kiosk mode can create different configurations for different users, ensuring they have access to only what is needed to use the device as intended. The locked down configurations present users with the Windows desktop with which they are already familiar, while limiting their access to reduce distractions and potential for inadvertent uses.
+
 :::row:::
     :::column span="1":::
     :::image type="content" source="images/kiosk.png" alt-text="Icon representing a kiosk." border="false":::
     :::column-end:::
     :::column span="3":::
     #### Kiosk experience
-
-    A single UWP application or Microsoft Edge is executed in full screen, above the lock screen. Users can only use that application. If the kiosk app is closed, it will automatically restart. Practical examples include:
-
-    - Public browsing
-    - Interactive digital signage
-
-    This experience is sometimes referred to as *single-app kiosk*.
     :::column-end:::
 :::row-end:::
+
+A single UWP application or Microsoft Edge is executed in full screen, above the lock screen. Users can only use that application. If the kiosk app is closed, it will utomatically restart. Practical examples include:
+
+- Public browsing
+- Interactive digital signage
+This experience is sometimes referred to as *single-app kiosk*.
+
 :::row:::
     :::column span="1":::
     :::image type="content" source="images/restricted-user-experience.png" alt-text="Icon representing a restricted user experience." border="false":::
     :::column-end:::
     :::column span="3":::
     #### Restricted user experience
-    Users can execute a defined list of applications, with a custom Start menu and Taskbar. Practical examples include:
-    - Frontline worker devices
-    - Student devices
-    - Lab devices
     :::column-end:::
 :::row-end:::
 
+Users can execute a defined list of applications, with a custom Start menu and Taskbar. Practical examples include:
+
+- Frontline worker devices
+- Student devices
+- Lab devices
+
 When applying an Assigned Access configuration to a device, different policy settings are enforced, creating a locked down experience to the users.
 
-Assigned Access profiles only apply to non-admin accounts. When an administrator signs in, the Assigned Access restrictions don't apply.
+> [!NOTE]
+> Assigned Access profiles only apply to non-admin accounts. When an administrator signs in, the Assigned Access restrictions don't apply.
 
-## Configure a kiosk
+## Configure a kiosk experience
 
 A single-app kiosk uses the Assigned Access feature to run a single app above the lock screen. When the kiosk account signs in, the app is launched automatically. The person using the kiosk cannot do anything on the device outside of the kiosk app.
 
@@ -84,8 +90,6 @@ Here are the steps to configure a kiosk using the Settings app:
 
 1. Select **Close**
 
-
-
 - UWP
 - Local standard user
 
@@ -96,48 +100,6 @@ When your kiosk is a local device that isn't managed by Active Directory or Micr
 - If you want the kiosk account to sign in automatically, and the kiosk app launched when the device restarts, then you don't need to do anything.
 
 - If you don't want the kiosk account to sign in automatically when the device restarts, then you must change the default setting before you configure the device as a kiosk. Sign in with the account that you will assign as the kiosk account. Open the **Settings** app > **Accounts** > **Sign-in options**. Set the **Use my sign-in info to automatically finish setting up my device after an update or restart** setting to **Off**. After you change the setting, you can apply the kiosk configuration to the device.
-
-## Configure a kiosk experience with Assigned Access using PowerShell cmdlets
-
-| App Type | OS| Account type|
-|-|-|
-|UWP| Windows Pro/Pro Edu and Ent/Edu|Local standard user|
-
-To configure a device using the Windows PowerShell cmdlet:
-
-1. Sign in as administrator
-1. [Create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) for Assigned Access
-1. Sign in as the Assigned Access user account
-1. Install the required UWP app
-1. Sign out as the Assigned Access user account
-1. Sign in as administrator and from an elevated PowerShell prompt use one of the following commands:
-
-    ```PowerShell
-    #Configure Assigned Access by AppUserModelID and user name
-    Set-AssignedAccess -AppUserModelId <AUMID> -UserName <username>
-
-    #Configure Assigned Access by AppUserModelID and user SID
-    Set-AssignedAccess -AppUserModelId <AUMID> -UserSID <usersid>
-
-    #Configure Assigned Access by app name and user name
-    Set-AssignedAccess -AppName <CustomApp> -UserName <username>
-
-    #Configure Assigned Access by app name and user SID**:
-    Set-AssignedAccess -AppName <CustomApp> -UserSID <usersid>
-
-> [!NOTE]
-> To set up Assigned Access using `-AppName`, the user account that you enter for Assigned Access must have signed in at least once.
-
-For more innformation:
-
-- [Find the Application User Model ID of an installed app](../store/find-aumid.md)
-- [Set-AssignedAccess](/powershell/module/assignedaccess/set-assignedaccess)
-
-To remove assigned access, using PowerShell, run the following cmdlet:
-
-```powershell
-Clear-AssignedAccess
-```
 
 #### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
@@ -247,9 +209,50 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 
 #### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 
+
+## Configure a kiosk experience with Assigned Access using PowerShell cmdlets
+
+| App Type | OS| Account type|
+|-|-|
+|UWP| Windows Pro/Pro Edu and Ent/Edu|Local standard user|
+
+To configure a device using the Windows PowerShell cmdlet:
+
+1. Sign in as administrator
+1. [Create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) for Assigned Access
+1. Sign in as the Assigned Access user account
+1. Install the required UWP app
+1. Sign out as the Assigned Access user account
+1. Sign in as administrator and from an elevated PowerShell prompt use one of the following commands:
+
+    ```PowerShell
+    #Configure Assigned Access by AppUserModelID and user name
+    Set-AssignedAccess -AppUserModelId <AUMID> -UserName <username>
+
+    #Configure Assigned Access by AppUserModelID and user SID
+    Set-AssignedAccess -AppUserModelId <AUMID> -UserSID <usersid>
+
+    #Configure Assigned Access by app name and user name
+    Set-AssignedAccess -AppName <CustomApp> -UserName <username>
+
+    #Configure Assigned Access by app name and user SID**:
+    Set-AssignedAccess -AppName <CustomApp> -UserSID <usersid>
+
+> [!NOTE]
+> To set up Assigned Access using `-AppName`, the user account that you enter for Assigned Access must have signed in at least once.
+
+For more innformation:
+
+- [Find the Application User Model ID of an installed app](../store/find-aumid.md)
+- [Set-AssignedAccess](/powershell/module/assignedaccess/set-assignedaccess)
+
+To remove assigned access, using PowerShell, run the following cmdlet:
+
+```powershell
+Clear-AssignedAccess
+```
+
 [!INCLUDE [powershell-wmi-bridge-1](../../../includes/configure/powershell-wmi-bridge-1.md)]
-
-
 
 [!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
 
