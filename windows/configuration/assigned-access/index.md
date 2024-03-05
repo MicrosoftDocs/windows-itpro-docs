@@ -25,15 +25,15 @@ Windows offers two different experiences for public or specialized use:
     :::column-end:::
 :::row-end:::
 
-This experience runs a single application in full screen, and people using the device can only use that app. When the designated kiosk account signs in, the kiosk app launches automatically. If the kiosk app is closed, it will automatically restart. This experience is sometimes referred to as *single-app kiosk*.
+This experience runs a single application in full screen, and people using the device can only use that app. When the designated kiosk account signs in, the kiosk app launches automatically. This experience is sometimes referred to as *single-app kiosk*.
 
 Windows offers two different features to configure a kiosk experience:
 
-- **Assigned Access**: used to execute a single Universal Windows Platform (UWP) app or Microsoft Edge in full screen above the lock screen. When the kiosk account signs in, the kiosk app launches automatically. If the UWP app is closed, it will automatically restart
-- **Shell Launcher**: used to configure a device to execure a Windows desktop application as the user interface. The application that you specify replaces the default Windows shell (`Explorer.exe`) that usually runs when a user signs in. This type of single-app kiosk doesn't run above the lock screen.
+- **Assigned Access**: used to execute a single Universal Windows Platform (UWP) app or Microsoft Edge in full screen above the lock screen. When the kiosk account signs in, the kiosk app launches automatically. If the UWP app is closed, it automatically restarts
+- **Shell Launcher**: used to configure a device to execute a Windows desktop application as the user interface. The application that you specify replaces the default Windows shell (`Explorer.exe`) that usually runs when a user signs in. This type of single-app kiosk doesn't run above the lock screen
 
 >[!IMPORTANT]
->Single-app kiosk mode isn't supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk.
+>The kiosk experience isn't supported over a remote desktop connection. The kiosk users must sign in on the console that is set up as a kiosk.
 
 :::row:::
     :::column span="1":::
@@ -58,7 +58,6 @@ When you're considering a kiosk or restricted user experience, you need to choos
 | **🔲** | *Desktop experience or custom?* <br>If your users require access to the desktop with a custom Start menu, then you can build a **restricted user experience** with **Assigned Access**. If your users require access to multiple applications but with a custom UI, then you can build a **restricted user experience** with **Shell Launcher**.|
 | **🔲** | *In single-app scenario, which type of app will your kiosk run?* <br>If the kiosk requires a Universal Windows Platform (UWP) app or Microsoft Edge, you can build a **kiosk experience** with **Assigned Access**. If the kiosk requires a desktop app, you can build a **kiosk experience** with **Shell Launcher**.|
 | **🔲** | *Which edition of Windows client will the kiosk run?"* <br>**Assigned Access** is supported on Windows Pro and Enterprise/Education. **Shell Launcher** is only supported on Windows Enterprise and Education editions.|
-| **🔲** | *Which type of user account will be the kiosk account?*<br>The kiosk account can be a local standard user account, a domain account, or a Microsoft Entra account. Use a local account when the apps offered by the kiosk don't require the users to authenticate, and when you require the designated kiosk user to automatically sign in. |
 
 ## Next steps
 

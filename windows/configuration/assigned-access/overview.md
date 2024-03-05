@@ -18,12 +18,10 @@ Assigned Access is a Windows feature that you can use to configure a device as a
     :::column-end:::
 :::row-end:::
 
-When you configure a kiosk experience, a single UWP application or Microsoft Edge is executed in full screen, above the lock screen. Users can only use that application. If the kiosk app is closed, it will automatically restart. Practical examples include:
+When you configure a kiosk experience, a single UWP application or Microsoft Edge is executed in full screen, above the lock screen. Users can only use that application. If the kiosk app is closed, it automatically restarts. Practical examples include:
 
 - Public browsing
 - Interactive digital signage
-
-This experience is sometimes referred to as *single-app kiosk*.
 
 :::row:::
     :::column span="1":::
@@ -40,29 +38,13 @@ When you configure a restricted user experience, users can execute a defined lis
 - Student devices
 - Lab devices
 
-This experience is sometimes referred to as *multi-app kiosk*.
-
 [!INCLUDE [assigned-access](../../../includes/licensing/assigned-access.md)]
 
 ## Locked-down experience
 
 When applying an Assigned Access configuration to a device, different policy settings and AppLocker rules are enforced, creating a locked down experience to the users.
 
-When the multi-app kiosk configuration is applied to a device, AppLocker rules are generated to allow the apps that are listed in the configuration. Here are the predefined Assigned Access AppLocker rules.
 
-For UWP apps,
-
-1. Default rule is to allow all users to launch the signed package apps
-1. The package app deny list is generated at runtime when the Assigned Access user signs in. Based on the installed/provisioned package apps available for the user account, Assigned Access generates the deny list. This list excludes the default allowed inbox package apps, which are critical for the system to function, and then exclude the allowed packages that enterprises
-1. defined in the Assigned Access configuration. If there are multiple apps within the same package, all these apps are excluded. This deny list is used to prevent the user from accessing the apps, which are currently available for the user but not in the allowed list
-
-> [!NOTE]
-> Assigned access multi-app mode doesn't block the enterprises or the users from installing UWP apps. When a new UWP app is installed during the current Assigned Access user session, this app won't be in the deny list. When the user signs out and signs in back next time, it will be included in the deny list. If this is an enterprise-deployed line-of-business app and you want to allow it to run, update the Assigned Access configuration to include it in the allowed app list.
-
-For desktop apps,
-
-1. Default rule is to allow all users to launch the desktop programs signed with Microsoft Certificate in order for the system to boot and function. The rule also allows the admin user group to launch all desktop programs. 2. There's a predefined inbox desktop app deny list for the Assigned Access user account, and this deny list is adjusted based on the desktop app allow list that you defined in the multi-app configuration.
-1. Enterprise-defined allowed desktop apps are added in the AppLocker allow list.
 
 ## Guidelines for choosing an app for a kiosk experience
 
