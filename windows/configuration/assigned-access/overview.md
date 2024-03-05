@@ -80,6 +80,109 @@ Thoroughly test the Assigned Access kiosk configuration, ensuring that your devi
 
 The Assigned Access feature is intended for dedicated devices, like kiosks. When the multi-app Assigned Access configuration is applied on the device, certain [policy settings](policy-settings.md) are enforced system-wide, impacting other users on the device. Deleting the kiosk configuration removes the Assigned Access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, the Start layout). To clear all the policy settings enforced by Assigned Access, you must reset Windows.
 
+## User experience
+
+To test the kiosk, sign in with the Assigned Access user account you specified in the configuration to check out the multi-app experience.
+
+>[!NOTE]
+>The kiosk configuration setting will take effect the next time the Assigned Access user signs in. If that user account is signed in when you apply the configuration, make sure the user signs out and signs back in to validate the experience.
+
+When Assigned Access is configured, different policy settings are applied to the device to provide a secured, locked-down experience. For more information, see [policy-settings](policy-settings.md).
+
+Optionally, run Event Viewer (eventvwr.exe) and look through logs under **Applications and Services Logs** > **Microsoft** > **Windows** > **Provisioning-Diagnostics-Provider** > **Admin**.
+
+### App launching and switching experience
+
+In the multi-app mode, to maximize the user productivity and streamline the experience, an app will be always launched in full screen when the users click the tile on the Start. The users can minimize and close the app, but cannot resize the app window.
+
+The users can switch apps just as they do today in Windows. They can use the Task View button, Alt + Tab hotkey, and the swipe in from the left gesture to view all the open apps in task view. They can click the Windows button to show Start, from which they can open apps, and they can switch to an opened app by clicking it on the taskbar.
+
+### Auto-trigger touch keyboard
+
+The touch keyboard is automatically triggered when there's an input needed and no physical keyboard is attached on touch-enabled devices. You don't need to configure any other setting to enforce this behavior.
+
+### Sign out of assigned access
+
+To exit the Assigned Access (kiosk) app, press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>, and then sign in using another account. When you press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> to sign out of assigned access, the kiosk app will exit automatically. If you sign in again as the Assigned Access account or wait for the sign in screen timeout, the kiosk app relaunches. The Assigned Access user will remain signed in until an admin account opens **Task Manager** > **Users** and signs out the user account.
+
+If you press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> and do not sign in to another account, after a set time, Assigned Access will resume. The default time is 30 seconds, but you can change that in the following registry key:
+
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI`
+
+To change the default time for Assigned Access to resume, add *IdleTimeOut* (DWORD) and enter the value data as milliseconds in hexadecimal.
+
+> [!NOTE]
+> **IdleTimeOut** doesn't apply to the new Microsoft Edge kiosk mode.
+
+The Breakout Sequence of <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> is the default, but this sequence can be configured to be a different sequence of keys. The breakout sequence uses the format **modifiers + keys**. An example breakout sequence would look something like **Shift + Alt + a**, where **Shift** and **Alt** are the modifiers and **a** is the key value. For more information, see [Microsoft Edge kiosk XML sample](/windows/configuration/kiosk-xml#microsoft-edge-kiosk-xml-sample).
+
+## Interactions and interoperability
+
+The following table describes some features that have interoperability issues we recommend that you consider when running assigned access.
+
+### Accessibility
+
+Assigned access doesn't change accessibility settings. We recommend that you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block the following key combinations that open accessibility features:
+
+  | Key combination | Blocked behavior |
+  | --- | --- |
+  | <kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>Print Screen</kbd> | Open High Contrast dialog box |
+  | <kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>Num Lock</kbd> | Open Mouse Keys dialog box |
+  | <kbd>WIN</kbd> + <kbd>U</kbd> | Open the Settings app accessibility panel |
+
+### Keyboard shortcuts
+
+The following keyboard shortcuts are blocked for any user account with Assigned Access:
+
+| Keyboard shortcut | Action |
+|--|--|
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd>  + <kbd>Esc</kbd>  | Open Task Manager |
+| <kbd>WIN</kbd> + <kbd>, (comma)</kbd> | Temporarily peek at the desktop |
+| <kbd>WIN</kbd> + <kbd>A</kbd> | Open Action center |
+| <kbd>WIN</kbd> + <kbd>Alt</kbd>  + <kbd> D</kbd> | Display and hide the date and time on the desktop |
+| <kbd>WIN</kbd> + <kbd>Ctrl</kbd>  + <kbd> F</kbd> | Find computer objects in Active Directory |
+| <kbd>WIN</kbd> + <kbd>D</kbd> | Display and hide the desktop |
+| <kbd>WIN</kbd> + <kbd>E</kbd> | Open File Explorer |
+| <kbd>WIN</kbd> + <kbd>F</kbd> | Open Feedback Hub |
+| <kbd>WIN</kbd> + <kbd>G</kbd> | Open Game bar when a game is open |
+| <kbd>WIN</kbd> + <kbd>I</kbd> | Open Settings |
+| <kbd>WIN</kbd> + <kbd>J</kbd> | Set focus to a Windows tip when one is available |
+| <kbd>WIN</kbd> + <kbd>O</kbd> | Lock device orientation |
+| <kbd>WIN</kbd> + <kbd>Q</kbd> | Open search |
+| <kbd>WIN</kbd> + <kbd>R</kbd> | Open the Run dialog box |
+| <kbd>WIN</kbd> + <kbd>S</kbd> | Open search |
+| <kbd>WIN</kbd> + <kbd>Shift</kbd>  + <kbd> C</kbd> | Open Cortana in listening mode |
+| <kbd>WIN</kbd> + <kbd>X</kbd> | Open the Quick Link menu |
+| LaunchApp1 | Open the app that is assigned to this key |
+| LaunchApp2 | Open the app that is assigned to this key. On many Microsoft keyboards, the app is Calculator |
+| LaunchMail | Open the default mail client |
+
+The following keyboard shortcuts are't blocked for any user account with Assigned Access. You can use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block these key combinations:
+
+| Keyboard shortcut | Action |
+|--|--|
+|<kbd>Alt</kbd> + <kbd>F4</kbd>||
+|<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>||
+|<kbd>Alt</kbd> + <kbd>Tab</kbd>||
+
+> [!NOTE]
+> <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> is the default keyboard shortcut to break out of Assigned Access. You can use *Keyboard Filter* to configure a different key combination to break out of Assigned Access by setting *BreakoutKeyScanCode* as described in [WEKF_Settings](/windows-hardware/customize/enterprise/wekf-settings).
+
+> [!CAUTION]
+> Keyboard Filter settings apply to other standard accounts.
+
+- **Key sequences blocked by [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter)**: If Keyboard Filter is turned ON, then some key combinations are blocked automatically without you having to explicitly block them. For more information, see the [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter).
+  [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) is only available on Windows client Enterprise or Education
+- **Power button**: Customizations for the Power button complement assigned access, letting you implement features such as removing the power button from the Welcome screen. Removing the power button ensures the user can't turn off the device when it's in assigned access
+  For more information on removing the power button or disabling the physical power button, see [Custom Logon][WHW-1]
+- **Unified Write Filter (UWF)**: UWFsettings apply to all users, including users with assigned access
+  For more information, see [Unified Write Filter][WHW-2]
+- **WEDL_AssignedAccess class**: You can use this class to configure and manage basic lockdown features for assigned access. It's recommended to you use the Windows PowerShell cmdlets instead.
+  If you need to use Assigned Access API, see [WEDL_AssignedAccess][WHW-3]
+- **Welcome Screen**: Customizations for the Welcome screen let you personalize not only how the Welcome screen looks, but for how it functions. You can disable the power or language button, or remove all user interface elements. There are many options to make the Welcome screen your own
+
+For more information, see [Custom Logon][WHW-1].
+
 ## Troubleshooting
 
 Event Viewer
@@ -106,3 +209,9 @@ These locations contain the latest "evaluated" configuration for each sign-in us
 
 > [!NOTE]
 > Assigned Access profiles only apply to non-admin accounts. When an administrator signs in, the Assigned Access restrictions don't apply.
+
+<!--links-->
+
+[WHW-1]: /windows-hardware/customize/enterprise/custom-logon
+[WHW-2]: /windows-hardware/customize/enterprise/unified-write-filter
+[WHW-3]: /windows-hardware/customize/enterprise/wedl-assignedaccess

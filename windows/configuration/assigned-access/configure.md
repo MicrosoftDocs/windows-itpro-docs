@@ -292,42 +292,6 @@ Provisioning packages can be applied to a device during initial setup (out-of-bo
 
 ---
 
-## User experience
-
-To test the kiosk, sign in with the Assigned Access user account you specified in the configuration to check out the multi-app experience.
-
->[!NOTE]
->The kiosk configuration setting will take effect the next time the Assigned Access user signs in. If that user account is signed in when you apply the configuration, make sure the user signs out and signs back in to validate the experience.
-
-When Assigned Access is configured, different policy settings are applied to the device to provide a secured, locked-down experience. For more information, see [policy-settings](policy-settings.md).
-
-Optionally, run Event Viewer (eventvwr.exe) and look through logs under **Applications and Services Logs** > **Microsoft** > **Windows** > **Provisioning-Diagnostics-Provider** > **Admin**.
-
-### App launching and switching experience
-
-In the multi-app mode, to maximize the user productivity and streamline the experience, an app will be always launched in full screen when the users click the tile on the Start. The users can minimize and close the app, but cannot resize the app window.
-
-The users can switch apps just as they do today in Windows. They can use the Task View button, Alt + Tab hotkey, and the swipe in from the left gesture to view all the open apps in task view. They can click the Windows button to show Start, from which they can open apps, and they can switch to an opened app by clicking it on the taskbar.
-
-### Auto-trigger touch keyboard
-
-The touch keyboard is automatically triggered when there's an input needed and no physical keyboard is attached on touch-enabled devices. You don't need to configure any other setting to enforce this behavior.
-
-### Sign out of assigned access
-
-To exit the Assigned Access (kiosk) app, press **Ctrl + Alt + Del**, and then sign in using another account. When you press **Ctrl + Alt + Del** to sign out of assigned access, the kiosk app will exit automatically. If you sign in again as the Assigned Access account or wait for the sign in screen timeout, the kiosk app relaunches. The Assigned Access user will remain signed in until an admin account opens **Task Manager** > **Users** and signs out the user account.
-
-If you press **Ctrl + Alt + Del** and do not sign in to another account, after a set time, Assigned Access will resume. The default time is 30 seconds, but you can change that in the following registry key:
-
-`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI`
-
-To change the default time for Assigned Access to resume, add *IdleTimeOut* (DWORD) and enter the value data as milliseconds in hexadecimal.
-
-> [!NOTE]
-> **IdleTimeOut** doesn't apply to the new Microsoft Edge kiosk mode.
-
-The Breakout Sequence of **Ctrl + Alt + Del** is the default, but this sequence can be configured to be a different sequence of keys. The breakout sequence uses the format **modifiers + keys**. An example breakout sequence would look something like **Shift + Alt + a**, where **Shift** and **Alt** are the modifiers and **a** is the key value. For more information, see [Microsoft Edge kiosk XML sample](/windows/configuration/kiosk-xml#microsoft-edge-kiosk-xml-sample).
-
 ## Remove Assigned Access
 
 Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, Start Layout).
