@@ -79,6 +79,12 @@ The following guidelines help you choose an appropriate Windows app for a kiosk 
 - Some apps might require more configurations before they can be used appropriately in Assigned Access. For example, Microsoft OneNote requires you to set up a Microsoft account for the Assigned Access user account before OneNote opens
 - The kiosk profile is designed for public-facing kiosk devices. Use a local, non-administrator account. If the device is connected to your organization network, using a domain or Microsoft Entra account could compromise confidential information
 
+When planning to deploy a kiosk or a restricted user experience, consider the following:
+
+- Evaluate all applications that users should use. If applications require user authentication, don't use a local or generic
+user account. Rather, target the group of users within the Assigned Access configuration file
+- A multi-app kiosk is appropriate for devices that are shared by multiple people. When you configure a multi-app kiosk, certain policy settings that affects all non-administrator users on the device. For a list of these policies, see [Assigned Access policy settings](policy-settings.md)
+
 ## Develop your kiosk app
 
 Assigned Access uses the *Lock framework*. When an Assigned Access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an *above lock* screen app. To learn more, see [best practices guidance for developing a kiosk app for assigned access](/windows-hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access).
