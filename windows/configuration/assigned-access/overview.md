@@ -183,32 +183,7 @@ The following keyboard shortcuts are't blocked for any user account with Assigne
 
 For more information, see [Custom Logon][WHW-1].
 
-## Troubleshooting
 
-Event Viewer
-Run "eventvwr.msc"
-Navigate to "Applications and Services Logs"
-There are 2 areas of your interests:
-"Microsoft-Windows-AssignedAccess"
-"Microsoft-Windows-AssignedAccessBroker"
-Before any repro, it's recommended to enable "Operational" channel to get the most of logs.
-TraceLogging
-
-Registry Key
-These locations contain the latest Assigned Access Configuration:
-
-HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration
-HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessCsp
-These locations contain the latest "evaluated" configuration for each sign-in user:
-
-"HKCU\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration" (If it doesn't exist, it means no Assigned Access to be enforced for this user.)
-
-> [!NOTE]
-> If the application calls `KeyCredentialManager.IsSupportedAsync` when it is running in assigned access mode and it returns false on the first run, invoke the settings screen and select an appropriate PIN to use with Windows Hello. This is the settings screen that is hidden by the application running in assigned access mode. You can only use Windows Hello if you first leave assigned access mode, select your convenience pin, and then go back into assigned access mode again.
-
-
-> [!NOTE]
-> Assigned Access profiles only apply to non-admin accounts. When an administrator signs in, the Assigned Access restrictions don't apply.
 
 <!--links-->
 
