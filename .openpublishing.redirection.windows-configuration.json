@@ -809,6 +809,36 @@
       "source_path": "windows/configuration/kiosk/kiosk-prepare.md",
       "redirect_url": "/windows/configuration/assigned-access/recommendations",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/customize-start-menu-layout-windows-11.md",
+      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/customize-windows-10-start-screens-by-using-group-policy.md",
+      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/customize-windows-10-start-screens-by-using-mobile-device-management.md",
+      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md",
+      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/taskbar/configure-windows-10-taskbar.md",
+      "redirect_url": "/windows/configuration/taskbar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/taskbar/customize-taskbar-windows-11.md",
+      "redirect_url": "/windows/configuration/taskbar",
+      "redirect_document_id": false
     }
   ]
 }

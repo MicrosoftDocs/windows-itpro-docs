@@ -4,6 +4,7 @@ description: Learn how to customize the Windows Start layout and export the conf
 ms.topic: how-to
 ms.date: 03/04/2024
 zone_pivot_groups: windows-versions-11-10
+appliesto:
 ms.collection:
  - tier1
 ---
@@ -410,8 +411,6 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 1. In File Explorer, open the project's directory. (The default location is C:\Users\\*user name*\Documents\Windows Imaging and Configuration Designer (WICD)\\*project name*)
 
 1. Open the customizations.xml file in a text editor. The **<Customizations>** section will look like this:
-
-    ![Customizations file with the placeholder text to replace highlighted.](images/customization-start.png)
 
 1. Replace **layout.xml** with the text from the layout.xml file, [with markup characters replaced with escape characters](#escape).
 
