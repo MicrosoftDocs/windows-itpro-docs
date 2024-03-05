@@ -410,7 +410,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 1. In File Explorer, open the project's directory. (The default location is C:\Users\\*user name*\Documents\Windows Imaging and Configuration Designer (WICD)\\*project name*)
 
-1. Open the customizations.xml file in a text editor. The **<Customizations>** section will look like this:
+1. Open the customizations.xml file in a text editor.
 
 1. Replace **layout.xml** with the text from the layout.xml file, [with markup characters replaced with escape characters](#escape).
 

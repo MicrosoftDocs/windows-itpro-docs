@@ -88,7 +88,7 @@ $obj = Set-CimInstance -CimInstance $obj
 
 ## User experience
 
-After the settings are applied, the users that are configured to use Shell Launcher will the custom shell after sign-in.
+After the settings are applied, the users that are configured to use Shell Launcher will execute the custom shell after sign-in.
 
 Depending on your configuration, you can have a user to automatically sign in to the device.
 

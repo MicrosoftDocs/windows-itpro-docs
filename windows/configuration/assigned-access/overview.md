@@ -2,14 +2,12 @@
 title: What is Assigned Access?
 description: Learn about Assigned Access and how you can use it to configure a Windows device as a kiosk or restricted user experience.
 ms.date: 03/04/2024
-ms.topic: how-to
+ms.topic: overview
 ---
 
 # What is Assigned Access?
 
-Assigned Access is a Windows feature that you can use to configure a device as a kiosk or restricted user experience.
-
-Multi-app kiosk mode allows an IT admin to pre-select the apps and functionality available to a user to create a tailored and immersive device experience. Ideal for shared devices, multi-app kiosk mode can create different configurations for different users, ensuring they have access to only what is needed to use the device as intended. The locked down configurations present users with the Windows desktop with which they're already familiar, while limiting their access to reduce distractions and potential for inadvertent uses.
+Assigned Access is a Windows feature that you can use to configure a device as a kiosk or with a restricted user experience.
 
 :::row:::
     :::column span="1":::
@@ -20,10 +18,11 @@ Multi-app kiosk mode allows an IT admin to pre-select the apps and functionality
     :::column-end:::
 :::row-end:::
 
-A single UWP application or Microsoft Edge is executed in full screen, above the lock screen. Users can only use that application. If the kiosk app is closed, it will automatically restart. Practical examples include:
+When you configure a kiosk experience, a single UWP application or Microsoft Edge is executed in full screen, above the lock screen. Users can only use that application. If the kiosk app is closed, it will automatically restart. Practical examples include:
 
 - Public browsing
 - Interactive digital signage
+
 This experience is sometimes referred to as *single-app kiosk*.
 
 :::row:::
@@ -35,18 +34,19 @@ This experience is sometimes referred to as *single-app kiosk*.
     :::column-end:::
 :::row-end:::
 
-Users can execute a defined list of applications, with a custom Start menu and Taskbar. Practical examples include:
+When you configure a restricted user experience, users can execute a defined list of applications, with a tailored Start menu and Taskbar. Ideal for shared devices, multi-app kiosk mode can create different configurations for different users, ensuring they have access to only what is needed to use the device as intended. The locked down configurations present users with a familiar Windows desktop, while limiting their access, reducing distractions, and potential for inadvertent uses. Practical examples include:
 
 - Frontline worker devices
 - Student devices
 - Lab devices
 
-When applying an Assigned Access configuration to a device, different policy settings are enforced, creating a locked down experience to the users.
-
-> [!NOTE]
-> Assigned Access profiles only apply to non-admin accounts. When an administrator signs in, the Assigned Access restrictions don't apply.
+This experience is sometimes referred to as *multi-app kiosk*.
 
 [!INCLUDE [assigned-access](../../../includes/licensing/assigned-access.md)]
+
+## Locked-down experience
+
+When applying an Assigned Access configuration to a device, different policy settings and AppLocker rules are enforced, creating a locked down experience to the users.
 
 When the multi-app kiosk configuration is applied to a device, AppLocker rules are generated to allow the apps that are listed in the configuration. Here are the predefined Assigned Access AppLocker rules.
 
@@ -114,3 +114,7 @@ These locations contain the latest "evaluated" configuration for each sign-in us
 
 > [!NOTE]
 > If the application calls `KeyCredentialManager.IsSupportedAsync` when it is running in assigned access mode and it returns false on the first run, invoke the settings screen and select an appropriate PIN to use with Windows Hello. This is the settings screen that is hidden by the application running in assigned access mode. You can only use Windows Hello if you first leave assigned access mode, select your convenience pin, and then go back into assigned access mode again.
+
+
+> [!NOTE]
+> Assigned Access profiles only apply to non-admin accounts. When an administrator signs in, the Assigned Access restrictions don't apply.
