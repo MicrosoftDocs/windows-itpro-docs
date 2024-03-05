@@ -192,7 +192,6 @@ You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop ap
           Column="4"/>
   ```
 
-
   You must set the **DesktopApplicationLinkPath** attribute to the .lnk file that points to the Windows desktop application. The path also supports environment variables.
 
   If you are pointing to a third-party Windows desktop application and the layout is being applied before the first boot, you must put the .lnk file in a legacy Start Menu directory before first boot; for example, "%APPDATA%\Microsoft\Windows\Start Menu\Programs\" or the all users profile "%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\".

@@ -11,7 +11,7 @@ metadata:
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz
-  ms.date: 02/06/2024
+  ms.date: 03/04/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -42,11 +42,11 @@ landingContent:
             url: assigned-access/shell-launcher/index.md
       - linkListType: quickstart
         links:
-          - text: "Quickstart: Configure a kiosk with Assigned Access"
+          - text: Configure a kiosk with Assigned Access
             url: assigned-access/quickstart-kiosk.md
-          - text: "Quickstart: Configure a kiosk with Shell Launcher"
+          - text: Configure a kiosk with Shell Launcher
             url: assigned-access/shell-launcher/quickstart-kiosk.md
-          - text: "Quickstart: Configure a restricted user experience with Assigned Access"
+          - text: Configure a restricted user experience with Assigned Access
             url: assigned-access/quickstart-restricted-user-experience.md
 
   - title: Configure shared devices

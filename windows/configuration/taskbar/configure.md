@@ -40,7 +40,7 @@ To configure the taskbar:
     - Add `xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"` to the first line of the file, before the closing \>.
     - Use `<taskbar:UWA>` and [AUMID](../kiosk/find-the-application-user-model-id-of-an-installed-app.md) to pin Universal Windows Platform apps
     - Use `<taskbar:DesktopApp>` and Desktop Application Link Path to pin desktop applications
-1. Apply the layout modification XML file to devices using [Group Policy](../start/customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](../start/customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
+1. Apply the layout modification XML file to devices using Group Policy or a provisioning package.
 
 >[!IMPORTANT]
 >If you use a provisioning package or import-startlayout to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user then unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration that allows users to make changes that will persist, apply your configuration by using Group Policy.
@@ -314,7 +314,6 @@ The resulting taskbar for computers in any other country region:
 ::: zone-end
 
 ::: zone pivot="windows-11"
-
 
 > **Looking for OEM information?** See [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar) and [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
 

@@ -11,11 +11,5 @@ items:
     href: start-secondary-tiles.md
   - name: Start layout XML for Windows 10 desktop editions (reference)
     href: start-layout-xml-desktop.md
-- name: Use group policy
-  href: customize-windows-10-start-screens-by-using-group-policy.md
-- name: Use provisioning packages
-  href: customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md
-- name: Use mobile device management (MDM)
-  href: customize-windows-10-start-screens-by-using-mobile-device-management.md
-- name: Troubleshoot Start menu errors
+- name: Troubleshoot Start menu errors 🔗
   href: /troubleshoot/windows-client/shell-experience/troubleshoot-start-menu-errors

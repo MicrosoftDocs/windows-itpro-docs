@@ -13,7 +13,7 @@ The Windows OS exposes CSPs that are used by MDM providers, like [Microsoft Intu
 
 This article lists the CSPs that are available to customize the Start menu for Windows 11 devices. Windows 11 uses the [Policy CSP - Start](/windows/client-management/mdm/policy-csp-start). For more general information, see [Configuration service provider (CSP) reference](/windows/client-management/mdm/configuration-service-provider-reference).
 
-For information on customizing the Start menu layout using policy, see [Customize the Start menu layout on Windows 11](customize-start-menu-layout-windows-11.md).
+For information on customizing the Start menu layout using policy, see [Customize the Start menu layout](customize-and-export-start-layout.md).
 
 ## Existing Windows CSP policies that Windows 11 supports
 
@@ -47,14 +47,14 @@ For information on customizing the Start menu layout using policy, see [Customiz
 
 - [Start/HideAppList](/windows/client-management/mdm/policy-csp-start#start-hideapplist)
 - [Start/DisableContextMenus](/windows/client-management/mdm/policy-csp-start#start-disablecontextmenus)
+
 ## Existing CSP policies that Windows 11 doesn't support
 
 - [Start/StartLayout](/windows/client-management/mdm/policy-csp-start#start-startlayout)
   - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Start Layout`
 
 - [Start/HideRecentlyAddedApps](/windows/client-management/mdm/policy-csp-start#start-hiderecentlyaddedapps)
-  - Group policy: `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove "Recently added" list from Start Menu`
-
+- Group policy: `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove "Recently added" list from Start Menu`
 
 > [!NOTE]
 > The following two policies are supported starting in Windows 11, version 22H2

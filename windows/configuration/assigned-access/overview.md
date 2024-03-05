@@ -1,6 +1,6 @@
 ---
 title: What is Assigned Access?
-description: Learn how to configure devices with Assigned Access.
+description: Learn about Assigned Access and how you can use it to configure a Windows device as a kiosk or restricted user experience.
 ms.date: 03/04/2024
 ms.topic: how-to
 ---
@@ -46,7 +46,6 @@ When applying an Assigned Access configuration to a device, different policy set
 > [!NOTE]
 > Assigned Access profiles only apply to non-admin accounts. When an administrator signs in, the Assigned Access restrictions don't apply.
 
-
 [!INCLUDE [assigned-access](../../../includes/licensing/assigned-access.md)]
 
 When the multi-app kiosk configuration is applied to a device, AppLocker rules are generated to allow the apps that are listed in the configuration. Here are the predefined Assigned Access AppLocker rules.
@@ -91,7 +90,7 @@ Thoroughly test the Assigned Access kiosk configuration, ensuring that your devi
 > [!NOTE]
 > The use of multiple monitors is supported for multi-app kiosk mode in Windows 11.
 
-The Assigned Access feature is intended for dedicated devices, like kiosks. When the multi-app Assigned Access configuration is applied on the device, [certain policies](policies-settings.md) are enforced system-wide, impacting other users on the device. Deleting the kiosk configuration removes the Assigned Access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, the Start layout). To clear all the policy settings enforced by Assigned Access, you must reset Windows.
+The Assigned Access feature is intended for dedicated devices, like kiosks. When the multi-app Assigned Access configuration is applied on the device, certain [policy settings](policy-settings.md) are enforced system-wide, impacting other users on the device. Deleting the kiosk configuration removes the Assigned Access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, the Start layout). To clear all the policy settings enforced by Assigned Access, you must reset Windows.
 
 ## Troubleshooting
 
@@ -115,5 +114,3 @@ These locations contain the latest "evaluated" configuration for each sign-in us
 
 > [!NOTE]
 > If the application calls `KeyCredentialManager.IsSupportedAsync` when it is running in assigned access mode and it returns false on the first run, invoke the settings screen and select an appropriate PIN to use with Windows Hello. This is the settings screen that is hidden by the application running in assigned access mode. You can only use Windows Hello if you first leave assigned access mode, select your convenience pin, and then go back into assigned access mode again.
-
--->

@@ -67,8 +67,6 @@ To learn how to configure xml file, see [Create an Assigned Access configuration
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Examples**:
 
-For more examples, see [AssignedAccessConfiguration examples](#assignedaccessconfiguration-examples).
-
 - Get Configuration
 
     ```xml
