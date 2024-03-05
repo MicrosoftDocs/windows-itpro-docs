@@ -53,7 +53,7 @@ The following XML file contains the device description framework (DDF) for the C
           <Replace />
         </AccessType>
         <DefaultValue>0</DefaultValue>
-        <Description>This node allows to configure different kinds of Boot to Cloud mode. Boot to cloud mode enables users to seamlessly sign-in to a Cloud PC. For using this feature, Cloud Provider application must be installed on the PC and the user must have a Cloud PC provisioned. This node supports the below options: 0. Not Configured. 1. Enable Boot to Cloud Shared PC Mode: Boot to Cloud Shared PC mode allows multiple users to sign-in on the device and use for shared purpose. 2. Enable Boot to Cloud Personal Mode (Cloud only): Personal mode allows user to sign-in on the device using various authentication mechanism configured by their organization (For ex. PIN, Biometrics etc). This mode preserves user personalization, including their profile picture and username in local machine, and facilitates fast account switching.</Description>
+        <Description>This node allows to configure different kinds of Boot to Cloud mode. Boot to cloud mode enables users to seamlessly sign-in to a Cloud PC. For using this feature, Cloud Provider application must be installed on the PC and the user must have a Cloud PC provisioned. This node supports the below options: 0. Not Configured. 1. Enable Boot to Cloud Shared PC Mode: Boot to Cloud Shared PC mode allows multiple users to sign-in on the device and use for shared purpose. 2. Enable Boot to Cloud Dedicated Mode (Cloud only): Dedicated mode allows user to sign-in on the device using various authentication mechanism configured by their organization (For ex. PIN, Biometrics etc). This mode preserves user personalization, including their profile picture and username in local machine, and facilitates fast account switching.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -82,7 +82,7 @@ The following XML file contains the device description framework (DDF) for the C
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>2</MSFT:Value>
-            <MSFT:ValueDescription>Enable Boot to Cloud Personal Mode (Cloud only)</MSFT:ValueDescription>
+            <MSFT:ValueDescription>Enable Boot to Cloud Dedicated Mode (Cloud only)</MSFT:ValueDescription>
           </MSFT:Enum>
         </MSFT:AllowedValues>
       </DFProperties>

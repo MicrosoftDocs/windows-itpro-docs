@@ -40,7 +40,7 @@ The following list shows the CloudDesktop configuration service provider nodes:
 
 <!-- Device-BootToCloudPCEnhanced-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node allows to configure different kinds of Boot to Cloud mode. Boot to cloud mode enables users to seamlessly sign-in to a Cloud PC. For using this feature, Cloud Provider application must be installed on the PC and the user must have a Cloud PC provisioned. This node supports the below options: 0. Not Configured. 1. Enable Boot to Cloud Shared PC Mode: Boot to Cloud Shared PC mode allows multiple users to sign-in on the device and use for shared purpose. 2. Enable Boot to Cloud Personal Mode (Cloud only): Personal mode allows user to sign-in on the device using various authentication mechanism configured by their organization (For ex. PIN, Biometrics etc). This mode preserves user personalization, including their profile picture and username in local machine, and facilitates fast account switching.
+This node allows to configure different kinds of Boot to Cloud mode. Boot to cloud mode enables users to seamlessly sign-in to a Cloud PC. For using this feature, Cloud Provider application must be installed on the PC and the user must have a Cloud PC provisioned. This node supports the below options: 0. Not Configured. 1. Enable Boot to Cloud Shared PC Mode: Boot to Cloud Shared PC mode allows multiple users to sign-in on the device and use for shared purpose. 2. Enable Boot to Cloud Dedicated Mode (Cloud only): Dedicated mode allows user to sign-in on the device using various authentication mechanism configured by their organization (For ex. PIN, Biometrics etc). This mode preserves user personalization, including their profile picture and username in local machine, and facilitates fast account switching.
 <!-- Device-BootToCloudPCEnhanced-Description-End -->
 
 <!-- Device-BootToCloudPCEnhanced-Editable-Begin -->
@@ -66,7 +66,7 @@ This node allows to configure different kinds of Boot to Cloud mode. Boot to clo
 |:--|:--|
 | 0 (Default) | Not Configured. |
 | 1 | Enable Boot to Cloud Shared PC Mode. |
-| 2 | Enable Boot to Cloud Personal Mode (Cloud only). |
+| 2 | Enable Boot to Cloud Dedicated Mode (Cloud only). |
 <!-- Device-BootToCloudPCEnhanced-AllowedValues-End -->
 
 <!-- Device-BootToCloudPCEnhanced-Examples-Begin -->
