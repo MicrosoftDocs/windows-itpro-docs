@@ -40,8 +40,14 @@ landingContent:
             url: assigned-access/overview.md
           - text: What is Shell Launcher?
             url: assigned-access/shell-launcher/index.md
+      - linkListType: quickstart
+        links:
           - text: "Quickstart: Configure a kiosk with Assigned Access"
             url: assigned-access/quickstart-kiosk.md
+          - text: "Quickstart: Configure a kiosk with Shell Launcher"
+            url: assigned-access/shell-launcher/quickstart-kiosk.md
+          - text: "Quickstart: Configure a restricted user experience with Assigned Access"
+            url: assigned-access/quickstart-restricted-user-experience.md
 
   - title: Configure shared devices
     linkLists:
@@ -54,7 +60,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Provisioning packages for Windows
+          - text: Provisioning packages overview
             url: provisioning-packages/provisioning-packages.md
           - text: Install Windows Configuration Designer
             url: provisioning-packages/provisioning-install-icd.md
