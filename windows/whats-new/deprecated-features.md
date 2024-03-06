@@ -1,7 +1,7 @@
 ---
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer actively developing in Windows 10 and Windows 11.
-ms.date: 02/09/2024
+ms.date: 03/07/2024
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
@@ -47,6 +47,7 @@ The features in this article are no longer being actively developed, and might b
 
 | Feature | Details and mitigation  | Deprecation announced |
 |---|---|---|
+| Test Base <!--8790681--> | [Test Base for Microsoft 365](/microsoft-365/test-base/overview), an Azure cloud service for application testing, is deprecated. The service will be retired in the future and will be no longer available for use after retirement. | March 2023 | 
 | Windows Mixed Reality <!--8412877--> | [Windows Mixed Reality](/windows/mixed-reality/enthusiast-guide/before-you-start) is deprecated and will be removed in Windows 11, version 24H2. This deprecation includes the [Mixed Reality Portal](/windows/mixed-reality/enthusiast-guide/install-windows-mixed-reality) app, [Windows Mixed Reality for SteamVR](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality), and Steam VR Beta. Existing Windows Mixed Reality devices will continue to work with Steam through November 2026, if users remain on their current released version of Windows 11, version 23H2. After November 2026, Windows Mixed Reality will no longer receive security updates, nonsecurity updates, bug fixes, technical support, or online technical content updates.</br> </br>This deprecation doesn't affect HoloLens. We remain committed to HoloLens and our enterprise customers. | December 2023 |
 | Microsoft Defender Application Guard for Edge <!--8591267-->| [Microsoft Defender Application Guard](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview), including the [Windows Isolated App Launcher APIs](/windows/win32/api/isolatedapplauncher/), is being deprecated for Microsoft Edge for Business and [will no longer be updated](feature-lifecycle.md). Please download the [Microsoft Edge For Business Security Whitepaper](https://edgestatic.azureedge.net/shared/cms/pdfs/Microsoft_Edge_Security_Whitepaper_v2.pdf) to learn more about Edge for Business security capabilities. | December 2023 |
 | Legacy console mode <!-- 8577271 -->| The [legacy console mode](/windows/console/legacymode) is deprecated and no longer being updated. In future Windows releases, it will be available as an optional [Feature on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities). This feature won't be installed by default. | December 2023 |
