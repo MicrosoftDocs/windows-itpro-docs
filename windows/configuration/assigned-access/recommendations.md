@@ -7,76 +7,45 @@ ms.date: 2/29/2024
 
 # Assigned Access recommendations
 
-## Before you begin
+## Requirements
 
 - [User account control (UAC)](/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable kiosk mode.
 - Kiosk mode isn't supported over a remote desktop connection. Your kiosk users must sign in on the physical device that's set up as a kiosk.
-- For kiosks in public-facing environments with auto sign-in enabled, you should use a user account with the least privileges, such as a local standard user account.
 
-## Configuration recommendations
+Recommendations
+
+- For kiosks in public-facing environments with auto sign-in enabled, you should use a user account with the least privileges, such as a local standard user account.
 
 For a more secure kiosk experience, we recommend that you make the following configuration changes to the device before you configure it as a kiosk:
 
-- **Hide update notifications**. Starting with Windows 10 version 1809, you can hide notifications from showing on the devices. To enable this feature, you have the following options:
+## Configure Windows updates
 
-  - **Use Group policy**: `Computer Configuration\Administrative Templates\Windows Components\Windows Update\Display options for update notifications`
-  - **Use an MDM provider**: This feature uses the [Update/UpdateNotificationLevel CSP](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel). In Intune, you can use the [Windows update settings](/mem/intune/protect/windows-update-settings) to manage this feature.
+### Hide update notifications
 
-  - **Use the registry**:
+|  | Path |
+|--|--|
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel) |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Display options for update notifications**|
 
-    1. Open Registry Editor (regedit).
-    1. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`.
-    1. Create a **New** > **DWORD (32-bit) Value**. Enter `SetUpdateNotificationLevel`, and set its value to `1`.
-    1. Create a **New** > **DWORD (32-bit) Value**. Enter `UpdateNotificationLevel`. For value, you can enter:
-        - `1`: Hides all notifications except restart warnings.
-        - `2`: Hides all notifications, including restart warnings.
+### Enable and schedule automatic updates
 
-- **Enable and schedule automatic updates**. To enable this feature, you have the following options:
+|  | Path | Value|
+|--|--|--|
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#update-update-allowautoupdate) | Select **3 - Auto install and restart at a specified time**|
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Configure Automatic Updates** | Select **4 - Auto download and schedule the install**|
 
-  - **Use Group policy**: `Computer Configuration\Administrative Templates\Windows Components\Windows Update\Configure Automatic Updates`. Select `4 - Auto download and schedule the install`.
-  - **Use an MDM provider**: This feature uses the [Update/AllowAutoUpdate CSP](/windows/client-management/mdm/policy-csp-update#update-allowautoupdate). Select `3 - Auto install and restart at a specified time`. In Intune, you can use the [Windows update settings](/mem/intune/protect/windows-update-settings) to manage this feature.
-
-  You can also schedule automatic updates, including **Schedule Install Day**, **Schedule Install Time**, and **Schedule Install Week**. Installations can take between 30 minutes and 2 hours, depending on the device. Schedule updates to occur when a block of 3-4 hours is available.
-
-- **Enable automatic restart at the scheduled time**. To enable this feature, you have the following options:
-
-  - **Use Group policy**: `Computer Configuration\Administrative Templates\Windows Components\Windows Update\Always automatically restart at the scheduled time`. Select `4 - Auto download and schedule the install`.
-
-  - **Use an MDM provider**: This feature uses the [Update/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#update-activehoursstart) and [Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#update-activehoursend) CSPs. In Intune, you can use the [Windows update settings](/mem/intune/protect/windows-update-settings) to manage this feature.
-
-- **Replace "blue screen" with blank screen for OS errors**. To enable this feature, use the Registry Editor:
+## Replace *blue screen* with blank screen for OS errors
 
   1. Open Registry Editor (regedit).
   1. Go to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl`.
   1. Create a **New** > **DWORD (32-bit) Value**. Enter `DisplayDisabled`, and set its value to `1`.
 
-- **Put device in "Tablet mode"**. If you want users to use the touch screen, without using a keyboard or mouse, then turn on tablet mode using the Settings app. If users won't interact with the kiosk, such as for a digital sign, then don't turn on this setting.
-
-  Applies to Windows 10 only. Currently, Tablet mode isn't supported on Windows 11.
-
-  Your options:
-
-  - Use the **Settings** app:
-    1. Open the **Settings** app.
-    1. Go to **System** > **Tablet mode**.
-    1. Configure the settings you want.
-
-  - Use the **Action Center**:
-    1. On your device, swipe in from the left.
-    1. Select **Tablet mode**.
-
-- **Hide "Ease of access" feature on the sign-in screen**: To enable this feature, you have the following options:
+### Hide *Ease of access* feature on the sign-in screen
 
   - **Use an MDM provider**: In Intune, you can use the [Control Panel and Settings](/mem/intune/configuration/device-restrictions-windows-10#control-panel-and-settings) to manage this feature.
   - **Use the registry**: For more information, see [how to disable the Ease of Access button in the registry](/windows-hardware/customize/enterprise/complementary-features-to-custom-logon#welcome-screen).
 
-- **Disable the hardware power button**: To enable this feature, you have the following options:
-
-  - **Use the Settings app**:
-    1. Open the **Settings** app.
-    1. Go to **System** > **Power & Sleep** > **Additional power settings** > **Choose what the power button does**.
-    1. Select **Do nothing**.
-    1. **Save changes**.
+## Disable the hardware power button
 
   - **Use Group Policy**: Your options:
 
@@ -102,7 +71,7 @@ For a more secure kiosk experience, we recommend that you make the following con
 
     - [Start settings in a device configuration profile](/mem/intune/configuration/device-restrictions-windows-10#start): This option shows this setting, and all the Start menu settings you can manage.
 
-- **Remove the power button from the sign-in screen**. To enable this feature, you have the following options:
+## Remove the power button from the sign-in screen
 
   - **Use Group Policy**: `Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Shutdown: Allow system to be shut down without having to log on`. Select **Disabled**.
 
@@ -112,13 +81,8 @@ For a more secure kiosk experience, we recommend that you make the following con
 
       - `Local Policies Security Options\Shutdown Allow System To Be Shut Down Without Having To Log On`: Set to **Disabled**.
 
-- **Disable the camera**: To enable this feature, you have the following options:
 
-  - **Use the Settings app**:
-
-    1. Open the **Settings** app.
-    1. Go to **Privacy** > **Camera**.
-    1. Select **Allow apps use my camera** > **Off**.
+## Disable the camera
 
   - **Use Group Policy**: `Computer Configuration\Administrative Templates\Windows Components\Camera: Allow use of camera`: Select **Disabled**.
 
@@ -129,13 +93,7 @@ For a more secure kiosk experience, we recommend that you make the following con
 
       - `Camera\Allow camera`: Set to **Not allowed**.
 
-- **Turn off app notifications on the lock screen**: To enable this feature, you have the following options:
-
-  - **Use the Settings app**:
-
-    1. Open the **Settings** app.
-    1. Go to **System** > **Notifications & actions**.
-    1. In **Show notifications on the lock screen**, select **Off**.
+## Turn off app notifications on the lock screen
 
   - **Use Group policy**:
     - `Computer Configuration\Administrative Templates\System\Logon\Turn off app notifications on the lock screen`: Select **Enabled**.
@@ -150,15 +108,9 @@ For a more secure kiosk experience, we recommend that you make the following con
       - `\Start Menu and Taskbar\Notifications\Turn off toast notifications on the lock screen`: Select **Enabled**.
       - `\System\Logon\Turn off app notifications on the lock screen`: Select **Enabled**.
 
-      When looking at settings, check the supported OS for each setting to make sure it applies.
+## Disable removable media
 
-    - [Settings Catalog](/mem/intune/configuration/settings-catalog): This option lists all the settings you can configure, including the administrative templates used in on-premises Group Policy. Configure the following settings:
-
-      - `\Start Menu and Taskbar\Notifications\Turn off toast notifications on the lock screen`: Select **Enabled**.
-      - `\System\Logon\Turn off app notifications on the lock screen`: Select **Enabled**.
-
-- **Disable removable media**:  To enable this feature, you have the following options:
-  - **Use Group policy**: `Computer Configuration\Administrative Templates\System\Device Installation\Device Installation Restrictions`. Review the available settings that apply to your situation.
+- **Use Group policy**: `Computer Configuration\Administrative Templates\System\Device Installation\Device Installation Restrictions`. Review the available settings that apply to your situation.
     To prevent this policy from affecting a member of the Administrators group, select `Allow administrators to override Device Installation Restriction policies` > **Enabled**.
   - **Use an MDM provider**: In Intune, you have the following options:
     - [General settings in a device configuration profile](/mem/intune/configuration/device-restrictions-windows-10#general): See the **Removable storage** setting, and more settings you can manage.
@@ -173,8 +125,6 @@ For a more secure kiosk experience, we recommend that you make the following con
 ## Enable logging
 
 Logs can help you [troubleshoot issues](/troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting) kiosk issues. Logs about configuration and runtime issues can be obtained by enabling the **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational** channel, which is disabled by default.
-
-:::image type="content" source="images/enable-assigned-access-log.png" alt-text="On Windows client, open Event Viewer, right-click Operational, select enable log to turn on logging to help troubleshoot.":::
 
 ## Automatic logon
 
@@ -218,75 +168,3 @@ How to edit the registry to have an account sign in automatically:
 > [!WARNING]
 > Assigned access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account.  However, use of domain user or service accounts introduces risks that an attacker subverting the Assigned Access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
 
-## Interactions and interoperability
-
-The following table describes some features that have interoperability issues we recommend that you consider when running assigned access.
-
-### Accessibility
-
-Assigned access doesn't change accessibility settings. We recommend that you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block the following key combinations that open accessibility features:
-
-  | Key combination | Blocked behavior |
-  | --- | --- |
-  | <kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>Print Screen</kbd> | Open High Contrast dialog box |
-  | <kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>Num Lock</kbd> | Open Mouse Keys dialog box |
-  | <kbd>WIN</kbd> + <kbd>U</kbd> | Open the Settings app accessibility panel |
-
-### Keyboard shortcuts
-
-The following keyboard shortcuts are blocked for any user account with Assigned Access:
-
-| Keyboard shortcut | Action |
-|--|--|
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd>  + <kbd>Esc</kbd>  | Open Task Manager |
-| <kbd>WIN</kbd> + <kbd>, (comma)</kbd> | Temporarily peek at the desktop |
-| <kbd>WIN</kbd> + <kbd>A</kbd> | Open Action center |
-| <kbd>WIN</kbd> + <kbd>Alt</kbd>  + <kbd> D</kbd> | Display and hide the date and time on the desktop |
-| <kbd>WIN</kbd> + <kbd>Ctrl</kbd>  + <kbd> F</kbd> | Find computer objects in Active Directory |
-| <kbd>WIN</kbd> + <kbd>D</kbd> | Display and hide the desktop |
-| <kbd>WIN</kbd> + <kbd>E</kbd> | Open File Explorer |
-| <kbd>WIN</kbd> + <kbd>F</kbd> | Open Feedback Hub |
-| <kbd>WIN</kbd> + <kbd>G</kbd> | Open Game bar when a game is open |
-| <kbd>WIN</kbd> + <kbd>I</kbd> | Open Settings |
-| <kbd>WIN</kbd> + <kbd>J</kbd> | Set focus to a Windows tip when one is available |
-| <kbd>WIN</kbd> + <kbd>O</kbd> | Lock device orientation |
-| <kbd>WIN</kbd> + <kbd>Q</kbd> | Open search |
-| <kbd>WIN</kbd> + <kbd>R</kbd> | Open the Run dialog box |
-| <kbd>WIN</kbd> + <kbd>S</kbd> | Open search |
-| <kbd>WIN</kbd> + <kbd>Shift</kbd>  + <kbd> C</kbd> | Open Cortana in listening mode |
-| <kbd>WIN</kbd> + <kbd>X</kbd> | Open the Quick Link menu |
-| LaunchApp1 | Open the app that is assigned to this key |
-| LaunchApp2 | Open the app that is assigned to this key. On many Microsoft keyboards, the app is Calculator |
-| LaunchMail | Open the default mail client |
-
-The following keyboard shortcuts are't blocked for any user account with Assigned Access. You can use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block these key combinations:
-
-| Keyboard shortcut | Action |
-|--|--|
-|<kbd>Alt</kbd> + <kbd>F4</kbd>||
-|<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>||
-|<kbd>Alt</kbd> + <kbd>Tab</kbd>||
-
-> [!NOTE]
-> <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> is the default keyboard shortcut to break out of Assigned Access. You can use *Keyboard Filter* to configure a different key combination to break out of Assigned Access by setting *BreakoutKeyScanCode* as described in [WEKF_Settings](/windows-hardware/customize/enterprise/wekf-settings).
-
-> [!CAUTION]
-> Keyboard Filter settings apply to other standard accounts.
-
-- **Key sequences blocked by [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter)**: If Keyboard Filter is turned ON, then some key combinations are blocked automatically without you having to explicitly block them. For more information, see the [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter).
-  [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) is only available on Windows client Enterprise or Education
-- **Power button**: Customizations for the Power button complement assigned access, letting you implement features such as removing the power button from the Welcome screen. Removing the power button ensures the user can't turn off the device when it's in assigned access
-  For more information on removing the power button or disabling the physical power button, see [Custom Logon][WHW-1]
-- **Unified Write Filter (UWF)**: UWFsettings apply to all users, including users with assigned access
-  For more information, see [Unified Write Filter][WHW-2]
-- **WEDL_AssignedAccess class**: You can use this class to configure and manage basic lockdown features for assigned access. It's recommended to you use the Windows PowerShell cmdlets instead.
-  If you need to use Assigned Access API, see [WEDL_AssignedAccess][WHW-3]
-- **Welcome Screen**: Customizations for the Welcome screen let you personalize not only how the Welcome screen looks, but for how it functions. You can disable the power or language button, or remove all user interface elements. There are many options to make the Welcome screen your own
-
-For more information, see [Custom Logon][WHW-1].
-
-<!--links-->
-
-[WHW-1]: /windows-hardware/customize/enterprise/custom-logon
-[WHW-2]: /windows-hardware/customize/enterprise/unified-write-filter
-[WHW-3]: /windows-hardware/customize/enterprise/wedl-assignedaccess

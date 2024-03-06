@@ -44,8 +44,6 @@ When you configure a restricted user experience, users can execute a defined lis
 
 When applying an Assigned Access configuration to a device, different policy settings and AppLocker rules are enforced, creating a locked down experience to the users.
 
-
-
 ## Guidelines for choosing an app for a kiosk experience
 
 To create a kiosk experience, you can choose UWP apps or Microsoft Edge. However, some applications might not provide a good user experience when used as a kiosk.
@@ -183,10 +181,9 @@ The following keyboard shortcuts are't blocked for any user account with Assigne
 
 For more information, see [Custom Logon][WHW-1].
 
-
-
 <!--links-->
 
 [WHW-1]: /windows-hardware/customize/enterprise/custom-logon
 [WHW-2]: /windows-hardware/customize/enterprise/unified-write-filter
 [WHW-3]: /windows-hardware/customize/enterprise/wedl-assignedaccess
+
