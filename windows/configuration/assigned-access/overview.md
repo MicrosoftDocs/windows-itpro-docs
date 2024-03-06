@@ -59,19 +59,67 @@ Thoroughly test the Assigned Access kiosk configuration, ensuring that your devi
 
 The Assigned Access feature is intended for dedicated devices, like kiosks. When the multi-app Assigned Access configuration is applied on the device, certain [policy settings](policy-settings.md) are enforced system-wide, impacting other users on the device. Deleting the kiosk configuration removes the Assigned Access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, the Start layout). To clear all the policy settings enforced by Assigned Access, you must reset Windows.
 
+
+## Configure a device with Assigned Access
+
+The configuration of Assigned Access is done using an XML file. The XML file is applied to the device via the [Assigned Access CSP](/windows/client-management/mdm/assignedaccess-csp#shelllauncher), using one of the following options:
+
+- A Mobile Device Management (MDM) solution, like Microsoft Intune
+- Provisioning packages
+- The MDM Bridge WMI Provider
+
+To learn how to configure the Shell Launcher XML file, see [Create an Assigned Access configuration file](configuration-file.md).
+
+[!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
+
+#### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
+
+You can configure devices using a [custom policy][MEM-1] with the [AssignedAccess CSP][WIN-3].
+
+- **Setting:** `./Vendor/MSFT/AssignedAccess/Configuration`
+- **Value:** content of the XML configuration file
+
+Assign the policy to a group that contains as members the devices that you want to configure.
+
+#### [:::image type="icon" source="../../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+
+[!INCLUDE [provisioning-package-1](../../../../includes/configure/provisioning-package-1.md)]
+<!--
+- **Path:** `SMISettings/ShellLauncher`
+- **Value:** depends on specific settings
+-->
+[!INCLUDE [provisioning-package-2](../../../../includes/configure/provisioning-package-2.md)]
+
+#### [:::image type="icon" source="../../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
+
+[!INCLUDE [powershell-wmi-bridge-1](../../../../includes/configure/powershell-wmi-bridge-1.md)]
+
+<!--
+```PowerShell
+$shellLauncherConfiguration = @"
+
+# content of the XML configuration file
+
+"@
+
+$namespaceName="root\cimv2\mdm\dmmap"
+$className="MDM_AssignedAccess"
+$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
+$obj.ShellLauncher = [System.Net.WebUtility]::HtmlEncode($shellLauncherConfiguration)
+$obj = Set-CimInstance -CimInstance $obj
+```
+
+[!INCLUDE [powershell-wmi-bridge-2](../../../../includes/configure/powershell-wmi-bridge-2.md)]
+-->
+---
+
+
+
 ## User experience
 
 To test the kiosk or restricted user experience, sign in with the user account you specified in the configuration file.
 
 The Assigned Access configuration takes effect the next time the targeted user signs in. If that user account is signed in when you apply the configuration, make sure the user signs out and signs back in to validate the experience.
-
-Optionally, run Event Viewer (eventvwr.exe) and look through logs under **Applications and Services Logs** > **Microsoft** > **Windows** > **Provisioning-Diagnostics-Provider** > **Admin**.
-
-### App launching and switching experience
-
-In the multi-app mode, to maximize the user productivity and streamline the experience, an app will be always launched in full screen when the users click the tile on the Start. The users can minimize and close the app, but cannot resize the app window.
-
-The users can switch apps just as they do today in Windows. They can use the Task View button, Alt + Tab hotkey, and the swipe in from the left gesture to view all the open apps in task view. They can click the Windows button to show Start, from which they can open apps, and they can switch to an opened app by clicking it on the taskbar.
 
 ### Auto-trigger touch keyboard
 
@@ -79,18 +127,16 @@ The touch keyboard is automatically triggered when there's an input needed and n
 
 ### Sign out of assigned access
 
-To exit the Assigned Access (kiosk) app, press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>, and then sign in using another account. When you press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> to sign out of assigned access, the kiosk app will exit automatically. If you sign in again as the Assigned Access account or wait for the sign in screen timeout, the kiosk app relaunches. The Assigned Access user will remain signed in until an admin account opens **Task Manager** > **Users** and signs out the user account.
-
-If you press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> and do not sign in to another account, after a set time, Assigned Access will resume. The default time is 30 seconds, but you can change that in the following registry key:
+By default, to exit the kiosk experience, press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>. The kiosk app exits automatically. If you sign in again as the Assigned Access account, or wait for the sign in screen timeout, the kiosk app relaunches. The default timeout is 30 seconds, but you can change the timeout with the registry key:
 
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI`
 
 To change the default time for Assigned Access to resume, add *IdleTimeOut* (DWORD) and enter the value data as milliseconds in hexadecimal.
 
 > [!NOTE]
-> **IdleTimeOut** doesn't apply to the new Microsoft Edge kiosk mode.
+> `IdleTimeOut` doesn't apply to the Microsoft Edge kiosk mode.
 
-The Breakout Sequence of <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> is the default, but this sequence can be configured to be a different sequence of keys. The breakout sequence uses the format **modifiers + keys**. An example breakout sequence would look something like **Shift + Alt + a**, where **Shift** and **Alt** are the modifiers and **a** is the key value. For more information, see [Microsoft Edge kiosk XML sample](/windows/configuration/kiosk-xml#microsoft-edge-kiosk-xml-sample).
+The Breakout Sequence of <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> is the default, but this sequence can be configured to be a different sequence of keys. The breakout sequence uses the format **modifiers + keys**. An example breakout sequence would look something like <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>A</kbd>, where <kbd>CTRL</kbd> and <kbd>ALT</kbd> are the modifiers, and <kbd>A</kbd> is the key value. To learn more, see [Create an Assigned Access configuration XML file](configuration-file.md).
 
 ### Keyboard shortcuts
 
@@ -189,10 +235,8 @@ Here are some options to help you to further customize the Assigned Access exper
         To prevent this policy from affecting a member of the Administrators group, select `Allow administrators to override Device Installation Restriction policies` > **Enabled**
 - Enable logging: logs can help you [troubleshoot issues](/troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting) kiosk issues. Logs about configuration and runtime issues can be obtained by enabling the **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational** channel, which is disabled by default.
 
-
 <!--links-->
 
 [WHW-1]: /windows-hardware/customize/enterprise/custom-logon
 [WHW-2]: /windows-hardware/customize/enterprise/unified-write-filter
 [WHW-3]: /windows-hardware/customize/enterprise/wedl-assignedaccess
-
