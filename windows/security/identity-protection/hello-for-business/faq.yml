@@ -70,7 +70,7 @@ sections:
         answer: |
           If the user can sign in with a password, they can reset their PIN by selecting the *I forgot my PIN* link in the Settings app or from the lock screen, by selecting the *I forgot my PIN* link on the PIN credential provider.
 
-          For on-premises deployments, devices must be connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs. Hybrid deployments can onboard their Microsoft Entra tenant to use the *Windows Hello for Business PIN reset service* to reset their PINs. Non-destructive PIN reset works without access to the corporate network. Destructive PIN reset requires access to the corporate network. For more details about destructive and non-destructive PIN reset, see [PIN reset](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset).
+          For on-premises deployments, devices must be connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs. Hybrid deployments can onboard their Microsoft Entra tenant to use the *Windows Hello for Business PIN reset service* to reset their PINs. Non-destructive PIN reset works without access to the corporate network. Destructive PIN reset requires access to the corporate network. For more details about destructive and non-destructive PIN reset, see [PIN reset](pin-reset.md).
       - question: Does Windows Hello for Business prevent the use of simple PINs?
         answer: |
           Yes. Our simple PIN algorithm looks for and disallows any PIN that has a constant delta from one digit to the next. The algorithm counts the number of steps required to reach the next digit, overflowing at 10 ('zero').
@@ -217,7 +217,7 @@ sections:
           - attempting to access on-premises resources secured by Active Directory
       - question: Can I use RDP/VDI with Windows Hello for Business cloud Kerberos trust?
         answer: |
-          Windows Hello for Business cloud Kerberos trust can't be used as a supplied credential with RDP/VDI. Similar to key trust, cloud Kerberos trust can be used for RDP if a [certificate is enrolled into Windows Hello for Business](rdp-sign-in.md) for this purpose. As an alternative, consider using [Remote Credential Guard](/windows/security/identity-protection/remote-credential-guard) which doesn't require to deploy certificates.
+          Windows Hello for Business cloud Kerberos trust can't be used as a supplied credential with RDP/VDI. Similar to key trust, cloud Kerberos trust can be used for RDP if a [certificate is enrolled into Windows Hello for Business](rdp-sign-in.md) for this purpose. As an alternative, consider using [Remote Credential Guard](../remote-credential-guard.md) which doesn't require to deploy certificates.
       - question: Do all my domain controllers need to be fully patched as per the prerequisites for me to use Windows Hello for Business cloud Kerberos trust?
         answer: |
           No, only the number necessary to handle the load from all cloud Kerberos trust devices.
@@ -229,4 +229,4 @@ sections:
           In a hybrid deployment, a user's public key must sync from Microsoft Entra ID to Active Directory before it can be used to authenticate against a domain controller. This sync is handled by Microsoft Entra Connect and will occur during a normal sync cycle.
       - question: Can I use Windows Hello for Business key trust and RDP?
         answer: |
-          Remote Desktop Protocol (RDP) doesn't support using key-based authentication as supplied credentials. However, you can deploy certificates in the key trust model to enable RDP. For more information, see [Deploying certificates to key trust users to enable RDP](hello-deployment-rdp-certs.md). As an alternative, consider using [Remote Credential Guard](/windows/security/identity-protection/remote-credential-guard) which doesn't require to deploy certificates.
+          Remote Desktop Protocol (RDP) doesn't support using key-based authentication as supplied credentials. However, you can deploy certificates in the key trust model to enable RDP. For more information, see [Deploying certificates to key trust users to enable RDP](hello-deployment-rdp-certs.md). As an alternative, consider using [Remote Credential Guard](../remote-credential-guard.md) which doesn't require to deploy certificates.
