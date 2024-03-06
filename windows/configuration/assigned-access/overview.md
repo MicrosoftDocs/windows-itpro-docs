@@ -70,9 +70,9 @@ The configuration of Assigned Access is done using an XML file. The XML file is 
 
 To learn how to configure the Shell Launcher XML file, see [Create an Assigned Access configuration file](configuration-file.md).
 
-[!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
+[!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
+#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
 You can configure devices using a [custom policy][MEM-1] with the [AssignedAccess CSP][WIN-3].
 
@@ -81,18 +81,18 @@ You can configure devices using a [custom policy][MEM-1] with the [AssignedAcces
 
 Assign the policy to a group that contains as members the devices that you want to configure.
 
-#### [:::image type="icon" source="../../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+#### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
-[!INCLUDE [provisioning-package-1](../../../../includes/configure/provisioning-package-1.md)]
+[!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
 <!--
 - **Path:** `SMISettings/ShellLauncher`
 - **Value:** depends on specific settings
 -->
-[!INCLUDE [provisioning-package-2](../../../../includes/configure/provisioning-package-2.md)]
+[!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
-#### [:::image type="icon" source="../../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
+#### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 
-[!INCLUDE [powershell-wmi-bridge-1](../../../../includes/configure/powershell-wmi-bridge-1.md)]
+[!INCLUDE [powershell-wmi-bridge-1](../../../includes/configure/powershell-wmi-bridge-1.md)]
 
 <!--
 ```PowerShell
@@ -109,7 +109,7 @@ $obj.ShellLauncher = [System.Net.WebUtility]::HtmlEncode($shellLauncherConfigura
 $obj = Set-CimInstance -CimInstance $obj
 ```
 
-[!INCLUDE [powershell-wmi-bridge-2](../../../../includes/configure/powershell-wmi-bridge-2.md)]
+[!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
 -->
 ---
 
