@@ -8172,7 +8172,7 @@
     },
     {
       "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-kerberos-trust-provision.md",
-      "redirect_url": "/windows/security/identity-protection/hello-for-business/deploy/hybrid-cloud-kerberos-trust-enroll",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/how-it-works#provisioning",
       "redirect_document_id": false
     },
     {
