@@ -214,7 +214,7 @@ Assign the policy to a group that contains as members the devices that you want 
 [!INCLUDE [powershell-wmi-bridge-1](../../../includes/configure/powershell-wmi-bridge-1.md)]
 
 ```PowerShell
-$shellLauncherConfiguration = @"
+$assignedAccessConfiguration = @"
 
 # content of the XML configuration file
 
@@ -223,8 +223,30 @@ $shellLauncherConfiguration = @"
 $namespaceName="root\cimv2\mdm\dmmap"
 $className="MDM_AssignedAccess"
 $obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
-$obj.ShellLauncher = [System.Net.WebUtility]::HtmlEncode($shellLauncherConfiguration)
-$obj = Set-CimInstance -CimInstance $obj
+$obj.Configuration = [System.Net.WebUtility]::HtmlEncode($assignedAccessConfiguration)
+$obj = Set-CimInstance -CimInstance $obj -ErrorVariable cimSetError -ErrorAction SilentlyContinue
+if($cimSetError) {
+    Write-Output "An ERROR occurred. Displaying error record and attempting to retrieve error logs...`n"
+    Write-Error -ErrorRecord $cimSetError[0]
+
+    $timeout = New-TimeSpan -Seconds 30
+    $stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
+    do{
+        $events = Get-WinEvent -FilterHashtable $eventLogFilterHashTable -ErrorAction Ignore
+    } until ($events.Count -or $stopwatch.Elapsed -gt $timeout) # wait for the log to be available
+
+    if($events.Count) {
+        $events | ForEach-Object {
+            Write-Output "$($_.TimeCreated) [$($_.LevelDisplayName.ToUpper())] $($_.Message -replace "`n|`r")"
+        }
+    } else {
+        Write-Warning "Timed-out attempting to retrieve event logs..."
+    }
+
+    Exit 1
+}
+
+Write-Output "Successfully applied Assigned Access configuration"
 ```
 
 [!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
