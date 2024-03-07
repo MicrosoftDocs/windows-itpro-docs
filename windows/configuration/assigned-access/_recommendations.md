@@ -9,20 +9,13 @@ ms.date: 3/7/2024
 
 This article contains recommendations for devices configured with Assigned Access.
 
-For a more secure kiosk experience, we recommend that you make the following configuration changes to the device before you configure it as a kiosk:
+## Kiosk user account
 
-## Kiosk account
-
-For kiosks in public-facing environments with auto sign-in enabled, you should use a user account with the least privileges, such as a local standard user account.
-
-Using a domain user or service accounts has risks, and might allow an attacker to gain access to domain resources that are accessible to any domain account. When using domain accounts with assigned access, proceed with caution. Consider the domain resources potentially exposed by using a domain account.
-
-> [!WARNING]
-> Assigned access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account. However, use of domain user or service accounts introduces risks that an attacker subverting the Assigned Access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
+For kiosks devices located in public-facing environments, the recommendation is to use a user account with the least privileges, such as a local, standard user account. Using an Active Directory domain or Microsoft Entra user might allow an attacker to gain access to domain resources that are accessible to any domain account. When using domain accounts with assigned access, proceed with caution. Consider the domain resources potentially exposed by using a domain account.
 
 ### Automatic sign-in
 
-Consider enabling *automatic sign-in* for your kiosk device. When the device restarts, from an update or power outage, you can configure the device to sign in with the Assigned Access account automatically. Ensure that policy settings applied to the device don't prevent automatic sign in.
+Consider enabling *automatic sign-in* for your kiosk device. When the device restarts, from an update or power outage, you can configure the device to sign in with the Assigned Access account automatically. Ensure that policy settings applied to the device don't prevent automatic sign in from working as expected.
 
 > [!NOTE]
 > If you are using a Windows client device restriction CSP to set "Preferred Microsoft Entra tenant domain", this will break the "User logon type" auto-login feature of the Kiosk profile.
@@ -41,10 +34,10 @@ Alternatively, you can edit the Registry to have an account sign in automaticall
 | `HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon` | `DefaultPassword` | String | Set value as the password for the account. |
 | `HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon` | `DefaultDomainName` | String | Set value for domain, only for domain accounts. For local accounts, don't add this key. |
 
-The next time the device restarts, the account will sign in automatically.
+Once automatic sign-in is configured, reboot the device. The account will sign in automatically.
 
 > [!NOTE]
-> If you are also using [Custom Logon](/windows-hardware/customize/enterprise/custom-logon) with **HideAutoLogonUI** enabled, you might experience a black screen after a password expires. We recommend that you consider [setting the password to never expire](/windows-hardware/customize/enterprise/troubleshooting-custom-logon#the-device-displays-a-black-screen-when-a-password-expiration-screen-is-displayed).
+> If you are also using [Custom Logon](/windows-hardware/customize/enterprise/custom-logon) with `HideAutoLogonUI` enabled, you might experience a black screen when the user account password expires. Consider [setting the password to never expire](/windows-hardware/customize/enterprise/troubleshooting-custom-logon#the-device-displays-a-black-screen-when-a-password-expiration-screen-is-displayed).
 
 ## Windows Update
 
@@ -55,52 +48,33 @@ Configure your kiosk devices so that they are always up to date, without disrupt
 |Display options for update notifications|- **CSP**: `./Device/Vendor/MSFT/Policy/Config/Update/`[UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel) <br>- **GPO**: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Display options for update notifications**|
 |Enable and schedule automatic updates| - **CSP**: `./Device/Vendor/MSFT/Policy/Config/Update/`[AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#update-update-allowautoupdate) <br> Select **3 - Auto install and restart at a specified time** <br> - **GPO**: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Configure Automatic Updates** |
 
-## Keyboard shortcuts and physical buttons
+## Shut down, restart, sleep, and hybernate commands
 
-- Disable the hardware power button
+To prevent users to shut down, restart, sleep, or hybernate kiosk devices, here are some options:
 
-  - **Use Group Policy**: Your options:
+|  | Path | Configuration|
+|--|--|--|
+| **CSP** | `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/`[RequireSecurityDevice](/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciesrequiresecuritydevice)<br><br>`./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/ExcludeSecurityDevices/`[TPM12](/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciesexcludesecuritydevicestpm12) |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **System** > **Power Management** > **Button Settings**| Set **Select Power Button Action on Battery** and **Select Power Button Action on Plugged In** to **Take no action**.|
+|**GPO**| **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands** | This policy hides the buttons, but doesn't disable them.|
+|**GPO**| **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **User Rights Assignment** > **Shut down the system** | Remove the users or groups from this policy. To prevent this policy from affecting a member of the Administrators group, be sure to keep the Administrators group.|
 
-    - `Computer Configuration\Administrative Templates\System\Power Management\Button Settings`: Set `Select Power Button Action on Battery` and `Select Power Button Action on Plugged In` to **Take no action**.
-    - `User Configuration\Administrative Templates\Start Menu and Taskbar\Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands`: This policy hides the buttons, but doesn't disable them.
-    - `Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment\Shut down the system`: Remove the users or groups from this policy.
+## Keyboard shortcuts
 
-      To prevent this policy from affecting a member of the Administrators group, be sure to keep the Administrators group.
+The following keyboard shortcuts aren't blocked for any user account that is configured with a restricted user experience. You can use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block the key combinations:
 
-  - **Use an MDM provider**: In Intune, you have some options:
-
-    - [Settings Catalog](/mem/intune/configuration/settings-catalog): This option lists all the settings you can configure, including the administrative templates used in on-premises Group Policy. Configure the following settings:
-
-      - `Power\Select Power Button Action on Battery`: Set to **Take no action**.
-      - `Power\Select Power Button Action on Plugged In`: Set to **Take no action**.
-      - `Start\Hide Power Button`: Set to **Enabled**. This policy hides the button, but doesn't disable it.
-
-    - [Administrative templates](/mem/intune/configuration/administrative-templates-windows): These templates are the administrative templates used in on-premises Group Policy. Configure the following setting:
-
-      - `\Start menu and Taskbar\Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands`: This policy hides the buttons, but doesn't disable them.
-
-      When looking at settings, check the supported OS for each setting to make sure it applies.
-
-    - [Start settings in a device configuration profile](/mem/intune/configuration/device-restrictions-windows-10#start): This option shows this setting, and all the Start menu settings you can manage.
-
-### Shortcuts
-
-The following keyboard shortcuts are't blocked for any user account with Assigned Access. You can use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block these key combinations:
-
-| Keyboard shortcut | Action |
-|--|--|
-|<kbd>Alt</kbd> + <kbd>F4</kbd>||
-|<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>||
-|<kbd>Alt</kbd> + <kbd>Tab</kbd>||
+- <kbd>Alt</kbd> + <kbd>F4</kbd>
+- <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>
+- <kbd>Alt</kbd> + <kbd>Tab</kbd>
 
 > [!NOTE]
-> <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> is the default keyboard shortcut to break out of Assigned Access. You can use *Keyboard Filter* to configure a different key combination to break out of Assigned Access by setting *BreakoutKeyScanCode* as described in [WEKF_Settings](/windows-hardware/customize/enterprise/wekf-settings).
+> <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> is the default keyboard shortcut to break out of Assigned Access. You can also use *Keyboard Filter* to configure a different key combination to break out of Assigned Access by setting `BreakoutKeyScanCode` as described in [WEKF_Settings](/windows-hardware/customize/enterprise/wekf-settings).
 
 > [!CAUTION]
 > Keyboard Filter settings apply to other standard accounts.
 
 - **Key sequences blocked by [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter)**: If Keyboard Filter is turned ON, then some key combinations are blocked automatically without you having to explicitly block them. For more information, see the [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter). Keyboard Filter is only available on Windows client Enterprise or Education
-- **Power button**: Customizations for the Power button complement assigned access, letting you implement features such as removing the power button from the Welcome screen. Removing the power button ensures the user can't turn off the device when it's in assigned access
+- **Power button**: Customizations for the Power button complement assigned access, letting you implement features such as removing the power button from the Welcome screen. Removing the power button ensures the user can't turn off the device when it's in Assigned Access
   For more information on removing the power button or disabling the physical power button, see [Custom Logon][WHW-1]
 - **Unified Write Filter (UWF)**: UWFsettings apply to all users, including users with assigned access
   For more information, see [Unified Write Filter][WHW-2]
