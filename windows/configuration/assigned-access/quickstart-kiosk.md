@@ -1,11 +1,11 @@
 ---
-title: "Quickstart: Configure a kiosk experience with Assigned Access"
+title: "Quickstart: configure a kiosk experience with Assigned Access"
 description: Learn how to configure a kiosk experience with Assigned Access using the Assigned Access configuration service provider (CSP), Microsoft Intune, PowerShell, or group policy (GPO).
 ms.topic: quickstart
 ms.date: 03/04/2024
 ---
 
-# Quickstart: Configure a kiosk with Assigned Access
+# Quickstart: configure a kiosk with Assigned Access
 
 This quickstart provides practical examples of how to configure a *kiosk experience* on Windows with Assigne Access. The examples describe the steps using the Settings app, a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
 
