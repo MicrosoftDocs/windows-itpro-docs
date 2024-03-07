@@ -32,9 +32,6 @@ Windows offers two different features to configure a kiosk experience:
 - **Assigned Access**: used to execute a single Universal Windows Platform (UWP) app or Microsoft Edge in full screen above the lock screen. When the kiosk account signs in, the kiosk app launches automatically. If the UWP app is closed, it automatically restarts
 - **Shell Launcher**: used to configure a device to execute a Windows desktop application as the user interface. The application that you specify replaces the default Windows shell (`Explorer.exe`) that usually runs when a user signs in. This type of single-app kiosk doesn't run above the lock screen
 
->[!IMPORTANT]
->The kiosk experience isn't supported over a remote desktop connection. The kiosk users must sign in on the console that is set up as a kiosk.
-
 :::row:::
     :::column span="1":::
     :::image type="content" source="images/restricted-user-experience.png" alt-text="Icon representing a restricted user experience." border="false":::
