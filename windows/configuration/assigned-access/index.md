@@ -65,7 +65,7 @@ In the next sections, you can learn more about the options available to configur
 
 ### :::image type="icon" source="../../images/icons/rocket.svg" border="false"::: Quickstarts
 
-If you're ready to get started, check out the following quickstarts:
+If you're ready to try out the options available to configure kiosks and restricted user experiences, check out the following quickstarts:
 
 - [Quickstart: Configure a kiosk with Assigned Access](quickstart-kiosk.md)
 - [Quickstart: configure a kiosk experience with Shell Launcher](shell-launcher/quickstart-kiosk.md)
