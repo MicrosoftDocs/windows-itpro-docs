@@ -21,7 +21,7 @@ When you configure a **restricted user experience**, users can only execute a de
 - Lab devices
 
 > [!NOTE]
-> When you configure a restricted user experience, different policy settings are applied to the device. Some policy settings apply to standard users, and some to administrators. For more information, see [Assigned Access policy settings](policy-settings.md).
+> When you configure a restricted user experience, different policy settings are applied to the device. Some policy settings apply to standard users only, and some to administrator accounts too. For more information, see [Assigned Access policy settings](policy-settings.md).
 
 ## Requirements
 
