@@ -7,7 +7,7 @@ ms.topic: overview
 
 # What is Shell Launcher?
 
-Shell Launcher is a Windows feature that you can use to replace the default Windows Explorer shell (`explorer.exe`) with a Windows desktop application or a Universal Windows Platform (UWP) app.
+Shell Launcher is a Windows feature that you can use to replace the default Windows Explorer shell (`Explorer.exe`) with a Windows desktop application or a Universal Windows Platform (UWP) app.
 
 Practical examples include:
 

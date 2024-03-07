@@ -9,6 +9,8 @@ items:
       href: start/toc.yml
     - name: Taskbar
       href: taskbar/toc.yml
+    - name: Windows Spotlight
+      href: lock-screen/windows-spotlight.md
 - name: Microsoft Store
   items:
   - name: Configure access to the Microsoft Store
@@ -17,8 +19,6 @@ items:
     href: store/find-aumid.md
   - name: Manage Microsoft Store tips, "fun facts", and suggestions
     href: tips/manage-tips-and-suggestions.md
-- name: Windows Spotlight
-  href: lock-screen/windows-spotlight.md
 - name: Cellular settings
   href: cellular/provisioning-apn.md
 - name: Kiosks and restricted user experiences
