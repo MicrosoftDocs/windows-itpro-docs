@@ -23,6 +23,11 @@ When you configure a kiosk experience, a single UWP application or Microsoft Edg
 - Public browsing
 - Interactive digital signage
 
+>[!IMPORTANT]
+>[User account control (UAC)](/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable kiosk mode.
+>
+>Kiosk mode is not supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk. Apps that run in kiosk mode cannot use copy and paste.
+
 :::row:::
     :::column span="1":::
     :::image type="content" source="images/restricted-user-experience.png" alt-text="Icon representing a restricted user experience." border="false":::
@@ -45,25 +50,16 @@ When you configure a restricted user experience, users can only execute a define
 
 ## Configure a kiosk experience
 
-A single-app kiosk uses the Assigned Access feature to run a single app above the lock screen. When the kiosk account signs in, the app is launched automatically. The person using the kiosk cannot do anything on the device outside of the kiosk app.
+There are several options to configure a kiosk experience. If you need to configure a single device with a local account, you can use:
 
->[!IMPORTANT]
->[User account control (UAC)](/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable kiosk mode.
->
->Kiosk mode is not supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk. Apps that run in kiosk mode cannot use copy and paste.
-
-Depending on the scenario, you have several options for configuring your single-app kiosk.
-
-- Locally, in Settings: simple method to configure a single device as a kiosk for a local standard user account
-- PowerShell: You can use Windows PowerShell cmdlets to set up a single-app kiosk. First, you need to [create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) on the device and install the kiosk app for that account
-- The kiosk wizard in Windows Configuration Designer: Windows Configuration Designer is a tool that produces a *provisioning package*. A provisioning package includes configuration settings that can be applied to one or more devices during the first-run experience (OOBE), or after OOBE
-- Microsoft Intune or other mobile device management (MDM) provider: For devices managed by your organization, you can use MDM to set up a kiosk configuration
+- Settings: use this option when you need a simple method to configure a single device with a local standard user account
+- PowerShell: you can use Windows PowerShell cmdlets to set up a single-app kiosk with a local standard account. First, you need to [create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) on the device and install the kiosk app for that account
 
 For advanced customizations, you can use the Assigned Access CSP to configure the kiosk experience. The CSP allows you to configure the kiosk app, the user account, and the kiosk app's behavior. When you use the CSP, you must create an XML configuration file that specifies the kiosk app and the user account. The XML file is applied to the device via the [Assigned Access CSP](/windows/client-management/mdm/assignedaccess-csp#shelllauncher), using one of the following options:
 
 - A Mobile Device Management (MDM) solution, like Microsoft Intune
 - Provisioning packages
-- The MDM Bridge WMI Provider
+- PowerShell, with the MDM Bridge WMI Provider
 
 To learn how to configure the Shell Launcher XML file, see [Create an Assigned Access configuration file](configuration-file.md).
 
@@ -92,17 +88,10 @@ Here are the steps to configure a kiosk using the Settings app:
 
 1. Select **Close**
 
-- UWP
-- Local standard user
+When the device isn't joined to an Active Directory domain or Microsoft Entra ID, automatic sign-in of the kiosk account is configured automatically:
 
-You can use **Settings** to quickly configure one or a few devices as a kiosk.
-
-When your kiosk is a local device that isn't managed by Active Directory or Microsoft Entra ID, there is a default setting that enables automatic sign-in after a restart. That means that when the device restarts, the last signed-in user will be signed in automatically. If the last signed-in user is the kiosk account, the kiosk app will be launched automatically after the device restarts.
-
-- If you want the kiosk account to sign in automatically, and the kiosk app launched when the device restarts, then you don't need to do anything.
-
-- If you don't want the kiosk account to sign in automatically when the device restarts, then you must change the default setting before you configure the device as a kiosk. Sign in with the account that you will assign as the kiosk account. Open the **Settings** app > **Accounts** > **Sign-in options**. Set the **Use my sign-in info to automatically finish setting up my device after an update or restart** setting to **Off**. After you change the setting, you can apply the kiosk configuration to the device.
-
+- If you want the kiosk account to sign in automatically, and the kiosk app launched when the device restarts, then you don't need to do anything
+- If you don't want the kiosk account to sign in automatically when the device restarts, then you must change the default setting before you configure the device as a kiosk. Sign in with the account that you want to use as the kiosk account. Open **Settings** > **Accounts** > **Sign-in options**. Set the **Use my sign-in info to automatically finish setting up my device after an update or restart** setting to **Off**. After you change the setting, you can apply the kiosk configuration to the device
 
 #### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
@@ -116,17 +105,14 @@ Assign the policy to a group that contains as members the devices that you want 
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
 [!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
-<!--
-- **Path:** `SMISettings/ShellLauncher`
-- **Value:** depends on specific settings
--->
+
+- **Path:** `AssignedAccess/AssignedAccessSettings`
+- **Value:** Enter the account and the application you want to use for Assigned access, using the AUMID of the app. Example:
+  - `{"Account":"domain\user", "AUMID":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}`
+
 [!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
 #### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
-
-| App Type | OS| Account type|
-|-|-|
-|UWP| Windows Pro/Pro Edu and Ent/Edu|Local standard user|
 
 To configure a device using the Windows PowerShell cmdlet:
 
@@ -164,6 +150,8 @@ To remove assigned access, using PowerShell, run the following cmdlet:
 Clear-AssignedAccess
 ```
 
+For advanced customizations that use the XML configuration file, use the MDM Bridge WMI Provider.
+
 [!INCLUDE [powershell-wmi-bridge-1](../../../includes/configure/powershell-wmi-bridge-1.md)]
 
 ```PowerShell
@@ -189,16 +177,57 @@ $obj = Set-CimInstance -CimInstance $obj
 
 ## Configure a restricted user experience
 
+To configure a restricted user experience with Assigned Access, you must create an XML configuration file with the settings for the desired experience. The XML file is applied to the device via the [Assigned Access CSP](/windows/client-management/mdm/assignedaccess-csp#shelllauncher), using one of the following options:
+
+- A Mobile Device Management (MDM) solution, like Microsoft Intune
+- Provisioning packages
+- PowerShell, with the MDM Bridge WMI Provider
+
+To learn how to configure the Assigned Access XML file, see [Create an Assigned Access configuration file](configuration-file.md).
+
+[!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
+
 #### [:::image type="icon" source="../images/icons/settings.svg"::: **Settings**](#tab/settings)
 
 This option is not available using Settings.
 
 #### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
+You can configure devices using a [custom policy][MEM-1] with the [AssignedAccess CSP][WIN-3].
+
+- **Setting:** `./Vendor/MSFT/AssignedAccess/ShellLauncher`
+- **Value:** content of the XML configuration file
+
+Assign the policy to a group that contains as members the devices that you want to configure.
+
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+
+[!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
+
+- **Path:** `AssignedAccess/MultiAppAssignedAccessSettings`
+- **Value:**  content of the XML configuration file
+
+[!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
 #### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 
+[!INCLUDE [powershell-wmi-bridge-1](../../../includes/configure/powershell-wmi-bridge-1.md)]
+
+```PowerShell
+$shellLauncherConfiguration = @"
+
+# content of the XML configuration file
+
+"@
+
+$namespaceName="root\cimv2\mdm\dmmap"
+$className="MDM_AssignedAccess"
+$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
+$obj.ShellLauncher = [System.Net.WebUtility]::HtmlEncode($shellLauncherConfiguration)
+$obj = Set-CimInstance -CimInstance $obj
+```
+
+[!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
 ---
 
 > [!TIP]
@@ -209,7 +238,7 @@ This option is not available using Settings.
 Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, Start Layout).
 
 
-<!-->
+<!--
 
 ## Develop your kiosk app
 
@@ -364,6 +393,9 @@ HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessCsp
 These locations contain the latest "evaluated" configuration for each sign-in user:
 
 "HKCU\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration" (If it doesn't exist, it means no Assigned Access to be enforced for this user.)
+
+-->
+
 
 <!--links-->
 

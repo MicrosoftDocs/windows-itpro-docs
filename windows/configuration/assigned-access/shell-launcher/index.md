@@ -86,6 +86,9 @@ $obj = Set-CimInstance -CimInstance $obj
 
 ---
 
+> [!TIP]
+> For practical examples, see the [Quickstart: configure a kiosk experience with Shell Launcher](quickstart-kiosk.md).
+
 ## User experience
 
 After the settings are applied, the users that are configured to use Shell Launcher will execute the custom shell after sign-in.
