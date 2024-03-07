@@ -11,7 +11,7 @@ items:
         href: quickstart-kiosk.md
       - name: Configure a restricted user experience with Assigned Access
         href: quickstart-restricted-user-experience.md
-  - name: Recommendations
+  - name: Recommendations ⚠️
     href: recommendations.md
   - name: Create an Assigned Access configuration file
     href: configuration-file.md
