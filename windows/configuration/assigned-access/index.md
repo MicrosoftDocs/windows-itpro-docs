@@ -63,7 +63,7 @@ In the next sections, you can learn more about the options available to configur
 - [Assigned Access](overview.md)
 - [Shell Launcher](shell-launcher/index.md)
 
-### :::image type="icon" source="../../images/icons/rocket.svg" border="false"::: Quickstarts
+### :::image type="icon" source="../images/icons/rocket.svg" border="false"::: Quickstarts
 
 If you're ready to try out the options available to configure kiosks and restricted user experiences, check out the following quickstarts:
 
