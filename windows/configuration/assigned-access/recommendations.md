@@ -145,13 +145,6 @@ user account. Rather, target the group of users within the Assigned Access confi
 
 Assigned Access uses the *Lock framework*. When an Assigned Access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an *above lock* screen app. To learn more, see [best practices guidance for developing a kiosk app for assigned access](/windows-hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access).
 
-## Test your Assigned Access experience
-
-Thoroughly test the Assigned Access kiosk configuration, ensuring that your devices provide a good user experience.
-
-
-The Assigned Access feature is intended for dedicated devices, like kiosks. When the multi-app Assigned Access configuration is applied on the device, certain [policy settings](policy-settings.md) are enforced system-wide, impacting other users on the device. Deleting the kiosk configuration removes the Assigned Access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, the Start layout). To clear all the policy settings enforced by Assigned Access, you must reset Windows.
-
 ## Troubleshoot
 
 Event Viewer

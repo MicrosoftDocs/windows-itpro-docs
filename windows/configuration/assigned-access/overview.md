@@ -296,9 +296,9 @@ The following keyboard shortcuts are blocked for the user accounts with Assigned
 | <kbd>WIN</kbd> + <kbd>S</kbd> | Open search |
 | <kbd>WIN</kbd> + <kbd>Shift</kbd>  + <kbd> C</kbd> | Open Cortana in listening mode |
 | <kbd>WIN</kbd> + <kbd>X</kbd> | Open the Quick Link menu |
-| LaunchApp1 | Open the app that is assigned to this key |
-| LaunchApp2 | Open the app that is assigned to this key. On many Microsoft keyboards, the app is Calculator |
-| LaunchMail | Open the default mail client |
+| <kbd>LaunchApp1</kbd> | Open the app that is assigned to this key |
+| <kbd>LaunchApp2</kbd> | Open the app that is assigned to this key. On many Microsoft keyboards, the app is Calculator |
+| <kbd>LaunchMail</kbd> | Open the default mail client |
 
 ## Remove Assigned Access
 

@@ -72,7 +72,7 @@ Use the event logs on the AD FS service to confirm the service account enrolled 
 - The thumbprint of the certificate
 - The certificate template used to issue the certificate
 
-You cannot use the Certificate Manager to view enrolled certificates for group managed service accounts. Use the event log information to confirm the AD FS service account enrolled a certificate. Use certutil.exe to view the details of the certificate shown in the event log.
+You cannot use the Certificate Manager to view enrolled certificates for group managed service accounts. Use the event log information to confirm the AD FS service account enrolled a certificate. Use `certutil.exe` to view the details of the certificate shown in the event log.
 
 Group managed service accounts use user profiles to store user information, which included enrolled certificates. On the AD FS server, use a command prompt and navigate to `%systemdrive%\users\<adfsGMSA_name>\appdata\roaming\Microsoft\systemcertificates\my\certificates`.
 
