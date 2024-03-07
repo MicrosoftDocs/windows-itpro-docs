@@ -21,14 +21,14 @@ When you configure a **restricted user experience**, users can only execute a de
 - Lab devices
 
 > [!NOTE]
-> When you configure a restricted user experience, different policy settings are applied to the device. Some policy settings apply to standard users, and some to administrators. For more information, see [policy-settings](policy-settings.md).
+> When you configure a restricted user experience, different policy settings are applied to the device. Some policy settings apply to standard users, and some to administrators. For more information, see [Assigned Access policy settings](policy-settings.md).
 
 ## Requirements
 
 Here are the requirements for Assigned Access:
 
-- [User account control (UAC)](/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable a kiosk experience
-- The kiosk experience isn't supported over a remote desktop connection. The kiosk users must sign in on the console that is set up as a kiosk
+- To use a kiosk experience, [User account control (UAC)](/windows/security/identity-protection/user-account-control/user-account-control-overview) must be enabled
+- You can only use a kiosk experience when signing in from the console. The kiosk experience isn't supported over a remote desktop connection
 
 [!INCLUDE [assigned-access](../../../includes/licensing/assigned-access.md)]
 
@@ -36,10 +36,10 @@ Here are the requirements for Assigned Access:
 
 There are several options to configure a kiosk experience. If you need to configure a single device with a local account, you can use:
 
+- PowerShell: you can use the `Set-AssignedAccess` PowerShell cmdlet to configure a kiosk experience using a local standard account
 - Settings: use this option when you need a simple method to configure a single device with a local standard user account
-- PowerShell: you can use Windows PowerShell cmdlets to set up a single-app kiosk with a local standard account. First, you need to [create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) on the device and install the kiosk app for that account
 
-For advanced customizations, you can use the Assigned Access CSP to configure the kiosk experience. The CSP allows you to configure the kiosk app, the user account, and the kiosk app's behavior. When you use the CSP, you must create an XML configuration file that specifies the kiosk app and the user account. The XML file is applied to the device via the [Assigned Access CSP](/windows/client-management/mdm/assignedaccess-csp#shelllauncher), using one of the following options:
+For advanced customizations, you can use the [Assigned Access CSP](/windows/client-management/mdm/assignedaccess-csp) to configure the kiosk experience. The CSP allows you to configure the kiosk app, the user account, and the kiosk app's behavior. When you use the CSP, you must create an XML configuration file that specifies the kiosk app and the user account. The XML file is applied to the device using one of the following options:
 
 - A Mobile Device Management (MDM) solution, like Microsoft Intune
 - Provisioning packages
@@ -70,7 +70,7 @@ Assign the policy to a group that contains as members the devices that you want 
 
 #### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 
-To configure a device using the Windows PowerShell cmdlet:
+To configure a device using Windows PowerShell:
 
 1. Sign in as administrator
 1. [Create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) for Assigned Access
@@ -95,7 +95,7 @@ To configure a device using the Windows PowerShell cmdlet:
 > [!NOTE]
 > To set up Assigned Access using `-AppName`, the user account that you enter for Assigned Access must have signed in at least once.
 
-For more innformation:
+For more information:
 
 - [Find the Application User Model ID of an installed app](../store/find-aumid.md)
 - [Set-AssignedAccess](/powershell/module/assignedaccess/set-assignedaccess)
@@ -106,9 +106,16 @@ To remove assigned access, using PowerShell, run the following cmdlet:
 Clear-AssignedAccess
 ```
 
-For advanced customizations that use the XML configuration file, use the MDM Bridge WMI Provider.
+For advanced customizations that use the XML configuration file, you can use PowerShell scripts via the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal).
 
-[!INCLUDE [powershell-wmi-bridge-1](../../../includes/configure/powershell-wmi-bridge-1.md)]
+> [!IMPORTANT]
+> For all device settings, the WMI Bridge client must be executed as SYSTEM (LocalSystem) account.
+
+To test the PowerShell script, you can:
+
+1. [Download the psexec tool](/sysinternals/downloads/psexec)
+1. Open an elevated command prompt and run: `psexec.exe -i -s powershell.exe`
+1. Run the script in the PowerShell session
 
 ```PowerShell
 $shellLauncherConfiguration = @"
@@ -297,10 +304,11 @@ Deleting the restricted user experience removes the policy settings associated w
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Review the recommendations before you deploy Assigned Access
+> Review the recommendations before you deploy Assigned Access:
 >
 > [Assigned Access recommendations](recommendations.md)
 
 <!--links-->
 
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
+[WIN-3]: /windows/client-management/mdm/assignedaccess-csp

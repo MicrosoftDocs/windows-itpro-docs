@@ -23,7 +23,7 @@ With Shell Launcher you can use features and methods to control access to other 
 - Group policy (GPO)
 - [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)
 
-Shell Launcher is part of the [Assigned Access](../overview.md) feature, which allows you to configure kiosks or a restricted user experiences. To learn about the differences between Shell Launcher and the other options offered by Assigned Access, see [Configure kiosks and restricted user experiences](../index.md).
+Shell Launcher is part of the [Assigned Access](../overview.md) feature, which allows you to configure kiosks or restricted user experiences. To learn about the differences between Shell Launcher and the other options offered by Assigned Access, see [Windows kiosks and restricted user experiences](../index.md).
 
 [!INCLUDE [shell-launcher](../../../../includes/licensing/shell-launcher.md)]
 

@@ -6,4 +6,4 @@ ms.topic: include
 ms.prod: windows-client
 ---
 
-For more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider).
+For more information, see [Use PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider).

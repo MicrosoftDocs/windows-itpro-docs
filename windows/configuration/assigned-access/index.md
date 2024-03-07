@@ -1,11 +1,11 @@
 ---
-title: Configure kiosks and restricted user experiences
+title: Windows kiosks and restricted user experiences
 description: Learn about the options available in Windows to configure kiosks and restricted user experiences.
 ms.topic: overview
 ms.date: 03/04/2024
 ---
 
-# Configure kiosks and restricted user experiences
+# Windows kiosks and restricted user experiences
 
 Organizations are constantly seeking ways to streamline operations, improve customer service, and enhance productivity. One effective solution is the deployment of kiosk devices. These specialized devices offer a range of benefits that can significantly impact an organization's efficiency and success. For example:
 
@@ -14,7 +14,7 @@ Organizations are constantly seeking ways to streamline operations, improve cust
 - Consistent brand experience: kiosks ensure a uniform brand experience across different locations. Whether in retail stores, schools, airports, or healthcare facilities, the interface remains consistent. Brand consistency builds trust and reinforces the organization's image
 - Customization and flexibility: kiosks can be tailored to specific needs. From touchscreens to barcode scanners, organizations choose features that align with their goals. Whether it's self-checkout, wayfinding, or interactive product catalogs, kiosks adapt to diverse requirements
 
-Windows offers two different experiences for public or specialized use:
+Windows offers two different options for public or specialized use:
 
 :::row:::
     :::column span="1":::
@@ -25,7 +25,7 @@ Windows offers two different experiences for public or specialized use:
     :::column-end:::
 :::row-end:::
 
-This experience runs a single application in full screen, and people using the device can only use that app. When the designated kiosk account signs in, the kiosk app launches automatically. This experience is sometimes referred to as *single-app kiosk*.
+This option runs a single application in full screen, and people using the device can only use that app. When the designated kiosk account signs in, the kiosk app launches automatically. This option is sometimes referred to as *single-app kiosk*.
 
 Windows offers two different features to configure a kiosk experience:
 
@@ -41,7 +41,7 @@ Windows offers two different features to configure a kiosk experience:
     :::column-end:::
 :::row-end:::
 
-This experience loads the Windows desktop, but it only allows to run a defined set of applications. When the designated user signs in, the user can only run the apps that are allowed. The Start menu is customized to show only the apps that are allowed to execute. With this approach, you can configure a locked-down experience for different account types. This experience is sometimes referred to as *multi-app kiosk*.
+This option loads the Windows desktop, but it only allows to run a defined set of applications. When the designated user signs in, the user can only run the apps that are allowed. The Start menu is customized to show only the apps that are allowed to execute. With this approach, you can configure a locked-down experience for different account types. This option is sometimes referred to as *multi-app kiosk*.
 
 To configure a restricted user experience you use the **Assigned Access** feature.
 
@@ -52,7 +52,7 @@ When you're considering a kiosk or restricted user experience, you need to choos
 | | Question |
 |--|--|
 | **🔲** | *How many apps?* <br>This will determine the experience to build: **kiosk** or **restricted user experience**.|
-| **🔲** | *Desktop experience or custom?* <br>If your users require access to the desktop with a custom Start menu, then you can build a **restricted user experience** with **Assigned Access**. If your users require access to multiple applications but with a custom UI, then you can build a **restricted user experience** with **Shell Launcher**.|
+| **🔲** | *Desktop experience or custom?* <br>If your users require access to the desktop with a custom Start menu, then you can build a **restricted user experience** with **Assigned Access**. If your users require access to multiple applications but with a custom user interface, then you should use **Shell Launcher**.|
 | **🔲** | *In single-app scenario, which type of app will your kiosk run?* <br>If the kiosk requires a Universal Windows Platform (UWP) app or Microsoft Edge, you can build a **kiosk experience** with **Assigned Access**. If the kiosk requires a desktop app, you can build a **kiosk experience** with **Shell Launcher**.|
 | **🔲** | *Which edition of Windows client will the kiosk run?"* <br>**Assigned Access** is supported on Windows Pro and Enterprise/Education. **Shell Launcher** is only supported on Windows Enterprise and Education editions.|
 
