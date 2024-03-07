@@ -62,3 +62,11 @@ In the next sections, you can learn more about the options available to configur
 
 - [Assigned Access](overview.md)
 - [Shell Launcher](shell-launcher/index.md)
+
+### :::image type="icon" source="../../images/icons/rocket.svg" border="false"::: Quickstarts
+
+If you're ready to get started, check out the following quickstarts:
+
+- [Quickstart: Configure a kiosk with Assigned Access](quickstart-kiosk.md)
+- [Quickstart: configure a kiosk experience with Shell Launcher](shell-launcher/quickstart-kiosk.md)
+- [Quickstart: Configure a restricted user experience with Assigned Access](quickstart-restricted-user-experience.md)
