@@ -49,34 +49,6 @@ To learn how to configure the Shell Launcher XML file, see [Create an Assigned A
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../images/icons/settings.svg"::: **Settings**](#tab/settings)
-
-Here are the steps to configure a kiosk using the Settings app:
-
-1. Open the Settings app to view and configure a device as a kiosk. Go to **Settings > Accounts > Other Users**, or use the following shortcut:
-
-    > [!div class="nextstepaction"]
-    >
-    > [Other Users](ms-settings:otherusers)
-
-1. Under **Set up a kiosk**, select **Get Started**
-1. In the **Create an account** dialog, enter the account name and select **Next**
-    >[!NOTE]
-    >If there are any local standard user accounts already, the **Create an account** dialog offers the option to **Choose an existing account**
-
-1. Choose the application to run when the kiosk account signs in. Only apps that can run above the lock screen will be available in the list of apps to choose from. If you select **Microsoft Edge** as the kiosk app, you configure the following options:
-
-    - Whether Microsoft Edge should display your website full-screen (digital sign) or with some browser controls available (public browser)
-    - Which URL should be open when the kiosk accounts signs in
-    - When Microsoft Edge should restart after a period of inactivity (if you select to run as a public browser)
-
-1. Select **Close**
-
-When the device isn't joined to an Active Directory domain or Microsoft Entra ID, automatic sign-in of the kiosk account is configured automatically:
-
-- If you want the kiosk account to sign in automatically, and the kiosk app launched when the device restarts, then you don't need to do anything
-- If you don't want the kiosk account to sign in automatically when the device restarts, then you must change the default setting before you configure the device as a kiosk. Sign in with the account that you want to use as the kiosk account. Open **Settings** > **Accounts** > **Sign-in options**. Set the **Use my sign-in info to automatically finish setting up my device after an update or restart** setting to **Off**. After you change the setting, you can apply the kiosk configuration to the device
-
 #### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
 You can configure devices using a [custom policy][MEM-1] with the [AssignedAccess CSP][WIN-3].
@@ -154,6 +126,34 @@ $obj = Set-CimInstance -CimInstance $obj
 
 [!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
 
+#### [:::image type="icon" source="../images/icons/settings.svg"::: **Settings**](#tab/settings)
+
+Here are the steps to configure a kiosk using the Settings app:
+
+1. Open the Settings app to view and configure a device as a kiosk. Go to **Settings > Accounts > Other Users**, or use the following shortcut:
+
+    > [!div class="nextstepaction"]
+    >
+    > [Other Users](ms-settings:otherusers)
+
+1. Under **Set up a kiosk**, select **Get Started**
+1. In the **Create an account** dialog, enter the account name and select **Next**
+    >[!NOTE]
+    >If there are any local standard user accounts already, the **Create an account** dialog offers the option to **Choose an existing account**
+
+1. Choose the application to run when the kiosk account signs in. Only apps that can run above the lock screen will be available in the list of apps to choose from. If you select **Microsoft Edge** as the kiosk app, you configure the following options:
+
+    - Whether Microsoft Edge should display your website full-screen (digital sign) or with some browser controls available (public browser)
+    - Which URL should be open when the kiosk accounts signs in
+    - When Microsoft Edge should restart after a period of inactivity (if you select to run as a public browser)
+
+1. Select **Close**
+
+When the device isn't joined to an Active Directory domain or Microsoft Entra ID, automatic sign-in of the kiosk account is configured automatically:
+
+- If you want the kiosk account to sign in automatically, and the kiosk app launched when the device restarts, then you don't need to do anything
+- If you don't want the kiosk account to sign in automatically when the device restarts, then you must change the default setting before you configure the device as a kiosk. Sign in with the account that you want to use as the kiosk account. Open **Settings** > **Accounts** > **Sign-in options**. Set the **Use my sign-in info to automatically finish setting up my device after an update or restart** setting to **Off**. After you change the setting, you can apply the kiosk configuration to the device
+
 ---
 
 > [!TIP]
@@ -170,10 +170,6 @@ To configure a restricted user experience with Assigned Access, you must create 
 To learn how to configure the Assigned Access XML file, see [Create an Assigned Access configuration file](configuration-file.md).
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
-
-#### [:::image type="icon" source="../images/icons/settings.svg"::: **Settings**](#tab/settings)
-
-This option is not available using Settings.
 
 #### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
@@ -234,6 +230,11 @@ Write-Output "Successfully applied Assigned Access configuration"
 ```
 
 [!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
+
+#### [:::image type="icon" source="../images/icons/settings.svg"::: **Settings**](#tab/settings)
+
+This option is not available using Settings.
+
 ---
 
 > [!TIP]
