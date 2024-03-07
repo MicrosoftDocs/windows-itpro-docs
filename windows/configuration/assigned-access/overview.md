@@ -9,7 +9,7 @@ ms.topic: overview
 
 Assigned Access is a Windows feature that you can use to configure a device as a kiosk or with a restricted user experience.
 
-When you configure a **kiosk experience**, a single UWP application or Microsoft Edge is executed in full screen, above the lock screen. Users can only use that application. If the kiosk app is closed, it automatically restarts. Practical examples include:
+When you configure a **kiosk experience**, a single Universal Windows Platform (UWP) application or Microsoft Edge is executed in full screen, above the lock screen. Users can only use that application. If the kiosk app is closed, it automatically restarts. Practical examples include:
 
 - Public browsing
 - Interactive digital signage
@@ -28,7 +28,7 @@ When you configure a **restricted user experience**, users can only execute a de
 Here are the requirements for Assigned Access:
 
 - To use a kiosk experience, [User account control (UAC)](/windows/security/identity-protection/user-account-control/user-account-control-overview) must be enabled
-- You can only use a kiosk experience when signing in from the console. The kiosk experience isn't supported over a remote desktop connection
+- To use a kiosk experience, you must sign in from the console. The kiosk experience isn't supported over a remote desktop connection
 
 [!INCLUDE [assigned-access](../../../includes/licensing/assigned-access.md)]
 
@@ -144,11 +144,11 @@ Here are the steps to configure a kiosk using the Settings app:
     > [Other Users](ms-settings:otherusers)
 
 1. Under **Set up a kiosk**, select **Get Started**
-1. In the **Create an account** dialog, enter the account name and select **Next**
+1. In the **Create an account** dialog, enter the account name, and select **Next**
     >[!NOTE]
     >If there are any local standard user accounts already, the **Create an account** dialog offers the option to **Choose an existing account**
 
-1. Choose the application to run when the kiosk account signs in. Only apps that can run above the lock screen will be available in the list of apps to choose from. If you select **Microsoft Edge** as the kiosk app, you configure the following options:
+1. Choose the application to run when the kiosk account signs in. Only apps that can run above the lock screen are available in the list of apps to choose from. If you select **Microsoft Edge** as the kiosk app, you configure the following options:
 
     - Whether Microsoft Edge should display your website full-screen (digital sign) or with some browser controls available (public browser)
     - Which URL should be open when the kiosk accounts signs in
@@ -240,7 +240,7 @@ Write-Output "Successfully applied Assigned Access configuration"
 
 #### [:::image type="icon" source="../images/icons/settings.svg"::: **Settings**](#tab/settings)
 
-This option is not available using Settings.
+This option isn't available using Settings.
 
 ---
 
@@ -251,12 +251,12 @@ This option is not available using Settings.
 
 To validate the kiosk or restricted user experience, sign in with the user account you specified in the configuration file.
 
-The Assigned Access configuration takes effect the next time the targeted user signs in. If that user account is signed in when you apply the configuration, make sure the user signs out and signs back in to validate the experience.
+The Assigned Access configuration takes effect the next time the targeted user signs in. If that user account is signed in when you apply the configuration, sign out and sign back in to validate the experience.
 
 > [!NOTE]
 > Starting in Windows 11, a restricted user experience supports the use of multiple monitors.
 
-### Auto-trigger touch keyboard
+### Autotrigger touch keyboard
 
 The touch keyboard is automatically triggered when there's an input needed and no physical keyboard is attached on touch-enabled devices. You don't need to configure any other setting to enforce this behavior.
 
@@ -277,28 +277,28 @@ The Breakout Sequence of <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> is th
 
 The following keyboard shortcuts are blocked for the user accounts with Assigned Access:
 
-| Keyboard shortcut | Action |
-|--|--|
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd>  + <kbd>Esc</kbd>  | Open Task Manager |
-| <kbd>WIN</kbd> + <kbd>, (comma)</kbd> | Temporarily peek at the desktop |
-| <kbd>WIN</kbd> + <kbd>A</kbd> | Open Action center |
-| <kbd>WIN</kbd> + <kbd>Alt</kbd>  + <kbd> D</kbd> | Display and hide the date and time on the desktop |
-| <kbd>WIN</kbd> + <kbd>Ctrl</kbd>  + <kbd> F</kbd> | Find computer objects in Active Directory |
-| <kbd>WIN</kbd> + <kbd>D</kbd> | Display and hide the desktop |
-| <kbd>WIN</kbd> + <kbd>E</kbd> | Open File Explorer |
-| <kbd>WIN</kbd> + <kbd>F</kbd> | Open Feedback Hub |
-| <kbd>WIN</kbd> + <kbd>G</kbd> | Open Game bar when a game is open |
-| <kbd>WIN</kbd> + <kbd>I</kbd> | Open Settings |
-| <kbd>WIN</kbd> + <kbd>J</kbd> | Set focus to a Windows tip when one is available |
-| <kbd>WIN</kbd> + <kbd>O</kbd> | Lock device orientation |
-| <kbd>WIN</kbd> + <kbd>Q</kbd> | Open search |
-| <kbd>WIN</kbd> + <kbd>R</kbd> | Open the Run dialog box |
-| <kbd>WIN</kbd> + <kbd>S</kbd> | Open search |
-| <kbd>WIN</kbd> + <kbd>Shift</kbd>  + <kbd> C</kbd> | Open Cortana in listening mode |
-| <kbd>WIN</kbd> + <kbd>X</kbd> | Open the Quick Link menu |
-| <kbd>LaunchApp1</kbd> | Open the app that is assigned to this key |
-| <kbd>LaunchApp2</kbd> | Open the app that is assigned to this key. On many Microsoft keyboards, the app is Calculator |
-| <kbd>LaunchMail</kbd> | Open the default mail client |
+| Keyboard shortcut                                    | Action                                                                                        |
+|------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd>  + <kbd>Esc</kbd> | Open Task Manager                                                                             |
+| <kbd>WIN</kbd> + <kbd>, (comma)</kbd>                | Temporarily peek at the desktop                                                               |
+| <kbd>WIN</kbd> + <kbd>A</kbd>                        | Open Action center                                                                            |
+| <kbd>WIN</kbd> + <kbd>Alt</kbd>  + <kbd> D</kbd>     | Display and hide the date and time on the desktop                                             |
+| <kbd>WIN</kbd> + <kbd>Ctrl</kbd>  + <kbd> F</kbd>    | Find computer objects in Active Directory                                                     |
+| <kbd>WIN</kbd> + <kbd>D</kbd>                        | Display and hide the desktop                                                                  |
+| <kbd>WIN</kbd> + <kbd>E</kbd>                        | Open File Explorer                                                                            |
+| <kbd>WIN</kbd> + <kbd>F</kbd>                        | Open Feedback Hub                                                                             |
+| <kbd>WIN</kbd> + <kbd>G</kbd>                        | Open Game bar when a game is open                                                             |
+| <kbd>WIN</kbd> + <kbd>I</kbd>                        | Open Settings                                                                                 |
+| <kbd>WIN</kbd> + <kbd>J</kbd>                        | Set focus to a Windows tip when one is available                                              |
+| <kbd>WIN</kbd> + <kbd>O</kbd>                        | Lock device orientation                                                                       |
+| <kbd>WIN</kbd> + <kbd>Q</kbd>                        | Open search                                                                                   |
+| <kbd>WIN</kbd> + <kbd>R</kbd>                        | Open the Run dialog box                                                                       |
+| <kbd>WIN</kbd> + <kbd>S</kbd>                        | Open search                                                                                   |
+| <kbd>WIN</kbd> + <kbd>Shift</kbd>  + <kbd> C</kbd>   | Open Cortana in listening mode                                                                |
+| <kbd>WIN</kbd> + <kbd>X</kbd>                        | Open the Quick Link menu                                                                      |
+| <kbd>LaunchApp1</kbd>                                | Open the app that is assigned to this key                                                     |
+| <kbd>LaunchApp2</kbd>                                | Open the app that is assigned to this key. On many Microsoft keyboards, the app is Calculator |
+| <kbd>LaunchMail</kbd>                                | Open the default mail client                                                                  |
 
 ## Remove Assigned Access
 

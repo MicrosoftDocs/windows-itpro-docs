@@ -43,7 +43,7 @@ Windows offers two different features to configure a kiosk experience:
 
 This option loads the Windows desktop, but it only allows to run a defined set of applications. When the designated user signs in, the user can only run the apps that are allowed. The Start menu is customized to show only the apps that are allowed to execute. With this approach, you can configure a locked-down experience for different account types. This option is sometimes referred to as *multi-app kiosk*.
 
-To configure a restricted user experience you use the **Assigned Access** feature.
+To configure a restricted user experience, you use the **Assigned Access** feature.
 
 ## Choose the right experience
 
@@ -51,7 +51,7 @@ When you're considering a kiosk or restricted user experience, you need to choos
 
 | | Question |
 |--|--|
-| **🔲** | *How many apps?* <br>This will determine the experience to build: **kiosk** or **restricted user experience**.|
+| **🔲** | *How many apps?* <br>The number of apps determines the experience to build: **kiosk** or **restricted user experience**.|
 | **🔲** | *Desktop experience or custom?* <br>If your users require access to the desktop with a custom Start menu, then you can build a **restricted user experience** with **Assigned Access**. If your users require access to multiple applications but with a custom user interface, then you should use **Shell Launcher**.|
 | **🔲** | *In single-app scenario, which type of app will your kiosk run?* <br>If the kiosk requires a Universal Windows Platform (UWP) app or Microsoft Edge, you can build a **kiosk experience** with **Assigned Access**. If the kiosk requires a desktop app, you can build a **kiosk experience** with **Shell Launcher**.|
 | **🔲** | *Which edition of Windows client will the kiosk run?"* <br>**Assigned Access** is supported on Windows Pro and Enterprise/Education. **Shell Launcher** is only supported on Windows Enterprise and Education editions.|

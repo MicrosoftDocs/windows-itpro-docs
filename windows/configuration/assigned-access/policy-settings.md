@@ -7,7 +7,7 @@ ms.date: 03/04/2024
 
 # Assigned Access policy settings
 
-When the Assigned Access configuration is applied on a device, certain policy settings and AppLocker rules are enforced, impacting the users accessing the device. The policy settings are appllied using a combination of configuration service provider (CSP) and group policy (GPO) settings.
+When the Assigned Access configuration is applied on a device, certain policy settings and AppLocker rules are enforced, impacting the users accessing the device. The policy settings use a combination of configuration service provider (CSP) and group policy (GPO) settings.
 
 This reference article lists the policy settings and AppLocker rules applied by Assigned Access.
 
@@ -48,7 +48,7 @@ The following policy settings are applied to any nonadministrator account access
 | **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/HideRecentlyAddedApps`                   | Hide recently added apps from appearing on the Start menu         |
 | **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/HideRecentJumplists`                     | Hide recent jumplists from appearing on the Start menu/taskbar    |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Clear history of recently opened documents on exit                |
-| **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Disable showing balloon notificationss as toast                   |
+| **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Disable showing balloon notifications as toast                    |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Do not allow pinning items in Jump Lists                          |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Do not allow pinning programs to the Taskbar                      |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Do not display or track items in Jump Lists from remote locations |
@@ -83,7 +83,7 @@ The following policy settings are applied to any nonadministrator account access
 
 When you deploy an Assigned Access restricted user experience, AppLocker rules are generated to allow the apps that are listed in the configuration. Here are the predefined Assigned Access AppLocker rules:
 
-### UWP app rules
+### Universal Windows Platform (UWP) app rules
 
 1. The default rule is to allow all users to launch the signed *packaged apps*
 1. The packaged app *deny list* is generated at runtime when the Assigned Access user signs in:

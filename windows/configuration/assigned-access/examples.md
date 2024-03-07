@@ -9,7 +9,7 @@ appliesto:
 
 # Assigned Access examples
 
-This artcile contains examples of XML files to configure a device with Assigned Access. The files can be easily modified to fit your specific needs.
+This article contains examples of XML files to configure a device with Assigned Access. The files can be easily modified to fit your specific needs.
 
 To learn more:
 
@@ -20,7 +20,7 @@ To learn more:
 
 [!INCLUDE [example-kiosk-edge](includes/example-kiosk-edge.md)]
 
-## Kiosk experience with UWP app
+## Kiosk experience with Universal Windows Platform (UWP) app
 
 [!INCLUDE [example-kiosk-uwp](includes/example-kiosk-uwp.md)]
 

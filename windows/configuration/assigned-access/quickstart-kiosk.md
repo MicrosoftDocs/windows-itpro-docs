@@ -1,6 +1,6 @@
 ---
 title: "Quickstart: Configure a kiosk experience with Assigned Access"
-description: Learn how to configure a kiosk experience with Assigned Access, using Windows Configuration Designer, Microsoft Intune, PowerShell or GPO.
+description: Learn how to configure a kiosk experience with Assigned Access using the Assigned Access configuration service provider (CSP), Microsoft Intune, PowerShell, or group policy (GPO).
 ms.topic: quickstart
 ms.date: 03/04/2024
 ---
@@ -75,11 +75,11 @@ Here are the steps to configure a kiosk using the Settings app:
     > [Other Users](ms-settings:otherusers)
 
 1. Under **Set up a kiosk**, select **Get Started**
-1. In the **Create an account** dialog, enter the account name and select **Next**
+1. In the **Create an account** dialog, enter the account name, and select **Next**
     >[!NOTE]
     >If there are any local standard user accounts already, the **Create an account** dialog offers the option to **Choose an existing account**
 
-1. Choose the application to run when the kiosk account signs in. Only apps that can run above the lock screen will be available in the list of apps to choose from. If you select **Microsoft Edge** as the kiosk app, you configure the following options:
+1. Choose the application to run when the kiosk account signs in. Only apps that can run above the lock screen are available in the list of apps to choose from. If you select **Microsoft Edge** as the kiosk app, you configure the following options:
 
     - Whether Microsoft Edge should display your website full-screen (digital sign) or with some browser controls available (public browser)
     - Which URL should be open when the kiosk accounts signs in

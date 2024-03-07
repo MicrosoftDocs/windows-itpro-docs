@@ -90,8 +90,8 @@ A configuration file can contain one or more profiles. Each profile is identifie
 
 A profile can be one of two types:
 
-- `KioskModeApp`: is used to configure a kiosk experience. Users assigned this profile don't access the desktop, but only the UWP application or Microsoft Edge running in full-screen above the Lock screen
-- `AllAppList` is used to configure a restricted user experience. Users assigned this profile access the desktop with the specific apps on the Start menu
+- `KioskModeApp`: is used to configure a kiosk experience. Users assigned this profile don't access the desktop, but only the Universal Windows Platform (UWP) application or Microsoft Edge running in full-screen above the Lock screen
+- `AllAppList` is used to configure a restricted user experience. Users assigned this profile, access the desktop with the specific apps on the Start menu
 
 > [!IMPORTANT]
 >
@@ -105,7 +105,7 @@ The properties of a `KioskModeApp` profile are:
 | Property| Description | Details |
 |-|-|-|
 |`AppUserModelId`|The Application User Model ID (AUMID) of the UWP app.|Learn how to [Find the Application User Model ID of an installed app](../store/find-aumid.md).|
-|`v4:ClassicAppPath`|The full path to a desktop app executable.|This is the path to the desktop app that will be used in the kiosk mode. The path can contain system environment variables in the form of `%variableName%`.|
+|`v4:ClassicAppPath`|The full path to a desktop app executable.|This is the path to the desktop app used in kiosk mode. The path can contain system environment variables in the form of `%variableName%`.|
 |`v4:ClassicAppArguments`|The arguments to be passed to the desktop app.|This property is optional.|
 
 By default, you can use the <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>DEL</kbd> sequence to exit kiosk mode. You can define a `BreakoutSequence` element to change the default sequence. The `Key` attribute is a string that represents the key combination.
@@ -132,13 +132,13 @@ Based on the purpose of the kiosk device, define the list of applications that a
 > [!NOTE]
 > If an app has a dependency on another app, both must be included in the allowed apps list.
 
-Within the `AllAppList` node you define a list of applications that are allowed execute. Each `App` element has the following properties:
+Within the `AllAppList` node, define a list of applications that are allowed execute. Each `App` element has the following properties:
 
 | Property| Description | Details |
 |-|-|-|
 |`AppUserModelId`|The Application User Model ID (AUMID) of the UWP app.|Learn how to [Find the Application User Model ID of an installed app](../store/find-aumid.md).|
-|`DesktopAppPath`|The full path to a desktop app executable.|This is the path to the desktop app that will be used in the kiosk mode. The path can contain system environment variables in the form of `%variableName%`.|
-|`rs5:AutoLaunch`|A Boolean attribute to indicate whether to launch the app (either desktop or UWP app) automatically when the user signs in.|This property is optional. Only one application is allowed to be auto-launched.|
+|`DesktopAppPath`|The full path to a desktop app executable.|This is the path to the desktop app that used in kiosk mode. The path can contain system environment variables in the form of `%variableName%`.|
+|`rs5:AutoLaunch`|A Boolean attribute to indicate whether to launch the app (either desktop or UWP app) automatically when the user signs in.|This property is optional. Only one application can autolaunch.|
 |`rs5:AutoLaunchArguments`|The arguments to be passed to the app that is configured with `AutoLaunch`.|AutoLaunchArguments are passed to the apps as is and the app needs to handle the arguments explicitly. This property is optional.|
 
 Example:
@@ -183,7 +183,7 @@ Here are some practical examples.
 
 #### Block everything
 
-Either don't use the node or leave it empty
+Either don't use the node or leave it empty.
 
 ```xml
 <rs5:FileExplorerNamespaceRestrictions>
@@ -313,9 +313,9 @@ Example with some apps pinned:
 
 ::: zone pivot="windows-10"
 
-You can't pin apps on the taskbar in a restricted user experience, and it's not supported to configure a Taskbar layout using the `<CustomTaskbarLayoutCollection>` tag in a layout modification XML as part of the Assigned Access configuration.
+You can't pin apps on the taskbar in a restricted user experience. It's not supported to configure a Taskbar layout using the `<CustomTaskbarLayoutCollection>` tag in a layout modification XML, as part of the Assigned Access configuration.
 
-The only Taskbar customization available is the possiblity to show or hide it, using the `ShowTaskbar` boolean attribute.
+The only Taskbar customization available is the option to show or hide it, using the `ShowTaskbar` boolean attribute.
 
 The following example exposes the taskbar:
 
@@ -406,7 +406,7 @@ Limitations:
 
 ### AutoLogon account
 
-With `<AutoLogonAccount>`, Assigned Access creates and manages an user account to automatically sign in after a device restarts. The account is a local standard user.
+With `<AutoLogonAccount>`, Assigned Access creates and manages a user account to automatically sign in after a device restarts. The account is a local standard user.
 
 The following example shows how to specify an account to sign in automatically, and the optional display name for the account on the sign-in screen:
 
@@ -424,7 +424,7 @@ The following example shows how to specify an account to sign in automatically, 
 
 ### Global profile
 
-With `GlobalProfile` you can define an Assigned Access profile that is applied to every non-admin account that signs in. This can be useful in scenarios like frontline workers or student devices, where you want to ensure that every user has a consistent experience.
+With `GlobalProfile`, you can define an Assigned Access profile that is applied to every non-admin account that signs in. `GlobalProfile` is useful in scenarios like frontline workers or student devices, where you want to ensure that every user has a consistent experience.
 
 ```xml
 <Configs>

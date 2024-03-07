@@ -220,7 +220,7 @@ Microsoft Entra accounts must be specified with the format: `AzureAD\{UPN}`. `Az
 
 When the user account signs in, the associated Shell Launcher profile is applied, loading the application specified in the profile.
 
-### Auto logon account
+### Autologon account
 
 With `<AutoLogonAccount>`, Shell Launcher creates and manages a user account to automatically sign in after a device restarts. The account is a local standard user named `Kiosk`.
 
