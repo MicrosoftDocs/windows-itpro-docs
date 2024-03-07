@@ -21,11 +21,9 @@ appliesto:
 
 > [!NOTE]
 >
-> This article is a 400-level article (advanced).
->
-> See [Resolve Windows upgrade errors](resolve-windows-upgrade-errors.md) for a full list of articles in this section.
+> The following is a level 400 (advanced) topic. See [Resolve Windows upgrade errors](resolve-windows-upgrade-errors.md) for a full list of articles in this section.
 
-Several log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure Windows Explorer to view hidden items, or use a tool to automatically gather these logs. The most useful log is **setupact.log**. The log files are located in a different folder depending on the Windows Setup phase. Recall that the phase can be determined from the extend code.
+Several log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure Windows Explorer to view hidden items, or use a tool to automatically gather these logs. The most useful log is **setupact.log**. The log files are located in a different folder depending on the Windows Setup phase. Recall that the phase can be determined from the extended code.
 
 > [!NOTE]
 >
@@ -35,15 +33,15 @@ The following table describes some log files and how to use them for troubleshoo
 
 |Log file |Phase: Location |Description |When to use|
 |---|---|---|---|
-|**setupact.log**|Down-Level:<br>$Windows.~BT\Sources\Panther|Contains information about setup actions during the downlevel phase. |All down-level failures and starting point for rollback investigations.<br> Setup.act is the most important log for diagnosing setup issues.|
+|**setupact.log**|Downlevel:<br>$Windows.~BT\Sources\Panther|Contains information about setup actions during the downlevel phase. |All downlevel failures and starting points for rollback investigations.<br> Setup.act is the most important log for diagnosing setup issues.|
 |**setupact.log**|OOBE:<br>$Windows.~BT\Sources\Panther\UnattendGC|Contains information about actions during the OOBE phase.|Investigating rollbacks that failed during OOBE phase and operations - 0x4001C, 0x4001D, 0x4001E, 0x4001F.|
 |**setupact.log**|Rollback:<br>$Windows.~BT\Sources\Rollback|Contains information about actions during rollback.|Investigating generic rollbacks - 0xC1900101.|
 |**setupact.log**|Pre-initialization (prior to downlevel):<br>Windows|Contains information about initializing setup.|If setup fails to launch.|
 |**setupact.log**|Post-upgrade (after OOBE):<br>Windows\Panther|Contains information about setup actions during the installation.|Investigate post-upgrade related issues.|
 |**setuperr.log**|Same as setupact.log|Contains information about setup errors during the installation.|Review all errors encountered during the installation phase.|
 |**miglog.xml**|Post-upgrade (after OOBE):<br>Windows\Panther|Contains information about what was migrated during the installation.|Identify post upgrade data migration issues.|
-|**BlueBox.log**|Down-Level:<br>Windows\Logs\Mosetup|Contains information communication between `setup.exe` and Windows Update.|Use during WSUS and Windows Update down-level failures or for 0xC1900107.|
-|Supplemental rollback logs:<br>**Setupmem.dmp**<br>**setupapi.dev.log**<br>Event logs (*.evtx)|$Windows.~BT\Sources\Rollback|Additional logs collected during rollback.|Setupmem.dmp: If OS bug checks during upgrade, setup attempts to extract a mini-dump.<br>Setupapi: Device install issues - 0x30018<br>Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.|
+|**BlueBox.log**|Downlevel:<br>Windows\Logs\Mosetup|Contains information communication between `setup.exe` and Windows Update.|Use during WSUS and Windows Update downlevel failures or for 0xC1900107.|
+|Supplemental rollback logs:<br>**Setupmem.dmp**<br>**setupapi.dev.log**<br>Event logs (*.evtx)|$Windows.~BT\Sources\Rollback|Additional logs collected during rollback.|Setupmem.dmp: If OS bug checks during the upgrade, setup attempts to extract a mini-dump.<br>Setupapi: Device install issues - 0x30018<br>Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.|
 
 ## Log entry structure
 
@@ -63,11 +61,11 @@ See the following example:
 
 | Date/Time | Log level | Component | Message |
 |------|------------|------------|------------|
-|2023-09-08 09:23:50,|  Warning |         MIG  |   Couldn't replace object C:\Users\name\Cookies. Target Object can't be removed.|
+|2023-09-08 09:23:50,|  Warning |         MIG  |   Couldn't replace object C:\Users\name\Cookies. The target Object can't be removed.|
 
 ## Analyze log files
 
-The following instructions are meant for IT professionals. Also see the [Upgrade error codes](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json) section in this guide to become familiar with [result codes](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#result-codes) and [extend codes](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#extend-codes).
+The following instructions are meant for IT professionals. Also, see the [Upgrade error codes](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json) section in this guide to become familiar with [result codes](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#result-codes) and [extend codes](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#extend-codes).
 
 To analyze Windows Setup log files:
 
@@ -75,9 +73,9 @@ To analyze Windows Setup log files:
 
 1. Based on the [extend code](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#extend-codes) portion of the error code, determine the type and location of a log file to investigate.
 
-1. Open the log file in a text editor, such as notepad.
+1. Open the log file in a text editor, such as Notepad.
 
-1. Using the [result code](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#result-codes) portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the "abort" and abandoning" text strings described in step 7 below.
+1. Using the [result code](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#result-codes) portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively, search for the "abort" and abandoning" text strings described in step 7 below.
 
 1. To find the last occurrence of the result code:
 
@@ -88,7 +86,7 @@ To analyze Windows Setup log files:
     1. Under **Direction** select **Up**.
     1. Select **Find Next**.
 
-1. When the last occurrence of the result code is located, scroll up a few lines from this location in the file and review the processes that failed prior to generating the result code.
+1. When the last occurrence of the result code is located, scroll up a few lines from this location in the file and review the processes that failed before generating the result code.
 
 1. Search for the following important text strings:
 
