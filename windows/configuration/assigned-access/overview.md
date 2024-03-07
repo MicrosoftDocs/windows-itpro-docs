@@ -253,6 +253,9 @@ To validate the kiosk or restricted user experience, sign in with the user accou
 
 The Assigned Access configuration takes effect the next time the targeted user signs in. If that user account is signed in when you apply the configuration, make sure the user signs out and signs back in to validate the experience.
 
+> [!NOTE]
+> Starting in Windows 11, a restricted user experience supports the use of multiple monitors.
+
 ### Auto-trigger touch keyboard
 
 The touch keyboard is automatically triggered when there's an input needed and no physical keyboard is attached on touch-enabled devices. You don't need to configure any other setting to enforce this behavior.

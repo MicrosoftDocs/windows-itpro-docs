@@ -1,40 +1,61 @@
 ---
 title: Assigned Access recommendations
 description: Learn about the recommended kiosk and restricted useer experience configuration options.
-ms.topic: article
-ms.date: 2/29/2024
+ms.topic: best-practice
+ms.date: 3/7/2024
 ---
 
 # Assigned Access recommendations
 
-## Requirements
-
-- [User account control (UAC)](/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable kiosk mode.
-- Kiosk mode isn't supported over a remote desktop connection. Your kiosk users must sign in on the physical device that's set up as a kiosk.
-
-Recommendations
-
-- For kiosks in public-facing environments with auto sign-in enabled, you should use a user account with the least privileges, such as a local standard user account.
+This article contains recommendations for devices configured with Assigned Access.
 
 For a more secure kiosk experience, we recommend that you make the following configuration changes to the device before you configure it as a kiosk:
 
-## Configure Windows updates
+## Kiosk account
 
-### Hide update notifications
+For kiosks in public-facing environments with auto sign-in enabled, you should use a user account with the least privileges, such as a local standard user account.
 
-|  | Path |
-|--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel) |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Display options for update notifications**|
+Using a domain user or service accounts has risks, and might allow an attacker to gain access to domain resources that are accessible to any domain account. When using domain accounts with assigned access, proceed with caution. Consider the domain resources potentially exposed by using a domain account.
 
-### Enable and schedule automatic updates
+> [!WARNING]
+> Assigned access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account. However, use of domain user or service accounts introduces risks that an attacker subverting the Assigned Access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
 
-|  | Path | Value|
-|--|--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#update-update-allowautoupdate) | Select **3 - Auto install and restart at a specified time**|
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Configure Automatic Updates** | Select **4 - Auto download and schedule the install**|
+### Automatic sign-in
 
+Consider enabling *automatic sign-in* for your kiosk device. When the device restarts, from an update or power outage, you can configure the device to sign in with the Assigned Access account automatically. Ensure that policy settings applied to the device don't prevent automatic sign in.
 
+> [!NOTE]
+> If you are using a Windows client device restriction CSP to set "Preferred Microsoft Entra tenant domain", this will break the "User logon type" auto-login feature of the Kiosk profile.
+
+You can configure the Assigned Access and Shell Launcher XML files with an account to sign-in automatically. For more information, review the articles:
+
+- [Create an Assigned Access configuration XML file](configuration-file.md)
+- [Create a Shell Launcher configuration file](shell-launcher/configuration-file.md)
+
+Alternatively, you can edit the Registry to have an account sign in automatically:
+
+| Path | Name | Type | Value |
+|--|--|--|--|
+| `HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon` | `AutoAdminLogon` | REG_DWORD | 0x1 |
+| `HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon` | `DefaultUserName` | String | Set value as the account that you want signed in. |
+| `HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon` | `DefaultPassword` | String | Set value as the password for the account. |
+| `HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon` | `DefaultDomainName` | String | Set value for domain, only for domain accounts. For local accounts, don't add this key. |
+
+The next time the device restarts, the account will sign in automatically.
+
+> [!NOTE]
+> If you are also using [Custom Logon](/windows-hardware/customize/enterprise/custom-logon) with **HideAutoLogonUI** enabled, you might experience a black screen after a password expires. We recommend that you consider [setting the password to never expire](/windows-hardware/customize/enterprise/troubleshooting-custom-logon#the-device-displays-a-black-screen-when-a-password-expiration-screen-is-displayed).
+
+## Windows Update
+
+Configure your kiosk devices so that they are always up to date, without disrupting the user experience. Here are some policy settings to consider:
+
+|Setting|Description|
+|-|-|
+|Display options for update notifications|- **CSP**: `./Device/Vendor/MSFT/Policy/Config/Update/`[UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel) <br>- **GPO**: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Display options for update notifications**|
+|Enable and schedule automatic updates| - **CSP**: `./Device/Vendor/MSFT/Policy/Config/Update/`[AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#update-update-allowautoupdate) <br> Select **3 - Auto install and restart at a specified time** <br> - **GPO**: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Configure Automatic Updates** |
+
+## Keyboard shortcuts and physical buttons
 
 - Disable the hardware power button
 
@@ -62,119 +83,7 @@ For a more secure kiosk experience, we recommend that you make the following con
 
     - [Start settings in a device configuration profile](/mem/intune/configuration/device-restrictions-windows-10#start): This option shows this setting, and all the Start menu settings you can manage.
 
-
-
-
-## Automatic logon
-
-You may also want to set up **automatic logon** for your kiosk device. When your kiosk device restarts, from an update or power outage, you can sign in the Assigned Access account manually. Or, you can configure the device to sign in to the Assigned Access account automatically. Make sure that Group Policy settings applied to the device don't prevent automatic sign in.
-
-> [!NOTE]
-> If you are using a Windows client device restriction CSP to set "Preferred Microsoft Entra tenant domain", this will break the "User logon type" auto-login feature of the Kiosk profile.
-
-How to edit the registry to have an account sign in automatically:
-
-1. Open Registry Editor (regedit.exe).
-
-   > [!NOTE]
-   > If you are not familiar with Registry Editor, [learn how to modify the Windows registry](/troubleshoot/windows-server/performance/windows-registry-advanced-users).
-
-1. Go to
-
-   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon**
-
-1. Set the values for the following keys.
-
-   - *AutoAdminLogon*: set value as **1**.
-   - *DefaultUserName*: set value as the account that you want signed in.
-   - *DefaultPassword*: set value as the password for the account.
-
-     > [!NOTE]
-     > If *DefaultUserName* and *DefaultPassword* aren't there, add them as **New** > **String Value**.
-
-   - *DefaultDomainName*: set value for domain, only for domain accounts. For local accounts, don't add this key.
-
-1. Close Registry Editor. The next time the computer restarts, the account will sign in automatically.
-
-> [!TIP]
-> You can also configure automatic sign-in [using the Autologon tool from Sysinternals](/sysinternals/downloads/autologon).
-
-> [!NOTE]
-> If you are also using [Custom Logon](/windows-hardware/customize/enterprise/custom-logon) with **HideAutoLogonUI** enabled, you might experience a black screen after a password expires. We recommend that you consider [setting the password to never expire](/windows-hardware/customize/enterprise/troubleshooting-custom-logon#the-device-displays-a-black-screen-when-a-password-expiration-screen-is-displayed).
-
-
-
-> [!WARNING]
-> Assigned access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account. However, use of domain user or service accounts introduces risks that an attacker subverting the Assigned Access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
-
-## Choose an app for a kiosk experience
-
-To create a kiosk experience with Assigned Access, you can choose UWP apps or Microsoft Edge. However, some applications might not provide a good user experience when used as a kiosk.
-
-The following guidelines help you choose an appropriate Windows app for a kiosk experience:
-
-- Windows apps must be provisioned or installed for the Assigned Access account before they can be selected as the Assigned Access app. [Learn how to provision and install apps](/windows/client-management/mdm/enterprise-app-management#install_your_apps)
-- Updating a UWP app can sometimes change the Application User Model ID (AUMID) of the app. In such scenario, you must update the Assigned Access settings to execute the updated app, because Assigned Access uses the AUMID to determine the app to launch
-- The app must be able to run above the lock screen. If the app can't run above the lock screen, it can't be used as a kiosk app
-- Some apps can launch other apps. Assigned Access in kiosk mode prevents Windows apps from launching other apps. Avoid selecting Windows apps that are designed to launch other apps as part of their core functionality
-- Microsoft Edge includes support for kiosk mode. To learn more, see [Microsoft Edge kiosk mode](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy)
-- Avoid selecting Windows apps that might expose the information you don't want to show in your kiosk, since kiosk usually means anonymous access and locates in a public setting. For example, an app that has a file picker allows the user to gain access to files and folders on the user's system, avoid selecting these types of apps if they provide unnecessary data access
-- Some apps might require more configurations before they can be used appropriately in Assigned Access. For example, Microsoft OneNote requires you to set up a Microsoft account for the Assigned Access user account before OneNote opens
-- The kiosk profile is designed for public-facing kiosk devices. Use a local, non-administrator account. If the device is connected to your organization network, using a domain or Microsoft Entra account could compromise confidential information
-
-When planning to deploy a kiosk or a restricted user experience, consider the following:
-
-- Evaluate all applications that users should use. If applications require user authentication, don't use a local or generic
-user account. Rather, target the group of users within the Assigned Access configuration file
-- A multi-app kiosk is appropriate for devices that are shared by multiple people. When you configure a multi-app kiosk, certain policy settings that affects all non-administrator users on the device. For a list of these policies, see [Assigned Access policy settings](policy-settings.md)
-
-### Accessibility
-
-Assigned access doesn't change accessibility settings. We recommend that you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block the following key combinations that open accessibility features:
-
-  | Key combination | Blocked behavior |
-  | --- | --- |
-  | <kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>Print Screen</kbd> | Open High Contrast dialog box |
-  | <kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>Num Lock</kbd> | Open Mouse Keys dialog box |
-  | <kbd>WIN</kbd> + <kbd>U</kbd> | Open the Settings app accessibility panel |
-
-## Develop your kiosk app
-
-Assigned Access uses the *Lock framework*. When an Assigned Access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an *above lock* screen app. To learn more, see [best practices guidance for developing a kiosk app for assigned access](/windows-hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access).
-
-## Test your Assigned Access experience
-
-Thoroughly test the Assigned Access kiosk configuration, ensuring that your devices provide a good user experience.
-
-> [!NOTE]
-> The use of multiple monitors is supported for multi-app kiosk mode in Windows 11.
-
-The Assigned Access feature is intended for dedicated devices, like kiosks. When the multi-app Assigned Access configuration is applied on the device, certain [policy settings](policy-settings.md) are enforced system-wide, impacting other users on the device. Deleting the kiosk configuration removes the Assigned Access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, the Start layout). To clear all the policy settings enforced by Assigned Access, you must reset Windows.
-
-## Troubleshoot
-
-Event Viewer
-Run "eventvwr.msc"
-Navigate to "Applications and Services Logs"
-There are 2 areas of your interests:
-"Microsoft-Windows-AssignedAccess"
-"Microsoft-Windows-AssignedAccessBroker"
-Before any repro, it's recommended to enable "Operational" channel to get the most of logs.
-TraceLogging
-
-Registry Key
-These locations contain the latest Assigned Access Configuration:
-
-HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration
-HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessCsp
-These locations contain the latest "evaluated" configuration for each sign-in user:
-
-"HKCU\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration" (If it doesn't exist, it means no Assigned Access to be enforced for this user.)
-
-Apps that run in kiosk mode cannot use copy and paste.
-
-
-
+### Shortcuts
 
 The following keyboard shortcuts are't blocked for any user account with Assigned Access. You can use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block these key combinations:
 
@@ -200,6 +109,68 @@ The following keyboard shortcuts are't blocked for any user account with Assigne
 - **Welcome Screen**: Customizations for the Welcome screen let you personalize not only how the Welcome screen looks, but for how it functions. You can disable the power or language button, or remove all user interface elements. There are many options to make the Welcome screen your own
 
 For more information, see [Custom Logon][WHW-1].
+
+### Accessibility
+
+Assigned access doesn't change accessibility settings. We recommend that you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block the following key combinations that open accessibility features:
+
+  | Key combination | Blocked behavior |
+  | --- | --- |
+  | <kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>Print Screen</kbd> | Open High Contrast dialog box |
+  | <kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>Num Lock</kbd> | Open Mouse Keys dialog box |
+  | <kbd>WIN</kbd> + <kbd>U</kbd> | Open the Settings app accessibility panel |
+
+## Choose an app for a kiosk experience
+
+To create a kiosk experience with Assigned Access, you can choose UWP apps or Microsoft Edge. However, some applications might not provide a good user experience when used as a kiosk.
+
+The following guidelines help you choose an appropriate Windows app for a kiosk experience:
+
+- Windows apps must be provisioned or installed for the Assigned Access account before they can be selected as the Assigned Access app. [Learn how to provision and install apps](/windows/client-management/mdm/enterprise-app-management#install_your_apps)
+- Updating a UWP app can sometimes change the Application User Model ID (AUMID) of the app. In such scenario, you must update the Assigned Access settings to execute the updated app, because Assigned Access uses the AUMID to determine the app to launch
+- The app must be able to run above the lock screen. If the app can't run above the lock screen, it can't be used as a kiosk app
+- Some apps can launch other apps. Assigned Access in kiosk mode prevents Windows apps from launching other apps. Avoid selecting Windows apps that are designed to launch other apps as part of their core functionality
+- Microsoft Edge includes support for kiosk mode. To learn more, see [Microsoft Edge kiosk mode](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy)
+- Avoid selecting Windows apps that might expose the information you don't want to show in your kiosk, since kiosk usually means anonymous access and locates in a public setting. For example, an app that has a file picker allows the user to gain access to files and folders on the user's system, avoid selecting these types of apps if they provide unnecessary data access
+- Some apps might require more configurations before they can be used appropriately in Assigned Access. For example, Microsoft OneNote requires you to set up a Microsoft account for the Assigned Access user account before OneNote opens
+- The kiosk profile is designed for public-facing kiosk devices. Use a local, non-administrator account. If the device is connected to your organization network, using a domain or Microsoft Entra account could compromise confidential information
+
+When planning to deploy a kiosk or a restricted user experience, consider the following:
+
+- Evaluate all applications that users should use. If applications require user authentication, don't use a local or generic
+user account. Rather, target the group of users within the Assigned Access configuration file
+- A multi-app kiosk is appropriate for devices that are shared by multiple people. When you configure a multi-app kiosk, certain policy settings that affects all non-administrator users on the device. For a list of these policies, see [Assigned Access policy settings](policy-settings.md)
+
+### Develop your kiosk app
+
+Assigned Access uses the *Lock framework*. When an Assigned Access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an *above lock* screen app. To learn more, see [best practices guidance for developing a kiosk app for assigned access](/windows-hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access).
+
+## Test your Assigned Access experience
+
+Thoroughly test the Assigned Access kiosk configuration, ensuring that your devices provide a good user experience.
+
+
+The Assigned Access feature is intended for dedicated devices, like kiosks. When the multi-app Assigned Access configuration is applied on the device, certain [policy settings](policy-settings.md) are enforced system-wide, impacting other users on the device. Deleting the kiosk configuration removes the Assigned Access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, the Start layout). To clear all the policy settings enforced by Assigned Access, you must reset Windows.
+
+## Troubleshoot
+
+Event Viewer
+Run "eventvwr.msc"
+Navigate to "Applications and Services Logs"
+There are 2 areas of your interests:
+"Microsoft-Windows-AssignedAccess"
+"Microsoft-Windows-AssignedAccessBroker"
+Before any repro, it's recommended to enable "Operational" channel to get the most of logs.
+TraceLogging
+
+Registry Key
+These locations contain the latest Assigned Access Configuration:
+
+HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration
+HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessCsp
+These locations contain the latest "evaluated" configuration for each sign-in user:
+
+"HKCU\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration" (If it doesn't exist, it means no Assigned Access to be enforced for this user.)
 
 ## Assigned Access recommendations
 
@@ -231,19 +202,19 @@ Here are some options to help you to further customize the Assigned Access exper
       - `\Start Menu and Taskbar\Notifications\Turn off toast notifications on the lock screen`: Select **Enabled**.
       - `\System\Logon\Turn off app notifications on the lock screen`: Select **Enabled**.
 
-- Disable removable media
-  - **Use Group policy**: `Computer Configuration\Administrative Templates\System\Device Installation\Device Installation Restrictions`. Review the available settings that apply to your situation.
-    To prevent this policy from affecting a member of the Administrators group, select `Allow administrators to override Device Installation Restriction policies` > **Enabled**.
-  - **Use an MDM provider**: In Intune, you have the following options:
-    - [General settings in a device configuration profile](/mem/intune/configuration/device-restrictions-windows-10#general): See the **Removable storage** setting, and more settings you can manage.
-    - [Administrative templates](/mem/intune/configuration/administrative-templates-windows): These templates are the administrative templates used in on-premises Group Policy. Configure the following settings:
-      - `\System\Device Installation`: There are several policies you can manage, including restrictions in `\System\Device Installation\Device Installation Restrictions`.
-        To prevent this policy from affecting a member of the Administrators group, select `Allow administrators to override Device Installation Restriction policies` > **Enabled**.
-      When looking at settings, check the supported OS for each setting to make sure it applies.
-    - [Settings Catalog](/mem/intune/configuration/settings-catalog): This option lists all the settings you can configure, including the administrative templates used in on-premises Group Policy. Configure the following settings:
-      - `\Administrative Templates\System\Device Installation`: There are several policies you can manage, including restrictions in `\System\Device Installation\Device Installation Restrictions`.
-        To prevent this policy from affecting a member of the Administrators group, select `Allow administrators to override Device Installation Restriction policies` > **Enabled**
-- Enable logging: logs can help you [troubleshoot issues](/troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting) kiosk issues. Logs about configuration and runtime issues can be obtained by enabling the **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational** channel, which is disabled by default.
+## File Explorer customizations
+
+Here are some options to help you to further customize the File Explorer experience:
+
+|Setting|Description|
+|-|-|
+|Disable removable media|You can disable removable media, such as USB drives, from being used on the device. This can help prevent data theft or malware from being introduced to the device.<br>- CSP: `./Device/Vendor/MSFT/Policy/Config/`[ADMX_DeviceInstallation/DeviceInstall_AllowAdminInstall](/windows/client-management/mdm/policy-csp-admx-deviceinstallation#deviceinstall_allowadmininstall)<br>-**GPO**: **Computer Configuration** > **Administrative Templates** > **System** > **Device Installation** > **Device Installation Restrictions**<br><br>**Note**: to prevent this policy from affecting a member of the Administrators group, select **Allow administrators to override Device Installation Restriction policies** > **Enabled**|
+
+## Troubleshooting and logs
+
+When testing Assigned Access, it can be useful to enable logging to help you troubleshoot issues. Logs can help you identify configuration and runtime issues. You can enable the **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational** log, which is disabled by default.
+
+For more information about troubleshooting kiosk issues, see [Troubleshoot kiosk mode issues](/troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting).
 
 ## Next steps
 
