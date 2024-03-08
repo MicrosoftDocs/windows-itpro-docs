@@ -14,7 +14,7 @@ This policy setting specifies whether a password is required to unlock BitLocker
 
 If you enable this policy setting, users can configure a password that meets the requirements you define. To enforce complexity requirements on the password, select **Require complexity**:
 
-- When set to **Require complexity**, a connection to a domain controller is necessary when BitLocker is enabled to validate the complexity the password
+- When set to **Require complexity**, a connection to a domain controller is necessary when BitLocker is enabled to validate the complexity of the password
 - When set to **Allow complexity**, a connection to a domain controller is attempted to validate that the complexity adheres to the rules set by the policy. If no domain controllers are found, the password is accepted regardless of actual password complexity and the drive will be encrypted using that password as a protector
 - When set to **Do not allow complexity**, password complexity isn't validated
 
