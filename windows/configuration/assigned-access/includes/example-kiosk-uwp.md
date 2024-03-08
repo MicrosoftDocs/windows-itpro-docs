@@ -8,6 +8,7 @@ ms.topic: include
 <!-- example of a kiosk experience with UWP app-->
 
 ```xml
+<?xml version="1.0" encoding="utf-8"?>
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
   <Profiles>
     <Profile Id="{EDB3036B-780D-487D-A375-69369D8A8F78}">

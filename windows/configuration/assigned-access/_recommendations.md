@@ -18,7 +18,7 @@ For kiosks devices located in public-facing environments, the recommendation is 
 Consider enabling *automatic sign-in* for your kiosk device. When the device restarts, from an update or power outage, you can configure the device to sign in with the Assigned Access account automatically. Ensure that policy settings applied to the device don't prevent automatic sign in from working as expected.
 
 > [!NOTE]
-> If you are using a Windows client device restriction CSP to set "Preferred Microsoft Entra tenant domain", this will break the "User logon type" auto-login feature of the Kiosk profile.
+> The policy settings [PreferredAadTenantDomainName](/windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname), prevents automatic sign-in from working.
 
 You can configure the Assigned Access and Shell Launcher XML files with an account to sign-in automatically. For more information, review the articles:
 

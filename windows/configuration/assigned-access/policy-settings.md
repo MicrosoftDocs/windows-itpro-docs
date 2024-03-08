@@ -16,7 +16,7 @@ This reference article lists the policy settings and AppLocker rules applied by 
 
 ## Device policy settings
 
-The following settings are applied at the device level. Any user accessing the device is subject to the policy settings, including administrator accounts.
+The following policy settings are applied at the device level when you deploy a restricted user experience. Any user accessing the device is subject to the policy settings, including administrator accounts:
 
 | Type    | Path                                                                       | Name/Description                                                          |
 |---------|----------------------------------------------------------------------------|---------------------------------------------------------------------------|
@@ -39,7 +39,7 @@ The following settings are applied at the device level. Any user accessing the d
 
 ## User policy settings
 
-The following policy settings are applied to any nonadministrator account accessing the device:
+The following policy settings are applied to any nonadministrator account when you deploy a restricted user experience:
 
 | Type    | Path                                                                             | Name/Description                                                  |
 |---------|----------------------------------------------------------------------------------|-------------------------------------------------------------------|

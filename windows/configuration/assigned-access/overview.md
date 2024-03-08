@@ -280,6 +280,9 @@ The Assigned Access configuration takes effect the next time the targeted user s
 
 The touch keyboard is automatically triggered when there's an input needed and no physical keyboard is attached on touch-enabled devices. You don't need to configure any other setting to enforce this behavior.
 
+> [!TIP]
+> The touch keyboard is triggered only when tapping a textbox. Mouse clicks don't trigger the touch keyboard. If you're testing this feature, use a physical device instead of a virtual machine (VM), as the touch keyboard is not triggered on VMs.
+
 ### Sign out of assigned access
 
 By default, to exit the kiosk experience, press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>. The kiosk app exits automatically. If you sign in again as the Assigned Access account, or wait for the sign in screen timeout, the kiosk app relaunches. The default timeout is 30 seconds, but you can change the timeout with the registry key:
