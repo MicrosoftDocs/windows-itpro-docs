@@ -149,6 +149,8 @@ if($cimSetError) {
 
     Exit 1
 }
+
+Write-Output "Successfully applied Shell Launcher configuration"
 ```
 
 [!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
@@ -303,7 +305,7 @@ The following keyboard shortcuts are blocked for the user accounts with Assigned
 | Keyboard shortcut                                    | Action                                                                                        |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd>  + <kbd>Esc</kbd> | Open Task Manager                                                                             |
-| <kbd>WIN</kbd> + <kbd>, (comma)</kbd>                | Temporarily peek at the desktop                                                               |
+| <kbd>WIN</kbd> + <kbd>,</kbd> (comma)                | Temporarily peek at the desktop                                                               |
 | <kbd>WIN</kbd> + <kbd>A</kbd>                        | Open Action center                                                                            |
 | <kbd>WIN</kbd> + <kbd>Alt</kbd>  + <kbd> D</kbd>     | Display and hide the date and time on the desktop                                             |
 | <kbd>WIN</kbd> + <kbd>Ctrl</kbd>  + <kbd> F</kbd>    | Find computer objects in Active Directory                                                     |

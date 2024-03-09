@@ -29,7 +29,7 @@ Alternatively, you can edit the Registry to have an account sign in automaticall
 
 | Path | Name | Type | Value |
 |--|--|--|--|
-| `HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon` | `AutoAdminLogon` | REG_DWORD | 0x1 |
+| `HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon` | `AutoAdminLogon` | REG_DWORD | 1 |
 | `HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon` | `DefaultUserName` | String | Set value as the account that you want signed in. |
 | `HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon` | `DefaultPassword` | String | Set value as the password for the account. |
 | `HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon` | `DefaultDomainName` | String | Set value for domain, only for domain accounts. For local accounts, don't add this key. |
@@ -37,7 +37,7 @@ Alternatively, you can edit the Registry to have an account sign in automaticall
 Once automatic sign-in is configured, reboot the device. The account will sign in automatically.
 
 > [!NOTE]
-> If you are also using [Custom Logon](/windows-hardware/customize/enterprise/custom-logon) with `HideAutoLogonUI` enabled, you might experience a black screen when the user account password expires. Consider [setting the password to never expire](/windows-hardware/customize/enterprise/troubleshooting-custom-logon#the-device-displays-a-black-screen-when-a-password-expiration-screen-is-displayed).
+> If you are using [Custom Logon](/windows-hardware/customize/enterprise/custom-logon) with `HideAutoLogonUI` enabled, you might experience a black screen when the user account password expires. Consider [setting the password to never expire](/windows-hardware/customize/enterprise/troubleshooting-custom-logon#the-device-displays-a-black-screen-when-a-password-expiration-screen-is-displayed).
 
 ## Windows Update
 
@@ -73,26 +73,26 @@ The following keyboard shortcuts aren't blocked for any user account that is con
 > [!CAUTION]
 > Keyboard Filter settings apply to other standard accounts.
 
-- **Key sequences blocked by [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter)**: If Keyboard Filter is turned ON, then some key combinations are blocked automatically without you having to explicitly block them. For more information, see the [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter). Keyboard Filter is only available on Windows client Enterprise or Education
-- **Power button**: Customizations for the Power button complement assigned access, letting you implement features such as removing the power button from the Welcome screen. Removing the power button ensures the user can't turn off the device when it's in Assigned Access
-  For more information on removing the power button or disabling the physical power button, see [Custom Logon][WHW-1]
-- **Unified Write Filter (UWF)**: UWFsettings apply to all users, including users with assigned access
-  For more information, see [Unified Write Filter][WHW-2]
-- **WEDL_AssignedAccess class**: You can use this class to configure and manage basic lockdown features for assigned access. It's recommended to you use the Windows PowerShell cmdlets instead.
-  If you need to use Assigned Access API, see [WEDL_AssignedAccess][WHW-3]
-- **Welcome Screen**: Customizations for the Welcome screen let you personalize not only how the Welcome screen looks, but for how it functions. You can disable the power or language button, or remove all user interface elements. There are many options to make the Welcome screen your own
+### Accessibility shortcuts
 
-For more information, see [Custom Logon][WHW-1].
-
-### Accessibility
-
-Assigned access doesn't change accessibility settings. We recommend that you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block the following key combinations that open accessibility features:
+Assigned access doesn't change accessibility settings. Use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block the following key combinations that open accessibility features:
 
   | Key combination | Blocked behavior |
   | --- | --- |
   | <kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>Print Screen</kbd> | Open High Contrast dialog box |
   | <kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>Num Lock</kbd> | Open Mouse Keys dialog box |
   | <kbd>WIN</kbd> + <kbd>U</kbd> | Open the Settings app accessibility panel |
+
+- **Key sequences blocked by [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter)**: If Keyboard Filter is turned ON, then some key combinations are blocked automatically without you having to explicitly block them. For more information, see the [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter). Keyboard Filter is only available on the Enterprise and Education editions of Windows
+
+- **Power button**: Customizations for the Power button complement assigned access, letting you implement features such as removing the power button from the Welcome screen. Removing the power button ensures the user can't turn off the device when it's in Assigned Access
+  For more information on removing the power button or disabling the physical power button, see [Custom Logon][WHW-1]
+- **Unified Write Filter (UWF)**: UWFsettings apply to all users, including users with assigned access
+  For more information, see [Unified Write Filter][WHW-2]
+
+For more information, see [Custom Logon][WHW-1].
+
+
 
 ## Choose an app for a kiosk experience
 
@@ -147,13 +147,27 @@ Here are some options to help you to further customize the Assigned Access exper
 - Hide *Ease of access* feature on the sign-in screen
   - **Use an MDM provider**: In Intune, you can use the [Control Panel and Settings](/mem/intune/configuration/device-restrictions-windows-10#control-panel-and-settings) to manage this feature.
   - **Use the registry**: For more information, see [how to disable the Ease of Access button in the registry](/windows-hardware/customize/enterprise/complementary-features-to-custom-logon#welcome-screen)
-- Remove the power button from the sign-in screen
+
+## Power button
+
+Remove the possibility to shut down kiosk devices by:
+
+-
+
+power button from the sign-in screen
   - **Use Group Policy**: `Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Shutdown: Allow system to be shut down without having to log on`. Select **Disabled**.
   - **Use MDM**: In Intune, you have the following option:
     - [Settings Catalog](/mem/intune/configuration/settings-catalog): This option lists all the settings you can configure, including the administrative templates used in on-premises Group Policy. Configure the following setting:
-      - `Local Policies Security Options\Shutdown Allow System To Be Shut Down Without Having To Log On`: Set to **Disabled**.
-- Disable the camera
-  - **Use Group Policy**: `Computer Configuration\Administrative Templates\Windows Components\Camera: Allow use of camera`: Select **Disabled**
+      - `Local Policies Security Options\Shutdown Allow System To Be Shut Down Without Having To Log On`: Set to **Disabled**
+
+
+## Disable the camera
+
+If the kiosk devices don't require the camera, use the following settings to disable it:
+
+
+
+- **Use Group Policy**: `Computer Configuration\Administrative Templates\Windows Components\Camera: Allow use of camera`: Select **Disabled**
   - **Use an MDM provider**: This feature uses the [Policy CSP - Camera](/windows/client-management/mdm/policy-csp-camera). In Intune, you have the following options:
     - [General settings in a device configuration profile](/mem/intune/configuration/device-restrictions-windows-10#general): This option shows this setting, and more settings you can manage
     - [Settings Catalog](/mem/intune/configuration/settings-catalog): This option lists all the settings you can configure, including the administrative templates used in on-premises Group Policy. Configure the following setting:
@@ -179,7 +193,7 @@ Here are some options to help you to further customize the File Explorer experie
 
 ## Troubleshooting and logs
 
-When testing Assigned Access, it can be useful to enable logging to help you troubleshoot issues. Logs can help you identify configuration and runtime issues. You can enable the **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational** log, which is disabled by default.
+When testing Assigned Access, it can be useful to enable logging to help you troubleshoot issues. Logs can help you identify configuration and runtime issues. You can enable the following log: **Applications and Services Logs** > **Microsoft** > **Windows** > **AssignedAccess** > **Operational**.
 
 For more information about troubleshooting kiosk issues, see [Troubleshoot kiosk mode issues](/troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting).
 
