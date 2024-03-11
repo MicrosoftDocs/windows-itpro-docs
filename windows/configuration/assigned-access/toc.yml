@@ -11,8 +11,6 @@ items:
         href: quickstart-kiosk.md
       - name: Configure a restricted user experience with Assigned Access
         href: quickstart-restricted-user-experience.md
-  - name: Recommendations ⚠️
-    href: recommendations.md
   - name: Create an Assigned Access configuration file
     href: configuration-file.md
   - name: Reference
@@ -25,6 +23,8 @@ items:
         href: policy-settings.md
 - name: Shell Launcher
   href: shell-launcher/toc.yml
+- name: Recommendations
+  href: recommendations.md
 - name: Assigned Access CSP 🔗
   href: /windows/client-management/mdm/assignedaccess-csp
 - name: Troubleshoot 🔗

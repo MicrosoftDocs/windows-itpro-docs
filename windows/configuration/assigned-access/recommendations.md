@@ -2,12 +2,12 @@
 title: Assigned Access recommendations
 description: Learn about the recommended kiosk and restricted useer experience configuration options.
 ms.topic: best-practice
-ms.date: 3/7/2024
+ms.date: 03/11/2024
 ---
 
 # Assigned Access recommendations
 
-This article contains recommendations for devices configured with Assigned Access.
+This article contains recommendations for devices configured with Assigned Access and Shell Launcher. Most of the recommendations include both group policy (GPO) and configuration service provider (CSP) settings to help you configure your kiosk devices.
 
 ## Kiosk user account
 
@@ -38,7 +38,7 @@ Once automatic sign-in is configured, reboot the device. The account will sign i
 
 ## Windows Update
 
-Configure your kiosk devices so that they are always up to date, without disrupting the user experience. Here are some policy settings to consider, both GPO and CSP settings, to configure Windows Update for your kiosk devices:
+Configure your kiosk devices so that they are always up to date, without disrupting the user experience. Here are some policy settings to consider, to configure Windows Update for your kiosk devices:
 
 | Type | Path | Name/Description |
 |--|--|--|
@@ -53,7 +53,7 @@ Configure your kiosk devices so that they are always up to date, without disrupt
 
 ## Power settings
 
-You may want to prent the kiosk device from going to sleep, or prevent users to shut down or restart the kiosk. Here are some options to consider:
+You may want to prveent the kiosk device from going to sleep, or prevent users to shut down or restart the kiosk. Here are some options to consider:
 
 | Type | Path | Name/Description |
 |--|--|--|
