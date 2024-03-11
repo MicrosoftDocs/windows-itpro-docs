@@ -40,40 +40,36 @@ Once automatic sign-in is configured, reboot the device. The account will sign i
 
 Configure your kiosk devices so that they are always up to date, without disrupting the user experience. Here are some policy settings to consider, both GPO and CSP settings, to configure Windows Update for your kiosk devices:
 
-| Type    | Path                                                                             | Name/Description                                                  |
-|---------|----------------------------------------------------------------------------------|-------------------------------------------------------------------|
-|**GPO**| Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience| Set the value to **2 - Turn off all notifications, including restart warnings**|
-|**CSP**| `./Device/Vendor/MSFT/Policy/Config/Update/`[UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel) | |
-
-|**GPO**| Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\Display options for update notifications| Set the value to **2 - Turn off all notifications, including restart warnings**|
-|**GPO**| Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\Turn off auto-restart for updates during active hours| Configure the start and end active hours, during which the kiosk device can't restart due to Windows Update|
-|**GPO**| Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\Configure Automatic Updates| **4 - Auto download and schedule the install** > specify an install time that is outside the active hours|
-
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/[DetectionFrequency]()| `3`|
-./Device/Vendor/MSFT/Policy/Config/Update/ActiveHoursStart = 7
-./Device/Vendor/MSFT/Policy/Config/Update/ActiveHoursEnd = 22
+| Type | Path | Name/Description |
+|--|--|--|
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#activehoursend) | Integer value that represents the end of active hours. For example, `22` represents 10PM |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#activehoursstart) | Integer value that represents the start of active hours. For example, `7` represents 7AM |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[AllowAutoUpdate] | `3` - Auto download and schedule the install |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[ScheduledInstallTime](/windows/client-management/mdm/policy-csp-update#scheduledinstalltime) | Specify the time for the device to install updates. For example, `23` represents 11PM |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel) | Set to `2`: turn off all notifications, including restart warnings |
+| **GPO** | Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience | Display options for update notifications > Set the value to **2 - Turn off all notifications, including restart warnings** |
+| **GPO** | Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\Configure Automatic Updates | **4 - Auto download and schedule the install** > specify an install time that is outside the active hours |
+| **GPO** | Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\Turn off auto-restart for updates during active hours | Configure the start and end active hours, during which the kiosk device can't restart due to Windows Update |
 
 ## Power settings
 
-You may want to prent the kiosk device from going to sleep. Here are some options to configure the power settings for your kiosk devices:
-
-| Type    | Path                                                                                                     | Name/Description                |
-|---------|----------------------------------------------------------------------------------------------------------|---------------------------------|
-| **GPO** | Computer Configuration\Administrative Templates\System\Power Management\Specify the system sleep timeout | Set the value to **0** seconds. |
-| **GPO** | Computer Configuration\Administrative Templates\System\Power Management\Video and Display Settings\Turn off the display | Set the value to **0** seconds. |
-
-## Shut down, restart, sleep, and hybernate commands
-
-To prevent users to shut down, restart, sleep, or hybernate kiosk devices, here are some options:
+You may want to prent the kiosk device from going to sleep, or prevent users to shut down or restart the kiosk. Here are some options to consider:
 
 | Type | Path | Name/Description |
 |--|--|--|
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/`[HidePowerOptions](/windows/client-management/mdm/policy-csp-admx-startmenu#hidepoweroptions) | `<Enabled/>` |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/`[Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#shutdown_allowsystemtobeshutdownwithouthavingtologon) | `0` |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#displayofftimeoutpluggedin) | `<Enabled/><Data ID=\"VideoPowerDownTimeOutAC_2\" value=\"0\"/` |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[SelectPowerButtonActionPluggedIn](/windows/client-management/mdm/policy-csp-power#selectpowerbuttonactionpluggedin) | `<Enabled/><Data ID=\"ACButtonAction_2\" value=\"0\"/` |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[SelectSleepButtonActionPluggedIn](/windows/client-management/mdm/policy-csp-power#SelectSleepButtonActionPluggedIn) | `<Enabled/><Data ID=\"ACSleepButtonAction_2\" value=\"0\"/` |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[StandbyTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#standbytimeoutpluggedin) | `<Enabled/><Data ID=\"ACStandbyTimeOut_2\" value=\"0\"/` |
+| **GPO** | Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands | **Enable** |
 | **GPO** | Computer Configuration\Administrative Templates\System\Power Management\Button Settings\Select the Power button action | Select the action: **Take no action** |
 | **GPO** | Computer Configuration\Administrative Templates\System\Power Management\Button Settings\Select the Sleep button action | Select the action: **Take no action** |
-| **GPO** | Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands | **Enable** the setting |
+| **GPO** | Computer Configuration\Administrative Templates\System\Power Management\Specify the system sleep timeout | Set the value to **0** seconds. |
+| **GPO** | Computer Configuration\Administrative Templates\System\Power Management\Video and Display Settings\Turn off the display | Set the value to **0** seconds. |
+| **GPO** | Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Shutdown: Allow system to be shut down without having to log on | **Disabled** |
 | **GPO** | Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment\Shut down the system | Remove the users or groups from this policy. To prevent this policy from affecting a member of the Administrators group, be sure to keep the Administrators group. |
-
-|**CSP**|`./Device/Vendor/MSFT/Policy/Config/Power/`[HibernateTimeoutPluggedIn]() | `<Enabled/>` |
 
 ## Keyboard shortcuts
 
@@ -141,31 +137,7 @@ Here are some options to help you to further customize the Assigned Access exper
   - **Use an MDM provider**: In Intune, you can use the [Control Panel and Settings](/mem/intune/configuration/device-restrictions-windows-10#control-panel-and-settings) to manage this feature.
   - **Use the registry**: For more information, see [how to disable the Ease of Access button in the registry](/windows-hardware/customize/enterprise/complementary-features-to-custom-logon#welcome-screen)
 
-## Power button
-
-Remove the possibility to shut down kiosk devices by:
-
--
-
-power button from the sign-in screen
-  - **Use Group Policy**: `Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Shutdown: Allow system to be shut down without having to log on`. Select **Disabled**.
-  - **Use MDM**: In Intune, you have the following option:
-    - [Settings Catalog](/mem/intune/configuration/settings-catalog): This option lists all the settings you can configure, including the administrative templates used in on-premises Group Policy. Configure the following setting:
-      - `Local Policies Security Options\Shutdown Allow System To Be Shut Down Without Having To Log On`: Set to **Disabled**
-
-
-## Disable the camera
-
-If the kiosk devices don't require the camera, use the following settings to disable it:
-
-
-
-- **Use Group Policy**: `Computer Configuration\Administrative Templates\Windows Components\Camera: Allow use of camera`: Select **Disabled**
-  - **Use an MDM provider**: This feature uses the [Policy CSP - Camera](/windows/client-management/mdm/policy-csp-camera). In Intune, you have the following options:
-    - [General settings in a device configuration profile](/mem/intune/configuration/device-restrictions-windows-10#general): This option shows this setting, and more settings you can manage
-    - [Settings Catalog](/mem/intune/configuration/settings-catalog): This option lists all the settings you can configure, including the administrative templates used in on-premises Group Policy. Configure the following setting:
-      - `Camera\Allow camera`: Set to **Not allowed**
-- Turn off app notifications on the lock screen
+## Notifications on the lock screen
 
   - **Use Group policy**:
     - `Computer Configuration\Administrative Templates\System\Logon\Turn off app notifications on the lock screen`: Select **Enabled**.
