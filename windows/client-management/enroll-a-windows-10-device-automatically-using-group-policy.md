@@ -1,7 +1,7 @@
 ---
 title: Enroll a Windows device automatically using Group Policy
 description: Learn how to use a Group Policy to trigger autoenrollment to MDM for Active Directory (AD) domain-joined devices.
-ms.topic: article
+ms.topic: conceptual
 ms.date: 08/10/2023
 ms.collection:
 - highpri

@@ -4,7 +4,7 @@ items:
   - name: Passwordless sign-in
     items:
     - name: Passwordless strategy
-      href: hello-for-business/passwordless-strategy.md
+      href: passwordless-strategy/toc.yml
     - name: Windows Hello for Business
       href: hello-for-business/toc.yml
     - name: Windows presence sensing
@@ -28,8 +28,8 @@ items:
     href: /education/windows/federated-sign-in
   - name: Advanced credential protection
     items:
-    - name: Windows LAPS (Local Administrator Password Solution) 🔗
-      displayName: LAPS
+    - name: Windows LAPS 🔗
+      displayName: Local Administrator Password Solution
       href: /windows-server/identity/laps/laps-overview
     - name: Account Lockout Policy 🔗
       href: ../threat-protection/security-policy-settings/account-lockout-policy.md

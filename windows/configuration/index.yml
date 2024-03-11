@@ -1,57 +1,55 @@
 ### YamlMime:Landing
-
-title: Configure Windows client # < 60 chars
-summary: Find out how to apply custom configurations to Windows client devices. # < 160 chars
+title: Configure Windows client
+summary: Learn how to apply custom configurations to Windows client devices.
 
 metadata:
-  title: Configure Windows client # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Find out how to apply custom configurations to Windows client devices. # Required; article description that is displayed in search results. < 160 chars.
-  ms.topic: landing-page # Required
-  ms.prod: windows-client
+  title: Configure Windows client
+  description: Learn how to apply custom configurations to Windows client devices.
+  ms.topic: landing-page
   ms.collection:
     - tier1
-  author: aczechowski
-  ms.author: aaroncz
+  author: paolomatarazzo
+  ms.author: paoloma
   manager: aaroncz
-  ms.date: 12/20/2023
-  localization_priority: medium
-    
+  ms.date: 02/06/2024
+
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
+
   - title: Customize the appearance
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Customize the Windows 11 Start menu layout
-            url: customize-start-menu-layout-windows-11.md
-          - text: Customize the Windows 11 taskbar
-            url: customize-taskbar-windows-11.md
+          - text: Customize the Windows Start menu layout
+            url: start/customize-start-menu-layout-windows-11.md
+          - text: Customize the Windows taskbar
+            url: taskbar/customize-taskbar-windows-11.md
           - text: Configure Windows Spotlight on the lock screen
-            url: windows-spotlight.md
+            url: lock-screen/windows-spotlight.md
           - text: Accessibility information for IT pros
-            url: windows-accessibility-for-itpros.md
+            url: accessibility/index.md
 
-
-  # Card (optional)
   - title: Configure a Windows kiosk
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Configure kiosks and digital signs
-            url: kiosk-methods.md
+            url: kiosk/kiosk-methods.md
           - text: Set up a single-app kiosk
-            url: kiosk-single-app.md
+            url: kiosk/kiosk-single-app.md
           - text: Set up a multi-app kiosk for Windows 11
-            url: lock-down-windows-11-to-specific-apps.md
+            url: kiosk/lock-down-windows-11-to-specific-apps.md
           - text: Manage multi-user and guest devices
             url: shared-devices-concepts.md
 
+  - title: Configure shared devices
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Manage multi-user and guest devices
+            url: shared-devices-concepts.md
 
-  # Card (optional)
   - title: Use provisioning packages
     linkLists:
       - linkListType: how-to-guide
@@ -65,7 +63,6 @@ landingContent:
           - text: Apply a provisioning package
             url: provisioning-packages/provisioning-apply-package.md
 
-  # Card (optional)
   - title: Use Windows Configuration Designer (WCD)
     linkLists:
       - linkListType: reference
@@ -78,23 +75,3 @@ landingContent:
             url: wcd/wcd-provisioningcommands.md
           - text:  Accounts
             url: wcd/wcd-accounts.md
-
-  # Card (optional)
-  - title: Configure Cortana in Windows client
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Configure Cortana in Windows 10
-            url: cortana-at-work/cortana-at-work-overview.md
-          - text: Custom voice commands in Cortana 
-            url: cortana-at-work/cortana-at-work-voice-commands.md
-
-  # Card (optional)
-  - title: User Experience Virtualization (UE-V) for Windows client
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: UE-V for Windows 10 overview
-            url: ue-v/uev-for-windows.md
-          - text: Get Started with UE-V
-            url: ue-v/uev-getting-started.md

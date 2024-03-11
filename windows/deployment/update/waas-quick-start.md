@@ -1,8 +1,8 @@
 ---
 title: Quick guide to Windows as a service (Windows 10)
 description: In Windows 10, Microsoft has streamlined servicing to make operating system updates simpler to test, manage, and deploy.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart

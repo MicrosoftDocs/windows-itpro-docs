@@ -2,8 +2,8 @@
 title: Configure clients with a script
 titleSuffix: Windows Update for Business reports
 description: How to get and use the Windows Update for Business reports configuration script to configure devices for Windows Update for Business reports.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart

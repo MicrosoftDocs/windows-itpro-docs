@@ -1,7 +1,7 @@
 ---
 title: Federated authentication device enrollment
 description: This section provides an example of the mobile device enrollment protocol using federated authentication policy.
-ms.topic: article
+ms.topic: conceptual
 ms.date: 08/10/2023
 ---
 

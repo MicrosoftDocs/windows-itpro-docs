@@ -3,11 +3,11 @@ title: What's new in Windows 10 Enterprise LTSC 2019
 manager: aaroncz
 ms.author: mstewart
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2019 (also known as Windows 10 Enterprise 2019 LTSB).
-ms.prod: windows-client
+ms.service: windows-client
 author: mestew
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.technology: itpro-fundamentals
+ms.subservice: itpro-fundamentals
 ms.date: 12/18/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2019</a>
@@ -229,7 +229,7 @@ An issue, known as _SMBLoris_, which could result in denial of service, has been
 
 Windows Defender Security Center is now called **Windows Security Center**.
 
-You can still get to the app in all the usual ways. Ask Cortana to open Windows Security Center(WSC) or interact with the taskbar icon. WSC lets you manage all your security needs, including **Microsoft Defender Antivirus** and **Windows Defender Firewall**.
+You can still get to the app in all the usual ways. WSC lets you manage all your security needs, including **Microsoft Defender Antivirus** and **Windows Defender Firewall**.
 
 The WSC service now requires antivirus products to run as a protected process to register. Products that haven't yet implemented this functionality won't appear in the Windows Security Center user interface, and Microsoft Defender Antivirus will remain enabled side-by-side with these products.
 

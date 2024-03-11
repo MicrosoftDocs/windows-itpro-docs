@@ -1,29 +1,18 @@
 items:
-- name: Windows Hello for Business deployment overview
+- name: Plan a Windows Hello for Business Deployment
   href: index.md
-- name: Deployment prerequisite overview
-  href: requirements.md
 - name: Cloud-only deployment
-  href: cloud.md
+  href: cloud-only.md
 - name: Hybrid deployments
   items:
   - name: Cloud Kerberos trust deployment
-    items:
-      - name: Overview
-        href: hybrid-cloud-kerberos-trust.md
-        displayName: cloud Kerberos trust
-      - name: Configure and provision Windows Hello for Business
-        href: hybrid-cloud-kerberos-trust-enroll.md
-        displayName: cloud Kerberos trust
+    href: hybrid-cloud-kerberos-trust.md
   - name: Key trust deployment
     items: 
-    - name: Overview
+    - name: Requirements and validation
       href: hybrid-key-trust.md
       displayName: key trust
-    - name: Configure and validate the PKI
-      href: hybrid-key-trust-pki.md
-      displayName: key trust
-    - name: Configure and provision Windows Hello for Business
+    - name: Configure and enroll in Windows Hello for Business
       href: hybrid-key-trust-enroll.md
       displayName: key trust
     - name: Configure SSO for Microsoft Entra joined devices
@@ -31,7 +20,7 @@ items:
       displayName: key trust
   - name: Certificate trust deployment
     items: 
-    - name: Overview
+    - name: Requirements and validation
       href: hybrid-cert-trust.md
       displayName: certificate trust
     - name: Configure and validate Public Key Infrastructure (PKI)
@@ -53,25 +42,19 @@ items:
   items:
   - name: Key trust deployment
     items: 
-    - name: Overview
-      href: hybrid-cloud-kerberos-trust.md
-    - name: Configure and validate the PKI
-      href: on-premises-key-trust-pki.md
+    - name: Requirements and validation
+      href: on-premises-key-trust.md
     - name: Prepare and deploy Active Directory Federation Services (AD FS)
       href: on-premises-key-trust-adfs.md
-    - name: Validate and deploy multi-factor authentication (MFA) services
-      href: on-premises-key-trust-mfa.md
-    - name: Configure Windows Hello for Business policy settings
+    - name: Configure and enroll in Windows Hello for Business
       href: on-premises-key-trust-enroll.md
   - name: Certificate trust deployment
     items: 
-    - name: Overview
+    - name: Requirements and validation
       href: on-premises-cert-trust.md
-    - name: Configure and validate Public Key Infrastructure (PKI)
-      href: on-premises-cert-trust-pki.md
     - name: Prepare and Deploy Active Directory Federation Services (AD FS)
       href: on-premises-cert-trust-adfs.md
-    - name: Validate and deploy multi-factor authentication (MFA)
-      href: on-premises-cert-trust-mfa.md
     - name: Configure and enroll in Windows Hello for Business
       href: on-premises-cert-trust-enroll.md
+- name: Prepare users to provision and use Hello
+  href: prepare-users.md

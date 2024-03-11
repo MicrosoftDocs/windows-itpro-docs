@@ -1,8 +1,8 @@
 ---
 title: Monitor Delivery Optimization
 description: How to monitor Delivery Optimization using either the Windows Update for Business Delivery Optimization Report or Windows PowerShell cmdlets
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 ms.author: carmenf
 author: cmknox
@@ -10,6 +10,7 @@ manager: aaroncz
 ms.reviewer: mstewart
 ms.collection:
   - tier3
+  - essentials-manage
 ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
@@ -46,7 +47,7 @@ For details, see [Windows Update for Business Delivery Optimization Report](/win
 | TotalBytesDownloaded | The number of bytes from any source downloaded so far |
 | PercentPeerCaching |The percentage of bytes downloaded from peers versus over HTTP |
 | BytesFromPeers | Total bytes downloaded from peer devices (sum of bytes downloaded from LAN, Group, and Internet Peers) |
-| BytesfromHTTP | Total number of bytes received over HTTP. This metric represents all HTTP sources, which includes BytesFromCacheServer |
+| BytesfromHTTP | Total number of bytes received over HTTP. This metric represents all HTTP sources, **which includes BytesFromCacheServer** |
 | Status | Current state of the operation. Possible values are: **Downloading** (download in progress); **Complete** (download completed, but isn't uploading yet); **Caching** (download completed successfully and is ready to upload or uploading); **Paused** (download/upload paused by caller) |
 | Priority | Priority of the download; values are **foreground** or **background** |
 | BytesFromCacheServer | Total number of bytes received from cache server (MCC) |

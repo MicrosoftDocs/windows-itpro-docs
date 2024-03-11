@@ -2,8 +2,8 @@
 title: UCServiceUpdateStatus data schema
 titleSuffix: Windows Update for Business reports
 description: UCServiceUpdateStatus schema for Windows Update for Business reports. UCServiceUpdateStatus has service-side information for one device and one update.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart

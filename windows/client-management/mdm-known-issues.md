@@ -1,7 +1,7 @@
 ---
 title: Known issues in MDM
 description: Learn about known issues for Windows devices in MDM
-ms.topic: article
+ms.topic: conceptual
 ms.date: 08/10/2023
 ---
 

@@ -1,14 +1,7 @@
 ---
 title: MixedReality Policy CSP
 description: Learn more about the MixedReality Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/29/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 02/20/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -279,6 +272,59 @@ This policy controls if the HoloLens displays will be automatically adjusted for
 
 <!-- AutomaticDisplayAdjustment-End -->
 
+<!-- AutoUnlock-Begin -->
+## AutoUnlock
+
+<!-- AutoUnlock-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AutoUnlock-Applicability-End -->
+
+<!-- AutoUnlock-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/MixedReality/AutoUnlock
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoUnlock
+```
+<!-- AutoUnlock-OmaUri-End -->
+
+<!-- AutoUnlock-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy controls whether a signed-in user will be prompted for credentials when returning to the device after the device has entered suspended state. This policy is available both for the device as well as the user scope. When enabled for the device scope, auto unlock will be enabled for all users on the device. When enabled for the user scope, only the specific user will have auto unlock enabled.
+<!-- AutoUnlock-Description-End -->
+
+<!-- AutoUnlock-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AutoUnlock-Editable-End -->
+
+<!-- AutoUnlock-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AutoUnlock-DFProperties-End -->
+
+<!-- AutoUnlock-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User will be prompted for credentials. |
+| 1 | User won't be prompted for credentials. |
+<!-- AutoUnlock-AllowedValues-End -->
+
+<!-- AutoUnlock-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AutoUnlock-Examples-End -->
+
+<!-- AutoUnlock-End -->
+
 <!-- BrightnessButtonDisabled-Begin -->
 ## BrightnessButtonDisabled
 
@@ -327,6 +373,97 @@ This policy setting controls if pressing the brightness button changes the brigh
 <!-- BrightnessButtonDisabled-Examples-End -->
 
 <!-- BrightnessButtonDisabled-End -->
+
+<!-- ConfigureDeviceStandbyAction-Begin -->
+## ConfigureDeviceStandbyAction
+
+<!-- ConfigureDeviceStandbyAction-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ConfigureDeviceStandbyAction-Applicability-End -->
+
+<!-- ConfigureDeviceStandbyAction-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureDeviceStandbyAction
+```
+<!-- ConfigureDeviceStandbyAction-OmaUri-End -->
+
+<!-- ConfigureDeviceStandbyAction-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting controls device maintenance action during standby.
+<!-- ConfigureDeviceStandbyAction-Description-End -->
+
+<!-- ConfigureDeviceStandbyAction-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureDeviceStandbyAction-Editable-End -->
+
+<!-- ConfigureDeviceStandbyAction-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ConfigureDeviceStandbyAction-DFProperties-End -->
+
+<!-- ConfigureDeviceStandbyAction-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not configured. |
+| 1 | Logoff users. |
+| 2 | Reboot device. |
+<!-- ConfigureDeviceStandbyAction-AllowedValues-End -->
+
+<!-- ConfigureDeviceStandbyAction-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureDeviceStandbyAction-Examples-End -->
+
+<!-- ConfigureDeviceStandbyAction-End -->
+
+<!-- ConfigureDeviceStandbyActionTimeout-Begin -->
+## ConfigureDeviceStandbyActionTimeout
+
+<!-- ConfigureDeviceStandbyActionTimeout-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ConfigureDeviceStandbyActionTimeout-Applicability-End -->
+
+<!-- ConfigureDeviceStandbyActionTimeout-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureDeviceStandbyActionTimeout
+```
+<!-- ConfigureDeviceStandbyActionTimeout-OmaUri-End -->
+
+<!-- ConfigureDeviceStandbyActionTimeout-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting controls when to start maintenance action after device enters standby. The timeout value is in hours.
+<!-- ConfigureDeviceStandbyActionTimeout-Description-End -->
+
+<!-- ConfigureDeviceStandbyActionTimeout-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureDeviceStandbyActionTimeout-Editable-End -->
+
+<!-- ConfigureDeviceStandbyActionTimeout-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[1-168]` |
+| Default Value  | 8 |
+<!-- ConfigureDeviceStandbyActionTimeout-DFProperties-End -->
+
+<!-- ConfigureDeviceStandbyActionTimeout-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureDeviceStandbyActionTimeout-Examples-End -->
+
+<!-- ConfigureDeviceStandbyActionTimeout-End -->
 
 <!-- ConfigureMovingPlatform-Begin -->
 ## ConfigureMovingPlatform
@@ -650,7 +787,7 @@ Windows Network Connectivity Status Indicator may get a false positive internet-
 <!-- EnableStartMenuSingleHandGesture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableStartMenuSingleHandGesture-Applicability-End -->
 
 <!-- EnableStartMenuSingleHandGesture-OmaUri-Begin -->
@@ -699,7 +836,7 @@ This policy setting controls if pinching your thumb and index finger, while look
 <!-- EnableStartMenuVoiceCommand-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableStartMenuVoiceCommand-Applicability-End -->
 
 <!-- EnableStartMenuVoiceCommand-OmaUri-Begin -->
@@ -748,7 +885,7 @@ This policy setting controls if using voice commands to open the Start menu is e
 <!-- EnableStartMenuWristTap-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableStartMenuWristTap-Applicability-End -->
 
 <!-- EnableStartMenuWristTap-OmaUri-Begin -->
@@ -1111,7 +1248,7 @@ The following example XML string shows the value to enable this policy:
 <!-- PreferLogonAsOtherUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- PreferLogonAsOtherUser-Applicability-End -->
 
 <!-- PreferLogonAsOtherUser-OmaUri-Begin -->
@@ -1160,7 +1297,7 @@ This policy configures whether the Sign-In App should prefer showing Other User 
 <!-- RequireStartIconHold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- RequireStartIconHold-Applicability-End -->
 
 <!-- RequireStartIconHold-OmaUri-Begin -->
@@ -1209,7 +1346,7 @@ This policy setting controls if it's require that the Start icon to be pressed f
 <!-- RequireStartIconVisible-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- RequireStartIconVisible-Applicability-End -->
 
 <!-- RequireStartIconVisible-OmaUri-Begin -->

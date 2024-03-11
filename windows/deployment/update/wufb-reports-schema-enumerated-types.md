@@ -2,8 +2,8 @@
 title: Enumerated types
 titleSuffix: Windows Update for Business reports
 description: Enumerated types for Windows Update for Business reports.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart

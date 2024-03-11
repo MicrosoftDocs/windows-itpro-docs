@@ -1,7 +1,7 @@
 ---
 title: Prepare for Windows 11
 description: Prepare your infrastructure and tools to deploy Windows 11, IT Pro content.
-ms.prod: windows-client
+ms.service: windows-client
 author: mestew
 ms.author: mstewart
 manager: aaroncz
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.collection:
   - highpri
   - tier1
-ms.technology: itpro-fundamentals
+ms.subservice: itpro-fundamentals
 ms.date: 12/31/2017
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

@@ -1,13 +1,13 @@
 ---
 title: Windows client features lifecycle
 description: Learn about the lifecycle of Windows features, as well as features that are no longer developed, removed features, and terminology assigned to a feature.
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 author: mestew
 manager: aaroncz
 ms.author: mstewart
 ms.topic: conceptual
-ms.technology: itpro-fundamentals
+ms.subservice: itpro-fundamentals
 ms.date: 12/15/2023
 ms.collection:
   - highpri

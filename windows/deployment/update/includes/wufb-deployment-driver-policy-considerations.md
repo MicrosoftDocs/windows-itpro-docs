@@ -2,8 +2,8 @@
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.technology: itpro-updates
-ms.prod: windows-client
+ms.subservice: itpro-updates
+ms.service: windows-client
 ms.topic: include
 ms.date: 02/14/2023
 ms.localizationpriority: medium
@@ -20,7 +20,7 @@ The following policies exclude drivers from Windows Update for a device:
   -  **Group Policy**: `\Windows Components\Windows Update\Do not include drivers with Windows Updates` set to `enabled`
   - **CSP**: [ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-csp-update#excludewudriversinqualityupdate) set to `1`
   - **Registry**:  `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\ExcludeWUDriversFromQualityUpdates` set to `1`
-  - **Intune**: [**Windows Drivers** update setting](/mem/intune/protect/windows-update-settings#update-settings) for the update ring set to `Allow` 
+  - **Intune**: [**Windows Drivers** update setting](/mem/intune/protect/windows-update-settings#update-settings) for the update ring set to `Block` 
 
 **Behavior with the deployment service**: Devices with driver exclusion polices that are enrolled for **drivers** and added to an audience though the deployment service:
   - Will display the applicable driver content in the deployment service

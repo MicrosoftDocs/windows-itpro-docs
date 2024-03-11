@@ -2,14 +2,14 @@
 title: Deploying Microsoft Office 2010 by Using App-V
 description: Create Office 2010 packages for Microsoft Application Virtualization (App-V) using the App-V Sequencer or the App-V Package Accelerator.
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.topic: article
-ms.technology: itpro-apps
+ms.subservice: itpro-apps
 ---
 
 # Deploying Microsoft Office 2010 by Using App-V

@@ -1,14 +1,8 @@
 ---
 title: UniversalPrint DDF file
 description: UniversalPrint DDF file
-ms.author: vinpa
-ms.topic: reference
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.date: 06/02/2022
 ms.reviewer: jimwu
-manager: aaroncz
 ---
 
 # UniversalPrint DDF file

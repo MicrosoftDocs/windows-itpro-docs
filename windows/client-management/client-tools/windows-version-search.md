@@ -2,7 +2,7 @@
 title: What version of Windows am I running?
 description: Discover which version of Windows you're running to determine whether or not your device is enrolled in the Long-Term Servicing Channel or General Availability Channel.
 ms.date: 08/10/2023
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # What version of Windows am I running?

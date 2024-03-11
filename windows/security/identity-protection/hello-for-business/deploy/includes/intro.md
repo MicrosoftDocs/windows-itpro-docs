@@ -1,6 +1,6 @@
 ---
-ms.date: 12/15/2023
+ms.date: 01/03/2024
 ms.topic: include
 ---
 
-This document describes Windows Hello for Business functionalities or scenarios that apply to:
+**This article describes Windows Hello for Business functionalities or scenarios that apply to:**

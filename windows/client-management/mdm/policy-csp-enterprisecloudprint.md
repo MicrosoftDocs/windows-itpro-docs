@@ -1,14 +1,7 @@
 ---
 title: EnterpriseCloudPrint Policy CSP
 description: Learn more about the EnterpriseCloudPrint Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -274,7 +267,7 @@ Resource URI for which access is being requested by the Mopria discovery client 
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This policy must target ./User, otherwise it fails.
 
-The default value is an empty string. Otherwise, the value should contain a URL. 
+The default value is an empty string. Otherwise, the value should contain a URL.
 
 **Example**:
 

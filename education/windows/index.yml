@@ -6,11 +6,10 @@ brand: windows
 
 metadata:
   ms.topic: hub-page
-  ms.prod: windows-client
-  ms.technology: itpro-edu
   ms.collection:
     - education
     - tier1
+    - essentials-navigation
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz

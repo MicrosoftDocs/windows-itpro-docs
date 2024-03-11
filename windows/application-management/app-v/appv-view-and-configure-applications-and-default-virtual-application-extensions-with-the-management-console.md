@@ -2,13 +2,14 @@
 title: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console (Windows 10/11)
 description: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
 author: aczechowski
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
-ms.technology: itpro-apps
+ms.subservice: itpro-apps
+ms.topic: article
 ---
 
 # How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console

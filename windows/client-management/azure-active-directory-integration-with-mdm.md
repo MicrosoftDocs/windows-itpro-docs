@@ -1,7 +1,7 @@
 ---
 title: Microsoft Entra integration with MDM
 description: Microsoft Entra ID is the world's largest enterprise cloud identity management service.
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - highpri
 - tier2

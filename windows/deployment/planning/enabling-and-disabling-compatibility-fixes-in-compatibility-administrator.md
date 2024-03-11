@@ -3,10 +3,10 @@ title: Enabling and Disabling Compatibility Fixes in Compatibility Administrator
 description: You can disable and enable individual compatibility fixes in your customized databases for testing and troubleshooting purposes.
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ms.date: 10/28/2022
 ---
 

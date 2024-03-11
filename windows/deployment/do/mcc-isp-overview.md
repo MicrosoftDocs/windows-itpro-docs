@@ -1,8 +1,8 @@
 ---
 title: MCC for ISPs Overview
 description: Overview of Microsoft Connected Cache for ISPs. Learn about how MCC works, supported scenarios, and supported content.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: overview
 manager: aaroncz
 ms.author: carmenf

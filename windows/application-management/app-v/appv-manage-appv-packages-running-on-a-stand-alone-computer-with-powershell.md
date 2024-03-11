@@ -5,14 +5,14 @@ author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: windows-client
+ms.service: windows-client
 ms.date: 09/24/2018
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.topic: article
-ms.technology: itpro-apps
+ms.subservice: itpro-apps
 ---
 # How to manage App-V packages running on a stand-alone computer by using Windows PowerShell
 

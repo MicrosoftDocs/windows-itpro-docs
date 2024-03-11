@@ -271,16 +271,7 @@ Here's a brief video showing the user experience from a Microsoft Entra joined d
 
 While users appreciate the convenience of biometrics, and administrators value the security, you might experience compatibility issues with applications and Windows Hello for Business certificates. In such scenarios, you can deploy a policy setting to revert to the previous behavior for the users needing it.
 
-### Use Windows Hello for Business certificates as smart card certificates
-
-If you enable this policy setting, applications use Windows Hello for Business certificates as smart card certificates. Biometric factors are unavailable when a user is asked to authorize the use of the certificate's private key. This policy setting is designed to allow compatibility with applications that rely exclusively on smart card certificates.
-
-If you disable or don't configure this policy setting, applications don't use Windows Hello for Business certificates as smart card certificates. Biometric factors are available when a user is asked to authorize the use of the certificate's private key.
-
-|  | Path |
-|--|--|
-| **CSP** | `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/`[UseHelloCertificatesAsSmartCardCertificates][WIN-1]|
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Hello for Business** |
+For more information, see [Use Windows Hello for Business certificates as smart card certificate](policy-settings.md#use-windows-hello-for-business-certificates-as-smart-card-certificates)
 
 <!-- links -->
 

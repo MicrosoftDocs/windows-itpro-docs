@@ -1,14 +1,7 @@
 ---
 title: Policies in Policy CSP supported by Windows 10 Team
 description: Learn about the policies in Policy CSP supported by Windows 10 Team.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 09/25/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->

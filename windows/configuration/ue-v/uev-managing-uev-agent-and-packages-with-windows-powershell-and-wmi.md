@@ -1,34 +1,21 @@
 ---
 title: Manage UE-V Service and Packages with Windows PowerShell and WMI
 description: Managing the UE-V service and packages with Windows PowerShell and WMI
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
-ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
+ms.date: 1/25/2024
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Managing the UE-V service and packages with Windows PowerShell and WMI
 
-**Applies to**
--   Windows 10, version 1607
+You can use Windows Management Instrumentation (WMI) and Windows PowerShell to manage User Experience Virtualization (UE-V) service configuration and synchronization behavior.
 
-You can use Windows Management Instrumentation (WMI) and Windows PowerShell to manage User Experience Virtualization (UE-V) service configuration and synchronization behavior. 
-
->**Note**&nbsp;&nbsp;For a complete list of UE-V cmdlets, see [User Experience Virtualization in Windows PowerShell](/powershell/module/uev/).
-
+> [!NOTE]
+> For a complete list of UE-V cmdlets, see [User Experience Virtualization in Windows PowerShell](/powershell/module/uev/).
 
 ## To configure the UE-V service with Windows PowerShell
 
 1. Open a Windows PowerShell window. To manage computer settings that affect all users of the computer by using the *Computer* parameter, open the window with an account that has administrator rights.
-
-2. Use the following Windows PowerShell commands to configure the service.
+1. Use the following Windows PowerShell commands to configure the service.
 
    |Windows PowerShell command|Description|
    |--- |--- |
@@ -68,9 +55,8 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
 
 ## To export UE-V package settings and repair UE-V templates with Windows PowerShell
 
-1.  Open a Windows PowerShell window as an administrator.
-
-2.  Use the following Windows PowerShell commands to configure the service.
+1. Open a Windows PowerShell window as an administrator.
+1. Use the following Windows PowerShell commands to configure the service.
 
     |Windows PowerShell command|Description|
     |--- |--- |
@@ -79,11 +65,11 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
 
 ## To configure the UE-V service with WMI
 
-1.  User Experience Virtualization provides the following set of WMI commands. Administrators can use this interface to configure the UE-V service at the command line and automate typical configuration tasks.
+1. User Experience Virtualization provides the following set of WMI commands. Administrators can use this interface to configure the UE-V service at the command line and automate typical configuration tasks.
 
     Use an account with administrator rights to open a Windows PowerShell window.
 
-2.  Use the following WMI commands to configure the service.
+1. Use the following WMI commands to configure the service.
 
     |`Windows PowerShell command`|Description|
     |--- |--- |
@@ -104,14 +90,12 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
 When you're finished configuring the UE-V service with WMI and Windows PowerShell, the defined configuration is stored in the registry in the following locations.
 
 `\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\UEV\Agent\Configuration`
-
 `\HKEY_CURRENT_USER\SOFTWARE\Microsoft\UEV\Agent\Configuration`
 
 ## To export UE-V package settings and repair UE-V templates by using WMI
 
-1.  UE-V provides the following set of WMI commands. Administrators can use this interface to export a package or repair UE-V templates.
-
-2.  Use the following WMI commands.
+1. UE-V provides the following set of WMI commands. Administrators can use this interface to export a package or repair UE-V templates.
+1. Use the following WMI commands.
 
     |WMI command|Description|
     |--- |--- |
@@ -121,7 +105,5 @@ When you're finished configuring the UE-V service with WMI and Windows PowerShel
 ## Related topics
 
 [Administering UE-V with Windows PowerShell and WMI](uev-administering-uev-with-windows-powershell-and-wmi.md)
-
 [Administering UE-V](uev-administering-uev.md)
-
 [User Experience Virtualization in Windows PowerShell](/powershell/module/uev/)

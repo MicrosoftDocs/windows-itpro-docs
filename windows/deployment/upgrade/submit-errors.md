@@ -1,72 +1,75 @@
 ---
-title: Submit Windows 10 upgrade errors using Feedback Hub
+title: Submit Windows upgrade errors using Feedback Hub
 manager: aaroncz
 ms.author: frankroj
-description: Download the Feedback Hub app, and then submit Windows 10 upgrade errors for diagnosis using feedback hub.
-ms.prod: windows-client
+description: Download the Feedback Hub app, and then submit Windows upgrade errors for diagnosis using feedback hub.
+ms.service: windows-client
 author: frankroj
 ms.localizationpriority: medium
 ms.topic: article
-ms.technology: itpro-deploy
-ms.date: 10/28/2022
+ms.subservice: itpro-deploy
+ms.date: 01/18/2024
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
-# Submit Windows 10 upgrade errors using Feedback Hub
+# Submit Windows upgrade errors using Feedback Hub
 
-**Applies to**
--   Windows 10
+> [!NOTE]
+>
+> This article is a 100 level article (basic).
+>
+> See [Resolve Windows upgrade errors](resolve-windows-upgrade-errors.md) for a full list of articles in this section.
 
->[!NOTE]
->This is a 100 level topic (basic).<br>
->See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
-
-## In this topic
-
-This topic describes how to submit problems with a Windows 10 upgrade to Microsoft using the Windows 10 Feedback Hub.
+This article describes how to submit problems with a Windows upgrade to Microsoft using the Windows Feedback Hub.
 
 ## About the Feedback Hub
 
-The Feedback Hub app lets you tell Microsoft about any problems you run in to while using Windows 10 and send suggestions to help us improve your Windows experience. Previously, you could only use the Feedback Hub if you were in the Windows Insider Program. Now anyone can use this tool.  You can download the Feedback Hub app from the Microsoft Store [here](https://www.microsoft.com/store/p/feedback-hub/9nblggh4r32n?SilentAuth=1&wa=wsignin1.0).
+The Feedback Hub app allows reporting to Microsoft of any problems encountered while using Windows. It also allows sending suggestions to Microsoft on how to improve the Windows experience. Previously, the Feedback Hub could only be used through the Windows Insider Program. Now anyone can use this tool. The Feedback Hub app can be downloaded from the [Microsoft Store](https://www.microsoft.com/store/p/feedback-hub/9nblggh4r32n?SilentAuth=1&wa=wsignin1.0).
 
-The Feedback Hub requires Windows 10. If you're having problems upgrading from an older version of Windows to Windows 10, you can use the Feedback Hub to submit this information. However, you must collect the log files from the legacy operating system and then attach these files to your feedback using a device that is running Windows 10. If you're upgrading to Windows 10 from a previous version of Windows 10, the Feedback Hub will collect log files automatically.
+The Feedback Hub requires a currently supported version of Windows. The Feedback Hub can be used to submit information to Microsoft if problems are encountered while upgrading Windows. If upgrading to a currently supported version of Windows from a previous version that's Windows 10 or newer, the Feedback Hub automatically collects log files. For operating systems prior to Windows 10 that don't support the Feedback Hub, the log files must be manually collected. The log files can then be attached to the feedback item using a device that is running a currently supported version of Windows that supports the Feedback Hub.
 
 ## Submit feedback
 
-To submit feedback about a failed Windows 10 upgrade, select the following link: [Feedback Hub](feedback-hub://?referrer=resolveUpgradeErrorsPage&tabid=2&contextid=81&newFeedback=true&feedbackType=2&topic=submit-errors.md) 
+To submit feedback about a failed Windows upgrade, open the [Feedback Hub](feedback-hub://?referrer=resolveUpgradeErrorsPage&tabid=2&contextid=81&newFeedback=true&feedbackType=2&topic=submit-errors.md).
 
-The Feedback Hub will open.
+In the Feedback Hub, fill out all four sections with as much detail as possible:
 
-- Under **Tell us about it**, and then under **Summarize your issue**, type **Upgrade failing**.
-- Under **Give us more detail**, provide additional information about the failed upgrade, such as:
-    - When did the failure occur?
-        - Were there any reboots?
-        - How many times did the system reboot?
-    - How did the upgrade fail?
-        - Were any error codes visible?
-        - Did the computer fail to a blue screen?
-        - Did the computer automatically rollback or did it hang, requiring you to power cycle it before it rolled back?
-- Additional details
-    - What type of security software is installed?
-    - Is the computer up to date with latest drivers and firmware?
-    - Are there any external devices connected? 
-- If you used the link above, the category and subcategory will be automatically selected. If it isn't selected, choose **Install and Update** and **Windows Installation**. 
+1. **Enter your feedback**
+1. **Choose a category**
+1. **Find similar feedback**
+1. **Add more details**
 
-You can attach a screenshot or file if desired. This is optional, but can be helpful when diagnosing your upgrade issue. The location of these files is described here: [Windows Setup log files and event logs](/windows-hardware/manufacture/desktop/windows-setup-log-files-and-event-logs).
+Recommended information that can be included under the **Add more details** section include:
 
-Select **Submit** to send your feedback.
+- When did the failure occur?
+  - Were there any reboots?
+  - How many times did the system reboot?
+- How did the upgrade fail?
+  - Were any error codes visible?
+  - Did the computer fail to a blue screen?
+  - Did the computer automatically rollback or did it hang, requiring the computer to be power cycled before it rolled back?
+- What type of security software is installed?
+- Is the computer up to date with latest drivers and firmware?
+- Are there any external devices connected?
 
-See the following example:
+Using the **Attach a screenshot** and **Attach a file** options allows screenshots or files to be included as part of the feedback item. Attachments and screenshots are optional, but can be helpful when diagnosing the upgrade issue. For example, log files can be included as attachments to the feedback item. The location of the Windows upgrade log files is described in the article [Windows Setup log files and event logs](/windows-hardware/manufacture/desktop/windows-setup-log-files-and-event-logs).
 
-![feedback example.](../images/feedback.png) 
+Finally the **Recreate my problem** option can be used to potentially send additional data and logs for Microsoft to evaluate.
 
-After you select Submit, that's all you need to do. Microsoft will receive your feedback and begin analyzing the issue.  You can check on your feedback periodically to see what solutions have been provided.
+Once all the feedback items are completed, select the **Submit** button to send the feedback. Microsoft receives the feedback and begins analyzing the issue. The submitted feedback can be checked on periodically to see what solutions are provided.
 
-## Link to your feedback
+## Link to the feedback
 
-After your feedback is submitted, you can email or post links to it by opening the Feedback Hub, clicking My feedback at the top, clicking the feedback item you submitted, clicking **Share**, then copying the short link that is displayed.
+After the feedback is submitted, additional information and items can be added to the feedback item. To do so:
 
-![share.](../images/share.jpg) 
+1. Open the [Feedback Hub](feedback-hub:).
+1. At the top of the Feedback Hub, select **My feedback**.
+1. Select the feedback item that was submitted.
+1. Select **Share**.
+1. Copy and then use the short link that is displayed.
+
+:::image type="content" alt-text="Share example." source="../images/share.jpg":::
 
 ## Related articles
-
-[Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx)

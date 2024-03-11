@@ -1,14 +1,7 @@
 ---
 title: DevicePreparation DDF file
 description: View the XML file containing the device description framework (DDF) for the DevicePreparation configuration service provider.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 12/06/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -47,7 +40,7 @@ The following XML file contains the device description framework (DDF) for the D
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -115,6 +108,83 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:ValueDescription>ExitOnFailure</MSFT:ValueDescription>
           </MSFT:Enum>
         </MSFT:AllowedValues>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>PageErrorPhase</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <Description>This node provides the specific phase that failed during the Device Preparation page.  Values are an enum: 0 = Unknown; 1 = AgentDownload;  2 = AgentProgress.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Unknown</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>AgentDownload</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>2</MSFT:Value>
+            <MSFT:ValueDescription>AgentProgress</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>PageErrorCode</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <Description>This node provides specific overall HRESULT causing a fatal error on the Device Preparation page.  This node is valid only if the PageErrorPhase node's value is not Unknown.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>PageErrorDetails</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <Description>This node provides optional details for any fatal error on the Device Preparation page.  This node is valid only if the PageErrorPhase node's value is not Unknown, but not all errors will have details.</Description>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
       </DFProperties>
     </Node>
     <Node>

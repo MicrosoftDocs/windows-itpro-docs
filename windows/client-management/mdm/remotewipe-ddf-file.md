@@ -1,14 +1,7 @@
 ---
 title: RemoteWipe DDF file
 description: View the XML file containing the device description framework (DDF) for the RemoteWipe configuration service provider.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 02/17/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->

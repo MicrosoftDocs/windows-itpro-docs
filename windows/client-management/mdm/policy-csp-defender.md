@@ -1,14 +1,7 @@
 ---
 title: Defender Policy CSP
 description: Learn more about the Defender Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 12/08/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -719,7 +712,9 @@ Allows or disallows Windows Defender Realtime Monitoring functionality.
 
 <!-- AllowScanningNetworkFiles-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-This policy setting allows you to configure real-time scanning for files that are accessed over the network. It is recommended to enable this setting.
+This policy setting allows you to configure scheduled scans and on-demand (manually initiated) scans for files that are accessed over the network. It is recommended to enable this setting.
+>[!NOTE]
+> Real-time protection (on-access) scanning is not impacted by this policy.  
 
 - If you enable this setting or do not configure this setting, network files will be scanned.
 - If you disable this setting, network files will not be scanned.

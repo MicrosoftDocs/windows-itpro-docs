@@ -1,8 +1,8 @@
 ---
 title: Diagnostic Data Viewer Overview (Windows 10 and Windows 11)
 description: Use this article to use the Diagnostic Data Viewer application to review the diagnostic data sent to Microsoft by your device.
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown

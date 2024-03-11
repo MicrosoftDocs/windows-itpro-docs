@@ -1,24 +1,11 @@
 ---
 title: Using UE-V with Application Virtualization applications
 description: Learn how to use User Experience Virtualization (UE-V) with Microsoft Application Virtualization (App-V).
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
-ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
+ms.date: 1/25/2024
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
-
 # Using UE-V with Application Virtualization applications
-
-**Applies to**
--   Windows 10, version 1607
 
 User Experience Virtualization (UE-V) supports Microsoft Application Virtualization (App-V) applications without any required modifications to either the App-V package or the UE-V template. However, another step is required because you can't run the UE-V template generator directly on a virtualized App-V application. Instead, you must install the application locally, generate the template, and then apply the template to the virtualized application. UE-V supports App-V for Windows 10 packages and App-V 5.0 packages.
 
@@ -28,16 +15,15 @@ UE-V monitors when an application opens by the program name and, optionally, by 
 
  **To implement settings synchronization for a virtualized application**
 
-1.  Run the UE-V template generator to collect the settings of the locally installed application whose settings you want to synchronize between computers. This process creates a settings location template. If you use a built-in template such as a Microsoft Office template, skip this step. For more information about using the UE-V template generator, see [Deploy UE-V for custom applications](uev-deploy-uev-for-custom-applications.md).
+1. Run the UE-V template generator to collect the settings of the locally installed application whose settings you want to synchronize between computers. This process creates a settings location template. If you use a built-in template such as a Microsoft Office template, skip this step. For more information about using the UE-V template generator, see [Deploy UE-V for custom applications](uev-deploy-uev-for-custom-applications.md).
+1. Install the App-V application package if you haven't already done so.
 
-2.  Install the App-V application package if you haven't already done so.
-
-3.  Publish the template to the location of your settings template catalog or manually install the template by using the `Register-UEVTemplate` Windows PowerShell cmdlet.
+1. Publish the template to the location of your settings template catalog or manually install the template by using the `Register-UEVTemplate` Windows PowerShell cmdlet.
 
     > [!NOTE]
     > If you publish the newly created template to the settings template catalog, the client does not receive the template until the sync provider updates the settings. To manually start this process, open **Task Scheduler**, expand **Task Scheduler Library**, expand **Microsoft**, and expand **UE-V**. In the results pane, right-click **Template Auto Update**, and then click **Run**.
 
-4.  Start the App-V package.
+1. Start the App-V package.
 
 ## Related topics
 

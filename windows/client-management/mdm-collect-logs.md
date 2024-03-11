@@ -1,7 +1,7 @@
 ---
 title: Collect MDM logs
 description: Learn how to collect MDM logs. Examining these logs can help diagnose enrollment or device management issues in Windows devices managed by an MDM server.
-ms.topic: article
+ms.topic: conceptual
 ms.date: 08/10/2023
 ms.collection:
 - highpri

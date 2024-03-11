@@ -1,8 +1,8 @@
 ---
 title: Requirements for MCC for Enterprise and Education
 description: Overview of prerequisites and recommendations for using Microsoft Connected Cache (MCC) for Enterprise and Education.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.author: carmenf
 author: cmknox

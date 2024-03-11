@@ -7,9 +7,13 @@ brand: m365
 metadata:
   title: Windows Privacy
   description: Learn about how privacy is managed in Windows.
-  ms.prod: windows-client
+  ms.service: windows-client
+  ms.subservice: itpro-privacy
   ms.topic: hub-page # Required
-  ms.collection: highpri
+  ms.collection:
+  - highpri
+  - essentials-privacy
+  - privacy-windows
   author: DHB-MSFT
   ms.author: danbrown
   manager: laurawi
@@ -49,7 +53,7 @@ productDirectory:
     - title: Windows 10 required diagnostic data
       imageSrc: /media/common/i_build.svg
       summary: See what changes Windows is making to align to the new data collection taxonomy
-      url: required-windows-diagnostic-data-events-and-fields-2004.md  
+      url: required-windows-diagnostic-data-events-and-fields-2004.md
     # Card
     - title: Optional diagnostic data
       imageSrc: /media/common/i_get-started.svg
@@ -165,7 +169,7 @@ additionalContent:
             - text: Manage Windows 10 connection endpoints
               url: ./manage-windows-2004-endpoints.md
             - text: Manage connection endpoints for non-Enterprise editions of Windows 10
-              url: windows-endpoints-2004-non-enterprise-editions.md 
+              url: windows-endpoints-2004-non-enterprise-editions.md
             - text: Manage connections from Windows to Microsoft services
               url: manage-connections-from-windows-operating-system-components-to-microsoft-services.md
         # Card

@@ -4,12 +4,12 @@ description: Learn how to install Volume Activation Management Tool (VAMT) as pa
 ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.localizationpriority: medium
 ms.date: 10/13/2023
 ms.topic: article
-ms.technology: itpro-fundamentals
+ms.subservice: itpro-fundamentals
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>

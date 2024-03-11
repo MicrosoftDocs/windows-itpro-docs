@@ -2,8 +2,8 @@
 title: Delivery Optimization data in reports
 titleSuffix: Windows Update for Business reports
 description: This article provides information about Delivery Optimization data in Windows Update for Business reports. 
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart
@@ -164,7 +164,7 @@ There are many Microsoft [content types](waas-delivery-optimization.md#types-of-
 ## Frequency Asked Questions
 
 - **What time period does the Delivery Optimization data include?**
-Data is generated/aggregated for the last 28 days for active devices.
+Data is generated/aggregated for the last 28 days for active devices. For Delivery Optimization data to register in the report, the device must have performed some Delivery Optimization action in the 28-day rolling window. This includes device configuration information. 
 
 - **Data is showing as 'Unknown', what does that mean?**
 You may see data in the report listed as 'Unknown'. This status indicates that the Delivery Optimization DownloadMode setting is either invalid or empty.

@@ -1,55 +1,39 @@
 ---
-title: Create a provisioning package with multivariant settings (Windows 10/11)
+title: Create a provisioning package with multivariant settings
 description: Create a provisioning package with multivariant settings to customize the provisioned settings for defined conditions.
-ms.prod: windows-client
-author: lizgt2000
 ms.topic: article
-ms.localizationpriority: medium
-ms.reviewer: gkomatsu
-manager: aaroncz
-ms.author: lizlong
-ms.technology: itpro-configure
 ms.date: 12/31/2017
 ---
 
 # Create a provisioning package with multivariant settings
 
-
-**Applies to**
-
--   Windows 10
--   Windows 11
-
-
-In your organization, you might have different configuration requirements for devices that you manage. You can create separate provisioning packages for each group of devices in your organization that have different requirements. Or, you can create a multivariant provisioning package, a single provisioning package that can work for multiple conditions. For example, in a single provisioning package, you can define one set of customization settings that will apply to devices set up for French and a different set of customization settings for devices set up for Japanese. 
+In your organization, you might have different configuration requirements for devices that you manage. You can create separate provisioning packages for each group of devices in your organization that have different requirements. Or, you can create a multivariant provisioning package, a single provisioning package that can work for multiple conditions. For example, in a single provisioning package, you can define one set of customization settings that will apply to devices set up for French and a different set of customization settings for devices set up for Japanese.
 
 To provision multivariant settings, you use Windows Configuration Designer to create a provisioning package that contains all of the customization settings that you want to apply to any of your devices. Next, you manually edit the .XML file for that project to define each set of devices (a **Target**). For each **Target**, you specify at least one **Condition** with a value, which identifies the devices to receive the configuration. Finally, for each **Target**, you provide the customization settings to be applied to those devices.
 
 Let's begin by learning how to define a **Target**.
 
-
 ## Define a target
 
 In the XML file, you provide an **Id**, or friendly name, for each **Target**. Each **Target** is defined by at least one **TargetState** which contains at least one **Condition**. A **Condition** element defines the matching type between the condition and the specified value.
 
-A **Target** can have more than one **TargetState**, and a **TargetState** can have more than one **Condition**. 
+A **Target** can have more than one **TargetState**, and a **TargetState** can have more than one **Condition**.
 
-![Target with multiple target states and conditions.](../images/multi-target.png)
+![Target with multiple target states and conditions.](images/multi-target.png)
 
 The following information describes the logic for the target definition:
 
 - When all **Condition** elements are TRUE, **TargetState** is TRUE:
 
-  :::image type="content" source="../images/icd-multi-targetstate-true.png" alt-text="Target state is true when all conditions are true.":::
+  :::image type="content" source="images/icd-multi-targetstate-true.png" alt-text="Target state is true when all conditions are true.":::
 
 - If any of the **TargetState** elements is TRUE, **Target** is TRUE, and the **ID** can be used for setting customizations:
 
-  :::image type="content" source="../images/icd-multi-target-true.png" alt-text="Target is true if any target state is true":::
+  :::image type="content" source="images/icd-multi-target-true.png" alt-text="Target is true if any target state is true":::
 
 ### Conditions
 
 The following table shows the conditions supported in Windows client provisioning for a **TargetState**:
-
 
 | Condition Name | Condition priority | Windows client for desktop editions | Value type | Value description |
 | --- | --- | --- | --- | --- |
@@ -59,7 +43,7 @@ The following table shows the conditions supported in Windows client provisionin
 | PNN | P0 |  Supported | String | Use to target settings based on public land mobile network (PLMN) Network Name value. |
 | GID1 | P0 | Supported | Digit string | Use to target settings based on the Group Identifier (level 1) value. |
 | ICCID | P0 | Supported | Digit string | Use to target settings based on the Integrated Circuit Card Identifier (ICCID) value. |
-| Roaming | P0 | N/A | Boolean | Use to specify roaming. Set the value to **1** (roaming) or **0** (non-roaming). | 
+| Roaming | P0 | N/A | Boolean | Use to specify roaming. Set the value to **1** (roaming) or **0** (non-roaming). |
 | UICC | P0 | N/A | Enumeration | Use to specify the Universal Integrated Circuit Card (UICC) state. Set the value to one of the following:</br></br></br>- 0 - Empty</br>- 1 - Ready</br>- 2 - Locked |
 | UICCSLOT | P0 | N/A | Digit string | Use to specify the UICC slot. Set the value one of the following:</br></br></br>- 0 - Slot 0</br>- 1 - Slot 1 |
 | ProcessorType | P1 | Supported | String | Use to target settings based on the processor type. |
@@ -72,7 +56,6 @@ The following table shows the conditions supported in Windows client provisionin
 | Region | P1 | Supported | Enumeration | Use to target settings based on country/region, using the 2-digit alpha ISO code per [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). |
 | Lang | P1 | Supported | Enumeration | Use to target settings based on language code, using the 2-digit [ISO 639 alpha-2 code](https://en.wikipedia.org/wiki/ISO_639).  |
 
-
 The matching types supported in Windows client are:
 
 | Matching type | Syntax | Example |
@@ -80,11 +63,11 @@ The matching types supported in Windows client are:
 | Straight match | Matching type is specified as-is | &lt;Condition Name="ProcessorName" Value="Barton" /&gt; |
 | Regular expression (Regex) match | Matching type is prefixed by "Pattern:" | &lt;Condition Name="ProcessorName" Value="Pattern:.*Celeron.*" /&gt; |
 | Numeric range match | Matching type is prefixed by "!Range:" | &lt;Condition Name="MNC" Value="!Range:400, 550" /&gt; |
- 
+
 
 ### TargetState priorities
 
-You can define more than one **TargetState** within a provisioning package to apply settings to devices that match device conditions. When the provisioning engine evaluates each **TargetState**, more than one **TargetState** may fit current device conditions. To determine the order in which the settings are applied, the system assigns a priority to every **TargetState**. 
+You can define more than one **TargetState** within a provisioning package to apply settings to devices that match device conditions. When the provisioning engine evaluates each **TargetState**, more than one **TargetState** may fit current device conditions. To determine the order in which the settings are applied, the system assigns a priority to every **TargetState**.
 
 A setting that matches a **TargetState** with a lower priority is applied before the setting that matches a **TargetState** with a higher priority. This means that a setting for the **TargetState** with the higher priority can overwrite a setting for the **TargetState** with the lower priority.
 
@@ -94,13 +77,13 @@ The **TargetState** priority is assigned based on the condition's priority (see 
 
 1. A **TargetState** with P0 conditions is higher than a **TargetState** without P0 conditions.
 
-2. A **TargetState** with both P0 and P1 conditions is higher than a **TargetState** with only P0 conditions.
+1. A **TargetState** with both P0 and P1 conditions is higher than a **TargetState** with only P0 conditions.
 
-2. A **TargetState** with a greater number of matched P0 conditions is higher than **TargetState** with fewer matched P0 conditions, regardless of the number of P1 conditions matched.
+1. A **TargetState** with a greater number of matched P0 conditions is higher than **TargetState** with fewer matched P0 conditions, regardless of the number of P1 conditions matched.
 
-2. If the number of P0 conditions matched are equivalent, then the **TargetState** with the most matched P1 conditions has higher priority.
+1. If the number of P0 conditions matched are equivalent, then the **TargetState** with the most matched P1 conditions has higher priority.
 
-3. If both P0 and P1 conditions are equally matched, then the **TargetState** with the greatest total number of matched conditions has highest priority.
+1. If both P0 and P1 conditions are equally matched, then the **TargetState** with the greatest total number of matched conditions has highest priority.
 
 
 
@@ -108,14 +91,13 @@ The **TargetState** priority is assigned based on the condition's priority (see 
 
 Follow these steps to create a provisioning package with multivariant capabilities.
 
-
 1. Build a provisioning package and configure the customizations you want to apply during certain conditions. For more information, see [Create a provisioning package](provisioning-create-package.md).
 
-2. After you've [configured the settings](provisioning-create-package.md#configure-settings), save the project.
+1. After you've [configured the settings](provisioning-create-package.md#configure-settings), save the project.
 
-3. Open the project folder and copy the customizations.xml file to any local location. 
+1. Open the project folder and copy the customizations.xml file to any local location.
 
-4. Use an XML or text editor to open the customizations.xml file.
+1. Use an XML or text editor to open the customizations.xml file.
 
     The customizations.xml file holds the package metadata (including the package owner and rank) and the settings that you configured when you created your provisioning package. The **Customizations** node of the file contains a **Common** section, which contains the customization settings.
 
@@ -145,13 +127,15 @@ Follow these steps to create a provisioning package with multivariant capabiliti
          </Common>
        </Customizations>
      </Settings>
-   </WindowsCustomizations> 
+   </WindowsCustomizations>
+
     ```
 
-5. Edit the customizations.xml file to create a **Targets** section to describe the conditions that will handle your multivariant settings. 
+1. Edit the customizations.xml file to create a **Targets** section to describe the conditions that will handle your multivariant settings.
 
     The following example shows the customizations.xml, which has been modified to include several conditions including **ProcessorName**, **ProcessorType**, **MCC**, and **MNC**.
-    
+
+
     ```XML
    <?xml version="1.0" encoding="utf-8"?>
    <WindowsCustomizations>
@@ -194,14 +178,16 @@ Follow these steps to create a provisioning package with multivariant capabiliti
          </Targets>
        </Customizations>
      </Settings>
-   </WindowsCustomizations> 
+   </WindowsCustomizations>
+
     ```
 
-6. In the customizations.xml file, create a **Variant** section for the settings you need to customize. To do this:
+1. In the customizations.xml file, create a **Variant** section for the settings you need to customize. To do this:
 
     a. Define a child **TargetRefs** element.
-    
-    b. Within the **TargetRefs** element, define a **TargetRef** element. You can define multiple **TargetRef** elements for each **Id** that you need to apply to customized settings. 
+
+
+    b. Within the **TargetRefs** element, define a **TargetRef** element. You can define multiple **TargetRef** elements for each **Id** that you need to apply to customized settings.
 
     c. Move compliant settings from the **Common** section to the **Variant** section.
 
@@ -262,27 +248,27 @@ Follow these steps to create a provisioning package with multivariant capabiliti
          </Variant>
        </Customizations>
      </Settings>
-   </WindowsCustomizations> 
+   </WindowsCustomizations>
+
     ```
 
-7. Save the updated customizations.xml file and note the path to this updated file. You will need the path as one of the values for the next step.
+1. Save the updated customizations.xml file and note the path to this updated file. You will need the path as one of the values for the next step.
 
-
-8. Use the [Windows Configuration Designer command-line interface](provisioning-command-line.md) to create a provisioning package using the updated customizations.xml. 
+1. Use the [Windows Configuration Designer command-line interface](provisioning-command-line.md) to create a provisioning package using the updated customizations.xml.
 
     For example:
 
     ```
     icd.exe /Build-ProvisioningPackage /CustomizationXML:"C:\CustomProject\customizations.xml" /PackagePath:"C:\CustomProject\output.ppkg" /StoreFile:C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\Microsoft-Common-Provisioning.dat"
     ```
-    
 
-In this example, the **StoreFile** corresponds to the location of the settings store that will be used to create the package for the required Windows edition. 
+
+In this example, the **StoreFile** corresponds to the location of the settings store that will be used to create the package for the required Windows edition.
 
 >[!NOTE]
 >The provisioning package created during this step will contain the multivariant settings. You can use this package either as a standalone package that you can apply to a Windows device or use it as the base when starting another project.
 
- 
+
 
 ## Events that trigger provisioning
 
@@ -291,14 +277,15 @@ When you install the multivariant provisioning package on a Windows client devic
 The following events trigger provisioning on Windows client devices:
 
 | Event | Windows client for desktop editions |
-| --- | --- | 
+| --- | --- |
 | System boot | Supported |
 | Operating system update | Planned |
 | Package installation during device first run experience | Supported |
 | Detection of SIM presence or update | Supported |
 | Package installation at runtime | Supported |
 | Roaming detected | Not supported |
- 
+
+
 ## Related articles
 
 - [Provisioning packages for Windows client](provisioning-packages.md)

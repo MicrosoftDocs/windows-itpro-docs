@@ -1,16 +1,8 @@
 ---
-title: Cellular (Windows 10)
-ms.reviewer: 
-manager: aaroncz
+title: Cellular
 description: This section describes the Cellular settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
 ms.topic: reference
-ms.collection: must-keep
-ms.technology: itpro-configure
-ms.date: 12/31/2017
+ms.date: 01/25/2024
 ---
 
 # Cellular (Windows Configuration Designer reference)
@@ -23,8 +15,8 @@ Use to configure settings for cellular connections.
 ## Applies to
 
 | Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: |
-| All settings | ✔️ |  |  |  |
+|--|:-:|:-:|:-:|:-:|
+| All settings | ✅ |  |  |  |
 
 ## PerDevice
 
@@ -62,7 +54,6 @@ Enter a customized string for the appropriate [data class](/windows/desktop/api/
 
 Enter a comma-separated list of mobile country code (MCC) and mobile network code (MCC) pairs (MCC:MNC).
 
-
 ### SignalBarMappingTable
 
 >[!NOTE]
@@ -71,12 +62,11 @@ Enter a comma-separated list of mobile country code (MCC) and mobile network cod
 Use the **SignalBarMappingTable** settings to customize the number of bars displayed based on signal strength. Set a signal strength minimum for each bar number.
 
 1. Expand **SignalBarMappingTable**, select a bar number in **SignalForBars**, and select **Add**.
-2. Select the signal bar number in **Available customizations**, and enter a minimum signal strength value, between 0 and 31.
+1. Select the signal bar number in **Available customizations**, and enter a minimum signal strength value, between 0 and 31.
 
 ### SIMBlockList
 
 Enter a comma-separated list of mobile country code (MCC) and mobile network code (MCC) pairs (MCC:MNC).
-
 
 ### UseBrandingNameOnRoaming
 

@@ -2,8 +2,8 @@
 title: UCClientUpdateStatus data schema
 titleSuffix: Windows Update for Business reports
 description: UCClientUpdateStatus schema for Windows Update for Business reports. UCClientUpdateStatus combines the latest client-based data with the latest service data.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart

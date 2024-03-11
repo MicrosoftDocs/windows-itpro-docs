@@ -1,13 +1,6 @@
 ---
 title: Configuration service provider DDF files
 description: Learn more about the OMA DM device description framework (DDF) for various configuration service providers
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-ms.topic: reference
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.date: 09/18/2020
 ms.collection:
   - highpri

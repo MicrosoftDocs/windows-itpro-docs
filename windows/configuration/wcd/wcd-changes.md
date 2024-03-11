@@ -1,16 +1,8 @@
 ---
-title: Changes to settings in Windows Configuration Designer (Windows 10)
-ms.reviewer: 
-manager: aaroncz
+title: Changes to settings in Windows Configuration Designer
 description: This section describes the changes to settings in Windows Configuration Designer in Windows 10, version 1809.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
 ms.topic: reference
-ms.collection: must-keep
-ms.technology: itpro-configure
-ms.date: 12/31/2017
+ms.date: 01/25/2024
 ---
 
 # Changes to settings in Windows Configuration Designer
@@ -32,7 +24,6 @@ ms.date: 12/31/2017
 
 ## Settings added in Windows 10, version 1809
 
-
 - [Browser > AllowPrelaunch](wcd-browser.md#allowprelaunch)
 - [Browser > FavoriteBarItems](wcd-browser.md#favoritebaritems)
 - [Cellular > SignalBarMappingTable](wcd-cellular.md#signalbarmappingtable)
@@ -40,61 +31,59 @@ ms.date: 12/31/2017
 - [Location](wcd-location.md)
 - [Policies > ApplicationManagement > LaunchAppAfterLogOn](wcd-policies.md#applicationmanagement)
 - [Policies > Authentication:](wcd-policies.md#authentication)
-    - EnableFastFirstSignin
-    - EnableWebSignin
-    - PreferredAadTenantDomainName
+  - EnableFastFirstSignin
+  - EnableWebSignin
+  - PreferredAadTenantDomainName
 - [Policies > Browser:](wcd-policies.md#browser)
-    - AllowFullScreenMode
-    - AllowPrelaunch
-    - AllowPrinting
-    - AllowSavingHistory
-    - AllowSideloadingOfExtensions
-    - AllowTabPreloading
-    - AllowWebContentOnNewTabPage
-    - ConfigureFavoritesBar
-    - ConfigureHomeButton
-    - ConfigureKioskMode
-    - ConfigureKioskResetAfterIdleTimer
-    - ConfigureOpenMicrosoftEdgeWith
-    - ConfigureTelemetryForMicrosoft365
-    - FirstRunURL
-    - PreventCertErrorOverrides 
-    - PreventTurningOffRequiredExtensions
-    - SetHomeButtonURL
-    - SetNewTabPageURL
-    - UnlockHomeButton
+  - AllowFullScreenMode
+  - AllowPrelaunch
+  - AllowPrinting
+  - AllowSavingHistory
+  - AllowSideloadingOfExtensions
+  - AllowTabPreloading
+  - AllowWebContentOnNewTabPage
+  - ConfigureFavoritesBar
+  - ConfigureHomeButton
+  - ConfigureKioskMode
+  - ConfigureKioskResetAfterIdleTimer
+  - ConfigureOpenMicrosoftEdgeWith
+  - ConfigureTelemetryForMicrosoft365
+  - FirstRunURL
+  - PreventCertErrorOverrides
+  - PreventTurningOffRequiredExtensions
+  - SetHomeButtonURL
+  - SetNewTabPageURL
+  - UnlockHomeButton
 - [Policies > DeliveryOptimization:](wcd-policies.md#deliveryoptimization)
-    - DODelayBackgroundDownloadFromHttp
-    - DODelayForegroundDownloadFromHttp
-    - DOGroupIdSource
-    - DOPercentageMaxBackDownloadBandwidth
-    - DOPercentageMaxForeDownloadBandwidth
-    - DORestrictPeerSelectionsBy
-    - DOSetHoursToLimitBackgroundDownloadBandwidth
-    - DOSetHoursToLimitForegroundDownloadBandwidth
+  - DODelayBackgroundDownloadFromHttp
+  - DODelayForegroundDownloadFromHttp
+  - DOGroupIdSource
+  - DOPercentageMaxBackDownloadBandwidth
+  - DOPercentageMaxForeDownloadBandwidth
+  - DORestrictPeerSelectionsBy
+  - DOSetHoursToLimitBackgroundDownloadBandwidth
+  - DOSetHoursToLimitForegroundDownloadBandwidth
 - [Policies > KioskBrowser](wcd-policies.md#kioskbrowser) > EnableEndSessionButton
 - [Policies > Search](wcd-policies.md#search) > DoNotUseWebResults
 - [Policies > System:](wcd-policies.md#system)
-    - DisableDeviceDelete
-    - DisableDiagnosticDataViewer
+  - DisableDeviceDelete
+  - DisableDiagnosticDataViewer
 - [Policies > Update:](wcd-policies.md#update)
-    - AutoRestartDeadlinePeriodInDaysForFeatureUpdates
-    - EngagedRestartDeadlineForFeatureUpdates
-    - EngagedRestartSnoozeScheduleForFeatureUpdates
-    - EngagedRestartTransitionScheduleForFeatureUpdates
-    - ExcludeWUDriversInQualityUpdate
-    - SetDisablePauseUXAccess
-    - SetDisableUXWUAccess
-    - UpdateNotificationLevel
+  - AutoRestartDeadlinePeriodInDaysForFeatureUpdates
+  - EngagedRestartDeadlineForFeatureUpdates
+  - EngagedRestartSnoozeScheduleForFeatureUpdates
+  - EngagedRestartTransitionScheduleForFeatureUpdates
+  - ExcludeWUDriversInQualityUpdate
+  - SetDisablePauseUXAccess
+  - SetDisableUXWUAccess
+  - UpdateNotificationLevel
 - [UnifiedWriteFilter > OverlayFlags](wcd-unifiedwritefilter.md#overlayflags)
 - [UnifiedWriteFilter > ResetPersistentState](wcd-unifiedwritefilter.md#resetpersistentstate)
 - [WindowsHelloForBusiness](wcd-windowshelloforbusiness.md)
-
 
 ## Settings removed in Windows 10, version 1809
 
 - [CellCore](wcd-cellcore.md)
 - [Policies > Browser:](wcd-policies.md#browser)
-    - AllowBrowser
-    - PreventTabReloading
-
+  - AllowBrowser
+  - PreventTabReloading

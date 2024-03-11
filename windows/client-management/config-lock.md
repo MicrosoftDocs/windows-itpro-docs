@@ -1,7 +1,7 @@
 ---
 title: Secured-core configuration lock
 description: A secured-core PC (SCPC) feature that prevents configuration drift from secured-core PC features caused by unintentional misconfiguration.
-ms.topic: article
+ms.topic: conceptual
 ms.date: 08/10/2023
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

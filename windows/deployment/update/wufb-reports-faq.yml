@@ -3,13 +3,13 @@ metadata:
   title: Frequently Asked Questions (FAQ)
   titleSuffix: Windows Update for Business reports
   description: Answers to frequently asked questions about Windows Update for Business reports.
-  ms.prod: windows-client
-  ms.technology: itpro-updates
+  ms.service: windows-client
+  ms.subservice: itpro-updates
   ms.topic: faq
   manager: aaroncz
   author: mestew
   ms.author: mstewart
-  ms.date: 06/20/2023
+  ms.date: 01/26/2024
 title: Frequently Asked Questions about Windows Update for Business reports
 summary: |
   This article answers frequently asked questions about Windows Update for Business reports. <!--7760853-->
@@ -32,6 +32,7 @@ summary: |
   - [Why am I missing devices in reports?](#why-am-i-missing-devices-in-reports)
   - [What is the difference between OS version and target version?](#what-is-the-difference-between-os-version-and-target-version)
   - [Why are there multiple records for the same device?](#why-are-there-multiple-records-for-the-same-device)
+  - [Why are devices showing an unknown state?](#why-are-devices-showing-an-unknown-state)
   - [When should I use the UCClient, UCClientUpdateStatus, or UCUpdateAlert tables?](#when-should-i-use-the-ucclient--ucclientupdatestatus--or-ucupdatealert-tables)
   - [What is the difference between quality and security updates?](#what-is-the-difference-between-quality-and-security-updates)
   - [How do I confirm that devices are sending data?](#how-do-i-confirm-that-devices-are-sending-data)
@@ -108,7 +109,10 @@ sections:
           - **The workbook has limited the results**: The default limit for rows in Azure workbooks is set to 1000. This limit is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the three dots beside each component.
       - question: Why are there multiple records for the same device?
         answer: |
-          Devices have multiple records when the `UCClientUpdateStatus` or `UCClientServiceStatus` tables are queried. These tables contain multiple records because they have the history for all devices that have discovered applicable updates within the past 28 days. For example, it's possible that a device has discovered multiple security updates, each with different update states, at various times over the past 28 days. It's also possible that a device can be in multiple deployments, so multiple records are displayed.    
+          Devices have multiple records when the `UCClientUpdateStatus` or `UCClientServiceStatus` tables are queried. These tables contain multiple records because they have the history for all devices that have discovered applicable updates within the past 28 days. For example, it's possible that a device has discovered multiple security updates, each with different update states, at various times over the past 28 days. It's also possible that a device can be in multiple deployments, so multiple records are displayed.
+      - question: Why are devices showing an unknown state?
+        answer: |
+          An unknown client state is displayed if there isn't an update record for the device. This state can happen for many reasons, like the device not being active, not being able to scan Windows Update, or it doesn't currently have any update related activity occurring.                 
       - question: What is the difference between OS version and target version?
         answer: |
           The word *target* in data labels refers to the update version, build or KB the client intends to update to. Typically, the fields starting with *OS*, such as OSbuild and OSversion, represents what the device is currently running.

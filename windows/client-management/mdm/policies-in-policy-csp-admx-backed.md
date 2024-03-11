@@ -1,14 +1,7 @@
 ---
 title: ADMX-backed policies in Policy CSP
 description: Learn about the ADMX-backed policies in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 12/06/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -546,6 +539,8 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [HelpQualifiedRootDir_Comp](policy-csp-admx-help.md)
 - [RestrictRunFromHelp_Comp](policy-csp-admx-help.md)
 - [DisableHHDEP](policy-csp-admx-help.md)
+- [AllowChildProcesses](policy-csp-admx-help.md)
+- [HideChildProcessMessageBox](policy-csp-admx-help.md)
 
 ## ADMX_HelpAndSupport
 
@@ -2522,6 +2517,7 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [ConfigureRpcAuthnLevelPrivacyEnabled](policy-csp-printers.md)
 - [ConfigureIppPageCountsPolicy](policy-csp-printers.md)
 - [ConfigureRedirectionGuardPolicy](policy-csp-printers.md)
+- [ConfigureWindowsProtectedPrint](policy-csp-printers.md)
 
 ## RemoteAssistance
 
@@ -2593,6 +2589,10 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [EnhancedStorageDevices](policy-csp-storage.md)
 - [WPDDevicesDenyReadAccessPerDevice](policy-csp-storage.md)
 - [WPDDevicesDenyWriteAccessPerDevice](policy-csp-storage.md)
+
+## Sudo
+
+- [EnableSudo](policy-csp-sudo.md)
 
 ## System
 

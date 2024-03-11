@@ -3,7 +3,7 @@ title: Deploy AppLocker policies by using the enforce rules setting
 description: This article for IT professionals describes the steps to deploy AppLocker policies by using the enforcement setting method.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/19/2023
+ms.date: 01/03/2024
 ---
 
 # Deploy AppLocker policies by using the enforce rules setting

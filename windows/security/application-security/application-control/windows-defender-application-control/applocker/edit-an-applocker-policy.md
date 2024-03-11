@@ -3,7 +3,7 @@ title: Edit an AppLocker policy
 description: This article for IT professionals describes the steps required to modify an AppLocker policy.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/19/2023
+ms.date: 01/03/2024
 ---
 
 # Edit an AppLocker policy

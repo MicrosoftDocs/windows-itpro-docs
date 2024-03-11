@@ -1,27 +1,17 @@
 ---
 title: Administering UE-V with Windows PowerShell and WMI
 description: Learn how User Experience Virtualization (UE-V) provides Windows PowerShell cmdlets to help administrators perform various UE-V tasks.
-author: aczechowski
-ms.prod: windows-client
-ms.collection:
- - tier3
- - must-keep
-ms.date: 04/19/2017
-ms.reviewer: 
-manager: aaroncz
-ms.author: aaroncz
+ms.date: 1/25/2024
 ms.topic: article
-ms.technology: itpro-configure
 ---
 
 # Administering UE-V with Windows PowerShell and WMI
 
-**Applies to**
--   Windows 10, version 1607
-
 User Experience Virtualization (UE-V) provides Windows PowerShell cmdlets to help administrators perform various UE-V tasks. The following sections provide more information about using Windows PowerShell in UE-V.
 
-> **Note**&nbsp;&nbsp;Administering UE-V with Windows PowerShell requires PowerShell 3.0 or higher. For a complete list of UE-V cmdlets, see [User Experience Virtualization in Windows PowerShell](/powershell/module/uev/).
+> [!NOTE]
+>
+> Administering UE-V with Windows PowerShell requires PowerShell 3.0 or higher. For a complete list of UE-V cmdlets, see [User Experience Virtualization in Windows PowerShell](/powershell/module/uev/).
 
 ## Managing the UE-V service and packages by using Windows PowerShell and WMI
 
@@ -31,17 +21,6 @@ You can use Windows PowerShell and Windows Management Instrumentation (WMI) to m
 
 ## Managing UE-V settings location templates by using Windows PowerShell and WMI
 
-
 After you create and deploy UE-V settings location templates, you can manage those templates by using Windows PowerShell or WMI. The following topic describes how to manage the settings location templates by using Windows PowerShell and WMI.
 
 [Managing UE-V Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md)
-
-
-
-
-
-## Related topics
-
-- [Administering UE-V](uev-administering-uev.md)
-
-- [User Experience Virtualization in Windows PowerShell](/powershell/module/uev/)

@@ -1,14 +1,7 @@
 ---
 title: InternetExplorer Policy CSP
 description: Learn more about the InternetExplorer Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 10/03/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -3666,17 +3659,7 @@ If you disable, or don't configure this policy, all sites are opened using the c
 <!-- DisableProcessesInEnhancedProtectedMode-OmaUri-End -->
 
 <!-- DisableProcessesInEnhancedProtectedMode-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting determines whether Internet Explorer 11 uses 64-bit processes (for greater security) or 32-bit processes (for greater compatibility) when running in Enhanced Protected Mode on 64-bit versions of Windows.
-
-> [!IMPORTANT]
-> Some ActiveX controls and toolbars may not be available when 64-bit processes are used.
-
-- If you enable this policy setting, Internet Explorer 11 will use 64-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows.
-
-- If you disable this policy setting, Internet Explorer 11 will use 32-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows.
-
-- If you don't configure this policy setting, users can turn this feature on or off using Internet Explorer settings. This feature is turned off by default.
+<!-- Description-Source-Not-Found -->
 <!-- DisableProcessesInEnhancedProtectedMode-Description-End -->
 
 <!-- DisableProcessesInEnhancedProtectedMode-Editable-Begin -->

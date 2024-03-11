@@ -1,7 +1,7 @@
 ---
 title: Bulk enrollment
 description: Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to reimage the devices.
-ms.topic: article
+ms.topic: conceptual
 ms.date: 08/10/2023
 ---
 
