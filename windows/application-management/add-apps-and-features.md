@@ -65,7 +65,7 @@ or
 
 ::: zone pivot="windows-11"
 
-To add a feature once the **System > Optional features** pane is open:
+Once the **System > Optional features** pane is open, add a feature with the following steps:
 
 1. Select the **View features** button next to **Add an optional feature**.
 
@@ -81,7 +81,7 @@ To add a feature once the **System > Optional features** pane is open:
 
 ::: zone pivot="windows-10"
 
-To add a feature once the **Optional features** pane is open:
+Once the **Optional features** pane is open, add a feature with the following steps:
 
 1. Select the **+** button next to **Add a feature**.
 
@@ -97,7 +97,7 @@ To add a feature once the **Optional features** pane is open:
 
 ::: zone pivot="windows-11"
 
-To remove a feature once the **System > Optional features** pane is open:
+Once the **System > Optional features** pane is open, remove a feature with the following steps:
 
 1. Under **Installed features**, search for the feature that needs to be removed in the **Search installed features** search box, or scroll through the list of installed features until the feature that needs to be removed is found.
 
@@ -105,7 +105,7 @@ To remove a feature once the **System > Optional features** pane is open:
 
 > [!NOTE]
 >
-> The navigation steps, UI elements, and UI text are based on the latest version of Windows 11 with the latest cumulative update installed. For the following versions of Windows 11 that are currently still supported:
+> The navigation steps, UI elements, and UI text in this section are based on the latest version of Windows 11 with the latest cumulative update installed. For the following versions of Windows 11 that are currently still supported:
 >
 > - Windows 11 21H2
 > - Windows 11 22H2 without the latest cumulative update installed
@@ -117,7 +117,7 @@ To remove a feature once the **System > Optional features** pane is open:
 
 ::: zone pivot="windows-10"
 
-To remove a feature once the **Optional features** pane is open:
+Once the **Optional features** pane is open, remove a feature with the following steps:
 
 1. Under **Installed features**, search for the feature that needs to be removed in the **Find an installed optional feature** search box, or scroll through the list of installed features until the feature that needs to be removed is found.
 
@@ -125,7 +125,7 @@ To remove a feature once the **Optional features** pane is open:
 
 > [!NOTE]
 >
-> The navigation steps, UI elements, and UI text are based on Windows 10 22H2 with the latest cumulative update installed. For the following versions of Windows 10 that are currently still supported:
+> The navigation steps, UI elements, and UI text in this section are based on Windows 10 22H2 with the latest cumulative update installed. For the following versions of Windows 10 that are currently still supported:
 >
 > - Windows 10 21H2
 > - Windows 10 22H2 without the latest cumulative update installed
