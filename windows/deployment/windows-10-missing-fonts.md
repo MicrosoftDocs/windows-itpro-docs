@@ -7,7 +7,7 @@ author: frankroj
 ms.author: frankroj
 manager: aaroncz
 ms.topic: article
-ms.date: 11/23/2022
+ms.date: 03/11/2024
 ms.subservice: itpro-deploy
 ---
 # How to add fonts that are missing after upgrading to Windows client
