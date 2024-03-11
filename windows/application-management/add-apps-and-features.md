@@ -4,12 +4,13 @@ description: Learn how to add Windows optional features using the Apps & feature
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.date: 08/18/2023
+ms.date: 03/11/2024
 ms.topic: how-to
 ms.service: windows-client
 ms.subservice: itpro-apps
 ms.localizationpriority: medium
 ms.collection: tier2
+zone_pivot_groups: windows-versions-11-10
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -17,54 +18,111 @@ appliesto:
 
 # Add or hide Windows features
 
-Windows includes optional features that aren't installed by default, but you can add later. These features are called [Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities), and can be installed at any time. Some of these features are language resources like language packs or handwriting support. On organization-owned devices, you can control access to these other features. You can use group policy or mobile device management (MDM) policies to hide the UI from users, or use Windows PowerShell to enable or disable specific features.
+Windows has optional features that aren't included by default, but you can add later. These features are called [Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities), and can be added at any time. Some of these features are language resources like language packs or handwriting support. On organization-owned devices, you can control access to these other features. You can use group policy or mobile device management (MDM) policies to hide the UI from users, or use Windows PowerShell to enable or disable specific features.
 
-## Use the Windows Settings app to add or uninstall features
+## Use the Windows Settings app to add or remove features
 
-### Windows 11
+Open the **Optional features** pane in the **Settings** app by selecting the following link:
 
-1. Open the Start menu and search for **Settings**.
+> [!div class="nextstepaction"]
+> [Optional features](ms-settings:optionalfeatures)
 
-1. In the Settings app, search for "optional" and select **Optional features**.
+or
 
-   > [!TIP]
-   > You can also use the following shortcut to open it directly: [`ms-settings:optionalfeatures`](ms-settings:optionalfeatures).
+1. Right-click on the **Start** menu and select **Run**.
 
-1. To add a feature:
+1. In the **Run** window, next to **Open:**, enter:
 
-    1. Select **View features** next to "Add an optional feature."
+   ```console
+   ms-settings:optionalfeatures
+   ```
 
-    1. Find the feature you want to add, like **XPS Viewer**. Select the box to add it. You can select multiple features.
+   and then select **OK**.
 
-    1. Select **Next**. Review the list of features you selected, and then select **Install** to add the selected features.
+or
 
-1. To uninstall a feature:
+::: zone pivot="windows-11"
 
-    1. Search for it in the list of **Installed features**.
+1. Right-click on the **Start** menu and select **Settings**.
 
-    1. Expand the section, and select **Uninstall**.
+1. In the left hand pane of the Settings app, select **System**.
 
-### Windows 10
+1. In the right hand pane under **System**, select **Optional features**.
 
-1. In the Search bar, search for "apps" and select **Apps and features**.
+To **add** a feature once the **System > Optional features** pane is open:
 
-1. Select **Optional features** > **Add a feature**.
+1. Select the **View features** button next to **Add an optional feature**.
 
-1. Select the feature you want to add, like **XPS Viewer**, and then select **Install.**
+1. In the **Add an optional feature** window that opens:
 
-When the installation completes, the feature is listed in **Apps & features**. In **Apps & features** > **Optional features** > **More Windows features**, there are more features that you and your users can install.
+    1. Find the desired feature to add and then select the box next to the feature to add it. Multiple features can be selected.
 
-To uninstall a feature, open the **Settings** app. Select the feature, and then select **Uninstall**.
+    1. Once all of the desired features are selected, select the **Next** button.
+
+    1. Review the selected list of features and then select the **Install** button to add the selected features.
+
+To **remove** a feature once the **System > Optional features** pane is open:
+
+1. Under **Installed features**, search for the feature that needs to be removed in the **Search installed features** search box, or scroll through the list of installed features until the feature that needs to be removed is found.
+
+1. Once the feature that needs to be removed is found, select the feature to expand it, and then select the **Uninstall** button.
+
+> [!NOTE]
+>
+> For the following currently supported versions of Windows 11:
+>
+> - Windows 11 21H2
+> - Windows 11 22H2 without the latest cumulative update installed
+> - Windows 11 23H2 without the latest cumulative update installed
+>
+> some of the navigation and UI elements might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page is located under **Settings** > **Apps** > **Apps & features**.
+
+::: zone-end
+
+::: zone pivot="windows-10"
+
+1. Right-click on the **Start** menu and select **Settings**.
+
+1. In the Settings app, select **System**.
+
+1. In the left hand pane, select **Optional features**.
+
+To **add** a feature once the **Optional features** pane is open:
+
+1. Select the **+** button next to **Add a feature**.
+
+1. In the **Add an optional feature** window that opens:
+
+    1. Find the desired feature to add and then select the box next to the feature to add it. Multiple features can be selected.
+
+    1. Once all of the desired features are selected, select the **Install** button.
+
+To **remove** a feature once the **Optional features** pane is open:
+
+1. Under **Installed features**, search for the feature that needs to be removed in the **Find an installed optional feature** search box, or scroll through the list of installed features until the feature that needs to be removed is found.
+
+1. Once the feature that needs to be removed is found, select the feature to expand it, and then select the **Uninstall** button.
+
+> [!NOTE]
+>
+> For the following currently supported versions of Windows 10:
+>
+> - Windows 10 21H2
+> - Windows 10 22H2 without the latest cumulative update installed
+>
+> some of the navigation and UI elements might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page is located under **Settings** > **Apps** > **Apps & features**.
+
+::: zone-end
 
 ## Use group policy or MDM policies to hide Windows features
 
-By default, the OS might show Windows features and allow users to install and uninstall these optional apps and features. To hide Windows features on your user devices, you can use group policy or an MDM provider like Microsoft Intune.
+By default, the OS might show Windows features and allow users to add and remove these optional apps and features. To hide Windows features on your user devices, you can use group policy or an MDM provider like Microsoft Intune.
 
 ### Group policy
 
-If you use group policy, use the `User Configuration\Administrative Template\Control Panel\Programs\Hide "Windows Features"` policy. By default, this policy may be set to **Not configured**, which means users can add or remove features. When this setting is **Enabled**, the settings page to add optional features is hidden on the device.
+If you use group policy, use the `User Configuration\Administrative Template\Control Panel\Programs\Hide "Windows Features"` policy. By default, this policy might be set to **Not configured**, which means users can add or remove features. When this setting is **Enabled**, the settings page to add optional features is hidden on the device.
 
-You can't use group policy to disable specific Windows features, such as XPS Viewer. If you want to disable specific features, use [Windows PowerShell](#use-windows-powershell-to-disable-specific-features).
+You can't use group policy to disable specific Windows features. If you want to disable specific features, use [Windows PowerShell](#use-windows-powershell-to-disable-specific-features).
 
 If you want to hide the entire **Apps** feature in the Settings app, use the `User Configuration\Administrative Template\Control Panel\Programs\Hide "Programs and Features" page` policy.
 
@@ -79,6 +137,7 @@ If you want to hide the entire **Apps** feature in the Settings app, you can use
 To disable specific features, use the Windows PowerShell [Disable-WindowsOptionalFeature](/powershell/module/dism/disable-windowsoptionalfeature) cmdlet.
 
 > [!NOTE]
+>
 > There isn't a group policy that disables specific Windows features.
 
 To automate disabling specific features, create a scheduled task to run a PowerShell script. For more information about Windows task scheduler, see [Task Scheduler for developers](/windows/win32/taskschd/task-scheduler-start-page).
@@ -87,12 +146,10 @@ Microsoft Intune can also run PowerShell scripts. For more information, see [Use
 
 To enable specific features, use the [Enable-WindowsOptionalFeature](/powershell/module/dism/enable-windowsoptionalfeature) cmdlet.
 
-Another useful PowerShell cmdlet is [Get-WindowsOptionalFeature](/powershell/module/dism/get-windowsoptionalfeature). Use this cmdlet to view information about optional features in the current OS or a mounted image. This cmdlet returns the current state of features, and whether a restart may be required when the state changes.
+Another useful PowerShell cmdlet is [Get-WindowsOptionalFeature](/powershell/module/dism/get-windowsoptionalfeature). Use this cmdlet to view information about optional features in the current OS or a mounted image. This cmdlet returns the current state of features, and whether a restart might be required when the state changes.
 
-## Related articles
+## Related content
 
-- [Features on Demand overview](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities)
-
-- [Available Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod)
-
-- [Language and region Features on Demand (FOD)](/windows-hardware/manufacture/desktop/features-on-demand-language-fod)
+- [Features on Demand overview](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities).
+- [Available Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod).
+- [Language and region Features on Demand (FOD)](/windows-hardware/manufacture/desktop/features-on-demand-language-fod).
