@@ -111,7 +111,7 @@ Once the **System > Optional features** pane is open, remove a feature with the 
 > - Windows 11 22H2 without the latest cumulative update installed
 > - Windows 11 23H2 without the latest cumulative update installed
 >
-> some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page might be located under **Settings** > **Apps** > **Apps & features**.
+> some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page might be located under **Settings** > **Apps**.
 
 ::: zone-end
 
