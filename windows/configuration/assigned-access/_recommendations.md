@@ -11,14 +11,11 @@ This article contains recommendations for devices configured with Assigned Acces
 
 ## Kiosk user account
 
-For kiosks devices located in public-facing environments, the recommendation is to use a user account with the least privileges, such as a local, standard user account. Using an Active Directory domain or Microsoft Entra user might allow an attacker to gain access to domain resources that are accessible to any domain account. When using domain accounts with assigned access, proceed with caution. Consider the domain resources potentially exposed by using a domain account.
+For kiosks devices located in public-facing environments, configure as a kiosk account a user account with the least privileges, such as a local, standard user account. Using an Active Directory user or Microsoft Entra user might allow an attacker to gain access to domain resources that are accessible to any domain accounts. When using domain accounts with assigned access, proceed with caution. Consider the domain resources potentially exposed by using a domain account.
 
 ### Automatic sign-in
 
-Consider enabling *automatic sign-in* for your kiosk device. When the device restarts, from an update or power outage, you can configure the device to sign in with the Assigned Access account automatically. Ensure that policy settings applied to the device don't prevent automatic sign in from working as expected.
-
-> [!NOTE]
-> The policy settings [PreferredAadTenantDomainName](/windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname), prevents automatic sign-in from working.
+Consider enabling *automatic sign-in* for your kiosk device. When the device restarts, from an update or power outage, you can configure the device to sign in with the Assigned Access account automatically. Ensure that policy settings applied to the device don't prevent automatic sign in from working as expected. For example, the policy settings [PreferredAadTenantDomainName](/windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname) prevents automatic sign-in from working.
 
 You can configure the Assigned Access and Shell Launcher XML files with an account to sign-in automatically. For more information, review the articles:
 
@@ -41,37 +38,53 @@ Once automatic sign-in is configured, reboot the device. The account will sign i
 
 ## Windows Update
 
-Configure your kiosk devices so that they are always up to date, without disrupting the user experience. Here are some policy settings to consider:
+Configure your kiosk devices so that they are always up to date, without disrupting the user experience. Here are some policy settings to consider, both GPO and CSP settings, to configure Windows Update for your kiosk devices:
 
-|Setting|Description|
-|-|-|
-|Display options for update notifications|- **CSP**: `./Device/Vendor/MSFT/Policy/Config/Update/`[UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel) <br>- **GPO**: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Display options for update notifications**|
-|Enable and schedule automatic updates| - **CSP**: `./Device/Vendor/MSFT/Policy/Config/Update/`[AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#update-update-allowautoupdate) <br> Select **3 - Auto install and restart at a specified time** <br> - **GPO**: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Configure Automatic Updates** |
+| Type    | Path                                                                             | Name/Description                                                  |
+|---------|----------------------------------------------------------------------------------|-------------------------------------------------------------------|
+|**GPO**| Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience| Set the value to **2 - Turn off all notifications, including restart warnings**|
+|**CSP**| `./Device/Vendor/MSFT/Policy/Config/Update/`[UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel) | |
+
+|**GPO**| Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\Display options for update notifications| Set the value to **2 - Turn off all notifications, including restart warnings**|
+|**GPO**| Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\Turn off auto-restart for updates during active hours| Configure the start and end active hours, during which the kiosk device can't restart due to Windows Update|
+|**GPO**| Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\Configure Automatic Updates| **4 - Auto download and schedule the install** > specify an install time that is outside the active hours|
+
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/[DetectionFrequency]()| `3`|
+./Device/Vendor/MSFT/Policy/Config/Update/ActiveHoursStart = 7
+./Device/Vendor/MSFT/Policy/Config/Update/ActiveHoursEnd = 22
+
+## Power settings
+
+You may want to prent the kiosk device from going to sleep. Here are some options to configure the power settings for your kiosk devices:
+
+| Type    | Path                                                                                                     | Name/Description                |
+|---------|----------------------------------------------------------------------------------------------------------|---------------------------------|
+| **GPO** | Computer Configuration\Administrative Templates\System\Power Management\Specify the system sleep timeout | Set the value to **0** seconds. |
+| **GPO** | Computer Configuration\Administrative Templates\System\Power Management\Video and Display Settings\Turn off the display | Set the value to **0** seconds. |
 
 ## Shut down, restart, sleep, and hybernate commands
 
 To prevent users to shut down, restart, sleep, or hybernate kiosk devices, here are some options:
 
-|  | Path | Configuration|
+| Type | Path | Name/Description |
 |--|--|--|
-| **CSP** | `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/`[RequireSecurityDevice](/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciesrequiresecuritydevice)<br><br>`./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/ExcludeSecurityDevices/`[TPM12](/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciesexcludesecuritydevicestpm12) |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **System** > **Power Management** > **Button Settings**| Set **Select Power Button Action on Battery** and **Select Power Button Action on Plugged In** to **Take no action**.|
-|**GPO**| **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands** | This policy hides the buttons, but doesn't disable them.|
-|**GPO**| **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **User Rights Assignment** > **Shut down the system** | Remove the users or groups from this policy. To prevent this policy from affecting a member of the Administrators group, be sure to keep the Administrators group.|
+| **GPO** | Computer Configuration\Administrative Templates\System\Power Management\Button Settings\Select the Power button action | Select the action: **Take no action** |
+| **GPO** | Computer Configuration\Administrative Templates\System\Power Management\Button Settings\Select the Sleep button action | Select the action: **Take no action** |
+| **GPO** | Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands | **Enable** the setting |
+| **GPO** | Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment\Shut down the system | Remove the users or groups from this policy. To prevent this policy from affecting a member of the Administrators group, be sure to keep the Administrators group. |
+
+|**CSP**|`./Device/Vendor/MSFT/Policy/Config/Power/`[HibernateTimeoutPluggedIn]() | `<Enabled/>` |
 
 ## Keyboard shortcuts
 
-The following keyboard shortcuts aren't blocked for any user account that is configured with a restricted user experience. You can use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block the key combinations:
+The following keyboard shortcuts aren't blocked for any user account that is configured with a restricted user experience:
 
 - <kbd>Alt</kbd> + <kbd>F4</kbd>
-- <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>
 - <kbd>Alt</kbd> + <kbd>Tab</kbd>
+- <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>
+- <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd>
 
-> [!NOTE]
-> <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> is the default keyboard shortcut to break out of Assigned Access. You can also use *Keyboard Filter* to configure a different key combination to break out of Assigned Access by setting `BreakoutKeyScanCode` as described in [WEKF_Settings](/windows-hardware/customize/enterprise/wekf-settings).
-
-> [!CAUTION]
-> Keyboard Filter settings apply to other standard accounts.
+You can use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block the key combinations. Keyboard Filter settings apply to other standard accounts.
 
 ### Accessibility shortcuts
 
@@ -118,26 +131,6 @@ user account. Rather, target the group of users within the Assigned Access confi
 ### Develop your kiosk app
 
 Assigned Access uses the *Lock framework*. When an Assigned Access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an *above lock* screen app. To learn more, see [best practices guidance for developing a kiosk app for assigned access](/windows-hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access).
-
-## Troubleshoot
-
-Event Viewer
-Run "eventvwr.msc"
-Navigate to "Applications and Services Logs"
-There are 2 areas of your interests:
-"Microsoft-Windows-AssignedAccess"
-"Microsoft-Windows-AssignedAccessBroker"
-Before any repro, it's recommended to enable "Operational" channel to get the most of logs.
-TraceLogging
-
-Registry Key
-These locations contain the latest Assigned Access Configuration:
-
-HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration
-HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessCsp
-These locations contain the latest "evaluated" configuration for each sign-in user:
-
-"HKCU\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration" (If it doesn't exist, it means no Assigned Access to be enforced for this user.)
 
 ## Assigned Access recommendations
 
@@ -196,6 +189,25 @@ Here are some options to help you to further customize the File Explorer experie
 When testing Assigned Access, it can be useful to enable logging to help you troubleshoot issues. Logs can help you identify configuration and runtime issues. You can enable the following log: **Applications and Services Logs** > **Microsoft** > **Windows** > **AssignedAccess** > **Operational**.
 
 For more information about troubleshooting kiosk issues, see [Troubleshoot kiosk mode issues](/troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting).
+
+Event Viewer
+Run "eventvwr.msc"
+Navigate to "Applications and Services Logs"
+There are 2 areas of your interests:
+"Microsoft-Windows-AssignedAccess"
+"Microsoft-Windows-AssignedAccessBroker"
+Before any repro, it's recommended to enable "Operational" channel to get the most of logs.
+TraceLogging
+
+Registry Key
+These locations contain the latest Assigned Access Configuration:
+
+HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration
+HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessCsp
+These locations contain the latest "evaluated" configuration for each sign-in user:
+
+"HKCU\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration" (If it doesn't exist, it means no Assigned Access to be enforced for this user.)
+
 
 ## Next steps
 

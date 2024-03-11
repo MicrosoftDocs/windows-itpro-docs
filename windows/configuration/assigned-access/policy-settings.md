@@ -79,6 +79,16 @@ The following policy settings are applied to any nonadministrator account when y
 | **GPO** | User Configuration\Administrative Templates\Windows Components\File Explorer     | Remove *Map network drive* and *Disconnect Network Drive*         |
 | **GPO** | User Configuration\Administrative Templates\Windows Components\File Explorer     | Remove File Explorer's default context menu                       |
 
+The following policy settings are applied to the kiosk account when you configure a kiosk experience with Microsoft Edge:
+
+| Type    | Path                                                                              | Name/Description                                       |
+|---------|-----------------------------------------------------------------------------------|--------------------------------------------------------|
+| **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar\Notifications  | Run only specified Windows applications > `msedge.exe` |
+| **GPO** | User Configuration\Administrative Templates\System                                | Turn off toast notifications                           |
+| **GPO** | User Configuration\Administrative Templates\Windows Components\Attachment Manager | Default risk level for file attachments > High risk    |
+| **GPO** | User Configuration\Administrative Templates\Windows Components\Attachment Manager | Inclusion list for low file types > `.pdf;.epub`       |
+| **GPO** | User Configuration\Administrative Templates\Windows Components\File Explorer      | Remove File Explorer's default context menu            |
+
 ## AppLocker rules
 
 When you deploy an Assigned Access restricted user experience, AppLocker rules are generated to allow the apps that are listed in the configuration. Here are the predefined Assigned Access AppLocker rules:
