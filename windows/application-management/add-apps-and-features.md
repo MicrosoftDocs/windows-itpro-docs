@@ -49,7 +49,9 @@ or
 
 1. In the right hand pane under **System**, select **Optional features**.
 
-To **add** a feature once the **System > Optional features** pane is open:
+### Add a feature to Windows 11
+
+To add a feature once the **System > Optional features** pane is open:
 
 1. Select the **View features** button next to **Add an optional feature**.
 
@@ -61,7 +63,9 @@ To **add** a feature once the **System > Optional features** pane is open:
 
     1. Review the selected list of features and then select the **Install** button to add the selected features.
 
-To **remove** a feature once the **System > Optional features** pane is open:
+### Remove a feature to Windows 11
+
+To remove a feature once the **System > Optional features** pane is open:
 
 1. Under **Installed features**, search for the feature that needs to be removed in the **Search installed features** search box, or scroll through the list of installed features until the feature that needs to be removed is found.
 
@@ -69,13 +73,13 @@ To **remove** a feature once the **System > Optional features** pane is open:
 
 > [!NOTE]
 >
-> For the following currently supported versions of Windows 11:
+> The navigation steps, UI elements, and UI text are based on the latest version of Windows 11 with the latest cumulative update installed. For the following versions of Windows 11 that are currently still supported:
 >
 > - Windows 11 21H2
 > - Windows 11 22H2 without the latest cumulative update installed
 > - Windows 11 23H2 without the latest cumulative update installed
 >
-> some of the navigation and UI elements might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page is located under **Settings** > **Apps** > **Apps & features**.
+> some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page might be located under **Settings** > **Apps** > **Apps & features**.
 
 ::: zone-end
 
@@ -87,7 +91,9 @@ To **remove** a feature once the **System > Optional features** pane is open:
 
 1. In the left hand pane, select **Optional features**.
 
-To **add** a feature once the **Optional features** pane is open:
+### Add a feature to Windows 10
+
+To add a feature once the **Optional features** pane is open:
 
 1. Select the **+** button next to **Add a feature**.
 
@@ -97,7 +103,9 @@ To **add** a feature once the **Optional features** pane is open:
 
     1. Once all of the desired features are selected, select the **Install** button.
 
-To **remove** a feature once the **Optional features** pane is open:
+### Remove a feature to Windows 10
+
+To remove a feature once the **Optional features** pane is open:
 
 1. Under **Installed features**, search for the feature that needs to be removed in the **Find an installed optional feature** search box, or scroll through the list of installed features until the feature that needs to be removed is found.
 
@@ -105,12 +113,12 @@ To **remove** a feature once the **Optional features** pane is open:
 
 > [!NOTE]
 >
-> For the following currently supported versions of Windows 10:
+> The navigation steps, UI elements, and UI text are based on Windows 10 22H2 with the latest cumulative update installed. For the following versions of Windows 10 that are currently still supported:
 >
 > - Windows 10 21H2
 > - Windows 10 22H2 without the latest cumulative update installed
 >
-> some of the navigation and UI elements might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page is located under **Settings** > **Apps** > **Apps & features**.
+> some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page might be located under **Settings** > **Apps** > **Apps & features**.
 
 ::: zone-end
 
