@@ -1,7 +1,7 @@
 ---
 title: Add image for secondary Microsoft Edge tiles
 description: Add app tiles on Windows 10 that's a secondary tile.
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/31/2017
 ---
 
