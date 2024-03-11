@@ -141,39 +141,20 @@ Consider removing notifications from the lock screen to prevent users from seein
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/AboveLock/`[AllowToasts](/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowtoasts)| Integer. Set to `0` |
 | **GPO** | Computer Configuration\Administrative Templates\System\Logon\Turn off app notifications on the lock screen | **Enabled**|
 
-## File Explorer customizations
-
-Here are some options to help you to further customize the File Explorer experience:
-
-| Type | Path | Name/Description |
-|--|--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/FileExplorer/`[AllowOptionToShowThisPC](/windows/client-management/mdm/policy-csp-fileexplorer#allowoptiontoshowthispc)| Integer. If you set it to `0`, users can't access *This PC* from File Explorer |
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/FileExplorer/`[SetAllowedStorageLocations](/windows/client-management/mdm/policy-csp-fileexplorer#SetAllowedStorageLocations)| Integer. With this policy setting, you can configure which folders a user can access from File Explorer. For example, if you set it to `1`, users can only access removable drives|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/FileExplorer/`[DisableGraphRecentItems](/windows/client-management/mdm/policy-csp-fileexplorer#DisableGraphRecentItems)| Integer. Set to `1` |
-
 ## Troubleshooting and logs
 
 When testing Assigned Access, it can be useful to enable logging to help you troubleshoot issues. Logs can help you identify configuration and runtime issues. You can enable the following log: **Applications and Services Logs** > **Microsoft** > **Windows** > **AssignedAccess** > **Operational**.
 
+The following registry keys contain the Assigned Access configurations:
+
+- `HKLM\Software\Microsoft\Windows\AssignedAccessConfiguration`
+- `HKLM\Software\Microsoft\Windows\AssignedAccessCsp`
+
+The following registry key contains the configuration for each user with an Assigned Access policy:
+
+- `HKCU\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration`
+
 For more information about troubleshooting kiosk issues, see [Troubleshoot kiosk mode issues](/troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting).
-
-Event Viewer
-Run "eventvwr.msc"
-Navigate to "Applications and Services Logs"
-There are two areas of your interests:
-"Microsoft-Windows-AssignedAccess"
-"Microsoft-Windows-AssignedAccessBroker"
-Before any repro, enable the *Operational* channel to get the most of logs.
-
-Registry Key
-These locations contain the latest Assigned Access Configuration:
-
-HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration
-HKLM\SOFTWARE\Microsoft\Windows\AssignedAccessCsp
-These locations contain the latest "evaluated" configuration for each sign-in user:
-
-"HKCU\SOFTWARE\Microsoft\Windows\AssignedAccessConfiguration" (If it doesn't exist, it means no Assigned Access to be enforced for this user.)
-
 
 ## Next steps
 
