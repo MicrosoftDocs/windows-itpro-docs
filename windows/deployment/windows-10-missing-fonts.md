@@ -7,10 +7,10 @@ author: frankroj
 ms.author: frankroj
 manager: aaroncz
 ms.topic: article
-ms.date: 11/23/2022
+ms.date: 03/11/2024
 ms.subservice: itpro-deploy
 ---
-# How to install fonts that are missing after upgrading to Windows client
+# How to add fonts that are missing after upgrading to Windows client
 
 *Applies to:*
 
@@ -36,7 +36,7 @@ For example, if you've an English, French, German, or Spanish version of Windows
 
 If you want to use these fonts, you can enable the optional feature to add them back to your system. The removal of these fonts is a permanent change in behavior for Windows client, and it will remain this way in future releases.
 
-## Installing language-associated features via language settings
+## Adding language-associated features via language settings
 
 If you want to use the fonts from the optional feature and you know that you'll want to view Web pages, edit documents, or use apps in the language associated with that feature, add that language into your user profile. Use the Settings app.
 
@@ -52,28 +52,26 @@ For example, here are the steps to install the fonts associated with the Hebrew 
 
 4. Find **Hebrew**, and then select it to add it to your language list.
 
-Once you've added Hebrew to your language list, then the optional Hebrew font feature and other optional features for Hebrew language support are installed. This process should only take a few minutes.
+Once you've added Hebrew to your language list, then the optional Hebrew font feature and other optional features for Hebrew language support are added. This process should only take a few minutes.
 
 > [!NOTE]
-> The optional features are installed by Windows Update. You need to be online for the Windows Update service to work.
+> The optional features are added by Windows Update. You need to be online for the Windows Update service to work.
+## Add optional fonts manually without changing language settings
 
-## Install optional fonts manually without changing language settings
+If you want to use fonts in an optional feature but don't need to search web pages, edit documents, or use apps in the associated language, you can add the optional font features manually without changing your language settings.
 
-If you want to use fonts in an optional feature but don't need to search web pages, edit documents, or use apps in the associated language, you can install the optional font features manually without changing your language settings.
-
-For example, here are the steps to install the fonts associated with the Hebrew language without adding the Hebrew language itself to your language preferences:
+For example, here are the steps to add the fonts associated with the Hebrew language without adding the Hebrew language itself to your language preferences:
 
 1. Select **Start > Settings**.
 
-2. In **Settings**, select **Apps**, select **Apps & features**, and then select **Manage optional features**.
+1. In **Settings**, select **System**, and then select **Optional features** (if on a version older than Windows 10 22H2, navigate to **Settings > Apps > Apps & features > Optional features** instead).
 
-3. If you don't see **Hebrew Supplemental Fonts** in the list of installed features, select the plus sign (**+**) to add a feature.
+1. If you don't see **Hebrew Supplemental Fonts** in the list of added features, select the plus sign (**+**) to add a feature.
 
-4. Select **Hebrew Supplemental Fonts** in the list, and then select **Install**.
+1. Select **Hebrew Supplemental Fonts** in the list, and then select **Add**.
 
 > [!NOTE]
-> The optional features are installed by Windows Update. You need to be online for the Windows Update service to work.
-
+> The optional features are added by Windows Update. You need to be online for the Windows Update service to work.
 ## Fonts included in optional font features
 
 Here's a comprehensive list of the font families in each of the optional features. Some font families might include multiple fonts for different weights and styles.
