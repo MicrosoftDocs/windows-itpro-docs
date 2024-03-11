@@ -58,7 +58,7 @@ You may want to prveent the kiosk device from going to sleep, or prevent users t
 | Type | Path | Name/Description |
 |--|--|--|
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/`[HidePowerOptions](/windows/client-management/mdm/policy-csp-admx-startmenu#hidepoweroptions) | String. Set to `<Enabled/>` |
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/`[Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#shutdown_allowsystemtobeshutdownwithouthavingtologon) | Integer value. Set to `0` |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/`<br>[Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#shutdown_allowsystemtobeshutdownwithouthavingtologon) | Integer value. Set to `0` |
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#displayofftimeoutpluggedin) | String. Set to `<Enabled/><Data ID="EnterVideoACPowerDownTimeOut" value="0"/>` |
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[SelectPowerButtonActionPluggedIn](/windows/client-management/mdm/policy-csp-power#selectpowerbuttonactionpluggedin) | Integer. Set to `0` |
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[SelectSleepButtonActionPluggedIn](/windows/client-management/mdm/policy-csp-power#SelectSleepButtonActionPluggedIn) | Integer. Set to `0` |
