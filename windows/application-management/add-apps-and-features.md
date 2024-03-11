@@ -49,7 +49,21 @@ or
 
 1. In the right hand pane under **System**, select **Optional features**.
 
-### Add a feature to Windows 11
+::: zone-end
+
+::: zone pivot="windows-10"
+
+1. Right-click on the **Start** menu and select **Settings**.
+
+1. In the Settings app, select **System**.
+
+1. In the left hand pane, select **Optional features**.
+
+::: zone-end
+
+### Add a feature
+
+::: zone pivot="windows-11"
 
 To add a feature once the **System > Optional features** pane is open:
 
@@ -63,7 +77,25 @@ To add a feature once the **System > Optional features** pane is open:
 
     1. Review the selected list of features and then select the **Install** button to add the selected features.
 
-### Remove a feature to Windows 11
+::: zone-end
+
+::: zone pivot="windows-10"
+
+To add a feature once the **Optional features** pane is open:
+
+1. Select the **+** button next to **Add a feature**.
+
+1. In the **Add an optional feature** window that opens:
+
+    1. Find the desired feature to add and then select the box next to the feature to add it. Multiple features can be selected.
+
+    1. Once all of the desired features are selected, select the **Install** button.
+
+::: zone-end
+
+### Remove a feature
+
+::: zone pivot="windows-11"
 
 To remove a feature once the **System > Optional features** pane is open:
 
@@ -84,26 +116,6 @@ To remove a feature once the **System > Optional features** pane is open:
 ::: zone-end
 
 ::: zone pivot="windows-10"
-
-1. Right-click on the **Start** menu and select **Settings**.
-
-1. In the Settings app, select **System**.
-
-1. In the left hand pane, select **Optional features**.
-
-### Add a feature to Windows 10
-
-To add a feature once the **Optional features** pane is open:
-
-1. Select the **+** button next to **Add a feature**.
-
-1. In the **Add an optional feature** window that opens:
-
-    1. Find the desired feature to add and then select the box next to the feature to add it. Multiple features can be selected.
-
-    1. Once all of the desired features are selected, select the **Install** button.
-
-### Remove a feature to Windows 10
 
 To remove a feature once the **Optional features** pane is open:
 
