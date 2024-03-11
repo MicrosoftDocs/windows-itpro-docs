@@ -59,7 +59,7 @@ You may want to prent the kiosk device from going to sleep, or prevent users to 
 |--|--|--|
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/`[HidePowerOptions](/windows/client-management/mdm/policy-csp-admx-startmenu#hidepoweroptions) | String. Set to `<Enabled/>` |
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/`[Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#shutdown_allowsystemtobeshutdownwithouthavingtologon) | Integer value. Set to `0` |
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#displayofftimeoutpluggedin) | String. Set to `<Enabled/><Data ID="EnterVideoDCPowerDownTimeOut" value="0"/>` |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#displayofftimeoutpluggedin) | String. Set to `<Enabled/><Data ID="VideoPowerDownTimeOutAC" value="0"/>` |
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[SelectPowerButtonActionPluggedIn](/windows/client-management/mdm/policy-csp-power#selectpowerbuttonactionpluggedin) | String. Set to `<Enabled/><Data ID="ACPowerButtonAction" value="0"/>` |
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[SelectSleepButtonActionPluggedIn](/windows/client-management/mdm/policy-csp-power#SelectSleepButtonActionPluggedIn) | String. Set to `<Enabled/><Data ID="ACSleepButtonAction" value="0"/>` |
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[StandbyTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#standbytimeoutpluggedin) | String. Set to `<Enabled/><Data ID="ACStandbyTimeOut" value="0"/>` |
