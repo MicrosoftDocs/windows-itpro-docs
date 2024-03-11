@@ -7,6 +7,8 @@ ms.date: 03/11/2024
 
 # Assigned Access recommendations
 
+⚠️ This article is still under work
+
 This article contains recommendations for devices configured with Assigned Access and Shell Launcher. Most of the recommendations include both group policy (GPO) and configuration service provider (CSP) settings to help you configure your kiosk devices.
 
 ## Kiosk user account
@@ -71,6 +73,9 @@ You may want to prveent the kiosk device from going to sleep, or prevent users t
 | **GPO** | Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Shutdown: Allow system to be shut down without having to log on | **Disabled** |
 | **GPO** | Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment\Shut down the system | Remove the users or groups from this policy. To prevent this policy from affecting a member of the Administrators group, be sure to keep the Administrators group. |
 
+> [!NOTE]
+> You can also disable the power button from the security options screen using a feature called *Custom Logon*. For more information on removing the power button or disabling the physical power button, see [Custom Logon][WHW-1].
+
 ## Keyboard shortcuts
 
 The following keyboard shortcuts aren't blocked for any user account that is configured with a restricted user experience:
@@ -84,7 +89,7 @@ You can use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfil
 
 ### Accessibility shortcuts
 
-Assigned access doesn't change accessibility settings. Use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block the following key combinations that open accessibility features:
+Assigned access doesn't change accessibility settings. Use *Keyboard Filter* to block the following key combinations that open accessibility features:
 
   | Key combination | Blocked behavior |
   | --- | --- |
@@ -92,14 +97,8 @@ Assigned access doesn't change accessibility settings. Use [Keyboard Filter](/wi
   | <kbd>Left Alt</kbd> + <kbd>Left Shift</kbd> + <kbd>Num Lock</kbd> | Open Mouse Keys dialog box |
   | <kbd>WIN</kbd> + <kbd>U</kbd> | Open the Settings app accessibility panel |
 
-- **Key sequences blocked by [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter)**: If Keyboard Filter is turned ON, then some key combinations are blocked automatically without you having to explicitly block them. For more information, see the [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter). Keyboard Filter is only available on the Enterprise and Education editions of Windows
-
-- **Power button**: Customizations for the Power button complement assigned access, letting you implement features such as removing the power button from the Welcome screen. Removing the power button ensures the user can't turn off the device when it's in Assigned Access
-  For more information on removing the power button or disabling the physical power button, see [Custom Logon][WHW-1]
-- **Unified Write Filter (UWF)**: UWFsettings apply to all users, including users with assigned access
-  For more information, see [Unified Write Filter][WHW-2]
-
-For more information, see [Custom Logon][WHW-1].
+> [!NOTE]
+> If Keyboard Filter is turned ON, then some key combinations are blocked automatically without you having to explicitly block them. For more information, see [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter).
 
 ## Choose an app for a kiosk experience
 
@@ -126,12 +125,15 @@ user account. Rather, target the group of users within the Assigned Access confi
 
 Assigned Access uses the *Lock framework*. When an Assigned Access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an *above lock* screen app. To learn more, see [best practices guidance for developing a kiosk app for assigned access](/windows-hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access).
 
-## Assigned Access recommendations
+## Stop errors and recovery options
 
-Here are some options to help you to further customize the Assigned Access experience:
+When a stop error occurs, Windows displays a blue screen with a stop error code. You can replace the standard screen with a blank screen for OS errors. For more information, see [Configure system failure and recovery options](/troubleshoot/windows-client/performance/configure-system-failure-and-recovery-options).
 
-- Replace the *blue screen* with a blank screen for OS errors. For more information, see [Configure system failure and recovery options](/troubleshoot/windows-client/performance/configure-system-failure-and-recovery-options)
-- Hide *Ease of access* feature on the sign-in screen
+## Lock screen customizations
+
+You can disable the accessibility
+
+* feature on the sign-in screen
   - **Use an MDM provider**: In Intune, you can use the [Control Panel and Settings](/mem/intune/configuration/device-restrictions-windows-10#control-panel-and-settings) to manage this feature.
   - **Use the registry**: For more information, see [how to disable the Ease of Access button in the registry](/windows-hardware/customize/enterprise/complementary-features-to-custom-logon#welcome-screen)
 
@@ -190,4 +192,3 @@ These locations contain the latest "evaluated" configuration for each sign-in us
 
 [WHW-1]: /windows-hardware/customize/enterprise/custom-logon
 [WHW-2]: /windows-hardware/customize/enterprise/unified-write-filter
-[WHW-3]: /windows-hardware/customize/enterprise/wedl-assignedaccess
