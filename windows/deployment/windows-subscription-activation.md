@@ -1,6 +1,6 @@
 ---
 title: Windows subscription activation
-description: Learn how to dynamically enable Windows Enterprise or Education subscriptions.
+description: Learn how to step up from Windows Pro to a Windows Enterprise subscription or from Windows Eduction Pro to a Windows Education subscription.
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
@@ -10,8 +10,9 @@ manager: aaroncz
 ms.collection:
   - highpri
   - tier2
-ms.topic: conceptual
-ms.date: 02/13/2024
+ms.topic: concept-article
+zone_pivot_groups: windows-versions-11-10
+ms.date: 03/04/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -33,17 +34,6 @@ The subscription activation feature eliminates the need to manually deploy Enter
 
 For more information on how to deploy Enterprise licenses, see [Deploy Windows Enterprise licenses](deploy-enterprise-licenses.md).
 
-> [!NOTE]
->
-> Organizations that use the Subscription Activation feature to enable users to upgrade from one version of Windows to another and use Conditional Access policies to control access need to exclude one of the following cloud apps from their Conditional Access policies using **Select Excluded Cloud Apps**:
->
-> - [Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
-> - [Windows Store for Business, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
->
-> Although the app ID is the same in both instances, the name of the cloud app depends on the tenant.
->
-> For more information about configuring exclusions in Conditional Access policies, see [Application exclusions](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa#application-exclusions).
-
 ## Subscription activation for Enterprise
 
 Windows Enterprise E3 and E5 are available as online services via subscription. Windows Enterprise can be deployed in an organization without keys and reboots.
@@ -56,6 +46,34 @@ Organizations that have an enterprise agreement can also benefit from the servic
 > [!NOTE]
 >
 > Subscription activation is available for qualifying devices running currently supported versions of Windows. Subscription activation can't be used to upgrade to a newer version of Windows.
+
+### Adding Conditional Access policy
+
+Organizations that use the Subscription Activation feature to enable users to "step-up" from one version of Windows to another and use Conditional Access policies to control access need to exclude one of the following cloud apps from their Conditional Access policies using **Select Excluded Cloud Apps**:
+
+- [Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
+
+- [Windows Store for Business, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
+
+Although the app ID is the same in both instances, the name of the cloud app depends on the tenant.
+
+For more information about configuring exclusions in Conditional Access policies, see [Application exclusions](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa#application-exclusions).
+
+<!-- 8605089 -->
+
+When a device has been offline for an extended period of time, the device might not reactivate automatically if this Conditional Access exclusion isn't in place. Setting this Conditional Access exclusion ensures that Subscription Activation continues to work seamlessly.
+
+Starting with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later, users are prompted for authentication with a toast notification when Subscription Activation needs to reactivate. The toast notification will show the following message:
+
+> **Your account requires authentication**
+>
+> **Please sign in to your work or school account to verify your information.**
+
+Additionally, in the [**Activation**](ms-settings:activation) pane, the following message might appear:
+
+> **Please sign in to your work or school account to verify your information.**
+
+The prompt for authentication usually occurs when a device has been offline for an extended period of time. This change eliminates the need for an exclusion in the Conditional Access policy for Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later. A Conditional Access policy can still be used with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later if the prompt for user authentication via a toast notification isn't desired.
 
 ## Subscription activation for Education
 
@@ -71,14 +89,6 @@ To support inherited activation, both the host computer and the VM must be runni
 
 ### Windows Enterprise requirements
 
-> [!NOTE]
->
-> The following requirements don't apply to general Windows client activation on Azure. Azure activation requires a connection to Azure KMS only. It supports workgroup, hybrid, and Microsoft Entra joined VMs. In most scenarios, activation of Azure VMs happens automatically. For more information, see [Understanding Azure KMS endpoints for Windows product activation of Azure virtual machines](/troubleshoot/azure/virtual-machines/troubleshoot-activation-problems#understanding-azure-kms-endpoints-for-windows-product-activation-of-azure-virtual-machines).
-
-> [!IMPORTANT]
->
-> As of October 1, 2022, subscription activation is available for *commercial* and *GCC* tenants. It's currently not available on GCC High or DoD tenants. <!-- 6783128 --> For more information, see [Enable subscription activation with an existing EA](deploy-enterprise-licenses.md#enable-subscription-activation-with-an-existing-ea).
-
 For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA), the following requirements must be met:
 
 - A supported version of Windows Pro or Enterprise edition installed on the devices to be upgraded.
@@ -87,11 +97,32 @@ For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & 
 
 For Microsoft customers that don't have EA or MPSA, Windows Enterprise E3/E5 or A3/A5 licenses can be obtained through a cloud solution provider (CSP). Identity management and device requirements are the same when using CSP to manage licenses. For more information about getting Windows Enterprise E3 through a CSP, see [Windows Enterprise E3 in CSP](windows-enterprise-e3-overview.md).
 
+> [!NOTE]
+>
+> These requirements don't apply to general Windows client activation on Azure. Azure activation requires a connection to Azure KMS only. Azure KMS supports workgroup, hybrid, and Microsoft Entra joined VMs. In most scenarios, activation of Azure VMs happens automatically. For more information, see [Understanding Azure KMS endpoints for Windows product activation of Azure virtual machines](/troubleshoot/azure/virtual-machines/troubleshoot-activation-problems#understanding-azure-kms-endpoints-for-windows-product-activation-of-azure-virtual-machines).
+
+> [!IMPORTANT]
+>
+> As of October 1, 2022, subscription activation is available for *commercial* and *GCC* tenants. It's currently not available on GCC High or DoD tenants. <!-- 6783128 --> For more information, see [Enable subscription activation with an existing EA](deploy-enterprise-licenses.md#enable-subscription-activation-with-an-existing-ea).
+
 ### Windows Education requirements
 
 - A supported version of Windows Pro Education installed on the devices to be upgraded.
-- A device with a Windows Pro Education digital license. This information can be confirmed under **Settings > System > Activation** or under **Settings > Update & Security > Activation**.
+
+::: zone pivot="windows-11"
+
+- A device with a Windows Pro Education digital license. This information can be confirmed in the [**Activation**](ms-settings:activation)pane of the **Settings** app under **Settings > System > Activation**.
+
+::: zone-end
+
+::: zone pivot="windows-10"
+
+- A device with a Windows Pro Education digital license. This information can be confirmed in the [**Activation**](ms-settings:activation)pane of the **Settings** app under **Settings > Update & Security > Activation**.
+
+::: zone-end
+
 - The Education tenant must have an active subscription to Microsoft 365 with a Windows Enterprise license, or a Windows Enterprise or Education subscription.
+
 - Devices must be Microsoft Entra joined or Microsoft Entra hybrid joined. Workgroup-joined or Microsoft Entra registered devices aren't supported.
 
 > [!IMPORTANT]
@@ -104,8 +135,8 @@ With Windows Enterprise or Education editions, an organization can benefit from 
 
 To compare Windows editions and review pricing, see the following sites:
 
-- [Compare Windows editions](https://www.microsoft.com/en-us/windows/business/windows-10-pro-vs-windows-11-pro)
-- [Enterprise Mobility + Security Pricing Options](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing)
+- [Compare Windows editions](https://www.microsoft.com/en-us/windows/business/windows-10-pro-vs-windows-11-pro) <!-- Leaving in language reference in URL because URL without it doesn't redirect properly>
+- [Enterprise Mobility + Security Pricing Options](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing)
 
 Benefits of moving to Windows as an online service include:
 
@@ -121,7 +152,7 @@ Benefits of moving to Windows as an online service include:
 
 ## How it works
 
-The device is Microsoft Entra joined, for example from **Settings** > **Accounts** > **Access work or school**.
+The device is Microsoft Entra joined, for example from the [Access work or school](ms-settings:workplace) pane in the **Settings** app that can be found under **Settings** > **Accounts** > **Access work or school**.
 
 Windows Enterprise is assigned to a user, for example through the Microsoft 365 admin center. When a licensed user signs in to a device that meets requirements using their Microsoft Entra credentials, Windows steps up from Pro edition to Enterprise, or from Pro Education to Education. Once the edition is stepped up, Enterprise/Education features are unlocked. When a user's subscription expires or is transferred to another user, the device reverts seamlessly to Windows Pro or Windows Pro Education edition, once the current subscription validity expires.
 
@@ -167,7 +198,7 @@ With a Microsoft Entra subscription, group-based licensing is the preferred meth
 
 ### Existing Enterprise deployments
 
-With currently supported version of Windows, subscription activation automatically pulls the firmware-embedded Windows activation key and activates the underlying Pro license. The license then steps up to Enterprise using subscription activation. This behavior automatically migrates devices from KMS or MAK activated Enterprise to subscription activated Enterprise.
+With currently supported versions of Windows, subscription activation automatically pulls the firmware-embedded Windows activation key and activates the underlying Pro license. The license then steps up to Enterprise using subscription activation. This behavior automatically migrates devices from KMS or MAK activated Enterprise to subscription activated Enterprise.
 
 Subscription activation doesn't remove the need to activate the underlying OS. This requirement still exists for running a genuine installation of Windows.
 
@@ -193,7 +224,7 @@ If an organization has an Enterprise Agreement (EA) or Software Assurance (SA):
 
 If an organization has a Microsoft Products & Services Agreement (MPSA):
 
-- New customers are automatically emailed the details of the service. Take steps to process the instructions.
+- New customers are automatically emailed the details of the service. Follow the instructions and steps found in the email.
 
 - Existing MPSA customers receive service activation emails that allow their customer administrator to assign users to the service.
 
@@ -209,8 +240,9 @@ Subscriptions to Windows Enterprise are also available for virtualized clients. 
 
 Virtual machines (VMs) must be configured to enable Windows Enterprise subscriptions for VDA. Active Directory-joined and Microsoft Entra joined clients are supported. See [Enable VDA for Subscription Activation](vda-subscription-activation.md).
 
-## Related sites
+## Related content
 
-- Connect domain-joined devices to Microsoft Entra ID for Windows experiences. For more information, see [Plan your Microsoft Entra hybrid join implementation](/entra/identity/devices/hybrid-join-plan).
+- [Deploy Windows Enterprise licenses](deploy-enterprise-licenses.md).
+- [Plan your Microsoft Entra hybrid join implementation](/entra/identity/devices/hybrid-join-plan).
 - [Compare Windows editions](https://www.microsoft.com/windows/business/compare-windows-11).
 - [Windows for business](https://www.microsoft.com/windows/business).

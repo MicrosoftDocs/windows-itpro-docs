@@ -58,19 +58,17 @@
       },
       "titleSuffix": "Windows Client Management",
       "contributors_to_exclude": [
-        "rjagiewich",
-        "traya1",
-        "rmca14",
-        "claydetels19",
+        "dstrome2",
+        "rjagiewich",  
+        "American-Dipper",
+        "claydetels19", 
         "jborsecnik",
-        "tiburd",
+        "v-stchambers",
+        "shdyas",
+        "Stacyrch140",
         "garycentric",
-        "beccarobins",
-        "american-dipper",
-        "angelamotherofdragons",
-        "v-stsavell",
-        "stacyrch140",
-        "shdyas"
+        "dstrome",
+        "beccarobins"
       ],
       "searchScope": [
         "Windows 10"

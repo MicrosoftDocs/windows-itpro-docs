@@ -56,18 +56,18 @@
       },
       "titleSuffix": "Configure Windows",
       "contributors_to_exclude": [
-        "rjagiewich",
-        "traya1",
-        "rmca14",
-        "claydetels19",
-        "jborsecnik",
-        "tiburd",
-        "garycentric",
-        "beccarobins",
-        "Stacyrch140",
-        "v-stsavell",
+        "dstrome2",
+        "rjagiewich",  
         "American-Dipper",
-        "shdyas"
+        "claydetels19", 
+        "jborsecnik",
+        "v-stchambers",
+        "shdyas",
+        "Stacyrch140",
+        "garycentric",
+        "dstrome",
+        "beccarobins",
+        "alekyaj"
       ],
       "searchScope": [
         "Windows 10"

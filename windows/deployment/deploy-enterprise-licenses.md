@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.collection:
   - highpri
   - tier2
-ms.date: 02/13/2024
+ms.date: 03/04/2024
 zone_pivot_groups: windows-versions-11-10
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -65,7 +65,7 @@ To update contact information and resend the activation email, use the following
 
 1. Update the contact information, then select **Update Contact Details**. This action triggers a new email.
 
-## Preparing for deployment: reviewing requirements
+## Prepare for deployment: reviewing requirements
 
 - Devices must be running a supported version of Windows Pro.
 - Microsoft Entra joined, or hybrid domain joined with Microsoft Entra Connect. Customers who are federated with Microsoft Entra ID are also eligible.
@@ -82,7 +82,7 @@ For more information about integrating on-premises AD DS domains with Microsoft 
 - [What is hybrid identity with Microsoft Entra ID?](/azure/active-directory/hybrid/whatis-hybrid-identity)
 - [Microsoft Entra Connect and Microsoft Entra Connect Health installation roadmap](/azure/active-directory/hybrid/how-to-connect-install-roadmap)
 
-## Assigning licenses to users
+## Assign licenses to users
 
 After the Windows subscription is ordered, an email is sent with guidance on how to use Windows as an online service. The following methods are available to assign licenses:
 
@@ -292,15 +292,15 @@ Once the **System > Activation** pane is open:
 
     1. Under **Activation state**, verify that Windows is activated. It should display the message:
 
-      `Windows is activated with a digital license`
+       `Windows is activated with a digital license`
 
     1. Under **Subscription**, verify that the Windows 11 Enterprise subscription is active. It should display the message:
 
-      `Windows 11 Enterprise subscription is active`
+       `Windows 11 Enterprise subscription is active`
 
-      > [!NOTE]
-      >
-      > If the Windows Enterprise subscription hasn't yet been applied, the **Subscription** pane isn't displayed.
+       > [!NOTE]
+       >
+       > If the Windows Enterprise subscription hasn't yet been applied, the **Subscription** pane isn't displayed.
 
 ::: zone-end
 
@@ -340,24 +340,24 @@ A device is healthy when both the subscription and activation are active. If the
 
 1. To get basic licensing information, run the following command at the command prompt:
 
-  ```cmd
-  slmgr /dli
-  ```
+   ```cmd
+   slmgr /dli
+   ```
 
-  A window with output similar to the following opens:
+   A window with output similar to the following opens:
 
-  ```console
-  Name: Windows(R), Professional edition
-  Description: Windows(R) Operating System, RETAIL channel
-  Partial Product Key: 3V66T
-  License Status: Licensed
-  ```
+   ```console
+   Name: Windows(R), Professional edition
+   Description: Windows(R) Operating System, RETAIL channel
+   Partial Product Key: 3V66T
+   License Status: Licensed
+   ```
 
-  To instead get detailed licensing information, run the following command:
+To instead get detailed licensing information, run the following command:
 
-  ```cmd
-  slmgr /dlv
-  ```
+```cmd
+slmgr /dlv
+```
 
 For more information on **Slmgr**, see [Slmgr.vbs options for obtaining volume activation information](/windows-server/get-started/activation-slmgr-vbs-options).
 
@@ -368,11 +368,11 @@ In some instances, users might experience problems with activation of the Window
 - The Windows Enterprise E3 or E5 subscription has lapsed, was removed, or isn't applied.
 - Windows Pro was never activated.
 
-When there are problems with Windows Enterprise E3 or E5 subscription activation, the following are errors can occur in the [Activation](ms-settings:activation) pane:
+When there are problems with Windows Enterprise E3 or E5 subscription activation, the following are errors can occur in the [**Activation**](ms-settings:activation) pane:
 
 - **Windows Pro isn't activated**
 
-  When Windows Pro isn't activated on a device, the following message is displayed for **Activation** in the [Activation](ms-settings:activation) pane:
+  When Windows Pro isn't activated on a device, the following message is displayed for **Activation** in the [**Activation**](ms-settings:activation) pane:
 
   `Windows is not activated`
 
@@ -389,7 +389,7 @@ When there are problems with Windows Enterprise E3 or E5 subscription activation
 
 - **Windows Enterprise subscription isn't active**
 
-  When a device with a Windows Enterprise subscription has lapsed or has been removed, the following message is displayed for **Subscription** in the [Activation](ms-settings:activation) pane:
+  When a device with a Windows Enterprise subscription has lapsed or has been removed, the following message is displayed for **Subscription** in the [**Activation**](ms-settings:activation) pane:
 
   `Windows Enterprise subscription isn't valid.`
 
@@ -482,45 +482,75 @@ Use the following guides to verify each one of these requirements:
 
 - **Make sure the Microsoft Entra user has been assigned a license**.
 
-  For more information, see [Assigning licenses to users](#assigning-licenses-to-users).
+  For more information, see [Assigning licenses to users](#assign-licenses-to-users).
 
-## Known issues
+## Recommended practices
 
-- If a device isn't able to connect to Windows Update, it can lose activation status or be blocked from upgrading to Windows Enterprise. Make sure that Windows Update isn't blocked on the device:
+### Adding Conditional Access policy
 
-  - Using `gpedit.msc` or group policy editor in the domain, make sure that the following group policy setting is set to **Disabled** or **Not Configured**:
+When a device has been offline for an extended period of time, the Subscription Activation might not reactivate automatically on the device. To resolve this issue, use Conditional Access policies to control access by excluding one of the following cloud apps from their Conditional Access policies using **Select Excluded Cloud Apps**:
 
-    ::: zone pivot="windows-11"
+- [Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
 
-    **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Manage updates offered from Windows Server Update Service** > **Do not connect to any Windows Update Internet locations**
+- [Windows Store for Business, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
 
-    ::: zone-end
+Although the app ID is the same in both instances, the name of the cloud app depends on the tenant.
 
-    ::: zone pivot="windows-10"
+For more information about configuring exclusions in Conditional Access policies, see [Application exclusions](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa#application-exclusions).
 
-    **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Do not connect to any Windows Update Internet locations**
+<!-- 8605089 -->
 
-    ::: zone-end
+Setting this Conditional Access policy ensures that Subscription Activation continues to work seamlessly.
 
-    If this policy is set to **Enabled**, it must be changed to **Disabled** or **Not Configured**.
+Starting with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later, users are prompted for authentication with a toast notification when Subscription Activation needs to reactivate. The toast notification will show the following message:
 
-  - In the following registry key:
+> **Your account requires authentication**
+>
+> **Please sign in to your work or school account to verify your information.**
 
-    `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`
+Additionally, in the [**Activation**](ms-settings:activation) pane, the following message might appear:
 
-    check if the value `DoNotConnectToWindowsUpdateInternetLocations` exists. If the value does exist, verify that it has a REG_DWORD value of  `0`. If the value is instead set to `1`, it must be changed to `0`. The value can be changed by running the following command from an elevated command prompt:
+> **Please sign in to your work or school account to verify your information.**
 
-    ```cmd
-    reg.exe add HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate /v DoNotConnectToWindowsUpdateInternetLocations /t REG_DWORD /d 1 /f
-    ```
+The prompt for authentication usually occurs when a device has been offline for an extended period of time. This change eliminates the need for an exclusion in the Conditional Access policy for Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later. A Conditional Access policy can still be used with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later if the prompt for user authentication via a toast notification isn't desired.
 
-    > [!NOTE]
-    >
-    > Make sure to first check the group policy of **Do not connect to any Windows Update Internet locations**. If the policy is **Enabled**, then this registry key will eventually be reset back to `1` even after it's manually set to `0` via `reg.exe`. Setting the policy of **Do not connect to any Windows Update Internet locations** to **Disabled** or **Not Configured** will make sure the registry value remains as `0`.
+### Make sure Windows Update isn't blocked
 
-- Delay in the activation of Enterprise license of Windows.
+If a device isn't able to connect to Windows Update, it can lose activation status or be blocked from upgrading to Windows Enterprise. Make sure that Windows Update isn't blocked on the device:
 
-  There might be a delay in the activation of the Enterprise license in Windows. This delay is by design. Windows uses a built-in cache when determining upgrade eligibility. This behavior includes processing responses that indicate that the device isn't eligible for an upgrade. It can take up to four days after a qualifying purchase before the upgrade eligibility is enabled and the cache expires.
+- Using `gpedit.msc` or group policy editor in the domain, make sure that the following group policy setting is set to **Disabled** or **Not Configured**:
+
+  ::: zone pivot="windows-11"
+
+  **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Manage updates offered from Windows Server Update Service** > **Do not connect to any Windows Update Internet locations**
+
+  ::: zone-end
+
+  ::: zone pivot="windows-10"
+
+  **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Do not connect to any Windows Update Internet locations**
+
+  ::: zone-end
+
+  If this policy is set to **Enabled**, it must be changed to **Disabled** or **Not Configured**.
+
+- In the following registry key of the registry:
+
+  `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`
+
+  check if the value `DoNotConnectToWindowsUpdateInternetLocations` exists. If the value does exist, verify that it has a REG_DWORD value of  `0`. If the value is instead set to `1`, it must be changed to `0`. The value can be changed by running the following command from an elevated command prompt:
+
+  ```cmd
+  reg.exe add HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate /v DoNotConnectToWindowsUpdateInternetLocations /t REG_DWORD /d 1 /f
+  ```
+
+  > [!NOTE]
+  >
+  > Make sure to first check the group policy of **Do not connect to any Windows Update Internet locations**. If the policy is **Enabled**, then this registry key will eventually be reset back to `1` even after it's manually set to `0` via `reg.exe`. Setting the policy of **Do not connect to any Windows Update Internet locations** to **Disabled** or **Not Configured** will make sure the registry value remains as `0`.
+
+### Delay in the activation of Enterprise license of Windows
+
+There might be a delay in the activation of the Enterprise license in Windows. This delay is by design. Windows uses a built-in cache when determining upgrade eligibility. This behavior includes processing responses that indicate that the device isn't eligible for an upgrade. It can take up to four days after a qualifying purchase before the upgrade eligibility is enabled and the cache expires.
 
 ## Virtual Desktop Access (VDA)
 
@@ -528,6 +558,7 @@ Subscriptions to Windows Enterprise are also available for virtualized clients. 
 
 Virtual machines (VMs) must be configured to enable Windows Enterprise subscriptions for VDA. Active Directory-joined and Microsoft Entra joined clients are supported. For more information, see [Enable VDA for Enterprise subscription activation](vda-subscription-activation.md).
 
-## Related articles
+## Related content
 
+- [Windows subscription activation](windows-subscription-activation.md).
 - [MDM enrollment of Windows devices](/windows/client-management/mdm-enrollment-of-windows-devices).
