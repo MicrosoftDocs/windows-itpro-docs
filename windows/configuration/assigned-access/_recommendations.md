@@ -44,9 +44,9 @@ Configure your kiosk devices so that they are always up to date, without disrupt
 |--|--|--|
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#activehoursend) | Integer value that represents the end of active hours. For example, `22` represents 10PM |
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#activehoursstart) | Integer value that represents the start of active hours. For example, `7` represents 7AM |
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[AllowAutoUpdate] | `3` - Auto download and schedule the install |
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[ScheduledInstallTime](/windows/client-management/mdm/policy-csp-update#scheduledinstalltime) | Specify the time for the device to install updates. For example, `23` represents 11PM |
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel) | Set to `2`: turn off all notifications, including restart warnings |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#allowautoupdate) | Integer value. Set to `3` - Auto download and schedule the install |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[ScheduledInstallTime](/windows/client-management/mdm/policy-csp-update#scheduledinstalltime) | Integer value. Specify the time for the device to install updates. For example, `23` represents 11PM |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel) | Integer value. Set to `2`: turn off all notifications, including restart warnings |
 | **GPO** | Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience | Display options for update notifications > Set the value to **2 - Turn off all notifications, including restart warnings** |
 | **GPO** | Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\Configure Automatic Updates | **4 - Auto download and schedule the install** > specify an install time that is outside the active hours |
 | **GPO** | Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\Turn off auto-restart for updates during active hours | Configure the start and end active hours, during which the kiosk device can't restart due to Windows Update |
@@ -57,12 +57,12 @@ You may want to prent the kiosk device from going to sleep, or prevent users to 
 
 | Type | Path | Name/Description |
 |--|--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/`[HidePowerOptions](/windows/client-management/mdm/policy-csp-admx-startmenu#hidepoweroptions) | `<Enabled/>` |
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/`[Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#shutdown_allowsystemtobeshutdownwithouthavingtologon) | `0` |
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#displayofftimeoutpluggedin) | `<Enabled/><Data ID=\"VideoPowerDownTimeOutAC_2\" value=\"0\"/` |
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[SelectPowerButtonActionPluggedIn](/windows/client-management/mdm/policy-csp-power#selectpowerbuttonactionpluggedin) | `<Enabled/><Data ID=\"ACButtonAction_2\" value=\"0\"/` |
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[SelectSleepButtonActionPluggedIn](/windows/client-management/mdm/policy-csp-power#SelectSleepButtonActionPluggedIn) | `<Enabled/><Data ID=\"ACSleepButtonAction_2\" value=\"0\"/` |
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[StandbyTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#standbytimeoutpluggedin) | `<Enabled/><Data ID=\"ACStandbyTimeOut_2\" value=\"0\"/` |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/`[HidePowerOptions](/windows/client-management/mdm/policy-csp-admx-startmenu#hidepoweroptions) | String. Set to `<Enabled/>` |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/`[Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#shutdown_allowsystemtobeshutdownwithouthavingtologon) | Integer value. Set to `0` |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#displayofftimeoutpluggedin) | String. Set to `<Enabled/><Data ID="VideoPowerDownTimeOutAC_2" value="0"/>` |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[SelectPowerButtonActionPluggedIn](/windows/client-management/mdm/policy-csp-power#selectpowerbuttonactionpluggedin) | String. Set to `<Enabled/><Data ID="ACButtonAction_2" value="0"/>` |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[SelectSleepButtonActionPluggedIn](/windows/client-management/mdm/policy-csp-power#SelectSleepButtonActionPluggedIn) | String. Set to `<Enabled/><Data ID="ACSleepButtonAction_2" value="0"/>` |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Power/`[StandbyTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#standbytimeoutpluggedin) | String. Set to `<Enabled/><Data ID="ACStandbyTimeOut_2" value="0"/>` |
 | **GPO** | Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands | **Enable** |
 | **GPO** | Computer Configuration\Administrative Templates\System\Power Management\Button Settings\Select the Power button action | Select the action: **Take no action** |
 | **GPO** | Computer Configuration\Administrative Templates\System\Power Management\Button Settings\Select the Sleep button action | Select the action: **Take no action** |
@@ -100,8 +100,6 @@ Assigned access doesn't change accessibility settings. Use [Keyboard Filter](/wi
   For more information, see [Unified Write Filter][WHW-2]
 
 For more information, see [Custom Logon][WHW-1].
-
-
 
 ## Choose an app for a kiosk experience
 
