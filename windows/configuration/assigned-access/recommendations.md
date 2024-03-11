@@ -1,13 +1,11 @@
 ---
 title: Assigned Access recommendations
-description: Learn about the recommended kiosk and restricted useer experience configuration options.
+description: Learn about the recommended kiosk and restricted user experience configuration options.
 ms.topic: best-practice
 ms.date: 03/11/2024
 ---
 
 # Assigned Access recommendations
-
-⚠️ This article is still under work
 
 This article contains recommendations for devices configured with Assigned Access and Shell Launcher. Most of the recommendations include both group policy (GPO) and configuration service provider (CSP) settings to help you configure your kiosk devices.
 
@@ -40,7 +38,7 @@ Once automatic sign-in is configured, reboot the device. The account will sign i
 
 ## Windows Update
 
-Configure your kiosk devices so that they are always up to date, without disrupting the user experience. Here are some policy settings to consider, to configure Windows Update for your kiosk devices:
+Configure your kiosk devices so that they're always up to date, without disrupting the user experience. Here are some policy settings to consider, to configure Windows Update for your kiosk devices:
 
 | Type | Path | Name/Description |
 |--|--|--|
@@ -51,11 +49,11 @@ Configure your kiosk devices so that they are always up to date, without disrupt
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/Update/`[UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel) | Integer value. Set to `2`: turn off all notifications, including restart warnings |
 | **GPO** | Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience | Display options for update notifications > Set the value to **2 - Turn off all notifications, including restart warnings** |
 | **GPO** | Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\Configure Automatic Updates | **4 - Auto download and schedule the install** > specify an install time that is outside the active hours |
-| **GPO** | Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\Turn off auto-restart for updates during active hours | Configure the start and end active hours, during which the kiosk device can't restart due to Windows Update |
+| **GPO** | Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\Turn off autorestart for updates during active hours | Configure the start and end active hours, during which the kiosk device can't restart due to Windows Update |
 
 ## Power settings
 
-You may want to prveent the kiosk device from going to sleep, or prevent users to shut down or restart the kiosk. Here are some options to consider:
+You might want to prevent the kiosk device from going to sleep, or prevent users to shut down or restart the kiosk. Here are some options to consider:
 
 | Type | Path | Name/Description |
 |--|--|--|
@@ -100,6 +98,12 @@ Assigned access doesn't change accessibility settings. Use *Keyboard Filter* to 
 > [!NOTE]
 > If Keyboard Filter is turned ON, then some key combinations are blocked automatically without you having to explicitly block them. For more information, see [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter).
 
+You can also disable the accessibility features and other options on the lock screen with [Custom Logon][WHW-1]. For example, to remove the Accessibility option, use the following registry key:
+
+| Path | Name | Type | Value |
+|--|--|--|--|
+| `HKLM\Software\Microsoft\Windows Embedded\EmbeddedLogon\BrandingNeutral` | `BrandingNeutral` | REG_DWORD | 8 |
+
 ## Choose an app for a kiosk experience
 
 To create a kiosk experience with Assigned Access, you can choose UWP apps or Microsoft Edge. However, some applications might not provide a good user experience when used as a kiosk.
@@ -107,19 +111,18 @@ To create a kiosk experience with Assigned Access, you can choose UWP apps or Mi
 The following guidelines help you choose an appropriate Windows app for a kiosk experience:
 
 - Windows apps must be provisioned or installed for the Assigned Access account before they can be selected as the Assigned Access app. [Learn how to provision and install apps](/windows/client-management/mdm/enterprise-app-management#install_your_apps)
-- Updating a UWP app can sometimes change the Application User Model ID (AUMID) of the app. In such scenario, you must update the Assigned Access settings to execute the updated app, because Assigned Access uses the AUMID to determine the app to launch
+- UWP app updates can sometimes change the Application User Model ID (AUMID) of the app. In such scenario, you must update the Assigned Access settings to execute the updated app, because Assigned Access uses the AUMID to determine the app to launch
 - The app must be able to run above the lock screen. If the app can't run above the lock screen, it can't be used as a kiosk app
 - Some apps can launch other apps. Assigned Access in kiosk mode prevents Windows apps from launching other apps. Avoid selecting Windows apps that are designed to launch other apps as part of their core functionality
 - Microsoft Edge includes support for kiosk mode. To learn more, see [Microsoft Edge kiosk mode](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy)
-- Avoid selecting Windows apps that might expose the information you don't want to show in your kiosk, since kiosk usually means anonymous access and locates in a public setting. For example, an app that has a file picker allows the user to gain access to files and folders on the user's system, avoid selecting these types of apps if they provide unnecessary data access
+- Don't select Windows apps that might expose information you don't want to show in your kiosk, since kiosk usually means anonymous access and locates in a public setting. For example, an app that has a file picker allows the user to gain access to files and folders on the user's system, avoid selecting these types of apps if they provide unnecessary data access
 - Some apps might require more configurations before they can be used appropriately in Assigned Access. For example, Microsoft OneNote requires you to set up a Microsoft account for the Assigned Access user account before OneNote opens
-- The kiosk profile is designed for public-facing kiosk devices. Use a local, non-administrator account. If the device is connected to your organization network, using a domain or Microsoft Entra account could compromise confidential information
+- The kiosk profile is designed for public-facing kiosk devices. Use a local, nonadministrator account. If the device is connected to your organization network, using a domain or Microsoft Entra account could compromise confidential information
 
-When planning to deploy a kiosk or a restricted user experience, consider the following:
+When planning to deploy a kiosk or a restricted user experience, consider the following recommendations:
 
-- Evaluate all applications that users should use. If applications require user authentication, don't use a local or generic
-user account. Rather, target the group of users within the Assigned Access configuration file
-- A multi-app kiosk is appropriate for devices that are shared by multiple people. When you configure a multi-app kiosk, certain policy settings that affects all non-administrator users on the device. For a list of these policies, see [Assigned Access policy settings](policy-settings.md)
+- Evaluate all applications that users should use. If applications require user authentication, don't use a local or generic user account. Rather, target the group of users within the Assigned Access configuration file
+- A multi-app kiosk is appropriate for devices that are shared by multiple people. When you configure a multi-app kiosk, certain policy settings that affect all nonadministrator users on the device. For a list of these policies, see [Assigned Access policy settings](policy-settings.md)
 
 ### Develop your kiosk app
 
@@ -129,32 +132,24 @@ Assigned Access uses the *Lock framework*. When an Assigned Access user signs in
 
 When a stop error occurs, Windows displays a blue screen with a stop error code. You can replace the standard screen with a blank screen for OS errors. For more information, see [Configure system failure and recovery options](/troubleshoot/windows-client/performance/configure-system-failure-and-recovery-options).
 
-## Lock screen customizations
+## Lock screen notifications
 
-You can disable the accessibility
+Consider removing notifications from the lock screen to prevent users from seeing notifications when the device is locked. Here are some options to consider:
 
-* feature on the sign-in screen
-  - **Use an MDM provider**: In Intune, you can use the [Control Panel and Settings](/mem/intune/configuration/device-restrictions-windows-10#control-panel-and-settings) to manage this feature.
-  - **Use the registry**: For more information, see [how to disable the Ease of Access button in the registry](/windows-hardware/customize/enterprise/complementary-features-to-custom-logon#welcome-screen)
-
-## Notifications on the lock screen
-
-  - **Use Group policy**:
-    - `Computer Configuration\Administrative Templates\System\Logon\Turn off app notifications on the lock screen`: Select **Enabled**.
-    - `User Configuration\Administrative Templates\Start Menu and Taskbar\Notifications\Turn off toast notifications on the lock screen`: Select **Enabled**.
-  - **Use an MDM provider**: This feature uses the [AboveLock/AllowToasts CSP](/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowtoasts). In Intune, you have the following options:
-    - [Locked screen experience device configuration profile](/mem/intune/configuration/device-restrictions-windows-10#locked-screen-experience): See this setting, and more settings you can manage.
-    - [Administrative templates](/mem/intune/configuration/administrative-templates-windows): These templates are the administrative templates used in on-premises Group Policy. Configure the following settings:
-      - `\Start Menu and Taskbar\Notifications\Turn off toast notifications on the lock screen`: Select **Enabled**.
-      - `\System\Logon\Turn off app notifications on the lock screen`: Select **Enabled**.
+| Type | Path | Name/Description |
+|--|--|--|
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/AboveLock/`[AllowToasts](/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowtoasts)| Integer. Set to `0` |
+| **GPO** | Computer Configuration\Administrative Templates\System\Logon\Turn off app notifications on the lock screen | **Enabled**|
 
 ## File Explorer customizations
 
 Here are some options to help you to further customize the File Explorer experience:
 
-|Setting|Description|
-|-|-|
-|Disable removable media|You can disable removable media, such as USB drives, from being used on the device. This can help prevent data theft or malware from being introduced to the device.<br>- CSP: `./Device/Vendor/MSFT/Policy/Config/`[ADMX_DeviceInstallation/DeviceInstall_AllowAdminInstall](/windows/client-management/mdm/policy-csp-admx-deviceinstallation#deviceinstall_allowadmininstall)<br>-**GPO**: **Computer Configuration** > **Administrative Templates** > **System** > **Device Installation** > **Device Installation Restrictions**<br><br>**Note**: to prevent this policy from affecting a member of the Administrators group, select **Allow administrators to override Device Installation Restriction policies** > **Enabled**|
+| Type | Path | Name/Description |
+|--|--|--|
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/FileExplorer/`[AllowOptionToShowThisPC](/windows/client-management/mdm/policy-csp-fileexplorer#allowoptiontoshowthispc)| Integer. If you set it to `0`, users can't access *This PC* from File Explorer |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/FileExplorer/`[SetAllowedStorageLocations](/windows/client-management/mdm/policy-csp-fileexplorer#SetAllowedStorageLocations)| Integer. With this policy setting, you can configure which folders a user can access from File Explorer. For example, if you set it to `1`, users can only access removable drives|
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/FileExplorer/`[DisableGraphRecentItems](/windows/client-management/mdm/policy-csp-fileexplorer#DisableGraphRecentItems)| Integer. Set to `1` |
 
 ## Troubleshooting and logs
 
@@ -165,11 +160,10 @@ For more information about troubleshooting kiosk issues, see [Troubleshoot kiosk
 Event Viewer
 Run "eventvwr.msc"
 Navigate to "Applications and Services Logs"
-There are 2 areas of your interests:
+There are two areas of your interests:
 "Microsoft-Windows-AssignedAccess"
 "Microsoft-Windows-AssignedAccessBroker"
-Before any repro, it's recommended to enable "Operational" channel to get the most of logs.
-TraceLogging
+Before any repro, enable the *Operational* channel to get the most of logs.
 
 Registry Key
 These locations contain the latest Assigned Access Configuration:
