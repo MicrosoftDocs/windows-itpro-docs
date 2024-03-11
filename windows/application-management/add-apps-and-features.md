@@ -1,6 +1,6 @@
 ---
-title: Add or hide Windows features
-description: Learn how to add Windows optional features using the Apps & features page in the Settings app. Also see the group policy objects (GPO) and MDM policies that show or hide Apps and Windows Features in the Settings app. Use Windows PowerShell to show or hide specific features in Windows Features.
+title: Add, remove, or hide Windows features
+description: Learn how to add or remove Windows optional features using the Optional features page in the Settings app. Also see the group policy objects (GPO) and MDM policies that show or hide Windows Features in the Settings app. Use Windows PowerShell to show or hide specific features in Windows Features.
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
@@ -16,7 +16,7 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
-# Add or hide Windows features
+# Add, remove, or hide Windows features
 
 Windows has optional features that aren't included by default, but you can add later. These features are called [Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities), and can be added at any time. Some of these features are language resources like language packs or handwriting support. On organization-owned devices, you can control access to these other features. You can use group policy or mobile device management (MDM) policies to hide the UI from users, or use Windows PowerShell to enable or disable specific features.
 
