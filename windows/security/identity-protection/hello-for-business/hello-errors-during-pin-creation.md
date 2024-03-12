@@ -2,7 +2,7 @@
 title: Windows Hello errors during PIN creation
 description: When you set up Windows Hello, you may get an error during the Create a work PIN step.
 ms.topic: troubleshooting
-ms.date: 01/26/2024
+ms.date: 03/12/2024
 ---
 
 # Windows Hello errors during PIN creation
