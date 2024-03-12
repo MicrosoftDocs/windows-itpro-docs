@@ -56,23 +56,23 @@ There are three servicing channels, each of which provides different levels of f
 There are currently three release channels for Windows clients:
 
 - The **General Availability Channel** receives feature updates as soon as they're available.
-- The **Long-Term Servicing Channel**, which is designed to be used only for specialized devices such as those that control medical equipment or ATM machines, receives new feature releases every two to three years.
+- The **Long-Term Servicing Channel** (LTSC) is designed to be used only for specialized devices such as those that control medical equipment or ATM machines. LTSC receives new feature releases every two to three years.
 - The **Windows Insider Program** provides organizations with the opportunity to test and provide feedback on features that will be shipped in upcoming updates.
 
-With each General Availability release, you would typically begin deploying right away to devices selected for early adoption (targeted validation) and then ramp up to full deployment at your discretion. This will enable you to gain access to new features, experiences, and integrated security as soon as possible.
+With each General Availability release, you would typically begin deploying right away to devices selected for early adoption (targeted validation) and then ramp up to full deployment at your discretion. This enables you to gain access to new features, experiences, and integrated security as soon as possible.
 
 >[!IMPORTANT]
 > Devices on the General Availability Channel must have their diagnostic data set to **1 (Basic)** or higher in order to ensure that the service is performing at the expected quality. For instructions to set the diagnostic data level, see [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
 
 ### Feature updates
 
-You can deploy feature updates using existing management tools. These changes come in bite-sized chunks rather than all at once like in prevoius versions of Windows, decreasing user readiness time.
+You can deploy feature updates using existing management tools. These changes come in bite-sized chunks rather than all at once like in previous versions of Windows, decreasing user readiness time.
 
 ### Quality updates
 
 Monthly updates in previous Windows versions were often overwhelming because of the sheer number of updates available each month. Many organizations selectively chose which updates they wanted to install and which they didn't, and this created countless scenarios in which organizations deployed essential security updates but picked only a subset of nonsecurity fixes.
 
-Rather than receiving several updates each month and trying to figure out which the organization needs, which ultimately causes platform fragmentation, administrators see one cumulative monthly update that supersedes the previous month's update, containing both security and non-security payloads. This approach makes updating simpler and ensures that devices are more closely aligned with the testing done at Microsoft, reducing unexpected issues resulting from updates.
+Rather than receiving several updates each month and trying to figure out which the organization needs, which ultimately causes platform fragmentation, administrators see one cumulative monthly update that supersedes the previous month's update, containing both security and nonsecurity payloads. This approach makes updating simpler and ensures that devices are more closely aligned with the testing done at Microsoft, reducing unexpected issues resulting from updates.
 
 ## Servicing channels
 
@@ -91,7 +91,7 @@ When Microsoft officially releases a feature update, we make it available to any
 
 Specialized systems—such as devices that control medical equipment, point-of-sale systems, and ATMs—often require a longer servicing option because of their purpose. These devices typically perform a single important task and don't need feature updates as frequently as other devices in the organization. It's more important that these devices be kept as stable and secure as possible than up to date with user interface changes. The LTSC servicing model prevents Enterprise LTSC devices from receiving the usual feature updates and provides only quality updates to ensure that device security stays up to date. With this in mind, quality updates are still immediately available to Windows 10 Enterprise LTSC clients, but customers can choose to defer them by using one of the servicing tools mentioned in the section Servicing tools.
 
-The Long-term Servicing channel is not intended for deployment on most or all the devices in an organization. It should be used only for special-purpose devices. As a general guideline, a device with Microsoft Office installed is a general-purpose device, typically used by an information worker, and therefore it's better suited for the General Availability channel.
+The Long-term Servicing channel isn't intended for deployment on most or all the devices in an organization. It should be used only for special-purpose devices. As a general guideline, a device with Microsoft Office installed is a general-purpose device, typically used by an information worker, and therefore it's better suited for the General Availability channel.
 
 Microsoft never publishes feature updates through Windows Update on devices that run Windows 10 Enterprise LTSC. Instead, it typically offers new LTSC releases every 2-3 years, and organizations can choose to install them as in-place upgrades or even skip releases over the product's lifecycle. Always check your individual LTSC release to verify its servicing lifecycle. For more information, see [release information](/windows/release-health/), or perform a search on the [product's lifecycle information](/lifecycle/products/) page.
 
