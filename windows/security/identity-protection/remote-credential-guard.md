@@ -169,7 +169,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 
 | Setting |
 |--|
-|- **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration`<br>- **Data type:** string<br>- **Value:** `<enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>`<br><br>Possible values for `RestrictedRemoteAdministrationDrop` are:<br>- `0`: Disabled<br>- `1`: Require Restricted Admin<br>- `2`: Require Remote Credential Guard<br>- `3`: Restrict credential delegation |
+|- **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration`<br>- **Data type:** string<br>- **Value:** `<enabled/><data id="RestrictedRemoteAdministrationDrop" value="2"/>`<br><br>Possible values for `RestrictedRemoteAdministrationDrop` are:<br>- `0`: Disabled<br>- `1`: Require Restricted Admin<br>- `2`: Require Remote Credential Guard<br>- `3`: Restrict credential delegation |
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
