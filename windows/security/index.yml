@@ -136,7 +136,7 @@ landingContent:
       - linkListType: whats-new
         links:
           - text: Completed FIPS validations - Windows 11
-            url: windows/security/security-foundations/certification/validations/fips-140-windows11
+            url: /windows/security/security-foundations/certification/validations/fips-140-windows11
           - text: Completed CC certifications - Windows 11
             url: /windows/security/security-foundations/certification/validations/cc-windows11
 
