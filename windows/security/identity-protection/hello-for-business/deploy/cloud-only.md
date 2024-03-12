@@ -1,8 +1,8 @@
 ---
 title: Windows Hello for Business cloud-only deployment guide
 description: Learn how to deploy Windows Hello for Business in a cloud-only deployment scenario.
-ms.date: 01/03/2024
-ms.topic: how-to
+ms.date: 03/12/2024
+ms.topic: tutorial
 ---
 
 # Cloud-only deployment guide
@@ -32,7 +32,7 @@ When you Microsoft Entra join a device, the system attempts to automatically enr
 
 Cloud-only deployments use Microsoft Entra multifactor authentication (MFA) during Windows Hello for Business enrollment, and there's no other MFA configuration needed. If you aren't already registered in MFA, you're guided through the MFA registration as part of the Windows Hello for Business enrollment process.
 
-Policy settings can be configured to control the behavior of Windows Hello for Business, via configuration service provider (CSP) or group policy (GPO). In cloud-only deployments, devices are 
+Policy settings can be configured to control the behavior of Windows Hello for Business, via configuration service provider (CSP) or group policy (GPO). In cloud-only deployments, devices are
 typically configured via an MDM solution like Microsoft Intune, using the [PassportForWork CSP][WIN-1].
 
 > [!NOTE]

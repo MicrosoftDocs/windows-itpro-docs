@@ -1,9 +1,9 @@
 ---
 title: Windows passwordless experience
 description: Learn how Windows passwordless experience enables your organization to move away from passwords.
-ms.collection: 
+ms.collection:
   - tier1
-ms.date: 09/27/2023
+ms.date: 03/12/2024
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -19,7 +19,7 @@ With Windows passwordless experience, users who sign in with Windows Hello or a 
 - Can't use the password credential provider on the Windows lock screen
 - Aren't prompted to use a password during in-session authentications (for example, UAC elevation, password manager in the browser, etc.)
 - Don't have the option *Accounts > Change password* in the Settings app
-  
+
   >[!NOTE]
   >Users can reset their password using <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>DEL</kbd> > **Manage your account**
 
