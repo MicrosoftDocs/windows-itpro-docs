@@ -17,8 +17,6 @@ items:
     href: store/index.md
   - name: Find the AUMID of an installed app
     href: store/find-aumid.md
-  - name: Manage Microsoft Store tips, "fun facts", and suggestions
-    href: tips/manage-tips-and-suggestions.md
 - name: Cellular settings
   href: cellular/provisioning-apn.md
 - name: Kiosks and restricted user experiences

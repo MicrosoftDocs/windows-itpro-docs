@@ -23,11 +23,11 @@ You can use configuration service provider (CSP) or group policy (GPO) settings 
 
 | Category | Setting name | Value |
 |--|--|--|
-| **Administrative Templates > Windows Components > Store** | Turn off the Store application| Select **Enabled**|
+| **Administrative Templates > Windows Components > Store** | Turn off the Store application| **Enabled**|
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][INT-3] with the [Policy CSP][CSP-2].
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [Policy CSP][CSP-1].
 
 | Setting |
 |--|
@@ -49,8 +49,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 
 When you prevent access to the Microsoft Store, users can't access the Store app. Here's a screenshot of the Store app when access is blocked:
 
-
 <!--links-->
 
-[CSP-2]: /windows/client-management/mdm/policy-csp-admx-credssp
-[INT-3]: /mem/intune/configuration/settings-catalog
+[CSP-1]: /windows/client-management/mdm/policy-csp-admx-windowsstore
+[INT-1]: /mem/intune/configuration/settings-catalog
