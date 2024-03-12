@@ -165,7 +165,6 @@ Another useful PowerShell cmdlet is [Get-WindowsOptionalFeature](/powershell/mod
 
 ## Related content
 
-- [How to add fonts that are missing after upgrading Windows](/windows/deployment/windows-missing-fonts).
 - [Features on Demand overview](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities).
 - [Available Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod).
 - [Language and region Features on Demand (FOD)](/windows-hardware/manufacture/desktop/features-on-demand-language-fod).

@@ -264,7 +264,6 @@ Here's a comprehensive list of the font families in each of the optional feature
 
 ## Related content
 
-- [Add, remove, or hide Windows features](/windows/client-management/client-tools/add-remove-hide-features).
 - [Download the list of all available language FODs](https://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx).
 - [Features On Demand V2 (Capabilities)](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities#span-idrelatedtopicsspanrelated-topics).
 - [Add Language Packs to Windows](/windows-hardware/manufacture/desktop/add-language-packs-to-windows).
