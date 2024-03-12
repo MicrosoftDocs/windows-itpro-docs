@@ -2,7 +2,7 @@
 title: Windows Hello errors during PIN creation
 description: Learn about the Windows Hello error codes that might happen during PIN creation.
 ms.topic: troubleshooting
-ms.date: 01/26/2024
+ms.date: 03/12/2024
 ---
 
 # Windows Hello errors during PIN creation

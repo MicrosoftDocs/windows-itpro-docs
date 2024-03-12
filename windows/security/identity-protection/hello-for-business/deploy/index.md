@@ -1,8 +1,8 @@
 ---
 title: Plan a Windows Hello for Business Deployment
 description: Learn about the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of your infrastructure.
-ms.date: 01/02/2024
-ms.topic: overview
+ms.date: 03/12/2024
+ms.topic: concept-article
 ---
 
 # Plan a Windows Hello for Business deployment

@@ -1,7 +1,7 @@
 ---
 title: Web sign-in for Windows
 description: Learn how Web sign-in in Windows works, key scenarios, and how to configure it.
-ms.date: 12/11/2023
+ms.date: 03/12/2023
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -11,8 +11,8 @@ ms.collection:
 
 # Web sign-in for Windows
 
-Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can enable a web-based sign-in experience on Microsoft Entra joined devices, unlocking new sign-in options and capabilities.
-This feature is called *Web sign-in*.
+Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can enable a web-based sign-in experience on Microsoft Entra joined devices.
+This feature is called *Web sign-in*, and it unlocks new sign-in options and capabilities.
 
 Web sign-in is a *credential provider*, and it was initially introduced in Windows 10 with support for Temporary Access Pass (TAP) only. With the release of Windows 11, the supported scenarios and capabilities of Web sign-in are expanded.\
 For example, you can sign in with the Microsoft Authenticator app or with a SAML-P federated identity.
@@ -21,11 +21,11 @@ This article describes how to configure Web sign-in and the supported key scenar
 
 ## System requirements
 
-To use web sign-in, the clients must meet the following prerequisites:
+Here are the prerequisites for using Web sign-in:
 
 - Windows 11, version 22H2 with [5030310][KB-1], or later
-- Must be [Microsoft Entra joined](/entra/identity/devices/concept-directory-join)
-- Must have Internet connectivity, as the authentication is done over the Internet
+- [Microsoft Entra joined](/entra/identity/devices/concept-directory-join)
+- Internet connectivity, as the authentication is done over the Internet
 
 > [!IMPORTANT]
 > Web sign-in is not supported for Microsoft Entra hybrid joined or domain joined devices.
