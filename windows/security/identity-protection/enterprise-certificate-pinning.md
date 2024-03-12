@@ -2,7 +2,7 @@
 title: Enterprise certificate pinning
 description: Enterprise certificate pinning is a Windows feature for remembering, or pinning, a root issuing certificate authority, or end-entity certificate to a domain name.
 ms.topic: concept-article
-ms.date: 05/24/2023
+ms.date: 03/12/2024
 ---
 
 # Enterprise certificate pinning overview
@@ -29,7 +29,7 @@ To deploy enterprise certificate pinning, you need to:
 - Apply the pin rules certificate trust list file to a reference administrative computer
 - Deploy the registry configuration on the reference computer via group policy
 
-### Create a pin rules XML file  
+### Create a pin rules XML file
 
 The XML-based pin rules file consists of a sequence of PinRule elements.
 Each PinRule element contains a sequence of one or more Site elements and a sequence of zero or more Certificate elements.
@@ -61,12 +61,12 @@ Each PinRule element contains a sequence of one or more Site elements and a sequ
 #### PinRules element
 
 The PinRules element can have the following attributes.
-For help with formatting Pin Rules, see [Represent a date in XML](#represent-a-date-in-xml) or [Represent a duration in XML](#represent-a-duration-in-xml). 
+For help with formatting Pin Rules, see [Represent a date in XML](#represent-a-date-in-xml) or [Represent a duration in XML](#represent-a-duration-in-xml).
 
 | Attribute | Description | Required |
 |-----------|-------------|----------|
 |  **Duration** or **NextUpdate** | Specifies when the Pin Rules expires. Either is required. **NextUpdate** takes precedence if both are specified. <br>  **Duration**, represented as an XML TimeSpan data type, doesn't allow years and months. You represent the **NextUpdate** attribute as an XML DateTime data type in UTC.  | **Required?** Yes. At least one is required. |
-| **LogDuration** or **LogEndDate** | Configures auditing only to extend beyond the expiration of enforcing the Pin Rules. <br>  **LogEndDate**, represented as an XML DateTime data type in UTC, takes precedence if both are specified. <br>  You represent **LogDuration** as an XML TimeSpan data type, which doesn't allow years and months. <br>  If `none of the attributes are specified, auditing expiration uses **Duration** or **NextUpdate** attributes. | No. | 
+| **LogDuration** or **LogEndDate** | Configures auditing only to extend beyond the expiration of enforcing the Pin Rules. <br>  **LogEndDate**, represented as an XML DateTime data type in UTC, takes precedence if both are specified. <br>  You represent **LogDuration** as an XML TimeSpan data type, which doesn't allow years and months. <br>  If `none of the attributes are specified, auditing expiration uses **Duration** or **NextUpdate** attributes. | No. |
 | **ListIdentifier** | Provides a friendly name for the list of pin rules. Windows doesn't use this attribute for certificate pinning enforcement; however, it's included when the pin rules are converted to a certificate trust list (CTL). | No. |
 
 #### PinRule element
@@ -86,7 +86,7 @@ The **Certificate** element can have the following attributes.
 | Attribute | Description | Required |
 |-----------|-------------|----------|
 | **File**  | Path to a file containing one or more certificates.  Where the certificate(s) can be encoded as: <br>- single certificate <br>- p7b <br>- sst <br> These files can also be Base64 formatted.  All **Site** elements included in the same **PinRule** element can match any of these certificates. | Yes (File, Directory, or Base64 must be present). |
-| **Directory** | Path to a directory containing one or more of the above certificate files. Skips any files not containing any certificates. | Yes (File, Directory, or Base64 must be present). | 
+| **Directory** | Path to a directory containing one or more of the above certificate files. Skips any files not containing any certificates. | Yes (File, Directory, or Base64 must be present). |
 | **Base64** | Base64 encoded certificate(s). Where the certificate(s) can be encoded as: <br>- single certificate <br>- p7b <br> - sst <br> This allows the certificates to be included in the XML file without a file directory dependency. <br> Note: <br> You can use **certutil -encode** to convert a .cer file into base64. You can then use Notepad to copy and paste the base64 encoded certificate into the pin rule.  | Yes (File, Directory, or Base64 must be present). |
 | **EndDate** | Enables you to configure an expiration date for when the certificate is no longer valid in the pin rule. <br>If you are in the process of switching to a new root or CA, you can set the **EndDate** to allow matching of this element's certificates.<br> If the current time is past the **EndDate**, when creating the certificate trust list (CTL) the parser outputs a warning message and excludes the certificate(s) from the Pin Rule in the generated CTL.<br> For help with formatting Pin Rules, see [Represent a date in XML](#represent-a-date-in-xml).| No.|
 
@@ -138,8 +138,8 @@ certutil -generatePinRulesCTL certPinRules.xml pinrules.stl
 
 ### Apply certificate pinning rules to a reference computer
 
-Now that your certificate pinning rules are in the certificate trust list format, you need to apply the settings to a reference computer as a prerequisite to deploying the setting to your enterprise. 
-To simplify the deployment configuration, it's best to apply your certificate pinning rules to a computer that has the Group Policy Management Console (GPMC) included in the Remote Server Administration Tools (RSAT). 
+Now that your certificate pinning rules are in the certificate trust list format, you need to apply the settings to a reference computer as a prerequisite to deploying the setting to your enterprise.
+To simplify the deployment configuration, it's best to apply your certificate pinning rules to a computer that has the Group Policy Management Console (GPMC) included in the Remote Server Administration Tools (RSAT).
 
 Use *certutil.exe* to apply your certificate pinning rules to your reference computer using the *setreg* argument.\
 The *setreg* argument takes a secondary argument that determines the location of where certutil writes the certificate pining rules.\
@@ -148,7 +148,7 @@ The last argument you provide is the name of file that contains your certificate
 You pass the name of the file as the last argument. You must prefix the file name with the `@` symbol as in the following example:
 
 ```cmd
-Certutil -setreg chain\PinRules @pinrules.stl 
+Certutil -setreg chain\PinRules @pinrules.stl
 ```
 
 > [!NOTE]
@@ -215,7 +215,7 @@ You can run the following commands from an elevated command prompt to achieve th
 set PinRulesLogDir=c:\PinRulesLog
 mkdir %PinRulesLogDir%
 icacls %PinRulesLogDir% /grant *S-1-15-2-1:(OI)(CI)(F)
-icacls %PinRulesLogDir% /grant *S-1-1-0:(OI)(CI)(F)  
+icacls %PinRulesLogDir% /grant *S-1-1-0:(OI)(CI)(F)
 icacls %PinRulesLogDir% /grant *S-1-5-12:(OI)(CI)(F)
 icacls %PinRulesLogDir% /inheritance:e /setintegritylevel (OI)(CI)L
 ```
@@ -233,7 +233,7 @@ For example:
 - `DE28F4A4_www.yammer.com.p7b`
 
 If there's either an enterprise certificate pin rule or a Microsoft certificate pin rule mismatch, then Windows writes the .p7b file to the **MismatchPinRules** child folder.
-If the pin rules have expired, then Windows writes the .p7b to the **ExpiredPinRules** child folder. 
+If the pin rules have expired, then Windows writes the .p7b to the **ExpiredPinRules** child folder.
 
 ## Represent a date in XML
 
@@ -244,7 +244,7 @@ You can then copy and paste the output of the cmdlet into the XML file.
 
 ![Representing a date.](images/enterprise-certificate-pinning-representing-a-date.png)
 
-For simplicity, you can truncate decimal point (.) and the numbers after it. 
+For simplicity, you can truncate decimal point (.) and the numbers after it.
 However, be certain to append the uppercase "Z" to the end of the XML date string.
 
 ```cmd
@@ -268,7 +268,7 @@ You can use Windows PowerShell to properly format and validate durations (timesp
 
 ## Convert an XML duration
 
-You can convert an XML formatted timespan into a timespan variable that you can read. 
+You can convert an XML formatted timespan into a timespan variable that you can read.
 
 ![Converting an XML duration.](images/enterprise-certificate-pinning-converting-a-duration.png)
 

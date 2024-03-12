@@ -2,7 +2,7 @@
 title: Windows identity protection
 description: Learn more about identity protection technologies in Windows.
 ms.topic: overview
-ms.date: 07/27/2023
+ms.date: 03/12/2024
 ---
 
 # Windows identity protection

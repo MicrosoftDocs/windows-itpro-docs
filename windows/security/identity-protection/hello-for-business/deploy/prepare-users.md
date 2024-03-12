@@ -1,7 +1,7 @@
 ---
 title: Prepare users to provision and use Windows Hello for Business
 description: Learn how to prepare users to enroll and to use Windows Hello for Business.
-ms.date: 01/02/2024
+ms.date: 03/12/2024
 ms.topic: end-user-help
 ---
 
