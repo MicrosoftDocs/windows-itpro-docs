@@ -65,37 +65,38 @@ landingContent:
           - text: Hyper-V firewall
             url: /windows/security/operating-system-security/network-security/windows-firewall/hyper-v-firewall
 
-
-
-  - title: Learn about hardware security
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Trusted Platform Module
-            url: /windows/security/hardware-security/tpm/trusted-platform-module-overview
-          - text: Microsoft Pluton
-            url: /windows/security/hardware-security/pluton/microsoft-pluton-security-processor
-          - text: Windows Defender System Guard
-            url: /windows-hardware/design/device-experiences/oem-vbs
-          - text: Virtualization-based security (VBS)
-            url: /windows/security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows
-          - text: Secured-core PC
-            url: /windows-hardware/design/device-experiences/oem-highly-secure-11
-
   - title: Learn about identity protection
     linkLists:
       - linkListType: overview
         links:
+          - text: Passwordless strategy
+            url: /windows/security/identity-protection/passwordless-strategy
           - text: Windows Hello for Business
             url: /windows/security/identity-protection/hello-for-business
           - text: Windows passwordless experience
             url: /windows/security/identity-protection/passwordless-experience
           - text: Web sign-in for Windows
             url: /windows/security/identity-protection/web-sign-in
-          - text: Support for passkeys in Windows
+          - text: Passkeys
             url: /windows/security/identity-protection/passkeys
+          - text: FIDO2 security keys
+            url: /azure/active-directory/authentication/howto-authentication-passwordless-security-key
           - text: Enhanced phishing protection with SmartScreen
             url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection
+      - linkListType: how-to-guide
+        links:
+          - text: Configure PIN reset
+            url: /windows/security/identity-protection/hello-for-business/pin-reset
+          - text: RDP sign-in with Windows Hello for Business
+            url: /windows/security/identity-protection/hello-for-business/rdp-sign-in
+      - linkListType: architecture
+        links:
+          - text: Plan a Windows Hello for Business deployment
+            url: /windows/security/identity-protection/hello-for-business/deploy/
+      - linkListType: deploy
+        links:
+          - text: Cloud Kerberos trust deployment guide
+            url: /windows/security/identity-protection/hello-for-business/deploy/hybrid-cloud-kerberos-trust
 
   - title: Learn about application security
     linkLists:
@@ -111,12 +112,18 @@ landingContent:
             url: /windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview
           - text: Windows Sandbox
             url: /windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview
+      - linkListType: how-to-guide
+        links:
+          - text: Configure Windows Sandbox
+            url: /windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-configure-using-wsb-file
 
   - title: Learn about security foundations
     linkLists:
       - linkListType: overview
         links:
-          - text: FIPS 140-2 validation
+          - text: Zero trust
+            url: /windows/security/security-foundations/zero-trust-windows-device-health
+          - text: FIPS 140 validation
             url: /windows/security/security-foundations/certification/fips-140-validation
           - text: Common Criteria Certifications
             url: /windows/security/security-foundations/certification/windows-platform-common-criteria
@@ -126,6 +133,12 @@ landingContent:
             url: https://www.microsoft.com/msrc/bounty-windows-insider-preview
           - text: OneFuzz service
             url: https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/
+      - linkListType: whats-new
+        links:
+          - text: Completed FIPS validations - Windows 11
+            url: windows/security/security-foundations/certification/validations/fips-140-windows11
+          - text: Completed CC certifications - Windows 11
+            url: /windows/security/security-foundations/certification/validations/cc-windows11
 
   - title: Learn about cloud security
     linkLists:
