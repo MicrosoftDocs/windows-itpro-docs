@@ -11,7 +11,7 @@ manager: aaroncz
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 12/06/2023
+ms.date: 03/12/2024
 ---
 
 # UCClient
@@ -35,7 +35,6 @@ UCClient acts as an individual device's record. It contains data such as the cur
 | **IsVirtual** | [bool](/azure/data-explorer/kusto/query/scalar-data-types/bool) | No | `Yes, No` | Whether device is a virtual device. |
 | **LastCensusScanTime [UTC]** | [datetime](/azure/kusto/query/scalar-data-types/datetime)  | No |  `2020-05-14 09:26:03.478039` | The last time this device performed a successful census scan, if any. |
 | **LastWUScanTime [UTC]** | [datetime](/azure/kusto/query/scalar-data-types/datetime)  | No |  `2020-05-14 09:26:03.478039` | The last time this device performed a successful Windows Update scan, if any. |
-| **NewTest_CF [UTC]** | [datetime](/azure/kusto/query/scalar-data-types/datetime)  | No |  `2020-05-14 09:26:03.478039` | Currently, data isn't gathered to populate this field. |
 | **OSArchitecture** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | Yes | `x86` | The architecture of the operating system (not the device) this device is currently on. |
 | **OSBuild** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | No | `10.0.22621.1702` | The full operating system build installed on this device, such as Major.Minor.Build.Revision |
 | **OSBuildNumber** | [int](/azure/kusto/query/scalar-data-types/int) | No | `22621` | The major build number, in int format, the device is using. |
