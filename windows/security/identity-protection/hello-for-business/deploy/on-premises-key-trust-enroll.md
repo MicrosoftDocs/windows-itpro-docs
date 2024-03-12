@@ -1,5 +1,5 @@
 ---
-ms.date: 01/03/2024
+ms.date: 03/12/2024
 ms.topic: tutorial
 title: Configure Windows Hello for Business Policy settings in an on-premises key trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business in an on-premises key trust scenario
