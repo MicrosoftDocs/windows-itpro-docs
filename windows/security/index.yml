@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
-title: Windows client security documentation
-summary: Learn how to secure Windows clients for your organization.
+title: Windows security documentation
+summary: Windows is designed with zero-trust principles at its core, offering powerful security from chip to cloud. As organizations embrace hybrid work environments, the need for robust security solutions becomes paramount. Windows integrates advanced hardware and software protection, ensuring data integrity and access control across devices. Learn about the different security features included in Windows.
 
 metadata:
   ms.topic: landing-page
