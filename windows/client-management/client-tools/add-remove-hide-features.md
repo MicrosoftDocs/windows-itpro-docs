@@ -4,7 +4,7 @@ description: Learn how to add or remove Windows optional features using the Opti
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.date: 03/11/2024
+ms.date: 03/12/2024
 ms.topic: how-to
 ms.service: windows-client
 ms.subservice: itpro-apps
@@ -21,6 +21,8 @@ appliesto:
 Windows has optional features that aren't included by default, but you can add later. These features are called [Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities), and can be added at any time. Some of these features are language resources like language packs or handwriting support. On organization-owned devices, you can control access to these other features. You can use group policy or mobile device management (MDM) policies to hide the UI from users, or use Windows PowerShell to enable or disable specific features.
 
 ## Use the Windows Settings app to add or remove features
+
+<!-- OSADO-45535220 -->
 
 Open the **Optional features** pane in the **Settings** app by selecting the following link:
 
@@ -47,7 +49,7 @@ or
 
 1. In the left hand pane of the Settings app, select **System**.
 
-1. In the right hand pane under **System**, select **Optional features**.
+1. In the right hand **System** pane, select **Optional features**.
 
 ::: zone-end
 
@@ -93,6 +95,10 @@ Once the **Optional features** pane is open, add a feature with the following st
 
 ::: zone-end
 
+> [!IMPORTANT]
+>
+> Windows Update is used to add the optional features. The device needs to be online so Windows Update can download the content that it needs to add.
+
 ### Remove a feature
 
 ::: zone pivot="windows-11"
@@ -105,13 +111,7 @@ Once the **System > Optional features** pane is open, remove a feature with the 
 
 > [!NOTE]
 >
-> The navigation steps, UI elements, and UI text in this section are based on the latest version of Windows 11 with the latest cumulative update installed. For the following versions of Windows 11 that are currently still supported:
->
-> - Windows 11 21H2
-> - Windows 11 22H2 without the latest cumulative update installed
-> - Windows 11 23H2 without the latest cumulative update installed
->
-> some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page might be located under **Settings** > **Apps**.
+> The navigation steps, UI elements, and UI text in this section are based on the latest version of Windows 11 with the latest cumulative update installed. For other versions of Windows 11 that are currently supported or don't have the latest cumulative update, some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page might be located under **Settings** > **Apps**.
 
 ::: zone-end
 
@@ -125,12 +125,7 @@ Once the **Optional features** pane is open, remove a feature with the following
 
 > [!NOTE]
 >
-> The navigation steps, UI elements, and UI text in this section are based on Windows 10 22H2 with the latest cumulative update installed. For the following versions of Windows 10 that are currently still supported:
->
-> - Windows 10 21H2
-> - Windows 10 22H2 without the latest cumulative update installed
->
-> some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page might be located under **Settings** > **Apps** > **Apps & features**.
+> The navigation steps, UI elements, and UI text in this section are based on Windows 10 22H2 with the latest cumulative update installed. For other versions of Windows 10 that are currently supported or don't have the latest cumulative update, some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page might be located under **Settings** > **Apps** > **Apps & features**.
 
 ::: zone-end
 
@@ -170,6 +165,7 @@ Another useful PowerShell cmdlet is [Get-WindowsOptionalFeature](/powershell/mod
 
 ## Related content
 
+- [How to add fonts that are missing after upgrading Windows](../../deployment/windows-missing-fonts.md).
 - [Features on Demand overview](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities).
 - [Available Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod).
 - [Language and region Features on Demand (FOD)](/windows-hardware/manufacture/desktop/features-on-demand-language-fod).

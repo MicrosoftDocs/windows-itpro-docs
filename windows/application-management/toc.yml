@@ -5,8 +5,6 @@ items:
   items:
     - name: Overview of apps in Windows
       href: overview-windows-apps.md
-    - name: Add, remove, or hide Windows features
-      href: add-remove-hide-features.md
     - name: Sideload line of business (LOB) apps
       href: sideload-apps-in-windows.md
     - name: Private app repo on Windows 11
