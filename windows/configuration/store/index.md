@@ -1,19 +1,19 @@
 ---
-title: Configure access to the Microsoft Store
-description: Learn how to configure access to the Microsoft Store.
+title: Configure access to Microsoft Store
+description: Learn how to configure access to the Microsoft Store app.
 ms.topic: how-to
 ms.date: 03/12/2024
 ---
 
-# Configure access to the Microsoft Store
+# Configure access to Microsoft Store
 
-Microsoft Store is a digital distribution platform that provides a way for the users to install applications on Windows devices. Organizations that manage Windows devices can configure access to Microsoft Store for devices in their organization. For some organizations, business policies require blocking access to Microsoft Store.
+Microsoft Store is a digital distribution platform that provides a way for users to install applications on Windows devices. For some organizations, business policies require blocking access to Microsoft Store.
 
 This article describes how to configure access to the Microsoft Store app in your organization.
 
-## Prevent access to the Microsoft Store
+## Prevent access to the Microsoft Store app
 
-You can use configuration service provider (CSP) or group policy (GPO) settings to configure access to Microsoft Store. The CSP configuration is available to Windows Enterprise and Education editions only.
+You can use configuration service provider (CSP) or group policy (GPO) settings to configure access to the Microsoft Store app. The CSP configuration is available to Windows Enterprise and Education editions only.
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
