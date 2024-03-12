@@ -49,6 +49,8 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 When you prevent access to the Microsoft Store, users can't access the Store app. Here's a screenshot of the Store app when access is blocked:
 
+:::image type="content" source="images/store-blocked.png" alt-text="Screenshot of the Microsoft Store app blocked access.":::
+
 <!--links-->
 
 [CSP-1]: /windows/client-management/mdm/policy-csp-admx-windowsstore
