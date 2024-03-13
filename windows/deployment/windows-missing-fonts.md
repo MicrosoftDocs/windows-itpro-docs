@@ -191,7 +191,7 @@ or
 
 > [!NOTE]
 >
-> The navigation steps, UI elements, and UI text in this section are based on the latest version of Windows 11 with the latest cumulative update installed. For other versions of Windows 11 that are currently supported or don't have the latest cumulative update, some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page might be located under **Settings** > **Apps**.
+> The navigation steps, UI elements, and UI text in this section are based on the latest version of Windows 11 with the latest cumulative update installed. For other versions of Windows 11 that are currently supported or don't have the latest cumulative update, some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) pane might be located under **Settings** > **Apps**.
 
 Once the **System > Optional features** pane is open, add a supplemental font with the following steps:
 
