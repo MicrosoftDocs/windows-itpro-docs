@@ -32,14 +32,16 @@ landingContent:
 
   - title: Configure a Windows kiosk
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: concept
         links:
-          - text: Configure kiosks and restricted user experiences
-            url: assigned-access/index.md
           - text: What is Assigned Access?
             url: assigned-access/overview.md
           - text: What is Shell Launcher?
             url: assigned-access/shell-launcher/index.md
+      - linkListType: how-to-guide
+        links:
+          - text: Configure kiosks and restricted user experiences
+            url: assigned-access/index.md
       - linkListType: quickstart
         links:
           - text: Configure a kiosk with Assigned Access
@@ -48,13 +50,27 @@ landingContent:
             url: assigned-access/shell-launcher/quickstart-kiosk.md
           - text: Configure a restricted user experience with Assigned Access
             url: assigned-access/quickstart-restricted-user-experience.md
+      - linkListType: reference
+        links:
+          - text: Assigned Access XML Schema Definition (XSD)
+            url: assigned-access/xsd.md
+          - text: Shell Launcher XML Schema Definition (XSD)
+            url: assigned-access/shell-launcher/xsd.md
 
   - title: Configure shared devices
     linkLists:
+      - linkListType: concept
+        links:
+          - text: Shared devices concepts
+            url: /windows/configuration/shared-pc/shared-devices-concepts
       - linkListType: how-to-guide
         links:
-          - text: Manage multi-user and guest devices
-            url: shared-devices-concepts.md
+          - text: Configure a shared or guest Windows device
+            url: /windows/configuration/shared-pc/set-up-shared-or-guest-pc
+      - linkListType: reference
+        links:
+          - text: Shared PC technical reference
+            url: /windows/configuration/shared-pc/shared-pc-technical
 
   - title: Use provisioning packages
     linkLists:
