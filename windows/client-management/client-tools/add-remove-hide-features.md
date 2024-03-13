@@ -4,7 +4,7 @@ description: Learn how to add or remove Windows optional features using the Opti
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.date: 03/13/2024
+ms.date: 03/19/2024
 ms.topic: how-to
 ms.service: windows-client
 ms.subservice: itpro-apps
@@ -85,7 +85,7 @@ Once the **System > Optional features** pane is open, add a feature with the fol
 
     1. Once all of the desired features are selected, select the **Next** button.
 
-    1. Review the selected list of features and then select the **Install** button to add the selected features.
+    1. Review the selected list of features and then select the **Add** button to add the selected features.
 
 ::: zone-end
 
@@ -99,7 +99,7 @@ Once the **Optional features** pane is open, add a feature with the following st
 
     1. Find the desired feature to add and then select the box next to the feature to add it. Multiple features can be selected.
 
-    1. Once all of the desired features are selected, select the **Install** button.
+    1. Once all of the desired features are selected, select the **Add** button.
 
 ::: zone-end
 
@@ -115,7 +115,7 @@ Once the **System > Optional features** pane is open, remove a feature with the 
 
 1. Under **Installed features**, search for the feature that needs to be removed in the **Search installed features** search box, or scroll through the list of added features until the feature that needs to be removed is found.
 
-1. Once the feature that needs to be removed is found, select the feature to expand it, and then select the **Uninstall** button.
+1. Once the feature that needs to be removed is found, select the feature to expand it, and then select the **Remove** button.
 
 ::: zone-end
 
@@ -125,7 +125,7 @@ Once the **Optional features** pane is open, remove a feature with the following
 
 1. Under **Installed features**, search for the feature that needs to be removed in the **Find an installed optional feature** search box, or scroll through the list of added features until the feature that needs to be removed is found.
 
-1. Once the feature that needs to be removed is found, select the feature to expand it, and then select the **Uninstall** button.
+1. Once the feature that needs to be removed is found, select the feature to expand it, and then select the **Remove** button.
 
 ::: zone-end
 

@@ -7,7 +7,7 @@ author: frankroj
 ms.author: frankroj
 manager: aaroncz
 ms.topic: article
-ms.date: 03/13/2024
+ms.date: 03/19/2024
 ms.subservice: itpro-deploy
 zone_pivot_groups: windows-versions-11-10
 appliesto:
@@ -111,7 +111,7 @@ Once the **Time & language > Language & region** pane is open, add the fonts ass
 
         1. Once the desired language is found, select the language, and then select the **Next** button.
 
-        1. In the **Install language features** window, select the desired options for the language, and then select the **Install** button.
+        1. In the **Install language features** window, select the desired options for the language, and then select the **Add** button.
 
     1. The desired language should now be available in the drop-down menu next to **Windows display language**. Drop down the **Windows display language** menu and select the desired language.
 
@@ -139,7 +139,7 @@ Once the **Language** pane is open, add the fonts associated with a language and
 
     1. Once the desired language is found, select the language, and then select the **Next** button.
 
-    1. In the **Install language features** window, select the desired features for the language, and then select the **Install** button.
+    1. In the **Install language features** window, select the desired features for the language, and then select the **Add** button.
 
 1. The desired language should now be available in the drop-down menu below **Windows display language**. Drop down the **Windows display language** menu and select the desired language.
 
@@ -203,7 +203,7 @@ Once the **System > Optional features** pane is open, add a supplemental font wi
 
     1. Once all of the desired supplemental fonts are selected, select the **Next** button.
 
-    1. Review the selected list of features and then select the **Install** button to add the selected features.
+    1. Review the selected list of features and then select the **Add** button to add the selected features.
 
 ::: zone-end
 
@@ -227,7 +227,7 @@ Once the **Optional features** pane is open, add a supplemental font with the fo
 
     1. Find the desired supplemental font to add and then select the box next to the supplemental font to add it. Multiple supplemental fonts can be selected.
 
-    1. Once all of the desired supplemental fonts are selected, select the **Install** button.
+    1. Once all of the desired supplemental fonts are selected, select the **Add** button.
 
 ::: zone-end
 
