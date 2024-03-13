@@ -33,7 +33,7 @@ After you turn on this feature, your employees might experience reduced function
 
 - Sending a print job to a remote printer server that uses this feature and where the spooler process hasn't been excluded. In this situation, any fonts that aren't already available in the server's %windir%/Fonts folder won't be used.
 - Printing using fonts provided by the installed printer's graphics .dll file, outside of the %windir%/Fonts folder. For more information, see [Introduction to Printer Graphics DLLs](/windows-hardware/drivers/print/introduction-to-printer-graphics-dlls).
-- Using first or third-party apps that use memory-based fonts.
+- Using first or non-Microsoft apps that use memory-based fonts.
 - Using Internet Explorer to look at websites that use embedded fonts. In this situation, the feature blocks the embedded font, causing the website to use a default font. However, not all fonts have all of the characters, so the website might render differently.
 - Using desktop Office to look at documents with embedded fonts. In this situation, content shows up using a default font picked by Office.
 

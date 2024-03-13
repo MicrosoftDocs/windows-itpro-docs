@@ -11,7 +11,7 @@ ms.topic: include
 - If you disable this policy setting, the device doesn't provision Windows Hello for Business for any user
 - If you don't configure this policy setting, users can provision Windows Hello for Business
 
-Select the option *Don't start Windows Hello provisioning after sign-in* when you use a third-party solution to provision Windows Hello for Business:
+Select the option *Don't start Windows Hello provisioning after sign-in* when you use a non-Microsoft solution to provision Windows Hello for Business:
 
 - If you select *Don't start Windows Hello provisioning after sign-in*, Windows Hello for Business doesn't automatically start provisioning after the user has signed in
 - If you don't select *Don't start Windows Hello provisioning after sign-in*, Windows Hello for Business automatically starts provisioning after the user has signed in

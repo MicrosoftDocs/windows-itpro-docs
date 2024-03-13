@@ -197,9 +197,9 @@ Here are the steps to manually request a certificate using an Active Directory C
 
 ---
 
-## Use third-party certification authorities
+## Use non-Microsoft certification authorities
 
-If you're using a non-Microsoft PKI, the certificate templates published to the on-premises Active Directory may not be available. For guidance with integration of Intune/SCEP with non-Microsoft PKI deployments, refer to [Use third-party certification authorities (CA) with SCEP in Microsoft Intune][MEM-6].
+If you're using a non-Microsoft PKI, the certificate templates published to the on-premises Active Directory may not be available. For guidance with integration of Intune/SCEP with non-Microsoft PKI deployments, refer to [Use non-Microsoft certification authorities (CA) with SCEP in Microsoft Intune][MEM-6].
 
 As an alternative to using SCEP, or if none of the previously covered solutions work in your environment, you can manually generate Certificate Signing Requests (CSR) for submission to your PKI. To assist with this approach, you can use the [Generate-CertificateRequest][HTTP-1] PowerShell commandlet.
 
