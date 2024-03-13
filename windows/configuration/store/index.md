@@ -1,15 +1,23 @@
 ---
-title: Configure access to Microsoft Store
+title: Configure access to the Microsoft Store app
 description: Learn how to configure access to the Microsoft Store app.
 ms.topic: how-to
-ms.date: 03/12/2024
+ms.date: 03/13/2024
 ---
 
-# Configure access to Microsoft Store
+# Configure access to the Microsoft Store app
 
 Microsoft Store is a digital distribution platform that provides a way for users to install applications on Windows devices. For some organizations, business policies require blocking access to Microsoft Store.
 
 This article describes how to configure access to the Microsoft Store app in your organization.
+
+## Considerations
+
+Here are some considerations when if you prevent access to the Microsoft Store app:
+
+- Store applications keep updating automatically, by default
+- Users might still be able to install applications using Windows Package Manager (winget), or other methods, if they don't need to acquire the package from Microsoft Store
+- Devices managed by Microsoft Intune can still install applications sourced from Microsoft Store, even if you block access to the Microsoft Store app. To learn more, see [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-microsoft)
 
 ## Prevent access to the Microsoft Store app
 
@@ -47,7 +55,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 ## User experience
 
-When you prevent access to the Microsoft Store, users can't access the Store app. Here's a screenshot of the Store app when access is blocked:
+When you turn off the Microsoft Store application, users get the following message when they open it:
 
 :::image type="content" source="images/store-blocked.png" alt-text="Screenshot of the Microsoft Store app blocked access.":::
 
