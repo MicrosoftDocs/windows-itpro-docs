@@ -49,7 +49,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 When you turn off the Microsoft Store application, users get the following message when they open it:
 
-:::image type="content" source="images/store-blocked.png" alt-text="Screenshot of the Microsoft Store app blocked access.":::
+:::image type="content" source="images/store-blocked.png" alt-text="Screenshot of the Microsoft Store app blocked access." border="false":::
 
 ## Considerations
 
