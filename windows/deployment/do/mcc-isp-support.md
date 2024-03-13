@@ -13,7 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>	
-ms.date: 12/31/2017
+ms.date: 02/07/2024
 ---
 
 # Support and troubleshooting
@@ -22,7 +22,7 @@ This article provides information on how to troubleshoot common issues with Micr
 
 ## Common issues
 
-This section details a few common issues that customers face during the sign up process.
+This section details a few common issues that customers face during the sign-up process.
 
 ### Sign up errors
 
@@ -34,18 +34,75 @@ During sign-up, we verify the information you provide against what is present in
 
 During sign-up, a verification code is sent to your NOC email address present in [Peering DB](https://www.peeringdb.com/). This code expires in 24 hours. If it's expired, you'll need to request a new verification code to complete the sign-up.  
 
+#### Unable to re-sign up
+
+Delete any MCC resource that you're using before you resign up for the service. Deleting any existing MCC resource unlocks your ASN, which allows you to successfully sign up.
+
+
 ### Cache Node Errors  
 
-#### Cannot find my cache node
+#### Network connectivity issues
 
-Did you previously had access to your cache nodes but it's now no longer accessible? If so, it may be because you had a trial subscription, and its trial period ended. To resolve this issue, complete the following two steps:
+ Updating Docker's DNS can help resolve some connectivity issues.
+ Try the following Docker DNS updates until one solves your connectivity problem. 
+ Once connectivity is established, there's no need to continue updating Docker's DNS.
 
-1. Create a new Azure Pay-As-You-Go subscription  
-1. Recreate the cache nodes using the new subscription
+##### Update Docker's DNS to use the Google DNS resolver
+
+```
+nano /etc/docker/daemon.json
+```
+
+Update the contents of this file to match the following example, which includes the public Google DNS resolver:
+
+```
+"log-driver": "json-file", "log-opts": {"max-size": "10m","max-file": "3"},"dns":["8.8.8.8", "8.8.4.4"]
+``` 
+
+Save and close using the command CTRL-X and then Y(es) to save
+		 
+Restart Docker for this change to take effect:
+
+```
+systemctl restart docker
+```
+
+Rerun the IoT Edge Check command to validate proper connectivity:
+
+```
+iotedge check -verbose
+```
+
+
+##### Update Docker's DNS to use your company's DNS resolver
+
+```
+nano /etc/docker/daemon.json
+```
+
+Update the contents of this file to match the following example, which includes the public Google DNS resolver: 
+
+```
+"log-driver": "json-file", "log-opts": {"max-size": "10m","max-file": "3"},"dns":["<Your companies DNS Resolver IP Address>"]
+```
+
+Save and close using the command CTRL-X and then Y(es) to save.
+
+Restart Docker for this change to take effect:
+
+```
+systemctl restart docker
+```
+
+Rerun the IoT Edge Check command to validate proper connectivity:
+
+```
+iotedge check -verbose
+```
 
 ## Diagnose and Solve Problems
 
-If this article isn't resolving the issue you're facing with your cache node, you can use the **Diagnose and solve problems** functionality within your MCC resource to continue troubleshooting. **Diagnose and solve problems** contains solutions to most common problems that users may face as they onboard.
+If this article isn't resolving the issue you're facing with your cache node, you can use the **Diagnose and solve problems** functionality within your MCC resource to continue troubleshooting. **Diagnose and solve problems** contains solutions to most common problems that users might face as they onboard.
 
 You can find **Diagnose and solve problems** on the left pane within your MCC resource.
 
@@ -57,7 +114,7 @@ Within **Diagnose and solve problems**, select **Troubleshoot** under the type o
 
 ## Steps to obtain an Azure subscription ID
 
-To onboard onto Microsoft Connected Cache, you will need an Azure subscription ID. Follow the steps below to obtain your subscription ID:
+To onboard onto Microsoft Connected Cache, you'll need an Azure subscription ID. Use the following steps to obtain your subscription ID:
 <!--Using include file, get-azure-subscription.md, for shared content-->
 [!INCLUDE [Get Azure subscription](includes/get-azure-subscription.md)]
 

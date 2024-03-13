@@ -34,7 +34,7 @@ You can monitor the success of the activation process for a computer running Win
 
 - Using the Volume Licensing Service Center website to track use of MAK keys.
 
-- Using the `Slmgr /dlv` command on a client computer or on the KMS host. For a full list of options, see [Slmgr.vbs options](/previous-versions//ff793433(v=technet.10)).
+- Using the `Slmgr /dlv` command on a client computer or on the KMS host. For a full list of options, see [Slmgr.vbs options for obtaining volume activation information](/windows-server/get-started/activation-slmgr-vbs-options).
 
 - Viewing the licensing status, which is exposed through Windows Management Instrumentation (WMI); therefore, it's available to non-Microsoft or custom tools that can access WMI. (Windows PowerShell can also access WMI information.)
 

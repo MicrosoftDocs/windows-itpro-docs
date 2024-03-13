@@ -1,11 +1,11 @@
 ---
-title: Set up a shared or guest Windows device
+title: Configure a shared or guest Windows device
 description: Description of how to configured Shared PC mode, which is a Windows feature that optimizes devices for shared use scenarios.
 ms.date: 11/08/2023
 ms.topic: how-to
 ---
 
-# Set up a shared or guest Windows device
+# Configure a shared or guest Windows device
 
 **Shared PC** offers options to facilitate the management and optimization of shared devices. The customizations offered by Shared PC are listed in the following table.
 
@@ -25,7 +25,9 @@ Shared PC can be configured using the following methods:
 
 Follow the instructions below to configure your devices, selecting the option that best suits your needs.
 
-#### [:::image type="icon" source="images/intune.svg"::: **Intune**](#tab/intune)
+#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune**](#tab/intune)
+
+
 
 To configure devices using Microsoft Intune, [create a **Settings catalog** policy][MEM-2], and use the settings listed under the category **`Shared PC`**:
 
@@ -35,7 +37,7 @@ Assign the policy to a security group that contains as members the devices or us
 
 Alternatively, you can configure devices using a [custom policy][MEM-1] with the [SharedPC CSP][WIN-3].
 
-#### [:::image type="icon" source="images/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+#### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
 To configure devices using a provisioning package, [create a provisioning package][WIN-1] using WCD, and use the settings listed under the category **`SharedPC`**:
 
@@ -45,7 +47,7 @@ For a list and description of CSP settings exposed in Windows Configuration Desi
 
 Follow the steps in [Apply a provisioning package][WIN-2] to apply the package that you created.
 
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+#### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 To configure devices using a PowerShell script, you can use the [MDM Bridge WMI Provider][WIN-6].
 
@@ -114,6 +116,7 @@ For more information, see [Using PowerShell scripting with the WMI Bridge Provid
 ## Troubleshooting Shared PC
 
 To troubleshoot Shared PC, you can use the following tools:
+
 - Check the log `C:\Windows\SharedPCSetup.log`
 - Check the registry keys under `HKLM\Software\Microsoft\Windows\CurrentVersion\SharedPC`
   - `AccountManagement` key contains settings on how profiles are managed
@@ -125,7 +128,7 @@ To troubleshoot Shared PC, you can use the following tools:
 - For a list of settings exposed by the SharedPC configuration service provider, see [SharedPC CSP][WIN-3].
 - For a list of settings exposed by Windows Configuration Designer, see [SharedPC CSP][WIN-4].
 
------------
+<!--links-->
 
 [WIN-1]: /windows/configuration/provisioning-packages/provisioning-create-package
 [WIN-2]: /windows/configuration/provisioning-packages/provisioning-apply-package

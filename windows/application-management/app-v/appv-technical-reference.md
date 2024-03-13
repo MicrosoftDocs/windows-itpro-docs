@@ -4,11 +4,12 @@ description: Learn strategy and context for many performance optimization practi
 author: aczechowski
 ms.service: windows-client
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: aaroncz
 ms.collection: must-keep
 ms.subservice: itpro-apps
+ms.topic: article
 ---
 
 # Technical Reference for App-V

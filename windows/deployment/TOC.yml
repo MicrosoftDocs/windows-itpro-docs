@@ -4,7 +4,7 @@
     - name: Get started
       items:
         - name: Windows client deployment scenarios
-          href: windows-10-deployment-scenarios.md
+          href: windows-deployment-scenarios.md
         - name: Quick guide to Windows as a service
           href: update/waas-quick-start.md
         - name: Windows as a service overview
@@ -175,9 +175,9 @@
     - name: Activate
       items:
       - name: Windows subscription activation
-        href: windows-10-subscription-activation.md
+        href: windows-subscription-activation.md
       - name: Windows Enterprise E3 in CSP
-        href: windows-10-enterprise-e3-overview.md
+        href: windows-enterprise-e3-overview.md
       - name: Configure VDA for subscription activation
         href: vda-subscription-activation.md
       - name: Deploy Windows Enterprise licenses
@@ -386,6 +386,8 @@
           href: /windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: Additional Windows Update settings
           href: update/waas-wu-settings.md
+        - name: Update other Microsoft products
+          href: update/update-other-microsoft-products.md
         - name: Delivery Optimization reference
           href: do/waas-delivery-optimization-reference.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: Windows client in S mode
@@ -571,7 +573,7 @@
                     href: planning/testing-your-application-mitigation-packages.md
                   - name: Use the Sdbinst.exe Command-Line Tool
                     href: planning/using-the-sdbinstexe-command-line-tool.md
-        - name: Install fonts in Windows client
-          href: windows-10-missing-fonts.md
+        - name: Add fonts in Windows
+          href: windows-missing-fonts.md
         - name: Customize Windows PE boot images
           href: customize-boot-image.md

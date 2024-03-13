@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business hybrid certificate trust deployment guide
 description: Learn how to deploy Windows Hello for Business in a hybrid certificate trust scenario.
-ms.date: 01/03/2024
+ms.date: 03/12/2024
 ms.topic: tutorial
 ---
 
@@ -28,7 +28,7 @@ ms.topic: tutorial
 > Once the prerequisites are met, deploying Windows Hello for Business consists of the following steps:
 >
 > - [Configure and validate the Public Key Infrastructure](hybrid-cert-trust-pki.md)
-> - [Configure Active Directory Federation Services](hybrid-cert-trust-adfs.md) 
+> - [Configure Active Directory Federation Services](hybrid-cert-trust-adfs.md)
 > - [Configure and enroll in Windows Hello for Business](hybrid-cert-trust-enroll.md)
 > - (optional) [Configure single sign-on for Microsoft Entra joined devices](../hello-hybrid-aadj-sso.md)
 

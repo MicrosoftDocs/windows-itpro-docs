@@ -49,7 +49,7 @@
       "author": "vinaypamnani-msft",
       "manager": "aaroncz",
       "feedback_system": "Standard",
-            "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
+      "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.win-client-management",
@@ -58,18 +58,17 @@
       },
       "titleSuffix": "Windows Client Management",
       "contributors_to_exclude": [
-        "rjagiewich",
-        "traya1",
-        "rmca14",
-        "claydetels19",
+        "dstrome2",
+        "rjagiewich",  
+        "American-Dipper",
+        "claydetels19", 
         "jborsecnik",
-        "tiburd",
+        "v-stchambers",
+        "shdyas",
+        "Stacyrch140",
         "garycentric",
-        "beccarobins",
-        "american-dipper",
-        "angelamotherofdragons",
-        "v-stsavell",
-        "stacyrch140"
+        "dstrome",
+        "beccarobins"
       ],
       "searchScope": [
         "Windows 10"

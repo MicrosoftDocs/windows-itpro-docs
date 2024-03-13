@@ -259,7 +259,7 @@ For example, Configuration Manager Software Update Policy settings exclude Autop
 | Enable management of the Office 365 Client Agent | No |
 
 > [!NOTE]
-> There is no requirement to create a Configuration Manager Software Update Policy if the policies aren’t in use.
+> There is no requirement to create a Configuration Manager Software Update Policy if the policies aren't in use.
 
 #### Existing Mobile Device Management (MDM) policies
 

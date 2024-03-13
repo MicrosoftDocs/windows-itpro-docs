@@ -8,7 +8,7 @@ ms.author: mstewart
 manager: aaroncz
 ms.topic: conceptual
 ms.subservice: itpro-fundamentals
-ms.date: 01/30/2024
+ms.date: 03/11/2024
 ms.collection:
   - highpri
   - tier1
@@ -44,11 +44,11 @@ The following features and functionalities have been removed from the installed 
 | XDDM-based remote display driver  | Support for Windows 2000 Display Driver Model (XDDM) based remote display drivers is removed in this release. Software publishers that use an XDDM-based remote display driver should plan a migration to the WDDM driver model. For more information on implementing remote display indirect display driver, see [Updates for IddCx versions 1.4 and later](/windows-hardware/drivers/display/iddcx1.4-updates). | 21H1 |
 |Microsoft Edge|The legacy version of Microsoft Edge is no longer supported after March 9, 2021. For more information, see [End of support reminder for Microsoft Edge Legacy](/lifecycle/announcements/edge-legacy-eos-details). | 21H1 |
 |MBAE service metadata|The MBAE app experience is replaced by an MO UWP app. Metadata for the MBAE service is removed. | 20H2 |
-| Connect app | The **Connect** app for wireless projection using Miracast is no longer installed by default, but is available as an optional feature. To install the app, select **Settings** > **Apps** > **Optional features** > **Add a feature**, and then install the **Wireless Display** app. | 2004 |
+| Connect app | The **Connect** app for wireless projection using Miracast is no longer installed by default, but is available as an optional feature. To add the feature, select **Settings** > **System** > **Optional features** > **Add a feature** (Windows 10) or **Settings** > **System** > **Optional features** > **Add an optional feature** (Windows 11), and then add the **Wireless Display** feature. <!-- OSADO-45535220 --> | 2004 |
 | Rinna and Japanese Address suggestion | The Rinna and Japanese Address suggestion service for Microsoft Japanese Input Method Editor (IME) ended on August 13, 2020. For more information, see [Rinna and Japanese Address suggestion will no longer be offered](https://support.microsoft.com/help/4576767/windows-10-rinna-and-japanese-address-suggestion) | 2004 |
 | Windows To Go | Windows To Go was announced as deprecated in Windows 10, version 1903 and is removed in this release. | 2004 |
 | Mobile Plans and Messaging apps | Both apps are still supported, but are now distributed in a different way. OEMs can now include these apps in Windows images for cellular enabled devices.  The apps are removed for noncellular devices.| 2004 |
-| PNRP APIs| The Peer Name Resolution Protocol (PNRP) cloud service was removed in Windows 10, version 1809. We're planning to complete the removal process by removing the corresponding APIs.  | 1909 |
+| PNRP APIs| The Peer Name Resolution Protocol (PNRP) cloud service was shut down in Windows 10, version 1809. We're planning to complete the removal process by removing the corresponding APIs. </br></br> **[Update - February 2024]**: The corresponding Windows APIs will be removed in Windows 11, version 24H2. DNS-SD and mDNS are recommended alternatives for implementing service discovery scenarios. <!--8786119-->  | 1909 |
 | Taskbar settings roaming | Roaming of taskbar settings is removed in this release. This feature was announced as no longer being developed in Windows 10, version 1903. | 1909 |
 | Desktop messaging app doesn't offer messages sync |  The messaging app on Desktop has a sync feature that can be used to sync SMS text messages received from Windows Mobile and keep a copy of them on the Desktop. The sync feature has been removed from all devices. Due to this change, you'll only be able to access messages from the device that received the message.  | 1903 |
 |Business Scanning also called Distributed Scan Management (DSM)|We're removing this secure scanning and scanner management capability - there are no devices that support this feature.| 1809 |

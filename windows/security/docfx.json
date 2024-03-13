@@ -46,7 +46,7 @@
       "ms.localizationpriority": "medium",
       "manager": "aaroncz",
       "feedback_system": "Standard",
-            "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
+      "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.security",
@@ -55,37 +55,42 @@
       },
       "titleSuffix": "Windows Security",
       "contributors_to_exclude": [
-        "rjagiewich",
-        "traya1",
-        "rmca14",
-        "claydetels19",
-        "jborsecnik",
-        "tiburd",
+        "alekyaj",
+        "alexbuckgit",
+        "American-Dipper",
         "AngelaMotherofDragons",
-        "dstrome",
-        "v-dihans",
-        "garycentric",
         "beccarobins",
+        "claydetels19",
+        "dstrome",
+        "dstrome2",
+        "garycentric",
+        "jborsecnik",
+        "rjagiewich",
+        "rmca14",
+        "shdyas",
         "Stacyrch140",
-        "v-stsavell",
-        "American-Dipper"
+        "tiburd",
+        "traya1",
+        "v-dihans",
+        "v-stchambers",
+        "v-stsavell"
       ],
       "searchScope": [
         "Windows 10"
       ]
     },
     "fileMetadata": {
-      "author":{
+      "author": {
         "application-security//**/*.md": "vinaypamnani-msft",
         "application-security//**/*.yml": "vinaypamnani-msft",
         "application-security/application-control/windows-defender-application-control/**/*.md": "jsuther1974",
         "application-security/application-control/windows-defender-application-control/**/*.yml": "jsuther1974",
         "hardware-security/**/*.md": "vinaypamnani-msft",
         "hardware-security/**/*.yml": "vinaypamnani-msft",
-        "information-protection/**/*.md": "vinaypamnani-msft",
-        "information-protection/**/*.yml": "vinaypamnani-msft",
         "identity-protection/**/*.md": "paolomatarazzo",
         "identity-protection/**/*.yml": "paolomatarazzo",
+        "information-protection/**/*.md": "vinaypamnani-msft",
+        "information-protection/**/*.yml": "vinaypamnani-msft",
         "operating-system-security/**/*.md": "vinaypamnani-msft",
         "operating-system-security/**/*.yml": "vinaypamnani-msft",
         "operating-system-security/data-protection/**/*.md": "paolomatarazzo",
@@ -93,17 +98,17 @@
         "operating-system-security/network-security/**/*.md": "paolomatarazzo",
         "operating-system-security/network-security/**/*.yml": "paolomatarazzo"
       },
-      "ms.author":{
+      "ms.author": {
         "application-security//**/*.md": "vinpa",
         "application-security//**/*.yml": "vinpa",
         "application-security/application-control/windows-defender-application-control/**/*.md": "jsuther",
         "application-security/application-control/windows-defender-application-control/**/*.yml": "jsuther",
         "hardware-security//**/*.md": "vinpa",
         "hardware-security//**/*.yml": "vinpa",
-        "information-protection/**/*.md": "vinpa",
-        "information-protection/**/*.yml": "vinpa",
         "identity-protection/**/*.md": "paoloma",
         "identity-protection/**/*.yml": "paoloma",
+        "information-protection/**/*.md": "vinpa",
+        "information-protection/**/*.yml": "vinpa",
         "operating-system-security/**/*.md": "vinpa",
         "operating-system-security/**/*.yml": "vinpa",
         "operating-system-security/data-protection/**/*.md": "paoloma",
@@ -211,23 +216,23 @@
       "ms.reviewer": {
         "application-security/application-control/windows-defender-application-control/**/*.md": "vinpa",
         "application-security/application-isolation/microsoft-defender-application-guard/*.md": "sazankha",
-        "identity-protection/hello-for-business/*.md": "erikdau",
-        "identity-protection/credential-guard/*.md": "zwhittington",
         "identity-protection/access-control/*.md": "sulahiri",
+        "identity-protection/credential-guard/*.md": "zwhittington",
+        "identity-protection/hello-for-business/*.md": "erikdau",
         "identity-protection/smart-cards/*.md": "ardenw",
         "identity-protection/virtual-smart-cards/*.md": "ardenw",
-        "operating-system-security/network-security/windows-firewall/*.md": "nganguly",
+        "operating-system-security/data-protection/personal-data-encryption/*.md": "rhonnegowda",
+        "operating-system-security/device-management/windows-security-configuration-framework/*.md": "jmunck",
         "operating-system-security/network-security/vpn/*.md": "pesmith",
-        "operating-system-security/data-protection/personal-data-encryption/*.md":"rhonnegowda",
-        "operating-system-security/device-management/windows-security-configuration-framework/*.md": "jmunck"
+        "operating-system-security/network-security/windows-firewall/*.md": "nganguly"
       },
       "ms.collection": {
         "identity-protection/hello-for-business/*.md": "tier1",
         "information-protection/pluton/*.md": "tier1",
         "information-protection/tpm/*.md": "tier1",
-        "threat-protection/auditing/*.md": "tier3",
         "operating-system-security/data-protection/bitlocker/*.md": "tier1",
-        "operating-system-security/data-protection/personal-data-encryption/*.md": "tier1"
+        "operating-system-security/data-protection/personal-data-encryption/*.md": "tier1",
+        "threat-protection/auditing/*.md": "tier3"
       }
     },
     "template": [],

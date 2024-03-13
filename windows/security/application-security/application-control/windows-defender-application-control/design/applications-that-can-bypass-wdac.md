@@ -26,6 +26,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - csi.exe
 - dbghost.exe
 - dbgsvc.exe
+- dbgsrv.exe
 - dnx.exe
 - dotnet.exe
 - fsi.exe
@@ -143,6 +144,7 @@ The blocklist policy that follows includes "Allow all" rules for both kernel and
     <Deny ID="ID_DENY_CSCRIPT" FriendlyName="cscript.exe" FileName="cscript.exe" MinimumFileVersion="5.812.10240.0" />
     <Deny ID="ID_DENY_DBGHOST" FriendlyName="dbghost.exe" FileName="DBGHOST.Exe" MinimumFileVersion="2.3.0.0" />
     <Deny ID="ID_DENY_DBGSVC" FriendlyName="dbgsvc.exe" FileName="DBGSVC.Exe" MinimumFileVersion="2.3.0.0" />
+    <Deny ID="ID_DENY_DBGSRV" FriendlyName="dbgsrv.exe" FileName="dbgsrv.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_DNX" FriendlyName="dnx.exe" FileName="dnx.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_DOTNET" FriendlyName="dotnet.exe" FileName="dotnet.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_FSI" FriendlyName="fsi.exe" FileName="fsi.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
@@ -854,6 +856,7 @@ The blocklist policy that follows includes "Allow all" rules for both kernel and
           <FileRuleRef RuleID="ID_DENY_CSCRIPT" />
           <FileRuleRef RuleID="ID_DENY_DBGHOST" />
           <FileRuleRef RuleID="ID_DENY_DBGSVC" />
+          <FileRuleRef RuleID="ID_DENY_DBGSRV" />
           <FileRuleRef RuleID="ID_DENY_DNX" />
           <FileRuleRef RuleID="ID_DENY_DOTNET" />
           <FileRuleRef RuleID="ID_DENY_FSI" />
