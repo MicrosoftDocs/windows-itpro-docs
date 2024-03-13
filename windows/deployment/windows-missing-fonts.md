@@ -7,7 +7,7 @@ author: frankroj
 ms.author: frankroj
 manager: aaroncz
 ms.topic: article
-ms.date: 03/12/2024
+ms.date: 03/13/2024
 ms.subservice: itpro-deploy
 zone_pivot_groups: windows-versions-11-10
 appliesto:
@@ -57,11 +57,9 @@ If fonts associated with a language are needed across the system, then that lang
 
 Adding a language and then switching to it can be done via the **Settings** app.
 
-To add the fonts associated with a language and then switch to that language:
-
 ::: zone pivot="windows-11"
 
-Open the **Language & region** pane in the **Settings** app by selecting the following link:
+To add the fonts associated with a language and then switch to that language, first open the **Language & region** pane in the **Settings** app by selecting the following link:
 
 > [!div class="nextstepaction"]
 > [Language & region](ms-settings:regionlanguage)
@@ -70,7 +68,7 @@ Open the **Language & region** pane in the **Settings** app by selecting the fol
 
 ::: zone pivot="windows-10"
 
-Open the **Language** pane in the **Settings** app by selecting the following link:
+To add the fonts associated with a language and then switch to that language, first open the **Language** pane in the **Settings** app by selecting the following link:
 
 > [!div class="nextstepaction"]
 > [Language](ms-settings:regionlanguage)
