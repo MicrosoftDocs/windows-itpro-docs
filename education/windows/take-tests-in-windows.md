@@ -48,7 +48,7 @@ This is an ideal option for teachers who want to create a link to a specific ass
 For this option, you embed a URL with a specific prefix and specify parameters depending on what you want to allow during the test.
 The URL must be in the following format:
 
-```
+```text
 ms-edu-secureassessment:<URL>#enforceLockdown
 ```
 

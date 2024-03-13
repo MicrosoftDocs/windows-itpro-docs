@@ -142,7 +142,7 @@ This node supports Add, Delete, Replace and Get methods. When there's no configu
 >
 > This applies to both `domain\user`, `AzureAD\someone@contoso.onmicrosoft.com`, as long as a `\` is used in JSON string.
 
-- For more information about how to get the AUMID, see [Find the Application User Model ID of an installed app](/windows/configuration/store/find-aumid)
+For more information about how to get the AUMID, see [Find the Application User Model ID of an installed app](/windows/configuration/store/find-aumid).
 
 > [!IMPORTANT]
 >
