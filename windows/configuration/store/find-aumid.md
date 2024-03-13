@@ -1,6 +1,6 @@
 ---
 title: Find the Application User Model ID of an installed app
-description: Learn how to find the Application User Model ID (AUMID) of the appications installed on a Windows device.
+description: Learn how to find the Application User Model ID (AUMID) of the applications installed on a Windows device.
 ms.topic: how-to
 ms.date: 02/06/2024
 ---
