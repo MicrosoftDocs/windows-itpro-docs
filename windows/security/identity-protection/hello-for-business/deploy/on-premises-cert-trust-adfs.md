@@ -36,7 +36,7 @@ Windows Hello for Business works exclusively with the Active Directory Federatio
 > [!div class="checklist"]
 > Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 >
-> - Record the information about the AD FS certificate, and set a renewal reminder at least six weeks before it expires. Relevant information includes: certificate serial number, thumbprint, common name, subject alternate name, name of the physical host server, the issued date, the expiration date, and issuing CA vendor (if a third-party certificate)
+> - Record the information about the AD FS certificate, and set a renewal reminder at least six weeks before it expires. Relevant information includes: certificate serial number, thumbprint, common name, subject alternate name, name of the physical host server, the issued date, the expiration date, and issuing CA vendor (if a non-Microsoft certificate)
 > - Confirm you added the AD FS service account to the KeyAdmins group
 > - Confirm you enabled the Device Registration service
 
@@ -72,7 +72,7 @@ Use the event logs on the AD FS service to confirm the service account enrolled 
 - The thumbprint of the certificate
 - The certificate template used to issue the certificate
 
-You cannot use the Certificate Manager to view enrolled certificates for group managed service accounts. Use the event log information to confirm the AD FS service account enrolled a certificate. Use certutil.exe to view the details of the certificate shown in the event log.
+You cannot use the Certificate Manager to view enrolled certificates for group managed service accounts. Use the event log information to confirm the AD FS service account enrolled a certificate. Use `certutil.exe` to view the details of the certificate shown in the event log.
 
 Group managed service accounts use user profiles to store user information, which included enrolled certificates. On the AD FS server, use a command prompt and navigate to `%systemdrive%\users\<adfsGMSA_name>\appdata\roaming\Microsoft\systemcertificates\my\certificates`.
 

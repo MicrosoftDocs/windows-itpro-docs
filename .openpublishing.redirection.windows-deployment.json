@@ -1124,6 +1124,11 @@
       "source_path": "windows/deployment/Windows-AutoPilot-EULA-note.md",
       "redirect_url": "/legal/windows/windows-autopilot-eula-note",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-missing-fonts.md",
+      "redirect_url": "/windows/deployment/windows-missing-fonts",
+      "redirect_document_id": false
     }
   ]
 }

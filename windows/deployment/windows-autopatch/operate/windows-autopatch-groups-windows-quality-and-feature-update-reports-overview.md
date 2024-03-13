@@ -1,7 +1,7 @@
 ---
 title: Windows quality and feature update reports overview
-description: This article details the types of reports available and info about update device eligibility, device update health, device update trends in Windows Autopatch groups
-ms.date: 07/25/2023
+description: This article details the types of reports available and info about update device eligibility, device update health, device update trends in Windows Autopatch groups.
+ms.date: 01/22/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
@@ -82,7 +82,7 @@ Up to date devices are devices that meet all of the following prerequisites:
 - Have applied the current monthly cumulative updates
 
 > [!NOTE]
-> [Up to Date devices](#up-to-date-devices) will remain with the **In Progress** status for the 21-day service level objective period until the device either applies the current monthly cumulative update or receives an [alert](../operate/windows-autopatch-device-alerts.md). If the device receives an alert, the device's status will change to [Not up to Date](#not-up-to-date-devices).
+> Device that are [Up to Date](#up-to-date-devices) will remain with the **In Progress** status until either the current monthly cumulative update is applied, or an [alert](../operate/windows-autopatch-device-alerts.md) is received. If the device receives an alert, the device's status will change to [Not up to Date](#not-up-to-date-devices).
 
 #### Up to Date sub statuses
 
@@ -96,7 +96,7 @@ Up to date devices are devices that meet all of the following prerequisites:
 Not Up to Date means a device isn't up to date when the:
 
 - Quality or feature update is out of date, or the device is on the previous update.
-- Device is more than 21 days overdue from the last release.
+- The assigned update schedule has elapsed and the device still has not applied the current release.
 - Device has an [alert](../operate/windows-autopatch-device-alerts.md) resulting in an error and action must be taken.
 
 ### Not Ready devices

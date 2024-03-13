@@ -36,7 +36,7 @@ Windows Hello for Business must have a Public Key Infrastructure (PKI) when usin
 
 Key trust deployments don't need client-issued certificates for on-premises authentication. *Microsoft Entra Connect Sync* configures Active Directory user accounts for public key mapping, by synchronizing the public key of the Windows Hello for Business credential to an attribute on the user's Active Directory object (`msDS-KeyCredentialLink` attribute).
 
-A Windows Server-based PKI or a third-party Enterprise certification authority can be used. For more information, see [Requirements for domain controller certificates from a third-party CA][SERV-1].
+A Windows Server-based PKI or a non-Microsoft Enterprise certification authority can be used. For more information, see [Requirements for domain controller certificates from a non-Microsoft CA][SERV-1].
 
 [!INCLUDE [lab-based-pki-deploy](includes/lab-based-pki-deploy.md)]
 
