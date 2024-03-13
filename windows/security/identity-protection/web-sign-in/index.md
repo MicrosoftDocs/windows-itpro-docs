@@ -134,7 +134,7 @@ For more information, see [Use a Temporary Access Pass][AAD-3].
 
 :::row:::
   :::column span="2":::
-  If the Microsoft Entra tenant is federated with a third-party SAML-P identity provider (IdP), federated users can sign using the Web sign-in credential provider.
+  If the Microsoft Entra tenant is federated with a non-Microsoft SAML-P identity provider (IdP), federated users can sign using the Web sign-in credential provider.
   :::column-end:::
   :::column span="2":::
   > [!VIDEO https://learn-video.azurefd.net/vod/player?id=88ad0efb-9031-428c-a3cf-612c47810ecf]

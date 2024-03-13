@@ -36,7 +36,6 @@ Stickers aren't enabled by default. Follow the instructions below to configure y
    | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Stickers/EnableStickers`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
 
 [!INCLUDE [intune-custom-settings-2](../../includes/configure/intune-custom-settings-2.md)]
-[!INCLUDE [intune-custom-settings-info](../../includes/configure/intune-custom-settings-info.md)]
 
 > [!TIP]
 > Use the following Graph call to automatically create the custom policy in your tenant without assignments nor scope tags. <sup>[1](#footnote1)</sup>
@@ -52,14 +51,13 @@ Content-Type: application/json
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
-To configure devices using a provisioning package, [create a provisioning package][WIN-1] using Windows Configuration Designer (WCD) with the following settings:
+[!INCLUDE [provisioning-package-1](../../includes/configure/provisioning-package-1.md)]
 
 | Setting |
 |--------|
 | <li> Path: **`Education/AllowStickers`** </li><li>Value: **True**</li>|
 
-Follow the steps in [Apply a provisioning package][WIN-2] to apply the package that you created.
-
+[!INCLUDE [provisioning-package-2](../../includes/configure/provisioning-package-2.md)]
 ---
 
 ## How to use Stickers
@@ -76,8 +74,3 @@ Multiple stickers can be added from the picker by selecting them. The stickers c
 :::image type="content" source="./images/win-11-se-stickers-animation.gif" alt-text="animation showing Windows 11 SE desktop with 4 pirate stickers being resized and moved" border="true":::
 
 Select the *X button* at the top of the screen to save your progress and close the sticker editor.
-
-[MEM-1]: /mem/intune/configuration/custom-settings-windows-10
-
-[WIN-1]: /windows/configuration/provisioning-packages/provisioning-create-package
-[WIN-2]: /windows/configuration/provisioning-packages/provisioning-apply-package

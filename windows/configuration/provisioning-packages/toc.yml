@@ -1,5 +1,5 @@
 items:
-  - name: Provisioning packages for Windows client
+  - name: Overview
     href: provisioning-packages.md
   - name: How provisioning works in Windows client
     href: provisioning-how-it-works.md
