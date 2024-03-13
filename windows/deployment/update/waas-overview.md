@@ -14,7 +14,7 @@ ms.collection:
 appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 03/15/2024
+ms.date: 03/13/2024
 ---
 
 # Overview of Windows as a service
