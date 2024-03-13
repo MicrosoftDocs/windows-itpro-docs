@@ -11,7 +11,8 @@ ms.collection:
 
 # Customize and export the Start layout
 
-> **Looking for OEM information?** See [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar) and [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
+This article describes how to customize the Windows Start menu, export its configuration, and deploy the customization to other devices. The article is intended for IT professionals who manage devices in a business or educational environment.\
+If you are looking for OEM information, see the article [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu)
 
 ::: zone pivot="windows-11"
 
@@ -25,44 +26,29 @@ This article shows you how to export an existing Start menu layout, and use the 
 
 ## Before you begin
 
-- When you customize the Start layout, you overwrite the entire full layout. A partial Start layout isn't available. Users can pin and unpin apps, and uninstall apps from Start. When a user signs in or Explorer restarts, Windows reapplies the MDM policy. This action restores the specified layout and doesn't retain any user changes.
-
-  To prevent users from making any changes to the Start menu layout, see the [NoChangeStartMenu](/windows/client-management/mdm/policy-csp-admx-startmenu#admx-startmenu-nochangestartmenu) policy.
-
-- It's recommended to use a mobile device management (MDM) provider. MDM providers help manage your devices, and help manage apps on your devices. You can use Microsoft Intune. Intune is a family of products that include Microsoft Intune, which is a cloud service, and Configuration Manager, which is on-premises.
-
-  In this article, we mention these services. If you're not managing your devices using an MDM provider, the following resources may help you get started:
-
-  - [Endpoint Management at Microsoft](/mem/endpoint-manager-overview)
-  - [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Intune planning guide](/mem/intune/fundamentals/intune-planning-guide)
-  - [What is Configuration Manager?](/mem/configmgr/core/understand/introduction)
+When you customize the Start layout, you overwrite the entire full layout. Users can pin and unpin apps, and uninstall apps from Start. When a user signs in or Explorer restarts, Windows reapplies the MDM policy. This action restores the specified layout and doesn't retain any user changes.
 
 ## Start menu features and areas
 
-In Windows 11, the Start menu is redesigned with a simplified set of apps that are arranged in a grid of pages. There aren't folders, groups, or different-sized app icons:
+The Start menu consistes of set of links to applications, folders, or files that are arranged in a grid of pages.
 
-:::image type="content" source="./images/start-windows-11.png" alt-text="Sample start menu layout on Windows 11 that shows pinned apps, access to all apps, and recommended files.":::
+:::row:::
+    :::column:::
 
-Start has the following areas:
+    :::column-end:::
+    :::column:::
+The Start menu has the following areas:
+- **Pinned**: Shows pinned apps, or a subset of all of the apps installed on the device. You can create a list of pinned apps you want on the devices using the **ConfigureStartPins** policy. **ConfigureStartPins** overrides the entire layout, which also removes apps that are pinned by default
+- **All apps**: Users select this option to see an alphabetical list of all the apps installed on the device.
+- **Recommended**: Shows recently opened files and recently installed apps
+    :::column-end:::
+    :::column:::
 
-- **Pinned**: Shows pinned apps, or a subset of all of the apps installed on the device. You can create a list of pinned apps you want on the devices using the **ConfigureStartPins** policy. **ConfigureStartPins** overrides the entire layout, which also removes apps that are pinned by default.
-
-  This article shows you [how to use the **ConfigureStartPins** policy](#get-the-pinnedlist-json).
-
-- **All apps**: Users select this option to see an alphabetical list of all the apps on the device. This section can't be customized using the JSON file.
-
-  The [Start/HideFrequentlyUsedApps CSP](/windows/client-management/mdm/policy-csp-start#start-hidefrequentlyusedapps) exposes settings that configure the "Most used" section, which is at the top of the all apps list.
-
-  In **Intune**, you can configure this Start menu layout feature, and more. For more information on the Start menu settings you can configure in an Intune policy, see [Windows 10/11 device settings to allow or restrict features](/mem/intune/configuration/device-restrictions-windows-10#start).
-
-  In **Group Policy**, there are policies that include settings that control the Start menu layout. Some policies may not work as expected. Be sure to test your policies before broadly deploying them across your devices:
-
-  - `Computer Configuration\Administrative Templates\Start Menu and Taskbar`
-  - `User Configuration\Administrative Templates\Start Menu and Taskbar`
-
-- **Recommended**: Shows recently opened files and recently installed apps. This section can only be customized in Windows 11 SE using the following policy.
-
-  - `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove Recommended section from Start Menu`
+    :::column-end:::
+    :::column:::
+    :::image type="content" source="./images/start-windows-11.png" alt-text="Sample start menu layout with pinned apps, access to all apps, and recommended files." border="false" :::
+    :::column-end:::
+:::row-end:::
 
 ## Create the JSON file
 
@@ -83,7 +69,6 @@ If you're familiar with creating JSON files, you can create your own `LayoutModi
 
     ```powershell
     Export-StartLayout -Path "C:\Layouts\LayoutModification.json"
-
     ```
 
 ### Get the pinnedList JSON
@@ -104,7 +89,7 @@ If you're familiar with creating JSON files, you can create your own `LayoutModi
     }
     ```
 
-1. Starting with Windows 11, the **ConfigureStartPins** policy is available. This policy uses the `LayoutModification.json` file to add apps to the Pinned section. In your JSON file, you can add more apps to this section using the following keys:
+1. Use the `ConfigureStartPins` policy setting to configure the Start menu, by using a JSON `LayoutModification.json` file to add apps to the Pinned section. In your JSON file, you can add more apps to this section using the following keys:
 
 | Key | Description |
 |--|--|
@@ -120,57 +105,32 @@ MDM providers can deploy policies to devices managed by the organization, includ
 
 This section shows you how to create a pinned list policy in Intune. There isn't a Group Policy to create a pinned list.
 
-### Create a pinned list using an Intune policy
+[!INCLUDE [intune-settings-catalog-1](../../../includes/configure/intune-settings-catalog-1.md)]
 
-To deploy this policy, the devices must be enrolled, and managed by your organization. For more information, see [What is device enrollment?](/mem/intune/enrollment/device-enrollment).
+| Category | Setting name | Value |
+|--|--|--|
+| **Start** | Configure Start Pins | Content of the JSON file|
+| **Start** | Configure Start Pins (User) | Content of the JSON file|
 
-1. Sign in to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Select **Devices** > **Configuration profiles** > **Create profile**.
-1. Enter the following properties:
+[!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
-    - **Platform**: Select **Windows 10 and later**.
-    - **Profile**: Select **Templates** > **Custom**.
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [File Explorer CSP][CSP-1].
 
-1. Select **Create**.
-1. In **Basics**, enter the following properties:
+| Setting |
+|--|
+| - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start?WT.mc_id=Portal-Microsoft_Intune_Workflows#configurestartpins)<br>- **String:** <br>- **Value:** content of the JSON file |
+| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start?WT.mc_id=Portal-Microsoft_Intune_Workflows#configurestartpins)<br>- **Data type:** <br>- **Value:** content of the JSON file |
 
-    - **Name**: Enter a descriptive name for the profile. Name your profiles so you can easily identify them later. For example, a good profile name is **Win11: Custom Start layout**.
-    - **Description**: Enter a description for the profile. This setting is optional, and recommended.
-
-1. Select **Next**.
-1. In **Configuration settings** > **OMA-URI**, select **Add**. Add the following properties:
-
-    - **Name**: Enter something like **Configure Start pins**.
-    - **Description**: Enter a description for the row. This setting is optional, and recommended.
-    - **OMA-URI**: Enter `./Vendor/MSFT/Policy/Config/Start/ConfigureStartPins`.
-    - **Data type**: Select **String**.
-    - **Value**: Paste the JSON you created or updated in the previous section. For example, enter the following text:
-
-      ```json
-      {
-        "pinnedList": [
-          { "desktopAppId": "MSEdge" },
-          { "desktopAppId": "Microsoft.Office.WINWORD.EXE.15" },
-          { "packagedAppId": "Microsoft.WindowsStore_8wekyb3d8bbwe!App" },
-          { "packagedAppId": "Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" }
-        ]
-      }
-      ```
-
-    Your settings look similar to the following settings:
-
-    :::image type="content" source="./images/endpoint-manager-admin-center-custom-oma-uri-start-layout.png" alt-text="Custom OMA-URI settings to customize Start menu layout using pinnedList":::
-
-1. Select **Save** > **Next** to save your changes.
-1. Configure the rest of the policy settings. For more specific information, see [Create a profile with custom settings](/mem/intune/configuration/custom-settings-configure).
-
-The Windows OS exposes many CSPs that apply to the Start menu. For a list, see [Supported CSP policies for Windows 11 Start menu](supported-csp-start-menu-layout-windows.md).
-
-### Deploy the policy using Intune
-
-When the policy is created, you can deploy it now, or deploy it later. Since this policy is a customized Start layout, the policy can be deployed anytime, including before users sign in the first time.
-
-For more information and guidance on assigning policies to devices in your organization, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
+```json
+{
+  "pinnedList": [
+    { "desktopAppId": "MSEdge" },
+    { "desktopAppId": "Microsoft.Office.WINWORD.EXE.15" },
+    { "packagedAppId": "Microsoft.WindowsStore_8wekyb3d8bbwe!App" },
+    { "packagedAppId": "Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" }
+  ]
+}
+```
 
 ::: zone-end
 
@@ -520,5 +480,27 @@ To configure Start Layout policy settings in Local Group Policy Editor:
 ## <a href="" id="bkmk-updatestartscreenlayout"></a>Update a customized Start layout
 
 After you use Group Policy to apply a customized Start and taskbar layout on a computer or in a domain, you can update the layout simply by replacing the .xml file that is specified in the Start Layout policy settings with a file with a newer timestamp.
+
+::: zone-end
+
+The Windows OS exposes many CSPs that apply to the Start menu. For a list, see [Supported CSP policies for Windows 11 Start menu](supported-csp-start-menu-layout-windows.md).
+
+## Start layout example
+
+Here you can find an example of Start layout that you can use as a reference:
+
+[!INCLUDE [example-start-layout](includes/example-start-layout.md)]
+
+## User experience
+
+After the settings are applied, sign in to the device. You'll see the Start layout that you configured:
+
+::: zone pivot="windows-11"
+:::image type="content" source="images/restricted-user-experience-windows-11.png" alt-text="Screenshot of the Windows 11 desktop used for the quickstart." border="false":::
+
+::: zone-end
+
+::: zone pivot="windows-10"
+:::image type="content" source="images/restricted-user-experience-windows-10.png" alt-text="Screenshot of the Windows 10 desktop used for the quickstart." border="false":::
 
 ::: zone-end
