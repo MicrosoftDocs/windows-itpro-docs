@@ -152,9 +152,10 @@ Once the **Language** pane is open, add the fonts associated with a language and
 
 ::: zone-end
 
-> [!NOTE]
+> [!IMPORTANT]
 >
-> The optional features are added by Windows Update. You need to be online for the Windows Update service to work.
+> Windows Update is used to add the language including the associated fonts. The device needs to be online so Windows Update can download the content that it needs to add.
+
 
 ## Add optional fonts manually without changing language settings
 

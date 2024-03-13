@@ -51,6 +51,10 @@ or
 
 1. In the right hand **System** pane, select **Optional features**.
 
+> [!NOTE]
+>
+> The navigation steps, UI elements, and UI text in this section are based on the latest version of Windows 11 with the latest cumulative update installed. For other versions of Windows 11 that are currently supported or don't have the latest cumulative update, some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page might be located under **Settings** > **Apps**.
+
 ::: zone-end
 
 ::: zone pivot="windows-10"
@@ -60,6 +64,10 @@ or
 1. In the Settings app, select **System**.
 
 1. In the left hand pane, select **Optional features**.
+
+> [!NOTE]
+>
+> The navigation steps, UI elements, and UI text in this section are based on Windows 10 22H2 with the latest cumulative update installed. For other versions of Windows 10 that are currently supported or don't have the latest cumulative update, some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page might be located under **Settings** > **Apps** > **Apps & features**.
 
 ::: zone-end
 
@@ -109,10 +117,6 @@ Once the **System > Optional features** pane is open, remove a feature with the 
 
 1. Once the feature that needs to be removed is found, select the feature to expand it, and then select the **Uninstall** button.
 
-> [!NOTE]
->
-> The navigation steps, UI elements, and UI text in this section are based on the latest version of Windows 11 with the latest cumulative update installed. For other versions of Windows 11 that are currently supported or don't have the latest cumulative update, some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page might be located under **Settings** > **Apps**.
-
 ::: zone-end
 
 ::: zone pivot="windows-10"
@@ -122,10 +126,6 @@ Once the **Optional features** pane is open, remove a feature with the following
 1. Under **Installed features**, search for the feature that needs to be removed in the **Find an installed optional feature** search box, or scroll through the list of added features until the feature that needs to be removed is found.
 
 1. Once the feature that needs to be removed is found, select the feature to expand it, and then select the **Uninstall** button.
-
-> [!NOTE]
->
-> The navigation steps, UI elements, and UI text in this section are based on Windows 10 22H2 with the latest cumulative update installed. For other versions of Windows 10 that are currently supported or don't have the latest cumulative update, some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page might be located under **Settings** > **Apps** > **Apps & features**.
 
 ::: zone-end
 
