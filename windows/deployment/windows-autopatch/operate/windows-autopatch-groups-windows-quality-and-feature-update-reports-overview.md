@@ -82,7 +82,7 @@ Up to date devices are devices that meet all of the following prerequisites:
 - Have applied the current monthly cumulative updates
 
 > [!NOTE]
-> Device that are [Up to Date devices](#up-to-date-devices) will remain with the **In Progress** status until the device either the current monthly cumulative update is applied or an [alert](../operate/windows-autopatch-device-alerts.md) is received. If the device receives an alert, the device's status will change to [Not up to Date](#not-up-to-date-devices).
+> Device that are [Up to Date](#up-to-date-devices) will remain with the **In Progress** status until either the current monthly cumulative update is applied, or an [alert](../operate/windows-autopatch-device-alerts.md) is received. If the device receives an alert, the device's status will change to [Not up to Date](#not-up-to-date-devices).
 
 #### Up to Date sub statuses
 
@@ -96,7 +96,7 @@ Up to date devices are devices that meet all of the following prerequisites:
 Not Up to Date means a device isn't up to date when the:
 
 - Quality or feature update is out of date, or the device is on the previous update.
-- Device is more than 21 days overdue from the last release.
+- The assigned update schedule has elapsed and the device still has not applied the current release.
 - Device has an [alert](../operate/windows-autopatch-device-alerts.md) resulting in an error and action must be taken.
 
 ### Not Ready devices
