@@ -57,7 +57,7 @@ If fonts associated with a language are needed across the system, then that lang
 
 Adding a language and then switching to it can be done via the **Settings** app.
 
-To install the fonts associated with a language and then switch to that language:
+To add the fonts associated with a language and then switch to that language:
 
 ::: zone pivot="windows-11"
 
@@ -99,7 +99,9 @@ or
 
 1. In the right hand **Time & language** pane, select **Language & region**.
 
-1. In the right hand **Time & language > Language & region** pane, under the **Language** section:
+Once the **Time & language > Language & region** pane is open, add the fonts associated with a language and then switch to that language with the following steps:
+
+1. Under the **Language** section:
 
     1. Drop down the menu next to **Windows display language** to show all of the languages currently added to the device.
 
@@ -127,9 +129,11 @@ or
 
 1. In the left hand pane, select **Language**.
 
-1. In the right hand **Language** pane, drop down the menu below **Windows display language** to show all of the languages currently added to the device.
+Once the **Language** pane is open, add the fonts associated with a language and then switch to that language with the following steps:
 
-1. If the desired language isn't added, add the fonts for the desired language by selecting the **+** button next to **Add a language**.
+1. Drop down the menu below **Windows display language** to show all of the languages currently added to the device.
+
+1. If the desired language isn't listed, add the fonts for the desired language by selecting the **+** button next to **Add a language**.
 
 1. In the **Choose a language to install** window that opens:
 
@@ -158,7 +162,7 @@ or
 
 If fonts associated with a language are needed but aren't needed across the entire system, then that language should be added to the user profile as a supplemental font. Adding a font as a supplemental font doesn't require the user switch to that language. Adding a font as a supplemental font can be done via the **Settings** app.
 
-To install supplemental fonts associated with a language while staying with the current language:
+To add supplemental fonts associated with a language while staying with the current language:
 
 Open the **Optional features** pane in the **Settings** app by selecting the following link:
 

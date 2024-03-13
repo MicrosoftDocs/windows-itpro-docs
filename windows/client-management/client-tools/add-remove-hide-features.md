@@ -105,7 +105,7 @@ Once the **Optional features** pane is open, add a feature with the following st
 
 Once the **System > Optional features** pane is open, remove a feature with the following steps:
 
-1. Under **Installed features**, search for the feature that needs to be removed in the **Search installed features** search box, or scroll through the list of installed features until the feature that needs to be removed is found.
+1. Under **Installed features**, search for the feature that needs to be removed in the **Search installed features** search box, or scroll through the list of added features until the feature that needs to be removed is found.
 
 1. Once the feature that needs to be removed is found, select the feature to expand it, and then select the **Uninstall** button.
 
@@ -119,7 +119,7 @@ Once the **System > Optional features** pane is open, remove a feature with the 
 
 Once the **Optional features** pane is open, remove a feature with the following steps:
 
-1. Under **Installed features**, search for the feature that needs to be removed in the **Find an installed optional feature** search box, or scroll through the list of installed features until the feature that needs to be removed is found.
+1. Under **Installed features**, search for the feature that needs to be removed in the **Find an installed optional feature** search box, or scroll through the list of added features until the feature that needs to be removed is found.
 
 1. Once the feature that needs to be removed is found, select the feature to expand it, and then select the **Uninstall** button.
 
