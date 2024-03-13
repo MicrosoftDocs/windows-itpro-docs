@@ -387,7 +387,7 @@
         - name: Additional Windows Update settings
           href: update/waas-wu-settings.md
         - name: Update other Microsoft products
-          href: update/update-other-microsoft-products.md          
+          href: update/update-other-microsoft-products.md
         - name: Delivery Optimization reference
           href: do/waas-delivery-optimization-reference.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: Windows client in S mode
@@ -573,7 +573,7 @@
                     href: planning/testing-your-application-mitigation-packages.md
                   - name: Use the Sdbinst.exe Command-Line Tool
                     href: planning/using-the-sdbinstexe-command-line-tool.md
-        - name: Install fonts in Windows client
-          href: windows-10-missing-fonts.md
+        - name: Add fonts in Windows
+          href: windows-missing-fonts.md
         - name: Customize Windows PE boot images
           href: customize-boot-image.md
