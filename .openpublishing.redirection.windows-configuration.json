@@ -436,6 +436,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/configuration/store/stop-employees-from-using-microsoft-store.md",
+      "redirect_url": "/windows/configuration/store",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/configuration/supported-csp-start-menu-layout-windows.md",
       "redirect_url": "/windows/configuration/start/supported-csp-start-menu-layout-windows",
       "redirect_document_id": false
