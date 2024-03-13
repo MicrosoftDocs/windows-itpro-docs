@@ -156,7 +156,6 @@ Once the **Language** pane is open, add the fonts associated with a language and
 >
 > Windows Update is used to add the language including the associated fonts. The device needs to be online so Windows Update can download the content that it needs to add.
 
-
 ## Add optional fonts manually without changing language settings
 
 If fonts associated with a language are needed but aren't needed across the entire system, then that language should be added to the user profile as a supplemental font. Adding a font as a supplemental font doesn't require the user switch to that language. Adding a font as a supplemental font can be done via the **Settings** app.
@@ -202,10 +201,6 @@ Once the **System > Optional features** pane is open, add a supplemental font wi
 
     1. Review the selected list of features and then select the **Install** button to add the selected features.
 
-> [!NOTE]
->
-> The navigation steps, UI elements, and UI text in this section are based on the latest version of Windows 11 with the latest cumulative update installed. For other versions of Windows 11 that are currently supported or don't have the latest cumulative update, some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page might be located under **Settings** > **Apps**.
-
 ::: zone-end
 
 ::: zone pivot="windows-10"
@@ -226,15 +221,28 @@ Once the **Optional features** pane is open, add a supplemental font with the fo
 
     1. Once all of the desired supplemental fonts are selected, select the **Install** button.
 
+::: zone-end
+
+> [!IMPORTANT]
+>
+> Windows Update is used to add the optional features including the supplemental fonts. The device needs to be online so Windows Update can download the content that it needs to add.
+
+::: zone pivot="windows-11"
+
+> [!NOTE]
+>
+> The navigation steps, UI elements, and UI text in this section are based on the latest version of Windows 11 with the latest cumulative update installed. For other versions of Windows 11 that are currently supported or don't have the latest cumulative update, some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page might be located under **Settings** > **Apps**.
+
+::: zone-end
+
+::: zone pivot="windows-10"
+
 > [!NOTE]
 >
 > The navigation steps, UI elements, and UI text in this section are based on Windows 10 22H2 with the latest cumulative update installed. For other versions of Windows 10 that are currently supported or don't have the latest cumulative update, some of the navigation steps, UI elements, and UI text might be different. For example, the [**Optional features**](ms-settings:optionalfeatures) page might be located under **Settings** > **Apps** > **Apps & features**.
 
 ::: zone-end
 
-> [!IMPORTANT]
->
-> Windows Update is used to add the optional features including the supplemental fonts. The device needs to be online so Windows Update can download the content that it needs to add.
 
 ## Fonts included in optional font features
 
