@@ -7,7 +7,7 @@ ms.date: 03/04/2024
 
 # Quickstart: configure a kiosk with Assigned Access
 
-This quickstart provides practical examples of how to configure a *kiosk experience* on Windows with Assigne Access. The examples describe the steps using the Settings app, a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
+This quickstart provides practical examples of how to configure a *kiosk experience* on Windows with Assigned Access. The examples describe the steps using the Settings app, a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
 
 The examples can be modified to fit your specific requirements. For example, you can change the app used, the URL specified when opening Microsoft Edge, or change the name of the user that automatically signs in to Windows.
 

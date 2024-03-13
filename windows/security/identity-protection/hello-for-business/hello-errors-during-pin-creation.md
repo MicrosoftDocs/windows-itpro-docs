@@ -38,7 +38,7 @@ If the error occurs again, check the error code against the following table to s
 | 0x8009002A | NTE_NO_MEMORY | Close programs, which are taking up memory and try again. |
 | 0x80090031 | NTE_AUTHENTICATION_IGNORED | Reboot the device. If the error occurs again after rebooting, [reset the TPM](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd851452(v=ws.11)) or run [Clear-TPM](/powershell/module/trustedplatformmodule/clear-tpm). |
 | 0x80090035 | Policy requires TPM and the device doesn't have TPM. | Change the Windows Hello for Business policy to not require a TPM. |
-| 0x80090036 | User canceled an interactive dialog. | User will be asked to try again. |
+| 0x80090036 | User canceled an interactive dialog. | User is asked to try again. |
 | 0x801C0003 | User isn't authorized to enroll. | Check if the user has permission to perform the operation​. |
 | 0x801C000E | Registration quota reached. | Unjoin some other device that is currently joined using the same account or [increase the maximum number of devices per user](/azure/active-directory/devices/device-management-azure-portal). |
 | 0x801C000F | Operation successful, but the device requires a reboot. | Reboot the device. |
