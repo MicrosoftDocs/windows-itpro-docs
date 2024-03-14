@@ -41,7 +41,7 @@ The Start menu has the following areas:
 - **Recommended**: Shows recently opened files and recently installed apps
     :::column-end:::
     :::column:::
-    :::image type="content" source="./images/start-windows-11-components.png" alt-text="Sample start menu layout with its components highlighted." border="false" lightbox="./images/windows-11-components.png":::
+    :::image type="content" source="./images/windows-11-components.png" alt-text="Sample start menu layout with its components highlighted." border="false" lightbox="./images/windows-11-components.png":::
     :::column-end:::
 :::row-end:::
 
@@ -399,6 +399,6 @@ After the settings are applied, sign in to the device. You'll see the Start layo
 ::: zone-end
 
 ::: zone pivot="windows-10"
-:::image type="content" source="images/restricted-user-experience-windows-10.png" alt-text="Screenshot of the Windows 10 desktop used for the quickstart." border="false":::
+:::image type="content" source="images/windows-10.png" alt-text="Screenshot of the Windows 10 Start menu." border="false":::
 
 ::: zone-end
