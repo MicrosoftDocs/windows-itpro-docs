@@ -69,3 +69,9 @@ For information on customizing the Start menu layout using policy, see [Customiz
 
     - `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Disable context menus in the Start Menu`
     - `User Configuration\Administrative Templates\Start Menu and Taskbar\Disable context menus in the Start Menu`
+
+
+
+:::image type="content" source="images/windows-11.png" alt-text="Screenshot of the Windows 11 Start menu." border="false":::
+
+:::image type="content" source="images/windows-11-no-recommendations.png" alt-text="Screenshot of the Windows 11 Start menu without recommendations." border="false":::

@@ -37,16 +37,41 @@ ms.topic: include
 
 ```json
 {
-  "pinnedList": [
-    {"packagedAppId": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
-    {"packagedAppId": "Microsoft.Windows.Photos_8wekyb3d8bbwe!App"},
-    {"packagedAppId": "Microsoft.BingWeather_8wekyb3d8bbwe!App"},
-    {"desktopAppLink": "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Command Prompt.lnk"},
-    {"desktopAppLink": "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell.lnk"},
-    {"desktopAppLink": "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\File Explorer.lnk"},
-    {"packagedAppId": "windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel"},
-    {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk"}
-  ]
+    "pinnedList": [
+        {
+            "desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk"
+        },
+        {
+            "packagedAppId": "windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel"
+        },
+        {
+            "desktopAppLink": "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\File Explorer.lnk"
+        },
+        {
+            "desktopAppLink": "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell.lnk"
+        },
+        {
+            "packagedAppId": "Microsoft.WindowsTerminal_8wekyb3d8bbwe!App"
+        },
+        {
+            "packagedAppId": "Microsoft.Paint_8wekyb3d8bbwe!App"
+        },
+        {
+            "packagedAppId": "Microsoft.Windows.Photos_8wekyb3d8bbwe!App"
+        },
+        {
+            "packagedAppId": "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe!App"
+        },
+        {
+            "packagedAppId": "Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe!App"
+        },
+        {
+            "packagedAppId": "Microsoft.SecHealthUI_8wekyb3d8bbwe!SecHealthUI"
+        },
+        {
+            "packagedAppId": "Microsoft.OutlookForWindows_8wekyb3d8bbwe!Microsoft.OutlookforWindows"
+        }
+    ]
 }
 ```
 

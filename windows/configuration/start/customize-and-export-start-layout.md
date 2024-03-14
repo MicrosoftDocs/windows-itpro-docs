@@ -394,7 +394,7 @@ Here you can find an example of Start layout that you can use as a reference:
 After the settings are applied, sign in to the device. You'll see the Start layout that you configured:
 
 ::: zone pivot="windows-11"
-:::image type="content" source="images/restricted-user-experience-windows-11.png" alt-text="Screenshot of the Windows 11 desktop used for the quickstart." border="false":::
+:::image type="content" source="images/windows-11.png" alt-text="Screenshot of the Windows 11 Start menu." border="false":::
 
 ::: zone-end
 
