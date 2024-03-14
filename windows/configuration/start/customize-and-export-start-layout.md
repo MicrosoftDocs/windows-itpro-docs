@@ -195,6 +195,8 @@ A partial Start layout enables you to add one or more customized tile groups to 
 
 ![locked tile group.](images/start-pinned-app.png)
 
+:::image type="content" source="images/windows-10-partial-layout.png" alt-text="Screenshot of the Windows 10 Start menu with partial layout.":::
+
 When a partial Start layout is applied for the first time, the new groups are added to the users' existing Start layouts. If an app tile is in both an existing group and in a new locked group, the duplicate app tile is removed from the existing (unlocked) group.
 
 When a partial Start layout is applied to a device that already has a StartLayout.xml applied, groups that were added previously are removed and the groups in the new layout are added.
