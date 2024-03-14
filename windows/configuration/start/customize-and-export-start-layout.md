@@ -33,20 +33,15 @@ When you customize the Start layout, you overwrite the entire full layout. Users
 The Start menu consistes of set of links to applications, folders, or files that are arranged in a grid of pages.
 
 :::row:::
-    :::column:::
-
-    :::column-end:::
-    :::column:::
+:::column span="3":::
 The Start menu has the following areas:
+
 - **Pinned**: Shows pinned apps, or a subset of all of the apps installed on the device. You can create a list of pinned apps you want on the devices using the **ConfigureStartPins** policy. **ConfigureStartPins** overrides the entire layout, which also removes apps that are pinned by default
 - **All apps**: Users select this option to see an alphabetical list of all the apps installed on the device.
 - **Recommended**: Shows recently opened files and recently installed apps
     :::column-end:::
     :::column:::
-
-    :::column-end:::
-    :::column:::
-    :::image type="content" source="./images/start-windows-11.png" alt-text="Sample start menu layout with pinned apps, access to all apps, and recommended files." border="false" :::
+    :::image type="content" source="./images/start-windows-11.png" alt-text="Sample start menu layout with pinned apps, access to all apps, and recommended files." border="false" lightbox="./images/start-windows-11.png":::
     :::column-end:::
 :::row-end:::
 
@@ -121,17 +116,6 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 | - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start?WT.mc_id=Portal-Microsoft_Intune_Workflows#configurestartpins)<br>- **String:** <br>- **Value:** content of the JSON file |
 | - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start?WT.mc_id=Portal-Microsoft_Intune_Workflows#configurestartpins)<br>- **Data type:** <br>- **Value:** content of the JSON file |
 
-```json
-{
-  "pinnedList": [
-    { "desktopAppId": "MSEdge" },
-    { "desktopAppId": "Microsoft.Office.WINWORD.EXE.15" },
-    { "packagedAppId": "Microsoft.WindowsStore_8wekyb3d8bbwe!App" },
-    { "packagedAppId": "Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" }
-  ]
-}
-```
-
 ::: zone-end
 
 ::: zone pivot="windows-10"
@@ -188,24 +172,6 @@ To export the Start layout to an .xml file:
 
     Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](/powershell/module/startlayout/export-startlayout) cmdlet doesn't append the file name extension, and the policy settings require the extension.
 
-    Example of a layout file produced by `Export-StartLayout`:
-
-    ```xml
-    <LayoutModificationTemplate Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
-          <DefaultLayoutOverride>
-            <StartLayoutCollection>
-              <defaultlayout:StartLayout GroupCellWidth="6" xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout">
-                <start:Group Name="Life at a glance" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout">
-                  <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-                  <start:Tile Size="2x2" Column="4" Row="0" AppUserModelID="Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI" />
-                  <start:Tile Size="2x2" Column="2" Row="0" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                </start:Group>
-
-              </defaultlayout:StartLayout>
-            </StartLayoutCollection>
-          </DefaultLayoutOverride>
-        </LayoutModificationTemplate>
-    ```
 
 1. (Optional) Edit the .xml file to add [a taskbar configuration](../taskbar/configure.md) or to [modify the exported layout](start-layout-xml-desktop.md). When you make changes to the exported layout, be aware that [the order of the elements in the .xml file is critical.](start-layout-xml-desktop.md#required-order)
 
@@ -332,83 +298,17 @@ Three features enable Start and taskbar layout control:
 
 - In Windows Configuration Designer, you use the **Policies/Start/StartLayout** setting to provide the contents of the .xml file that defines the Start and taskbar layout.
 
-<span id="escape"/>
-
-## <a href="" id="escape"></a>Prepare the Start layout XML file
+## Prepare the Start layout XML file
 
 The **Export-StartLayout** cmdlet produces an XML file. Because Windows Configuration Designer produces a customizations.xml file that contains the configuration settings, adding the Start layout section to the customizations.xml file directly would result in an XML file embedded in an XML file. Before you add the Start layout section to the customizations.xml file, you must replace the markup characters in your layout.xml with escape characters.
 
-1. Copy the contents of layout.xml into an online tool that escapes characters.
+1. Copy the contents of layout.xml into an online tool that escapes characters
+1. During the procedure to create a provisioning package, you will copy the text with the escape characters and paste it in the customizations.xml file for your project
 
-1. During the procedure to create a provisioning package, you will copy the text with the escape characters and paste it in the customizations.xml file for your project.
-
-## <a href="" id="bkmk-domaingpodeployment"></a>Create a provisioning package that contains a customized Start layout
-
-Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](../provisioning-packages/provisioning-install-icd.md)
-
-> [!IMPORTANT]
-> When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
-
-1. Open Windows Configuration Designer (by default, %systemdrive%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
-
-1. Choose **Advanced provisioning**.
-
-1. Name your project, and click **Next**.
-
-1. Choose **All Windows desktop editions** and click **Next**.
-
-1. On **New project**, click **Finish**. The workspace for your package opens.
+## PPKG
 
 1. Expand **Runtime settings** > **Policies** > **Start**, and click **StartLayout**.
 
-   > [!TIP]
-   > If **Start** is not listed, check the type of settings you selected in step 1. You must create the project using settings for **All Windows desktop editions**.
-
-1. Enter **layout.xml**. This value creates a placeholder in the customizations.xml file that you will replace with the contents of the layout.xml file in a later step.
-
-1. Save your project and close Windows Configuration Designer.
-
-1. In File Explorer, open the project's directory. (The default location is C:\Users\\*user name*\Documents\Windows Imaging and Configuration Designer (WICD)\\*project name*)
-
-1. Open the customizations.xml file in a text editor.
-
-1. Replace **layout.xml** with the text from the layout.xml file, [with markup characters replaced with escape characters](#escape).
-
-1. Save and close the customizations.xml file.
-
-1. Open Windows Configuration Designer and open your project.
-
-1. On the **File** menu, select **Save.**
-
-1. On the **Export** menu, select **Provisioning package**.
-
-1. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
-
-1. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
-
-    - **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
-
-    - **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Browse** and choosing the certificate you want to use to sign the package.
-
-1. Click **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Imaging and Configuration Designer (ICD) uses the project folder as the output location.
-
-    Optionally, you can click **Browse** to change the default output location.
-
-1. Click **Next**.
-
-1. Click **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status.
-
-    If you need to cancel the build, click **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
-
-1. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
-
-    If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
-
-    - If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
-    - If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
-
-1. Copy the provisioning package to the target device.
-1. Double-click the ppkg file and allow it to install.
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
@@ -477,9 +377,7 @@ To configure Start Layout policy settings in Local Group Policy Editor:
    >
    > `(ls <path>).LastWriteTime = Get-Date`
 
-## <a href="" id="bkmk-updatestartscreenlayout"></a>Update a customized Start layout
-
-After you use Group Policy to apply a customized Start and taskbar layout on a computer or in a domain, you can update the layout simply by replacing the .xml file that is specified in the Start Layout policy settings with a file with a newer timestamp.
+---
 
 ::: zone-end
 

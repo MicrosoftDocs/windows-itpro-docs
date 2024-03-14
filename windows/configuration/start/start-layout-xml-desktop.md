@@ -7,9 +7,8 @@ appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ---
 
-# Start layout XML for desktop editions of Windows 10 (reference)
+# Start layout XML Windows 10
 
->**Looking for consumer information?** See [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
 On Windows 10 for desktop editions, the customized Start works by:
 
@@ -40,7 +39,8 @@ The XML schema for `LayoutModification.xml` requires the following order for tag
 1. InkWorkspaceTopApps
 1. StartLayoutCollection
 
-Comments are not supported in the `LayoutModification.xml` file.
+> [!CAUTION]
+> Comments are not supported in the `LayoutModification.xml` file.
 
 ### Supported elements and attributes
 
