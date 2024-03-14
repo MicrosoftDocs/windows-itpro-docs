@@ -1,8 +1,10 @@
 ---
 title: Customize and manage the Windows 10 Start and taskbar layout
 description: On Windows devices, customize the start menu layout and taskbar using XML, group policy, provisioning package, or MDM policy. You can add pinned folders, add a start menu size, pin apps to the taskbar, and more.
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/05/2021
+appliesto:
+- ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ---
 
 # Customize the Start menu and taskbar layout on Windows 10 and later devices
@@ -31,27 +33,23 @@ For more information, see [Customize and export Start layout](customize-and-expo
 
 For the **taskbar**, you can use the same XML file as the start screen. Or, you can create a new XML file. When you have the XML file, add this file to a group policy or a provisioning package. Using these methods, you can deploy the XML file to your devices. When the devices receive your policy, they'll use the taskbar settings you configured in the XML file.
 
-For more information, see [Configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md).
+For more information, see [Configure Windows 10 taskbar](../taskbar/configure.md).
 
 ## Use group policy
 
 Using group policy objects (GPO), you can manage different parts of the Start menu and taskbar. You don't need to reimage the devices. Using administrative templates, you configure settings in a policy, and then deploy this policy to your devices. [Start menu policy settings](#start-menu-policy-settings) (in this article) lists the policies you can configure.
 
-For more information, see [Use group policy to customize Windows 10 Start and taskbar](customize-windows-10-start-screens-by-using-group-policy.md).
-
 ## Use provisioning packages
 
 Provisioning packages are containers that include a set of configuration settings. They're designed to configure a device quickly, without installing a new image. For more information on what provisioning packages are, and what they do, see [Provisioning packages](../provisioning-packages/provisioning-packages.md).
 
-Using a provisioning package, you can customize the Start and taskbar. For more information, see [Use provisioning packages to customize Windows 10 Start and taskbar](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
+Using a provisioning package, you can customize the Start and taskbar.
 
 ## Use a mobile device management (MDM) solution
 
 Using an MDM solution, you add an XML file to a policy, and then deploy this policy to your devices.
 
 If you use Microsoft Intune for your MDM solution, then you can use settings to configure Start and the taskbar. For more information on the settings you can configure, see [Start settings in Microsoft Intune](/mem/intune/configuration/device-restrictions-windows-10#start).
-
-For more information, see [Use MDM to customize Windows 10 Start and taskbar](customize-windows-10-start-screens-by-using-mobile-device-management.md).
 
 ## Start menu policy settings
 
@@ -156,7 +154,7 @@ There are three app categories that could be pinned to a taskbar:
 - Default Windows apps pinned during the OS installation, such as Microsoft Edge, File Explorer, and Store
 - Apps pinned by your organization, such as in an unattended Windows setup
 
-  In an unattended Windows setup file, it's recommended to use the [layoutmodification.xml method](../taskbar/configure-windows-10-taskbar.md) to configure the taskbar options. It's not recommended to use [TaskbarLinks](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-taskbarlinks).
+  In an unattended Windows setup file, it's recommended to use the [layoutmodification.xml method](../taskbar/configure.md) to configure the taskbar options. It's not recommended to use [TaskbarLinks](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-taskbarlinks).
 
 The following example shows how apps are pinned. In OS configured to use a right-to-left language, the taskbar order is reversed:
 
@@ -183,19 +181,6 @@ In a clean install, if you apply a taskbar layout, only the following apps are p
 - Any default apps you don't remove
 
 After the layout is applied, users can pin more apps to the taskbar.
-
-### Taskbar configuration applied to Windows 10 upgrades
-
-When a device is upgraded to Windows 10, apps are already pinned to the taskbar. Some apps may have been pinned to the taskbar by a user, by a customized base image, or by using Windows unattended setup.
-
-On Windows 10 version 1607 and later, the new taskbar layout for upgrades apply the following behavior:
-
-- If users pinned apps to the taskbar, then those pinned apps remain. New apps are added to the right.
-- If users didn't pin any apps (they're pinned during installation or by policy), and the apps aren't in an updated layout file, then the apps are unpinned.
-- If a user didn't pin the app, and the app is in the updated layout file, then the app is pinned to the right.
-- New apps specified in updated layout file are pinned to right of user's pinned apps.
-
-[Learn how to configure Windows 10 taskbar](../taskbar/configure-windows-10-taskbar.md).
 
 ## Start layout configuration errors
 

@@ -1,0 +1,9 @@
+items:
+- name: What is Shell Launcher?
+  href: index.md
+- name: "Quickstart: Configure a kiosk with Shell Launcher"
+  href: quickstart-kiosk.md
+- name: Create a Shell Launcher configuration file
+  href: configuration-file.md
+- name: Shell Launcher XSD
+  href: xsd.md

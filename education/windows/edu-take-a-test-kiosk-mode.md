@@ -26,7 +26,7 @@ The other options allow you to configure Take a Test in kiosk mode using a local
 
 Follow the instructions below to configure your devices, selecting the option that best suits your needs.
 
-#### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
+# [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
 You can use Intune for Education or a custom profile in Microsoft Intune:
 
@@ -68,9 +68,8 @@ To configure devices using Intune for Education, follow these steps:
 :::image type="content" source="./images/takeatest/intune-take-a-test-custom-profile.png" alt-text="Intune portal - creation of a custom policy to configure Take a Test." lightbox="./images/takeatest/intune-take-a-test-custom-profile.png" border="true":::
 
 [!INCLUDE [intune-custom-settings-2](../../includes/configure/intune-custom-settings-2.md)]
-[!INCLUDE [intune-custom-settings-info](../../includes/configure/intune-custom-settings-info.md)]
 
-#### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+# [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
 To create a provisioning package, you can either use Set up School PCs or Windows Configuration Designer:
 
@@ -85,7 +84,7 @@ Create a provisioning package using the Set up School PCs app, configuring the s
 
 ### Create a provisioning package using Windows Configuration Designer
 
-[Create a provisioning package][WIN-1] using Windows Configuration Designer with the following settings:
+[!INCLUDE [provisioning-package-1](../../includes/configure/provisioning-package-1.md)]
 
 | Setting |
 |--------|
@@ -99,22 +98,11 @@ Create a provisioning package using the Set up School PCs app, configuring the s
 
 :::image type="content" source="./images/takeatest/wcd-take-a-test.png" alt-text="Windows Configuration Designer - configuration of policies to enable Take a Test to run in kiosk mode" lightbox="./images/takeatest/wcd-take-a-test.png" border="true":::
 
-Follow the steps in [Apply a provisioning package][WIN-2] to apply the package that you created.
+[!INCLUDE [provisioning-package-2](../../includes/configure/provisioning-package-2.md)]
 
-#### [:::image type="icon" source="images/icons/powershell.svg"::: **PowerShell**](#tab/powershell)
+# [:::image type="icon" source="images/icons/powershell.svg"::: **PowerShell**](#tab/powershell)
 
-Configure your devices using PowerShell scripts via the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal). For more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider).
-
-> [!TIP]
-> PowerShell scripts can be executed as scheduled tasks via Group Policy.
-
-> [!IMPORTANT]
-> For all device settings, the WMI Bridge client must be executed as SYSTEM (LocalSystem) account.
->
-> To test a PowerShell script, you can:
-> 1. [Download the psexec tool](/sysinternals/downloads/psexec)
-> 1. Open an elevated command prompt and run: `psexec.exe -i -s powershell.exe`
-> 1. Run the script in the PowerShell session
+[!INCLUDE [powershell-wmi-bridge-1](../../includes/configure/powershell-wmi-bridge-1.md)]
 
 Edit the following sample PowerShell script to:
 
@@ -171,7 +159,9 @@ $cimObject.HideFastUserSwitching = 1
 Set-CimInstance -CimInstance $cimObject
 ```
 
-#### [:::image type="icon" source="images/icons/settings.svg"::: **Settings app**](#tab/settings)
+[!INCLUDE [powershell-wmi-bridge-2](../../includes/configure/powershell-wmi-bridge-2.md)]
+
+# [:::image type="icon" source="images/icons/settings.svg"::: **Settings app**](#tab/settings)
 
 To create a local account, and configure Take a Test in kiosk mode using the Settings app:
 

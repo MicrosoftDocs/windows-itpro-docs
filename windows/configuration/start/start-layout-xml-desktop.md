@@ -1,7 +1,7 @@
 ---
 title: Start layout XML for desktop editions of Windows 10
 description: This article describes the options for customizing Start layout in LayoutModification.xml for Windows 10 desktop editions.
-ms.topic: article
+ms.topic: reference
 ms.date: 10/02/2018
 appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -191,7 +191,6 @@ You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop ap
           Row="0"
           Column="4"/>
   ```
-
 
   You must set the **DesktopApplicationLinkPath** attribute to the .lnk file that points to the Windows desktop application. The path also supports environment variables.
 
