@@ -41,7 +41,7 @@ The Start menu has the following areas:
 - **Recommended**: Shows recently opened files and recently installed apps
     :::column-end:::
     :::column:::
-    :::image type="content" source="./images/start-windows-11.png" alt-text="Sample start menu layout with pinned apps, access to all apps, and recommended files." border="false" lightbox="./images/start-windows-11.png":::
+    :::image type="content" source="./images/start-windows-11-components.png" alt-text="Sample start menu layout with its components highlighted." border="false" lightbox="./images/windows-11-components.png":::
     :::column-end:::
 :::row-end:::
 
