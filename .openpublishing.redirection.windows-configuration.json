@@ -761,6 +761,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/configuration/kiosk/lock-down-windows-11-to-specific-apps.md",
+      "redirect_url": "/windows/configuration/assigned-access/configuration-file",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/configuration/kiosk/kiosk-additional-reference.md",
       "redirect_url": "/windows/configuration/assigned-access",
       "redirect_document_id": false
