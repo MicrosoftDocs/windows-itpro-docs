@@ -172,7 +172,6 @@ To export the Start layout to an .xml file:
 
     Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](/powershell/module/startlayout/export-startlayout) cmdlet doesn't append the file name extension, and the policy settings require the extension.
 
-
 1. (Optional) Edit the .xml file to add [a taskbar configuration](../taskbar/configure.md) or to [modify the exported layout](start-layout-xml-desktop.md). When you make changes to the exported layout, be aware that [the order of the elements in the .xml file is critical.](start-layout-xml-desktop.md#required-order)
 
 > [!IMPORTANT]
@@ -192,8 +191,6 @@ To export the Start layout to an .xml file:
 ### Configure a partial Start layout
 
 A partial Start layout enables you to add one or more customized tile groups to users' Start screens or menus, while still allowing users to make changes to other parts of the Start layout. All groups that you add are *locked*, meaning users can't change the contents of those tile groups, however users can change the location of those groups. Locked groups are identified with an icon, as shown in the following image.
-
-![locked tile group.](images/start-pinned-app.png)
 
 :::image type="content" source="images/windows-10-partial-layout.png" alt-text="Screenshot of the Windows 10 Start menu with partial layout.":::
 
@@ -311,7 +308,6 @@ The **Export-StartLayout** cmdlet produces an XML file. Because Windows Configur
 
 1. Expand **Runtime settings** > **Policies** > **Start**, and click **StartLayout**.
 
-
 #### [:::image type="icon" source="../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
 You can use a Group Policy Object (GPO) to deploy a customized Start and taskbar layout to users in a domain. No reimaging is required, and the layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start and taskbar layouts for different departments or organizations, with minimal management overhead.
@@ -365,10 +361,7 @@ To configure Start Layout policy settings in Local Group Policy Editor:
 
 1. On the test computer, press the Windows key, type **gpedit**, and then select **Edit group policy (Control panel)**.
 1. Go to **User Configuration** or **Computer Configuration** > **Administrative Templates** >**Start Menu and Taskbar**.
-   ![start screen layout policy settings.](images/starttemplate.jpg)
 1. Right-click **Start Layout** in the right pane, and click **Edit**.
-   This opens the **Start Layout** policy settings.
-   ![policy settings for start screen layout.](images/startlayoutpolicy.jpg)
 1. Enter the following settings, and then click **OK**:
    1. Select **Enabled**.
    1. Under **Options**, specify the path to the .xml file that contains the Start and taskbar layout. For example, type **C:\\Users\\Test01\\StartScreenMarketing.xml**.
