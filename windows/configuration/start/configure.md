@@ -3,6 +3,8 @@ title: Configure the Start menu
 description: Learn about the available options to configure the Windows Start menu and how to configure them via Configuration Service Providers (CSP) or group policy (GPO).
 ms.topic: how-to
 ms.date: 03/15/2024
+appliesto:
+zone_pivot_groups: windows-versions-11-10
 ---
 
 # Configure the Start menu
@@ -21,12 +23,30 @@ This section describes the policy settings to configure the Start menu via confi
 
 ### Policy settings list
 
+
+
+
+:::row:::
+:::column span="3":::
 The list of settings is sorted alphabetically and organized in four categories:
 
 - **Start layout**: settings to control the Start menu layout
 - **Pinned folders**: settings to control the folders pinned for quick access
 - **User options**: settings to control the options exposed when selecting the user icon
 - **Power options**: settings to control the options exposed when selecting the power icon
+    :::column-end:::
+    :::column:::
+::: zone pivot="windows-10"
+    :::image type="content" source="./images/windows-10-settings.png" alt-text="Sample start menu layout with its components highlighted." border="false" lightbox="./images/windows-10-settings.png":::
+::: zone-end
+
+::: zone pivot="windows-11"
+    :::image type="content" source="./images/windows-11-settings.png" alt-text="Sample start menu layout with its components highlighted." border="false" lightbox="./images/windows-11-settings.png":::
+::: zone-end
+
+    :::column-end:::
+:::row-end:::
+
 
 Select one of the tabs to see the list of available settings:
 
@@ -48,30 +68,6 @@ The following table lists the policies that control the Start menu layout. Selec
 |[ImportEdgeAssets](/windows/client-management/mdm/policy-csp-start#importedgeassets)|✅||
 |[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)|✅||
 |[StartLayout](/windows/client-management/mdm/policy-csp-start#startlayout)|✅||
-
-<!
-|Policy name| CSP | GPO |
-|-|-|-|
-|[Allow standard user encryption](#allow-standard-user-encryption)|✅|❌|
-|[Choose default folder for recovery password](#choose-default-folder-for-recovery-password)|❌|✅|
-|[Choose drive encryption method and cipher strength](#choose-drive-encryption-method-and-cipher-strength)|✅|✅|
-|[Configure recovery password rotation](#configure-recovery-password-rotation)|✅|❌|
-|[Disable new DMA devices when this computer is locked](#disable-new-dma-devices-when-this-computer-is-locked)|❌|✅|
-|[Prevent memory overwrite on restart](#prevent-memory-overwrite-on-restart)|❌|✅|
-|[Provide the unique identifiers for your organization](#provide-the-unique-identifiers-for-your-organization)|✅|✅|
-|[Require device encryption](#require-device-encryption)|✅|❌|
-|[Validate smart card certificate usage rule compliance](#validate-smart-card-certificate-usage-rule-compliance)|❌|✅|
-
-[!INCLUDE [allow-standard-user-encryption](includes/allow-standard-user-encryption.md)]
-[!INCLUDE [choose-default-folder-for-recovery-password](includes/choose-default-folder-for-recovery-password.md)]
-[!INCLUDE [choose-drive-encryption-method-and-cipher-strength](includes/choose-drive-encryption-method-and-cipher-strength.md)]
-[!INCLUDE [configure-recovery-password-rotation](includes/configure-recovery-password-rotation.md)]
-[!INCLUDE [disable-new-dma-devices-when-this-computer-is-locked](includes/disable-new-dma-devices-when-this-computer-is-locked.md)]
-[!INCLUDE [prevent-memory-overwrite-on-restart](includes/prevent-memory-overwrite-on-restart.md)]
-[!INCLUDE [provide-the-unique-identifiers-for-your-organization](includes/provide-the-unique-identifiers-for-your-organization.md)]
-[!INCLUDE [require-device-encryption](includes/require-device-encryption.md)]
-[!INCLUDE [validate-smart-card-certificate-usage-rule-compliance](includes/validate-smart-card-certificate-usage-rule-compliance.md)]
--->
 
 #### [:::image type="icon" source="../images/icons/folder.svg"::: **Pinned folders**](#tab/folders)
 
