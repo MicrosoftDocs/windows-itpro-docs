@@ -19,7 +19,7 @@ Select one of the two tabs to learn about licensing requirements to use the secu
 
 [!INCLUDE [licensing-requirements](../../includes/licensing/_licensing-requirements.md)]
 
-#### [:::image type="icon" source="images/icons/activation.svg" border="false"::: **Edition requirements**](#tab/edition)
+#### [:::image type="icon" source="images/icons/subscription.svg" border="false"::: **Edition requirements**](#tab/edition)
 
 [!INCLUDE [_edition-requirements](../../includes/licensing/_edition-requirements.md)]
 
