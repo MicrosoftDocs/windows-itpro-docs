@@ -16,13 +16,19 @@ ms.date: 01/18/2024
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703. Starting in Windows 10, version 1809, it's also supported in Windows 10 Pro.
 
 > [!NOTE]
+> To manage BitLocker through CSP except to enable and disable it using the `RequireDeviceEncryption` policy, regardless of your management platform, one of the following licenses must be assigned to your users:
 >
-> - Settings are enforced only at the time encryption is started. Encryption isn't restarted with settings changes.
-> - You must send all the settings together in a single SyncML to be effective.
+> - Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, and E5).
+> - Windows 10/11 Enterprise A3 or A5 (included in Microsoft 365 A3 and A5).
 
 A `Get` operation on any of the settings, except for `RequireDeviceEncryption` and `RequireStorageCardEncryption`, returns the setting configured by the admin.
 
 For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation returns the actual status of enforcement to the admin, such as if Trusted Platform Module (TPM) protection is required and if encryption is required. And if the device has BitLocker enabled but with password protector, the status reported is 0. A Get operation on RequireDeviceEncryption doesn't verify that a minimum PIN length is enforced (SystemDrivesMinimumPINLength).
+
+> [!NOTE]
+>
+> - Settings are enforced only at the time encryption is started. Encryption isn't restarted with settings changes.
+> - You must send all the settings together in a single SyncML to be effective.
 <!-- BitLocker-Editable-End -->
 
 <!-- BitLocker-Tree-Begin -->
