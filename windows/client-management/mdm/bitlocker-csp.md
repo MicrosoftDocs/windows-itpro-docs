@@ -16,7 +16,7 @@ ms.date: 01/18/2024
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703. Starting in Windows 10, version 1809, it's also supported in Windows 10 Pro.
 
 > [!NOTE]
-> To manage BitLocker through CSP except to enable and disable it using the `RequireDeviceEncryption` policy, regardless of your management platform, one of the following licenses must be assigned to your users:
+> To manage BitLocker through CSP except to enable and disable it using the `RequireDeviceEncryption` policy, one of the following licenses must be assigned to your users regardless of your management platform:
 >
 > - Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, and E5).
 > - Windows 10/11 Enterprise A3 or A5 (included in Microsoft 365 A3 and A5).
