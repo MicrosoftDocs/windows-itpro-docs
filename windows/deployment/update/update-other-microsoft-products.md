@@ -11,7 +11,7 @@ manager: aaroncz
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 02/27/2024
+ms.date: 03/14/2024
 ---
 
 # Update other Microsoft products
@@ -23,7 +23,7 @@ This article contains a list of other Microsoft products that might be updated w
 - **MDM**: ./Device/Vendor/MSFT/Policy/Config/Update/[AllowMUUpdateService](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowmuupdateservice)
 
 > [!Note]
-> This policy includes drivers. If you need to exclude drivers, use [ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-csp-update&bc=/windows/deployment/breadcrumb/toc.json#excludewudriversinqualityupdate).
+> This policy includes drivers. If you need to exclude drivers, use [ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#excludewudriversinqualityupdate).
 
 
 ## List of other Microsoft products
@@ -70,7 +70,6 @@ The following is a list of other Microsoft products that might be updated:
 - Windows Azure Pack
 - Windows Azure Service Bus
 - Windows Embedded Developer Update
-- Windows Intune 
 - Windows Live Sign-in Assistant
 - Windows Small Business Server
 - Zune

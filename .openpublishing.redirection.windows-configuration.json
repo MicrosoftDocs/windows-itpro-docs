@@ -167,7 +167,7 @@
     },
     {
       "source_path": "windows/configuration/stop-employees-from-using-the-windows-store.md",
-      "redirect_url": "/windows/configuration/stop-employees-from-using-microsoft-store",
+      "redirect_url": "/windows/configuration/store",
       "redirect_document_id": false
     },
     {
@@ -347,7 +347,7 @@
     },
     {
       "source_path": "windows/configuration/kiosk-prepare.md",
-      "redirect_url": "/windows/configuration/kiosk/kiosk-prepare",
+      "redirect_url": "/windows/configuration/kiosk/recommendations",
       "redirect_document_id": false
     },
     {
@@ -372,7 +372,7 @@
     },
     {
       "source_path": "windows/configuration/lockdown-features-windows-10.md",
-      "redirect_url": "/windows/configuration/kiosk/lockdown-features-windows-10",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/configuration/kiosk/lockdown-features-windows-10",
       "redirect_document_id": false
     },
     {
@@ -392,7 +392,7 @@
     },
     {
       "source_path": "windows/configuration/manage-tips-and-suggestions.md",
-      "redirect_url": "/windows/configuration/tips/manage-tips-and-suggestions",
+      "redirect_url": "/windows/configuration/",
       "redirect_document_id": false
     },
     {
@@ -432,7 +432,12 @@
     },
     {
       "source_path": "windows/configuration/stop-employees-from-using-microsoft-store.md",
-      "redirect_url": "/windows/configuration/store/stop-employees-from-using-microsoft-store",
+      "redirect_url": "/windows/configuration/store",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/store/stop-employees-from-using-microsoft-store.md",
+      "redirect_url": "/windows/configuration/store",
       "redirect_document_id": false
     },
     {
@@ -728,6 +733,126 @@
     {
       "source_path": "windows/configuration/cortana-at-work/testing-scenarios-using-cortana-in-business-org.md",
       "redirect_url": "/previous-versions/windows/it-pro/windows-10/configuration/cortana-at-work/testing-scenarios-using-cortana-in-business-org",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/lockdown-features-windows-10.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/configuration/kiosk/lockdown-features-windows-10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/find-the-application-user-model-id-of-an-installed-app.md",
+      "redirect_url": "/windows/configuration/store/find-aumid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/lock-down-windows-10-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/lock-down-windows-10-to-specific-apps.md",
+      "redirect_url": "/windows/configuration/assigned-access/configuration-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/assigned-access/create-xml.md",
+      "redirect_url": "/windows/configuration/assigned-access/configuration-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/lock-down-windows-11-to-specific-apps.md",
+      "redirect_url": "/windows/configuration/assigned-access/configuration-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/kiosk-additional-reference.md",
+      "redirect_url": "/windows/configuration/assigned-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/kiosk-mdm-bridge.md",
+      "redirect_url": "/windows/configuration/assigned-access/quickstart-kiosk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/kiosk-policies.md",
+      "redirect_url": "/windows/configuration/assigned-access/policy-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/kiosk-shelllauncher.md",
+      "redirect_url": "/windows/configuration/assigned-access/shell-launcher",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/kiosk-validate.md",
+      "redirect_url": "/windows/configuration/assigned-access/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/kiosk-xml.md",
+      "redirect_url": "/windows/configuration/assigned-access/configuration-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/setup-digital-signage.md",
+      "redirect_url": "/windows/configuration/assigned-access/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/kiosk-single-app.md",
+      "redirect_url": "/windows/configuration/assigned-access/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/kiosk-methods.md",
+      "redirect_url": "/windows/configuration/assigned-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/guidelines-for-assigned-access-app.md",
+      "redirect_url": "/windows/configuration/assigned-access/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/kiosk-prepare.md",
+      "redirect_url": "/windows/configuration/assigned-access/recommendations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/customize-start-menu-layout-windows-11.md",
+      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/customize-windows-10-start-screens-by-using-group-policy.md",
+      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/customize-windows-10-start-screens-by-using-mobile-device-management.md",
+      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md",
+      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/taskbar/configure-windows-10-taskbar.md",
+      "redirect_url": "/windows/configuration/taskbar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/taskbar/customize-taskbar-windows-11.md",
+      "redirect_url": "/windows/configuration/taskbar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/tips/manage-tips-and-suggestions.md",
+      "redirect_url": "/windows/configuration",
       "redirect_document_id": false
     }
   ]
