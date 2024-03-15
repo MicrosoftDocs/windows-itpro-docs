@@ -27,15 +27,15 @@ This section describes the policy settings to configure the Start menu via confi
 
 
 :::row:::
-:::column span="3":::
+:::column span="2":::
 The list of settings is sorted alphabetically and organized in four categories:
 
-- **Start layout**: settings to control the Start menu layout
-- **Pinned folders**: settings to control the folders pinned for quick access
-- **User options**: settings to control the options exposed when selecting the user icon
-- **Power options**: settings to control the options exposed when selecting the power icon
+1. **Start layout**: settings to control the Start menu layout
+1. **User options**: settings to control the options exposed when selecting the user icon
+1. **Pinned folders**: settings to control the folders pinned for quick access
+1. **Power options**: settings to control the options exposed when selecting the power icon
     :::column-end:::
-    :::column:::
+:::column span="2":::
 ::: zone pivot="windows-10"
     :::image type="content" source="./images/windows-10-settings.png" alt-text="Sample start menu layout with its components highlighted." border="false" lightbox="./images/windows-10-settings.png":::
 ::: zone-end
@@ -69,9 +69,9 @@ The following table lists the policies that control the Start menu layout. Selec
 |[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)|✅||
 |[StartLayout](/windows/client-management/mdm/policy-csp-start#startlayout)|✅||
 
-#### [:::image type="icon" source="../images/icons/folder.svg"::: **Pinned folders**](#tab/folders)
-
 #### [:::image type="icon" source="../images/icons/user.svg"::: **User options**](#tab/user)
+
+#### [:::image type="icon" source="../images/icons/folder.svg"::: **Pinned folders**](#tab/folders)
 
 #### [:::image type="icon" source="../images/icons/power.svg"::: **Power options**](#tab/power)
 

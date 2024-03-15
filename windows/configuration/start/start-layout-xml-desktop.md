@@ -9,7 +9,6 @@ appliesto:
 
 # Start layout XML Windows 10
 
-
 On Windows 10 for desktop editions, the customized Start works by:
 
 - Windows 10 checks the chosen base default layout, such as the desktop edition and whether Cortana is supported for the country/region.
