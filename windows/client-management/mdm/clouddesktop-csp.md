@@ -1,7 +1,7 @@
 ---
 title: CloudDesktop CSP
 description: Learn more about the CloudDesktop CSP.
-ms.date: 01/18/2024
+ms.date: 03/05/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -29,7 +29,7 @@ The following list shows the CloudDesktop configuration service provider nodes:
 <!-- Device-BootToCloudPCEnhanced-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.3235] and later |
 <!-- Device-BootToCloudPCEnhanced-Applicability-End -->
 
 <!-- Device-BootToCloudPCEnhanced-OmaUri-Begin -->
