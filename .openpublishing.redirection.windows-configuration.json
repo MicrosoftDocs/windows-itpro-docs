@@ -167,7 +167,7 @@
     },
     {
       "source_path": "windows/configuration/stop-employees-from-using-the-windows-store.md",
-      "redirect_url": "/windows/configuration/stop-employees-from-using-microsoft-store",
+      "redirect_url": "/windows/configuration/store",
       "redirect_document_id": false
     },
     {
@@ -392,7 +392,7 @@
     },
     {
       "source_path": "windows/configuration/manage-tips-and-suggestions.md",
-      "redirect_url": "/windows/configuration/tips/manage-tips-and-suggestions",
+      "redirect_url": "/windows/configuration/",
       "redirect_document_id": false
     },
     {
@@ -432,7 +432,12 @@
     },
     {
       "source_path": "windows/configuration/stop-employees-from-using-microsoft-store.md",
-      "redirect_url": "/windows/configuration/store/stop-employees-from-using-microsoft-store",
+      "redirect_url": "/windows/configuration/store",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/store/stop-employees-from-using-microsoft-store.md",
+      "redirect_url": "/windows/configuration/store",
       "redirect_document_id": false
     },
     {
@@ -751,8 +756,13 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/configuration/assigned-access/create-xml.md",
+      "redirect_url": "/windows/configuration/assigned-access/configuration-file",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/configuration/kiosk/lock-down-windows-11-to-specific-apps.md",
-      "redirect_url": "/windows/configuration/assigned-access/create-xml",
+      "redirect_url": "/windows/configuration/assigned-access/configuration-file",
       "redirect_document_id": false
     },
     {
@@ -843,6 +853,11 @@
     {
       "source_path": "windows/configuration/start/supported-csp-start-menu-layout-windows.md",
       "redirect_url": "/windows/configuration/start/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/tips/manage-tips-and-suggestions.md",
+      "redirect_url": "/windows/configuration",
       "redirect_document_id": false
     }
   ]
