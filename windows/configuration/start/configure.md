@@ -21,11 +21,6 @@ To configure the Start menu, you can use one of the following options:
 
 This section describes the policy settings to configure the Start menu via configuration service provider (CSP) and group policy (GPO).
 
-### Policy settings list
-
-
-
-
 :::row:::
 :::column span="2":::
 The list of settings is sorted alphabetically and organized in four categories:
@@ -34,7 +29,8 @@ The list of settings is sorted alphabetically and organized in four categories:
 1. **User options**: settings to control the options exposed when selecting the user icon
 1. **Pinned folders**: settings to control the folders pinned for quick access
 1. **Power options**: settings to control the options exposed when selecting the power icon
-    :::column-end:::
+
+:::column-end:::
 :::column span="2":::
 ::: zone pivot="windows-10"
     :::image type="content" source="./images/windows-10-settings.png" alt-text="Sample start menu layout with its components highlighted." border="false" lightbox="./images/windows-10-settings.png":::
@@ -68,6 +64,8 @@ The following table lists the policies that control the Start menu layout. Selec
 |[ImportEdgeAssets](/windows/client-management/mdm/policy-csp-start#importedgeassets)|✅||
 |[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)|✅||
 |[StartLayout](/windows/client-management/mdm/policy-csp-start#startlayout)|✅||
+
+
 
 #### [:::image type="icon" source="../images/icons/user.svg"::: **User options**](#tab/user)
 

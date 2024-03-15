@@ -11,5 +11,7 @@ items:
     href: start-secondary-tiles.md
   - name: Start layout XML for Windows 10 desktop editions (reference)
     href: start-layout-xml-desktop.md
+- name: XML schema definition (XSD)
+  href: xsd.md
 - name: Troubleshoot Start menu errors 🔗
   href: /troubleshoot/windows-client/shell-experience/troubleshoot-start-menu-errors
