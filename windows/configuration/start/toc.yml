@@ -1,8 +1,8 @@
 items:
 - name: Customize and export the Start layout
   href: customize-and-export-start-layout.md
-- name: Supported Start menu CSPs
-  href: supported-csp-start-menu-layout-windows.md
+- name: Configure the Start menu
+  href: configure.md
 - name: Start layout and taskbar
   href: windows-10-start-layout-options-and-policies.md
 - name: Use XML

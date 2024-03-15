@@ -49,6 +49,29 @@ The following table lists the policies that control the Start menu layout. Selec
 |[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)|✅||
 |[StartLayout](/windows/client-management/mdm/policy-csp-start#startlayout)|✅||
 
+<!
+|Policy name| CSP | GPO |
+|-|-|-|
+|[Allow standard user encryption](#allow-standard-user-encryption)|✅|❌|
+|[Choose default folder for recovery password](#choose-default-folder-for-recovery-password)|❌|✅|
+|[Choose drive encryption method and cipher strength](#choose-drive-encryption-method-and-cipher-strength)|✅|✅|
+|[Configure recovery password rotation](#configure-recovery-password-rotation)|✅|❌|
+|[Disable new DMA devices when this computer is locked](#disable-new-dma-devices-when-this-computer-is-locked)|❌|✅|
+|[Prevent memory overwrite on restart](#prevent-memory-overwrite-on-restart)|❌|✅|
+|[Provide the unique identifiers for your organization](#provide-the-unique-identifiers-for-your-organization)|✅|✅|
+|[Require device encryption](#require-device-encryption)|✅|❌|
+|[Validate smart card certificate usage rule compliance](#validate-smart-card-certificate-usage-rule-compliance)|❌|✅|
+
+[!INCLUDE [allow-standard-user-encryption](includes/allow-standard-user-encryption.md)]
+[!INCLUDE [choose-default-folder-for-recovery-password](includes/choose-default-folder-for-recovery-password.md)]
+[!INCLUDE [choose-drive-encryption-method-and-cipher-strength](includes/choose-drive-encryption-method-and-cipher-strength.md)]
+[!INCLUDE [configure-recovery-password-rotation](includes/configure-recovery-password-rotation.md)]
+[!INCLUDE [disable-new-dma-devices-when-this-computer-is-locked](includes/disable-new-dma-devices-when-this-computer-is-locked.md)]
+[!INCLUDE [prevent-memory-overwrite-on-restart](includes/prevent-memory-overwrite-on-restart.md)]
+[!INCLUDE [provide-the-unique-identifiers-for-your-organization](includes/provide-the-unique-identifiers-for-your-organization.md)]
+[!INCLUDE [require-device-encryption](includes/require-device-encryption.md)]
+[!INCLUDE [validate-smart-card-certificate-usage-rule-compliance](includes/validate-smart-card-certificate-usage-rule-compliance.md)]
+-->
 
 #### [:::image type="icon" source="../images/icons/folder.svg"::: **Pinned folders**](#tab/folders)
 
@@ -125,4 +148,53 @@ The following table lists the policies that control the Start menu layout. Selec
 [HideTaskViewButton](/windows/client-management/mdm/policy-csp-start#hidetaskviewbutton)
 [NoPinningToTaskbar](/windows/client-management/mdm/policy-csp-start#nopinningtotaskbar)
 [SimplifyQuickSettings](/windows/client-management/mdm/policy-csp-start#simplifyquicksettings)
->
+
+
+
+###
+
+
+# Supported configuration service provider (CSP) policies for Windows 11 Start menu
+
+The Windows OS exposes CSPs that are used by MDM providers, like [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). In an MDM policy, these CSPs are settings that you configure in a policy. When the policy is ready, you deploy the policy to your devices.
+
+This article lists the CSPs that are available to customize the Start menu for Windows 11 devices. Windows 11 uses the [Policy CSP - Start](/windows/client-management/mdm/policy-csp-start). For more general information, see [Configuration service provider (CSP) reference](/windows/client-management/mdm/configuration-service-provider-reference).
+
+For information on customizing the Start menu layout using policy, see [Customize the Start menu layout](customize-and-export-start-layout.md).
+
+## Existing Windows CSP policies that Windows 11 supports
+
+- **Start/ShowOrHideMostUsedApps**: This policy enforces always showing Most Used Apps, or always hiding Most Used Apps in the Start menu. If you use this policy, the [Start/HideFrequentlyUsedApps](/windows/client-management/mdm/policy-csp-start#start-hidefrequentlyusedapps) policy is ignored.
+
+  The [Start/HideFrequentlyUsedApps](/windows/client-management/mdm/policy-csp-start#start-hidefrequentlyusedapps) policy enforces hiding Most Used Apps on the Start menu. You can't use this policy to enforce always showing Most Used Apps on the Start menu.
+
+**The following policies are supported starting with Windows 11, version 22H2:**
+
+- [Start/HideAppList](/windows/client-management/mdm/policy-csp-start#start-hideapplist)
+- [Start/DisableContextMenus](/windows/client-management/mdm/policy-csp-start#start-disablecontextmenus)
+
+## Existing CSP policies that Windows 11 doesn't support
+
+- [Start/StartLayout](/windows/client-management/mdm/policy-csp-start#start-startlayout)
+  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Start Layout`
+
+- [Start/HideRecentlyAddedApps](/windows/client-management/mdm/policy-csp-start#start-hiderecentlyaddedapps)
+- Group policy: `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove "Recently added" list from Start Menu`
+
+> [!NOTE]
+> The following two policies are supported starting in Windows 11, version 22H2
+
+- [Start/HideAppList](/windows/client-management/mdm/policy-csp-start#start-hideapplist)
+  - Group policy:
+    - `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove All Programs list from the Start menu`
+    - `User Configuration\Administrative Templates\Start Menu and Taskbar\Remove All Programs list from the Start menu`
+
+- [Start/DisableContextMenus](/windows/client-management/mdm/policy-csp-start#start-disablecontextmenus)
+  - Group policy:
+
+    - `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Disable context menus in the Start Menu`
+    - `User Configuration\Administrative Templates\Start Menu and Taskbar\Disable context menus in the Start Menu`
+
+:::image type="content" source="images/windows-11.png" alt-text="Screenshot of the Windows 11 Start menu." border="false":::
+
+:::image type="content" source="images/windows-11-no-recommended.png" alt-text="Screenshot of the Windows 11 Start menu without recommendations." border="false":::

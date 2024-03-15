@@ -437,7 +437,7 @@
     },
     {
       "source_path": "windows/configuration/supported-csp-start-menu-layout-windows.md",
-      "redirect_url": "/windows/configuration/start/supported-csp-start-menu-layout-windows",
+      "redirect_url": "/windows/configuration/start/configure",
       "redirect_document_id": false
     },
     {
@@ -838,6 +838,11 @@
     {
       "source_path": "windows/configuration/taskbar/customize-taskbar-windows-11.md",
       "redirect_url": "/windows/configuration/taskbar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/supported-csp-start-menu-layout-windows.md",
+      "redirect_url": "/windows/configuration/start/configure",
       "redirect_document_id": false
     }
   ]
