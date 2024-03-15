@@ -34,29 +34,21 @@ Select one of the tabs to see the list of available settings:
 
 The following table lists the policies that control the Start menu layout. Select the policy name for more details.
 
-<!-->
 |Policy name| CSP | GPO |
 |-|-|-|
-|[Allow standard user encryption](#allow-standard-user-encryption)|✅|❌|
-|[Choose default folder for recovery password](#choose-default-folder-for-recovery-password)|❌|✅|
-|[Choose drive encryption method and cipher strength](#choose-drive-encryption-method-and-cipher-strength)|✅|✅|
-|[Configure recovery password rotation](#configure-recovery-password-rotation)|✅|❌|
-|[Disable new DMA devices when this computer is locked](#disable-new-dma-devices-when-this-computer-is-locked)|❌|✅|
-|[Prevent memory overwrite on restart](#prevent-memory-overwrite-on-restart)|❌|✅|
-|[Provide the unique identifiers for your organization](#provide-the-unique-identifiers-for-your-organization)|✅|✅|
-|[Require device encryption](#require-device-encryption)|✅|❌|
-|[Validate smart card certificate usage rule compliance](#validate-smart-card-certificate-usage-rule-compliance)|❌|✅|
+|[ConfigureStartPins](/windows/client-management/mdm/policy-csp-start#configurestartpins)|✅||
+|[DisableContextMenus](/windows/client-management/mdm/policy-csp-start#disablecontextmenus)|✅||
+|[ForceStartSize](/windows/client-management/mdm/policy-csp-start#forcestartsize)|✅||
+|[HideAppList](/windows/client-management/mdm/policy-csp-start#hideapplist)|✅||
+|[HideFrequentlyUsedApps](/windows/client-management/mdm/policy-csp-start#hidefrequentlyusedapps)|✅||
+|[HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists)|✅||
+|[HideRecentlyAddedApps](/windows/client-management/mdm/policy-csp-start#hiderecentlyaddedapps)|✅||
+|[HideRecommendedPersonalizedSites](/windows/client-management/mdm/policy-csp-start#hiderecommendedpersonalizedsites)|✅||
+|[HideRecommendedSection](/windows/client-management/mdm/policy-csp-start#hiderecommendedsection)|✅||
+|[ImportEdgeAssets](/windows/client-management/mdm/policy-csp-start#importedgeassets)|✅||
+|[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)|✅||
+|[StartLayout](/windows/client-management/mdm/policy-csp-start#startlayout)|✅||
 
-[!INCLUDE [allow-standard-user-encryption](includes/allow-standard-user-encryption.md)]
-[!INCLUDE [choose-default-folder-for-recovery-password](includes/choose-default-folder-for-recovery-password.md)]
-[!INCLUDE [choose-drive-encryption-method-and-cipher-strength](includes/choose-drive-encryption-method-and-cipher-strength.md)]
-[!INCLUDE [configure-recovery-password-rotation](includes/configure-recovery-password-rotation.md)]
-[!INCLUDE [disable-new-dma-devices-when-this-computer-is-locked](includes/disable-new-dma-devices-when-this-computer-is-locked.md)]
-[!INCLUDE [prevent-memory-overwrite-on-restart](includes/prevent-memory-overwrite-on-restart.md)]
-[!INCLUDE [provide-the-unique-identifiers-for-your-organization](includes/provide-the-unique-identifiers-for-your-organization.md)]
-[!INCLUDE [require-device-encryption](includes/require-device-encryption.md)]
-[!INCLUDE [validate-smart-card-certificate-usage-rule-compliance](includes/validate-smart-card-certificate-usage-rule-compliance.md)]
--->
 
 #### [:::image type="icon" source="../images/icons/folder.svg"::: **Pinned folders**](#tab/folders)
 
