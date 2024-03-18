@@ -45,8 +45,6 @@ The following table lists the policies that control the Start menu layout. Selec
 |-|-|-|
 |[Clear the recent programs list for new users](#clear-the-recent-programs-list-for-new-users)|❌|✅|
 |[Clear tile notifications during log on](#clear-tile-notifications-during-log-on)|❌|✅|
-|[Configure Start layout](/windows/client-management/mdm/policy-csp-start#startlayout)|✅|✅|
-|[Configure Start pins](/windows/client-management/mdm/policy-csp-start#configurestartpins)|✅|❌|
 |[Disable context menus](#disable-context-menus-in-the-start-menu)|✅|✅|
 |[Disable editing quick settings](disable-editing-quick-settings)|✅|✅|
 |[Do not use the search-based method when resolving shell shortcuts](#do-not-use-the-search-based-method-when-resolving-shell-shortcuts)|❌|✅|
@@ -60,41 +58,53 @@ The following table lists the policies that control the Start menu layout. Selec
 |[Hide recommended personalized sites](#hide-recommended-personalized-sites)|✅|✅|
 |[Hide recommended section](#hide-recommended-section)|✅|✅|
 |[Import Edge assets](/windows/client-management/mdm/policy-csp-start#importedgeassets)|✅|❌|
+|[Start layout](/windows/client-management/mdm/policy-csp-start#startlayout)|✅|✅|
+|[Start pins](/windows/client-management/mdm/policy-csp-start#configurestartpins)|✅|❌|
 
 
 [!INCLUDE [clear-history-of-recently-opened-documents-on-exit-u](includes/clear-history-of-recently-opened-documents-on-exit-u.md)]
-[!INCLUDE [clear-the-recent-programs-list-for-new-users-u](includes/clear-the-recent-programs-list-for-new-users-u.md)]
-[!INCLUDE [clear-tile-notifications-during-log-on-u](includes/clear-tile-notifications-during-log-on-u.md)]
+[!INCLUDE [clear-the-recent-programs-list-for-new-users](includes/clear-the-recent-programs-list-for-new-users-u.md)]
+
+::: zone pivot="windows-10"
+[!INCLUDE [clear-tile-notifications-during-log-on](includes/clear-tile-notifications-during-log-on-u.md)]
+::: zone-end
+
+::: zone pivot="windows-10"
+[!INCLUDE [start-layout](includes/start-layout-um.md)]
+::: zone-end
+
+
 [!INCLUDE [disable-context-menus-in-the-start-menu-um](includes/disable-context-menus-in-the-start-menu-um.md)]
+
 ::: zone pivot="windows-11"
 [!INCLUDE [disable-editing-quick-settings-m](includes/disable-editing-quick-settings-m.md)]
 ::: zone-end
+
 [!INCLUDE [do-not-keep-history-of-recently-opened-documents-um](includes/do-not-keep-history-of-recently-opened-documents-um.md)]
 [!INCLUDE [do-not-use-the-search-based-method-when-resolving-shell-shortcuts-u](includes/do-not-use-the-search-based-method-when-resolving-shell-shortcuts-u.md)]
 [!INCLUDE [do-not-use-the-tracking-based-method-when-resolving-shell-shortcuts-u](includes/do-not-use-the-tracking-based-method-when-resolving-shell-shortcuts-u.md)]
+
 ::: zone pivot="windows-10"
-[!INCLUDE [force-start-to-be-either-full-screen-size-or-menu-size-um](includes/force-start-to-be-either-full-screen-size-or-menu-size-um.md)]
+[!INCLUDE [force-start-size](includes/force-start-to-be-either-full-screen-size-or-menu-size-um.md)]
 ::: zone-end
+
 [!INCLUDE [prevent-changes-to-taskbar-and-start-menu-settings-um](includes/prevent-changes-to-taskbar-and-start-menu-settings-um.md)]
 [!INCLUDE [prevent-users-from-customizing-their-start-screen-u](includes/prevent-users-from-customizing-their-start-screen-u.md)]
 [!INCLUDE [prevent-users-from-uninstalling-applications-from-start-um](includes/prevent-users-from-uninstalling-applications-from-start-um.md)]
 [!INCLUDE [remove-all-programs-list-from-the-start-menu-um](includes/remove-all-programs-list-from-the-start-menu-um.md)]
 [!INCLUDE [remove-common-program-groups-from-start-menu-u](includes/remove-common-program-groups-from-start-menu-u.md)]
+
 ::: zone pivot="windows-11"
 [!INCLUDE [remove-personalized-website-recommendations-from-the-recommended-section-in-the-start-menu-um](includes/remove-personalized-website-recommendations-from-the-recommended-section-in-the-start-menu-um.md)]
 ::: zone-end
+
 ::: zone pivot="windows-11"
 [!INCLUDE [remove-recommended-section-from-start-menu-um](includes/remove-recommended-section-from-start-menu-um.md)]
 ::: zone-end
+
 [!INCLUDE [remove-recently-added-list-from-start-menu-um](includes/remove-recently-added-list-from-start-menu-um.md)]
-
 [!INCLUDE [show-run-as-different-user-command-on-start-u](includes/show-run-as-different-user-command-on-start-u.md)]
-::: zone pivot="windows-10"
-[!INCLUDE [start-layout-um](includes/start-layout-um.md)]
-
-
 [!INCLUDE [show-or-hide-most-used-list-from-start-menu-um](includes/show-or-hide-most-used-list-from-start-menu-um.md)]
-
 [!INCLUDE [hide-frequently-used-apps](includes/hide-frequently-used-apps.md)]
 
 #### [:::image type="icon" source="../images/icons/user.svg"::: **User options**](#tab/user)
