@@ -1,10 +1,8 @@
 items:
-- name: Customize and export the Start layout
-  href: customize-and-export-start-layout.md
-- name: Configure the Start menu
+- name: Configure Start
   href: configure.md
-- name: Start layout and taskbar
-  href: windows-10-start-layout-options-and-policies.md
+- name: Start policy settings
+  href: policy-settings.md
 - name: Use XML
   items:
   - name: Add image for secondary Microsoft Edge tiles

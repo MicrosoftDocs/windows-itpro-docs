@@ -538,3 +538,50 @@ If the OS is configured to use a right-to-left language, then the taskbar order 
   After the layout is applied, users can pin more apps, change the order, and unpin apps.
 
 ::: zone-end
+
+<!-- form Start article to move
+
+Configuring the taskbar allows you to pin useful apps for your users, and remove apps that are pinned by default.
+
+> **Looking for consumer information?** [See what's on the Start menu](https://support.microsoft.com/help/17195/windows-10-see-whats-on-the-menu)
+>
+> **Looking for OEM information?** See [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar) and [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
+
+For the **taskbar**, you can use the same XML file as the start screen. Or, you can create a new XML file. When you have the XML file, add this file to a group policy or a provisioning package. Using these methods, you can deploy the XML file to your devices. When the devices receive your policy, they'll use the taskbar settings you configured in the XML file.
+
+## Taskbar options
+
+There are three app categories that could be pinned to a taskbar:
+
+- Apps pinned by the user
+- Default Windows apps pinned during the OS installation, such as Microsoft Edge, File Explorer, and Store
+- Apps pinned by your organization, such as in an unattended Windows setup
+
+  In an unattended Windows setup file, it's recommended to use the [layoutmodification.xml method](../taskbar/configure.md) to configure the taskbar options. It's not recommended to use [TaskbarLinks](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-taskbarlinks).
+
+The following example shows how apps are pinned. In OS configured to use a right-to-left language, the taskbar order is reversed:
+
+- Windows default apps to the left (blue circle)
+- Apps pinned by the user in the center (orange triangle)
+- Apps that you pin using XML to the right (green square)
+
+![Windows left, user center, enterprise to the right.](images/taskbar-generic.png)
+
+If you apply the taskbar configuration to a clean install or an update, users can still:
+
+- Pin more apps
+- Change the order of pinned apps
+- Unpin any app
+
+> [!TIP]
+> In Windows 10 version 1703, you can apply the `Start/NoPinningToTaskbar` MDM policy. This policy prevents users from pinning and unpinning apps on the taskbar.
+
+### Taskbar configuration applied to clean install of Windows 10
+
+In a clean install, if you apply a taskbar layout, only the following apps are pinned to the taskbar:
+
+- Apps you specifically add
+- Any default apps you don't remove
+
+After the layout is applied, users can pin more apps to the taskbar.
+-->
