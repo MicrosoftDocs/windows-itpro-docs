@@ -48,12 +48,12 @@ The following table lists the policies that control the Start menu layout. Selec
 |[Clear the recent programs list for new users](#clear-the-recent-programs-list-for-new-users)|❌|✅|
 |[Configure Start pins](/windows/client-management/mdm/policy-csp-start#configurestartpins)|✅|❌|
 |[Disable context menus](#disable-context-menus)|✅|✅|
-|[Disable editing quick settings](disable-editing-quick-settings)|✅|✅|
+|[Disable editing quick settings](#disable-editing-quick-settings)|✅|✅|
 |[Disable search](#disable-search)|✅|✅|
 |[Do not keep history of recently opened documents](#do-not-keep-history-of-recently-opened-documents)|❌|✅|
 |[Do not use the search-based method when resolving shell shortcuts](#do-not-use-the-search-based-method-when-resolving-shell-shortcuts)|❌|✅|
 |[Do not use the tracking-based method when resolving shell shortcuts](#do-not-use-the-tracking-based-method-when-resolving-shell-shortcuts)|❌|✅|
-|[Hide **All Programs** list](#hide-all-programs)|✅|✅|
+|[Hide **All Programs** list](#hide-all-programs-list)|✅|✅|
 |[Hide **Recently Added** apps](#hide-recently-added-apps)|✅|✅|
 |[Hide frequently used apps](#hide-frequently-used-apps)|✅|✅|
 |[Hide most used lists](#hide-most-used-lists)|✅|✅|
@@ -65,7 +65,7 @@ The following table lists the policies that control the Start menu layout. Selec
 |[Prevent users from customizing their Start](#prevent-users-from-customizing-their-start)|❌|✅|
 |[Prevent users from uninstalling applications from Start](#prevent-users-from-uninstalling-applications-from-start)|❌|✅|
 |[Remove common program groups](#remove-common-program-groups)|❌|✅|
-|[Show "Run as different user" command on Start](#show-run-as-different-user-command-on-start)|❌|✅|
+|[Show "Run as different user" command](#show-run-as-different-user-command)|❌|✅|
 ::: zone-end
 
 ::: zone pivot="windows-10"
@@ -75,7 +75,6 @@ The following table lists the policies that control the Start menu layout. Selec
 |[Clear the recent programs list for new users](#clear-the-recent-programs-list-for-new-users)|❌|✅|
 |[Clear tile notifications during log on](#clear-tile-notifications-during-log-on)|❌|✅|
 |[Configure Start layout](#configure-start-layout)|✅|✅|
-|[Configure Start pins](/windows/client-management/mdm/policy-csp-start#configurestartpins)|✅|❌|
 |[Disable context menus](#disable-context-menus)|✅|✅|
 |[Do not keep history of recently opened documents](#do-not-keep-history-of-recently-opened-documents)|❌|✅|
 |[Do not use the search-based method when resolving shell shortcuts](#do-not-use-the-search-based-method-when-resolving-shell-shortcuts)|❌|✅|
