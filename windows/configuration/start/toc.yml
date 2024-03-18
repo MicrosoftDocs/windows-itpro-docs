@@ -3,12 +3,8 @@ items:
   href: configure.md
 - name: Start policy settings
   href: policy-settings.md
-- name: Use XML
-  items:
-  - name: Add image for secondary Microsoft Edge tiles
-    href: start-secondary-tiles.md
-  - name: Start layout XML for Windows 10 desktop editions (reference)
-    href: start-layout-xml-desktop.md
+- name: Start layout XML for Windows 10 desktop editions (reference)
+  href: start-layout-xml-desktop.md
 - name: XML schema definition (XSD)
   href: xsd.md
 - name: Troubleshoot Start menu errors 🔗

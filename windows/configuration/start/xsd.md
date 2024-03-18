@@ -3,6 +3,8 @@ title: Start XML Schema Definition (XSD)
 description: Start XSD reference article.
 ms.topic: reference
 ms.date: 02/15/2024
+appliesto:
+- ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ---
 
 # Start XML Schema Definition (XSD)
