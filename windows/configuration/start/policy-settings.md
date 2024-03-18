@@ -43,19 +43,18 @@ The following table lists the policies that control the Start menu layout. Selec
 
 |Policy name| CSP | GPO |
 |-|-|-|
-|[ConfigureStartPins](/windows/client-management/mdm/policy-csp-start#configurestartpins)|✅|❌|
-|[DisableContextMenus](/windows/client-management/mdm/policy-csp-start#disablecontextmenus)|✅||
-|[ForceStartSize](/windows/client-management/mdm/policy-csp-start#forcestartsize)|✅||
-|[HideAppList](/windows/client-management/mdm/policy-csp-start#hideapplist)|✅||
-|[HideFrequentlyUsedApps](/windows/client-management/mdm/policy-csp-start#hidefrequentlyusedapps)|✅||
+|[Configure Start pins](/windows/client-management/mdm/policy-csp-start#configurestartpins)|✅|❌|
+|[Disable context menus](#disable-context-menus-in-the-start-menu)|✅|✅|
+|[Force Start size](#force-tart-size)|✅|✅|
+|[Remove all programs list](#remove-all-programs)|✅|✅|
+|[Hide frequently used apps](#hide-frequently-used-apps)|✅|✅|
 |[HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists)|✅||
 |[HideRecentlyAddedApps](/windows/client-management/mdm/policy-csp-start#hiderecentlyaddedapps)|✅||
-|[HideRecommendedPersonalizedSites](/windows/client-management/mdm/policy-csp-start#hiderecommendedpersonalizedsites)|✅|✅|
+|[Hide recommended personalized sites](#hide-recommended-personalized-sites)|✅|✅|
 |[HideRecommendedSection](/windows/client-management/mdm/policy-csp-start#hiderecommendedsection)|✅|✅|
 |[ImportEdgeAssets](/windows/client-management/mdm/policy-csp-start#importedgeassets)|✅||
 |[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)|✅||
 |[StartLayout](/windows/client-management/mdm/policy-csp-start#startlayout)|✅||
-
 
 [!INCLUDE [clear-history-of-recently-opened-documents-on-exit-u](includes/clear-history-of-recently-opened-documents-on-exit-u.md)]
 [!INCLUDE [clear-the-recent-programs-list-for-new-users-u](includes/clear-the-recent-programs-list-for-new-users-u.md)]
@@ -73,7 +72,13 @@ The following table lists the policies that control the Start menu layout. Selec
 [!INCLUDE [prevent-users-from-uninstalling-applications-from-start-um](includes/prevent-users-from-uninstalling-applications-from-start-um.md)]
 [!INCLUDE [remove-all-programs-list-from-the-start-menu-um](includes/remove-all-programs-list-from-the-start-menu-um.md)]
 [!INCLUDE [remove-common-program-groups-from-start-menu-u](includes/remove-common-program-groups-from-start-menu-u.md)]
+
+::: zone pivot="windows-11"
 [!INCLUDE [remove-personalized-website-recommendations-from-the-recommended-section-in-the-start-menu-um](includes/remove-personalized-website-recommendations-from-the-recommended-section-in-the-start-menu-um.md)]
+::: zone-end
+
+
+
 [!INCLUDE [remove-recently-added-list-from-start-menu-um](includes/remove-recently-added-list-from-start-menu-um.md)]
 [!INCLUDE [remove-recommended-section-from-start-menu-um](includes/remove-recommended-section-from-start-menu-um.md)]
 [!INCLUDE [show-or-hide-most-used-list-from-start-menu-um](includes/show-or-hide-most-used-list-from-start-menu-um.md)]
@@ -97,24 +102,27 @@ The following table lists the policies that control the Start menu layout. Selec
 
 |Policy name| CSP | GPO |
 |-|-|-|
-|[AllowPinnedFolderDocuments](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderdocuments)|✅|❌|
-|[AllowPinnedFolderDownloads](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderdownloads)|✅|❌|
-|[AllowPinnedFolderFileExplorer](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderfileexplorer)|✅|❌|
-|[AllowPinnedFolderHomeGroup](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderhomegroup)|✅|❌|
-|[AllowPinnedFolderMusic](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldermusic)|✅|❌|
-|[AllowPinnedFolderNetwork](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldernetwork)|✅|❌|
-|[AllowPinnedFolderPersonalFolder](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderpersonalfolder)|✅|❌|
-|[AllowPinnedFolderPictures](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderpictures)|✅|❌|
-|[AllowPinnedFolderSettings](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldersettings)|✅|❌|
-|[AllowPinnedFolderVideos](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldervideos)|✅|❌|
+|[Allow pinned folder Documents](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderdocuments)|✅|❌|
+|[Allow pinned folder Downloads](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderdownloads)|✅|❌|
+|[Allow pinned folder FileExplorer](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderfileexplorer)|✅|❌|
+|[Allow pinned folder HomeGroup](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderhomegroup)|✅|❌|
+|[Allow pinned folder Music](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldermusic)|✅|❌|
+|[Allow pinned folder Network](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldernetwork)|✅|❌|
+|[Allow pinned folder PersonalFolder](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderpersonalfolder)|✅|❌|
+|[Allow pinned folder Pictures](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderpictures)|✅|❌|
+|[Allow pinned folder Settings](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldersettings)|✅|❌|
+|[Allow pinned folder Videos](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldervideos)|✅|❌|
 
 #### [:::image type="icon" source="../images/icons/power.svg"::: **Power options**](#tab/power)
 
-[HideHibernate](/windows/client-management/mdm/policy-csp-start#hidehibernate)
-[HidePowerButton](/windows/client-management/mdm/policy-csp-start#hidepowerbutton)
-[HideRestart](/windows/client-management/mdm/policy-csp-start#hiderestart)
-[HideShutDown](/windows/client-management/mdm/policy-csp-start#hideshutdown)
-[HideSleep](/windows/client-management/mdm/policy-csp-start#hidesleep)
+|Policy name| CSP | GPO |
+|-|-|-|
+|[Hide hibernate button](/windows/client-management/mdm/policy-csp-start#hidehibernate)|✅|❌|
+|[Hide power button](/windows/client-management/mdm/policy-csp-start#hidepowerbutton)|✅|❌|
+|[Hide restart button](/windows/client-management/mdm/policy-csp-start#hiderestart)|✅|❌|
+|[Hide shutdown button](/windows/client-management/mdm/policy-csp-start#hideshutdown)|✅|❌|
+|[Hide sleep button](/windows/client-management/mdm/policy-csp-start#hidesleep)|✅|❌|
+|[Remove and prevent access to the shut down restart sleep and hibernate commands](#remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands-um)|❌|✅|
 
 [!INCLUDE [remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands-um](includes/remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands-um.md)]
 ---
@@ -144,50 +152,3 @@ The following table lists the policies that control the Start menu layout. Selec
 [SimplifyQuickSettings](/windows/client-management/mdm/policy-csp-start#simplifyquicksettings)
 
 ###
-
-
-# Supported configuration service provider (CSP) policies for Windows 11 Start menu
-
-The Windows OS exposes CSPs that are used by MDM providers, like [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). In an MDM policy, these CSPs are settings that you configure in a policy. When the policy is ready, you deploy the policy to your devices.
-
-This article lists the CSPs that are available to customize the Start menu for Windows 11 devices. Windows 11 uses the [Policy CSP - Start](/windows/client-management/mdm/policy-csp-start). For more general information, see [Configuration service provider (CSP) reference](/windows/client-management/mdm/configuration-service-provider-reference).
-
-For information on customizing the Start menu layout using policy, see [Customize the Start menu layout](customize-and-export-start-layout.md).
-
-## Existing Windows CSP policies that Windows 11 supports
-
-- **Start/ShowOrHideMostUsedApps**: This policy enforces always showing Most Used Apps, or always hiding Most Used Apps in the Start menu. If you use this policy, the [Start/HideFrequentlyUsedApps](/windows/client-management/mdm/policy-csp-start#start-hidefrequentlyusedapps) policy is ignored.
-
-  The [Start/HideFrequentlyUsedApps](/windows/client-management/mdm/policy-csp-start#start-hidefrequentlyusedapps) policy enforces hiding Most Used Apps on the Start menu. You can't use this policy to enforce always showing Most Used Apps on the Start menu.
-
-**The following policies are supported starting with Windows 11, version 22H2:**
-
-- [Start/HideAppList](/windows/client-management/mdm/policy-csp-start#start-hideapplist)
-- [Start/DisableContextMenus](/windows/client-management/mdm/policy-csp-start#start-disablecontextmenus)
-
-## Existing CSP policies that Windows 11 doesn't support
-
-- [Start/StartLayout](/windows/client-management/mdm/policy-csp-start#start-startlayout)
-  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Start Layout`
-
-- [Start/HideRecentlyAddedApps](/windows/client-management/mdm/policy-csp-start#start-hiderecentlyaddedapps)
-- Group policy: `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove "Recently added" list from Start Menu`
-
-> [!NOTE]
-> The following two policies are supported starting in Windows 11, version 22H2
-
-- [Start/HideAppList](/windows/client-management/mdm/policy-csp-start#start-hideapplist)
-  - Group policy:
-    - `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove All Programs list from the Start menu`
-    - `User Configuration\Administrative Templates\Start Menu and Taskbar\Remove All Programs list from the Start menu`
-
-- [Start/DisableContextMenus](/windows/client-management/mdm/policy-csp-start#start-disablecontextmenus)
-  - Group policy:
-
-    - `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Disable context menus in the Start Menu`
-    - `User Configuration\Administrative Templates\Start Menu and Taskbar\Disable context menus in the Start Menu`
-
-:::image type="content" source="images/windows-11.png" alt-text="Screenshot of the Windows 11 Start menu." border="false":::
-
-:::image type="content" source="images/windows-11-no-recommended.png" alt-text="Screenshot of the Windows 11 Start menu without recommendations." border="false":::
-
