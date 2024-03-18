@@ -61,7 +61,6 @@ The following table lists the policies that control the Start menu layout. Selec
 |[Start layout](/windows/client-management/mdm/policy-csp-start#startlayout)|✅|✅|
 |[Start pins](/windows/client-management/mdm/policy-csp-start#configurestartpins)|✅|❌|
 
-
 [!INCLUDE [clear-history-of-recently-opened-documents-on-exit-u](includes/clear-history-of-recently-opened-documents-on-exit-u.md)]
 [!INCLUDE [clear-the-recent-programs-list-for-new-users](includes/clear-the-recent-programs-list-for-new-users-u.md)]
 
@@ -72,7 +71,6 @@ The following table lists the policies that control the Start menu layout. Selec
 ::: zone pivot="windows-10"
 [!INCLUDE [start-layout](includes/start-layout-um.md)]
 ::: zone-end
-
 
 [!INCLUDE [disable-context-menus-in-the-start-menu-um](includes/disable-context-menus-in-the-start-menu-um.md)]
 
@@ -125,11 +123,11 @@ The following table lists the policies that control the Start menu layout. Selec
 |-|-|-|
 |[Allow pinned folder Documents](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderdocuments)|✅|❌|
 |[Allow pinned folder Downloads](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderdownloads)|✅|❌|
-|[Allow pinned folder FileExplorer](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderfileexplorer)|✅|❌|
-|[Allow pinned folder HomeGroup](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderhomegroup)|✅|❌|
+|[Allow pinned folder File Explorer](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderfileexplorer)|✅|❌|
+|[Allow pinned folder Home Group](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderhomegroup)|✅|❌|
 |[Allow pinned folder Music](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldermusic)|✅|❌|
 |[Allow pinned folder Network](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldernetwork)|✅|❌|
-|[Allow pinned folder PersonalFolder](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderpersonalfolder)|✅|❌|
+|[Allow pinned folder Personal Folder](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderpersonalfolder)|✅|❌|
 |[Allow pinned folder Pictures](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderpictures)|✅|❌|
 |[Allow pinned folder Settings](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldersettings)|✅|❌|
 |[Allow pinned folder Videos](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldervideos)|✅|❌|
@@ -146,6 +144,7 @@ The following table lists the policies that control the Start menu layout. Selec
 |[Remove and prevent access to the shut down restart sleep and hibernate commands](#remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands-um)|❌|✅|
 
 [!INCLUDE [remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands-um](includes/remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands-um.md)]
+
 ---
 
 ## Next steps
