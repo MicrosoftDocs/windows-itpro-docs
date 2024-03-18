@@ -65,15 +65,59 @@ The following table lists the policies that control the Start menu layout. Selec
 |[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)|✅||
 |[StartLayout](/windows/client-management/mdm/policy-csp-start#startlayout)|✅||
 
-
-
 #### [:::image type="icon" source="../images/icons/user.svg"::: **User options**](#tab/user)
+
+[HideChangeAccountSettings](/windows/client-management/mdm/policy-csp-start#hidechangeaccountsettings)
+[HideLock](/windows/client-management/mdm/policy-csp-start#hidelock)
+[HideSignOut](/windows/client-management/mdm/policy-csp-start#hidesignout)
+[HideSwitchAccount](/windows/client-management/mdm/policy-csp-start#hideswitchaccount)
+[HideUserTile](/windows/client-management/mdm/policy-csp-start#hideusertile)
 
 #### [:::image type="icon" source="../images/icons/folder.svg"::: **Pinned folders**](#tab/folders)
 
+[AllowPinnedFolderDocuments](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderdocuments)
+[AllowPinnedFolderDownloads](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderdownloads)
+[AllowPinnedFolderFileExplorer](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderfileexplorer)
+[AllowPinnedFolderHomeGroup](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderhomegroup)
+[AllowPinnedFolderMusic](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldermusic)
+[AllowPinnedFolderNetwork](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldernetwork)
+[AllowPinnedFolderPersonalFolder](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderpersonalfolder)
+[AllowPinnedFolderPictures](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderpictures)
+[AllowPinnedFolderSettings](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldersettings)
+[AllowPinnedFolderVideos](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldervideos)
+
 #### [:::image type="icon" source="../images/icons/power.svg"::: **Power options**](#tab/power)
 
+[HideHibernate](/windows/client-management/mdm/policy-csp-start#hidehibernate)
+[HidePowerButton](/windows/client-management/mdm/policy-csp-start#hidepowerbutton)
+[HideRestart](/windows/client-management/mdm/policy-csp-start#hiderestart)
+[HideShutDown](/windows/client-management/mdm/policy-csp-start#hideshutdown)
+[HideSleep](/windows/client-management/mdm/policy-csp-start#hidesleep)
+
 ---
+
+[!INCLUDE [clear-history-of-recently-opened-documents-on-exit-u](includes/clear-history-of-recently-opened-documents-on-exit-u.md)]
+[!INCLUDE [clear-the-recent-programs-list-for-new-users-u](includes/clear-the-recent-programs-list-for-new-users-u.md)]
+[!INCLUDE [clear-tile-notifications-during-log-on-u](includes/clear-tile-notifications-during-log-on-u.md)]
+[!INCLUDE [disable-context-menus-in-the-start-menu-um](includes/disable-context-menus-in-the-start-menu-um.md)]
+[!INCLUDE [disable-editing-quick-settings-m](includes/disable-editing-quick-settings-m.md)]
+[!INCLUDE [do-not-keep-history-of-recently-opened-documents-um](includes/do-not-keep-history-of-recently-opened-documents-um.md)]
+[!INCLUDE [do-not-use-the-search-based-method-when-resolving-shell-shortcuts-u](includes/do-not-use-the-search-based-method-when-resolving-shell-shortcuts-u.md)]
+[!INCLUDE [do-not-use-the-tracking-based-method-when-resolving-shell-shortcuts-u](includes/do-not-use-the-tracking-based-method-when-resolving-shell-shortcuts-u.md)]
+[!INCLUDE [force-start-to-be-either-full-screen-size-or-menu-size-um](includes/force-start-to-be-either-full-screen-size-or-menu-size-um.md)]
+[!INCLUDE [prevent-changes-to-taskbar-and-start-menu-settings-um](includes/prevent-changes-to-taskbar-and-start-menu-settings-um.md)]
+[!INCLUDE [prevent-users-from-customizing-their-start-screen-u](includes/prevent-users-from-customizing-their-start-screen-u.md)]
+[!INCLUDE [prevent-users-from-uninstalling-applications-from-start-um](includes/prevent-users-from-uninstalling-applications-from-start-um.md)]
+[!INCLUDE [remove-recently-added-list-from-start-menu-um](includes/remove-recently-added-list-from-start-menu-um.md)]
+[!INCLUDE [remove-all-programs-list-from-the-start-menu-um](includes/remove-all-programs-list-from-the-start-menu-um.md)]
+[!INCLUDE [remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands-um](includes/remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands-um.md)]
+[!INCLUDE [remove-common-program-groups-from-start-menu-u](includes/remove-common-program-groups-from-start-menu-u.md)]
+[!INCLUDE [remove-logoff-on-the-start-menu-u](includes/remove-logoff-on-the-start-menu-u.md)]
+[!INCLUDE [remove-personalized-website-recommendations-from-the-recommended-section-in-the-start-menu-um](includes/remove-personalized-website-recommendations-from-the-recommended-section-in-the-start-menu-um.md)]
+[!INCLUDE [remove-recommended-section-from-start-menu-um](includes/remove-recommended-section-from-start-menu-um.md)]
+[!INCLUDE [show-run-as-different-user-command-on-start-u](includes/show-run-as-different-user-command-on-start-u.md)]
+[!INCLUDE [show-or-hide-most-used-list-from-start-menu-um](includes/show-or-hide-most-used-list-from-start-menu-um.md)]
+[!INCLUDE [start-layout-um](includes/start-layout-um.md)]
 
 ## Next steps
 
@@ -90,50 +134,6 @@ The following table lists the policies that control the Start menu layout. Selec
 
 <!--
 
-## Start
-
-[ConfigureStartPins](/windows/client-management/mdm/policy-csp-start#configurestartpins)
-[DisableContextMenus](/windows/client-management/mdm/policy-csp-start#disablecontextmenus)
-[ForceStartSize](/windows/client-management/mdm/policy-csp-start#forcestartsize)
-[HideAppList](/windows/client-management/mdm/policy-csp-start#hideapplist)
-[HideFrequentlyUsedApps](/windows/client-management/mdm/policy-csp-start#hidefrequentlyusedapps)
-[HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists)
-[HideRecentlyAddedApps](/windows/client-management/mdm/policy-csp-start#hiderecentlyaddedapps)
-[HideRecommendedPersonalizedSites](/windows/client-management/mdm/policy-csp-start#hiderecommendedpersonalizedsites)
-[HideRecommendedSection](/windows/client-management/mdm/policy-csp-start#hiderecommendedsection)
-[ImportEdgeAssets](/windows/client-management/mdm/policy-csp-start#importedgeassets)
-[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)
-[StartLayout](/windows/client-management/mdm/policy-csp-start#startlayout)
-
-### Pinned folders
-
-[AllowPinnedFolderDocuments](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderdocuments)
-[AllowPinnedFolderDownloads](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderdownloads)
-[AllowPinnedFolderFileExplorer](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderfileexplorer)
-[AllowPinnedFolderHomeGroup](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderhomegroup)
-[AllowPinnedFolderMusic](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldermusic)
-[AllowPinnedFolderNetwork](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldernetwork)
-[AllowPinnedFolderPersonalFolder](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderpersonalfolder)
-[AllowPinnedFolderPictures](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderpictures)
-[AllowPinnedFolderSettings](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldersettings)
-[AllowPinnedFolderVideos](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldervideos)
-
-### User
-
-[HideChangeAccountSettings](/windows/client-management/mdm/policy-csp-start#hidechangeaccountsettings)
-[HideLock](/windows/client-management/mdm/policy-csp-start#hidelock)
-[HideSignOut](/windows/client-management/mdm/policy-csp-start#hidesignout)
-[HideSwitchAccount](/windows/client-management/mdm/policy-csp-start#hideswitchaccount)
-[HideUserTile](/windows/client-management/mdm/policy-csp-start#hideusertile)
-
-### Power
-
-[HideHibernate](/windows/client-management/mdm/policy-csp-start#hidehibernate)
-[HidePowerButton](/windows/client-management/mdm/policy-csp-start#hidepowerbutton)
-[HideRestart](/windows/client-management/mdm/policy-csp-start#hiderestart)
-[HideShutDown](/windows/client-management/mdm/policy-csp-start#hideshutdown)
-[HideSleep](/windows/client-management/mdm/policy-csp-start#hidesleep)
-
 ## Taskbar
 
 [DisableControlCenter](/windows/client-management/mdm/policy-csp-start#disablecontrolcenter)
@@ -142,8 +142,6 @@ The following table lists the policies that control the Start menu layout. Selec
 [HideTaskViewButton](/windows/client-management/mdm/policy-csp-start#hidetaskviewbutton)
 [NoPinningToTaskbar](/windows/client-management/mdm/policy-csp-start#nopinningtotaskbar)
 [SimplifyQuickSettings](/windows/client-management/mdm/policy-csp-start#simplifyquicksettings)
-
-
 
 ###
 
@@ -192,3 +190,4 @@ For information on customizing the Start menu layout using policy, see [Customiz
 :::image type="content" source="images/windows-11.png" alt-text="Screenshot of the Windows 11 Start menu." border="false":::
 
 :::image type="content" source="images/windows-11-no-recommended.png" alt-text="Screenshot of the Windows 11 Start menu without recommendations." border="false":::
+
