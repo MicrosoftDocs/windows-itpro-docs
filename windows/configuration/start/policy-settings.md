@@ -45,8 +45,11 @@ The following table lists the policies that control the Start menu layout. Selec
 |-|-|-|
 |[Clear the recent programs list for new users](#clear-the-recent-programs-list-for-new-users)|❌|✅|
 |[Clear tile notifications during log on](#clear-tile-notifications-during-log-on)|❌|✅|
-|[Disable context menus](#disable-context-menus-in-the-start-menu)|✅|✅|
+|[Configure start layout](#configure-start-layout)|✅|✅|
+|[Configure start pins](#configure-start-pins)|✅|❌|
+|[Disable context menus](#disable-context-menus)|✅|✅|
 |[Disable editing quick settings](disable-editing-quick-settings)|✅|✅|
+|[Disable search](#disable-search)|✅|✅|
 |[Do not use the search-based method when resolving shell shortcuts](#do-not-use-the-search-based-method-when-resolving-shell-shortcuts)|❌|✅|
 |[Do not use the tracking-based method when resolving shell shortcuts](#do-not-use-the-tracking-based-method-when-resolving-shell-shortcuts)|❌|✅|
 |[Force Start size](#force-tart-size)|✅|✅|
@@ -58,21 +61,32 @@ The following table lists the policies that control the Start menu layout. Selec
 |[Hide recommended personalized sites](#hide-recommended-personalized-sites)|✅|✅|
 |[Hide recommended section](#hide-recommended-section)|✅|✅|
 |[Import Edge assets](/windows/client-management/mdm/policy-csp-start#importedgeassets)|✅|❌|
-|[Start layout](/windows/client-management/mdm/policy-csp-start#startlayout)|✅|✅|
-|[Start pins](/windows/client-management/mdm/policy-csp-start#configurestartpins)|✅|❌|
+|[Prevent users from customizing their Start](#prevent-users-from-customizing-their-start)|❌|✅|
+|[Prevent users from uninstalling applications from Start](#prevent-users-from-uninstalling-applications-from-start)|❌|✅|
+|[Show "Run as different user" command on Start](#show-run-as-different-user-command-on-start)|❌|✅|
+|[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
 
 [!INCLUDE [clear-history-of-recently-opened-documents-on-exit-u](includes/clear-history-of-recently-opened-documents-on-exit-u.md)]
-[!INCLUDE [clear-the-recent-programs-list-for-new-users](includes/clear-the-recent-programs-list-for-new-users-u.md)]
+
+[!INCLUDE [clear-the-recent-programs-list-for-new-users](includes/clear-the-recent-programs-list-for-new-users.md)]
 
 ::: zone pivot="windows-10"
-[!INCLUDE [clear-tile-notifications-during-log-on](includes/clear-tile-notifications-during-log-on-u.md)]
+[!INCLUDE [clear-tile-notifications-during-log-on](includes/clear-tile-notifications-during-log-on.md)]
 ::: zone-end
 
 ::: zone pivot="windows-10"
-[!INCLUDE [start-layout](includes/start-layout-um.md)]
+[!INCLUDE [configure-start-layout](includes/configure-start-layout.md)]
 ::: zone-end
 
-[!INCLUDE [disable-context-menus-in-the-start-menu-um](includes/disable-context-menus-in-the-start-menu-um.md)]
+::: zone pivot="windows-11"
+[!INCLUDE [configure-start-pins](includes/configure-start-pins.md)]
+::: zone-end
+
+[!INCLUDE [disable-context-menus](includes/disable-context-menus.md)]
+
+::: zone pivot="windows-11"
+[!INCLUDE [disable-search](includes/disable-search.md)]
+::: zone-end
 
 ::: zone pivot="windows-11"
 [!INCLUDE [disable-editing-quick-settings-m](includes/disable-editing-quick-settings-m.md)]
@@ -86,9 +100,9 @@ The following table lists the policies that control the Start menu layout. Selec
 [!INCLUDE [force-start-size](includes/force-start-to-be-either-full-screen-size-or-menu-size-um.md)]
 ::: zone-end
 
-[!INCLUDE [prevent-changes-to-taskbar-and-start-menu-settings-um](includes/prevent-changes-to-taskbar-and-start-menu-settings-um.md)]
-[!INCLUDE [prevent-users-from-customizing-their-start-screen-u](includes/prevent-users-from-customizing-their-start-screen-u.md)]
-[!INCLUDE [prevent-users-from-uninstalling-applications-from-start-um](includes/prevent-users-from-uninstalling-applications-from-start-um.md)]
+[!INCLUDE [prevent-changes-to-taskbar-and-start-menu-settings](includes/prevent-changes-to-taskbar-and-start-menu-settings.md)]
+[!INCLUDE [prevent-users-from-customizing-their-start](includes/prevent-users-from-customizing-their-start.md)]
+[!INCLUDE [prevent-users-from-uninstalling-applications-from-start](includes/prevent-users-from-uninstalling-applications-from-start.md)]
 [!INCLUDE [remove-all-programs-list-from-the-start-menu-um](includes/remove-all-programs-list-from-the-start-menu-um.md)]
 [!INCLUDE [remove-common-program-groups-from-start-menu-u](includes/remove-common-program-groups-from-start-menu-u.md)]
 
@@ -114,6 +128,7 @@ The following table lists the policies that control the Start menu layout. Selec
 |[HideSignOut](/windows/client-management/mdm/policy-csp-start#hidesignout)|✅|✅|
 |[HideSwitchAccount](/windows/client-management/mdm/policy-csp-start#hideswitchaccount)|✅|❌|
 |[HideUserTile](/windows/client-management/mdm/policy-csp-start#hideusertile)|✅|❌|
+|[Remove Logoff on the Start Menu](#remove-logoff-on-the-start-menu)|❌|✅|
 
 [!INCLUDE [remove-logoff-on-the-start-menu-u](includes/remove-logoff-on-the-start-menu-u.md)]
 
@@ -169,5 +184,6 @@ The following table lists the policies that control the Start menu layout. Selec
 [HideTaskViewButton](/windows/client-management/mdm/policy-csp-start#hidetaskviewbutton)
 [NoPinningToTaskbar](/windows/client-management/mdm/policy-csp-start#nopinningtotaskbar)
 [SimplifyQuickSettings](/windows/client-management/mdm/policy-csp-start#simplifyquicksettings)
+|[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
 
 ###
