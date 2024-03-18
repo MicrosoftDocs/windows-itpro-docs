@@ -5,11 +5,11 @@ ms.date: 03/18/2024
 ms.topic: include
 ---
 
-### Remove "Recently added" list from Start Menu
+### Hide recently added apps
 
-This policy allows you to prevent the Start Menu from displaying a list of recently installed applications. If you enable this policy, the Start Menu will no longer display the "Recently added" list. The corresponding setting will also be disabled in Settings.
+With this policy setting you can prevent the Start menu from displaying a list of recently installed applications. If you enable this policy, the Start menu will doesn't display the **Recently added** list. The corresponding setting will also be disabled in Settings.
 
 |  | Path |
 |--|--|
-| **CSP** | ./Device/Vendor/MSFT/[Setting]() |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[HideRecentlyAddedApps](/windows/client-management/mdm/policy-csp-start#hiderecentlyaddedapps)<br><br>`./User/Vendor/MSFT/Policy/Config/Start/`[HideRecentlyAddedApps](/windows/client-management/mdm/policy-csp-start#hiderecentlyaddedapps)` |
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |

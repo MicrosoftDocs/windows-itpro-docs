@@ -11,5 +11,5 @@ Removes items in the All Users profile from the Programs menu on the Start menu.
 
 |  | Path |
 |--|--|
-| **CSP** | ./Device/Vendor/MSFT/[Setting]() |
+| **CSP** | not available |
 | **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |

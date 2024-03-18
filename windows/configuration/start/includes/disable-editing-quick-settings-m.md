@@ -5,11 +5,11 @@ ms.date: 03/18/2024
 ms.topic: include
 ---
 
-### Disable Editing Quick Settings
+### Disable editing quick settings
 
-If you enable this policy, the user will be unable to modify Quick Settings. If you disable or don't configure this policy setting, the user will be able to edit Quick Settings, such as pinning or unpinning buttons.
+When you this policy setting, users can't modify quick settings. If you disable or don't configure this policy setting, the user can edit quick settings, such as pinning or unpinning buttons.
 
 |  | Path |
 |--|--|
-| **CSP** | ./Device/Vendor/MSFT/[Setting]() |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[DisableEditingQuickSettings](/windows/client-management/mdm/policy-csp-start#disableeditingquicksettings)|
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |

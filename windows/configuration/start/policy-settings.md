@@ -43,24 +43,32 @@ The following table lists the policies that control the Start menu layout. Selec
 
 |Policy name| CSP | GPO |
 |-|-|-|
+|[Clear the recent programs list for new users](#clear-the-recent-programs-list-for-new-users)|❌|✅|
+|[Clear tile notifications during log on](#clear-tile-notifications-during-log-on)|❌|✅|
+|[Configure Start layout](/windows/client-management/mdm/policy-csp-start#startlayout)|✅|✅|
 |[Configure Start pins](/windows/client-management/mdm/policy-csp-start#configurestartpins)|✅|❌|
 |[Disable context menus](#disable-context-menus-in-the-start-menu)|✅|✅|
+|[Disable editing quick settings](disable-editing-quick-settings)|✅|✅|
+|[Do not use the search-based method when resolving shell shortcuts](#do-not-use-the-search-based-method-when-resolving-shell-shortcuts)|❌|✅|
+|[Do not use the tracking-based method when resolving shell shortcuts](#do-not-use-the-tracking-based-method-when-resolving-shell-shortcuts)|❌|✅|
 |[Force Start size](#force-tart-size)|✅|✅|
-|[Remove all programs list](#remove-all-programs)|✅|✅|
+|[Hide *All Programs* list](#hide-all-programs)|✅|✅|
+|[Hide *Recently Added* apps](#hide-recently-added-apps)|✅|✅|
 |[Hide frequently used apps](#hide-frequently-used-apps)|✅|✅|
-|[HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists)|✅||
-|[HideRecentlyAddedApps](/windows/client-management/mdm/policy-csp-start#hiderecentlyaddedapps)|✅||
+|[Hide most used lists](#hide-most-used-lists)|✅|✅|
+|[Hide recent jumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists)|✅||
 |[Hide recommended personalized sites](#hide-recommended-personalized-sites)|✅|✅|
-|[HideRecommendedSection](/windows/client-management/mdm/policy-csp-start#hiderecommendedsection)|✅|✅|
-|[ImportEdgeAssets](/windows/client-management/mdm/policy-csp-start#importedgeassets)|✅||
-|[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)|✅||
-|[StartLayout](/windows/client-management/mdm/policy-csp-start#startlayout)|✅||
+|[Hide recommended section](#hide-recommended-section)|✅|✅|
+|[Import Edge assets](/windows/client-management/mdm/policy-csp-start#importedgeassets)|✅|❌|
+
 
 [!INCLUDE [clear-history-of-recently-opened-documents-on-exit-u](includes/clear-history-of-recently-opened-documents-on-exit-u.md)]
 [!INCLUDE [clear-the-recent-programs-list-for-new-users-u](includes/clear-the-recent-programs-list-for-new-users-u.md)]
 [!INCLUDE [clear-tile-notifications-during-log-on-u](includes/clear-tile-notifications-during-log-on-u.md)]
 [!INCLUDE [disable-context-menus-in-the-start-menu-um](includes/disable-context-menus-in-the-start-menu-um.md)]
+::: zone pivot="windows-11"
 [!INCLUDE [disable-editing-quick-settings-m](includes/disable-editing-quick-settings-m.md)]
+::: zone-end
 [!INCLUDE [do-not-keep-history-of-recently-opened-documents-um](includes/do-not-keep-history-of-recently-opened-documents-um.md)]
 [!INCLUDE [do-not-use-the-search-based-method-when-resolving-shell-shortcuts-u](includes/do-not-use-the-search-based-method-when-resolving-shell-shortcuts-u.md)]
 [!INCLUDE [do-not-use-the-tracking-based-method-when-resolving-shell-shortcuts-u](includes/do-not-use-the-tracking-based-method-when-resolving-shell-shortcuts-u.md)]
@@ -72,29 +80,32 @@ The following table lists the policies that control the Start menu layout. Selec
 [!INCLUDE [prevent-users-from-uninstalling-applications-from-start-um](includes/prevent-users-from-uninstalling-applications-from-start-um.md)]
 [!INCLUDE [remove-all-programs-list-from-the-start-menu-um](includes/remove-all-programs-list-from-the-start-menu-um.md)]
 [!INCLUDE [remove-common-program-groups-from-start-menu-u](includes/remove-common-program-groups-from-start-menu-u.md)]
-
 ::: zone pivot="windows-11"
 [!INCLUDE [remove-personalized-website-recommendations-from-the-recommended-section-in-the-start-menu-um](includes/remove-personalized-website-recommendations-from-the-recommended-section-in-the-start-menu-um.md)]
 ::: zone-end
-
-
-
-[!INCLUDE [remove-recently-added-list-from-start-menu-um](includes/remove-recently-added-list-from-start-menu-um.md)]
+::: zone pivot="windows-11"
 [!INCLUDE [remove-recommended-section-from-start-menu-um](includes/remove-recommended-section-from-start-menu-um.md)]
-[!INCLUDE [show-or-hide-most-used-list-from-start-menu-um](includes/show-or-hide-most-used-list-from-start-menu-um.md)]
+::: zone-end
+[!INCLUDE [remove-recently-added-list-from-start-menu-um](includes/remove-recently-added-list-from-start-menu-um.md)]
+
 [!INCLUDE [show-run-as-different-user-command-on-start-u](includes/show-run-as-different-user-command-on-start-u.md)]
 ::: zone pivot="windows-10"
 [!INCLUDE [start-layout-um](includes/start-layout-um.md)]
-::: zone-end
 
+
+[!INCLUDE [show-or-hide-most-used-list-from-start-menu-um](includes/show-or-hide-most-used-list-from-start-menu-um.md)]
+
+[!INCLUDE [hide-frequently-used-apps](includes/hide-frequently-used-apps.md)]
 
 #### [:::image type="icon" source="../images/icons/user.svg"::: **User options**](#tab/user)
 
-[HideChangeAccountSettings](/windows/client-management/mdm/policy-csp-start#hidechangeaccountsettings)
-[HideLock](/windows/client-management/mdm/policy-csp-start#hidelock)
-[HideSignOut](/windows/client-management/mdm/policy-csp-start#hidesignout)
-[HideSwitchAccount](/windows/client-management/mdm/policy-csp-start#hideswitchaccount)
-[HideUserTile](/windows/client-management/mdm/policy-csp-start#hideusertile)
+|Policy name| CSP | GPO |
+|-|-|-|
+|[HideChangeAccountSettings](/windows/client-management/mdm/policy-csp-start#hidechangeaccountsettings)|✅|❌|
+|[HideLock](/windows/client-management/mdm/policy-csp-start#hidelock)|✅|❌|
+|[HideSignOut](/windows/client-management/mdm/policy-csp-start#hidesignout)|✅|✅|
+|[HideSwitchAccount](/windows/client-management/mdm/policy-csp-start#hideswitchaccount)|✅|❌|
+|[HideUserTile](/windows/client-management/mdm/policy-csp-start#hideusertile)|✅|❌|
 
 [!INCLUDE [remove-logoff-on-the-start-menu-u](includes/remove-logoff-on-the-start-menu-u.md)]
 
@@ -145,7 +156,6 @@ The following table lists the policies that control the Start menu layout. Selec
 ## Taskbar
 
 [DisableControlCenter](/windows/client-management/mdm/policy-csp-start#disablecontrolcenter)
-[DisableEditingQuickSettings](/windows/client-management/mdm/policy-csp-start#disableeditingquicksettings)
 [HidePeopleBar](/windows/client-management/mdm/policy-csp-start#hidepeoplebar)
 [HideTaskViewButton](/windows/client-management/mdm/policy-csp-start#hidetaskviewbutton)
 [NoPinningToTaskbar](/windows/client-management/mdm/policy-csp-start#nopinningtotaskbar)

@@ -5,11 +5,11 @@ ms.date: 03/18/2024
 ms.topic: include
 ---
 
-### Remove Recommended section from Start Menu
+### Hide recommended section
 
-This policy allows you to prevent the Start Menu from displaying a list of recommended applications and files. If you enable this policy setting, the Start Menu will no longer show the section containing a list of recommended files and apps.
+This policy setting allows you to prevent the Start menu from displaying a list of recommended applications and files. If you enable this policy setting, the Start menu doesn't show the section containing a list of recommended files and apps.
 
 |  | Path |
 |--|--|
-| **CSP** | ./Device/Vendor/MSFT/[Setting]() |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/`[HideRecommendedSection](/windows/client-management/mdm/policy-csp-start#hiderecommendedsection)<br><br> `./Device/Vendor/MSFT/Policy/Config/Start/`[HideRecommendedSection](/windows/client-management/mdm/policy-csp-start#hiderecommendedsection) |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove Recommended section from Start Menu** |

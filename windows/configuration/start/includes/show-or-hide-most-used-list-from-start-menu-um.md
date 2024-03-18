@@ -5,7 +5,7 @@ ms.date: 03/18/2024
 ms.topic: include
 ---
 
-### Hide frequently used apps
+### Hide most used lists
 
 If you enable this policy setting, you can configure Start menu to show or hide the list of user's most used apps, regardless of user settings:
 
@@ -19,6 +19,5 @@ If you enable this policy setting, you can configure Start menu to show or hide 
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[HideFrequentlyUsedApps](/windows/client-management/mdm/policy-csp-start#hidefrequentlyusedapps)<br><br>
-`./User/Vendor/MSFT/Policy/Config/Start/`[HideFrequentlyUsedApps](/windows/client-management/mdm/policy-csp-start#hidefrequentlyusedapps)|
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)<br><br>`./User/Vendor/MSFT/Policy/Config/Start/`[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)|
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Show or hide "Most used" list from Start menu** |
