@@ -282,7 +282,7 @@
     },
     {
       "source_path": "windows/configuration/configure-windows-10-taskbar.md",
-      "redirect_url": "/windows/configuration/taskbar/configure-windows-10-taskbar",
+      "redirect_url": "/windows/configuration/taskbar/",
       "redirect_document_id": false
     },
     {
@@ -297,7 +297,7 @@
     },
     {
       "source_path": "windows/configuration/customize-taskbar-windows-11.md",
-      "redirect_url": "/windows/configuration/taskbar/customize-taskbar-windows-11",
+      "redirect_url": "/windows/configuration/taskbar",
       "redirect_document_id": false
     },
     {
@@ -447,7 +447,7 @@
     },
     {
       "source_path": "windows/configuration/supported-csp-taskbar-windows.md",
-      "redirect_url": "/windows/configuration/taskbar/supported-csp-taskbar-windows",
+      "redirect_url": "/windows/configuration/taskbar/policy-settings",
       "redirect_document_id": false
     },
     {
@@ -842,12 +842,12 @@
     },
     {
       "source_path": "windows/configuration/taskbar/configure-windows-10-taskbar.md",
-      "redirect_url": "/windows/configuration/taskbar",
+      "redirect_url": "/windows/configuration/taskbar/",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/taskbar/customize-taskbar-windows-11.md",
-      "redirect_url": "/windows/configuration/taskbar",
+      "redirect_url": "/windows/configuration/taskbar/",
       "redirect_document_id": false
     },
     {
@@ -858,6 +858,16 @@
     {
       "source_path": "windows/configuration/tips/manage-tips-and-suggestions.md",
       "redirect_url": "/windows/configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/taskbar/configure.md",
+      "redirect_url": "/windows/configuration/taskbar/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/taskbar/supported-csp-taskbar-windows.md",
+      "redirect_url": "/windows/configuration/taskbar/policy-settings",
       "redirect_document_id": false
     }
   ]
