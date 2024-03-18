@@ -12,4 +12,4 @@ When you this policy setting, users can't modify quick settings. If you disable 
 |  | Path |
 |--|--|
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[DisableEditingQuickSettings](/windows/client-management/mdm/policy-csp-start#disableeditingquicksettings)|
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Disable editing quick settings** |

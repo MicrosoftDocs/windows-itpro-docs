@@ -19,5 +19,5 @@ If you disable or don't configure this policy setting, the system retains docume
 
 |  | Path |
 |--|--|
-| **CSP** | ./Device/Vendor/MSFT/[Setting]() |
-| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **CSP** | Not available. |
+| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Clear history of recently opened documents on exit** |

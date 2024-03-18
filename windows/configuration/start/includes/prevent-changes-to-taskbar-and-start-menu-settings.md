@@ -14,5 +14,5 @@ With this policy setting you can prevent changes to Taskbar and Start menu setti
 
 |  | Path |
 |--|--|
-| **CSP** | ./Device/Vendor/MSFT/[Setting]() |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **CSP** | Not available. |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Prevent changes to Taskbar and Start Menu Settings**|

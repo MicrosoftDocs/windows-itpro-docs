@@ -5,7 +5,7 @@ ms.date: 03/18/2024
 ms.topic: include
 ---
 
-### Show *Run as different user* command on Start
+### Show *Run as different user* command
 
 With this policy setting you can hide the *Run as different user* command on the Start application bar. If you enable this setting, users can access the "Run as different user" command from Start for applications which support this functionality. If you disable or don't configure this setting, users can't access the *Run as different user* command from Start for any applications.
 
@@ -15,4 +15,4 @@ With this policy setting you can hide the *Run as different user* command on the
 |  | Path |
 |--|--|
 | **CSP** | Not available |
-| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Show "Run as different user" command on Start** |

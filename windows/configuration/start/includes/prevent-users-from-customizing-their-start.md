@@ -14,5 +14,5 @@ With this policy setting you can prevent users from changing their Start menu la
 
 |  | Path |
 |--|--|
-| **CSP** | ./Device/Vendor/MSFT/[Setting]() |
-| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **CSP** | Not available. |
+| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Prevent users from customizing their Start**|

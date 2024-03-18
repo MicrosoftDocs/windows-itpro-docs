@@ -11,5 +11,5 @@ Prevents the operating system and installed programs from creating and displayin
 
 |  | Path |
 |--|--|
-| **CSP** | ./Device/Vendor/MSFT/[Setting]() |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **CSP** | Not available. |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Do not keep history of recently opened documents**|
