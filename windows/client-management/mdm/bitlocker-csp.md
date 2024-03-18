@@ -660,7 +660,7 @@ Sample value for this node to enable this policy is: `<enabled/>`
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
-To disable this policy, use hte following SyncML:
+To disable this policy, use the following SyncML:
 
 ```xml
 <Replace>
