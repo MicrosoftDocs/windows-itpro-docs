@@ -24,7 +24,7 @@ landingContent:
           - text: Customize the Windows Start menu layout
             url: start/customize-and-export-start-layout.md
           - text: Customize the Windows taskbar
-            url: taskbar/configure.md
+            url: taskbar/index.md
           - text: Configure Windows Spotlight on the lock screen
             url: lock-screen/windows-spotlight.md
           - text: Accessibility information for IT pros
