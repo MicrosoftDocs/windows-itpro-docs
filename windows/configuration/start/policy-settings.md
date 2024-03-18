@@ -125,12 +125,11 @@ The following table lists the policies that control the Start menu layout. Selec
 |-|-|-|
 |[HideChangeAccountSettings](/windows/client-management/mdm/policy-csp-start#hidechangeaccountsettings)|✅|❌|
 |[HideLock](/windows/client-management/mdm/policy-csp-start#hidelock)|✅|❌|
-|[HideSignOut](/windows/client-management/mdm/policy-csp-start#hidesignout)|✅|✅|
+|[HideSignOut](#hide-signout)|✅|✅|
 |[HideSwitchAccount](/windows/client-management/mdm/policy-csp-start#hideswitchaccount)|✅|❌|
 |[HideUserTile](/windows/client-management/mdm/policy-csp-start#hideusertile)|✅|❌|
-|[Remove Logoff on the Start Menu](#remove-logoff-on-the-start-menu)|❌|✅|
 
-[!INCLUDE [remove-logoff-on-the-start-menu-u](includes/remove-logoff-on-the-start-menu-u.md)]
+[!INCLUDE [hide-signout](includes/hide-signout.md)]
 
 #### [:::image type="icon" source="../images/icons/folder.svg"::: **Pinned folders**](#tab/folders)
 
