@@ -63,7 +63,7 @@ The following table lists the policies that control the Start menu layout. Selec
 |Policy name| CSP | GPO |
 |-|-|-|
 |[Clear history of recently opened documents on exit](#clear-history-of-recently-opened-documents-on-exit)|❌|✅|
-|[Hide recently added apps](#hiderecentlyaddedapps)|✅|✅|
+|[Hide recently added apps](#hide-recently-added-apps)|✅|✅|
 |[Hide recent jumplists](#hiderecentjumplists)|✅|✅|
 |[Hide recommended personalized sites](#hide-recommended-personalized-sites)|✅|✅|
 |[Hide recommended section](#hide-recommended-section)|✅|✅|
@@ -81,7 +81,7 @@ The following table lists the policies that control the Start menu layout. Selec
 |[Don't use the tracking-based method when resolving shell shortcuts](#dont-use-the-tracking-based-method-when-resolving-shell-shortcuts)|❌|✅|
 |[Force Start size](#force-start-size)|✅|✅|
 |[Hide frequently used apps](#hide-frequently-used-apps)|✅|✅|
-|[Hide recently added apps](#hiderecentlyaddedapps)|✅|✅|
+|[Hide recently added apps](#hide-recently-added-apps)|✅|✅|
 |[Import Edge assets](/windows/client-management/mdm/policy-csp-start#importedgeassets)|✅|❌|
 |[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
 |[Prevent users from customizing their Start](#prevent-users-from-customizing-their-start)|❌|✅|
@@ -103,7 +103,6 @@ The following table lists the policies that control the Start menu layout. Selec
 [!INCLUDE [disable-search](includes/disable-search.md)]
 ::: zone-end
 
-[!INCLUDE [do-not-keep-history-of-recently-opened-documents](includes/do-not-keep-history-of-recently-opened-documents.md)]
 [!INCLUDE [do-not-use-the-search-based-method-when-resolving-shell-shortcuts](includes/do-not-use-the-search-based-method-when-resolving-shell-shortcuts.md)]
 [!INCLUDE [do-not-use-the-tracking-based-method-when-resolving-shell-shortcuts](includes/do-not-use-the-tracking-based-method-when-resolving-shell-shortcuts.md)]
 
