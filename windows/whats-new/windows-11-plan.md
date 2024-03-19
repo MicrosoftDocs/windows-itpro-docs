@@ -99,15 +99,13 @@ It's important that organizations have adequate time to plan for Windows 11. Mic
 
 Microsoft's compatibility promise for Windows 10 is maintained for Windows 11. Data from the App Assure program shows that Windows 10 compatibility rates are over 99.7% for enterprise organizations, including line of business (LOB) apps. Microsoft remains committed to ensuring that the apps you rely upon continue to work as expected when you upgrade. Windows 11 is subject to the same app compatibility validation requirements that are in place for Windows 10 today, for both feature and quality updates.
 
-#### App Assure and Test Base for Microsoft 365
+#### App Assure
 
-If you run into compatibility issues or want to ensure that your organization's applications are compatible from day one, App Assure and Test Base for Microsoft 365 can help. 
+If you run into compatibility issues or want to ensure that your organization's applications are compatible from day one, App Assure can help. 
 
 - **App Assure**: With enrollment in the [App Assure](/windows/compatibility/app-assure) service, any app compatibility issues that you find with Windows 11 can be resolved. Microsoft will help you remedy application issues at no cost. Since 2018, App Assure has evaluated almost 800,000 apps, and subscriptions are free for eligible customers with 150+ seats.
 
-- **Test Base for Microsoft 365**: [Test Base](https://portal.azure.com/?feature.Win11=true%2F#view/Microsoft_Azure_Marketplace/GalleryItemDetailsBladeNopdl/id/Microsoft.TestBase) is a cloud testing platform that can help you evaluate applications readiness for Windows 11 upgrade or migration. IT administrators, software publishers, and system integrators can find desired test cases throughout the entire Windows validation lifecycle. Tests include, but aren't limited to, in-place upgrade validation, monthly quality updates, and tests against Windows preview features.
-
-You might already be using App Assure and Test Base in your Windows 10 environment. Both of these tools will continue to function with Windows 11. 
+You might already be using App Assure in your Windows 10 environment. The tool will continue to function with Windows 11. 
 
 ## Next steps
 

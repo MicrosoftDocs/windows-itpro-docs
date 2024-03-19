@@ -11,7 +11,7 @@ ms.collection:
   - highpri
   - tier1
 ms.subservice: itpro-fundamentals
-ms.date: 02/13/2023
+ms.date: 03/13/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 
@@ -120,10 +120,8 @@ The following configuration requirements apply to VMs running Windows 11.
 
 ## Next steps
 
+- [What's new in Windows 11](/windows/whats-new/windows-11-overview)
 - [Plan for Windows 11](windows-11-plan.md)
 - [Prepare for Windows 11](windows-11-prepare.md)
-
-## See also
-
 - [Windows minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
-- [What's new in Windows 11 overview](/windows/whats-new/windows-11-overview)
+

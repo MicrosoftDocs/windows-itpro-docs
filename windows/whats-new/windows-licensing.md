@@ -8,7 +8,7 @@ manager: aaroncz
 ms.collection:
 - tier2
 ms.topic: overview
-ms.date: 05/04/2023
+ms.date: 02/29/2024
 appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ms.service: windows-client
@@ -48,7 +48,7 @@ Windows 11 Pro is designed for small and medium businesses. Windows 11 Pro enabl
 The Windows 11 Pro Upgrade license is recommended if you want to:
 
 - Upgrade a Windows 10 Pro device to Windows 11 Pro
-- Upgrade Windows 7/8/8.1 Pro devices to Windows 10 Pro  
+- Upgrade Windows 7/8/8.1 Pro devices to Windows 10 Pro
 
 ## Windows 11 Enterprise
 
@@ -69,7 +69,7 @@ The following table describes the unique Windows Enterprise edition features:
 |-|-|
 |**[Credential Guard][WIN-1]**|Protects against user credential harvesting and pass-the-hash attacks or pass the token attacks.|
 |**[Managed Microsoft Defender Application Guard (MDAG) for Microsoft Edge][WIN-11]**| Isolates enterprise-defined untrusted sites with virtualization-based security from Windows, protecting your organization while users browse the Internet.|
-|**[Modern BitLocker Management][WIN-2]** | Allows you to eliminate on-premises tools to monitor and support BitLocker recovery scenarios. |  
+|**[Modern BitLocker Management][WIN-2]** | Allows you to eliminate on-premises tools to monitor and support BitLocker recovery scenarios. |
 |**[Personal Data Encryption][WIN-3]**|Encrypts individual's content using Windows Hello for Business to link the encryption keys to user credentials.|
 |**[Direct Access][WINS-1]**|Connect remote users to the organization network without the need for traditional VPN connections.|
 |**[Always-On VPN device tunnel][WINS-2]**|Advanced security capabilities to restrict the type of traffic and which applications can use the VPN connection.|
