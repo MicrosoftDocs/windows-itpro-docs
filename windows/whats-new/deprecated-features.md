@@ -1,11 +1,7 @@
 ---
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer actively developing in Windows 10 and Windows 11.
-<<<<<<< HEAD
-ms.date: 02/27/2024
-=======
 ms.date: 03/14/2024
->>>>>>> 2611102eb68f1f90118309d07c5503b1ffb5ad07
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
@@ -51,12 +47,9 @@ The features in this article are no longer being actively developed, and might b
 
 | Feature | Details and mitigation  | Deprecation announced |
 |---|---|---|
-<<<<<<< HEAD
 | NPLogonNotify and NPPasswordChangeNotify APIs <!--8787264--> | Starting in Windows 11, version 24H2, the inclusion of password payload in MPR notifications is set to disabled by default through group policy in [NPLogonNotify](/windows/win32/api/npapi/nf-npapi-nplogonnotify) and [NPPasswordChangeNotify](/windows/win32/api/npapi/nf-npapi-nppasswordchangenotify) APIs. The APIs may be removed in a future release. The primary reason for disabling this feature is to enhance security. When enabled, these APIs allow the caller to retrieve a users password, presenting potential risks for password exposure and harvesting by malicious users. | March 2024 |
-=======
 | TLS server authentication certificates using RSA keys with key lengths shorter than 2048 bits <!--8644149-->| Support for certificates using RSA keys with key lengths shorter than 2048 bits will be deprecated. Internet standards and regulatory bodies disallowed the use of 1024-bit keys in 2013, recommending specifically that RSA keys should have a key length of 2048 bits or longer. For more information, see [Transitioning of Cryptographic Algorithms and Key Sizes - Discussion Paper (nist.gov)](https://csrc.nist.gov/CSRC/media/Projects/Key-Management/documents/transitions/Transitioning_CryptoAlgos_070209.pdf). This deprecation focuses on ensuring that all RSA certificates used for TLS server authentication must have key lengths greater than or equal to 2048 bits to be considered valid by Windows. </br></br> TLS certificates issued by enterprise or test certification authorities (CA) aren't impacted with this change. However, we recommend that they be updated to RSA keys greater than or equal to 2048 bits as a security best practice. This change is necessary to preserve security of Windows customers using certificates for authentication and cryptographic purposes.| March 2024|
 | Test Base <!--8790681--> | [Test Base for Microsoft 365](/microsoft-365/test-base/overview), an Azure cloud service for application testing, is deprecated. The service will be retired in the future and will be no longer available for use after retirement. | March 2024 | 
->>>>>>> 2611102eb68f1f90118309d07c5503b1ffb5ad07
 | Windows Mixed Reality <!--8412877--> | [Windows Mixed Reality](/windows/mixed-reality/enthusiast-guide/before-you-start) is deprecated and will be removed in Windows 11, version 24H2. This deprecation includes the [Mixed Reality Portal](/windows/mixed-reality/enthusiast-guide/install-windows-mixed-reality) app, [Windows Mixed Reality for SteamVR](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality), and Steam VR Beta. Existing Windows Mixed Reality devices will continue to work with Steam through November 2026, if users remain on their current released version of Windows 11, version 23H2. After November 2026, Windows Mixed Reality will no longer receive security updates, nonsecurity updates, bug fixes, technical support, or online technical content updates.</br> </br>This deprecation doesn't affect HoloLens. We remain committed to HoloLens and our enterprise customers. | December 2023 |
 | Microsoft Defender Application Guard for Edge <!--8591267-->| [Microsoft Defender Application Guard](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview), including the [Windows Isolated App Launcher APIs](/windows/win32/api/isolatedapplauncher/), is being deprecated for Microsoft Edge for Business and [will no longer be updated](feature-lifecycle.md). Please download the [Microsoft Edge For Business Security Whitepaper](https://edgestatic.azureedge.net/shared/cms/pdfs/Microsoft_Edge_Security_Whitepaper_v2.pdf) to learn more about Edge for Business security capabilities. | December 2023 |
 | Legacy console mode <!-- 8577271 -->| The [legacy console mode](/windows/console/legacymode) is deprecated and no longer being updated. In future Windows releases, it will be available as an optional [Feature on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities). This feature won't be installed by default. | December 2023 |
