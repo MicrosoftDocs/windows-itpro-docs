@@ -9,11 +9,10 @@ zone_pivot_groups: windows-versions-11-10
 
 # Start menu policy settings
 
-This reference article provides a comprehensive list of policy settings for Start menu.
+This reference article outlines the policy settings available for customizing the Start menu experience. The settings are categorized and presented in alphabetical order to facilitate easy navigation and configuration.
 
 :::row:::
 :::column span="2":::
-The list of settings is sorted alphabetically and organized in four categories:
 
 1. **Start layout**: settings to control the Start menu appearance and its behavior
 1. **All apps options**: settings to control the All apps list
