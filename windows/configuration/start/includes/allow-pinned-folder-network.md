@@ -1,0 +1,13 @@
+---
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 03/18/2024
+ms.topic: include
+---
+
+### Allow pinned folder Network
+
+|  | Path |
+|--|--|
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[AllowPinnedFolderNetword](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldernetwork) |
+| **GPO** | Not available. |

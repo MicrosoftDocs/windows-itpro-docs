@@ -84,6 +84,7 @@ Select one of the tabs to see the list of available settings:
 |[Show "Run as different user" command](#show-run-as-different-user-command)|❌|✅|
 ::: zone-end
 
+[!INCLUDE [clear-history-of-recently-opened-documents-on-exit](includes/clear-history-of-recently-opened-documents-on-exit.md)]
 ::: zone pivot="windows-10"
 [!INCLUDE [clear-tile-notifications-during-log-on](includes/clear-tile-notifications-during-log-on.md)]
 [!INCLUDE [configure-start-layout](includes/configure-start-layout.md)]
@@ -100,6 +101,12 @@ Select one of the tabs to see the list of available settings:
 ::: zone pivot="windows-10"
 [!INCLUDE [force-start-size](includes/force-start-size.md)]
 ::: zone-end
+[!INCLUDE [hide-recently-added-apps](includes/hide-recently-added-apps.md)]
+[!INCLUDE [hide-recent-jumplists](includes/hide-recent-jumplists.md)]
+::: zone pivot="windows-11"
+[!INCLUDE [hide-recommended-personalized-sites](includes/hide-recommended-personalized-sites.md)]
+[!INCLUDE [hide-recommended-section](includes/hide-recommended-section.md)]
+::: zone-end
 ::: zone pivot="windows-10"
 [!INCLUDE [import-edge-assets](includes/import-edge-assets.md)]
 ::: zone-end
@@ -108,13 +115,7 @@ Select one of the tabs to see the list of available settings:
 [!INCLUDE [prevent-users-from-uninstalling-applications-from-start](includes/prevent-users-from-uninstalling-applications-from-start.md)]
 [!INCLUDE [remove-common-program-groups](includes/remove-common-program-groups.md)]
 [!INCLUDE [show-run-as-different-user-command](includes/show-run-as-different-user-command.md)]
-[!INCLUDE [clear-history-of-recently-opened-documents-on-exit](includes/clear-history-of-recently-opened-documents-on-exit.md)]
-[!INCLUDE [hide-recently-added-apps](includes/hide-recently-added-apps.md)]
-[!INCLUDE [hide-recent-jumplists](includes/hide-recent-jumplists.md)]
-::: zone pivot="windows-11"
-[!INCLUDE [hide-recommended-personalized-sites](includes/hide-recommended-personalized-sites.md)]
-[!INCLUDE [hide-recommended-section](includes/hide-recommended-section.md)]
-::: zone-end
+
 
 #### [:::image type="icon" source="../images/icons/allapps.svg"::: **All apps**](#tab/allapps)
 
@@ -150,27 +151,44 @@ Select one of the tabs to see the list of available settings:
 
 |Policy name| CSP | GPO |
 |-|-|-|
-|[Allow pinned folder Documents](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderdocuments)|✅|❌|
-|[Allow pinned folder Downloads](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderdownloads)|✅|❌|
-|[Allow pinned folder File Explorer](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderfileexplorer)|✅|❌|
-|[Allow pinned folder Home Group](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderhomegroup)|✅|❌|
-|[Allow pinned folder Music](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldermusic)|✅|❌|
-|[Allow pinned folder Network](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldernetwork)|✅|❌|
-|[Allow pinned folder Personal Folder](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderpersonalfolder)|✅|❌|
-|[Allow pinned folder Pictures](/windows/client-management/mdm/policy-csp-start#allowpinnedfolderpictures)|✅|❌|
-|[Allow pinned folder Settings](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldersettings)|✅|❌|
-|[Allow pinned folder Videos](/windows/client-management/mdm/policy-csp-start#allowpinnedfoldervideos)|✅|❌|
+|[Allow pinned folder Documents](#allow-pinned-folder-documents)|✅|❌|
+|[Allow pinned folder Downloads](#allow-pinned-folder-downloads)|✅|❌|
+|[Allow pinned folder File Explorer](/allow-pinned-folder-file-explorer)|✅|❌|
+|[Allow pinned folder Home Group](#allow-pinned-folder-homegroup)|✅|❌|
+|[Allow pinned folder Music](#allow-pinned-folder-music)|✅|❌|
+|[Allow pinned folder Network](#allow-pinned-folder-network)|✅|❌|
+|[Allow pinned folder Personal Folder](#allow-pinned-folder-personalfolder)|✅|❌|
+|[Allow pinned folder Pictures](#allow-pinned-folder-pictures)|✅|❌|
+|[Allow pinned folder Settings](#allow-pinned-folder-settings)|✅|❌|
+|[Allow pinned folder Videos](#allow-pinned-folder-videos)|✅|❌|
+
+[!INCLUDE [allow-pinned-folder-documents](includes/allow-pinned-folder-documents.md)]
+[!INCLUDE [allow-pinned-folder-downloads](includes/allow-pinned-folder-downloads.md)]
+[!INCLUDE [allow-pinned-folder-file-explorer](includes/allow-pinned-folder-file-explorer.md)]
+[!INCLUDE [allow-pinned-folder-home-group](includes/allow-pinned-folder-home-group.md)]
+[!INCLUDE [allow-pinned-folder-music](includes/allow-pinned-folder-music.md)]
+[!INCLUDE [allow-pinned-folder-network](includes/allow-pinned-folder-network.md)]
+[!INCLUDE [allow-pinned-folder-personal-folder](includes/allow-pinned-folder-personal-folder.md)]
+[!INCLUDE [allow-pinned-folder-pictures](includes/allow-pinned-folder-pictures.md)]
+[!INCLUDE [allow-pinned-folder-settings](includes/allow-pinned-folder-settings.md)]
+[!INCLUDE [allow-pinned-folder-videos](includes/allow-pinned-folder-videos.md)]
 
 #### [:::image type="icon" source="../images/icons/power.svg"::: **Power options**](#tab/power)
 
 |Policy name| CSP | GPO |
 |-|-|-|
-|[Hide **Hibernate** button](/windows/client-management/mdm/policy-csp-start#hidehibernate)|✅|❌|
-|[Hide **Power** button](/windows/client-management/mdm/policy-csp-start#hidepowerbutton)|✅|❌|
-|[Hide **Restart** button](/windows/client-management/mdm/policy-csp-start#hiderestart)|✅|❌|
-|[Hide **Shutdown** button](/windows/client-management/mdm/policy-csp-start#hideshutdown)|✅|❌|
-|[Hide **Sleep** button](/windows/client-management/mdm/policy-csp-start#hidesleep)|✅|❌|
+|[Hide **Hibernate** ](#hide-hibernate)|✅|❌|
+|[Hide **Power**](#hide-power)|✅|❌|
+|[Hide **Restart**](#hide-restart)|✅|❌|
+|[Hide **Shut down**](#hide-shut-down)|✅|❌|
+|[Hide **Sleep**](#hide-sleep)|✅|❌|
 |[Remove and prevent access to the shut down restart sleep and hibernate commands](#remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands)|❌|✅|
+
+[!INCLUDE [hide-hibernate](includes/hide-hibernate.md)]
+[!INCLUDE [hide-power](includes/hide-power.md)]
+[!INCLUDE [hide-restart](includes/hide-restart.md)]
+[!INCLUDE [hide-shut-down](includes/hide-shut-down.md)]
+[!INCLUDE [hide-sleep](includes/hide-sleep.md)]
 
 [!INCLUDE [remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands-um](includes/remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands-um.md)]
 

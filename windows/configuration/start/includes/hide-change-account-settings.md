@@ -9,5 +9,5 @@ ms.topic: include
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[hidechangeaccountsettings](/windows/client-management/mdm/policy-csp-start#hidechangeaccountsettings)|
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[HideChangeAccountSettings](/windows/client-management/mdm/policy-csp-start#hidechangeaccountsettings)|
 | **GPO** | Not available. |

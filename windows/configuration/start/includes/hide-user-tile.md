@@ -9,5 +9,5 @@ ms.topic: include
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[hideusertile](/windows/client-management/mdm/policy-csp-start#hideusertile)|
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[HideUserTile](/windows/client-management/mdm/policy-csp-start#hideusertile)|
 | **GPO** | Not available. |
