@@ -136,7 +136,7 @@ Select one of the tabs to see the list of available settings:
 
 |Policy name| CSP | GPO |
 |-|-|-|
-|[Hide **Change sccount settings** button](/windows/client-management/mdm/policy-csp-start#hidechangeaccountsettings)|✅|❌|
+|[Hide **Change account settings** button](/windows/client-management/mdm/policy-csp-start#hidechangeaccountsettings)|✅|❌|
 |[Hide **Lock** button](/windows/client-management/mdm/policy-csp-start#hidelock)|✅|❌|
 |[Hide **Sign out** button](#hide-sign-out-button)|✅|✅|
 |[Hide **Switch User** button](/windows/client-management/mdm/policy-csp-start#hideswitchaccount)|✅|❌|
