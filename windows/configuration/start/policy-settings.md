@@ -9,7 +9,7 @@ zone_pivot_groups: windows-versions-11-10
 
 # Start menu policy settings
 
-This reference article outlines the policy settings available for customizing the Start menu experience. The settings are categorized and presented in alphabetical order to facilitate easy navigation and configuration.
+This reference article outlines the policy settings available for customizing the Start menu experience. The settings are categorized and presented in alphabetical order to facilitate navigation and configuration.
 
 :::row:::
 :::column span="2":::
