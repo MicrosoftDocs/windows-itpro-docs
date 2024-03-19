@@ -51,7 +51,7 @@ Select one of the tabs to see the list of available settings:
 |[Prevent users from customizing their Start](#prevent-users-from-customizing-their-start)|❌|✅|
 |[Prevent users from uninstalling applications from Start](#prevent-users-from-uninstalling-applications-from-start)|❌|✅|
 |[Remove common program groups](#remove-common-program-groups)|❌|✅|
-|[Show "Run as different user" command](#show-run-as-different-user-command)|❌|✅|
+|[Show **Run as different user** command](#show-run-as-different-user-command)|❌|✅|
 
 ### Recommended area
 
