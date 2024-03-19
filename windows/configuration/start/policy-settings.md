@@ -84,44 +84,37 @@ Select one of the tabs to see the list of available settings:
 |[Show "Run as different user" command](#show-run-as-different-user-command)|❌|✅|
 ::: zone-end
 
-[!INCLUDE [clear-history-of-recently-opened-documents-on-exit](includes/clear-history-of-recently-opened-documents-on-exit.md)]
-
 ::: zone pivot="windows-10"
 [!INCLUDE [clear-tile-notifications-during-log-on](includes/clear-tile-notifications-during-log-on.md)]
 [!INCLUDE [configure-start-layout](includes/configure-start-layout.md)]
 ::: zone-end
-
-[!INCLUDE [disable-context-menus](includes/disable-context-menus.md)]
-
 ::: zone pivot="windows-11"
 [!INCLUDE [configure-start-pins](includes/configure-start-pins.md)]
+::: zone-end
+[!INCLUDE [disable-context-menus](includes/disable-context-menus.md)]
+::: zone pivot="windows-11"
 [!INCLUDE [disable-search](includes/disable-search.md)]
 ::: zone-end
-
 [!INCLUDE [do-not-use-the-search-based-method-when-resolving-shell-shortcuts](includes/do-not-use-the-search-based-method-when-resolving-shell-shortcuts.md)]
 [!INCLUDE [do-not-use-the-tracking-based-method-when-resolving-shell-shortcuts](includes/do-not-use-the-tracking-based-method-when-resolving-shell-shortcuts.md)]
-
 ::: zone pivot="windows-10"
 [!INCLUDE [force-start-size](includes/force-start-size.md)]
 ::: zone-end
-
-[!INCLUDE [hide-recently-added-apps](includes/hide-recently-added-apps.md)]
-[!INCLUDE [hide-recent-jumplists](includes/hide-recent-jumplists.md)]
-
-::: zone pivot="windows-11"
-[!INCLUDE [hide-recommended-personalized-sites](includes/hide-recommended-personalized-sites.md)]
-[!INCLUDE [hide-recommended-section](includes/hide-recommended-section.md)]
-::: zone-end
-
 ::: zone pivot="windows-10"
 [!INCLUDE [import-edge-assets](includes/import-edge-assets.md)]
 ::: zone-end
-
 [!INCLUDE [prevent-changes-to-taskbar-and-start-menu-settings](includes/prevent-changes-to-taskbar-and-start-menu-settings.md)]
 [!INCLUDE [prevent-users-from-customizing-their-start](includes/prevent-users-from-customizing-their-start.md)]
 [!INCLUDE [prevent-users-from-uninstalling-applications-from-start](includes/prevent-users-from-uninstalling-applications-from-start.md)]
 [!INCLUDE [remove-common-program-groups](includes/remove-common-program-groups.md)]
 [!INCLUDE [show-run-as-different-user-command](includes/show-run-as-different-user-command.md)]
+[!INCLUDE [clear-history-of-recently-opened-documents-on-exit](includes/clear-history-of-recently-opened-documents-on-exit.md)]
+[!INCLUDE [hide-recently-added-apps](includes/hide-recently-added-apps.md)]
+[!INCLUDE [hide-recent-jumplists](includes/hide-recent-jumplists.md)]
+::: zone pivot="windows-11"
+[!INCLUDE [hide-recommended-personalized-sites](includes/hide-recommended-personalized-sites.md)]
+[!INCLUDE [hide-recommended-section](includes/hide-recommended-section.md)]
+::: zone-end
 
 #### [:::image type="icon" source="../images/icons/allapps.svg"::: **All apps**](#tab/allapps)
 
@@ -142,7 +135,7 @@ Select one of the tabs to see the list of available settings:
 |Policy name| CSP | GPO |
 |-|-|-|
 |[Hide **Change account settings**](#hide-change-account-settings)|✅|❌|
-|[Hide **Lock**](#hidelock)|✅|❌|
+|[Hide **Lock**](#hide-lock)|✅|❌|
 |[Hide **Sign out**](#hide-sign-out)|✅|✅|
 |[Hide **Switch account**](#hide-switch-account)|✅|❌|
 |[Hide user tile](#hide-user-tile)|✅|❌|
