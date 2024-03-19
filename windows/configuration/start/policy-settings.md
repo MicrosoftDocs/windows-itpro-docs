@@ -15,7 +15,7 @@ This reference article provides a comprehensive list of policy settings for Star
 :::column span="2":::
 The list of settings is sorted alphabetically and organized in four categories:
 
-1. **Start layout**: settings to control the Start menu layout and its behavior
+1. **Start layout**: settings to control the Start menu appearance and its behavior
 1. **All apps options**: settings to control the All apps list
 1. **User options**: settings to control the options exposed when selecting the user icon
 1. **Pinned folders**: settings to control the folders pinned for quick access
@@ -38,20 +38,16 @@ For information about how to configure these settings, see [Configure the Start 
 
 Select one of the tabs to see the list of available settings:
 
-#### [:::image type="icon" source="../images/icons/start.svg"::: **Pinned**](#tab/start)
-
-The following table lists the policies that control the Start menu layout. Select the policy name for more details.
+#### [:::image type="icon" source="../images/icons/start.svg"::: **Layout**](#tab/start)
 
 ::: zone pivot="windows-11"
 |Policy name| CSP | GPO |
 |-|-|-|
-|[Clear history of recently opened documents on exit](#clear-history-of-recently-opened-documents-on-exit)|❌|✅|
 |[Configure Start pins](/windows/client-management/mdm/policy-csp-start#configurestartpins)|✅|❌|
 |[Disable context menus](#disable-context-menus)|✅|✅|
 |[Disable search](#disable-search)|✅|✅|
 |[Don't use the search-based method when resolving shell shortcuts](#dont-use-the-search-based-method-when-resolving-shell-shortcuts)|❌|✅|
 |[Don't use the tracking-based method when resolving shell shortcuts](#dont-use-the-tracking-based-method-when-resolving-shell-shortcuts)|❌|✅|
-|[Hide frequently used apps](#hide-frequently-used-apps)|✅|✅|
 |[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
 |[Prevent users from customizing their Start](#prevent-users-from-customizing-their-start)|❌|✅|
 |[Prevent users from uninstalling applications from Start](#prevent-users-from-uninstalling-applications-from-start)|❌|✅|
@@ -80,7 +76,6 @@ The following table lists the policies that control the Start menu layout. Selec
 |[Don't use the search-based method when resolving shell shortcuts](#dont-use-the-search-based-method-when-resolving-shell-shortcuts)|❌|✅|
 |[Don't use the tracking-based method when resolving shell shortcuts](#dont-use-the-tracking-based-method-when-resolving-shell-shortcuts)|❌|✅|
 |[Force Start size](#force-start-size)|✅|✅|
-|[Hide frequently used apps](#hide-frequently-used-apps)|✅|✅|
 |[Hide recently added apps](#hide-recently-added-apps)|✅|✅|
 |[Import Edge assets](/windows/client-management/mdm/policy-csp-start#importedgeassets)|✅|❌|
 |[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
@@ -129,12 +124,12 @@ The following table lists the policies that control the Start menu layout. Selec
 |Policy name| CSP | GPO |
 |-|-|-|
 |[Clear the recent programs list for new users](#clear-the-recent-programs-list-for-new-users)|❌|✅|
-|[Hide **All Programs** list](#hide-all-programs-list)|✅|✅|
+|[Hide app list](#hide-app-list)|✅|✅|
 |[Hide frequently used apps](#hide-frequently-used-apps)|✅|✅|
 |[Hide most used lists](#hide-most-used-lists)|✅|✅|
 
 [!INCLUDE [clear-the-recent-programs-list-for-new-users](includes/clear-the-recent-programs-list-for-new-users.md)]
-[!INCLUDE [hide-all-programs-list](includes/hide-all-programs-list.md)]
+[!INCLUDE [hide-app-list](includes/hide-app-list.md)]
 [!INCLUDE [hide-frequently-used-apps](includes/hide-frequently-used-apps.md)]
 [!INCLUDE [hide-most-used-lists](includes/hide-most-used-lists.md)]
 

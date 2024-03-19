@@ -5,7 +5,7 @@ ms.date: 03/18/2024
 ms.topic: include
 ---
 
-### Hide *All Programs* list
+### Hide app list
 
 If you enable this setting, the Start Menu will either collapse or remove the all apps list from the Start menu:
 
