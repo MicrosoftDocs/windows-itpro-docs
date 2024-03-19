@@ -178,14 +178,14 @@ Select one of the tabs to see the list of available settings:
 |Policy name| CSP | GPO |
 |-|-|-|
 |[Hide **Hibernate** ](#hide-hibernate)|✅|❌|
-|[Hide **Power**](#hide-power)|✅|❌|
+|[Hide **Power** button](#hide-power-button)|✅|❌|
 |[Hide **Restart**](#hide-restart)|✅|❌|
 |[Hide **Shut down**](#hide-shut-down)|✅|❌|
 |[Hide **Sleep**](#hide-sleep)|✅|❌|
 |[Remove and prevent access to the shut down restart sleep and hibernate commands](#remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands)|❌|✅|
 
 [!INCLUDE [hide-hibernate](includes/hide-hibernate.md)]
-[!INCLUDE [hide-power](includes/hide-power.md)]
+[!INCLUDE [hide-power-button](includes/hide-power-button.md)]
 [!INCLUDE [hide-restart](includes/hide-restart.md)]
 [!INCLUDE [hide-shut-down](includes/hide-shut-down.md)]
 [!INCLUDE [hide-sleep](includes/hide-sleep.md)]

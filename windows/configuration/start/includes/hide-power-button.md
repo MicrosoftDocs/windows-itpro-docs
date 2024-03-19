@@ -5,7 +5,7 @@ ms.date: 03/18/2024
 ms.topic: include
 ---
 
-### Hide Power Button
+### Hide Power button
 
 |  | Path |
 |--|--|
