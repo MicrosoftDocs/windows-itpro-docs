@@ -5,7 +5,7 @@ ms.date: 03/18/2024
 ms.topic: include
 ---
 
-### Hide Sign out button
+### Hide Sign out
 
 With this policy setting you can remove the **Sign out** item from the Start menu and prevents users from restoring it:
 

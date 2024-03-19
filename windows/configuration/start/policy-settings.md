@@ -16,7 +16,7 @@ This reference article outlines the policy settings available for customizing th
 
 1. **Start layout**: settings to control the Start menu appearance and its behavior
 1. **All apps options**: settings to control the All apps list
-1. **User options**: settings to control the options exposed when selecting the user icon
+1. **Account options**: settings to control the options exposed when selecting the user account icon
 1. **Pinned folders**: settings to control the folders pinned for quick access
 1. **Power options**: settings to control the options exposed when selecting the power button
 
@@ -42,7 +42,7 @@ Select one of the tabs to see the list of available settings:
 ::: zone pivot="windows-11"
 |Policy name| CSP | GPO |
 |-|-|-|
-|[Configure Start pins](/windows/client-management/mdm/policy-csp-start#configurestartpins)|✅|❌|
+|[Configure Start pins](#configure-start-pins)|✅|❌|
 |[Disable context menus](#disable-context-menus)|✅|✅|
 |[Disable search](#disable-search)|✅|✅|
 |[Don't use the search-based method when resolving shell shortcuts](#dont-use-the-search-based-method-when-resolving-shell-shortcuts)|❌|✅|
@@ -76,7 +76,7 @@ Select one of the tabs to see the list of available settings:
 |[Don't use the tracking-based method when resolving shell shortcuts](#dont-use-the-tracking-based-method-when-resolving-shell-shortcuts)|❌|✅|
 |[Force Start size](#force-start-size)|✅|✅|
 |[Hide recently added apps](#hide-recently-added-apps)|✅|✅|
-|[Import Edge assets](/windows/client-management/mdm/policy-csp-start#importedgeassets)|✅|❌|
+|[Import Edge assets](#import-edge-assets)|✅|❌|
 |[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
 |[Prevent users from customizing their Start](#prevent-users-from-customizing-their-start)|❌|✅|
 |[Prevent users from uninstalling applications from Start](#prevent-users-from-uninstalling-applications-from-start)|❌|✅|
@@ -94,6 +94,7 @@ Select one of the tabs to see the list of available settings:
 [!INCLUDE [disable-context-menus](includes/disable-context-menus.md)]
 
 ::: zone pivot="windows-11"
+[!INCLUDE [configure-start-pins](includes/configure-start-pins.md)]
 [!INCLUDE [disable-search](includes/disable-search.md)]
 ::: zone-end
 
@@ -110,6 +111,10 @@ Select one of the tabs to see the list of available settings:
 ::: zone pivot="windows-11"
 [!INCLUDE [hide-recommended-personalized-sites](includes/hide-recommended-personalized-sites.md)]
 [!INCLUDE [hide-recommended-section](includes/hide-recommended-section.md)]
+::: zone-end
+
+::: zone pivot="windows-10"
+[!INCLUDE [import-edge-assets](includes/import-edge-assets.md)]
 ::: zone-end
 
 [!INCLUDE [prevent-changes-to-taskbar-and-start-menu-settings](includes/prevent-changes-to-taskbar-and-start-menu-settings.md)]
@@ -132,17 +137,21 @@ Select one of the tabs to see the list of available settings:
 [!INCLUDE [hide-frequently-used-apps](includes/hide-frequently-used-apps.md)]
 [!INCLUDE [hide-most-used-lists](includes/hide-most-used-lists.md)]
 
-#### [:::image type="icon" source="../images/icons/user.svg"::: **User options**](#tab/user)
+#### [:::image type="icon" source="../images/icons/user.svg"::: **Account options**](#tab/user)
 
 |Policy name| CSP | GPO |
 |-|-|-|
-|[Hide **Change account settings** button](/windows/client-management/mdm/policy-csp-start#hidechangeaccountsettings)|✅|❌|
-|[Hide **Lock** button](/windows/client-management/mdm/policy-csp-start#hidelock)|✅|❌|
-|[Hide **Sign out** button](#hide-sign-out-button)|✅|✅|
-|[Hide **Switch User** button](/windows/client-management/mdm/policy-csp-start#hideswitchaccount)|✅|❌|
-|[Hide user tile](/windows/client-management/mdm/policy-csp-start#hideusertile)|✅|❌|
+|[Hide **Change account settings**](#hide-change-account-settings)|✅|❌|
+|[Hide **Lock**](#hidelock)|✅|❌|
+|[Hide **Sign out**](#hide-sign-out)|✅|✅|
+|[Hide **Switch account**](#hide-switch-account)|✅|❌|
+|[Hide user tile](#hide-user-tile)|✅|❌|
 
-[!INCLUDE [hide-signout-button](includes/hide-signout-button.md)]
+[!INCLUDE [hide-change-account-settings](includes/hide-change-account-settings.md)]
+[!INCLUDE [hide-lock](includes/hide-lock.md)]
+[!INCLUDE [hide-signout](includes/hide-signout.md)]
+[!INCLUDE [hide-switch-user](includes/hide-switch-account.md)]
+[!INCLUDE [hide-switch-user](includes/hide-user-tile.md)]
 
 #### [:::image type="icon" source="../images/icons/folder.svg"::: **Pinned folders**](#tab/folders)
 
