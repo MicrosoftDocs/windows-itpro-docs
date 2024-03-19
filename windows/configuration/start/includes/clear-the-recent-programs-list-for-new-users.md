@@ -12,4 +12,4 @@ If you enable this policy setting, the recent programs list in the start menu is
 |  | Path |
 |--|--|
 | **CSP** | ./Device/Vendor/MSFT/[Setting]() |
-| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Clear the recent programs list for new users** |

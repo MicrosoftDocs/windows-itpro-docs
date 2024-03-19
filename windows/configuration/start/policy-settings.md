@@ -57,10 +57,9 @@ The following table lists the policies that control the Start menu layout. Selec
 |[Hide **Recently Added** apps](#hide-recently-added-apps)|✅|✅|
 |[Hide frequently used apps](#hide-frequently-used-apps)|✅|✅|
 |[Hide most used lists](#hide-most-used-lists)|✅|✅|
-|[Hide recent jumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists)|✅||
+|[Hide recent jumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists)|✅❌|
 |[Hide recommended personalized sites](#hide-recommended-personalized-sites)|✅|✅|
 |[Hide recommended section](#hide-recommended-section)|✅|✅|
-|[Import Edge assets](/windows/client-management/mdm/policy-csp-start#importedgeassets)|✅|❌|
 |[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
 |[Prevent users from customizing their Start](#prevent-users-from-customizing-their-start)|❌|✅|
 |[Prevent users from uninstalling applications from Start](#prevent-users-from-uninstalling-applications-from-start)|❌|✅|

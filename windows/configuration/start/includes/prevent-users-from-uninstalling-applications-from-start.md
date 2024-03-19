@@ -12,4 +12,4 @@ If you enable this setting, users can't uninstall apps from Start. If you disabl
 |  | Path |
 |--|--|
 | **CSP** | Not available. |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Prevent users from uninstalling applications from Start**|
