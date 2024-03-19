@@ -5,7 +5,7 @@ ms.date: 03/18/2024
 ms.topic: include
 ---
 
-### Don't keep history of recently opened documents
+### Hide recent jumplists
 
 Prevents the operating system and installed programs from creating and displaying shortcuts to recently opened documents.
 
@@ -20,5 +20,6 @@ If you enable this setting but don't enable the "Remove Recent Items menu from S
 
 |  | Path |
 |--|--|
-| **CSP** | Not available. |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Do not keep history of recently opened documents**|
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists)<br><br>`./User/Vendor/MSFT/Policy/Config/Start/`[HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists) |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Do not keep history of recently opened documents**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Do not keep history of recently opened documents**|
+

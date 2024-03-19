@@ -15,10 +15,11 @@ This reference article provides a comprehensive list of policy settings for Star
 :::column span="2":::
 The list of settings is sorted alphabetically and organized in four categories:
 
-1. **Start layout**: settings to control the Start menu layout
+1. **Start layout**: settings to control the Start menu layout and its behavior
+1. **All apps options**: settings to control the All apps list
 1. **User options**: settings to control the options exposed when selecting the user icon
 1. **Pinned folders**: settings to control the folders pinned for quick access
-1. **Power options**: settings to control the options exposed when selecting the power icon
+1. **Power options**: settings to control the options exposed when selecting the power button
 
 :::column-end:::
 :::column span="2":::
@@ -37,7 +38,7 @@ For information about how to configure these settings, see [Configure the Start 
 
 Select one of the tabs to see the list of available settings:
 
-#### [:::image type="icon" source="../images/icons/start.svg"::: **Start layout**](#tab/start)
+#### [:::image type="icon" source="../images/icons/start.svg"::: **Pinned**](#tab/start)
 
 The following table lists the policies that control the Start menu layout. Select the policy name for more details.
 
@@ -45,21 +46,43 @@ The following table lists the policies that control the Start menu layout. Selec
 |Policy name| CSP | GPO |
 |-|-|-|
 |[Clear history of recently opened documents on exit](#clear-history-of-recently-opened-documents-on-exit)|❌|✅|
-|[Clear the recent programs list for new users](#clear-the-recent-programs-list-for-new-users)|❌|✅|
 |[Configure Start pins](/windows/client-management/mdm/policy-csp-start#configurestartpins)|✅|❌|
 |[Disable context menus](#disable-context-menus)|✅|✅|
-|[Disable editing quick settings](#disable-editing-quick-settings)|✅|✅|
 |[Disable search](#disable-search)|✅|✅|
-|[Do not keep history of recently opened documents](#do-not-keep-history-of-recently-opened-documents)|❌|✅|
-|[Do not use the search-based method when resolving shell shortcuts](#do-not-use-the-search-based-method-when-resolving-shell-shortcuts)|❌|✅|
-|[Do not use the tracking-based method when resolving shell shortcuts](#do-not-use-the-tracking-based-method-when-resolving-shell-shortcuts)|❌|✅|
-|[Hide **All Programs** list](#hide-all-programs-list)|✅|✅|
-|[Hide **Recently Added** apps](#hide-recently-added-apps)|✅|✅|
+|[Don't use the search-based method when resolving shell shortcuts](#dont-use-the-search-based-method-when-resolving-shell-shortcuts)|❌|✅|
+|[Don't use the tracking-based method when resolving shell shortcuts](#dont-use-the-tracking-based-method-when-resolving-shell-shortcuts)|❌|✅|
 |[Hide frequently used apps](#hide-frequently-used-apps)|✅|✅|
-|[Hide most used lists](#hide-most-used-lists)|✅|✅|
-|[Hide recent jumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists)|✅❌|
+|[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
+|[Prevent users from customizing their Start](#prevent-users-from-customizing-their-start)|❌|✅|
+|[Prevent users from uninstalling applications from Start](#prevent-users-from-uninstalling-applications-from-start)|❌|✅|
+|[Remove common program groups](#remove-common-program-groups)|❌|✅|
+|[Show "Run as different user" command](#show-run-as-different-user-command)|❌|✅|
+
+### Recommended area
+
+|Policy name| CSP | GPO |
+|-|-|-|
+|[Clear history of recently opened documents on exit](#clear-history-of-recently-opened-documents-on-exit)|❌|✅|
+|[Hide recently added apps](#hiderecentlyaddedapps)|✅|✅|
+|[Hide recent jumplists](#hiderecentjumplists)|✅|✅|
 |[Hide recommended personalized sites](#hide-recommended-personalized-sites)|✅|✅|
 |[Hide recommended section](#hide-recommended-section)|✅|✅|
+
+::: zone-end
+
+::: zone pivot="windows-10"
+|Policy name| CSP | GPO |
+|-|-|-|
+|[Clear history of recently opened documents on exit](#clear-history-of-recently-opened-documents-on-exit)|❌|✅|
+|[Clear tile notifications during log on](#clear-tile-notifications-during-log-on)|❌|✅|
+|[Configure Start layout](#configure-start-layout)|✅|✅|
+|[Disable context menus](#disable-context-menus)|✅|✅|
+|[Don't use the search-based method when resolving shell shortcuts](#dont-use-the-search-based-method-when-resolving-shell-shortcuts)|❌|✅|
+|[Don't use the tracking-based method when resolving shell shortcuts](#dont-use-the-tracking-based-method-when-resolving-shell-shortcuts)|❌|✅|
+|[Force Start size](#force-start-size)|✅|✅|
+|[Hide frequently used apps](#hide-frequently-used-apps)|✅|✅|
+|[Hide recently added apps](#hiderecentlyaddedapps)|✅|✅|
+|[Import Edge assets](/windows/client-management/mdm/policy-csp-start#importedgeassets)|✅|❌|
 |[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
 |[Prevent users from customizing their Start](#prevent-users-from-customizing-their-start)|❌|✅|
 |[Prevent users from uninstalling applications from Start](#prevent-users-from-uninstalling-applications-from-start)|❌|✅|
@@ -67,33 +90,7 @@ The following table lists the policies that control the Start menu layout. Selec
 |[Show "Run as different user" command](#show-run-as-different-user-command)|❌|✅|
 ::: zone-end
 
-::: zone pivot="windows-10"
-|Policy name| CSP | GPO |
-|-|-|-|
-|[Clear history of recently opened documents on exit](#clear-history-of-recently-opened-documents-on-exit)|❌|✅|
-|[Clear the recent programs list for new users](#clear-the-recent-programs-list-for-new-users)|❌|✅|
-|[Clear tile notifications during log on](#clear-tile-notifications-during-log-on)|❌|✅|
-|[Configure Start layout](#configure-start-layout)|✅|✅|
-|[Disable context menus](#disable-context-menus)|✅|✅|
-|[Do not keep history of recently opened documents](#do-not-keep-history-of-recently-opened-documents)|❌|✅|
-|[Do not use the search-based method when resolving shell shortcuts](#do-not-use-the-search-based-method-when-resolving-shell-shortcuts)|❌|✅|
-|[Do not use the tracking-based method when resolving shell shortcuts](#do-not-use-the-tracking-based-method-when-resolving-shell-shortcuts)|❌|✅|
-|[Force Start size](#force-start-size)|✅|✅|
-|[Hide **All Programs** list](#hide-all-programs)|✅|✅|
-|[Hide **Recently Added** apps](#hide-recently-added-apps)|✅|✅|
-|[Hide frequently used apps](#hide-frequently-used-apps)|✅|✅|
-|[Hide most used lists](#hide-most-used-lists)|✅|✅|
-|[Hide recent jumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists)|✅||
-|[Import Edge assets](/windows/client-management/mdm/policy-csp-start#importedgeassets)|✅|❌|
-|[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
-|[Prevent users from customizing their Start](#prevent-users-from-customizing-their-start)|❌|✅|
-|[Prevent users from uninstalling applications from Start](#prevent-users-from-uninstalling-applications-from-start)|❌|✅|
-|[Remove common program groups](#remove-common-program-groups)|❌|✅|
-|[Show "Run as different user" command on Start](#show-run-as-different-user-command-on-start)|❌|✅|
-::: zone-end
-
 [!INCLUDE [clear-history-of-recently-opened-documents-on-exit](includes/clear-history-of-recently-opened-documents-on-exit.md)]
-[!INCLUDE [clear-the-recent-programs-list-for-new-users](includes/clear-the-recent-programs-list-for-new-users.md)]
 
 ::: zone pivot="windows-10"
 [!INCLUDE [clear-tile-notifications-during-log-on](includes/clear-tile-notifications-during-log-on.md)]
@@ -103,7 +100,6 @@ The following table lists the policies that control the Start menu layout. Selec
 [!INCLUDE [disable-context-menus](includes/disable-context-menus.md)]
 
 ::: zone pivot="windows-11"
-[!INCLUDE [disable-editing-quick-settings](includes/disable-editing-quick-settings.md)]
 [!INCLUDE [disable-search](includes/disable-search.md)]
 ::: zone-end
 
@@ -115,10 +111,8 @@ The following table lists the policies that control the Start menu layout. Selec
 [!INCLUDE [force-start-size](includes/force-start-size.md)]
 ::: zone-end
 
-[!INCLUDE [hide-all-programs-list](includes/hide-all-programs-list.md)]
-[!INCLUDE [hide-frequently-used-apps](includes/hide-frequently-used-apps.md)]
-[!INCLUDE [hide-most-used-lists](includes/hide-most-used-lists.md)]
 [!INCLUDE [hide-recently-added-apps](includes/hide-recently-added-apps.md)]
+[!INCLUDE [hide-recent-jumplists](includes/hide-recent-jumplists.md)]
 
 ::: zone pivot="windows-11"
 [!INCLUDE [hide-recommended-personalized-sites](includes/hide-recommended-personalized-sites.md)]
@@ -131,13 +125,27 @@ The following table lists the policies that control the Start menu layout. Selec
 [!INCLUDE [remove-common-program-groups](includes/remove-common-program-groups.md)]
 [!INCLUDE [show-run-as-different-user-command](includes/show-run-as-different-user-command.md)]
 
+#### [:::image type="icon" source="../images/icons/allapps.svg"::: **All apps**](#tab/allapps)
+
+|Policy name| CSP | GPO |
+|-|-|-|
+|[Clear the recent programs list for new users](#clear-the-recent-programs-list-for-new-users)|❌|✅|
+|[Hide **All Programs** list](#hide-all-programs-list)|✅|✅|
+|[Hide frequently used apps](#hide-frequently-used-apps)|✅|✅|
+|[Hide most used lists](#hide-most-used-lists)|✅|✅|
+
+[!INCLUDE [clear-the-recent-programs-list-for-new-users](includes/clear-the-recent-programs-list-for-new-users.md)]
+[!INCLUDE [hide-all-programs-list](includes/hide-all-programs-list.md)]
+[!INCLUDE [hide-frequently-used-apps](includes/hide-frequently-used-apps.md)]
+[!INCLUDE [hide-most-used-lists](includes/hide-most-used-lists.md)]
+
 #### [:::image type="icon" source="../images/icons/user.svg"::: **User options**](#tab/user)
 
 |Policy name| CSP | GPO |
 |-|-|-|
 |[Hide **Change sccount settings** button](/windows/client-management/mdm/policy-csp-start#hidechangeaccountsettings)|✅|❌|
 |[Hide **Lock** button](/windows/client-management/mdm/policy-csp-start#hidelock)|✅|❌|
-|[Hide **Sign out** button](#hide-signout-button)|✅|✅|
+|[Hide **Sign out** button](#hide-sign-out-button)|✅|✅|
 |[Hide **Switch User** button](/windows/client-management/mdm/policy-csp-start#hideswitchaccount)|✅|❌|
 |[Hide user tile](/windows/client-management/mdm/policy-csp-start#hideusertile)|✅|❌|
 
@@ -167,19 +175,11 @@ The following table lists the policies that control the Start menu layout. Selec
 |[Hide **Restart** button](/windows/client-management/mdm/policy-csp-start#hiderestart)|✅|❌|
 |[Hide **Shutdown** button](/windows/client-management/mdm/policy-csp-start#hideshutdown)|✅|❌|
 |[Hide **Sleep** button](/windows/client-management/mdm/policy-csp-start#hidesleep)|✅|❌|
-|[Remove and prevent access to the shut down restart sleep and hibernate commands](#remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands-um)|❌|✅|
+|[Remove and prevent access to the shut down restart sleep and hibernate commands](#remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands)|❌|✅|
 
 [!INCLUDE [remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands-um](includes/remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands-um.md)]
 
 ---
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> Review the .
->
->
-> [guide >](guide.md)
 
 <!--links-->
 
@@ -197,4 +197,16 @@ The following table lists the policies that control the Start menu layout. Selec
 [SimplifyQuickSettings](/windows/client-management/mdm/policy-csp-start#simplifyquicksettings)
 |[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
 
-###
+[!INCLUDE [disable-editing-quick-settings](includes/disable-editing-quick-settings.md)]
+
+::: zone pivot="windows-11"
+|Policy name| CSP | GPO |
+|-|-|-|
+|[Disable editing quick settings](#disable-editing-quick-settings)|✅|✅|
+::: zone-end
+
+::: zone pivot="windows-10"
+|Policy name| CSP | GPO |
+|-|-|-|
+
+::: zone-end

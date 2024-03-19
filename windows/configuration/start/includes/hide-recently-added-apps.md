@@ -13,5 +13,5 @@ If you enable this policy, the Start menu doesn't display the **Recently added**
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[HideRecentlyAddedApps](/windows/client-management/mdm/policy-csp-start#hiderecentlyaddedapps)<br><br>`./User/Vendor/MSFT/Policy/Config/Start/`[HideRecentlyAddedApps](/windows/client-management/mdm/policy-csp-start#hiderecentlyaddedapps)` |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[HideRecentlyAddedApps](/windows/client-management/mdm/policy-csp-start#hiderecentlyaddedapps)<br><br>`./User/Vendor/MSFT/Policy/Config/Start/`[HideRecentlyAddedApps](/windows/client-management/mdm/policy-csp-start#hiderecentlyaddedapps) |
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove "Recently added" list from Start Menu** |

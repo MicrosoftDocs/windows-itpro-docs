@@ -232,9 +232,9 @@ Either don't use the node or leave it empty.
 
 For a restricted user experience profile (`AllAppList`), you must define the Start layout. The Start layout contains a list of applications that are pinned to the Start menu. You can choose to pin all the allowed applications to the Start menu, or a subset. The easiest way to create a customized Start layout is to configure the Start menu on a test device and then export the layout.
 
-::: zone pivot="windows-10"
-
 To learn how to customize and export a Start menu configuration, see [Customize the Start menu](../start/customize-and-export-start-layout.md).
+
+::: zone pivot="windows-10"
 
 With the exported Start menu configuration, use the `StartLayout` element and add the content of the XML file. For example:
 
@@ -277,8 +277,6 @@ Example with some apps pinned:
 ::: zone-end
 
 ::: zone pivot="windows-11"
-
-To learn how to customize and export a Start menu configuration, see [Customize the Start menu](../start/customize-and-export-start-layout.md).
 
 With the exported Start menu configuration, use the `v5:StartPins` element and add the content of the exported JSON file. For example:
 

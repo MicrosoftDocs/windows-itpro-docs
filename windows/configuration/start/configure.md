@@ -9,6 +9,7 @@ ms.collection:
  - tier1
 ---
 
+# Customize and export the Start layout
 
 <!-->
 To configure the Start menu, you can use one of the following options:
@@ -25,7 +26,7 @@ Use a standard, customized Start layout on devices that are common to multiple u
 
 -->
 
-# Customize and export the Start layout
+
 
 This article describes how to customize the Windows Start menu, export its configuration, and deploy the customization to other devices. The article is intended for IT professionals who manage devices in a business or educational environment.\
 If you are looking for OEM information, see the article [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu)

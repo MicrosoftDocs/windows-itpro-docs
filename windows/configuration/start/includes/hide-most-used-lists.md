@@ -15,9 +15,9 @@ If you enable this policy setting, you can configure Start menu to show or hide 
 
 > [!NOTE]
 >
-> This policy setting has the precedence over the *Remove frequent programs list from the Start Menu* policy setting.
+> This policy setting has the precedence over the *Hide frequently used apps* policy setting.
 
 |  | Path |
 |--|--|
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)<br><br>`./User/Vendor/MSFT/Policy/Config/Start/`[ShowOrHideMostUsedApps](/windows/client-management/mdm/policy-csp-start#showorhidemostusedapps)|
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Show or hide "Most used" list from Start menu** |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Show or hide "Most used" list from Start menu**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Show or hide "Most used" list from Start menu** |
