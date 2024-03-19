@@ -9,7 +9,7 @@ ms.topic: include
 
 With this policy setting you can remove the **Sign out** item from the Start menu and prevents users from restoring it:
 
-- If you enable this policy setting, the **Sign out** item does not appear in the Start menu
+- If you enable this policy setting, the **Sign out** item doesn't appear in the Start menu
 - If you disable or don't configure this policy setting, users can use the **Sign out** item in the Start menu
 
 > [!NOTE]

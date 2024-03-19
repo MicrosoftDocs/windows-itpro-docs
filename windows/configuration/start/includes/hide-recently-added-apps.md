@@ -7,7 +7,9 @@ ms.topic: include
 
 ### Hide recently added apps
 
-With this policy setting you can prevent the Start menu from displaying a list of recently installed applications. If you enable this policy, the Start menu will doesn't display the **Recently added** list. The corresponding setting will also be disabled in Settings.
+With this policy setting, you can prevent the Start menu from displaying a list of recently installed applications.
+
+If you enable this policy, the Start menu doesn't display the **Recently added** list. The corresponding setting is also disabled in Settings.
 
 |  | Path |
 |--|--|

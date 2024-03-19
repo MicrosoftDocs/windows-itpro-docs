@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Disable search
 
-When you enable this policy setting, the Search UI is disabled along with all its entry points, such as keyboard shortcuts, touchpad gestures, and type-to-search in the Start menu. The Start menu's search box and Search Taskbar button are hidden. If you disable or don't configure this policy setting, the user can open the Search UI and its different entry points are available.
+When you enable this policy setting, the Search UI and all its entry points are disabled, such as keyboard shortcuts, touchpad gestures, and type-to-search in the Start menu. The Start menu's search box and Search Taskbar buttons are hidden. If you disable or don't configure this policy setting, users can open the Search UI and its different entry points are available.
 
 
 |  | Path |

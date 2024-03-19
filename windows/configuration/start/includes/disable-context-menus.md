@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Disable context menus
 
-This policy allows you to prevent users from being able to open context menus in the Start menu. If you enable this policy, then invocations of context menus within the Start menu is ignored.
+With this policy setting you can prevent users from opening the context menus in the Start menu. If you enable this policy, then invocations of context menus within the Start menu is ignored.
 
 |  | Path |
 |--|--|

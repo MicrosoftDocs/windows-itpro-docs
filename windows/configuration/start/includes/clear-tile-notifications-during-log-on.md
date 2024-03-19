@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Clear tile notifications during log on
 
-If you enable this setting, the system deletes tile notifications when the user logs on. As a result, the Tiles in the start view will always show their default content when the user logs on. In addition, any cached versions of these notifications will be cleared when the user logs on. If you disable or do not configure this setting, the system retains notifications, and when a user logs on, the tiles appear just as they did when the user logged off, including the history of previous notifications for each tile. This setting does not prevent new notifications from appearing. See the "Turn off Application Notifications" setting to prevent new notifications.
+If you enable this policy setting, the system deletes tile notifications when the user signs on. As a result, the tiles in the Start menu always show their default content when a user signs in. Any cached versions of the notifications are cleared when the user signs in. If you disable or don't configure this setting, the system retains notifications, and when a user signs in, the tiles appear just as they did when the user signed out, including the history of previous notifications for each tile. This policy setting doesn't prevent new notifications from appearing.
 
 |  | Path |
 |--|--|

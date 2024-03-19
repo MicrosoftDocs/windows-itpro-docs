@@ -9,8 +9,8 @@ ms.topic: include
 
 With this policy setting you can prevent changes to Taskbar and Start menu settings:
 
-- If you enable this policy setting, users can't open the Taskbar or Start properties dialog box. If a user right-clicks the Taskbar or Start and then selects Properties, a message appears explaining that a setting prevents the action.
-- If you disable or don'o't configure this policy setting, the Taskbar and Start Menu items are available from Settings on the Start menu
+- If you enable this policy setting, users can't open the Taskbar or Start properties dialog box. If a user right-clicks the Taskbar or Start and then selects Properties, a message appears explaining that a setting prevents the action
+- If you disable or don't configure this policy setting, the Taskbar and Start Menu items are available from Settings on the Start menu
 
 |  | Path |
 |--|--|

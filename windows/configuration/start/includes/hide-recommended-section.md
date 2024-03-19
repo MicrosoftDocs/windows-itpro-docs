@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Hide recommended section
 
-This policy setting allows you to prevent the Start menu from displaying a list of recommended applications and files. If you enable this policy setting, the Start menu doesn't show the section containing a list of recommended files and apps.
+This policy setting prevents the Start menu from displaying a list of recommended applications and files. If you enable this policy setting, the Start menu doesn't show the section containing a list of recommended files and apps.
 
 |  | Path |
 |--|--|
