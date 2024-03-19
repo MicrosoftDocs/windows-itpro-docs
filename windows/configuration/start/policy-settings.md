@@ -53,7 +53,7 @@ Select one of the tabs to see the list of available settings:
 |[Remove common program groups](#remove-common-program-groups)|❌|✅|
 |[Show **Run as different user** command](#show-run-as-different-user-command)|❌|✅|
 
-### Recommended area
+### Recommended section
 
 |Policy name| CSP | GPO |
 |-|-|-|
