@@ -81,5 +81,14 @@ __Hardware recommendation__
 
 Below are the hardware recommendations based on traffic ranges.
 
-![mcc-isp-hardwarerec](media/mcc-isp-overview/mcc-isp-hardwarerec1.png)
+
+|Microsoft Connected Cache Machine Class | Scenario |Traffic Range|VM/Hardware Recommendation|
+| -------- | -------- | -------- | -------- |
+| Edge   | For smaller ISPs or remote sites part of a larger network. |< 5 Gbps Peak|VM Up to 8 Cores</br></br>Up to 16 GB Memory</br></br>1 500 GB SSD|
+| Metro POP   | For ISPs, IXs, or Transit Providers serving a moderate amount of traffic in a network that may require one of more cache nodes.   |5 - 20 Gbps Peak|VM or Hardware</br></br>16 Cores*</br></br>32 GB Memory</br></br>2 - 3 500 GB SSDs each|
+|Data Center|For ISPs, IXs, or Transit Providers serving a large amount traffic daily and may require deployment of multiple cache nodes.|20 - 40 Gbps Peak|Hardware (see sample spec below)</br></br>32 or More Cores*</br></br>64 or more GB Memory</br></br>4 - 6 500 - 1 TB SSDs** each|
+
+*Requires systems (chipset, CPU, motherboard) with PCIe version 3 or higher
+
+**Drive speeds are important and to achieve higher egress we recommend SSD NVMe in m.2 PCIe slot (version 4 or higher)
 
