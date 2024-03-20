@@ -9,7 +9,9 @@ zone_pivot_groups: windows-versions-11-10
 
 # Start menu policy settings
 
-This reference article outlines the policy settings available for customizing the Start menu experience. The settings are categorized and presented in alphabetical order to facilitate navigation and configuration.
+This reference article outlines the policy settings available for customizing the Start menu experience, using Configuration Service Provider (CSP) or group policy (GPO). For information about how to configure these settings, see [Configure the Start menu](index.md).
+
+The settings are categorized and presented in alphabetical order to facilitate navigation and configuration.
 
 :::row:::
 :::column span="2":::
@@ -32,8 +34,6 @@ This reference article outlines the policy settings available for customizing th
 
     :::column-end:::
 :::row-end:::
-
-For information about how to configure these settings, see [Configure the Start menu](index.md).
 
 Select one of the tabs to see the list of available settings:
 
@@ -190,33 +190,6 @@ Select one of the tabs to see the list of available settings:
 [!INCLUDE [hide-shut-down](includes/hide-shut-down.md)]
 [!INCLUDE [hide-sleep](includes/hide-sleep.md)]
 
-[!INCLUDE [remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands-um](includes/remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands-um.md)]
+[!INCLUDE [remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands](includes/remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands.md)]
 
 ---
-
-
-
-<!--
-
-## Taskbar
-
-[DisableControlCenter](/windows/client-management/mdm/policy-csp-start#disablecontrolcenter)
-[HidePeopleBar](/windows/client-management/mdm/policy-csp-start#hidepeoplebar)
-[HideTaskViewButton](/windows/client-management/mdm/policy-csp-start#hidetaskviewbutton)
-[NoPinningToTaskbar](/windows/client-management/mdm/policy-csp-start#nopinningtotaskbar)
-[SimplifyQuickSettings](/windows/client-management/mdm/policy-csp-start#simplifyquicksettings)
-|[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
-
-[!INCLUDE [disable-editing-quick-settings](includes/disable-editing-quick-settings.md)]
-
-::: zone pivot="windows-11"
-|Policy name| CSP | GPO |
-|-|-|-|
-|[Disable editing quick settings](#disable-editing-quick-settings)|✅|✅|
-::: zone-end
-
-::: zone pivot="windows-10"
-|Policy name| CSP | GPO |
-|-|-|-|
-
-::: zone-end

@@ -4,6 +4,7 @@ description: Learn how to configure the Windows Start menu to provide quick acce
 ms.topic: overview
 ms.date: 03/04/2024
 zone_pivot_groups: windows-versions-11-10
+zone_pivot_group_filename: my-zone-pivot-groups.json
 appliesto:
 ---
 

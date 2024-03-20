@@ -1,29 +1,24 @@
 ---
-title: Customize and export the Start layout
-description: Learn how to configure the Windows Start menu to provide quick access to the tools and applications that users need most.
+title: Customize the Start layout
+description: Learn how to customize the Windows Start layout, export its configuration, and deploy the customization to other devices.
 ms.topic: how-to
 ms.date: 03/04/2024
 zone_pivot_groups: windows-versions-11-10
 appliesto:
 ---
 
-# Customize and export the Start layout
+# Customize the Start layout
+
+Implementing a customized Start layout across your organization's devices empowers administrators with direct control over the Start menu configuration. With this capability you can specify a tailored set of pinned applications, arranged according to preference. Utilize this feature to strategically pin desired apps, eliminate default pins, and organize the application display to align with operational requirements.
 
 This article describes how to customize the Start layout, export its configuration, and deploy the customization to other devices.
 
 > [!NOTE]
 > If you are looking for OEM information, see the article [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
 
-
-For example, you can override the default set of apps with your own a set of pinned apps, and in the order you choose. As an administrator, use this feature to pin apps, remove default pinned apps, order the apps, and more.
-
-To add apps you want pinned to the Start menu, you use a JSON file. In previous Windows versions, IT administrators used an XML file to customize the Start menu. The XML file isn't available on Windows 11 and later ***unless*** [you're an OEM](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
-
-When you customize the Start layout, you overwrite the entire full layout. Users can pin and unpin apps, and uninstall apps from Start. When a user signs in or Explorer restarts, Windows reapplies the MDM policy. This action restores the specified layout and doesn't retain any user changes.
-
 ## Customization process
 
-To customize the Windows Start menu and deploy its configuration to other devices, you can follow these steps:
+To customize the Windows Start layout and deploy its configuration to other devices, follow these steps:
 
 1. From a reference device, configure the Start layout to meet your requirements
 1. Export the Start layout configuration to a configuration file
@@ -237,7 +232,7 @@ Three features enable Start and taskbar layout control:
 
 - In Windows Configuration Designer, you use the **Policies/Start/StartLayout** setting to provide the contents of the .xml file that defines the Start and taskbar layout.
 
-## Prepare the Start layout XML file
+### Prepare the Start layout XML file
 
 The **Export-StartLayout** cmdlet produces an XML file. Because Windows Configuration Designer produces a customizations.xml file that contains the configuration settings, adding the Start layout section to the customizations.xml file directly would result in an XML file embedded in an XML file. Before you add the Start layout section to the customizations.xml file, you must replace the markup characters in your layout.xml with escape characters.
 
@@ -280,6 +275,7 @@ After the settings are applied, sign in to the device. You'll see the Start layo
 ::: zone pivot="windows-11"
 :::image type="content" source="images/windows-11.png" alt-text="Screenshot of the Windows 11 Start menu." border="false":::
 
+When you customize the Start layout, you overwrite the entire layout. Users can pin and unpin apps, and uninstall apps from Start. When a user signs in again, the Start layout is reapplied, without retaining any user changes.
 ::: zone-end
 
 ::: zone pivot="windows-10"
@@ -297,3 +293,8 @@ If your Start layout customization isn't applied as you expect, open the **Event
 <!--links-->
 
 [WIN-1]: /windows/client-management/mdm/policy-csp-start
+
+
+<!--
+
+each single backslash character \ need to be escaped as \\ per JSON syntax>
