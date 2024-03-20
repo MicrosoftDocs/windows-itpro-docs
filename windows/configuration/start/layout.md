@@ -78,6 +78,10 @@ Here you can find an example of Start layout that you can use as a reference:
 > [!IMPORTANT]
 > The JSON file can be applied to devices using the [Start layout policy CSP](policy-settings.md#start-layout) only. It's not possible to apply the JSON file using group policy.
 
+[!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
+
+#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
+
 [!INCLUDE [intune-settings-catalog-1](../../../includes/configure/intune-settings-catalog-1.md)]
 
 | Category | Setting name | Value |
@@ -93,6 +97,10 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 |--|
 | - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start?WT.mc_id=Portal-Microsoft_Intune_Workflows#configurestartpins)<br>- **String:** <br>- **Value:** content of the JSON file |
 | - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start?WT.mc_id=Portal-Microsoft_Intune_Workflows#configurestartpins)<br>- **Data type:** <br>- **Value:** content of the JSON file |
+
+#### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+
+---
 
 ::: zone-end
 
@@ -228,9 +236,7 @@ Three features enable Start and taskbar layout control:
     > [!NOTE]
     > To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
 
-- [You can modify the Start .xml file](../taskbar/configure.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration.
 
-- In Windows Configuration Designer, you use the **Policies/Start/StartLayout** setting to provide the contents of the .xml file that defines the Start and taskbar layout.
 
 ### Prepare the Start layout XML file
 
@@ -275,11 +281,16 @@ After the settings are applied, sign in to the device. You'll see the Start layo
 ::: zone pivot="windows-11"
 :::image type="content" source="images/windows-11.png" alt-text="Screenshot of the Windows 11 Start menu." border="false":::
 
-When you customize the Start layout, you overwrite the entire layout. Users can pin and unpin apps, and uninstall apps from Start. When a user signs in again, the Start layout is reapplied, without retaining any user changes.
+> [!NOTE]
+> When you configure the Start layout with policy settings, you overwrite the entire layout. Users can change the order of the pinned elements, pin, or unpin itmes. When a user signs in again, the Start layout specified in the policy setting is reapplied, without retaining any user changes.
+
 ::: zone-end
 
 ::: zone pivot="windows-10"
 :::image type="content" source="images/windows-10.png" alt-text="Screenshot of the Windows 10 Start menu." border="false":::
+
+> [!NOTE]
+> When you apply the policy setting, it results in a complete replacement of the existing layout, unless a partial Start layout is configured. This means users can't modify the Start layout once it's set by policy settings. If you want to allow users to modify the layout, use a partial Start layout instead.
 
 ::: zone-end
 
@@ -298,3 +309,5 @@ If your Start layout customization isn't applied as you expect, open the **Event
 <!--
 
 each single backslash character \ need to be escaped as \\ per JSON syntax>
+
+- [You can modify the Start .xml file](../taskbar/configure.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration.

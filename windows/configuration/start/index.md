@@ -4,15 +4,10 @@ description: Learn how to configure the Windows Start menu to provide quick acce
 ms.topic: overview
 ms.date: 03/04/2024
 zone_pivot_groups: windows-versions-11-10
-zone_pivot_group_filename: my-zone-pivot-groups.json
 appliesto:
 ---
 
 # Configure the Start menu
-
-::: zone pivot="windows-12"
-    :::image type="content" source="./images/windows-10-settings.png" alt-text="Sample start menu layout with its components highlighted." border="false" lightbox="./images/windows-10-settings.png":::
-::: zone-end
 
 The Windows Start menu is a pivotal element in the Windows operating system, serving as a central hub for launching applications and managing tasks. For organizations, the ability to configure the Start menu's behavior through policy settings can be highly beneficial, particularly in environments where certain roles or functions necessitate tailored access to applications and tools.
 
