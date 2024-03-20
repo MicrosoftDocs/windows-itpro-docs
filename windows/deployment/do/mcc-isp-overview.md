@@ -71,3 +71,15 @@ The following steps describe how MCC is provisioned and used:
 1. Subsequent requests from end-user devices for content will be served from cache.
 
 1. If the MCC node is unavailable, the client gets content from the CDN to ensure uninterrupted service for your subscribers.
+## __Are you already peering with 8075?__
+
+MCC complements peering by offloading static content that is served off of multiple CDNs such as Akamai, Lumen, Edgecast. Static content such as OS updates, Apps, Software installs etc. cannot be served via 8075. So, even if you are peering with Microsoft, you can benefit from installing MCC.
+
+## ![mcc-isp-peeringvsmcc](media/mcc-isp-overview/mcc-isp-peeringvsmcc.png)
+
+__Hardware recommendation__
+
+Below are the hardware recommendations based on traffic ranges.
+
+![mcc-isp-hardwarerec](media/mcc-isp-overview/mcc-isp-hardwarerec1.png)
+
