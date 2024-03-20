@@ -41,7 +41,7 @@ ms.date: 02/03/2023
 - [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](policy-csp-deliveryoptimization.md#dosethourstolimitbackgrounddownloadbandwidth) <sup>10</sup>
 - [Device/{TenantId}/Policies/EnableWindowsHelloProvisioningForSecurityKeys](passportforwork-csp.md#devicetenantidpoliciesenablewindowshelloprovisioningforsecuritykeys) <sup>12</sup>
 - [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs](policy-csp-deviceinstallation.md#allowinstallationofmatchingdeviceids) <sup>12</sup>
-- [DeviceInstallation/DeviceInstall_Removable_Deny](policy-csp-deviceinstallation.md#deviceinstall_removable_deny) <sup>12</sup>
+- [DeviceInstallation/DeviceInstall_Removable_Deny](policy-csp-admx-deviceinstallation.md#deviceinstall_removable_deny) <sup>12</sup>
 - [DeviceInstallation/EnableInstallationPolicyLayering](policy-csp-deviceinstallation.md#enableinstallationpolicylayering) <sup>12</sup>
 - [DeviceLock/AllowIdleReturnWithoutPassword](policy-csp-devicelock.md#allowidlereturnwithoutpassword)
 - [DeviceLock/AllowSimpleDevicePassword](policy-csp-devicelock.md#allowsimpledevicepassword)
@@ -101,9 +101,9 @@ ms.date: 02/03/2023
 - [Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccessgazeinput_forcedenytheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccessgazeinput_userincontroloftheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessLocation](policy-csp-privacy.md#letappsaccesslocation)
-- [Privacy/LetAppsAccessLocation_ForceAllowTheseApps](/windows/client-management/mdm/policy-csp-privacy.md#letappsaccesslocation_forceallowtheseapps) <sup>12</sup>
-- [Privacy/LetAppsAccessLocation_ForceDenyTheseApps](/windows/client-management/mdm/policy-csp-privacy.md#letappsaccesslocation_forcedenytheseapps) <sup>12</sup>
-- [Privacy/LetAppsAccessLocation_UserInControlOfTheseApps](/windows/client-management/mdm/policy-csp-privacy.md#letappsaccesslocation_userincontroloftheseapps) <sup>12</sup>
+- [Privacy/LetAppsAccessLocation_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccesslocation_forceallowtheseapps) <sup>12</sup>
+- [Privacy/LetAppsAccessLocation_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccesslocation_forcedenytheseapps) <sup>12</sup>
+- [Privacy/LetAppsAccessLocation_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccesslocation_userincontroloftheseapps) <sup>12</sup>
 - [Privacy/LetAppsAccessMicrophone](policy-csp-privacy.md#letappsaccessmicrophone)
 - [Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccessmicrophone_forceallowtheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccessmicrophone_forcedenytheseapps) <sup>8</sup>
@@ -123,8 +123,8 @@ ms.date: 02/03/2023
 - [System/AllowLocation](policy-csp-system.md#allowlocation)
 - [System/AllowStorageCard](policy-csp-system.md#allowstoragecard)
 - [System/AllowTelemetry](policy-csp-system.md#allowtelemetry)
-- [System/ConfigureTelemetryOptInSettingsUx](/windows/client-management/mdm/policy-csp-system.md#configuretelemetryoptinsettingsux) <sup>12</sup>
-- [System/DisableDeviceDelete](/windows/client-management/mdm/policy-csp-system.md#disabledevicedelete) <sup>12</sup>
+- [System/ConfigureTelemetryOptInSettingsUx](client-management/mdm/policy-csp-system.md#configuretelemetryoptinsettingsux) <sup>12</sup>
+- [System/DisableDeviceDelete](policy-csp-system.md#disabledevicedelete) <sup>12</sup>
 - [TimeLanguageSettings/ConfigureTimeZone](./policy-csp-timelanguagesettings.md#configuretimezone) <sup>9</sup>
 - [Update/ActiveHoursEnd](./policy-csp-update.md#activehoursend) <sup>9</sup>
 - [Update/ActiveHoursMaxRange](./policy-csp-update.md#activehoursmaxrange) <sup>9</sup>
