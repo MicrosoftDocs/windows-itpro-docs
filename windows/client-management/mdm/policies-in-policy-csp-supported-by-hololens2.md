@@ -123,7 +123,7 @@ ms.date: 02/03/2023
 - [System/AllowLocation](policy-csp-system.md#allowlocation)
 - [System/AllowStorageCard](policy-csp-system.md#allowstoragecard)
 - [System/AllowTelemetry](policy-csp-system.md#allowtelemetry)
-- [System/ConfigureTelemetryOptInSettingsUx](client-management/mdm/policy-csp-system.md#configuretelemetryoptinsettingsux) <sup>12</sup>
+- [System/ConfigureTelemetryOptInSettingsUx](policy-csp-system.md#configuretelemetryoptinsettingsux) <sup>12</sup>
 - [System/DisableDeviceDelete](policy-csp-system.md#disabledevicedelete) <sup>12</sup>
 - [TimeLanguageSettings/ConfigureTimeZone](./policy-csp-timelanguagesettings.md#configuretimezone) <sup>9</sup>
 - [Update/ActiveHoursEnd](./policy-csp-update.md#activehoursend) <sup>9</sup>
