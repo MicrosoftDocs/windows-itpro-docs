@@ -22,7 +22,7 @@ appliesto:
 
 > [!NOTE]
 >
-> This article is a 300 level article (moderate advanced). See [Resolve Windows upgrade errors](resolve-windows-upgrade-errors.md) for a full list of articles in this section.
+> The following is a level 300 (moderate advanced) topic. See [Resolve Windows upgrade errors](resolve-windows-upgrade-errors.md) for a full list of articles in this section.
 
 > [!div class="nextstepaction"]
 > [Download the latest version of SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142)
@@ -31,73 +31,58 @@ appliesto:
 
 > [!IMPORTANT]
 >
-> When SetupDiag is run manually, Microsoft recommends running the latest version of SetupDiag. The latest version is available via the following [download link](https://go.microsoft.com/fwlink/?linkid=870142). Running the latest version ensures the latest functionality and fixes known issues.
+> Microsoft recommends running the latest version of SetupDiag, available via the following [download link](https://go.microsoft.com/fwlink/?linkid=870142). Running the latest version ensures the latest functionality and fixes known issues.
 
-SetupDiag is a diagnostic tool that can be used to obtain details about why a Windows upgrade was unsuccessful.
+SetupDiag is a diagnostic tool that reveals details about why a Windows upgrade was unsuccessful. The tool examines Windows Setup log files to determine the root cause of a failure to upgrade a copy of Windows. SetupDiag can either run directly on the failed machine (online mode) or analyze the log files of the failed device on another machine (offline mode).
 
-SetupDiag works by examining Windows Setup log files. It attempts to parse these log files to determine the root cause of a failure to update or upgrade the computer to Windows. SetupDiag can be run on the computer that failed to update. The logs can also be exported from the computer to another location and then running SetupDiag in offline mode.
+SetupDiag is included with [Windows Setup](/windows-hardware/manufacture/desktop/deployment-troubleshooting-and-log-files#windows-setup-scenario) in all currently supported versions of Windows. During the upgrade process, Windows Setup extracts all its source files, including **SetupDiag.exe**, to the `%SystemDrive%\$Windows.~bt\Sources` directory. If there's an issue with the upgrade, SetupDiag automatically runs to determine the cause of the failure.
 
-SetupDiag is included with [Windows Setup](/windows-hardware/manufacture/desktop/deployment-troubleshooting-and-log-files#windows-setup-scenario) in all currently supported versions of Windows.
+Windows Setup runs SetupDiag with following [parameters](#parameters):
 
-During the upgrade process, Windows Setup extracts all its sources files, including **SetupDiag.exe**, to the **%SystemDrive%\$Windows.~bt\Sources** directory. If there's an issue with the upgrade, SetupDiag automatically runs to determine the cause of the failure.
-
-When run by Windows Setup, the following [parameters](#parameters) are used:
-
-- /ZipLogs:False
-- /Format:xml
-- /Output:%windir%\logs\SetupDiag\SetupDiagResults.xml
-- /RegPath:HKEY_LOCAL_MACHINE\SYSTEM\Setup\SetupDiag\Results
+- `/ZipLogs:False`
+- `/Format:xml`
+- `/Output:%windir%\logs\SetupDiag\SetupDiagResults.xml`
+- `/RegPath:HKEY_LOCAL_MACHINE\SYSTEM\Setup\SetupDiag\Results`
 
 The resulting SetupDiag analysis can be found at `%WinDir%\Logs\SetupDiag\SetupDiagResults.xml` and in the registry under `HKLM\SYSTEM\Setup\SetupDiag\Results`.
 
 > [!NOTE]
 >
-> When Windows Setup runs SetupDiag automatically, the registry path isn't the same as the default registry path when SetupDiag is run manually. When SetupDiag is run manually, and the `/RegPath` parameter isn't specified, data is stored in the registry at `HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag`.
+> When SetupDiag is run manually without a `/RegPath` parameter, it stores the analysis results in the Windows Registry under `HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag`.
 
 > [!IMPORTANT]
 >
-> When SetupDiag indicates that there were multiple failures, the last failure in the log file is typically the fatal error, not the first one.
+> When SetupDiag indicates multiple failures, the last failure in the log file is typically the fatal error, not the first one.
 
-If the upgrade process proceeds normally, the **Sources** directory including **SetupDiag.exe** is moved under **%SystemDrive%\Windows.Old** for cleanup. If the **Windows.old** directory is deleted later, **SetupDiag.exe** is also removed.
+If the upgrade process proceeds normally, the **Sources** directory including **SetupDiag.exe** is moved under `%SystemDrive%\Windows.Old` for cleanup. If the **Windows.old** directory is deleted later, **SetupDiag.exe** is also removed.
 
 ## Requirements
 
-1. The destination version of Windows must be a currently supported version of Windows. The originally installed version of Windows can be a version of Windows that's out of support as long as:
+1. The upgrade destination (i.e., the version to which you wish to upgrade) must be a supported version of Windows.
 
-    - The destination version of Windows is a currently supported version of Windows.
-    - Upgrade to the destination version of Windows is supported from the original installed version of Windows.
+1. The base OS could be out of support, but the upgrade path to desired version must be supported.
 
 1. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?linkid=863265) or newer must be installed. To determine which version of .NET is preinstalled with a specific version of Windows, see [.NET Framework system requirements: Supported client operating systems](/dotnet/framework/get-started/system-requirements#supported-client-operating-systems). To determine which version of .NET is currently installed, see [How to: Determine Which .NET Framework Versions Are Installed](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed).
 
-   The following command-line query can be used to display the currently installed version of .NET:
-
-    ```cmd
-    reg.exe query "HKLM\SOFTWARE\Microsoft\Net Framework Setup\NDP\v4" /s
-    ```
-
-    As long as at least the required version of .NET is installed, no additional action is required, including if a newer version is installed.
-
 ## Using SetupDiag
 
-To quickly use SetupDiag on the current computer:
+To use SetupDiag:
 
 1. Verify that the system meets the [requirements](#requirements).
 
 1. [Download SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142).
 
-1. If the web browser asks what to do with the file, choose **Save**. By default, the file is saved to the **Downloads** folder. If desired, the file can also be saved to a different location by using **Save As**.
+    If the web browser asks what to do with the file, choose **Save**. By default, the file is saved to the **Downloads** folder. If desired, the file can be saved to a different location using **Save As**.
 
 1. When SetupDiag finishes downloading, open the folder where the file was downloaded. By default, this folder is the **Downloads** folder, which is displayed in File Explorer under **Quick access** in the left navigation pane.
 
-1. Double-click the **SetupDiag** file to run it. Select **Yes** if asked to approve running the program.
+1. Double-click the **SetupDiag** file to run it. Select **Yes** if asked to approve running the program. A window opens while SetupDiag diagnoses the computer. Wait for this process to finish.
 
- Double-clicking the file to run it automatically closes the command window when SetupDiag completes its analysis. To instead keep the window open to review the messages SetupDiag generates, run the program by typing **SetupDiag** at the command prompt instead of double-clicking it. When running from a command prompt, make sure to change directories to where SetupDiag is located.
+    Double-clicking the file to run it automatically closes the command window when SetupDiag completes its analysis. To keep the window open to review the messages SetupDiag generates, run **SetupDiag** from the Windows Command Prompt or PowerShell.
 
-1. A command window opens while SetupDiag diagnoses the computer. Wait for this process to finish.
+    When SetupDiag finishes, two files are created in the same folder where SetupDiag was run from. One is a configuration file, the other is a log file.
 
-1. When SetupDiag finishes, two files are created in the same folder where SetupDiag was run from. One is a configuration file, the other is a log file.
-
-1. Use Notepad to open the log file **SetupDiagResults.log**.
+1. Use Notepad to open the **SetupDiagResults.log** log file.
 
 1. Review the information that is displayed. If a rule was matched, this information can say why the computer failed to upgrade, and potentially how to fix the problem. See the section [Text log sample](#text-log-sample).
 
@@ -107,16 +92,16 @@ For instructions on how to run the tool in offline mode and with more advanced o
 
 | Parameter | Description |
 | --- | --- |
-| **/?** | Displays interactive help |
+| **/?** | Displays help |
 | **/Output:\[Full path and file name for output log file\]** | This optional parameter specifies the name and location for the results log file. The output file contains the analysis from SetupDiag.  Only text format output is supported.  UNC paths work provided the context under which SetupDiag runs has access to the UNC path.  If the path has a space in it, the entire path must be enclosed in double quotes (**"**). See the [Examples](#examples) sections for an example. <br><br> Default: If not specified, SetupDiag creates the file **SetupDiagResults.log** in the same  directory where **SetupDiag.exe** is run. |
-| **/LogsPath:\[Full path to logs\]** | This optional parameter specifies the location of logs to parse and where to find the log files for an offline analysis. These log files can be in a flat folder format, or containing multiple subdirectories.  SetupDiag recursively searches all child directories. Defaults to checking the current system for logs. |
+| **/LogsPath:\[Full path to logs\]** | This optional parameter specifies the location of logs to parse and where to find the log files for offline analysis. These log files can be in a flat folder format, or containing multiple subdirectories.  SetupDiag recursively searches all child directories. Defaults to checking the current system for logs. |
 | **/ZipLogs:\[True \| False\]** | This optional parameter Tells **SetupDiag.exe** to create a zip file containing the results and all the log files that were parsed. The zip file is created in the same directory where **SetupDiag.exe** is run. <br><br> Default: If not specified, a value of 'true' is used. |
 | **/Format:\[xml \| json\]** | This optional parameter specifies the output format for log files to be XML or JSON.  If this parameter isn't specified, text format is used by default. |
 | **/Scenario:\[Recovery \| Debug\]** | This optional parameter can do one of the following two items based on the argument used: <br><br> <ul><li>Recovery instructs **SetupDiag.exe** to look for and process reset and recovery logs and ignore setup/upgrade logs.</li><li>Debug instructs **SetupDiag.exe** to debug memory dumps if the requisite debug binaries are installed.</li></ul> |
 | **/Verbose** | This optional parameter creates a diagnostic log in the current directory, with debugging information, additional data, and details about SetupDiag. By default, SetupDiag only produces a log file entry for major errors.  Using **/Verbose** causes SetupDiag to always produce another log file with debugging details. These details can be useful when reporting a problem with SetupDiag. |
 | **/NoTel** | This optional parameter tells **SetupDiag.exe** not to send diagnostic telemetry to Microsoft. |
-| **/RegPath** | This optional parameter Instructs **SetupDiag.exe** to add failure information to the registry under the given path. Registry paths should start with **HKEY_LOCAL_MACHINE** or **HKEY_CURRENT_USER** and be accessible at the elevation level SetupDiag is executed under. If this parameter isn't specified, the default path is **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**. |
-| **/AddReg** | This optional parameter Instructs **SetupDiag.exe** to add failure information to the registry on the executing system in offline mode. SetupDiag by default adds failure information to the registry in Online mode only. Registry data goes to **HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup\Volatile\SetupDiag** unless otherwise specified. |
+| **/RegPath** | This optional parameter Instructs **SetupDiag.exe** to add failure information to the registry under the given path. Registry paths should start with `HKEY_LOCAL_MACHINE` or `HKEY_CURRENT_USER` and be accessible at the elevation level SetupDiag is executed under. If this parameter isn't specified, the default path is `HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag` |
+| **/AddReg** | This optional parameter Instructs **SetupDiag.exe** to add failure information to the registry on the executing system in offline mode. SetupDiag by default adds failure information to the registry in Online mode only. Registry data goes to `HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup\Volatile\SetupDiag` unless otherwise specified. |
 
 > [!NOTE]
 >
@@ -124,72 +109,62 @@ For instructions on how to run the tool in offline mode and with more advanced o
 >
 > In previous versions, this command was used with the LogsPath parameter to specify that SetupDiag should run in an offline manner to analyze a set of log files that were captured from a different computer. In current versions of SetupDiag, when /LogsPath is specified then SetupDiag automatically runs in offline mode, therefore the /Mode parameter isn't needed.
 
-### Examples
+## Examples
 
-- In the following example, SetupDiag is run with default parameters in online mode. The results file is **SetupDiagResults.log** in the same folder where SetupDiag is run.
+### Online mode
+
+The following examples demonstrate running SetupDiag in online mode. It knows where to look for logs on the current (failing) system, so there's no need to gather logs ahead of time. 
+
+- When run without any parameters, the tool defaults to the online mode and stores the analysis results in `SetupDiagResults.log`, in the same folder where SetupDiag is run.
 
   ```cmd
   SetupDiag.exe
   ```
 
-- In the following example, SetupDiag is run in online mode (this mode is the default).  It knows where to look for logs on the current (failing) system, so there's no need to gather logs ahead of time. A custom location for results is specified.
+- The `/Output` switch can customize the path or name of the file in which the tool stores the analysis results:
 
   ```cmd
   SetupDiag.exe /Output:C:\SetupDiag\Results.log
   ```
 
-- The following example uses the **/Output** parameter to save results to a path name that contains a space:
+- The `/Output` switch can accommodate a path that contains a space character if the path is enclosed in double quotation marks:
 
   ```cmd
   SetupDiag /Output:"C:\Tools\SetupDiag\SetupDiag Results\Results.log"
   ```
 
-- The following example specifies that SetupDiag is to run in offline mode, and to process the log files found in **D:\Temp\Logs\LogSet1**.
-
-  ```cmd
-  SetupDiag.exe /Output:C:\SetupDiag\Results.log /LogsPath:D:\Temp\Logs\LogSet1
-  ```
-
-- The following example sets recovery scenario in offline mode. In the example, SetupDiag searches for reset/recovery logs in the specified LogsPath location and output the results to the directory specified by the **/Output** parameter.
-
-  ```cmd
-  SetupDiag.exe /Output:C:\SetupDiag\RecoveryResults.log /LogsPath:D:\Temp\Cabs\PBR_Log /Scenario:Recovery
-  ```
-
-- The following example sets recovery scenario in online mode. In the example, SetupDiag searches for reset/recovery logs on the current system and output results in XML format.
-
-  ```cmd
-  SetupDiag.exe /Scenario:Recovery /Format:xml
-  ```
-
-- The following example is an example of Offline Mode. SetupDiag is instructed to parse setup/upgrade log files in the LogsPath directory and output the results to `C:\SetupDiag\Results.txt`.
-
-  ```cmd
-  SetupDiag.exe /Output:C:\SetupDiag\Results.txt /LogsPath:D:\Temp\Logs\Logs1 /RegPath:HKEY_CURRENT_USER\SYSTEM\SetupDiag
-  ```
-
-- The following example is an example of Online Mode. SetupDiag is instructed to look for setup/upgrade logs on the current system and output its results in XML format to `C:\SetupDiag\Results.xml`.
+- The `/Format` switch can change the file format of analysis results, e.g., to XML.
 
   ```cmd
   SetupDiag.exe /Output:C:\SetupDiag\Results.xml /Format:xml
   ```
 
-- The following example is an example of Online Mode where no parameters are needed or used. SetupDiag is instructed to look for setup/upgrade logs on the current system and output the results to the same directory where SetupDiag is located.
+- In this example, SetupDiag processes the reset and recovery log, as opposed to the upgrade log. Additionally, this example changes the file format of the analysis results to XML.
 
   ```cmd
-  SetupDiag.exe
+  SetupDiag.exe /Scenario:Recovery /Format:xml
   ```
 
-- The following example is an example of Reset/Recovery Offline Mode. SetupDiag is instructed to look for reset/recovery logs in the specified LogsPath location. It then outputs the results to the directory specified by the **/Output** parameter.
+### Offline mode
+
+In the following examples, SetupDiag runs in offline mode. Therefore, all of the following examples have a `/LogsPath` switch.
+
+- The `/Output` switch can customize the path or name of the file in which the tool stores the analysis results:
+
+  ```cmd
+  SetupDiag.exe /Output:C:\SetupDiag\Results.log /LogsPath:D:\Temp\Logs\LogSet1
+  ```
+
+- In this example, SetupDiag processes the reset and recovery log, as opposed to the upgrade log.
 
   ```cmd
   SetupDiag.exe /Output:C:\SetupDiag\RecoveryResults.log /LogsPath:D:\Temp\Cabs\PBR_Log /Scenario:Recovery
   ```
 
-- The following example is an example of Reset/Recovery Online Mode. SetupDiag is instructed to look for reset/recovery logs on the current system and output its results in XML format.
+- The `/RegPath` switch can customize the Windows Registry path under which SetupDiag stores the analysis results.
 
   ```cmd
-  SetupDiag.exe /Scenario:Recovery /Format:xml
+  SetupDiag.exe /Output:C:\SetupDiag\Results.txt /LogsPath:D:\Temp\Logs\Logs1 /RegPath:HKEY_CURRENT_USER\SYSTEM\SetupDiag
   ```
 
 ## Log files
@@ -213,13 +188,13 @@ To debug a setup-related bug check:
 
 - Specify the **/LogsPath** parameter. Memory dumps can't be debugged in online mode.
 
-- Gather the setup memory dump file (`setupmem.dmp) from the failing system.
+- Gather the setup memory dump file (`setupmem.dmp`) from the failing system.
 
-  `Setupmem.dmp` is created in either **%SystemDrive%\$Windows.~bt\Sources\Rollback**, or in **%WinDir%\Panther\NewOS\Rollback** depending on when the bug check occurs.
+  `Setupmem.dmp` is created in either `%SystemDrive%\$Windows.~bt\Sources\Rollback`, or in `%WinDir%\Panther\NewOS\Rollback` depending on when the bug check occurs.
 
 - Install the [Windows Debugging Tools](/windows-hardware/drivers/debugger/debugger-download-tools) on the computer that runs SetupDiag.
 
-In the following example, the `setupmem.dmp` file is copied to the `D:\Dump` directory and the Windows Debugging Tools are installed prior to running SetupDiag:
+In the following example, the `setupmem.dmp` file is copied to the `D:\Dump` directory, and the Windows Debugging Tools are installed before running SetupDiag:
 
 ```cmd
 SetupDiag.exe /Output:C:\SetupDiag\Dumpdebug.log /LogsPath:D:\Dump
@@ -268,7 +243,7 @@ Logs ZipFile created at: c:\setupdiag\Logs_14.zip
 
 ## Rules
 
-When SetupDiag searches log files, it uses a set of rules to match known issues. These rules are contained in an xml file. The xml file might be updated with new and updated rules as new versions of SetupDiag are made available.
+When SetupDiag searches log files, it uses a set of rules to match known issues. These rules are contained in an XML file. The XML file might be updated with new and updated rules as new versions of SetupDiag are made available.
 
 Each rule name and its associated unique rule identifier are listed with a description of the known upgrade-blocking issue. In the rule descriptions, the term **down-level** refers to the first phase of the upgrade process, which runs under the original OS.
 
@@ -288,7 +263,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 | **CompatBlockedApplicationManualUninstall** | 9E912E5F-25A5-4FC0-BEC1-CA0EA5432FF4 | This rule indicates that an application without an Add/Remove Programs entry, is present on the system and blocking setup from continuing.  This block typically requires manual removal of the files associated with this application to continue. |
 | **GenericCompatBlock** | 511B9D95-C945-4F9B-BD63-98F1465E1CF6 | The rule indicates that system doesn't meet a hardware requirement for running Windows. For example, the device is missing a requirement for TPM 2.0. This issue can occur even when an attempt is made to bypass the hardware requirements. |
 | **GatedCompatBlock** | 34A9F145-3842-4A68-987F-4622EE0FC162 | This rule indicates that the upgrade failed due to a temporary block. A temporary block is put in place when an issue is found with a specific piece of software or hardware driver and the issue has a fix pending. The block is lifted once the fix is widely available. |
-| **HardblockDeviceOrDriver** | ED3AEFA1-F3E2-4F33-8A21-184ADF215B1B | This error indicates a device driver that is loaded on the host OS isn't compatible with the newer OS version. The device driver needs to be removed prior to the upgrade. |
+| **HardblockDeviceOrDriver** | ED3AEFA1-F3E2-4F33-8A21-184ADF215B1B | This error indicates a device driver that is loaded on the host OS isn't compatible with the newer OS version. The device driver needs to be removed before the upgrade. |
 | **HardblockMismatchedLanguage** | 60BA8449-CF23-4D92-A108-D6FCEFB95B45 | This rule indicates the host OS and the target OS language editions don't match. |
 | **HardblockFlightSigning** | 598F2802-3E7F-4697-BD18-7A6371C8B2F8 | This rule indicates the target OS is a pre-release, Windows Insider build, and the target machine has Secure Boot enabled.  This rule blocks the pre-release signed build from booting if installed on the machine. |
 | **DiskSpaceBlockInDownLevel** | 6080AFAC-892E-4903-94EA-7A17E69E549E | This failure indicates the system ran out of disk space during the down-level operations of upgrade. |
