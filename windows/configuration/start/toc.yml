@@ -1,12 +1,11 @@
 items:
-- name: Configure the Windows Start menu
+- name: Overview
   href: index.md
+  displayName: Configure the Windows Start menu
 - name: Customize the Start layout
   href: layout.md
 - name: Policy settings
   href: policy-settings.md
-- name: Start layout XML
-  href: start-layout-xml-desktop.md
 - name: XML schema definition (XSD)
   href: xsd.md
 - name: Troubleshoot Start menu errors 🔗

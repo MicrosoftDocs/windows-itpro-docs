@@ -56,11 +56,11 @@ If you need to configure a device for a single user, you can pin/unpin applicati
 
 For advanced customizations and when you need to configure multiple devices, you can use one of the following options:
 
-- Configuration Service Provider (CSP): commonly used for devices managed by a Mobile Device Management (MDM) solution, like Microsoft Intune. CSPs can also be configured with [provisioning packages](../provisioning-packages/how-it-pros-can-use-configuration-service-providers#csps-in-windows-configuration-designer), which are used at deployment time or for unmanaged devices. To configure Start, use the [Start Policy CSP][WIN-1].
+- Configuration Service Provider (CSP): commonly used for devices managed by a Mobile Device Management (MDM) solution, like Microsoft Intune. CSPs can also be configured with [provisioning packages](../provisioning-packages/how-it-pros-can-use-configuration-service-providers#csps-in-windows-configuration-designer), which are used at deployment time or for unmanaged devices. To configure Start, use the [Start Policy CSP][WIN-1]
 - Group policy (GPO): used for devices that are Active Directory joined or Microsoft Entra hybrid joined, and not managed by a device management solution. Group policy can also be used for devices that aren't joined to an Active Directory domain, using the local group policy editor
 
 > [!NOTE]
-> While many of the Start menu policy settings can be configured using both CSP and GPO, there are some settings that are only available using the Start Policy CSP. To learn about the available policy settings to configure the Start menu via configuration service provider (CSP) and group policy (GPO), see [Start menu policy settings](policy-settings.md).
+> While many of the Start menu policy settings can be configured using both CSP and GPO, there are some settings that are only available using the Start Policy CSP. To learn about the available policy settings to configure the Start menu via CSP and GPO, see [Start menu policy settings](policy-settings.md).
 
 ::: zone pivot="windows-10"
 The configuration of the Start layout requires the use of an XML file that specifies the layout. To learn more about how to create and apply an XML file to configure the Start layout, see [Customize and export the Start layout](layout.md).
