@@ -422,7 +422,7 @@
     },
     {
       "source_path": "windows/configuration/start-layout-xml-desktop.md",
-      "redirect_url": "/windows/configuration/start/start-layout-xml-desktop",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     },
     {
@@ -442,7 +442,7 @@
     },
     {
       "source_path": "windows/configuration/supported-csp-start-menu-layout-windows.md",
-      "redirect_url": "/windows/configuration/start/configure",
+      "redirect_url": "/windows/configuration/start/policy-settings",
       "redirect_document_id": false
     },
     {
@@ -452,7 +452,7 @@
     },
     {
       "source_path": "windows/configuration/windows-10-start-layout-options-and-policies.md",
-      "redirect_url": "/windows/configuration/start/windows-10-start-layout-options-and-policies",
+      "redirect_url": "/windows/configuration/start/policy-settings",
       "redirect_document_id": false
     },
     {
@@ -822,22 +822,22 @@
     },
     {
       "source_path": "windows/configuration/start/customize-start-menu-layout-windows-11.md",
-      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/start/customize-windows-10-start-screens-by-using-group-policy.md",
-      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/start/customize-windows-10-start-screens-by-using-mobile-device-management.md",
-      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/start/customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md",
-      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     },
     {
@@ -852,7 +852,7 @@
     },
     {
       "source_path": "windows/configuration/start/supported-csp-start-menu-layout-windows.md",
-      "redirect_url": "/windows/configuration/start/configure",
+      "redirect_url": "/windows/configuration/start/policy-settings",
       "redirect_document_id": false
     },
     {
@@ -868,6 +868,11 @@
     {
       "source_path": "windows/configuration/taskbar/supported-csp-taskbar-windows.md",
       "redirect_url": "/windows/configuration/taskbar/policy-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/start-layout-xml-desktop.md",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     }
   ]

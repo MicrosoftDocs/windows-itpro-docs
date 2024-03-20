@@ -1,5 +1,5 @@
 ---
-title: Start menu policy settings
+title: Start policy settings
 description: Learn about the policy settings to configure the Windows Start menu.
 ms.topic: reference
 ms.date: 03/15/2024
@@ -33,7 +33,7 @@ This reference article outlines the policy settings available for customizing th
     :::column-end:::
 :::row-end:::
 
-For information about how to configure these settings, see [Configure the Start menu](configure.md).
+For information about how to configure these settings, see [Configure the Start menu](index.md).
 
 Select one of the tabs to see the list of available settings:
 
@@ -194,9 +194,6 @@ Select one of the tabs to see the list of available settings:
 
 ---
 
-<!--links-->
-
-[WIN-1]: /windows/client-management/mdm/policy-csp-start
 
 
 <!--

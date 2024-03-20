@@ -1,9 +1,11 @@
 items:
-- name: Configure Start
-  href: configure.md
-- name: Start policy settings
+- name: Configure the Windows Start menu
+  href: index.md
+- name: Customize the Start layout
+  href: layout.md
+- name: Policy settings
   href: policy-settings.md
-- name: Start layout XML for Windows 10 desktop editions (reference)
+- name: Start layout XML
   href: start-layout-xml-desktop.md
 - name: XML schema definition (XSD)
   href: xsd.md
