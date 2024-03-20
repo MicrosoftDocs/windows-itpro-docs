@@ -9,10 +9,11 @@ appliesto:
 
 # Customize and export the Start layout
 
-This article describes how to customize the Windows Start menu, export its configuration, and deploy the customization to other devices. The article is intended for IT professionals who manage devices in a business or educational environment.\
-If you are looking for OEM information, see the article [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
+This article describes how to customize the Start layout, export its configuration, and deploy the customization to other devices.
 
-This article describes how to export the Start layout from a reference device, and deploy the layout to other devices.
+> [!NOTE]
+> If you are looking for OEM information, see the article [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
+
 
 For example, you can override the default set of apps with your own a set of pinned apps, and in the order you choose. As an administrator, use this feature to pin apps, remove default pinned apps, order the apps, and more.
 
@@ -24,49 +25,37 @@ When you customize the Start layout, you overwrite the entire full layout. Users
 
 To customize the Windows Start menu and deploy its configuration to other devices, you can follow these steps:
 
-## Create the configuration file
+1. From a reference device, configure the Start layout to meet your requirements
+1. Export the Start layout configuration to a configuration file
+1. Deploy the configuration file using one of the available options
 
-On a reference device, configure a Start layout with the pinned apps you want. Then, use the Windows PowerShell [Export-StartLayout](/powershell/module/startlayout/export-startlayout) cmdlet to export the existing layout to a configuration file.
+> [!TIP]
+> While you can create your own configuration file, it's easier and faster to export the layout from an existing device.
+
+### Export the Start layout configuration
+
+Once the Start layout is configured with the pinned apps you require, use the Windows PowerShell [Export-StartLayout](/powershell/module/startlayout/export-startlayout) cmdlet to export the existing layout to a configuration file.
+
+::: zone pivot="windows-10"
+The exported customization consists of an XML file containing a list of tiles that define the Start layout. The XML file must adhere to an XML schema definition (XSD). Here's a link to the XSD: [Start XML Schema Definition (XSD)](xsd.md).
+::: zone-end
 
 ::: zone pivot="windows-11"
 
-The configuration file is a JSON file that controls the Start menu layout, and lists all the apps that are pinned. You can update the JSON file to:
-
-- Change the order of existing apps. The apps in the JSON file are shown on Start in the same order.
-- Add more apps by entering the app ID
-
-> [!TIP]
-> While you can create your own JSON file, it's easier and faster to export the layout from an existing device.
-
-### Export an existing Start layout
-
-1. Create a folder to save the `.json` file. For example, create the `C:\Layouts` folder.
-1. On a Windows 11 device, open the Windows PowerShell app.
-1. Run the following cmdlet. Name the file `LayoutModification.json`.
+1. Create a folder to save the `.json` file. For example, create the `C:\Layouts` folder
+1. Open Windows PowerShell
+1. Run the following cmdlet:
 
     ```powershell
     Export-StartLayout -Path "C:\Layouts\LayoutModification.json"
     ```
 
-### Get the pinnedList JSON
+The exported customization consists of a JSON file containing a list of pins that define the Start layout.
 
 1. Open the `LayoutModification.json` file in a JSON editor, such as Visual Studio Code or Notepad
 1. The `pinnedList` section includes all of the pinned apps. Copy the `pinnedList` content in the JSON file
 
-    In the following example, you see that Microsoft Edge, Microsoft Word, the Microsoft Store app, and Notepad are pinned:
-
-    ```json
-    {
-      "pinnedList": [
-        { "desktopAppId": "MSEdge" },
-        { "desktopAppId": "Microsoft.Office.WINWORD.EXE.15" },
-        { "packagedAppId": "Microsoft.WindowsStore_8wekyb3d8bbwe!App" },
-        { "packagedAppId": "Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" }
-      ]
-    }
-    ```
-
-1. Use the `ConfigureStartPins` policy setting to configure the Start menu, by using a JSON `LayoutModification.json` file to add apps to the Pinned section. In your JSON file, you can add more apps to this section using the following keys:
+In your JSON file, you can add more apps to this section using the following keys:
 
 | Key | Description |
 |--|--|
@@ -74,13 +63,25 @@ The configuration file is a JSON file that controls the Start menu layout, and l
 | desktopAppID | Use this option for unpackaged Win32 apps. To pin a Win32 app, use the app's AUMID. If the app doesn't have an AUMID, then enter the `desktopAppLink` instead. |
 | desktopAppLink | Use this option for unpackaged Win32 apps that don't have an associated AUMID. To pin this type of app, use the path to the `.lnk` shortcut that points to the app. |
 
-## Use MDM to create and deploy a pinned list policy
+You can update the JSON file to:
 
-Now that you have the JSON syntax, you're ready to deploy your customized Start layout to devices in your organization.
+- Change the order of existing apps. The apps in the JSON file are shown on Start in the same order
+- Add more apps by entering the app ID
 
-MDM providers can deploy policies to devices managed by the organization, including organization-owned devices, and personal or bring your own device (BYOD).  Using an MDM provider, such as Microsoft Intune, you can deploy a policy that configures the pinned list.
+::: zone-end
 
-This section shows you how to create a pinned list policy in Intune. There isn't a Group Policy to create a pinned list.
+#### Start layout example
+
+Here you can find an example of Start layout that you can use as a reference:
+
+[!INCLUDE [example-start-layout](includes/example-start-layout.md)]
+
+::: zone pivot="windows-11"
+
+### Deploy the configuration
+
+> [!IMPORTANT]
+> The JSON file can be applied to devices using the [Start layout policy CSP](policy-settings.md#start-layout) only. It's not possible to apply the JSON file using group policy.
 
 [!INCLUDE [intune-settings-catalog-1](../../../includes/configure/intune-settings-catalog-1.md)]
 
@@ -180,13 +181,14 @@ When a partial Start layout is applied for the first time, the new groups are ad
 
 When a partial Start layout is applied to a device that already has a StartLayout.xml applied, groups that were added previously are removed and the groups in the new layout are added.
 
-If the Start layout is applied by Group Policy or MDM, and the policy is removed, the groups remain on the devices but become unlocked.
+> [!NOTE]
+> If you remove the policy setting, the groups remain on the devices but become unlocked.
 
 To configure a partial Start screen layout:
 
 1. [Customize the Start layout](#customize-the-start-screen-on-your-test-computer).
 1. [Export the Start layout](#export-the-start-layout).
-1. Open the layout .xml file. There is a `<DefaultLayoutOverride>` element. Add `LayoutCustomizationRestrictionType="OnlySpecifiedGroups"` to the **DefaultLayoutOverride** element as follows:
+1. Open the layout XML file. There is a `<DefaultLayoutOverride>` element. Add `LayoutCustomizationRestrictionType="OnlySpecifiedGroups"` to the **DefaultLayoutOverride** element as follows:
 
     ```xml
     <DefaultLayoutOverride LayoutCustomizationRestrictionType="OnlySpecifiedGroups">
@@ -194,10 +196,7 @@ To configure a partial Start screen layout:
 
 1. Save the file and apply using any of the deployment methods.
 
-> [!NOTE]
-> Office 2019 tiles might be removed from the Start menu when you upgrade Office 201. This only occurs if Office 2019 app tiles are in a custom group in the Start menu and only contains the Office 2019 app tiles. To avoid this problem, place another app tile in the Office 2019 group prior to the upgrade. For example, add Notepad.exe or calc.exe to the group. This issue occurs because Office 2019 removes and reinstalls the apps when they are upgraded. Start removes empty groups when it detects that all apps for that group have been removed.
-
-You can deploy the resulting .xml file to devices using one of the following methods:
+You can deploy the resulting XML file to devices using one of the following methods:
 
 - Configuration Service Provider (CSP)
 - Group Policy
@@ -206,10 +205,6 @@ You can deploy the resulting .xml file to devices using one of the following met
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
 #### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
-
-You can use a mobile device management (MDM) policy to deploy a customized Start and taskbar layout to users. No reimaging is required. The layout can be updated simply by overwriting the `.xml` file that contains the layout. This feature enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
-
-**Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md).
 
 >[!WARNING]
 >When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
@@ -221,43 +216,8 @@ Two features enable Start layout control:
     >[!NOTE]
     >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
 
-- In Microsoft Intune, you select the Start layout XML file and add it to a device configuration profile.
-
     >[!NOTE]
-    >Please do not include XML Prologs like \<?xml version="1.0" encoding="utf-8"?\> in the Start layout XML file. The settings may not be reflected correctly.
-
-## <a href="" id="bkmk-domaingpodeployment"></a>Create a policy for your customized Start layout
-
-The following example uses Microsoft Intune to configure an MDM policy that applies a customized Start layout:
-
-1. Sign in to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-
-1. Select **Devices** > **Configuration profiles** > **Create profile**.
-
-1. Enter the following properties:
-
-    - **Platform**: Select **Windows 10 and later**.
-    - **Profile type**: Select **Templates** > **Device restrictions** > **Create**.
-
-1. In **Basics**, enter the following properties:
-
-    - **Name**: Enter a descriptive name for the profile. Name your profiles so you can easily identify it later. For example, a good profile name is **Customize Start menu and taskbar**.
-    - **Description**: Enter a description for the profile. This setting is optional, but recommended.
-
-1. Select **Next**.
-
-1. In **Configuration settings**, select **Start**:
-
-    - If you're using an XML file, select **Start menu layout**. Browse to and select your Start layout XML file.
-    - If you don't have an XML file, configure the others settings. For more information on these settings, see [Start settings in Microsoft Intune](/mem/intune/configuration/device-restrictions-windows-10#start).
-
-1. Select **Next**.
-1. In **Scope tags**, select **Next**. For more information about scope tags, see [Use RBAC and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
-1. In **Assignments**, select the user or groups that will receive your profile. Select **Next**. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
-1. In **Review + create**, review your settings. When you select **Create**, your changes are saved, and the profile is assigned. The policy is also shown in the profiles list.
-
-> [!NOTE]
-> For third party partner MDM solutions, you may need to use an OMA-URI setting for Start layout, based on the [Policy configuration service provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider). The OMA-URI setting is `./User/Vendor/MSFT/Policy/Config/Start/StartLayout`.
+    >Don't include XML Prologs like \<?xml version="1.0" encoding="utf-8"?\> in the Start layout XML file. The settings may not be reflected correctly.
 
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -265,8 +225,6 @@ You can use a provisioning package that you create with Windows Configuration De
 
 > [!IMPORTANT]
 > If you use a provisioning package to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration and allow users to make changes that will persist, apply your configuration by using Group Policy.
-
-**Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md) for desktop editions.
 
 Three features enable Start and taskbar layout control:
 
@@ -294,16 +252,8 @@ The **Export-StartLayout** cmdlet produces an XML file. Because Windows Configur
 
 You can use a Group Policy Object (GPO) to deploy a customized Start and taskbar layout to users in a domain. No reimaging is required, and the layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start and taskbar layouts for different departments or organizations, with minimal management overhead.
 
-This topic describes how to update Group Policy settings to display a customized Start and taskbar layout when the users sign in. By creating a domain-based GPO with these settings, you can deploy a customized Start and taskbar layout to users in a domain.
-
 >[!WARNING]
 >When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups. When you apply a taskbar layout, users will still be able to pin and unpin apps, and change the order of pinned apps.
-
-**Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md)
-
-## Operating system requirements
-
-The GPO can be configured from any computer on which the necessary ADMX and ADML files (StartMenu.admx and StartMenu.adml) for Windows 10 are installed. In Group Policy, ADMX files are used to define Registry-based policy settings in the Administrative Templates category. To find out how to create a central store for Administrative Templates files, see [article 929841, written for Windows Vista and still applicable](/troubleshoot/windows-server/group-policy/create-central-store-domain-controller) in the Microsoft Knowledge Base.
 
 Three features enable Start and taskbar layout control:
 
@@ -311,58 +261,17 @@ Three features enable Start and taskbar layout control:
     >[!NOTE]
     >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
 - [You can modify the Start .xml file](../taskbar/configure.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration.
-- In Group Policy, you use the **Start Layout** settings for the **Start Menu and Taskbar** administrative template to set a Start and taskbar layout from an .xml file when the policy is applied. The Group Policy object doesn't support an empty tile layout, so the default tile layout for Windows is loaded in that case.
-
->[!NOTE]
->To learn how customize Start to include your line-of-business apps when you deploy Windows 10, see [Customize the Windows 10 Start layout]( https://go.microsoft.com/fwlink/p/?LinkId=620863).
-
-## <a href="" id="bkmk-domaingpodeployment"></a>Use Group Policy to apply a customized Start layout in a domain
-
-To apply the Start and taskbar layout to users in a domain, use the Group Policy Management Console (GPMC) to configure a domain-based Group Policy Object (GPO) that sets **Start Layout** policy settings in the **Start Menu and Taskbar** administrative template for users in a domain.
 
 The GPO applies the Start and taskbar layout at the next user sign-in. Each time the user signs in, the timestamp of the .xml file with the Start and taskbar layout is checked and if a newer version of the file is available, the settings in the latest version of the file are applied.
 
-The GPO can be configured from any computer on which the necessary ADMX and ADML files (StartMenu.admx and StartMenu.adml) for Windows 10 are installed.
-
-The .xml file with the Start and taskbar layout must be located on shared network storage that is available to the users' computers when they sign in and the users must have Read-only access to the file. If the file is not available when the first user signs in, Start and the taskbar are not customized during the session, but the user will be prevented from making changes to Start. On subsequent sign-ins, if the file is available at sign-in, the layout it contains will be applied to the user's Start and taskbar.
-
-For information about deploying GPOs in a domain, see [Working with Group Policy Objects](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
-
-## <a href="" id="bkmk-localgpimport"></a>Use Group Policy to apply a customized Start layout on the local computer
-
-You can use the Local Group Policy Editor to provide a customized Start and taskbar layout for any user who signs in on the local computer. To display the customized Start and taskbar layout for any user who signs in, configure **Start Layout** policy settings for the **Start Menu and Taskbar** administrative template. You can use the **Start Menu and Taskbar** administrative template in **User Configuration** or **Computer Configuration**.
-
->[!NOTE]
->This procedure applies the policy settings on the local computer only. For information about deploying the Start and taskbar layout to users in a domain, see [Use Group Policy to deploy a customized Start layout in a domain](#bkmk-domaingpodeployment).
+> [!IMPORTANT]
+> If you disable Start Layout policy settings that have been in effect and then re-enable the policy, users will not be able to make changes to Start, however the layout in the .xml file will not be reapplied unless the file has been updated. In Windows PowerShell, you can update the timestamp on a file by running the following command:
 >
->This procedure creates a Local Group Policy that applies to all users on the computer. To configure Local Group Policy that applies to a specific user or group on the computer, see [Step-by-Step Guide to Managing Multiple Local Group Policy Objects](/previous-versions/windows/it-pro/windows-vista/cc766291(v=ws.10)). The guide was written for Windows Vista and the procedures still apply to Windows 10.
-
-This procedure adds the customized Start and taskbar layout to the user configuration, which overrides any Start layout settings in the local computer configuration when a user signs in on the computer.
-
-To configure Start Layout policy settings in Local Group Policy Editor:
-
-1. On the test computer, press the Windows key, type **gpedit**, and then select **Edit group policy (Control panel)**.
-1. Go to **User Configuration** or **Computer Configuration** > **Administrative Templates** >**Start Menu and Taskbar**.
-1. Right-click **Start Layout** in the right pane, and click **Edit**.
-1. Enter the following settings, and then click **OK**:
-   1. Select **Enabled**.
-   1. Under **Options**, specify the path to the .xml file that contains the Start and taskbar layout. For example, type **C:\\Users\\Test01\\StartScreenMarketing.xml**.
-   1. Optionally, enter a comment to identify the Start and taskbar layout.
-
-   > [!IMPORTANT]
-   > If you disable Start Layout policy settings that have been in effect and then re-enable the policy, users will not be able to make changes to Start, however the layout in the .xml file will not be reapplied unless the file has been updated. In Windows PowerShell, you can update the timestamp on a file by running the following command:
-   >
-   > `(ls <path>).LastWriteTime = Get-Date`
+> `(ls <path>).LastWriteTime = Get-Date`
 
 ---
 
 ::: zone-end
-
-## Start layout example
-
-Here you can find an example of Start layout that you can use as a reference:
-
-[!INCLUDE [example-start-layout](includes/example-start-layout.md)]
 
 ## User experience
 
@@ -384,9 +293,6 @@ If your Start layout customization isn't applied as you expect, open the **Event
 
 - **Event 22**: The XML is malformed. The specified file isn't valid XML. This event can happen if the file has extra spaces or unexpected characters. Or, if the file isn't saved in the UTF8 format.
 - **Event 64**: The XML is valid, and has unexpected values. This event can happen when the configuration isn't understood, elements aren't in [the required order](start-layout-xml-desktop.md#required-order), or source isn't found, such as a missing or misspelled `.lnk`.
-
-
-
 
 <!--links-->
 
