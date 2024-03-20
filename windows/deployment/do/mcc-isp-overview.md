@@ -37,8 +37,11 @@ Microsoft Connected Cache uses Delivery Optimization as the backbone for Microso
 - Endpoint protection: Windows Defender definition updates
 - Xbox: Xbox Game Pass (PC only)
 
-Do you peer with [Microsoft (ASN 8075)](/azure/internet-peering/)? Microsoft Connected Cache complements peering by offloading static content that is served off of multiple CDNs such as Akamai, Lumen, and Edgecast. Microsoft Peering mainly caches dynamic content - by onboarding to Microsoft Connected Cache, you'll cache static content that otherwise would be served from the CDN. 
+#### Are you already peering with 8075?
 
+MCC complements peering by offloading static content that is served off of multiple CDNs such as Akamai, Lumen, Edgecast. Static content such as OS updates, Apps, Software installs etc. cannot be served via 8075. So, even if you are peering with Microsoft, you can benefit from installing MCC!
+
+![mcc-isp-peeringvsmcc](media/mcc-isp-overview/mcc-isp-peeringvsmcc.png)
 For the full list of content endpoints that Microsoft Connected Cache for ISPs supports, see [Microsoft Connected Cache content and services endpoints](delivery-optimization-endpoints.md).
 
 ## How MCC works
@@ -71,15 +74,18 @@ The following steps describe how MCC is provisioned and used:
 1. Subsequent requests from end-user devices for content will be served from cache.
 
 1. If the MCC node is unavailable, the client gets content from the CDN to ensure uninterrupted service for your subscribers.
-## __Are you already peering with 8075?__
-
-MCC complements peering by offloading static content that is served off of multiple CDNs such as Akamai, Lumen, Edgecast. Static content such as OS updates, Apps, Software installs etc. cannot be served via 8075. So, even if you are peering with Microsoft, you can benefit from installing MCC.
-
-## ![mcc-isp-peeringvsmcc](media/mcc-isp-overview/mcc-isp-peeringvsmcc.png)
-
-__Hardware recommendation__
+### __Hardware recommendation__
 
 Below are the hardware recommendations based on traffic ranges.
 
-![mcc-isp-hardwarerec](media/mcc-isp-overview/mcc-isp-hardwarerec1.png)
+
+|Microsoft Connected Cache Machine Class | Scenario |Traffic Range|VM/Hardware Recommendation|
+| -------- | -------- | -------- | -------- |
+| Edge   | For smaller ISPs or remote sites part of a larger network. |< 5 Gbps Peak|VM Up to 8 Cores</br></br>Up to 16 GB Memory</br></br>1 500 GB SSD|
+| Metro POP   | For ISPs, IXs, or Transit Providers serving a moderate amount of traffic in a network that may require one of more cache nodes.   |5 - 20 Gbps Peak|VM or Hardware</br></br>16 Cores*</br></br>32 GB Memory</br></br>2 - 3 500 GB SSDs each|
+|Data Center|For ISPs, IXs, or Transit Providers serving a large amount traffic daily and may require deployment of multiple cache nodes.|20 - 40 Gbps Peak|Hardware (see sample spec below)</br></br>32 or More Cores*</br></br>64 or more GB Memory</br></br>4 - 6 500 - 1 TB SSDs** each|
+
+*Requires systems (chipset, CPU, motherboard) with PCIe version 3 or higher
+
+**Drive speeds are important and to achieve higher egress we recommend SSD NVMe in m.2 PCIe slot (version 4 or higher)
 
