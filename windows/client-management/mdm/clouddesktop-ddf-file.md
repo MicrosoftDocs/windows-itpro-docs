@@ -1,7 +1,7 @@
 ---
 title: CloudDesktop DDF file
 description: View the XML file containing the device description framework (DDF) for the CloudDesktop configuration service provider.
-ms.date: 01/31/2024
+ms.date: 03/05/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -38,9 +38,9 @@ The following XML file contains the device description framework (DDF) for the C
         <MIME />
       </DFType>
       <MSFT:Applicability>
-        <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-        <MSFT:CspVersion>9.9</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x30;0x31;0x7E;0x88;0xA1;0xA2;0xA4;0xA5;0xBC;0xBF;0xCD;0xD2;</MSFT:EditionAllowList>
+        <MSFT:OsBuildVersion>10.0.22621.3235</MSFT:OsBuildVersion>
+        <MSFT:CspVersion>1.0</MSFT:CspVersion>
+        <MSFT:EditionAllowList>0x4;0x30;0x31;0x7E;0x87;0x88;0x88*;0xA1;0xA2;0xA4;0xA5;0xB4;0xBC;0xBD;0xBF;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -68,8 +68,8 @@ The following XML file contains the device description framework (DDF) for the C
           <MIME />
         </DFType>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.22621.3235</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>1.0</MSFT:CspVersion>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="ENUM">
           <MSFT:Enum>
