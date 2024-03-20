@@ -27,6 +27,8 @@ sections:
         answer: Yes. Microsoft Connected Cache is a free service.  
       - question: What will Microsoft Connected Cache do for me? How will it impact our customers?
         answer: As an ISP, your network can benefit from reduced load on your backbone and improve customer download experience for supported Microsoft static content. It will also help you save on CDN costs.  
+      - question: I already peer with Microsoft(8075). What benefit will I receive by adding Microsoft Connected Cache to my network?
+        answer: MCC complements peering by offloading static content that is served off of multiple CDNs such as Akamai, Lumen, Edgecast. Static content such as OS updates, Apps, Software installs etc. cannot be served via 8075. So, even if you are peering with Microsoft, you can benefit from installing MCC.  
       - question: Is there a non-disclosure agreement to sign?
         answer: No, a non-disclosure agreement isn't required.
       - question: What are the prerequisites and hardware requirements?
@@ -40,8 +42,15 @@ sections:
          
          The following are recommended hardware configurations:   
           
-          <!--Using include file, mcc-prerequisites.md, for shared content on DO monitoring-->
-          [!INCLUDE [Microsoft Connected Cache Prerequisites](includes/mcc-prerequisites.md)]
+| Microsoft Connected Cache Machine Class | Scenario |Traffic Range|VM/Hardware Recommendation|
+| -------- | -------- | -------- | -------- |
+| Edge   | For smaller ISPs or remote sites part of a larger network. |< 5 Gbps Peak|VM Up to 8 Cores</br></br>Up to 16 GB Memory</br></br>1 500 GB SSD|
+| Metro POP   | For ISPs, IXs, or Transit Providers serving a moderate amount of traffic in a network that may require one of more cache nodes.   |5 - 20 Gbps Peak|VM or Hardware</br></br>16 Cores*</br></br>32 GB Memory</br></br>2 - 3 500 GB SSDs each|
+|Data Center|For ISPs, IXs, or Transit Providers serving a large amount traffic daily and may require deployment of multiple cache nodes.|20 - 40 Gbps Peak|Hardware (see sample spec below)</br></br>32 or More Cores*</br></br>64 or more GB Memory</br></br>4 - 6 500 - 1 TB SSDs** each|
+
+*Requires systems (chipset, CPU, motherboard) with PCIe version 3 or higher
+
+**Drive speeds are important and to achieve higher egress we recommend SSD NVMe in m.2 PCIe slot (version 4 or higher)
 
          We have one customer who is able to achieve mid-30s Gbps egress rate using the following hardware specification:  
           - Dell PowerEdge R330  
