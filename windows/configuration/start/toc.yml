@@ -1,7 +1,7 @@
 items:
 - name: Overview
   href: index.md
-  displayName: Configure the Windows Start menu
+  displayName: Configure the Start menu
 - name: Customize the Start layout
   href: layout.md
 - name: Policy settings

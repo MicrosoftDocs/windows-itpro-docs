@@ -1,5 +1,5 @@
 ---
-title: Configure the Windows Start menu
+title: Configure the Start menu
 description: Learn how to configure the Windows Start menu to provide quick access to the tools and applications that users need most.
 ms.topic: overview
 ms.date: 03/04/2024
@@ -7,7 +7,7 @@ zone_pivot_groups: windows-versions-11-10
 appliesto:
 ---
 
-# Configure the Windows Start menu
+# Configure the Start menu
 
 The Windows Start menu is a pivotal element in the Windows operating system, serving as a central hub for launching applications and managing tasks. For organizations, the ability to configure the Start menu's behavior through policy settings can be highly beneficial, particularly in environments where certain roles or functions necessitate tailored access to applications and tools.
 
@@ -17,7 +17,7 @@ Frontline workers, who often operate in fast-paced and dynamic environments, can
 
 In educational settings, students can benefit from a Start menu that is customized to provide access to educational tools and resources while restricting distractions. By configuring policy settings, educational institutions can create a focused and conducive learning environment.
 
-## Start menu structure
+## Start structure
 
 The Start menu structure consists five main areas, which you can configure to meet your organization's needs. These areas are as follows:
 
@@ -25,14 +25,14 @@ The Start menu structure consists five main areas, which you can configure to me
 :::column span="2":::
 ::: zone pivot="windows-10"
 1. **Start layout**: contains the arrangement of tiles that link to applications, folders, websites, or files
-1. **All apps**: contains an alphabetical list of all installed applications
+1. **All apps**: contains an alphabetical list of all installed applications. The list can include dynamic sections, such as *Most used* and *Recently added*
 1. **Account**: contains links to change user account settings, sign out, lock the device, or switch user
 1. **Pinned folders**: contains a customizable list of folders for quick access
 1. **Power**: contains links to power options, such as shutdown, restart, and sleep
 ::: zone-end
 ::: zone pivot="windows-11"
-1. **Start layout**: the *Pinned* section contains the arrangement of pins that link to applications, folders, websites, or files. The *Recommended* section is designed to enhance user productivity by providing quick access to frequently used apps and documents
-1. **All apps**: contains an alphabetical list of all installed applications
+1. **Start layout**: the *Pinned* section contains the arrangement of pins that link to applications, folders, websites, or files. The *Recommended* section is designed to enhance user productivity by providing quick access to frequently used apps, documents, or websites
+1. **All apps**: contains an alphabetical list of all installed applications. The list can include dynamic sections, such as *Most used* and *Recently added*
 1. **Account**: contains links to change user account settings, sign out, lock the device, or switch user
 1. **Pinned folders**: contains a customizable list of folders for quick access
 1. **Power**: contains links to power options, such as shutdown, restart, and sleep
