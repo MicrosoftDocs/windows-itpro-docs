@@ -24,11 +24,6 @@ $assignedAccessConfiguration = @"
 </AssignedAccessConfiguration>
 "@
 
-$eventLogFilterHashTable = @{
-    ProviderName = "Microsoft-Windows-AssignedAccess";
-    StartTime    = Get-Date -Millisecond 0
-}
-
 $namespaceName="root\cimv2\mdm\dmmap"
 $className="MDM_AssignedAccess"
 $obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
