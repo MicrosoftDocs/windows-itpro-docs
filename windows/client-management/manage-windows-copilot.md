@@ -3,7 +3,7 @@ title: Manage Copilot in Windows
 description: Learn how to manage Copilot in Windows for commercial environments using MDM and group policy. Learn about the chat providers available to Copilot in Windows.
 ms.topic: conceptual
 ms.subservice: windows-copilot
-ms.date: 02/09/2024
+ms.date: 03/21/2024
 ms.author: mstewart
 author: mestew
 appliesto:
@@ -109,10 +109,12 @@ To verify that Copilot with commercial data protection is enabled for the user a
 1. To verify that commercial data protection is enabled for the user, select the user's **Display name** to open the flyout menu.
 1. In the flyout, select the **Licenses & apps** tab, then expand the **Apps** list.
 1. Verify that **Copilot** is enabled for the user.
-1. If you prefer to view a user's licenses from the [Azure portal](https://portal.azure.com), you'll find it under **Microsoft Entra ID** > **Users**. Select the user's name, then **Licenses**. Select a  license that includes **Copilot**, and verify that it's listed as **On**.
-
-   > [!Note]
-   > If you previously disabled Copilot with commercial data protection (formerly Bing Chat Enterprise) using the URL, `https://aka.ms/TurnOffBCE`, see [Manage Copilot](/copilot/manage) for verifying that commercial data protection is enabled for your users.
+1. If you prefer to view a user's licenses from the [Azure portal](https://portal.azure.com), you'll find it under **Microsoft Entra ID** > **Users**. Select the user's name, then **Licenses**. Select a  license that includes **Copilot**, and verify that it's listed as **On**. If you previously disabled Copilot with commercial data protection (formerly Bing Chat Enterprise), see [Manage Copilot](/copilot/manage) for verifying that commercial data protection is enabled for your users.
+1. Copilot with commercial data protection is used as the chat provider platform for users when the following conditions are met:
+   - Users have an eligible license, commercial data protection in Copilot is enabled, and the [Copilot in Windows user experience is enabled](#enable-the-copilot-in-windows-user-experience-for-windows-11-version-22h2-clients).
+   - Users are signed in with their Microsoft Entra ID (work accounts)
+      - Users can sign into Windows with their Microsoft Entra ID
+      - For Active Directory users on Windows 11, a Microsoft Entra ID in the Web Account Manager (WAM) authentication broker can be used. Entra IDs in Microsoft Edge profiles and Microsoft 365 Apps would both be in WAM. <!--8470699-->
 
 The following sample PowerShell script connects to Microsoft Graph and lists which users that have Copilot with commercial data protection enabled and disabled:
 
