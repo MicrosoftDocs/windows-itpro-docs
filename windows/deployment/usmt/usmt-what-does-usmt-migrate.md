@@ -57,7 +57,7 @@ This section describes the user data that USMT migrates by default, using the `M
 
   > [!IMPORTANT]
   >
-  > USMT doesn't migrate the Start menu layout. To migrate a user's Start menu, settings must be exported and then imported using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](/troubleshoot/windows-client/deployment/usmt-common-issues#usmt-doesnt-migrate-the-start-layout).
+  > USMT doesn't migrate the Start menu layout. To migrate a user's Start menu, settings must be exported and then imported using the Windows PowerShell cmdlets `Export-StartLayout` and **Import-StartLayout**. For more information, see [USMT common issues](/troubleshoot/windows-client/deployment/usmt-common-issues#usmt-doesnt-migrate-the-start-layout).
 
 - **Folders from the All Users and Public profiles.** When the `MigUser.xml` file is specified, USMT also migrates the following from the **Public** profile in Windows:
 
@@ -118,7 +118,7 @@ USMT migrates operating-system components to a destination computer. The followi
   1. Right-clicking on the Start menu and then selecting **Computer Management**.
   1. In the **Computer Management** console, expand **System tools** > **Local Users and Groups** > **Groups**.
   1. Inspect the individual groups in the results pane to see what users belong to what groups.
-  
+
   The use of a **\<ProfileControl\>** section in the `Config.xml` file is required when running an offline migration.
 
 - Microsoft Open Database Connectivity (ODBC) settings.
@@ -210,7 +210,7 @@ Also note the following items:
 
 ### Start menu layout
 
-USMT doesn't migrate the Start menu layout. To migrate a user's Start menu, settings must be exported and then imported using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](/troubleshoot/windows-client/deployment/usmt-common-issues#usmt-doesnt-migrate-the-start-layout).
+USMT doesn't migrate the Start menu layout. To migrate a user's Start menu, settings must be exported and then imported using the Windows PowerShell cmdlets `Export-StartLayout` and **Import-StartLayout**. For more information, see [USMT common issues](/troubleshoot/windows-client/deployment/usmt-common-issues#usmt-doesnt-migrate-the-start-layout).
 
 ### User profiles from Active Directory to Microsoft Entra ID
 

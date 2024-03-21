@@ -181,7 +181,7 @@ Here you can find an example of Start layout that you can use as a reference:
 
 Two features enable Start layout control:
 
-- The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format.
+- The `Export-StartLayout` cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format.
 
     >[!NOTE]
     >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
@@ -198,16 +198,14 @@ You can use a provisioning package that you create with Windows Configuration De
 
 Three features enable Start and taskbar layout control:
 
-- The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format.
+- The `Export-StartLayout` cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format.
 
     > [!NOTE]
     > To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
 
-
-
 ### Prepare the Start layout XML file
 
-The **Export-StartLayout** cmdlet produces an XML file. Because Windows Configuration Designer produces a customizations.xml file that contains the configuration settings, adding the Start layout section to the customizations.xml file directly would result in an XML file embedded in an XML file. Before you add the Start layout section to the customizations.xml file, you must replace the markup characters in your layout.xml with escape characters.
+The `Export-StartLayout` cmdlet produces an XML file. Because Windows Configuration Designer produces a customizations.xml file that contains the configuration settings, adding the Start layout section to the customizations.xml file directly would result in an XML file embedded in an XML file. Before you add the Start layout section to the customizations.xml file, you must replace the markup characters in your layout.xml with escape characters.
 
 1. Copy the contents of layout.xml into an online tool that escapes characters
 1. During the procedure to create a provisioning package, you will copy the text with the escape characters and paste it in the customizations.xml file for your project
@@ -281,23 +279,26 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 ## User experience
 
+:::row:::
+:::column span="2":::
+
 After the settings are applied, sign in to the device. You'll see the Start layout that you configured:
-
-::: zone pivot="windows-10"
-:::image type="content" source="images/windows-10.png" alt-text="Screenshot of the Windows 10 Start menu." border="false":::
-
-> [!NOTE]
-> When you apply the policy setting, it results in a complete replacement of the existing layout, unless a partial Start layout is configured. This means users can't modify the Start layout once it's set by policy settings. If you want to allow users to modify the layout, use a partial Start layout instead.
-
-::: zone-end
-
-::: zone pivot="windows-11"
-:::image type="content" source="images/windows-11.png" alt-text="Screenshot of the Windows 11 Start menu." border="false":::
 
 > [!NOTE]
 > When you configure the Start layout with policy settings, you overwrite the entire layout. Users can change the order of the pinned elements, pin, or unpin itmes. When a user signs in again, the Start layout specified in the policy setting is reapplied, without retaining any user changes.
 
+:::column-end:::
+:::column span="2":::
+::: zone pivot="windows-10"
+    :::image type="content" source="images/windows-10.png" alt-text="Screenshot of the Windows 10 Start menu." border="false" lightbox=".images/windows-10.png":::
 ::: zone-end
+
+::: zone pivot="windows-11"
+    :::image type="content" source="images/windows-11.png" alt-text="Screenshot of the Windows 11 Start menu." border="false" lightbox=".images/windows-11.png":::
+::: zone-end
+
+    :::column-end:::
+:::row-end:::
 
 ## Next steps
 
