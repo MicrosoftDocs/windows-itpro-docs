@@ -584,4 +584,6 @@ In a clean install, if you apply a taskbar layout, only the following apps are p
 - Any default apps you don't remove
 
 After the layout is applied, users can pin more apps to the taskbar.
+
+If you use a provisioning package to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration and allow users to make changes that will persist, apply your configuration by using Group Policy.
 -->

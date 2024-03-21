@@ -196,51 +196,19 @@ Learn how to [Find the Application User Model ID of an installed app](../store/f
 
 When a full Start layout is applied with policy settings, users can't pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they can't change the Start layout. When you apply a partial Start layout, the content of the specified tile groups can't be changed, but users can move the groups, and can create and customize their own groups.
 
-Two features enable Start layout control:
-
-- The `Export-StartLayout` cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format.
-
-    >[!NOTE]
-    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
-
-    >[!NOTE]
-    >Don't include XML Prologs like \<?xml version="1.0" encoding="utf-8"?\> in the Start layout XML file. The settings may not be reflected correctly.
+>[!NOTE]
+>To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
+>Don't include XML Prologs like \<?xml version="1.0" encoding="utf-8"?\> in the Start layout XML file. The settings may not be reflected correctly.
 
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg-10)
 
-You can use a provisioning package that you create with Windows Configuration Designer to deploy a customized Start and taskbar layout to users. No reimaging is required, and the Start and taskbar layout can be updated by overwriting the .xml file that contains the layout. The provisioning package can be applied to a running device. This enables you to customize Start and taskbar layouts for different departments or organizations, with minimal management overhead.
-
-> [!IMPORTANT]
-> If you use a provisioning package to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration and allow users to make changes that will persist, apply your configuration by using Group Policy.
-
-Three features enable Start and taskbar layout control:
-
-- The `Export-StartLayout` cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format.
-
-    > [!NOTE]
-    > To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
-
-### Prepare the Start layout XML file
-
-The `Export-StartLayout` cmdlet produces an XML file. Because Windows Configuration Designer produces a customizations.xml file that contains the configuration settings, adding the Start layout section to the customizations.xml file directly would result in an XML file embedded in an XML file. Before you add the Start layout section to the customizations.xml file, you must replace the markup characters in your layout.xml with escape characters.
-
-1. Copy the contents of layout.xml into an online tool that escapes characters
-1. During the procedure to create a provisioning package, copy the text with the escape characters and paste it in the customizations.xml file for your project
-1. Expand **Runtime settings** > **Policies** > **Start**, and select **StartLayout**
+Expand **Runtime settings** > **Policies** > **Start**, and select **StartLayout**
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
-You can use a Group Policy Object (GPO) to deploy a customized Start and taskbar layout to users in a domain. No reimaging is required, and the layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start and taskbar layouts for different departments or organizations, with minimal management overhead.
+When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups. When you apply a taskbar layout, users will still be able to pin and unpin apps, and change the order of pinned apps.
 
->[!WARNING]
->When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups. When you apply a taskbar layout, users will still be able to pin and unpin apps, and change the order of pinned apps.
-
-Three features enable Start and taskbar layout control:
-
-- The [Export-StartLayout](/powershell/module/startlayout/export-startlayout) cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format.
-    >[!NOTE]
-    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
-- [You can modify the Start .xml file](../taskbar/configure.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration.
+You can modify the Start .xml file to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration.
 
 The GPO applies the Start and taskbar layout at the next user sign-in. Each time the user signs in, the timestamp of the .xml file with the Start and taskbar layout is checked and if a newer version of the file is available, the settings in the latest version of the file are applied.
 
