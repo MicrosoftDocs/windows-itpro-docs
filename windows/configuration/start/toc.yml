@@ -9,6 +9,6 @@ items:
 - name: XML schema definition (XSD)
   href: xsd.md
 - name: _🧐 XML schema
-  href: start-layout-xml-desktop.md
+  href: _delete.md
 - name: Troubleshoot Start menu errors 🔗
   href: /troubleshoot/windows-client/shell-experience/troubleshoot-start-menu-errors

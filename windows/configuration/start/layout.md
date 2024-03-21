@@ -91,45 +91,6 @@ To export the Start layout to an XML file:
 
 1. (Optional) Edit the XML file to add [a taskbar configuration](../taskbar/configure.md) or to make any modifications to the Start layout
 
-> [!IMPORTANT]
-> When you make changes to the exported layout, be aware that the XML file must adhere to an [XML schema definition (XSD)](xsd.md).
-
-If the Start layout that you export contains tiles for desktop apps or URL links, `Export-StartLayout` uses `DesktopApplicationLinkPath` in the resulting file. Use a text or XML editor to change `DesktopApplicationLinkPath` to `DesktopApplicationID`. See [Specify Start tiles](start-layout-xml-desktop.md#specify-start-tiles) for details on using the app ID in place of the link path.
-
-All clients that the Start layout applies to must have the apps and other shortcuts present on the local system in the same location as the source for the Start layout.
-
-For scripts and application tile pins to work correctly, follow these rules:
-
-- Executable files and scripts should be listed in `%ProgramFiles%` or wherever the installer of the app places them
-- Shortcuts that pin to Start should be placed in `%ProgramData%\Microsoft\Windows\Start Menu\Programs`
-- If you place executable files or scripts in the `%ProgramData%\Microsoft\Windows\Start Menu\Programs` folder, they won't pin to Start
-
-After you export the layout, decide whether you want to apply a *full* Start layout or a *partial* Start layout:
-
-- When a full Start layout is applied, the users can't pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they can't pin any apps to Start
-- When a partial Start layout is applied, the contents of the specified tile groups can't be changed, but users can move those groups, and can also create and customize their own groups
-
-#### Configure a partial Start layout
-
-A partial Start layout enables you to add one or more customized tile groups to users' Start screens or menus, while still allowing users to make changes to other parts of the Start layout. All groups that you add are *locked*, meaning users can't change the contents of those tile groups, however users can change the location of those groups. Locked groups are identified with an icon, as shown in the following image.
-
-:::image type="content" source="images/windows-10-partial-layout.png" alt-text="Screenshot of the Windows 10 Start menu with partial layout.":::
-
-When a partial Start layout is applied for the first time, the new groups are added to the users' existing Start layouts. If an app tile is in both an existing group and in a new locked group, the duplicate app tile is removed from the existing (unlocked) group.
-
-When a partial Start layout is applied to a device that already has a Start layout applied, groups that were added previously are removed and the groups in the new layout are added.
-
-> [!NOTE]
-> If you remove the policy setting, the groups remain on the devices but become unlocked.
-
-To configure a partial Start screen layout:
-
-Open the layout XML file and find the `<DefaultLayoutOverride>` element. Add `LayoutCustomizationRestrictionType="OnlySpecifiedGroups"` to the element. For example:
-
-```xml
-<DefaultLayoutOverride LayoutCustomizationRestrictionType="OnlySpecifiedGroups">
-```
-
 ::: zone-end
 
 ::: zone pivot="windows-11"
@@ -164,11 +125,65 @@ You can update the JSON file to:
 
 ::: zone-end
 
-#### Start layout example
+### Start layout example
 
 Here you can find an example of Start layout that you can use as a reference:
 
 [!INCLUDE [example-start-layout](includes/example-start-layout.md)]
+
+::: zone pivot="windows-10"
+
+### Change the Start layout XML file
+
+> [!CAUTION]
+> When you make changes to the exported layout, be aware that the XML file must adhere to an [XML schema definition (XSD)](xsd.md).
+
+If the Start layout that you export contains tiles for desktop apps or URL links, `Export-StartLayout` uses `DesktopApplicationLinkPath` in the resulting file. Use a text or XML editor to change `DesktopApplicationLinkPath` to `DesktopApplicationID`. See [Specify Start tiles](start-layout-xml-desktop.md#specify-start-tiles) for details on using the app ID in place of the link path.
+
+All clients that the Start layout applies to must have the apps and other shortcuts present on the local system in the same location as the source for the Start layout.
+
+For scripts and application tile pins to work correctly, follow these rules:
+
+- Executable files and scripts should be listed in `%ProgramFiles%` or wherever the installer of the app places them
+- Shortcuts that pin to Start should be placed in `%ProgramData%\Microsoft\Windows\Start Menu\Programs`
+- If you place executable files or scripts in the `%ProgramData%\Microsoft\Windows\Start Menu\Programs` folder, they won't pin to Start
+
+After you export the layout, decide whether you want to apply a *full* Start layout or a *partial* Start layout:
+
+- When a full Start layout is applied, the users can't pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they can't pin any apps to Start
+- When a partial Start layout is applied, the contents of the specified tile groups can't be changed, but users can move those groups, and can also create and customize their own groups
+
+#### Configure a partial Start layout
+
+:::row:::
+:::column span="2":::
+
+A partial Start layout enables you to add one or more customized tile groups to users' Start screens or menus, while still allowing users to make changes to other parts of the Start layout. All groups that you add are *locked*, meaning users can't change the contents of those tile groups, however users can change the location of those groups. Locked groups are identified with an icon, as shown in the following image.
+
+:::column-end:::
+:::column span="2":::
+
+:::image type="content" source="images/windows-10-partial-layout.png" alt-text="Screenshot of the Windows 10 Start menu with partial layout." lightbox="images/windows-10-partial-layout.png"":::
+
+:::column-end:::
+:::row-end:::
+
+When a partial Start layout is applied for the first time, the new groups are added to the users' existing Start layouts. If an app tile is in both an existing group and in a new locked group, the duplicate app tile is removed from the existing (unlocked) group.
+
+When a partial Start layout is applied to a device that already has a Start layout applied, groups that were added previously are removed and the groups in the new layout are added.
+
+> [!NOTE]
+> If you remove the policy setting, the groups remain on the devices but become unlocked.
+
+To configure a partial Start screen layout:
+
+Open the layout XML file and find the `<DefaultLayoutOverride>` element. Add `LayoutCustomizationRestrictionType="OnlySpecifiedGroups"` to the element. For example:
+
+```xml
+<DefaultLayoutOverride LayoutCustomizationRestrictionType="OnlySpecifiedGroups">
+```
+
+::: zone-end
 
 ### Deploy the Start layout configuration
 
@@ -290,11 +305,11 @@ After the settings are applied, sign in to the device. You'll see the Start layo
 :::column-end:::
 :::column span="2":::
 ::: zone pivot="windows-10"
-    :::image type="content" source="images/windows-10.png" alt-text="Screenshot of the Windows 10 Start menu." border="false" lightbox=".images/windows-10.png":::
+    :::image type="content" source="images/windows-10.png" alt-text="Screenshot of the Windows 10 Start menu." border="false" lightbox="images/windows-10.png":::
 ::: zone-end
 
 ::: zone pivot="windows-11"
-    :::image type="content" source="images/windows-11.png" alt-text="Screenshot of the Windows 11 Start menu." border="false" lightbox=".images/windows-11.png":::
+    :::image type="content" source="images/windows-11.png" alt-text="Screenshot of the Windows 11 Start menu." border="false" lightbox="images/windows-11.png":::
 ::: zone-end
 
     :::column-end:::
