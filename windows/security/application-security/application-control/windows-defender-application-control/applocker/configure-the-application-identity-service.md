@@ -40,3 +40,6 @@ Starting with Windows 10, the Application Identity service is now a protected pr
    ```
 
 - Create a security template that configures appidsvc to be automatic start, and apply it using secedit.exe or LGPO.exe.
+
+> [!NOTE]
+> The Startup type of the Application Identity service cannot be set to Manual using sc.exe. Therefore, we recommend to perform a system backup before changing it.
