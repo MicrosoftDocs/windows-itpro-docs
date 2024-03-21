@@ -33,7 +33,7 @@ To prepare a Start layout for export, customize the Start layout on a reference 
 
 1. Set up a device on which to customize the Start layout, which should have the operating system that is installed on the users' devices
 1. Install all apps and services that the Start layout should display
-1. Create a new user account that you'll use to customize the Start layout
+1. Create a new user account that you use to customize the Start layout
 
 To customize Start:
 
@@ -130,7 +130,7 @@ For scripts and application tile pins to work correctly, follow these rules:
 
 - Executable files and scripts should be listed in `%ProgramFiles%` or wherever the installer of the app places them
 - Shortcuts that pin to Start should be placed in `%ProgramData%\Microsoft\Windows\Start Menu\Programs`
-- If you place executable files or scripts in the `%ProgramData%\Microsoft\Windows\Start Menu\Programs` folder, they won't pin to Start
+- If you place executable files or scripts in the `%ProgramData%\Microsoft\Windows\Start Menu\Programs` folder, they don't pin to Start
 
 After you export the layout, decide whether you want to apply a *full* Start layout or a *partial* Start layout:
 
@@ -154,7 +154,7 @@ A partial Start layout enables you to add one or more customized tile groups to 
 
 When a partial Start layout is applied for the first time, the new groups are added to the users' existing Start layouts. If an app tile is in both an existing group and in a new locked group, the duplicate app tile is removed from the existing (unlocked) group.
 
-When a partial Start layout is applied to a device that already has a Start layout applied, groups that were added previously are removed and the groups in the new layout are added.
+If you apply a partial Start layout to a device with an existing Start layout applied, groups that were added previously are removed, and the groups in the new layout are added.
 
 > [!NOTE]
 > If you remove the policy setting, the groups remain on the devices but become unlocked.
@@ -176,13 +176,13 @@ You can edit the JSON file to make any modifications to the **Pinned** section o
 1. Open the `LayoutModification.json` file in a JSON editor, such as Visual Studio Code or Notepad
 1. The `pinnedList` section includes all the pins that are applied to the Start layout
 
-You can add more apps to this section using the following keys:
+You can add more apps to the section using the following keys:
 
 | Key | Description |
 |--|--|
-| `packagedAppID` | Use this option for Universal Windows Platform (UWP) apps. To pin a UWP app, use the app's AUMID. |
-| `desktopAppID` | Use this option for desktop apps. To pin a desktop app, use the app's AUMID. If the app doesn't have an AUMID, use the `desktopAppLink` instead. |
-| `desktopAppLink` | Use this option for desktop apps that don't have an associated AUMID. To pin this type of app, use the path to the `.lnk` shortcut that points to the app. |
+| `packagedAppID` | Used for Universal Windows Platform (UWP) apps. To pin a UWP app, use the app's AUMID. |
+| `desktopAppID` | Used for desktop apps. To pin a desktop app, use the app's AUMID. If the app doesn't have an AUMID, use the `desktopAppLink` instead. |
+| `desktopAppLink` | Used for desktop apps that don't have an associated AUMID. To pin this type of app, use the path to the `.lnk` shortcut that points to the app. |
 
 ::: zone-end
 
@@ -194,8 +194,7 @@ Learn how to [Find the Application User Model ID of an installed app](../store/f
 
 #### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune-10)
 
->[!WARNING]
->When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
+When a full Start layout is applied with policy settings, users can't pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they can't change the Start layout. When you apply a partial Start layout, the content of the specified tile groups can't be changed, but users can move the groups, and can create and customize their own groups.
 
 Two features enable Start layout control:
 
@@ -226,11 +225,8 @@ Three features enable Start and taskbar layout control:
 The `Export-StartLayout` cmdlet produces an XML file. Because Windows Configuration Designer produces a customizations.xml file that contains the configuration settings, adding the Start layout section to the customizations.xml file directly would result in an XML file embedded in an XML file. Before you add the Start layout section to the customizations.xml file, you must replace the markup characters in your layout.xml with escape characters.
 
 1. Copy the contents of layout.xml into an online tool that escapes characters
-1. During the procedure to create a provisioning package, you will copy the text with the escape characters and paste it in the customizations.xml file for your project
-
-## PPKG
-
-1. Expand **Runtime settings** > **Policies** > **Start**, and click **StartLayout**.
+1. During the procedure to create a provisioning package, copy the text with the escape characters and paste it in the customizations.xml file for your project
+1. Expand **Runtime settings** > **Policies** > **Start**, and select **StartLayout**
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
@@ -273,7 +269,7 @@ To configure devices with Microsoft Intune, [create a Settings catalog policy](/
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][MEM-1] with the [Start CSP][CSP-1]. Use one of the following settings:
+Alternatively, you can configure devices using a [custom policy][MEM-1] with the [Start CSP][WIN-1]. Use one of the following settings:
 
 | Setting |
 |--|
@@ -300,7 +296,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 :::row:::
 :::column span="2":::
 
-After the settings are applied, sign in to the device. You'll see the Start layout that you configured:
+After the settings are applied, sign in to the device. The Start layout that you configured is applied to the Start menu.
 
 > [!NOTE]
 > When you configure the Start layout with policy settings, you overwrite the entire layout. Users can change the order of the pinned elements, pin, or unpin itmes. When a user signs in again, the Start layout specified in the policy setting is reapplied, without retaining any user changes.
@@ -315,7 +311,7 @@ After the settings are applied, sign in to the device. You'll see the Start layo
     :::image type="content" source="images/windows-11.png" alt-text="Screenshot of the Windows 11 Start menu." border="false" lightbox="images/windows-11.png":::
 ::: zone-end
 
-    :::column-end:::
+:::column-end:::
 :::row-end:::
 
 ## Next steps
@@ -325,6 +321,6 @@ After the settings are applied, sign in to the device. You'll see the Start layo
 
 <!--links-->
 
-[WIN-1]: /windows/client-management/mdm/policy-csp-start
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
 [PS-1]: /powershell/module/startlayout/export-startlayout
+[WIN-1]: /windows/client-management/mdm/policy-csp-start

@@ -22,7 +22,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Configure the Start menu
-            url: start/configure.md
+            url: start/index.md
           - text: Customize the Taskbar
             url: taskbar/index.md
           - text: Configure the Lock Screen

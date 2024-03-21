@@ -287,7 +287,7 @@
     },
     {
       "source_path": "windows/configuration/customize-and-export-start-layout.md",
-      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     },
     {
@@ -872,6 +872,11 @@
     },
     {
       "source_path": "windows/configuration/start/start-layout-xml-desktop.md",
+      "redirect_url": "/windows/configuration/start/layout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/customize-and-export-start-layout.md",
       "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     }
