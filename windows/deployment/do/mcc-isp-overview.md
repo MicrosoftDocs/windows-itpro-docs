@@ -37,7 +37,7 @@ Microsoft Connected Cache uses Delivery Optimization as the backbone for Microso
 - Endpoint protection: Windows Defender definition updates
 - Xbox: Xbox Game Pass (PC only)
 
-#### Are you already peering with 8075?
+### Are you already peering with 8075?
 
 MCC complements peering by offloading static content that is served off of multiple CDNs such as Akamai, Lumen, Edgecast. Static content such as OS updates, Apps, Software installs etc. can't be served via 8075. So, even if you're peering with Microsoft, you can benefit from installing MCC.
 
