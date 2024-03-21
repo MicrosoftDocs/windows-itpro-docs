@@ -509,22 +509,9 @@ You must repeat this process for all variants that you want to support so that e
 
 ## Add the LayoutModification.xml file to the device
 
-Once you have created your LayoutModification.xml file to customize devices that will run Windows 10 for desktop editions, you can use Windows ICD methods to add the XML file to the device.
-
-1. In the **Available customizations** pane, expand **Runtime settings**, select **Start** > Select the **StartLayout** setting.
-1. In the middle pane, click **Browse** to open File Explorer.
-1. In the File Explorer window, navigate to the location where you saved your LayoutModification.xml file.
-
-1. Select the file and then click **Open**.
-
-This should set the value of **StartLayout**. The setting appears in the **Selected customizations** pane.
-
->[!NOTE]
->There is currently no way to add the .url and .lnk files through Windows ICD.
-
 Once you have created the LayoutModification.xml file and it is present in the device, the system overrides the base default layout and any Unattend settings used to customize Start.
 
-# Add image for secondary Microsoft Edge tiles
+## Add image for secondary Microsoft Edge tiles
 
 App tiles are the Start screen tiles that represent and launch an app. A tile that allows a user to go to a specific location in an app is a *secondary tile*. Some examples of secondary tiles include:
 

@@ -1,5 +1,5 @@
 ---
-title: Configure Windows taskbar
+title: Configure the Windows taskbar
 description: Administrators can pin more apps to the taskbar and remove default pinned apps from the taskbar by adding a section to a layout modification XML file.
 ms.topic: how-to
 ms.date: 08/18/2023
@@ -7,7 +7,7 @@ appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
 
-# Configure Windows Taskbar
+# Configure the Windows taskbar
 
 ::: zone pivot="windows-10"
 

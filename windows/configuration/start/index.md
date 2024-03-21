@@ -63,11 +63,11 @@ For advanced customizations and when you need to configure multiple devices, you
 > While many of the Start menu policy settings can be configured using both CSP and GPO, there are some settings that are only available using the Start Policy CSP. To learn about the available policy settings to configure the Start menu via CSP and GPO, see [Start menu policy settings](policy-settings.md).
 
 ::: zone pivot="windows-10"
-The configuration of the Start layout requires the use of an XML file that specifies the layout. To learn more about how to create and apply an XML file to configure the Start layout, see [Customize and export the Start layout](layout.md).
+The configuration of the Start layout requires the use of an XML file that specifies the layout. To learn more about how to create and apply an XML file to configure the Start layout, see [Customize the Start layout](layout.md).
 ::: zone-end
 
 ::: zone pivot="windows-11"
-The configuration of the Start layout requires the use of a JSON file that specifies the layout. To learn more about how to create and apply a JSON file to configure the Start layout, see [Customize and export the Start layout](layout.md).
+The configuration of the Start layout requires the use of a JSON file that specifies the layout. To learn more about how to create and apply a JSON file to configure the Start layout, see [Customize the Start layout](layout.md).
 
 > [!IMPORTANT]
 > The JSON file can be applied to devices using the [Start layout policy CSP](policy-settings.md#start-layout) only. It's not possible to apply the JSON file using group policy.
@@ -77,7 +77,7 @@ The configuration of the Start layout requires the use of a JSON file that speci
 
 In the next sections, you can learn more about the options available to configure Start menu settings using the Configuration Service Provider (CSP) and Group Policy (GPO):
 
-- [Customize and export the Start layout](layout.md)
+- [Customize the Start layout](layout.md)
 - [Start menu policy settings](policy-settings.md)
 
 <!--links-->
