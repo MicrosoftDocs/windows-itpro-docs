@@ -107,22 +107,6 @@ To export the Start layout to a JSON file:
     Export-StartLayout -Path "C:\Layouts\LayoutModification.json"
     ```
 
-1. Open the `LayoutModification.json` file in a JSON editor, such as Visual Studio Code or Notepad
-1. The `pinnedList` section includes all of the pinned apps. Copy the `pinnedList` content in the JSON file
-
-In your JSON file, you can add more apps to this section using the following keys:
-
-| Key | Description |
-|--|--|
-| packagedAppID | Use this option for Universal Windows Platform apps. To pin a UWP app, use the app's AUMID. |
-| desktopAppID | Use this option for unpackaged Win32 apps. To pin a Win32 app, use the app's AUMID. If the app doesn't have an AUMID, then enter the `desktopAppLink` instead. |
-| desktopAppLink | Use this option for unpackaged Win32 apps that don't have an associated AUMID. To pin this type of app, use the path to the `.lnk` shortcut that points to the app. |
-
-You can update the JSON file to:
-
-- Change the order of existing apps. The apps in the JSON file are shown on Start in the same order
-- Add more apps by entering the app ID
-
 ::: zone-end
 
 ### Start layout example
@@ -131,9 +115,9 @@ Here you can find an example of Start layout that you can use as a reference:
 
 [!INCLUDE [example-start-layout](includes/example-start-layout.md)]
 
-::: zone pivot="windows-10"
+### Change the configuration file
 
-### Change the Start layout XML file
+::: zone pivot="windows-10"
 
 > [!CAUTION]
 > When you make changes to the exported layout, be aware that the XML file must adhere to an [XML schema definition (XSD)](xsd.md).
@@ -184,6 +168,25 @@ Open the layout XML file and find the `<DefaultLayoutOverride>` element. Add `La
 ```
 
 ::: zone-end
+
+::: zone pivot="windows-11"
+
+You can edit the JSON file to make any modifications to the **Pinned** section of the Start layout. For example, you can change the order of the pinned elements, or add new apps.
+
+1. Open the `LayoutModification.json` file in a JSON editor, such as Visual Studio Code or Notepad
+1. The `pinnedList` section includes all the pins that are applied to the Start layout
+
+You can add more apps to this section using the following keys:
+
+| Key | Description |
+|--|--|
+| `packagedAppID` | Use this option for Universal Windows Platform (UWP) apps. To pin a UWP app, use the app's AUMID. |
+| `desktopAppID` | Use this option for desktop apps. To pin a desktop app, use the app's AUMID. If the app doesn't have an AUMID, use the `desktopAppLink` instead. |
+| `desktopAppLink` | Use this option for desktop apps that don't have an associated AUMID. To pin this type of app, use the path to the `.lnk` shortcut that points to the app. |
+
+::: zone-end
+
+Learn how to [Find the Application User Model ID of an installed app](../store/find-aumid.md).
 
 ### Deploy the Start layout configuration
 
