@@ -1,5 +1,5 @@
 items:
   - name: Configure access to Microsoft Store
-    href: store/index.md
+    href: index.md
   - name: Find the AUMID of an installed app
-    href: store/find-aumid.md
+    href: find-aumid.md

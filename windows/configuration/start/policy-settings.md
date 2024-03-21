@@ -59,7 +59,7 @@ Select one of the tabs to see the list of available settings:
 |-|-|-|
 |[Clear history of recently opened documents on exit](#clear-history-of-recently-opened-documents-on-exit)|❌|✅|
 |[Hide recently added apps](#hide-recently-added-apps)|✅|✅|
-|[Hide recent jumplists](#hiderecentjumplists)|✅|✅|
+|[Hide recent jumplists](#hide-recent-jumplists)|✅|✅|
 |[Hide recommended personalized sites](#hide-recommended-personalized-sites)|✅|✅|
 |[Hide recommended section](#hide-recommended-section)|✅|✅|
 
@@ -153,11 +153,11 @@ Select one of the tabs to see the list of available settings:
 |-|-|-|
 |[Allow pinned folder Documents](#allow-pinned-folder-documents)|✅|❌|
 |[Allow pinned folder Downloads](#allow-pinned-folder-downloads)|✅|❌|
-|[Allow pinned folder File Explorer](/allow-pinned-folder-file-explorer)|✅|❌|
-|[Allow pinned folder Home Group](#allow-pinned-folder-homegroup)|✅|❌|
+|[Allow pinned folder File Explorer](#allow-pinned-folder-file-explorer)|✅|❌|
+|[Allow pinned folder Home Group](#allow-pinned-folder-home-group)|✅|❌|
 |[Allow pinned folder Music](#allow-pinned-folder-music)|✅|❌|
 |[Allow pinned folder Network](#allow-pinned-folder-network)|✅|❌|
-|[Allow pinned folder Personal Folder](#allow-pinned-folder-personalfolder)|✅|❌|
+|[Allow pinned folder Personal Folder](#allow-pinned-folder-personal-folder)|✅|❌|
 |[Allow pinned folder Pictures](#allow-pinned-folder-pictures)|✅|❌|
 |[Allow pinned folder Settings](#allow-pinned-folder-settings)|✅|❌|
 |[Allow pinned folder Videos](#allow-pinned-folder-videos)|✅|❌|
