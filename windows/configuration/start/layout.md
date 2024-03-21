@@ -254,7 +254,7 @@ The GPO applies the Start and taskbar layout at the next user sign-in. Each time
 ::: zone pivot="windows-11"
 
 > [!IMPORTANT]
-> The JSON file can be applied to devices using the [Start layout policy CSP](policy-settings.md#start-layout) only. It's not possible to apply the JSON file using group policy.
+> The JSON file can be applied to devices using the [Start policy CSP][WIN-1] only. It's not possible to apply the JSON file using group policy.
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
