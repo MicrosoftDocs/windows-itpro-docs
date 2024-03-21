@@ -611,9 +611,9 @@ Finally, resources can be protected by denying access to endpoints that are unab
 
 Windows has an MDM client that ships as part of the operating system. This MDM client enables MDM servers to manage Windows-based devices without requiring a separate agent.
 
-### Third-party MDM server support
+### Non-Microsoft MDM server support
 
-Third-party MDM servers can manage Windows by using the MDM protocol. The built-in management client is able to communicate with a compatible server that supports the OMA-DM protocol to perform enterprise management tasks. For more information, see [Microsoft Entra integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm).
+Non-Microsoft MDM servers can manage Windows by using the MDM protocol. The built-in management client is able to communicate with a compatible server that supports the OMA-DM protocol to perform enterprise management tasks. For more information, see [Microsoft Entra integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm).
 
 > [!NOTE]
 > MDM servers do not need to create or download a client to manage Windows. For more information, see [Mobile device management](/windows/client-management/mdm/).

@@ -44,7 +44,7 @@ When first installed, network applications and services issue a *listen call* sp
 In either of these scenarios, once the rules are added, they must be deleted to generate the prompt again. If not, the traffic continues to be blocked.
 
 > [!NOTE]
-> The firewall's default settings are designed for security. Allowing all inbound connections by default introduces the network to various threats. Therefore, creating exceptions for inbound connections from third-party software should be determined by trusted app developers, the user, or the admin on behalf of the user.
+> The firewall's default settings are designed for security. Allowing all inbound connections by default introduces the network to various threats. Therefore, creating exceptions for inbound connections from non-Microsoft software should be determined by trusted app developers, the user, or the admin on behalf of the user.
 
 ### WDAC tagging policies
 
@@ -52,7 +52,7 @@ Windows Firewall supports the use of Windows Defender Application Control (WDAC)
 
 1. Deploy *WDAC AppId tagging policies*: a Windows Defender Application Control policy must be deployed, which specifies individual applications or groups of applications to apply a *PolicyAppId tag* to the process token(s). Then, the admin can define firewall rules that are scoped to all processes tagged with the matching *PolicyAppId*. For more information, see the [WDAC AppId tagging guide](../../../application-security/application-control/windows-defender-application-control/AppIdTagging/wdac-appid-tagging-guide.md) to create, deploy, and test an AppID policy to tag applications.
 1. Configure firewall rules using *PolicyAppId tags* using one of the two methods:
-    - Using the [PolicyAppId node of the Firewall CSP](/windows/client-management/mdm/firewall-csp#mdmstorefirewallrulesfirewallrulenamepolicyappid) with an MDM solution like Microsoft Intune. If you use Microsoft Intune, you can deploy the rules from Microsoft Intune Admin center, under the path **Endpoint security** > **Firewall** > **Create policy** > **Windows 10, Windows 11, and Windows Server** > **Windows Firewall Rules**. When creating the rules, provide the *AppId tag* in the **Policy App ID** setting  
+    - Using the [PolicyAppId node of the Firewall CSP](/windows/client-management/mdm/firewall-csp#mdmstorefirewallrulesfirewallrulenamepolicyappid) with an MDM solution like Microsoft Intune. If you use Microsoft Intune, you can deploy the rules from Microsoft Intune Admin center, under the path **Endpoint security** > **Firewall** > **Create policy** > **Windows 10, Windows 11, and Windows Server** > **Windows Firewall Rules**. When creating the rules, provide the *AppId tag* in the **Policy App ID** setting
     - Create local firewall rules with PowerShell: use the [`New-NetFirewallRule`](/powershell/module/netsecurity/new-netfirewallrule) cmdlet and specify the `-PolicyAppId` parameter. You can specify one tag at a time while creating firewall rules. Multiple User Ids are supported
 
 ## Local policy merge and application rules

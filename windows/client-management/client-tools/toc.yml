@@ -1,4 +1,6 @@
 items:
+  - name: Add, remove, or hide Windows features
+    href: add-remove-hide-features.md
   - name: Windows Tools/Administrative Tools
     href: administrative-tools-in-windows.md
   - name: Use Quick Assist to help users

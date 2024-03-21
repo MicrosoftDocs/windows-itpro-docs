@@ -28,7 +28,7 @@ Tunneling protocols:
 
 ## Universal Windows Platform VPN plug-in
 
-Using the UWP platform, third-party VPN providers can create app-containerized plug-ins using WinRT APIs, eliminating the complexity and problems often associated with writing to system-level drivers.
+Using the UWP platform, non-Microsoft VPN providers can create app-containerized plug-ins using WinRT APIs, eliminating the complexity and problems often associated with writing to system-level drivers.
 
 There are many Universal Windows Platform VPN applications, such as Pulse Secure, Cisco AnyConnect, F5 Access, Sonicwall Mobile Connect, and Check Point Capsule. If you want to use a UWP VPN plug-in, work with your vendor for any custom settings needed to configure your VPN solution.
 
@@ -41,7 +41,7 @@ The following image shows connection options in a VPN Profile configuration poli
 > [!div class="mx-imgBorder"]
 > ![Available connection types.](images/vpn-connection-intune.png)
 
-In Intune, you can also include custom XML for third-party plug-in profiles:
+In Intune, you can also include custom XML for non-Microsoft plug-in profiles:
 
 > [!div class="mx-imgBorder"]
 > ![Custom XML.](images/vpn-custom-xml-intune.png)

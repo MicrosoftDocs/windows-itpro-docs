@@ -1,7 +1,7 @@
 ---
 title: Configure Active Directory Federation Services in a hybrid certificate trust model
 description: Learn how to configure Active Directory Federation Services (AD FS) to support the Windows Hello for Business hybrid certificate trust model.
-ms.date: 01/03/2024
+ms.date: 03/12/2024
 ms.topic: tutorial
 ---
 
@@ -21,7 +21,7 @@ The CRA enrolls for an *enrollment agent certificate*, and the Windows Hello for
 Sign-in the AD FS server with *domain administrator* equivalent credentials.
 
 Open a **Windows PowerShell** prompt and type the following command:
-  
+
 ```PowerShell
 Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication -WindowsHelloCertificateProxyEnabled $true
 ```
