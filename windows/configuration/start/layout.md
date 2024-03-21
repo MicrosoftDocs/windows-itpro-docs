@@ -27,7 +27,7 @@ To customize the Windows Start layout and deploy its configuration to other devi
 > [!TIP]
 > While you can create your own configuration file, it's easier and faster to export the layout from an existing device.
 
-### Customize the Start screen on a reference device
+### Customize the Start layout on a reference device
 
 To prepare a Start layout for export, customize the Start layout on a reference device. To prepare a reference device:
 
@@ -42,7 +42,7 @@ To customize Start:
 1. Sign in to the reference device with the user account that you created
 1. Customize the Start layout as you want users to see it by using the following techniques:
 
-    - **Pin apps to Start**. From Start, type the name of the app. When the app appears in the search results, right-click the app, and select **Pin to Start**.
+    - **Pin apps to Start**. From Start, type the name of the app. When the app appears in the search results, right-click the app and select **Pin to Start**
       To view all apps, select **All apps**. Right-click any app, and pin or unpin it from Start
     - **Unpin apps** that you don't want to display. To unpin an app, right-click the app, and then select **Unpin from Start**
     - **Drag existing apps** on Start to reorder or group them
@@ -57,12 +57,12 @@ To customize Start:
 ::: zone pivot="windows-11"
 
 1. Sign in to the reference device with the user account that you created
-1. Customize the Start layout as you want users to see it by using the following techniques:
+1. Customize the **Pinned** section of the Start layout as you want users to see it by using the following techniques:
 
-    - **Pin apps to Start**. From Start, type the name of the app. When the app appears in the search results, right-click the app, and select **Pin to Start**.
+    - **Pin apps to Start**. From Start, type the name of the app. When the app appears in the search results, right-click the app and select **Pin to Start**
         To view all apps, select **All apps**. Right-click any app, and pin or unpin it from Start
     - **Unpin apps** that you don't want to display. To unpin an app, right-click the app, and then select **Unpin from Start**
-    - **Drag existing apps** on Start to reorder or group them
+    - **Drag existing apps** on Start to reorder them
 
 > [!IMPORTANT]
 > If the Start layout includes pins for apps that aren't installed on the target device, the pins for those apps aren't created until the apps are installed.
@@ -163,7 +163,7 @@ A partial Start layout enables you to add one or more customized tile groups to 
 :::column-end:::
 :::column span="2":::
 
-:::image type="content" source="images/windows-10-partial-layout.png" alt-text="Screenshot of the Windows 10 Start menu with partial layout." lightbox="images/windows-10-partial-layout.png"":::
+:::image type="content" source="images/windows-10-partial-layout.png" alt-text="Screenshot of the Windows 10 Start menu with partial layout." lightbox="images/windows-10-partial-layout.png":::
 
 :::column-end:::
 :::row-end:::
