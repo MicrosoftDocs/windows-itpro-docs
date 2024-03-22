@@ -1,5 +1,5 @@
 ---
-title: Start layout XML for desktop editions of Windows 10
+title: Start layout XML
 description: This article describes the options for customizing Start layout in LayoutModification.xml for Windows 10 desktop editions.
 ms.topic: reference
 ms.date: 10/02/2018
@@ -7,7 +7,7 @@ appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ---
 
-# Start layout XML Windows 10
+# Start layout XML
 
 On Windows 10 for desktop editions, the customized Start works by:
 
@@ -350,7 +350,7 @@ The following example shows how to add the **AppendDownloadOfficeTile** tag to y
 
 ## Sample LayoutModification.xml
 
-The following sample LayoutModification.xml shows how you can configure the Start layout for devices running Windows 10 for desktop editions:
+The following sample LayoutModification.xml shows how you can configure the Start layout:
 
 ```XML
 <LayoutModificationTemplate
