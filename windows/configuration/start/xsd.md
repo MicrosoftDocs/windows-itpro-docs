@@ -11,7 +11,7 @@ appliesto:
 
 This reference article contains the Start XML schema definition (XSD).
 
-## StartLayoutSchema
+## StartLayout
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
