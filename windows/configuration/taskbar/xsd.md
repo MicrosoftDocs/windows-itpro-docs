@@ -7,6 +7,10 @@ ms.date: 02/15/2024
 
 # Taskbar XML Schema Definition (XSD)
 
+This reference article contains the Taskbar XML schema definition (XSD).
+
+## TaskbarLayout
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
