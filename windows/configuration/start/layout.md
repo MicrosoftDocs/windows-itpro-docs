@@ -77,11 +77,11 @@ Once the Start layout is configured to meet your requirements, use the Windows P
 The exported customization consists of an XML file containing a list of tiles that define the Start layout.
 
 > [!NOTE]
-> The Start layout is located by default at `C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows\Shell\`.
+> You can find the default Start layout template in `%LOCALAPPDATA%\Microsoft\windows\Shell\DefaultLayouts.xml`.
 
 To export the Start layout to an XML file:
 
-1. While signed in with the same account that you used to customize Start, create a folder to save the `.json` file. For example, create the `C:\Layouts` folder
+1. While signed in with the same account that you used to customize Start, create a folder to save the `.xml` file. For example, create the `C:\Layouts` folder
 1. Open Windows PowerShell
 1. Run the following cmdlet:
 
@@ -122,15 +122,18 @@ Here you can find an example of Start layout that you can use as a reference:
 > [!CAUTION]
 > When you make changes to the exported layout, be aware that the XML file must adhere to an [XML schema definition (XSD)](xsd.md).
 
-If the Start layout that you export contains tiles for desktop apps or URL links, `Export-StartLayout` uses `DesktopApplicationLinkPath` in the resulting file. Use a text or XML editor to change `DesktopApplicationLinkPath` to `DesktopApplicationID`. See [Specify Start tiles](start-layout-xml-desktop.md#specify-start-tiles) for details on using the app ID in place of the link path.
+You can edit the XML file to make any modifications to the Start layout. For example, you can include  `<CustomTaskbarLayoutCollection>` to include the Taskbar customization.
 
-All clients that the Start layout applies to must have the apps and other shortcuts present on the local system in the same location as the source for the Start layout.
+If the Start layout that you export contains tiles for desktop apps or URL links, `Export-StartLayout` uses `DesktopApplicationLinkPath` in the resulting file. Use a text or XML editor to change `DesktopApplicationLinkPath` to `DesktopApplicationID`.
 
 For scripts and application tile pins to work correctly, follow these rules:
 
 - Executable files and scripts should be listed in `%ProgramFiles%` or wherever the installer of the app places them
 - Shortcuts that pin to Start should be placed in `%ProgramData%\Microsoft\Windows\Start Menu\Programs`
 - If you place executable files or scripts in the `%ProgramData%\Microsoft\Windows\Start Menu\Programs` folder, they don't pin to Start
+
+> [!NOTE]
+> All devices that you apply the Start layout to, must have the apps and other shortcuts present on the local system in the same location as the source for the Start layout.
 
 After you export the layout, decide whether you want to apply a *full* Start layout or a *partial* Start layout:
 
@@ -190,32 +193,57 @@ Learn how to [Find the Application User Model ID of an installed app](../store/f
 
 ### Deploy the Start layout configuration
 
+[!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
+
 ::: zone pivot="windows-10"
 
 #### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune-10)
 
-When a full Start layout is applied with policy settings, users can't pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they can't change the Start layout. When you apply a partial Start layout, the content of the specified tile groups can't be changed, but users can move the groups, and can create and customize their own groups.
+To configure devices with Microsoft Intune, [create a Settings catalog policy](/mem/intune/configuration/settings-catalog) and use one of the following settings:
 
->[!NOTE]
->To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
->Don't include XML Prologs like \<?xml version="1.0" encoding="utf-8"?\> in the Start layout XML file. The settings may not be reflected correctly.
+| Category | Setting name | Value |
+|--|--|--|
+| **Start** | Start Layout | Content of the XML file|
+| **Start** | Start Layout (User) | Content of the XML file|
+
+[!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
+
+Alternatively, you can configure devices using a [custom policy][MEM-1] with the [Start CSP][WIN-1]. Use one of the following settings:
+
+| Setting |
+|--|
+| - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-Start#startlayout)<br>- **String:** <br>- **Value:** content of the XML file |
+| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-Start#startlayout)<br>- **Data type:** <br>- **Value:** content of the XML file |
+
+[!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
 
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg-10)
 
-Expand **Runtime settings** > **Policies** > **Start**, and select **StartLayout**
+[!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
+
+- **Path:** `Policies/Start/StartLayout`
+- **Value:** content of the XML file
+
+[!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
-When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups. When you apply a taskbar layout, users will still be able to pin and unpin apps, and change the order of pinned apps.
+To configure a device with group policy, use the [Local Group Policy Editor](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc731745(v=ws.10)). To configure multiple devices joined to Active Directory, [create or edit](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc754740(v=ws.11)) a group policy object (GPO) and use one of the following settings:
 
-You can modify the Start .xml file to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration.
+| Group policy path | Group policy setting | Value |
+| - | - | - |
+|**Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**| Start Layout | Path to the XML file |
+|**User Configuration** > **Administrative Templates** > **Start Menu and Taskbar**| Start Layout | Path to the XML file |
+
+[!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
 
 The GPO applies the Start and taskbar layout at the next user sign-in. Each time the user signs in, the timestamp of the .xml file with the Start and taskbar layout is checked and if a newer version of the file is available, the settings in the latest version of the file are applied.
 
-> [!IMPORTANT]
-> If you disable Start Layout policy settings that have been in effect and then re-enable the policy, users will not be able to make changes to Start, however the layout in the .xml file will not be reapplied unless the file has been updated. In Windows PowerShell, you can update the timestamp on a file by running the following command:
->
-> `(ls <path>).LastWriteTime = Get-Date`
+---
+
+>[!NOTE]
+>You can apply a Start layout to a mounted Windows image, with the PowerShell [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
+>Don't include XML Prologs like \<?xml version="1.0" encoding="utf-8"?\> in the Start layout XML file.
 
 ::: zone-end
 
@@ -223,8 +251,6 @@ The GPO applies the Start and taskbar layout at the next user sign-in. Each time
 
 > [!IMPORTANT]
 > The JSON file can be applied to devices using the [Start policy CSP][WIN-1] only. It's not possible to apply the JSON file using group policy.
-
-[!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
 #### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune-11)
 
@@ -241,8 +267,8 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 | Setting |
 |--|
-| - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start?WT.mc_id=Portal-Microsoft_Intune_Workflows#configurestartpins)<br>- **String:** <br>- **Value:** content of the JSON file |
-| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start?WT.mc_id=Portal-Microsoft_Intune_Workflows#configurestartpins)<br>- **Data type:** <br>- **Value:** content of the JSON file |
+| - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start#configurestartpins)<br>- **String:** <br>- **Value:** content of the JSON file |
+| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start#configurestartpins)<br>- **Data type:** <br>- **Value:** content of the JSON file |
 
 [!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
 
@@ -255,9 +281,9 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 [!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
-::: zone-end
-
 ---
+
+::: zone-end
 
 ## User experience
 
@@ -266,8 +292,17 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 After the settings are applied, sign in to the device. The Start layout that you configured is applied to the Start menu.
 
-> [!NOTE]
-> When you configure the Start layout with policy settings, you overwrite the entire layout. Users can change the order of the pinned elements, pin, or unpin itmes. When a user signs in again, the Start layout specified in the policy setting is reapplied, without retaining any user changes.
+::: zone pivot="windows-10"
+
+When a full Start layout is applied with policy settings, users can't pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they can't change the Start layout. When you apply a partial Start layout, the content of the specified tile groups can't be changed, but users can move the groups, and can create and customize their own groups.
+
+::: zone-end
+
+::: zone pivot="windows-11"
+
+When you configure the Start layout with policy settings, you overwrite the entire layout. Users can change the order of the pinned elements, pin, or unpin itmes. When a user signs in again, the Start layout specified in the policy setting is reapplied, without retaining any user changes.
+
+::: zone-end
 
 :::column-end:::
 :::column span="2":::
