@@ -23,7 +23,7 @@ This article provides additional resources about [deprecated features for Window
 
 ## WordPad
 
-WordPad will be removed from all editions of Windows in an upcoming release. As a result, Windows will no longer have a built-in, default RTF reader. We recommend Microsoft Word for rich text documents like .doc and .rtf and Notepad for plain text documents like .txt. The following binaries will be removed as a result of WordPad removal:
+WordPad will be removed from all editions of Windows starting in Windows 11, version 24H2 and Windows Server 2025. As a result, Windows will no longer have a built-in, default RTF reader. We recommend Microsoft Word for rich text documents like .doc and .rtf and Notepad for plain text documents like .txt. The following binaries will be removed as a result of WordPad removal:
 
 - wordpad.exe
 - wordpadfilter.dll
