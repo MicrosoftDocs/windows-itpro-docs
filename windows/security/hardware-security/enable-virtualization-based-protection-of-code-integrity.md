@@ -13,7 +13,7 @@ appliesto:
 
 # Enable virtualization-based protection of code integrity
 
-**Memory integrity** is a virtualization-based security (VBS) feature available in Windows. Memory integrity and VBS improve the threat model of Windows and provide stronger protections against malware trying to exploit the Windows kernel. VBS uses the Windows hypervisor to create an isolated virtual environment that becomes the root of trust of the OS that assumes the kernel can be compromised. Memory integrity is a critical component that protects and hardens Windows by running kernel mode code integrity within the isolated virtual environment of VBS. Memory integrity also restricts kernel memory allocations that could be used to compromise the system.
+**Memory integrity** is a Virtualization-based security (VBS) feature available in Windows. Memory integrity and VBS improve the threat model of Windows and provide stronger protections against malware trying to exploit the Windows kernel. VBS uses the Windows hypervisor to create an isolated virtual environment that becomes the root of trust of the OS that assumes the kernel can be compromised. Memory integrity is a critical component that protects and hardens Windows by running kernel mode code integrity within the isolated virtual environment of VBS. Memory integrity also restricts kernel memory allocations that could be used to compromise the system.
 
 > [!NOTE]
 >
@@ -57,7 +57,7 @@ Use the **Virtualization Based Technology** > **Hypervisor Enforced Code Integri
    ![Enable memory integrity using Group Policy.](images/enable-hvci-gp.png)
 1. Select **Ok** to close the editor.
 
-To apply the new policy on a domain-joined computer, either restart or run `gpupdate /force` in an elevated command prompt.
+To apply the new policy on a domain-joined computer, either restart or run `gpupdate /force` in an elevated Command Prompt.
 
 ### Use registry keys to enable memory integrity
 
@@ -204,7 +204,7 @@ This field describes the required security properties to enable VBS.
 
 ##### SecurityServicesConfigured
 
-This field indicates whether Credential Guard or memory integrity has been configured.
+This field indicates whether Credential Guard or memory integrity is configured.
 
 | Value | Description                                           |
 |-------|-------------------------------------------------------|
@@ -252,7 +252,7 @@ Another method to determine the available and enabled VBS features is to run msi
 
 ## Troubleshooting
 
-- If a device driver fails to load or crashes at runtime, you may be able to update the driver using **Device Manager**.
+- If a device driver fails to load or crashes at runtime, you might be able to update the driver using **Device Manager**.
 - If you experience a critical error during boot or your system is unstable after turning on memory integrity, you can recover using the Windows Recovery Environment (Windows RE).
     1. First, disable any policies that are used to enable VBS and memory integrity, for example Group Policy.
     2. Then, boot to Windows RE on the affected computer, see [Windows RE Technical Reference](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference).
@@ -282,5 +282,5 @@ Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true
 - The Hyper-V host must run at least Windows Server 2016 or Windows 10 version 1607.
 - The Hyper-V virtual machine must be Generation 2, and running at least Windows Server 2016 or Windows 10.
 - Memory integrity and [nested virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization) can be enabled at the same time. To enable the Hyper-V role on the virtual machine, you must first install the Hyper-V role in a Windows nested virtualization environment.
-- Virtual Fibre Channel adapters aren't compatible with memory integrity. Before attaching a virtual Fibre Channel Adapter to a virtual machine, you must first opt out of virtualization-based security using `Set-VMSecurity`.
-- The AllowFullSCSICommandSet option for pass-through disks isn't compatible with memory integrity. Before configuring a pass-through disk with AllowFullSCSICommandSet, you must first opt out of virtualization-based security using `Set-VMSecurity`.
+- Virtual Fibre Channel adapters aren't compatible with memory integrity. Before attaching a virtual Fibre Channel Adapter to a virtual machine, you must first opt out of Virtualization-based security using `Set-VMSecurity`.
+- The AllowFullSCSICommandSet option for pass-through disks isn't compatible with memory integrity. Before configuring a pass-through disk with AllowFullSCSICommandSet, you must first opt out of Virtualization-based security using `Set-VMSecurity`.
