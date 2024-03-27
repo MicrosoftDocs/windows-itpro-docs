@@ -1,5 +1,5 @@
 items:
 - name: Customize the Taskbar
-  href: configure.md
+  href: index.md
 - name: Supported Taskbar CSPs
-  href: supported-csp-taskbar-windows.md
+  href: policy-settings.md
