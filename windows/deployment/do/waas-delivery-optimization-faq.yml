@@ -79,7 +79,7 @@ sections:
         answer: | 
           Delivery Optimization listens on port 7680 for requests from other peers by using TCP/IP. The service registers and opens this port on the device. The port must be set to accept inbound and outbound TCP traffic through your firewall. If you don't allow traffic over port 7680, you can't use the peer-to-peer functionality of Delivery Optimization. However, devices can still successfully download updates by using HTTP over port 80 (or HTTPS over port 443 where applicable).
 
-          If you set the "Download Mode" policy to "Group (2)", Teredo will be used by Delivery Optimization to connect to peer devices across NATs. You must allow inbound and outbound UDP traffic over port 3544. Look for a "NAT traversal" setting in your firewall to set this up.
+          If you set the "Download Mode" policy to "Group (2)" or "Internet (3)", Teredo will be used by Delivery Optimization to connect to peer devices across NATs. You must allow inbound and outbound UDP traffic over port 3544. Look for a "NAT traversal" setting in your firewall to set this up.
 
           Delivery Optimization also communicates with its cloud service by using HTTPS over port 443.
           
