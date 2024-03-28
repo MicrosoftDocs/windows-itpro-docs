@@ -7,7 +7,7 @@ author: frankroj
 ms.author: frankroj
 manager: aaroncz
 ms.topic: article
-ms.date: 03/19/2024
+ms.date: 03/26/2024
 ms.subservice: itpro-deploy
 zone_pivot_groups: windows-versions-11-10
 appliesto:
@@ -111,7 +111,7 @@ Once the **Time & language > Language & region** pane is open, add the fonts ass
 
         1. Once the desired language is found, select the language, and then select the **Next** button.
 
-        1. In the **Install language features** window, select the desired options for the language, and then select the **Add** button.
+        1. In the **Install language features** window, select the desired options for the language, and then select the **Install** button.
 
     1. The desired language should now be available in the drop-down menu next to **Windows display language**. Drop down the **Windows display language** menu and select the desired language.
 
@@ -131,7 +131,7 @@ Once the **Language** pane is open, add the fonts associated with a language and
 
 1. Drop down the menu below **Windows display language** to show all of the languages currently added to the device.
 
-1. If the desired language isn't listed, add the fonts for the desired language by selecting the **+** button next to **Add a language**.
+1. If the desired language isn't listed, add the fonts for the desired language by selecting the **+** button next to **Add a language** in the **Preferred languages** section.
 
 1. In the **Choose a language to install** window that opens:
 
@@ -139,7 +139,7 @@ Once the **Language** pane is open, add the fonts associated with a language and
 
     1. Once the desired language is found, select the language, and then select the **Next** button.
 
-    1. In the **Install language features** window, select the desired features for the language, and then select the **Add** button.
+    1. In the **Install language features** window, select the desired features for the language, and then select the **Install** button.
 
 1. The desired language should now be available in the drop-down menu below **Windows display language**. Drop down the **Windows display language** menu and select the desired language.
 
