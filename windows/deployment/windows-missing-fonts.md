@@ -7,7 +7,7 @@ author: frankroj
 ms.author: frankroj
 manager: aaroncz
 ms.topic: article
-ms.date: 03/13/2024
+ms.date: 03/28/2024
 ms.subservice: itpro-deploy
 zone_pivot_groups: windows-versions-11-10
 appliesto:
@@ -131,7 +131,7 @@ Once the **Language** pane is open, add the fonts associated with a language and
 
 1. Drop down the menu below **Windows display language** to show all of the languages currently added to the device.
 
-1. If the desired language isn't listed, add the fonts for the desired language by selecting the **+** button next to **Add a language**.
+1. If the desired language isn't listed, add the fonts for the desired language by selecting the **+** button next to **Add a language** in the **Preferred languages** section.
 
 1. In the **Choose a language to install** window that opens:
 
@@ -203,7 +203,7 @@ Once the **System > Optional features** pane is open, add a supplemental font wi
 
     1. Once all of the desired supplemental fonts are selected, select the **Next** button.
 
-    1. Review the selected list of features and then select the **Install** button to add the selected features.
+    1. Review the selected list of features and then select the **Add** button to add the selected features.
 
 ::: zone-end
 
@@ -227,7 +227,7 @@ Once the **Optional features** pane is open, add a supplemental font with the fo
 
     1. Find the desired supplemental font to add and then select the box next to the supplemental font to add it. Multiple supplemental fonts can be selected.
 
-    1. Once all of the desired supplemental fonts are selected, select the **Install** button.
+    1. Once all of the desired supplemental fonts are selected, select the **Add** button.
 
 ::: zone-end
 
