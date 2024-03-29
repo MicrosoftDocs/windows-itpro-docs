@@ -227,7 +227,7 @@ A KMS host running a currently supported version of Windows Server can activate 
 
 ### Generic volume licensing keys
 
-When creating installation media or images for client computers that will be activated by KMS or Active Directory-based activation, install a generic volume license key (GVLK) for the edition of Windows being creating. GVLKs are also referred to as KMS client setup keys.
+If computers are activated with KMS or Active Directory-based activation when using custom installation media or an image to install Windows, install a generic volume license key (GVLK) when creating the custom installation media or image. The GVLK should match the edition of Windows being installed.
 
 Installation media from Microsoft for Enterprise editions of the Windows operating system might already contain the GVLK. One GVLK is available for each type of installation. The GVLK doesn't activate the software against Microsoft activation servers, but rather against a KMS or Active Directory-based activation object. In other words, the GVLK doesn't work unless a valid KMS host key can be found. GVLKs are the only product keys that don't need to be kept confidential.
 
