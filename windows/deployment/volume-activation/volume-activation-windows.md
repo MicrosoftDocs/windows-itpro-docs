@@ -49,7 +49,7 @@ The following items are needed to successfully plan and implement a volume activ
 - Determine the monitoring and reporting needs in the organization.
 - Install and configure the tools required to support the methods selected.
 
-Keep in mind that the method of activation doesn't change an organization's responsibility to the licensing requirements. All software used in an organization must be ensured it's properly licensed and activated in accordance with the terms of the licensing agreements in place.
+Keep in mind that the method of activation doesn't change an organization's responsibility to the licensing requirements. Ensure that all software used in an organization is properly licensed and activated in accordance with the terms of the licensing agreements in place.
 
 ## Related content
 
