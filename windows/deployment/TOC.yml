@@ -185,15 +185,15 @@
       - name: Volume Activation
         items:
         - name: Overview
-          href: volume-activation/volume-activation-windows-10.md
+          href: volume-activation/volume-activation-windows.md
         - name: Plan for volume activation
           href: volume-activation/plan-for-volume-activation-client.md
         - name: Activate using Key Management Service
           href: volume-activation/activate-using-key-management-service-vamt.md
         - name: Activate using Active Directory-based activation
           href: volume-activation/activate-using-active-directory-based-activation-client.md
-        - name: Activate clients running Windows 10
-          href: volume-activation/activate-windows-10-clients-vamt.md
+        - name: Activate clients running Windows
+          href: volume-activation/activate-windows-clients-vamt.md
         - name: Monitor activation
           href: volume-activation/monitor-activation-client.md
         - name: Use the Volume Activation Management Tool

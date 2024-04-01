@@ -1,19 +1,19 @@
 ---
-title: Add and Manage Products (Windows 10)
-description: Add client computers into the Volume Activation Management Tool (VAMT). After you add the computers, you can manage the products that are installed on your network.
+title: Add and Manage Products
+description: Add client computers into the Volume Activation Management Tool (VAMT). After the computers are added, the products that are installed in the network can be managed.
 ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 11/07/2022
+ms.date: 03/29/2024
 ms.topic: article
 ms.subservice: itpro-fundamentals
 ---
 
 # Add and manage products
 
-This section describes how to add client computers into the Volume Activation Management Tool (VAMT). After the computers are added, you can manage the products that are installed on your network.
+This section describes how to add client computers into the Volume Activation Management Tool (VAMT). After the computers are added, the products that are installed in the network can be managed.
 
 ## In this Section
 
