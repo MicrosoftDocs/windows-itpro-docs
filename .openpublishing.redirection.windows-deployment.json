@@ -1129,6 +1129,16 @@
       "source_path": "windows/deployment/windows-10-missing-fonts.md",
       "redirect_url": "/windows/deployment/windows-missing-fonts",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/volume-activation/volume-activation-windows-10.md",
+      "redirect_url": "/windows/deployment/volume-activation/volume-activation-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/volume-activation/activate-windows-10-clients-vamt.md",
+      "redirect_url": "/windows/deployment/volume-activation/activate-windows-clients-vamt",
+      "redirect_document_id": false
     }
   ]
 }
