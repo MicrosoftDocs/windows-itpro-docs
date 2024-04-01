@@ -11,7 +11,7 @@ ms.date: 12/01/2022
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
-As you deploy Windows Defender Application Control (WDAC), you might need to sign catalog files or WDAC policies internally. To do this signing, you'll either need a publicly issued code signing certificate or an internal CA. If you've purchased a code-signing certificate, you can skip this article, and instead follow other articles listed in the [Windows Defender Application Control Deployment Guide](wdac-deployment-guide.md).
+As you deploy Windows Defender Application Control (WDAC), you might need to sign catalog files or WDAC policies internally. To do this signing, you'll either need to use [Microsoft's Trusted Signing service](https://learn.microsoft.com/azure/trusted-signing/), a publicly issued code signing certificate or an internal CA. If you've purchased a code signing certificate, you can skip this article, and instead follow other articles listed in the [Windows Defender Application Control Deployment Guide](wdac-deployment-guide.md).
 
 If you have an internal CA, complete these steps to create a code signing certificate.
 
@@ -20,7 +20,7 @@ If you have an internal CA, complete these steps to create a code signing certif
 >
 > - All policies, including base and supplemental, must be signed according to the [PKCS 7 Standard](https://datatracker.ietf.org/doc/html/rfc5652).
 > - Use RSA keys with 2K, 3K, or 4K key size only. ECDSA isn't supported.
-> - You can use SHA-256, SHA-384, or SHA-512 as the digest algorithm on Windows 11, as well as Windows 10 and Windows Server 2019 and above after applying the November 2022 cumulative security update. All other devices only support SHA-256.
+> - You can use SHA-256, SHA-384, or SHA-512 as the digest algorithm on Windows 11, as well as Windows 10 and Windows Server 2019 and above after applying the November 2022 cumulative security update. All other devices only support SHA256.
 > - Don't use UTF-8 encoding for certificate fields, like 'subject common name' and 'issuer common name'. These strings must be encoded as PRINTABLE_STRING, IA5STRING or BMPSTRING.
 
 1. Open the Certification Authority Microsoft Management Console (MMC) snap-in, and then select your issuing CA.

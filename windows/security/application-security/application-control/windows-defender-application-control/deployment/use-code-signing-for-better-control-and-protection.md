@@ -38,6 +38,6 @@ For more information on using signed policies, see [Use signed policies to prote
 
 Some ways to obtain code signing certificates for your own use, include:
 
+- Use Microsoft's [Trusted Signing service](https://learn.microsoft.com/azure/trusted-signing/).
 - Purchase a code signing certificate from one of the [Microsoft Trusted Root Program participants](/security/trusted-root/participants-list).
 - To use your own digital certificate or public key infrastructure (PKI) to issue code signing certificates, see [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-wdac.md).
-- Use Microsoft's [Azure Code Signing (ACS) service](https://aka.ms/AzureCodeSigning).
