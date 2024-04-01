@@ -1,12 +1,12 @@
 ---
-title: Manage Activations (Windows 10)
+title: Manage Activations
 description: Learn how to manage activations and how to activate a client computer by using various activation methods.
 ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 11/07/2022
+ms.date: 03/29/2024
 ms.topic: article
 ms.subservice: itpro-fundamentals
 ---
