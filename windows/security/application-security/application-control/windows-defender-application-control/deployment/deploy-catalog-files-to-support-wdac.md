@@ -75,7 +75,7 @@ When finished, the tool saves the files to your desktop. You can view the `*.cdf
 
 ## Sign your catalog file
 
-Now that you've created a catalog file for your app, you're ready to sign it. It is recommended to use [Microsoft's Trusted Signing service](https://learn.microsoft.com/azure/trusted-signing/) for catalog signing. Optionally, you can manually sign the catalog using Signtool using the following instructions.
+Now that you've created a catalog file for your app, you're ready to sign it. It is recommended to use [Microsoft's Trusted Signing service](/azure/trusted-signing/) for catalog signing. Optionally, you can manually sign the catalog using Signtool using the following instructions.
 
 ### Catalog signing with SignTool.exe
 
