@@ -75,7 +75,7 @@ When finished, the tool saves the files to your desktop. You can view the `*.cdf
 
 ## Sign your catalog file
 
-Now that you've created a catalog file for your app, you're ready to sign it. It is recommended to use [Microsoft's Trusted Signing service](/azure/trusted-signing/) for catalog signing. Optionally, you can manually sign the catalog using Signtool using the following instructions.
+Now that you've created a catalog file for your app, you're ready to sign it. We recommend using [Microsoft's Trusted Signing service](/azure/trusted-signing/) for catalog signing. Optionally, you can manually sign the catalog using Signtool using the following instructions.
 
 ### Catalog signing with SignTool.exe
 
@@ -336,13 +336,16 @@ Some of the known issues using Package Inspector to build a catalog file are:
     - Get the value of the reg key at HKEY\_CURRENT\_USER/PackageInspectorRegistryKey/c: (this USN was the most recent one when you ran PackageInspector start). Then use fsutil.exe to read that starting location. Replace "RegKeyValue" in the following command with the value from the reg key:<br>
     `fsutil usn readjournal C: startusn=RegKeyValue > inspectedusn.txt`
     - The above command should return an error if the older USNs don't exist anymore due to overflow
-    - You can expand the USN Journal size using: `fsutil usn createjournal` with a new size and allocation delta. `Fsutil usn queryjournal` shows the current size and allocation delta, so using a multiple of that may help
+    - You can expand the USN Journal size using: `fsutil usn createjournal` with a new size and allocation delta. `Fsutil usn queryjournal` shows the current size and allocation delta, so using a multiple of that may help.
+
 - **CodeIntegrity - Operational event log is too small to track all files created by the installer**
   - To diagnose whether Eventlog size is the issue, after running through Package Inspector:
     - Open Event Viewer and expand the **Application and Services//Microsoft//Windows//CodeIntegrity//Operational**. Check for a 3076 audit block event for the initial installer launch.
-    - To increase the Event log size, in Event Viewer right-click the operational log, select Properties, and then set new values
+    - To increase the Event log size, in Event Viewer right-click the operational log, select Properties, and then set new values.
+
 - **Installer or app files that change hash each time the app is installed or run**
   - Some apps generate files at run time whose hash value is different every time. You can diagnose this issue by reviewing the hash values in the 3076 audit block events (or 3077 enforcement events) that are generated. If each time you attempt to run the file you observe a new block event with a different hash, the package doesn't work with Package Inspector.
+
 - **Files with an invalid signature blob or otherwise "unhashable" files**
   - This issue arises when a signed file was modified in a way that invalidates the file's PE header. A file modified in this way is unable to be hashed according to the Authenticode spec.
   - Although these "unhashable" files can't be included in the catalog file created by PackageInspector, you should be able to allow them by adding a hash ALLOW rule to your policy that uses the file's flat file hash.
