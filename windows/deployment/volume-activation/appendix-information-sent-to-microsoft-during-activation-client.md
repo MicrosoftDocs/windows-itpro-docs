@@ -1,5 +1,5 @@
 ---
-title: Appendix Information sent to Microsoft during activation (Windows 10)
+title: Appendix Information sent to Microsoft during activation
 description: Learn about the information sent to Microsoft during activation.
 ms.reviewer: nganguly
 manager: aaroncz
@@ -8,73 +8,78 @@ author: frankroj
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
-ms.date: 11/07/2022
+ms.date: 03/29/2024
 ms.topic: article
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2022</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2019</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016</a>
 ---
 
 # Appendix: Information sent to Microsoft during activation
 
-**Applies to:**
+> [!TIP]
+>
+> Looking for information on retail activation?
+>
+> - [Activate Windows](https://support.microsoft.com/help/12440/).
+> - [Product activation for Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644).
 
-- Windows 10
-- Windows 8.1
-- Windows 8
-- Windows 7
-- Windows Server 2012 R2
-- Windows Server 2012
-- Windows Server 2008 R2
+When a computer running a currently supported version of Windows is activated, the following information is sent to Microsoft:
 
-**Looking for retail activation?**
+- The Microsoft product code (a five-digit code that identifies the Windows product being activated).
 
-- [Get Help Activating Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644)
+- A channel ID or site code that identifies how the Windows product was originally obtained. For example, a channel ID or site code identifies whether the product was:
 
-When you activate a computer running Windows 10, the following information is sent to Microsoft:
+  - Originally purchased from a retail store.
+  - Obtained as an evaluation copy.
+  - Obtained through a volume licensing program.
+  - Preinstalled by a computer manufacturer.
 
-- The Microsoft product code (a five-digit code that identifies the Windows product you're activating)
-- A channel ID or site code that identifies how the Windows product was originally obtained
+- The date of installation and whether the installation was successful.
 
-    For example, a channel ID or site code identifies whether the product was originally purchased from a retail store, obtained as an evaluation copy, obtained through a volume licensing program, or preinstalled by a computer manufacturer.
+- Information that helps confirm that the Windows product key isn't altered.
 
-- The date of installation and whether the installation was successful
-- Information that helps confirm that your Windows product key hasn't been altered
+- Computer make and model.
 
-- Computer make and model
+- Version information for the operating system and software.
 
-- Version information for the operating system and software
+- Region and language settings.
 
-- Region and language settings
+- A unique number called a *globally unique identifier* (GUID), which is assigned to the computer.
 
-- A unique number called a *globally unique identifier*, which is assigned to your computer
+- Product key (hashed) and product ID.
 
-- Product key (hashed) and product ID
+- BIOS name, revision number, and revision date.
 
-- BIOS name, revision number, and revision date
+- Volume serial number (hashed) of the hard disk drive.
 
-- Volume serial number (hashed) of the hard disk drive
-
-- The result of the activation check
+- The result of the activation check.
 
     This result includes error codes and the following information about any activation exploits and related malicious or unauthorized software that was found or disabled:
 
-  - The activation exploit's identifier
+  - The identifier of the activation exploit.
 
-  - The activation exploit's current state, such as cleaned or quarantined
+  - The current state of the activation exploit, such as cleaned or quarantined.
 
-  - Computer manufacturer's identification
+  - Computer manufacturer's identification.
 
-  - The activation exploit's file name and hash in addition to a hash of related software components that may indicate the presence of an activation exploit
+  - The file name and hash of the activation exploit in addition to a hash of related software components that might indicate the presence of an activation exploit.
 
-- The name and a hash of the contents of your computer's startup instructions file
+- The name and a hash of the contents of the computer's startup instructions file.
 
-- If your Windows license is on a subscription basis, information about how your subscription works
+- If the Windows license is on a subscription basis, information about how the subscription works.
 
-Standard computer information is also sent, but your computer's IP address is only kept temporarily.
+Standard computer information is also sent, but the computer's IP address is only kept temporarily.
 
 ## Use of information
 
-Microsoft uses the information to confirm that you have a licensed copy of the software. Microsoft doesn't use the information to contact individual consumers.
-For more information, see [Windows 10 Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=619879).
+Microsoft uses the information to confirm a properly licensed copy of the software. Microsoft doesn't use the information to contact individual consumers.
 
-## Related articles
+For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=619879).
 
-- [Volume Activation for Windows 10](volume-activation-windows-10.md)
+## Related content
+
+- [Volume Activation for Windows](volume-activation-windows.md).
