@@ -17,14 +17,10 @@
           href: update/waas-servicing-strategy-windows-10-updates.md
         - name: Deployment proof of concept
           items:
-            - name: Deploy Windows 10 with MDT and Configuration Manager
-              items:
-                - name: 'Step by step guide: Configure a test lab to deploy Windows 10'
-                  href: windows-10-poc.md
-                - name: Deploy Windows 10 in a test lab using MDT
-                  href: windows-10-poc-mdt.md
-                - name: Deploy Windows 10 in a test lab using Configuration Manager
-                  href: windows-10-poc-sc-config-mgr.md
+            - name: 'Step by step guide: Configure a test lab to deploy Windows 10'
+              href: windows-10-poc.md
+            - name: Deploy Windows 10 in a test lab using Configuration Manager
+              href: windows-10-poc-sc-config-mgr.md
         - name: Deployment process posters
           href: windows-10-deployment-posters.md
 
@@ -79,12 +75,8 @@
           href: do/waas-delivery-optimization-setup.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: Configure BranchCache for Windows client updates
           href: update/waas-branchcache.md
-        - name: Prepare your deployment tools
-          items:
-            - name: Prepare for deployment with MDT
-              href: deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md
-            - name: Prepare for deployment with Configuration Manager
-              href: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
+        - name: Prepare for deployment with Configuration Manager
+          href: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
         - name: Build a successful servicing strategy
           items:
             - name: Check release health
@@ -112,16 +104,6 @@
                   href: deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md
                 - name: In-place upgrade
                   href: deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md
-            - name: Deploy Windows client with MDT
-              items:
-                - name: Deploy to a new device
-                  href: deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md
-                - name: Refresh a device
-                  href: deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md
-                - name: Replace a device
-                  href: deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md
-                - name: In-place upgrade
-                  href: deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md
         - name: Deploy Windows client updates
           items:
             - name: Assign devices to servicing channels
@@ -185,15 +167,15 @@
       - name: Volume Activation
         items:
         - name: Overview
-          href: volume-activation/volume-activation-windows-10.md
+          href: volume-activation/volume-activation-windows.md
         - name: Plan for volume activation
           href: volume-activation/plan-for-volume-activation-client.md
         - name: Activate using Key Management Service
           href: volume-activation/activate-using-key-management-service-vamt.md
         - name: Activate using Active Directory-based activation
           href: volume-activation/activate-using-active-directory-based-activation-client.md
-        - name: Activate clients running Windows 10
-          href: volume-activation/activate-windows-10-clients-vamt.md
+        - name: Activate clients running Windows
+          href: volume-activation/activate-windows-clients-vamt.md
         - name: Monitor activation
           href: volume-activation/monitor-activation-client.md
         - name: Use the Volume Activation Management Tool

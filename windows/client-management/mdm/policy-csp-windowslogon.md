@@ -389,6 +389,13 @@ This policy controls the configuration under which winlogon sends MPR notificati
 
 <!-- EnableMPRNotifications-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Starting in Windows Insiders build 25216, the behavior of EnableMPRNotifications policy was changed, and the Group Policy was updated with the following text:
+>
+> - **Friendly name**: Configure the transmission of the user's password in the content of MPR notifications sent by winlogon
+> - **Description**: This policy controls whether the user's password is included in the content of MPR notifications sent by winlogon in the system.
+>    - If you disable this setting or do not configure it, winlogon sends MPR notifications with empty password fields of the user's authentication info.
+>    - If you enable this setting, winlogon sends MPR notifications containing the user's password in the authentication info.
 <!-- EnableMPRNotifications-Editable-End -->
 
 <!-- EnableMPRNotifications-DFProperties-Begin -->

@@ -17,7 +17,7 @@ ms.date: 10/27/2022
 
 - Windows 10
 
-This article will show you how to refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager and Microsoft Deployment Toolkit (MDT). A computer refresh isn't the same as an in-place upgrade. A computer refresh involves storing user data and settings from the old installation, wiping the hard drives, installing a new OS, and then restoring the user data at the end of the installation. Also see the MDT refresh procedure: [Refresh a Windows 7 computer with Windows 10](../deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md).
+This article will show you how to refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager and Microsoft Deployment Toolkit (MDT). A computer refresh isn't the same as an in-place upgrade. A computer refresh involves storing user data and settings from the old installation, wiping the hard drives, installing a new OS, and then restoring the user data at the end of the installation.
 
 A computer refresh with Configuration Manager works the same as it does with MDT Lite Touch installation. Configuration Manager also uses the User State Migration Tool (USMT) from the Windows Assessment and Deployment Kit (Windows ADK) 10 in the background. A computer refresh with Configuration Manager has the following steps:
 
