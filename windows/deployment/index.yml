@@ -24,7 +24,7 @@ landingContent:
 
 - title: Plan
   linkLists:
-  - linkListType: overview
+  - linkListType: concept
     links:
     - text: Plan for Windows 11
       url: /windows/whats-new/windows-11-plan?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
@@ -157,7 +157,7 @@ landingContent:
 
 - title: More resources
   linkLists:
-  - linkListType: learn
+  - linkListType: reference
     # Release and lifecycle
     links:
       - text: Windows release health dashboard
@@ -166,7 +166,7 @@ landingContent:
         url: /windows/whats-new/feature-lifecycle
       - text: Lifecycle FAQ - Windows
         url: /lifecycle/faq/windows
-  - linkListType: architecture
+  - linkListType: download
     # Windows hardware
     links:
       - text: Download and install the Windows ADK
