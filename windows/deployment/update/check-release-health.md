@@ -89,7 +89,7 @@ You can sign up for email notifications about Windows known issues and informati
 <!--8884260-->
 If you'd like to develop an alternative way to get information on known issues documented within the Windows release health section in the admin center, you can use the [Windows updates API in Microsoft Graph](/graph/windowsupdates-concept-overview).
 
-The [Windows updates API has current and historical known issues data for any supported Windows product. You can check if an issue is confirmed, and if a resolution is available before calling support or spending time troubleshooting.
+The Windows updates API has current and historical known issues data for any supported Windows product. You can check if an issue is confirmed, and if a resolution is available before calling support or spending time troubleshooting.
 
 The Windows updates API also has product lifecycle information. For instance, you can search for end of servicing dates for all supported Windows versions and editions you manage in your organization. For more information on how to access these known issue and lifecycle data, see [Microsoft Graph product resource type](/graph/api/resources/windowsupdates-product).
 
