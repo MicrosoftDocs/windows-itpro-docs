@@ -102,10 +102,10 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `ContentKeeper Cloud`                     | 9.01.45           | `Win32`    | `ContentKeeper Technologies`              |
 | `DigiExam`                                | 14.1.0            | `Win32`    | `Digiexam`                                |
 | `Digital Secure testing browser`          | 15.0.0            | `Win32`    | `Digiexam`                                |
-| `Dolphin Guide Connect`                   | 1.25              | `Win32`    | `Dolphin Guide Connect`                   |
+| `Dolphin Guide Connect`                   | 1.27              | `Win32`    | `Dolphin Guide Connect`                   |
 | `Dragon Professional Individual`          | 15.00.100         | `Win32`    | `Nuance Communications`                   |
 | `DRC INSIGHT Online Assessments`          | 14.0.0.0          | `Store`  | `Data recognition Corporation`              |
-| `Duo from Cisco`                          | 3.0.0             | `Win32`    | `Cisco`                                   |
+| `Duo from Cisco`                          | 6.3.0             | `Win32`    | `Cisco`                                   |
 | `Dyknow`                                  | 7.9.13.7          | `Win32`    | `Dyknow`                                  |
 | `e-Speaking Voice and Speech recognition` | 4.4.0.11          | `Win32`    | `e-speaking`                              |
 | `EasyReader`                              | 10.0.4.498        | `Win32`    | `Dolphin Computer Access`                 |
@@ -114,7 +114,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `ESET Endpoint Security`                  | 10.1.2046.0       | `Win32`    | `ESET`                                    |
 | `ESET Remote Administrator Agent`         | 10.0.1126.0       | `Win32`    | `ESET`                                    |
 | `eTests`                                  | 4.0.25            | `Win32`    | `CASAS`                                   |
-| `Exam Writepad`                           | 23.2.4.2338       | `Win32`    | `Sheldnet`                                |
+| `Exam Writepad`                           | 23.12.10.1200       | `Win32`    | `Sheldnet`                                
 | `FirstVoices Keyboard`                    | 15.0.270          | `Win32`    | `SIL International`                       |
 | `FortiClient`                             | 7.2.0.4034+       | `Win32`    | `Fortinet`                                |
 | `Free NaturalReader`                      | 16.1.2            | `Win32`    | `Natural Soft`                            |
@@ -126,10 +126,12 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Immunet`                                 | 7.5.8.21178       | `Win32`    | `Immunet`                                 |
 | `Impero Backdrop Client`                  | 5.0.151           | `Win32`    | `Impero Software`                         |
 | `IMT Lazarus`                             | 2.86.0            | `Win32`    | `IMTLazarus`                              |
+| `Inprint `                                | 3.7.6             | `Win32`    | `Inprint`                                 |
+| `Instashare `                             | 1.3.13.0           | `Win32`    | `BenQ'                                   |
 | `Inspiration 10`                          | 10.11             | `Win32`    | `TechEdology Ltd`                         |
-| `JAWS for Windows`                        | 2023.2307.37      | `Win32`    | `Freedom Scientific`                      |
+| `JAWS for Windows`                        | 2024.2312.53      | `Win32`    | `Freedom Scientific`                      |
 | `Kite Student Portal`                     | 9.0.0.0           | `Win32`    | `Dynamic Learning Maps`                   |
-| `Keyman`                                  | 16.0.142          | `Win32`    | `SIL International`                       |
+| `Keyman`                                  | 16.0.144          | `Win32`    | `SIL International`                       |
 | `Kortext`                                 | 2.3.433.0         | `Store`  | `Kortext`                                 |
 | `Kurzweil 3000 Assistive Learning`        | 20.13.0000        | `Win32`    | `Kurzweil Educational Systems`            |
 | `LanSchool Classic`                       | 9.1.0.46          | `Win32`    | `Stoneware, Inc.`                         |
@@ -155,7 +157,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `NetSupport School`                       | 14.00.0012        | `Win32`    | `NetSupport`                              |
 | `NextUp Talker`                           | 1.0.49            | `Win32`    | `NextUp Technologies`                     |
 | `Netsweeper Workstation Agent`            | 4.50.54.54        | `Win32`    | `Netsweeper`                              |
-| `NonVisual Desktop Access`                | 2023.1.           | `Win32`    | `NV Access`                               |
+| `NonVisual Desktop Access`                | 2023.3            | `Win32`    | `NV Access`                               |
 | `NWEA Secure Testing Browser`             | 5.4.387.0         | `Win32`    | `NWEA`                                    |
 | `PC Talker Neo`                           | 2209              | `Win32`    | `Kochi System Development`                |
 | `PC Talker Neo Plus`                      | 2209              | `Win32`    | `Kochi System Development`                |
@@ -166,7 +168,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `ReadAndWriteForWindows`                  | 12.0.78           | `Win32`    | `Texthelp Ltd.`                           |
 | `Remote Desktop client (MSRDC)`           | 1.2.4487.0        | `Win32`    | `Microsoft`                               |
 | `Remote Help`                             | 5.0.1311.0        | `Win32`    | `Microsoft`                               |
-| `Respondus Lockdown Browser`              | 2.0.9.03          | `Win32`    | `Respondus`                               |
+| `Respondus Lockdown Browser`              | 2.1.1.05          | `Win32`    | `Respondus`                               |
 | `Safe Exam Browser`                       | 3.5.0.544         | `Win32`    | `Safe Exam Browser`                       |
 |`SchoolYear`                               | 3.5.4             | `Win32`    |`SchoolYear`                               |
 |`School Manager`                           | 3.6.10-1149       | `Win32`    |`Linewize`                                 |
@@ -175,9 +177,10 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Senso.Cloud`                             |2021.11.15.0       | `Win32`    | `Senso.Cloud`                             |
 | `Skoolnext`                               | 2.19              | `Win32`    | `Skool.net`                               |
 | `Smoothwall Monitor`                      | 2.9.2             | `Win32`    | `Smoothwall Ltd`                          |
-| `SuperNova Magnifier & Screen Reader`     | 22.03             | `Win32`    | `Dolphin Computer Access`                 |
+| `Snapplify Reader`                        | 6.9.7             | `Win32`     | `Snapplify`                              |
+| `SuperNova Magnifier & Screen Reader`     | 22.04             | `Win32`    | `Dolphin Computer Access`                 |
 | `SuperNova Magnifier & Speech`            | 21.03             | `Win32`    | `Dolphin Computer Access`                 |
-|`TX Secure Browser`                        | 15.0.0            | `Win32`    | `Cambium Development`                     |
+|`TX Secure Browser`                        | 16.0.0            | `Win32`    | `Cambium Development`                     |
 | `VitalSourceBookShelf`                    | 10.2.26.0         | `Win32`    | `VitalSource Technologies Inc`            |
 |`WA Secure Browser`                        | 16.0.0            | `Win32`    | `Cambium Development`                     |
 | `Winbird`                                 | 19                | `Win32`    | `Winbird Co., Ltd.`                       |
@@ -185,8 +188,8 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Windows SEB`                             | 3.4.0             | `Win32`    | `Illinois Stateboard of Education`        |
 | `Windows Notepad`                         | 12.0.78           | `Store`    | `Microsoft Corporation`                   |
 | `Zoom`                                    | 5.12.8 (10232)    | `Win32`    | `Zoom`                                    |
-| `ZoomText Fusion`                         | 2023.2307.7.400  | `Win32`    | `Freedom Scientific`                      |
-| `ZoomText Magnifier/Reader`               | 2023.2307.29.400  | `Win32`    | `Freedom Scientific`                      |
+| `ZoomText Fusion`                         | 2024.2310.13.400  | `Win32`    | `Freedom Scientific`                      |
+| `ZoomText Magnifier/Reader`               | 2024.2312.26.400  | `Win32`    | `Freedom Scientific`                      |
 
 ## Add your own applications
 
