@@ -39,7 +39,7 @@ For information on customizing the Start menu layout using policy, see [Customiz
 - [Start/HideUserTile](/windows/client-management/mdm/policy-csp-start#start-hideusertile)
 - [Start/HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#start-hiderecentjumplists)
 - [Start/NoPinningToTaskbar](/windows/client-management/mdm/policy-csp-start#start-nopinningtotaskbar)
-- **Start/ShowOrHideMostUsedApps**: New policy starting with Windows 1. This policy enforces always showing Most Used Apps, or always hiding Most Used Apps in the Start menu. If you use this policy, the [Start/HideFrequentlyUsedApps](/windows/client-management/mdm/policy-csp-start#start-hidefrequentlyusedapps) policy is ignored.
+- **Start/ShowOrHideMostUsedApps**: New policy starting with Windows 11. This policy enforces always showing Most Used Apps, or always hiding Most Used Apps in the Start menu. If you use this policy, the [Start/HideFrequentlyUsedApps](/windows/client-management/mdm/policy-csp-start#start-hidefrequentlyusedapps) policy is ignored.
 
   The [Start/HideFrequentlyUsedApps](/windows/client-management/mdm/policy-csp-start#start-hidefrequentlyusedapps) policy enforces hiding Most Used Apps on the Start menu. You can't use this policy to enforce always showing Most Used Apps on the Start menu.
 
