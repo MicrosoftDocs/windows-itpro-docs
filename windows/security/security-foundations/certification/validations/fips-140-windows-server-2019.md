@@ -1,7 +1,7 @@
 ---
 title: FIPS 140 validated modules for Windows Server 2019
 description: This topic lists the completed FIPS 140 cryptographic module validations for Windows Server 2019.
-ms.date: 2/1/2024
+ms.date: 4/4/2024
 ms.topic: reference
 ms.author: v-rodurff
 author: msrobertd
@@ -27,6 +27,19 @@ Build: 10.0.17763.107. Validated Editions: Standard Core, Datacenter Core
 |[Virtual TPM][sp-3690]|10.0.17763|[#3690][certificate-3690]|FIPS Approved: AES, CKG, CVL, DRBG, ECDSA, HMAC, KAS, KBKDF, KTS, RSA, and SHS; Other Allowed: NDRNG|
 |[Windows OS Loader][sp-3615]|10.0.17763|[#3615][certificate-3615]|FIPS Approved: AES, CKG, DRBG, RSA, and SHS; Other Allowed: NDRNG|
 
+Builds: 10.0.17763.10021 and 10.0.17763.10127. Validated Edition: Datacenter Core
+
+|Cryptographic Module (linked to Security Policy document)|CMVP Certificate #|Validated Algorithms|
+|--- |--- |--- |
+|[BitLocker Dump Filter][sp-4688]|[#4688][certificate-4688]|FIPS Approved: AES, RSA, and SHS|
+|[Boot Manager][sp-4484]|[#4484][certificate-4484]|FIPS Approved: AES, CKG, HMAC, PBKDF, RSA, and SHS|
+|[Code Integrity][sp-4602]|[#4602][certificate-4602]|FIPS Approved: RSA and SHS|
+|[Cryptographic Primitives Library][sp-4687]|[#4687][certificate-4687]|FIPS Approved: AES, CKG, CVL, DRBG, DSA, ECDSA, HMAC, KAS, KBKDF, KTS, PBKDF, RSA, SHS, and Triple-DES; Other Allowed: ECDH and NDRNG|
+|[Kernel Mode Cryptographic Primitives Library][sp-4670]|[#4670][certificate-4670]|AES, CKG, CVL, DRBG, DSA, ECDSA, HMAC, KAS, KBKDF, KTS, PBKDF, RSA, SHS, and Triple-DES; Other Allowed: ECDH|
+|[Secure Kernel Code Integrity][sp-4640]|[#4640][certificate-4640]|FIPS Approved: RSA and SHS|
+|[Virtual TPM][sp-4686]|[#4686][certificate-4686]|FIPS Approved: AES, CKG, CVL, DRBG, ECDSA, HMAC, KAS, KBKDF, KTS, RSA, and SHS; Other Allowed: NDRNG|
+|[Windows OS Loader][sp-4545]|[#4545][certificate-4545]|FIPS Approved: AES, RSA, and SHS; Other Allowed: NDRNG|
+
 ---
 
 <!-- Links -->
@@ -41,6 +54,14 @@ Build: 10.0.17763.107. Validated Editions: Standard Core, Datacenter Core
 [certificate-3644]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3644
 [certificate-3651]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3651
 [certificate-3690]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3690
+[certificate-4484]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4484
+[certificate-4545]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4545
+[certificate-4602]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4602
+[certificate-4640]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4640
+[certificate-4670]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4670
+[certificate-4686]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4686
+[certificate-4687]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4687
+[certificate-4688]: https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4688
 
 <!-- Security Policies -->
 
@@ -52,3 +73,11 @@ Build: 10.0.17763.107. Validated Editions: Standard Core, Datacenter Core
 [sp-3644]: https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3644.pdf
 [sp-3651]: https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3651.pdf
 [sp-3690]: https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3690.pdf
+[sp-4484]: https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4484.pdf
+[sp-4545]: https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4545.pdf
+[sp-4602]: https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4602.pdf
+[sp-4640]: https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4640.pdf
+[sp-4670]: https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4670.pdf
+[sp-4686]: https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4686.pdf
+[sp-4687]: https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4687.pdf
+[sp-4688]: https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4688.pdf
