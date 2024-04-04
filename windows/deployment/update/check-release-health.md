@@ -87,7 +87,7 @@ You can sign up for email notifications about Windows known issues and informati
 
 ## Working with the Windows updates API in Microsoft Graph
 <!--8884260-->
-If you'd like to develop an alternative way to get information on known issues documented within the Windows release health section in the admin center, you can use the [Windows updates API in Microsoft Graph](/graph/windowsupdates-concept-overview).
+If you'd like to develop an alternative way to get information on known issues documented within the Windows release health section in the admin center, you can use the Windows updates API in [Microsoft Graph](/graph/api/overview).
 
 The Windows updates API has current and historical known issues data for any supported Windows product. You can check if an issue is confirmed, and if a resolution is available before calling support or spending time troubleshooting.
 
