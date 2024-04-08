@@ -17,7 +17,7 @@ landingContent:
 
   - title: Table of contents
     linkLists:
-      - linkListType: learn
+      - linkListType: concept
         links:
           - text: Introduction
             url: introduction.md
