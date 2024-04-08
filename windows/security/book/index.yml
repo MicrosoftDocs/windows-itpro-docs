@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Windows security book
-summary: "Windows 11 Security Book: Powerful security by design"
+summary: "Windows 11 Security Book: Powerful security by design. <br> > [!TIP] <br> > To download the security book, select the download PDF link"
 
 metadata:
   ms.topic: landing-page
@@ -17,44 +17,25 @@ metadata:
 
 landingContent:
 
-  - title: Chapter 1
+  - title: Table of contents
     linkLists:
       - linkListType: concept
         links:
-          - text: Introduction to Windows security
+          - text: Introduction
             url: introduction.md
-
-  - title: Chapter 2
-    linkLists:
-      - linkListType: concept
-        links:
           - text: Hardware security
             url: hardware-security.md
-
-  - title: Chapter 3
-    linkLists:
-      - linkListType: concept
-        links:
           - text: Operating system security
             url: operating-system-security.md
-
-  - title: Chapter 4
-    linkLists:
-      - linkListType: concept
-        links:
           - text: Application security
             url: application-security.md
-
-  - title: Chapter 5
-    linkLists:
-      - linkListType: concept
-        links:
           - text: Identity protection
             url: identity-protection.md
-
-  - title: Chapter 6
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Cloud security
+          - text: Privacy
+            url: privacy.md
+          - text: Cloud services
             url: cloud-security.md
+          - text: Security foundations
+            url: security-foundations.md
+          - text: Conclusion
+            url: conclusion.md
