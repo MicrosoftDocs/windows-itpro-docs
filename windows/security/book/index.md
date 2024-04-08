@@ -24,7 +24,11 @@ help protect your organization and employees against attack. Windows Hello and W
 
 ## Protect employees against evolving threats
 
-With attackers targeting employees and their devices, organizations need stronger security against increasingly sophisticated cyberthreats. Windows 11 provides proactive protection against credential theft. Windows Hello and TPM 2.0 work together to shield identities. Secure biometric sign-in virtually eliminates the risk of lost or stolen passwords. And enhanced phishing protection increases safety. In fact, businesses reported 2.8x fewer instances of identity theft with the hardware-backed protection in Windows 11. Gain mission-critical application safeguards control for applications. Windows 11 has multiple layers of application security that shield critical data and code integrity. Application protection, privacy controls, and least-privilege principles enable developers to build in security by design. This integrated security protects against breaches and malware, helps keep data private, and gives IT administrators the controls they need. As a result, organizations and regulators can be confident that critical data is protected.
+With attackers targeting employees and their devices, organizations need stronger security against increasingly sophisticated cyberthreats. Windows 11 provides proactive protection against credential theft. Windows Hello and TPM 2.0 work together to shield identities. Secure biometric sign-in virtually eliminates the risk of lost or stolen passwords. And enhanced phishing protection increases safety. In fact, businesses reported 2.8x fewer instances of identity theft with the hardware-backed protection in Windows 11.
+
+## Gain mission-critical application safeguards
+
+Help keep business data secure and employees productive with robust safeguards and control for applications. Windows 11 has multiple layers of application security that shield critical data and code integrity. Application protection, privacy controls, and least-privilege principles enable developers to build in security by design. This integrated security protects against breaches and malware, helps keep data private, and gives IT administrators the controls they need. As a result, organizations and regulators can be confident that critical data is protected.
 
 ## End-to-end protection with modern management
 
@@ -33,3 +37,8 @@ Increase protection and efficiency with Windows 11 and chip-to-cloud security. M
 ## Security by design and default
 
 In Windows 11, hardware and software work together to protect sensitive data from the core of your PC all the way to the cloud. Comprehensive protection helps keep your organization secure, no matter where people work. This simple diagram shows the layers of protection in Windows 11, while each chapter provides a layer-by-layer deep dive into features.
+
+
+![alt text](image1.png)
+
+Learn more: Windows security features licensing and edition requirements
