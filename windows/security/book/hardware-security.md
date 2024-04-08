@@ -7,7 +7,8 @@ ms.date: 03/12/2024
 
 # Hardware security
 
-:::image type="content" source="image2.png" alt-text="aas" lightbox="image2.png":::
+
+:::image type="content" source="hardware.png" alt-text="aas" lightbox="hardware.png":::
 
 Today's ever-evolving threats require strong alignment between hardware and software technologies to keep users, data, and devices protected. The operating system alone cannot defend against the wide range of tools and techniques cybercriminals use to compromise a computer. Once they gain a foothold, intruders can be difficult to detect as they engage in multiple nefarious activities ranging from stealing important data and credentials to implanting malware into low-level device firmware. Once malware is installed in firmware, it becomes difficult to identify and remove. These new threats call for computing hardware that is secure down to the very core, including the hardware chips and processors that store sensitive business information. With hardware-based protection, we can enable strong mitigation against entire classes of vulnerabilities that are difficult to thwart with software alone. Hardware-based protection can also improve the system's overall security without measurably slowing performance, compared to implementing the same capability in software.
 
@@ -96,4 +97,3 @@ In enterprise organizations, IT administrators enforce policies on their corpora
 
 Learn more: Windows 11 with config lock
 
-:::image type="content" source="hardware.png" alt-text="aas" lightbox="hardware.png":::
