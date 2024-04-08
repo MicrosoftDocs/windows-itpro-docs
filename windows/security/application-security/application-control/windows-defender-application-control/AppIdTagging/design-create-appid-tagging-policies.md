@@ -77,7 +77,7 @@ Using this method, you create an AppId Tagging policy directly using the WDAC Po
 4. Set the name and ID on the policy, which is helpful for future debugging:
 
 	```powershell
-	Set-CIPolicyIdInfo -ResetPolicyId -PolicyName "MyPolicyName" -PolicyId "MyPolicyId"" -AppIdTaggingPolicy -FilePath ".\AppIdPolicy.xml"
+	Set-CIPolicyIdInfo -ResetPolicyId -PolicyName "MyPolicyName" -PolicyId "MyPolicyId" -AppIdTaggingPolicy -FilePath ".\AppIdPolicy.xml"
 	```
 	The policyID GUID is returned by the PowerShell command if successful. 
 
