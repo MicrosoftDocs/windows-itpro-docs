@@ -95,3 +95,5 @@ Learn more: Dynamic Root of Trust measure and SMM isolation
 In enterprise organizations, IT administrators enforce policies on their corporate devices to protect the OS and keep devices in a compliant state by preventing users from changing configurations and creating configuration drift. Configuration drift occurs when users with local admin rights change settings and put the device out of sync with security policies. Devices in a non-compliant state can be vulnerable until the next sync, when configuration is reset with the modern device management (MDM) solution. Secured-core configuration lock (config lock) is a Secured-core PC feature that prevents users from making unwanted changes to security settings. With config lock, the OS monitors the registry keys that are supported and reverts to the IT-desired SCPC state in seconds after detecting a drift.
 
 Learn more: Windows 11 with config lock
+
+:::image type="content" source="hardware.svg" alt-text="aas" lightbox="hardware.svg":::

@@ -38,7 +38,8 @@ Increase protection and efficiency with Windows 11 and chip-to-cloud security. M
 
 In Windows 11, hardware and software work together to protect sensitive data from the core of your PC all the way to the cloud. Comprehensive protection helps keep your organization secure, no matter where people work. This simple diagram shows the layers of protection in Windows 11, while each chapter provides a layer-by-layer deep dive into features.
 
-
 :::image type="content" source="image1.png" alt-text="aas" lightbox="image1.png" border="false":::
 
 Learn more: Windows security features licensing and edition requirements
+
+:::image type="content" source="chip-to-cloud.svg" alt-text="aas" lightbox="chip-to-cloud.svg":::
