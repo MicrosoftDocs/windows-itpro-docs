@@ -1,8 +1,6 @@
 ### YamlMime:Landing
 
 title: Windows security book
-summary: "Windows 11 Security Book: Powerful security by design. <br> > [!TIP] <br> > To download the security book, select the download PDF link"
-
 metadata:
   ms.topic: landing-page
   ms.collection:
@@ -19,7 +17,7 @@ landingContent:
 
   - title: Table of contents
     linkLists:
-      - linkListType: concept
+      - linkListType: learn
         links:
           - text: Introduction
             url: introduction.md
@@ -39,3 +37,4 @@ landingContent:
             url: security-foundations.md
           - text: Conclusion
             url: conclusion.md
+
