@@ -7,7 +7,7 @@ ms.date: 03/12/2024
 
 # Hardware security
 
-:::image type="content" source="image-1.png" alt-text="aas" lightbox="image-1.png":::
+:::image type="content" source="image-1.png" alt-text="aas" lightbox="image-1.png" border="false":::
 
 Windows 11 is the most secure Windows yet with extensive security measures in the operating system designed to help keep devices, identities, and information safe. These measures include built-in advanced encryption and data protection, robust network system security, and intelligent safeguards against ever-evolving viruses and threats.
 
