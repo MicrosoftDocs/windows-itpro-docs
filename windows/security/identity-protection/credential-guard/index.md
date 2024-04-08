@@ -7,7 +7,7 @@ ms.topic: overview
 
 # Credential Guard overview
 
-Credential Guard prevents credential theft attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets (TGTs), and credentials stored by applications as domain credentials.
+Credential Guard, now [enabled by default on most Windows machines](#default-enablement), prevents credential theft attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets (TGTs), and credentials stored by applications as domain credentials.
 
 Credential Guard uses [Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs) to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks like *pass the hash* and *pass the ticket*.
 
@@ -20,9 +20,37 @@ When enabled, Credential Guard provides the following benefits:
 > [!NOTE]
 > While Credential Guard is a powerful mitigation, persistent threat attacks will likely shift to new attack techniques, and you should also incorporate other security strategies and architectures.
 
+## Default Enablement
+
+Starting in **Windows 11, 22H2** and **Windows Server 2025**, VBS and Credential Guard are enabled by default on devices that meet the requirements below. This means that going forward, domain credentials will automatically be protected by Credential Guard on most relevant Windows devices.
+
+The default enablement is **without UEFI Lock**, which allows administrators to disable Credential Guard remotely, if needed.
+
+> [!NOTE]
+> If Credential Guard or VBS is explicitly [disabled](configure.md/#disable-credential-guard) *before* a device is updated to Windows 11, version 22H2 / Windows Server 2025 or later, default enablement does not overwrite the existing settings. That device will continue to have Credential Guard disabled even after updating to a version of Windows that enables Credential Guard by default.
+
+### Default Enablement on Windows client
+
+Devices running Windows 11, 22H2 or later will have Credential Guard enabled by default if they:
+
+- Meet the [license requirements](#windows-edition-and-licensing-requirements)
+- Meet the [hardware and sofware requirements](#system-requirements)
+- Has not been [explicitly configured to disable Credential Guard](configure.md/#default-enablement)
+
+### Default Enablement on Windows Server
+
+Devices running Windows Server 2025 or later will have Credential Guard enabled by default if they meet the above requirements for client and additionally:
+
+- Are joined to a domain
+- Are not a Domain Controller
+
 > [!IMPORTANT]
-> Starting in Windows 11, version 22H2, VBS and Credential Guard are enabled by default on all devices that meet the system requirements.\
-> For information about known issues related to the default enablement of Credential Guard, see [Credential Guard: Known Issues](considerations-known-issues.md).
+> For information about known issues related to default enablement, see [Credential Guard: known issues](considerations-known-issues.md#single-sign-on-for-network-services-breaks-after-upgrading-to-windows-11-version-22h2).
+
+> [!NOTE]
+> Devices running Windows 11 Pro/Pro Edu 22H2 or later may have Virtualization-based Security (VBS) and/or Credential Guard automatically enabled if they meet the other requirements for default enablement, and have previously run Credential Guard. For example if Credential Guard was enabled on an Enterprise device that later downgraded to Pro.
+>
+> To determine whether the Pro device is in this state, check if the following registry key exists: `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0\IsolatedCredentialsRootSecret`. In this scenario, if you wish to disable VBS and Credential Guard, follow the instructions to [disable Virtualization-based Security](#disable-virtualization-based-security). If you wish to disable Credential Guard only, without disabling VBS, use the procedures to [disable Credential Guard](#disable-credential-guard).
 
 ## System requirements
 
