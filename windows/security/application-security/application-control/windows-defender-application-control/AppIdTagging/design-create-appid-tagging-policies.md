@@ -74,10 +74,10 @@ Using this method, you create an AppId Tagging policy directly using the WDAC Po
 
 	If you're using filepath rules, you may want to set option 18. Otherwise, there's no need. 
 	
-4. Set the name and ID on the policy, which is helpful for future debugging:
+4. Convery to multi-policy format with new PolicyID:
 
 	```powershell
-	Set-CIPolicyIdInfo -ResetPolicyId -PolicyName "MyPolicyName" -PolicyId "MyPolicyId" -AppIdTaggingPolicy -FilePath ".\AppIdPolicy.xml"
+	Set-CIPolicyIdInfo -ResetPolicyId -AppIdTaggingPolicy -FilePath ".\AppIdPolicy.xml"
 	```
 	The policyID GUID is returned by the PowerShell command if successful. 
 
