@@ -1,13 +1,15 @@
 items:
-- name: Introduction to Windows security
+- name: Windows security book
+  href: index.yml
+- name: 1. Introduction to Windows security
   href: introduction.md
-- name: Hardware security
+- name: 2. Hardware security
   href: hardware-security.md
-- name: Operating system security
+- name: 3. Operating system security
   href: operating-system-security.md
-- name: Application security
+- name: 4. Application security
   href: application-security.md
-- name: Identity protection
+- name: 5. Identity protection
   href: identity-protection.md
-- name: Cloud security
+- name: 6. Cloud security
   href: cloud-security.md
