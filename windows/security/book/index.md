@@ -42,4 +42,4 @@ In Windows 11, hardware and software work together to protect sensitive data fro
 
 Learn more: Windows security features licensing and edition requirements
 
-:::image type="content" source="chip-to-cloud.svg" alt-text="aas" lightbox="chip-to-cloud.svg":::
+:::image type="content" source="chip-to-cloud.png" alt-text="aas" lightbox="chip-to-cloud.png":::

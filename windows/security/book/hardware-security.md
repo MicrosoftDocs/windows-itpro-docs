@@ -96,4 +96,4 @@ In enterprise organizations, IT administrators enforce policies on their corpora
 
 Learn more: Windows 11 with config lock
 
-:::image type="content" source="hardware.svg" alt-text="aas" lightbox="hardware.svg":::
+:::image type="content" source="hardware.png" alt-text="aas" lightbox="hardware.png":::
