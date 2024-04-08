@@ -7,7 +7,7 @@ ms.date: 03/12/2024
 
 # Hardware security
 
-![alt text](image2.png)
+:::image type="content" source="image2.png" alt-text="aas" lightbox="image2.png":::
 
 Today's ever-evolving threats require strong alignment between hardware and software technologies to keep users, data, and devices protected. The operating system alone cannot defend against the wide range of tools and techniques cybercriminals use to compromise a computer. Once they gain a foothold, intruders can be difficult to detect as they engage in multiple nefarious activities ranging from stealing important data and credentials to implanting malware into low-level device firmware. Once malware is installed in firmware, it becomes difficult to identify and remove. These new threats call for computing hardware that is secure down to the very core, including the hardware chips and processors that store sensitive business information. With hardware-based protection, we can enable strong mitigation against entire classes of vulnerabilities that are difficult to thwart with software alone. Hardware-based protection can also improve the system's overall security without measurably slowing performance, compared to implementing the same capability in software.
 
@@ -25,11 +25,7 @@ Learn more:
 - Enabling TPM 2.0 on your PC
 - Trusted Platform Module technology overview
 
-### [Windows Defender System Guard](/windows/security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows)
-
-In Secured-core PCs, Windows Defender System Guard Secure Launch protects bootup with a technology known as the Dynamic Root of Trust for Measurement (DRTM). With DRTM, the system initially follows the normal UEFI Secure Boot process. However, before launching, the system enters a hardware-controlled trusted state that forces the CPU(s) down a hardware-secured code path. If a malware rootkit/bootkit has bypassed UEFI Secure Boot and resides in memory, DRTM will prevent it from accessing secrets and critical code protected by the virtualization-based security environment. Firmware Attack Surface Reduction technology can be used instead of DRTM on supporting devices such as Microsoft Surface.
-
-### [Microsoft Pluton](/windows/security/hardware-security/pluton/microsoft-pluton-security-processor)
+### Microsoft Pluton security processor
 
 The Microsoft Pluton security processor is the result of Microsoft's close partnership with silicon partners. Pluton enhances the protection of Windows 11 devices, including Secured-core PCs, with a hardware security processor that provides additional protection for cryptographic keys and other secrets. Pluton is designed to reduce the attack surface by integrating the security chip directly into the processor. It can be used as a TPM 2.0 or as a standalone security processor. When a security processor is located on a separate, discrete chip on the motherboard, the communication path between the hardware root-of-trust and the CPU can be vulnerable to physical attack. Embedding Pluton into the CPU makes it harder to exploit the communication path.
 
@@ -90,7 +86,7 @@ In Secured-core PCs, System Guard Secure Launch protects bootup with a technolog
 System Management Mode (SMM) isolation is an execution mode in x86-based processors that runs at a higher effective privilege than the hypervisor. SMM complements the protections provided by DRTM by helping to reduce the attack surface. Relying on capabilities provided by silicon providers like Intel and AMD, SMM isolation enforces policies
 that implement restrictions such as preventing SMM code from accessing OS memory. The SMM isolation policy is included as part of the DRTM measurements that can be sent to a verifier like Microsoft Azure Remote Attestation.
 
-![alt text](image.png)
+:::image type="content" source="image.png" alt-text="aas" lightbox="image.png":::
 
 Learn more: Dynamic Root of Trust measure and SMM isolation
 
