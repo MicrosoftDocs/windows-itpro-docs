@@ -9,21 +9,16 @@ ms.topic: how-to
 
 This article describes how to configure Credential Guard using Microsoft Intune, Group Policy, or the registry.
 
-## Default enablement
+## Default Enablement
 
-Starting in **Windows 11, version 22H2**, Credential Guard is turned on by default on devices that [meet the requirements](index.md#hardware-and-software-requirements). The default enablement is **without UEFI Lock**, which allows administrators to disable Credential Guard remotely, if needed.
+Starting in Windows 11, 22H2 and Windows Server 2025, Credential Guard is [enabled by default on devices which meet the requirements](index.md/#default-enablement).
 
-If Credential Guard or VBS are disabled *before* a device is updated to Windows 11, version 22H2 or later, default enablement doesn't overwrite the existing settings.
+System administrators can still [enable](#enable-credential-guard) or [disable](#disable-credential-guard) Credential Guard using one of the methods described in this article. Explicitly configured values will overwrite default enablement state, typically after reboot.
 
-While the default state of Credential Guard changed, system administrators can [enable](#enable-credential-guard) or [disable](#disable-credential-guard) it using one of the methods described in this article.
+### How to Prevent Default Enablement
 
-> [!IMPORTANT]
-> For information about known issues related to default enablement, see [Credential Guard: known issues](considerations-known-issues.md#single-sign-on-for-network-services-breaks-after-upgrading-to-windows-11-version-22h2).
+Devices that have had Credential Guard explicitly disabled *prior* to updating to a version of Windows that comes with default enablement will NOT have Credential Guard enabled upon update. In this case Credential Guard will continue to be disabled even after updating to a version of Windows that enables Credential Guard by default.
 
-> [!NOTE]
-> Devices running Windows 11 Pro/Pro Edu 22H2 or later may have Virtualization-based Security (VBS) and/or Credential Guard automatically enabled if they meet the other requirements for default enablement, and have previously run Credential Guard. For example if Credential Guard was enabled on an Enterprise device that later downgraded to Pro.
->
-> To determine whether the Pro device is in this state, check if the following registry key exists: `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0\IsolatedCredentialsRootSecret`. In this scenario, if you wish to disable VBS and Credential Guard, follow the instructions to [disable Virtualization-based Security](#disable-virtualization-based-security). If you wish to disable Credential Guard only, without disabling VBS, use the procedures to [disable Credential Guard](#disable-credential-guard).
 
 ## Enable Credential Guard
 
@@ -225,7 +220,7 @@ There are different options to disable Credential Guard. The option you choose d
 
 - Credential Guard running in a virtual machine can be [disabled by the host](#disable-credential-guard-for-a-virtual-machine)
 - If Credential Guard is enabled **with UEFI Lock**, follow the procedure described in [disable Credential Guard with UEFI Lock](#disable-credential-guard-with-uefi-lock)
-- If Credential Guard is enabled **without UEFI Lock**, or as part of the automatic enablement in the Windows 11, version 22H2 update, use one of the following options to disable it:
+- If Credential Guard is enabled **without UEFI Lock**, or as part of the [default enablement update](index.md#default-enablement), use one of the following options to disable it:
   - Microsoft Intune/MDM
   - Group policy
   - Registry
@@ -256,7 +251,7 @@ Once the policy is applied, restart the device.
 
 #### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
-### Disable  Credential Guard with group policy
+### Disable Credential Guard with group policy
 
 If Credential Guard is enabled via Group Policy and without UEFI Lock, disabling the same group policy setting disables Credential Guard.
 
