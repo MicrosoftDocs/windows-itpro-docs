@@ -27,7 +27,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
-| [Reliability report](../operate/windows-autopatch-reliability-report.md) | Added the[Reliability report](../operate/windows-autopatch-reliability-report.md) feature |
+| [Reliability report](../operate/windows-autopatch-reliability-report.md) | Added the [Reliability report](../operate/windows-autopatch-reliability-report.md) feature |
 | [Resolve policy conflicts](../operate/windows-autopatch-resolve-policy-conflicts.md) | Added the [Resolve policy conflicts](../operate/windows-autopatch-resolve-policy-conflicts.md) feature |
 
 ## February 2024
