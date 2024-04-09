@@ -1,8 +1,8 @@
 ---
-title: Hardware security
-description: Hardware security
+title: Identity protection
+description: Identity protection
 ms.topic: overview
 ms.date: 03/12/2024
 ---
 
-# Hardware security
+# Identity protection

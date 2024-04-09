@@ -1,8 +1,8 @@
 ---
-title: Hardware security
-description: Hardware security
+title: Cloud security
+description: Cloud security
 ms.topic: overview
 ms.date: 03/12/2024
 ---
 
-# Hardware security
+# Cloud security
