@@ -13,3 +13,7 @@ items:
     href: identity-protection.md
   - name: 5. Cloud security
     href: cloud-security.md
+  - name: 6. Security foundations
+    href: security-foundations.md
+  - name: Conclusion
+    href: conclusion.md
