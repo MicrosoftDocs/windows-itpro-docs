@@ -2,7 +2,10 @@
 title: Identity protection
 description: Identity protection
 ms.topic: overview
-ms.date: 03/12/2024
+ms.date: 04/09/2024
 ---
 
 # Identity protection
+
+> [!div class="nextstepaction"]
+> [Next: Cloud security >](cloud-security.md)

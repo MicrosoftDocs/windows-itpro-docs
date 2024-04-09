@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 09/18/2023
+ms.date: 04/09/2024
 ms.topic: include
 ---
 
@@ -15,9 +15,9 @@ Trusted Platform Module (TPM) technology is designed to provide hardware-based, 
 
 Learn more:
 
-- Windows 11 TPM specifications
-- Enabling TPM 2.0 on your PC
-- Trusted Platform Module technology overview
+- [Windows 11 TPM specifications](https://www.microsoft.com/windows/windows-11-specifications)
+- [Enabling TPM 2.0 on your PC](https://support.microsoft.com/windows/enable-tpm-2-0-on-your-pc-1fd5a332-360d-4f46-a1e7-ae6b0c90645c)
+- [Trusted Platform Module Technology Overview](../../hardware-security/tpm/trusted-platform-module-overview.md)
 
 ### Microsoft Pluton security processor
 
@@ -31,5 +31,5 @@ Pluton also solves the major security challenge of keeping its own security proc
 
 Learn more:
 
-- Meet the Microsoft Pluton processor - The security chip designed for the future of Windows PCs
-- Microsoft Pluton security processor
+- [Meet the Microsoft Pluton processor - The security chip designed for the future of Windows PCs](https://www.microsoft.com/security/blog/2020/11/17/meet-the-microsoft-pluton-processor-the-security-chip-designed-for-the-future-of-windows-pcs/)
+- [Microsoft Pluton security processor](../../hardware-security/pluton/microsoft-pluton-security-processor.md)

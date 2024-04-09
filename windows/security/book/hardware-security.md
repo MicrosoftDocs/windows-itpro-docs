@@ -2,7 +2,7 @@
 title: Hardware security
 description: Hardware security
 ms.topic: overview
-ms.date: 03/12/2024
+ms.date: 04/09/2024
 ---
 
 # Hardware security
@@ -16,3 +16,6 @@ With Windows 11, Microsoft has raised the hardware security bar to design the mo
 [!INCLUDE [hardware-root-of-trust](includes/hardware-root-of-trust.md)]
 
 [!INCLUDE [silicon-assisted-security](includes/silicon-assisted-security.md)]
+
+> [!div class="nextstepaction"]
+> [Next: Operating System security >](operating-system-security.md)
