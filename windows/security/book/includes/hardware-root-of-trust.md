@@ -7,7 +7,7 @@ ms.topic: include
 
 ## Hardware root-of-trust
 
-:::image type="content" source="..\images\hardware-root-of-trust.png" alt-text="Diagram containing a list of features." border="false":::
+:::image type="content" source="..\images\hardware-root-of-trust.svg" alt-text="Diagram containing a list of features." border="false":::
 
 ### Trusted Platform Module (TPM)
 
