@@ -33,7 +33,6 @@ The Windows quality report types are organized into the following focus areas:
 | ----- | ----- |
 | Organizational | The [Summary dashboard](../operate/windows-autopatch-groups-windows-quality-update-summary-dashboard.md) provide the current update status summary for all devices.<p>The [Quality update status report](../operate/windows-autopatch-groups-windows-quality-update-status-report.md) provides the current update status of all devices at the device level. |
 | Device trends | The [Quality update trending report](../operate/windows-autopatch-groups-windows-quality-update-trending-report.md) provides the update status trend of all devices over the last 90 days. |
-| Reliability report | The [Reliability report](../operate/windows-autopatch-reliability-report.md) provides a reliability score calculated for each Windows quality update cycle based on stop error codes detected on managed devices. |
 
 ## Windows feature update reports
 
