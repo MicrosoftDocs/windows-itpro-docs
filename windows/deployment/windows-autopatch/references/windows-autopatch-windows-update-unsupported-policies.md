@@ -79,24 +79,6 @@ These policies control the minimum target version of Windows that a device is me
 | Included groups | Modern Workplace Devices-Windows Autopatch-Test  | Modern Workplace Devices-Windows Autopatch-First | Modern Workplace Devices-Windows Autopatch-Fast | Modern Workplace Devices-Windows Autopatch-Broad |
 | Excluded groups | Modern Workplace - Windows 11 Pre-Release Test Devices | Modern Workplace - Windows 11 Pre-Release Test Devices | Modern Workplace - Windows 11 Pre-Release Test Devices | Modern Workplace - Windows 11 Pre-Release Test Devices |
 
-#### Windows 11 testing
-
-To allow customers to test Windows 11 in their environment, there's a separate DSS policy that enables you to test Windows 11 before broadly adopting within your environment.
-
-##### Windows 11 deployment setting
-
-| Setting name | Test |
-| ----- | ----- |
-| Name | Windows 11 |
-| Rollout options | Immediate start |
-
-##### Windows 11 assignments
-
-| Setting name | Test |
-| ----- | ----- |
-| Included groups | Modern Workplace - Windows 11 Pre-Release Test Devices |
-| Excluded groups | None |
-
 ## Conflicting and unsupported policies
 
 Deploying any of the following policies to a Windows Autopatch device makes that device ineligible for management since the device prevents us from delivering the service as designed.
