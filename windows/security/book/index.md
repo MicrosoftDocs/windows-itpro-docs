@@ -52,6 +52,8 @@ Learn more: [Windows security features licensing and edition requirements](https
 > [!div class="nextstepaction"]
 > [Next: Hardware security >](hardware-security.md)
 
+<br><br>
+
 ---
 
 <sup><a name="footnote1"></a>1</sup> "2023 Data Breach Investigations Report" - Verizon, 2023.\
