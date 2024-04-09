@@ -13,6 +13,8 @@ Windows 11 is the most secure Windows yet with extensive security measures in th
 
 ## System security
 
+:::image type="content" source="images\system-security.svg" alt-text="Diagram containing a list of features." border="false":::
+
 ### Trusted Boot (Secure Boot + Measured Boot)
 
 Windows 11 requires all PCs to use Unified Extensible Firmware Interface (UEFI)'s Secure Boot feature. When a Windows 11 device starts, Secure Boot and Trusted Boot work together to prevent malware and corrupted components from loading. Secure Boot provides initial protection, then Trusted Boot picks up the process.
@@ -130,10 +132,15 @@ Learn more:
 
 ## Encryption and data protection
 
+:::image type="content" source="images\encryption-and-data-protection.svg" alt-text="Diagram containing a list of features." border="false":::
+
 ## Network security
+
+:::image type="content" source="images\network-security.svg" alt-text="Diagram containing a list of features." border="false":::
 
 ## Virus and threat protection
 
+:::image type="content" source="images\virus-and-threat-protection.svg" alt-text="Diagram containing a list of features." border="false":::
 
 > [!div class="nextstepaction"]
 > [Chapter 3: Application security >](application-security.md)
