@@ -52,7 +52,7 @@ Learn more: [Windows security features licensing and edition requirements](https
 > [!div class="nextstepaction"]
 > [Next: Hardware security >](hardware-security.md)
 
-<br><br>
+<br>
 
 ---
 
