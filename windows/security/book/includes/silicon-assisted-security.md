@@ -7,7 +7,7 @@ ms.topic: include
 
 ## Silicon assisted security
 
-:::image type="content" source="..\silicon-assisted-security.png" alt-text="Diagram containing a list of features.":::
+:::image type="content" source="..\images\silicon-assisted-security.png" alt-text="Diagram containing a list of features." border="false":::
 
 In addition to a modern hardware root-of-trust, there are numerous other capabilities in the latest chips that harden the operating system against threats by protecting the boot process, safeguarding the integrity of memory, isolating security-sensitive compute logic, and more.
 
@@ -66,7 +66,7 @@ In Secured-core PCs, System Guard Secure Launch protects bootup with a technolog
 System Management Mode (SMM) isolation is an execution mode in x86-based processors that runs at a higher effective privilege than the hypervisor. SMM complements the protections provided by DRTM by helping to reduce the attack surface. Relying on capabilities provided by silicon providers like Intel and AMD, SMM isolation enforces policies
 that implement restrictions such as preventing SMM code from accessing OS memory. The SMM isolation policy is included as part of the DRTM measurements that can be sent to a verifier like Microsoft Azure Remote Attestation.
 
-:::image type="content" source="architecture.png" alt-text="aas" lightbox="architecture.png":::
+:::image type="content" source="..\images\architecture.png" alt-text="aas" lightbox="..\architecture.png" border="false":::
 
 Learn more:
 
