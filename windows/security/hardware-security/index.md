@@ -10,7 +10,7 @@ ms.topic: overview
 >[!NOTE]
 > This article is an excerpt from the Windows 11 security book. For an in-depth exploration, refer to the complete book: [Windows 11 security book](..\book\index.md)."
 
-:::image type="content" source="..\book\images\hardware.png" alt-text="aas" lightbox="hardware.png":::
+:::image type="content" source="..\book\images\hardware.png" alt-text="aas" lightbox="..\book\images\hardware.png":::
 
 [!INCLUDE [hardware-root-of-trust](..\book\includes\hardware-root-of-trust.md)]
 
