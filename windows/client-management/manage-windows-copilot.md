@@ -6,6 +6,7 @@ ms.subservice: windows-copilot
 ms.date: 03/21/2024
 ms.author: mstewart
 author: mestew
+ms.collection: windows-copilot
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2 or later</a>
 ---
