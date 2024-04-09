@@ -18,4 +18,4 @@ With Windows 11, Microsoft has raised the hardware security bar to design the mo
 [!INCLUDE [silicon-assisted-security](includes/silicon-assisted-security.md)]
 
 > [!div class="nextstepaction"]
-> [Next: Operating System security >](operating-system-security.md)
+> [Chapter 2: Operating System security >](operating-system-security.md)

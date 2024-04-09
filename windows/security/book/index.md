@@ -50,7 +50,7 @@ In Windows 11, hardware and software work together to protect sensitive data fro
 Learn more: [Windows security features licensing and edition requirements](https://learn.microsoft.com/en-us/windows/security/licensing-and-edition-requirements?tabs=edition)
 
 > [!div class="nextstepaction"]
-> [Next: Hardware security >](hardware-security.md)
+> [Chapter 1: Hardware security >](hardware-security.md)
 
 <br>
 

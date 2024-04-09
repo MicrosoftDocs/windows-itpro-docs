@@ -8,4 +8,4 @@ ms.date: 04/09/2024
 # Cloud security
 
 > [!div class="nextstepaction"]
-> [Next: Security foundations >](security-foundations.md)
+> [Chapter 6: Security foundations >](security-foundations.md)

@@ -8,4 +8,4 @@ ms.date: 04/09/2024
 # Identity protection
 
 > [!div class="nextstepaction"]
-> [Next: Cloud security >](cloud-security.md)
+> [Chapter 5: Cloud security >](cloud-security.md)
