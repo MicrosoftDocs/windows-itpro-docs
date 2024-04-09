@@ -13,7 +13,14 @@ Windows 11 is the most secure Windows yet with extensive security measures in th
 
 ## System security
 
-:::image type="content" source="images\system-security.svg" alt-text="Diagram containing a list of features." border="false":::
+- [Trusted Boot (Secure Boot + Measured Boot)](#trusted-boot-secure-boot--measured-boot)
+- [Cryptography](#cryptography)
+- [Certificates](#certificates)
+- [Code signing and integrity](#code-signing-and-integrity)
+- [Device health attestation](#device-health-attestation)
+- [Windows security policy settings and auditing](#windows-security-policy-settings-and-auditing)
+- [Assigned Access](#assigned-access)
+- [Config Refresh](#config-refresh)[Windows security settings](#windows-security-settings)
 
 ### Trusted Boot (Secure Boot + Measured Boot)
 
