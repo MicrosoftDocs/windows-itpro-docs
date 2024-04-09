@@ -9,6 +9,7 @@ ms.author: danbrown
 manager: laurawi
 ms.date: 03/04/2024
 ms.topic: conceptual
+ms.collection: windows-copilot
 hideEdit: true
 layout: ContentPage
 ROBOTS: NOINDEX, NOFOLLOW
