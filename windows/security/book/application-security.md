@@ -1,8 +1,8 @@
 ---
-title: Hardware security
-description: Hardware security
+title: Application security
+description: Application security
 ms.topic: overview
 ms.date: 03/12/2024
 ---
 
-# Hardware security
+# Application security
