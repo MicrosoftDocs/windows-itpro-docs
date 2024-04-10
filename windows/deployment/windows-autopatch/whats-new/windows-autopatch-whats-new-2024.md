@@ -1,7 +1,7 @@
 ---
 title: What's new 2024
 description: This article lists the 2024 feature releases and any corresponding Message center post numbers.
-ms.date: 02/07/2024
+ms.date: 04/09/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: whats-new
@@ -20,6 +20,14 @@ ms.collection:
 This article lists new and updated feature releases, and service releases, with their corresponding Message center post numbers (if applicable).
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
+
+## March 2024
+
+### March feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Resolve policy conflicts](../operate/windows-autopatch-resolve-policy-conflicts.md) | Added [Resolve policy conflicts](../operate/windows-autopatch-resolve-policy-conflicts.md) feature |
 
 ## February 2024
 
