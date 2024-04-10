@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 08/29/2023
+ms.date: 04/05/2024
 ---
 
 # Deploy expedited updates with Windows Update for Business deployment service
@@ -55,10 +55,10 @@ All of the [prerequisites for the Windows Update for Business deployment service
 
 ## List catalog entries for expedited updates
 
-Each update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). You can query the catalog to find updates that can be expedited. The `id` returned is the **Catalog ID** and is used to create a deployment. The following query lists all security updates that can be deployed as expedited updates by the deployment service. Using `$top=1` and ordering by `ReleaseDateTimeshows` displays the most recent update that can be deployed as expedited.
+Each update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). You can query the catalog to find updates that can be expedited. The `id` returned is the **Catalog ID** and is used to create a deployment. The following query lists all security and nonsecurity<!--8891502--> quality updates that can be deployed as expedited updates by the deployment service. Using `$top=2` and ordering by `ReleaseDateTimeshows` displays the most recent updates that can be deployed as expedited.
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true&$orderby=releaseDateTime desc&$top=1
+GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true&$orderby=releaseDateTime desc&$top=2
 ```
 
 The following truncated response displays a **Catalog ID** of  `e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5` for the `08/08/2023 - 2023.08 B SecurityUpdate for Windows 10 and later` security update:
