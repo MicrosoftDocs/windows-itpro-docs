@@ -8,8 +8,8 @@ appliesto:
 
 # Configure federation between Google Workspace and Microsoft Entra ID
 
-This article describes the steps required to configure Google Workspace as an identity provider (IdP) for Azure AD.\
-Once configured, users will be able to sign in to Microsoft Entra ID with their Google Workspace credentials.
+This article describes the steps required to configure Google Workspace as an identity provider (IdP) for Microsoft Entra ID.\
+Once configured, users can sign in to Microsoft Entra ID with their Google Workspace credentials.
 
 ## Prerequisites
 
@@ -27,11 +27,11 @@ To test federation, the following prerequisites must be met:
     > [!IMPORTANT]
     > Users require an email address defined in Google Workspace, which is used to match the users in Microsoft Entra ID.
     > For more information about identity matching, see [Identity matching in Microsoft Entra ID](federated-sign-in.md#identity-matching-in-microsoft-entra-id).
-1. Individual Microsoft Entra accounts already created: each Google Workspace user will require a matching account defined in Microsoft Entra ID. These accounts are commonly created through automated solutions, for example:
+1. Individual Microsoft Entra accounts already created: each Google Workspace user requires a matching account defined in Microsoft Entra ID. These accounts are commonly created through automated solutions, for example:
     - School Data Sync (SDS)
     - Microsoft Entra Connect Sync for environment with on-premises AD DS
     - PowerShell scripts that call the Microsoft Graph API
-    - Provisioning tools offered by the IdP - this capability is offered by Google Workspace through [auto-provisioning](https://support.google.com/a/answer/7365072)
+    - Provisioning tools offered by the IdP - Google Workspace offers [autoprovisioning](https://support.google.com/a/answer/7365072)
 
 <a name='configure-google-workspace-as-an-idp-for-azure-ad'></a>
 
@@ -42,12 +42,12 @@ To test federation, the following prerequisites must be met:
 1. Select **Add app > Search for apps** and search for *microsoft*
 1. In the search results page, hover over the *Microsoft Office 365 - Web (SAML)* app and select **Select**
    :::image type="content" source="images/google/google-admin-search-app.png" alt-text="Screenshot showing Google Workspace and the search button for Microsoft Office 365 SAML app.":::
-1. On the **Google Identity Provider details** page, select **Download Metadata** and take note of the location where the **IdP metadata** - *GoogleIDPMetadata.xml* - file is saved, as it will be used to setup Microsoft Entra ID later
+1. On the **Google Identity Provider details** page, select **Download Metadata** and take note of the location where the **IdP metadata** - *GoogleIDPMetadata.xml* - file is saved, as it's used to setup Microsoft Entra ID later
 1. On the **Service provider detail's** page
       - Select the option **Signed response**
       - Verify that the Name ID format is set to **PERSISTENT**
-      - Depending on how the Microsoft Entra users have been provisioned in Microsoft Entra ID, you may need to adjust the **Name ID** mapping.\
-        If using Google auto-provisioning, select **Basic Information > Primary email**
+      - Depending on how the Microsoft Entra users have been provisioned in Microsoft Entra ID, you might need to adjust the **Name ID** mapping.\
+        If using Google autoprovisioning, select **Basic Information > Primary email**
       - Select **Continue**
 1. On the **Attribute mapping** page, map the Google attributes to the Microsoft Entra attributes
 
@@ -136,7 +136,7 @@ AdditionalProperties                  : {}
 From a private browser session, navigate to https://portal.azure.com and sign in with a Google Workspace account:
 
 1. As username, use the email as defined in Google Workspace
-1. The user will be redirected to Google Workspace to sign in
-1. After Google Workspace authentication, the user will be redirected back to Microsoft Entra ID and signed in
+1. The user is redirected to Google Workspace to sign in
+1. After Google Workspace authentication, the user is redirected back to Microsoft Entra ID and signed in
 
 :::image type="content" source="images/google/google-sso.gif" alt-text="A GIF that shows the user authenticating the Azure portal using a Google Workspace federated identity.":::
