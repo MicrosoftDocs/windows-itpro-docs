@@ -8,7 +8,5 @@ items:
   href: policy-settings.md
 - name: XML schema definition (XSD)
   href: xsd.md
-- name: _🧐 XML schema
-  href: _delete.md
 - name: Troubleshoot Start menu errors 🔗
   href: /troubleshoot/windows-client/shell-experience/troubleshoot-start-menu-errors
