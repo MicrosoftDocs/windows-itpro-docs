@@ -427,7 +427,7 @@
     },
     {
       "source_path": "windows/configuration/start-secondary-tiles.md",
-      "redirect_url": "/windows/configuration/start/start-secondary-tiles",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     },
     {
@@ -883,6 +883,11 @@
     {
       "source_path": "windows/configuration/start/windows-10-start-layout-options-and-policies.md",
       "redirect_url": "/windows/configuration/start/policy-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/start-secondary-tiles.md",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     }
   ]
