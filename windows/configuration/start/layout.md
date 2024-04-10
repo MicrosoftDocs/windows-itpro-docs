@@ -20,7 +20,7 @@ This article describes how to customize the Start layout, export its configurati
 
 To customize the Windows Start layout and deploy its configuration to other devices, follow these steps:
 
-1. From a reference device, configure the Start layout to meet your requirements
+1. Configure the Start layout to meet your requirements from a reference device
 1. Export the Start layout configuration to a configuration file
 1. Deploy the configuration file using one of the available options
 
@@ -169,8 +169,8 @@ After you export the layout, decide whether you want to apply a *full* Start lay
 | [start:Tile](#specify-start-tiles) | Use to specify a UWP app |
 | `start:Folder`| Use to specify a folder of icons; can include [Tile](#starttile), [SecondaryTile](#startsecondarytile), and [DesktopApplicationTile](#startdesktopapplicationtile) |
 | [start:DesktopApplicationTile](#startdesktopapplicationtile) | Use to specify any of the following:</br>- A Windows desktop application with a known AppUserModelID</br>- An application in a known folder with a link in a legacy Start Menu folder</br>- A Windows desktop application link in a legacy Start Menu folder</br>- A Web link tile with an associated `.url` file that is in a legacy Start Menu folder |
-| [start:SecondaryTile](#startsecondarytile) | Use to pin a Web link through a Microsoft Edge secondary tile. |
-| [AppendOfficeSuite](#AppendOfficeSuite) | Use to add the in-box installed Office suite to Start. For more information, see [Customize the Office suite of tiles](/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).</br></br>Don't use this tag with `AppendDownloadOfficeTile`. |
+| [start:SecondaryTile](#startsecondarytile) | Use to pin a Web link through a Microsoft Edge secondary tile |
+| [AppendOfficeSuite](#AppendOfficeSuite) | Use to add the in-box installed Office suite to Start. For more information, see [Customize the Office suite of tiles](/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).</br></br>Don't use this tag with `AppendDownloadOfficeTile` |
 | [AppendDownloadOfficeTile](#AppendDownloadOfficeTile) | Use to add a specific **Download Office** tile to a specific location in Start</br></br>Do not use this tag with AppendOfficeSuite |
 
 #### LayoutOptions
@@ -200,7 +200,7 @@ The groups have the following constraints:
 
 - Two groups that are six columns wide, or equivalent to the width of three medium tiles
 - Two medium-sized tile rows in height. Windows ignores any tiles that are pinned beyond the second row
-- No limit to the number of apps that can be pinned. There's a theoretical limit of 24 tiles per group (four small tiles per medium square x 3 columns x 2 rows)
+- No limit to the number of apps that can be pinned. There's a theoretical limit of 24 tiles per group (four small tiles per medium square x three columns x two rows)
 
 >[!IMPORTANT]
 >You can add a maximum of two `AppendGroup` tags per `RequiredStartGroups` tag.
@@ -217,11 +217,11 @@ You can also assign regions to the append groups in the `RequiredStartGroups` ta
 
 #### AppendGroup
 
-`AppendGroup` tags specify a group of tiles to append to Start. There is a maximum of two `AppendGroup` tags allowed per `RequiredStartGroups` tag.
+`AppendGroup` tags specify a group of tiles to append to Start. There's a maximum of two `AppendGroup` tags allowed per `RequiredStartGroups` tag.
 
 For Windows 10 for desktop editions, AppendGroup tags contain `start:Tile`, `start:DesktopApplicationTile`, or `start:SecondaryTile` tags.
 
-You can specify any number of tiles in an `AppendGroup`, but you can't specify a tile with a `Row` attribute greater than 1. The Start layout doesn't support overlapping tiles.
+You can specify any number of tiles in an `AppendGroup`, but you can't specify a tile with a `Row` attribute greater than one. The Start layout doesn't support overlapping tiles.
 
 #### Specify Start tiles
 
@@ -235,15 +235,15 @@ The following table describes the attributes that you must use to specify the si
 
 | Attribute | Description |
 | --- | --- |
-| `Size` | Determines how large the tile will be.</br></br>- 1x1 - small tile</br>- 2x2 - medium tile</br>- 4x2 - wide tile</br>- 4x4 - large tile |
-| `Row` | Specifies the row where the tile will appear. |
-| `Column` | Specifies the column where the tile will appear. |
+| `Size` | Determines how large the tile is.</br></br>- 1x1 - small tile</br>- 2x2 - medium tile</br>- 4x2 - wide tile</br>- 4x4 - large tile |
+| `Row` | Specifies the row where the tile appears. |
+| `Column` | Specifies the column where the tile appears. |
 
 For example, a tile with `Size="2x2"`, `Row="2"`, and `Column="2"` results in a tile located at (2,2) where (0,0) is the top-left corner of a group.
 
 #### start:Tile
 
-You can use the `start:Tile` tag to pin a UWP app to Start. You must set the `AppUserModelID` attribute to the application user model ID (AUMID) that's associated with the corresponding app.
+You can use the `start:Tile` tag to pin a UWP app to Start. You must set the `AppUserModelID` attribute to the application user model ID (AUMID) of the corresponding app.
 
 #### start:DesktopApplicationTile
 
@@ -268,7 +268,7 @@ You can use the `start:DesktopApplicationTile` tag to pin a Windows desktop appl
 
   You must set the `DesktopApplicationLinkPath` attribute to the .lnk file that points to the Windows desktop application. The path also supports environment variables.
 
-  If you are pointing to a third-party Windows desktop application and the layout is being applied before the first boot, you must put the `.lnk` file in a legacy Start Menu directory before first boot. For example, `%APPDATA%\Microsoft\Windows\Start Menu\Programs\` or the all users profile `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\`.
+  If you're pointing to a third-party Windows desktop application and the layout is being applied before the first boot, you must put the `.lnk` file in a legacy Start Menu directory before first boot. For example, `%APPDATA%\Microsoft\Windows\Start Menu\Programs\` or the all users profile `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\`.
 
 - Use the AUMID, if this is known. If the Windows desktop application doesn't have one, use the shortcut link option.
 
@@ -303,41 +303,40 @@ The following example shows how to create a tile of the Web site's URL, which yo
 
 #### start:SecondaryTile
 
-You can use the **start:SecondaryTile** tag to pin a Web link through a Microsoft Edge secondary tile. This method doesn't require any additional action compared to the method of using legacy `.url` shortcuts (through the start:DesktopApplicationTile tag).
+You can use the **start:SecondaryTile** tag to pin a Web link through a Microsoft Edge secondary tile. This method doesn't require more actions compared to the method of using legacy `.url` shortcuts (through the start:DesktopApplicationTile tag).
 
 The following example shows how to create a tile of the Web site's URL using the Microsoft Edge secondary tile:
 
 ```XML
-<start:SecondaryTile
-          AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
-          TileID="MyWeblinkTile"
-          Arguments="http://msn.com"
-          DisplayName="MySite"
-          Square150x150LogoUri="ms-appx:///Assets/MicrosoftEdgeSquare150x150.png"
+<start:SecondaryTile AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
+TileID="MyWeblinkTile"
+Arguments="http://msn.com"
+DisplayName="MySite"
+Square150x150LogoUri="ms-appx:///Assets/MicrosoftEdgeSquare150x150.png"
 
-          Wide310x150LogoUri="ms-appx:///Assets/MicrosoftEdgeWide310x150.png"
-          ShowNameOnSquare150x150Logo="true"
-          ShowNameOnWide310x150Logo="false"
-          BackgroundColor="#FF112233"
-          Size="2x2"
-          Row="0"
-          Column="4"/>
+Wide310x150LogoUri="ms-appx:///Assets/MicrosoftEdgeWide310x150.png"
+ShowNameOnSquare150x150Logo="true"
+ShowNameOnWide310x150Logo="false"
+BackgroundColor="#FF112233"
+Size="2x2"
+Row="0"
+Column="4" />
 ```
 
 The following table describes the other attributes that you can use with the `start:SecondaryTile` tag in addition to `Size`, `Row`, and `Column`.
 
 | Attribute | Required/optional | Description |
 | --- | --- | --- |
-| AppUserModelID | Required | Must point to Microsoft Edge. Note that AppUserModelID is case-sensitive. |
-| TileID | Required | Must uniquely identify your Web site tile. |
-| Arguments | Required | Must contain the URL of your Web site. |
-| DisplayName | Required | Must specify the text that you want users to see. |
-| Square150x150LogoUri | Required | Specifies the logo to use on the 2x2 tile. |
-| Wide310x150LogoUri | Optional | Specifies the logo to use on the 4x2 tile. |
-| ShowNameOnSquare150x150Logo | Optional | Specifies whether the display name is shown on the 2x2 tile. The values you can use for this attribute are true or false. |
-| ShowNameOnWide310x150Logo | Optional | Specifies whether the display name is shown on the 4x2 tile. The values you can use for this attribute are true or false. |
-| BackgroundColor | Optional | Specifies the color of the tile. You can specify the value in ARGB hexadecimal (for example, #FF112233) or specify "transparent". |
-| ForegroundText | Optional | Specifies the color of the foreground text. Set the value to either "light" or "dark". |
+| `AppUserModelID` | Required | Must point to Microsoft Edge. |
+| `TileID` | Required | Must uniquely identify your Web site tile. |
+| `Arguments` | Required | Must contain the URL of your Web site. |
+| `DisplayName` | Required | Must specify the text that you want users to see. |
+| `Square150x150LogoUri` | Required | Specifies the logo to use on the 2x2 tile. |
+| `Wide310x150LogoUri` | Optional | Specifies the logo to use on the 4x2 tile. |
+| `ShowNameOnSquare150x150Logo` | Optional | Specifies whether the display name is shown on the 2x2 tile. The values you can use for this attribute are true or false. |
+| `ShowNameOnWide310x150Logo` | Optional | Specifies whether the display name is shown on the 4x2 tile. The values you can use for this attribute are true or false. |
+| `BackgroundColor` | Optional | Specifies the color of the tile. You can specify the value in ARGB hexadecimal (for example, `#FF112233`) or specify `transparent`. |
+| `ForegroundText` | Optional | Specifies the color of the foreground text. Set the value to either `light` or `dark`. |
 
 Secondary Microsoft Edge tiles have the same size and location behavior as a Universal Windows app, Windows 8 app, or Windows 8.1 app.
 
@@ -348,7 +347,7 @@ You can use the `AppendOfficeSuite` tag to add the in-box installed Office suite
 >[!NOTE]
 >The OEM must have installed Office for this tag to work.
 
-The following example shows how to add the `AppendOfficeSuite` tag to your `LayoutModification.xml` file to append the full Universal Office suite to Start:
+The following example shows how to add the `AppendOfficeSuite` tag to your `LayoutModification.xml` file to append the Office suite to Start:
 
 ```XML
 <LayoutModificationTemplate
@@ -362,25 +361,25 @@ The following example shows how to add the `AppendOfficeSuite` tag to your `Layo
 
 #### AppendOfficeSuiteChoice
 
-This tag is added in Windows 10, version 1801. You have two options in this tag:
+You have two options in this tag:
 
 - `<AppendOfficeSuiteChoice Choice="DesktopBridgeSubscription"/>`
 - `<AppendOfficeSuiteChoice Choice="DesktopBridge"/>`
 
-Use `Choice=DesktopBridgeSubscription` on devices running Windows 10, version 1803, that have Office 365 preinstalled. This will set the heading of the Office suite of tiles to **Office 365**, to highlight the Office 365 apps that you've made available on the device.
+Use `Choice=DesktopBridgeSubscription` on devices that have Office 365 preinstalled. This sets the heading of the Office suite of tiles to `Office 365`, to highlight the Office 365 apps that you've made available on the device.
 
-Use `Choice=DesktopBridge` on devices running versions of Windows 10 earlier than version 1803, and on devices shipping with [perpetual licenses for Office](/archive/blogs/ausoemteam/choosing-the-right-office-version-for-your-customers). This will set the heading of the Office suite of tiles to **Create**.
+Use `Choice=DesktopBridge` on devices shipping with [perpetual licenses for Office](/archive/blogs/ausoemteam/choosing-the-right-office-version-for-your-customers). This sets the heading of the Office suite of tiles to **Create**.
 
 For more information, see [Customize the Office suite of tiles](/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).
 
 #### AppendDownloadOfficeTile
 
-You can use the **AppendDownloadOfficeTile** tag to append the Office trial installer to Start. This tag adds the **Download Office** tile to Start and the download tile will appear at the bottom right-hand side of the second group.
+You can use the `AppendDownloadOfficeTile` tag to append the Office trial installer to Start. This tag adds the **Download Office** tile to Start and the download tile will appear at the bottom right-hand side of the second group.
 
 >[!NOTE]
 >The OEM must have installed the Office trial installer for this tag to work.
 
-The following example shows how to add the **AppendDownloadOfficeTile** tag to your LayoutModification.xml file:
+The following example shows how to add the `AppendDownloadOfficeTile` tag to your LayoutModification.xml file:
 
 ```XML
 <LayoutModificationTemplate
@@ -626,7 +625,7 @@ When a full Start layout is applied with policy settings, users can't pin, unpin
 
 ::: zone pivot="windows-11"
 
-When you configure the Start layout with policy settings, you overwrite the entire layout. Users can change the order of the pinned elements, pin, or unpin itmes. When a user signs in again, the Start layout specified in the policy setting is reapplied, without retaining any user changes.
+When you configure the Start layout with policy settings, you overwrite the entire layout. Users can change the order of the pinned elements, pin, or unpin items. When a user signs in again, the Start layout specified in the policy setting is reapplied, without retaining any user changes.
 
 ::: zone-end
 
