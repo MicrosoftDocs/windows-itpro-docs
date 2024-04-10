@@ -11,7 +11,7 @@ zone_pivot_groups: windows-versions-11-10
 
 ::: zone pivot="windows-10"
 
-Starting in Windows 10, version 1607, administrators can pin more apps to the taskbar and remove default pinned apps from the taskbar by adding a `<TaskbarLayout>` section to a layout modification XML file. This method never removes user-pinned apps from the taskbar.
+You can pin apps to the taskbar and remove default pinned apps by adding a `<TaskbarLayout>` section to a layout modification XML file. This method never removes user-pinned apps from the taskbar.
 
 > [!NOTE]
 > The only aspect of the taskbar that can currently be configured by the layout modification XML file is the layout.
@@ -46,18 +46,6 @@ To configure the taskbar:
 >If you use a provisioning package or import-startlayout to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user then unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration that allows users to make changes that will persist, apply your configuration by using Group Policy.
 >
 >If you use Group Policy and your configuration only contains a taskbar layout, the default Windows tile layout will be applied and cannot be changed by users. If you use Group Policy and your configuration includes taskbar and a full Start layout, users can only make changes to the taskbar. If you use Group Policy and your configuration includes taskbar and a [partial Start layout](../start/layout.md), users can make changes to the taskbar and to tile groups not defined in the partial Start layout.
-
-### Tips for finding AUMID and Desktop Application Link Path
-
-In the layout modification XML file, you'll need to add entries for applications in the XML markup. In order to pin an application, you need either its AUMID or Desktop Application Link Path.
-
-The easiest way to find this data for an application is to:
-
-1. Pin the application to the Start menu on a reference or testing PC
-1. Open Windows PowerShell and run the `Export-StartLayout` cmdlet
-1. Open the generated XML file
-1. Look for an entry corresponding to the app you pinned
-1. Look for a property labeled `AppUserModelID` or `DesktopApplicationLinkPath`
 
 ### Sample taskbar configuration XML file
 
@@ -202,116 +190,9 @@ By adding `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`, you
 </LayoutModificationTemplate>
 ```
 
-## Configure taskbar by country or region
-
-The following example shows you how to configure taskbars by country or region. When the layout is applied to a computer, if there's no `<TaskbarPinList>` node with a region tag for the current region, the first `<TaskbarPinList>` node that has no specified region will be applied. When you specify one or more countries or regions in a `<TaskbarPinList>` node, the specified apps are pinned on computers configured for any of the specified countries or regions.
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
-    Version="1">
-
-  <CustomTaskbarLayoutCollection PinListPlacement="Replace">
-    <defaultlayout:TaskbarLayout region="US|UK">
-      <taskbar:TaskbarPinList >
-        <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-        <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk" />
-        <taskbar:UWA AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word" />
-        <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"/>
-        <taskbar:UWA AppUserModelID="Microsoft.Reader_8wekyb3d8bbwe!Microsoft.Reader" />
-      </taskbar:TaskbarPinList>
-    </defaultlayout:TaskbarLayout>
-    <defaultlayout:TaskbarLayout region="DE|FR">
-      <taskbar:TaskbarPinList>
-        <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk" />
-        <taskbar:UWA AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word" />
-        <taskbar:UWA AppUserModelID="Microsoft.Office.Excel_8wekyb3d8bbwe!microsoft.excel" />
-        <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"/>
-        <taskbar:UWA AppUserModelID="Microsoft.Reader_8wekyb3d8bbwe!Microsoft.Reader" />
-      </taskbar:TaskbarPinList>
-    </defaultlayout:TaskbarLayout>
-    <defaultlayout:TaskbarLayout>
-      <taskbar:TaskbarPinList>
-        <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk" />
-        <taskbar:UWA AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word" />
-        <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"/>
-        <taskbar:UWA AppUserModelID="Microsoft.Reader_8wekyb3d8bbwe!Microsoft.Reader" />
-      </taskbar:TaskbarPinList>
-    </defaultlayout:TaskbarLayout>
-  </CustomTaskbarLayoutCollection>
-</LayoutModificationTemplate>
-```
-
-When the preceding example XML file is applied, the resulting taskbar for computers in the US or UK:
-
-![taskbar for US and UK locale.](images/taskbar-region-usuk.png)
-
-The resulting taskbar for computers in Germany or France:
-
-![taskbar for DE and FR locale.](images/taskbar-region-defr.png)
-
-The resulting taskbar for computers in any other country region:
-
-![taskbar for all other regions.](images/taskbar-region-other.png)
-
-> [!NOTE]
-> [Look up country and region codes (use the ISO Short column)](/previous-versions/commerce-server/ee799297(v=cs.20))
-
-## Layout Modification Template schema definition
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            xmlns:local="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
-            targetNamespace="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
-            elementFormDefault="qualified">
-
-  <xsd:complexType name="ct_PinnedUWA">
-    <xsd:attribute name="AppUserModelID" type="xsd:string" />
-  </xsd:complexType>
-
-  <xsd:complexType name="ct_PinnedDesktopApp">
-    <xsd:attribute name="DesktopApplicationID" type="xsd:string" />
-    <xsd:attribute name="DesktopApplicationLinkPath" type="xsd:string" />
-  </xsd:complexType>
-
-  <xsd:complexType name="ct_TaskbarPinList">
-    <xsd:sequence>
-      <xsd:choice minOccurs="1" maxOccurs="unbounded">
-        <xsd:element name="UWA" type="local:ct_PinnedUWA" />
-        <xsd:element name="DesktopApp" type="local:ct_PinnedDesktopApp" />
-      </xsd:choice>
-    </xsd:sequence>
-    <xsd:attribute name="Region" type="xsd:string" use="optional" />
-  </xsd:complexType>
-
-  <xsd:simpleType name="st_TaskbarPinListPlacement">
-    <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="Append" />
-      <xsd:enumeration value="Replace" />
-    </xsd:restriction>
-  </xsd:simpleType>
-
-  <xsd:attributeGroup name="ag_SelectionAttributes">
-    <xsd:attribute name="SKU" type="xsd:string" use="optional"/>
-    <xsd:attribute name="Region" type="xsd:string" use="optional"/>
-  </xsd:attributeGroup>
-
-  <xsd:complexType name="ct_TaskbarLayout">
-    <xsd:sequence>
-      <xsd:element name="TaskbarPinList" type="local:ct_TaskbarPinList" minOccurs="1" maxOccurs="1" />
-    </xsd:sequence>
-    <xsd:attributeGroup ref="local:ag_SelectionAttributes"/>
-  </xsd:complexType>
-
-</xsd:schema>
-```
-
 ::: zone-end
+
+[!INCLUDE [example](includes/example-localized.md)]
 
 ::: zone pivot="windows-11"
 

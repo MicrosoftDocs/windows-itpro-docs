@@ -27,15 +27,6 @@ This reference article contains the Taskbar XML schema definition (XSD).
         <xsd:attribute name="DesktopApplicationLinkPath" type="xsd:string" />
     </xsd:complexType>
 
-    <xsd:complexType name="ct_TaskbarSecondaryTile">
-        <xsd:attribute name="AppUserModelID" type="xsd:string" use="required"/>
-        <xsd:attribute name="TileID" type="xsd:string" use="required"/>
-        <xsd:attribute name="Arguments" type="xsd:string" use="required"/>
-        <xsd:attribute name="DisplayName" type="xsd:string" use="required"/>
-        <xsd:attribute name="Square150x150LogoUri" type="xsd:string" use="required"/>
-        <xsd:attribute name="Wide310x150LogoUri" type="xsd:string" use="optional"/>
-    </xsd:complexType>
-
     <xsd:complexType name="ct_TaskbarPinList">
         <xsd:sequence>
             <xsd:choice minOccurs="0" maxOccurs="unbounded">
