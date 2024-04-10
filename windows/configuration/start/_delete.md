@@ -9,48 +9,17 @@ appliesto:
 
 # Start layout XML
 
-On Windows 10 for desktop editions, the customized Start works by:
+The groups have the following constraints:
 
-- Windows 10 checks the chosen base default layout, such as the desktop edition and whether Cortana is supported for the country/region.
-- Windows 10 reads the LayoutModification.xml file and allows groups to be appended to Start. The groups have the following constraints:
-  - Two groups that are six columns wide, or equivalent to the width of three medium tiles.
-  - Two medium-sized tile rows in height. Windows 10 ignores any tiles that are pinned beyond the second row.
-  - No limit to the number of apps that can be pinned. There's a theoretical limit of 24 tiles per group (four small tiles per medium square x 3 columns x 2 rows).
-
->[!NOTE]
->To use the layout modification XML to configure Start with roaming user profiles, see [Deploying Roaming User Profiles](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#step-7-optionally-specify-a-start-layout-for-windows-10-pcs).
+- Two groups that are six columns wide, or equivalent to the width of three medium tiles
+- Two medium-sized tile rows in height. Windows 10 ignores any tiles that are pinned beyond the second row.
+- No limit to the number of apps that can be pinned. There's a theoretical limit of 24 tiles per group (four small tiles per medium square x 3 columns x 2 rows).
 
 ## LayoutModification XML
 
-IT admins can provision the Start layout using a LayoutModification.xml file. This file supports several mechanisms to modify or replace the default Start layout and its tiles. The easiest method for creating a LayoutModification.xml file is by using the Export-StartLayout cmdlet; see [Customize and export Start layout](customize-and-export-start-layout.md) for instructions.
-
-### Required order
-
-The XML schema for `LayoutModification.xml` requires the following order for tags directly under the LayoutModificationTemplate node:
-
-1. LayoutOptions
-1. DefaultLayoutOverride
-1. RequiredStartGroupsCollection
-1. AppendDownloadOfficeTile - OR - AppendOfficeSuite (only one Office option can be used at a time)
-1. AppendOfficeSuiteChoice
-1. TopMFUApps
-1. CustomTaskbarLayoutCollection
-1. InkWorkspaceTopApps
-1. StartLayoutCollection
-
-> [!CAUTION]
-> Comments are not supported in the `LayoutModification.xml` file.
-
 ### Supported elements and attributes
 
->[!NOTE]
->To make sure the Start layout XML parser processes your file correctly, follow these guidelines when working with your LayoutModification.xml file:
->
->- Do not leave spaces or white lines in between each element.
->- Do not add comments inside the StartLayout node or any of its children elements.
->- Do not add multiple rows of comments.
 
-The following table lists the supported elements and attributes for the LayoutModification.xml file.
 
 > [!NOTE]
 > RequiredStartGroupsCollection and AppendGroup syntax only apply when the Import-StartLayout method is used for building and deploying Windows images.
@@ -97,17 +66,12 @@ The following example shows how to use the LayoutOptions element to specify full
 </LayoutModificationTemplate>
 ```
 
-For devices being upgraded to Windows 10 for desktop editions:
-
-- Devices being upgraded from Windows 7 will default to a Start menu with one column.
-- Devices being upgraded from Windows 8.1 or Windows 8.1 Upgrade will default to a Start menu with two columns.
-
 ### RequiredStartGroups
 
 The **RequiredStartGroups** tag contains **AppendGroup** tags that represent groups that you can append to the default Start layout.
 
 >[!IMPORTANT]
->For Windows 10 for desktop editions, you can add a maximum of two (2) **AppendGroup** tags per **RequiredStartGroups** tag.
+>You can add a maximum of two **AppendGroup** tags per **RequiredStartGroups** tag.
 
 You can also assign regions to the append groups in the **RequiredStartGroups** tag's using the optional **Region** attribute or you can use the multivariant capabilities in Windows provisioning. If you're using the **Region** attribute, you must use a two-letter country code to specify the country/region that the append group(s) apply to. To specify more than one country/region, use a pipe ("|") delimiter as shown in the following example:
 
@@ -146,7 +110,6 @@ The following table describes the attributes that you must use to specify the si
 
 For example, a tile with Size="2x2", Row="2", and Column="2" results in a tile located at (2,2) where (0,0) is the top-left corner of a group.
 
-<span id="start-tile" />
 #### start:Tile
 
 You can use the **start:Tile** tag to pin any of the following apps to Start:
@@ -269,42 +232,14 @@ The following table describes the other attributes that you can use with the **s
 
 Secondary Microsoft Edge tiles have the same size and location behavior as a Universal Windows app, Windows 8 app, or Windows 8.1 app.
 
-#### TopMFUApps
-
->[!NOTE]
->Only applies to versions of Windows 10 earlier than version 1701. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start.
-
-You can use the **TopMFUApps** tag to add up to 3 default apps to the frequently used apps section in the system area, which delivers system-driven lists to the user including important or frequently accessed system locations and recently installed apps.
-
-You can use this tag to add:
-
-- Apps with an **AppUserModelID** attribute - This includes Windows desktop applications that have a known application user model ID. Use a **Tile** tag with the **AppUserModelID** attribute set to the app's application user model ID.
-- Apps without a **AppUserModelID** attribute - For these apps, you must create a .lnk file that points to the installed app and place the .lnk file in the `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs` directory. Use a **DesktopApplicationTile** tag with the **LinkFilePath** attribute set to the .lnk file name and path.
-
-The following example shows how to modify your LayoutModification.xml file to add both kinds of apps to the system area in Start:
-
- ```XML
- <LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-    Version="1">
-    <TopMFUApps>
-        <Tile AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
-        <Tile AppUserModelID="Microsoft.Getstarted_8wekyb3d8bbwe!App" />
-        <DesktopApplicationTile LinkFilePath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Win32App.lnk" />
-  </TopMFUApps>
-</LayoutModificationTemplate>
-```
-
 #### AppendOfficeSuite
 
-You can use the **AppendOfficeSuite** tag to add the in-box installed Office suite of apps to Start.
+You can use the `AppendOfficeSuite` tag to add the in-box installed Office suite of apps to Start.
 
 >[!NOTE]
 >The OEM must have installed Office for this tag to work.
 
-The following example shows how to add the **AppendOfficeSuite** tag to your LayoutModification.xml file to append the full Universal Office suite to Start:
+The following example shows how to add the `AppendOfficeSuite` tag to your `LayoutModification.xml` file to append the full Universal Office suite to Start:
 
 ```XML
 <LayoutModificationTemplate
@@ -347,162 +282,3 @@ The following example shows how to add the **AppendDownloadOfficeTile** tag to y
     <AppendDownloadOfficeTile/>
 </LayoutModificationTemplate>
 ```
-
-## Sample LayoutModification.xml
-
-The following sample LayoutModification.xml shows how you can configure the Start layout:
-
-```XML
-<LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-    Version="1">
-  <RequiredStartGroupsCollection>
-    <RequiredStartGroups
-      Region="DE|ES|FR|GB|IT|US">
-      <AppendGroup
-        Name="Fabrikam Group 1">
-        <start:Tile
-          AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word"
-          Size="2x2"
-          Row="0"
-          Column="0"/>
-        <start:DesktopApplicationTile
-          DesktopApplicationID="Microsoft.Windows.Explorer"
-          Size="2x2"
-          Row="0"
-          Column="2"/>
-        <start:Tile
-          AppUserModelID="Microsoft.Office.Excel_8wekyb3d8bbwe!microsoft.excel"
-          Size="2x2"
-          Row="0"
-          Column="4"/>
-      </AppendGroup>
-
-      <AppendGroup
-        Name="Fabrikam Group 2">
-        <start:Tile
-          AppUserModelID="Microsoft.Reader_8wekyb3d8bbwe!Microsoft.Reader"
-          Size="2x2"
-          Row="0"
-          Column="0"/>
-        <start:DesktopApplicationTile
-          DesktopApplicationID="http://www.bing.com/"
-          Size="2x2"
-          Row="0"
-          Column="2"/>
-        <start:DesktopApplicationTile
-          DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"
-          Size="2x2"
-          Row="0"
-          Column="4"/>
-      </AppendGroup>
-    </RequiredStartGroups>
-    <RequiredStartGroups>
-      <AppendGroup
-        Name="Fabrikam Group 1">
-        <start:Tile
-          AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word"
-          Size="2x2"
-          Row="0"
-          Column="0"/>
-        <start:SecondaryTile
-          AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
-          TileID="FabrikamWeblinkTile"
-          Arguments="http://www.fabrikam.com"
-          DisplayName="Fabrikam"
-          Square150x150LogoUri="ms-appx:///Assets/MicrosoftEdgeSquare150x150.png"
-          ShowNameOnSquare150x150Logo="true"
-          BackgroundColor="#FF112233"
-          Size="2x2"
-          Row="0"
-          Column="2"/>
-      </AppendGroup>
-
-    </RequiredStartGroups>
-  </RequiredStartGroupsCollection>
-
- </LayoutModificationTemplate>
-```
-
-## Use Windows Provisioning multivariant support
-
-The Windows Provisioning multivariant capability allows you to declare target conditions that, when met, supply specific customizations for each variant condition. For Start customization, you can create specific layouts for each variant that you have. To do this, you must create a separate LayoutModification.xml file for each variant that you want to support and then include these in your provisioning package. For more information on how to do this, see [Create a provisioning package with multivariant settings](../provisioning-packages/provisioning-multivariant.md).
-
-The provisioning engine chooses the right customization file based on the target conditions that were met, adds the file in the location that's specified for the setting, and then uses the specific file to customize Start. To differentiate between layouts, you can add modifiers to the LayoutModification.xml filename such as "LayoutCustomization1". Regardless of the modifier that you use, the provisioning engine will always output "LayoutCustomization.xml" so that the operating system has a consistent file name to query against.
-
-For example, if you want to ensure that there's a specific layout for a certain condition, you can:
-
-1. Create a specific layout customization file and then name it LayoutCustomization1.xml.
-1. Include the file as part of your provisioning package.
-1. Create your multivariant target and reference the XML file within the target condition in the main customization XML file.
-
-The following example shows what the overall customization file might look like with multivariant support for Start:
-
-```XML
-<?xml version="1.0" encoding="utf-8"?>
-<WindowsCustomizatons>
-  <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
-    <ID>{6aaa4dfa-00d7-4aaa-8adf-73c6a7e2501e}</ID>
-    <Name>My Provisioning Package</Name>
-    <Version>1.0</Version>
-    <OwnerType>OEM</OwnerType>
-    <Rank>50</Rank>
-  </PackageConfig>
-  <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning">
-    <Customizations>
-      <Targets>
-        <Target Id="Processor ABC">
-          <TargetState>
-          <TargetState>
-
-            <Condition Name="ProcessorName" Value="Pattern:.*Celeron.*" />
-
-            <Condition Name="ProcessorType" Value="Pattern:.*I|intel.*" />
-
-          </TargetState>
-          </TargetState>
-        </Target>
-      </Targets>
-      <Common>
-        <Settings>
-
-          <Policies>
-
-            <AllowBrowser>1</AllowBrowser>
-
-            <AllowCamera>1</AllowCamera>
-
-            <AllowBluetooth>1</AllowBluetooth>
-
-          </Policies>
-
-          <HotSpot>
-
-            <Enabled>1</Enabled>
-
-          </HotSpot>
-
-        </Settings>
-
-      </Common>
-      <Variant>
-        <TargetRefs>
-          <TargetRef Id="Processor ABC" />
-        </TargetRefs>
-        <Settings>
-          <StartLayout>c:\users\<userprofile>\appdata\local\Microsoft\Windows\Shell\LayoutCustomization1.XML</StartLayout>
-          <HotSpot>
-            <Enabled>1</Enabled>
-          </HotSpot>
-        </Settings>
-      </Variant>
-    </Customizations>
-  </Settings>
-</WindowsCustomizatons>
-```
-
-When the condition is met, the provisioning engine takes the XML file and places it in the location that the operating system has set and then the Start subsystem reads the file and applies the specific customized layout.
-
-You must repeat this process for all variants that you want to support so that each variant can have a distinct layout for each of the conditions and targets that need to be supported. For example, if you add a **Language** condition, you can create a Start layout that has its own localized group.

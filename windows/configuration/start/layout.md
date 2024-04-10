@@ -121,6 +121,20 @@ Here you can find an example of Start layout that you can use as a reference:
 
 > [!CAUTION]
 > When you make changes to the exported layout, be aware that the XML file must adhere to an [XML schema definition (XSD)](xsd.md).
+>
+> The XML file requires the following order for tags directly under the LayoutModificationTemplate node:
+>
+> 1. LayoutOptions
+> 1. DefaultLayoutOverride
+> 1. RequiredStartGroupsCollection
+> 1. AppendDownloadOfficeTile - OR - AppendOfficeSuite (only one Office option can be used at a time)
+> 1. AppendOfficeSuiteChoice
+> 1. TopMFUApps
+> 1. CustomTaskbarLayoutCollection
+> 1. InkWorkspaceTopApps
+> 1. StartLayoutCollection
+>
+> Comments are not supported in the `LayoutModification.xml` file.
 
 You can edit the XML file to make any modifications to the Start layout. For example, you can include  `<CustomTaskbarLayoutCollection>` to include the Taskbar customization.
 
@@ -226,6 +240,74 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 > [!NOTE]
 > The content of the file must be entered as a single line in the `Value` field. Use a text editor to remove any line breaks from the XML file, usually with a function called *join lines*.
+
+### Use Windows Provisioning multivariant support
+
+The Windows Provisioning multivariant capability allows you to declare target conditions that, when met, supply specific customizations for each variant condition. For Start customization, you can create specific layouts for each variant that you have. To do this, you must create a separate LayoutModification.xml file for each variant that you want to support and then include these in your provisioning package. For more information on how to do this, see [Create a provisioning package with multivariant settings](../provisioning-packages/provisioning-multivariant.md).
+
+The provisioning engine chooses the right customization file based on the target conditions that were met, adds the file in the location that's specified for the setting, and then uses the specific file to customize Start. To differentiate between layouts, you can add modifiers to the LayoutModification.xml filename such as "LayoutCustomization1". Regardless of the modifier that you use, the provisioning engine will always output "LayoutCustomization.xml" so that the operating system has a consistent file name to query against.
+
+For example, if you want to ensure that there's a specific layout for a certain condition, you can:
+
+1. Create a specific layout customization file and then name it LayoutCustomization1.xml
+1. Include the file as part of your provisioning package
+1. Create your multivariant target and reference the XML file within the target condition in the main customization XML file
+
+The following example shows what the overall customization file might look like with multivariant support for Start:
+
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<WindowsCustomizatons>
+  <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
+    <ID>{6aaa4dfa-00d7-4aaa-8adf-73c6a7e2501e}</ID>
+    <Name>My Provisioning Package</Name>
+    <Version>1.0</Version>
+    <OwnerType>OEM</OwnerType>
+    <Rank>50</Rank>
+  </PackageConfig>
+  <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning">
+    <Customizations>
+      <Targets>
+        <Target Id="Processor ABC">
+          <TargetState>
+          <TargetState>
+            <Condition Name="ProcessorName" Value="Pattern:.*Celeron.*" />
+            <Condition Name="ProcessorType" Value="Pattern:.*I|intel.*" />
+          </TargetState>
+          </TargetState>
+        </Target>
+      </Targets>
+      <Common>
+        <Settings>
+          <Policies>
+            <AllowBrowser>1</AllowBrowser>
+            <AllowCamera>1</AllowCamera>
+            <AllowBluetooth>1</AllowBluetooth>
+          </Policies>
+          <HotSpot>
+            <Enabled>1</Enabled>
+          </HotSpot>
+        </Settings>
+      </Common>
+      <Variant>
+        <TargetRefs>
+          <TargetRef Id="Processor ABC" />
+        </TargetRefs>
+        <Settings>
+          <StartLayout>c:\users\<userprofile>\appdata\local\Microsoft\Windows\Shell\LayoutCustomization1.XML</StartLayout>
+          <HotSpot>
+            <Enabled>1</Enabled>
+          </HotSpot>
+        </Settings>
+      </Variant>
+    </Customizations>
+  </Settings>
+</WindowsCustomizatons>
+```
+
+When the condition is met, the provisioning engine takes the XML file and places it in the location that the operating system has set and then the Start subsystem reads the file and applies the specific customized layout.
+
+You must repeat this process for all variants that you want to support so that each variant can have a distinct layout for each of the conditions and targets that need to be supported. For example, if you add a `Language` condition, you can create a Start layout that has its own localized group.
 
 [!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
