@@ -171,7 +171,7 @@ After you export the layout, decide whether you want to apply a *full* Start lay
 | [start:DesktopApplicationTile](#startdesktopapplicationtile) | Use to specify any of the following:</br>- A Windows desktop application with a known AppUserModelID</br>- An application in a known folder with a link in a legacy Start Menu folder</br>- A Windows desktop application link in a legacy Start Menu folder</br>- A Web link tile with an associated `.url` file that is in a legacy Start Menu folder |
 | [start:SecondaryTile](#startsecondarytile) | Use to pin a Web link through a Microsoft Edge secondary tile |
 | [AppendOfficeSuite](#appendofficesuite) | Use to add the in-box installed Office suite to Start. For more information, see [Customize the Office suite of tiles](/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).</br></br>Don't use this tag with `AppendDownloadOfficeTile` |
-| [AppendDownloadOfficeTile](#appenddownloadofficetile) | Use to add a specific **Download Office** tile to a specific location in Start</br></br>Do not use this tag with AppendOfficeSuite |
+| [AppendDownloadOfficeTile](#appenddownloadofficetile) | Use to add a specific **Download Office** tile to a specific location in Start</br></br>Do not use this tag with `AppendOfficeSuite` |
 
 #### LayoutOptions
 
