@@ -22,7 +22,7 @@ ms.date: 04/10/2024
 <!-- AllowActionCenterNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | Deprecated | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | Not applicable | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowActionCenterNotifications-Applicability-End -->
 
 <!-- AllowActionCenterNotifications-OmaUri-Begin -->

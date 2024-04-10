@@ -100,7 +100,7 @@ Policy change takes effect immediately.
 <!-- AllowCopyPaste-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | Deprecated | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | Not applicable | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowCopyPaste-Applicability-End -->
 
 <!-- AllowCopyPaste-OmaUri-Begin -->
@@ -833,7 +833,7 @@ This policy allows you to prevent Windows from using diagnostic data to provide 
 <!-- AllowTaskSwitcher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | Deprecated | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | Not applicable | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowTaskSwitcher-Applicability-End -->
 
 <!-- AllowTaskSwitcher-OmaUri-Begin -->
@@ -949,7 +949,7 @@ Specifies whether to allow app and content suggestions from third-party software
 <!-- AllowVoiceRecording-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | Deprecated | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | Not applicable | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowVoiceRecording-Applicability-End -->
 
 <!-- AllowVoiceRecording-OmaUri-Begin -->

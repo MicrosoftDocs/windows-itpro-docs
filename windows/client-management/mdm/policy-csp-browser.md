@@ -178,7 +178,7 @@ To verify AllowAutofill is set to 0 (not allowed):
 <!-- AllowBrowser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | Deprecated | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | Not applicable | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowBrowser-Applicability-End -->
 
 <!-- AllowBrowser-OmaUri-Begin -->

@@ -428,7 +428,7 @@ Manages a Windows app's ability to share data between users who have installed t
 <!-- AllowStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | Deprecated | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | Not applicable | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowStore-Applicability-End -->
 
 <!-- AllowStore-OmaUri-Begin -->
@@ -480,7 +480,7 @@ This policy is deprecated.
 <!-- ApplicationRestrictions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | Deprecated | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | Not applicable | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ApplicationRestrictions-Applicability-End -->
 
 <!-- ApplicationRestrictions-OmaUri-Begin -->

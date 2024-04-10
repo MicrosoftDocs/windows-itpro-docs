@@ -172,7 +172,7 @@ Specifies whether to allow the runtime configuration agent to remove provisionin
 <!-- AntiTheftMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | Deprecated | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | Not applicable | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AntiTheftMode-Applicability-End -->
 
 <!-- AntiTheftMode-OmaUri-Begin -->

@@ -252,7 +252,7 @@ To validate, the enterprise can confirm by observing the roaming enable switch i
 <!-- AllowNFC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | Deprecated | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | Not applicable | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowNFC-Applicability-End -->
 
 <!-- AllowNFC-OmaUri-Begin -->

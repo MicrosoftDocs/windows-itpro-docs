@@ -1116,7 +1116,7 @@ If enabled, clients will be unable to query this computer's index remotely. Thus
 <!-- SafeSearchPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | Deprecated | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | Not applicable | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- SafeSearchPermissions-Applicability-End -->
 
 <!-- SafeSearchPermissions-OmaUri-Begin -->

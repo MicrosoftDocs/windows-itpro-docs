@@ -22,7 +22,7 @@ ms.date: 04/10/2024
 <!-- AllowSet24HourClock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | Deprecated | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | Not applicable | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowSet24HourClock-Applicability-End -->
 
 <!-- AllowSet24HourClock-OmaUri-Begin -->
