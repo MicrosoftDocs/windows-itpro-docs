@@ -162,23 +162,16 @@ After you export the layout, decide whether you want to apply a *full* Start lay
 | Element | Description |
 |--|--|
 | `LayoutModificationTemplate` | Use to describe the changes to the default Start layout |
-| [LayoutOptions](#layoutoptions)</br></br>Parent:</br>`LayoutModificationTemplate` | Use to specify:</br>- Whether to use full screen Start on the desktop</br>- The number of tile columns in the Start menu |
-| `RequiredStartGroupsCollection`</br></br>Parent:</br>`LayoutModificationTemplate` | Use to contain collection of `RequiredStartGroups` |
-| [RequiredStartGroups](#requiredstartgroups)</br></br>Parent:</br>`RequiredStartGroupsCollection` | Use to contain the `AppendGroup` tags, which represent groups that can be appended to the default Start layout |
-| [AppendGroup](#appendgroup)</br></br>Parent:</br>`RequiredStartGroups` | Use to specify the tiles that need to be appended to the default Start layout |
-| [start:Tile](#specify-start-tiles)</br></br>Parent:</br>AppendGroup | Use to specify any of the following:</br>- A Universal Windows app</br>- A Windows 8 or Windows 8.1 app</br></br>Note that AppUserModelID is case-sensitive. |
-| `start:Folder`<br><br>Parent:<br>start:Group | Use to specify a folder of icons; can include [Tile](#start-tile), [SecondaryTile](#start-secondarytile), and [DesktopApplicationTile](#start-desktopapplicationtile). |
-| `start:DesktopApplicationTile`</br></br>Parent:</br>AppendGroup | Use to specify any of the following:</br>- A Windows desktop application with a known AppUserModelID</br>- An application in a known folder with a link in a legacy Start Menu folder</br>- A Windows desktop application link in a legacy Start Menu folder</br>- A Web link tile with an associated `.url` file that is in a legacy Start Menu folder |
-|` start:SecondaryTile`</br></br>Parent:</br>AppendGroup | Use to pin a Web link through a Microsoft Edge secondary tile. Note that AppUserModelID is case-sensitive. |
-| `DesktopApplicationTile`</br></br>Parent:</br>TopMFUApps | Use with the TopMFUApps tags to specify an app without a known AppUserModelID.</br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1701. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |
-| `AppendOfficeSuite`</br></br>Parent:</br>LayoutModificationTemplate | Use to add the in-box installed Office suite to Start. For more information, see [Customize the Office suite of tiles](/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).</br></br>Don't use this tag with AppendDownloadOfficeTile. |
-| `AppendDownloadOfficeTile`</br></br>Parent:</br>LayoutModificationTemplate | Use to add a specific **Download Office** tile to a specific location in Start</br></br>Do not use this tag with AppendOfficeSuite |
-
-The groups have the following constraints:
-
-- Two groups that are six columns wide, or equivalent to the width of three medium tiles
-- Two medium-sized tile rows in height. Windows 10 ignores any tiles that are pinned beyond the second row.
-- No limit to the number of apps that can be pinned. There's a theoretical limit of 24 tiles per group (four small tiles per medium square x 3 columns x 2 rows).
+| [LayoutOptions](#layoutoptions) | Use to specify:</br>- Whether to use full screen Start on the desktop</br>- The number of tile columns in the Start menu |
+| `RequiredStartGroupsCollection` | Use to contain collection of `RequiredStartGroups` |
+| [RequiredStartGroups](#requiredstartgroups) | Use to contain the `AppendGroup` tags, which represent groups that can be appended to the default Start layout |
+| [AppendGroup](#appendgroup) | Use to specify the tiles that need to be appended to the default Start layout |
+| [start:Tile](#specify-start-tiles) | Use to specify a UWP app |
+| `start:Folder`| Use to specify a folder of icons; can include [Tile](#starttile), [SecondaryTile](#startsecondarytile), and [DesktopApplicationTile](#startdesktopapplicationtile) |
+| [start:DesktopApplicationTile](#startdesktopapplicationtile) | Use to specify any of the following:</br>- A Windows desktop application with a known AppUserModelID</br>- An application in a known folder with a link in a legacy Start Menu folder</br>- A Windows desktop application link in a legacy Start Menu folder</br>- A Web link tile with an associated `.url` file that is in a legacy Start Menu folder |
+| [start:SecondaryTile](#startsecondarytile) | Use to pin a Web link through a Microsoft Edge secondary tile. |
+| [AppendOfficeSuite](#AppendOfficeSuite) | Use to add the in-box installed Office suite to Start. For more information, see [Customize the Office suite of tiles](/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).</br></br>Don't use this tag with `AppendDownloadOfficeTile`. |
+| [AppendDownloadOfficeTile](#AppendDownloadOfficeTile) | Use to add a specific **Download Office** tile to a specific location in Start</br></br>Do not use this tag with AppendOfficeSuite |
 
 #### LayoutOptions
 
@@ -186,52 +179,51 @@ New devices running Windows 10 for desktop editions default to a Start menu with
 
 - Boot to tablet mode can be set on or off
 - Set full screen Start on desktop to on or off
-  To do this, add the LayoutOptions element in your LayoutModification.xml file and set the FullScreenStart attribute to true or false
+  To do this, add the `LayoutOptions` element in your LayoutModification.xml file and set the FullScreenStart attribute to true or false
 - Specify the number of columns in the Start menu to 1 or 2
-  To do this, add the LayoutOptions element in your LayoutModification.xml file and set the StartTileGroupsColumnCount attribute to 1 or 2
+  To do this, add the `LayoutOptions` element in your LayoutModification.xml file and set the StartTileGroupsColumnCount attribute to 1 or 2
 
-The following example shows how to use the LayoutOptions element to specify full screen Start on the desktop and to use one column in the Start menu:
+The following example shows how to use the `LayoutOptions` element to specify full screen Start on the desktop and to use one column in the Start menu:
 
-```XML
-<LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-    Version="1">
-    <LayoutOptions
-        StartTileGroupsColumnCount="1"
-        FullScreenStart="true"
-    />
-</LayoutModificationTemplate>
+```xml
+<LayoutOptions
+    StartTileGroupsColumnCount="1"
+    FullScreenStart="true"
+/>
 ```
 
 #### RequiredStartGroups
 
 The `RequiredStartGroups` tag contains `AppendGroup` tags that represent groups that you can append to the default Start layout.
 
+The groups have the following constraints:
+
+- Two groups that are six columns wide, or equivalent to the width of three medium tiles
+- Two medium-sized tile rows in height. Windows ignores any tiles that are pinned beyond the second row
+- No limit to the number of apps that can be pinned. There's a theoretical limit of 24 tiles per group (four small tiles per medium square x 3 columns x 2 rows)
+
 >[!IMPORTANT]
 >You can add a maximum of two `AppendGroup` tags per `RequiredStartGroups` tag.
 
-You can also assign regions to the append groups in the **RequiredStartGroups** tag's using the optional **Region** attribute or you can use the multivariant capabilities in Windows provisioning. If you're using the **Region** attribute, you must use a two-letter country code to specify the country/region that the append group(s) apply to. To specify more than one country/region, use a pipe ("|") delimiter as shown in the following example:
+You can also assign regions to the append groups in the `RequiredStartGroups` tag's using the optional `Region` attribute or you can use the multivariant capabilities in Windows provisioning. If you're using the `Region` attribute, you must use a two-letter country code to specify the country/region that the append group(s) apply to. To specify more than one country/region, use a pipe (`|`) delimiter as shown in the following example:
 
 ```XML
 <RequiredStartGroups
       Region="DE|ES|FR|GB|IT|US">
 ```
 
-If the country/region setting for the Windows device matches a **RequiredStartGroups**, then the tiles laid out within the **RequiredStartGroups** is applied to Start.
+- If the country/region setting for the Windows device matches a `RequiredStartGroups`, then the tiles laid out within the `RequiredStartGroups` is applied to Start
+- If you specify a region-agnostic `RequiredStartGroups` (or one without the optional Region attribute), then the region-agnostic `RequiredStartGroups` is applied to Start
 
-If you specify a region-agnostic **RequiredStartGroups** (or one without the optional Region attribute), then the region-agnostic **RequiredStartGroups** is applied to Start.
+#### AppendGroup
 
-### AppendGroup
+`AppendGroup` tags specify a group of tiles to append to Start. There is a maximum of two `AppendGroup` tags allowed per `RequiredStartGroups` tag.
 
-**AppendGroup** tags specify a group of tiles that will be appended to Start. There is a maximum of two **AppendGroup** tags allowed per **RequiredStartGroups** tag.
+For Windows 10 for desktop editions, AppendGroup tags contain `start:Tile`, `start:DesktopApplicationTile`, or `start:SecondaryTile` tags.
 
-For Windows 10 for desktop editions, AppendGroup tags contain start:Tile, start:DesktopApplicationTile, or start:SecondaryTile tags.
+You can specify any number of tiles in an `AppendGroup`, but you can't specify a tile with a `Row` attribute greater than 1. The Start layout doesn't support overlapping tiles.
 
-You can specify any number of tiles in an **AppendGroup**, but you can't specify a tile with a **Row** attribute greater than 1. The Start layout doesn't support overlapping tiles.
-
-### Specify Start tiles
+#### Specify Start tiles
 
 To pin tiles to Start, partners must use the right tile depending on what you want to pin.
 
