@@ -3,20 +3,14 @@ items:
   href: index.yml
 - name: Accessibility information for IT Pros
   href: accessibility/index.md
-- name: Customize the appearance
-  items:
-    - name: Start
-      href: start/toc.yml
-    - name: Taskbar
-      href: taskbar/toc.yml
-    - name: Windows Spotlight
-      href: lock-screen/windows-spotlight.md
+- name: Start
+  href: start/toc.yml
+- name: Taskbar
+  href: taskbar/toc.yml
+- name: Spotlight
+  href: lock-screen/windows-spotlight.md
 - name: Microsoft Store
-  items:
-  - name: Configure access to Microsoft Store
-    href: store/index.md
-  - name: Find the AUMID of an installed app
-    href: store/find-aumid.md
+  href: taskbar/toc.yml
 - name: Cellular settings
   href: cellular/provisioning-apn.md
 - name: Kiosks and restricted user experiences
