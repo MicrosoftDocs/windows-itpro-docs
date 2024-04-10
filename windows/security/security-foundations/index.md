@@ -2,7 +2,7 @@
 title: Windows security foundations
 description: Get an overview of security foundations, including the security development lifecycle, common criteria, and the bug bounty program.
 ms.topic: overview
-ms.date: 06/15/2023
+ms.date: 04/10/2024
 author: paolomatarazzo
 ms.author: paoloma
 ---
@@ -15,4 +15,4 @@ Our strong security foundation uses Microsoft Security Development Lifecycle (SD
 
 Use the links in the following table to learn more about the security foundations:
 
-[!INCLUDE [operating-system-security](../includes/sections/security-foundations.md)]
+[!INCLUDE [security-foundations](../includes/sections/security-foundations.md)]

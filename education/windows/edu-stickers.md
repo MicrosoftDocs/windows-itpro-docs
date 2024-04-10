@@ -1,7 +1,7 @@
 ---
 title: Configure Stickers for Windows 11 SE
 description: Learn about the Stickers feature and how to configure it via Intune and provisioning package.
-ms.date: 11/09/2023
+ms.date: 04/10/2024
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
@@ -25,7 +25,7 @@ With Stickers, students feel more attached to the device as they feel as if it's
 
 ## Enable Stickers
 
-Stickers aren't enabled by default. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
+Stickers aren't enabled by default. The following instructions describe how to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
@@ -62,14 +62,14 @@ Content-Type: application/json
 
 ## How to use Stickers
 
-Once the Stickers feature is enabled, the sticker editor can be opened by either:
+Once the Stickers feature is enabled, open sticker editor by either:
 
 - using the contextual menu on the desktop and selecting the option **Add or edit stickers**
 - opening the Settings app > **Personalization** > **Background** > **Add stickers**
 
 :::image type="content" source="./images/win-11-se-stickers-menu.png" alt-text="Windows 11 SE desktop contextual menu to open the sticker editor" border="true":::
 
-Multiple stickers can be added from the picker by selecting them. The stickers can be resized, positioned or deleted from the desktop by using the mouse, keyboard, or touch.
+Multiple stickers can be added from the picker by selecting them. The stickers can be resized, positioned, or deleted from the desktop by using the mouse, keyboard, or touch.
 
 :::image type="content" source="./images/win-11-se-stickers-animation.gif" alt-text="animation showing Windows 11 SE desktop with 4 pirate stickers being resized and moved" border="true":::
 
