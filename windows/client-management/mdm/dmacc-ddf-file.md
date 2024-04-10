@@ -1,7 +1,7 @@
 ---
 title: DMAcc DDF file
 description: View the XML file containing the device description framework (DDF) for the DMAcc configuration service provider.
-ms.date: 01/31/2024
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -527,7 +527,7 @@ The following XML file contains the device description framework (DDF) for the D
                     </MSFT:Enum>
                   </MSFT:DependencyChangedAllowedValues>
                   <MSFT:Dependency Type="DependsOn">
-                    <MSFT:DependencyUri>Syncml/DMAcc/[AccountUID]/AppAuth/[ObjectName]/AAuthLevel</MSFT:DependencyUri>
+                    <MSFT:DependencyUri>SyncML/DMAcc/{AccountUID}/AppAuth/{ObjectName}/AAuthLevel</MSFT:DependencyUri>
                     <MSFT:DependencyAllowedValue ValueType="ENUM">
                       <MSFT:Enum>
                         <MSFT:Value>SRVCRED</MSFT:Value>

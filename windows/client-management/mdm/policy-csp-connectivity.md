@@ -1,7 +1,7 @@
 ---
 title: Connectivity Policy CSP
 description: Learn more about the Connectivity Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -252,7 +252,7 @@ To validate, the enterprise can confirm by observing the roaming enable switch i
 <!-- AllowNFC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | Deprecated | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowNFC-Applicability-End -->
 
 <!-- AllowNFC-OmaUri-Begin -->
@@ -375,7 +375,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 <!-- AllowUSBConnection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowUSBConnection-Applicability-End -->
 
 <!-- AllowUSBConnection-OmaUri-Begin -->

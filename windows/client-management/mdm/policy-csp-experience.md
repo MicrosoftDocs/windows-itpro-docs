@@ -1,7 +1,7 @@
 ---
 title: Experience Policy CSP
 description: Learn more about the Experience Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -100,7 +100,7 @@ Policy change takes effect immediately.
 <!-- AllowCopyPaste-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | Deprecated | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowCopyPaste-Applicability-End -->
 
 <!-- AllowCopyPaste-OmaUri-Begin -->
@@ -833,7 +833,7 @@ This policy allows you to prevent Windows from using diagnostic data to provide 
 <!-- AllowTaskSwitcher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | Deprecated | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowTaskSwitcher-Applicability-End -->
 
 <!-- AllowTaskSwitcher-OmaUri-Begin -->
@@ -949,7 +949,7 @@ Specifies whether to allow app and content suggestions from third-party software
 <!-- AllowVoiceRecording-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | Deprecated | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowVoiceRecording-Applicability-End -->
 
 <!-- AllowVoiceRecording-OmaUri-Begin -->
@@ -1887,7 +1887,7 @@ _**Turn syncing off by default but don’t disable**_
 <!-- EnableOrganizationalMessages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.900] and later <br> ✅ Windows Insider Preview |
 <!-- EnableOrganizationalMessages-Applicability-End -->
 
 <!-- EnableOrganizationalMessages-OmaUri-Begin -->

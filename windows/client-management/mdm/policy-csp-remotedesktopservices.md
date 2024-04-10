@@ -1,7 +1,7 @@
 ---
 title: RemoteDesktopServices Policy CSP
 description: Learn more about the RemoteDesktopServices Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -150,39 +150,39 @@ FIPS compliance can be configured through the System cryptography. Use FIPS comp
 
 <!-- ClientConnectionEncryptionLevel-End -->
 
-<!-- DisconnectOnLockBasicAuthn-Begin -->
-## DisconnectOnLockBasicAuthn
+<!-- DisconnectOnLockLegacyAuthn-Begin -->
+## DisconnectOnLockLegacyAuthn
 
-<!-- DisconnectOnLockBasicAuthn-Applicability-Begin -->
+<!-- DisconnectOnLockLegacyAuthn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
 | ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- DisconnectOnLockBasicAuthn-Applicability-End -->
+<!-- DisconnectOnLockLegacyAuthn-Applicability-End -->
 
-<!-- DisconnectOnLockBasicAuthn-OmaUri-Begin -->
+<!-- DisconnectOnLockLegacyAuthn-OmaUri-Begin -->
 ```Device
-./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/DisconnectOnLockBasicAuthn
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/DisconnectOnLockLegacyAuthn
 ```
-<!-- DisconnectOnLockBasicAuthn-OmaUri-End -->
+<!-- DisconnectOnLockLegacyAuthn-OmaUri-End -->
 
-<!-- DisconnectOnLockBasicAuthn-Description-Begin -->
+<!-- DisconnectOnLockLegacyAuthn-Description-Begin -->
 <!-- Description-Source-Not-Found -->
-<!-- DisconnectOnLockBasicAuthn-Description-End -->
+<!-- DisconnectOnLockLegacyAuthn-Description-End -->
 
-<!-- DisconnectOnLockBasicAuthn-Editable-Begin -->
+<!-- DisconnectOnLockLegacyAuthn-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- DisconnectOnLockBasicAuthn-Editable-End -->
+<!-- DisconnectOnLockLegacyAuthn-Editable-End -->
 
-<!-- DisconnectOnLockBasicAuthn-DFProperties-Begin -->
+<!-- DisconnectOnLockLegacyAuthn-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-<!-- DisconnectOnLockBasicAuthn-DFProperties-End -->
+<!-- DisconnectOnLockLegacyAuthn-DFProperties-End -->
 
-<!-- DisconnectOnLockBasicAuthn-AdmxBacked-Begin -->
+<!-- DisconnectOnLockLegacyAuthn-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
@@ -192,47 +192,47 @@ FIPS compliance can be configured through the System cryptography. Use FIPS comp
 |:--|:--|
 | Name | TS_DISCONNECT_ON_LOCK_POLICY |
 | ADMX File Name | terminalserver.admx |
-<!-- DisconnectOnLockBasicAuthn-AdmxBacked-End -->
+<!-- DisconnectOnLockLegacyAuthn-AdmxBacked-End -->
 
-<!-- DisconnectOnLockBasicAuthn-Examples-Begin -->
+<!-- DisconnectOnLockLegacyAuthn-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- DisconnectOnLockBasicAuthn-Examples-End -->
+<!-- DisconnectOnLockLegacyAuthn-Examples-End -->
 
-<!-- DisconnectOnLockBasicAuthn-End -->
+<!-- DisconnectOnLockLegacyAuthn-End -->
 
-<!-- DisconnectOnLockWebAccountAuthn-Begin -->
-## DisconnectOnLockWebAccountAuthn
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Begin -->
+## DisconnectOnLockMicrosoftIdentityAuthn
 
-<!-- DisconnectOnLockWebAccountAuthn-Applicability-Begin -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
 | ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- DisconnectOnLockWebAccountAuthn-Applicability-End -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Applicability-End -->
 
-<!-- DisconnectOnLockWebAccountAuthn-OmaUri-Begin -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-OmaUri-Begin -->
 ```Device
-./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/DisconnectOnLockWebAccountAuthn
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/DisconnectOnLockMicrosoftIdentityAuthn
 ```
-<!-- DisconnectOnLockWebAccountAuthn-OmaUri-End -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-OmaUri-End -->
 
-<!-- DisconnectOnLockWebAccountAuthn-Description-Begin -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Description-Begin -->
 <!-- Description-Source-Not-Found -->
-<!-- DisconnectOnLockWebAccountAuthn-Description-End -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Description-End -->
 
-<!-- DisconnectOnLockWebAccountAuthn-Editable-Begin -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- DisconnectOnLockWebAccountAuthn-Editable-End -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Editable-End -->
 
-<!-- DisconnectOnLockWebAccountAuthn-DFProperties-Begin -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-<!-- DisconnectOnLockWebAccountAuthn-DFProperties-End -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-DFProperties-End -->
 
-<!-- DisconnectOnLockWebAccountAuthn-AdmxBacked-Begin -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
@@ -242,13 +242,13 @@ FIPS compliance can be configured through the System cryptography. Use FIPS comp
 |:--|:--|
 | Name | TS_DISCONNECT_ON_LOCK_AAD_POLICY |
 | ADMX File Name | terminalserver.admx |
-<!-- DisconnectOnLockWebAccountAuthn-AdmxBacked-End -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-AdmxBacked-End -->
 
-<!-- DisconnectOnLockWebAccountAuthn-Examples-Begin -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- DisconnectOnLockWebAccountAuthn-Examples-End -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Examples-End -->
 
-<!-- DisconnectOnLockWebAccountAuthn-End -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-End -->
 
 <!-- DoNotAllowDriveRedirection-Begin -->
 ## DoNotAllowDriveRedirection

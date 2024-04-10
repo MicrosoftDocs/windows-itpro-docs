@@ -1,7 +1,7 @@
 ---
 title: Browser Policy CSP
 description: Learn more about the Browser Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -178,7 +178,7 @@ To verify AllowAutofill is set to 0 (not allowed):
 <!-- AllowBrowser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | Deprecated | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowBrowser-Applicability-End -->
 
 <!-- AllowBrowser-OmaUri-Begin -->
@@ -2713,7 +2713,7 @@ Important. Discontinued in Windows 10, version 1511. Use the Browser/EnterpriseM
 <!-- FirstRunURL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- FirstRunURL-Applicability-End -->
 
 <!-- FirstRunURL-OmaUri-Begin -->
