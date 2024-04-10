@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 03/18/2024
+ms.date: 04/10/2024
 ms.topic: include
 ---
 
@@ -13,3 +13,5 @@ This policy setting lets you specify the Start layout for users, preventing them
 |--|--|
 | **CSP** | [Configure start layout](/windows/client-management/mdm/policy-csp-start#startlayout) |
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+
+For more information, see [Customize the Start layout](../layout.md).

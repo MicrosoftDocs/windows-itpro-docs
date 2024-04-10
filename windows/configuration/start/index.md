@@ -2,7 +2,7 @@
 title: Configure the Start menu
 description: Learn how to configure the Windows Start menu to provide quick access to the tools and applications that users need most.
 ms.topic: overview
-ms.date: 03/04/2024
+ms.date: 04/10/2024
 zone_pivot_groups: windows-versions-11-10
 appliesto:
 ---
