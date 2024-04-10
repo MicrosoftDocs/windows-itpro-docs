@@ -1,7 +1,7 @@
 ---
 title: Validate the applications deployed to Windows SE devices
 description: Learn how to validate the applications deployed to Windows SE devices via Intune.
-ms.date: 06/19/2023
+ms.date: 04/10/2024
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
@@ -65,11 +65,11 @@ To check the installation status of an app from the Intune portal:
 1. Select **App > All apps**
 1. Select the application you want to check
 1. From the **Overview** page, you can verify the overall installation status
-    
+
     :::image type="content" source="./images/intune-app-install-overview.png" alt-text="Screenshot of the Microsoft Intune admin center - App installation details." lightbox="./images/intune-app-install-overview.png":::
 
 1. From the **Device install status** page, you can verify the installation status for each device, and the status code that indicates the cause of the failure
-    
+
     :::image type="content" source="./images/intune-app-install-status.png" alt-text="Screenshot of the Microsoft Intune admin center - App installation status for each device." lightbox="./images/intune-app-install-status.png":::
 
 > [!NOTE]

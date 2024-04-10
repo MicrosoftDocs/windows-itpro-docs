@@ -2,7 +2,7 @@
 title: Configure S/MIME for Windows
 description: S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients with a digital ID, also known as a certificate, can read them. Learn how to configure S/MIME for Windows.
 ms.topic: how-to
-ms.date: 05/31/2023
+ms.date: 04/10/2024
 ---
 
 

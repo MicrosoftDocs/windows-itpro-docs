@@ -1,7 +1,7 @@
 ---
 title: Configure federation between Google Workspace and Microsoft Entra ID
 description: Configuration of a federated trust between Google Workspace and Microsoft Entra ID, with Google Workspace acting as an identity provider (IdP) for Microsoft Entra ID.
-ms.date: 09/11/2023
+ms.date: 04/10/2024
 ms.topic: how-to
 appliesto:
 ---

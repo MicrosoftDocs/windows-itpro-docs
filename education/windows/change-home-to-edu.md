@@ -1,7 +1,7 @@
 ---
 title: Upgrade Windows Home to Windows Education on student-owned devices
 description: Learn how IT Pros can upgrade student-owned devices from Windows Home to Windows Education using Mobile Device Management or Kivuto OnTheHub with qualifying subscriptions.
-ms.date: 08/07/2023
+ms.date: 04/10/2024
 ms.topic: how-to
 author: scottbreenmsft
 ms.author: scbree
@@ -16,7 +16,7 @@ ms.collection:
 
 ## Overview
 
-Customers with qualifying subscriptions can upgrade student-owned and institution-owned devices from *Windows Home* to *Windows Education*, which is designed for both the classroom and remote learning. 
+Customers with qualifying subscriptions can upgrade student-owned and institution-owned devices from *Windows Home* to *Windows Education*, which is designed for both the classroom and remote learning.
 
 > [!NOTE]
 > To be qualified for this process, customers must have a Windows Education subscription that includes the student use benefit and must have access to the Volume Licensing Service Center (VLSC) or the Microsoft 365 Admin Center.
@@ -93,7 +93,7 @@ It isn't possible to downgrade to *Windows Home* from *Windows Education* withou
 
 ### Reset
 
-If the computer is reset, Windows Education will be retained. 
+If the computer is reset, Windows Education will be retained.
 
 ### Reinstall
 
@@ -109,7 +109,7 @@ The license will remain installed on the device if resold and the same condition
 
 ## Step by step process for customers to upgrade student-owned devices using Microsoft Intune
 
-These steps provide instructions on how to use Microsoft Intune to upgrade devices from Home to Education. 
+These steps provide instructions on how to use Microsoft Intune to upgrade devices from Home to Education.
 
 ### Step 1: Create a Windows Home edition filter
 
@@ -130,7 +130,7 @@ These steps configure a filter that will only apply to devices running the *Wind
 
     > [!NOTE]
     > Ensure you've selected OR as the operator in the right And/Or column
-    
+
     :::image type="content" source="images/change-home-to-edu-windows-home-edition-intune-filter.png" alt-text="Example of configuring the Windows Home filter":::
 
 - Optionally select scope tags as required
@@ -153,14 +153,14 @@ These steps create and assign a Windows edition upgrade policy. For more informa
   - Change **Edition to upgrade** to **Windows 10/11 Education**
   - In the **Product Key**, enter your *Windows 10/11 Education MAK*
   - Select **Next**
-  
+
     :::image type="content" source="images/change-home-to-edu-windows-edition-upgrade-policy.png" alt-text="Example of configuring the Windows upgrade policy in Microsoft Intune":::
 
 - Optionally select scope tags as required and select **Next**
 - On the **assignments** screen;
   - Select **Add all devices**
   - Next to **All devices**, select **Edit filter**
-  
+
       > [!NOTE]
       > You can also target other security groups that contain a smaller scope of users or devices and apply the filter rather than All devices.
 
