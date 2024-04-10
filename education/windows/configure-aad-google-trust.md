@@ -42,7 +42,7 @@ To test federation, the following prerequisites must be met:
 1. Select **Add app > Search for apps** and search for *microsoft*
 1. In the search results page, hover over the *Microsoft Office 365 - Web (SAML)* app and select **Select**
    :::image type="content" source="images/google/google-admin-search-app.png" alt-text="Screenshot showing Google Workspace and the search button for Microsoft Office 365 SAML app.":::
-1. On the **Google Identity Provider details** page, select **Download Metadata** and take note of the location where the **IdP metadata** - *GoogleIDPMetadata.xml* - file is saved, as it's used to setup Microsoft Entra ID later
+1. On the **Google Identity Provider details** page, select **Download Metadata** and take note of the location where the **IdP metadata** - *GoogleIDPMetadata.xml* - file is saved, as it's used to set up Microsoft Entra ID later
 1. On the **Service provider detail's** page
       - Select the option **Signed response**
       - Verify that the Name ID format is set to **PERSISTENT**
