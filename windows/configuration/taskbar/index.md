@@ -1,5 +1,5 @@
 ---
-title: Configure Windows taskbar
+title: Configure the Windows taskbar
 description: Administrators can pin more apps to the taskbar and remove default pinned apps from the taskbar by adding a section to a layout modification XML file.
 ms.topic: how-to
 ms.date: 08/18/2023
@@ -7,7 +7,7 @@ appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
 
-# Configure Windows Taskbar
+# Configure the Windows taskbar
 
 ::: zone pivot="windows-10"
 
@@ -34,7 +34,7 @@ The following example shows how apps will be pinned: Windows default apps to the
 To configure the taskbar:
 
 1. Create the XML file
-    - If you're also [customizing the Start layout](../start/customize-and-export-start-layout.md), use `Export-StartLayout` to create the XML, and then add the `<CustomTaskbarLayoutCollection>` section from [the following sample](#sample-taskbar-configuration-added-to-start-layout-xml-file) to the file.
+    - If you're also [customizing the Start layout](../start/layout.md), use `Export-StartLayout` to create the XML, and then add the `<CustomTaskbarLayoutCollection>` section from [the following sample](#sample-taskbar-configuration-added-to-start-layout-xml-file) to the file.
     - If you're only configuring the taskbar, use [the following sample](#sample-taskbar-configuration-xml-file) to create a layout modification XML file
 1. Edit and save the XML file. You can use [AUMID](../kiosk/find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path to identify the apps to pin to the taskbar
     - Add `xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"` to the first line of the file, before the closing \>.
@@ -45,7 +45,7 @@ To configure the taskbar:
 >[!IMPORTANT]
 >If you use a provisioning package or import-startlayout to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user then unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration that allows users to make changes that will persist, apply your configuration by using Group Policy.
 >
->If you use Group Policy and your configuration only contains a taskbar layout, the default Windows tile layout will be applied and cannot be changed by users. If you use Group Policy and your configuration includes taskbar and a full Start layout, users can only make changes to the taskbar. If you use Group Policy and your configuration includes taskbar and a [partial Start layout](../start/customize-and-export-start-layout.md#configure-a-partial-start-layout), users can make changes to the taskbar and to tile groups not defined in the partial Start layout.
+>If you use Group Policy and your configuration only contains a taskbar layout, the default Windows tile layout will be applied and cannot be changed by users. If you use Group Policy and your configuration includes taskbar and a full Start layout, users can only make changes to the taskbar. If you use Group Policy and your configuration includes taskbar and a [partial Start layout](../start/layout.md), users can make changes to the taskbar and to tile groups not defined in the partial Start layout.
 
 ### Tips for finding AUMID and Desktop Application Link Path
 
@@ -538,3 +538,52 @@ If the OS is configured to use a right-to-left language, then the taskbar order 
   After the layout is applied, users can pin more apps, change the order, and unpin apps.
 
 ::: zone-end
+
+<!-- form Start article to move
+
+Configuring the taskbar allows you to pin useful apps for your users, and remove apps that are pinned by default.
+
+> **Looking for consumer information?** [See what's on the Start menu](https://support.microsoft.com/help/17195/windows-10-see-whats-on-the-menu)
+>
+> **Looking for OEM information?** See [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar) and [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
+
+For the **taskbar**, you can use the same XML file as the start screen. Or, you can create a new XML file. When you have the XML file, add this file to a group policy or a provisioning package. Using these methods, you can deploy the XML file to your devices. When the devices receive your policy, they'll use the taskbar settings you configured in the XML file.
+
+## Taskbar options
+
+There are three app categories that could be pinned to a taskbar:
+
+- Apps pinned by the user
+- Default Windows apps pinned during the OS installation, such as Microsoft Edge, File Explorer, and Store
+- Apps pinned by your organization, such as in an unattended Windows setup
+
+  In an unattended Windows setup file, it's recommended to use the [layoutmodification.xml method](../taskbar/configure.md) to configure the taskbar options. It's not recommended to use [TaskbarLinks](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-taskbarlinks).
+
+The following example shows how apps are pinned. In OS configured to use a right-to-left language, the taskbar order is reversed:
+
+- Windows default apps to the left (blue circle)
+- Apps pinned by the user in the center (orange triangle)
+- Apps that you pin using XML to the right (green square)
+
+![Windows left, user center, enterprise to the right.](images/taskbar-generic.png)
+
+If you apply the taskbar configuration to a clean install or an update, users can still:
+
+- Pin more apps
+- Change the order of pinned apps
+- Unpin any app
+
+> [!TIP]
+> In Windows 10 version 1703, you can apply the `Start/NoPinningToTaskbar` MDM policy. This policy prevents users from pinning and unpinning apps on the taskbar.
+
+### Taskbar configuration applied to clean install of Windows 10
+
+In a clean install, if you apply a taskbar layout, only the following apps are pinned to the taskbar:
+
+- Apps you specifically add
+- Any default apps you don't remove
+
+After the layout is applied, users can pin more apps to the taskbar.
+
+If you use a provisioning package to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration and allow users to make changes that will persist, apply your configuration by using Group Policy.
+-->
