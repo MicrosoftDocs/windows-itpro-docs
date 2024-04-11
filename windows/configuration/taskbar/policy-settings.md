@@ -32,50 +32,7 @@ The settings are categorized and presented in alphabetical order to facilitate n
     :::column-end:::
 :::row-end:::
 
-<!-->
-Select one of the tabs to see the list of available settings:
 
-#### [:::image type="icon" source="../images/icons/start.svg"::: **Layout**](#tab/start)
-
-::: zone pivot="windows-11"
-|Policy name| CSP | GPO |
-|-|-|-|
-|[Configure Start pins](#configure-start-pins)|✅|❌|
-|[Disable context menus](#disable-context-menus)|✅|✅|
-
-::: zone-end
-
-::: zone pivot="windows-10"
-|Policy name| CSP | GPO |
-|-|-|-|
-|[Clear history of recently opened documents on exit](#clear-history-of-recently-opened-documents-on-exit)|❌|✅|
-|[Clear tile notifications during log on](#clear-tile-notifications-during-log-on)|❌|✅|
-::: zone-end
-
-::: zone pivot="windows-11"
-[!INCLUDE [hide-recommended-personalized-sites](includes/hide-recommended-personalized-sites.md)]
-[!INCLUDE [hide-recommended-section](includes/hide-recommended-section.md)]
-::: zone-end
-::: zone pivot="windows-10"
-[!INCLUDE [import-edge-assets](includes/import-edge-assets.md)]
-::: zone-end
-
-#### [:::image type="icon" source="../images/icons/allapps.svg"::: **All apps**](#tab/allapps)
-
-|Policy name| CSP | GPO |
-|-|-|-|
-|[Clear the recent programs list for new users](#clear-the-recent-programs-list-for-new-users)|❌|✅|
-|[Hide app list](#hide-app-list)|✅|✅|
-|[Hide frequently used apps](#hide-frequently-used-apps)|✅|✅|
-|[Hide most used lists](#hide-most-used-lists)|✅|✅|
-
-[!INCLUDE [clear-the-recent-programs-list-for-new-users](includes/clear-the-recent-programs-list-for-new-users.md)]
-[!INCLUDE [hide-app-list](includes/hide-app-list.md)]
-[!INCLUDE [hide-frequently-used-apps](includes/hide-frequently-used-apps.md)]
-[!INCLUDE [hide-most-used-lists](includes/hide-most-used-lists.md)]
-
----
--->
 
 [!INCLUDE [file](includes/configures-the-chat-icon-on-the-taskbar-m.md)]
 [!INCLUDE [file](includes/disable-editing-quick-settings.md)]
