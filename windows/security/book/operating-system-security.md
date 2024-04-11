@@ -139,15 +139,9 @@ Learn more:
 
 ## Encryption and data protection
 
-:::image type="content" source="images\encryption-and-data-protection.svg" alt-text="Diagram containing a list of features." border="false":::
-
 ## Network security
 
-:::image type="content" source="images\network-security.svg" alt-text="Diagram containing a list of features." border="false":::
-
 ## Virus and threat protection
-
-:::image type="content" source="images\virus-and-threat-protection.svg" alt-text="Diagram containing a list of features." border="false":::
 
 > [!div class="nextstepaction"]
 > [Chapter 3: Application security >](application-security.md)
