@@ -1151,7 +1151,6 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 - [Settings](policy-csp-settings.md)
 - [SettingsSync](policy-csp-settingssync.md)
 - [SmartScreen](policy-csp-smartscreen.md)
-- [SpeakForMe](policy-csp-speakforme.md)
 - [Speech](policy-csp-speech.md)
 - [Start](policy-csp-start.md)
 - [Stickers](policy-csp-stickers.md)
