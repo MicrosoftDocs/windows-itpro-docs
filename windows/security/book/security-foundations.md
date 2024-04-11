@@ -1,6 +1,6 @@
 ---
 title: Security foundations
-description: Security foundations
+description: Windows 11 security book - Security foundations chapter.
 ms.topic: overview
 ms.date: 04/09/2024
 ---

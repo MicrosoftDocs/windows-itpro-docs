@@ -1,6 +1,6 @@
 ---
 title: Hardware security
-description: Hardware security
+description: Windows 11 security book - Hardware security chapter.
 ms.topic: overview
 ms.date: 04/09/2024
 ---
