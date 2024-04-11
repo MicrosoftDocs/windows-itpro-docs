@@ -20,7 +20,7 @@ ms.collection:
 > [!IMPORTANT]
 > This feature is in **public preview**. It's being actively developed, and might not be complete.
 
-The Reliability report provides a reliability score for each Windows quality update cycle based on [stop error codes](https://learn.microsoft.com/troubleshoot/windows-client/performance/stop-error-or-blue-screen-error-troubleshooting) detected on managed devices. Scores are determined at both the service and tenant level. Details on modules associated with stop error codes at the tenant level are provided to better understand how devices are affected.
+The Reliability report provides a reliability score for each Windows quality update cycle based on [stop error codes](/troubleshoot/windows-client/performance/stop-error-or-blue-screen-error-troubleshooting) detected on managed devices. Scores are determined at both the service and tenant level. Details on modules associated with stop error codes at the tenant level are provided to better understand how devices are affected.
 
 > [!NOTE]
 > **The Reliability report applies to quality updates only**. The Reliability report doesn't currently support Windows feature updates.<p>Scores used in this report are calculated based on devices running both Windows 10 and Windows 11 versions.</p>
