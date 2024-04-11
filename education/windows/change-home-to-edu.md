@@ -1,7 +1,7 @@
 ---
 title: Upgrade Windows Home to Windows Education on student-owned devices
 description: Learn how IT Pros can upgrade student-owned devices from Windows Home to Windows Education using Mobile Device Management or Kivuto OnTheHub with qualifying subscriptions.
-ms.date: 08/07/2023
+ms.date: 04/10/2024
 ms.topic: how-to
 author: scottbreenmsft
 ms.author: scbree
@@ -16,30 +16,30 @@ ms.collection:
 
 ## Overview
 
-Customers with qualifying subscriptions can upgrade student-owned and institution-owned devices from *Windows Home* to *Windows Education*, which is designed for both the classroom and remote learning. 
+Customers with qualifying subscriptions can upgrade student-owned and institution-owned devices from *Windows Home* to *Windows Education*, which is designed for both the classroom and remote learning.
 
 > [!NOTE]
 > To be qualified for this process, customers must have a Windows Education subscription that includes the student use benefit and must have access to the Volume Licensing Service Center (VLSC) or the Microsoft 365 Admin Center.
 
-IT admins can upgrade student devices using a multiple activation key (MAK) manually or through Mobile Device Management (MDM). Alternatively, IT admins can set up a portal through [Kivuto OnTheHub](http://onthehub.com) where students can request a *Windows Pro Education* product key. The table below provides the recommended method depending on the scenario.
+IT admins can upgrade student devices using a multiple activation key (MAK) manually or through Mobile Device Management (MDM). Alternatively, IT admins can set up a portal through [Kivuto OnTheHub](http://onthehub.com) where students can request a *Windows Pro Education* product key. The following table provides the recommended method depending on the scenario.
 
 | Method | Product key source | Device ownership | Best for |
 |-|-|-|-|
 | MDM | VLSC | Personal (student-owned) | IT admin initiated via MDM |
-| Kivuto | Kivuto | Personal (student-owned) | Initiated on device by student, parent or guardian |
+| Kivuto | Kivuto | Personal (student-owned) | Initiated on device by student, parent, or guardian |
 | Provisioning package | VLSC | Personal (student-owned) or Corporate (institution-owned) | IT admin initiated at first boot |
 
 These methods apply to devices with *Windows Home* installed; institution-owned devices can be upgraded from *Windows Professional* or *Windows Pro Edu* to *Windows Education* or *Windows Enterprise* using [Windows 10/11 Subscription Activation](/windows/deployment/windows-10-subscription-activation).
 
 ## User Notifications
 
-Users aren't notified their device has been or will be upgraded to Windows Education when using MDM. It's the responsibility of the institution to notify their users. Institutions should notify their users that MDM will initiate an upgrade to Windows Education and this upgrade will give the institution extra capabilities, such as installing applications.
+Users aren't notified when their device is upgraded to Windows Education when using MDM. It's the responsibility of the institution to notify their users. Institutions should notify their users that MDM initiates an upgrade to Windows Education, and that the upgrade gives the institution extra capabilities, such as installing applications.
 
 Device users can disconnect from MDM in the Settings app, to prevent further actions from being taken on their personal device. For instructions on disconnecting from MDM, see [Remove your Windows device from management](/mem/intune/user-help/unenroll-your-device-from-intune-windows).
 
 ## Why upgrade student-owned devices from Windows Home to Windows Education?
 
-Some school institutions want to streamline student onboarding for student-owned devices using MDM. Typical MDM requirements include installing certificates, configuring WiFi profiles and installing applications. On Windows, MDM uses Configuration Service Providers (CSPs) to configure settings. Some CSPs aren't available on Windows Home, which can limit the capabilities. Some of the CSPs not available in Windows Home that can affect typical student onboarding are:
+Some school institutions want to streamline student onboarding for student-owned devices using MDM. Typical MDM requirements include installing certificates, configuring WiFi profiles, and installing applications. On Windows, MDM uses Configuration Service Providers (CSPs) to configure settings. Some CSPs aren't available on Windows Home, which can limit the capabilities. Some of the CSPs not available in Windows Home that can affect typical student onboarding are:
 
 - [EnterpriseDesktopAppManagement](/windows/client-management/mdm/enterprisemodernappmanagement-csp) - which enables deployment of Windows installer or Win32 applications.
 - [DeliveryOptimization](/windows/client-management/mdm/policy-csp-deliveryoptimization) - which enables configuration of Delivery Optimization.
@@ -48,11 +48,11 @@ A full list of CSPs are available at [Configuration service provider reference](
 
 ## Requirements for using a MAK to upgrade from Windows Home to Windows Education
 
-- Access to Volume Licensing Service Center (VLSC) or the Microsoft 365 Admin Center.
+- Access to Volume Licensing Service Center (VLSC) or the Microsoft 365 Admin Center
 - A qualifying Windows subscription such as:
-  - Windows A3, or;
-  - Windows A5.
-- A pre-installed and activated instance of Windows 10 Home or Windows 11 Home.
+  - Windows A3, or
+  - Windows A5
+- A preinstalled and activated instance of Windows 10 Home or Windows 11 Home
 
 You can find more information in the [Microsoft Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
 
@@ -67,20 +67,20 @@ IT admins with access to the VLSC or the Microsoft 365 Admin Center, can find th
 
 It's critical that MAKs are protected whenever they're used. The following processes provide the best protection for a MAK being applied to a device:
 
-- Provisioning package by institution approved staff;
-- Manual entry by institution approved staff (don't distribute the key via email);
-- Mobile Device Management (like Microsoft Intune) via [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp);
+- Provisioning package by institution approved staff
+- Manual entry by institution approved staff (don't distribute the key via email)
+- Mobile Device Management (like Microsoft Intune) via [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp)
     > [!IMPORTANT]
     > If you are using a Mobile Device Management product other than Microsoft Intune, ensure the key isn't accessible by students.
-- Operating System Deployment processes with tools such as Microsoft Deployment Toolkit or Microsoft Configuration Manager.
+- Operating System Deployment processes with tools such as Microsoft Deployment Toolkit or Microsoft Configuration Manager
 
 For a full list of methods to perform a Windows edition upgrade and more details, see [Windows 10 edition upgrade](/windows/deployment/upgrade/windows-10-edition-upgrades).
 
-## Downgrading, resetting, reinstalling and graduation rights
+## Downgrading, resetting, reinstalling, and graduation rights
 
 After upgrading from *Windows Home* to *Windows Education* there are some considerations for what happens during downgrade, reset or reinstall of the operating system.
 
-The table below highlights the differences by upgrade product key type:
+The following table highlights the differences by upgrade product key type:
 
 | Product Key Type | Downgrade (in-place) | Reset | Student reinstall |
 |-|-|-|-|
@@ -93,27 +93,27 @@ It isn't possible to downgrade to *Windows Home* from *Windows Education* withou
 
 ### Reset
 
-If the computer is reset, Windows Education will be retained. 
+If the computer is reset, Windows Education is retained.
 
 ### Reinstall
 
-The Education upgrade doesn't apply to reinstalling Windows. Use the original Windows edition when reinstalling Windows. The original product key or [firmware-embedded product key](#what-is-a-firmware-embedded-activation-key) will be used to activate Windows.
+The Education upgrade doesn't apply to reinstalling Windows. Use the original Windows edition when reinstalling Windows. The original product key or [firmware-embedded product key](#what-is-a-firmware-embedded-activation-key) is used to activate Windows.
 
-If students require a *Windows Pro Education* key that can work on a new install of Windows, they should use [Kivuto OnTheHub](http://onthehub.com) to request a key prior to graduation.
+If students require a *Windows Pro Education* key that can work on a new install of Windows, they should use [Kivuto OnTheHub](http://onthehub.com) to request a key before graduation.
 
 For details on product keys and reinstalling Windows, see [Find your Windows product key](https://support.microsoft.com/windows/find-your-windows-product-key-aaa2bf69-7b2b-9f13-f581-a806abf0a886).
 
 ### Resale
 
-The license will remain installed on the device if resold and the same conditions above apply for downgrade, reset or reinstall.
+The license remains installed on the device if resold and the same conditions apply for downgrade, reset, or reinstall.
 
 ## Step by step process for customers to upgrade student-owned devices using Microsoft Intune
 
-These steps provide instructions on how to use Microsoft Intune to upgrade devices from Home to Education. 
+These steps provide instructions on how to use Microsoft Intune to upgrade devices from Home to Education.
 
 ### Step 1: Create a Windows Home edition filter
 
-These steps configure a filter that will only apply to devices running the *Windows Home edition*. This filter will ensure only devices running *Windows Home edition* are upgraded. For more information about filters, see [Create filters in Microsoft Intune](/mem/intune/fundamentals/filters).
+These steps configure a filter that only applies to devices running the *Windows Home edition*, ensuring that only devices running *Windows Home edition* are upgraded. For more information about filters, see [Create filters in Microsoft Intune](/mem/intune/fundamentals/filters).
 
 - Start in the [**Microsoft Intune admin center**](https://go.microsoft.com/fwlink/?linkid=2109431)
 - Select **Tenant administration** > **Filters**
@@ -130,7 +130,7 @@ These steps configure a filter that will only apply to devices running the *Wind
 
     > [!NOTE]
     > Ensure you've selected OR as the operator in the right And/Or column
-    
+
     :::image type="content" source="images/change-home-to-edu-windows-home-edition-intune-filter.png" alt-text="Example of configuring the Windows Home filter":::
 
 - Optionally select scope tags as required
@@ -153,14 +153,14 @@ These steps create and assign a Windows edition upgrade policy. For more informa
   - Change **Edition to upgrade** to **Windows 10/11 Education**
   - In the **Product Key**, enter your *Windows 10/11 Education MAK*
   - Select **Next**
-  
+
     :::image type="content" source="images/change-home-to-edu-windows-edition-upgrade-policy.png" alt-text="Example of configuring the Windows upgrade policy in Microsoft Intune":::
 
 - Optionally select scope tags as required and select **Next**
-- On the **assignments** screen;
+- On the **assignments** screen:
   - Select **Add all devices**
   - Next to **All devices**, select **Edit filter**
-  
+
       > [!NOTE]
       > You can also target other security groups that contain a smaller scope of users or devices and apply the filter rather than All devices.
 
@@ -171,7 +171,7 @@ These steps create and assign a Windows edition upgrade policy. For more informa
 - Don't configure any applicability rules and select **next**
 - Review your settings and select **Create**
 
-The edition upgrade policy will now apply to all existing and new Windows Home edition devices targeted.
+The edition upgrade policy applies to all existing and new Windows Home edition devices targeted.
 
 ### Step 3: Report on device edition
 
@@ -191,11 +191,11 @@ You can check the Windows versions of managed devices in the Microsoft Intune ad
 
 Increases to MAK Activation quantity can be requested by contacting [VLSC support](/licensing/contact-us) and may be granted by exception. A request can be made by accounts with the VLSC Administrator, Key Administrator, or Key Viewer permissions. The request should include the following information:
 
-- Agreement/Enrollment Number or License ID and Authorization.
-- Product Name (includes version and edition).
-- Last five characters of the product key.
-- The number of host activations required.
-- Business Justification or Reason for Deployment.
+- Agreement/Enrollment Number or License ID and Authorization
+- Product Name (includes version and edition)
+- Last five characters of the product key
+- The number of host activations required
+- Business Justification or Reason for Deployment
 
 ### What is a firmware-embedded activation key?
 
@@ -205,7 +205,7 @@ A firmware-embedded activation key is a Windows product key that is installed in
 (Get-CimInstance -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey
 ```
 
-If the device has a firmware-embedded activation key, it will be displayed in the output. Otherwise, the device doesn't have a firmware embedded activation key. Most OEM-provided devices designed to run Windows 8 or later will have a firmware-embedded key.
+If the device has a firmware-embedded activation key, it's displayed in the output. Otherwise the device doesn't have a firmware embedded activation key. Most OEM-provided devices designed to run Windows 8 or later have a firmware-embedded key.
 
 A firmware embedded key is only required to upgrade using Subscription Activation, a MAK upgrade doesn't require the firmware embedded key.
 

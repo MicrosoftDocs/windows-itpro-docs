@@ -21,14 +21,18 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Customize the Windows Start menu layout
-            url: start/customize-and-export-start-layout.md
-          - text: Customize the Windows taskbar
+          - text: Configure the Start menu
+            url: start/index.md
+          - text: Customize the Taskbar
             url: taskbar/index.md
-          - text: Configure Windows Spotlight on the lock screen
+          - text: Configure the Lock Screen
             url: lock-screen/windows-spotlight.md
           - text: Accessibility information for IT pros
             url: accessibility/index.md
+      - linkListType: reference
+        links:
+          - text: Start policy settings
+            url: start/policy-settings.md
 
   - title: Configure a Windows kiosk
     linkLists:

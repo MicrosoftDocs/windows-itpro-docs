@@ -1,7 +1,7 @@
 ---
 title: What's in Set up School PCs provisioning package
 description: Learn about the settings that are configured in the provisioning package created with the Set up School PCs app.
-ms.date: 06/02/2023
+ms.date: 04/10/2024
 ms.topic: reference
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -34,15 +34,15 @@ For a more detailed look at the policies, see the Windows article [Set up shared
 | Disk level caching | 50% | Sets 50% of total disk space to be used as the disk space threshold for account caching. |
 | Disk level deletion | For shared device setup, 25%; for single device-student setup, 0%. | When devices are optimized for shared use, the policy sets 25% of total disk space as the disk space threshold for account caching. When devices are optimized for use by a single student, the policy sets the value to 0% and doesn't delete accounts. |
 | Enable account manager | True | Enables automatic account management. |
-| Inactive threshold | For shared device setup, 30 days; for single device-student setup, 180 days. | After 30 or 180 days, respectively, if an account hasn't signed in, it will be deleted. |
+| Inactive threshold | For shared device setup, 30 days; for single device-student setup, 180 days. | After the threshold, if an account hasn't signed in, its user profile is deleted. |
 | Kiosk Mode AMUID | `Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App` | Configures the kiosk account on student devices to only run the Take a Test secure assessment browser. |
 | Kiosk Mode User Tile Display Text | Take a Test | Displays "Take a Test" as the name of the kiosk account on student devices. |
 | Restrict local storage | For shared device setup, True; for single device-student setup, False. | When devices are optimized for shared use across multiple PCs, this policy forces students to save to the cloud to prevent data loss. When your devices are optimized for use by a single student, this policy doesn't prevent students from saving on the PCs local hard drive. |
 | Maintenance start time | 0 - midnight | The maintenance start time when automatic maintenance tasks, such as Windows Update, run on student devices. |
-| Max page file size in MB | 1024 | Sets the maximum size of the paging file to 1024 MB. Applies only to systems with less than 32-GB storage and at least 3 GB of RAM. |
+| Max page file size in MB | 1024 | Sets the maximum size of the paging file to 1,024 MB. Applies only to systems with less than 32-GB storage and at least 3 GB of RAM. |
 | Set power policies | True | Prevents users from changing power settings and turns off hibernate. Also overrides all power state transitions to sleep, such as lid close. |
 | Sign in on resume | True | Requires the device user to sign in with a password when the PC wakes from sleep. |
-| Sleep timeout | 3600 seconds | Specifies the maximum idle time before the PC should sleep. If you don't set sleep timeout, the default time, 3600 seconds (1 hour), is applied. |
+| Sleep timeout | 3,600 seconds | Specifies the maximum idle time before the PC should sleep. If you don't set sleep timeout, the default time, 3,600 seconds (1 hour), is applied. |
 
 ## MDM and local group policies
 
@@ -58,7 +58,7 @@ For a more detailed look of each policy listed, see [Policy CSP](/windows/client
 | Hide OOBE for desktop | True | Hides the interactive OOBE flow for Windows 10. |
 | Download Mode | 1 - HTTP blended with peering behind the same NAT | Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps, and App updates |
 | Select when Preview Builds and Feature Updates are received | 32 - Semi-annual Channel. Device gets feature updates from Semi-annual Channel | Specifies how frequently devices receive preview builds and feature updates. |
-| Allow auto update | 4 - Auto-installs and restarts without device-user control | When an auto update is available, it auto-installs and restarts the device without any input or action from the device user. |
+| Allow auto update | 4 - Autoinstalls and restarts without device-user control | When an auto update is available, it autoinstalls and restarts the device without any input or action from the device user. |
 | Configure automatic updates | 3 - Set to install at 3am | Scheduled time to install updates. |
 | Update power policy for cart restarts | 1 - Configured | Skips all restart checks to ensure that the reboot will happen at the scheduled install time. |
 | Select when Preview Builds and Feature Updates are received | 365 days | Defers Feature Updates for the specified number of days. When not specified, defaults to 365 days. |
@@ -70,7 +70,7 @@ For a more detailed look of each policy listed, see [Policy CSP](/windows/client
 | Allow add provisioning package | Disabled | Students can't add and upload new provisioning packages to their device. |
 | Allow remove provisioning package | Disabled | Students can't remove packages that you've uploaded to their device, including the Set up School PCs app |
 | Start Layout | Enabled | Lets you specify the Start layout for users and prevents them from changing the configuration. |
-| Import Edge Assets | Enabled | Import Microsoft Edge assets, such as PNG and JPG files, for secondary tiles on the Start layout. Tiles will appear as weblinks and will be tied to the relevant image asset files. |
+| Import Microsoft Edge Assets | Enabled | Import Microsoft Edge assets, such as PNG and JPG files, for secondary tiles on the Start layout. Tiles will appear as weblinks and will be tied to the relevant image asset files. |
 | Allow pinned folder downloads | 1 - The shortcut is visible and disables the setting in the Settings app | Makes the Downloads shortcut on the Start menu visible to students. |
 | Allow pinned folder File Explorer | 1 - The shortcut is visible and disables the setting in the Settings app | Makes the File Explorer shortcut on the Start menu visible to students. |
 | Personalization | Deploy lock screen image | Set to the image you picked when you customized the lock screen during device setup. If you didn't customize the image, the computer will show the default. |
@@ -112,7 +112,7 @@ The time it takes to install a package on a device depends on the:
 - Number of policies and apps within the package
 - Other configurations made to the device
 
-Review the table below to estimate your expected provisioning time. A package that only applies Set Up School PC's default configurations will provision the fastest. A package that removes preinstalled apps, through CleanPC, will take much longer to provision.
+Review the table below to estimate your expected provisioning time. A package that only applies Set Up School PC's default configurations provisions the fastest. A package that removes preinstalled apps, through CleanPC, will take longer to provision.
 
 | Configurations | Connection type | Estimated provisioning time |
 |--|--|--|

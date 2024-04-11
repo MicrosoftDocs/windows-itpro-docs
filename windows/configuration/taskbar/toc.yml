@@ -3,3 +3,5 @@ items:
   href: index.md
 - name: Supported Taskbar CSPs
   href: policy-settings.md
+- name: XML schema definition (XSD)
+  href: xsd.md
