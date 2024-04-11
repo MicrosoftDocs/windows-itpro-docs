@@ -1,13 +1,15 @@
 ---
 title: ClientCertificateInstall CSP
 description: Learn more about the ClientCertificateInstall CSP.
-ms.date: 01/31/2024
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- ClientCertificateInstall-Begin -->
 # ClientCertificateInstall CSP
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- ClientCertificateInstall-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -38,6 +40,7 @@ The following list shows the ClientCertificateInstall configuration service prov
       - [ErrorCode](#devicescepuniqueiderrorcode)
       - [Install](#devicescepuniqueidinstall)
         - [AADKeyIdentifierList](#devicescepuniqueidinstallaadkeyidentifierlist)
+        - [AttestPrivateKey](#devicescepuniqueidinstallattestprivatekey)
         - [CAThumbprint](#devicescepuniqueidinstallcathumbprint)
         - [Challenge](#devicescepuniqueidinstallchallenge)
         - [ContainerName](#devicescepuniqueidinstallcontainername)
@@ -76,6 +79,7 @@ The following list shows the ClientCertificateInstall configuration service prov
       - [ErrorCode](#userscepuniqueiderrorcode)
       - [Install](#userscepuniqueidinstall)
         - [AADKeyIdentifierList](#userscepuniqueidinstallaadkeyidentifierlist)
+        - [AttestPrivateKey](#userscepuniqueidinstallattestprivatekey)
         - [CAThumbprint](#userscepuniqueidinstallcathumbprint)
         - [Challenge](#userscepuniqueidinstallchallenge)
         - [ContainerName](#userscepuniqueidinstallcontainername)
@@ -827,6 +831,45 @@ Optional. Specify the Microsoft Entra ID Key Identifier List as a semicolon sepa
 <!-- Device-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Examples-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-AADKeyIdentifierList-End -->
+
+<!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-Begin -->
+##### Device/SCEP/{UniqueID}/Install/AttestPrivateKey
+
+<!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-Applicability-End -->
+
+<!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/ClientCertificateInstall/SCEP/{UniqueID}/Install/AttestPrivateKey
+```
+<!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-OmaUri-End -->
+
+<!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-Description-Begin -->
+<!-- Description-Source-DDF -->
+Defines the attest SCEP private key behavior 0 - normal, 1 - best effort, 2 - on error, fail the installation.
+<!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-Description-End -->
+
+<!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-Editable-End -->
+
+<!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Get |
+<!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-DFProperties-End -->
+
+<!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-Examples-End -->
+
+<!-- Device-SCEP-{UniqueID}-Install-AttestPrivateKey-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-CAThumbprint-Begin -->
 ##### Device/SCEP/{UniqueID}/Install/CAThumbprint
@@ -2401,6 +2444,55 @@ Optional. Specify the Microsoft Entra ID Key Identifier List as a semicolon sepa
 <!-- User-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Examples-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-AADKeyIdentifierList-End -->
+
+<!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-Begin -->
+##### User/SCEP/{UniqueID}/Install/AttestPrivateKey
+
+<!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-Applicability-End -->
+
+<!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/ClientCertificateInstall/SCEP/{UniqueID}/Install/AttestPrivateKey
+```
+<!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-OmaUri-End -->
+
+<!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-Description-Begin -->
+<!-- Description-Source-DDF -->
+Defines the attest SCEP private key behavior 0 - normal, 1 - best effort, 2 - on error, fail the installation.
+<!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-Description-End -->
+
+<!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-Editable-End -->
+
+<!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Get |
+<!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-DFProperties-End -->
+
+<!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Don't attest private key. |
+| 1 | Attest key, but in case attestation failed, best effort approach - CSR is sent to the server. |
+| 2 | Attest key, but in case attestation failed, fail fast (i.e release the key and not issue a CSR to the server). |
+<!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-AllowedValues-End -->
+
+<!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-Examples-End -->
+
+<!-- User-SCEP-{UniqueID}-Install-AttestPrivateKey-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-CAThumbprint-Begin -->
 ##### User/SCEP/{UniqueID}/Install/CAThumbprint

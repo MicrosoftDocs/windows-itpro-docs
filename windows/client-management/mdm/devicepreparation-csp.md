@@ -1,7 +1,7 @@
 ---
 title: DevicePreparation CSP
 description: Learn more about the DevicePreparation CSP.
-ms.date: 01/31/2024
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -184,6 +184,15 @@ This node indicates whether the MDM agent was installed or not. When set to true
 | Default Value  | False |
 <!-- Device-MDMProvider-MdmAgentInstalled-DFProperties-End -->
 
+<!-- Device-MDMProvider-MdmAgentInstalled-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | Mdm Agent Not Installed. |
+| true | Mdm Agent Installed. |
+<!-- Device-MDMProvider-MdmAgentInstalled-AllowedValues-End -->
+
 <!-- Device-MDMProvider-MdmAgentInstalled-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 <!-- Device-MDMProvider-MdmAgentInstalled-Examples-End -->
@@ -263,6 +272,15 @@ This node indicates whether an MDM policy was provisioned that requires a reboot
 | Default Value  | False |
 <!-- Device-MDMProvider-RebootRequired-DFProperties-End -->
 
+<!-- Device-MDMProvider-RebootRequired-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | No Reboot Required. |
+| true | Reboot Required. |
+<!-- Device-MDMProvider-RebootRequired-AllowedValues-End -->
+
 <!-- Device-MDMProvider-RebootRequired-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 <!-- Device-MDMProvider-RebootRequired-Examples-End -->
@@ -302,6 +320,15 @@ This node determines whether to show the Device Preparation page during OOBE.
 | Access Type | Get, Replace |
 | Default Value  | false |
 <!-- Device-PageEnabled-DFProperties-End -->
+
+<!-- Device-PageEnabled-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | Disable Page. |
+| true | Enable Page. |
+<!-- Device-PageEnabled-AllowedValues-End -->
 
 <!-- Device-PageEnabled-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
