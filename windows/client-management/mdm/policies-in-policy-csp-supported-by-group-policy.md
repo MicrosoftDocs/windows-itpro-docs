@@ -1,7 +1,7 @@
 ---
 title: Policies in Policy CSP supported by Group Policy
 description: Learn about the policies in Policy CSP supported by Group Policy.
-ms.date: 01/31/2024
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -658,6 +658,10 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [ConfigStorageSenseRecycleBinCleanupThreshold](policy-csp-storage.md)
 - [ConfigStorageSenseDownloadsCleanupThreshold](policy-csp-storage.md)
 - [ConfigStorageSenseCloudContentDehydrationThreshold](policy-csp-storage.md)
+
+## Sudo
+
+- [EnableSudo](policy-csp-sudo.md)
 
 ## System
 

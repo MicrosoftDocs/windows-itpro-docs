@@ -1,15 +1,13 @@
 ---
 title: Sudo Policy CSP
 description: Learn more about the Sudo Area in Policy CSP.
-ms.date: 01/31/2024
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- Sudo-Begin -->
 # Policy CSP - Sudo
-
-[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 [!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
@@ -45,21 +43,30 @@ ms.date: 01/31/2024
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 3 |
 <!-- EnableSudo-DFProperties-End -->
 
-<!-- EnableSudo-AdmxBacked-Begin -->
-<!-- ADMX-Not-Found -->
-[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+<!-- EnableSudo-AllowedValues-Begin -->
+**Allowed values**:
 
-**ADMX mapping**:
+| Value | Description |
+|:--|:--|
+| 0 | Sudo is disabled. |
+| 1 | Sudo is allowed in 'force new window' mode. |
+| 2 | Sudo is allowed in 'disable input' mode. |
+| 3 (Default) | Sudo is allowed in 'inline' mode. |
+<!-- EnableSudo-AllowedValues-End -->
+
+<!-- EnableSudo-GpMapping-Begin -->
+**Group policy mapping**:
 
 | Name | Value |
 |:--|:--|
 | Name | EnableSudo |
-| ADMX File Name | Sudo.admx |
-<!-- EnableSudo-AdmxBacked-End -->
+| Path | Sudo > AT > System |
+<!-- EnableSudo-GpMapping-End -->
 
 <!-- EnableSudo-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
