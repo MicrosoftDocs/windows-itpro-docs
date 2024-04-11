@@ -73,8 +73,6 @@ The following list includes some of the CSP policies that aren't supported on Wi
   - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Remove the People Bar from the taskbar`
 
 
-
-
 <!--
 
 ## Taskbar

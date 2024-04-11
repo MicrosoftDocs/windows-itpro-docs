@@ -7,7 +7,8 @@ ms.topic: include
 
 ### Disable editing quick settings
 
-When you enable this policy setting, users can't modify quick settings. If you disable or don't configure this policy setting, users can edit quick settings, like pinning or unpinning buttons.
+- If you you enable this policy setting, users can't modify quick settings
+- If you disable or don't configure this policy setting, users can edit quick settings, like pinning or unpinning buttons, and rearranging buttons on the taskbar
 
 |  | Path |
 |--|--|
