@@ -10,7 +10,7 @@ items:
 - name: Spotlight
   href: lock-screen/windows-spotlight.md
 - name: Microsoft Store
-  href: taskbar/toc.yml
+  href: store/toc.yml
 - name: Cellular settings
   href: cellular/provisioning-apn.md
 - name: Kiosks and restricted user experiences
