@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot app deployment issues in Windows SE
 description: Troubleshoot common issues when deploying apps to Windows SE devices.
-ms.date: 06/19/2023
+ms.date: 04/10/2024
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
@@ -45,10 +45,10 @@ Use the Event Viewer to see if a supplemental policy is deployed correctly. Thes
     ```
     citool.exe -lp
     ```
-    
+
     - For the policy that allows managed installers to run, a policyID `C0DB889B-59C5-453C-B297-399C851934E4` and Friendly Name *[Win-EDU] Microsoft Apps Supplemental Policy - Prod* should be present, and have **Is Currently Enforced** showing as **true**
     - For any additional policies that you deploy, check that a policy with a matching ID and Friendly Name is shown in the list and the **Is Currently Enforced** and **Is Authorized** properties are both showing as **true**
-    
+
     :::image type="content" source="images/troubleshoot-citool.png" alt-text="Screenshot of the output of citool.exe with the Win-EDU supplemental policy.":::
 
 1. Check for **error events** with code **3077**: and reference [Understanding Application Control event IDs][WIN-1]
