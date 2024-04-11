@@ -1,7 +1,7 @@
 ---
 title: Windows quality and feature update reports overview
-description: This article details the types of reports available and info about update device eligibility, device update health, device update trends in Windows Autopatch groups.
-ms.date: 01/22/2024
+description: This article details the types of reports available and info about update device eligibility, device update health, device update trends in Windows Autopatch.
+ms.date: 04/09/2024 
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
@@ -79,7 +79,7 @@ Up to date devices are devices that meet all of the following prerequisites:
 - [Prerequisites for device registration](../deploy/windows-autopatch-register-devices.md#prerequisites-for-device-registration)
 - [Windows quality and feature update device readiness](../deploy/windows-autopatch-post-reg-readiness-checks.md)
 - [Post-device readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md)
-- Have applied the current monthly cumulative updates
+- Applied the current monthly cumulative updates
 
 > [!NOTE]
 > Device that are [Up to Date](#up-to-date-devices) will remain with the **In Progress** status until either the current monthly cumulative update is applied, or an [alert](../operate/windows-autopatch-device-alerts.md) is received. If the device receives an alert, the device's status will change to [Not up to Date](#not-up-to-date-devices).
