@@ -7,7 +7,8 @@ ms.topic: include
 
 ## Hardware root-of-trust
 
-:::image type="content" source="..\images\hardware-root-of-trust.svg" alt-text="Diagram containing a list of features." border="false":::
+- [Trusted Platform Module (TPM)](#trusted-platform-module-tpm)
+- [Microsoft Pluton security processor](#microsoft-pluton-security-processor)
 
 ### Trusted Platform Module (TPM)
 

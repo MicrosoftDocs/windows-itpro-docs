@@ -7,9 +7,13 @@ ms.topic: include
 
 ## Silicon assisted security
 
-:::image type="content" source="..\images\silicon-assisted-security.svg" alt-text="Diagram containing a list of features." border="false":::
-
 In addition to a modern hardware root-of-trust, there are numerous other capabilities in the latest chips that harden the operating system against threats by protecting the boot process, safeguarding the integrity of memory, isolating security-sensitive compute logic, and more.
+
+- [Secured kernel](#secured-kernel)
+- [Hardware-enforced stack protection](#hardware-enforced-stack-protection)
+- [Kernel Direct Memory Access (DMA) protection](#kernel-direct-memory-access-dma-protection)
+- [Secured-core PC](#secured-core-pc)
+  - [Secured-core configuration lock](#secured-core-configuration-lock)
 
 ### Secured kernel
 
