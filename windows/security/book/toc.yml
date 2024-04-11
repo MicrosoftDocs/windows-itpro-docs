@@ -11,9 +11,11 @@ items:
     href: application-security.md
   - name: 4. Identity protection
     href: identity-protection.md
-  - name: 5. Cloud security
+  - name: 5. Privacy
+    href: privacy.md
+  - name: 6. Cloud security
     href: cloud-security.md
-  - name: 6. Security foundations
+  - name: 7. Security foundations
     href: security-foundations.md
   - name: Conclusion
     href: conclusion.md

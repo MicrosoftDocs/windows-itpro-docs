@@ -10,4 +10,4 @@ ms.date: 04/09/2024
 :::image type="content" source="images\identity-protection-on.png" alt-text="Diagram of containng a list of security features." lightbox="images\identity-protection.png" border="false":::
 
 > [!div class="nextstepaction"]
-> [Chapter 5: Cloud security >](cloud-security.md)
+> [Chapter 5: Privacy >](privacy.md)
