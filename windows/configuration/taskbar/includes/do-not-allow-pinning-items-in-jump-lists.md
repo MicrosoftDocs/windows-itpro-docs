@@ -7,7 +7,10 @@ ms.topic: include
 
 ### Do not allow pinning items in Jump Lists
 
-This policy setting allows you to control pinning items in Jump Lists. If you enable this policy setting, users cannot pin files, folders, websites, or other items to their Jump Lists in the Start Menu and Taskbar. Users also cannot unpin existing items pinned to their Jump Lists. Existing items already pinned to their Jump Lists will continue to show. If you disable or do not configure this policy setting, users can pin files, folders, websites, and other items to a program's Jump List so that the items is always present in this menu.
+With this policy setting you control the pinning of items in Jump Lists.
+
+- If you enable this policy setting, users can't pin files, folders, websites, or other items to their Jump Lists in the Start Menu and Taskbar. Users can't unpin existing items pinned to their Jump Lists. Existing items already pinned to their Jump Lists continue to show
+- If you disable or don't configure this policy setting, users can pin files, folders, websites, and other items to a program's Jump List so that the items are always present in this menu
 
 |  | Path |
 |--|--|

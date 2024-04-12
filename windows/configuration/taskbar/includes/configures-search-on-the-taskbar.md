@@ -9,11 +9,11 @@ ms.topic: include
 
 This policy setting allows you to configure search on the taskbar.
 
-- If you enable this policy setting and set it to **hide**, search on taskbar will be hidden by default. Users can't change it in Settings
-- If you enable this policy setting and set it to **search icon only**, the search icon will be displayed on the taskbar by default. Users can't change it in Settings
-- If you enable this policy setting and set it to **search icon and label**, the search icon and label will be displayed on the taskbar by default. Users can't change it in Settings
-- If you enable this policy setting and set it to **search box**, the search box will be displayed on the taskbar by default. Users can't change it in Settings
-- If you disable or don't configure this policy setting, search on taskbar will be configured according to the defaults for your Windows edition. Users will be able to change search on taskbar in Settings
+- If you enable this policy setting and set it to **hide**, search on taskbar is hidden by default. Users can't change it in Settings
+- If you enable this policy setting and set it to **search icon only**, the search icon is displayed on the taskbar by default. Users can't change it in Settings
+- If you enable this policy setting and set it to **search icon and label**, the search icon and label are displayed on the taskbar by default. Users can't change it in Settings
+- If you enable this policy setting and set it to **search box**, the search box is displayed on the taskbar by default. Users can't change it in Settings
+- If you disable or don't configure this policy setting, search on taskbar is configured according to the defaults for your Windows edition. Users can change search on taskbar in Settings
 
 |  | Path |
 |--|--|

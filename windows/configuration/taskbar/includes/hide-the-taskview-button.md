@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Hide the TaskView button
 
-This policy setting allows you to hide the TaskView button. If you enable this policy setting, the TaskView button will be hidden and the Settings toggle will be disabled.
+This policy setting allows you to hide the TaskView button. If you enable this policy setting, the TaskView button is hidden and the Settings toggle disabled.
 
 |  | Path |
 |--|--|

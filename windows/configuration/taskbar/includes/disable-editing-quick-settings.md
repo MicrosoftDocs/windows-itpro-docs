@@ -5,10 +5,10 @@ ms.date: 03/18/2024
 ms.topic: include
 ---
 
-### Disable editing quick settings
+### Disable editing Quick Settings
 
-- If you you enable this policy setting, users can't modify quick settings
-- If you disable or don't configure this policy setting, users can edit quick settings, like pinning or unpinning buttons, and rearranging buttons on the taskbar
+- If you enable this policy setting, users can't modify Quick Settings
+- If you disable or don't configure this policy setting, users can edit Quick Settings
 
 |  | Path |
 |--|--|

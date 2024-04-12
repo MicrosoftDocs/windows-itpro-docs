@@ -8,8 +8,9 @@ ms.topic: include
 ### Allow widgets
 
 This policy specifies whether the widgets feature is allowed on the device.
-Widgets will be turned on by default unless you change this in your settings.
-If you turned this feature on before, it will stay on automatically unless you turn it off.
+
+- Widgets are turned on by default, unless you change this in your settings
+- If you turn on this policy setting, widgets are enabled automatically, unless you turn it off in your settings
 
 |  | Path |
 |--|--|

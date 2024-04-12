@@ -9,8 +9,8 @@ ms.topic: include
 
 This policy setting allows you to control pinning programs to the Taskbar.
 
-- If you enable this policy setting, users cannot change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users cannot unpin these programs already pinned to the Taskbar, and they cannot pin new programs to the Taskbar
-- If you disable or do not configure this policy setting, users can change the programs currently pinned to the Taskbar
+- If you enable this policy setting, users can't change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users can't unpin these programs already pinned to the Taskbar, and they can't pin new programs to the Taskbar
+- If you disable or don't configure this policy setting, users can change the programs currently pinned to the Taskbar
 
 |  | Path |
 |--|--|

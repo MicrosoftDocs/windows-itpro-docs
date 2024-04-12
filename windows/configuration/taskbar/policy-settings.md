@@ -18,13 +18,13 @@ The settings are categorized and presented in alphabetical order to facilitate n
 
 ::: zone pivot="windows-11"
 
-:::image type="content" source="images/taskbar-11.png" alt-text="Sample start menu layout with its components highlighted." border="false" lightbox="./images/taskbar-11.png":::
+:::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-11.png":::
 
 ::: zone-end
 
 ::: zone pivot="windows-10"
 
-:::image type="content" source="images/taskbar-10.png" alt-text="Sample start menu layout with its components highlighted." border="false" lightbox="./images/taskbar-10.png":::
+:::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 10 taskbar." border="false" lightbox="./images/taskbar-10.png":::
 
 ::: zone-end
 
@@ -51,6 +51,7 @@ Select one of the tabs to see the list of available settings:
 |[Remove Quick Settings](#remove-quick-settings)|✅|✅|
 |[Show additional calendar](#show-additional-calendar)|❌|✅|
 |[Simplify Quick Settings Layout](#simplify-quick-settings-layout)|✅|✅|
+|[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
 |[Turn off Windows Copilot](#turn-off-windows-copilot)|✅|✅|
 
 ::: zone-end
@@ -76,6 +77,8 @@ Select one of the tabs to see the list of available settings:
 |[Remove the People Bar from the taskbar](#remove-the-people-bar-from-the-taskbar)|✅|✅|
 |[Remove the volume control icon](#remove-the-volume-control-icon)|❌|✅|
 |[Show additional calendar](#show-additional-calendar)|❌|✅|
+|[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
+|[Turn off notification area cleanup](#turn-off-notification-area-cleanup)|❌|✅|
 |[Turn off Windows Copilot](#turn-off-windows-copilot)|✅|✅|
 
 ::: zone-end
@@ -122,6 +125,12 @@ Select one of the tabs to see the list of available settings:
 
 ::: zone pivot="windows-11"
 [!INCLUDE [simplify-quick-settings-layout](includes/simplify-quick-settings-layout.md)]
+::: zone-end
+
+[!INCLUDE [turn-off-automatic-promotion-of-notification-icons-to-the-taskbar](includes/turn-off-automatic-promotion-of-notification-icons-to-the-taskbar.md)]
+
+::: zone pivot="windows-10"
+[!INCLUDE [turn-off-notification-area-cleanup](includes/turn-off-notification-area-cleanup.md)]
 ::: zone-end
 
 [!INCLUDE [turn-off-windows-copilot](includes/turn-off-windows-copilot.md)]
@@ -183,31 +192,6 @@ Select one of the tabs to see the list of available settings:
 ::: zone-end
 
 [!INCLUDE [remove-access-to-the-context-menus-for-the-taskbar](includes/remove-access-to-the-context-menus-for-the-taskbar.md)]
-[!INCLUDE [turn-off-automatic-promotion-of-notification-icons-to-the-taskbar](includes/turn-off-automatic-promotion-of-notification-icons-to-the-taskbar.md)]
-
-::: zone pivot="windows-10"
-[!INCLUDE [turn-off-notification-area-cleanup](includes/turn-off-notification-area-cleanup.md)]
-::: zone-end
-
-#### [:::image type="icon" source="../images/icons/notification.svg"::: **Notifications**](#tab/allapps)
-
-::: zone pivot="windows-11"
-
-|Setting Name|CSP|GPO|
-|-|-|-|
-|[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
-
-::: zone-end
-
-::: zone pivot="windows-10"
-
-|Setting Name|CSP|GPO|
-|-|-|-|
-|[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
-|[Turn off notification area cleanup](#turn-off-notification-area-cleanup)|❌|✅|
-
-::: zone-end
-
 [!INCLUDE [turn-off-automatic-promotion-of-notification-icons-to-the-taskbar](includes/turn-off-automatic-promotion-of-notification-icons-to-the-taskbar.md)]
 
 ::: zone pivot="windows-10"
