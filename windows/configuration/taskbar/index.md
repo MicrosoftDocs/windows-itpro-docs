@@ -418,6 +418,17 @@ If the OS is configured to use a right-to-left language, then the taskbar order 
 
   After the layout is applied, users can pin more apps, change the order, and unpin apps.
 
+### Taskbar configuration applied to clean install of Windows 10
+
+In a clean install, if you apply a taskbar layout, only the following apps are pinned to the taskbar:
+
+- Apps you specifically add
+- Any default apps you don't remove
+
+After the layout is applied, users can pin more apps to the taskbar.
+
+If you use a provisioning package to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration and allow users to make changes that will persist, apply your configuration by using Group Policy.
+
 ::: zone-end
 
 <!-- form Start article to move
@@ -454,17 +465,4 @@ If you apply the taskbar configuration to a clean install or an update, users ca
 - Change the order of pinned apps
 - Unpin any app
 
-> [!TIP]
-> In Windows 10 version 1703, you can apply the `Start/NoPinningToTaskbar` MDM policy. This policy prevents users from pinning and unpinning apps on the taskbar.
-
-### Taskbar configuration applied to clean install of Windows 10
-
-In a clean install, if you apply a taskbar layout, only the following apps are pinned to the taskbar:
-
-- Apps you specifically add
-- Any default apps you don't remove
-
-After the layout is applied, users can pin more apps to the taskbar.
-
-If you use a provisioning package to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration and allow users to make changes that will persist, apply your configuration by using Group Policy.
 -->
