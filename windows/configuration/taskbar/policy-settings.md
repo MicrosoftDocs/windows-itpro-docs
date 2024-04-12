@@ -18,13 +18,13 @@ The settings are categorized and presented in alphabetical order to facilitate n
 
 ::: zone pivot="windows-11"
 
-    :::image type="content" source="images/taskbar-11.png" alt-text="Sample start menu layout with its components highlighted." border="false" lightbox="./images/taskbar-11.png":::
+:::image type="content" source="images/taskbar-11.png" alt-text="Sample start menu layout with its components highlighted." border="false" lightbox="./images/taskbar-11.png":::
 
 ::: zone-end
 
 ::: zone pivot="windows-10"
 
-    :::image type="content" source="images/taskbar-10.png" alt-text="Sample start menu layout with its components highlighted." border="false" lightbox="./images/taskbar-10.png":::
+:::image type="content" source="images/taskbar-10.png" alt-text="Sample start menu layout with its components highlighted." border="false" lightbox="./images/taskbar-10.png":::
 
 ::: zone-end
 
@@ -90,22 +90,40 @@ Select one of the tabs to see the list of available settings:
 
 [!INCLUDE [do-not-allow-taskbars-on-more-than-one-display](includes/do-not-allow-taskbars-on-more-than-one-display.md)]
 [!INCLUDE [do-not-display-or-track-items-in-jump-lists-from-remote-locations](includes/do-not-display-or-track-items-in-jump-lists-from-remote-locations.md)]
+
+::: zone pivot="windows-10"
 [!INCLUDE [hide-the-notification-area](includes/hide-the-notification-area.md)]
+::: zone-end"
+
 [!INCLUDE [hide-recent-jumplists](includes/hide-recent-jumplists.md)]
+
+::: zone pivot="windows-11"
 [!INCLUDE [hide-the-taskview-button](includes/hide-the-taskview-button.md)]
+::: zone-end"
+
 [!INCLUDE [prevent-grouping-of-taskbar-items](includes/prevent-grouping-of-taskbar-items.md)]
 [!INCLUDE [remove-clock-from-the-system-notification-area](includes/remove-clock-from-the-system-notification-area.md)]
 [!INCLUDE [remove-notifications-and-action-center](includes/remove-notifications-and-action-center.md)]
 [!INCLUDE [remove-pinned-programs-from-the-taskbar](includes/remove-pinned-programs-from-the-taskbar.md)]
+
+::: zone pivot="windows-11"
 [!INCLUDE [remove-quick-settings](includes/remove-quick-settings.md)]
+::: zone-end"
+
+::: zone pivot="windows-10"
 [!INCLUDE [remove-the-battery-meter](includes/remove-the-battery-meter.md)]
 [!INCLUDE [remove-the-meet-now-icon](includes/remove-the-meet-now-icon.md)]
 [!INCLUDE [remove-the-networking-icon](includes/remove-the-networking-icon.md)]
 [!INCLUDE [remove-the-people-bar-from-the-taskbar](includes/remove-the-people-bar-from-the-taskbar.md)]
 [!INCLUDE [remove-the-volume-control-icon](includes/remove-the-volume-control-icon.md)]
+::: zone-end
+
 [!INCLUDE [show-additional-calendar](includes/show-additional-calendar.md)]
+
+::: zone pivot="windows-11"
 [!INCLUDE [simplify-quick-settings-layout](includes/simplify-quick-settings-layout.md)]
-[!INCLUDE [turn-off-automatic-promotion-of-notification-icons-to-the-taskbar](includes/turn-off-automatic-promotion-of-notification-icons-to-the-taskbar.md)]
+::: zone-end
+
 [!INCLUDE [turn-off-windows-copilot](includes/turn-off-windows-copilot.md)]
 
 #### [:::image type="icon" source="../images/icons/notification.svg"::: **Notifications & actions**](#tab/allapps)
@@ -143,18 +161,33 @@ Select one of the tabs to see the list of available settings:
 
 ::: zone-end
 
+::: zone pivot="windows-11"
 [!INCLUDE [disable-editing-quick-settings](includes/disable-editing-quick-settings.md)]
+::: zone-end
+
 [!INCLUDE [do-not-allow-pinning-items-in-jump-lists](includes/do-not-allow-pinning-items-in-jump-lists.md)]
 [!INCLUDE [do-not-allow-pinning-programs-to-the-taskbar](includes/do-not-allow-pinning-programs-to-the-taskbar.md)]
 [!INCLUDE [do-not-allow-pinning-store-app-to-the-taskbar](includes/do-not-allow-pinning-store-app-to-the-taskbar.md)]
+
+::: zone pivot="windows-10"
 [!INCLUDE [lock-all-taskbar-settings](includes/lock-all-taskbar-settings.md)]
 [!INCLUDE [lock-the-taskbar](includes/lock-the-taskbar.md)]
+::: zone-end
+
 [!INCLUDE [prevent-changes-to-taskbar-and-start-menu-settings](includes/prevent-changes-to-taskbar-and-start-menu-settings.md)]
+
+::: zone pivot="windows-10"
 [!INCLUDE [prevent-users-from-adding-or-removing-toolbars](includes/prevent-users-from-adding-or-removing-toolbars.md)]
 [!INCLUDE [prevent-users-from-moving-taskbar-to-another-screen-dock-location](includes/prevent-users-from-moving-taskbar-to-another-screen-dock-location.md)]
 [!INCLUDE [prevent-users-from-rearranging-toolbars](includes/prevent-users-from-rearranging-toolbars.md)]
 [!INCLUDE [prevent-users-from-resizing-the-taskbar](includes/prevent-users-from-resizing-the-taskbar.md)]
+::: zone-end
+
 [!INCLUDE [remove-access-to-the-context-menus-for-the-taskbar](includes/remove-access-to-the-context-menus-for-the-taskbar.md)]
+[!INCLUDE [turn-off-automatic-promotion-of-notification-icons-to-the-taskbar](includes/turn-off-automatic-promotion-of-notification-icons-to-the-taskbar.md)]
+
+::: zone pivot="windows-10"
 [!INCLUDE [turn-off-notification-area-cleanup](includes/turn-off-notification-area-cleanup.md)]
+::: zone-end
 
 ---
