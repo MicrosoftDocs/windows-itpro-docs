@@ -96,13 +96,13 @@ Select one of the tabs to see the list of available settings:
 
 ::: zone pivot="windows-10"
 [!INCLUDE [hide-the-notification-area](includes/hide-the-notification-area.md)]
-::: zone-end"
+::: zone-end
 
 [!INCLUDE [hide-recent-jumplists](includes/hide-recent-jumplists.md)]
 
 ::: zone pivot="windows-11"
 [!INCLUDE [hide-the-taskview-button](includes/hide-the-taskview-button.md)]
-::: zone-end"
+::: zone-end
 
 [!INCLUDE [prevent-grouping-of-taskbar-items](includes/prevent-grouping-of-taskbar-items.md)]
 [!INCLUDE [remove-clock-from-the-system-notification-area](includes/remove-clock-from-the-system-notification-area.md)]
@@ -111,7 +111,7 @@ Select one of the tabs to see the list of available settings:
 
 ::: zone pivot="windows-11"
 [!INCLUDE [remove-quick-settings](includes/remove-quick-settings.md)]
-::: zone-end"
+::: zone-end
 
 ::: zone pivot="windows-10"
 [!INCLUDE [remove-the-battery-meter](includes/remove-the-battery-meter.md)]
@@ -147,6 +147,7 @@ Select one of the tabs to see the list of available settings:
 |[Do not allow pinning Store app to the Taskbar](#do-not-allow-pinning-store-app-to-the-taskbar)|❌|✅|
 |[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
 |[Remove access to the context menus for the taskbar](#remove-access-to-the-context-menus-for-the-taskbar)|❌|✅|
+
 ::: zone-end
 
 ::: zone pivot="windows-10"
