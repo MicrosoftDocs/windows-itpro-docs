@@ -24,14 +24,9 @@ The settings are categorized and presented in alphabetical order to facilitate n
     :::image type="content" source="./images/taskbar-10.png" alt-text="Sample start menu layout with its components highlighted." border="false" lightbox="./images/taskbar-10.png":::
 ::: zone-end
 
-
-
-    :::column-end:::
-:::row-end:::
-
 Select one of the tabs to see the list of available settings:
 
-#### [:::image type="icon" source="../images/icons/taskbar.svg"::: **Layout & items**](#tab/taskbar)
+#### [:::image type="icon" source="../images/icons/taskbar.svg"::: **Taskbar layout**](#tab/taskbar)
 
 ::: zone pivot="windows-11"
 
@@ -41,25 +36,17 @@ Select one of the tabs to see the list of available settings:
 |[Configure Start layout](#configure-start-layout)|✅|✅|
 |[Configures search on the taskbar](#configures-search-on-the-taskbar)|✅|✅|
 |[Configures the Chat icon on the taskbar](#configures-the-chat-icon-on-the-taskbar)|✅|✅|
-|[Disable editing Quick Settings](#disable-editing-quick-settings)|✅|✅|
-|[Do not allow pinning items in Jump Lists](#do-not-allow-pinning-items-in-jump-lists)|❌|✅|
-|[Do not allow pinning programs to the Taskbar](#do-not-allow-pinning-programs-to-the-taskbar)|✅|✅|
-|[Do not allow pinning Store app to the Taskbar](#do-not-allow-pinning-store-app-to-the-taskbar)|❌|✅|
 |[Do not allow taskbars on more than one display](#do-not-allow-taskbars-on-more-than-one-display)|❌|✅|
 |[Do not display or track items in Jump Lists from remote locations](#do-not-display-or-track-items-in-jump-lists-from-remote-locations)|❌|✅|
 |[Hide recent jumplists](#hide-recent-jumplists)|✅|✅|
 |[Hide the TaskView button](#hide-the-taskview-button)|✅|✅|
-|[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
 |[Prevent grouping of taskbar items](#prevent-grouping-of-taskbar-items)|❌|✅|
-|[Remove access to the context menus for the taskbar](#remove-access-to-the-context-menus-for-the-taskbar)|❌|✅|
 |[Remove Clock from the system notification area](#remove-clock-from-the-system-notification-area)|❌|✅|
 |[Remove Notifications and Action Center](#remove-notifications-and-action-center)|❌|✅|
 |[Remove pinned programs from the Taskbar](#remove-pinned-programs-from-the-taskbar)|❌|✅|
 |[Remove Quick Settings](#remove-quick-settings)|✅|✅|
 |[Show additional calendar](#show-additional-calendar)|❌|✅|
 |[Simplify Quick Settings Layout](#simplify-quick-settings-layout)|✅|✅|
-|[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
-|[Turn off Windows Copilot](#turn-off-windows-copilot)|✅|✅|
 
 ::: zone-end
 
@@ -69,22 +56,11 @@ Select one of the tabs to see the list of available settings:
 |[Allow widgets](#allow-widgets)|✅|✅|
 |[Configure Start layout](#configure-start-layout)|✅|✅|
 |[Configures search on the taskbar](#configures-search-on-the-taskbar)|✅|✅|
-|[Do not allow pinning items in Jump Lists](#do-not-allow-pinning-items-in-jump-lists)|❌|✅|
-|[Do not allow pinning programs to the Taskbar](#do-not-allow-pinning-programs-to-the-taskbar)|✅|✅|
-|[Do not allow pinning Store app to the Taskbar](#do-not-allow-pinning-store-app-to-the-taskbar)|❌|✅|
 |[Do not allow taskbars on more than one display](#do-not-allow-taskbars-on-more-than-one-display)|❌|✅|
 |[Do not display or track items in Jump Lists from remote locations](#do-not-display-or-track-items-in-jump-lists-from-remote-locations)|❌|✅|
 |[Hide recent jumplists](#hide-recent-jumplists)|✅|✅|
 |[Hide the notification area](#hide-the-notification-area)|❌|✅|
-|[Lock all taskbar settings](#lock-all-taskbar-settings)|❌|✅|
-|[Lock the Taskbar](#lock-the-taskbar)|❌|✅|
-|[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
 |[Prevent grouping of taskbar items](#prevent-grouping-of-taskbar-items)|❌|✅|
-|[Prevent users from adding or removing toolbars](#prevent-users-from-adding-or-removing-toolbars)|❌|✅|
-|[Prevent users from moving taskbar to another screen dock location](#prevent-users-from-moving-taskbar-to-another-screen-dock-location)|❌|✅|
-|[Prevent users from rearranging toolbars](#prevent-users-from-rearranging-toolbars)|❌|✅|
-|[Prevent users from resizing the taskbar](#prevent-users-from-resizing-the-taskbar)|❌|✅|
-|[Remove access to the context menus for the taskbar](#remove-access-to-the-context-menus-for-the-taskbar)|❌|✅|
 |[Remove Clock from the system notification area](#remove-clock-from-the-system-notification-area)|❌|✅|
 |[Remove Notifications and Action Center](#remove-notifications-and-action-center)|❌|✅|
 |[Remove pinned programs from the Taskbar](#remove-pinned-programs-from-the-taskbar)|❌|✅|
@@ -94,25 +70,37 @@ Select one of the tabs to see the list of available settings:
 |[Remove the People Bar from the taskbar](#remove-the-people-bar-from-the-taskbar)|✅|✅|
 |[Remove the volume control icon](#remove-the-volume-control-icon)|❌|✅|
 |[Show additional calendar](#show-additional-calendar)|❌|✅|
-|[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
-|[Turn off notification area cleanup](#turn-off-notification-area-cleanup)|❌|✅|
 |[Turn off Windows Copilot](#turn-off-windows-copilot)|✅|✅|
 ::: zone-end
 
 #### [:::image type="icon" source="../images/icons/notification.svg"::: **Notifications & actions**](#tab/allapps)
 
 ::: zone pivot="windows-11"
+
+|[Disable editing Quick Settings](#disable-editing-quick-settings)|✅|✅|
+|[Do not allow pinning items in Jump Lists](#do-not-allow-pinning-items-in-jump-lists)|❌|✅|
+|[Do not allow pinning programs to the Taskbar](#do-not-allow-pinning-programs-to-the-taskbar)|✅|✅|
+|[Do not allow pinning Store app to the Taskbar](#do-not-allow-pinning-store-app-to-the-taskbar)|❌|✅|
+|[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
+|[Remove access to the context menus for the taskbar](#remove-access-to-the-context-menus-for-the-taskbar)|❌|✅|
+|[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
+|[Turn off Windows Copilot](#turn-off-windows-copilot)|✅|✅|
 ::: zone-end
 
 ::: zone pivot="windows-10"
-::: zone-end
-
-#### [:::image type="icon" source="../images/icons/notification.svg"::: **???**](#tab/allapps)
-
-::: zone pivot="windows-11"
-::: zone-end
-
-::: zone pivot="windows-10"
+|[Do not allow pinning items in Jump Lists](#do-not-allow-pinning-items-in-jump-lists)|❌|✅|
+|[Do not allow pinning programs to the Taskbar](#do-not-allow-pinning-programs-to-the-taskbar)|✅|✅|
+|[Do not allow pinning Store app to the Taskbar](#do-not-allow-pinning-store-app-to-the-taskbar)|❌|✅|
+|[Lock all taskbar settings](#lock-all-taskbar-settings)|❌|✅|
+|[Lock the Taskbar](#lock-the-taskbar)|❌|✅|
+|[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
+|[Prevent users from adding or removing toolbars](#prevent-users-from-adding-or-removing-toolbars)|❌|✅|
+|[Prevent users from moving taskbar to another screen dock location](#prevent-users-from-moving-taskbar-to-another-screen-dock-location)|❌|✅|
+|[Prevent users from rearranging toolbars](#prevent-users-from-rearranging-toolbars)|❌|✅|
+|[Prevent users from resizing the taskbar](#prevent-users-from-resizing-the-taskbar)|❌|✅|
+|[Remove access to the context menus for the taskbar](#remove-access-to-the-context-menus-for-the-taskbar)|❌|✅|
+|[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
+|[Turn off notification area cleanup](#turn-off-notification-area-cleanup)|❌|✅|
 ::: zone-end
 
 ---
